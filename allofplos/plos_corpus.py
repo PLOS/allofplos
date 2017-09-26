@@ -381,8 +381,9 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         existing_articles = [file_to_doi(file) for file in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
 
-    for doi in dois:
-        # add progressbar here
+    max_value = len(dois)
+    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+    for i, doi in enumerate(dois):
         url = URL_TMP.format(doi)
         articleXML = et.parse(url)
         article_path = doi_to_file(doi, directory=tempdir)
@@ -392,6 +393,8 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
                 file.write(et.tostring(articleXML, method='xml', encoding='unicode'))
             if not plos_network:
                 time.sleep(1)
+        bar.update(i+1)
+    bar.finish()
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
 
@@ -592,7 +595,7 @@ def download_corrected_articles(directory=corpusdir, tempdir=newarticledir, corr
     print("Downloading corrected articles")
     max_value = len(corrected_article_list)
     bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-    for article in corrected_article_list:
+    for i, article in enumerate(corrected_article_list):
         updated = download_updated_xml(article)
         if updated:
             corrected_updated_article_list.append(article)
@@ -627,7 +630,6 @@ def get_uncorrected_proofs_list():
     except FileNotFoundError:
         print("Creating new text list of uncorrected proofs from scratch.")
         article_files = listdir_nohidden(corpusdir)
-        # progressbar HERE?
         uncorrected_proofs_list = []
         max_value = len(article_files)
         bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
