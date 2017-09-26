@@ -30,6 +30,7 @@ import tarfile
 import zipfile
 
 import lxml.etree as et
+import progressbar
 import requests
 from tqdm import tqdm
 
@@ -381,6 +382,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         dois = set(dois) - set(existing_articles)
 
     for doi in dois:
+        # add progressbar here
         url = URL_TMP.format(doi)
         articleXML = et.parse(url)
         article_path = doi_to_file(doi, directory=tempdir)
@@ -465,8 +467,7 @@ def check_article_type(article_file):
     article_type = get_articleXML_content(article_file=article_file,
                                           tag_path_elements=["/",
                                                              "article"])
-    article_type = article_type[0].attrib['article-type']
-    return article_type
+    return article_type[0].attrib['article-type']
 
 
 def get_related_article_doi(article_file, corrected=True):
@@ -588,10 +589,15 @@ def download_corrected_articles(directory=corpusdir, tempdir=newarticledir, corr
     if corrected_article_list is None:
         corrected_article_list = check_for_corrected_articles(directory)
     corrected_updated_article_list = []
+    print("Downloading corrected articles")
+    max_value = len(corrected_article_list)
+    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
     for article in corrected_article_list:
         updated = download_updated_xml(article)
         if updated:
             corrected_updated_article_list.append(article)
+        bar.update(i+1)
+    bar.finish()
     print(len(corrected_updated_article_list), 'corrected articles downloaded with new xml.')
     return corrected_updated_article_list
 
@@ -621,11 +627,23 @@ def get_uncorrected_proofs_list():
     except FileNotFoundError:
         print("Creating new text list of uncorrected proofs from scratch.")
         article_files = listdir_nohidden(corpusdir)
-        uncorrected_proofs_list = [file_to_doi(article_file) for article_file in article_files
-                                   if check_if_uncorrected_proof(article_file)]
+        # progressbar HERE?
+        uncorrected_proofs_list = []
+        max_value = len(article_files)
+        bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+        for i, article_file in enumerate(article_files):
+            bar.update(i+1)
+            if check_if_uncorrected_proof(article_file):
+                uncorrected_proofs_list.append(file_to_doi(article_file))
+        bar.finish()
+        print("Saving uncorrected proofs.")
         with open(uncorrected_proofs_text_list, 'w') as file:
-            for item in sorted(uncorrected_proofs_list):
+            max_value = len(uncorrected_proofs_list)
+            bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+            for i, item in enumerate(sorted(uncorrected_proofs_list)):
                 file.write("%s\n" % item)
+                bar.update(i+1)
+            bar.finish()
     return uncorrected_proofs_list
 
 
