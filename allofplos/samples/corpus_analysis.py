@@ -26,6 +26,9 @@ import numpy as np
 from plos_corpus import (listdir_nohidden, extract_filenames, check_article_type, get_articleXML_content,
                          get_related_article_doi, download_updated_xml, unzip_articles, get_all_solr_dois,
                          file_to_doi, doi_to_file, check_if_uncorrected_proof, newarticledir)
+from plos_regex import (regex_match_prefix, regex_body_match, regex_body_currents, full_doi_regex_match,
+                        full_doi_regex_search, currents_doi_regex, make_regex_bool, validate_doi, find_valid_dois,
+                        show_invalid_dois, currents_doi_filter)
 
 counter = collections.Counter
 newpmcarticledir = "New_PMC_articles"
@@ -50,64 +53,6 @@ pmc_allplos_query_url = ('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.
 PMC_FTP_URL = 'ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/'
 pmc_file_list = 'oa_file_list.txt'
 newpmcarticledir = "New_PMC_articles"
-
-
-"""
-The following RegEx pertains to the 7 main PLOS journals and the defunct PLOS Clinical Trials, as well as PLOS Currents.
-"""
-
-regex_match_prefix = r"^10\.1371/"
-regex_body_match = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7}$)"
-                    r"|(annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}$))")
-regex_body_currents = (r"((currents\.[a-zA-Z]{2,9}\.[a-zA-Z0-9]{32}$)"
-                       r"|(currents\.RRN[\d]{4}$)"
-                       r"|([a-zA-Z0-9]{13}$)"
-                       r"|([a-zA-Z0-9]{32}$))")
-full_doi_regex_match = re.compile(regex_match_prefix+regex_body_match)
-full_doi_regex_search = re.compile(r"10\.1371/journal\.p[a-zA-Z]{3}\.[\d]{7}"
-                                   "|10\.1371/annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")
-currents_doi_regex = re.compile(regex_match_prefix+regex_body_currents)
-
-
-def make_regex_bool(match_or_none):
-    return bool(match_or_none)
-
-
-def validate_doi(doi):
-    """
-    For an individual string, tests whether the full string is a valid PLOS DOI or not
-    Example: '10.1371/journal.pbio.2000777' is True, but '10.1371/journal.pbio.2000777 ' is False
-    :return: True if a valid PLOS DOI; False if not
-    """
-    return make_regex_bool(full_doi_regex_match.search(doi))
-
-
-def find_valid_dois(doi):
-    """
-    For an individual string, searches for any valid PLOS DOIs within it and returns them
-    :return: list of valid PLOS DOIs contained within string
-    """
-    return full_doi_regex_search.findall(doi)
-
-
-def show_invalid_dois(doi_list):
-    """
-    Checks to see whether a list of PLOS DOIs follow the correct format. Used mainly to determine
-    if linked DOI fields in other articles (such as retractions and corrections) are correct.
-    :return: list of DOI candidates that don't match PLOS's pattern
-    """
-    nonmatches = np.array([not validate_doi(x) for x in doi_list])
-    return list(np.array(doi_list)[nonmatches])
-
-
-def currents_doi_filter(doi_list):
-    """
-    Checks to see whether a list of PLOS Currents DOIs follow the correct format. Used mainly to determine
-    if linked DOI fields in PMC articles are correct.
-    :return: list of DOI candidates that don't match Currents' pattern
-    """
-    nonmatches = np.array([not make_regex_bool(currents_doi_regex.search(x)) for x in doi_list])
-    return list(np.array(doi_list)[nonmatches])
 
 
 # These functions are for getting the article types of all PLOS articles.
@@ -311,6 +256,7 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
     """
     :param truncated: if True, restrict articles to only those with pubdates from the last year or two
     """
+    list_provided = bool(article_list)
     if article_list is None and truncated is False:
         article_list = listdir_nohidden(directory)
     if article_list is None and truncated:
@@ -327,6 +273,8 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
         updated = download_updated_xml(article_file=article_file)
         if updated:
             articles_different_list.append(article_file)
+        if list_provided:
+            article_list.remove(article_file)  # helps save time if need to restart process
     print(len(article_list), "article checked for updates.")
     print(len(articles_different_list), "articles have updates.")
     return articles_different_list

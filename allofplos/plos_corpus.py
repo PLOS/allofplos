@@ -30,9 +30,14 @@ import tarfile
 import zipfile
 
 import lxml.etree as et
+import numpy as np
 import progressbar
+import re
 import requests
 from tqdm import tqdm
+
+from plos_regex import (regex_match_prefix, regex_body_match, full_doi_regex_match, full_doi_regex_search,
+                        make_regex_bool, validate_doi)
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -52,7 +57,6 @@ uncorrected_proofs_text_list = 'uncorrected_proofs_list.txt'
 BASE_URL_API = 'http://api.plos.org/search'
 
 # URL bases for PLOS's raw article XML
-
 EXT_URL_TMP = 'http://journals.plos.org/plosone/article/file?id={0}&type=manuscript'
 INT_URL_TMP = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-repo?key={0}.XML'
 URL_TMP = EXT_URL_TMP
@@ -354,7 +358,7 @@ def copytree(source, destination, symlinks=False, ignore=None):
     :param ignore: param from the shutil.copytree function; default is include all files
     :return: None
     """
-    for item in list(listdir_nohidden(source, include_dir=False)):
+    for item in listdir_nohidden(source, include_dir=False):
         s = os.path.join(source, item)
         d = os.path.join(destination, item)
         if os.path.isdir(s):
@@ -452,6 +456,7 @@ def get_articleXML_content(article_file, tag_path_elements=None):
             article_file = article_file[:-3] + 'nxml'
         elif not article_file.endswith('.'):
             article_file = article_file + '.xml'
+
         else:
             article_file = article_file + 'xml'
         article_tree = et.parse(article_file)
