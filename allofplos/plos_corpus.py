@@ -45,7 +45,7 @@ help_str = "This program downloads a zip file with all PLOS articles and checks 
 corpusdir = 'allofplos_xml'
 
 # Temp folder for downloading and processing new articles
-newarticledir = 'New_PLOS_articles'
+newarticledir = 'new_plos_articles'
 
 # Making sure DS.Store not included as file
 ignore_func = shutil.ignore_patterns('.DS_Store')

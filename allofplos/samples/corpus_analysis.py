@@ -31,10 +31,10 @@ from plos_regex import (regex_match_prefix, regex_body_match, regex_body_current
                         show_invalid_dois, currents_doi_filter)
 
 counter = collections.Counter
-newpmcarticledir = "New_PMC_articles"
+newpmcarticledir = "new_pmc_articles"
 USER_EMAIL = 'elizabeth.seiver@gmail.com'
 
-pmcdir = "PMC_Articles/"
+pmcdir = "pmc_articles/"
 corpusdir = 'allofplos_xml'
 pmc_csv = 'doi_to_pmc.csv'
 # xml URL takes PMC identifier minus 'PMC'
@@ -52,7 +52,7 @@ pmc_allplos_query_url = ('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.
                          '&email={0}'.format(USER_EMAIL))
 PMC_FTP_URL = 'ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/'
 pmc_file_list = 'oa_file_list.txt'
-newpmcarticledir = "New_PMC_articles"
+newpmcarticledir = "new_pmc_articles"
 
 
 # These functions are for getting the article types of all PLOS articles.
