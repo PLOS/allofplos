@@ -73,21 +73,21 @@ def make_regex_bool(match_or_none):
     return bool(match_or_none)
 
 
-def validate_doi(string):
+def validate_doi(doi):
     """
     For an individual string, tests whether the full string is a valid PLOS DOI or not
     Example: '10.1371/journal.pbio.2000777' is True, but '10.1371/journal.pbio.2000777 ' is False
     :return: True if a valid PLOS DOI; False if not
     """
-    return make_regex_bool(full_doi_regex_match.search(string))
+    return make_regex_bool(full_doi_regex_match.search(doi))
 
 
-def find_valid_dois(string):
+def find_valid_dois(doi):
     """
     For an individual string, searches for any valid PLOS DOIs within it and returns them
     :return: list of valid PLOS DOIs contained within string
     """
-    return full_doi_regex_search.findall(string)
+    return full_doi_regex_search.findall(doi)
 
 
 def show_invalid_dois(doi_list):
@@ -508,6 +508,7 @@ def compare_article_pubdate(article, days=22):
         compare_date = today - three_wks_ago
         return pubdate < compare_date
     except OSError:
+        print("Pubdate error in {}".format(article))
         pass
 
 
@@ -517,10 +518,7 @@ def check_solr_doi(doi):
     '''
     solr_url = 'http://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,&wt=json&indent=true&fq=id:%22{}%22'.format(doi)
     article_search = requests.get(solr_url).json()
-    if article_search['response']['numFound'] > 0:
-        return True
-    else:
-        return False
+    return bool(article_search['response']['numFound'])
 
 
 def get_pmc_doi_dict(id_list=None, chunk_size=150):
@@ -626,7 +624,7 @@ def process_missing_plos_articles(plos_articles=None, pmc_articles=None):
     missing_plos_articles = list(set(pmc_articles) - set(plos_articles))
 
     # remove Currents articles
-    for article in list(missing_plos_articles):
+    for article in missing_plos_articles:
         if article.startswith('10.1371/currents') or \
              len(article) == 21 or \
              article == '10.1371/198d344bc40a75f927c9bc5024279815':
@@ -678,8 +676,8 @@ def process_missing_plos_articles(plos_articles=None, pmc_articles=None):
         for doi in doi_mismatch:
             print('\033[0m', doi, 'resolves to:', check_if_doi_resolves(doi))
 
-    remainder = list(set(missing_plos_articles) - set(linkworks_valid_doi + missing_articles_404_error +
-                     doi_mismatch + doi_has_space))
+    remainder = set(missing_plos_articles) - set(linkworks_valid_doi + missing_articles_404_error +
+                     doi_mismatch + doi_has_space)
     if remainder:
         print('\n \033[1m' + "Other articles on PMC that aren't working correctly for PLOS:")
         print('\033[0m' + '\n'.join(remainder), '\n')
@@ -700,7 +698,7 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
     missing_local_articles = set(solr_articles) - set(local_articles)
     if missing_local_articles:
         print('re-run plos_corpus.py to download latest {} PLOS articles locally.'.format(len(missing_local_articles)))
-    missing_solr_articles = list(set(local_articles) - set(solr_articles))
+    missing_solr_articles = set(local_articles) - set(solr_articles)
     plos_articles = set(solr_articles + local_articles)
     if missing_solr_articles:
         print('\033[1m' + 'Articles that needs to be re-indexed on Solr:')
