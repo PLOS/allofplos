@@ -758,6 +758,9 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir, vor_updates
                                                           plos_network=args.plos)
         vor_updated_article_list.extend(proofs_download_list)
         new_uncorrected_proofs_list = list(set(new_uncorrected_proofs_list) - set(vor_updated_article_list))
+        too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof)]
+        if too_old_proofs and args.plos:
+            print("Proofs older than 3 weeks: {}".format(too_old_proofs))
 
     # if any VOR articles have been downloaded, update static uncorrected proofs list
     if vor_updated_article_list:
