@@ -30,9 +30,6 @@ external_url_regex_match = re.compile(re.escape(base_url) +
                                       regex_body_search +
                                       re.escape(url_suffix))
 
-def make_regex_bool(match_or_none):
-    return bool(match_or_none)
-
 
 def validate_doi(doi):
     """
@@ -40,7 +37,7 @@ def validate_doi(doi):
     Example: '10.1371/journal.pbio.2000777' is True, but '10.1371/journal.pbio.2000777 ' is False
     :return: True if string is in valid PLOS DOI format; False if not
     """
-    return make_regex_bool(full_doi_regex_match.search(doi))
+    return bool(full_doi_regex_match.search(doi))
 
 
 def validate_file(article_file):
@@ -49,7 +46,7 @@ def validate_file(article_file):
     Example: 'allofplos_xml/journal.pbio.2000777.xml' is True, but 'allofplos_xml/journal.pbio.20007779.xml' is False
     :return: True if string is in a valid PLOS corpus article format; False if not
     """
-    return make_regex_bool(corpus_file_regex_match.search(article_file))
+    return bool(corpus_file_regex_match.search(article_file))
 
 
 def validate_url(url):
@@ -59,7 +56,7 @@ def validate_url(url):
     but 'http://journals.plos.org/plosone/article/file?id=10.1371/journal.pcbi.0020147' is False
     :return: True if string is in a valid PLOS article url; False if not
     """
-    return make_regex_bool(external_url_regex_match.search(url))
+    return bool(external_url_regex_match.search(url))
 
 
 def find_valid_dois(doi):
@@ -86,5 +83,5 @@ def currents_doi_filter(doi_list):
     if linked DOI fields in PMC articles are correct.
     :return: list of DOI candidates that don't match Currents' pattern
     """
-    nonmatches = np.array([not make_regex_bool(currents_doi_regex.search(x)) for x in doi_list])
+    nonmatches = np.array([not bool(currents_doi_regex.search(x)) for x in doi_list])
     return list(np.array(doi_list)[nonmatches])

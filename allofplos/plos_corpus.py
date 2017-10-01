@@ -30,9 +30,7 @@ import tarfile
 import zipfile
 
 import lxml.etree as et
-import numpy as np
 import progressbar
-import re
 import requests
 from tqdm import tqdm
 

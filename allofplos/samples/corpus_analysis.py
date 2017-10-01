@@ -90,10 +90,11 @@ def validate_corpus():
         print("Invalid filenames: {}".format(set(plos_valid_dois) - set(plos_valid_filenames)))
         return False
     plos_valid_files = [article for article in plos_valid_filenames if os.path.isfile(article)]
+    valid_files_count = len(plos_valid_files)
     if set(plos_valid_filenames) == set(plos_valid_files):
         return True
     else:
-        if len(plos_valid_files) > 220000:
+        if valid_files_count > 220000:
             print("Invalid files: {}".format(set(plos_valid_filenames) - set(plos_valid_files)))
         else:
             print("Not enough valid PLOS local article files. Corpus may need to be redownloaded")
