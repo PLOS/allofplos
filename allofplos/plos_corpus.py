@@ -37,7 +37,7 @@ import requests
 from tqdm import tqdm
 
 from plos_regex import (regex_match_prefix, regex_body_match, full_doi_regex_match, full_doi_regex_search,
-                        make_regex_bool, validate_doi)
+                        make_regex_bool, validate_doi, validate_file, validate_url)
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -431,6 +431,7 @@ def move_articles(source, destination):
 def get_articleXML_content(article_file, tag_path_elements=None):
     """
     For a local article file, read its XML tree
+    Can also interpret DOIs
     Defaults to reading the tree location for uncorrected proofs/versions of record
     :param article_file: the xml file for a single article
     :param tag_path_elements: xpath location in the XML tree of the article file
@@ -448,7 +449,9 @@ def get_articleXML_content(article_file, tag_path_elements=None):
     try:
         article_tree = et.parse(article_file)
     except OSError:
-        if article_file.endswith('xml'):
+        if validate_doi(article_file):
+            article_file = doi_to_file(article_file)
+        elif article_file.endswith('xml'):
             article_file = article_file[:-3] + 'XML'
         elif article_file.endswith('XML'):
             article_file = article_file[:-3] + 'xml'
@@ -456,7 +459,6 @@ def get_articleXML_content(article_file, tag_path_elements=None):
             article_file = article_file[:-3] + 'nxml'
         elif not article_file.endswith('.'):
             article_file = article_file + '.xml'
-
         else:
             article_file = article_file + 'xml'
         article_tree = et.parse(article_file)
