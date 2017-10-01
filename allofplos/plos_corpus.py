@@ -387,7 +387,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
 
     max_value = len(dois)
     bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-    for i, doi in enumerate(sorted(dois)):
+    for i, doi in enumerate(dois):
         url = URL_TMP.format(doi)
         articleXML = et.parse(url)
         article_path = doi_to_file(doi, directory=tempdir)
