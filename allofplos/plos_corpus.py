@@ -767,7 +767,7 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir, vor_updates
         with open(uncorrected_proofs_text_list, 'w') as file:
             for item in sorted(new_uncorrected_proofs_list):
                 file.write("%s\n" % item)
-        print("{} uncorrected proofs updated to version of record.".format(len(vor_updated_article_list)) +
+        print("{} uncorrected proofs updated to version of record.\n".format(len(vor_updated_article_list)) +
               "{} uncorrected proofs remaining in uncorrected proof list.".format(len(new_uncorrected_proofs_list)))
 
     else:
