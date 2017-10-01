@@ -27,8 +27,8 @@ from plos_corpus import (listdir_nohidden, extract_filenames, check_article_type
                          get_related_article_doi, download_updated_xml, unzip_articles, get_all_solr_dois,
                          file_to_doi, doi_to_file, check_if_uncorrected_proof, newarticledir)
 from plos_regex import (regex_match_prefix, regex_body_match, regex_body_currents, full_doi_regex_match,
-                        full_doi_regex_search, currents_doi_regex, make_regex_bool, validate_doi, find_valid_dois,
-                        show_invalid_dois, currents_doi_filter)
+                        full_doi_regex_search, currents_doi_regex, make_regex_bool, validate_doi, validate_file,
+                        validate_url, find_valid_dois, show_invalid_dois, currents_doi_filter)
 
 counter = collections.Counter
 newpmcarticledir = "new_pmc_articles"
@@ -54,6 +54,49 @@ PMC_FTP_URL = 'ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/'
 pmc_file_list = 'oa_file_list.txt'
 newpmcarticledir = "new_pmc_articles"
 
+
+def validate_corpus():
+    """
+    For every local article file and DOI listed on Solr, validate file names, DOIs, URLs in terms of
+    regular expressions.
+    Stops checking as soon as encounters problem and prints it
+    :return: boolean of whether corpus passed validity checks
+    """
+    # check DOIs
+    plos_dois = get_all_plos_dois()
+    plos_valid_dois = [doi for doi in plos_dois if validate_doi(doi)]
+    if set(plos_dois) == set(plos_valid_dois):
+        pass
+    else:
+        print("Invalid DOIs: {}".format(set(plos_dois) - set(plos_valid_dois)))
+        return False
+
+    # check urls
+    plos_urls = [doi_to_url(doi) for doi in plos_valid_dois]
+    plos_valid_urls = [url for url in plos_urls if validate_url(url)]
+    if set(plos_urls) == set(plos_valid_urls) and len(plos_valid_urls) == len(plos_valid_dois):
+        pass
+    else:
+        print("Invalid URLs: {}".format(set(plos_urls) - set(plos_valid_urls)))
+        return False
+
+    # check files and filenames
+    plos_files = listdir_nohidden(corpusdir)
+    plos_valid_filenames = [article for article in plos_files if validate_file(article)]
+    if len(plos_valid_dois) == len(plos_valid_filenames):
+        pass
+    else:
+        print("Invalid filenames: {}".format(set(plos_valid_dois) - set(plos_valid_filenames)))
+        return False
+    plos_valid_files = [article for article in plos_valid_filenames if os.path.isfile(article)]
+    if set(plos_valid_filenames) == set(plos_valid_files):
+        return True
+    else:
+        if len(plos_valid_files) > 220000:
+            print("Invalid files: {}".format(set(plos_valid_filenames) - set(plos_valid_files)))
+        else:
+            print("Not enough valid PLOS local article files. Corpus may need to be redownloaded")
+        return False
 
 # These functions are for getting the article types of all PLOS articles.
 
@@ -657,12 +700,21 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
 
 def get_random_list_of_dois(directory=corpusdir, count=100):
     '''
-    :return: a list of random DOI articles for analysis
+    Gets a list of random DOIs. Tries first to construct from local files in corpusdir, otherwise tries Solr DOI list
+    as backup.
+    :param directory: defaults to searching corpusdir
+    :param count: specify how many DOIs are to be returned
+    :return: a list of random DOIs for analysis
     '''
-    article_list = listdir_nohidden(directory)
-    np_list = np.array(article_list)
-    sample_file_list = list(np.random.choice(np_list, size=count, replace=False))
-    sample_doi_list = [file_to_doi(file) for file in sample_file_list]
+    try:
+        article_list = listdir_nohidden(directory)
+        np_list = np.array(article_list)
+        sample_file_list = list(np.random.choice(np_list, size=count, replace=False))
+        sample_doi_list = [file_to_doi(file) for file in sample_file_list]
+    except OSError:
+        doi_list = get_all_solr_dois()
+        np_list = np.array(doi_list)
+        sample_doi_list = list(np.random.choice(np_list, size=count, replace=False))
     return sample_doi_list
 
 
