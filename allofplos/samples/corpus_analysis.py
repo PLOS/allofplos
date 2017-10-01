@@ -15,6 +15,7 @@ from glob import glob
 from os.path import join
 from os import (listdir, rmdir, mkdir)
 import os
+import progressbar
 import re
 import requests
 from shutil import move, rmtree
@@ -312,12 +313,16 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
     except FileExistsError:
         pass
     articles_different_list = []
-    for article_file in article_list:
+    max_value = len(article_list)
+    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+    for i, article_file in enumerate(article_list):
         updated = download_updated_xml(article_file=article_file)
         if updated:
             articles_different_list.append(article_file)
         if list_provided:
             article_list.remove(article_file)  # helps save time if need to restart process
+        bar.update(i+1)
+    bar.finish()
     print(len(article_list), "article checked for updates.")
     print(len(articles_different_list), "articles have updates.")
     return articles_different_list
