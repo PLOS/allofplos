@@ -19,7 +19,8 @@ regex_body_currents = (r"((currents\.[a-zA-Z]{2,9}\.[a-zA-Z0-9]{32}$)"
 regex_file_search = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7})"
                      r"|(journal\.p[a-zA-Z]{3}\.correction\.[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}))")
 full_doi_regex_match = re.compile(regex_match_prefix+regex_body_match)
-full_doi_regex_search = re.compile(regex_match_prefix+regex_body_search)
+full_doi_regex_search = re.compile(r"10\.1371/journal\.p[a-zA-Z]{3}\.[\d]{7}"
+                                   "|10\.1371/annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")
 currents_doi_regex = re.compile(regex_match_prefix+regex_body_currents)
 corpus_file_regex_match = re.compile(corpusdir_regex+regex_file_search+r"\.xml")
 base_url = 'http://journals.plos.org/plosone/article/file?id='
