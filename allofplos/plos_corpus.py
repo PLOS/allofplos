@@ -824,13 +824,14 @@ def download_check_and_move(article_list, text_list, tempdir, destination):
     move_articles(tempdir, destination)
 
 
-def download_file_from_google_drive(id, filename, destination=corpusdir):
+def download_file_from_google_drive(id, filename, destination=corpusdir, file_size=None):
     """
     General method for downloading from Google Drive.
     Doesn't require using API or having credentials
     :param id: Google Drive id for file (constant even if filename change)
     :param filename: name of the zip file
     :param destination: directory where to download the zip file, defaults to corpusdir
+    :param file_size: size of the file being downloaded
     :return: None
     """
     URL = "https://docs.google.com/uc?export=download"
@@ -845,7 +846,7 @@ def download_file_from_google_drive(id, filename, destination=corpusdir):
         response = session.get(URL, params=params, stream=True)
         r = requests.get(URL, params=params, stream=True)
     file_path = os.path.join(destination, filename)
-    save_response_content(response, file_path)
+    save_response_content(response, file_path, file_size=file_size)
     return file_path
 
 
@@ -862,19 +863,20 @@ def get_confirm_token(response):
     return None
 
 
-def save_response_content(response, download_path):
+def save_response_content(response, download_path, file_size=None):
     """
     Saves the downloaded file parts from Google Drive to local file
     Includes progress bar for download %
     :param response: session-based google query
     :param download_path: path to local zip file
+    :param file_size: size of the file being downloaded
     :return: None
     """
     CHUNK_SIZE = 32768
     # for downloading zip file
     if os.path.basename(download_path) == local_zip:
         with open(download_path, "wb") as f:
-            size = zip_size
+            size = file_size
             pieces = size / CHUNK_SIZE
             with tqdm(total=pieces) as pbar:
                 for chunk in response.iter_content(CHUNK_SIZE):
@@ -955,7 +957,7 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
         os.mkdir(corpusdir)
         print('Creating folder for article xml')
     zip_date, zip_size, metadata_path = get_zip_metadata()
-    zip_path = download_file_from_google_drive(zip_id, local_zip)
+    zip_path = download_file_from_google_drive(zip_id, local_zip, file_size=zip_size)
     unzip_articles(file_path=zip_path)
     if rm_metadata:
         os.remove(metadata_path)
