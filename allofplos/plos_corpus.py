@@ -968,9 +968,12 @@ if __name__ == "__main__":
         URL_TMP = INT_URL_TMP
     else:
         URL_TMP = EXT_URL_TMP
-    # Step 0: Initialize first copy of repository
-    corpus_files = [name for name in os.listdir(corpusdir) if os.path.isfile(
-                    os.path.join(corpusdir, name))]
+    # Step 0: Initialize first copy of repository]
+    try:
+        corpus_files = [name for name in os.listdir(corpusdir) if os.path.isfile(
+                        os.path.join(corpusdir, name))]
+    except FileNotFoundError:
+        corpus_files = []
     if len(corpus_files) < min_files_for_valid_corpus:
         print('Not enough articles in corpusdir, re-downloading zip file')
         # TODO: check if zip file is in top-level directory before downloading
