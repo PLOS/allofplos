@@ -836,17 +836,18 @@ def download_file_from_google_drive(id, filename, destination=corpusdir, file_si
     """
     URL = "https://docs.google.com/uc?export=download"
 
-    session = requests.Session()
-
-    response = session.get(URL, params={'id': id}, stream=True)
-    token = get_confirm_token(response)
-
-    if token:
-        params = {'id': id, 'confirm': token}
-        response = session.get(URL, params=params, stream=True)
-        r = requests.get(URL, params=params, stream=True)
     file_path = os.path.join(destination, filename)
-    save_response_content(response, file_path, file_size=file_size)
+    if not file_path:
+        session = requests.Session()
+
+        response = session.get(URL, params={'id': id}, stream=True)
+        token = get_confirm_token(response)
+
+        if token:
+            params = {'id': id, 'confirm': token}
+            response = session.get(URL, params=params, stream=True)
+            r = requests.get(URL, params=params, stream=True)
+        save_response_content(response, file_path, file_size=file_size)
     return file_path
 
 
