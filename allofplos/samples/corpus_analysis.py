@@ -54,9 +54,10 @@ pmc_allplos_query_url = ('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.
 PMC_FTP_URL = 'ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/'
 pmc_file_list = 'oa_file_list.txt'
 newpmcarticledir = "new_pmc_articles"
+max_invalid_files_to_print = 100
 
 
-def validate_corpus():
+def validate_corpus(corpusdir=corpusdir):
     """
     For every local article file and DOI listed on Solr, validate file names, DOIs, URLs in terms of
     regular expressions.
@@ -83,21 +84,25 @@ def validate_corpus():
 
     # check files and filenames
     plos_files = listdir_nohidden(corpusdir)
-    plos_valid_filenames = [article for article in plos_files if validate_file(article)]
-    if len(plos_valid_dois) == len(plos_valid_filenames):
-        pass
-    else:
-        print("Invalid filenames: {}".format(set(plos_valid_dois) - set(plos_valid_filenames)))
-        return False
-    plos_valid_files = [article for article in plos_valid_filenames if os.path.isfile(article)]
-    valid_files_count = len(plos_valid_files)
-    if set(plos_valid_filenames) == set(plos_valid_files):
-        return True
-    else:
-        if valid_files_count > 220000:
-            print("Invalid files: {}".format(set(plos_valid_filenames) - set(plos_valid_files)))
+    if plos_files:
+        plos_valid_filenames = [article for article in plos_files if validate_file(article)]
+        if len(plos_valid_dois) == len(plos_valid_filenames):
+            pass
         else:
-            print("Not enough valid PLOS local article files. Corpus may need to be redownloaded")
+            print("Invalid filenames: {}".format(set(plos_valid_dois) - set(plos_valid_filenames)))
+            return False
+        plos_valid_files = [article for article in plos_valid_filenames if os.path.isfile(article)]
+        if set(plos_valid_filenames) == set(plos_valid_files):
+            return True
+        else:
+            invalid_files = set(plos_valid_filenames) - set(plos_valid_files)
+            if len(invalid_files) > max_invalid_files_to_print:
+                print("Too many invalid files to print: {}".format(len(invalid_files)))
+            else:
+                print("Invalid files: {}".format(invalid_files))
+            return False
+    else:
+        print("Corpus directory empty. Re-download by running create_local_plos_corpus()")
         return False
 
 # These functions are for getting the article types of all PLOS articles.
