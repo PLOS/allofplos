@@ -894,17 +894,17 @@ def get_zip_metadata(method='initial'):
     Gets metadata txt file from Google Drive, that has info about zip file
     Used to get the file name, as well as byte size for progress bar
     Includes progress bar for download %
-    :param method: TODO: COMPLETE HERE
-    :return: TODO: COMPLETE HERE
+    :param method: boolean if initializing the PLOS Corpus (defaults to True)
+    :return: tuple of data about zip file: date zip created, zip size, and location of metadata txt file
     """
     if method == 'initial':
-        download_file_from_google_drive(metadata_id, zip_metadata)
-    with open(zip_metadata) as f:
+        metadata_path = download_file_from_google_drive(metadata_id, zip_metadata)
+    with open(metadata_path) as f:
         zip_stats = f.read().splitlines()
     zip_datestring = zip_stats[0]
     zip_date = datetime.datetime.strptime(zip_datestring, time_formatting)
     zip_size = int(zip_stats[1])
-    return zip_date, zip_size
+    return zip_date, zip_size, metadata_path
 
 
 def unzip_articles(file_path,
@@ -954,11 +954,11 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
     if os.path.isdir(corpusdir) is False:
         os.mkdir(corpusdir)
         print('Creating folder for article xml')
-    zip_date, zip_size = get_zip_metadata()
+    zip_date, zip_size, metadata_path = get_zip_metadata()
     zip_path = download_file_from_google_drive(zip_id, local_zip)
     unzip_articles(file_path=zip_path)
     if rm_metadata:
-        os.remove(zip_metadata)
+        os.remove(metadata_path)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
