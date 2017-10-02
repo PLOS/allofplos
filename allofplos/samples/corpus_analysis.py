@@ -12,8 +12,6 @@ import csv
 import datetime
 import lxml.etree as et
 from glob import glob
-from os.path import join
-from os import (listdir, rmdir, mkdir)
 import os
 import progressbar
 import re
@@ -24,9 +22,10 @@ import time
 from download import download
 import numpy as np
 
-from plos_corpus import (listdir_nohidden, extract_filenames, check_article_type, get_articleXML_content,
+from plos_corpus import (listdir_nohidden, extract_filenames, check_article_type, get_article_xml,
                          get_related_article_doi, download_updated_xml, unzip_articles, get_all_solr_dois,
-                         file_to_doi, doi_to_file, check_if_uncorrected_proof, newarticledir)
+                         file_to_doi, doi_to_file, check_if_uncorrected_proof, newarticledir, get_article_pubdate,
+                         compare_article_pubdate)
 from plos_regex import (regex_match_prefix, regex_body_match, regex_body_currents, full_doi_regex_match,
                         full_doi_regex_search, currents_doi_regex, validate_doi, validate_file,
                         validate_url, find_valid_dois, show_invalid_dois, currents_doi_filter)
@@ -124,7 +123,7 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
 
 
 def get_plos_article_type(article_file):
-    article_categories = get_articleXML_content(
+    article_categories = get_article_xml(
                                 article_file=article_file,
                                 tag_path_elements=["/",
                                                    "article",
@@ -161,7 +160,7 @@ def get_plos_article_type_list(article_list=None):
 
 def get_article_dtd(article_file):
     try:
-        dtd = get_articleXML_content(
+        dtd = get_article_xml(
                                     article_file=article_file,
                                     tag_path_elements=["/",
                                                        "article"])
@@ -342,8 +341,8 @@ def get_pmc_articles():
     """
     # step 1: download tarball file if needed
     pmc_url = 'ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/articles.O-Z.xml.tar.gz'
-    pmcdir = 'PMC_articles/'
-    pmc_local_tar = 'PMC_files.tar.gz'
+    pmcdir = 'pmc_articles/'
+    pmc_local_tar = 'pmc_files.tar.gz'
     pmc_path = os.path.join(pmcdir, pmc_local_tar)
     if os.path.isdir(pmcdir) is False:
         os.mkdir(pmcdir)
@@ -357,7 +356,7 @@ def get_pmc_articles():
         unzip_articles(file_path=pmc_path, extract_directory=pmcdir, filetype='tar')
 
         # Step 3: delete non-PLOS folders
-        listdirs = glob("PMC_articles/*/")
+        listdirs = glob("pmc_articles/*/")
         print(len(listdirs), "folders for all O-Z journals")
         for directory in list(listdirs):
             if directory.lower().startswith('pmc_articles/plos') is False:
@@ -379,7 +378,7 @@ def get_pmc_articles():
 
 
 def get_article_doi(article_file):
-    raw_xml = get_articleXML_content(article_file=article_file,
+    raw_xml = get_article_xml(article_file=article_file,
                                      tag_path_elements=["/",
                                                         "article",
                                                         "front",
@@ -473,44 +472,6 @@ def get_articles_by_doi_field(directory=pmcdir, article_list=None, check_new=Tru
             print('DOI, PMC ID list exported to', pmc_csv)
 
     return doi_to_pmc
-
-
-def get_article_pubdate(article_file, date_format='%d %m %Y'):
-    day = ''
-    month = ''
-    year = ''
-    raw_xml = get_articleXML_content(article_file=article_file,
-                                     tag_path_elements=["/",
-                                                        "article",
-                                                        "front",
-                                                        "article-meta",
-                                                        "pub-date"])
-    for x in raw_xml:
-        for name, value in x.items():
-            if value == 'epub':
-                date_fields = x
-                for y in date_fields:
-                    if y.tag == 'day':
-                        day = y.text
-                    if y.tag == 'month':
-                        month = y.text
-                    if y.tag == 'year':
-                        year = y.text
-    date = (day, month, year)
-    string_date = ' '.join(date)
-    pubdate = datetime.datetime.strptime(string_date, date_format)
-    return pubdate
-
-
-def compare_article_pubdate(article, days=22):
-    try:
-        pubdate = get_article_pubdate(article)
-        today = datetime.datetime.now()
-        three_wks_ago = datetime.timedelta(days)
-        compare_date = today - three_wks_ago
-        return pubdate < compare_date
-    except OSError:
-        print("Pubdate error in {}".format(article))
 
 
 def check_solr_doi(doi):
@@ -909,13 +870,13 @@ def download_pmc_article_xml(missing_pmc_articles=None, pmc_urls=None):
                     continue
 
         # get rid of non-.nxml files
-        allfiles = glob.glob('New_PMC_articles/*/*')
+        allfiles = glob.glob('new_pmc_articles/*/*')
         for file in allfiles:
             if file.endswith('.nxml') is False:
                 os.remove(file)
 
         # move and process the nxml files
-        files = glob.glob('New_PMC_articles/*/*')
+        files = glob.glob('new_pmc_articles/*/*')
         for old_file in files:
             # make sure directory and linked doi line up
             directory = (old_file).split('/')[1]
@@ -927,7 +888,7 @@ def download_pmc_article_xml(missing_pmc_articles=None, pmc_urls=None):
                 new_pmc_articles.append(new_file)
             else:
                 print('error:', linked_doi, directory)
-        for directory in glob.glob('New_PMC_articles/*/'):
+        for directory in glob.glob('new_pmc_articles/*/'):
             os.rmdir(directory)
 
     return new_pmc_articles

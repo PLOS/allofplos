@@ -34,8 +34,7 @@ import progressbar
 import requests
 from tqdm import tqdm
 
-from plos_regex import (regex_match_prefix, regex_body_match, full_doi_regex_match, full_doi_regex_search,
-                        validate_doi, validate_file, validate_url)
+from plos_regex import validate_doi
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -253,7 +252,7 @@ def extract_filenames(directory, extension='.xml'):
     :return: A list with all the file names inside this directory, excluding extensions
     """
     filenames = [os.path.basename(article_file).rstrip(extension) for article_file in listdir_nohidden(directory, extension) if
-                 isfile(article_file)]
+                 os.path.isfile(article_file)]
     return filenames
 
 
@@ -427,7 +426,7 @@ def move_articles(source, destination):
         shutil.rmtree(source)
 
 
-def get_articleXML_content(article_file, tag_path_elements=None):
+def get_article_xml(article_file, tag_path_elements=None):
     """
     For a local article file, read its XML tree
     Can also interpret DOIs
@@ -473,7 +472,7 @@ def check_article_type(article_file):
     :param article_file: the xml file for a single article
     :return: JATS article_type at that xpath location
     """
-    article_type = get_articleXML_content(article_file=article_file,
+    article_type = get_article_xml(article_file=article_file,
                                           tag_path_elements=["/",
                                                              "article"])
     return article_type[0].attrib['article-type']
@@ -488,7 +487,7 @@ def get_related_article_doi(article_file, corrected=True):
     :param corrected: default true, part of the Corrections workflow, more strict in tag search
     :return: tuple of partial doi string at that xpath location, related_article_type
     """
-    r = get_articleXML_content(article_file=article_file,
+    r = get_article_xml(article_file=article_file,
                                tag_path_elements=["/",
                                                   "article",
                                                   "front",
@@ -511,6 +510,42 @@ def get_related_article_doi(article_file, corrected=True):
     return related_article, related_article_type
 
 
+def get_article_pubdate(article_file, date_format='%d %m %Y'):
+    day = ''
+    month = ''
+    year = ''
+    raw_xml = get_article_xml(article_file=article_file,
+                                     tag_path_elements=["/",
+                                                        "article",
+                                                        "front",
+                                                        "article-meta",
+                                                        "pub-date"])
+    for x in raw_xml:
+        for name, value in x.items():
+            if value == 'epub':
+                date_fields = x
+                for y in date_fields:
+                    if y.tag == 'day':
+                        day = y.text
+                    if y.tag == 'month':
+                        month = y.text
+                    if y.tag == 'year':
+                        year = y.text
+    date = (day, month, year)
+    string_date = ' '.join(date)
+    pubdate = datetime.datetime.strptime(string_date, date_format)
+    return pubdate
+
+
+def compare_article_pubdate(article, days=22):
+    try:
+        pubdate = get_article_pubdate(article)
+        today = datetime.datetime.now()
+        three_wks_ago = datetime.timedelta(days)
+        compare_date = today - three_wks_ago
+        return pubdate < compare_date
+    except OSError:
+        print("Pubdate error in {}".format(article))
 def download_updated_xml(article_file,
                          tempdir=newarticledir,
                          vor_check=False):
@@ -617,7 +652,7 @@ def check_if_uncorrected_proof(article_file):
     :param article: Partial DOI/filename of the article
     :return: Boolean for whether article is an uncorrected proof (true = yes, false = no)
     """
-    tree = get_articleXML_content(article_file)
+    tree = get_article_xml(article_file)
     for subtree in tree:
         if subtree.text == 'uncorrected-proof':
             return True
@@ -699,7 +734,8 @@ def check_for_vor_updates(uncorrected_list=None):
     if uncorrected_list is None:
         uncorrected_list = get_uncorrected_proofs_list()
     # Make it check a single article
-    if isinstance(uncorrected_list, str): uncorrected_list = [uncorrected_list]
+    if isinstance(uncorrected_list, str):
+        uncorrected_list = [uncorrected_list]
 
     # Create article list chunks for Solr query no longer than 10 DOIs at a time
     list_chunks = [uncorrected_list[x:x+10] for x in range(0, len(uncorrected_list), 10)]
