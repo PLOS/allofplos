@@ -354,7 +354,7 @@ def get_pmc_articles():
         path = download(pmc_url, pmc_path)
 
         # Step 2: unzip archive
-        unzip_articles(directory=pmcdir, filetype='tar', file=pmc_local_tar)
+        unzip_articles(file_path=pmc_path, extract_directory=pmcdir, filetype='tar')
 
         # Step 3: delete non-PLOS folders
         listdirs = glob("PMC_articles/*/")
@@ -511,7 +511,6 @@ def compare_article_pubdate(article, days=22):
         return pubdate < compare_date
     except OSError:
         print("Pubdate error in {}".format(article))
-        pass
 
 
 def check_solr_doi(doi):
