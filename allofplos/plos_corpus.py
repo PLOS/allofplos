@@ -35,7 +35,7 @@ import requests
 from tqdm import tqdm
 
 from plos_regex import (regex_match_prefix, regex_body_match, full_doi_regex_match, full_doi_regex_search,
-                        make_regex_bool, validate_doi, validate_file, validate_url)
+                        validate_doi, validate_file, validate_url)
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
