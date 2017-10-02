@@ -28,7 +28,7 @@ from plos_corpus import (listdir_nohidden, extract_filenames, check_article_type
                          get_related_article_doi, download_updated_xml, unzip_articles, get_all_solr_dois,
                          file_to_doi, doi_to_file, check_if_uncorrected_proof, newarticledir)
 from plos_regex import (regex_match_prefix, regex_body_match, regex_body_currents, full_doi_regex_match,
-                        full_doi_regex_search, currents_doi_regex, make_regex_bool, validate_doi, validate_file,
+                        full_doi_regex_search, currents_doi_regex, validate_doi, validate_file,
                         validate_url, find_valid_dois, show_invalid_dois, currents_doi_filter)
 
 counter = collections.Counter
