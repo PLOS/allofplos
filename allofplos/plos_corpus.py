@@ -877,7 +877,7 @@ def save_response_content(response, download_path, file_size=None):
     if os.path.basename(download_path) == local_zip:
         with open(download_path, "wb") as f:
             size = file_size
-            pieces = size / CHUNK_SIZE
+            pieces = round(size / CHUNK_SIZE)
             with tqdm(total=pieces) as pbar:
                 for chunk in response.iter_content(CHUNK_SIZE):
                     pbar.update(1)
