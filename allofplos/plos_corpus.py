@@ -837,7 +837,7 @@ def download_file_from_google_drive(id, filename, destination=corpusdir, file_si
     URL = "https://docs.google.com/uc?export=download"
 
     file_path = os.path.join(destination, filename)
-    if not file_path:
+    if not os.path.isfile(file_path):
         session = requests.Session()
 
         response = session.get(URL, params={'id': id}, stream=True)
