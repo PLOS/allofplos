@@ -923,7 +923,7 @@ def unzip_articles(file_path,
     :return: None
     """
     try:
-        os.makedirs(directory)
+        os.makedirs(extract_directory)
     except OSError as e:
         if e.errno != errno.EEXIST:
             raise
