@@ -473,8 +473,8 @@ def check_article_type(article_file):
     :return: JATS article_type at that xpath location
     """
     article_type = get_article_xml(article_file=article_file,
-                                          tag_path_elements=["/",
-                                                             "article"])
+                                   tag_path_elements=["/",
+                                                      "article"])
     return article_type[0].attrib['article-type']
 
 
@@ -488,11 +488,11 @@ def get_related_article_doi(article_file, corrected=True):
     :return: tuple of partial doi string at that xpath location, related_article_type
     """
     r = get_article_xml(article_file=article_file,
-                               tag_path_elements=["/",
-                                                  "article",
-                                                  "front",
-                                                  "article-meta",
-                                                  "related-article"])
+                        tag_path_elements=["/",
+                                           "article",
+                                           "front",
+                                           "article-meta",
+                                           "related-article"])
     related_article = ''
     if corrected:
         for x in r:
@@ -511,15 +511,21 @@ def get_related_article_doi(article_file, corrected=True):
 
 
 def get_article_pubdate(article_file, date_format='%d %m %Y'):
+    """
+    For an individual article, get its date of publication
+    :param article_file: file path/DOI of the article
+    :param date_format: string format used to convert to datetime object
+    :return: datetime object with the date of publication
+    """
     day = ''
     month = ''
     year = ''
     raw_xml = get_article_xml(article_file=article_file,
-                                     tag_path_elements=["/",
-                                                        "article",
-                                                        "front",
-                                                        "article-meta",
-                                                        "pub-date"])
+                              tag_path_elements=["/",
+                                                 "article",
+                                                 "front",
+                                                 "article-meta",
+                                                 "pub-date"])
     for x in raw_xml:
         for name, value in x.items():
             if value == 'epub':
@@ -538,6 +544,12 @@ def get_article_pubdate(article_file, date_format='%d %m %Y'):
 
 
 def compare_article_pubdate(article, days=22):
+    """
+    Check if an article's publication date was more than 3 weeks ago.
+    :param article: doi/file of the article
+    :param days: how long ago to compare the publication date (default 22 days)
+    :return: boolean for whether the pubdate was older than the days value
+    """
     try:
         pubdate = get_article_pubdate(article)
         today = datetime.datetime.now()
@@ -546,6 +558,8 @@ def compare_article_pubdate(article, days=22):
         return pubdate < compare_date
     except OSError:
         print("Pubdate error in {}".format(article))
+
+
 def download_updated_xml(article_file,
                          tempdir=newarticledir,
                          vor_check=False):

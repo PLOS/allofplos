@@ -123,13 +123,12 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
 
 
 def get_plos_article_type(article_file):
-    article_categories = get_article_xml(
-                                article_file=article_file,
-                                tag_path_elements=["/",
-                                                   "article",
-                                                   "front",
-                                                   "article-meta",
-                                                   "article-categories"])
+    article_categories = get_article_xml(article_file=article_file,
+                                         tag_path_elements=["/",
+                                                            "article",
+                                                            "front",
+                                                            "article-meta",
+                                                            "article-categories"])
     subject_list = article_categories[0].getchildren()
 
     for subject in subject_list:
@@ -160,10 +159,9 @@ def get_plos_article_type_list(article_list=None):
 
 def get_article_dtd(article_file):
     try:
-        dtd = get_article_xml(
-                                    article_file=article_file,
-                                    tag_path_elements=["/",
-                                                       "article"])
+        dtd = get_article_xml(article_file=article_file,
+                              tag_path_elements=["/",
+                                                 "article"])
         dtd = dtd[0].attrib['dtd-version']
     except KeyError:
         print('Error parsing DTD from', article_file)
@@ -379,11 +377,11 @@ def get_pmc_articles():
 
 def get_article_doi(article_file):
     raw_xml = get_article_xml(article_file=article_file,
-                                     tag_path_elements=["/",
-                                                        "article",
-                                                        "front",
-                                                        "article-meta",
-                                                        "article-id"])
+                              tag_path_elements=["/",
+                                                 "article",
+                                                 "front",
+                                                 "article-meta",
+                                                 "article-id"])
     for x in raw_xml:
         for name, value in x.items():
             if value == 'doi':
