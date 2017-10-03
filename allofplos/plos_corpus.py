@@ -30,8 +30,12 @@ import tarfile
 import zipfile
 
 import lxml.etree as et
+import progressbar
 import requests
 from tqdm import tqdm
+
+from plos_regex import (regex_match_prefix, regex_body_match, full_doi_regex_match, full_doi_regex_search,
+                        make_regex_bool, validate_doi, validate_file, validate_url)
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -39,7 +43,7 @@ help_str = "This program downloads a zip file with all PLOS articles and checks 
 corpusdir = 'allofplos_xml'
 
 # Temp folder for downloading and processing new articles
-newarticledir = 'New_PLOS_articles'
+newarticledir = 'new_plos_articles'
 
 # Making sure DS.Store not included as file
 ignore_func = shutil.ignore_patterns('.DS_Store')
@@ -51,7 +55,6 @@ uncorrected_proofs_text_list = 'uncorrected_proofs_list.txt'
 BASE_URL_API = 'http://api.plos.org/search'
 
 # URL bases for PLOS's raw article XML
-
 EXT_URL_TMP = 'http://journals.plos.org/plosone/article/file?id={0}&type=manuscript'
 INT_URL_TMP = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-repo?key={0}.XML'
 URL_TMP = EXT_URL_TMP
@@ -86,6 +89,7 @@ metadata_id = '0B_JDnoghFeEKQUhKWXBOVy1aTlU'
 local_zip = 'allofplos_xml.zip'
 zip_metadata = 'zip_info.txt'
 time_formatting = "%Y_%b_%d_%Hh%Mm%Ss"
+min_files_for_valid_corpus = 200000
 
 
 def file_to_url(file, directory=corpusdir, plos_network=False):
@@ -353,7 +357,7 @@ def copytree(source, destination, symlinks=False, ignore=None):
     :param ignore: param from the shutil.copytree function; default is include all files
     :return: None
     """
-    for item in list(listdir_nohidden(source, include_dir=False)):
+    for item in listdir_nohidden(source, include_dir=False):
         s = os.path.join(source, item)
         d = os.path.join(destination, item)
         if os.path.isdir(s):
@@ -380,7 +384,9 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         existing_articles = [file_to_doi(file) for file in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
 
-    for doi in dois:
+    max_value = len(dois)
+    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+    for i, doi in enumerate(sorted(dois)):
         url = URL_TMP.format(doi)
         articleXML = et.parse(url)
         article_path = doi_to_file(doi, directory=tempdir)
@@ -390,6 +396,8 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
                 file.write(et.tostring(articleXML, method='xml', encoding='unicode'))
             if not plos_network:
                 time.sleep(1)
+        bar.update(i+1)
+    bar.finish()
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
 
@@ -422,6 +430,7 @@ def move_articles(source, destination):
 def get_articleXML_content(article_file, tag_path_elements=None):
     """
     For a local article file, read its XML tree
+    Can also interpret DOIs
     Defaults to reading the tree location for uncorrected proofs/versions of record
     :param article_file: the xml file for a single article
     :param tag_path_elements: xpath location in the XML tree of the article file
@@ -439,7 +448,9 @@ def get_articleXML_content(article_file, tag_path_elements=None):
     try:
         article_tree = et.parse(article_file)
     except OSError:
-        if article_file.endswith('xml'):
+        if validate_doi(article_file):
+            article_file = doi_to_file(article_file)
+        elif article_file.endswith('xml'):
             article_file = article_file[:-3] + 'XML'
         elif article_file.endswith('XML'):
             article_file = article_file[:-3] + 'xml'
@@ -465,8 +476,7 @@ def check_article_type(article_file):
     article_type = get_articleXML_content(article_file=article_file,
                                           tag_path_elements=["/",
                                                              "article"])
-    article_type = article_type[0].attrib['article-type']
-    return article_type
+    return article_type[0].attrib['article-type']
 
 
 def get_related_article_doi(article_file, corrected=True):
@@ -588,10 +598,15 @@ def download_corrected_articles(directory=corpusdir, tempdir=newarticledir, corr
     if corrected_article_list is None:
         corrected_article_list = check_for_corrected_articles(directory)
     corrected_updated_article_list = []
-    for article in corrected_article_list:
+    print("Downloading corrected articles")
+    max_value = len(corrected_article_list)
+    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+    for i, article in enumerate(corrected_article_list):
         updated = download_updated_xml(article)
         if updated:
             corrected_updated_article_list.append(article)
+        bar.update(i+1)
+    bar.finish()
     print(len(corrected_updated_article_list), 'corrected articles downloaded with new xml.')
     return corrected_updated_article_list
 
@@ -621,11 +636,22 @@ def get_uncorrected_proofs_list():
     except FileNotFoundError:
         print("Creating new text list of uncorrected proofs from scratch.")
         article_files = listdir_nohidden(corpusdir)
-        uncorrected_proofs_list = [file_to_doi(article_file) for article_file in article_files
-                                   if check_if_uncorrected_proof(article_file)]
+        uncorrected_proofs_list = []
+        max_value = len(article_files)
+        bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+        for i, article_file in enumerate(article_files):
+            bar.update(i+1)
+            if check_if_uncorrected_proof(article_file):
+                uncorrected_proofs_list.append(file_to_doi(article_file))
+        bar.finish()
+        print("Saving uncorrected proofs.")
         with open(uncorrected_proofs_text_list, 'w') as file:
-            for item in sorted(uncorrected_proofs_list):
+            max_value = len(uncorrected_proofs_list)
+            bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+            for i, item in enumerate(sorted(uncorrected_proofs_list)):
                 file.write("%s\n" % item)
+                bar.update(i+1)
+            bar.finish()
     return uncorrected_proofs_list
 
 
@@ -731,13 +757,16 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir, vor_updates
                                                           plos_network=args.plos)
         vor_updated_article_list.extend(proofs_download_list)
         new_uncorrected_proofs_list = list(set(new_uncorrected_proofs_list) - set(vor_updated_article_list))
+        too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof)]
+        if too_old_proofs and args.plos:
+            print("Proofs older than 3 weeks: {}".format(too_old_proofs))
 
     # if any VOR articles have been downloaded, update static uncorrected proofs list
     if vor_updated_article_list:
         with open(uncorrected_proofs_text_list, 'w') as file:
             for item in sorted(new_uncorrected_proofs_list):
                 file.write("%s\n" % item)
-        print("{} uncorrected proofs updated to version of record.".format(len(vor_updated_article_list)) +
+        print("{} uncorrected proofs updated to version of record.\n".format(len(vor_updated_article_list)) +
               "{} uncorrected proofs remaining in uncorrected proof list.".format(len(new_uncorrected_proofs_list)))
 
     else:
@@ -795,12 +824,13 @@ def download_check_and_move(article_list, text_list, tempdir, destination):
     move_articles(tempdir, destination)
 
 
-def download_file_from_google_drive(id, destination):
+def download_file_from_google_drive(id, filename, destination=corpusdir):
     """
     General method for downloading from Google Drive.
     Doesn't require using API or having credentials
     :param id: Google Drive id for file (constant even if filename change)
-    :param destination: directory where to download the file
+    :param filename: name of the zip file
+    :param destination: directory where to download the zip file, defaults to corpusdir
     :return: None
     """
     URL = "https://docs.google.com/uc?export=download"
@@ -814,7 +844,9 @@ def download_file_from_google_drive(id, destination):
         params = {'id': id, 'confirm': token}
         response = session.get(URL, params=params, stream=True)
         r = requests.get(URL, params=params, stream=True)
-    save_response_content(response, destination)
+    file_path = os.path.join(destination, filename)
+    save_response_content(response, file_path)
+    return file_path
 
 
 def get_confirm_token(response):
@@ -830,31 +862,31 @@ def get_confirm_token(response):
     return None
 
 
-def save_response_content(response, destination):
+def save_response_content(response, download_path):
     """
     Saves the downloaded file parts from Google Drive to local file
     Includes progress bar for download %
     :param response: session-based google query
-    :param destination: TODO: COMPLETE HERE
+    :param download_path: path to local zip file
     :return: None
     """
     CHUNK_SIZE = 32768
     # for downloading zip file
-    if destination == local_zip:
-        with open(destination, "wb") as file:
+    if os.path.basename(download_path) == local_zip:
+        with open(download_path, "wb") as f:
             size = zip_size
             pieces = size / CHUNK_SIZE
             with tqdm(total=pieces) as pbar:
                 for chunk in response.iter_content(CHUNK_SIZE):
                     pbar.update(1)
                     if chunk:  # filter out keep-alive new chunks
-                        file.write(chunk)
+                        f.write(chunk)
     # for downloading zip metadata text file
     else:
-        with open(destination, "wb") as file:
+        with open(download_path, "wb") as f:
             for chunk in response.iter_content(CHUNK_SIZE):
                 if chunk:  # filter out keep-alive new chunks
-                    file.write(chunk)
+                    f.write(chunk)
 
 
 def get_zip_metadata(method='initial'):
@@ -867,20 +899,24 @@ def get_zip_metadata(method='initial'):
     """
     if method == 'initial':
         download_file_from_google_drive(metadata_id, zip_metadata)
-    with open(zip_metadata) as file:
-        zip_stats = file.read().splitlines()
+    with open(zip_metadata) as f:
+        zip_stats = f.read().splitlines()
     zip_datestring = zip_stats[0]
     zip_date = datetime.datetime.strptime(zip_datestring, time_formatting)
     zip_size = int(zip_stats[1])
     return zip_date, zip_size
 
 
-def unzip_articles(directory=corpusdir, filetype='zip', file=local_zip, delete_file=True):
+def unzip_articles(file_path,
+                   extract_directory=corpusdir,
+                   filetype='zip',
+                   delete_file=True
+                   ):
     """
     Unzips zip file of all of PLOS article XML to specified directory
-    :param directory: directory where articles are copied to
+    :param file_path: path to file to be extracted
+    :param extract_directory: directory where articles are copied to
     :param filetype: whether a 'zip' or 'tar' file (tarball), which use different decompression libraries
-    :param file: The file to be unzipped. Defaults to local_zip for the main zip creation workflow
     :param delete_file: whether to delete the compressed archive after extracting articles
     :return: None
     """
@@ -891,21 +927,38 @@ def unzip_articles(directory=corpusdir, filetype='zip', file=local_zip, delete_f
             raise
 
     if filetype == 'zip':
-        with zipfile.ZipFile(file, "r") as zip_ref:
+        with zipfile.ZipFile(file_path, "r") as zip_ref:
             print("Extracting zip file...")
-            zip_ref.extractall(directory)
+            zip_ref.extractall(extract_directory)
             print("Extraction complete.")
     elif filetype == 'tar':
-        tar_file = os.path.join(directory, file)
-        tar = tarfile.open(tar_file)
-        tar.extractall(path=directory)
+        tar = tarfile.open(file_path)
+        print("Extracting tar file...")
+        tar.extractall(path=extract_directory)
         tar.close()
+        print("Extraction complete.")
 
     if delete_file:
-        try:
-            os.remove(file)
-        except OSError:
-            os.remove(tar_file)
+        os.remove(file_path)
+
+
+def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
+    """
+    Downloads a fresh copy of the PLOS corpus by:
+    1) creating corpusdir if it doesn't exist
+    2) downloading metadata about the .zip of all PLOS XML
+    2) downloading the zip file (defaults to corpus directory)
+    3) extracting the individual XML files into the corpus directory
+    :param corpusdir: directory where the corpus is to be downloaded and extracted
+    """
+    if os.path.isdir(corpusdir) is False:
+        os.mkdir(corpusdir)
+        print('Creating folder for article xml')
+    zip_date, zip_size = get_zip_metadata()
+    zip_path = download_file_from_google_drive(zip_id, local_zip)
+    unzip_articles(file_path=zip_path)
+    if rm_metadata:
+        os.remove(zip_metadata)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -916,18 +969,12 @@ if __name__ == "__main__":
     else:
         URL_TMP = EXT_URL_TMP
     # Step 0: Initialize first copy of repository
-    if os.path.isdir(corpusdir) is False:
-        os.mkdir(corpusdir)
-        print('Creating folder for article xml')
-
     corpus_files = [name for name in os.listdir(corpusdir) if os.path.isfile(
                     os.path.join(corpusdir, name))]
-    if len(corpus_files) < 200000:
+    if len(corpus_files) < min_files_for_valid_corpus:
         print('Not enough articles in corpusdir, re-downloading zip file')
         # TODO: check if zip file is in top-level directory before downloading
-        zip_date, zip_size = get_zip_metadata()
-        download_file_from_google_drive(zip_id, local_zip)
-        unzip_articles()
+        create_local_plos_corpus()
 
     # Step 1: Query solr via URL and construct DOI list
         # Filtered by article type & scheduled for the last 14 days.

@@ -15,6 +15,7 @@ from glob import glob
 from os.path import join
 from os import (listdir, rmdir, mkdir)
 import os
+import progressbar
 import re
 import requests
 from shutil import move, rmtree
@@ -26,12 +27,15 @@ import numpy as np
 from plos_corpus import (listdir_nohidden, extract_filenames, check_article_type, get_articleXML_content,
                          get_related_article_doi, download_updated_xml, unzip_articles, get_all_solr_dois,
                          file_to_doi, doi_to_file, check_if_uncorrected_proof, newarticledir)
+from plos_regex import (regex_match_prefix, regex_body_match, regex_body_currents, full_doi_regex_match,
+                        full_doi_regex_search, currents_doi_regex, make_regex_bool, validate_doi, validate_file,
+                        validate_url, find_valid_dois, show_invalid_dois, currents_doi_filter)
 
 counter = collections.Counter
-newpmcarticledir = "New_PMC_articles"
+newpmcarticledir = "new_pmc_articles"
 USER_EMAIL = 'elizabeth.seiver@gmail.com'
 
-pmcdir = "PMC_Articles/"
+pmcdir = "pmc_articles/"
 corpusdir = 'allofplos_xml'
 pmc_csv = 'doi_to_pmc.csv'
 # xml URL takes PMC identifier minus 'PMC'
@@ -49,66 +53,52 @@ pmc_allplos_query_url = ('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.
                          '&email={0}'.format(USER_EMAIL))
 PMC_FTP_URL = 'ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/'
 pmc_file_list = 'oa_file_list.txt'
-newpmcarticledir = "New_PMC_articles"
+newpmcarticledir = "new_pmc_articles"
 
 
-"""
-The following RegEx pertains to the 7 main PLOS journals and the defunct PLOS Clinical Trials, as well as PLOS Currents.
-"""
-
-regex_match_prefix = r"^10\.1371/"
-regex_body_match = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7}$)"
-                    r"|(annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}$))")
-regex_body_currents = (r"((currents\.[a-zA-Z]{2,9}\.[a-zA-Z0-9]{32}$)"
-                       r"|(currents\.RRN[\d]{4}$)"
-                       r"|([a-zA-Z0-9]{13}$)"
-                       r"|([a-zA-Z0-9]{32}$))")
-full_doi_regex_match = re.compile(regex_match_prefix+regex_body_match)
-full_doi_regex_search = re.compile(r"10\.1371/journal\.p[a-zA-Z]{3}\.[\d]{7}"
-                                   "|10\.1371/annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")
-currents_doi_regex = re.compile(regex_match_prefix+regex_body_currents)
-
-
-def make_regex_bool(match_or_none):
-    return bool(match_or_none)
-
-
-def validate_doi(string):
+def validate_corpus():
     """
-    For an individual string, tests whether the full string is a valid PLOS DOI or not
-    Example: '10.1371/journal.pbio.2000777' is True, but '10.1371/journal.pbio.2000777 ' is False
-    :return: True if a valid PLOS DOI; False if not
+    For every local article file and DOI listed on Solr, validate file names, DOIs, URLs in terms of
+    regular expressions.
+    Stops checking as soon as encounters problem and prints it
+    :return: boolean of whether corpus passed validity checks
     """
-    return make_regex_bool(full_doi_regex_match.search(string))
+    # check DOIs
+    plos_dois = get_all_plos_dois()
+    plos_valid_dois = [doi for doi in plos_dois if validate_doi(doi)]
+    if set(plos_dois) == set(plos_valid_dois):
+        pass
+    else:
+        print("Invalid DOIs: {}".format(set(plos_dois) - set(plos_valid_dois)))
+        return False
 
+    # check urls
+    plos_urls = [doi_to_url(doi) for doi in plos_valid_dois]
+    plos_valid_urls = [url for url in plos_urls if validate_url(url)]
+    if set(plos_urls) == set(plos_valid_urls) and len(plos_valid_urls) == len(plos_valid_dois):
+        pass
+    else:
+        print("Invalid URLs: {}".format(set(plos_urls) - set(plos_valid_urls)))
+        return False
 
-def find_valid_dois(string):
-    """
-    For an individual string, searches for any valid PLOS DOIs within it and returns them
-    :return: list of valid PLOS DOIs contained within string
-    """
-    return full_doi_regex_search.findall(string)
-
-
-def show_invalid_dois(doi_list):
-    """
-    Checks to see whether a list of PLOS DOIs follow the correct format. Used mainly to determine
-    if linked DOI fields in other articles (such as retractions and corrections) are correct.
-    :return: list of DOI candidates that don't match PLOS's pattern
-    """
-    nonmatches = np.array([not validate_doi(x) for x in doi_list])
-    return list(np.array(doi_list)[nonmatches])
-
-
-def currents_doi_filter(doi_list):
-    """
-    Checks to see whether a list of PLOS Currents DOIs follow the correct format. Used mainly to determine
-    if linked DOI fields in PMC articles are correct.
-    :return: list of DOI candidates that don't match Currents' pattern
-    """
-    nonmatches = np.array([not make_regex_bool(currents_doi_regex.search(x)) for x in doi_list])
-    return list(np.array(doi_list)[nonmatches])
-
+    # check files and filenames
+    plos_files = listdir_nohidden(corpusdir)
+    plos_valid_filenames = [article for article in plos_files if validate_file(article)]
+    if len(plos_valid_dois) == len(plos_valid_filenames):
+        pass
+    else:
+        print("Invalid filenames: {}".format(set(plos_valid_dois) - set(plos_valid_filenames)))
+        return False
+    plos_valid_files = [article for article in plos_valid_filenames if os.path.isfile(article)]
+    valid_files_count = len(plos_valid_files)
+    if set(plos_valid_filenames) == set(plos_valid_files):
+        return True
+    else:
+        if valid_files_count > 220000:
+            print("Invalid files: {}".format(set(plos_valid_filenames) - set(plos_valid_files)))
+        else:
+            print("Not enough valid PLOS local article files. Corpus may need to be redownloaded")
+        return False
 
 # These functions are for getting the article types of all PLOS articles.
 
@@ -311,6 +301,7 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
     """
     :param truncated: if True, restrict articles to only those with pubdates from the last year or two
     """
+    list_provided = bool(article_list)
     if article_list is None and truncated is False:
         article_list = listdir_nohidden(directory)
     if article_list is None and truncated:
@@ -323,10 +314,16 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
     except FileExistsError:
         pass
     articles_different_list = []
-    for article_file in article_list:
+    max_value = len(article_list)
+    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+    for i, article_file in enumerate(article_list):
         updated = download_updated_xml(article_file=article_file)
         if updated:
             articles_different_list.append(article_file)
+        if list_provided:
+            article_list.remove(article_file)  # helps save time if need to restart process
+        bar.update(i+1)
+    bar.finish()
     print(len(article_list), "article checked for updates.")
     print(len(articles_different_list), "articles have updates.")
     return articles_different_list
@@ -508,6 +505,7 @@ def compare_article_pubdate(article, days=22):
         compare_date = today - three_wks_ago
         return pubdate < compare_date
     except OSError:
+        print("Pubdate error in {}".format(article))
         pass
 
 
@@ -517,10 +515,7 @@ def check_solr_doi(doi):
     '''
     solr_url = 'http://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,&wt=json&indent=true&fq=id:%22{}%22'.format(doi)
     article_search = requests.get(solr_url).json()
-    if article_search['response']['numFound'] > 0:
-        return True
-    else:
-        return False
+    return bool(article_search['response']['numFound'])
 
 
 def get_pmc_doi_dict(id_list=None, chunk_size=150):
@@ -626,7 +621,7 @@ def process_missing_plos_articles(plos_articles=None, pmc_articles=None):
     missing_plos_articles = list(set(pmc_articles) - set(plos_articles))
 
     # remove Currents articles
-    for article in list(missing_plos_articles):
+    for article in missing_plos_articles:
         if article.startswith('10.1371/currents') or \
              len(article) == 21 or \
              article == '10.1371/198d344bc40a75f927c9bc5024279815':
@@ -678,8 +673,8 @@ def process_missing_plos_articles(plos_articles=None, pmc_articles=None):
         for doi in doi_mismatch:
             print('\033[0m', doi, 'resolves to:', check_if_doi_resolves(doi))
 
-    remainder = list(set(missing_plos_articles) - set(linkworks_valid_doi + missing_articles_404_error +
-                     doi_mismatch + doi_has_space))
+    remainder = set(missing_plos_articles) - set(linkworks_valid_doi + missing_articles_404_error +
+                     doi_mismatch + doi_has_space)
     if remainder:
         print('\n \033[1m' + "Other articles on PMC that aren't working correctly for PLOS:")
         print('\033[0m' + '\n'.join(remainder), '\n')
@@ -700,7 +695,7 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
     missing_local_articles = set(solr_articles) - set(local_articles)
     if missing_local_articles:
         print('re-run plos_corpus.py to download latest {} PLOS articles locally.'.format(len(missing_local_articles)))
-    missing_solr_articles = list(set(local_articles) - set(solr_articles))
+    missing_solr_articles = set(local_articles) - set(solr_articles)
     plos_articles = set(solr_articles + local_articles)
     if missing_solr_articles:
         print('\033[1m' + 'Articles that needs to be re-indexed on Solr:')
@@ -711,12 +706,21 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
 
 def get_random_list_of_dois(directory=corpusdir, count=100):
     '''
-    :return: a list of random DOI articles for analysis
+    Gets a list of random DOIs. Tries first to construct from local files in corpusdir, otherwise tries Solr DOI list
+    as backup.
+    :param directory: defaults to searching corpusdir
+    :param count: specify how many DOIs are to be returned
+    :return: a list of random DOIs for analysis
     '''
-    article_list = listdir_nohidden(directory)
-    np_list = np.array(article_list)
-    sample_file_list = list(np.random.choice(np_list, size=count, replace=False))
-    sample_doi_list = [file_to_doi(file) for file in sample_file_list]
+    try:
+        article_list = listdir_nohidden(directory)
+        np_list = np.array(article_list)
+        sample_file_list = list(np.random.choice(np_list, size=count, replace=False))
+        sample_doi_list = [file_to_doi(file) for file in sample_file_list]
+    except OSError:
+        doi_list = get_all_solr_dois()
+        np_list = np.array(doi_list)
+        sample_doi_list = list(np.random.choice(np_list, size=count, replace=False))
     return sample_doi_list
 
 
