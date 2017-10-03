@@ -14,13 +14,13 @@ import lxml.etree as et
 from glob import glob
 import os
 import progressbar
+import random
 import re
 import requests
 from shutil import move, rmtree
 import time
 
 from download import download
-import numpy as np
 
 from plos_corpus import (listdir_nohidden, extract_filenames, check_article_type, get_article_xml,
                          get_related_article_doi, download_updated_xml, unzip_articles, get_all_solr_dois,
@@ -659,7 +659,8 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
         local_articles = [file_to_doi(article_file) for article_file in listdir_nohidden(corpusdir)]
     missing_local_articles = set(solr_articles) - set(local_articles)
     if missing_local_articles:
-        print('re-run plos_corpus.py to download latest {} PLOS articles locally.'.format(len(missing_local_articles)))
+        print('re-run plos_corpus.py to download latest {0} PLOS articles locally.'
+              .format(len(missing_local_articles)))
     missing_solr_articles = set(local_articles) - set(solr_articles)
     plos_articles = set(solr_articles + local_articles)
     if missing_solr_articles:
@@ -671,21 +672,19 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
 
 def get_random_list_of_dois(directory=corpusdir, count=100):
     '''
-    Gets a list of random DOIs. Tries first to construct from local files in corpusdir, otherwise tries Solr DOI list
-    as backup.
+    Gets a list of random DOIs. Tries first to construct from local files in
+    corpusdir, otherwise tries Solr DOI list as backup.
     :param directory: defaults to searching corpusdir
     :param count: specify how many DOIs are to be returned
     :return: a list of random DOIs for analysis
     '''
     try:
         article_list = listdir_nohidden(directory)
-        np_list = np.array(article_list)
-        sample_file_list = list(np.random.choice(np_list, size=count, replace=False))
+        sample_file_list = random.sample(article_list, count)
         sample_doi_list = [file_to_doi(file) for file in sample_file_list]
     except OSError:
         doi_list = get_all_solr_dois()
-        np_list = np.array(doi_list)
-        sample_doi_list = list(np.random.choice(np_list, size=count, replace=False))
+        sample_doi_list = random.sample(doi_list, count)
     return sample_doi_list
 
 
@@ -775,7 +774,8 @@ def get_all_pmc_dois(retstart=0, retmax=80000, count=None):
         time.sleep(1)
     pmcidlist = sorted(list(set(pmcidlist)))
     if pmcidlist != count:
-        print("Error in number of IDs returned. Got {} when expected {}.".format(len(pmcidlist), count))
+        print("Error in number of IDs returned. Got {0} when expected {1}."
+              .format(len(pmcidlist), count))
 
     return pmcidlist
 
