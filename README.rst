@@ -50,7 +50,7 @@ The first time it runs it will download a >4.4 Gb zip file
 **Note**: Make sure that you have enough space in your device for the
 zip file and for it content before running this command (at least 30Gb).
 After this file is downloaded, it will extract it contents into
-AllofPLOS\_article\_XML directory.
+allofplos\_xml directory.
 
 If you ever downloaded the corpus before, it will make an incremental
 update to the existing corpus, the script checks for and then downloads
