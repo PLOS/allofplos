@@ -14,8 +14,8 @@ setup(
     description='Get and analyze all PLOS articles',
     long_description=long_description,
     url='https://github.com/PLOS/allofplos',
-    author='Elizabeth Seiver',
-    author_email='eseiver@plos.org',
+    author='Elizabeth Seiver, Sebastian Bassi',
+    author_email='eseiver@plos.org, sbassi@plos.org',
     license='MIT',
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
