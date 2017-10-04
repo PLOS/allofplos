@@ -9,29 +9,20 @@ examples of analysis. It can:
 
 import collections
 import csv
-import datetime
-import lxml.etree as et
-from glob import glob
 import os
 import progressbar
 import random
-import re
 import requests
-from shutil import move, rmtree
-import time
 
-from download import download
 
-from plos_corpus import (listdir_nohidden, extract_filenames, check_article_type, get_article_xml,
-                         get_related_article_doi, download_updated_xml, unzip_articles, get_all_solr_dois,
-                         file_to_doi, doi_to_file, check_if_uncorrected_proof, newarticledir, get_article_pubdate,
-                         compare_article_pubdate)
-from plos_regex import (regex_match_prefix, regex_body_match, regex_body_currents, full_doi_regex_match,
-                        full_doi_regex_search, currents_doi_regex, validate_doi, validate_file,
-                        validate_url, find_valid_dois, show_invalid_dois, currents_doi_filter)
+from plos_corpus import (listdir_nohidden, check_article_type, get_article_xml,
+                         get_related_article_doi, download_updated_xml, get_all_solr_dois,
+                         file_to_doi, newarticledir, get_article_pubdate)
+from plos_regex import (full_doi_regex_match, validate_doi, validate_file, validate_url, currents_doi_filter)
 
 counter = collections.Counter
 corpusdir = 'allofplos_xml'
+max_invalid_files_to_print = 100
 
 
 def validate_corpus(corpusdir=corpusdir):
