@@ -1,5 +1,5 @@
 *.xml
-AllofPLOS_article_XML/
+allofplos_xml/
 *.zip
 *.log
 .ipynb_checkpoints/*
@@ -7,19 +7,11 @@ AllofPLOS_article_XML/
 *.json
 *.swp
 *.pyc
-CaSSius/
-Experiments/lens/
 *.js
-lens-starter/
-lens/
-Python Challenge.ipynb
-simple-writer/
-twoto3_nb.py/
 !requirements.txt
 *.xlsx
 *.csv
 !doi_to_pmc.csv
-Python Tutorial How to Parse and Combine RSS News headlines using feedparser.ipynb
 *.iml
 */.ipynb_checkpoints/*
 zip_info.txt
