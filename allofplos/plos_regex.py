@@ -1,9 +1,9 @@
-import numpy as np
-import re
-
 """
 The following RegEx pertains to the 7 main PLOS journals and the defunct PLOS Clinical Trials, as well as PLOS Currents.
 """
+
+import re
+
 corpusdir = 'allofplos_xml/'
 corpusdir_regex = re.escape(corpusdir)
 'http://journals.plos.org/plosone/article/file?id='
@@ -73,8 +73,7 @@ def show_invalid_dois(doi_list):
     if linked DOI fields in other articles (such as retractions and corrections) are correct.
     :return: list of DOI candidates that don't match PLOS's pattern
     """
-    nonmatches = np.array([not validate_doi(x) for x in doi_list])
-    return list(np.array(doi_list)[nonmatches])
+    return list(filter(lambda x: not validate_doi(x), doi_list))
 
 
 def currents_doi_filter(doi_list):
@@ -83,5 +82,4 @@ def currents_doi_filter(doi_list):
     if linked DOI fields in PMC articles are correct.
     :return: list of DOI candidates that don't match Currents' pattern
     """
-    nonmatches = np.array([not bool(currents_doi_regex.search(x)) for x in doi_list])
-    return list(np.array(doi_list)[nonmatches])
+    return list(filter(lambda x: not bool(currents_doi_regex.search(x)), doi_list))

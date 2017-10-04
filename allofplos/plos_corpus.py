@@ -34,8 +34,7 @@ import progressbar
 import requests
 from tqdm import tqdm
 
-from plos_regex import (regex_match_prefix, regex_body_match, full_doi_regex_match, full_doi_regex_search,
-                        make_regex_bool, validate_doi, validate_file, validate_url)
+from plos_regex import validate_doi
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -253,7 +252,7 @@ def extract_filenames(directory, extension='.xml'):
     :return: A list with all the file names inside this directory, excluding extensions
     """
     filenames = [os.path.basename(article_file).rstrip(extension) for article_file in listdir_nohidden(directory, extension) if
-                 isfile(article_file)]
+                 os.path.isfile(article_file)]
     return filenames
 
 
@@ -427,7 +426,7 @@ def move_articles(source, destination):
         shutil.rmtree(source)
 
 
-def get_articleXML_content(article_file, tag_path_elements=None):
+def get_article_xml(article_file, tag_path_elements=None):
     """
     For a local article file, read its XML tree
     Can also interpret DOIs
@@ -473,9 +472,9 @@ def check_article_type(article_file):
     :param article_file: the xml file for a single article
     :return: JATS article_type at that xpath location
     """
-    article_type = get_articleXML_content(article_file=article_file,
-                                          tag_path_elements=["/",
-                                                             "article"])
+    article_type = get_article_xml(article_file=article_file,
+                                   tag_path_elements=["/",
+                                                      "article"])
     return article_type[0].attrib['article-type']
 
 
@@ -488,12 +487,12 @@ def get_related_article_doi(article_file, corrected=True):
     :param corrected: default true, part of the Corrections workflow, more strict in tag search
     :return: tuple of partial doi string at that xpath location, related_article_type
     """
-    r = get_articleXML_content(article_file=article_file,
-                               tag_path_elements=["/",
-                                                  "article",
-                                                  "front",
-                                                  "article-meta",
-                                                  "related-article"])
+    r = get_article_xml(article_file=article_file,
+                        tag_path_elements=["/",
+                                           "article",
+                                           "front",
+                                           "article-meta",
+                                           "related-article"])
     related_article = ''
     if corrected:
         for x in r:
@@ -509,6 +508,56 @@ def get_related_article_doi(article_file, corrected=True):
         related_article = related_article.lstrip('info:doi/')
 
     return related_article, related_article_type
+
+
+def get_article_pubdate(article_file, date_format='%d %m %Y'):
+    """
+    For an individual article, get its date of publication
+    :param article_file: file path/DOI of the article
+    :param date_format: string format used to convert to datetime object
+    :return: datetime object with the date of publication
+    """
+    day = ''
+    month = ''
+    year = ''
+    raw_xml = get_article_xml(article_file=article_file,
+                              tag_path_elements=["/",
+                                                 "article",
+                                                 "front",
+                                                 "article-meta",
+                                                 "pub-date"])
+    for x in raw_xml:
+        for name, value in x.items():
+            if value == 'epub':
+                date_fields = x
+                for y in date_fields:
+                    if y.tag == 'day':
+                        day = y.text
+                    if y.tag == 'month':
+                        month = y.text
+                    if y.tag == 'year':
+                        year = y.text
+    date = (day, month, year)
+    string_date = ' '.join(date)
+    pubdate = datetime.datetime.strptime(string_date, date_format)
+    return pubdate
+
+
+def compare_article_pubdate(article, days=22):
+    """
+    Check if an article's publication date was more than 3 weeks ago.
+    :param article: doi/file of the article
+    :param days: how long ago to compare the publication date (default 22 days)
+    :return: boolean for whether the pubdate was older than the days value
+    """
+    try:
+        pubdate = get_article_pubdate(article)
+        today = datetime.datetime.now()
+        three_wks_ago = datetime.timedelta(days)
+        compare_date = today - three_wks_ago
+        return pubdate < compare_date
+    except OSError:
+        print("Pubdate error in {}".format(article))
 
 
 def download_updated_xml(article_file,
@@ -617,7 +666,7 @@ def check_if_uncorrected_proof(article_file):
     :param article: Partial DOI/filename of the article
     :return: Boolean for whether article is an uncorrected proof (true = yes, false = no)
     """
-    tree = get_articleXML_content(article_file)
+    tree = get_article_xml(article_file)
     for subtree in tree:
         if subtree.text == 'uncorrected-proof':
             return True
@@ -699,7 +748,8 @@ def check_for_vor_updates(uncorrected_list=None):
     if uncorrected_list is None:
         uncorrected_list = get_uncorrected_proofs_list()
     # Make it check a single article
-    if isinstance(uncorrected_list, str): uncorrected_list = [uncorrected_list]
+    if isinstance(uncorrected_list, str):
+        uncorrected_list = [uncorrected_list]
 
     # Create article list chunks for Solr query no longer than 10 DOIs at a time
     list_chunks = [uncorrected_list[x:x+10] for x in range(0, len(uncorrected_list), 10)]
@@ -824,28 +874,30 @@ def download_check_and_move(article_list, text_list, tempdir, destination):
     move_articles(tempdir, destination)
 
 
-def download_file_from_google_drive(id, filename, destination=corpusdir):
+def download_file_from_google_drive(id, filename, destination=corpusdir, file_size=None):
     """
     General method for downloading from Google Drive.
     Doesn't require using API or having credentials
     :param id: Google Drive id for file (constant even if filename change)
     :param filename: name of the zip file
     :param destination: directory where to download the zip file, defaults to corpusdir
+    :param file_size: size of the file being downloaded
     :return: None
     """
     URL = "https://docs.google.com/uc?export=download"
 
-    session = requests.Session()
-
-    response = session.get(URL, params={'id': id}, stream=True)
-    token = get_confirm_token(response)
-
-    if token:
-        params = {'id': id, 'confirm': token}
-        response = session.get(URL, params=params, stream=True)
-        r = requests.get(URL, params=params, stream=True)
     file_path = os.path.join(destination, filename)
-    save_response_content(response, file_path)
+    if not os.path.isfile(file_path):
+        session = requests.Session()
+
+        response = session.get(URL, params={'id': id}, stream=True)
+        token = get_confirm_token(response)
+
+        if token:
+            params = {'id': id, 'confirm': token}
+            response = session.get(URL, params=params, stream=True)
+            r = requests.get(URL, params=params, stream=True)
+        save_response_content(response, file_path, file_size=file_size)
     return file_path
 
 
@@ -862,20 +914,21 @@ def get_confirm_token(response):
     return None
 
 
-def save_response_content(response, download_path):
+def save_response_content(response, download_path, file_size=None):
     """
     Saves the downloaded file parts from Google Drive to local file
     Includes progress bar for download %
     :param response: session-based google query
     :param download_path: path to local zip file
+    :param file_size: size of the file being downloaded
     :return: None
     """
     CHUNK_SIZE = 32768
     # for downloading zip file
     if os.path.basename(download_path) == local_zip:
         with open(download_path, "wb") as f:
-            size = zip_size
-            pieces = size / CHUNK_SIZE
+            size = file_size
+            pieces = round(size / CHUNK_SIZE)
             with tqdm(total=pieces) as pbar:
                 for chunk in response.iter_content(CHUNK_SIZE):
                     pbar.update(1)
@@ -894,17 +947,17 @@ def get_zip_metadata(method='initial'):
     Gets metadata txt file from Google Drive, that has info about zip file
     Used to get the file name, as well as byte size for progress bar
     Includes progress bar for download %
-    :param method: TODO: COMPLETE HERE
-    :return: TODO: COMPLETE HERE
+    :param method: boolean if initializing the PLOS Corpus (defaults to True)
+    :return: tuple of data about zip file: date zip created, zip size, and location of metadata txt file
     """
     if method == 'initial':
-        download_file_from_google_drive(metadata_id, zip_metadata)
-    with open(zip_metadata) as f:
+        metadata_path = download_file_from_google_drive(metadata_id, zip_metadata)
+    with open(metadata_path) as f:
         zip_stats = f.read().splitlines()
     zip_datestring = zip_stats[0]
     zip_date = datetime.datetime.strptime(zip_datestring, time_formatting)
     zip_size = int(zip_stats[1])
-    return zip_date, zip_size
+    return zip_date, zip_size, metadata_path
 
 
 def unzip_articles(file_path,
@@ -921,7 +974,7 @@ def unzip_articles(file_path,
     :return: None
     """
     try:
-        os.makedirs(directory)
+        os.makedirs(extract_directory)
     except OSError as e:
         if e.errno != errno.EEXIST:
             raise
@@ -954,11 +1007,11 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
     if os.path.isdir(corpusdir) is False:
         os.mkdir(corpusdir)
         print('Creating folder for article xml')
-    zip_date, zip_size = get_zip_metadata()
-    zip_path = download_file_from_google_drive(zip_id, local_zip)
+    zip_date, zip_size, metadata_path = get_zip_metadata()
+    zip_path = download_file_from_google_drive(zip_id, local_zip, file_size=zip_size)
     unzip_articles(file_path=zip_path)
     if rm_metadata:
-        os.remove(zip_metadata)
+        os.remove(metadata_path)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -968,9 +1021,12 @@ if __name__ == "__main__":
         URL_TMP = INT_URL_TMP
     else:
         URL_TMP = EXT_URL_TMP
-    # Step 0: Initialize first copy of repository
-    corpus_files = [name for name in os.listdir(corpusdir) if os.path.isfile(
-                    os.path.join(corpusdir, name))]
+    # Step 0: Initialize first copy of repository]
+    try:
+        corpus_files = [name for name in os.listdir(corpusdir) if os.path.isfile(
+                        os.path.join(corpusdir, name))]
+    except FileNotFoundError:
+        corpus_files = []
     if len(corpus_files) < min_files_for_valid_corpus:
         print('Not enough articles in corpusdir, re-downloading zip file')
         # TODO: check if zip file is in top-level directory before downloading
