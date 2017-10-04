@@ -28,7 +28,7 @@ Using pip:
 
 ``(allofplos)$ pip install allofplos``
 
-This should install *allofplos* and requirements.
+This should install *allofplos* and requirements. At this stage your are ready to go.
 
 If you want to manually install from source (for example for development purposes), first clone the proyect repository:
 
