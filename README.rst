@@ -46,7 +46,7 @@ From inside the allofplos directory, run:
 ``(allofplos)$ python plos_corpus.py``
 
 The first time it runs it will download a >4.4 Gb zip file
-(**AllofPLOS\_article\_XML.zip**) with all the XML files inside.
+(**allofplos_xml.zip**) with all the XML files inside.
 **Note**: Make sure that you have enough space in your device for the
 zip file and for it content before running this command (at least 30Gb).
 After this file is downloaded, it will extract it contents into
