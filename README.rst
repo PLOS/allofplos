@@ -12,6 +12,9 @@ XML article files. This can be used to have a copy of the PLOS text
 corpus for further analysis. Use this program to download all PLOS XML
 article files instead of doing web scraping.
 
+**NOTE**: This software is not stable, we consider it beta state and will
+be in this stage until version 1.0.
+
 Installation instructions
 -------------------------
 
@@ -21,8 +24,17 @@ Make a virtual environment:
 
 ``$ virtualenv allofplos``
 
-Install Python dependencies inside the newly created virtual
-environment:
+Using pip:
+
+``(allofplos)$ pip install allofplos``
+
+This should install *allofplos* and requirements.
+
+If you want to manually install from source (for example for development purposes), first clone the proyect repository:
+
+``(allofplos)$ git clone git@github.com:PLOS/allofplos.git``
+
+Install Python dependencies inside the newly created virtual environment:
 
 ``(allofplos)$ pip install -r requirements.txt``
 
@@ -31,7 +43,7 @@ How to run the program
 
 From inside the allofplos directory, run:
 
-``(allofplos)$ python PLOS_Corpus.py``
+``(allofplos)$ python plos_corpus.py``
 
 The first time it runs it will download a >4.4 Gb zip file
 (**AllofPLOS\_article\_XML.zip**) with all the XML files inside.
