@@ -17,11 +17,13 @@ import requests
 
 from plos_corpus import (listdir_nohidden, check_article_type, get_article_xml,
                          get_related_article_doi, download_updated_xml, get_all_solr_dois,
-                         file_to_doi, newarticledir, get_article_pubdate)
-from plos_regex import (full_doi_regex_match, validate_doi, validate_file, validate_url, currents_doi_filter)
+                         file_to_doi, newarticledir, get_article_pubdate, doi_to_url, )
+from plos_regex import (full_doi_regex_match, validate_doi, validate_file, validate_url, currents_doi_filter,
+                        full_doi_filter)
 
 counter = collections.Counter
 corpusdir = 'allofplos_xml'
+pmcdir = 'pmc_articles'
 max_invalid_files_to_print = 100
 
 
@@ -30,6 +32,7 @@ def validate_corpus(corpusdir=corpusdir):
     For every local article file and DOI listed on Solr, validate file names, DOIs, URLs in terms of
     regular expressions.
     Stops checking as soon as encounters problem and prints it
+    :param corpusdir: where the corpusdir is, defaults to default "corpusdir" name
     :return: boolean of whether corpus passed validity checks
     """
     # check DOIs
@@ -100,7 +103,7 @@ def get_plos_article_type(article_file):
                                                             "article-categories"])
     subject_list = article_categories[0].getchildren()
 
-    for subject in subject_list:
+    for i, subject in enumerate(subject_list):
         if subject.get('subj-group-type') == "heading":
             subject_instance = subject_list[i][0]
             s = ''
@@ -197,7 +200,7 @@ def get_related_retraction_article(article_file):
         if related_article_type == 'retracted-article':
             return related_article, related_article_type
         else:
-            print('Accompanying retracted article not found for', article)
+            print('Accompanying retracted article not found for', article_file)
 
 
 def get_retracted_doi_list(article_list=None, directory=corpusdir):
@@ -217,13 +220,13 @@ def get_retracted_doi_list(article_list=None, directory=corpusdir):
             retracted_doi = get_related_retraction_article(article_file)[0]
             retracted_doi_list.append(retracted_doi)
             # check linked DOI for accuracy
-            if make_regex_bool(full_doi_regex_match.search(retracted_doi)) is False:
+            if bool(full_doi_regex_match.search(retracted_doi)) is False:
                 print("{} has incorrect linked DOI field: '{}'".format(article_file, retracted_doi))
     if len(retractions_doi_list) == len(retracted_doi_list):
         print(len(retracted_doi_list), 'retracted articles found.')
     else:
         print('Number of retraction articles and retracted articles are different: ',
-              '{} vs. {}'.format(len(retractions_article_list), len(retracted_article_list)))
+              '{} vs. {}'.format(len(retractions_doi_list), len(retracted_doi_list)))
     return retractions_doi_list, retracted_doi_list
 
 
@@ -249,7 +252,7 @@ def get_corrected_article_list(article_list=None, directory=corpusdir):
             corrected_article = get_related_article_doi(article_file, corrected=True)[0]
             corrected_article_list.append(corrected_article)
             # check linked DOI for accuracy
-            if make_regex_bool(full_doi_regex_match.search(corrected_article)) is False:
+            if bool(full_doi_regex_match.search(corrected_article)) is False:
                 print(article_file, "has incorrect linked DOI:", corrected_article)
     print(len(corrected_article_list), 'corrected articles found.')
     return corrections_article_list, corrected_article_list
@@ -300,9 +303,6 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
     return articles_different_list
 
 
-# These functions are for getting & analyzing the PLOS Corpus from PMC
-
-
 def get_article_doi(article_file):
     raw_xml = get_article_xml(article_file=article_file,
                               tag_path_elements=["/",
@@ -350,61 +350,12 @@ def article_doi_sanity_check(directory=corpusdir, article_list=None, source='sol
     return bad_doi_list
 
 
-def get_articles_by_doi_field(directory=pmcdir, article_list=None, check_new=True):
-    doi_to_pmc = {}
-    if directory == pmcdir and article_list is None:
-        article_list = get_pmc_articles()
-    elif article_list is None:
-        article_list = listdir_nohidden(directory)
-        if article_list == 0:
-            article_list = listdir_nohidden(directory, extension='.nxml')
-
-    if directory != pmcdir:
-        for article in article_list:
-            doi = get_article_doi(article_file=article)
-            doi_to_pmc[doi] = article
-    else:
-        try:
-            # read doi_to_pmc dict from csv
-            with open(pmc_csv, 'r') as csv_file:
-                reader = csv.reader(csv_file)
-                next(reader, None)
-                doi_to_pmc = dict(reader)
-
-            scratch = False
-            n = 0
-            if check_new:
-                for article in article_list:
-                    if article not in doi_to_pmc.values():
-                        doi = get_article_doi(article)
-                        doi_to_pmc[doi] = os.path.basename(article).rstrip('.nxml').rstrip('.xml')
-                        n = n + 1
-                if n:
-                    print(n, 'DOI/PMCID pairs added to dictionary.')
-
-        except FileNotFoundError:
-            print('Creating doi_to_pmc dictionary from scratch.')
-            scratch = True
-            n = 0
-            file_list = listdir_nohidden(pmcdir, extension='.nxml')
-            doi_to_pmc = {get_article_doi(pmc_file): os.path.basename(pmc_file).rstrip('.nxml') for pmc_file in file_list}
-        # write doi_to_pmc dict to csv
-        if scratch or n > 0:
-            with open(pmc_csv, 'w') as f:
-                writer = csv.writer(f)
-                writer.writerow(['DOI', 'PMC ID'])
-                for key, value in doi_to_pmc:
-                    writer.writerow([key, value])
-            print('DOI, PMC ID list exported to', pmc_csv)
-
-    return doi_to_pmc
-
-
 def check_solr_doi(doi):
     '''
     For an article doi, see if there's a record of it in Solr.
     '''
-    solr_url = 'http://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,&wt=json&indent=true&fq=id:%22{}%22'.format(doi)
+    solr_url = 'http://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,' \
+               '&wt=json&indent=true&fq=id:%22{}%22'.format(doi)
     article_search = requests.get(solr_url).json()
     return bool(article_search['response']['numFound'])
 

@@ -23,7 +23,6 @@ import datetime
 import errno
 import logging
 import os
-from os.path import isfile, join
 import shutil
 import time
 import tarfile
@@ -71,13 +70,12 @@ annotation_doi = '10.1371/annotation'
 BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plosone/article?id='
 
 # Some example URLs that may be useful
-EXAMPLE_VOR_URL = ('http://solr-101.soma.plos.org:8011/solr/collection1/select?'
+EXAMPLE_VOR_URL = ('http://api.plos.org/search?'
                    'q=id%3A+10.1371%2Fjournal.pgen.1006621%0A&fq=publication_stage%3A+vor-update-to-uncorrected-proof'
                    '&fl=publication_stage%2C+id&wt=json&indent=true')
 EXAMPLE_SEARCH_URL = ('http://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,'
-                      '&wt=json&indent=true&fq=article_type:"research+article"+OR+article_type:"correction"+OR+'
-                      'article_type:"meta-research+article"&sort=%20id%20asc&'
-                      'fq=publication_date:%5B2017-03-05T00:00:00Z+TO+2017-03-19T23:59:59Z%5D&start=0&rows=1000')
+                      '&wt=json&indent=true&sort=%20id%20asc&fq=publication_date:'
+                      '%5B2017-10-01T00:00:00Z+TO+2017-10-03T23:59:59Z%5D&start=0&rows=1000')
 
 # Starting out list of needed articles as empty
 dois_needed_list = []
@@ -100,6 +98,7 @@ def file_to_url(file, directory=corpusdir, plos_network=False):
     'http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001'
     :param file: relative path to local XML file in the corpusdir directory
     :param directory: defaults to corpusdir, containing article files
+    :param plos_network: whether on a PLOS IP address or not
     :return: online location of a PLOS article's XML
     """
     if correction in file:
@@ -136,6 +135,7 @@ def url_to_file(url, directory=corpusdir, plos_network=False):
     'allofplos_xml/journal.pone.1000001.xml'
     :param url: online location of a PLOS article's XML
     :param directory: defaults to corpusdir, containing article files
+    :param plos_network: whether on a PLOS IP address or not
     :return: relative path to local XML file in the corpusdir directory
     """
     doi_prefix = ''
@@ -174,7 +174,7 @@ def url_to_file(url, directory=corpusdir, plos_network=False):
         file = os.path.join(directory,
                             url[url.index(prefix)+len(prefix):].
                             replace(url_suffix, '').
-                            replace(INT_URL_SUFFIX,'') + '.xml')
+                            replace(INT_URL_SUFFIX, '') + '.xml')
     return file
 
 
@@ -197,6 +197,7 @@ def doi_to_url(doi, plos_network=False):
     doi_to_url('10.1371/journal.pone.1000001') = \
     'http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001'
     :param doi: full unique identifier for a PLOS article
+    :param plos_network: whether on a PLOS IP address or not
     :return: online location of a PLOS article's XML
     """
     URL_TMP = INT_URL_TMP if plos_network else EXT_URL_TMP
@@ -372,6 +373,8 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
     :param dois: Iterable with DOIs for articles to obtain
     :param tempdir: Temporary directory where files are copied to
     :param ignore_existing: Don't re-download to tempdir if already downloaded
+    :param plos_network: whether on a PLOS IP address or not
+    :return: None
     """
     # make temporary directory, if needed
     try:
@@ -588,7 +591,7 @@ def download_updated_xml(article_file,
     else:
         get_new = True
         if vor_check:
-        # make sure that update is to a VOR for uncorrected proof
+            # make sure that update is to a VOR for uncorrected proof
             get_new = False
             path_parts = ['/',
                           'article',
@@ -615,9 +618,9 @@ def check_for_corrected_articles(directory=newarticledir, article_list=None):
     For articles in the temporary download directory, check if article_type is correction
     If correction, surface the DOI of the article being corrected
     Use with download_corrected_articles
-    :param article: the filename for a single article
     :param directory: directory where the article file is, default is newarticledir
-    :return: list of filenames to existing local files for articles issued a correction
+    :param article_list: defaults to empty; list of articles to check for corrections
+    :return: list of filenames of existing local files for articles issued a correction
     """
     corrected_doi_list = []
     if article_list is None:
@@ -639,9 +642,9 @@ def download_corrected_articles(directory=corpusdir, tempdir=newarticledir, corr
     Many corrections don't result in XML changes
 
     Use with download_corrected articles
-    :param article: the filename for a single article
     :param directory: directory where the article file is, default is newarticledir
-    :param tempdir: where new articles are downloaded to-
+    :param tempdir: where new articles are downloaded to
+    :param corrected_article_list: defaults to None; list of articles that have been corrected
     :return: list of DOIs for articles downloaded with new XML versions
     """
     if corrected_article_list is None:
@@ -663,7 +666,7 @@ def download_corrected_articles(directory=corpusdir, tempdir=newarticledir, corr
 def check_if_uncorrected_proof(article_file):
     """
     For a single article in a directory, check whether it is the 'uncorrected proof' type
-    :param article: Partial DOI/filename of the article
+    :param article_file: Partial DOI/filename of the article
     :return: Boolean for whether article is an uncorrected proof (true = yes, false = no)
     """
     tree = get_article_xml(article_file)
@@ -708,8 +711,8 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
     """
     For a list of articles, check whether they are the 'uncorrected proof' type
     One of the checks on newly downloaded articles before they're added to corpusdir
-    :param text_list: List of DOIs
     :param directory: Directory containing the article files
+    :param text_list: List of DOIs
     :return: all articles that are uncorrected proofs, including from main article directory
     """
 
@@ -833,6 +836,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     https://developer.plos.org/jira/browse/DPRO-3418
     :param tempdir: temporary directory for downloading articles
     :param article-list: list of uncorrected proofs to check for updates.
+    :param plos_network: whether on a PLOS IP address or not
     :return: list of all articles with updated vor
     """
     try:
@@ -865,6 +869,7 @@ def download_check_and_move(article_list, text_list, tempdir, destination):
     :param text_list: List of uncorrected proofs to check for vor updates
     :param tempdir: Directory where articles to be downloaded to
     :param destination: Directory where new articles are to be moved to
+    :return: None
     """
     repo_download(article_list, tempdir, plos_network=args.plos)
     corrected_articles = check_for_corrected_articles(directory=tempdir)
@@ -882,12 +887,13 @@ def download_file_from_google_drive(id, filename, destination=corpusdir, file_si
     :param filename: name of the zip file
     :param destination: directory where to download the zip file, defaults to corpusdir
     :param file_size: size of the file being downloaded
-    :return: None
+    :return: file_path to the downloaded file
     """
     URL = "https://docs.google.com/uc?export=download"
 
     file_path = os.path.join(destination, filename)
-    if not os.path.isfile(file_path):
+    # don't re-download if file name already exists, unless invalid zipfile
+    if not os.path.isfile(file_path) or not zipfile.is_zipfile(file_path):
         session = requests.Session()
 
         response = session.get(URL, params={'id': id}, stream=True)
@@ -1003,6 +1009,8 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
     2) downloading the zip file (defaults to corpus directory)
     3) extracting the individual XML files into the corpus directory
     :param corpusdir: directory where the corpus is to be downloaded and extracted
+    :param rm_metadata: whether to delete the txt metadata file or not (defaults to True)
+    :return: None
     """
     if os.path.isdir(corpusdir) is False:
         os.mkdir(corpusdir)
@@ -1029,7 +1037,6 @@ if __name__ == "__main__":
         corpus_files = []
     if len(corpus_files) < min_files_for_valid_corpus:
         print('Not enough articles in corpusdir, re-downloading zip file')
-        # TODO: check if zip file is in top-level directory before downloading
         create_local_plos_corpus()
 
     # Step 1: Query solr via URL and construct DOI list
