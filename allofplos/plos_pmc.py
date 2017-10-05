@@ -41,6 +41,7 @@ PMC_FTP_URL = 'ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/'
 pmc_file_list = 'oa_file_list.txt'
 newpmcarticledir = "new_pmc_articles"
 
+
 def get_all_pmc_dois(retstart=0, retmax=80000, count=None):
     """Query the entrez database to get a comprehensive list of all PMCIDs associated with all PLOS journals,
     individually included in the search url.
@@ -72,6 +73,56 @@ def get_all_pmc_dois(retstart=0, retmax=80000, count=None):
 
     print(len(pmcidlist), "articles found")
     return pmcidlist
+
+
+def get_articles_by_doi_field(directory=pmcdir, article_list=None, check_new=True):
+    doi_to_pmc = {}
+    if directory == pmcdir and article_list is None:
+        article_list = get_pmc_articles()
+    elif article_list is None:
+        article_list = listdir_nohidden(directory)
+        if article_list == 0:
+            article_list = listdir_nohidden(directory, extension='.nxml')
+
+    if directory != pmcdir:
+        for article in article_list:
+            doi = get_article_doi(article_file=article)
+            doi_to_pmc[doi] = article
+    else:
+        try:
+            # read doi_to_pmc dict from csv
+            with open(pmc_csv, 'r') as csv_file:
+                reader = csv.reader(csv_file)
+                next(reader, None)
+                doi_to_pmc = dict(reader)
+
+            scratch = False
+            n = 0
+            if check_new:
+                for article in article_list:
+                    if article not in doi_to_pmc.values():
+                        doi = get_article_doi(article)
+                        doi_to_pmc[doi] = os.path.basename(article).rstrip('.nxml').rstrip('.xml')
+                        n = n + 1
+                if n:
+                    print(n, 'DOI/PMCID pairs added to dictionary.')
+
+        except FileNotFoundError:
+            print('Creating doi_to_pmc dictionary from scratch.')
+            scratch = True
+            n = 0
+            file_list = listdir_nohidden(pmcdir, extension='.nxml')
+            doi_to_pmc = {get_article_doi(pmc_file): os.path.basename(pmc_file).rstrip('.nxml') for pmc_file in file_list}
+        # write doi_to_pmc dict to csv
+        if scratch or n > 0:
+            with open(pmc_csv, 'w') as f:
+                writer = csv.writer(f)
+                writer.writerow(['DOI', 'PMC ID'])
+                for key, value in doi_to_pmc:
+                    writer.writerow([key, value])
+            print('DOI, PMC ID list exported to', pmc_csv)
+
+    return doi_to_pmc
 
 
 def get_pmc_doi_dict(doi_list, chunk_size=150):
