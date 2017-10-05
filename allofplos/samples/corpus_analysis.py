@@ -80,6 +80,16 @@ def validate_corpus(corpusdir=corpusdir):
 
 
 def get_jats_article_type_list(article_list=None, directory=corpusdir):
+    """
+    For every article in a list, get the JATS article type and present in decreasing order of frequency
+    [description]
+    :param article_list: list of articles to check, defaults to None
+    :type article_list: [list], optional
+    :param directory: [description], defaults to corpusdir
+    :type directory: [type], optional
+    :returns: [description]
+    :rtype: {[type]}
+    """
     if article_list is None:
         article_list = listdir_nohidden(directory)
 
@@ -95,6 +105,13 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
 
 
 def get_plos_article_type(article_file):
+    """
+    [description]
+    :param article_file: [description]
+    :type article_file: [type]
+    :returns: [description]
+    :rtype: {[type]}
+    """
     article_categories = get_article_xml(article_file=article_file,
                                          tag_path_elements=["/",
                                                             "article",
@@ -114,7 +131,13 @@ def get_plos_article_type(article_file):
 
 
 def get_plos_article_type_list(article_list=None):
-
+    """
+    For every article in a list, get the PLOS-internal article type and present in decreasing order of frequency
+    :param article_list: [description], defaults to None
+    :type article_list: [list], optional
+    :returns: [description]
+    :rtype: {[type]}
+    """
     if article_list is None:
         article_list = listdir_nohidden(corpusdir)
 
@@ -130,6 +153,13 @@ def get_plos_article_type_list(article_list=None):
 
 
 def get_article_dtd(article_file):
+    """
+    [description]
+    :param article_file: [description]
+    :type article_file: [type]
+    :returns: [description]
+    :rtype: {[type]}
+    """
     try:
         dtd = get_article_xml(article_file=article_file,
                               tag_path_elements=["/",
@@ -143,6 +173,13 @@ def get_article_dtd(article_file):
 
 # Get tuples of article types mapped for all PLOS articles
 def get_article_types_map(directory=corpusdir):
+    """
+    [description]
+    :param directory: [description], defaults to corpusdir
+    :type directory: [type], optional
+    :returns: [description]
+    :rtype: {[type]}
+    """
     article_types_map = []
     article_files = listdir_nohidden(directory)
     for article_file in article_files:
@@ -157,6 +194,11 @@ def get_article_types_map(directory=corpusdir):
 
 # write article types map to .csv file
 def article_types_map_to_csv(article_types_map):
+    """
+    [description]
+    :param article_types_map: [description]
+    :type article_types_map: [type]
+    """
     with open('articletypes.csv', 'w') as out:
         csv_out = csv.writer(out)
         csv_out.writerow(['type', 'count'])
@@ -175,9 +217,10 @@ def check_if_retraction_article(article_file):
 
 
 def check_if_link_works(url):
-    '''See if a link is valid (i.e., returns a '200' to the HTML request).
+    """
+    See if a link is valid (i.e., returns a '200' to the HTML request).
     Used for checking a URL to a PLOS article on journals.plos.org
-    '''
+    """
     request = requests.get(url)
     if request.status_code == 200:
         return True
@@ -273,7 +316,17 @@ def create_pubdate_dict(directory=corpusdir):
 
 def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, directory=corpusdir, truncated=True):
     """
+    [description]
+    :param article_list: [description], defaults to None
+    :type article_list: [type], optional
+    :param tempdir: [description], defaults to newarticledir
+    :type tempdir: [type], optional
+    :param directory: [description], defaults to corpusdir
+    :type directory: [type], optional
     :param truncated: if True, restrict articles to only those with pubdates from the last year or two
+    :type truncated: bool, optional
+    :returns: [description]
+    :rtype: {[type]}
     """
     list_provided = bool(article_list)
     if article_list is None and truncated is False:
@@ -304,6 +357,13 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
 
 
 def get_article_doi(article_file):
+    """
+    [description]
+    :param article_file: [description]
+    :type article_file: [type]
+    :returns: [description]
+    :rtype: {[type]}
+    """
     raw_xml = get_article_xml(article_file=article_file,
                               tag_path_elements=["/",
                                                  "article",
@@ -382,12 +442,12 @@ def check_if_doi_resolves(doi, plos_valid=True):
 
 
 def get_all_plos_dois(local_articles=None, solr_articles=None):
-    '''
+    """
     Collects lists of articles for local and solr, calculates the difference.
     Missing local downloads easily solved by re-running plos_corpus.py.
     Missing solr downloads require attention.
     :return: every DOI in PLOS corpus, across local and remote versions
-    '''
+    """
     if solr_articles is None:
         solr_articles = get_all_solr_dois()
     if local_articles is None:
@@ -406,13 +466,13 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
 
 
 def get_random_list_of_dois(directory=corpusdir, count=100):
-    '''
+    """
     Gets a list of random DOIs. Tries first to construct from local files in
     corpusdir, otherwise tries Solr DOI list as backup.
     :param directory: defaults to searching corpusdir
     :param count: specify how many DOIs are to be returned
     :return: a list of random DOIs for analysis
-    '''
+    """
     try:
         article_list = listdir_nohidden(directory)
         sample_file_list = random.sample(article_list, count)
