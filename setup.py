@@ -15,14 +15,13 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='allofplos',
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.8.0',
+    version='0.8.1',
     description='Get and analyze all PLOS articles',
     long_description=long_description,
     url='https://github.com/PLOS/allofplos',
     author='Elizabeth Seiver, Sebastian Bassi',
     author_email='eseiver@plos.org, sbassi@plos.org',
     license='MIT',
-    # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Science/Research',
@@ -55,12 +54,9 @@ setup(
     # In this case, 'data_file' will be installed into '<sys.prefix>/my_data'
     ##data_files=[('my_data', ['data/data_file'])],
 
-    # To provide executable scripts, use entry points in preference to the
-    # "scripts" keyword. Entry points provide cross-platform support and allow
-    # pip to create the appropriate form of executable for the target platform.
-    ##entry_points={
-    ##    'console_scripts': [
-    ##        'sample=sample:main',
-    ##    ],
-    ##},
+    entry_points={
+        'console_scripts': [
+            'plos_corpus=allofplos.plos_corpus:main',
+        ],
+    },
 )
