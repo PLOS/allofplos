@@ -49,6 +49,7 @@ setup(
         'tqdm==4.17.1',
         'urllib3==1.22',
         ],
+    python_requires='>=3.4',
     # If there are data files included in your packages that need to be
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
