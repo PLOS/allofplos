@@ -475,22 +475,30 @@ def get_random_list_of_dois(directory=corpusdir, count=100):
 def get_plos_journal(article_file, caps_fixed=True):
     """
     For an individual PLOS article, get the journal it was published in.
-    WARNING: DOES NOT WORK FOR ALL JOURNALS YET
     :param article_file: individual local PLOS XML article
     :param caps_fixed: whether to render the journal name correctly or as-is
     :return: PLOS journal at specified xpath location
     """
-    journal = get_article_xml(article_file=article_file,
-                              tag_path_elements=["/",
-                                                 "article",
-                                                 "front",
-                                                 "journal-meta",
-                                                 "journal-title-group",
-                                                 "journal-title"])
     try:
+        journal = get_article_xml(article_file=article_file,
+                                  tag_path_elements=["/",
+                                                     "article",
+                                                     "front",
+                                                     "journal-meta",
+                                                     "journal-title-group",
+                                                     "journal-title"])
         journal = journal[0].text
     except IndexError:
-        print('Error in journal name for {}'.format(article_file))
+        journal_meta = get_article_xml(article_file='allofplos_xml/journal.pone.0047704.xml',
+                                       tag_path_elements=["/",
+                                                          "article",
+                                                          "front",
+                                                          "journal-meta"])
+        for journal_child in journal_meta[0]:
+            if journal_child.attrib['journal-id-type'] == 'nlm-ta':
+                journal = journal_child.text
+                break
+
     if caps_fixed:
         journal = journal.split()
         if journal[0].lower() == 'plos':
