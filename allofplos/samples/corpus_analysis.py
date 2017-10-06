@@ -472,10 +472,11 @@ def get_random_list_of_dois(directory=corpusdir, count=100):
     return sample_doi_list
 
 
-def get_plos_journal(article_file):
+def get_plos_journal(article_file, caps_fixed=True):
     """
     For an individual PLOS article, get the journal it was published in.
     :param article_file: individual local PLOS XML article
+    :param caps_fixed: whether to render the journal name correctly ('PLOS') or as-is ('PLoS')
     :return: PLOS journal at specified xpath location
     """
     journal = get_article_xml(article_file=article_file,
@@ -485,7 +486,13 @@ def get_plos_journal(article_file):
                                                  "journal-meta",
                                                  "journal-title-group",
                                                  "journal-title"])
-    return journal[0].text
+    journal = journal[0].text
+    if caps_fixed:
+        journal = journal.split()
+        if journal[0].lower() == 'plos':
+            journal[0] = "PLOS"
+        journal = (' ').join(journal)
+    return journal
 
 
 def get_article_title(article_file):
