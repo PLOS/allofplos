@@ -23,7 +23,7 @@ from plos_regex import (full_doi_regex_match, validate_doi, validate_file, valid
 counter = collections.Counter
 corpusdir = 'allofplos_xml'
 max_invalid_files_to_print = 100
-
+pmcdir = 'pmc_articles'
 
 def validate_corpus(corpusdir=corpusdir):
     """
@@ -100,7 +100,7 @@ def get_plos_article_type(article_file):
                                                             "article-categories"])
     subject_list = article_categories[0].getchildren()
 
-    for subject in subject_list:
+    for i, subject in enumerate(subject_list):
         if subject.get('subj-group-type') == "heading":
             subject_instance = subject_list[i][0]
             s = ''
@@ -470,3 +470,106 @@ def get_random_list_of_dois(directory=corpusdir, count=100):
         doi_list = get_all_solr_dois()
         sample_doi_list = random.sample(doi_list, count)
     return sample_doi_list
+
+
+def get_plos_journal(article_file):
+    """
+    For an individual PLOS article, get the journal it was published in.
+    :param article_file: individual local PLOS XML article
+    :return: PLOS journal at specified xpath location
+    """
+    journal = get_article_xml(article_file=article_file,
+                              tag_path_elements=["/",
+                                                 "article",
+                                                 "front",
+                                                 "journal-meta",
+                                                 "journal-title-group",
+                                                 "journal-title"])
+    return journal[0].text
+
+
+def get_article_title(article_file):
+    """
+    For an individual PLOS article, get its title.
+    :param article_file: individual local PLOS XML article
+    :return: article title at specified xpath location
+    """
+    title = get_article_xml(article_file=article_file,
+                            tag_path_elements=["/",
+                                               "article",
+                                               "front",
+                                               "article-meta",
+                                               "title-group",
+                                               "article-title"])
+    return title[0].text
+
+
+def parse_article_date(date_element, date_format='%d %m %Y'):
+    """
+    For an article date element, convert XML to a datetime object
+    :param date_format: string format used to convert to datetime object
+    :return: datetime object
+    """
+    day = ''
+    month = ''
+    year = ''
+    for item in date_element.getchildren():
+        if item.tag == 'day':
+            day = item.text
+        if item.tag == 'month':
+            month = item.text
+        if item.tag == 'year':
+            year = item.text
+    if day:
+        date = (day, month, year)
+        string_date = ' '.join(date)
+        date = datetime.datetime.strptime(string_date, date_format)
+    elif month:
+        date = (month, year)
+        string_date = ' '.join(date)
+        date = datetime.datetime.strptime(string_date, '%m %Y')
+    elif year:
+        date = year
+        date = datetime.datetime.strptime(date, '%Y')
+    else:
+        print('date error')
+        date = ''
+    return date
+
+def get_article_dates(article_file, string=False):
+    """
+    For an individual article, get all of its dates
+    :param article_file: file path/DOI of the article
+    :return: dictionary of date types mapped to datetime objects for that article
+    """
+    dates = {}
+
+    tag_path_1 = ["/",
+                  "article",
+                  "front",
+                  "article-meta",
+                  "pub-date"]
+    raw_xml_1 = get_article_xml(article_file=article_file,
+                              tag_path_elements=tag_path_1)
+    for element in raw_xml_1:
+        pub_type = element.get('pub-type')
+        date = parse_article_date(element)
+        dates[pub_type] = date
+
+    tag_path_2 = ["/",
+                  "article",
+                  "front",
+                  "article-meta",
+                  "history"]        
+    raw_xml_2 = get_article_xml(article_file=article_file,
+                              tag_path_elements=tag_path_2)
+    for element in raw_xml_2:
+        for part in element:
+            date_type = part.get('date-type')
+            date = parse_article_date(part)
+            dates[date_type] = date
+    if string:
+        for key, value in dates.items():
+            dates[key] = value.strftime('%Y-%m-%d')
+
+    return dates
