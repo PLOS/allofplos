@@ -475,8 +475,9 @@ def get_random_list_of_dois(directory=corpusdir, count=100):
 def get_plos_journal(article_file, caps_fixed=True):
     """
     For an individual PLOS article, get the journal it was published in.
+    WARNING: DOES NOT WORK FOR ALL JOURNALS YET
     :param article_file: individual local PLOS XML article
-    :param caps_fixed: whether to render the journal name correctly ('PLOS') or as-is ('PLoS')
+    :param caps_fixed: whether to render the journal name correctly or as-is
     :return: PLOS journal at specified xpath location
     """
     journal = get_article_xml(article_file=article_file,
@@ -486,7 +487,10 @@ def get_plos_journal(article_file, caps_fixed=True):
                                                  "journal-meta",
                                                  "journal-title-group",
                                                  "journal-title"])
-    journal = journal[0].text
+    try:
+        journal = journal[0].text
+    except IndexError:
+        print('Error in journal name for {}'.format(article_file))
     if caps_fixed:
         journal = journal.split()
         if journal[0].lower() == 'plos':
@@ -575,8 +579,79 @@ def get_article_dates(article_file, string=False):
             date_type = part.get('date-type')
             date = parse_article_date(part)
             dates[date_type] = date
+    if 'received' in dates and 'accepted' in dates:
+        if not dates['received'] <= dates['accepted'] <= dates['epub']:
+            print('{} dates not in correct order: {}'.format(article_file, dates))
     if string:
         for key, value in dates.items():
             dates[key] = value.strftime('%Y-%m-%d')
 
     return dates
+
+
+def get_article_metadata(article_file, size='small'):
+    """
+    For an individual article in the PLOS corpus, create a tuple of a set of metadata fields sbout that corpus.
+    Make it small, medium, or large depending on number of fields desired.
+    :param article_file: individual local PLOS XML article
+    :param size: small, medium or large, aka how many fields to return for each article
+    :return: tuple of metadata fields
+    """
+    doi = file_to_doi(article_file)
+    filename = os.path.basename(article_file).rstrip('.xml')
+    title = get_article_title(article_file)
+    journal = get_plos_journal(article_file)
+    jats_article_type = check_article_type(article_file)
+    plos_article_type = get_plos_article_type(article_file)
+    dtd_version = get_article_dtd(article_file)
+    dates = get_article_dates(article_file, string=True)
+    (pubdate, collection, received, accepted) = ('','','','')
+    pubdate = dates['epub']
+    try:
+        collection = dates['collection']
+    except KeyError:
+        pass
+    try:
+        received = dates['received']
+    except KeyError:
+        pass
+    try:
+        accepted = dates['accepted']
+    except KeyError:
+        pass
+    metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate,
+                received, accepted, collection]
+    metadata = tuple(metadata)
+    if len(metadata) == 11:
+        return metadata
+    else:
+        print('Error in {}: {} items'.format(article_file, len(article_file)))
+        return False
+
+
+def get_corpus_metadata(article_list=None):
+    """
+    Run get_article_metadata() on a list of files, by default every file in corpusdir
+    :param article_list: list of articles to run it on
+    :return: list of tuples for each article
+    """
+    if article_list is None:
+        article_list = listdir_nohidden(corpusdir)
+    corpus_metadata = [get_article_metadata(article) for article in article_list]
+    return corpus_metadata
+
+
+def corpus_metadata_to_csv(corpus_metadata=None):
+    """
+    Convert list of tuples from get_article_metadata to csv
+    :param corpus_metadata: the list of tuples, defaults to creating from corpusdir
+    :return: None
+    """
+    if corpus_metadata is None:
+        corpus_metadata = get_corpus_metadata()
+    with open('allofplos_metadata.csv', 'w') as out:
+        csv_out = csv.writer(out)
+        csv_out.writerow(['doi', 'filename', 'title', 'journal', 'jats_article_type', 'plos_article_type',
+                          'dtd_version', 'pubdate', 'received', 'accepted', 'collection'])
+        for row in corpus_metadata:
+            csv_out.writerow(row)
