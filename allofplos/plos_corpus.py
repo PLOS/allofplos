@@ -781,7 +781,8 @@ def check_for_vor_updates(uncorrected_list=None):
     return vor_updates_available
 
 
-def download_vor_updates(directory=corpusdir, tempdir=newarticledir, vor_updates_available=None):
+def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
+                         vor_updates_available=None, plos_network=False):
     """
     For existing uncorrected proofs list, check whether a vor is available to download
     Used in conjunction w/check_for_vor_updates
@@ -807,11 +808,11 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir, vor_updates
     # direct remote XML check; add their totals to totals above
     if new_uncorrected_proofs_list:
         proofs_download_list = remote_proofs_direct_check(article_list=new_uncorrected_proofs_list,
-                                                          plos_network=args.plos)
+                                                          plos_network=plos_network)
         vor_updated_article_list.extend(proofs_download_list)
         new_uncorrected_proofs_list = list(set(new_uncorrected_proofs_list) - set(vor_updated_article_list))
         too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof)]
-        if too_old_proofs and args.plos:
+        if too_old_proofs and plos_network:
             print("Proofs older than 3 weeks: {}".format(too_old_proofs))
 
     # if any VOR articles have been downloaded, update static uncorrected proofs list
@@ -859,7 +860,8 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     return proofs_download_list
 
 
-def download_check_and_move(article_list, text_list, tempdir, destination):
+def download_check_and_move(article_list, text_list, tempdir, destination,
+                            plos_network=False):
     """
     For a list of new articles to get, first download them from content-repo to the temporary directory
     Next, check these articles for uncorrected proofs and article_type corrections
@@ -871,15 +873,16 @@ def download_check_and_move(article_list, text_list, tempdir, destination):
     :param destination: Directory where new articles are to be moved to
     :return: None
     """
-    repo_download(article_list, tempdir, plos_network=args.plos)
+    repo_download(article_list, tempdir, plos_network=plos_network)
     corrected_articles = check_for_corrected_articles(directory=tempdir)
     download_corrected_articles(corrected_article_list=corrected_articles)
-    download_vor_updates()
+    download_vor_updates(plos_network=plos_network)
     check_for_uncorrected_proofs(directory=tempdir)
     move_articles(tempdir, destination)
 
 
-def download_file_from_google_drive(id, filename, destination=corpusdir, file_size=None):
+def download_file_from_google_drive(id, filename, destination=corpusdir,
+                                    file_size=None):
     """
     General method for downloading from Google Drive.
     Doesn't require using API or having credentials
@@ -1021,12 +1024,20 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
     if rm_metadata:
         os.remove(metadata_path)
 
-if __name__ == "__main__":
+def main():
+    """
+    Entry point for the program. This is used when the program is used as a
+    standalone script
+    :return: None
+    """
     parser = argparse.ArgumentParser()
-    parser.add_argument('--plos', action='store_true', help='Used when inside the plos network')
+    parser.add_argument('--plos', action='store_true', help=
+                        'Used when inside the plos network')
     args = parser.parse_args()
+    plos_network = False
     if args.plos:
         URL_TMP = INT_URL_TMP
+        plos_network = True
     else:
         URL_TMP = EXT_URL_TMP
     # Step 0: Initialize first copy of repository]
@@ -1044,7 +1055,6 @@ if __name__ == "__main__":
         # Returns specific URL query & the number of search results.
         # Parses the returned dictionary of article DOIs, removing common leading numbers, as a list.
         # Compares to list of existing articles in the PLOS corpus folder to create list of DOIs to download.
-    articles_changed = False
     dois_needed_list = get_dois_needed_list()
 
     # Step 2: Download new articles
@@ -1058,4 +1068,9 @@ if __name__ == "__main__":
     download_check_and_move(dois_needed_list,
                             uncorrected_proofs_text_list,
                             tempdir=newarticledir,
-                            destination=corpusdir)
+                            destination=corpusdir,
+                            plos_network=plos_network)
+    return None
+
+if __name__ == "__main__":
+    main()
