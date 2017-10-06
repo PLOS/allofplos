@@ -40,7 +40,7 @@ setup(
     install_requires=['certifi==2017.7.27.1', 'chardet>=3.0.4', 'idna>=2.6',
                       'lxml>=4.0.0', 'progressbar2>=3.34.3', 'python-utils>=2.2.0',
                       'requests>=2.18.4', 'six>=1.11.0', 'tqdm==4.17.1',
-                      'urllib3==1.22']
+                      'urllib3==1.22'],
     # If there are data files included in your packages that need to be
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
