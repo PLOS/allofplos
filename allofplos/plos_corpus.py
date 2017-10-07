@@ -38,9 +38,6 @@ from plos_regex import validate_doi
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
-# Main directory of article XML files
-corpusdir = 'allofplos_xml'
-
 # Temp folder for downloading and processing new articles
 newarticledir = 'new_plos_articles'
 
@@ -1027,7 +1024,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--plos', action='store_true', help=
                         'Used when inside the plos network')
+    parser.add_argument('--dir', action='store',
+                        dest='corpusdir',
+                        default='allofplos_xml',
+                        help='Where to download plos articles')
     args = parser.parse_args()
+    corpusdir = args.corpusdir
     plos_network = False
     if args.plos:
         URL_TMP = INT_URL_TMP
