@@ -9,6 +9,8 @@ examples of analysis. It can:
 
 import collections
 import csv
+import datetime
+import lxml.etree as et
 import os
 import progressbar
 import random
@@ -17,13 +19,14 @@ import requests
 
 from plos_corpus import (listdir_nohidden, check_article_type, get_article_xml,
                          get_related_article_doi, download_updated_xml, get_all_solr_dois,
-                         file_to_doi, newarticledir, get_article_pubdate)
+                         file_to_doi, newarticledir, get_article_pubdate, doi_to_url)
 from plos_regex import (full_doi_regex_match, validate_doi, validate_file, validate_url, currents_doi_filter)
 
 counter = collections.Counter
 corpusdir = 'allofplos_xml'
 max_invalid_files_to_print = 100
 pmcdir = 'pmc_articles'
+
 
 def validate_corpus(corpusdir=corpusdir):
     """
@@ -511,7 +514,7 @@ def get_article_title(article_file):
     """
     For an individual PLOS article, get its title.
     :param article_file: individual local PLOS XML article
-    :return: article title at specified xpath location
+    :return: string of article title at specified xpath location
     """
     title = get_article_xml(article_file=article_file,
                             tag_path_elements=["/",
@@ -520,7 +523,8 @@ def get_article_title(article_file):
                                                "article-meta",
                                                "title-group",
                                                "article-title"])
-    return title[0].text
+    title_text = et.tostring(title[0], encoding='unicode', method='text')
+    return title_text
 
 
 def parse_article_date(date_element, date_format='%d %m %Y'):
@@ -555,6 +559,35 @@ def parse_article_date(date_element, date_format='%d %m %Y'):
         date = ''
     return date
 
+
+def get_article_abstract(article_file):
+    """
+    For an individual article in the PLOS corpus, create a tuple of a set of metadata fields sbout that corpus.
+    Make it small, medium, or large depending on number of fields desired.
+    :param article_file: individual local PLOS XML article
+    :return: plain-text string of content in abstract
+    """
+    abstract = get_article_xml(article_file, tag_path_elements=["/",
+                                                                "article",
+                                                                "front",
+                                                                "article-meta",
+                                                                "abstract"])
+    try:
+        abstract_text = et.tostring(abstract[0], encoding='unicode', method='text')
+    except IndexError:
+        if check_article_type(article_file) == 'research-article' and \
+          get_plos_article_type(article_file) == 'Research Article':
+            print(check_article_type(article_file), article_file)
+
+        abstract_text = ''
+    # clean up text: rem white space, new line marks
+    abstract_text.replace('  ', '').strip()
+    # if '\n' in abstract_text:
+    #     print(abstract_text.decode('utf-8'))
+
+    return abstract_text
+
+
 def get_article_dates(article_file, string=False):
     """
     For an individual article, get all of its dates
@@ -569,7 +602,7 @@ def get_article_dates(article_file, string=False):
                   "article-meta",
                   "pub-date"]
     raw_xml_1 = get_article_xml(article_file=article_file,
-                              tag_path_elements=tag_path_1)
+                                tag_path_elements=tag_path_1)
     for element in raw_xml_1:
         pub_type = element.get('pub-type')
         date = parse_article_date(element)
@@ -579,9 +612,9 @@ def get_article_dates(article_file, string=False):
                   "article",
                   "front",
                   "article-meta",
-                  "history"]        
+                  "history"]
     raw_xml_2 = get_article_xml(article_file=article_file,
-                              tag_path_elements=tag_path_2)
+                                tag_path_elements=tag_path_2)
     for element in raw_xml_2:
         for part in element:
             date_type = part.get('date-type')
@@ -615,6 +648,7 @@ def get_article_metadata(article_file, size='small'):
     dates = get_article_dates(article_file, string=True)
     (pubdate, collection, received, accepted) = ('','','','')
     pubdate = dates['epub']
+    abstract = get_article_abstract(article_file)
     try:
         collection = dates['collection']
     except KeyError:
@@ -628,9 +662,9 @@ def get_article_metadata(article_file, size='small'):
     except KeyError:
         pass
     metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate,
-                received, accepted, collection]
+                received, accepted, collection, abstract]
     metadata = tuple(metadata)
-    if len(metadata) == 11:
+    if len(metadata) == 12:
         return metadata
     else:
         print('Error in {}: {} items'.format(article_file, len(article_file)))
@@ -640,12 +674,20 @@ def get_article_metadata(article_file, size='small'):
 def get_corpus_metadata(article_list=None):
     """
     Run get_article_metadata() on a list of files, by default every file in corpusdir
+    Includes a progress bar
     :param article_list: list of articles to run it on
     :return: list of tuples for each article
     """
     if article_list is None:
         article_list = listdir_nohidden(corpusdir)
-    corpus_metadata = [get_article_metadata(article) for article in article_list]
+    max_value = len(article_list)
+    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+    corpus_metadata = []
+    for i, article_file in enumerate(article_list):
+        metadata = get_article_metadata(article_file)
+        corpus_metadata.append(metadata)
+        bar.update(i+1)
+    bar.finish()
     return corpus_metadata
 
 
@@ -660,6 +702,6 @@ def corpus_metadata_to_csv(corpus_metadata=None):
     with open('allofplos_metadata.csv', 'w') as out:
         csv_out = csv.writer(out)
         csv_out.writerow(['doi', 'filename', 'title', 'journal', 'jats_article_type', 'plos_article_type',
-                          'dtd_version', 'pubdate', 'received', 'accepted', 'collection'])
+                          'dtd_version', 'pubdate', 'received', 'accepted', 'collection', 'abstract'])
         for row in corpus_metadata:
             csv_out.writerow(row)
