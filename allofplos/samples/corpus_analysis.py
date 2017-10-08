@@ -577,9 +577,10 @@ def get_article_abstract(article_file):
     except IndexError:
         if check_article_type(article_file) == 'research-article' and \
           get_plos_article_type(article_file) == 'Research Article':
-            print(check_article_type(article_file), article_file)
+            print('No abstract found for research article {}'.format(file_to_doi(article_file)))
 
         abstract_text = ''
+
     # clean up text: rem white space, new line marks
     abstract_text.replace('  ', '').strip()
     # if '\n' in abstract_text:
