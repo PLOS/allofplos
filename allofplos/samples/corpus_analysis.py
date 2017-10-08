@@ -660,7 +660,7 @@ def get_article_body_word_count(article_file):
     """
     For an article, get how many words are in the body
     :param article_file: individual local PLOS XML article
-    
+
     """
     body = get_article_xml(article_file, tag_path_elements=["/",
                                                             "article",
@@ -686,7 +686,7 @@ def get_article_metadata(article_file, size='small'):
     plos_article_type = get_plos_article_type(article_file)
     dtd_version = get_article_dtd(article_file)
     dates = get_article_dates(article_file, string=True)
-    (pubdate, collection, received, accepted) = ('','','','')
+    (pubdate, collection, received, accepted) = ('', '', '', '')
     pubdate = dates['epub']
     counts = get_article_counts(article_file)
     (fig_count, table_count, page_count) = ('', '', '')
