@@ -630,6 +630,32 @@ def get_article_dates(article_file, string=False):
     return dates
 
 
+def get_article_counts(article_file):
+    """
+    For a single article, return a dictionary of the several counts functions that are available
+    (figures: fig-count, pages: page-count, tables: table-count)
+    :param article_file: file path/DOI of the article
+    :return: counts dictionary
+    """
+    counts = {}
+
+    tag_path = ["/",
+                "article",
+                "front",
+                "article-meta",
+                "counts"]
+    raw_xml = get_article_xml(article_file=article_file,
+                              tag_path_elements=tag_path)
+    for element in raw_xml:
+        for count_item in element:
+            count = count_item.get('count')
+            count_type = count_item.tag
+            counts[count_type] = count
+    if len(counts) > 3:
+        print(counts)
+    return counts
+
+
 def get_article_metadata(article_file, size='small'):
     """
     For an individual article in the PLOS corpus, create a tuple of a set of metadata fields sbout that corpus.
@@ -648,6 +674,8 @@ def get_article_metadata(article_file, size='small'):
     dates = get_article_dates(article_file, string=True)
     (pubdate, collection, received, accepted) = ('','','','')
     pubdate = dates['epub']
+    counts = get_article_counts(article_file)
+    (fig_count, table_count, page_count) = ('', '', '')
     abstract = get_article_abstract(article_file)
     try:
         collection = dates['collection']
@@ -661,10 +689,22 @@ def get_article_metadata(article_file, size='small'):
         accepted = dates['accepted']
     except KeyError:
         pass
+    try:
+        fig_count = counts['fig-count']
+    except KeyError:
+        pass
+    try:
+        table_count = counts['table-count']
+    except KeyError:
+        pass
+    try:
+        page_count = counts['page-count']
+    except KeyError:
+        pass      
     metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate,
-                received, accepted, collection, abstract]
+                received, accepted, collection, fig_count, table_count, page_count, abstract]
     metadata = tuple(metadata)
-    if len(metadata) == 12:
+    if len(metadata) == 15:
         return metadata
     else:
         print('Error in {}: {} items'.format(article_file, len(article_file)))
@@ -702,6 +742,7 @@ def corpus_metadata_to_csv(corpus_metadata=None):
     with open('allofplos_metadata.csv', 'w') as out:
         csv_out = csv.writer(out)
         csv_out.writerow(['doi', 'filename', 'title', 'journal', 'jats_article_type', 'plos_article_type',
-                          'dtd_version', 'pubdate', 'received', 'accepted', 'collection', 'abstract'])
+                          'dtd_version', 'pubdate', 'received', 'accepted', 'collection', 'fig_count', 'table_count',
+                          'page_count','abstract'])
         for row in corpus_metadata:
             csv_out.writerow(row)
