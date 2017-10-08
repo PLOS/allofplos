@@ -174,7 +174,7 @@ def url_to_file(url, directory=corpusdir, plos_network=False):
         file = os.path.join(directory,
                             url[url.index(prefix)+len(prefix):].
                             replace(url_suffix, '').
-                            replace(INT_URL_SUFFIX,'') + '.xml')
+                            replace(INT_URL_SUFFIX, '') + '.xml')
     return file
 
 
@@ -1030,6 +1030,7 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
     if rm_metadata:
         os.remove(metadata_path)
 
+
 def main():
     """
     Entry point for the program. This is used when the program is used as a
@@ -1062,7 +1063,6 @@ def main():
         # Returns specific URL query & the number of search results.
         # Parses the returned dictionary of article DOIs, removing common leading numbers, as a list.
         # Compares to list of existing articles in the PLOS corpus folder to create list of DOIs to download.
-    articles_changed = False
     dois_needed_list = get_dois_needed_list()
 
     # Step 2: Download new articles
