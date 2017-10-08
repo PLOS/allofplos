@@ -17,9 +17,9 @@ import random
 import requests
 
 
-from plos_corpus import (listdir_nohidden, check_article_type, get_article_xml,
+from plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, uncorrected_proofs_text_list,
                          get_related_article_doi, download_updated_xml, get_all_solr_dois,
-                         file_to_doi, newarticledir, get_article_pubdate, doi_to_url)
+                         file_to_doi, newarticledir, get_article_pubdate, doi_to_url, download_check_and_move)
 from plos_regex import (full_doi_regex_match, validate_doi, validate_file, validate_url, currents_doi_filter)
 
 counter = collections.Counter
@@ -747,7 +747,7 @@ def get_corpus_metadata(article_list=None):
     return corpus_metadata
 
 
-def corpus_metadata_to_csv(corpus_metadata=None):
+def corpus_metadata_to_csv(corpus_metadata=None, csv_file='allofplos_metadata.csv'):
     """
     Convert list of tuples from get_article_metadata to csv
     :param corpus_metadata: the list of tuples, defaults to creating from corpusdir
@@ -755,10 +755,59 @@ def corpus_metadata_to_csv(corpus_metadata=None):
     """
     if corpus_metadata is None:
         corpus_metadata = get_corpus_metadata()
-    with open('allofplos_metadata.csv', 'w') as out:
+    with open(csv_file, 'w') as out:
         csv_out = csv.writer(out)
         csv_out.writerow(['doi', 'filename', 'title', 'journal', 'jats_article_type', 'plos_article_type',
                           'dtd_version', 'pubdate', 'received', 'accepted', 'collection', 'fig_count', 'table_count',
                           'page_count', 'body_word_count', 'abstract'])
         for row in corpus_metadata:
             csv_out.writerow(row)
+
+
+def read_corpus_metadata_from_csv(csv_file='allofplos_metadata.csv'):
+    """
+    reads in a csv of data, excluding the header row
+    :param csv_file: csv file of data, defaults to 'allofplos_metadata.csv'
+    :return: list of tuples of article metadata
+    """
+    with open(csv_file, 'r') as csv_file:
+        reader = csv.reader(csv_file)
+        next(reader, None)
+        corpus_metadata = [tuple(line) for line in reader]
+    return corpus_metadata
+
+
+def update_corpus_metadata_csv(csv_file='allofplos_metadata.csv', comparison_dois=None):
+    """
+    Incrementally update the metadata of PLOS articles in the csv file
+    :param csv_file: csv file of data, defaults to 'allofplos_metadata.csv'
+    :comparison_dois: list of DOIs to check whether their metadats is included
+    return updated corpus metadata
+    """
+    # Step 1: get metadata and DOI list from existing csv file
+    try:
+        corpus_metadata = read_corpus_metadata_from_csv(csv_file)
+        csv_doi_list = [row[0] for row in corpus_metadata]
+    except FileNotFoundError:
+        corpus_metadata = []
+        csv_doi_list = []
+    # Step 2: compare DOI list with master list
+    if comparison_dois is None:
+        comparison_dois = get_all_solr_dois()
+    dois_needed_list = list(set(comparison_dois) - set(csv_doi_list))
+    # Step 3: compare to local file list
+    local_doi_list = [file_to_doi(article_file) for article_file in listdir_nohidden(corpusdir)]
+    files_needed_list = list(set(dois_needed_list) - set(local_doi_list))
+    if files_needed_list:
+        print('Local corpus must be updated before .csv metadata can be updated.\nUpdating local corpus now')
+        download_check_and_move(files_needed_list,
+                                uncorrected_proofs_text_list,
+                                tempdir=newarticledir,
+                                destination=corpusdir)
+        
+    # Step 4: append new data to existing list
+    new_corpus_metadata = get_corpus_metadata(article_list=dois_needed_list)
+    corpus_metadata.extend(new_corpus_metadata)
+    # Step 5: write new dataset to .csv
+    corpus_metadata_to_csv(corpus_metadata=corpus_metadata, csv_file=csv_file)
+    return corpus_metadata
