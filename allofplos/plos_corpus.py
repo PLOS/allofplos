@@ -557,7 +557,15 @@ def compare_article_pubdate(article, days=22):
         compare_date = today - three_wks_ago
         return pubdate < compare_date
     except OSError:
+        article = os.path.join(newarticledir, article.split('/')[1].rstrip('.xml')+'.xml')
+        pubdate = get_article_pubdate(article)
+        today = datetime.datetime.now()
+        three_wks_ago = datetime.timedelta(days)
+        compare_date = today - three_wks_ago
+        return pubdate < compare_date
+    except ValueError:
         print("Pubdate error in {}".format(article))
+
 
 
 def download_updated_xml(article_file,
@@ -579,7 +587,11 @@ def download_updated_xml(article_file,
     url = URL_TMP.format(doi)
     articletree_remote = et.parse(url)
     articleXML_remote = et.tostring(articletree_remote, method='xml', encoding='unicode')
-    articletree_local = et.parse(article_file)
+    try:
+        articletree_local = et.parse(article_file)
+    except OSError:
+        article_file_alt = os.path.join(tempdir, os.path.basename(article_file))
+        articletree_local = et.parse(article_file_alt)
     articleXML_local = et.tostring(articletree_local, method='xml', encoding='unicode')
 
     if articleXML_remote == articleXML_local:
