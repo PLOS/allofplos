@@ -548,9 +548,13 @@ def parse_article_date(date_element, date_format='%d %m %Y'):
         string_date = ' '.join(date)
         date = datetime.datetime.strptime(string_date, date_format)
     elif month:
+        # try both numerical & word versions of month
         date = (month, year)
         string_date = ' '.join(date)
-        date = datetime.datetime.strptime(string_date, '%m %Y')
+        try:
+            date = datetime.datetime.strptime(string_date, '%m %Y')
+        except ValueError:
+            date = datetime.datetime.strptime(string_date, '%B %Y')
     elif year:
         date = year
         date = datetime.datetime.strptime(date, '%Y')
