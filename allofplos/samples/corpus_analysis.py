@@ -656,6 +656,20 @@ def get_article_counts(article_file):
     return counts
 
 
+def get_article_body_word_count(article_file):
+    """
+    For an article, get how many words are in the body
+    :param article_file: individual local PLOS XML article
+    
+    """
+    body = get_article_xml(article_file, tag_path_elements=["/",
+                                                            "article",
+                                                            "body"])
+    body_text = et.tostring(body[0], encoding='unicode', method='text')
+    body_word_count = len(body_text.split(" "))
+    return body_word_count
+
+
 def get_article_metadata(article_file, size='small'):
     """
     For an individual article in the PLOS corpus, create a tuple of a set of metadata fields sbout that corpus.
@@ -676,6 +690,7 @@ def get_article_metadata(article_file, size='small'):
     pubdate = dates['epub']
     counts = get_article_counts(article_file)
     (fig_count, table_count, page_count) = ('', '', '')
+    body_word_count = get_article_body_word_count(article_file)
     abstract = get_article_abstract(article_file)
     try:
         collection = dates['collection']
@@ -702,12 +717,12 @@ def get_article_metadata(article_file, size='small'):
     except KeyError:
         pass      
     metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate,
-                received, accepted, collection, fig_count, table_count, page_count, abstract]
+                received, accepted, collection, fig_count, table_count, page_count, body_word_count, abstract]
     metadata = tuple(metadata)
-    if len(metadata) == 15:
+    if len(metadata) == 16:
         return metadata
     else:
-        print('Error in {}: {} items'.format(article_file, len(article_file)))
+        print('Error in {}: {} items'.format(article_file, len(metadata)))
         return False
 
 
@@ -743,6 +758,6 @@ def corpus_metadata_to_csv(corpus_metadata=None):
         csv_out = csv.writer(out)
         csv_out.writerow(['doi', 'filename', 'title', 'journal', 'jats_article_type', 'plos_article_type',
                           'dtd_version', 'pubdate', 'received', 'accepted', 'collection', 'fig_count', 'table_count',
-                          'page_count','abstract'])
+                          'page_count', 'body_word_count', 'abstract'])
         for row in corpus_metadata:
             csv_out.writerow(row)
