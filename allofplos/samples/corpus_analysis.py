@@ -586,9 +586,8 @@ def get_article_abstract(article_file):
         abstract_text = ''
 
     # clean up text: rem white space, new line marks
-    abstract_text.replace('  ', '').strip()
-    # if '\n' in abstract_text:
-    #     print(abstract_text.decode('utf-8'))
+    abstract_text = abstract_text.strip().replace('  ', '')
+    abstract_text = os.linesep.join([s for s in abstract_text.splitlines() if s])
 
     return abstract_text
 
