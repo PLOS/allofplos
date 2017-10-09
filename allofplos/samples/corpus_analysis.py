@@ -18,7 +18,7 @@ import requests
 
 
 from plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, uncorrected_proofs_text_list,
-                         get_related_article_doi, download_updated_xml, get_all_solr_dois,
+                         get_related_article_doi, download_updated_xml, get_all_solr_dois, doi_to_file,
                          file_to_doi, newarticledir, get_article_pubdate, doi_to_url, download_check_and_move)
 from plos_regex import (full_doi_regex_match, validate_doi, validate_file, validate_url, currents_doi_filter)
 
@@ -688,7 +688,7 @@ def get_article_metadata(article_file, size='small'):
     :return: tuple of metadata fields
     """
     doi = file_to_doi(article_file)
-    filename = os.path.basename(article_file).rstrip('.xml')
+    filename = os.path.basename(doi_to_file(article_file)).rstrip('.xml')
     title = get_article_title(article_file)
     journal = get_plos_journal(article_file)
     jats_article_type = check_article_type(article_file)
@@ -724,7 +724,7 @@ def get_article_metadata(article_file, size='small'):
     try:
         page_count = counts['page-count']
     except KeyError:
-        pass      
+        pass
     metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate,
                 received, accepted, collection, fig_count, table_count, page_count, body_word_count, abstract]
     metadata = tuple(metadata)
@@ -812,7 +812,7 @@ def update_corpus_metadata_csv(csv_file='allofplos_metadata.csv', comparison_doi
                                 uncorrected_proofs_text_list,
                                 tempdir=newarticledir,
                                 destination=corpusdir)
-        
+
     # Step 4: append new data to existing list
     new_corpus_metadata = get_corpus_metadata(article_list=dois_needed_list)
     corpus_metadata.extend(new_corpus_metadata)
