@@ -34,7 +34,7 @@ import progressbar
 import requests
 from tqdm import tqdm
 
-from plos_regex import validate_doi
+from plos_regex import validate_doi, validate_file
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -114,17 +114,20 @@ def file_to_doi(article_file, directory=corpusdir):
     """
     For a local XML file in the corpusdir directory, transform it to the article's DOI
     Includes transform for the 'annotation' DOIs
+    Uses regex to make sure it's a file and not a DOI
     Example:
     file_to_doi('allofplos_xml/journal.pone.1000001.xml') = '10.1371/journal.pone.1000001'
     :param article_file: relative path to local XML file in the corpusdir directory
     :param directory: defaults to corpusdir, containing article files
     :return: full unique identifier for a PLOS article
     """
-    if correction in article_file:
+    if correction in article_file and validate_file(article_file):
         article = 'annotation/' + (article_file.split('.', 4)[3])
         doi = prefix + article
-    else:
+    elif validate_file(article_file):
         doi = prefix + os.path.splitext((os.path.basename(article_file)))[0]
+    elif validate_doi(article_file):
+        doi = article_file
     return doi
 
 
@@ -208,20 +211,23 @@ def doi_to_file(doi, directory=corpusdir):
     For a given PLOS DOI, return the relative path to that local article
     For DOIs that contain the word 'annotation', searches online version of the article xml to extract
     the journal name, which goes into the filename. Will print DOI if it can't find the journal name
+    Uses regex to make sure it's a DOI and not a file
     Example:
     doi_to_file('10.1371/journal.pone.1000001') = 'allofplos_xml/journal.pone.1000001.xml'
     :param doi: full unique identifier for a PLOS article
     :param directory: defaults to corpusdir, containing article files
     :return: relative path to local XML file
     """
-    if doi.startswith(annotation_doi):
+    if doi.startswith(annotation_doi) and validate_doi(doi):
         try:
             url = doi_to_url(doi)
             article_file = url_to_file(url)
         except KeyError:
             print("error, can't find linked DOI for {0}".format(doi))
-    else:
+    elif validate_doi(doi):
         article_file = os.path.join(directory, doi.lstrip(prefix) + suffix_lower)
+    elif validate_file(doi):
+        article_file = doi
     return article_file
 
 
