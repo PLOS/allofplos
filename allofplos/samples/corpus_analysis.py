@@ -130,11 +130,18 @@ def get_plos_article_type_list(article_list=None):
 
 
 def get_article_dtd(article_file):
+    """
+    For more information on these tags, see https://jats.nlm.nih.gov/1.1d3/ and https://dtd.nlm.nih.gov/3.0/
+    """
     try:
         dtd = get_article_xml(article_file=article_file,
                               tag_path_elements=["/",
                                                  "article"])
         dtd = dtd[0].attrib['dtd-version']
+        if dtd == '3':
+            dtd = 'NLM 3.0'
+        elif dtd = '1.1d3':
+            dtd = 'JATS 1.1d3'
     except KeyError:
         print('Error parsing DTD from', article_file)
         dtd = 'N/A'
@@ -585,7 +592,7 @@ def get_article_abstract(article_file):
 
         abstract_text = ''
 
-    # clean up text: rem white space, new line marks
+    # clean up text: rem white space, new line marks, blank lines
     abstract_text = abstract_text.strip().replace('  ', '')
     abstract_text = os.linesep.join([s for s in abstract_text.splitlines() if s])
 
