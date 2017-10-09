@@ -599,11 +599,11 @@ def get_article_abstract(article_file):
     return abstract_text
 
 
-def get_article_dates(article_file, string=False):
+def get_article_dates(article_file, string_=False):
     """
     For an individual article, get all of its dates
     :param article_file: file path/DOI of the article
-    :return: dictionary of date types mapped to datetime objects for that article
+    :return: tuple of dict of date types mapped to datetime objects for that article, dict for date strings if wrong order
     """
     dates = {}
 
@@ -633,14 +633,19 @@ def get_article_dates(article_file, string=False):
             dates[date_type] = date
     if 'received' in dates and 'accepted' in dates:
         if not dates['received'] <= dates['accepted'] <= dates['epub']:
-            date_strings = {date_type: date.strftime('%Y-%m-%d') for date_type, date in dates.items()}
-            date_strings['doi'] = file_to_doi(article_file)
-            print('Dates not in correct order: {}'.format(date_strings))
-    if string:
+            wrong_date_strings = {date_type: date.strftime('%Y-%m-%d') for date_type, date in dates.items()}
+            wrong_date_strings['doi'] = file_to_doi(article_file)
+            # print('Dates not in correct order: {}'.format(date_strings))
+        else:
+            wrong_date_strings = ''
+    else:
+        wrong_date_strings = ''
+
+    if string_:
         for key, value in dates.items():
             dates[key] = value.strftime('%Y-%m-%d')
 
-    return dates
+    return dates, wrong_date_strings
 
 
 def get_article_counts(article_file):
@@ -693,7 +698,7 @@ def get_article_metadata(article_file, size='small'):
     Make it small, medium, or large depending on number of fields desired.
     :param article_file: individual local PLOS XML article
     :param size: small, medium or large, aka how many fields to return for each article
-    :return: tuple of metadata fields
+    :return: tuple of metadata fields tuple, wrong_date_strings dict
     """
     doi = file_to_doi(article_file)
     filename = os.path.basename(doi_to_file(article_file)).rstrip('.xml')
@@ -702,7 +707,7 @@ def get_article_metadata(article_file, size='small'):
     jats_article_type = check_article_type(article_file)
     plos_article_type = get_plos_article_type(article_file)
     dtd_version = get_article_dtd(article_file)
-    dates = get_article_dates(article_file, string=True)
+    dates, wrong_date_strings = get_article_dates(article_file, string_=True)
     (pubdate, collection, received, accepted) = ('', '', '', '')
     pubdate = dates['epub']
     counts = get_article_counts(article_file)
@@ -743,7 +748,7 @@ def get_article_metadata(article_file, size='small'):
                 accepted, collection, fig_count, table_count, page_count, body_word_count, related_article, abstract]
     metadata = tuple(metadata)
     if len(metadata) == 17:
-        return metadata
+        return metadata, wrong_date_strings
     else:
         print('Error in {}: {} items'.format(article_file, len(metadata)))
         return False
@@ -754,29 +759,36 @@ def get_corpus_metadata(article_list=None):
     Run get_article_metadata() on a list of files, by default every file in corpusdir
     Includes a progress bar
     :param article_list: list of articles to run it on
-    :return: list of tuples for each article
+    :return: list of tuples for each article; list of dicts for wrong date orders
     """
     if article_list is None:
         article_list = listdir_nohidden(corpusdir)
     max_value = len(article_list)
     bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
     corpus_metadata = []
+    wrong_dates = []
     for i, article_file in enumerate(article_list):
-        metadata = get_article_metadata(article_file)
+        metadata, wrong_date_strings = get_article_metadata(article_file)
         corpus_metadata.append(metadata)
+        if wrong_date_strings:
+            wrong_dates.append(wrong_date_strings)
         bar.update(i+1)
     bar.finish()
-    return corpus_metadata
+    return corpus_metadata, wrong_dates
 
 
-def corpus_metadata_to_csv(corpus_metadata=None, csv_file='allofplos_metadata.csv'):
+def corpus_metadata_to_csv(corpus_metadata=None,
+                           article_list=None,
+                           wrong_dates=None,
+                           csv_file='allofplos_metadata.csv'):
     """
     Convert list of tuples from get_article_metadata to csv
     :param corpus_metadata: the list of tuples, defaults to creating from corpusdir
     :return: None
     """
     if corpus_metadata is None:
-        corpus_metadata = get_corpus_metadata()
+        corpus_metadata, wrong_dates = get_corpus_metadata(article_list)
+    # write main metadata csv file
     with open(csv_file, 'w') as out:
         csv_out = csv.writer(out)
         csv_out.writerow(['doi', 'filename', 'title', 'journal', 'jats_article_type', 'plos_article_type',
@@ -784,6 +796,13 @@ def corpus_metadata_to_csv(corpus_metadata=None, csv_file='allofplos_metadata.cs
                           'page_count', 'body_word_count', 'related_article', 'abstract'])
         for row in corpus_metadata:
             csv_out.writerow(row)
+    # write wrong dates csv file, with longest dict providing the keys
+    if wrong_dates:
+        keys = max(wrong_dates, key=len).keys()
+        with open('wrong_dates.csv', 'w') as out:
+            dict_writer = csv.DictWriter(out, keys)
+            dict_writer.writeheader()
+            dict_writer.writerows(wrong_dates)
 
 
 def read_corpus_metadata_from_csv(csv_file='allofplos_metadata.csv'):
