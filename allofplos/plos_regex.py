@@ -6,7 +6,6 @@ import re
 
 corpusdir = 'allofplos_xml/'
 corpusdir_regex = re.escape(corpusdir)
-'http://journals.plos.org/plosone/article/file?id='
 regex_match_prefix = r"^10\.1371/"
 regex_body_match = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7}$)"
                     r"|(annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}$))")
