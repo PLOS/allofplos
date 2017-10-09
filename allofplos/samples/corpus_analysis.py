@@ -665,13 +665,17 @@ def get_article_body_word_count(article_file):
     """
     For an article, get how many words are in the body
     :param article_file: individual local PLOS XML article
-
+    :return: count of words in the body of the PLOS article
     """
     body = get_article_xml(article_file, tag_path_elements=["/",
                                                             "article",
                                                             "body"])
-    body_text = et.tostring(body[0], encoding='unicode', method='text')
-    body_word_count = len(body_text.split(" "))
+    try:
+        body_text = et.tostring(body[0], encoding='unicode', method='text')
+        body_word_count = len(body_text.split(" "))
+    except IndexError:
+        print("Error parsing article body: {}".format(article_file))
+        body_word_count = 0
     return body_word_count
 
 
