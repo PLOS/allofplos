@@ -700,6 +700,12 @@ def get_article_metadata(article_file, size='small'):
     counts = get_article_counts(article_file)
     (fig_count, table_count, page_count) = ('', '', '')
     body_word_count = get_article_body_word_count(article_file)
+    if jats_article_type == 'correction':
+        related_article = get_related_article_doi(article_file, corrected=True)[0]
+    elif jats_article_type == 'retraction':
+        related_article = get_related_retraction_article(article_file)[0]
+    else:
+        related_article = ''
     abstract = get_article_abstract(article_file)
     try:
         collection = dates['collection']
@@ -725,10 +731,10 @@ def get_article_metadata(article_file, size='small'):
         page_count = counts['page-count']
     except KeyError:
         pass
-    metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate,
-                received, accepted, collection, fig_count, table_count, page_count, body_word_count, abstract]
+    metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate, received,
+                accepted, collection, fig_count, table_count, page_count, body_word_count, related_article, abstract]
     metadata = tuple(metadata)
-    if len(metadata) == 16:
+    if len(metadata) == 17:
         return metadata
     else:
         print('Error in {}: {} items'.format(article_file, len(metadata)))
@@ -767,7 +773,7 @@ def corpus_metadata_to_csv(corpus_metadata=None, csv_file='allofplos_metadata.cs
         csv_out = csv.writer(out)
         csv_out.writerow(['doi', 'filename', 'title', 'journal', 'jats_article_type', 'plos_article_type',
                           'dtd_version', 'pubdate', 'received', 'accepted', 'collection', 'fig_count', 'table_count',
-                          'page_count', 'body_word_count', 'abstract'])
+                          'page_count', 'body_word_count', 'related_article', 'abstract'])
         for row in corpus_metadata:
             csv_out.writerow(row)
 
