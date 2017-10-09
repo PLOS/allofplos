@@ -635,7 +635,7 @@ def get_article_dates(article_file, string=False):
         if not dates['received'] <= dates['accepted'] <= dates['epub']:
             date_strings = {date_type: date.strftime('%Y-%m-%d') for date_type, date in dates.items()}
             date_strings['doi'] = article_file_to_doi(article_file)
-            print('Dates not in correct order: {}'.format(article_file, date_strings))
+            print('Dates not in correct order: {}'.format(date_strings))
     if string:
         for key, value in dates.items():
             dates[key] = value.strftime('%Y-%m-%d')
