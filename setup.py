@@ -29,6 +29,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ],
     keywords='science PLOS publishing',
     #packages=find_packages(exclude=['contrib', 'docs', 'tests']),
@@ -37,10 +38,19 @@ setup(
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['certifi==2017.7.27.1', 'chardet>=3.0.4', 'idna>=2.6',
-                      'lxml>=4.0.0', 'progressbar2>=3.34.3', 'python-utils>=2.2.0',
-                      'requests>=2.18.4', 'six>=1.11.0', 'tqdm==4.17.1',
-                      'urllib3==1.22'],
+    install_requires=[
+        'certifi==2017.7.27.1', 
+        'chardet>=3.0.4', 
+        'idna>=2.6',
+        'lxml>=4.0.0', 
+        'progressbar2>=3.34.3', 
+        'python-utils>=2.2.0',
+        'requests>=2.18.4', 
+        'six>=1.11.0', 
+        'tqdm==4.17.1',
+        'urllib3==1.22',
+        ],
+    python_requires='>=3.4',
     # If there are data files included in your packages that need to be
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
