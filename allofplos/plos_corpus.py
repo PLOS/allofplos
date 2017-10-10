@@ -343,7 +343,7 @@ def get_dois_needed_list(comparison_list=None, directory=corpusdir):
         comparison_list = get_all_solr_dois()
 
     # Transform local files to DOIs
-    local_article_list = [file_to_doi(article) for article in listdir_nohidden(directory, '.xml')]
+    local_article_list = [file_to_doi(article, directory=directory) for article in listdir_nohidden(directory, '.xml')]
 
     dois_needed_list = list(set(comparison_list) - set(local_article_list))
     if dois_needed_list:
@@ -386,7 +386,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         pass
 
     if ignore_existing:
-        existing_articles = [file_to_doi(file) for file in listdir_nohidden(tempdir)]
+        existing_articles = [file_to_doi(file, directory=tempdir) for file in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
 
     max_value = len(dois)
@@ -741,7 +741,7 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
     new_proofs = 0
     for article_file in articles:
         if check_if_uncorrected_proof(article_file):
-            uncorrected_proofs_list.append(file_to_doi(article_file))
+            uncorrected_proofs_list.append(file_to_doi(article_file, directory=directory))
             new_proofs += 1
     # Copy all uncorrected proofs from list to clean text file
     with open(text_list, 'w') as file:
