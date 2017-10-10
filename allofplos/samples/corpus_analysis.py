@@ -620,6 +620,7 @@ def get_article_dates(article_file, string_=False):
             date = parse_article_date(element)
         except ValueError:
             print('Error getting pubdate for {}'.format(article_file))
+            date = ''
         dates[pub_type] = date
 
     tag_path_2 = ["/",
@@ -636,8 +637,9 @@ def get_article_dates(article_file, string_=False):
                 date = parse_article_date(part)
             except ValueError:
                 print('Error getting history dates for {}'.format(article_file))
+                date = ''
             dates[date_type] = date
-    if 'received' in dates and 'accepted' in dates:
+    if dates.get('received', '') and dates.get('accepted', '') in dates:
         if not dates['received'] <= dates['accepted'] <= dates['epub']:
             wrong_date_strings = {date_type: date.strftime('%Y-%m-%d') for date_type, date in dates.items()}
             wrong_date_strings['doi'] = file_to_doi(article_file)
@@ -649,7 +651,8 @@ def get_article_dates(article_file, string_=False):
 
     if string_:
         for key, value in dates.items():
-            dates[key] = value.strftime('%Y-%m-%d')
+            if value:
+                dates[key] = value.strftime('%Y-%m-%d')
 
     return dates, wrong_date_strings
 
