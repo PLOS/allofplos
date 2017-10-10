@@ -616,7 +616,10 @@ def get_article_dates(article_file, string_=False):
                                 tag_path_elements=tag_path_1)
     for element in raw_xml_1:
         pub_type = element.get('pub-type')
-        date = parse_article_date(element)
+        try:
+            date = parse_article_date(element)
+        except ValueError:
+            print('Error getting pubdate for {}'.format(article_file))
         dates[pub_type] = date
 
     tag_path_2 = ["/",
@@ -629,7 +632,10 @@ def get_article_dates(article_file, string_=False):
     for element in raw_xml_2:
         for part in element:
             date_type = part.get('date-type')
-            date = parse_article_date(part)
+            try:
+                date = parse_article_date(part)
+            except ValueError:
+                print('Error getting history dates for {}'.format(article_file))
             dates[date_type] = date
     if 'received' in dates and 'accepted' in dates:
         if not dates['received'] <= dates['accepted'] <= dates['epub']:
