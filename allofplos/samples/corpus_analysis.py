@@ -18,8 +18,8 @@ import requests
 
 
 from plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, uncorrected_proofs_text_list,
-                         get_related_article_doi, download_updated_xml, get_all_solr_dois, doi_to_file,
-                         file_to_doi, newarticledir, get_article_pubdate, doi_to_url, download_check_and_move)
+                         get_related_article_doi, download_updated_xml, get_all_solr_dois, doi_to_path,
+                         filename_to_doi, newarticledir, get_article_pubdate, doi_to_url, download_check_and_move)
 from plos_regex import (full_doi_regex_match, validate_doi, validate_file, validate_url, currents_doi_filter)
 
 counter = collections.Counter
@@ -222,7 +222,7 @@ def get_retracted_doi_list(article_list=None, directory=corpusdir):
         article_list = listdir_nohidden(directory)
     for article_file in article_list:
         if check_if_retraction_article(article_file):
-            retractions_doi_list.append(file_to_doi(article_file))
+            retractions_doi_list.append(filename_to_doi(article_file))
             # Look in those articles to find actual articles that are retracted
             retracted_doi = get_related_retraction_article(article_file)[0]
             retracted_doi_list.append(retracted_doi)
@@ -351,7 +351,7 @@ def article_doi_sanity_check(directory=corpusdir, article_list=None, source='sol
     for doi in bad_doi_list:
         print("{} has invalid DOI field: '{}'".format(doifile_dict[doi], doi))
     if directory == corpusdir or source == 'solr':
-        messed_up_articles = [doifile_dict[doi] for doi in doi_list if file_to_doi(doifile_dict[doi]) != doi]
+        messed_up_articles = [doifile_dict[doi] for doi in doi_list if filename_to_doi(doifile_dict[doi]) != doi]
         if len(messed_up_articles) == 0:
             print('All article file names match DOIs.')
         else:
@@ -450,7 +450,7 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
     if solr_articles is None:
         solr_articles = get_all_solr_dois()
     if local_articles is None:
-        local_articles = [file_to_doi(article_file) for article_file in listdir_nohidden(corpusdir)]
+        local_articles = [filename_to_doi(article_file) for article_file in listdir_nohidden(corpusdir)]
     missing_local_articles = set(solr_articles) - set(local_articles)
     if missing_local_articles:
         print('re-run plos_corpus.py to download latest {0} PLOS articles locally.'
@@ -475,7 +475,7 @@ def get_random_list_of_dois(directory=corpusdir, count=100):
     try:
         article_list = listdir_nohidden(directory)
         sample_file_list = random.sample(article_list, count)
-        sample_doi_list = [file_to_doi(file) for file in sample_file_list]
+        sample_doi_list = [filename_to_doi(file) for file in sample_file_list]
     except OSError:
         doi_list = get_all_solr_dois()
         sample_doi_list = random.sample(doi_list, count)
@@ -588,7 +588,7 @@ def get_article_abstract(article_file):
     except IndexError:
         if check_article_type(article_file) == 'research-article' and \
           get_plos_article_type(article_file) == 'Research Article':
-            print('No abstract found for research article {}'.format(file_to_doi(article_file)))
+            print('No abstract found for research article {}'.format(filename_to_doi(article_file)))
 
         abstract_text = ''
 
@@ -642,7 +642,7 @@ def get_article_dates(article_file, string_=False):
     if dates.get('received', '') and dates.get('accepted', '') in dates:
         if not dates['received'] <= dates['accepted'] <= dates['epub']:
             wrong_date_strings = {date_type: date.strftime('%Y-%m-%d') for date_type, date in dates.items()}
-            wrong_date_strings['doi'] = file_to_doi(article_file)
+            wrong_date_strings['doi'] = filename_to_doi(article_file)
             # print('Dates not in correct order: {}'.format(date_strings))
         else:
             wrong_date_strings = ''
@@ -709,8 +709,8 @@ def get_article_metadata(article_file, size='small'):
     :param size: small, medium or large, aka how many fields to return for each article
     :return: tuple of metadata fields tuple, wrong_date_strings dict
     """
-    doi = file_to_doi(article_file)
-    filename = os.path.basename(doi_to_file(article_file)).rstrip('.xml')
+    doi = filename_to_doi(article_file)
+    filename = os.path.basename(doi_to_path(article_file)).rstrip('.xml')
     title = get_article_title(article_file)
     journal = get_plos_journal(article_file)
     jats_article_type = check_article_type(article_file)
@@ -846,7 +846,7 @@ def update_corpus_metadata_csv(csv_file='allofplos_metadata.csv', comparison_doi
         comparison_dois = get_all_solr_dois()
     dois_needed_list = list(set(comparison_dois) - set(csv_doi_list))
     # Step 3: compare to local file list
-    local_doi_list = [file_to_doi(article_file) for article_file in listdir_nohidden(corpusdir)]
+    local_doi_list = [filename_to_doi(article_file) for article_file in listdir_nohidden(corpusdir)]
     files_needed_list = list(set(dois_needed_list) - set(local_doi_list))
     if files_needed_list:
         print('Local corpus must be updated before .csv metadata can be updated.\nUpdating local corpus now')
