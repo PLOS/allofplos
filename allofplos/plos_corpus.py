@@ -34,7 +34,7 @@ import progressbar
 import requests
 from tqdm import tqdm
 
-from plos_regex import validate_doi
+from plos_regex import validate_doi, validate_file
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -91,48 +91,51 @@ time_formatting = "%Y_%b_%d_%Hh%Mm%Ss"
 min_files_for_valid_corpus = 200000
 
 
-def file_to_url(file, directory=corpusdir, plos_network=False):
+def filename_to_url(filename, plos_network=False):
     """
     For a local XML file in the corpusdir directory, transform it to the downloadable URL where its XML resides
     Includes transform for the 'annotation' DOIs
     Example:
-    file_to_url('allofplos_xml/journal.pone.1000001.xml') = \
+    filename_to_url('allofplos_xml/journal.pone.1000001.xml') = \
     'http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001'
     :param file: relative path to local XML file in the corpusdir directory
     :param directory: defaults to corpusdir, containing article files
     :return: online location of a PLOS article's XML
     """
-    if correction in file:
-        article = 'annotation/' + (file.split('.', 4)[3])
+    if correction in filename:
+        article = 'annotation/' + (filename.split('.', 4)[3])
     else:
-        article = os.path.splitext((os.path.basename(file)))[0]
+        article = os.path.splitext((os.path.basename(filename)))[0]
     doi = prefix + article
     return doi_to_url(doi, plos_network)
 
 
-def file_to_doi(article_file, directory=corpusdir):
+def filename_to_doi(filename):
     """
     For a local XML file in the corpusdir directory, transform it to the article's DOI
     Includes transform for the 'annotation' DOIs
+    Uses regex to make sure it's a file and not a DOI
     Example:
-    file_to_doi('allofplos_xml/journal.pone.1000001.xml') = '10.1371/journal.pone.1000001'
+    filename_to_doi('allofplos_xml/journal.pone.1000001.xml') = '10.1371/journal.pone.1000001'
     :param article_file: relative path to local XML file in the corpusdir directory
     :param directory: defaults to corpusdir, containing article files
     :return: full unique identifier for a PLOS article
     """
-    if correction in article_file:
-        article = 'annotation/' + (article_file.split('.', 4)[3])
+    if correction in filename and validate_file(filename):
+        article = 'annotation/' + (filename.split('.', 4)[3])
         doi = prefix + article
-    else:
-        doi = prefix + os.path.splitext((os.path.basename(article_file)))[0]
+    elif validate_file(filename):
+        doi = prefix + os.path.splitext((os.path.basename(filename)))[0]
+    elif validate_doi(filename):
+        doi = filename
     return doi
 
 
-def url_to_file(url, directory=corpusdir, plos_network=False):
+def url_to_path(url, directory=corpusdir, plos_network=False):
     """
     For a given PLOS URL to an XML file, return the relative path to the local XML file
     Example:
-    url_to_file('http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001') = \
+    url_to_path('http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001') = \
     'allofplos_xml/journal.pone.1000001.xml'
     :param url: online location of a PLOS article's XML
     :param directory: defaults to corpusdir, containing article files
@@ -174,7 +177,7 @@ def url_to_file(url, directory=corpusdir, plos_network=False):
         file = os.path.join(directory,
                             url[url.index(prefix)+len(prefix):].
                             replace(url_suffix, '').
-                            replace(INT_URL_SUFFIX,'') + '.xml')
+                            replace(INT_URL_SUFFIX, '') + '.xml')
     return file
 
 
@@ -182,7 +185,7 @@ def url_to_doi(url):
     """
     For a given PLOS URL to an XML file, transform it to the article's DOI
     Example:
-    url_to_file('http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001') = \
+    url_to_path('http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001') = \
     '10.1371/journal.pone.1000001'
     :param url: online location of a PLOS article's XML
     :return: full unique identifier for a PLOS article
@@ -203,25 +206,28 @@ def doi_to_url(doi, plos_network=False):
     return URL_TMP.format(doi)
 
 
-def doi_to_file(doi, directory=corpusdir):
+def doi_to_path(doi, directory=corpusdir):
     """
     For a given PLOS DOI, return the relative path to that local article
     For DOIs that contain the word 'annotation', searches online version of the article xml to extract
     the journal name, which goes into the filename. Will print DOI if it can't find the journal name
+    Uses regex to make sure it's a DOI and not a file
     Example:
-    doi_to_file('10.1371/journal.pone.1000001') = 'allofplos_xml/journal.pone.1000001.xml'
+    doi_to_path('10.1371/journal.pone.1000001') = 'allofplos_xml/journal.pone.1000001.xml'
     :param doi: full unique identifier for a PLOS article
     :param directory: defaults to corpusdir, containing article files
     :return: relative path to local XML file
     """
-    if doi.startswith(annotation_doi):
+    if doi.startswith(annotation_doi) and validate_doi(doi):
         try:
             url = doi_to_url(doi)
-            article_file = url_to_file(url)
+            article_file = url_to_path(url)
         except KeyError:
             print("error, can't find linked DOI for {0}".format(doi))
-    else:
+    elif validate_doi(doi):
         article_file = os.path.join(directory, doi.lstrip(prefix) + suffix_lower)
+    elif validate_file(doi):
+        article_file = doi
     return article_file
 
 
@@ -337,7 +343,7 @@ def get_dois_needed_list(comparison_list=None, directory=corpusdir):
         comparison_list = get_all_solr_dois()
 
     # Transform local files to DOIs
-    local_article_list = [file_to_doi(article) for article in listdir_nohidden(directory, '.xml')]
+    local_article_list = [filename_to_doi(article) for article in listdir_nohidden(directory, '.xml')]
 
     dois_needed_list = list(set(comparison_list) - set(local_article_list))
     if dois_needed_list:
@@ -380,7 +386,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         pass
 
     if ignore_existing:
-        existing_articles = [file_to_doi(file) for file in listdir_nohidden(tempdir)]
+        existing_articles = [filename_to_doi(file) for file in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
 
     max_value = len(dois)
@@ -388,7 +394,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
     for i, doi in enumerate(sorted(dois)):
         url = URL_TMP.format(doi)
         articleXML = et.parse(url)
-        article_path = doi_to_file(doi, directory=tempdir)
+        article_path = doi_to_path(doi, directory=tempdir)
         # create new local XML files
         if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
             with open(article_path, 'w') as file:
@@ -448,7 +454,7 @@ def get_article_xml(article_file, tag_path_elements=None):
         article_tree = et.parse(article_file)
     except OSError:
         if validate_doi(article_file):
-            article_file = doi_to_file(article_file)
+            article_file = doi_to_path(article_file)
         elif article_file.endswith('xml'):
             article_file = article_file[:-3] + 'XML'
         elif article_file.endswith('XML'):
@@ -557,7 +563,15 @@ def compare_article_pubdate(article, days=22):
         compare_date = today - three_wks_ago
         return pubdate < compare_date
     except OSError:
+        article = os.path.join(newarticledir, article.split('/')[1].rstrip('.xml')+'.xml')
+        pubdate = get_article_pubdate(article)
+        today = datetime.datetime.now()
+        three_wks_ago = datetime.timedelta(days)
+        compare_date = today - three_wks_ago
+        return pubdate < compare_date
+    except ValueError:
         print("Pubdate error in {}".format(article))
+
 
 
 def download_updated_xml(article_file,
@@ -571,7 +585,7 @@ def download_updated_xml(article_file,
     :param vor_check: whether checking to see if uncorrected proof is updated
     :return: boolean for whether update was available & downloaded
     """
-    doi = file_to_doi(article_file)
+    doi = filename_to_doi(article_file)
     try:
         os.mkdir(tempdir)
     except FileExistsError:
@@ -579,7 +593,11 @@ def download_updated_xml(article_file,
     url = URL_TMP.format(doi)
     articletree_remote = et.parse(url)
     articleXML_remote = et.tostring(articletree_remote, method='xml', encoding='unicode')
-    articletree_local = et.parse(article_file)
+    try:
+        articletree_local = et.parse(article_file)
+    except OSError:
+        article_file_alt = os.path.join(tempdir, os.path.basename(article_file))
+        articletree_local = et.parse(article_file_alt)
     articleXML_local = et.tostring(articletree_local, method='xml', encoding='unicode')
 
     if articleXML_remote == articleXML_local:
@@ -627,8 +645,8 @@ def check_for_corrected_articles(directory=newarticledir, article_list=None):
         if article_type == 'correction':
             corrected_article = get_related_article_doi(article_file)[0]
             corrected_doi_list.append(corrected_article)
-    corrected_article_list = [doi_to_file(doi) if os.path.exists(doi_to_file(doi)) else
-                              doi_to_file(doi, directory=newarticledir) for doi in list(corrected_doi_list)]
+    corrected_article_list = [doi_to_path(doi) if os.path.exists(doi_to_path(doi)) else
+                              doi_to_path(doi, directory=newarticledir) for doi in list(corrected_doi_list)]
     print(len(corrected_article_list), 'corrected articles found.')
     return corrected_article_list
 
@@ -691,7 +709,7 @@ def get_uncorrected_proofs_list():
         for i, article_file in enumerate(article_files):
             bar.update(i+1)
             if check_if_uncorrected_proof(article_file):
-                uncorrected_proofs_list.append(file_to_doi(article_file))
+                uncorrected_proofs_list.append(filename_to_doi(article_file))
         bar.finish()
         print("Saving uncorrected proofs.")
         with open(uncorrected_proofs_text_list, 'w') as file:
@@ -723,7 +741,7 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
     new_proofs = 0
     for article_file in articles:
         if check_if_uncorrected_proof(article_file):
-            uncorrected_proofs_list.append(file_to_doi(article_file))
+            uncorrected_proofs_list.append(filename_to_doi(article_file))
             new_proofs += 1
     # Copy all uncorrected proofs from list to clean text file
     with open(text_list, 'w') as file:
@@ -844,7 +862,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     if article_list is None:
         article_list = get_uncorrected_proofs_list()
     for doi in list(set(article_list)):
-        file = doi_to_file(doi)
+        file = doi_to_path(doi)
         updated = download_updated_xml(file, vor_check=True)
         if updated:
             proofs_download_list.append(doi)
@@ -1018,6 +1036,7 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
     if rm_metadata:
         os.remove(metadata_path)
 
+
 def main():
     """
     Entry point for the program. This is used when the program is used as a
@@ -1050,7 +1069,6 @@ def main():
         # Returns specific URL query & the number of search results.
         # Parses the returned dictionary of article DOIs, removing common leading numbers, as a list.
         # Compares to list of existing articles in the PLOS corpus folder to create list of DOIs to download.
-    articles_changed = False
     dois_needed_list = get_dois_needed_list()
 
     # Step 2: Download new articles
