@@ -38,6 +38,16 @@ from plos_regex import validate_doi
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--plos', action='store_true', help=
+                    'Used when inside the plos network')
+parser.add_argument('--dir', action='store',
+                    dest='corpusdir',
+                    default='allofplos_xml',
+                    help='Where to download plos articles')
+args = parser.parse_args()
+corpusdir = args.corpusdir
+
 # Temp folder for downloading and processing new articles
 newarticledir = 'new_plos_articles'
 
@@ -88,7 +98,7 @@ time_formatting = "%Y_%b_%d_%Hh%Mm%Ss"
 min_files_for_valid_corpus = 200000
 
 
-def file_to_url(file, directory=corpusdir, plos_network=False):
+def file_to_url(file, plos_network=False):
     """
     For a local XML file in the corpusdir directory, transform it to the downloadable URL where its XML resides
     Includes transform for the 'annotation' DOIs
@@ -96,7 +106,6 @@ def file_to_url(file, directory=corpusdir, plos_network=False):
     file_to_url('allofplos_xml/journal.pone.1000001.xml') = \
     'http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001'
     :param file: relative path to local XML file in the corpusdir directory
-    :param directory: defaults to corpusdir, containing article files
     :return: online location of a PLOS article's XML
     """
     if correction in file:
@@ -107,14 +116,13 @@ def file_to_url(file, directory=corpusdir, plos_network=False):
     return doi_to_url(doi, plos_network)
 
 
-def file_to_doi(article_file, directory=corpusdir):
+def file_to_doi(article_file):
     """
     For a local XML file in the corpusdir directory, transform it to the article's DOI
     Includes transform for the 'annotation' DOIs
     Example:
     file_to_doi('allofplos_xml/journal.pone.1000001.xml') = '10.1371/journal.pone.1000001'
     :param article_file: relative path to local XML file in the corpusdir directory
-    :param directory: defaults to corpusdir, containing article files
     :return: full unique identifier for a PLOS article
     """
     if correction in article_file:
@@ -1021,15 +1029,6 @@ def main():
     standalone script
     :return: None
     """
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--plos', action='store_true', help=
-                        'Used when inside the plos network')
-    parser.add_argument('--dir', action='store',
-                        dest='corpusdir',
-                        default='allofplos_xml',
-                        help='Where to download plos articles')
-    args = parser.parse_args()
-    corpusdir = args.corpusdir
     plos_network = False
     if args.plos:
         URL_TMP = INT_URL_TMP
