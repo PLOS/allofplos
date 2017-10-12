@@ -593,7 +593,6 @@ def download_updated_xml(article_file,
     url = URL_TMP.format(doi)
     articletree_remote = et.parse(url)
     articleXML_remote = et.tostring(articletree_remote, method='xml', encoding='unicode')
-    print(article_file)
     try:
         articletree_local = et.parse(doi_to_path(article_file))
     except OSError:
