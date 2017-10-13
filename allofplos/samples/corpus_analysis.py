@@ -22,6 +22,7 @@ from plos_regex import (full_doi_regex_match, validate_doi, validate_file, valid
 
 counter = collections.Counter
 corpusdir = 'allofplos_xml'
+pmcdir = "pmc_articles"
 max_invalid_files_to_print = 100
 
 
