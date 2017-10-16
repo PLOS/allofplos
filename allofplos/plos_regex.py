@@ -6,7 +6,8 @@ import re
 
 corpusdir = 'allofplos_xml/'
 corpusdir_regex = re.escape(corpusdir)
-'http://journals.plos.org/plosone/article/file?id='
+newarticledir = 'new_plos_articles/'
+newarticledir_regex = re.escape(newarticledir)
 regex_match_prefix = r"^10\.1371/"
 regex_body_match = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7}$)"
                     r"|(annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}$))")
@@ -23,6 +24,7 @@ full_doi_regex_search = re.compile(r"10\.1371/journal\.p[a-zA-Z]{3}\.[\d]{7}"
                                    "|10\.1371/annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")
 currents_doi_regex = re.compile(regex_match_prefix+regex_body_currents)
 corpus_file_regex_match = re.compile(corpusdir_regex+regex_file_search+r"\.xml")
+newarticle_file_regex_match = re.compile(newarticledir_regex+regex_file_search+r"\.xml")
 base_url = 'http://journals.plos.org/plosone/article/file?id='
 url_suffix = '&type=manuscript'
 external_url_regex_match = re.compile(re.escape(base_url) +
@@ -42,11 +44,15 @@ def validate_doi(doi):
 
 def validate_file(article_file):
     """
-    For an individual string, tests whether the full string is in a valid article file in corpusdir format or not
+    For an individual string, tests whether the full string is in a valid article file in corpusdir or newarticledir
+    format or not.
     Example: 'allofplos_xml/journal.pbio.2000777.xml' is True, but 'allofplos_xml/journal.pbio.20007779.xml' is False
     :return: True if string is in a valid PLOS corpus article format; False if not
     """
-    return bool(corpus_file_regex_match.search(article_file))
+    if bool(corpus_file_regex_match.search(article_file)) or bool(newarticle_file_regex_match.search(article_file)):
+        return True
+    else:
+        return False
 
 
 def validate_url(url):
