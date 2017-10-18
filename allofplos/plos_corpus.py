@@ -23,7 +23,6 @@ import datetime
 import errno
 import logging
 import os
-from os.path import isfile, join
 import shutil
 import time
 import tarfile
@@ -103,7 +102,7 @@ def filename_to_url(filename, plos_network=False):
     :return: online location of a PLOS article's XML
     """
     if correction in filename:
-        article = 'annotation/' + (filename.split('.', 4)[3])
+        article = 'annotation/' + (filename.split('.', 4)[2])
     else:
         article = os.path.splitext((os.path.basename(filename)))[0]
     doi = prefix + article
@@ -122,7 +121,7 @@ def filename_to_doi(filename):
     :return: full unique identifier for a PLOS article
     """
     if correction in filename and validate_file(filename):
-        article = 'annotation/' + (filename.split('.', 4)[3])
+        article = 'annotation/' + (filename.split('.', 4)[2])
         doi = prefix + article
     elif validate_file(filename):
         doi = prefix + os.path.splitext((os.path.basename(filename)))[0]
@@ -219,11 +218,7 @@ def doi_to_path(doi, directory=corpusdir):
     :return: relative path to local XML file
     """
     if doi.startswith(annotation_doi) and validate_doi(doi):
-        try:
-            url = doi_to_url(doi)
-            article_file = url_to_path(url)
-        except KeyError:
-            print("error, can't find linked DOI for {0}".format(doi))
+        article_file = os.path.join(directory, "plos.correction." + doi.split('/')[-1] + suffix_lower)
     elif validate_doi(doi):
         article_file = os.path.join(directory, doi.lstrip(prefix) + suffix_lower)
     elif validate_file(doi):
