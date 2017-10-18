@@ -54,15 +54,14 @@ class Article:
         else:
             print("Local article file not found: {}".format(article_path))
 
-    def get_local_xml(self, article_tree=None):
+    def get_local_xml(self, article_tree=None, pretty_print=True):
         if article_tree is None:
-            article_tree = self.get_local_element_tree()
-        local_xml = et.tostring(article_tree, method='xml', encoding='unicode')
-        return local_xml
-
-    @property
-    def xml(self):
-        return self.get_local_xml()
+            article_tree = self.tree
+        local_xml = et.tostring(article_tree,
+                                method='xml',
+                                encoding='unicode',
+                                pretty_print=pretty_print)
+        return print(local_xml)
 
     def get_url(self, plos_network=False):
         URL_TMP = INT_URL_TMP if plos_network else EXT_URL_TMP
@@ -74,11 +73,14 @@ class Article:
         remote_element_tree = et.parse(url)
         return remote_element_tree
 
-    def get_remote_xml(self, article_tree=None):
+    def get_remote_xml(self, article_tree=None, pretty_print=True):
         if article_tree is None:
             article_tree = self.get_remote_element_tree()
-        remote_xml = et.tostring(article_tree, method='xml', encoding='unicode')
-        return remote_xml
+        remote_xml = et.tostring(article_tree,
+                                 method='xml',
+                                 encoding='unicode',
+                                 pretty_print=pretty_print)
+        return print(remote_xml)
 
     @property
     def xml(self):
