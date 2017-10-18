@@ -140,44 +140,19 @@ def url_to_path(url, directory=corpusdir, plos_network=False):
     :param directory: defaults to corpusdir, containing article files
     :return: relative path to local XML file in the corpusdir directory
     """
-    doi_prefix = ''
+    annot_prefix = 'plos.correction.'
     if url.startswith(annotation_url) or url.startswith(annotation_url_int):
-        # go into online XML and grab the journal name
-        try:
-            articleXML = et.parse(url)
-        # if offline, try finding a local copy of the article but still check linked DOI
-        except (OSError, et.XMLSyntaxError):
-            if not plos_network:
-                article = url[len(annotation_url):url.index(url_suffix)]
-            else:
-                article = url[len(annotation_url_int):url.index(INT_URL_SUFFIX)]
-            for article_file in listdir_nohidden(directory):
-                if article in article_file:
-                    break
-            articleXML = et.parse(article_file)
-        path_parts = ["/", "article", "front", "article-meta", "related-article"]
-        r = articleXML.xpath("/".join(path_parts))
-        r = r[0].attrib
-        try:
-            linked_doi = r['{http://www.w3.org/1999/xlink}href']
-            doi = linked_doi.lstrip('info:doi/10.1371/')
-            doi_prefix = ".".join(doi.split('.')[:2]) + ".correction."
-        except KeyError:
-            print('DOI error in {0}'.format(url))
-    if 'annotation' in url:
-        if not plos_network:
-            annotation_code = url[url.index('annotation')+len('annotation')+1:
-                                  url.index('&type=manuscript')]
-        else:
-            annotation_code = url[url.index('annotation')+len('annotation')+1:
-                                  url.index('.XML')]
-        file = os.path.join(directory, doi_prefix + annotation_code + '.xml')
+        file_ = os.path.join(directory,
+                             annot_prefix +
+                             url[url.index(annotation_doi + '/')+len(annotation_doi + '/'):].
+                             replace(url_suffix, '').
+                             replace(INT_URL_SUFFIX, '') + '.xml')
     else:
-        file = os.path.join(directory,
-                            url[url.index(prefix)+len(prefix):].
-                            replace(url_suffix, '').
-                            replace(INT_URL_SUFFIX, '') + '.xml')
-    return file
+        file_ = os.path.join(directory,
+                             url[url.index(prefix)+len(prefix):].
+                             replace(url_suffix, '').
+                             replace(INT_URL_SUFFIX, '') + '.xml')
+    return file_
 
 
 def url_to_doi(url):
