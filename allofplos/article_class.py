@@ -18,16 +18,15 @@ URL_TMP = EXT_URL_TMP
 
 
 class Article:
-	plos_prefix =
     plos_prefix = ''
 
     def __init__(self, doi, directory=None):
-
         self.doi = doi
         if directory is None:
             self.directory = corpusdir
         else:
             self.directory = directory
+        self._tree = None
         self._local = None
 
     doi = property(operator.attrgetter('_doi'))
@@ -49,7 +48,6 @@ class Article:
     def get_local_element_tree(self, article_path=None):
         if article_path is None:
             article_path = self.get_path()
-        if os.path.isfile(article_path):
         if self.local:
             local_element_tree = et.parse(article_path)
             return local_element_tree
@@ -85,11 +83,18 @@ class Article:
     @property
     def xml(self):
         return self.get_local_xml()
-    
+
+    @property
+    def tree(self):
+        if self._tree is None:
+            return self.get_local_element_tree()
+        else:
+            return self._tree
+
     @property
     def url(self):
         return self.get_url(plos_network=self.plos_network)
-    
+
     @property
     def filename(self):
         return self.get_path()
