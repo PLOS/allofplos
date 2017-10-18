@@ -2,6 +2,7 @@ import lxml.etree as et
 import operator
 import os
 
+from plos_corpus import filename_to_doi
 from plos_regex import validate_doi
 
 # Main directory of article XML files
@@ -18,12 +19,17 @@ URL_TMP = EXT_URL_TMP
 
 class Article:
 	plos_prefix =
+    plos_prefix = ''
 
     def __init__(self, doi, directory=None):
 
         self.doi = doi
         if directory is None:
             self.directory = corpusdir
+        else:
+            self.directory = directory
+        self._local = None
+
     doi = property(operator.attrgetter('_doi'))
 
     @doi.setter
@@ -36,10 +42,15 @@ class Article:
         article_path = os.path.join(self.directory, self.doi.lstrip('10.1371/') + '.xml')
         return article_path
 
+    def get_local_bool(self):
+        article_path = self.get_path()
+        return os.path.isfile(article_path)
+
     def get_local_element_tree(self, article_path=None):
         if article_path is None:
             article_path = self.get_path()
         if os.path.isfile(article_path):
+        if self.local:
             local_element_tree = et.parse(article_path)
             return local_element_tree
         else:
@@ -82,11 +93,18 @@ class Article:
     @property
     def filename(self):
         return self.get_path()
-    
+
+    @property
+    def local(self):
+        if self._local is None:
+            return self.get_local_bool()
+        else:
+            return self._local
+
     @filename.setter
     def filename(self, value):
         self.doi = filename_to_doi(value)
-    
+
     @classmethod
     def from_filename(cls, filename):
         return cls(filename_to_doi(filename))
