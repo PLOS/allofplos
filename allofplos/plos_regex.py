@@ -18,7 +18,7 @@ regex_body_currents = (r"((currents\.[a-zA-Z]{2,9}\.[a-zA-Z0-9]{32}$)"
                        r"|([a-zA-Z0-9]{13}$)"
                        r"|([a-zA-Z0-9]{32}$))")
 regex_file_search = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7})"
-                     r"|(journal\.p[a-zA-Z]{3}\.correction\.[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}))")
+                     r"|(plos\.correction\.[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}))")
 full_doi_regex_match = re.compile(regex_match_prefix+regex_body_match)
 full_doi_regex_search = re.compile(r"10\.1371/journal\.p[a-zA-Z]{3}\.[\d]{7}"
                                    "|10\.1371/annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")

@@ -18,7 +18,7 @@ example_url2 = 'http://journals.plos.org/plosone/article/file?id=10.1371/'\
 example_url2_int = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-'\
                    'prod-repo?key=10.1371/annotation/3155a3e9-5fbe-435c-a'\
                    '07a-e9a4846ec0b6.XML'
-example_file2 = 'allofplos_xml/journal.pone.correction.3155a3e9-5fbe-435c'\
+example_file2 = 'allofplos_xml/plos.correction.3155a3e9-5fbe-435c'\
                 '-a07a-e9a4846ec0b6.xml'
 example_doi2 = '10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846ec0b6'
 
