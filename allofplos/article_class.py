@@ -1,9 +1,8 @@
 import lxml.etree as et
-import operator
 import os
 
 from plos_corpus import filename_to_doi
-from plos_regex import validate_doi
+from plos_regex import validate_doi, validate_file
 
 # Main directory of article XML files
 corpusdir = 'allofplos_xml'
@@ -29,7 +28,9 @@ class Article:
         self._tree = None
         self._local = None
 
-    doi = property(operator.attrgetter('_doi'))
+    @property
+    def doi(self):
+        return self._doi
 
     @doi.setter
     def doi(self, d):
