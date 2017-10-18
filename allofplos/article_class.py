@@ -1,5 +1,8 @@
 import lxml.etree as et
+import operator
 import os
+
+from plos_regex import validate_doi
 
 # Main directory of article XML files
 corpusdir = 'allofplos_xml'
@@ -21,6 +24,13 @@ class Article:
         self.doi = doi
         if directory is None:
             self.directory = corpusdir
+    doi = property(operator.attrgetter('_doi'))
+
+    @doi.setter
+    def doi(self, d):
+        if validate_doi(d) is False:
+            raise Exception("Invalid format for PLOS DOI")
+        self._doi = d
 
     def get_path(self):
         article_path = os.path.join(self.directory, self.doi.lstrip('10.1371/') + '.xml')
