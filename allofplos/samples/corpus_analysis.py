@@ -20,7 +20,7 @@ import requests
 from plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, uncorrected_proofs_text_list,
                          get_related_article_doi, download_updated_xml, get_all_solr_dois, doi_to_path,
                          filename_to_doi, newarticledir, get_article_pubdate, doi_to_url, download_check_and_move)
-from plos_regex import (full_doi_regex_match, validate_doi, validate_file, validate_url, currents_doi_filter)
+from plos_regex import (full_doi_regex_match, validate_doi, validate_filename, validate_url, currents_doi_filter)
 
 counter = collections.Counter
 corpusdir = 'allofplos_xml'
