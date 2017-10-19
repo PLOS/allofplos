@@ -33,7 +33,7 @@ import progressbar
 import requests
 from tqdm import tqdm
 
-from plos_regex import validate_doi, validate_file
+from plos_regex import validate_doi, validate_filename
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -115,16 +115,18 @@ def filename_to_doi(filename):
     Includes transform for the 'annotation' DOIs
     Uses regex to make sure it's a file and not a DOI
     Example:
-    filename_to_doi('allofplos_xml/journal.pone.1000001.xml') = '10.1371/journal.pone.1000001'
+    filename_to_doi('journal.pone.1000001.xml') = '10.1371/journal.pone.1000001'
     :param article_file: relative path to local XML file in the corpusdir directory
     :param directory: defaults to corpusdir, containing article files
     :return: full unique identifier for a PLOS article
     """
-    if correction in filename and validate_file(filename):
+    #import pdb; pdb.set_trace()
+    if correction in filename and validate_filename(filename):
         article = 'annotation/' + (filename.split('.', 4)[2])
         doi = prefix + article
-    elif validate_file(filename):
+    elif validate_filename(filename):
         doi = prefix + os.path.splitext((os.path.basename(filename)))[0]
+    # NOTE: A filename should never validate as a DOI, so the next elif is wrong.
     elif validate_doi(filename):
         doi = filename
     return doi
@@ -142,6 +144,7 @@ def url_to_path(url, directory=corpusdir, plos_network=False):
     """
     annot_prefix = 'plos.correction.'
     if url.startswith(annotation_url) or url.startswith(annotation_url_int):
+        # NOTE: REDO THIS!
         file_ = os.path.join(directory,
                              annot_prefix +
                              url[url.index(annotation_doi + '/')+len(annotation_doi + '/'):].
@@ -196,7 +199,8 @@ def doi_to_path(doi, directory=corpusdir):
         article_file = os.path.join(directory, "plos.correction." + doi.split('/')[-1] + suffix_lower)
     elif validate_doi(doi):
         article_file = os.path.join(directory, doi.lstrip(prefix) + suffix_lower)
-    elif validate_file(doi):
+    # NOTE: The following check is weird, a DOI should never validate as a file name.
+    elif validate_filename(doi):
         article_file = doi
     return article_file
 

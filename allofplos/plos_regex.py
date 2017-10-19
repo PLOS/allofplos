@@ -18,13 +18,12 @@ regex_body_currents = (r"((currents\.[a-zA-Z]{2,9}\.[a-zA-Z0-9]{32}$)"
                        r"|([a-zA-Z0-9]{13}$)"
                        r"|([a-zA-Z0-9]{32}$))")
 regex_file_search = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7})"
-                     r"|(plos\.correction\.[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}))")
+                     r"|(journal\.p[a-zA-Z]{3}\.correction\.[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}))")
 full_doi_regex_match = re.compile(regex_match_prefix+regex_body_match)
 full_doi_regex_search = re.compile(r"10\.1371/journal\.p[a-zA-Z]{3}\.[\d]{7}"
                                    "|10\.1371/annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")
 currents_doi_regex = re.compile(regex_match_prefix+regex_body_currents)
-corpus_file_regex_match = re.compile(corpusdir_regex+regex_file_search+r"\.xml")
-newarticle_file_regex_match = re.compile(newarticledir_regex+regex_file_search+r"\.xml")
+file_regex_match = re.compile(regex_file_search+r"\.xml")
 base_url = 'http://journals.plos.org/plosone/article/file?id='
 url_suffix = '&type=manuscript'
 external_url_regex_match = re.compile(re.escape(base_url) +
@@ -42,14 +41,15 @@ def validate_doi(doi):
     return bool(full_doi_regex_match.search(doi))
 
 
-def validate_file(article_file):
+def validate_filename(filename):
     """
     For an individual string, tests whether the full string is in a valid article file in corpusdir or newarticledir
     format or not.
     Example: 'allofplos_xml/journal.pbio.2000777.xml' is True, but 'allofplos_xml/journal.pbio.20007779.xml' is False
+    :filename: A string with a file name
     :return: True if string is in a valid PLOS corpus article format; False if not
     """
-    if bool(corpus_file_regex_match.search(article_file)) or bool(newarticle_file_regex_match.search(article_file)):
+    if file_regex_match.search(filename):
         return True
     else:
         return False
