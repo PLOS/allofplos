@@ -567,10 +567,12 @@ def download_updated_xml(article_file,
     url = URL_TMP.format(doi)
     articletree_remote = et.parse(url)
     articleXML_remote = et.tostring(articletree_remote, method='xml', encoding='unicode')
+    if not article_file.endswith('.xml'):
+        article_file += '.xml'
     try:
         articletree_local = et.parse(os.path.join(corpusdir, os.path.basename(article_file)))
     except OSError:
-        article_file_alt = os.path.join(tempdir, os.path.basename(article_file) + '.xml')
+        article_file_alt = os.path.join(tempdir, os.path.basename(article_file))
         articletree_local = et.parse(article_file_alt)
     articleXML_local = et.tostring(articletree_local, method='xml', encoding='unicode')
 
