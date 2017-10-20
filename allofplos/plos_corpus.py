@@ -23,7 +23,6 @@ import datetime
 import errno
 import logging
 import os
-from os.path import isfile, join
 import shutil
 import time
 import tarfile
@@ -34,7 +33,7 @@ import progressbar
 import requests
 from tqdm import tqdm
 
-from plos_regex import validate_doi, validate_file
+from plos_regex import validate_doi, validate_filename
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -103,7 +102,7 @@ def filename_to_url(filename, plos_network=False):
     :return: online location of a PLOS article's XML
     """
     if correction in filename:
-        article = 'annotation/' + (filename.split('.', 4)[3])
+        article = 'annotation/' + (filename.split('.', 4)[2])
     else:
         article = os.path.splitext((os.path.basename(filename)))[0]
     doi = prefix + article
@@ -116,16 +115,18 @@ def filename_to_doi(filename):
     Includes transform for the 'annotation' DOIs
     Uses regex to make sure it's a file and not a DOI
     Example:
-    filename_to_doi('allofplos_xml/journal.pone.1000001.xml') = '10.1371/journal.pone.1000001'
+    filename_to_doi('journal.pone.1000001.xml') = '10.1371/journal.pone.1000001'
     :param article_file: relative path to local XML file in the corpusdir directory
     :param directory: defaults to corpusdir, containing article files
     :return: full unique identifier for a PLOS article
     """
-    if correction in filename and validate_file(filename):
-        article = 'annotation/' + (filename.split('.', 4)[3])
+    #import pdb; pdb.set_trace()
+    if correction in filename and validate_filename(filename):
+        article = 'annotation/' + (filename.split('.', 4)[2])
         doi = prefix + article
-    elif validate_file(filename):
+    elif validate_filename(filename):
         doi = prefix + os.path.splitext((os.path.basename(filename)))[0]
+    # NOTE: A filename should never validate as a DOI, so the next elif is wrong.
     elif validate_doi(filename):
         doi = filename
     return doi
@@ -141,44 +142,20 @@ def url_to_path(url, directory=corpusdir, plos_network=False):
     :param directory: defaults to corpusdir, containing article files
     :return: relative path to local XML file in the corpusdir directory
     """
-    doi_prefix = ''
+    annot_prefix = 'plos.correction.'
     if url.startswith(annotation_url) or url.startswith(annotation_url_int):
-        # go into online XML and grab the journal name
-        try:
-            articleXML = et.parse(url)
-        # if offline, try finding a local copy of the article but still check linked DOI
-        except (OSError, et.XMLSyntaxError):
-            if not plos_network:
-                article = url[len(annotation_url):url.index(url_suffix)]
-            else:
-                article = url[len(annotation_url_int):url.index(INT_URL_SUFFIX)]
-            for article_file in listdir_nohidden(directory):
-                if article in article_file:
-                    break
-            articleXML = et.parse(article_file)
-        path_parts = ["/", "article", "front", "article-meta", "related-article"]
-        r = articleXML.xpath("/".join(path_parts))
-        r = r[0].attrib
-        try:
-            linked_doi = r['{http://www.w3.org/1999/xlink}href']
-            doi = linked_doi.lstrip('info:doi/10.1371/')
-            doi_prefix = ".".join(doi.split('.')[:2]) + ".correction."
-        except KeyError:
-            print('DOI error in {0}'.format(url))
-    if 'annotation' in url:
-        if not plos_network:
-            annotation_code = url[url.index('annotation')+len('annotation')+1:
-                                  url.index('&type=manuscript')]
-        else:
-            annotation_code = url[url.index('annotation')+len('annotation')+1:
-                                  url.index('.XML')]
-        file = os.path.join(directory, doi_prefix + annotation_code + '.xml')
+        # NOTE: REDO THIS!
+        file_ = os.path.join(directory,
+                             annot_prefix +
+                             url[url.index(annotation_doi + '/')+len(annotation_doi + '/'):].
+                             replace(url_suffix, '').
+                             replace(INT_URL_SUFFIX, '') + '.xml')
     else:
-        file = os.path.join(directory,
-                            url[url.index(prefix)+len(prefix):].
-                            replace(url_suffix, '').
-                            replace(INT_URL_SUFFIX, '') + '.xml')
-    return file
+        file_ = os.path.join(directory,
+                             url[url.index(prefix)+len(prefix):].
+                             replace(url_suffix, '').
+                             replace(INT_URL_SUFFIX, '') + '.xml')
+    return file_
 
 
 def url_to_doi(url):
@@ -219,14 +196,11 @@ def doi_to_path(doi, directory=corpusdir):
     :return: relative path to local XML file
     """
     if doi.startswith(annotation_doi) and validate_doi(doi):
-        try:
-            url = doi_to_url(doi)
-            article_file = url_to_path(url)
-        except KeyError:
-            print("error, can't find linked DOI for {0}".format(doi))
+        article_file = os.path.join(directory, "plos.correction." + doi.split('/')[-1] + suffix_lower)
     elif validate_doi(doi):
         article_file = os.path.join(directory, doi.lstrip(prefix) + suffix_lower)
-    elif validate_file(doi):
+    # NOTE: The following check is weird, a DOI should never validate as a file name.
+    elif validate_filename(doi):
         article_file = doi
     return article_file
 
@@ -593,8 +567,10 @@ def download_updated_xml(article_file,
     url = URL_TMP.format(doi)
     articletree_remote = et.parse(url)
     articleXML_remote = et.tostring(articletree_remote, method='xml', encoding='unicode')
+    if not article_file.endswith('.xml'):
+        article_file += '.xml'
     try:
-        articletree_local = et.parse(article_file)
+        articletree_local = et.parse(os.path.join(corpusdir, os.path.basename(article_file)))
     except OSError:
         article_file_alt = os.path.join(tempdir, os.path.basename(article_file))
         articletree_local = et.parse(article_file_alt)
