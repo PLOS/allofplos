@@ -13,7 +13,8 @@ corpus for further analysis. Use this program to download all PLOS XML
 article files instead of doing web scraping.
 
 **NOTE**: This software is not stable, we consider it beta state and will
-be in this stage until version 1.0.
+be in this stage until version 1.0. This means that programming interface 
+may change and after a new version a full corpus download may be required.
 
 Installation instructions
 -------------------------
