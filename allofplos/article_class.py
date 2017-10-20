@@ -55,6 +55,12 @@ class Article:
         else:
             print("Local article file not found: {}".format(article_path))
 
+    def get_local_root_element(self, article_tree=None):
+        if article_tree is None:
+            article_tree = self.tree
+        root = article_tree.getroot()
+        return root
+
     def get_local_xml(self, article_tree=None, pretty_print=True):
         if article_tree is None:
             article_tree = self.tree
@@ -83,6 +89,27 @@ class Article:
                                  pretty_print=pretty_print)
         return print(remote_xml)
 
+    def get_element_xpath(self, article_root=None, tag_path_elements=None):
+        """
+        For a local article's root element, grab particular sub-elements via XPath location
+        Defaults to reading the element location for uncorrected proofs/versions of record
+        :param article_root: the xml file for a single article
+        :param tag_path_elements: xpath location in the XML tree of the article file
+        :return: list of elements with that xpath location
+        """
+        if article_root is None:
+            article_root = self.root
+        if tag_path_elements is None:
+            tag_path_elements = ('/',
+                                 'article',
+                                 'front',
+                                 'article-meta',
+                                 'custom-meta-group',
+                                 'custom-meta',
+                                 'meta-value')
+        tag_location = '/'.join(tag_path_elements)
+        return article_root.xpath(tag_location)
+
     @property
     def xml(self):
         return self.get_local_xml()
@@ -93,6 +120,10 @@ class Article:
             return self.get_local_element_tree()
         else:
             return self._tree
+    
+    @property
+    def root(self):
+        return self.get_local_root_element()
 
     @property
     def url(self):
