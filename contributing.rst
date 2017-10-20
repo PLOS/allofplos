@@ -1,3 +1,10 @@
+Thing to check before doing a release
+-------------------------------------
+
+* Run the tests
+* Version number is stated in the setup.py file
+* HISTORY.txt file with the last change at the beginning
+
 Making a release
 ----------------
 
