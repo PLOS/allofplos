@@ -98,7 +98,6 @@ def filename_to_url(filename, plos_network=False):
     filename_to_url('allofplos_xml/journal.pone.1000001.xml') = \
     'http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001'
     :param file: relative path to local XML file in the corpusdir directory
-    :param directory: defaults to corpusdir, containing article files
     :return: online location of a PLOS article's XML
     """
     if correction in filename:
@@ -120,15 +119,11 @@ def filename_to_doi(filename):
     :param directory: defaults to corpusdir, containing article files
     :return: full unique identifier for a PLOS article
     """
-    #import pdb; pdb.set_trace()
     if correction in filename and validate_filename(filename):
         article = 'annotation/' + (filename.split('.', 4)[2])
         doi = prefix + article
     elif validate_filename(filename):
         doi = prefix + os.path.splitext((os.path.basename(filename)))[0]
-    # NOTE: A filename should never validate as a DOI, so the next elif is wrong.
-    elif validate_doi(filename):
-        doi = filename
     return doi
 
 
@@ -199,9 +194,6 @@ def doi_to_path(doi, directory=corpusdir):
         article_file = os.path.join(directory, "plos.correction." + doi.split('/')[-1] + suffix_lower)
     elif validate_doi(doi):
         article_file = os.path.join(directory, doi.lstrip(prefix) + suffix_lower)
-    # NOTE: The following check is weird, a DOI should never validate as a file name.
-    elif validate_filename(doi):
-        article_file = doi
     return article_file
 
 
@@ -257,15 +249,15 @@ def search_solr_records(days_ago=14, start=0, rows=1000, start_date=None, end_da
     if start_date is None:
         earlier = datetime.timedelta(days=days_ago)
         start_date = end_date - earlier
-    START_DATE = start_date.strftime("%Y-%m-%d")
-    END_DATE = end_date.strftime("%Y-%m-%d")
+    start_date = start_date.strftime("%Y-%m-%d")
+    end_date = end_date.strftime("%Y-%m-%d")
     howmanyarticles_url_base = [BASE_URL_API,
                                 '?q=*:*&fq=doc_type:full+-doi:image&fl=id,',
                                 item,
                                 '&wt=json&indent=true&sort=%20id%20asc&fq=publication_date:[',
-                                START_DATE,
+                                start_date,
                                 'T00:00:00Z+TO+',
-                                END_DATE,
+                                end_date,
                                 'T23:59:59Z]'
                                 ]
     howmanyarticles_url = ''.join(howmanyarticles_url_base) + '&rows=1000'
@@ -1022,6 +1014,14 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--plos', action='store_true', help=
                         'Used when inside the plos network')
+    parser.add_argument('--corpusdir', action='store',
+                        dest='corpusdir',
+                        default='allofplos_xml',
+                        help='Where to download plos articles')
+    parser.add_argument('--newfilesdir', action='store',
+                        dest='newfilesdir',
+                        default='new_plos_articles',
+                        help='Where to download new articles')
     args = parser.parse_args()
     plos_network = False
     if args.plos:
