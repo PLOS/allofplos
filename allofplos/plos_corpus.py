@@ -1011,6 +1011,8 @@ def main():
     standalone script
     :return: None
     """
+    # Read configuration file
+    
     parser = argparse.ArgumentParser()
     parser.add_argument('--plos', action='store_true', help=
                         'Used when inside the plos network')
