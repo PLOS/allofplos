@@ -30,6 +30,7 @@ import zipfile
 
 import lxml.etree as et
 import progressbar
+import pureyaml
 import requests
 from tqdm import tqdm
 
@@ -37,11 +38,11 @@ from plos_regex import validate_doi, validate_filename
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
+##config = pureyaml.load(open('config.yaml').read())
 # Main directory of article XML files
-corpusdir = 'allofplos_xml'
-
+##corpusdir = config['corpusdir']
 # Temp folder for downloading and processing new articles
-newarticledir = 'new_plos_articles'
+##newarticledir = config['newarticledir']
 
 # Making sure DS.Store not included as file
 ignore_func = shutil.ignore_patterns('.DS_Store')
@@ -127,7 +128,7 @@ def filename_to_doi(filename):
     return doi
 
 
-def url_to_path(url, directory=corpusdir, plos_network=False):
+def url_to_path(url, directory='', plos_network=False):
     """
     For a given PLOS URL to an XML file, return the relative path to the local XML file
     Example:
@@ -178,7 +179,7 @@ def doi_to_url(doi, plos_network=False):
     return URL_TMP.format(doi)
 
 
-def doi_to_path(doi, directory=corpusdir):
+def doi_to_path(doi, directory=''):
     """
     For a given PLOS DOI, return the relative path to that local article
     For DOIs that contain the word 'annotation', searches online version of the article xml to extract
@@ -206,13 +207,13 @@ def listdir_nohidden(path, extension='.xml', include_dir=True):
     :param include_dir: By default, include the directory in the filename
     :return: A list with all the file names inside this directory, without the DS_Store file
     """
-
+    #import pdb; pdb.set_trace()
     if include_dir:
-        file_list = [os.path.join(path, file) for file in os.listdir(path)
-                     if file.endswith(extension) and 'DS_Store' not in file]
+        file_list = [os.path.join(path, file_) for file_ in os.listdir(path)
+                     if file_.endswith(extension) and 'DS_Store' not in file_]
     else:
-        file_list = [file for file in os.listdir(path) if file.endswith(extension) and
-                     'DS_Store' not in file]
+        file_list = [file_ for file_ in os.listdir(path) if file_.endswith(extension) and
+                     'DS_Store' not in file_]
     return file_list
 
 
@@ -223,6 +224,7 @@ def extract_filenames(directory, extension='.xml'):
     :param extension: String with the extension that we are looking for, xml is the default value
     :return: A list with all the file names inside this directory, excluding extensions
     """
+    #import pdb; pdb.set_trace()
     filenames = [os.path.basename(article_file).rstrip(extension) for article_file in listdir_nohidden(directory, extension) if
                  os.path.isfile(article_file)]
     return filenames
@@ -298,13 +300,14 @@ def get_all_solr_dois():
     return solr_dois
 
 
-def get_dois_needed_list(comparison_list=None, directory=corpusdir):
+def get_dois_needed_list(comparison_list=None, directory=''):
     """
     Takes result of query from get_all_solr_dois and compares to local article directory.
     :param comparison_list: Defaults to creating a full list of local article files.
     :param directory: An int value indicating the first row of results to return
     :return: A list of DOIs for articles that are not in the local article directory.
     """
+    #import pdb; pdb.set_trace()
     if comparison_list is None:
         comparison_list = get_all_solr_dois()
 
@@ -363,8 +366,8 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         article_path = doi_to_path(doi, directory=tempdir)
         # create new local XML files
         if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
-            with open(article_path, 'w') as file:
-                file.write(et.tostring(articleXML, method='xml', encoding='unicode'))
+            with open(article_path, 'w') as fh:
+                fh.write(et.tostring(articleXML, method='xml', encoding='unicode'))
             if not plos_network:
                 time.sleep(1)
         bar.update(i+1)
@@ -515,11 +518,12 @@ def get_article_pubdate(article_file, date_format='%d %m %Y'):
     return pubdate
 
 
-def compare_article_pubdate(article, days=22):
+def compare_article_pubdate(article, newarticledir, days=22):
     """
     Check if an article's publication date was more than 3 weeks ago.
     :param article: doi/file of the article
-    :param days: how long ago to compare the publication date (default 22 days)
+    :param days: int days how long ago to compare the publication date (default 22)
+    newarticledir
     :return: boolean for whether the pubdate was older than the days value
     """
     try:
@@ -540,15 +544,14 @@ def compare_article_pubdate(article, days=22):
 
 
 
-def download_updated_xml(article_file,
-                         tempdir=newarticledir,
-                         vor_check=False):
+def download_updated_xml(article_file, tempdir='', vor_check=False, corpusdir=''):
     """
     For an article file, compare local XML to remote XML
     If they're different, download new version of article
     :param article_file: the filename for a single article
     :param tempdir: directory where files are downloaded to
     :param vor_check: whether checking to see if uncorrected proof is updated
+    :para corpusdir: Directory with the PLOS corpus
     :return: boolean for whether update was available & downloaded
     """
     doi = filename_to_doi(article_file)
@@ -567,7 +570,6 @@ def download_updated_xml(article_file,
         article_file_alt = os.path.join(tempdir, os.path.basename(article_file))
         articletree_local = et.parse(article_file_alt)
     articleXML_local = et.tostring(articletree_local, method='xml', encoding='unicode')
-
     if articleXML_remote == articleXML_local:
         updated = False
         get_new = False
@@ -590,19 +592,19 @@ def download_updated_xml(article_file,
                     break
         if get_new:
             article_path = os.path.join(tempdir, os.path.basename(article_file))
-            with open(article_path, 'w') as file:
-                file.write(articleXML_remote)
+            with open(article_path, 'w') as fh:
+                fh.write(articleXML_remote)
             updated = True
     return updated
 
 
-def check_for_corrected_articles(directory=newarticledir, article_list=None):
+def check_for_corrected_articles(directory='', article_list=None):
     """
     For articles in the temporary download directory, check if article_type is correction
     If correction, surface the DOI of the article being corrected
     Use with download_corrected_articles
     :param article: the filename for a single article
-    :param directory: directory where the article file is, default is newarticledir
+    :param directory: directory where the article file is
     :return: list of filenames to existing local files for articles issued a correction
     """
     corrected_doi_list = []
@@ -619,15 +621,15 @@ def check_for_corrected_articles(directory=newarticledir, article_list=None):
     return corrected_article_list
 
 
-def download_corrected_articles(directory=corpusdir, tempdir=newarticledir, corrected_article_list=None):
+def download_corrected_articles(directory='', tempdir='', corrected_article_list=None):
     """
     For a list of articles that have been corrected, check if the xml was updated
     Many corrections don't result in XML changes
 
     Use with download_corrected articles
     :param article: the filename for a single article
-    :param directory: directory where the article file is, default is newarticledir
-    :param tempdir: where new articles are downloaded to-
+    :param directory: directory where the article file is
+    :param tempdir: where new articles are downloaded to
     :return: list of DOIs for articles downloaded with new XML versions
     """
     if corrected_article_list is None:
@@ -637,7 +639,7 @@ def download_corrected_articles(directory=corpusdir, tempdir=newarticledir, corr
     max_value = len(corrected_article_list)
     bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
     for i, article in enumerate(corrected_article_list):
-        updated = download_updated_xml(article)
+        updated = download_updated_xml(article, tempdir=tempdir, corpusdir=directory)
         if updated:
             corrected_updated_article_list.append(article)
         bar.update(i+1)
@@ -659,10 +661,11 @@ def check_if_uncorrected_proof(article_file):
     return False
 
 
-def get_uncorrected_proofs_list():
+def get_uncorrected_proofs_list(corpusdir):
     """
     Loads the uncorrected proofs txt file.
     Failing that, creates new txt file from scratch using corpusdir.
+    :param corpusdir: Directory where the corpus is stored
     :return: list of DOIs of uncorrected proofs from text list
     """
     try:
@@ -670,6 +673,7 @@ def get_uncorrected_proofs_list():
             uncorrected_proofs_list = file.read().splitlines()
     except FileNotFoundError:
         print("Creating new text list of uncorrected proofs from scratch.")
+        import pdb; pdb.set_trace()
         article_files = listdir_nohidden(corpusdir)
         uncorrected_proofs_list = []
         max_value = len(article_files)
@@ -690,18 +694,18 @@ def get_uncorrected_proofs_list():
     return uncorrected_proofs_list
 
 
-def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_proofs_text_list):
+def check_for_uncorrected_proofs(directory='', text_list=uncorrected_proofs_text_list):
     """
     For a list of articles, check whether they are the 'uncorrected proof' type
     One of the checks on newly downloaded articles before they're added to corpusdir
     :param text_list: List of DOIs
-    :param directory: Directory containing the article files
+    :param directory: Directory containing the uncorrected article files
     :return: all articles that are uncorrected proofs, including from main article directory
     """
 
     # Read in uncorrected proofs from uncorrected_proofs_text_list txt file
     # If uncorrected_proofs_list txt file doesn't exist, build that list from scratch from main article directory
-    uncorrected_proofs_list = get_uncorrected_proofs_list()
+    uncorrected_proofs_list = get_uncorrected_proofs_list(directory)
 
     # Check directory for uncorrected proofs
     # Append uncorrected proofs to running list
@@ -722,17 +726,18 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
     return uncorrected_proofs_list
 
 
-def check_for_vor_updates(uncorrected_list=None):
+def check_for_vor_updates(uncorrected_list=None, corpusdir=''):
     """
     For existing uncorrected proofs list,
     check whether a vor is available to download
     :param uncorrected_list: DOIs of uncorrected articles, default None
+    :param corpusdir: Directory where the corpus is stored
     :return: List of articles from uncorrected_list for which Solr says there is a new VOR waiting
     """
 
     # First get/make list of uncorrected proofs
     if uncorrected_list is None:
-        uncorrected_list = get_uncorrected_proofs_list()
+        uncorrected_list = get_uncorrected_proofs_list(corpusdir)
     # Make it check a single article
     if isinstance(uncorrected_list, str):
         uncorrected_list = [uncorrected_list]
@@ -764,8 +769,8 @@ def check_for_vor_updates(uncorrected_list=None):
     return vor_updates_available
 
 
-def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
-                         vor_updates_available=None, plos_network=False):
+def download_vor_updates(directory='', tempdir='', vor_updates_available=None,
+                         plos_network=False):
     """
     For existing uncorrected proofs list, check whether a vor is available to download
     Used in conjunction w/check_for_vor_updates
@@ -777,24 +782,26 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
     :return: List of articles from uncorrected_list for which new version successfully downloaded
     """
     if vor_updates_available is None:
-        vor_updates_available = check_for_vor_updates()
+        vor_updates_available = check_for_vor_updates(tempdir)
     vor_updated_article_list = []
     if vor_updates_available:
         for article in vor_updates_available:
-            updated = download_updated_xml(article, vor_check=True)
+            updated = download_updated_xml(article, vor_check=True, tempdir=tempdir, corpusdir=directory)
             if updated:
                 vor_updated_article_list.append(article)
 
-    old_uncorrected_proofs_list = get_uncorrected_proofs_list()
+    old_uncorrected_proofs_list = get_uncorrected_proofs_list(corpusdir=directory)
     new_uncorrected_proofs_list = list(set(old_uncorrected_proofs_list) - set(vor_updated_article_list))
 
     # direct remote XML check; add their totals to totals above
     if new_uncorrected_proofs_list:
-        proofs_download_list = remote_proofs_direct_check(article_list=new_uncorrected_proofs_list,
-                                                          plos_network=plos_network)
+        proofs_download_list = remote_proofs_direct_check(tempdir=tempdir,
+                                                          article_list=new_uncorrected_proofs_list,
+                                                          plos_network=plos_network,
+                                                          directory=directory)
         vor_updated_article_list.extend(proofs_download_list)
         new_uncorrected_proofs_list = list(set(new_uncorrected_proofs_list) - set(vor_updated_article_list))
-        too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof)]
+        too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof, tempdir)]
         if too_old_proofs and plos_network:
             print("Proofs older than 3 weeks: {}".format(too_old_proofs))
 
@@ -812,7 +819,7 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
     return vor_updated_article_list
 
 
-def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_network=False):
+def remote_proofs_direct_check(tempdir='', article_list=None, plos_network=False, directory=''):
     """
     Takes list of of DOIs of uncorrected proofs and compared to raw XML of the article online
     If article status is now 'vor-update-to-uncorrected-proof', download new copy
@@ -820,6 +827,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     https://developer.plos.org/jira/browse/DPRO-3418
     :param tempdir: temporary directory for downloading articles
     :param article-list: list of uncorrected proofs to check for updates.
+    :param directory: defaults to corpusdir, containing article files
     :return: list of all articles with updated vor
     """
     try:
@@ -829,11 +837,15 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     proofs_download_list = []
     if article_list is None:
         article_list = get_uncorrected_proofs_list()
-    for doi in list(set(article_list)):
-        file = doi_to_path(doi)
-        updated = download_updated_xml(file, vor_check=True)
+    article_list = set(article_list)
+    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=len(article_list))
+    for i, doi in enumerate(article_list):
+        file_ = doi_to_path(doi)
+        updated = download_updated_xml(file_, vor_check=True, tempdir=tempdir, corpusdir=directory)
+        bar.update(i+1)
         if updated:
             proofs_download_list.append(doi)
+    bar.finish()
     if proofs_download_list:
         print(len(proofs_download_list),
               "VOR articles directly downloaded.")
@@ -856,13 +868,13 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
     """
     repo_download(article_list, tempdir, plos_network=plos_network)
     corrected_articles = check_for_corrected_articles(directory=tempdir)
-    download_corrected_articles(corrected_article_list=corrected_articles)
-    download_vor_updates(plos_network=plos_network)
+    download_corrected_articles(corrected_article_list=corrected_articles, tempdir=tempdir)
+    download_vor_updates(plos_network=plos_network, directory=destination, tempdir=tempdir)
     check_for_uncorrected_proofs(directory=tempdir)
     move_articles(tempdir, destination)
 
 
-def download_file_from_google_drive(id, filename, destination=corpusdir,
+def download_file_from_google_drive(id, filename, destination='',
                                     file_size=None):
     """
     General method for downloading from Google Drive.
@@ -887,6 +899,7 @@ def download_file_from_google_drive(id, filename, destination=corpusdir,
             response = session.get(URL, params=params, stream=True)
             r = requests.get(URL, params=params, stream=True)
         save_response_content(response, file_path, file_size=file_size)
+    #import pdb; pdb.set_trace()
     return file_path
 
 
@@ -950,7 +963,7 @@ def get_zip_metadata(method='initial'):
 
 
 def unzip_articles(file_path,
-                   extract_directory=corpusdir,
+                   extract_directory='',
                    filetype='zip',
                    delete_file=True
                    ):
@@ -984,7 +997,7 @@ def unzip_articles(file_path,
         os.remove(file_path)
 
 
-def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
+def create_local_plos_corpus(corpusdir='', rm_metadata=True):
     """
     Downloads a fresh copy of the PLOS corpus by:
     1) creating corpusdir if it doesn't exist
@@ -1000,7 +1013,7 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
         print('Creating folder for article xml')
     zip_date, zip_size, metadata_path = get_zip_metadata()
     zip_path = download_file_from_google_drive(zip_id, local_zip, file_size=zip_size)
-    unzip_articles(file_path=zip_path)
+    unzip_articles(file_path=zip_path, extract_directory=corpusdir)
     if rm_metadata:
         os.remove(metadata_path)
 
@@ -1011,27 +1024,28 @@ def main():
     standalone script
     :return: None
     """
-    # Read configuration file
-    
     parser = argparse.ArgumentParser()
     parser.add_argument('--plos', action='store_true', help=
                         'Used when inside the plos network')
-    parser.add_argument('--corpusdir', action='store',
-                        dest='corpusdir',
-                        default='allofplos_xml',
+    parser.add_argument('--configfile', action='store',
+                        dest='configfile',
                         help='Where to download plos articles')
-    parser.add_argument('--newfilesdir', action='store',
-                        dest='newfilesdir',
-                        default='new_plos_articles',
-                        help='Where to download new articles')
-    args = parser.parse_args()
+    args_ = parser.parse_args()
+    if args_.configfile:
+        config = pureyaml.load(open(args_.configfile).read())
+    else:
+        config = pureyaml.load(open('config.yaml').read())
+    # Main directory of article XML files
+    corpusdir = config['corpusdir']
+    # Temp folder for downloading and processing new articles
+    newarticledir = config['newarticledir']
     plos_network = False
-    if args.plos:
+    if args_.plos:
         URL_TMP = INT_URL_TMP
         plos_network = True
     else:
         URL_TMP = EXT_URL_TMP
-    # Step 0: Initialize first copy of repository]
+    # Step 0: Initialize first copy of repository
     try:
         corpus_files = [name for name in os.listdir(corpusdir) if os.path.isfile(
                         os.path.join(corpusdir, name))]
@@ -1040,14 +1054,14 @@ def main():
     if len(corpus_files) < min_files_for_valid_corpus:
         print('Not enough articles in corpusdir, re-downloading zip file')
         # TODO: check if zip file is in top-level directory before downloading
-        create_local_plos_corpus()
+        create_local_plos_corpus(corpusdir)
 
     # Step 1: Query solr via URL and construct DOI list
         # Filtered by article type & scheduled for the last 14 days.
         # Returns specific URL query & the number of search results.
         # Parses the returned dictionary of article DOIs, removing common leading numbers, as a list.
         # Compares to list of existing articles in the PLOS corpus folder to create list of DOIs to download.
-    dois_needed_list = get_dois_needed_list()
+    dois_needed_list = get_dois_needed_list(directory=corpusdir)
 
     # Step 2: Download new articles
         # For every doi in dois_needed_list, grab the accompanying XML from content-repo
