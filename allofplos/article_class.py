@@ -2,7 +2,8 @@ import lxml.etree as et
 import os
 
 from plos_corpus import filename_to_doi
-from plos_regex import validate_doi, validate_file
+from plos_regex import validate_doi, validate_filename
+from samples.corpus_analysis import parse_article_date
 
 # Main directory of article XML files
 corpusdir = 'allofplos_xml'
@@ -39,7 +40,10 @@ class Article:
         self._doi = d
 
     def get_path(self):
-        article_path = os.path.join(self.directory, self.doi.lstrip('10.1371/') + '.xml')
+        if 'annotation' in self.doi:
+            article_path = os.path.join(self.directory, 'plos.correction.' + self.doi.split('/')[-1] + '.xml')
+        else:
+            article_path = os.path.join(self.directory, self.doi.lstrip('10.1371/') + '.xml')
         return article_path
 
     def get_local_bool(self):
@@ -120,7 +124,7 @@ class Article:
             return self.get_local_element_tree()
         else:
             return self._tree
-    
+
     @property
     def root(self):
         return self.get_local_root_element()
