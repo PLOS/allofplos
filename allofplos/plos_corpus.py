@@ -616,7 +616,7 @@ def check_for_corrected_articles(directory='', article_list=None):
             corrected_article = get_related_article_doi(article_file)[0]
             corrected_doi_list.append(corrected_article)
     corrected_article_list = [doi_to_path(doi) if os.path.exists(doi_to_path(doi)) else
-                              doi_to_path(doi, directory=newarticledir) for doi in list(corrected_doi_list)]
+                              doi_to_path(doi, directory=directory) for doi in list(corrected_doi_list)]
     print(len(corrected_article_list), 'corrected articles found.')
     return corrected_article_list
 
@@ -673,7 +673,7 @@ def get_uncorrected_proofs_list(corpusdir):
             uncorrected_proofs_list = file.read().splitlines()
     except FileNotFoundError:
         print("Creating new text list of uncorrected proofs from scratch.")
-        import pdb; pdb.set_trace()
+        #import pdb; pdb.set_trace()
         article_files = listdir_nohidden(corpusdir)
         uncorrected_proofs_list = []
         max_value = len(article_files)
@@ -868,7 +868,7 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
     """
     repo_download(article_list, tempdir, plos_network=plos_network)
     corrected_articles = check_for_corrected_articles(directory=tempdir)
-    download_corrected_articles(corrected_article_list=corrected_articles, tempdir=tempdir)
+    download_corrected_articles(directory=destination,corrected_article_list=corrected_articles, tempdir=tempdir)
     download_vor_updates(plos_network=plos_network, directory=destination, tempdir=tempdir)
     check_for_uncorrected_proofs(directory=tempdir)
     move_articles(tempdir, destination)
