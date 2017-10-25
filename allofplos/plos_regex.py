@@ -4,9 +4,13 @@ The following RegEx pertains to the 7 main PLOS journals and the defunct PLOS Cl
 
 import re
 
-corpusdir = 'allofplos_xml/'
+# Main directory of article XML files
+corpusdir = 'allofplos_xml'
+
+# Temp folder for downloading and processing new articles
+newarticledir = 'new_plos_articles'
+
 corpusdir_regex = re.escape(corpusdir)
-newarticledir = 'new_plos_articles/'
 newarticledir_regex = re.escape(newarticledir)
 regex_match_prefix = r"^10\.1371/"
 regex_body_match = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7}$)"
