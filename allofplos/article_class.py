@@ -1,20 +1,9 @@
 import lxml.etree as et
 import os
 
-from plos_corpus import filename_to_doi
-from plos_regex import validate_doi, validate_filename
+from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP)
+from plos_regex import (validate_doi, validate_filename, corpusdir)
 from samples.corpus_analysis import parse_article_date
-
-# Main directory of article XML files
-corpusdir = 'allofplos_xml'
-
-# Temp folder for downloading and processing new articles
-newarticledir = 'new_plos_articles'
-
-# URL bases for PLOS's raw article XML
-EXT_URL_TMP = 'http://journals.plos.org/plosone/article/file?id={0}&type=manuscript'
-INT_URL_TMP = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-repo?key={0}.XML'
-URL_TMP = EXT_URL_TMP
 
 
 class Article:
