@@ -194,7 +194,7 @@ class Article:
             try:
                 date = parse_article_date(element)
             except ValueError:
-                print('Error getting pubdates for {}'.format(article_file))
+                print('Error getting pubdates for {}'.format(self.doi))
                 date = ''
             dates[pub_type] = date
 
@@ -210,14 +210,14 @@ class Article:
                 try:
                     date = parse_article_date(part)
                 except ValueError:
-                    print('Error getting history dates for {}'.format(article_file))
+                    print('Error getting history dates for {}'.format(self.doi))
                     date = ''
                 dates[date_type] = date
         if debug:
             # check whether date received is before date accepted is before pubdate
             if dates.get('received', '') and dates.get('accepted', '') in dates:
                 if not dates['received'] <= dates['accepted'] <= dates['epub']:
-                    print('{}: dates in wrong order'.format(doi))
+                    print('{}: dates in wrong order'.format(self.doi))
 
         if string_:
             # can return dates as strings instead of datetime objects if desired
