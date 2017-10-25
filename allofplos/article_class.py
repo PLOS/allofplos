@@ -230,6 +230,67 @@ class Article:
     def get_pubdate(self, string_=False, string_format='%Y-%m-%d'):
         dates = self.get_dates(string_=string_, string_format=string_format)
         return dates['epub']
+    
+    def get_corresponding_author_info(self):
+        tag_path_1 = ["/",
+                      "article",
+                      "front",
+                      "article-meta",
+                      "contrib-group"]
+        contrib_groups = self.get_element_xpath(tag_path_elements=tag_path_1)
+        corr_rid = ''
+        given_names = ''
+        surname = ''
+        corr_authors = {}
+        for group in contrib_groups:
+            for contrib in group:
+                try:
+                    if contrib.attrib['contrib-type'] == "author" and contrib.attrib['corresp'] ==  "yes":
+                        contrib_elements = contrib.getchildren()
+                        for element in contrib_elements:
+                            if element.tag == 'xref' and element.attrib['ref-type'] == 'corresp':
+                                corr_rid = element.attrib['rid']
+                                corr_author_elem = contrib
+                                corr_name_element = contrib.find("name")
+                                for name_element in corr_name_element.getchildren():
+                                    if name_element.tag == 'surname':
+                                        # for some reason, name_element.text doesn't work for this element
+                                        surname = et.tostring(name_element, encoding='unicode', method='text').rstrip('\n')
+                                    elif name_element.tag == 'given-names':
+                                        given_names = name_element.text
+                                        if given_names == '':
+                                            print("given names element.text didn't work")
+                                            given_names = et.tostring(name_element, encoding='unicode', method='text').rstrip('\n')
+                            else:
+                                pass
+                except KeyError:
+                    pass
+#         if corr_rid and surname == '':
+#             return print('No corr author information found for {}, {}'.format(self.doi, self.type_))
+        if corr_rid:
+            corr_authors[corr_rid] = {'last': surname, 'first': given_names}
+            tag_path_2 = ["/",
+                          "article",
+                          "front",
+                          "article-meta",
+                          "author-notes"]
+            author_notes = self.get_element_xpath(tag_path_elements=tag_path_2)
+            for note in author_notes:
+                if note.tag == 'corresp':
+                    author_info = note.getchildren()
+                    print(author_info)
+                    for item in author_info:
+                        print(author_info.text)
+                else:
+                    try:
+                        if note.attrib['id'] == corr_rid:
+                            print(et.tostring(note, encoding='unicode', method='text').rstrip('\n'))
+                    except KeyError:
+                        pass
+            
+            return corr_authors
+        else:
+            return print('No corr author element found for {}, {}'.format(self.doi, self.type_))
 
     def get_jats_article_type(self):
         """
