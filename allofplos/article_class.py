@@ -387,6 +387,29 @@ class Article:
             related_article = related_article.lstrip('info:doi/')
         return related_article
 
+    def get_counts(self):
+        """
+        For a single article, return a dictionary of the several counts functions that are available
+        (figures: fig-count, pages: page-count, tables: table-count)
+        :return: counts dictionary
+        """
+        counts = {}
+
+        tag_path = ["/",
+                    "article",
+                    "front",
+                    "article-meta",
+                    "counts"]
+        count_element_list = self.get_element_xpath(tag_path_elements=tag_path)
+        for count_element in count_element_list:
+            for count_item in count_element:
+                count = count_item.get('count')
+                count_type = count_item.tag
+                counts[count_type] = count
+        if len(counts) > 3:
+            print(counts)
+        return counts
+
     def get_body_word_count(self):
         """
         For an article, get how many words are in the body
@@ -478,6 +501,10 @@ class Article:
             return self.get_related_doi()
         else:
             return None
+
+    @property
+    def counts(self):
+        return self.get_counts()
 
     @property
     def word_count(self):
