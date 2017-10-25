@@ -164,7 +164,7 @@ class Article:
                                                           "article-title"])
         title_text = et.tostring(title[0], encoding='unicode', method='text', pretty_print=True)
         return title_text.rstrip('\n')
-    
+
     def get_dates(self, string_=False, string_format='%Y-%m-%d', debug=False):
         """
         For an individual article, get all of its dates, including publication date (pubdate), submission date
@@ -329,6 +329,30 @@ class Article:
             dtd = 'N/A'
         return dtd
 
+    def get_abstract(self):
+        """
+        For an individual article in the PLOS corpus, get the string of the abstract content.
+        :return: plain-text string of content in abstract
+        """
+        abstract = self.get_element_xpath(tag_path_elements=["/",
+                                                             "article",
+                                                             "front",
+                                                             "article-meta",
+                                                             "abstract"])
+        try:
+            abstract_text = et.tostring(abstract[0], encoding='unicode', method='text')
+        except IndexError:
+            if self.type_ == 'research-article' and self.plostype == 'Research Article':
+                print('No abstract found for research article {}'.format(self.doi))
+
+            abstract_text = ''
+
+        # clean up text: rem white space, new line marks, blank lines
+        abstract_text = abstract_text.strip().replace('  ', '')
+        abstract_text = os.linesep.join([s for s in abstract_text.splitlines() if s])
+
+        return abstract_text
+
     @property
     def xml(self):
         return self.get_local_xml()
@@ -386,6 +410,10 @@ class Article:
     @property
     def dtd(self):
         return self.get_dtd()
+
+    @property
+    def abstract(self):
+        return self.get_abstract()
 
     @filename.setter
     def filename(self, value):
