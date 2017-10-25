@@ -387,6 +387,22 @@ class Article:
             related_article = related_article.lstrip('info:doi/')
         return related_article
 
+    def get_body_word_count(self):
+        """
+        For an article, get how many words are in the body
+        :return: count of words in the body of the PLOS article
+        """
+        body_element = self.get_element_xpath(tag_path_elements=["/",
+                                                                 "article",
+                                                                 "body"])
+        try:
+            body_text = et.tostring(body_element[0], encoding='unicode', method='text')
+            body_word_count = len(body_text.split(" "))
+        except IndexError:
+            print("Error parsing article body: {}".format(self.doi))
+            body_word_count = 0
+        return body_word_count
+
     @property
     def xml(self):
         return self.get_local_xml()
@@ -462,6 +478,10 @@ class Article:
             return self.get_related_doi()
         else:
             return None
+
+    @property
+    def word_count(self):
+        return self.get_body_word_count()
 
     @filename.setter
     def filename(self, value):
