@@ -17,6 +17,7 @@ class Article:
             self.directory = directory
         self._tree = None
         self._local = None
+        self._correct_or_retract = None  # Will probably need to be an article subclass
 
     @property
     def doi(self):
@@ -353,6 +354,39 @@ class Article:
 
         return abstract_text
 
+    def correct_or_retract_bool(self):
+        if self.type_ == 'correction' or self.type_ == 'retraction':
+            self._correct_or_retract = True
+        else:
+            self._correct_or_retract = False
+        return self._correct_or_retract
+
+    def get_related_doi(self):
+        """
+        For an article file, get the DOI of the first related article
+        More strict in tag search if article is correction type
+        Use primarily to map correction and retraction notifications to articles that have been corrected
+        NOTE: what to do if more than one related article?
+        :return: doi at that xpath location
+        """
+        related_article_elements = self.get_element_xpath(tag_path_elements=["/",
+                                                                             "article",
+                                                                             "front",
+                                                                             "article-meta",
+                                                                             "related-article"])
+        related_article = ''
+        if self.type_ == 'correction':
+            for element in related_article_elements:
+                if element.attrib['related-article-type'] in ('corrected-article', 'companion'):
+                    corrected_doi = element.attrib['{http://www.w3.org/1999/xlink}href']
+                    related_article = corrected_doi.lstrip('info:doi/')
+                    break
+        else:
+            related_article_element = related_article_elements[0].attrib
+            related_article = related_article_element['{http://www.w3.org/1999/xlink}href']
+            related_article = related_article.lstrip('info:doi/')
+        return related_article
+
     @property
     def xml(self):
         return self.get_local_xml()
@@ -414,6 +448,20 @@ class Article:
     @property
     def abstract(self):
         return self.get_abstract()
+
+    @property
+    def correct_or_retract(self):
+        if self._correct_or_retract is None:
+            return self.correct_or_retract_bool()
+        else:
+            return self._correct_or_retract
+
+    @property
+    def related_doi(self):
+        if self.correct_or_retract is True:
+            return self.get_related_doi()
+        else:
+            return None
 
     @filename.setter
     def filename(self, value):
