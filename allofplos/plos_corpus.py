@@ -92,8 +92,8 @@ def extract_filenames(directory, extension='.xml'):
     :param extension: String with the extension that we are looking for, xml is the default value
     :return: A list with all the file names inside this directory, excluding extensions
     """
-    filenames = [os.path.basename(article_file).rstrip(extension) for article_file in listdir_nohidden(directory, extension) if
-                 os.path.isfile(article_file)]
+    filenames = [os.path.basename(article_file).rstrip(extension) for article_file in
+                 listdir_nohidden(directory, extension) if os.path.isfile(article_file)]
     return filenames
 
 
@@ -408,7 +408,6 @@ def compare_article_pubdate(article, days=22):
         print("Pubdate error in {}".format(article))
 
 
-
 def download_updated_xml(article_file,
                          tempdir=newarticledir,
                          vor_check=False):
@@ -443,7 +442,7 @@ def download_updated_xml(article_file,
     else:
         get_new = True
         if vor_check:
-        # make sure that update is to a VOR for uncorrected proof
+            # make sure that update is to a VOR for uncorrected proof
             get_new = False
             path_parts = ['/',
                           'article',
