@@ -1,8 +1,8 @@
 import lxml.etree as et
 import os
 
-# from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP)
-from plos_corpus import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP)
+# from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP, BASE_URL_ARTICLE_LANDING_PAGE)
+from plos_corpus import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP, BASE_URL_ARTICLE_LANDING_PAGE)
 from plos_regex import (validate_doi, corpusdir)
 from samples.corpus_analysis import parse_article_date
 
@@ -64,6 +64,9 @@ class Article:
                                 encoding='unicode',
                                 pretty_print=pretty_print)
         return print(local_xml)
+
+    def get_landing_page(self):
+        return BASE_URL_ARTICLE_LANDING_PAGE + self.doi
 
     def get_url(self, plos_network=False):
         URL_TMP = INT_URL_TMP if plos_network else EXT_URL_TMP
@@ -221,7 +224,7 @@ class Article:
     def get_pubdate(self, string_=False, string_format='%Y-%m-%d'):
         dates = self.get_dates(string_=string_, string_format=string_format)
         return dates['epub']
-    
+
     def get_corresponding_author_info(self):
         tag_path_1 = ["/",
                       "article",
@@ -451,6 +454,10 @@ class Article:
     @property
     def root(self):
         return self.get_local_root_element()
+
+    @property
+    def page(self):
+        return self.get_landing_page()
 
     @property
     def url(self):
