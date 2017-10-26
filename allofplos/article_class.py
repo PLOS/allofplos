@@ -1,8 +1,9 @@
 import lxml.etree as et
 import os
 
-from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP)
-from plos_regex import (validate_doi, validate_filename, corpusdir)
+# from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP)
+from plos_corpus import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP)
+from plos_regex import (validate_doi, corpusdir)
 from samples.corpus_analysis import parse_article_date
 
 
@@ -169,7 +170,7 @@ class Article:
     def get_dates(self, string_=False, string_format='%Y-%m-%d', debug=False):
         """
         For an individual article, get all of its dates, including publication date (pubdate), submission date
-        :return: tuple of dict of date types mapped to datetime objects for that article, dict for date strings if wrong order
+        :return: tuple of dict of date types mapped to datetime objects for that article
         """
         dates = {}
 
