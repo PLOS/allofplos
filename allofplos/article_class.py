@@ -228,59 +228,69 @@ class Article:
                       "article-meta",
                       "contrib-group"]
         contrib_groups = self.get_element_xpath(tag_path_elements=tag_path_1)
-        corr_rid = ''
+        rid = ''
+        rid_list = []
         given_names = ''
         surname = ''
-        corr_authors = {}
+        corr_email = ''
+        corr_author = {}
+        corr_author_exists = False
         for group in contrib_groups:
             for contrib in group:
                 try:
-                    if contrib.attrib['contrib-type'] == "author" and contrib.attrib['corresp'] ==  "yes":
+                    if contrib.attrib['contrib-type'] == "author":
                         contrib_elements = contrib.getchildren()
+                        rid = ''
                         for element in contrib_elements:
-                            if element.tag == 'xref' and element.attrib['ref-type'] == 'corresp':
-                                corr_rid = element.attrib['rid']
-                                corr_author_elem = contrib
-                                corr_name_element = contrib.find("name")
-                                for name_element in corr_name_element.getchildren():
-                                    if name_element.tag == 'surname':
-                                        # for some reason, name_element.text doesn't work for this element
-                                        surname = et.tostring(name_element, encoding='unicode', method='text').rstrip('\n')
-                                    elif name_element.tag == 'given-names':
-                                        given_names = name_element.text
-                                        if given_names == '':
-                                            print("given names element.text didn't work")
-                                            given_names = et.tostring(name_element, encoding='unicode', method='text').rstrip('\n')
+                            if element.tag == 'xref':
+                                rid = element.attrib['rid']
+                                if 'cor' in rid:
+                                    corr_author_exists = True
+                                    rid_list.append(rid)
+                                    rid = element.attrib['rid']
+                                    author_name_element = contrib.find("name")
+                                    for name_element in author_name_element.getchildren():
+                                        if name_element.tag == 'surname':
+                                            # for some reason, name_element.text doesn't work for this element
+                                            surname = et.tostring(name_element,
+                                                                  encoding='unicode',
+                                                                  method='text').rstrip(' ').rstrip('\t').rstrip('\n')
+                                        elif name_element.tag == 'given-names':
+                                            given_names = name_element.text
+                                            if given_names == '':
+                                                print("given names element.text didn't work")
+                                                given_names = et.tostring(name_element,
+                                                                          encoding='unicode',
+                                                                          method='text').rstrip(' ').rstrip('\t').rstrip('\n')
                             else:
                                 pass
+                        if corr_author_exists:
+                            for rid in rid_list:  # in case there is more than one corresponding author
+                                tag_path_2 = ["/",
+                                              "article",
+                                              "front",
+                                              "article-meta",
+                                              "author-notes"]
+                                author_notes = self.get_element_xpath(tag_path_elements=tag_path_2)
+                                for note in author_notes[0]:
+                                    if note.tag == 'corresp':
+                                        author_info = note.getchildren()
+                                        for item in author_info:
+                                            if item.tag == 'email':
+                                                corr_email = item.text
+                                                if corr_email == '':
+                                                    print('No email available for {}'.format(self.doi))
+                                corr_author[rid] = {'last': surname, 'first': given_names, 'email': corr_email}
+                    else:
+                        pass
                 except KeyError:
                     pass
-#         if corr_rid and surname == '':
-#             return print('No corr author information found for {}, {}'.format(self.doi, self.type_))
-        if corr_rid:
-            corr_authors[corr_rid] = {'last': surname, 'first': given_names}
-            tag_path_2 = ["/",
-                          "article",
-                          "front",
-                          "article-meta",
-                          "author-notes"]
-            author_notes = self.get_element_xpath(tag_path_elements=tag_path_2)
-            for note in author_notes:
-                if note.tag == 'corresp':
-                    author_info = note.getchildren()
-                    print(author_info)
-                    for item in author_info:
-                        print(author_info.text)
-                else:
-                    try:
-                        if note.attrib['id'] == corr_rid:
-                            print(et.tostring(note, encoding='unicode', method='text').rstrip('\n'))
-                    except KeyError:
-                        pass
-            
-            return corr_authors
+
+            return corr_author
         else:
-            return print('No corr author element found for {}, {}'.format(self.doi, self.type_))
+            if self.type_ == "research-article":
+                print('No corr author element found for {}, {}'.format(self.doi, self.type_))
+            return None
 
     def get_jats_article_type(self):
         """
@@ -471,6 +481,14 @@ class Article:
     @property
     def pubdate(self):
         return self.get_pubdate()
+
+    @property
+    def author(self):
+        auth_info = list(self.get_corresponding_author_info().values())
+        if len(auth_info) == 1:
+            return auth_info[0]
+        else:
+            return auth_info
 
     @property
     def type_(self):
