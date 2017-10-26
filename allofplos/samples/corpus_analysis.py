@@ -16,14 +16,13 @@ import progressbar
 import random
 import requests
 
-
+from plos_regex import (validate_doi, corpusdir, newarticledir, full_doi_regex_match, validate_url, currents_doi_filter)
+from transformations import (filename_to_doi, doi_to_path, doi_to_url)
 from plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, uncorrected_proofs_text_list,
-                         get_related_article_doi, download_updated_xml, get_all_solr_dois, doi_to_path,
-                         filename_to_doi, newarticledir, get_article_pubdate, doi_to_url, download_check_and_move)
-from plos_regex import (full_doi_regex_match, validate_doi, validate_filename, validate_url, currents_doi_filter)
+                         get_related_article_doi, download_updated_xml, get_all_solr_dois, get_article_pubdate,
+                         download_check_and_move)
 
 counter = collections.Counter
-corpusdir = 'allofplos_xml'
 pmcdir = "pmc_articles"
 max_invalid_files_to_print = 100
 pmcdir = 'pmc_articles'
@@ -500,6 +499,7 @@ def get_plos_journal(article_file, caps_fixed=True):
                                                      "journal-title"])
         journal = journal[0].text
     except IndexError:
+        # Need to file ticket for this
         journal_meta = get_article_xml(article_file='allofplos_xml/journal.pone.0047704.xml',
                                        tag_path_elements=["/",
                                                           "article",
