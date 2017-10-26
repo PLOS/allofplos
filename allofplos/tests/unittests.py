@@ -1,8 +1,9 @@
+import os
 import unittest
 
-from plos_corpus import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
-                         filename_to_url, doi_to_url, INT_URL_TMP,
-                         EXT_URL_TMP)
+from plos_corpus import INT_URL_TMP, EXT_URL_TMP
+from transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
+                            filename_to_url, doi_to_url)
 
 
 suffix = '.xml'
@@ -18,7 +19,7 @@ example_url2 = 'http://journals.plos.org/plosone/article/file?id=10.1371/'\
 example_url2_int = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-'\
                    'prod-repo?key=10.1371/annotation/3155a3e9-5fbe-435c-a'\
                    '07a-e9a4846ec0b6.XML'
-example_file2 = 'journal.ppat.correction.e92d19e0-996a-4bfa-afdd-20dce770ed75.xml'
+example_file2 = 'plos.correction.3155a3e9-5fbe-435c-a07a-e9a4846ec0b6.xml'
 example_doi2 = '10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846ec0b6'
 
 
@@ -28,7 +29,7 @@ class TestDOIMethods(unittest.TestCase):
         """
         TODO: What this tests are about!
         """
-        self.assertEqual(example_file, doi_to_path(example_doi), "{0} does not transform to {1}".format(example_doi, example_file))
+        self.assertEqual(os.path.join(corpusdir,example_file), doi_to_path(example_doi), "{0} does not transform to {1}".format(example_doi, example_file))
         self.assertEqual(example_file2, doi_to_path(example_doi2, ''), "{0} does not transform to {1}".format(example_doi2, example_file2))
         self.assertEqual(example_url2, doi_to_url(example_doi2), "{0} does not transform to {1}".format(example_doi2, example_url2))
         self.assertEqual(example_url, doi_to_url(example_doi), "In doi_to_url, {0} does not transform to {1}".format(example_doi, example_url))
