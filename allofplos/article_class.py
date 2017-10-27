@@ -300,16 +300,19 @@ class Article:
                                             corr_initials_list.append(item.tail)
                                             if corr_email == '':
                                                 print('No email available for {}'.format(self.doi))
+                                            break
                                         elif item.tag == 'email' and item.tail:
                                             if surname.lower() in item.tail.lower():
                                                 print('name match: ', surname, item.tail)
-                                                corr_email = item.tail
-                                            elif ''.join([author_initials[0], author_initials[-1]]) in item.tail:
-                                                print('name match: ', surname, item.tail)
-                                                corr_email = item.tail
+                                                corr_email = item.text
+                                                break
+                                            elif ''.join([author_initials[0], author_initials[-1]]) == ''.join([item.tail[0], item.tail[-1]]):
+                                                print('modified initial match: ', surname, item.tail)
+                                                corr_email = item.text
                                                 corr_initials_list.append(item.tail)
+                                                break
                                             else:
-                                                print('no match but:', given_names, surname, author_initials, item.tail)
+                                                print('no match but:', author_initials, item.tail)
 
                             if surname not in surname_list and rid not in list(corr_author.keys()):
                                 corr_author[rid] = {'last': surname, 'first': given_names, 'email': corr_email}
