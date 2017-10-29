@@ -3,44 +3,92 @@ import os
 import re
 import string
 
-from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP, BASE_URL_ARTICLE_LANDING_PAGE)
+from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
+                             BASE_URL_ARTICLE_LANDING_PAGE)
 from plos_regex import (validate_doi, corpusdir)
 from samples.corpus_analysis import parse_article_date
 
 
-def get_author_name(contrib_element):
-    rid = ''
+def get_rid_dict(contrib_element):
+    rid_dict = {}
+    contrib_elements = contrib_element.getchildren()
+    # get list of ref-types
+    rid_type_list = [el.attrib['ref-type'] for el in contrib_elements if el.tag == 'xref']
+    # make dict of ref-types to the actual ref numbers (rids)
+    for rid_type in set(rid_type_list):
+        rid_list = [el.attrib['rid'] for el in contrib_elements if el.tag == 'xref' and el.attrib['ref-type'] == rid_type]
+        rid_dict[rid_type] = rid_list
+
+    print('rid dict', rid_dict)
+    return rid_dict
+
+
+def get_author_type(contrib_element):
+
+    answer_dict = {
+        "yes": "corresponding",
+        "no": "contributing"
+    }
+
+    author_type = None
+    if contrib_element.attrib['contrib-type'] == 'author':
+        corr = contrib_element.get('corresp', None)
+        if corr:
+            author_type = answer_dict.get(corr, None)
+        else:
+            temp = get_rid_dict(contrib_element).get('corresp', None)
+            if temp:
+                author_type = answer_dict.get("yes", None)
+            else:
+                author_type = answer_dict.get("no", None)
+
+    return author_type
+
+    # TODO: check reftype when your are finding the string "cor" in rids
+    # TODO: check assumption that all of the keys for the corresponding xref tag are "corresp"
+
+
+def get_contrib_name(contrib_element):
     given_names = ''
     surname = ''
-    author_name = {}
-    if contrib_element.attrib['contrib-type'] == "author":
-        contrib_elements = contrib_element.getchildren()
-        for element in contrib_elements:
-            if element.tag == 'xref':
-                rid = element.attrib['rid']
-                author_name_element = contrib_element.find("name")
-                for name_element in author_name_element.getchildren():
-                    if name_element.tag == 'surname':
-                        # for some reason, name_element.text doesn't work for this element
-                        surname = et.tostring(name_element,
-                                              encoding='unicode',
-                                              method='text').rstrip(' ').rstrip('\t').rstrip('\n')
-                    elif name_element.tag == 'given-names':
-                        given_names = name_element.text
-                        if given_names == '':
-                            print("given names element.text didn't work")
-                            given_names = et.tostring(name_element,
-                                                      encoding='unicode',
-                                                      method='text').rstrip(' ').rstrip('\t').rstrip('\n')
-            else:
-                pass
-    if rid:
-        author_initials = ''.join([part[0].upper() for part in re.split('-| |,|\.', given_names) if part]) + \
+    contrib_name = {}
+
+    contrib_name_element = contrib_element.find("name")
+    for name_element in contrib_name_element.getchildren():
+        if name_element.tag == 'surname':
+            # for some reason, name_element.text doesn't work for this element
+            surname = et.tostring(name_element,
+                                  encoding='unicode',
+                                  method='text').rstrip(' ').rstrip('\t').rstrip('\n')
+        elif name_element.tag == 'given-names':
+            given_names = name_element.text
+            if given_names == '':
+                print("given names element.text didn't work")
+                given_names = et.tostring(name_element,
+                                          encoding='unicode',
+                                          method='text').rstrip(' ').rstrip('\t').rstrip('\n')
+        else:
+            pass
+
+    if bool(given_names) and bool(surname):
+        contrib_initials = ''.join([part[0].upper() for part in re.split('-| |,|\.', given_names) if part]) + \
                           ''.join([part[0] for part in re.split('-| |,|\.', surname) if part[0] in string.ascii_uppercase])
-        author_name[rid] = (author_initials, given_names, surname)
-        return author_name
+        contrib_name = dict(contrib_initials=contrib_initials,
+                            given_names=given_names,
+                            surname=surname)
+        return contrib_name
     else:
         return None
+
+
+def get_contrib_info(contrib_element):
+    rid_dict = get_rid_dict(contrib_element)
+    return dict(
+        rid_dict=rid_dict,
+        contrib_name=get_contrib_name(contrib_element),
+        author_type=get_author_type(contrib_element),
+        corresp=rid_dict.get("corresp", None)
+        )
 
 
 def get_corr_author_emails(author_notes_element):
@@ -231,7 +279,7 @@ class Article:
     def get_dates(self, string_=False, string_format='%Y-%m-%d', debug=False):
         """
         For an individual article, get all of its dates, including publication date (pubdate), submission date
-        :return: tuple of dict of date types mapped to datetime objects for that article
+        :return: dict of date types mapped to datetime objects for that article
         """
         dates = {}
 
@@ -283,6 +331,27 @@ class Article:
         dates = self.get_dates(string_=string_, string_format=string_format)
         return dates['epub']
 
+    def get_aff_dict(self):
+        """For a given PLOS article, get list of contributor-affiliated institutions.
+
+        Used to map individual contributors to their institutions
+        :returns: Dictionary of footnote ids to institution information
+        :rtype: {[dict]}
+        """
+        tags_to_contrib = ["/",
+                           "article",
+                           "front",
+                           "article-meta"]
+        article_meta_element = self.get_element_xpath(tag_path_elements=tags_to_contrib)[0]
+        aff_dict = {}
+        aff_elements = [el for el in article_meta_element.getchildren() if el.tag == 'aff']
+        for el in aff_elements:
+            for sub_el in el.getchildren():
+                if sub_el.tag == 'addr-line':
+                    aff_dict[el.attrib['id']] = sub_el.text
+        print('aff dict', aff_dict)
+        return aff_dict
+
     def get_corresponding_author_info(self):
         tag_path_1 = ["/",
                       "article",
@@ -299,19 +368,31 @@ class Article:
         corr_author_with_emails = {}
         for group in contrib_groups:
             for contrib in group:
-                author_name = get_author_name(contrib)
-                if bool(author_name):
-                    rid = list(author_name.keys())[0]
-                    if 'cor' in rid:
-                        cor_rid = rid
-                        corr_author_exists = True
-                        corr_author_list.append(author_name)
-                        author_initials = list(author_name.values())[0][0]
-                        given_names = list(author_name.values())[0][1]
-                        surname = list(author_name.values())[0][2]
-                        if author_initials not in corr_author.keys():
-                            corr_author[author_initials] = (given_names, surname)
-        if corr_author_exists:
+                corr_author = {}
+                author_info = get_contrib_info(contrib)
+                if author_info['corresp']:
+                    # this assumes every initial set is unique 
+                    name_info = author_info['contrib_name']
+                    corr_author[name_info['contrib_initials']] = (
+                        name_info['surname'], name_info['given_names']
+                        )
+                    corr_author["element"]=contrib
+                    corr_author_list.append(corr_author)
+                # author_name = get_author_name(contrib)
+                # print(author_name)
+                # if bool(author_name):
+                #     rid = list(author_name.keys())[0]
+                #     if 'cor' in rid:
+                #         cor_rid = rid
+                #         corr_author_exists = True
+                #         corr_author_list.append(author_name)
+                #         contrib_initials = list(author_name.values())[0][0]
+                #         given_names = list(author_name.values())[0][1]
+                #         surname = list(author_name.values())[0][2]
+                #         if contrib_initials not in corr_author.keys():
+                #             corr_author[contrib_initials] = (surname, given_names)
+        for corr_author in corr_author_list:
+            print(corr_author)
             author_emails_dict = ''
             tag_path_2 = ["/",
                           "article",
@@ -320,27 +401,50 @@ class Article:
                           "author-notes"]
             author_notes = self.get_element_xpath(tag_path_elements=tag_path_2)
             author_emails_dict = get_corr_author_emails(author_notes[0])
-            print(author_emails_dict)
-            if len(corr_author) == 1:
-                corr_author[cor_rid] = {"last": surname, "first": given_names, "email": list(author_emails_dict.values())[0]}
-                corr_author.pop(author_initials, None)
+            # author_emails_dict may not be the same number as the corr_authors
+            print(len(corr_author))
+            if len(corr_author_list) == 1:
+                # MDP: not sure what this is testing for
+                c_info = get_contrib_info(corr_author["element"])
+                name_info = author_info['contrib_name']
+                corr_author[c_info["corresp"]] = [{
+                    "last": name_info["surname"],
+                    "first": name_info["given_names"],
+                    "email": list(author_emails_dict.values())[0]
+                    }
+                ]
+                return corr_author
 
             elif len(list(author_emails_dict.keys())) > 1:
-                for k in list(corr_author.keys()):
-                    print(k)
-                for k in list(author_emails_dict.keys()):
-                    print(k)
                 try:
-                    corr_author_with_emails = {k: tuple(corr_author[k], author_emails_dict[k]) for k in list(corr_author.keys())}
-                    print(corr_author_with_emails)
+                    print('eeny')
+                    corr_author_with_emails = {k: 
+                                                 {"last": corr_author[k]["surname"],
+                                                  "first": corr_author[k]["given_names"],
+                                                  "email": author_emails_dict[k]
+                                                  }
+                                               for k,v in corr_author.items()
+                                               if isinstance(v, str)
+                                               }
                 except KeyError:
-                    author_initials1 = list(corr_author.keys())
-                    author_initials2 = list(author_emails_dict.keys())
-                    for author in author_initials1:
-                        corr_author[''.join([author[0], author[-1]])] = corr_author.pop[author]
-                    for author in author_initials2:
-                        author_emails_dict[''.join([author[0], author[-1]])] = author_emails_dict.pop[author]
-                    print('problem fixed?!?!', corr_author.keys(), author_emails_dict.keys())
+                    print('meeny')
+                    contrib_initials1 = list(corr_author.keys())
+                    contrib_initials2 = list(author_emails_dict.keys())
+                    # the following code may no longer work
+                    for author in contrib_initials1:
+                        corr_author[''.join([author[0], author[-1]])] = corr_author.pop(author)
+                    for author in contrib_initials2:
+                        author_emails_dict[''.join([author[0], author[-1]])] = author_emails_dict.pop(author)
+                    try:
+                        corr_author_with_emails = {k: {"last": corr_author[k]["surname"],
+                                                       "first": corr_author[k]["given_names"],
+                                                       "email": author_emails_dict[k]} 
+                                                   for k,v in corr_author.items()
+                                                   if isinstance(v, str)
+                                                   }
+                    except KeyError:
+                        print('miny')
+                        print(corr_author, author_emails_dict)
             else:
                 print('no email dict', corr_author_list)
 
@@ -356,7 +460,7 @@ class Article:
             if self.type_ == "research-article":
                 print('No corr author element found for {}, {}'.format(self.doi, self.type_))
             return None
-        return corr_author
+        return corr_author_with_emails
 
     def get_jats_article_type(self):
         """
@@ -555,11 +659,11 @@ class Article:
     @property
     def author(self):
         try:
-            auth_info = list(self.get_corresponding_author_info().values())
+            auth_info = self.get_corresponding_author_info().values()
             if len(auth_info) == 1:
-                return auth_info[0]
-            else:
-                return auth_info
+                return list(auth_info)[0]
+            elif len(auth_info) > 1:
+                return list(auth_info)
         except (AttributeError, TypeError) as e:
             return None
 
