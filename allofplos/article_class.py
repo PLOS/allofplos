@@ -19,7 +19,6 @@ def get_rid_dict(contrib_element):
         rid_list = [el.attrib['rid'] for el in contrib_elements if el.tag == 'xref' and el.attrib['ref-type'] == rid_type]
         rid_dict[rid_type] = rid_list
 
-    print('rid dict', rid_dict)
     return rid_dict
 
 
@@ -89,28 +88,6 @@ def get_contrib_info(contrib_element):
         author_type=get_author_type(contrib_element),
         corresp=rid_dict.get("corresp", None)
         )
-
-
-def get_corr_author_emails(author_notes_element):
-    corr_emails = {}
-    for note in author_notes_element:
-        if note.tag == 'corresp':
-            author_info = note.getchildren()
-            for item in author_info:
-                # if no author initials (one corr author)
-                if item.tag == 'email' and item.tail is None:
-                    corr_email = item.text
-                    if corr_email == '':
-                        print('No email available for {}'.format(self.doi))
-                    corr_emails[note.attrib['id']] = item.text
-                    break
-                # if author initials included (more than one corr author)
-                elif item.tag == 'email' and item.tail:
-                    corr_email = item.text
-                    corr_emails[re.sub(r'[^a-zA-Z0-9=]','', item.tail)] = corr_email
-                else:
-                    pass
-    return corr_emails
 
 
 class Article:
@@ -338,19 +315,101 @@ class Article:
         :returns: Dictionary of footnote ids to institution information
         :rtype: {[dict]}
         """
-        tags_to_contrib = ["/",
-                           "article",
-                           "front",
-                           "article-meta"]
-        article_meta_element = self.get_element_xpath(tag_path_elements=tags_to_contrib)[0]
+        tags_to_aff = ["/",
+                       "article",
+                       "front",
+                       "article-meta"]
+        article_meta_element = self.get_element_xpath(tag_path_elements=tags_to_aff)[0]
         aff_dict = {}
         aff_elements = [el for el in article_meta_element.getchildren() if el.tag == 'aff']
         for el in aff_elements:
             for sub_el in el.getchildren():
                 if sub_el.tag == 'addr-line':
                     aff_dict[el.attrib['id']] = sub_el.text
-        print('aff dict', aff_dict)
         return aff_dict
+
+    def get_corr_author_emails(self):
+        tag_path = ["/",
+                    "article",
+                    "front",
+                    "article-meta",
+                    "author-notes"]
+        author_notes_element = self.get_element_xpath(tag_path_elements=tag_path)[0]
+        corr_emails = {}
+        email_list = []
+        for note in author_notes_element:
+            if note.tag == 'corresp':
+                author_info = note.getchildren()
+                for i, item in enumerate(author_info):
+                    # if no author initials (one corr author)
+                    if item.tag == 'email' and item.tail is None and item.text:
+                        email_list.append(item.text)
+                        if item.text == '':
+                            print('No email available for {}'.format(self.doi))
+                        corr_emails[note.attrib['id']] = email_list
+                    # if more than one email per author
+                    elif item.tag == 'email' and ',' in item.tail:
+                        if author_info[i+1].tail is None:
+                            email_list.append(item.text)
+                        elif author_info[i+1].tail:
+                            corr_initials = re.sub(r'[^a-zA-Z0-9=]', '', author_info[i+1].tail)
+                            if not corr_emails.get(corr_initials):
+                                corr_emails[corr_initials] = [item.text]
+                            else:
+                                corr_emails[corr_initials].append(item.text)
+                        if item.text == '':
+                            print('No email available for {}'.format(self.doi))
+                    # if author initials included (more than one corr author)
+                    elif item.tag == 'email' and item.tail:
+                        print(item.tail)
+                        corr_email = item.text
+                        corr_initials = re.sub(r'[^a-zA-Z0-9=]', '', item.tail)
+                        if not corr_emails.get(corr_initials):
+                            corr_emails[corr_initials] = [corr_email]
+                        else:
+                            corr_emails[corr_initials].append(corr_email)
+                    else:
+                        pass
+        return corr_emails
+
+    def get_contributors_info(self):
+        tag_path = ["/",
+                    "article",
+                    "front",
+                    "article-meta",
+                    "contrib-group",
+                    "contrib"]
+        # get dictionary of footnote ids to institutional affiliations
+        aff_dict = self.get_aff_dict()
+        # get dictionary of corresponding author email addresses
+        email_dict = self.get_corr_author_emails()
+        print(email_dict)
+        # get list of contributor elements (one per contributor)
+        contrib_list = self.get_element_xpath(tag_path_elements=tag_path)
+        print(contrib_list)
+        contrib_dict_list = []
+        for contrib in contrib_list:
+            # get dictionary of contributor's footnote types to footnote ids
+            rid_dict = get_rid_dict(contrib)
+            # get their name
+            contrib_dict = get_contrib_name(contrib)
+            # get contrib type
+            contrib_dict['contrib_type'] = contrib.attrib['contrib-type']
+            # map affiliation footnote ids to the actual institutions
+            contrib_dict['affiliations'] = [aff_dict[aff] for aff in rid_dict.get('aff') if 'aff' in aff]
+            # get author type
+            if contrib_dict.get('contrib_type') == 'author':
+                contrib_dict['author_type'] = get_author_type(contrib)
+            else:
+                print('non author contrib type:', contrib_dict['contrib_type'])
+            contrib_dict_list.append(contrib_dict)
+
+        corresp_list = [contrib for contrib in contrib_dict_list if contrib.get('author_type', None) == 'corresponding']
+        for corresp in corresp_list:
+            try:
+                corresp['email'] = email_dict[corresp.get('contrib_initials')]
+            except # Add all the exception rule processing here
+        print(corresp_list)
 
     def get_corresponding_author_info(self):
         tag_path_1 = ["/",
@@ -400,7 +459,7 @@ class Article:
                           "article-meta",
                           "author-notes"]
             author_notes = self.get_element_xpath(tag_path_elements=tag_path_2)
-            author_emails_dict = get_corr_author_emails(author_notes[0])
+            author_emails_dict = self.get_corr_author_emails()
             # author_emails_dict may not be the same number as the corr_authors
             print(len(corr_author))
             if len(corr_author_list) == 1:
