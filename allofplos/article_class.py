@@ -81,13 +81,56 @@ def get_contrib_name(contrib_element):
 
 
 def get_contrib_info(contrib_element):
-    rid_dict = get_rid_dict(contrib_element)
-    return dict(
-        rid_dict=rid_dict,
-        contrib_name=get_contrib_name(contrib_element),
-        author_type=get_author_type(contrib_element),
-        corresp=rid_dict.get("corresp", None)
-        )
+    # rid_dict = get_rid_dict(contrib_element)
+    # return dict(
+    #     rid_dict=rid_dict,
+    #     contrib_name=get_contrib_name(contrib_element),
+    #     author_type=get_author_type(contrib_element),
+    #     corresp=rid_dict.get("corresp", None)
+    #     )
+    # get their name
+    contrib_dict = get_contrib_name(contrib_element)
+    # get contrib type
+    contrib_dict['contrib_type'] = contrib_element.attrib['contrib-type']
+    # get author type
+    if contrib_dict.get('contrib_type') == 'author':
+        contrib_dict['author_type'] = get_author_type(contrib_element)
+    elif contrib_dict.get('contrib_type') == 'editor':
+        for item in contrib_element.getchildren():
+            if item.tag == 'Role' and item.text.lower() != 'editor':
+                print('new editor type: {}'.format(item.text))
+                contrib_dict['editor_type'] = item.text
+
+    # get dictionary of contributor's footnote types to footnote ids
+    contrib_dict['rid_dict'] = get_rid_dict(contrib_element)
+    return contrib_dict
+
+
+def match_authors_to_emails(corr_author, email_dict):
+    corr_author_initials = corr_author.get('contrib_initials')
+    try:
+        print('eeny')
+        corr_author['email'] = email_dict[corr_author_initials]
+    except KeyError:
+        try:
+            print('meeny')
+            corr_author_abbrev_initials = ''.join([corr_author_initials[0], corr_author_initials[-1]])
+            for email_initials in list(email_dict.keys()):
+                if corr_author_abbrev_initials == ''.join([email_initials[0], email_initials[-1]]):
+                    corr_author['email'] = email_dict[email_initials]
+        except KeyError:
+            print('miny')
+            for email_initials in list(email_dict.keys()):
+                if corr_author.get('surname') in email_dict[email_initials]:
+                    corr_author['email'] = email_dict[email_initials]
+    if 'email' not in list(corr_author.keys()):
+        print('moe')
+        print('Email not found for {} {} in {}. Choices: {}'
+              .format(corr_author['given_names'], corr_author['surname'],
+                      self.doi, email_dict))
+    else:
+        corr_author.pop('contrib_initials', None)
+    return corr_author
 
 
 class Article:
@@ -315,6 +358,7 @@ class Article:
         :returns: Dictionary of footnote ids to institution information
         :rtype: {[dict]}
         """
+        # TO DO: sometimes for editors, the affiliation is in the same element
         tags_to_aff = ["/",
                        "article",
                        "front",
@@ -361,7 +405,6 @@ class Article:
                             print('No email available for {}'.format(self.doi))
                     # if author initials included (more than one corr author)
                     elif item.tag == 'email' and item.tail:
-                        print(item.tail)
                         corr_email = item.text
                         corr_initials = re.sub(r'[^a-zA-Z0-9=]', '', item.tail)
                         if not corr_emails.get(corr_initials):
@@ -373,153 +416,45 @@ class Article:
         return corr_emails
 
     def get_contributors_info(self):
+        # TODO: add ORCID, param to remove unnecessary fields (initials) and dicts (rid_dict)
+        # get dictionary of footnote ids to institutional affiliations
+        aff_dict = self.get_aff_dict()
+        # get dictionary of corresponding author email addresses
+        email_dict = self.get_corr_author_emails()
+        # get list of contributor elements (one per contributor)
         tag_path = ["/",
                     "article",
                     "front",
                     "article-meta",
                     "contrib-group",
                     "contrib"]
-        # get dictionary of footnote ids to institutional affiliations
-        aff_dict = self.get_aff_dict()
-        # get dictionary of corresponding author email addresses
-        email_dict = self.get_corr_author_emails()
-        print(email_dict)
-        # get list of contributor elements (one per contributor)
         contrib_list = self.get_element_xpath(tag_path_elements=tag_path)
-        print(contrib_list)
         contrib_dict_list = []
         for contrib in contrib_list:
+            contrib_dict = get_contrib_info(contrib)
+
             # get dictionary of contributor's footnote types to footnote ids
-            rid_dict = get_rid_dict(contrib)
-            # get their name
-            contrib_dict = get_contrib_name(contrib)
-            # get contrib type
-            contrib_dict['contrib_type'] = contrib.attrib['contrib-type']
+            contrib_dict['rid_dict'] = get_rid_dict(contrib)
+
             # map affiliation footnote ids to the actual institutions
-            contrib_dict['affiliations'] = [aff_dict[aff] for aff in rid_dict.get('aff') if 'aff' in aff]
-            # get author type
-            if contrib_dict.get('contrib_type') == 'author':
-                contrib_dict['author_type'] = get_author_type(contrib)
-            else:
-                print('non author contrib type:', contrib_dict['contrib_type'])
+            contrib_dict['affiliations'] = [aff_dict[aff] for aff in contrib_dict['rid_dict'].get('aff')]
+
             contrib_dict_list.append(contrib_dict)
 
-        corresp_list = [contrib for contrib in contrib_dict_list if contrib.get('author_type', None) == 'corresponding']
-        for corresp in corresp_list:
-            try:
-                corresp['email'] = email_dict[corresp.get('contrib_initials')]
-            except # Add all the exception rule processing here
-        print(corresp_list)
+        corr_author_list = [contrib for contrib in contrib_dict_list if contrib.get('author_type', None) == 'corresponding']
+        if not corr_author_list and email_dict:
+            print('Corr authors but no emails found for {}'.format(self.doi))
+        if corr_author_list and not email_dict:
+            print('Corr emails not found for {}'.format(self.doi))
+        if len(corr_author_list) == 1:
+            corr_author = corr_author_list[0]
+            corr_author['email'] = email_dict[corr_author['rid_dict']['corresp'][0]]
+        elif len(corr_author_list) > 1:
+            for corr_author in corr_author_list:
+                corr_author = match_authors_to_emails(corr_author, email_dict)
 
-    def get_corresponding_author_info(self):
-        tag_path_1 = ["/",
-                      "article",
-                      "front",
-                      "article-meta",
-                      "contrib-group"]
-        contrib_groups = self.get_element_xpath(tag_path_elements=tag_path_1)
-        rid = ''
-        given_names = ''
-        surname = ''
-        corr_author = {}
-        corr_author_list = []
-        corr_author_exists = False
-        corr_author_with_emails = {}
-        for group in contrib_groups:
-            for contrib in group:
-                corr_author = {}
-                author_info = get_contrib_info(contrib)
-                if author_info['corresp']:
-                    # this assumes every initial set is unique 
-                    name_info = author_info['contrib_name']
-                    corr_author[name_info['contrib_initials']] = (
-                        name_info['surname'], name_info['given_names']
-                        )
-                    corr_author["element"]=contrib
-                    corr_author_list.append(corr_author)
-                # author_name = get_author_name(contrib)
-                # print(author_name)
-                # if bool(author_name):
-                #     rid = list(author_name.keys())[0]
-                #     if 'cor' in rid:
-                #         cor_rid = rid
-                #         corr_author_exists = True
-                #         corr_author_list.append(author_name)
-                #         contrib_initials = list(author_name.values())[0][0]
-                #         given_names = list(author_name.values())[0][1]
-                #         surname = list(author_name.values())[0][2]
-                #         if contrib_initials not in corr_author.keys():
-                #             corr_author[contrib_initials] = (surname, given_names)
-        for corr_author in corr_author_list:
-            print(corr_author)
-            author_emails_dict = ''
-            tag_path_2 = ["/",
-                          "article",
-                          "front",
-                          "article-meta",
-                          "author-notes"]
-            author_notes = self.get_element_xpath(tag_path_elements=tag_path_2)
-            author_emails_dict = self.get_corr_author_emails()
-            # author_emails_dict may not be the same number as the corr_authors
-            print(len(corr_author))
-            if len(corr_author_list) == 1:
-                # MDP: not sure what this is testing for
-                c_info = get_contrib_info(corr_author["element"])
-                name_info = author_info['contrib_name']
-                corr_author[c_info["corresp"]] = [{
-                    "last": name_info["surname"],
-                    "first": name_info["given_names"],
-                    "email": list(author_emails_dict.values())[0]
-                    }
-                ]
-                return corr_author
+        return contrib_dict_list
 
-            elif len(list(author_emails_dict.keys())) > 1:
-                try:
-                    print('eeny')
-                    corr_author_with_emails = {k: 
-                                                 {"last": corr_author[k]["surname"],
-                                                  "first": corr_author[k]["given_names"],
-                                                  "email": author_emails_dict[k]
-                                                  }
-                                               for k,v in corr_author.items()
-                                               if isinstance(v, str)
-                                               }
-                except KeyError:
-                    print('meeny')
-                    contrib_initials1 = list(corr_author.keys())
-                    contrib_initials2 = list(author_emails_dict.keys())
-                    # the following code may no longer work
-                    for author in contrib_initials1:
-                        corr_author[''.join([author[0], author[-1]])] = corr_author.pop(author)
-                    for author in contrib_initials2:
-                        author_emails_dict[''.join([author[0], author[-1]])] = author_emails_dict.pop(author)
-                    try:
-                        corr_author_with_emails = {k: {"last": corr_author[k]["surname"],
-                                                       "first": corr_author[k]["given_names"],
-                                                       "email": author_emails_dict[k]} 
-                                                   for k,v in corr_author.items()
-                                                   if isinstance(v, str)
-                                                   }
-                    except KeyError:
-                        print('miny')
-                        print(corr_author, author_emails_dict)
-            else:
-                print('no email dict', corr_author_list)
-
-            # if surname not in surname_list and rid not in list(corr_author.keys()):
-            #     corr_author[rid] = {'last': surname, 'first': given_names, 'email': corr_email}
-            #     surname_list.append(surname)
-            # elif surname not in surname_list:
-            #     corr_author[corr_author_count] = {'last': surname, 'first': given_names, 'email': corr_email}
-            #     surname_list.append(surname)
-            # else:
-            #     pass
-        else:
-            if self.type_ == "research-article":
-                print('No corr author element found for {}, {}'.format(self.doi, self.type_))
-            return None
-        return corr_author_with_emails
 
     def get_jats_article_type(self):
         """
@@ -716,15 +651,19 @@ class Article:
         return self.get_pubdate()
 
     @property
-    def author(self):
-        try:
-            auth_info = self.get_corresponding_author_info().values()
-            if len(auth_info) == 1:
-                return list(auth_info)[0]
-            elif len(auth_info) > 1:
-                return list(auth_info)
-        except (AttributeError, TypeError) as e:
-            return None
+    def authors(self):
+        contributors = self.get_contributors_info()
+        return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'author']       
+
+    @property
+    def corr_author(self):
+        contributors = self.get_contributors_info()
+        return [contrib for contrib in contributors if contrib.get('author_type', None) == 'corresponding']
+
+    @property
+    def editor(self):
+        contributors = self.get_contributors_info()
+        return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'editor']
 
     @property
     def type_(self):
