@@ -476,13 +476,24 @@ class Article(object):
         contrib_list = self.get_element_xpath(tag_path_elements=tag_path)
         contrib_dict_list = []
         for contrib in contrib_list:
-            contrib_dict = get_contrib_info(contrib)
+            try:
+                contrib_dict = get_contrib_info(contrib)
+            except TypeError:
+                print('Error getting contrib info for {}'.format(self.doi, self.type_))
+                contrib_dict = {}
 
             # get dictionary of contributor's footnote types to footnote ids
             contrib_dict['rid_dict'] = get_rid_dict(contrib)
 
             # map affiliation footnote ids to the actual institutions
-            contrib_dict['affiliations'] = [aff_dict[aff] for aff in contrib_dict['rid_dict'].get('aff')]
+            try:
+                contrib_dict['affiliations'] = [aff_dict.get(aff) 
+                                                for aff in contrib_dict['rid_dict'].get('aff')
+                                                if aff_dict.get(aff, None)
+                                                ]
+            except TypeError:
+                print('error constructing affiliations for {}: {} {}'.format(self.doi, contrib_dict.get('given_names'), contrib_dict.get('surname')))
+                contrib_dict['affiliations'] = []
 
             contrib_dict_list.append(contrib_dict)
 
@@ -493,11 +504,20 @@ class Article(object):
             print('Corr emails not found for {}'.format(self.doi))
         if len(corr_author_list) == 1:
             corr_author = corr_author_list[0]
-            corr_author['email'] = email_dict[corr_author['rid_dict']['corresp'][0]]
+            try:
+                corr_author['email'] = email_dict[corr_author['rid_dict']['corresp'][0]]
+            except KeyError:
+                if len(email_dict) == 1:
+                    print('single author nuclear option engaged!')
+                    corr_author['email'] = list(email_dict.values())[0]
+                else:
+                    print('one_corr_author error finding email for {} in {}'.format(corr_author, email_dict))
         elif len(corr_author_list) > 1:
-            for corr_author in corr_author_list:
-                corr_author = match_authors_to_emails(corr_author, email_dict)
+            corr_author_list = match_authors_to_emails(corr_author_list, email_dict)
 
+        else:
+            print('No corresponding authors found for {}'.format(self.doi))
+            corr_author_list = []
         return contrib_dict_list
 
 
