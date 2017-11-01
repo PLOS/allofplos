@@ -1,7 +1,10 @@
-import lxml.etree as et
+import difflib
 import os
 import re
 import string
+
+import lxml.etree as et
+import unidecode
 
 from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
                              BASE_URL_ARTICLE_LANDING_PAGE)
