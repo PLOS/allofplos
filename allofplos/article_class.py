@@ -78,8 +78,12 @@ def get_contrib_name(contrib_element):
         given_names = ''
 
     if bool(given_names) and bool(surname):
-        contrib_initials = ''.join([part[0].upper() for part in re.split('-| |,|\.', given_names) if part]) + \
-                          ''.join([part[0] for part in re.split('-| |,|\.', surname) if part[0] in string.ascii_uppercase])
+        try:
+            contrib_initials = ''.join([part[0].upper() for part in re.split('[-| |,|\.]+', given_names) if part]) + \
+                              ''.join([part[0] for part in re.split('[-| |,|\.]+', surname) if part[0] in string.ascii_uppercase])
+        except IndexError:
+            print("Can't construct initials for {} {}, {}".format(given_names, surname, contrib_element))
+            contrib_initials = ''
         contrib_name = dict(contrib_initials=contrib_initials,
                             given_names=given_names,
                             surname=surname)
