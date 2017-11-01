@@ -435,14 +435,17 @@ class Article(object):
                         corr_emails[note.attrib['id']] = email_list
                     # if more than one email per author
                     elif item.tag == 'email' and ',' in item.tail:
-                        if author_info[i+1].tail is None:
-                            email_list.append(item.text)
-                        elif author_info[i+1].tail:
-                            corr_initials = re.sub(r'[^a-zA-Z0-9=]', '', author_info[i+1].tail)
-                            if not corr_emails.get(corr_initials):
-                                corr_emails[corr_initials] = [item.text]
-                            else:
-                                corr_emails[corr_initials].append(item.text)
+                        try:
+                            if author_info[i+1].tail is None:
+                                email_list.append(item.text)
+                            elif author_info[i+1].tail:
+                                corr_initials = re.sub(r'[^a-zA-Z0-9=]', '', author_info[i+1].tail)
+                                if not corr_emails.get(corr_initials):
+                                    corr_emails[corr_initials] = [item.text]
+                                else:
+                                    corr_emails[corr_initials].append(item.text)
+                        except IndexError:
+                            print('Error handling multiple email addresses for {} in {}'.format(et.tostring(item), self.doi))
                         if item.text == '':
                             print('No email available for {}'.format(self.doi))
                     # if author initials included (more than one corr author)
