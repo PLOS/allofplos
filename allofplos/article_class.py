@@ -152,7 +152,6 @@ def match_author_to_email(corr_author, email_dict, matched_keys):
     return corr_author
 
 
-class Article:
 def match_authors_to_emails(corr_author_list, email_dict):
     matched_keys = []
     for corr_author in corr_author_list:
@@ -172,6 +171,7 @@ def match_authors_to_emails(corr_author_list, email_dict):
     return corr_author_list
 
 
+class Article(object):
     plos_prefix = ''
 
     def __init__(self, doi, directory=None):
@@ -192,6 +192,7 @@ def match_authors_to_emails(corr_author_list, email_dict):
     def doi(self, d):
         if validate_doi(d) is False:
             raise Exception("Invalid format for PLOS DOI")
+        self.reset_memoized_props()
         self._doi = d
 
     def get_path(self):
