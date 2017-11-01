@@ -56,21 +56,26 @@ def get_contrib_name(contrib_element):
     contrib_name = {}
 
     contrib_name_element = contrib_element.find("name")
-    for name_element in contrib_name_element.getchildren():
-        if name_element.tag == 'surname':
-            # for some reason, name_element.text doesn't work for this element
-            surname = et.tostring(name_element,
-                                  encoding='unicode',
-                                  method='text').rstrip(' ').rstrip('\t').rstrip('\n')
-        elif name_element.tag == 'given-names':
-            given_names = name_element.text
-            if given_names == '':
-                print("given names element.text didn't work")
-                given_names = et.tostring(name_element,
-                                          encoding='unicode',
-                                          method='text').rstrip(' ').rstrip('\t').rstrip('\n')
-        else:
-            pass
+    try:
+        for name_element in contrib_name_element.getchildren():
+            if name_element.tag == 'surname':
+                # for some reason, name_element.text doesn't work for this element
+                surname = et.tostring(name_element,
+                                      encoding='unicode',
+                                      method='text').rstrip(' ').rstrip('\t').rstrip('\n')
+            elif name_element.tag == 'given-names':
+                given_names = name_element.text
+                if given_names == '':
+                    print("given names element.text didn't work")
+                    given_names = et.tostring(name_element,
+                                              encoding='unicode',
+                                              method='text').rstrip(' ').rstrip('\t').rstrip('\n')
+            else:
+                pass
+    except AttributeError:
+        print("Contrib name element error: {}".format(contrib_name_element, contrib_element))
+        surname = ''
+        given_names = ''
 
     if bool(given_names) and bool(surname):
         contrib_initials = ''.join([part[0].upper() for part in re.split('-| |,|\.', given_names) if part]) + \
