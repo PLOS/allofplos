@@ -180,9 +180,12 @@ class Article(object):
             self.directory = corpusdir
         else:
             self.directory = directory
+        self.reset_memoized_attrs()
+
+    def reset_memoized_attrs(self):
         self._tree = None
         self._local = None
-        self._correct_or_retract = None  # Will probably need to be an article subclass
+        self._correct_or_retract = None  # Will probably need to be an article subclass        
 
     @property
     def doi(self):
@@ -192,7 +195,7 @@ class Article(object):
     def doi(self, d):
         if validate_doi(d) is False:
             raise Exception("Invalid format for PLOS DOI")
-        self.reset_memoized_props()
+        self.reset_memoized_attrs()
         self._doi = d
 
     def get_path(self):
