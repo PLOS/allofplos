@@ -33,7 +33,7 @@ def get_author_type(contrib_element):
     }
 
     author_type = None
-    if contrib_element.attrib['contrib-type'] == 'author':
+    if contrib_element.get('contrib-type', None) == 'author':
         corr = contrib_element.get('corresp', None)
         if corr:
             author_type = answer_dict.get(corr, None)
@@ -520,10 +520,8 @@ class Article(object):
             corr_author_list = []
         return contrib_dict_list
 
-
     def get_jats_article_type(self):
-        """
-        For an article file, get its JATS article type
+        """For an article file, get its JATS article type.
         Use primarily to find Correction (and thereby corrected) articles
         :return: JATS article_type at that xpath location
         """
