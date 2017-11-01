@@ -118,34 +118,60 @@ def get_contrib_info(contrib_element):
     return contrib_dict
 
 
-def match_authors_to_emails(corr_author, email_dict):
+def match_author_to_email(corr_author, email_dict, matched_keys):
     corr_author_initials = corr_author.get('contrib_initials')
+    # email_dict keys (initials) are assumed to be uppercase
+    email_dict = {k.upper(): v 
+                  for k, v in email_dict.items()
+                  if k not in matched_keys}
+
     try:
-        print('eeny')
-        corr_author['email'] = email_dict[corr_author_initials]
+        corr_author['email'] = email_dict[corr_author_initials.upper()]
     except KeyError:
         try:
-            print('meeny')
             corr_author_abbrev_initials = ''.join([corr_author_initials[0], corr_author_initials[-1]])
-            for email_initials in list(email_dict.keys()):
-                if corr_author_abbrev_initials == ''.join([email_initials[0], email_initials[-1]]):
-                    corr_author['email'] = email_dict[email_initials]
+            for email_initials, email_address in email_dict.items():
+                if corr_author_abbrev_initials == ''.join([email_initials[0], email_initials[-1]]).upper():
+                    corr_author['email'] = email_address
+                    break
         except KeyError:
-            print('miny')
-            for email_initials in list(email_dict.keys()):
-                if corr_author.get('surname') in email_dict[email_initials]:
-                    corr_author['email'] = email_dict[email_initials]
-    if 'email' not in list(corr_author.keys()):
-        print('moe')
-        print('Email not found for {} {} in {}. Choices: {}'
-              .format(corr_author['given_names'], corr_author['surname'],
-                      self.doi, email_dict))
-    else:
-        corr_author.pop('contrib_initials', None)
+            pass
+    if 'email' not in corr_author:
+        for email_initials, email_address in email_dict.items():
+            seq_1 = unidecode.unidecode(''.join([corr_author.get('given_names'), corr_author.get('surname')]).lower())
+            seq_2 = unidecode.unidecode(email_address[0].lower().split('@')[0])
+            print('seq 2: {}'.format(seq_2))
+            matcher = difflib.SequenceMatcher(a=seq_1, b=seq_2)
+            match = matcher.find_longest_match(0, len(matcher.a), 0, len(matcher.b))
+            if match[-1] >= 5:
+                print("match ok {}:{}, {} letters".format(seq_1, seq_2, match[-1]))
+                corr_author['email'] = email_address
+                break
+            elif 2 <= match[-1] <= 4:
+                print('match ok?', seq_1[match.a: match.a + match.size], seq_1, seq_2)
     return corr_author
 
 
 class Article:
+def match_authors_to_emails(corr_author_list, email_dict):
+    matched_keys = []
+    for corr_author in corr_author_list:
+        corr_author = match_author_to_email(corr_author, email_dict, matched_keys)
+        if corr_author.get('email', None):
+            for k, v in email_dict.items():
+                if v == corr_author.get('email'):
+                    matched_keys.append(k)
+    if len(email_dict) == len(matched_keys):
+        pass
+    else:
+        unmatched_email_dict = {k: v for k, v in email_dict.items() if k not in matched_keys}
+        corr_author_missing_email_list = [corr_author for corr_author in corr_author_list if not corr_author.get('email', None)]
+        if len(unmatched_email_dict) == len(corr_author_missing_email_list) == 1:
+            print('Nuclear option engaged!')
+            corr_author_missing_email_list[0]['email'] = list(unmatched_email_dict.values())[0]
+    return corr_author_list
+
+
     plos_prefix = ''
 
     def __init__(self, doi, directory=None):
