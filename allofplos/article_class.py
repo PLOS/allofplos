@@ -91,19 +91,29 @@ def get_contrib_name(contrib_element):
     else:
         return None
 
+def get_contrib_ids(contrib_element):
+    id_list = []
+    for item in contrib_element.getchildren():
+        if item.tag == 'contrib-id':
+            contrib_id_type = item.attrib.get('contrib-id-type', None)
+            contrib_id = item.text
+            contrib_authenticated = item.attrib.get('authenticated', None)
+            id_dict = dict(id_type=contrib_id_type,
+                           id=contrib_id,
+                           authenticated=contrib_authenticated
+                           )
+            id_list.append(id_dict)
+
+    return id_list
+
 
 def get_contrib_info(contrib_element):
-    # rid_dict = get_rid_dict(contrib_element)
-    # return dict(
-    #     rid_dict=rid_dict,
-    #     contrib_name=get_contrib_name(contrib_element),
-    #     author_type=get_author_type(contrib_element),
-    #     corresp=rid_dict.get("corresp", None)
-    #     )
     # get their name
     contrib_dict = get_contrib_name(contrib_element)
+
     # get contrib type
     contrib_dict['contrib_type'] = contrib_element.attrib['contrib-type']
+
     # get author type
     if contrib_dict.get('contrib_type') == 'author':
         contrib_dict['author_type'] = get_author_type(contrib_element)
@@ -112,6 +122,9 @@ def get_contrib_info(contrib_element):
             if item.tag == 'Role' and item.text.lower() != 'editor':
                 print('new editor type: {}'.format(item.text))
                 contrib_dict['editor_type'] = item.text
+
+    # get ORCID, if available
+    contrib_dict['ids'] = get_contrib_ids(contrib_element)
 
     # get dictionary of contributor's footnote types to footnote ids
     contrib_dict['rid_dict'] = get_rid_dict(contrib_element)
