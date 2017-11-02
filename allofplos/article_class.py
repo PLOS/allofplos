@@ -185,7 +185,7 @@ class Article(object):
     def reset_memoized_attrs(self):
         self._tree = None
         self._local = None
-        self._correct_or_retract = None  # Will probably need to be an article subclass        
+        self._correct_or_retract = None  # Will probably need to be an article subclass      
 
     @property
     def doi(self):
@@ -405,13 +405,21 @@ class Article(object):
                        "article",
                        "front",
                        "article-meta"]
-        article_meta_element = self.get_element_xpath(tag_path_elements=tags_to_aff)[0]
+        article_aff_elements = self.get_element_xpath(tag_path_elements=tags_to_aff)
         aff_dict = {}
-        aff_elements = [el for el in article_meta_element.getchildren() if el.tag == 'aff']
+        aff_elements = [el 
+                        for aff_element in article_aff_elements 
+                        for el in aff_element.getchildren()
+                        ]
         for el in aff_elements:
-            for sub_el in el.getchildren():
-                if sub_el.tag == 'addr-line':
-                    aff_dict[el.attrib['id']] = sub_el.text
+            if el.tag == 'aff':
+                if el.getchildren():
+                    for sub_el in el.getchildren():
+                        if sub_el.tag == 'addr-line':
+                            aff_dict[el.attrib['id']] = sub_el.text
+                else:
+                    # the address for some affiliations is not wrapped in an addr-line tag
+                    aff_dict[el.attrib['id']] = el.text.replace('\n','').replace('\r','').replace('\t','')
         return aff_dict
 
     def get_corr_author_emails(self):
@@ -487,13 +495,12 @@ class Article(object):
 
             # map affiliation footnote ids to the actual institutions
             try:
-                contrib_dict['affiliations'] = [aff_dict.get(aff) 
+                contrib_dict['affiliations'] = [aff_dict.get(aff, "")
                                                 for aff in contrib_dict['rid_dict'].get('aff')
-                                                if aff_dict.get(aff, None)
                                                 ]
             except TypeError:
                 print('error constructing affiliations for {}: {} {}'.format(self.doi, contrib_dict.get('given_names'), contrib_dict.get('surname')))
-                contrib_dict['affiliations'] = []
+                contrib_dict['affiliations'] = [""]
 
             contrib_dict_list.append(contrib_dict)
 
