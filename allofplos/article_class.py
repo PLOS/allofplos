@@ -74,8 +74,8 @@ def get_contrib_name(contrib_element):
                                               method='text').rstrip(' ').rstrip('\t').rstrip('\n')
             else:
                 pass
-    except AttributeError:
-        print("Contrib name element error: {}".format(contrib_name_element, contrib_element))
+    except AttributeError as e:
+        print("Contrib name element error: {}: {}\n{}".format(contrib_name_element, contrib_element, e))
         surname = ''
         given_names = ''
 
