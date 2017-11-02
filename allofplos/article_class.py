@@ -2,6 +2,7 @@ import difflib
 import os
 import re
 import string
+import subprocess
 
 import lxml.etree as et
 import unidecode
@@ -10,6 +11,7 @@ from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
                              BASE_URL_ARTICLE_LANDING_PAGE)
 from plos_regex import (validate_doi, corpusdir)
 from samples.corpus_analysis import parse_article_date
+
 
 
 def get_rid_dict(contrib_element):
@@ -194,6 +196,7 @@ class Article(object):
         else:
             self.directory = directory
         self.reset_memoized_attrs()
+        self._editor = None
 
     def reset_memoized_attrs(self):
         self._tree = None
@@ -267,6 +270,18 @@ class Article(object):
                                  encoding='unicode',
                                  pretty_print=pretty_print)
         return print(remote_xml)
+
+    def open_in_editor(self, editor=None):
+
+        if not (editor or self._editor):
+            raise TypeError("You have not specified an editor. Please do so.")
+        if editor and editor != self._editor:
+            self._editor = editor
+
+        subprocess.call([self._editor, self.filename])
+
+    def open_in_browser(self):
+        subprocess.call(["open", self.page])
 
     def get_element_xpath(self, article_root=None, tag_path_elements=None):
         """
