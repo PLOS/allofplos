@@ -87,12 +87,9 @@ def get_contrib_name(contrib_element):
                                 group_name=None)
     else:
         contrib_collab_element = contrib_element.find("collab")
-        print(contrib_collab_element.text)
         if contrib_collab_element.text:
             group_name = contrib_collab_element.text
             contrib_name = dict(group_name=group_name)
-        for element in contrib_element.getchildren():
-            print(element.tag)
 
     # except AttributeError as e:
     #     print("Contrib name element error: {}: {}\n{}".format(contrib_name_element, contrib_element, e))
@@ -164,7 +161,6 @@ def match_author_to_email(corr_author, email_dict, matched_keys):
         for email_initials, email_address in email_dict.items():
             seq_1 = unidecode.unidecode(''.join([corr_author.get('given_names'), corr_author.get('surname')]).lower())
             seq_2 = unidecode.unidecode(email_address[0].lower().split('@')[0])
-            print('seq 2: {}'.format(seq_2))
             matcher = difflib.SequenceMatcher(a=seq_1, b=seq_2)
             match = matcher.find_longest_match(0, len(matcher.a), 0, len(matcher.b))
             if match[-1] >= 5:
@@ -177,6 +173,7 @@ def match_author_to_email(corr_author, email_dict, matched_keys):
 
 
 def match_authors_to_emails(corr_author_list, email_dict):
+    matching_error = False
     matched_keys = []
     for corr_author in corr_author_list:
         corr_author = match_author_to_email(corr_author, email_dict, matched_keys)
@@ -192,7 +189,9 @@ def match_authors_to_emails(corr_author_list, email_dict):
         if len(unmatched_email_dict) == len(corr_author_missing_email_list) == 1:
             print('Nuclear option engaged!')
             corr_author_missing_email_list[0]['email'] = list(unmatched_email_dict.values())[0]
-    return corr_author_list
+        else:
+            matching_error = True
+    return corr_author_list, matching_error
 
 
 class Article(object):
@@ -604,15 +603,15 @@ class Article(object):
                 corr_author['email'] = email_dict[corr_author['rid_dict']['corresp'][0]]
             except KeyError:
                 if len(email_dict) == 1:
-                    print('single author nuclear option engaged!')
                     corr_author['email'] = list(email_dict.values())[0]
                 else:
                     print('one_corr_author error finding email for {} in {}'.format(corr_author, email_dict))
         elif len(corr_author_list) > 1:
-            corr_author_list = match_authors_to_emails(corr_author_list, email_dict)
-
+            corr_author_list, matching_error = match_authors_to_emails(corr_author_list, email_dict)
+            if matching_error:
+                print('Warning: corresponding authors not matched correctly to email addresses for {}'
+                      .format(self.doi))
         else:
-            print('No corresponding authors found for {}'.format(self.doi))
             corr_author_list = []
         return contrib_dict_list
 
