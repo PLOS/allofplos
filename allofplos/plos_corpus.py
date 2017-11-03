@@ -558,7 +558,7 @@ def get_uncorrected_proofs_list():
     return uncorrected_proofs_list
 
 
-def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_proofs_text_list):
+def check_for_uncorrected_proofs(directory='', text_list=uncorrected_proofs_text_list):
     """
     For a list of articles, check whether they are the 'uncorrected proof' type
     One of the checks on newly downloaded articles before they're added to corpusdir
@@ -584,7 +584,7 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
         for item in sorted(set(uncorrected_proofs_list)):
             file.write("%s\n" % item)
     if uncorrected_proofs_list:
-        print("{} uncorrected proofs found. {} total in list.".format(new_proofs, len(uncorrected_proofs_list)))
+        print("{0} uncorrected proofs found. {1} total in list.".format(new_proofs, len(uncorrected_proofs_list)))
     else:
         print("No uncorrected proofs found in folder or in existing list.")
     return uncorrected_proofs_list
