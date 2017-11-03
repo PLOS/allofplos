@@ -472,6 +472,35 @@ class Article(object):
                     aff_dict[el.attrib['id']] = el.text.replace('\n','').replace('\r','').replace('\t','')
         return aff_dict
 
+    def get_fn_dict(self):
+        """For a given PLOS article, get list of contributor-affiliated institutions.
+
+        Used to map individual contributors to their institutions
+        :returns: Dictionary of footnote ids to institution information
+        :rtype: {[dict]}
+        """
+        # TO DO: sometimes for editors, the affiliation is in the same element
+        tags_to_fn = ["/",
+                       "article",
+                       "front",
+                       "article-meta",
+                       "author-notes"]
+        article_fn_elements = self.get_element_xpath(tag_path_elements=tags_to_fn)
+        fn_dict = {}
+        fn_elements = [el
+                       for fn_element in article_fn_elements
+                       for el in fn_element.getchildren()
+                       ]
+        for el in fn_elements:
+            if el.attrib.get('id'):
+                if el.getchildren():
+                    for sub_el in el.getchildren():
+                        fn_dict[el.attrib['id']] = sub_el.text
+                else:
+                    # the address for some affiliations is not wrapped in an addr-line tag
+                    fn_dict[el.attrib['id']] = el.text.replace('\n','').replace('\r','').replace('\t','')
+        return fn_dict
+
     def get_corr_author_emails(self):
         tag_path = ["/",
                     "article",
