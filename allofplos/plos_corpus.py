@@ -732,8 +732,7 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
     move_articles(tempdir, destination)
 
 
-def download_file_from_google_drive(id, filename, destination,
-                                    file_size=None):
+def download_file_from_google_drive(id, filename, destination, file_size=None):
     """
     General method for downloading from Google Drive.
     Doesn't require using API or having credentials
@@ -869,7 +868,8 @@ def create_local_plos_corpus(corpusdir, rm_metadata=True):
         os.mkdir(corpusdir)
         print('Creating folder for article xml')
     zip_date, zip_size, metadata_path = get_zip_metadata(corpusdir)
-    zip_path = download_file_from_google_drive(zip_id, local_zip, file_size=zip_size)
+    zip_path = download_file_from_google_drive(zip_id, local_zip, corpusdir,
+                                               file_size=zip_size)
     unzip_articles(zip_path, corpusdir)
     if rm_metadata:
         os.remove(metadata_path)
