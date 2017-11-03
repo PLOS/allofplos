@@ -86,8 +86,21 @@ def get_contrib_name(contrib_element):
                                 surname=surname,
                                 group_name=None)
     else:
-        return None
+        contrib_collab_element = contrib_element.find("collab")
+        print(contrib_collab_element.text)
+        if contrib_collab_element.text:
+            group_name = contrib_collab_element.text
+            contrib_name = dict(group_name=group_name)
+        for element in contrib_element.getchildren():
+            print(element.tag)
+
+    # except AttributeError as e:
+    #     print("Contrib name element error: {}: {}\n{}".format(contrib_name_element, contrib_element, e))
+    #     surname = ''
+    #     given_names = ''
+
     return contrib_name
+
 
 def get_contrib_ids(contrib_element):
     id_list = []
