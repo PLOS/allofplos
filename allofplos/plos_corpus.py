@@ -632,8 +632,8 @@ def check_for_vor_updates(uncorrected_list=None):
     return vor_updates_available
 
 
-def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
-                         vor_updates_available=None, plos_network=False):
+def download_vor_updates(tempdir='', vor_updates_available=None,
+                         plos_network=False):
     """
     For existing uncorrected proofs list, check whether a vor is available to download
     Used in conjunction w/check_for_vor_updates
@@ -665,7 +665,7 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
         new_uncorrected_proofs_list = list(set(new_uncorrected_proofs_list) - set(vor_updated_article_list))
         too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof)]
         if too_old_proofs and plos_network:
-            print("Proofs older than 3 weeks: {}".format(too_old_proofs))
+            print("Proofs older than 3 weeks: {0}".format(too_old_proofs))
 
     # if any VOR articles have been downloaded, update static uncorrected proofs list
     if vor_updated_article_list:
@@ -681,7 +681,7 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
     return vor_updated_article_list
 
 
-def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_network=False):
+def remote_proofs_direct_check(tempdir='', article_list=None, plos_network=False):
     """
     Takes list of of DOIs of uncorrected proofs and compared to raw XML of the article online
     If article status is now 'vor-update-to-uncorrected-proof', download new copy
@@ -726,7 +726,7 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
     repo_download(article_list, tempdir, plos_network=plos_network)
     corrected_articles = check_for_corrected_articles(tempdir=tempdir)
     download_corrected_articles(corrected_article_list=corrected_articles)
-    download_vor_updates(plos_network=plos_network)
+    download_vor_updates(tempdir=tempdir, plos_network=plos_network)
     check_for_uncorrected_proofs(directory=tempdir)
     move_articles(tempdir, destination)
 
