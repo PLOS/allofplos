@@ -216,6 +216,21 @@ class Article(object):
     def doi(self):
         return self._doi
 
+    @property
+    def text_editor(self):
+        try:
+            return self._text_editor
+        except AttributeError as e:
+            print(("{}:\n"
+                   "You need to assign a non-terminal texteditor "
+                   "command to self.text_editor").format(e))
+
+
+
+    @text_editor.setter
+    def text_editor(self, value):
+        self._text_editor = value
+
     @doi.setter
     def doi(self, d):
         if validate_doi(d) is False:
@@ -280,14 +295,12 @@ class Article(object):
                                  pretty_print=pretty_print)
         return print(remote_xml)
 
-    def open_in_editor(self, editor=None):
+    def open_in_editor(self, text_editor=None):
 
-        if not (editor or self._editor):
-            raise TypeError("You have not specified an editor. Please do so.")
-        if editor and editor != self._editor:
-            self._editor = editor
-
-        subprocess.call([self._editor, self.filename])
+        if not (text_editor or self.text_editor):
+            raise TypeError("You have not specified an text_editor. Please do so.")
+        
+        subprocess.call([self._text_editor, self.filename])
 
     def open_in_browser(self):
         subprocess.call(["open", self.page])
