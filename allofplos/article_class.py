@@ -13,7 +13,6 @@ from plos_regex import (validate_doi, corpusdir)
 from samples.corpus_analysis import parse_article_date
 
 
-
 def get_rid_dict(contrib_element):
     rid_dict = {}
     contrib_elements = contrib_element.getchildren()
@@ -55,43 +54,40 @@ def get_author_type(contrib_element):
 def get_contrib_name(contrib_element):
     given_names = ''
     surname = ''
-    contrib_name = {}
 
     contrib_name_element = contrib_element.find("name")
-    try:
+    if contrib_name_element is not None:
         for name_element in contrib_name_element.getchildren():
             if name_element.tag == 'surname':
                 # for some reason, name_element.text doesn't work for this element
-                surname = et.tostring(name_element,
-                                      encoding='unicode',
-                                      method='text').rstrip(' ').rstrip('\t').rstrip('\n')
+                surname = (et.tostring(name_element,
+                                       encoding='unicode',
+                                       method='text').rstrip(' ').rstrip('\t').rstrip('\n')
+                           or "")
             elif name_element.tag == 'given-names':
                 given_names = name_element.text
                 if given_names == '':
                     print("given names element.text didn't work")
-                    given_names = et.tostring(name_element,
-                                              encoding='unicode',
-                                              method='text').rstrip(' ').rstrip('\t').rstrip('\n')
+                    given_names = (et.tostring(name_element,
+                                               encoding='unicode',
+                                               method='text').rstrip(' ').rstrip('\t').rstrip('\n')
+                                   or "")
             else:
                 pass
-    except AttributeError as e:
-        print("Contrib name element error: {}: {}\n{}".format(contrib_name_element, contrib_element, e))
-        surname = ''
-        given_names = ''
-
-    if bool(given_names) and bool(surname):
-        try:
-            contrib_initials = ''.join([part[0].upper() for part in re.split('[-| |,|\.]+', given_names) if part]) + \
-                              ''.join([part[0] for part in re.split('[-| |,|\.]+', surname) if part[0] in string.ascii_uppercase])
-        except IndexError:
-            print("Can't construct initials for {} {}, {}".format(given_names, surname, contrib_element))
-            contrib_initials = ''
-        contrib_name = dict(contrib_initials=contrib_initials,
-                            given_names=given_names,
-                            surname=surname)
-        return contrib_name
+        if bool(given_names) or bool(surname):
+            try:
+                contrib_initials = ''.join([part[0].upper() for part in re.split('[-| |,|\.]+', given_names) if part]) + \
+                                  ''.join([part[0] for part in re.split('[-| |,|\.]+', surname) if part[0] in string.ascii_uppercase])
+            except IndexError:
+                print("Can't construct initials for {} {}, {}".format(given_names, surname, contrib_element))
+                contrib_initials = ''
+            contrib_name = dict(contrib_initials=contrib_initials,
+                                given_names=given_names,
+                                surname=surname,
+                                group_name=None)
     else:
         return None
+    return contrib_name
 
 def get_contrib_ids(contrib_element):
     id_list = []
@@ -498,8 +494,11 @@ class Article(object):
 
     def get_contributors_info(self):
         # TODO: add ORCID, param to remove unnecessary fields (initials) and dicts (rid_dict)
-        # get dictionary of footnote ids to institutional affiliations
+        # TODO: param to remove unnecessary fields (initials) and dicts (rid_dict)
+        # get dictionary of ids to institutional affiliations & all other footnotes
         aff_dict = self.get_aff_dict()
+        fn_dict = self.get_fn_dict()        
+        aff_dict.update(fn_dict)
         # get dictionary of corresponding author email addresses
         email_dict = self.get_corr_author_emails()
         # get list of contributor elements (one per contributor)
@@ -524,11 +523,19 @@ class Article(object):
             # map affiliation footnote ids to the actual institutions
             try:
                 contrib_dict['affiliations'] = [aff_dict.get(aff, "")
-                                                for aff in contrib_dict['rid_dict'].get('aff')
+                                                for k, v in contrib_dict['rid_dict'].items()
+                                                for aff in v
+                                                if k == 'aff'
                                                 ]
             except TypeError:
                 print('error constructing affiliations for {}: {} {}'.format(self.doi, contrib_dict.get('given_names'), contrib_dict.get('surname')))
                 contrib_dict['affiliations'] = [""]
+
+            contrib_dict['footnotes'] = [aff_dict.get(aff, "")
+                                         for k, v in contrib_dict['rid_dict'].items()
+                                         for aff in v
+                                         if k == 'fn'
+                                         ]
 
             contrib_dict_list.append(contrib_dict)
 
