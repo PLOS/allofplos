@@ -22,6 +22,7 @@ import argparse
 import datetime
 import errno
 import logging
+import pureyaml
 import os
 import shutil
 import time
@@ -731,14 +732,14 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
     move_articles(tempdir, destination)
 
 
-def download_file_from_google_drive(id, filename, destination=corpusdir,
+def download_file_from_google_drive(id, filename, destination,
                                     file_size=None):
     """
     General method for downloading from Google Drive.
     Doesn't require using API or having credentials
     :param id: Google Drive id for file (constant even if filename change)
     :param filename: name of the zip file
-    :param destination: directory where to download the zip file, defaults to corpusdir
+    :param destination: directory where to download the zip file
     :param file_size: size of the file being downloaded
     :return: None
     """
@@ -800,7 +801,7 @@ def save_response_content(response, download_path, file_size=None):
                     f.write(chunk)
 
 
-def get_zip_metadata(method='initial'):
+def get_zip_metadata(corpusdir, method='initial'):
     """
     Gets metadata txt file from Google Drive, that has info about zip file
     Used to get the file name, as well as byte size for progress bar
@@ -809,7 +810,7 @@ def get_zip_metadata(method='initial'):
     :return: tuple of data about zip file: date zip created, zip size, and location of metadata txt file
     """
     if method == 'initial':
-        metadata_path = download_file_from_google_drive(metadata_id, zip_metadata)
+        metadata_path = download_file_from_google_drive(metadata_id, zip_metadata, corpusdir)
     with open(metadata_path) as f:
         zip_stats = f.read().splitlines()
     zip_datestring = zip_stats[0]
@@ -819,7 +820,7 @@ def get_zip_metadata(method='initial'):
 
 
 def unzip_articles(file_path,
-                   extract_directory=corpusdir,
+                   extract_directory,
                    filetype='zip',
                    delete_file=True
                    ):
@@ -853,7 +854,7 @@ def unzip_articles(file_path,
         os.remove(file_path)
 
 
-def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
+def create_local_plos_corpus(corpusdir, rm_metadata=True):
     """
     Downloads a fresh copy of the PLOS corpus by:
     1) creating corpusdir if it doesn't exist
@@ -867,9 +868,9 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
     if os.path.isdir(corpusdir) is False:
         os.mkdir(corpusdir)
         print('Creating folder for article xml')
-    zip_date, zip_size, metadata_path = get_zip_metadata()
+    zip_date, zip_size, metadata_path = get_zip_metadata(corpusdir)
     zip_path = download_file_from_google_drive(zip_id, local_zip, file_size=zip_size)
-    unzip_articles(file_path=zip_path)
+    unzip_articles(zip_path, corpusdir)
     if rm_metadata:
         os.remove(metadata_path)
 
@@ -908,7 +909,7 @@ def main():
     if len(corpus_files) < min_files_for_valid_corpus:
         print('Not enough articles in corpusdir, re-downloading zip file')
         # TODO: check if zip file is in top-level directory before downloading
-        create_local_plos_corpus()
+        create_local_plos_corpus(corpusdir)
 
     # Step 1: Query solr via URL and construct DOI list
         # Filtered by article type & scheduled for the last 14 days.
