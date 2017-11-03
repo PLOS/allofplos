@@ -158,7 +158,7 @@ def match_author_to_email(corr_author, email_dict, matched_keys):
                 if corr_author_abbrev_initials == ''.join([email_initials[0], email_initials[-1]]).upper():
                     corr_author['email'] = email_address
                     break
-        except KeyError:
+        except (IndexError, KeyError) as e:
             pass
     if 'email' not in corr_author:
         for email_initials, email_address in email_dict.items():
@@ -548,7 +548,6 @@ class Article(object):
         return corr_emails
 
     def get_contributors_info(self):
-        # TODO: add ORCID, param to remove unnecessary fields (initials) and dicts (rid_dict)
         # TODO: param to remove unnecessary fields (initials) and dicts (rid_dict)
         # get dictionary of ids to institutional affiliations & all other footnotes
         aff_dict = self.get_aff_dict()
