@@ -47,9 +47,6 @@ def get_author_type(contrib_element):
 
     return author_type
 
-    # TODO: check reftype when your are finding the string "cor" in rids
-    # TODO: check assumption that all of the keys for the corresponding xref tag are "corresp"
-
 
 def get_contrib_name(contrib_element):
     given_names = ''
@@ -91,14 +88,9 @@ def get_contrib_name(contrib_element):
             group_name = et.tostring(contrib_collab_element, encoding='unicode')
             group_name = re.sub('<[^>]*>', '', group_name).rstrip('\n')
             if not group_name:
-                print("Error constructing contrib_name element")
+                print("Error constructing contrib_name group element")
                 group_name = ''
         contrib_name = dict(group_name=group_name)
-
-    # except AttributeError as e:
-    #     print("Contrib name element error: {}: {}\n{}".format(contrib_name_element, contrib_element, e))
-    #     surname = ''
-    #     given_names = ''
 
     return contrib_name
 
@@ -602,6 +594,7 @@ class Article(object):
         aff_dict = self.get_aff_dict()
         fn_dict = self.get_fn_dict()        
         aff_dict.update(fn_dict)
+        matching_error = False
         # get dictionary of corresponding author email addresses
         email_dict = self.get_corr_author_emails()
         # get list of contributor elements (one per contributor)
@@ -657,11 +650,14 @@ class Article(object):
 
             contrib_dict_list.append(contrib_dict)
 
+        # match corresponding authors to email addresses
         corr_author_list = [contrib for contrib in contrib_dict_list if contrib.get('author_type', None) == 'corresponding']
         if not corr_author_list and email_dict:
             print('Corr authors but no emails found for {}'.format(self.doi))
+            matching_error = True
         if corr_author_list and not email_dict:
             print('Corr emails not found for {}'.format(self.doi))
+            matching_error = True
         if len(corr_author_list) == 1:
             corr_author = corr_author_list[0]
             try:
@@ -670,14 +666,17 @@ class Article(object):
                 if len(email_dict) == 1:
                     corr_author['email'] = list(email_dict.values())[0]
                 else:
-                    print('one_corr_author error finding email for {} in {}'.format(corr_author, email_dict))
+                    # print('one_corr_author error finding email for {} in {}'.format(corr_author, email_dict))
+                    matching_error = True
         elif len(corr_author_list) > 1:
             corr_author_list, matching_error = match_authors_to_emails(corr_author_list, email_dict)
-            if matching_error:
-                print('Warning: corresponding authors not matched correctly to email addresses for {}'
-                      .format(self.doi))
+
         else:
             corr_author_list = []
+
+        if matching_error:
+            print('Warning: corresponding authors not matched correctly to email addresses for {}'
+                  .format(self.doi))
         return contrib_dict_list
 
     def get_jats_article_type(self):
