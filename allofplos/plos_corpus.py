@@ -488,19 +488,19 @@ def check_for_corrected_articles(tempdir='', article_list=None):
     return corrected_article_list
 
 
-def download_corrected_articles(tempdir='', corrected_article_list=None):
+def download_corrected_articles(directory='', tempdir='', corrected_article_list=None):
     """
     For a list of articles that have been corrected, check if the xml was updated
     Many corrections don't result in XML changes
 
     Use with download_corrected articles
     :param article: the filename for a single article
-    :param directory: directory where the article file is, default is newarticledir
+    :param directory: directory where the article file is
     :param tempdir: where new articles are downloaded to-
     :return: list of DOIs for articles downloaded with new XML versions
     """
     if corrected_article_list is None:
-        corrected_article_list = check_for_corrected_articles(tempdir)
+        corrected_article_list = check_for_corrected_articles(directory)
     corrected_updated_article_list = []
     print("Downloading corrected articles")
     max_value = len(corrected_article_list)
@@ -528,10 +528,11 @@ def check_if_uncorrected_proof(article_file):
     return False
 
 
-def get_uncorrected_proofs_list():
+def get_uncorrected_proofs_list(corpusdir):
     """
     Loads the uncorrected proofs txt file.
     Failing that, creates new txt file from scratch using corpusdir.
+    :param corpusdir: directory where the article file is
     :return: list of DOIs of uncorrected proofs from text list
     """
     try:
@@ -559,7 +560,7 @@ def get_uncorrected_proofs_list():
     return uncorrected_proofs_list
 
 
-def check_for_uncorrected_proofs(directory='', text_list=uncorrected_proofs_text_list):
+def check_for_uncorrected_proofs(tempdir, corpusdir, text_list=uncorrected_proofs_text_list):
     """
     For a list of articles, check whether they are the 'uncorrected proof' type
     One of the checks on newly downloaded articles before they're added to corpusdir
@@ -570,11 +571,11 @@ def check_for_uncorrected_proofs(directory='', text_list=uncorrected_proofs_text
 
     # Read in uncorrected proofs from uncorrected_proofs_text_list txt file
     # If uncorrected_proofs_list txt file doesn't exist, build that list from scratch from main article directory
-    uncorrected_proofs_list = get_uncorrected_proofs_list()
+    uncorrected_proofs_list = get_uncorrected_proofs_list(corpusdir)
 
     # Check directory for uncorrected proofs
     # Append uncorrected proofs to running list
-    articles = listdir_nohidden(directory)
+    articles = listdir_nohidden(tempdir)
     new_proofs = 0
     for article_file in articles:
         if check_if_uncorrected_proof(article_file):
@@ -591,7 +592,7 @@ def check_for_uncorrected_proofs(directory='', text_list=uncorrected_proofs_text
     return uncorrected_proofs_list
 
 
-def check_for_vor_updates(uncorrected_list=None):
+def check_for_vor_updates(corpusdir, uncorrected_list=None):
     """
     For existing uncorrected proofs list,
     check whether a vor is available to download
@@ -601,7 +602,7 @@ def check_for_vor_updates(uncorrected_list=None):
 
     # First get/make list of uncorrected proofs
     if uncorrected_list is None:
-        uncorrected_list = get_uncorrected_proofs_list()
+        uncorrected_list = get_uncorrected_proofs_list(corpusdir)
     # Make it check a single article
     if isinstance(uncorrected_list, str):
         uncorrected_list = [uncorrected_list]
@@ -633,7 +634,7 @@ def check_for_vor_updates(uncorrected_list=None):
     return vor_updates_available
 
 
-def download_vor_updates(tempdir='', vor_updates_available=None,
+def download_vor_updates(corpusdir, tempdir='', vor_updates_available=None,
                          plos_network=False):
     """
     For existing uncorrected proofs list, check whether a vor is available to download
@@ -655,7 +656,7 @@ def download_vor_updates(tempdir='', vor_updates_available=None,
             if updated:
                 vor_updated_article_list.append(article)
 
-    old_uncorrected_proofs_list = get_uncorrected_proofs_list()
+    old_uncorrected_proofs_list = get_uncorrected_proofs_list(corpusdir)
     new_uncorrected_proofs_list = list(set(old_uncorrected_proofs_list) - set(vor_updated_article_list))
 
     # direct remote XML check; add their totals to totals above
@@ -682,7 +683,7 @@ def download_vor_updates(tempdir='', vor_updates_available=None,
     return vor_updated_article_list
 
 
-def remote_proofs_direct_check(tempdir='', article_list=None, plos_network=False):
+def remote_proofs_direct_check(corpusdir, tempdir='', article_list=None, plos_network=False):
     """
     Takes list of of DOIs of uncorrected proofs and compared to raw XML of the article online
     If article status is now 'vor-update-to-uncorrected-proof', download new copy
@@ -698,7 +699,7 @@ def remote_proofs_direct_check(tempdir='', article_list=None, plos_network=False
         pass
     proofs_download_list = []
     if article_list is None:
-        article_list = get_uncorrected_proofs_list()
+        article_list = get_uncorrected_proofs_list(corpusdir)
     for doi in set(article_list):
         file_ = doi_to_path(doi)
         updated = download_updated_xml(file_, vor_check=True, tempdir=tempdir)
@@ -726,9 +727,10 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
     """
     repo_download(article_list, tempdir, plos_network=plos_network)
     corrected_articles = check_for_corrected_articles(tempdir=tempdir)
-    download_corrected_articles(corrected_article_list=corrected_articles)
-    download_vor_updates(tempdir=tempdir, plos_network=plos_network)
-    check_for_uncorrected_proofs(directory=tempdir)
+    download_corrected_articles(directory=destination, tempdir=tempdir,
+                                corrected_article_list=corrected_articles)
+    download_vor_updates(destination, tempdir=tempdir, plos_network=plos_network)
+    check_for_uncorrected_proofs(tempdir, destination)
     move_articles(tempdir, destination)
 
 
