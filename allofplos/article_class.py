@@ -79,7 +79,6 @@ def get_contrib_name(contrib_element):
                 contrib_initials = ''.join([part[0].upper() for part in re.split('[-| |,|\.]+', given_names) if part]) + \
                                   ''.join([part[0] for part in re.split('[-| |,|\.]+', surname) if part[0] in string.ascii_uppercase])
             except IndexError:
-                print("Can't construct initials for {} {}, {}".format(given_names, surname, contrib_element))
                 contrib_initials = ''
             contrib_name = dict(contrib_initials=contrib_initials,
                                 given_names=given_names,
@@ -90,6 +89,9 @@ def get_contrib_name(contrib_element):
         if contrib_collab_element.text:
             group_name = contrib_collab_element.text
             contrib_name = dict(group_name=group_name)
+        else:
+            print("Error constructing contrib_name element")
+            contrib_name = {}
 
     # except AttributeError as e:
     #     print("Contrib name element error: {}: {}\n{}".format(contrib_name_element, contrib_element, e))
@@ -139,13 +141,12 @@ def get_contrib_info(contrib_element):
     return contrib_dict
 
 
-def match_author_to_email(corr_author, email_dict, matched_keys):
+def match_author_initials_to_email(corr_author, email_dict, matched_keys):
     corr_author_initials = corr_author.get('contrib_initials')
     # email_dict keys (initials) are assumed to be uppercase
-    email_dict = {k.upper(): v 
+    email_dict = {k.upper(): v
                   for k, v in email_dict.items()
                   if k not in matched_keys}
-
     try:
         corr_author['email'] = email_dict[corr_author_initials.upper()]
     except KeyError:
@@ -157,40 +158,79 @@ def match_author_to_email(corr_author, email_dict, matched_keys):
                     break
         except (IndexError, KeyError) as e:
             pass
-    if 'email' not in corr_author:
+
+    return corr_author
+
+
+def match_author_names_to_emails(corr_author_list, email_dict):
+    overall_matching_dict = {}
+    match_values = []
+    # Step 1: for each author and email combination, compute longest common string
+    for corr_author in corr_author_list:
+        seq_1 = unidecode.unidecode(''.join([corr_author.get('given_names'), corr_author.get('surname')]).lower())
+        matching_dict = {}
         for email_initials, email_address in email_dict.items():
-            seq_1 = unidecode.unidecode(''.join([corr_author.get('given_names'), corr_author.get('surname')]).lower())
             seq_2 = unidecode.unidecode(email_address[0].lower().split('@')[0])
             matcher = difflib.SequenceMatcher(a=seq_1, b=seq_2)
             match = matcher.find_longest_match(0, len(matcher.a), 0, len(matcher.b))
-            if match[-1] >= 5:
-                print("match ok {}:{}, {} letters".format(seq_1, seq_2, match[-1]))
-                corr_author['email'] = email_address
-                break
-            elif 2 <= match[-1] <= 4:
-                print('match ok?', seq_1[match.a: match.a + match.size], seq_1, seq_2)
-    return corr_author
+            matching_dict[email_address[0]] = match[-1]
+            match_values.append(match[-1])
+        overall_matching_dict[corr_author.get('surname')] = matching_dict
+
+    # Step 2: for the author and email combination(s) with the longest common string, match them
+    newly_matched_emails = []
+    for k1, v1 in overall_matching_dict.items():
+        for k2, v2 in v1.items():
+            if v2 == max(match_values):
+                for corr_author in corr_author_list:
+                    if k1 == corr_author.get('surname') and k2 not in newly_matched_emails:
+                        corr_author['email'] = k2
+                        newly_matched_emails.append(k2)
+    # Step 3: match the remaining author and email if there's only one
+    still_unmatched_authors = [author for author in corr_author_list if 'email' not in author.keys()]
+    still_unmatched_emails = {k: v for k, v in email_dict.items() if v[0] not in newly_matched_emails}
+    if len(still_unmatched_authors) == len(still_unmatched_emails) <= 1:
+        if len(still_unmatched_authors) == len(still_unmatched_emails) == 1:
+            still_unmatched_authors[0]['email'] = list(still_unmatched_emails.values())[0]
+    else:
+        print('not calculating right', still_unmatched_authors, still_unmatched_emails)
+
+    return corr_author_list
 
 
 def match_authors_to_emails(corr_author_list, email_dict):
     matching_error = False
     matched_keys = []
     for corr_author in corr_author_list:
-        corr_author = match_author_to_email(corr_author, email_dict, matched_keys)
+        corr_author = match_author_initials_to_email(corr_author, email_dict, matched_keys)
         if corr_author.get('email', None):
             for k, v in email_dict.items():
                 if v == corr_author.get('email'):
                     matched_keys.append(k)
     if len(email_dict) == len(matched_keys):
+        # all emails and authors are matched
         pass
     else:
         unmatched_email_dict = {k: v for k, v in email_dict.items() if k not in matched_keys}
         corr_author_missing_email_list = [corr_author for corr_author in corr_author_list if not corr_author.get('email', None)]
+
+        # if one author and one email are unmatched, match them
         if len(unmatched_email_dict) == len(corr_author_missing_email_list) == 1:
-            print('Nuclear option engaged!')
             corr_author_missing_email_list[0]['email'] = list(unmatched_email_dict.values())[0]
-        else:
+
+        elif len(unmatched_email_dict) != len(corr_author_missing_email_list):
+            # these numbers should always be the same
             matching_error = True
+
+        else:
+            # match remaining author names to emails by string matching
+            corr_authors = match_author_names_to_emails(corr_author_missing_email_list, unmatched_email_dict)
+            if len([author for author in corr_authors if 'email' not in author.keys()]) == 0:
+                # finally every author and email is matched
+                pass
+            else:
+                # even after applying every strategy, there were unmatched names
+                matching_error = True
     return corr_author_list, matching_error
 
 
@@ -209,7 +249,7 @@ class Article(object):
     def reset_memoized_attrs(self):
         self._tree = None
         self._local = None
-        self._correct_or_retract = None  # Will probably need to be an article subclass      
+        self._correct_or_retract = None  # Will probably need to be an article subclass
 
     @property
     def doi(self):
@@ -223,8 +263,6 @@ class Article(object):
             print(("{}:\n"
                    "You need to assign a non-terminal texteditor "
                    "command to self.text_editor").format(e))
-
-
 
     @text_editor.setter
     def text_editor(self, value):
@@ -298,7 +336,7 @@ class Article(object):
 
         if not (text_editor or self.text_editor):
             raise TypeError("You have not specified an text_editor. Please do so.")
-        
+
         subprocess.call([self._text_editor, self.filename])
 
     def open_in_browser(self):
