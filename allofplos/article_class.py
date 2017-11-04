@@ -82,8 +82,7 @@ def get_contrib_name(contrib_element):
                 contrib_initials = ''
             contrib_name = dict(contrib_initials=contrib_initials,
                                 given_names=given_names,
-                                surname=surname,
-                                group_name=None)
+                                surname=surname)
     else:
         contrib_collab_element = contrib_element.find("collab")
         if contrib_collab_element.text:
@@ -614,12 +613,27 @@ class Article(object):
                     "contrib"]
         contrib_list = self.get_element_xpath(tag_path_elements=tag_path)
         contrib_dict_list = []
+        # iterate through each contributor
         for contrib in contrib_list:
+            # initialize contrib dict
+            contrib_keys = ['contrib_initials',
+                            'given_names',
+                            'surname',
+                            'group_name',
+                            'ids',
+                            'rid_dict',
+                            'contrib_type',
+                            'author_type',
+                            'editor_type',
+                            'email',
+                            'affiliations',
+                            'footnotes'
+                            ]
+            contrib_dict = dict.fromkeys(contrib_keys, None)
             try:
-                contrib_dict = get_contrib_info(contrib)
+                contrib_dict.update(get_contrib_info(contrib))
             except TypeError:
                 print('Error getting contrib info for {}'.format(self.doi, self.type_))
-                contrib_dict = {}
 
             # get dictionary of contributor's footnote types to footnote ids
             contrib_dict['rid_dict'] = get_rid_dict(contrib)
