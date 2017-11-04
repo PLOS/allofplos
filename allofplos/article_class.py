@@ -111,7 +111,21 @@ def get_contrib_ids(contrib_element):
     return id_list
 
 
+def get_credit_taxonomy(contrib_element):
+    credit_dict = {}
+    for item in contrib_element.getchildren():
+        if item.tag == 'role':
+            content_type = item.attrib.get('content-type', None)
+            role = item.text
+            if not credit_dict.get(content_type, None):
+                credit_dict[content_type] = [role]
+            else:
+                credit_dict[content_type].append(role)
+    return credit_dict
+
+
 def get_contrib_info(contrib_element):
+    # TODO: Add credit taxonomy as well as credit initials version
     # get their name
     contrib_dict = get_contrib_name(contrib_element)
 
@@ -132,6 +146,10 @@ def get_contrib_info(contrib_element):
 
     # get dictionary of contributor's footnote types to footnote ids
     contrib_dict['rid_dict'] = get_rid_dict(contrib_element)
+
+    # get dictionary of CREDiT taxonomy, if available
+    contrib_dict['author_role'] = get_credit_taxonomy(contrib_element)
+
     return contrib_dict
 
 
@@ -588,15 +606,60 @@ class Article(object):
                         pass
         return corr_emails
 
+    def get_contributions_dict(self):
+        """For articles that don't use the CREDiT taxonomy, compile a dictionary of author
+        contribution types by author initials.
+        """
+        if self.type_ in ['correction', 'retraction', 'expression-of-concern']:
+            return {}
+        tag_path = ["/",
+                    "article",
+                    "front",
+                    "article-meta",
+                    "author-notes"]
+        author_notes_element = self.get_element_xpath(tag_path_elements=tag_path)[0]
+        author_contributions = {}
+        contrib_dict = {}
+        initials_list = []
+        for note in author_notes_element:
+            if note.attrib.get('fn-type', None) == 'con':
+                try:
+                    con_element = note[0][0]
+                    con_list = con_element.getchildren()
+                    for con_item in con_list:
+                        contribution = con_item[0][0].text.rstrip(':')
+                        contributor_initials = (con_item[0][0].tail.lstrip(' ').rstrip('.')).split(' ')
+                        initials_list.extend(contributor_initials)
+                        contrib_dict[contribution] = contributor_initials
+                except IndexError:
+                    contributions = note[0].text
+                    contribution_list = re.split(': |\. ', contributions)
+                    contribb_dict = dict(list(zip(contribution_list[::2], contribution_list[1::2])))
+                    for k, v in contribb_dict.items():
+                        v_new = v.split(' ')
+                        v_new = [v.rstrip('.') for v in v_new]
+                        contrib_dict[k] = v_new
+                        initials_list.extend(v_new)
+
+        for initials in (set(initials_list)):
+            contrib_list = []
+            for k, v in contrib_dict.items():
+                if initials in v:
+                    contrib_list.append(k)
+            author_contributions[initials] = contrib_list
+        return author_contributions
+
     def get_contributors_info(self):
         # TODO: param to remove unnecessary fields (initials) and dicts (rid_dict)
         # get dictionary of ids to institutional affiliations & all other footnotes
         aff_dict = self.get_aff_dict()
-        fn_dict = self.get_fn_dict()        
+        fn_dict = self.get_fn_dict()      
         aff_dict.update(fn_dict)
         matching_error = False
         # get dictionary of corresponding author email addresses
         email_dict = self.get_corr_author_emails()
+        # get author contributions (if no credit taxonomy)
+        credit_dict = self.get_contributions_dict()
         # get list of contributor elements (one per contributor)
         tag_path = ["/",
                     "article",
@@ -620,6 +683,7 @@ class Article(object):
                             'editor_type',
                             'email',
                             'affiliations',
+                            'author_role',
                             'footnotes'
                             ]
             contrib_dict = dict.fromkeys(contrib_keys, None)
@@ -647,6 +711,12 @@ class Article(object):
                                          for aff in v
                                          if k == 'fn'
                                          ]
+            # if credit_dict and no author_role, map credit dict using initials
+            if not contrib_dict.get('author_role', None):
+                if credit_dict and contrib_dict.get('contrib_initials'):
+                    # TODO: match author initials to credit dictionary
+                    # 
+                    pass
 
             contrib_dict_list.append(contrib_dict)
 
