@@ -263,9 +263,8 @@ def move_articles(source, destination):
     else:
         print("No files moved.")
         logging.info("No article files moved")
-    # Delete temporary folder in most cases
-    if source == newarticledir:
-        shutil.rmtree(source)
+    # Delete temporary folder
+    shutil.rmtree(source)
 
 
 def get_article_xml(article_file, tag_path_elements=None):
@@ -410,12 +409,14 @@ def compare_article_pubdate(article, days=22):
 
 
 def download_updated_xml(article_file,
-                         tempdir='',
+                         corpusdir,
+                         tempdir,
                          vor_check=False):
     """
     For an article file, compare local XML to remote XML
     If they're different, download new version of article
     :param article_file: the filename for a single article
+    :para corpusdir:
     :param tempdir: directory where files are downloaded to
     :param vor_check: whether checking to see if uncorrected proof is updated
     :return: boolean for whether update was available & downloaded
@@ -488,7 +489,7 @@ def check_for_corrected_articles(tempdir='', article_list=None):
     return corrected_article_list
 
 
-def download_corrected_articles(tempdir='', corrected_article_list=None):
+def download_corrected_articles(tempdir, corpusdir, corrected_article_list=None):
     """
     For a list of articles that have been corrected, check if the xml was updated
     Many corrections don't result in XML changes
@@ -506,7 +507,7 @@ def download_corrected_articles(tempdir='', corrected_article_list=None):
     max_value = len(corrected_article_list)
     bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
     for i, article in enumerate(corrected_article_list):
-        updated = download_updated_xml(article, tempdir=tempdir)
+        updated = download_updated_xml(article, corpusdir, tempdir)
         if updated:
             corrected_updated_article_list.append(article)
         bar.update(i+1)
@@ -633,7 +634,7 @@ def check_for_vor_updates(corpusdir='', uncorrected_list=None):
     return vor_updates_available
 
 
-def download_vor_updates(corpusdir, tempdir='', vor_updates_available=None,
+def download_vor_updates(corpusdir, tempdir, vor_updates_available=None,
                          plos_network=False):
     """
     For existing uncorrected proofs list, check whether a vor is available to download
@@ -650,8 +651,7 @@ def download_vor_updates(corpusdir, tempdir='', vor_updates_available=None,
     vor_updated_article_list = []
     if vor_updates_available:
         for article in vor_updates_available:
-            updated = download_updated_xml(article, vor_check=True,
-                                           tempdir=tempdir)
+            updated = download_updated_xml(article, corpusdir, tempdir, vor_check=True)
             if updated:
                 vor_updated_article_list.append(article)
 
@@ -660,7 +660,7 @@ def download_vor_updates(corpusdir, tempdir='', vor_updates_available=None,
 
     # direct remote XML check; add their totals to totals above
     if new_uncorrected_proofs_list:
-        proofs_download_list = remote_proofs_direct_check(corpusdir,
+        proofs_download_list = remote_proofs_direct_check(corpusdir, tempdir,
                                                           article_list=new_uncorrected_proofs_list,
                                                           plos_network=plos_network)
         vor_updated_article_list.extend(proofs_download_list)
@@ -683,7 +683,7 @@ def download_vor_updates(corpusdir, tempdir='', vor_updates_available=None,
     return vor_updated_article_list
 
 
-def remote_proofs_direct_check(corpusdir, tempdir='', article_list=None, plos_network=False):
+def remote_proofs_direct_check(corpusdir, tempdir, article_list=None, plos_network=False):
     """
     Takes list of of DOIs of uncorrected proofs and compared to raw XML of the article online
     If article status is now 'vor-update-to-uncorrected-proof', download new copy
@@ -702,7 +702,7 @@ def remote_proofs_direct_check(corpusdir, tempdir='', article_list=None, plos_ne
         article_list = get_uncorrected_proofs_list(corpusdir)
     for doi in set(article_list):
         file_ = doi_to_path(doi)
-        updated = download_updated_xml(file_, vor_check=True, tempdir=tempdir)
+        updated = download_updated_xml(file_, corpusdir, tempdir, vor_check=True)
         if updated:
             proofs_download_list.append(doi)
     if proofs_download_list:
@@ -727,8 +727,8 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
     """
     repo_download(article_list, tempdir, plos_network=plos_network)
     corrected_articles = check_for_corrected_articles(tempdir=tempdir)
-    download_corrected_articles(corrected_article_list=corrected_articles)
-    download_vor_updates(corpusdir=destination, tempdir=tempdir, plos_network=plos_network)
+    download_corrected_articles(tempdir, destination, corrected_article_list=corrected_articles)
+    download_vor_updates(destination, tempdir, plos_network=plos_network)
     check_for_uncorrected_proofs(directory=tempdir)
     move_articles(tempdir, destination)
 
