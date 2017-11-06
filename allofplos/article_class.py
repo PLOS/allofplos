@@ -522,7 +522,8 @@ class Article(object):
                 if el.getchildren():
                     for sub_el in el.getchildren():
                         if sub_el.tag == 'addr-line':
-                            aff_dict[el.attrib['id']] = sub_el.text
+                            aff_text_fixed = ' '.join([aff_string.strip() for aff_string in sub_el.text.splitlines()])
+                            aff_dict[el.attrib['id']] = aff_text_fixed
                 else:
                     # the address for some affiliations is not wrapped in an addr-line tag
                     aff_dict[el.attrib['id']] = el.text.replace('\n', '').replace('\r', '').replace('\t', '')
