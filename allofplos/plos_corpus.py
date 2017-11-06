@@ -263,9 +263,6 @@ def move_articles(source, destination):
     else:
         print("No files moved.")
         logging.info("No article files moved")
-    # Delete temporary folder
-    shutil.rmtree(source)
-
 
 def get_article_xml(article_file, tag_path_elements=None):
     """
