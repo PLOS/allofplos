@@ -506,7 +506,6 @@ class Article(object):
         :returns: Dictionary of footnote ids to institution information
         :rtype: {[dict]}
         """
-        # TO DO: sometimes for editors, the affiliation is in the same element
         tags_to_aff = ["/",
                        "article",
                        "front",
@@ -536,7 +535,6 @@ class Article(object):
         :returns: Dictionary of footnote ids to institution information
         :rtype: {[dict]}
         """
-        # TO DO: sometimes for editors, the affiliation is in the same element
         tags_to_fn = ["/",
                       "article",
                       "front",
@@ -617,6 +615,9 @@ class Article(object):
     def get_contributions_dict(self):
         """For articles that don't use the CREDiT taxonomy, compile a dictionary of author
         contribution types by author initials.
+        Works for highly formatted lists with subelements (e.g. '10.1371/journal.pone.0170354') and structured single strings
+        (e.g. '10.1371/journal.pone.0050782'), but still fails for unusual strings (e.g, '10.1371/journal.pntd.0000072')
+        TODO: Use regex to properly separate author roles from initials for unusual strings.
         """
         if self.type_ in ['correction', 'retraction', 'expression-of-concern']:
             return {}
@@ -659,7 +660,7 @@ class Article(object):
 
     def get_contributors_info(self):
         # TODO: param to remove unnecessary fields (initials) and dicts (rid_dict)
-
+        # TODO: also get funding information, data availability, etc
         # get dictionary of ids to institutional affiliations & all other footnotes
         aff_dict = self.get_aff_dict()
         fn_dict = self.get_fn_dict()
