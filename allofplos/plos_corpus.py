@@ -384,7 +384,7 @@ def get_article_pubdate(article_file, date_format='%d %m %Y'):
     return pubdate
 
 
-def compare_article_pubdate(article, days=22):
+def compare_article_pubdate(article, newarticledir, days=22):
     """
     Check if an article's publication date was more than 3 weeks ago.
     :param article: doi/file of the article
@@ -665,7 +665,7 @@ def download_vor_updates(corpusdir, tempdir, vor_updates_available=None,
                                                           plos_network=plos_network)
         vor_updated_article_list.extend(proofs_download_list)
         new_uncorrected_proofs_list = list(set(new_uncorrected_proofs_list) - set(vor_updated_article_list))
-        too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof)]
+        too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof, tempdir)]
         if too_old_proofs and plos_network:
             print("Proofs older than 3 weeks: {0}".format(too_old_proofs))
 
