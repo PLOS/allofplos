@@ -724,29 +724,23 @@ class Article(object):
                                          for aff in v
                                          if k == 'fn'
                                          ]
-            # if credit_dict and no author_role, map credit dict using initials
-            if not contrib_dict.get('author_roles', None) and contrib_dict.get('contrib_type', None) == 'author':
-                if credit_dict and contrib_dict.get('contrib_initials', None):
-                    # match author initials to credit dictionary
-                    contrib_initials = contrib_dict.get('contrib_initials', None)
-                    try:
-                        contrib_credit_dict = dict(author_notes=credit_dict[contrib_initials])
-                        contrib_dict['author_roles'] = contrib_credit_dict
-                        credit_dict_matched_initials.append(credit_dict_matched_initials)
-                    except KeyError:
-                        print('error matching {} {} to author roles in {}'.format(contrib_dict['given_names'],
-                                                                                  contrib_dict['surname'],
-                                                                                  self.doi))
-                        pass
 
             contrib_dict_list.append(contrib_dict)
 
-        # check 'author_roles' dicts mapped correctly
+        # match authors to credit_dicts (from author notes) if necessary
         if credit_dict:
-            if len(credit_dict_matched_initials) == len([author for author in contrib_dict_list if author.get('contrib_type', None) == 'author']):
-                pass
-            else:
-                print('Error constructing credit dictionary for {}'.format(self.doi))
+            author_list = [author for author in contrib_dict_list
+                           if author.get('contrib_type', None) == 'author']
+            author_list, credit_matching_error = match_contribs_to_dicts(author_list,
+                                                                         credit_dict,
+                                                                         contrib_key='author_roles')
+            for author in author_list:
+                role_list = author.get('author_roles', None)
+                author['author_roles'] = {'author_notes': role_list}
+
+            if credit_matching_error:
+                print('Warning: authors not matched correctly to author_roles for {}'
+                      .format(self.doi))
 
         # match corresponding authors to email addresses
         corr_author_list = [contrib for contrib in contrib_dict_list if contrib.get('author_type', None) == 'corresponding']
