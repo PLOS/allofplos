@@ -116,6 +116,8 @@ def get_credit_taxonomy(contrib_element):
     for item in contrib_element.getchildren():
         if item.tag == 'role':
             content_type = item.attrib.get('content-type', None)
+            if content_type == 'http://credit.casrai.org/':
+                content_type = 'CASRAI CREDiT taxonomy'
             role = item.text
             if not credit_dict.get(content_type, None):
                 credit_dict[content_type] = [role]
@@ -125,7 +127,6 @@ def get_credit_taxonomy(contrib_element):
 
 
 def get_contrib_info(contrib_element):
-    # TODO: Add credit taxonomy as well as credit initials version
     # get their name
     contrib_dict = get_contrib_name(contrib_element)
 
@@ -148,30 +149,30 @@ def get_contrib_info(contrib_element):
     contrib_dict['rid_dict'] = get_rid_dict(contrib_element)
 
     # get dictionary of CREDiT taxonomy, if available
-    contrib_dict['author_role'] = get_credit_taxonomy(contrib_element)
+    contrib_dict['author_roles'] = get_credit_taxonomy(contrib_element)
 
     return contrib_dict
 
 
-def match_author_initials_to_email(corr_author, email_dict, matched_keys):
-    corr_author_initials = corr_author.get('contrib_initials')
-    # email_dict keys (initials) are assumed to be uppercase
-    email_dict = {k.upper(): v
-                  for k, v in email_dict.items()
-                  if k not in matched_keys}
+def match_contrib_initials_to_dict(contrib_dict, special_dict, matched_keys, contrib_key):
+    contributor_initials = contrib_dict.get('contrib_initials')
+    # special_dict keys (initials) are assumed to be uppercase
+    special_dict = {k.upper(): v
+                    for k, v in special_dict.items()
+                    if k not in matched_keys}
     try:
-        corr_author['email'] = email_dict[corr_author_initials.upper()]
+        contrib_dict[contrib_key] = special_dict[contributor_initials.upper()]
     except KeyError:
         try:
-            corr_author_abbrev_initials = ''.join([corr_author_initials[0], corr_author_initials[-1]])
-            for email_initials, email_address in email_dict.items():
-                if corr_author_abbrev_initials == ''.join([email_initials[0], email_initials[-1]]).upper():
-                    corr_author['email'] = email_address
+            contributor_abbrev_initials = ''.join([contributor_initials[0], contributor_initials[-1]])
+            for dict_initials, dict_value in special_dict.items():
+                if contributor_abbrev_initials == ''.join([dict_initials[0], dict_initials[-1]]).upper():
+                    contrib_dict[contrib_key] = dict_value
                     break
         except (IndexError, KeyError) as e:
             pass
 
-    return corr_author
+    return contrib_dict
 
 
 def match_author_names_to_emails(corr_author_list, email_dict):
@@ -210,40 +211,46 @@ def match_author_names_to_emails(corr_author_list, email_dict):
     return corr_author_list
 
 
-def match_authors_to_emails(corr_author_list, email_dict):
+def match_contribs_to_dicts(contrib_list, special_dict, contrib_key):
     matching_error = False
     matched_keys = []
-    for corr_author in corr_author_list:
-        corr_author = match_author_initials_to_email(corr_author, email_dict, matched_keys)
-        if corr_author.get('email', None):
-            for k, v in email_dict.items():
-                if v == corr_author.get('email'):
+    for contrib_dict in contrib_list:
+        contrib_dict = match_contrib_initials_to_dict(contrib_dict,
+                                                      special_dict,
+                                                      matched_keys,
+                                                      contrib_key)
+        if contrib_dict.get(contrib_key, None):
+            for k, v in special_dict.items():
+                if v == contrib_dict.get(contrib_key):
                     matched_keys.append(k)
-    if len(email_dict) == len(matched_keys):
-        # all emails and authors are matched
+    if len(special_dict) == len(matched_keys):
+        # all special_dicts and contributors are matched
         pass
     else:
-        unmatched_email_dict = {k: v for k, v in email_dict.items() if k not in matched_keys}
-        corr_author_missing_email_list = [corr_author for corr_author in corr_author_list if not corr_author.get('email', None)]
+        unmatched_special_dict = {k: v for k, v in special_dict.items()
+                                  if k not in matched_keys}
+        contrib_dict_missing_special_list = [contrib_dict for contrib_dict in contrib_list
+                                             if not contrib_dict.get(contrib_key, None)]
 
-        # if one author and one email are unmatched, match them
-        if len(unmatched_email_dict) == len(corr_author_missing_email_list) == 1:
-            corr_author_missing_email_list[0]['email'] = list(unmatched_email_dict.values())[0]
+        # if one contributor and one special_dict are unmatched, match them
+        if len(unmatched_special_dict) == len(contrib_dict_missing_special_list) == 1:
+            contrib_dict_missing_special_list[0][contrib_key] = list(unmatched_special_dict.values())[0]
 
-        elif len(unmatched_email_dict) != len(corr_author_missing_email_list):
+        elif len(unmatched_special_dict) != len(contrib_dict_missing_special_list):
             # these numbers should always be the same
             matching_error = True
 
         else:
-            # match remaining author names to emails by string matching
-            corr_authors = match_author_names_to_emails(corr_author_missing_email_list, unmatched_email_dict)
-            if len([author for author in corr_authors if 'email' not in author.keys()]) == 0:
-                # finally every author and email is matched
+            if contrib_key == 'email':
+                # match remaining contributor names to emails by string matching
+                contrib_dicts = match_author_names_to_emails(contrib_dict_missing_special_list, unmatched_special_dict)
+            if len([contrib for contrib in contrib_dicts if contrib_key not in contrib.keys()]) == 0:
+                # finally every contributor and special_dict is matched
                 pass
             else:
-                # even after applying every strategy, there were unmatched names
+                # even after applying every strategy, there were unmatched contributors
                 matching_error = True
-    return corr_author_list, matching_error
+    return contrib_list, matching_error
 
 
 class Article(object):
@@ -637,8 +644,8 @@ class Article(object):
                     contribb_dict = dict(list(zip(contribution_list[::2], contribution_list[1::2])))
                     for k, v in contribb_dict.items():
                         v_new = v.split(' ')
-                        v_new = [v.rstrip('.') for v in v_new]
-                        contrib_dict[k] = v_new
+                        v_new = [v.rstrip('.').strip('\n') for v in v_new]
+                        contrib_dict[k.strip('\n')] = v_new
                         initials_list.extend(v_new)
 
         for initials in (set(initials_list)):
@@ -651,15 +658,20 @@ class Article(object):
 
     def get_contributors_info(self):
         # TODO: param to remove unnecessary fields (initials) and dicts (rid_dict)
+
         # get dictionary of ids to institutional affiliations & all other footnotes
         aff_dict = self.get_aff_dict()
         fn_dict = self.get_fn_dict()      
         aff_dict.update(fn_dict)
         matching_error = False
+
         # get dictionary of corresponding author email addresses
         email_dict = self.get_corr_author_emails()
+
         # get author contributions (if no credit taxonomy)
         credit_dict = self.get_contributions_dict()
+        credit_dict_matched_initials = []
+
         # get list of contributor elements (one per contributor)
         tag_path = ["/",
                     "article",
@@ -669,6 +681,7 @@ class Article(object):
                     "contrib"]
         contrib_list = self.get_element_xpath(tag_path_elements=tag_path)
         contrib_dict_list = []
+
         # iterate through each contributor
         for contrib in contrib_list:
             # initialize contrib dict
@@ -683,7 +696,7 @@ class Article(object):
                             'editor_type',
                             'email',
                             'affiliations',
-                            'author_role',
+                            'author_roles',
                             'footnotes'
                             ]
             contrib_dict = dict.fromkeys(contrib_keys, None)
@@ -712,13 +725,28 @@ class Article(object):
                                          if k == 'fn'
                                          ]
             # if credit_dict and no author_role, map credit dict using initials
-            if not contrib_dict.get('author_role', None):
-                if credit_dict and contrib_dict.get('contrib_initials'):
-                    # TODO: match author initials to credit dictionary
-                    # 
-                    pass
+            if not contrib_dict.get('author_roles', None) and contrib_dict.get('contrib_type', None) == 'author':
+                if credit_dict and contrib_dict.get('contrib_initials', None):
+                    # match author initials to credit dictionary
+                    contrib_initials = contrib_dict.get('contrib_initials', None)
+                    try:
+                        contrib_credit_dict = dict(author_notes=credit_dict[contrib_initials])
+                        contrib_dict['author_roles'] = contrib_credit_dict
+                        credit_dict_matched_initials.append(credit_dict_matched_initials)
+                    except KeyError:
+                        print('error matching {} {} to author roles in {}'.format(contrib_dict['given_names'],
+                                                                                  contrib_dict['surname'],
+                                                                                  self.doi))
+                        pass
 
             contrib_dict_list.append(contrib_dict)
+
+        # check 'author_roles' dicts mapped correctly
+        if credit_dict:
+            if len(credit_dict_matched_initials) == len([author for author in contrib_dict_list if author.get('contrib_type', None) == 'author']):
+                pass
+            else:
+                print('Error constructing credit dictionary for {}'.format(self.doi))
 
         # match corresponding authors to email addresses
         corr_author_list = [contrib for contrib in contrib_dict_list if contrib.get('author_type', None) == 'corresponding']
@@ -739,7 +767,9 @@ class Article(object):
                     # print('one_corr_author error finding email for {} in {}'.format(corr_author, email_dict))
                     matching_error = True
         elif len(corr_author_list) > 1:
-            corr_author_list, matching_error = match_authors_to_emails(corr_author_list, email_dict)
+            corr_author_list, matching_error = match_contribs_to_dicts(corr_author_list,
+                                                                       email_dict,
+                                                                       contrib_key='email')
 
         else:
             corr_author_list = []
