@@ -513,8 +513,8 @@ class Article(object):
                        "article-meta"]
         article_aff_elements = self.get_element_xpath(tag_path_elements=tags_to_aff)
         aff_dict = {}
-        aff_elements = [el 
-                        for aff_element in article_aff_elements 
+        aff_elements = [el
+                        for aff_element in article_aff_elements
                         for el in aff_element.getchildren()
                         ]
         for el in aff_elements:
@@ -525,7 +525,7 @@ class Article(object):
                             aff_dict[el.attrib['id']] = sub_el.text
                 else:
                     # the address for some affiliations is not wrapped in an addr-line tag
-                    aff_dict[el.attrib['id']] = el.text.replace('\n','').replace('\r','').replace('\t','')
+                    aff_dict[el.attrib['id']] = el.text.replace('\n', '').replace('\r', '').replace('\t', '')
         return aff_dict
 
     def get_fn_dict(self):
@@ -537,10 +537,10 @@ class Article(object):
         """
         # TO DO: sometimes for editors, the affiliation is in the same element
         tags_to_fn = ["/",
-                       "article",
-                       "front",
-                       "article-meta",
-                       "author-notes"]
+                      "article",
+                      "front",
+                      "article-meta",
+                      "author-notes"]
         article_fn_elements = self.get_element_xpath(tag_path_elements=tags_to_fn)
         fn_dict = {}
         fn_elements = [el
@@ -661,7 +661,7 @@ class Article(object):
 
         # get dictionary of ids to institutional affiliations & all other footnotes
         aff_dict = self.get_aff_dict()
-        fn_dict = self.get_fn_dict()      
+        fn_dict = self.get_fn_dict()
         aff_dict.update(fn_dict)
         matching_error = False
 
@@ -670,7 +670,6 @@ class Article(object):
 
         # get author contributions (if no credit taxonomy)
         credit_dict = self.get_contributions_dict()
-        credit_dict_matched_initials = []
 
         # get list of contributor elements (one per contributor)
         tag_path = ["/",
