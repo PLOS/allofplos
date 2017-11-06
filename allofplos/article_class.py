@@ -55,58 +55,19 @@ class Article(object):
         self.reset_memoized_attrs()
         self._doi = d
 
-    def get_path(self):
-        if 'annotation' in self.doi:
-            article_path = os.path.join(self.directory, 'plos.correction.' + self.doi.split('/')[-1] + '.xml')
-        else:
-            article_path = os.path.join(self.directory, self.doi.lstrip('10.1371/') + '.xml')
-        return article_path
-
-    def get_local_bool(self):
-        article_path = self.get_path()
-        return os.path.isfile(article_path)
-
-    def get_local_element_tree(self, article_path=None):
-        if article_path is None:
-            article_path = self.get_path()
-        if self.local:
-            local_element_tree = et.parse(article_path)
-            return local_element_tree
-        else:
-            print("Local article file not found: {}".format(article_path))
-
-    def get_local_root_element(self, article_tree=None):
-        if article_tree is None:
-            article_tree = self.tree
-        root = article_tree.getroot()
-        return root
-
-    def get_local_xml(self, article_tree=None, pretty_print=True):
-        if article_tree is None:
-            article_tree = self.tree
-        local_xml = et.tostring(article_tree,
+    def get_local_xml(self, pretty_print=True):
+        local_xml = et.tostring(self.tree,
                                 method='xml',
                                 encoding='unicode',
                                 pretty_print=pretty_print)
         return print(local_xml)
 
-    def get_landing_page(self):
-        return BASE_URL_ARTICLE_LANDING_PAGE + self.doi
-
     def get_url(self, plos_network=False):
         URL_TMP = INT_URL_TMP if plos_network else EXT_URL_TMP
         return URL_TMP.format(self.doi)
 
-    def get_remote_element_tree(self, url=None):
-        if url is None:
-            url = self.get_url()
-        remote_element_tree = et.parse(url)
-        return remote_element_tree
-
-    def get_remote_xml(self, article_tree=None, pretty_print=True):
-        if article_tree is None:
-            article_tree = self.get_remote_element_tree()
-        remote_xml = et.tostring(article_tree,
+    def get_remote_xml(self, pretty_print=True):
+        remote_xml = et.tostring(self.remote_element_tree,
                                  method='xml',
                                  encoding='unicode',
                                  pretty_print=pretty_print)
@@ -122,7 +83,7 @@ class Article(object):
     def open_in_browser(self):
         subprocess.call(["open", self.page])
 
-    def get_element_xpath(self, article_root=None, tag_path_elements=None):
+    def get_element_xpath(self, tag_path_elements=None):
         """
         For a local article's root element, grab particular sub-elements via XPath location
         Defaults to reading the element location for uncorrected proofs/versions of record
@@ -130,8 +91,6 @@ class Article(object):
         :param tag_path_elements: xpath location in the XML tree of the article file
         :return: list of elements with that xpath location
         """
-        if article_root is None:
-            article_root = self.root
         if tag_path_elements is None:
             tag_path_elements = ('/',
                                  'article',
@@ -141,23 +100,7 @@ class Article(object):
                                  'custom-meta',
                                  'meta-value')
         tag_location = '/'.join(tag_path_elements)
-        return article_root.xpath(tag_location)
-
-    def get_proof_status(self):
-        """
-        For a single article in a directory, check whether it is an 'uncorrected proof' or a
-        'VOR update' to the uncorrected proof, or neither
-        :return: proof status if it exists; otherwise, None
-        """
-        xpath_results = self.get_element_xpath()
-        for result in xpath_results:
-            if result.text == 'uncorrected-proof':
-                return 'uncorrected_proof'
-            elif result.text == 'vor-update-to-uncorrected-proof':
-                return 'vor_update'
-            else:
-                pass
-        return None
+        return self.root.xpath(tag_location)
 
     def get_plos_journal(self, caps_fixed=True):
         """
@@ -190,20 +133,6 @@ class Article(object):
                 journal[0] = "PLOS"
             journal = (' ').join(journal)
         return journal
-
-    def get_article_title(self):
-        """
-        For an individual PLOS article, get its title.
-        :return: string of article title at specified xpath location
-        """
-        title = self.get_element_xpath(tag_path_elements=["/",
-                                                          "article",
-                                                          "front",
-                                                          "article-meta",
-                                                          "title-group",
-                                                          "article-title"])
-        title_text = et.tostring(title[0], encoding='unicode', method='text', pretty_print=True)
-        return title_text.rstrip('\n')
 
     def get_dates(self, string_=False, string_format='%Y-%m-%d', debug=False):
         """
@@ -255,10 +184,6 @@ class Article(object):
                     dates[key] = value.strftime(string_format)
 
         return dates
-
-    def get_pubdate(self, string_=False, string_format='%Y-%m-%d'):
-        dates = self.get_dates(string_=string_, string_format=string_format)
-        return dates['epub']
 
     def get_aff_dict(self):
         """For a given PLOS article, get list of contributor-affiliated institutions.
@@ -535,77 +460,6 @@ class Article(object):
                   .format(self.doi))
         return contrib_dict_list
 
-    def get_jats_article_type(self):
-        """For an article file, get its JATS article type.
-        Use primarily to find Correction (and thereby corrected) articles
-        :return: JATS article_type at that xpath location
-        """
-        type_element_list = self.get_element_xpath(tag_path_elements=["/",
-                                                                      "article"])
-        return type_element_list[0].attrib['article-type']
-
-    def get_plos_article_type(self):
-        """
-        For an article file, get its PLOS article type. This format is less standardized than JATS article type
-        :return: PLOS article_type at that xpath location
-        """
-        article_categories = self.get_element_xpath(tag_path_elements=["/",
-                                                                       "article",
-                                                                       "front",
-                                                                       "article-meta",
-                                                                       "article-categories"])
-        subject_list = article_categories[0].getchildren()
-
-        for i, subject in enumerate(subject_list):
-            if subject.get('subj-group-type') == "heading":
-                subject_instance = subject_list[i][0]
-                s = ''
-                for text in subject_instance.itertext():
-                    s = s + text
-                    plos_article_type = s
-        return plos_article_type
-
-    def get_dtd(self):
-        """
-        For more information on these DTD tagsets, see https://jats.nlm.nih.gov/1.1d3/ and https://dtd.nlm.nih.gov/3.0/
-        """
-        try:
-            dtd = self.get_element_xpath(tag_path_elements=["/",
-                                                            "article"])
-            dtd = dtd[0].attrib['dtd-version']
-            if str(dtd) == '3.0':
-                dtd = 'NLM 3.0'
-            elif dtd == '1.1d3':
-                dtd = 'JATS 1.1d3'
-        except KeyError:
-            print('Error parsing DTD from', self.doi)
-            dtd = 'N/A'
-        return dtd
-
-    def get_abstract(self):
-        """
-        For an individual article in the PLOS corpus, get the string of the abstract content.
-        :return: plain-text string of content in abstract
-        """
-        abstract = self.get_element_xpath(tag_path_elements=["/",
-                                                             "article",
-                                                             "front",
-                                                             "article-meta",
-                                                             "abstract"])
-        try:
-            abstract_text = et.tostring(abstract[0], encoding='unicode', method='text')
-        except IndexError:
-            if self.type_ == 'research-article' and self.plostype == 'Research Article':
-                print('No abstract found for research article {}'.format(self.doi))
-
-            abstract_text = ''
-
-        # clean up text: rem white space, new line marks, blank lines
-        abstract_text = abstract_text.strip().replace('  ', '')
-        abstract_text = os.linesep.join([s for s in abstract_text.splitlines() if s])
-
-        return abstract_text
-
     def correct_or_retract_bool(self):
         if self.type_ == 'correction' or self.type_ == 'retraction':
             self._correct_or_retract = True
@@ -685,17 +539,22 @@ class Article(object):
     @property
     def tree(self):
         if self._tree is None:
-            return self.get_local_element_tree()
+            if self.local:
+                local_element_tree = et.parse(self.filename)
+                return local_element_tree
+            else:
+                print("Local article file not found: {}".format(self.filename))
+                return None
         else:
             return self._tree
 
     @property
     def root(self):
-        return self.get_local_root_element()
+        return self.tree.getroot()
 
     @property
     def page(self):
-        return self.get_landing_page()
+        return BASE_URL_ARTICLE_LANDING_PAGE + self.doi
 
     @property
     def url(self):
@@ -703,18 +562,39 @@ class Article(object):
 
     @property
     def filename(self):
-        return self.get_path()
+        if 'annotation' in self.doi:
+            article_path = os.path.join(self.directory, 'plos.correction.' + self.doi.split('/')[-1] + '.xml')
+        else:
+            article_path = os.path.join(self.directory, self.doi.lstrip('10.1371/') + '.xml')
+        return article_path
 
     @property
     def local(self):
         if self._local is None:
-            return self.get_local_bool()
+            return os.path.isfile(self.filename)
         else:
             return self._local
 
     @property
     def proof(self):
-        return self.get_proof_status()
+        """
+        For a single article in a directory, check whether it is an 'uncorrected proof' or a
+        'VOR update' to the uncorrected proof, or neither
+        :return: proof status if it exists; otherwise, None
+        """
+        xpath_results = self.get_element_xpath()
+        for result in xpath_results:
+            if result.text == 'uncorrected-proof':
+                return 'uncorrected_proof'
+            elif result.text == 'vor-update-to-uncorrected-proof':
+                return 'vor_update'
+            else:
+                pass
+        return None
+
+    @property
+    def remote_element_tree(self):
+        return et.parse(self.url)
 
     @property
     def journal(self):
@@ -722,16 +602,28 @@ class Article(object):
 
     @property
     def title(self):
-        return self.get_article_title()
+        """
+        For an individual PLOS article, get its title.
+        :return: string of article title at specified xpath location
+        """
+        title = self.get_element_xpath(tag_path_elements=["/",
+                                                          "article",
+                                                          "front",
+                                                          "article-meta",
+                                                          "title-group",
+                                                          "article-title"])
+        title_text = et.tostring(title[0], encoding='unicode', method='text', pretty_print=True)
+        return title_text.rstrip('\n')
 
     @property
     def pubdate(self):
-        return self.get_pubdate()
+        dates = self.get_dates()
+        return dates['epub']
 
     @property
     def authors(self):
         contributors = self.get_contributors_info()
-        return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'author']       
+        return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'author']    
 
     @property
     def corr_author(self):
@@ -745,19 +637,78 @@ class Article(object):
 
     @property
     def type_(self):
-        return self.get_jats_article_type()
+        """For an article file, get its JATS article type.
+        Use primarily to find Correction (and thereby corrected) articles
+        :return: JATS article_type at that xpath location
+        """
+        type_element_list = self.get_element_xpath(tag_path_elements=["/",
+                                                                      "article"])
+        return type_element_list[0].attrib['article-type']
 
     @property
     def plostype(self):
-        return self.get_plos_article_type()
+        """
+        For an article file, get its PLOS article type. This format is less standardized than JATS article type
+        :return: PLOS article_type at that xpath location
+        """
+        article_categories = self.get_element_xpath(tag_path_elements=["/",
+                                                                       "article",
+                                                                       "front",
+                                                                       "article-meta",
+                                                                       "article-categories"])
+        subject_list = article_categories[0].getchildren()
+
+        for i, subject in enumerate(subject_list):
+            if subject.get('subj-group-type') == "heading":
+                subject_instance = subject_list[i][0]
+                s = ''
+                for text in subject_instance.itertext():
+                    s = s + text
+                    plos_article_type = s
+        return plos_article_type
 
     @property
     def dtd(self):
-        return self.get_dtd()
+        """
+        For more information on these DTD tagsets, see https://jats.nlm.nih.gov/1.1d3/ and https://dtd.nlm.nih.gov/3.0/
+        """
+        try:
+            dtd = self.get_element_xpath(tag_path_elements=["/",
+                                                            "article"])
+            dtd = dtd[0].attrib['dtd-version']
+            if str(dtd) == '3.0':
+                dtd = 'NLM 3.0'
+            elif dtd == '1.1d3':
+                dtd = 'JATS 1.1d3'
+        except KeyError:
+            print('Error parsing DTD from', self.doi)
+            dtd = 'N/A'
+        return dtd
 
     @property
     def abstract(self):
-        return self.get_abstract()
+        """
+        For an individual article in the PLOS corpus, get the string of the abstract content.
+        :return: plain-text string of content in abstract
+        """
+        abstract = self.get_element_xpath(tag_path_elements=["/",
+                                                             "article",
+                                                             "front",
+                                                             "article-meta",
+                                                             "abstract"])
+        try:
+            abstract_text = et.tostring(abstract[0], encoding='unicode', method='text')
+        except IndexError:
+            if self.type_ == 'research-article' and self.plostype == 'Research Article':
+                print('No abstract found for research article {}'.format(self.doi))
+
+            abstract_text = ''
+
+        # clean up text: rem white space, new line marks, blank lines
+        abstract_text = abstract_text.strip().replace('  ', '')
+        abstract_text = os.linesep.join([s for s in abstract_text.splitlines() if s])
+
+        return abstract_text
 
     @property
     def correct_or_retract(self):
