@@ -263,10 +263,6 @@ def move_articles(source, destination):
     else:
         print("No files moved.")
         logging.info("No article files moved")
-    # Delete temporary folder in most cases
-    if source == newarticledir:
-        shutil.rmtree(source)
-
 
 def get_article_xml(article_file, tag_path_elements=None):
     """
@@ -385,7 +381,7 @@ def get_article_pubdate(article_file, date_format='%d %m %Y'):
     return pubdate
 
 
-def compare_article_pubdate(article, days=22):
+def compare_article_pubdate(article, newarticledir, days=22):
     """
     Check if an article's publication date was more than 3 weeks ago.
     :param article: doi/file of the article
@@ -410,12 +406,14 @@ def compare_article_pubdate(article, days=22):
 
 
 def download_updated_xml(article_file,
-                         tempdir='',
+                         corpusdir,
+                         tempdir,
                          vor_check=False):
     """
     For an article file, compare local XML to remote XML
     If they're different, download new version of article
     :param article_file: the filename for a single article
+    :para corpusdir:
     :param tempdir: directory where files are downloaded to
     :param vor_check: whether checking to see if uncorrected proof is updated
     :return: boolean for whether update was available & downloaded
@@ -506,7 +504,7 @@ def download_corrected_articles(directory='', tempdir='', corrected_article_list
     max_value = len(corrected_article_list)
     bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
     for i, article in enumerate(corrected_article_list):
-        updated = download_updated_xml(article, tempdir=tempdir)
+        updated = download_updated_xml(article, corpusdir, tempdir)
         if updated:
             corrected_updated_article_list.append(article)
         bar.update(i+1)
@@ -572,7 +570,6 @@ def check_for_uncorrected_proofs(tempdir, corpusdir, text_list=uncorrected_proof
     # Read in uncorrected proofs from uncorrected_proofs_text_list txt file
     # If uncorrected_proofs_list txt file doesn't exist, build that list from scratch from main article directory
     uncorrected_proofs_list = get_uncorrected_proofs_list(corpusdir)
-
     # Check directory for uncorrected proofs
     # Append uncorrected proofs to running list
     articles = listdir_nohidden(tempdir)
@@ -647,12 +644,11 @@ def download_vor_updates(corpusdir, tempdir='', vor_updates_available=None,
     :return: List of articles from uncorrected_list for which new version successfully downloaded
     """
     if vor_updates_available is None:
-        vor_updates_available = check_for_vor_updates()
+        vor_updates_available = check_for_vor_updates(corpusdir)
     vor_updated_article_list = []
     if vor_updates_available:
         for article in vor_updates_available:
-            updated = download_updated_xml(article, vor_check=True,
-                                           tempdir=tempdir)
+            updated = download_updated_xml(article, corpusdir, tempdir, vor_check=True)
             if updated:
                 vor_updated_article_list.append(article)
 
@@ -661,11 +657,12 @@ def download_vor_updates(corpusdir, tempdir='', vor_updates_available=None,
 
     # direct remote XML check; add their totals to totals above
     if new_uncorrected_proofs_list:
-        proofs_download_list = remote_proofs_direct_check(article_list=new_uncorrected_proofs_list,
+        proofs_download_list = remote_proofs_direct_check(corpusdir, tempdir,
+                                                          article_list=new_uncorrected_proofs_list,
                                                           plos_network=plos_network)
         vor_updated_article_list.extend(proofs_download_list)
         new_uncorrected_proofs_list = list(set(new_uncorrected_proofs_list) - set(vor_updated_article_list))
-        too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof)]
+        too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof, tempdir)]
         if too_old_proofs and plos_network:
             print("Proofs older than 3 weeks: {0}".format(too_old_proofs))
 
@@ -702,7 +699,7 @@ def remote_proofs_direct_check(corpusdir, tempdir='', article_list=None, plos_ne
         article_list = get_uncorrected_proofs_list(corpusdir)
     for doi in set(article_list):
         file_ = doi_to_path(doi)
-        updated = download_updated_xml(file_, vor_check=True, tempdir=tempdir)
+        updated = download_updated_xml(file_, corpusdir, tempdir, vor_check=True)
         if updated:
             proofs_download_list.append(doi)
     if proofs_download_list:
