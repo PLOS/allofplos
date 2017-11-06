@@ -8,10 +8,8 @@ import lxml.etree as et
 from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
                              BASE_URL_ARTICLE_LANDING_PAGE)
 from plos_regex import (validate_doi, corpusdir)
-from article_elements import (parse_article_date, get_rid_dict, get_contrib_name,
-                              get_contrib_ids, get_credit_taxonomy,
-                              match_contrib_initials_to_dict, get_contrib_info,
-                              match_author_names_to_emails, match_contribs_to_dicts)
+from article_elements import (parse_article_date, get_rid_dict,
+                              get_contrib_info, match_contribs_to_dicts)
 
 
 class Article(object):
@@ -239,7 +237,7 @@ class Article(object):
                         fn_dict[el.attrib['id']] = sub_el.text
                 else:
                     # the address for some affiliations is not wrapped in an addr-line tag
-                    fn_dict[el.attrib['id']] = el.text.replace('\n','').replace('\r','').replace('\t','')
+                    fn_dict[el.attrib['id']] = el.text.replace('\n', '').replace('\r', '').replace('\t', '')
         return fn_dict
 
     def get_corr_author_emails(self):
@@ -276,7 +274,8 @@ class Article(object):
                             email_list.append(item.text)
                             corr_emails[note.attrib['id']] = email_list
                             if i > 1:
-                                print('Error handling multiple email addresses for {} in {}'.format(et.tostring(item), self.doi))
+                                print('Error handling multiple email addresses for {} in {}'
+                                      .format(et.tostring(item), self.doi))
                         if item.text == '':
                             print('No email available for {}'.format(self.doi))
                     # if author initials included (more than one corr author)
@@ -403,7 +402,10 @@ class Article(object):
                                                 if k == 'aff'
                                                 ]
             except TypeError:
-                print('error constructing affiliations for {}: {} {}'.format(self.doi, contrib_dict.get('given_names'), contrib_dict.get('surname')))
+                print('error constructing affiliations for {}: {} {}'
+                      .format(self.doi,
+                              contrib_dict.get('given_names'),
+                              contrib_dict.get('surname')))
                 contrib_dict['affiliations'] = [""]
 
             contrib_dict['footnotes'] = [aff_dict.get(aff, "")
