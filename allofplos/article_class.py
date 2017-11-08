@@ -3,7 +3,7 @@ import re
 import subprocess
 
 import lxml.etree as et
-
+import requests
 
 from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
                              BASE_URL_ARTICLE_LANDING_PAGE)
@@ -536,6 +536,37 @@ class Article():
             print("Error parsing article body: {}".format(self.doi))
             body_word_count = 0
         return body_word_count
+
+    def check_if_link_works(self):
+        '''See if a link is valid (i.e., returns a '200' to the HTML request).
+        Used for checking a URL to a PLOS article on journals.plos.org
+        '''
+        request = requests.get(self.url)
+        if request.status_code == 200:
+            return True
+        elif request.status_code == 404:
+            return False
+        else:
+            return 'error'
+
+    def check_if_doi_resolves(self, plos_valid=True):
+        """
+        Return metadata for a given DOI. If the link works, make sure that it points to the same DOI
+        Checks first if it's a valid DOI or see if it's a redirect.
+        """
+        if plos_valid and validate_doi(self.doi) is False:
+            return "Not valid PLOS DOI structure"
+        url = "http://dx.doi.org/" + self.doi
+        if self.check_if_link_works() is True:
+            headers = {"accept": "application/vnd.citationstyles.csl+json"}
+            r = requests.get(url, headers=headers)
+            r_doi = r.json()['DOI']
+            if r_doi == self.doi:
+                return "works"
+            else:
+                return r_doi
+        else:
+            return "doesn't work"
 
     @property
     def xml(self):
