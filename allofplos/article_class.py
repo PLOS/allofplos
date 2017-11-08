@@ -12,16 +12,15 @@ from article_elements import (parse_article_date, get_rid_dict,
                               get_contrib_info, match_contribs_to_dicts)
 
 
-class Article(object):
-    plos_prefix = ''
-
-    def __init__(self, doi, directory=None):
+class Article():
+    def __init__(self, doi, directory=None, plos_network=False):
         self.doi = doi
         if directory is None:
             self.directory = corpusdir
         else:
             self.directory = directory
         self.reset_memoized_attrs()
+        self.plos_network = plos_network
         self._editor = None
 
     def reset_memoized_attrs(self):
@@ -53,12 +52,16 @@ class Article(object):
         self.reset_memoized_attrs()
         self._doi = d
 
-    def get_local_xml(self, pretty_print=True):
+    def __str__(self, pretty_print=True):
         local_xml = et.tostring(self.tree,
                                 method='xml',
                                 encoding='unicode',
                                 pretty_print=pretty_print)
-        return print(local_xml)
+        print(local_xml)
+
+    def __repr__(self):
+        out = "DOI: {0}\nTitle: {1}".format(self.doi, self.title)
+        return out
 
     def get_url(self, plos_network=False):
         URL_TMP = INT_URL_TMP if plos_network else EXT_URL_TMP
@@ -536,7 +539,7 @@ class Article(object):
 
     @property
     def xml(self):
-        return self.get_local_xml()
+        return self.__str__()
 
     @property
     def tree(self):
@@ -625,7 +628,7 @@ class Article(object):
     @property
     def authors(self):
         contributors = self.get_contributors_info()
-        return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'author']    
+        return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'author']
 
     @property
     def corr_author(self):
