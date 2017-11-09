@@ -578,9 +578,12 @@ class Article():
                     related_article = corrected_doi.lstrip('info:doi/')
                     break
         else:
-            related_article_element = related_article_elements[0].attrib
-            related_article = related_article_element['{http://www.w3.org/1999/xlink}href']
-            related_article = related_article.lstrip('info:doi/')
+            try:
+                related_article_element = related_article_elements[0].attrib
+                related_article = related_article_element['{http://www.w3.org/1999/xlink}href']
+                related_article = related_article.lstrip('info:doi/')
+            except IndexError:
+                return None
         return related_article
 
     def get_counts(self):
