@@ -13,6 +13,8 @@ from article_elements import (parse_article_date, get_rid_dict,
 
 
 class Article():
+    """The primary object of a PLOS article, instantiated by a valid PLOS DOI.
+    """
     def __init__(self, doi, directory=None, plos_network=False):
         self.doi = doi
         if directory is None:
@@ -24,16 +26,36 @@ class Article():
         self._editor = None
 
     def reset_memoized_attrs(self):
+        """Reset attributes to None when instantiating a new article object
+        
+        For article attributes that are memoized and specific to that particular article
+        (including the XML tree and whether the xml file is in the local directory),
+        reset them when creating a new article object.
+        """
         self._tree = None
         self._local = None
         self._correct_or_retract = None  # Will probably need to be an article subclass
 
     @property
     def doi(self):
+        """The unique Digital Object Identifier for a PLOS article.
+        
+        See https://www.doi.org/
+        :returns: DOI of the article object
+        :rtype: {str}
+        """
         return self._doi
 
     @property
     def text_editor(self):
+        """Your text editor of choice that can be called from the command line.
+        Persists across article objects.
+        Use with self.open_in_editor() to open an article of interest.
+        Check your text editor's documentation to learn how to launch it from the command line.
+        For Sublime Text, see http://docs.sublimetext.info/en/latest/command_line/command_line.html
+        :returns: command line shortcut for the text editor
+        :rtype: {str}
+        """
         try:
             return self._text_editor
         except AttributeError as e:
@@ -43,16 +65,30 @@ class Article():
 
     @text_editor.setter
     def text_editor(self, value):
+        """Sets the text editor for all article objects
+        :param value: from self.text_editor
+        :type value: string
+        """
         self._text_editor = value
 
     @doi.setter
     def doi(self, d):
+        """
+        Using regular expressions, make sure the doi is valid before
+        instantiating the article object.
+        """
         if validate_doi(d) is False:
             raise Exception("Invalid format for PLOS DOI")
         self.reset_memoized_attrs()
         self._doi = d
 
     def __str__(self, pretty_print=True):
+        """Output when you print an article object on the command line
+
+        For parsing and viewing the XML of a local article. Should not be used for hashing
+        :param pretty_print: Includes indenting/whitespace, defaults to True
+        :type pretty_print: bool, optional
+        """
         local_xml = et.tostring(self.tree,
                                 method='xml',
                                 encoding='unicode',
@@ -60,37 +96,67 @@ class Article():
         print(local_xml)
 
     def __repr__(self):
+        """Value of an article object when you call it directly on the command line.
+
+        Shows the DOI and title of the article
+        :returns: DOI and title
+        :rtype: {str}
+        """
         out = "DOI: {0}\nTitle: {1}".format(self.doi, self.title)
         return out
 
     def get_url(self, plos_network=False):
+        """The PLOS external URL for the XML of a particular article.
+
+        Used for downloading articles, and comparing local XML to remote XML
+        :param plos_network: whether inside the PLOS network, defaults to False
+        :type plos_network: bool, optional
+        :returns: direct URL to the article XML file
+        :rtype: {str}
+        """
         URL_TMP = INT_URL_TMP if plos_network else EXT_URL_TMP
         return URL_TMP.format(self.doi)
 
-    def get_remote_xml(self, pretty_print=True):
+    def get_remote_xml(self):
+        """For an article, parse its XML file at the location of self.url
+
+        Uses the lxml element tree to create the string, which is saved to a local
+        file when downloaded
+        :returns: string of entire remote article file
+        :rtype: {str}
+        """
         remote_xml = et.tostring(self.remote_element_tree,
                                  method='xml',
-                                 encoding='unicode',
-                                 pretty_print=pretty_print)
-        return print(remote_xml)
+                                 encoding='unicode')
+        return remote_xml
 
     def open_in_editor(self, text_editor=None):
+        """Open a local article file of interest in an external text editor.
 
+        :param text_editor: set via self.text_editor, defaults to None
+        :type text_editor: str, optional
+        :raises: TypeError
+        """
         if not (text_editor or self.text_editor):
             raise TypeError("You have not specified an text_editor. Please do so.")
 
         subprocess.call([self._text_editor, self.filename])
 
     def open_in_browser(self):
+        """Opens the landing page (HTML) of an article in default browser.
+
+        This is also the URL that the DOI resolves to
+        """
         subprocess.call(["open", self.page])
 
     def get_element_xpath(self, tag_path_elements=None):
-        """
-        For a local article's root element, grab particular sub-elements via XPath location
+        """For a local article's root element, grab particular sub-elements via XPath location.
+
         Defaults to reading the element location for uncorrected proofs/versions of record
+        The basis of every method and property looking for particular metadata fields
         :param article_root: the xml file for a single article
         :param tag_path_elements: xpath location in the XML tree of the article file
-        :return: list of elements with that xpath location
+        :return: list of elements in the article with that xpath location
         """
         if tag_path_elements is None:
             tag_path_elements = ('/',
@@ -104,10 +170,10 @@ class Article():
         return self.root.xpath(tag_location)
 
     def get_plos_journal(self, caps_fixed=True):
-        """
-        For an individual PLOS article, get the journal it was published in.
-        :param caps_fixed: whether to render 'PLOS' in the journal name correctly or as-is ('PLoS')
-        :return: PLOS journal at specified xpath location
+        """For an individual PLOS article, get the journal it was published in.
+
+        :param caps_fixed: whether to render 'PLOS' in the journal name correctly, or as-is ('PLoS')
+        :return: PLOS journal name at specified xpath location
         """
         try:
             journal = self.get_element_xpath(tag_path_elements=["/",
@@ -136,8 +202,12 @@ class Article():
         return journal
 
     def get_dates(self, string_=False, string_format='%Y-%m-%d', debug=False):
-        """
-        For an individual article, get all of its dates, including publication date (pubdate), submission date
+        """For an individual article, get all of its dates, including publication date (pubdate), submission date.
+
+        Defaults to datetime objects
+        :param string_: whether to return dates as a dictionary of strings
+        :param string_format: if string_ is True, the format to return the dates in
+        :param debug: whether to check that the dates are in the correct order, defaults to False
         :return: dict of date types mapped to datetime objects for that article
         """
         dates = {}
@@ -189,9 +259,9 @@ class Article():
     def get_aff_dict(self):
         """For a given PLOS article, get list of contributor-affiliated institutions.
 
-        Used to map individual contributors to their institutions
+        Uses "rid"s to map individual contributors to their institutions
         :returns: Dictionary of footnote ids to institution information
-        :rtype: {[dict]}
+        :rtype: dict
         """
         tags_to_aff = ["/",
                        "article",
@@ -216,7 +286,7 @@ class Article():
         return aff_dict
 
     def get_fn_dict(self):
-        """For a given PLOS article, get list of contributor-affiliated institutions.
+        """For a given PLOS article, get list of footnotes.
 
         Used to map individual contributors to their institutions
         :returns: Dictionary of footnote ids to institution information
@@ -347,8 +417,18 @@ class Article():
         return author_contributions
 
     def get_contributors_info(self):
+        """Get and organize information about each article's contributor.
+        This includes both authors and editors of the article.
+        This function both creates article-level dictionaries of contributor information,
+        as well as parses individual <contrib> elements. It reconciles the dicts together
+        using a number of external functions from article_elements.py
+        :returns: dictionary of metadata for each <contrib> element
+        :rtype: list of dicts
+        """
+
         # TODO: param to remove unnecessary fields (initials) and dicts (rid_dict)
         # TODO: also get funding information, data availability, etc
+
         # get dictionary of ids to institutional affiliations & all other footnotes
         aff_dict = self.get_aff_dict()
         fn_dict = self.get_fn_dict()
@@ -373,7 +453,7 @@ class Article():
 
         # iterate through each contributor
         for contrib in contrib_list:
-            # initialize contrib dict
+            # initialize contrib dict with default fields
             contrib_keys = ['contrib_initials',
                             'given_names',
                             'surname',
@@ -456,7 +536,6 @@ class Article():
             corr_author_list, matching_error = match_contribs_to_dicts(corr_author_list,
                                                                        email_dict,
                                                                        contrib_key='email')
-
         else:
             corr_author_list = []
 
@@ -466,6 +545,12 @@ class Article():
         return contrib_dict_list
 
     def correct_or_retract_bool(self):
+        """Whether the JATS article type is a correction or retraction.
+
+        See https://jats.nlm.nih.gov/archiving/tag-library/1.1/attribute/article-type.html
+        :returns: True if a correction or retraction, false if not
+        :rtype: {bool}
+        """
         if self.type_ == 'correction' or self.type_ == 'retraction':
             self._correct_or_retract = True
         else:
@@ -473,12 +558,12 @@ class Article():
         return self._correct_or_retract
 
     def get_related_doi(self):
-        """
-        For an article file, get the DOI of the first related article
+        """For an article file, get the DOI of the first related article.
+
         More strict in tag search if article is correction type
         Use primarily to map correction and retraction notifications to articles that have been corrected
         NOTE: what to do if more than one related article?
-        :return: doi at that xpath location
+        :return: first doi at that xpath location
         """
         related_article_elements = self.get_element_xpath(tag_path_elements=["/",
                                                                              "article",
@@ -499,10 +584,9 @@ class Article():
         return related_article
 
     def get_counts(self):
-        """
-        For a single article, return a dictionary of the several counts functions that are available
-        (figures: fig-count, pages: page-count, tables: table-count)
-        :return: counts dictionary
+        """For a single article, return a dictionary of the several counts functions that are available.
+        Dictionary format for XML tags: {figures: fig-count, pages: page-count, tables: table-count}
+        :return: counts dictionary of number of figures, pages, and tables in the article
         """
         counts = {}
 
@@ -522,8 +606,8 @@ class Article():
         return counts
 
     def get_body_word_count(self):
-        """
-        For an article, get how many words are in the body
+        """For an article, get how many words are in the body.
+
         :return: count of words in the body of the PLOS article
         """
         body_element = self.get_element_xpath(tag_path_elements=["/",
@@ -538,9 +622,13 @@ class Article():
         return body_word_count
 
     def check_if_link_works(self):
-        '''See if a link is valid (i.e., returns a '200' to the HTML request).
-        Used for checking a URL to a PLOS article on journals.plos.org
-        '''
+        """See if a link is valid (i.e., returns a '200' to the HTML request).
+
+        Used for checking a URL to a PLOS article's landing page or XML file on journals.plos.org
+        Full list of potential status codes: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+        :return: boolean if HTTP status code returned available or unavailable,
+        "error" if a different status code is returned than 200 or 404
+        """
         request = requests.get(self.url)
         if request.status_code == 200:
             return True
@@ -550,9 +638,12 @@ class Article():
             return 'error'
 
     def check_if_doi_resolves(self, plos_valid=True):
-        """
-        Return metadata for a given DOI. If the link works, make sure that it points to the same DOI
+        """Whether a PLOS DOI resolves via dx.doi.org to the correct article landing page.
+
+        If the link works, make sure that it points to the same DOI
         Checks first if it's a valid DOI or see if it's a redirect.
+        :return: 'works' if works as expected, 'doesn't work' if it doesn't resolve correctly,
+        or if the metadata DOI doesn't match self.doi, return the metadata DOI
         """
         if plos_valid and validate_doi(self.doi) is False:
             return "Not valid PLOS DOI structure"
