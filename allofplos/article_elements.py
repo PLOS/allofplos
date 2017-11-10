@@ -13,7 +13,8 @@ import unidecode
 
 def parse_article_date(date_element, date_format='%d %m %Y'):
     """
-    For an article date element, convert XML to a datetime object
+    For an article date element, convert XML to a datetime object.
+    :param date_element: An article XML element that contains a date
     :param date_format: string format used to convert to datetime object
     :return: datetime object
     """
@@ -49,6 +50,12 @@ def parse_article_date(date_element, date_format='%d %m %Y'):
 
 
 def get_rid_dict(contrib_element):
+    """ For an individual contributor, get the list of their associated rids.
+    More about rids: https://jats.nlm.nih.gov/archiving/tag-library/1.1/attribute/rid.html
+    Used in get_contrib_info().
+    :param contrib_element: An article XML element with the tag <contrib>
+    :return: dictionary matching each type of rid to its value for that contributor
+    """
     rid_dict = {}
     contrib_elements = contrib_element.getchildren()
     # get list of ref-types
@@ -62,7 +69,13 @@ def get_rid_dict(contrib_element):
 
 
 def get_author_type(contrib_element):
-
+    """Get the type of author for a single contributor from their accompanying <contrib> element.
+    Authors can be 'corresponding' or 'contributing'. Depending on the paper, some elements have a 
+    top-level "corresp" attribute that equal yes; otherwise, corresponding status can be inferred
+    from the existence of the <xref> attribute ref-type="corresp"
+    :param contrib_element: An article XML element with the tag <contrib>
+    :return: author type (corresponding, contributing, None)
+    """
     answer_dict = {
         "yes": "corresponding",
         "no": "contributing"
@@ -84,6 +97,13 @@ def get_author_type(contrib_element):
 
 
 def get_contrib_name(contrib_element):
+    """Get the name for a single contributor from their accompanying <contrib> element.
+    Also constructs their initials for later matching to article-level dictionaries about
+    contributors, including get_aff_dict() and get_fn_dict().
+    Can also handle 'collab' aka group authors with a group name but no surname or given names.
+    :param contrib_element: An article XML element with the tag <contrib>
+    :return: dictionary of a single contributor's given names, surname, initials, and group name
+    """
     given_names = ''
     surname = ''
 
@@ -107,6 +127,7 @@ def get_contrib_name(contrib_element):
             else:
                 pass
         if bool(given_names) or bool(surname):
+            # construct initials if either given or surname is present
             try:
                 contrib_initials = ''.join([part[0].upper() for part in re.split('[-| |,|\.]+', given_names) if part]) + \
                                   ''.join([part[0] for part in re.split('[-| |,|\.]+', surname) if part[0] in string.ascii_uppercase])
@@ -116,6 +137,7 @@ def get_contrib_name(contrib_element):
                                 given_names=given_names,
                                 surname=surname)
     else:
+        # if no <name> element found, assume it's a collaboration
         contrib_collab_element = contrib_element.find("collab")
         if contrib_collab_element.text:
             group_name = contrib_collab_element.text
@@ -131,6 +153,12 @@ def get_contrib_name(contrib_element):
 
 
 def get_contrib_ids(contrib_element):
+    """Get the ids for a single contributor from their accompanying <contrib> element.
+    This will mostly get ORCID IDs, and indicate whetherh they are authenticated.
+    For more information of ORCIDs, see https://orcid.org/
+    :param contrib_element: An article XML element with the tag <contrib>
+    :return: list of dictionaries of ids for that contributor
+    """
     id_list = []
     for item in contrib_element.getchildren():
         if item.tag == 'contrib-id':
@@ -147,6 +175,13 @@ def get_contrib_ids(contrib_element):
 
 
 def get_credit_taxonomy(contrib_element):
+    """Get the contributor roles from the CREDiT taxonomy element when it is present.
+    Right now, this is is equivalent to author roles.
+    For more information about this data structure, see http://dictionary.casrai.org/Contributor_Roles
+    :param contrib_element: An article XML element with the tag <contrib>
+    :return: dictionary of contributor roles for an individual contributor
+
+    """
     credit_dict = {}
     for item in contrib_element.getchildren():
         if item.tag == 'role':
@@ -162,6 +197,18 @@ def get_credit_taxonomy(contrib_element):
 
 
 def match_contrib_initials_to_dict(contrib_dict, special_dict, matched_keys, contrib_key):
+    """For an individual contributor, match their initials to a dictionary.
+    This is used for both matching contributors to email addresses as well as credit roles,
+    where the keys for all dictionaries are contributor initials. In contrib_dict, these initials are
+    constructed from the contributor name in get_contrib_name(). For the special dicts, initials are
+    provided in the raw XML.
+    See match_contribs_to_dicts() for how this matching process is iterated across contributors.
+    :param contrib_dict: information about individual contributor, including their name and constructed initials
+    :param special_dict: usually either get_aff_dict() or get_credit_dict()
+    :param matched_keys: list of keys in special_dict already matched that will be excluded
+    :param contrib_key: The item in the contrib dictionary where the matched special_dict will be stored
+    :return: updated contrib_dict that includes the newly matched special_dict
+    """
     contributor_initials = contrib_dict.get('contrib_initials')
     # special_dict keys (initials) are assumed to be uppercase
     special_dict = {k.upper(): v
@@ -170,6 +217,8 @@ def match_contrib_initials_to_dict(contrib_dict, special_dict, matched_keys, con
     try:
         contrib_dict[contrib_key] = special_dict[contributor_initials.upper()]
     except KeyError:
+        # Sometimes middle initials are included or excluded, so restrict both initial sets to
+        # first and last initial only.
         try:
             contributor_abbrev_initials = ''.join([contributor_initials[0], contributor_initials[-1]])
             for dict_initials, dict_value in special_dict.items():
@@ -183,6 +232,14 @@ def match_contrib_initials_to_dict(contrib_dict, special_dict, matched_keys, con
 
 
 def get_contrib_info(contrib_element):
+    """Get a dictionary of information for a single contributor from their accompanying <contrib> element.
+    Don't call this function directly. Instead, use as a part of get_contributors_info()
+    This includes all contributor information that can be directly accessed from <contrib> element contents.
+    However, other contributor information is stored in article-level dictionaries that need to be matched
+    for each contributor using the rid_dict created here.
+    :param contrib_element: An article XML element with the tag <contrib>
+    :return: dictionary of contributor name, ids/ORCID, rid_dict, author_roles
+    """
     # get their name
     contrib_dict = get_contrib_name(contrib_element)
 
@@ -211,17 +268,32 @@ def get_contrib_info(contrib_element):
 
 
 def match_author_names_to_emails(corr_author_list, email_dict):
+    """ Finds the best match of author names to potential matching email addresses.
+    Don't call directly, but use as a part of match_contribs_to_dicts().
+    Sometimes, the initials-matching process in match_contrib_initials_to_dict() fails. When there's
+    at least two ummatched corresponding authors and email addresses, this function
+    figures out the name/email matching with the highest matching continguous character count and matches them.
+    This is a 'hail Mary' that thankfully also has a high rate of accuracy.
+    :param corr_author_list: list of contrib_dicts for corresponding authors with no email field
+    :param email_dict: list of unmatched author email addresses
+    :return: list of updated contrib_dicts for each author, now including an email field
+    """
     overall_matching_dict = {}
     match_values = []
     # Step 1: for each author and email combination, compute longest common string
     for corr_author in corr_author_list:
+        # make single string of author full name
         seq_1 = unidecode.unidecode(''.join([corr_author.get('given_names'), corr_author.get('surname')]).lower())
         matching_dict = {}
         for email_initials, email_address in email_dict.items():
+            # make string of email address that doesn't include domain
             seq_2 = unidecode.unidecode(email_address[0].lower().split('@')[0])
             matcher = difflib.SequenceMatcher(a=seq_1, b=seq_2)
+
+            # construct dictionary with name, email, and matching string length for each pair
             match = matcher.find_longest_match(0, len(matcher.a), 0, len(matcher.b))
             matching_dict[email_address[0]] = match[-1]
+            # add length of match to list of all match lengths
             match_values.append(match[-1])
         overall_matching_dict[corr_author.get('surname')] = matching_dict
 
@@ -233,20 +305,32 @@ def match_author_names_to_emails(corr_author_list, email_dict):
                 for corr_author in corr_author_list:
                     if k1 == corr_author.get('surname') and k2 not in newly_matched_emails:
                         corr_author['email'] = k2
+                        # keep track of matching email so it's not matched again
                         newly_matched_emails.append(k2)
-    # Step 3: match the remaining author and email if there's only one
+    # Step 3: match the remaining author and email if there's only one remaining (most common)
     still_unmatched_authors = [author for author in corr_author_list if 'email' not in author.keys()]
     still_unmatched_emails = {k: v for k, v in email_dict.items() if v[0] not in newly_matched_emails}
     if len(still_unmatched_authors) == len(still_unmatched_emails) <= 1:
         if len(still_unmatched_authors) == len(still_unmatched_emails) == 1:
+            # only one remaining. it gets matched
             still_unmatched_authors[0]['email'] = list(still_unmatched_emails.values())[0]
+        else:
+            # we were successful at matching all emails (likely, two pairs had the same match values)
+            pass
     else:
+        # something's gone wrong. the candidate list of emails doesn't match the number of authors
+        # the corresponding authors printed below will have their ['email'] field unfilled
         print('not calculating right', still_unmatched_authors, still_unmatched_emails)
 
     return corr_author_list
 
 
 def match_contribs_to_dicts(contrib_list, special_dict, contrib_key):
+    """
+    :param contrib_list: list of contributors
+    :param special_dict: usually either get_aff_dict() or get_credit_dict()
+    :param contrib_key: The item in the contrib dictionary where the matched special_dict will be stored
+    """
     matching_error = False
     matched_keys = []
     for contrib_dict in contrib_list:

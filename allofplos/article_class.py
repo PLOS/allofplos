@@ -67,7 +67,7 @@ class Article():
     def text_editor(self, value):
         """Sets the text editor for all article objects
         :param value: from self.text_editor
-        :type value: string
+        :type value: {str}
         """
         self._text_editor = value
 
@@ -209,9 +209,10 @@ class Article():
         :param string_format: if string_ is True, the format to return the dates in
         :param debug: whether to check that the dates are in the correct order, defaults to False
         :return: dict of date types mapped to datetime objects for that article
+        :rtype: {dict}
         """
         dates = {}
-
+        # first location is where pubdate and date added to collection are
         tag_path_1 = ["/",
                       "article",
                       "front",
@@ -227,6 +228,7 @@ class Article():
                 date = ''
             dates[pub_type] = date
 
+        # second location is where historical dates are, including submission and acceptance
         tag_path_2 = ["/",
                       "article",
                       "front",
@@ -260,8 +262,10 @@ class Article():
         """For a given PLOS article, get list of contributor-affiliated institutions.
 
         Uses "rid"s to map individual contributors to their institutions
+        More about rids: https://jats.nlm.nih.gov/archiving/tag-library/1.1/attribute/rid.html
+        See also get_rid_dict()
         :returns: Dictionary of footnote ids to institution information
-        :rtype: dict
+        :rtype: {dict}
         """
         tags_to_aff = ["/",
                        "article",
@@ -288,9 +292,11 @@ class Article():
     def get_fn_dict(self):
         """For a given PLOS article, get list of footnotes.
 
-        Used to map individual contributors to their institutions
+        Used with rids to map individual contributors to their institutions
+        More about rids: https://jats.nlm.nih.gov/archiving/tag-library/1.1/attribute/rid.html
+        See also get_rid_dict()
         :returns: Dictionary of footnote ids to institution information
-        :rtype: {[dict]}
+        :rtype: {dict}
         """
         tags_to_fn = ["/",
                       "article",
@@ -309,11 +315,19 @@ class Article():
                     for sub_el in el.getchildren():
                         fn_dict[el.attrib['id']] = sub_el.text
                 else:
-                    # the address for some affiliations is not wrapped in an addr-line tag
+                    # in case is at top-level of element
                     fn_dict[el.attrib['id']] = el.text.replace('\n', '').replace('\r', '').replace('\t', '')
         return fn_dict
 
     def get_corr_author_emails(self):
+        """For an article, grab the email addresses of the corresponding authors.
+        The email addresses are in an element of author notes. While most articles have one corresponding
+        author with one email address, sometimes there are 1) multiple authors, and/or 2) multiple emails per
+        author. In the first case, author initials are used in the text to separate emails. In the second case,
+        a comma is used to separate emails. Initials are how emails can be matched to multiple
+        authors. See also `match_author_names_to_emails()` for the back-up method of name matching.
+        :return: dictionary of rid or author initials mapped to list of email address(es)
+        """
         tag_path = ["/",
                     "article",
                     "front",
@@ -326,12 +340,14 @@ class Article():
             if note.tag == 'corresp':
                 author_info = note.getchildren()
                 for i, item in enumerate(author_info):
+
                     # if no author initials (one corr author)
                     if item.tag == 'email' and item.tail is None and item.text:
                         email_list.append(item.text)
                         if item.text == '':
                             print('No email available for {}'.format(self.doi))
                         corr_emails[note.attrib['id']] = email_list
+
                     # if more than one email per author
                     elif item.tag == 'email' and ',' in item.tail:
                         try:
@@ -351,6 +367,7 @@ class Article():
                                       .format(et.tostring(item), self.doi))
                         if item.text == '':
                             print('No email available for {}'.format(self.doi))
+
                     # if author initials included (more than one corr author)
                     elif item.tag == 'email' and item.tail:
                         corr_email = item.text
@@ -372,12 +389,16 @@ class Article():
 
     def get_contributions_dict(self):
         """For articles that don't use the CREDiT taxonomy, compile a dictionary of author
-        contribution types by author initials.
+        contribution types matched to author initials.
+        Work in progress!!
         Works for highly formatted lists with subelements (e.g. '10.1371/journal.pone.0170354') and structured single strings
         (e.g. '10.1371/journal.pone.0050782'), but still fails for unusual strings (e.g, '10.1371/journal.pntd.0000072')
+        See also get_credit_taxonomy() for the CREDiT taxonomy version.
         TODO: Use regex to properly separate author roles from initials for unusual strings.
+        :return: dictionary mapping author initials to their author contributions/roles.
         """
         if self.type_ in ['correction', 'retraction', 'expression-of-concern']:
+            # these article types don't have proper 'authors'
             return {}
         tag_path = ["/",
                     "article",
@@ -391,6 +412,8 @@ class Article():
         for note in author_notes_element:
             if note.attrib.get('fn-type', None) == 'con':
                 try:
+                    # for highly structured lists with sub-elements for each item
+                    # Example: 10.1371/journal.pone.0170354'
                     con_element = note[0][0]
                     con_list = con_element.getchildren()
                     for con_item in con_list:
@@ -399,6 +422,8 @@ class Article():
                         initials_list.extend(contributor_initials)
                         contrib_dict[contribution] = contributor_initials
                 except IndexError:
+                    # for single strings, though it doesn't parse all of them correctly.
+                    # Example: '10.1371/journal.pone.0050782'
                     contributions = note[0].text
                     contribution_list = re.split(': |\. ', contributions)
                     contribb_dict = dict(list(zip(contribution_list[::2], contribution_list[1::2])))
