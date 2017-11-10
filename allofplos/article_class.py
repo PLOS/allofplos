@@ -427,16 +427,19 @@ class Article():
                     con_element = note[0][0]
                     con_list = con_element.getchildren()
                     for con_item in con_list:
-                        contribution = con_item[0][0].text.rstrip(':')
-                        contributor_initials = (con_item[0][0].tail.lstrip(' ').rstrip('.')).split(' ')
-                        initials_list.extend(contributor_initials)
-                        contrib_dict[contribution] = contributor_initials
+                        try:
+                            contribution = con_item[0][0].text.rstrip(':')
+                            contributor_initials = (con_item[0][0].tail.lstrip(' ').rstrip('.')).split(' ')
+                            initials_list.extend(contributor_initials)
+                            contrib_dict[contribution] = contributor_initials
+                        except IndexError:
+                            print('Error parsing contributions item {}: {}'.format(self.doi, et.tostring(con_item, encoding='unicode', method='xml')))
                 except IndexError:
                     # for single strings, though it doesn't parse all of them correctly.
                     # Example: '10.1371/journal.pone.0050782'
                     contributions = note[0].text
                     if contributions is None:
-                        print('Error parsing {}: {}'.format(self.doi, et.tostring(con_element)))
+                        print('Error parsing contributions for {}: {}'.format(self.doi, et.tostring(con_element, encoding='unicode', method='xml')))
                         return None
                     contribution_list = re.split(': |\. ', contributions)
                     contribb_dict = dict(list(zip(contribution_list[::2], contribution_list[1::2])))
@@ -570,10 +573,16 @@ class Article():
                 else:
                     # print('one_corr_author error finding email for {} in {}'.format(corr_author, email_dict))
                     matching_error = True
-        elif len(corr_author_list) > 1:
+        elif len(corr_author_list) > 1 and len(email_dict) > 1:
             corr_author_list, matching_error = match_contribs_to_dicts(corr_author_list,
                                                                        email_dict,
                                                                        contrib_key='email')
+        elif len(corr_author_list) > 1:
+            if len(email_dict) == 1:
+                for corr_author in corr_author_list:
+                    corr_author['email'] = list(email_dict.values())[0]
+            else:
+                matching_error = True
         else:
             corr_author_list = []
 
