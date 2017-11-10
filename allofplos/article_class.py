@@ -282,7 +282,10 @@ class Article():
                 if el.getchildren():
                     for sub_el in el.getchildren():
                         if sub_el.tag == 'addr-line':
-                            aff_text_fixed = ' '.join([aff_string.strip() for aff_string in sub_el.text.splitlines()])
+                            try:
+                                aff_text_fixed = ' '.join([aff_string.strip() for aff_string in sub_el.text.splitlines()])
+                            except AttributeError:
+                                aff_text_fixed = et.tostring(sub_el, encoding='unicode', method='text')
                             aff_dict[el.attrib['id']] = aff_text_fixed
                 else:
                     # the address for some affiliations is not wrapped in an addr-line tag
@@ -432,6 +435,9 @@ class Article():
                     # for single strings, though it doesn't parse all of them correctly.
                     # Example: '10.1371/journal.pone.0050782'
                     contributions = note[0].text
+                    if contributions is None:
+                        print('Error parsing {}: {}'.format(self.doi, et.tostring(con_element)))
+                        return None
                     contribution_list = re.split(': |\. ', contributions)
                     contribb_dict = dict(list(zip(contribution_list[::2], contribution_list[1::2])))
                     for k, v in contribb_dict.items():
