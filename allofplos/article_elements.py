@@ -214,19 +214,20 @@ def match_contrib_initials_to_dict(contrib_dict, special_dict, matched_keys, con
     special_dict = {k.upper(): v
                     for k, v in special_dict.items()
                     if k not in matched_keys}
-    try:
-        contrib_dict[contrib_key] = special_dict[contributor_initials.upper()]
-    except KeyError:
-        # Sometimes middle initials are included or excluded, so restrict both initial sets to
-        # first and last initial only.
+    if contrib_dict.get('group_name', None) is None:
         try:
-            contributor_abbrev_initials = ''.join([contributor_initials[0], contributor_initials[-1]])
-            for dict_initials, dict_value in special_dict.items():
-                if contributor_abbrev_initials == ''.join([dict_initials[0], dict_initials[-1]]).upper():
-                    contrib_dict[contrib_key] = dict_value
-                    break
-        except (IndexError, KeyError) as e:
-            pass
+            contrib_dict[contrib_key] = special_dict[contributor_initials.upper()]
+        except KeyError:
+            # Sometimes middle initials are included or excluded, so restrict both initial sets to
+            # first and last initial only.
+            try:
+                contributor_abbrev_initials = ''.join([contributor_initials[0], contributor_initials[-1]])
+                for dict_initials, dict_value in special_dict.items():
+                    if contributor_abbrev_initials == ''.join([dict_initials[0], dict_initials[-1]]).upper():
+                        contrib_dict[contrib_key] = dict_value
+                        break
+            except (IndexError, KeyError) as e:
+                pass
 
     return contrib_dict
 
