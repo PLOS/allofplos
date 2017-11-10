@@ -363,10 +363,10 @@ def match_contribs_to_dicts(contrib_list, special_dict, contrib_key):
             if contrib_key == 'email':
                 # match remaining contributor names to emails by string matching
                 contrib_dicts = match_author_names_to_emails(contrib_dict_missing_special_list, unmatched_special_dict)
-            if len([contrib for contrib in contrib_dicts if contrib_key not in contrib.keys()]) == 0:
-                # finally every contributor and special_dict is matched
-                pass
-            else:
-                # even after applying every strategy, there were unmatched contributors
-                matching_error = True
+                if len([contrib for contrib in contrib_dicts if contrib_key not in contrib.keys()]) == 0:
+                    # finally every contributor and special_dict is matched
+                    pass
+                else:
+                    # even after applying every strategy, there were unmatched contributors
+                    matching_error = True
     return contrib_list, matching_error
