@@ -309,7 +309,7 @@ def match_author_names_to_emails(corr_author_list, email_dict):
                         # keep track of matching email so it's not matched again
                         newly_matched_emails.append(k2)
     # Step 3: match the remaining author and email if there's only one remaining (most common)
-    still_unmatched_authors = [author for author in corr_author_list if 'email' not in author.keys()]
+    still_unmatched_authors = [author for author in corr_author_list if not author.get('email')]
     still_unmatched_emails = {k: v for k, v in email_dict.items() if v[0] not in newly_matched_emails}
     if len(still_unmatched_authors) == len(still_unmatched_emails) <= 1:
         if len(still_unmatched_authors) == len(still_unmatched_emails) == 1:
