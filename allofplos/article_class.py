@@ -359,8 +359,8 @@ class Article():
                             corr_emails[note.attrib['id']] = email_list
                         else:
                             corr_emails['cor001'] = email_list
-                    # if more than one email per author
-                    elif item.tag == 'email' and ',' in item.tail:
+                    # if more than one email per author; making sure no initials present (comma ok)
+                    elif item.tag == 'email' and re.sub(r'[^a-zA-Z0-9=]', '', item.tail) is None:
                         try:
                             if author_info[i+1].tail is None:
                                 email_list.append(item.text)
