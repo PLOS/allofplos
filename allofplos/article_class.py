@@ -324,12 +324,15 @@ class Article():
 
     def get_corr_author_emails(self):
         """For an article, grab the email addresses of the corresponding authors.
+        Parses the list of emails and groups by rid or by initials, if present.
+        Can handle multiple emails for multiple authors if formatted correctly.
         The email addresses are in an element of author notes. While most articles have one corresponding
         author with one email address, sometimes there are 1) multiple authors, and/or 2) multiple emails per
         author. In the first case, author initials are used in the text to separate emails. In the second case,
         a comma is used to separate emails. Initials are how emails can be matched to multiple
         authors. See also `match_author_names_to_emails()` for the back-up method of name matching.
         :return: dictionary of rid or author initials mapped to list of email address(es)
+        :rtype: dict
         """
         tag_path = ["/",
                     "article",
