@@ -347,14 +347,15 @@ class Article():
             if note.tag == 'corresp':
                 author_info = note.getchildren()
                 for i, item in enumerate(author_info):
-
                     # if no author initials (one corr author)
                     if item.tag == 'email' and item.tail is None and item.text:
                         email_list.append(item.text)
                         if item.text == '':
                             print('No email available for {}'.format(self.doi))
-                        corr_emails[note.attrib['id']] = email_list
-
+                        if note.attrib['id']:
+                            corr_emails[note.attrib['id']] = email_list
+                        else:
+                            corr_emails['cor001'] = email_list
                     # if more than one email per author
                     elif item.tag == 'email' and ',' in item.tail:
                         try:
