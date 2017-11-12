@@ -301,8 +301,8 @@ def match_author_names_to_emails(corr_author_list, email_dict):
             matching_dict[email_address[0]] = match[-1]
             # add length of match to list of all match lengths
             match_values.append(match[-1])
-        overall_matching_dict[corr_author.get('surname')] = matching_dict
-
+        overall_matching_dict[(corr_author.get('given_names'), corr_author.get('surname'))] = matching_dict
+    print(overall_matching_dict)
     # Step 2: for the author and email combination(s) with the longest common string, match them
     # Iterate through max_values in descending order until all are matched
     newly_matched_emails = []
@@ -311,7 +311,7 @@ def match_author_names_to_emails(corr_author_list, email_dict):
             for k2, v2 in v1.items():
                 if v2 == max(match_values):
                     for corr_author in corr_author_list:
-                        if k1 == corr_author.get('surname') and k2 not in newly_matched_emails:
+                        if k1 == (corr_author.get('given_names'), corr_author.get('surname')) and k2 not in newly_matched_emails:
                             corr_author['email'] = k2
                             # keep track of matching email so it's not matched again
                             newly_matched_emails.append(k2)
