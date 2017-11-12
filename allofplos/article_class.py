@@ -359,7 +359,11 @@ class Article():
                         for i, info in enumerate(email_info):
                             # prune out non-letters from initials & email
                             email_info[i] = re.sub(r'[^a-zA-Z0-9=@\.+-]', '', info)
-                        corr_emails[email_info[1]] = email_info[0]
+                        try:
+                            corr_emails[email_info[1]] = email_info[0]
+                        except IndexError:
+                            print('Error parsing emails for {}'.format(self.doi))
+                            pass
 
                     # if no author initials (one corr author)
                     elif item.tag == 'email' and item.tail is None and item.text:
@@ -484,7 +488,6 @@ class Article():
         """
 
         # TODO: param to remove unnecessary fields (initials) and dicts (rid_dict)
-        # TODO: also get funding information, data availability, etc
         # TODO: also get funding information, data availability, COI, etc
 
         # get dictionary of ids to institutional affiliations & all other footnotes
