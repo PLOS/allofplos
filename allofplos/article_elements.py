@@ -63,7 +63,7 @@ def get_rid_dict(contrib_element):
 
     # make dict of ref-types to the actual ref numbers (rids)
     for rid_type in set(rid_type_list):
-        rid_list = [el.attrib['rid'] for el in contrib_elements if el.tag == 'xref' and el.attrib.get('ref-type', 'fn') == rid_type]
+        rid_list = [el.attrib.get('rid', None) for el in contrib_elements if el.tag == 'xref' and el.attrib.get('ref-type', 'fn') == rid_type]
         rid_dict[rid_type] = rid_list
 
     return rid_dict
