@@ -246,7 +246,11 @@ def get_contrib_info(contrib_element):
     contrib_dict = get_contrib_name(contrib_element)
 
     # get contrib type
-    contrib_dict['contrib_type'] = contrib_element.attrib['contrib-type']
+    try:
+        contrib_dict['contrib_type'] = contrib_element.attrib['contrib-type']
+    except KeyError:
+        # invalid contributor field; shouldn't count as contributor
+        return None
 
     # get author type
     if contrib_dict.get('contrib_type') == 'author':
