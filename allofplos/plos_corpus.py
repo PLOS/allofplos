@@ -264,7 +264,7 @@ def move_articles(source, destination):
         print("No files moved.")
         logging.info("No article files moved")
 
-def get_article_xml(article_file, directory, tag_path_elements=None):
+def get_article_xml(article_full_path, tag_path_elements=None):
     """
     For a local article file, read its XML tree
     Can also interpret DOIs
@@ -281,43 +281,26 @@ def get_article_xml(article_file, directory, tag_path_elements=None):
                              'custom-meta-group',
                              'custom-meta',
                              'meta-value')
-
-    try:
-        article_tree = et.parse(article_file)
-    except OSError:
-        if validate_doi(article_file):
-            article_file = doi_to_path(article_file, directory)
-        elif article_file.endswith('xml'):
-            article_file = article_file[:-3] + 'XML'
-        elif article_file.endswith('XML'):
-            article_file = article_file[:-3] + 'xml'
-        elif article_file.endswith('nxml'):
-            article_file = article_file[:-3] + 'nxml'
-        elif not article_file.endswith('.'):
-            article_file = article_file + '.xml'
-        else:
-            article_file = article_file + 'xml'
-        article_tree = et.parse(article_file)
+    article_tree = et.parse(article_full_path)
     articleXML = article_tree.getroot()
     tag_location = '/'.join(tag_path_elements)
     return articleXML.xpath(tag_location)
 
 
-def check_article_type(article_file, directory):
+def check_article_type(article_full_path):
     """
     For an article file, get its JATS article type
     Use primarily to find Correction (and thereby corrected) articles
     :param article_file: the xml file for a single article
     :return: JATS article_type at that xpath location
     """
-    article_type = get_article_xml(article_file,
-                                   directory,
+    article_type = get_article_xml(article_full_path,
                                    tag_path_elements=["/",
                                                       "article"])
     return article_type[0].attrib['article-type']
 
 
-def get_related_article_doi(article_file, directory, corrected=True):
+def get_related_article_doi(article_full_path, corrected=True):
     """
     For an article file, get the DOI of the first related article
     Use primarily to map Correction notification articles to articles that have been corrected
@@ -326,8 +309,7 @@ def get_related_article_doi(article_file, directory, corrected=True):
     :param corrected: default true, part of the Corrections workflow, more strict in tag search
     :return: tuple of partial doi string at that xpath location, related_article_type
     """
-    r = get_article_xml(article_file,
-                        directory,
+    r = get_article_xml(article_full_path,
                         tag_path_elements=["/",
                                            "article",
                                            "front",
@@ -350,7 +332,7 @@ def get_related_article_doi(article_file, directory, corrected=True):
     return related_article, related_article_type
 
 
-def get_article_pubdate(article_file, directory, date_format='%d %m %Y'):
+def get_article_pubdate(article_full_path, date_format='%d %m %Y'):
     """
     For an individual article, get its date of publication
     :param article_file: file path/DOI of the article
@@ -360,8 +342,7 @@ def get_article_pubdate(article_file, directory, date_format='%d %m %Y'):
     day = ''
     month = ''
     year = ''
-    raw_xml = get_article_xml(article_file,
-                              directory,
+    raw_xml = get_article_xml(article_full_path,
                               tag_path_elements=["/",
                                                  "article",
                                                  "front",
@@ -384,7 +365,7 @@ def get_article_pubdate(article_file, directory, date_format='%d %m %Y'):
     return pubdate
 
 
-def compare_article_pubdate(article, directory, days=22):
+def compare_article_pubdate(article_full_path, days=22):
     """
     Check if an article's publication date was more than 3 weeks ago.
     :param article: doi/file of the article TODO: CHECK TYPE HERE!
@@ -392,7 +373,7 @@ def compare_article_pubdate(article, directory, days=22):
     :return: boolean for whether the pubdate was older than the days value
     """
     try:
-        pubdate = get_article_pubdate(article, directory)
+        pubdate = get_article_pubdate(article_full_path)
         today = datetime.datetime.now()
         three_wks_ago = datetime.timedelta(days)
         compare_date = today - three_wks_ago
@@ -473,10 +454,16 @@ def check_for_corrected_articles(tempdir, corpusdir, article_list=None):
     if article_list is None:
         article_list = listdir_nohidden(tempdir)
     for article_file in article_list:
-        article_type = check_article_type(article_file, corpusdir)
-        if article_type == 'correction':
-            corrected_article = get_related_article_doi(article_file, corpusdir)[0]
-            corrected_doi_list.append(corrected_article)
+        try:
+            article_type = check_article_type(article_file, corpusdir)
+            if article_type == 'correction':
+                article_full_path = os.path.join(tempdir, article_file)
+                corrected_article = get_related_article_doi(article_full_path)[0]
+                corrected_doi_list.append(corrected_article)
+        except OSError:
+            logging.info("File not found in check_for_corrected_articles: {0}"
+                         .format(article_file))
+
     corrected_article_list = [doi_to_path(doi, corpusdir) if
                               os.path.exists(doi_to_path(doi, corpusdir)) else
                               doi_to_path(doi, tempdir) for doi in corrected_doi_list]
@@ -511,13 +498,13 @@ def download_corrected_articles(corpusdir, tempdir, corrected_article_list=None)
     return corrected_updated_article_list
 
 
-def check_if_uncorrected_proof(article_file, directory):
+def check_if_uncorrected_proof(article_full_path):
     """
     For a single article in a directory, check whether it is the 'uncorrected proof' type
     :param article: Partial DOI/filename of the article
     :return: Boolean for whether article is an uncorrected proof (true = yes, false = no)
     """
-    tree = get_article_xml(article_file, directory)
+    tree = get_article_xml(article_full_path)
     for subtree in tree:
         if subtree.text == 'uncorrected-proof':
             return True
@@ -542,6 +529,9 @@ def get_uncorrected_proofs_list(corpusdir):
         bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
         for i, article_file in enumerate(article_files):
             bar.update(i+1)
+            print('*')
+            print(article_file)
+            print(corpusdir)
             if check_if_uncorrected_proof(article_file, corpusdir):
                 uncorrected_proofs_list.append(filename_to_doi(article_file))
         bar.finish()
@@ -573,9 +563,13 @@ def check_for_uncorrected_proofs(tempdir, corpusdir, text_list=uncorrected_proof
     articles = listdir_nohidden(tempdir)
     new_proofs = 0
     for article_file in articles:
-        if check_if_uncorrected_proof(article_file, corpusdir):
-            uncorrected_proofs_list.append(filename_to_doi(article_file))
-            new_proofs += 1
+        try:
+            if check_if_uncorrected_proof(article_file, corpusdir):
+                uncorrected_proofs_list.append(filename_to_doi(article_file))
+                new_proofs += 1
+        except OSError:
+            # Logging missing file
+            logging.info("File not found in check_for_uncorrected_proofs: {}".format(article_file))
     # Copy all uncorrected proofs from list to clean text file
     with open(text_list, 'w') as file:
         for item in sorted(set(uncorrected_proofs_list)):
@@ -660,7 +654,15 @@ def download_vor_updates(corpusdir, tempdir='', vor_updates_available=None,
                                                           plos_network=plos_network)
         vor_updated_article_list.extend(proofs_download_list)
         new_uncorrected_proofs_list = list(set(new_uncorrected_proofs_list) - set(vor_updated_article_list))
-        too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof, tempdir)]
+        too_old_proofs = []
+        for proof in new_uncorrected_proofs_list:
+            try:
+                if compare_article_pubdate(proof, tempdir):
+                    too_old_proofs.append(proof)
+            except OSError:
+                ("File not found in download_vor_updates: {}".format(proof))
+
+
         if too_old_proofs and plos_network:
             print("Proofs older than 3 weeks: {0}".format(too_old_proofs))
 
