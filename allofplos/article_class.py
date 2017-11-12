@@ -316,7 +316,10 @@ class Article():
             if el.attrib.get('id'):
                 if el.getchildren():
                     for sub_el in el.getchildren():
-                        fn_dict[el.attrib['id']] = sub_el.text
+                        if sub_el.tag == 'email':
+                            pass
+                        else:
+                            fn_dict[el.attrib['id']] = sub_el.text
                 else:
                     # in case is at top-level of element
                     fn_dict[el.attrib['id']] = el.text.replace('\n', '').replace('\r', '').replace('\t', '')
