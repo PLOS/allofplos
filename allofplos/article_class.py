@@ -350,8 +350,16 @@ class Article():
             if note.tag == 'corresp':
                 author_info = note.getchildren()
                 for i, item in enumerate(author_info):
+                    # if author initials are in the same field as email address
+                    if item.tag == 'email' and all(x in item.text for x in ('(', ')')):
+                        email_info = item.text.split(' ')
+                        for i, info in enumerate(email_info):
+                            # prune out non-letters from initials & email
+                            email_info[i] = re.sub(r'[^a-zA-Z0-9=@\.+-]', '', info)
+                        corr_emails[email_info[1]] = email_info[0]
+
                     # if no author initials (one corr author)
-                    if item.tag == 'email' and item.tail is None and item.text:
+                    elif item.tag == 'email' and item.tail is None and item.text:
                         email_list.append(item.text)
                         if item.text == '':
                             print('No email available for {}'.format(self.doi))
@@ -359,6 +367,7 @@ class Article():
                             corr_emails[note.attrib['id']] = email_list
                         else:
                             corr_emails['cor001'] = email_list
+
                     # if more than one email per author; making sure no initials present (comma ok)
                     elif item.tag == 'email' and re.sub(r'[^a-zA-Z0-9=]', '', item.tail) is None:
                         try:
