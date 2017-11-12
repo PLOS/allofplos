@@ -600,12 +600,13 @@ class Article():
                 else:
                     # print('one_corr_author error finding email for {} in {}'.format(corr_author, email_dict))
                     matching_error = True
-        elif len(corr_author_list) > 1 and len(email_dict) > 1:
+        elif len(corr_author_list) > 1 and len(set([tuple(x) for x in email_dict.values()])) > 1:
             corr_author_list, matching_error = match_contribs_to_dicts(corr_author_list,
                                                                        email_dict,
                                                                        contrib_key='email')
         elif len(corr_author_list) > 1:
-            if len(email_dict) == 1:
+            if len(email_dict) == 1 or len(set([tuple(x) for x in email_dict.values()])) == 1:
+                # if there's only one email address, use it for all corr authors
                 for corr_author in corr_author_list:
                     corr_author['email'] = list(email_dict.values())[0]
             else:
