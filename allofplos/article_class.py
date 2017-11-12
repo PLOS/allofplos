@@ -485,6 +485,7 @@ class Article():
 
         # TODO: param to remove unnecessary fields (initials) and dicts (rid_dict)
         # TODO: also get funding information, data availability, etc
+        # TODO: also get funding information, data availability, COI, etc
 
         # get dictionary of ids to institutional affiliations & all other footnotes
         aff_dict = self.get_aff_dict()
@@ -508,6 +509,8 @@ class Article():
         contrib_list = self.get_element_xpath(tag_path_elements=tag_path)
         contrib_dict_list = []
 
+        error_printed = False
+
         # iterate through each contributor
         for contrib in contrib_list:
             # initialize contrib dict with default fields
@@ -529,7 +532,12 @@ class Article():
             try:
                 contrib_dict.update(get_contrib_info(contrib))
             except TypeError:
-                print('Error getting contrib info for {}'.format(self.doi, self.type_))
+                # minimize number of times this prints out
+                if not error_printed:
+                    print('Error getting contrib info for {}'.format(self.doi, self.type_))
+                    error_printed = True
+                else:
+                    pass
 
             # get dictionary of contributor's footnote types to footnote ids
             contrib_dict['rid_dict'] = get_rid_dict(contrib)
