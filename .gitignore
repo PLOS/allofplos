@@ -14,4 +14,5 @@ allofplos_xml/
 !doi_to_pmc.csv
 *.iml
 */.ipynb_checkpoints/*
+*.egg-info/
 zip_info.txt
