@@ -355,7 +355,7 @@ class Article():
                 author_info = note.getchildren()
                 for i, item in enumerate(author_info):
                     # if author initials are in the same field as email address
-                    if item.tag == 'email' and all(x in item.text for x in ('(', ')')):
+                    if item.tag == 'email' and item.text and all(x in item.text for x in ('(', ')')):
                         email_info = item.text.split(' ')
                         for i, info in enumerate(email_info):
                             # prune out non-letters from initials & email
