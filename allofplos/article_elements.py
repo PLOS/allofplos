@@ -140,14 +140,11 @@ def get_contrib_name(contrib_element):
     else:
         # if no <name> element found, assume it's a collaboration
         contrib_collab_element = contrib_element.find("collab")
-        if contrib_collab_element.text:
-            group_name = contrib_collab_element.text
-        else:
-            group_name = et.tostring(contrib_collab_element, encoding='unicode')
-            group_name = re.sub('<[^>]*>', '', group_name).rstrip('\n')
-            if not group_name:
-                print("Error constructing contrib_name group element")
-                group_name = ''
+        group_name = et.tostring(contrib_collab_element, encoding='unicode')
+        group_name = re.sub('<[^>]*>', '', group_name).rstrip('\n')
+        if not group_name:
+            print("Error constructing contrib_name group element")
+            group_name = ''
         contrib_name = dict(group_name=group_name)
 
     return contrib_name

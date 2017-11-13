@@ -412,6 +412,9 @@ class Article():
                             corr_emails[corr_initials].append(corr_email)
                     else:
                         pass
+        if not corr_emails:
+            if '@' in et.tostring(author_notes_element, method='text', encoding='unicode'):
+                print('Email not in <email> element for {}'.format(self.doi))
         return corr_emails
 
     def get_contributions_dict(self):
@@ -612,8 +615,12 @@ class Article():
             corr_author_list = []
 
         if matching_error:
-            print('Warning: corresponding authors not matched correctly to email addresses for {}'
+            if len(email_dict) > len(corr_author_list):
+                print('Affiliated author email included for {}'
                   .format(self.doi))
+            elif email_dict:
+                print('Warning: corresponding authors not matched correctly to email addresses for {}'
+                      .format(self.doi))
         return contrib_dict_list
 
     def correct_or_retract_bool(self):
