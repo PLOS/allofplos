@@ -1,8 +1,8 @@
 import os
 import unittest
 
-from plos_corpus import INT_URL_TMP, EXT_URL_TMP
-from transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
+from allofplos.plos_corpus import INT_URL_TMP, EXT_URL_TMP
+from allofplos.transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
                             filename_to_url, doi_to_url)
 
 
