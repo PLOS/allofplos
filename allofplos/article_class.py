@@ -377,7 +377,7 @@ class Article():
                             corr_emails['cor001'] = email_list
 
                     # if more than one email per author; making sure no initials present (comma ok)
-                    elif item.tag == 'email' and re.sub(r'[^a-zA-Z0-9=]', '', item.tail) is None:
+                    elif item.tag == 'email' and re.sub(r'[^a-zA-Z0-9=]', '', str(item.tail)) is None:
                         try:
                             if author_info[i+1].tail is None:
                                 email_list.append(item.text)
@@ -461,8 +461,9 @@ class Article():
                             contributor_initials = (con_item[0][0].tail.lstrip(' ').rstrip('.')).split(' ')
                             initials_list.extend(contributor_initials)
                             contrib_dict[contribution] = contributor_initials
-                        except IndexError:
-                            print('Error parsing contributions item {}: {}'.format(self.doi, et.tostring(con_item, encoding='unicode', method='xml')))
+                        except (IndexError, AttributeError) as e:
+                            # print('Error parsing contributions item {}: {}'.format(self.doi, et.tostring(con_item, encoding='unicode', method='xml')))
+                            pass
                 except IndexError:
                     # for single strings, though it doesn't parse all of them correctly.
                     # Example: '10.1371/journal.pone.0050782'
@@ -632,7 +633,7 @@ class Article():
                 print('Contributing author email included for {}'
                       .format(self.doi))
                 match_error_printed = True
-        elif email_dict and 0 < len(email_dict) < len(corr_author_list):
+        elif email_dict and 1 < len(email_dict) < len(corr_author_list):
             print('{} corresponding author email(s) missing for {}'
                   .format(len(corr_author_list) - len(email_dict), self.doi))
             match_error_printed = True
