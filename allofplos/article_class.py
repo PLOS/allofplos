@@ -542,9 +542,6 @@ class Article():
                 else:
                     pass
 
-            # get dictionary of contributor's footnote types to footnote ids
-            contrib_dict['rid_dict'] = get_rid_dict(contrib)
-
             # map affiliation footnote ids to the actual institutions
             try:
                 contrib_dict['affiliations'] = [aff_dict.get(aff, "")
@@ -564,7 +561,7 @@ class Article():
                                          for aff in v
                                          if k == 'fn'
                                          ]
-
+            # make list of all contribs
             contrib_dict_list.append(contrib_dict)
 
         # match authors to credit_dicts (from author notes) if necessary
