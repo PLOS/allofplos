@@ -553,23 +553,30 @@ class Article():
 
             # map affiliation footnote ids to the actual institutions
             try:
-                contrib_dict['affiliations'] = [aff_dict.get(aff, "")
-                                                for k, v in contrib_dict['rid_dict'].items()
-                                                for aff in v
-                                                if k == 'aff'
-                                                ]
-            except TypeError:
+                if contrib_dict.get('rid_dict', None) is not None:
+                    contrib_dict['affiliations'] = [aff_dict.get(aff, "")
+                                                    for k, v in contrib_dict['rid_dict'].items()
+                                                    for aff in v
+                                                    if k == 'aff'
+                                                    ]
+            except (TypeError, AttributeError) as e:
                 print('error constructing affiliations for {}: {} {}'
                       .format(self.doi,
                               contrib_dict.get('given_names'),
                               contrib_dict.get('surname')))
                 contrib_dict['affiliations'] = [""]
-
-            contrib_dict['footnotes'] = [aff_dict.get(aff, "")
-                                         for k, v in contrib_dict['rid_dict'].items()
-                                         for aff in v
-                                         if k == 'fn'
-                                         ]
+            try:
+                contrib_dict['footnotes'] = [aff_dict.get(aff, "")
+                                             for k, v in contrib_dict['rid_dict'].items()
+                                             for aff in v
+                                             if k == 'fn'
+                                             ]
+            except AttributeError:
+                # print('error constructing footnote matches for {}: {} {}'
+                #       .format(self.doi,
+                #               contrib_dict.get('given_names'),
+                #               contrib_dict.get('surname')))
+                contrib_dict['affiliations'] = [""]
             # make list of all contribs
             contrib_dict_list.append(contrib_dict)
 
@@ -620,16 +627,19 @@ class Article():
         else:
             corr_author_list = []
 
-        if matching_error:
-            if len(email_dict) > len(corr_author_list) > 0:
+        match_error_printed = False
+        if email_dict and len(email_dict) > len(corr_author_list) > 0:
                 print('Contributing author email included for {}'
-                  .format(self.doi))
-            elif 0 < len(email_dict) < len(corr_author_list):
-                print('Contributing author email(s) missing for {}'
-                  .format(self.doi))                
-            elif email_dict:
-                print('Warning: corresponding authors not matched correctly to email addresses for {}'
                       .format(self.doi))
+                match_error_printed = True
+        elif email_dict and 0 < len(email_dict) < len(corr_author_list):
+            print('{} corresponding author email(s) missing for {}'
+                  .format(len(corr_author_list) - len(email_dict), self.doi))
+            match_error_printed = True
+
+        if matching_error and email_dict and not match_error_printed:
+            print('Warning: corresponding authors not matched correctly to email addresses for {}'
+                  .format(self.doi))
         return contrib_dict_list
 
     def correct_or_retract_bool(self):
