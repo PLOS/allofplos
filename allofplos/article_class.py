@@ -615,9 +615,12 @@ class Article():
             corr_author_list = []
 
         if matching_error:
-            if len(email_dict) > len(corr_author_list):
-                print('Affiliated author email included for {}'
+            if len(email_dict) > len(corr_author_list) > 0:
+                print('Contributing author email included for {}'
                   .format(self.doi))
+            elif 0 < len(email_dict) < len(corr_author_list):
+                print('Contributing author email(s) missing for {}'
+                  .format(self.doi))                
             elif email_dict:
                 print('Warning: corresponding authors not matched correctly to email addresses for {}'
                       .format(self.doi))
