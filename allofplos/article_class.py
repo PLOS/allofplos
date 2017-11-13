@@ -360,7 +360,7 @@ class Article():
                             # prune out non-letters from initials & email
                             email_info[i] = re.sub(r'[^a-zA-Z0-9=@\.+-]', '', info)
                         try:
-                            corr_emails[email_info[1]] = email_info[0]
+                            corr_emails[email_info[1]] = [email_info[0]]
                         except IndexError:
                             print('Error parsing emails for {}'.format(self.doi))
                             pass
