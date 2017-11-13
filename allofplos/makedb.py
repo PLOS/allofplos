@@ -7,6 +7,7 @@ Make a SQLite DB out of articles XML files
 
 from bs4 import BeautifulSoup
 import os
+import random
 import progressbar
 
 corpusdir = 'allofplos_xml'
@@ -15,9 +16,10 @@ journal_set = set()
 subject_set = set()
 
 allfiles = os.listdir(corpusdir)
-max_value = len(allfiles)
+randomfiles = random.sample(allfiles, 5000)
+max_value = len(randomfiles)
 bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-for i, file_ in enumerate(allfiles):
+for i, file_ in enumerate(randomfiles):
     #print(os.path.join(corpusdir, file_))
     #print(file_)
     sample = open(os.path.join(corpusdir, file_)).read()
@@ -39,8 +41,8 @@ for i, file_ in enumerate(allfiles):
     #print('============================')
 
 bar.finish()
-print(journal)
-print(subject)
+print(journal_set)
+print(subject_set)
 
 '''
 if soup.find('article-categories').find('subj-group').has_attr('subj-group-type'):
