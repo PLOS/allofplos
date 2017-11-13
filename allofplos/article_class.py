@@ -413,8 +413,13 @@ class Article():
                     else:
                         pass
         if not corr_emails:
-            if '@' in et.tostring(author_notes_element, method='text', encoding='unicode'):
-                print('Email not in <email> element for {}'.format(self.doi))
+            author_notes_field = et.tostring(author_notes_element, method='text', encoding='unicode')
+            if '@' in author_notes_field:
+                regex_email = r'[\w\.-]+@[\w\.-]+'
+                email_finder = re.compile(regex_email)
+                email_list = email_finder.findall(author_notes_field)
+                if email_list:
+                    corr_emails['cor001'] = email_list
         return corr_emails
 
     def get_contributions_dict(self):
