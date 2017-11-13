@@ -706,44 +706,6 @@ class Article():
                 return None
         return related_article
 
-    def get_counts(self):
-        """For a single article, return a dictionary of the several counts functions that are available.
-        Dictionary format for XML tags: {figures: fig-count, pages: page-count, tables: table-count}
-        :return: counts dictionary of number of figures, pages, and tables in the article
-        """
-        counts = {}
-
-        tag_path = ["/",
-                    "article",
-                    "front",
-                    "article-meta",
-                    "counts"]
-        count_element_list = self.get_element_xpath(tag_path_elements=tag_path)
-        for count_element in count_element_list:
-            for count_item in count_element:
-                count = count_item.get('count')
-                count_type = count_item.tag
-                counts[count_type] = count
-        if len(counts) > 3:
-            print(counts)
-        return counts
-
-    def get_body_word_count(self):
-        """For an article, get how many words are in the body.
-
-        :return: count of words in the body of the PLOS article
-        """
-        body_element = self.get_element_xpath(tag_path_elements=["/",
-                                                                 "article",
-                                                                 "body"])
-        try:
-            body_text = et.tostring(body_element[0], encoding='unicode', method='text')
-            body_word_count = len(body_text.split(" "))
-        except IndexError:
-            print("Error parsing article body: {}".format(self.doi))
-            body_word_count = 0
-        return body_word_count
-
     def check_if_link_works(self):
         """See if a link is valid (i.e., returns a '200' to the HTML request).
 
@@ -784,7 +746,10 @@ class Article():
 
     @property
     def xml(self):
-        return self.__str__()
+        local_xml = et.tostring(self.tree,
+                                method='xml',
+                                encoding='unicode')
+        return local_xml
 
     @property
     def tree(self):
@@ -1052,11 +1017,44 @@ class Article():
 
     @property
     def counts(self):
-        return self.get_counts()
+        """For a single article, return a dictionary of the several counts functions that are available.
+
+        Dictionary format for XML tags: {figures: fig-count, pages: page-count, tables: table-count}
+        :return: counts dictionary of number of figures, pages, and tables in the article
+        """
+        counts = {}
+
+        tag_path = ["/",
+                    "article",
+                    "front",
+                    "article-meta",
+                    "counts"]
+        count_element_list = self.get_element_xpath(tag_path_elements=tag_path)
+        for count_element in count_element_list:
+            for count_item in count_element:
+                count = count_item.get('count')
+                count_type = count_item.tag
+                counts[count_type] = count
+        if len(counts) > 3:  # this shouldn't happen
+            print(counts)
+        return counts
 
     @property
     def word_count(self):
-        return self.get_body_word_count()
+        """For an article, get how many words are in the body.
+
+        :return: count of words in the body of the PLOS article
+        """
+        body_element = self.get_element_xpath(tag_path_elements=["/",
+                                                                 "article",
+                                                                 "body"])
+        try:
+            body_text = et.tostring(body_element[0], encoding='unicode', method='text')
+            body_word_count = len(body_text.split(" "))
+        except IndexError:
+            print("Error parsing article body: {}".format(self.doi))
+            body_word_count = 0
+        return body_word_count
 
     @filename.setter
     def filename(self, value):
