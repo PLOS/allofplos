@@ -8,8 +8,8 @@ import requests
 from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
                              BASE_URL_ARTICLE_LANDING_PAGE)
 from plos_regex import (validate_doi, corpusdir)
-from article_elements import (parse_article_date, get_rid_dict,
-                              get_contrib_info, match_contribs_to_dicts)
+from article_elements import (parse_article_date, get_contrib_info,
+                              match_contribs_to_dicts)
 
 
 class Article():
