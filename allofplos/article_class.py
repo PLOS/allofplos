@@ -34,6 +34,7 @@ class Article():
         """
         self._tree = None
         self._local = None
+        self._contributors = None
         self._correct_or_retract = None  # Will probably need to be an article subclass
 
     @property
@@ -838,18 +839,25 @@ class Article():
         return dates['epub']
 
     @property
+    def contributors(self):
+        if self._contributors is None:
+            return self.get_contributors_info()
+        else:
+            return self._contributors
+
+    @property
     def authors(self):
-        contributors = self.get_contributors_info()
+        contributors = self.contributors
         return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'author']
 
     @property
     def corr_author(self):
-        contributors = self.get_contributors_info()
+        contributors = self.contributors
         return [contrib for contrib in contributors if contrib.get('author_type', None) == 'corresponding']
 
     @property
     def editor(self):
-        contributors = self.get_contributors_info()
+        contributors = self.contributors
         return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'editor']
 
     @property
