@@ -13,9 +13,28 @@ from article_elements import (parse_article_date, get_contrib_info,
 
 
 class Article():
-    """The primary object of a PLOS article, instantiated by a valid PLOS DOI.
+    """The primary object of a PLOS article, initialized by a valid PLOS DOI.
+
     """
     def __init__(self, doi, directory=None, plos_network=False):
+        """Creation of an article object.
+
+        Usage:
+        For the first time, you can use
+        `article = Article(doi)`
+        and then it and some attributes will be stored in memory.
+        For creating articles after the first one, you can use:
+        `article.doi = doi`
+        This preserves the generic attributes and erases the article-specific ones
+        (See also reset_memoized_attrs())
+        Use this to more rapidly iterate through different articles.
+        :param doi: The Digital Object Identifier of the article
+        :type doi: str
+        :param directory: where the local article XML file is located, defaults to None
+        :type directory: str, optional
+        :param plos_network: whether on the local PLOS network, defaults to False
+        :type plos_network: bool, optional
+        """
         self.doi = doi
         if directory is None:
             self.directory = corpusdir
@@ -26,8 +45,8 @@ class Article():
         self._editor = None
 
     def reset_memoized_attrs(self):
-        """Reset attributes to None when instantiating a new article object
-        
+        """Reset attributes to None when instantiating a new article object.
+
         For article attributes that are memoized and specific to that particular article
         (including the XML tree and whether the xml file is in the local directory),
         reset them when creating a new article object.
@@ -40,7 +59,7 @@ class Article():
     @property
     def doi(self):
         """The unique Digital Object Identifier for a PLOS article.
-        
+
         See https://www.doi.org/
         :returns: DOI of the article object
         :rtype: {str}
@@ -50,6 +69,7 @@ class Article():
     @property
     def text_editor(self):
         """Your text editor of choice that can be called from the command line.
+
         Persists across article objects.
         Use with self.open_in_editor() to open an article of interest.
         Check your text editor's documentation to learn how to launch it from the command line.
@@ -66,7 +86,8 @@ class Article():
 
     @text_editor.setter
     def text_editor(self, value):
-        """Sets the text editor for all article objects
+        """Sets the text editor for all article objects.
+
         :param value: from self.text_editor
         :type value: {str}
         """
@@ -84,7 +105,7 @@ class Article():
         self._doi = d
 
     def __str__(self, pretty_print=True):
-        """Output when you print an article object on the command line
+        """Output when you print an article object on the command line.
 
         For parsing and viewing the XML of a local article. Should not be used for hashing
         :param pretty_print: Includes indenting/whitespace, defaults to True
@@ -119,7 +140,7 @@ class Article():
         return URL_TMP.format(self.doi)
 
     def get_remote_xml(self):
-        """For an article, parse its XML file at the location of self.url
+        """For an article, parse its XML file at the location of self.url.
 
         Uses the lxml element tree to create the string, which is saved to a local
         file when downloaded
@@ -336,7 +357,7 @@ class Article():
         a comma is used to separate emails. Initials are how emails can be matched to multiple
         authors. See also `match_author_names_to_emails()` for the back-up method of name matching.
         :return: dictionary of rid or author initials mapped to list of email address(es)
-        :rtype: dict
+        :rtype: {dict}
         """
         tag_path = ["/",
                     "article",
@@ -488,7 +509,7 @@ class Article():
         return author_contributions
 
     def get_contributors_info(self):
-        """Get and organize information about each article's contributor.
+        """Get and organize information about each contributor for an article.
         This includes both authors and editors of the article.
         This function both creates article-level dictionaries of contributor information,
         as well as parses individual <contrib> elements. It reconciles the dicts together
@@ -647,7 +668,7 @@ class Article():
         """Whether the JATS article type is a correction or retraction.
 
         See https://jats.nlm.nih.gov/archiving/tag-library/1.1/attribute/article-type.html
-        :returns: True if a correction or retraction, false if not
+        :returns: True if a correction or retraction, False if not
         :rtype: {bool}
         """
         if self.type_ == 'correction' or self.type_ == 'retraction':
@@ -767,6 +788,13 @@ class Article():
 
     @property
     def tree(self):
+        """The element tree object created from an article's local XML file
+
+        See http://lxml.de/api/lxml.etree._ElementTree-class.html
+        After accessing tree for the first time, it stores as an attribute
+        :returns: article's element tree
+        :rtype: {lxml.etree._ElementTree-class}
+        """
         if self._tree is None:
             if self.local:
                 local_element_tree = et.parse(self.filename)
@@ -779,18 +807,28 @@ class Article():
 
     @property
     def root(self):
+        """Get the root (base) element of an article.
+        """
         return self.tree.getroot()
 
     @property
     def page(self):
+        """ The URL of the landing page for an article.
+
+        Where to access an article's HTML version
+        """
         return BASE_URL_ARTICLE_LANDING_PAGE + self.doi
 
     @property
     def url(self):
+        """The direct url of an article's XML file.
+        """
         return self.get_url(plos_network=self.plos_network)
 
     @property
     def filename(self):
+        """The path on the local file system to a given article's XML file
+        """
         if 'annotation' in self.doi:
             article_path = os.path.join(self.directory, 'plos.correction.' + self.doi.split('/')[-1] + '.xml')
         else:
@@ -799,6 +837,10 @@ class Article():
 
     @property
     def local(self):
+        """Boolean of whether the article is stored locally or not.
+
+        Stored as attribute after first access
+        """
         if self._local is None:
             return os.path.isfile(self.filename)
         else:
@@ -808,7 +850,7 @@ class Article():
     def proof(self):
         """
         For a single article in a directory, check whether it is an 'uncorrected proof' or a
-        'VOR update' to the uncorrected proof, or neither
+        'VOR update' to the uncorrected proof, or neither.
         :return: proof status if it exists; otherwise, None
         """
         xpath_results = self.get_element_xpath()
@@ -823,16 +865,27 @@ class Article():
 
     @property
     def remote_element_tree(self):
+        """Gets the lxml element tree of an article from its remote URL.
+
+        Can compare local (self.xml) to remote versions of XML
+        :returns: article's online element tree
+        :rtype: {lxml.etree._ElementTree-class}
+        """
         return et.parse(self.url)
 
     @property
     def journal(self):
+        """Journal that an article was published in.
+
+        Can be PLOS Biology, Medicine, Neglected Tropical Diseases, Pathogens,
+        Genetics, Computational Biology, ONE, or the now defunct Clinical Trials.
+        """
         return self.get_plos_journal()
 
     @property
     def title(self):
-        """
-        For an individual PLOS article, get its title.
+        """For an individual PLOS article, get its title.
+
         :return: string of article title at specified xpath location
         """
         title = self.get_element_xpath(tag_path_elements=["/",
@@ -846,11 +899,23 @@ class Article():
 
     @property
     def pubdate(self):
+        """The date an article was published online.
+
+        :returns: article publication date
+        :rtype: {datetime.datetime}
+        """
         dates = self.get_dates()
         return dates['epub']
 
     @property
     def contributors(self):
+        """ List of contributors to an article.
+
+        Including authors and editors
+        Stores as attribute after first access
+        :returns: list of dictionaries for each contributor
+        :rtype: {list}
+        """
         if self._contributors is None:
             return self.get_contributors_info()
         else:
@@ -858,23 +923,34 @@ class Article():
 
     @property
     def authors(self):
+        """List of authors of an article. Including contributing and corresponding.
+
+        For more about authorship criteria, see http://journals.plos.org/plosone/s/authorship
+        """
         contributors = self.contributors
         return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'author']
 
     @property
     def corr_author(self):
+        """List of corresponding authors of an article.
+        """
         contributors = self.contributors
         return [contrib for contrib in contributors if contrib.get('author_type', None) == 'corresponding']
 
     @property
     def editor(self):
+        """The editor on the article.
+
+        For more about the editorial process, see http://journals.plos.org/plosone/s/editorial-and-peer-review-process
+        """
         contributors = self.contributors
         return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'editor']
 
     @property
     def type_(self):
         """For an article file, get its JATS article type.
-        Use primarily to find Correction (and thereby corrected) articles
+
+        Used primarily to find Correction (and thereby corrected) articles
         :return: JATS article_type at that xpath location
         """
         type_element_list = self.get_element_xpath(tag_path_elements=["/",
@@ -883,8 +959,9 @@ class Article():
 
     @property
     def plostype(self):
-        """
-        For an article file, get its PLOS article type. This format is less standardized than JATS article type
+        """For an article file, get its PLOS article type.
+
+        This format is less standardized than the JATS article type (self.type_)
         :return: PLOS article_type at that xpath location
         """
         article_categories = self.get_element_xpath(tag_path_elements=["/",
@@ -905,7 +982,7 @@ class Article():
 
     @property
     def dtd(self):
-        """
+        """Document Type Definition for an article.
         For more information on these DTD tagsets, see https://jats.nlm.nih.gov/1.1d3/ and https://dtd.nlm.nih.gov/3.0/
         """
         try:
@@ -923,8 +1000,9 @@ class Article():
 
     @property
     def abstract(self):
-        """
-        For an individual article in the PLOS corpus, get the string of the abstract content.
+        """For an individual PLOS article, get the string of the abstract content.
+
+        Info about the article abstract: http://journals.plos.org/plosone/s/submission-guidelines#loc-abstract
         :return: plain-text string of content in abstract
         """
         abstract = self.get_element_xpath(tag_path_elements=["/",
@@ -948,6 +1026,11 @@ class Article():
 
     @property
     def correct_or_retract(self):
+        """Boolean for whether the JATS article type is a correction or retraction. 
+
+        :returns: Whether the article is a correction or retraction
+        :rtype: {bool}
+        """
         if self._correct_or_retract is None:
             return self.correct_or_retract_bool()
         else:
@@ -955,6 +1038,13 @@ class Article():
 
     @property
     def related_doi(self):
+        """DOI related to current article
+        
+        Only works for corrections and retractions, the two JATS article types that point
+        at other articles.
+        :returns: First related DOI
+        :rtype: {str}
+        """
         if self.correct_or_retract is True:
             return self.get_related_doi()
         else:
@@ -970,8 +1060,16 @@ class Article():
 
     @filename.setter
     def filename(self, value):
+        """Sets an article object using a local filename.
+
+        Converts a filename to DOI using an existing function.
+        :param value: filename
+        :type value: string
+        """
         self.doi = filename_to_doi(value)
 
     @classmethod
     def from_filename(cls, filename):
+        """Initiate an article object using a local XML file.
+        """
         return cls(filename_to_doi(filename))
