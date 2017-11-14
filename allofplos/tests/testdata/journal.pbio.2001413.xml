@@ -1,0 +1,317 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="other" dtd-version="1.1d3" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS Biol</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosbiol</journal-id>
+<journal-title-group>
+<journal-title>PLOS Biology</journal-title>
+</journal-title-group>
+<issn pub-type="ppub">1544-9173</issn>
+<issn pub-type="epub">1545-7885</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pbio.2001413</article-id>
+<article-id pub-id-type="publisher-id">pbio.2001413</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Community Page</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Engineering and technology</subject><subj-group><subject>Mechanical engineering</subject><subj-group><subject>Robotics</subject><subj-group><subject>Robots</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Engineering and technology</subject><subj-group><subject>Equipment</subject><subj-group><subject>Laboratory equipment</subject><subj-group><subject>Pipettes</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Engineering and technology</subject><subj-group><subject>Mechanical engineering</subject><subj-group><subject>Robotics</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Sociology</subject><subj-group><subject>Education</subject><subj-group><subject>Schools</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Cognitive science</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Learning</subject><subj-group><subject>Human learning</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Learning</subject><subj-group><subject>Human learning</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Psychology</subject><subj-group><subject>Cognitive psychology</subject><subj-group><subject>Learning</subject><subj-group><subject>Human learning</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Learning and memory</subject><subj-group><subject>Learning</subject><subj-group><subject>Human learning</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Computer and information sciences</subject><subj-group><subject>Computer software</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Physics</subject><subj-group><subject>States of matter</subject><subj-group><subject>Fluids</subject><subj-group><subject>Liquids</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Population groupings</subject><subj-group><subject>Professions</subject><subj-group><subject>Teachers</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Liquid-handling Lego robots and experiments for STEM education and research</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Gerber</surname>
+<given-names>Lukas C.</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<role content-type="http://credit.casrai.org/">Validation</role>
+<role content-type="http://credit.casrai.org/">Visualization</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<role content-type="http://credit.casrai.org/">Writing – review and editing</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Calasanz-Kaiser</surname>
+<given-names>Agnes</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<role content-type="http://credit.casrai.org/">Supervision</role>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Hyman</surname>
+<given-names>Luke</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Voitiuk</surname>
+<given-names>Kateryna</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Patil</surname>
+<given-names>Uday</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<xref ref-type="aff" rid="aff005"><sup>5</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0002-6068-5561</contrib-id>
+<name name-style="western">
+<surname>Riedel-Kruse</surname>
+<given-names>Ingmar H.</given-names>
+</name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Funding acquisition</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Project administration</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<role content-type="http://credit.casrai.org/">Supervision</role>
+<role content-type="http://credit.casrai.org/">Validation</role>
+<role content-type="http://credit.casrai.org/">Visualization</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<role content-type="http://credit.casrai.org/">Writing – review and editing</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Department of Bioengineering, Stanford University, Stanford, California, United States of America</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Isaac Newton Graham Middle School, Mountain View, California, United States of America</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>MYP Dresden International School, Dresden, Germany</addr-line></aff>
+<aff id="aff004"><label>4</label> <addr-line>University of California Santa Cruz, Santa Cruz, California, United States of America</addr-line></aff>
+<aff id="aff005"><label>5</label> <addr-line>Georgia Institute of Technology, Atlanta, Georgia, United States of America</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">ingmar@stanford.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>21</day>
+<month>3</month>
+<year>2017</year>
+</pub-date>
+<pub-date pub-type="collection">
+<month>3</month>
+<year>2017</year>
+</pub-date>
+<volume>15</volume>
+<issue>3</issue>
+<elocation-id>e2001413</elocation-id>
+<permissions>
+<copyright-year>2017</copyright-year>
+<copyright-holder>Gerber et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pbio.2001413"/>
+<abstract>
+<p>Liquid-handling robots have many applications for biotechnology and the life sciences, with increasing impact on everyday life. While playful robotics such as Lego Mindstorms significantly support education initiatives in mechatronics and programming, equivalent connections to the life sciences do not currently exist. To close this gap, we developed Lego-based pipetting robots that reliably handle liquid volumes from 1 ml down to the sub-μl range and that operate on standard laboratory plasticware, such as cuvettes and multiwell plates. These robots can support a range of science and chemistry experiments for education and even research. Using standard, low-cost household consumables, programming pipetting routines, and modifying robot designs, we enabled a rich activity space. We successfully tested these activities in afterschool settings with elementary, middle, and high school students. The simplest robot can be directly built from the widely used Lego Education EV3 core set alone, and this publication includes building and experiment instructions to set the stage for dissemination and further development in education and research.</p>
+</abstract>
+<funding-group>
+<funding-statement>NSF (grant number 1324753). The funder had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. NSF (grant number 1638070). The funder had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="3"/>
+<table-count count="0"/>
+<page-count count="9"/>
+</counts>
+</article-meta>
+</front>
+<body>
+<p>Robotics and automation significantly advance the life sciences, e.g., via academic, industrial, and pharmaceutical liquid-handling robots [<xref ref-type="bibr" rid="pbio.2001413.ref001">1</xref>,<xref ref-type="bibr" rid="pbio.2001413.ref002">2</xref>] and open source approaches [<xref ref-type="bibr" rid="pbio.2001413.ref003">3</xref>]. Consequently, formal and informal education must convey these concepts. The Next Generation Science Standards (NGSS) and other national initiatives promote cross-disciplinary approaches for science, technology, engineering, and math (STEM) learning [<xref ref-type="bibr" rid="pbio.2001413.ref004">4</xref>,<xref ref-type="bibr" rid="pbio.2001413.ref005">5</xref>]. Many engaging and successful educational approaches to robotics exist, such as Lego Mindstorms or the FIRST Robotics Competition [<xref ref-type="bibr" rid="pbio.2001413.ref006">6</xref>–<xref ref-type="bibr" rid="pbio.2001413.ref011">11</xref>]. Naturally, these activities foremost focus on mechanical engineering, computer programming, and soft skills like teamwork. To a lesser extent, they are used to support experiments in Natural Science and Math education [<xref ref-type="bibr" rid="pbio.2001413.ref012">12</xref>]. Crucially, integration of equivalent robotics approaches with the life sciences and chemistry for K–12 and college education are lacking, hence we expect significant value in bridging this gap.</p>
+<p>Here, we designed simple yet powerful liquid-handling modules that can be integrated into various Lego Mindstorms robots (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1</xref>), enabling a variety of engaging and educational life science experiments (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2</xref>) (for building and experiment instructions see <xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1 Text</xref>, <xref ref-type="supplementary-material" rid="pbio.2001413.s004">S1</xref>–<xref ref-type="supplementary-material" rid="pbio.2001413.s006">S3</xref> Movies). The most basic pipetting robot (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1A</xref>) is built solely from parts in the standard Educational EV3 Lego kit (45544) (one robot per kit) and less than US$5 in plasticware, enabling easy reproduction. Up to 20 cuvettes are reversibly fixed with double-sided tape onto a motorized 1-D trolley (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1A and 1B</xref>). Liquids are delivered and removed via a standard 1-ml plastic syringe with a pipette tip (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1C</xref>), which is Lego compatible with minor modifications (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1D</xref>). A motorized crankshaft drives the syringe plunger (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1E</xref>), which can hold and deliver approximately 720 μl of liquid at a time. More complex calibration and delivery procedures achieve volumes down to 7 μl (20% precision, 30% accuracy, <xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1_2.2 Text</xref>). This liquid-handling module is inspired by professional pipettors (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1E</xref> inset). This module can be operated by hand (<xref ref-type="fig" rid="pbio.2001413.g003">Fig 3A</xref>) or incorporated into the robot (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1A</xref>), in which another crankshaft motor lifts and lowers this module relative to the cuvettes. More advanced robot and pipette designs (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1F</xref>, <xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1_3 Text</xref>) [<xref ref-type="bibr" rid="pbio.2001413.ref013">13</xref>] enable even better liquid handling and 2-D operation with multiple 6-, 24-, or 96-well plates standard plasticware. Here, the syringe is driven by a linear rail system (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1G</xref>). This enables convenient delivery of droplets of various sizes down to 2.5 μl (25% precision, 8% accuracy) using a 1-ml syringe and down to 0.15 μl (15% precision, 8% accuracy) using a 25-μl syringe, which is better than what we could obtain with a professional P2 pipette (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1H and 1I</xref>, <xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1_3.3.3 Text</xref>). In general, the quality of liquid handling depends on many factors, including fluid characteristics, piston diameter, size of the outlet hole, tip coating, and the impulse of piston advancement [<xref ref-type="bibr" rid="pbio.2001413.ref014">14</xref>]. Using sensors for homing enables positioning of the pipette tip with spatial precision of ±2 mm. These robots went through multiple design iterations, are mechanically stable over at least 1,000 pipetting cycles, and are controllable in real time by pressing buttons (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1A</xref>) or by preprogrammed routines.</p>
+<fig id="pbio.2001413.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pbio.2001413.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Liquid-handling Lego robots enable hands-on learning of modern biotechnology concepts.</title>
+<p>(<bold>A</bold>) The 1-D robot constructed from the educational EV3 kit can handle up to 20 standard cuvettes (<bold>B</bold>). A standard 1-ml syringe (<bold>C</bold>) is easily modified for Lego compatibility (<bold>D</bold>). The motorized crankshaft pipette head (<bold>E</bold>) is inspired by professional laboratory pipettes (inset). (<bold>F</bold>) An advanced 2-D robot can handle up to four 96-well plates, in which a linear rail system (<bold>G</bold>) enables precise droplet delivery (<bold>H</bold>). (<bold>I</bold>) Drop volumes for 1-ml and 25-μl syringes using the linear rail system (G) are calibrated from images against drops obtained with standard pipettes (Inset E); scale bars: 5 mm.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.2001413.g001" xlink:type="simple"/>
+</fig>
+<fig id="pbio.2001413.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pbio.2001413.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Examples of science experiments and activities that are enabled by the Lego liquid-handling robot.</title>
+<p>(<bold>A</bold>) Transfer and mixing of colored water. (<bold>B</bold>) Serial dilution of colored water. (<bold>C</bold>) Intensity readouts from a dilution series similar to (B) via the Lego color sensor (*in <xref ref-type="fig" rid="pbio.2001413.g001">Fig 1B</xref>) (<italic>n</italic> = 6 measurements at each point, error bars are 1 standard deviation [stdev]). (<bold>D</bold>) Liquids of different salt densities do not mix if gently layered in order. (<bold>E</bold>) Red cabbage juice as a pH indicator of various household liquids (pH in brackets). BS, baking soda. (<bold>F</bold>) Sterilization of the syringe prevents bacterial growth and avoids the need for disposable tips. LB, lysogeny broth. (<bold>G</bold>) Identification of the optimal sucrose concentration for yeast growth. (<bold>H,I</bold>) Automated loops and complex routines programmed with the Lego software for complex mixing protocols in cuvettes and multiwell plates.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.2001413.g002" xlink:type="simple"/>
+</fig>
+<fig id="pbio.2001413.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pbio.2001413.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>User studies in afterschool settings combine robot building, science experiments, and programming.</title>
+<p>(<bold>A</bold>) Children 10–13 years old built and explored the functionality of these robots by performing experiments. (<bold>B</bold>) Activity progression over five sessions, each lasting about 90 minutes. (<bold>C</bold>) Example of self-initiated student activity using classic Pasteur pipettes and robot pipettor to make colored patterns on paper.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.2001413.g003" xlink:type="simple"/>
+</fig>
+<p>We developed a set of basic experiments and activities for the 1-D robot that cover a wide variety of science experiments and topics with standard, low-cost plasticware and common household or school consumables, ensuring accessibility and safe use (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2</xref>). Mixing of colored liquids from two reservoirs into a third reservoir demonstrates basic liquid handling (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2A</xref>). Serial dilutions illustrate the concept of concentration (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2B</xref>). Aligning the cuvette with the Lego color sensor on the robot (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1B</xref>) showcases the functionality of spectrophotometers (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2C</xref>). Colored liquids with distinct salt densities can be sequentially layered in a single cuvette to model buoyancy (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2D</xref>). Cabbage juice constitutes a pH indicator for various liquids, e.g., water, lemon juice, and bleach (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2E</xref>). Sterilization is achieved by uptake and release of 80% alcohol or 10% bleach multiple times; in contrast, cross-contamination occurs without sterilization (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2F</xref>). Adding baker’s yeast to serially diluted sugar solutions leads to foam formation due to CO<sub>2</sub> production and demonstrates optimal growth conditions at intermediate nutrient concentration (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2G</xref>). Automated dilution series enable complex mixing and dilution series in cuvettes (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2H</xref>) or multiwell plates (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2I</xref>). Similar experiments are currently used in various school settings using Pasteur pipettes by hand.</p>
+<p>In order to assess the potential for education and wider dissemination, we carried out two user studies (<xref ref-type="fig" rid="pbio.2001413.g003">Fig 3A</xref>, <xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1_6 Text</xref>) focusing on the 1-D robot (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1A</xref>). Specifically, we investigated whether these activities could successfully integrate robot building, programming, and wet-science experiments in an engaging way, whether elementary and middle school students could successfully complete these activities, and what the required time frame would be. Among the available science activities (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2</xref>), we focused on liquid mixing, dilution series, and liquid density (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2A, 2B and 2D</xref>), which aligns well with middle school learning content [<xref ref-type="bibr" rid="pbio.2001413.ref005">5</xref>]. The robotic activities focused on building and programming, as is common in afterschool settings [<xref ref-type="bibr" rid="pbio.2001413.ref011">11</xref>]. Given the unknowns associated with a first deployment, we significantly guided all activities using worksheets. We designed a curriculum (<xref ref-type="fig" rid="pbio.2001413.g003">Fig 3B</xref>) that progresses from classic experiments with Pasteur pipettes, to real-time control of the pipettor module held by hand while pushing buttons (<xref ref-type="fig" rid="pbio.2001413.g003">Fig 3A</xref>), to real-time control of the robot while pushing buttons (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1A</xref>), all the way to programming the robot. Partial repetition of science experiments between sessions intended to deepen the concepts and to emphasize the differences between humans and liquid-handling robots, e.g., higher precision (session 2 versus session 4) and automation of repetitive tasks (session 2 versus session 5). Assessment was based on observed student activities as well as evaluation of worksheets, posttests, questionnaires, and self-reported learning.</p>
+<p>Eight elementary school students (seven used for the study according to institutional review board (IRB) guidelines; 10–11 years old; all Girl Scouts, 4/7 had previous Lego Mindstorms experience) worked with the robots in groups of two over five 90-minute afterschool sessions (<xref ref-type="fig" rid="pbio.2001413.g003">Fig 3B</xref>, <xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1_6.2 and S1_7 Text</xref>). In session 1, two instructors demonstrated a fully automated dilution series (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2B</xref>) and explained the general importance of liquid handling and robotics for the life sciences. The participants manually handled and mixed water with food coloring (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2A</xref>) using a plastic Pasteur pipette, then built their own robot pipette module (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1E</xref>). In session 2, the participants used their module to carry out the color-mixing (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2A</xref>), five-step serial dilution (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2B</xref>), and salt solution density layering (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2D</xref>) experiments. One partner always held and aligned the pipette with the cuvettes, while the other operated the two push buttons on the Lego brick to manipulate the liquids (<xref ref-type="fig" rid="pbio.2001413.g003">Fig 3A</xref>). During session 3, each group built one or two of the five main structural robot modules (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1A</xref>, <xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1_2.1 Text</xref>); the instructors helped assemble all modules to demonstrate one complete robot. For session 4, each group was provided with a completed robot. Groups then repeated all experiments from session 2 by manually controlling all motors via the buttons on the Lego brick (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1A</xref>). During session 5, the participants programmed the robot to perform simple and complex dilution series, for example, through programs with inner and outer loop skipping of every second or third cuvette to generate patterns (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2H</xref>). Here, participants also had to measure and convert degrees of motor rotation into linear distance between cuvettes. The course concluded with a postactivity quiz.</p>
+<p>Participant feedback and our observations attest to the utility of these activities (<xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1_6.2 Text</xref>). Two instructors for eight participants working in pairs were able to provide sufficient guidance, to correct mistakes, and to discuss content in more depth. Participants were motivated and enjoyed these activities, e.g., they frequently repeated experiments with other (favorite) colors instead of moving directly on to the next experiment, they integrated sounds into their code on their own initiative, and multiple participants used the Pasteur and the Robot pipette to make colorful patterns on tissues that had been provided to clean up spills (<xref ref-type="fig" rid="pbio.2001413.g003">Fig 3C</xref>). After the course, the participants rated the difficulty of each activity on a 1–5 Likert scale (very easy, easy, medium, hard, very hard): programming (2.8 ± 1.5) (always mean ± standard deviation [stdev]), building the robots (2.5 ± 0.8), density layering (2.5 ± 1.4), dilution series (1.8 ± 0.4), and color mixing (1.3 ± 0.5). Completed worksheets and quizzes demonstrated reasonable associations about why scientists pipette fluids (“liquids don’t need to be touched”), what robots are good for (“more controlled”), and the disadvantages of robots (“can have glitches”). The overall rating of the course on a scale of 1–5 (very bad–brilliant) was 4.2 ± 1.0. When asked what they had learned, all participants pointed to robots and programming; when asked what they liked, they pointed to both robots and the liquid experiments. We also tested whether density layering experiments would increase conceptual understanding of why objects float or sink, and of the three participants who had answered the prequestion incorrectly, two gave the correct answer afterwards.</p>
+<p>A second user study included nine middle school students (aged 11–13 years; both genders, 8/9 had previous experience with Lego Mindstorms, <xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1_6.3 Text</xref>) working in groups of two or three over 16 afterschool sessions (~30 hours total). This course was taught by a single middle school teacher; it followed a similar layout as before (<xref ref-type="fig" rid="pbio.2001413.g003">Fig 3B</xref>), but participants worked under less supervision, all groups built their own robot, participants had more time for self-motivated side projects including individual changes to the robot design, and the teacher inserted several lectures about liquids, densities, and dilution factors (<xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1_6.3 Text</xref>).</p>
+<p>Outcomes were generally consistent with the first study. This course was rated 4.2 ± 0.4 on a scale of 1–5 (strongly unfavorable to strongly favorable), and all activities were reported as having medium difficulty (2.1 ± 0.9 to 3.3 ± 0.7) on a scale of 1–5 (very easy–very hard). All students self-reported that they learned something new—7/9 mentioned wet-work (“I learned about salt density” or “I learned about serial dilution”). When asked specifically what they learned about liquid solutions, 5/9 pointed to the density concept (“liquids with higher salinity fall”), 2/9 to solutions in general (“a solution requires care to make”), and the remaining 2/9 answered “nothing” and “It's not easy.” When asked posttest what would happen if two liquid samples of different color and salt content were put over each other in either sequence, 9/9 provided the correct outcome, and 6/9 correctly referred to the different densities. Students also self-reported to have gained competency in building (7/9) and programming (8/9). These activities seemed to have broadened students’ perception of what robots can do, extending from classic engineering into science (“I learned that robotics…can be used in different ways”; “it is a lot more impressive than moving robots.”) When asked what they liked most, all activities were mentioned (e.g., “I liked programming our first experiment”; “I like the density layers sessions the best”; “I liked building and programming the robot”), suggesting that robotics and wet-experimentation can be bridged successfully.</p>
+<p>The impact of these activities is extendable in various ways in the future. Students could have more freedom, e.g., develop their own robot and pipette designs. Over a summer, three high school students implemented different robots, including one with moving plates and a stationary pipettor (<xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1_5 and S1_6.1 Text</xref>). Here, we identified as a major design challenge to build a pipettor module that is high performance in liquid handling but is also small enough to be supported by a multiaxis gantry robot. Students could perform quantitative experiments, utilizing more complex control and data-logging capabilities. For example, we used the Lego light sensors to measure the concentrations in a dilution series (Figs <xref ref-type="fig" rid="pbio.2001413.g001">1B</xref>, <xref ref-type="fig" rid="pbio.2001413.g002">2B and 2C</xref>), but where the limitations of this sensor required careful alignment to obtain reproducible readings (<xref ref-type="supplementary-material" rid="pbio.2001413.s001">S1_2.4.6 Text</xref>). The compatibility with standard plasticware (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2A and 2I</xref>) and our washing and sterilization techniques (<xref ref-type="fig" rid="pbio.2001413.g002">Fig 2F</xref>) might even be sufficient for certain research applications and citizen science [<xref ref-type="bibr" rid="pbio.2001413.ref015">15</xref>]. Whether a Lego Mindstorms robot could pick up and release disposable pipette tips with sufficient reliability is doubtful but an open question. Extensions beyond Lego could target lower cost or higher precision; furthermore, remotely controlled labs could be supported [<xref ref-type="bibr" rid="pbio.2001413.ref013">13</xref>,<xref ref-type="bibr" rid="pbio.2001413.ref016">16</xref>].</p>
+<p>In summary, our Lego-based liquid-handling robots combine with a versatile set of science experiments to safely and robustly meet important cross-disciplinary endpoints, integrating robotics, biology, chemistry, and hands-on learning. Our initial user studies point to the validity of our approach; future studies should focus on larger cohort sizes, including control groups, more teachers, and dissemination and utility beyond afterschool programs. The foundation for these robots, the EV3 kit (~US$380), is already available in many schools, while additional reagents are low cost (~US$5) and easily accessible. A minimalistic activity focusing on the hand-held robot pipette (<xref ref-type="fig" rid="pbio.2001413.g001">Fig 1A</xref>) and simple mixing and density experiments (<xref ref-type="fig" rid="pbio.2001413.g003">Fig 3B</xref>; sessions 1 and 2) requires even less Lego parts, aligns with the NGSS sixth and eighth grade [<xref ref-type="bibr" rid="pbio.2001413.ref005">5</xref>], and could be done within 2–3 hours. These activities may also help to extend Seymour Papert’s Mindstorms vison [<xref ref-type="bibr" rid="pbio.2001413.ref006">6</xref>] to the life sciences and chemistry. We invite other stakeholders such as teachers, students, DIY learners, and educational and life science researchers to use, disseminate, and further develop these robots via open-source instructions and protocols.</p>
+<sec id="sec001" sec-type="materials|methods">
+<title>Materials and methods</title>
+<sec id="sec002">
+<title>Lego</title>
+<p>The 1-D robot only requires parts included in the Lego Mindstorms EV3 Education edition (Lego Mindstorms EV3 Core Set 45544, Amazon B00DEA55Z8; US$380). Note that the EV3 Home edition of this kit would require additional pieces to build this robot.</p>
+</sec>
+<sec id="sec003">
+<title>Software</title>
+<p>The Lego Mindstorms EV3 Home Edition software (free download on Lego website: <ext-link ext-link-type="uri" xlink:href="http://www.lego.com/en-us/mindstorms/downloads/download-software" xlink:type="simple">http://www.lego.com/en-us/mindstorms/downloads/download-software</ext-link>) was used to program the robots to run experiments. The software is based on LabView, a widely used commercial software. To upload code to the robot, a PC (Mac or Windows), tablet (iOS or Android), or smartphone (iOS or Android) is required. Building instructions were made with the free Lego software, Lego Digital Designer (<ext-link ext-link-type="uri" xlink:href="http://ldd.lego.com" xlink:type="simple">http://ldd.lego.com</ext-link>). Both programs are available for PC and Mac. The control software is also available for iOS and Android.</p>
+</sec>
+<sec id="sec004">
+<title>Non-Lego parts</title>
+<p>Our design included cuvettes (Standard Cuvette Polystyrene Macro 3.5 ml, Amazon B00T5A64PQ), syringes (Plastic Syringe, Luer Slip, 1 ml, Amazon B00BQLJFYE), tips (Dispensing Needle, Plastic Tapered Pink 20 ga 0.024id x 1.25", Amazon B001QQ9QH0), 6-, 24-, and 96-well plates (Amazon B0177QVE1S, B0177QVILY, and B0177QVE7C, respectively), food color (AmeriColor Beginner Soft Gel Paste Food Color 4 Pack Kit, Amazon B002L3RV9C), a ruler (for mechanical support; School Smart Plastic Ruler, Amazon B003V1HDSM), double-sided carpet tape (XFasten Indoor Carpet Tape Double sided, Amazon B0141L81GS), and instant glue (Gorilla Super Glue Gel, Amazon B00CJ5EO2E). To install the syringe into the pipetting head, two simple modifications were made: some plastic was cut from the top of the syringe holder, and the top of the plunger was removed and glued to a red Lego peg included in the kit (Technic 32054 [pin 3L with friction ridges lengthwise and a stop bush]). Cuvettes were mounted on the 1-D robot via double-sided tape. For smallest droplet volumes, a 25-μl Hamilton glass pipette with steel plunger was used.</p>
+</sec>
+<sec id="sec005">
+<title>Consumables</title>
+<p>Readily available reagents included salt, sugar, and baker’s yeast. Salt solutions for the density-layering experiments were prepared by dissolving 18.0 g, 12.0 g, and 5.9 g sodium chloride in 50 ml water 100%, 67%, and 33% solutions, respectively). For the pH experiments, 300 g of red cabbage were blended with 300 ml of tap water in a Bullet blender for 30 seconds. The mixture was boiled for 10 minutes on medium heat. After cooling, the mix was filtered through a round coffee filter, yielding ~300 ml of a deep purple solution. As control, the pH of analyte solutions was also measured with pH indicator strips (Fisherbrand Plastic pH Strips).</p>
+</sec>
+<sec id="sec006">
+<title>User studies and IRB approval</title>
+<p>The 1-D robot was tested in two independent user studies. The first test group consisted of eight fifth-grade girls. Five 90-minute-long afterschool sessions were conducted over two months. The second test group consisted of nine middle-school students who built, programmed, and used the 1-D robot in 16 two-hour sessions spread over six weeks. In both user studies, we evaluated the utility of the robot and lesson plans with subjective observations, worksheets, and final questionnaires. All human subject studies were performed in accordance with Stanford IRB-18344. All parents gave consent. One child in the first study did not provide assent. This child participated in all activities but her data were excluded from analysis.</p>
+</sec>
+<sec id="sec007">
+<title>Ethics statement</title>
+<p>All human subject studies were performed in accordance with Stanford IRB-18344. None of the authors has any relationship with The Lego Group that would constitute a conflict of interest.</p>
+</sec>
+</sec>
+<sec id="sec008">
+<title>Supporting information</title>
+<supplementary-material id="pbio.2001413.s001" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pbio.2001413.s001" xlink:type="simple">
+<label>S1 Text</label>
+<caption>
+<title>Supplementary text.</title>
+<p>Overview supplements; Building instructions; Experiment instructions; User studies; Work sheets.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pbio.2001413.s002" mimetype="application/zip" position="float" xlink:href="info:doi/10.1371/journal.pbio.2001413.s002" xlink:type="simple">
+<label>S1 Data</label>
+<caption>
+<title>CAD files for building lego robots.</title>
+<p>(ZIP)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pbio.2001413.s003" mimetype="application/zip" position="float" xlink:href="info:doi/10.1371/journal.pbio.2001413.s003" xlink:type="simple">
+<label>S2 Data</label>
+<caption>
+<title>Software for running lego robots.</title>
+<p>(ZIP)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pbio.2001413.s004" mimetype="video/mp4" position="float" xlink:href="info:doi/10.1371/journal.pbio.2001413.s004" xlink:type="simple">
+<label>S1 Movie</label>
+<caption>
+<title>Overview movie.</title>
+<p>(MP4)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pbio.2001413.s005" mimetype="video/mp4" position="float" xlink:href="info:doi/10.1371/journal.pbio.2001413.s005" xlink:type="simple">
+<label>S2 Movie</label>
+<caption>
+<title>1D_robot.mp4</title>
+<p>Movie demonstrating the 1D robot.</p>
+<p>(MP4)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pbio.2001413.s006" mimetype="video/mp4" position="float" xlink:href="info:doi/10.1371/journal.pbio.2001413.s006" xlink:type="simple">
+<label>S3 Movie</label>
+<caption>
+<title>2D_Robot.mp4</title>
+<p>Movie demonstrating the 2D robot.</p>
+<p>(MP4)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>We would like to thank the Riedel-Kruse Lab, P. Blikstein, P. Ramon, and C. Ziker for help and comments.</p>
+</ack>
+<fn-group>
+<fn fn-type="other" id="fn001">
+<p><bold>Provenance:</bold> Not commissioned; externally peer reviewed.</p>
+</fn>
+</fn-group>
+<glossary>
+<title>Abbreviations</title>
+<def-list>
+<def-item><term>IRB</term>
+<def><p>institutional review board</p></def>
+</def-item>
+<def-item><term>NGSS</term>
+<def><p>Next Generation Science Standards</p></def>
+</def-item>
+<def-item><term>stdev</term>
+<def><p>standard deviation</p></def>
+</def-item>
+<def-item><term>STEM</term>
+<def><p>science, technology, engineering, and math</p></def>
+</def-item>
+</def-list>
+</glossary>
+<ref-list>
+<title>References</title>
+<ref id="pbio.2001413.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chapman</surname> <given-names>T</given-names></name>. <article-title>Lab automation and robotics: Automation on the move</article-title>. <source>Nature</source>. <year>2003</year>;<volume>421</volume>: <fpage>661</fpage>–<lpage>666</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/421661a" xlink:type="simple">10.1038/421661a</ext-link></comment> <object-id pub-id-type="pmid">12571603</object-id></mixed-citation></ref>
+<ref id="pbio.2001413.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kong</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Yuan</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Zheng</surname> <given-names>YF</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>W</given-names></name>. <article-title>Automatic liquid handling for life science: a critical review of the current state of the art</article-title>. <source>J Lab Autom</source>. <year>2012</year>;<volume>17</volume>: <fpage>169</fpage>–<lpage>185</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1177/2211068211435302" xlink:type="simple">10.1177/2211068211435302</ext-link></comment> <object-id pub-id-type="pmid">22357568</object-id></mixed-citation></ref>
+<ref id="pbio.2001413.ref003"><label>3</label><mixed-citation publication-type="other" xlink:type="simple"><name name-style="western"><surname>Wohlsen</surname> <given-names>M</given-names></name>. <article-title>This robot could make creating new life forms as easy as coding an app</article-title>. <source>Wired</source>. <year>2014</year>. <ext-link ext-link-type="uri" xlink:href="https://www.wired.com/2014/11/opentrons-bio-robots/" xlink:type="simple">https://www.wired.com/2014/11/opentrons-bio-robots/</ext-link>.</mixed-citation></ref>
+<ref id="pbio.2001413.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bybee</surname> <given-names>RW</given-names></name>. <article-title>The next generation science standards and the life sciences</article-title>. <source>Science &amp; Children</source>. <year>2013</year>; <volume>50</volume>.<issue>6</issue>: <fpage>7</fpage>.</mixed-citation></ref>
+<ref id="pbio.2001413.ref005"><label>5</label><mixed-citation publication-type="book" xlink:type="simple"><collab>National Research Council</collab>. <source>A Framework for K-12 Science Education: Practices, Crosscutting Concepts, and Core Ideas</source>. <year>2012</year>; <fpage>1</fpage>–<lpage>401</lpage>.</mixed-citation></ref>
+<ref id="pbio.2001413.ref006"><label>6</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Papert</surname> <given-names>S</given-names></name>. <source>Mindstorms: children, computers, and powerful ideas</source>. <publisher-name>Basic Books, Inc</publisher-name>; <year>1980</year>.</mixed-citation></ref>
+<ref id="pbio.2001413.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rusk</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Resnick</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Berg</surname> <given-names>R</given-names></name>. <article-title>New pathways into robotics: Strategies for broadening participation</article-title>. <source>Journal of Science Education and Technology</source>. <year>2008</year>;<volume>17</volume>: <fpage>59</fpage>–<lpage>69</lpage>.</mixed-citation></ref>
+<ref id="pbio.2001413.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Benitti</surname> <given-names>FBV</given-names></name>. <article-title>Exploring the educational potential of robotics in schools: A systematic review</article-title>. <source>Computers &amp; Education</source>. <year>2012</year>;<volume>58</volume>: <fpage>978</fpage>–<lpage>988</lpage>.</mixed-citation></ref>
+<ref id="pbio.2001413.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Danahy</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Brockman</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Carberry</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Shapiro</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>B C</surname></name>. <article-title>LEGO-based Robotics in Higher Education: 15 Years of Student Creativity</article-title>. <source>Int J Adv Robotic Sy</source>. <year>2014</year>;<volume>11</volume>.<issue>2</issue>: <fpage>27</fpage>.</mixed-citation></ref>
+<ref id="pbio.2001413.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mubin</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Stevens</surname> <given-names>CJ</given-names></name>, <name name-style="western"><surname>Shahid</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Mahmud</surname> <given-names>AA</given-names></name>, <name name-style="western"><surname>Dong</surname> <given-names>J-J</given-names></name>. <article-title>A Review of the applicability of robots in education</article-title>. <source>Journal of Technology for Education and Learning</source>. <year>2013</year>;<volume>1</volume>: 209-0015.</mixed-citation></ref>
+<ref id="pbio.2001413.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Toh</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Causo</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Tzuo</surname> <given-names>PW</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>IM</given-names></name>, <name name-style="western"><surname>Yeo</surname> <given-names>SH</given-names></name>. <article-title>A Review on the Use of Robots in Education and Young Children</article-title>. <source>Educational Technology &amp; Society</source>. <year>2016</year>;<volume>19</volume>.<issue>2</issue>: <fpage>148</fpage>–<lpage>163</lpage>.</mixed-citation></ref>
+<ref id="pbio.2001413.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Williams</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Igel</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Poveda</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Kapila</surname> <given-names>V</given-names></name>. <article-title>Enriching K-12 science and mathematics education using LEGOs</article-title>. <source>Advances in Engineering Education</source>. <year>2012</year>;<volume>3</volume>.<issue>2</issue>.</mixed-citation></ref>
+<ref id="pbio.2001413.ref013"><label>13</label><mixed-citation publication-type="other" xlink:type="simple">Hossain Z, Jin X, Bumbacher EW, Chung AM, Koo S, Shapiro JD, et al. Interactive Cloud Experimentation for Biology: An Online Education Case Study. Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems: ACM; 2015; 3681–3690.</mixed-citation></ref>
+<ref id="pbio.2001413.ref014"><label>14</label><mixed-citation publication-type="other" xlink:type="simple"><name name-style="western"><surname>Mannonen</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Syrja</surname> <given-names>K</given-names></name>. <source>Liquid handling application notes</source>. <year>2007</year>.</mixed-citation></ref>
+<ref id="pbio.2001413.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bonney</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Shirk</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Phillips</surname> <given-names>TB</given-names></name>, <name name-style="western"><surname>Wiggins</surname> <given-names>A</given-names></name>. <article-title>Next steps for citizen science</article-title>. <source>Science</source>. <year>2014</year>;<volume>343</volume>.<issue>6178</issue>: <fpage>1436</fpage>–<lpage>1437</lpage>.</mixed-citation></ref>
+<ref id="pbio.2001413.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hossain</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Bumbacher</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Chung</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Kim</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Litton</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Pradhan</surname> <given-names>S</given-names></name>, <etal>et al</etal>. <article-title>A Real-time Interactive, Scalable Biology Cloud Experimentation Platform</article-title>. <source>Nat Biotech</source>. <year>2016</year>;<volume>34</volume>.<issue>12</issue>: <fpage>1293</fpage>–<lpage>1298</lpage>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>
