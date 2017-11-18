@@ -53,7 +53,7 @@ def remote_retrieve(doi, filename=''):
     # First, see if the file was already downloaded.
     if filename:
         try:
-            f = open(filename)
+            open(filename)
             return filename
         except IOError:
             pass
@@ -420,6 +420,8 @@ def micc(number, paper):
 def micc_dictionary(paper):
     '''
     Analogous to citation_number_dictionary, but for MICCs rather than the number of citations.
+    Co-citations are when two citations are included in the same end note (e.g, '[3-5]')
+    :return: dict of counts for co-citation occurrences
     '''
     all_groups = [group_cleaner(g) for g in citation_grouper(paper)]
     references = paper.find_all("ref")

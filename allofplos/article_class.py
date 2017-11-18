@@ -490,7 +490,7 @@ class Article():
                     # Example: '10.1371/journal.pone.0050782'
                     contributions = note[0].text
                     if contributions is None:
-                        print('Error parsing contributions for {}: {}'.format(self.doi, et.tostring(con_element, encoding='unicode', method='xml')))
+                        # print('Error parsing contributions for {}: {}'.format(self.doi, et.tostring(con_element, encoding='unicode', method='xml')))
                         return None
                     contribution_list = re.split(': |\. ', contributions)
                     contribb_dict = dict(list(zip(contribution_list[::2], contribution_list[1::2])))
@@ -614,14 +614,15 @@ class Article():
                 author['author_roles'] = {'author_notes': role_list}
 
             if credit_matching_error:
-                print('Warning: authors not matched correctly to author_roles for {}'
-                      .format(self.doi))
+                # print('Warning: authors not matched correctly to author_roles for {}'
+                #       .format(self.doi))
+                pass
 
         # match corresponding authors to email addresses
         corr_author_list = [contrib for contrib in contrib_dict_list if contrib.get('author_type', None) == 'corresponding']
         if not corr_author_list and email_dict:
-            print('Corr authors but no emails found for {}'.format(self.doi))
-            matching_error = True
+            print('Email but no corresponding author found for {}'.format(self.doi))
+            # matching_error = True
         if corr_author_list and not email_dict:
             print('Corr emails not found for {}'.format(self.doi))
             matching_error = True
@@ -746,6 +747,8 @@ class Article():
 
     @property
     def xml(self):
+        """Returns string from local xml file.
+        """
         local_xml = et.tostring(self.tree,
                                 method='xml',
                                 encoding='unicode')
@@ -950,9 +953,9 @@ class Article():
         """Document Type Definition for an article.
         For more information on these DTD tagsets, see https://jats.nlm.nih.gov/1.1d3/ and https://dtd.nlm.nih.gov/3.0/
         """
+        dtd = self.get_element_xpath(tag_path_elements=["/",
+                                                        "article"])
         try:
-            dtd = self.get_element_xpath(tag_path_elements=["/",
-                                                            "article"])
             dtd = dtd[0].attrib['dtd-version']
             if str(dtd) == '3.0':
                 dtd = 'NLM 3.0'

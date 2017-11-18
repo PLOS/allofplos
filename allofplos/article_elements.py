@@ -127,7 +127,7 @@ def get_contrib_name(contrib_element):
                                    or "")
             else:
                 pass
-        if bool(given_names) or bool(surname):
+        if given_names or surname:
             # construct initials if either given or surname is present
             try:
                 contrib_initials = ''.join([part[0].upper() for part in re.split('[-| |,|\.]+', given_names) if part]) + \
