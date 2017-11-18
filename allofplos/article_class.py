@@ -483,14 +483,14 @@ class Article():
                             initials_list.extend(contributor_initials)
                             contrib_dict[contribution] = contributor_initials
                         except (IndexError, AttributeError) as e:
-                            # print('Error parsing contributions item {}: {}'.format(self.doi, et.tostring(con_item, encoding='unicode', method='xml')))
+                            print('Error parsing contributions item {}: {}'.format(self.doi, et.tostring(con_item, encoding='unicode', method='xml')))
                             pass
                 except IndexError:
                     # for single strings, though it doesn't parse all of them correctly.
                     # Example: '10.1371/journal.pone.0050782'
                     contributions = note[0].text
                     if contributions is None:
-                        # print('Error parsing contributions for {}: {}'.format(self.doi, et.tostring(con_element, encoding='unicode', method='xml')))
+                        print('Error parsing contributions for {}: {}'.format(self.doi, et.tostring(con_element, encoding='unicode', method='xml')))
                         return None
                     contribution_list = re.split(': |\. ', contributions)
                     contribb_dict = dict(list(zip(contribution_list[::2], contribution_list[1::2])))
@@ -594,10 +594,10 @@ class Article():
                                              if k == 'fn'
                                              ]
             except AttributeError:
-                # print('error constructing footnote matches for {}: {} {}'
-                #       .format(self.doi,
-                #               contrib_dict.get('given_names'),
-                #               contrib_dict.get('surname')))
+                print('error constructing footnote matches for {}: {} {}'
+                      .format(self.doi,
+                              contrib_dict.get('given_names'),
+                              contrib_dict.get('surname')))
                 contrib_dict['affiliations'] = [""]
             # make list of all contribs
             contrib_dict_list.append(contrib_dict)
@@ -614,9 +614,8 @@ class Article():
                 author['author_roles'] = {'author_notes': role_list}
 
             if credit_matching_error:
-                # print('Warning: authors not matched correctly to author_roles for {}'
-                #       .format(self.doi))
-                pass
+                print('Warning: authors not matched correctly to author_roles for {}'
+                      .format(self.doi))
 
         # match corresponding authors to email addresses
         corr_author_list = [contrib for contrib in contrib_dict_list if contrib.get('author_type', None) == 'corresponding']
@@ -634,7 +633,7 @@ class Article():
                 if len(email_dict) == 1:
                     corr_author['email'] = list(email_dict.values())[0]
                 else:
-                    # print('one_corr_author error finding email for {} in {}'.format(corr_author, email_dict))
+                    print('one_corr_author error finding email for {} in {}'.format(corr_author, email_dict))
                     matching_error = True
         elif len(corr_author_list) > 1 and len(set([tuple(x) for x in email_dict.values()])) > 1:
             corr_author_list, matching_error = match_contribs_to_dicts(corr_author_list,
