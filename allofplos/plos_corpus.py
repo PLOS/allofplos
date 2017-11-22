@@ -408,7 +408,7 @@ def download_updated_xml(article_file,
     try:
         articletree_local = et.parse(os.path.join(corpusdir, os.path.basename(article_file)))
     except OSError:
-        article_file_alt = os.path.join(tempdir, os.path.basename(article_file))
+        article_file_alt = os.path.join(tempdir, os.path.basename(doi_to_path(article_file)))
         articletree_local = et.parse(article_file_alt)
     articleXML_local = et.tostring(articletree_local, method='xml', encoding='unicode')
 

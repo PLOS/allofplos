@@ -7,5 +7,6 @@ python-utils==2.2.0
 requests==2.18.4
 six==1.11.0
 tqdm==4.17.1
+unidecode==0.04.21
 urllib3==1.22
 pureyaml==0.1.0
