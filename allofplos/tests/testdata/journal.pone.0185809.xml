@@ -1,0 +1,1839 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.1d3" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-17-28249</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0185809</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Organisms</subject><subj-group><subject>Eukaryota</subject><subj-group><subject>Animals</subject><subj-group><subject>Invertebrates</subject><subj-group><subject>Arthropoda</subject><subj-group><subject>Insects</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Seasons</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Geography</subject><subj-group><subject>Human geography</subject><subj-group><subject>Land use</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Human geography</subject><subj-group><subject>Land use</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Ecology</subject><subj-group><subject>Ecological metrics</subject><subj-group><subject>Biomass (ecology)</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Ecology and environmental sciences</subject><subj-group><subject>Ecology</subject><subj-group><subject>Ecological metrics</subject><subj-group><subject>Biomass (ecology)</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Ecology and environmental sciences</subject><subj-group><subject>Conservation science</subject></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Ecology</subject><subj-group><subject>Plant ecology</subject><subj-group><subject>Plant communities</subject><subj-group><subject>Grasslands</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Ecology and environmental sciences</subject><subj-group><subject>Ecology</subject><subj-group><subject>Plant ecology</subject><subj-group><subject>Plant communities</subject><subj-group><subject>Grasslands</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Plant science</subject><subj-group><subject>Plant ecology</subject><subj-group><subject>Plant communities</subject><subj-group><subject>Grasslands</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Ecology and environmental sciences</subject><subj-group><subject>Terrestrial environments</subject><subj-group><subject>Grasslands</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Ecology</subject><subj-group><subject>Ecological metrics</subject><subj-group><subject>Species diversity</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Ecology and environmental sciences</subject><subj-group><subject>Ecology</subject><subj-group><subject>Ecological metrics</subject><subj-group><subject>Species diversity</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Organisms</subject><subj-group><subject>Eukaryota</subject><subj-group><subject>Plants</subject><subj-group><subject>Herbs</subject></subj-group></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>More than 75 percent decline over 27 years in total flying insect biomass in protected areas</article-title>
+<alt-title alt-title-type="running-head">Severe flying insect biomass decline in protected areas</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0002-4630-0522</contrib-id>
+<name name-style="western">
+<surname>Hallmann</surname> <given-names>Caspar A.</given-names></name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<role content-type="http://credit.casrai.org/">Validation</role>
+<role content-type="http://credit.casrai.org/">Visualization</role>
+<role content-type="http://credit.casrai.org/">Writing – original draft</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Sorg</surname> <given-names>Martin</given-names></name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Funding acquisition</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Jongejans</surname> <given-names>Eelke</given-names></name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Funding acquisition</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Supervision</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Siepel</surname> <given-names>Henk</given-names></name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Supervision</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Hofland</surname> <given-names>Nick</given-names></name>
+<role content-type="http://credit.casrai.org/">Formal analysis</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Software</role>
+<role content-type="http://credit.casrai.org/">Validation</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Schwan</surname> <given-names>Heinz</given-names></name>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Funding acquisition</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Project administration</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Stenmans</surname> <given-names>Werner</given-names></name>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Funding acquisition</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Project administration</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Müller</surname> <given-names>Andreas</given-names></name>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Project administration</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Sumser</surname> <given-names>Hubert</given-names></name>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Hörren</surname> <given-names>Thomas</given-names></name>
+<role content-type="http://credit.casrai.org/">Data curation</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Goulson</surname> <given-names>Dave</given-names></name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>de Kroon</surname> <given-names>Hans</given-names></name>
+<role content-type="http://credit.casrai.org/">Conceptualization</role>
+<role content-type="http://credit.casrai.org/">Funding acquisition</role>
+<role content-type="http://credit.casrai.org/">Investigation</role>
+<role content-type="http://credit.casrai.org/">Methodology</role>
+<role content-type="http://credit.casrai.org/">Resources</role>
+<role content-type="http://credit.casrai.org/">Supervision</role>
+<role content-type="http://credit.casrai.org/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<label>1</label>
+<addr-line>Radboud University, Institute for Water and Wetland Research, Animal Ecology and Physiology &amp; Experimental Plant Ecology, PO Box 9100, 6500 GL Nijmegen, The Netherlands</addr-line>
+</aff>
+<aff id="aff002">
+<label>2</label>
+<addr-line>Entomological Society Krefeld e.V., Entomological Collections Krefeld, Marktstrasse 159, 47798 Krefeld, Germany</addr-line>
+</aff>
+<aff id="aff003">
+<label>3</label>
+<addr-line>University of Sussex, School of Life Sciences, Falmer, Brighton BN1 9QG, United Kingdom</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Lamb</surname> <given-names>Eric Gordon</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>University of Saskatchewan, CANADA</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">c.hallmann@science.ru.nl</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<year>2017</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>18</day>
+<month>10</month>
+<year>2017</year>
+</pub-date>
+<volume>12</volume>
+<issue>10</issue>
+<elocation-id>e0185809</elocation-id>
+<history>
+<date date-type="received">
+<day>28</day>
+<month>7</month>
+<year>2017</year>
+</date>
+<date date-type="accepted">
+<day>19</day>
+<month>9</month>
+<year>2017</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2017</copyright-year>
+<copyright-holder>Hallmann et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0185809"/>
+<abstract>
+<p>Global declines in insects have sparked wide interest among scientists, politicians, and the general public. Loss of insect diversity and abundance is expected to provoke cascading effects on food webs and to jeopardize ecosystem services. Our understanding of the extent and underlying causes of this decline is based on the abundance of single species or taxonomic groups only, rather than changes in insect biomass which is more relevant for ecological functioning. Here, we used a standardized protocol to measure total insect biomass using Malaise traps, deployed over 27 years in 63 nature protection areas in Germany (96 unique location-year combinations) to infer on the status and trend of local entomofauna. Our analysis estimates a seasonal decline of 76%, and mid-summer decline of 82% in flying insect biomass over the 27 years of study. We show that this decline is apparent regardless of habitat type, while changes in weather, land use, and habitat characteristics cannot explain this overall decline. This yet unrecognized loss of insect biomass must be taken into account in evaluating declines in abundance of species depending on insects as a food source, and ecosystem functioning in the European landscape.</p>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100003246</institution-id>
+<institution>Nederlandse Organisatie voor Wetenschappelijk Onderzoek</institution>
+</institution-wrap>
+</funding-source>
+<award-id>840.11.001</award-id>
+<principal-award-recipient>
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0002-4630-0522</contrib-id>
+<name name-style="western">
+<surname>Hallmann</surname> <given-names>Caspar A.</given-names></name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award002">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100003246</institution-id>
+<institution>Nederlandse Organisatie voor Wetenschappelijk Onderzoek</institution>
+</institution-wrap>
+</funding-source>
+<award-id>841.11.007</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Jongejans</surname> <given-names>Eelke</given-names></name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award003">
+<funding-source>
+<institution>Triodos Foundation</institution>
+</funding-source>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Hofland</surname> <given-names>Nick</given-names></name>
+</principal-award-recipient>
+</award-group>
+<funding-statement>CH and EJ were supported by the Netherlands Organization for Scientific Research (NWO grants 840.11.001 and 841.11.007), and NH by the Triodos Foundation. The investigations of the Entomological Society Krefeld and its members are spread over numerous individual projects at different locations and in different years. Grants and permits that have made this work possible are listed below: Bezirksregierungen Düsseldorf &amp; Köln, BfN - Bundesamt für Naturschutz, Land Nordrhein-Westfalen - Europäische Gemeinschaft ELER, Landesamt für Agrarordnung Nordrhein-Westfalen, Landesamt für Natur, Umwelt und Verbraucherschutz Nordrhein-Westfalen, Landesamt für Umwelt Brandenburg, Landesamt für Umwelt Rheinland-Pfalz, LVR - Landschaftsverband Rheinland, Naturschutzbund Deutschland, Nordrhein-Westfalen Stiftung, RBN Bergischer Naturschutzverein, RVR - Regionalverband Ruhr, SGD Nord Rheinland-Pfalz, Universitäten Bonn, Duisburg-Essen &amp; Köln, Untere Landschaftsbehörden: Kreis Düren, Kreis Heinsberg, Kreis Kleve, Kreis Viersen, Kreis Wesel &amp; AGLW, Stadt Düsseldorf, Stadt Köln, Stadt Krefeld, Rheinisch Bergischer Kreis, Rhein Kreis Neuss &amp; Rhein-Sieg-Kreis. Members of the Entomological Society Krefeld and cooperating botanists and entomologists that were involved in the empirical investigations are greatly acknowledged: U.W. Abts, F. Bahr, A. Bäumler, D. &amp; H. Beutler, P. Birnbrich, U. Bosch, J. Buchner, F. Cassese, K. Cölln, A.W. Ebmer, R. Eckelboom, B. Franzen, M. Grigo, J. Günneberg, J. Gusenleitner, K. Hamacher, F. Hartfeld, M. Hellenthal, J. Hembach, A. Hemmersbach, W. Hock, V. Huisman-Fiegen, J. Illmer, E. Jansen, U. Jäckel, F. Koch, M. Kreuels, P. Leideritz, I. Loksa, F. B. Ludescher, F. J. Mehring, G. Milbert, N. Mohr, P. Randazzo, K. Reissmann, S. Risch, B. Robert, J. de Rond, U. Sandmann, S. Scharf, P. Scherz, J. Schiffer, C. Schmidt, O. &amp; W. Schmitz, B. P. &amp; W. Schnell, J. L. Schönfeld, E. Schraetz, M. Schwarz, R. Seliger, H. W. Siebeneicher, F. &amp; H. Sonnenburg W. J. S. &amp; P. Sorg, A. Ssymank, H. Sticht, M. Weithmann, W. Wichard and H. Wolf.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="5"/>
+<table-count count="4"/>
+<page-count count="21"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Loss of insects is certain to have adverse effects on ecosystem functioning, as insects play a central role in a variety of processes, including pollination [<xref ref-type="bibr" rid="pone.0185809.ref001">1</xref>, <xref ref-type="bibr" rid="pone.0185809.ref002">2</xref>], herbivory and detrivory [<xref ref-type="bibr" rid="pone.0185809.ref003">3</xref>, <xref ref-type="bibr" rid="pone.0185809.ref004">4</xref>], nutrient cycling [<xref ref-type="bibr" rid="pone.0185809.ref004">4</xref>] and providing a food source for higher trophic levels such as birds, mammals and amphibians. For example, 80% of wild plants are estimated to depend on insects for pollination [<xref ref-type="bibr" rid="pone.0185809.ref002">2</xref>], while 60% of birds rely on insects as a food source [<xref ref-type="bibr" rid="pone.0185809.ref005">5</xref>]. The ecosystem services provided by wild insects have been estimated at $57 billion annually in the USA [<xref ref-type="bibr" rid="pone.0185809.ref006">6</xref>]. Clearly, preserving insect abundance and diversity should constitute a prime conservation priority.</p>
+<p>Current data suggest an overall pattern of decline in insect diversity and abundance. For example, populations of European grassland butterflies are estimated to have declined by 50% in abundance between 1990 and 2011 [<xref ref-type="bibr" rid="pone.0185809.ref007">7</xref>]. Data for other well-studied taxa such as bees [<xref ref-type="bibr" rid="pone.0185809.ref008">8</xref>–<xref ref-type="bibr" rid="pone.0185809.ref014">14</xref>] and moths [<xref ref-type="bibr" rid="pone.0185809.ref015">15</xref>–<xref ref-type="bibr" rid="pone.0185809.ref018">18</xref>] suggest the same trend. Climate change, habitat loss and fragmentation, and deterioration of habitat quality have been proposed as some of the prime suspects responsible for the decline [<xref ref-type="bibr" rid="pone.0185809.ref009">9</xref>–<xref ref-type="bibr" rid="pone.0185809.ref011">11</xref>, <xref ref-type="bibr" rid="pone.0185809.ref013">13</xref>, <xref ref-type="bibr" rid="pone.0185809.ref018">18</xref>–<xref ref-type="bibr" rid="pone.0185809.ref022">22</xref>]. However, the number of studies on insect trends with sufficient replication and spatial coverage are limited [<xref ref-type="bibr" rid="pone.0185809.ref010">10</xref>, <xref ref-type="bibr" rid="pone.0185809.ref023">23</xref>–<xref ref-type="bibr" rid="pone.0185809.ref025">25</xref>] and restricted to certain well-studied taxa. Declines of individual species or taxa (e.g. [<xref ref-type="bibr" rid="pone.0185809.ref007">7</xref>, <xref ref-type="bibr" rid="pone.0185809.ref026">26</xref>]) may not reflect the general state of local entomofauna [<xref ref-type="bibr" rid="pone.0185809.ref027">27</xref>]. The total insect biomass would then be a better metric for the status of insects as a group and its contribution to ecosystem functioning, but very few studies have monitored insect biomass over an extensive period of time [<xref ref-type="bibr" rid="pone.0185809.ref028">28</xref>]. Hence, to what extent total insect biomass has declined, and the relative contribution of each proposed factor to the decline, remain unresolved yet highly relevant questions for ecosystem ecology and conservation.</p>
+<p>Here, we investigate total aerial insect biomass between 1989 and 2016 across 96 unique location-year combinations in Germany, representative of Western European low-altitude nature protection areas embedded in a human-dominated landscape (<xref ref-type="supplementary-material" rid="pone.0185809.s006">S1 Fig</xref>). In all years we sampled insects throughout the season (March through October), based on a standardized sampling scheme using Malaise traps. We investigated rate of decline in insect biomass, and examined how factors such as weather, habitat and land use variables influenced the declines. Knowledge on the state of insect biomass, and it’s direction over time, are of broad importance to ecology and conservation, but historical data on insect biomass have been lacking. Our study makes a first step into filling this gap, and provides information that is vital for the assessment of biodiversity conservation and ecosystem health in agricultural landscapes.</p>
+</sec>
+<sec id="sec002" sec-type="materials|methods">
+<title>Materials and methods</title>
+<sec id="sec003">
+<title>Data</title>
+<sec id="sec004">
+<title>Biomass data</title>
+<p>Biomass data were collected and archived using a standardized protocol across 63 unique locations between 1989 and 2016 (resulting in 96 unique location-year combinations) by the Entomological Society Krefeld. The standardized protocol of collection has been originally designed with the idea of integrating quantitative aspects of insects in the status assessment of the protected areas, and to construct a long-term archive in order to preserve (identified and not-identified) specimens of local diversity for future studies. In the present study, we consider the total biomass of flying insects to assess the state of local entomofauna as a group.</p>
+<p>All trap locations were situated in protected areas, but with varying protection status: 37 locations are within Natura2000 sites, seven locations within designated Nature reserves, nine locations within Protected Landscape Areas (with funded conservation measures), six locations within Water Protection Zones, and four locations of protected habitat managed by Regional Associations. For all location permits have been obtained by the relevant authorities, as listed in the <xref ref-type="supplementary-material" rid="pone.0185809.s001">S1 Appendix</xref>. In our data, traps located in nutrient-poor heathlands, sandy grasslands, and dune habitats provide lower quantities of biomass as compared to nutrient nutrient-rich grasslands, margins and wastelands. As we were interested in whether the declines interact with local productivity, traps locations were pooled into 3 distinct habitat clusters, namely: nutrient-poor heathlands, sandy grassland, and dunes (habitat cluster 1, n = 19 locations, <xref ref-type="fig" rid="pone.0185809.g001">Fig 1A</xref>), nutrient-rich grasslands, margins and wasteland (habitat cluster 2, n = 41 locations, <xref ref-type="fig" rid="pone.0185809.g001">Fig 1B</xref>) and a third habitat cluster that included pioneer and shrub communities (n = 3 locations).</p>
+<fig id="pone.0185809.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185809.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Examples of operating malaise traps in protected areas in western Germany, in habitat cluster 1 (A) and cluster 2 (B) (see <xref ref-type="sec" rid="sec002">Materials and methods</xref>).</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.g001" xlink:type="simple"/>
+</fig>
+<p>Most locations (59%, n = 37) were sampled in only one year, 20 locations in two years, five locations in three years, and one in four years, yielding in total 96 unique location-year combinations of measurements of seasonal total flying insect biomass. Our data do not represent longitudinal records at single sites, suitable to derive location specific trends (e.g. [<xref ref-type="bibr" rid="pone.0185809.ref028">28</xref>]). Prolonged trapping across years is in the present context (protected areas) deemed undesirable, as the sampling process itself can negatively impact local insect stocks. However, the data do permit an analysis at a higher spatial level, i.e. by treating seasonal insect biomass profiles as random samples of the state of entomofauna in protected areas in western Germany.</p>
+<p>Malaise traps were deployed through the spring, summer and early autumn. They operated continuously (day and night), and catches were emptied at regular intervals, on average every 11.2 days (sd = 6.3). We collected in total 1503 trap samples, with an average of 16 (4–35) successive catches per location-year combination (<xref ref-type="table" rid="pone.0185809.t001">Table 1</xref>). Between 1989 and 2016, a total of 53.54kg of invertebrates have been collected and stored, over a total trap exposure period of 16908 days, within an average of 176 exposure days per location-year combination. Malaise traps are known to collect a much wider diversity of insect species (e.g. [<xref ref-type="bibr" rid="pone.0185809.ref029">29</xref>–<xref ref-type="bibr" rid="pone.0185809.ref031">31</xref>]) as compared to suction traps (e.g. [<xref ref-type="bibr" rid="pone.0185809.ref028">28</xref>]) and are therefore considered superior as a method of collecting flying insects. On the basis of partial assessments, we can assume that the total number of insects included in 53.54 kg biomass represents millions of individuals.</p>
+<table-wrap id="pone.0185809.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185809.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Overview of malaise-trap samples sizes.</title>
+<p>For each year, the number of locations sampled, the number of location re-sampled, total number of samples, as well as mean and standard deviation of exposure time at the trap locations (in days) are presented.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0185809.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.t001" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="right">Year</th>
+<th align="right">Number of locations</th>
+<th align="right">Number of locations sampled previously</th>
+<th align="right">Number of Samples</th>
+<th align="right">Mean exposure time</th>
+<th align="right">St. Dev exposure time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1989</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td align="right">162</td>
+<td align="char" char=".">146.62</td>
+<td align="char" char=".">12.81</td>
+</tr>
+<tr>
+<td align="right">1990</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">62</td>
+<td align="char" char=".">228.50</td>
+<td align="char" char=".">34.65</td>
+</tr>
+<tr>
+<td align="right">1991</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">10</td>
+<td align="char" char=".">146.00</td>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right">1992</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">54</td>
+<td align="char" char=".">118.75</td>
+<td align="char" char=".">15.50</td>
+</tr>
+<tr>
+<td align="right">1993</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">39</td>
+<td align="char" char=".">109.50</td>
+<td align="char" char=".">59.74</td>
+</tr>
+<tr>
+<td align="right">1994</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">60</td>
+<td align="char" char=".">170.75</td>
+<td align="char" char=".">72.83</td>
+</tr>
+<tr>
+<td align="right">1995</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">41</td>
+<td align="char" char=".">144.00</td>
+<td align="char" char=".">93.34</td>
+</tr>
+<tr>
+<td align="right">1997</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">20</td>
+<td align="char" char=".">162.00</td>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right">1999</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">56</td>
+<td align="char" char=".">196.00</td>
+<td align="char" char=".">0.00</td>
+</tr>
+<tr>
+<td align="right">2000</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">47</td>
+<td align="char" char=".">174.00</td>
+<td align="char" char=".">11.31</td>
+</tr>
+<tr>
+<td align="right">2001</td>
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">81</td>
+<td align="char" char=".">190.00</td>
+<td align="char" char=".">0.00</td>
+</tr>
+<tr>
+<td align="right">2003</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">80</td>
+<td align="char" char=".">201.00</td>
+<td align="char" char=".">7.81</td>
+</tr>
+<tr>
+<td align="right">2004</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">48</td>
+<td align="char" char=".">200.00</td>
+<td align="char" char=".">5.66</td>
+</tr>
+<tr>
+<td align="right">2005</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">70</td>
+<td align="char" char=".">198.75</td>
+<td align="char" char=".">30.53</td>
+</tr>
+<tr>
+<td align="right">2006</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">26</td>
+<td align="char" char=".">188.00</td>
+<td align="char" char=".">0.00</td>
+</tr>
+<tr>
+<td align="right">2007</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">15</td>
+<td align="char" char=".">192.00</td>
+<td align="char" char=".">0.00</td>
+</tr>
+<tr>
+<td align="right">2008</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">24</td>
+<td align="char" char=".">162.00</td>
+<td align="char" char=".">0.00</td>
+</tr>
+<tr>
+<td align="right">2009</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">23</td>
+<td align="char" char=".">120.50</td>
+<td align="char" char=".">2.89</td>
+</tr>
+<tr>
+<td align="right">2010</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">12</td>
+<td align="char" char=".">85.00</td>
+<td align="char" char=".">0.00</td>
+</tr>
+<tr>
+<td align="right">2011</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="char" char=".">68.00</td>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right">2012</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">23</td>
+<td align="char" char=".">158.50</td>
+<td align="char" char=".">4.95</td>
+</tr>
+<tr>
+<td align="right">2013</td>
+<td align="right">8</td>
+<td align="right">2</td>
+<td align="right">126</td>
+<td align="char" char=".">175.50</td>
+<td align="char" char=".">21.71</td>
+</tr>
+<tr>
+<td align="right">2014</td>
+<td align="right">23</td>
+<td align="right">19</td>
+<td align="right">348</td>
+<td align="char" char=".">212.74</td>
+<td align="char" char=".">11.21</td>
+</tr>
+<tr>
+<td align="right">2015</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">10</td>
+<td align="char" char=".">224.00</td>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right">2016</td>
+<td align="right">7</td>
+<td align="right">7</td>
+<td align="right">62</td>
+<td align="char" char=".">190.86</td>
+<td align="char" char=".">12.56</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>The sampling was standardized in terms of trap construction, size and design (identical parts), colors, type of netting and ground sealing, trap orientation in the field as well as slope at the trap location. Hence none of the traps differed in any of these field aspects. Our trap model was similar to the bi-colored malaise trap model by Henry Townes [<xref ref-type="bibr" rid="pone.0185809.ref032">32</xref>, <xref ref-type="bibr" rid="pone.0185809.ref033">33</xref>]. The traps, collecting design, and accompanying methods of biomass measurement as designed and applied by the Entomological Society Krefeld are described elsewhere [<xref ref-type="bibr" rid="pone.0185809.ref034">34</xref>–<xref ref-type="bibr" rid="pone.0185809.ref036">36</xref>] and in <xref ref-type="supplementary-material" rid="pone.0185809.s002">S2 Appendix</xref>.</p>
+<p>Trap catches were stored in 80% ethanol solution, prior to weighing, and total insect biomass of each catch (bottle) was obtained based on a standardized measurement protocol by first subtracting fluid content. In order to optimally preserve samples for future species determination, the insects were weighed in an alcohol-wet state. First, the alcohol concentration in the vessels was stabilized to 80%, while this concentration was controlled with an areometer over a period of at least two days. In order to obtain biomass per sample with sufficient accuracy and comparability, the measuring process was fixed using a standardized protocol [<xref ref-type="bibr" rid="pone.0185809.ref034">34</xref>]. For this purpose the insects of a sample were poured onto a stainless steel sieve (10cm diameter) of 0.8 mm mesh width. This sieve is placed slightly obliquely (30 degrees) over a glass vessel. The skew position accelerates the first runoff of alcohol and thus the whole measuring procedure. The drop sequence is observed with a stopwatch. When the time between two drops has reached 10 seconds for the first time, the weighing process is performed with a laboratory scale. For the determination of the biomass, precision scales and analytical scales from Mettler company were used with an accuracy of at least 0.1g and controlled with calibrated test weights at the beginning of a new weighing series. In a series of 84 weightings of four different samples repeating this measurement procedure, an average deviation from the mean value of the measurement results of 0.4 percent was observed (unpublished results).</p>
+</sec>
+<sec id="sec005">
+<title>Weather data</title>
+<p>Climate change is a well-known factor responsible for insect declines [<xref ref-type="bibr" rid="pone.0185809.ref015">15</xref>, <xref ref-type="bibr" rid="pone.0185809.ref018">18</xref>, <xref ref-type="bibr" rid="pone.0185809.ref021">21</xref>, <xref ref-type="bibr" rid="pone.0185809.ref037">37</xref>]. To test if weather variation could explain the observed decline, we included mean daily temperature, precipitation and wind speed in our analysis, integrating data from 169 weather stations [<xref ref-type="bibr" rid="pone.0185809.ref038">38</xref>] located within 100km to the trap locations. We examined temporal trends in each weather variable over the course of the study period to assess changes in climatic conditions, as a plausible explanation for insect decline. Estimates of each weather variable at the trap locations were obtained by interpolation of each variable from the 169 climate stations.</p>
+<p>We initially considered mean daily air temperature, precipitation, cloud cover, relative air moisture content, wind speed, and sunshine duration. However, only temperature, precipitation and wind speed were retained for analysis, as the other variables were significantly correlated with the selected variables [R(temperature, cover) = −43.2%, R(temperature, sunshine) = 53.4%, R(precipitation, moisture) = −47.3%] and because we wanted to keep the number of covariates as low as possible. Additionally, we calculated the number of frost days and the sum of precipitation in the months November- February preceding a sampling season. We used spatio-temporal geostatistical models [<xref ref-type="bibr" rid="pone.0185809.ref039">39</xref>, <xref ref-type="bibr" rid="pone.0185809.ref040">40</xref>] to predict daily values for each weather variable to each trap location. Amongst other methods, the geostatistical approach is considered a superior interpolation method in order to derive weather variables to trap locations [<xref ref-type="bibr" rid="pone.0185809.ref041">41</xref>]. Uncertainty in interpolated variables such as wind speed is usually associated with altitude differences. However, as our trap locations are all situated in lowland areas with little altitude variation, we do not expect a large error in our interpolations at trap locations.</p>
+<p>We decomposed the daily values of each weather variable into a long-term average trend (between years), a mean seasonal trend, and a yearly seasonal anomaly component (<xref ref-type="supplementary-material" rid="pone.0185809.s007">S2 Fig</xref>), modeled using regression splines [<xref ref-type="bibr" rid="pone.0185809.ref042">42</xref>] while controlling for altitude of weather stations. The remaining residual daily values of each station were further modeled using a spatio-temporal covariance structure. For example, temperature <italic>T</italic>, on given day <italic>t</italic>, of a given year <italic>k</italic> at a given trap location <italic>s</italic> is modeled as:
+<disp-formula id="pone.0185809.e001"><alternatives><graphic id="pone.0185809.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e001" xlink:type="simple"/><mml:math display="block" id="M1"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>T</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:msub><mml:mi>f</mml:mi> <mml:mi>k</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>k</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:msub><mml:mi>f</mml:mi> <mml:mi>t</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:mi>r</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>k</mml:mi> <mml:mo>,</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:mi>a</mml:mi> <mml:mo>×</mml:mo> <mml:mi>h</mml:mi> <mml:mo>+</mml:mo> <mml:msub><mml:mi>C</mml:mi> <mml:mrow><mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(1)</label></disp-formula>
+where <italic>f</italic><sub><italic>k</italic></sub>(<italic>k</italic>) is the long-term trend over the years (a thin plate regression spline), <italic>f</italic><sub><italic>t</italic></sub>(<italic>t</italic>) the mean seasonal trend within years (a penalized cyclic cubic regression spline), <italic>r</italic>(<italic>k</italic>, <italic>t</italic>) the mean residual seasonal component, which measures annual anomaly in mean daily values across selected stations, and <italic>a</italic> is the linear coefficient for the altitude <italic>h</italic> effect. The spatio-temporal covariance structure <italic>C</italic><sub><italic>s</italic>, <italic>t</italic></sub>, fitted independently to the residuals of each weather variable model, allowed us to deal with lack of independence between daily weather data within and between stations, as well as to interpolate to trap locations using kriging. Altitude of trap locations was extracted from a digital elevation models at 90m resolution [<xref ref-type="bibr" rid="pone.0185809.ref043">43</xref>].</p>
+</sec>
+<sec id="sec006">
+<title>Land use data</title>
+<p>Land use variables (and changes therein) were derived from aerial photographs [<xref ref-type="bibr" rid="pone.0185809.ref044">44</xref>] taken within two distinct time periods (between 1989–1994, and between 2012–2015), and allowed us to characterize land use composition at surroundings of the traps, as well as changes over time. We distinguished cover of forests, agricultural areas, natural grassland, and surface water. For each trap location, aerial photographs were manually processed, polygons extracted and categorized, and their surface area calculated with a radius of 200 meter. Preliminary analysis of the relationship between log biomass and landuse variables, on a subset of the trap locations, indicated that land use elements at 200m radius better predicted insect biomass than elements at 500 and 1000m radius, similar to findings elsewhere for wild bees [<xref ref-type="bibr" rid="pone.0185809.ref045">45</xref>]. Land use variables were measured at a coarse temporal resolution, but fortunately cover the temporal span of insect sampling. To link the cover of a given land use variable to the insect biomass samples in a particular year, we interpolated coverage between the two time points to the year of insect sampling using generalized linear models with a binomial error distribution, a logit link, and an estimated dispersion parameter. Mean distributions of land use at each of the two time points are depicted in <xref ref-type="supplementary-material" rid="pone.0185809.s008">S3A &amp; S3B Fig</xref>.</p>
+</sec>
+<sec id="sec007">
+<title>Habitat data</title>
+<p>Plant inventories were conducted in the immediate surroundings (within 50m) of the trap, in the same season of insect sampling. These data permitted the assessment of plant species richness (numbers of herbs, shrubs and trees) and environmental conditions based on average Ellenberg values [<xref ref-type="bibr" rid="pone.0185809.ref046">46</xref>–<xref ref-type="bibr" rid="pone.0185809.ref048">48</xref>], as well as changes therein over time. Each Ellenberg indicator (we considered nitrogen, pH, light, temperature and moisture) was averaged over all species for each location-year combination. We examined annual trends in each of the above-mentioned variables in order to uncover potential structural changes in habitat characteristics over time. Species richness was analyzed using mixed-effects generalized linear models [<xref ref-type="bibr" rid="pone.0185809.ref049">49</xref>] with a random intercept for trap location and assuming a Poisson distribution for species richness, and a normal distribution for mean Ellenberg indicator values. Although a Poisson distribution fitted tree and shrub species adequately, (residual deviance/ degree of freedom = 0.94 and 1.04 respectively), severe overdispersion was found for herb species richness (residual deviance/ degree of freedom = 2.16). Trend coefficients of richness over time between a Poisson mixed effects model and a negative binomial model were comparable but differed in magnitude (Poisson GLMM: −0.034 (se = 0.003), vs NB GLMM −0.027 (se = 0.006)). Although the fit is not perfect in the case of herb richness, we believe our trend adequately describes direction of change over time. Mean changes in plant species richness are depicted in <xref ref-type="supplementary-material" rid="pone.0185809.s008">S3C Fig</xref>.</p>
+</sec>
+</sec>
+<sec id="sec008">
+<title>Insect biomass model</title>
+<p>The temporal resolution of the trap samples (accumulated over several days) is not directly compatible with the temporal distribution of the weather data (daily values). Additionally, variable exposure intervals between trap samples is expected to induce variation in trapped biomass between samples, and hence induce heteroscedasticity. Furthermore, biomass data can numerically only be positive on the real line, and we require a model to reflect this property of the data. Because of the unequal exposure intervals however, log-transforming the response would be inappropriate, because we require the sum of daily values after exponentiation, rather that the exponent of the sum of log-daily biomass values. In order to indirectly relate biomass to daily weather variables, to account for the variation in time exposure intervals over which biomass was accumulated in the samples, and to respect the non-negative nature of our data, we modeled the biomass of each catch as the sum of the expected (but unobserved) latent daily biomass. The mass <italic>m</italic> of each sample <italic>j</italic>, at site <italic>s</italic> in year <italic>k</italic>, is assumed to be distributed normally about the sum of the latent expected daily mass (<italic>z</italic><sub><italic>t</italic>, <italic>s</italic>, <italic>k</italic></sub>), with variance <inline-formula id="pone.0185809.e002"><alternatives><graphic id="pone.0185809.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e002" xlink:type="simple"/><mml:math display="inline" id="M2"><mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>j</mml:mi> <mml:mn>2</mml:mn></mml:msubsup></mml:math></alternatives></inline-formula>:
+<disp-formula id="pone.0185809.e003"><alternatives><graphic id="pone.0185809.e003g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e003" xlink:type="simple"/><mml:math display="block" id="M3"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>m</mml:mi> <mml:mrow><mml:mi>j</mml:mi> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>∼</mml:mo> <mml:mi>N</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:msub><mml:mi>μ</mml:mi> <mml:mrow><mml:mi>j</mml:mi> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>,</mml:mo> <mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>j</mml:mi> <mml:mn>2</mml:mn></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(2)</label></disp-formula>
+subject to <inline-formula id="pone.0185809.e004"><alternatives><graphic id="pone.0185809.e004g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e004" xlink:type="simple"/><mml:math display="inline" id="M4"><mml:mrow><mml:msub><mml:mi>μ</mml:mi> <mml:mrow><mml:mi>j</mml:mi> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>=</mml:mo> <mml:msubsup><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>=</mml:mo> <mml:msub><mml:mi>τ</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>j</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mrow><mml:msub><mml:mi>τ</mml:mi> <mml:mn>2</mml:mn></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>j</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:msubsup> <mml:msub><mml:mi>z</mml:mi> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:math></alternatives></inline-formula> where <italic>τ</italic><sub>1</sub> and <italic>τ</italic><sub>2</sub> mark the exposure interval (in days) of biomass collection of each sample <italic>j</italic>. The latent daily biomass itself is represented by a log normal distribution, in which coefficients for covariates, random effects and residual variance are all represented on the log scale. In turn, daily biomass is modeled as
+<disp-formula id="pone.0185809.e005"><alternatives><graphic id="pone.0185809.e005g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e005" xlink:type="simple"/><mml:math display="block" id="M5"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>z</mml:mi> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>=</mml:mo> <mml:msup><mml:mi>e</mml:mi> <mml:msub><mml:mi>y</mml:mi> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi></mml:mrow></mml:msub></mml:msup></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(3)</label></disp-formula>
+<disp-formula id="pone.0185809.e006"><alternatives><graphic id="pone.0185809.e006g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e006" xlink:type="simple"/><mml:math display="block" id="M6"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>y</mml:mi> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>=</mml:mo> <mml:mi>c</mml:mi> <mml:mo>+</mml:mo> <mml:mi>l</mml:mi> <mml:mi>o</mml:mi> <mml:mi>g</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>λ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>k</mml:mi> <mml:mo>+</mml:mo> <mml:mi mathvariant="bold">X</mml:mi> <mml:msub><mml:mi>β</mml:mi> <mml:mi>x</mml:mi></mml:msub> <mml:mo>+</mml:mo> <mml:msub><mml:mi>u</mml:mi> <mml:mi>s</mml:mi></mml:msub></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(4)</label></disp-formula>
+where <italic>c</italic> is a global intercept, <bold>X</bold> a design matrix of dimensions n×p (number of samples × number of covariates; see Model analysis below), <italic>β</italic><sub><italic>x</italic></sub> the corresponding vector of coefficients that measure the weather, habitat and land use effects, and <italic>log</italic>(<italic>λ</italic>) a mean annual population growth rate parameter. The random term (<italic>u</italic><sub><italic>s</italic></sub>) denotes the location-specific random effect assumed to be distributed normally about zero <inline-formula id="pone.0185809.e007"><alternatives><graphic id="pone.0185809.e007g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e007" xlink:type="simple"/><mml:math display="inline" id="M7"><mml:mrow><mml:msub><mml:mi>u</mml:mi> <mml:mi>s</mml:mi></mml:msub> <mml:mo>∼</mml:mo> <mml:mi>N</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mn>0</mml:mn> <mml:mo>,</mml:mo> <mml:msubsup><mml:mi>σ</mml:mi> <mml:mrow><mml:mi>s</mml:mi> <mml:mi>i</mml:mi> <mml:mi>t</mml:mi> <mml:mi>e</mml:mi></mml:mrow> <mml:mn>2</mml:mn></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:math></alternatives></inline-formula>. The exponentiation of the right hand side of <xref ref-type="disp-formula" rid="pone.0185809.e005">Eq (3)</xref> ensures expected values to be positive.</p>
+<p>The expected residual variance of each sample <inline-formula id="pone.0185809.e008"><alternatives><graphic id="pone.0185809.e008g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e008" xlink:type="simple"/><mml:math display="inline" id="M8"><mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>j</mml:mi> <mml:mn>2</mml:mn></mml:msubsup></mml:math></alternatives></inline-formula>, is expressed as the sum of variances of daily biomass values (<inline-formula id="pone.0185809.e009"><alternatives><graphic id="pone.0185809.e009g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e009" xlink:type="simple"/><mml:math display="inline" id="M9"><mml:msubsup><mml:mi>σ</mml:mi> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi></mml:mrow> <mml:mn>2</mml:mn></mml:msubsup></mml:math></alternatives></inline-formula>).</p>
+<disp-formula id="pone.0185809.e010">
+<alternatives>
+<graphic id="pone.0185809.e010g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e010" xlink:type="simple"/>
+<mml:math display="block" id="M10">
+<mml:mtable displaystyle="true">
+<mml:mtr>
+<mml:mtd columnalign="right">
+<mml:mrow>
+<mml:msubsup>
+<mml:mi>σ</mml:mi>
+<mml:mi>j</mml:mi>
+<mml:mn>2</mml:mn>
+</mml:msubsup>
+<mml:mo>=</mml:mo>
+<mml:munderover>
+<mml:mo>∑</mml:mo>
+<mml:mrow>
+<mml:mi>t</mml:mi>
+<mml:mo>=</mml:mo>
+<mml:msub>
+<mml:mi>τ</mml:mi>
+<mml:mn>1</mml:mn>
+</mml:msub>
+<mml:mrow>
+<mml:mo>(</mml:mo>
+<mml:mi>j</mml:mi>
+<mml:mo>)</mml:mo>
+</mml:mrow>
+</mml:mrow>
+<mml:mrow>
+<mml:msub>
+<mml:mi>τ</mml:mi>
+<mml:mn>2</mml:mn>
+</mml:msub>
+<mml:mrow>
+<mml:mo>(</mml:mo>
+<mml:mi>j</mml:mi>
+<mml:mo>)</mml:mo>
+</mml:mrow>
+</mml:mrow>
+</mml:munderover>
+<mml:msubsup>
+<mml:mi>σ</mml:mi>
+<mml:mrow>
+<mml:mi>t</mml:mi>
+<mml:mo>,</mml:mo>
+<mml:mi>s</mml:mi>
+<mml:mo>,</mml:mo>
+<mml:mi>k</mml:mi>
+</mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:msubsup>
+</mml:mrow>
+</mml:mtd>
+</mml:mtr>
+</mml:mtable>
+</mml:math>
+</alternatives>
+<label>(5)</label>
+</disp-formula>
+<p>The variances of daily biomass should respect the non-negative nature of the data as well. Additionally, we are interested in being able to compare the residual variance with the random effects variance, and this requires them to be on the same scale. Therefore, we expressed the variance of the daily biomass as a function of the variance of the logarithm of the daily biomass. Using the method of moments:
+<disp-formula id="pone.0185809.e011"><alternatives><graphic id="pone.0185809.e011g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e011" xlink:type="simple"/><mml:math display="block" id="M11"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msubsup><mml:mi>σ</mml:mi> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi></mml:mrow> <mml:mn>2</mml:mn></mml:msubsup> <mml:mo>=</mml:mo> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mn>2</mml:mn> <mml:msub><mml:mi>y</mml:mi> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>+</mml:mo> <mml:mi>v</mml:mi></mml:mrow></mml:msup> <mml:mrow><mml:mo>(</mml:mo> <mml:msup><mml:mi>e</mml:mi> <mml:mi>v</mml:mi></mml:msup> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(6)</label></disp-formula>
+where <italic>v</italic> represents the residual variance of daily log-biomass.</p>
+</sec>
+<sec id="sec009">
+<title>Analysis</title>
+<p>We developed a series of models each consisting of a set of explanatory variables that measure aspects of climate, land use and local habitat characteristics. Significant explanatory variables in these models were combined into a final model, which was then reduced to exclude insignificant effects. An overview of which covariates were included in each model is given in <xref ref-type="table" rid="pone.0185809.t002">Table 2</xref>.</p>
+<table-wrap id="pone.0185809.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185809.t002</object-id>
+<label>Table 2</label>
+<caption>
+<title>Overview of covariates included in each of the seven models.</title>
+<p>The year covariate yields the annual trend coefficient.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0185809.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.t002" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="right" style="border-bottom:thick">Covariate class</th>
+<th align="right" style="border-bottom:thick">Covariate name</th>
+<th align="right" style="border-bottom:thick">Null model</th>
+<th align="right" style="border-bottom:thick">Basic</th>
+<th align="right" style="border-bottom:thick">Weather</th>
+<th align="right" style="border-bottom:thick">Habitat</th>
+<th align="right" style="border-bottom:thick">Land use Interactions</th>
+<th align="right" style="border-bottom:thick">Land use+</th>
+<th align="right" style="border-bottom:thick">Final model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right" rowspan="4">Temporal</td>
+<td align="right">Intercept</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Day number</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Day number<sup>2</sup></td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Year</td>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right" rowspan="5">Climate</td>
+<td align="right">Temperature</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Precipitation</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Wind Speed</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right">Frost days</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Winter Precipitation</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right" rowspan="9">Habitat</td>
+<td align="right">Herb Species</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Tree Species</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Nitrogen</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right">pH</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right">Moisture</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right">Light</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Ellen. Temperature</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Habitat cluster 2</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right">Habitat cluster 3</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right" rowspan="4">Landscape</td>
+<td align="right">Arable land</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Grassland</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Forest</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Water</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right" rowspan="6">Interactions</td>
+<td align="right">Year × Day number</td>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Year × Day number<sup>2</sup></td>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Year × Agriculture</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Year × Forest</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right">Year × Water</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right"/>
+</tr>
+<tr>
+<td align="right">Year × Grassland</td>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right"/>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right" rowspan="2" style="border-bottom:thick">Variance</td>
+<td align="right"><italic>σ</italic><sub><italic>site</italic></sub></td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+<td align="right">✔</td>
+</tr>
+<tr>
+<td align="right" style="border-bottom:thick"><italic>v</italic></td>
+<td align="right" style="border-bottom:thick">✔</td>
+<td align="right" style="border-bottom:thick">✔</td>
+<td align="right" style="border-bottom:thick">✔</td>
+<td align="right" style="border-bottom:thick">✔</td>
+<td align="right" style="border-bottom:thick">✔</td>
+<td align="right" style="border-bottom:thick">✔</td>
+<td align="right" style="border-bottom:thick">✔</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Weather effects explored were daily temperature, precipitation and wind speed, as well as the number of frost days and sum of precipitation in the preceding winter. Habitat effects explored tree and herb species richness, as well as average Ellenberg values for nitrogen, pH, light, temperature and moisture, per location-year combination. Land use effects explored the fractions of agricultural area, forest, grass, and surface water in a radius of 200m around the plot location.</p>
+<p>Parameter values are obtained by the use of Markov chain Monte Carlo (MCMC) methods by the aid of JAGS (Just Another Gibbs Sampler [<xref ref-type="bibr" rid="pone.0185809.ref050">50</xref>]) invoked through R [<xref ref-type="bibr" rid="pone.0185809.ref051">51</xref>] and the R2Jags package [<xref ref-type="bibr" rid="pone.0185809.ref052">52</xref>]. JAGS model scripts are given in <xref ref-type="supplementary-material" rid="pone.0185809.s003">S1 Code</xref>, while data are given in <xref ref-type="supplementary-material" rid="pone.0185809.s004">S1</xref> and <xref ref-type="supplementary-material" rid="pone.0185809.s005">S2</xref> Dataset. For each model, we ran 3 parallel chains each consisting of 24000 iterations (first 4000 discarded), and kept every 10<sup><italic>th</italic></sup> value as a way to reduce within chain autocorrelation. We used vague priors for all parameters, with uniform distributions for the residual and random effect variance components, and flat normal distributions (with very high variance) for all other parameters. Covariates in <bold>X</bold> were standardized prior to model fitting, with the exception of year (values 1–26), and land use variables (proportions within 0–1 range).</p>
+<p>For all models, we computed the Deviance Information Criterion [<xref ref-type="bibr" rid="pone.0185809.ref053">53</xref>] (DIC) as well as the squared correlation coefficient (R<sup>2</sup>) between observed and mean posterior estimates of biomass on the log scale. Results are given in <xref ref-type="table" rid="pone.0185809.t003">Table 3</xref>. Parameter convergence was assessed by the potential scale reduction factor [<xref ref-type="bibr" rid="pone.0185809.ref054">54</xref>] (commonly <inline-formula id="pone.0185809.e012"><alternatives><graphic id="pone.0185809.e012g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0185809.e012" xlink:type="simple"/><mml:math display="inline" id="M12"><mml:mover accent="true"><mml:mi>R</mml:mi> <mml:mo>^</mml:mo></mml:mover></mml:math></alternatives></inline-formula>), that measures the ratio of posterior distributions between independent MCM chains (in all models, all parameters attained values below 1.02). For all models, we confirmed that the posterior distribution of the trend coefficient did not confound any other variable by plotting the relevant posterior samples and computing pairwise correlation coefficients.</p>
+<table-wrap id="pone.0185809.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185809.t003</object-id>
+<label>Table 3</label>
+<caption>
+<title>Results for 7 models ranked by Deviance Information Criterion (DIC).</title>
+<p>For each model, the number of parameters, the Deviance Information Criterion, the effective number of parameters (pD), calculated <italic>R</italic><sup>2</sup> and difference in DIC units between each model and the model with lowest ΔDIC. See <xref ref-type="table" rid="pone.0185809.t002">Table 2</xref> for covariates included in each model.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0185809.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.t003" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="right">model</th>
+<th align="right">npar</th>
+<th align="right">Deviance</th>
+<th align="right">DIC</th>
+<th align="right">pD</th>
+<th align="right">R<sup>2</sup></th>
+<th align="right">ΔDIC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">Final</td>
+<td align="right">23</td>
+<td align="char" char=".">12082.48</td>
+<td align="char" char=".">12177.07</td>
+<td align="char" char=".">94.59</td>
+<td align="char" char=".">0.67</td>
+<td align="char" char=".">0.00</td>
+</tr>
+<tr>
+<td align="right">Weather</td>
+<td align="right">13</td>
+<td align="char" char=".">12178.84</td>
+<td align="char" char=".">12261.52</td>
+<td align="char" char=".">82.68</td>
+<td align="char" char=".">0.65</td>
+<td align="char" char=".">84.45</td>
+</tr>
+<tr>
+<td align="right">Land use+ Interactions</td>
+<td align="right">16</td>
+<td align="char" char=".">12336.22</td>
+<td align="char" char=".">12427.16</td>
+<td align="char" char=".">90.95</td>
+<td align="char" char=".">0.62</td>
+<td align="char" char=".">250.09</td>
+</tr>
+<tr>
+<td align="right">Habitat</td>
+<td align="right">15</td>
+<td align="char" char=".">12354.95</td>
+<td align="char" char=".">12445.93</td>
+<td align="char" char=".">90.98</td>
+<td align="char" char=".">0.62</td>
+<td align="char" char=".">268.86</td>
+</tr>
+<tr>
+<td align="right">Land use</td>
+<td align="right">12</td>
+<td align="char" char=".">12377.27</td>
+<td align="char" char=".">12453.23</td>
+<td align="char" char=".">75.97</td>
+<td align="char" char=".">0.61</td>
+<td align="char" char=".">276.16</td>
+</tr>
+<tr>
+<td align="right">Basic</td>
+<td align="right">8</td>
+<td align="char" char=".">12390.26</td>
+<td align="char" char=".">12465.08</td>
+<td align="char" char=".">74.82</td>
+<td align="char" char=".">0.61</td>
+<td align="char" char=".">288.00</td>
+</tr>
+<tr>
+<td align="right">Null</td>
+<td align="right">5</td>
+<td align="char" char=".">13230.65</td>
+<td align="char" char=".">13307.59</td>
+<td align="char" char=".">76.94</td>
+<td align="char" char=".">0.39</td>
+<td align="char" char=".">1130.52</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Our basic model included habitat cluster (3 levels), a quadratic effect for day number, an annual trend coefficient measuring the rate of biomass change, and the interactions between the annual trend coefficient and the day number variables. Next we developed 3 models each consisting of either weather variables (<xref ref-type="supplementary-material" rid="pone.0185809.s011">S1 Table</xref>), land use variables (<xref ref-type="supplementary-material" rid="pone.0185809.s012">S2 Table</xref>), or habitat variables. Because interactions between the annual rate of change and land use variables seemed plausible, a fourth model was developed to include these interactions (<xref ref-type="supplementary-material" rid="pone.0185809.s013">S3 Table</xref>). Finally, all significant variables were combined into our final model (<xref ref-type="table" rid="pone.0185809.t004">Table 4</xref>), which included effects of an annual trend coefficient, season (linear and quadratic effect of day number), weather (temperature, precipitation, number of frost days), land use (cover of grassland and water, as well as interaction between grassland cover and trend), and habitat (number of herb and tree species as well as Ellenberg temperature).</p>
+<table-wrap id="pone.0185809.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185809.t004</object-id>
+<label>Table 4</label>
+<caption>
+<title>Posterior parameter estimates of the final mixed effects model of daily insect biomass.</title>
+<p>For each included variable, the corresponding coefficient mean, standard deviation and 95% credible intervals are given. P-values were calculated empirically based on posterior distributions of coefficients.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0185809.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.t004" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="right">Class</th>
+<th align="left">Variable</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">2.50%</th>
+<th align="right">97.50%</th>
+<th align="right">P</th>
+<th align="left"/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right" rowspan="4">Temporal</td>
+<td align="left">Intercept</td>
+<td align="char" char=".">2.450</td>
+<td align="char" char=".">0.233</td>
+<td align="char" char=".">1.983</td>
+<td align="char" char=".">2.891</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">log(<italic>λ</italic>)</td>
+<td align="char" char=".">-0.080</td>
+<td align="char" char=".">0.007</td>
+<td align="char" char=".">-0.094</td>
+<td align="char" char=".">-0.067</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Day number</td>
+<td align="char" char=".">-0.100</td>
+<td align="char" char=".">0.028</td>
+<td align="char" char=".">-0.155</td>
+<td align="char" char=".">-0.045</td>
+<td align="char" char=".">0.001</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Day number<sup>2</sup></td>
+<td align="char" char=".">-0.447</td>
+<td align="char" char=".">0.029</td>
+<td align="char" char=".">-0.504</td>
+<td align="char" char=".">-0.392</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="right" rowspan="3">Weather</td>
+<td align="left">Temperature</td>
+<td align="char" char=".">0.304</td>
+<td align="char" char=".">0.022</td>
+<td align="char" char=".">0.263</td>
+<td align="char" char=".">0.347</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Precipitation</td>
+<td align="char" char=".">-0.071</td>
+<td align="char" char=".">0.034</td>
+<td align="char" char=".">-0.143</td>
+<td align="char" char=".">-0.009</td>
+<td align="char" char=".">0.014</td>
+<td align="left">*</td>
+</tr>
+<tr>
+<td align="left">Frost days</td>
+<td align="char" char=".">-0.021</td>
+<td align="char" char=".">0.024</td>
+<td align="char" char=".">-0.067</td>
+<td align="char" char=".">0.025</td>
+<td align="char" char=".">0.194</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="right" rowspan="6">Land use</td>
+<td align="left">Habitat Cluster 2</td>
+<td align="char" char=".">0.420</td>
+<td align="char" char=".">0.162</td>
+<td align="char" char=".">0.080</td>
+<td align="char" char=".">0.729</td>
+<td align="char" char=".">0.007</td>
+<td align="left">**</td>
+</tr>
+<tr>
+<td align="left">Habitat Cluster 3</td>
+<td align="char" char=".">0.332</td>
+<td align="char" char=".">0.237</td>
+<td align="char" char=".">-0.133</td>
+<td align="char" char=".">0.806</td>
+<td align="char" char=".">0.078</td>
+<td align="left">.</td>
+</tr>
+<tr>
+<td align="left">Arable land</td>
+<td align="char" char=".">-1.063</td>
+<td align="char" char=".">0.184</td>
+<td align="char" char=".">-1.420</td>
+<td align="char" char=".">-0.709</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Forest</td>
+<td align="char" char=".">-0.522</td>
+<td align="char" char=".">0.216</td>
+<td align="char" char=".">-0.947</td>
+<td align="char" char=".">-0.121</td>
+<td align="char" char=".">0.007</td>
+<td align="left">**</td>
+</tr>
+<tr>
+<td align="left">Grassland</td>
+<td align="char" char=".">0.819</td>
+<td align="char" char=".">0.233</td>
+<td align="char" char=".">0.367</td>
+<td align="char" char=".">1.265</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Water</td>
+<td align="char" char=".">-0.327</td>
+<td align="char" char=".">0.170</td>
+<td align="char" char=".">-0.659</td>
+<td align="char" char=".">0.005</td>
+<td align="char" char=".">0.027</td>
+<td align="left">*</td>
+</tr>
+<tr>
+<td align="right" rowspan="5">Habitat</td>
+<td align="left">Herb species</td>
+<td align="char" char=".">-0.054</td>
+<td align="char" char=".">0.045</td>
+<td align="char" char=".">-0.137</td>
+<td align="char" char=".">0.037</td>
+<td align="char" char=".">0.119</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Tree Species</td>
+<td align="char" char=".">0.104</td>
+<td align="char" char=".">0.032</td>
+<td align="char" char=".">0.041</td>
+<td align="char" char=".">0.167</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Ell. Nitrogen</td>
+<td align="char" char=".">0.181</td>
+<td align="char" char=".">0.065</td>
+<td align="char" char=".">0.051</td>
+<td align="char" char=".">0.311</td>
+<td align="char" char=".">0.003</td>
+<td align="left">**</td>
+</tr>
+<tr>
+<td align="left">Ell. Light</td>
+<td align="char" char=".">0.162</td>
+<td align="char" char=".">0.039</td>
+<td align="char" char=".">0.088</td>
+<td align="char" char=".">0.236</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Ell. Temperature</td>
+<td align="char" char=".">-0.071</td>
+<td align="char" char=".">0.031</td>
+<td align="char" char=".">-0.131</td>
+<td align="char" char=".">-0.011</td>
+<td align="char" char=".">0.010</td>
+<td align="left">**</td>
+</tr>
+<tr>
+<td align="right" rowspan="5">Intercations</td>
+<td align="left">Year × Day number</td>
+<td align="char" char=".">-0.003</td>
+<td align="char" char=".">0.001</td>
+<td align="char" char=".">-0.006</td>
+<td align="char" char=".">-0.000</td>
+<td align="char" char=".">0.017</td>
+<td align="left">*</td>
+</tr>
+<tr>
+<td align="left">Year × Day number<sup>2</sup></td>
+<td align="char" char=".">0.010</td>
+<td align="char" char=".">0.001</td>
+<td align="char" char=".">0.007</td>
+<td align="char" char=".">0.013</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Year × Arable land</td>
+<td align="char" char=".">0.047</td>
+<td align="char" char=".">0.008</td>
+<td align="char" char=".">0.031</td>
+<td align="char" char=".">0.064</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Year × Forest</td>
+<td align="char" char=".">0.035</td>
+<td align="char" char=".">0.010</td>
+<td align="char" char=".">0.016</td>
+<td align="char" char=".">0.055</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Year × Grassland</td>
+<td align="char" char=".">-0.059</td>
+<td align="char" char=".">0.014</td>
+<td align="char" char=".">-0.086</td>
+<td align="char" char=".">-0.033</td>
+<td align="char" char=".">0.000</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="right">Random effects</td>
+<td align="left"><italic>σ</italic><sub><italic>site</italic></sub></td>
+<td align="char" char=".">0.334</td>
+<td align="char" char=".">0.037</td>
+<td align="char" char=".">0.270</td>
+<td align="char" char=".">0.412</td>
+<td align="right"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="right">Residual variation</td>
+<td align="left"><italic>v</italic></td>
+<td align="char" char=".">0.870</td>
+<td align="char" char=".">0.009</td>
+<td align="char" char=".">0.852</td>
+<td align="char" char=".">0.889</td>
+<td align="right"/>
+<td align="left"/>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Our estimate of decline is based on our basic model, from which we can derive seasonal estimates of daily biomass for any given year. The basic model includes only a temporal (annual and seasonal effects, as well as interactions) and a basic habitat cluster distinction (additive effects only) as well as a random trap location effect. We here report the annual trend coefficient, as well as a weighted estimate of decline that accounts for the within season differences in biomass decline. The weighted insect biomass decline was estimated by projecting the seasonal biomass (1-April to 30-October) for years 1989 and 2016 using coefficients our basic model, and then dividing the summed (over the season) biomass of 2016 by the summed biomass over 1989.</p>
+<p>Using our final model, we assessed the relative contribution (i.e. net effect) of the explanatory variables to the observed decline, both combined and independently. To this aim we projected the seasonal daily biomass for the years 1989 and 2016 twice: first we kept covariates at their mean values during the early stages of the study period, and second we allowed covariate values to change according to the observed mean changes (see <xref ref-type="supplementary-material" rid="pone.0185809.s007">S2</xref> and <xref ref-type="supplementary-material" rid="pone.0185809.s008">S3</xref> Figs). Difference in the total biomass decline between these two projections are interpreted as the relative contribution of the explanatory variables to the decline. The marginal (i.e. independent) effects of each covariate were calculated by projecting biomass increase/decline as result of the observed temporal developments in each variable separately, and expressing it as percentual change.</p>
+<p>Our data provide repetitions across years for only a subset of locations (n = 26 out of 63). As such, spatial variation in insect biomass may confound the estimated trend. To verify that this is not the case, we fitted our basic model (but excluding the day number and year interaction to avoid overparameterization) to the subset of our data that includes only locations that were sampled in more than one year. Seasonal profiles of daily biomass values are depicted in <xref ref-type="supplementary-material" rid="pone.0185809.s009">S4 Fig</xref>. Finally, we reran our basic model for the two (of the three) habitat clusters (for which sufficient data existed; see Biomass Data) separately in order to compare the rate of decline between them (<xref ref-type="supplementary-material" rid="pone.0185809.s010">S5 Fig</xref>).</p>
+</sec>
+</sec>
+<sec id="sec010" sec-type="results">
+<title>Results</title>
+<p>Following corrections for seasonal variation and habitat cluster (basic model, see <xref ref-type="sec" rid="sec002">Materials and methods</xref>), the annual trend coefficient of our basic model was significantly negative (annual trend coefficient = −0.063, sd = 0.002, i.e. 6.1% annual decline). Based on this result, we estimate that a major (up to 81.6% [79.7–83.4%]) decline in mid-summer aerial insect biomass has taken place since 1989 (<xref ref-type="fig" rid="pone.0185809.g002">Fig 2A</xref>). However, biomass loss was more prominent in mid-summer as compared to the start and end of the season (<xref ref-type="fig" rid="pone.0185809.g003">Fig 3A</xref>), indicating that the highest losses occur when biomass is highest during the season (<xref ref-type="fig" rid="pone.0185809.g002">Fig 2B</xref>). As such, a seasonally weighted estimate (covering the period 1-April to 30-October; see methods) results in an overall 76.7% [74.8–78.5%] decline over a 27 year period. The pattern of decline is very similar across locations that were sampled more than once (<xref ref-type="fig" rid="pone.0185809.g004">Fig 4</xref>), suggesting that the estimated temporal decline based on the entire dataset is not confounded by the sampling procedure. Re-estimation of the annual decline based on 26 locations that have been sampled in more than one year (<xref ref-type="supplementary-material" rid="pone.0185809.s009">S4 Fig</xref>), revealed a similar rate of decline (76.2%[73.9–78.3%]).</p>
+<fig id="pone.0185809.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185809.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Temporal distribution of insect biomass.</title>
+<p>(A) Boxplots depict the distribution of insect biomass (gram per day) pooled over all traps and catches in each year (n = 1503). Based on our final model, the grey line depicts the fitted mean (+95% posterior credible intervals) taking into account weather, landscape and habitat effects. The black line depicts the mean estimated trend as estimated with our basic model. (B) Seasonal distribution of insect biomass showing that highest insect biomass catches in mid summer show most severe declines. Color gradient in both panels range from 1989 (blue) to 2016 (orange).</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.g002" xlink:type="simple"/>
+</fig>
+<fig id="pone.0185809.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185809.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Seasonal decline and phenology.</title>
+<p>(A) Seasonal decline of mean daily insect biomass as estimated by independent month specific log-linear regressions (black bars), and our basic mixed effects model with interaction between annual rate of change and a quadratic trend for day number in season. (B), Seasonal phenology of insect biomass (seasonal quantiles of biomass at 5% intervals) across all locations revealing substantial annual variation in peak biomass (solid line) but no direction trend, suggesting no phenological changes have occurred with respect to temporal distribution of insect biomass.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.g003" xlink:type="simple"/>
+</fig>
+<fig id="pone.0185809.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185809.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Temporal distribution of insect biomass at selected locations.</title>
+<p>(A) Daily biomass (mean ±1 se) across 26 locations sampled in multiple years (see <xref ref-type="supplementary-material" rid="pone.0185809.s009">S4 Fig</xref> for seasonal distributions). (B) Distribution of mean annual rate of decline as estimated based on plot specific log-linear models (annual trend coefficient = −0.053, sd = 0.002, i.e. 5.2% annual decline).</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.g004" xlink:type="simple"/>
+</fig>
+<p>Insect biomass was positively related to temperature and negatively to precipitation (<xref ref-type="supplementary-material" rid="pone.0185809.s011">S1 Table</xref>). Including lagged effects of weather revealed no effect of either number of frost days, or winter precipitation, on the biomass in the next season (<xref ref-type="supplementary-material" rid="pone.0185809.s011">S1 Table</xref>). The overall model fit improved as compared to our basic model (R<sup>2</sup> = 65.4%, <xref ref-type="table" rid="pone.0185809.t003">Table 3</xref>), explaining within and between year variation in insect biomass, but not the overall decline (log(<italic>λ</italic>) = −0.058, sd = 0.002). Over the course of the study period, some temporal changes occurred in the means of the weather variables (<xref ref-type="supplementary-material" rid="pone.0185809.s007">S2 Fig</xref>), most notably an increase by 0.5°C in mean temperature and a decline 0.2 m/sec in mean wind speed. Yet, these changes either do not have an effect on insect biomass (e.g. wind speed) either are expected to positively affected insect biomass (e.g. increased temperature). Furthermore, a phenological shift with peak biomass earlier in the season could have resulted in lower biomass in the mid-season (<xref ref-type="fig" rid="pone.0185809.g003">Fig 3A</xref>), but this does not appear to be the case as none of the seasonal distribution quantiles in biomass showed any temporal trend (<xref ref-type="fig" rid="pone.0185809.g003">Fig 3B</xref>).</p>
+<p>There was substantial variation in trapped insect biomass between habitat clusters (see <xref ref-type="sec" rid="sec002">Materials and methods</xref>), with nutrient-rich grasslands, margins and wasteland containing 43% more insect biomass than nutrient-poor heathland, sandy grassland, and dunes. Yet, the annual rate of decline was similar, suggesting that the decline is not specific to certain habitat types (<xref ref-type="supplementary-material" rid="pone.0185809.s010">S5 Fig</xref>). To further characterize trap locations, we used past (1989–1994) and present (2012–2015) aerial photographs and quantified land use cover within 200m around the trap locations. On average, cover of arable land decreased, coverage of forests increased, while grassland and surface water did not change much in extent over the last three decades (<xref ref-type="supplementary-material" rid="pone.0185809.s008">S3 Fig</xref>). Overall, adding land use variables alone did not lead to a substantial improvement of the model fit (R<sup>2</sup> = 61.3%, <xref ref-type="table" rid="pone.0185809.t003">Table 3</xref>), nor did it affect the annual trend coefficient (log(<italic>λ</italic>) = −0.064, sd = 0.002). While presence of surface water appeared to significantly lower insect biomass, none of the other variables were significantly related to biomass. However, including interactions between the annual trend coefficient and land use variables increased the model fit slightly (<xref ref-type="table" rid="pone.0185809.t003">Table 3</xref>), and revealed significant interactions for all variables except coverage of surface water (<xref ref-type="supplementary-material" rid="pone.0185809.s012">S2 Table</xref>). These interactions, which were retained in our final model (<xref ref-type="table" rid="pone.0185809.t004">Table 4</xref>), revealed higher rates of decline where coverage of grassland was higher, while lower declines where forest and arable land coverage was higher.</p>
+<p>We hypothesized that successional changes in plant community [<xref ref-type="bibr" rid="pone.0185809.ref055">55</xref>] or changes in environmental conditions [<xref ref-type="bibr" rid="pone.0185809.ref009">9</xref>, <xref ref-type="bibr" rid="pone.0185809.ref018">18</xref>], could have affected the local insect biomass, and hence explain the decline. Plant species inventories that were carried out in the immediate vicinity of the traps and in the same season of trapping, revealed that species richness of trees, shrubs and herbs declined significantly over the course of the study period (<xref ref-type="supplementary-material" rid="pone.0185809.s008">S3 Fig</xref>). Including species richness in our basic model, i.e. number of tree species and log number of herb species, revealed significant positive and negative effects respectively on insect biomass, but did not affect the annual trend coefficient (<xref ref-type="supplementary-material" rid="pone.0185809.s013">S3 Table</xref>), explaining some variation between locations rather than the annual trend coefficient. Moreover, and contrary to expectation, trends in herb species richness were weakly negatively correlated with trends in insect biomass, when compared on per plot basis for plots sampled more than once. Ellenberg values of plant species provide a reliable indicator for the environmental conditions such as pH, nitrogen, and moisture [<xref ref-type="bibr" rid="pone.0185809.ref046">46</xref>, <xref ref-type="bibr" rid="pone.0185809.ref047">47</xref>]. Around trap locations, mean indicators (across all locations) were stable over time, with changes in the order of less than 2% over the course of the study period. Adding these variables to our basic model revealed a significant positive effect of nitrogen and light, and a significant negative effect of Ellenberg temperature on insect biomass, explaining a major part of the variation between the habitat types. However, Ellenberg values did not affect the insect biomass trend coefficient (log(<italic>λ</italic>) = −0.059, sd = 0.003, <xref ref-type="supplementary-material" rid="pone.0185809.s013">S3 Table</xref>) and only marginally improved the model fit (R<sup>2</sup> = 61.9%, <xref ref-type="table" rid="pone.0185809.t003">Table 3</xref>). All habitat variables were considered in our final model (<xref ref-type="table" rid="pone.0185809.t004">Table 4</xref>), with the exception of of pH and moisture.</p>
+<p>Our final model, based on including all significant variables from previous models, revealed a higher trend coefficient as compared to our basic model (log(<italic>λ</italic>) = −0.081, sd = 0.006, <xref ref-type="table" rid="pone.0185809.t004">Table 4</xref>), suggesting that temporal developments in the considered explanatory variables counteracted biomass decline to some degree, leading to an even more negative coefficient for the annual trend. The marginal net effect of changes in each covariate over time (see Analysis), showed a positive contribution to biomass growth rate of temporal developments in arable land, herb species richness, and Ellenberg Nitrogen, while negative effects of developments of tree species richness and forest coverage (<xref ref-type="fig" rid="pone.0185809.g005">Fig 5</xref>). For example, the negative effect of arable land on biomass (<xref ref-type="table" rid="pone.0185809.t004">Table 4</xref>), in combination with a decrease in coverage of arable land (<xref ref-type="supplementary-material" rid="pone.0185809.s008">S3 Fig</xref>), have resulted in a net positive effect for biomass (<xref ref-type="fig" rid="pone.0185809.g005">Fig 5</xref>). Projections of our final model, while fixing the coefficient for the temporal annual trend log(<italic>λ</italic>) to zero, suggest insect biomass would have remained stable, or even increased by approximately 8% (mean rate = 1.075, 0.849–1.381) over the course of the study period.</p>
+<fig id="pone.0185809.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0185809.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Marginal effects of temporal changes in considered covariates on insect biomass.</title>
+<p>Each bar represents the rate of change in total insect biomass, as the combined effect of the relevant coefficient (<xref ref-type="table" rid="pone.0185809.t004">Table 4</xref>) and the temporal development of each covariate independently (<xref ref-type="supplementary-material" rid="pone.0185809.s007">S2</xref> and <xref ref-type="supplementary-material" rid="pone.0185809.s008">S3</xref> Figs).</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.g005" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec011" sec-type="conclusions">
+<title>Discussion</title>
+<p>Our results document a dramatic decline in average airborne insect biomass of 76% (up to 82% in midsummer) in just 27 years for protected nature areas in Germany. This considerably exceeds the estimated decline of 58% in global abundance of wild vertebrates over a 42-year period to 2012 [<xref ref-type="bibr" rid="pone.0185809.ref056">56</xref>, <xref ref-type="bibr" rid="pone.0185809.ref057">57</xref>]. Our results demonstrate that recently reported declines in several taxa such as butterflies [<xref ref-type="bibr" rid="pone.0185809.ref007">7</xref>, <xref ref-type="bibr" rid="pone.0185809.ref025">25</xref>–<xref ref-type="bibr" rid="pone.0185809.ref027">27</xref>, <xref ref-type="bibr" rid="pone.0185809.ref058">58</xref>], wild bees [<xref ref-type="bibr" rid="pone.0185809.ref008">8</xref>–<xref ref-type="bibr" rid="pone.0185809.ref014">14</xref>] and moths [<xref ref-type="bibr" rid="pone.0185809.ref015">15</xref>–<xref ref-type="bibr" rid="pone.0185809.ref018">18</xref>], are in parallel with a severe loss of total aerial insect biomass, suggesting that it is not only the vulnerable species, but the flying insect community as a whole, that has been decimated over the last few decades. The estimated decline is considerably more severe than the only comparable long term study on flying insect biomass elsewhere [<xref ref-type="bibr" rid="pone.0185809.ref028">28</xref>]. In that study, 12.2m high suction traps were deployed at four locations in the UK over the time period 1973–2002, and showed a biomass decline at one of the four sites only. However, the sampling designs differ considerably between the two studies. Suction traps mainly target high-flying insects, and in that study the catches were largely comprised of flies belonging to the Bibionidae family. Contrary, malaise traps as used in the present study target insects flying close to the ground surface (up to 1 meter), with a much wider diversity of taxa. Future investigations should look into how biomass is distributed among insect species, and how species trends contribute to the biomass decline.</p>
+<p>Although the present dataset spans a relatively large number of years (27) and sites (63), the number of repetitions (i.e. multiple years of seasonal distributions at the same locations) was lower (n = 26). We are however confident that our estimated rate of decline in total biomass resembles the true rate of decline, and is not an artifact of site selection. Firstly, our basic model (including an annual rate of decline) outperformed the null-model (without an annual rate of decline; ΔDIC = 822.62 units; <xref ref-type="table" rid="pone.0185809.t003">Table 3</xref>), while at the same time, between-plot variation (i.s. <italic>σ</italic><sub><italic>site</italic></sub>) and residual variation (<italic>v</italic>) decreased by 44.3 and 9.7% respectively, after incorporating an annual rate of decline into the models. Secondly, using only data from sites at which malaise traps were operating in at least two years, we estimated a rate of decline similar to using the full dataset (<xref ref-type="fig" rid="pone.0185809.g004">Fig 4</xref>), with the pattern of decline being congruent across locations (<xref ref-type="supplementary-material" rid="pone.0185809.s009">S4 Fig</xref>). Taken together, there does not seem to be evidence that spatial variation (between sites) in this dataset forms a confounding factor to the estimated temporal trend, and conclude that our estimated biomass decline is representative for lowland protected areas in west Germany.</p>
+<p>In light of previously suggested driving mechanisms, our analysis renders two of the prime suspects, i.e. landscape [<xref ref-type="bibr" rid="pone.0185809.ref009">9</xref>, <xref ref-type="bibr" rid="pone.0185809.ref018">18</xref>, <xref ref-type="bibr" rid="pone.0185809.ref020">20</xref>] and climate change [<xref ref-type="bibr" rid="pone.0185809.ref015">15</xref>, <xref ref-type="bibr" rid="pone.0185809.ref018">18</xref>, <xref ref-type="bibr" rid="pone.0185809.ref021">21</xref>, <xref ref-type="bibr" rid="pone.0185809.ref037">37</xref>], as unlikely explanatory factors for this major decline in aerial insect biomass in the investigated protected areas. Habitat change was evaluated in terms of changes in plant species composition surrounding the standardized trap locations, and in plant species characteristics (Ellenberg values). Land use changes was evaluated in terms of proportional surface changes in aerial photographs, and not for example changes in management regimes. Given the major decline in insect biomass of about 80%, much stronger relationships would have been expected if changes in habitat and land use were the driving forces, even with the somewhat crude parameters that were at our disposal.</p>
+<p>The decline in insect biomass, being evident throughout the growing season, and irrespective of habitat type or landscape configuration, suggests large-scale factors must be involved. While some temporal changes in climatic variables in our study area have taken place, these either were not of influence (e.g. wind speed), or changed in a manner that should have increased insect biomass (e.g temperature). However, we have not exhaustively analysed the full range of climatic variables that could potentially impact insect biomass. For example prolonged droughts, or lack of sunshine especially in low temperatures might have had an effect on insect biomass [<xref ref-type="bibr" rid="pone.0185809.ref059">59</xref>–<xref ref-type="bibr" rid="pone.0185809.ref062">62</xref>]. Agricultural intensification [<xref ref-type="bibr" rid="pone.0185809.ref017">17</xref>, <xref ref-type="bibr" rid="pone.0185809.ref020">20</xref>] (e.g. pesticide usage, year-round tillage, increased use of fertilizers and frequency of agronomic measures) that we could not incorporate in our analyses, may form a plausible cause. The reserves in which the traps were placed are of limited size in this typical fragmented West-European landscape, and almost all locations (94%) are enclosed by agricultural fields. Part of the explanation could therefore be that the protected areas (serving as insect sources) are affected and drained by the agricultural fields in the broader surroundings (serving as sinks or even as ecological traps) [<xref ref-type="bibr" rid="pone.0185809.ref001">1</xref>, <xref ref-type="bibr" rid="pone.0185809.ref063">63</xref>–<xref ref-type="bibr" rid="pone.0185809.ref065">65</xref>]. Increased agricultural intensification may have aggravated this reduction in insect abundance in the protected areas over the last few decades. Whatever the causal factors responsible for the decline, they have a far more devastating effect on total insect biomass than has been appreciated previously.</p>
+<p>The widespread insect biomass decline is alarming, ever more so as all traps were placed in protected areas that are meant to preserve ecosystem functions and biodiversity. While the gradual decline of rare insect species has been known for quite some time (e.g. specialized butterflies [<xref ref-type="bibr" rid="pone.0185809.ref009">9</xref>, <xref ref-type="bibr" rid="pone.0185809.ref066">66</xref>]), our results illustrate an ongoing and rapid decline in total amount of airborne insects active in space and time. Agricultural intensification, including the disappearance of field margins and new crop protection methods has been associated with an overall decline of biodiversity in plants, insects, birds and other species in the current landscape [<xref ref-type="bibr" rid="pone.0185809.ref020">20</xref>, <xref ref-type="bibr" rid="pone.0185809.ref027">27</xref>, <xref ref-type="bibr" rid="pone.0185809.ref067">67</xref>]. The major and hitherto unrecognized loss of insect biomass that we report here for protected areas, adds a new dimension to this discussion, because it must have cascading effects across trophic levels and numerous other ecosystem effects. There is an urgent need to uncover the causes of this decline, its geographical extent, and to understand the ramifications of the decline for ecosystems and ecosystem services.</p>
+</sec>
+<sec id="sec012">
+<title>Supporting information</title>
+<supplementary-material id="pone.0185809.s001" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s001" xlink:type="simple">
+<label>S1 Appendix</label>
+<caption>
+<title>Malaise trap permissions.</title>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s002" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s002" xlink:type="simple">
+<label>S2 Appendix</label>
+<caption>
+<title>Malaise traps.</title>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s003" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s003" xlink:type="simple">
+<label>S1 Code</label>
+<caption>
+<title/>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s004" mimetype="text/csv" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s004" xlink:type="simple">
+<label>S1 Dataset</label>
+<caption>
+<title/>
+<p>(CSV)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s005" mimetype="text/csv" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s005" xlink:type="simple">
+<label>S2 Dataset</label>
+<caption>
+<title/>
+<p>(CSV)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s006" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s006" xlink:type="simple">
+<label>S1 Fig</label>
+<caption>
+<title>Map of study area.</title>
+<p>Insect trap locations (yellow points) in Nordrhein-Westfalen (n = 57), Rheinland-Pfalz (n = 1) and Brandenburg (n = 5), as well as weather stations (crosses) used in the present analysis.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s007" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s007" xlink:type="simple">
+<label>S2 Fig</label>
+<caption>
+<title>Temporal variation in weather variables.</title>
+<p>Annual means (A-C), daily means (D-F), and mean daily residual values (G-I) of temperature, precipitation and wind speed respectively. In all panels, black lines depict data while blue and red lines represent long term and seasonal fitted means of the variables, respectively.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s008" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s008" xlink:type="simple">
+<label>S3 Fig</label>
+<caption>
+<title>Land use and plant species richness changes.</title>
+<p>Mean land use in 1989–1994 (A) and 2012–2014 (B), based on aerial photograph analysis at 63 protected areas show a decrease of arable land and an increase in forested area over the past 25 years. (C) Changes in plants species richness for herbs (black) shrubs (red) and trees (blue). Annual means as well as mean trends are depicted in the corresponding colors. Linear trends are based on generalized linear mixed effects models with a Poisson error distribution and a random intercept effect for location. Note, zero values for tree and shrub species not depicted.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s009" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s009" xlink:type="simple">
+<label>S4 Fig</label>
+<caption>
+<title>Seasonal profiles of daily biomass across 26 locations.</title>
+<p>For each location, different colors represent different years, with time color-coded from green (1989) to red (2016). X-axis represents day number (January 1 = 0).</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s010" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s010" xlink:type="simple">
+<label>S5 Fig</label>
+<caption>
+<title>Daily biomass of insects over time for two habitat clusters.</title>
+<p>Boxplots depict the distribution of insect biomass pooled over all traps and catches in each year at trap locations in nutrient-poor heathland, sandy grassland, and dunes (A), and in nutrient-rich grasslands, margins and wasteland (B). Grey lines depict the fitted mean (+95% posterior credible intervals), while the black lines the mean estimated trend. Estimated annual decline amounts to 7.5%(6.6–8.4) for habitat cluster 1, as compared to 5.2% (4.8–5.5) habitat cluster 2. Models fitted independently for each habitat location. Color gradient in all panels range from 1989 (blue) to 2016 (orange).</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s011" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s011" xlink:type="simple">
+<label>S1 Table</label>
+<caption>
+<title>Posterior parameter estimates of the mixed effects model including weather variables.</title>
+<p>For each included variable, the corresponding coefficient posterior mean, standard deviation and 95% credible intervals are given. P-values are calculated empirically based on posterior distributions of coefficients.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s012" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s012" xlink:type="simple">
+<label>S2 Table</label>
+<caption>
+<title>Posterior parameter estimates of the mixed effects model including land use variables and interactions.</title>
+<p>For each included variable, the corresponding coefficient posterior mean, standard deviation and 95% credible intervals are given. P-values are calculated empirically based on posterior distributions of coefficients.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0185809.s013" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0185809.s013" xlink:type="simple">
+<label>S3 Table</label>
+<caption>
+<title>Posterior parameter estimates of the mixed effects model including habitat variables.</title>
+<p>For each included variable, the corresponding coefficient posterior mean, standard deviation and 95% credible intervals are given. P-values are calculated empirically based on posterior distributions of coefficients.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>CH and EJ were supported by the Netherlands Organization for Scientific Research (NWO grants 840.11.001 and 841.11.007), and NH by the Triodos Foundation. The investigations of the Entomological Society Krefeld and its members are spread over numerous individual projects at different locations and in different years. Grants and permits that have made this work possible are listed below:</p>
+<p>Bezirksregierungen Düsseldorf &amp; Köln, BfN—Bundesamt für Naturschutz, Land Nordrhein-Westfalen—Europäische Gemeinschaft ELER, Landesamt für Agrarordnung Nordrhein-Westfalen, Landesamt für Natur, Umwelt und Verbraucherschutz Nordrhein-Westfalen, Landesamt für Umwelt Brandenburg, Landesamt für Umwelt Rheinland-Pfalz, LVR—Landschaftsverband Rheinland, Naturschutzbund Deutschland, Nordrhein-Westfalen Stiftung, RBN—Bergischer Naturschutzverein, RVR—Regionalverband Ruhr, SGD Nord Rheinland-Pfalz, Universitäten Bonn, Duisburg-Essen &amp; Köln, Untere Landschaftsbehörden: Kreis Düren, Kreis Heinsberg, Kreis Kleve, Kreis Viersen, Kreis Wesel &amp; AGLW, Stadt Düsseldorf, Stadt Köln, Stadt Krefeld, Rheinisch Bergischer Kreis, Rhein Kreis Neuss &amp; Rhein-Sieg-Kreis. Members of the Entomological Society Krefeld and cooperating botanists and entomologists that were involved in the empirical investigations are greatly acknowledged: U.W. Abts, F. Bahr, A. Bäumler, D. &amp; H. Beutler, P. Birnbrich, U. Bosch, J. Buchner, F. Cassese, K. Cölln, A.W. Ebmer, R. Eckelboom, B. Franzen, M. Grigo, J. Günneberg, J. Gusenleitner, K. Hamacher, F. Hartfeld, M. Hellenthal, J. Hembach, A. Hemmersbach, W. Hock, V. Huisman-Fiegen, J. Illmer, E. Jansen, U. Jäckel, F. Koch, M. Kreuels, P. Leideritz, I. Loksa, F. B. Ludescher, F. J. Mehring, G. Milbert, N. Mohr, P. Randazzo, K. Reissmann, S. Risch, B. Robert, J. de Rond, U. Sandmann, S. Scharf, P. Scherz, J. Schiffer, C. Schmidt, O. &amp; W. Schmitz, B. P. &amp; W. Schnell, J. L. Schönfeld, E. Schraetz, M. Schwarz, R. Seliger, H. W. Siebeneicher, F. &amp; H. Sonnenburg W. J. S. &amp; P. Sorg, A. Ssymank, H. Sticht, M. Weithmann, W. Wichard and H. Wolf.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0185809.ref001">
+<label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Öckinger</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>HG</given-names></name>. <article-title>Semi-natural grasslands as population sources for pollinating insects in agricultural landscapes</article-title>. <source>Journal of Applied Ecology</source>. <year>2007</year>;<volume>44</volume>(<issue>1</issue>):<fpage>50</fpage>–<lpage>59</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref002">
+<label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ollerton</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Winfree</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Tarrant</surname> <given-names>S</given-names></name>. <article-title>How many flowering plants are pollinated by animals?</article-title> <source>Oikos</source>. <year>2011</year>;<volume>120</volume>(<issue>3</issue>):<fpage>321</fpage>–<lpage>326</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1600-0706.2010.18644.x" xlink:type="simple">10.1111/j.1600-0706.2010.18644.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref003">
+<label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Mattson</surname> <given-names>WJ</given-names></name>, <name name-style="western"><surname>Addy</surname> <given-names>ND</given-names></name>. <article-title>Phytophagous insects as regulators of forest primary production</article-title>. <source>Science</source>. <year>1975</year>;<volume>190</volume>(<issue>4214</issue>):<fpage>515</fpage>–<lpage>522</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.190.4214.515" xlink:type="simple">10.1126/science.190.4214.515</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref004">
+<label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Yang</surname> <given-names>LH</given-names></name>, <name name-style="western"><surname>Gratton</surname> <given-names>C</given-names></name>. <article-title>Insects as drivers of ecosystem processes</article-title>. <source>Current Opinion in Insect Science</source>. <year>2014</year>;<volume>2</volume>:<fpage>26</fpage>–<lpage>32</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cois.2014.06.004" xlink:type="simple">10.1016/j.cois.2014.06.004</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref005">
+<label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Morse</surname> <given-names>H D</given-names></name>. <article-title>The insectivorous bird as an adaptive strategy</article-title>. <source>Annual Review of Ecology and Systematics</source>. <year>1971</year>; p. <fpage>177</fpage>–<lpage>200</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev.es.02.110171.001141" xlink:type="simple">10.1146/annurev.es.02.110171.001141</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref006">
+<label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Losey</surname> <given-names>JE</given-names></name>, <name name-style="western"><surname>Vaughan</surname> <given-names>M</given-names></name>. <article-title>The economic value of ecological services provided by insects</article-title>. <source>Bioscience</source>. <year>2006</year>;<volume>56</volume>(<issue>4</issue>):<fpage>311</fpage>–<lpage>323</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref007">
+<label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>van Swaay</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>van Strien</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Harpke</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Fontaine</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Stefanescu</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Roy</surname> <given-names>D</given-names></name>, <etal>et al</etal>. <article-title>The European grassland butterfly indicator: 1990–2011</article-title>. <source>EEA Technical Reports</source>. <year>2013</year>;<volume>11</volume>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref008">
+<label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Goulson</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Lye</surname> <given-names>GC</given-names></name>, <name name-style="western"><surname>Darvill</surname> <given-names>B</given-names></name>. <article-title>Decline and conservation of bumble bees</article-title>. <source>Annual Review of Entomology</source>. <year>2008</year>;<volume>53</volume>:<fpage>191</fpage>–<lpage>208</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev.ento.53.103106.093454" xlink:type="simple">10.1146/annurev.ento.53.103106.093454</ext-link></comment> <object-id pub-id-type="pmid">17803456</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref009">
+<label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Nilsson</surname> <given-names>SG</given-names></name>, <name name-style="western"><surname>Franzen</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Jönsson</surname> <given-names>E</given-names></name>. <article-title>Long-term land-use changes and extinction of specialised butterflies</article-title>. <source>Insect Conservation and Diversity</source>. <year>2008</year>;<volume>1</volume>(<issue>4</issue>):<fpage>197</fpage>–<lpage>207</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref010">
+<label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Winfree</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Aguilar</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Vázquez</surname> <given-names>DP</given-names></name>, <name name-style="western"><surname>LeBuhn</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Aizen</surname> <given-names>MA</given-names></name>. <article-title>A meta-analysis of bees’ responses to anthropogenic disturbance</article-title>. <source>Ecology</source>. <year>2009</year>;<volume>90</volume>(<issue>8</issue>):<fpage>2068</fpage>–<lpage>2076</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1890/08-1245.1" xlink:type="simple">10.1890/08-1245.1</ext-link></comment> <object-id pub-id-type="pmid">19739369</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref011">
+<label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Potts</surname> <given-names>SG</given-names></name>, <name name-style="western"><surname>Biesmeijer</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Kremen</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Neumann</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Schweiger</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Kunin</surname> <given-names>WE</given-names></name>. <article-title>Global pollinator declines: trends, impacts and drivers</article-title>. <source>Trends in Ecology and Evolution</source>. <year>2010</year>;<volume>25</volume>(<issue>6</issue>):<fpage>345</fpage>–<lpage>353</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.tree.2010.01.007" xlink:type="simple">10.1016/j.tree.2010.01.007</ext-link></comment> <object-id pub-id-type="pmid">20188434</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref012">
+<label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ilyinykh</surname> <given-names>A</given-names></name>. <article-title>Analysis of the causes of declines in Western Siberian outbreaks of the nun moth <italic>Lymantria monacha</italic></article-title>. <source>BioControl</source>. <year>2011</year>;<volume>56</volume>(<issue>2</issue>):<fpage>123</fpage>–<lpage>131</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10526-010-9316-8" xlink:type="simple">10.1007/s10526-010-9316-8</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref013">
+<label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ollerton</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Erenler</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Edwards</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Crockett</surname> <given-names>R</given-names></name>. <article-title>Extinctions of aculeate pollinators in Britain and the role of large-scale agricultural changes</article-title>. <source>Science</source>. <year>2014</year>;<volume>346</volume>(<issue>6215</issue>):<fpage>1360</fpage>–<lpage>1362</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1257259" xlink:type="simple">10.1126/science.1257259</ext-link></comment> <object-id pub-id-type="pmid">25504719</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref014">
+<label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Woodcock</surname> <given-names>BA</given-names></name>, <name name-style="western"><surname>Isaac</surname> <given-names>NJ</given-names></name>, <name name-style="western"><surname>Bullock</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Roy</surname> <given-names>DB</given-names></name>, <name name-style="western"><surname>Garthwaite</surname> <given-names>DG</given-names></name>, <name name-style="western"><surname>Crowe</surname> <given-names>A</given-names></name>, <etal>et al</etal>. <article-title>Impacts of neonicotinoid use on long-term population changes in wild bees in England</article-title>. <source>Nature Communications</source>. <year>2016</year>;<volume>7</volume>:<fpage>12459</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/ncomms12459" xlink:type="simple">10.1038/ncomms12459</ext-link></comment> <object-id pub-id-type="pmid">27529661</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref015">
+<label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Conrad</surname> <given-names>KF</given-names></name>, <name name-style="western"><surname>Woiwod</surname> <given-names>IP</given-names></name>, <name name-style="western"><surname>Perry</surname> <given-names>JN</given-names></name>. <article-title>Long-term decline in abundance and distribution of the garden tiger moth (<italic>Arctia caja</italic>) in Great Britain</article-title>. <source>Biological Conservation</source>. <year>2002</year>;<volume>106</volume>(<issue>3</issue>):<fpage>329</fpage>–<lpage>337</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0006-3207(01)00258-0" xlink:type="simple">10.1016/S0006-3207(01)00258-0</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref016">
+<label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Conrad</surname> <given-names>KF</given-names></name>, <name name-style="western"><surname>Warren</surname> <given-names>MS</given-names></name>, <name name-style="western"><surname>Fox</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Parsons</surname> <given-names>MS</given-names></name>, <name name-style="western"><surname>Woiwod</surname> <given-names>IP</given-names></name>. <article-title>Rapid declines of common, widespread British moths provide evidence of an insect biodiversity crisis</article-title>. <source>Biological Conservation</source>. <year>2006</year>;<volume>132</volume>(<issue>3</issue>):<fpage>279</fpage>–<lpage>291</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.biocon.2006.04.020" xlink:type="simple">10.1016/j.biocon.2006.04.020</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref017">
+<label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Fox</surname> <given-names>R</given-names></name>. <article-title>The decline of moths in Great Britain: a review of possible causes</article-title>. <source>Insect Conservation and Diversity</source>. <year>2013</year>;<volume>6</volume>(<issue>1</issue>):<fpage>5</fpage>–<lpage>19</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1752-4598.2012.00186.x" xlink:type="simple">10.1111/j.1752-4598.2012.00186.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref018">
+<label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Fox</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Oliver</surname> <given-names>TH</given-names></name>, <name name-style="western"><surname>Harrower</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Parsons</surname> <given-names>MS</given-names></name>, <name name-style="western"><surname>Thomas</surname> <given-names>CD</given-names></name>, <name name-style="western"><surname>Roy</surname> <given-names>DB</given-names></name>. <article-title>Long-term changes to the frequency of occurrence of British moths are consistent with opposing and synergistic effects of climate and land-use changes</article-title>. <source>Journal of Applied Ecology</source>. <year>2014</year>;<volume>51</volume>(<issue>4</issue>):<fpage>949</fpage>–<lpage>957</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/1365-2664.12256" xlink:type="simple">10.1111/1365-2664.12256</ext-link></comment> <object-id pub-id-type="pmid">25954052</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref019">
+<label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Brändle</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Amarell</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Auge</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Klotz</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Brandl</surname> <given-names>R</given-names></name>. <article-title>Plant and insect diversity along a pollution gradient: understanding species richness across trophic levels</article-title>. <source>Biodiversity &amp; Conservation</source>. <year>2001</year>;<volume>10</volume>(<issue>9</issue>):<fpage>1497</fpage>–<lpage>1511</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1023/A:1011815325503" xlink:type="simple">10.1023/A:1011815325503</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref020">
+<label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Benton</surname> <given-names>TG</given-names></name>, <name name-style="western"><surname>Bryant</surname> <given-names>DM</given-names></name>, <name name-style="western"><surname>Cole</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Crick</surname> <given-names>HQ</given-names></name>. <article-title>Linking agricultural practice to insect and bird populations: a historical study over three decades</article-title>. <source>Journal of Applied Ecology</source>. <year>2002</year>;<volume>39</volume>(<issue>4</issue>):<fpage>673</fpage>–<lpage>687</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1046/j.1365-2664.2002.00745.x" xlink:type="simple">10.1046/j.1365-2664.2002.00745.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref021">
+<label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Morecroft</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Bealey</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Howells</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Rennie</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Woiwod</surname> <given-names>I</given-names></name>. <article-title>Effects of drought on contrasting insect and plant species in the UK in the mid-1990s</article-title>. <source>Global Ecology and Biogeography</source>. <year>2002</year>;<volume>11</volume>(<issue>1</issue>):<fpage>7</fpage>–<lpage>22</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1046/j.1466-822X.2002.00174.x" xlink:type="simple">10.1046/j.1466-822X.2002.00174.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref022">
+<label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Biesmeijer</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Roberts</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Reemer</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Ohlemüller</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Edwards</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Peeters</surname> <given-names>T</given-names></name>, <etal>et al</etal>. <article-title>Parallel declines in pollinators and insect-pollinated plants in Britain and the Netherlands</article-title>. <source>Science</source>. <year>2006</year>;<volume>313</volume>(<issue>5785</issue>):<fpage>351</fpage>–<lpage>354</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1127863" xlink:type="simple">10.1126/science.1127863</ext-link></comment> <object-id pub-id-type="pmid">16857940</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref023">
+<label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Fuentes-Montemayor</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Goulson</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Park</surname> <given-names>KJ</given-names></name>. <article-title>The effectiveness of agri-environment schemes for the conservation of farmland moths: assessing the importance of a landscape-scale management approach</article-title>. <source>Journal of Applied Ecology</source>. <year>2011</year>;<volume>48</volume>(<issue>3</issue>):<fpage>532</fpage>–<lpage>542</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-2664.2010.01927.x" xlink:type="simple">10.1111/j.1365-2664.2010.01927.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref024">
+<label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Dirzo</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Young</surname> <given-names>HS</given-names></name>, <name name-style="western"><surname>Galetti</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Ceballos</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Isaac</surname> <given-names>NJ</given-names></name>, <name name-style="western"><surname>Collen</surname> <given-names>B</given-names></name>. <article-title>Defaunation in the Anthropocene</article-title>. <source>Science</source>. <year>2014</year>;<volume>345</volume>(<issue>6195</issue>):<fpage>401</fpage>–<lpage>406</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1251817" xlink:type="simple">10.1126/science.1251817</ext-link></comment> <object-id pub-id-type="pmid">25061202</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref025">
+<label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Thomas</surname> <given-names>JA</given-names></name>. <article-title>Butterfly communities under threat</article-title>. <source>Science</source>. <year>2016</year>;<volume>353</volume>(<issue>6296</issue>):<fpage>216</fpage>–<lpage>218</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.aaf8838" xlink:type="simple">10.1126/science.aaf8838</ext-link></comment> <object-id pub-id-type="pmid">27418487</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref026">
+<label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Habel</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Segerer</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Ulrich</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Torchyk</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Weisser</surname> <given-names>WW</given-names></name>, <name name-style="western"><surname>Schmitt</surname> <given-names>T</given-names></name>. <article-title>Butterfly community shifts over 2 centuries</article-title>. <source>Conservation Biology</source>. <year>2015</year>; p. <fpage>754</fpage>–<lpage>762</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref027">
+<label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Thomas</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Telfer</surname> <given-names>MG</given-names></name>, <name name-style="western"><surname>Roy</surname> <given-names>DB</given-names></name>, <name name-style="western"><surname>Preston</surname> <given-names>CD</given-names></name>, <name name-style="western"><surname>Greenwood</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Asher</surname> <given-names>J</given-names></name>, <etal>et al</etal>. <article-title>Comparative losses of British butterflies, birds, and plants and the global extinction crisis</article-title>. <source>Science</source>. <year>2004</year>;<volume>303</volume>(<issue>5665</issue>):<fpage>1879</fpage>–<lpage>1881</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1095046" xlink:type="simple">10.1126/science.1095046</ext-link></comment> <object-id pub-id-type="pmid">15031508</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref028">
+<label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Shortall</surname> <given-names>CR</given-names></name>, <name name-style="western"><surname>Moore</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Hall</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Woiwod</surname> <given-names>IP</given-names></name>, <name name-style="western"><surname>Harrington</surname> <given-names>R</given-names></name>. <article-title>Long-term changes in the abundance of flying insects</article-title>. <source>Insect Conservation and Diversity</source>. <year>2009</year>;<volume>2</volume>(<issue>4</issue>):<fpage>251</fpage>–<lpage>260</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1752-4598.2009.00062.x" xlink:type="simple">10.1111/j.1752-4598.2009.00062.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref029">
+<label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Bosch</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Hock</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Schwan</surname> <given-names>H</given-names></name>. <article-title>Naturkundliche Untersuchungen zum Naturschutzgebiet Die Spey—III. Nachgewiesene Schmetterlinge (Macrolepidoptera)</article-title>. <source>Natur am Niederrhein (NF)</source>. <year>1994</year>;<volume>9</volume>(<issue>1</issue>):<fpage>40</fpage>–<lpage>52</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref030">
+<label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Schmidt</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Robert</surname> <given-names>B</given-names></name>. <article-title>Naturkundliche Untersuchungen zum Naturschutzgebiet Die Spey—VI. Die Köcherfliegen (Insecta, Trichoptera)</article-title>. <source>Natur am Niederrhein (NF)</source>. <year>1995</year>;<volume>10</volume>(<issue>2</issue>):<fpage>62</fpage>–<lpage>68</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref031">
+<label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Hellenthal</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Ssymank</surname> <given-names>A</given-names></name>. <article-title>Schwebfliegen (Diptera, Syrphidae) des Wahnbachtals im Bergischen Land (Nordrhein-Westfalen, Deutschland)</article-title>. <source>Volucella</source>. <year>2007</year>;<volume>8</volume>:<fpage>219</fpage>–<lpage>236</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref032">
+<label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Townes</surname> <given-names>H</given-names></name>. <article-title>A light-weight Malaise trap</article-title>. <source>Entomological News</source>. <year>1972</year>;<volume>83</volume>:<fpage>239</fpage>–<lpage>247</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref033">
+<label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Matthews</surname> <given-names>RW</given-names></name>, <name name-style="western"><surname>Matthews</surname> <given-names>JR</given-names></name>. <article-title>Malaise traps: the Townes model catches more insects</article-title>. <source>Contributions of the American Entomological Institute</source>. <year>1983</year>;<volume>20</volume>:<fpage>428</fpage>–<lpage>432</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref034">
+<label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Schwan</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Sorg</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Stenmans</surname> <given-names>W</given-names></name>. <article-title>Naturkundliche Untersuchungen zum Naturschutzgebiet Die Spey (Stadt Krefeld, Kreis Neuss)—I. Untersuchungsstandorte und Methoden</article-title>. <source>Natur am Niederrhein (NF)</source>. <year>1993</year>;<volume>8</volume>(<issue>1</issue>):<fpage>1</fpage>–<lpage>13</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref035">
+<label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Sorg</surname> <given-names>M</given-names></name>. <article-title>Entomophage Insekten des Versuchsgutes Höfchen (BRD, Burscheid).- Teil 1. Aphidiinae (Hymenoptera, Braconidae)</article-title>. <source>Pflanzenschutz-Nachrichten Bayer</source>. <year>1990</year>;<volume>43</volume>(<issue>1/2</issue>):<fpage>29</fpage>–<lpage>45</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref036">
+<label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Sorg</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Schwan</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Stenmans</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Müller</surname> <given-names>A</given-names></name>. <article-title>Ermittlung der Biomassen flugaktiver Insekten im Naturschutzgebiet Orbroicher Bruch mit Malaise Fallen in den Jahren 1989 und 2013</article-title>. <source>Mitteilungen aus dem Entomologischen Verein Krefeld</source>. <year>2013</year>;<volume>2013</volume>(<issue>1</issue>):<fpage>1</fpage>–<lpage>5</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref037">
+<label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Fliszkiewicz</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Giejdasz</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Wasielewski</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Krishnan</surname> <given-names>N</given-names></name>. <article-title>Influence of winter temperature and simulated climate change on body mass and fat body depletion during diapause in adults of the Solitary bee, <italic>Osmia rufa</italic> (Hymenoptera: Megachilidae)</article-title>. <source>Environmental Entomology</source>. <year>2012</year>;<volume>41</volume>(<issue>6</issue>):<fpage>1621</fpage>–<lpage>1630</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1603/EN12004" xlink:type="simple">10.1603/EN12004</ext-link></comment> <object-id pub-id-type="pmid">23321111</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref038">
+<label>38</label>
+<mixed-citation publication-type="other" xlink:type="simple">Deutscher Wetterdienst. Recent and historical daily NKDZ climate station data; 2015. <ext-link ext-link-type="uri" xlink:href="http://www.deutscher-wetterdienst.de" xlink:type="simple">http://www.deutscher-wetterdienst.de</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref039">
+<label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Cressie</surname> <given-names>N</given-names></name>. <article-title>Statistics for spatial data: Wiley series in probability and statistics</article-title>. <source>Wiley-Interscience New York</source>. <year>1993</year>;<volume>15</volume>:<fpage>16</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref040">
+<label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Pebesma</surname> <given-names>EJ</given-names></name>. <article-title>Multivariable geostatistics in S: the gstat package</article-title>. <source>Computers &amp; Geosciences</source>. <year>2004</year>;<volume>30</volume>(<issue>7</issue>):<fpage>683</fpage>–<lpage>691</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cageo.2004.03.012" xlink:type="simple">10.1016/j.cageo.2004.03.012</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref041">
+<label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Luo</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Taylor</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Parker</surname> <given-names>S</given-names></name>. <article-title>A comparison of spatial interpolation methods to estimate continuous wind speed surfaces using irregularly distributed data from England and Wales</article-title>. <source>International Journal of Climatology</source>. <year>2008</year>;<volume>28</volume>(<issue>7</issue>):<fpage>947</fpage>–<lpage>959</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/joc.1583" xlink:type="simple">10.1002/joc.1583</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref042">
+<label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Wood</surname> <given-names>SN</given-names></name>. <article-title>Thin plate regression splines</article-title>. <source>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</source>. <year>2003</year>;<volume>65</volume>(<issue>1</issue>):<fpage>95</fpage>–<lpage>114</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/1467-9868.00374" xlink:type="simple">10.1111/1467-9868.00374</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref043">
+<label>43</label>
+<mixed-citation publication-type="other" xlink:type="simple">Jarvis A, Reuter HI, Nelson A, Guevara E. Hole-filled seamless SRTM data V4, International Centre for Tropical Agriculture (CIAT); 2008. <ext-link ext-link-type="uri" xlink:href="http://srtm.csi.cgiar.org" xlink:type="simple">http://srtm.csi.cgiar.org</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref044">
+<label>44</label>
+<mixed-citation publication-type="other" xlink:type="simple">TIM-online. Karten NRW; 2016. <ext-link ext-link-type="uri" xlink:href="http://www.tim-online.nrw.de/tim-online/initParams.do" xlink:type="simple">http://www.tim-online.nrw.de/tim-online/initParams.do</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref045">
+<label>45</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Steffan-Dewenter</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Münzenberg</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Bürger</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Thies</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Tscharntke</surname> <given-names>T</given-names></name>. <article-title>Scale-dependent effects of landscape context on three pollinator guilds</article-title>. <source>Ecology</source>. <year>2002</year>;<volume>83</volume>(<issue>5</issue>):<fpage>1421</fpage>–<lpage>1432</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref046">
+<label>46</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Ellenberg</surname> <given-names>H</given-names></name>. <chapter-title>Zeigerwerte der Gefäßpflanzen Mitteleuropas</chapter-title>. <source>Scripta Geobotanica 9</source>. <publisher-name>Goltze</publisher-name>, <publisher-loc>Göttingen</publisher-loc>. <year>1974</year>;.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref047">
+<label>47</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Ellenberg</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Weber</surname> <given-names>HE</given-names></name>, <name name-style="western"><surname>Düll</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Wirth</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Werner</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Paulißen</surname> <given-names>D</given-names></name>, <etal>et al</etal>. <source>Zeigerwerte von pflanzen in Mitteleuropa</source>. <publisher-name>E. Goltze</publisher-name>; <year>1992</year>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref048">
+<label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Hennekens</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Schaminée</surname> <given-names>JH</given-names></name>. <article-title>TURBOVEG, a comprehensive data base management system for vegetation data</article-title>. <source>Journal of vegetation science</source>. <year>2001</year>;<volume>12</volume>(<issue>4</issue>):<fpage>589</fpage>–<lpage>591</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/3237010" xlink:type="simple">10.2307/3237010</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref049">
+<label>49</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Bates</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Mächler</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Bolker</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Walker</surname> <given-names>S</given-names></name>. <article-title>Fitting Linear Mixed-Effects Models Using lme4</article-title>. <source>Journal of Statistical Software</source>. <year>2015</year>;<volume>67</volume>(<issue>1</issue>):<fpage>1</fpage>–<lpage>48</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.18637/jss.v067.i01" xlink:type="simple">10.18637/jss.v067.i01</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref050">
+<label>50</label>
+<mixed-citation publication-type="other" xlink:type="simple">Plummer M, et al. JAGS: A program for analysis of Bayesian graphical models using Gibbs sampling. In: Proceedings of the 3rd International Workshop on Distributed Statistical Computing. vol. 124. Vienna; 2003. p. 125.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref051">
+<label>51</label>
+<mixed-citation publication-type="other" xlink:type="simple">R Core Team. R: A Language and Environment for Statistical Computing; 2015. Available from: <ext-link ext-link-type="uri" xlink:href="https://www.R-project.org/" xlink:type="simple">https://www.R-project.org/</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref052">
+<label>52</label>
+<mixed-citation publication-type="other" xlink:type="simple">Su YS, Yajima M. R2jags: Using R to Run JAGS; 2015. Available from: <ext-link ext-link-type="uri" xlink:href="http://CRAN.R-project.org/package=R2jags" xlink:type="simple">http://CRAN.R-project.org/package=R2jags</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref053">
+<label>53</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Spiegelhalter</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Best</surname> <given-names>NG</given-names></name>, <name name-style="western"><surname>Carlin</surname> <given-names>BP</given-names></name>, <name name-style="western"><surname>Van Der Linde</surname> <given-names>A</given-names></name>. <article-title>Bayesian measures of model complexity and fit</article-title>. <source>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</source>. <year>2002</year>;<volume>64</volume>(<issue>4</issue>):<fpage>583</fpage>–<lpage>639</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/1467-9868.00353" xlink:type="simple">10.1111/1467-9868.00353</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref054">
+<label>54</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Gelman</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Rubin</surname> <given-names>DB</given-names></name>. <article-title>Inference from iterative simulation using multiple sequences</article-title>. <source>Statistical Science</source>. <year>1992</year>; p. <fpage>457</fpage>–<lpage>472</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1214/ss/1177011136" xlink:type="simple">10.1214/ss/1177011136</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref055">
+<label>55</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Brown</surname> <given-names>VK</given-names></name>. <article-title>Insect herbivores and plant succession</article-title>. <source>Oikos</source>. <year>1985</year>;<volume>44</volume>:<fpage>17</fpage>–<lpage>22</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/3544037" xlink:type="simple">10.2307/3544037</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref056">
+<label>56</label>
+<mixed-citation publication-type="other" xlink:type="simple">WWF International. Living Planet Report 2016: Risk and resilience in a new era. Gland, Switzerland. 2016;.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref057">
+<label>57</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ceballos</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Ehrlich</surname> <given-names>PR</given-names></name>, <name name-style="western"><surname>Dirzo</surname> <given-names>R</given-names></name>. <article-title>Biological annihilation via the ongoing sixth mass extinction signaled by vertebrate population losses and declines</article-title>. <source>Proceedings of the National Academy of Sciences</source>. <year>2017</year>; p. <fpage>201704949</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1704949114" xlink:type="simple">10.1073/pnas.1704949114</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref058">
+<label>58</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Kuussaari</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Heliölä</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Pöyry</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Saarinen</surname> <given-names>K</given-names></name>. <article-title>Contrasting trends of butterfly species preferring semi-natural grasslands, field margins and forest edges in northern Europe</article-title>. <source>Journal of Insect Conservation</source>. <year>2007</year>;<volume>11</volume>(<issue>4</issue>):<fpage>351</fpage>–<lpage>366</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10841-006-9052-7" xlink:type="simple">10.1007/s10841-006-9052-7</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref059">
+<label>59</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Dennis</surname> <given-names>RL</given-names></name>, <name name-style="western"><surname>Sparks</surname> <given-names>TH</given-names></name>. <article-title>Climate signals are reflected in an 89 year series of British Lepidoptera records</article-title>. <source>European Journal of Entomology</source>. <year>2007</year>;<volume>104</volume>(<issue>4</issue>):<fpage>763</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.14411/eje.2007.097" xlink:type="simple">10.14411/eje.2007.097</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref060">
+<label>60</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Grüebler</surname> <given-names>MU</given-names></name>, <name name-style="western"><surname>Morand</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Naef-Daenzer</surname> <given-names>B</given-names></name>. <article-title>A predictive model of the density of airborne insects in agricultural environments</article-title>. <source>Agriculture, Ecosystems &amp; Environment</source>. <year>2008</year>;<volume>123</volume>(<issue>1</issue>):<fpage>75</fpage>–<lpage>80</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0185809.ref061">
+<label>61</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ewald</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Wheatley</surname> <given-names>CJ</given-names></name>, <name name-style="western"><surname>Aebischer</surname> <given-names>NJ</given-names></name>, <name name-style="western"><surname>Moreby</surname> <given-names>SJ</given-names></name>, <name name-style="western"><surname>Duffield</surname> <given-names>SJ</given-names></name>, <name name-style="western"><surname>Crick</surname> <given-names>HQ</given-names></name>, <etal>et al</etal>. <article-title>Influences of extreme weather, climate and pesticide use on invertebrates in cereal fields over 42 years</article-title>. <source>Global Change Biology</source>. <year>2015</year>;<volume>21</volume>(<issue>11</issue>):<fpage>3931</fpage>–<lpage>3950</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/gcb.13026" xlink:type="simple">10.1111/gcb.13026</ext-link></comment> <object-id pub-id-type="pmid">26149473</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref062">
+<label>62</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>McDermott Long</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Warren</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Price</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Brereton</surname> <given-names>TM</given-names></name>, <name name-style="western"><surname>Botham</surname> <given-names>MS</given-names></name>, <name name-style="western"><surname>Franco</surname> <given-names>A</given-names></name>. <article-title>Sensitivity of UK butterflies to local climatic extremes: which life stages are most at risk?</article-title> <source>Journal of Animal Ecology</source>. <year>2017</year>;<volume>86</volume>(<issue>1</issue>):<fpage>108</fpage>–<lpage>116</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/1365-2656.12594" xlink:type="simple">10.1111/1365-2656.12594</ext-link></comment> <object-id pub-id-type="pmid">27796048</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref063">
+<label>63</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Battin</surname> <given-names>J</given-names></name>. <article-title>When good animals love bad habitats: ecological traps and the conservation of animal populations</article-title>. <source>Conservation Biology</source>. <year>2004</year>;<volume>18</volume>(<issue>6</issue>):<fpage>1482</fpage>–<lpage>1491</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1523-1739.2004.00417.x" xlink:type="simple">10.1111/j.1523-1739.2004.00417.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref064">
+<label>64</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Gilroy</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Sutherland</surname> <given-names>WJ</given-names></name>. <article-title>Beyond ecological traps: perceptual errors and undervalued resources</article-title>. <source>Trends in Ecology and Evolution</source>. <year>2007</year>;<volume>22</volume>(<issue>7</issue>):<fpage>351</fpage>–<lpage>356</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.tree.2007.03.014" xlink:type="simple">10.1016/j.tree.2007.03.014</ext-link></comment> <object-id pub-id-type="pmid">17416438</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref065">
+<label>65</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Furrer</surname> <given-names>RD</given-names></name>, <name name-style="western"><surname>Pasinelli</surname> <given-names>G</given-names></name>. <article-title>Empirical evidence for source—sink populations: a review on occurrence, assessments and implications</article-title>. <source>Biological Reviews</source>. <year>2016</year>;<volume>91</volume>:<fpage>782</fpage>–<lpage>795</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/brv.12195" xlink:type="simple">10.1111/brv.12195</ext-link></comment> <object-id pub-id-type="pmid">26010659</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref066">
+<label>66</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Warren</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Hill</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Thomas</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Asher</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Fox</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Huntley</surname> <given-names>B</given-names></name>, <etal>et al</etal>. <article-title>Rapid responses of British butterflies to opposing forces of climate and habitat change</article-title>. <source>Nature</source>. <year>2001</year>;<volume>414</volume>(<issue>6859</issue>):<fpage>65</fpage>–<lpage>69</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/35102054" xlink:type="simple">10.1038/35102054</ext-link></comment> <object-id pub-id-type="pmid">11689943</object-id></mixed-citation>
+</ref>
+<ref id="pone.0185809.ref067">
+<label>67</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Hallmann</surname> <given-names>CA</given-names></name>, <name name-style="western"><surname>Foppen</surname> <given-names>RP</given-names></name>, <name name-style="western"><surname>van Turnhout</surname> <given-names>CA</given-names></name>, <name name-style="western"><surname>de Kroon</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Jongejans</surname> <given-names>E</given-names></name>. <article-title>Declines in insectivorous birds are associated with high neonicotinoid concentrations</article-title>. <source>Nature</source>. <year>2014</year>;<volume>511</volume>:<fpage>341</fpage>–<lpage>343</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature13531" xlink:type="simple">10.1038/nature13531</ext-link></comment> <object-id pub-id-type="pmid">25030173</object-id></mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

@@ -56,7 +56,6 @@ def filename_to_doi(filename):
     :param directory: defaults to corpusdir, containing article files
     :return: full unique identifier for a PLOS article
     """
-    #import pdb; pdb.set_trace()
     if correction in filename and validate_filename(filename):
         article = 'annotation/' + (filename.split('.', 4)[2])
         doi = prefix + article
