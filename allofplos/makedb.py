@@ -8,6 +8,7 @@ Make a SQLite DB out of articles XML files
 from bs4 import BeautifulSoup
 import os
 import random
+import progressbar
 
 from transformations import filename_to_doi
 from article_class import Article
@@ -81,8 +82,11 @@ try:
 except:
     pass
 
-
-for file_ in random.sample(os.listdir(corpusdir),100):
+allfiles = os.listdir(corpusdir)
+randomfiles = random.sample(allfiles, 50)
+max_value = len(randomfiles)
+bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+for i, file_ in enumerate(randomfiles):
     #print(file_)
     doi = filename_to_doi(file_)
     article = Article(doi)
@@ -110,3 +114,5 @@ for file_ in random.sample(os.listdir(corpusdir),100):
         created_date = article.pubdate,
         word_count=article.word_count)
     p_art.save()
+    bar.update(i+1)
+bar.finish()
