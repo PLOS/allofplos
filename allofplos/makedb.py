@@ -65,6 +65,12 @@ class Journal(BaseModel):
 class ArticleType(BaseModel):
     article_type = CharField(unique=True)
 
+class CorrespondingAuthor(BaseModel):
+    corr_author_email = CharField(unique=True)
+    give_name = TextField()
+    surname = TextField()
+    group_name = TextField()
+
 class PLOSArticle(BaseModel):
     article_id = ForeignKeyField(DOI, related_name='articles')
     abstract = TextField()
@@ -73,12 +79,16 @@ class PLOSArticle(BaseModel):
     journal_id = ForeignKeyField(Journal, related_name='journals')
     created_date = DateTimeField(default=datetime.datetime.now)
     word_count = IntegerField()
+    corr_author = ForeignKeyField(CorrespondingAuthor, related_name='corrauthor')
     #is_published = BooleanField(default=True)
 
+class CoAuthorPLOSArticle(BaseModel):
+    corr_author = ForeignKeyField(CorrespondingAuthor)
+    article = ForeignKeyField(PLOSArticle)
 
 db.connect()
 try:
-    db.create_tables([DOI, Journal, PLOSArticle, ArticleType])
+    db.create_tables([DOI, Journal, PLOSArticle, ArticleType, CoAuthorPLOSArticle])
 except:
     pass
 
@@ -90,6 +100,7 @@ for i, file_ in enumerate(randomfiles):
     #print(file_)
     doi = filename_to_doi(file_)
     article = Article(doi)
+    #import pdb; pdb.set_trace()
     doi = DOI.create(doi=doi)
     doi.save()
     journal_name = journal_title_dict[article.journal]
@@ -114,5 +125,8 @@ for i, file_ in enumerate(randomfiles):
         created_date = article.pubdate,
         word_count=article.word_count)
     p_art.save()
+    ###
+    co_author = CoAuthorPLOSArticle.create()
+
     bar.update(i+1)
 bar.finish()
