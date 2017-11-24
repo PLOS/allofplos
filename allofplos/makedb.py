@@ -80,8 +80,6 @@ class PLOSArticle(BaseModel):
     journal_id = ForeignKeyField(Journal, related_name='journals')
     created_date = DateTimeField(default=datetime.datetime.now)
     word_count = IntegerField()
-    #corr_author = ForeignKeyField(CorrespondingAuthor, related_name='corrauthor')
-    #is_published = BooleanField(default=True)
 
 class CoAuthorPLOSArticle(BaseModel):
     corr_author = ForeignKeyField(CorrespondingAuthor)
