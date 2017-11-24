@@ -21,34 +21,22 @@ import datetime
 corpusdir = 'allofplos_xml'
 
 journal_title_dict = {
-'PLoS One':'PLOS ONE',
-'PLoS ONE':'PLOS ONE',
 'PLOS ONE':'PLOS ONE',
-'PLOS Genetics':'PLOS Genetics',
-'PLoS Genet':'PLOS Genetics',
-'PLoS Genetics':'PLOS Genetics',
-'PLoS Neglected Tropical Diseases':'PLOS Neglected Tropical Diseases',
-'PLOS Neglected Tropical Diseases':'PLOS Neglected Tropical Diseases',
-'PLoS Negl Trop Dis':'PLOS Neglected Tropical Diseases',
-'PLoS Biology':'PLOS Biology',
-'PLOS Biology':'PLOS Biology',
-'PLoS Biol':'PLOS Biology',
-'PLOS Clinical Trials': 'PLOS Clinical Trials',
-'PLoS Medicine':'PLOS Medicine',
-'PLoS Medicin': 'PLOS Medicine',
-'PLos Med': 'PLOS Medicine',
-'PLoS Med': 'PLOS Medicine',
-'PLOS Med': 'PLOS Medicine',
-'PLOS Medicine': 'PLOS Medicine',
-'PLoS Pathog': 'PLOS Pathogens',
-'PLOS Pathog': 'PLOS Pathogens',
-'PLOS Pathogens': 'PLOS Pathogens',
-'PLoS Pathogens': 'PLOS Pathogens',
-'PLoS Computational Biology': 'PLOS Computational Biology',
-'PLOS Computational Biology': 'PLOS Computational Biology',
-'PLoS Comput Biol': 'PLOS Computational Biology',
-'PLOS Comput Biol': 'PLOS Computational Biology',
-'PLoS Clinical Trials': 'PLOS Clinical Trials',
+'PLOS GENETICS':' PLOS Genetics',
+'PLOS GENET': 'PLOS Genetics',
+'PLOS NEGLECTED TROPICAL DISEASES':'PLOS Neglected Tropical Diseases',
+'PLOS NEGL TROP DIS':'PLOS Neglected Tropical Diseases',
+'PLOS BIOLOGY':'PLOS Biology',
+'PLOS BIOL':'PLOS Biology',
+'PLOS CLINICAL TRIALS': 'PLOS Clinical Trials',
+'PLOS MEDICINE':'PLOS Medicine',
+'PLOS MEDICIN': 'PLOS Medicine',
+'PLOS MED': 'PLOS Medicine',
+'PLOS PATHOG': 'PLOS Pathogens',
+'PLOS PATHOGENS': 'PLOS Pathogens',
+'PLOS COMPUTATIONAL BIOLOGY': 'PLOS Computational Biology',
+'PLOS COMPUT BIOL': 'PLOS Computational Biology',
+'PLOS CLINICAL TRIALS': 'PLOS Clinical Trials',
 }
 
 db = SqliteExtDatabase('my_database.db')
@@ -56,9 +44,6 @@ db = SqliteExtDatabase('my_database.db')
 class BaseModel(Model):
     class Meta:
         database = db
-
-class DOI(BaseModel):
-    doi = CharField(unique=True)
 
 class Journal(BaseModel):
     journal = CharField(unique=True)
@@ -68,18 +53,23 @@ class ArticleType(BaseModel):
 
 class CorrespondingAuthor(BaseModel):
     corr_author_email = CharField(unique=True)
-    given_name = TextField()
-    surname = TextField()
+    tld = TextField(null=True)
+    given_name = TextField(null=True)
+    surname = TextField(null=True)
     group_name = TextField(null=True)
 
+class JATSType(BaseModel):
+    jats_type = CharField(unique=True)
+
 class PLOSArticle(BaseModel):
-    article_id = ForeignKeyField(DOI, related_name='articles')
+    DOI = TextField(unique=True)
     abstract = TextField()
     title = TextField()
-    plostype_id = ForeignKeyField(ArticleType, related_name='arttype')
-    journal_id = ForeignKeyField(Journal, related_name='journals')
+    plostype = ForeignKeyField(ArticleType, related_name='arttype')
+    journal = ForeignKeyField(Journal, related_name='journals')
     created_date = DateTimeField(default=datetime.datetime.now)
     word_count = IntegerField()
+    JATS_type = ForeignKeyField(JATSType, related_name='jats')
 
 class CoAuthorPLOSArticle(BaseModel):
     corr_author = ForeignKeyField(CorrespondingAuthor)
@@ -87,23 +77,23 @@ class CoAuthorPLOSArticle(BaseModel):
 
 db.connect()
 try:
-    db.create_tables([DOI, Journal, PLOSArticle, ArticleType,
-                      CoAuthorPLOSArticle, CorrespondingAuthor])
+    db.create_tables([Journal, PLOSArticle, ArticleType,
+                      CoAuthorPLOSArticle, CorrespondingAuthor,
+                      JATSType])
 except:
     pass
 
 allfiles = os.listdir(corpusdir)
-randomfiles = random.sample(allfiles, 500)
-max_value = len(randomfiles)
+randomfiles = random.sample(allfiles, 50)
+#max_value = len(randomfiles)
+max_value = len(allfiles)
 bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-for i, file_ in enumerate(randomfiles):
+for i, file_ in enumerate(allfiles):
+#for i, file_ in enumerate(randomfiles):
     #print(file_)
     doi = filename_to_doi(file_)
     article = Article(doi)
-    #import pdb; pdb.set_trace()
-    doi = DOI.create(doi=doi)
-    doi.save()
-    journal_name = journal_title_dict[article.journal]
+    journal_name = journal_title_dict[article.journal.upper()]
     with db.atomic() as atomic:
         try:
             journal = Journal.create(journal = journal_name)
@@ -116,24 +106,28 @@ for i, file_ in enumerate(randomfiles):
         except IntegrityError:
             db.rollback()
             article_type = ArticleType.get(ArticleType.article_type == article.plostype)
-    #import pdb; pdb.set_trace()
+    with db.atomic() as atomic:
+        try:
+            j_type = JATSType.create(jats_type = article.type_)
+        except IntegrityError:
+            db.rollback()
+            j_type = JATSType.get(JATSType.jats_type == article.type_)
     p_art = PLOSArticle.create(
-        article_id = doi,
-        journal_id = journal,
+        DOI = doi,
+        journal = journal,
         abstract=article.abstract.replace('\n', '').replace('\t', ''),
         title = article.title.replace('\n', '').replace('\t', ''),
-        plostype_id = article_type,
+        plostype = article_type,
         created_date = article.pubdate,
-        word_count=article.word_count)
-    p_art.save()
-    ###
-    #import pdb; pdb.set_trace()
+        word_count=article.word_count,
+        JATS_type = j_type)
+    ##p_art.save()
     for auths in article.authors:
         if auths['email']:
-            print(auths['email'][0])
             try:
                 co_author = CorrespondingAuthor.create(
                     corr_author_email = auths['email'][0],
+                    tld = auths['email'][0].split('.')[-1],
                     given_name = auths['given_names'],
                     surname = auths['surname'],
                     group_name = auths['group_name']
@@ -146,6 +140,6 @@ for i, file_ in enumerate(randomfiles):
                     corr_author = co_author,
                     article = p_art
                 )
-            coauthplosart.save()
+            ##coauthplosart.save()
     bar.update(i+1)
 bar.finish()
