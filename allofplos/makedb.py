@@ -33,22 +33,23 @@ journal_title_dict = {
 'PLoS Biology':'PLOS Biology',
 'PLOS Biology':'PLOS Biology',
 'PLoS Biol':'PLOS Biology',
+'PLOS Clinical Trials': 'PLOS Clinical Trials',
 'PLoS Medicine':'PLOS Medicine',
-'PLoS Medicin':'PLOS Medicine',
+'PLoS Medicin': 'PLOS Medicine',
 'PLos Med': 'PLOS Medicine',
 'PLoS Med': 'PLOS Medicine',
 'PLOS Med': 'PLOS Medicine',
 'PLOS Medicine': 'PLOS Medicine',
-'PLoS Pathog':'PLOS Pathogens',
-'PLOS Pathogens':'PLOS Pathogens',
-'PLoS Pathogens':'PLOS Pathogens',
-'PLoS Computational Biology':'PLOS Computational Biology',
-'PLOS Computational Biology':'PLOS Computational Biology',
-'PLoS Comput Biol':'PLOS Computational Biology',
-'PLoS Clinical Trials':'PLOS Clinical Trials',
+'PLoS Pathog': 'PLOS Pathogens',
+'PLOS Pathog': 'PLOS Pathogens',
+'PLOS Pathogens': 'PLOS Pathogens',
+'PLoS Pathogens': 'PLOS Pathogens',
+'PLoS Computational Biology': 'PLOS Computational Biology',
+'PLOS Computational Biology': 'PLOS Computational Biology',
+'PLoS Comput Biol': 'PLOS Computational Biology',
+'PLOS Comput Biol': 'PLOS Computational Biology',
+'PLoS Clinical Trials': 'PLOS Clinical Trials',
 }
-
-
 
 db = SqliteExtDatabase('my_database.db')
 
@@ -67,9 +68,9 @@ class ArticleType(BaseModel):
 
 class CorrespondingAuthor(BaseModel):
     corr_author_email = CharField(unique=True)
-    give_name = TextField()
+    given_name = TextField()
     surname = TextField()
-    group_name = TextField()
+    group_name = TextField(null=True)
 
 class PLOSArticle(BaseModel):
     article_id = ForeignKeyField(DOI, related_name='articles')
@@ -79,7 +80,7 @@ class PLOSArticle(BaseModel):
     journal_id = ForeignKeyField(Journal, related_name='journals')
     created_date = DateTimeField(default=datetime.datetime.now)
     word_count = IntegerField()
-    corr_author = ForeignKeyField(CorrespondingAuthor, related_name='corrauthor')
+    #corr_author = ForeignKeyField(CorrespondingAuthor, related_name='corrauthor')
     #is_published = BooleanField(default=True)
 
 class CoAuthorPLOSArticle(BaseModel):
@@ -88,12 +89,13 @@ class CoAuthorPLOSArticle(BaseModel):
 
 db.connect()
 try:
-    db.create_tables([DOI, Journal, PLOSArticle, ArticleType, CoAuthorPLOSArticle])
+    db.create_tables([DOI, Journal, PLOSArticle, ArticleType,
+                      CoAuthorPLOSArticle, CorrespondingAuthor])
 except:
     pass
 
 allfiles = os.listdir(corpusdir)
-randomfiles = random.sample(allfiles, 50)
+randomfiles = random.sample(allfiles, 500)
 max_value = len(randomfiles)
 bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
 for i, file_ in enumerate(randomfiles):
@@ -116,6 +118,7 @@ for i, file_ in enumerate(randomfiles):
         except IntegrityError:
             db.rollback()
             article_type = ArticleType.get(ArticleType.article_type == article.plostype)
+    #import pdb; pdb.set_trace()
     p_art = PLOSArticle.create(
         article_id = doi,
         journal_id = journal,
@@ -126,7 +129,25 @@ for i, file_ in enumerate(randomfiles):
         word_count=article.word_count)
     p_art.save()
     ###
-    co_author = CoAuthorPLOSArticle.create()
-
+    #import pdb; pdb.set_trace()
+    for auths in article.authors:
+        if auths['email']:
+            print(auths['email'][0])
+            try:
+                co_author = CorrespondingAuthor.create(
+                    corr_author_email = auths['email'][0],
+                    given_name = auths['given_names'],
+                    surname = auths['surname'],
+                    group_name = auths['group_name']
+                    )
+                co_author.save()
+            except IntegrityError:
+                co_author = CorrespondingAuthor.\
+                            get(CorrespondingAuthor.corr_author_email == auths['email'][0])
+            coauthplosart = CoAuthorPLOSArticle.create(
+                    corr_author = co_author,
+                    article = p_art
+                )
+            coauthplosart.save()
     bar.update(i+1)
 bar.finish()
