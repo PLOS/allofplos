@@ -152,8 +152,25 @@ for i, file_ in enumerate(randomfiles):
                     country_from_aff = 'N/A'
                 if country_from_aff and 'China' in country_from_aff:
                     country_from_aff = 'China'
-                elif country_from_aff == 'United States' or country_from_aff == 'USA':
+                elif country_from_aff == 'United States' or country_from_aff \
+                        == 'USA' or 'Florida' in country_from_aff:
                     country_from_aff = 'United States of America'
+                elif 'Canada' in country_from_aff:
+                    country_from_aff = 'Canada'
+                elif 'Germany' in country_from_aff:
+                    country_from_aff = 'Germany'
+                elif 'France' in country_from_aff:
+                    country_from_aff = 'France'
+                elif country_from_aff == 'ROC':
+                    country_from_aff = 'Taiwan'
+                elif country_from_aff == 'Brasil':
+                    country_from_aff = 'Brazil'
+                elif country_from_aff == 'México':
+                    country_from_aff = 'Mexico'
+                elif country_from_aff == 'Korea':
+                    country_from_aff = 'South Korea'
+                elif country_from_aff == 'United Kindgom':
+                    country_from_aff = 'United Kingdom'
                 elif country_from_aff == 'the Netherlands':
                     country_from_aff = 'The Netherlands'
                 elif country_from_aff == 'Commonwealth of Australia':
