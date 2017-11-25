@@ -14,6 +14,7 @@ allofplos_xml/
 !doi_to_pmc.csv
 *.iml
 */.ipynb_checkpoints/*
+*.egg-info/
 zip_info.txt
 !tests/testdata/journal.pbio.2001413.xml
 !tests/testdata/plos.correction.3155a3e9-5fbe-435c-a07a-e9a4846ec0b6.xml
