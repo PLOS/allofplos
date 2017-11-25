@@ -16,9 +16,9 @@ import progressbar
 import random
 import requests
 
-from plos_regex import (validate_doi, corpusdir, newarticledir, full_doi_regex_match, validate_url, currents_doi_filter)
-from transformations import (filename_to_doi, doi_to_path, doi_to_url)
-from plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, uncorrected_proofs_text_list,
+from allofplos.plos_regex import (validate_doi, corpusdir, newarticledir, full_doi_regex_match, validate_url, currents_doi_filter)
+from allofplos.transformations import (filename_to_doi, doi_to_path, doi_to_url)
+from allofplos.plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, uncorrected_proofs_text_list,
                          get_related_article_doi, download_updated_xml, get_all_solr_dois, get_article_pubdate,
                          download_check_and_move)
 
@@ -440,6 +440,11 @@ def check_if_doi_resolves(doi, plos_valid=True):
         return "doesn't work"
 
 
+def get_all_local_dois(corpusdir=corpusdir):
+    local_dois = [filename_to_doi(article_file) for article_file in listdir_nohidden(corpusdir)]
+    return local_dois
+
+
 def get_all_plos_dois(local_articles=None, solr_articles=None):
     '''
     Collects lists of articles for local and solr, calculates the difference.
@@ -450,7 +455,7 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
     if solr_articles is None:
         solr_articles = get_all_solr_dois()
     if local_articles is None:
-        local_articles = [filename_to_doi(article_file) for article_file in listdir_nohidden(corpusdir)]
+        local_articles = get_all_local_dois()
     missing_local_articles = set(solr_articles) - set(local_articles)
     if missing_local_articles:
         print('re-run plos_corpus.py to download latest {0} PLOS articles locally.'

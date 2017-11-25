@@ -3,9 +3,15 @@ The following RegEx pertains to the 7 main PLOS journals and the defunct PLOS Cl
 """
 
 import re
+import os
 
 # Main directory of article XML files
-corpusdir = 'allofplos_xml'
+# Note: This relies on the __file__ of the plos_regex.py file. If this file is 
+# ever moved, you need to change how you define ALLOFPLOS_DIR_PATH.
+# The other approach would be to import allofplos and use allofplos.__file__ 
+# but that has a potential to introduce a circular dependency. 
+ALLOFPLOS_DIR_PATH = os.path.abspath(os.path.dirname(__file__))
+corpusdir = os.path.join(ALLOFPLOS_DIR_PATH, 'allofplos_xml')
 
 # Temp folder for downloading and processing new articles
 newarticledir = 'new_plos_articles'
