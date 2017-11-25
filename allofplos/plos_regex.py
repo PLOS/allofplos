@@ -8,8 +8,8 @@ import os
 import allofplos
 
 # Main directory of article XML files
-ALLOFPLOS_DIR = os.path.abspath(os.path.dirname(allofplos.__file__))
-corpusdir = os.path.join(ALLOFPLOS_DIR, 'allofplos_xml')
+ALLOFPLOS_DIR_PATH = os.path.abspath(os.path.dirname(allofplos.__file__))
+corpusdir = os.path.join(ALLOFPLOS_DIR_PATH, 'allofplos_xml')
 
 # Temp folder for downloading and processing new articles
 newarticledir = 'new_plos_articles'
