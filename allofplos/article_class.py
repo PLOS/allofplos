@@ -12,11 +12,11 @@ from allofplos.article_elements import (parse_article_date, get_contrib_info,
                               match_contribs_to_dicts)
 
 
-class Article(object):
+class Article():
     """The primary object of a PLOS article, initialized by a valid PLOS DOI.
 
     """
-    def __init__(self, doi=None, directory=None, plos_network=False):
+    def __init__(self, doi, directory=None, plos_network=False):
         """Creation of an article object.
 
         Usage:
@@ -99,7 +99,7 @@ class Article(object):
         Using regular expressions, make sure the doi is valid before
         instantiating the article object.
         """
-        if d is not None and validate_doi(d) is False:
+        if validate_doi(d) is False:
             raise Exception("Invalid format for PLOS DOI")
         self.reset_memoized_attrs()
         self._doi = d
