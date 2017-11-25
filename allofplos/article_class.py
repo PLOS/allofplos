@@ -891,18 +891,22 @@ class Article():
     @property
     def authors(self):
         """List of authors of an article. Including contributing and corresponding.
+        Return the list if there is authors, if not, it returns None
 
         For more about authorship criteria, see http://journals.plos.org/plosone/s/authorship
         """
         contributors = self.contributors
-        return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'author']
+        if contributors:
+            return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'author']
 
     @property
     def corr_author(self):
         """List of corresponding authors of an article.
+        Return the list if there is authors, if not, it returns None
         """
         contributors = self.contributors
-        return [contrib for contrib in contributors if contrib.get('author_type', None) == 'corresponding']
+        if contributors:
+            return [contrib for contrib in contributors if contrib.get('author_type', None) == 'corresponding']
 
     @property
     def editor(self):
@@ -993,7 +997,7 @@ class Article():
 
     @property
     def correct_or_retract(self):
-        """Boolean for whether the JATS article type is a correction or retraction. 
+        """Boolean for whether the JATS article type is a correction or retraction.
 
         :returns: Whether the article is a correction or retraction
         :rtype: {bool}
@@ -1006,7 +1010,7 @@ class Article():
     @property
     def related_doi(self):
         """DOI related to current article
-        
+
         Only works for corrections and retractions, the two JATS article types that point
         at other articles.
         :returns: First related DOI

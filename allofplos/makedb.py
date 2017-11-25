@@ -21,25 +21,26 @@ import datetime
 corpusdir = 'allofplos_xml'
 
 journal_title_dict = {
-'PLOS ONE':'PLOS ONE',
-'PLOS GENETICS':' PLOS Genetics',
-'PLOS GENET': 'PLOS Genetics',
-'PLOS NEGLECTED TROPICAL DISEASES':'PLOS Neglected Tropical Diseases',
-'PLOS NEGL TROP DIS':'PLOS Neglected Tropical Diseases',
-'PLOS BIOLOGY':'PLOS Biology',
-'PLOS BIOL':'PLOS Biology',
-'PLOS CLINICAL TRIALS': 'PLOS Clinical Trials',
-'PLOS MEDICINE':'PLOS Medicine',
-'PLOS MEDICIN': 'PLOS Medicine',
-'PLOS MED': 'PLOS Medicine',
-'PLOS PATHOG': 'PLOS Pathogens',
-'PLOS PATHOGENS': 'PLOS Pathogens',
-'PLOS COMPUTATIONAL BIOLOGY': 'PLOS Computational Biology',
-'PLOS COMPUT BIOL': 'PLOS Computational Biology',
-'PLOS CLINICAL TRIALS': 'PLOS Clinical Trials',
+    'PLOS ONE':'PLOS ONE',
+    'PLOS GENETICS':' PLOS Genetics',
+    'PLOS GENET': 'PLOS Genetics',
+    'PLOS NEGLECTED TROPICAL DISEASES':'PLOS Neglected Tropical Diseases',
+    'PLOS NEGL TROP DIS':'PLOS Neglected Tropical Diseases',
+    'PLOS BIOLOGY':'PLOS Biology',
+    'PLOS BIOL':'PLOS Biology',
+    'PLOS CLINICAL TRIALS': 'PLOS Clinical Trials',
+    'PLOS MEDICINE':'PLOS Medicine',
+    'PLOS MEDICIN': 'PLOS Medicine',
+    'PLOS MED': 'PLOS Medicine',
+    'PLOS PATHOG': 'PLOS Pathogens',
+    'PLOS PATHOGENS': 'PLOS Pathogens',
+    'PLOS COMPUTATIONAL BIOLOGY': 'PLOS Computational Biology',
+    'PLOS COMPUT BIOL': 'PLOS Computational Biology',
+    'PLOS CLINICAL TRIALS': 'PLOS Clinical Trials',
 }
 
-db = SqliteExtDatabase('my_database.db')
+# TODO: Put a warning that the DB will be deleted
+db = SqliteExtDatabase('ploscorpus.db')
 
 class BaseModel(Model):
     class Meta:
@@ -51,12 +52,20 @@ class Journal(BaseModel):
 class ArticleType(BaseModel):
     article_type = CharField(unique=True)
 
+class Country(BaseModel):
+    country = CharField(unique=True)
+
+class Affiliations(BaseModel):
+    affiliations = CharField(unique=True)
+
 class CorrespondingAuthor(BaseModel):
     corr_author_email = CharField(unique=True)
     tld = TextField(null=True)
     given_name = TextField(null=True)
     surname = TextField(null=True)
     group_name = TextField(null=True)
+    affiliation = ForeignKeyField(Affiliations, related_name='aff')
+    country = ForeignKeyField(Country, related_name='aff')
 
 class JATSType(BaseModel):
     jats_type = CharField(unique=True)
@@ -76,23 +85,22 @@ class CoAuthorPLOSArticle(BaseModel):
     article = ForeignKeyField(PLOSArticle)
 
 db.connect()
-try:
-    db.create_tables([Journal, PLOSArticle, ArticleType,
+db.create_tables([Journal, PLOSArticle, ArticleType,
                       CoAuthorPLOSArticle, CorrespondingAuthor,
-                      JATSType])
-except:
-    pass
+                      JATSType, Affiliations, Country])
 
 allfiles = os.listdir(corpusdir)
-randomfiles = random.sample(allfiles, 50)
-#max_value = len(randomfiles)
-max_value = len(allfiles)
+random.seed(1)
+randomfiles = random.sample(allfiles, 500)
+max_value = len(randomfiles)
+#max_value = len(allfiles)
 bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-for i, file_ in enumerate(allfiles):
-#for i, file_ in enumerate(randomfiles):
+#for i, file_ in enumerate(allfiles):
+for i, file_ in enumerate(randomfiles):
     #print(file_)
     doi = filename_to_doi(file_)
     article = Article(doi)
+    #import pdb; pdb.set_trace()
     journal_name = journal_title_dict[article.journal.upper()]
     with db.atomic() as atomic:
         try:
@@ -124,15 +132,44 @@ for i, file_ in enumerate(allfiles):
     ##p_art.save()
     for auths in article.authors:
         if auths['email']:
+            with db.atomic() as atomic:
+                try:
+                    aff = Affiliations.create(affiliations = auths['affiliations'][0])
+                except IntegrityError:
+                    db.rollback()
+                    aff = Affiliations.get(Affiliations.affiliations == auths['affiliations'][0])
+                except IndexError:
+                    db.rollback()
+                    aff = None
+            with db.atomic() as atomic:
+                country_from_aff = auths['affiliations'][0].split(',')[-1].strip()
+                if 'China' in country_from_aff:
+                    country_from_aff = 'China'
+                elif country_from_aff == 'United States' or country_from_aff == 'USA':
+                    country_from_aff = 'United States of America'
+                elif country_from_aff == 'the Netherlands':
+                    country_from_aff = 'The Netherlands'
+                elif country_from_aff == 'Commonwealth of Australia':
+                    country_from_aff = 'Australia'
+                elif country_from_aff == '117545' or country_from_aff == 'Republic of Singapore':
+                    country_from_aff = 'Singapore'
+                try:
+                    country = Country.create(country = country_from_aff)
+                except IntegrityError:
+                    db.rollback()
+                    country = Country.get(Country.country == country_from_aff)
+
             try:
                 co_author = CorrespondingAuthor.create(
                     corr_author_email = auths['email'][0],
                     tld = auths['email'][0].split('.')[-1],
                     given_name = auths['given_names'],
                     surname = auths['surname'],
-                    group_name = auths['group_name']
+                    group_name = auths['group_name'],
+                    affiliation = aff,
+                    country = country
                     )
-                co_author.save()
+                #co_author.save()
             except IntegrityError:
                 co_author = CorrespondingAuthor.\
                             get(CorrespondingAuthor.corr_author_email == auths['email'][0])
