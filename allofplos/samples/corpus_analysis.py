@@ -16,9 +16,9 @@ import progressbar
 import random
 import requests
 
-from plos_regex import (validate_doi, corpusdir, newarticledir, full_doi_regex_match, validate_url, currents_doi_filter)
-from transformations import (filename_to_doi, doi_to_path, doi_to_url)
-from plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, uncorrected_proofs_text_list,
+from allofplos.plos_regex import (validate_doi, corpusdir, newarticledir, full_doi_regex_match, validate_url, currents_doi_filter)
+from allofplos.transformations import (filename_to_doi, doi_to_path, doi_to_url)
+from allofplos.plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, uncorrected_proofs_text_list,
                          get_related_article_doi, download_updated_xml, get_all_solr_dois, get_article_pubdate,
                          download_check_and_move)
 

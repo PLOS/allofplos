@@ -2,14 +2,14 @@ import datetime
 import os
 import unittest
 
-from article_class import Article
-from plos_corpus import INT_URL_TMP, EXT_URL_TMP
-from transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
+from allofplos.article_class import Article
+from allofplos.plos_corpus import INT_URL_TMP, EXT_URL_TMP
+from allofplos.transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
                              filename_to_url, doi_to_url)
+from allofplos.plos_regex import corpusdir
 
 
 suffix = '.xml'
-corpusdir = 'allofplos_xml/'
 example_url = 'http://journals.plos.org/plosone/article/file?id=10.1371/'\
               'journal.pbio.2001413&type=manuscript'
 example_url_int = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-'\
