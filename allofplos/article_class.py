@@ -5,18 +5,18 @@ import subprocess
 import lxml.etree as et
 import requests
 
-from transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
+from allofplos.transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
                              BASE_URL_ARTICLE_LANDING_PAGE)
-from plos_regex import (validate_doi, corpusdir)
-from article_elements import (parse_article_date, get_contrib_info,
+from allofplos.plos_regex import (validate_doi, corpusdir)
+from allofplos.article_elements import (parse_article_date, get_contrib_info,
                               match_contribs_to_dicts)
 
 
-class Article():
+class Article(object):
     """The primary object of a PLOS article, initialized by a valid PLOS DOI.
 
     """
-    def __init__(self, doi, directory=None, plos_network=False):
+    def __init__(self, doi=None, directory=None, plos_network=False):
         """Creation of an article object.
 
         Usage:
@@ -99,7 +99,7 @@ class Article():
         Using regular expressions, make sure the doi is valid before
         instantiating the article object.
         """
-        if validate_doi(d) is False:
+        if d is not None and validate_doi(d) is False:
             raise Exception("Invalid format for PLOS DOI")
         self.reset_memoized_attrs()
         self._doi = d
