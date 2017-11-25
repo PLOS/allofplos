@@ -6,28 +6,29 @@ Make a SQLite DB out of articles XML files
 """
 
 from bs4 import BeautifulSoup
+import datetime
 import os
 import random
+
+import sqlite3
 import progressbar
+from peewee import Model, CharField, ForeignKeyField, TextField, \
+    DateTimeField, BooleanField, IntegerField, IntegrityError
+from playhouse.sqlite_ext import SqliteExtDatabase
 
 from transformations import filename_to_doi
 from article_class import Article
 
-from peewee import Model, CharField, ForeignKeyField, TextField, \
-    DateTimeField, BooleanField, IntegerField, IntegrityError
-from playhouse.sqlite_ext import SqliteExtDatabase
-import datetime
-
 corpusdir = 'allofplos_xml'
 
 journal_title_dict = {
-    'PLOS ONE':'PLOS ONE',
-    'PLOS GENETICS':' PLOS Genetics',
+    'PLOS ONE': 'PLOS ONE',
+    'PLOS GENETICS': 'PLOS Genetics',
     'PLOS GENET': 'PLOS Genetics',
-    'PLOS NEGLECTED TROPICAL DISEASES':'PLOS Neglected Tropical Diseases',
-    'PLOS NEGL TROP DIS':'PLOS Neglected Tropical Diseases',
-    'PLOS BIOLOGY':'PLOS Biology',
-    'PLOS BIOL':'PLOS Biology',
+    'PLOS NEGLECTED TROPICAL DISEASES': 'PLOS Neglected Tropical Diseases',
+    'PLOS NEGL TROP DIS': 'PLOS Neglected Tropical Diseases',
+    'PLOS BIOLOGY': 'PLOS Biology',
+    'PLOS BIOL': 'PLOS Biology',
     'PLOS CLINICAL TRIALS': 'PLOS Clinical Trials',
     'PLOS MEDICINE':'PLOS Medicine',
     'PLOS MEDICIN': 'PLOS Medicine',
@@ -40,6 +41,9 @@ journal_title_dict = {
 }
 
 # TODO: Put a warning that the DB will be deleted
+corpusdb = 'ploscorpus.db'
+if os.path.isfile(corpusdb):
+    os.remove(corpusdb)
 db = SqliteExtDatabase('ploscorpus.db')
 
 class BaseModel(Model):
@@ -91,13 +95,12 @@ db.create_tables([Journal, PLOSArticle, ArticleType,
 
 allfiles = os.listdir(corpusdir)
 random.seed(1)
-randomfiles = random.sample(allfiles, 500)
+randomfiles = random.sample(allfiles, 1000)
 max_value = len(randomfiles)
 #max_value = len(allfiles)
 bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
 #for i, file_ in enumerate(allfiles):
 for i, file_ in enumerate(randomfiles):
-    #print(file_)
     doi = filename_to_doi(file_)
     article = Article(doi)
     #import pdb; pdb.set_trace()
@@ -133,17 +136,21 @@ for i, file_ in enumerate(randomfiles):
     for auths in article.authors:
         if auths['email']:
             with db.atomic() as atomic:
+                if auths['affiliations']:
+                    author_aff = auths['affiliations'][0]
+                else:
+                    author_aff = 'N/A'
                 try:
-                    aff = Affiliations.create(affiliations = auths['affiliations'][0])
-                except IntegrityError:
+                    aff = Affiliations.create(affiliations = author_aff)
+                except (sqlite3.IntegrityError, IntegrityError):
                     db.rollback()
-                    aff = Affiliations.get(Affiliations.affiliations == auths['affiliations'][0])
-                except IndexError:
-                    db.rollback()
-                    aff = None
+                    aff = Affiliations.get(Affiliations.affiliations == author_aff)
             with db.atomic() as atomic:
-                country_from_aff = auths['affiliations'][0].split(',')[-1].strip()
-                if 'China' in country_from_aff:
+                try:
+                    country_from_aff = auths['affiliations'][0].split(',')[-1].strip()
+                except IndexError:
+                    country_from_aff = 'N/A'
+                if country_from_aff and 'China' in country_from_aff:
                     country_from_aff = 'China'
                 elif country_from_aff == 'United States' or country_from_aff == 'USA':
                     country_from_aff = 'United States of America'
