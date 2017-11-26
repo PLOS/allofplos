@@ -97,10 +97,10 @@ allfiles = os.listdir(corpusdir)
 random.seed(1)
 randomfiles = random.sample(allfiles, 1000)
 max_value = len(randomfiles)
-#max_value = len(allfiles)
+max_value = len(allfiles)
 bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-#for i, file_ in enumerate(allfiles):
-for i, file_ in enumerate(randomfiles):
+for i, file_ in enumerate(allfiles):
+    #for i, file_ in enumerate(randomfiles):
     doi = filename_to_doi(file_)
     article = Article(doi)
     #import pdb; pdb.set_trace()
