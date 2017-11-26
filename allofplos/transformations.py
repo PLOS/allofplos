@@ -198,6 +198,6 @@ def convert_country(country):
         country = 'Australia'
     elif country == '117545' or country == 'Republic of Singapore':
         country = 'Singapore'
-    elif country[0].isdigit() or country[0] == '+':
+    elif country and (country[0].isdigit() or country[0] == '+'):
         country = 'N/A'
     return country
