@@ -16,7 +16,7 @@ from peewee import Model, CharField, ForeignKeyField, TextField, \
     DateTimeField, BooleanField, IntegerField, IntegrityError
 from playhouse.sqlite_ext import SqliteExtDatabase
 
-from transformations import filename_to_doi
+from transformations import filename_to_doi, convert_country
 from article_class import Article
 
 corpusdir = 'allofplos_xml'
@@ -133,7 +133,11 @@ for i, file_ in enumerate(randomfiles):
         word_count=article.word_count,
         JATS_type = j_type)
     ##p_art.save()
-    for auths in article.authors:
+    if article.authors:
+        iterable_authors = article.authors
+    else:
+        iterable_authors = []
+    for auths in iterable_authors:
         if auths['email']:
             with db.atomic() as atomic:
                 if auths['affiliations']:
@@ -150,33 +154,7 @@ for i, file_ in enumerate(randomfiles):
                     country_from_aff = auths['affiliations'][0].split(',')[-1].strip()
                 except IndexError:
                     country_from_aff = 'N/A'
-                if country_from_aff and 'China' in country_from_aff:
-                    country_from_aff = 'China'
-                elif country_from_aff == 'United States' or country_from_aff \
-                        == 'USA' or 'Florida' in country_from_aff:
-                    country_from_aff = 'United States of America'
-                elif 'Canada' in country_from_aff:
-                    country_from_aff = 'Canada'
-                elif 'Germany' in country_from_aff:
-                    country_from_aff = 'Germany'
-                elif 'France' in country_from_aff:
-                    country_from_aff = 'France'
-                elif country_from_aff == 'ROC':
-                    country_from_aff = 'Taiwan'
-                elif country_from_aff == 'Brasil':
-                    country_from_aff = 'Brazil'
-                elif country_from_aff == 'México':
-                    country_from_aff = 'Mexico'
-                elif country_from_aff == 'Korea':
-                    country_from_aff = 'South Korea'
-                elif country_from_aff == 'United Kindgom':
-                    country_from_aff = 'United Kingdom'
-                elif country_from_aff == 'the Netherlands':
-                    country_from_aff = 'The Netherlands'
-                elif country_from_aff == 'Commonwealth of Australia':
-                    country_from_aff = 'Australia'
-                elif country_from_aff == '117545' or country_from_aff == 'Republic of Singapore':
-                    country_from_aff = 'Singapore'
+                country_from_aff = convert_country(country_from_aff)
                 try:
                     country = Country.create(country = country_from_aff)
                 except IntegrityError:

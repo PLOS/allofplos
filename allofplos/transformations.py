@@ -138,3 +138,66 @@ def doi_to_path(doi, directory):
     elif validate_filename(doi):
         article_file = doi
     return article_file
+
+def convert_country(country):
+    """
+    For a given country, transform it using one of these rules
+    :param country: string with the country name
+    :return: string with the normalized country name
+    """
+    if (country and 'China' in country) or \
+            country == 'Chin' or country == 'CHINA':
+        country = 'China'
+    elif country and 'Brazil' in country:
+        country = 'Brazil'
+    elif country and 'Argentina' in country:
+        country = 'Argentina'
+    elif country == 'The Norwegian Radium Hospital':
+        country = 'Norway'
+    elif country and 'United Kingdom' in country:
+        country = 'United Kingdom'
+    elif country and 'Hong Kong' in country:
+        country = 'Hong Kong'
+    elif (country and 'Chile' in country) or country == 'CHILE':
+        country = 'Chile'
+    elif (country and 'United States of America' in \
+            country) or country == 'United States' or country \
+            == 'USA' or 'Florida' in country or \
+            country == 'United State of America' or country == 'Virginia':
+        country = 'United States of America'
+    elif 'Canada' in country:
+        country = 'Canada'
+    elif 'Colombia' in country:
+        country = 'Colombia'
+    elif 'Spain' in country:
+        country = 'Spain'
+    elif 'Iran' in country:
+        country = 'Iran'
+    elif 'Japan' in country:
+        country = 'Japan'
+    elif 'Germany' in country:
+        country = 'Germany'
+    elif 'Luxembourg' in country:
+        country = 'Luxembourg'
+    elif ('France' in country) or country == 'Marseille':
+        country = 'France'
+    elif country == 'ROC' or country == 'R. O. C':
+        country = 'Taiwan'
+    elif country == 'Brasil':
+        country = 'Brazil'
+    elif country == 'México' or 'Mexico' in country:
+        country = 'Mexico'
+    elif country == 'Korea' or country == \
+            'Republic of Korea':
+        country = 'South Korea'
+    elif country == 'United Kindgom':
+        country = 'United Kingdom'
+    elif country and 'Netherlands' in country:
+        country = 'Netherlands'
+    elif country == 'Commonwealth of Australia':
+        country = 'Australia'
+    elif country == '117545' or country == 'Republic of Singapore':
+        country = 'Singapore'
+    elif country[0].isdigit() or country[0] == '+':
+        country = 'N/A'
+    return country
