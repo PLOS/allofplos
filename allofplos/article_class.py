@@ -104,18 +104,25 @@ class Article():
         self.reset_memoized_attrs()
         self._doi = d
 
-    def __str__(self, pretty_print=True):
+    def __str__(self, exclude_refs=True):
         """Output when you print an article object on the command line.
 
         For parsing and viewing the XML of a local article. Should not be used for hashing
-        :param pretty_print: Includes indenting/whitespace, defaults to True
+        Excludes <back> element (including references list) for easier viewing
+        :param exclude_refs: remove references from the article tree (eases print viewing)
         :type pretty_print: bool, optional
         """
-        local_xml = et.tostring(self.tree,
+        parser = et.XMLParser(remove_blank_text=True)
+        tree = et.parse(self.filename, parser)
+        if exclude_refs:
+            root = tree.getroot()
+            back = tree.xpath('./back')
+            root.remove(back[0])
+        local_xml = et.tostring(tree,
                                 method='xml',
                                 encoding='unicode',
-                                pretty_print=pretty_print)
-        print(local_xml)
+                                pretty_print=True)
+        return local_xml
 
     def __repr__(self):
         """Value of an article object when you call it directly on the command line.
