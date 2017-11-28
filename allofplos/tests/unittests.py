@@ -1,15 +1,26 @@
+import argparse
 import datetime
 import os
 import unittest
+
+import pureyaml
 
 from article_class import Article
 from plos_corpus import INT_URL_TMP, EXT_URL_TMP
 from transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
                              filename_to_url, doi_to_url)
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--configfile', action='store',
+                    dest='configfile',
+                    help='Where to download plos articles')
+args_ = parser.parse_args()
+config_file = args_.configfile if args_.configfile else 'config.yaml'
+config = pureyaml.load(open(config_file).read())
 
 suffix = '.xml'
-corpusdir = 'allofplos_xml/'
+
+corpusdir = config['corpusdir']
 example_url = 'http://journals.plos.org/plosone/article/file?id=10.1371/'\
               'journal.pbio.2001413&type=manuscript'
 example_url_int = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-'\
@@ -32,7 +43,7 @@ class TestDOIMethods(unittest.TestCase):
         """
         TODO: What this tests are about!
         """
-        self.assertEqual(os.path.join(corpusdir, example_file), doi_to_path(example_doi), "{0} does not transform to {1}".format(example_doi, example_file))
+        self.assertEqual(os.path.join(corpusdir, example_file), doi_to_path(example_doi, corpusdir), "{0} does not transform to {1}".format(example_doi, example_file))
         self.assertEqual(example_file2, doi_to_path(example_doi2, ''), "{0} does not transform to {1}".format(example_doi2, example_file2))
         self.assertEqual(example_url2, doi_to_url(example_doi2), "{0} does not transform to {1}".format(example_doi2, example_url2))
         self.assertEqual(example_url, doi_to_url(example_doi), "In doi_to_url, {0} does not transform to {1}".format(example_doi, example_url))

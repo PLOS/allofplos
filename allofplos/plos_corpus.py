@@ -408,7 +408,7 @@ def download_updated_xml(article_file,
     try:
         articletree_local = et.parse(os.path.join(corpusdir, os.path.basename(article_file)))
     except OSError:
-        article_file_alt = os.path.join(tempdir, os.path.basename(doi_to_path(article_file)))
+        article_file_alt = os.path.join(tempdir, os.path.basename(doi_to_path(article_file, tempdir)))
         articletree_local = et.parse(article_file_alt)
     articleXML_local = et.tostring(articletree_local, method='xml', encoding='unicode')
 
@@ -455,10 +455,12 @@ def check_for_corrected_articles(tempdir, corpusdir, article_list=None):
         article_list = listdir_nohidden(tempdir)
     for article_file in article_list:
         try:
-            article_type = check_article_type(article_file, corpusdir)
+            ##print(article_file)
+            ##import pdb; pdb.set_trace()
+            article_type = check_article_type(article_file)
             if article_type == 'correction':
-                article_full_path = os.path.join(tempdir, article_file)
-                corrected_article = get_related_article_doi(article_full_path)[0]
+                #article_full_path = os.path.join(tempdir, article_file)
+                corrected_article = get_related_article_doi(article_file)[0]
                 corrected_doi_list.append(corrected_article)
         except OSError:
             logging.info("File not found in check_for_corrected_articles: {0}"
@@ -529,10 +531,7 @@ def get_uncorrected_proofs_list(corpusdir):
         bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
         for i, article_file in enumerate(article_files):
             bar.update(i+1)
-            print('*')
-            print(article_file)
-            print(corpusdir)
-            if check_if_uncorrected_proof(article_file, corpusdir):
+            if check_if_uncorrected_proof(os.path.join(corpusdir,article_file)):
                 uncorrected_proofs_list.append(filename_to_doi(article_file))
         bar.finish()
         print("Saving uncorrected proofs.")
@@ -564,7 +563,7 @@ def check_for_uncorrected_proofs(tempdir, corpusdir, text_list=uncorrected_proof
     new_proofs = 0
     for article_file in articles:
         try:
-            if check_if_uncorrected_proof(article_file, corpusdir):
+            if check_if_uncorrected_proof(article_file):
                 uncorrected_proofs_list.append(filename_to_doi(article_file))
                 new_proofs += 1
         except OSError:
