@@ -455,8 +455,6 @@ def check_for_corrected_articles(tempdir, corpusdir, article_list=None):
         article_list = listdir_nohidden(tempdir)
     for article_file in article_list:
         try:
-            ##print(article_file)
-            ##import pdb; pdb.set_trace()
             article_type = check_article_type(article_file)
             if article_type == 'correction':
                 #article_full_path = os.path.join(tempdir, article_file)
@@ -530,8 +528,10 @@ def get_uncorrected_proofs_list(corpusdir):
         max_value = len(article_files)
         bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
         for i, article_file in enumerate(article_files):
+            print(article_file)
+            ##import pdb; pdb.set_trace()
             bar.update(i+1)
-            if check_if_uncorrected_proof(os.path.join(corpusdir,article_file)):
+            if check_if_uncorrected_proof(os.path.join(article_file)):
                 uncorrected_proofs_list.append(filename_to_doi(article_file))
         bar.finish()
         print("Saving uncorrected proofs.")
