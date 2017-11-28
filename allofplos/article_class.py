@@ -923,8 +923,8 @@ class Article():
     @property
     def emails(self):
         """List of emails of corresponding author(s).
-        Unlike get_corr_author_emails(), it does not differentiate by author.
-        Joins multiple emails into a single string, separated by semi-colons.
+        Unlike get_corr_author_emails() dict, it does not differentiate by author.
+        Joins multiple emails into a single list.
         Used for exporting to .csv
         :return: list of corresponding author email addresses
         """
