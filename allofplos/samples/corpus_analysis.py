@@ -862,8 +862,8 @@ def update_corpus_metadata_csv(csv_file='allofplos_metadata.csv', comparison_doi
                                 destination=corpusdir)
 
     # Step 4: append new data to existing list
-    new_corpus_metadata = get_corpus_metadata(article_list=dois_needed_list)
+    new_corpus_metadata, wrong_dates = get_corpus_metadata(article_list=dois_needed_list)
     corpus_metadata.extend(new_corpus_metadata)
     # Step 5: write new dataset to .csv
-    corpus_metadata_to_csv(corpus_metadata=corpus_metadata, csv_file=csv_file)
+    corpus_metadata_to_csv(corpus_metadata=corpus_metadata, csv_file='allofplos_metadata_updated.csv')
     return corpus_metadata
