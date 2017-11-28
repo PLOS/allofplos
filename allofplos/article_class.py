@@ -921,6 +921,28 @@ class Article():
         return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'editor']
 
     @property
+    def emails(self):
+        """List of emails of corresponding author(s).
+        Unlike get_corr_author_emails(), it does not differentiate by author.
+        Joins multiple emails into a single string, separated by semi-colons.
+        Used for exporting to .csv
+        :return: list of corresponding author email addresses
+        """
+        email_dict = self.get_corr_author_emails()
+        email_list = []
+        for k, v in email_dict.items():
+            email_list.extend(v)
+        return email_list
+
+    def emails_to_string(self):
+        """Produces string of emails of corresponding author(s).
+        Joins multiple emails into a single string, separated by semi-colons.
+        Used for exporting to .csv
+        :return: string of corresponding author email addresses
+        """
+        return '; '.join(self.emails)
+
+    @property
     def type_(self):
         """For an article file, get its JATS article type.
 
