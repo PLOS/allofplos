@@ -700,7 +700,7 @@ class Article():
                 related_article = related_article_element['{http://www.w3.org/1999/xlink}href']
                 related_article = related_article.lstrip('info:doi/')
             except IndexError:
-                return None
+                return ''
         return related_article
 
     def check_if_link_works(self):
