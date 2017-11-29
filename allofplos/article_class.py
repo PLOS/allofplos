@@ -757,7 +757,7 @@ class Article():
         See http://lxml.de/api/lxml.etree._ElementTree-class.html
         After accessing tree for the first time, it stores as an attribute
         :returns: article's element tree
-        :rtype: {lxml.etree._ElementTree-class}
+        :rtype: {lxml.etree._ElementTree-class} or None
         """
         if self._tree is None:
             if self.local:
