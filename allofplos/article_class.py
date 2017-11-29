@@ -2,8 +2,11 @@ import os
 import re
 import subprocess
 
+from io import BytesIO
+
 import lxml.etree as et
 import requests
+
 
 from allofplos.transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
                                        BASE_URL_ARTICLE_LANDING_PAGE)
@@ -1097,3 +1100,27 @@ class Article():
         """Initiate an article object using a local XML file.
         """
         return cls(filename_to_doi(filename))
+        
+    @classmethod
+    def from_bytes(cls, resp, directory=corpusdir, write=False, overwrite=True):
+        tree = et.parse(BytesIO(resp)) 
+        root = tree.getroot()
+        tag_path = ["/",
+                    "article",
+                    "front",
+                    "article-meta",
+                    "article-id"]
+        tag_location = '/'.join(tag_path)
+        article_ids = root.xpath(tag_location)
+        for art_id in article_ids:
+            if art_id.get('pub-id-type')=='doi':
+                temp = cls(art_id.text, directory=directory)
+                temp._tree = tree
+                if write and (not os.path.isfile(temp.filename) or overwrite):
+                    with open(temp.filename, 'w') as file:
+                        file.write(et.tostring(tree, method='xml', encoding='unicode'))
+                break
+        return temp
+            
+                
+ 
