@@ -462,7 +462,7 @@ class Article():
         try:
             author_notes_element = self.get_element_xpath(tag_path_elements=tag_path)[0]
         except IndexError:
-            return None
+            return {}
         author_contributions = {}
         contrib_dict = {}
         initials_list = []
@@ -488,7 +488,7 @@ class Article():
                     contributions = note[0].text
                     if contributions is None:
                         print('Error parsing contributions for {}: {}'.format(self.doi, et.tostring(con_element, encoding='unicode', method='xml')))
-                        return None
+                        return {}
                     contribution_list = re.split(': |\. ', contributions)
                     contribb_dict = dict(list(zip(contribution_list[::2], contribution_list[1::2])))
                     for k, v in contribb_dict.items():
