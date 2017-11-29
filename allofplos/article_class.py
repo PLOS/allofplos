@@ -16,7 +16,7 @@ class Article():
     """The primary object of a PLOS article, initialized by a valid PLOS DOI.
 
     """
-    def __init__(self, doi, directory=None, plos_network=False):
+    def __init__(self, doi, directory=corpusdir, plos_network=False):
         """Creation of an article object.
 
         Usage:
@@ -36,10 +36,7 @@ class Article():
         :type plos_network: bool, optional
         """
         self.doi = doi
-        if directory is None:
-            self.directory = corpusdir
-        else:
-            self.directory = directory
+        self.directory = directory
         self.reset_memoized_attrs()
         self.plos_network = plos_network
         self._editor = None
@@ -375,7 +372,7 @@ class Article():
             author_notes_element = self.get_element_xpath(tag_path_elements=tag_path)[0]
         except IndexError:
             # no emails found
-            return None
+            return {}
         corr_emails = {}
         email_list = []
         for note in author_notes_element:
@@ -472,7 +469,7 @@ class Article():
         try:
             author_notes_element = self.get_element_xpath(tag_path_elements=tag_path)[0]
         except IndexError:
-            return None
+            return {}
         author_contributions = {}
         contrib_dict = {}
         initials_list = []
@@ -498,7 +495,7 @@ class Article():
                     contributions = note[0].text
                     if contributions is None:
                         print('Error parsing contributions for {}: {}'.format(self.doi, et.tostring(con_element, encoding='unicode', method='xml')))
-                        return None
+                        return {}
                     contribution_list = re.split(': |\. ', contributions)
                     contribb_dict = dict(list(zip(contribution_list[::2], contribution_list[1::2])))
                     for k, v in contribb_dict.items():
@@ -710,7 +707,7 @@ class Article():
                 related_article = related_article_element['{http://www.w3.org/1999/xlink}href']
                 related_article = related_article.lstrip('info:doi/')
             except IndexError:
-                return None
+                return ''
         return related_article
 
     def check_if_link_works(self):
@@ -767,7 +764,7 @@ class Article():
         See http://lxml.de/api/lxml.etree._ElementTree-class.html
         After accessing tree for the first time, it stores as an attribute
         :returns: article's element tree
-        :rtype: {lxml.etree._ElementTree-class}
+        :rtype: {lxml.etree._ElementTree-class} or None
         """
         if self._tree is None:
             if self.local:
@@ -828,14 +825,13 @@ class Article():
         :return: proof status if it exists; otherwise, None
         """
         xpath_results = self.get_element_xpath()
+        proof = ''
         for result in xpath_results:
             if result.text == 'uncorrected-proof':
-                return 'uncorrected_proof'
+                proof = 'uncorrected_proof'
             elif result.text == 'vor-update-to-uncorrected-proof':
-                return 'vor_update'
-            else:
-                pass
-        return None
+                proof = 'vor_update'
+        return proof
 
     @property
     def remote_element_tree(self):
@@ -1043,7 +1039,7 @@ class Article():
         if self.correct_or_retract is True:
             return self.get_related_doi()
         else:
-            return None
+            return ''
 
     @property
     def counts(self):
