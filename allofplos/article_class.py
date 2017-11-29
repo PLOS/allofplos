@@ -365,7 +365,7 @@ class Article():
             author_notes_element = self.get_element_xpath(tag_path_elements=tag_path)[0]
         except IndexError:
             # no emails found
-            return None
+            return {}
         corr_emails = {}
         email_list = []
         for note in author_notes_element:
