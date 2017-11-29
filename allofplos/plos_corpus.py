@@ -64,6 +64,8 @@ local_zip = 'allofplos_xml.zip'
 zip_metadata = 'zip_info.txt'
 time_formatting = "%Y_%b_%d_%Hh%Mm%Ss"
 min_files_for_valid_corpus = 200000
+test_zip_id = '12VomS72LdTI3aYn4cphYAShv13turbX3'
+local_test_zip = 'sample_corpus.zip'
 
 
 def listdir_nohidden(path, extension='.xml', include_dir=True):
@@ -871,6 +873,22 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
     unzip_articles(file_path=zip_path)
     if rm_metadata:
         os.remove(metadata_path)
+
+
+def create_test_plos_corpus(corpusdir=corpusdir):
+    """
+    Downloads a copy of 10,000 randomly selected PLOS articles by:
+    1) creating corpusdir if it doesn't exist
+    2) downloading the zip file (defaults to corpus directory)
+    3) extracting the individual XML files into the corpus directory
+    :param corpusdir: directory where the corpus is to be downloaded and extracted
+    :return: None
+    """
+    if os.path.isdir(corpusdir) is False:
+        os.mkdir(corpusdir)
+        print('Creating folder for article xml')
+    zip_path = download_file_from_google_drive(test_zip_id, local_test_zip)
+    unzip_articles(file_path=zip_path, extract_directory=corpusdir)
 
 
 def main():
