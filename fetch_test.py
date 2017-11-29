@@ -17,9 +17,10 @@ from allofplos import Article
 
 begin_time = default_timer()
 
+MIN_DELAY = 1.0
 ASYNC_DIRECTORY = os.path.join(ALLOFPLOS_DIR_PATH, "async_test")
 MIN_FILES = 9990
-NUM_FILES = 10
+NUM_FILES = 10 
 
 async def fetch(url, session):
     """Fetch a url, using specified ClientSession."""
@@ -35,7 +36,7 @@ async def fetch(url, session):
         # print('{0:5.2f} {1:30}{2:5.2} '.format(now, url, elapsed))
         return article
         
-async def fetch_all(dois, max_rate=1.0, limit_per_host=3.0):
+async def fetch_all(dois, max_rate=MIN_DELAY, limit_per_host=3.0):
     """Launch requests for all web pages."""
     tasks = []
     fetch.start_time = dict() # dictionary of start times for each url
@@ -66,7 +67,7 @@ def sequential_fetch(doi):
     "Fetch individual web pages as part of a sequence"
     url = URL_TMP.format(doi)
     response = requests.get(url)
-    time.sleep(1)
+    time.sleep(MIN_DELAY)
     article = Article.from_bytes(response.text.encode('utf-8'), 
                                  directory=ASYNC_DIRECTORY,
                                  write=True)
