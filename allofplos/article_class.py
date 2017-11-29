@@ -818,14 +818,13 @@ class Article():
         :return: proof status if it exists; otherwise, None
         """
         xpath_results = self.get_element_xpath()
+        proof = ''
         for result in xpath_results:
             if result.text == 'uncorrected-proof':
-                return 'uncorrected_proof'
+                proof = 'uncorrected_proof'
             elif result.text == 'vor-update-to-uncorrected-proof':
-                return 'vor_update'
-            else:
-                pass
-        return None
+                proof = 'vor_update'
+        return proof
 
     @property
     def remote_element_tree(self):
