@@ -857,9 +857,7 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
     :param rm_metadata: COMPLETE HERE
     :return: None
     """
-    if os.path.isdir(corpusdir) is False:
-        os.mkdir(corpusdir)
-        print('Creating folder for article xml')
+    os.makedirs(tempdir, exist_ok=True)
     zip_date, zip_size, metadata_path = get_zip_metadata()
     zip_path = download_file_from_google_drive(zip_id, local_zip, file_size=zip_size)
     unzip_articles(file_path=zip_path)
@@ -876,9 +874,7 @@ def create_test_plos_corpus(corpusdir=corpusdir):
     :param corpusdir: directory where the corpus is to be downloaded and extracted
     :return: None
     """
-    if os.path.isdir(corpusdir) is False:
-        os.mkdir(corpusdir)
-        print('Creating folder for article xml')
+    os.makedirs(tempdir, exist_ok=True)
     zip_path = download_file_from_google_drive(test_zip_id, local_test_zip)
     unzip_articles(file_path=zip_path, extract_directory=corpusdir)
 
