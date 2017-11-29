@@ -6,10 +6,10 @@ import lxml.etree as et
 import requests
 
 from allofplos.transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
-                             BASE_URL_ARTICLE_LANDING_PAGE)
+                                       BASE_URL_ARTICLE_LANDING_PAGE)
 from allofplos.plos_regex import (validate_doi, corpusdir)
 from allofplos.article_elements import (parse_article_date, get_contrib_info,
-                              match_contribs_to_dicts)
+                                        match_contribs_to_dicts)
 
 
 class Article():
@@ -642,12 +642,12 @@ class Article():
                 else:
                     print('one_corr_author error finding email for {} in {}'.format(corr_author, email_dict))
                     matching_error = True
-        elif len(corr_author_list) > 1 and len(set([tuple(x) for x in email_dict.values()])) > 1:
+        elif email_dict and len(corr_author_list) > 1 and len(set([tuple(x) for x in email_dict.values()])) > 1:
             corr_author_list, matching_error = match_contribs_to_dicts(corr_author_list,
                                                                        email_dict,
                                                                        contrib_key='email')
         elif len(corr_author_list) > 1:
-            if len(email_dict) == 1 or len(set([tuple(x) for x in email_dict.values()])) == 1:
+            if email_dict and (len(email_dict) == 1 or len(set([tuple(x) for x in email_dict.values()])) == 1):
                 # if there's only one email address, use it for all corr authors
                 for corr_author in corr_author_list:
                     corr_author['email'] = list(email_dict.values())[0]
@@ -1021,7 +1021,7 @@ class Article():
 
     @property
     def correct_or_retract(self):
-        """Boolean for whether the JATS article type is a correction or retraction. 
+        """Boolean for whether the JATS article type is a correction or retraction.
 
         :returns: Whether the article is a correction or retraction
         :rtype: {bool}
@@ -1034,7 +1034,7 @@ class Article():
     @property
     def related_doi(self):
         """DOI related to current article
-        
+
         Only works for corrections and retractions, the two JATS article types that point
         at other articles.
         :returns: First related DOI
