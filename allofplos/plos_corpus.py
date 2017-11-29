@@ -218,10 +218,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
     :param ignore_existing: Don't re-download to tempdir if already downloaded
     """
     # make temporary directory, if needed
-    try:
-        os.mkdir(tempdir)
-    except FileExistsError:
-        pass
+    os.makedirs(tempdir, exist_ok=True)
 
     if ignore_existing:
         existing_articles = [filename_to_doi(file) for file in listdir_nohidden(tempdir)]
@@ -423,10 +420,7 @@ def download_updated_xml(article_file,
     :return: boolean for whether update was available & downloaded
     """
     doi = filename_to_doi(article_file)
-    try:
-        os.mkdir(tempdir)
-    except FileExistsError:
-        pass
+    os.makedirs(tempdir, exist_ok=True)
     url = URL_TMP.format(doi)
     articletree_remote = et.parse(url)
     articleXML_remote = et.tostring(articletree_remote, method='xml', encoding='unicode')
@@ -693,10 +687,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     :param article-list: list of uncorrected proofs to check for updates.
     :return: list of all articles with updated vor
     """
-    try:
-        os.mkdir(tempdir)
-    except FileExistsError:
-        pass
+    os.makedirs(tempdir, exist_ok=True)
     proofs_download_list = []
     if article_list is None:
         article_list = get_uncorrected_proofs_list()

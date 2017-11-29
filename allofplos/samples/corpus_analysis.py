@@ -290,10 +290,7 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
         article_list = sorted(pubdates, key=pubdates.__getitem__, reverse=True)
         article_list = article_list[:30000]
 
-    try:
-        os.mkdir(tempdir)
-    except FileExistsError:
-        pass
+    os.makedirs(tempdir, exist_ok=True)
     articles_different_list = []
     max_value = len(article_list)
     bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
