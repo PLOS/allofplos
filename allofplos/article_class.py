@@ -1011,7 +1011,7 @@ class Article():
         if self.correct_or_retract is True:
             return self.get_related_doi()
         else:
-            return None
+            return ''
 
     @property
     def counts(self):
