@@ -3,7 +3,9 @@
 
 import os
 
-from .plos_regex import validate_filename, validate_doi, corpusdir
+from . import corpusdir
+
+from .plos_regex import validate_filename, validate_doi
 
 # URL bases for PLOS's Solr instances, that index PLOS articles
 BASE_URL_API = 'http://api.plos.org/search'
