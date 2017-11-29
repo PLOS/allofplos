@@ -6,10 +6,10 @@ import lxml.etree as et
 import requests
 
 from allofplos.transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
-                             BASE_URL_ARTICLE_LANDING_PAGE)
+                                       BASE_URL_ARTICLE_LANDING_PAGE)
 from allofplos.plos_regex import (validate_doi, corpusdir)
 from allofplos.article_elements import (parse_article_date, get_contrib_info,
-                              match_contribs_to_dicts)
+                                        match_contribs_to_dicts)
 
 
 class Article():
@@ -104,18 +104,25 @@ class Article():
         self.reset_memoized_attrs()
         self._doi = d
 
-    def __str__(self, pretty_print=True):
+    def __str__(self, exclude_refs=True):
         """Output when you print an article object on the command line.
 
         For parsing and viewing the XML of a local article. Should not be used for hashing
-        :param pretty_print: Includes indenting/whitespace, defaults to True
+        Excludes <back> element (including references list) for easier viewing
+        :param exclude_refs: remove references from the article tree (eases print viewing)
         :type pretty_print: bool, optional
         """
-        local_xml = et.tostring(self.tree,
+        parser = et.XMLParser(remove_blank_text=True)
+        tree = et.parse(self.filename, parser)
+        if exclude_refs:
+            root = tree.getroot()
+            back = tree.xpath('./back')
+            root.remove(back[0])
+        local_xml = et.tostring(tree,
                                 method='xml',
                                 encoding='unicode',
-                                pretty_print=pretty_print)
-        print(local_xml)
+                                pretty_print=True)
+        return local_xml
 
     def __repr__(self):
         """Value of an article object when you call it directly on the command line.
@@ -635,12 +642,12 @@ class Article():
                 else:
                     print('one_corr_author error finding email for {} in {}'.format(corr_author, email_dict))
                     matching_error = True
-        elif len(corr_author_list) > 1 and len(set([tuple(x) for x in email_dict.values()])) > 1:
+        elif email_dict and len(corr_author_list) > 1 and len(set([tuple(x) for x in email_dict.values()])) > 1:
             corr_author_list, matching_error = match_contribs_to_dicts(corr_author_list,
                                                                        email_dict,
                                                                        contrib_key='email')
         elif len(corr_author_list) > 1:
-            if len(email_dict) == 1 or len(set([tuple(x) for x in email_dict.values()])) == 1:
+            if email_dict and (len(email_dict) == 1 or len(set([tuple(x) for x in email_dict.values()])) == 1):
                 # if there's only one email address, use it for all corr authors
                 for corr_author in corr_author_list:
                     corr_author['email'] = list(email_dict.values())[0]
@@ -914,6 +921,27 @@ class Article():
         return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'editor']
 
     @property
+    def emails(self):
+        """List of emails of corresponding author(s).
+        Unlike get_corr_author_emails() dict, it does not differentiate by author.
+        Joins multiple emails into a single list.
+        :return: list of corresponding author email addresses
+        """
+        email_dict = self.get_corr_author_emails()
+        email_list = []
+        for k, v in email_dict.items():
+            email_list.extend(v)
+        return email_list
+
+    def emails_to_string(self):
+        """Produces string of emails of corresponding author(s).
+        Joins multiple emails into a single string, separated by semi-colons.
+        Used for exporting to .csv
+        :return: string of corresponding author email addresses
+        """
+        return '; '.join(self.emails)
+
+    @property
     def type_(self):
         """For an article file, get its JATS article type.
 
@@ -993,7 +1021,7 @@ class Article():
 
     @property
     def correct_or_retract(self):
-        """Boolean for whether the JATS article type is a correction or retraction. 
+        """Boolean for whether the JATS article type is a correction or retraction.
 
         :returns: Whether the article is a correction or retraction
         :rtype: {bool}
@@ -1006,7 +1034,7 @@ class Article():
     @property
     def related_doi(self):
         """DOI related to current article
-        
+
         Only works for corrections and retractions, the two JATS article types that point
         at other articles.
         :returns: First related DOI

@@ -21,6 +21,7 @@ TODO: add start date for beginning of time for article pubdates (2003-08-11), ca
 import argparse
 import datetime
 import errno
+import gzip
 import logging
 import os
 import shutil
@@ -35,7 +36,7 @@ from tqdm import tqdm
 
 from allofplos.plos_regex import (validate_doi, corpusdir, newarticledir)
 from allofplos.transformations import (BASE_URL_API, EXT_URL_TMP, INT_URL_TMP, URL_TMP, filename_to_doi,
-                             doi_to_path)
+                                       doi_to_path)
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -64,6 +65,8 @@ local_zip = 'allofplos_xml.zip'
 zip_metadata = 'zip_info.txt'
 time_formatting = "%Y_%b_%d_%Hh%Mm%Ss"
 min_files_for_valid_corpus = 200000
+test_zip_id = '12VomS72LdTI3aYn4cphYAShv13turbX3'
+local_test_zip = 'sample_corpus.zip'
 
 
 def listdir_nohidden(path, extension='.xml', include_dir=True):
@@ -871,6 +874,55 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
     unzip_articles(file_path=zip_path)
     if rm_metadata:
         os.remove(metadata_path)
+
+
+def create_test_plos_corpus(corpusdir=corpusdir):
+    """
+    Downloads a copy of 10,000 randomly selected PLOS articles by:
+    1) creating corpusdir if it doesn't exist
+    2) downloading the zip file (defaults to corpus directory)
+    3) extracting the individual XML files into the corpus directory
+    :param corpusdir: directory where the corpus is to be downloaded and extracted
+    :return: None
+    """
+    if os.path.isdir(corpusdir) is False:
+        os.mkdir(corpusdir)
+        print('Creating folder for article xml')
+    zip_path = download_file_from_google_drive(test_zip_id, local_test_zip)
+    unzip_articles(file_path=zip_path, extract_directory=corpusdir)
+
+
+def download_corpus_metadata_files(csv_abstracts=True, csv_no_abstracts=True, sqlitedb=True, destination=None):
+    """Downloads up to three files of metadata generated from the PLOS Corpus XML.
+    Includes two csvs and a sqlite database.
+    """
+    if destination is None:
+        destination = os.getcwd()
+    if csv_abstracts:
+        csv_abstracts_id = '0B_JDnoghFeEKQWlNUUJtY1pIY3c'
+        csv_abstracts_file = download_file_from_google_drive(csv_abstracts_id,
+                                                             'allofplos_metadata_test.csv',
+                                                             destination=destination)
+    if csv_no_abstracts:
+        csv_no_abstracts_id = '0B_JDnoghFeEKeEp6S0R2Sm1YcEk'
+        csv_no_abstracts_file = download_file_from_google_drive(csv_no_abstracts_id,
+                                                                'allofplos_metadata_no_abstracts_test.csv',
+                                                                destination=destination)
+    if sqlitedb:
+        sqlitedb_id = '1gcQW7cc6Z9gDBu_vHxghNwQaMkyvVuMC'
+        sqlitedb_file = download_file_from_google_drive(sqlitedb_id,
+                                                        'ploscorpus_test.db.gz',
+                                                        destination=destination)
+        print("Extracting sqlite db...")
+        inF = gzip.open(sqlitedb_file, 'rb')
+        outF = open('ploscorpus_test.db', 'wb')
+        outF.write(inF.read())
+        inF.close()
+        outF.close()
+        print("Extraction complete.")
+
+
+
 
 
 def main():
