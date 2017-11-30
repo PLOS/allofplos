@@ -152,27 +152,38 @@ def convert_country(country):
         country = 'Brazil'
     elif country and 'Argentina' in country:
         country = 'Argentina'
-    elif country == 'The Norwegian Radium Hospital':
+    elif country == 'Czechia':
+        country = 'Czech Republic'
+    elif 'Norwegian' in country:
         country = 'Norway'
     elif country and 'United Kingdom' in country:
         country = 'United Kingdom'
     elif country and 'Hong Kong' in country:
         country = 'Hong Kong'
+    elif country == 'Cameroun':
+        country = 'Cameroon'
     elif (country and 'Chile' in country) or country == 'CHILE':
         country = 'Chile'
     elif (country and 'United States of America' in \
             country) or country == 'United States' or country \
             == 'USA' or 'Florida' in country or \
+            'California' in country or\
             country == 'United State of America' or country == 'Virginia':
         country = 'United States of America'
+    elif country=='Republic of Panamá' or country=='Panamá' or 'Panama' in country:
+        country = 'Panama'
     elif 'Canada' in country:
         country = 'Canada'
     elif 'Colombia' in country:
         country = 'Colombia'
-    elif 'Spain' in country:
+    elif 'Spain' in country or country=='España':
         country = 'Spain'
     elif 'Iran' in country:
         country = 'Iran'
+    elif 'Saudi Arabia' in country:
+        country = 'Saudi Arabia'
+    elif 'Italy' in country:
+        country = 'Italy'
     elif 'Japan' in country:
         country = 'Japan'
     elif 'Germany' in country:
@@ -187,16 +198,16 @@ def convert_country(country):
         country = 'Brazil'
     elif country == 'México' or 'Mexico' in country:
         country = 'Mexico'
-    elif country == 'Korea' or country == \
-            'Republic of Korea':
+        Slowakia
+    elif country == 'Korea' or 'Republic of Korea' in country:
         country = 'South Korea'
     elif country == 'United Kindgom':
         country = 'United Kingdom'
     elif country and 'Netherlands' in country:
         country = 'Netherlands'
-    elif country == 'Commonwealth of Australia':
+    elif country == 'Commonwealth of Australia' or 'Australian' in country:
         country = 'Australia'
-    elif country == '117545' or country == 'Republic of Singapore':
+    elif 'Singapore' in country:
         country = 'Singapore'
     elif country and (country[0].isdigit() or country[0] == '+'):
         country = 'N/A'
