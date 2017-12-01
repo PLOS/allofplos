@@ -82,7 +82,7 @@ class Article():
                    "command to self.text_editor").format(e))
 
     @text_editor.setter
-    def text_editor(self, value):
+    def text_editor(self, value = "open"):
         """Sets the text editor for all article objects.
 
         :param value: from self.text_editor
