@@ -18,7 +18,8 @@ from allofplos import Article
 begin_time = default_timer()
 
 MIN_DELAY = 1.0
-ASYNC_DIRECTORY = os.path.join(ALLOFPLOS_DIR_PATH, "async_test")
+ASYNC_DIRECTORY = os.path.join(ALLOFPLOS_DIR_PATH, "async_test_dir")
+SYNC_DIRECTORY = os.path.join(ALLOFPLOS_DIR_PATH, "sync_test_dir")
 MIN_FILES = 9990
 NUM_FILES = 10 
 
@@ -75,7 +76,7 @@ def sequential_fetch(doi):
 
 def demo_sequential(dois):
     """Fetch list of web pages sequentially."""
-    handle_dir()
+    recreate_dir(SYNC_DIRECTORY)
     start_time = default_timer()
     for doi in dois:
         start_time_url = default_timer()
@@ -93,7 +94,7 @@ def demo_sequential(dois):
 
 
 def demo_async(dois):
-    handle_dir()
+    recreate_dir(ASYNC_DIRECTORY)
     start_time = default_timer()
     loop = asyncio.get_event_loop() # event loop
     future = asyncio.ensure_future(fetch_all(dois)) # tasks to do
@@ -103,17 +104,19 @@ def demo_async(dois):
     tot_elapsed = default_timer() - start_time
     print(' TOTAL SECONDS: '.rjust(30, '-') + '{0:5.2f} '. \
         format(tot_elapsed, '\n'))
+    
+def recreate_dir(directory):
+    """Removes and recreates the directory.
+    """
+    if os.path.isdir(directory):
+        shutil.rmtree(directory)
+    os.makedirs(directory, exist_ok=True)
         
 def main():
     
     dois = get_all_local_dois(corpusdir)[MIN_FILES:MIN_FILES+NUM_FILES]
-    
     demo_sequential(dois)
     demo_async(dois)
 
-def handle_dir():
-    if os.path.isdir(ASYNC_DIRECTORY):
-        shutil.rmtree(ASYNC_DIRECTORY)
-    os.makedirs(ASYNC_DIRECTORY, exist_ok=True)
 if __name__ == '__main__':
     main()
