@@ -3,9 +3,9 @@ from os import path
 import sys
 
 if sys.version_info.major < 3:
-    sys.exit('Sorry, Python < 3.4 is not supported')
-elif sys.version_info.minor < 4:
-    sys.exit('Sorry, Python < 3.4 is not supported')
+    sys.exit('Sorry, Python < 3.5 is not supported')
+elif sys.version_info.minor < 5:
+    sys.exit('Sorry, Python < 3.5 is not supported')
 
 here = path.abspath(path.dirname(__file__))
 
@@ -27,7 +27,6 @@ setup(
         'Intended Audience :: Science/Research',
         'Topic :: Scientific/Engineering',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
@@ -50,7 +49,7 @@ setup(
         'tqdm==4.17.1',
         'urllib3==1.22',
         ],
-    python_requires='>=3.4',
+    python_requires='>=3.5',
     # If there are data files included in your packages that need to be
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.

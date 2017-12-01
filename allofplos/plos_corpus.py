@@ -218,10 +218,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
     :param ignore_existing: Don't re-download to tempdir if already downloaded
     """
     # make temporary directory, if needed
-    try:
-        os.mkdir(tempdir)
-    except FileExistsError:
-        pass
+    os.makedirs(tempdir, exist_ok=True)
 
     if ignore_existing:
         existing_articles = [filename_to_doi(file) for file in listdir_nohidden(tempdir)]
@@ -423,10 +420,7 @@ def download_updated_xml(article_file,
     :return: boolean for whether update was available & downloaded
     """
     doi = filename_to_doi(article_file)
-    try:
-        os.mkdir(tempdir)
-    except FileExistsError:
-        pass
+    os.makedirs(tempdir, exist_ok=True)
     url = URL_TMP.format(doi)
     articletree_remote = et.parse(url)
     articleXML_remote = et.tostring(articletree_remote, method='xml', encoding='unicode')
@@ -693,10 +687,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     :param article-list: list of uncorrected proofs to check for updates.
     :return: list of all articles with updated vor
     """
-    try:
-        os.mkdir(tempdir)
-    except FileExistsError:
-        pass
+    os.makedirs(tempdir, exist_ok=True)
     proofs_download_list = []
     if article_list is None:
         article_list = get_uncorrected_proofs_list()
@@ -866,9 +857,7 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
     :param rm_metadata: COMPLETE HERE
     :return: None
     """
-    if os.path.isdir(corpusdir) is False:
-        os.mkdir(corpusdir)
-        print('Creating folder for article xml')
+    os.makedirs(corpusdir, exist_ok=True)
     zip_date, zip_size, metadata_path = get_zip_metadata()
     zip_path = download_file_from_google_drive(zip_id, local_zip, file_size=zip_size)
     unzip_articles(file_path=zip_path)
@@ -885,9 +874,7 @@ def create_test_plos_corpus(corpusdir=corpusdir):
     :param corpusdir: directory where the corpus is to be downloaded and extracted
     :return: None
     """
-    if os.path.isdir(corpusdir) is False:
-        os.mkdir(corpusdir)
-        print('Creating folder for article xml')
+    os.makedirs(corpusdir, exist_ok=True)
     zip_path = download_file_from_google_drive(test_zip_id, local_test_zip)
     unzip_articles(file_path=zip_path, extract_directory=corpusdir)
 
