@@ -2,6 +2,7 @@ import datetime
 import os
 import unittest
 
+from . import TESTDIR, TESTDATADIR
 from ..article_class import Article
 from ..plos_corpus import INT_URL_TMP, EXT_URL_TMP
 from ..transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
@@ -95,7 +96,7 @@ class TestArticleClass(unittest.TestCase):
         TODO: there is a socket warning from requests module. See https://github.com/requests/requests/issues/3912
         XML file is in test directory
         """
-        article = Article(class_doi, directory='tests/testdata')
+        article = Article(class_doi, directory=TESTDATADIR)
         self.assertEqual(article.check_if_doi_resolves(), "works", 'check_if_doi_resolves does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.check_if_link_works(), True, 'check_if_link_works does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.correct_or_retract_bool(), False, 'correct_or_retract_bool does not transform correctly for {}'.format(article.doi))
@@ -116,7 +117,8 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.doi, "10.1371/journal.pone.0185809", 'doi does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.dtd, "JATS 1.1d3", 'dtd does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.editor, [{'contrib_initials': 'EGL', 'given_names': 'Eric Gordon', 'surname': 'Lamb', 'group_name': None, 'ids': [], 'rid_dict': {'aff': ['edit1']}, 'contrib_type': 'editor', 'author_type': None, 'editor_type': None, 'email': None, 'affiliations': ['University of Saskatchewan, CANADA'], 'author_roles': {None: ['Editor']}, 'footnotes': []}], 'editor does not transform correctly for {}'.format(article.doi))
-        self.assertEqual(article.filename, "tests/testdata/journal.pone.0185809.xml", 'filename does not transform correctly for {}'.format(article.doi))
+        article_relpath = os.path.relpath(article.filename, TESTDIR)
+        self.assertEqual(article_relpath, "testdata/journal.pone.0185809.xml", 'filename does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.journal, "PLOS ONE", 'journal does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.local, True, 'local does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.page, "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185809", 'page does not transform correctly for {}'.format(article.doi))
@@ -134,7 +136,7 @@ class TestArticleClass(unittest.TestCase):
         Test article DOI: 10.1371/journal.pbio.2001413
         XML file is in test directory
         """
-        article = Article(example_doi, directory='tests/testdata')
+        article = Article(example_doi, directory=TESTDATADIR)
         self.assertEqual(article.check_if_doi_resolves(), "works", 'check_if_doi_resolves does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.check_if_link_works(), True, 'check_if_link_works does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.correct_or_retract_bool(), False, 'correct_or_retract_bool does not transform correctly for {}'.format(article.doi))
@@ -155,7 +157,8 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.doi, "10.1371/journal.pbio.2001413", 'doi does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.dtd, "JATS 1.1d3", 'dtd does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.editor, [], 'editor does not transform correctly for {}'.format(article.doi))
-        self.assertEqual(article.filename, "tests/testdata/journal.pbio.2001413.xml", 'filename does not transform correctly for {}'.format(article.doi))
+        article_relpath = os.path.relpath(article.filename, TESTDIR)
+        self.assertEqual(article_relpath, "testdata/journal.pbio.2001413.xml", 'filename does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.journal, "PLOS Biology", 'journal does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.local, True, 'local does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.page, "http://journals.plos.org/plosone/article?id=10.1371/journal.pbio.2001413", 'page does not transform correctly for {}'.format(article.doi))
@@ -173,7 +176,7 @@ class TestArticleClass(unittest.TestCase):
         Test article DOI: 10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846ec0b6
         XML file is in test directory
         """
-        article = Article(example_doi2, directory='tests/testdata')
+        article = Article(example_doi2, directory=TESTDATADIR)
         self.assertEqual(article.check_if_doi_resolves(), "works", 'check_if_doi_resolves does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.check_if_link_works(), True, 'check_if_link_works does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.correct_or_retract_bool(), True, 'correct_or_retract_bool does not transform correctly for {}'.format(article.doi))
@@ -194,7 +197,8 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.doi, "10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846ec0b6", 'doi does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.dtd, "NLM 3.0", 'dtd does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.editor, [], 'editor does not transform correctly for {}'.format(article.doi))
-        self.assertEqual(article.filename, "tests/testdata/plos.correction.3155a3e9-5fbe-435c-a07a-e9a4846ec0b6.xml", 'filename does not transform correctly for {}'.format(article.doi))
+        article_relpath = os.path.relpath(article.filename, TESTDIR)
+        self.assertEqual(article_relpath, "testdata/plos.correction.3155a3e9-5fbe-435c-a07a-e9a4846ec0b6.xml", 'filename does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.journal, "PLOS ONE", 'journal does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.local, True, 'local does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.page, "http://journals.plos.org/plosone/article?id=10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846ec0b6", 'page does not transform correctly for {}'.format(article.doi))
