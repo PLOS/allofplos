@@ -15,17 +15,22 @@ from allofplos.transformations import URL_TMP, url_to_doi
 from allofplos.samples.corpus_analysis import get_all_local_dois
 from allofplos import Article
 
-begin_time = default_timer()
+MIN_DELAY = 1.0 # minimum for wait before beginning the next http-request (in s)
+MIN_FILES = 9990 # index of the files to start with
+NUM_FILES = 10 # how many files do you process
 
-MIN_DELAY = 1.0
 ASYNC_DIRECTORY = os.path.join(ALLOFPLOS_DIR_PATH, "async_test_dir")
 SYNC_DIRECTORY = os.path.join(ALLOFPLOS_DIR_PATH, "sync_test_dir")
-MIN_FILES = 9990
-NUM_FILES = 10 
 
-    """Fetch a url, using specified ClientSession."""
-    fetch.start_time[url] = default_timer()
 async def fetch(doi, session):
+    """Given a doi, fetch the associated url, using the given asynchronous
+    session (a ClientSession) as a context manager.
+    
+    Returns the article created by transforming the content of the response.
+    
+    NB: This needs to do better error handling if the url fails or points to an
+    invalid xml file.
+    """
     url = URL_TMP.format(doi)
     async with session.get(url) as response:
         resp = await response.read()
@@ -33,15 +38,18 @@ async def fetch(doi, session):
                                      directory=ASYNC_DIRECTORY,
                                      write=True,
                                      overwrite=True)
-        now = default_timer()
-        elapsed = now - fetch.start_time[url]
-        # print('{0:5.2f} {1:30}{2:5.2} '.format(now, url, elapsed))
         return article
         
 async def fetch_all(dois, max_rate=MIN_DELAY, limit_per_host=3.0):
-    """Launch requests for all web pages."""
+    """Launch requests for each doi.
+    
+    This first gets all of the dois passed in as dois.
+    
+    Then it checks for the existence of dois that are corrected articles that
+    should also be downloaded.
+    """
+    
     tasks = []
-    fetch.start_time = dict() # dictionary of start times for each url
     conn = aiohttp.TCPConnector(limit_per_host=limit_per_host)
     async with aiohttp.ClientSession(connector=conn) as session:
         for doi in dois:
@@ -61,10 +69,17 @@ async def fetch_all(dois, max_rate=MIN_DELAY, limit_per_host=3.0):
         second_batch = await asyncio.gather(*tasks) # gather task responses
         
     
-    # -------------- TOTAL SECONDS: 178.59        
 
 def sequential_fetch(doi):
-    "Fetch individual web pages as part of a sequence"
+    """
+    Fetch urls on the basis of the doi being passed in as part of a sequential
+    process.
+
+    Returns the article created by transforming the content of the response.
+
+    NB: This needs to do better error handling if the url fails or points to an
+    invalid xml file.
+    """
     url = URL_TMP.format(doi)
     response = requests.get(url)
     time.sleep(MIN_DELAY)
@@ -74,31 +89,36 @@ def sequential_fetch(doi):
     return article
 
 def demo_sequential(dois):
-    """Fetch list of web pages sequentially."""
+    """Organises the process of downloading articles associated with dois
+    to SYNC_DIRECTORY sequentially.
+    
+    Side-effect: prints a timer to indicate how long it took.
+    """
     recreate_dir(SYNC_DIRECTORY)
     start_time = default_timer()
     for doi in dois:
         start_time_url = default_timer()
         article = sequential_fetch(doi)
-        now = default_timer()
-        elapsed = now - start_time_url
         if article.type_ == "correction":
             new_article = sequential_fetch(article.related_doi)
-            
-        # print('{0:5.2f} {1:30}{2:5.2f} '.format(now, url, elapsed)) 
-    
+
     tot_elapsed = default_timer() - start_time
     print(' TOTAL SECONDS: '.rjust(30, '-') + '{0:5.2f} '. \
         format(tot_elapsed, '\n'))
 
 
 def demo_async(dois):
+    """Organises the process of downloading articles associated with the doi to
+    ASYNC_DIRECTORY asynchronous functionality. 
+    
+    Side-effect: prints a timer to indicate how long it took.
+    """
     recreate_dir(ASYNC_DIRECTORY)
     start_time = default_timer()
     loop = asyncio.get_event_loop() # event loop
     future = asyncio.ensure_future(fetch_all(dois)) # tasks to do
     loop.run_until_complete(future) # loop until done
-    loop.run_until_complete(asyncio.sleep(0))
+    loop.run_until_complete(asyncio.sleep(0)) 
     loop.close()
     tot_elapsed = default_timer() - start_time
     print(' TOTAL SECONDS: '.rjust(30, '-') + '{0:5.2f} '. \
@@ -112,6 +132,8 @@ def recreate_dir(directory):
     os.makedirs(directory, exist_ok=True)
         
 def main():
+    """Main loop for running and comparing the different appraoches.
+    """
     
     dois = get_all_local_dois(corpusdir)[MIN_FILES:MIN_FILES+NUM_FILES]
     demo_sequential(dois)
