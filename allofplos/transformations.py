@@ -3,7 +3,7 @@
 
 import os
 
-from allofplos.plos_regex import validate_filename, validate_doi, corpusdir
+from allofplos.plos_regex import validate_filename, validate_doi
 
 # URL bases for PLOS's Solr instances, that index PLOS articles
 BASE_URL_API = 'http://api.plos.org/search'
@@ -67,14 +67,14 @@ def filename_to_doi(filename):
     return doi
 
 
-def url_to_path(url, directory=corpusdir, plos_network=False):
+def url_to_path(url, directory, plos_network=False):
     """
     For a given PLOS URL to an XML file, return the relative path to the local XML file
     Example:
     url_to_path('http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001') = \
     'allofplos_xml/journal.pone.1000001.xml'
     :param url: online location of a PLOS article's XML
-    :param directory: defaults to corpusdir, containing article files
+    :param directory: Directory containing article files
     :return: relative path to local XML file in the corpusdir directory
     """
     annot_prefix = 'plos.correction.'
@@ -118,7 +118,7 @@ def doi_to_url(doi, plos_network=False):
     return URL_TMP.format(doi)
 
 
-def doi_to_path(doi, directory=corpusdir):
+def doi_to_path(doi, directory):
     """
     For a given PLOS DOI, return the relative path to that local article
     For DOIs that contain the word 'annotation', searches online version of the article xml to extract
@@ -127,7 +127,7 @@ def doi_to_path(doi, directory=corpusdir):
     Example:
     doi_to_path('10.1371/journal.pone.1000001') = 'allofplos_xml/journal.pone.1000001.xml'
     :param doi: full unique identifier for a PLOS article
-    :param directory: defaults to corpusdir, containing article files
+    :param directory: directory with article files
     :return: relative path to local XML file
     """
     if doi.startswith(annotation_doi) and validate_doi(doi):
@@ -138,3 +138,77 @@ def doi_to_path(doi, directory=corpusdir):
     elif validate_filename(doi):
         article_file = doi
     return article_file
+
+def convert_country(country):
+    """
+    For a given country, transform it using one of these rules
+    :param country: string with the country name
+    :return: string with the normalized country name
+    """
+    if (country and 'China' in country) or \
+            country == 'Chin' or country == 'CHINA':
+        country = 'China'
+    elif country and 'Brazil' in country:
+        country = 'Brazil'
+    elif country and 'Argentina' in country:
+        country = 'Argentina'
+    elif country == 'Czechia':
+        country = 'Czech Republic'
+    elif 'Norwegian' in country:
+        country = 'Norway'
+    elif country and 'United Kingdom' in country:
+        country = 'United Kingdom'
+    elif country and 'Hong Kong' in country:
+        country = 'Hong Kong'
+    elif country == 'Cameroun':
+        country = 'Cameroon'
+    elif (country and 'Chile' in country) or country == 'CHILE':
+        country = 'Chile'
+    elif (country and 'United States of America' in \
+            country) or country == 'United States' or country \
+            == 'USA' or 'Florida' in country or \
+            'California' in country or\
+            country == 'United State of America' or country == 'Virginia':
+        country = 'United States of America'
+    elif country=='Republic of Panamá' or country=='Panamá' or 'Panama' in country:
+        country = 'Panama'
+    elif 'Canada' in country:
+        country = 'Canada'
+    elif 'Colombia' in country:
+        country = 'Colombia'
+    elif 'Spain' in country or country=='España':
+        country = 'Spain'
+    elif 'Iran' in country:
+        country = 'Iran'
+    elif 'Saudi Arabia' in country:
+        country = 'Saudi Arabia'
+    elif 'Italy' in country:
+        country = 'Italy'
+    elif 'Japan' in country:
+        country = 'Japan'
+    elif 'Germany' in country:
+        country = 'Germany'
+    elif 'Luxembourg' in country:
+        country = 'Luxembourg'
+    elif ('France' in country) or country == 'Marseille':
+        country = 'France'
+    elif country == 'ROC' or country == 'R. O. C':
+        country = 'Taiwan'
+    elif country == 'Brasil':
+        country = 'Brazil'
+    elif country == 'México' or 'Mexico' in country:
+        country = 'Mexico'
+        Slowakia
+    elif country == 'Korea' or 'Republic of Korea' in country:
+        country = 'South Korea'
+    elif country == 'United Kindgom':
+        country = 'United Kingdom'
+    elif country and 'Netherlands' in country:
+        country = 'Netherlands'
+    elif country == 'Commonwealth of Australia' or 'Australian' in country:
+        country = 'Australia'
+    elif 'Singapore' in country:
+        country = 'Singapore'
+    elif country and (country[0].isdigit() or country[0] == '+'):
+        country = 'N/A'
+    return country

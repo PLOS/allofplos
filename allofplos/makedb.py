@@ -5,6 +5,7 @@
 Make a SQLite DB out of articles XML files
 """
 
+import argparse
 import datetime
 import os
 import random
@@ -15,10 +16,10 @@ from peewee import Model, CharField, ForeignKeyField, TextField, \
     DateTimeField, BooleanField, IntegerField, IntegrityError
 from playhouse.sqlite_ext import SqliteExtDatabase
 
-from transformations import filename_to_doi, convert_country
-from article_class import Article
+from allofplos.transformations import filename_to_doi, convert_country
+from allofplos.article_class import Article
 
-corpusdir = 'allofplos_xml'
+corpusdir = 'allofplos/allofplos_xml'
 
 journal_title_dict = {
     'PLOS ONE': 'PLOS ONE',
@@ -41,9 +42,9 @@ journal_title_dict = {
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--db', action='store_true', help=
+parser.add_argument('--db', action='store', help=
                     'Name the db', default='ploscorpus.db')
-parser.add_argument('--random', action='store_true', help=
+parser.add_argument('--random', action='store', type=int, help=
                     'Number of articles in a random subset. '
                     'By default will use all articles')
 args = parser.parse_args()
