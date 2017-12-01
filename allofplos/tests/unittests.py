@@ -2,11 +2,11 @@ import datetime
 import os
 import unittest
 
-from allofplos.article_class import Article
-from allofplos.plos_corpus import INT_URL_TMP, EXT_URL_TMP
-from allofplos.transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
+from ..article_class import Article
+from ..plos_corpus import INT_URL_TMP, EXT_URL_TMP
+from ..transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
                              filename_to_url, doi_to_url)
-from allofplos.plos_regex import corpusdir
+from ..plos_regex import corpusdir
 
 
 suffix = '.xml'

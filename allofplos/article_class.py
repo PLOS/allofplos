@@ -5,10 +5,10 @@ import subprocess
 import lxml.etree as et
 import requests
 
-from allofplos.transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
+from .transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
                                        BASE_URL_ARTICLE_LANDING_PAGE)
-from allofplos.plos_regex import (validate_doi, corpusdir)
-from allofplos.article_elements import (parse_article_date, get_contrib_info,
+from .plos_regex import (validate_doi, corpusdir)
+from .article_elements import (parse_article_date, get_contrib_info,
                                         match_contribs_to_dicts)
 
 
