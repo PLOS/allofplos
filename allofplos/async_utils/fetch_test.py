@@ -23,9 +23,10 @@ SYNC_DIRECTORY = os.path.join(ALLOFPLOS_DIR_PATH, "sync_test_dir")
 MIN_FILES = 9990
 NUM_FILES = 10 
 
-async def fetch(url, session):
     """Fetch a url, using specified ClientSession."""
     fetch.start_time[url] = default_timer()
+async def fetch(doi, session):
+    url = URL_TMP.format(doi)
     async with session.get(url) as response:
         resp = await response.read()
         article = Article.from_bytes(resp,
@@ -45,8 +46,7 @@ async def fetch_all(dois, max_rate=MIN_DELAY, limit_per_host=3.0):
     async with aiohttp.ClientSession(connector=conn) as session:
         for doi in dois:
             await asyncio.sleep(max_rate) # ensures no more requests than max_rate per second
-            task = asyncio.ensure_future(
-                fetch(URL_TMP.format(doi), session))
+            task = asyncio.ensure_future(fetch(doi, session))
             tasks.append(task) # create list of tasks
             
         first_batch = await asyncio.gather(*tasks) # gather task responses
@@ -55,8 +55,7 @@ async def fetch_all(dois, max_rate=MIN_DELAY, limit_per_host=3.0):
                           if article.type_=="correction"]
         for doi in corrected_dois:
             await asyncio.sleep(max_rate) # ensures no more requests than max_rate per second
-            task = asyncio.ensure_future(
-                fetch(URL_TMP.format(doi), session))
+            task = asyncio.ensure_future(fetch(doi, session))
             tasks.append(task) # create list of tasks
         
         second_batch = await asyncio.gather(*tasks) # gather task responses
