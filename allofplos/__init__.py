@@ -1,1 +1,1 @@
-from allofplos.article_class import Article
+from .article_class import Article
