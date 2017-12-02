@@ -92,7 +92,7 @@ How to run the tests
 
 From the project directory, run:
 
-``(allofplos)$ python -m tests.unittests``
+``(allofplos)$ python -m allofplos.tests.test_unittets``
 
 Should return something like this:
 
