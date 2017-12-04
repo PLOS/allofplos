@@ -1065,6 +1065,22 @@ class Article():
                     doi_list.extend(v)
 
         return doi_list
+
+    @property
+    def correction(self):
+        """Get the DOIs of all corrections type articles that correct the current article.
+
+        Some PLOS articles include a 'correction-forward' related-article-type, meaning
+        an article that has been issued a correction is linked to its correcting article(s).
+        Only for the SIX PLOS journals (i.e. not on PLOS ONE).
+        Usually there is only one DOI, unless the article has been issued multiple corrections.
+        :return: DOIs of the correction articles
+        :rtype: list
+        """
+        correction_doi = ''
+        related_dois = self.get_related_dois()
+        for k, v in related_dois.items():
+            if k == 'correction-forward':
                 correction_doi = v
                 break
         return correction_doi
