@@ -271,28 +271,22 @@ def move_articles(source, destination):
         shutil.rmtree(source)
 
 
-def compare_article_pubdate(article, days=22):
+def compare_article_pubdate(doi, days=22):
     """
     Check if an article's publication date was more than 3 weeks ago.
-    :param article: doi/file of the article
+    :param doi: doi of the article
     :param days: how long ago to compare the publication date (default 22 days)
     :return: boolean for whether the pubdate was older than the days value
     """
+    article = Article(doi)
     try:
-        pubdate = get_article_pubdate(article)
-        today = datetime.datetime.now()
-        three_wks_ago = datetime.timedelta(days)
-        compare_date = today - three_wks_ago
-        return pubdate < compare_date
-    except OSError:
-        article = os.path.join(newarticledir, article.split('/')[1].rstrip('.xml')+'.xml')
-        pubdate = get_article_pubdate(article)
+        pubdate = article.pubdate
         today = datetime.datetime.now()
         three_wks_ago = datetime.timedelta(days)
         compare_date = today - three_wks_ago
         return pubdate < compare_date
     except ValueError:
-        print("Pubdate error in {}".format(article))
+        print("Pubdate error in {}".format(doi))
 
 
 def download_updated_xml(article_file,
@@ -364,10 +358,9 @@ def check_for_corrected_articles(directory=newarticledir, article_list=None):
     if article_list is None:
         article_list = listdir_nohidden(directory)
     for article_file in article_list:
-        article_type = check_article_type(article_file=article_file)
-        if article_type == 'correction':
-            corrected_article = get_related_article_doi(article_file)[0]
-            corrected_doi_list.append(corrected_article)
+        article = Article.from_filename(article_file)
+        if article.type_ == 'correction':
+            corrected_doi_list.append(article.related_doi)
     corrected_article_list = [doi_to_path(doi) if os.path.exists(doi_to_path(doi)) else
                               doi_to_path(doi, directory=newarticledir) for doi in list(corrected_doi_list)]
     print(len(corrected_article_list), 'corrected articles found.')
