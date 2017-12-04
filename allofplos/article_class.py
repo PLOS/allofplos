@@ -1032,20 +1032,39 @@ class Article():
             return self._amendment
 
     @property
-    def related_doi(self):
-        """DOI related to current article
-
-        Only works for corrections and retractions, the two JATS article types that point
-        at other articles.
-        :returns: First related DOI
-        :rtype: {str}
+    def related_dois(self):
+        """PLOS DOIs related to current article.
+        Compresses the values of `self.get_related_dois()` dictionary into a single list of DOIs
+        More strict for which keys to include for corrections, retractions, and expressions of concern, the three
         amendment article types.
+        :returns: list of related DOIs
+        :rtype: list
         """
-        if self.correct_or_retract is True:
-            return self.get_related_doi()
+        doi_list = []
+        related_doi_dict = self.get_related_dois()
+        if self.amendment:
+            # only use certain keys if an amendment article
+            if self.type_ == 'correction':
+                attrib_name = 'corrected-article'
+            elif self.type_ == 'retraction':
+                attrib_name = 'retracted-article'
+            elif self.type_ == 'expression-of-concern':
+                attrib_name = 'object-of-concern'
+            for k, v in related_doi_dict.items():
+                if k == attrib_name:
+                    doi_list = v
+                    break
+            if not doi_list:
                 doi_list = [v for v in related_doi_dict.values()]
+                print('{} has incorrect related_doi field attribute'.format(self.doi))
+
         else:
-            return ''
+            # flatten all dict values if not an amendment article
+            if related_doi_dict:
+                for k, v in related_doi_dict.items():
+                    doi_list.extend(v)
+
+        return doi_list
                 correction_doi = v
                 break
         return correction_doi
