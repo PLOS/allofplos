@@ -680,37 +680,38 @@ class Article():
         if self.type_ in ['correction', 'retraction', 'expression-of-concern']:
             self._amendment = True
         else:
-
-    def get_related_doi(self):
-        """For an article file, get the DOI of the first related article.
-
-        More strict in tag search if article is correction type
-        Use primarily to map correction and retraction notifications to articles that have been corrected
-        NOTE: what to do if more than one related article?
-        :return: first doi at that xpath location
             self._amendment = False
         return self._amendment
+
+    def get_related_dois(self):
+        """For a given article, get the list of DOIs of related PLOS articles.
+        Creates a dictionary of related dois & their type from the <related-articles> xpath location
+        Use primarily to map amendment notifications to articles that have been amended
+        :return: dictionary of related DOIs
+        :rtype: dict
         """
         related_article_elements = self.get_element_xpath(tag_path_elements=["/",
                                                                              "article",
                                                                              "front",
                                                                              "article-meta",
                                                                              "related-article"])
-        related_article = ''
-        if self.type_ == 'correction':
-            for element in related_article_elements:
-                if element.attrib['related-article-type'] in ('corrected-article', 'companion'):
-                    corrected_doi = element.attrib['{http://www.w3.org/1999/xlink}href']
-                    related_article = corrected_doi.lstrip('info:doi/')
-                    break
-        else:
-            try:
-                related_article_element = related_article_elements[0].attrib
-                related_article = related_article_element['{http://www.w3.org/1999/xlink}href']
+        related_article_dict = {}
+
+        try:
+            for elem in related_article_elements:
+                related_doi = elem.attrib
+                related_article = related_doi['{http://www.w3.org/1999/xlink}href']
                 related_article = related_article.lstrip('info:doi/')
-            except IndexError:
-                return ''
-        return related_article
+                if not related_article_dict.get(elem.attrib['related-article-type'], None):
+                    # begin building the list of DOIs with that related-article-type
+                    related_article_dict[elem.attrib['related-article-type']] = [related_article]
+                else:
+                    # there is more than one article with the same related-article-type
+                    related_article_dict[elem.attrib['related-article-type']].append(related_article)
+        except IndexError:
+            # no related articles exist
+            pass
+        return related_article_dict
 
     def check_if_link_works(self):
         """See if a link is valid (i.e., returns a '200' to the HTML request).
@@ -1028,6 +1029,7 @@ class Article():
         if self._amendment is None:
             return self.amendment_bool()
         else:
+            return self._amendment
 
     @property
     def related_doi(self):
