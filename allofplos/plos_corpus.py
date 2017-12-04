@@ -361,7 +361,7 @@ def check_for_corrected_articles(directory=newarticledir, article_list=None):
         article = Article.from_filename(article_file)
         if article.type_ == 'correction':
             corrected_doi_list.append(article.related_doi)
-    corrected_article_list = [doi_to_path(doi) if os.path.exists(doi_to_path(doi)) else
+    corrected_article_list = [Article(doi).filename if Article(doi).local else
                               doi_to_path(doi, directory=newarticledir) for doi in list(corrected_doi_list)]
     print(len(corrected_article_list), 'corrected articles found.')
     return corrected_article_list
@@ -411,8 +411,9 @@ def get_uncorrected_proofs_list():
         bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
         for i, article_file in enumerate(article_files):
             bar.update(i+1)
-            if check_if_uncorrected_proof(article_file):
-                uncorrected_proofs_list.append(filename_to_doi(article_file))
+            article = Article.from_filename(article_file)
+            if article.proof == 'uncorrected-proof':
+                uncorrected_proofs_list.append(article.doi)
         bar.finish()
         print("Saving uncorrected proofs.")
         with open(uncorrected_proofs_text_list, 'w') as file:
