@@ -51,7 +51,7 @@ class Article():
         self._tree = None
         self._local = None
         self._contributors = None
-        self._correct_or_retract = None  # Will probably need to be an article subclass
+        self._amendment = None  # Will probably need to be an article subclass
 
     @property
     def doi(self):
@@ -668,18 +668,18 @@ class Article():
                   .format(self.doi))
         return contrib_dict_list
 
-    def correct_or_retract_bool(self):
-        """Whether the JATS article type is a correction or retraction.
+    def amendment_bool(self):
+        """Whether the JATS article type is a correction, retraction, or expression of concern.
 
+        These are the three article types ('amendments') that potentially warrant a change in the original article
+        that they reference (i.e., the 'related-doi'.)
         See https://jats.nlm.nih.gov/archiving/tag-library/1.1/attribute/article-type.html
-        :returns: True if a correction or retraction, False if not
+        :returns: True if an amendment article type, False if not
         :rtype: {bool}
         """
-        if self.type_ == 'correction' or self.type_ == 'retraction':
-            self._correct_or_retract = True
+        if self.type_ in ['correction', 'retraction', 'expression-of-concern']:
+            self._amendment = True
         else:
-            self._correct_or_retract = False
-        return self._correct_or_retract
 
     def get_related_doi(self):
         """For an article file, get the DOI of the first related article.
@@ -688,6 +688,8 @@ class Article():
         Use primarily to map correction and retraction notifications to articles that have been corrected
         NOTE: what to do if more than one related article?
         :return: first doi at that xpath location
+            self._amendment = False
+        return self._amendment
         """
         related_article_elements = self.get_element_xpath(tag_path_elements=["/",
                                                                              "article",
@@ -1016,16 +1018,16 @@ class Article():
         return abstract_text
 
     @property
-    def correct_or_retract(self):
-        """Boolean for whether the JATS article type is a correction or retraction.
+    def amendment(self):
+        """Boolean for whether the JATS article type (`self.type_`)is one of the three 'amendment' types:
+        correction, retraction, or expression of concern.
 
-        :returns: Whether the article is a correction or retraction
+        :returns: Whether the article is an amendment article type
         :rtype: {bool}
         """
-        if self._correct_or_retract is None:
-            return self.correct_or_retract_bool()
+        if self._amendment is None:
+            return self.amendment_bool()
         else:
-            return self._correct_or_retract
 
     @property
     def related_doi(self):
@@ -1035,11 +1037,16 @@ class Article():
         at other articles.
         :returns: First related DOI
         :rtype: {str}
+        amendment article types.
         """
         if self.correct_or_retract is True:
             return self.get_related_doi()
+                doi_list = [v for v in related_doi_dict.values()]
         else:
             return ''
+                correction_doi = v
+                break
+        return correction_doi
 
     @property
     def counts(self):
