@@ -107,7 +107,6 @@ class Article():
         For parsing and viewing the XML of a local article. Should not be used for hashing
         Excludes <back> element (including references list) for easier viewing
         :param exclude_refs: remove references from the article tree (eases print viewing)
-        :type pretty_print: bool, optional
         """
         parser = et.XMLParser(remove_blank_text=True)
         tree = et.parse(self.filename, parser)
