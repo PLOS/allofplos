@@ -444,15 +444,16 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
     articles = listdir_nohidden(directory)
     new_proofs = 0
     for article_file in articles:
-        if check_if_uncorrected_proof(article_file):
-            uncorrected_proofs_list.append(filename_to_doi(article_file))
+        article = Article.from_filename(article_file)
+        if article.proof == 'uncorrected_proof':
+            uncorrected_proofs_list.append(article.doi)
             new_proofs += 1
     # Copy all uncorrected proofs from list to clean text file
     with open(text_list, 'w') as file:
         for item in sorted(set(uncorrected_proofs_list)):
             file.write("%s\n" % item)
     if uncorrected_proofs_list:
-        print("{} uncorrected proofs found. {} total in list.".format(new_proofs, len(uncorrected_proofs_list)))
+        print("{} new uncorrected proofs found. {} total in list.".format(new_proofs, len(uncorrected_proofs_list)))
     else:
         print("No uncorrected proofs found in folder or in existing list.")
     return uncorrected_proofs_list
