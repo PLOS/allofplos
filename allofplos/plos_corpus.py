@@ -36,7 +36,8 @@ from tqdm import tqdm
 
 from .plos_regex import (validate_doi, corpusdir, newarticledir)
 from .transformations import (BASE_URL_API, EXT_URL_TMP, INT_URL_TMP, URL_TMP, filename_to_doi,
-                                       doi_to_path)
+                              doi_to_path)
+from .article_class import Article
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 

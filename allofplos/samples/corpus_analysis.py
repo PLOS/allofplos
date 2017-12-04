@@ -21,6 +21,7 @@ from ..transformations import (filename_to_doi, doi_to_path, doi_to_url)
 from ..plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, uncorrected_proofs_text_list,
                            get_related_article_doi, download_updated_xml, get_all_solr_dois, get_article_pubdate,
                            download_check_and_move)
+from ..article_class import Article
 
 counter = collections.Counter
 pmcdir = "pmc_articles"
