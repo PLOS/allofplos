@@ -301,22 +301,19 @@ def download_updated_xml(article_file,
     :param vor_check: whether checking to see if uncorrected proof is updated
     :return: boolean for whether update was available & downloaded
     """
-    doi = filename_to_doi(article_file)
+    article = Article.from_filename(article_file)
     try:
         os.mkdir(tempdir)
     except FileExistsError:
         pass
-    url = URL_TMP.format(doi)
-    articletree_remote = et.parse(url)
-    articleXML_remote = et.tostring(articletree_remote, method='xml', encoding='unicode')
+    articleXML_remote = article.get_remote_xml()
     if not article_file.endswith('.xml'):
         article_file += '.xml'
     try:
-        articletree_local = et.parse(os.path.join(corpusdir, os.path.basename(article_file)))
+        articleXML_local = article.xml
     except OSError:
-        article_file_alt = os.path.join(tempdir, os.path.basename(doi_to_path(article_file)))
-        articletree_local = et.parse(article_file_alt)
-    articleXML_local = et.tostring(articletree_local, method='xml', encoding='unicode')
+        article.directory = newarticledir
+        articleXML_local = article.xml
 
     if articleXML_remote == articleXML_local:
         updated = False
@@ -326,18 +323,8 @@ def download_updated_xml(article_file,
         if vor_check:
             # make sure that update is to a VOR for uncorrected proof
             get_new = False
-            path_parts = ['/',
-                          'article',
-                          'front',
-                          'article-meta',
-                          'custom-meta-group',
-                          'custom-meta',
-                          'meta-value']
-            r = articletree_remote.xpath("/".join(path_parts))
-            for x in r:
-                if x.text == 'vor-update-to-uncorrected-proof':
-                    get_new = True
-                    break
+            if article.proof == 'vor_update':
+                get_new = True
         if get_new:
             article_path = os.path.join(tempdir, os.path.basename(article_file))
             with open(article_path, 'w') as file:
