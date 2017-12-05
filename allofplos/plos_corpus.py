@@ -271,14 +271,15 @@ def move_articles(source, destination):
         shutil.rmtree(source)
 
 
-def compare_article_pubdate(doi, days=22):
+def compare_article_pubdate(doi, days=22, directory=corpusdir):
     """
     Check if an article's publication date was more than 3 weeks ago.
     :param doi: doi of the article
     :param days: how long ago to compare the publication date (default 22 days)
+    :param directory: directory the article file is located in (defaults to corpusdir)
     :return: boolean for whether the pubdate was older than the days value
     """
-    article = Article(doi)
+    article = Article(doi, directory=directory)
     try:
         pubdate = article.pubdate
         today = datetime.datetime.now()
@@ -448,6 +449,7 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
     new_proofs = 0
     for article_file in articles:
         article = Article.from_filename(article_file)
+        article.directory = directory
         if article.proof == 'uncorrected_proof':
             uncorrected_proofs_list.append(article.doi)
             new_proofs += 1
