@@ -90,7 +90,11 @@ Here’s what the print statements might look like on a typical run:
 How to run the tests
 --------------------
 
-From the project directory, run:
+If you have pytest installed, from anywhere in the allofplos directory, run:
+
+``(allofplos)$ pytest``
+
+If you do not have pytest installed, from the top-level project directory, run:
 
 ``(allofplos)$ python -m allofplos.tests.test_unittests``
 
