@@ -92,15 +92,15 @@ How to run the tests
 
 From the project directory, run:
 
-``(allofplos)$ python -m allofplos.tests.test_unittets``
+``(allofplos)$ python -m allofplos.tests.test_unittests``
 
 Should return something like this:
 
 ::
 
-      ....
+      ......
       ----------------------------------------------------------------------
-      Ran 4 tests in 0.687s
+      Ran 6 tests in 3.327s
 
       OK
 
