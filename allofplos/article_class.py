@@ -83,7 +83,7 @@ class Article():
             return self._text_viewer
         except AttributeError as e:
             print(("{}:\n"
-                   "You need to assign a non-terminal text viewer"
+                   "You need to assign a non-terminal text viewer "
                    "command able to be run on the CLI to self.text_viewer"
                    ).format(e))
 
