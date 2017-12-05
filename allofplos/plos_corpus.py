@@ -10,7 +10,7 @@ Check whether list of DOI files is complete
     * query Solr API for list of new articles (limited by date)
     * create list of missing DOIs, by comparing against existing list of DOIs or file names
 Update by downloading articles content-repo if local store is not complete
-Check for and download corrected articles that have been issued corrections
+Check for and download amended articles that have been issued amendments
 Check for and download versions of record (VOR) for uncorrected proofs
 Zip folder down, appending when able
 Create log file for actions that can be referenced
@@ -345,53 +345,56 @@ def download_updated_xml(article_file,
     return updated
 
 
-def check_for_corrected_articles(directory=newarticledir, article_list=None):
+def check_for_amended_articles(directory=newarticledir, article_list=None):
     """
-    For articles in the temporary download directory, check if article_type is correction
-    If correction, surface the DOI of the article being corrected
-    Use with download_corrected_articles
+    For articles in the temporary download directory, check if article_type is an amendment
+    If amendment, surface the DOI of the article being amended
+    Use with `download_amended_articles`
+    For more information about the amendment type, see `amendment_bool` in the Article class
     :param article: the filename for a single article
     :param directory: directory where the article file is, default is newarticledir
-    :return: list of filenames to existing local files for articles issued a correction
+    :return: list of filenames to existing local files for articles issued an amendment
     """
-    corrected_doi_list = []
+    amended_doi_list = []
     if article_list is None:
         article_list = listdir_nohidden(directory)
     for article_file in article_list:
         article = Article.from_filename(article_file)
-        if article.type_ == 'correction':
-            corrected_doi_list.append(article.related_doi)
-    corrected_article_list = [Article(doi).filename if Article(doi).local else
-                              doi_to_path(doi, directory=newarticledir) for doi in list(corrected_doi_list)]
-    print(len(corrected_article_list), 'corrected articles found.')
-    return corrected_article_list
+        article.directory = directory
+        if article.amendment:
+            amended_doi_list.extend(article.related_dois)
+    amended_article_list = [Article(doi).filename if Article(doi).local else
+                            doi_to_path(doi, directory=directory) for doi in list(amended_doi_list)]
+    print(len(amended_article_list), 'amended articles found.')
+    return amended_article_list
 
 
-def download_corrected_articles(directory=corpusdir, tempdir=newarticledir, corrected_article_list=None):
-    """
-    For a list of articles that have been corrected, check if the xml was updated
-    Many corrections don't result in XML changes
+def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amended_article_list=None):
+    """For a list of articles that have been amended, check if the xml was also updated.
 
-    Use with download_corrected articles
+    Use with `check_for_amended_articles`
+    Many amendments don't result in XML changes
+    For more information about the amendment type, see `amendment_bool` in the Article class
     :param article: the filename for a single article
     :param directory: directory where the article file is, default is newarticledir
     :param tempdir: where new articles are downloaded to-
     :return: list of DOIs for articles downloaded with new XML versions
     """
-    if corrected_article_list is None:
-        corrected_article_list = check_for_corrected_articles(directory)
-    corrected_updated_article_list = []
-    print("Downloading corrected articles")
-    max_value = len(corrected_article_list)
+    if amended_article_list is None:
+        amended_article_list = check_for_amended_articles(directory)
+        print(amended_article_list)
+    amended_updated_article_list = []
+    print("Checking amended articles")
+    max_value = len(amended_article_list)
     bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-    for i, article in enumerate(corrected_article_list):
+    for i, article in enumerate(amended_article_list):
         updated = download_updated_xml(article)
         if updated:
-            corrected_updated_article_list.append(article)
+            amended_updated_article_list.append(article)
         bar.update(i+1)
     bar.finish()
-    print(len(corrected_updated_article_list), 'corrected articles downloaded with new xml.')
-    return corrected_updated_article_list
+    print(len(amended_updated_article_list), 'amended articles downloaded with new xml.')
+    return amended_updated_article_list
 
 
 def get_uncorrected_proofs_list():
@@ -583,8 +586,8 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
                             plos_network=False):
     """
     For a list of new articles to get, first download them from content-repo to the temporary directory
-    Next, check these articles for uncorrected proofs and article_type corrections
-    Act on available VOR updates & corrected articles
+    Next, check these articles for uncorrected proofs and article_type amendments
+    Act on available VOR updates & amended articles
     Then, move to corpus directory where the rest of the articles are
     :param article_list: List of new articles to download
     :param text_list: List of uncorrected proofs to check for vor updates
@@ -592,8 +595,8 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
     :param destination: Directory where new articles are to be moved to
     """
     repo_download(article_list, tempdir, plos_network=plos_network)
-    corrected_articles = check_for_corrected_articles(directory=tempdir)
-    download_corrected_articles(corrected_article_list=corrected_articles)
+    amended_articles = check_for_amended_articles(directory=tempdir)
+    download_amended_articles(amended_article_list=amended_articles)
     download_vor_updates(plos_network=plos_network)
     check_for_uncorrected_proofs(directory=tempdir)
     move_articles(tempdir, destination)
@@ -829,7 +832,7 @@ def main():
         # For every doi in dois_needed_list, grab the accompanying XML from content-repo
         # If no new articles, don't run any other cells
         # Check if articles are uncorrected proofs
-        # Check if corrected articles linked to new corrections articles are updated
+        # Check if amended articles linked to new amendment articles are updated
         # Merge new XML into folder
         # If need to bulk download, please start here:
         # https://drive.google.com/open?id=0B_JDnoghFeEKLTlJT09IckMwOFk
