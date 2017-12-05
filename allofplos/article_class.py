@@ -6,10 +6,10 @@ import lxml.etree as et
 import requests
 
 from .transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
-                                       BASE_URL_ARTICLE_LANDING_PAGE)
+                              BASE_URL_ARTICLE_LANDING_PAGE)
 from .plos_regex import (validate_doi, corpusdir)
 from .article_elements import (parse_article_date, get_contrib_info,
-                                        match_contribs_to_dicts)
+                               match_contribs_to_dicts)
 
 
 class Article():
@@ -67,13 +67,13 @@ class Article():
     def text_viewer(self):
         """Command line application for viewing text to be used with 
         open_in_viewer.
-        
-        Defaults to "open", which opens in whatever the default application is 
+
+        Defaults to "open", which opens in whatever the default application is
         in your operating system for files ending in ".xml".
 
         Persists across article objects.
         Use with self.open_in_viewer() to open an article of interest.
-        
+
         Check your text viewers documentation to learn how to launch it from the command line.
         For Sublime Text, see http://docs.sublimetext.info/en/latest/command_line/command_line.html
         :returns: command line shortcut for the text viewer
@@ -492,14 +492,18 @@ class Article():
                             initials_list.extend(contributor_initials)
                             contrib_dict[contribution] = contributor_initials
                         except (IndexError, AttributeError) as e:
-                            print('Error parsing contributions item {}: {}'.format(self.doi, et.tostring(con_item, encoding='unicode', method='xml')))
+                            print('Error parsing contributions item {}: {}'.format(self.doi, et.tostring(con_item,
+                                                                                                         encoding='unicode',
+                                                                                                         method='xml')))
                             pass
                 except IndexError:
                     # for single strings, though it doesn't parse all of them correctly.
                     # Example: '10.1371/journal.pone.0050782'
                     contributions = note[0].text
                     if contributions is None:
-                        print('Error parsing contributions for {}: {}'.format(self.doi, et.tostring(con_element, encoding='unicode', method='xml')))
+                        print('Error parsing contributions for {}: {}'.format(self.doi, et.tostring(con_element,
+                                                                                                    encoding='unicode',
+                                                                                                    method='xml')))
                         return {}
                     contribution_list = re.split(': |\. ', contributions)
                     contribb_dict = dict(list(zip(contribution_list[::2], contribution_list[1::2])))
