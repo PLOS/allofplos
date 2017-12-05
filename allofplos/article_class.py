@@ -64,31 +64,37 @@ class Article():
         return self._doi
 
     @property
-    def text_editor(self):
-        """Your text editor of choice that can be called from the command line.
+    def text_viewer(self):
+        """Command line application for viewing text to be used with 
+        open_in_viewer.
+        
+        Defaults to "open", which opens in whatever the default application is 
+        in your operating system for files ending in ".xml".
 
         Persists across article objects.
-        Use with self.open_in_editor() to open an article of interest.
-        Check your text editor's documentation to learn how to launch it from the command line.
+        Use with self.open_in_viewer() to open an article of interest.
+        
+        Check your text viewers documentation to learn how to launch it from the command line.
         For Sublime Text, see http://docs.sublimetext.info/en/latest/command_line/command_line.html
-        :returns: command line shortcut for the text editor
+        :returns: command line shortcut for the text viewer
         :rtype: {str}
         """
         try:
-            return self._text_editor
+            return self._text_viewer
         except AttributeError as e:
             print(("{}:\n"
-                   "You need to assign a non-terminal texteditor "
-                   "command to self.text_editor").format(e))
+                   "You need to assign a non-terminal text viewer"
+                   "command able to be run on the CLI to self.text_viewer"
+                   ).format(e))
 
-    @text_editor.setter
-    def text_editor(self, value):
-        """Sets the text editor for all article objects.
+    @text_viewer.setter
+    def text_viewer(self, value="open"):
+        """Sets the text viewer for all article objects.
 
-        :param value: from self.text_editor
+        :param value: from self.text_viewer
         :type value: {str}
         """
-        self._text_editor = value
+        self._text_viewer = value
 
     @doi.setter
     def doi(self, d):
@@ -156,17 +162,17 @@ class Article():
                                  encoding='unicode')
         return remote_xml
 
-    def open_in_editor(self, text_editor=None):
-        """Open a local article file of interest in an external text editor.
+    def open_in_viewer(self, text_viewer=None):
+        """Open a local article file of interest in an external text viewer.
 
-        :param text_editor: set via self.text_editor, defaults to None
-        :type text_editor: str, optional
+        :param text_viewer: set via self.text_viewer, defaults to None
+        :type text_viewer: str, optional
         :raises: TypeError
         """
-        if not (text_editor or self.text_editor):
-            raise TypeError("You have not specified an text_editor. Please do so.")
+        if not (text_viewer or self.text_viewer):
+            raise TypeError("You have not specified an text_viewer. Please do so.")
 
-        subprocess.call([self._text_editor, self.filename])
+        subprocess.call([self._text_viewer, self.filename])
 
     def open_in_browser(self):
         """Opens the landing page (HTML) of an article in default browser.
