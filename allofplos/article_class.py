@@ -1033,7 +1033,8 @@ class Article():
     @property
     def related_dois(self):
         """PLOS DOIs related to current article.
-        Compresses the values of `self.get_related_dois()` dictionary into a single list of DOIs
+
+        Compresses the values of `self.get_related_dois()` dictionary into a single list of DOI strings
         More strict for which keys to include for corrections, retractions, and expressions of concern, the three
         amendment article types.
         :returns: list of related DOIs

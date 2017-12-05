@@ -180,7 +180,7 @@ def get_retracted_doi_list(article_list=None, directory=corpusdir):
     return retractions_doi_list, retracted_doi_list
 
 
-def get_corrected_article_list(article_list=None, directory=corpusdir):
+def get_amended_article_list(article_list=None, directory=corpusdir):
     """
     Scans through articles in a directory to see if they are correction notifications,
     scans articles that are that type to find DOI substrings of corrected articles
@@ -189,7 +189,7 @@ def get_corrected_article_list(article_list=None, directory=corpusdir):
     :return: list of DOIs for articles issued a correction
     """
     corrections_article_list = []
-    corrected_article_list = []
+    amended_article_list = []
     if article_list is None:
         article_list = listdir_nohidden(directory)
 
@@ -200,12 +200,12 @@ def get_corrected_article_list(article_list=None, directory=corpusdir):
             corrections_article_list.append(article_file)
             # get the linked DOI of the corrected article
             corrected_article = get_related_article_doi(article_file, corrected=True)[0]
-            corrected_article_list.append(corrected_article)
+            amended_article_list.append(corrected_article)
             # check linked DOI for accuracy
             if make_regex_bool(full_doi_regex_match.search(corrected_article)) is False:
                 print(article_file, "has incorrect linked DOI:", corrected_article)
-    print(len(corrected_article_list), 'corrected articles found.')
-    return corrections_article_list, corrected_article_list
+    print(len(amended_article_list), 'corrected articles found.')
+    return corrections_article_list, amended_article_list
 
 
 # These functions are for checking for silent XML updates

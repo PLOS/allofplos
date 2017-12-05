@@ -793,9 +793,6 @@ def download_corpus_metadata_files(csv_abstracts=True, csv_no_abstracts=True, sq
         print("Extraction complete.")
 
 
-
-
-
 def main():
     """
     Entry point for the program. This is used when the program is used as a
@@ -812,7 +809,7 @@ def main():
         plos_network = True
     else:
         URL_TMP = EXT_URL_TMP
-    # Step 0: Initialize first copy of repository]
+    # Step 0: Initialize first copy of repository
     try:
         corpus_files = [name for name in os.listdir(corpusdir) if os.path.isfile(
                         os.path.join(corpusdir, name))]
