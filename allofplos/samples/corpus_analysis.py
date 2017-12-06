@@ -81,6 +81,14 @@ def validate_corpus(corpusdir=corpusdir):
 
 
 def get_jats_article_type_list(article_list=None, directory=corpusdir):
+    """Makes a list of of all JATS article types in the corpus
+    
+    Sorts them by frequency of occurrence
+    :param article_list: list of articles, defaults to None
+    :param directory: directory of articles, defaults to corpusdir
+    :returns: dictionary with each JATS type matched to number of occurrences 
+    :rtype: dict
+    """
     if article_list is None:
         article_list = listdir_nohidden(directory)
 
@@ -96,7 +104,14 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
 
 
 def get_plos_article_type_list(article_list=None, directory=corpusdir):
-
+    """Makes a list of of all internal PLOS article types in the corpus
+    
+    Sorts them by frequency of occurrence
+    :param article_list: list of articles, defaults to None
+    :param directory: directory of articles, defaults to corpusdir
+    :returns: dictionary with each PLOS type matched to number of occurrences 
+    :rtype: dict
+    """
     if article_list is None:
         article_list = listdir_nohidden(directory)
 
@@ -111,8 +126,15 @@ def get_plos_article_type_list(article_list=None, directory=corpusdir):
     return PLOS_article_types_structured
 
 
-# Get tuples of article types mapped for all PLOS articles
 def get_article_types_map(article_list=None, directory=corpusdir):
+    """Maps the JATS and PLOS article types onto the XML DTD.
+
+    Used for comparing how JATS and PLOS article types are assigned
+    :param article_list: list of articles, defaults to None
+    :param directory: directory of articles, defaults to corpusdir
+    :returns: list of tuples of JATS, PLOS, DTD for each article in the corpus
+    :rtype: list
+    """
     if article_list is None:
         article_list = listdir_nohidden(directory)
     article_types_map = []
@@ -129,8 +151,11 @@ def get_article_types_map(article_list=None, directory=corpusdir):
     return article_types_map
 
 
-# write article types map to .csv file
 def article_types_map_to_csv(article_types_map):
+    """put the `get_article_types_map.()` list of tuples into a csv.
+    
+    :param article_types_map: output of `get_article_types_map()`
+    """
     with open('articletypes.csv', 'w') as out:
         csv_out = csv.writer(out)
         csv_out.writerow(['type', 'count'])
@@ -201,6 +226,7 @@ def create_pubdate_dict(directory=corpusdir):
     """
     For articles in directory, create a dictionary mapping them to their pubdate.
     Used for truncating the revisiondate_sanity_check to more recent articles only
+    :param directory: directory of articles
     :return: a dictionary mapping article files to datetime objects of their pubdates
     """
     articles = listdir_nohidden(directory)
@@ -243,6 +269,7 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
 def check_solr_doi(doi):
     '''
     For an article doi, see if there's a record of it in Solr.
+    :rtype: bool
     '''
     solr_url = 'http://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,&wt=json&indent=true&fq=id:%22{}%22'.format(doi)
     article_search = requests.get(solr_url).json()
@@ -250,6 +277,12 @@ def check_solr_doi(doi):
 
 
 def get_all_local_dois(corpusdir=corpusdir):
+    """Get all local DOIs in a corpus directory.
+    
+    :param corpusdir: directory of articles, defaults to corpusdir
+    :returns: list of DOIs
+    :rtype: list
+    """
     local_dois = [filename_to_doi(art) for art in listdir_nohidden(corpusdir)]
     return local_dois
 
