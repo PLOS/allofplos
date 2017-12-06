@@ -292,17 +292,17 @@ class Article():
         :rtype: bool
         """
         dates = self.get_dates()
-        if dates.get('received', '') and dates.get('accepted', '') in dates:
+        if dates.get('received', '') and dates.get('accepted', ''):
             if dates['received'] <= dates['accepted'] <= dates['epub']:
                 order_correct = True
             else:
                 order_correct = False
-        elif dates.get('received', '') in dates:
+        elif dates.get('received', ''):
             if dates['received'] <= dates['epub']:
                 order_correct = True
             else:
                 order_correct = False
-        elif dates.get('accepted', '') in dates:
+        elif dates.get('accepted', ''):
             if dates['accepted'] <= dates['epub']:
                 order_correct = True
             else:
