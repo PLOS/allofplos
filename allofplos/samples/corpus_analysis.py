@@ -339,7 +339,7 @@ def get_article_metadata(article_file, size='small'):
     """
     article = Article.from_filename(article_file)
     doi = article.doi
-    filename = os.path.basename(article.filename.rstrip('.xml'))
+    filename = os.path.basename(article.filename).rstrip('.xml')
     title = article.title
     journal = article.journal
     jats_article_type = article.type_
