@@ -158,7 +158,7 @@ class Article():
         :returns: string of entire remote article file
         :rtype: {str}
         """
-        remote_xml = et.tostring(self.remote_element_tree,
+        remote_xml = et.tostring(self.remote_tree,
                                  method='xml',
                                  encoding='unicode')
         return remote_xml
@@ -871,7 +871,7 @@ class Article():
         return proof
 
     @property
-    def remote_element_tree(self):
+    def remote_tree(self):
         """Gets the lxml element tree of an article from its remote URL.
 
         Can compare local (self.xml) to remote versions of XML
