@@ -182,13 +182,14 @@ class Article():
         """
         subprocess.call(["open", self.page])
 
-    def get_element_xpath(self, tag_path_elements=None):
+    def get_element_xpath(self, tag_path_elements=None, remote=False):
         """For a local article's root element, grab particular sub-elements via XPath location.
 
         Defaults to reading the element location for uncorrected proofs/versions of record
         The basis of every method and property looking for particular metadata fields
         :param article_root: the xml file for a single article
         :param tag_path_elements: xpath location in the XML tree of the article file
+        :param remote: whether using the remote XML in self.remote_tree (defaults to False)
         :return: list of elements in the article with that xpath location
         """
         if tag_path_elements is None:
@@ -200,7 +201,10 @@ class Article():
                                  'custom-meta',
                                  'meta-value')
         tag_location = '/'.join(tag_path_elements)
-        return self.root.xpath(tag_location)
+        if remote is False:
+            return self.root.xpath(tag_location)
+        else:
+            return self.remote_tree.getroot().xpath(tag_location)
 
     def get_plos_journal(self, caps_fixed=True):
         """For an individual PLOS article, get the journal it was published in.
