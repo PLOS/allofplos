@@ -9,18 +9,16 @@ examples of analysis. It can:
 
 import collections
 import csv
-import datetime
-import lxml.etree as et
 import os
 import progressbar
 import random
 import requests
 
-from ..plos_regex import (validate_doi, corpusdir, newarticledir, full_doi_regex_match, validate_url, currents_doi_filter)
+from ..plos_regex import (validate_doi, corpusdir, newarticledir, full_doi_regex_match,
+                          validate_url, currents_doi_filter)
 from ..transformations import (filename_to_doi, doi_to_path, doi_to_url)
-from ..plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, uncorrected_proofs_text_list,
-                           get_related_article_doi, download_updated_xml, get_all_solr_dois, get_article_pubdate,
-                           download_check_and_move)
+from ..plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list,
+                           download_updated_xml, get_all_solr_dois, download_check_and_move)
 from ..article_class import Article
 
 counter = collections.Counter
@@ -87,24 +85,24 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
     jats_article_type_list = []
 
     for article_file in article_list:
-        jats_article_type = check_article_type(article_file=article_file)
-        jats_article_type_list.append(jats_article_type)
+        article = Article.from_filename(article_file, directory=directory)
+        jats_article_type_list.append(article.type_)
 
     print(len(set(jats_article_type_list)), 'types of articles found.')
     article_types_structured = counter(jats_article_type_list).most_common()
     return article_types_structured
 
 
-def get_plos_article_type_list(article_list=None):
+def get_plos_article_type_list(article_list=None, directory=corpusdir):
 
     if article_list is None:
-        article_list = listdir_nohidden(corpusdir)
+        article_list = listdir_nohidden(directory)
 
     PLOS_article_type_list = []
 
     for article_file in article_list:
-        plos_article_type = get_plos_article_type(article_file)
-        PLOS_article_type_list.append(plos_article_type)
+        article = Article.from_filename(article_file, directory=directory)
+        PLOS_article_type_list.append(article.plostype)
 
     print(len(set(PLOS_article_type_list)), 'types of articles found.')
     PLOS_article_types_structured = counter(PLOS_article_type_list).most_common()
@@ -112,16 +110,20 @@ def get_plos_article_type_list(article_list=None):
 
 
 # Get tuples of article types mapped for all PLOS articles
-def get_article_types_map(directory=corpusdir):
+def get_article_types_map(article_list=None, directory=corpusdir):
+    if article_list is None:
+        article_list = listdir_nohidden(directory)
     article_types_map = []
-    article_files = listdir_nohidden(directory)
-    for article_file in article_files:
-        jats_article_type = check_article_type(article_file)
-        plos_article_type = get_plos_article_type(article_file)
-        dtd_version = get_article_dtd(article_file)
-        types = [jats_article_type, plos_article_type, dtd_version]
+    max_value = len(article_list)
+    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+    for i, article_file in enumerate(article_list):
+        article = Article.from_filename(article_file)
+        article.directory = directory
+        types = [article.type_, article.plostype, article.dtd]
         types = tuple(types)
         article_types_map.append(types)
+        bar.update(i+1)
+    bar.finish()
     return article_types_map
 
 
@@ -132,22 +134,6 @@ def article_types_map_to_csv(article_types_map):
         csv_out.writerow(['type', 'count'])
         for row in article_types_map:
             csv_out.writerow(row)
-
-
-# Generate list of retracted articles
-
-
-def check_if_link_works(url):
-    '''See if a link is valid (i.e., returns a '200' to the HTML request).
-    Used for checking a URL to a PLOS article on journals.plos.org
-    '''
-    request = requests.get(url)
-    if request.status_code == 200:
-        return True
-    elif request.status_code == 404:
-        return False
-    else:
-        return 'error'
 
 
 # These functions are for getting retracted articles
@@ -163,49 +149,48 @@ def get_retracted_doi_list(article_list=None, directory=corpusdir):
     retracted_doi_list = []
     if article_list is None:
         article_list = listdir_nohidden(directory)
-    for article_file in article_list:
-        if check_if_retraction_article(article_file):
-            retractions_doi_list.append(filename_to_doi(article_file))
+    for art in article_list:
+        article = Article.from_filename(art)
+        article.directory = directory
+        if article.type_ == 'retraction':
+            retractions_doi_list.append(article.doi)
             # Look in those articles to find actual articles that are retracted
-            retracted_doi = get_related_retraction_article(article_file)[0]
-            retracted_doi_list.append(retracted_doi)
+            retracted_doi_list.extend(article.related_dois)
             # check linked DOI for accuracy
-            if make_regex_bool(full_doi_regex_match.search(retracted_doi)) is False:
-                print("{} has incorrect linked DOI field: '{}'".format(article_file, retracted_doi))
-    if len(retractions_doi_list) == len(retracted_doi_list):
-        print(len(retracted_doi_list), 'retracted articles found.')
-    else:
-        print('Number of retraction articles and retracted articles are different: ',
-              '{} vs. {}'.format(len(retractions_article_list), len(retracted_article_list)))
+            for doi in article.related_dois:
+                if bool(full_doi_regex_match.search(doi)) is False:
+                    print("{} has incorrect linked DOI field: '{}'".format(article_file, doi))
+    print(len(retracted_doi_list), 'retracted articles found.')
     return retractions_doi_list, retracted_doi_list
 
 
 def get_amended_article_list(article_list=None, directory=corpusdir):
     """
-    Scans through articles in a directory to see if they are correction notifications,
-    scans articles that are that type to find DOI substrings of corrected articles
+    Scans through articles in a directory to see if they are amendment notifications,
+    scans articles that are that type to find DOI substrings of amended articles
     :param article: the filename for a single article
     :param directory: directory where the article file is, default is corpusdir
     :return: list of DOIs for articles issued a correction
     """
-    corrections_article_list = []
+    amendments_article_list = []
     amended_article_list = []
     if article_list is None:
         article_list = listdir_nohidden(directory)
 
-    # check for corrections article type
-    for article_file in article_list:
-        article_type = check_article_type(article_file)
-        if article_type == 'correction':
-            corrections_article_list.append(article_file)
-            # get the linked DOI of the corrected article
-            corrected_article = get_related_article_doi(article_file, corrected=True)[0]
-            amended_article_list.append(corrected_article)
+    # check for amendments article type
+    for art in article_list:
+        article = Article.from_filename(art)
+        article.directory = directory
+        if article.amendment:
+            amendments_article_list.append(article.doi)
+            # get the linked DOI of the amended article
+            amended_article_list.extend(article.related_dois)
             # check linked DOI for accuracy
-            if make_regex_bool(full_doi_regex_match.search(corrected_article)) is False:
-                print(article_file, "has incorrect linked DOI:", corrected_article)
-    print(len(amended_article_list), 'corrected articles found.')
-    return corrections_article_list, amended_article_list
+            for doi in article.related_dois:
+                if bool(full_doi_regex_match.search(doi)) is False:
+                    print(article.doi, "has incorrect linked DOI:", doi)
+    print(len(amended_article_list), 'amended articles found.')
+    return amendments_article_list, amended_article_list
 
 
 # These functions are for checking for silent XML updates
@@ -217,7 +202,7 @@ def create_pubdate_dict(directory=corpusdir):
     :return: a dictionary mapping article files to datetime objects of their pubdates
     """
     articles = listdir_nohidden(directory)
-    pubdates = {article: get_article_pubdate(article) for article in articles}
+    pubdates = {art: Article.from_filename(art).pubdate for art in articles}
     return pubdates
 
 
@@ -348,7 +333,7 @@ def check_solr_doi(doi):
 
 
 def get_all_local_dois(corpusdir=corpusdir):
-    local_dois = [filename_to_doi(article_file) for article_file in listdir_nohidden(corpusdir)]
+    local_dois = [filename_to_doi(art) for art in listdir_nohidden(corpusdir)]
     return local_dois
 
 
@@ -402,26 +387,22 @@ def get_article_metadata(article_file, size='small'):
     :param size: small, medium or large, aka how many fields to return for each article
     :return: tuple of metadata fields tuple, wrong_date_strings dict
     """
-    doi = filename_to_doi(article_file)
-    filename = os.path.basename(doi_to_path(article_file)).rstrip('.xml')
-    title = get_article_title(article_file)
-    journal = get_plos_journal(article_file)
-    jats_article_type = check_article_type(article_file)
-    plos_article_type = get_plos_article_type(article_file)
-    dtd_version = get_article_dtd(article_file)
-    dates, wrong_date_strings = get_article_dates(article_file, string_=True)
+    article = Article.from_filename(article_file)
+    doi = article.doi
+    filename = os.path.basename(article.filename.rstrip('.xml'))
+    title = article.title
+    journal = article.journal
+    jats_article_type = article.type_
+    plos_article_type = article.plostype
+    dtd_version = article.dtd
+    dates = article.get_dates()
     (pubdate, collection, received, accepted) = ('', '', '', '')
-    pubdate = dates['epub']
-    counts = get_article_counts(article_file)
+    pubdate = article.pubdate
+    counts = article.counts
     (fig_count, table_count, page_count) = ('', '', '')
-    body_word_count = get_article_body_word_count(article_file)
-    if jats_article_type == 'correction':
-        related_article = get_related_article_doi(article_file, corrected=True)[0]
-    elif jats_article_type == 'retraction':
-        related_article = get_related_retraction_article(article_file)[0]
-    else:
-        related_article = ''
-    abstract = get_article_abstract(article_file)
+    body_word_count = article.body_word_count
+    related_articles = article.related_dois
+    abstract = article.abstract
     try:
         collection = dates['collection']
     except KeyError:
@@ -447,10 +428,10 @@ def get_article_metadata(article_file, size='small'):
     except KeyError:
         pass
     metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate, received,
-                accepted, collection, fig_count, table_count, page_count, body_word_count, related_article, abstract]
+                accepted, collection, fig_count, table_count, page_count, body_word_count, related_articles, abstract]
     metadata = tuple(metadata)
     if len(metadata) == 17:
-        return metadata, wrong_date_strings
+        return metadata
     else:
         print('Error in {}: {} items'.format(article_file, len(metadata)))
         return False
@@ -468,15 +449,12 @@ def get_corpus_metadata(article_list=None):
     max_value = len(article_list)
     bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
     corpus_metadata = []
-    wrong_dates = []
     for i, article_file in enumerate(article_list):
-        metadata, wrong_date_strings = get_article_metadata(article_file)
+        metadata = get_article_metadata(article_file)
         corpus_metadata.append(metadata)
-        if wrong_date_strings:
-            wrong_dates.append(wrong_date_strings)
         bar.update(i+1)
     bar.finish()
-    return corpus_metadata, wrong_dates
+    return corpus_metadata
 
 
 def corpus_metadata_to_csv(corpus_metadata=None,
