@@ -15,10 +15,10 @@ import random
 import requests
 
 from ..plos_regex import (validate_doi, corpusdir, newarticledir, full_doi_regex_match,
-                          validate_url, currents_doi_filter)
-from ..transformations import (filename_to_doi, doi_to_path, doi_to_url)
-from ..plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list,
-                           download_updated_xml, get_all_solr_dois, download_check_and_move)
+                          validate_url, validate_filename)
+from ..transformations import (filename_to_doi, doi_to_url)
+from ..plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list, download_updated_xml,
+                           get_all_solr_dois, download_check_and_move)
 from ..article_class import Article
 
 counter = collections.Counter
@@ -55,7 +55,7 @@ def validate_corpus(corpusdir=corpusdir):
     # check files and filenames
     plos_files = listdir_nohidden(corpusdir)
     if plos_files:
-        plos_valid_filenames = [article for article in plos_files if validate_file(article)]
+        plos_valid_filenames = [article for article in plos_files if validate_filename(article)]
         if len(plos_valid_dois) == len(plos_valid_filenames):
             pass
         else:
@@ -159,7 +159,7 @@ def get_retracted_doi_list(article_list=None, directory=corpusdir):
             # check linked DOI for accuracy
             for doi in article.related_dois:
                 if bool(full_doi_regex_match.search(doi)) is False:
-                    print("{} has incorrect linked DOI field: '{}'".format(article_file, doi))
+                    print("{} has incorrect linked DOI field: '{}'".format(art, doi))
     print(len(retracted_doi_list), 'retracted articles found.')
     return retractions_doi_list, retracted_doi_list
 
@@ -236,9 +236,6 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
     print(len(article_list), "article checked for updates.")
     print(len(articles_different_list), "articles have updates.")
     return articles_different_list
-
-
-
 
 
 def check_solr_doi(doi):
