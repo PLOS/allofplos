@@ -3,11 +3,11 @@ import os
 import unittest
 
 from . import TESTDIR, TESTDATADIR
-from ..article_class import Article
+from .. import Article, corpusdir
+
 from ..plos_corpus import INT_URL_TMP, EXT_URL_TMP
 from ..transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
                              filename_to_url, doi_to_url)
-from ..plos_regex import corpusdir
 
 
 suffix = '.xml'

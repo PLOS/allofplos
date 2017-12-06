@@ -14,11 +14,13 @@ import progressbar
 import random
 import requests
 
-from ..plos_regex import (validate_doi, corpusdir, newarticledir, full_doi_regex_match,
-                          validate_url, validate_filename)
+from .. import corpusdir, newarticledir
+
+from ..plos_regex import (validate_doi, full_doi_regex_match, validate_url)
 from ..transformations import (filename_to_doi, doi_to_url)
-from ..plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list, download_updated_xml,
-                           get_all_solr_dois, download_check_and_move)
+from ..plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list,
+                           download_updated_xml, get_all_solr_dois,
+                           download_check_and_move)
 from ..article_class import Article
 
 counter = collections.Counter
