@@ -232,13 +232,12 @@ class Article():
             journal = (' ').join(journal)
         return journal
 
-    def get_dates(self, string_=False, string_format='%Y-%m-%d', debug=False):
+    def get_dates(self, string_=False, string_format='%Y-%m-%d'):
         """For an individual article, get all of its dates, including publication date (pubdate), submission date.
 
         Defaults to datetime objects
         :param string_: whether to return dates as a dictionary of strings
         :param string_format: if string_ is True, the format to return the dates in
-        :param debug: whether to check that the dates are in the correct order, defaults to False
         :return: dict of date types mapped to datetime objects for that article
         :rtype: {dict}
         """
@@ -275,11 +274,6 @@ class Article():
                     print('Error getting history dates for {}'.format(self.doi))
                     date = ''
                 dates[date_type] = date
-        if debug:
-            # check whether date received is before date accepted is before pubdate
-            if dates.get('received', '') and dates.get('accepted', '') in dates:
-                if not dates['received'] <= dates['accepted'] <= dates['epub']:
-                    print('{}: dates in wrong order'.format(self.doi))
 
         if string_:
             # can return dates as strings instead of datetime objects if desired
@@ -288,6 +282,35 @@ class Article():
                     dates[key] = value.strftime(string_format)
 
         return dates
+
+    def dates_debug(self):
+        """Whether the dates in self.get_dates() are in the correct order.
+
+        check whether date received is before date accepted, is before pubdate
+        accounts for potentially missing date fields
+        :return: if dates are in right order or not
+        :rtype: bool
+        """
+        dates = self.get_dates()
+        if dates.get('received', '') and dates.get('accepted', '') in dates:
+            if dates['received'] <= dates['accepted'] <= dates['epub']:
+                order_correct = True
+            else:
+                order_correct = False
+        elif dates.get('received', '') in dates:
+            if dates['received'] <= dates['epub']:
+                order_correct = True
+            else:
+                order_correct = False
+        elif dates.get('accepted', '') in dates:
+            if dates['accepted'] <= dates['epub']:
+                order_correct = True
+            else:
+                order_correct = False
+        else:
+            order_correct = True
+
+        return order_correct
 
     def get_aff_dict(self):
         """For a given PLOS article, get list of contributor-affiliated institutions.
