@@ -325,8 +325,10 @@ def download_updated_xml(article_file,
         if vor_check:
             # make sure that update is to a VOR for uncorrected proof
             get_new = False
-            if article.proof == 'vor_update':
+            if article.remote_proof == 'vor_update':
                 get_new = True
+            # else:
+            #     updated = False
         if get_new:
             article_path = os.path.join(tempdir, os.path.basename(article_file))
             with open(article_path, 'w') as file:

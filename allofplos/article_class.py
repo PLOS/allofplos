@@ -875,6 +875,22 @@ class Article():
         return proof
 
     @property
+    def remote_proof(self):
+        """
+        For a single article online, check whether it is an 'uncorrected proof' or a
+        'VOR update' to the uncorrected proof, or neither.
+        :return: proof status if it exists; otherwise, None
+        """
+        xpath_results = self.get_element_xpath(remote=True)
+        proof = ''
+        for result in xpath_results:
+            if result.text == 'uncorrected-proof':
+                proof = 'uncorrected_proof'
+            elif result.text == 'vor-update-to-uncorrected-proof':
+                proof = 'vor_update'
+        return proof
+
+    @property
     def remote_tree(self):
         """Gets the lxml element tree of an article from its remote URL.
 
