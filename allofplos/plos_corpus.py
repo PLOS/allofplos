@@ -489,7 +489,7 @@ def check_for_vor_updates(uncorrected_list=None):
         vor_updates_available.extend(vor_chunk_results)
 
     if vor_updates_available:
-        print(len(vor_updates_available), "VOR updates to download.")
+        print(len(vor_updates_available), "new VOR updates indexed in Solr.")
         logging.info("VOR updates to download.")
     else:
         print("No new VOR articles indexed in Solr.")
@@ -571,7 +571,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
         print(len(proofs_download_list),
               "VOR articles directly downloaded.")
     else:
-        print("No new VOR articles found.")
+        print("No other new VOR articles found.")
     return proofs_download_list
 
 
