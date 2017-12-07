@@ -140,3 +140,84 @@ def doi_to_path(doi, directory=corpusdir):
     elif validate_filename(doi):
         article_file = doi
     return article_file
+
+
+def convert_country(country):
+    """
+    For a given country, transform it using one of these rules
+    :param country: string with the country name
+    :return: string with the normalized country name
+    """
+    if (country and 'China' in country) or \
+            country == 'Chin' or country == 'CHINA':
+        country = 'China'
+    elif country and 'Brazil' in country or \
+            country == 'Brasil' or \
+            country == 'ITA - Instituto Tecnologico de Aeronautica (':
+        country = 'Brazil'
+    elif country and 'Argentina' in country:
+        country = 'Argentina'
+    elif country == 'Czechia':
+        country = 'Czech Republic'
+    elif 'Norwegian' in country:
+        country = 'Norway'
+    elif country and 'United Kingdom' in country:
+        country = 'United Kingdom'
+    elif country and 'Hong Kong' in country:
+        country = 'Hong Kong'
+    elif country == 'Cameroun':
+        country = 'Cameroon'
+    elif (country and 'Chile' in country) or country == 'CHILE':
+        country = 'Chile'
+    elif (country and 'United States of America' in \
+            country) or country == 'United States' or country \
+            == 'USA' or 'Florida' in country or \
+            'California' in country or\
+            country == 'National Reference Centre for' or \
+            country == 'United State of America' or \
+            country == 'U.S.A.' or \
+            country == 'Virginia':
+        country = 'United States of America'
+    elif country=='Republic of Panamá' or country=='Panamá' or 'Panama' in country:
+        country = 'Panama'
+    elif 'Canada' in country:
+        country = 'Canada'
+    elif 'Colombia' in country:
+        country = 'Colombia'
+    elif 'Spain' in country or country=='España':
+        country = 'Spain'
+    elif 'Iran' in country:
+        country = 'Iran'
+    elif 'Saudi Arabia' in country:
+        country = 'Saudi Arabia'
+    elif 'Italy' in country:
+        country = 'Italy'
+    elif 'Japan' in country:
+        country = 'Japan'
+    elif 'Germany' in country:
+        country = 'Germany'
+    elif 'Luxembourg' in country:
+        country = 'Luxembourg'
+    elif ('France' in country) or country == 'Marseille':
+        country = 'France'
+    elif country == 'ROC' or country == 'R. O. C':
+        country = 'Taiwan'
+    elif country == 'Brasil':
+        country = 'Brazil'
+    elif country == 'México' or 'Mexico' in country:
+        country = 'Mexico'
+    elif 'Slowakia' in country:
+        country = 'Slowakia'
+    elif country == 'Korea' or 'Republic of Korea' in country:
+        country = 'South Korea'
+    elif country == 'United Kindgom':
+        country = 'United Kingdom'
+    elif country and 'Netherlands' in country:
+        country = 'Netherlands'
+    elif country == 'Commonwealth of Australia' or 'Australia' in country:
+        country = 'Australia'
+    elif 'Singapore' in country:
+        country = 'Singapore'
+    elif country and (country[0].isdigit() or country[0] == '+'):
+        country = 'N/A'
+    return country

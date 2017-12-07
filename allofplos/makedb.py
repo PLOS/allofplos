@@ -16,8 +16,8 @@ from peewee import Model, CharField, ForeignKeyField, TextField, \
     DateTimeField, BooleanField, IntegerField, IntegrityError
 from playhouse.sqlite_ext import SqliteExtDatabase
 
-from allofplos.transformations import filename_to_doi, convert_country
-from allofplos.article_class import Article
+from .transformations import filename_to_doi, convert_country
+from .article_class import Article
 
 corpusdir = 'allofplos/allofplos_xml'
 

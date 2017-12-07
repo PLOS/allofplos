@@ -42,16 +42,20 @@ Install Python dependencies inside the newly created virtual environment:
 How to run the program
 ----------------------
 
-From inside the allofplos directory, run:
+Execute the following command.
 
-``(allofplos)$ python plos_corpus.py``
+``(allofplos)$ python -m allofplos.plos_corpus``
 
 The first time it runs it will download a >4.4 Gb zip file
 (**allofplos_xml.zip**) with all the XML files inside.
 **Note**: Make sure that you have enough space in your device for the
 zip file and for it content before running this command (at least 30Gb).
 After this file is downloaded, it will extract it contents into
-allofplos\_xml directory.
+allofplos\_xml directory inside your installation of `allofplos`.
+
+If you want to see the directory on your file system where this is installed run
+
+``python -c "from allofplos.plos_regex import corpusdir; print(corpusdir)"``
 
 If you ever downloaded the corpus before, it will make an incremental
 update to the existing corpus, the script checks for and then downloads
@@ -86,17 +90,21 @@ Here’s what the print statements might look like on a typical run:
 How to run the tests
 --------------------
 
-From the project directory, run:
+If you have pytest installed, from anywhere in the allofplos directory, run:
 
-``(allofplos)$ python -m tests.unittests``
+``(allofplos)$ pytest``
+
+If you do not have pytest installed, from the top-level project directory, run:
+
+``(allofplos)$ python -m allofplos.tests.test_unittests``
 
 Should return something like this:
 
 ::
 
-      ....
+      ......
       ----------------------------------------------------------------------
-      Ran 4 tests in 0.687s
+      Ran 6 tests in 3.327s
 
       OK
 
