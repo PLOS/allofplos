@@ -30,7 +30,6 @@ import tarfile
 import zipfile
 
 import lxml.etree as et
-import progressbar
 import requests
 from tqdm import tqdm
 
@@ -230,9 +229,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         existing_articles = [filename_to_doi(file) for file in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
 
-    max_value = len(dois)
-    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-    for i, doi in enumerate(sorted(dois)):
+    for doi in tqdm(sorted(dois)):
         url = URL_TMP.format(doi)
         articleXML = et.parse(url)
         article_path = doi_to_path(doi, directory=tempdir)
@@ -242,8 +239,6 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
                 file.write(et.tostring(articleXML, method='xml', encoding='unicode'))
             if not plos_network:
                 time.sleep(1)
-        bar.update(i+1)
-    bar.finish()
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
 
@@ -377,14 +372,10 @@ def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amende
         print(amended_article_list)
     amended_updated_article_list = []
     print("Checking amended articles")
-    max_value = len(amended_article_list)
-    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-    for i, article in enumerate(amended_article_list):
+    for article in tqdm(amended_article_list):
         updated = download_updated_xml(article)
         if updated:
             amended_updated_article_list.append(article)
-        bar.update(i+1)
-    bar.finish()
     print(len(amended_updated_article_list), 'amended articles downloaded with new xml.')
     return amended_updated_article_list
 
@@ -402,22 +393,15 @@ def get_uncorrected_proofs_list():
         print("Creating new text list of uncorrected proofs from scratch.")
         article_files = listdir_nohidden(corpusdir)
         uncorrected_proofs_list = []
-        max_value = len(article_files)
-        bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-        for i, article_file in enumerate(article_files):
-            bar.update(i+1)
+        for article_file in tqdm(article_files):
             article = Article.from_filename(article_file)
             if article.proof == 'uncorrected-proof':
                 uncorrected_proofs_list.append(article.doi)
-        bar.finish()
         print("Saving uncorrected proofs.")
         with open(uncorrected_proofs_text_list, 'w') as file:
             max_value = len(uncorrected_proofs_list)
-            bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-            for i, item in enumerate(sorted(uncorrected_proofs_list)):
+            for item in tqdm(sorted(uncorrected_proofs_list)):
                 file.write("%s\n" % item)
-                bar.update(i+1)
-            bar.finish()
     return uncorrected_proofs_list
 
 
