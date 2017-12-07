@@ -848,7 +848,8 @@ class Article():
         """
         For a single article in a directory, check whether it is an 'uncorrected proof' or a
         'VOR update' to the uncorrected proof, or neither.
-        :return: proof status if it exists; otherwise, None
+        :return: proof status if it exists
+        :rtype: str
         """
         xpath_results = self.get_element_xpath()
         proof = ''
