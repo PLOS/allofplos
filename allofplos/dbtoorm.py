@@ -1,6 +1,13 @@
+""" This is an example on how to convert the SQLite DB into a class model to
+    make queries without using SQL syntax. This example uses peewee as ORM.
+    It should be used as a template, the end user could edit it to fit their
+    needs.
+    TODO: Add more sample queries.
+"""
+
 from peewee import *
 
-database = SqliteDatabase('/home/sbassi/projects/encuestas/survey/ploscorpus.db', **{})
+database = SqliteDatabase('ploscorpus.db', **{})
 
 class UnknownField(object):
     def __init__(self, *_, **__): pass
@@ -71,9 +78,7 @@ class Coauthorplosarticle(BaseModel):
     class Meta:
         db_table = 'coauthorplosarticle'
 
-#j = Journal.select().where(Journal.journal=='PLOS ONE')
-#print(j)
-#j[0].id
+
 
 query = (Plosarticle
          .select()
@@ -88,11 +93,7 @@ query = (Plosarticle
 
 for papers in query:
     print(papers.doi)
-
 print(query.count())
-
-
-#Cuales son las 10 instituciones que mas publican en Plos
 
 query = (Plosarticle
          .select()
@@ -104,7 +105,3 @@ query = (Plosarticle
          .where(Plosarticle.created_date > '2008-1-1')
          .where(Journal.journal == 'PLOS Computational Biology')
          )
-
-
-
-#import pdb; pdb.set_trace()
