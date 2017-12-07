@@ -150,7 +150,9 @@ def convert_country(country):
     if (country and 'China' in country) or \
             country == 'Chin' or country == 'CHINA':
         country = 'China'
-    elif country and 'Brazil' in country:
+    elif country and 'Brazil' in country or \
+            country == 'Brasil' or \
+            country == 'ITA - Instituto Tecnologico de Aeronautica (':
         country = 'Brazil'
     elif country and 'Argentina' in country:
         country = 'Argentina'
@@ -170,7 +172,10 @@ def convert_country(country):
             country) or country == 'United States' or country \
             == 'USA' or 'Florida' in country or \
             'California' in country or\
-            country == 'United State of America' or country == 'Virginia':
+            country == 'National Reference Centre for' or \
+            country == 'United State of America' or \
+            country == 'U.S.A.' or \
+            country == 'Virginia':
         country = 'United States of America'
     elif country=='Republic of Panamá' or country=='Panamá' or 'Panama' in country:
         country = 'Panama'
@@ -200,14 +205,15 @@ def convert_country(country):
         country = 'Brazil'
     elif country == 'México' or 'Mexico' in country:
         country = 'Mexico'
-        Slowakia
+    elif 'Slowakia' in country:
+        country = 'Slowakia'
     elif country == 'Korea' or 'Republic of Korea' in country:
         country = 'South Korea'
     elif country == 'United Kindgom':
         country = 'United Kingdom'
     elif country and 'Netherlands' in country:
         country = 'Netherlands'
-    elif country == 'Commonwealth of Australia' or 'Australian' in country:
+    elif country == 'Commonwealth of Australia' or 'Australia' in country:
         country = 'Australia'
     elif 'Singapore' in country:
         country = 'Singapore'
