@@ -330,8 +330,8 @@ def download_updated_xml(article_file,
             # else:
             #     updated = False
         if get_new:
-            article_path = os.path.join(tempdir, os.path.basename(article_file))
-            with open(article_path, 'w') as file:
+            article_new = Article(article.doi, directory=tempdir)
+            with open(article_new.filename, 'w') as file:
                 file.write(articleXML_remote)
             updated = True
     return updated
