@@ -201,10 +201,11 @@ class Article():
                                  'custom-meta',
                                  'meta-value')
         tag_location = '/'.join(tag_path_elements)
-        if remote is False:
-            return self.root.xpath(tag_location)
+        if remote:
+            root = self.remote_tree.getroot()
         else:
-            return self.remote_tree.getroot().xpath(tag_location)
+            root = self.root
+        return root.xpath(tag_location)
 
     def get_plos_journal(self, caps_fixed=True):
         """For an individual PLOS article, get the journal it was published in.
