@@ -120,7 +120,7 @@ def doi_to_url(doi, plos_network=False):
     return URL_TMP.format(doi)
 
 
-def doi_to_path(doi, directory):
+def doi_to_path(doi, directory=corpusdir):
     """
     For a given PLOS DOI, return the relative path to that local article
     For DOIs that contain the word 'annotation', searches online version of the article xml to extract
