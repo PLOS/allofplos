@@ -53,7 +53,6 @@ class Article():
         self._tree = None
         self._local = None
         self._contributors = None
-        self._amendment = None  # Will probably need to be an article subclass
 
     @property
     def doi(self):
@@ -707,21 +706,6 @@ class Article():
                   .format(self.doi))
         return contrib_dict_list
 
-    def amendment_bool(self):
-        """Whether the JATS article type is a correction, retraction, or expression of concern.
-
-        These are the three article types ('amendments') that potentially warrant a change in the original article
-        that they reference (i.e., the 'related-doi'.)
-        See https://jats.nlm.nih.gov/archiving/tag-library/1.1/attribute/article-type.html
-        :returns: True if an amendment article type, False if not
-        :rtype: {bool}
-        """
-        if self.type_ in ['correction', 'retraction', 'expression-of-concern']:
-            self._amendment = True
-        else:
-            self._amendment = False
-        return self._amendment
-
     def get_related_dois(self):
         """For a given article, get the list of DOIs of related PLOS articles.
         Creates a dictionary of related dois & their type from the <related-articles> xpath location
@@ -1075,16 +1059,18 @@ class Article():
 
     @property
     def amendment(self):
-        """Boolean for whether the JATS article type (`self.type_`)is one of the three 'amendment' types:
-        correction, retraction, or expression of concern.
+        """Whether the JATS article type is a correction, retraction, or expression of concern.
 
-        :returns: Whether the article is an amendment article type
+        These are the three article types ('amendments') that potentially warrant a change in the original article
+        that they reference (i.e., the 'related-doi'.)
+        See https://jats.nlm.nih.gov/archiving/tag-library/1.1/attribute/article-type.html
+        :returns: True if an amendment article type, False if not
         :rtype: {bool}
         """
-        if self._amendment is None:
-            return self.amendment_bool()
+        if self.type_ in ['correction', 'retraction', 'expression-of-concern']:
+            return True
         else:
-            return self._amendment
+            return False
 
     @property
     def related_dois(self):
