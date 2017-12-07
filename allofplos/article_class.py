@@ -720,7 +720,7 @@ class Article():
                                                                              "related-article"])
         related_article_dict = {}
 
-        try:
+        if related_article_elements:
             for elem in related_article_elements:
                 related_doi = elem.attrib
                 related_article = related_doi['{http://www.w3.org/1999/xlink}href']
@@ -731,7 +731,7 @@ class Article():
                 else:
                     # there is more than one article with the same related-article-type
                     related_article_dict[elem.attrib['related-article-type']].append(related_article)
-        except IndexError:
+        else:
             # no related articles exist
             pass
         return related_article_dict
