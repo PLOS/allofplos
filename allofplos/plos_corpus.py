@@ -10,7 +10,7 @@ Check whether list of DOI files is complete
     * query Solr API for list of new articles (limited by date)
     * create list of missing DOIs, by comparing against existing list of DOIs or file names
 Update by downloading articles content-repo if local store is not complete
-Check for and download corrected articles that have been issued corrections
+Check for and download amended articles that have been issued amendments
 Check for and download versions of record (VOR) for uncorrected proofs
 Zip folder down, appending when able
 Create log file for actions that can be referenced
@@ -38,7 +38,8 @@ from . import corpusdir, newarticledir
 
 from .plos_regex import validate_doi
 from .transformations import (BASE_URL_API, EXT_URL_TMP, INT_URL_TMP, URL_TMP, filename_to_doi,
-                                       doi_to_path)
+                              doi_to_path)
+from .article_class import Article
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -272,145 +273,23 @@ def move_articles(source, destination):
         shutil.rmtree(source)
 
 
-def get_article_xml(article_file, tag_path_elements=None):
-    """
-    For a local article file, read its XML tree
-    Can also interpret DOIs
-    Defaults to reading the tree location for uncorrected proofs/versions of record
-    :param article_file: the xml file for a single article
-    :param tag_path_elements: xpath location in the XML tree of the article file
-    :return: content of article file at that xpath location
-    """
-    if tag_path_elements is None:
-        tag_path_elements = ('/',
-                             'article',
-                             'front',
-                             'article-meta',
-                             'custom-meta-group',
-                             'custom-meta',
-                             'meta-value')
-
-    try:
-        article_tree = et.parse(article_file)
-    except OSError:
-        if validate_doi(article_file):
-            article_file = doi_to_path(article_file)
-        elif article_file.endswith('xml'):
-            article_file = article_file[:-3] + 'XML'
-        elif article_file.endswith('XML'):
-            article_file = article_file[:-3] + 'xml'
-        elif article_file.endswith('nxml'):
-            article_file = article_file[:-3] + 'nxml'
-        elif not article_file.endswith('.'):
-            article_file = article_file + '.xml'
-        else:
-            article_file = article_file + 'xml'
-        article_tree = et.parse(article_file)
-    articleXML = article_tree.getroot()
-    tag_location = '/'.join(tag_path_elements)
-    return articleXML.xpath(tag_location)
-
-
-def check_article_type(article_file):
-    """
-    For an article file, get its JATS article type
-    Use primarily to find Correction (and thereby corrected) articles
-    :param article_file: the xml file for a single article
-    :return: JATS article_type at that xpath location
-    """
-    article_type = get_article_xml(article_file=article_file,
-                                   tag_path_elements=["/",
-                                                      "article"])
-    return article_type[0].attrib['article-type']
-
-
-def get_related_article_doi(article_file, corrected=True):
-    """
-    For an article file, get the DOI of the first related article
-    Use primarily to map Correction notification articles to articles that have been corrected
-    NOTE: what to do if more than one related article?
-    :param article_file: the xml file for a single article
-    :param corrected: default true, part of the Corrections workflow, more strict in tag search
-    :return: tuple of partial doi string at that xpath location, related_article_type
-    """
-    r = get_article_xml(article_file=article_file,
-                        tag_path_elements=["/",
-                                           "article",
-                                           "front",
-                                           "article-meta",
-                                           "related-article"])
-    related_article = ''
-    if corrected:
-        for x in r:
-            if x.attrib['related-article-type'] in ('corrected-article', 'companion'):
-                related_article_type = x.attrib['related-article-type']
-                corrected_doi = x.attrib['{http://www.w3.org/1999/xlink}href']
-                related_article = corrected_doi.lstrip('info:doi/')
-                break
-    else:
-        r = r[0].attrib
-        related_article_type = r['related-article-type']
-        related_article = r['{http://www.w3.org/1999/xlink}href']
-        related_article = related_article.lstrip('info:doi/')
-
-    return related_article, related_article_type
-
-
-def get_article_pubdate(article_file, date_format='%d %m %Y'):
-    """
-    For an individual article, get its date of publication
-    :param article_file: file path/DOI of the article
-    :param date_format: string format used to convert to datetime object
-    :return: datetime object with the date of publication
-    """
-    day = ''
-    month = ''
-    year = ''
-    raw_xml = get_article_xml(article_file=article_file,
-                              tag_path_elements=["/",
-                                                 "article",
-                                                 "front",
-                                                 "article-meta",
-                                                 "pub-date"])
-    for x in raw_xml:
-        for name, value in x.items():
-            if value == 'epub':
-                date_fields = x
-                for y in date_fields:
-                    if y.tag == 'day':
-                        day = y.text
-                    if y.tag == 'month':
-                        month = y.text
-                    if y.tag == 'year':
-                        year = y.text
-    date = (day, month, year)
-    string_date = ' '.join(date)
-    pubdate = datetime.datetime.strptime(string_date, date_format)
-    return pubdate
-
-
-def compare_article_pubdate(article, days=22):
+def compare_article_pubdate(doi, days=22, directory=corpusdir):
     """
     Check if an article's publication date was more than 3 weeks ago.
-    :param article: doi/file of the article
+    :param doi: doi of the article
     :param days: how long ago to compare the publication date (default 22 days)
+    :param directory: directory the article file is located in (defaults to corpusdir)
     :return: boolean for whether the pubdate was older than the days value
     """
+    article = Article(doi, directory=directory)
     try:
-        pubdate = get_article_pubdate(article)
-        today = datetime.datetime.now()
-        three_wks_ago = datetime.timedelta(days)
-        compare_date = today - three_wks_ago
-        return pubdate < compare_date
-    except OSError:
-        article = os.path.join(newarticledir, article.split('/')[1].rstrip('.xml')+'.xml')
-        pubdate = get_article_pubdate(article)
+        pubdate = article.pubdate
         today = datetime.datetime.now()
         three_wks_ago = datetime.timedelta(days)
         compare_date = today - three_wks_ago
         return pubdate < compare_date
     except ValueError:
-        print("Pubdate error in {}".format(article))
+        print("Pubdate error in {}".format(doi))
 
 
 def download_updated_xml(article_file,
@@ -424,22 +303,19 @@ def download_updated_xml(article_file,
     :param vor_check: whether checking to see if uncorrected proof is updated
     :return: boolean for whether update was available & downloaded
     """
-    doi = filename_to_doi(article_file)
+    article = Article.from_filename(article_file)
     try:
         os.mkdir(tempdir)
     except FileExistsError:
         pass
-    url = URL_TMP.format(doi)
-    articletree_remote = et.parse(url)
-    articleXML_remote = et.tostring(articletree_remote, method='xml', encoding='unicode')
+    articleXML_remote = article.get_remote_xml()
     if not article_file.endswith('.xml'):
         article_file += '.xml'
     try:
-        articletree_local = et.parse(os.path.join(corpusdir, os.path.basename(article_file)))
+        articleXML_local = article.xml
     except OSError:
-        article_file_alt = os.path.join(tempdir, os.path.basename(doi_to_path(article_file)))
-        articletree_local = et.parse(article_file_alt)
-    articleXML_local = et.tostring(articletree_local, method='xml', encoding='unicode')
+        article.directory = newarticledir
+        articleXML_local = article.xml
 
     if articleXML_remote == articleXML_local:
         updated = False
@@ -449,87 +325,68 @@ def download_updated_xml(article_file,
         if vor_check:
             # make sure that update is to a VOR for uncorrected proof
             get_new = False
-            path_parts = ['/',
-                          'article',
-                          'front',
-                          'article-meta',
-                          'custom-meta-group',
-                          'custom-meta',
-                          'meta-value']
-            r = articletree_remote.xpath("/".join(path_parts))
-            for x in r:
-                if x.text == 'vor-update-to-uncorrected-proof':
-                    get_new = True
-                    break
+            if article.remote_proof == 'vor_update':
+                get_new = True
+            # else:
+            #     updated = False
         if get_new:
-            article_path = os.path.join(tempdir, os.path.basename(article_file))
-            with open(article_path, 'w') as file:
+            article_new = Article(article.doi, directory=tempdir)
+            with open(article_new.filename, 'w') as file:
                 file.write(articleXML_remote)
             updated = True
     return updated
 
 
-def check_for_corrected_articles(directory=newarticledir, article_list=None):
+def check_for_amended_articles(directory=newarticledir, article_list=None):
     """
-    For articles in the temporary download directory, check if article_type is correction
-    If correction, surface the DOI of the article being corrected
-    Use with download_corrected_articles
+    For articles in the temporary download directory, check if article_type is an amendment
+    If amendment, surface the DOI of the article being amended
+    Use with `download_amended_articles`
+    For more information about the amendment type, see `amendment` in the Article class
     :param article: the filename for a single article
     :param directory: directory where the article file is, default is newarticledir
-    :return: list of filenames to existing local files for articles issued a correction
+    :return: list of filenames to existing local files for articles issued an amendment
     """
-    corrected_doi_list = []
+    amended_doi_list = []
     if article_list is None:
         article_list = listdir_nohidden(directory)
     for article_file in article_list:
-        article_type = check_article_type(article_file=article_file)
-        if article_type == 'correction':
-            corrected_article = get_related_article_doi(article_file)[0]
-            corrected_doi_list.append(corrected_article)
-    corrected_article_list = [doi_to_path(doi) if os.path.exists(doi_to_path(doi)) else
-                              doi_to_path(doi, directory=newarticledir) for doi in list(corrected_doi_list)]
-    print(len(corrected_article_list), 'corrected articles found.')
-    return corrected_article_list
+        article = Article.from_filename(article_file)
+        article.directory = directory
+        if article.amendment:
+            amended_doi_list.extend(article.related_dois)
+    amended_article_list = [Article(doi).filename if Article(doi).local else
+                            doi_to_path(doi, directory=directory) for doi in list(amended_doi_list)]
+    print(len(amended_article_list), 'amended articles found.')
+    return amended_article_list
 
 
-def download_corrected_articles(directory=corpusdir, tempdir=newarticledir, corrected_article_list=None):
-    """
-    For a list of articles that have been corrected, check if the xml was updated
-    Many corrections don't result in XML changes
+def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amended_article_list=None):
+    """For a list of articles that have been amended, check if the xml was also updated.
 
-    Use with download_corrected articles
+    Use with `check_for_amended_articles`
+    Many amendments don't result in XML changes
+    For more information about the amendment type, see `amendment` in the Article class
     :param article: the filename for a single article
     :param directory: directory where the article file is, default is newarticledir
     :param tempdir: where new articles are downloaded to-
     :return: list of DOIs for articles downloaded with new XML versions
     """
-    if corrected_article_list is None:
-        corrected_article_list = check_for_corrected_articles(directory)
-    corrected_updated_article_list = []
-    print("Downloading corrected articles")
-    max_value = len(corrected_article_list)
+    if amended_article_list is None:
+        amended_article_list = check_for_amended_articles(directory)
+        print(amended_article_list)
+    amended_updated_article_list = []
+    print("Checking amended articles")
+    max_value = len(amended_article_list)
     bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-    for i, article in enumerate(corrected_article_list):
+    for i, article in enumerate(amended_article_list):
         updated = download_updated_xml(article)
         if updated:
-            corrected_updated_article_list.append(article)
+            amended_updated_article_list.append(article)
         bar.update(i+1)
     bar.finish()
-    print(len(corrected_updated_article_list), 'corrected articles downloaded with new xml.')
-    return corrected_updated_article_list
-
-
-def check_if_uncorrected_proof(article_file):
-    """
-    For a single article in a directory, check whether it is the 'uncorrected proof' type
-    :param article: Partial DOI/filename of the article
-    :return: Boolean for whether article is an uncorrected proof (true = yes, false = no)
-    """
-    tree = get_article_xml(article_file)
-    for subtree in tree:
-        if subtree.text == 'uncorrected-proof':
-            return True
-    return False
+    print(len(amended_updated_article_list), 'amended articles downloaded with new xml.')
+    return amended_updated_article_list
 
 
 def get_uncorrected_proofs_list():
@@ -549,8 +406,9 @@ def get_uncorrected_proofs_list():
         bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
         for i, article_file in enumerate(article_files):
             bar.update(i+1)
-            if check_if_uncorrected_proof(article_file):
-                uncorrected_proofs_list.append(filename_to_doi(article_file))
+            article = Article.from_filename(article_file)
+            if article.proof == 'uncorrected-proof':
+                uncorrected_proofs_list.append(article.doi)
         bar.finish()
         print("Saving uncorrected proofs.")
         with open(uncorrected_proofs_text_list, 'w') as file:
@@ -581,15 +439,17 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
     articles = listdir_nohidden(directory)
     new_proofs = 0
     for article_file in articles:
-        if check_if_uncorrected_proof(article_file):
-            uncorrected_proofs_list.append(filename_to_doi(article_file))
+        article = Article.from_filename(article_file)
+        article.directory = directory
+        if article.proof == 'uncorrected_proof':
+            uncorrected_proofs_list.append(article.doi)
             new_proofs += 1
     # Copy all uncorrected proofs from list to clean text file
     with open(text_list, 'w') as file:
         for item in sorted(set(uncorrected_proofs_list)):
             file.write("%s\n" % item)
     if uncorrected_proofs_list:
-        print("{} uncorrected proofs found. {} total in list.".format(new_proofs, len(uncorrected_proofs_list)))
+        print("{} new uncorrected proofs found. {} total in list.".format(new_proofs, len(uncorrected_proofs_list)))
     else:
         print("No uncorrected proofs found in folder or in existing list.")
     return uncorrected_proofs_list
@@ -629,7 +489,7 @@ def check_for_vor_updates(uncorrected_list=None):
         vor_updates_available.extend(vor_chunk_results)
 
     if vor_updates_available:
-        print(len(vor_updates_available), "VOR updates to download.")
+        print(len(vor_updates_available), "new VOR updates indexed in Solr.")
         logging.info("VOR updates to download.")
     else:
         print("No new VOR articles indexed in Solr.")
@@ -711,7 +571,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
         print(len(proofs_download_list),
               "VOR articles directly downloaded.")
     else:
-        print("No new VOR articles found.")
+        print("No other new VOR articles found.")
     return proofs_download_list
 
 
@@ -719,8 +579,8 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
                             plos_network=False):
     """
     For a list of new articles to get, first download them from content-repo to the temporary directory
-    Next, check these articles for uncorrected proofs and article_type corrections
-    Act on available VOR updates & corrected articles
+    Next, check these articles for uncorrected proofs and article_type amendments
+    Act on available VOR updates & amended articles
     Then, move to corpus directory where the rest of the articles are
     :param article_list: List of new articles to download
     :param text_list: List of uncorrected proofs to check for vor updates
@@ -728,8 +588,8 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
     :param destination: Directory where new articles are to be moved to
     """
     repo_download(article_list, tempdir, plos_network=plos_network)
-    corrected_articles = check_for_corrected_articles(directory=tempdir)
-    download_corrected_articles(corrected_article_list=corrected_articles)
+    amended_articles = check_for_amended_articles(directory=tempdir)
+    download_amended_articles(amended_article_list=amended_articles)
     download_vor_updates(plos_network=plos_network)
     check_for_uncorrected_proofs(directory=tempdir)
     move_articles(tempdir, destination)
@@ -924,9 +784,6 @@ def download_corpus_metadata_files(csv_abstracts=True, csv_no_abstracts=True, sq
         print("Extraction complete.")
 
 
-
-
-
 def main():
     """
     Entry point for the program. This is used when the program is used as a
@@ -943,7 +800,7 @@ def main():
         plos_network = True
     else:
         URL_TMP = EXT_URL_TMP
-    # Step 0: Initialize first copy of repository]
+    # Step 0: Initialize first copy of repository
     try:
         corpus_files = [name for name in os.listdir(corpusdir) if os.path.isfile(
                         os.path.join(corpusdir, name))]
@@ -965,7 +822,7 @@ def main():
         # For every doi in dois_needed_list, grab the accompanying XML from content-repo
         # If no new articles, don't run any other cells
         # Check if articles are uncorrected proofs
-        # Check if corrected articles linked to new corrections articles are updated
+        # Check if amended articles linked to new amendment articles are updated
         # Merge new XML into folder
         # If need to bulk download, please start here:
         # https://drive.google.com/open?id=0B_JDnoghFeEKLTlJT09IckMwOFk

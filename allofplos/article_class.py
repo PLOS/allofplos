@@ -53,7 +53,6 @@ class Article():
         self._tree = None
         self._local = None
         self._contributors = None
-        self._correct_or_retract = None  # Will probably need to be an article subclass
 
     @property
     def doi(self):
@@ -69,13 +68,13 @@ class Article():
     def text_viewer(self):
         """Command line application for viewing text to be used with 
         open_in_viewer.
-        
-        Defaults to "open", which opens in whatever the default application is 
+
+        Defaults to "open", which opens in whatever the default application is
         in your operating system for files ending in ".xml".
 
         Persists across article objects.
         Use with self.open_in_viewer() to open an article of interest.
-        
+
         Check your text viewers documentation to learn how to launch it from the command line.
         For Sublime Text, see http://docs.sublimetext.info/en/latest/command_line/command_line.html
         :returns: command line shortcut for the text viewer
@@ -115,7 +114,6 @@ class Article():
         For parsing and viewing the XML of a local article. Should not be used for hashing
         Excludes <back> element (including references list) for easier viewing
         :param exclude_refs: remove references from the article tree (eases print viewing)
-        :type pretty_print: bool, optional
         """
         parser = et.XMLParser(remove_blank_text=True)
         tree = et.parse(self.filename, parser)
@@ -159,7 +157,7 @@ class Article():
         :returns: string of entire remote article file
         :rtype: {str}
         """
-        remote_xml = et.tostring(self.remote_element_tree,
+        remote_xml = et.tostring(self.remote_tree,
                                  method='xml',
                                  encoding='unicode')
         return remote_xml
@@ -183,13 +181,14 @@ class Article():
         """
         subprocess.call(["open", self.page])
 
-    def get_element_xpath(self, tag_path_elements=None):
+    def get_element_xpath(self, tag_path_elements=None, remote=False):
         """For a local article's root element, grab particular sub-elements via XPath location.
 
         Defaults to reading the element location for uncorrected proofs/versions of record
         The basis of every method and property looking for particular metadata fields
         :param article_root: the xml file for a single article
         :param tag_path_elements: xpath location in the XML tree of the article file
+        :param remote: whether using the remote XML in self.remote_tree (defaults to False)
         :return: list of elements in the article with that xpath location
         """
         if tag_path_elements is None:
@@ -201,7 +200,11 @@ class Article():
                                  'custom-meta',
                                  'meta-value')
         tag_location = '/'.join(tag_path_elements)
-        return self.root.xpath(tag_location)
+        if remote:
+            root = self.remote_tree.getroot()
+        else:
+            root = self.root
+        return root.xpath(tag_location)
 
     def get_plos_journal(self, caps_fixed=True):
         """For an individual PLOS article, get the journal it was published in.
@@ -235,13 +238,12 @@ class Article():
             journal = (' ').join(journal)
         return journal
 
-    def get_dates(self, string_=False, string_format='%Y-%m-%d', debug=False):
+    def get_dates(self, string_=False, string_format='%Y-%m-%d'):
         """For an individual article, get all of its dates, including publication date (pubdate), submission date.
 
         Defaults to datetime objects
         :param string_: whether to return dates as a dictionary of strings
         :param string_format: if string_ is True, the format to return the dates in
-        :param debug: whether to check that the dates are in the correct order, defaults to False
         :return: dict of date types mapped to datetime objects for that article
         :rtype: {dict}
         """
@@ -278,11 +280,6 @@ class Article():
                     print('Error getting history dates for {}'.format(self.doi))
                     date = ''
                 dates[date_type] = date
-        if debug:
-            # check whether date received is before date accepted is before pubdate
-            if dates.get('received', '') and dates.get('accepted', '') in dates:
-                if not dates['received'] <= dates['accepted'] <= dates['epub']:
-                    print('{}: dates in wrong order'.format(self.doi))
 
         if string_:
             # can return dates as strings instead of datetime objects if desired
@@ -291,6 +288,35 @@ class Article():
                     dates[key] = value.strftime(string_format)
 
         return dates
+
+    def dates_debug(self):
+        """Whether the dates in self.get_dates() are in the correct order.
+
+        check whether date received is before date accepted, is before pubdate
+        accounts for potentially missing date fields
+        :return: if dates are in right order or not
+        :rtype: bool
+        """
+        dates = self.get_dates()
+        if dates.get('received', '') and dates.get('accepted', ''):
+            if dates['received'] <= dates['accepted'] <= dates['epub']:
+                order_correct = True
+            else:
+                order_correct = False
+        elif dates.get('received', ''):
+            if dates['received'] <= dates['epub']:
+                order_correct = True
+            else:
+                order_correct = False
+        elif dates.get('accepted', ''):
+            if dates['accepted'] <= dates['epub']:
+                order_correct = True
+            else:
+                order_correct = False
+        else:
+            order_correct = True
+
+        return order_correct
 
     def get_aff_dict(self):
         """For a given PLOS article, get list of contributor-affiliated institutions.
@@ -495,14 +521,18 @@ class Article():
                             initials_list.extend(contributor_initials)
                             contrib_dict[contribution] = contributor_initials
                         except (IndexError, AttributeError) as e:
-                            print('Error parsing contributions item {}: {}'.format(self.doi, et.tostring(con_item, encoding='unicode', method='xml')))
+                            print('Error parsing contributions item {}: {}'.format(self.doi, et.tostring(con_item,
+                                                                                                         encoding='unicode',
+                                                                                                         method='xml')))
                             pass
                 except IndexError:
                     # for single strings, though it doesn't parse all of them correctly.
                     # Example: '10.1371/journal.pone.0050782'
                     contributions = note[0].text
                     if contributions is None:
-                        print('Error parsing contributions for {}: {}'.format(self.doi, et.tostring(con_element, encoding='unicode', method='xml')))
+                        print('Error parsing contributions for {}: {}'.format(self.doi, et.tostring(con_element,
+                                                                                                    encoding='unicode',
+                                                                                                    method='xml')))
                         return {}
                     contribution_list = re.split(': |\. ', contributions)
                     contribb_dict = dict(list(zip(contribution_list[::2], contribution_list[1::2])))
@@ -676,47 +706,35 @@ class Article():
                   .format(self.doi))
         return contrib_dict_list
 
-    def correct_or_retract_bool(self):
-        """Whether the JATS article type is a correction or retraction.
-
-        See https://jats.nlm.nih.gov/archiving/tag-library/1.1/attribute/article-type.html
-        :returns: True if a correction or retraction, False if not
-        :rtype: {bool}
-        """
-        if self.type_ == 'correction' or self.type_ == 'retraction':
-            self._correct_or_retract = True
-        else:
-            self._correct_or_retract = False
-        return self._correct_or_retract
-
-    def get_related_doi(self):
-        """For an article file, get the DOI of the first related article.
-
-        More strict in tag search if article is correction type
-        Use primarily to map correction and retraction notifications to articles that have been corrected
-        NOTE: what to do if more than one related article?
-        :return: first doi at that xpath location
+    def get_related_dois(self):
+        """For a given article, get the list of DOIs of related PLOS articles.
+        Creates a dictionary of related dois & their type from the <related-articles> xpath location
+        Use primarily to map amendment notifications to articles that have been amended
+        :return: dictionary of related DOIs
+        :rtype: dict
         """
         related_article_elements = self.get_element_xpath(tag_path_elements=["/",
                                                                              "article",
                                                                              "front",
                                                                              "article-meta",
                                                                              "related-article"])
-        related_article = ''
-        if self.type_ == 'correction':
-            for element in related_article_elements:
-                if element.attrib['related-article-type'] in ('corrected-article', 'companion'):
-                    corrected_doi = element.attrib['{http://www.w3.org/1999/xlink}href']
-                    related_article = corrected_doi.lstrip('info:doi/')
-                    break
-        else:
-            try:
-                related_article_element = related_article_elements[0].attrib
-                related_article = related_article_element['{http://www.w3.org/1999/xlink}href']
+        related_article_dict = {}
+
+        if related_article_elements:
+            for elem in related_article_elements:
+                related_doi = elem.attrib
+                related_article = related_doi['{http://www.w3.org/1999/xlink}href']
                 related_article = related_article.lstrip('info:doi/')
-            except IndexError:
-                return ''
-        return related_article
+                if not related_article_dict.get(elem.attrib['related-article-type'], None):
+                    # begin building the list of DOIs with that related-article-type
+                    related_article_dict[elem.attrib['related-article-type']] = [related_article]
+                else:
+                    # there is more than one article with the same related-article-type
+                    related_article_dict[elem.attrib['related-article-type']].append(related_article)
+        else:
+            # no related articles exist
+            pass
+        return related_article_dict
 
     def check_if_link_works(self):
         """See if a link is valid (i.e., returns a '200' to the HTML request).
@@ -830,7 +848,8 @@ class Article():
         """
         For a single article in a directory, check whether it is an 'uncorrected proof' or a
         'VOR update' to the uncorrected proof, or neither.
-        :return: proof status if it exists; otherwise, None
+        :return: proof status if it exists
+        :rtype: str
         """
         xpath_results = self.get_element_xpath()
         proof = ''
@@ -842,7 +861,23 @@ class Article():
         return proof
 
     @property
-    def remote_element_tree(self):
+    def remote_proof(self):
+        """
+        For a single article online, check whether it is an 'uncorrected proof' or a
+        'VOR update' to the uncorrected proof, or neither.
+        :return: proof status if it exists; otherwise, None
+        """
+        xpath_results = self.get_element_xpath(remote=True)
+        proof = ''
+        for result in xpath_results:
+            if result.text == 'uncorrected-proof':
+                proof = 'uncorrected_proof'
+            elif result.text == 'vor-update-to-uncorrected-proof':
+                proof = 'vor_update'
+        return proof
+
+    @property
+    def remote_tree(self):
         """Gets the lxml element tree of an article from its remote URL.
 
         Can compare local (self.xml) to remote versions of XML
@@ -1024,30 +1059,74 @@ class Article():
         return abstract_text
 
     @property
-    def correct_or_retract(self):
-        """Boolean for whether the JATS article type is a correction or retraction.
+    def amendment(self):
+        """Whether the JATS article type is a correction, retraction, or expression of concern.
 
-        :returns: Whether the article is a correction or retraction
+        These are the three article types ('amendments') that potentially warrant a change in the original article
+        that they reference (i.e., the 'related-doi'.)
+        See https://jats.nlm.nih.gov/archiving/tag-library/1.1/attribute/article-type.html
+        :returns: True if an amendment article type, False if not
         :rtype: {bool}
         """
-        if self._correct_or_retract is None:
-            return self.correct_or_retract_bool()
+        if self.type_ in ['correction', 'retraction', 'expression-of-concern']:
+            return True
         else:
-            return self._correct_or_retract
+            return False
 
     @property
-    def related_doi(self):
-        """DOI related to current article
+    def related_dois(self):
+        """PLOS DOIs related to current article.
 
-        Only works for corrections and retractions, the two JATS article types that point
-        at other articles.
-        :returns: First related DOI
-        :rtype: {str}
+        Compresses the values of `self.get_related_dois()` dictionary into a single list of DOI strings
+        More strict for which keys to include for corrections, retractions, and expressions of concern, the three
+        amendment article types.
+        :returns: list of related DOIs
+        :rtype: list
         """
-        if self.correct_or_retract is True:
-            return self.get_related_doi()
+        doi_list = []
+        related_doi_dict = self.get_related_dois()
+        if self.amendment:
+            # only use certain keys if an amendment article
+            if self.type_ == 'correction':
+                attrib_name = 'corrected-article'
+            elif self.type_ == 'retraction':
+                attrib_name = 'retracted-article'
+            elif self.type_ == 'expression-of-concern':
+                attrib_name = 'object-of-concern'
+            for k, v in related_doi_dict.items():
+                if k == attrib_name:
+                    doi_list = v
+                    break
+            if not doi_list:
+                doi_list = [v for v in related_doi_dict.values()]
+                print('{} has incorrect related_doi field attribute'.format(self.doi))
+
         else:
-            return ''
+            # flatten all dict values if not an amendment article
+            if related_doi_dict:
+                for k, v in related_doi_dict.items():
+                    doi_list.extend(v)
+
+        return doi_list
+
+    @property
+    def correction(self):
+        """Get the DOIs of all corrections type articles that correct the current article.
+
+        Some PLOS articles include a 'correction-forward' related-article-type, meaning
+        an article that has been issued a correction is linked to its correcting article(s).
+        Only for the SIX PLOS journals (i.e. not on PLOS ONE).
+        Usually there is only one DOI, unless the article has been issued multiple corrections.
+        :return: DOIs of the correction articles
+        :rtype: list
+        """
+        correction_doi = ''
+        related_dois = self.get_related_dois()
+        for k, v in related_dois.items():
+            if k == 'correction-forward':
+                correction_doi = v
+                break
+        return correction_doi
 
     @property
     def counts(self):

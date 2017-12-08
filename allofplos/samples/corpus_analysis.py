@@ -9,8 +9,6 @@ examples of analysis. It can:
 
 import collections
 import csv
-import datetime
-import lxml.etree as et
 import os
 import progressbar
 import random
@@ -18,14 +16,12 @@ import requests
 
 from .. import corpusdir, newarticledir
 
-from ..plos_regex import (validate_doi, full_doi_regex_match, validate_url,
-                          currents_doi_filter)
-from ..transformations import (filename_to_doi, doi_to_path, doi_to_url)
-from ..plos_corpus import (listdir_nohidden, check_article_type, get_article_xml, 
-                           uncorrected_proofs_text_list,
-                           get_related_article_doi, download_updated_xml,
-                           get_all_solr_dois, get_article_pubdate,
+from ..plos_regex import (validate_doi, full_doi_regex_match, validate_url)
+from ..transformations import (filename_to_doi, doi_to_url)
+from ..plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list,
+                           download_updated_xml, get_all_solr_dois,
                            download_check_and_move)
+from ..article_class import Article
 
 counter = collections.Counter
 pmcdir = "pmc_articles"
@@ -61,7 +57,7 @@ def validate_corpus(corpusdir=corpusdir):
     # check files and filenames
     plos_files = listdir_nohidden(corpusdir)
     if plos_files:
-        plos_valid_filenames = [article for article in plos_files if validate_file(article)]
+        plos_valid_filenames = [article for article in plos_files if validate_filename(article)]
         if len(plos_valid_dois) == len(plos_valid_filenames):
             pass
         else:
@@ -85,90 +81,81 @@ def validate_corpus(corpusdir=corpusdir):
 
 
 def get_jats_article_type_list(article_list=None, directory=corpusdir):
+    """Makes a list of of all JATS article types in the corpus
+    
+    Sorts them by frequency of occurrence
+    :param article_list: list of articles, defaults to None
+    :param directory: directory of articles, defaults to corpusdir
+    :returns: dictionary with each JATS type matched to number of occurrences 
+    :rtype: dict
+    """
     if article_list is None:
         article_list = listdir_nohidden(directory)
 
     jats_article_type_list = []
 
     for article_file in article_list:
-        jats_article_type = check_article_type(article_file=article_file)
-        jats_article_type_list.append(jats_article_type)
+        article = Article.from_filename(article_file, directory=directory)
+        jats_article_type_list.append(article.type_)
 
     print(len(set(jats_article_type_list)), 'types of articles found.')
     article_types_structured = counter(jats_article_type_list).most_common()
     return article_types_structured
 
 
-def get_plos_article_type(article_file):
-    article_categories = get_article_xml(article_file=article_file,
-                                         tag_path_elements=["/",
-                                                            "article",
-                                                            "front",
-                                                            "article-meta",
-                                                            "article-categories"])
-    subject_list = article_categories[0].getchildren()
-
-    for i, subject in enumerate(subject_list):
-        if subject.get('subj-group-type') == "heading":
-            subject_instance = subject_list[i][0]
-            s = ''
-            for text in subject_instance.itertext():
-                s = s + text
-                PLOS_article_type = s
-    return PLOS_article_type
-
-
-def get_plos_article_type_list(article_list=None):
-
+def get_plos_article_type_list(article_list=None, directory=corpusdir):
+    """Makes a list of of all internal PLOS article types in the corpus
+    
+    Sorts them by frequency of occurrence
+    :param article_list: list of articles, defaults to None
+    :param directory: directory of articles, defaults to corpusdir
+    :returns: dictionary with each PLOS type matched to number of occurrences 
+    :rtype: dict
+    """
     if article_list is None:
-        article_list = listdir_nohidden(corpusdir)
+        article_list = listdir_nohidden(directory)
 
     PLOS_article_type_list = []
 
     for article_file in article_list:
-        plos_article_type = get_plos_article_type(article_file)
-        PLOS_article_type_list.append(plos_article_type)
+        article = Article.from_filename(article_file, directory=directory)
+        PLOS_article_type_list.append(article.plostype)
 
     print(len(set(PLOS_article_type_list)), 'types of articles found.')
     PLOS_article_types_structured = counter(PLOS_article_type_list).most_common()
     return PLOS_article_types_structured
 
 
-def get_article_dtd(article_file):
-    """
-    For more information on these DTD tagsets, see https://jats.nlm.nih.gov/1.1d3/ and https://dtd.nlm.nih.gov/3.0/
-    """
-    try:
-        dtd = get_article_xml(article_file=article_file,
-                              tag_path_elements=["/",
-                                                 "article"])
-        dtd = dtd[0].attrib['dtd-version']
-        if str(dtd) == '3.0':
-            dtd = 'NLM 3.0'
-        elif dtd == '1.1d3':
-            dtd = 'JATS 1.1d3'
-    except KeyError:
-        print('Error parsing DTD from', article_file)
-        dtd = 'N/A'
-    return dtd
+def get_article_types_map(article_list=None, directory=corpusdir):
+    """Maps the JATS and PLOS article types onto the XML DTD.
 
-
-# Get tuples of article types mapped for all PLOS articles
-def get_article_types_map(directory=corpusdir):
+    Used for comparing how JATS and PLOS article types are assigned
+    :param article_list: list of articles, defaults to None
+    :param directory: directory of articles, defaults to corpusdir
+    :returns: list of tuples of JATS, PLOS, DTD for each article in the corpus
+    :rtype: list
+    """
+    if article_list is None:
+        article_list = listdir_nohidden(directory)
     article_types_map = []
-    article_files = listdir_nohidden(directory)
-    for article_file in article_files:
-        jats_article_type = check_article_type(article_file)
-        plos_article_type = get_plos_article_type(article_file)
-        dtd_version = get_article_dtd(article_file)
-        types = [jats_article_type, plos_article_type, dtd_version]
+    max_value = len(article_list)
+    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
+    for i, article_file in enumerate(article_list):
+        article = Article.from_filename(article_file)
+        article.directory = directory
+        types = [article.type_, article.plostype, article.dtd]
         types = tuple(types)
         article_types_map.append(types)
+        bar.update(i+1)
+    bar.finish()
     return article_types_map
 
 
-# write article types map to .csv file
 def article_types_map_to_csv(article_types_map):
+    """put the `get_article_types_map.()` list of tuples into a csv.
+    
+    :param article_types_map: output of `get_article_types_map()`
+    """
     with open('articletypes.csv', 'w') as out:
         csv_out = csv.writer(out)
         csv_out.writerow(['type', 'count'])
@@ -176,43 +163,7 @@ def article_types_map_to_csv(article_types_map):
             csv_out.writerow(row)
 
 
-# Generate list of retracted articles
-def check_if_retraction_article(article_file):
-    """For a given article, checks to see whether it is of the article type 'correction'"""
-    article_type = check_article_type(article_file)
-    if article_type == "retraction":
-        return True
-
-    return False
-
-
-def check_if_link_works(url):
-    '''See if a link is valid (i.e., returns a '200' to the HTML request).
-    Used for checking a URL to a PLOS article on journals.plos.org
-    '''
-    request = requests.get(url)
-    if request.status_code == 200:
-        return True
-    elif request.status_code == 404:
-        return False
-    else:
-        return 'error'
-
-
 # These functions are for getting retracted articles
-
-
-def get_related_retraction_article(article_file):
-    """
-    For a given retraction article, returns the DOI of the retracted article
-    """
-    if check_if_retraction_article(article_file=article_file):
-        related_article, related_article_type = get_related_article_doi(article_file=article_file,
-                                                                        corrected=False)
-        if related_article_type == 'retracted-article':
-            return related_article, related_article_type
-        else:
-            print('Accompanying retracted article not found for', article)
 
 
 def get_retracted_doi_list(article_list=None, directory=corpusdir):
@@ -225,49 +176,48 @@ def get_retracted_doi_list(article_list=None, directory=corpusdir):
     retracted_doi_list = []
     if article_list is None:
         article_list = listdir_nohidden(directory)
-    for article_file in article_list:
-        if check_if_retraction_article(article_file):
-            retractions_doi_list.append(filename_to_doi(article_file))
+    for art in article_list:
+        article = Article.from_filename(art)
+        article.directory = directory
+        if article.type_ == 'retraction':
+            retractions_doi_list.append(article.doi)
             # Look in those articles to find actual articles that are retracted
-            retracted_doi = get_related_retraction_article(article_file)[0]
-            retracted_doi_list.append(retracted_doi)
+            retracted_doi_list.extend(article.related_dois)
             # check linked DOI for accuracy
-            if make_regex_bool(full_doi_regex_match.search(retracted_doi)) is False:
-                print("{} has incorrect linked DOI field: '{}'".format(article_file, retracted_doi))
-    if len(retractions_doi_list) == len(retracted_doi_list):
-        print(len(retracted_doi_list), 'retracted articles found.')
-    else:
-        print('Number of retraction articles and retracted articles are different: ',
-              '{} vs. {}'.format(len(retractions_article_list), len(retracted_article_list)))
+            for doi in article.related_dois:
+                if bool(full_doi_regex_match.search(doi)) is False:
+                    print("{} has incorrect linked DOI field: '{}'".format(art, doi))
+    print(len(retracted_doi_list), 'retracted articles found.')
     return retractions_doi_list, retracted_doi_list
 
 
-def get_corrected_article_list(article_list=None, directory=corpusdir):
+def get_amended_article_list(article_list=None, directory=corpusdir):
     """
-    Scans through articles in a directory to see if they are correction notifications,
-    scans articles that are that type to find DOI substrings of corrected articles
+    Scans through articles in a directory to see if they are amendment notifications,
+    scans articles that are that type to find DOI substrings of amended articles
     :param article: the filename for a single article
     :param directory: directory where the article file is, default is corpusdir
     :return: list of DOIs for articles issued a correction
     """
-    corrections_article_list = []
-    corrected_article_list = []
+    amendments_article_list = []
+    amended_article_list = []
     if article_list is None:
         article_list = listdir_nohidden(directory)
 
-    # check for corrections article type
-    for article_file in article_list:
-        article_type = check_article_type(article_file)
-        if article_type == 'correction':
-            corrections_article_list.append(article_file)
-            # get the linked DOI of the corrected article
-            corrected_article = get_related_article_doi(article_file, corrected=True)[0]
-            corrected_article_list.append(corrected_article)
+    # check for amendments article type
+    for art in article_list:
+        article = Article.from_filename(art)
+        article.directory = directory
+        if article.amendment:
+            amendments_article_list.append(article.doi)
+            # get the linked DOI of the amended article
+            amended_article_list.extend(article.related_dois)
             # check linked DOI for accuracy
-            if make_regex_bool(full_doi_regex_match.search(corrected_article)) is False:
-                print(article_file, "has incorrect linked DOI:", corrected_article)
-    print(len(corrected_article_list), 'corrected articles found.')
-    return corrections_article_list, corrected_article_list
+            for doi in article.related_dois:
+                if bool(full_doi_regex_match.search(doi)) is False:
+                    print(article.doi, "has incorrect linked DOI:", doi)
+    print(len(amended_article_list), 'amended articles found.')
+    return amendments_article_list, amended_article_list
 
 
 # These functions are for checking for silent XML updates
@@ -276,10 +226,11 @@ def create_pubdate_dict(directory=corpusdir):
     """
     For articles in directory, create a dictionary mapping them to their pubdate.
     Used for truncating the revisiondate_sanity_check to more recent articles only
+    :param directory: directory of articles
     :return: a dictionary mapping article files to datetime objects of their pubdates
     """
     articles = listdir_nohidden(directory)
-    pubdates = {article: get_article_pubdate(article) for article in articles}
+    pubdates = {art: Article.from_filename(art).pubdate for art in articles}
     return pubdates
 
 
@@ -315,138 +266,24 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
     return articles_different_list
 
 
-# These functions are for getting & analyzing the PLOS Corpus from PMC
-
-
-def get_article_doi(article_file):
-    raw_xml = get_article_xml(article_file=article_file,
-                              tag_path_elements=["/",
-                                                 "article",
-                                                 "front",
-                                                 "article-meta",
-                                                 "article-id"])
-    for x in raw_xml:
-        for name, value in x.items():
-            if value == 'doi':
-                doi = x.text
-                break
-    return doi
-
-
-def article_doi_sanity_check(directory=corpusdir, article_list=None, source='solr'):
-    """
-    For every article in a directory, make sure that the DOI field is both valid and matches
-    the file name, if applicable. Prints invalid DOIs that don't match regex.
-    :return: list of articles where the filename does not match the linked DOI
-    """
-    messed_up_articles = []
-    if article_list is None:
-        if source == 'PMC':
-            article_list = listdir_nohidden(pmcdir, extension='.nxml')
-        elif source == 'solr':
-            article_list = listdir_nohidden(corpusdir)
-    doifile_dict = {get_article_doi(article_file=article_file): article_file for article_file in article_list}
-    doi_list = list(doifile_dict.keys())
-    # check for PLOS regular regex
-    bad_doi_list = [doi for doi in full_doi_filter(doi_list) if doi is not False]
-    # check for Currents regex if PMC
-    if bad_doi_list:
-        if directory == pmcdir or source == 'PMC':
-            bad_doi_list = currents_doi_filter(bad_doi_list)
-    for doi in bad_doi_list:
-        print("{} has invalid DOI field: '{}'".format(doifile_dict[doi], doi))
-    if directory == corpusdir or source == 'solr':
-        messed_up_articles = [doifile_dict[doi] for doi in doi_list if filename_to_doi(doifile_dict[doi]) != doi]
-        if len(messed_up_articles) == 0:
-            print('All article file names match DOIs.')
-        else:
-            print(len(messed_up_articles), 'article files have DOI errors.')
-        return messed_up_articles
-    return bad_doi_list
-
-
-def get_articles_by_doi_field(directory=pmcdir, article_list=None, check_new=True):
-    doi_to_pmc = {}
-    if directory == pmcdir and article_list is None:
-        article_list = get_pmc_articles()
-    elif article_list is None:
-        article_list = listdir_nohidden(directory)
-        if article_list == 0:
-            article_list = listdir_nohidden(directory, extension='.nxml')
-
-    if directory != pmcdir:
-        for article in article_list:
-            doi = get_article_doi(article_file=article)
-            doi_to_pmc[doi] = article
-    else:
-        try:
-            # read doi_to_pmc dict from csv
-            with open(pmc_csv, 'r') as csv_file:
-                reader = csv.reader(csv_file)
-                next(reader, None)
-                doi_to_pmc = dict(reader)
-
-            scratch = False
-            n = 0
-            if check_new:
-                for article in article_list:
-                    if article not in doi_to_pmc.values():
-                        doi = get_article_doi(article)
-                        doi_to_pmc[doi] = os.path.basename(article).rstrip('.nxml').rstrip('.xml')
-                        n = n + 1
-                if n:
-                    print(n, 'DOI/PMCID pairs added to dictionary.')
-
-        except FileNotFoundError:
-            print('Creating doi_to_pmc dictionary from scratch.')
-            scratch = True
-            n = 0
-            file_list = listdir_nohidden(pmcdir, extension='.nxml')
-            doi_to_pmc = {get_article_doi(pmc_file): os.path.basename(pmc_file).rstrip('.nxml') for pmc_file in file_list}
-        # write doi_to_pmc dict to csv
-        if scratch or n > 0:
-            with open(pmc_csv, 'w') as f:
-                writer = csv.writer(f)
-                writer.writerow(['DOI', 'PMC ID'])
-                for key, value in doi_to_pmc:
-                    writer.writerow([key, value])
-            print('DOI, PMC ID list exported to', pmc_csv)
-
-    return doi_to_pmc
-
-
 def check_solr_doi(doi):
     '''
     For an article doi, see if there's a record of it in Solr.
+    :rtype: bool
     '''
     solr_url = 'http://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,&wt=json&indent=true&fq=id:%22{}%22'.format(doi)
     article_search = requests.get(solr_url).json()
     return bool(article_search['response']['numFound'])
 
 
-def check_if_doi_resolves(doi, plos_valid=True):
-    """
-    Return metadata for a given DOI. If the link works, make sure that it points to the same DOI
-    Checks first if it's a valid DOI
-    or see if it's a redirect.
-    """
-    if plos_valid and validate_doi(doi) is False:
-        return "Not valid PLOS DOI structure"
-    url = "http://dx.doi.org/" + doi
-    if check_if_link_works(url):
-        headers = {"accept": "application/vnd.citationstyles.csl+json"}
-        r = requests.get(url, headers=headers)
-        r_doi = r.json()['DOI']
-        if r_doi == doi:
-            return 'works'
-        else:
-            return r_doi
-    else:
-        return "doesn't work"
-
-
 def get_all_local_dois(corpusdir=corpusdir):
-    local_dois = [filename_to_doi(article_file) for article_file in listdir_nohidden(corpusdir)]
+    """Get all local DOIs in a corpus directory.
+    
+    :param corpusdir: directory of articles, defaults to corpusdir
+    :returns: list of DOIs
+    :rtype: list
+    """
+    local_dois = [filename_to_doi(art) for art in listdir_nohidden(corpusdir)]
     return local_dois
 
 
@@ -492,226 +329,6 @@ def get_random_list_of_dois(directory=corpusdir, count=100):
     return sample_doi_list
 
 
-def get_plos_journal(article_file, caps_fixed=True):
-    """
-    For an individual PLOS article, get the journal it was published in.
-    :param article_file: individual local PLOS XML article
-    :param caps_fixed: whether to render the journal name correctly or as-is
-    :return: PLOS journal at specified xpath location
-    """
-    try:
-        journal = get_article_xml(article_file=article_file,
-                                  tag_path_elements=["/",
-                                                     "article",
-                                                     "front",
-                                                     "journal-meta",
-                                                     "journal-title-group",
-                                                     "journal-title"])
-        journal = journal[0].text
-    except IndexError:
-        # Need to file ticket for this
-        journal_meta = get_article_xml(article_file='allofplos_xml/journal.pone.0047704.xml',
-                                       tag_path_elements=["/",
-                                                          "article",
-                                                          "front",
-                                                          "journal-meta"])
-        for journal_child in journal_meta[0]:
-            if journal_child.attrib['journal-id-type'] == 'nlm-ta':
-                journal = journal_child.text
-                break
-
-    if caps_fixed:
-        journal = journal.split()
-        if journal[0].lower() == 'plos':
-            journal[0] = "PLOS"
-        journal = (' ').join(journal)
-    return journal
-
-
-def get_article_title(article_file):
-    """
-    For an individual PLOS article, get its title.
-    :param article_file: individual local PLOS XML article
-    :return: string of article title at specified xpath location
-    """
-    title = get_article_xml(article_file=article_file,
-                            tag_path_elements=["/",
-                                               "article",
-                                               "front",
-                                               "article-meta",
-                                               "title-group",
-                                               "article-title"])
-    title_text = et.tostring(title[0], encoding='unicode', method='text')
-    return title_text
-
-
-def parse_article_date(date_element, date_format='%d %m %Y'):
-    """
-    For an article date element, convert XML to a datetime object
-    :param date_format: string format used to convert to datetime object
-    :return: datetime object
-    """
-    day = ''
-    month = ''
-    year = ''
-    for item in date_element.getchildren():
-        if item.tag == 'day':
-            day = item.text
-        if item.tag == 'month':
-            month = item.text
-        if item.tag == 'year':
-            year = item.text
-    if day:
-        date = (day, month, year)
-        string_date = ' '.join(date)
-        date = datetime.datetime.strptime(string_date, date_format)
-    elif month:
-        # try both numerical & word versions of month
-        date = (month, year)
-        string_date = ' '.join(date)
-        try:
-            date = datetime.datetime.strptime(string_date, '%m %Y')
-        except ValueError:
-            date = datetime.datetime.strptime(string_date, '%B %Y')
-    elif year:
-        date = year
-        date = datetime.datetime.strptime(date, '%Y')
-    else:
-        print('date error')
-        date = ''
-    return date
-
-
-def get_article_abstract(article_file):
-    """
-    For an individual article in the PLOS corpus, create a tuple of a set of metadata fields sbout that corpus.
-    Make it small, medium, or large depending on number of fields desired.
-    :param article_file: individual local PLOS XML article
-    :return: plain-text string of content in abstract
-    """
-    abstract = get_article_xml(article_file, tag_path_elements=["/",
-                                                                "article",
-                                                                "front",
-                                                                "article-meta",
-                                                                "abstract"])
-    try:
-        abstract_text = et.tostring(abstract[0], encoding='unicode', method='text')
-    except IndexError:
-        if check_article_type(article_file) == 'research-article' and \
-          get_plos_article_type(article_file) == 'Research Article':
-            print('No abstract found for research article {}'.format(filename_to_doi(article_file)))
-
-        abstract_text = ''
-
-    # clean up text: rem white space, new line marks, blank lines
-    abstract_text = abstract_text.strip().replace('  ', '')
-    abstract_text = os.linesep.join([s for s in abstract_text.splitlines() if s])
-
-    return abstract_text
-
-
-def get_article_dates(article_file, string_=False):
-    """
-    For an individual article, get all of its dates
-    :param article_file: file path/DOI of the article
-    :return: tuple of dict of date types mapped to datetime objects for that article, dict for date strings if wrong order
-    """
-    dates = {}
-
-    tag_path_1 = ["/",
-                  "article",
-                  "front",
-                  "article-meta",
-                  "pub-date"]
-    raw_xml_1 = get_article_xml(article_file=article_file,
-                                tag_path_elements=tag_path_1)
-    for element in raw_xml_1:
-        pub_type = element.get('pub-type')
-        try:
-            date = parse_article_date(element)
-        except ValueError:
-            print('Error getting pubdate for {}'.format(article_file))
-            date = ''
-        dates[pub_type] = date
-
-    tag_path_2 = ["/",
-                  "article",
-                  "front",
-                  "article-meta",
-                  "history"]
-    raw_xml_2 = get_article_xml(article_file=article_file,
-                                tag_path_elements=tag_path_2)
-    for element in raw_xml_2:
-        for part in element:
-            date_type = part.get('date-type')
-            try:
-                date = parse_article_date(part)
-            except ValueError:
-                print('Error getting history dates for {}'.format(article_file))
-                date = ''
-            dates[date_type] = date
-    if dates.get('received', '') and dates.get('accepted', '') in dates:
-        if not dates['received'] <= dates['accepted'] <= dates['epub']:
-            wrong_date_strings = {date_type: date.strftime('%Y-%m-%d') for date_type, date in dates.items()}
-            wrong_date_strings['doi'] = filename_to_doi(article_file)
-            # print('Dates not in correct order: {}'.format(date_strings))
-        else:
-            wrong_date_strings = ''
-    else:
-        wrong_date_strings = ''
-
-    if string_:
-        for key, value in dates.items():
-            if value:
-                dates[key] = value.strftime('%Y-%m-%d')
-
-    return dates, wrong_date_strings
-
-
-def get_article_counts(article_file):
-    """
-    For a single article, return a dictionary of the several counts functions that are available
-    (figures: fig-count, pages: page-count, tables: table-count)
-    :param article_file: file path/DOI of the article
-    :return: counts dictionary
-    """
-    counts = {}
-
-    tag_path = ["/",
-                "article",
-                "front",
-                "article-meta",
-                "counts"]
-    raw_xml = get_article_xml(article_file=article_file,
-                              tag_path_elements=tag_path)
-    for element in raw_xml:
-        for count_item in element:
-            count = count_item.get('count')
-            count_type = count_item.tag
-            counts[count_type] = count
-    if len(counts) > 3:
-        print(counts)
-    return counts
-
-
-def get_article_body_word_count(article_file):
-    """
-    For an article, get how many words are in the body
-    :param article_file: individual local PLOS XML article
-    :return: count of words in the body of the PLOS article
-    """
-    body = get_article_xml(article_file, tag_path_elements=["/",
-                                                            "article",
-                                                            "body"])
-    try:
-        body_text = et.tostring(body[0], encoding='unicode', method='text')
-        body_word_count = len(body_text.split(" "))
-    except IndexError:
-        print("Error parsing article body: {}".format(article_file))
-        body_word_count = 0
-    return body_word_count
-
-
 def get_article_metadata(article_file, size='small'):
     """
     For an individual article in the PLOS corpus, create a tuple of a set of metadata fields sbout that corpus.
@@ -720,26 +337,22 @@ def get_article_metadata(article_file, size='small'):
     :param size: small, medium or large, aka how many fields to return for each article
     :return: tuple of metadata fields tuple, wrong_date_strings dict
     """
-    doi = filename_to_doi(article_file)
-    filename = os.path.basename(doi_to_path(article_file)).rstrip('.xml')
-    title = get_article_title(article_file)
-    journal = get_plos_journal(article_file)
-    jats_article_type = check_article_type(article_file)
-    plos_article_type = get_plos_article_type(article_file)
-    dtd_version = get_article_dtd(article_file)
-    dates, wrong_date_strings = get_article_dates(article_file, string_=True)
+    article = Article.from_filename(article_file)
+    doi = article.doi
+    filename = os.path.basename(article.filename).rstrip('.xml')
+    title = article.title
+    journal = article.journal
+    jats_article_type = article.type_
+    plos_article_type = article.plostype
+    dtd_version = article.dtd
+    dates = article.get_dates()
     (pubdate, collection, received, accepted) = ('', '', '', '')
-    pubdate = dates['epub']
-    counts = get_article_counts(article_file)
+    pubdate = article.pubdate
+    counts = article.counts
     (fig_count, table_count, page_count) = ('', '', '')
-    body_word_count = get_article_body_word_count(article_file)
-    if jats_article_type == 'correction':
-        related_article = get_related_article_doi(article_file, corrected=True)[0]
-    elif jats_article_type == 'retraction':
-        related_article = get_related_retraction_article(article_file)[0]
-    else:
-        related_article = ''
-    abstract = get_article_abstract(article_file)
+    body_word_count = article.body_word_count
+    related_articles = article.related_dois
+    abstract = article.abstract
     try:
         collection = dates['collection']
     except KeyError:
@@ -765,10 +378,10 @@ def get_article_metadata(article_file, size='small'):
     except KeyError:
         pass
     metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate, received,
-                accepted, collection, fig_count, table_count, page_count, body_word_count, related_article, abstract]
+                accepted, collection, fig_count, table_count, page_count, body_word_count, related_articles, abstract]
     metadata = tuple(metadata)
     if len(metadata) == 17:
-        return metadata, wrong_date_strings
+        return metadata
     else:
         print('Error in {}: {} items'.format(article_file, len(metadata)))
         return False
@@ -786,15 +399,12 @@ def get_corpus_metadata(article_list=None):
     max_value = len(article_list)
     bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
     corpus_metadata = []
-    wrong_dates = []
     for i, article_file in enumerate(article_list):
-        metadata, wrong_date_strings = get_article_metadata(article_file)
+        metadata = get_article_metadata(article_file)
         corpus_metadata.append(metadata)
-        if wrong_date_strings:
-            wrong_dates.append(wrong_date_strings)
         bar.update(i+1)
     bar.finish()
-    return corpus_metadata, wrong_dates
+    return corpus_metadata
 
 
 def corpus_metadata_to_csv(corpus_metadata=None,
