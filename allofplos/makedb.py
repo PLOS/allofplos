@@ -47,12 +47,20 @@ parser.add_argument('--db', action='store', help=
 parser.add_argument('--random', action='store', type=int, help=
                     'Number of articles in a random subset. '
                     'By default will use all articles')
+parser.add_argument('--seeddb', action='store_true', help=
+                    'Make the seed database', dest='seed')
 args = parser.parse_args()
 
 # TODO: Put a warning that the DB will be deleted
 if os.path.isfile(args.db):
     os.remove(args.db)
-db = SqliteExtDatabase(args.db)
+
+if args.seed:
+    if os.path.isfile('seed.db'):
+        os.remove('seed.db')
+    db = SqliteExtDatabase('seed.db')
+else:
+    db = SqliteExtDatabase(args.db)
 
 class BaseModel(Model):
     class Meta:
@@ -101,7 +109,10 @@ db.create_tables([Journal, PLOSArticle, ArticleType,
                       CoAuthorPLOSArticle, CorrespondingAuthor,
                       JATSType, Affiliations, Country])
 
-allfiles = os.listdir(corpusdir)
+if args.seed:
+    allfiles = os.listdir('seed_corpus')
+else:
+    allfiles = os.listdir(corpusdir)
 if args.random:
     randomfiles = random.sample(allfiles, args.random)
     max_value = len(randomfiles)
@@ -155,10 +166,15 @@ for i, file_ in enumerate(randomfiles if args.random else allfiles):
                     aff = Affiliations.create(affiliations = author_aff)
                 except (sqlite3.IntegrityError, IntegrityError):
                     db.rollback()
-                    aff = Affiliations.get(Affiliations.affiliations == author_aff)
+                    aff = Affiliations.get(Affiliations.affiliations ==
+                                           author_aff)
             with db.atomic() as atomic:
                 try:
-                    country_from_aff = auths['affiliations'][0].split(',')[-1].strip()
+                    if auths['affiliations'][0] == '':
+                        country_from_aff = 'N/A'
+                    else:
+                        country_from_aff = auths['affiliations'][0].\
+                                           split(',')[-1].strip()
                 except IndexError:
                     country_from_aff = 'N/A'
                 country_from_aff = convert_country(country_from_aff)
