@@ -342,7 +342,7 @@ def check_for_amended_articles(directory=newarticledir, article_list=None):
     For articles in the temporary download directory, check if article_type is an amendment
     If amendment, surface the DOI of the article being amended
     Use with `download_amended_articles`
-    For more information about the amendment type, see `amendment_bool` in the Article class
+    For more information about the amendment type, see `amendment` in the Article class
     :param article: the filename for a single article
     :param directory: directory where the article file is, default is newarticledir
     :return: list of filenames to existing local files for articles issued an amendment
@@ -366,7 +366,7 @@ def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amende
 
     Use with `check_for_amended_articles`
     Many amendments don't result in XML changes
-    For more information about the amendment type, see `amendment_bool` in the Article class
+    For more information about the amendment type, see `amendment` in the Article class
     :param article: the filename for a single article
     :param directory: directory where the article file is, default is newarticledir
     :param tempdir: where new articles are downloaded to-
