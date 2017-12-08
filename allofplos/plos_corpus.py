@@ -371,7 +371,7 @@ def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amende
         amended_article_list = check_for_amended_articles(directory)
         print(amended_article_list)
     amended_updated_article_list = []
-    print("Checking amended articles")
+    print("Checking amended articles...")
     for article in tqdm(amended_article_list):
         updated = download_updated_xml(article)
         if updated:
@@ -546,7 +546,8 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     proofs_download_list = []
     if article_list is None:
         article_list = get_uncorrected_proofs_list()
-    for doi in list(set(article_list)):
+    print("Checking directly for additional VOR updates...")
+    for doi in tqdm(list(set(article_list))):
         file = doi_to_path(doi)
         updated = download_updated_xml(file, vor_check=True)
         if updated:
@@ -800,6 +801,7 @@ def main():
         # Returns specific URL query & the number of search results.
         # Parses the returned dictionary of article DOIs, removing common leading numbers, as a list.
         # Compares to list of existing articles in the PLOS corpus folder to create list of DOIs to download.
+    print("Checking for new articles...")
     dois_needed_list = get_dois_needed_list()
 
     # Step 2: Download new articles
