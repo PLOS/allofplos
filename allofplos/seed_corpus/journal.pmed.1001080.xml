@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS Med</journal-id><journal-id journal-id-type="publisher-id">PLoS</journal-id><journal-id journal-id-type="pmc">plosmed</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Medicine</journal-title></journal-title-group><issn pub-type="epub">1549-1676</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PMEDICINE-D-11-00064</article-id><article-id pub-id-type="doi">10.1371/journal.pmed.1001080</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Epidemiology</subject>
+            <subj-group>
+              <subject>Pediatric epidemiology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Global health</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Non-clinical medicine</subject>
+            <subj-group>
+              <subject>Health care policy</subject>
+              <subj-group>
+                <subject>Health statistics</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Pediatrics</subject>
+            <subj-group>
+              <subject>Neonatalology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Public health</subject>
+            <subj-group>
+              <subject>Child health</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Public Health and Epidemiology</subject>
+          <subject>Pediatrics and Child Health</subject>
+          <subject>Non-Clinical Medicine</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Neonatal Mortality Levels for 193 Countries in 2009 with Trends since 1990: A Systematic Analysis of Progress, Projections, and Priorities</article-title><alt-title alt-title-type="running-head">Trends in Neonatal Mortality Levels 1990–2009</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Oestergaard</surname>
+            <given-names>Mikkel Zahle</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Inoue</surname>
+            <given-names>Mie</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Yoshida</surname>
+            <given-names>Sachiyo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Mahanani</surname>
+            <given-names>Wahyu Retno</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Gore</surname>
+            <given-names>Fiona M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Cousens</surname>
+            <given-names>Simon</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lawn</surname>
+            <given-names>Joy E.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Mathers</surname>
+            <given-names>Colin Douglas</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <collab xlink:type="simple">on behalf of the United Nations Inter-agency Group for Child Mortality Estimation and the Child Health Epidemiology Reference Group</collab>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>World Health Organization, Department of Health Statistics and Informatics, Geneva, Switzerland</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>World Health Organization, Department of Child and Adolescent Health and Development, Geneva, Switzerland</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>London School of Hygiene &amp; Tropical Medicine, London, United Kingdom</addr-line>       </aff><aff id="aff4"><label>4</label><addr-line>Saving Newborn Lives/Save the Children, Cape Town, South Africa</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Byass</surname>
+            <given-names>Peter</given-names>
+          </name>
+          <role>Academic Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Umeå Centre for Global Health Research, Sweden</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">oestergaardm@who.int</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: MZO MI SC JEL CDM. Performed the experiments: MZO MI SC JEL CDM. Analyzed the data: MZO MI SC JEL CDM. Contributed reagents/materials/analysis tools: MZO MI SY WRM FMG SC JEL CDM. Wrote the first draft of the manuscript: MZO. Contributed to the writing of the manuscript: MZO MI SC JEL CDM WRM FMG SY. <ext-link ext-link-type="uri" xlink:href="http://www.icmje.org/" xlink:type="simple">ICMJE</ext-link> criteria for authorship read and met: MZO MI SY WRM FMG SC JEL CDM. Agree with manuscript results and conclusions: MZO MI SY WRM FMG SC JEL CDM.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <month>8</month>
+        <year>2011</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>30</day>
+        <month>8</month>
+        <year>2011</year>
+      </pub-date><volume>8</volume><issue>8</issue><elocation-id>e1001080</elocation-id><history>
+        <date date-type="received">
+          <day>10</day>
+          <month>1</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>15</day>
+          <month>7</month>
+          <year>2011</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2011</copyright-year><copyright-holder>World Health Organization; licensee Public Library of Science (PLoS)</copyright-holder><license><license-p>This is an Open Access article in the spirit of the Public Library of Science (PLoS) principles for Open Access http://www.plos.org/oa/, without any waiver of WHO's privileges and immunities under international law, convention, or agreement. This article should not be reproduced for use in association with the promotion of commercial products, services, or any legal entity. There should be no suggestion that WHO endorses any specific organization or products. The use of the WHO logo is not permitted. This notice should be preserved along with the article's original URL.</license-p></license></permissions><abstract abstract-type="toc">
+        <p>Mikkel Oestergaard and colleagues develop annual estimates for neonatal mortality rates and neonatal deaths for 193 countries for 1990 to 2009, and forecasts into the future.</p>
+      </abstract><abstract>
+        <sec>
+          <title>Background</title>
+          <p>Historically, the main focus of studies of childhood mortality has been the infant and under-five mortality rates. Neonatal mortality (deaths &lt;28 days of age) has received limited attention, although such deaths account for about 41% of all child deaths. To better assess progress, we developed annual estimates for neonatal mortality rates (NMRs) and neonatal deaths for 193 countries for the period 1990–2009 with forecasts into the future.</p>
+        </sec>
+        <sec>
+          <title>Methods and Findings</title>
+          <p>We compiled a database of mortality in neonates and children (&lt;5 years) comprising 3,551 country-years of information. Reliable civil registration data from 1990 to 2009 were available for 38 countries. A statistical model was developed to estimate NMRs for the remaining 155 countries, 17 of which had no national data. Country consultation was undertaken to identify data inputs and review estimates. In 2009, an estimated 3.3 million babies died in the first month of life—compared with 4.6 million neonatal deaths in 1990—and more than half of all neonatal deaths occurred in five countries of the world (44% of global livebirths): India 27.8% (19.6% of global livebirths), Nigeria 7.2% (4.5%), Pakistan 6.9% (4.0%), China 6.4% (13.4%), and Democratic Republic of the Congo 4.6% (2.1%). Between 1990 and 2009, the global NMR declined by 28% from 33.2 deaths per 1,000 livebirths to 23.9. The proportion of child deaths that are in the neonatal period increased in all regions of the world, and globally is now 41%. While NMRs were halved in some regions of the world, Africa's NMR only dropped 17.6% (43.6 to 35.9).</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Neonatal mortality has declined in all world regions. Progress has been slowest in the regions with high NMRs. Global health programs need to address neonatal deaths more effectively if Millennium Development Goal 4 (two-thirds reduction in child mortality) is to be achieved.</p>
+        </sec>
+        <sec>
+          <title/>
+          <p>
+            <italic>Please see later in the article for the Editors' Summary</italic>
+          </p>
+        </sec>
+      </abstract><abstract abstract-type="editor">
+        <title>Editors' Summary</title>
+        <sec id="s7a1">
+          <title>Background</title>
+          <p>Every year, more than 8 million children die before their fifth birthday. Most of these deaths occur in developing countries and most are caused by preventable or treatable diseases. In 2000, world leaders set a target of reducing child mortality to one-third of its 1990 level by 2015 as Millennium Development Goal 4 (MDG4). This goal, together with seven others, is designed to help improve the social, economic, and health conditions in the world's poorest countries. In recent years, progress towards reducing child mortality has accelerated but remains insufficient to achieve MDG4. In particular, progress towards reducing neonatal deaths—deaths during the first 28 days of life—has been slow and neonatal deaths now account for a greater proportion of global child deaths than in 1990. Currently, nearly 41% of all deaths among children under the age of 5 years occur during the neonatal period. The major causes of neonatal deaths are complications of preterm delivery, breathing problems during or after delivery (birth asphyxia), and infections of the blood (sepsis) and lungs (pneumonia). Simple interventions such as improved hygiene at birth and advice on breastfeeding can substantially reduce neonatal deaths.</p>
+        </sec>
+        <sec id="s7a2">
+          <title>Why Was This Study Done?</title>
+          <p>If MDG4 is to be met, more must be done to prevent deaths among newborn babies. To improve survival rates and to monitor the effects of public-health interventions in this vulnerable group, accurate, up-to-date estimates of national neonatal mortality rates (NMRs, the number of neonatal deaths per 1,000 live births) are essential. Although infant (under-one) and under-five mortality rates are estimated annually for individual countries by the United Nations Interagency Group for Child Mortality Estimation, annual NMR trend estimates have not been produced before. In many developed countries, child mortality rates can be calculated directly from vital civil registration data—records of all births and deaths. But many developing countries lack vital registration systems and child mortality has to be estimated using data collected in household surveys such as the Demographic and Health Surveys (a project that helps developing countries collect data on health and population trends). In this study, the researchers estimate annual national NMRs and numbers of neonatal deaths for the past 20 years using the available data.</p>
+        </sec>
+        <sec id="s7a3">
+          <title>What Did the Researchers Do and Find?</title>
+          <p>The researchers used civil registration systems, household surveys, and other sources to compile a database of deaths among neonates and children under 5 years old for 193 countries between 1990 and 2009. They estimated NMRs for 38 countries from reliable vital registration data and developed a statistical model to estimate NMRs for the remaining 155 countries (in which 92% of global live births occurred). In 2009, 3.3 million babies died during their first month of life compared to 4.6 million in 1990. More than half the neonatal deaths in 2009 occurred in five countries—India, Nigeria, Pakistan, China, and the Democratic Republic of Congo. India had the largest number of neonatal deaths throughout the study. Between 1990 and 2009, although the global NMR decreased from 33.2 to 23.9 deaths per 1,000 live births (a decrease of 28%), NMRs increased in eight countries, five of which were in Africa. Moreover, in Africa as a whole, the NMR only decreased by 17.6%, from 43.6 per 1,000 live births in 1990 to 35.9 per 1,000 live births in 2009.</p>
+        </sec>
+        <sec id="s7a4">
+          <title>What Do These Findings Mean?</title>
+          <p>These and other findings suggest that neonatal mortality has declined in all world regions since 1990 but that progress has been slowest in the regions with high NMRs such as Africa. Although there is considerable uncertainty around the estimates calculated by the researchers, these findings nevertheless highlight the slow progress in reducing the neonatal mortality risk over the past 20 years and suggest that the relative contribution of neonatal deaths to child deaths will increase into the future. Thus, if MDG4 is to be achieved, it is essential that national governments and international health bodies invest in improved methods for the measurement of neonatal deaths and stillbirths and increase their investment in the provision of care at birth and during the first few weeks of life.</p>
+        </sec>
+        <sec id="s7a5">
+          <title>Additional Information</title>
+          <p>Please access these Web sites via the online version of this summary at <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001080" xlink:type="simple">http://dx.doi.org/10.1371/journal.pmed.1001080</ext-link>.</p>
+          <list list-type="bullet">
+            <list-item>
+              <p>The United Nations Children'<ext-link ext-link-type="uri" xlink:href="http://www.unicef.org" xlink:type="simple">s Fund</ext-link> (UNICEF) works for children's rights, survival, development, and protection around the world; it provides information on <ext-link ext-link-type="uri" xlink:href="http://www.unicef.org/mdg/childmortality.html" xlink:type="simple">Millennium Development Goal 4</ext-link>, and its <ext-link ext-link-type="uri" xlink:href="http://www.childinfo.org" xlink:type="simple">Childinfo</ext-link> Web site provides detailed statistics about child survival and health, including a description of the <ext-link ext-link-type="uri" xlink:href="http://www.childinfo.org/mortality_igme.html" xlink:type="simple">United Nations Interagency Group for Child Mortality Estimation</ext-link> and a link to its database, and information on <ext-link ext-link-type="uri" xlink:href="http://www.childinfo.org/newborncare.html" xlink:type="simple">newborn care</ext-link> (some information in several languages)</p>
+            </list-item>
+            <list-item>
+              <p>The World Health Organization also has information about the <ext-link ext-link-type="uri" xlink:href="http://www.who.int/topics/millennium_development_goals/child_mortality/en/index.html" xlink:type="simple">Millennium Development Goal 4</ext-link>, provides information on <ext-link ext-link-type="uri" xlink:href="http://www.who.int/topics/infant_newborn/en/index.html" xlink:type="simple">newborn mortality</ext-link>, and provides the latest <ext-link ext-link-type="uri" xlink:href="http://www.who.int/healthinfo/statistics/mortality/en/index.html" xlink:type="simple">estimates of child mortality</ext-link></p>
+            </list-item>
+            <list-item>
+              <p>Further information about the <ext-link ext-link-type="uri" xlink:href="http://www.un.org/millenniumgoals" xlink:type="simple">Millennium Development Goals</ext-link> is available</p>
+            </list-item>
+            <list-item>
+              <p>Information is also available about the <ext-link ext-link-type="uri" xlink:href="http://www.measuredhs.com/aboutdhs/" xlink:type="simple">Demographic and Health Surveys</ext-link></p>
+            </list-item>
+          </list>
+        </sec>
+      </abstract><funding-group><funding-statement>The study was supported by funding from WHO and grants from the Bill &amp; Melinda Gates Foundation to Saving Newborn Lives/Save the Children (JEL), SC, and to CHERG. No funding bodies had any role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts>
+        <page-count count="13"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The first 4 wk of life—the neonatal period—carries one of the highest risks of death of any 4-wk period in the human lifespan <xref ref-type="bibr" rid="pmed.1001080-Lawn1">[1]</xref>. In high-income countries (HIC), neonates are now a major focus of child health both for mortality and morbidity reduction. However, in lower-income countries neonatal mortality rates (NMRs), trends, and causes have attracted relatively little attention compared to maternal deaths or deaths among older children under 5 and in international public health policy and programmes, neonatal deaths still do not receive attention commensurate with their burden <xref ref-type="bibr" rid="pmed.1001080-Shiffman1">[2]</xref>. A specific focus on neonatal mortality is required as the epidemiology, cause-of-death distribution, and health interventions differ to older children. Child survival programmes have typically focused on diseases affecting children aged over 1 mo—primarily pneumonia, malaria, diarrhoea, and vaccine-preventable diseases—and safe motherhood programmes have tended to focus on the mother and not her newborn <xref ref-type="bibr" rid="pmed.1001080-Tinker1">[3]</xref>.</p>
+      <p>The single most important factor behind increased attention for neonatal deaths is Millennium Development Goal (MDG) 4, which calls for a two-thirds reduction in mortality risks of children under 5 y of age between 1990 and 2015, equivalent to an average annual reduction of 4.4% <xref ref-type="bibr" rid="pmed.1001080-Shiffman1">[2]</xref>. The last few years have seen a welcome acceleration in progress towards this goal, but less attention has been paid to neonates and less progress made compared to older children under the age of 5. Hence neonatal deaths represent an increasing proportion of global under-five deaths <xref ref-type="bibr" rid="pmed.1001080-Black1">[4]</xref>,<xref ref-type="bibr" rid="pmed.1001080-Zupan1">[5]</xref>. In 2005, <italic>The Lancet</italic> Neonatal Survival Series highlighted the annual toll of 4 million neonatal deaths, provided the first systematic estimates of neonatal deaths by cause <xref ref-type="bibr" rid="pmed.1001080-Lawn1">[1]</xref>, identified 16 simple and extremely cost-effective interventions that could reduce neonatal deaths by 67% <xref ref-type="bibr" rid="pmed.1001080-Darmstadt1">[6]</xref>, and proposed specific actions in countries <xref ref-type="bibr" rid="pmed.1001080-Knippenberg1">[7]</xref> and globally <xref ref-type="bibr" rid="pmed.1001080-Martines1">[8]</xref>.</p>
+      <p>One key action to increase attention and guide action is the availability of annual estimates by country of the NMR (the probability of dying in the first 28 d of life) <xref ref-type="bibr" rid="pmed.1001080-Martines1">[8]</xref>,<xref ref-type="bibr" rid="pmed.1001080-Lawn2">[9]</xref>; this remains a gap. United Nations (UN) partners, led by the World Health Organization (WHO), have produced maternal mortality ratio (MMR) estimates every 5 y <xref ref-type="bibr" rid="pmed.1001080-Hill1">[10]</xref>. Each year the UN Inter-agency Group for Child Mortality Estimation (IGME) produces national estimates of infant mortality rate (IMR) and under-five mortality rate (U5MR). The inputs, methodology, and determination of uncertainty bounds for these estimates have been improved over recent years (<ext-link ext-link-type="uri" xlink:href="http://www.childinfo.org/mortality_igme.html" xlink:type="simple">www.childinfo.org/mortality_igme.html</ext-link>). The sources of NMR data are very similar to those for under-five mortality and available in the same countries and with the same frequency, yet so far NMR estimates have not been part of this annual process, and publication of neonatal mortality estimates has been unpredictable in timing and used changing methods, which has limited trend analysis and reduced policy attention. For example, the recent 2010 Millennium Development Goals summit and multiple associated progress reports barely mentioned neonatal deaths <xref ref-type="bibr" rid="pmed.1001080-United1">[11]</xref>.</p>
+      <p>During 2010, national and global estimates for both maternal <xref ref-type="bibr" rid="pmed.1001080-Trends1">[12]</xref>,<xref ref-type="bibr" rid="pmed.1001080-Hogan1">[13]</xref> and child mortality <xref ref-type="bibr" rid="pmed.1001080-You1">[14]</xref>,<xref ref-type="bibr" rid="pmed.1001080-Rajaratnam1">[15]</xref> were published by both the UN and by the Institute of Health Metrics and Evaluation (IHME). Considerable debate ensued around the various inputs, methods, and estimates. IHME's child mortality publication and the associated media interest were primarily focused on under-five mortality, and national and regional estimates of NMR and neonatal deaths were provided for only 2 y, 1990 and 2010.</p>
+      <p>A recent series on global health estimates in PLoS <xref ref-type="bibr" rid="pmed.1001080-Editorial1">[16]</xref> has highlighted many of the debates in global estimation, and lessons learned and proposed ways forward <xref ref-type="bibr" rid="pmed.1001080-Boerma1">[17]</xref>–<xref ref-type="bibr" rid="pmed.1001080-Sankoh1">[21]</xref>. Given defects or deficiencies in existing empirical NMR data, statistical estimation will be necessary for most countries for the foreseeable future <xref ref-type="bibr" rid="pmed.1001080-Byass1">[18]</xref>, and a key message is that countries, academics, and UN agencies have a role to play in improving the data and methods and in ensuring transparency.</p>
+      <p>In this article we build on these lessons to develop an improved modeling approach for national estimates of NMRs for the years 1990 to 2009 and for forecasts of future trends. Our work is linked to a wider collaboration between UN agencies and academic research groups to understand and estimate rates (<ext-link ext-link-type="uri" xlink:href="http://www.childinfo.org/mortality_igme.html" xlink:type="simple">www.childinfo.org/mortality_igme.html</ext-link>) and causes of deaths in neonates and children (Child Health Epidemiology Reference Group, <ext-link ext-link-type="uri" xlink:href="http://www.cherg.org" xlink:type="simple">www.cherg.org</ext-link>) in order to inform public health policy. In addition, a country consultation process was undertaken by WHO to maximize identification of all input data and to allow countries to review and provide feedback to estimates.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Ethics Statement</title>
+        <p>An ethics statement was not required for this work.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Data Identification and Inclusion</title>
+        <p>Data on neonatal mortality come from a variety of sources, including civil registration systems and household surveys such as Demographic and Health Surveys (DHS; <ext-link ext-link-type="uri" xlink:href="http://www.measuredhs.com" xlink:type="simple">www.measuredhs.com</ext-link>), as well as special studies. <xref ref-type="boxed-text" rid="pmed-1001080-box001">Box 1</xref> presents an overview of challenges and limitations to data and neonatal mortality estimation.</p>
+        <boxed-text id="pmed-1001080-box001" position="float">
+          <sec id="s2b1a">
+            <title>Box 1. Challenges and Limitations to NMR Estimation</title>
+            <p>NMRs are highest in countries and communities with the least information on these deaths. This inverse relationship naturally leads to uncertainties in global, regional, and country estimates of NMRs.</p>
+            <p>The gold standard for mortality data collection is a high-coverage, high-quality civil registration system. We assessed that only 38 countries had a civil registration system of sufficient population coverage, quality, and completion for the period 1990–2009 to be used for neonatal mortality estimation, and censuses have typically only collected data that enable estimation of infant and under-five mortality rates, or have not asked or reported specifically on neonatal outcomes. Mortality data collection is often difficult in countries with ongoing or recent civil conflict or disaster—most often due to breakdown of collection systems or because data collection risks compromising the security of participants. In our study, the 17 countries that had no relevant, recent data of any kind include countries that have experienced recent civil unrest.</p>
+            <p>The most common data source globally for child and neonatal mortality is retrospective household surveys such as the DHS, which rely on birth histories and do report neonatal outcomes. The neonatal period has historically been granted little space and effort in data collection and analyses. UNICEF's Multiple Indicator Cluster Surveys (MICS) are an increasing source of national estimates for under-five mortality but usually rely on demographic indirect estimation techniques that have been developed to estimate mortality rates when exact information on times of births and deaths of children is missing, and usually do not provide estimates of NMRs. Some MICS have used birth histories and have reported NMR (Malawi and several of the central Asian Republics). If more MICS followed this lead then data on neonatal deaths would increase markedly.</p>
+            <p>For retrospective birth histories and incomplete civil registration systems, under-reporting of neonatal deaths is believed to be a bigger problem than under-reporting of deaths among older children. Neonatal deaths are less likely to be recorded if the baby dies in the first few hours or days after birth or is very small. Additionally, misclassification of stillbirths and early neonatal deaths is likely to occur <xref ref-type="bibr" rid="pmed.1001080-Hill2">[36]</xref>. There is an urgent need for research into the extent and frequency of possible under-reporting of neonatal deaths from retrospective surveys, ideally by comparing such data with prospective data for the same population within the same time period. Additionally asking for a pregnancy history would theoretically be superior to asking only for live births in terms of capture of early neonatal deaths and stillbirths.</p>
+          </sec>
+        </boxed-text>
+        <p>We assessed all these different data sources and included those meeting our inclusion criteria, that is, reporting population-based data with neonatal deaths and under-five deaths with a denominator of livebirths. Although under-reporting of neonatal deaths is a concern even in middle- and high-income settings <xref ref-type="bibr" rid="pmed.1001080-McCarthy1">[22]</xref>–<xref ref-type="bibr" rid="pmed.1001080-Bang1">[24]</xref>, we did not adjust neonatal mortality data points for under-reporting. To ensure consistency with U5MR estimates produced for the UN by IGME and to account for variation in survey-to-survey measurement errors, we rescaled U5MR and NMR data points for all years to match the latest time series estimates of U5MR produced by IGME <xref ref-type="bibr" rid="pmed.1001080-You1">[14]</xref>. On average, rescaled values were 9.7% higher than original observation values, with 38% of data points increasing in value, 18% decreasing, and the remaining data points (all from civil registration) being unchanged. This rescaling assumes that the proportionate difference in NMR and U5MR is equal for each data point.</p>
+        <p>A country consultation was undertaken by WHO between December 2010 and January 2011 to give the Ministry of Health in each of the 193 countries the opportunity to review all data inputs and NMR draft estimates for the years 1990, 2000, and 2009 for their country. No countries had comments on the NMR estimates themselves, but 18 countries provided a total of 19 additional data points—all civil registration data points for the years 2008 and 2009. The final database and results presented in this paper incorporate the additional data points from the country consultation process.</p>
+        <p>The final input database included 3,551 country-years with data from 176 countries representing all WHO regions. Civil registration and surveillance system data provided 2,378 data points, and household survey data 1,173 data points (of which 976 were from DHS) (<xref ref-type="fig" rid="pmed-1001080-g001">Figure 1</xref>). The empirical dataset (original and with U5MRs and NMRs rescaled) can be found on the following Web site (<ext-link ext-link-type="uri" xlink:href="http://www.who.int/healthinfo/statistics/mortality/en/" xlink:type="simple">www.who.int/healthinfo/statistics/mortality/en/</ext-link>).</p>
+        <fig id="pmed-1001080-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pmed.1001080.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Data sources used for NMR estimation.</title>
+            <p>Year of most recent survey with neonatal and under-five mortality rates information is indicated as greater or less than 5 y before 2008. Countries with no relevant, recent data of any kind are indicated as not available.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.g001" xlink:type="simple"/>
+        </fig>
+        <p>Countries were classified by their income level as assessed in 2010 by the World Bank (World Bank List of Economies, July 2010, <ext-link ext-link-type="uri" xlink:href="http://go.worldbank.org/K2CKM78CC0" xlink:type="simple">http://go.worldbank.org/K2CKM78CC0</ext-link>). Estimates of livebirths were taken from the World Population Prospects: The 2008 Revision <xref ref-type="bibr" rid="pmed.1001080-United2">[25]</xref>. Our regional grouping of countries is based on World Bank income-group and WHO region (<xref ref-type="fig" rid="pmed-1001080-g002">Figure 2</xref>). Our analyses and results are presented by WHO region for low- and middle-income countries (LMICs), and separately for HICs. Equatorial Guinea is an exception to this rule being the only HIC in Africa. Given the similarity of Equatorial Guinea's NMR to those of other countries in Africa, Equatorial Guinea was grouped with the other countries in the WHO Africa region.</p>
+        <fig id="pmed-1001080-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pmed.1001080.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Geographical regions used in study.</title>
+            <p>The map illustrates the geographical regions used both in the statistical model and when summarizing results at regional level in the main text (<xref ref-type="supplementary-material" rid="pmed.1001080.s009">Table S3</xref> summarizes estimated neonatal mortality trends by MDG regions).</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.g002" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>NMR Estimation by Country</title>
+        <p>We used two methods to estimate country-specific NMRs, with the choice of method depending on the data available for each country. <xref ref-type="fig" rid="pmed-1001080-g003">Figure 3</xref> outlines which method was used for each country. Method 1 was used for 38 countries (8% of global livebirths in 2009), and method 2 for 155 countries (92% of global livebirths in 2009).</p>
+        <fig id="pmed-1001080-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pmed.1001080.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Methods used to estimate NMRs.</title>
+            <p>The map illustrates the NMR estimation method used for each of the 193 countries estimated for.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.g003" xlink:type="simple"/>
+        </fig>
+        <sec id="s2c1">
+          <title>Method 1. Civil registration data</title>
+          <p>For countries with high-quality civil registration data covering at least 17 of the 20 y in the period 1990–2009, and with no more than two consecutive years without data, NMR estimates were taken directly from civil registration systems and rescaled by the same proportion as the IGME adjustment to U5MR as outlined above. Thus, we used the empirical ratios of NMR to U5MR, but IGME adjusted U5MR levels. High-quality civil registration was defined as follows: (a) 100% complete for adults <xref ref-type="bibr" rid="pmed.1001080-Mathers1">[26]</xref> and (b) greater than 85% complete for children when comparing under-five mortality estimates from civil registration with estimates produced by IGME <xref ref-type="bibr" rid="pmed.1001080-You1">[14]</xref>. If there were no empirical data for a given year, we used data from the years closest to the year of estimate using the average of ratios of NMR to U5MR for surrounding years, or if the year of estimate was more recent than the year of data, the ratio of NMR to U5MR from the most recent year with empirical data.</p>
+        </sec>
+        <sec id="s2c2">
+          <title>Method 2. Statistical model (<xref ref-type="fig" rid="pmed-1001080-g003">Figure 3</xref>)</title>
+          <p>For the remaining countries, a multilevel statistical model was developed and used to predict NMR. The statistical model selected was the best performing model from a series of potential statistical models evaluated by ten-fold cross-validation <xref ref-type="bibr" rid="pmed.1001080-Hastie1">[27]</xref>. Cross-validation involves splitting the dataset randomly into ten equally sized subsets, and then for each of the subsets examining the prediction errors obtained when fitting a model to the other nine subsets. To minimize chance effects from splitting the dataset into subsets, ten-fold cross-validation was carried out five times. Prediction accuracy was assessed using two criteria: (a) the absolute difference between observed and predicted NMRs, and (b) the relative difference between observed and predicted NMRs. <xref ref-type="supplementary-material" rid="pmed.1001080.s011">Text S1</xref> lists cross-validation results. On the basis of the evaluation of model performance, only the most recent data point for each survey was included—reducing the number of country-years of observation from 3,551 to 2,648—and the final model was fitted to data from 1990 onwards only—which further reduced the dataset used to fit the final model from 2,648 to 1,388 observations. The 2007 study by Murray et al. <xref ref-type="bibr" rid="pmed.1001080-Murray2">[28]</xref> similarly concluded that inclusion of only the most recent data point for each survey improved the performance of their statistical model. It seems that the inclusion of older data points for each survey is more likely to add additional noise than additional useful information for the statistical modeling. This effect is likely due to greater measurement errors, and or greater recall or survival bias of data points further back in time in retrospective surveys.</p>
+          <p>The final model was as follows:<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.e001" xlink:type="simple"/></disp-formula>where, for observation <italic>i</italic>, that is for each country-year of observation, α<sub>j[i]</sub> and α<sub>k[i]</sub> are country-level and region-level random effects, respectively, and ε<sub>i</sub> is a random error term. <xref ref-type="fig" rid="pmed-1001080-g004">Figure 4</xref> illustrates our modeled relationship between U5MR and NMR as used to estimate NMR for method 2 countries. The country-level random effect was assumed to be zero when predicting for countries without country-specific input data meeting our inclusion criteria. Other statistical models evaluated included HIV/AIDS mortality rates and malaria prevalence as predictors, as these had been used as predictors in previous exercises conducted by WHO to estimate NMR <xref ref-type="bibr" rid="pmed.1001080-Zupan1">[5]</xref>.</p>
+          <fig id="pmed-1001080-g004" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pmed.1001080.g004</object-id>
+            <label>Figure 4</label>
+            <caption>
+              <title>Modeled relationship between U5MR and NMR.</title>
+              <p>The blue curve illustrates our fitted statistical model predicting NMR for method 2 countries (see <xref ref-type="sec" rid="s2">Methods</xref>). The curve was drawn with country and regional random effects assumed zero to show the assumed functional relationship between U5MR and NMR—in practice, within our multilevel statistical model, these random effects vary by country and region, respectively, such that the precise functional relationship between NMR and U5MR differs between countries. The green curve is similar to the blue model without allowing for a nonlinear association on the log scale. Compared to the green curve, the blue curve allows for more plausible changes in NMR at lower levels of U5MR; particularly, the green curve implies impossible NMRs at small U5MRs for countries and regions with positive random effects, as NMR would exceed U5MR. For comparison, the red line illustrates a linear relationship on the normal scale, NMR  =  U5MR, which is highly improbable, as it would allow for the same change in NMR for a given change in U5MR at all levels of U5MR.</p>
+            </caption>
+            <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.g004" xlink:type="simple"/>
+          </fig>
+        </sec>
+      </sec>
+      <sec id="s2d">
+        <title>Uncertainty Estimation by Country</title>
+        <p>To generate estimates of uncertainty for method 2 countries, we drew 1,000 bootstrap samples from the estimation dataset and repeated the estimation steps for each sample. The new NMR parameter estimates for each sample, including the estimate of the country- and region-specific random effects, were used to generate a new set of predictions. For countries not included in the bootstrap sample, and, thus, without an estimate of the country-specific random effect, we randomly generated a country-specific effect using the estimated between-country standard deviation for that country's region derived from the bootstrap sample. For Method 1 countries, we used the uncertainty range around U5MR to generate uncertainty estimates for NMR. Here, ratios of upper and lower uncertainty ranges of NMR to the NMR estimate were assumed to be the same as for U5MR. To obtain global and regional level estimates of uncertainty, we summed the data at global or regional level for each bootstrap prediction run. We used the 2.5th and 97.5th percentiles of the resulting distributions around the estimates as uncertainty range.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Trend Analysis of Neonatal Mortality Levels</title>
+        <p>We analysed trends of neonatal mortality using two indicators, the NMR and the absolute number of neonatal death. The two indicators measure or convey complementary information. NMR is an indication of the risk of neonatal death per livebirth, and as a risk measure is comparable across time and countries. The number of neonatal deaths depends on the NMR and the number of livebirths and is a useful measure of burden when comparing with other conditions. Both indicators are needed by public health policy-makers and health programmes to understand the scope of neonatal deaths in their country and, together with similar information on levels and causes of morbidity and mortality for other age groups, to prioritize public health interventions. Regional and global NMRs can be interpreted as mortality risk measures weighted by livebirths in individual countries. For example, NMR levels and trends in the Western Pacific LMIC region are largely driven by China, as the vast majority of annual livebirths in this region are in China, and, similarly, trends and levels in the Southeast Asia LMIC region are predominantly driven by India. We estimated absolute numbers of neonatal deaths using our estimated NMRs and livebirths for each country from 1990 onwards. Regional and global deaths and NMRs were also calculated. Forecasts for 2010 and onwards are based on average annual changes in NMR over the period 1999–2009, and assuming constant rates of change from 2009 onwards. To adequately consider neonatal deaths due to the Rwanda genocide, we assumed that 1/60 of the child deaths under five attributed to the genocide, as estimated by IGME <xref ref-type="bibr" rid="pmed.1001080-You1">[14]</xref>, occurred in the neonatal period.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>Over the 20 y from 1990 to 2009, an estimated 79 million babies died in the first 4 wk of life. Of these, the vast majority (&gt;98%) died in LMIC, with 31 million in Southeast Asian LMIC, and 21 million in African LMIC. There were 1 million deaths in HIC.</p>
+      <p>All regions of the world have seen reductions in NMR, but there are major regional variations in the estimated rate of reduction. Globally, the average NMR has fallen by more than a quarter over 20 y, from 33.2 to 23.9 per 1,000 livebirths, or an average of 1.7% per year. The biggest percentage reductions in NMR have been in European LMIC (down 49%), American LMIC (down 48%), and Western Pacific LMIC (down 48%) (see <xref ref-type="table" rid="pmed-1001080-t001">Tables 1</xref>, <xref ref-type="supplementary-material" rid="pmed.1001080.s007">S1</xref>, <xref ref-type="supplementary-material" rid="pmed.1001080.s008">S2</xref>, <xref ref-type="supplementary-material" rid="pmed.1001080.s009">S3</xref>, <xref ref-type="supplementary-material" rid="pmed.1001080.s010">S4</xref>; <xref ref-type="supplementary-material" rid="pmed.1001080.s001">Figure S1</xref>, which have estimates and graphs for all countries and regions, including a summary of levels and trends across MDG regions). Southeast Asian LMIC had the highest NMR in 1990 (NMR = 46.9) but only the third highest in 2009 (30.7) after Eastern Mediterranean LMIC (31.1) and African LMIC (35.9). The two latter regions have seen the smallest reductions in NMR over the period, and are the only two regions with average annual reductions in NMR of less than 2%. The Africa LMIC region saw the smallest reduction in NMR, with a total reduction of only 17.6% (1.0% per year) between 1990 and 2009.</p>
+      <table-wrap id="pmed-1001080-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001080.t001</object-id><label>Table 1</label><caption>
+          <title>Neonatal mortality trends in the period 1990–2009 globally and by WHO region (<xref ref-type="supplementary-material" rid="pmed.1001080.s009">Table S3</xref> summarizes the same trends by MDG regions).</title>
+        </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pmed-1001080-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.t001" xlink:type="simple"/><table>
+          <colgroup span="1">
+            <col align="left" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+            <col align="center" span="1"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">Region</td>
+              <td align="left" colspan="1" rowspan="1">Neonatal Mortality</td>
+              <td align="left" colspan="1" rowspan="1">1990</td>
+              <td align="left" colspan="1" rowspan="1">1995</td>
+              <td align="left" colspan="1" rowspan="1">2000</td>
+              <td align="left" colspan="1" rowspan="1">2005</td>
+              <td align="left" colspan="1" rowspan="1">2009</td>
+              <td align="left" colspan="1" rowspan="1">Percent Change 1990–2009 (Annual)</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">
+                <bold>Global</bold>
+              </td>
+              <td align="left" colspan="1" rowspan="1">NMR</td>
+              <td align="left" colspan="1" rowspan="1">33.2</td>
+              <td align="left" colspan="1" rowspan="1">32.0</td>
+              <td align="left" colspan="1" rowspan="1">29.4</td>
+              <td align="left" colspan="1" rowspan="1">26.3</td>
+              <td align="left" colspan="1" rowspan="1">23.9</td>
+              <td align="left" colspan="1" rowspan="1">−28.0 (−1.7)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Deaths in 1,000s (% of global)</td>
+              <td align="left" colspan="1" rowspan="1">4,574 (100)</td>
+              <td align="left" colspan="1" rowspan="1">4,296 (100)</td>
+              <td align="left" colspan="1" rowspan="1">3,913 (100)</td>
+              <td align="left" colspan="1" rowspan="1">3,536 (100)</td>
+              <td align="left" colspan="1" rowspan="1">3,265 (100)</td>
+              <td colspan="1" rowspan="1">−28.6</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">
+                <bold>HIC</bold>
+              </td>
+              <td align="left" colspan="1" rowspan="1">NMR</td>
+              <td align="left" colspan="1" rowspan="1">6.0</td>
+              <td align="left" colspan="1" rowspan="1">4.9</td>
+              <td align="left" colspan="1" rowspan="1">4.2</td>
+              <td align="left" colspan="1" rowspan="1">3.9</td>
+              <td align="left" colspan="1" rowspan="1">3.6</td>
+              <td align="left" colspan="1" rowspan="1">−40.3 (−2.7)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Deaths in 1,000s (% of global)</td>
+              <td align="left" colspan="1" rowspan="1">79 (1.7)</td>
+              <td align="left" colspan="1" rowspan="1">63 (1.5)</td>
+              <td align="left" colspan="1" rowspan="1">52 (1.3)</td>
+              <td align="left" colspan="1" rowspan="1">48 (1.4)</td>
+              <td align="left" colspan="1" rowspan="1">45 (1.4)</td>
+              <td align="left" colspan="1" rowspan="1">−42.7</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">
+                <bold>Africa (LMIC)</bold>
+              </td>
+              <td align="left" colspan="1" rowspan="1">NMR</td>
+              <td align="left" colspan="1" rowspan="1">43.6</td>
+              <td align="left" colspan="1" rowspan="1">43.0</td>
+              <td align="left" colspan="1" rowspan="1">41.1</td>
+              <td align="left" colspan="1" rowspan="1">38.3</td>
+              <td align="left" colspan="1" rowspan="1">35.9</td>
+              <td align="left" colspan="1" rowspan="1">−17.6 (−1.0)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Deaths in 1,000s (% of global)</td>
+              <td align="left" colspan="1" rowspan="1">971 (21.2)</td>
+              <td align="left" colspan="1" rowspan="1">1,047 (24.4)</td>
+              <td align="left" colspan="1" rowspan="1">1,094 (27.9)</td>
+              <td align="left" colspan="1" rowspan="1">1,119 (31.6)</td>
+              <td align="left" colspan="1" rowspan="1">1,114 (34.1)</td>
+              <td align="left" colspan="1" rowspan="1">14.7</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">
+                <bold>Americas (LMIC)</bold>
+              </td>
+              <td align="left" colspan="1" rowspan="1">NMR</td>
+              <td align="left" colspan="1" rowspan="1">22.0</td>
+              <td align="left" colspan="1" rowspan="1">19.0</td>
+              <td align="left" colspan="1" rowspan="1">15.8</td>
+              <td align="left" colspan="1" rowspan="1">13.1</td>
+              <td align="left" colspan="1" rowspan="1">11.4</td>
+              <td align="left" colspan="1" rowspan="1">−48.3 (−3.4)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Deaths in 1,000s (% of global)</td>
+              <td align="left" colspan="1" rowspan="1">255 (5.6)</td>
+              <td align="left" colspan="1" rowspan="1">220 (5.1)</td>
+              <td align="left" colspan="1" rowspan="1">181 (4.6)</td>
+              <td align="left" colspan="1" rowspan="1">145 (4.1)</td>
+              <td align="left" colspan="1" rowspan="1">121 (3.7)</td>
+              <td align="left" colspan="1" rowspan="1">−52.7</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">
+                <bold>Eastern Mediterranean (LMIC)</bold>
+              </td>
+              <td align="left" colspan="1" rowspan="1">NMR</td>
+              <td align="left" colspan="1" rowspan="1">41.3</td>
+              <td align="left" colspan="1" rowspan="1">39.1</td>
+              <td align="left" colspan="1" rowspan="1">36.3</td>
+              <td align="left" colspan="1" rowspan="1">33.2</td>
+              <td align="left" colspan="1" rowspan="1">31.1</td>
+              <td align="left" colspan="1" rowspan="1">−24.6 (−1.5)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Deaths in 1,000s (% of global)</td>
+              <td align="left" colspan="1" rowspan="1">565 (12.4)</td>
+              <td align="left" colspan="1" rowspan="1">530 (12.3)</td>
+              <td align="left" colspan="1" rowspan="1">506 (12.9)</td>
+              <td align="left" colspan="1" rowspan="1">490 (13.9)</td>
+              <td align="left" colspan="1" rowspan="1">481 (14.7)</td>
+              <td align="left" colspan="1" rowspan="1">−14.9</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">
+                <bold>Europe (LMIC)</bold>
+              </td>
+              <td align="left" colspan="1" rowspan="1">NMR</td>
+              <td align="left" colspan="1" rowspan="1">21.0</td>
+              <td align="left" colspan="1" rowspan="1">20.1</td>
+              <td align="left" colspan="1" rowspan="1">17.0</td>
+              <td align="left" colspan="1" rowspan="1">13.2</td>
+              <td align="left" colspan="1" rowspan="1">10.7</td>
+              <td align="left" colspan="1" rowspan="1">−49.2 (−3.5)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Deaths in 1,000s (% of global)</td>
+              <td align="left" colspan="1" rowspan="1">148 (3.2)</td>
+              <td align="left" colspan="1" rowspan="1">118 (2.8)</td>
+              <td align="left" colspan="1" rowspan="1">90 (2.3)</td>
+              <td align="left" colspan="1" rowspan="1">72 (2.0)</td>
+              <td align="left" colspan="1" rowspan="1">60 (1.8)</td>
+              <td align="left" colspan="1" rowspan="1">−59.6</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">
+                <bold>South-East Asia (LMIC)</bold>
+              </td>
+              <td align="left" colspan="1" rowspan="1">NMR</td>
+              <td align="left" colspan="1" rowspan="1">46.9</td>
+              <td align="left" colspan="1" rowspan="1">43.6</td>
+              <td align="left" colspan="1" rowspan="1">39.2</td>
+              <td align="left" colspan="1" rowspan="1">34.2</td>
+              <td align="left" colspan="1" rowspan="1">30.7</td>
+              <td align="left" colspan="1" rowspan="1">−34.6 (−2.2)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Deaths in 1,000s (% of global)</td>
+              <td align="left" colspan="1" rowspan="1">1,860 (40.7)</td>
+              <td align="left" colspan="1" rowspan="1">1,738 (40.5)</td>
+              <td align="left" colspan="1" rowspan="1">1,549 (39.6)</td>
+              <td align="left" colspan="1" rowspan="1">1,326 (37.5)</td>
+              <td align="left" colspan="1" rowspan="1">1,161 (35.6)</td>
+              <td align="left" colspan="1" rowspan="1">−37.6</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1">
+                <bold>Western Pacific (LMIC)</bold>
+              </td>
+              <td align="left" colspan="1" rowspan="1">NMR</td>
+              <td align="left" colspan="1" rowspan="1">22.9</td>
+              <td align="left" colspan="1" rowspan="1">22.1</td>
+              <td align="left" colspan="1" rowspan="1">18.6</td>
+              <td align="left" colspan="1" rowspan="1">14.6</td>
+              <td align="left" colspan="1" rowspan="1">12.0</td>
+              <td align="left" colspan="1" rowspan="1">−47.5 (−3.3)</td>
+            </tr>
+            <tr>
+              <td align="left" colspan="1" rowspan="1"/>
+              <td align="left" colspan="1" rowspan="1">Deaths in 1,000s (% of global)</td>
+              <td align="left" colspan="1" rowspan="1">694 (15.2)</td>
+              <td align="left" colspan="1" rowspan="1">580 (13.5)</td>
+              <td align="left" colspan="1" rowspan="1">442 (11.3)</td>
+              <td align="left" colspan="1" rowspan="1">336 (9.5)</td>
+              <td align="left" colspan="1" rowspan="1">283 (8.7)</td>
+              <td align="left" colspan="1" rowspan="1">−59.3</td>
+            </tr>
+          </tbody>
+        </table></alternatives></table-wrap>
+      <p>Over the period 1990–2009, regions fall into three broad categories in terms of NMR level (<xref ref-type="fig" rid="pmed-1001080-g005">Figure 5</xref>): HICs have much lower NMR and fewer neonatal deaths compared to the rest of the world, currently accounting for 1.4% of annual global neonatal deaths. Yet these countries continue to see major relative reductions in NMR, from 6.0 to 3.6 per 1,000 livebirths between 1990 and 2009—a 40% reduction, and greater than the global average reduction. Among LMICs, there is a clear separation between the higher NMR regions of Africa, Eastern Mediterranean, and Southeast Asia (NMR range 30.7–35.9 in 2009) and the lower NMR regions of Western Pacific, Europe, and the Americas (NMR range 10.7–12.0 in 2009).</p>
+      <fig id="pmed-1001080-g005" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pmed.1001080.g005</object-id>
+        <label>Figure 5</label>
+        <caption>
+          <title>Regional trends in NMRs and numbers 1990–2009.</title>
+          <p>(A) NMRs. (B) Neonatal deaths. (C) Percentage of global deaths per region. (D) Percentage of child (under 5 y) deaths in neonatal period.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.g005" xlink:type="simple"/>
+      </fig>
+      <p>In 2009, an estimated 3.3 million babies died globally before reaching the age of 28 d compared with an estimated 4.6 million deaths in 1990 (<xref ref-type="fig" rid="pmed-1001080-g005">Figure 5</xref>; <xref ref-type="table" rid="pmed-1001080-t001">Table 1</xref>), a reduction of 29% in annual deaths. The proportion of neonatal deaths that occurs in African LMIC is increasing. If trends from the 11-y period 1999–2009 continue, the African region will overtake Southeast Asian LMIC in 2010 as the region with most neonatal deaths. This reflects the slower annual reduction in NMR in Africa LMIC compared to other regions of the world (<xref ref-type="table" rid="pmed-1001080-t001">Table 1</xref>), and that Africa LMIC has seen a 39.2% increase in annual births between 1990 and 2009, whereas annual births have decreased for most other regions of the world (<xref ref-type="supplementary-material" rid="pmed.1001080.s010">Table S4</xref>).</p>
+      <p>The proportion of child deaths that occur in the neonatal period has increased in all regions of the world; globally the proportion increased from 37% in 1990 to 41% in 2009 (<xref ref-type="fig" rid="pmed-1001080-g005">Figure 5D</xref>). The regions with the largest relative increase in neonatal mortality compared to mortality in older children under five were European LMIC (39% to 50%), Southeast Asian LMIC (42% to 53%), and Western Pacific LMIC (44% to 54%).</p>
+      <p>Of the 40 countries with the highest NMRs in 2009 (see <xref ref-type="fig" rid="pmed-1001080-g006">Figure 6</xref>), only six are from outside the African continent (Afghanistan, Pakistan, India, Bhutan, Myanmar, and Cambodia). Among the 15 countries with the highest NMRs (all above 39), 12 were from the African region (Democratic Republic of the Congo, Mali, Sierra Leone, Guinea-Bissau, Chad, Central African Republic, Burundi, Angola, Mauritania, Mozambique, Guinea, and Equatorial Guinea), and three were from the Eastern Mediterranean (Afghanistan, Somalia, and Pakistan). Throughout the period 1990–2009, India has been the country with largest number of neonatal deaths. In 2009, the five countries with most deaths accounted for more than half of all neonatal deaths (1.7 million deaths = 52%), and 44% of global livebirths: India (27.8% of deaths, 19.6% of global livebirths), Nigeria (7.2%, 4.5%), Pakistan (6.9%, 4.0%), China (6.4%, 13.4%), and Democratic Republic of the Congo (4.6%, 2.1%). The top five contributors to the 4.6 million neonatal deaths in 1990 were: India (29.5% of deaths, 19.8% of global livebirths), China (12.3%, 18.0%), Pakistan (5.4%, 3.4%), Bangladesh (5.0%, 2.9%), and Nigeria (4.8%, 3.3%). NMR estimates for each country can be found in <xref ref-type="supplementary-material" rid="pmed.1001080.s007">Table S1</xref>.</p>
+      <fig id="pmed-1001080-g006" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pmed.1001080.g006</object-id>
+        <label>Figure 6</label>
+        <caption>
+          <title>NMRs in 2009.</title>
+          <p>The map illustrates the NMR in year 2009 for each of the 193 countries estimated for.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.g006" xlink:type="simple"/>
+      </fig>
+      <p>In eight countries NMRs are estimated to have increased over the 20 y of study, and five of these countries are in Africa (Nauru, Congo, Zimbabwe, Niue, Chad, Cameroon, Trinidad and Tobago, and South Africa), and NMRs are unchanged over the 20 y for the Democratic Republic of Congo and Somalia. These trends in NMRs between 1990 and 2009 are a result of U5MR being estimated by IGME to have been increasing or been constant over the period, respectively (<xref ref-type="fig" rid="pmed-1001080-g007">Figure 7</xref>). Of the ten countries with the greatest relative reductions in NMR (all saw reductions of more than 68%), eight were HIC (San Marino, Luxembourg, Czech Republic, Estonia, Cyprus, Singapore, Greece, and Oman), one a Southeast Asian LMIC (Maldives), and one a European LMIC (Serbia). When interpreting NMR trends for countries with small numbers of annual livebirths the low number of livebirths makes the estimation of an underlying true population NMR less certain.</p>
+      <fig id="pmed-1001080-g007" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pmed.1001080.g007</object-id>
+        <label>Figure 7</label>
+        <caption>
+          <title>Changes in NMRs between 1990 and 2009.</title>
+          <p>The map illustrates the change in NMR between the years 1990 and 2009 for each of the 193 countries estimated for.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.g007" xlink:type="simple"/>
+      </fig>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>This analysis is the first published set, to our knowledge, of national annual time series for neonatal deaths for all the countries of the world, involving country consultation, with forecasts, and with a presentation and discussion of country and regional levels and trends. The input database is extensive and the modeling methods have been improved over previous exercises by UN agencies <xref ref-type="bibr" rid="pmed.1001080-Zupan1">[5]</xref>, yet uncertainty remains wide and may not fully capture remaining issues around underestimation and misclassification of neonatal deaths and stillbirths. Because of the lack of evidence and understanding of the frequency and extent of possible under-reporting of neonatal deaths across data sources (see <xref ref-type="boxed-text" rid="pmed-1001080-box001">Box 1</xref>), we have not attempted to adjust input data for possible under-reporting, as is routinely done by many other global health estimates <xref ref-type="bibr" rid="pmed.1001080-Hill1">[10]</xref>. Instead, we rescaled NMR and U5MR input data to match U5MR estimates produced by IGME. This rescaling assumes that the proportionate difference in NMR and U5MR is equal for each data point. However, it is believed that under-reporting of neonatal deaths is greater than for older children in retrospective mortality data collection systems, especially household surveys which may ask about births in the previous 5 y (see <xref ref-type="boxed-text" rid="pmed-1001080-box001">Box 1</xref>), which consequently would make our estimates of neonatal deaths conservative.</p>
+      <p>As the risk of children dying before the age of five has fallen, the proportion of child deaths that occur in the neonatal period has increased. This increase is primarily a consequence of decreasing non-neonatal mortality in children under five from infectious diseases such as measles, pneumonia, diarrhea, malaria, and AIDS. Globally, 41% of under-five deaths now occur in the neonatal period. Over the 20 y between 1990 and 2009, the proportion of global neonatal deaths that occurred in Africa increased. Although Africa is now the region with the highest NMR, the proportion of under-five child deaths that are neonatal remains relatively low in Africa—the fraction increased from 26% to 29% between 1990 and 2009. This apparent anomaly reflects the fact that Africa accounts for approximately 90% of child deaths due to malaria (0.7 million under-five deaths) and HIV/AIDS (0.2 million under-five deaths) <xref ref-type="bibr" rid="pmed.1001080-Black1">[4]</xref>, resulting in relatively higher post-neonatal child mortality than other regions.</p>
+      <p>Globally, the average annual reduction in NMR appears to be accelerating and was twice as high for the period 1999–2009 (2.3%) compared to that experienced in the period 1990–1999 (1.1%). Only HIC experienced lower average reduction in NMR in the period 1999–2009 (1.7%) compared to that experienced in the period 1990–1999 (3.7%), which may reflect the challenge of reducing mortality in very preterm babies. However, while progress appears to be increasing, the average annual rate of NMR reduction is well below the MDG-4 goal (of 4.4%) at 1.7% per year globally in the period 1990–2009, and less than for under-five mortality at 2.1% per year in the same period <xref ref-type="bibr" rid="pmed.1001080-You1">[14]</xref> and maternal mortality over the period 1990–2008 at 2.3% per year <xref ref-type="bibr" rid="pmed.1001080-Trends1">[12]</xref>.</p>
+      <p>If trends for NMR and U5MR from the period 1999–2009 continue, the risk of dying within the first 4 wk of life in Africa will match the current risk in HIC by the year 2166 (<xref ref-type="fig" rid="pmed-1001080-g008">Figure 8</xref>). Although this forecast is simplistic as it assumes that the average annual rate of reduction in Africa experienced between 1999 and 2009 will remain constant over the next 160 y in Africa (see <xref ref-type="fig" rid="pmed-1001080-g008">Figure 8</xref>), it highlights the very high current NMR levels in Africa and the very slow progress in NMR reduction compared to other regions of the world, particularly to HIC.</p>
+      <fig id="pmed-1001080-g008" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pmed.1001080.g008</object-id>
+        <label>Figure 8</label>
+        <caption>
+          <title>Forecasting the number of years for low- and middle-income regions to reduce NMR to the current rate in HICs.</title>
+          <p>The graph illustrates when each region of the world attains a NMR of 3.6 as observed in HICs in 2009—the year each region attains a NMR of 3.6 is specified in parenthesis. Regional NMRs are illustrated as constant from the year they achieve a NMR of 3.6. Forecasting based on average annual changes in the NMR over the 10-y period 1999–2009.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.g008" xlink:type="simple"/>
+      </fig>
+      <p>The trend and numbers in Western Pacific LMIC are predominantly driven by China—e.g., in 2009, the proportions of livebirths and neonatal deaths in the region that occurred in China were 78% and 74%, respectively. In the period 1993–1998, China appears to have experienced relatively large fluctuations in the age distribution of child deaths aged less than five (<xref ref-type="fig" rid="pmed-1001080-g005">Figure 5</xref>). The Chinese Maternal and Child Health Surveillance System (MCHSS) used in the neonatal mortality estimation makes use of trained female health workers or village doctors to register child births and deaths in villages and communities, and is believed to be nationally representative and of relatively high quality <xref ref-type="bibr" rid="pmed.1001080-Rudan1">[29]</xref>. However, we excluded data from MCHSS prior to 1999 because of uncertainty about the quality of data <xref ref-type="bibr" rid="pmed.1001080-Rudan1">[29]</xref>, and used the statistical model to predict NMRs for China for the whole time period, 1990–2009. The number of non-neonatal deaths in children under five decreased markedly in the period 1993–1998, whereas the number of neonatal deaths was relatively constant, as were both neonatal and under-five mortality rates. The observed fluctuation in the age distribution of child deaths in China between 1993 and 1998 appear to be predominantly driven by changes in the population of children under five, as estimated by the United Nations Population Division (see <xref ref-type="supplementary-material" rid="pmed.1001080.s002">Figure S2</xref>), which we used to estimate child deaths under five.</p>
+      <p>In our statistical model, the only predictor of NMR that can change over time is U5MR. Our model allows for a nonlinear association between NMR and U5MR on a logarithmic scale, and for the ratio of NMR to U5MR to vary depending on U5MR, country, and region (see <xref ref-type="sec" rid="s2">Methods</xref>, <xref ref-type="fig" rid="pmed-1001080-g004">Figure 4</xref> in particular). The Preliminary Report for the Malawi DHS 2010 survey was recently released <xref ref-type="bibr" rid="pmed.1001080-Measure1">[30]</xref>, and estimated a NMR of 31 for the 5-y period 2005–2010, that is with midpoint years 2007 and 2008. The survey was not included in our input data used to develop our statistical model, as it was not available at the time, but can be used as a post hoc exploration of the performance of our statistical model. Using our statistical model, we estimated NMR to be 31.5 (29.0–35.7) in 2007 and 30.5 (28.0–34.6) in 2008, which agrees closely with the preliminary survey estimate, and, thus, suggests that our statistical model is performing well, at least for recent years' trend in this African country.</p>
+      <p>In 2010, Rajaratnam et al. published NMR time series as part of their systematic evaluation of trends and levels of child mortality <xref ref-type="bibr" rid="pmed.1001080-Rajaratnam1">[15]</xref>. <xref ref-type="supplementary-material" rid="pmed.1001080.s003">Figures S3</xref>, <xref ref-type="supplementary-material" rid="pmed.1001080.s004">S4</xref>, <xref ref-type="supplementary-material" rid="pmed.1001080.s005">S5</xref>, <xref ref-type="supplementary-material" rid="pmed.1001080.s006">S6</xref> present a detailed comparison of estimates at country, regional, and global levels in the period 1990–2009, including Bland-Altman plots for each year with the relative difference plotted as a function of the average of the two estimates for each country. Our estimation process differs from that of Rajaratnam et al. in a number of ways: we carried out a country consultation, which allowed countries to review data inputs and estimates and provide us with their feedback; (a) we used more recent data, primarily as our estimates were finalized 2 y later, which allowed us to better predict current and recent years' NMRs (assuming same methods are used); (b) our focus is on neonatal mortality levels and trends, whereas Rajaratnam et al. focused on child mortality under five. However, from a statistical modeling perspective, both approaches use a multilevel modeling approach with U5MR as the main predictor of NMR, together with country and regional information. The main differences to our methods are that Rajaratnam et al. allowed slope coefficients to vary by country and region, that Rajaratnam et al. made use of their own estimated U5MR time series, and in that Rajaratnam et al. predict NMR separately for the two sexes. Rajaratnam et al. furthermore do a joint decomposition of the U5MR into the age groups neonatal, postneonatal (1–11 mo), and child (12–59 mo). This approach requires each observation in the data base to have information on all three rates (assuming data imputation is not carried out), which most likely explains why their data base for NMR modeling has half the number of observations of ours. Generally, the two sets of NMR time series are in close agreement. At global and regional levels relative differences are for most years on the order of ±5% and ±10%, respectively, which are well inside the uncertainty range of the estimates. For most countries, relative differences between NMR estimates are within ±25% for most years. For example, the number of countries with differences greater than ±25% are 44 for year 2009 (24%) and 34 for year 1990 (18%).</p>
+      <p>The most recent systematic evaluation of child causes of deaths is for year 2008 <xref ref-type="bibr" rid="pmed.1001080-Black1">[4]</xref>. Major causes of neonatal deaths globally in 2008 were estimated to be complications from preterm delivery (29%), asphyxia (23%), and infections with sepsis and pneumonia as the major causes contributing a combined 25% of neonatal deaths <xref ref-type="bibr" rid="pmed.1001080-Black1">[4]</xref>. Countries with lower NMR typically had higher proportions of neonatal deaths caused by preterm delivery complications and congenital anomalies <xref ref-type="bibr" rid="pmed.1001080-Black1">[4]</xref>, and those with high mortality have around half of neonatal deaths due to infections, which are eminently preventable or treatable <xref ref-type="bibr" rid="pmed.1001080-Lawn1">[1]</xref>.</p>
+      <sec id="s4a">
+        <title>Conclusion</title>
+        <p>In the absence of regular, reliable civil registration data from 92% of the world's births, modeling is necessary for public health policy and priority setting. However, until national data collection systems and surveys improve the measurement of neonatal deaths and also stillbirths <xref ref-type="bibr" rid="pmed.1001080-Lawn3">[31]</xref>, considerable uncertainty around both these mortality rates and progress in reducing them will remain. More investment is required to improve and establish the quality of pregnancy outcome data especially in retrospective surveys <xref ref-type="bibr" rid="pmed.1001080-Lawn4">[32]</xref>. Regular annual reporting of NMR through the UN system should become the norm, as is the case for under-five mortality rates.</p>
+        <p>Our findings highlight inter-regional variation in progress but also remarkable variation between countries in the same region. More evaluation is required to understand this variation in progress and better understanding of the underlying reasons would be critical in accelerating progress for neighboring countries.</p>
+        <p>The relative contribution of neonatal deaths to child deaths is expected to increase into the future. Progress in reducing neonatal mortality risk over the last 20 y has been slow, particularly in regions with the greatest risk. National governments, international organizations, nongovernmental organizations, and other international health bodies must increase investment in care at birth and the first few weeks of life within existing health programs, adding targeted interventions especially at the time of birth <xref ref-type="bibr" rid="pmed.1001080-Lawn5">[33]</xref>. The majority of neonatal deaths could be prevented with existing interventions including some that can be delivered at community level with potential to reduce neonatal deaths by one-third, such as improved hygiene at birth, breastfeeding, and simple approaches to keeping babies warm <xref ref-type="bibr" rid="pmed.1001080-Darmstadt1">[6]</xref>. Maternal health programs and child health programs are beginning to place greater emphasis on newborn survival, but major missed opportunities remain even in existing programs <xref ref-type="bibr" rid="pmed.1001080-Lawn6">[34]</xref>—for example midwives who are not trained and equipped for simple newborn care and neonatal resuscitation <xref ref-type="bibr" rid="pmed.1001080-Wall1">[35]</xref>. Many of the 79 million babies who died in the neonatal period since 1990 were born with little or no access to health services and in settings with little health information to drive health system improvement. If MDG-4 is to be achieved, and this needless loss of life prevented, it is essential that national governments, international agencies, and civil society increase attention to systematically preventing and tracking neonatal deaths <xref ref-type="bibr" rid="pmed.1001080-Lawn2">[9]</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pmed.1001080.s001" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.s001" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p>Graphs of NMR, U5MR, and ratio of NMR to U5MR for each country.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001080.s002" mimetype="application/x-excel" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.s002" xlink:type="simple">
+        <label>Figure S2</label>
+        <caption>
+          <p>Time series (1990–2009) for China, for neonatal and under-five deaths, deaths and mortality rates, and estimates of livebirths and the population under-five.</p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001080.s003" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.s003" xlink:type="simple">
+        <label>Figure S3</label>
+        <caption>
+          <p>Comparison to IHME estimates of NMR. Country graphs.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001080.s004" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.s004" xlink:type="simple">
+        <label>Figure S4</label>
+        <caption>
+          <p>Comparison to IHME estimates of NMR. Comparison per year across countries with scatterplots.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001080.s005" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.s005" xlink:type="simple">
+        <label>Figure S5</label>
+        <caption>
+          <p>Comparison to IHME estimates of NMR. Comparison per year, relative difference in country estimates.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001080.s006" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.s006" xlink:type="simple">
+        <label>Figure S6</label>
+        <caption>
+          <p>Comparison to IHME estimates of NMR. Regional comparison.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001080.s007" mimetype="application/x-excel" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.s007" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>Time series for each country of NMR and neonatal deaths.</p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001080.s008" mimetype="application/x-excel" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.s008" xlink:type="simple">
+        <label>Table S2</label>
+        <caption>
+          <p>Time series for regions of NMR and neonatal deaths.</p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001080.s009" mimetype="application/x-excel" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.s009" xlink:type="simple">
+        <label>Table S3</label>
+        <caption>
+          <p>Summary of NMR levels and trends across MDG regions.</p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001080.s010" mimetype="application/x-excel" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.s010" xlink:type="simple">
+        <label>Table S4</label>
+        <caption>
+          <p>Changes in livebirths, per region.</p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001080.s011" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001080.s011" xlink:type="simple">
+        <label>Text S1</label>
+        <caption>
+          <p>Cross-validation results from statistical model exploration.</p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We are very grateful to Doris Ma Fat (WHO) for preparation of civil registration data, and to Florence Rusciano (WHO) for the production of maps. We thank the UN Inter-agency Group for Child Mortality Estimation and the Child Health Epidemiology Reference Group for useful comments and reviews during the development of these estimates.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pmed.1001080-Lawn1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lawn</surname><given-names>JE</given-names></name><name name-style="western"><surname>Cousens</surname><given-names>S</given-names></name><name name-style="western"><surname>Zupan</surname><given-names>J</given-names></name></person-group>             <year>2005</year>             <article-title>4 million neonatal deaths: when? Where? Why?</article-title>             <source>Lancet</source>             <volume>365</volume>             <fpage>891</fpage>             <lpage>900</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Shiffman1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Shiffman</surname><given-names>J</given-names></name></person-group>             <year>2010</year>             <article-title>Issue attention in global health: the case of newborn survival.</article-title>             <source>Lancet</source>             <volume>375</volume>             <fpage>2045</fpage>             <lpage>2049</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Tinker1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Tinker</surname><given-names>A</given-names></name><name name-style="western"><surname>ten Hoope-Bender</surname><given-names>P</given-names></name><name name-style="western"><surname>Azfar</surname><given-names>S</given-names></name><name name-style="western"><surname>Bustreo</surname><given-names>F</given-names></name><name name-style="western"><surname>Bell</surname><given-names>R</given-names></name></person-group>             <year>2005</year>             <article-title>A continuum of care to save newborn lives.</article-title>             <source>Lancet</source>             <volume>365</volume>             <fpage>822</fpage>             <lpage>825</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Black1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Black</surname><given-names>RE</given-names></name><name name-style="western"><surname>Cousens</surname><given-names>S</given-names></name><name name-style="western"><surname>Johnson</surname><given-names>HL</given-names></name><name name-style="western"><surname>Lawn</surname><given-names>JE</given-names></name><name name-style="western"><surname>Rudan</surname><given-names>I</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Global, regional, and national causes of child mortality in 2008: a systematic analysis.</article-title>             <source>Lancet</source>             <volume>375</volume>             <fpage>1969</fpage>             <lpage>1987</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Zupan1">
+        <label>5</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Zupan</surname><given-names>J</given-names></name><name name-style="western"><surname>Aahman</surname><given-names>E</given-names></name></person-group>             <year>2005</year>             <source>Perinatal mortality for the year 2000: estimates developed by the WHO</source>             <publisher-loc>Geneva</publisher-loc>             <publisher-name>WHO</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Darmstadt1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Darmstadt</surname><given-names>GL</given-names></name><name name-style="western"><surname>Bhutta</surname><given-names>ZA</given-names></name><name name-style="western"><surname>Cousens</surname><given-names>S</given-names></name><name name-style="western"><surname>Adam</surname><given-names>T</given-names></name><name name-style="western"><surname>Walker</surname><given-names>N</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>Evidence-based, cost-effective interventions: how many newborn babies can we save?</article-title>             <source>Lancet</source>             <volume>365</volume>             <fpage>977</fpage>             <lpage>988</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Knippenberg1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Knippenberg</surname><given-names>R</given-names></name><name name-style="western"><surname>Lawn</surname><given-names>JE</given-names></name><name name-style="western"><surname>Darmstadt</surname><given-names>GL</given-names></name><name name-style="western"><surname>Begkoyian</surname><given-names>G</given-names></name><name name-style="western"><surname>Fogstad</surname><given-names>H</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>Systematic scaling up of neonatal care in countries.</article-title>             <source>Lancet</source>             <volume>365</volume>             <fpage>1087</fpage>             <lpage>1098</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Martines1">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Martines</surname><given-names>J</given-names></name><name name-style="western"><surname>Paul</surname><given-names>VK</given-names></name><name name-style="western"><surname>Bhutta</surname><given-names>ZA</given-names></name><name name-style="western"><surname>Koblinsky</surname><given-names>M</given-names></name><name name-style="western"><surname>Soucat</surname><given-names>A</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>Neonatal survival: a call for action.</article-title>             <source>Lancet</source>             <volume>365</volume>             <fpage>1189</fpage>             <lpage>1197</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Lawn2">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lawn</surname><given-names>JE</given-names></name><name name-style="western"><surname>Cousens</surname><given-names>SN</given-names></name><name name-style="western"><surname>Darmstadt</surname><given-names>GL</given-names></name><name name-style="western"><surname>Bhutta</surname><given-names>ZA</given-names></name><name name-style="western"><surname>Martines</surname><given-names>J</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>1 year after The Lancet Neonatal Survival Series—was the call for action heard?</article-title>             <source>Lancet</source>             <volume>367</volume>             <fpage>1541</fpage>             <lpage>1547</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Hill1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hill</surname><given-names>K</given-names></name><name name-style="western"><surname>Thomas</surname><given-names>K</given-names></name><name name-style="western"><surname>AbouZahr</surname><given-names>C</given-names></name><name name-style="western"><surname>Walker</surname><given-names>N</given-names></name><name name-style="western"><surname>Say</surname><given-names>L</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Estimates of maternal mortality worldwide between 1990 and 2005: an assessment of available data.</article-title>             <source>Lancet</source>             <volume>370</volume>             <fpage>1311</fpage>             <lpage>1319</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-United1">
+        <label>11</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">United Nations</collab>             <year>2010</year>             <source>The Millennium Development Goals Report 2010</source>             <publisher-loc>New York</publisher-loc>             <publisher-name>United Nations</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Trends1">
+        <label>12</label>
+        <element-citation publication-type="other" xlink:type="simple">             <year>2010</year>             <source>Trends in maternal mortality: 1990 to 2008. Estimates developed by WHO, UNICEF, UNFPA and The World Bank</source>             <publisher-loc>Geneva</publisher-loc>             <publisher-name>WHO</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Hogan1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hogan</surname><given-names>MC</given-names></name><name name-style="western"><surname>Foreman</surname><given-names>KJ</given-names></name><name name-style="western"><surname>Naghavi</surname><given-names>M</given-names></name><name name-style="western"><surname>Ahn</surname><given-names>SY</given-names></name><name name-style="western"><surname>Wang</surname><given-names>M</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Maternal mortality for 181 countries, 1980–2008: a systematic analysis of progress towards Millennium Development Goal 5.</article-title>             <source>Lancet</source>             <volume>375</volume>             <fpage>1609</fpage>             <lpage>1623</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-You1">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>You</surname><given-names>D</given-names></name><name name-style="western"><surname>Jones</surname><given-names>G</given-names></name><name name-style="western"><surname>Hill</surname><given-names>K</given-names></name><name name-style="western"><surname>Wardlaw</surname><given-names>T</given-names></name><name name-style="western"><surname>Chopra</surname><given-names>M</given-names></name></person-group>             <year>2010</year>             <article-title>Levels and trends in child mortality, 1990–2009.</article-title>             <source>Lancet</source>             <volume>376</volume>             <fpage>931</fpage>             <lpage>933</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Rajaratnam1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Rajaratnam</surname><given-names>JK</given-names></name><name name-style="western"><surname>Marcus</surname><given-names>JR</given-names></name><name name-style="western"><surname>Flaxman</surname><given-names>AD</given-names></name><name name-style="western"><surname>Wang</surname><given-names>H</given-names></name><name name-style="western"><surname>Levin-Rector</surname><given-names>A</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Neonatal, postneonatal, childhood, and under-5 mortality for 187 countries, 1970–2010: a systematic analysis of progress towards Millennium Development Goal 4.</article-title>             <source>Lancet</source>             <volume>375</volume>             <fpage>1988</fpage>             <lpage>2008</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Editorial1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <collab xlink:type="simple">Editorial</collab>             <year>2010</year>             <article-title>Can we count on global health estimates.</article-title>             <source>PLoS Medicine</source>             <volume>7</volume>             <fpage>e1001002</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001002" xlink:type="simple">10.1371/journal.pmed.1001002</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Boerma1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Boerma</surname><given-names>TJ</given-names></name><name name-style="western"><surname>Mathers</surname><given-names>C</given-names></name><name name-style="western"><surname>Abou-Zahr</surname><given-names>C</given-names></name></person-group>             <year>2010</year>             <article-title>WHO and global health monitoring: the way forward.</article-title>             <source>PLoS Medicine</source>             <volume>7</volume>             <fpage>e1000373</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1000373" xlink:type="simple">10.1371/journal.pmed.1000373</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Byass1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Byass</surname><given-names>P</given-names></name></person-group>             <year>2010</year>             <article-title>The imperfect world of global health estimates.</article-title>             <source>PLOS Medicine</source>             <volume>7</volume>             <fpage>e1001006</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001006" xlink:type="simple">10.1371/journal.pmed.1001006</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Murray1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Murray</surname><given-names>CJL</given-names></name><name name-style="western"><surname>Lopez</surname><given-names>AD</given-names></name></person-group>             <year>2010</year>             <article-title>Production and analysis of health indicators: the role of academia.</article-title>             <source>PLoS Medicine</source>             <volume>7</volume>             <fpage>e1001004</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001004" xlink:type="simple">10.1371/journal.pmed.1001004</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Graham1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Graham</surname><given-names>WJ</given-names></name><name name-style="western"><surname>Adjei</surname><given-names>S</given-names></name></person-group>             <year>2010</year>             <article-title>A call for responsible estimation of global health.</article-title>             <source>PLoS Medicine</source>             <volume>7</volume>             <fpage>e1001003</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001003" xlink:type="simple">10.1371/journal.pmed.1001003</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Sankoh1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sankoh</surname><given-names>O</given-names></name></person-group>             <year>2010</year>             <article-title>Global health estimates: stronger collaboration needed with low- and middle-income countries.</article-title>             <source>PLoS Medicine</source>             <volume>7</volume>             <fpage>e1001005</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001005" xlink:type="simple">10.1371/journal.pmed.1001005</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-McCarthy1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>McCarthy</surname><given-names>BJ</given-names></name><name name-style="western"><surname>Terry</surname><given-names>J</given-names></name><name name-style="western"><surname>Rochat</surname><given-names>RW</given-names></name><name name-style="western"><surname>Quave</surname><given-names>S</given-names></name><name name-style="western"><surname>Tyler</surname><given-names>CW</given-names><suffix>Jr</suffix></name></person-group>             <year>1980</year>             <article-title>The underregistration of neonatal deaths: Georgia 1974–77.</article-title>             <source>Am J Pub Health</source>             <volume>70</volume>             <fpage>977</fpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Lumbiganon1">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lumbiganon</surname><given-names>P</given-names></name><name name-style="western"><surname>Panamonta</surname><given-names>M</given-names></name><name name-style="western"><surname>Laopaiboon</surname><given-names>M</given-names></name><name name-style="western"><surname>Pothinam</surname><given-names>S</given-names></name><name name-style="western"><surname>Patithat</surname><given-names>N</given-names></name></person-group>             <year>1990</year>             <article-title>Why are Thai official perinatal and infant mortality rates so low?</article-title>             <source>Int J Epidemiol</source>             <volume>19</volume>             <fpage>997</fpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Bang1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bang</surname><given-names>A</given-names></name><name name-style="western"><surname>Reddy</surname><given-names>MH</given-names></name><name name-style="western"><surname>Deshmukh</surname><given-names>MD</given-names></name></person-group>             <year>2002</year>             <article-title>Child mortality in Maharashtra.</article-title>             <source>Econ Polit Weekly</source>             <fpage>4947</fpage>             <lpage>4965</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-United2">
+        <label>25</label>
+        <element-citation publication-type="other" xlink:type="simple">             <source>United Nations Population Division (nd) World Population Prospects: The 2008 Revision</source>             <publisher-loc>New York</publisher-loc>             <publisher-name>United Nations</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Mathers1">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Mathers</surname><given-names>CD</given-names></name><name name-style="western"><surname>Ma Fat</surname><given-names>D</given-names></name><name name-style="western"><surname>Inoue</surname><given-names>M</given-names></name><name name-style="western"><surname>Chalapati</surname><given-names>R</given-names></name><name name-style="western"><surname>Lopez</surname><given-names>AD</given-names></name></person-group>             <year>2005</year>             <article-title>Counting the dead and what they died from: an assessment of the global status of cause of death data.</article-title>             <source>B World Health Organ</source>             <volume>83</volume>             <fpage>171</fpage>             <lpage>177</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Hastie1">
+        <label>27</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hastie</surname><given-names>T</given-names></name><name name-style="western"><surname>Tibshirani</surname><given-names>R</given-names></name><name name-style="western"><surname>Friedman</surname><given-names>J</given-names></name></person-group>             <year>2010</year>             <source>The elements of statistical learning: data mining, inference, and prediction. 2nd edition</source>             <publisher-loc>New York</publisher-loc>             <publisher-name>Springer</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Murray2">
+        <label>28</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Murray</surname><given-names>CJL</given-names></name><name name-style="western"><surname>Laakso</surname><given-names>T</given-names></name><name name-style="western"><surname>Shibuya</surname><given-names>K</given-names></name><name name-style="western"><surname>Hill</surname><given-names>K</given-names></name><name name-style="western"><surname>Lopez</surname><given-names>AD</given-names></name></person-group>             <year>2007</year>             <article-title>Can we achieve Millennium Development Goal 4? New analysis of country trends and forecasts of under-5 mortality to 2015.</article-title>             <source>Lancet</source>             <volume>370</volume>             <fpage>1040</fpage>             <lpage>1054</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Rudan1">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Rudan</surname><given-names>I</given-names></name><name name-style="western"><surname>Chan</surname><given-names>KY</given-names></name><name name-style="western"><surname>Zhang</surname><given-names>JSF</given-names></name><name name-style="western"><surname>Theodoratou</surname><given-names>E</given-names></name><name name-style="western"><surname>Feng</surname><given-names>XL</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Causes of deaths in children younger than 5 years in China in 2008.</article-title>             <source>Lancet</source>             <volume>375</volume>             <fpage>1083</fpage>             <lpage>1089</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Measure1">
+        <label>30</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">Measure DHS ICF Macro</collab>             <year>2011</year>             <source>Malawi demographic and health survey 2010. Preliminary report</source>             <publisher-loc>Calverton (Maryland)</publisher-loc>             <publisher-name>ICF Macro</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Lawn3">
+        <label>31</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lawn</surname><given-names>JE</given-names></name><name name-style="western"><surname>Blencowe</surname><given-names>H</given-names></name><name name-style="western"><surname>Pattinson</surname><given-names>R</given-names></name><name name-style="western"><surname>Cousens</surname><given-names>S</given-names></name><name name-style="western"><surname>Kumar</surname><given-names>R</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Stillbirths: where? When? Why? How to make the data count.</article-title>             <source>Lancet</source>             <volume>377</volume>             <fpage>1448</fpage>             <lpage>1463</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Lawn4">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lawn</surname><given-names>JE</given-names></name><name name-style="western"><surname>Gravett</surname><given-names>MG</given-names></name><name name-style="western"><surname>Nunes</surname><given-names>TM</given-names></name><name name-style="western"><surname>Rubens</surname><given-names>CE</given-names></name><name name-style="western"><surname>Stanton</surname><given-names>C</given-names></name></person-group>             <year>2010</year>             <article-title>Global report on preterm birth and stillbirth (1 of 7): definitions, description of the burden and opportunities to improve data.</article-title>             <source>BMC Pregnancy Childbirth</source>             <volume>10</volume>             <supplement>Suppl 1</supplement>             <fpage>S1</fpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Lawn5">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lawn</surname><given-names>JE</given-names></name><name name-style="western"><surname>Kinney</surname><given-names>M</given-names></name><name name-style="western"><surname>Lee</surname><given-names>ACC</given-names></name><name name-style="western"><surname>Chopra</surname><given-names>M</given-names></name><name name-style="western"><surname>Donnay</surname><given-names>F</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Reducing intrapartum-related deaths and disability: can the health system deliver?</article-title>             <source>Int J Gynaecol Obstet</source>             <volume>107</volume>             <fpage>S123</fpage>             <lpage>S142</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Lawn6">
+        <label>34</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lawn</surname><given-names>J</given-names></name><name name-style="western"><surname>Kerber</surname><given-names>K</given-names></name></person-group>             <year>2006</year>             <source>Opportunities for Africa's newborns: practical data, policy and programmatic support for newborn care in Africa</source>             <publisher-loc>Geneva</publisher-loc>             <publisher-name>WHO on behalf of Partnership for Maternal, Newborn and Child Health (PMNCH)</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Wall1">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wall</surname><given-names>SN</given-names></name><name name-style="western"><surname>Lee</surname><given-names>ACC</given-names></name><name name-style="western"><surname>Niermeyer</surname><given-names>S</given-names></name><name name-style="western"><surname>English</surname><given-names>M</given-names></name><name name-style="western"><surname>Keenan</surname><given-names>WJ</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Neonatal resuscitation in low-resource settings: what, who, and how to overcome challenges to scale up?</article-title>             <source>Int J Gynaecol Obstet</source>             <volume>107</volume>             <fpage>S47</fpage>             <lpage>S62, S63–S64</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001080-Hill2">
+        <label>36</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hill</surname><given-names>K</given-names></name><name name-style="western"><surname>Choi</surname><given-names>Y</given-names></name></person-group>             <year>2006</year>             <article-title>Neonatal mortality in the developing world.</article-title>             <source>Demographic research</source>             <volume>14</volume>             <fpage>429</fpage>             <lpage>452</lpage>          </element-citation>
+      </ref>
+    </ref-list>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>DHS</term>
+          <def>
+            <p>Demographic and Health Surveys</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>HIC</term>
+          <def>
+            <p>high-income country</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>IGME</term>
+          <def>
+            <p>Inter-agency Group for Child Mortality Estimation</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>IHME</term>
+          <def>
+            <p>Institute for Health Metrics and Evaluation</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>LMIC</term>
+          <def>
+            <p>low- and middle-income country</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>MDG</term>
+          <def>
+            <p>Millennium Development Goal</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>NMR</term>
+          <def>
+            <p>neonatal mortality rate</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>U5MR</term>
+          <def>
+            <p>under-five mortality rate</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>UN</term>
+          <def>
+            <p>United Nations</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>WHO</term>
+          <def>
+            <p>World Health Organization</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    
+  </back>
+</article>

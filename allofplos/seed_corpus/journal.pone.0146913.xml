@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article article-type="research-article" dtd-version="1.1d3" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0146913</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-15-13642</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Diagnostic medicine</subject><subj-group><subject>Diagnostic radiology</subject><subj-group><subject>Magnetic resonance imaging</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Imaging techniques</subject><subj-group><subject>Diagnostic radiology</subject><subj-group><subject>Magnetic resonance imaging</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Radiology and imaging</subject><subj-group><subject>Diagnostic radiology</subject><subj-group><subject>Magnetic resonance imaging</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Nervous system</subject><subj-group><subject>Central nervous system</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Nervous system</subject><subj-group><subject>Central nervous system</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Imaging techniques</subject><subj-group><subject>Neuroimaging</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Neuroimaging</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Brain mapping</subject><subj-group><subject>Brain morphometry</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Diagnostic medicine</subject><subj-group><subject>Diagnostic radiology</subject><subj-group><subject>Magnetic resonance imaging</subject><subj-group><subject>Brain morphometry</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Imaging techniques</subject><subj-group><subject>Diagnostic radiology</subject><subj-group><subject>Magnetic resonance imaging</subject><subj-group><subject>Brain morphometry</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Radiology and imaging</subject><subj-group><subject>Diagnostic radiology</subject><subj-group><subject>Magnetic resonance imaging</subject><subj-group><subject>Brain morphometry</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Imaging techniques</subject><subj-group><subject>Neuroimaging</subject><subj-group><subject>Brain morphometry</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Neuroscience</subject><subj-group><subject>Neuroimaging</subject><subj-group><subject>Brain morphometry</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Neurology</subject><subj-group><subject>Brain diseases</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Imaging techniques</subject><subj-group><subject>Morphometry</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Research assessment</subject><subj-group><subject>Reproducibility</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Neurology</subject><subj-group><subject>Neurodegenerative diseases</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Reproducibility of Brain Morphometry from Short-Term Repeat Clinical MRI Examinations: A Retrospective Study</article-title>
+<alt-title alt-title-type="running-head">Reproducibility of Brain Morphometry from Retrospective Clinical MRI</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0003-1697-8823</contrib-id>
+<name name-style="western">
+<surname>Yang</surname>
+<given-names>Chung-Yi</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Liu</surname>
+<given-names>Hon-Man</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Chen</surname>
+<given-names>Shan-Kai</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Chen</surname>
+<given-names>Ya-Fang</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Lee</surname>
+<given-names>Chung-Wei</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Yeh</surname>
+<given-names>Lee-Ren</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Department of Medical Imaging, E-Da Hospital, I-Shou University, Kaohsiung, Taiwan</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Department of Medical Imaging, National Taiwan University Hospital and National Taiwan University College of Medicine. Taipei, Taiwan</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Center for Dynamical Biomarkers and Translational Medicine, National Central University, Chungli, Taiwan</addr-line></aff>
+<aff id="aff004"><label>4</label> <addr-line>Department of Medical Imaging and Radiological Sciences, I-Shou University, Kaohsiung, Taiwan</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Eugenin</surname>
+<given-names>Eliseo A</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Rutgers University, UNITED STATES</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: CYY HML. Performed the experiments: CYY HML SKC YFC CWL. Analyzed the data: CYY HML. Contributed reagents/materials/analysis tools: CYY HML SKC. Wrote the paper: CYY HML LRY.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">hmliu@ntu.edu.tw</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>26</day>
+<month>1</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>1</issue>
+<elocation-id>e0146913</elocation-id>
+<history>
+<date date-type="received">
+<day>1</day>
+<month>4</month>
+<year>2015</year>
+</date>
+<date date-type="accepted">
+<day>23</day>
+<month>12</month>
+<year>2015</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Yang et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0146913"/>
+<abstract>
+<sec id="sec001">
+<title>Purpose</title>
+<p>To assess the inter session reproducibility of automatic segmented MRI-derived measures by FreeSurfer in a group of subjects with normal-appearing MR images.</p>
+</sec>
+<sec id="sec002">
+<title>Materials and Methods</title>
+<p>After retrospectively reviewing a brain MRI database from our institute consisting of 14,758 adults, those subjects who had repeat scans and had no history of neurodegenerative disorders were selected for morphometry analysis using FreeSurfer. A total of 34 subjects were grouped by MRI scanner model. After automatic segmentation using FreeSurfer, label-wise comparison (involving area, thickness, and volume) was performed on all segmented results. An intraclass correlation coefficient was used to estimate the agreement between sessions. Wilcoxon signed rank test was used to assess the population mean rank differences across sessions. Mean-difference analysis was used to evaluate the difference intervals across scanners. Absolute percent difference was used to estimate the reproducibility errors across the MRI models. Kruskal-Wallis test was used to determine the across-scanner effect.</p>
+</sec>
+<sec id="sec003">
+<title>Results</title>
+<p>The agreement in segmentation results for area, volume, and thickness measurements of all segmented anatomical labels was generally higher in Signa Excite and Verio models when compared with Sonata and TrioTim models. There were significant rank differences found across sessions in some labels of different measures. Smaller difference intervals in global volume measurements were noted on images acquired by Signa Excite and Verio models. For some brain regions, significant MRI model effects were observed on certain segmentation results.</p>
+</sec>
+<sec id="sec004">
+<title>Conclusions</title>
+<p>Short-term scan-rescan reliability of automatic brain MRI morphometry is feasible in the clinical setting. However, since repeatability of software performance is contingent on the reproducibility of the scanner performance, the scanner performance must be calibrated before conducting such studies or before using such software for retrospective reviewing.</p>
+</sec>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100004663</institution-id>
+<institution>Ministry of Science and Technology, Taiwan</institution>
+</institution-wrap>
+</funding-source>
+<award-id>MOST 103-2911-I-008-001</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Liu</surname>
+<given-names>Hon-Man</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award002">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100004663</institution-id>
+<institution>Ministry of Science and Technology, Taiwan</institution>
+</institution-wrap>
+</funding-source>
+<award-id>102-2314-B-650-009-MY3</award-id>
+<principal-award-recipient>
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0003-1697-8823</contrib-id>
+<name name-style="western">
+<surname>Yang</surname>
+<given-names>Chung-Yi</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award003">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100004738</institution-id>
+<institution>E-Da Hospital</institution>
+</institution-wrap>
+</funding-source>
+<award-id>EDPJ103068</award-id>
+<principal-award-recipient>
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0003-1697-8823</contrib-id>
+<name name-style="western">
+<surname>Yang</surname>
+<given-names>Chung-Yi</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<funding-statement>Funded by Ministry of Science and Technology, Taiwan (<ext-link ext-link-type="uri" xlink:href="http://www.most.gov.tw" xlink:type="simple">http://www.most.gov.tw</ext-link>) MOST 103-2911-I-008-001: HML. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="4"/>
+<table-count count="4"/>
+<page-count count="15"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec005" sec-type="intro">
+<title>Introduction</title>
+<p>Brain morphometry is an important assessment used in neuroscience research. Chronological changes in brain morphology may be related to aging, neurodegenerative disease, brain insults, or treatment effects [<xref ref-type="bibr" rid="pone.0146913.ref001">1</xref>–<xref ref-type="bibr" rid="pone.0146913.ref005">5</xref>]. Magnetic resonance imaging (MRI), a widely used non-invasive, clinical, diagnostic tool, can provide excellent brain tissue contrast. The high resolution of brain MRI also makes MRI-derived morphometric data ideal for clinical or research purposes. However, due to the complexity of brain morphology, accurate neuroanatomical measurement is difficult and time-consuming even for trained experts. For studies that require quantitative assessment of a large number of subjects or brain regions, automated methods play an important role in providing rapid and robust segmentation, while also minimizing human inter- and intra-rater variability.</p>
+<p>Quantitative imaging biomarkers can serve as indicators of normal biological processes, pathogenic processes, or responses to therapeutic intervention [<xref ref-type="bibr" rid="pone.0146913.ref006">6</xref>, <xref ref-type="bibr" rid="pone.0146913.ref007">7</xref>]. Among them, brain MRI morphometry is a promising imaging biomarker for early detection or diagnosis of neurodegenerative and psychiatric disorders [<xref ref-type="bibr" rid="pone.0146913.ref008">8</xref>–<xref ref-type="bibr" rid="pone.0146913.ref011">11</xref>]. Several software packages have been developed that provide automated segmentation and measurement of brain morphometry [<xref ref-type="bibr" rid="pone.0146913.ref012">12</xref>–<xref ref-type="bibr" rid="pone.0146913.ref015">15</xref>].</p>
+<p>Prospective longitudinal studies of morphometric changes within the brain require both accuracy and reproducibility of automated morphometric measures across sessions. While the accuracy validation of automated neuroanatomical measures against regional manual measurements has been performed [<xref ref-type="bibr" rid="pone.0146913.ref013">13</xref>, <xref ref-type="bibr" rid="pone.0146913.ref016">16</xref>], some studies have reported variable accuracy and reliability across sessions involving MRI-derived measures on the same subjects, and the sources of variance and bias have been investigated [<xref ref-type="bibr" rid="pone.0146913.ref017">17</xref>–<xref ref-type="bibr" rid="pone.0146913.ref024">24</xref>]. The reliability of brain morphometric measures across sessions can be influenced by subject-related, instrument-related, and image processing-related factors. Clinically, we usually need to retrospectively review previously acquired serial brain MRIs of patients to determine if any chronological change in brain morphometry has occurred. However, images are usually reported in a qualitative manner, so that there is little need for well-controlled image acquisition parameters other than image quality. It is also commonplace for hospitals to have multiple scanners and there is no clinical stipulation for follow-up scans to be performed on the same scanner, although such a practice is preferred. In consideration of the need for quantitative comparison of objective measures of disease progression or response to therapeutic treatment, it is important to evaluate the feasibility of using automated segmented measures from previously acquired clinical brain MRI scans for comparison purposes.</p>
+<p>Our study had as its goal to validate the cross-session agreement of automatic segmented MRI-derived measures obtained using FreeSurfer software in a group of subjects with normal-appearing MR images. While this study was performed using FreeSurfer, the methodology could also be applied to other software packages and other images.</p>
+</sec>
+<sec id="sec006" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="sec007">
+<title>Ethics Statement</title>
+<p>This study was approved by the National Taiwan University Hospital Institutional Review Board (IRB: 201207033RIC) and the requirement to obtain informed consent was waived due to its retrospective nature. The patient records were anonymized and de-identified prior to analysis.</p>
+</sec>
+<sec id="sec008">
+<title>Subjects</title>
+<p>From December 2011 to December 2013, 14,758 subjects (all older than 20 years of age) received brain MRI examinations in the Department of Medical Imaging at our hospital. These subjects included those referred from clinical departments (clinics, wards, and the emergency department) and volunteers for health screening. There were 2,299 subjects who had more than one brain MRI exam in this period. To limit the variance caused by instrument-related factors, only subjects who received repeat MRI studies on the same scanner were selected for this study.</p>
+<p>A neuroradiologist (HML) with 30-years of experience carefully reviewed the medical history and images of all subjects. After excluding cases of dementia, psychiatric disorders, neoplastic disease, ischemic or hemorrhagic brain insults, infectious disease, prior surgical intervention, or poor image quality, 36 subjects remained who were reported as neuroradiologically normal on repeat brain MRI using the same scanner.</p>
+</sec>
+<sec id="sec009">
+<title>MRI Scanners</title>
+<p>Five MRI scanners were used at our institute during 2011 to 2013. A routine brain MRI examination contained a 3D T1 pulse sequence on every subject. The sequences used for morphometric analysis in each MRI scanner are listed below. Please note that, although these are the default parameters in the scanning protocols, the technicians sometimes made minor adjustments at the time of scanning for practical reasons.</p>
+<list list-type="bullet">
+<list-item><p><bold>1.5T Signa Excite (GE Healthcare, Milwaukee, Wis)</bold>: 3D T1 Spoiled Gradient-echo (SPGR, TR = 8.916 ms, TE = 3 ms, flip angle = 12°, FOV = 250.0 x 250.0 mm, slice thickness = 1.2 mm, contiguous 1.2 mm sections, 512 x 512 matrix, NEX = 0.75, voxel size = 0.49 x 0.49 x 1.2 mm); installed in 2005.</p></list-item>
+<list-item><p><bold>1.5 T Signa HDx (GE Healthcare, Milwaukee, Wis)</bold>: 3D T1 Spoiled Gradient-echo (FastSPGR IrP, 3D COR 3D FSPGR IrP, TR = 9.904 ms, TE = 3.836 ms, flip angle = 12°, FOV = 240.0 x 240.0 mm, slice thickness = 1.2 mm, contiguous 1.2 mm sections, 256 x 256 matrix, NEX = 1, voxel size = 0.94 x 0.94 x 1.2 mm); installed in 2008.</p></list-item>
+<list-item><p><bold>1.5 T Sonata (Siemens, Erlangen, Germany)</bold>: 3D T1 Spoiled Gradient-echo (FLASH, TR = 8 ms, TE = 3.12 ms, flip angle = 12°, FOV = 200.0 x 200.0 mm, slice thickness = 0.9 mm, contiguous 0.9 mm sections, 256 x 256 matrix, NEX = 1, voxel size = 0.78 x 0.78 x 0.9 mm); installed in 2001.</p></list-item>
+<list-item><p><bold>3.0 T Trio Tim (Siemens, Erlangen, Germany)</bold>: 3D T1 Spoiled Gradient-echo (TurboFLASH, TR = 1720 ms, TE = 2.58 ms, flip angle = 9°, FOV = 220.0 x 220.0 mm, slice thickness = 1.2 mm, contiguous 1.2 mm sections, 512 x 512 matrix, NEX = 1, voxel size = 0.43 x 0.43 x 1.2 mm); installed in 2003.</p></list-item>
+<list-item><p><bold>3.0 T Verio (Siemens, Erlangen, Germany)</bold>: 3D T1 Spoiled Gradient-echo (TurboFLASH, TR = 1450 ms, TE = 2.47 ms, flip angle = 9°, FOV = 240.0 x 240.0 mm, slice thickness = 1.1 mm, contiguous 1.1 mm sections, 640 x 640 matrix, NEX = 1, voxel size = 0.38 x 0.38 x 1.1 mm); installed in 2009.</p></list-item>
+</list>
+<p>FreeSurfer (<ext-link ext-link-type="uri" xlink:href="http://freesurfer.net" xlink:type="simple">http://freesurfer.net</ext-link>, Athinoula A. Martinos Center for Biomedical Imaging, Harvard-MIT, Boston) is a freely available open source software suite for processing and analyzing human brain MR images [<xref ref-type="bibr" rid="pone.0146913.ref012">12</xref>, <xref ref-type="bibr" rid="pone.0146913.ref013">13</xref>]. With an array of algorithms and tools provided by FreeSurfer, automated or semi-automated analysis and visualization of structural, connectional and functional brain imaging data can be performed using a wide variety of hardware and operating systems. Such data includes segmentation, registration, cortical surface reconstruction, quantification of segmented structures, longitudinal processing, fMRI analysis, and tractography. FreeSurfer allows visualization of different computed measures (such as thickness, area, or volume) over the brain surface after automatic parcellation.</p>
+<p>The 64-bit Linux version of FreeSurfer 5.1.0 was used in this study. In brief, the FreeSurfer’s preprocessing and segmentation were executed with the command “<italic>recon-all -all</italic>”. “<italic>recon-all</italic>” is a batch script which involves more than 30 reconstruction routines and can be summarized as follows (The details can be found in <ext-link ext-link-type="uri" xlink:href="https://surfer.nmr.mgh.harvard.edu/fswiki/recon-all" xlink:type="simple">https://surfer.nmr.mgh.harvard.edu/fswiki/recon-all</ext-link> and <ext-link ext-link-type="uri" xlink:href="http://surfer.nmr.mgh.harvard.edu/fswiki/ReconAllTableStableV5.1" xlink:type="simple">http://surfer.nmr.mgh.harvard.edu/fswiki/ReconAllTableStableV5.1</ext-link>):</p>
+<list list-type="order">
+<list-item><p>Motion correction and averaging.</p></list-item>
+<list-item><p>Intensity correction and normalization.</p></list-item>
+<list-item><p>Skull stripping.</p></list-item>
+<list-item><p>Gray matter/white matter segmentation</p></list-item>
+<list-item><p>Parcellation, labeling, and statistics.</p></list-item>
+</list>
+<p>All stages of cortical reconstruction were performed in a fully automated manner. To ensure the reproducibility of the computed data, no manual intervention was performed. After successful automated processing by FreeSurfer, inspection of the snapshots from the final results was performed to ensure that no obvious non-brain parts had been incorrectly segmented as brain tissue. Images of each subject were automatically processed with the longitudinal stream [<xref ref-type="bibr" rid="pone.0146913.ref025">25</xref>] in FreeSurfer to create a reliable unbiased within-subject template space and image, which were used in further processing steps, such as skull stripping, Talairach transforms, atlas registration, spherical surface mapping and parcellations. By using the FreeSurfer longitudinal stream, it can significantly increase reliability and statistical power [<xref ref-type="bibr" rid="pone.0146913.ref025">25</xref>]. After that, tabulated data of the segmented results were collected using two FreeSurfer summarizing scripts (i.e., <italic>aparcstats2table</italic> and <italic>asegstats2table</italic>).</p>
+<p>After automatic segmentation and quantification, several types of measurement can be used for analysis, including area, volume, std (standard deviation of volume), thickness, thicknessstd (standard deviation of thickness), and meancurv (mean curvature). The neuroanatomical labels in FreeSurfer could be categorized according to the different measurements acquired (i.e., area, thickness, or volume), the sidedness (left, right), cortical parcellation atlas (Desikan-Killiany Atlas [aparc] or Destrieux Atlas [a2009s]), and anatomical locations.</p>
+<p>In this study, area, volume, and thickness measurements of segmented anatomical labels from the two MRI scans for each subject were selected for label-wise longitudinal analysis. Among them, the volumes of cortical gray matter (label: CoretexVol), deep gray matter (label: SubCortGrayVol), and white matter (label: CorticalWhiteMatterVol) were selected for analysis of the global measure of volume. For cortical area measurements, there were 150 labels for the Destrieux Atlas and 70 labels for the Desikan-Killiany Atlas. For cortical thickness measurements, there were 298 labels for the Destrieux Atlas and 138 labels for the Desikan-Killiany Atlas. For volume measurements, there were 148, 68, 76, and 55 labels for Destrieux Atlas, Desikan-Killiany Atlas, subcortical white matter, and miscellaneous structures, respectively. In total, there were 1003 labels for all parcellation/segmentation types of area, thickness, and volume measurements generated by FreeSurfer.</p>
+</sec>
+<sec id="sec010">
+<title>Statistical Analysis</title>
+<p>Intraclass correlation coefficient (ICC) [<xref ref-type="bibr" rid="pone.0146913.ref026">26</xref>–<xref ref-type="bibr" rid="pone.0146913.ref028">28</xref>] is a descriptive statistic commonly used to assess the reliability when quantitative measurements are organized into groups. It can be interpreted as the proportion of the total variance that is due to variation between groups. It measures the degree to which the units in the same group approximate each other. ICC will approach 1.0 when within-target variation is small, suggesting consistent results from each measurement. ICC will be negative when the between-target variation is relatively small compared to the within-target variation. An examination or a test is considered reliable if consistent results can be obtained under similar methodology. There are two kinds of reliability: consistency or absolute agreement. Because our targets of interest are absolute measurements (e.g. area, thickness, and volume), ICC was computed to assess the reliability of the results across sessions using a two-way random model with measures of absolute agreement. To approximate the actual distribution of ICC values, we employed 10,000 bootstrap-based resampling with an equal sample size (N = 20) for each model to computed means and 95% confidence intervals.</p>
+<p>The Wilcoxon signed rank test is a non-parametric paired difference test. It is used to test the null hypothesis (i.e., the median of the differences between the paired observations is zero) versus the alternative hypothesis (i.e., the median is not zero). While the sample size was small, it can be used as an alternative to the paired t-test. After parcellation of the two sessions of brain MRI data, comparison of the paired segmented results was performed using the Wilcoxon signed rank test assuming a 5% and a 1% level of significance (α = 0.05 and 0.01, respectively).</p>
+<p>Bland-Altman (BA) analysis is a graphical method used in analyzing the agreement between two measurement methods [<xref ref-type="bibr" rid="pone.0146913.ref029">29</xref>, <xref ref-type="bibr" rid="pone.0146913.ref030">30</xref>]. This method plots the difference against the average of each data pair between two methods of measurement. The 95% limits of the mean difference were calculated and plotted for visual judgment of agreement. It was expected that 95% of differences were included in the 95% limits between the two measurement methods. A smaller range between these two limits indicates better agreement but the threshold of the range depends on the clinical context. In this study, Bland-Altman analysis was used for a global measure of selected brain volume.</p>
+<p>A dimensionless measure of absolute percent change in segmentation results for a structure with respect to its average was used to estimate the variability error. The across-session variability error was estimated as follow:
+<disp-formula id="pone.0146913.e001">
+<alternatives>
+<graphic id="pone.0146913.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0146913.e001" xlink:type="simple"/>
+<mml:math display="block" id="M1">
+<mml:mrow><mml:mo>ϵ</mml:mo><mml:mtext> </mml:mtext><mml:mo>=</mml:mo><mml:mtext> </mml:mtext><mml:mfrac><mml:mrow><mml:mrow><mml:mo>|</mml:mo><mml:mrow><mml:msub><mml:mtext>x</mml:mtext><mml:mn>1</mml:mn></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mtext>x</mml:mtext><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>|</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mtext>x</mml:mtext><mml:mn>1</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mtext>x</mml:mtext><mml:mn>2</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>/</mml:mo><mml:mn>2</mml:mn></mml:mrow></mml:mfrac><mml:mo>×</mml:mo><mml:mn>100</mml:mn><mml:mtext>%</mml:mtext></mml:mrow>
+</mml:math>
+</alternatives>
+</disp-formula></p>
+<p>Kruskal-Wallis test, a non-parametric method used for comparing two or more samples that are independent, was used to test the MRI model effect on the ICC and variability error. All statistical analyses were performed using R version 3.1.2 [<xref ref-type="bibr" rid="pone.0146913.ref031">31</xref>].</p>
+</sec>
+</sec>
+<sec id="sec011" sec-type="results">
+<title>Results</title>
+<sec id="sec012">
+<title>Subjects and MRI</title>
+<p>After careful exclusion of any known brain disease or morphologic abnormality, 36 subjects remained who had repeat brain MRI scans using the same machine. The MRI results of Signa HDx were not analyzed in this study because only two subjects had repeat scans during this period. A total of 34 subjects (15 males and 19 females) representing 68 sessions of MRI scanning were included in this study. Their median age was 54.5 years (range: 34–85 years) (<xref ref-type="table" rid="pone.0146913.t001">Table 1</xref>).</p>
+<table-wrap id="pone.0146913.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0146913.t001</object-id>
+<label>Table 1</label> <caption><title>Demographics of the 34 subjects.</title></caption>
+<alternatives>
+<graphic id="pone.0146913.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0146913.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Model</th>
+<th align="left">Subjects</th>
+<th align="left">Age (year)<xref ref-type="table-fn" rid="t001fn001">*</xref></th>
+<th align="left">Gender<xref ref-type="table-fn" rid="t001fn002">**</xref></th>
+<th align="left">MRI sessions</th>
+<th align="left">Follow up interval (month)<xref ref-type="table-fn" rid="t001fn001">*</xref></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Signa Excite</bold></td>
+<td align="left">12</td>
+<td align="left">55.5 (42–75)</td>
+<td align="left">5/7</td>
+<td align="left">24</td>
+<td align="left">5.3 (2.8–12.6)</td>
+</tr>
+<tr>
+<td align="left"><bold>Sonata</bold></td>
+<td align="left">5</td>
+<td align="left">52 (34–59)</td>
+<td align="left">3/2</td>
+<td align="left">10</td>
+<td align="left">5 (3.6–9.7)</td>
+</tr>
+<tr>
+<td align="left"><bold>TrioTim</bold></td>
+<td align="left">6</td>
+<td align="left">61 (51–79)</td>
+<td align="left">2/4</td>
+<td align="left">12</td>
+<td align="left">6.4 (0.5–12.3)</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="left">11</td>
+<td align="left">54 (50–85)</td>
+<td align="left">9/2</td>
+<td align="left">22</td>
+<td align="left">12.4 (10.8–15.5)</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p>* Median (range);</p></fn>
+<fn id="t001fn002"><p>** Female/Male</p></fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+<sec id="sec013">
+<title>Intraclass Correlation Coefficient</title>
+<p>The label-wise ICCs from the repeat MRI scans are shown in <xref ref-type="fig" rid="pone.0146913.g001">Fig 1</xref>. For each measurement, the ICCs in Signa Excite and Verio were generally in better agreement compared with the results from Sonata and TrioTim. Poor agreement was seen for the thickness and white matter volume measurements obtained using TrioTim. The mean and standard deviation of the ICC for each MRI model were 0.85 ± 0.16 (Signa Excite), 0.68 ± 0.34 (Sonata), 0.66 ± 0.33 (TrioTim), and 0.87 ± 0.17 (Verio). Kruskal-Wallis test revealed a significant MRI model effect on the ICCs (<italic>p</italic> &lt; 0.001).</p>
+<fig id="pone.0146913.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0146913.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>The violin plot of label-wise agreement (ICC) for each MRI scan.</title>
+<p>The bootstrapped ICCs of each label from each measurement produced by FreeSurfer are summarized in Fig 1. In addition to the information in the box plot, the shape of the distribution visualized in the violin plot helps to detect clusters or bumps within a distribution. This plot reflects the density of label-wise ICC among different scanners grouped by measurement and parcellation/segmentation types. The distribution of the density plot reveals the portion from different levels that are in agreement within each group. Abbreviations: a2009s, Destrieux Atlas; aparc, Desikan-Killiany Atlas; wm, subcortical white matter; aseg, miscellaneous structures.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0146913.g001" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec014">
+<title>Wilcoxon Signed Rank Test</title>
+<p>The <italic>p</italic> values of the Wilcoxon signed rank test for each label of each measurement produced by the FreeSurfer are summarized in <xref ref-type="fig" rid="pone.0146913.g002">Fig 2</xref>. Among all labels, significant differences were found across repeat MRI scans in 121 (12.1%) and 23 (2.3%) labels for 5% and 1% significance level test, respectively. The labels with significant differences (α = 0.01) are summarized in <xref ref-type="table" rid="pone.0146913.t002">Table 2</xref> and <xref ref-type="fig" rid="pone.0146913.g003">Fig 3</xref>, especially some measurements at some measurements around the bilateral central gyri of the Verio model and scattered labels of the Signa Excite model.</p>
+<fig id="pone.0146913.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0146913.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>The violin plot of the <italic>p</italic> value of label-wise Wilcoxon signed rank test for each MRI scan.</title>
+<p>The <italic>p</italic> value is presented as log<sub>10</sub>(<italic>p</italic>). This plot reflects the distribution of label-wise <italic>p</italic> values between different machines by different measurement type and parcellation/segmentation type. The number and percentage of the regions of statistical significance (<italic>p</italic> &lt; 0.01 or log<sub>10</sub>(<italic>p</italic>) &lt; -2) were also labeled below the violin distribution. Abbreviations: a2009s, Destrieux Atlas; aparc, Desikan-Killiany Atlas; wm, subcortical white matter; aseg, miscellaneous structures.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0146913.g002" xlink:type="simple"/>
+</fig>
+<fig id="pone.0146913.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0146913.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>The regions of significant difference using Wilcoxon signed rank test are labeled and colored on the cortical surface for visualization.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0146913.g003" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0146913.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0146913.t002</object-id>
+<label>Table 2</label> <caption><title>Regions showing significant differences.</title></caption>
+<alternatives>
+<graphic id="pone.0146913.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0146913.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">model</th>
+<th align="center">ICC</th>
+<th align="center">p</th>
+<th align="center">Wilcoxon test (<italic>p</italic>)</th>
+<th align="center">measurement</th>
+<th align="center">hemisphere</th>
+<th align="center">label</th>
+<th align="center">type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>Signa Excite</bold></td>
+<td align="char" char=".">0.99</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.01</td>
+<td align="left">area</td>
+<td align="left">rh</td>
+<td align="left">G_front_inf-Triangul</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Signa Excite</bold></td>
+<td align="char" char=".">0.95</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.00</td>
+<td align="left">area</td>
+<td align="left">rh</td>
+<td align="left">S_circular_insula_ant</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Signa Excite</bold></td>
+<td align="char" char=".">0.82</td>
+<td align="char" char=".">0.01</td>
+<td align="char" char=".">0.01</td>
+<td align="left">thickness</td>
+<td align="left">rh</td>
+<td align="left">G_temp_sup-Plan_tempo</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Signa Excite</bold></td>
+<td align="char" char=".">0.85</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.00</td>
+<td align="left">thickness</td>
+<td align="left">rh</td>
+<td align="left">S_front_middle</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Signa Excite</bold></td>
+<td align="char" char=".">0.89</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.00</td>
+<td align="left">volume</td>
+<td align="left">rh</td>
+<td align="left">S_circular_insula_ant</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Signa Excite</bold></td>
+<td align="char" char=".">0.84</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.01</td>
+<td align="left">thickness</td>
+<td align="left">lh</td>
+<td align="left">bankssts</td>
+<td align="left">aparc</td>
+</tr>
+<tr>
+<td align="left"><bold>Signa Excite</bold></td>
+<td align="char" char=".">0.95</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.01</td>
+<td align="left">volume</td>
+<td align="left">lh</td>
+<td align="left">entorhinal</td>
+<td align="left">aparc</td>
+</tr>
+<tr>
+<td align="left"><bold>Signa Excite</bold></td>
+<td align="char" char=".">0.93</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.01</td>
+<td align="left">volume</td>
+<td align="left">rh</td>
+<td align="left">wm-rh-parsorbitalis</td>
+<td align="left">wm</td>
+</tr>
+<tr>
+<td align="left"><bold>Signa Excite</bold></td>
+<td align="char" char=".">0.97</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.01</td>
+<td align="left">volume</td>
+<td align="left">rh</td>
+<td align="left">wm-rh-superiortemporal</td>
+<td align="left">wm</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.97</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.00</td>
+<td align="left">area</td>
+<td align="left">lh</td>
+<td align="left">G_front_inf-Triangul</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.96</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.00</td>
+<td align="left">area</td>
+<td align="left">lh</td>
+<td align="left">G_oc-temp_med-Lingual</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">1.00</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.00</td>
+<td align="left">area</td>
+<td align="left">lh</td>
+<td align="left">S_occipital_ant</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.99</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.01</td>
+<td align="left">area</td>
+<td align="left">rh</td>
+<td align="left">G_precuneus</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.99</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.01</td>
+<td align="left">area</td>
+<td align="left">rh</td>
+<td align="left">S_circular_insula_ant</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.98</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.00</td>
+<td align="left">area</td>
+<td align="left">rh</td>
+<td align="left">S_postcentral</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.76</td>
+<td align="char" char=".">0.01</td>
+<td align="char" char=".">0.01</td>
+<td align="left">thickness</td>
+<td align="left">lh</td>
+<td align="left">G_precentral</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.97</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.01</td>
+<td align="left">volume</td>
+<td align="left">lh</td>
+<td align="left">G_precentral</td>
+<td align="left">a2009s</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.98</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.01</td>
+<td align="left">area</td>
+<td align="left">lh</td>
+<td align="left">lateraloccipital</td>
+<td align="left">aparc</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.97</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.00</td>
+<td align="left">area</td>
+<td align="left">lh</td>
+<td align="left">lingual</td>
+<td align="left">aparc</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.99</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.00</td>
+<td align="left">area</td>
+<td align="left">lh</td>
+<td align="left">parstriangularis</td>
+<td align="left">aparc</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.99</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.01</td>
+<td align="left">area</td>
+<td align="left">rh</td>
+<td align="left">precuneus</td>
+<td align="left">aparc</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.88</td>
+<td align="char" char=".">0.01</td>
+<td align="char" char=".">0.00</td>
+<td align="left">thickness</td>
+<td align="left">lh</td>
+<td align="left">precentral</td>
+<td align="left">aparc</td>
+</tr>
+<tr>
+<td align="left"><bold>Verio</bold></td>
+<td align="char" char=".">0.96</td>
+<td align="char" char=".">0.00</td>
+<td align="char" char=".">0.00</td>
+<td align="left">volume</td>
+<td align="left">lh</td>
+<td align="left">wm-lh-parstriangularis</td>
+<td align="left">wm</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec015">
+<title>Bland-Altman Analysis (Global Measure of Volume)</title>
+<p>In addition to the ICC and Wilcoxon signed rank test, selected global measures of brain volume (cortical gray matter, subcortical gray matter, and white matter) were also analyzed using the Bland-Altman (mean-difference) plot of each pair of measurements (<xref ref-type="fig" rid="pone.0146913.g004">Fig 4</xref> and <xref ref-type="table" rid="pone.0146913.t003">Table 3</xref>). Greater mean differences and wider agreement intervals were observed in the TrioTim model.</p>
+<fig id="pone.0146913.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0146913.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Results of the Bland-Altman analysis comparing results obtained from repeat MRI scans using different MRI models and selected global measures of brain volume.</title>
+<p>These plots represent the difference between repeat MRI scans against the average value for each pair of measurements. A continuous line and two dotted lines represent the mean difference between each pair of measurements and the limits of agreement, respectively, for each BA plot.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0146913.g004" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0146913.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0146913.t003</object-id>
+<label>Table 3</label> <caption><title>Bland-Altman analysis of global measures of volume obtained from repeat MRI scans.</title></caption>
+<alternatives>
+<graphic id="pone.0146913.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0146913.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Measurement</th>
+<th align="left">Model</th>
+<th align="left">Mean differences (mm<sup>3</sup>)</th>
+<th align="left">Standard deviation of differences (mm<sup>3</sup>)</th>
+<th align="left">Standard error of mean (mm<sup>3</sup>)</th>
+<th align="left">N</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>SubCortical Gray Volume</bold></td>
+<td align="left">Signa Excite</td>
+<td align="char" char=".">218.0</td>
+<td align="char" char=".">1017.4</td>
+<td align="left">1513</td>
+<td align="left">12</td>
+</tr>
+<tr>
+<td align="left"><bold>SubCortical Gray Volume</bold></td>
+<td align="left">Sonata</td>
+<td align="char" char=".">-54.0</td>
+<td align="char" char=".">866.9</td>
+<td align="left">2184</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left"><bold>SubCortical Gray Volume</bold></td>
+<td align="left">TrioTim</td>
+<td align="char" char=".">-320.5</td>
+<td align="char" char=".">1193.3</td>
+<td align="left">2046</td>
+<td align="left">6</td>
+</tr>
+<tr>
+<td align="left"><bold>SubCortical Gray Volume</bold></td>
+<td align="left">Verio</td>
+<td align="char" char=".">-180.1</td>
+<td align="char" char=".">969.4</td>
+<td align="left">2524</td>
+<td align="left">11</td>
+</tr>
+<tr>
+<td align="left"><bold>Cortex Volume</bold></td>
+<td align="left">Signa Excite</td>
+<td align="char" char=".">-3754.7</td>
+<td align="char" char=".">12690.8</td>
+<td align="left">9201</td>
+<td align="left">12</td>
+</tr>
+<tr>
+<td align="left"><bold>Cortex Volume</bold></td>
+<td align="left">Sonata</td>
+<td align="char" char=".">1038.5</td>
+<td align="char" char=".">13845.9</td>
+<td align="left">16745</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left"><bold>Cortex Volume</bold></td>
+<td align="left">TrioTim</td>
+<td align="char" char=".">-12213.9</td>
+<td align="char" char=".">23688.8</td>
+<td align="left">15838</td>
+<td align="left">6</td>
+</tr>
+<tr>
+<td align="left"><bold>Cortex Volume</bold></td>
+<td align="left">Verio</td>
+<td align="char" char=".">-1748.3</td>
+<td align="char" char=".">8576.9</td>
+<td align="left">15438</td>
+<td align="left">11</td>
+</tr>
+<tr>
+<td align="left"><bold>White Matter Volume</bold></td>
+<td align="left">Signa Excite</td>
+<td align="char" char=".">3802.5</td>
+<td align="char" char=".">7123.4</td>
+<td align="left">12171</td>
+<td align="left">12</td>
+</tr>
+<tr>
+<td align="left"><bold>White Matter Volume</bold></td>
+<td align="left">Sonata</td>
+<td align="char" char=".">-12303.8</td>
+<td align="char" char=".">13437.7</td>
+<td align="left">16267</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left"><bold>White Matter Volume</bold></td>
+<td align="left">TrioTim</td>
+<td align="char" char=".">22878.6</td>
+<td align="char" char=".">38911.4</td>
+<td align="left">20862</td>
+<td align="left">6</td>
+</tr>
+<tr>
+<td align="left"><bold>White Matter Volume</bold></td>
+<td align="left">Verio</td>
+<td align="char" char=".">-384.1</td>
+<td align="char" char=".">4614.4</td>
+<td align="left">17312</td>
+<td align="left">11</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec016">
+<title>Across-Session Variability</title>
+<p>The across-session variability errors of all segmentation results were computed. Among them, the results of three global measures of brain volume (cortical gray matter, subcortical gray matter, and white matter) are summarized in <xref ref-type="table" rid="pone.0146913.t004">Table 4</xref>. In each MRI scanner, the mean reproducibility error was estimated as a mean across all subjects. The last column shows the effects of analysis on the various structures by averaging the across-MRI model reproducibility errors across MRI models. Although no significant MRI model effect was found among these selected global measures, significant MRI model effect was shown on 125 (12.4%) and 14 (1.4%) labels among all segmentation results for 5% and 1% significance level tests, respectively.</p>
+<table-wrap id="pone.0146913.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0146913.t004</object-id>
+<label>Table 4</label> <caption><title>Volumetric reproducibility error for the various MRI models from FreeSurfer segmentation.</title> <p>Each cell represents the mean reproducibility errors (percent absolute difference relative to the mean) across subjects within each MRI scanner. Among these three selected global volumetric measures, there was no significant MRI model effect observed (Kruskal-Wallis test). Although not significant, large percent absolute differences were seen within the TrioTim model (cortex and white matter volume), suggesting the existence of outliers.</p></caption>
+<alternatives>
+<graphic id="pone.0146913.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0146913.t004" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Volume</th>
+<th align="left">Signa Excite</th>
+<th align="left">Sonata</th>
+<th align="left">TrioTim</th>
+<th align="left">Verio</th>
+<th align="left">Mean error across MRI models (%)</th>
+<th align="right"><italic>p</italic><xref ref-type="table-fn" rid="t004fn001">*</xref></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">SubCortical Gray Volume</td>
+<td align="left">1.55 ± 1.06</td>
+<td align="left">1.18 ± 0.73</td>
+<td align="left">1.36 ± 1.85</td>
+<td align="left">1.45 ± 1.18</td>
+<td align="left">1.43 ± 1.18</td>
+<td align="char" char=".">0.77</td>
+</tr>
+<tr>
+<td align="left">Cortex Volume</td>
+<td align="left">2.34 ± 2.29</td>
+<td align="left">2.55 ± 1.52</td>
+<td align="left">4.03 ± 4.89</td>
+<td align="left">1.73 ± 1.12</td>
+<td align="left">2.47 ± 2.58</td>
+<td align="char" char=".">0.69</td>
+</tr>
+<tr>
+<td align="left">White Matter Volume</td>
+<td align="left">1.34 ± 1.21</td>
+<td align="left">2.82 ± 2.38</td>
+<td align="left">5.43 ± 7.49</td>
+<td align="left">0.87 ± 0.53</td>
+<td align="left">2.13 ± 3.55</td>
+<td align="char" char=".">0.12</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t004fn001"><p>* Kruskal-Wallis test across MRI models</p></fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+</sec>
+<sec id="sec017" sec-type="conclusions">
+<title>Discussion</title>
+<p>This study evaluated the automatic segmented results obtained using FreeSurfer on a group of normal subjects who received repeat MRI scans over a short time interval (up to 15.5 months). Unlike most prospective studies, in which careful tuning of experimental conditions is expected, the subjects in this study were retrospectively selected from a clinical database. Variable degrees of reproducibility were noted using different MRI machines, shown as a wide range of ICCs (<xref ref-type="fig" rid="pone.0146913.g001">Fig 1</xref>). Although this is a study of short-term repeat MRI scans in normal subjects, significant differences were still found in some labels of different measures. Different variances were found in the results of the BA analysis from different machines.</p>
+<p>Comparison of longitudinal follow-up results from different MRI systems is possible, however, there are some limitations regarding image quality, which may be influenced by acquisition sequences, magnetic field strength, scanner software, or the type of scanner used [<xref ref-type="bibr" rid="pone.0146913.ref018">18</xref>, <xref ref-type="bibr" rid="pone.0146913.ref022">22</xref>]. Although it has been suggested that using registration-based algorithms can provide better reproducibility, for longitudinal follow-up, MRI acquisitions should be performed at the same imaging site [<xref ref-type="bibr" rid="pone.0146913.ref018">18</xref>]. The automatic segmentation software used in this study, FreeSurfer, is implemented with segmentation-based algorithms. In this study, repeat longitudinal follow-up examinations in a group of neuroradiologically normal subjects were performed on the same MRI scanner, however, less agreement and large mean differences in the morphometric data across sessions were found with certain MRI scanners, as shown in Figs <xref ref-type="fig" rid="pone.0146913.g001">1</xref> and <xref ref-type="fig" rid="pone.0146913.g004">4</xref>. While the vast majority of ICCs for each label from repeat scans were high in scans from the Signa Excite and Verio MRI scanners, a certain portion of low ICCs were noted in the Sonata and TrioTim models. Varying degrees of agreement between scanner types were also found in this study using Bland-Atman analysis and, similarly, a MRI model effect on the absolute percent difference was revealed in segmentation results using the Kruskal-Wallis test. Individual comparison with normal databases is important for the purposes of reporting, as the confidence interval of normal data can serve as a reference to improve the accuracy of interpretation. While many different scanners could be used to create an MRI database, considerable across-scanner variability might exist and, thus, it is necessary to quantify the differences and to determine the significance of the variability using the reference data.</p>
+<p>Although both Signa Excite (GE) and Sonata (Siemens) are 1.5T MRI models, the agreement and variance in generated FreeSurfer results were quite different between models. Better agreement and smaller variance could be seen in the scans from the Signa Excite system. A difference in scanning parameters or vendors, and magnetic field inhomogeneity due to aging of the machine may have contributed to these differences. On the other hand, although TrioTim and Verio are both 3T MRI models from the same manufacturer (Siemens), the ability to reproduce quantifiable results from the two machines differed significantly.</p>
+<p>While there are various accelerating methods used for high-quality high-resolution 3D T1 images, MP-RAGE and IR-SPGR are the sequences of choice for brain morphometry because of their superior signal to noise ratio and gray-white matter contrast. The selection of acquisition sequences for regular MRI scanning in a clinical site relies on a balance between scanning time, tissue contrast, resolution, sensitivity to motion, and availability of the sequence. For a clinical examination, the sequences are optimized to detect abnormalities rather than to obtain the best segmentation results by automated processing software. It is common not to use MP-RAGE or IR-SPGR for regular brain MRI scanning. Although the sequences used in this study (SPGR, FLASH, TurboFLASH) are alternatives to MP-RAGE/IR-SPGR [<xref ref-type="bibr" rid="pone.0146913.ref032">32</xref>], the gray-white matter contrast may effect the ability of the segmentation software to optimally perform. Thus, it is crucial to choose an optimized sequence when using brain morphometry metrics as a quantitative imaging biomarker in clinical trials, or the suboptimal segmentation may influence the accuracy of the results.</p>
+<p>Results of neuroanatomical labeling using two cortical parcellation systems, Desikan-Killiany Atlas [<xref ref-type="bibr" rid="pone.0146913.ref033">33</xref>] and Destrieux Atlas [<xref ref-type="bibr" rid="pone.0146913.ref034">34</xref>], were provided in FreeSurfer. Each cortical vertex of the brain was classified using gyral-based mapping for the Desikan-Killiany Atlas, which contains 68 gyral-based labels, 34 for each hemisphere. For the Destrieux Atlas, each vertex can be categorized as sulcal or gyral, and then subparcellated into 148 labels, 74 for each hemisphere. Since there were more labels and a more complicated classification system for use with the Destrieux Atlas, it was more difficult to maintain accuracy and consistency in segmentation results. Compared with the Desikan-Killiany Atlas, the increased number of labels used by the Destrieux Atlas had a significant effect, based on the Wilcoxon signed rank test.</p>
+<p>The MRI radiographers are trained to acquire high quality scans for lesion detection in their daily practice. However, it is possible that a more diligent MRI technician who ensures higher quality scans on one particular scanner while others might accept minor quality degradation as long as the quality is good enough for a radiologist to make a diagnosis. After reviewing the original MR images of the outliers shown in <xref ref-type="fig" rid="pone.0146913.g004">Fig 4</xref>, a small amount of blurring caused by motion artifact was found in the image of one outlier, and this can be avoided by a sophisticated radiographer in a prospective quantitative brain morphometric study. Given the retrospective nature of this clinical study, between-scanner differences could also be partly contributed by inter-radiographer variability.</p>
+<p>The ultimate goal of medical researchers is to apply the observed findings to the clinical situation, and such an application relies on accuracy and reproducibility of the segmented results. Appreciable differences in subcortical brain volumes in within-a-day repeat MRI scans on the same subject could still be found, even when using the same scanner and acquisition parameters, because of changes in image orientation, pre-scan parameters, and magnetic field instability [<xref ref-type="bibr" rid="pone.0146913.ref019">19</xref>]. Similar scan-rescan measurement differences and variability in scanning parameters/environments have been reported [<xref ref-type="bibr" rid="pone.0146913.ref022">22</xref>, <xref ref-type="bibr" rid="pone.0146913.ref035">35</xref>]. In the clinical setting, more variability will be encountered and, therefore, a preliminary validation of data accuracy and reproducibility is necessary. Otherwise, false positive labels of significant differences will be reported if an unreliable MRI system is used. With the implementation of automated segmentation methods, we can quantify and determine the significance of the effect caused by scanner-related factors. Furthermore, we can use the same processing pipeline to investigate whether these fundamental differences can be removed or minimized. An estimated scanner-related effect should be used for the correction of segmentation results.</p>
+<p>Our study had several limitations including its retrospective nature. In addition, this study was conducted at a single institution. Future prospective studies performed at multiple institutions involving larger cohorts are necessary to confirm our results. The inclusion of “normal” subjects relied on our neuroradiologist’s judgment regarding the absence of pathological findings on the MR images, however, it is possible that subjects with neurodegenerative disease did not exhibit pathological findings but, rather, morphometric changes within the brain. Therefore, a prospective validation study on normal subjects should be conducted. Theoretically, segmentation of isometric voxels should be less sensitive to changes in image orientation compared with non-isometric voxels. Non-isometric or near-isometric voxel sizes were used in this study and the impact of voxel isometry on the accuracy and reproducibility of the segmentation should be further explored. In this study, the effect of MRI scanners was determined by detecting differences in each individual subject but certain regions of statistical significance in a particular individual may not be clinically relevant. Different pathologic conditions, such as neurodegenerative diseases, may have variable effects on brain morphology and the size of the effect should be determined by group analysis [<xref ref-type="bibr" rid="pone.0146913.ref036">36</xref>–<xref ref-type="bibr" rid="pone.0146913.ref038">38</xref>]. Furthermore, since discrepancies in the results derived from different segmentation methods have been shown to reach the same order of magnitude as volume changes in disease [<xref ref-type="bibr" rid="pone.0146913.ref018">18</xref>, <xref ref-type="bibr" rid="pone.0146913.ref039">39</xref>], the effect of different methods on the reliability of the clinical MRI images should also be investigated in a future study.</p>
+</sec>
+<sec id="sec018" sec-type="conclusions">
+<title>Conclusion</title>
+<p>Short-term scan-rescan reproducibility of automatic brain MRI morphometry is feasible in the clinical setting, but validation of scan-rescan reproducibility for each MRI scanner is suggested before conducting such a study, or prior to using such software for retrospective reviewing.</p>
+</sec>
+<sec id="sec019">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0146913.s001" mimetype="application/zip" position="float" xlink:href="info:doi/10.1371/journal.pone.0146913.s001" xlink:type="simple">
+<label>S1 File</label>
+<caption>
+<title>The compressed archive containing the demographic data and segmentation results of thickness, area, and volume measurements by FreeSurfer.</title>
+<p>(ZIP)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>We are grateful to the Computer and Information Networking Center of the National Taiwan University for the use of their high-performance computing facilities.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0146913.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fotenos</surname> <given-names>AF</given-names></name>, <name name-style="western"><surname>Snyder</surname> <given-names>AZ</given-names></name>, <name name-style="western"><surname>Girton</surname> <given-names>LE</given-names></name>, <name name-style="western"><surname>Morris</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Buckner</surname> <given-names>RL</given-names></name>. <article-title>Normative estimates of cross-sectional and longitudinal brain volume decline in aging and AD</article-title>. <source>Neurology</source>. <year>2005</year>;<volume>64</volume>(<issue>6</issue>):<fpage>1032</fpage>–<lpage>9</lpage>. <object-id pub-id-type="pmid">15781822</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Castellanos</surname> <given-names>FX</given-names></name>, <name name-style="western"><surname>Lee</surname> <given-names>PP</given-names></name>, <name name-style="western"><surname>Sharp</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Jeffries</surname> <given-names>NO</given-names></name>, <name name-style="western"><surname>Greenstein</surname> <given-names>DK</given-names></name>, <name name-style="western"><surname>Clasen</surname> <given-names>LS</given-names></name>, <etal>et al</etal>. <article-title>Developmental trajectories of brain volume abnormalities in children and adolescents with attention-deficit/hyperactivity disorder</article-title>. <source>JAMA</source>. <year>2002</year>;<volume>288</volume>(<issue>14</issue>):<fpage>1740</fpage>–<lpage>8</lpage>. <object-id pub-id-type="pmid">12365958</object-id>.</mixed-citation></ref>
+<ref id="pone.0146913.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mathalon</surname> <given-names>DH</given-names></name>, <name name-style="western"><surname>Sullivan</surname> <given-names>EV</given-names></name>, <name name-style="western"><surname>Lim</surname> <given-names>KO</given-names></name>, <name name-style="western"><surname>Pfefferbaum</surname> <given-names>A</given-names></name>. <article-title>Progressive brain volume changes and the clinical course of schizophrenia in men: A longitudinal magnetic resonance imaging study</article-title>. <source>Archives of General Psychiatry</source>. <year>2001</year>;<volume>58</volume>(<issue>2</issue>):<fpage>148</fpage>–<lpage>57</lpage>. <object-id pub-id-type="pmid">11177116</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fox</surname> <given-names>NC</given-names></name>, <name name-style="western"><surname>Cousens</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Scahill</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Harvey</surname> <given-names>RJ</given-names></name>, <name name-style="western"><surname>Rossor</surname> <given-names>MN</given-names></name>. <article-title>Using serial registered brain magnetic resonance imaging to measure disease progression in alzheimer disease: Power calculations and estimates of sample size to detect treatment effects</article-title>. <source>Archives of Neurology</source>. <year>2000</year>;<volume>57</volume>(<issue>3</issue>):<fpage>339</fpage>–<lpage>44</lpage>. <object-id pub-id-type="pmid">10714659</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rovaris</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Comi</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Rocca</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Wolinsky</surname> <given-names>JS</given-names></name>, <name name-style="western"><surname>Filippi</surname> <given-names>M</given-names></name>. <article-title>Short-term brain volume change in relapsing—remitting multiple sclerosis</article-title>. <source>Brain</source>. <year>2001</year>;<volume>124</volume>(<issue>9</issue>):<fpage>1803</fpage>–<lpage>12</lpage>.</mixed-citation></ref>
+<ref id="pone.0146913.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><collab>Biomarkers Definitions Working G</collab>. <article-title>Biomarkers and surrogate endpoints: preferred definitions and conceptual framework</article-title>. <source>Clinical pharmacology and therapeutics</source>. <year>2001</year>;<volume>69</volume>(<issue>3</issue>):<fpage>89</fpage>–<lpage>95</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1067/mcp.2001.113989" xlink:type="simple">10.1067/mcp.2001.113989</ext-link></comment> <object-id pub-id-type="pmid">11240971</object-id>.</mixed-citation></ref>
+<ref id="pone.0146913.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Prescott</surname> <given-names>JW</given-names></name>. <article-title>Quantitative imaging biomarkers: the application of advanced image processing and analysis to clinical and preclinical decision making</article-title>. <source>Journal of digital imaging</source>. <year>2013</year>;<volume>26</volume>(<issue>1</issue>):<fpage>97</fpage>–<lpage>108</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10278-012-9465-7" xlink:type="simple">10.1007/s10278-012-9465-7</ext-link></comment> <object-id pub-id-type="pmid">22415112</object-id>; PubMed Central PMCID: PMC3553365.</mixed-citation></ref>
+<ref id="pone.0146913.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ecker</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Rocha-Rego</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Johnston</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Mourao-Miranda</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Marquand</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Daly</surname> <given-names>EM</given-names></name>, <etal>et al</etal>. <article-title>Investigating the predictive value of whole-brain structural MR scans in autism: a pattern classification approach</article-title>. <source>Neuroimage</source>. <year>2010</year>;<volume>49</volume>(<issue>1</issue>):<fpage>44</fpage>–<lpage>56</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neuroimage.2009.08.024" xlink:type="simple">10.1016/j.neuroimage.2009.08.024</ext-link></comment> <object-id pub-id-type="pmid">19683584</object-id>.</mixed-citation></ref>
+<ref id="pone.0146913.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Scharinger</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Rabl</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Sitte</surname> <given-names>HH</given-names></name>, <name name-style="western"><surname>Pezawas</surname> <given-names>L</given-names></name>. <article-title>Imaging genetics of mood disorders</article-title>. <source>Neuroimage</source>. <year>2010</year>;<volume>53</volume>(<issue>3</issue>):<fpage>810</fpage>–<lpage>21</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neuroimage.2010.02.019" xlink:type="simple">10.1016/j.neuroimage.2010.02.019</ext-link></comment> <object-id pub-id-type="pmid">20156570</object-id>; PubMed Central PMCID: PMC4502568.</mixed-citation></ref>
+<ref id="pone.0146913.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhang</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Zhou</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Yuan</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Shen</surname> <given-names>D</given-names></name>, <collab>Alzheimer's Disease Neuroimaging I</collab>. <article-title>Multimodal classification of Alzheimer's disease and mild cognitive impairment</article-title>. <source>Neuroimage</source>. <year>2011</year>;<volume>55</volume>(<issue>3</issue>):<fpage>856</fpage>–<lpage>67</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neuroimage.2011.01.008" xlink:type="simple">10.1016/j.neuroimage.2011.01.008</ext-link></comment> <object-id pub-id-type="pmid">21236349</object-id>; PubMed Central PMCID: PMC3057360.</mixed-citation></ref>
+<ref id="pone.0146913.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Haubold</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Peterson</surname> <given-names>BS</given-names></name>, <name name-style="western"><surname>Bansal</surname> <given-names>R</given-names></name>. <article-title>Annual research review: progress in using brain morphometry as a clinical tool for diagnosing psychiatric disorders</article-title>. <source>J Child Psychol Psychiatry</source>. <year>2012</year>;<volume>53</volume>(<issue>5</issue>):<fpage>519</fpage>–<lpage>35</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1469-7610.2012.02539.x" xlink:type="simple">10.1111/j.1469-7610.2012.02539.x</ext-link></comment> <object-id pub-id-type="pmid">22394424</object-id>; PubMed Central PMCID: PMC4235515.</mixed-citation></ref>
+<ref id="pone.0146913.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fischl</surname> <given-names>B</given-names></name>. <article-title>FreeSurfer</article-title>. <source>Neuroimage</source>. <year>2012</year>;<volume>62</volume>(<issue>2</issue>):<fpage>774</fpage>–<lpage>81</lpage>. Epub 2012/01/18. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neuroimage.2012.01.021" xlink:type="simple">10.1016/j.neuroimage.2012.01.021</ext-link></comment> <object-id pub-id-type="pmid">22248573</object-id>; PubMed Central PMCID: PMCPmc3685476.</mixed-citation></ref>
+<ref id="pone.0146913.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fischl</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Salat</surname> <given-names>DH</given-names></name>, <name name-style="western"><surname>Busa</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Albert</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Dieterich</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Haselgrove</surname> <given-names>C</given-names></name>, <etal>et al</etal>. <article-title>Whole brain segmentation: automated labeling of neuroanatomical structures in the human brain</article-title>. <source>Neuron</source>. <year>2002</year>;<volume>33</volume>(<issue>3</issue>):<fpage>341</fpage>–<lpage>55</lpage>. <object-id pub-id-type="pmid">11832223</object-id>.</mixed-citation></ref>
+<ref id="pone.0146913.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Smith</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Jenkinson</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Woolrich</surname> <given-names>MW</given-names></name>, <name name-style="western"><surname>Beckmann</surname> <given-names>CF</given-names></name>, <name name-style="western"><surname>Behrens</surname> <given-names>TE</given-names></name>, <name name-style="western"><surname>Johansen-Berg</surname> <given-names>H</given-names></name>, <etal>et al</etal>. <article-title>Advances in functional and structural MR image analysis and implementation as FSL</article-title>. <source>Neuroimage</source>. <year>2004</year>;<volume>23</volume> <issue>Suppl 1</issue>:<fpage>S208</fpage>–<lpage>19</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neuroimage.2004.07.051" xlink:type="simple">10.1016/j.neuroimage.2004.07.051</ext-link></comment> <object-id pub-id-type="pmid">15501092</object-id>.</mixed-citation></ref>
+<ref id="pone.0146913.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ashburner</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Friston</surname> <given-names>KJ</given-names></name>. <article-title>Voxel-based morphometry—the methods</article-title>. <source>Neuroimage</source>. <year>2000</year>;<volume>11</volume>(<issue>6 Pt 1</issue>):<fpage>805</fpage>–<lpage>21</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/nimg.2000.0582" xlink:type="simple">10.1006/nimg.2000.0582</ext-link></comment> <object-id pub-id-type="pmid">10860804</object-id>.</mixed-citation></ref>
+<ref id="pone.0146913.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fischl</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Dale</surname> <given-names>AM</given-names></name>. <article-title>Measuring the thickness of the human cerebral cortex from magnetic resonance images</article-title>. <source>Proc Natl Acad Sci U S A</source>. <year>2000</year>;<volume>97</volume>(<issue>20</issue>):<fpage>11050</fpage>–<lpage>5</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.200033797" xlink:type="simple">10.1073/pnas.200033797</ext-link></comment> <object-id pub-id-type="pmid">10984517</object-id>; PubMed Central PMCID: PMC27146.</mixed-citation></ref>
+<ref id="pone.0146913.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gronenschild</surname> <given-names>EHBM</given-names></name>, <name name-style="western"><surname>Habets</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Jacobs</surname> <given-names>HIL</given-names></name>, <name name-style="western"><surname>Mengelers</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Rozendaal</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>van Os</surname> <given-names>J</given-names></name>, <etal>et al</etal>. <article-title>The Effects of FreeSurfer Version, Workstation Type, and Macintosh Operating System Version on Anatomical Volume and Cortical Thickness Measurements</article-title>. <source>PLoS ONE</source>. <year>2012</year>;<volume>7</volume>(<issue>6</issue>):<fpage>e38234</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0038234" xlink:type="simple">10.1371/journal.pone.0038234</ext-link></comment> <object-id pub-id-type="pmid">22675527</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Durand-Dubief</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Belaroussi</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Armspach</surname> <given-names>JP</given-names></name>, <name name-style="western"><surname>Dufour</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Roggerone</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Vukusic</surname> <given-names>S</given-names></name>, <etal>et al</etal>. <article-title>Reliability of longitudinal brain volume loss measurements between 2 sites in patients with multiple sclerosis: comparison of 7 quantification techniques</article-title>. <source>AJNR American journal of neuroradiology</source>. <year>2012</year>;<volume>33</volume>(<issue>10</issue>):<fpage>1918</fpage>–<lpage>24</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3174/ajnr.A3107" xlink:type="simple">10.3174/ajnr.A3107</ext-link></comment> <object-id pub-id-type="pmid">22790248</object-id>.</mixed-citation></ref>
+<ref id="pone.0146913.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Morey</surname> <given-names>RA</given-names></name>, <name name-style="western"><surname>Selgrade</surname> <given-names>ES</given-names></name>, <name name-style="western"><surname>Wagner</surname> <given-names>HR</given-names> <suffix>2nd</suffix></name>, <name name-style="western"><surname>Huettel</surname> <given-names>SA</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>McCarthy</surname> <given-names>G</given-names></name>. <article-title>Scan-rescan reliability of subcortical brain volumes derived from automated segmentation</article-title>. <source>Human brain mapping</source>. <year>2010</year>;<volume>31</volume>(<issue>11</issue>):<fpage>1751</fpage>–<lpage>62</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/hbm.20973" xlink:type="simple">10.1002/hbm.20973</ext-link></comment> <object-id pub-id-type="pmid">20162602</object-id>; PubMed Central PMCID: PMC3782252.</mixed-citation></ref>
+<ref id="pone.0146913.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>de Boer</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Vrooman</surname> <given-names>HA</given-names></name>, <name name-style="western"><surname>Ikram</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Vernooij</surname> <given-names>MW</given-names></name>, <name name-style="western"><surname>Breteler</surname> <given-names>MM</given-names></name>, <name name-style="western"><surname>van der Lugt</surname> <given-names>A</given-names></name>, <etal>et al</etal>. <article-title>Accuracy and reproducibility study of automatic MRI brain tissue segmentation methods</article-title>. <source>Neuroimage</source>. <year>2010</year>;<volume>51</volume>(<issue>3</issue>):<fpage>1047</fpage>–<lpage>56</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neuroimage.2010.03.012" xlink:type="simple">10.1016/j.neuroimage.2010.03.012</ext-link></comment> <object-id pub-id-type="pmid">20226258</object-id>.</mixed-citation></ref>
+<ref id="pone.0146913.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wonderlick</surname> <given-names>JS</given-names></name>, <name name-style="western"><surname>Ziegler</surname> <given-names>DA</given-names></name>, <name name-style="western"><surname>Hosseini-Varnamkhasti</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Locascio</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Bakkour</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>van der Kouwe</surname> <given-names>A</given-names></name>, <etal>et al</etal>. <article-title>Reliability of MRI-derived cortical and subcortical morphometric measures: effects of pulse sequence, voxel geometry, and parallel imaging</article-title>. <source>Neuroimage</source>. <year>2009</year>;<volume>44</volume>(<issue>4</issue>):<fpage>1324</fpage>–<lpage>33</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neuroimage.2008.10.037" xlink:type="simple">10.1016/j.neuroimage.2008.10.037</ext-link></comment> <object-id pub-id-type="pmid">19038349</object-id>; PubMed Central PMCID: PMC2739882.</mixed-citation></ref>
+<ref id="pone.0146913.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jovicich</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Czanner</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Han</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Salat</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>van der Kouwe</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Quinn</surname> <given-names>B</given-names></name>, <etal>et al</etal>. <article-title>MRI-derived measurements of human subcortical, ventricular and intracranial brain volumes: Reliability effects of scan sessions, acquisition sequences, data analyses, scanner upgrade, scanner vendors and field strengths</article-title>. <source>Neuroimage</source>. <year>2009</year>;<volume>46</volume>(<issue>1</issue>):<fpage>177</fpage>–<lpage>92</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neuroimage.2009.02.010" xlink:type="simple">10.1016/j.neuroimage.2009.02.010</ext-link></comment> <object-id pub-id-type="pmid">19233293</object-id>; PubMed Central PMCID: PMC2866077.</mixed-citation></ref>
+<ref id="pone.0146913.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fennema-Notestine</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Gamst</surname> <given-names>AC</given-names></name>, <name name-style="western"><surname>Quinn</surname> <given-names>BT</given-names></name>, <name name-style="western"><surname>Pacheco</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Jernigan</surname> <given-names>TL</given-names></name>, <name name-style="western"><surname>Thal</surname> <given-names>L</given-names></name>, <etal>et al</etal>. <article-title>Feasibility of multi-site clinical structural neuroimaging studies of aging using legacy data</article-title>. <source>Neuroinformatics</source>. <year>2007</year>;<volume>5</volume>(<issue>4</issue>):<fpage>235</fpage>–<lpage>45</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s12021-007-9003-9" xlink:type="simple">10.1007/s12021-007-9003-9</ext-link></comment> <object-id pub-id-type="pmid">17999200</object-id>.</mixed-citation></ref>
+<ref id="pone.0146913.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Maclaren</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Han</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Vos</surname> <given-names>SB</given-names></name>, <name name-style="western"><surname>Fischbein</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Bammer</surname> <given-names>R</given-names></name>. <article-title>Reliability of brain volume measurements: A test-retest dataset</article-title>. <source>Scientific Data</source>. <year>2014</year>;<volume>1</volume>.</mixed-citation></ref>
+<ref id="pone.0146913.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Reuter</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Schmansky</surname> <given-names>NJ</given-names></name>, <name name-style="western"><surname>Rosas</surname> <given-names>HD</given-names></name>, <name name-style="western"><surname>Fischl</surname> <given-names>B</given-names></name>. <article-title>Within-subject template estimation for unbiased longitudinal image analysis</article-title>. <source>Neuroimage</source>. <year>2012</year>;<volume>61</volume>(<issue>4</issue>):<fpage>1402</fpage>–<lpage>18</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neuroimage.2012.02.084" xlink:type="simple">10.1016/j.neuroimage.2012.02.084</ext-link></comment> <object-id pub-id-type="pmid">22430496</object-id>; PubMed Central PMCID: PMC3389460.</mixed-citation></ref>
+<ref id="pone.0146913.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McGraw</surname> <given-names>KO</given-names></name>, <name name-style="western"><surname>Wong</surname> <given-names>SP</given-names></name>. <article-title>Forming inferences about some intraclass correlation coefficients</article-title>. <source>Psychological methods</source>. <year>1996</year>;<volume>1</volume>(<issue>1</issue>):<fpage>30</fpage>.</mixed-citation></ref>
+<ref id="pone.0146913.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bartko</surname> <given-names>JJ</given-names></name>. <article-title>The intraclass correlation coefficient as a measure of reliability</article-title>. <source>Psychological reports</source>. <year>1966</year>;<volume>19</volume>(<issue>1</issue>):<fpage>3</fpage>–<lpage>11</lpage>. <object-id pub-id-type="pmid">5942109</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref028"><label>28</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shrout</surname> <given-names>PE</given-names></name>, <name name-style="western"><surname>Fleiss</surname> <given-names>JL</given-names></name>. <article-title>Intraclass correlations: uses in assessing rater reliability</article-title>. <source>Psychological bulletin</source>. <year>1979</year>;<volume>86</volume>(<issue>2</issue>):<fpage>420</fpage>. <object-id pub-id-type="pmid">18839484</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bland</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Altman</surname> <given-names>D</given-names></name>. <article-title>Statistical methods for assessing agreement between two methods of clinical measurement</article-title>. <source>The lancet</source>. <year>1986</year>;<volume>327</volume>(<issue>8476</issue>):<fpage>307</fpage>–<lpage>10</lpage>.</mixed-citation></ref>
+<ref id="pone.0146913.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bland</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Altman</surname> <given-names>DG</given-names></name>. <article-title>Measuring agreement in method comparison studies</article-title>. <source>Statistical methods in medical research</source>. <year>1999</year>;<volume>8</volume>(<issue>2</issue>):<fpage>135</fpage>–<lpage>60</lpage>. <object-id pub-id-type="pmid">10501650</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref031"><label>31</label><mixed-citation publication-type="book" xlink:type="simple"><collab>R Core Team</collab>. <source>R: A language and environment for statistical computing</source>. <publisher-name>R Foundation for Statistical Computing</publisher-name> <publisher-loc>Vienna Austria</publisher-loc> <year>2013</year>.</mixed-citation></ref>
+<ref id="pone.0146913.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jack</surname> <given-names>CR</given-names></name>, <name name-style="western"><surname>Bernstein</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Fox</surname> <given-names>NC</given-names></name>, <name name-style="western"><surname>Thompson</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Alexander</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Harvey</surname> <given-names>D</given-names></name>, <etal>et al</etal>. <article-title>The Alzheimer's disease neuroimaging initiative (ADNI): MRI methods</article-title>. <source>Journal of Magnetic Resonance Imaging</source>. <year>2008</year>;<volume>27</volume>(<issue>4</issue>):<fpage>685</fpage>–<lpage>91</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/jmri.21049" xlink:type="simple">10.1002/jmri.21049</ext-link></comment> <object-id pub-id-type="pmid">18302232</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref033"><label>33</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Desikan</surname> <given-names>RS</given-names></name>, <name name-style="western"><surname>Ségonne</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Fischl</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Quinn</surname> <given-names>BT</given-names></name>, <name name-style="western"><surname>Dickerson</surname> <given-names>BC</given-names></name>, <name name-style="western"><surname>Blacker</surname> <given-names>D</given-names></name>, <etal>et al</etal>. <article-title>An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest</article-title>. <source>NeuroImage</source>. <year>2006</year>;<volume>31</volume>(<issue>3</issue>):<fpage>968</fpage>–<lpage>80</lpage>. <object-id pub-id-type="pmid">16530430</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref034"><label>34</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fischl</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Kouwe</surname> <given-names>Avd</given-names></name>, <name name-style="western"><surname>Destrieux</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Halgren</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Ségonne</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Salat</surname> <given-names>DH</given-names></name>, <etal>et al</etal>. <article-title>Automatically Parcellating the Human</article-title>. <source>Cerebral Cortex</source>. <year>2004</year>;<volume>14</volume>(<issue>1</issue>):<fpage>11</fpage>–<lpage>22</lpage>. <object-id pub-id-type="pmid">14654453</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Salat</surname> <given-names>DH</given-names></name>, <name name-style="western"><surname>Greve</surname> <given-names>DN</given-names></name>, <name name-style="western"><surname>Pacheco</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Quinn</surname> <given-names>BT</given-names></name>, <name name-style="western"><surname>Helmer</surname> <given-names>KG</given-names></name>, <name name-style="western"><surname>Buckner</surname> <given-names>RL</given-names></name>, <etal>et al</etal>. <article-title>Regional white matter volume differences in nondemented aging and Alzheimer's disease</article-title>. <source>Neuroimage</source>. <year>2009</year>;<volume>44</volume>(<issue>4</issue>):<fpage>1247</fpage>–<lpage>58</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neuroimage.2008.10.030" xlink:type="simple">10.1016/j.neuroimage.2008.10.030</ext-link></comment> <object-id pub-id-type="pmid">19027860</object-id>; PubMed Central PMCID: PMC2810540.</mixed-citation></ref>
+<ref id="pone.0146913.ref036"><label>36</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Suckling</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Barnes</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Job</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Brenan</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Lymer</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Dazzan</surname> <given-names>P</given-names></name>, <etal>et al</etal>. <article-title>Power calculations for multicenter imaging studies controlled by the false discovery rate</article-title>. <source>Human brain mapping</source>. <year>2010</year>;<volume>31</volume>(<issue>8</issue>):<fpage>1183</fpage>–<lpage>95</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/hbm.20927" xlink:type="simple">10.1002/hbm.20927</ext-link></comment> <object-id pub-id-type="pmid">20063303</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref037"><label>37</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Suckling</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Barnes</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Job</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Brennan</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Lymer</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Dazzan</surname> <given-names>P</given-names></name>, <etal>et al</etal>. <article-title>The neuro/PsyGRID calibration experiment</article-title>. <source>Human brain mapping</source>. <year>2012</year>;<volume>33</volume>(<issue>2</issue>):<fpage>373</fpage>–<lpage>86</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/hbm.21210" xlink:type="simple">10.1002/hbm.21210</ext-link></comment> <object-id pub-id-type="pmid">21425392</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Suckling</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Henty</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Ecker</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Deoni</surname> <given-names>SC</given-names></name>, <name name-style="western"><surname>Lombardo</surname> <given-names>MV</given-names></name>, <name name-style="western"><surname>Baron‐Cohen</surname> <given-names>S</given-names></name>, <etal>et al</etal>. <article-title>Are power calculations useful? A multicentre neuroimaging study</article-title>. <source>Human brain mapping</source>. <year>2014</year>;<volume>35</volume>(<issue>8</issue>):<fpage>3569</fpage>–<lpage>77</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/hbm.22465" xlink:type="simple">10.1002/hbm.22465</ext-link></comment> <object-id pub-id-type="pmid">24644267</object-id></mixed-citation></ref>
+<ref id="pone.0146913.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Klauschen</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Goldman</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Barra</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Meyer-Lindenberg</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Lundervold</surname> <given-names>A</given-names></name>. <article-title>Evaluation of automated brain MR image segmentation and volumetry methods</article-title>. <source>Human brain mapping</source>. <year>2009</year>;<volume>30</volume>(<issue>4</issue>):<fpage>1310</fpage>–<lpage>27</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/hbm.20599" xlink:type="simple">10.1002/hbm.20599</ext-link></comment> <object-id pub-id-type="pmid">18537111</object-id></mixed-citation></ref>
+</ref-list>
+</back>
+</article>

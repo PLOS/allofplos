@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS Negl Trop Dis</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosntds</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS Neglected Tropical Diseases</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1935-2735</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PNTD-D-12-00578</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pntd.0001969</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Microbiology</subject>
+            <subj-group>
+              <subject>Parasitology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Epidemiology</subject>
+            <subj-group>
+              <subject>Epidemiological methods</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Public health</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Public Health and Epidemiology</subject>
+          <subject>Microbiology</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>An In-Depth Analysis of a Piece of Shit: Distribution of <italic>Schistosoma mansoni</italic> and Hookworm Eggs in Human Stool</article-title>
+        <alt-title alt-title-type="running-head">Helminth Egg Distribution in Feces</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Krauth</surname>
+            <given-names>Stefanie J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Coulibaly</surname>
+            <given-names>Jean T.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Knopp</surname>
+            <given-names>Stefanie</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Traoré</surname>
+            <given-names>Mahamadou</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>N'Goran</surname>
+            <given-names>Eliézer K.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Utzinger</surname>
+            <given-names>Jürg</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Epidemiology and Public Health, Swiss Tropical and Public Health Institute, Basel, Switzerland</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>University of Basel, Basel, Switzerland</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Centre Suisse de Recherches Scientifiques en Côte d'Ivoire, Abidjan, Côte d'Ivoire</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Unité de Formation et de Recherche Biosciences, Université de Cocody, Abidjan, Côte d'Ivoire</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>King</surname>
+            <given-names>Charles H.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Case Western Reserve University School of Medicine, United States of America</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">juerg.utzinger@unibas.ch</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: SJK SK JU EKN. Performed the experiments: SJK MT JTC. Analyzed the data: SJK. Contributed reagents/materials/analysis tools: JU EKN. Wrote the paper: SJK JTC SK MT JU EKN.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <month>12</month>
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>20</day>
+        <month>12</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>6</volume>
+      <issue>12</issue>
+      <elocation-id>e1969</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>16</day>
+          <month>5</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>30</day>
+          <month>10</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2012</copyright-year>
+        <copyright-holder>Krauth et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>An accurate diagnosis of helminth infection is important to improve patient management. However, there is considerable intra- and inter-specimen variation of helminth egg counts in human feces. Homogenization of stool samples has been suggested to improve diagnostic accuracy, but there are no detailed investigations. Rapid disintegration of hookworm eggs constitutes another problem in epidemiological surveys. We studied the spatial distribution of <italic>Schistosoma mansoni</italic> and hookworm eggs in stool samples, the effect of homogenization, and determined egg counts over time in stool samples stored under different conditions.</p>
+        </sec>
+        <sec>
+          <title>Methodology</title>
+          <p>Whole-stool samples were collected from 222 individuals in a rural part of south Côte d'Ivoire. Samples were cut into four pieces and helminth egg locations from the front to the back and from the center to the surface were analyzed. Some samples were homogenized and fecal egg counts (FECs) compared before and after homogenization. The effect of stool storing methods on FECs was investigated over time, comparing stool storage on ice, covering stool samples with a water-soaked tissue, or keeping stool samples in the shade.</p>
+        </sec>
+        <sec>
+          <title>Principal Findings</title>
+          <p>We found no clear spatial pattern of <italic>S. mansoni</italic> and hookworm eggs in fecal samples. Homogenization decreased <italic>S. mansoni</italic> FECs (p = 0.026), while no effect was observed for hookworm and other soil-transmitted helminths. Hookworm FECs decreased over time. Storing stool samples on ice or covered with a moist tissue slowed down hookworm egg decay (p&lt;0.005).</p>
+        </sec>
+        <sec>
+          <title>Conclusions/Significance</title>
+          <p>Our findings have important implications for helminth diagnosis at the individual patient level and for epidemiological surveys, anthelmintic drug efficacy studies and monitoring of control programs. Specifically, homogenization of fecal samples is recommended for an accurate detection of <italic>S. mansoni</italic> eggs, while keeping collected stool samples cool and moist delayed the disintegration of hookworm eggs.</p>
+        </sec>
+      </abstract>
+      <abstract abstract-type="summary">
+        <title>Author Summary</title>
+        <p>An accurate diagnosis of parasitic worm (helminth) infections is important for adequate patient treatment and disease control programs. Helminth eggs in human stool samples are used as an indicator of infection intensity and morbidity. However, little is known about the exact distribution of helminth eggs in stool samples. Homogenization has been suggested to improve the diagnostic accuracy. Hookworm eggs disintegrate over time, which makes their detection challenging in epidemiological surveys. We determined the location of helminth eggs in entire stool samples from 222 individuals in Côte d'Ivoire. We also investigated whether homogenization has an effect on the detection of eggs, and determined egg counts over time in stool samples stored on ice, covered with a moist tissue, or kept in the shade. No clear pattern of helminth egg distribution was found in human stool samples. Homogenization resulted in more accurate egg counts of the blood fluke <italic>Schistosoma mansoni</italic>, while it did not affect other helminths. Keeping stool samples on ice or covered with a wet tissue slows down the disintegration of hookworm eggs. Our findings have important implications for individual patient management and the design and implementation of epidemiological surveys and helminth disease control programs.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This study received financial support from the Swiss Tropical and Public Health Institute (Teaching and Training). JTC acknowledges financial support from the Carolito Foundation for a PhD fellowship. SK is financially supported by sub-awards no. RR374-053/4787996 and no. RR374-053/4893196 from the University of Georgia, which is awarded by the Bill and Melinda Gates Foundation (prime award no. 50816). EKN and JU are grateful to Fairmed and the Swiss National Science Foundation (project no. IZ70Z0_123900) for sustained funding over the past several years. The funders had no role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="8"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Although schistosomiasis and soil-transmitted helminthiasis affect hundreds of millions of people and account for more than 40% of the global burden due to neglected tropical diseases, parasitic worm infections are often still neglected <xref ref-type="bibr" rid="pntd.0001969-Hotez1">[1]</xref>–<xref ref-type="bibr" rid="pntd.0001969-Utzinger1">[3]</xref>. An accurate diagnosis is necessary for adequate patient treatment, a deeper understanding of the epidemiology of helminthiases, assessment of anthelmintic drug efficacy, and for monitoring the community-effectiveness of control programs <xref ref-type="bibr" rid="pntd.0001969-Bergquist1">[4]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Knopp1">[5]</xref>.</p>
+      <p>The Kato-Katz technique is the current method of choice for the diagnosis of <italic>Schistosoma mansoni</italic>, <italic>Schistosoma japonicum</italic>, and soil-transmitted helminths in epidemiological studies <xref ref-type="bibr" rid="pntd.0001969-WHO1">[6]</xref>–<xref ref-type="bibr" rid="pntd.0001969-Utzinger2">[8]</xref>. However, the Kato-Katz technique has several shortcomings. First, there is a lack of sensitivity, with light infection intensities particularly prone to be missed <xref ref-type="bibr" rid="pntd.0001969-Booth1">[9]</xref>–<xref ref-type="bibr" rid="pntd.0001969-Knopp2">[12]</xref>. Second, there is considerable intra- and inter-specimen variation of helminth egg distribution and aggregation in feces <xref ref-type="bibr" rid="pntd.0001969-Berhe1">[10]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Utzinger3">[11]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Hall1">[13]</xref>–<xref ref-type="bibr" rid="pntd.0001969-Yu1">[16]</xref>. Interestingly though, contradicting findings have been reported on the spatial distribution of helminth eggs in human stool samples <xref ref-type="bibr" rid="pntd.0001969-Yu1">[16]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Ye1">[17]</xref>. For example, two studies reported significantly higher <italic>S. japonicum</italic> fecal egg counts (FECs) on the surface compared to the center <xref ref-type="bibr" rid="pntd.0001969-Yu1">[16]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Ye1">[17]</xref>. For <italic>S. mansoni</italic>, however, no significant differences in FECs have been found <xref ref-type="bibr" rid="pntd.0001969-Woodstock1">[18]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Ratard1">[19]</xref>. Similarly, no differences have been observed in the distribution of eggs of the two soil-transmitted helminths, <italic>Ascaris lumbricoides</italic> and <italic>Trichuris trichiura</italic> in human stool samples <xref ref-type="bibr" rid="pntd.0001969-Ye2">[20]</xref>. To date only two studies examined helminth egg distribution along the length axis of the stool and both focused on schistosome species <xref ref-type="bibr" rid="pntd.0001969-Yu1">[16]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Martin1">[21]</xref>. Of note, in these studies, sample sizes were very small (≤11 individuals), and hence the reported results have to be interpreted with caution. Third, a time delay from stool production to processing the specimens in the laboratory is influencing the sensitivity of helminth diagnosis, particulary for hookworm <xref ref-type="bibr" rid="pntd.0001969-Dacombe1">[22]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Cringoli1">[23]</xref>.</p>
+      <p>Homogenization of fecal material has been suggested as one way to overcome intra-specimen variation of helminth egg counts <xref ref-type="bibr" rid="pntd.0001969-Dacombe1">[22]</xref>,<xref ref-type="bibr" rid="pntd.0001969-Cringoli1">[23]</xref>. However, the effect of homogenization on helminth FECs has yet to be determined. In fact, we could identify only two studies that examined the effect of homogenization on the variability of the distribution of <italic>S. japonicum</italic>, <italic>T. trichiura</italic>, and <italic>A. lumbricoides</italic> eggs within entire stool samples <xref ref-type="bibr" rid="pntd.0001969-Ye1">[17]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Ye2">[20]</xref>. Another study merely states a suggestion about the effect of homogenizing based on findings about the similarity of FECs from the center and surface of stool <xref ref-type="bibr" rid="pntd.0001969-Martin1">[21]</xref>. Studies on soil-transmitted helminths concluded that homogenizing by stirring would not overcome the influence of intra-specimen variation of helminth egg location, while the study on <italic>S. japonicum</italic> showed that variation decreased after stirring <xref ref-type="bibr" rid="pntd.0001969-Ye1">[17]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Ye2">[20]</xref>.</p>
+      <p>Yet, the aforementioned features are likely to affect the performance of all diagnostic methods for which sampling of fecal material is involved. We therefore aimed to investigate the nature of intra-specimen variation of helminth egg distribution, to examine whether there is any effect of homogenization for the detection and quantification of helminth eggs in stool samples, and to monitor FECs over time in stool samples stored on ice, covered with a water-soaked tissue, or kept in the shade. Emphasis was placed on <italic>S. mansoni</italic> and hookworm infections. Results from our study might be of direct relevance for stool sampling and laboratory work-up in diagnostic centers, helminth epidemiological surveys, anthelmintic drug efficacy evaluation, and control programs.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Ethics Statement</title>
+        <p>The study protocol was approved by the institutional research commission of the Swiss Tropical and Public Health Institute (Swiss TPH, Basel, Switzerland). Ethical approval was granted by the ethics committees of Basel (EKBB, reference no. 377/09) and Côte d'Ivoire (reference no. 1993 MSHP/CNER). District health and village authorities, study participants and parents/guardians of individuals aged &lt;18 years, were informed about the purpose, procedures, and potential risks and benefits of the study. Written informed consent was obtained from participants or the parents/guardians of minors before the collection of the first stool sample. Participation was voluntary and there were no further obligation for those who withdrew from the study. All results were coded and treated confidentially.</p>
+        <p>At the end of the study, all participants who provided a stool sample for the parasitological investigation were treated with albendazole (single 400 mg oral dose) and praziquantel (single 40 mg/kg oral dose) free of charge, irrespective of their helminth infection status.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Study Area</title>
+        <p>The study was carried out in Azaguié, a small town in the district of Agboville in south Côte d'Ivoire. Azaguié is situated approximately 40 km north of Abidjan, the economic capital of Côte d'Ivoire. Soil-transmitted helminthiasis and schistosomiasis are highly endemic <xref ref-type="bibr" rid="pntd.0001969-Glinz1">[24]</xref>–<xref ref-type="bibr" rid="pntd.0001969-Coulibaly1">[26]</xref>. There are four main seasons in the area, a long dry season from December to March, the main rainy season between April and mid-July, a short dry season from mid-July to mid-September, and a short rainy season from mid-September to November. The average temperature is 27°C and the annual precipitation is 1,200–1,500 mm.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Field Procedures</title>
+        <p>The study was conducted in September and October 2010. Once local authorities and nearby schools had been informed, the research team invited all interested people of the area to come to an information session. After participants gave their written informed consent, they were supplied with an aluminum ‘take away box’, together with a cover-lid, a sheet of aluminum foil, a sticker, and an instruction form explaining how to collect the stool sample (<xref ref-type="fig" rid="pntd-0001969-g001">Figure 1</xref>). Participants were invited to place their fresh morning feces directly on the aluminum foil, while trying to keep it in a long, straight shape. Subsequently, participants were asked to wrap the stool into the foil without breaking it and place it into the ‘take-away box’. The box was closed and a sticker put on the box to mark the front of the stool (defined as that part of the stool that had left the bowel first). Mushy samples, where no front could be indicated, were not marked. Finally, participants were asked to note the exact time of defecation (hh∶mm) onto the lid and return the sample to the laboratory at the Azaguié health center, where the diagnostic work-up took place.</p>
+        <fig id="pntd-0001969-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pntd.0001969.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Instruction form on how to collect whole-stool samples for the study.</title>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pntd.0001969.g001" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2d">
+        <title>Laboratory Procedures</title>
+        <p>In a first step, stool specimens were categorized into one of five consistency categories: (i) sausage-shaped (equivalent to type 3 on the Bristol Stool Chart (BSC) <xref ref-type="bibr" rid="pntd.0001969-Lewis1">[27]</xref>); (ii) sausage-shaped-but-lumpy (type 2 BSC); (iii) sausage-shaped-but-soft (type 4 BSC); (iv) lumpy (type 1 BSC); and (v) mushy (types 5–7 BSC).</p>
+        <p>Next, samples of each category were randomly allocated either to the assessment of whole-stool homogenization or to the assessment of helminth egg distribution in stool by drawing lots. <xref ref-type="fig" rid="pntd-0001969-g002">Figure 2</xref> shows how samples designated for assessment of helminth egg distribution in stool were further stratified according to their consistency. In brief, sausage-shaped samples, including sausage-shaped-but-lumpy samples, were cut into four equally sized pieces along the length axis (named front, second, third, and back piece). Care was taken that no fecal material was transferred from one piece to another. For each piece of stool, one Kato-Katz thick smear (using standard 41.7 mg templates <xref ref-type="bibr" rid="pntd.0001969-Katz1">[28]</xref>) was prepared from the center and a second one from the surface. Center samples were obtained by breaking open the stool piece without transferring fecal material from the surface region into the center, and by subsequently taking a small piece of stool from the center using a fresh spatula. Surface material was taken by scraping or cutting-off feces from the outer layer of the stool with a spatula, not invading deeper than 2–3 mm into the inside of the stool. Subsequently, the remaining part of the stool piece was put into a plastic cup and thoroughly homogenized by stirring with a plastic tongue spatula by two different laboratory assistants for at least 1 min each. A third Kato-Katz thick smear was then prepared from the thoroughly homogenized fecal material.</p>
+        <fig id="pntd-0001969-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pntd.0001969.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Processing of stool samples according to consistency including whole-stool homogenization.</title>
+            <p>*Sausage-shaped-but-soft samples were processed like in (A) without taking samples from the center.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pntd.0001969.g002" position="float" xlink:type="simple"/>
+        </fig>
+        <p>Sausage-shaped-but-soft stool samples were cut into four equally long pieces as described above. However, these samples were too soft to properly take stool from the center and the surface. Hence, a first Kato-Katz thick smear was prepared from any unspecified region of the piece and a second one after the homogenization had been completed.</p>
+        <p>Lumpy samples were not cut. Sufficiently big lumps were chosen and Kato-Katz thick smears were prepared from the center, surface, and the homogenized lump, as described above.</p>
+        <p>Mushy samples of types 5 and 6 BSC were always allocated to the assessment of whole-stool homogenization, as they were not suitable for any of the other processing schemes. Very liquid samples (type 7 BSC) were excluded from the different diagnostic approaches as they were not suitable for any processing. However a single Kato-Katz thick smear was prepared from these samples to identify the participant's helminth infection status.</p>
+        <p>From all samples allocated to the assessment of whole-stool homogenization, prior to homogenization, a first Kato-Katz thick smear was prepared by taking material from any unspecified region of sample, as mostly done in routine analysis. The rest of the whole-stool sample was then transferred into a plastic cup and thoroughly homogenized by stirring with a plastic tongue spatula by two different laboratory assistants for at least 1 min each. A second Kato-Katz thick smear was prepared from the homogenized whole-stool sample.</p>
+        <p>To avoid confounding due to the time delay from production to examination of the different stool pieces, we established four distinctive examination time points, each lasting 2 h. At each time point, one stool piece per sample was randomly chosen to be examined using the aforementioned methodology by drawing lots. Using this approach, we assured that each piece of each stool sample was examined at a randomly chosen, but predefined time point of the day and we avoided introducing any systematic error into the analysis of egg distribution. Our rationale was as follows. If stool sections would have been analyzed in a systematic way (i.e., analyzing the front first and the back last) and assuming that FEC might decline over time, we might have observed a spatial egg distribution pattern with eggs declining from the front to the back. However, in reality, this observation would be due to the effect of helminth egg decay over time rather than real spatial egg distribution. By randomly choosing the time point of analysis for each piece, the potential confounder (i.e., time) is removed. Additionally, this procedure allowed us to monitor for potential change in FECs over time.</p>
+        <p>Independent of their processing schemes, approximately one third of all samples were stored in a box kept on ice, a third was stored being covered with a tissue soaked with tap water, and the remaining third was stored without any additional preservation efforts but placed in the shade outside the laboratory.</p>
+        <p>We adhered to World Health Organization (WHO) guidelines for Kato-Katz thick smear preparation and examination <xref ref-type="bibr" rid="pntd.0001969-WHO2">[29]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Yap1">[30]</xref>. In brief, Kato-Katz thick smears were read by an experienced laboratory technician in a systematic way within a maximum of 60 min after preparation. The number of helminth eggs was recorded for each species separately. Ten percent of all slides were subjected to quality control and checked for internal consistency. In case of conflicting results, all Kato-Katz thick smears of that individual where re-read and the results of the second reading were used for analysis. Additionally, all data recording sheets were checked for internal consistency.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Statistical Analysis</title>
+        <p>Data were double entered by a single person into EpiInfo™ version 3.4.1 (EpiInfo 2007), checked for internal consistency and then analyzed with STATA version 10.1 (Stata 2009). A stool sample was considered positive for a specific helminth species if at least one egg was found in any of the slides examined. Egg counts derived from individual Kato-Katz thick smears were multiplied by a factor of 24 to obtain a standardized value of eggs per gram of stool (EPG). Helminth species specific EPG values of each individual were categorized into infection intensities according to cut-off values provided by WHO <xref ref-type="bibr" rid="pntd.0001969-WHO3">[31]</xref>.</p>
+        <p>A random effects negative binomial regression (NBR) model was performed for all assessments to check for the interaction of FECs between the different pieces or locations. Additionally, the Wilcoxon (WXN) signed rank test was used for categorical data whenever two categories were compared, and the Kendall's coefficient of concordance (KCC) was used to show the degree of agreement between FECs obtained in each stool part. A KCC value of 1 defines total agreement and a KCC value of 0 indicates no agreement.</p>
+        <p>For the assessment of differences in FECs from formed stool and mushy stool, a non-overlapping 95% confidence interval (CI) indicates significance. For the assessment of the effect of homogenization, mushy stool samples were excluded because we assumed that they already were homogeneous.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Study Population and Sample Allocation</title>
+        <p>Stool samples were collected from a total of 222 individuals aged 5–52 years with a median age of 12 years. Among them, 125 (56.3%) were infected with at least one helminth species. However, nine helminth-positive participants were excluded from the statistical analysis because their samples were of insufficient amount to be examined with more than a single Kato-Katz thick smear. Of the remaining 116 stool samples, 34 were stored on ice, 45 in a box kept in the shade, and 37 covered with a water-soaked tissue. The whole-stool homogenization assay was performed with 53 stool samples and 63 samples were allocated to the assessment of helminth egg distribution in different locations of the stool. Details of the exact number of samples allocated to each examination procedure are shown in <xref ref-type="fig" rid="pntd-0001969-g003">Figure 3</xref>.</p>
+        <fig id="pntd-0001969-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pntd.0001969.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Flowchart detailing inclusion and exclusion of study participants and use for the various analysis including helminth prevalences.</title>
+            <p>n, number of whole-stool samples; N, number of stool pieces.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pntd.0001969.g003" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s3b">
+        <title>Prevalence of <italic>S. mansoni</italic> and Soil-Transmitted Helminths</title>
+        <p>Among the 222 study participants, 102 (45.9%) were infected with <italic>S. mansoni</italic>, 23 (10.4%) were positive for <italic>T. trichiura</italic>, 21 (9.5%) for hookworm, and seven (3.2%) for <italic>A. lumbricoides</italic>. Additionally, two participants (0.9%) were infected with the tapeworm <italic>Hymenolepis nana</italic> (<xref ref-type="table" rid="pntd-0001969-t001">Table 1</xref>), but no further analysis was made for this parasite. Infections with two and three different helminth species were found in 25 (11.3%) and seven (3.2%) participants, respectively. With the exception of <italic>S. mansoni</italic> (35.5% of the positive individuals having ≥400 EPG) and hookworm (4.8% of the positive individuals having ≥4,000 EPG), heavy infections did not occur. Most soil-transmitted helminth infections were light (92.5%) and some were moderate (5.7%).</p>
+        <table-wrap id="pntd-0001969-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pntd.0001969.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Helminth prevalences and infection intensities among 125 helminth-positive study participants, from Azaguié, Côte d'Ivoire, in 2010.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pntd-0001969-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pntd.0001969.t001" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">No.(%) of infected</td>
+                  <td colspan="3" align="left" rowspan="1">Infection intensity</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Light</td>
+                  <td align="left" rowspan="1" colspan="1">Moderate</td>
+                  <td align="left" rowspan="1" colspan="1">Heavy</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Schistosoma mansoni</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">102 (45.9)</td>
+                  <td align="left" rowspan="1" colspan="1">40 (39.2%)</td>
+                  <td align="left" rowspan="1" colspan="1">26 (25.5%)</td>
+                  <td align="left" rowspan="1" colspan="1">36 (35.5%)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Trichuris trichiura</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">23 (10.4)</td>
+                  <td align="left" rowspan="1" colspan="1">23 (100%)</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Hookworm</td>
+                  <td align="left" rowspan="1" colspan="1">21 (9.5)</td>
+                  <td align="left" rowspan="1" colspan="1">18 (85.7%)</td>
+                  <td align="left" rowspan="1" colspan="1">2 (9.5%)</td>
+                  <td align="left" rowspan="1" colspan="1">1 (4.8%)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Ascaris lumbricoides</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">7 (3.2)</td>
+                  <td align="left" rowspan="1" colspan="1">6 (85.7%)</td>
+                  <td align="left" rowspan="1" colspan="1">1 (14.3%)</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Hymenolepis nana</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">2 (0.9)</td>
+                  <td align="left" rowspan="1" colspan="1">2 (100%)</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Any helminth</td>
+                  <td align="left" rowspan="1" colspan="1">125 (100)</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Double infection</td>
+                  <td align="left" rowspan="1" colspan="1">25 (20.0)</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Triple infection</td>
+                  <td align="left" rowspan="1" colspan="1">7 (5.6)</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+      <sec id="s3c">
+        <title>Stool Parameters</title>
+        <p>Stool was produced between 05:30 and 11:10 hours (median: 08:35 hours) and collected between 07:52 and 11:19 hours (median: 09:05 hours). On average, nine samples were collected each day (range: 2–11 samples). One third of all samples (33.8%) were sausage-shaped, 28.8% were mushy, 25.2% were sausage-shaped-but-soft, 7.7% were lumpy, and 4.5% were sausage-shaped-but-lumpy (<xref ref-type="table" rid="pntd-0001969-t002">Table 2</xref>). An interesting observation worth mentioning is that whole-stool samples were more likely very small when participants were infected with <italic>T. trichiura</italic> compared to participants infected with other helminth species (OR = 1.88). The delay from stool production to the start of the Kato-Katz preparations in the laboratory was, on average, 120 min (range 20–300 min).</p>
+        <table-wrap id="pntd-0001969-t002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pntd.0001969.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Number of stool samples in each consistency category by infection status (any helminth infection), from 222 study participants from Azaguié, Côte d'Ivoire, in 2010.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pntd-0001969-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pntd.0001969.t002" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Total (% of total stool samples)</td>
+                  <td align="left" rowspan="1" colspan="1">No. of infected (% of all infected stool samples)</td>
+                  <td align="left" rowspan="1" colspan="1">No. of non infected (% of all non infected stool samples)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>n</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>222</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>125</bold>
+                    <xref ref-type="table-fn" rid="nt101">*</xref>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>97</bold>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Sausage like</td>
+                  <td align="left" rowspan="1" colspan="1">75 (33.8%)</td>
+                  <td align="left" rowspan="1" colspan="1">39 (33.6%)</td>
+                  <td align="left" rowspan="1" colspan="1">33 (34.0%)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Sausage shaped but lumpy</td>
+                  <td align="left" rowspan="1" colspan="1">10 (4.5%)</td>
+                  <td align="left" rowspan="1" colspan="1">5 (4.3%)</td>
+                  <td align="left" rowspan="1" colspan="1">4 (4.1%)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Sausage like but soft</td>
+                  <td align="left" rowspan="1" colspan="1">56 (25.2%)</td>
+                  <td align="left" rowspan="1" colspan="1">33 (28.4%)</td>
+                  <td align="left" rowspan="1" colspan="1">22 (22.7%)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Lumpy</td>
+                  <td align="left" rowspan="1" colspan="1">17 (7.7%)</td>
+                  <td align="left" rowspan="1" colspan="1">4 (3.5%)</td>
+                  <td align="left" rowspan="1" colspan="1">10 (10.3%)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Mushy</td>
+                  <td align="left" rowspan="1" colspan="1">64 (28.8%)</td>
+                  <td align="left" rowspan="1" colspan="1">35 (30.2%)</td>
+                  <td align="left" rowspan="1" colspan="1">28 (28.9%)</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label>*</label>
+              <p>Nine helminth-positive stool samples were too small to allocate them to any consistency category.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s3d">
+        <title>Helminth Egg Distribution along the Length Axis of the Stool</title>
+        <p>In general, FECs of all helminth species in formed stool from type 1–3 BSC were significantly higher than in soft stool from type 4–7 BSC, with a combined mean FEC ratio of 947∶447 EPG (95% CI: 698–1,196 EPG <italic>versus</italic> 323–579 EPG). <italic>S. mansoni</italic>-positive stool samples (<italic>n</italic> = 42), showed no significant differences in FECs between different locations along the length axis (z<sub>NBR</sub> = −1.60; p = 0.111). There was an agreement of W<sub>KCC</sub> = 0.92 between the ranks of FECs in all four stool pieces (p&lt;0.001).</p>
+        <p>In hookworm-infected individuals (<italic>n</italic> = 14), FECs in the front piece of the stool sample were significantly higher than FECs in the back piece (z<sub>NBR</sub> = −3.11, p = 0.002). In <italic>T. trichiura</italic>-positive stool samples (<italic>n</italic> = 3), FECs in the back piece were significantly higher than in the front (z<sub>NBR</sub> = 2.63, p = 0.008). There was only one <italic>A. lumbricoides</italic>-positive sample among the samples dedicated to the assessment of helminth egg location, and hence no comparisons were made for this helminth species.</p>
+        <p>Mean FECs of <italic>S. mansoni</italic>, hookworms and <italic>T. trichiura</italic> in the different stool pieces along the length axis of the stool, can be seen in <xref ref-type="table" rid="pntd-0001969-t003">Table 3</xref>.</p>
+        <table-wrap id="pntd-0001969-t003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pntd.0001969.t003</object-id>
+          <label>Table 3</label>
+          <caption>
+            <title>Mean FECs (expressed as EPGs) in different stool pieces along the length axis of whole-stool samples, among 59 helminth-positive participants from Azaguié, Côte d'Ivoire, in 2010.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pntd-0001969-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pntd.0001969.t003" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">n samples</td>
+                  <td align="left" rowspan="1" colspan="1">Front piece (95% CI)</td>
+                  <td align="left" rowspan="1" colspan="1">2<sup>nd</sup> piece (95% CI)</td>
+                  <td align="left" rowspan="1" colspan="1">3<sup>rd</sup> piece (95% CI)</td>
+                  <td align="left" rowspan="1" colspan="1">Back piece (95% CI)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>S. mansoni</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">42</td>
+                  <td align="left" rowspan="1" colspan="1">656 (372–940)</td>
+                  <td align="left" rowspan="1" colspan="1">670 (346–995)</td>
+                  <td align="left" rowspan="1" colspan="1">616 (349–883)</td>
+                  <td align="left" rowspan="1" colspan="1">670 (275–841)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Hookworm</td>
+                  <td align="left" rowspan="1" colspan="1">14</td>
+                  <td align="left" rowspan="1" colspan="1">986 (149–1823)</td>
+                  <td align="left" rowspan="1" colspan="1">396 (0–1040)</td>
+                  <td align="left" rowspan="1" colspan="1">422 (0–1191)</td>
+                  <td align="left" rowspan="1" colspan="1">267 (0–713)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T. trichiura</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">8 (0–24)</td>
+                  <td align="left" rowspan="1" colspan="1">56 (15–98)</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+      <sec id="s3e">
+        <title>Helminth Egg Distribution on the Surface and Center of the Stool</title>
+        <p>For <italic>S. mansoni</italic>-positive individuals, no difference in FECs between the surface and the center of the stool samples was found (z<sub>NBR</sub> = −1.88; p = 0.060; <italic>n</italic> = 95). When eliminating pseudoreplication and analyzing only one randomly selected piece per stool sample, the effect was even stronger, but lacked statistical significance (z<sub>NBR</sub> = 0.85; p = 0.276; <italic>n</italic> = 30). Similarly, we did not detect any difference in FECs between the surface or center for hookworm-positive (z<sub>NBR</sub> = −0.12, p = 0.902; <italic>n</italic> = 4) and <italic>T. trichiura</italic>-positive stool samples (z<sub>NBR</sub> = 1.85 p = 0.064; <italic>n</italic> = 3).</p>
+        <p>Mean FECs of <italic>S. mansoni</italic>, hookworms and <italic>T. trichiura</italic> in the surface and the center of the stool, can be seen in <xref ref-type="table" rid="pntd-0001969-t004">Table 4</xref>.</p>
+        <table-wrap id="pntd-0001969-t004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pntd.0001969.t004</object-id>
+          <label>Table 4</label>
+          <caption>
+            <title>Mean eggs per gram (EPG) values in surface and center of stool samples, among 102 helminth-positive participants from Azaguié Côte d'Ivoire, in 2010.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pntd-0001969-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pntd.0001969.t004" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">n</td>
+                  <td align="left" rowspan="1" colspan="1">Center (95% CI)</td>
+                  <td align="left" rowspan="1" colspan="1">Surface (95% CI)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>S. mansoni</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">95</td>
+                  <td align="left" rowspan="1" colspan="1">41 (29–52)</td>
+                  <td align="left" rowspan="1" colspan="1">32 (23–42)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Hookworm</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">90 (19–160)</td>
+                  <td align="left" rowspan="1" colspan="1">90 (0–191)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>T. trichiura</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">7 (0–18)</td>
+                  <td align="left" rowspan="1" colspan="1">3 (1–4)</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+        </table-wrap>
+      </sec>
+      <sec id="s3f">
+        <title>Effect of Homogenization on Helminth Egg Distribution</title>
+        <p><italic>S. mansoni</italic> FECs decreased after homogenization of stool samples, irrespectively of whether whole-stool samples (z<sub>WXN</sub> = 2.14, p = 0.032; <italic>n</italic> = 16) or single pieces of a stool sample were homogenized (z<sub>WXN</sub> = 2.23, p = 0.026; <italic>n</italic> = 62). The homogenization had an effect on the <italic>S. mansoni</italic> infection intensity category of 13 individuals: a change from heavy (≥400 EPG) to moderate (100–399 EPG), from moderate to light (1–99 EPG), and from light to moderate intensity was each observed in 4 people. A change from light to heavy infection intensity was found in one individual.</p>
+        <p>With regard to soil-transmitted helminths, no difference in FECs before and after homogenization was found, neither for whole-stool samples (hookworm, p = 0.166, <italic>n</italic> = 10; <italic>T. trichiura</italic>, p = 0.655, <italic>n</italic> = 8; <italic>A. lumbricoides</italic>, p = 0.456, <italic>n</italic> = 4), nor for the homogenization of one randomly chosen piece per sample (hookworm, p = 0.745, <italic>n</italic> = 12; <italic>T. trichiura</italic>, p = 0.217, <italic>n</italic> = 10; <italic>A. lumbricoides</italic>, p = 0.917, <italic>n</italic> = 6).</p>
+        <p>Intra-sample variance of FECs decreased significantly after homogenization for <italic>S. mansoni</italic> (z<sub>WXN</sub> = 4.53, p&lt;0.001, <italic>n</italic> = 40), but not for soil-transmitted helminths (hookworm, p = 0.655, <italic>n</italic> = 9; <italic>T. trichiura</italic>, p = 0.288, <italic>n</italic> = 8; <italic>A. lumbricoides</italic>, p = 0.953, <italic>n</italic> = 2).</p>
+        <p>Stratified by infection intensity, we found that the reduction of variance in <italic>S. mansoni</italic> FECs after homogenization only occurred with heavy (p = 0.001, <italic>n</italic> = 17) and moderate infection intensities (p = 0.008, <italic>n</italic> = 12), but not with light infection intensities (p = 0.588, <italic>n</italic> = 11). Additionally, the rate of Kato-Katz thick smears initially found positive that “changed” to negative after homogenization (14 out of 64, 21.8%) is nearly equal to the rate of Kato-Katz thick smears that were initially found negative and “changed” to positive after homogenization (17 out of 64, 26.7%) (both p&gt;0.5).</p>
+      </sec>
+      <sec id="s3g">
+        <title>Effect of Stool Storing and Examination of Time Delays on FECs</title>
+        <p>The ranks of FECs from <italic>S. mansoni</italic> did not differ between the different time points of stool examination, irrespective of whether samples were stored on ice (W<sub>KCC</sub> = 0.87, p&lt;0.001, <italic>n</italic> = 30), covered with a water-soaked tissue (W<sub>KCC</sub> = 0.87, p&lt;0.001, <italic>n</italic> = 35), or kept in the shade (W<sub>KCC</sub> = 0.91, p&lt;0.001, <italic>n</italic> = 42).</p>
+        <p>In hookworm-positive stool samples, we observed a significant decline of FECs over time for samples stored in the shade (z<sub>NBR</sub> = −2.82, p = 0.005, <italic>n</italic> = 12), although the agreement of the ranks of FECs determined at different time points was W<sub>KCC</sub> = 0.73 (p = 0.001). Thus, we performed an additional WXN test for the stool pieces that were analyzed first and the pieces that were analyzed last. The test confirmed a significant decline of FECs over time (z<sub>WXN</sub> = 2.45, p = 0.014).</p>
+        <p>If samples were stored on ice, no significant changes in FECs of hookworm were found over time (W<sub>KCC</sub> = 0.84, p = 0.005, <italic>n</italic> = 12). Samples kept humid showed no significant change of ranks of FECs over time (W<sub>KCC</sub> = 0.87, p&lt;0.001, <italic>n</italic> = 12).</p>
+        <p>For <italic>T. trichiura</italic>-positive samples, no difference in ranks of FECs between the measured time points were observed, neither for samples stored on ice (W<sub>KCC</sub> = 0.61, p = 0.080, <italic>n</italic> = 3), nor covered with a water-soaked tissue (W<sub>KCC</sub> = 0.60, p&lt;0.001, <italic>n</italic> = 4), nor kept in the shade (W<sub>KCC</sub> = 0.67, p = 0.003, <italic>n</italic> = 11). Due to the small sample size for <italic>A. lumbricoides</italic>-positive samples in the assessment of FECs over time, no comparison was made.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>An accurate diagnosis of helminth infection is of pivotal importance for adequate individual patient management, epidemiological surveys, intervention studies, and the monitoring of helminth control programs <xref ref-type="bibr" rid="pntd.0001969-Bergquist1">[4]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Johansen1">[32]</xref>. Despite its relevance for diagnosis, the spatial distribution of helminth eggs in entire stool samples, and the effect of storage, homogenization and time delays of FECs have been assessed only rudimentarily. Here, we present an in-depth analysis of a “piece of shit”, detailing the spatial distribution of <italic>S. mansoni</italic> and soil-transmitted helminth eggs within whole stool samples, and determined the effect of different stool storage approaches, homogenization and time delays from stool production to laboratory processing on helminth egg detection.</p>
+      <p>The distribution of <italic>S. mansoni</italic> eggs without any clear pattern in whole stool speciments observed in our study corroborates with findings reported more than 40 years ago <xref ref-type="bibr" rid="pntd.0001969-Martin1">[21]</xref>. Our results, however, are in conflict with another study that reported a clear trend with <italic>S. japonicum</italic> eggs being predominantly located in the beginning and the surface of the stool <xref ref-type="bibr" rid="pntd.0001969-Yu1">[16]</xref>. These contradictions might either be due to a “real” difference between the egg distribution patterns of <italic>S. mansoni</italic> and <italic>S. japonicum</italic>, or due to the very low sample size (n = 5) in the study of Yu and colleagues <xref ref-type="bibr" rid="pntd.0001969-Yu1">[16]</xref>. The authors speculated that differences in the spatial egg distribution of the two schistosome species might be due to the different location of the adult worms harboring in the mesenteric veins <xref ref-type="bibr" rid="pntd.0001969-Yu1">[16]</xref>.</p>
+      <p>The predominance of observing hookworm eggs in the front of stool specimens revealed in our study cannot be generalized since, by chance, 10 among 14 front pieces of hookworm-positive stool samples were examined at the first time-point, and 11 of the back pieces either at time-points 3 or 4. The decay of hookworm eggs as a function of time delays between stool production and processing revealed in our as well as previous studies <xref ref-type="bibr" rid="pntd.0001969-Dacombe1">[22]</xref> is the likely explanation of this observation. Hence, additional research is warranted to shed new light on the distribution of hookworm eggs along the main axis of entire stool specimens. Moreover, our finding that <italic>T. trichiura</italic> eggs are mainly located in the end pieces of stool is hampered due to the low size of positive samples. However, if future studies reveal or confirm that hookworm and <italic>T. trichiura</italic> eggs are mainly located in the front or end piece of the stool, this will have important implications on stool sampling procedures that should be taken into consideration for helminth diagnosis.</p>
+      <p>Our observation of no difference in egg location between the center and the surface of stool samples for any of the helminth species encountered in the current study area is in line with previous studies <xref ref-type="bibr" rid="pntd.0001969-Woodstock1">[18]</xref>, <xref ref-type="bibr" rid="pntd.0001969-Ratard1">[19]</xref>. However, although sample sizes for soil-transmitted helminth-positive stool samples in the present study are larger than in previous investigations, they remain small, particularly for <italic>A. lumbricoides</italic> and <italic>T. trichiura</italic>, and hence, results have to be interpreted with care. Unless future studies will show distinctive patterns of helminth eggs within stool samples, we feel that the current practice of scoping small pieces of stool anywhere from a stool specimen remains a valid method.</p>
+      <p>Homogenization of stool samples reduced intra-sample variance of <italic>S. mansoni</italic> FECs. Hence, we recommend that stool sample be homogenized prior to diagnosis to enhance the accuracy of S. mansoni egg detection. This recommendation should be considered for standard operating procedures for <italic>S. mansoni</italic> diagnosis.</p>
+      <p>Our study also confirms that, while time and storing method has no effect on FECs of <italic>S. mansoni</italic> and <italic>T. trichiura</italic>, hookworm FECs significantly decline with increasing time delays between stool production and laboratory processing of fecal material. Additionally we show – to our knowledge for the first time – that storing feces on ice or covered with a wet tissue can delay hookworm egg disintegration over time, which has important ramification for field procedures in any project involving hookworm diagnosis. Notably, hookworm eggs have been reported to be sensitive to dry conditions <xref ref-type="bibr" rid="pntd.0001969-Diesfeld1">[33]</xref>. During our fieldwork we indeed observed that stool samples dried out quickly, especially on the surface. Hence, we recommend keeping stool samples humid pending laboratory work-up, best using a moist tissue, and regard this as a simple, cheap, and practical procedure to avoid hookworm egg disintegration. In other studies, refrigerating stool has been applied for the same purpose <xref ref-type="bibr" rid="pntd.0001969-Dacombe1">[22]</xref> and also in our study storing of fecal samples on ice was an effective strategy to delay the hookworm egg disintegration process. However, if concurrent diagnosis of <italic>Strongyloides stercoralis</italic> is envisaged, for example using the Baermann or Koga agar plate method <xref ref-type="bibr" rid="pntd.0001969-Glinz1">[24]</xref>, , freezing or storing samples on ice is not recommendable, since <italic>S. stercoralis</italic> larvae present in stool are temperature-sensitive <xref ref-type="bibr" rid="pntd.0001969-Harvey1">[38]</xref>.</p>
+      <p>Our study is an important contribution to the broad field of schistosomiasis and soil-transmitted helminthiasis diagnosis. In particular, our findings that keeping stool samples on ice or covered with a moist tissue delays hookworm egg disintegration and the observation of a decreased variance through stool homogenization on the FECs of <italic>S. mansoni</italic> without impacting on soil-transmitted helminth eggs are worth highlighting. Introducing these simple measures will help to achieve more accurate estimations of FECs and infection intensities in helminth diagnosis. Together with the random spatial distribution of <italic>S. mansoni</italic>, hookworm, and <italic>T. trichiura</italic> eggs within entire stool samples, these observations should be taken into consideration for stool transport, storage, and examination in laboratories of travel clinics in the EU and the US as well as for hospitals, and epidemiological studies, clinical trials, and helminth control programs in endemic settings.</p>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pntd.0001969.s001" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pntd.0001969.s001" position="float" xlink:type="simple">
+        <label>Alternative Language Abstract S1</label>
+        <caption>
+          <p>
+            <bold>Translation of the Abstract into German by Stefanie J. Krauth.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pntd.0001969.s002" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pntd.0001969.s002" position="float" xlink:type="simple">
+        <label>Alternative Language Abstract S2</label>
+        <caption>
+          <p>
+            <bold>Translation of the Abstract into French by Jean T. Coulibaly.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank all study participants of Azaguié for their cooperation and provision of stool samples. We are grateful to the Centre Suisse de Recherches Scientifiques en Côte d'Ivoire and to the local authorities for their support and we thank Dr. Yves Ake Koutouan N'Gbesso, physician of the urban health center of Azaguié, for his great enthusiasm and commitment to this study. This manuscript benefited from a series of useful comments put forth by three anonymous referees.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pntd.0001969-Hotez1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Molyneux</surname><given-names>DH</given-names></name>, <name name-style="western"><surname>Fenwick</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ottesen</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Ehrlich Sachs</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Incorporating a rapid-impact package for neglected tropical diseases with programs for HIV/AIDS, tuberculosis, and malaria</article-title>. <source>PLoS Med</source> <volume>3</volume>: <fpage>e102</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Hotez2">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Brindley</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Bethony</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>King</surname><given-names>CH</given-names></name>, <name name-style="western"><surname>Pearce</surname><given-names>EJ</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Helminth infections: the great neglected tropical diseases</article-title>. <source>J Clin Invest</source> <volume>118</volume>: <fpage>1311</fpage>–<lpage>1321</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Utzinger1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Utzinger</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Raso</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Brooker</surname><given-names>S</given-names></name>, <name name-style="western"><surname>de Savigny</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Tanner</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Schistosomiasis and neglected tropical diseases: towards integrated and sustainable control and a word of caution</article-title>. <source>Parasitology</source> <volume>136</volume>: <fpage>1859</fpage>–<lpage>1874</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Bergquist1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bergquist</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Johansen</surname><given-names>MV</given-names></name>, <name name-style="western"><surname>Utzinger</surname><given-names>J</given-names></name> (<year>2009</year>) <article-title>Diagnostic dilemmas in helminthology: what tools to use and when?</article-title> <source>Trends Parasitol</source> <volume>25</volume>: <fpage>151</fpage>–<lpage>156</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Knopp1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Knopp</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Speich</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Hattendorf</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Rinaldi</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Mohammed</surname><given-names>KA</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Diagnostic accuracy of Kato-Katz and FLOTAC for assessing anthelmintic drug efficacy</article-title>. <source>PLoS Negl Trop Dis</source> <volume>5</volume>: <fpage>e1036</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-WHO1">
+        <label>6</label>
+        <mixed-citation publication-type="other" xlink:type="simple">WHO (2006) Preventive chemotherapy in human helminthiasis: coordinated use of anthelmintic drugs in control interventions: a manual for health professionals and programme managers. Geneva: World Health Organization, 74 p.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Speich1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Speich</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Knopp</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Mohammed</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>Khamis</surname><given-names>IS</given-names></name>, <name name-style="western"><surname>Rinaldi</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Comparative cost assessment of the Kato-Katz and FLOTAC techniques for soil-transmitted helminth diagnosis in epidemiological surveys</article-title>. <source>Parasit Vectors</source> <volume>3</volume>: <fpage>71</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Utzinger2">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Utzinger</surname><given-names>J</given-names></name>, <name name-style="western"><surname>N'Goran</surname><given-names>EK</given-names></name>, <name name-style="western"><surname>Caffrey</surname><given-names>CR</given-names></name>, <name name-style="western"><surname>Keiser</surname><given-names>J</given-names></name> (<year>2011</year>) <article-title>From innovation to application: social-ecological context, diagnostics, drugs and integrated control of schistosomiasis</article-title>. <source>Acta Trop</source> <volume>120</volume><supplement>(Suppl 1)</supplement>: <fpage>S121</fpage>–<lpage>137</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Booth1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Booth</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Vounatsou</surname><given-names>P</given-names></name>, <name name-style="western"><surname>N'Goran</surname><given-names>EK</given-names></name>, <name name-style="western"><surname>Tanner</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Utzinger</surname><given-names>J</given-names></name> (<year>2003</year>) <article-title>The influence of sampling effort and the performance of the Kato-Katz technique in diagnosing <italic>Schistosoma mansoni</italic> and hookworm co-infections in rural Côte d'Ivoire</article-title>. <source>Parasitology</source> <volume>127</volume>: <fpage>525</fpage>–<lpage>531</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Berhe1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Berhe</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Medhin</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Erko</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Gedamu</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Variations in helminth faecal egg counts in Kato-Katz thick smears and their implications in assessing infection status with <italic>Schistosoma mansoni</italic>:</article-title>. <source>Acta Trop</source> <volume>92</volume>: <fpage>205</fpage>–<lpage>212</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Utzinger3">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Utzinger</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Rinaldi</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Lohourignon</surname><given-names>LK</given-names></name>, <name name-style="western"><surname>Rohner</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Zimmermann</surname><given-names>MB</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>FLOTAC: a new sensitive technique for the diagnosis of hookworm infections in humans</article-title>. <source>Trans R Soc Trop Med Hyg</source> <volume>102</volume>: <fpage>84</fpage>–<lpage>90</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Knopp2">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Knopp</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Rinaldi</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Khamis</surname><given-names>IS</given-names></name>, <name name-style="western"><surname>Stothard</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Rollinson</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>A single FLOTAC is more sensitive than triplicate Kato-Katz for the diagnosis of low-intensity soil-transmitted helminth infections</article-title>. <source>Trans R Soc Trop Med Hyg</source> <volume>103</volume>: <fpage>347</fpage>–<lpage>354</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Hall1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hall</surname><given-names>A</given-names></name> (<year>1981</year>) <article-title>Quantitative variability of nematode egg counts in faeces: a study among rural Kenyans</article-title>. <source>Trans R Soc Trop Med Hyg</source> <volume>75</volume>: <fpage>682</fpage>–<lpage>687</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Knopp3">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Knopp</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Glinz</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Rinaldi</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Mohammed</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>N'Goran</surname><given-names>EK</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>FLOTAC: a promising technique for detecting helminth eggs in human faeces</article-title>. <source>Trans R Soc Trop Med Hyg</source> <volume>103</volume>: <fpage>1190</fpage>–<lpage>1194</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Tarafder1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tarafder</surname><given-names>MR</given-names></name>, <name name-style="western"><surname>Carabin</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Joseph</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Balolong</surname><given-names>E</given-names><suffix>Jr</suffix></name>, <name name-style="western"><surname>Olveda</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Estimating the sensitivity and specificity of Kato-Katz stool examination technique for detection of hookworms, <italic>Ascaris lumbricoides</italic> and <italic>Trichuris trichiura</italic> infections in humans in the absence of a gold standard</article-title>. <source>Int J Parasitol</source> <volume>40</volume>: <fpage>399</fpage>–<lpage>404</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Yu1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yu</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>de Vlas</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Yuan</surname><given-names>HC</given-names></name>, <name name-style="western"><surname>Gryseels</surname><given-names>B</given-names></name> (<year>1998</year>) <article-title>Variations in fecal <italic>Schistosoma japonicum</italic> egg counts</article-title>. <source>Am J Trop Med Hyg</source> <volume>59</volume>: <fpage>370</fpage>–<lpage>375</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Ye1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ye</surname><given-names>XP</given-names></name>, <name name-style="western"><surname>Donnelly</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Anderson</surname><given-names>RM</given-names></name>, <name name-style="western"><surname>Fu</surname><given-names>YL</given-names></name>, <name name-style="western"><surname>Agnew</surname><given-names>A</given-names></name> (<year>1998</year>) <article-title>The distribution of <italic>Schistosoma japonicum</italic> eggs in faeces and the effect of stirring faecal specimens</article-title>. <source>Ann Trop Med Parasitol</source> <volume>92</volume>: <fpage>181</fpage>–<lpage>185</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Woodstock1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Woodstock</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Cook</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Peters</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Warren</surname><given-names>KS</given-names></name> (<year>1971</year>) <article-title>Random distribution of schistosome eggs in the feces of patients with schistosomiasis mansoni</article-title>. <source>J Infect Dis</source> <volume>124</volume>: <fpage>613</fpage>–<lpage>614</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Ratard1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ratard</surname><given-names>RC</given-names></name>, <name name-style="western"><surname>Kouemeni</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Ekani Bessala</surname><given-names>MM</given-names></name>, <name name-style="western"><surname>Ndamkou</surname><given-names>NC</given-names></name> (<year>1990</year>) <article-title>Distribution and preservation of <italic>Schistosoma mansoni</italic> eggs in stools</article-title>. <source>J Trop Med Hyg</source> <volume>93</volume>: <fpage>413</fpage>–<lpage>416</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Ye2">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ye</surname><given-names>XP</given-names></name>, <name name-style="western"><surname>Donnelly</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Fu</surname><given-names>YL</given-names></name>, <name name-style="western"><surname>Wu</surname><given-names>ZX</given-names></name> (<year>1997</year>) <article-title>The non-randomness of the distribution of <italic>Trichuris trichiura</italic> and <italic>Ascaris lumbricoides</italic> eggs in faeces and the effect of stirring faecal specimens</article-title>. <source>Trop Med Int Health</source> <volume>2</volume>: <fpage>261</fpage>–<lpage>264</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Martin1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Martin</surname><given-names>LK</given-names></name>, <name name-style="western"><surname>Beaver</surname><given-names>PC</given-names></name> (<year>1968</year>) <article-title>Evaluation of Kato thick-smear technique for quantitative diagnosis of helminth infections</article-title>. <source>Am J Trop Med Hyg</source> <volume>17</volume>: <fpage>382</fpage>–<lpage>391</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Dacombe1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dacombe</surname><given-names>RJ</given-names></name>, <name name-style="western"><surname>Crampin</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Floyd</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Randall</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ndhlovu</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Time delays between patient and laboratory selectively affect accuracy of helminth diagnosis</article-title>. <source>Trans R Soc Trop Med Hyg</source> <volume>101</volume>: <fpage>140</fpage>–<lpage>145</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Cringoli1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cringoli</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Rinaldi</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Maurelli</surname><given-names>MP</given-names></name>, <name name-style="western"><surname>Utzinger</surname><given-names>J</given-names></name> (<year>2010</year>) <article-title>FLOTAC: new multivalent techniques for qualitative and quantitative copromicroscopic diagnosis of parasites in animals and humans</article-title>. <source>Nat Protoc</source> <volume>5</volume>: <fpage>503</fpage>–<lpage>515</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Glinz1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Glinz</surname><given-names>D</given-names></name>, <name name-style="western"><surname>N'Guessan</surname><given-names>NA</given-names></name>, <name name-style="western"><surname>Utzinger</surname><given-names>J</given-names></name>, <name name-style="western"><surname>N'Goran</surname><given-names>EK</given-names></name> (<year>2010</year>) <article-title>High prevalence of <italic>Strongyloides stercoralis</italic> among school children in rural Côte d'Ivoire</article-title>. <source>J Parasitol</source> <volume>96</volume>: <fpage>431</fpage>–<lpage>433</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Glinz2">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Glinz</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Silué</surname><given-names>KD</given-names></name>, <name name-style="western"><surname>Knopp</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Lohourignon</surname><given-names>LK</given-names></name>, <name name-style="western"><surname>Yao</surname><given-names>KP</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Comparing diagnostic accuracy of Kato-Katz, Koga agar plate, ether-concentration, and FLOTAC for <italic>Schistosoma mansoni</italic> and soil-transmitted helminths</article-title>. <source>PLoS Negl Trop Dis</source> <volume>4</volume>: <fpage>e754</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Coulibaly1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Coulibaly</surname><given-names>JT</given-names></name>, <name name-style="western"><surname>Knopp</surname><given-names>S</given-names></name>, <name name-style="western"><surname>N'Guessan</surname><given-names>NA</given-names></name>, <name name-style="western"><surname>Silué</surname><given-names>KD</given-names></name>, <name name-style="western"><surname>Fürst</surname><given-names>T</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Accuracy of urine circulating cathodic antigen (CCA) test for <italic>Schistosoma mansoni</italic> diagnosis in different settings of Côte d'Ivoire</article-title>. <source>PLoS Negl Trop Dis</source> <volume>5</volume>: <fpage>e1384</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Lewis1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lewis</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Heaton</surname><given-names>KW</given-names></name> (<year>1997</year>) <article-title>Stool form scale as a useful guide to intestinal transit time</article-title>. <source>Scand J Gastroenterol</source> <volume>32</volume>: <fpage>920</fpage>–<lpage>924</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Katz1">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Katz</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Chaves</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Pellegrino</surname><given-names>J</given-names></name> (<year>1972</year>) <article-title>A simple device for quantitative stool thick-smear technique in schistosomiasis mansoni</article-title>. <source>Rev Inst Med Trop São Paulo</source> <volume>14</volume>: <fpage>397</fpage>–<lpage>400</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-WHO2">
+        <label>29</label>
+        <mixed-citation publication-type="other" xlink:type="simple">WHO (1994) Bench aids for the diagnosis of intestinal nematodes. Geneva: World Health Organization, 20 p.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Yap1">
+        <label>30</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yap</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Fürst</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Müller</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Kriemler</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Utzinger</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Determining soil-transmitted helminth infection status and physical fitness of school-aged children</article-title>. <source>J Vis Exp</source> <volume>66</volume>: <fpage>e3966</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-WHO3">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">WHO</collab> (<year>2002</year>) <article-title>Prevention and control of schistosomiasis and soiltransmitted helminthiasis: report of a WHO expert committee</article-title>. <source>WHO Tech Rep Ser</source> <volume>912</volume>: <fpage>1</fpage>–<lpage>57</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Johansen1">
+        <label>32</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Johansen</surname><given-names>MV</given-names></name>, <name name-style="western"><surname>Sithithaworn</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Bergquist</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Utzinger</surname><given-names>J</given-names></name> (<year>2010</year>) <article-title>Towards improved diagnosis of zoonotic trematode infections in Southeast Asia</article-title>. <source>Adv Parasitol</source> <volume>73</volume>: <fpage>171</fpage>–<lpage>195</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Diesfeld1">
+        <label>33</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Diesfeld</surname><given-names>HJ</given-names></name> (<year>1970</year>) <article-title>Correlation between hookworm findings and climate as indicated by the temperature-humidity relation in Kenya</article-title>. <source>Z Tropenmed Parasit</source> <volume>21</volume>: <fpage>84</fpage>–<lpage>92</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Steinmann1">
+        <label>34</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Steinmann</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Zhou</surname><given-names>XN</given-names></name>, <name name-style="western"><surname>Du</surname><given-names>ZW</given-names></name>, <name name-style="western"><surname>Jiang</surname><given-names>JY</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>LB</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Occurrence of <italic>Strongyloides stercoralis</italic> in Yunnan province, China, and comparison of diagnostic methods</article-title>. <source>PLoS Negl Trop Dis</source> <volume>1</volume>: <fpage>e75</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Knopp4">
+        <label>35</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Knopp</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Mgeni</surname><given-names>AF</given-names></name>, <name name-style="western"><surname>Khamis</surname><given-names>IS</given-names></name>, <name name-style="western"><surname>Steinmann</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Stothard</surname><given-names>JR</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Diagnosis of soil-transmitted helminths in the era of preventive chemotherapy: effect of multiple stool sampling and use of different diagnostic techniques</article-title>. <source>PLoS Negl Trop Dis</source> <volume>2</volume>: <fpage>e331</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Stothard1">
+        <label>36</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stothard</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Pleasant</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Oguttu</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Adriko</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Galimaka</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title><italic>Strongyloides stercoralis</italic>: a field-based survey of mothers and their preschool children using ELISA, Baermann and Koga plate methods reveals low endemicity in western Uganda</article-title>. <source>J Helminthol</source> <volume>82</volume>: <fpage>263</fpage>–<lpage>269</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Becker1">
+        <label>37</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Becker</surname><given-names>SL</given-names></name>, <name name-style="western"><surname>Sieto</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Silué</surname><given-names>KD</given-names></name>, <name name-style="western"><surname>Adjossan</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Koné</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Diagnosis, clinical features, and self-reported morbidity of Strongyloides stercoralis and hookworm infection in a co-endemic setting</article-title>. <source>PLoS Negl Trop Dis</source> <volume>5</volume>: <fpage>e1292</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pntd.0001969-Harvey1">
+        <label>38</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Harvey</surname><given-names>SC</given-names></name>, <name name-style="western"><surname>Gemmill</surname><given-names>AW</given-names></name>, <name name-style="western"><surname>Read</surname><given-names>AF</given-names></name>, <name name-style="western"><surname>Viney</surname><given-names>ME</given-names></name> (<year>2000</year>) <article-title>The control of morph development in the parasitic nematode <italic>Strongyloides ratti</italic></article-title>. <source>Proc Biol Sci</source> <volume>267</volume>: <fpage>2057</fpage>–<lpage>2063</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

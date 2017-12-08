@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="3.0" xml:lang="en" article-type="research-article">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-14-18404</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0117014</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Model Selection Emphasises the Importance of Non-Chromosomal Information in Genetic Studies</article-title>
+<alt-title alt-title-type="running-head">Non-Chromosomal Information in Genetic Studies</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Rawi</surname> <given-names>Reda</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>El Anbari</surname> <given-names>Mohamed</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Bensmail</surname> <given-names>Halima</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<label>1</label>
+<addr-line>Computational Science and Engineering Center, Qatar Computing Research Institute, Doha, Qatar</addr-line>
+</aff>
+<aff id="aff002">
+<label>2</label>
+<addr-line>Division of Biomedical Informatics, Sidra Medical and Research Center, Doha, Qatar</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Khudyakov</surname> <given-names>Yury E</given-names></name>
+<role>Academic Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>Centers for Disease Control and Prevention, UNITED STATES</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: HB. Performed the experiments: RR. Analyzed the data: RR HB. Contributed reagents/materials/analysis tools: RR MEA HB. Wrote the paper: RR HB. Provided additional advice for statistical analysis: MEA.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">hbensmail@qf.org.qa</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<year>2015</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>27</day>
+<month>1</month>
+<year>2015</year>
+</pub-date>
+<volume>10</volume>
+<issue>1</issue>
+<elocation-id>e0117014</elocation-id>
+<history>
+<date date-type="received">
+<day>29</day>
+<month>4</month>
+<year>2014</year>
+</date>
+<date date-type="accepted">
+<day>17</day>
+<month>12</month>
+<year>2014</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2015</copyright-year>
+<copyright-holder>Rawi et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0117014" xlink:type="simple"/>
+<abstract>
+<p>Ever since the case of the missing heritability was highlighted some years ago, scientists have been investigating various possible explanations for the issue. However, none of these explanations include non-chromosomal genetic information. Here we describe explicitly how chromosomal and non-chromosomal modifiers collectively influence the heritability of a trait, in this case, the growth rate of yeast. Our results show that the non-chromosomal contribution can be large, adding another dimension to the estimation of heritability. We also discovered, combining the strength of LASSO with model selection, that the interaction of chromosomal and non-chromosomal information is essential in describing phenotypes.</p>
+</abstract>
+<funding-group>
+<funding-statement>The authors have no support or funding to report.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="1"/>
+<table-count count="3"/>
+<page-count count="10"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability" xlink:type="simple">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Genome-wide association studies (GWAS) have contributed to the identification of many human loci associated with a wide range of complex traits, such as height, intelligence or diseases such as obesity, type 2 diabetes and age-related macular degeneration. However, GWAS do not explain the whole story of the observed heritability of these traits [<xref ref-type="bibr" rid="pone.0117014.ref001">1</xref>, <xref ref-type="bibr" rid="pone.0117014.ref002">2</xref>]. Explanations for this missing heritability include—amongst others—variants with effects too small to be identified with statistical significance [<xref ref-type="bibr" rid="pone.0117014.ref003">3</xref>], variant interactions that cannot be detected with current estimates [<xref ref-type="bibr" rid="pone.0117014.ref004">4</xref>], rare variants not identified by GWAS [<xref ref-type="bibr" rid="pone.0117014.ref003">3</xref>], and epigenetic effects [<xref ref-type="bibr" rid="pone.0117014.ref005">5</xref>–<xref ref-type="bibr" rid="pone.0117014.ref007">7</xref>].</p>
+<p>Interestingly, non-chromosomal genetic information has not yet been taken into account when estimating heritability, although there is evidence for effects on the phenotype arising from cytoplasmic elements in many different organisms. For instance, Cadwell et al. [<xref ref-type="bibr" rid="pone.0117014.ref008">8</xref>] showed in their work on a mouse model that the interaction between a specific virus infection and a mutation in Crohn’s disease susceptibility gene <italic>Atg16L1</italic> induces intestinal pathologies.</p>
+<p>Recently, our collaborators from MIT have designed an experiment using yeast where both sources of information, chromosomal and non-chromosomal were controlled in order to observe the phenotype of a single chromosomal polymorphism in the presence of different cytoplasmic elements [<xref ref-type="bibr" rid="pone.0117014.ref009">9</xref>]. They showed that the source of the mitochondrial genome, and the presence or absence of a dsRNA virus, both affect the phenotype of chromosomal variants [<xref ref-type="bibr" rid="pone.0117014.ref009">9</xref>].</p>
+<p>Unfortunately, their statistical analysis had some limitations. Firstly, they split the data into training and test sub-samples (1/10 of the data held-out for testing) in order to conduct ten-fold cross validation. This appears to be the wrong approach, given that the sample sizes (see supplementary <xref ref-type="supplementary-material" rid="pone.0117014.s001">S1 Table</xref>) for the different gene deletion experiments range from 9 to 20. Secondly, they computed the coefficient of determination (<italic>R</italic><sup>2</sup>), here used as metric for recovered heritability, for three different models that consider (i) only the chromosomal mutation, (ii) the effects of the chromosomal mutation and non-chromosomal information, and (iii) both the effect of the chromosomal mutation and non-chromosomal information as well as their interaction. They inferred—exclusively from the gain in <italic>R</italic><sup>2</sup>—that non-chromosomal information and interaction effects substantially contribute to the heritability. However, it is well known that <italic>R</italic><sup>2</sup> values may increase with increasing number of explanatory variables, and, hence, can not be exclusively applied to meaningfully compare models with different number of variables.</p>
+<p>In this study, we applied more sophisticated statistical means and models, such as the adjusted coefficient of determination (<inline-formula id="pone.0117014.e001"><mml:math id="M1" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula>), a different cross validation strategy and a combination of Least Absolute Shrinkage and Selection Operator (<xref ref-type="sec" rid="sec004f">LASSO</xref>) [<xref ref-type="bibr" rid="pone.0117014.ref010">10</xref>] with the Bayesian information criterion (<xref ref-type="sec" rid="sec004g">BIC</xref>) [<xref ref-type="bibr" rid="pone.0117014.ref011">11</xref>, <xref ref-type="bibr" rid="pone.0117014.ref012">12</xref>], as well as the recently introduced LASSO for hierarchical interactions [<xref ref-type="bibr" rid="pone.0117014.ref013">13</xref>], to detect the effects of non-chromosomal modifiers on the heritability of a trait. Our results confirm the importance of non-chromosomal information and its interaction with chromosomal mutations, when using both LASSO and BIC as well as LASSO for hierarchical interactions.</p>
+</sec>
+<sec id="sec002" sec-type="results">
+<title>Results</title>
+<p>Previous work studied two inherited non-chromosomal modifiers. First, the presence and absence of the endogenous dsRNA yeast “killer” virus that is transmitted by mitosis and meiosis [<xref ref-type="bibr" rid="pone.0117014.ref014">14</xref>, <xref ref-type="bibr" rid="pone.0117014.ref015">15</xref>], and second, the mitochondrial diversity. Strains were either constructed with ([kil-k]) or without ([kil-0]) the virus, that may spontaneously be lost and transition from [kil-k] to [kil-0]. Hence, its presence was constantly controlled by either a petri plate assay, or by detection of dsRNA on a gel. Furthermore, experiments were designed using either S288c ([rho+]<sup>S288c</sup>) or Sigma mitochondria ([rho+]<sup>Sigma</sup>). The mitochondria differ strongly in their genomes, with about 2–3 SNPs per kilobase and ten times more insertions and deletions compared to the chromosomal genome. The studied model chromosomal modifiers were gene deletions in the yeast strains S288c and Sigma [<xref ref-type="bibr" rid="pone.0117014.ref016">16</xref>]. Previous studies already detected several mutations with lethal or slow growth phenotypes in one strain, but not in the other [<xref ref-type="bibr" rid="pone.0117014.ref016">16</xref>]. A detailed description of the experiments can be found in Edwards et al. [<xref ref-type="bibr" rid="pone.0117014.ref009">9</xref>]. A summary of the colony size measurements is provided in <xref ref-type="supplementary-material" rid="pone.0117014.s001">S1 Table</xref> (see supplementary).</p>
+<sec id="sec002a">
+<title>Non-chromosomal information explains increased heritability</title>
+<p>We analysed the effects of non-chromosomal modifiers on growth phenotypes of chromosomal variants using raw data from Edwards et al. [<xref ref-type="bibr" rid="pone.0117014.ref009">9</xref>], with <italic>c</italic><sub><italic>ij</italic></sub> as the colony size of controlled genotype i in replicate j. We applied a variance-stabilising Box-Cox transform on the <italic>c</italic><sub><italic>ij</italic></sub> values with exponent of 0.25 to obtain normalised values <italic>y</italic><sub><italic>ij</italic></sub>, as this parameter choice gave the least-correlated means and variances in the analysed sets (according to Edwards et al. [<xref ref-type="bibr" rid="pone.0117014.ref009">9</xref>]). Next, we split the data (for each genotype i separately) into equally sized training and test sub-samples and applied the following linear models, (i) <italic>Y</italic> = <italic>β</italic><sub>0</sub> + <italic>β</italic><sub>1</sub><italic>X</italic><sub>1</sub> + <italic>ϵ</italic> (<italic>simple</italic>), (ii) <italic>Y</italic> = <italic>β</italic><sub>0</sub> + <italic>β</italic><sub>1</sub><italic>X</italic><sub>1</sub> + <italic>β</italic><sub>2</sub><italic>X</italic><sub>2</sub> + <italic>ϵ</italic> (<italic>additive</italic>), and (iii) <italic>Y</italic> = <italic>β</italic><sub>0</sub> + <italic>β</italic><sub>1</sub><italic>X</italic><sub>1</sub> + <italic>β</italic><sub>2</sub><italic>X</italic><sub>2</sub> + <italic>β</italic><sub>3</sub><italic>X</italic><sub>1</sub><italic>X</italic><sub>2</sub> + <italic>ϵ</italic> (<italic>interaction</italic>), with <italic>Y</italic> = (<italic>y</italic><sub>1</sub>, …, <italic>y</italic><sub><italic>n</italic></sub>)<sup><italic>t</italic></sup> as the response vector, <italic>ɛ</italic> = (<italic>ɛ</italic><sub>1</sub>, …, <italic>ɛ</italic><sub><italic>n</italic></sub>)<sup><italic>t</italic></sup> ∼ <italic>N</italic>(0, <italic>σ</italic><sup>2</sup><italic>I</italic><sub><italic>n</italic></sub>) as the noise vector, <italic>X</italic><sub><italic>j</italic></sub> as the <italic>j</italic>th predictor for <italic>j</italic> = 1, …, <italic>p</italic>, and <italic>β</italic> = (<italic>β</italic><sub>1</sub>, …, <italic>β</italic><sub><italic>p</italic></sub>)<sup><italic>t</italic></sup> as the vector of parameters of interest to be estimated. Each <italic>β</italic><sub><italic>j</italic></sub>, <italic>j</italic> = 1, …, <italic>p</italic> represents the association between the variable <italic>X</italic><sub><italic>j</italic></sub> and the response <italic>Y</italic>.</p>
+<p>The <italic>simple</italic> model considered only the chromosomal mutation, whereas the <italic>additive</italic> and <italic>interaction</italic> model considered both chromosomal and non-chromosomal effects. The <italic>interaction</italic> model includes the interaction between chromosomal and non-chromosomal effects. We then calculated <inline-formula id="pone.0117014.e002"><mml:math id="M2" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> values (similar to Edwards et al. [<xref ref-type="bibr" rid="pone.0117014.ref009">9</xref>]), for the three different models. We applied <inline-formula id="pone.0117014.e003"><mml:math id="M3" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula>, a modification of <italic>R</italic><sup>2</sup>, because it is capable of handling the inflation of <italic>R</italic><sup>2</sup>, when comparing different models.</p>
+<p>In <xref ref-type="fig" rid="pone.0117014.g001">Fig. 1</xref> we illustrated the fractions of phenotypic variances (y-axis) for ten single gene deletions (x-axis) with the three different models. In order to ensure the stability of the <inline-formula id="pone.0117014.e004"><mml:math id="M4" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> values we repeated the procedure of splitting the data into training and test sub-samples and calculating the <inline-formula id="pone.0117014.e005"><mml:math id="M5" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi> <mml:mi>a</mml:mi> <mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> 1000 times. We then plotted the average <inline-formula id="pone.0117014.e006"><mml:math id="M6" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> as bar heights. The error bars show the standard deviation across the 1000 sampled test sets. Bars representing the <italic>simple</italic> model are illustrated in red, <italic>additive</italic> in orange and the <italic>interaction</italic> model is shown in yellow. Aside from the control <italic>MCM22</italic> and the gene deletion <italic>PHO88(non-killer)</italic> experiment, it is clear that all experiments had a noticeably increase in model accuracy when including non-chromosomal and interaction effects.</p>
+<fig id="pone.0117014.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0117014.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Non-chromosomal information enhances the fraction of phenotypic variance explained.</title>
+<p>Three linear models with different complexity are applied to measure the fraction of phenotypic variance. The first model (<italic>simple</italic>) includes only the gene deletion status (red), the second model (<italic>additive</italic>) considers the gene deletion status and non-chromosomal elements (orange), and finally the third model (<italic>interaction</italic>) includes both chromosomal and non-chromosomal elements as well as their interaction (yellow). The fraction of phenotypic variance is thereby approximated by the average coefficient of determination (<inline-formula id="pone.0117014.e007"><mml:math id="M7" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula>) of 1000 randomly sampled sub-sets. Aside from the control <italic>MCM22</italic> and the gene deletion <italic>PHO88(non-killer)</italic> experiment, model accuracy increases considerably when non-chromosomal information is included and much more when the interaction is taken into account.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0117014.g001"/>
+</fig>
+<p>Additional to the <inline-formula id="pone.0117014.e008"><mml:math id="M8" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula>, we computed, for each of the three linear models, the mean squared error (<xref ref-type="sec" rid="sec004e">MSE</xref>) (see <xref ref-type="sec" rid="sec004">Material and Methods</xref>) to compare their performances. We repeated the procedure, as for the <inline-formula id="pone.0117014.e009"><mml:math id="M9" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula>, 1000 times and considered the model with the lowest MSE as the best for the given test sub-samples. In <xref ref-type="table" rid="pone.0117014.t001">Table 1</xref> we show, for each gene deletion experiment, the frequency of the chosen linear models according to their MSEs. Again we observed that, aside from the control <italic>MCM22</italic> and the gene deletion experiment <italic>PHO88(non-killer)</italic>, the <italic>interaction</italic> model is chosen in most cases, which emphasises the importance of the non-chromosomal information and its interaction with chromosomal mutations.</p>
+<table-wrap id="pone.0117014.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0117014.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Frequency of selected linear models according to their MSE within 1000 modelling repeats.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0117014.t001g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0117014.t001"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"><bold>Gene deletion</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold><italic>simple</italic></bold></th>
+<th align="left" rowspan="1" colspan="1"><bold><italic>additive</italic></bold></th>
+<th align="left" rowspan="1" colspan="1"><bold><italic>interaction</italic></bold></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>MCM22</italic></td>
+<td align="left" rowspan="1" colspan="1">908</td>
+<td align="left" rowspan="1" colspan="1">81</td>
+<td align="left" rowspan="1" colspan="1">11</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PEP12</italic></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">1000</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PEP7</italic></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">1000</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PHO88</italic></td>
+<td align="left" rowspan="1" colspan="1">60</td>
+<td align="left" rowspan="1" colspan="1">121</td>
+<td align="left" rowspan="1" colspan="1">819</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>SKI8</italic></td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">13</td>
+<td align="left" rowspan="1" colspan="1">984</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>VPS16</italic></td>
+<td align="left" rowspan="1" colspan="1">32</td>
+<td align="left" rowspan="1" colspan="1">34</td>
+<td align="left" rowspan="1" colspan="1">934</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PHO88_MITO_KILL</italic></td>
+<td align="left" rowspan="1" colspan="1">35</td>
+<td align="left" rowspan="1" colspan="1">31</td>
+<td align="left" rowspan="1" colspan="1">934</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PHO88_MITO_NO-KILL</italic></td>
+<td align="left" rowspan="1" colspan="1">606</td>
+<td align="left" rowspan="1" colspan="1">212</td>
+<td align="left" rowspan="1" colspan="1">182</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>SKI8_MITO_KILL</italic></td>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1">978</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>SKI8_MITO_NO-KILL</italic></td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1">981</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<p>Each row shows the frequency of selected (according to the MSE) linear models for a gene deletion experiment within 1000 modelling repeats. The interaction model is, aside from the control <italic>MCM22</italic> and the <italic>PHO88(non-killer)</italic> experiment, chosen in most cases as the best.</p>
+</table-wrap-foot>
+</table-wrap>
+<p>Despite these results indicating the importance of non-chromosomal information, we applied LASSO along BIC to verify our findings.</p>
+</sec>
+<sec id="sec002b">
+<title>LASSO and BIC</title>
+<p>We analysed the effects of the three predictors (<italic>X</italic><sub>1</sub>, <italic>X</italic><sub>2</sub> and <italic>X</italic><sub>1</sub><italic>X</italic><sub>2</sub>) using LASSO alongside BIC. We take advantage of the fact that model selection criteria extracts from a set of candidate models (in our case the <italic>simple</italic>, <italic>additive</italic> and <italic>interaction</italic> models) those that best describe a given dataset. One advantage of LASSO over simple linear models is that the regression and model selection can be applied in a single procedure.</p>
+<p>As in the previous approach, we performed 1000 LASSO regressions with BIC model selection for each gene deletion experiment. We then studied the complexity of the BIC-selected models that best describe the given data. In <xref ref-type="table" rid="pone.0117014.t002">Table 2</xref> we summarise the different model sizes selected during 1000 modelling repeats. If we disregard the gene deletions <italic>MCM22</italic> and <italic>PHO88(non-killer)</italic>, most experiments require two or three predictors to explain the data. An exception is the <italic>PHO88</italic> gene deletion experiment, where, in 618 out of 1000 modelling repeats, one predictor is sufficient. The predictor representing the interaction between chromosomal and non-chromosomal modifiers was preferentially chosen by BIC.</p>
+<table-wrap id="pone.0117014.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0117014.t002</object-id>
+<label>Table 2</label>
+<caption>
+<title>Complexity of BIC selected statistical models.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0117014.t002g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0117014.t002"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"><bold>Gene deletion</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Intercept</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>One Predictor</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Two Predictors</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Three Predictors</bold></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>MCM22</italic></td>
+<td align="left" rowspan="1" colspan="1">429</td>
+<td align="left" rowspan="1" colspan="1">544</td>
+<td align="left" rowspan="1" colspan="1">27</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PEP12</italic></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">451</td>
+<td align="left" rowspan="1" colspan="1">549</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PEP7</italic></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">11</td>
+<td align="left" rowspan="1" colspan="1">442</td>
+<td align="left" rowspan="1" colspan="1">547</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PHO88</italic></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">618</td>
+<td align="left" rowspan="1" colspan="1">155</td>
+<td align="left" rowspan="1" colspan="1">227</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>SKI8</italic></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">992</td>
+<td align="left" rowspan="1" colspan="1">8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>VPS16</italic></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">13</td>
+<td align="left" rowspan="1" colspan="1">576</td>
+<td align="left" rowspan="1" colspan="1">411</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PHO88(killer)</italic></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">983</td>
+<td align="left" rowspan="1" colspan="1">15</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PHO88(non-killer)</italic></td>
+<td align="left" rowspan="1" colspan="1">883</td>
+<td align="left" rowspan="1" colspan="1">106</td>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>SKI8(killer)</italic></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">891</td>
+<td align="left" rowspan="1" colspan="1">109</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>SKI8(non-killer)</italic></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="left" rowspan="1" colspan="1">961</td>
+<td align="left" rowspan="1" colspan="1">39</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<p>Model selection using BIC was applied in each of the 1000 modelling repeats for all gene deletion experiments. Except for the control <italic>MCM22</italic> and the <italic>PHO88(non-killer)</italic> experiment most cases require two or three predictors in order to describe the given data best. However, in the <italic>PHO88</italic> deletion case only one predictor is necessary in 618 of 1000 modelling cases.</p>
+</table-wrap-foot>
+</table-wrap>
+<p>Furthermore, we analysed the frequency of predictors representing chromosomal (<italic>X</italic><sub>1</sub>) and non-chromosomal effects (<italic>X</italic><sub>2</sub>) as well as their interaction (<italic>X</italic><sub>1</sub><italic>X</italic><sub>2</sub>) within the 1000 procedures (see <xref ref-type="table" rid="pone.0117014.t003">Table 3</xref>). Excluding the cases <italic>MCM22</italic> and <italic>PHO88(non-killer)</italic>, the predictors <italic>X</italic><sub>1</sub> and <italic>X</italic><sub>1</sub><italic>X</italic><sub>2</sub> are selected in most cases. Regarding the gene deletion <italic>PHO88</italic> experiment, the <italic>interaction</italic> term (<italic>X</italic><sub>1</sub><italic>X</italic><sub>2</sub>) is chosen more often as the other predictors.</p>
+<table-wrap id="pone.0117014.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0117014.t003</object-id>
+<label>Table 3</label>
+<caption>
+<title>Frequency of BIC selected predictors representing chromosomal (<italic>X</italic><sub>1</sub>) and non-chromosomal effects (<italic>X</italic><sub>2</sub>) as well as their interaction (<italic>X</italic><sub>1</sub><italic>X</italic><sub>2</sub>) within 1000 modelling repeats.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0117014.t003g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0117014.t003"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"><bold>Gene deletion</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold><italic>X</italic><sub>1</sub></bold></th>
+<th align="left" rowspan="1" colspan="1"><bold><italic>X</italic><sub>2</sub></bold></th>
+<th align="left" rowspan="1" colspan="1"><bold><italic>X</italic><sub>1</sub><italic>X</italic><sub>2</sub></bold></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>MCM22</italic></td>
+<td align="left" rowspan="1" colspan="1">518</td>
+<td align="left" rowspan="1" colspan="1">13</td>
+<td align="left" rowspan="1" colspan="1">67</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PEP12</italic></td>
+<td align="left" rowspan="1" colspan="1">991</td>
+<td align="left" rowspan="1" colspan="1">558</td>
+<td align="left" rowspan="1" colspan="1">1000</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PEP7</italic></td>
+<td align="left" rowspan="1" colspan="1">907</td>
+<td align="left" rowspan="1" colspan="1">629</td>
+<td align="left" rowspan="1" colspan="1">1000</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PHO88</italic></td>
+<td align="left" rowspan="1" colspan="1">379</td>
+<td align="left" rowspan="1" colspan="1">237</td>
+<td align="left" rowspan="1" colspan="1">993</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>SKI8</italic></td>
+<td align="left" rowspan="1" colspan="1">1000</td>
+<td align="left" rowspan="1" colspan="1">8</td>
+<td align="left" rowspan="1" colspan="1">1000</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>VPS16</italic></td>
+<td align="left" rowspan="1" colspan="1">997</td>
+<td align="left" rowspan="1" colspan="1">414</td>
+<td align="left" rowspan="1" colspan="1">987</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PHO88(killer)</italic></td>
+<td align="left" rowspan="1" colspan="1">1000</td>
+<td align="left" rowspan="1" colspan="1">5</td>
+<td align="left" rowspan="1" colspan="1">998</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>PHO88(non-killer)</italic></td>
+<td align="left" rowspan="1" colspan="1">89</td>
+<td align="left" rowspan="1" colspan="1">26</td>
+<td align="left" rowspan="1" colspan="1">14</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>SKI8(killer)</italic></td>
+<td align="left" rowspan="1" colspan="1">1000</td>
+<td align="left" rowspan="1" colspan="1">109</td>
+<td align="left" rowspan="1" colspan="1">1000</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>SKI8(non-killer)</italic></td>
+<td align="left" rowspan="1" colspan="1">1000</td>
+<td align="left" rowspan="1" colspan="1">39</td>
+<td align="left" rowspan="1" colspan="1">1000</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<p>Aside from the <italic>MCM22</italic> and <italic>PHO88(non-killer)</italic> gene deletion experiments, the predictors representing the chromosomal (<italic>X</italic><sub>1</sub>) as well as the interaction effect (<italic>X</italic><sub>1</sub><italic>X</italic><sub>2</sub>) are selected in almost all modelling processes. An exception is the <italic>PHO88</italic> deletion experiment where only the interaction predictor (<italic>X</italic><sub>1</sub><italic>X</italic><sub>2</sub>) is most frequently selected.</p>
+</table-wrap-foot>
+</table-wrap>
+<p>As for the previous method, these results highlighted the importance of the interaction between chromosomal and non-chromosomal modifiers. However, we discovered that LASSO selected the main or interaction effects arbitrarily (not only for gene deletion experiment <italic>PHO88</italic>), while it is a general good statistical practice to include interaction effects only if the main effects are also in the model. Therefore, we applied the recently introduced LASSO for hierarchical interaction [<xref ref-type="bibr" rid="pone.0117014.ref013">13</xref>].</p>
+</sec>
+<sec id="sec002c">
+<title>LASSO for hierarchical interactions</title>
+<p>In order to use LASSO for hierarchical interactions, we used the R software package <italic>hierNet</italic> [<xref ref-type="bibr" rid="pone.0117014.ref017">17</xref>, <xref ref-type="bibr" rid="pone.0117014.ref018">18</xref>] that fits interaction models with the restriction that the interaction between two variables is only included if both variables are included as main effects (strong hierarchy). The analysis procedure consisted of the following steps. First, we fitted several LASSO models with different values of the regularisation parameter <italic>λ</italic> (function <italic>hierNet.path</italic>) to the data. Second, we applied a cross validation (function <italic>hierNet.cv</italic>) and chose the model with the largest value of <italic>λ</italic> such that the error is within 1 standard error of the minimum. We repeated this procedure 1000 times and analysed the complexity of the resulting models as before.</p>
+<p>Interestingly, we identified that in most cases, aside from the experiments <italic>MCM22</italic> and <italic>PHO88(non-killer)</italic>, three predictors (<italic>X</italic><sub>1</sub>, <italic>X</italic><sub>2</sub> and <italic>X</italic><sub>1</sub><italic>X</italic><sub>2</sub>) are required to best describe the data (see <xref ref-type="supplementary-material" rid="pone.0117014.s002">S2 Table</xref>). An exception is the gene deletion experiment <italic>PHO88</italic>, where only around half of the 1000 modelling repeats required three predictors. This recently developed LASSO approach confirmed our earlier findings that non-chromosomal information and its interaction with chromosomal mutation is important.</p>
+</sec>
+</sec>
+<sec id="sec003" sec-type="conclusions">
+<title>Discussion</title>
+<p>Our analyses revealed that the phenotype of a chromosomal mutation may be affected by non-chromosomal elements such as mitochondria and viral state. We also showed that the introduction of non-chromosomal information and its interaction with chromosomal elements considerably enhanced the fraction of explained phenotypic variance of a trait, which is ensured by conserving the chromosomal contribution and the environment, whilst changing the non-chromosomal effects. Previous studies [<xref ref-type="bibr" rid="pone.0117014.ref019">19</xref>–<xref ref-type="bibr" rid="pone.0117014.ref023">23</xref>], that crossed strains carrying a dsRNA virus with virus-free strains as S288c [<xref ref-type="bibr" rid="pone.0117014.ref024">24</xref>], may have also been affected by non-chromosomal elements or their interaction with chromosomal ones, although we cannot prove it without repeating the experiments and analyses.</p>
+<p>However, it is well known that the coefficient of determination, here used as metric for recovered heritability, is prone to an increase when adding more variables to the statistical model. Hence, we could not exclude that the gain in <inline-formula id="pone.0117014.e010"><mml:math id="M10" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> arose only from gain in explained heritability.</p>
+<p>Due to this fact, we applied model selection criteria BIC to investigate the importance of both chromosomal and non-chromosomal information, as well as their interaction in describing colony size data. BIC highlighted that not only chromosomal mutations, but also the interactions between chromosomal and non-chromosomal elements, such as mitochondria and dsRNA virus are important. The mitochondrial background plays a crucial role in the <italic>PHO88</italic> gene deletion case, where cells grow faster with a Sigma mitochondria background ([kil-k] [rho+]<sup>Sigma</sup>) compared to cells with a S288c mitochondria ([kil-k] [rho+]<sup>S288c</sup>). With BIC model selection, the <italic>interaction</italic> term (<italic>X</italic><sub>1</sub><italic>X</italic><sub>2</sub>) is sufficient to describe the data for this gene deletion experiment in two out of three cases.</p>
+<p>Furthermore, we examined LASSO with hierarchical interactions. This approach, unlike ordinary LASSO, prevents the inclusion of interaction effects unless the main effects are also included. We identified for most cases, that not only non-chromosomal, but also its interaction with chromosomal effects, is essential to best describe the colony size data. For the <italic>PHO88</italic> gene deletion case, we identified that the interaction effect is chosen as important in about half the modelling repeats.</p>
+<p>In summary, all applied statistical methods point to the fact that non-chromosomal modifiers, and the interaction effects of chromosomal and non-chromosomal elements, account for a substantial fraction of phenotypic variance of growth rates in yeast.</p>
+</sec>
+<sec id="sec004" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="sec004a">
+<title>Data</title>
+<p>The raw data measurements and the analysis script (R code) can be found in the supplementary section.</p>
+</sec>
+<sec id="sec004b">
+<title>Regularisation models</title>
+<p>We consider the standard multiple linear regression model with <italic>n</italic> observations and <italic>p</italic> explanatory variables (predictors)
+<disp-formula id="pone.0117014.e011">
+<alternatives>
+<graphic id="pone.0117014.e011g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0117014.e011"/>
+<mml:math id="M11" display="block" overflow="scroll">
+<mml:mrow>
+<mml:mi>Y</mml:mi>
+<mml:mo>=</mml:mo>
+<mml:msub>
+<mml:mi>β</mml:mi>
+<mml:mn>0</mml:mn>
+</mml:msub>
+<mml:mo>+</mml:mo>
+<mml:msub>
+<mml:mi>β</mml:mi>
+<mml:mn>1</mml:mn>
+</mml:msub>
+<mml:msub>
+<mml:mi>X</mml:mi>
+<mml:mn>1</mml:mn>
+</mml:msub>
+<mml:mo>+</mml:mo>
+<mml:msub>
+<mml:mi>β</mml:mi>
+<mml:mn>2</mml:mn>
+</mml:msub>
+<mml:msub>
+<mml:mi>X</mml:mi>
+<mml:mn>2</mml:mn>
+</mml:msub>
+<mml:mo>+</mml:mo>
+<mml:mo>…</mml:mo>
+<mml:mo>+</mml:mo>
+<mml:msub>
+<mml:mi>β</mml:mi>
+<mml:mi>p</mml:mi>
+</mml:msub>
+<mml:msub>
+<mml:mi>X</mml:mi>
+<mml:mi>p</mml:mi>
+</mml:msub>
+<mml:mo>+</mml:mo>
+<mml:mi>ϵ</mml:mi>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+</alternatives>
+<label>(1)</label>
+</disp-formula>
+where <italic>Y</italic> = (<italic>y</italic><sub>1</sub>, …, <italic>y</italic><sub><italic>n</italic></sub>)<sup><italic>t</italic></sup> is the response vector, <italic>ɛ</italic> = (<italic>ɛ</italic><sub>1</sub>, …, <italic>ɛ</italic><sub><italic>n</italic></sub>)<sup><italic>t</italic></sup> ∼ <italic>N</italic>(0, <italic>σ</italic><sup>2</sup><italic>I</italic><sub><italic>n</italic></sub>) is the noise vector; for <italic>j</italic> = 1, …, <italic>p</italic>, <italic>X</italic><sub><italic>j</italic></sub> represents the <italic>j</italic>th predictor and <italic>β</italic> = (<italic>β</italic><sub>1</sub>, …, <italic>β</italic><sub><italic>p</italic></sub>)<sup><italic>t</italic></sup> is the vector of parameters of interest to be estimated; each <italic>β</italic><sub><italic>j</italic></sub>, <italic>j</italic> = 1, …, <italic>p</italic> represents the association between the variable <italic>X</italic><sub><italic>j</italic></sub> and the response <italic>Y</italic>. Given estimates <inline-formula id="pone.0117014.e012"><mml:math id="M12" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>β</mml:mi><mml:mo>^</mml:mo></mml:mover><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mn>…</mml:mn><mml:mo>,</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>β</mml:mi><mml:mo>^</mml:mo></mml:mover><mml:mi>p</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula>, we can make predictions using the formula
+<disp-formula id="pone.0117014.e013">
+<alternatives>
+<graphic id="pone.0117014.e013g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0117014.e013"/>
+<mml:math id="M13" display="block" overflow="scroll">
+<mml:mrow>
+<mml:mover accent="true">
+<mml:mi>Y</mml:mi>
+<mml:mo>^</mml:mo>
+</mml:mover>
+<mml:mo>=</mml:mo>
+<mml:msub>
+<mml:mover accent="true">
+<mml:mi>β</mml:mi>
+<mml:mo>^</mml:mo>
+</mml:mover>
+<mml:mn>0</mml:mn>
+</mml:msub>
+<mml:mo>+</mml:mo>
+<mml:msub>
+<mml:mover accent="true">
+<mml:mi>β</mml:mi>
+<mml:mo>^</mml:mo>
+</mml:mover>
+<mml:mn>1</mml:mn>
+</mml:msub>
+<mml:msub>
+<mml:mi>X</mml:mi>
+<mml:mn>1</mml:mn>
+</mml:msub>
+<mml:mo>+</mml:mo>
+<mml:msub>
+<mml:mover accent="true">
+<mml:mi>β</mml:mi>
+<mml:mo>^</mml:mo>
+</mml:mover>
+<mml:mn>2</mml:mn>
+</mml:msub>
+<mml:msub>
+<mml:mi>X</mml:mi>
+<mml:mn>2</mml:mn>
+</mml:msub>
+<mml:mo>+</mml:mo>
+<mml:mo>…</mml:mo>
+<mml:mo>+</mml:mo>
+<mml:msub>
+<mml:mover accent="true">
+<mml:mi>β</mml:mi>
+<mml:mo>^</mml:mo>
+</mml:mover>
+<mml:mi>p</mml:mi>
+</mml:msub>
+<mml:msub>
+<mml:mi>X</mml:mi>
+<mml:mi>p</mml:mi>
+</mml:msub>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+</alternatives>
+<label>(2)</label>
+</disp-formula></p>
+</sec>
+<sec id="sec004c">
+<title>Coefficient of determination (<italic>R</italic><sup>2</sup>)</title>
+<p>Define <inline-formula id="pone.0117014.e014"><mml:math id="M14" display="inline" overflow="scroll"><mml:mrow><mml:mtext>TSS</mml:mtext><mml:mo>=</mml:mo><mml:msubsup><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>n</mml:mi></mml:msubsup><mml:mrow><mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>y</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:mover accent="true"><mml:mi>y</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula> as the <italic>total sum of squares</italic> and the <italic>residual sum of squares</italic> (RSS) as <inline-formula id="pone.0117014.e015"><mml:math id="M15" display="inline" overflow="scroll"><mml:mrow><mml:mtext>RSS</mml:mtext><mml:mo>=</mml:mo><mml:msubsup><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>n</mml:mi></mml:msubsup><mml:mrow><mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>y</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>y</mml:mi><mml:mo>^</mml:mo></mml:mover><mml:mi>i</mml:mi></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mrow></mml:math></inline-formula>. The coefficient of determination <italic>R</italic><sup>2</sup> or the percentage of variance explained is defined as
+<disp-formula id="pone.0117014.e016">
+<alternatives>
+<graphic id="pone.0117014.e016g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0117014.e016"/>
+<mml:math id="M16" display="block" overflow="scroll">
+<mml:mrow>
+<mml:msup>
+<mml:mi>R</mml:mi>
+<mml:mn>2</mml:mn>
+</mml:msup>
+<mml:mo>=</mml:mo>
+<mml:mn>1</mml:mn>
+<mml:mo>-</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:msubsup>
+<mml:mo>∑</mml:mo>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+<mml:mo>=</mml:mo>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mi>n</mml:mi>
+</mml:msubsup>
+<mml:msup>
+<mml:mrow>
+<mml:mo>(</mml:mo>
+<mml:msub>
+<mml:mi>y</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:msub>
+<mml:mo>-</mml:mo>
+<mml:msub>
+<mml:mover accent="true">
+<mml:mi>y</mml:mi>
+<mml:mo>^</mml:mo>
+</mml:mover>
+<mml:mi>i</mml:mi>
+</mml:msub>
+<mml:mo>)</mml:mo>
+</mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:msubsup>
+<mml:mo>∑</mml:mo>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+<mml:mo>=</mml:mo>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mi>n</mml:mi>
+</mml:msubsup>
+<mml:msup>
+<mml:mrow>
+<mml:mo>(</mml:mo>
+<mml:msub>
+<mml:mi>y</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:msub>
+<mml:mo>-</mml:mo>
+<mml:mover accent="true">
+<mml:mi>y</mml:mi>
+<mml:mo>¯</mml:mo>
+</mml:mover>
+<mml:mo>)</mml:mo>
+</mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:msup>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>=</mml:mo>
+<mml:mn>1</mml:mn>
+<mml:mo>-</mml:mo>
+<mml:mfrac>
+<mml:mtext>RSS</mml:mtext>
+<mml:mtext>TSS</mml:mtext>
+</mml:mfrac>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+</alternatives>
+<label>(3)</label>
+</disp-formula></p>
+</sec>
+<sec id="sec004d">
+<title>Adjusted coefficient of determination (<inline-formula id="pone.0117014.e017"><mml:math id="M17" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula>)</title>
+<p>Since RSS always decreases as more variables are added to the model, <italic>R</italic><sup>2</sup> always increases as more variables are added. For a least squares model with <italic>q</italic> variables, the <inline-formula id="pone.0117014.e018"><mml:math id="M18" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> statistic is calculated as
+<disp-formula id="pone.0117014.e019">
+<alternatives>
+<graphic id="pone.0117014.e019g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0117014.e019"/>
+<mml:math id="M19" display="block" overflow="scroll">
+<mml:mrow>
+<mml:msubsup>
+<mml:mi>R</mml:mi>
+<mml:mi>a</mml:mi>
+<mml:mn>2</mml:mn>
+</mml:msubsup>
+<mml:mo>=</mml:mo>
+<mml:mn>1</mml:mn>
+<mml:mo>-</mml:mo>
+<mml:mfrac>
+<mml:mrow>
+<mml:mtext>RSS</mml:mtext>
+<mml:mo>/</mml:mo>
+<mml:mo>(</mml:mo>
+<mml:mi>n</mml:mi>
+<mml:mo>-</mml:mo>
+<mml:mi>q</mml:mi>
+<mml:mo>-</mml:mo>
+<mml:mn>1</mml:mn>
+<mml:mo>)</mml:mo>
+</mml:mrow>
+<mml:mrow>
+<mml:mtext>TSS</mml:mtext>
+<mml:mo>/</mml:mo>
+<mml:mo>(</mml:mo>
+<mml:mi>n</mml:mi>
+<mml:mo>-</mml:mo>
+<mml:mn>1</mml:mn>
+<mml:mo>)</mml:mo>
+</mml:mrow>
+</mml:mfrac>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+</alternatives>
+<label>(4)</label>
+</disp-formula></p>
+<p>Maximising <inline-formula id="pone.0117014.e020"><mml:math id="M20" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> is equivalent to minimising RSS/(<italic>n</italic> − <italic>q</italic> − 1). While RSS always decreases as the number of variables increases, RSS/(<italic>n</italic> − <italic>q</italic> − 1) may increase or decrease, due to the presence of <italic>q</italic> in the denominator. Hence, the <inline-formula id="pone.0117014.e021"><mml:math id="M21" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>R</mml:mi><mml:mi>a</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> statistic can be used for selecting among a set of models that contains different number of variables.</p>
+</sec>
+<sec id="sec004e">
+<title>MSE</title>
+<p>If we have enough observations, we can divide our data set into two parts: a training set of size <italic>n</italic><sub><italic>train</italic></sub>, on which the model is fitted, and a test set of size <italic>n</italic><sub><italic>test</italic></sub> for evaluation of the performance. A measure of prediction performance commonly used is the <italic>mean squared error</italic> (<xref ref-type="sec" rid="sec004e">MSE</xref>) on the test set, and it is defined as
+<disp-formula id="pone.0117014.e022">
+<alternatives>
+<graphic id="pone.0117014.e022g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0117014.e022"/>
+<mml:math id="M22" display="block" overflow="scroll">
+<mml:mrow>
+<mml:mtext>MSE</mml:mtext>
+<mml:mo>=</mml:mo>
+<mml:mfrac>
+<mml:mn>1</mml:mn>
+<mml:msub>
+<mml:mi>n</mml:mi>
+<mml:mrow>
+<mml:mi>t</mml:mi>
+<mml:mi>e</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>t</mml:mi>
+</mml:mrow>
+</mml:msub>
+</mml:mfrac>
+<mml:munderover>
+<mml:mo>∑</mml:mo>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+<mml:mo>=</mml:mo>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:msub>
+<mml:mi>n</mml:mi>
+<mml:mrow>
+<mml:mi>t</mml:mi>
+<mml:mi>e</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>t</mml:mi>
+</mml:mrow>
+</mml:msub>
+</mml:munderover>
+<mml:msup>
+<mml:mrow>
+<mml:mo>(</mml:mo>
+<mml:msub>
+<mml:mi>y</mml:mi>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+<mml:mo>,</mml:mo>
+<mml:mi>t</mml:mi>
+<mml:mi>e</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>t</mml:mi>
+</mml:mrow>
+</mml:msub>
+<mml:mo>-</mml:mo>
+<mml:msub>
+<mml:mover accent="true">
+<mml:mi>y</mml:mi>
+<mml:mo>^</mml:mo>
+</mml:mover>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+<mml:mo>,</mml:mo>
+<mml:mi>t</mml:mi>
+<mml:mi>e</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mi>t</mml:mi>
+</mml:mrow>
+</mml:msub>
+<mml:mo>)</mml:mo>
+</mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:msup>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+</alternatives>
+<label>(5)</label>
+</disp-formula>
+where <italic>y</italic><sub><italic>i</italic>, <italic>test</italic></sub> and <inline-formula id="pone.0117014.e023"><mml:math id="M23" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>y</mml:mi><mml:mo>^</mml:mo></mml:mover><mml:mrow><mml:mi>i</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> are respectively the real and predicted values of the response <italic>Y</italic> in the test data.</p>
+</sec>
+<sec id="sec004f">
+<title>LASSO</title>
+<p>The LASSO coefficients, <inline-formula id="pone.0117014.e024"><mml:math id="M24" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mi>β</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:mi>λ</mml:mi> <mml:mi>L</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula>, minimises the quantity
+<disp-formula id="pone.0117014.e025">
+<alternatives>
+<graphic id="pone.0117014.e025g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0117014.e025"/>
+<mml:math id="M25" display="block" overflow="scroll">
+<mml:mrow>
+<mml:mtext>RSS</mml:mtext>
+<mml:mo>+</mml:mo>
+<mml:mi>λ</mml:mi>
+<mml:munderover>
+<mml:mo>∑</mml:mo>
+<mml:mrow>
+<mml:mi>j</mml:mi>
+<mml:mo>=</mml:mo>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mi>p</mml:mi>
+</mml:munderover>
+<mml:mrow>
+<mml:mo>∣</mml:mo>
+<mml:msub>
+<mml:mi>β</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+<mml:mo>∣</mml:mo>
+</mml:mrow>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+</alternatives>
+<label>(6)</label>
+</disp-formula></p>
+<p>The LASSO technique penalises the regression coefficients using an <italic>l</italic><sub>1</sub> norm. It shrinks the coefficients towards zero. In addition, the <italic>l</italic><sub>1</sub> penalty has the effect of forcing some of the coefficient to be exactly equal to zero when the tuning parameter <italic>λ</italic> is sufficiently large. Hence, the LASSO estimates the coefficients and performs variable selection in a single procedure. The choice of the tuning parameter <italic>λ</italic> is critical and can be performed using cross validation.</p>
+</sec>
+<sec id="sec004g">
+<title>BIC</title>
+<p>For the least squares model with <italic>q</italic> predictors, the BIC is, up to irrelevant constants, given by
+<disp-formula id="pone.0117014.e026">
+<alternatives>
+<graphic id="pone.0117014.e026g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0117014.e026"/>
+<mml:math id="M26" display="block" overflow="scroll">
+<mml:mrow>
+<mml:mtext>BIC</mml:mtext>
+<mml:mo>=</mml:mo>
+<mml:mfrac>
+<mml:mn>1</mml:mn>
+<mml:mi>n</mml:mi>
+</mml:mfrac>
+<mml:mrow>
+<mml:mo>(</mml:mo>
+<mml:mtext>RSS</mml:mtext>
+<mml:mo>+</mml:mo>
+<mml:mo form="prefix">log</mml:mo>
+<mml:mrow>
+<mml:mo>(</mml:mo>
+<mml:mi>n</mml:mi>
+<mml:mo>)</mml:mo>
+</mml:mrow>
+<mml:mi>q</mml:mi>
+<mml:msup>
+<mml:mover accent="true">
+<mml:mi>σ</mml:mi>
+<mml:mo>^</mml:mo>
+</mml:mover>
+<mml:mn>2</mml:mn>
+</mml:msup>
+<mml:mo>)</mml:mo>
+</mml:mrow>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+</alternatives>
+<label>(7)</label>
+</disp-formula>
+where <inline-formula id="pone.0117014.e027"><mml:math id="M27" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>σ</mml:mi><mml:mo>^</mml:mo></mml:mover><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> is an estimate of the variance of <italic>ɛ</italic>. We select the model that has the lowest BIC value.</p>
+</sec>
+<sec id="sec004h">
+<title>LASSO for hierarchical interactions</title>
+<p>Bien el al. [<xref ref-type="bibr" rid="pone.0117014.ref013">13</xref>] proposed an interesting approach. They consider the <italic>two-way</italic> interaction model
+<disp-formula id="pone.0117014.e028">
+<alternatives>
+<graphic id="pone.0117014.e028g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0117014.e028"/>
+<mml:math id="M28" display="block" overflow="scroll">
+<mml:mrow>
+<mml:mi>Y</mml:mi>
+<mml:mo>=</mml:mo>
+<mml:msub>
+<mml:mi>β</mml:mi>
+<mml:mn>0</mml:mn>
+</mml:msub>
+<mml:mo>+</mml:mo>
+<mml:munderover>
+<mml:mo>∑</mml:mo>
+<mml:mrow>
+<mml:mi>j</mml:mi>
+<mml:mo>=</mml:mo>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mi>p</mml:mi>
+</mml:munderover>
+<mml:msub>
+<mml:mi>β</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+<mml:msub>
+<mml:mi>X</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+<mml:mo>+</mml:mo>
+<mml:mfrac>
+<mml:mn>1</mml:mn>
+<mml:mn>2</mml:mn>
+</mml:mfrac>
+<mml:munder>
+<mml:mo>∑</mml:mo>
+<mml:mrow>
+<mml:mi>j</mml:mi>
+<mml:mo>≠</mml:mo>
+<mml:mi>k</mml:mi>
+</mml:mrow>
+</mml:munder>
+<mml:msub>
+<mml:mi>θ</mml:mi>
+<mml:mrow>
+<mml:mi>j</mml:mi>
+<mml:mi>k</mml:mi>
+</mml:mrow>
+</mml:msub>
+<mml:msub>
+<mml:mi>X</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+<mml:msub>
+<mml:mi>X</mml:mi>
+<mml:mi>k</mml:mi>
+</mml:msub>
+<mml:mo>+</mml:mo>
+<mml:mi>ϵ</mml:mi>
+<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math>
+</alternatives>
+<label>(8)</label>
+</disp-formula></p>
+<p>The additive part is called the <italic>main effect</italic>, while the quadratic part is called the <italic>interaction</italic> terms. The goal is to estimate <italic>β</italic> ∈ ℝ<sup><italic>p</italic></sup> and Θ ∈ ℝ<sup><italic>p</italic> × <italic>p</italic></sup>, where Θ = Θ<sup><italic>t</italic></sup> and <italic>θ</italic><sub><italic>jj</italic></sub> = 0 for <italic>j</italic> = 1, …, <italic>p</italic>. This is done using an <italic>all-pairs Lasso</italic> criterion, which has the following form
+<disp-formula id="pone.0117014.e029">
+<alternatives>
+<graphic id="pone.0117014.e029g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0117014.e029"/>
+<mml:math id="M29" display="block" overflow="scroll">
+<mml:mrow>
+<mml:msub>
+<mml:mtext>Minimize</mml:mtext>
+<mml:mrow>
+<mml:msub>
+<mml:mi>β</mml:mi>
+<mml:mn>0</mml:mn>
+</mml:msub>
+<mml:mo>∈</mml:mo>
+<mml:mi mathvariant="double-struck">R</mml:mi>
+<mml:mo>,</mml:mo>
+<mml:mi>β</mml:mi>
+<mml:mo>∈</mml:mo>
+<mml:msup>
+<mml:mi mathvariant="double-struck">R</mml:mi>
+<mml:mi>p</mml:mi>
+</mml:msup>
+<mml:mo>,</mml:mo>
+<mml:mo>Θ</mml:mo>
+<mml:mo>∈</mml:mo>
+<mml:msup>
+<mml:mi mathvariant="double-struck">R</mml:mi>
+<mml:mrow>
+<mml:mi>p</mml:mi>
+<mml:mo>×</mml:mo>
+<mml:mi>p</mml:mi>
+</mml:mrow>
+</mml:msup>
+</mml:mrow>
+</mml:msub>
+<mml:mfrac>
+<mml:mn>1</mml:mn>
+<mml:mn>2</mml:mn>
+</mml:mfrac>
+<mml:munderover>
+<mml:mo>∑</mml:mo>
+<mml:mrow>
+<mml:mi>i</mml:mi>
+<mml:mo>=</mml:mo>
+<mml:mn>1</mml:mn>
+</mml:mrow>
+<mml:mi>n</mml:mi>
+</mml:munderover>
+<mml:msup>
+<mml:mrow>
+<mml:mo>(</mml:mo>
+<mml:msub>
+<mml:mi>y</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:msub>
+<mml:mo>-</mml:mo>
+<mml:msub>
+<mml:mi>β</mml:mi>
+<mml:mn>0</mml:mn>
+</mml:msub>
+<mml:mo>-</mml:mo>
+<mml:msubsup>
+<mml:mi>x</mml:mi>
+<mml:mi>i</mml:mi>
+<mml:mi>t</mml:mi>
+</mml:msubsup>
+<mml:mi>β</mml:mi>
+<mml:mo>-</mml:mo>
+<mml:mfrac>
+<mml:mn>1</mml:mn>
+<mml:mn>2</mml:mn>
+</mml:mfrac>
+<mml:msubsup>
+<mml:mi>x</mml:mi>
+<mml:mi>i</mml:mi>
+<mml:mi>t</mml:mi>
+</mml:msubsup>
+<mml:mo>Θ</mml:mo>
+<mml:msub>
+<mml:mi>x</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:msub>
+<mml:mo>)</mml:mo>
+</mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:msup>
+<mml:mo>+</mml:mo>
+<mml:msub>
+<mml:mrow>
+<mml:mi>λ</mml:mi>
+<mml:mo>∥</mml:mo>
+<mml:mi>β</mml:mi>
+<mml:mo>∥</mml:mo>
+</mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:msub>
+<mml:mo>+</mml:mo>
+<mml:mfrac>
+<mml:mi>λ</mml:mi>
+<mml:mn>2</mml:mn>
+</mml:mfrac>
+<mml:msub>
+<mml:mrow>
+<mml:mo>∥</mml:mo>
+<mml:mo>Θ</mml:mo>
+<mml:mo>∥</mml:mo>
+</mml:mrow>
+<mml:mn>1</mml:mn>
+</mml:msub>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math>
+</alternatives>
+<label>(9)</label>
+</disp-formula>
+where <inline-formula id="pone.0117014.e030"><mml:math id="M30" display="inline" overflow="scroll"><mml:mrow><mml:mo stretchy="false">‖</mml:mo> <mml:mi>β</mml:mi> <mml:msub><mml:mo stretchy="false">‖</mml:mo> <mml:mn>1</mml:mn></mml:msub> <mml:mo>=</mml:mo> <mml:msubsup><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>j</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>p</mml:mi></mml:msubsup> <mml:mo stretchy="false">∣</mml:mo> <mml:msub><mml:mi>β</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo stretchy="false">∣</mml:mo></mml:mrow></mml:math></inline-formula>, ‖Θ‖<sub>1</sub> = ∑<sub><italic>j</italic> ≠ <italic>k</italic></sub>∣<italic>θ</italic><sub><italic>jk</italic></sub>∣, <italic>x</italic><sub><italic>i</italic></sub> is the observed value of <italic>X</italic><sub><italic>i</italic></sub>, <italic>β</italic><sub>0</sub> is the intercept, and <italic>λ</italic> is a positive tuning parameter that can be estimated using cross validation. The method produces sparse interaction models that honour the hierarchy restriction that an interaction is only included in a model if one or both variables are marginally important.</p>
+</sec>
+</sec>
+<sec id="sec005">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0117014.s001" position="float" xlink:href="info:doi/10.1371/journal.pone.0117014.s001" mimetype="application/pdf" xlink:type="simple">
+<label>S1 Table</label>
+<caption>
+<title>Summary of colony measurements.</title>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0117014.s002" position="float" xlink:href="info:doi/10.1371/journal.pone.0117014.s002" mimetype="application/pdf" xlink:type="simple">
+<label>S2 Table</label>
+<caption>
+<title>Complexity of best statistical models chosen by LASSO for hierarchical interactions.</title>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0117014.s003" position="float" xlink:href="info:doi/10.1371/journal.pone.0117014.s003" mimetype="application/pdf" xlink:type="simple">
+<label>S3 Table</label>
+<caption>
+<title>Frequency of predictors (X1, X2 and X1X2.) within 1000 modelling repeats using LASSO for hierarchical interactions.</title>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0117014.s004" position="float" xlink:href="info:doi/10.1371/journal.pone.0117014.s004" mimetype="text/x-R" xlink:type="simple">
+<label>S1 Script</label>
+<caption>
+<title>R analysis script.</title>
+<p>(R)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0117014.s005" position="float" xlink:href="info:doi/10.1371/journal.pone.0117014.s005" mimetype="text/csv" xlink:type="simple">
+<label>S1 Data</label>
+<caption>
+<title>Raw data measurements.</title>
+<p>(CSV)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>The yeast experimental design descriptions and the spore growth data were kindly provided by our colleagues David Gifford and Gerald Fink from the Whitehead and Broad Institutes in Cambridge, USA.</p>
+<p>Furthermore, we thank Mohammed Dehbi from QBRI and Christopher Leonard from QScience, Qatar Foundation, for improving the quality of the manuscript.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0117014.ref001">
+<label>1</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Eichler</surname> <given-names>EE</given-names></name>, <name name-style="western"><surname>Flint</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Gibson</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Kong</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Leal</surname> <given-names>SM</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Missing heritability and strategies for finding the underlying causes of complex disease</article-title>. <source>Nature reviews Genetics</source> <volume>11</volume>: <fpage>446</fpage>–<lpage>450</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nrg2809" xlink:type="simple">10.1038/nrg2809</ext-link></comment> <object-id pub-id-type="pmid">20479774</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref002">
+<label>2</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Manolio</surname> <given-names>Ta</given-names></name>, <name name-style="western"><surname>Collins</surname> <given-names>FS</given-names></name>, <name name-style="western"><surname>Cox</surname> <given-names>NJ</given-names></name>, <name name-style="western"><surname>Goldstein</surname> <given-names>DB</given-names></name>, <name name-style="western"><surname>Hindorff</surname> <given-names>La</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Finding the missing heritability of complex diseases</article-title>. <source>Nature</source> <volume>461</volume>: <fpage>747</fpage>–<lpage>753</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature08494" xlink:type="simple">10.1038/nature08494</ext-link></comment> <object-id pub-id-type="pmid">19812666</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref003">
+<label>3</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Bloom</surname> <given-names>JS</given-names></name>, <name name-style="western"><surname>Ehrenreich</surname> <given-names>IM</given-names></name>, <name name-style="western"><surname>Loo</surname> <given-names>WT</given-names></name>, <name name-style="western"><surname>Lite</surname> <given-names>TLVo</given-names></name>, <name name-style="western"><surname>Kruglyak</surname> <given-names>L</given-names></name> (<year>2013</year>) <article-title>Finding the sources of missing heritability in a yeast cross</article-title>. <source>Nature</source> <volume>494</volume>: <fpage>234</fpage>–<lpage>237</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature11867" xlink:type="simple">10.1038/nature11867</ext-link></comment> <object-id pub-id-type="pmid">23376951</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref004">
+<label>4</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Zuk</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Hechter</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Sunyaev</surname> <given-names>SR</given-names></name>, <name name-style="western"><surname>Lander</surname> <given-names>ES</given-names></name> (<year>2012</year>) <article-title>The mystery of missing heritability: Genetic interactions create phantom heritability</article-title>. <source>Proceedings of the National Academy of Sciences of the United States of America</source> <volume>109</volume>: <fpage>1193</fpage>–<lpage>1198</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1119675109" xlink:type="simple">10.1073/pnas.1119675109</ext-link></comment> <object-id pub-id-type="pmid">22223662</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref005">
+<label>5</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Slatkin</surname> <given-names>M</given-names></name> (<year>2009</year>) <article-title>Epigenetic inheritance and the missing heritability problem</article-title>. <source>Genetics</source> <volume>182</volume>: <fpage>845</fpage>–<lpage>850</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1534/genetics.109.102798" xlink:type="simple">10.1534/genetics.109.102798</ext-link></comment> <object-id pub-id-type="pmid">19416939</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref006">
+<label>6</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Rassoulzadegan</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Grandjean</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Gounon</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Vincent</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Gillot</surname> <given-names>I</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>RNA-mediated non-mendelian inheritance of an epigenetic change in the mouse</article-title>. <source>Nature</source> <volume>441</volume>: <fpage>469</fpage>–<lpage>474</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature04674" xlink:type="simple">10.1038/nature04674</ext-link></comment> <object-id pub-id-type="pmid">16724059</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref007">
+<label>7</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Nadeau</surname> <given-names>JH</given-names></name> (<year>2009</year>) <article-title>Transgenerational genetic effects on phenotypic variation and disease risk</article-title>. <source>Human molecular genetics</source> <volume>18</volume>: <fpage>R202</fpage>–<lpage>10</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/hmg/ddp366" xlink:type="simple">10.1093/hmg/ddp366</ext-link></comment> <object-id pub-id-type="pmid">19808797</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref008">
+<label>8</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Cadwell</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Patel</surname> <given-names>KK</given-names></name>, <name name-style="western"><surname>Maloney</surname> <given-names>NS</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>TC</given-names></name>, <name name-style="western"><surname>Ng</surname> <given-names>ACY</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Virus-plus-susceptibility gene interaction determines Crohn’s disease gene Atg16L1 phenotypes in intestine</article-title>. <source>Cell</source> <volume>141</volume>: <fpage>1135</fpage>–<lpage>1145</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cell.2010.05.009" xlink:type="simple">10.1016/j.cell.2010.05.009</ext-link></comment> <object-id pub-id-type="pmid">20602997</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref009">
+<label>9</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Edwards</surname> <given-names>MD</given-names></name>, <name name-style="western"><surname>Symbor-Nagrabska</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Dollard</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Gifford</surname> <given-names>DK</given-names></name>, <name name-style="western"><surname>Fink</surname> <given-names>GR</given-names></name> (<year>2014</year>) <article-title>Interactions between chromosomal and nonchromosomal elements reveal missing heritability</article-title>. <source>Proceedings of the National Academy of Sciences of the United States of America</source> <volume>111</volume>: <fpage>7719</fpage>–<lpage>7722</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1407126111" xlink:type="simple">10.1073/pnas.1407126111</ext-link></comment> <object-id pub-id-type="pmid">24825890</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref010">
+<label>10</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Tibshirani</surname> <given-names>R</given-names></name> (<year>1996</year>) <article-title>Regression Shrinkage and Selection via the Lasso</article-title>. <source>Journal of the Royal Statistical Society (Series B)</source> <volume>58</volume>: <fpage>267</fpage>–<lpage>288</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0117014.ref011">
+<label>11</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Schwarz</surname> <given-names>G</given-names></name> (<year>1978</year>) <article-title>Estimating the Dimension of a Model</article-title>. <source>The Annals of Statistics</source> <volume>6</volume>: <fpage>461</fpage>–<lpage>464</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1214/aos/1176344136" xlink:type="simple">10.1214/aos/1176344136</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref012">
+<label>12</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Bogdan</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Ghosh</surname> <given-names>JK</given-names></name>, <name name-style="western"><surname>Doerge</surname> <given-names>RW</given-names></name> (<year>2004</year>) <article-title>Modifying the Schwarz Bayesian information criterion to locate multiple interacting quantitative trait loci</article-title>. <source>Genetics</source> <volume>167</volume>: <fpage>989</fpage>–<lpage>999</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1534/genetics.103.021683" xlink:type="simple">10.1534/genetics.103.021683</ext-link></comment> <object-id pub-id-type="pmid">15238547</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref013">
+<label>13</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Bien</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Taylor</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Tibshirani</surname> <given-names>R</given-names></name> (<year>2013</year>) <article-title>A lasso for hierarchical interactions</article-title>. <source>The Annals of Statistics</source> <volume>41</volume>: <fpage>1111</fpage>–<lpage>1141</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1214/13-AOS1096" xlink:type="simple">10.1214/13-AOS1096</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref014">
+<label>14</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Magliani</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Conti</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Gerloni</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Bertolotti</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Polonelli</surname> <given-names>L</given-names></name> (<year>1997</year>) <article-title>Yeast killer systems</article-title>. <source>Clinical microbiology reviews</source> <volume>10</volume>: <fpage>369</fpage>–<lpage>400</lpage>. <object-id pub-id-type="pmid">9227858</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref015">
+<label>15</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Schmitt</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Breinig</surname> <given-names>F</given-names></name> (<year>2006</year>) <article-title>Yeast viral killer toxins: lethality and self-protection</article-title>. <source>Nature reviews Microbiology</source> <volume>4</volume>: <fpage>212</fpage>–<lpage>221</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nrmicro1347" xlink:type="simple">10.1038/nrmicro1347</ext-link></comment> <object-id pub-id-type="pmid">16489348</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref016">
+<label>16</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Dowell</surname> <given-names>RD</given-names></name>, <name name-style="western"><surname>Ryan</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Jansen</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Cheung</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Agarwala</surname> <given-names>S</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Genotype to phenotype: a complex problem</article-title>. <source>Science (New York, NY)</source> <volume>328</volume>: <fpage>469</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1189015" xlink:type="simple">10.1126/science.1189015</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref017">
+<label>17</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<collab xlink:type="simple">R Core Team</collab> (<year>2014</year>) <source>R: A Language and Environment for Statistical Computing</source>. <publisher-name>R Foundation for Statistical Computing</publisher-name>, <publisher-loc>Vienna, Austria</publisher-loc>. <comment>URL <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://www.R-project.org/">http://www.R-project.org/</ext-link></comment>.</mixed-citation>
+</ref>
+<ref id="pone.0117014.ref018">
+<label>18</label>
+<mixed-citation xlink:type="simple" publication-type="other">
+Bien J, Tibshirani R (2014) hierNet: A Lasso for Hierarchical Interactions. URL <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://CRAN.R-project.org/package=hierNet">http://CRAN.R-project.org/package=hierNet</ext-link>. R package version 1.6.</mixed-citation>
+</ref>
+<ref id="pone.0117014.ref019">
+<label>19</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Ben-Ari</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Zenvirth</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Sherman</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>David</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Klutstein</surname> <given-names>M</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Four linked genes participate in controlling sporulation efficiency in budding yeast</article-title>. <source>PLoS genetics</source> <volume>2</volume>: <fpage>e195</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.0020195" xlink:type="simple">10.1371/journal.pgen.0020195</ext-link></comment> <object-id pub-id-type="pmid">17112318</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref020">
+<label>20</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Sinha</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>David</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Pascon</surname> <given-names>RC</given-names></name>, <name name-style="western"><surname>Clauder-Münster</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Krishnakumar</surname> <given-names>S</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Sequential elimination of major-effect contributors identifies additional quantitative trait loci conditioning high-temperature growth in yeast</article-title>. <source>Genetics</source> <volume>180</volume>: <fpage>1661</fpage>–<lpage>1670</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1534/genetics.108.092932" xlink:type="simple">10.1534/genetics.108.092932</ext-link></comment> <object-id pub-id-type="pmid">18780730</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref021">
+<label>21</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Steinmetz</surname> <given-names>LM</given-names></name>, <name name-style="western"><surname>Sinha</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Richards</surname> <given-names>DR</given-names></name>, <name name-style="western"><surname>Spiegelman</surname> <given-names>JI</given-names></name>, <name name-style="western"><surname>Oefner</surname> <given-names>PJ</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>Dissecting the architecture of a quantitative trait locus in yeast</article-title>. <source>Nature</source> <volume>416</volume>: <fpage>326</fpage>–<lpage>330</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/416326a" xlink:type="simple">10.1038/416326a</ext-link></comment> <object-id pub-id-type="pmid">11907579</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref022">
+<label>22</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Deutschbauer</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Davis</surname> <given-names>RW</given-names></name> (<year>2005</year>) <article-title>Quantitative trait loci mapped to single-nucleotide resolution in yeast</article-title>. <source>Nature genetics</source> <volume>37</volume>: <fpage>1333</fpage>–<lpage>1340</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/ng1674" xlink:type="simple">10.1038/ng1674</ext-link></comment> <object-id pub-id-type="pmid">16273108</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref023">
+<label>23</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Kim</surname> <given-names>HS</given-names></name>, <name name-style="western"><surname>Fay</surname> <given-names>JC</given-names></name> (<year>2009</year>) <article-title>A combined-cross analysis reveals genes with drug-specific and background-dependent effects on drug sensitivity in Saccharomyces cerevisiae</article-title>. <source>Genetics</source> <volume>183</volume>: <fpage>1141</fpage>–<lpage>1151</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1534/genetics.109.108068" xlink:type="simple">10.1534/genetics.109.108068</ext-link></comment> <object-id pub-id-type="pmid">19720856</object-id></mixed-citation>
+</ref>
+<ref id="pone.0117014.ref024">
+<label>24</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Fink</surname> <given-names>GR</given-names></name>, <name name-style="western"><surname>Styles</surname> <given-names>CA</given-names></name> (<year>1972</year>) <article-title>Curing of a killer factor in Saccharomyces cerevisiae</article-title>. <source>Proceedings of the National Academy of Sciences of the United States of America</source> <volume>69</volume>: <fpage>2846</fpage>–<lpage>2849</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.69.10.2846" xlink:type="simple">10.1073/pnas.69.10.2846</ext-link></comment> <object-id pub-id-type="pmid">4562744</object-id></mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

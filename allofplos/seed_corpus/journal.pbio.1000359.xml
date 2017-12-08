@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="article-commentary" dtd-version="3.0" xml:lang="EN">
+<front>
+<journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="nlm-ta">PLoS Biol</journal-id><journal-id journal-id-type="pmc">plosbiol</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Biology</journal-title></journal-title-group><issn pub-type="ppub">1544-9173</issn><issn pub-type="epub">1545-7885</issn><publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="publisher-id">10-PLBI-P-5913R3</article-id><article-id pub-id-type="doi">10.1371/journal.pbio.1000359</article-id><article-categories><subj-group subj-group-type="heading"><subject>Primer</subject></subj-group><subj-group subj-group-type="Discipline"><subject>Biochemistry/Membrane Proteins and Energy Transduction</subject><subject>Genetics and Genomics/Microbial Evolution and Genomics</subject><subject>Marine and Aquatic Sciences/Microbiology</subject></subj-group></article-categories><title-group><article-title>The Light-Driven Proton Pump Proteorhodopsin Enhances Bacterial Survival during Tough Times</article-title></title-group><contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>DeLong</surname><given-names>Edward F.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="aff" rid="aff2"><sup>2</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Béjà</surname><given-names>Oded</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+</contrib-group><aff id="aff1"><label>1</label><addr-line>Department of Civil and Environmental Engineering, Massachusetts Institute of Technology, Cambridge, Massachusetts, United States of America</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Department of Biological Engineering, Massachusetts Institute of Technology, Cambridge, Massachusetts, United States of America</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Faculty of Biology, Technion - Israel Institute of Technology, Technion City, Haifa, Israel</addr-line>       </aff><author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">Delong@mit.edu</email> (EFD); <email xlink:type="simple">beja@tx.technion.ac.il</email> (OB)</corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn></author-notes><pub-date pub-type="collection"><month>4</month><year>2010</year></pub-date><pub-date pub-type="epub"><day>27</day><month>4</month><year>2010</year></pub-date><volume>8</volume><issue>4</issue><elocation-id>e1000359</elocation-id><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2010</copyright-year><copyright-holder>DeLong, Béjà</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><related-article ext-link-type="uri" id="RA1" page="e1000358" related-article-type="commentary-article" vol="8" xlink:href="info:doi/10.1371/journal.pbio.1000358" xlink:type="simple"> <article-title>Proteorhodopsin Phototrophy Promotes Survival of Marine Bacteria during Starvation</article-title></related-article><abstract abstract-type="toc">
+<p>Recently, it has been discovered that many microorganisms previously thought to be light-independent actually make use of sunlight for growth and survival. Newly reported work suggests some of the specific mechanisms involved.</p>
+</abstract><funding-group><funding-statement>No specific funding was received for this article.</funding-statement></funding-group><counts><page-count count="5"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title/>
+<p>Some microorganisms contain proteins that can interact with light and convert it into energy for growth and survival, or into sensory information that guides cells towards or away from light. The simplest energy-harvesting photoproteins are the rhodopsins, which consist of a single, membrane-embedded protein covalently bound to the chromophore retinal (a light-sensitive pigment) <xref ref-type="bibr" rid="pbio.1000359-Spudich1">[1]</xref>. One class of archaeal photoproteins (called bacteriorhodopsin) was shown to function as a light-driven proton pump, generating biochemical energy from light <xref ref-type="bibr" rid="pbio.1000359-Oesterhelt1">[2]</xref>,<xref ref-type="bibr" rid="pbio.1000359-Spudich2">[3]</xref>. For many years, these light-driven proton pumps were thought to be found only in relatively obscure Archaea living in high salinity.</p>
+<p>Ten years ago, a new type of microbial rhodopsin (proteorhodopsin) was discovered in marine planktonic bacterial assemblages <xref ref-type="bibr" rid="pbio.1000359-Bj1">[4]</xref>. This proteorhodopsin was co-localized on a large genome fragment containing the small subunit ribosomal RNA gene, which identified its genomic source—an uncultured gammaproteobacterium (of the SAR86 bacterial lineage). Further work showed that proteorhodopsin could be expressed in <italic>Escherichia coli</italic>, producing light-driven proton pumping, with photocycle kinetics similar to archaeal bacteriorhodopsins <xref ref-type="bibr" rid="pbio.1000359-Bj1">[4]</xref>. Soon, proteorhodopsins were detected in other populations of planktonic marine bacteria. These photoproteins were specifically “tuned” to absorb the wavelengths of light found in the surrounding environment—green light in surface waters and blue light at greater depths in the water column <xref ref-type="bibr" rid="pbio.1000359-Bj2">[5]</xref>.</p>
+<p>Work over the past decade shows that proteorhodopsins and related light-driven proton pumps are not an exception, but rather the rule for microbial inhabitants of sunny environments like the upper ocean (see <xref ref-type="table" rid="pbio-1000359-t001">Table 1</xref> and <xref ref-type="boxed-text" rid="pbio-1000359-box001">Box 1</xref>). Based on genomic survey data, proteorhodopsins occur in an estimated 13% to 80% of marine bacteria and archaea in oceanic surface waters <xref ref-type="bibr" rid="pbio.1000359-Moran1">[7]</xref>,<xref ref-type="bibr" rid="pbio.1000359-delaTorre1">[8]</xref>. Given that microbial cell densities can approach one billion microbes per litre, the potential influence of proteorhodopsin-based light-driven energy flux in ocean ecosystems is significant but still difficult to quantify directly. Proteorhodopsins add substantially to the list of phototrophs (organisms that can use light as an energy source) known to inhabitate ocean surface waters, such as oxygenic and anoxygenic chlorophyll-based phototrophs <xref ref-type="bibr" rid="pbio.1000359-Karl1">[6]</xref>,<xref ref-type="bibr" rid="pbio.1000359-Moran1">[7]</xref>.</p>
+<boxed-text id="pbio-1000359-box001" position="float"><sec id="s1a1">
+<title>Box 1. A Decade of Proteorhodopsin Milestones</title>
+<p><bold>2000</bold> •First proteorhodopsin gene found in uncultured SAR86 using metagenomics; proteorhodopsin light-driven proton pump activity confirmed in heterologous <italic>E. coli</italic> cells <xref ref-type="bibr" rid="pbio.1000359-Bj1">[4]</xref>.</p>
+<p><bold>2001</bold> •Proteorhodopsin presence confirmed directly in the ocean using laser flash photolysis <xref ref-type="bibr" rid="pbio.1000359-Bj2">[5]</xref>.</p>
+<p><bold>2003</bold> •Proteorhodopsin genes also found in other bacterial groups <xref ref-type="bibr" rid="pbio.1000359-delaTorre1">[8]</xref>.</p>
+<p><bold>2004</bold> •Enormous diversity of proteorhodopsin genes found in the Sargasso Sea using metagenomics <xref ref-type="bibr" rid="pbio.1000359-Venter1">[9]</xref>.</p>
+<p><bold>2005</bold> •Retinal biosynthesis pathways found in metagenomic data and confirmed using <italic>E. coli</italic> cells <xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref>.</p>
+<p>   •Proteorhodopsin genes are found in ‘<italic>Canditatus</italic> Pelagibacter ubique’ (SAR11), the most abundant bacterium on earth; environmental SAR11 proteorhodopsin presence confirmed using metaproteomics <xref ref-type="bibr" rid="pbio.1000359-Giovannoni1">[11]</xref>.</p>
+<p><bold>2006</bold> •Proteorhodopsin genes found in uncultured marine Archaea <xref ref-type="bibr" rid="pbio.1000359-Frigaard1">[12]</xref>.</p>
+<p><bold>2007</bold> •First indication of proteorhodopsin light-dependent growth in cultured <italic>Flavobacteria</italic> <xref ref-type="bibr" rid="pbio.1000359-GmezConsarnau1">[13]</xref> (see <xref ref-type="fig" rid="pbio-1000359-g001">Figure 1</xref> for colony morphologies and pigmentation).</p>
+<p><bold>2008</bold> •Proteorhodopsin genes found in non-marine environments <xref ref-type="bibr" rid="pbio.1000359-AtamnaIsmaeel1">[14]</xref>,<xref ref-type="bibr" rid="pbio.1000359-Sharma1">[15]</xref>.</p>
+<p><bold>2010</bold> •Proteorhodopsin phototrophy directly confirmed using a genetic system in marine <italic>Vibrio</italic> sp. <xref ref-type="bibr" rid="pbio.1000359-GmezConsarnau2">[16]</xref></p>
+</sec></boxed-text><fig id="pbio-1000359-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.1000359.g001</object-id><label>Figure 1</label><caption>
+<title>Various colony morphologies and coloration of different proteorhodopsin-containing bacteria used to study proteorhodopsin phototrophy.</title>
+<p>From top to bottom, the flavobacterium <italic>Polaribacter dokdonensis</italic> strain MED152 used to show proteorhodopsin light stimulated growth <xref ref-type="bibr" rid="pbio.1000359-GmezConsarnau1">[13]</xref>; the flavobacterium <italic>Dokdonia donghaensis</italic> strain MED134 used to show proteorhodopsin light stimulated CO<sub>2</sub>-fixation <xref ref-type="bibr" rid="pbio.1000359-Gonzlez1">[23]</xref>; and <italic>Vibrio</italic> strain AND4 used to show proteorhodopsin phototrophy <xref ref-type="bibr" rid="pbio.1000359-GmezConsarnau2">[16]</xref>; note the lack of detectable pigments in <italic>Vibrio</italic> strain AND4. However, when these vibrio cells are pelleted, they do show a pale reddish color, which is the result of proteorhodopsin pigments presence in their membranes. Photos are courtesy of Jarone Pinhassi.</p>
+</caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.1000359.g001" xlink:type="simple"/></fig><table-wrap id="pbio-1000359-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.1000359.t001</object-id><label>Table 1</label><caption>
+<title>Marine bacterial isolates and genome fragments containing proteorhodopsins.</title>
+</caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pbio-1000359-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.1000359.t001" xlink:type="simple"/><table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" colspan="1" rowspan="1">Organism</td>
+<td align="left" colspan="1" rowspan="1">Strain</td>
+<td align="left" colspan="1" rowspan="1">General Group</td>
+<td align="left" colspan="1" rowspan="1">Reference</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="4" rowspan="1"><bold>Genomes</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Methylophilales</td>
+<td align="left" colspan="1" rowspan="1">HTCC2181</td>
+<td align="left" colspan="1" rowspan="1"><italic>Betaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Rhodobacterales sp.</td>
+<td align="left" colspan="1" rowspan="1">HTCC2255</td>
+<td align="left" colspan="1" rowspan="1"><italic>Alphaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Vibrio angustum</italic></td>
+<td align="left" colspan="1" rowspan="1">S14</td>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Photobacterium</italic></td>
+<td align="left" colspan="1" rowspan="1">SKA34</td>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Vibrio harveyi</italic></td>
+<td align="left" colspan="1" rowspan="1">ATCC BAA-1116</td>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GenBank # CP000789</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Marine gamma</td>
+<td align="left" colspan="1" rowspan="1">HTCC2143</td>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Marine gamma</td>
+<td align="left" colspan="1" rowspan="1">HTCC2207</td>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Cand.</italic> P. ubique</td>
+<td align="left" colspan="1" rowspan="1">HTCC1002</td>
+<td align="left" colspan="1" rowspan="1"><italic>Alphaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Cand.</italic> P. ubique</td>
+<td align="left" colspan="1" rowspan="1">HTCC1062</td>
+<td align="left" colspan="1" rowspan="1"><italic>Alphaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">[26]</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Rhodospirillales</italic></td>
+<td align="left" colspan="1" rowspan="1">BAL199</td>
+<td align="left" colspan="1" rowspan="1"><italic>Alphaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Marinobacter</italic></td>
+<td align="left" colspan="1" rowspan="1">ELB17</td>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Vibrio campbelli</italic></td>
+<td align="left" colspan="1" rowspan="1">AND4</td>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Vibrio angustum</italic></td>
+<td align="left" colspan="1" rowspan="1">S14</td>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Dokdonia donghaensis</italic></td>
+<td align="left" colspan="1" rowspan="1">MED134</td>
+<td align="left" colspan="1" rowspan="1"><italic>Flavobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Polaribacter dokdonensis</italic></td>
+<td align="left" colspan="1" rowspan="1">MED152</td>
+<td align="left" colspan="1" rowspan="1"><italic>Flavobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Psychroflexus</italic></td>
+<td align="left" colspan="1" rowspan="1">ATCC700755</td>
+<td align="left" colspan="1" rowspan="1"><italic>Flavobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><italic>Polaribacter irgensii</italic></td>
+<td align="left" colspan="1" rowspan="1">23-P</td>
+<td align="left" colspan="1" rowspan="1"><italic>Flavobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Flavobacteria bacterium</td>
+<td align="left" colspan="1" rowspan="1">BAL38</td>
+<td align="left" colspan="1" rowspan="1"><italic>Flavobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1">GBMF</td>
+</tr>
+<tr>
+<td align="left" colspan="4" rowspan="1"><bold>BACs and fosmids</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF10_05C07</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Proteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF10_45G01</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Proteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF130_81H07</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">EB0_39F01</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Alphaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">EB0_39H12</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Proteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">EB80_69G07</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Alphaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">EB80_02D08</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">EB0_35D03</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Proteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">EB0_49D07</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Proteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">EBO_50A10</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">EB0_55B11f</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Alphaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">EBO_41B09</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Betaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF10_19P19</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Proteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Martinez1">[17]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF10_25F10</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Proteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Martinez1">[17]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF10_49E08</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Planctomycetes</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF10_12C08</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Alphaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF10_29C11</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Euryarchaea</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-McCarren1">[24]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">MED13K09</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">MED18B02</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">MED35C06</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">MED42A11</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">MED46A06</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">MED49C08</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">MED66A03</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">MED82F10</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">MED86H08</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">RED17H08</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">RED22E04</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi1">[10]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">eBACHOT4E07</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi2">[25]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">EBAC20E09</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Sabehi2">[25]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HOT2C01</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-delaTorre1">[8]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">EBAC31A08</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"><italic>Gammaproteobacteria</italic></td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Bj1">[4]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">ANT32C12</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-delaTorre1">[8]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF70_39H11_ArchHighGC</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Frigaard1">[12]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF10_3D09_mediumGC</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Frigaard1">[12]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF70_19B12_highGC</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Frigaard1">[12]</xref></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">HF70_59C08</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">unknown</td>
+<td align="left" colspan="1" rowspan="1"><xref ref-type="bibr" rid="pbio.1000359-Frigaard1">[12]</xref></td>
+</tr>
+</tbody>
+</table></alternatives><table-wrap-foot><fn id="nt101"><label/><p>Marine microbial isolates and large genome fragments from the environment GBMF, microbial genomes sequenced as part of the Gordon and Betty Moore Foundation microbial genome sequencing project (http://www.moore.org/microgenome), found to encode proteorhodopsin genes. The list includes whole genome sequences from a wide array of cultivated marine microorganisms (Genomes), as well as cloned large DNA fragments (BACs and fosmids) recovered directly from the environment.</p></fn></table-wrap-foot></table-wrap>
+<p>The proteorhodopsin proteins retain their native structure and function in <italic>E. coli</italic> membranes, an ability not shared by their close homologues, bacteriorhodopsins. Therefore, proteorhodopsins expressed in <italic>E. coli</italic> are very useful for probing rhodopsin structure and function <xref ref-type="bibr" rid="pbio.1000359-Moran1">[7]</xref>,<xref ref-type="bibr" rid="pbio.1000359-Walter1">[18]</xref>–<xref ref-type="bibr" rid="pbio.1000359-Lanyi1">[21]</xref>. The relative ease of working with proteorhodopsins in <italic>E. coli</italic> helped to dissect their light-dependent proton pump activity using definitive biophysical assays <xref ref-type="bibr" rid="pbio.1000359-Rapp1">[19]</xref>,<xref ref-type="bibr" rid="pbio.1000359-Lami1">[22]</xref>–<xref ref-type="bibr" rid="pbio.1000359-Sabehi2">[25]</xref> and their potential  role in phototrophy <xref ref-type="bibr" rid="pbio.1000359-Martinez1">[17]</xref>,<xref ref-type="bibr" rid="pbio.1000359-Walter1">[18]</xref> (see <xref ref-type="fig" rid="pbio-1000359-g002">Figure 2</xref> for an artist's rendition of the fundamental arrangement of proteorhodopsin in the cell membrane). However, since all this work relied on the heterologous <italic>E. coli</italic> system, the specific physiological roles and adaptive strategies of native marine bacteria that contain proteorhodopsin still needs to be better described.</p>
+<fig id="pbio-1000359-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.1000359.g002</object-id><label>Figure 2</label><caption>
+<title>An artist's rendition of the fundamental arrangement of proteorhodopsin in the cell membrane.</title>
+<p>Left panel: a cartoon (not to scale) of planktonic bacteria in the ocean water column. Right panel: a simple view of one potential proteorhodopsin energy circuit. (1) Proteorhodopsin – uses light energy to translocate protons across the cell membrane. (2) Extracellular protons – the excess extracellular protons create a proton motive force, that can energetically drive flagellar motility, transport processes, or ATP synthesis in the cell. (3) Proton-translocating ATPase – a multi-protein membrane-bound complex that can utilize the proton motive force to synthesize 5. Adenosine triphosphate (ATP, a central high energy biochemical intermediate for the cell) from 4. Adenosine triphosphate (ADP, a lower energy biochemical intermediate). Illustration by Kirsten Carlson, © MBARI 2001.</p>
+</caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.1000359.g002" xlink:type="simple"/></fig>
+<p>Cultivation-independent genomic surveys (e.g., “metagenomics”) revealed proteorhodopsin presence and diversity, and heterologous expression in <italic>E. coli</italic> demonstrated many of its functional properties. Access to cultivable marine bacteria that contain proteorhodopsin, however, would be very useful to further characterize its native function in diverse physiological contexts.</p>
+<p>Whole-genome sequencing then came to the rescue. The Gordon and Betty Moore Foundation (GBMF) Microbial Genome Sequencing Project (<ext-link ext-link-type="uri" xlink:href="http://www.moore.org/microgenome" xlink:type="simple">http://www.moore.org/microgenome</ext-link>) unexpectedly revealed that many culturable marine bacteria submitted for sequencing (including <italic>Pelagibacter</italic> spp., <italic>Vibrio</italic> spp., and <italic>Flavobacteria</italic> isolates) in fact possessed proteorhodopsin genes (<xref ref-type="table" rid="pbio-1000359-t001">Table 1</xref>). What can these proteorhodopsin-containing isolates tell us? Experiments with the proteorhodopsin-containing isolate ‘<italic>Cand.</italic> P. ubique’ (a member of the SAR11 bacterial lineage, the most abundant bacterial group in the ocean <xref ref-type="bibr" rid="pbio.1000359-Rapp1">[19]</xref>,<xref ref-type="bibr" rid="pbio.1000359-Morris1">[20]</xref>) showed no significant light enhancement of growth rate or yield <xref ref-type="bibr" rid="pbio.1000359-Giovannoni1">[11]</xref>. Later, however, Gómez-Consarnau and colleagues <xref ref-type="bibr" rid="pbio.1000359-GmezConsarnau1">[13]</xref> showed light-dependent growth at low-carbon concentrations in marine flavobacteria. However since these flavobacteria are difficult to manipulate genetically, a direct relationship between the proteorhodopsin protein and light-dependent growth could not be definitively shown.</p>
+<p>Now, a new study by the same research group led by Jarone Pinhassi, published in this issue of <italic>PLoS Biology</italic> <xref ref-type="bibr" rid="pbio.1000359-GmezConsarnau2">[16]</xref>, definitively demonstrates one role for proteorhodopsin in a light-dependent adaptive strategy. In a series of experiments, they showed that marine <italic>Vibrio</italic> cells survived starvation much better in the light than in the dark. Since vibrios are amenable to genetic manipulation, Gómez-Consarnau et al. could construct a strain where the proteorhodopsin gene was deleted. In the absence of proteorhodopsin, light-dependent starvation survival was abolished, and then restored when proteorhodopsin was supplied in trans.</p>
+<p>Gómez-Consarnau et al. have conclusively demonstrated for the first time at least one specific physiological role for proteorhodopsin in a native marine bacterium <xref ref-type="bibr" rid="pbio.1000359-GmezConsarnau2">[16]</xref>. Considering the abundance of proteorhodopsins (estimated to be present in 80% of marine bacteria in some waters <xref ref-type="bibr" rid="pbio.1000359-Moran1">[7]</xref>) and the possibility of lateral gene transfer <xref ref-type="bibr" rid="pbio.1000359-Frigaard1">[12]</xref>, the potential influence of even this one adaptive strategy on marine bacterioplankton could be substantial given the “feast or famine” existence experienced by many of these microbes. The <italic>Vibrio</italic>/proteorhodopsin model system is likely to reveal further secrets on the nature and function of proteorhodopsin photosytems in bacteria that are usually (but erroneously) considered as strict heterotrophs not capable of utilizing light at all.</p>
+<p>While this study <xref ref-type="bibr" rid="pbio.1000359-GmezConsarnau2">[16]</xref> adds an important new result, it certainly does not solve the whole puzzle of proteorhodopsin photophysiology. Considering the staggering variety of genetic, physiological and environmental contexts in which proteorhodopsin and related photoproteins are found, a great variety of light-dependent adaptive strategies are likely to occur in the natural microbial world. For example, in 2005, a new type of bacterial rhodopsin (xanthorhodopsin) was discovered in the salt-loving bacterium <italic>Salinibacter ruber</italic> [28]. Xanthorhodopsin is a proton-pumping retinal protein/carotenoid complex in which the carotenoid salinixanthin functions as a light-harvesting antenna, transferring energy to the rhodopsin/retinal complex <xref ref-type="bibr" rid="pbio.1000359-Lanyi1">[21]</xref>. It was recently suggested that the ability of rhodopsins to bind salinixanthin depends on a single glycine amino acid [30], suggesting that other recently identified retinal proteins (e.g., proteorhodopsins) might also interact with carotenoid antennas, since some possess the identical homologous glycine residue.</p>
+<p>What questions remain to be tackled for the second decade of research on proteorhodopsin photophysiology? Maintenance of energy charge during respiratory stress or starvation, the most likely physiological mechanism explaining the results of Gómez-Consarnau et al. <xref ref-type="bibr" rid="pbio.1000359-GmezConsarnau2">[16]</xref>, is just one example of a life history strategy benefitting from proteorhodopsin. As Martinez and colleagues pointed out <xref ref-type="bibr" rid="pbio.1000359-Martinez1">[17]</xref>, in different physiological, ecological, phylogenetic, and genomic contexts, proteorhodopsin activity may benefit microbes in a variety of ways. Besides producing ATP from the light-generated proton gradient, flagellar motility and active transport of solutes into or out of the cell can make use of the proton motive force generated by proteorhodopsins <xref ref-type="bibr" rid="pbio.1000359-Martinez1">[17]</xref>. Heterotrophs adapted to either high or low nutrient concentrations are known to contain and express proteorhodopsins. Whether high versus low nutrient adapted bacteria exhibit life-style–specific patterns of proteorhodopsin photophysiology remains to be determined. Already it seems clear that two different high-nutrient–utilizing bacteria containing proteorhodopsin (vibrios and flavobacteria) exhibit fundamentally different light-dependent growth strategies <xref ref-type="bibr" rid="pbio.1000359-GmezConsarnau1">[13]</xref>,<xref ref-type="bibr" rid="pbio.1000359-GmezConsarnau2">[16]</xref>. Understanding the diversity of interactions among proteorhodopsin-containing organisms in natural communities represents yet another layer of complexity <xref ref-type="bibr" rid="pbio.1000359-Lami1">[22]</xref>. Finally, obtaining quantitative estimates of the total contribution of proteorhodopsin photosystems to the overall energy flux in microbial food webs is a worthy goal, but extremely challenging. For chlorophyll-based oxygenic photosythesizers, fluorescence-based assays, carbon dioxide uptake experiments, and oxygen evolution measurements to constrain energy garnered from sunlight are readily available. In contrast, light-dependent activity assays are not simple, nor straightforwardly interpretable for proteorhodopsin-containing microorganisms. The dizzying array of phylogenetic and physiological contexts in which proteorhodopsins are found (<xref ref-type="table" rid="pbio-1000359-t001">Table 1</xref>) also confounds any simple, universal approaches for quantifying their energetic contributions in situ. Nevertheless, the future is bright for both basic understanding as well as technological applications of proteorhodopsins and the microbes that contain them. The increasing availability of cultivable and readily manipulated model systems, along with increasingly more sophisticated in situ studies in the environment, promise to shed further light on the structure, function, and ecological significance of these ubiquitous and fascinating photoproteins.</p>
+</sec></body>
+<back>
+<ack>
+<p>We wish to thank John Spudich for commenting on the manuscript and Jay McCarren for help in preparing <xref ref-type="table" rid="pbio-1000359-t001">Table 1</xref>.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pbio.1000359-Spudich1"><label>1</label><element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Spudich</surname><given-names>J. L</given-names></name>
+<name name-style="western"><surname>Jung</surname><given-names>K. H</given-names></name>
+</person-group>             <year>2005</year>             <article-title>Microbial rhodopsins: phylogenetic and functional diversity.</article-title>             <person-group person-group-type="editor">
+<name name-style="western"><surname>Briggs</surname><given-names>W. R</given-names></name>
+<name name-style="western"><surname>Spudich</surname><given-names>J. L</given-names></name>
+</person-group>             <source>Handbook of Photosensory Receptors</source>             <publisher-loc>Weinheim</publisher-loc>             <publisher-name>WILEY-VCH Verlag GmbH &amp; Co. KGaA</publisher-name>             <fpage>1</fpage>             <lpage>24</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Oesterhelt1"><label>2</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Oesterhelt</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Stoeckenius</surname><given-names>W</given-names></name>
+</person-group>             <year>1971</year>             <article-title>Rhodopsin-like protein from the purple membrane of <italic>Halobacterium halobium</italic>.</article-title>             <source>Nat New Biol</source>             <volume>233</volume>             <fpage>149</fpage>             <lpage>152</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Spudich2"><label>3</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Spudich</surname><given-names>J. L</given-names></name>
+<name name-style="western"><surname>Yang</surname><given-names>C. S</given-names></name>
+<name name-style="western"><surname>Jung</surname><given-names>K. H</given-names></name>
+<name name-style="western"><surname>Spudich</surname><given-names>E. N</given-names></name>
+</person-group>             <year>2000</year>             <article-title>Retinylidene proteins: Structures and Functions from Archaea to humans.</article-title>             <source>Annu Rev Cell Dev Biol</source>             <volume>16</volume>             <fpage>365</fpage>             <lpage>392</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Bj1"><label>4</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Béjà</surname><given-names>O</given-names></name>
+<name name-style="western"><surname>Aravind</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Koonin</surname><given-names>E. V</given-names></name>
+<name name-style="western"><surname>Suzuki</surname><given-names>M. T</given-names></name>
+<name name-style="western"><surname>Hadd</surname><given-names>A</given-names></name>
+<etal/></person-group>             <year>2000</year>             <article-title>Bacterial rhodopsin: evidence for a new type of phototrophy in the sea.</article-title>             <source>Science</source>             <volume>289</volume>             <fpage>1902</fpage>             <lpage>1906</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Bj2"><label>5</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Béjà</surname><given-names>O</given-names></name>
+<name name-style="western"><surname>Spudich</surname><given-names>E. N</given-names></name>
+<name name-style="western"><surname>Spudich</surname><given-names>J. L</given-names></name>
+<name name-style="western"><surname>Leclerc</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>DeLong</surname><given-names>E. F</given-names></name>
+</person-group>             <year>2001</year>             <article-title>Proteorhodopsin phototrophy in the ocean.</article-title>             <source>Nature</source>             <volume>411</volume>             <fpage>786</fpage>             <lpage>789</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Karl1"><label>6</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Karl</surname><given-names>D. M</given-names></name>
+</person-group>             <year>2002</year>             <article-title>Hidden in a sea of microbes.</article-title>             <source>Nature</source>             <volume>415</volume>             <fpage>590</fpage>             <lpage>591</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Moran1"><label>7</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Moran</surname><given-names>M. A</given-names></name>
+<name name-style="western"><surname>Miller</surname><given-names>W. L</given-names></name>
+</person-group>             <year>2007</year>             <article-title>Resourceful heterotrophs make the most of light in the coastal ocean.</article-title>             <source>Nat Rev Microbiol</source>             <volume>5</volume>             <fpage>792</fpage>             <lpage>800</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-delaTorre1"><label>8</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>de la Torre</surname><given-names>J. R</given-names></name>
+<name name-style="western"><surname>Christianson</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Béjà</surname><given-names>O</given-names></name>
+<name name-style="western"><surname>Suzuki</surname><given-names>M. T</given-names></name>
+<name name-style="western"><surname>Karl</surname><given-names>D</given-names></name>
+<etal/></person-group>             <year>2003</year>             <article-title>Proteorhodopsin genes are widely distributed among divergent bacterial taxa.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>100</volume>             <fpage>12830</fpage>             <lpage>12835</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Venter1"><label>9</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Venter</surname><given-names>J. C</given-names></name>
+<name name-style="western"><surname>Remington</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Heidelberg</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Halpern</surname><given-names>A. L</given-names></name>
+<name name-style="western"><surname>Rusch</surname><given-names>D</given-names></name>
+<etal/></person-group>             <year>2004</year>             <article-title>Environmental genome shotgun sequencing of the Sargasso Sea.</article-title>             <source>Science</source>             <volume>304</volume>             <fpage>66</fpage>             <lpage>74</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Sabehi1"><label>10</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Sabehi</surname><given-names>G</given-names></name>
+<name name-style="western"><surname>Loy</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Jung</surname><given-names>K. H</given-names></name>
+<name name-style="western"><surname>Partha</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Spudich</surname><given-names>J. L</given-names></name>
+<etal/></person-group>             <year>2005</year>             <article-title>New insights into metabolic properties of marine bacteria encoding proteorhodopsins.</article-title>             <source>PLoS Biol</source>             <volume>3</volume>             <fpage>e273</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pbio.0030273" xlink:type="simple">10.1371/journal.pbio.0030273</ext-link></comment>          </element-citation></ref>
+<ref id="pbio.1000359-Giovannoni1"><label>11</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Giovannoni</surname><given-names>S. J</given-names></name>
+<name name-style="western"><surname>Bibbs</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Cho</surname><given-names>J-C</given-names></name>
+<name name-style="western"><surname>Stapels</surname><given-names>M. D</given-names></name>
+<name name-style="western"><surname>Desiderio</surname><given-names>R</given-names></name>
+<etal/></person-group>             <year>2005</year>             <article-title>Proteorhodopsin in the ubiquitous marine bacterium SAR11.</article-title>             <source>Nature</source>             <volume>438</volume>             <fpage>82</fpage>             <lpage>85</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Frigaard1"><label>12</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Frigaard</surname><given-names>N-U</given-names></name>
+<name name-style="western"><surname>Martinez</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Mincer</surname><given-names>T. J</given-names></name>
+<name name-style="western"><surname>DeLong</surname><given-names>E. F</given-names></name>
+</person-group>             <year>2006</year>             <article-title>Proteorhodopsin lateral gene transfer between marine planktonic Bacteria and Archaea.</article-title>             <source>Nature</source>             <volume>439</volume>             <fpage>847</fpage>             <lpage>850</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-GmezConsarnau1"><label>13</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Gómez-Consarnau</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>González</surname><given-names>J. M</given-names></name>
+<name name-style="western"><surname>Coll-Lladó</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Gourdon</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Pascher</surname><given-names>T</given-names></name>
+<etal/></person-group>             <year>2007</year>             <article-title>Light stimulates growth of proteorhodopsin-containing marine Flavobacteria.</article-title>             <source>Nature</source>             <volume>445</volume>             <fpage>210</fpage>             <lpage>213</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-AtamnaIsmaeel1"><label>14</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Atamna-Ismaeel</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Sabehi</surname><given-names>G</given-names></name>
+<name name-style="western"><surname>Sharon</surname><given-names>I</given-names></name>
+<name name-style="western"><surname>Witzel</surname><given-names>K-P</given-names></name>
+<name name-style="western"><surname>Labrenz</surname><given-names>M</given-names></name>
+<etal/></person-group>             <year>2008</year>             <article-title>Widespread distribution of proteorhodopsins in freshwater and brackish ecosystems.</article-title>             <source>ISME J</source>             <volume>2</volume>             <fpage>656</fpage>             <lpage>662</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Sharma1"><label>15</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Sharma</surname><given-names>A. K</given-names></name>
+<name name-style="western"><surname>Zhaxybayeva</surname><given-names>O</given-names></name>
+<name name-style="western"><surname>Papke</surname><given-names>R. T</given-names></name>
+<name name-style="western"><surname>Doolittle</surname><given-names>W. F</given-names></name>
+</person-group>             <year>2008</year>             <article-title>Actinorhodopsins: proteorhodopsin-like gene sequences found predominantly in non-marine environments.</article-title>             <source>Environ Microbiol</source>             <volume>10</volume>             <fpage>1039</fpage>             <lpage>1056</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-GmezConsarnau2"><label>16</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Gómez-Consarnau</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Akram</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Lindell</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Pedersen</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Neutze</surname><given-names>R</given-names></name>
+<etal/></person-group>             <year>2010</year>             <article-title>Proteorhodopsin phototrophy confers enhanced survival of marine bacteria during starvation.</article-title>             <source>PLoS Biol</source>             <volume>8</volume>             <fpage>e1000358</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pbio.1000358" xlink:type="simple">10.1371/journal.pbio.1000358</ext-link></comment>          </element-citation></ref>
+<ref id="pbio.1000359-Martinez1"><label>17</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Martinez</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Bradley</surname><given-names>A. S</given-names></name>
+<name name-style="western"><surname>Waldbauer</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Summons</surname><given-names>R. E</given-names></name>
+<name name-style="western"><surname>DeLong</surname><given-names>E. F</given-names></name>
+</person-group>             <year>2007</year>             <article-title>Proteorhodopsin photosystem gene expression enables photophosphorylation in heterologous host.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>104</volume>             <fpage>5590</fpage>             <lpage>5595</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Walter1"><label>18</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Walter</surname><given-names>J. M</given-names></name>
+<name name-style="western"><surname>Greenfield</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Bustamante</surname><given-names>C</given-names></name>
+<name name-style="western"><surname>Liphardt</surname><given-names>J</given-names></name>
+</person-group>             <year>2007</year>             <article-title>Light-powering <italic>Escherichia coli</italic> with proteorhodopsin.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>104</volume>             <fpage>2408</fpage>             <lpage>2412</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Rapp1"><label>19</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Rappé</surname><given-names>M. S</given-names></name>
+<name name-style="western"><surname>Connon</surname><given-names>S. A</given-names></name>
+<name name-style="western"><surname>Vergin</surname><given-names>K. L</given-names></name>
+<name name-style="western"><surname>Giovannoni</surname><given-names>S. J</given-names></name>
+</person-group>             <year>2002</year>             <article-title>Cultivation of the ubiquitous SAR11 marine bacterioplankton clade.</article-title>             <source>Nature</source>             <volume>418</volume>             <fpage>630</fpage>             <lpage>633</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Morris1"><label>20</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Morris</surname><given-names>R. M</given-names></name>
+<name name-style="western"><surname>Rappé</surname><given-names>M. S</given-names></name>
+<name name-style="western"><surname>Connon</surname><given-names>S. A</given-names></name>
+<name name-style="western"><surname>Vergin</surname><given-names>K. L</given-names></name>
+<name name-style="western"><surname>Siebold</surname><given-names>W. A</given-names></name>
+<etal/></person-group>             <year>2002</year>             <article-title>SAR11 clade dominates ocean surface bacterioplankton communities.</article-title>             <source>Nature</source>             <volume>420</volume>             <fpage>806</fpage>             <lpage>810</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Lanyi1"><label>21</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Lanyi</surname><given-names>J. K</given-names></name>
+<name name-style="western"><surname>Balashov</surname><given-names>S. P</given-names></name>
+</person-group>             <year>2008</year>             <article-title>Xanthorhodopsin: a bacteriorhodopsin-like proton pump with a carotenoid antenna.</article-title>             <source>Biochim Biophys Acta</source>             <volume>1777</volume>             <fpage>684</fpage>             <lpage>688</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Lami1"><label>22</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Lami</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Cottrell</surname><given-names>M. T</given-names></name>
+<name name-style="western"><surname>Campbell</surname><given-names>B. J</given-names></name>
+<name name-style="western"><surname>Kirchman</surname><given-names>D. L</given-names></name>
+</person-group>             <year>2009</year>             <article-title>Light-dependent growth and proteorhodopsin expression by <italic>Flavobacteria</italic> and SAR11 in experiments with Delaware coastal waters.</article-title>             <source>Environ Microbiol</source>             <volume>11</volume>             <fpage>3201</fpage>             <lpage>3209</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Gonzlez1"><label>23</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>González</surname><given-names>J. M</given-names></name>
+<name name-style="western"><surname>Fernandez-Gomez</surname><given-names>B</given-names></name>
+<name name-style="western"><surname>Fernandez-Guerra</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Gomez-Consarnau</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Sanchez</surname><given-names>O</given-names></name>
+<etal/></person-group>             <year>2008</year>             <article-title>Genome analysis of the proteorhodopsin-containing marine bacterium Polaribacter sp. MED152 (Flavobacteria).</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>105</volume>             <fpage>8724</fpage>             <lpage>8729</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-McCarren1"><label>24</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>McCarren</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>DeLong</surname><given-names>E. F</given-names></name>
+</person-group>             <year>2007</year>             <article-title>Proteorhodopsin photosystem gene clusters exhibit co-evolutionary trends and shared ancestry among diverse marine microbial phyla.</article-title>             <source>Environ Microbiol</source>             <volume>9</volume>             <fpage>846</fpage>             <lpage>858</lpage>          </element-citation></ref>
+<ref id="pbio.1000359-Sabehi2"><label>25</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Sabehi</surname><given-names>G</given-names></name>
+<name name-style="western"><surname>Béjà</surname><given-names>O</given-names></name>
+<name name-style="western"><surname>Suzuki</surname><given-names>M. T</given-names></name>
+<name name-style="western"><surname>Preston</surname><given-names>C. M</given-names></name>
+<name name-style="western"><surname>DeLong</surname><given-names>E. F</given-names></name>
+</person-group>             <year>2004</year>             <article-title>Divergent SAR86 subgroups harbour divergent proteorhodopsins.</article-title>             <source>Environ Microbiol</source>             <volume>6</volume>             <fpage>903</fpage>             <lpage>910</lpage>          </element-citation></ref>
+</ref-list>
+
+</back>
+</article>

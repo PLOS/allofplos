@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+	<front>
+		<journal-meta>
+    <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+    <journal-id journal-id-type="publisher-id">plos</journal-id>
+    <journal-id journal-id-type="pmc">plosone</journal-id>
+    <journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group>
+    <issn pub-type="epub">1932-6203</issn>
+    <publisher><publisher-name>Public Library of Science</publisher-name>
+    <publisher-loc>San Francisco, USA</publisher-loc></publisher>
+    </journal-meta><article-meta>
+			<article-id pub-id-type="publisher-id">PONE-D-13-11424</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0068090</article-id><article-categories><subj-group subj-group-type="heading">
+    <subject>Research Article</subject></subj-group></article-categories><title-group>
+				<article-title>Abnormal Contextual Modulation of Visual Contour Detection in Patients with Schizophrenia</article-title>
+			<alt-title alt-title-type="running-head">Abnormal Contextual Modulation in Schizophrenia</alt-title>
+      </title-group>
+			<contrib-group>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Schallmo</surname>
+						<given-names>Michael-Paul</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+					<xref ref-type="corresp" rid="cor1"><sup>*</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Sponheim</surname>
+						<given-names>Scott R.</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff2"><sup>2</sup></xref>
+					
+					<xref ref-type="aff" rid="aff3"><sup>3</sup></xref>
+					
+					<xref ref-type="aff" rid="aff4"><sup>4</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Olman</surname>
+						<given-names>Cheryl A.</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff4"><sup>4</sup></xref>
+				</contrib>
+			</contrib-group>
+			<aff id="aff1"><label>1</label> <addr-line>Graduate Program in Neuroscience, University of Minnesota, Minneapolis, Minnesota, United States of America</addr-line></aff>
+			<aff id="aff2"><label>2</label> <addr-line>Veterans Affairs Medical Center, Minneapolis, Minnesota, United States of America</addr-line></aff>
+			<aff id="aff3"><label>3</label> <addr-line>Department of Psychiatry, University of Minnesota, Minneapolis, Minnesota, United States of America</addr-line></aff>
+			<aff id="aff4"><label>4</label> <addr-line>Department of Psychology, University of Minnesota, Minneapolis, Minnesota, United States of America</addr-line></aff>
+			<contrib-group><contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Herzog</surname>
+            <given-names>Michael H.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+        </contrib-group><aff id="edit1"><addr-line>Ecole Polytechnique Federale de Lausanne, Switzerland</addr-line></aff><author-notes>
+				<corresp id="cor1">* E-mail: <email xlink:type="simple">schal110@umn.edu</email></corresp><fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn><fn fn-type="con"><p>Conceived and designed the experiments: CAO SRS. Performed the experiments: MPS CAO SRS. Analyzed the data: MPS CAO. Contributed reagents/materials/analysis tools: SRS CAO. Wrote the manuscript: MPS SRS CAO. </p></fn></author-notes>
+			<pub-date pub-type="collection"><year>2013</year></pub-date><pub-date pub-type="epub">
+        <day>18</day>
+        <month>6</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume><issue>6</issue><elocation-id>e68090</elocation-id><history><date date-type="received">
+          <day>18</day>
+          <month>03</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>25</day>
+          <month>05</month>
+          <year>2013</year>
+        </date>
+      </history><permissions>
+      	<copyright-year>2013</copyright-year>
+      	<license xlink:type="simple"><license-p>This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication.</license-p></license></permissions><abstract>
+				<p>Schizophrenia patients demonstrate perceptual deficits consistent with broad dysfunction in visual context processing. These include poor integration of segments forming visual contours, and reduced visual contrast effects (e.g. weaker orientation-dependent surround suppression, ODSS). Background image context can influence contour perception, as stimuli near the contour affect detection accuracy. Because of ODSS, this contextual modulation depends on the relative orientation between the contour and flanking elements, with parallel flankers impairing contour perception. However in schizophrenia, the impact of abnormal ODSS during contour perception is not clear. It is also unknown whether deficient contour perception marks genetic liability for schizophrenia, or is strictly associated with clinical expression of this disorder. We examined contour detection in 25 adults with schizophrenia, 13 unaffected first-degree biological relatives of schizophrenia patients, and 28 healthy controls. Subjects performed a psychophysics experiment designed to quantify the effect of flanker orientation during contour detection. Overall, patients with schizophrenia showed poorer contour detection performance than relatives or controls. Parallel flankers suppressed and orthogonal flankers enhanced contour detection performance for all groups, but parallel suppression was relatively weaker for schizophrenia patients than healthy controls. Relatives of patients showed equivalent performance with controls. Computational modeling suggested that abnormal contextual modulation in schizophrenia may be explained by suppression that is more broadly tuned for orientation. Abnormal flanker suppression in schizophrenia is consistent with weaker ODSS and/or broader orientation tuning. This work provides the first evidence that such perceptual abnormalities may not be associated with a genetic liability for schizophrenia.</p>
+			</abstract>
+    	<funding-group><funding-statement>This work was supported by a National Science Foundation Graduate Research Fellowship (GRF 00006595 to MPS, nsf.gov); the National Institutes of Health (R21 NS075525 to CAO and T32 GM08471, nih.gov); and the Veterans Health Administration (CSMRF I01CX000227-01 to SRS, va.gov/health). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group></article-meta>
+	</front>
+	<body>
+		<sec id="s1" sec-type="introduction">
+			<title>Introduction</title>
+			<p>In everyday visual perception, objects and paths are defined by visual contours. Contour detection is a perceptual process that is critical for identifying visual edges and boundaries, plays an important role in figure-ground segmentation, and is essential for locating and recognizing objects (for a review, see <xref ref-type="bibr" rid="B1">[1]</xref>). Contours are sometimes composed of individual elements that are spatially separated, for example when one object occludes part of another. When broken contours are encountered during normal vision, attributes or features such as the contrast, spacing, and relative orientation of contour elements, as well as curvature, closure, and contour length strongly influence perception, as demonstrated in psychophysical [<xref ref-type="bibr" rid="B2">2</xref>–<xref ref-type="bibr" rid="B4">4</xref>], electrophysiological [<xref ref-type="bibr" rid="B5">5</xref>], and neuroimaging experiments [<xref ref-type="bibr" rid="B6">6</xref>]. These observations are in general agreement with the rules of perceptual organization, such as proximity, continuity and similarity, as described in Gestalt psychology [<xref ref-type="bibr" rid="B7">7</xref>]. Patients with schizophrenia perform worse than healthy controls in contour integration paradigms [<xref ref-type="bibr" rid="B8">8</xref>–<xref ref-type="bibr" rid="B13">13</xref>], but the manner in which stimulus features affect this perceptual deficit is not fully understood.</p>
+			<p>Not only do the features of a visual contour affect perception, but the context (or background) in which a contour appears also modulates perceptual saliency, an effect commonly referred to as contextual modulation. Orientation-dependent surround suppression (ODSS) is one form of contextual modulation that applies to a broad range of stimuli; the perceptibility of a target is affected by the position and relative orientation of nearby stimuli. Recent psychophysical work in the field of contour perception has shown that parallel flanking elements tend to suppress perception of target contours, while orthogonal flankers cause less suppression, in agreement with ODSS [<xref ref-type="bibr" rid="B14">14</xref>–<xref ref-type="bibr" rid="B17">17</xref>]. Extensive investigations of contextual effects during early visual processing have been made among healthy subjects in past decades, and several groups have recently demonstrated weaker surround suppression effects among patients with schizophrenia compared with controls [<xref ref-type="bibr" rid="B18">18</xref>–<xref ref-type="bibr" rid="B22">22</xref>]; but see [<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B24">24</xref>].</p>
+			<p>Both contour integration and surround suppression have been highlighted as examples of well documented visual abnormalities in schizophrenia whose investigation may provide insight into the neural underpinnings of this disorder [<xref ref-type="bibr" rid="B25">25</xref>]. However, it is not yet known to what extent genetic liability for schizophrenia may contribute to such abnormalities. Further, previous investigations of contour integration deficits in schizophrenia have not specifically examined the role of surrounding stimulus orientation during task performance. Thus, it is not clear how surround suppression deficits in schizophrenia may affect contour perception. In order to better understand the neural mechanism(s) underlying impaired contour detection and abnormal ODSS in this disorder, we examined the performance of patients with schizophrenia, unaffected first-degree biological relatives of schizophrenia patients, and healthy controls during a contour detection paradigm, while manipulating the local orientation context in which target contours appeared. Computational modeling allowed us to separately and quantitatively characterize baseline task performance, the strength of contextual modulation, and its dependence on flanker orientation.</p>
+		</sec>
+		<sec id="s2" sec-type="methods">
+			<title>Methods</title>
+		</sec>
+		<sec id="s3">
+			<title>Summary</title>
+			<p>Patients with schizophrenia, unaffected first-degree biological relatives of schizophrenia patients, and healthy control subjects were recruited to perform a contour detection task. Subjects detected an open vertical contour within a briefly presented array of Gabor stimuli (Gaussian-enveloped sinusoidal luminance modulation, see <xref ref-type="fig" rid="pone-0068090-g001">Figure 1)</xref>. Target contours were presented either to the right or to the left of fixation and were flanked by Gabors that were parallel, orthogonal or randomly oriented relative to the vertical contour, which defined the stimulus condition. Our group has previously examined contour detection in healthy adults using this paradigm [<xref ref-type="bibr" rid="B15">15</xref>]. Task performance was quantified in terms of contour detection thresholds corresponding to the level of orientation jitter for which a subject would detect target contours with 79% accuracy.</p>
+			<fig id="pone-0068090-g001" position="float">
+				<object-id pub-id-type="doi">10.1371/journal.pone.0068090.g001</object-id><label>Figure 1</label>
+				<caption><title>Example Stimuli.</title>
+					<p>Top, Random condition. Target contours (composed of 5 Gabors) were presented in a vertical line in the second column to either the right (as shown in top example) or left of fixation. The Gabors horizontally adjacent to possible target positions are termed flankers, and were oriented randomly in this condition. The distribution of flanker orientations is shown at the top of each panel in brackets. Bottom left, zoomed region to show detail of Parallel condition. Average orientation of flankers (four sets bracketed in red) is parallel to the vertical contour axis. Target contour is presented on the left in both bottom panels. Flankers surrounded both possible target contour locations on every trial. Bottom right, detail of Orthogonal condition. Flankers (bracketed in blue) are on average oriented orthogonal to the vertical target contour.</p>
+				</caption>
+				<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0068090.g001"/>
+			</fig>
+			<sec id="s3.1">
+				<title>Participants</title>
+				<p>Twenty eight outpatients (25 with schizophrenia, 3 with schizoaffective disorder – depressed type), 15 first-degree biological relatives of schizophrenia patients, and 29 healthy controls were recruited through the VA Hospital in Minneapolis, MN. Participants were excluded according to the following criteria: English as a second language, mental retardation, current alcohol abuse/drug dependence, current or past central nervous system condition, history of head injury with skull fracture or substantial loss of consciousness, history of electroconvulsive therapy, age less than 18 or greater than 60. Healthy controls were absent diagnoses of bipolar disorder and any psychotic disorder in themselves and their first-degree biological relatives.</p>
+				<p>The Structured Clinical Interview for DSM Disorders and the Psychosis Module of the Diagnostic Interview for Genetic Studies [<xref ref-type="bibr" rid="B26">26</xref>] were completed with each participant, and DSM-IV-TR diagnoses [<xref ref-type="bibr" rid="B27">27</xref>] were made by a doctoral-level clinical psychologist. All participants had psychiatric functioning assessed using the Brief Psychiatric Rating Scale (BPRS) [<xref ref-type="bibr" rid="B28">28</xref>], with controls and relatives additionally completing the Schizotypal Personality Questionnaire (SPQ) [<xref ref-type="bibr" rid="B29">29</xref>]. IQ was estimated from the Wechsler Adult Intelligence Scale (WAIS-III) [<xref ref-type="bibr" rid="B30">30</xref>]. Parental education was assessed among patients and controls using a 7 point scale self-report questionnaire, with 1 corresponding to completing 7<sup>th</sup> grade or less, and 7 indicating completion of a graduate degree. Mean education score from both parents was taken for each subject. Medication dosages for schizophrenia patients were converted to Chlorpromazine equivalents (in milligrams) [<xref ref-type="bibr" rid="B31">31</xref>]. Demographic data are presented in <xref ref-type="table" rid="tab1">Table 1</xref>. Age, parental education, and SPQ scores were not different between groups. Gender distributions differed, with more males than females recruited among patients. BPRS scores were higher, and years of education were lower for patients and relatives than for controls. Estimated IQ was marginally different between groups, and tended to be lower among patients than controls. All participants had normal or corrected-to-normal vision.</p>
+				<table-wrap id="tab1" position="float">
+					<label>Table 1</label>
+					<caption>
+						<title>Subject Group Demographics.</title>
+					</caption><table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1"><bold>Index</bold></th>
+								<th rowspan="1" colspan="1"><bold>Scz</bold> (<italic>n</italic> = 25)</th>
+								<th rowspan="1" colspan="1"><bold>Rel</bold> (<italic>n</italic> = 13)</th>
+								<th rowspan="1" colspan="1"><bold>Cont</bold> (<italic>n</italic> = 28)</th>
+								<th rowspan="1" colspan="1"><bold>Statistics</bold></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1">Age (years)</td>
+								<td rowspan="1" colspan="1">41.8 (11.9)</td>
+								<td rowspan="1" colspan="1">40.1 (14.7)</td>
+								<td rowspan="1" colspan="1">45.1 (11.6)</td>
+								<td rowspan="1" colspan="1">F<sub>(2,63)</sub> = 0.88, <italic>p</italic> = 0.42</td>
+							</tr>
+							<tr>
+								<td colspan="4" rowspan="1">Gender (<italic>n</italic>)<sup><xref rid="ngtab1.1">1</xref></sup></td>
+								<td rowspan="1" colspan="1">Χ<sup>2</sup> <sub>(2)</sub> = 8.24, <italic>p</italic> = 0.02</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Male</td>
+								<td rowspan="1" colspan="1">4</td>
+								<td rowspan="1" colspan="1">7</td>
+								<td rowspan="1" colspan="1">14</td>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Female</td>
+								<td rowspan="1" colspan="1">21</td>
+								<td rowspan="1" colspan="1">6</td>
+								<td rowspan="1" colspan="1">14</td>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Education (years)<sup><xref rid="ngtab1.2">2</xref></sup></td>
+								<td rowspan="1" colspan="1">13.5 (1.5)</td>
+								<td rowspan="1" colspan="1">13.2 (1.4)</td>
+								<td rowspan="1" colspan="1">15.2 (1.8)</td>
+								<td rowspan="1" colspan="1">F<sub>(2,63)</sub> = 9.83, <italic>p</italic> &lt; 0.01</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Estimated IQ<sup><xref rid="ngtab1.3">3</xref></sup> (from WAIS-III)</td>
+								<td rowspan="1" colspan="1">97.8 (17.6)</td>
+								<td rowspan="1" colspan="1">107 (17.2)</td>
+								<td rowspan="1" colspan="1">109 (12.2)</td>
+								<td rowspan="1" colspan="1">F<sub>(2,57)</sub> = 3.15, <italic>p</italic> = 0.05</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Parental Education<sup><xref rid="ngtab1.4">a</xref></sup></td>
+								<td rowspan="1" colspan="1">4.8 (1.2)</td>
+								<td rowspan="1" colspan="1">NA</td>
+								<td rowspan="1" colspan="1">5.0 (1.12)</td>
+								<td rowspan="1" colspan="1">F<sub>(1,51)</sub> = 0.48, <italic>p</italic> = 0.49</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Overall Symptomatology<sup><xref rid="ngtab1.5">4</xref></sup> (BPRS Total Score)</td>
+								<td rowspan="1" colspan="1">42.7 (13.1)</td>
+								<td rowspan="1" colspan="1">31.9 (6.4)</td>
+								<td rowspan="1" colspan="1">27.6 (4.02)</td>
+								<td rowspan="1" colspan="1">F<sub>(2,61)</sub> = 18.5, <italic>p</italic> &lt; 0.01</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Schizotypal Characteristics (SPQ Total Score)</td>
+								<td rowspan="1" colspan="1">NA</td>
+								<td rowspan="1" colspan="1">15.5 (13.9)</td>
+								<td rowspan="1" colspan="1">9.7 (6.52)</td>
+								<td rowspan="1" colspan="1">F<sub>(1,29)</sub> = 2.61, <italic>p</italic> = 0.12</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">CPZ Equivalents<sup><xref rid="ngtab1.6">b</xref></sup></td>
+								<td rowspan="1" colspan="1">270 (219)</td>
+								<td rowspan="1" colspan="1">NA</td>
+								<td rowspan="1" colspan="1">NA</td>
+								<td rowspan="1" colspan="1">NA</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn>
+							<p>All data are presented as Mean (Standard Deviation), unless otherwise noted.</p>
+						</fn>
+						<fn>
+							<p>Cont = healthy control group, Rel = first-degree relative group, Scz = schizophrenia patient group. WAIS-III – Wechsler Adult Intelligence Scale, 3rd Edition. BPRS = 24-item Brief Psychiatric Rating Scale. SPQ = Schizotypal Personality Questionnaire. NA = not applicable.</p>
+						</fn>
+						<fn id="ngtab1.4">
+							<label>a</label>
+							<p> Parental education was assessed using a self-report questionnaire on a 7 point rating scale (see Methods).</p>
+						</fn>
+						<fn id="ngtab1.6">
+							<label>b</label>
+							<p> Medication dosages were calculated in Chlorpromazine equivalents (mg).</p>
+						</fn>
+						<fn id="ngtab1.1">
+							<label>1</label>
+							<p> There was a marginally significant difference in gender distribution between patients and healthy controls following Yates’s and Bonferroni corrections, Χ<sup>2</sup> <sub>(1)</sub> = 5.37, p 0.06.</p>
+						</fn>
+						<fn id="ngtab1.2">
+							<label>2</label>
+							<p> Education was significantly higher among the healthy control group compared with both patients and first-degree relatives, Tukey’s HSD, <italic>p</italic> &lt; 0.05.</p>
+						</fn>
+						<fn id="ngtab1.3">
+							<label>3</label>
+							<p> There was a marginally significant difference between the Estimated IQ scores for patients and healthy controls, Tukey’s HSD, p 0.05.</p>
+						</fn>
+						<fn id="ngtab1.5">
+							<label>4</label>
+							<p> BPRS scores were significantly lower among the healthy control group compared with both patients and first-degree relatives, Tukey’s HSD, <italic>p</italic> &lt; 0.05.</p>
+						</fn>
+						<fn>
+							<p>Estimated IQ data were not obtained for 6 healthy controls subjects. One first-degree relative did not report parental education. One healthy control and one first-degree relative did not complete the BPRS. Eight healthy controls and two first-degree relatives did not complete the SPQ.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+			</sec>
+			<sec id="s3.2">
+				<title>Ethics Statement</title>
+				<p>Experimental protocols were approved by Institutional Review Boards at the University of Minnesota and Minneapolis VA Medical Center. Subjects gave written informed consent prior to participation, and were paid $15 per hour. The researcher conducting the consent process provided a description of the protocol, outlined the potential risks and benefits of participation, and explained that the decision to participate had no bearing on services obtained at the VA Medical Center, including psychiatric treatment for patients, as stated in the consent form. Individuals who declined to participate in the study were not disadvantaged in any way.</p>
+			</sec>
+			<sec id="s3.3">
+				<title>Stimuli</title>
+				<p>Stimuli were presented using MATLAB (The MathWorks) and Psychtoolbox [<xref ref-type="bibr" rid="B32">32</xref>,<xref ref-type="bibr" rid="B33">33</xref>] software on a MacMini running OSX. Images were displayed on a Dell 19″ monitor that subtended 35.1 x 26.7 degrees of visual angle at a viewing distance of 61 cm. Monitor color look-up table was linearized using custom software. Stimuli consisted of Gabor patches in grids of 15 x 15 elements. Grids subtended 12°. Vertical target contours comprised five aligned Gabors of the same spatial phase located at 1.6° eccentricity to the left or right of the central fixation square. Each Gabor consisted of a 2 cycles per degree sine wave grating modulated by a Gaussian envelope (σ = 0.17°), spaced 0.8° from one another (i.e., 1.6λ separation, where λ is the wavelength of the sine wave grating). Spacing, carrier frequency and eccentricity were selected to maximize flanker orientation effects based our previous work [<xref ref-type="bibr" rid="B15">15</xref>]. Gabors were presented at 80% contrast. Background was set to mean gray. Orientation of non-target, non-flanker Gabors was random, but differed by at least 30° between cardinal neighbors to prevent perception of an unintended contour.</p>
+				<p>Contour detection thresholds were measured for three conditions. In the Random condition, Gabors immediately to the right and left (termed flankers) of the contour were randomly oriented (<xref ref-type="fig" rid="pone-0068090-g001">Figure 1</xref>, top). In the Parallel and Orthogonal conditions, flanker orientation was drawn from a uniform distribution with ± 45° range centered on 0° or 90° relative to the vertical contour, respectively (flankers bracketed in <xref ref-type="fig" rid="pone-0068090-g001">Figure 1</xref>, bottom). Note that the orientation of flankers adjacent to both possible target positions (left and right) was drawn from the flanker distribution, regardless of target location on a given trial. This was done to prevent flanker orientation from providing a cue for target detection.</p>
+			</sec>
+			<sec id="s3.4">
+				<title>Procedure</title>
+				<p>Subjects were instructed to use their peripheral vision to detect a contour either to the right or to the left of fixation, and to press the corresponding arrow key. Task difficulty was controlled by varying orientation jitter within the contour. Relative orientation of contour elements was adjusted in steps of 4.5° of jitter (range 0–45°). Jitter increased after three consecutive correct responses, and decreased after one incorrect response. This 3-up 1-down staircase converges on a contour detection threshold at the jitter level for which targets are detected with 79% accuracy [<xref ref-type="bibr" rid="B34">34</xref>]. The task was organized into blocks of 30 trials. Flanker orientation was held constant within blocks. Subjects completed at least 3 blocks per condition (9 total). The order of blocks was pseudo-randomized.</p>
+				<p>At trial onset, the fixation mark appeared for 500 msec. Stimuli were then presented for 150 msec. Response time was not limited. Feedback was given for 100 msec after each response. The fixation mark turned green after correct or red after incorrect responses, then disappeared for 500 msec. Total minimum inter-stimulus interval was 1.1 sec. At next trial onset, the fixation mark (and subsequent stimulus array) was randomly moved within 0.5° of the center of the screen. This eliminated the possibility of successfully performing the task by fixating on potential target positions. Fixation and target positions never overlapped in sequential trials. Task performance was monitored by research staff. Reaction times (RTs) were measured for each trial. Median RTs within blocks were compared between groups in a repeated measures analysis of variance, with subjects nested within groups (abbreviated ANOVA in Results). RTs were not different between groups (<italic>F</italic><sub>(2,64)</sub> = 0.89, <italic>p</italic> = 0.42). Median RT across subjects was 633 msec.</p>
+				<p>Prior to the beginning of main experiment, subjects saw three example stimuli sequentially to ensure task comprehension. In these examples, jitter increased from 0° to 13.5°. Subjects next practiced the task before data collection. Practice consisted of at least two sets of 8 trials, continuing until subjects achieved &gt; 80% accuracy. Contour jitter during the two practice sessions was 0° and 4.5°, respectively. Flanker orientation during practice was random.</p>
+			</sec>
+			<sec id="s3.5">
+				<title>Analysis</title>
+				<p>Contour detection thresholds were obtained for each block of 30 trials by taking the mean jitter level of the last 3 trials in each block. Thresholds were not calculated if the jitter value was 0° for more than 3 of the last 5 trials in a block, as this indicated performance at floor level. Thresholds were also not calculated if the standard deviation of the jitter values during the last 5 trials was greater than 3.5°, because this indicated unstable performance at the end of the block, which would produce an unreliable threshold estimate. Of 765 runs in all subjects, 39 thresholds were not estimated due to floor performance, and 105 were not estimated due to poor convergence. The distributions of excluded runs did not differ between groups (Χ<sup>2</sup> <sub>(2)</sub> values &lt; 4.44, <italic>p</italic> values &gt; 0.10). Subjects were excluded from further analyses if they had fewer than 5 total threshold estimates, or zero thresholds in any condition. Data from 3 patients with schizophrenia, 2 relatives of schizophrenia patients, and 1 healthy control were excluded in this way. The observed pattern of results was not altered by data exclusion. Data from 25 schizophrenia patients, 13 relatives, and 28 controls were included in the final analyses. Contextual modulation indices were calculated for Parallel and Orthogonal blocks for each subject by taking contour detection thresholds and subtracting the subject’s mean Random condition threshold. When appropriate, <italic>p</italic> values were corrected for multiple comparisons using Tukey’s Honestly Significant Difference (HSD) or False Discovery Rate (FDR) corrections.</p>
+			</sec>
+			<sec id="s3.6">
+				<title>Computational Modeling</title>
+				<p>The following model was used to characterize the dependence of task performance on flanker orientation:</p>
+				<disp-formula id="eqn1"><mml:math id="m1" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mi>T</mml:mi><mml:mo>=</mml:mo><mml:msub><mml:mi>T</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>c</mml:mi><mml:mi>s</mml:mi></mml:msub><mml:msub><mml:mtext>N</mml:mtext><mml:mi>s</mml:mi></mml:msub><mml:mo>(</mml:mo><mml:mrow><mml:mrow><mml:msub><mml:mi>θ</mml:mi><mml:mrow><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>|</mml:mo></mml:mrow><mml:mtext> </mml:mtext><mml:mn>0</mml:mn><mml:mo>°</mml:mo><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:mi>σ</mml:mi><mml:msubsup><mml:mtext> </mml:mtext><mml:mi>s</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>)</mml:mo></mml:mrow></mml:semantics></mml:math>	<label>(1)</label></disp-formula>
+				<p>where <italic>T</italic> is the observer’s contour detection threshold, and <italic>T</italic><sub>0</sub> sets the performance baseline. The term <italic>c</italic><sub><italic>s</italic></sub> scales the amplitude of flanker suppression, which is defined by N<sub><italic>s</italic></sub>, a circular normal function:</p>
+				<disp-formula id="eqn2"><mml:math id="m2" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:msub><mml:mi>Ν</mml:mi><mml:mi>s</mml:mi></mml:msub><mml:mo>(</mml:mo><mml:mrow><mml:mrow><mml:msub><mml:mi>θ</mml:mi><mml:mrow><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>|</mml:mo></mml:mrow><mml:mtext> </mml:mtext><mml:mtext> </mml:mtext><mml:mi>μ</mml:mi><mml:mo>,</mml:mo><mml:mtext> </mml:mtext><mml:mi>σ</mml:mi><mml:msubsup><mml:mtext> </mml:mtext><mml:mi>s</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>)</mml:mo><mml:mo>=</mml:mo><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mfrac><mml:mrow><mml:mi>cos</mml:mi><mml:mo>(</mml:mo><mml:msub><mml:mi>θ</mml:mi><mml:mrow><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi></mml:mrow></mml:msub><mml:mo>−</mml:mo><mml:mi>μ</mml:mi><mml:mo>)</mml:mo><mml:mtext> </mml:mtext><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>σ</mml:mi><mml:msubsup><mml:mtext> </mml:mtext><mml:mi>s</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mfrac></mml:mrow></mml:msup></mml:mrow></mml:semantics></mml:math>	<label>(2)</label></disp-formula>
+				<p>Using a mean (<italic>μ</italic>) of 0°, its magnitude is a function of average flanker orientation relative to the contour (θ<sub><italic>rel</italic></sub> = 0, 45°, or 90°), and its orientation tuning width is set by σ<sub><italic>s</italic></sub>. Contour detection thresholds from all three flanker conditions for schizophrenia patients and healthy controls were fit with this model using MATLAB’s <italic>lsqcurvefit</italic> function. <italic>T</italic><sub>0</sub> was constrained within the interquartile range of patient and control Orthogonal thresholds, <italic>c</italic><sub><italic>s</italic></sub> was constrained between 0 and the (negative) upper limit of <italic>T</italic><sub>0</sub>, and σ<sub><italic>s</italic></sub> between 0 and 360°. Statistical significance for parameter differences between groups was assessed using a bootstrap procedure, resampling subject data within groups with replacement across 2000 iterations.</p>
+			</sec>
+		</sec>
+		<sec id="s4" sec-type="results">
+			<title>Results</title>
+			<sec id="s4.1">
+				<title>Contour Detection Performance</title>
+				<p>Contour detection thresholds were examined across three flanker orientation conditions (Parallel, Random, and Orthogonal) and between subject groups (schizophrenia patients, first-degree relatives, and healthy controls). Higher thresholds indicated more tolerance for orientation jitter within the contour, and thus better contour detection performance. We observed a significant main effect of condition (ANOVA, <italic>F</italic><sub>(2,63)</sub> = 145, <italic>p</italic> &lt; 0.001); contour detection performance was worst in the presence of parallel flankers and best in the presence of orthogonal flankers (<xref ref-type="fig" rid="pone-0068090-g002">Figure 2)</xref>. This is consistent with previous reports [<xref ref-type="bibr" rid="B14">14</xref>–<xref ref-type="bibr" rid="B16">16</xref>]. We also observed a significant main effect of group (<italic>F</italic><sub>(2,63)</sub> = 4.49, <italic>p</italic> = 0.015), with lower contour detection performance overall for patients than for healthy controls and first-degree relatives. No significant interaction between group and condition was observed (<italic>F</italic><sub>(4,126)</sub> = 1.76, <italic>p</italic> = 0.140).</p>
+				<fig id="pone-0068090-g002" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0068090.g002</object-id><label>Figure 2</label>
+					<caption><title>Contour Detection Thresholds.</title>
+						<p>Mean contour detection thresholds are plotted for 28 healthy controls (circles), 13 first-degree relatives (squares), and 25 patients with schizophrenia (triangles) for the Parallel (red), Random (gray), and Orthogonal (blue) conditions. Example contours with 4.5° jitter (bottom) and 31.5° jitter (top) are shown along the y-axis. Error bars are S.E.M. Double asterisk indicates significant differences in Random condition thresholds between schizophrenia patients and both healthy controls and first-degree relatives, single asterisk indicates a significant difference in Orthogonal condition thresholds between patients and relatives. Corrected for multiple comparisons via Tukey’s HSD, <italic>p</italic> &lt; 0.05.</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0068090.g002"/>
+				</fig>
+				<p>Following up on the significant main effect of group, we tested for group differences on each condition. Patients performed significantly worse than controls and relatives in the Random condition (Tukey’s HSD, <italic>p</italic> values &lt; 0.01, Cohen’s d = 1.12), significantly worse than relatives in the Orthogonal condition (Tukey’s HSD, <italic>p</italic> = 0.041, Cohen’s d = 0.68), and showed a trend toward poorer Orthogonal performance versus controls that did not survive correction for multiple comparisons (uncorrected <italic>p</italic> = 0.006, Cohen’s d = 0.50). Trends toward poorer contour detection performance among patients in the Parallel condition also did not survive multiple comparisons correction (uncorrected <italic>p</italic> values &lt; 0.035, Cohen’s <italic>d</italic> values &gt; 0.40). Performance did not differ significantly between controls and relatives in any condition.</p>
+				<p>To explore whether demographic factors were associated with task performance, correlations were examined between contour detection thresholds and demographic values across all groups. We observed significant correlations between both Random and Orthogonal condition thresholds and estimated IQ scores (<italic>r</italic><sub>(58)</sub> = 0.54 and 0.49, FDR corrected <italic>p</italic> values &lt; 0.001 and 0.002, respectively). Within groups, there were significant correlations between estimated IQ and Random / Orthogonal thresholds among schizophrenia patients (<italic>r</italic><sub>(23)</sub> = 0.70 and 0.68, FDR corrected <italic>p</italic> values &lt; 0.008 and 0.014, respectively), but not for controls or relatives (uncorrected <italic>p</italic> values &gt; 0.306). Other demographic factors (education, CPZ equivalents, BPRS and SPQ scores) were not significantly correlated with contour detection thresholds (FDR corrected <italic>p</italic> values &gt; 0.441). This analysis indicated that baseline task performance may depend in part on IQ score; subsequent analyses therefore focused on effects of context within individuals, since performance differences between flanker conditions should not be confounded by an overall effect of IQ score.</p>
+			</sec>
+			<sec id="s4.2">
+				<title>Contextual Modulation</title>
+				<p>As patients with schizophrenia show diminished ODSS effects [<xref ref-type="bibr" rid="B20">20</xref>], we predicted that the effect of flanker orientation on contour detection performance would be relatively weaker among patients. In order to test this hypothesis, we calculated Parallel and Orthogonal contextual modulation indices for all subjects (see <xref ref-type="fig" rid="pone-0068090-g003">Figure 3)</xref>. Indices were obtained by subtracting the Random condition threshold from those obtained in the Parallel and Orthogonal conditions. This metric quantified the relative effect of flanker orientation in terms of increased or decreased tolerance to orientation jitter within the contour, irrespective of overall task performance. Patients showed abnormal contextual modulation compared with first-degree biological relatives and healthy controls (ANOVA, <italic>F</italic><sub>(2,63)</sub> = 3.15, <italic>p</italic> = 0.049).</p>
+				<fig id="pone-0068090-g003" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0068090.g003</object-id><label>Figure 3</label>
+					<caption><title>Contextual Modulation Indices.</title>
+						<p>Mean indices are plotted for 28 healthy controls (circles), 13 first-degree relatives (squares), and 25 patients with schizophrenia (triangles) in the Parallel (red) and Orthogonal (blue) conditions. Negative indices indicate conditions where contour detection was suppressed relative to the Random condition, whereas positive indices indicate enhanced contour perception. Asterisk indicates a significant difference between schizophrenia patients and healthy controls, corrected for multiple comparisons via Tukey’s HSD, <italic>p</italic> &lt; 0.05. Error bars are S.E.M.</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0068090.g003"/>
+				</fig>
+				<p>Post-hoc analyses revealed that in the Parallel condition, contextual modulation indices were significantly weaker among patients than controls (Tukey’s HSD, <italic>p</italic> = 0.017, Cohen’s d = 0.68). This indicated that patients with schizophrenia could tolerate relatively more orientation jitter within the target contour in the Parallel condition, and thus performed <italic>better</italic> than the controls in the presence of suppressive parallel flankers, relative to the Random condition. There were trends toward higher Orthogonal indices among patients versus controls (uncorrected <italic>p</italic> = 0.044, Cohen’s d = 0.47), and for higher indices among patients versus relatives in both conditions (uncorrected <italic>p</italic> values &lt; 0.02, Cohen’s <italic>d</italic> values &gt; 0.70); however, these did not survive correction for multiple comparisons. Contextual modulation indices did not differ between controls and relatives (uncorrected <italic>p</italic> values &gt; 0.250, Cohen’s <italic>d</italic> values &lt; 0.19). In addition, contextual modulation indices were not significantly correlated with demographic factors (estimated IQ, education, CPZ equivalents, BPRS and SPQ scores, FDR corrected <italic>p</italic> values &gt; 0.321).</p>
+			</sec>
+			<sec id="s4.3">
+				<title>Computational Modeling</title>
+				<p>We fit the contour detection thresholds in all three flanker conditions from patient and control groups with a computational model that allowed us to quantify the effect of relative orientation of flanking elements on contour detection performance (<xref ref-type="disp-formula" rid="eqn1">Equation 1</xref>, Methods). <xref ref-type="fig" rid="pone-0068090-g004">Figure 4A</xref> shows control and patient contour detection thresholds (same data as in <xref ref-type="fig" rid="pone-0068090-g002">Figure 2)</xref> with the model predictions from the fit parameters shown in <xref ref-type="table" rid="tab2">Table 2</xref>.</p>
+				<fig id="pone-0068090-g004" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0068090.g004</object-id><label>Figure 4</label>
+					<caption><title>Computational Modeling.</title>
+						<p>Computational model predications based on parameters from <xref ref-type="table" rid="tab2">Table 2</xref> for 28 control subjects (green solid lines) and 25 schizophrenia patients (purple dashed lines). A) Equation 1 was fit to contour detection task data in all three flanker conditions from healthy controls (circles) and patients with schizophrenia (triangles). Plotted thresholds are identical to those in <xref ref-type="fig" rid="pone-0068090-g002">Figure 2</xref>. Error bars are S.E.M. B) Bootstrapped estimates of <italic>T</italic><sub>0</sub>, <italic>c</italic><sub><italic>s</italic></sub> and σ<sub><italic>s</italic></sub> were used to calculate flanker suppression orientation tuning distributions (in arbitrary units) for the control and patient groups. Lines plot the mean bootstrapped tuning curves for patients and controls. Shaded regions illustrate 1 standard deviation of the bootstrapped distributions for each group. Gray arrows indicate corresponding positions in both panels.</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0068090.g004"/>
+				</fig>
+				
+				<table-wrap id="tab2" position="float">
+					<label>Table 2</label>
+					<caption>
+						<title>Computational Model Parameters.</title>
+					</caption><table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1"><bold>Parameter:</bold></th>
+								<th rowspan="1" colspan="1"><italic>T</italic><sub><italic>0</italic></sub></th>
+								<th rowspan="1" colspan="1"><italic>c</italic><sub><italic>s</italic></sub></th>
+								<th rowspan="1" colspan="1"><italic>σ</italic><sub><italic>s</italic></sub></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Values for control subjects:</bold></td>
+								<td rowspan="1" colspan="1">29.2 (26.6 : 31.5)</td>
+								<td rowspan="1" colspan="1">-13.9 (-16.7 : -11.5)</td>
+								<td rowspan="1" colspan="1">0.54 (0.41 : 0.71)</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Values for schizophrenia patients:</bold></td>
+								<td rowspan="1" colspan="1">30.4 (26.0 : 31.5)</td>
+								<td rowspan="1" colspan="1">-17.2 (-20.0 : -13.0)</td>
+								<td rowspan="1" colspan="1">0.89 (0.64 : 1.07)</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn>
+							<p>Parameters for computational modeling of contour detection task performance. Parameters were fit to group contour detection thresholds from all three flanker conditions using <xref ref-type="disp-formula" rid="eqn1">Equation 1</xref> (see Methods). Values shown are the parameters best fit to the group data (values in parentheses indicate bootstrapped 95% confidence intervals).</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+				<p>Bootstrap analyses showed that model parameters <italic>T</italic><sub>0</sub> (baseline contour detection performance) and <italic>c</italic><sub><italic>s</italic></sub> (overall magnitude of flanker suppression) were not significantly different between groups (<italic>Z</italic> scores = 0.67 and 1.34, FDR corrected <italic>p</italic> values = 0.75 and 0.18, respectively). Values of σ<sub><italic>s</italic></sub>, however, differed between groups (<italic>Z</italic> = 3.29, FDR corrected <italic>p</italic> &lt; 0.002), with the model predicting significantly wider orientation tuning of flanker suppression for patients versus controls. Bootstrapped flanker suppression orientation tuning functions for both groups are shown in <xref ref-type="fig" rid="pone-0068090-g004">Figure 4B</xref>. These illustrate that for patients, more broadly tuned suppression (vs. controls) fit the data well. In summary, computational modeling of experimental data suggests that flanker suppression, which impairs contour detection accuracy, may be more broadly tuned for orientation among patients with schizophrenia.</p>
+			</sec>
+		</sec>
+		<sec id="s5" sec-type="discussion">
+			<title>Discussion</title>
+			<p>We observed impaired contour detection performance among patients with schizophrenia compared with healthy controls and first-degree biological relatives of patients. We also found abnormal contextual modulation among patients, with parallel flankers causing less of a performance decrement (relative to random) for patients than for controls. One explanation for our pattern of results is that schizophrenia leads to an overall impairment in contour integration, in agreement with previous reports [<xref ref-type="bibr" rid="B8">8</xref>–<xref ref-type="bibr" rid="B13">13</xref>,<xref ref-type="bibr" rid="B35">35</xref>–<xref ref-type="bibr" rid="B39">39</xref>]. This is supported by the group difference observed in contour detection thresholds (but no significant group by condition interaction), with patients showing poorest group mean performance in all three flanker conditions. An overall deficit in contour perception may be somewhat offset in the Parallel condition by diminished ODSS in schizophrenia [<xref ref-type="bibr" rid="B20">20</xref>], as evidenced by reduced Parallel contextual modulation found in post-hoc analyses. These competing effects may have limited the power of our study to detect a group by orientation context interaction, as observed previously [<xref ref-type="bibr" rid="B20">20</xref>].</p>
+			<p>Alternatively, our results may be consistent with less selective orientation detectors in early visual cortex [<xref ref-type="bibr" rid="B40">40</xref>], which could give rise to broader tuning of ODSS in schizophrenia. For nearby stimuli within a wide range of flanker orientations, broader ODSS could impair the perceptual salience of a contour during feature integration. We observed the greatest difference in contour detection performance between patients and controls with randomly oriented flankers (which on average are oriented 45° relative to the contour), consistent with the large difference in suppression between groups demonstrated in our model at this flanker orientation (e.g. gray arrows, <xref ref-type="fig" rid="pone-0068090-g004">Figure 4)</xref>. Thus, our model characterized the pattern of results in terms of broader orientation tuned suppression without significant differences in overall performance or suppression strength. Broader orientation tuning among patients should produce weaker Parallel contextual modulation, but larger Orthogonal modulation compared with controls, indicating greater release from flanker suppression between Random and Orthogonal conditions in schizophrenia. Consistent with this proposal, we observed an overall group difference in contextual modulation (but no significant group by condition interaction), weaker Parallel suppression, and a trend toward greater Orthogonal enhancement for patients. Similarly broad tuning has been reported for basic visual responses among schizophrenia patients [<xref ref-type="bibr" rid="B40">40</xref>], and others have proposed that broader tuning for stimulus features may underlie abnormal visual masking in schizophrenia [<xref ref-type="bibr" rid="B41">41</xref>].</p>
+			<p>Although both poorer contour integration with weak flanker suppression and broader orientation tuning with intact contour integration may account for the results we observed in schizophrenia, it is not straightforward to distinguish between these explanations in the current paradigm. One method for teasing apart such proposals would be to examine contextual modulation of contour perception as a function of spacing between stimulus elements. As element separation increases, overall contour detection performance should decrease, but flanker effects should decrease more rapidly, resulting in weak or absent contextual modulation at higher spacing [<xref ref-type="bibr" rid="B15">15</xref>]. A recent report examined contour integration in schizophrenia at two spacing levels [<xref ref-type="bibr" rid="B35">35</xref>]. They found evidence of a contour integration deficit among patients at target Gabor separations of 0.7° and 1.4° (relative spacing was 3.5λ and 7λ, approximately 2-4 times the contour spacing in the current study). While their study did not manipulate flanker orientation, they did observe a consistent performance deficit across a range of spacing over which our previous work [<xref ref-type="bibr" rid="B15">15</xref>] indicates that flanker effects should change dramatically. Their results therefore suggest that broader orientation tuning of flanker suppression cannot fully account for the contour perception deficits observed in the current study among schizophrenia patients. Others have recently reported weaker suppression of contour perception by parallel flankers and poorer orientation discrimination in patients with schizophrenia vs. controls, and interpreted their results within the framework of impaired visual crowding [<xref ref-type="bibr" rid="B42">42</xref>].</p>
+			<p>The current study is the first to investigate whether genetic factors are associated with abnormal contour detection in schizophrenia by examining the performance of patients’ first-degree biological relatives. We observed no significant difference between healthy controls and relatives in either contour detection performance or in contextual modulation. From this, we conclude that abnormal contour perception likely has a closer association with the pathophysiology of schizophrenia, rather than with a genetic liability for this disorder. However, the number of relatives included (<italic>n</italic> = 13) is somewhat low for a psychophysical study in a clinical population, and was smaller than that of our other groups, which may have limited the current study’s power. This smaller sample size may increase the possibility of Type II errors, if for example a large proportion of recruited relatives happen by chance not to be carriers of a genetic variant that influences contour perception, if such genetic factors were to exist. While we find that abnormalities in contour integration and flanker suppression may not prove useful as endophenotypes in schizophrenia, they may instead serve as markers of the current state of neurobiological functioning within the visual system.</p>
+			<p>Previous work has touched on the role of genetics in other early visual processing tasks in schizophrenia. Our results showing normal behavioral performance among relatives of schizophrenia patients agree with the findings of Silverstein and colleagues [<xref ref-type="bibr" rid="B43">43</xref>], who observed that subjects at high risk for developing schizophrenia tended to perform as well as healthy controls in a perceptual organization task. Our findings also agree with previous work showing that symptom remission in patients with disorganized schizophrenia (but not in other psychiatric patients) coincided with improved contour integration [<xref ref-type="bibr" rid="B10">10</xref>]. These reports offered preliminary evidence that visual integration deficits in schizophrenia have an association with disease processes, but not genetic factors. By examining contour detection performance among unaffected first-degree biological relatives of schizophrenia patients, we have provided a stronger test of this hypothesis.</p>
+			<p>Our results agree in part with the findings of Uhlhaas and colleagues [<xref ref-type="bibr" rid="B44">44</xref>], who observed poorer contour integration and weaker context modulation of perceived size among non-clinical schizotypal subjects with disordered thoughts. While we did not assess thought disorders in the current study, we found no association between clinical rating scale scores (BPRS and SPQ) and task performance, which may be related to the fact that the recruited outpatients were not highly symptomatic. In contrast to our current results, others have found abnormal backward masking in schizophrenia vs. controls during Vernier discrimination, but no difference between groups in the effect of orientation context [<xref ref-type="bibr" rid="B45">45</xref>,<xref ref-type="bibr" rid="B46">46</xref>]. Previous work has also shown impairments among unaffected relatives of schizophrenia patients during visual backward masking [<xref ref-type="bibr" rid="B47">47</xref>]. It is possible that genetic factors have a stronger influence on the temporal dynamics of early visual processing compared with static pattern vision.</p>
+			<p>Our task was designed to examine whether contour detection specifically is impaired in schizophrenia. We asked subjects to detect open vertical contours rather than closed figures of a particular shape, thereby mitigating the role of shape representation in task performance. Previous reports of contour integration deficits in schizophrenia have required subjects to locate closed contours at variable positions within the stimulus array [<xref ref-type="bibr" rid="B8">8</xref>–<xref ref-type="bibr" rid="B12">12</xref>], or to discriminate contour shape configurations [<xref ref-type="bibr" rid="B13">13</xref>,<xref ref-type="bibr" rid="B35">35</xref>,<xref ref-type="bibr" rid="B36">36</xref>]. Such tasks required subjects to identify contours whose features (position within an array, global orientation, and local curvature) varied between trials. Performance within these paradigms relies on a subject’s ability to distinguish the shape of the figure formed by the closed contour. A recent report suggested that perceptual integration deficits in schizophrenia might depend more on impaired shape representation than on abnormal contour detection [<xref ref-type="bibr" rid="B35">35</xref>]. The current study did not require visual search or shape discrimination during task performance, yet we nonetheless observed poorer contour detection performance among patients in the Random condition (the one most directly comparable to previous studies). Our results therefore suggest that abnormal contour detection in schizophrenia is a specific perceptual abnormality that is distinct from shape representation impairments that may additionally exist in this disorder.</p>
+			<p>In the current paradigm, we sought to exclude the role of non-specific deficits among schizophrenia patients. A recent report suggested attentional factors may account for the weak contrast-contrast effect [<xref ref-type="bibr" rid="B24">24</xref>] observed when schizophrenia patients reported the perceived contrast of stimuli with and without surrounding context [<xref ref-type="bibr" rid="B18">18</xref>] (but see [<xref ref-type="bibr" rid="B22">22</xref>]). Our study sought to rule out such potential confounds in the following ways: (1) there is no categorical difference between our stimulus conditions based on the absence of surrounding stimuli [<xref ref-type="bibr" rid="B18">18</xref>,<xref ref-type="bibr" rid="B24">24</xref>], so equal effort/attention is required in all conditions; (2) we equated difficulty across flanker conditions using a staircase method to manipulate contour jitter, so all subjects performed at the same level (79% correct) in all conditions; (3) we used contextual modulation indices as dependent variables, making the analyses robust against between groups differences in attention or IQ that might impact overall performance. Indeed, we did not observe significant correlations between contextual modulation indices and estimated IQ, despite such correlations being observed between IQ and contour detection thresholds in the Random and Orthogonal conditions. Task performance among patients was also relatively better than for healthy controls in the presence of parallel flankers, which further argues against the notion that a generalized deficit could account for this result. Others have previously demonstrated that perceptual integration abnormalities in schizophrenia exist independent of a generalized deficit, using tasks in which poorer integration leads to a performance advantage among patients [<xref ref-type="bibr" rid="B48">48</xref>,<xref ref-type="bibr" rid="B49">49</xref>]. Finally, previous reports have demonstrated normal fixation in schizophrenia [<xref ref-type="bibr" rid="B50">50</xref>,<xref ref-type="bibr" rid="B51">51</xref>], and fixational instability would not affect contextual modulation.</p>
+			<p>Our findings relate to several outstanding questions that merit further investigation. First, the physiological correlates of abnormal flanker suppression during contour detection in schizophrenia are not yet clear. Through the use of functional MRI (fMRI), abnormal early visual cortical responses during contour integration have been observed among patients [<xref ref-type="bibr" rid="B13">13</xref>], suggesting that schizophrenia leads to disruptions in contour perception at the earliest stages of cortical processing. Further, diminished surround suppression effects have been found to correlate with lower γ-aminobutyric acid (GABA) concentrations in schizophrenia, as measured by magnetic resonance spectroscopy (MRS) [<xref ref-type="bibr" rid="B52">52</xref>], lending support to the hypothesis that schizophrenia is related to disruptions in GABAergic inhibition [<xref ref-type="bibr" rid="B53">53</xref>]. Future investigations employing spatially localized fMRI and GABA MRS in visual cortex could help elucidate the neural mechanisms underlying these perceptual abnormalities.</p>
+			<p>The relationship between abnormal contextual modulation and other visual deficits in schizophrenia also requires further investigation. Patients with schizophrenia have trouble organizing perceptual information, and some experience visual hallucinations [<xref ref-type="bibr" rid="B48">48</xref>,<xref ref-type="bibr" rid="B49">49</xref>]. The Gestalt principles of proximity and similarity [<xref ref-type="bibr" rid="B7">7</xref>] agree generally with the spatial and orientation specificity of ODSS, which leads us to speculate that abnormal surround suppression may contribute to poorer Gestalt perception in schizophrenia, thereby impairing perceptual grouping. In addition, abnormal electrophysiological activity within visual cortex has been observed in schizophrenia during illusory contour/Gestalt perception [<xref ref-type="bibr" rid="B54">54</xref>–<xref ref-type="bibr" rid="B56">56</xref>]. One study found that occipital signal abnormalities were associated with visual hallucinations [<xref ref-type="bibr" rid="B56">56</xref>]. Abnormal neural synchrony within occipital cortex may therefore be a hallmark of impaired visual feature-binding, which could contribute to both poor contour integration and visual hallucinations in schizophrenia.</p>
+		</sec>
+		<sec id="s6">
+			<title>Conclusion</title>
+			<p>The current study has affirmed previous reports of abnormal contour perception among patients with schizophrenia [<xref ref-type="bibr" rid="B8">8</xref>–<xref ref-type="bibr" rid="B13">13</xref>,<xref ref-type="bibr" rid="B35">35</xref>,<xref ref-type="bibr" rid="B36">36</xref>], even with open vertical target contours presented at fixed spatial positions. In addition, we have found that patients are relatively less impaired by the presence of parallel flanking stimuli during contour detection, compared with healthy adults. This agrees with weaker perceptual surround suppression effects reported in schizophrenia [<xref ref-type="bibr" rid="B18">18</xref>–<xref ref-type="bibr" rid="B22">22</xref>]. Computational modeling of patient data showed that our results are consistent with broader orientation tuning in schizophrenia [<xref ref-type="bibr" rid="B40">40</xref>]. We conclude that schizophrenia leads to deficits in contour detection that are consistent with poorer overall integration and weaker parallel flanker suppression, or with broader tuning for visual stimulus orientation. We did not observe any difference between healthy controls and first-degree biological relatives of schizophrenia patients in contour detection performance or in contextual modulation. These visual processing abnormalities are concomitant with the pathophysiology of schizophrenia, but may not be associated with a genetic liability for this disorder. </p>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<p>The authors would like to thank Nicolaas VanMeerten, Katelynn McConnell, Anna Docherty, and Holly Weber for their help during subject recruitment and data collection, as well as Damien Mannion and Cheng Qiu for their comments and suggestions in revising the manuscript.</p>
+		</ack>
+		<ref-list>
+			<title>References</title>
+			<ref id="B1">
+				<label>1</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Loffler</surname><given-names>G</given-names></name> (<year>2008</year>) <article-title>Perception of contours and shapes: Low and intermediate stage mechanisms</article-title>. <source>Vision Res</source> <volume>48</volume>: <fpage>2106</fpage>-<lpage>2127</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.visres.2008.03.006" xlink:type="simple">10.1016/j.visres.2008.03.006</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18502467" xlink:type="simple">18502467</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B2">
+				<label>2</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Field</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Hayes</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Hess</surname><given-names>RF</given-names></name> (<year>1993</year>) <article-title>Contour integration by the human visual system: Evidence for a local "association field"</article-title>. <source>Vision Res</source> <volume>33</volume>: <fpage>173</fpage>-<lpage>193</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/0042-6989(93)90156-Q" xlink:type="simple">10.1016/0042-6989(93)90156-Q</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/8447091" xlink:type="simple">8447091</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B3">
+				<label>3</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bonneh</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Sagi</surname><given-names>D</given-names></name> (<year>1998</year>) <article-title>Effects of spatial configuration on contrast detection</article-title>. <source>Vision Res</source> <volume>38</volume>: <fpage>3541</fpage>-<lpage>3553</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0042-6989(98)00045-5" xlink:type="simple">10.1016/S0042-6989(98)00045-5</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/9893788" xlink:type="simple">9893788</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B4">
+				<label>4</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Gilbert</surname><given-names>CD</given-names></name> (<year>2002</year>) <article-title>Global contour saliency and local colinear interactions</article-title>. <source>J Neurophysiol</source> <volume>88</volume>: <fpage>2846</fpage>-<lpage>2856</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1152/jn.00289.2002" xlink:type="simple">10.1152/jn.00289.2002</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12424317" xlink:type="simple">12424317</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B5">
+				<label>5</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Piëch</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Gilbert</surname><given-names>CD</given-names></name> (<year>2006</year>) <article-title>Contour saliency in primary visual cortex</article-title>. <source>Neuron</source> <volume>50</volume>: <fpage>951</fpage>-<lpage>962</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neuron.2006.04.035" xlink:type="simple">10.1016/j.neuron.2006.04.035</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16772175" xlink:type="simple">16772175</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B6">
+				<label>6</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Altmann</surname><given-names>CF</given-names></name>, <name name-style="western"><surname>Bülthoff</surname><given-names>HH</given-names></name>, <name name-style="western"><surname>Kourtzi</surname><given-names>Z</given-names></name> (<year>2003</year>) <article-title>Perceptual organization of local elements into global shapes in the human visual cortex</article-title>. <source>Curr Biol</source> <volume>13</volume>: <fpage>342</fpage>-<lpage>349</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0960-9822(03)00052-6" xlink:type="simple">10.1016/S0960-9822(03)00052-6</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12593802" xlink:type="simple">12593802</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B7">
+				<label>7</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Wertheimer</surname><given-names>M</given-names></name> (<year>1938</year>) <article-title>Laws of organization in perceptual forms</article-title>. In: <person-group person-group-type="editor"><name name-style="western"><surname>Ellis</surname><given-names>WD</given-names></name></person-group>. <source>A source book of Gestalt psychology</source>. <publisher-loc>London</publisher-loc>: <publisher-name>Kegan Paul, Trench, Trubner &amp; Company</publisher-name>. pp. <fpage>71</fpage>-<lpage>88</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B8">
+				<label>8</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Silverstein</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Kovács</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Corry</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Valone</surname><given-names>C</given-names></name> (<year>2000</year>) <article-title>Perceptual organization, the disorganization syndrome, and context processing in chronic schizophrenia</article-title>. <source>Schizophr Res</source> <volume>43</volume>: <fpage>11</fpage>-<lpage>20</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0920-9964(99)00180-2" xlink:type="simple">10.1016/S0920-9964(99)00180-2</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/10828411" xlink:type="simple">10828411</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B9">
+				<label>9</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Parnas</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Vianin</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Saebye</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Jansson</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Volmer-Larsen</surname><given-names>A</given-names></name> <etal>et al.</etal> (<year>2001</year>) <article-title>Visual binding abilities in the initial and advanced stages of schizophrenia</article-title>. <source>Acta Psychiatr Scand</source> <volume>103</volume>: <fpage>171</fpage>-<lpage>180</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1034/j.1600-0447.2001.00160.x" xlink:type="simple">10.1034/j.1600-0447.2001.00160.x</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11240573" xlink:type="simple">11240573</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B10">
+				<label>10</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Uhlhaas</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Phillips</surname><given-names>WA</given-names></name>, <name name-style="western"><surname>Silverstein</surname><given-names>SM</given-names></name> (<year>2005</year>) <article-title>The course and clinical correlates of dysfunctions in visual perceptual organization in schizophrenia during the remission of psychotic symptoms</article-title>. <source>Schizophr Res</source> <volume>75</volume>: <fpage>183</fpage>-<lpage>192</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.schres.2004.11.005" xlink:type="simple">10.1016/j.schres.2004.11.005</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15885509" xlink:type="simple">15885509</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B11">
+				<label>11</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Silverstein</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Hatashita-Wong</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Schenkel</surname><given-names>LS</given-names></name>, <name name-style="western"><surname>Wilkniss</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kovács</surname><given-names>I</given-names></name> <etal>et al.</etal> (<year>2006</year>) <article-title>Reduced top-down influences in contour detection in schizophrenia</article-title>. <source>Cogn Neuropsychiatry</source> <volume>11</volume>: <fpage>112</fpage>-<lpage>132</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1080/13546800444000209" xlink:type="simple">10.1080/13546800444000209</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16537237" xlink:type="simple">16537237</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B12">
+				<label>12</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Uhlhaas</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Phillips</surname><given-names>WA</given-names></name>, <name name-style="western"><surname>Mitchell</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Silverstein</surname><given-names>SM</given-names></name> (<year>2006</year>) <article-title>Perceptual grouping in disorganized schizophrenia</article-title>. <source>Psychiatry Res</source> <volume>145</volume>: <fpage>105</fpage>-<lpage>117</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.psychres.2005.10.016" xlink:type="simple">10.1016/j.psychres.2005.10.016</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17081620" xlink:type="simple">17081620</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B13">
+				<label>13</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Silverstein</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Berten</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Essex</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Kovács</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Susmaras</surname><given-names>T</given-names></name> <etal>et al.</etal> (<year>2009</year>) <article-title>An fMRI examination of visual integration in schizophrenia</article-title>. <source>J Integr Neurosci</source> <volume>8</volume>: <fpage>175</fpage>-<lpage>202</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1142/S0219635209002113" xlink:type="simple">10.1142/S0219635209002113</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19618486" xlink:type="simple">19618486</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B14">
+				<label>14</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dakin</surname><given-names>SC</given-names></name>, <name name-style="western"><surname>Baruch</surname><given-names>NJ</given-names></name> (<year>2009</year>) <article-title>Context influences contour integration</article-title>. <source>J Vis</source> <volume>9</volume>: <fpage>1</fpage>-<lpage>13</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/9.13.1" xlink:type="simple">10.1167/9.13.1</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19271923" xlink:type="simple">19271923</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B15">
+				<label>15</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schumacher</surname><given-names>JF</given-names></name>, <name name-style="western"><surname>Quinn</surname><given-names>CF</given-names></name>, <name name-style="western"><surname>Olman</surname><given-names>CA</given-names></name> (<year>2011</year>) <article-title>An exploration of the spatial scale over which orientation-dependent surround effects affect contour detection</article-title>. <source>J Vis</source> <volume>11</volume>: <fpage>1</fpage>-<lpage>12</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/11.3.1" xlink:type="simple">10.1167/11.3.1</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21778251" xlink:type="simple">21778251</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B16">
+				<label>16</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Robol</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Casco</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Dakin</surname><given-names>SC</given-names></name> (<year>2012</year>) <article-title>The role of crowding in contextual influences on contour integration</article-title>. <source>J Vis</source> <volume>12</volume>: <fpage>1</fpage>-<lpage>18</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1167/12.3.1" xlink:type="simple">10.1167/12.3.1</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22776847" xlink:type="simple">22776847</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B17">
+				<label>17</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kingdom</surname><given-names>FAA</given-names></name>, <name name-style="western"><surname>Prins</surname><given-names>N</given-names></name> (<year>2009</year>) <article-title>Texture-surround suppression of contour-shape coding in human vision</article-title>. <source>Neuroreport</source> <volume>20</volume>: <fpage>5</fpage>-<lpage>8</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/WNR.0b013e32831578ca" xlink:type="simple">10.1097/WNR.0b013e32831578ca</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18852682" xlink:type="simple">18852682</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B18">
+				<label>18</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dakin</surname><given-names>SC</given-names></name>, <name name-style="western"><surname>Carlin</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Hemsley</surname><given-names>D</given-names></name> (<year>2005</year>) <article-title>Weak suppression of visual context in chronic schizophrenia</article-title>. <source>Curr Biol</source> <volume>16</volume>: <fpage>R822</fpage>-<lpage>R824</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16243017" xlink:type="simple">16243017</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B19">
+				<label>19</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tadin</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Doop</surname><given-names>ML</given-names></name>, <name name-style="western"><surname>Gibson</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Lappin</surname><given-names>JS</given-names></name> <etal>et al.</etal> (<year>2006</year>) <article-title>Weakened center-surround interactions in visual motion processing in schizophrenia</article-title>. <source>J Neurosci</source> <volume>24</volume>: <fpage>11403</fpage>-<lpage>11412</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17079669" xlink:type="simple">17079669</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B20">
+				<label>20</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yoon</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Rokem</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Silver</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Minzenberg</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Ursu</surname><given-names>S</given-names></name> <etal>et al.</etal> (<year>2009</year>) <article-title>Diminished orientation-specific surround suppression of visual processing in schizophrenia</article-title>. <source>Schizophr Bull</source> <volume>35</volume>: <fpage>1078</fpage>-<lpage>1084</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/schbul/sbp064" xlink:type="simple">10.1093/schbul/sbp064</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19620601" xlink:type="simple">19620601</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B21">
+				<label>21</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yang</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Tadin</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Glasser</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Hong</surname><given-names>SW</given-names></name>, <name name-style="western"><surname>Blake</surname><given-names>R</given-names></name> <etal>et al.</etal> (<year>2013</year>) <article-title>Visual context processing in schizophrenia</article-title>. <source>Clinical Psychological Science</source> <volume>1</volume>: <fpage>5</fpage>-<lpage>15</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B22">
+				<label>22</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tibber</surname><given-names>MS</given-names></name>, <name name-style="western"><surname>Anderson</surname><given-names>EJ</given-names></name>, <name name-style="western"><surname>Bobin</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Antonova</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Seabright</surname><given-names>A</given-names></name> <etal>et al.</etal> (<year>2013</year>) <article-title>Visual surround suppression in schizophrenia</article-title>. <source>Frontiers in Psychology</source> <volume>4</volume>: <fpage>1</fpage>-<lpage>13</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/23450069" xlink:type="simple">23450069</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B23">
+				<label>23</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chen</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Norton</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Ongur</surname><given-names>D</given-names></name> (<year>2008</year>) <article-title>Altered center-surround motion inhibition in schizophrenia</article-title>. <source>Biol Psychiatry</source> <volume>64</volume>: <fpage>74</fpage>-<lpage>77</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.biopsych.2007.11.017" xlink:type="simple">10.1016/j.biopsych.2007.11.017</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18206855" xlink:type="simple">18206855</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B24">
+				<label>24</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Barch</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Carter</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Dakin</surname><given-names>SC</given-names></name>, <name name-style="western"><surname>Gold</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Luck</surname><given-names>SJ</given-names></name> <etal>et al.</etal> (<year>2012</year>) <article-title>The clinical translation of a measure of gain control: The contrast-contrast effect task</article-title>. <source>Schizophr Bull</source> <volume>38</volume>: <fpage>135</fpage>-<lpage>143</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/schbul/sbr154" xlink:type="simple">10.1093/schbul/sbr154</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22101963" xlink:type="simple">22101963</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B25">
+				<label>25</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Butler</surname><given-names>PD</given-names></name>, <name name-style="western"><surname>Silverstein</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Dakin</surname><given-names>SC</given-names></name> (<year>2008</year>) <article-title>Visual perception and its impairment in schizophrenia</article-title>. <source>Biol Psychiatry</source> <volume>64</volume>: <fpage>40</fpage>-<lpage>47</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.biopsych.2008.03.023" xlink:type="simple">10.1016/j.biopsych.2008.03.023</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18549875" xlink:type="simple">18549875</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B26">
+				<label>26</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>First</surname><given-names>MB</given-names></name> (<year>1997</year>) <source>User’s guide for the structured clinical interview for DSM-IV axis I disorders SCID-I: clinician version</source>. <publisher-name>American Psychiatric Publishing, Inc</publisher-name>.</mixed-citation>
+			</ref>
+			<ref id="B27">
+				<label>27</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><collab xlink:type="simple">American Psychiatric Association</collab> (<year>2000</year>) <source>Diagnostic and statistical manual of mental disorders: DSM-IV-TR</source>. <publisher-name>American Psychiatric Publishing, Inc</publisher-name>.</mixed-citation>
+			</ref>
+			<ref id="B28">
+				<label>28</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Overall</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>Donald</surname><given-names>RG</given-names></name> (<year>1962</year>) <article-title>The brief psychiatric rating scale</article-title>. <source>Psychol Rep</source> <volume>10</volume>: <fpage>799</fpage>-<lpage>812</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2466/pr0.1962.10.3.799" xlink:type="simple">10.2466/pr0.1962.10.3.799</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B29">
+				<label>29</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Raine</surname><given-names>A</given-names></name> (<year>1991</year>) <article-title>The SPQ: A scale for the assessment of schizotypal personality based on DSM-III-R criteria</article-title>. <source>Schizophr Bull</source> <volume>17</volume>: <fpage>555</fpage>-<lpage>564</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/schbul/17.4.555" xlink:type="simple">10.1093/schbul/17.4.555</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/1805349" xlink:type="simple">1805349</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B30">
+				<label>30</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jeyakumar</surname><given-names>SLE</given-names></name>, <name name-style="western"><surname>Warriner</surname><given-names>EM</given-names></name>, <name name-style="western"><surname>Raval</surname><given-names>VV</given-names></name>, <name name-style="western"><surname>Ahmad</surname><given-names>SA</given-names></name> (<year>2004</year>) <article-title>Balancing the need for reliability and time efficiency: Short forms of the Wechsler Adult Intelligence Scale-III</article-title>. <source>Educ Psychol Meas</source> <volume>64</volume>: <fpage>71</fpage>-<lpage>87</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1177/0013164403258407" xlink:type="simple">10.1177/0013164403258407</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B31">
+				<label>31</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Andreasen</surname><given-names>NC</given-names></name>, <name name-style="western"><surname>Pressler</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Nopoulos</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Ho</surname><given-names>B-C</given-names></name> (<year>2010</year>) <article-title>Antipsychotic dose equivalents and dose-years: A standardized method for comparing exposure to different drugs</article-title>. <source>Biol Psychiatry</source> <volume>67</volume> <fpage>255</fpage>-<lpage>262</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19897178" xlink:type="simple">19897178</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B32">
+				<label>32</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brainard</surname><given-names>DH</given-names></name> (<year>1997</year>) <article-title>The Psychophysics Toolbox</article-title>. <source>Spat Vis</source> <volume>10</volume>: <fpage>433</fpage>-<lpage>436</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1163/156856897X00357" xlink:type="simple">10.1163/156856897X00357</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/9176952" xlink:type="simple">9176952</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B33">
+				<label>33</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pelli</surname><given-names>DG</given-names></name> (<year>1997</year>) <article-title>The VideoToolbox software for visual psychophysics: Transforming numbers into movies</article-title>. <source>Spat Vis</source> <volume>10</volume>: <fpage>437</fpage>-<lpage>442</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1163/156856897X00366" xlink:type="simple">10.1163/156856897X00366</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/9176953" xlink:type="simple">9176953</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B34">
+				<label>34</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>García-Pérez</surname><given-names>MA</given-names></name> (<year>1998</year>) <article-title>Forced-choice staircases with fixed step sizes: Asymptotic and small-sample properties</article-title>. <source>Vision Res</source> <volume>38</volume>: <fpage>1861</fpage>-<lpage>1881</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0042-6989(97)00340-4" xlink:type="simple">10.1016/S0042-6989(97)00340-4</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/9797963" xlink:type="simple">9797963</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B35">
+				<label>35</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Keane</surname><given-names>BP</given-names></name>, <name name-style="western"><surname>Silverstein</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Barch</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Carter</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Gold</surname><given-names>JM</given-names></name> <etal>et al.</etal> (<year>2012</year>) <article-title>The spatial range of contour integration deficits in schizophrenia</article-title>. <source>Exp Brain Res</source> <volume>220</volume>: <fpage>251</fpage>-<lpage>259</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00221-012-3134-4" xlink:type="simple">10.1007/s00221-012-3134-4</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22710617" xlink:type="simple">22710617</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B36">
+				<label>36</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Silverstein</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Keane</surname><given-names>BP</given-names></name>, <name name-style="western"><surname>Barch</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Carter</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Gold</surname><given-names>JM</given-names></name> <etal>et al.</etal> (<year>2012</year>) <article-title>Optimization and validation of a visual integration test for schizophrenia research</article-title>. <source>Schizophr Bull</source> <volume>38</volume>: <fpage>125</fpage>-<lpage>134</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/schbul/sbr141" xlink:type="simple">10.1093/schbul/sbr141</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22021658" xlink:type="simple">22021658</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B37">
+				<label>37</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Must</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Janka</surname><given-names>Z</given-names></name>, <name name-style="western"><surname>Benedek</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Kéri</surname><given-names>DS</given-names></name> (<year>2004</year>) <article-title>Reduced facilitation effect of collinear flankers on contrast detection reveals impaired lateral connectivity in the visual cortex of schizophrenia patients</article-title>. <source>Neurosci Lett</source> <volume>357</volume>: <fpage>131</fpage>-<lpage>134</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.neulet.2003.12.046" xlink:type="simple">10.1016/j.neulet.2003.12.046</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15036592" xlink:type="simple">15036592</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B38">
+				<label>38</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kéri</surname><given-names>DS</given-names></name>, <name name-style="western"><surname>Kelemen</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Benedek</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Janka</surname><given-names>Z</given-names></name> (<year>2005</year>) <article-title>Lateral interactions in the visual cortex of patients with schizophrenia and bipolar disorder</article-title>. <source>Psychol Med</source> <volume>35</volume>: <fpage>1043</fpage>-<lpage>1051</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1017/S0033291705004381" xlink:type="simple">10.1017/S0033291705004381</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16045070" xlink:type="simple">16045070</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B39">
+				<label>39</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kéri</surname><given-names>DS</given-names></name>, <name name-style="western"><surname>Kelemen</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Benedek</surname><given-names>G</given-names></name> (<year>2009</year>) <article-title>Attentional modulation of perceptual organisation in schizophrenia</article-title>. <source>Cogn Neuropsychiatry</source> <volume>14</volume>: <fpage>77</fpage>-<lpage>86</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1080/13546800902757936" xlink:type="simple">10.1080/13546800902757936</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19370433" xlink:type="simple">19370433</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B40">
+				<label>40</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rokem</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Yoon</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Ooms</surname><given-names>RE</given-names></name>, <name name-style="western"><surname>Maddock</surname><given-names>RJ</given-names></name>, <name name-style="western"><surname>Minzenberg</surname><given-names>MJ</given-names></name> <etal>et al.</etal> (<year>2011</year>) <article-title>Broader visual orientation tuning in patients with schizophrenia</article-title>. <source>Front Hum Neurosci</source> <volume>5</volume>: <fpage>127</fpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22069385" xlink:type="simple">22069385</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B41">
+				<label>41</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Green</surname><given-names>MF</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Wynn</surname><given-names>JK</given-names></name>, <name name-style="western"><surname>Mathis</surname><given-names>KI</given-names></name> (<year>2011</year>) <article-title>Visual masking in schizophrenia: Overview and theoretical implications</article-title>. <source>Schizophr Bull</source> <volume>37</volume>: <fpage>700</fpage>-<lpage>708</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/schbul/sbr051" xlink:type="simple">10.1093/schbul/sbr051</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21606322" xlink:type="simple">21606322</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B42">
+				<label>42</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Robol</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Tibber</surname><given-names>MS</given-names></name>, <name name-style="western"><surname>Anderson</surname><given-names>EJ</given-names></name>, <name name-style="western"><surname>Bobin</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Carlin</surname><given-names>P</given-names></name> <etal>et al.</etal> (<year>2013</year>) <article-title>Reduced crowding and poor contour detection in schizophrenia are consistent with weak surround inhibition</article-title>. <source>PLOS ONE</source> <volume>8</volume>: <fpage>e60951</fpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0060951" xlink:type="simple">10.1371/journal.pone.0060951</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/23585865" xlink:type="simple">23585865</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B43">
+				<label>43</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Silverstein</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Uhlhaas</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Essex</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Halpin</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Schall</surname><given-names>U</given-names></name> <etal>et al.</etal> (<year>2006</year>) <article-title>Perceptual organization in first episode schizophrenia and ultra-high-risk states</article-title>. <source>Schizophr Res</source> <volume>83</volume>: <fpage>41</fpage>-<lpage>52</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.schres.2006.01.003" xlink:type="simple">10.1016/j.schres.2006.01.003</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16497484" xlink:type="simple">16497484</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B44">
+				<label>44</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Uhlhaas</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Silverstein</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Phillips</surname><given-names>WA</given-names></name>, <name name-style="western"><surname>Lovell</surname><given-names>PG</given-names></name> (<year>2004</year>) <article-title>Evidence for impaired visual context processing in schizotypy with thought disorder</article-title>. <source>Schizophr Res</source> <volume>68</volume>: <fpage>249</fpage>-<lpage>260</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0920-9964(03)00184-1" xlink:type="simple">10.1016/S0920-9964(03)00184-1</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15099607" xlink:type="simple">15099607</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B45">
+				<label>45</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schütze</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Bongard</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Marbach</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Brand</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Herzog</surname><given-names>MH</given-names></name> (<year>2007</year>) <article-title>Collinear contextual suppression in schizophrenic patients</article-title>. <source>Psychiatry Res</source> <volume>150</volume>: <fpage>237</fpage>-<lpage>243</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.psychres.2006.03.021" xlink:type="simple">10.1016/j.psychres.2006.03.021</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17321597" xlink:type="simple">17321597</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B46">
+				<label>46</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Roinishvili</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Chkonia</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Brand</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Herzog</surname><given-names>MH</given-names></name> (<year>2008</year>) <article-title>Contextual suppression and protection in schizophrenic patients</article-title>. <source>European Archives of Psychiatry and Clinical Neuroscience</source> <volume>258</volume>: <fpage>210</fpage>-<lpage>216</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B47">
+				<label>47</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sponheim</surname><given-names>SR</given-names></name>, <name name-style="western"><surname>Sass</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Noukki</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Hegeman</surname><given-names>BM</given-names></name> (<year>2012</year>) <article-title>Fragile early visual percepts mark genetic liability specific to schizophrenia</article-title>. <source>Schizophr Bull</source>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22446567" xlink:type="simple">22446567</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B48">
+				<label>48</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Place</surname><given-names>EJS</given-names></name>, <name name-style="western"><surname>Gilmore</surname><given-names>GC</given-names></name> (<year>1980</year>) <article-title>Perceptual organization in schizophrenia</article-title>. <source>J Abnorm Psychol</source> <volume>89</volume>: <fpage>409</fpage>-<lpage>418</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1037/0021-843X.89.3.409" xlink:type="simple">10.1037/0021-843X.89.3.409</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/7410708" xlink:type="simple">7410708</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B49">
+				<label>49</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Silverstein</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Keane</surname><given-names>BP</given-names></name> (<year>2011</year>) <article-title>Perceptual organization impairment in schizophrenia and associated brain mechanisms: Review of research from 2005 to 2010</article-title>. <source>Schizophr Bull</source> <volume>37</volume>: <fpage>690</fpage>-<lpage>699</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/schbul/sbr052" xlink:type="simple">10.1093/schbul/sbr052</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21700589" xlink:type="simple">21700589</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B50">
+				<label>50</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gooding</surname><given-names>DC</given-names></name>, <name name-style="western"><surname>Grabowski</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Hendershot</surname><given-names>CS</given-names></name> (<year>2000</year>) <article-title>Fixation stability in schizophrenia, bipolar, and control subjects</article-title>. <source>Psychiatry Res</source> <volume>97</volume>: <fpage>119</fpage>-<lpage>128</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0165-1781(00)00226-2" xlink:type="simple">10.1016/S0165-1781(00)00226-2</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11166084" xlink:type="simple">11166084</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B51">
+				<label>51</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kissler</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Clementz</surname><given-names>BA</given-names></name> (<year>1998</year>) <article-title>Fixation stability among schizophrenia patients</article-title>. <source>Biol Psychiatry</source> <volume>38</volume>: <fpage>57</fpage>-<lpage>62</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/9732203" xlink:type="simple">9732203</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B52">
+				<label>52</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yoon</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Maddock</surname><given-names>RJ</given-names></name>, <name name-style="western"><surname>Rokem</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Silver</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Minzenberg</surname><given-names>MJ</given-names></name> <etal>et al.</etal> (<year>2010</year>) <article-title>GABA concentration is reduced in visual cortex in schizophrenia and correlates with orientation-specific surround suppression</article-title>. <source>J Neurosci</source> <volume>30</volume>: <fpage>3777</fpage>-<lpage>3781</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1523/JNEUROSCI.6158-09.2010" xlink:type="simple">10.1523/JNEUROSCI.6158-09.2010</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20220012" xlink:type="simple">20220012</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B53">
+				<label>53</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lewis</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Hashimoto</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Volk</surname><given-names>DW</given-names></name> (<year>2005</year>) <article-title>Cortical inhibitory neurons and schizophrenia</article-title>. <source>Nat Rev Neurosci</source> <volume>6</volume>: <fpage>312</fpage>-<lpage>324</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nrn1648" xlink:type="simple">10.1038/nrn1648</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15803162" xlink:type="simple">15803162</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B54">
+				<label>54</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Spencer</surname><given-names>KM</given-names></name>, <name name-style="western"><surname>Nestor</surname><given-names>PG</given-names></name>, <name name-style="western"><surname>Niznikiewicz</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Salisbury</surname><given-names>DF</given-names></name>, <name name-style="western"><surname>Shenton</surname><given-names>ME</given-names></name> <etal>et al.</etal> (<year>2003</year>) <article-title>Abnormal neural synchrony in schizophrenia</article-title>. <source>J Neurosci</source> <volume>23</volume>: <fpage>7404</fpage>-<lpage>7411</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12917376" xlink:type="simple">12917376</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B55">
+				<label>55</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Foxe</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Murray</surname><given-names>MM</given-names></name>, <name name-style="western"><surname>Javitt</surname><given-names>DC</given-names></name> (<year>2005</year>) <article-title>Filling-in in schizophrenia: A high-density electrical mapping and source-analysis investigation of illusory contour processing</article-title>. <source>Cereb Cortex</source> <volume>15</volume>: <fpage>1914</fpage>-<lpage>1927</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/cercor/bhi069" xlink:type="simple">10.1093/cercor/bhi069</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15772373" xlink:type="simple">15772373</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B56">
+				<label>56</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Spencer</surname><given-names>KM</given-names></name>, <name name-style="western"><surname>Nestor</surname><given-names>PG</given-names></name>, <name name-style="western"><surname>Perlmutter</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Niznikiewicz</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Klump</surname><given-names>MC</given-names></name> <etal>et al.</etal> (<year>2004</year>) <article-title>Neural synchrony indexes disordered perception and cognition in schizophrenia</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>101</volume>: <fpage>17288</fpage>-<lpage>17293</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.0406074101" xlink:type="simple">10.1073/pnas.0406074101</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15546988" xlink:type="simple">15546988</ext-link>.</mixed-citation>
+			</ref>
+		</ref-list>
+	</back>
+</article>

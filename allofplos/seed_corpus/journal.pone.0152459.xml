@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article article-type="research-article" dtd-version="3.0" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0152459</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-15-47950</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Histochemistry and cytochemistry techniques</subject><subj-group><subject>Immunohistochemistry techniques</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Immunologic techniques</subject><subj-group><subject>Immunohistochemistry techniques</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Mathematical and statistical techniques</subject><subj-group><subject>Statistical methods</subject><subj-group><subject>Meta-analysis</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Mathematics</subject><subj-group><subject>Statistics (mathematics)</subject><subj-group><subject>Statistical methods</subject><subj-group><subject>Meta-analysis</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Women's health</subject><subj-group><subject>Obstetrics and gynecology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Histology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Histology</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Lymphatic system</subject><subj-group><subject>Lymph nodes</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Lymphatic system</subject><subj-group><subject>Lymph nodes</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>People and places</subject><subj-group><subject>Geographical locations</subject><subj-group><subject>Asia</subject><subj-group><subject>China</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Molecular biology</subject><subj-group><subject>Molecular biology techniques</subject><subj-group><subject>Molecular biology assays and analysis techniques</subject><subj-group><subject>Gene expression and vector techniques</subject><subj-group><subject>Hyperexpression techniques</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Molecular biology techniques</subject><subj-group><subject>Molecular biology assays and analysis techniques</subject><subj-group><subject>Gene expression and vector techniques</subject><subj-group><subject>Hyperexpression techniques</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Diagnostic medicine</subject><subj-group><subject>Prognosis</subject></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Prognostic Value of Overexpressed p16<sup>INK4a</sup> in Vulvar Cancer: A Meta-Analysis</article-title>
+<alt-title alt-title-type="running-head">p16<sup>INK4a</sup> and Vulvar Cancer</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Cao</surname>
+<given-names>Hanyu</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Wang</surname>
+<given-names>Si</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Zhang</surname>
+<given-names>Zhenyu</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Lou</surname>
+<given-names>Jiangyan</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Department of Gynecology and Obstetrics, West China Second University Hospital, Sichuan University, Chengdu City, Sichuan Province, China</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Genome Stability Laboratory, West China Second University Hospital, Sichuan University, Chengdu City, Sichuan Province, China</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Key Laboratory of Birth and Related Diseases of Women and Children, Sichuan University Ministry of Education, Chengdu City, Sichuan Province, China</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Grce</surname>
+<given-names>Magdalena</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Rudjer Boskovic Institute, CROATIA</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: HYC. Performed the experiments: HYC SW ZYZ. Analyzed the data: HYC SW ZYZ. Contributed reagents/materials/analysis tools: HYC SW ZYZ. Wrote the paper: HYC SW ZYZ JYL.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">Loujiangyan2@163.com</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>31</day>
+<month>3</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>3</issue>
+<elocation-id>e0152459</elocation-id>
+<history>
+<date date-type="received">
+<day>4</day>
+<month>11</month>
+<year>2015</year>
+</date>
+<date date-type="accepted">
+<day>15</day>
+<month>3</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Cao et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0152459"/>
+<abstract>
+<sec id="sec001">
+<title>Objective</title>
+<p>This study aimed to examine the prognostic value of overexpressed p16<sup>INK4a</sup> in vulvar cancer. Although the tumor suppressor p16<sup>INK4a</sup> has been shown to be of prognostic value in a wide variety of cancers and precancerous lesions, its role in the vulvar cancer is still unclear.</p>
+</sec>
+<sec id="sec002">
+<title>Methods</title>
+<p>All publications in English language on the association between p16<sup>INK4a</sup> and clinicopathological features of vulvar cancer were searched from Pubmed, Embase, and Web of Science, and those in Chinese language were identified manually and online from the China National Knowledge Infrastructure. Strict inclusion and exclusion criteria were followed. Odds ratios(ORs) or risk ratios(RRs) with 95% confidence intervals(CIs) were pooled to assess the strength of association. Publication bias was estimated using funnel plots and the Egger’s regression test.</p>
+</sec>
+<sec id="sec003">
+<title>Results</title>
+<p>A total of 17 studies with 2309 patients were included. The p16<sup>INK4a</sup> overexpression was found to correlate significantly with the lower International Federation of Gynecology and Obstetrics stage(I+II vs III+IV; OR = 0.60,95%CI:0.41–0.86,<italic>P</italic> = 0.006),negative lymph node metastasis(negative vs positive; OR = 0.61,95%CI:0.39–0.95,<italic>P</italic> = 0.029),patient’s age&lt;55(OR = 0.54,95%CI:0.31–0.96,<italic>P</italic> = 0.034),human papillomavirus–positive status(OR = 0.01,95%CI:0.00–0.11,<italic>P</italic>&lt;0.001),and higher overall survival(RR = 0.53,95%CI = 0.35–0.80,<italic>P</italic> = 0.003).</p>
+</sec>
+<sec id="sec004">
+<title>Conclusion</title>
+<p>The p16<sup>INK4a</sup> might be associated with a higher survival and indicates better prognosis of vulvar cancer.</p>
+</sec>
+</abstract>
+<funding-group>
+<funding-statement>The authors have no support or funding to report.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="4"/>
+<table-count count="1"/>
+<page-count count="11"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>Data are from the included studies whose authors may be contacted at doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/gyno.1997.4914" xlink:type="simple">10.1006/gyno.1997.4914</ext-link>, doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/pas.0000000000000454" xlink:type="simple">10.1097/pas.0000000000000454</ext-link>, doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/ijc.25629" xlink:type="simple">10.1002/ijc.25629</ext-link>, doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ygyno.2004.07.026" xlink:type="simple">10.1016/j.ygyno.2004.07.026</ext-link>, doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s13277-013-0955-0" xlink:type="simple">10.1007/s13277-013-0955-0</ext-link>, doi: Paor.2006.12.3.0153, doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/01.pai.0000213118.81343.32" xlink:type="simple">10.1097/01.pai.0000213118.81343.32</ext-link>, Int J Gynecol Pathol. 2006 Jan;25(1):22-9. from Pubmed, Web of Science and Embase, Chinese articles from Sichuan Medical Journal (05):405-406,Maternal and Child Health Care of China (22):3168-3170., Master thesis: Qingdao University. hin J Clin Oncol Rehabil (01):6-8., Master thesis: China Medical University. from CNKI database.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec005" sec-type="intro">
+<title>Introduction</title>
+<p>Vulvar cancer is the fourth most common malignancy in the female genital tract, accounting for 5% of all gynecological cancers[<xref ref-type="bibr" rid="pone.0152459.ref001">1</xref>].With an estimate of over 5000 new cases and over 1000 deaths in the United States each year, the incidence of vulvar cancer keeps on rising, particularly in young women [<xref ref-type="bibr" rid="pone.0152459.ref001">1</xref>,<xref ref-type="bibr" rid="pone.0152459.ref002">2</xref>].The most frequent histological type of vulvar cancer is squamous cell carcinoma(SCC), which represents 80%–90% of the cases and can be divided into two groups based on whether they are related to human papillomavirus (HPV) infection[<xref ref-type="bibr" rid="pone.0152459.ref003">3</xref>,<xref ref-type="bibr" rid="pone.0152459.ref004">4</xref>]. One is the HPV-associated type including the warty or basaloid SCC, and the other is the HPV-independent keratinizing SCC[<xref ref-type="bibr" rid="pone.0152459.ref005">5</xref>,<xref ref-type="bibr" rid="pone.0152459.ref006">6</xref>].Radical surgery is the main modality of treatment for vulvar cancer, sometimes in combination with presurgical or postsurgical radiotherapy or chemotherapy depending on the tumor size and invasion, but often causes overtreatment in early stage cases when patients present nonmetastasis of lymph node[<xref ref-type="bibr" rid="pone.0152459.ref007">7</xref>]. For this reason, tumor biological markers are needed to predict clinical behavior and metastatic potential of vulvar cancer.</p>
+<p>The p16<sup>INK4a</sup> protein is a cyclin-dependent kinase inhibitor that can act on cyclin-dependent kinases(CDKs) and thus inactivate the cell cycle[<xref ref-type="bibr" rid="pone.0152459.ref008">8</xref>].The loss of p16ink4a expression seems to be an early event in carcinogenesis. Over the past decades, the prognostic value of p16<sup>INK4a</sup> protein has been evaluated in a wide variety of cancers [<xref ref-type="bibr" rid="pone.0152459.ref009">9</xref>–<xref ref-type="bibr" rid="pone.0152459.ref014">14</xref>].Among these, the study of Hellman et al[<xref ref-type="bibr" rid="pone.0152459.ref015">15</xref>] concluded that p16<sup>INK4A</sup> expression might be used as a marker for HPV positivity in vaginal carcinoma, which shares a very similar etiology with vulvar cancer. However, its role and the etiological effect of its combination with the HPV status in vulvar cancer remain somehow unclear. Tringler and Dong reported a significant association between p16<sup>INK4a</sup> and longer survival of vulvar cancer patients, while Trietsch denied its independent prognostic role[<xref ref-type="bibr" rid="pone.0152459.ref016">16</xref>–<xref ref-type="bibr" rid="pone.0152459.ref018">18</xref>].In this regard, the present study performed a meta-analysis to explore the prognostic value of the overexpressed p16INK4a in vulvar cancer.</p>
+</sec>
+<sec id="sec006" sec-type="materials|methods">
+<title>Methods</title>
+<sec id="sec007">
+<title>Search strategy</title>
+<p>To identify all articles that investigated the association of p16<sup>INK4a</sup> expression and vulvar cancer, a literature search of PubMed database, Embase, Web of Science, and China National Knowledge Infrastructure was conducted between January 1991 and August 2015. All relevant articles were retrieved using the following search terms: “p16 or p16<sup>INK4a</sup>” and “vulvar neoplasm or vulvar neoplasms”. References of the retrieved publications were also screened for other relevant studies. For multiple publications from the same population, only the largest-scale study was included. Study selection was achieved by two investigators independently, according to the inclusion and exclusion criteria, by screening the title, abstract, and full-text. Any dispute was solved by discussion. The language of publication was restricted to English and Chinese. Only research articles were included. If an article reported results including different studies, each study was treated as a separate comparison in the present meta-analysis.</p>
+</sec>
+<sec id="sec008">
+<title>Inclusion criteria</title>
+<p>The following inclusion criteria were followed in selecting studies for the current meta-analysis: Studies in which the diagnosis of vulvar cancer was proven by histopathological methods; studies of p16<sup>INK4a</sup> expression that were based on vulvar cancer tissue (after either surgical excision or biopsy sampling);specimens examined by immunohistochemistry; and all studies on the correlation of p16<sup>INK4a</sup> expression with clinicopathological markers or with the HPV status and the association of p16<sup>INK4a</sup> overexpression on the overall survival (OS) or disease-free survival (DFS) or recurrence of vulvar cancer patients. For inclusion into the analysis, no limitation was set on the minimum number of patients of each study. In the case of multiple articles by the same group based on similar patients and using same detection methods, only the largest or the most recent article was included.</p>
+</sec>
+<sec id="sec009">
+<title>Exclusion criteria</title>
+<p>The exclusion criteria were defined as follows: Studies based on serum or any other kinds of specimen, and studies using methods other than immunohistochemistry to examine specimens.</p>
+</sec>
+<sec id="sec010">
+<title>Data extraction</title>
+<p>Three investigators (Hanyu Cao, Si Wang, and Zhenyu Zhang) extracted independently all articles complying with the aforementioned inclusion criteria. Any discrepancy was resolved by discussion until an agreement was reached between the investigators. The following information was collected from each publication: the first author’s name, publication year, patient’s country, tumor stage, technique, percentage of p16<sup>INK4a</sup> positive cells, number of patients, cutoff value of overexpression of p16<sup>INK4a</sup> in cases and controls.</p>
+</sec>
+<sec id="sec011">
+<title>Statistical analysis</title>
+<p>Odds ratios(OR) and 95% confidence intervals (CIs) were pooled to evaluate the association between p16<sup>INK4a</sup> expression and clinical or histopathological features of vulvar cancer including histological grade, International Federation of Gynecology and Obstetrics (FIGO) stage, lymph node metastasis, age, and HPV status. Risk ratios(RRs) and 95% CIs were synthesized to determine the correlation between p16<sup>INK4a</sup> expression and 5-year OS. Heterogeneity was examined with <italic>I</italic><sup>2</sup> statistics interpreted as the proportion of total variation contributed by between-study variations. Heterogeneity was investigated by the Cochran’s chi-square Q test with a significance level of <italic>P</italic>&lt;0.10 and <italic>I</italic><sup>2</sup>&gt;50%.In this case, the random-effects model was used to estimate the pooled ORs [<xref ref-type="bibr" rid="pone.0152459.ref019">19</xref>].Otherwise, the pooled ORs were estimated by the fixed-effects model. RRs were pooled to evaluate the association of p16<sup>INK4a</sup> expression and survival outcome data. The Engauge Digitizer Version 4.1 software (free software downloaded from <ext-link ext-link-type="uri" xlink:href="http://sourceforge.net/" xlink:type="simple">http://sourceforge.net</ext-link>) was used when the survival data could not be extracted directly according to previous studies[<xref ref-type="bibr" rid="pone.0152459.ref020">20</xref>]. Begg’s funnel plots and the Egger’s linear regression test were performed to investigate publication bias [<xref ref-type="bibr" rid="pone.0152459.ref021">21</xref>]. All statistical tests were performed with the stata 12.0 software(Stata Corp, TX, USA).</p>
+</sec>
+</sec>
+<sec id="sec012" sec-type="results">
+<title>Results</title>
+<sec id="sec013">
+<title>Study inclusion and characteristics</title>
+<p>As shown in <xref ref-type="fig" rid="pone.0152459.g001">Fig 1</xref>, a total of 17 eligible studies comprising 2309 patients from different countries were included in this meta-analysis, with the number of patients ranging from 4 to 1287 per study[<xref ref-type="bibr" rid="pone.0152459.ref016">16</xref>–<xref ref-type="bibr" rid="pone.0152459.ref017">17</xref>,<xref ref-type="bibr" rid="pone.0152459.ref022">22</xref>–<xref ref-type="bibr" rid="pone.0152459.ref036">36</xref>].Among them, eight studies dealt with the FIGO stage, and six studies presented data on lymph node metastasis. Three studies presented data classified according to patients’ age (55 years), and seven studies reported histological grade. In addition, four studies reported the association between p16<sup>INK4a</sup> and the HPV status, whereas only one study[<xref ref-type="bibr" rid="pone.0152459.ref034">34</xref>] included the DFS and OS data concerning the HPV status. Moreover, only three studies provided sufficient data on OS related to p16<sup>INK4a</sup> expression. All of them used the immunohistochemistry method with different cut-off values. The main characteristics of these studies are summarized in <xref ref-type="table" rid="pone.0152459.t001">Table 1</xref>.</p>
+<fig id="pone.0152459.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152459.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Flow chart demonstrating studies processed for inclusion in the meta-analysis.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152459.g001" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0152459.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152459.t001</object-id>
+<label>Table 1</label> <caption><title>Main Characteristics of all Eligible Studies.</title></caption>
+<alternatives>
+<graphic id="pone.0152459.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152459.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Study</th>
+<th align="center">Year</th>
+<th align="center">Patient's country</th>
+<th align="center">Tumor stage</th>
+<th align="center">Technique</th>
+<th align="center">Percentage of p16INK4a positive cells (%)</th>
+<th align="center">Number of patients</th>
+<th align="center">Cutoff(IHC)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Chan MK</td>
+<td align="center">1998</td>
+<td align="center">China</td>
+<td align="center">FIGO</td>
+<td align="center">IHC</td>
+<td align="center">72</td>
+<td align="center">30</td>
+<td align="center">ND</td>
+</tr>
+<tr>
+<td align="center">Zheng</td>
+<td align="center">2000</td>
+<td align="center">China</td>
+<td align="center">FIGO</td>
+<td align="center">IHC</td>
+<td align="center">40.38</td>
+<td align="center">52</td>
+<td align="center">ND</td>
+</tr>
+<tr>
+<td align="center">Ma</td>
+<td align="center">2002</td>
+<td align="center">China</td>
+<td align="center">FIGO</td>
+<td align="center">IHC</td>
+<td align="center">64</td>
+<td align="center">25</td>
+<td align="center">Staining grade&gt;2</td>
+</tr>
+<tr>
+<td align="center">Hao</td>
+<td align="center">2004</td>
+<td align="center">China</td>
+<td align="center">ND</td>
+<td align="center">IHC</td>
+<td align="center">40</td>
+<td align="center">30</td>
+<td align="center">ND</td>
+</tr>
+<tr>
+<td align="center">Knopp S</td>
+<td align="center">2004</td>
+<td align="center">Norway</td>
+<td align="center">FIGO</td>
+<td align="center">IHC</td>
+<td align="center">31</td>
+<td align="center">224</td>
+<td align="center">5%</td>
+</tr>
+<tr>
+<td align="center">Mauricio</td>
+<td align="center">2006</td>
+<td align="center">Brazil</td>
+<td align="center">ND</td>
+<td align="center">IHC</td>
+<td align="center">24.3</td>
+<td align="center">37</td>
+<td align="center">5%</td>
+</tr>
+<tr>
+<td align="center">Santos M</td>
+<td align="center">2006</td>
+<td align="center">Spain</td>
+<td align="center">ND</td>
+<td align="center">IHC</td>
+<td align="center">18</td>
+<td align="center">92</td>
+<td align="center">25%</td>
+</tr>
+<tr>
+<td align="center">van der Avoort</td>
+<td align="center">2006</td>
+<td align="center">The Netherlands</td>
+<td align="center">ND</td>
+<td align="center">IHC</td>
+<td align="center">75</td>
+<td align="center">16</td>
+<td align="center">25%</td>
+</tr>
+<tr>
+<td align="center">Tringler B</td>
+<td align="center">2007</td>
+<td align="center">Austria</td>
+<td align="center">FIGO</td>
+<td align="center">IHC</td>
+<td align="center">43</td>
+<td align="center">80</td>
+<td align="center">ND</td>
+</tr>
+<tr>
+<td align="center">Wei</td>
+<td align="center">2008</td>
+<td align="center">China</td>
+<td align="center">FIGO</td>
+<td align="center">IHC</td>
+<td align="center">29</td>
+<td align="center">21</td>
+<td align="center">ND</td>
+</tr>
+<tr>
+<td align="center">Alonso I</td>
+<td align="center">2011</td>
+<td align="center">Spain</td>
+<td align="center">FIGO</td>
+<td align="center">IHC</td>
+<td align="center">20</td>
+<td align="center">98</td>
+<td align="center">Diffuse staining</td>
+</tr>
+<tr>
+<td align="center">Guerrero D</td>
+<td align="center">2011</td>
+<td align="center">Spain</td>
+<td align="center">TNM</td>
+<td align="center">IHC</td>
+<td align="center">70</td>
+<td align="center">30</td>
+<td align="center">1%</td>
+</tr>
+<tr>
+<td align="center">de Sanjosé S</td>
+<td align="center">2013</td>
+<td align="center">39 Countries</td>
+<td align="center">ND</td>
+<td align="center">IHC</td>
+<td align="center">29</td>
+<td align="center">1287</td>
+<td align="center">ND</td>
+</tr>
+<tr>
+<td align="center">Ma HM</td>
+<td align="center">2013</td>
+<td align="center">China</td>
+<td align="center">FIGO</td>
+<td align="center">IHC</td>
+<td align="center">90.3</td>
+<td align="center">36</td>
+<td align="center">Staining grade&gt;2</td>
+</tr>
+<tr>
+<td align="center">Lavorato-Rocha</td>
+<td align="center">2013</td>
+<td align="center">Brazil</td>
+<td align="center">FIGO</td>
+<td align="center">IHC</td>
+<td align="center">29</td>
+<td align="center">139</td>
+<td align="center">5%</td>
+</tr>
+<tr>
+<td align="center">Missaoui N</td>
+<td align="center">2014</td>
+<td align="center">Tunisia</td>
+<td align="center">FIGO</td>
+<td align="center">IHC</td>
+<td align="center">73</td>
+<td align="center">15</td>
+<td align="center">ND</td>
+</tr>
+<tr>
+<td align="center">Dong</td>
+<td align="center">2015</td>
+<td align="center">America</td>
+<td align="center">ND</td>
+<td align="center">IHC</td>
+<td align="center">52</td>
+<td align="center">97</td>
+<td align="center">70%</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p>FIGO, International Federation of Gynecology and Obstetrics; IHC, immunohistochemistry; ND, no data; TNM, tumor node metastases.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+<sec id="sec014">
+<title>Correlation of p16<sup>INK4a</sup> expression with clinicopathological parameters</title>
+<p>As shown in <xref ref-type="fig" rid="pone.0152459.g002">Fig 2</xref>, the overexpression of p16<sup>INK4a</sup> was significantly associated with the lower FIGO stage of I–II(OR = 0.60,95%CI:0.41–0.86,<italic>P</italic> = 0.006,fixed effect; <xref ref-type="fig" rid="pone.0152459.g002">Fig 2A</xref>), no lymph node metastasis(OR = 0.61,95%CI:0.39–0.95,<italic>P</italic> = 0.029,fixed effect; <xref ref-type="fig" rid="pone.0152459.g002">Fig 2B</xref>), patient’s age&lt;55(OR = 0.54,95%CI:0.31–0.96,<italic>P</italic> = 0.034,fixed effect; <xref ref-type="fig" rid="pone.0152459.g002">Fig 2C</xref>), and HPV-positive status(OR = 0.01,95%CI:0.00–0.11,<italic>P</italic>&lt;0.001,random effect; <xref ref-type="fig" rid="pone.0152459.g002">Fig 2D</xref>).However, the overexpression of p16<sup>INK4a</sup> was not correlated with the histological grade(OR = 0.99,95%CI:0.71–1.39,<italic>P</italic> = 0.953,fixed effect; <xref ref-type="fig" rid="pone.0152459.g002">Fig 2E</xref>).</p>
+<fig id="pone.0152459.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152459.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title/>
+<p><bold>Forest plot for the association between p16INK4a expression and clinicopathological markers</bold>(A) FIGO stage.(B) LN metastasis. (C) Patient's age. (D) HPV status. (E) Histological grade. FIGO, International Federation of Gynecology and Obstetrics; LN, lymph node; HPV, human papillomavirus.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152459.g002" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec015">
+<title>Correlation of p16<sup>INK4a</sup> expression with OS</title>
+<p>Five-year OS rates were extracted from three studies and were pooled in this meta-analysis using the method mentioned earlier. The overexpression of p16<sup>INK4a</sup> was significantly correlated with a higher OS(RR = 0.53,95%CI = 0.35,0.80,<italic>P</italic> = 0.003,fixed effect; <xref ref-type="fig" rid="pone.0152459.g003">Fig 3</xref>) with no heterogeneity(<italic>I</italic><sup>2</sup> = 0.0%,<italic>P</italic> = 0.636).</p>
+<fig id="pone.0152459.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152459.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Forest plot for the association between p16INK4a expression and OS.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152459.g003" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec016">
+<title>Publication Bias</title>
+<p>Begg’s funnel plots and Egger’s test were used to assess whether publication bias existed in the 5-year OS studies. No obvious evidence of asymmetry was found in the funnel plot of OS(<italic>P</italic> = 0.217; <xref ref-type="fig" rid="pone.0152459.g004">Fig 4</xref>).</p>
+<fig id="pone.0152459.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0152459.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>A funnel plot analysis on the detection of publication bias in the meta-analysis of the prognostic value of p16ink4a in the OS of vulvar cancer.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0152459.g004" xlink:type="simple"/>
+</fig>
+</sec>
+</sec>
+<sec id="sec017" sec-type="conclusions">
+<title>Discussion</title>
+<p>P16<sup>INK4a</sup>,as a member of the INK4a family, is known to inactivate cell cycle progression and differentiation by interfering with cyclin D–CDK4/6 assembly and thus block the G1 to S transition[<xref ref-type="bibr" rid="pone.0152459.ref037">37</xref>].The functional loss of INK4a family has been found in variable human cancers. Some previous studies have provided evidences indicating that p16<sup>INK4a</sup> is a potential tumor suppressor whose overexpression can inhibit abnormal cell growth, whereas downregulation may lead to tumorigenesis[<xref ref-type="bibr" rid="pone.0152459.ref038">38</xref>]. Although p16<sup>INK4a</sup> has been shown to be of prognostic value in a wide variety of cancers and precancerous lesions such as gastrointestinal stromal tumor, non-small lung cancer, osteosarcoma, cervical cancer, and cervical intraepithelial neoplasia, evidence of correlation with vulvar cancer is lacking[<xref ref-type="bibr" rid="pone.0152459.ref012">12</xref>–<xref ref-type="bibr" rid="pone.0152459.ref013">13</xref>,<xref ref-type="bibr" rid="pone.0152459.ref039">39</xref>–<xref ref-type="bibr" rid="pone.0152459.ref041">41</xref>].</p>
+<p>Vulvar cancer is uncommon but represents a certain group in the carcinoma of lower genital tract in female. As the treatment for vulvar cancer tends to be more conservative and individualized over the past decade, acquaintance with the prognostic factors seems more essential and is of great value for early diagnosis, but is still a challenge because of scanty evidence compared with other gynecological malignancies[<xref ref-type="bibr" rid="pone.0152459.ref042">42</xref>].It was found that FIGO stage, lymph node metastasis, and histological grade are the most important prognostic factors in vulvar cancer[<xref ref-type="bibr" rid="pone.0152459.ref043">43</xref>–<xref ref-type="bibr" rid="pone.0152459.ref045">45</xref>]. The age of patients is also a predominant and independent factor in the 5-year survival of vulvar cancer[<xref ref-type="bibr" rid="pone.0152459.ref046">46</xref>]. This study is perhaps the first meta-analysis that evaluated the prognostic value of p16<sup>INK4a</sup> in vulvar cancer.</p>
+<p>The present meta-analysis using pooled ORs demonstrated that p16<sup>INK4a</sup> overexpression correlates significantly with the lower FIGO stage, negative lymph node metastasis, and younger age, consistent with its well-known function of suppressing tumor invasion[<xref ref-type="bibr" rid="pone.0152459.ref047">47</xref>–<xref ref-type="bibr" rid="pone.0152459.ref049">49</xref>].The pooled RR of OS reveals that p16<sup>INK4a</sup> overexpression indicates a better prognosis for patients diagnosed with vulvar cancer. The results indicate that p16<sup>INK4a</sup> may be a potential biomarker for the diagnosis and prognosis of vulvar cancer. Although evidence shows improved survival of HPV-induced and p16-positive carcinoma associated with head and neck cancer[<xref ref-type="bibr" rid="pone.0152459.ref050">50</xref>], no detailed studies are found presenting the survival data including both HPV status and p16<sup>INK4a</sup>.A very few studies presented recurrence rate related to p16 concerning vulvar squamous cell carcinoma (VSCC) after repeated searches for several times, which may be due to the low frequency of VSCC. Among the included studies, HPV-positive rate independent of p16<sup>INK4a</sup> ranges between 0% and 41% [<xref ref-type="bibr" rid="pone.0152459.ref023">23</xref>,<xref ref-type="bibr" rid="pone.0152459.ref025">25</xref>,<xref ref-type="bibr" rid="pone.0152459.ref027">27</xref>,<xref ref-type="bibr" rid="pone.0152459.ref034">34</xref>],which is in accordance with the fact that vulvar cancer presents an overall HPV infection rate of only 30%–40%[<xref ref-type="bibr" rid="pone.0152459.ref051">51</xref>–<xref ref-type="bibr" rid="pone.0152459.ref052">52</xref>].Moreover, the analysis outcome shows that p16<sup>ink4a</sup> overexpression correlates significantly with the HPV-positive status, strongly supporting the etiological role of HPV infection in the development of vulvar cancer. The E7 and E6 oncoproteins encoded by HPV can be integrated into the host genome, binding to the tumor suppressor proteins pRB and p53, respectively, and leading to their deregulation, which results in the overexpression of p16<sup>INK4A</sup> as a means of genetic instability control[<xref ref-type="bibr" rid="pone.0152459.ref053">53</xref>].All these may reasonably lead to the speculation that p16INK4a is only associated with HPV-induced vulvar carcinoma.</p>
+<p>However, this study has some limitations that should be taken into consideration. First, this study included a small sample size. A total of 817 patients may not be able to provide statistical evidence convincing enough to prove the role of p16<sup>INK4a</sup> in vulvar cancer prognosis. In addition, studies concerning the survival rate of vulvar cancer are even less. Second, the arbitrarily selected cutoff value of positive p16<sup>INK4a</sup> expression varies in different studies. This may be caused by the lack of a standardized immunostaining point decided by a combination of intensity and the variable methodological factors in immunohistochemistry such as storage time, fixation method, and different antibodies[<xref ref-type="bibr" rid="pone.0152459.ref054">54</xref>], which may result in an inaccurate outcome. All studies were evaluated based on a review of the entire histological section, while some declared the evaluation of the immunostaining results by one or two pathologists at the same time according to previous experience and established criteria in vulvar neoplasia or for uterine cervix[<xref ref-type="bibr" rid="pone.0152459.ref055">55</xref>,<xref ref-type="bibr" rid="pone.0152459.ref056">56</xref>],which ensure their reliability. Third, treatment methods for each patient differed to a certain extent for their multiple kinds of clinical and histological features, which should not be ignored. For these reasons, further research with a larger sample size and more evidence are needed to confirm the findings of this study.</p>
+<p>In conclusion, despite the limitations, the results of the present meta-analysis suggested that p16<sup>INK4a</sup> overexpression was associated with a favorable prognosis in patients with vulvar cancer. The assessment of p16<sup>INK4a</sup> expression is capable of providing better prognostic information for patients with vulvar cancer.</p>
+</sec>
+<sec id="sec018">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0152459.s001" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0152459.s001" xlink:type="simple">
+<label>S1 PRISMA Checklist</label>
+<caption>
+<title>PRISMA 2009 Checklist.</title>
+<p>(DOC)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>All the authors were directly involved in the whole process, therefore it is disclosed that all the authors contributed equally towards the research. Thanks to the editors and anonymous reviewers. The software used in the analysis:stata 12.0 software(Stata Corp, College Station, TX)</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0152459.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Siegel</surname> <given-names>RL</given-names></name>, <name name-style="western"><surname>Miller</surname> <given-names>KD</given-names></name>, <name name-style="western"><surname>Jemal</surname> <given-names>A</given-names></name>. <article-title>Cancer statistics, 2015</article-title>. <source>CA: a cancer journal for clinicians</source>. <year>2015</year>;<volume>65</volume>(<issue>1</issue>):<fpage>5</fpage>–<lpage>29</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3322/caac.21254" xlink:type="simple">10.3322/caac.21254</ext-link></comment> <object-id pub-id-type="pmid">25559415</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lanneau</surname> <given-names>GS</given-names></name>, <name name-style="western"><surname>Argenta</surname> <given-names>PA</given-names></name>, <name name-style="western"><surname>Lanneau</surname> <given-names>MS</given-names></name>, <name name-style="western"><surname>Riffenburgh</surname> <given-names>RH</given-names></name>, <name name-style="western"><surname>Gold</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>McMeekin</surname> <given-names>DS</given-names></name>, <etal>et al</etal>. <article-title>Vulvar cancer in young women: demographic features and outcome evaluation</article-title>. <source>American journal of obstetrics and gynecology</source>. <year>2009</year>;<volume>200</volume>(<issue>6</issue>):<fpage>645</fpage>.e1-5. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ajog.2009.01.014" xlink:type="simple">10.1016/j.ajog.2009.01.014</ext-link></comment> <object-id pub-id-type="pmid">19286150</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Crum</surname> <given-names>CP</given-names></name>. <article-title>Carcinoma of the vulva: epidemiology and pathogenesis</article-title>. <source>Obstetrics and gynecology</source>. <year>1992</year>;<volume>79</volume>(<issue>3</issue>):<fpage>448</fpage>–<lpage>54</lpage>. <object-id pub-id-type="pmid">1310806</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kagie</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Kenter</surname> <given-names>GG</given-names></name>, <name name-style="western"><surname>Zomerdijk-Nooijen</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Hermans</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Schuuring</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Timmers</surname> <given-names>PJ</given-names></name>, <etal>et al</etal>. <article-title>Human papillomavirus infection in squamous cell carcinoma of the vulva, in various synchronous epithelial changes and in normal vulvar skin</article-title>. <source>Gynecologic oncology</source>. <year>1997</year>;<volume>67</volume>(<issue>2</issue>):<fpage>178</fpage>–<lpage>83</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/gyno.1997.4834" xlink:type="simple">10.1006/gyno.1997.4834</ext-link></comment> <object-id pub-id-type="pmid">9367704</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kurman</surname> <given-names>RJ</given-names></name>, <name name-style="western"><surname>Toki</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Schiffman</surname> <given-names>MH</given-names></name>. <article-title>Basaloid and warty carcinomas of the vulva. Distinctive types of squamous cell carcinoma frequently associated with human papillomaviruses</article-title>. <source>The American journal of surgical pathology</source>. <year>1993</year>;<volume>17</volume>(<issue>2</issue>):<fpage>133</fpage>–<lpage>45</lpage>. <object-id pub-id-type="pmid">8380681</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sideri</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Jones</surname> <given-names>RW</given-names></name>, <name name-style="western"><surname>Wilkinson</surname> <given-names>EJ</given-names></name>, <name name-style="western"><surname>Preti</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Heller</surname> <given-names>DS</given-names></name>, <name name-style="western"><surname>Scurry</surname> <given-names>J</given-names></name>, <etal>et al</etal>. <article-title>Squamous vulvar intraepithelial neoplasia: 2004 modified terminology, ISSVD Vulvar Oncology Subcommittee</article-title>. <source>The Journal of reproductive medicine</source>. <year>2005</year>;<volume>50</volume>(<issue>11</issue>):<fpage>807</fpage>–<lpage>10</lpage>. <object-id pub-id-type="pmid">16419625</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Scheistroen</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Nesland</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Trope</surname> <given-names>C</given-names></name>. <article-title>Have patients with early squamous carcinoma of the vulva been overtreated in the past? The Norwegian experience 1977–1991</article-title>. <source>European journal of gynaecological oncology</source>. <year>2002</year>;<volume>23</volume>(<issue>2</issue>):<fpage>93</fpage>–<lpage>103</lpage>. <object-id pub-id-type="pmid">12013120</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ruas</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Peters</surname> <given-names>G</given-names></name>. <article-title>The p16INK4a/CDKN2A tumor suppressor and its relatives</article-title>. <source>Biochimica et biophysica acta</source>. <year>1998</year>;<volume>1378</volume>(<issue>2</issue>):<fpage>F115</fpage>–<lpage>77</lpage>. <object-id pub-id-type="pmid">9823374</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chen</surname> <given-names>YZ</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Zhao</surname> <given-names>YX</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>HT</given-names></name>, <name name-style="western"><surname>Gao</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>Y</given-names></name>. <article-title>Relationships between p16 gene promoter methylation and clinicopathologic features of colorectal cancer: a meta-analysis of 27 cohort studies</article-title>. <source>DNA and cell biology</source>. <year>2014</year>;<volume>33</volume>(<issue>10</issue>):<fpage>729</fpage>–<lpage>38</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1089/dna.2013.2253" xlink:type="simple">10.1089/dna.2013.2253</ext-link></comment> <object-id pub-id-type="pmid">24979649</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rocco</surname> <given-names>JW</given-names></name>, <name name-style="western"><surname>Sidransky</surname> <given-names>D</given-names></name>. <article-title>p16(MTS-1/CDKN2/INK4a) in cancer progression</article-title>. <source>Experimental cell research</source>. <year>2001</year>;<volume>264</volume>(<issue>1</issue>):<fpage>42</fpage>–<lpage>55</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/excr.2000.5149" xlink:type="simple">10.1006/excr.2000.5149</ext-link></comment> <object-id pub-id-type="pmid">11237522</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Honoki</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Stojanovski</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>McEvoy</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Fujii</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Tsujiuchi</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Kido</surname> <given-names>A</given-names></name>, <etal>et al</etal>. <article-title>Prognostic significance of p16 INK4a alteration for Ewing sarcoma: a meta-analysis</article-title>. <source>Cancer</source>. <year>2007</year>;<volume>110</volume>(<issue>6</issue>):<fpage>1351</fpage>–<lpage>60</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/cncr.22908" xlink:type="simple">10.1002/cncr.22908</ext-link></comment> <object-id pub-id-type="pmid">17661343</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zong</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Jiang</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>L</given-names></name>. <article-title>Correlation between p16 expression and malignant risk of gastrointestinal stromal tumor: evidence from nine studies</article-title>. <source>Hepato-gastroenterology</source>. <year>2012</year>;<volume>59</volume>(<issue>117</issue>):<fpage>1458</fpage>–<lpage>63</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.5754/hge11473" xlink:type="simple">10.5754/hge11473</ext-link></comment> <object-id pub-id-type="pmid">22094995</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lou-Qian</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Rong</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Ming</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Xin</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Feng</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Lin</surname> <given-names>X</given-names></name>. <article-title>The prognostic value of epigenetic silencing of p16 gene in NSCLC patients: a systematic review and meta-analysis</article-title>. <source>PloS one</source>. <year>2013</year>;<volume>8</volume>(<issue>1</issue>):<fpage>e54970</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0054970" xlink:type="simple">10.1371/journal.pone.0054970</ext-link></comment> <object-id pub-id-type="pmid">23372805</object-id>; PubMed Central PMCID: PMCPmc3555860.</mixed-citation></ref>
+<ref id="pone.0152459.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jiang</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>PG</given-names></name>, <name name-style="western"><surname>Zhan</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>D</given-names></name>. <article-title>Prognostic value of p16 promoter hypermethylation in colorectal cancer: a meta-analysis</article-title>. <source>Cancer investigation</source>. <year>2014</year>;<volume>32</volume>(<issue>2</issue>):<fpage>43</fpage>–<lpage>52</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3109/07357907.2013.861476" xlink:type="simple">10.3109/07357907.2013.861476</ext-link></comment> <object-id pub-id-type="pmid">24410593</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hellman</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Lindquist</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Ranhem</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Wilander</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Andersson</surname> <given-names>S</given-names></name>. <article-title>Human papillomavirus, p16(INK4A), and Ki-67 in relation to clinicopathological variables and survival in primary carcinoma of the vagina</article-title>. <source>British journal of cancer</source>. <year>2014</year>;<volume>110</volume>(<issue>6</issue>):<fpage>1561</fpage>–<lpage>70</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/bjc.2014.32" xlink:type="simple">10.1038/bjc.2014.32</ext-link></comment> <object-id pub-id-type="pmid">24525695</object-id>; PubMed Central PMCID: PMCPmc3960612.</mixed-citation></ref>
+<ref id="pone.0152459.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tringler</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Grimm</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Dudek</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Zeillinger</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Tempfer</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Speiser</surname> <given-names>P</given-names></name>, <etal>et al</etal>. <article-title>p16INK4a expression in invasive vulvar squamous cell carcinoma</article-title>. <source>Applied immunohistochemistry &amp; molecular morphology: AIMM / official publication of the Society for Applied Immunohistochemistry</source>. <year>2007</year>;<volume>15</volume>(<issue>3</issue>):<fpage>279</fpage>–<lpage>83</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/01.pai.0000213118.81343.32" xlink:type="simple">10.1097/01.pai.0000213118.81343.32</ext-link></comment> <object-id pub-id-type="pmid">17721272</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dong</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Kojiro</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Borger</surname> <given-names>DR</given-names></name>, <name name-style="western"><surname>Growdon</surname> <given-names>WB</given-names></name>, <name name-style="western"><surname>Oliva</surname> <given-names>E</given-names></name>. <article-title>Squamous Cell Carcinoma of the Vulva: A Subclassification of 97 Cases by Clinicopathologic, Immunohistochemical, and Molecular Features (p16, p53, and EGFR)</article-title>. <source>The American journal of surgical pathology</source>. <year>2015</year>;<volume>39</volume>(<issue>8</issue>):<fpage>1045</fpage>–<lpage>53</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/pas.0000000000000454" xlink:type="simple">10.1097/pas.0000000000000454</ext-link></comment> <object-id pub-id-type="pmid">26171917</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Trietsch</surname> <given-names>MD</given-names></name>, <name name-style="western"><surname>Spaans</surname> <given-names>VM</given-names></name>, <name name-style="western"><surname>ter Haar</surname> <given-names>NT</given-names></name>, <name name-style="western"><surname>Osse</surname> <given-names>EM</given-names></name>, <name name-style="western"><surname>Peters</surname> <given-names>AA</given-names></name>, <name name-style="western"><surname>Gaarenstroom</surname> <given-names>KN</given-names></name>, <etal>et al</etal>. <article-title>CDKN2A(p16) and HRAS are frequently mutated in vulvar squamous cell carcinoma</article-title>. <source>Gynecologic oncology</source>. <year>2014</year>;<volume>135</volume>(<issue>1</issue>):<fpage>149</fpage>–<lpage>55</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ygyno.2014.07.094" xlink:type="simple">10.1016/j.ygyno.2014.07.094</ext-link></comment> <object-id pub-id-type="pmid">25072932</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DerSimonian</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Kacker</surname> <given-names>R</given-names></name>. <article-title>Random-effects model for meta-analysis of clinical trials: an update</article-title>. <source>Contemporary clinical trials</source>. <year>2007</year>;<volume>28</volume>(<issue>2</issue>):<fpage>105</fpage>–<lpage>14</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cct.2006.04.004" xlink:type="simple">10.1016/j.cct.2006.04.004</ext-link></comment> <object-id pub-id-type="pmid">16807131</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Parmar</surname> <given-names>MK</given-names></name>, <name name-style="western"><surname>Torri</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Stewart</surname> <given-names>L</given-names></name>. <article-title>Extracting summary statistics to perform meta-analyses of the published literature for survival endpoints</article-title>. <source>Statistics in medicine</source>. <year>1998</year>;<volume>17</volume>(<issue>24</issue>):<fpage>2815</fpage>–<lpage>34</lpage>. <object-id pub-id-type="pmid">9921604</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Egger</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>GD</given-names></name>. <article-title>Bias in location and selection of studies</article-title>. <source>BMJ (Clinical research ed)</source>. <year>1998</year>;<volume>316</volume>(<issue>7124</issue>):<fpage>61</fpage>–<lpage>6</lpage>. <object-id pub-id-type="pmid">9451274</object-id>; PubMed Central PMCID: PMCPmc2665334.</mixed-citation></ref>
+<ref id="pone.0152459.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chan</surname> <given-names>MK</given-names></name>, <name name-style="western"><surname>Cheung</surname> <given-names>TH</given-names></name>, <name name-style="western"><surname>Chung</surname> <given-names>TK</given-names></name>, <name name-style="western"><surname>Bao</surname> <given-names>SY</given-names></name>, <name name-style="western"><surname>Zhao</surname> <given-names>CL</given-names></name>, <name name-style="western"><surname>Nobori</surname> <given-names>T</given-names></name>, <etal>et al</etal>. <article-title>Expression of p16INK4 and retinoblastoma protein Rb in vulvar lesions of Chinese women</article-title>. <source>Gynecologic oncology</source>. <year>1998</year>;<volume>68</volume>(<issue>2</issue>):<fpage>156</fpage>–<lpage>61</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/gyno.1997.4914" xlink:type="simple">10.1006/gyno.1997.4914</ext-link></comment> <object-id pub-id-type="pmid">9514803</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Guerrero</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Guarch</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Ojer</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Casas</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Mendez-Meca</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Esteller</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Differential hypermethylation of genes in vulvar cancer and lichen sclerosus coexisting or not with vulvar cancer</article-title>. <source>International journal of cancer</source>. <year>2011</year>;<volume>128</volume>(<issue>12</issue>):<fpage>2853</fpage>–<lpage>64</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/ijc.25629" xlink:type="simple">10.1002/ijc.25629</ext-link></comment> <object-id pub-id-type="pmid">20734389</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Knopp</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Bjorge</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Nesland</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Trope</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Scheistroen</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Holm</surname> <given-names>R</given-names></name>. <article-title>p16INK4a and p21Waf1/Cip1 expression correlates with clinical outcome in vulvar carcinomas</article-title>. <source>Gynecologic oncology</source>. <year>2004</year>;<volume>95</volume>(<issue>1</issue>):<fpage>37</fpage>–<lpage>45</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ygyno.2004.07.026" xlink:type="simple">10.1016/j.ygyno.2004.07.026</ext-link></comment> <object-id pub-id-type="pmid">15385108</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lavorato-Rocha</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Rodrigues</surname> <given-names>IS</given-names></name>, <name name-style="western"><surname>de Melo</surname> <given-names>Maia B</given-names></name>, <name name-style="western"><surname>Stiepcich</surname> <given-names>MM</given-names></name>, <name name-style="western"><surname>Baiocchi</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Carvalho</surname> <given-names>KC</given-names></name>, <etal>et al</etal>. <article-title>Cell cycle suppressor proteins are not related to HPV status or clinical outcome in patients with vulvar carcinoma</article-title>. <source>Tumour biology: the journal of the International Society for Oncodevelopmental Biology and Medicine</source>. <year>2013</year>;<volume>34</volume>(<issue>6</issue>):<fpage>3713</fpage>–<lpage>20</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s13277-013-0955-0" xlink:type="simple">10.1007/s13277-013-0955-0</ext-link></comment> <object-id pub-id-type="pmid">23832541</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nogueira</surname> <given-names>MC</given-names></name>, <name name-style="western"><surname>Guedes</surname> <given-names>Neto Ede P</given-names></name>, <name name-style="western"><surname>Rosa</surname> <given-names>MW</given-names></name>, <name name-style="western"><surname>Zettler</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Zettler</surname> <given-names>CG</given-names></name>. <article-title>Immunohistochemical expression of p16 and p53 in vulvar intraepithelial neoplasia and squamous cell carcinoma of the vulva</article-title>. <source>Pathology oncology research: POR</source>. <year>2006</year>;<volume>12</volume>(<issue>3</issue>):<fpage>153</fpage>–<lpage>7</lpage>. doi: Paor.2006.12.3.0153. <object-id pub-id-type="pmid">16998595</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>van der Avoort</surname> <given-names>IA</given-names></name>, <name name-style="western"><surname>Shirango</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Hoevenaars</surname> <given-names>BM</given-names></name>, <name name-style="western"><surname>Grefte</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>de Hullu</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>de Wilde</surname> <given-names>PC</given-names></name>, <etal>et al</etal>. <article-title>Vulvar squamous cell carcinoma is a multifactorial disease following two separate and independent pathways</article-title>. <source>International journal of gynecological pathology: official journal of the International Society of Gynecological Pathologists</source>. <year>2006</year>;<volume>25</volume>(<issue>1</issue>):<fpage>22</fpage>–<lpage>9</lpage>. <object-id pub-id-type="pmid">16306780</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref028"><label>28</label><mixed-citation publication-type="other" xlink:type="simple">Hao S. Expression and significance of p16 and Cyclin D1 in vulvar neoplasia.M.Sc. Thesis.China Medical University.2004. Available: <ext-link ext-link-type="uri" xlink:href="http://www.cnki.net/KCMS/detail/detail.aspx?QueryID=6&amp;CurRec=1&amp;recid=&amp;filename=2004139508.nh&amp;dbname=CMFD0506&amp;dbcode=CMFD&amp;pr=&amp;urlid=&amp;yx=&amp;v=MTc2NzMzcVRyV00xRnJDVVJMeWZaT2RtRnkvbVVyM0JWMTI3R3JLN0Y5VE1wNUViUElSOGVYMUx1eFlTN0RoMVQ" xlink:type="simple">http://www.cnki.net/KCMS/detail/detail.aspx?QueryID=6&amp;CurRec=1&amp;recid=&amp;filename=2004139508.nh&amp;dbname=CMFD0506&amp;dbcode=CMFD&amp;pr=&amp;urlid=&amp;yx=&amp;v=MTc2NzMzcVRyV00xRnJDVVJMeWZaT2RtRnkvbVVyM0JWMTI3R3JLN0Y5VE1wNUViUElSOGVYMUx1eFlTN0RoMVQ</ext-link>.</mixed-citation></ref>
+<ref id="pone.0152459.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ma</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Sun</surname> <given-names>J</given-names></name>. <article-title>The Relationship between P16 expression and vulnerability and clinicopathological characteristics of vulvar prickle cell carcinoma</article-title>. <source>Chin J Clin Oncol Rehabil</source>.<year>2013</year>; (<issue>01</issue>):<fpage>6</fpage>–<lpage>8</lpage>.</mixed-citation></ref>
+<ref id="pone.0152459.ref030"><label>30</label><mixed-citation publication-type="other" xlink:type="simple">Ma H (2002) Study of expression of PTEN and p16 gene in vulvar cancer. M.Sc. Thesis. Qingdao University. 2002. Available: <ext-link ext-link-type="uri" xlink:href="http://www.cnki.net/KCMS/detail/detail.aspx?QueryID=15&amp;CurRec=1&amp;recid=&amp;filename=2002093004.nh&amp;dbname=CMFD9904&amp;dbcode=CMFD&amp;pr=&amp;urlid=&amp;yx=&amp;v=MDc0NDExMjdITE94SGRITXE1RWJQSVI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkx5ZlpPZG1GeS9tV3IzUFY=" xlink:type="simple">http://www.cnki.net/KCMS/detail/detail.aspx?QueryID=15&amp;CurRec=1&amp;recid=&amp;filename=2002093004.nh&amp;dbname=CMFD9904&amp;dbcode=CMFD&amp;pr=&amp;urlid=&amp;yx=&amp;v=MDc0NDExMjdITE94SGRITXE1RWJQSVI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkx5ZlpPZG1GeS9tV3IzUFY=</ext-link>.</mixed-citation></ref>
+<ref id="pone.0152459.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wei</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Pu</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Yin</surname> <given-names>L</given-names></name>. <article-title>Expression and significance of p16 protein and PCNA in keratinizing vulva squamous cell carcinoma</article-title>. <source>Maternal and Child Health Care of China</source>. <year>2008</year>; (<issue>22</issue>):<fpage>3168</fpage>–<lpage>3170</lpage>.</mixed-citation></ref>
+<ref id="pone.0152459.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zheng</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Peng</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>H</given-names></name>. <article-title>Expression of P16 protein in premalignant lesion and caecinoma of vulvar</article-title>.<source>Sichuan Medical Journal</source>. <year>2000</year>; (<issue>05</issue>):<fpage>405</fpage>–<lpage>406</lpage>.</mixed-citation></ref>
+<ref id="pone.0152459.ref033"><label>33</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Santos</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Landolfi</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Olivella</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Lloveras</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Klaustermeier</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Suarez</surname> <given-names>H</given-names></name>, <etal>et al</etal>. <article-title>p16 overexpression identifies HPV-positive vulvar squamous cell carcinomas</article-title>. <source>The American journal of surgical pathology</source>. <year>2006</year>;<volume>30</volume>(<issue>11</issue>):<fpage>1347</fpage>–<lpage>56</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/01.pas.0000213251.82940.bf" xlink:type="simple">10.1097/01.pas.0000213251.82940.bf</ext-link></comment> <object-id pub-id-type="pmid">17063073</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref034"><label>34</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alonso</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Fuste</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>del Pino</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Castillo</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Torne</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Fuste</surname> <given-names>P</given-names></name>, <etal>et al</etal>. <article-title>Does human papillomavirus infection imply a different prognosis in vulvar squamous cell carcinoma?</article-title> <source>Gynecologic oncology</source>. <year>2011</year>;<volume>122</volume>(<issue>3</issue>):<fpage>509</fpage>–<lpage>14</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ygyno.2011.05.016" xlink:type="simple">10.1016/j.ygyno.2011.05.016</ext-link></comment> <object-id pub-id-type="pmid">21652058</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>de Sanjose</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Alemany</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Ordi</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Tous</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Alejo</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Bigby</surname> <given-names>SM</given-names></name>, <etal>et al</etal>. <article-title>Worldwide human papillomavirus genotype attribution in over 2000 cases of intraepithelial and invasive lesions of the vulva</article-title>. <source>European journal of cancer (Oxford, England: 1990)</source>. <year>2013</year>;<volume>49</volume>(<issue>16</issue>):<fpage>3450</fpage>–<lpage>61</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ejca.2013.06.033" xlink:type="simple">10.1016/j.ejca.2013.06.033</ext-link></comment> <object-id pub-id-type="pmid">23886586</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref036"><label>36</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Missaoui</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Abdelkarim</surname> <given-names>SB</given-names></name>, <name name-style="western"><surname>Mokni</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Hmissa</surname> <given-names>S</given-names></name>. <article-title>p16INK4A expression in squamous cell carcinomas of the vagina and the vulva in Tunisian women</article-title>. <source>Asian Pacific journal of cancer prevention: APJCP</source>. <year>2014</year>;<volume>15</volume>(<issue>24</issue>):<fpage>10803</fpage>–<lpage>8</lpage>. <object-id pub-id-type="pmid">25605180</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref037"><label>37</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Koh</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Enders</surname> <given-names>GH</given-names></name>, <name name-style="western"><surname>Dynlacht</surname> <given-names>BD</given-names></name>, <name name-style="western"><surname>Harlow</surname> <given-names>E</given-names></name>. <article-title>Tumour-derived p16 alleles encoding proteins defective in cell-cycle inhibition</article-title>. <source>Nature</source>. <year>1995</year>;<volume>375</volume>(<issue>6531</issue>):<fpage>506</fpage>–<lpage>10</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/375506a0" xlink:type="simple">10.1038/375506a0</ext-link></comment> <object-id pub-id-type="pmid">7777061</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baylin</surname> <given-names>SB</given-names></name>, <name name-style="western"><surname>Herman</surname> <given-names>JG</given-names></name>. <article-title>DNA hypermethylation in tumorigenesis: epigenetics joins genetics</article-title>. <source>Trends in genetics: TIG</source>. <year>2000</year>;<volume>16</volume>(<issue>4</issue>):<fpage>168</fpage>–<lpage>74</lpage>. Epub 2000/03/24. <object-id pub-id-type="pmid">10729832</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bu</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>LH</given-names></name>, <name name-style="western"><surname>Ouyang</surname> <given-names>YR</given-names></name>, <name name-style="western"><surname>Guo</surname> <given-names>HB</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>XY</given-names></name>, <etal>et al</etal>. <article-title>P16INK4a overexpression and survival in osteosarcoma patients: a meta analysis</article-title>. <source>International journal of clinical and experimental pathology</source>. <year>2014</year>;<volume>7</volume>(<issue>9</issue>):<fpage>6091</fpage>–<lpage>6</lpage>. <object-id pub-id-type="pmid">25337256</object-id>; PubMed Central PMCID: PMCPmc4203227.</mixed-citation></ref>
+<ref id="pone.0152459.ref040"><label>40</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lin</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Albers</surname> <given-names>AE</given-names></name>, <name name-style="western"><surname>Qin</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Kaufmann</surname> <given-names>AM</given-names></name>. <article-title>Prognostic significance of overexpressed p16INK4a in patients with cervical cancer: a meta-analysis</article-title>. <source>PloS one</source>. <year>2014</year>;<volume>9</volume>(<issue>9</issue>):<fpage>e106384</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0106384" xlink:type="simple">10.1371/journal.pone.0106384</ext-link></comment> <object-id pub-id-type="pmid">25188353</object-id>; PubMed Central PMCID: PMCPmc4154680.</mixed-citation></ref>
+<ref id="pone.0152459.ref041"><label>41</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Horn</surname> <given-names>LC</given-names></name>, <name name-style="western"><surname>Reichert</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Oster</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Arndal</surname> <given-names>SF</given-names></name>, <name name-style="western"><surname>Trunk</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Ridder</surname> <given-names>R</given-names></name>, <etal>et al</etal>. <article-title>Immunostaining for p16INK4a used as a conjunctive tool improves interobserver agreement of the histologic diagnosis of cervical intraepithelial neoplasia</article-title>. <source>The American journal of surgical pathology</source>. <year>2008</year>;<volume>32</volume>(<issue>4</issue>):<fpage>502</fpage>–<lpage>12</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/PAS.0b013e31815ac420" xlink:type="simple">10.1097/PAS.0b013e31815ac420</ext-link></comment> <object-id pub-id-type="pmid">18223479</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref042"><label>42</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sznurkowski</surname> <given-names>JJ</given-names></name>, <name name-style="western"><surname>Milczek</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Emerich</surname> <given-names>J</given-names></name>. <article-title>Prognostic factors and a value of 2009 FIGO staging system in vulvar cancer</article-title>. <source>Archives of gynecology and obstetrics</source>. <year>2013</year>;<volume>287</volume>(<issue>6</issue>):<fpage>1211</fpage>–<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00404-012-2683-x" xlink:type="simple">10.1007/s00404-012-2683-x</ext-link></comment> <object-id pub-id-type="pmid">23263173</object-id>; PubMed Central PMCID: PMCPmc3655214.</mixed-citation></ref>
+<ref id="pone.0152459.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Maggino</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Landoni</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Sartori</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Zola</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Gadducci</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Alessi</surname> <given-names>C</given-names></name>, <etal>et al</etal>. <article-title>Patterns of recurrence in patients with squamous cell carcinoma of the vulva. A multicenter CTF Study</article-title>. <source>Cancer</source>. <year>2000</year>;<volume>89</volume>(<issue>1</issue>):<fpage>116</fpage>–<lpage>22</lpage>. <object-id pub-id-type="pmid">10897008</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Burger</surname> <given-names>MP</given-names></name>, <name name-style="western"><surname>Hollema</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Emanuels</surname> <given-names>AG</given-names></name>, <name name-style="western"><surname>Krans</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Pras</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Bouma</surname> <given-names>J</given-names></name>. <article-title>The importance of the groin node status for the survival of T1 and T2 vulval carcinoma patients</article-title>. <source>Gynecologic oncology</source>. <year>1995</year>;<volume>57</volume>(<issue>3</issue>):<fpage>327</fpage>–<lpage>34</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/gyno.1995.1151" xlink:type="simple">10.1006/gyno.1995.1151</ext-link></comment> <object-id pub-id-type="pmid">7774836</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref045"><label>45</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kosary</surname> <given-names>CL</given-names></name>. <article-title>FIGO stage, histology, histologic grade, age and race as prognostic factors in determining survival for cancers of the female gynecological system: an analysis of 1973–87 SEER cases of cancers of the endometrium, cervix, ovary, vulva, and vagina</article-title>. <source>Seminars in surgical oncology</source>. <year>1994</year>;<volume>10</volume>(<issue>1</issue>):<fpage>31</fpage>–<lpage>46</lpage>. <object-id pub-id-type="pmid">8115784</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref046"><label>46</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blecharz</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Karolewski</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Bieda</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Klimek</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Pudelek</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Kojs</surname> <given-names>E</given-names></name>, <etal>et al</etal>. <article-title>Prognostic factors in patients with carcinoma of the vulva—our own experience and literature review</article-title>. <source>European journal of gynaecological oncology</source>. <year>2008</year>;<volume>29</volume>(<issue>3</issue>):<fpage>260</fpage>–<lpage>3</lpage>. <object-id pub-id-type="pmid">18592791</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref047"><label>47</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Harada</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Nakagawa</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Iwata</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Saito</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Kumon</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Sakaki</surname> <given-names>S</given-names></name>, <etal>et al</etal>. <article-title>Restoration of wild-type p16 down-regulates vascular endothelial growth factor expression and inhibits angiogenesis in human gliomas</article-title>. <source>Cancer research</source>. <year>1999</year>;<volume>59</volume>(<issue>15</issue>):<fpage>3783</fpage>–<lpage>9</lpage>. <object-id pub-id-type="pmid">10446996</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref048"><label>48</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Malesci</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Laghi</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Bianchi</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Delconte</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Randolph</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Torri</surname> <given-names>V</given-names></name>, <etal>et al</etal>. <article-title>Reduced likelihood of metastases in patients with microsatellite-unstable colorectal cancer</article-title>. <source>Clinical cancer research: an official journal of the American Association for Cancer Research</source>. <year>2007</year>;<volume>13</volume>(<issue>13</issue>):<fpage>3831</fpage>–<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1158/1078-0432.ccr-07-0366" xlink:type="simple">10.1158/1078-0432.ccr-07-0366</ext-link></comment> <object-id pub-id-type="pmid">17606714</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref049"><label>49</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tada</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Watanabe</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Kazama</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Kanazawa</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Hata</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Komuro</surname> <given-names>Y</given-names></name>, <etal>et al</etal>. <article-title>Reduced p16 expression correlates with lymphatic invasion in colorectal cancers</article-title>. <source>Hepato-gastroenterology</source>. <year>2003</year>;<volume>50</volume>(<issue>54</issue>):<fpage>1756</fpage>–<lpage>60</lpage>. <object-id pub-id-type="pmid">14696398</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref050"><label>50</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fakhry</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Westra</surname> <given-names>WH</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Cmelak</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Ridge</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Pinto</surname> <given-names>H</given-names></name>, <etal>et al</etal>. <article-title>Improved survival of patients with human papillomavirus-positive head and neck squamous cell carcinoma in a prospective clinical trial</article-title>. <source>Journal of the National Cancer Institute</source>. <year>2008</year>;<volume>100</volume>(<issue>4</issue>):<fpage>261</fpage>–<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/jnci/djn011" xlink:type="simple">10.1093/jnci/djn011</ext-link></comment> <object-id pub-id-type="pmid">18270337</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref051"><label>51</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Beutner</surname> <given-names>KR</given-names></name>, <name name-style="western"><surname>Tyring</surname> <given-names>S</given-names></name>. <article-title>Human papillomavirus and human disease</article-title>. <source>The American journal of medicine</source>. <year>1997</year>;<volume>102</volume>(<issue>5a</issue>):<fpage>9</fpage>–<lpage>15</lpage>. <object-id pub-id-type="pmid">9217657</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref052"><label>52</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bloss</surname> <given-names>JD</given-names></name>, <name name-style="western"><surname>Liao</surname> <given-names>SY</given-names></name>, <name name-style="western"><surname>Wilczynski</surname> <given-names>SP</given-names></name>, <name name-style="western"><surname>Macri</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Walker</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Peake</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Clinical and histologic features of vulvar carcinomas analyzed for human papillomavirus status: evidence that squamous cell carcinoma of the vulva has more than one etiology</article-title>. <source>Human pathology</source>. <year>1991</year>;<volume>22</volume>(<issue>7</issue>):<fpage>711</fpage>–<lpage>8</lpage>. <object-id pub-id-type="pmid">1649118</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref053"><label>53</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Munger</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Howley</surname> <given-names>PM</given-names></name>. <article-title>Human papillomavirus immortalization and transformation functions</article-title>. <source>Virus research</source>. <year>2002</year>;<volume>89</volume>(<issue>2</issue>):<fpage>213</fpage>–<lpage>28</lpage>. <object-id pub-id-type="pmid">12445661</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref054"><label>54</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhao</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Wu</surname> <given-names>Q</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Lu</surname> <given-names>J</given-names></name>. <article-title>Prognostic value of CD117 in cancer: a meta-analysis</article-title>. <source>International journal of clinical and experimental pathology</source>. <year>2014</year>;<volume>7</volume>(<issue>3</issue>):<fpage>1012</fpage>–<lpage>21</lpage>. <object-id pub-id-type="pmid">24696718</object-id>; PubMed Central PMCID: PMCPmc3971304.</mixed-citation></ref>
+<ref id="pone.0152459.ref055"><label>55</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Riethdorf</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Neffen</surname> <given-names>EF</given-names></name>, <name name-style="western"><surname>Cviko</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Loning</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Crum</surname> <given-names>CP</given-names></name>, <name name-style="western"><surname>Riethdorf</surname> <given-names>L</given-names></name>. <article-title>p16INK4A expression as biomarker for HPV 16-related vulvar neoplasias</article-title>. <source>Human pathology</source>. <year>2004</year>;<volume>35</volume>(<issue>12</issue>):<fpage>1477</fpage>–<lpage>83</lpage>. <object-id pub-id-type="pmid">15619206</object-id>.</mixed-citation></ref>
+<ref id="pone.0152459.ref056"><label>56</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bergeron</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Ordi</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Schmidt</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Trunk</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Keller</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Ridder</surname> <given-names>R</given-names></name>. <article-title>Conjunctive p16INK4a testing significantly increases accuracy in diagnosing high-grade cervical intraepithelial neoplasia</article-title>. <source>American journal of clinical pathology</source>. <year>2010</year>;<volume>133</volume>(<issue>3</issue>):<fpage>395</fpage>–<lpage>406</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1309/ajcpxsvcdz3d5mzm" xlink:type="simple">10.1309/ajcpxsvcdz3d5mzm</ext-link></comment> <object-id pub-id-type="pmid">20154278</object-id>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

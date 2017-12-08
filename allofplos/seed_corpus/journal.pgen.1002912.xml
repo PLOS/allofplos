@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="nlm-ta">PLoS Genet</journal-id><journal-id journal-id-type="pmc">plosgen</journal-id><issn pub-type="ppub">1553-7390</issn><issn pub-type="epub">1553-7404</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PGENETICS-D-12-00491</article-id><article-id pub-id-type="doi">10.1371/journal.pgen.1002912</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Review</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Evolutionary biology</subject>
+            <subj-group>
+              <subject>Evolutionary genetics</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Heredity</subject>
+              <subj-group>
+                <subject>Complex traits</subject>
+                <subject>Linkage (genetics)</subject>
+                <subject>Phenotypes</subject>
+                <subject>Quantitative traits</subject>
+                <subject>Trait locus</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Genetic polymorphism</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Genome-wide association studies</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Model organisms</subject>
+            <subj-group>
+              <subject>Yeast and fungal models</subject>
+              <subj-group>
+                <subject>Saccharomyces cerevisiae</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Genetics and Genomics</subject>
+          <subject>Microbiology</subject>
+          <subject>Evolutionary Biology</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Advances in Quantitative Trait Analysis in Yeast</article-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Liti</surname>
+            <given-names>Gianni</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Louis</surname>
+            <given-names>Edward J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1">
+        <label>1</label>
+        <addr-line>Institute of Research on Cancer and Ageing of Nice (IRCAN), CNRS UMR 7284–INSERM U1081, Faculté de Médecine, Université de Nice Sophia Antipolis, Nice, France</addr-line>
+      </aff><aff id="aff2">
+        <label>2</label>
+        <addr-line>Centre for Genetics and Genomics, Queens Medical Centre, University of Nottingham, Nottingham, United Kingdom</addr-line>
+      </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Fay</surname>
+            <given-names>Justin C.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">
+        <addr-line>Washington University School of Medicine, United States of America</addr-line>
+      </aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">gianni.liti@unice.fr</email> (GL); <email xlink:type="simple">ed.louis@nottingham.ac.uk</email> (EJL)</corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+      </author-notes><pub-date pub-type="collection">
+        <month>8</month>
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>16</day>
+        <month>8</month>
+        <year>2012</year>
+      </pub-date><volume>8</volume><issue>8</issue><elocation-id>e1002912</elocation-id><permissions>
+        
+        <copyright-holder>Liti, Louis</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions><related-article ext-link-type="uri" id="related1" related-article-type="companion" xlink:href="info:doi/10.1371/journal.pgen.1002644" xlink:type="simple">
+        <article-title>Modifier Genes and the Plasticity of Genetic Networks in Mice</article-title>
+      </related-article><abstract>
+        <p>Understanding the genetic mechanisms underlying complex traits is one of the next frontiers in biology. The budding yeast <italic>Saccharomyces cerevisiae</italic> has become an important model for elucidating the mechanisms that govern natural genetic and phenotypic variation. This success is partially due to its intrinsic biological features, such as the short sexual generation time, high meiotic recombination rate, and small genome size. Precise reverse genetics technologies allow the high throughput manipulation of genetic information with exquisite precision, offering the unique opportunity to experimentally measure the phenotypic effect of genetic variants. Population genomic and phenomic studies have revealed widespread variation between diverged populations, characteristic of man-made environments, as well as geographic clusters of wild strains along with naturally occurring recombinant strains (mosaics). Here, we review these recent studies and provide a perspective on how these previously unappreciated levels of variation can help to bridge our understanding of the genotype-phenotype gap, keeping budding yeast at the forefront of genetic studies. Not only are quantitative trait loci (QTL) being mapped with high resolution down to the nucleotide, for the first time QTLs of modest effect and complex interactions between these QTLs and between QTLs and the environment are being determined experimentally at unprecedented levels using next generation techniques of deep sequencing selected pools of individuals as well as multi-generational crosses.</p>
+      </abstract><funding-group>
+        <funding-statement>Financial support has come from the BBSRC and The Wellcome Trust. The funders had no role in the preparation of the article.</funding-statement>
+      </funding-group><counts>
+        <page-count count="7"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Yeast Genetics: Moving Forward</title>
+      <p>Yeast genetics started over 70 years ago when Ojvind Winge successfully crossed two different strains to create a hybrid that combined desirable traits from both parents <xref ref-type="bibr" rid="pgen.1002912-Barnett1">[1]</xref>. The ability to make crosses and generate segregants led to budding yeast developing into one of the premier genetic models. Winge's basic experiment is also the initial step of any forward genetics approach requiring the generation of a recombinant offspring from genetically diverged strains <xref ref-type="bibr" rid="pgen.1002912-Mackay1">[2]</xref>. However, this route was rarely taken. Instead, <italic>S. cerevisiae</italic> has been used as a workhorse to dissect phenotypes, function, and mechanism, where the effect of mutations, initially generated randomly and then systematically, were screened for specific phenotypes <xref ref-type="bibr" rid="pgen.1002912-Nieduszynski1">[3]</xref>. <italic>S. cerevisiae</italic> became the first eukaryote sequenced and a handful of laboratory strains, mostly related to the sequenced S288c background, have been used universally.</p>
+      <p>In the past decade this trend has changed and <italic>S. cerevisiae</italic> has emerged as a powerful model for quantitative forward genetics. A series of studies have mostly used two hybrids to generate sets of segregants: the BY/RM hybrid, essentially used to find expression QTLs (eQTL) <xref ref-type="bibr" rid="pgen.1002912-Brem1">[4]</xref>, and the YJM/S288c hybrid, to accurately dissect the architecture of a single trait <xref ref-type="bibr" rid="pgen.1002912-Steinmetz1">[5]</xref>. The study of eQTLs <xref ref-type="bibr" rid="pgen.1002912-Brem1">[4]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Yvert1">[6]</xref> is conceptually different, generally Mendelian variants segregating that affect expression of a gene in cis or trans depending on whether they are in the regulatory sequence or in a transcription factor, and requires a separate discussion. These studies were instrumental in showing how the biological and genetic features of budding yeast make this organism an ideal model for developing a deeper understanding of quantitative genetics. Some of the principles that emerged from these studies on the complex architecture of traits broadly apply to other organisms. In addition, a simple and elegant approach named reciprocal hemizygosity was devised to validate the effect of one allele over the other in an F1 hybrid <xref ref-type="bibr" rid="pgen.1002912-Steinmetz1">[5]</xref>, and the same principle was successfully exploited in other organisms (<xref ref-type="fig" rid="pgen-1002912-g001">Figure 1A</xref>) <xref ref-type="bibr" rid="pgen.1002912-Blandin1">[7]</xref>. We now have the exquisite precision in mapping and validating functional variants down to single nucleotide resolution (QTN) (<xref ref-type="fig" rid="pgen-1002912-g001">Figure 1B–D</xref>). One of the most exhaustive studies identified four QTNs and their interactions that control sporulation (meiosis) efficiency with three of the QTNs being transcription factors <xref ref-type="bibr" rid="pgen.1002912-Gerke1">[8]</xref>.</p>
+      <fig id="pgen-1002912-g001" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pgen.1002912.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Experimental measures of natural variation.</title>
+          <p>Yeasts offer a unique opportunity to engineer changes to measure the impact of phenotypic variants on traits. (A) Reciprocal hemizygosity has high throughput and can be used to test a large number of candidates. Hybrids that differ only in which of two alleles is present/deleted are compared. Deletion collections of multiple strains will soon be available allowing genome-wide systematic studies using hybrids to test all candidates easily or even for discovery of phenotypic effects directly. (B) Allele swapping is less high throughput but allows testing phenotypic effects of specific alleles in different genetic backgrounds. This is more precise than reciprocal hemizygosity. (C) Site-directed mutagenesis is a rapid and precise way of testing known and novel base changes for phenotypic effects. (D) Synthetic biology has the potential of simultaneously testing multiple variants, both natural or artificial, in a single gene <xref ref-type="bibr" rid="pgen.1002912-Hietpas1">[55]</xref> or scattered through the genome <xref ref-type="bibr" rid="pgen.1002912-Dymond1">[47]</xref>.</p>
+        </caption>
+        <graphic mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pgen.1002912.g001" xlink:type="simple"/>
+      </fig>
+      <p>These studies revealed principles regarding the genetic architecture of traits that have since been found to be broadly applicable by other studies. A recurring theme is that many apparent QTLs are actually composed of several linked QTNs. Counterintuitively, some of the QTLs in a linkage group have effects opposite to expectations based on the parental phenotype (transgressive QTLs). Finally, in virtually every cross the phenotypic variation seen in the progeny is greater than that seen between the parents. Together these properties make complex trait analysis in yeast at the same time both more difficult than might be expected and potentially very fruitful with respect to building a general understanding of the genetic architecture of traits in all organisms.</p>
+    </sec>
+    <sec id="s2">
+      <title>Population Genomics and Standing Genetic Variation</title>
+      <p>Early QTL mapping experiments clearly showed the potential of budding yeast as a model in quantitative genetics. However, very little was known about the origin of the strains selected for breeding. Large collections of strains have been isolated from substrates that originate from human activity <xref ref-type="bibr" rid="pgen.1002912-Fay1">[9]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Legras1">[10]</xref>. In addition to these, other studies reported the isolation of <italic>S. cerevisiae</italic> from multiple niches in wild environments <xref ref-type="bibr" rid="pgen.1002912-Sampaio1">[11]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Sniegowski1">[12]</xref>. The genome sequence of several diverse isolates revealed the presence of five genetically diverged clean lineages (populations that are not interbreeding) <xref ref-type="bibr" rid="pgen.1002912-Liti1">[13]</xref>. The majority of segregating sites in each clean lineage are private and monomorphic within the lineage. Some of these phylogenetic clusters grouped strains isolated from specific human activity (e.g., cultivation from wine and sake production), indicating a potential role of human activity in their evolution and perhaps partial domestication <xref ref-type="bibr" rid="pgen.1002912-Fay1">[9]</xref>. Half of the sequenced strains have mosaic recombinant genomes (mixed ancestry) originating from outcrosses between the clean lineages and are polymorphic for the majority of segregating sites. Importantly, genome analysis provides convincing evidence that human activity has not resulted in reduced standing variation and access to this reservoir of variability is a great resource for investigating the genetic structure of complex traits <xref ref-type="bibr" rid="pgen.1002912-Nieduszynski1">[3]</xref>. The population structure of <italic>S. cerevisiae</italic>, with several clean lineages and several outbred mosaics, may not be ideal for genome-wide association studies (GWAS), as there is a strong linkage of SNPs on a population level and there may not be enough independently derived mosaic strains to overcome the linkage disequilibrium. However, strains belonging to the clean lineages are ideal for linkage analysis as they have an even distribution of segregating sites across the genome and these polymorphisms have coevolved within a specific genomic context. Resources of genotyped segregants from a grid of crosses are now available <xref ref-type="bibr" rid="pgen.1002912-Cubillos1">[14]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Kim1">[15]</xref>.</p>
+      <p>A recurrent problem is that parts of the variation are inaccessible to linkage analysis due to reproductive isolation. The low gamete viability can be attributed to chromosomal rearrangements, sequence divergence, and genetic incompatibilities. For example, one of the <italic>S. cerevisiae</italic> clean lineages, isolated from the Malaysian rain forest, is reproductively isolated from all the other lineages <xref ref-type="bibr" rid="pgen.1002912-Cubillos1">[14]</xref>. Initial attempts at using even more genetically distant strains, like populations of <italic>S. paradoxus</italic> from different continents, gave evidence of deleterious interactions perhaps due to partial incompatibility of the highly diverged alleles <xref ref-type="bibr" rid="pgen.1002912-Liti2">[16]</xref>. This high sequence variation resulted in reduced recombination, making QTL mapping particularly difficult. This reduced recombination also leads to partial reproductive isolation, adding to the difficulty. The problem of reproductive barriers also applies to other model systems. Crosses between <italic>Schiz. pombe</italic> isolates often result in very poor gamete viability (Jurg Baheler, personal communication), and genetic incompatibilities have been observed in <italic>C. elegans</italic> crosses <xref ref-type="bibr" rid="pgen.1002912-Seidel1">[17]</xref>. This problem can be overcome with appropriate nested backcross approaches.</p>
+    </sec>
+    <sec id="s3">
+      <title>From Variant to Variation</title>
+      <p>The effect of causative genetic variants is not only determined by the polymorphisms themselves but is also shaped by genetic and environmental interactions. Many polymorphisms associated with disease risk only cause disease in some individuals <xref ref-type="bibr" rid="pgen.1002912-Lehner1">[18]</xref>. Similarly, the majority of yeast QTLs appear to be context dependent, thus acting only in specific cross combinations or environments <xref ref-type="bibr" rid="pgen.1002912-Cubillos1">[14]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Sinha1">[19]</xref>. One of several heat tolerant QTLs, for example, is found only in a specific cross out of six pairwise crosses between four parents <xref ref-type="bibr" rid="pgen.1002912-Liti1">[13]</xref>. This phenomenon is also observed in reverse genetic studies where inactivating the same gene in multiple strains can have a different phenotypic outcome. An interesting example of conditional viability was previously reported for a duplicated pair of histone coding genes, H2A and H2B <xref ref-type="bibr" rid="pgen.1002912-Libuda1">[20]</xref>. Strains can survive deletion of one of the pairs by upregulating the expression of the other, however deletion of the other pair cannot be compensated in this way. Some strains were able to survive this deletion because of a Ty-mediated gene amplification mechanism of the first pair, which allowed the necessary dosage compensation. Yeast again provided a systematic approach, and genome-wide deletion collections in two different strain backgrounds were analyzed for viability <xref ref-type="bibr" rid="pgen.1002912-Dowell1">[21]</xref>. Despite the two strains sharing ancestry (half of their coding genome is identical), 10% of the genes were conditionally essential: lethal in one strain and with no obvious phenotype in the other. Interestingly, the dispensability of these genes depends on several other modifiers, but their mechanisms of interaction are still unknown. These genes can be identified using conventional QTL mapping, and a recent bulk segregant approach appears particularly promising in mapping these (<xref ref-type="fig" rid="pgen-1002912-g002">Figure 2</xref>).</p>
+      <fig id="pgen-1002912-g002" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pgen.1002912.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>Mapping QTLs and modifiers.</title>
+          <p>(A) QTL mapping has evolved from the classical approach of individual segregant analysis to the X-QTLs and iQTLs approaches with higher mapping sensitivity and resolution. Analysis of time series data in iQTLs allows dynamic monitoring of allele frequency values <xref ref-type="bibr" rid="pgen.1002912-Illingworth1">[56]</xref>. (B) A possible approach to map genetic modifiers using iQTLs. A conditional essential gene, <italic>y</italic>, is deleted from its original chromosomal location and maintained on a plasmid. This hybrid is intercrossed multiple times to allow reshuffling of parental genomes. Upon loss of gene <italic>y</italic>, viability relies on the presence of genetic modifier/s, and allelic combinations that result in lethality (dashed cells) will decrease in allele frequency. These modifiers can be detected by comparing allele frequencies of the pool before and after the plasmid loss. When many modifiers are involved, the lethal combinations will be present in low frequency, making them difficult to detect. Further rounds of intercrosses, after loss of gene <italic>y</italic>, will allow reshuffling of alleles and the generation of more cells with unviable combinations.</p>
+        </caption>
+        <graphic mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pgen.1002912.g002" xlink:type="simple"/>
+      </fig>
+      <p>The surrounding environment provides a second level of QTL regulation. Similar to the genetic background effects, many QTLs are only effective in specific environmental conditions. For example, genes affecting colony morphology are strongly regulated by the nutrients present in the media <xref ref-type="bibr" rid="pgen.1002912-Granek1">[22]</xref>. Here two gene regulatory networks interact with each other and environmental signals to produce a switch to filamentous growth. Genes residing in the subtelomeric regions are also subject to environmental regulation <xref ref-type="bibr" rid="pgen.1002912-Smith1">[23]</xref> through environment-responsive transcription factors. Furthermore, the environmental conditions also shape the gene-gene interaction network generating an even more complex interaction (gene×gene×environment). In the example of the four QTNs affecting sporulation <xref ref-type="bibr" rid="pgen.1002912-Gerke1">[8]</xref>, the 32 possible combinations of genotypes in both genetic backgrounds were exposed to eight environmental conditions <xref ref-type="bibr" rid="pgen.1002912-Smith1">[23]</xref>. Clear examples of gene×gene interactions dependent on environment were found. The environmental effect can be direct but also mediated by master regulators such as the chaperone HSP90. Modulation of <italic>HSP90</italic> by temperature and drugs reveals the presence of <italic>HSP90</italic> contingent QTLs <xref ref-type="bibr" rid="pgen.1002912-Jarosz1">[24]</xref>. In this case, environment-dependent alleles are indirectly modulated via <italic>HSP90</italic> through protein folding. An intriguing intermediate role for epigenetic polymorphisms has also been proposed <xref ref-type="bibr" rid="pgen.1002912-Nagarajan1">[25]</xref> where histone mark differences appear enriched in genes with high transcriptional variability.</p>
+    </sec>
+    <sec id="s4">
+      <title>The Genomic Landscape of QTLs</title>
+      <p>One issue with mapping QTLs is complete knowledge of the genomes. In general, subtelomeric regions are incomplete in most genome projects and if complete only so in a high-quality reference genome such as the case of <italic>S. cerevisiae</italic>. As subtelomeres are highly polymorphic with respect to presence/absence and location of genes and sequence, as well as in sequence variation, there is the potential for a great deal of unmappable variation. In budding yeast studies upwards of 25% of QTLs for overall traits have been mapped distal to the last segregating marker <xref ref-type="bibr" rid="pgen.1002912-Cubillos1">[14]</xref>. The missing genetic information is, however, only about 8% of the genome. Some of this variation may be due to copy number of genes present in different subtelomeres as has been seen for arsenate resistance <xref ref-type="bibr" rid="pgen.1002912-Liti1">[13]</xref> but not all will be due to CNV. Not only are QTLs missed by not having complete genomes, they appear to be enriched in the missing regions. Getting a handle on this poorly described part of the genome at the level of variation in a population will be one of the major goals of the next decade.</p>
+      <p>One interesting observation that has arisen from the dissection of QTLs responsible for specific traits, in the F1 progeny of a given cross, is that an initial large QTL region turns out to be composed of several linked QTLs. Furthermore these are a mixture of antagonistic QTLs (those alleles with a different effect from their parental origin) and QTLs with the expected phenotypic effect (coinciding with parental phenotype). Two specific studies using the lab reference strain and one other to create F1 progeny mapped a QTL with large effect for heat resistance and sporulation <xref ref-type="bibr" rid="pgen.1002912-Steinmetz1">[5]</xref>, <xref ref-type="bibr" rid="pgen.1002912-BenAri1">[26]</xref>. Upon further dissection of these regions, three and four linked QTLs were determined. In the case of heat resistance, one of three QTLs was antagonistic, and in the case of sporulation, three out of four were antagonistic. Interestingly, a separate study of sporulation QTLs using the same cross <xref ref-type="bibr" rid="pgen.1002912-Deutschbauer1">[27]</xref> did not find the same QTLs, and those found were unlinked. The differences between the studies include mapping approaches but also the phenotype measured. In one case it was sporulation at 24 h and the other at 7 d, showing another level of complexity in the analysis of quantitative traits. A third case has recently been found in ethanol tolerance in an industrial strain with four linked QTLs, one being antagonistic <xref ref-type="bibr" rid="pgen.1002912-Swinnen1">[28]</xref>. Linked QTLs have also been observed in Arabidopsis <xref ref-type="bibr" rid="pgen.1002912-Kroymann1">[29]</xref> with QTLs affecting growth rate. At first glance this seems unexpected, as one would expect QTLs to have effects in the same direction as exhibited by the parent (in the case of yeast, the parental population is fixed for these variants), and linkage of these QTLs would be improbable due to chance alone. One possibility for linkage is the selective sweep of a beneficial allele carrying less adapted linked alleles by hitchhiking. There is no reason, however, that other loci involved in the trait should be linked, certainly not as often as is observed. An alternative hypothesis is through adaptation. Isolated populations of yeast may be expected to result in linked QTLs of mixed effect in the following manner. It is known from genome-wide forward genetic studies that large numbers of genes can affect a given phenotype. A new mutation, affecting the trait which may be advantageous or not disadvantageous enough to be removed immediately from the population, will be a QTL for a particular phenotype. Additional mutations in that population that affect that phenotype and the fitness of the individuals carrying both, either by compensating a slightly deleterious initial mutation or furthering the advantage of the individual carrying both, will increase in the population if it is fitter than either mutation alone or the original genotype. For <italic>Saccharomyces</italic> yeast where there is some outbreeding, advantageous combinations will be broken up by recombination unless they are linked. This will lead to fixed differences between populations of linked combinations of variants (see <xref ref-type="fig" rid="pgen-1002912-g003">Figure 3</xref>). Over time several linked fixed variations can be generated between populations, and if any individual variants are initially deleterious, the result will be a linked set of QTLs of mixed effect (positive and negative on the phenotype in question). Different populations adapting to similar niches would likely evolve linked sets in different genomic locations, resulting in the finding of large QTL regions in crosses between these populations which upon further dissection reveal several linked QTLs within each large “super”-QTL. One caveat to this interpretation is that the trait measured may not be the trait acted upon by selection, however the finding of linked QTLs in many examples indicates that the QTLs underlying the traits measured must be somehow interconnected in adaptation. Pleiotropy is likely to be an important aspect of the complex architecture of quantitative traits. As quantitative trait analysis advances in terms of resolution and sensitivity, we predict that this architecture will be found in many situations and is already becoming evident in other systems <xref ref-type="bibr" rid="pgen.1002912-Kroymann1">[29]</xref>. The generation and evolution of “supergenes” as seen in complex color patterns in butterflies where recombination is reduced/eliminated between linked genes affecting the phenotype <xref ref-type="bibr" rid="pgen.1002912-Joron1">[30]</xref> may be analogous to the linked QTLs we see in yeast.</p>
+      <fig id="pgen-1002912-g003" orientation="portrait" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pgen.1002912.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>Linked quantitative trait loci (QTLs) can arise through normal population genetic processes.</title>
+          <p>For any given phenotype there are many loci where mutations can have an effect. Different populations will experience mutations in different loci affecting the same phenotype. These mutations can affect a phenotype in a positive (+) or negative (−) way and if nearly neutral ( = ) will remain segregating within a population for awhile. As other mutations occur, advantageous combinations can result with better fitness than either mutation alone or the original parental alleles. Multiple mutations with effects upon a trait will be broken up by recombination if not linked and one or more can therefore be lost. Linked mutations can become fixed as blocks of larger collections of QTLs if the combination of alleles is beneficial. Different populations may evolve different “super”-QTLs, which are revealed when the populations interbreed. Offspring will express a range of phenotypes depending on which QTLs are inherited and how much recombination breaks up the linked groups. Multiple rounds of interbreeding can further break up the linked QTLs revealing individual loci, as illustrated in <xref ref-type="fig" rid="pgen-1002912-g002">Figure 2</xref>.</p>
+        </caption>
+        <graphic mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pgen.1002912.g003" xlink:type="simple"/>
+      </fig>
+    </sec>
+    <sec id="s5">
+      <title>Next Generation QTL Mapping: From X-QTLs to iQTLs</title>
+      <p>Multiple aspects and directions are evolving from the conventional QTL mapping approach. The genetic variation so far described in <italic>S. cerevisiae</italic> is potentially only the tip of the iceberg. New natural variants from a wide range of sources and geographic areas have been isolated and genome sequences will soon be available. This reservoir of diversity can aid the bioinformatic analysis for predicting functional variants <xref ref-type="bibr" rid="pgen.1002912-Zia1">[31]</xref>. An increasing number of sequenced individuals could also enable the use of GWAS. However, the well-defined population structure is likely to pose a problem. Associations within lineages do not suffer from this problem but cannot be applied to many traits that appear characteristic of but do not vary within a population <xref ref-type="bibr" rid="pgen.1002912-Warringer1">[32]</xref>. Choice of mapping approaches depends on the population structure and the nature of the trait in question. Alternative strategies have been worked out in plant systems for different situations <xref ref-type="bibr" rid="pgen.1002912-Brachi1">[33]</xref> varying sampling and breeding strategies for these different situations. QTL mapping in yeast has evolved along these lines outlined for plants with surveys of large numbers of isolates from various sources and locations <xref ref-type="bibr" rid="pgen.1002912-Liti1">[13]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Schacherer1">[34]</xref> and individual crosses for specific traits <xref ref-type="bibr" rid="pgen.1002912-Brem1">[4]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Steinmetz1">[5]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Gerke1">[8]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Kim1">[15]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Liti2">[16]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Sinha1">[19]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Nagarajan1">[25]</xref>–<xref ref-type="bibr" rid="pgen.1002912-Deutschbauer1">[27]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Ambroset1">[35]</xref>–<xref ref-type="bibr" rid="pgen.1002912-Sinha2">[41]</xref> to pair-wise crosses between different populations <xref ref-type="bibr" rid="pgen.1002912-Cubillos1">[14]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Kim1">[15]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Ehrenreich1">[42]</xref>. Sensitivity in detection of QTLs, even those of modest effect, has been enhanced by bulk segregant analysis, either in large numbers of F1 progeny, the X-QTL approach <xref ref-type="bibr" rid="pgen.1002912-Ehrenreich2">[43]</xref>, or through large numbers of segregants from advanced intercross lines, the iQTL approach <xref ref-type="bibr" rid="pgen.1002912-Parts1">[44]</xref>. The advantage of iQTLs (intercross-selection QTLs) over X-QTLs is in resolution as the multiple generations break up linkage groups allowing determination of individual QTLs down to single genes and in some instances the causal QTN (<xref ref-type="bibr" rid="pgen.1002912-Parts1">[44]</xref> and <xref ref-type="fig" rid="pgen-1002912-g002">Figure 2</xref>).</p>
+      <p>GWAS in yeast is likely to be hampered by the population structure, and it is unlikely that enough different mosaic genomes can be sampled from the environment to map more than a few specific QTLs by association. In plants there are already multi-parental, multi-generational strategies <xref ref-type="bibr" rid="pgen.1002912-Brachi1">[33]</xref>, which allow for the incorporation of most of the genetic variation of a species into one large panmictic pool, which can then be used for GWAS analysis. An attractive prospect for yeast is to create artificially outbred populations by mixing multiple variants that can then be exploited by new GWAS approaches <xref ref-type="bibr" rid="pgen.1002912-Parts1">[44]</xref>. This can complement advanced intercross lines created from pairwise crosses <xref ref-type="bibr" rid="pgen.1002912-Parts1">[44]</xref>. Next generation sequencing allows complete genome-wide genotype data for large segregant populations, particularly important in multigeneration crosses, where the small haplotype block size requires high marker density <xref ref-type="bibr" rid="pgen.1002912-Parts1">[44]</xref>. Large populations have been used for bulk segregant analysis and successfully mapped variants with minor effect <xref ref-type="bibr" rid="pgen.1002912-Ehrenreich2">[43]</xref>–<xref ref-type="bibr" rid="pgen.1002912-Wenger1">[46]</xref>. The increased ability to synthesize specific DNA sequences is also a promising approach to experimentally measure the effect of specific variants in a high-throughput fashion (<xref ref-type="fig" rid="pgen-1002912-g001">Figure 1D</xref>, <xref ref-type="bibr" rid="pgen.1002912-Dymond1">[47]</xref>). This should facilitate the assessment of complex interactions, as well as generate synthetic variants that expand the gene pool.</p>
+      <p>Exploiting natural variation by reverse genetics is also valuable. Deletion collections from highly diverged strains or sister species, such as <italic>S. paradoxus</italic>, allow the testing of whether the observed phenotypes are general or strain background dependent. Initial attempts at predicting phenotypes by combining population genomics with systems biology datasets gave promising results <xref ref-type="bibr" rid="pgen.1002912-Jelier1">[48]</xref>. Characterizing the effects of mutations/deletions in many backgrounds should improve the predictive power.</p>
+      <p>A further step forward in yeast linkage analysis will be the shift from using haploid (or homozygous diploids) to diploids. This will strengthen the <italic>S. cerevisiae</italic> position as a model for human complex traits and also will provide more realistic insights for yeast in natural settings. Few studies have looked at important aspects such as heterosis and overdominace <xref ref-type="bibr" rid="pgen.1002912-Timberlake1">[49]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Zorgo1">[50]</xref> and heterozygosity <xref ref-type="bibr" rid="pgen.1002912-Magwene1">[51]</xref>. Technological challenges posed by working with diploids appear to have been overcome by new QTL mapping approaches <xref ref-type="bibr" rid="pgen.1002912-Parts1">[44]</xref>. Going back to Winge's initial experiments, forward genetics in yeast appears to have a bright future ahead and will likely play a key role in elucidating the rules that govern complex traits. In turn, these novel mapping and breeding strategies hold the potential to create attractive <italic>S. cerevisiae</italic> variants for the budding yeast biotechnology industry <xref ref-type="bibr" rid="pgen.1002912-Swinnen1">[28]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Ambroset1">[35]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Marullo1">[38]</xref>.</p>
+      <p>These approaches will be useful in other systems. The plant community already has the breeding mapping strategies and they have been very successful <xref ref-type="bibr" rid="pgen.1002912-Brachi1">[33]</xref>. The Drosophila community has successfully used population-based resequencing <xref ref-type="bibr" rid="pgen.1002912-Turner1">[52]</xref> to map QTLs even with modest effect, and it has a deletion-based testing of candidates analogous to the reciprocal heterozygosity test with a large resource of deletions available <xref ref-type="bibr" rid="pgen.1002912-Cook1">[53]</xref>. It remains to be seen how complex the quantitative genetic architecture is in other systems compared to yeast, but given the missing heritability in many systems <xref ref-type="bibr" rid="pgen.1002912-Brachi1">[33]</xref>, <xref ref-type="bibr" rid="pgen.1002912-Manolio1">[54]</xref>, it is likely that the situation in yeast is not unusual.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The authors would like to thank Aziz Aboobaker for his helpful comments and several reviewers for suggestions.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pgen.1002912-Barnett1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Barnett</surname><given-names>JA</given-names></name> (<year>2007</year>) <article-title>A history of research on yeasts 10: foundations of yeast genetics</article-title>. <source>Yeast</source> <volume>24</volume>: <fpage>799</fpage>–<lpage>845</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Mackay1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mackay</surname><given-names>TF</given-names></name>, <name name-style="western"><surname>Stone</surname><given-names>EA</given-names></name>, <name name-style="western"><surname>Ayroles</surname><given-names>JF</given-names></name> (<year>2009</year>) <article-title>The genetics of quantitative traits: challenges and prospects</article-title>. <source>Nat Rev Genet</source> <volume>10</volume>: <fpage>565</fpage>–<lpage>577</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Nieduszynski1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nieduszynski</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Liti</surname><given-names>G</given-names></name> (<year>2011</year>) <article-title>From sequence to function: insights from natural variation in budding yeasts</article-title>. <source>Biochim Biophys Acta</source> <volume>1810</volume>: <fpage>959</fpage>–<lpage>966</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Brem1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brem</surname><given-names>RB</given-names></name>, <name name-style="western"><surname>Yvert</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Clinton</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Kruglyak</surname><given-names>L</given-names></name> (<year>2002</year>) <article-title>Genetic dissection of transcriptional regulation in budding yeast</article-title>. <source>Science</source> <volume>296</volume>: <fpage>752</fpage>–<lpage>755</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Steinmetz1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Steinmetz</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Sinha</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Richards</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Spiegelman</surname><given-names>JI</given-names></name>, <name name-style="western"><surname>Oefner</surname><given-names>PJ</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>Dissecting the architecture of a quantitative trait locus in yeast</article-title>. <source>Nature</source> <volume>416</volume>: <fpage>326</fpage>–<lpage>330</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Yvert1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yvert</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Brem</surname><given-names>RB</given-names></name>, <name name-style="western"><surname>Whittle</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Akey</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Foss</surname><given-names>E</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Trans-acting regulatory variation in Saccharomyces cerevisiae and the role of transcription factors</article-title>. <source>Nat Genet</source> <volume>35</volume>: <fpage>57</fpage>–<lpage>64</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Blandin1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blandin</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Wang-Sattler</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Lamacchia</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Gagneur</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Lycett</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Dissecting the genetic basis of resistance to malaria parasites in Anopheles gambiae</article-title>. <source>Science</source> <volume>326</volume>: <fpage>147</fpage>–<lpage>150</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Gerke1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gerke</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Lorenz</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Cohen</surname><given-names>B</given-names></name> (<year>2009</year>) <article-title>Genetic interactions between transcription factors cause natural variation in yeast</article-title>. <source>Science</source> <volume>323</volume>: <fpage>498</fpage>–<lpage>501</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Fay1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fay</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Benavides</surname><given-names>JA</given-names></name> (<year>2005</year>) <article-title>Evidence for domesticated and wild populations of Saccharomyces cerevisiae</article-title>. <source>PLoS Genet</source> <volume>1</volume>: <fpage>e5</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.0010005" xlink:type="simple">10.1371/journal.pgen.0010005</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Legras1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Legras</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Merdinoglu</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Cornuet</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Karst</surname><given-names>F</given-names></name> (<year>2007</year>) <article-title>Bread, beer and wine: Saccharomyces cerevisiae diversity reflects human history</article-title>. <source>Mol Ecol</source> <volume>16</volume>: <fpage>2091</fpage>–<lpage>2102</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Sampaio1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sampaio</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Goncalves</surname><given-names>P</given-names></name> (<year>2008</year>) <article-title>Natural populations of Saccharomyces kudriavzevii in Portugal are associated with oak bark and are sympatric with S. cerevisiae and S. paradoxus</article-title>. <source>Appl Environ Microbiol</source> <volume>74</volume>: <fpage>2144</fpage>–<lpage>2152</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Sniegowski1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sniegowski</surname><given-names>PD</given-names></name>, <name name-style="western"><surname>Dombrowski</surname><given-names>PG</given-names></name>, <name name-style="western"><surname>Fingerman</surname><given-names>E</given-names></name> (<year>2002</year>) <article-title>Saccharomyces cerevisiae and Saccharomyces paradoxus coexist in a natural woodland site in North America and display different levels of reproductive isolation from European conspecifics</article-title>. <source>FEMS Yeast Res</source> <volume>1</volume>: <fpage>299</fpage>–<lpage>306</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Liti1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Liti</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Carter</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Moses</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Warringer</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Parts</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Population genomics of domestic and wild yeasts</article-title>. <source>Nature</source> <volume>458</volume>: <fpage>337</fpage>–<lpage>341</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Cubillos1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cubillos</surname><given-names>FA</given-names></name>, <name name-style="western"><surname>Billi</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Zorgo</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Parts</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Fargier</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Assessing the complex architecture of polygenic traits in diverged yeast populations</article-title>. <source>Mol Ecol</source> <volume>20</volume>: <fpage>1401</fpage>–<lpage>1413</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Kim1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kim</surname><given-names>HS</given-names></name>, <name name-style="western"><surname>Fay</surname><given-names>JC</given-names></name> (<year>2007</year>) <article-title>Genetic variation in the cysteine biosynthesis pathway causes sensitivity to pharmacological compounds</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>104</volume>: <fpage>19387</fpage>–<lpage>19391</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Liti2">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Liti</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Haricharan</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Cubillos</surname><given-names>FA</given-names></name>, <name name-style="western"><surname>Tierney</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Sharp</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Segregating YKU80 and TLC1 alleles underlying natural variation in telomere properties in wild yeast</article-title>. <source>PLoS Genet</source> <volume>5</volume>: <fpage>e1000659</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1000659" xlink:type="simple">10.1371/journal.pgen.1000659</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Seidel1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Seidel</surname><given-names>HS</given-names></name>, <name name-style="western"><surname>Rockman</surname><given-names>MV</given-names></name>, <name name-style="western"><surname>Kruglyak</surname><given-names>L</given-names></name> (<year>2008</year>) <article-title>Widespread genetic incompatibility in C. elegans maintained by balancing selection</article-title>. <source>Science</source> <volume>319</volume>: <fpage>589</fpage>–<lpage>594</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Lehner1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lehner</surname><given-names>B</given-names></name> (<year>2011</year>) <article-title>Molecular mechanisms of epistasis within and between genes</article-title>. <source>Trends Genet</source> <volume>27</volume>: <fpage>323</fpage>–<lpage>331</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Sinha1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sinha</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Nicholson</surname><given-names>BP</given-names></name>, <name name-style="western"><surname>Steinmetz</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>McCusker</surname><given-names>JH</given-names></name> (<year>2006</year>) <article-title>Complex genetic interactions in a quantitative trait locus</article-title>. <source>PLoS Genet</source> <volume>2</volume>: <fpage>e13</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.0020013" xlink:type="simple">10.1371/journal.pgen.0020013</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Libuda1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Libuda</surname><given-names>DE</given-names></name>, <name name-style="western"><surname>Winston</surname><given-names>F</given-names></name> (<year>2006</year>) <article-title>Amplification of histone genes by circular chromosome formation in Saccharomyces cerevisiae</article-title>. <source>Nature</source> <volume>443</volume>: <fpage>1003</fpage>–<lpage>1007</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Dowell1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dowell</surname><given-names>RD</given-names></name>, <name name-style="western"><surname>Ryan</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Jansen</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Cheung</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Agarwala</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Genotype to phenotype: a complex problem</article-title>. <source>Science</source> <volume>328</volume>: <fpage>469</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Granek1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Granek</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Magwene</surname><given-names>PM</given-names></name> (<year>2010</year>) <article-title>Environmental and genetic determinants of colony morphology in yeast</article-title>. <source>PLoS Genet</source> <volume>6</volume>: <fpage>e1000823</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1000823" xlink:type="simple">10.1371/journal.pgen.1000823</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Smith1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Smith</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>LR</given-names></name>, <name name-style="western"><surname>Kreisberg</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Vazquez</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Wan</surname><given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Environment-responsive transcription factors bind subtelomeric elements and regulate gene silencing</article-title>. <source>Mol Syst Biol</source> <volume>7</volume>: <fpage>455</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Jarosz1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jarosz</surname><given-names>DF</given-names></name>, <name name-style="western"><surname>Lindquist</surname><given-names>S</given-names></name> (<year>2010</year>) <article-title>Hsp90 and environmental stress transform the adaptive value of natural genetic variation</article-title>. <source>Science</source> <volume>330</volume>: <fpage>1820</fpage>–<lpage>1824</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Nagarajan1">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nagarajan</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Veyrieras</surname><given-names>JB</given-names></name>, <name name-style="western"><surname>de Dieuleveult</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Bottin</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Fehrmann</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Natural single-nucleosome epi-polymorphisms in yeast</article-title>. <source>PLoS Genet</source> <volume>6</volume>: <fpage>e1000913</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1000913" xlink:type="simple">10.1371/journal.pgen.1000913</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-BenAri1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ben-Ari</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Zenvirth</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Sherman</surname><given-names>A</given-names></name>, <name name-style="western"><surname>David</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Klutstein</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Four linked genes participate in controlling sporulation efficiency in budding yeast</article-title>. <source>PLoS Genet</source> <volume>2</volume>: <fpage>e195</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.0020195" xlink:type="simple">10.1371/journal.pgen.0020195</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Deutschbauer1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Deutschbauer</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Davis</surname><given-names>RW</given-names></name> (<year>2005</year>) <article-title>Quantitative trait loci mapped to single-nucleotide resolution in yeast</article-title>. <source>Nat Genet</source> <volume>37</volume>: <fpage>1333</fpage>–<lpage>1340</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Swinnen1">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swinnen</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Schaerlaekens</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Pais</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Claesen</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Hubmann</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Identification of novel causative genes determining the complex trait of high ethanol tolerance in yeast using pooled-segregant whole-genome sequence analysis</article-title>. <source>Genome Research</source> <volume>22</volume>: <fpage>975</fpage>–<lpage>984</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Kroymann1">
+        <label>29</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kroymann</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Mitchell-Olds</surname><given-names>T</given-names></name> (<year>2005</year>) <article-title>Epistasis and balanced polymorphism influencing complex trait variation</article-title>. <source>Nature</source> <volume>435</volume>: <fpage>95</fpage>–<lpage>98</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Joron1">
+        <label>30</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Joron</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Frezal</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Jones</surname><given-names>RT</given-names></name>, <name name-style="western"><surname>Chamberlain</surname><given-names>NL</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>SF</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Chromosomal rearrangements maintain a polymorphic supergene controlling butterfly mimicry</article-title>. <source>Nature</source> <volume>477</volume>: <fpage>203</fpage>–<lpage>206</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Zia1">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zia</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Moses</surname><given-names>AM</given-names></name> (<year>2011</year>) <article-title>Ranking insertion, deletion and nonsense mutations based on their effect on genetic information</article-title>. <source>BMC Bioinformatics</source> <volume>12</volume>: <fpage>299</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Warringer1">
+        <label>32</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Warringer</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Zorgo</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Cubillos</surname><given-names>FA</given-names></name>, <name name-style="western"><surname>Zia</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Gjuvsland</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Trait variation in yeast is defined by population history</article-title>. <source>PLoS Genet</source> <volume>7</volume>: <fpage>e1002111</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1002111" xlink:type="simple">10.1371/journal.pgen.1002111</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Brachi1">
+        <label>33</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brachi</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Morris</surname><given-names>GP</given-names></name>, <name name-style="western"><surname>Borevitz</surname><given-names>JO</given-names></name> (<year>2011</year>) <article-title>Genome-wide association studies in plants: the missing heritability is in the field</article-title>. <source>Genome Biology</source> <volume>12</volume>: <fpage>232</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Schacherer1">
+        <label>34</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schacherer</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Shapiro</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Ruderfer</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Kruglyak</surname><given-names>L</given-names></name> (<year>2009</year>) <article-title>Comprehensive polymorphism survey elucidates population structure of Saccharomyces cerevisiae</article-title>. <source>Nature</source> <volume>458</volume>: <fpage>342</fpage>–<lpage>345</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Ambroset1">
+        <label>35</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ambroset</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Petit</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Brion</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Sanchez</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Delobel</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Deciphering the molecular basis of wine yeast fermentation traits using a combined genetic and genomic approach</article-title>. <source>G3</source> <volume>1</volume>: <fpage>263</fpage>–<lpage>281</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Ansel1">
+        <label>36</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ansel</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Bottin</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Rodriguez-Beltran</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Damon</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Nagarajan</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Cell-to-cell stochastic variation in gene expression is a complex genetic trait</article-title>. <source>PLoS Genet</source> <volume>4</volume>: <fpage>e1000049</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1000049" xlink:type="simple">10.1371/journal.pgen.1000049</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Demogines1">
+        <label>37</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Demogines</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Kruglyak</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Alani</surname><given-names>E</given-names></name> (<year>2008</year>) <article-title>Identification and dissection of a complex DNA repair sensitivity phenotype in Baker's yeast</article-title>. <source>PLoS Genet</source> <volume>4</volume>: <fpage>e1000123</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1000123" xlink:type="simple">10.1371/journal.pgen.1000123</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Marullo1">
+        <label>38</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Marullo</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Aigle</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Bely</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Masneuf-Pomarede</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Durrens</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Single QTL mapping and nucleotide-level resolution of a physiologic trait in wine Saccharomyces cerevisiae strains</article-title>. <source>FEMS Yeast Research</source> <volume>7</volume>: <fpage>941</fpage>–<lpage>952</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Nogami1">
+        <label>39</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nogami</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Ohya</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Yvert</surname><given-names>G</given-names></name> (<year>2007</year>) <article-title>Genetic complexity and quantitative trait loci mapping of yeast morphological traits</article-title>. <source>PLoS Genet</source> <volume>3</volume>: <fpage>e31</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.0030031" xlink:type="simple">10.1371/journal.pgen.0030031</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Romano1">
+        <label>40</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Romano</surname><given-names>GH</given-names></name>, <name name-style="western"><surname>Gurvich</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Lavi</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Ulitsky</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Shamir</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Different sets of QTLs influence fitness variation in yeast</article-title>. <source>Mol Syst Biol</source> <volume>6</volume>: <fpage>346</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Sinha2">
+        <label>41</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sinha</surname><given-names>H</given-names></name>, <name name-style="western"><surname>David</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Pascon</surname><given-names>RC</given-names></name>, <name name-style="western"><surname>Clauder-Munster</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Krishnakumar</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Sequential elimination of major-effect contributors identifies additional quantitative trait loci conditioning high-temperature growth in yeast</article-title>. <source>Genetics</source> <volume>180</volume>: <fpage>1661</fpage>–<lpage>1670</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Ehrenreich1">
+        <label>42</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ehrenreich</surname><given-names>IM</given-names></name>, <name name-style="western"><surname>Bloom</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Torabi</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Jia</surname><given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Genetic architecture of highly complex chemical resistance traits across four yeast strains</article-title>. <source>PLoS Genet</source> <volume>8</volume>: <fpage>e1002570</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1002570" xlink:type="simple">10.1371/journal.pgen.1002570</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Ehrenreich2">
+        <label>43</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ehrenreich</surname><given-names>IM</given-names></name>, <name name-style="western"><surname>Torabi</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Jia</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Kent</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Martis</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Dissection of genetically complex traits with extremely large pools of yeast segregants</article-title>. <source>Nature</source> <volume>464</volume>: <fpage>1039</fpage>–<lpage>1042</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Parts1">
+        <label>44</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Parts</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Cubillos</surname><given-names>FA</given-names></name>, <name name-style="western"><surname>Warringer</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Jain</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Salinas</surname><given-names>F</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Revealing the genetic structure of a trait by sequencing a population under selection</article-title>. <source>Genome Res</source> <volume>21</volume>: <fpage>1131</fpage>–<lpage>1138</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Segre1">
+        <label>45</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Segre</surname><given-names>AV</given-names></name>, <name name-style="western"><surname>Murray</surname><given-names>AW</given-names></name>, <name name-style="western"><surname>Leu</surname><given-names>JY</given-names></name> (<year>2006</year>) <article-title>High-resolution mutation mapping reveals parallel experimental evolution in yeast</article-title>. <source>PLoS Biol</source> <volume>4</volume>: <fpage>e256</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pbio.0040256" xlink:type="simple">10.1371/journal.pbio.0040256</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Wenger1">
+        <label>46</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wenger</surname><given-names>JW</given-names></name>, <name name-style="western"><surname>Schwartz</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Sherlock</surname><given-names>G</given-names></name> (<year>2010</year>) <article-title>Bulk segregant analysis by high-throughput sequencing reveals a novel xylose utilization gene from Saccharomyces cerevisiae</article-title>. <source>PLoS Genet</source> <volume>6</volume>: <fpage>e1000942</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1000942" xlink:type="simple">10.1371/journal.pgen.1000942</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Dymond1">
+        <label>47</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dymond</surname><given-names>JS</given-names></name>, <name name-style="western"><surname>Richardson</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Coombes</surname><given-names>CE</given-names></name>, <name name-style="western"><surname>Babatz</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Muller</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Synthetic chromosome arms function in yeast and generate phenotypic diversity by design</article-title>. <source>Nature</source> <volume>477</volume>: <fpage>471</fpage>–<lpage>476</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Jelier1">
+        <label>48</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jelier</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Semple</surname><given-names>JI</given-names></name>, <name name-style="western"><surname>Garcia-Verdugo</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Lehner</surname><given-names>B</given-names></name> (<year>2011</year>) <article-title>Predicting phenotypic variation in yeast from individual genome sequences</article-title>. <source>Nat Genet</source> <volume>43</volume>: <fpage>1270</fpage>–<lpage>1274</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Timberlake1">
+        <label>49</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Timberlake</surname><given-names>WE</given-names></name>, <name name-style="western"><surname>Frizzell</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Richards</surname><given-names>KD</given-names></name>, <name name-style="western"><surname>Gardner</surname><given-names>RC</given-names></name> (<year>2011</year>) <article-title>A new yeast genetic resource for analysis and breeding</article-title>. <source>Yeast</source> <volume>28</volume>: <fpage>63</fpage>–<lpage>80</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Zorgo1">
+        <label>50</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zorgo</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Gjuvsland</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Cubillos</surname><given-names>FA</given-names></name>, <name name-style="western"><surname>Louis</surname><given-names>EJ</given-names></name>, <name name-style="western"><surname>Liti</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Life history shapes trait heredity by promoting accumulation of loss-of-function alleles in yeast</article-title>. <source>Mol Biol Evol</source></mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Magwene1">
+        <label>51</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Magwene</surname><given-names>PM</given-names></name>, <name name-style="western"><surname>Kayikci</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Granek</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Reininga</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Scholl</surname><given-names>Z</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Outcrossing, mitotic recombination, and life-history trade-offs shape genome evolution in Saccharomyces cerevisiae</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>108</volume>: <fpage>1987</fpage>–<lpage>1992</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Turner1">
+        <label>52</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Turner</surname><given-names>TL</given-names></name>, <name name-style="western"><surname>Stewart</surname><given-names>AD</given-names></name>, <name name-style="western"><surname>Fields</surname><given-names>AT</given-names></name>, <name name-style="western"><surname>Rice</surname><given-names>WR</given-names></name>, <name name-style="western"><surname>Tarone</surname><given-names>AM</given-names></name> (<year>2011</year>) <article-title>Population-based resequencing of experimentally evolved populations reveals the genetic basis of body size variation in Drosophila melanogaster</article-title>. <source>PLoS Genet</source> <volume>7</volume>: <fpage>e1001336</fpage> doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1001336" xlink:type="simple">10.1371/journal.pgen.1001336</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Cook1">
+        <label>53</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cook</surname><given-names>RK</given-names></name>, <name name-style="western"><surname>Christensen</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Deal</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Coburn</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Deal</surname><given-names>ME</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>The generation of chromosomal deletions to provide extensive coverage and subdivision of the Drosophila melanogaster genome</article-title>. <source>Genome Biology</source> <volume>13</volume>: <fpage>R21</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Manolio1">
+        <label>54</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Manolio</surname><given-names>TA</given-names></name>, <name name-style="western"><surname>Collins</surname><given-names>FS</given-names></name>, <name name-style="western"><surname>Cox</surname><given-names>NJ</given-names></name>, <name name-style="western"><surname>Goldstein</surname><given-names>DB</given-names></name>, <name name-style="western"><surname>Hindorff</surname><given-names>LA</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Finding the missing heritability of complex diseases</article-title>. <source>Nature</source> <volume>461</volume>: <fpage>747</fpage>–<lpage>753</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Hietpas1">
+        <label>55</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hietpas</surname><given-names>RT</given-names></name>, <name name-style="western"><surname>Jensen</surname><given-names>JD</given-names></name>, <name name-style="western"><surname>Bolon</surname><given-names>DN</given-names></name> (<year>2011</year>) <article-title>Experimental illumination of a fitness landscape</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>108</volume>: <fpage>7896</fpage>–<lpage>7901</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1002912-Illingworth1">
+        <label>56</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Illingworth</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Parts</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Schiffels</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Liti</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Mustonen</surname><given-names>V</given-names></name> (<year>2011</year>) <article-title>Quantifying selection acting on a complex trait using allele frequency time-series data</article-title>. <source>Mol Biol Evol</source> <volume>29</volume>: <fpage>1187</fpage>–<lpage>1197</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

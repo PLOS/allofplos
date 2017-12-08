@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="letter" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="publisher">pmed</journal-id><journal-id journal-id-type="nlm-ta">PLoS Med</journal-id><journal-id journal-id-type="pmc">plosmed</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Medicine</journal-title></journal-title-group><issn pub-type="ppub">1549-1277</issn><issn pub-type="epub">1549-1676</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="doi">10.1371/journal.pmed.0030205</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Correspondence</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Hematology</subject>
+        </subj-group>
+        <subj-group subj-group-type="System Taxonomy">
+          <subject>Drugs and adverse drug reactions</subject>
+          <subject>Hematology (including Blood Transfusion)</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Mischievous Odds Ratios</article-title><alt-title alt-title-type="running-head">Correspondence</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Steinsmith</surname>
+            <given-names>William</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="n1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1">
+				<label>1</label>
+				
+				<addr-line>Institute of Thermodynamic Biology and Medicine, Williamsburg, Virginia, United States of America</addr-line>
+				
+			</aff><author-notes>
+        <corresp id="n1">E-mail: 
+					<email xlink:type="simple">bbhaywood@aol.com</email>
+				</corresp>
+      <fn fn-type="conflict" id="n2">
+        <p>
+						 The author has declared that no competing interests exist.
+					</p>
+      </fn></author-notes><pub-date pub-type="ppub">
+        <month>4</month>
+        <year>2006</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>25</day>
+        <month>4</month>
+        <year>2006</year>
+      </pub-date><volume>3</volume><issue>4</issue><elocation-id>e205</elocation-id><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2006</copyright-year><copyright-holder>William Steinsmith</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><related-article page="e312" related-article-type="companion" vol="3" xlink:href="info:doi/10.1371/journal.pmed.0020312" xlink:title="research article" xlink:type="simple">
+				<article-title>A 
+					<italic>C1173T</italic> Dimorphism in the 
+					<italic>VKORC1</italic> Gene Determines Coumarin Sensitivity and Bleeding Risk
+				</article-title>
+			</related-article><related-article page="e210" related-article-type="companion" vol="3" xlink:href="info:doi/10.1371/journal.pmed.0030210" xlink:title="correspondence" xlink:type="simple">
+				<article-title>Authors' Reply</article-title>
+			</related-article><funding-group><funding-statement>
+					The author received no specific funding for this article.
+				</funding-statement></funding-group></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title/>
+      <p>Pieter Reitsma and colleagues have explored—in a population of patients anticoagulated with coumarin congeners—the connection between the presence of mutant alleles of a single gene and the risk of haemorrhage [<xref ref-type="bibr" rid="pmed-0030205-b1">1</xref>].
+			</p>
+      <p>Using as their denominator the odds for bleeding in a patient without mutant alleles, and using as their numerator the odds for patients with each of the two mutant alleles, the authors propose the resulting odds ratios as surrogates for the relative risk of haemorrhage.</p>
+      <p>It should be noted, however, that the conflation of an odds ratio with a relative risk is not generally justified [<xref ref-type="bibr" rid="pmed-0030205-b2">2</xref>,
+				<xref ref-type="bibr" rid="pmed-0030205-b3">3</xref>]. The relative risk is the ratio of two probabilities (p2/p1), whereas the corresponding odds ratio is [p1/(1-p1)]/[p2/(1-p2)]. Equating these two ratios requires that p1 = p2, i.e., that the risk ratio be unity.
+			</p>
+      <p>In Reitsma and colleagues' paper, none of the eight odds ratios presented in Table 2 turn out identical with the corresponding calculated risk ratio, and the most discordant pair of values diverge by a factor of about 1.4, i.e., the odds ratio of 2.6 corresponding to a relative risk of 1.9.</p>
+      <p>Mischievous conflation of odds ratios with probability ratios is widespread in the literature dealing with laboratory testing, with the odds ratio (confusingly termed the “likelihood ratio”) typically presented as surrogate for the corresponding ratio of probabilities.</p>
+      <p>The power of a positive laboratory test to enhance the likelihood of disease presence in a given patient (properly termed the “positive probability-based likelihood ratio”) is the ratio of two probabilities: the probability that the patient who tested positive is truly diseased (termed the “positive predictive value”) divided by the probability of disease in the pre-test population (termed the “disease prevalence”).</p>
+      <p>Expressed explicitly in terms of the subcategories of the test population, the positive predictive value is the ratio represented by (True Positives)/(True Positives + False Positives), and the prevalence is the ratio represented by (True Positives + False Negatives)/(True Positives + False Negatives + True Negatives + False Positives).</p>
+      <p>The calculus is easily adapted to compute the probability-based likelihood ratio for the absence of disease in a given patient. In this case, the post-negative-test probability of disease absence (termed the “negative predictive value”) is the ratio represented by (True Negatives)/(True Negatives + False Negatives), and the pre-test probability is one minus the disease prevalence. The negative probability-based likelihood ratio is, then, the ratio represented by the post-test probability divided by the pre-test probability.</p>
+      <p>A more descriptive term for the probability-based likelihood ratio would be the “probability magnifying power,” since it leads to the expanded probability of the presence (or absence) of disease yielded by a positive (or negative) test result.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pmed-0030205-b1">
+        <label>1</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Reitsma</surname>
+              <given-names>PH</given-names>
+            </name>
+            <name name-style="western">
+              <surname>van der Heijden</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Groot</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rosendaal</surname>
+              <given-names>FR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Büller</surname>
+              <given-names>HR</given-names>
+            </name>
+          </person-group>
+          <article-title>A 
+						<italic>C1173T</italic> dimorphism in the 
+						<italic>VKORC1</italic> gene determines coumarin sensitivity and bleeding risk.</article-title>
+          <source>PLos Med</source>
+          <year>2005</year>
+          <volume>2</volume>
+          <fpage>e312</fpage>
+          <comment>doi: <ext-link ext-link-type="doi" xlink:href="http://dx.doi.org/10.1371/journal.pmed.0020312" xlink:type="simple">10.1371/journal.pmed.0020312</ext-link></comment>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0030205-b2">
+        <label>2</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Van den Ende</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Moreira</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Basinga</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bisoffi</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>The trouble with likelihood ratios.</article-title>
+          <source>The Lancet</source>
+          <year>2005</year>
+          <volume>366</volume>
+          <fpage>548</fpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0030205-b3">
+        <label>3</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Wessler</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bailey</surname>
+              <given-names>KR</given-names>
+            </name>
+          </person-group>
+          <article-title>A critique on contemporary reporting of likelihood ratios in test power analysis.</article-title>
+          <source>Mayo Clin Proc</source>
+          <year>2004</year>
+          <volume>79</volume>
+          <fpage>1317</fpage>
+          <lpage>1318</lpage>
+        </nlm-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

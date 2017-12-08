@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-25504</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0055490</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Agriculture</subject>
+          <subj-group>
+            <subject>Agricultural biotechnology</subject>
+            <subj-group>
+              <subject>Marker-assisted selection</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Animal management</subject>
+            <subj-group>
+              <subject>Animal breeding</subject>
+              <subject>Animal genetics</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Genetic mutation</subject>
+              <subj-group>
+                <subject>Mutation types</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Genetic polymorphism</subject>
+                <subject>Haplotypes</subject>
+                <subject>Mutation</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Genetics of disease</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genomics</subject>
+            <subj-group>
+              <subject>Genomic medicine</subject>
+              <subj-group>
+                <subject>Genetic testing</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Veterinary science</subject>
+          <subj-group>
+            <subject>Animal types</subject>
+            <subj-group>
+              <subject>Large animals</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Veterinary diseases</subject>
+            <subj-group>
+              <subject>Veterinary virology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Veterinary medicine</subject>
+            <subj-group>
+              <subject>Veterinary diagnostics</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Genetics and Genomics</subject>
+          <subject>Biotechnology</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Genetic Testing for <italic>TMEM154</italic> Mutations Associated with Lentivirus Susceptibility in Sheep</article-title>
+        <alt-title alt-title-type="running-head">Genetic Testing for Ovine <italic>TMEM154</italic></alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Heaton</surname>
+            <given-names>Michael P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kalbfleisch</surname>
+            <given-names>Theodore S.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Petrik</surname>
+            <given-names>Dustin T.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Simpson</surname>
+            <given-names>Barry</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kijas</surname>
+            <given-names>James W.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Clawson</surname>
+            <given-names>Michael L.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Chitko-McKown</surname>
+            <given-names>Carol G.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Harhay</surname>
+            <given-names>Gregory P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Leymaster</surname>
+            <given-names>Kreg A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <collab xlink:type="simple">the International Sheep Genomics Consortium</collab>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>U.S. Meat Animal Research Center (USMARC), Clay Center, Nebraska, United States of America</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Biochemistry and Molecular Biology, School of Medicine, University of Louisville, Louisville, Kentucky, United States of America</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Intrepid Bioinformatics, Louisville, Kentucky, United States of America</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>GeneSeek, a Neogen company, Lincoln, Nebraska, United States of America</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Division of Animal, Food and Health Sciences, CSIRO, Brisbane, Australia</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Bardoni</surname>
+            <given-names>Barbara</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>CNRS UMR7275, France</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">mike.heaton@ars.usda.gov</email> (MPH); <email xlink:type="simple">ted.kalbfleisch@louisville.edu</email> (TSK)</corresp>
+        <fn fn-type="conflict">
+          <p>The authors have the following interests: co-authors D.T.P. and B.S. are full-time employees at GeneSeek, a Neogen company that provides agrigenomic and veterinary diagnostic services. T.S.K. is the CEO of Intrepid Bioinformatics, a company that provides web-based systems to privately store, analyze, curate, share, and remotely access genetic data. International Sheep Genomics Consortium member K.G. is employed by Illumina Inc. There are no patents, products in development or marketed products to declare. This does not alter the authors’ adherence to all the PLOS ONE policies on sharing data and materials.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Performed the experiments: MPH TSK DTP BS. Conceived and designed the experiments: MPH TSK DTP BS MLC CGC-M GPH KAL. Analyzed the data: MPH TSK DTP BS KAL. Wrote the paper: MPH TSK DTP JWK MLC CGC-M GPH KAL. Contributed reagents/materials/analysis tools: MPH TSK DTP BS JWK KAL ISGC.</p>
+        </fn>
+        <fn id="fn1" fn-type="other">
+          <p>¶ Membership of the International Sheep Genomics Consortium is provided in the Acknowledgments and at <ext-link ext-link-type="uri" xlink:href="http://www.sheephapmap.org/participants.php" xlink:type="simple">http://www.sheephapmap.org/participants.php</ext-link>.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>11</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>2</issue>
+      <elocation-id>e55490</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>22</day>
+          <month>8</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>23</day>
+          <month>12</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article, free of all copyright, and may be freely reproduced, distributed, transmitted, modified, built upon, or otherwise used by anyone for any lawful purpose. The work is made available under the Creative Commons CC0 public domain dedication.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>In sheep, small ruminant lentiviruses cause an incurable, progressive, lymphoproliferative disease that affects millions of animals worldwide. Known as ovine progressive pneumonia virus (OPPV) in the U.S., and Visna/Maedi virus (VMV) elsewhere, these viruses reduce an animal’s health, productivity, and lifespan. Genetic variation in the ovine transmembrane protein 154 gene (<italic>TMEM154</italic>) has been previously associated with OPPV infection in U.S. sheep. Sheep with the ancestral <italic>TMEM154</italic> haplotype encoding glutamate (E) at position 35, and either form of an N70I variant, were highly-susceptible compared to sheep homozygous for the K35 missense mutation. Our current overall aim was to characterize <italic>TMEM154</italic> in sheep from around the world to develop an efficient genetic test for reduced susceptibility. The average frequency of <italic>TMEM154</italic> E35 among 74 breeds was 0.51 and indicated that highly-susceptible alleles were present in most breeds around the world. Analysis of whole genome sequences from an international panel of 75 sheep revealed more than 1,300 previously unreported polymorphisms in a 62 kb region containing <italic>TMEM154</italic> and confirmed that the most susceptible haplotypes were distributed worldwide. Novel missense mutations were discovered in the signal peptide (A13V) and the extracellular domains (E31Q, I74F, and I102T) of <italic>TMEM154</italic>. A matrix-assisted laser desorption/ionization–time-of flight mass spectrometry (MALDI-TOF MS) assay was developed to detect these and six previously reported missense and two deletion mutations in <italic>TMEM154</italic>. In blinded trials, the call rate for the eight most common coding polymorphisms was 99.4% for 499 sheep tested and 96.0% of the animals were assigned paired <italic>TMEM154</italic> haplotypes (i.e., diplotypes). The widespread distribution of highly-susceptible <italic>TMEM154</italic> alleles suggests that genetic testing and selection may improve the health and productivity of infected flocks.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>Funding for this research was provided by the United States Department of Agriculture, Agricultural Research Service. Mention of trade names or commercial products in this publication is solely for the purpose of providing specific information and does not imply recommendation or endorsement by the USDA. USDA is an equal opportunity provider and employer. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. There were no current external funding sources for this study.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="11"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Visna/Maedi virus (VMV) and its closely related North American counterpart, ovine progressive pneumonia virus (OPPV), are small ruminant lentiviruses (SRLV) of the retroviridae family that infect sheep around the world (for review see <xref ref-type="bibr" rid="pone.0055490-Thormar1">[1]</xref>). Infections are life-long and there are no effective treatments or vaccines <xref ref-type="bibr" rid="pone.0055490-Patel1">[2]</xref>. The first signs of disease typically appear after age two and often include the loss of body condition and indurative mastitis (hard udder). Disease progression is associated with severe clinical signs that include difficulty breathing, chronic wasting, loss of motor control, and arthritis. Significant transmission occurs horizontally among adult sheep by respiratory routes, and vertically between dam and offspring by ingestion of infected colostrum <xref ref-type="bibr" rid="pone.0055490-Blacklaws1">[3]</xref>, <xref ref-type="bibr" rid="pone.0055490-Peterhans1">[4]</xref>.</p>
+      <p>The impact of SRLV infection is considerable when the virus is introduced into a naïve flock with susceptible sheep. The mortality in such flocks may reach 30% per year after a few years <xref ref-type="bibr" rid="pone.0055490-Sigurdsson1">[5]</xref>. Once established in a ewe flock, subclinical infection weakens the resistance to disease, decreases fertility, and reduces lamb production <xref ref-type="bibr" rid="pone.0055490-Keen1">[6]</xref>. In the U.S., a quarter of the sheep are infected with OPPV and a third of sheep operations test positive <xref ref-type="bibr" rid="pone.0055490-USDA1">[7]</xref>. Infected ewes have difficulty raising lambs and also transmit infection to their offspring and other flockmates. Collectively, complications of SRLV infections lead to animal pain, disability, early culling, and increased labor.</p>
+      <p>Stepwise strategies for SRLV disease control typically begin with the removal of infected sheep and focus on lowering the infection prevalence <xref ref-type="bibr" rid="pone.0055490-Peterhans1">[4]</xref>. SRLV can also be eradicated in one production cycle by isolating all neonates from their infected dams, raising the lambs on uninfected colostrum and milk, and maintaining them separately from infected animals thereafter. Although these methods have been successful in eradicating SRLV in sheep, they require a significant commitment of time and resources, and flocks remain vulnerable to SRLV outbreaks if exposed to infected animals <xref ref-type="bibr" rid="pone.0055490-Gjerset1">[8]</xref>. Efforts to eradicate SRLV in sheep and maintain an infection-free status would be enhanced by the use of replacement breeding stock that are genetically resistant to lentivirus infections.</p>
+      <p>The discovery of ovine transmembrane protein gene 154 (<italic>TMEM154</italic>) as a major OPPV susceptibility gene <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref> provides an opportunity to produce sheep that are less susceptible to infection. The function of the TMEM154 protein has not yet been reported for any species and remains unknown. However, the ancestral <italic>TMEM154</italic> haplotype in sheep is common and predicted to encode a precursor protein of 191 amino acids that is cleaved to a mature protein with 161 residues. Two other haplotypes encoding polypeptide isoforms are also common in U.S. sheep and, together with the ancestral haplotype, account for more than 97% of those observed <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref>. The ancestral <italic>TMEM154</italic> haplotype (designated haplotype 3, GenBank accession JX961707) encodes glutamate (E) at position 35 and asparagine (N) at position 70. Haplotype 2 has an isoleucine (I) mutation at position 70 while haplotype 1 has a lysine (K) mutation at position 35. A case-control study with 130 pairs of 4- to 9-year old ewes matched for lifetime exposure showed the odds of being infected were 69 times greater for those with one copy of either haplotype 2 or 3, compared to those homozygous for haplotype 1 (<italic>p</italic>-value &lt;0.0001, 95% CI 12–2800) <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref>. Likewise, a cohort study involving 2705 unmatched U.S. sheep from Nebraska, Idaho, and Iowa showed the relative risk of infection was 2.85 times greater for sheep with one copy of either haplotype 2 or 3, compared to those homozygous for haplotype 1 (<italic>p</italic>-value &lt;0.0001, 95% CI 2.36–3.43) <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref>. Also reported were two naturally occurring <italic>TMEM154</italic> deletion mutations, R4A(delta53) and E82Y(delta82), that were predicted to abolish the protein’s function. Although rare, sheep homozygous for R4A(delta53) remained healthy, productive, and uninfected despite a long lifetime of significant exposure. In addition to its association with susceptibility to OPPV infection, <italic>TMEM154</italic> was also recently reported to be associated with the abundance of integrated provirus (i.e. viral load) in Rambouillet, Polypay, and Columbia sheep in the U.S. <xref ref-type="bibr" rid="pone.0055490-White1">[10]</xref>. Taken together, these observations suggest that removing sheep with the most susceptible <italic>TMEM154</italic> alleles may help eradicate OPPV and protect flocks from reinfection.</p>
+      <p>While these findings show promise for improving U.S. sheep populations, it is important to identify which other populations around the world may be impacted by highly-susceptible <italic>TMEM154</italic> haplotypes. Estimating a population’s relative vulnerability to disease helps establish guidelines for preventative measures before an outbreak occurs. Previous research in U.S. sheep showed <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref> the combined frequency of the highly-susceptible <italic>TMEM154</italic> haplotypes could be estimated with a DNA marker on the OvineSNP50 BeadChip. This was possible because the “c” nucleotide allele of the single nucleotide polymorphism (SNP) OAR17_5388531 on the OvineSNP50 BeadChip is in strong linkage disequilibrium (LD) with the E35 allele located approximately 10 kb upstream (<italic>r</italic><sup>2</sup> = 0.98). The major E35-containing haplotypes include the ancestral form of <italic>TMEM154</italic> (haplotype 3) and the I70 variant (haplotype 2). Together, these two alleles accounted for more than 91% of the alleles containing E35 in U.S. sheep <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref>. Thus, the frequency of the ‘c’ allele of OAR17_5388531 was a reasonable estimate of genetic predisposition to OPPV infection in U.S. sheep. The overall aim of the present research was to characterize <italic>TMEM154</italic> in sheep from around the world to develop an efficient genetic test for reduced susceptibility. The findings indicated that most sheep populations around the world have highly-susceptible forms of <italic>TMEM154</italic> and the genetic test described here efficiently detected eight known variant forms and four novel <italic>TMEM154</italic> haplotypes discovered during this project. This genetic test, and similar designs adapted to other genotyping platforms, may be useful for preventing or controlling ovine lentivirus infections through selective breeding.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>LD between <italic>TMEM154</italic> E35K and OAR17_5388531 in an International Panel of 75 Sheep</title>
+        <p>The availability of next-generation whole genome sequence data from the International Sheep Genomics Consortium (ISGC) provided the opportunity to directly determine <italic>TMEM154</italic> genotypes <italic>in silico</italic> for 75 sheep sampled from 39 breeds and two wild species from around the world (45 groups in total). The data set for each animal represented approximately 10-fold genome coverage and was used to estimate LD between the SNP alleles for <italic>TMEM154</italic> E35K and those for OAR17_5388531. In this set of 75 sheep, the <italic>r</italic><sup>2</sup> statistic for these two markers was 0.87 and thus indicated relatively strong LD. Only four sheep from three breeds had alleles that were unambiguously in the opposite phase (i.e., the E35 allele was linked to the ‘t’ allele of OAR17_5388531). The high <italic>r</italic><sup>2</sup> statistic indicated that SNP OAR17_5388531 could provide a reasonable estimate of highly-susceptible <italic>TMEM154</italic> alleles in most sheep populations.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Estimating the Frequency of the Highly-susceptible <italic>TMEM154</italic> Alleles in Sheep Breeds from Around the World</title>
+        <p>In a collection of 2,759 sheep DNAs from 74 breeds from around the world, the frequency of the “c” nucleotide allele of the c/t SNP OAR17_5388531 ranged from 0.0 to 1.0 with a mean of 0.51 and median of 0.50 among breeds (<xref ref-type="fig" rid="pone-0055490-g001">Figure 1</xref>). Breed groups with the highest “c” allele frequencies are predicted to have high frequencies of <italic>TMEM154</italic> E35 (haplotypes 2 and 3) and larger proportions of highly-susceptible animals. Conversely, breed groups with low “c” allele frequencies are predicted to have more homozygous K35 animals (haplotype 1) and be less susceptible to OPPV. The results indicated that the highly-susceptible <italic>TMEM154</italic> alleles are present in breeds throughout the world.</p>
+        <fig id="pone-0055490-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0055490.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Estimating the frequency of highly-susceptible <italic>TMEM154</italic> alleles in global sheep populations.</title>
+            <p>The “c” allele of SNP OAR17_5388531 is in linkage disequilibrium with the “g” nucleotide allele in codon 35 (gaa) of <italic>TMEM154</italic>. Genotypes for OAR17_5388531 were derived from the ISGC ovine SNP50k data set <xref ref-type="bibr" rid="pone.0055490-Kijas1">[11]</xref>. Numbers in parentheses for each breed group indicate the number of animals genotyped. The 11 breed groups with asterisks were genotyped for <italic>TMEM154</italic> E35 by Sanger sequencing <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref> and were included for comparison with the 74 ISGC breed groups.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055490.g001" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>Discovering Novel <italic>TMEM154</italic> SNPs and Missense Mutations in an International Panel of 75 Sheep</title>
+        <p>The fidelity of genetic testing is enhanced by knowing the position and frequency of polymorphisms in the populations to be tested. If not accounted for, nucleotide variation at neighboring sites may cause base-pair mismatching with oligonucleotides used in DNA testing and significantly decrease the genotyping accuracy in some populations. Moreover, characterizing nucleotide variation in many previously untested breeds allows discovery of <italic>TMEM154</italic> missense mutations. For these reasons, the same set of 75 whole genome sequence data was also used to identify novel polymorphisms in the <italic>TMEM154</italic> gene region. An analysis of nucleotide differences among the 75 animals revealed approximately 1500 variant sites in a 61,663 bp region containing <italic>TMEM154</italic>, of which, only 128 had been previously reported <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref>. The five wild sheep accounted for 13% of the nucleotide differences observed, however, no heterozygous animals were observed in wild sheep and it was assumed these were mostly species-related nucleotide differences. The positions of these 1,500 SNPs and their minor allele frequencies (MAF) are shown in <xref ref-type="fig" rid="pone-0055490-g002">Figure 2A</xref> (blue dots). For comparison, frequency data from 96 rams from 10 U.S. sheep breeds are shown for 128 SNPs (red dots). In regions of <italic>TMEM154</italic> where data are available from both panels of sheep, there was a trend towards more SNPs and higher MAFs in the international panel of 39 breeds compared to the U.S. sheep from 10 breeds.</p>
+        <fig id="pone-0055490-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0055490.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title><italic>TMEM154</italic> SNP maps and median-joining networks.</title>
+            <p>Panel A, genomic map of <italic>TMEM154</italic>: orange arrows, 5′ and 3′untranslated regions of exons; blue arrows, exon coding regions; grey rectangles, introns or intergenic regions. Blue and red tick dots denote position and frequency of SNPs in an international panel of 75 sheep and a panel of 96 U.S. sheep <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref>, respectively. Panel B, high resolution map of <italic>TMEM154</italic> regions targeted for PCR-amplification. PCR amplification primers are indicated with black arrowheads and listed in <xref ref-type="supplementary-material" rid="pone.0055490.s003">Table S3</xref>. Red lowercase letters above SNP positions are IUPAC/IUBMB ambiguity codes for nucleotides (r = a/g, y = c/t, m = a/c, k = g/t, s = c/g, w = a/t) <xref ref-type="bibr" rid="pone.0055490-1">[17]</xref> and indicate 12 sites affected by nonsynonymous substitutions. The red uppercase letters above SNP positions indicate the amino acid polymorphisms encoded at <italic>TMEM154</italic> codons 4, 13, 14, 25, 31, 33, 35, 44, 70, 75, 82 and 102. Black lowercase letters below SNPs indicate nucleotide polymorphisms that resulted in synonymous substitutions. Panel C, the areas of circles for haplotypes 1 to 4 are proportional to the frequencies in the international panel of 75 ISGC sheep. The symbols are as follows: black circles, risk factors; white circle, non-risk factor; grey circles, risk factor status unknown; red circles, haplotypes known in U.S. sheep but not observed in the international panel of 75 ISGC sheep (risk factor status unknown); shaded square, <italic>TMEM154</italic> haplotype predicted to have occurred but unobserved to date. Dashed grey line, haplotypes observed in wild sheep species but not domestic sheep. Haplotypes 13 and 14 were observed in one animal each and their location of origin is indicated.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055490.g002" position="float" xlink:type="simple"/>
+        </fig>
+        <p>Four of the previously unreported SNPs were coding mutations located in the predicted signal peptide (A13V) and extracellular domains (E31Q, I74F, and I102T) of <italic>TMEM154</italic>. Variants A13V and I102T were discovered in populations of domestic sheep, whereas E31Q and I74F were found in the wild sheep. The inferred haplotypes for these four putative SNPs were placed in the context of the <italic>TMEM154</italic> median-joining network to provide a framework for their future validation and evaluation of effects on susceptibility to OPPV (<xref ref-type="fig" rid="pone-0055490-g002">Figure 2C</xref>).</p>
+        <p>The A13V variant was observed as a heterozygote in a single Changthangi sheep, a local breed in the Changthang area of Leh district of Jammu and Kashmir state (CHA02, <xref ref-type="fig" rid="pone-0055490-g003">Figure 3A</xref>). Although the A13V variant was observed in only one animal, five of the seven mapped reads contain the GTC codon for valine. This animal was also homozygous for the <italic>TMEM154</italic> haplotype 9, suggesting that this mutation arose on a haplotype that contained the N33 mutation (<xref ref-type="fig" rid="pone-0055490-g002">Figure 2C</xref>, haplotype 13).</p>
+        <fig id="pone-0055490-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0055490.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Evidence for <italic>TMEM154</italic> missense mutations in whole genome sequences data from an international panel of 75 sheep.</title>
+            <p>Computer screen images of Integrated Genome Viewer software <xref ref-type="bibr" rid="pone.0055490-Robinson1">[18]</xref> and showing next generation sequencing reads for animals with previously unreported SNPs affecting the <italic>TMEM154</italic> coding sequence. Numbers shown on the reads indicated the most distal identification number on the read name when viewed in the IGV software. Direct public links to these data are provided: OCAN1 F74/F74, OCAN2 F74/F74, OCAN3F74/F74, ODAL2 I74/F74, CHA02 A13/V13, BSI4 I102/T102, BSI4N70/I70, ODAL2 E31/Q31.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055490.g003" position="float" xlink:type="simple"/>
+        </fig>
+        <p>The I102T variant was observed as a compound heterozygote in a single Santa Inês sheep, a breed of hair sheep found in Brazil (BSI4, <xref ref-type="fig" rid="pone-0055490-g003">Figure 3B</xref>). This animal was also heterozygous for N70I (i.e., haplotypes 2 and 3). Two of nine reads provided evidence for the rare T102 allele and both reads had high quality scores (base Phred quality of 38). Haplotype phase was determined by manual inspection of two other paired-end reads and indicated that the rare T102 allele was on haplotype 3 (<xref ref-type="fig" rid="pone-0055490-g002">Figure 2C</xref>, haplotype 14).</p>
+        <p>The most frequent of the new variants, I74F, was identified in wild sheep (<xref ref-type="fig" rid="pone-0055490-g003">Figure 3D</xref>; OCAN1, OCAN2, OCAN3, and ODAL2). The F74 variant was also observed in wild bighorn sheep from Wyoming, USA (n = 10, MAF 0.20, data not shown). A single <italic>Ovis dali</italic> animal from the ISGC set of 75 was also compound heterozygote for I74F and E31Q (ODAL2, <xref ref-type="fig" rid="pone-0055490-g003">Figure 3C</xref>). Haplotype phase for these two SNPs was determined by identifying three sets of paired-end reads which each showed that the rare Q31 allele was on the same haplotype as the rare F74 allele (<xref ref-type="fig" rid="pone-0055490-g003">Figure 3C and D</xref>). Although F74 and QA31 were only observed in wild sheep, they were placed within the context of the ovine <italic>TMEM154</italic> median-joining network because wild sheep are also susceptible to SRLV. The most parsimonious locations of these haplotypes are shown in <xref ref-type="fig" rid="pone-0055490-g002">Figure 2C</xref> (haplotype 15). Whether in domestic sheep or wild sheep, the effects of these previously unreported <italic>TMEM154</italic> missense mutations on susceptibility to OPPV infection are unknown.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Assigning <italic>TMEM154</italic> Haplotype Pairs (Diplotypes) to Animals</title>
+        <p><italic>TMEM154</italic> polymorphisms were scored in all 75 animals at 12 sites: R4A(delta53), A13V, L14H, T25I, E31Q, D33N, E35K, T44M, N70I, I74F, E82Y(delta82), and I102T. Haplotype phase for these 12 sites was unambiguous in 68% of the animals because they had less than two heterozygous sites. Paired haplotypes (i.e., diplotypes) were unambiguously assigned for 100% of the animals by comparing each animal’s genotype to the 78 possible paired combinations of 12 haplotypes (<xref ref-type="supplementary-material" rid="pone.0055490.s001">Tables S1</xref> and <xref ref-type="supplementary-material" rid="pone.0055490.s002">S2</xref>). However, the 20 bp GC–rich region of R4A(delta53) was underrepresented by sequencing reads in 24 of 75 animals. In those animals, the occurrence of M44 was used to infer haplotype 4 by assuming complete linkage disequilibrium with A4(delta53). This assumption is based on the observation that an A4(delta53) allele was always present with an T44 allele, and vice versa, in more than 8,000 U.S. sheep previously genotyped by Sanger sequencing at USMARC <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref> (and unpublished data). The most common highly-susceptible haplotypes (2 and 3) were present in 35 of 45 groups in spite of the small sample sizes (<xref ref-type="table" rid="pone-0055490-t001">Table 1</xref>). The average combined frequency of <italic>TMEM154</italic> haplotypes 2 and 3 in the 75 sheep was 0.51±0.08 (<xref ref-type="table" rid="pone-0055490-t002">Table 2</xref>). These results were consistent with those for SNP OAR17_5388531 and confirmed that the highly-susceptible <italic>TMEM154</italic> haplotypes 2 and 3 were widely distributed among the world’s sheep.</p>
+        <table-wrap id="pone-0055490-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0055490.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title><italic>TMEM154</italic> haplotypes and mutations identified in whole genome sequence data from an international panel of 75 sheep.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0055490-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055490.t001" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Breed or species group</td>
+                  <td align="left" rowspan="1" colspan="1">Region of prominence</td>
+                  <td align="left" rowspan="1" colspan="1">Animals diplotyped</td>
+                  <td align="left" rowspan="1" colspan="1"><italic>TMEM154</italic>haplotypesobserved</td>
+                  <td align="left" rowspan="1" colspan="1">Novel missense variants</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">African White Dorper</td>
+                  <td align="left" rowspan="1" colspan="1">South Africa</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–<xref ref-type="table-fn" rid="nt101">1</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Afrikaner, Namaqua</td>
+                  <td align="left" rowspan="1" colspan="1">South Africa</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Afrikaner, Ronderib</td>
+                  <td align="left" rowspan="1" colspan="1">South Africa</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">2, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Afshari</td>
+                  <td align="left" rowspan="1" colspan="1">NW Iran</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2, 3, 4</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Awassi</td>
+                  <td align="left" rowspan="1" colspan="1">Middle east</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">2, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Awassi, Turkish</td>
+                  <td align="left" rowspan="1" colspan="1">Turkey</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Bangladeshi</td>
+                  <td align="left" rowspan="1" colspan="1">Bangladesh</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">2, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Brazilian Creole</td>
+                  <td align="left" rowspan="1" colspan="1">Brazil</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Castellana</td>
+                  <td align="left" rowspan="1" colspan="1">Spain</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Changthangi</td>
+                  <td align="left" rowspan="1" colspan="1">Jammu and Kashmir</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">3, 9</td>
+                  <td align="left" rowspan="1" colspan="1">A13V</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Cheviot</td>
+                  <td align="left" rowspan="1" colspan="1">England-Scotland</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Churra</td>
+                  <td align="left" rowspan="1" colspan="1">Spain</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Cine Capari</td>
+                  <td align="left" rowspan="1" colspan="1">Turkey</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">3, 9</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Dorset, Poll</td>
+                  <td align="left" rowspan="1" colspan="1">USA</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ethiopian Menz</td>
+                  <td align="left" rowspan="1" colspan="1">Ethiopia</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Finnsheep</td>
+                  <td align="left" rowspan="1" colspan="1">Finland</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Garole, Banglegdeshi</td>
+                  <td align="left" rowspan="1" colspan="1">Bangledesh</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Garole, Indian</td>
+                  <td align="left" rowspan="1" colspan="1">India</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">2, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Garut</td>
+                  <td align="left" rowspan="1" colspan="1">Indonesia</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Gulf Coast native</td>
+                  <td align="left" rowspan="1" colspan="1">USA Gulf Coast</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Karakas</td>
+                  <td align="left" rowspan="1" colspan="1">Turkey</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Karya</td>
+                  <td align="left" rowspan="1" colspan="1">Turkey</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">2, 4</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Lacaune, Meat</td>
+                  <td align="left" rowspan="1" colspan="1">France</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Lacaune, Milk</td>
+                  <td align="left" rowspan="1" colspan="1">France</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1, 4</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Merino</td>
+                  <td align="left" rowspan="1" colspan="1">Spain</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">1, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Morada Nova</td>
+                  <td align="left" rowspan="1" colspan="1">Brazil</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Norduz</td>
+                  <td align="left" rowspan="1" colspan="1">Turkey</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 3, 4</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Ojalada</td>
+                  <td align="left" rowspan="1" colspan="1">Spain</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 4</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Ovis canadensis</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Canada-USA</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">I74F</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <italic>Ovis dalli</italic>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">Canada-USA</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">E31Q, I74F</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Romney</td>
+                  <td align="left" rowspan="1" colspan="1">England</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Sakiz</td>
+                  <td align="left" rowspan="1" colspan="1">Turkey</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2, 9</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Salz</td>
+                  <td align="left" rowspan="1" colspan="1">Spain</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Santa Inês</td>
+                  <td align="left" rowspan="1" colspan="1">Brazil</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2, 3</td>
+                  <td align="left" rowspan="1" colspan="1">I102T</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Scottish Blackface</td>
+                  <td align="left" rowspan="1" colspan="1">United Kingdom</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Sumatra</td>
+                  <td align="left" rowspan="1" colspan="1">Sumatra</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Swiss Mirror</td>
+                  <td align="left" rowspan="1" colspan="1">Switzerland</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Swiss White Alpine</td>
+                  <td align="left" rowspan="1" colspan="1">Switzerland</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">1, 2, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Texel</td>
+                  <td align="left" rowspan="1" colspan="1">Netherlands</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">2, 3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Tibetan, Eastern</td>
+                  <td align="left" rowspan="1" colspan="1">Tibet</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">2, 9</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Tibetan, Northern</td>
+                  <td align="left" rowspan="1" colspan="1">Tibet</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Valais Blacknose</td>
+                  <td align="left" rowspan="1" colspan="1">Switzerland</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Welsh Hardy Speckled Face</td>
+                  <td align="left" rowspan="1" colspan="1">Wales</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Welsh Mountain, Dolgellau</td>
+                  <td align="left" rowspan="1" colspan="1">Wales</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Welsh Mountain, Tregaron</td>
+                  <td align="left" rowspan="1" colspan="1">Wales</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">–</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label>1</label>
+              <p>Not detected.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <table-wrap id="pone-0055490-t002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0055490.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Occurrence of <italic>TMEM154</italic> haplotypes in an international panel of 75 sheep.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0055490-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055490.t002" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Haplotype code</td>
+                  <td align="left" rowspan="1" colspan="1">Key feature of haplotype</td>
+                  <td align="left" rowspan="1" colspan="1">Haplotypes observed<xref ref-type="table-fn" rid="nt102">a</xref></td>
+                  <td align="left" rowspan="1" colspan="1">Groups with haplotype<xref ref-type="table-fn" rid="nt103">b</xref></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">K35</td>
+                  <td align="left" rowspan="1" colspan="1">56</td>
+                  <td align="left" rowspan="1" colspan="1">26</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                  <td align="left" rowspan="1" colspan="1">I70</td>
+                  <td align="left" rowspan="1" colspan="1">34</td>
+                  <td align="left" rowspan="1" colspan="1">22</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">3<xref ref-type="table-fn" rid="nt104">c</xref></td>
+                  <td align="left" rowspan="1" colspan="1">E35</td>
+                  <td align="left" rowspan="1" colspan="1">42</td>
+                  <td align="left" rowspan="1" colspan="1">25</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">A4(delta53)</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                  <td align="left" rowspan="1" colspan="1">5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">Y82(delta82)</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">9</td>
+                  <td align="left" rowspan="1" colspan="1">N33</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">10</td>
+                  <td align="left" rowspan="1" colspan="1">H14</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">11</td>
+                  <td align="left" rowspan="1" colspan="1">I25</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">12</td>
+                  <td align="left" rowspan="1" colspan="1">F74</td>
+                  <td align="left" rowspan="1" colspan="1">6</td>
+                  <td align="left" rowspan="1" colspan="1">2</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                  <td align="left" rowspan="1" colspan="1">V13</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">14</td>
+                  <td align="left" rowspan="1" colspan="1">T102</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">15</td>
+                  <td align="left" rowspan="1" colspan="1">Q31</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt102">
+              <label>a</label>
+              <p>In 75 sheep.</p>
+            </fn>
+            <fn id="nt103">
+              <label>b</label>
+              <p>Of 45 total groups.</p>
+            </fn>
+            <fn id="nt104">
+              <label>c</label>
+              <p>Ancestral haplotype.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s2e">
+        <title>Reference DNAs for <italic>TMEM154</italic> Testing</title>
+        <p>The development of genotyping assays for routine high-throughput testing required a set of reference DNAs. Homozygous DNAs were useful as PCR and genotyping controls because they provided uncomplicated results. A minimal set of DNAs was available from animals with the four most common homozygous diplotypes (1,1; 2,2; 3,3; and 4,4) and three rare diplotypes (1,6; 1,9; and 1,10). Together, these seven DNAs provided examples of the eight most common polymorphisms: R4A(delta53), L14H, T25I, D33N, E35K, T44M, N70I, and E82Y(delta82). DNA is not readily available from sheep with the four newly-discovered rare alleles (A13V, E31Q, I74F, and I102T) and thus representative DNA sequences were synthesized and used as controls (Materials and Methods). An empirically determined mixture of synthetic control DNA and reference DNA with <italic>TMEM154</italic> diplotype 1,1 was used to produce a heterozygous MALDI-TOF MS genotype and demonstrated that animals with these rare alleles were detectable in the assay. The combination of the seven reference DNAs, together with four synthetic alleles, provided a minimal set of controls for 12 coding polymorphisms for <italic>TMEM154</italic> for test development and routine assay quality control.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Essential Regions of <italic>TMEM154</italic> for Genetic Testing</title>
+        <p>Based on the locations of missense mutations in <italic>TMEM154</italic>, two key regions were targeted for testing: the complete 30-amino acid signal peptide region encoded by exon 1, and residues 31 to 102 of the extracellular domain encoded by exon 2. Three amplicons were designed to encompass the 12 coding polymorphisms on these two exons. One amplicon corresponded to the region of exon 1 containing the R4A(delta53), A13V, L14H, and T25I (<xref ref-type="fig" rid="pone-0055490-g002">Figure 2B</xref>). Two other amplicons overlapped each other and corresponded to a region of exon 2 containing E31Q, D33N, E35K, T44M, N70I, I74F, E82Y(delta82), and I102T (<xref ref-type="fig" rid="pone-0055490-g002">Figure 2B</xref>).</p>
+      </sec>
+      <sec id="s2g">
+        <title>MALDI-TOF MS Assay Design and Validation</title>
+        <p>A three-phase iterative strategy was used to validate the assay development and check concordance of diplotypes derived from MALDI-TOF MS with those derived from Sanger sequencing. In each phase, the samples were blinded, scored, and decoded. Adjustments in assay conditions were made between phases of development. In the first phase, a U.S. panel of 96 rams was genotyped and showed 100% concordance between MALDI-TOF MS and Sanger genotyping. In the second phase, a U.S. panel of 95 tetrad families was used to detect genotyping errors as revealed by non-Mendelian inheritance patterns. One error was detected where the R4 allele was not evident in some animals known to be heterozygous for R4 and A4(delta53) alleles. This apparent allele “dropout” phenomenon was also occasionally observed with R4 alleles scored by Sanger sequencing (data not shown). Although the cause(s) of the R4 allele dropout was unknown, this region of <italic>TMEM154</italic> contains significant secondary structures with melting temperatures near 99 °C and a c/g polymorphism located 10 bp upstream of the R4A(delta53) site. Neither the addition of dimethyl sulfoxide in the PCR cocktail, nor the use of alternative primers in the MALDI-TOF MS extension reaction completely alleviated the occasional R4 allele dropout. Thus, homozygous A4(delta53) genotypes were scored only when they occurred in animals that were also homozygous for M44 in exon 2.</p>
+        <p>In the last phase of validation, results were obtained for 499 sheep in a single blinded genotyping trial to measure efficiency and accuracy of the genotype assay. Genotyping statistics were calculated for the eight most common polymorphic sites because the remaining four SNPs were monomorphic in these sheep. The call rate for the eight sites was 99.4% for the 499 sheep tested and 96.0% of the animals received a <italic>TMEM154</italic> diplotype assignment (<xref ref-type="table" rid="pone-0055490-t003">Table 3</xref>). Comparing diplotypes from MALDI-TOF MS and Sanger sequencing for 479 animals showed seven discordances (1.46%). Close inspection of raw tracefiles revealed the discordances were due to problems in the Sanger data, including: unamplified alleles, poor quality reads, and errors in manual scoring. These results indicate this MALDI-TOF MS-based test for <italic>TMEM154</italic> provides an accurate alternative to Sanger-based genotyping.</p>
+        <table-wrap id="pone-0055490-t003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0055490.t003</object-id>
+          <label>Table 3</label>
+          <caption>
+            <title>Call rates and concordance of <italic>TMEM154</italic> genetic testing.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0055490-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0055490.t003" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Animal group</td>
+                  <td align="left" rowspan="1" colspan="1">Yearsampled</td>
+                  <td align="left" rowspan="1" colspan="1">Sheep</td>
+                  <td align="left" rowspan="1" colspan="1">Missing SNPgenotypes</td>
+                  <td align="left" rowspan="1" colspan="1">SNP callrate<xref ref-type="table-fn" rid="nt105">a</xref> (%)</td>
+                  <td align="left" rowspan="1" colspan="1">Missingdiplotypes</td>
+                  <td align="left" rowspan="1" colspan="1">Diplotypecall rate</td>
+                  <td align="left" rowspan="1" colspan="1">Discordant diplotypes</td>
+                  <td align="left" rowspan="1" colspan="1">MALDI-TOFMS errors</td>
+                  <td align="left" rowspan="1" colspan="1">Sanger errors</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">4- to 9-year-old ewes<xref ref-type="table-fn" rid="nt106">b</xref></td>
+                  <td align="left" rowspan="1" colspan="1">2003</td>
+                  <td align="left" rowspan="1" colspan="1">260</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">99.7</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">0.973</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">3</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Composite lambs<xref ref-type="table-fn" rid="nt107">c</xref></td>
+                  <td align="left" rowspan="1" colspan="1">2011</td>
+                  <td align="left" rowspan="1" colspan="1">239</td>
+                  <td align="left" rowspan="1" colspan="1">16</td>
+                  <td align="left" rowspan="1" colspan="1">99.2</td>
+                  <td align="left" rowspan="1" colspan="1">13</td>
+                  <td align="left" rowspan="1" colspan="1">0.946</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">4</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Total</td>
+                  <td align="left" rowspan="1" colspan="1">na<xref ref-type="table-fn" rid="nt108">d</xref></td>
+                  <td align="left" rowspan="1" colspan="1">499</td>
+                  <td align="left" rowspan="1" colspan="1">23</td>
+                  <td align="left" rowspan="1" colspan="1">99.4</td>
+                  <td align="left" rowspan="1" colspan="1">20</td>
+                  <td align="left" rowspan="1" colspan="1">0.960</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                  <td align="left" rowspan="1" colspan="1">0</td>
+                  <td align="left" rowspan="1" colspan="1">7</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt105">
+              <label>a</label>
+              <p>Genoptypic data were collected in a single pass for R4A(delta53), H14L, T25I, D33N, E35K, T44M, N70I, and E82Y(delta82).</p>
+            </fn>
+            <fn id="nt106">
+              <label>b</label>
+              <p>This animal group was composed of 160 OPP case-control pairs as previously described <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref>.</p>
+            </fn>
+            <fn id="nt107">
+              <label>c</label>
+              <p>Breed composition: 1/2 Romanov, 1/4 Rambouillet, 1/8 White Dorper, and 1/8 Katahdin.</p>
+            </fn>
+            <fn id="nt108">
+              <label>d</label>
+              <p>Not applicable.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>This report characterizes <italic>TMEM154</italic> in sheep from around the world by estimating the distribution of highly-susceptible haplotypes and identifying novel nucleotide variants. Genotype results from SNP OAR17_5388531 of the ovine SNP50 BeadChip indicated that the two most susceptible alleles (haplotypes 2 and 3) were common and distributed widely. Analysis of next generation sequence for the complete <italic>TMEM154</italic> gene in an international panel of 75 sheep confirmed that the three most common haplotypes described in U.S. sheep populations (haplotypes 1, 2, and 3) are also abundant in groups of sheep sampled from other countries. The most common <italic>TMEM154</italic> haplotype in the international panel of 75 sheep was the less susceptible haplotype 1 encoding lysine at position 35 with a frequency of 0.37. Thus, the opportunity exists in many populations to reduce susceptibility by selectively breeding animals.</p>
+      <p>The distribution of rare mutant haplotype alleles in populations may provide insight to their history. For example, <italic>TMEM154</italic> haplotypes 6, 10, and 11 (i.e., those with Y82(delta82), H14, and I25 mutations, respectively) were not detected in the international panel of 75 sheep. To date, haplotype 6 has been observed only in Suffolk, and haplotypes 10 and 11 have only been observed in animals with Rambouillet germplasm. In contrast, haplotypes 4 and 9 (i.e., those with A4(delta53)/M44 and N33 mutations, respectively) were observed in breed groups from Turkey, Iran, Spain, France, Tibet, Jammu and Kashmir, suggesting that these haplotypes existed before sheep were brought to the U.S. The occurrence of 12 coding mutations in the predicted signal peptide and extracellular domains of <italic>TMEM154</italic> is remarkable considering that none have been detected in the putative cytosolic domain of <italic>TMEM154</italic> in 309 total sheep from 55 breed groups. However, the biological function of the TMEM154 protein and the impact of these mutations on its function, remain unknown.</p>
+      <p>The diversity of protein isoforms encoded by the <italic>TMEM154</italic> gene in sheep presents a number of challenges for genetic testing and selective breeding. One challenge is to define a framework for describing the alleles and understanding their action. A frequency-based haplotype numbering system was combined with a rooted median-joining network to put the haplotype-encoded peptide isoforms in a simplified context. Another challenge is to test the haplotypes for their effects on susceptibility to infection while accounting for potential confounders like virus strain, animal exposure, breed type, location, climate, geography, and animal husbandry practices. These factors may potentially overcome the effects of <italic>TMEM154</italic> haplotypes in a given setting. A third challenge is to develop and implement effective <italic>TMEM154</italic> allele management strategies. This will require deploying genetic tests, tracking alleles, and measuring the incidence of infection in a wide variety of settings relevant to commercial sheep production.</p>
+      <p>The genetic information and assay designs described here were developed so they could be adapted to other platforms and technologies around the world to measure the effects of <italic>TMEM154</italic> haplotypes in local populations. This report also provides the first commercially-available high-throughput genetic test for ovine <italic>TMEM154</italic> haplotypes. The availability of a commercial test is essential for producers to make immediate genetic progress in their respective sheep-improvement programs. As more information becomes available about the effects of <italic>TMEM154</italic> alleles in specific populations and environments, the most appropriate haplotypes can be selected for reducing OPPV susceptibility.</p>
+    </sec>
+    <sec id="s4" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Ethics Statement</title>
+        <p>Prior to their implementation, all animal procedures were reviewed and approved by the Care and Use Committee at the United States Department of Agriculture (USDA), Agricultural Research Service, Meat Animal Research Center (USMARC) in Clay Center, Nebraska.</p>
+      </sec>
+      <sec id="s4b">
+        <title>Animal Samples and Genotypes</title>
+        <p>The ISGC collected and genotyped 2,819 sheep from 74 breeds as part of a large study into genetic diversity and the impact of selection after domestication <xref ref-type="bibr" rid="pone.0055490-Kijas1">[11]</xref>. Samples were collected from multiple flocks to minimize relationships within breed. Breeds were collected from the Americas, Africa, Asia, Europe, and the domestication center in present day Iran and Turkey. The geographic origin, breed identity, and number of animals per breed has been previously described <xref ref-type="bibr" rid="pone.0055490-Kijas1">[11]</xref>. DNA samples were genotyped with the Illumina (San Diego, California USA) ovine SNP50 Beadchip. Genotypes for SNP OAR17_5388531 were available for 2,759 sheep and used for analysis.</p>
+        <p>The ISGC selected 75 animals for whole genome sequencing to extend its investigation of genetic diversity and selection in the world’s sheep breeds <xref ref-type="bibr" rid="pone.0055490-White1">[10]</xref>. The majority of the animals (61%) were drawn from the previous study <xref ref-type="bibr" rid="pone.0055490-White1">[10]</xref> to capture the diversity present across <italic>O. aries</italic>. Additional animals were recruited that either: 1) had previously been used in the construction of genomic resources for the sheep genome <xref ref-type="bibr" rid="pone.0055490-Archibald1">[12]</xref>, 2) carried disease genes, or 3) were wild sheep sampled from the bighorn (<italic>O. canadensis</italic>) and thinhorn (<italic>O. dalli</italic>) populations of North America. Each genome was sequenced and mapped to a read-depth coverage of approximately10-fold with Illumina GAII (unpublished). Prepublication access to the raw sequence data (.bam files) was provided under the Toronto guidelines for data users <xref ref-type="bibr" rid="pone.0055490-Birney1">[13]</xref>. These 75 sheep from 39 breed groups and two species groups were used to derive genotypes for the 62 kb genomic region containing <italic>TMEM154.</italic></p>
+        <p>The USMARC Sheep Diversity Panel, version 2.4 consists of 96 rams from nine breeds, a composite population, and one Navajo-Churro ram with a rare prion haplotype allele (ARK) as previously described <xref ref-type="bibr" rid="pone.0055490-Heaton2">[14]</xref>. These rams were part of a set of 96 tetrad families consisting of a ram, a ewe, and twin offspring and used to confirm the haplotype phase of <italic>TMEM154</italic> alleles and to further evaluate the accuracy of genotype scoring. Since the first report of this panel in 2010 <xref ref-type="bibr" rid="pone.0055490-Heaton2">[14]</xref>, family number 47 has been removed because the genotypes from multiple disperse loci for this ram (USMARC Finn no. 200117718) indicate it is not the sire of these offspring. The remaining 95 families were used for testing the accuracy, reproducibility, and segregation of MALDI-TOF MS assays for 12 <italic>TMEM154</italic> polymorphisms affecting 12 codons.</p>
+        <p>Sheep used for blinded MALDI-TOF MS genotyping trials included 260 USMARC OPP case-control sheep composed of 130 pairs of 4- to 9-year-old ewes <xref ref-type="bibr" rid="pone.0055490-Heaton1">[9]</xref>, and 239 lambs from a 2011 cohort that were 1/2 Rambouillet,1/4 Romanov, 1/8 White Dorper, and 1/8 Katahdin (499 total).</p>
+        <p>The Wyoming, USA bighorn sheep samples consisted of DNA from 10 wild animals taken from different wildlife management areas across Wyoming prior to 2001.</p>
+      </sec>
+      <sec id="s4c">
+        <title>Determining <italic>TMEM154</italic> Diplotypes from Whole Genome Sequences</title>
+        <p>DNA sequence reads from sheep representing 39 <italic>O. aries</italic> breeds plus <italic>O. canadensis and O. dalli</italic> were previously mapped to an ovine reference genome to an average sequencing depth of ten-fold. The UnifiedGenotyper analysis tool from the Genome Analysis Toolkit <xref ref-type="bibr" rid="pone.0055490-McKenna1">[15]</xref> was used to identify variants, and to genotype the samples at those variant sites. SAMTools viewer <xref ref-type="bibr" rid="pone.0055490-Li1">[16]</xref> was used to extract the subset of the.bam files from each animal’s whole genome sequence files for the locus <italic>TMEM154</italic>. The genomic coordinates used were chromosome 17 positions 4,822,280 to 4,884,987 on the Oar v2.0 map (<ext-link ext-link-type="uri" xlink:href="http://www.livestockgenomics.csiro.au/sheep/" xlink:type="simple">http://www.livestockgenomics.csiro.au/sheep/</ext-link>). These locus-specific.bam files, their corresponding index files, and genotypes for the variants identified, were loaded into the Intrepid Bioinformatics data management system. Cross reference hyperlinks (/db_xref) were also added to the GenBank file accession HM355886. Diplotypes for the <italic>TMEM154</italic> polypeptide isoforms were constructed by concatenating the genotypes at the 12 polymorphic sites predicted to alter the coding sequence and then matching the concatenated set of genotypes to those listed in <xref ref-type="supplementary-material" rid="pone.0055490.s001">Table S1</xref>. Because loop structures were not observed in the median-joining network depicted in <xref ref-type="fig" rid="pone-0055490-g002">Figure 2C</xref>, the diplotype could be arrived at by only one combination of haplotypes. In rare cases where animals with novel missense SNPs were also heterozygous for nearby missense SNPs, haplotype phase was determined with information from paired-end reads that was accessible in the SAMTools viewer.</p>
+      </sec>
+      <sec id="s4d">
+        <title>MALDI-TOF MS Genotyping and Synthetic DNA Controls for Rare Alleles</title>
+        <p>Genotyping was performed at GeneSeek with the Sequenom MassARRAY platform and iPLEX GOLD chemistry according to the manufacturer’s instructions (Sequenom, San Diego, CA USA). Briefly, multiplex assays were designed with commercial software and adjusted manually (see <xref ref-type="supplementary-material" rid="pone.0055490.s003">Table S3</xref> for list of oligonucleotides). <italic>TMEM154</italic> exons 1 and 2 were amplified from genomic DNA by PCR and residual oligonucleotides were subsequently dephosphorylated prior to thermocycling in the single-base extension reaction. The oligonucleotide extension products were desalted with size-exclusion resin and transferred to a 384-well chip for MALDI-TOF MS. High-fidelity, long oligonucleotides (Integrated DNA technologies, Coralville, IA USA) with DNA sequences of the 12 minor alleles were synthesized and used as positive control templates in PCR amplification. The lyophilized oligonucleotides were dissolved in 10 mM TrisCl, 1 mM EDTA (pH 8.0) to 25 µM and then empirically diluted to between 1×10<sup>3</sup> to 1×10<sup>6</sup> copies per µl before mixing 1∶1 vol/vol with genomic DNA. These samples were subjected to PCR and genotyping as described above. Sequences used for oligonucleotide synthesis included those for <italic>TMEM154</italic> exon 1 (174 bp): tttcagcgggactgacaccgcg[t]gcagcagcatcgc[g]atgccgggg[deleted ‘c’,A4]gcgcgccccccgaggctccgcgcgccg[t,V13]cc[a,H14]tttcctcgccgcggtcctcgcgtcccttccca[t,I25]ccgcccggcgcagggtaagcacccctcggctttccactcccggcgaggaggatgaggaaggctt; <italic>TMEM154</italic>exon 2a (103 bp): gtctcaattttgtatgtgttcccacagga[c,Q31]aggag[a,N33]acaca[g,E35]aactgtcaggagacgtgcccccaggca [t,M44]ggaaggcctggatgaagagtcagaggccctaag; <italic>TMEM154</italic>exon 2b (114 bp): cacacttgcttcagtgaccacagaaccttacatcaccagtataa[t,I70]ttctaccctt[t,F74]ttgacgaagacacagaccagtta [deleted ‘gagttta’,Y82]tattaatggtgttgatcccagtgatttt; and <italic>TMEM154</italic>exon2c (98 bp): actctctctcctgcttctatcagcga[c,T102]actccttataatataccataaaag[g]aaaaggaataaacaaggtaaatattttgcctgttctcatttctaga.</p>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0055490.s001" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" xlink:href="info:doi/10.1371/journal.pone.0055490.s001" position="float" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>List of the 78 </bold>
+            <bold>
+              <italic>TMEM154</italic>
+            </bold>
+            <bold> diplotypes possible from 12 known haplotypes.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0055490.s002" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" xlink:href="info:doi/10.1371/journal.pone.0055490.s002" position="float" xlink:type="simple">
+        <label>Table S2</label>
+        <caption>
+          <p>
+            <bold>Haplotypes encoding polypeptide isoforms of ovine </bold>
+            <bold>
+              <italic>TMEM154.</italic>
+            </bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0055490.s003" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" xlink:href="info:doi/10.1371/journal.pone.0055490.s003" position="float" xlink:type="simple">
+        <label>Table S3</label>
+        <caption>
+          <p>
+            <bold>Oligonucleotide information for </bold>
+            <bold>
+              <italic>TMEM154</italic>
+            </bold>
+            <bold> genetic testing.</bold>
+          </p>
+          <p>(XLSX)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank J. Carnahan for outstanding technical assistance, J. Watts for secretarial support, the USMARC sheep crew for production and management of sheep, and D.A Hawk of the Wyoming Game and Fish Department for providing bighorn sheep samples. This work was conducted in part using the resources of the University of Louisville’s research computing group and the Cardinal Research Cluster.</p>
+      <p>The members of the International Sheep Genomics Consortium who contributed samples and expertise towards the design and execution of ovine SNP50k genotyping and next generation sequencing, and/or coauthors of <xref ref-type="bibr" rid="pone.0055490-Kijas1">[11]</xref> include: Juan Jose Arranz, Universidad de Leon; Georgios Banos, Aristotle University of Thessaloniki; William Barendse, CSIRO Livestock Industries; Ahmedn El Beltagy, Animal Production Research Institute; Jorn Benenwitz, University of Hohenheim; Steven Bishop, The Roslin Institute; Simon Boitard, INRA; Lutz Bunger, Scottish Agricultural College; Jorge Calvo, CITA; Antonello Carta, Agris Sardegna; Ibrahim Cemal, Adnan Menderes University; Elena Ciani, University of Bari; Noelle Cockett, University of Utah; Dave Coltman, University of Alberta; Brian Dalrymple, CSIRO Livestock Industries; Mariasilvia D’Andrea, Università degli Studi del Molise; Ottmar Distl, University of Veterinary Medicine Hannover; Cord Drogemuller, Institute of Genetics, University of Berne; Georg Erhardt, Institut für Tierzucht und Haustiergenetik Justus-Liebig-Universität Gießen; Emma Eythorsdottir, Agricultural University of Iceland; Kimberly Gietzen, Illumina Inc.; Clare Gill, Texas A&amp;M University; Elisha Gootwine, The Volcani Center; Vidya Gupta, National Chemical Laboratory; Olivier Hanotte, University of Nottingham; Ben Hayes, Department of Primary Industries Victoria; Michael Heaton, USDA MARC; Stefan Hiendleder, University of Adelaide; Han Jialin, ILRI and CAAS; Juha Kantanen, MTT Agrifood Research; Matthew Kent, CiGene; James Kijas, CSIRO Livestock Industries; Denis Larkin, University of Aberystwyth; Johannes A. Lenstra, Utrecht University; Kui Li, Lhasa People Hospital, Tibet; Terry Longhurst, Meat and Livestock Australia; Runlin Ma, Chinese Academy of Science; Russell McCulloch, CSIRO Livestock Industries; David MacHugh, University College Dublin; Sean McWilliam, CSIRO Livestock Industries; John McEwan, AgResearch; Jillian Maddox, University of Melbourne; Massoud Malek, IAEA; Faruque Mdomar, Bangladesh Agriculture University; Despoina Miltiadou, Cyprus University of Technology; Luis V. Monteagudo Ibáñez, Universidad de Zaragoza; Carole Moreno, INRA; Frank Nicholas, University of Sydney; Kristen Nowak, University of Western Australia; V. Hutton Oddy, University of New England; Samuel Paiva, Embrapa; Varsha Pardeshi, National Chemical Laboratory; Josephine Pemberton, University of Edinburgh; Fabio Pilla, Università degli Studi del Molise; Laercio R. Porto Neto, CSIRO Livestock Industries; Herman Raadsma, University of Sydney; Cyril Roberts, Caribbean Agricultural Research and Development Institute; Magali San Cristobal, INRA; Tiziana Sechi, Agris Sardegna; Paul Scheet, University of Texas M. D. Anderson Cancer Center; Bertrand Servin, INRA; Mohammad Shariflou, University of Sydney; Pradeepa Silva, University of Peradeniya; Henner Simianer, University of Goettingen; Jon Slate, University of Sheffield; Mikka Tapio, MTT; and Selina Vattathil, University of Texas M. D. Anderson Cancer Center; Vicki Whan, CSIRO Livestock Industries.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0055490-Thormar1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Thormar</surname><given-names>H</given-names></name> (<year>2005</year>) <article-title>Maedi-visna virus and its relationship to human immunodeficiency virus</article-title>. <source>AIDS Rev</source> <volume>7</volume>: <fpage>233</fpage>–<lpage>245</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Patel1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Patel</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Heldens</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>Bakonyi</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Rusvai</surname><given-names>M</given-names></name> (<year>2012</year>) <article-title>Important mammalian veterinary viral immunodiseases and their control</article-title>. <source>Vaccine</source> <volume>30</volume>: <fpage>1767</fpage>–<lpage>1781</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Blacklaws1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blacklaws</surname><given-names>BA</given-names></name>, <name name-style="western"><surname>Berriatua</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Torsteinsdottir</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Watt</surname><given-names>NJ</given-names></name>, <name name-style="western"><surname>de Andres</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Transmission of small ruminant lentiviruses</article-title>. <source>Vet Microbiol</source> <volume>101</volume>: <fpage>199</fpage>–<lpage>208</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Peterhans1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peterhans</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Greenland</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Badiola</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Harkiss</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Bertoni</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Routes of transmission and consequences of small ruminant lentiviruses (SRLVs) infection and eradication schemes</article-title>. <source>Vet Res</source> <volume>35</volume>: <fpage>257</fpage>–<lpage>274</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Sigurdsson1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sigurdsson</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Grimsson</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Palsson</surname><given-names>PA</given-names></name> (<year>1952</year>) <article-title>Maedi, a chronic, progressive infection of sheep’s lungs</article-title>. <source>J Infect Dis</source> <volume>90</volume>: <fpage>233</fpage>–<lpage>241</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Keen1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Keen</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>Hungerford</surname><given-names>LL</given-names></name>, <name name-style="western"><surname>Littledike</surname><given-names>ET</given-names></name>, <name name-style="western"><surname>Wittum</surname><given-names>TE</given-names></name>, <name name-style="western"><surname>Kwang</surname><given-names>J</given-names></name> (<year>1997</year>) <article-title>Effect of ewe ovine lentivirus infection on ewe and lamb productivity</article-title>. <source>Prev Vet Med</source> <volume>30</volume>: <fpage>155</fpage>–<lpage>169</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-USDA1">
+        <label>7</label>
+        <mixed-citation publication-type="other" xlink:type="simple">USDA (2003) Ovine Progressive Pneumonia: Awareness, Management, and Seroprevalence. In: Animal and Plant Health Inspection Service VS, Centers for Epidemiology and Animal Health, editor. Fort Collins.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Gjerset1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gjerset</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Rimstad</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Teige</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Soetaert</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Jonassen</surname><given-names>CM</given-names></name> (<year>2009</year>) <article-title>Impact of natural sheep-goat transmission on detection and control of small ruminant lentivirus group C infections</article-title>. <source>Vet Microbiol</source> <volume>135</volume>: <fpage>231</fpage>–<lpage>238</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Heaton1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Heaton</surname><given-names>MP</given-names></name>, <name name-style="western"><surname>Clawson</surname><given-names>ML</given-names></name>, <name name-style="western"><surname>Chitko-McKown</surname><given-names>CG</given-names></name>, <name name-style="western"><surname>Leymaster</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>TP</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Reduced Lentivirus Susceptibility in Sheep with TMEM154 Mutations</article-title>. <source>PLoS Genet</source> <volume>8</volume>: <fpage>e1002467</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-White1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>White</surname><given-names>SN</given-names></name>, <name name-style="western"><surname>Mousel</surname><given-names>MR</given-names></name>, <name name-style="western"><surname>Herrmann-Hoesing</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Reynolds</surname><given-names>JO</given-names></name>, <name name-style="western"><surname>Leymaster</surname><given-names>KA</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Genome-wide association identifies multiple genomic regions associated with susceptibility to and control of ovine lentivirus</article-title>. <source>PloS one</source> <volume>7</volume>: <fpage>e47829</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Kijas1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kijas</surname><given-names>JW</given-names></name>, <name name-style="western"><surname>Lenstra</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Hayes</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Boitard</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Porto Neto</surname><given-names>LR</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Genome-Wide Analysis of the World’s Sheep Breeds Reveals High Levels of Historic Mixture and Strong Recent Selection</article-title>. <source>PLoS Biol</source> <volume>10</volume>: <fpage>e1001258</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Archibald1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Archibald</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Cockett</surname><given-names>NE</given-names></name>, <name name-style="western"><surname>Dalrymple</surname><given-names>BP</given-names></name>, <name name-style="western"><surname>Faraut</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Kijas</surname><given-names>JW</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>The sheep genome reference sequence: a work in progress</article-title>. <source>Animal genetics</source> <volume>41</volume>: <fpage>449</fpage>–<lpage>453</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Birney1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Birney</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Hudson</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Green</surname><given-names>ED</given-names></name>, <name name-style="western"><surname>Gunter</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Eddy</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Prepublication data sharing</article-title>. <source>Nature</source> <volume>461</volume>: <fpage>168</fpage>–<lpage>170</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Heaton2">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Heaton</surname><given-names>MP</given-names></name>, <name name-style="western"><surname>Leymaster</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>Kalbfleisch</surname><given-names>TS</given-names></name>, <name name-style="western"><surname>Freking</surname><given-names>BA</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>TP</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Ovine reference materials and assays for prion genetic testing</article-title>. <source>BMC Vet Res</source> <volume>6</volume>: <fpage>23</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-McKenna1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McKenna</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Hanna</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Banks</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Sivachenko</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Cibulskis</surname><given-names>K</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>The Genome Analysis Toolkit: a MapReduce framework for analyzing next-generation DNA sequencing data</article-title>. <source>Genome research</source> <volume>20</volume>: <fpage>1297</fpage>–<lpage>1303</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Li1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Handsaker</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Wysoker</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Fennell</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Ruan</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>The Sequence Alignment/Map format and SAMtools</article-title>. <source>Bioinformatics</source> <volume>25</volume>: <fpage>2078</fpage>–<lpage>2079</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><article-title>Nomenclature for incompletely specified bases in nucleic acid sequences. Recommendations 1984. Nomenclature Committee of the International Union of Biochemistry (NC-IUB)</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>83</volume>: <fpage>4</fpage>–<lpage>8</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0055490-Robinson1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Robinson</surname><given-names>JT</given-names></name>, <name name-style="western"><surname>Thorvaldsdottir</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Winckler</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Guttman</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Lander</surname><given-names>ES</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Integrative genomics viewer</article-title>. <source>Nature biotechnology</source> <volume>29</volume>: <fpage>24</fpage>–<lpage>26</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

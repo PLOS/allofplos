@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0120049</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-14-49698</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Effects of Acute Exposure to Increased Plasma Branched-Chain Amino Acid Concentrations on Insulin-Mediated Plasma Glucose Turnover in Healthy Young Subjects</article-title>
+<alt-title alt-title-type="running-head">BCAA and Insulin Resistance</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Everman</surname>
+<given-names>Sarah</given-names>
+</name>
+<xref rid="aff001" ref-type="aff"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Mandarino</surname>
+<given-names>Lawrence J.</given-names>
+</name>
+<xref rid="aff001" ref-type="aff"><sup>1</sup></xref>
+<xref rid="aff002" ref-type="aff"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Carroll</surname>
+<given-names>Chad C.</given-names>
+</name>
+<xref rid="aff003" ref-type="aff"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Katsanos</surname>
+<given-names>Christos S.</given-names>
+</name>
+<xref rid="aff001" ref-type="aff"><sup>1</sup></xref>
+<xref rid="aff002" ref-type="aff"><sup>2</sup></xref>
+<xref rid="cor001" ref-type="corresp">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Center for Metabolic and Vascular Biology, Arizona State University/Mayo Clinic in Arizona, Scottsdale, Arizona, United States of America</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>School of Life Sciences, Arizona State University,Tempe, Arizona, United States of America</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Department of Physiology, Midwestern University, Glendale, Arizona, United States of America</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Moro</surname>
+<given-names>Cedric</given-names>
+</name>
+<role>Academic Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>INSERM/UMR 1048, FRANCE</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: LJM CSK. Performed the experiments: SE CSK. Analyzed the data: SE CCC CSK. Wrote the paper: SE LJM CCC CSK.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">christos.katsanos@asu.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>17</day>
+<month>3</month>
+<year>2015</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2015</year>
+</pub-date>
+<volume>10</volume>
+<issue>3</issue>
+<elocation-id>e0120049</elocation-id>
+<history>
+<date date-type="received">
+<day>4</day>
+<month>11</month>
+<year>2014</year>
+</date>
+<date date-type="accepted">
+<day>2</day>
+<month>2</month>
+<year>2015</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2015</copyright-year>
+<copyright-holder>Everman et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0120049" xlink:type="simple"/>
+<abstract>
+<sec id="sec001">
+<title>Background</title>
+<p>Plasma branched-chain amino acids (BCAA) are inversely related to insulin sensitivity of glucose metabolism in humans. However, currently, it is not known whether there is a cause-and-effect relationship between increased plasma BCAA concentrations and decreased insulin sensitivity.</p>
+</sec>
+<sec id="sec002">
+<title>Objective</title>
+<p>To determine the effects of acute exposure to increased plasma BCAA concentrations on insulin-mediated plasma glucose turnover in humans.</p>
+</sec>
+<sec id="sec003">
+<title>Methods</title>
+<p>Ten healthy subjects were randomly assigned to an experiment where insulin was infused at 40 mU/m<sup>2</sup>/min (40U) during the second half of a 6-hour intravenous infusion of a BCAA mixture (i.e., BCAA; N = 5) to stimulate plasma glucose turnover or under the same conditions without BCAA infusion (Control; N = 5). In a separate experiment, seven healthy subjects were randomly assigned to receive insulin infusion at 80 mU/m<sup>2</sup>/min (80U) in association with the above BCAA infusion (N = 4) or under the same conditions without BCAA infusion (N = 3). Plasma glucose turnover was measured prior to and during insulin infusion.</p>
+</sec>
+<sec id="sec004">
+<title>Results</title>
+<p>Insulin infusion completely suppressed the endogenous glucose production (EGP) across all groups. The percent suppression of EGP was not different between Control and BCAA in either the 40U or 80U experiments (<italic>P</italic> &gt; 0.05). Insulin infusion stimulated whole-body glucose disposal rate (GDR) across all groups. However, the increase (%) in GDR was not different [median (1st quartile – 3rd quartile)] between Control and BCAA in either the 40U ([199 (167–278) vs. 186 (94–308)] or 80 U ([491 (414–548) vs. 478 (409–857)] experiments (<italic>P</italic> &gt; 0.05). Likewise, insulin stimulated the glucose metabolic clearance in all experiments (<italic>P</italic> &lt; 0.05) with no differences between Control and BCAA in either of the experiments (<italic>P</italic> &gt; 0.05).</p>
+</sec>
+<sec id="sec005">
+<title>Conclusion</title>
+<p>Short-term exposure of young healthy subjects to increased plasma BCAA concentrations does not alter the insulin sensitivity of glucose metabolism.</p>
+</sec>
+</abstract>
+<funding-group>
+<funding-statement>The work was conducted at the Center for Metabolic and Vascular Biology at Arizona State University and was funded in part by Arizona State University and by NIH/NIDDK grant R01DK094062 (CSK). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="3"/>
+<table-count count="5"/>
+<page-count count="15"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability" xlink:type="simple">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec006" sec-type="intro">
+<title>Introduction</title>
+<p>Increased concentrations of branched-chain amino acids (i.e., leucine, isoleucine, and valine) (BCAA) in the plasma of obese individuals was first described more than 40 years ago [<xref rid="pone.0120049.ref001" ref-type="bibr">1</xref>,<xref rid="pone.0120049.ref002" ref-type="bibr">2</xref>], and it has been a common observation in obesity since then [<xref rid="pone.0120049.ref003" ref-type="bibr">3</xref>–<xref rid="pone.0120049.ref006" ref-type="bibr">6</xref>]. An apparent inverse association has now emerged between plasma BCAA and insulin sensitivity [<xref rid="pone.0120049.ref007" ref-type="bibr">7</xref>]. The plasma concentrations of specific BCAA, such as valine, show significant positive correlation with the homeostatic model assessment (HOMA) of insulin resistance [<xref rid="pone.0120049.ref008" ref-type="bibr">8</xref>], and an overall increase in the BCAA has been described as contributor to the insulin-resistant state that accompanies human obesity [<xref rid="pone.0120049.ref004" ref-type="bibr">4</xref>]. Furthermore, the improvement in insulin sensitivity after gastric bypass in obese individuals is observed together with a decrease in the plasma BCAA concentrations [<xref rid="pone.0120049.ref009" ref-type="bibr">9</xref>]. Such lines of evidence point to a possible causal link between increased plasma BCAA concentrations and insulin resistance. However, all this evidence is only descriptive in nature and cannot establish a cause-and-effect relationship between increased blood BCAA concentrations and decreased insulin sensitivity in humans.</p>
+<p>Acute infusion of an amino acid mixture that includes the BCAA and results in approximately 2-fold increase in the plasma BCAA concentrations, impairs the insulin-stimulated whole-body glucose disposal in young healthy subjects [<xref rid="pone.0120049.ref010" ref-type="bibr">10</xref>,<xref rid="pone.0120049.ref011" ref-type="bibr">11</xref>]. Studies in rodents show that, although supplementation of a high-fat diet with BCAA prevents weight gain, these rats still develop insulin resistance in a manner similar to weight-gaining rats on just the high-fat diet, suggestive of an independent role of BCAA in inducing insulin resistance [<xref rid="pone.0120049.ref004" ref-type="bibr">4</xref>]. Overall, these lines of evidence indicate that increased plasma BCAA concentrations may have adverse effects on the regulation of plasma glucose homeostasis.</p>
+<p>Our current knowledge linking the plasma BCAA to insulin resistance in humans is based on simple association studies. In addition to a possible role of BCAA in modifying glucose homeostasis, BCAA have a well-described positive role in maintaining muscle protein turnover [<xref rid="pone.0120049.ref012" ref-type="bibr">12</xref>,<xref rid="pone.0120049.ref013" ref-type="bibr">13</xref>]. Therefore, any information about a causal role of BCAA in altering insulin sensitivity of glucose metabolism in humans is of both physiological and clinical importance. An experimental approach where the insulin sensitivity is evaluated in the presence of acute exposure to increased plasma BCAA concentrations can directly address the short-term effects of increased plasma BCAA concentrations on hindering insulin sensitivity.</p>
+</sec>
+<sec id="sec007" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="sec008">
+<title>Study participants</title>
+<p>All study procedures were approved by the Institutional Review Board at Arizona State University. Subjects were screened over the phone and those with body mass index &gt; 30 kg/m<sup>2</sup>, diabetes, high blood pressure, heart disease, peripheral vascular disease, history of liver or kidney disease, smoking and use of either prescription or over-the-counter medications or ingestion of any supplements were excluded from participation in the study. Subjects included in the study were brought to the Clinical Research Unit (CRU) at Arizona State University for further screening. Those determined to be healthy based on standard medical history questionnaire, physical examination, resting electrocardiogram, and blood and urine tests, were randomly assigned into the following experiments designed to evaluate whole-body glucose turnover: 1) infusion of insulin at 40 mU/m<sup>2</sup>/min (40U) and in association with intravenous infusion of either branched-chain amino acids (BCAA group, N = 5) or saline (Control group; N = 5), 2) infusion of insulin at 80 mU/m<sup>2</sup>/min (80U) and in association with intravenous infusion of either BCAA (BCAA group; N = 4) or saline (Control group; N = 3). Morphological and biochemical parameters of the subjects studied in the BCAA and Control groups are shown in <xref rid="pone.0120049.t001" ref-type="table">Table 1</xref>. The purpose and the design of the studies, as well as known risks associated with the study procedures, were explained to each subject and written informed consent was obtained.</p>
+<table-wrap id="pone.0120049.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0120049.t001</object-id>
+<label>Table 1</label> <caption><title>Physical and clinical characteristics of the subjects.</title></caption>
+<alternatives>
+<graphic id="pone.0120049.t001g" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0120049.t001" xlink:type="simple"/>
+<table>
+<colgroup span="1">
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1">Basal BCAA (2F/6M)</th>
+<th align="left" rowspan="1" colspan="1">High BCAA (5F/4M)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age, y</td>
+<td align="left" rowspan="1" colspan="1">22.9 ± 1.7</td>
+<td align="left" rowspan="1" colspan="1">19.1 ± 0.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Weight, kg</td>
+<td align="left" rowspan="1" colspan="1">68.8 ± 2.6</td>
+<td align="left" rowspan="1" colspan="1">64.5 ± 3.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Height, m</td>
+<td align="left" rowspan="1" colspan="1">1.73 ± 0.03</td>
+<td align="left" rowspan="1" colspan="1">1.70 ± 0.03</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BMI, kg/m<sup>2</sup></td>
+<td align="left" rowspan="1" colspan="1">22.9 ± 0.6</td>
+<td align="left" rowspan="1" colspan="1">22.4 ± 1.0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Body fat, %</td>
+<td align="left" rowspan="1" colspan="1">13.2 ± 3.0</td>
+<td align="left" rowspan="1" colspan="1">16.7 ± 1.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Plasma cholesterol, mg/dl</td>
+<td align="left" rowspan="1" colspan="1">136.6 ± 5.6</td>
+<td align="left" rowspan="1" colspan="1">155.1 ± 11.1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Plasma HDL-C, mg/dl</td>
+<td align="left" rowspan="1" colspan="1">48.7 ± 4.5</td>
+<td align="left" rowspan="1" colspan="1">56.3 ± 4.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Plasma triglycerides, mg/dl</td>
+<td align="left" rowspan="1" colspan="1">67.7 ± 6.7</td>
+<td align="left" rowspan="1" colspan="1">70.9 ± 9.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ALT, IU/l</td>
+<td align="left" rowspan="1" colspan="1">19.6 ± 2.7</td>
+<td align="left" rowspan="1" colspan="1">23.2 ± 2.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">AST, IU/l</td>
+<td align="left" rowspan="1" colspan="1">24.6 ± 2.4</td>
+<td align="left" rowspan="1" colspan="1">26.0 ± 2.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Plasma glucose, mg/dl</td>
+<td align="left" rowspan="1" colspan="1">84.0 ± 2.3</td>
+<td align="left" rowspan="1" colspan="1">85.2 ± 2.5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Plasma insulin, uIU/ml</td>
+<td align="left" rowspan="1" colspan="1">4.5 ± 0.6</td>
+<td align="left" rowspan="1" colspan="1">3.9 ± 0.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">HOMA-IR</td>
+<td align="left" rowspan="1" colspan="1">0.9 ± 0.1</td>
+<td align="left" rowspan="1" colspan="1">0.8 ± 0.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Hemoglobin A1C (%)</td>
+<td align="left" rowspan="1" colspan="1">5.1 ± 0.1</td>
+<td align="left" rowspan="1" colspan="1">5.1 ± 0.1</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p>Values are means ± SE; BMI, body mass index, ALT, alanine aminotransferase; AST, aspartate aminotransferase; BCAA, branched-chain amino acids; HDL-C, High Density Lipoprotein-Cholesterol; HOMA-IR, Homeostatic model assessment of insulin resistance; Body fat was determined using bioimpedance; There were no significant differences between groups (<italic>P</italic> &gt;0.05).</p></fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+<sec id="sec009">
+<title>Experimental protocol</title>
+<p>Prior to participation in the infusion experiment, subjects were instructed to abstain from alcohol consumption, any form of exercise, and keep their normal diet for the three-day period before the experiment. Subjects were asked to fast starting at 10 PM the night before the infusion experiment and arrive at the CRU at approximately 7:00 AM the following morning, at which time compliance with the above instructions was verbally verified. A catheter was inserted into an antecubital vein of their arm for infusions, while a second catheter was inserted in a hand vein for blood sampling using the heated hand technique. An infusion of [<italic>6</italic>,<italic>6–</italic><sup><italic>2</italic></sup><italic>H</italic><sub><italic>2</italic></sub>]glucose (prime: 16.7 umol/kg; rate: 0.17 umol/kg/min), was initiated after the collection of blood samples for the determination of background stable isotope enrichment and biochemical parameters. The experimental protocol is depicted in <xref rid="pone.0120049.g001" ref-type="fig">Fig. 1</xref>. Subjects in the BCAA group received BCAA (4% BranchAmin; Baxter, Deerfield, IL; 1.38 g isoleucine, 1.38 g leucine, and 1.24 g valine per 100 ml) infusion at a rate of 5 umol/kg/min (prime: 15 umol/kg/min over 30 mins) to increase the concentration of plasma BCAA. After three hours of either BCAA or saline infusion (i.e., Control), insulin infusion was started at a rate of either 40 mU/m<sup>2</sup>/min (prime: 80 mU/m<sup>2</sup>/min over 10 mins) or 80 mU/m<sup>2</sup>/min (prime: 160 mU/m<sup>2</sup>/min over 10 mins) to stimulate whole-body glucose turnover. Variable rate of 20% dextrose was infused simultaneously with the insulin to maintain the plasma glucose concentration at that measured at the end of the three-hour basal period (i.e., hyperinsulinemic-euglycemic clamp). The dextrose solution was enriched with 1.8% [<italic>6</italic>,<italic>6–</italic><sup><italic>2</italic></sup><italic>H</italic><sub><italic>2</italic></sub>]glucose to minimize changes in plasma glucose isotopic enrichment during the hyperinsulinemic-euglycemic clamp. Because insulin infusion decreases the plasma amino acid concentrations, we infused 4% BranchAmin at a variable rate during the hyperinsulinemic-euglycemic clamp in all infusion experiments to maintain the plasma BCAA at the levels observed during the basal period (i.e., the end of the three hours of BCAA or saline infusions). A drop in amino acid levels below those observed in basal/postabsorptive conditions creates a metabolic circumstance associated with increased plasma glucose turnover [<xref rid="pone.0120049.ref014" ref-type="bibr">14</xref>].</p>
+<fig id="pone.0120049.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0120049.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Experimental design.</title>
+<p>Infusion protocol depicting the “basal” and “hyperinsulinemic-euglycemic clamp” study periods described in the text. [6,6–<sup>2</sup>H<sub>2</sub>]glucose, branched-chain amino acids (BCAA; i.e., BranchAmin), saline, insulin and glucose were infused as indicated; [BCAA], total branched-chain amino acids concentration.</p>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0120049.g001" position="float" xlink:type="simple"/>
+</fig>
+<p>Blood samples were collected prior to the initiation of the infusions, during the last 30 mins of the basal period, associated with either the BCAA or saline infusions, as well as during the last 30 mins of the hyperinsulinemic-euglycemic clamp. Blood samples were collected for determinations of plasma glucose concentration and enrichment, as well as insulin and amino acid concentrations. Plasma glucose concentrations were determined every 5–10 mins during the hyperinsulinemic-euglycemic clamp in order to adjust the rate of 20% dextrose infusion to maintain the plasma glucose at the levels measured prior to the initiation of the insulin infusion. BCAA concentrations were also determined every 20–30 mins during the hyperinsulinemic-euglycemic clamp with the purpose to adjust the rate of 4% BranchAmin to maintain the plasma total BCAA levels as close to those measured prior to the initiation of the insulin infusion.</p>
+</sec>
+<sec id="sec010">
+<title>Analyses of samples</title>
+<p>Plasma glucose and BCAA concentrations during the hyperinsulinemic-euglycemic clamp were measured using an automated glucose analyzer (YSI 2300, Yellow Springs, OH), and a rapid spectrophotometric assay [<xref rid="pone.0120049.ref015" ref-type="bibr">15</xref>], respectively. Plasma insulin concentrations were determined using a commercially available kit (ALPCO Diagnostics, Windham, NH). Plasma amino acid concentrations were determined using high-performance-liquid-chromatography (HPLC). With respect to the determination of the plasma amino acid concentrations, proteins in the plasma samples were precipitated with an equal volume of 10% trichloroacetic acid and the samples were derivatized with o-phthalaldehyde. Amino acids were separated using HPLC (LC-20AT and SIL-20ACHT; Shimadzu Scientific Instruments), and analyzed using fluorometric detection [<xref rid="pone.0120049.ref016" ref-type="bibr">16</xref>].</p>
+<p>Plasma [<italic>6</italic>,<italic>6–</italic><sup><italic>2</italic></sup><italic>H</italic><sub><italic>2</italic></sub>]glucose enrichment was measured as previously described [<xref rid="pone.0120049.ref017" ref-type="bibr">17</xref>]. Briefly, after the pentaacetate derivative of glucose was prepared, samples were analyzed using electron impact gas chromatography-mass spectrometry (Tracer GC Ultra-DSQ GG-MS; Thermo Scientific). Selected ion monitoring was performed for ions at mass-to-charge ratio (<italic>m/z</italic>) 200, 201, and 202, and correction was made for the contribution of singly labeled <italic>m/z</italic> 201 to the measured <italic>m/z</italic> 202. Enrichment was expressed as tracer-to-tracee ratio (TTR).</p>
+</sec>
+<sec id="sec011">
+<title>Calculations</title>
+<p>Steady-state equations were used to calculate rates of whole-body appearance (Ra) and disappearance (Rd) of glucose in the two periods representing the basal (i.e., no insulin) and insulin-stimulated conditions, and by averaging the enrichments measured at the end of each study period. The glucose kinetics were also calculated by using the non-steady-state Steel equation [<xref rid="pone.0120049.ref018" ref-type="bibr">18</xref>] modified for the use with stable isotope tracers [<xref rid="pone.0120049.ref019" ref-type="bibr">19</xref>]. However, these findings were not different from those when the glucose Ra and Rd were calculated using the steady-state equations, and therefore only data using steady-state equations are reported.</p>
+<p>Whole-body glucose Ra was calculated as the ratio of the [<italic>6</italic>,<italic>6–</italic><sup><italic>2</italic></sup><italic>H</italic><sub><italic>2</italic></sub>]glucose infusion rate (F) to the measured TTR (i.e., Ra = F/TTR). During the hyperinsulinemic-euglycemic clamp the rate of [<italic>6</italic>,<italic>6–</italic><sup><italic>2</italic></sup><italic>H</italic><sub><italic>2</italic></sub>]glucose infused as part of the infusion of the 20% dextrose solution was included in the F for the calculations of whole-body Ra and Rd. Under steady-state conditions the whole-body glucose Rd equals that of Ra. Whole-body Rd describes the whole-body glucose disposal rate (GDR). Endogenous glucose production (EGP) was calculated in the insulin-stimulated condition by subtracting the exogenous glucose infusion rate from the whole-body glucose Ra. The glucose metabolic clearance rate was calculated as the ratio of whole-body glucose Rd to the plasma glucose concentration. Whole-body GDR was also adjusted to the prevailing steady-state plasma insulin concentrations [<xref rid="pone.0120049.ref020" ref-type="bibr">20</xref>], to obtain a more accurate measure of the insulin-mediated whole-body GDR.</p>
+<p>Whole-body sensitivity to the insulin-mediated glucose disposal was calculated as the percent change of the GDR relative to that at basal: (GDR<sub>insulin-stimulated</sub>-GDR<sub>basal</sub>)/GDR<sub>basal</sub> x 100. The sensitivity of insulin in suppressing the endogenous glucose production (i.e., hepatic insulin sensitivity) was calculated as: (EGP<sub>basal</sub>-<sub>EGPinsulin-stimulated</sub>)/EGP<sub>basal</sub> x 100. In the basal period only, hepatic insulin sensitivity was also calculated across all nine subjects exposed to the increased plasma BCAA concentrations and all eight subjects serving as Controls as the product of EGP and plasma insulin concentration [<xref rid="pone.0120049.ref021" ref-type="bibr">21</xref>].</p>
+</sec>
+<sec id="sec012">
+<title>Statistical analyses</title>
+<p>Statistical analyses were performed using non-parametric tests because these tests do not make any assumptions regarding the distribution of the data. The Wilcoxon signed-rank test (i.e., two dependent samples) and the Friedman test (i.e., three dependent samples) were used to test for differences across study periods. Differences between groups at a given study period were analyzed with the Mann-Whitney test. Data are provided as mean ± SEM, as well as median (1<sup>st</sup> quartile—3<sup>rd</sup> quartile). Differences were considered statistically significant at <italic>P</italic> ≤ 0.05. Statistical analyses were performed using the Minitab 16 statistical analysis software (Minitab Inc., State College, PA).</p>
+</sec>
+</sec>
+<sec id="sec013" sec-type="results">
+<title>Results</title>
+<sec id="sec014">
+<title>Plasma concentrations of amino acids, glucose and insulin</title>
+<p>There were no significant differences (<italic>P</italic> &gt;0.05) in the fasting concentrations (umol/l) of various amino acids between the BCAA and the Control subjects (arginine, 75±11, 74 (43–106) vs 65±8, 60 (46–87); asparagine, 59±4, 61 (48–69) vs 55±8, 54 (33–78); aspartate, 39±6, 35 (28–40) vs 31±3, 32 (24–38); glutamate, 88±7, 83 (79–103) vs 73±9, 69 (47–101); isoleucine, 65±9, 59 (43–85) vs 63±8, 58 (48–75); leucine, 101±20, 89 (57–150) vs 88±14, 81 (54–109); methionine, 48±6, 53 (29–58) vs 44±3, 43 (37–46); phenylalanine, 67±6, 61 (54–83) vs 62±6, 58 (47–79); serine, 99±12, 91 (74–114) vs 98±18, 93 (49–147); tyrosine, 84±7, 77 (68–98) vs 100±5, 106 (83–111); valine, 184±28, 168 (124–240) vs 164±22, 165 (111–223)). As expected due to the experimental design, the concentration of plasma BCAA increased relative to their fasting value only in the BCAA groups, and both in the basal period and during the hyperinsulinemic-euglycemic clamp. Plasma BCAA concentrations prior to the initiation of the BCAA or saline infusions (i.e., Time 0) as well as in the basal period and the period associated with the hyperinsulinemic-euglycemic clamp are shown for the 40U and 80U experiments in Tables <xref rid="pone.0120049.t002" ref-type="table">2</xref> and <xref rid="pone.0120049.t003" ref-type="table">3</xref>, respectively. As also expected, the plasma BCAA concentrations were different between the BCAA and Control groups in the basal period and during the hyperinsulinemic-euglycemic clamp (<italic>P</italic> &lt;0.05). The rate of BCAA infusion (umol/kg/min) to maintain the plasma BCAA concentrations during the hyperinsulinemic-euglycemic clamp at levels measured prior to the initiation of the insulin infusion (i.e., basal period) were 1.9 ± 0.6, 1.2 (1.2–3.0) and 6.0 ± 0.5, 5.5 (5.0–7.3) in the Control and BCAA groups, respectively, in the 40U experiment, and 3.7 ± 1.1, 4.6 (1.5–4.9) and 11.3 ± 2.3, 10.2 (7.6–16.0) in the Control and BCAA groups, respectively, in the 80U experiment.</p>
+<table-wrap id="pone.0120049.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0120049.t002</object-id>
+<label>Table 2</label> <caption><title>Plasma branched-chain amino acid concentrations in the study associated with the infusion of insulin at 40 mU/m<sup>2</sup>/min.</title></caption>
+<alternatives>
+<graphic id="pone.0120049.t002g" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0120049.t002" xlink:type="simple"/>
+<table>
+<colgroup span="1">
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"/>
+<th colspan="3" align="center" rowspan="1">Study Period</th>
+</tr>
+<tr>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1">Time 0</th>
+<th align="left" rowspan="1" colspan="1">Basal Period</th>
+<th align="left" rowspan="1" colspan="1">Hyperinsulinemic-euglycemic Clamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Isoleucine (umol/l)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">62 ± 12 57 (43–84)</td>
+<td align="left" rowspan="1" colspan="1">53 ± 11 42 (39–72)</td>
+<td align="left" rowspan="1" colspan="1">56 ± 7 47 (43–74)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">77 ± 10 73 (59–98)</td>
+<td align="left" rowspan="1" colspan="1">292 ± 47<xref rid="t002fn002" ref-type="table-fn">*</xref><xref rid="t002fn004" ref-type="table-fn">†</xref> 252 (238–366)</td>
+<td align="left" rowspan="1" colspan="1">221 ± 37<xref rid="t002fn002" ref-type="table-fn">*</xref><xref rid="t002fn004" ref-type="table-fn">†</xref> 192 (151–305)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Leucine (umol/l)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">86 ± 23 73 (48–132)</td>
+<td align="left" rowspan="1" colspan="1">75 ± 19 62 (43–113)</td>
+<td align="left" rowspan="1" colspan="1">59 ± 11<xref rid="t002fn003" ref-type="table-fn"><sup>#</sup></xref> 48 (40–83)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">114 ± 22 95 (85–151)</td>
+<td align="left" rowspan="1" colspan="1">268 ± 60<xref rid="t002fn002" ref-type="table-fn">*</xref><xref rid="t002fn004" ref-type="table-fn">†</xref> 212 (204–361)</td>
+<td align="left" rowspan="1" colspan="1">195 ± 36<xref rid="t002fn002" ref-type="table-fn">*</xref><xref rid="t002fn004" ref-type="table-fn">†</xref> 172 (133–268)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Valine (umol/l)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">144 ± 30 130 (91–203)</td>
+<td align="left" rowspan="1" colspan="1">129 ± 30 93 (86–189)</td>
+<td align="left" rowspan="1" colspan="1">123 ± 18 122 (90–156)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">184 ± 29 168 (136–239)</td>
+<td align="left" rowspan="1" colspan="1">516 ± 84<xref rid="t002fn002" ref-type="table-fn">*</xref><xref rid="t002fn004" ref-type="table-fn">†</xref> 438 (414–657)</td>
+<td align="left" rowspan="1" colspan="1">479 ± 63<xref rid="t002fn002" ref-type="table-fn">*</xref><xref rid="t002fn004" ref-type="table-fn">†</xref> 406 (373–621)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BCAA (umol/l)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">97 ± 21 94 (61–135)</td>
+<td align="left" rowspan="1" colspan="1">85 ± 20 71 (56–122)</td>
+<td align="left" rowspan="1" colspan="1">79 ± 12 72 (58–104)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">125 ± 20 112 (93–163)</td>
+<td align="left" rowspan="1" colspan="1">359 ± 63<xref rid="t002fn002" ref-type="table-fn">*</xref><xref rid="t002fn004" ref-type="table-fn">†</xref> 298 (287–461)</td>
+<td align="left" rowspan="1" colspan="1">298 ± 45<xref rid="t002fn002" ref-type="table-fn">*</xref><xref rid="t002fn004" ref-type="table-fn">†</xref> 257 (219–398)</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t002fn001"><p>Values are means ± SE and median (1<sup>st</sup> quartile—3<sup>rd</sup> quartile); Time 0, prior to the initiation of any infusions; Basal Period, infusion of saline (Control, N = 5) or branched-chain amino acids (BCAA, N = 5); Hyperinsulinemic-euglycemic Clamp, infusion of 40 mU/m<sup>2</sup>/min insulin together with variable rate of 20% dextrose to maintain the plasma glucose concentrations at those measured at the end of the Basal Period.</p></fn>
+<fn id="t002fn002"><p>*Statistically different compared to Time 0 (<italic>P</italic> ≤0.05)</p></fn>
+<fn id="t002fn003"><p><sup>#</sup>Statistically different compared to Time 0 and Basal Period (<italic>P</italic> ≤0.05)</p></fn>
+<fn id="t002fn004"><p>†Statistically different between Control and BCAA groups (<italic>P</italic> ≤0.05)</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<table-wrap id="pone.0120049.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0120049.t003</object-id>
+<label>Table 3</label> <caption><title>Plasma branched-chain amino acid concentrations in the study associated with the infusion of insulin at 80 mU/m<sup>2</sup>/min.</title></caption>
+<alternatives>
+<graphic id="pone.0120049.t003g" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0120049.t003" xlink:type="simple"/>
+<table>
+<colgroup span="1">
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"/>
+<th colspan="3" align="center" rowspan="1">Study Period</th>
+</tr>
+<tr>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1">Time 0</th>
+<th align="left" rowspan="1" colspan="1">Basal Period</th>
+<th align="left" rowspan="1" colspan="1">Hyperinsulinemic-euglycemic Clamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Isoleucine (umol/l)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">65 ± 8 61 (53–80)</td>
+<td align="left" rowspan="1" colspan="1">55 ± 11 49 (40–75)</td>
+<td align="left" rowspan="1" colspan="1">94 ± 20 97 (59–127)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">51 ± 15 43 (27–81)</td>
+<td align="left" rowspan="1" colspan="1">254 ± 27<xref rid="t003fn002" ref-type="table-fn">*</xref><xref rid="t003fn003" ref-type="table-fn">†</xref> 253 (202–305)</td>
+<td align="left" rowspan="1" colspan="1">342 ± 96<xref rid="t003fn002" ref-type="table-fn">*</xref><xref rid="t003fn003" ref-type="table-fn">†</xref> 263 (220–544)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Leucine (umol/l)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">91 ± 13 89 (70–114)</td>
+<td align="left" rowspan="1" colspan="1">61 ± 7 58 (49–74)</td>
+<td align="left" rowspan="1" colspan="1">84 ± 11 75 (72–106)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">86 ± 38 57 (34–168)</td>
+<td align="left" rowspan="1" colspan="1">231 ± 43<xref rid="t003fn002" ref-type="table-fn">*</xref><xref rid="t003fn003" ref-type="table-fn">†</xref> 207 (167–318)</td>
+<td align="left" rowspan="1" colspan="1">305 ± 79<xref rid="t003fn002" ref-type="table-fn">*</xref><xref rid="t003fn003" ref-type="table-fn">†</xref> 248 (199–469)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Valine (umol/l)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">198 ± 21 177 (177–239)</td>
+<td align="left" rowspan="1" colspan="1">151 ± 8 151 (138–165)</td>
+<td align="left" rowspan="1" colspan="1">207 ± 32 199 (155–266)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">184 ± 58 140 (104–307)</td>
+<td align="left" rowspan="1" colspan="1">464 ± 33<xref rid="t003fn002" ref-type="table-fn">*</xref><xref rid="t003fn003" ref-type="table-fn">†</xref> 463 (401–528)</td>
+<td align="left" rowspan="1" colspan="1">670 ± 143<xref rid="t003fn002" ref-type="table-fn">*</xref><xref rid="t003fn003" ref-type="table-fn">†</xref> 542 (504–963)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BCAA (umol/l)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">118 ± 13 109 (100–144)</td>
+<td align="left" rowspan="1" colspan="1">89 ± 7 90 (76–100)</td>
+<td align="left" rowspan="1" colspan="1">128 ± 21 124 (95–166)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">107 ± 37 80 (56–185)</td>
+<td align="left" rowspan="1" colspan="1">316 ± 33<xref rid="t003fn002" ref-type="table-fn">*</xref><xref rid="t003fn003" ref-type="table-fn">†</xref> 308 (259–381)</td>
+<td align="left" rowspan="1" colspan="1">439 ± 106<xref rid="t003fn002" ref-type="table-fn">*</xref><xref rid="t003fn003" ref-type="table-fn">†</xref> 347 (312–659)</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t003fn001"><p>Values are means ± SE and median (1<sup>st</sup> quartile—3<sup>rd</sup> quartile); Time 0, prior to the initiation of any infusions; Basal Period, infusion of saline (Control, N = 3) or branched-chain amino acids (BCAA, N = 4); Hyperinsulinemic-euglycemic Clamp, infusion of 80 mU/m<sup>2</sup>/min insulin together with variable rate of 20% dextrose to maintain the plasma glucose concentrations at those measured at the end of the Basal Period.</p></fn>
+<fn id="t003fn002"><p>*Statistically different compared to Time 0 (<italic>P</italic> ≤0.05)</p></fn>
+<fn id="t003fn003"><p>†Statistically different between Control and BCAA groups (<italic>P</italic> ≤0.05).</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>Plasma glucose concentrations in the 40U and 80U experiments are depicted in Tables <xref rid="pone.0120049.t004" ref-type="table">4</xref> and <xref rid="pone.0120049.t005" ref-type="table">5</xref>, respectively. In the 40U experiment, although no statistically significant differences were found in plasma glucose concentration across the three study periods in Control, there was a trend for significant difference in the BCAA group (<italic>P</italic> &lt;0.07), which was associated with a trend for lower plasma glucose concentration in the basal period when compared to Time 0 (<italic>P</italic> &lt;0.06). There were no differences in the plasma glucose concentration between groups at any of the study periods (<italic>P</italic> &gt;0.05) in the 40U experiment. There were no differences in plasma glucose concentrations in either the Control or the BCAA group overtime in the 80U experiment, and no differences were detected either between groups at any of the study periods (<italic>P</italic> &gt;0.05).</p>
+<table-wrap id="pone.0120049.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0120049.t004</object-id>
+<label>Table 4</label> <caption><title>Plasma glucose and insulin concentrations in the study associated with the infusion of insulin at 40 mU/m<sup>2</sup>/min.</title></caption>
+<alternatives>
+<graphic id="pone.0120049.t004g" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0120049.t004" xlink:type="simple"/>
+<table>
+<colgroup span="1">
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"/>
+<th colspan="3" align="center" rowspan="1">Study Period</th>
+</tr>
+<tr>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1">Time 0</th>
+<th align="left" rowspan="1" colspan="1">Basal Period</th>
+<th align="left" rowspan="1" colspan="1">Hyperinsulinemic-euglycemic Clamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Glucose (mg/dl)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">87.4 ± 2.7 89.1 (81.5–92.2)</td>
+<td align="left" rowspan="1" colspan="1">88.2 ± 1.9 87.4 (84.7–92.1)</td>
+<td align="left" rowspan="1" colspan="1">91.3 ± 8.0 87.5 (78.9–105.5)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">90.4 ± 1.7 90.7 (86.7–94.0)</td>
+<td align="left" rowspan="1" colspan="1">84.1 ± 2.4 85.3 (79.4–88.3)</td>
+<td align="left" rowspan="1" colspan="1">85.0 ± 3.1 82.3 (79.4–92.1)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Insulin (uIU/ml)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">5.2 ± 0.6 4.9 (4.1–6.6)</td>
+<td align="left" rowspan="1" colspan="1">6.0 ± 1.8 4.6 (2.4–10.2)</td>
+<td align="left" rowspan="1" colspan="1">50.3 ± 4.0<xref rid="t004fn002" ref-type="table-fn">*</xref> 48.5 (42.5–58.9)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">4.6 ± 1.2 3.6 (2.8–6.8)</td>
+<td align="left" rowspan="1" colspan="1">6.3 ± 1.3 5.8 (3.8–9.0)</td>
+<td align="left" rowspan="1" colspan="1">51.2 ± 2.5<xref rid="t004fn002" ref-type="table-fn">*</xref> 48.3 (46.7–57.2)</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t004fn001"><p>Values are means ± SE and median (1<sup>st</sup> quartile—3<sup>rd</sup> quartile); Time 0, prior to the initiation of any infusions; Basal Period, infusion of saline (Control, N = 5) or branched-chain amino acids (BCAA, N = 5); Hyperinsulinemic-euglycemic Clamp, infusion of 40 mU/m<sup>2</sup>/min insulin together with variable rate of 20% dextrose to maintain the plasma glucose concentrations at those measured at the end of the Basal Period;</p></fn>
+<fn id="t004fn002"><p>*<italic>P</italic> ≤0.05 when compared to Time 0 and Basal Period.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<table-wrap id="pone.0120049.t005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0120049.t005</object-id>
+<label>Table 5</label> <caption><title>Plasma glucose and insulin concentrations in the study associated with the infusion of insulin at 80 mU/m<sup>2</sup>/min.</title></caption>
+<alternatives>
+<graphic id="pone.0120049.t005g" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0120049.t005" xlink:type="simple"/>
+<table>
+<colgroup span="1">
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"/>
+<th colspan="3" align="center" rowspan="1">Study Period</th>
+</tr>
+<tr>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1">Time 0</th>
+<th align="left" rowspan="1" colspan="1">Basal Period</th>
+<th align="left" rowspan="1" colspan="1">Hyperinsulinemic-euglycemic Clamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Glucose (mg/dl)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">78.3 ± 0.5 78.3 (77.5–79.1)</td>
+<td align="left" rowspan="1" colspan="1">81.0 ± 0.8 81.7 (79.5–81.9)</td>
+<td align="left" rowspan="1" colspan="1">92.5 ± 7.8 85.3 (84.1–108.0)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">78.8 ± 2.5 77.3 (75.1–84.0)</td>
+<td align="left" rowspan="1" colspan="1">72.5 ± 2.8 71.4 (67.9–78.4)</td>
+<td align="left" rowspan="1" colspan="1">80.3 ± 4.9 80.7 (71.2–89.1)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Insulin (uIU/ml)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    Control</td>
+<td align="left" rowspan="1" colspan="1">3.1 ± 0.8 2.9 (1.9–4.6)</td>
+<td align="left" rowspan="1" colspan="1">5.0 ± 2.1 5.4 (1.3–8.5)</td>
+<td align="left" rowspan="1" colspan="1">91.9 ± 10.8<xref rid="t005fn003" ref-type="table-fn"><sup>&amp;</sup></xref> 101.1 (70.4–104.1)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">    BCAA</td>
+<td align="left" rowspan="1" colspan="1">3.0 ± 0.7 2.8 (1.9–4.4)</td>
+<td align="left" rowspan="1" colspan="1">4.6 ± 0.9 4.8 (2.8–6.3)</td>
+<td align="left" rowspan="1" colspan="1">117.2 ± 7.0<xref rid="t005fn002" ref-type="table-fn">*</xref> 119.9 (103.2–128.6)</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t005fn001"><p>Values are means ± SE and median (1<sup>st</sup> quartile—3<sup>rd</sup> quartile); Time 0, prior to the initiation of any infusions; Basal Period, infusion of saline (Control, N = 3) or branched-chain amino acids (BCAA, N = 4); Hyperinsulinemic-euglycemic Clamp, infusion of 80 mU/m<sup>2</sup>/min insulin together with variable rate of 20% dextrose to maintain the plasma glucose concentrations at those measured at the end of the Basal Period;</p></fn>
+<fn id="t005fn002"><p>*<italic>P</italic> ≤0.05 when compared to Time 0 and Basal Period</p></fn>
+<fn id="t005fn003"><p><sup>&amp;</sup><italic>P</italic> = 0.09 when compared to Time 0 and Basal Period</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>As expected based on the experimental design, plasma insulin concentrations increased in both the Control and BCAA groups, and in both the 40U and 80U experiments during the hyperinsulinemic-euglycemic clamp. In the 40U experiment, insulin infusion during the hyperinsulinemic-euglycemic clamp significantly increased the plasma insulin concentrations in both the Control and BCAA group compared to basal period and Time 0 (<xref rid="pone.0120049.t004" ref-type="table">Table 4</xref>). Plasma insulin concentrations increased also in the 80U experiment during the hyperinsulinemic-euglycemic clamp relative to the concentrations in the two other study periods, and in both the Control and BCAA group (<xref rid="pone.0120049.t005" ref-type="table">Table 5</xref>).</p>
+</sec>
+<sec id="sec015">
+<title>Whole-body glucose disposal and endogenous glucose production</title>
+<p>In the basal period, whole-body GDR and EGP were not different between the two groups in either the 40U or 80U experiments (<italic>P</italic> &gt; 0.05). Further, there were no differences in hepatic insulin sensitivity (i.e., product of EGP and insulin concentration) in the basal period between the Control (62.9 (25.0–124.9)) and BCAA (53.6 (34.7–85.4)) groups when data from both the 40U and 80U experiments were pooled together (<italic>P &gt;</italic> 0.05). During insulin infusion whole-body GDR increased in both the Control and BCAA groups, and in both the 40U and 80U experiments and as depicted in <xref rid="pone.0120049.g002" ref-type="fig">Fig. 2</xref>. At the same time, EGP decreased in the Control group during insulin infusion and the same response was also observed in the presence of increased plasma BCAA concentrations, and in both the 40U and 80U experiments (<xref rid="pone.0120049.g002" ref-type="fig">Fig. 2</xref>). The differences in GDR and EGP resulting from the insulin infusion in the Control group in the 80U experiment did not reach the stated statistical significance likely due to the limited number of subjects studied (N = 3; <xref rid="pone.0120049.g002" ref-type="fig">Fig. 2C</xref>).</p>
+<fig id="pone.0120049.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0120049.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Plasma glucose turnover.</title>
+<p>Rates of endogenous glucose production (EGP) and whole-body glucose disposal (GDR) in the basal period (i.e., Basal) and following insulin infusion (i.e., Insulin). Insulin was infused at either 40 mU/m<sup>2</sup>/min in a control group (A) and a group with increased plasma branched-chain amino acid concentrations (B) or 80 mU/m<sup>2</sup>/min in a control group (C) and a group with increased plasma branched-chain amino acid concentrations (D). Boxes describe interquartile range (IQR; 1<sup>st</sup> quartile—3<sup>rd</sup> quartile) with the horizontal line in the box representing the median value. <italic>P</italic> values are for the comparison of the corresponding medians.</p>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0120049.g002" position="float" xlink:type="simple"/>
+</fig>
+<p>Our main end-points were the changes in insulin-mediated whole-body GDR and EGP. <xref rid="pone.0120049.g003" ref-type="fig">Fig. 3</xref> depicts these changes in the Control and BCAA groups, and in the 40U (<xref rid="pone.0120049.g003" ref-type="fig">Fig. 3A</xref>) and 80U (<xref rid="pone.0120049.g003" ref-type="fig">Fig. 3B</xref>) experiments. These changes in whole-body GDR or EGP were not different between the Control and BCAA group in either the 40U or 80U experiment (<italic>P &gt;</italic> 0.05). These percent changes between the Control and BCAA groups were also not different in either of the two experiments (<italic>P &gt;</italic> 0.05) when the GDR and EGP were adjusted to the prevailing plasma insulin concentrations.</p>
+<fig id="pone.0120049.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0120049.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Insulin-stimulated changes in plasma glucose turnover.</title>
+<p>Changes from the basal period in the rates of endogenous glucose production (EGP) and whole-body glucose disposal (GDR) as a result of the insulin infusion at either 40 mU/m<sup>2</sup>/min (A) or 80 mU/m<sup>2</sup>/min (B) in the control group (Control) and the group with the increased plasma branched-chain amino acid (BCAA) concentrations. Boxes describe interquartile range (IQR; 1<sup>st</sup> quartile—3<sup>rd</sup> quartile) with the horizontal line in the box representing the median value.</p>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0120049.g003" position="float" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec016">
+<title>Glucose metabolic clearance</title>
+<p>In the basal period, the glucose metabolic clearance was not different between the two groups in either the 40U or 80U experiments (<italic>P</italic> &gt; 0.05). During insulin infusion in the 40U experiment, the rate of glucose metabolic clearance (ml/kg/min) increased in the Control from its basal value of 2.9 ± 0.5, 2.5 (2.2–3.8) to 8.8 ± 0.5, 8.6 (8.0–9.6) (<italic>P &lt;</italic> 0.05), and in the BCAA group from its basal value of 2.5 ± 0.1, 2.4 (2.3–2.7) to 7.2 ± 1.2, 7.1 (4.7–9.8) (<italic>P &lt;</italic> 0.05), with no difference in the insulin-mediated glucose metabolic clearance between groups (<italic>P</italic> &gt; 0.05). Also, in the 40U experiment, the increase (%) in glucose metabolic clearance due to the insulin infusion in the BCAA group (192.3 ± 57.0, 152.0 (85.6–319.2)) was not different from that in the Control (228.7 ± 42.4, 254.0 (147.6–297.2); <italic>P &gt;</italic> 0.05). After adjusting for the prevailing plasma insulin concentrations, the difference in glucose metabolic clearance rate percent change between groups became even smaller when compared to that of the insulin-unadjusted values (data not shown).</p>
+<p>During insulin infusion in the 80U experiment, the rate of glucose metabolic clearance (ml/kg/min) increased in the Control from its basal value of 2.6 ± 0.2, 2.4 (2.4–3.0) to 13.5 ± 1.1, 13.7 (11.5–15.2) (<italic>P =</italic> 0.09), and in the BCAA group from its basal value of 2.6 ± 0.2, 2.6 (2.2–2.9) to 15.4 ± 1.5, 14.6 (13.0–18.6) (<italic>P</italic> = 0.05), with no difference in the insulin-mediated glucose metabolic clearance between groups (<italic>P</italic> &gt; 0.05). Also, in the 80U experiment, the increase (%) in glucose metabolic clearance due to the insulin infusion in the BCAA group (506.7 ± 86.3, 481.5 (354.7–684.0)) was not different from that in the Control (416.0 ± 26.4, 405.1 (376.7–466.2); <italic>P &gt;</italic> 0.05). After adjusting for the prevailing plasma insulin concentrations, the difference in glucose metabolic clearance rate percent change between groups became even smaller when compared to that of the insulin-unadjusted values (data not shown).</p>
+</sec>
+</sec>
+<sec id="sec017" sec-type="conclusions">
+<title>Discussion</title>
+<p>The role of increased plasma BCAA in modifying insulin sensitivity has been a topic of heavy debate. This is the first study to directly evaluate the effects of short-term exposure to increased BCAA levels on plasma glucose turnover in humans. The primary end-point of the study was the change in whole-body glucose disposal, reflecting primarily insulin sensitivity of glucose metabolism in muscle. Our results show that short-term exposure to increased plasma BCAA concentrations does not modify the insulin sensitivity of glucose metabolism in healthy, young humans.</p>
+<p>By design, the BCAA infusion resulted in more than 2.5-fold increase in the concentration of plasma BCAA for a period of 6 hours, and at levels above those observed in either obesity [<xref rid="pone.0120049.ref001" ref-type="bibr">1</xref>,<xref rid="pone.0120049.ref004" ref-type="bibr">4</xref>] or the fed state associated with the ingestion of high protein meal [<xref rid="pone.0120049.ref022" ref-type="bibr">22</xref>]. We found that increasing the plasma insulin concentrations completely suppressed the EGP both in the control and BCAA groups. These findings agree with previous findings describing the response of EGP to insulin in association with the infusion of a mixture of amino acids that increased the plasma concentration of total amino acids (i.e., BCAA as well as the concentrations of essential and non-essential amino acids) [<xref rid="pone.0120049.ref010" ref-type="bibr">10</xref>,<xref rid="pone.0120049.ref011" ref-type="bibr">11</xref>,<xref rid="pone.0120049.ref023" ref-type="bibr">23</xref>]. It is recognized, however, that the present study, as well as the previous studies, may be limited in their ability to distinguish differences in EGP in the presence of increased plasma amino acids when plasma insulin concentrations are raised at levels that result in complete suppression of EGP. The product of EGP and plasma insulin concentration, which was used as an additional measure in evaluating hepatic insulin sensitivity [<xref rid="pone.0120049.ref021" ref-type="bibr">21</xref>] in the basal period and at a time when plasma insulin levels were relatively low in both the control and BCAA groups, indicated no differences in hepatic insulin sensitivity between the two groups. Therefore, the overall findings of the present studies suggest that short-term exposure to increased plasma BCAA concentrations does not impair insulin action in the liver in healthy young adults.</p>
+<p>Although not a consistent finding [<xref rid="pone.0120049.ref024" ref-type="bibr">24</xref>], previous reports [<xref rid="pone.0120049.ref010" ref-type="bibr">10</xref>,<xref rid="pone.0120049.ref011" ref-type="bibr">11</xref>] have documented decreased insulin-stimulated whole-body GDR in association with an increase in the plasma concentration of total amino acids. Given that the increase in the plasma BCAA concentration in the present studies was comparable to that achieved in the previous investigations, the lack of a specific effect of increased plasma BCAA on decreasing whole-body GDR during insulin infusion in the present studies indicates that increased concentrations of other plasma amino acids, rather than BCAA alone, have greater role in impairing whole-body GDR. According to relevant evidence, decreased plasma glucose clearance in diabetic animals (i.e., pigs) during insulin stimulation is observed in parallel with increased clearance of almost all of the non-essential amino acids (NEAA), but not any of the BCAA [<xref rid="pone.0120049.ref025" ref-type="bibr">25</xref>]. This suggests that, among the plasma amino acids, NEAA metabolism may have greater role than the BCAA metabolism in inhibiting glucose disposal in skeletal muscle. <italic>In vitro</italic> work with muscle cells suggests that among the BCAA, although leucine had an inhibitory effect on insulin-mediated glucose uptake, the same effect was not observed with isoleucine or valine [<xref rid="pone.0120049.ref026" ref-type="bibr">26</xref>]. However, other essential amino acids (EAA) (i.e., methionine, threonine) and NEAA (i.e., cysteine, tyrosine) were potent inhibitors of the insulin-mediated muscle glucose uptake [<xref rid="pone.0120049.ref026" ref-type="bibr">26</xref>]. Recent studies in humans have shown that increased plasma concentrations of EAA alone decrease insulin sensitivity <italic>in vivo</italic> [<xref rid="pone.0120049.ref027" ref-type="bibr">27</xref>], suggesting a primarily role of particular amino acids within the EAA in decreasing insulin-mediated glucose disposal. However, Smith et al [<xref rid="pone.0120049.ref028" ref-type="bibr">28</xref>] have also recently shown in humans that, although increase in plasma concentrations of total amino acids following whey protein ingestion decreases insulin sensitivity, increase in leucine levels alone does not decrease insulin sensitivity. The present studies are in line with the latter finding and extent that evidence to all three BCAA, and by showing that increase in plasma total BCAA concentrations in young healthy subjects does not impair insulin sensitivity in muscle.</p>
+<p>During the traditional hyperinsulinemic-euglycemic clamp, the insulin-mediated decrease in plasma total amino acid concentrations, including BCAA, is associated with greater peripheral glucose disposal than that seen when the plasma amino acid levels are maintained at their basal levels [<xref rid="pone.0120049.ref014" ref-type="bibr">14</xref>,<xref rid="pone.0120049.ref029" ref-type="bibr">29</xref>]. This creates a circumstance during which the effects of increased plasma amino acids on glucose turnover are compared to a rather non-physiological circumstance where the plasma amino acid concentrations are considerably below their basal levels. In the present study, the plasma total BCAA concentration was maintained during the insulin infusion in the control group in a way that it was not different from that measured in the basal/postabsortive levels. However, in all of the previous reports the plasma BCAA concentrations decreased more than 50% relative to that at the basal/postabsorptive conditions during the insulin infusion creating a circumstance of a non-physiological “control” [<xref rid="pone.0120049.ref010" ref-type="bibr">10</xref>,<xref rid="pone.0120049.ref011" ref-type="bibr">11</xref>,<xref rid="pone.0120049.ref023" ref-type="bibr">23</xref>]. Therefore, the difference in whole-body GDR between amino acid infusion and control in these previous reports [<xref rid="pone.0120049.ref010" ref-type="bibr">10</xref>,<xref rid="pone.0120049.ref011" ref-type="bibr">11</xref>,<xref rid="pone.0120049.ref023" ref-type="bibr">23</xref>] may relate in part to the greater rate of glucose disposal in the “control” experiments. By maintaining the overall plasma BCAA concentrations at the postabsorptive levels during the insulin infusion in the present study, we were able to clearly describe the role of the increase, per se, of the plasma BCAA concentrations on plasma glucose turnover.</p>
+<p>Given the lack of an effect of increased plasma BCAA on inducing insulin resistance in the present study, the negative correlation reported previously between plasma BCAA and insulin sensitivity in humans [<xref rid="pone.0120049.ref007" ref-type="bibr">7</xref>] may reflect impaired ability to metabolize BCAA in insulin-resistant individuals. We have previously shown that the abundance of enzymes involved in the oxidation of BCAA in muscle is reduced in insulin-resistant individuals [<xref rid="pone.0120049.ref030" ref-type="bibr">30</xref>], and this can impair the utilization of BCAA leading to increased muscle and circulating BCAA levels. In addition to muscle, decreased activities or expression of key enzymes involved in BCAA catabolism in obesity/insulin-resistance have been reported in the liver and adipose tissue in animal models [<xref rid="pone.0120049.ref031" ref-type="bibr">31</xref>,<xref rid="pone.0120049.ref032" ref-type="bibr">32</xref>] and in the visceral fat in humans [<xref rid="pone.0120049.ref033" ref-type="bibr">33</xref>]. Increased concentrations of BCAA in Type 2 Diabetes have also been directly linked to decreased clearance of these amino acids from plasma [<xref rid="pone.0120049.ref034" ref-type="bibr">34</xref>]. There is previously reviewed evidence indicating that in a metabolic environment where free fatty acid concentrations are increased, which is a general observation in obesity/insulin-resistance, branched-chain ketoacid dehydrogenase activity is decreased [<xref rid="pone.0120049.ref035" ref-type="bibr">35</xref>]. Such observations can explain the negative correlation between plasma BCAA and insulin sensitivity, and where increased concentrations of BCAA are secondary to decreased ability to metabolize BCAA. Under these circumstances, and given that increased BCAA, per se, do not induce insulin resistance, increased plasma BCAA levels may be a “metabolic marker” of the metabolic environment associated with obesity and insulin resistance rather than a cause of insulin resistance.</p>
+<p>It is noted that, in parallel with arguments implicating plasma BCAA as negative regulator of glucose metabolism, there is evidence arguing about a positive role of BCAA in the regulation of glucose metabolism [<xref rid="pone.0120049.ref036" ref-type="bibr">36</xref>–<xref rid="pone.0120049.ref042" ref-type="bibr">42</xref>]. Increased plasma BCAA concentrations, secondary to disruption of genes implicated in BCAA catabolism in experimental animal models, results in significant improvements in insulin sensitivity [<xref rid="pone.0120049.ref039" ref-type="bibr">39</xref>]. Supplementation with BCAA also improved plasma glucose homeostasis under a variety of abnormal metabolic conditions [<xref rid="pone.0120049.ref040" ref-type="bibr">40</xref>]. In an acute setting, orally administered isoleucine in normal/healthy mice improved glucose tolerance in the absence of any changes in plasma insulin concentrations [<xref rid="pone.0120049.ref040" ref-type="bibr">40</xref>], suggesting improved insulin sensitivity. Similar findings were obtained in studies with rats [<xref rid="pone.0120049.ref043" ref-type="bibr">43</xref>]. In the later report, however, separate studies with oral administration of leucine or valine did not result in improvements in insulin sensitivity. These latter findings are in line with the lack of an overall effect of the BCAA on altering insulin sensitivity in the present study in humans.</p>
+<p>The parallel design employed in association with the total number of subjects studied per experiment may be considered limitations of the present study. However, and in addition to studying subjects that were fairly similar in terms of physiology and metabolic parameters, we compared differences in the changes, rather than direct differences, in insulin-stimulated glucose turnover between groups. Furthermore, the calculated sample size required to describe statistically significant difference between the control and BCAA groups across all data collected for the main-end point (i.e., GDR in <xref rid="pone.0120049.g003" ref-type="fig">Fig. 3</xref>) is 316 subjects per group (power value, 0.8; alpha value, 0.05). This is not surprising given that the overall difference in GDR between groups in the present study is less than 10%, and considerably smaller than the decrease (i.e., 25%) in GDR resulting from the elevation in total amino acid concentrations [<xref rid="pone.0120049.ref011" ref-type="bibr">11</xref>]. Smaller change in insulin-stimulated GDR in the present study when compared to that in the previous report [<xref rid="pone.0120049.ref011" ref-type="bibr">11</xref>], despite comparable increase in the concentration of BCAA, points in the direction for a major role of amino acids other that the total plasma BCAA in impairing insulin-stimulated GDR.</p>
+<p>We studied young (i.e., 18–25 years old) healthy subjects, thus our findings do not address any effects of age or related metabolic conditions, such as obesity or diabetes, on the measured metabolic responses. Older/middle-age adults with Type 2 Diabetes have increased plasma BCAA concentrations when compared to their age-matched healthy controls [<xref rid="pone.0120049.ref007" ref-type="bibr">7</xref>], whereas adolescents with Type 2 Diabetes have in fact lower plasma BCAA concentrations when compared to healthy controls [<xref rid="pone.0120049.ref044" ref-type="bibr">44</xref>]. Furthermore, although there is a strong negative correlation between BCAA levels and insulin sensitivity in middle-age adults [<xref rid="pone.0120049.ref007" ref-type="bibr">7</xref>], no such correlation has been observed in adolescents [<xref rid="pone.0120049.ref044" ref-type="bibr">44</xref>]. Therefore, the lack of an effect of the increased plasma BCAA concentrations in inducing insulin resistance in the present study may be related to the young population studied. It is possible that in the metabolic background associated with type 2 Diabetes [<xref rid="pone.0120049.ref007" ref-type="bibr">7</xref>], or increased dietary fat intake [<xref rid="pone.0120049.ref004" ref-type="bibr">4</xref>], increased plasma BCAA may have distinct effects on plasma glucose turnover.</p>
+<p>Increasing the plasma BCAA concentrations is a well-characterized phenomenon enhancing muscle protein anabolism in humans [<xref rid="pone.0120049.ref012" ref-type="bibr">12</xref>,<xref rid="pone.0120049.ref013" ref-type="bibr">13</xref>]. Furthermore, acute increase in the plasma BCAA concentrations appears to enhance muscle mitochondria function [<xref rid="pone.0120049.ref045" ref-type="bibr">45</xref>]. Our findings suggest that BCAA can be safely administered to improve muscle metabolic responses in healthy individuals without impairing glucose metabolism. Therefore, the findings of the present study become of great physiological and clinical importance when the acute effects of BCAA are considered in the context of their overall effects on muscle metabolism in humans.</p>
+<p>In conclusion, acute increase in plasma concentrations of BCAA in healthy young subjects does not cause insulin resistance to glucose metabolism. The results of the present study are limited to short-term elevation in plasma BCAA levels. The effects of chronic elevation in the plasma BCAA levels on plasma glucose turnover in humans remain to be evaluated.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>The authors thank the nurses at the Clinical Research Unit at Arizona State University, as well as Christine Roberts, PhD, Clinical Research Unit Director. We also thank Ken Kirschner, MS, Arizona State University, for skillful technical assistance with the GC/MS measurements, Kathryn Corbell at Midwestern University for assistant with the HPLC analysis of the plasma amino acids, and Yu-Hui H. Chang, PhD and Qing Wu, PhD, at Mayo Clinic in Arizona Section of Biostatistics, for assistance with the statistical analyses.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0120049.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Felig</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Marliss</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Cahill</surname> <given-names>GF</given-names> <suffix>Jr.</suffix></name> (<year>1969</year>) <article-title>Plasma amino acid levels and insulin secretion in obesity</article-title>. <source>N Engl J Med</source> <volume>281</volume>: <fpage>811</fpage>–<lpage>816</lpage>. <object-id pub-id-type="pmid">5809519</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Adibi</surname> <given-names>SA</given-names></name> (<year>1968</year>) <article-title>Influence of dietary deprivations on plasma concentration of free amino acids of man</article-title>. <source>J Appl Physiol</source> <volume>25</volume>: <fpage>52</fpage>–<lpage>57</lpage>. <object-id pub-id-type="pmid">5661154</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Caballero</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Finer</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Wurtman</surname> <given-names>RJ</given-names></name> (<year>1988</year>) <article-title>Plasma amino acids and insulin levels in obesity: response to carbohydrate intake and tryptophan supplements</article-title>. <source>Metabolism</source> <volume>37</volume>: <fpage>672</fpage>–<lpage>676</lpage>. <object-id pub-id-type="pmid">3290625</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Newgard</surname> <given-names>CB</given-names></name>, <name name-style="western"><surname>An</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Bain</surname> <given-names>JR</given-names></name>, <name name-style="western"><surname>Muehlbauer</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Stevens</surname> <given-names>RD</given-names></name>, <name name-style="western"><surname>Lien</surname> <given-names>LF</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>A branched-chain amino acid-related metabolic signature that differentiates obese and lean humans and contributes to insulin resistance</article-title>. <source>Cell Metab</source> <volume>9</volume>: <fpage>311</fpage>–<lpage>326</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cmet.2009.02.002" xlink:type="simple">10.1016/j.cmet.2009.02.002</ext-link></comment> <object-id pub-id-type="pmid">19356713</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McCormack</surname> <given-names>SE</given-names></name>, <name name-style="western"><surname>Shaham</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>McCarthy</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Deik</surname> <given-names>AA</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>TJ</given-names></name>, <name name-style="western"><surname>Gerszten</surname> <given-names>RE</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Circulating branched-chain amino acid concentrations are associated with obesity and future insulin resistance in children and adolescents</article-title>. <source>Pediatr Obes</source> <volume>8</volume>: <fpage>52</fpage>–<lpage>61</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.2047-6310.2012.00087.x" xlink:type="simple">10.1111/j.2047-6310.2012.00087.x</ext-link></comment> <object-id pub-id-type="pmid">22961720</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Solini</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Bonora</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Bonadonna</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Castellino</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>DeFronzo</surname> <given-names>RA</given-names></name> (<year>1997</year>) <article-title>Protein metabolism in human obesity: relationship with glucose and lipid metabolism and with visceral adipose tissue</article-title>. <source>J Clin Endocrinol Metab</source> <volume>82</volume>: <fpage>2552</fpage>–<lpage>2558</lpage>. <object-id pub-id-type="pmid">9253333</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Thalacker-Mercer</surname> <given-names>AE</given-names></name>, <name name-style="western"><surname>Ingram</surname> <given-names>KH</given-names></name>, <name name-style="western"><surname>Guo</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Ilkayeva</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Newgard</surname> <given-names>CB</given-names></name>, <name name-style="western"><surname>Garvey</surname> <given-names>WT</given-names></name> (<year>2014</year>) <article-title>BMI, RQ, diabetes, and sex affect the relationships between amino acids and clamp measures of insulin action in humans</article-title>. <source>Diabetes</source> <volume>63</volume>: <fpage>791</fpage>–<lpage>800</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2337/db13-0396" xlink:type="simple">10.2337/db13-0396</ext-link></comment> <object-id pub-id-type="pmid">24130332</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Menge</surname> <given-names>BA</given-names></name>, <name name-style="western"><surname>Schrader</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Ritter</surname> <given-names>PR</given-names></name>, <name name-style="western"><surname>Ellrichmann</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Uhl</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Schmidt</surname> <given-names>WE</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Selective amino acid deficiency in patients with impaired glucose tolerance and type 2 diabetes</article-title>. <source>Regul Pept</source> <volume>160</volume>: <fpage>75</fpage>–<lpage>80</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.regpep.2009.08.001" xlink:type="simple">10.1016/j.regpep.2009.08.001</ext-link></comment> <object-id pub-id-type="pmid">19695292</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Laferrere</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Reilly</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Arias</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Swerdlow</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Gorroochurn</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Bawa</surname> <given-names>B</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Differential metabolic impact of gastric bypass surgery versus dietary intervention in obese diabetic subjects despite identical weight loss</article-title>. <source>Sci Transl Med</source> <volume>3</volume>: <fpage>80re82</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/scitranslmed.3002043" xlink:type="simple">10.1126/scitranslmed.3002043</ext-link></comment> <object-id pub-id-type="pmid">21525399</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Krebs</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Krssak</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Bernroider</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Anderwald</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Brehm</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Meyerspeer</surname> <given-names>M</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>Mechanism of amino acid-induced skeletal muscle insulin resistance in humans</article-title>. <source>Diabetes</source> <volume>51</volume>: <fpage>599</fpage>–<lpage>605</lpage>. <object-id pub-id-type="pmid">11872656</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tremblay</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Krebs</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Dombrowski</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Brehm</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Bernroider</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Roth</surname> <given-names>E</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Overactivation of S6 kinase 1 as a cause of human insulin resistance during increased amino acid availability</article-title>. <source>Diabetes</source> <volume>54</volume>: <fpage>2674</fpage>–<lpage>2684</lpage>. <object-id pub-id-type="pmid">16123357</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Matthews</surname> <given-names>DE</given-names></name> (<year>2005</year>) <article-title>Observations of branched-chain amino acid administration in humans</article-title>. <source>J Nutr</source> <volume>135</volume>: <fpage>1580S</fpage>–<lpage>1584S</lpage>. <object-id pub-id-type="pmid">15930473</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fujita</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Volpi</surname> <given-names>E</given-names></name> (<year>2006</year>) <article-title>Amino acids and muscle loss with aging</article-title>. <source>J Nutr</source> <volume>136</volume>: <fpage>277S</fpage>–<lpage>280S</lpage>. <object-id pub-id-type="pmid">16365098</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Flakoll</surname> <given-names>PJ</given-names></name>, <name name-style="western"><surname>Kulaylat</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Frexes-Steed</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Hill</surname> <given-names>JO</given-names></name>, <name name-style="western"><surname>Abumrad</surname> <given-names>NN</given-names></name> (<year>1991</year>) <article-title>Amino acids enhance insulin resistance to exogenous glucose infusion in overnight-fasted humans</article-title>. <source>JPEN J Parenter Enteral Nutr</source> <volume>15</volume>: <fpage>123</fpage>–<lpage>127</lpage>. <object-id pub-id-type="pmid">2051553</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Beckett</surname> <given-names>PR</given-names></name>, <name name-style="western"><surname>Hardin</surname> <given-names>DS</given-names></name>, <name name-style="western"><surname>Davis</surname> <given-names>TA</given-names></name>, <name name-style="western"><surname>Nguyen</surname> <given-names>HV</given-names></name>, <name name-style="western"><surname>Wray-Cahen</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Copeland</surname> <given-names>KC</given-names></name> (<year>1996</year>) <article-title>Spectrophometric assay for measuring branched-chain amino acid concentrations: application for measuring the sensitivity of protein metabolism to insulin</article-title>. <source>Anal Biochem</source> <volume>240</volume>: <fpage>48</fpage>–<lpage>53</lpage>. <object-id pub-id-type="pmid">8811878</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Carroll</surname> <given-names>CC</given-names></name>, <name name-style="western"><surname>Fluckey</surname> <given-names>JD</given-names></name>, <name name-style="western"><surname>Williams</surname> <given-names>RH</given-names></name>, <name name-style="western"><surname>Sullivan</surname> <given-names>DH</given-names></name>, <name name-style="western"><surname>Trappe</surname> <given-names>TA</given-names></name> (<year>2005</year>) <article-title>Human soleus and vastus lateralis muscle protein metabolism with an amino acid infusion</article-title>. <source>Am J Physiol Endocrinol Metab</source> <volume>288</volume>: <fpage>E479</fpage>–<lpage>485</lpage>. <object-id pub-id-type="pmid">15507532</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref017"><label>17</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Wolfe</surname> <given-names>RR</given-names></name> (<year>1992</year>) <chapter-title>Radioactive and stable isotope tracers in biomedicine</chapter-title>. <publisher-loc>New York</publisher-loc>: <publisher-name>Wiley-Liss</publisher-name>.</mixed-citation></ref>
+<ref id="pone.0120049.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Steele</surname> <given-names>R</given-names></name> (<year>1959</year>) <article-title>Influences of glucose loading and of injected insulin on hepatic glucose output</article-title>. <source>Ann N Y Acad Sci</source> <volume>82</volume>: <fpage>420</fpage>–<lpage>430</lpage>. <object-id pub-id-type="pmid">13833973</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Romijn</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Coyle</surname> <given-names>EF</given-names></name>, <name name-style="western"><surname>Sidossis</surname> <given-names>LS</given-names></name>, <name name-style="western"><surname>Gastaldelli</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Horowitz</surname> <given-names>JF</given-names></name>, <name name-style="western"><surname>Endert</surname> <given-names>E</given-names></name>, <etal>et al</etal>. (<year>1993</year>) <article-title>Regulation of endogenous fat and carbohydrate metabolism in relation to exercise intensity and duration</article-title>. <source>Am J Physiol</source> <volume>265</volume>: <fpage>E380</fpage>–<lpage>391</lpage>. <object-id pub-id-type="pmid">8214047</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Matsuda</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>DeFronzo</surname> <given-names>RA</given-names></name> (<year>1999</year>) <article-title>Insulin sensitivity indices obtained from oral glucose tolerance testing: comparison with the euglycemic insulin clamp</article-title>. <source>Diabetes Care</source> <volume>22</volume>: <fpage>1462</fpage>–<lpage>1470</lpage>. <object-id pub-id-type="pmid">10480510</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Abdul-Ghani</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Matsuda</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Balas</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>DeFronzo</surname> <given-names>RA</given-names></name> (<year>2007</year>) <article-title>Muscle and liver insulin resistance indexes derived from the oral glucose tolerance test</article-title>. <source>Diabetes Care</source> <volume>30</volume>: <fpage>89</fpage>–<lpage>94</lpage>. <object-id pub-id-type="pmid">17192339</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brand</surname> <given-names>HS</given-names></name>, <name name-style="western"><surname>Jorning</surname> <given-names>GG</given-names></name>, <name name-style="western"><surname>Chamuleau</surname> <given-names>RA</given-names></name>, <name name-style="western"><surname>Abraham-Inpijn</surname> <given-names>L</given-names></name> (<year>1997</year>) <article-title>Effect of a protein-rich meal on urinary and salivary free amino acid concentrations in human subjects</article-title>. <source>Clin Chim Acta</source> <volume>264</volume>: <fpage>37</fpage>–<lpage>47</lpage>. <object-id pub-id-type="pmid">9267701</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tessari</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Inchiostro</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Biolo</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Duner</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Nosadini</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Tiengo</surname> <given-names>A</given-names></name>, <etal>et al</etal>. (<year>1985</year>) <article-title>Hyperaminoacidaemia reduces insulin-mediated glucose disposal in healthy man</article-title>. <source>Diabetologia</source> <volume>28</volume>: <fpage>870</fpage>–<lpage>872</lpage>. <object-id pub-id-type="pmid">3910497</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Boden</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Tappy</surname> <given-names>L</given-names></name> (<year>1990</year>) <article-title>Effects of amino acids on glucose disposal</article-title>. <source>Diabetes</source> <volume>39</volume>: <fpage>1079</fpage>–<lpage>1084</lpage>. <object-id pub-id-type="pmid">1974539</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Koopmans</surname> <given-names>SJ</given-names></name>, <name name-style="western"><surname>VanderMeulen</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Wijdenes</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Corbijn</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Dekker</surname> <given-names>R</given-names></name> (<year>2011</year>) <article-title>The existence of an insulin-stimulated glucose and non-essential but not essential amino acid substrate interaction in diabetic pigs</article-title>. <source>BMC Biochem</source> <volume>12</volume>: <fpage>25</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1471-2091-12-25" xlink:type="simple">10.1186/1471-2091-12-25</ext-link></comment> <object-id pub-id-type="pmid">21605349</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tremblay</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Marette</surname> <given-names>A</given-names></name> (<year>2001</year>) <article-title>Amino acid and insulin signaling via the mTOR/p70 S6 kinase pathway. A negative feedback mechanism leading to insulin resistance in skeletal muscle cells</article-title>. <source>J Biol Chem</source> <volume>276</volume>: <fpage>38052</fpage>–<lpage>38060</lpage>. <object-id pub-id-type="pmid">11498541</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Robinson</surname> <given-names>MM</given-names></name>, <name name-style="western"><surname>Soop</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Sohn</surname> <given-names>TS</given-names></name>, <name name-style="western"><surname>Morse</surname> <given-names>DM</given-names></name>, <name name-style="western"><surname>Schimke</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Klaus</surname> <given-names>KA</given-names></name>, <etal>et al</etal>. (<year>2014</year>) <article-title>High insulin combined with essential amino acids stimulates skeletal muscle mitochondrial protein synthesis while decreasing insulin sensitivity in healthy humans</article-title>. <source>J Clin Endocrinol Metab</source> <volume>99</volume>: <fpage>E2574</fpage>–<lpage>2583</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1210/jc.2014-2736" xlink:type="simple">10.1210/jc.2014-2736</ext-link></comment> <object-id pub-id-type="pmid">25222757</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref028"><label>28</label><mixed-citation publication-type="other" xlink:type="simple">Smith GI, Yoshino J, Stromsdorfer KL, Klein SJ, Magkos F, Reeds DN, et al. (2014) Protein ingestion induces muscle insulin resistance independent of leucine-mediated mTOR activation. Diabetes.</mixed-citation></ref>
+<ref id="pone.0120049.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pisters</surname> <given-names>PW</given-names></name>, <name name-style="western"><surname>Restifo</surname> <given-names>NP</given-names></name>, <name name-style="western"><surname>Cersosimo</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Brennan</surname> <given-names>MF</given-names></name> (<year>1991</year>) <article-title>The effects of euglycemic hyperinsulinemia and amino acid infusion on regional and whole body glucose disposal in man</article-title>. <source>Metabolism</source> <volume>40</volume>: <fpage>59</fpage>–<lpage>65</lpage>. <object-id pub-id-type="pmid">1984572</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lefort</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Glancy</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Bowen</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Willis</surname> <given-names>WT</given-names></name>, <name name-style="western"><surname>Bailowitz</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>De Filippis</surname> <given-names>EA</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Increased reactive oxygen species production and lower abundance of complex I subunits and carnitine palmitoyltransferase 1B protein despite normal mitochondrial respiration in insulin-resistant human skeletal muscle</article-title>. <source>Diabetes</source> <volume>59</volume>: <fpage>2444</fpage>–<lpage>2452</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2337/db10-0174" xlink:type="simple">10.2337/db10-0174</ext-link></comment> <object-id pub-id-type="pmid">20682693</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>She</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Olson</surname> <given-names>KC</given-names></name>, <name name-style="western"><surname>Kadota</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Inukai</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Shimomura</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Hoppel</surname> <given-names>CL</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Leucine and protein metabolism in obese Zucker rats</article-title>. <source>PLoS One</source> <volume>8</volume>: <fpage>e59443</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0059443" xlink:type="simple">10.1371/journal.pone.0059443</ext-link></comment> <object-id pub-id-type="pmid">23527196</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>She</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Van Horn</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Reid</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Hutson</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Cooney</surname> <given-names>RN</given-names></name>, <name name-style="western"><surname>Lynch</surname> <given-names>CJ</given-names></name> (<year>2007</year>) <article-title>Obesity-related elevations in plasma leucine are associated with alterations in enzymes involved in branched-chain amino acid metabolism</article-title>. <source>Am J Physiol Endocrinol Metab</source> <volume>293</volume>: <fpage>E1552</fpage>–<lpage>1563</lpage>. <object-id pub-id-type="pmid">17925455</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref033"><label>33</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lackey</surname> <given-names>DE</given-names></name>, <name name-style="western"><surname>Lynch</surname> <given-names>CJ</given-names></name>, <name name-style="western"><surname>Olson</surname> <given-names>KC</given-names></name>, <name name-style="western"><surname>Mostaedi</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Ali</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>WH</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Regulation of adipose branched-chain amino acid catabolism enzyme expression and cross-adipose amino acid flux in human obesity</article-title>. <source>Am J Physiol Endocrinol Metab</source> <volume>304</volume>: <fpage>E1175</fpage>–<lpage>1187</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1152/ajpendo.00630.2012" xlink:type="simple">10.1152/ajpendo.00630.2012</ext-link></comment> <object-id pub-id-type="pmid">23512805</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref034"><label>34</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Marchesini</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Bianchi</surname> <given-names>GP</given-names></name>, <name name-style="western"><surname>Vilstrup</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Capelli</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Zoli</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Pisi</surname> <given-names>E</given-names></name> (<year>1991</year>) <article-title>Elimination of infused branched-chain amino-acids from plasma of patients with non-obese type 2 diabetes mellitus</article-title>. <source>Clin Nutr</source> <volume>10</volume>: <fpage>105</fpage>–<lpage>113</lpage>. <object-id pub-id-type="pmid">16839904</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Adams</surname> <given-names>SH</given-names></name> (<year>2011</year>) <article-title>Emerging perspectives on essential amino acid metabolism in obesity and the insulin-resistant state</article-title>. <source>Adv Nutr</source> <volume>2</volume>: <fpage>445</fpage>–<lpage>456</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3945/an.111.000737" xlink:type="simple">10.3945/an.111.000737</ext-link></comment> <object-id pub-id-type="pmid">22332087</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref036"><label>36</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yang</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Mei</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Ma</surname> <given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Leucine facilitates insulin signaling through a Galphai protein-dependent signaling pathway in hepatocytes</article-title>. <source>J Biol Chem</source> <volume>288</volume>: <fpage>9313</fpage>–<lpage>9320</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1074/jbc.M112.409409" xlink:type="simple">10.1074/jbc.M112.409409</ext-link></comment> <object-id pub-id-type="pmid">23404499</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref037"><label>37</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nagata</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Nakamura</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Wada</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Tsuji</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Tamai</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Kawachi</surname> <given-names>T</given-names></name> (<year>2013</year>) <article-title>Branched-chain amino acid intake and the risk of diabetes in a Japanese community: the Takayama study</article-title>. <source>Am J Epidemiol</source> <volume>178</volume>: <fpage>1226</fpage>–<lpage>1232</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/aje/kwt112" xlink:type="simple">10.1093/aje/kwt112</ext-link></comment> <object-id pub-id-type="pmid">24008908</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nishitani</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Matsumura</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Fujitani</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Sonaka</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Miura</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Yagasaki</surname> <given-names>K</given-names></name> (<year>2002</year>) <article-title>Leucine promotes glucose uptake in skeletal muscles of rats</article-title>. <source>Biochem Biophys Res Commun</source> <volume>299</volume>: <fpage>693</fpage>–<lpage>696</lpage>. <object-id pub-id-type="pmid">12470633</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>She</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Reid</surname> <given-names>TM</given-names></name>, <name name-style="western"><surname>Bronson</surname> <given-names>SK</given-names></name>, <name name-style="western"><surname>Vary</surname> <given-names>TC</given-names></name>, <name name-style="western"><surname>Hajnal</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Lynch</surname> <given-names>CJ</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Disruption of BCATm in mice leads to increased energy expenditure associated with the activation of a futile protein turnover cycle</article-title>. <source>Cell Metab</source> <volume>6</volume>: <fpage>181</fpage>–<lpage>194</lpage>. <object-id pub-id-type="pmid">17767905</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref040"><label>40</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ikehara</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Kawasaki</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Maezono</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Komatsu</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Konishi</surname> <given-names>A</given-names></name> (<year>2008</year>) <article-title>Acute and chronic treatment of L-isoleucine ameliorates glucose metabolism in glucose-intolerant and diabetic mice</article-title>. <source>Biol Pharm Bull</source> <volume>31</volume>: <fpage>469</fpage>–<lpage>472</lpage>. <object-id pub-id-type="pmid">18310912</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref041"><label>41</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhang</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Guo</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>LeBlanc</surname> <given-names>RE</given-names></name>, <name name-style="western"><surname>Loh</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Schwartz</surname> <given-names>GJ</given-names></name>, <name name-style="western"><surname>Yu</surname> <given-names>YH</given-names></name> (<year>2007</year>) <article-title>Increasing dietary leucine intake reduces diet-induced obesity and improves glucose and cholesterol metabolism in mice via multimechanisms</article-title>. <source>Diabetes</source> <volume>56</volume>: <fpage>1647</fpage>–<lpage>1654</lpage>. <object-id pub-id-type="pmid">17360978</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref042"><label>42</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Higuchi</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Kato</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Miyazaki</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Tanaka</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Kohjima</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Ito</surname> <given-names>T</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Potential role of branched-chain amino acids in glucose metabolism through the accelerated induction of the glucose-sensing apparatus in the liver</article-title>. <source>J Cell Biochem</source> <volume>112</volume>: <fpage>30</fpage>–<lpage>38</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/jcb.22688" xlink:type="simple">10.1002/jcb.22688</ext-link></comment> <object-id pub-id-type="pmid">20506195</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Doi</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Yamaoka</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Fukunaga</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Nakayama</surname> <given-names>M</given-names></name> (<year>2003</year>) <article-title>Isoleucine, a potent plasma glucose-lowering amino acid, stimulates glucose uptake in C2C12 myotubes</article-title>. <source>Biochem Biophys Res Commun</source> <volume>312</volume>: <fpage>1111</fpage>–<lpage>1117</lpage>. <object-id pub-id-type="pmid">14651987</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mihalik</surname> <given-names>SJ</given-names></name>, <name name-style="western"><surname>Michaliszyn</surname> <given-names>SF</given-names></name>, <name name-style="western"><surname>de las Heras</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Bacha</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Lee</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Chace</surname> <given-names>DH</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Metabolomic profiling of fatty acid and amino acid metabolism in youth with obesity and type 2 diabetes: evidence for enhanced mitochondrial oxidation</article-title>. <source>Diabetes Care</source> <volume>35</volume>: <fpage>605</fpage>–<lpage>611</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2337/DC11-1577" xlink:type="simple">10.2337/DC11-1577</ext-link></comment> <object-id pub-id-type="pmid">22266733</object-id></mixed-citation></ref>
+<ref id="pone.0120049.ref045"><label>45</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tatpati</surname> <given-names>LL</given-names></name>, <name name-style="western"><surname>Irving</surname> <given-names>BA</given-names></name>, <name name-style="western"><surname>Tom</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Bigelow</surname> <given-names>ML</given-names></name>, <name name-style="western"><surname>Klaus</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Short</surname> <given-names>KR</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>The effect of branched chain amino acids on skeletal muscle mitochondrial function in young and elderly adults</article-title>. <source>J Clin Endocrinol Metab</source> <volume>95</volume>: <fpage>894</fpage>–<lpage>902</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1210/jc.2009-1822" xlink:type="simple">10.1210/jc.2009-1822</ext-link></comment> <object-id pub-id-type="pmid">20022987</object-id></mixed-citation></ref>
+</ref-list>
+</back>
+</article>

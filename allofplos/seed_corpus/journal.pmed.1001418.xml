@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">PLoS</journal-id>
+<journal-id journal-id-type="nlm-ta">PLoS Med</journal-id>
+<journal-id journal-id-type="pmc">plosmed</journal-id><journal-title-group>
+<journal-title>PLoS Medicine</journal-title></journal-title-group>
+<issn pub-type="epub">1549-1676</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PMEDICINE-D-12-02435</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pmed.1001418</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Medicine</subject><subj-group><subject>Infectious diseases</subject><subj-group><subject>Sexually transmitted diseases</subject><subj-group><subject>AIDS</subject></subj-group></subj-group><subj-group><subject>Viral diseases</subject><subj-group><subject>HIV</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Life Expectancies of South African Adults Starting Antiretroviral Treatment: Collaborative Analysis of Cohort Studies</article-title>
+<alt-title alt-title-type="running-head">Life Expectancies on Antiretroviral Treatment</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Johnson</surname><given-names>Leigh F.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Mossong</surname><given-names>Joel</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Dorrington</surname><given-names>Rob E.</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Schomaker</surname><given-names>Michael</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Hoffmann</surname><given-names>Christopher J.</given-names></name><xref ref-type="aff" rid="aff4"><sup>4</sup></xref><xref ref-type="aff" rid="aff5"><sup>5</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Keiser</surname><given-names>Olivia</given-names></name><xref ref-type="aff" rid="aff6"><sup>6</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Fox</surname><given-names>Matthew P.</given-names></name><xref ref-type="aff" rid="aff7"><sup>7</sup></xref><xref ref-type="aff" rid="aff8"><sup>8</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Wood</surname><given-names>Robin</given-names></name><xref ref-type="aff" rid="aff9"><sup>9</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Prozesky</surname><given-names>Hans</given-names></name><xref ref-type="aff" rid="aff10"><sup>10</sup></xref><xref ref-type="aff" rid="aff11"><sup>11</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Giddy</surname><given-names>Janet</given-names></name><xref ref-type="aff" rid="aff12"><sup>12</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Garone</surname><given-names>Daniela Belen</given-names></name><xref ref-type="aff" rid="aff13"><sup>13</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Cornell</surname><given-names>Morna</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Egger</surname><given-names>Matthias</given-names></name><xref ref-type="aff" rid="aff6"><sup>6</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Boulle</surname><given-names>Andrew</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><collab xlink:type="simple">for the International Epidemiologic Databases to Evaluate AIDS Southern Africa (IeDEA-SA) Collaboration</collab><xref ref-type="fn" rid="fn1"><sup>¶</sup></xref>
+    </contrib>
+<aff id="aff1"><label>1</label><addr-line>Centre for Infectious Disease Epidemiology and Research, University of Cape Town, Cape Town, South Africa</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Africa Centre for Health and Population Studies, University of KwaZulu-Natal, Mtubatuba, South Africa</addr-line></aff>
+<aff id="aff3"><label>3</label><addr-line>Centre for Actuarial Research, University of Cape Town, Cape Town, South Africa</addr-line></aff>
+<aff id="aff4"><label>4</label><addr-line>Aurum Institute, Johannesburg, South Africa</addr-line></aff>
+<aff id="aff5"><label>5</label><addr-line>Division of Infectious Diseases, Johns Hopkins School of Medicine, Baltimore, Maryland, United States of America</addr-line></aff>
+<aff id="aff6"><label>6</label><addr-line>Institute of Social and Preventive Medicine, University of Bern, Bern, Switzerland</addr-line></aff>
+<aff id="aff7"><label>7</label><addr-line>Center for Global Health and Development, Boston University, Boston, Massachusetts, United States of America</addr-line></aff>
+<aff id="aff8"><label>8</label><addr-line>Health Economics and Epidemiology Research Office, Department of Internal Medicine, School of Clinical Medicine, Faculty of Health Sciences, University of the Witwatersrand, Johannesburg, South Africa</addr-line></aff>
+<aff id="aff9"><label>9</label><addr-line>Desmond Tutu HIV Centre, University of Cape Town, Cape Town, South Africa</addr-line></aff>
+<aff id="aff10"><label>10</label><addr-line>Division of Infectious Diseases, Department of Medicine, University of Stellenbosch, Cape Town, South Africa</addr-line></aff>
+<aff id="aff11"><label>11</label><addr-line>Tygerberg Academic Hospital, Cape Town, South Africa</addr-line></aff>
+<aff id="aff12"><label>12</label><addr-line>McCord Hospital, Durban, South Africa</addr-line></aff>
+<aff id="aff13"><label>13</label><addr-line>Médecins Sans Frontières, Cape Town, South Africa</addr-line></aff></contrib-group>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Celentano</surname><given-names>David D.</given-names></name>
+<role>Academic Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Johns Hopkins University, United States of America</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">Leigh.Johnson@uct.ac.za</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: LFJ RED JM OK MPF MS ME AB. Performed the experiments: LJ MS AB MC. Analyzed the data: LJ MS AB MC. Wrote the first draft of the manuscript: LJ. Contributed to the writing of the manuscript: LFJ JM RED MS CJH OK MPF RW HP JG DBG MC ME AB. <ext-link ext-link-type="uri" xlink:href="http://www.icmje.org/" xlink:type="simple">ICMJE</ext-link> criteria for authorship read and met: LFJ JM RED MS CJH OK MPF RW HP JG DBG MC ME AB. Agree with manuscript results and conclusions: LFJ JM RED MS CJH OK MPF RW HP JG DBG MC ME AB. Enrolled patients: CH JM HP MF JG DBG RW.</p></fn>
+    <fn id="fn1" fn-type="other">
+        <p>¶ Membership of The International Epidemiologic Databases to Evaluate AIDS Southern Africa (IeDEA-SA) Collaboration is provided in the Acknowledgments.</p>
+    </fn>
+    
+</author-notes>
+<pub-date pub-type="collection"><month>4</month><year>2013</year></pub-date>
+<pub-date pub-type="epub"><day>9</day><month>4</month><year>2013</year></pub-date>
+<volume>10</volume>
+<issue>4</issue>
+<elocation-id>e1001418</elocation-id>
+<history>
+<date date-type="received"><day>16</day><month>8</month><year>2012</year></date>
+<date date-type="accepted"><day>28</day><month>2</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2013</copyright-year>
+<copyright-holder>Johnson et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract abstract-type="toc">
+<p>Leigh Johnson and colleagues estimate the life expectancies of HIV positive South African adults who are taking antiretroviral therapy by using information from 6 programmes between 2001 and 2010.</p>
+</abstract>
+<abstract><sec>
+<title>Background</title>
+<p>Few estimates exist of the life expectancy of HIV-positive adults receiving antiretroviral treatment (ART) in low- and middle-income countries. We aimed to estimate the life expectancy of patients starting ART in South Africa and compare it with that of HIV-negative adults.</p>
+</sec><sec>
+<title>Methods and Findings</title>
+<p>Data were collected from six South African ART cohorts. Analysis was restricted to 37,740 HIV-positive adults starting ART for the first time. Estimates of mortality were obtained by linking patient records to the national population register. Relative survival models were used to estimate the excess mortality attributable to HIV by age, for different baseline CD4 categories and different durations. Non-HIV mortality was estimated using a South African demographic model. The average life expectancy of men starting ART varied between 27.6 y (95% CI: 25.2–30.2) at age 20 y and 10.1 y (95% CI: 9.3–10.8) at age 60 y, while estimates for women at the same ages were substantially higher, at 36.8 y (95% CI: 34.0–39.7) and 14.4 y (95% CI: 13.3–15.3), respectively. The life expectancy of a 20-y-old woman was 43.1 y (95% CI: 40.1–46.0) if her baseline CD4 count was ≥200 cells/µl, compared to 29.5 y (95% CI: 26.2–33.0) if her baseline CD4 count was &lt;50 cells/µl. Life expectancies of patients with baseline CD4 counts ≥200 cells/µl were between 70% and 86% of those in HIV-negative adults of the same age and sex, and life expectancies were increased by 15%–20% in patients who had survived 2 y after starting ART. However, the analysis was limited by a lack of mortality data at longer durations.</p>
+</sec><sec>
+<title>Conclusions</title>
+<p>South African HIV-positive adults can have a near-normal life expectancy, provided that they start ART before their CD4 count drops below 200 cells/µl. These findings demonstrate that the near-normal life expectancies of HIV-positive individuals receiving ART in high-income countries can apply to low- and middle-income countries as well.</p>
+<p><italic>Please see later in the article for the Editors' Summary</italic></p>
+</sec></abstract>
+<abstract abstract-type="editors-summary"><title>Editors' Summary</title><sec>
+<title>Background</title>
+<p>According to the latest figures, more than 34 million people worldwide currently live with HIV/AIDS. In 2011, an estimated 2.5 million people were newly infected with HIV, and in the same year 1.7 million people died from AIDS. Since the beginning of the epidemic in the 1980s, more than 60 million people have contracted HIV and nearly 30 million have died of HIV-related causes. Despite the stark statistics, the life expectancy for people infected with the AIDS virus has dramatically improved over the past decade since the introduction of an effective combination of antiretroviral drugs. In high-income countries, people who are HIV-positive can expect a near-normal life expectancy if they take these drugs (as antiretroviral treatment—ART) throughout their life.</p>
+</sec><sec>
+<title>Why Was This Study Done?</title>
+<p>Recent studies investigating the life expectancy of people living with HIV have mostly focused on the situation in high-income settings. The situation in low- and middle-income countries is vastly different. People who are diagnosed with HIV are often late in starting treatment, treatments regimes are sometimes interrupted, and a large proportion of patients are lost to follow-up. It is important to gain a realistic estimate of life expectancy in low- and middle-income countries so patients can be given the best information. So in this study the researchers used a model to estimate the life expectancy of patients starting ART in South Africa, using data from several ART programs.</p>
+</sec><sec>
+<title>What Did the Researchers Do and Find?</title>
+<p>The researchers used data collected from six programs in South Africa based in Western Cape, Gauteng, and KwaZulu-Natal between 2001 and 2010. The researchers calculated the observation time from the time of ART initiation to the date of death or to the end of the study. Then the researchers used a relative survival approach to model the excess mortality attributable to HIV, relative to non-HIV mortality rates in South Africa, over different periods from ART initiation.</p>
+<p>Using these methods, the researchers found that over the time period, 37,740 adults started ART and 2,066 deaths were recorded in patient record systems. Of the 16,250 patients who were lost to follow-up, the researchers identified 2,947 further deaths in the population register. When they inputted these figures into their model, the researchers estimated that the mortality rate was 83.2 per 1,000 person-years of observation (PYO), and was higher in males (99.8 per 1,000 PYO) than in females (72.6 per 1,000 PYO). The researchers also found that the most significant factor determining the life expectancy of treated patients was their age at ART initiation: the average life expectancy of men starting ART varied between 27.6 years at age 20 and 10.1 years at age 60, while corresponding estimates in women were 36.8 and 14.4, respectively. Life expectancies were also significantly influenced by baseline CD4 counts; life expectancies in patients with baseline CD4 counts ≥200 cells/µl were between 70% and 86% of those of HIV-negative adults of the same age and sex, while patients starting ART with CD4 counts of &lt;50 cells/µl had life expectancies that were between 48% and 61% of those of HIV-negative adults. Importantly, the researchers found that life expectancies were also 15%–20% higher in patients who survived their first 24 months after starting ART than in patients of the same age who had just started therapy.</p>
+</sec><sec>
+<title>What Do These Findings Mean?</title>
+<p>These findings suggest that in South Africa, patients starting ART have life expectancies around 80% of normal life expectancy, provided that they start treatment before their CD4 count drops below 200 cells/µl. Although these results are encouraging, this study highlights that health services must overcome major challenges, such as dealing with late diagnosis, low uptake of CD4 testing, loss from pre-ART care, and delayed ART initiation, if near-normal life expectancies are to be achieved for the majority of HIV-positive South Africans. With the anticipated increase in the fraction of patients starting ART at higher CD4 counts in the future, long-term survival can be expected to increase even further. It is therefore critical that appropriate funding systems and innovative ways to reduce costs are put in place, to ensure the long-term sustainability of ART delivery in low- and middle-income countries.</p>
+</sec><sec>
+<title>Additional Information</title>
+<p>Please access these websites via the online version of this summary at <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001418" xlink:type="simple">http://dx.doi.org/10.1371/journal.pmed.1001418</ext-link>.</p>
+<list list-type="bullet"><list-item>
+<p>The <ext-link ext-link-type="uri" xlink:href="http://iedea.org/" xlink:type="simple">International Epidemiologic Databases to Evaluate AIDS</ext-link> has more statistical information from world regions</p>
+</list-item><list-item>
+<p>amfAR, the Foundation for AIDS Research, works with health care workers and AIDS organizations in developing countries to create and implement effective <ext-link ext-link-type="uri" xlink:href="http://www.amfar.org/globalinitiatives.html" xlink:type="simple">HIV research, treatment, prevention, and education strategies</ext-link></p>
+</list-item></list>
+</sec></abstract>
+<funding-group><funding-statement>Support for this study was provided by the US National Institute of Allergy and Infectious Diseases (NIAID) through the International epidemiological Databases to Evaluate AIDS, Southern Africa (IeDEA-SA), grant no. 5U01AI069924-05. MPF was supported by the National Institute of Allergy and Infectious Diseases [K01AI083097]. JM received partial financial support from the German government through the Centre for International Migration and Development (CIM). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="11"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Estimates of life expectancies of HIV-infected individuals are important in providing information to patients about their long-term prognosis, in projecting the future costs of HIV-related care, and in forecasting the likely future demographic and socioeconomic impact of HIV/AIDS <xref ref-type="bibr" rid="pmed.1001418-Hallett1">[1]</xref>–<xref ref-type="bibr" rid="pmed.1001418-Schackman1">[3]</xref>. Several estimates of the life expectancy of HIV-positive adults in high-income countries have been published <xref ref-type="bibr" rid="pmed.1001418-May1">[4]</xref>–<xref ref-type="bibr" rid="pmed.1001418-Wada1">[13]</xref>, and many of these studies have shown dramatic improvements in life expectancy following the introduction of highly active antiretroviral treatment (ART). However, only one previous study has directly estimated the life expectancy of patients receiving ART in a low-income country <xref ref-type="bibr" rid="pmed.1001418-Mills1">[14]</xref>. The dearth of estimates from low- and middle-income countries is a reflection of both the later introduction of ART (with less time to accumulate long-term survival data) and the problems associated with obtaining accurate mortality estimates in these countries. High rates of loss to follow-up <xref ref-type="bibr" rid="pmed.1001418-Fox1">[15]</xref>, together with high mortality in those lost to follow-up (LTFU) <xref ref-type="bibr" rid="pmed.1001418-Brinkhof1">[16]</xref>, mean that mortality is often substantially underestimated. In the absence of reliable empirical estimates, modellers have made conservative assumptions about the life expectancy of adults starting ART in low- and middle-income countries, typically around 10 y <xref ref-type="bibr" rid="pmed.1001418-Mahy1">[17]</xref>–<xref ref-type="bibr" rid="pmed.1001418-Johnson1">[19]</xref>. Uncertainty regarding long-term HIV mortality is frequently manifested in insurance companies' refusal of life insurance applications by HIV-positive individuals, or acceptance on very restrictive terms.</p>
+<p>In South Africa there exists a unique opportunity to obtain accurate estimates of ART mortality in a middle-income country experiencing a generalised HIV epidemic. With around 90% of adult deaths recorded through the country's vital registration system <xref ref-type="bibr" rid="pmed.1001418-Dorrington1">[20]</xref>–<xref ref-type="bibr" rid="pmed.1001418-Dorrington2">[23]</xref>, South Africa is perhaps the only African country with levels of vital registration high enough to permit independent estimation of mortality rates in patients <xref ref-type="bibr" rid="pmed.1001418-Setel1">[24]</xref>. HIV/AIDS has had a profound demographic impact in South Africa <xref ref-type="bibr" rid="pmed.1001418-Dorrington1">[20]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Birnbaum1">[25]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Herbst1">[26]</xref>, but access to ART has expanded rapidly since 2004, with ART reaching almost 1.8 million South Africans by mid-2011 <xref ref-type="bibr" rid="pmed.1001418-Johnson2">[27]</xref>. The combination of high mortality ascertainment and large patient numbers allows for greater precision in the estimation of ART mortality than is possible in most low- and middle-income countries. The objective of the present study is to estimate the life expectancy of patients starting ART in South Africa, using data from a large collaboration of ART programmes.</p>
+</sec><sec id="s2" sec-type="methods">
+<title>Methods</title>
+<sec id="s2a">
+<title>Cohort Description and Selection of Patients</title>
+<p>The International Epidemiologic Databases to Evaluate AIDS Southern Africa (IeDEA-SA) is a collaboration of ART programmes in southern Africa <xref ref-type="bibr" rid="pmed.1001418-Egger1">[28]</xref>. All IeDEA-SA programmes obtained ethical approval from relevant local institutions before contributing anonymised patient data to this collaborative analysis. In addition, the collaboration obtained approval from the University of Cape Town Human Research Ethics Committee to receive and analyse these collaborative data. As all analyses were performed with de-identified data, most patients did not provide individual consent to participate in the study <xref ref-type="bibr" rid="pmed.1001418-Egger1">[28]</xref>.</p>
+<p>This analysis is limited to six programmes providing ART to adults in South Africa <xref ref-type="bibr" rid="pmed.1001418-Cornell1">[29]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Cornell2">[30]</xref>: the Aurum workplace treatment programme, the Aurum community treatment programme, the Hlabisa HIV treatment and care programme, the Khayelitsha HIV treatment programme, McCord Hospital, and Themba Lethu Clinic. The treatment centres are situated across three of South Africa's nine provinces (Western Cape, Gauteng, and KwaZulu-Natal), mostly in urban areas, and most of the programmes operate in the public health sector. Over the period in which patients initiated ART (March 2001 to February 2010), South African treatment guidelines in the public health sector recommended that adult ART initiation be deferred until the patient's CD4 count was below 200 cells/µl or the patient had progressed to World Health Organization clinical stage IV disease <xref ref-type="bibr" rid="pmed.1001418-Department1">[31]</xref>. We included patients who were aged 15 y or older at the time of starting ART, were treatment-naïve, and started ART in 2001 or later. Patients were excluded from the main analysis if they had missing baseline CD4 values (no CD4 measurement between 182 d before and 14 d after starting ART) or if their baseline viral load was below 400 copies/ml (as these patients were unlikely to be ART-naïve).</p>
+</sec><sec id="s2b">
+<title>Estimation of Mortality</title>
+<p>We calculated observation time as starting at the time of ART initiation and ending at the date of death or the date of analysis closure, whichever occurred first. Patients were considered to be LTFU if there was no record of their attendance at the clinic for at least 182 d prior to database closure and their patient records did not indicate that they had died. The date of database closure differed for each of the participating programmes, and was calculated as the last recorded visit date in each programme. The date of analysis closure was defined for each programme to be the date 182 d prior to the date of database closure, in order to allow sufficient time to determine the LTFU status of each patient.</p>
+<p>In the case of patients who were LTFU, the approach to calculating person-years of observation (PYO) differed depending on whether the programme had recorded the patient's civil identity document (ID) number and used this information to check the vital status of the patient against the national population register. In the case of LTFU patients with ID information, we censored observation at the date of analysis closure or the date of death recorded on the population register. Inverse probability weighting was used to ensure that LTFU patients with IDs were weighted up to represent the LTFU patients without IDs; this meant assigning zero weight to the LTFU patients who had no ID (so that the censoring dates for these patients were irrelevant) and assigning weights equal to the inverse of the probability of having ID information, in those patients who had IDs. This approach has been used previously in estimating mortality rates in South African patients receiving ART <xref ref-type="bibr" rid="pmed.1001418-Boulle1">[21]</xref>,<xref ref-type="bibr" rid="pmed.1001418-VanCutsem1">[32]</xref>, and is analogous to the weighting methods that are commonly used to correct for non-informative censoring through double sampling <xref ref-type="bibr" rid="pmed.1001418-Frangakis1">[33]</xref>. Inverse probability weights were calculated by applying separate logistic regression models to the LTFU patients in each cohort, to predict the probability of having recorded ID information.</p>
+<p>In one of the cohorts, problems with the recording of date of last clinic attendance prevented us from applying the LTFU definition and using inverse probability weighting. In this cohort, analysis was restricted to those patients with IDs, and observation time was censored at the date of death or date of analysis closure (the latter being defined as the date 30 d prior to when the national population register was last checked). In a sensitivity analysis we considered the effect of applying the same method to all of the other cohorts.</p>
+</sec><sec id="s2c">
+<title>Statistical Methods</title>
+<p>We used a relative survival approach to model the excess mortality attributable to HIV, relative to non-HIV mortality rates in South Africa, over different durations from ART initiation <xref ref-type="bibr" rid="pmed.1001418-Dickman1">[34]</xref>,. The relative survival model was applied separately to male and female mortality data, allowing for four covariates: age, cohort, number of years since ART initiation, and CD4 category at ART initiation (<xref ref-type="supplementary-material" rid="pmed.1001418.s001">Figure S1</xref>). HIV-associated mortality was assumed to be an exponential function of age, based on an examination of standardised mortality rates in each 5-y age interval (<xref ref-type="supplementary-material" rid="pmed.1001418.s002">Figure S2</xref>). We grouped individuals into one of four baseline CD4 categories: &lt;50, 50–99, 100–199, and ≥200 cells/µl. Mortality rates were assumed to be constant over each integer age and integer duration. We defined four duration categories: the first 12 mo after starting ART, months 13–24 after starting ART, months 25–36 after starting ART, and more than 36 mo after starting ART. The model was fitted separately for the first 12 mo and durations longer than 12 mo, to allow for differences in the effect of age, CD4 count, and cohort at different durations. A more detailed mathematical description of the model is provided in section 1 of <xref ref-type="supplementary-material" rid="pmed.1001418.s003">Text S1</xref>.</p>
+<p>We obtained estimates of non-HIV mortality, by age and sex, from an independent demographic model of the South African population <xref ref-type="bibr" rid="pmed.1001418-Actuarial1">[36]</xref> and used these mortality rates to calculate the life expectancy of HIV-negative individuals, for comparison purposes. The demographic model derives non-HIV mortality rates based on a modification of the Brass logit life table system, which takes into account estimates of South African mortality prior to the AIDS epidemic, changes over time in recorded numbers of deaths, and modelled estimates of trends in AIDS mortality (a more detailed explanation of the method is provided in section 2 of <xref ref-type="supplementary-material" rid="pmed.1001418.s003">Text S1</xref>).</p>
+<p>We fitted the relative survival model to the data using a maximum likelihood approach in STATA 11.0 (StataCorp), assuming that the number of deaths in each age, sex, cohort, CD4, and duration category was Poisson-distributed. Parametric bootstrapping was used to generate 1,000 alternative parameter estimates <xref ref-type="bibr" rid="pmed.1001418-Efron1">[37]</xref>. We developed a C++ programme to calculate the life table and life expectancy for various combinations of age, sex, cohort, and baseline CD4 categories. The programme was also used to estimate the fraction of patients starting ART who were expected to die from causes unrelated to HIV. We ran this programme for each of the 1,000 bootstrap-sampled parameter estimates to generate distributions of life expectancy estimates, and calculated means and 95% confidence intervals from these. Results obtained for individual cohorts were averaged for the purpose of presenting overall results. Mathematical details regarding the model fitting procedure and life expectancy calculations are included in sections 3–5 of <xref ref-type="supplementary-material" rid="pmed.1001418.s003">Text S1</xref>.</p>
+</sec><sec id="s2d">
+<title>Sensitivity Analyses</title>
+<p>To assess the sensitivity of the results to the high early mortality after ART initiation, we estimated life expectancy for patients who had survived 24 mo since ART initiation. We also limited the analysis to patients with IDs, to assess the effect of longer follow-up time (with later administrative censoring), and also to assess the effect of not applying inverse probability weighting in LTFU patients. To assess sensitivity to non-HIV mortality rates, the relative survival model was refitted after increasing the assumed non-HIV mortality rates by 50%. In addition, we refitted the model using a negative binomial model in place of the Poisson model, to assess possible bias due to over-dispersion <xref ref-type="bibr" rid="pmed.1001418-Dean1">[38]</xref>. To assess the effect of including patients with missing baseline CD4 values, we repeated the analysis after assigning CD4 values to these patients using multiple imputation <xref ref-type="bibr" rid="pmed.1001418-Molenberghs1">[39]</xref>.</p>
+<p>Because the relative survival approach differs substantially from the more widely used abridged life table method, we also estimated life expectancy using the abridged life table approach <xref ref-type="bibr" rid="pmed.1001418-Chiang1">[40]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Chiang2">[41]</xref>. Mortality rates were calculated in each 5-y age band, stratified by sex and baseline CD4 category but not by duration. Because of the small number of patients at older ages, all observations at age 55 y and above were grouped together in a single upper age interval, consistent with the approach adopted in other abridged life table studies <xref ref-type="bibr" rid="pmed.1001418-LloydSmith1">[9]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Keiser1">[11]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Mills1">[14]</xref>. Confidence intervals were calculated using bootstrapping.</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<p>Analysis was based on 37,740 adults who started ART between March 2001 and February 2010. <xref ref-type="table" rid="pmed-1001418-t001">Table 1</xref> shows the patient characteristics at the time of ART initiation. Relatively few patients were aged 55 y or older (3.7%), and relatively few patients had CD4 counts ≥200 cells/µl (13.2%). Following ART initiation, 2,066 deaths were recorded in patient record systems, and 16,250 patients were LTFU or were considered to have unreliable information regarding their last visit date. Of the 16,250, 13,968 had a recorded ID, and in these patients with ID, 2,947 deaths were identified in the population register. After including deaths recorded in the population register and applying the inverse probability weighting to the LTFU patients, there were 5,782 deaths during 69,514 person-years, for a mean follow-up of 1.84 y (median 1.69 y). The mortality rate was 83.2 per 1,000 PYO, and was substantially higher in males (99.8 per 1,000 PYO) than in females (72.6 per 1,000 PYO). Although mortality rates were high during the first 12 mo after starting ART, mortality rates reduced to low levels at longer durations (<xref ref-type="supplementary-material" rid="pmed.1001418.s001">Figure S1</xref> and <xref ref-type="supplementary-material" rid="pmed.1001418.s002">S2</xref>). The estimated parameters of the model of HIV mortality are included in section 6 of <xref ref-type="supplementary-material" rid="pmed.1001418.s003">Text S1</xref>.</p>
+<table-wrap id="pmed-1001418-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001418.t001</object-id><label>Table 1</label><caption>
+<title>Patient characteristics at start of ART.</title>
+</caption><alternatives><graphic id="pmed-1001418-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001418.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Characteristic</td>
+<td align="left" rowspan="1" colspan="1"><italic>n</italic></td>
+<td align="left" rowspan="1" colspan="1">Percent</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Sex</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Male</td>
+<td align="left" rowspan="1" colspan="1">14,528</td>
+<td align="left" rowspan="1" colspan="1">39.5%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Female</td>
+<td align="left" rowspan="1" colspan="1">23,212</td>
+<td align="left" rowspan="1" colspan="1">61.5%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Age</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">15–24 y</td>
+<td align="left" rowspan="1" colspan="1">2,697</td>
+<td align="left" rowspan="1" colspan="1">7.1%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">25–34 y</td>
+<td align="left" rowspan="1" colspan="1">15,584</td>
+<td align="left" rowspan="1" colspan="1">41.3%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">35–44 y</td>
+<td align="left" rowspan="1" colspan="1">12,699</td>
+<td align="left" rowspan="1" colspan="1">33.6%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">45–54 y</td>
+<td align="left" rowspan="1" colspan="1">5,357</td>
+<td align="left" rowspan="1" colspan="1">14.2%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">55+ y</td>
+<td align="left" rowspan="1" colspan="1">1,403</td>
+<td align="left" rowspan="1" colspan="1">3.7%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>CD4 count</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">&lt;50 cells/µl</td>
+<td align="left" rowspan="1" colspan="1">10,411</td>
+<td align="left" rowspan="1" colspan="1">27.6%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">50–99 cells/µl</td>
+<td align="left" rowspan="1" colspan="1">7,642</td>
+<td align="left" rowspan="1" colspan="1">20.2%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">100–199 cells/µl</td>
+<td align="left" rowspan="1" colspan="1">14,689</td>
+<td align="left" rowspan="1" colspan="1">38.9%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">≥200 cells/µl</td>
+<td align="left" rowspan="1" colspan="1">4,998</td>
+<td align="left" rowspan="1" colspan="1">13.2%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Year of ART initiation</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2001–2003</td>
+<td align="left" rowspan="1" colspan="1">913</td>
+<td align="left" rowspan="1" colspan="1">2.4%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2004</td>
+<td align="left" rowspan="1" colspan="1">3,079</td>
+<td align="left" rowspan="1" colspan="1">8.2%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2005</td>
+<td align="left" rowspan="1" colspan="1">6,122</td>
+<td align="left" rowspan="1" colspan="1">16.2%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2006</td>
+<td align="left" rowspan="1" colspan="1">9,683</td>
+<td align="left" rowspan="1" colspan="1">25.7%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2007</td>
+<td align="left" rowspan="1" colspan="1">8,630</td>
+<td align="left" rowspan="1" colspan="1">22.9%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2008</td>
+<td align="left" rowspan="1" colspan="1">5,956</td>
+<td align="left" rowspan="1" colspan="1">15.8%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2009–2010</td>
+<td align="left" rowspan="1" colspan="1">3,357</td>
+<td align="left" rowspan="1" colspan="1">8.9%</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p><xref ref-type="table" rid="pmed-1001418-t002">Table 2</xref> summarises the model estimates of life expectancies at ART initiation. The most significant factor determining life expectancy of treated patients was age at ART initiation; the average life expectancy of men starting ART varied between 27.6 y (95% CI: 25.2–30.2) at age 20 y and 10.1 y (95% CI: 9.3–10.8) at age 60 y, while corresponding estimates in women were 36.8 (95% CI: 34.0–39.7) and 14.4 (95% CI: 13.3–15.3), respectively. Life expectancies were also significantly influenced by baseline CD4 counts; life expectancies in patients with baseline CD4 counts ≥200 cells/µl were between 70% (95% CI: 62%–77%) and 86% (95% CI: 81%–90%) of those in HIV-negative adults of the same age and sex, while patients starting ART with CD4 counts of &lt;50 cells/µl had life expectancies that were between 48% (95% CI: 43%–55%) and 61% (95% CI: 54%–67%) of those in HIV-negative adults (<xref ref-type="fig" rid="pmed-1001418-g001">Figure 1</xref>).</p>
+<fig id="pmed-1001418-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001418.g001</object-id><label>Figure 1</label><caption>
+<title>Life expectancies of patients starting ART, as proportions of life expectancies of HIV-negative adults.</title>
+<p>Proportions are plotted by age at ART initiation and baseline CD4 count, for men (A) and women (B). Bars represent means, and error bars represent 95% confidence intervals.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001418.g001" position="float" xlink:type="simple"/></fig><table-wrap id="pmed-1001418-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001418.t002</object-id><label>Table 2</label><caption>
+<title>Life expectancies (additional years of life) at ART initiation by age, sex, and baseline CD4 count.</title>
+</caption><alternatives><graphic id="pmed-1001418-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001418.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age at ART Initiation (in Years)</td>
+<td colspan="6" align="left" rowspan="1">Men</td>
+<td colspan="6" align="left" rowspan="1">Women</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="5" align="left" rowspan="1">Baseline CD4 Count</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="5" align="left" rowspan="1">Baseline CD4 Count</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">&lt;50</td>
+<td align="left" rowspan="1" colspan="1">50–99</td>
+<td align="left" rowspan="1" colspan="1">100–199</td>
+<td align="left" rowspan="1" colspan="1">200+</td>
+<td align="left" rowspan="1" colspan="1">All<xref ref-type="table-fn" rid="nt102">a</xref></td>
+<td align="left" rowspan="1" colspan="1">Uninfected</td>
+<td align="left" rowspan="1" colspan="1">&lt;50</td>
+<td align="left" rowspan="1" colspan="1">50–99</td>
+<td align="left" rowspan="1" colspan="1">100–199</td>
+<td align="left" rowspan="1" colspan="1">200+</td>
+<td align="left" rowspan="1" colspan="1">All<xref ref-type="table-fn" rid="nt102">a</xref></td>
+<td align="left" rowspan="1" colspan="1">Uninfected</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">21.7 (19.2–24.5)</td>
+<td align="left" rowspan="1" colspan="1">27.3 (24.6–30.1)</td>
+<td align="left" rowspan="1" colspan="1">30.6 (27.8–33.5)</td>
+<td align="left" rowspan="1" colspan="1">31.2 (27.7–34.6)</td>
+<td align="left" rowspan="1" colspan="1">27.6 (25.2–30.2)</td>
+<td align="left" rowspan="1" colspan="1">44.8</td>
+<td align="left" rowspan="1" colspan="1">29.5 (26.2–33.0)</td>
+<td align="left" rowspan="1" colspan="1">36.5 (33.1–39.9)</td>
+<td align="left" rowspan="1" colspan="1">40.0 (36.9–43.0)</td>
+<td align="left" rowspan="1" colspan="1">43.1 (40.1–46.0)</td>
+<td align="left" rowspan="1" colspan="1">36.8 (34.0–39.7)</td>
+<td align="left" rowspan="1" colspan="1">52.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">25</td>
+<td align="left" rowspan="1" colspan="1">19.8 (17.7–22.4)</td>
+<td align="left" rowspan="1" colspan="1">25.0 (22.6–27.5)</td>
+<td align="left" rowspan="1" colspan="1">28.1 (25.5–30.6)</td>
+<td align="left" rowspan="1" colspan="1">28.7 (25.6–31.6)</td>
+<td align="left" rowspan="1" colspan="1">25.3 (23.3–27.5)</td>
+<td align="left" rowspan="1" colspan="1">40.7</td>
+<td align="left" rowspan="1" colspan="1">27.2 (24.1–30.4)</td>
+<td align="left" rowspan="1" colspan="1">33.7 (30.6–36.7)</td>
+<td align="left" rowspan="1" colspan="1">36.9 (34.1–39.5)</td>
+<td align="left" rowspan="1" colspan="1">39.6 (37.0–42.2)</td>
+<td align="left" rowspan="1" colspan="1">33.9 (31.5–36.5)</td>
+<td align="left" rowspan="1" colspan="1">48.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">30</td>
+<td align="left" rowspan="1" colspan="1">18.1 (16.2–20.3)</td>
+<td align="left" rowspan="1" colspan="1">22.7 (20.7–25.1)</td>
+<td align="left" rowspan="1" colspan="1">25.6 (23.4–27.8)</td>
+<td align="left" rowspan="1" colspan="1">26.2 (23.5–28.7)</td>
+<td align="left" rowspan="1" colspan="1">23.0 (21.3–25.0)</td>
+<td align="left" rowspan="1" colspan="1">36.7</td>
+<td align="left" rowspan="1" colspan="1">24.9 (22.2–27.7)</td>
+<td align="left" rowspan="1" colspan="1">30.8 (28.1–33.5)</td>
+<td align="left" rowspan="1" colspan="1">33.7 (31.3–36.0)</td>
+<td align="left" rowspan="1" colspan="1">36.1 (33.7–38.4)</td>
+<td align="left" rowspan="1" colspan="1">31.0 (28.8–33.3)</td>
+<td align="left" rowspan="1" colspan="1">43.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">35</td>
+<td align="left" rowspan="1" colspan="1">16.3 (14.6–18.3)</td>
+<td align="left" rowspan="1" colspan="1">20.5 (18.7–22.6)</td>
+<td align="left" rowspan="1" colspan="1">23.1 (21.2–25.0)</td>
+<td align="left" rowspan="1" colspan="1">23.6 (21.2–25.9)</td>
+<td align="left" rowspan="1" colspan="1">20.7 (19.3–22.4)</td>
+<td align="left" rowspan="1" colspan="1">32.8</td>
+<td align="left" rowspan="1" colspan="1">22.6 (20.1–25.1)</td>
+<td align="left" rowspan="1" colspan="1">27.9 (25.5–30.3)</td>
+<td align="left" rowspan="1" colspan="1">30.6 (28.3–32.6)</td>
+<td align="left" rowspan="1" colspan="1">32.6 (30.5–34.6)</td>
+<td align="left" rowspan="1" colspan="1">28.1 (26.1–30.1)</td>
+<td align="left" rowspan="1" colspan="1">39.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">40</td>
+<td align="left" rowspan="1" colspan="1">14.5 (13.1–16.2)</td>
+<td align="left" rowspan="1" colspan="1">18.2 (16.6–19.9)</td>
+<td align="left" rowspan="1" colspan="1">20.5 (18.9–22.1)</td>
+<td align="left" rowspan="1" colspan="1">21.0 (18.9–22.9)</td>
+<td align="left" rowspan="1" colspan="1">18.4 (17.1–20.0)</td>
+<td align="left" rowspan="1" colspan="1">28.8</td>
+<td align="left" rowspan="1" colspan="1">20.3 (18.1–22.5)</td>
+<td align="left" rowspan="1" colspan="1">25.0 (23.0–27.1)</td>
+<td align="left" rowspan="1" colspan="1">27.4 (25.5–29.1)</td>
+<td align="left" rowspan="1" colspan="1">29.1 (27.3–30.8)</td>
+<td align="left" rowspan="1" colspan="1">25.2 (23.3–27.0)</td>
+<td align="left" rowspan="1" colspan="1">34.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">45</td>
+<td align="left" rowspan="1" colspan="1">12.7 (11.4–14.2)</td>
+<td align="left" rowspan="1" colspan="1">16.0 (14.5–17.4)</td>
+<td align="left" rowspan="1" colspan="1">18.0 (16.6–19.3)</td>
+<td align="left" rowspan="1" colspan="1">18.4 (16.7–20.0)</td>
+<td align="left" rowspan="1" colspan="1">16.2 (15.0–17.5)</td>
+<td align="left" rowspan="1" colspan="1">24.9</td>
+<td align="left" rowspan="1" colspan="1">18.0 (16.1–20.0)</td>
+<td align="left" rowspan="1" colspan="1">22.2 (20.3–24.0)</td>
+<td align="left" rowspan="1" colspan="1">24.3 (22.6–25.8)</td>
+<td align="left" rowspan="1" colspan="1">25.7 (24.2–27.1)</td>
+<td align="left" rowspan="1" colspan="1">22.3 (20.7–23.9)</td>
+<td align="left" rowspan="1" colspan="1">30.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">50</td>
+<td align="left" rowspan="1" colspan="1">11.0 (9.9–12.3)</td>
+<td align="left" rowspan="1" colspan="1">13.8 (12.6–15.0)</td>
+<td align="left" rowspan="1" colspan="1">15.5 (14.4–16.7)</td>
+<td align="left" rowspan="1" colspan="1">16.0 (14.5–17.3)</td>
+<td align="left" rowspan="1" colspan="1">14.0 (13.0–15.1)</td>
+<td align="left" rowspan="1" colspan="1">21.2</td>
+<td align="left" rowspan="1" colspan="1">15.8 (14.1–17.5)</td>
+<td align="left" rowspan="1" colspan="1">19.4 (17.8–20.9)</td>
+<td align="left" rowspan="1" colspan="1">21.3 (19.8–22.5)</td>
+<td align="left" rowspan="1" colspan="1">22.5 (21.2–23.6)</td>
+<td align="left" rowspan="1" colspan="1">19.5 (18.1–20.9)</td>
+<td align="left" rowspan="1" colspan="1">26.6</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">55</td>
+<td align="left" rowspan="1" colspan="1">9.5 (8.5–10.5)</td>
+<td align="left" rowspan="1" colspan="1">11.8 (10.8–12.8)</td>
+<td align="left" rowspan="1" colspan="1">13.3 (12.3–14.2)</td>
+<td align="left" rowspan="1" colspan="1">13.7 (12.4–14.8)</td>
+<td align="left" rowspan="1" colspan="1">12.0 (11.1–12.9)</td>
+<td align="left" rowspan="1" colspan="1">17.9</td>
+<td align="left" rowspan="1" colspan="1">13.7 (12.2–15.1)</td>
+<td align="left" rowspan="1" colspan="1">16.8 (15.4–18.1)</td>
+<td align="left" rowspan="1" colspan="1">18.4 (17.1–19.4)</td>
+<td align="left" rowspan="1" colspan="1">19.3 (18.3–20.3)</td>
+<td align="left" rowspan="1" colspan="1">16.9 (15.6–18.0)</td>
+<td align="left" rowspan="1" colspan="1">22.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">60</td>
+<td align="left" rowspan="1" colspan="1">8.0 (7.1–8.9)</td>
+<td align="left" rowspan="1" colspan="1">10.0 (9.1–10.8)</td>
+<td align="left" rowspan="1" colspan="1">11.2 (10.3–11.9)</td>
+<td align="left" rowspan="1" colspan="1">11.5 (10.5–12.4)</td>
+<td align="left" rowspan="1" colspan="1">10.1 (9.3–10.8)</td>
+<td align="left" rowspan="1" colspan="1">14.8</td>
+<td align="left" rowspan="1" colspan="1">11.7 (10.4–12.8)</td>
+<td align="left" rowspan="1" colspan="1">14.3 (13.1–15.3)</td>
+<td align="left" rowspan="1" colspan="1">15.6 (14.6–16.5)</td>
+<td align="left" rowspan="1" colspan="1">16.4 (15.5–17.2)</td>
+<td align="left" rowspan="1" colspan="1">14.4 (13.3–15.3)</td>
+<td align="left" rowspan="1" colspan="1">19.1</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><p>95% confidence intervals are shown in brackets.</p></fn><fn id="nt102"><label>a</label><p>Standardised to the baseline CD4 distribution in <xref ref-type="table" rid="pmed-1001418-t001">Table 1</xref>.</p></fn></table-wrap-foot></table-wrap>
+<p><xref ref-type="fig" rid="pmed-1001418-g002">Figure 2</xref> shows the estimated fraction of patients starting ART who are expected to die from causes unrelated to HIV, if non-HIV mortality rates are the same in ART patients as they are in the HIV-negative population. This fraction was higher at older ages (up to 68% [95% CI: 58%–77%] in men and 80% [95% CI: 72%–87%] in women), as the estimated mortality rates in the HIV-negative population increased more steeply with respect to age than the excess HIV mortality rates in ART patients. The fraction was also higher in women than in men, because HIV-related mortality increased more steeply with respect to age in men than in women (<xref ref-type="table" rid="pmed-1001418-t001">Table 1</xref> of <xref ref-type="supplementary-material" rid="pmed.1001418.s003">Text S1</xref>).</p>
+<fig id="pmed-1001418-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001418.g002</object-id><label>Figure 2</label><caption>
+<title>Proportion of individuals starting ART who are expected to die from causes unrelated to HIV.</title>
+<p>Proportions are plotted by age at ART initiation and baseline CD4 count, for men (A) and women (B). Bars represent means, and error bars represent 95% confidence intervals.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001418.g002" position="float" xlink:type="simple"/></fig>
+<p>Life expectancies differed substantially between cohorts. For men starting ART at age 35 y, life expectancy varied between 16.6 y (95% CI: 14.4–19.2) and 28.6 y (95% CI: 26.2–30.3). Life expectancy in women starting ART at age 35 y varied between 23.6 y (95% CI: 21.4–25.9) and 35.5 y (95% CI: 33.3–36.9). The average life expectancies in <xref ref-type="table" rid="pmed-1001418-t002">Table 2</xref> were closest to those of the public sector programmes operating in urban areas.</p>
+<p>In the sensitivity analysis that included only patients with recorded ID (<italic>n</italic> = 30,287), total PYO increased (83,199 PYO) and average follow-up time increased (2.75 y) because of the later analysis closure date. In these patients, 1,451 deaths were recorded through patient record systems, and a further 3,760 were identified through the national population register, yielding a crude mortality rate of 62.6 per 1,000 PYO. Modelled mortality rates were lower in patients starting ART after 2006 than in patients starting ART in 2006 or earlier, and life expectancies were therefore calculated separately for the two enrolment periods. Women with recorded ID who started ART in 2006 or earlier had similar life expectancies to those in the main analysis, but men with recorded ID who started ART in 2006 or earlier had life expectancies about 12% higher than those in the main analysis (<xref ref-type="table" rid="pmed-1001418-t003">Table 3</xref>). Life expectancies in patients with IDs who started ART after 2006 were in turn higher than those in patients with IDs who started ART before or in 2006 (<xref ref-type="table" rid="pmed-1001418-t003">Table 3</xref>; <xref ref-type="fig" rid="pmed-1001418-g003">Figure 3</xref>). In the subset of these patients starting ART after 2006 with baseline CD4 counts ≥200 cells/µl, life expectancies were between 82% (95% CI: 77%–87%) and 88% (95% CI: 84%–91%) of those in HIV-negative individuals of the same age and sex.</p>
+<fig id="pmed-1001418-g003" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001418.g003</object-id><label>Figure 3</label><caption>
+<title>Life expectancies of patients with recorded ID, starting ART after 2006.</title>
+<p>Life expectancies are plotted by age at ART initiation and baseline CD4 count, for men (A) and women (B). Bars represent means, and error bars represent 95% confidence intervals.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001418.g003" position="float" xlink:type="simple"/></fig><table-wrap id="pmed-1001418-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001418.t003</object-id><label>Table 3</label><caption>
+<title>Sensitivity analysis of life expectancies.</title>
+</caption><alternatives><graphic id="pmed-1001418-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001418.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="2" align="left" rowspan="1">Patients with Recorded ID</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Sex and Age</td>
+<td align="left" rowspan="1" colspan="1">Main Analysis</td>
+<td align="left" rowspan="1" colspan="1">Started ART in 2006 or Earlier</td>
+<td align="left" rowspan="1" colspan="1">Started ART after 2006</td>
+<td align="left" rowspan="1" colspan="1">Patients Who Have Survived 24 mo after ART Start</td>
+<td align="left" rowspan="1" colspan="1">Abridged Life Table Method</td>
+<td align="left" rowspan="1" colspan="1">Multiple Imputation of Missing CD4 Counts<xref ref-type="table-fn" rid="nt104">a</xref></td>
+<td align="left" rowspan="1" colspan="1">Negative Binomial Model</td>
+<td align="left" rowspan="1" colspan="1">Non-HIV Mortality Rates Increased by 50%</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Men</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age 25 y</td>
+<td align="left" rowspan="1" colspan="1">25.3 (23.3–27.5)</td>
+<td align="left" rowspan="1" colspan="1">28.4 (26.7–30.0)</td>
+<td align="left" rowspan="1" colspan="1">30.6 (28.8–32.3)</td>
+<td align="left" rowspan="1" colspan="1">30.2 (27.8–32.8)</td>
+<td align="left" rowspan="1" colspan="1">12.0 (11.2–12.8)</td>
+<td align="left" rowspan="1" colspan="1">25.6 (23.7–27.5)</td>
+<td align="left" rowspan="1" colspan="1">25.2 (23.0–27.6)</td>
+<td align="left" rowspan="1" colspan="1">24.4 (22.6–26.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age 35 y</td>
+<td align="left" rowspan="1" colspan="1">20.7 (19.3–22.4)</td>
+<td align="left" rowspan="1" colspan="1">23.3 (22.2–24.5)</td>
+<td align="left" rowspan="1" colspan="1">25.0 (23.7–26.1)</td>
+<td align="left" rowspan="1" colspan="1">24.9 (23.0–26.9)</td>
+<td align="left" rowspan="1" colspan="1">11.7 (11.1–12.4)</td>
+<td align="left" rowspan="1" colspan="1">20.9 (19.5–22.5)</td>
+<td align="left" rowspan="1" colspan="1">20.7 (19.1–22.5)</td>
+<td align="left" rowspan="1" colspan="1">19.8 (18.6–21.2)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age 45 y</td>
+<td align="left" rowspan="1" colspan="1">16.2 (15.0–17.5)</td>
+<td align="left" rowspan="1" colspan="1">18.1 (17.3–19.0)</td>
+<td align="left" rowspan="1" colspan="1">19.2 (18.4–20.0)</td>
+<td align="left" rowspan="1" colspan="1">19.5 (18.0–21.0)</td>
+<td align="left" rowspan="1" colspan="1">10.2 (9.4–11.3)</td>
+<td align="left" rowspan="1" colspan="1">16.3 (15.2–17.4)</td>
+<td align="left" rowspan="1" colspan="1">16.2 (14.8–17.5)</td>
+<td align="left" rowspan="1" colspan="1">15.1 (14.2–16.0)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age 55 y</td>
+<td align="left" rowspan="1" colspan="1">12.0 (11.1–12.9)</td>
+<td align="left" rowspan="1" colspan="1">13.3 (12.7–13.9)</td>
+<td align="left" rowspan="1" colspan="1">14.0 (13.4–14.5)</td>
+<td align="left" rowspan="1" colspan="1">14.5 (13.4–15.5)</td>
+<td align="left" rowspan="1" colspan="1">9.6 (8.3–11.6)</td>
+<td align="left" rowspan="1" colspan="1">12.0 (11.2–12.8)</td>
+<td align="left" rowspan="1" colspan="1">12.0 (11.0–12.9)</td>
+<td align="left" rowspan="1" colspan="1">10.8 (10.2–11.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Women</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age 25 y</td>
+<td align="left" rowspan="1" colspan="1">33.9 (31.5–36.5)</td>
+<td align="left" rowspan="1" colspan="1">34.3 (32.3–36.2)</td>
+<td align="left" rowspan="1" colspan="1">35.9 (33.8–37.8)</td>
+<td align="left" rowspan="1" colspan="1">39.1 (36.7–41.4)</td>
+<td align="left" rowspan="1" colspan="1">15.6 (14.9–16.9)</td>
+<td align="left" rowspan="1" colspan="1">34.0 (31.9–36.0)</td>
+<td align="left" rowspan="1" colspan="1">33.7 (30.7–36.5)</td>
+<td align="left" rowspan="1" colspan="1">32.3 (30.3–34.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age 35 y</td>
+<td align="left" rowspan="1" colspan="1">28.1 (26.1–30.1)</td>
+<td align="left" rowspan="1" colspan="1">28.6 (26.8–30.0)</td>
+<td align="left" rowspan="1" colspan="1">29.7 (28.1–31.2)</td>
+<td align="left" rowspan="1" colspan="1">32.4 (30.6–34.3)</td>
+<td align="left" rowspan="1" colspan="1">14.5 (13.5–16.3)</td>
+<td align="left" rowspan="1" colspan="1">28.1 (26.5–29.6)</td>
+<td align="left" rowspan="1" colspan="1">27.8 (25.4–30.0)</td>
+<td align="left" rowspan="1" colspan="1">26.4 (24.9–27.8)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age 45 y</td>
+<td align="left" rowspan="1" colspan="1">22.3 (20.7–23.9)</td>
+<td align="left" rowspan="1" colspan="1">22.7 (21.4–23.9)</td>
+<td align="left" rowspan="1" colspan="1">23.6 (22.3–24.7)</td>
+<td align="left" rowspan="1" colspan="1">25.9 (24.5–27.2)</td>
+<td align="left" rowspan="1" colspan="1">12.8 (11.3–15.5)</td>
+<td align="left" rowspan="1" colspan="1">22.4 (21.1–23.5)</td>
+<td align="left" rowspan="1" colspan="1">22.1 (20.2–23.7)</td>
+<td align="left" rowspan="1" colspan="1">20.4 (19.3–21.4)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age 55 y</td>
+<td align="left" rowspan="1" colspan="1">16.9 (15.6–18.0)</td>
+<td align="left" rowspan="1" colspan="1">17.2 (16.1–18.0)</td>
+<td align="left" rowspan="1" colspan="1">17.7 (16.7–18.5)</td>
+<td align="left" rowspan="1" colspan="1">19.6 (18.6–20.5)</td>
+<td align="left" rowspan="1" colspan="1">11.7 (9.0–16.3)</td>
+<td align="left" rowspan="1" colspan="1">16.9 (16.0–17.7)</td>
+<td align="left" rowspan="1" colspan="1">16.6 (15.2–17.7)</td>
+<td align="left" rowspan="1" colspan="1">14.9 (14.2–15.6)</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt103"><p>95% confidence intervals are shown in brackets. Main analysis includes all patients with CD4 measurements at time of ART initiation. Life expectancies in the main analysis are calculated from the time of ART initiation, using the relative survival method. All calculations are standardised to the baseline CD4 distribution in <xref ref-type="table" rid="pmed-1001418-t001">Table 1</xref>.</p></fn><fn id="nt104"><label>a</label><p>CD4 values were imputed for 6,156 (14.0%) eligible adults starting ART.</p></fn></table-wrap-foot></table-wrap>
+<p>Further sensitivity analyses are presented in <xref ref-type="table" rid="pmed-1001418-t003">Table 3</xref>. Estimates of life expectancy in patients who had survived 24 mo after starting ART were 15%–20% higher than those in patients of the same age who had just started ART. The use of the abridged life table method led to substantially lower estimates of life expectancy in patients starting ART at young ages, compared with the relative survival approach; the differences between the abridged life table and relative survival estimates were less substantial in patients starting ART at older ages. The use of multiple imputation to assign baseline CD4 values to individuals with missing information led to almost no change in life expectancy. The use of negative binomial models in place of Poisson models also produced almost identical model results. After refitting the model with 50% higher non-HIV mortality rates, life expectancy estimates were reduced by 1–2 y. Further comparison of different model estimates by CD4 strata is included in sections 7–12 of <xref ref-type="supplementary-material" rid="pmed.1001418.s003">Text S1</xref>.</p>
+</sec><sec id="s4">
+<title>Discussion</title>
+<p>This analysis shows that South African patients starting ART have life expectancies around 80% of normal life expectancy, provided that they start treatment before their CD4 count drops below 200 cells/µl. Life expectancies are also 15%–20% higher in patients who have survived to 24 mo after starting ART than in patients of the same age who have just started therapy. Although these results are encouraging, programmes in resource-limited settings experience major challenges with late diagnosis, low uptake of CD4 testing, loss from pre-ART care, and delayed ART initiation <xref ref-type="bibr" rid="pmed.1001418-Rosen1">[42]</xref>. Individuals who start ART also frequently interrupt treatment in the South African setting <xref ref-type="bibr" rid="pmed.1001418-Kranzer1">[43]</xref>, and these interruptions are often associated with poorer immunological recovery and the development of drug resistance <xref ref-type="bibr" rid="pmed.1001418-Kranzer2">[44]</xref>. Health services need to overcome these challenges if near-normal life expectancies are to be achieved for the majority of HIV-positive South Africans.</p>
+<p>South African treatment guidelines have recently changed, and it is now recommended that all HIV-infected adults should start ART when their CD4 counts fall below 350 cells/µl. Recent campaigns to increase the uptake of HIV testing <xref ref-type="bibr" rid="pmed.1001418-Pillay1">[45]</xref> combined with dramatic growth in rates of ART enrolment in South Africa <xref ref-type="bibr" rid="pmed.1001418-Johnson2">[27]</xref> should lead to a substantially increased proportion of patients starting ART at CD4 counts above 200 cells/µl. However, over the period to which this analysis relates, most of the patients starting ART at CD4 counts above 200 cells/µl did so because they qualified for treatment on clinical grounds. Such patients are likely to experience higher mortality than asymptomatic patients with CD4 counts above 200 cells/µl <xref ref-type="bibr" rid="pmed.1001418-Brinkhof2">[46]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Egger2">[47]</xref>. These estimates of life expectancy for adults who have initiated ART with CD4 counts above 200 cells/µl may therefore be underestimates of the life expectancies in future, when a greater fraction of such individuals are likely to be asymptomatic.</p>
+<p>A key strength of this analysis is that it incorporates data from the South African population register to obtain more accurate estimates of mortality than are usually possible in African countries. Because patients with ID information are not censored at the date of loss to follow-up, these estimates of life expectancy are inclusive of patients who are not retained in care. However, there is likely to be a small proportion of deaths (probably around 5%) that are recorded neither in the patient record system nor in the vital registration system. Although this figure is lower than the proportion of deaths missing from the vital registration system because of the added information from patient record systems, it may nevertheless lead to life expectancies of ART patients being slightly exaggerated.</p>
+<p>Predicting future mortality for HIV-positive patients on ART is challenging. In addition to the historical bias towards enrolment of symptomatic patients, mentioned previously, our mortality estimates do not take into account potential future reductions in mortality that may occur as new drugs and salvage regimens <xref ref-type="bibr" rid="pmed.1001418-Taiwo1">[48]</xref> and innovations in patient management are introduced <xref ref-type="bibr" rid="pmed.1001418-Brnighausen1">[49]</xref>. In the sensitivity analysis that was limited to patients with recorded IDs, we found higher life expectancies in patients who started ART after 2006 than in patients starting ART in or before 2006. This result may be due to a change in the disease severity of patients starting ART over time (a factor that we have not fully controlled for) or possibly improvements in regimen options and patient management.</p>
+<p>A limitation of this analysis is the short average duration of follow-up (1.84 y), which we have addressed by controlling for differences in mortality by duration. Our method of controlling for differences by duration is based on the assumption that mortality rates are piecewise constant over 1-y duration intervals. To the extent that there is residual variation in mortality by duration, for which we have not fully controlled, our method will be biased towards overestimating mortality when the average follow-up time is short, because the observation time in each duration interval will be weighted toward the lower end of the interval, where mortality rates are likely to be highest. This bias is evident when comparing the results from the main analysis with the results from the analysis that is limited to patients with IDs; the longer average follow-up time (2.75 y) leads to slightly lower mortality rates over each duration interval (results not shown) and hence increased life expectancies. Due to the small number of patients on ART at long durations, mortality data have been aggregated for all durations greater than 36 mo. This approach may be reasonable, as average CD4 counts tend to stabilise after the first 36 mo of treatment <xref ref-type="bibr" rid="pmed.1001418-Nash1">[50]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Lok1">[51]</xref>. However, if HIV-related mortality continues to decline with increasing duration, the lack of data at long durations could result in some underestimation of life expectancy. On the other hand, the accumulation of drug resistance mutations at longer durations could cause long-term increases in HIV-related mortality, and mathematical modelling suggests that life expectancy may be sensitive to the number of treatment options available <xref ref-type="bibr" rid="pmed.1001418-King1">[52]</xref>.</p>
+<p>The principle advantage of the relative survival model, compared with the abridged life table method that is more commonly used in the estimation of life expectancy, is that it adjusts for differences in mortality by duration, which are particularly marked in resource-limited settings <xref ref-type="bibr" rid="pmed.1001418-Braitstein1">[53]</xref>. Although both of the measures presented here are period life expectancies rather than cohort life expectancies <xref ref-type="bibr" rid="pmed.1001418-Wilmoth1">[54]</xref>, controlling for differences in mortality by duration yields average survival times closer to those that might be expected in actual cohorts of patients initiating ART. Not controlling for duration means that the life expectancies represent the expected survival if age-specific mortality rates in the future were to remain unchanged at the high average levels measured between 2001 and 2010, which means that the abridged life table method gives too much weight to the high mortality rates soon after ART initiation. Another advantage of the relative survival approach is that it incorporates information on non-HIV mortality in the general population, which is likely to be relatively more significant at older ages. This analysis suggests that a substantial proportion of deaths in ART patients are likely to be unrelated to their HIV infection. It is therefore important that comparisons of life expectancies of HIV patients in different regions take into account differences in non-HIV mortality between settings, and the relative survival model provides a framework within which this comparison can be achieved.</p>
+<p>Studies of life expectancies of ART patients in high-income countries that have excluded high-risk groups (people who inject drugs and patients starting ART in advanced disease) have generally estimated life expectancies that are 73%–99% of those in the general population <xref ref-type="bibr" rid="pmed.1001418-May1">[4]</xref>,<xref ref-type="bibr" rid="pmed.1001418-vanSighem1">[7]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Lohse1">[12]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Nakagawa1">[55]</xref>. However, studies that have not excluded high-risk groups have estimated life expectancies that are 51%–66% of those in the general population <xref ref-type="bibr" rid="pmed.1001418-McDavidHarrison1">[5]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Lohse1">[12]</xref>,<xref ref-type="bibr" rid="pmed.1001418-Losina1">[56]</xref>. These results are roughly consistent with our ratios: 62%–75% when all CD4 categories are combined, and 70%–86% when analysis is restricted to patients with baseline CD4 counts ≥200 cells/µl (<xref ref-type="fig" rid="pmed-1001418-g001">Figure 1</xref>). Our ratios become even higher (87%–96%) when considering patients who started ART with CD4 counts ≥200 cells/µl and who survived their first 2 y after ART initiation.</p>
+<p>Only one other study in Africa has estimated the life expectancy of patients starting ART <xref ref-type="bibr" rid="pmed.1001418-Mills1">[14]</xref>. This study, conducted in Uganda, estimated lower life expectancy in patients starting ART at young ages, compared with our South African estimates, but generated higher estimates than those obtained in South Africa for patients starting ART at older ages. These differences may be partly attributable to differences in methodology, as <xref ref-type="table" rid="pmed-1001418-t003">Table 3</xref> shows that the abridged life table method (used in the Ugandan study) is likely to generate lower estimates of life expectancy at younger ages. Some of the difference may also be attributable to differences in baseline CD4 counts, which were generally higher in Uganda (the proportion with baseline CD4 count ≥100 cells/µl was 65%, compared to 52% in South Africa). Some of the difference may also be explained by differences in the approach to determining the mortality of patients LTFU, which was assumed to be 30% in the Ugandan analysis.</p>
+<p>The generalisability of our findings—even within South Africa—is open to question. The South African cohorts participating in the IeDEA-SA Collaboration are relatively well-resourced programmes with substantial research support, mostly in urban centres. Life expectancies differed between cohorts because of differences in patients' socioeconomic characteristics as well as differences in models of ART delivery. The average results that we have presented are likely to be typical of public sector programmes in urban areas, but mortality rates may differ in rural treatment programmes and in private sector programmes. The assumption that the average non-HIV mortality rates in South Africa apply in all cohorts could also be problematic, although estimates of life expectancy did not change substantially when the model was refitted with 50% higher non-HIV mortality rates. These findings might not be typical of programmes in most other African countries, as South Africa is an upper middle-income country with rates of non-HIV mortality lower than in most other African countries <xref ref-type="bibr" rid="pmed.1001418-United1">[57]</xref>. HIV-related mortality in South African ART patients may also be lower than in other African countries due to virological monitoring of ART patients, which is routine in South Africa but not in most other African countries <xref ref-type="bibr" rid="pmed.1001418-Keiser2">[58]</xref>.</p>
+<p>These results have important implications for the pricing models used by life insurance companies, as well as the demographic and epidemiological models that are used to forecast the impact and cost of ART programmes in low- and middle-income countries. These models have typically assumed that life expectancy after ART initiation is around 10 y <xref ref-type="bibr" rid="pmed.1001418-Mahy1">[17]</xref>–<xref ref-type="bibr" rid="pmed.1001418-Johnson1">[19]</xref>. Assumptions of longer life expectancy would significantly reduce the forecasts of AIDS mortality, but would also significantly increase long-term projections of numbers of patients receiving ART. With the anticipated increase in the fraction of patients starting ART at higher CD4 counts in future, long-term survival can be expected to increase even further. It is therefore critical that appropriate funding systems and innovative ways to reduce costs are put in place, to ensure the long-term sustainability of ART delivery in low- and middle-income countries.</p>
+</sec><sec id="s6">
+<title>Supporting Information</title>
+<supplementary-material id="pmed.1001418.s001" mimetype="application/pdf" xlink:href="info:doi/10.1371/journal.pmed.1001418.s001" position="float" xlink:type="simple"><label>Figure S1</label><caption>
+<p><bold>Cumulative survival after ART initiation, compared to age-standardised survival rates in the HIV-negative population.</bold> HIV-positive survival curves are calculated by grouping all ages and cohorts together and applying Kaplan-Meier methods to calculate proportions surviving, after including data from the national population register and applying inverse probability weighting. HIV-negative survival curves are calculated for a hypothetical cohort with the same initial age distribution as the HIV-positive cohort.</p>
+<p>(PDF)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1001418.s002" mimetype="application/pdf" xlink:href="info:doi/10.1371/journal.pmed.1001418.s002" position="float" xlink:type="simple"><label>Figure S2</label><caption>
+<p><bold>Annual mortality rates stratified by age, sex, and time since ART initiation.</bold> Dots represent observed mortality rates, standardised to the CD4 distribution in <xref ref-type="table" rid="pmed-1001418-t001">Table 1</xref> and calculated over 5-y age groups. Vertical lines represent 95% confidence intervals.</p>
+<p>(PDF)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1001418.s003" mimetype="application/pdf" xlink:href="info:doi/10.1371/journal.pmed.1001418.s003" position="float" xlink:type="simple"><label>Text S1</label><caption>
+<p><bold>Technical appendix.</bold></p>
+<p>(PDF)</p>
+</caption></supplementary-material></sec></body>
+<back>
+<ack>
+<p>We are grateful to Ria Laubscher and her colleagues at the South African Medical Research Council for providing vital status data from the South African population register. We also thank Marie-Louise Newell for helpful comments.</p>
+<sec>
+<title>Contributors</title>
+<p><bold>IeDEA-SA Steering Group</bold></p>
+<p>Daniela Belen Garone, Khayelitsha ART Programme and Médecins Sans Frontières, Cape Town, South Africa; Benjamin Chi, Centre for Infectious Disease Research in Zambia, Lusaka, Zambia; Cleophas Chimbetete, Newlands Clinic, Harare, Zimbabwe; Diana Dickinson, Independent Surgery, Gaborone, Botswana; Brian Eley, Red Cross War Memorial Children's Hospital and School of Child and Adolescent Health, University of Cape Town, Cape Town, South Africa; Christiane Fritz, SolidarMed SMART Programme, Masvingo, Zimbabwe; Janet Giddy, McCord Hospital, Durban, South Africa; Chris Hoffmann, Aurum Institute, Johannesburg, South Africa; Patrick MacPhail, Themba Lethu Clinic, Johannesburg, South Africa; Harry Moultrie, Harriet Shezi Clinic, Chris Hani Baragwanath Hospital, Soweto, South Africa; James Ndirangu, Africa Centre for Health and Population Studies, University of KwaZulu-Natal, Mtubatuba, South Africa; Sabrina Pestili, SolidarMed SMART Programme, Chiure, Mozambique; Sam Phiri, Lighthouse Trust Clinic, Lilongwe, Malawi; Hans Prozesky, Tygerberg Academic Hospital, University of Stellenbosch, Cape Town, South Africa; Karl Technau, Empilweni Clinic, Rahima Moosa Mother and Child Hospital, Johannesburg, South Africa; Joep van Oosterhout, Queen Elizabeth Hospital, Blantyre, Malawi; Robin Wood, Desmond Tutu HIV Centre (Gugulethu and Masiphumelele clinics), Cape Town, South Africa.</p>
+<p><bold>IeDEA-SA Data Centres</bold></p>
+<p>Matthias Egger (Principal Investigator), Mary-Ann Davies (Principal Investigator), Julia Bohlius, Nello Blaser, Andrew Boulle, Lucy Campbell, Morna Cornell, Janne Estill, Béatrice Fatzer, Lukas Fenner, Claire Graber, Thomas Gsponer, Leigh Johnson, Fritz Kaeser, Olivia Keiser, Nicola Maxwell, Landon Myer, Franziska Schöni-Affolter, Michael Schomaker, Gilles Wandeler.</p>
+</sec></ack>
+<ref-list>
+<title>References</title>
+<ref id="pmed.1001418-Hallett1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hallett</surname><given-names>TB</given-names></name>, <name name-style="western"><surname>Gregson</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Dube</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Mapfeka</surname><given-names>ES</given-names></name>, <name name-style="western"><surname>Mugurungi</surname><given-names>O</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Estimating the resources required in the roll-out of universal access to antiretroviral treatment in Zimbabwe</article-title>. <source>Sex Transm Infect</source> <volume>87</volume>: <fpage>621</fpage>–<lpage>628</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Resch1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Resch</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Korenromp</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Stover</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Blakley</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Krubiner</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Economic returns to investment in AIDS treatment in low and middle income countries</article-title>. <source>PLoS ONE</source> <volume>6</volume>: <fpage>e25310</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0025310" xlink:type="simple">10.1371/journal.pone.0025310</ext-link></comment>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Schackman1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schackman</surname><given-names>BR</given-names></name>, <name name-style="western"><surname>Gebo</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>Walensky</surname><given-names>RP</given-names></name>, <name name-style="western"><surname>Losina</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Muccio</surname><given-names>T</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>The lifetime cost of current human immunodeficiency virus care in the United States</article-title>. <source>Med Care</source> <volume>44</volume>: <fpage>990</fpage>–<lpage>997</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-May1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>May</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Gompels</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Delpech</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Porter</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Post</surname><given-names>F</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Impact of late diagnosis and treatment on life expectancy in people with HIV-1: UK Collaborative HIV Cohort (UK CHIC) Study</article-title>. <source>BMJ</source> <volume>343</volume>: <fpage>d6016</fpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-McDavidHarrison1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McDavid Harrison</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Song</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>X</given-names></name> (<year>2010</year>) <article-title>Life expectancy after HIV diagnosis based on national HIV surveillance data from 25 states, United States</article-title>. <source>J Acquir Immun Defic Syndr</source> <volume>53</volume>: <fpage>124</fpage>–<lpage>130</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Hogg1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hogg</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Lima</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Sterne</surname><given-names>JAC</given-names></name>, <name name-style="western"><surname>Grabar</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Battegay</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Life expectancy of individuals on combination antiretroviral therapy in high-income countries: a collaborative analysis of 14 cohort studies</article-title>. <source>Lancet</source> <volume>372</volume>: <fpage>293</fpage>–<lpage>299</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-vanSighem1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>van Sighem</surname><given-names>AI</given-names></name>, <name name-style="western"><surname>Gras</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Reiss</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Brinkman</surname><given-names>K</given-names></name>, <name name-style="western"><surname>de Wolf</surname><given-names>F</given-names></name> (<year>2010</year>) <article-title>Life expectancy of recently diagnosed asymptomatic HIV-infected patients approaches that of uninfected individuals</article-title>. <source>AIDS</source> <volume>24</volume>: <fpage>1527</fpage>–<lpage>1535</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Lima1"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lima</surname><given-names>VD</given-names></name>, <name name-style="western"><surname>Hogg</surname><given-names>RS</given-names></name>, <name name-style="western"><surname>Harrigan</surname><given-names>PR</given-names></name>, <name name-style="western"><surname>Moore</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Yip</surname><given-names>B</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Continued improvement in survival among HIV-infected individuals with newer forms of highly active antiretroviral therapy</article-title>. <source>AIDS</source> <volume>21</volume>: <fpage>685</fpage>–<lpage>692</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-LloydSmith1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lloyd-Smith</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Brodkin</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Wood</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Kerr</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Tyndall</surname><given-names>MW</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Impact of HAART and injection drug use on life expectancy of two HIV-positive cohorts in British Columbia</article-title>. <source>AIDS</source> <volume>20</volume>: <fpage>445</fpage>–<lpage>450</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Fang1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fang</surname><given-names>CT</given-names></name>, <name name-style="western"><surname>Chang</surname><given-names>YY</given-names></name>, <name name-style="western"><surname>Hsu</surname><given-names>HM</given-names></name>, <name name-style="western"><surname>Twu</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>KT</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Life expectancy of patients with newly-diagnosed HIV infection in the era of highly active antiretroviral therapy</article-title>. <source>Q J Med</source> <volume>100</volume>: <fpage>97</fpage>–<lpage>105</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Keiser1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Keiser</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Taffé</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Zwahlen</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Battegay</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Bernasconi</surname><given-names>E</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>All cause mortality in the Swiss HIV Cohort Study from 1990 to 2001 in comparison with the Swiss population</article-title>. <source>AIDS</source> <volume>18</volume>: <fpage>1835</fpage>–<lpage>1843</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Lohse1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lohse</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Hansen</surname><given-names>AB</given-names></name>, <name name-style="western"><surname>Pedersen</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Kronborg</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Gerstoft</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Survival of persons with and without HIV infection in Denmark, 1995–2005</article-title>. <source>Ann Intern Med</source> <volume>146</volume>: <fpage>87</fpage>–<lpage>95</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Wada1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wada</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Jacobson</surname><given-names>LP</given-names></name>, <name name-style="western"><surname>Cohen</surname><given-names>M</given-names></name>, <name name-style="western"><surname>French</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Phair</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Cause-specific life expectancies after age 35 for HIV-infected and HIV-negative individuals followed simultaneously in long-term cohort studies: 1984–2008</article-title>. <source>Am J Epidemiol</source> <volume>177</volume>: <fpage>116</fpage>–<lpage>125</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Mills1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mills</surname><given-names>EJ</given-names></name>, <name name-style="western"><surname>Bakanda</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Birungi</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Chan</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Ford</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Life expectancy of persons receiving combination antiretroviral therapy in low-income countries: a cohort analysis from Uganda</article-title>. <source>Ann Intern Med</source> <volume>155</volume>: <fpage>209</fpage>–<lpage>216</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Fox1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fox</surname><given-names>MP</given-names></name>, <name name-style="western"><surname>Rosen</surname><given-names>S</given-names></name> (<year>2010</year>) <article-title>Patient retention in antiretroviral therapy programs up to three years on treatment in sub-Saharan Africa, 2007–2009: systematic review</article-title>. <source>Trop Med Int Health</source> <volume>15</volume> (<issue>Suppl 1</issue>) <fpage>1</fpage>–<lpage>15</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Brinkhof1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brinkhof</surname><given-names>MW</given-names></name>, <name name-style="western"><surname>Pujades-Rodriguez</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Egger</surname><given-names>M</given-names></name> (<year>2009</year>) <article-title>Mortality of patients lost to follow-up in antiretroviral treatment programmes in resource-limited settings: systematic review and meta-analysis</article-title>. <source>PLoS ONE</source> <volume>4</volume>: <fpage>e5790</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0005790" xlink:type="simple">10.1371/journal.pone.0005790</ext-link></comment>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Mahy1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mahy</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Lewden</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Brinkhof</surname><given-names>MW</given-names></name>, <name name-style="western"><surname>Dabis</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Tassie</surname><given-names>JM</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Derivation of parameters used in Spectrum for eligibility for antiretroviral therapy and survival on antiretroviral therapy</article-title>. <source>Sex Transm Infect</source> <volume>86</volume> (<issue>Suppl 2</issue>) <fpage>ii28</fpage>–<lpage>ii34</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Walensky1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Walensky</surname><given-names>RP</given-names></name>, <name name-style="western"><surname>Wood</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Ciaranello</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Paltiel</surname><given-names>AD</given-names></name>, <name name-style="western"><surname>Lorenzana</surname><given-names>SB</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Scaling up the 2010 World Health Organization HIV treatment guidelines in resource-limited settings: a model-based analysis</article-title>. <source>PLoS Med</source> <volume>7</volume>: <fpage>e1000382</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1000382" xlink:type="simple">10.1371/journal.pmed.1000382</ext-link></comment>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Johnson1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Johnson</surname><given-names>LF</given-names></name>, <name name-style="western"><surname>Dorrington</surname><given-names>RE</given-names></name> (<year>2006</year>) <article-title>Modelling the demographic impact of HIV/AIDS in South Africa and the likely impact of interventions</article-title>. <source>Demogr Res</source> <volume>14</volume>: <fpage>541</fpage>–<lpage>574</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Dorrington1"><label>20</label>
+<mixed-citation publication-type="other" xlink:type="simple">Dorrington RE, Bourne D, Bradshaw D, Laubscher R, Timæus IM (2001) The impact of HIV/AIDS on adult mortality in South Africa. Cape Town: South African Medical Research Council. Available: <ext-link ext-link-type="uri" xlink:href="http://www.mrc.ac.za/bod/complete.pdf" xlink:type="simple">http://www.mrc.ac.za/bod/complete.pdf</ext-link>. Accessed 30 July 2012.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Boulle1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Boulle</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Van Cutsem</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Hilderbrand</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Cragg</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Abrahams</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Seven year experience of a primary care antiretroviral treatment programme in Khayelitsha, South Africa</article-title>. <source>AIDS</source> <volume>24</volume>: <fpage>563</fpage>–<lpage>572</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Fox2"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fox</surname><given-names>MP</given-names></name>, <name name-style="western"><surname>Brennan</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Maskew</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Macphail</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Sanne</surname><given-names>I</given-names></name> (<year>2010</year>) <article-title>Using vital registration data to update mortality among patients lost to follow-up from ART programmes: evidence from the Themba Lethu Clinic, South Africa</article-title>. <source>Trop Med Int Health</source> <volume>15</volume>: <fpage>405</fpage>–<lpage>413</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Dorrington2"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dorrington</surname><given-names>RE</given-names></name>, <name name-style="western"><surname>Bradshaw</surname><given-names>D</given-names></name> (<year>2011</year>) <article-title>Maternal mortality in South Africa: lessons from a case study in the use of deaths reported by households in censuses and surveys</article-title>. <source>J Popul Res</source> <volume>28</volume>: <fpage>49</fpage>–<lpage>73</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Setel1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Setel</surname><given-names>PW</given-names></name>, <name name-style="western"><surname>Macfarlane</surname><given-names>SB</given-names></name>, <name name-style="western"><surname>Szreter</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Mikkelsen</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Jha</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>A scandal of invisibility: making everyone count by counting everyone</article-title>. <source>Lancet</source> <volume>370</volume>: <fpage>1569</fpage>–<lpage>1577</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Birnbaum1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Birnbaum</surname><given-names>JK</given-names></name>, <name name-style="western"><surname>Murray</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Lozano</surname><given-names>R</given-names></name> (<year>2011</year>) <article-title>Exposing misclassified HIV/AIDS deaths in South Africa</article-title>. <source>Bull World Health Organ</source> <volume>89</volume>: <fpage>278</fpage>–<lpage>285</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Herbst1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Herbst</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Mafojane</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Newell</surname><given-names>ML</given-names></name> (<year>2011</year>) <article-title>Verbal autopsy-based cause-specific mortality trends in rural KwaZulu-Natal, South Africa, 2000–2009</article-title>. <source>Popul Health Metr</source> <volume>9</volume>: <fpage>47</fpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Johnson2"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Johnson</surname><given-names>LF</given-names></name> (<year>2012</year>) <article-title>Access to antiretroviral treatment in South Africa, 2004–2011</article-title>. <source>South Afr J HIV Med</source> <volume>13</volume>: <fpage>22</fpage>–<lpage>27</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Egger1"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Egger</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Ekouevi</surname><given-names>DK</given-names></name>, <name name-style="western"><surname>Williams</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Lyamuya</surname><given-names>RE</given-names></name>, <name name-style="western"><surname>Mukumbi</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Cohort profile: the International Epidemiological Databases to Evaluate AIDS (IeDEA) in sub-Saharan Africa</article-title>. <source>Int J Epidemiol</source> <volume>41</volume>: <fpage>1256</fpage>–<lpage>1264</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Cornell1"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cornell</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Technau</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Fairall</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Wood</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Moultrie</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Monitoring the South African antiretroviral programme 2003–2007: the IeDEA Southern Africa Collaboration</article-title>. <source>S Afr Med J</source> <volume>99</volume>: <fpage>653</fpage>–<lpage>660</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Cornell2"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cornell</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Grimsrud</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Fairall</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Fox</surname><given-names>MP</given-names></name>, <name name-style="western"><surname>van Cutsem</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Temporal changes in programme outcomes among adult patients initiating antiretroviral therapy across South Africa, 2002–2007</article-title>. <source>AIDS</source> <volume>24</volume>: <fpage>2263</fpage>–<lpage>2270</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Department1"><label>31</label>
+<mixed-citation publication-type="other" xlink:type="simple">Department of Health (2003) Operational plan for comprehensive HIV and AIDS care, management and treatment for South Africa. Available: <ext-link ext-link-type="uri" xlink:href="http://www.info.gov.za/otherdocs/2003/aidsplan/report.pdf" xlink:type="simple">http://www.info.gov.za/otherdocs/2003/aidsplan/report.pdf</ext-link>. Accessed 4 March 2013.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-VanCutsem1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Van Cutsem</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Ford</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Hildebrand</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Goemaere</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Mathee</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Correcting for mortality among patients lost to follow up on antiretroviral therapy in South Africa: a cohort analysis</article-title>. <source>PLoS ONE</source> <volume>6</volume>: <fpage>e14684</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0014684" xlink:type="simple">10.1371/journal.pone.0014684</ext-link></comment>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Frangakis1"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Frangakis</surname><given-names>CE</given-names></name>, <name name-style="western"><surname>Rubin</surname><given-names>DB</given-names></name> (<year>2001</year>) <article-title>Addressing an idiosyncrasy in estimating survival curves using double sampling in the presence of self-selected right censoring</article-title>. <source>Biometrics</source> <volume>57</volume>: <fpage>333</fpage>–<lpage>342</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Dickman1"><label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dickman</surname><given-names>PW</given-names></name>, <name name-style="western"><surname>Sloggett</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Hills</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hakulinen</surname><given-names>T</given-names></name> (<year>2004</year>) <article-title>Regression models for relative survival</article-title>. <source>Stat Med</source> <volume>23</volume>: <fpage>51</fpage>–<lpage>64</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Ederer1"><label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ederer</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Axtell</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Cutler</surname><given-names>SJ</given-names></name> (<year>1961</year>) <article-title>The relative survival rate: a statistical methodology</article-title>. <source>Natl Cancer Inst Monogr</source> <volume>6</volume>: <fpage>101</fpage>–<lpage>121</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Actuarial1"><label>36</label>
+<mixed-citation publication-type="other" xlink:type="simple">Actuarial Society of South Africa (2011) ASSA2008 model. Available: <ext-link ext-link-type="uri" xlink:href="http://aids.actuarialsociety.org.za/ASSA2008-Model-3480.htm" xlink:type="simple">http://aids.actuarialsociety.org.za/ASSA2008-Model-3480.htm</ext-link>. Accessed 8 March 2013.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Efron1"><label>37</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Efron</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Tibshirani</surname><given-names>R</given-names></name> (<year>1986</year>) <article-title>Bootstrap methods for standard errors, confidence intervals, and other measures of statistical accuracy</article-title>. <source>Stat Sci</source> <volume>1</volume>: <fpage>54</fpage>–<lpage>77</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Dean1"><label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dean</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Lawless</surname><given-names>JF</given-names></name> (<year>1989</year>) <article-title>Tests for detecting overdispersion in Poisson regression models</article-title>. <source>J Am Stat Assoc</source> <volume>84</volume>: <fpage>467</fpage>–<lpage>472</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Molenberghs1"><label>39</label>
+<mixed-citation publication-type="book" xlink:type="simple">Molenberghs G, Kenward MG (2007) Missing data in clinical studies. Chichester (United Kingdom): John Wiley &amp; Sons.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Chiang1"><label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chiang</surname><given-names>CL</given-names></name> (<year>1972</year>) <article-title>On constructing current life tables</article-title>. <source>J Am Stat Assoc</source> <volume>67</volume>: <fpage>538</fpage>–<lpage>541</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Chiang2"><label>41</label>
+<mixed-citation publication-type="other" xlink:type="simple">Chiang CL (1968) Introduction to stochastic processes in biostatistics. New York: John Wiley &amp; Sons.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Rosen1"><label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rosen</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Fox</surname><given-names>MP</given-names></name> (<year>2011</year>) <article-title>Retention in HIV care between testing and treatment in sub-Saharan Africa: a systematic review</article-title>. <source>PLoS Med</source> <volume>8</volume>: <fpage>e1001056</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001056" xlink:type="simple">10.1371/journal.pmed.1001056</ext-link></comment>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Kranzer1"><label>43</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kranzer</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Lewis</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Ford</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Zeinecker</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Orrell</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Treatment interruption in a primary care antiretroviral therapy program in South Africa: cohort analysis of trends and risk factors</article-title>. <source>J Acquir Immun Defic Syndr</source> <volume>55</volume>: <fpage>e17</fpage>–<lpage>e23</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Kranzer2"><label>44</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kranzer</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Ford</surname><given-names>N</given-names></name> (<year>2011</year>) <article-title>Unstructured treatment interruption of antiretroviral therapy in clinical practice: a systematic review</article-title>. <source>Trop Med Int Health</source> <volume>16</volume>: <fpage>1297</fpage>–<lpage>1313</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Pillay1"><label>45</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pillay</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>White</surname><given-names>C</given-names></name>, <name name-style="western"><surname>McCornick</surname><given-names>N</given-names></name> (<year>2012</year>) <article-title>How times have changed—HIV and AIDS in South Africa in 2011</article-title>. <source>S Afr Med J</source> <volume>102</volume>: <fpage>77</fpage>–<lpage>78</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Brinkhof2"><label>46</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brinkhof</surname><given-names>MW</given-names></name>, <name name-style="western"><surname>Boulle</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Weigel</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Messou</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Mathers</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Mortality of HIV-infected patients starting antiretroviral therapy in sub-Saharan Africa: comparison with HIV-unrelated mortality</article-title>. <source>PLoS Med</source> <volume>6</volume>: <fpage>e1000066</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1000066" xlink:type="simple">10.1371/journal.pmed.1000066</ext-link></comment>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Egger2"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Egger</surname><given-names>M</given-names></name>, <name name-style="western"><surname>May</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Chêne</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Phillips</surname><given-names>AN</given-names></name>, <name name-style="western"><surname>Ledergerber</surname><given-names>B</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>Prognosis of HIV-1-infected patients starting highly active antiretroviral therapy: a collaborative analysis of prospective studies</article-title>. <source>Lancet</source> <volume>360</volume>: <fpage>119</fpage>–<lpage>129</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Taiwo1"><label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Taiwo</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Murphy</surname><given-names>RL</given-names></name>, <name name-style="western"><surname>Katlama</surname><given-names>C</given-names></name> (<year>2010</year>) <article-title>Novel antiretroviral combinations in treatment-experienced patients with HIV infection: rationale and results</article-title>. <source>Drugs</source> <volume>70</volume>: <fpage>1629</fpage>–<lpage>1642</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Brnighausen1"><label>49</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bärnighausen</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Chaiyachati</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Chimbindi</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Peoples</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Haberer</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Interventions to increase antiretroviral adherence in sub-Saharan Africa: a systematic review of evaluation studies</article-title>. <source>Lancet Infect Dis</source> <volume>11</volume>: <fpage>942</fpage>–<lpage>951</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Nash1"><label>50</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nash</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Katyal</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Brinkhof</surname><given-names>MW</given-names></name>, <name name-style="western"><surname>Keiser</surname><given-names>O</given-names></name>, <name name-style="western"><surname>May</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Long-term immunologic response to antiretroviral therapy in low-income countries: a collaborative analysis of prospective studies</article-title>. <source>AIDS</source> <volume>22</volume>: <fpage>2291</fpage>–<lpage>2302</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Lok1"><label>51</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lok</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Bosch</surname><given-names>RJ</given-names></name>, <name name-style="western"><surname>Benson</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Collier</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Robbins</surname><given-names>GK</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Long-term increase in CD4+ T-cell counts during combination antiretroviral therapy for HIV-1 infection</article-title>. <source>AIDS</source> <volume>24</volume>: <fpage>1867</fpage>–<lpage>1876</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-King1"><label>52</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>King</surname><given-names>JT</given-names></name>, <name name-style="western"><surname>Justice</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Roberts</surname><given-names>MS</given-names></name>, <name name-style="western"><surname>Chang</surname><given-names>CC</given-names></name>, <name name-style="western"><surname>Fusco</surname><given-names>JS</given-names></name> (<year>2003</year>) <article-title>Long-term HIV/AIDS survival estimation in the highly active antiretroviral therapy era</article-title>. <source>Med Decis Making</source> <volume>23</volume>: <fpage>9</fpage>–<lpage>20</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Braitstein1"><label>53</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Braitstein</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Brinkhof</surname><given-names>MW</given-names></name>, <name name-style="western"><surname>Dabis</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Schechter</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Boulle</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Mortality of HIV-1-infected patients in the first year of antiretroviral therapy: comparison between low-income and high-income countries</article-title>. <source>Lancet</source> <volume>367</volume>: <fpage>817</fpage>–<lpage>824</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Wilmoth1"><label>54</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilmoth</surname><given-names>JR</given-names></name> (<year>2005</year>) <article-title>On the relationship between period and cohort mortality</article-title>. <source>Demogr Res</source> <volume>13</volume>: <fpage>231</fpage>–<lpage>280</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Nakagawa1"><label>55</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nakagawa</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Lodwick</surname><given-names>RK</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Cambiano</surname><given-names>V</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Projected life expectancy of people with HIV according to timing of diagnosis</article-title>. <source>AIDS</source> <volume>26</volume>: <fpage>335</fpage>–<lpage>343</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Losina1"><label>56</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Losina</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Schackman</surname><given-names>BR</given-names></name>, <name name-style="western"><surname>Sadownik</surname><given-names>SN</given-names></name>, <name name-style="western"><surname>Gebo</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>Walensky</surname><given-names>RP</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Racial and sex disparities in life expectancy losses among HIV-infected persons in the United States: impact of risk behavior, late initiation, and early discontinuation of antiretroviral therapy</article-title>. <source>Clin Infect Dis</source> <volume>49</volume>: <fpage>1570</fpage>–<lpage>1578</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-United1"><label>57</label>
+<mixed-citation publication-type="other" xlink:type="simple">United Nations Department of Economic and Social Affairs Population Division (2011) World population prospects: the 2010 revision. New York: United Nations Department of Economic and Social Affairs Population Division.</mixed-citation>
+</ref>
+<ref id="pmed.1001418-Keiser2"><label>58</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Keiser</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Chi</surname><given-names>BH</given-names></name>, <name name-style="western"><surname>Gsponer</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Boulle</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Orrell</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Outcomes of antiretroviral treatment in programmes with and without routine viral load monitoring in southern Africa</article-title>. <source>AIDS</source> <volume>25</volume>: <fpage>1761</fpage>–<lpage>1769</lpage>.</mixed-citation>
+</ref>
+</ref-list><glossary><title>Abbreviations</title><def-list><def-item>
+<term>ART</term>
+<def>
+<p>antiretroviral treatment</p>
+</def>
+</def-item><def-item>
+<term>ID</term>
+<def>
+<p>identity document</p>
+</def>
+</def-item><def-item>
+<term>IeDEA-SA</term>
+<def>
+<p>International Epidemiologic Databases to Evaluate AIDS Southern Africa</p>
+</def>
+</def-item><def-item>
+<term>LTFU</term>
+<def>
+<p>lost to follow-up</p>
+</def>
+</def-item><def-item>
+<term>PYO</term>
+<def>
+<p>person-years of observation</p>
+</def>
+</def-item></def-list></glossary></back>
+</article>

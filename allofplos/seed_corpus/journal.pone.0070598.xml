@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+	<front>
+		<journal-meta>
+    <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+    <journal-id journal-id-type="publisher-id">plos</journal-id>
+    <journal-id journal-id-type="pmc">plosone</journal-id>
+    <journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group>
+    <issn pub-type="epub">1932-6203</issn>
+    <publisher><publisher-name>Public Library of Science</publisher-name>
+    <publisher-loc>San Francisco, USA</publisher-loc></publisher>
+    </journal-meta><article-meta>
+			<article-id pub-id-type="publisher-id">PONE-D-13-07572</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0070598</article-id><article-categories><subj-group subj-group-type="heading">
+    <subject>Research Article</subject></subj-group></article-categories><title-group>
+				<article-title>In-Lake Processes Offset Increased Terrestrial Inputs of Dissolved Organic Carbon and Color to Lakes</article-title>
+			<alt-title alt-title-type="running-head">In-Lake Processing of Organic Carbon</alt-title>
+      </title-group>
+			<contrib-group>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Köhler</surname>
+						<given-names>Stephan J.</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+					<xref ref-type="corresp" rid="cor1"><sup>*</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Kothawala</surname>
+						<given-names>Dolly</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff2"><sup>2</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Futter</surname>
+						<given-names>Martyn N.</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Liungman</surname>
+						<given-names>Olof</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff3"><sup>3</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Tranvik</surname>
+						<given-names>Lars</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff2"><sup>2</sup></xref>
+				</contrib>
+			</contrib-group>
+			<aff id="aff1"><label>1</label> <addr-line>SLU Department of Aquatic Sciences and Assessment, Uppsala, Sweden</addr-line></aff>
+			<aff id="aff2"><label>2</label> <addr-line>Evolutionary Biology Center, Department of Limnology, Uppsala, Uppsala, Sweden</addr-line></aff>
+			<aff id="aff3"><label>3</label> <addr-line>DHI Water and Environment Pty Ltd. St George's Terrace, Sydney, Australia</addr-line></aff>
+			<contrib-group><contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Slomp</surname>
+            <given-names>Caroline P.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+        </contrib-group><aff id="edit1"><addr-line>Utrecht University, Netherlands</addr-line></aff><author-notes>
+				<corresp id="cor1">* E-mail: <email xlink:type="simple">stephan.kohler@slu.se</email></corresp>
+			<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn><fn fn-type="con"><p>Conceived and designed the experiments: SJK DK. Performed the experiments: SJK DK. Analyzed the data: SJK DK MNF. Contributed reagents/materials/analysis tools: SJK DK OL. Wrote the manuscript: SJK DK MNF LT. </p></fn></author-notes>
+			<pub-date pub-type="collection"><year>2013</year></pub-date><pub-date pub-type="epub">
+        <day>15</day>
+        <month>8</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume><issue>8</issue><elocation-id>e70598</elocation-id><history><date date-type="received">
+          <day>11</day>
+          <month>2</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>19</day>
+          <month>6</month>
+          <year>2013</year>
+        </date>
+      </history><permissions>
+        <copyright-year>2013</copyright-year><copyright-holder>Köhler et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license>
+        </permissions><abstract>
+				<p>Increased color in surface waters, or browning, can alter lake ecological function, lake thermal stratification and pose difficulties for drinking water treatment. Mechanisms suggested to cause browning include increased dissolved organic carbon (DOC) and iron concentrations, as well as a shift to more colored DOC. While browning of surface waters is widespread and well documented, little is known about why some lakes resist it. Here, we present a comprehensive study of Mälaren, the third largest lake in Sweden. In Mälaren, the vast majority of water and DOC enters a western lake basin, and after approximately 2.8 years, drains from an eastern basin. Despite 40 years of increased terrestrial inputs of colored substances to western lake basins, the eastern basin has resisted browning over this time period. Here we find the half-life of iron was far shorter (0.6 years) than colored organic matter (A<sub>420</sub> ; 1.7 years) and DOC as a whole (6.1 years). We found changes in filtered iron concentrations relate strongly to the observed loss of color in the western basins. In addition, we observed a substantial shift from colored DOC of terrestrial origin, to less colored autochthonous sources, with a substantial decrease in aromaticity (-17%) across the lake. We suggest that rapid losses of iron and colored DOC caused the limited browning observed in eastern lake basins. Across a wider dataset of 69 Swedish lakes, we observed greatest browning in acidic lakes with shorter retention times (&lt; 1.5 years). These findings suggest that water residence time, along with iron, pH and colored DOC may be of central importance when modeling and projecting changes in brownification on broader spatial scales.</p>
+			</abstract>
+		<funding-group><funding-statement>The authors thank the Swedish Research Council for Environment Agricultural Sciences and Spatial Planning (FORMAS) for funding the strong research environments project, The Color of Water. MNF was funded by the MISTRA FutureForests program. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group></article-meta>
+	</front>
+	<body>
+		<sec id="s1" sec-type="introduction">
+			<title>Introduction</title>
+			<p>Browning of surface waters has been reported from many studies across the northern hemisphere [<xref ref-type="bibr" rid="B1">1</xref>] It has been ascribed to increases in dissolved organic carbon (DOC) concentrations [<xref ref-type="bibr" rid="B2">2</xref>], increases in total iron [<xref ref-type="bibr" rid="B3">3</xref>], and changes in the light absorbing properties of dissolved organic matter (DOM) [<xref ref-type="bibr" rid="B4">4</xref>]. Multiple and possibly not mutually exclusive reasons for increased transport of DOC to surface waters have been presented, including drier climate [<xref ref-type="bibr" rid="B5">5</xref>], wetter climate [<xref ref-type="bibr" rid="B6">6</xref>], warmer temperatures [<xref ref-type="bibr" rid="B7">7</xref>] or declines in acid deposition [<xref ref-type="bibr" rid="B2">2</xref>]. Iron and its interactions with DOC are known to increase the color of surface waters [<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B10">10</xref>,<xref ref-type="bibr" rid="B11">11</xref>]. With increasing pH, iron will be bound strongly to colloidal organic matter [<xref ref-type="bibr" rid="B12">12</xref>], occur as colloidal ferrihydrate [<xref ref-type="bibr" rid="B13">13</xref>] or both [<xref ref-type="bibr" rid="B14">14</xref>]. These transformations of iron speciation may have profound consequences on both the concentration of DOC and color of surface waters. Increasing water color is a serious concern in regions that are dependent on surface waters for drinking water supply [<xref ref-type="bibr" rid="B15">15</xref>] as the cost of water treatment may increase, and chlorination of organic matter may produce carcinogenic compounds [<xref ref-type="bibr" rid="B16">16</xref>]. Darker water will alter lake thermal properties [<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B18">18</xref>] and potentially increase the number of algal blooms [<xref ref-type="bibr" rid="B19">19</xref>] or profoundly affect lake productivity at several trophic levels [<xref ref-type="bibr" rid="B20">20</xref>]. Inland waters have been recognized as an important source of carbon in the global carbon cycle [<xref ref-type="bibr" rid="B21">21</xref>] increasing DOC concentrations may change the internal carbon turnover in lakes and increase inorganic carbon fluxes to the atmosphere [<xref ref-type="bibr" rid="B22">22</xref>]. Removal of DOC from lake water may be due to microbial mineralization [<xref ref-type="bibr" rid="B23">23</xref>], flocculation [<xref ref-type="bibr" rid="B24">24</xref>] or photolytic processing [<xref ref-type="bibr" rid="B25">25</xref>,<xref ref-type="bibr" rid="B26">26</xref>]. The magnitude of these in-lake processes is constrained by water residence time (WRT) [<xref ref-type="bibr" rid="B27">27</xref>,<xref ref-type="bibr" rid="B28">28</xref>,<xref ref-type="bibr" rid="B29">29</xref>,<xref ref-type="bibr" rid="B9">9</xref>].</p>
+			<p>Here, we attempt to disentangle the processes that control changes in color, DOC and iron in lakes using a long-term data set from Sweden’s third largest lake (Mälaren). Historical records show that water color in the major eastern basin of Mälaren, Sweden’s third largest lake, has increased less than 25% over the last 40 years (<xref ref-type="fig" rid="pone-0070598-g001">Figure 1</xref>). This is surprising since the corresponding changes in color in the western basins, where the majority of water enters the lake (&gt; 70%), were higher than 100% in the same time period. Mälaren consists of several connected basins that form a natural gradient of increasing WRT with movement from west to east. On average, water in the lake outlet has been resident within the lake for 2.8 years. This natural gradient in WRT and the availability of long-term monitoring data makes Mälaren an ideal site for studying processes and rates of change to lake color and DOC. Here, we examine the extent and factors contributing to the change of DOC and color across the basins of Mälaren, and compare the results with a set of 69 intensively studied lakes from across Sweden with varying WRT.</p>
+			<fig id="pone-0070598-g001" position="float">
+				<object-id pub-id-type="doi">10.1371/journal.pone.0070598.g001</object-id><label>Figure 1</label>
+				<caption>
+					<title>Change in absorbance measured at 420nm (A<sub>420</sub>) in the three sampling points within the Western Basins A and B (•), and three sampling sites within the Eastern Basins C and E (ο) calculated as five year averages over 45 years (between 1967 and 2011).</title>
+				</caption>
+				<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0070598.g001"/>
+			</fig>
+		</sec>
+		<sec id="s2" sec-type="materials|methods">
+			<title>Material and Methods</title>
+			<sec id="s2.1">
+				<title>Ethics Statement</title>
+				<p>Lake and river water samples were collected at multiple sites across Mälaren as part of a routine monitoring program ordered by the joint water authorities around Mälaren [<xref ref-type="bibr" rid="B30">30</xref>]. All sites have public access and are also part of the <named-content content-type="genus-species" xlink:type="simple"><named-content content-type="genus-species" xlink:type="simple"><italic><named-content content-type="genus" xlink:type="simple">Swedish</named-content> <named-content content-type="species" xlink:type="simple">monitoring</named-content></italic></named-content></named-content> program. Thus no specific permissions were required for these and the above locations. Our field studies did not involve endangered or protected species.</p>
+			</sec>
+			<sec id="s2.2">
+				<title>Study Sites and Sampling</title>
+				<p>Mälaren (surface area 1120 km<sup>2</sup>, 59°30’ N 17° 12’ E) supplies drinking water to approximately 1.5 million residents in Stockholm and surrounding communities. Mälaren is subdivided into six major basins (A-F in <xref ref-type="fig" rid="pone-0070598-g002">Figure 2</xref>), and has 12 river inputs. The mean depth is 12.8 m, with the deepest basins (&gt;40 m) in the east (basin C, <xref ref-type="fig" rid="pone-0070598-g002">Figure 2</xref>).</p>
+				<fig id="pone-0070598-g002" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0070598.g002</object-id><label>Figure 2</label>
+					<caption>
+						<title>Spatial variability of the modeled water residence time of Mälaren, with the age of water increasing from western to eastern basins.</title><p>Lake basins are identified by letters (A–F), with lake sites (white diamonds) and streams sites (black diamonds, S1-S8). Basin D is identified in grey as it was not included in the hydrological water residence time model.</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0070598.g002"/>
+				</fig>
+				<p>Water samples were collected from 23 lake and 8 river sites (<xref ref-type="fig" rid="pone-0070598-g002">Figure 2</xref>). Epilimnetic lake water samples were collected at a depth of 1m by lowering bottles from a helicopter, while river inlets were sampled by hand from mid-stream where possible, otherwise from shore. Sampling occurred on Aug 23 2010. During August, all lake basins were thermally stratified, water temperatures were near annual maximum values, and incident solar radiation was past June/July maxima. All samples were collected in pre-washed 1 or 2L polyethylene bottles and stored in the dark at 4° C. While this study focuses on results from water sampling in August 2010, we draw upon supporting chemical and hydrological data compiled from sites within long-term sampling campaigns as part of the Swedish surface water monitoring program [<xref ref-type="bibr" rid="B31">31</xref>]. The long-term Mälaren survey includes 11 of the 23 lake sites included in the August 2010 sampling, and six stream sites. These six streams collectively contribute ~70% of the annual water budget [<xref ref-type="bibr" rid="B32">32</xref>] to Mälaren, and drain into western lake basins A and B (<xref ref-type="fig" rid="pone-0070598-g002">Figure 2</xref>). Inputs from the remainder of the Mälaren catchment were not gauged but were pro-rated to the gauged inputs assuming similar per area carbon export as the six gauged streams (see SI for details). The main outflow is at the south-eastern end of the lake (<xref ref-type="fig" rid="pone-0070598-g002">Figure 2</xref>).</p>
+			</sec>
+			<sec id="s2.3">
+				<title>Hydrological model for water residence times</title>
+				<p>A 3D hydrodynamic model (see SI for details) has been applied to Mälaren in order to investigate the circulation and exchange between different sub-basins [<xref ref-type="bibr" rid="B33">33</xref>]. The model was run for the year 2007 [<xref ref-type="bibr" rid="B33">33</xref>], using observed ice cover as input during the winter months. The model was calibrated and validated against observed temperature profiles at a number of stations, observed water levels at two stations and the observed combined outflows through Stockholm and using an internal age tracer. Simulated age of surface waters in the different basins is shown in <xref ref-type="fig" rid="pone-0070598-g002">Figure 2</xref>. The lower values at the northeastern end of Mälaren are due to an inflow (sampling basin D in <xref ref-type="fig" rid="pone-0070598-g002">Figure 2</xref>), and this water is considered juvenile (age zero).</p>
+			</sec>
+			<sec id="s2.4">
+				<title>Laboratory Analysis</title>
+				<p>Water chemistry was analyzed as part of a routine Swedish monitoring program at the Swedish University of Agricultural Sciences. All August 2010 lake and stream samples as well as routine monitoring samples were analyzed for pH, absorbance (A<sub>420</sub>) total organic carbon (TOC), total nitrogen (TN), nitrate (NO<sub>3</sub><sup>-</sup>) and ammonium (NH<sub>4</sub><sup>+</sup>) using accredited methods [<xref ref-type="bibr" rid="B31">31</xref>]. Organic nitrogen concentrations were calculated as the difference between TN and the sum of NO<sub>3</sub><sup>-</sup> and NH<sub>4</sub><sup>+</sup>. In addition to the above routine analysis, August 2010 samples were filtered with glass fiber filters (Whatman GF/C, effective pore size, ≈1.2 µm) within a few hours of collection, and all chemical and optical analyses were performed within a week of collection. Filtered and unfiltered samples were analyzed using a Shimadzu TOC-5000 analyzer by the NPOC (non-purgable organic carbon) method. Unfiltered NPOC concentrations represent total organic carbon (TOC) and filtered concentrations represent DOC. The Swedish national monitoring program has been reporting absorbance at a single wavelength of 420 nm (A<sub>420</sub>) since 1967 using filtered water samples.</p>
+			</sec>
+			<sec id="s2.5">
+				<title>Analysis of dissolved iron</title>
+				<p>Iron (Fe) was analyzed on filtered water samples. Iron passing the filter can exist as truly dissolved monomeric inorganic iron complexes or as one of two colloidal forms, i) as ferrihydrate and ii) iron that is bound to organic matter [<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B34">34</xref>]. Monomeric inorganic iron complexes may be quantified by measurements made before and after passage through a cation exchange column [<xref ref-type="bibr" rid="B26">26</xref>] as inorganically bound iron will remain in the column. Using this procedure, no inorganically bound iron was detected in any of our samples (See File S1 for details on the exchange column experiment and <xref ref-type="supplementary-material" rid="pone.0070598.s001">Figure S1</xref>). Both colloidal forms are associated with organic matter. Herein, we will refer to the sum of those two forms as colloidal iron (Fe<sub>coll</sub>).</p>
+			</sec>
+			<sec id="s2.6">
+				<title>Fluorescence</title>
+				<p>Filtered water samples were analyzed within three days of collection in a 1 cm quartz cuvette using a fluorescence spectrophotometer (SPEX FluoroMax-2, Horiba Jobin Yvon) to acquire excitation-emission matrices (EEM). Excitation wavelengths (λ<sub>ex</sub>) spanned from 250–445 nm, at 5 nm increments, emission wavelengths (λ<sub>em</sub>) spanned from 300–600 nm, at 4 nm increments, slit widths were set to 5 nm, with an integration time of 0.1 seconds. We calculated the fluorescence index (FI) [<xref ref-type="bibr" rid="B35">35</xref>,<xref ref-type="bibr" rid="B36">36</xref>] using the ratio of intensities at λ<sub>em</sub> 470 and 520 nm, at an λ<sub>ex</sub> of 370 nm, and the freshness index (β: α) [<xref ref-type="bibr" rid="B37">37</xref>], as the ratio of intensities at λ<sub>em</sub> 380 nm divided by the λ<sub>em</sub> maximum between 420 and 435, at an λ<sub>ex</sub> of 310 nm. The humification index (HIX) was measured as the ratio of the areas under the emission curve between 435 to 480 and 300 to 445 nm at an excitation of 254 nm [<xref ref-type="bibr" rid="B38">38</xref>]. The location (λ<sub>ex:</sub>  λ<sub>em</sub>) and fluorescence intensities of four peaks, Peaks A (250:448), C (330:432), T (300:400) and M (270:308) were identified [<xref ref-type="bibr" rid="B39">39</xref>].</p>
+			</sec>
+			<sec id="s2.7">
+				<title>Absorbance</title>
+				<p>Absorbance spectra of filtered lake water samples were measured using a Lambda 40 UV-visible spectrophotometer (PerkinElmer, Waltham, USA) in a 1 cm or 5 cm quartz cuvette spanning from λ’ s 200-800 nm at 1 nm intervals, slit width of 2 nm, and scan speed of 240 nm min<sup>-1</sup>, and all spectra were corrected for potential nitrate interferences (see <xref ref-type="bibr" rid="B40">40</xref>). All absorbance intensities at a particular wavelength (A<sub>λ</sub>) are expressed here as m<sup>-1</sup>. The specific absorbance (SUVA in L mg C<sup>-1</sup> m<sup>-1</sup>) was calculated by normalizing A<sub>λ</sub> to DOC concentration, and % aromaticity was calculated from SUVA using a relationship from [<xref ref-type="bibr" rid="B11">11</xref>].</p>
+			</sec>
+			<sec id="s2.8">
+				<title>High Performance Size Exclusion Chromatography (HPSEC)</title>
+				<p>HPSEC was used to determine the molecular weight (MW) distribution of DOC, using a Gilson 321 pump and controller with a flow rate of 0.5 ml min<sup>-1</sup>, and a 155 UV-absorbance detector set to 254 nm (Gilson Inc., Middleton, WI), using an injection volume of 100 µL according to [<xref ref-type="bibr" rid="B41">41</xref>] (see SI for a detailed description). The apparent MW is estimated from peak retention time and based on polystyrene sulfonate MW standards. We divided apparent MW into very large (&gt; 4 kDa), large (1-4 kDa), medium (0.2-1 kDa) and small (&lt;0.2 Da) size fractions.</p>
+			</sec>
+			<sec id="s2.9">
+				<title>Estimating rates of change and half-life of DOC</title>
+				<p>To estimate loss rates for DOC and other spectral characteristics (A<sub>420</sub>, A<sub>254</sub>, Fe<sub>coll</sub>, SUVA<sub>420</sub>, SUVA<sub>254</sub>, DOC<sub>FI_auto</sub>, DOC<sub>FI_mport,</sub> FI, Freshness Index, and MW fractions) over time we used the function ln(predicted) = <italic>b</italic><sub><italic>0</italic></sub> + <italic>k *</italic> age, and converted this relationship to the exponential function (predicted= e<sup>b0</sup> * e<sup><italic>k</italic>* age</sup>), where <italic>k</italic> is the exponential rate of change over time with units yr<sup>-1</sup>, and <italic>b</italic><sub><italic>0</italic></sub> is a fitting parameter. The resulting relationships were used to calculate the amount of each variable at WRT of 0 and 2.8 years, the average age of water at the Mälaren outlet (<italic>t</italic><sub><italic>0</italic></sub> and <italic>t</italic><sub><italic>2.8</italic></sub>). The half life (<italic>t</italic><sub><italic>1/2</italic></sub>) was calculated as ln (2) /<italic>k</italic>.</p>
+			</sec>
+			<sec id="s2.10">
+				<title>Estimates of color sources within the Mälaren basin</title>
+				<p>The observed changes in chemical and spectroscopic properties across Mälaren may be due, in part, to internal processing of terrestrially-derived DOC and autochthonous (in-lake) production of DOC. Here we use two approaches to interpolate the proportion of DOC entering from the surrounding catchment via streams (DOC<sub>import</sub>) and autochthonous production of new DOC (DOC<sub>auto</sub>). The first approach is based on the Fluorescence Index (FI), where a FI of 1.2 is representative of terrestrial DOC (DOC<sub>FI_import</sub>), and 1.8 represents DOC produced within the lake (DOC<sub>FI_auto</sub>) [<xref ref-type="bibr" rid="B35">35</xref>], and assuming that FI changes linearly according to the contributions from two end members. We follow [<xref ref-type="bibr" rid="B35">35</xref>] in noting that the FI is not specific enough to differentiate between sources when the change in FI is small (&lt; 0.1).</p>
+				<p>The second absorbance model is based on an empirical fit of measured variables to modeled absorbance (A<sub>λ</sub>) of lake water, at 254 or 420 nm (A<sub>254</sub>, A<sub>420</sub>). Again we assume that the measured lake DOC (DOC<sub>Sum</sub>) was comprised of two sources, external stream derived inputs that are primarily of terrestrial origin (DOC<sub>import</sub>), and autochthonous internally derived DOC (DOC<sub>auto</sub>) (<xref ref-type="disp-formula" rid="eqn1">eq. 1</xref>).</p>
+				<disp-formula id="eqn1"><mml:math id="m1" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mi>D</mml:mi><mml:mi>O</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mrow><mml:mi>S</mml:mi><mml:mi>u</mml:mi><mml:mi>m</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mi>D</mml:mi><mml:mi>O</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mrow><mml:mi>I</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mi>D</mml:mi><mml:mi>O</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi><mml:mi>o</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:semantics></mml:math>	<label>(1)</label></disp-formula>
+				<p>The DOC<sub>auto</sub> pool was expressed as a function of the freshness index (β: α) and total DOC (<xref ref-type="disp-formula" rid="eqn2">eq. 2</xref>).</p>
+				<disp-formula id="eqn2"><mml:math id="m2" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mi>D</mml:mi><mml:mi>O</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi><mml:mi>o</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mi>d</mml:mi><mml:mo>×</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mfrac><mml:mi>β</mml:mi><mml:mi>α</mml:mi></mml:mfrac></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>×</mml:mo><mml:mi>D</mml:mi><mml:mi>O</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mrow><mml:mi>S</mml:mi><mml:mi>u</mml:mi><mml:mi>m</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:semantics></mml:math>	<label>(2)</label></disp-formula>
+				<p>We note that the freshness index was strongly related to WRT (<italic>R</italic><sup>2</sup> =0.90, <italic>p</italic> &lt; 0.0001). The A<sub>λ</sub> was predicted from the proportion of two DOC pools, DOC<sub>import</sub> and DOC<sub>auto</sub>, along with iron associated to colloidal organic matter (Fe<sub>coll</sub>) (<xref ref-type="disp-formula" rid="eqn3">Eq. 3</xref>).</p>
+				<disp-formula id="eqn3"><mml:math id="m3" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:msubsup><mml:mi>A</mml:mi><mml:mi>λ</mml:mi><mml:mrow><mml:mi>M</mml:mi><mml:mi>o</mml:mi><mml:mi>d</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:mi>l</mml:mi><mml:mi>e</mml:mi><mml:mi>d</mml:mi></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mi>a</mml:mi><mml:mo>×</mml:mo><mml:mi>D</mml:mi><mml:mi>O</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mi>o</mml:mi><mml:mi>r</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mi>b</mml:mi><mml:mo>×</mml:mo><mml:mi>F</mml:mi><mml:msub><mml:mi>e</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>o</mml:mi><mml:mi>l</mml:mi><mml:mi>l</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mi>c</mml:mi><mml:mo>×</mml:mo><mml:mi>D</mml:mi><mml:mi>O</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi><mml:mi>o</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:semantics></mml:math>	<label>(3)</label></disp-formula>
+				<p>To reduce the degrees of freedom, pre-existing relationships between A<sub>254</sub> and DOC<sub>import</sub> (a = 4.2 mg<sup>-1</sup> L) were used [<xref ref-type="bibr" rid="B42">42</xref>], and between Fe<sub>coll</sub> and DOC<sub>Total</sub> (b = 10; mg<sup>-1</sup> L) based on a previous study identifying the contribution of Fe<sup>+3</sup> to colour at A<sub>254</sub> [<xref ref-type="bibr" rid="B11">11</xref>]. Thus, the only variables to be fitted for A<sub>254</sub> were the slope of DOC<sub>auto</sub> (c), and the slope of the Freshness Index (β: α) (d). For A<sub>420</sub> a, b and c were optimized while d was taken from the A<sub>254</sub> model. Equations were fit by minimizing the sum of squared errors between observed (A<sub>λ</sub>-Observed) and modeled absorbance (A<sub>λ</sub>-Modelled) (Eq. 4) at 254 nm and at 420 nm.</p>
+				<p>The above color model (<xref ref-type="disp-formula" rid="eqn1">Eqs. 1 to 3</xref>) was used to predict absorption at two wavelengths (A<sub>254</sub> and A<sub>420</sub>) at 23 open water sites across Mälaren. Derived parameters (Table S4 in <xref ref-type="supplementary-material" rid="pone.0070598.s004">File S1</xref>) were then tested on eight Mälaren stream inflows where data on filtered iron were available.</p>
+			</sec>
+			<sec id="s2.11">
+				<title>Evaluation of long-term lake color trends</title>
+				<p>Average annual A<sub>420</sub> was calculated for 69 Swedish lakes (in the following designated as “trend lakes”) sampled four times/year between 1990 and 2010. These lakes are distributed across Sweden, and their WRT range from 2 months up to 5.0 years [<xref ref-type="bibr" rid="B43">43</xref>]. Trend significance was assessed using the Sen’s slope test [<xref ref-type="bibr" rid="B44">44</xref>]. Trend lakes (n=69) were separated into two groups depending on whether pH was above (n=31) or below (n=38) 6.5. We used the a value from <xref ref-type="disp-formula" rid="eqn3">equation 3</xref> close to the highest observed change in A<sub>420</sub> (0.5 yr<sup>-1</sup>) for the trend lakes as a theoretical starting point to predict how DOC<sub>Sum</sub>, DOC<sub>Input</sub> and Fe<sub>coll</sub> would change with increasing WRT, using decay constants we established from Mälaren.</p>
+			</sec>
+		</sec>
+		<sec id="s3" sec-type="results">
+			<title>Results</title>
+			<sec id="s3.1">
+				<title>Historical trends in Mälaren</title>
+				<p>Both the western highly colored, short WRT and eastern, less colored, longer WRT basins of Mälaren have become browner over the last 50 years. The five year average of filtered absorbance (A<sub>420</sub>) in the short WRT western sampling points doubled within 40 years from 1.6 in 1965 to 3.3 in 2005 (0.046 yr<sup>-1</sup>). Only a fraction of this color increase was measured in the eastern parts of the lake with a longer WRT (corresponding to sampling points within basins C-E and the lake outlet) where A<sub>420</sub> increased from 0.95 to 1.2 (0.014 yr<sup>-1</sup>).</p>
+			</sec>
+			<sec id="s3.2">
+				<title>Spatial trends across Mälaren</title>
+				<p>A<sub>420</sub>, A<sub>254</sub>, DOC, TOC and Fe<sub>coll</sub> decrease when moving from young waters in the western basins A and B, or from the northern basin D to older water in the outlet basin F (<xref ref-type="table" rid="tab1">Table 1</xref>). DOC concentration decreased by 2.9 mg L<sup>-1</sup> from 10.5 to 7.7 mg L<sup>-1</sup> between basins A and F (<xref ref-type="fig" rid="pone-0070598-g003">Figure 3a</xref>) over the 2.8 years average age of water at the lake outlet. This represents an annual loss rate of 1.0 mg L<sup>-1</sup> y<sup>-1</sup> corresponding to a net half-life of 6.1 years (<xref ref-type="table" rid="tab2">Table 2</xref>). In contrast, the decline in A<sub>420</sub> from 3.26 to 1.01 amounts to an annual loss rate of 0.8, and a much shorter half-life of 1.7 years (<xref ref-type="table" rid="tab2">Table 2</xref>). Thus, despite a loss of DOC of only 26%, we found a 66% and 43% loss in color based on A<sub>420</sub> and A<sub>254</sub>, respectively. However, the loss in Fe<sub>coll</sub> was the greatest (95%), from 312 to 15 µg L<sup>-1</sup> over 2.8 years, with a half-life of only 0.6 years (<xref ref-type="table" rid="tab2">Table 2</xref>, <xref ref-type="fig" rid="pone-0070598-g003">Figure 3c</xref>). Thus much of the Fe<sub>coll</sub> (50%) and A<sub>420</sub> (30%) was lost between basins A and B with a combined WRT of only 0.67 years (<xref ref-type="table" rid="tab1">Table 1</xref>). Most of the remaining Fe<sub>coll</sub> was subsequently lost in basin C (<xref ref-type="table" rid="tab1">Table 1</xref>).</p>
+				<table-wrap id="tab1" position="float">
+					<label>Table 1</label>
+					<caption>
+						<title>Key chemical and optical characteristics of each of the basins comprising Mälaren including average water retention time (WRT), dissolved organic carbon (DOC), organically-associated iron (Fe<sub>coll</sub>) in each basin, absorbance at 420 and 254 nm (A<sub>420</sub> and A<sub>254</sub>), the freshness index (β: μ) derived from fluorescence analysis, total organic carbon (TOC), total phosphorous (TP), Chlorophyll and Total Silica (Si<sub>Total</sub>) from the August 2012 sampling campaign.</title>
+					</caption>
+					<table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1"><bold>Lake Basin</bold></th>
+								<th rowspan="1" colspan="1"><bold>A</bold></th>
+								<th rowspan="1" colspan="1"><bold>B</bold></th>
+								<th rowspan="1" colspan="1"><bold>C</bold></th>
+								<th rowspan="1" colspan="1"><bold>E</bold></th>
+								<th rowspan="1" colspan="1"><bold>F</bold></th>
+								<th rowspan="1" colspan="1"><bold>D</bold></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1">WRT [years]</td>
+								<td rowspan="1" colspan="1">0.07</td>
+								<td rowspan="1" colspan="1">0.6</td>
+								<td rowspan="1" colspan="1">1.8</td>
+								<td rowspan="1" colspan="1">0.4</td>
+								<td rowspan="1" colspan="1">2.8</td>
+								<td rowspan="1" colspan="1">1.2</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1">→</td>
+								<td rowspan="1" colspan="1">→</td>
+								<td rowspan="1" colspan="1">→</td>
+								<td rowspan="1" colspan="1">→</td>
+								<td rowspan="1" colspan="1">Outlet</td>
+								<td rowspan="1" colspan="1">←</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">DOC [mg L<sup>-1</sup>]</td>
+								<td rowspan="1" colspan="1">10.6</td>
+								<td rowspan="1" colspan="1">9.7</td>
+								<td rowspan="1" colspan="1">8.6</td>
+								<td rowspan="1" colspan="1">8.0</td>
+								<td rowspan="1" colspan="1">7.8</td>
+								<td rowspan="1" colspan="1">12.7</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Fe<sub>coll</sub> [μg L<sup>-1</sup>]</td>
+								<td rowspan="1" colspan="1">340</td>
+								<td rowspan="1" colspan="1">165</td>
+								<td rowspan="1" colspan="1">55 (34)*</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">58 (21)*</td>
+								<td rowspan="1" colspan="1">31</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">DOC:Fe [mg mg<sup>-1</sup>]</td>
+								<td rowspan="1" colspan="1">31</td>
+								<td rowspan="1" colspan="1">59</td>
+								<td rowspan="1" colspan="1">156</td>
+								<td rowspan="1" colspan="1">470</td>
+								<td rowspan="1" colspan="1">135</td>
+								<td rowspan="1" colspan="1">409</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">A<sub>420</sub></td>
+								<td rowspan="1" colspan="1">2.93</td>
+								<td rowspan="1" colspan="1">2.09</td>
+								<td rowspan="1" colspan="1">1.35</td>
+								<td rowspan="1" colspan="1">1.03</td>
+								<td rowspan="1" colspan="1">1.0</td>
+								<td rowspan="1" colspan="1">2.16</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">A<sub>254</sub></td>
+								<td rowspan="1" colspan="1">41.4</td>
+								<td rowspan="1" colspan="1">34.6</td>
+								<td rowspan="1" colspan="1">26.2</td>
+								<td rowspan="1" colspan="1">23.3</td>
+								<td rowspan="1" colspan="1">22.4</td>
+								<td rowspan="1" colspan="1">42.2</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">β:α</td>
+								<td rowspan="1" colspan="1">0.53</td>
+								<td rowspan="1" colspan="1">0.54</td>
+								<td rowspan="1" colspan="1">0.60</td>
+								<td rowspan="1" colspan="1">0.65</td>
+								<td rowspan="1" colspan="1">0.62</td>
+								<td rowspan="1" colspan="1">0.59</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">TOC [mg L<sup>-1</sup>]</td>
+								<td rowspan="1" colspan="1">11.0</td>
+								<td rowspan="1" colspan="1">10.6</td>
+								<td rowspan="1" colspan="1">10.5</td>
+								<td rowspan="1" colspan="1">10.2</td>
+								<td rowspan="1" colspan="1">9.2</td>
+								<td rowspan="1" colspan="1">13.7</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">P<sub>Total</sub> [μg L<sup>-1</sup>]</td>
+								<td rowspan="1" colspan="1">32</td>
+								<td rowspan="1" colspan="1">38</td>
+								<td rowspan="1" colspan="1">26</td>
+								<td rowspan="1" colspan="1">26</td>
+								<td rowspan="1" colspan="1">18</td>
+								<td rowspan="1" colspan="1">31</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Chlorophyll [μg L<sup>-1</sup>]</td>
+								<td rowspan="1" colspan="1">41</td>
+								<td rowspan="1" colspan="1">25</td>
+								<td rowspan="1" colspan="1">14 (11)*</td>
+								<td rowspan="1" colspan="1">10</td>
+								<td rowspan="1" colspan="1">8</td>
+								<td rowspan="1" colspan="1">13 (9)*</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Si<sub>Total</sub> [mg L<sup>-1</sup>]</td>
+								<td rowspan="1" colspan="1">0.9</td>
+								<td rowspan="1" colspan="1">0.8</td>
+								<td rowspan="1" colspan="1">0.3</td>
+								<td rowspan="1" colspan="1">0.3</td>
+								<td rowspan="1" colspan="1">0.1</td>
+								<td rowspan="1" colspan="1">2.5</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn>
+							<p>The location of lake basins are shown in <xref ref-type="fig" rid="pone-0070598-g002">Figure 2</xref>, and arrows indicate the direction of flow between the basins.</p>
+						</fn>
+						<fn>
+							
+							
+							<p>* Average and median value of the pooled basin data deviated more than 20% which is why the median value is also given in parenthesis as comparison.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+				<fig id="pone-0070598-g003" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0070598.g003</object-id><label>Figure 3</label>
+					<caption>
+						<title>Changes to the concentration of (A) dissolved organic carbon (DOC), (B) absorbance at 420 nm (A<sub>420</sub>), (C) colloidal Fe (Fe<sub>COLL</sub>), and (D) the freshness index with increasing water residence time across Mälaren.</title>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0070598.g003"/>
+				</fig>
+				<table-wrap id="tab2" position="float">
+					<label>Table 2</label>
+					<caption>
+						<title>Description of the exponential change (y = <italic>b</italic> × e<sup>k × age</sup>) in whole dissolved organic carbon (DOC<sub>Sum</sub>) in mg L<sup>-1</sup>, colloidal associated iron (Fe<sub>coll</sub>) in μg L<sup>-1</sup>, absorbance at wavelengths (λ) 420 and 254 nm (A<sub>λ</sub>) (unitless but over path length of 1 m), specific absorbance (SUVA<sub>λ</sub>) in L mg C<sup>-1</sup> m<sup>-1</sup>, DOC estimated to be from internal microbial (DOC<sub>FI_auto</sub>) and external terrestrial (DOC<sub>FI_import</sub>) sources in mg L<sup>-1</sup> based on the fluorescence index (FI), the humification index (HIX) and the freshness index (β: α), across the main lake basins (passing from A to F, excluding basin D), including the adjusted <italic>R</italic><sup><italic>2</italic></sup>, the significance level, (*** <italic>p</italic> &lt; 0.0001, ** <italic>p</italic> &lt; 0.001, * <italic>p</italic> &lt; 0.05), number of sites across the lake (<italic>n</italic>), the amount of a variable at a water residence time of 0 (t<sub>0</sub>), and 2.8 (t<sub>2.8</sub>) years, the net change within the lake (Δ in lake), and the half-life (t<sub>1/2</sub>) (full details of fitting parameters <italic>b</italic> and <italic>k</italic> provided in Table S3 in File S1, as well as results of molecular weight size classes).</title>
+					</caption>
+					<table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1"/>
+								<th rowspan="1" colspan="1"><bold><italic>b</italic></bold></th>
+								<th rowspan="1" colspan="1"><bold><italic>k</italic></bold></th>
+								<th rowspan="1" colspan="1"><bold>adj. <italic>R</italic><sup><italic>2</italic></sup></bold></th>
+								<th rowspan="1" colspan="1"><bold>sig.-level</bold></th>
+								<th rowspan="1" colspan="1"><bold><italic>n</italic></bold></th>
+								<th rowspan="1" colspan="1"><bold>t<sub>0</sub></bold></th>
+								<th rowspan="1" colspan="1"><bold>t<sub>2.8</sub></bold></th>
+								<th rowspan="1" colspan="1"><bold>Δ in lake</bold></th>
+								<th rowspan="1" colspan="1"><bold>t<sub>1/2</sub></bold></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1">DOC<sub>Sum</sub></td>
+								<td rowspan="1" colspan="1">10.5</td>
+								<td rowspan="1" colspan="1">0.114</td>
+								<td rowspan="1" colspan="1">0.82</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">10.5</td>
+								<td rowspan="1" colspan="1">7.7</td>
+								<td rowspan="1" colspan="1">-2.9</td>
+								<td rowspan="1" colspan="1">-6.1</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Fe<sub>coll</sub></td>
+								<td rowspan="1" colspan="1">312</td>
+								<td rowspan="1" colspan="1">-1.09</td>
+								<td rowspan="1" colspan="1">0.80</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">312</td>
+								<td rowspan="1" colspan="1">15</td>
+								<td rowspan="1" colspan="1">297</td>
+								<td rowspan="1" colspan="1">-0.6</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">A<sub>420</sub></td>
+								<td rowspan="1" colspan="1">3.3</td>
+								<td rowspan="1" colspan="1">0.418</td>
+								<td rowspan="1" colspan="1">0.86</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">3.26</td>
+								<td rowspan="1" colspan="1">1.01</td>
+								<td rowspan="1" colspan="1">-2.25</td>
+								<td rowspan="1" colspan="1">-1.7</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">A<sub>254</sub></td>
+								<td rowspan="1" colspan="1">0.4</td>
+								<td rowspan="1" colspan="1">0.255</td>
+								<td rowspan="1" colspan="1">0.89</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">0.41</td>
+								<td rowspan="1" colspan="1">0.20</td>
+								<td rowspan="1" colspan="1">-0.21</td>
+								<td rowspan="1" colspan="1">-2.7</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">SUVA<sub>420</sub></td>
+								<td rowspan="1" colspan="1">0.3</td>
+								<td rowspan="1" colspan="1">0.307</td>
+								<td rowspan="1" colspan="1">0.86</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">0.31</td>
+								<td rowspan="1" colspan="1">0.13</td>
+								<td rowspan="1" colspan="1">-0.18</td>
+								<td rowspan="1" colspan="1">-2.3</td>
+							</tr>
+						
+							<tr>
+								<td rowspan="1" colspan="1">SUVA<sub>254</sub></td>
+								<td rowspan="1" colspan="1">4.1</td>
+								<td rowspan="1" colspan="1">0.255</td>
+								<td rowspan="1" colspan="1">0.89</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">4.11</td>
+								<td rowspan="1" colspan="1">2.01</td>
+								<td rowspan="1" colspan="1">-2.10</td>
+								<td rowspan="1" colspan="1">-2.7</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">DOC<sub>FI_auto</sub></td>
+								<td rowspan="1" colspan="1">2.5</td>
+								<td rowspan="1" colspan="1">0.067</td>
+								<td rowspan="1" colspan="1">0.67</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">16</td>
+								<td rowspan="1" colspan="1">2.49</td>
+								<td rowspan="1" colspan="1">3.01</td>
+								<td rowspan="1" colspan="1">0.51</td>
+								<td rowspan="1" colspan="1">10.4</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">DOC<sub>FI_import</sub></td>
+								<td rowspan="1" colspan="1">8.0</td>
+								<td rowspan="1" colspan="1">0.182</td>
+								<td rowspan="1" colspan="1">0.89</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">7.95</td>
+								<td rowspan="1" colspan="1">4.78</td>
+								<td rowspan="1" colspan="1">-3.17</td>
+								<td rowspan="1" colspan="1">-3.8</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">FI</td>
+								<td rowspan="1" colspan="1">1.3</td>
+								<td rowspan="1" colspan="1">0.021</td>
+								<td rowspan="1" colspan="1">0.82</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">1.35</td>
+								<td rowspan="1" colspan="1">1.43</td>
+								<td rowspan="1" colspan="1">0.08</td>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">HIX</td>
+								<td rowspan="1" colspan="1">0.9</td>
+								<td rowspan="1" colspan="1">0.009</td>
+								<td rowspan="1" colspan="1">0.42</td>
+								<td rowspan="1" colspan="1">**</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">0.89</td>
+								<td rowspan="1" colspan="1">0.87</td>
+								<td rowspan="1" colspan="1">-0.02</td>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">β:α</td>
+								<td rowspan="1" colspan="1">0.5</td>
+								<td rowspan="1" colspan="1">0.079</td>
+								<td rowspan="1" colspan="1">0.90</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">0.52</td>
+								<td rowspan="1" colspan="1">0.65</td>
+								<td rowspan="1" colspan="1">0.13</td>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">%Very Large</td>
+								<td rowspan="1" colspan="1">1.0</td>
+								<td rowspan="1" colspan="1">0.788</td>
+								<td rowspan="1" colspan="1">0.61</td>
+								<td rowspan="1" colspan="1">**</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">1</td>
+								<td rowspan="1" colspan="1">0</td>
+								<td rowspan="1" colspan="1">-1</td>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">% Large</td>
+								<td rowspan="1" colspan="1">24.4</td>
+								<td rowspan="1" colspan="1">0.139</td>
+								<td rowspan="1" colspan="1">0.75</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">24</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">-8</td>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">%Medium</td>
+								<td rowspan="1" colspan="1">74.5</td>
+								<td rowspan="1" colspan="1">0.062</td>
+								<td rowspan="1" colspan="1">0.83</td>
+								<td rowspan="1" colspan="1">***</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">75</td>
+								<td rowspan="1" colspan="1">89</td>
+								<td rowspan="1" colspan="1">14</td>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">%Small</td>
+								<td rowspan="1" colspan="1">90.7</td>
+								<td rowspan="1" colspan="1">0.240</td>
+								<td rowspan="1" colspan="1">0.06</td>
+								<td rowspan="1" colspan="1">no fit</td>
+								<td rowspan="1" colspan="1">17</td>
+								<td rowspan="1" colspan="1">−</td>
+								<td rowspan="1" colspan="1">−</td>
+								<td rowspan="1" colspan="1">−</td>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+						</tbody>
+					</table>
+				</table-wrap>
+			</sec>
+			<sec id="s3.3">
+				<title>Changes in spectral characteristics of DOM</title>
+				<p>Observed changes in spectral characteristics (A<sub>λ</sub>, SUVA<sub>λ</sub>, FI, α: β) with increasing WRT were more substantial across the lake (Basins A to F) than expected based on the relatively small loss in DOC (<xref ref-type="table" rid="tab2">Table 2</xref> and <xref ref-type="fig" rid="pone-0070598-g003">Figure 3</xref>). The SUVA<sub>254</sub> decreased from 4.4 to 2.9 L mg C<sup>-1</sup> m<sup>-1</sup>, representing a drop in mean aromaticity from 30% to 17%. The FI increased from 1.36 in the western basin, to 1.43 in the eastern basin. Based on changes in the freshness index and <xref ref-type="disp-formula" rid="eqn2">equation 2</xref>, the proportion of internally produced DOC (DOC<sub>FI_auto</sub>) ranged from 0.28 in the western basin A where the water is youngest to 0.34 in eastern basins. The estimated loss of terrestrial DOC<sub>FI_imports</sub> equals 4.5 mg L<sup>-1</sup>, which is greater than the net measured loss of DOC (2.8 mg L<sup>-1</sup>). Assuming changes in FI reflect changes in source of DOC, we estimated that DOC<sub>FI_auto</sub> increased with WRT (0.51 mg DOC L<sup>-1</sup>), and would double within the lake every 10 years, while DOC<sub>import</sub> was lost (-3.17 mg DOC L<sup>-1</sup>) with increasing WRT, and had a half-life of 3.8 years (<xref ref-type="table" rid="tab2">Table 2</xref>). Both estimates are lake specific and the 10 year doubling time of DOC<sub>FI_auto</sub> is most probably limited by the supply of nutrients and DOC<sub>import</sub>.</p>
+				<p>An increase in freshness index from 0.52 to 0.65 with increasing WRT (<xref ref-type="fig" rid="pone-0070598-g003">Figure 3d</xref>, <xref ref-type="table" rid="tab2">Table 2</xref>) suggests increased input of internally produced DOC. Very large MW material was found primarily in basins A and B, and was reduced to trace amounts by basin C. Large MW material shifted from 24% to 17% across the lake while the medium MW material shifted from 75% of DOC in basins A and B to 89% in the eastern basins (<xref ref-type="table" rid="tab2">Table 2</xref>). We found no significant change in the small MW size fraction (4% of DOC, <xref ref-type="table" rid="tab2">Table 2</xref>). These results are consistent with the preferential loss of high MW fractions of DOC<sub>import</sub>. We found that the proportion of Peak T fluorescence was positively related to the small DOC size fraction (R<sup>2</sup> = 0.28, p &lt; 0.05, <xref ref-type="supplementary-material" rid="pone.0070598.s002">Figure S2</xref>).</p>
+				<p>The elemental composition of DOM also changed, as shown by generally declining DOC: DON, with basins A, B, C, E and F having DOC: DON of 21, 23, 18, 20 and 15, respectively.</p>
+			</sec>
+			<sec id="s3.4">
+				<title>Statistical analysis of drivers and changes between basins</title>
+				<p>Linear and multiple linear regressions were used to identify relationships between DOC, A<sub>254</sub>, A<sub>420</sub>, Fe<sub>coll</sub>, and WRT (<xref ref-type="table" rid="tab3">Table 3</xref> and Table S5 in <xref ref-type="supplementary-material" rid="pone.0070598.s004">File S1</xref>). A<sub>420</sub> and DOC were related (M1: R<sup>2</sup> = 0.58). The best model for A<sub>420</sub> explained 98% of the variation when using DOC and Fe<sub>coll</sub> (M2, <xref ref-type="table" rid="tab3">Table 3</xref>). The offset for this equation (M2 with A<sub>420</sub> of -1.04) suggested the presence of significant amounts of uncolored DOC in Mälaren. Adding WRT as an additional factor did not increase R<sup>2</sup> but essentially eliminated the offset for A<sub>420</sub> (M3, <xref ref-type="table" rid="tab3">Table 3</xref>). The contributions of DOC and Fe<sub>coll</sub> to A<sub>420</sub> were always positive. When WRT alone was used to predict A<sub>420</sub>, 71% of the variability was explained (M4), and the regression became even stronger when WRT along with Fe<sub>coll</sub> were used to predict A<sub>420</sub> (M5, 87%). All A<sub>254</sub> models corroborated the trends observed for A<sub>420</sub>. Even when using literature values for the coefficients for Fe<sub>coll</sub> and DOC respectively (M11 and M12) negative offsets were obtained, again suggesting the presence of uncolored DOC.</p>
+				<table-wrap id="tab3" position="float">
+					<label>Table 3</label>
+					<caption>
+						<title>Results of selected model (M) parameters and goodness of fits for single and multiple linear regressions predicting absorbance (A<sub>420</sub> or A<sub>254</sub>) in Mälaren using dissolved organic carbon [mg L<sup>-1</sup>] organically associated dissolved iron [mg L<sup>-1</sup>] and lake water residence time (WRT/1000) for the 23 lake sampling points.</title>
+					</caption>
+					<table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1"><bold>Model No.</bold></th>
+								<th rowspan="1" colspan="1"><bold>Predicted</bold></th>
+								<th rowspan="1" colspan="1"><bold>Intercept ± SE</bold></th>
+								<th rowspan="1" colspan="1"><bold>DOC</bold></th>
+								<th rowspan="1" colspan="1"><bold>Fe<sub>coll</sub></bold></th>
+								<th rowspan="1" colspan="1"><bold>WRT</bold></th>
+								<th rowspan="1" colspan="1"><bold>R<sup>2</sup></bold></th>
+								<th rowspan="1" colspan="1"><bold>RMSE</bold></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1">M1</td>
+								<td rowspan="1" colspan="1">A<sub>420</sub></td>
+								<td rowspan="1" colspan="1">-1.18 ± 0.6</td>
+								<td rowspan="1" colspan="1">0.316 ± 0.06</td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">0.58</td>
+								<td rowspan="1" colspan="1">0.5</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">M2</td>
+								<td rowspan="1" colspan="1">A<sub>420</sub></td>
+								<td rowspan="1" colspan="1">-1.04 ± 0.12</td>
+								<td rowspan="1" colspan="1">0.258 ± 0.01</td>
+								<td rowspan="1" colspan="1">3.78 ± 0.2</td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">0.98</td>
+								<td rowspan="1" colspan="1">0.1</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">M3</td>
+								<td rowspan="1" colspan="1">A<sub>420</sub></td>
+								<td rowspan="1" colspan="1">-0.049 ± 0.03</td>
+								<td rowspan="1" colspan="1">0.222 ± 0.03</td>
+								<td rowspan="1" colspan="1">3.29 ± 0.3</td>
+								<td rowspan="1" colspan="1">-3.39 ± 2</td>
+								<td rowspan="1" colspan="1">0.98</td>
+								<td rowspan="1" colspan="1">0.1</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">M4</td>
+								<td rowspan="1" colspan="1">A<sub>420</sub></td>
+								<td rowspan="1" colspan="1">2.56 ± 0.01</td>
+								<td rowspan="1" colspan="1">N.S.</td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">-16.9 ± 2</td>
+								<td rowspan="1" colspan="1">0.71</td>
+								<td rowspan="1" colspan="1">0.3</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">M5</td>
+								<td rowspan="1" colspan="1">A<sub>420</sub></td>
+								<td rowspan="1" colspan="1">2.07 ± 0.02</td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">2.7 ± 0.7</td>
+								<td rowspan="1" colspan="1">-13.6 ± 3</td>
+								<td rowspan="1" colspan="1">0.87</td>
+								<td rowspan="1" colspan="1">0.3</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">M6</td>
+								<td rowspan="1" colspan="1">A<sub>254</sub></td>
+								<td rowspan="1" colspan="1">-10.5 ± 3.99</td>
+								<td rowspan="1" colspan="1">4.41 ± 0.4</td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">0.85</td>
+								<td rowspan="1" colspan="1">3.2</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">M7</td>
+								<td rowspan="1" colspan="1">A<sub>254</sub></td>
+								<td rowspan="1" colspan="1">-9.3 ± 1.3</td>
+								<td rowspan="1" colspan="1">3.99 ± 0.1</td>
+								<td rowspan="1" colspan="1">25.6 ± 0.1</td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">0.99</td>
+								<td rowspan="1" colspan="1">1.1</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">M8</td>
+								<td rowspan="1" colspan="1">A<sub>254</sub></td>
+								<td rowspan="1" colspan="1">-2.0 ± 2.6</td>
+								<td rowspan="1" colspan="1">3.54 ± 0.2</td>
+								<td rowspan="1" colspan="1">18.5 ± 2.0</td>
+								<td rowspan="1" colspan="1">-1.84 ± 0.5</td>
+								<td rowspan="1" colspan="1">0.99</td>
+								<td rowspan="1" colspan="1">0.7</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">M9</td>
+								<td rowspan="1" colspan="1">A<sub>254</sub></td>
+								<td rowspan="1" colspan="1">12.8 ± 5.10</td>
+								<td rowspan="1" colspan="1">2.58 ± 0.5</td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">-4.87 ± 0.8</td>
+								<td rowspan="1" colspan="1">0.95</td>
+								<td rowspan="1" colspan="1">1.9</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">M10</td>
+								<td rowspan="1" colspan="1">A<sub>254</sub></td>
+								<td rowspan="1" colspan="1">41.7 ± 1.10</td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">N.S.</td>
+								<td rowspan="1" colspan="1">-8.47 ± 0.8</td>
+								<td rowspan="1" colspan="1">0.85</td>
+								<td rowspan="1" colspan="1">3.1</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">M11</td>
+								<td rowspan="1" colspan="1">A<sub>254</sub></td>
+								<td rowspan="1" colspan="1">-10.6 ± 2.7</td>
+								<td rowspan="1" colspan="1">4.32 ± 0.27</td>
+								<td rowspan="1" colspan="1">10<sup>#</sup></td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">0.93</td>
+								<td rowspan="1" colspan="1">2.1</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">M12</td>
+								<td rowspan="1" colspan="1">A<sub>254</sub></td>
+								<td rowspan="1" colspan="1">-11.2 ± 3.3</td>
+								<td rowspan="1" colspan="1">4.2<sup>&amp;</sup></td>
+								<td rowspan="1" colspan="1">24.7 ± 1.9</td>
+								<td rowspan="1" colspan="1">excl.</td>
+								<td rowspan="1" colspan="1">0.89</td>
+								<td rowspan="1" colspan="1">1.1</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn>
+							<p>The standard error (SE) of the intercept is given, along with the coefficient of variation (R<sup>2</sup>), and the root mean squared error of the regression (RMSE).</p>
+						</fn>
+						<fn>
+							<p>N.S. not significant (p &gt; 0.05). excl. = this variable was excluded from that model exercise. <sup>#</sup> taken from Weishaar et al. (2003). <sup>&amp;</sup> taken from Laudon et al. (2004).</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+			</sec>
+			<sec id="s3.5">
+				<title>Estimating the relative contribution of Fe<sub>coll</sub> and DOC to absorbance</title>
+				<p>Model 2 (M2-A<sub>420</sub>) from <xref ref-type="table" rid="tab3">Table 3</xref> was used to estimate the relative contributions of Fe<sub>coll</sub> and DOC to A<sub>420</sub> in each basin. The relative contribution of Fe<sub>coll</sub> to A<sub>420</sub> decreased from 32% in basin A, to a minimum of 3% in basin E (<xref ref-type="table" rid="tab4">Table 4</xref>). The relative contribution of DOC to A<sub>420</sub> increased from 68% to 90% between basins A and F (<xref ref-type="table" rid="tab4">Table 4</xref>). The removal of Fe<sub>coll</sub> from basin A to C explained more of the change in A<sub>420</sub> than the net loss in DOC in between basins A to C. The remaining changes in A<sub>420</sub> from basin C to F are caused almost exclusively by decreasing DOC concentrations.</p>
+				<table-wrap id="tab4" position="float">
+					<label>Table 4</label>
+					<caption>
+						<title>Comparison of the percent contribution of organically associated iron (Fe<sub>coll</sub>) and dissolved organic carbon (DOC) to the color of water (A<sub>420</sub>) in Mälaren basins during the august 2010 sampling, flow-weighted mean A<sub>420</sub> from the eight sampled stream inflows, and average A<sub>420</sub> from each lake basin.</title>
+					</caption>
+					<table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1"><bold>Lake Basin</bold></th>
+								<th rowspan="1" colspan="1"><bold>A</bold></th>
+								<th rowspan="1" colspan="1"><bold>B</bold></th>
+								<th rowspan="1" colspan="1"><bold>C</bold></th>
+								<th rowspan="1" colspan="1"><bold>E</bold></th>
+								<th rowspan="1" colspan="1"><bold>F</bold></th>
+								<th rowspan="1" colspan="1"><bold>D</bold></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1">→</td>
+								<td rowspan="1" colspan="1">→</td>
+								<td rowspan="1" colspan="1">→</td>
+								<td rowspan="1" colspan="1">→</td>
+								<td rowspan="1" colspan="1">Lake Outlet</td>
+								<td rowspan="1" colspan="1">←</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Mean A<sub>420</sub> from eight streams</td>
+								<td colspan="6" rowspan="1">2.87</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Mean A<sub>420</sub> in Lake Basins</td>
+								<td rowspan="1" colspan="1">2.93</td>
+								<td rowspan="1" colspan="1">2.09</td>
+								<td rowspan="1" colspan="1">1.35</td>
+								<td rowspan="1" colspan="1">1.03</td>
+								<td rowspan="1" colspan="1">1.00</td>
+								<td rowspan="1" colspan="1">2.16</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Mean model A<sub>420</sub> in Lake Basins</td>
+								<td rowspan="1" colspan="1">2.98</td>
+								<td rowspan="1" colspan="1">2.08</td>
+								<td rowspan="1" colspan="1">1.39</td>
+								<td rowspan="1" colspan="1">1.09</td>
+								<td rowspan="1" colspan="1">1.19</td>
+								<td rowspan="1" colspan="1">2.35</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Contribution of Fe<sub>coll</sub> to model A<sub>420</sub> (%)<sup>&amp;</sup></td>
+								<td rowspan="1" colspan="1">32</td>
+								<td rowspan="1" colspan="1">20</td>
+								<td rowspan="1" colspan="1">9</td>
+								<td rowspan="1" colspan="1">3</td>
+								<td rowspan="1" colspan="1">10</td>
+								<td rowspan="1" colspan="1">4</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Contribution of DOC to model A<sub>420</sub> (%)<sup>#</sup></td>
+								<td rowspan="1" colspan="1">68</td>
+								<td rowspan="1" colspan="1">80</td>
+								<td rowspan="1" colspan="1">91</td>
+								<td rowspan="1" colspan="1">97</td>
+								<td rowspan="1" colspan="1">90</td>
+								<td rowspan="1" colspan="1">96</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn>
+							<p>Bold arrows show the direction of water flow from basins to the lake outlet.</p>
+						</fn>
+						<fn>
+							<p><sup>&amp;</sup> Calculated contribution to M2 by Fe<sub>coll</sub> only after accounting for the offset in M2. Exemplified for basin A this value (%) is (100*Fe<sub>coll</sub>/1000* 3.78)/(2.98-1.04) = 32. <sup>#</sup> calculated contribution to M2 by DOC only after accounting for the offset in M2. Small deviations between the sum of the contributions (M2-A<sub>420</sub> (Fe<sub>coll</sub>) + M2-A<sub>420</sub> (DOC)) reflect the remaining error in prediction of M2.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+				<p>Both A<sub>254</sub> and A<sub>420</sub> in Mälaren were predicted from DOC, β:α and SUVA (<xref ref-type="fig" rid="pone-0070598-g004">Figure 4</xref>, Table S4 in <xref ref-type="supplementary-material" rid="pone.0070598.s004">File S1</xref>). The model was corroborated using data from the eight sampled rivers draining into Mälaren (<xref ref-type="fig" rid="pone-0070598-g004">Figure 4a and b</xref>)</p>
+				<fig id="pone-0070598-g004" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0070598.g004</object-id><label>Figure 4</label>
+					<caption>
+						<title>Comparison of observed (meas.) and modeled (calc.) absorbance for the 22 lake sites (•) in Mälaren at wavelengths of 254 nm (A<sub>254</sub> calc and A<sub>254</sub> meas) (A) and at wavelength 420 nm (A<sub>420</sub> calc and A<sub>420</sub> meas) (B) for the same 22 lake sites.</title><p>Modeled absorbances were established using <xref ref-type="disp-formula" rid="eqn1">Eqs. 1 to 3</xref>. In both graphs we used the eight stream inflows (ο) to Mälaren as validation samples using parameter values defined from the lake sites (Table S4 in <xref ref-type="supplementary-material" rid="pone.0070598.s004">File S1</xref>).</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0070598.g004"/>
+				</fig>
+			</sec>
+			<sec id="s3.6">
+				<title>Comparison of patterns observed in Mälaren to patterns observed across the 69 Swedish trend lakes</title>
+				<p>To evaluate whether controls on color (A<sub>420</sub>) in Mälaren were applicable at a wider scale, we included an evaluation of temporal trends from 69 long-term Swedish monitoring trend lakes over 20 years (<xref ref-type="fig" rid="pone-0070598-g005">Figure 5a</xref>). A principal component analysis of the drivers of trends in color and TOC in these 69 trend lakes indicates that high pH is correlated with lower color and lower iron content and that high WRT implies low iron, lower color and less iron per DOC (<xref ref-type="supplementary-material" rid="pone.0070598.s003">Figure S3</xref>). Of the 69 trend lakes, only four had negative change in A<sub>420</sub> and those with the greatest change in A<sub>420</sub> were found to i) have a shorter WRT (&lt; 1.5 years), and ii) most were acidic (pH &lt; 6.5) (<xref ref-type="fig" rid="pone-0070598-g005">Figure 5a</xref>). We used change in A<sub>420</sub> of 0.5 yr<sup>-1</sup> as a theoretical starting point to evaluate how DOC<sub>Sum</sub>, DOC<sub>Input</sub> and Fe<sub>coll</sub> changes with WRT, using decay constants from Mälaren (<xref ref-type="fig" rid="pone-0070598-g005">Figure 5b</xref>). The decline is steepest in Fe<sub>coll</sub> and follows the same pattern with WRT observed for changes to A<sub>420</sub> in acidic (pH &lt; 6.5) trend lakes. The hypothetical change in DOC<sub>Sum</sub> (<xref ref-type="fig" rid="pone-0070598-g005">Figure 5b</xref>; based on a starting A<sub>420</sub> of 0.5 yr<sup>-1</sup>) and DOC<sub>Input</sub> decreases with WRT, but not as steeply as Fe<sub>coll</sub>.</p>
+				<fig id="pone-0070598-g005" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0070598.g005</object-id><label>Figure 5</label>
+					<caption>
+						<title>Change in absorbance at 420 nm (Δ A<sub>420</sub>) per year using the Sen’s slope during the period 1990-2010 for 69 trend lakes across Sweden, against water residence time (WRT).</title><p>(A) Lakes are indicated as those with median lake water pH &gt; 6.5 (white circles ο) and below 6.5 (dark circles •). The two grey squares represent the observed rates of change for the Western (to the left) and Eastern Basins of Mälaren (to the right); (B) and plots of the calculated change in A<sub>420</sub> caused by either DOC<sub>input</sub> (hyphenated curve) or Fe<sub>coll</sub> (bold curve) when starting from a hypothetical value of change in A<sub>420</sub> of 0.5 yr<sup>-1</sup> at a WRT of 0 years and using the decay constants for DOC<sub>input</sub> and Fe<sub>coll</sub> from <xref ref-type="table" rid="tab4">table 4</xref> that were derived for Mälaren.</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0070598.g005"/>
+				</fig>
+			</sec>
+		</sec>
+		<sec id="s4" sec-type="discussion">
+			<title>Discussion</title>
+			<p>Browner waters have been observed across the northern hemisphere [<xref ref-type="bibr" rid="B1">1</xref>]. This phenomenon has been ascribed to large increases in DOC [45] [<xref ref-type="bibr" rid="B2">2</xref>] and increased iron concentrations, amongst other factors [<xref ref-type="bibr" rid="B3">3</xref>]). This study demonstrates that lakes with and without browning trends can occur in the same geographic region. The continuum of WRT across Mälaren (<xref ref-type="fig" rid="pone-0070598-g002">Figure 2</xref>), along with the dominant source of terrestrial DOC in the western basin (Table S1 in <xref ref-type="supplementary-material" rid="pone.0070598.s004">File S1</xref>), allowed us to substitute space for time, and hence assess changes in spectral characteristics of DOC with increasing WRT. This study demonstrates that longer residence times in the eastern basins of Mälaren counteract the increasing inputs of color and DOC observed over the past 40 years. While color has risen by more than 50% in the western part of Mälaren, the eastern lake outlet has experienced a much smaller change (<xref ref-type="fig" rid="pone-0070598-g001">Figure 1</xref>) and [<xref ref-type="bibr" rid="B46">46</xref>].</p>
+			<p>In Mälaren, concentrations of colloidal iron decreased much faster than color and DOC when passing from the western to the eastern basin (<xref ref-type="table" rid="tab1">Table 1</xref> and <xref ref-type="fig" rid="pone-0070598-g003">Figure 3c</xref>). The highly colored water entering Mälaren in the western part (Tables S1 and S2 in <xref ref-type="supplementary-material" rid="pone.0070598.s001">File S1</xref>) does not make it through the lake. Around 60% of the total color loss (loss of A<sub>420</sub>) across Mälaren is occurring simultaneously with the removal of colloidal iron (<xref ref-type="table" rid="tab4">Table 4</xref>). The close relationship between dissolved iron and iron from filtered water samples passing the ion-exchange column (<xref ref-type="supplementary-material" rid="pone.0070598.s001">Figure S1</xref>) make us believe that the vast majority of all iron in Mälaren is strongly associated to organic matter either as mononuclear iron bound to organic matter or in form of small colloids associated to organic matter. This interpretation is consistent with experimental studies [<xref ref-type="bibr" rid="B3">3</xref>,<xref ref-type="bibr" rid="B14">14</xref>,<xref ref-type="bibr" rid="B47">47</xref>]. Lyven et al. [<xref ref-type="bibr" rid="B14">14</xref>] demonstrated the existence of two separate iron phases, one inorganic and one organic in surface water. Jansen et al. [<xref ref-type="bibr" rid="B12">12</xref>] reported that iron binds strongly to organic matter and that only a few percent (&lt; 5%) of iron may actually occur as truly dissolved inorganic species.</p>
+			<p>Our color model suggest that ongoing selective removal of colloidal iron in the western basins may explain much of the absence of changing color in the eastern part of Mälaren (<xref ref-type="fig" rid="pone-0070598-g001">Figures 1</xref>, <xref ref-type="fig" rid="pone-0070598-g003">3b</xref> and <xref ref-type="table" rid="tab4">Table 4</xref>). Based on model calculations (<xref ref-type="table" rid="tab1">Table 1</xref>, 3 and Table S2 in <xref ref-type="supplementary-material" rid="pone.0070598.s004">File S1</xref>), between 2 and 45% of the color in incoming streams may be due to colloidal iron. In Mälaren up to 32% of the color may be assigned to this type of colloidal iron (<xref ref-type="table" rid="tab4">Table 4</xref>). Experiments have shown that iron added to water samples imparts known spectrometric properties such as A<sub>254</sub> or A<sub>420</sub> [<xref ref-type="bibr" rid="B11">11</xref>,<xref ref-type="bibr" rid="B48">48</xref>,<xref ref-type="bibr" rid="B10">10</xref>]. When iron was reduced to ferrous iron, large changes in absorbance over the whole UV and visible spectra were observed [<xref ref-type="bibr" rid="B49">49</xref>]. Empirical observations of correlations of total iron, DOC and color in both stream [<xref ref-type="bibr" rid="B3">3</xref>] and lake waters [<xref ref-type="bibr" rid="B9">9</xref>] are consistent with our findings in Mälaren. The color model we used to predict A<sub>254</sub> (<xref ref-type="fig" rid="pone-0070598-g004">Figure 4b</xref>) was based on existing literature [<xref ref-type="bibr" rid="B11">11</xref>], and the slope factor used for iron (Table S4 in <xref ref-type="supplementary-material" rid="pone.0070598.s004">File S1</xref>) in the A<sub>420</sub> model (<xref ref-type="fig" rid="pone-0070598-g004">Figure 4a</xref>) was within 10% of that derived by [<xref ref-type="bibr" rid="B3">3</xref>].</p>
+			<sec id="s4.1">
+				<title>Water age and changes in optical properties of Mälaren waters</title>
+				<p>The modeled water age depends on a several factors including uncertainty in bathymetry, measured and modeled runoff, wind speed and minor differences in annual rainfall between 2007, 2008 and 2009 [<xref ref-type="bibr" rid="B33">33</xref>]. This will affect the calculated changes of optical properties over time for water bodies of intermediate age (1&lt;years&lt;2) but not the very young or very old water. However, general trends and the span of age of water across Mälaren are valid nevertheless.</p>
+				<p>In our model, lake water optical properties across the lake change as a result of change of abundance of DOC endmembers and colloidal iron. The average optical properties of the two DOC endmembers derived here do not take into account the expected photochemical transformation of those DOC endmembers over time. Despite this simplification our analysis of optical parameters is able to reproduce the changes observed in organic matter character during the 2.8 year lake passage. Results of a simple two-box mixing model using end-member sources (derived from the FI) suggested a loss of half the terrestrial DOM in only 3.8 years, while in contrast autochthonous DOM would be expected to double every 10.4 years. By sampling Mälaren in late summer, we likely captured DOC with maximum processing from photo-decomposition, microbial decomposition, and primary production of new DOC. A larger proportion of protein-like fluorescence (Peak T) relative to humic-like (Peaks A and C) fluorescence with increased WRT supports the concept of a shift in DOC quality to more microbial and algal derived material. Additionally, decreasing DOC: DON with increasing WRT implies a greater proportion of N-containing compounds, which may contribute to the protein-like fluorescence of Peak T. This transformation would be expected as N-poor terrestrial DOM is gradually metabolized and replaced by N-rich autochthonous DOM [<xref ref-type="bibr" rid="B50">50</xref>,<xref ref-type="bibr" rid="B51">51</xref>]. A strong relationship between Peak T and low MW DOC also suggests that the DON is possibly small molecular weight amino acids and peptides, rather than large macromolecular protein structures. Since autochthonous DOC tends to be less colored than allochthonous material, internally produced DOC can effectively dilute the overall color [<xref ref-type="bibr" rid="B52">52</xref>,<xref ref-type="bibr" rid="B53">53</xref>]. This is consistent with our observation that the very high MW fraction disappears rapidly within the first lake basin, and the high MW fraction disappears across the lake. The rapidly lost Fe-associated DOC may be of very large molecular weight. Studies of DOC size distribution based on ultrafiltration have shown that the relative importance of high MW DOC decreases with decreasing total DOC concentration across lakes [<xref ref-type="bibr" rid="B54">54</xref>]. High MW DOC (&gt;10kD) may be more available than lower-MW DOC as a substrate for bacterial growth, suggesting this fraction is preferentially removed during degradation [<xref ref-type="bibr" rid="B54">54</xref>]. Likewise [<xref ref-type="bibr" rid="B55">55</xref>], suggest a size-reactivity continuum of DOC, with the larger components being more easily degraded than smaller ones.</p>
+				<p>Our two estimates of internal primary production of DOC suggest significant formation of autochthonous DOC with increasing WRT. The combination of fluorescence and absorbance may be used to estimate amounts of internally produced DOC. Using our second absorbance model (Table S4 in <xref ref-type="supplementary-material" rid="pone.0070598.s004">File S1</xref>) we may assign changes in DOC sources to quantitative changes in water color. According to this model, lake color increases with increasing input of allochthonous and iron associated DOC and decreases when terrestrial DOC is replaced by autochthonous DOC (<xref ref-type="table" rid="tab1">Table 1</xref>, 4 and Table S4 in <xref ref-type="supplementary-material" rid="pone.0070598.s004">File S1</xref>). From this model we conclude that A<sub>420</sub> is much more strongly affected than A<sub>254</sub> by the presence of Fe<sub>coll</sub>. While SUVA is more conservative with respect to iron, iron removal strongly affects A<sub>420</sub> and variations in A<sub>420</sub> in water bodies with short retention times such as streams are driven by temporal variations in terrestrial iron inputs. A<sub>254</sub> on the other hand is mainly driven by the relative contribution of DOC<sub>input</sub> and DOC<sub>lake</sub> (cf. Table S4 in <xref ref-type="supplementary-material" rid="pone.0070598.s004">File S1</xref>) and thus mainly controlled by shifts in DOC pools that occur during slow lake DOC processing [<xref ref-type="bibr" rid="B55">55</xref>].</p>
+			</sec>
+			<sec id="s4.2">
+				<title>Implications for drinking water treatment plants</title>
+				<p>Understanding the mechanisms of browning in Mälaren is particularly important since this lake provides drinking water to 1.5 million people in the Stockholm area. Approximately half of the source water DOC (4 to 5 mg/L) is resistant to removal during water treatment, which typically includes a flocculation step. High SUVA is known to facilitate DOC removal [<xref ref-type="bibr" rid="B56">56</xref>]. Accordingly, it is possible that water treatment may be able to remove virtually all allochthonous DOC with high SUVA, but not the DOC produced in the lake that has low SUVA. During wet periods SUVA is high when the fraction of allochthonous DOC is high and it decreases during low flow periods where autochthonous DOC is higher. The positioning of the drinking water plants downstream of the five lake basins leads to lower overall DOC but a larger contribution of autochthonous DOC with lower SUVA reduces flocculation efficiency.</p>
+			</sec>
+			<sec id="s4.3">
+				<title>Implications for future and past changes of lake water chemistry in boreal lakes</title>
+				<p>Time series of 69 lakes distributed across Sweden reveals striking differences in browning trends (<xref ref-type="fig" rid="pone-0070598-g005">Figure 5</xref>). Lakes with WRT &gt;1.5 years generally show much lower rates of browning. This is supported by observations from the UK Acid Waters Monitoring network where lakes with WRT&lt;3 months have shown significant increases in DOC [57]. Similar relationships between browning trends and WRT have been observed in Finland [<xref ref-type="bibr" rid="B45">45</xref>] and the northeast United States of America [<xref ref-type="bibr" rid="B4">4</xref>]. For lakes with WRT times below one year, pH seems to be an additional controlling factor with acidic lakes (pH &lt; 6.5) generally showing up to 5 times higher trends in browning than more neutral to alkaline lakes (pH &gt; 6.5) (<xref ref-type="fig" rid="pone-0070598-g005">Figure 5a</xref> and <xref ref-type="supplementary-material" rid="pone.0070598.s003">Figure S3</xref>). This may be due to the tendency for iron to form particulates at higher pH [<xref ref-type="bibr" rid="B34">34</xref>,<xref ref-type="bibr" rid="B14">14</xref>,<xref ref-type="bibr" rid="B58">58</xref>]. Thus, with increasing pH dissolved iron concentrations decrease leading to a concurrent decrease in filtered absorbance (A<sub>254</sub> and A<sub>420</sub>). Our studies across lake basins of Mälaren representing a gradient of WRT, as well as 69 lakes with different WRT’s monitored for 20 years suggest that a combination of high pH, high dissolved iron and long WRT strongly counteracts browning (<xref ref-type="fig" rid="pone-0070598-g005">Figure 5a and 5b</xref>). As a result, the frequently observed browning of lakes in different geographic regions is expected to be most pronounced in acidic lakes and streams receiving low amounts of colloidal iron and having a short WRT.</p>
+			</sec>
+		</sec>
+		<sec sec-type="supplementary-material">
+			<title>Supporting Information</title>
+			<supplementary-material xlink:type="simple" position="float" id="pone.0070598.s001" xlink:href="info:doi/10.1371/journal.pone.0070598.s001" mimetype="image/tiff">
+				<label>Figure S1</label>
+				<caption>
+					<p><bold>Figure A&gt;, Comparison between filtered iron (Fe DISSOLVED) and iron from a filtered water sample passing the ion-exchange column (Fe POSTCOLUMN).</bold></p>
+				<p>(TIF)</p></caption>
+				</supplementary-material>
+			<supplementary-material xlink:type="simple" position="float" id="pone.0070598.s002" xlink:href="info:doi/10.1371/journal.pone.0070598.s002" mimetype="image/tiff">
+				<label>Figure S2</label>
+				<caption>
+					<p><bold>Relationship between small MW (% of all size fractions) dissolved organic carbon (DOC) and the abundance (%) of PeakT (PeakT/(Peak A + Peak C + Peak M + Peak T) *100) *100) of Peak T across sites in Mälaren (Small MW = 0.57(Peak T) + 0.027, R<sup>2</sup> = 0.28, n= 22, p &lt; 0.05).</bold></p>
+				<p>(TIF)</p></caption>
+				</supplementary-material>
+			<supplementary-material xlink:type="simple" position="float" id="pone.0070598.s003" xlink:href="info:doi/10.1371/journal.pone.0070598.s003" mimetype="image/tiff">
+				<label>Figure S3</label>
+				<caption>
+					<p><bold>Principal component analysis of the drivers of change in color and change in TOC of the trend lakes where WRT was available.</bold> As input data average pH, TOC, A420, total iron (Fe), total iron per carbon, (Fe/TOC), annual change in A420, annual change in TOC and WRT.</p><p>(TIF)</p></caption>
+				</supplementary-material>
+			<supplementary-material xlink:type="simple" position="float" id="pone.0070598.s004" xlink:href="info:doi/10.1371/journal.pone.0070598.s004" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+				<label>File S1</label>
+				<caption>
+					<p><bold>Supplementary information.</bold> <xref ref-type="supplementary-material" rid="pone.0070598.s001">Table <bold>S1</bold></xref>, Basin coding and average water retention time (WRT) in each basin. A comparison of a number of measured parameters (A420, TOC, total iron, total silica, total phosphorous and chlorophyll) of the regular lake monitoring program for the six lake basins in Lake Mälaren from the 2010 sampling campaign, mean values for the corresponding data over 3 years between 2007–2009 in parenthesis (upper part) and selected additional parameters of the august 2010 sampling (lower part). Arrows indicate the direction of flow between the basins. <xref ref-type="supplementary-material" rid="pone.0070598.s002">Table <bold>S2</bold></xref>, Summary of stream coding, flow contribution, catchment area and average TOC and A420 in order of greatest hydrological contribution and the average flow weighted contribution (STREAM) of the six streams with available data (i.e. excluding S4 and S6) over 12 years (1998-2009), the last 3 years (2007-2009) and the august 2010 sampling for A420 (TOC) during respective period. <xref ref-type="supplementary-material" rid="pone.0070598.s003">Table <bold>S3</bold></xref>, Key variables for eight primary streams inflows to Lake Mälaren including organically associated iron (Feorg), dissolved organic carbon (DOC), absorbance at 420 measured (A420-Measured) and modeled (A420-model), and the relative contribution of DOC and Fecoll to A<sub>420</sub>. <xref ref-type="supplementary-material" rid="pone.0070598.s004">Table <bold>S4</bold></xref>, Parameter values used to predict A420-Modelled and A254-Modelled based on <xref ref-type="disp-formula" rid="eqn1">Equations 1 to 4</xref>, using freshness index (β: α), dissolved iron (Fecoll) and proportion of stream (DOCimport) and lake dissolved organic carbon (DOCauto). <xref ref-type="supplementary-material" rid="pone.0070598.s004">Table <bold>S5</bold></xref>, Pairwise correlations of drivers used for color models.</p><p>(DOCX)</p></caption>
+				</supplementary-material>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<p>We thank Jens Fölster, Christian Demandt, Anders Dűker and Jan Johansson for technical support. We thank the Swedish Environmental Protection Agency and the Department of Aquatic Sciences and Assessment for maintaining a high quality monitoring program over 40 years.</p>
+		</ack>
+		<ref-list>
+			<title>References</title>
+			<ref id="B1">
+				<label>1</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Roulet</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Moore</surname><given-names>TR</given-names></name> (<year>2006</year>) <article-title>Environmental chemistry - Browning the waters</article-title>. <source>Nature</source> <volume>444</volume>: <fpage>283</fpage>-<lpage>284</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/444283a" xlink:type="simple">10.1038/444283a</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17108948" xlink:type="simple">17108948</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B2">
+				<label>2</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Monteith</surname><given-names>DT</given-names></name>, <name name-style="western"><surname>Stoddard</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Evans</surname><given-names>CD</given-names></name>, <name name-style="western"><surname>de Wit</surname><given-names>HA</given-names></name>, <name name-style="western"><surname>Forsius</surname><given-names>M</given-names></name> <etal>et al.</etal> (<year>2007</year>) <article-title>Dissolved organic carbon trends resulting from changes in atmospheric deposition chemistry</article-title>. <source>Nature</source> <volume>450</volume>: <fpage>537</fpage>-<lpage>U539</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature06316" xlink:type="simple">10.1038/nature06316</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18033294" xlink:type="simple">18033294</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B3">
+				<label>3</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kritzberg</surname><given-names>ES</given-names></name>, <name name-style="western"><surname>Ekstrom</surname><given-names>SM</given-names></name> (<year>2012</year>) <article-title>Increasing iron concentrations in surface waters - a factor behind brownification?</article-title> <source>Biogeosciences</source> <volume>9</volume>: <fpage>1465</fpage>-<lpage>1478</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.5194/bg-9-1465-2012" xlink:type="simple">10.5194/bg-9-1465-2012</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B4">
+				<label>4</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>SanClements</surname><given-names>MD</given-names></name>, <name name-style="western"><surname>Oelsner</surname><given-names>GP</given-names></name>, <name name-style="western"><surname>McKnight</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Stoddard</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Nelson</surname><given-names>SJ</given-names></name> (<year>2012</year>) <article-title>New insights into the source of decadal increases of dissolved organic matter in acid-sensitive lakes of the Northeastern United States</article-title>. <source>Environ Sci Technol</source> <volume>46</volume>: <fpage>3212</fpage>-<lpage>3219</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/es204321x" xlink:type="simple">10.1021/es204321x</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22369674" xlink:type="simple">22369674</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B5">
+				<label>5</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Freeman</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Evans</surname><given-names>CD</given-names></name>, <name name-style="western"><surname>Monteith</surname><given-names>DT</given-names></name>, <name name-style="western"><surname>Reynolds</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Fenner</surname><given-names>N</given-names></name> (<year>2001</year>) <article-title>Export of organic carbon from peat soils</article-title>. <source>Nature</source> <volume>412</volume>: <fpage>785</fpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/35090632" xlink:type="simple">10.1038/35090632</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11518954" xlink:type="simple">11518954</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B6">
+				<label>6</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tranvik</surname><given-names>LJ</given-names></name>, <name name-style="western"><surname>Jansson</surname><given-names>M</given-names></name> (<year>2002</year>) <article-title>Climate change (Communication arising): Terrestrial export of organic carbon</article-title>. <source>Nature</source> <volume>415</volume>: <fpage>861</fpage>-<lpage>862</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/415861b" xlink:type="simple">10.1038/415861b</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B7">
+				<label>7</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lepisto</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kortelainen</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Mattsson</surname><given-names>T</given-names></name> (<year>2008</year>) <article-title>Increased organic C and N leaching in a northern boreal river basin in Finland</article-title>. <source>Glob Biogeochem Cycles</source> <volume>22</volume>.</mixed-citation>
+			</ref>
+			<ref id="B8">
+				<label>8</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Heikkinen</surname><given-names>K</given-names></name> (<year>1990</year>) <article-title>Seasonal-Changes in Iron Transport and Nature of Dissolved Organic-Matter in a Humic River in Northern Finland</article-title>. <source>Earth Surf Processes And Landforms</source> <volume>15</volume>: <fpage>583</fpage>-<lpage>596</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/esp.3290150702" xlink:type="simple">10.1002/esp.3290150702</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B9">
+				<label>9</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Meili</surname><given-names>M</given-names></name> (<year>1992</year>) <article-title>Sources, concentrations and characteristics of organic-matter in softwater lakes and streams of the Swedish forest region</article-title>. <source>Hydrobiologia</source> <volume>229</volume>: <fpage>23</fpage>-<lpage>41</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/BF00006988" xlink:type="simple">10.1007/BF00006988</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B10">
+				<label>10</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pullin</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Anthony</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Maurice</surname><given-names>PA</given-names></name> (<year>2007</year>) <article-title>Effects of iron on the molecular weight distribution, light absorption, and fluorescence properties of natural organic matter</article-title>. <source>Environ Eng Sci</source> <volume>24</volume>: <fpage>987</fpage>-<lpage>997</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1089/ees.2006.0040" xlink:type="simple">10.1089/ees.2006.0040</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B11">
+				<label>11</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Weishaar</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Aiken</surname><given-names>GR</given-names></name>, <name name-style="western"><surname>Bergamaschi</surname><given-names>BA</given-names></name>, <name name-style="western"><surname>Fram</surname><given-names>MS</given-names></name>, <name name-style="western"><surname>Fujii</surname><given-names>R</given-names></name> <etal>et al.</etal> (<year>2003</year>) <article-title>Evaluation of specific ultraviolet absorbance as an indicator of the chemical composition and reactivity of dissolved organic carbon</article-title>. <source>Environ Sci Technol</source> <volume>37</volume>: <fpage>4702</fpage>-<lpage>4708</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/es030360x" xlink:type="simple">10.1021/es030360x</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/14594381" xlink:type="simple">14594381</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B12">
+				<label>12</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jansen</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Mulder</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Verstraten</surname><given-names>JM</given-names></name> (<year>2003</year>) <article-title>Organic complexation of Al and fe in acidic soil solutions Comparisons of diffusive gradients in thin films analysis with Models V and VI predictions</article-title>. <source>Anal Chim Acta</source> <volume>498</volume>: <fpage>105</fpage>-<lpage>117</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.aca.2003.08.054" xlink:type="simple">10.1016/j.aca.2003.08.054</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B13">
+				<label>13</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Neal</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Lofts</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Evans</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Reynolds</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Tipping</surname><given-names>E</given-names></name> <etal>et al.</etal> (<year>2008</year>) <article-title>Increasing Iron Concentrations in UK Upland Waters</article-title>. <source>Aquat Geochem</source> <volume>14</volume>: <fpage>263</fpage>-<lpage>288</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10498-008-9036-1" xlink:type="simple">10.1007/s10498-008-9036-1</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B14">
+				<label>14</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lyven</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Hassellov</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Turner</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Haraldsson</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Andersson</surname><given-names>K</given-names></name> (<year>2003</year>) <article-title>Competition between iron- and carbon-based colloidal carriers for trace metals in a freshwater assessed using flow field-flow fractionation coupled to ICPMS</article-title>. <source>Geochim Cosmochim Acta</source> <volume>67</volume>: <fpage>3791</fpage>-<lpage>3802</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0016-7037(03)00087-5" xlink:type="simple">10.1016/S0016-7037(03)00087-5</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B15">
+				<label>15</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Haaland</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Hongve</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Laudon</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Riise</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Vogt</surname><given-names>RD</given-names></name> (<year>2010</year>) <article-title>Quantifying the Drivers of the Increasing Colored Organic Matter in Boreal Surface Waters</article-title>. <source>Environ Sci Technol</source> <volume>44</volume>: <fpage>2975</fpage>-<lpage>2980</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/es903179j" xlink:type="simple">10.1021/es903179j</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20329770" xlink:type="simple">20329770</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B16">
+				<label>16</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Richardson</surname><given-names>SD</given-names></name>, <name name-style="western"><surname>Plewa</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Wagner</surname><given-names>ED</given-names></name>, <name name-style="western"><surname>Schoeny</surname><given-names>R</given-names></name>, <name name-style="western"><surname>DeMarini</surname><given-names>DM</given-names></name> (<year>2007</year>) <article-title>Occurrence, genotoxicity, and carcinogenicity of regulated and emerging disinfection by-products in drinking water: A review and roadmap for research</article-title>. <source>Mutat Res</source> <volume>636</volume>: <fpage>178</fpage>-<lpage>242</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.mrrev.2007.09.001" xlink:type="simple">10.1016/j.mrrev.2007.09.001</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17980649" xlink:type="simple">17980649</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B17">
+				<label>17</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>von Einem</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Graneli</surname><given-names>W</given-names></name> (<year>2010</year>) <article-title>Effects of fetch and dissolved organic carbon on epilimnion depth and light climate in small forest lakes in southern Sweden</article-title>. <source>Limnol Oceanogr</source> <volume>55</volume>: <fpage>920</fpage>-<lpage>930</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4319/lo.2009.55.2.0920" xlink:type="simple">10.4319/lo.2009.55.2.0920</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B18">
+				<label>18</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tanentzap</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Yan</surname><given-names>ND</given-names></name>, <name name-style="western"><surname>Keller</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Girard</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Heneberry</surname><given-names>J</given-names></name> <etal>et al.</etal> (<year>2008</year>) <article-title>Cooling lakes while the world warms: Effects of forest regrowth and increased dissolved organic matter on the thermal regime of a temperate, urban lake</article-title>. <source>Limnol Oceanogr</source> <volume>53</volume>: <fpage>404</fpage>-<lpage>410</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4319/lo.2008.53.1.0404" xlink:type="simple">10.4319/lo.2008.53.1.0404</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B19">
+				<label>19</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Angeler</surname><given-names>DG</given-names></name>, <name name-style="western"><surname>Trigal</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Drakare</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Johnson</surname><given-names>RK</given-names></name>, <name name-style="western"><surname>Goedkoop</surname><given-names>W</given-names></name> (<year>2010</year>) <article-title>Identifying resilience mechanisms to recurrent ecosystem perturbations</article-title>. <source>Oecologia</source> <volume>164</volume>: <fpage>231</fpage>-<lpage>241</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00442-010-1640-2" xlink:type="simple">10.1007/s00442-010-1640-2</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20431922" xlink:type="simple">20431922</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B20">
+				<label>20</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Karlsson</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Byström</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Ask</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Ask</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Persson</surname><given-names>L</given-names></name> <etal>et al.</etal> (<year>2009</year>) <article-title>Light limitation of nutrient-poor lake ecosystems</article-title>. <source>Nature</source> <volume>460</volume>: <fpage>506</fpage>-<lpage>U580</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature08179" xlink:type="simple">10.1038/nature08179</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19626113" xlink:type="simple">19626113</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B21">
+				<label>21</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Battin</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Kaplan</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Findlay</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Hopkinson</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Marti</surname><given-names>E</given-names></name> <etal>et al.</etal> (<year>2008</year>) <article-title>Biophysical controls on organic carbon fluxes in fluvial networks</article-title>. <source>Nat Geosci</source> <volume>1</volume>: <fpage>95</fpage>-<lpage>100</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/ngeo101" xlink:type="simple">10.1038/ngeo101</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B22">
+				<label>22</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sobek</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Algesten</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Bergström</surname><given-names>AK</given-names></name>, <name name-style="western"><surname>Jansson</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Tranvik</surname><given-names>LJ</given-names></name> (<year>2003</year>) <article-title>The catchment and climate regulation of pCO<sub>2</sub> in boreal lakes</article-title>. <source>Glob Change Biol</source> <volume>9</volume>: <fpage>630</fpage>-<lpage>641</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1046/j.1365-2486.2003.00619.x" xlink:type="simple">10.1046/j.1365-2486.2003.00619.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B23">
+				<label>23</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jones</surname><given-names>R</given-names></name> (<year>2002</year>) <article-title>The influence of humic substances on lacustrine planktonic food chains</article-title>. <source>Hydrobiologia</source> <volume>229</volume>: <fpage>73</fpage>-<lpage>91</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B24">
+				<label>24</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>von Wachenfeldt</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Tranvik</surname><given-names>LJ</given-names></name> (<year>2008</year>) <article-title>Sedimentation in boreal lakes - The role of flocculation of allochthonous dissolved organic matter in the water column</article-title>. <source>Ecosystems</source> <volume>11</volume>: <fpage>803</fpage>-<lpage>814</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10021-008-9162-z" xlink:type="simple">10.1007/s10021-008-9162-z</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B25">
+				<label>25</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Graneli</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Lindell</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Tranvik</surname><given-names>L</given-names></name> (<year>1996</year>) <article-title>Photo-oxidative production of dissolved inorganic carbon in lakes of different humic content</article-title>. <source>Limnologica Oceangraphica</source> <volume>41</volume>(<issue-id>4</issue-id>): <fpage>698</fpage>-<lpage>706</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4319/lo.1996.41.4.0698" xlink:type="simple">10.4319/lo.1996.41.4.0698</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B26">
+				<label>26</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kopác</surname></name>̌ek J, Klementová S, Norton SA (<year>2005</year>) <article-title>Photochemical Production of Ionic and Particulate Aluminum and Iron in Lakes</article-title> <source>Environ Sci Technol</source> <volume>39</volume>: <fpage>3656</fpage>–<lpage>3662</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/es048101a" xlink:type="simple">10.1021/es048101a</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15952369" xlink:type="simple">15952369</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B27">
+				<label>27</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dillon</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Molot</surname><given-names>LA</given-names></name> (<year>1997</year>) <article-title>Colour - mass balances and colour - dissolved organic carbon relationships in lakes and streama in central Ontario</article-title>. <source>Can J Fish Aquat Sci</source> <volume>54</volume>: <fpage>2789</fpage>-<lpage>2795</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1139/f97-196" xlink:type="simple">10.1139/f97-196</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B28">
+				<label>28</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Algesten</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Sobek</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Bergstrom</surname><given-names>AK</given-names></name>, <name name-style="western"><surname>Agren</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Tranvik</surname><given-names>LJ</given-names></name> <etal>et al.</etal> (<year>2004</year>) <article-title>Role of lakes for organic carbon cycling in the boreal zone</article-title>. <source>Glob Change Biol</source> <volume>10</volume>: <fpage>141</fpage>-<lpage>147</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-2486.2003.00721.x" xlink:type="simple">10.1111/j.1365-2486.2003.00721.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B29">
+				<label>29</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hanson</surname><given-names>PC</given-names></name>, <name name-style="western"><surname>Hamilton</surname><given-names>DP</given-names></name>, <name name-style="western"><surname>Stanley</surname><given-names>EH</given-names></name>, <name name-style="western"><surname>Nicholas</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Langman</surname><given-names>OC</given-names></name> <etal>et al.</etal> (<year>2011</year>) <article-title>Fate of Allochthonous Dissolved Organic Carbon in Lakes: A Quantitative Approach</article-title>. <source>PLOS ONE</source> <volume>6</volume>: <fpage>e21884</fpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21779347" xlink:type="simple">21779347</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B30">
+				<label>30</label>
+				<mixed-citation publication-type="book-edited-URL" xlink:type="simple"><name name-style="western"><surname>Vattenvårdsförbund</surname></name> (<year>2013</year>) <article-title>Description of the joint water authorities activity around Mälaren</article-title> in <source>Swedish</source>.  <ext-link ext-link-type="uri" xlink:href="http://www.malaren.org/" xlink:type="simple"><underline>http://www.malaren.org/</underline></ext-link>. <comment>Accessed:</comment> January 2013.</mixed-citation>
+			</ref>
+			<ref id="B31">
+				<label>31</label>
+				<mixed-citation publication-type="web" xlink:type="simple"><collab xlink:type="simple">SLU</collab> (<year>2012</year>) <article-title>Water chemical and physical analysis</article-title>.  <ext-link ext-link-type="uri" xlink:href="http://www.slu.se/en/faculties/nl/about-the-faculty/departments/department-of-aquatic-sciences-and-assessment/laboratories/geochemical-laboratory/water-chemical-analyses/" xlink:type="simple"><underline>http://www.slu.se/en/faculties/nl/about-the-faculty/departments/department-of-aquatic-sciences-and-assessment/laboratories/geochemical-laboratory/water-chemical-analyses/</underline></ext-link>. <comment>Accessed:</comment> January 2013.</mixed-citation>
+			</ref>
+			<ref id="B32">
+				<label>32</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Wallin</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Andersson</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Johnson</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Kvarnäs</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Persson</surname><given-names>G</given-names></name> <etal>et al.</etal> (<year>2000</year>). <source>älaren miljötillstånd and Utveckling</source>: <fpage>1965</fpage>-<lpage>1998</lpage> (<comment>in swedish</comment>).  94 pages, <publisher-loc>Sweden</publisher-loc>: <publisher-name>Uppsala</publisher-name><comment>. </comment><ext-link ext-link-type="uri" xlink:href="http://www.malaren.org/document/malaren.pdf" xlink:type="simple"><underline>http://www.malaren.org/document/malaren.pdf</underline></ext-link><comment>. Accessed January 2013</comment></mixed-citation>
+			</ref>
+			<ref id="B33">
+				<label>33</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Liungman</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Borell Lövstedt</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Moreno-Arancibia</surname><given-names>P</given-names></name> (<year>2010</year>) <article-title>Hydrodynamisk modellstudie av Mälaren</article-title> in <source>Swedish. Project report, pp 51, DHI Sweden for Mälarens; Vattenvårdsförbund <ext-link ext-link-type="uri" xlink:href="http://www.malaren.org/document/hydrodynamisk-modellstudie.pdf" xlink:type="simple">http://www.malaren.org/document/Hydrodynamisk-modellstudie.pdf</ext-link></source>. <comment>Accessed January 2013</comment></mixed-citation>
+			</ref>
+			<ref id="B34">
+				<label>34</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lofts</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Tipping</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Hamilton-Taylor</surname><given-names>J</given-names></name> (<year>2008</year>) <article-title>The Chemical Speciation of Fe(III) in Freshwaters</article-title>. <source>Aquat Geochem</source> <volume>14</volume>: <fpage>337</fpage>-<lpage>358</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10498-008-9040-5" xlink:type="simple">10.1007/s10498-008-9040-5</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B35">
+				<label>35</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McKnight</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Boyer</surname><given-names>EW</given-names></name>, <name name-style="western"><surname>Westerhoff</surname><given-names>PK</given-names></name>, <name name-style="western"><surname>Doran</surname><given-names>PT</given-names></name>, <name name-style="western"><surname>Kulbe</surname><given-names>T</given-names></name> <etal>et al.</etal> (<year>2001</year>) <article-title>Spectrofluorometric characterization of dissolved organic matter for indication of precursor organic material and aromaticity</article-title>. <source>Limnol Oceanogr</source> <volume>46</volume>: <fpage>38</fpage>-<lpage>48</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4319/lo.2001.46.1.0038" xlink:type="simple">10.4319/lo.2001.46.1.0038</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B36">
+				<label>36</label>
+				<mixed-citation publication-type="other" xlink:type="simple"><name name-style="western"><surname>Cory</surname><given-names>RM</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>MP</given-names></name>, <name name-style="western"><surname>McKnight</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Guerard</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>PL</given-names></name> (<year>2010</year>) <article-title>Effect of instrument-specific response on the analysis of fulvic acid fluorescence spectra. Limnology and Oceanography-Methods</article-title> <comment>8: 67-78</comment></mixed-citation>
+			</ref>
+			<ref id="B37">
+				<label>37</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Parlanti</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Worz</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Geoffroy</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Lamotte</surname><given-names>M</given-names></name> (<year>2000</year>) <article-title>Dissolved organic matter fluorescence spectroscopy as a tool to estimate biological activity in a coastal zone submitted to anthropogenic inputs</article-title>. <source>Org Geochem</source> <volume>31</volume>: <fpage>1765</fpage>-<lpage>1781</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0146-6380(00)00124-8" xlink:type="simple">10.1016/S0146-6380(00)00124-8</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B38">
+				<label>38</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zsolnay</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Baigar</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Jimenez</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Steinweg</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Saccomandi</surname><given-names>F</given-names></name> (<year>1999</year>) <article-title>Differentiating with fluorescence spectroscopy the sources of dissolved organic matter in soils subjected to drying</article-title>. <source>Chemosphere</source> <volume>38</volume>: <fpage>45</fpage>-<lpage>50</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0045-6535(98)00166-0" xlink:type="simple">10.1016/S0045-6535(98)00166-0</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/10903090" xlink:type="simple">10903090</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B39">
+				<label>39</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Coble</surname><given-names>PG</given-names></name> (<year>1996</year>) <article-title>Characterization of marine and terrestrial DOM in seawater using excitation emission matrix spectroscopy</article-title>. <source>Mar Chem</source> <volume>51</volume>: <fpage>325</fpage>-<lpage>346</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/0304-4203(95)00062-3" xlink:type="simple">10.1016/0304-4203(95)00062-3</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B40">
+				<label>40</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Erlandsson</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Futter</surname><given-names>MN</given-names></name>, <name name-style="western"><surname>Kothawala</surname><given-names>DN</given-names></name>, <name name-style="western"><surname>Köhler</surname><given-names>SJ</given-names></name> (<year>2012</year>) <article-title>Variability in spectral absorbance metrics across boreal lake waters</article-title>. <source>J Environ Monit</source>, <volume>14</volume>: <fpage>2643</fpage>–<lpage>52</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22885538" xlink:type="simple">22885538</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B41">
+				<label>41</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kothawala</surname><given-names>DN</given-names></name>, <name name-style="western"><surname>Evans</surname><given-names>RD</given-names></name>, <name name-style="western"><surname>Dillon</surname><given-names>PJ</given-names></name> (<year>2006</year>) <article-title>Changes in the molecular weight distribution of dissolved organic carbon within a Precambrian shield stream</article-title>. <source>Water Resour Res</source> <volume>42</volume>.</mixed-citation>
+			</ref>
+			<ref id="B42">
+				<label>42</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Laudon</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Köhler</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Buffam</surname><given-names>I</given-names></name> (<year>2004</year>) <article-title>Seasonal TOC export from seven boreal catchments in northern Sweden</article-title>. <source>Aquat Sci</source> <volume>66</volume>: <fpage>223</fpage>-<lpage>230</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00027-004-0700-2" xlink:type="simple">10.1007/s00027-004-0700-2</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B43">
+				<label>43</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Johnson</surname><given-names>RK</given-names></name> (<year>1999</year>) <article-title>Regional representativeness of Swedish reference lakes</article-title>. <source>Environ Manag</source> <volume>23</volume>: <fpage>115</fpage>-<lpage>124</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s002679900172" xlink:type="simple">10.1007/s002679900172</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/9817776" xlink:type="simple">9817776</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B44">
+				<label>44</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sen</surname><given-names>PK</given-names></name> (<year>1968</year>) <article-title>Estimates of the regression coefficient based on Kendall’s tau</article-title>. <source>J Am Stat Assoc</source> <volume>63</volume>: <fpage>1379</fpage>–<lpage>1389</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1080/01621459.1968.10480934" xlink:type="simple">10.1080/01621459.1968.10480934</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B45">
+				<label>45</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vuorenmaa</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Forsius</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Mannio</surname><given-names>J</given-names></name> (<year>2006</year>) <article-title>Increasing trends of total organic carbon concentrations in small forest lakes in Finland from 1987 to 2003</article-title>. <source>Sci Total Environ</source> <volume>365</volume>: <fpage>47</fpage>-<lpage>65</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.scitotenv.2006.02.038" xlink:type="simple">10.1016/j.scitotenv.2006.02.038</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16597460" xlink:type="simple">16597460</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B46">
+				<label>46</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Johansson</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Temnerud</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Abrahamsson</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Bergren-Kleja</surname><given-names>D</given-names></name> (<year>2010</year>) <article-title>Variation in organic matter and water color in Lake Mälaren during the past 70 years</article-title>. <source>Ambio</source> <volume>39</volume>: <fpage>116</fpage>-<lpage>125</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s13280-010-0019-2" xlink:type="simple">10.1007/s13280-010-0019-2</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20653274" xlink:type="simple">20653274</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B47">
+				<label>47</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pokrovsky</surname><given-names>OS</given-names></name>, <name name-style="western"><surname>Schott</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Dupre</surname><given-names>B</given-names></name> (<year>2006</year>) <article-title>Trace element fractionation and transport in boreal rivers and soil porewaters of permafrost-dominated basaltic terrain in Central Siberia</article-title>. <source>Geochim Cosmochim Acta</source> <volume>70</volume>: <fpage>3239</fpage>-<lpage>3260</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.gca.2006.04.008" xlink:type="simple">10.1016/j.gca.2006.04.008</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B48">
+				<label>48</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Maloney</surname><given-names>KO</given-names></name>, <name name-style="western"><surname>Morris</surname><given-names>DP</given-names></name>, <name name-style="western"><surname>Moses</surname><given-names>CO</given-names></name>, <name name-style="western"><surname>Osburn</surname><given-names>CL</given-names></name> (<year>2005</year>) <article-title>The role of iron and dissolved organic carbon in the absorption of ultraviolet radiation in humic lake water</article-title>. <source>Biogeochemistry</source> <volume>75</volume>: <fpage>393</fpage>-<lpage>407</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10533-005-1675-3" xlink:type="simple">10.1007/s10533-005-1675-3</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B49">
+				<label>49</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Doane</surname><given-names>TA</given-names></name>, <name name-style="western"><surname>Horwáth</surname><given-names>WR</given-names></name> (<year>2010</year>) <article-title>Eliminating interference from iron(III) for ultraviolet absorbance measurements of dissolved organic matter</article-title>. <source>Chemosphere</source> <volume>78</volume>: <fpage>1409</fpage>-<lpage>1415</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.chemosphere.2009.12.062" xlink:type="simple">10.1016/j.chemosphere.2009.12.062</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20092870" xlink:type="simple">20092870</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B50">
+				<label>50</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brown</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Mcknight</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Chin</surname><given-names>YP</given-names></name>, <name name-style="western"><surname>Ecmu</surname></name> Roberts (<year>2004</year>) <article-title>Chemical characterization of dissolved organic material in Pony Lake, a saline coastal pond in Antarctica</article-title>. <source>Mar Chem</source> <volume>89</volume>: <fpage>327</fpage>-<lpage>337</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.marchem.2004.02.016" xlink:type="simple">10.1016/j.marchem.2004.02.016</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B51">
+				<label>51</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cory</surname><given-names>RM</given-names></name>, <name name-style="western"><surname>Mcknight</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Chin</surname><given-names>YP</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Jaros</surname><given-names>CL</given-names></name> (<year>2007</year>) <article-title>Chemical characteristics of fulvic acids from Arctic surface waters: Microbial contributions and photochemical transformations</article-title>. <source>J Geophysical Resbiogeosciences</source> <volume>112</volume>.</mixed-citation>
+			</ref>
+			<ref id="B52">
+				<label>52</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mcknight</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Aiken</surname><given-names>GR</given-names></name> (<year>1998</year>) <article-title>Sources and Age of Aquatic Humus</article-title>. <source>Ecol Stud</source> <volume>133</volume>: <fpage>9</fpage>-<lpage>39</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/978-3-662-03736-2_2" xlink:type="simple">10.1007/978-3-662-03736-2_2</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B53">
+				<label>53</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Battin</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Luyssaert</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kaplan</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Aufdenkampe</surname><given-names>AK</given-names></name>, <name name-style="western"><surname>Richter</surname><given-names>A</given-names></name> <etal>et al.</etal> (<year>2009</year>) <article-title>The boundless carbon cycle</article-title>. <source>Nat Geosci</source> <volume>2</volume>: <fpage>598</fpage>-<lpage>600</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/ngeo618" xlink:type="simple">10.1038/ngeo618</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B54">
+				<label>54</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tranvik</surname><given-names>LJ</given-names></name> (<year>1990</year>) <article-title>Bacterioplankton Growth on Fractions of Dissolved Organic Carbonof Different Molecular Weights from Humic and Clear Waters</article-title>. <source>Appl Environ Microbiol</source>, <volume>56</volume>: <fpage>1672</fpage>-<lpage>1677</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16348210" xlink:type="simple">16348210</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B55">
+				<label>55</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Amon</surname><given-names>RMW</given-names></name>, <name name-style="western"><surname>Benner</surname><given-names>B</given-names></name> (<year>1996</year>) <article-title>Photochemical and microbial consumption of dissolved organic carbon and dissolved oxygen in the Amazon River system</article-title>. <source>Geochim Cosmochim Acta</source> <volume>60</volume>: <fpage>1783</fpage>-<lpage>1792</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/0016-7037(96)00055-5" xlink:type="simple">10.1016/0016-7037(96)00055-5</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B56">
+				<label>56</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pernitsky</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Edzwald</surname><given-names>JK</given-names></name> (<year>2006</year>) <article-title>Selection of alum and polyaluminum coagulants: principles and applications</article-title>. <source>J Water Supply Res Technol AQUA</source> <volume>55</volume>: <fpage>121</fpage>-<lpage>141</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B57">
+				<label>57</label>
+				<mixed-citation publication-type="other" xlink:type="simple"><name name-style="western"><surname>Kernan</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Battarbee</surname><given-names>RW</given-names></name>, <name name-style="western"><surname>Curtis</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Monteith</surname><given-names>DT</given-names></name>, <name name-style="western"><surname>Shilland</surname><given-names>EM</given-names></name> (<year>2010</year>) <article-title>Recovery of lakes and streams in the UK from acid rain. The United Kingdom Acid Waters Monitoring Network 20 year interpretative report</article-title>.</mixed-citation>
+			</ref>
+			<ref id="B58">
+				<label>58</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sjöstedt</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Gustafsson</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Köhler</surname><given-names>SJ</given-names></name> (<year>2010</year>) <article-title>Chemical Equilibrium Modeling of Organic Acids, pH, Aluminum, and Iron in Swedish Surface Waters</article-title>. <source>Environ Sci Technol</source> <volume>44</volume>: <fpage>8587</fpage>-<lpage>8593</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/es102415r" xlink:type="simple">10.1021/es102415r</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20958024" xlink:type="simple">20958024</ext-link>.</mixed-citation>
+			</ref>
+		</ref-list>
+	</back>
+</article>

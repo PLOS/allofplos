@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0138823</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-15-13506</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Structure-Activity Relationship of Indole-Tethered Pyrimidine Derivatives that Concurrently Inhibit Epidermal Growth Factor Receptor and Other Angiokinases</article-title>
+<alt-title alt-title-type="running-head">Pyrimidines as Concurrent Inhibitors of EGFR and Other Angiokinases</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Song</surname>
+<given-names>Jiho</given-names>
+</name>
+<xref rid="aff001" ref-type="aff"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Yoo</surname>
+<given-names>Jakyung</given-names>
+</name>
+<xref rid="aff002" ref-type="aff"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Kwon</surname>
+<given-names>Ara</given-names>
+</name>
+<xref rid="aff001" ref-type="aff"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Kim</surname>
+<given-names>Doran</given-names>
+</name>
+<xref rid="aff001" ref-type="aff"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Nguyen</surname>
+<given-names>Hong Khanh</given-names>
+</name>
+<xref rid="aff001" ref-type="aff"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Lee</surname>
+<given-names>Bong-Yong</given-names>
+</name>
+<xref rid="aff002" ref-type="aff"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Suh</surname>
+<given-names>Wonhee</given-names>
+</name>
+<xref rid="aff001" ref-type="aff"><sup>1</sup></xref>
+<xref rid="cor001" ref-type="corresp">*</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Min</surname>
+<given-names>Kyung Hoon</given-names>
+</name>
+<xref rid="aff001" ref-type="aff"><sup>1</sup></xref>
+<xref rid="cor001" ref-type="corresp">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>College of Pharmacy, Chung-Ang University, Seoul, Republic of Korea</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Life Science Research Institute, Daewoong Pharmaceutical Co., Ltd., Gyeonggi-Do, Republic of Korea</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Datti</surname>
+<given-names>Alessandro</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Lunenfeld-Tanenbaum Research Institute, CANADA</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>Jakyung Yoo and Bong-Yong Lee are employed by Daewoong Pharmaceutical Co., Ltd. There are no patents, products in development or marketed products to declare. This does not alter the authors' adherence to all the PLOS ONE policies on sharing data and materials, as detailed online in the guide for authors.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: WS KHM. Performed the experiments: JS JY HKN AK DK. Analyzed the data: JS JY BYL WS KHM. Wrote the paper: JS JY WS KHM.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">wsuh@cau.ac.kr</email> (WS); <email xlink:type="simple">khmin@cau.ac.kr</email> (KHM)</corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>24</day>
+<month>9</month>
+<year>2015</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2015</year>
+</pub-date>
+<volume>10</volume>
+<issue>9</issue>
+<elocation-id>e0138823</elocation-id>
+<history>
+<date date-type="received">
+<day>30</day>
+<month>3</month>
+<year>2015</year>
+</date>
+<date date-type="accepted">
+<day>3</day>
+<month>9</month>
+<year>2015</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2015</copyright-year>
+<copyright-holder>Song et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0138823" xlink:type="simple"/>
+<abstract>
+<p>Antiangiogenic agents have been widely investigated in combination with standard chemotherapy or targeted cancer agents for better management of advanced cancers. Therapeutic agents that concurrently inhibit epidermal growth factor receptor and other angiokinases could be useful alternatives to combination therapies for epidermal growth factor receptor-dependent cancers. Here, we report the synthesis of an indole derivative of pazopanib using a bioisosteric replacement strategy, which was designated <bold>MKP101</bold>. <bold>MKP101</bold> inhibited not only the epidermal growth factor receptor with an IC<sub>50</sub> value of 43 nM but also inhibited angiokinases as potently as pazopanib. In addition, <bold>MKP101</bold> effectively inhibited vascular endothelial growth factor-induced endothelial proliferation, tube formation, migration of human umbilical vein endothelial cells and proliferation of HCC827, an epidermal growth factor receptor-addicted cancer cell line. A docking model of <bold>MKP101</bold> and the kinase domain of the epidermal growth factor receptor was generated to predict its binding mode, and validated by synthesizing and evaluating <bold>MKP101</bold> derivatives. Additionally, a study of structure-activity relationships of indolylamino or indolyloxy pyrimidine analogues derived from <bold>MKP101</bold> demonstrated that selectivity for epidermal growth factor receptor and other angiokinases, especially vascular endothelial growth factor receptor 2 depends on the position of substituents on pyrimidine and the type of link between pyrimidine and the indole moiety. We believe that this study could provide a basis for developing angiokinase inhibitors having high affinity for the epidermal growth factor receptor, from the pyrimidine scaffold.</p>
+</abstract>
+<funding-group>
+<funding-statement>This research was supported by Korea Drug Development Fund (KDDF) funded by Ministry of Science, ICT and Future Planning, Ministry of Trade, Industry &amp; Energy and Ministry of Health &amp; Welfare (KDDF-201208-07) and by the Bio &amp; Medical Technology Development Program of the NRF funded by the Korean government (MSIP) (NRF-2012M3A9C7050137 and 2012M3A9C6050368). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. Daewoong Pharmaceutical Co., Ltd. provided support in the form of salaries for authors JY and BYL, but did not have any additional role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript. The specific roles of these authors are articulated in the ‘author contributions’ section.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="9"/>
+<table-count count="5"/>
+<page-count count="17"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability" xlink:type="simple">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Angiogenesis, the formation of new blood vessels, is an essential physiological event in tumor progression [<xref rid="pone.0138823.ref001" ref-type="bibr">1</xref>]. Angiogenesis supplies tumors with nutrients and oxygen, thereby enabling their proliferation. Inhibition of angiogenesis has been considered a promising therapeutic strategy for suppressing tumor growth without excessive host toxicity. Over the last 2 decades, a number of antiangiogenic agents have been developed for clinical use, including monoclonal antibodies such as bevacizumab, and tyrosine kinase inhibitors (TKIs) such as sunitinib [<xref rid="pone.0138823.ref002" ref-type="bibr">2</xref>]. The primary molecular targets for antiangiogenic therapy include vascular endothelial growth factor receptors (VEGFRs), platelet-derived growth factor receptors (PDGFRs), and fibroblast growth factor receptors (FGFRs).</p>
+<p>In general, multi-target agents are more effective than single-target agents for the treatment of complex diseases such as cancer [<xref rid="pone.0138823.ref003" ref-type="bibr">3</xref>,<xref rid="pone.0138823.ref004" ref-type="bibr">4</xref>]. Multi-target agents such as TKIs and aflibercept (anti-VEGF-A and -B) produced better clinical results in the regulation of tumor angiogenesis than the single-target agent bevacizumab (anti-VEGF-A) because tumors readily overcame the inhibition of angiogenesis by activating compensatory pathways such as PDGF or FGF signaling, or both [<xref rid="pone.0138823.ref002" ref-type="bibr">2</xref>,<xref rid="pone.0138823.ref005" ref-type="bibr">5</xref>]. Monotherapy with broad-spectrum angiokinase inhibitors such as sunitinib or sorafenib prolongs overall survival (OS) in some cancers [<xref rid="pone.0138823.ref006" ref-type="bibr">6</xref>,<xref rid="pone.0138823.ref007" ref-type="bibr">7</xref>,<xref rid="pone.0138823.ref008" ref-type="bibr">8</xref>,<xref rid="pone.0138823.ref009" ref-type="bibr">9</xref>], while monotherapy with bevacizumab showed unsatisfactory effect in various clinical conditions except glioblastoma [<xref rid="pone.0138823.ref007" ref-type="bibr">7</xref>,<xref rid="pone.0138823.ref010" ref-type="bibr">10</xref>,<xref rid="pone.0138823.ref011" ref-type="bibr">11</xref>]. However, many clinical trials have demonstrated that anti-angiogenic agents enhanced clinical efficacy when combined with conventional chemotherapy or targeted cancer agents such as erlotinib, an epidermal growth factor receptor (EGFR) TKI [<xref rid="pone.0138823.ref012" ref-type="bibr">12</xref>].</p>
+<p>In phase III trials involving patients with advanced non-small cell lung cancer (NSCLC), the combination of bevacizumab and erlotinib as a second-line therapy resulted in prolonged produced progression-free survival (PFS) compared to erlotinib alone [<xref rid="pone.0138823.ref013" ref-type="bibr">13</xref>]. Sunitinib is an inhibitor of VEGFR1-3, PDGFRs, KIT, Fms-like tyrosine kinase 3 (FLT3), rearranged during transfection proto-oncogene (RET), and colony stimulating factor 1 receptor (CSF-1R). In another phase III trial for patients previously treated for advanced NSCLC, the combination of sunitinib and erlotinib produced a PFS that was significantly longer than that produced by erlotinib alone [<xref rid="pone.0138823.ref014" ref-type="bibr">14</xref>]. However, none of these combinations improved the OS in its respective phase III studies, and further investigation is required to improve OS. In a preclinical study, the combination of nintedanib (a triple angiokinase inhibitor of VEGFRs, PDGFRs, and FGFRs) and afatinib (an irreversible pan-ErbB inhibitor of EGFR, ErbB2, ErbB3, and ErbB4) potently inhibited tumor growth in HT-29 xenograft model regardless of the Kirsten rat sarcoma viral oncogene homolog (<italic>KRAS</italic>) status [<xref rid="pone.0138823.ref015" ref-type="bibr">15</xref>]. These data support the hypothesis that concurrent inhibition of key angiokinases and the EGFR could be clinically beneficial in cancer treatment. A phase II trial evaluating combination therapy with pazopanib and erlotinib is currently underway to corroborate this notion. While multi-targeted combination therapy is used for the treatment of a variety of advanced cancers, significant concerns exist regarding pharmacokinetics, dosing, and safety when designing such therapies [<xref rid="pone.0138823.ref016" ref-type="bibr">16</xref>]. Drug combinations are more most likely to cause unacceptable level of toxicity [<xref rid="pone.0138823.ref017" ref-type="bibr">17</xref>,<xref rid="pone.0138823.ref018" ref-type="bibr">18</xref>]. When dose-limiting toxicities occur, each component must be administered at a less than the optimal dose, which could compromise the efficacy. In such cases, monotherapy with well-designed and carefully evaluated multi-target agents would be preferable over combination therapy.</p>
+<p>Pazopanib effectively inhibits tumor angiogenesis by potent inhibition of a variety of angiokinases including VEGFRs, PDGFRs, and FGFRs. It is currently used clinically for the treatment of advanced renal cell carcinoma and soft tissue sarcoma [<xref rid="pone.0138823.ref019" ref-type="bibr">19</xref>,<xref rid="pone.0138823.ref020" ref-type="bibr">20</xref>]. Monotherapy with pazopanib reduced tumor volume in 30 of 35 patients with stage I/II resectable NSCLC [<xref rid="pone.0138823.ref021" ref-type="bibr">21</xref>]. Phase II studies involving the administration of pazopanib alone and in combination with the EGFR inhibitor erlotinib are currently in progress [<xref rid="pone.0138823.ref022" ref-type="bibr">22</xref>]. However, we hypothesized that the modification of pazopanib to induce EGFR-inhibitory effect would lead to better treatment outcomes in patients with NSCLC and other EGFR-dependent tumors than those obtained with erlotinib or pazopanib alone. Therefore, the pazopanib derivatives could represent promising alternatives to combination therapy. Consequently, we screened derivatives of pazopanib for multi-kinase inhibitory activities that regulate both EGFR and angiokinases. To the best of our knowledge, derivatives of pazopanib that effectively inhibit EGFR have not been reported previously. Herein, we describe the synthesis and evaluation of pyrimidine derivatives that inhibit EGFR while retaining their inhibitory activity for angiokinases, and determined their structure-activity relationship (SAR).</p>
+</sec>
+<sec id="sec002" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="sec003">
+<title>Cell culture</title>
+<p>HCC827 cells were purchased from the American Type Culture Collection (ATCC, Manassas, VA, USA). Cells were grown in RPMI 1640 (Welgene Inc., Daegu, Republic of Korea) supplemented with 10% fetal bovine serum (FBS) (Welgene Inc.) and 1% penicillin-streptomycin (Gibco®, Life Technologies, Carlsbad, CA, USA) in a humidified 5% CO<sub>2</sub> atmosphere at 37°C. Human umbilical vein endothelial cells (HUVECs, ScienCell Research Laboratories, Carlsbad, CA, USA) were cultured in endothelial growth medium-2 (EGM-2; Lonza, Walkersville, MD, USA) from passages 3 to 6.</p>
+</sec>
+<sec id="sec004">
+<title><italic>In vitro</italic> kinase assay</title>
+<p>All kinase assays were carried out using KinaseProfiler<sup>TM</sup> and IC<sub>50</sub> Profiler<sup>TM</sup> (Millipore UK Ltd., Dundee, UK. Now Eurofins Scientific, Dundee, UK). All IC<sub>50</sub> data were presented as the mean values. The Curves obtained to determine IC<sub>50</sub> values were shown in Supporting Information (<xref rid="pone.0138823.s002" ref-type="supplementary-material">S1 Fig</xref>).</p>
+</sec>
+<sec id="sec005">
+<title>Cell viability assay</title>
+<p>HCC827 cells were seeded in 96-well plates in 100 μL of RPMI 1640 supplemented with 5% FBS and 1% penicillin-streptomycin. After a 24-hour incubation, the cells were treated with a series of test compound dilutions for 72 hours. Cell viability was assessed using EZ-Cytox (Daeil Lab Service, Seoul, South Korea) according to the manufacturer’s instructions.</p>
+<p>For the HUVEC viability assay, HUVECs were treated with phosphate-buffered saline (PBS) or the indicated concentrations of VEGF inhibitors in EGM-2 medium for 24 hours. After the cells were washed with PBS, they were counted using an inverted light microscope (Nikon Eclipse Ti-U; Nikon Corp., Tokyo, Japan) in 5 random fields from each well.</p>
+</sec>
+<sec id="sec006">
+<title><italic>In vitro</italic> angiogenesis assay</title>
+<p>For analyzing of the antagonistic response to VEGF, tube formation, scratch wound migration, and cell proliferation assays were performed after the exposure of HUVECs to 50 ng/mL VEGF-A (R&amp;D Systems, Minneapolis, MN), which induced a significant angiogenic response. For the cell proliferation assays, cells were incubated overnight in endothelial basal media (EBM; Lonza, Walkersville, MD, USA) containing 0.5% FBS or supplemented with VEGF-A and/or VEGF inhibitors. The cells were washed with PBS and counted in 4 random microscope fields. The tube formation assay was performed by seeding cells on Matrigel-coated plates (BD Bioscience, Bedford, MA, USA) and incubating in EBM containing 0.5% FBS or supplemented with VEGF-A and/or VEGF inhibitors. After overnight incubation, tubule networks were quantified by measuring the tubule length in 4 random microscope fields. For the analysis of scratch wound migration, confluent cell monolayers grown on 6-well plates were scratched using a micropipette tip. After the plates were washed with PBS to remove dislodged cells and media, they were incubated with EBM containing 0.5% FBS or supplemented with VEGF and/or VEGF inhibitors for 8 hours. Cell migration was observed by optical microscopy and quantified by measuring the number of cells that had migrated from the wound edges.</p>
+</sec>
+<sec id="sec007">
+<title>Molecular modeling</title>
+<p>To conduct the docking studies, the crystal structure of the human EGFR kinase domain bound to TAK-285 (PDB ID: 3POZ) was prepared using the Protein Preparation Wizard [<xref rid="pone.0138823.ref023" ref-type="bibr">23</xref>] implemented in Maestro [<xref rid="pone.0138823.ref024" ref-type="bibr">24</xref>] with the following steps: (i) water molecules more than 5 Å from TAK-285 were removed; (ii) hydrogen atoms were added; (iii) protonation states of entire systems were adjusted to the pH range of 7.0 ± 3.0 using Epik; (iv) hydrogen bond networks and flip orientations/tautomeric states of Gln, Asn, and His residues were optimized; and (v) geometry optimization was performed to a maximum RMSD of 0.3 Å with the OPLS2005 force field. The protonated and neutral states of pazopanib and its derivatives were prepared using LigPrep [<xref rid="pone.0138823.ref025" ref-type="bibr">25</xref>]. For flexible docking, the grid box was centered on the crystal structure of TAK-285 using the default bounding sizes, with an inner box of 10 Å on each side and an outer box of 25.7 Å on each side. Glide SP (Standard-Precision) was employed for flexible docking with default parameters [<xref rid="pone.0138823.ref026" ref-type="bibr">26</xref>]. The best docked configurations with the lowest GlideScores were selected for analysis.</p>
+</sec>
+<sec id="sec008">
+<title>Synthesis of MKP101-123</title>
+<p>Synthetic procedures and spectral data of <bold>MKP101</bold>–<bold>MKP123</bold> are described in the supporting information (<xref rid="pone.0138823.s001" ref-type="supplementary-material">S1 Appendix</xref>).</p>
+</sec>
+</sec>
+<sec id="sec009" sec-type="conclusions">
+<title>Results and Discussion</title>
+<sec id="sec010">
+<title>Chemistry</title>
+<p>All indole-tethered pyrimidine derivatives were synthesized as shown in <xref rid="pone.0138823.g001" ref-type="fig">Fig 1</xref>. Commercially available 2,4-dichloropyrimidine was condensed with various 5-aminoindoles under basic condition to afford <bold>1a-d</bold>. <italic>N</italic>-methylation of <bold>1a-d</bold> using iodomethane yielded <bold>2a-d</bold>. Finally, condensation of intermediates <bold>1</bold> or <bold>2</bold> with a variety of anilines provided the corresponding disubstituted pyrimidines, <bold>MKP101-104</bold>, <bold>106–117</bold> and <bold>MKP122</bold> (<xref rid="pone.0138823.g001" ref-type="fig">Fig 1A</xref>). The synthesis of <bold>MKP105</bold> was accomplished by condensation of 6-aminoindole with 2,4-dichloropyrimidine and <italic>N</italic>-methylation, followed by reaction with 5-amino-2-methylbenzenesulfonamide (<xref rid="pone.0138823.g001" ref-type="fig">Fig 1B</xref>). <bold>MKP118-121</bold> and <bold>MKP123</bold> were prepared using a procedure similar to that used for the synthesis of <bold>MKP106-117</bold>. Condensation of 4,6-dichloropyrimidine with 5-aminoindole or 5-hydroxyindole yielded <bold>5a-b</bold>. <italic>N</italic>-methylation of <bold>5a</bold> provided compound <bold>6</bold>. <bold>MKP118-121</bold> and <bold>MKP123</bold> were obtained from condensation of various anilines with <bold>5a-b</bold>, and <bold>6</bold> (<xref rid="pone.0138823.g001" ref-type="fig">Fig 1C</xref>).</p>
+<fig id="pone.0138823.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Synthesis of MKP101-123.</title>
+<p>Reagents and conditions: (A) Synthesis of <bold>MKP101</bold>-<bold>104</bold>, <bold>MKP106</bold>-<bold>117</bold>, <bold>MKP122</bold>: (a) 5-Aminoindoles (0.8–1.0 equiv.), Et<sub>3</sub>N (0.8–3.0 equiv.), isopropanol, rt, 1–10 h, or 5-hydroxyindole (0.77 equiv.), DBU (1.54 equiv.), MeCN, rt, 1 h; (b) CH<sub>3</sub>I (1.0–1.5 equiv.), NaH (or Cs<sub>2</sub>CO<sub>3</sub>) (1.0–1.2 equiv.), DMF, 0°C (or rt), 1 h; (c) ArNH<sub>2</sub> (0.9–1.1 equiv.), 1-butanol, microwave irradiation, 200°C, 30 min. (B) Synthesis of <bold>MKP105</bold>: (a) 6-Aminoindole (1.5 equiv.), MeOH / H<sub>2</sub>O (1:3), rt, overnight; (b). CH<sub>3</sub>I (1.0 equiv.), NaH (1.0 equiv.), DMF, -10°C, 2h; (c) 5-Amino-2-methylbenzenesulfonamide (0.9–1.1 equiv.), 1-butanol, microwave 200°C, 30min. (C) Synthesis of <bold>MKP118</bold>-<bold>121</bold>, <bold>MKP123</bold>: (a) 5-Aminoindole (1.0 equiv.), Et<sub>3</sub>N (1.0 equiv.), isopropanol, rt, 2 h or 5-hydroxyindole (1.2 equiv.), DBU (2.0 equiv.), MeCN, rt, 1 h; (b) CH<sub>3</sub>I (1.1 equiv.), NaH (1.1 equiv.), DMF, 0°C rt, 1h; (c) ArNH<sub>2</sub> (0.9–1.1 equiv.), 1-butanol, microwave irradiation 200°C, 30 min.</p>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.g001" position="float" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec011">
+<title>MKP101 significantly inhibited EGFR, other angiokinases, and cell proliferation</title>
+<p>Derivatives of pazopanib, primarily those with benzenesulfonamido moieties have been reported previously [<xref rid="pone.0138823.ref027" ref-type="bibr">27</xref>,<xref rid="pone.0138823.ref028" ref-type="bibr">28</xref>,<xref rid="pone.0138823.ref029" ref-type="bibr">29</xref>]. Some benzenesulfonamido pazopanib derivatives inhibited VEGF more potently than pazopanib, but did not exhibit considerable activity for EGFR [<xref rid="pone.0138823.ref028" ref-type="bibr">28</xref>]. Thus our derivatization strategy focused on the indazole moiety of pazopanib. The indole moiety is a viable bioisostere of indazole and is, therefore, suitable for the replacement strategy, [<xref rid="pone.0138823.ref030" ref-type="bibr">30</xref>]. Therefore, an indole moiety was introduced in the pazopanib molecule, and the resulting compound <bold>MKP101</bold> was evaluated for effects on EGFR and angiokinases (<xref rid="pone.0138823.g002" ref-type="fig">Fig 2</xref>). <bold>MKP101</bold> strongly inhibited wild type EGFR and the mutant EGFR L858R with IC<sub>50</sub> values of 43 and 17 nM, respectively, while pazopanib did not inhibit EGFR. <bold>MKP101</bold> also significantly inhibited angiokinases including VEGFRs, FGFR3, PDGFRs, and cKit (<xref rid="pone.0138823.t001" ref-type="table">Table 1</xref>). Kumar et al. provided IC<sub>50</sub> values of pazopanib against 61 kinases [<xref rid="pone.0138823.ref031" ref-type="bibr">31</xref>], which were compared to the kinase profile data of <bold>MKP101</bold>. The potency of inhibition of the angiokinases by <bold>MKP101</bold> was similar to that induced by pazopanib in the <italic>in vitro</italic> kinase assay. In addition, 40 kinases were profiled to determine the selectivity of <bold>MKP101</bold>. Of the 40 kinases tested, only 3 kinases were inhibited by more than 90% by 1 μM <bold>MKP101</bold> (<xref rid="pone.0138823.t002" ref-type="table">Table 2</xref>). Furthermore, <bold>MKP101</bold> was evaluated for anti-proliferative activity against HCC827 cells, an EGFR TKI-sensitive NSCLC cell line. In HCC827 cells, <bold>MKP101</bold> significantly inhibited proliferation with an IC<sub>50</sub> value of 160 nM (<xref rid="pone.0138823.g003" ref-type="fig">Fig 3</xref>). Gefitinib was tested as a positive control, and had an IC<sub>50</sub> value of 10 nM. The inhibition of EGFR phosphorylation by <bold>MKP101</bold> was demonstrated by western blot analysis, in which <bold>MKP101</bold> reduced the levels of phosphorylated EGFR.</p>
+<fig id="pone.0138823.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Structure of pazopanib and its indole derivative MKP101.</title>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.g002" position="float" xlink:type="simple"/>
+</fig>
+<fig id="pone.0138823.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>MKP101 inhibits proliferation of epidermal growth factor receptor (EGFR)-tyrosine kinase inhibitor (TKI)-sensitive non-small cell lung cancer (NSCLC) cells.</title>
+<p>(A) Inhibition of HCC827 cell proliferation. Cells were incubated for 72 h with a range of concentrations of <bold>MKP101</bold>, and cell viability was measured using the WST-1 assay. The IC<sub>50</sub> value was 160 nM. (B) Inhibition of EGFR phosphorylation in HCC827 cells. Western blot analysis using antibodies to phosphorylated and total EGFR from a representative experiment is shown. Cells were incubated for 3 h at the indicated concentration. (C) Graph showing the relative intensities of the total and phosphorylated EGFR as determined by band densitometry. IC<sub>50</sub>, half-maximal inhibitory concentration.</p>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.g003" position="float" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0138823.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.t001</object-id>
+<label>Table 1</label> <caption><title>Half-maximal inhibitory concentration (IC<sub>50</sub>) values (nM) of MKP101 for human kinases.</title></caption>
+<alternatives>
+<graphic id="pone.0138823.t001g" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.t001" xlink:type="simple"/>
+<table>
+<colgroup span="1">
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1">Kinase</th>
+<th align="center" rowspan="1" colspan="1">MKP101</th>
+<th align="center" rowspan="1" colspan="1">Pazopanib<xref rid="t001fn001" ref-type="table-fn">*</xref></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify" rowspan="1" colspan="1">EGFR</td>
+<td align="right" rowspan="1" colspan="1">43</td>
+<td align="right" rowspan="1" colspan="1">&gt;3,000</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">EGFR (L858R)</td>
+<td align="right" rowspan="1" colspan="1">17</td>
+<td align="right" rowspan="1" colspan="1">-</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">FGFR1</td>
+<td align="right" rowspan="1" colspan="1">28</td>
+<td align="right" rowspan="1" colspan="1">80</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">FGFR3</td>
+<td align="right" rowspan="1" colspan="1">43</td>
+<td align="right" rowspan="1" colspan="1">138</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">VEGFR-1</td>
+<td align="right" rowspan="1" colspan="1">3</td>
+<td align="right" rowspan="1" colspan="1">7</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">VEGFR-2</td>
+<td align="right" rowspan="1" colspan="1">32</td>
+<td align="right" rowspan="1" colspan="1">15</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">VEGFR-3</td>
+<td align="right" rowspan="1" colspan="1">2</td>
+<td align="right" rowspan="1" colspan="1">2</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">PDGFRα</td>
+<td align="right" rowspan="1" colspan="1">162</td>
+<td align="right" rowspan="1" colspan="1">73</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">PDGFRβ</td>
+<td align="right" rowspan="1" colspan="1">70</td>
+<td align="right" rowspan="1" colspan="1">215</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">cKit</td>
+<td align="right" rowspan="1" colspan="1">108</td>
+<td align="right" rowspan="1" colspan="1">48</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p>*The data, except for that of EGFR, are the values reported in reference [<xref rid="pone.0138823.ref031" ref-type="bibr">31</xref>].</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<table-wrap id="pone.0138823.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.t002</object-id>
+<label>Table 2</label> <caption><title>Kinase profile of MKP101 (1 μM) for the 40 kinases<xref rid="t002fn001" ref-type="table-fn">*</xref>.</title></caption>
+<alternatives>
+<graphic id="pone.0138823.t002g" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.t002" xlink:type="simple"/>
+<table>
+<colgroup span="1">
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="justify" rowspan="1" colspan="1">Kinase</th>
+<th align="center" rowspan="1" colspan="1">% inhibition</th>
+<th align="justify" rowspan="1" colspan="1">Kinase</th>
+<th align="center" rowspan="1" colspan="1">% inhibition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="justify" rowspan="1" colspan="1">Abl (h)</td>
+<td align="center" rowspan="1" colspan="1">100 ± 2</td>
+<td align="justify" rowspan="1" colspan="1">MAPK2 (h)</td>
+<td align="center" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">AMPKα1 (h)</td>
+<td align="center" rowspan="1" colspan="1">0</td>
+<td align="justify" rowspan="1" colspan="1">p70S6K (h)</td>
+<td align="center" rowspan="1" colspan="1">20 ± 3</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CaMKIIβ (h)</td>
+<td align="center" rowspan="1" colspan="1">17 ± 4</td>
+<td align="justify" rowspan="1" colspan="1">PhKγ2 (h)</td>
+<td align="center" rowspan="1" colspan="1">0 ± 4</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CaMKIIγ (h)</td>
+<td align="center" rowspan="1" colspan="1">37 ± 2</td>
+<td align="justify" rowspan="1" colspan="1">PKA (h)</td>
+<td align="center" rowspan="1" colspan="1">7 ± 6</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CaMKIIδ (h)</td>
+<td align="center" rowspan="1" colspan="1">41 ± 3</td>
+<td align="justify" rowspan="1" colspan="1">PKBβ (h)</td>
+<td align="center" rowspan="1" colspan="1">14 ± 4</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CaMKIV (h)</td>
+<td align="center" rowspan="1" colspan="1">0</td>
+<td align="justify" rowspan="1" colspan="1">PKCα (h)</td>
+<td align="center" rowspan="1" colspan="1">10 ± 1</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CDK1/cyclin B (h)</td>
+<td align="center" rowspan="1" colspan="1">18 ± 8</td>
+<td align="justify" rowspan="1" colspan="1">PKCβI (h)</td>
+<td align="center" rowspan="1" colspan="1">7 ± 5</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CDK2/cyclin A (h)</td>
+<td align="center" rowspan="1" colspan="1">12 ± 8</td>
+<td align="justify" rowspan="1" colspan="1">PKCβII (h)</td>
+<td align="center" rowspan="1" colspan="1">8 ± 3</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CDK2/cyclin E (h)</td>
+<td align="center" rowspan="1" colspan="1">8 ± 1</td>
+<td align="justify" rowspan="1" colspan="1">PKCγ (h)</td>
+<td align="center" rowspan="1" colspan="1">12 ± 2</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CDK3/cyclin E (h)</td>
+<td align="center" rowspan="1" colspan="1">6 ± 2</td>
+<td align="justify" rowspan="1" colspan="1">PKCδ (h)</td>
+<td align="center" rowspan="1" colspan="1">0</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CDK5/p25 (h)</td>
+<td align="center" rowspan="1" colspan="1">47 ± 2</td>
+<td align="justify" rowspan="1" colspan="1">PKCε (h)</td>
+<td align="center" rowspan="1" colspan="1">2 ± 3</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CDK5/p35 (h)</td>
+<td align="center" rowspan="1" colspan="1">38 ± 3</td>
+<td align="justify" rowspan="1" colspan="1">PKCη (h)</td>
+<td align="center" rowspan="1" colspan="1">0 ± 6</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CDK7/cyclin H/MAT1 (h)</td>
+<td align="center" rowspan="1" colspan="1">16 ± 5</td>
+<td align="justify" rowspan="1" colspan="1">PKCι (h)</td>
+<td align="center" rowspan="1" colspan="1">5 ± 6</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">CDK9/cyclin T1 (h)</td>
+<td align="center" rowspan="1" colspan="1">54 ± 4</td>
+<td align="justify" rowspan="1" colspan="1">PKCμ (h)</td>
+<td align="center" rowspan="1" colspan="1">7 ± 1</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">FLT3 (h)</td>
+<td align="center" rowspan="1" colspan="1">91 ± 1</td>
+<td align="justify" rowspan="1" colspan="1">PKCθ (h)</td>
+<td align="center" rowspan="1" colspan="1">16 ± 2</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">GSK3β (h)</td>
+<td align="center" rowspan="1" colspan="1">18 ± 4</td>
+<td align="justify" rowspan="1" colspan="1">PKCζ (h)</td>
+<td align="center" rowspan="1" colspan="1">5 ± 4</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">IR (h)</td>
+<td align="center" rowspan="1" colspan="1">14 ± 3</td>
+<td align="justify" rowspan="1" colspan="1">PKG1α (h)</td>
+<td align="center" rowspan="1" colspan="1">0 ± 1</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">LKB1 (h)</td>
+<td align="center" rowspan="1" colspan="1">0</td>
+<td align="justify" rowspan="1" colspan="1">PKG1β (h)</td>
+<td align="center" rowspan="1" colspan="1">7 ± 1</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">Lyn (h)</td>
+<td align="center" rowspan="1" colspan="1">98 ± 1</td>
+<td align="justify" rowspan="1" colspan="1">ROCK-II (h)</td>
+<td align="center" rowspan="1" colspan="1">4 ± 1</td>
+</tr>
+<tr>
+<td align="justify" rowspan="1" colspan="1">MAPK1 (h)</td>
+<td align="center" rowspan="1" colspan="1">4 ± 5</td>
+<td align="justify" rowspan="1" colspan="1">SAPK2a (h)</td>
+<td align="center" rowspan="1" colspan="1">82 ± 2</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t002fn001"><p>*data were presented as the mean ± standard deviation (S. D.).</p></fn>
+<fn id="t002fn002"><p>Abl, Abelson murine leukemia; AMPK, AMP-activated protein kinase; CAMK, Ca<sup>2+</sup>/calmodulin-dependent protein kinase; CDK, cyclin-dependent kinase; FLT3, Fms-like tyrosine kinase 3; GSK, glycogen synthase kinase; IR, insulin receptor; LKB1, liver kinase B1; Lyn, Lck/Yes novel tyrosine kinase; MAPK, mitogen-activated protein kinases; PhK, Phosphorylase kinase; PKA, protein kinase A; PKC, protein kinase C; PKG, protein kinase G; ROCK, Rho-associated protein kinase; SAPK, stress-activated protein kinase; (h), human.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+<sec id="sec012">
+<title>Effect of pazopanib and MKP101 on VEGF-induced angiogenesis in endothelial cells</title>
+<p>Non-cytotoxic concentrations of pazopanib and <bold>MKP101</bold> were tested in human umbilical vein endothelial cells (HUVECs) prior to the angiogenesis assays. Pazopanib and <bold>MKP101</bold> exhibited significant endothelial cytotoxicity at 5 and 10 μg/mL, but not at 1 μg/mL (<xref rid="pone.0138823.g004" ref-type="fig">Fig 4A</xref>). Therefore, <italic>in vitro</italic> angiogenesis assays were performed with pazopanib and <bold>MKP101</bold> at non-cytotoxic concentrations 1 μg/mL for both, and their inhibitory effects against VEGF-triggered angiogenesis were evaluated. As shown in <xref rid="pone.0138823.g004" ref-type="fig">Fig 4B–4D</xref>, <italic>in vitro</italic> angiogenesis data revealed that VEGF-induced increases in endothelial proliferation, tube formation, and migration were significantly inhibited by pazopanib and <bold>MKP101</bold>. <bold>MKP101</bold> blocked the VEGF-mediated angiogenic activity of endothelial cells with potency comparable to that of pazopanib.</p>
+<fig id="pone.0138823.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Pazopanib and MKP101 have similar inhibitory effects on VEGF-induced angiogenesis in HUVECs.</title>
+<p>(A) Cytotoxicity of pazopanib and <bold>MKP101</bold> in HUVECs. No cytotoxicity was observed at 1 μg/mL pazopanib or 1 μg/mL <bold>MKP101</bold>. (B-D) Pazopanib and <bold>MKP101</bold> block VEGF (50 ng/ml)-induced increases in endothelial proliferation (B), tube formation (C), and migration (D). Cell proliferation and tube formation experiments were performed using 1 μg/mL of pazopanib and 1 μg/mL <bold>MKP101</bold>. The scratch wound migration assay was performed using 0.5 μg/mL pazopanib and 0.5 μg/mL <bold>MKP101</bold>. In (A) and (B), the number of cells was expressed as the fold change with respect to the number of cells seeded at day 0. Tube formation responses were compared by normalizing the values relative to those of the corresponding PBS control samples (*<italic>p</italic> &lt; 0.05 vs. PBS; <sup>#</sup><italic>p</italic> &lt; 0.05 vs. VEGF, mean ± SEM). Scale bar = 100 μm.</p>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.g004" position="float" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec013">
+<title>SAR and molecular docking studies</title>
+<p>Based on the enzymatic inhibitory activity, the binding modes of pazopanib and its indole derivatives with the human EGFR kinase domain were analyzed using molecular docking studies. The indole-based <bold>MKP101</bold> (IC<sub>50</sub>, 43 nM) showed an inhibitory activity comparable to that previously reported for <bold>TAK-285</bold> (IC<sub>50</sub>, 23 nM), while the indazole-based pazopanib showed no inhibitory effect against EGFR [<xref rid="pone.0138823.ref032" ref-type="bibr">32</xref>]. Aertgeerts et al. previously reported that <bold>TAK-285</bold> competitively binds to the ATP site [<xref rid="pone.0138823.ref032" ref-type="bibr">32</xref>].</p>
+<p>The top-scored binding configurations and a schematic 2-dimensional (2D) representation of <bold>MKP101</bold> and pazopanib co-crystallized with <bold>TAK-285</bold> as a reference are shown in <xref rid="pone.0138823.g004" ref-type="fig">Fig 4</xref>. <bold>MKP101</bold> occupies the ATP binding site of the EGFR in a manner similar to <bold>TAK-285</bold>. The indole ring of <bold>MKP101</bold> occupies a lipophilic pocket formed by Met766, Cys775, Leu777, Leu788, and Phe856 in a manner similar to that observed with the 3-trifluoromethylphenyl group of <bold>TAK-285</bold>, and forms a direct hydrogen bond to the backbone of Phe856 (<xref rid="pone.0138823.g005" ref-type="fig">Fig 5A and 5C</xref>). The aniline moiety of <bold>MKP101</bold> was docked in the hinge region between the N- and C-lobes, similar to the pyrrolo[3,2-<italic>d</italic>]pyrimidine ring of <bold>TAK-285</bold>, where it participates in hydrophobic interactions with Leu718, Leu844, Leu792, and Met793 (<xref rid="pone.0138823.g005" ref-type="fig">Fig 5A and 5C</xref>). The sulfonamide group of <bold>MKP101</bold> was exposed to the solvent in a manner similar to that observed for hydroxymethylbutanamide moiety of <bold>TAK-285</bold>. Pazopanib did not fit as well as <bold>MKP101</bold> and <bold>TAK-285</bold> at the ATP binding site (<xref rid="pone.0138823.g005" ref-type="fig">Fig 5B and 5D</xref>). The rigid and bulky dimethylindazole group of pazopanib does not participate in hydrogen bond interaction with Phe856, and cannot fit into the lipophilic pocket of the EGFR. Consequently, the aniline moiety of pazopanib, which did not occupy the hinge region, was exposed to the solvent (<xref rid="pone.0138823.g005" ref-type="fig">Fig 5B and 5D</xref>).</p>
+<fig id="pone.0138823.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Predicted docking orientation of MKP101 in the epidermal growth factor receptor (EGFR) kinase domain.</title>
+<p>The binding poses of (A) <bold>MKP101</bold> (carbon atoms in green) and (B) pazopanib (carbon atoms in orange) in the human EGFR kinase domain were compared. The structure of co-crystallized TAK-285 is shown as a reference (carbon atoms in off-white). Hydrogen bonds are displayed as dashed lines. The lipophilic potential surface of the ATP-binding site of EGFR was created using the MOLCAD implemented in Sybyl-X 2.0. A 2D-interaction diagram of the binding model of (C) <bold>MKP101</bold> and (D) pazopanib was generated, which displayed amino acid residues within 4.0 Å of the ligand. Acidic, hydrophobic, basic, polar, and other residues at the active site are represented by red, green, purple, blue, and gray spheres, respectively. Hydrogen bonds between the ligand and the backbone are shown in dashed pink lines. The π-π stacking interaction is shown with a green line. The docking models show that <bold>MKP101</bold> occupies the ATP-binding site in a manner similar to <bold>TAK-285</bold>, and the indole ring of <bold>MKP101</bold> interacts with the backbone of the Phe856 by hydrogen bonding. However, as expected, pazopanib did not fit well at the ATP binding site. 2D, 2-dimensional; ATP, adenosine triphosphate.</p>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.g005" position="float" xlink:type="simple"/>
+</fig>
+<p>The indole derivatives of <bold>MKP101</bold> (<bold>MKP102</bold>-<bold>105</bold>) were synthesized to determine the effect of the indole moiety on EGFR activity and to validate the molecular docking model of <bold>MKP101</bold> and EGFR. This model of EGFR-MKP101 showed that there appeared to be a space available at the C3 position of the indole moiety, but the space at the C-2 position appeared to be very limited. Therefore, we introduced a methyl group at the C-2 or C-3 position of the indole moiety, and <bold>MKP102</bold> (a 3-methyl indole) and <bold>MKP103</bold> (a 2-methyl indole) were synthesized (<xref rid="pone.0138823.g006" ref-type="fig">Fig 6</xref>). To determine whether the hydrogen bonding interaction of the amine of the indole moiety is essential, the <italic>N</italic>-methylated derivative <bold>MKP104</bold> and its regioisomer <bold>MKP105</bold> were synthesized. The MKP compounds (<bold>MKP102</bold>–<bold>105</bold>) were subjected to an <italic>in vitro</italic> kinase assay for determination of EGFR inhibitory activity (<xref rid="pone.0138823.t003" ref-type="table">Table 3</xref>). As expected based on the docking model, only <bold>MKP102</bold> showed significant activity in the <italic>in vitro</italic> kinase assay while the other MKP compounds showed very poor activity against EGFR. In addition, the MKP compounds were evaluated for anti-proliferative activity in HCC827 cells (<xref rid="pone.0138823.t003" ref-type="table">Table 3</xref>). Only <bold>MKP102</bold> displayed significant anti-proliferative activity (IC<sub>50</sub>, 197 nM) against HCC827 cells in a manner similar to that observed with <bold>MKP101</bold>. The anti-proliferative activity correlated well with the results of the kinase assay for EGFR.</p>
+<fig id="pone.0138823.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>Structures of MKP102, MKP103, MKP104, and MKP105.</title>
+<p><bold>MKP102</bold> and <bold>103</bold> are derivatives that possess a methyl group at the C-3 and C-2 positions of the indole ring, respectively. <bold>MKP104</bold> is a derivative with a methyl group on the indole nitrogen. <bold>MKP105</bold> is a regioisomer of <bold>MKP101</bold>.</p>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.g006" position="float" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0138823.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.t003</object-id>
+<label>Table 3</label> <caption><title>Activity of MKP compounds for EGFR and HCC827 cells.</title></caption>
+<alternatives>
+<graphic id="pone.0138823.t003g" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.t003" xlink:type="simple"/>
+<table>
+<colgroup span="1">
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" rowspan="1" colspan="1"/>
+<th colspan="2" align="center" rowspan="1">EGFR</th>
+<th align="center" rowspan="1" colspan="1">HCC827</th>
+</tr>
+<tr>
+<th align="center" rowspan="1" colspan="1">Compound</th>
+<th align="center" rowspan="1" colspan="1">% inhibition at 1 μM<xref rid="t003fn001" ref-type="table-fn"><sup>a</sup></xref></th>
+<th align="center" rowspan="1" colspan="1">IC<sub>50</sub> (nM)</th>
+<th align="center" rowspan="1" colspan="1">IC<sub>50</sub> (nM)<xref rid="t003fn003" ref-type="table-fn"><sup>c</sup></xref></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP101</bold></td>
+<td align="center" rowspan="1" colspan="1">96 ± 2</td>
+<td align="center" rowspan="1" colspan="1">43</td>
+<td align="right" rowspan="1" colspan="1">160</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP102</bold></td>
+<td align="center" rowspan="1" colspan="1">93 ± 2</td>
+<td align="center" rowspan="1" colspan="1">55</td>
+<td align="right" rowspan="1" colspan="1">197</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP103</bold></td>
+<td align="center" rowspan="1" colspan="1">42± 4</td>
+<td align="center" rowspan="1" colspan="1">ND<xref rid="t003fn002" ref-type="table-fn"><sup>b</sup></xref></td>
+<td align="right" rowspan="1" colspan="1">1633</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP104</bold></td>
+<td align="center" rowspan="1" colspan="1">20 ± 4</td>
+<td align="center" rowspan="1" colspan="1">ND</td>
+<td align="right" rowspan="1" colspan="1">2680</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP105</bold></td>
+<td align="center" rowspan="1" colspan="1">47± 2</td>
+<td align="center" rowspan="1" colspan="1">ND</td>
+<td align="right" rowspan="1" colspan="1">1465</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>Gefitinib</bold></td>
+<td align="center" rowspan="1" colspan="1">100 ± 0</td>
+<td align="center" rowspan="1" colspan="1">3</td>
+<td align="right" rowspan="1" colspan="1">10</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t003fn001"><p><sup>a</sup>Data were presented as the mean ± standard deviation (S. D.)</p></fn>
+<fn id="t003fn002"><p><sup>b</sup>ND: not determined</p></fn>
+<fn id="t003fn003"><p><sup>c</sup>Viability experiment in the HCC827 cells was performed in triplicate and repeated at least 3 times independently. The curve obtained to determine IC<sub>50</sub> values were shown in <xref rid="pone.0138823.s003" ref-type="supplementary-material">S2 Fig</xref>.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>Further docking studies of the <bold>MKP101</bold> derivatives were carried out to explore their SAR. <xref rid="pone.0138823.g007" ref-type="fig">Fig 7</xref> shows a comparison of the predicted binding mode of the analogs of <bold>MKP101</bold>. <bold>MKP102</bold> showed anti-proliferative activity comparable to that of <bold>MKP101</bold>, and a similar binding configuration. The 3-methyl indole amino moiety of <bold>MKP102</bold> occupies a lipophilic pocket that forms a direct hydrogen bond to the backbone of the Phe856 in the same orientation as the indole ring of <bold>MKP101</bold> (<xref rid="pone.0138823.g007" ref-type="fig">Fig 7</xref>). In contrast, <bold>MKP103</bold>, with its 2-methyl indole group, could not fit into the lipophilic pocket (similar to pazopanib), and showed anti-proliferative activity that was dramatically weaker than that shown by <bold>MKP101</bold> (<xref rid="pone.0138823.g007" ref-type="fig">Fig 7</xref>). The 5-amino-<italic>N</italic>-methyl indole of <bold>MKP104</bold> also lacked a hydrogen bonding interaction with the Phe856 at the lipophilic pocket and showed a corresponding substantial decrease in inhibitory activity (<xref rid="pone.0138823.g007" ref-type="fig">Fig 7</xref>). The binding configuration of the 6-amino indole of <bold>MKP105</bold> was flipped compared to the 5-amino indole analogues. As a result, <bold>MKP105</bold> also lost the hydrogen bond interaction with the Phe856 at the lipophilic pocket, which decreased its inhibitory activity (<xref rid="pone.0138823.g007" ref-type="fig">Fig 7</xref>). The docking results showed that a lipophilic pocket with limited space and a hinge region surrounded <bold>MKP101</bold> at the ATP binding site and hydrogen bonding with Phe856 at the lipophilic pocket is particularly important for potency. Taken together, the findings of the docking studies are in agreement with the enzymatic inhibitory activity assays and provide essential information for the design of a potent EGFR inhibitor.</p>
+<fig id="pone.0138823.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>Comparison of the binding configurations of the MKP101 analogues.</title>
+<p>(A) <bold>MKP102</bold>, (B) <bold>MKP103</bold>, (C) <bold>MKP104</bold>, and (D) <bold>MKP105</bold> (carbon atoms in green) with <bold>TAK-285</bold> (carbon atoms in ivory). Hydrogen bonds are displayed as dashed lines. The lipophilic potential surface of the ATP-binding site of EGFR was created using the MOLCAD implemented in Sybyl-X 2.0. In the 2D-interaction diagram, acidic, hydrophobic, basic, polar, and other residues at the active site are represented by red, green, purple, blue, and gray spheres, respectively. Hydrogen bonds between the ligand and backbone are shown in dashed pink lines. The π-π stacking interaction is shown with a green line. Similar to <bold>MKP101</bold>, the 3-methyl indole moiety of <bold>MKP102</bold> occupies a lipophilic pocket that forms a direct hydrogen bond with the backbone of Phe856. However, <bold>MKP103</bold> the 2-methyl indole derivative, cannot fit into the lipophilic pocket because of the steric hindrance of the methyl group. The <italic>N</italic>-methyl indole <bold>MKP104</bold> and the 6-amino indole <bold>MKP105</bold> lost hydrogen bonding with Phe856 owing to the structural change. ATP, adenosine triphosphate; EGFR, epidermal growth factor receptor; 2D, 2-dimensional.</p>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.g007" position="float" xlink:type="simple"/>
+</fig>
+<p>Next, different indole analogs for aniline moiety on the other side were synthesized to determine their effects on affinity for EGFR, based on the above results (<xref rid="pone.0138823.g008" ref-type="fig">Fig 8</xref>). The The SAR study was conducted using easily synthesized morpholine derivatives. As shown in <xref rid="pone.0138823.t004" ref-type="table">Table 4</xref>, the synthesized compounds were evaluated for activity against EGFR and VEGFR-2. Firstly, the morpholinoethoxyaniline compound, <bold>MKP106</bold> showed activity against VEGFR-2 with comparable potency to <bold>MKP101</bold>, as well as activity against EGFR that was weaker than that of <bold>MKP101</bold>. Two-carbon extended compound <bold>MKP107</bold> retained activity for EGFR but its effect for VEGFR-2 slightly decreased, compared to <bold>MKP106</bold>. <italic>N</italic>-methylation of <bold>MKP107</bold> (<bold>MKP108</bold>) greatly improved its activity against VEGFR-2 and maintained its activity against EGFR, indicating that <italic>N</italic>-methylation has a positive effect on the binding with VEGFR-2 without affecting EGFR. In morpholinoaniline derivatives, <italic>meta</italic> substitution of morpholine (<bold>MKP110</bold>) led to slightly improved activity over <italic>para</italic> substitution (<bold>MKP109</bold>) against both EGFR and VEGFR. However, the introduction of fluoride, a strong electron-withdrawing group (<bold>MKP114</bold> and <bold>113</bold>) significantly decreased the activity against EGFR and retained the activity against VEGFR-2. In contrast, the introduction of an electron-donating methoxy group (<bold>MKP116</bold> and <bold>115</bold>) increased the activity against EGFR and VEGFR-2. Unlike <bold>MKP108</bold>, <italic>N</italic>-methylation of <bold>MKP116</bold> (<bold>MKP117</bold>) maintained the activity against EGFR and VEGFR-2 without significant change for VEGFR-2. <italic>N</italic>-methyl indole derivatives <bold>MKP112</bold> and <bold>MKP111</bold> showed poor EGFR activity, as expected from the docking study, clearly demonstrating that the NH group of indole is essential for binding to EGFR. Next, we investigated the SAR associated with changes in substitution from 2,4-disubsitututed to 4,6-disubstituted pyrimidine. <bold>MKP118</bold>, 4,6-dianilino derivative showed excellent activity against EGFR; however, this activity was not as significant as that of <bold>MKP109</bold>. The <italic>N</italic>-methylated compound <bold>MKP119</bold> also showed poor activity against VEGFR-2, but had a high affinity for EGFR. An <italic>O</italic>-bridge was introduced between indole and pyrimidine, replacing the <italic>N</italic>-bridge provided by aniline. Interestingly, the arylether <bold>MKP120</bold> showed excellent concurrent inhibition of EGFR and VEGFR-2 with IC<sub>50</sub> values of 10 and 32 nM, respectively. <bold>MKP121</bold> also exhibited high activity against EGFR and VEGFR-2. These studies were also conducted with arylether derivatives of <bold>MKP101</bold>. The 2,4-disubstituted pyrimidine <bold>MKP122</bold> showed potent activity against VEGFR-2 but poor activity against EGFR. However, the 4,6-disubstituted pyrimidine <bold>MKP123</bold> showed potent concurrent inhibition of EGFR and VEGFR-2, with IC<sub>50</sub> values of 18 and 45 nM, respectively. Taken together, these results suggest that the 4-indolyloxy-6-anilinopyrimidines could be a key structural requirement for significant inhibitory activity against EGFR and VEGFR-2. Selected compounds were screened against some angiokinases to determine the effects of structural modification on anti-angiokinase activity. The kinase profiles of these compounds are presented in <xref rid="pone.0138823.t005" ref-type="table">Table 5</xref>. As mentioned previously, <bold>MKP101</bold> effectively inhibited key angiokinases. The replacement of methylated nitrogen with oxygen, as in <bold>MKP122</bold>, reduced activity against EGFR and FGFR. The 4-indolyloxy pyrimidines including <bold>MKP121</bold> and <bold>MKP123</bold>, which is a regioisomer of <bold>MKP122</bold>, retained high potency for EGFRs and VEGFRs. However, their activity against cKIT slightly decreased while that against FGFR and PDGFR markedly decreased. Differences in selectivity for angiokinases were observed between the <italic>N</italic>- and <italic>O</italic>-bridge, and the 2,4- and 4,6-disubstituted pyrimidines. To elucidate the difference, we carried out further molecular docking studies based on the docking model of EGFR-<bold>MKP101</bold>.</p>
+<fig id="pone.0138823.g008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.g008</object-id>
+<label>Fig 8</label>
+<caption>
+<title>Structures of the indole tethered pyrimidine derivatives.</title>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.g008" position="float" xlink:type="simple"/>
+</fig>
+<table-wrap id="pone.0138823.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.t004</object-id>
+<label>Table 4</label> <caption><title>Half-maximal inhibitory concentration (IC<sub>50</sub>) values of pyrimidine derivatives MKP106–123 against epidermal growth factor receptor (EGFR) and vascular endothelial growth factor receptor (VEGFR)-2.</title></caption>
+<alternatives>
+<graphic id="pone.0138823.t004g" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.t004" xlink:type="simple"/>
+<table>
+<colgroup span="1">
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" rowspan="1" colspan="1"/>
+<th colspan="2" align="center" rowspan="1">IC<sub>50</sub> (nM)</th>
+</tr>
+<tr>
+<th align="center" rowspan="1" colspan="1">Chemicals</th>
+<th align="center" rowspan="1" colspan="1">EGFR</th>
+<th align="center" rowspan="1" colspan="1">VEGFR-2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP106</bold></td>
+<td align="right" rowspan="1" colspan="1">210</td>
+<td align="right" rowspan="1" colspan="1">20</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP107</bold></td>
+<td align="right" rowspan="1" colspan="1">178</td>
+<td align="right" rowspan="1" colspan="1">130</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP108</bold></td>
+<td align="right" rowspan="1" colspan="1">200</td>
+<td align="right" rowspan="1" colspan="1">26</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP109</bold></td>
+<td align="right" rowspan="1" colspan="1">240</td>
+<td align="right" rowspan="1" colspan="1">50</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP110</bold></td>
+<td align="right" rowspan="1" colspan="1">180</td>
+<td align="right" rowspan="1" colspan="1">30</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP111</bold></td>
+<td align="right" rowspan="1" colspan="1">2240</td>
+<td align="right" rowspan="1" colspan="1">1574</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP112</bold></td>
+<td align="right" rowspan="1" colspan="1">10120</td>
+<td align="right" rowspan="1" colspan="1">360</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP113</bold></td>
+<td align="right" rowspan="1" colspan="1">1630</td>
+<td align="right" rowspan="1" colspan="1">30</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP114</bold></td>
+<td align="right" rowspan="1" colspan="1">610</td>
+<td align="right" rowspan="1" colspan="1">41</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP115</bold></td>
+<td align="right" rowspan="1" colspan="1">56</td>
+<td align="right" rowspan="1" colspan="1">10</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP116</bold></td>
+<td align="right" rowspan="1" colspan="1">41</td>
+<td align="right" rowspan="1" colspan="1">20</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP117</bold></td>
+<td align="right" rowspan="1" colspan="1">33</td>
+<td align="right" rowspan="1" colspan="1">17</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP118</bold></td>
+<td align="right" rowspan="1" colspan="1">7</td>
+<td align="right" rowspan="1" colspan="1">1200</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP119</bold></td>
+<td align="right" rowspan="1" colspan="1">35</td>
+<td align="right" rowspan="1" colspan="1">&gt;3000</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP120</bold></td>
+<td align="right" rowspan="1" colspan="1">10</td>
+<td align="right" rowspan="1" colspan="1">32</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP121</bold></td>
+<td align="right" rowspan="1" colspan="1">31</td>
+<td align="right" rowspan="1" colspan="1">30</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP122</bold></td>
+<td align="right" rowspan="1" colspan="1">2042</td>
+<td align="right" rowspan="1" colspan="1">20</td>
+</tr>
+<tr>
+<td align="center" rowspan="1" colspan="1"><bold>MKP123</bold></td>
+<td align="right" rowspan="1" colspan="1">18</td>
+<td align="right" rowspan="1" colspan="1">45</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="pone.0138823.t005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.t005</object-id>
+<label>Table 5</label> <caption><title>Kinase profiles of selected compounds.</title></caption>
+<alternatives>
+<graphic id="pone.0138823.t005g" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.t005" xlink:type="simple"/>
+<table>
+<colgroup span="1">
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+<col align="left" valign="middle" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center" rowspan="1" colspan="1"/>
+<th colspan="4" align="center" rowspan="1">% inhibition at 1 μM<xref rid="t005fn001" ref-type="table-fn"><sup>a</sup></xref></th>
+</tr>
+<tr>
+<th align="center" rowspan="1" colspan="1"/>
+<th align="center" rowspan="1" colspan="1">MKP101</th>
+<th align="center" rowspan="1" colspan="1">MKP122</th>
+<th align="center" rowspan="1" colspan="1">MKP123</th>
+<th align="center" rowspan="1" colspan="1">MKP121</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">cKit(h)</td>
+<td align="center" rowspan="1" colspan="1">99 ± 0</td>
+<td align="center" rowspan="1" colspan="1">99 ± 1</td>
+<td align="center" rowspan="1" colspan="1">53 ± 9</td>
+<td align="center" rowspan="1" colspan="1">70± 3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">EGFR(h)</td>
+<td align="center" rowspan="1" colspan="1">96 ± 2</td>
+<td align="center" rowspan="1" colspan="1">35 ± 2</td>
+<td align="center" rowspan="1" colspan="1">100 ± 0</td>
+<td align="center" rowspan="1" colspan="1">94± 2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">EGFR(L858R)(h)</td>
+<td align="center" rowspan="1" colspan="1">96 ± 1</td>
+<td align="center" rowspan="1" colspan="1">66 ± 0</td>
+<td align="center" rowspan="1" colspan="1">99 ± 1</td>
+<td align="center" rowspan="1" colspan="1">98± 0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FGFR1 (h)</td>
+<td align="center" rowspan="1" colspan="1">98 ± 1</td>
+<td align="center" rowspan="1" colspan="1">83 ± 0</td>
+<td align="center" rowspan="1" colspan="1">20 ± 6</td>
+<td align="center" rowspan="1" colspan="1">29 ± 5</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FGFR3 (h)</td>
+<td align="center" rowspan="1" colspan="1">96 ± 0</td>
+<td align="center" rowspan="1" colspan="1">65 ± 4</td>
+<td align="center" rowspan="1" colspan="1">21 ± 2</td>
+<td align="center" rowspan="1" colspan="1">13 ± 4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">VEGFR-1 (h)</td>
+<td align="center" rowspan="1" colspan="1">99 ± 0</td>
+<td align="center" rowspan="1" colspan="1">100 ± 0</td>
+<td align="center" rowspan="1" colspan="1">99 ± 1</td>
+<td align="center" rowspan="1" colspan="1">99 ± 2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">VEGFR-2 (h)</td>
+<td align="center" rowspan="1" colspan="1">94 ± 2</td>
+<td align="center" rowspan="1" colspan="1">96 ± 0</td>
+<td align="center" rowspan="1" colspan="1">97 ± 0</td>
+<td align="center" rowspan="1" colspan="1">96 ± 0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">VEGFR-3 (h)</td>
+<td align="center" rowspan="1" colspan="1">98 ± 0</td>
+<td align="center" rowspan="1" colspan="1">100 ± 0</td>
+<td align="center" rowspan="1" colspan="1">100 ± 0</td>
+<td align="center" rowspan="1" colspan="1">98 ± 0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PDGFRα (h)</td>
+<td align="center" rowspan="1" colspan="1">93 ± 0</td>
+<td align="center" rowspan="1" colspan="1">87 ± 1</td>
+<td align="center" rowspan="1" colspan="1">30 ± 3</td>
+<td align="center" rowspan="1" colspan="1">37 ± 1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PDGFRβ (h)</td>
+<td align="center" rowspan="1" colspan="1">95 ± 1</td>
+<td align="center" rowspan="1" colspan="1">92 ± 0</td>
+<td align="center" rowspan="1" colspan="1">44 ± 3</td>
+<td align="center" rowspan="1" colspan="1">48 ± 0</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t005fn001"><p><sup>a</sup>Data were presented as the mean ± standard deviation (S. D.)</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>The binding models of <bold>MKP122</bold> and <bold>MKP123</bold> were generated and compared with the reference model, <bold>MKP101</bold> (<xref rid="pone.0138823.g009" ref-type="fig">Fig 9</xref>). <bold>MKP122</bold> and <bold>MKP123</bold>, which had flexible ether linkages, showed a binding position similar to <bold>MKP101</bold>. The indole rings of <bold>MKP123</bold> and <bold>MKP122</bold> were deeply placed into lipophilic pockets without a hydrogen bond with the backbone of Phe856 and their aniline moieties were docked in the hinge region. However, the calculated docking scores of <bold>MKP123</bold> were lower than those of <bold>MKP122</bold> (-9.6 and -8.1 kcal/mol, respectively) and therefore, more favorable. Apparently, this is owing to the difference in the electrostatic and van der Waals energies created by 6-indolyloxy-pyrimidine of <bold>MKP123</bold> and 4-indolyloxy pyrimidine of <bold>MKP122</bold>. <bold>MKP123</bold> showed a more favorable docking score (-9.6 kcal/mol) compared to the score that was calculated for <bold>MKP101</bold> (-8.9 kcal/mol). The rank order of the docking scores of <bold>MKP123</bold>, <bold>MKP101</bold>, and <bold>MKP122</bold> was consistent with the results of the experimental EGFR inhibition assays.</p>
+<fig id="pone.0138823.g009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0138823.g009</object-id>
+<label>Fig 9</label>
+<caption>
+<title>Comparison of the binding poses of MKP123 and MKP122 with MKP101.</title>
+<p>Binding poses of (A) <bold>MKP123</bold> (carbon atoms in green) and (B) <bold>MKP122</bold> (carbon atoms in green) with <bold>MKP101</bold> (carbon atoms in ivory). The lipophilic potential surface of the ATP-binding site of EGFR was created using the MOLCAD implemented in Sybyl-X 2.0. 2D-interaction diagram of the binding model of (C) <bold>MKP123</bold> and (D) <bold>MKP122</bold> displaying the amino acid residues within 4.0Å of the ligand. Acidic, hydrophobic, basic, polar, and other residues at the active site are represented by red, green, purple, blue, and gray spheres, respectively. The hydrogen bond between the ligand and backbone is shown in dashed pink lines. The π-π stacking interaction is shown with a green line. Unlike <bold>MKP101</bold>, the indole rings of <bold>MKP123</bold> and <bold>MKP122</bold> occupy a lipophilic pocket without a hydrogen bond with the backbone of Phe856, and their aniline moiety was docked in the hinge region. ATP, adenosine triphosphate; EGFR, epidermal growth factor receptor.</p>
+</caption>
+<graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0138823.g009" position="float" xlink:type="simple"/>
+</fig>
+<p>In conclusion, the indole derivative of pazopanib, <bold>MKP101</bold>, exhibited significant inhibitory activity against EGFR while retaining potency against other angiokinases that was equivalent to that of pazopanib. The activities of <bold>MKP101</bold> were demonstrated in the HUVEC cells and EGFR TKI-sensitive NSCLC cells, in addition to a kinase assay. The molecular docking study provided insight into the differences in the binding modes of pazopanib and <bold>MKP101</bold> to the EGFR. The docking model was validated by synthesizing <bold>MKP101</bold> derivatives and evaluating them for EGFR inhibitory activity and effects against EGFR-dependent cancer cells. The results of the studies of the <bold>MKP101</bold> derivatives supported the binding mode that was suggested by <bold>MKP101</bold> and EGFR. Our data suggest that further derivatization studies should be focused on determining appropriate substituents at the C-3 position of the indole or bioisosteres corresponding to 5-amino indole, which suggests that there should be a hydrogen bonding donor at the <italic>para</italic>-position of the amino group. Further SAR studies showed that the 2-aniline moiety of 2,4-dianilinopyrimidine did not markedly affect EGFR activity except fluoro anilines. The position of substituents on the pyrimidine ring such as 2,4- or 4,6-disubstituted pyrimidines and the type of bridge, such as a ether, secondary or tertiary amine between the indole moiety and pyrimidine significantly affected the kinase activities including those of EGFR and VEGFR-2. Multi-target drugs with low affinity could be more efficacious than potent single target drugs [<xref rid="pone.0138823.ref003" ref-type="bibr">3</xref>]. Therefore, we believe that further optimization of <bold>MKP101</bold> or its derivatives could yield a molecule that acts as a multi-targeted therapeutic agent for EGFR-dependent cancers. The development of anti-angiogenic agents that inhibit EGFR could be an alternative to combination regimens of anti-angiogenic agents and EGFR TKIs. Our findings provide a rationale for the design and development of pyrimidine-derived molecules that inhibit EGFR and other angiokinases.</p>
+</sec>
+</sec>
+<sec id="sec014">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0138823.s001" xlink:href="info:doi/10.1371/journal.pone.0138823.s001" mimetype="application/pdf" position="float" xlink:type="simple">
+<label>S1 Appendix</label>
+<caption>
+<title>Synthetic procedures and characterization of MKP compounds.</title>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0138823.s002" xlink:href="info:doi/10.1371/journal.pone.0138823.s002" mimetype="application/pdf" position="float" xlink:type="simple">
+<label>S1 Fig</label>
+<caption>
+<title>IC<sub>50</sub> graphs of MKP compounds against various kinases.</title>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0138823.s003" xlink:href="info:doi/10.1371/journal.pone.0138823.s003" mimetype="application/pdf" position="float" xlink:type="simple">
+<label>S2 Fig</label>
+<caption>
+<title>IC<sub>50</sub> graphs of MKP101-105 against HCC827.</title>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0138823.s004" xlink:href="info:doi/10.1371/journal.pone.0138823.s004" mimetype="application/pdf" position="float" xlink:type="simple">
+<label>S3 Fig</label>
+<caption>
+<title>NMR spectra for MKP101-123.</title>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>References</title>
+<ref id="pone.0138823.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Carmeliet</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Jain</surname> <given-names>RK</given-names></name>. <article-title>Molecular mechanisms and clinical applications of angiogenesis</article-title>. <source>Nature</source>. <year>2011</year>; <volume>407</volume>:<fpage>249</fpage>–<lpage>257</lpage></mixed-citation></ref>
+<ref id="pone.0138823.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Limaverde-Sousa</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Sternberg</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Ferreira</surname> <given-names>CG</given-names></name>. <article-title>Antiangiogenesis beyond VEGF inhibition: a journey from antiangiogenic single-target to broad-spectrum agents</article-title>. <source>Cancer Treat Rev</source>. <year>2014</year>; <volume>40</volume>:<fpage>548</fpage>–<lpage>557</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ctrv.2013.11.009" xlink:type="simple">10.1016/j.ctrv.2013.11.009</ext-link></comment> <object-id pub-id-type="pmid">24360358</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Csermely</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Agoston</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Pongor</surname> <given-names>S</given-names></name>. <article-title>The efficiency of multi-target drugs: the network approach might help drug design</article-title>. <source>Trends Pharmacol Sci</source>. <year>2005</year>; <volume>26</volume>:<fpage>178</fpage>–<lpage>82</lpage>. <object-id pub-id-type="pmid">15808341</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zimmermann</surname> <given-names>GR</given-names></name>, <name name-style="western"><surname>Lehár</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Keith</surname> <given-names>CT</given-names></name>. <article-title>Multi-target therapeutics: when the whole is greater than the sum of the parts</article-title>. <source>Drug Discov Today</source>. <year>2007</year>; <volume>12</volume>:<fpage>34</fpage>–<lpage>42</lpage>. <object-id pub-id-type="pmid">17198971</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bergers</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Hanahan</surname> <given-names>D</given-names></name>. <article-title>Modes of resistance to anti-angiogenic therapy</article-title>. <source>Nat Rev Cancer</source>. <year>2008</year>; <volume>8</volume>:<fpage>592</fpage>–<lpage>603</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nrc2442" xlink:type="simple">10.1038/nrc2442</ext-link></comment> <object-id pub-id-type="pmid">18650835</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Majem</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Pallarès</surname> <given-names>C</given-names></name>. <article-title>An update on molecularly targeted therapies in second- and third-line treatment in non-small cell lung cancer: focus on EGFR inhibitors and anti-angiogenic agents</article-title>. <source>Clin Transl Oncol</source>. <year>2013</year>; <volume>15</volume>:<fpage>343</fpage>–<lpage>357</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s12094-012-0964-2" xlink:type="simple">10.1007/s12094-012-0964-2</ext-link></comment> <object-id pub-id-type="pmid">23359171</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Demetri</surname> <given-names>GD</given-names></name>, <name name-style="western"><surname>van Oosterom</surname> <given-names>AT</given-names></name>, <name name-style="western"><surname>Garrett</surname> <given-names>CR</given-names></name>, <name name-style="western"><surname>Blackstein</surname> <given-names>ME</given-names></name>, <name name-style="western"><surname>Shah</surname> <given-names>MH</given-names></name>, <name name-style="western"><surname>Verweij</surname> <given-names>J</given-names></name>, <etal>et al</etal>. <article-title>Efficacy and safety of sunitinib in patients with advanced gastrointestinal stromal tumour after failure of imatinib: a randomised controlled trial</article-title>. <source>Lancet</source>. <year>2006</year>; <volume>368</volume>:<fpage>1329</fpage>–<lpage>1338</lpage>. <object-id pub-id-type="pmid">17046465</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Motzer</surname> <given-names>RJ</given-names></name>, <name name-style="western"><surname>Rini</surname> <given-names>BI</given-names></name>, <name name-style="western"><surname>Bukowski</surname> <given-names>RM</given-names></name>, <name name-style="western"><surname>Curti</surname> <given-names>BD</given-names></name>, <name name-style="western"><surname>George</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Hudes</surname> <given-names>GR</given-names></name>, <etal>et al</etal>. <article-title>Sunitinib in patients with metastatic renal cell carcinoma</article-title>. <source>JAMA</source>. <year>2006</year>; <volume>295</volume>:<fpage>2516</fpage>–<lpage>2524</lpage>. <object-id pub-id-type="pmid">16757724</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cheng</surname> <given-names>AL</given-names></name>, <name name-style="western"><surname>Kang</surname> <given-names>YK</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Tsao</surname> <given-names>CJ</given-names></name>, <name name-style="western"><surname>Qin</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Kim</surname> <given-names>JS</given-names></name>, <etal>et al</etal>. <article-title>Efficacy and safety of sorafenib in patients in the Asia-Pacific region with advanced hepatocellular carcinoma: a phase III randomised, double-blind, placebo-controlled trial</article-title>. <source>Lancet Oncol</source>. <year>2009</year>; <volume>10</volume>:<fpage>25</fpage>–<lpage>34</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S1470-2045(08)70285-7" xlink:type="simple">10.1016/S1470-2045(08)70285-7</ext-link></comment> <object-id pub-id-type="pmid">19095497</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Al-Husein</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Abdalla</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Trepte</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Deremer</surname> <given-names>DL</given-names></name>, <name name-style="western"><surname>Somanath</surname> <given-names>PR</given-names></name>. <article-title>Antiangiogenic therapy for cancer: an update</article-title>. <source>Pharmacotherapy</source>. <year>2012</year>; <volume>32</volume>:<fpage>1095</fpage>–<lpage>1111</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/phar.1147" xlink:type="simple">10.1002/phar.1147</ext-link></comment> <object-id pub-id-type="pmid">23208836</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Giantonio</surname> <given-names>BJ</given-names></name>, <name name-style="western"><surname>Catalano</surname> <given-names>PJ</given-names></name>, <name name-style="western"><surname>Meropol</surname> <given-names>NJ</given-names></name>, <name name-style="western"><surname>O'Dwyer</surname> <given-names>PJ</given-names></name>, <name name-style="western"><surname>Mitchell</surname> <given-names>EP</given-names></name>, <name name-style="western"><surname>Alberts</surname> <given-names>SR</given-names></name>, <etal>et al</etal>. <article-title>Bevacizumab in combination with oxaliplatin, fluorouracil, and leucovorin (FOLFOX4) for previously treated metastatic colorectal cancer: results from the Eastern Cooperative Oncology Group Study E3200</article-title>. <source>J Clin Oncol</source>. <year>2007</year>; <volume>25</volume>:<fpage>1539</fpage>–<lpage>1544</lpage>. <object-id pub-id-type="pmid">17442997</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Aggarwal</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Somaiah</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Simon</surname> <given-names>G</given-names></name>. <article-title>Antiangiogenic agents in the management of non-small cell lung cancer: where do we stand now and where are we headed?</article-title> <source>Cancer Biol Ther</source>. <year>2012</year>; <volume>13</volume>:<fpage>247</fpage>–<lpage>263</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4161/cbt.19594" xlink:type="simple">10.4161/cbt.19594</ext-link></comment> <object-id pub-id-type="pmid">22481432</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Herbst</surname> <given-names>RS</given-names></name>, <name name-style="western"><surname>Ansari</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Bustin</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Flynn</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Hart</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Otterson</surname> <given-names>GA</given-names></name>, <etal>et al</etal>. <article-title>Efficacy of bevacizumab plus erlotinib versus erlotinib alone in advanced non-small-cell lung cancer after failure of standard first-line chemotherapy (BeTa): a double-blind, placebo-controlled, phase 3 trial</article-title>. <source>Lancet</source>. <year>2011</year>; <volume>377</volume>:<fpage>1846</fpage>–<lpage>1854</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0140-6736(11)60545-X" xlink:type="simple">10.1016/S0140-6736(11)60545-X</ext-link></comment> <object-id pub-id-type="pmid">21621716</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Scagliotti</surname> <given-names>GV</given-names></name>, <name name-style="western"><surname>Krzakowski</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Szczesna</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Strausz</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Makhson</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Reck</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Sunitinib plus erlotinib versus placebo plus erlotinib in patients with previously treated advanced non-small-cell lung cancer: a phase III trial</article-title>. <source>J Clin Oncol</source>. <year>2012</year>; <volume>30</volume>:<fpage>2070</fpage>–<lpage>2078</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1200/JCO.2011.39.2993" xlink:type="simple">10.1200/JCO.2011.39.2993</ext-link></comment> <object-id pub-id-type="pmid">22564989</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Poindessous</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Ouaret</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>El Ouadrani</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Battistella</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Mégalophonos</surname> <given-names>VF</given-names></name>, <name name-style="western"><surname>Kamsu-Kom</surname> <given-names>N</given-names></name>, <etal>et al</etal>. <article-title>EGFR- and VEGF(R)-targeted small molecules show synergistic activity in colorectal cancer models refractory to combinations of monoclonal antibodies</article-title>. <source>Clin Cancer Res</source>. <year>2011</year>; <volume>17</volume>:<fpage>6522</fpage>–<lpage>6530</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1158/1078-0432.CCR-11-1607" xlink:type="simple">10.1158/1078-0432.CCR-11-1607</ext-link></comment> <object-id pub-id-type="pmid">21880790</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Miles</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>von Minckwitz</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Seidman</surname> <given-names>AD</given-names></name>. <article-title>Combination versus sequential single-agent therapy in metastatic breast cancer</article-title>. <source>Oncologist</source>. <year>2002</year>; <volume>7</volume> (<issue>Suppl 6</issue>):<fpage>13</fpage>–<lpage>19</lpage>. <object-id pub-id-type="pmid">12454315</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Scagliotti</surname> <given-names>GV</given-names></name>, <name name-style="western"><surname>Felip</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Besse</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>von Pawel</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Mellemgaard</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Reck</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>An open-label, multicenter, randomized, phase II study of pazopanib in combination with pemetrexed in first-line treatment of patients with advanced-stage non-small-cell lung cancer</article-title>. <source>J Thorac Oncol</source>. <year>2013</year>; <volume>8</volume>:<fpage>1529</fpage>–<lpage>1537</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/JTO.0000000000000005" xlink:type="simple">10.1097/JTO.0000000000000005</ext-link></comment> <object-id pub-id-type="pmid">24389434</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mina</surname> <given-names>LA</given-names></name>, <name name-style="western"><surname>Yu</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Johnson</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Burkhardt</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Miller</surname> <given-names>KD</given-names></name>, <name name-style="western"><surname>Zon</surname> <given-names>R</given-names></name>. <article-title>A phase II study of combined VEGF inhibitor (bevacizumab+sorafenib) in patients with metastatic breast cancer: Hoosier Oncology Group Study BRE06-109</article-title>. <source>Invest New Drugs</source>. <year>2013</year>; <volume>31</volume>:<fpage>1307</fpage>–<lpage>1310</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10637-013-9976-1" xlink:type="simple">10.1007/s10637-013-9976-1</ext-link></comment> <object-id pub-id-type="pmid">23812905</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bukowski</surname> <given-names>RM</given-names></name>, <name name-style="western"><surname>Yasothan</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Kirkpatrick</surname> <given-names>P</given-names></name>. <article-title>Pazopanib</article-title>. <source>Nat Rev Drug Discov</source>. <year>2010</year>; <volume>9</volume>:<fpage>17</fpage>–<lpage>18</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nrd3073" xlink:type="simple">10.1038/nrd3073</ext-link></comment> <object-id pub-id-type="pmid">20043026</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Verweij</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Sleijfer</surname> <given-names>S</given-names></name>. <article-title>Pazopanib, a new therapy for metastatic soft tissue sarcoma</article-title>. <source>Expert Opin Pharmacother</source>. <year>2013</year>; <volume>14</volume>:<fpage>929</fpage>–<lpage>935</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1517/14656566.2013.780030" xlink:type="simple">10.1517/14656566.2013.780030</ext-link></comment> <object-id pub-id-type="pmid">23488774</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Altorki</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Lane</surname> <given-names>ME</given-names></name>, <name name-style="western"><surname>Bauer</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Lee</surname> <given-names>PC</given-names></name>, <name name-style="western"><surname>Guarino</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Pass</surname> <given-names>H</given-names></name>, <etal>et al</etal>. <article-title>Phase II proof-of-concept study of pazopanib monotherapy in treatment-naive patients with stage I/II resectable non-small-cell lung cancer</article-title>. <source>J Clin Oncol</source>. <year>2010</year>; <volume>28</volume>:<fpage>3131</fpage>–<lpage>3137</lpage> <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1200/JCO.2009.23.9749" xlink:type="simple">10.1200/JCO.2009.23.9749</ext-link></comment> <object-id pub-id-type="pmid">20516450</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref022"><label>22</label><mixed-citation publication-type="other" xlink:type="simple">SCRI Development Innovations, LLC. Randomized, Double-Blind Trial of Erlotinib/Pazopanib or Erlotinib/Placebo in Patients With Previously Treated Advanced Non-Small-Cell Lung Cancer. In: ClinicalTrials.gov [Internet]. Bethesda (MD): National Library of Medicine (US). 2000- [cited 2015 Jul 10]. Available: <ext-link ext-link-type="uri" xlink:href="http://clinicaltrials.gov/show/NCT01027598" xlink:type="simple">http://clinicaltrials.gov/show/NCT01027598</ext-link>. NLM Identifier: NCT01027598</mixed-citation></ref>
+<ref id="pone.0138823.ref023"><label>23</label><mixed-citation publication-type="other" xlink:type="simple">(a) Schrödinger Suite 2013 Protein Preparation Wizard; Epik version 2.4, Schrödinger, LLC, New York, NY, 2013; Impact version 5.9, Schrödinger, LLC, New York, NY, 2013; Prime version 3.2, Schrödinger, LLC, New York, NY, 2013.</mixed-citation> <mixed-citation publication-type="journal" xlink:type="simple">(b) <name name-style="western"><surname>Sastry</surname> <given-names>GM</given-names></name>, <name name-style="western"><surname>Adzhigirey</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Day</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Annabhimoju</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Sherman</surname> <given-names>W</given-names></name>. <article-title>Protein and ligand preparation: parameters, protocols, and influence on virtual screening enrichments</article-title>. <source>J. Comput. Aid. Mol. Des</source>. <year>2013</year>; <volume>27</volume>: <fpage>221</fpage>–<lpage>234</lpage>.</mixed-citation></ref>
+<ref id="pone.0138823.ref024"><label>24</label><mixed-citation publication-type="book" xlink:type="simple"><source>Maestro, version 9.4</source>, <publisher-name>Schrödinger, LLC</publisher-name>, <publisher-loc>New York, NY, USA</publisher-loc>, <year>2013</year>.</mixed-citation></ref>
+<ref id="pone.0138823.ref025"><label>25</label><mixed-citation publication-type="book" xlink:type="simple"><source>LigPrep, version 2.6</source>, <publisher-name>Schrödinger, LLC</publisher-name>, <publisher-loc>New York, NY</publisher-loc>, <year>2013</year>.</mixed-citation></ref>
+<ref id="pone.0138823.ref026"><label>26</label><mixed-citation publication-type="book" xlink:type="simple"><source>Small-Molecule Drug Discovery Suite 2013–3: Glide, version 6.1</source>, <publisher-name>Schrödinger, LLC</publisher-name>, <publisher-loc>New York, NY</publisher-loc>, <year>2013</year>.</mixed-citation></ref>
+<ref id="pone.0138823.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Qi</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Long</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>D</given-names></name>. <article-title>Synthesis and biological evaluation of novel pazopanib derivatives as antitumor agents</article-title>. <source>Bioorg Med Chem Lett</source>. <year>2014</year>; <volume>24</volume>:<fpage>1108</fpage>–<lpage>1110</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.bmcl.2014.01.003" xlink:type="simple">10.1016/j.bmcl.2014.01.003</ext-link></comment> <object-id pub-id-type="pmid">24456902</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref028"><label>28</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jia</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Feng</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Xu</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Pan</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Xu</surname> <given-names>W</given-names></name>. <article-title>Design, synthesis and biological evaluation of pazopanib derivatives as antitumor agents</article-title>. <source>Chem Biol Drug Des</source>. <year>2014</year>; <volume>83</volume>:<fpage>306</fpage>–<lpage>316</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/cbdd.12243" xlink:type="simple">10.1111/cbdd.12243</ext-link></comment> <object-id pub-id-type="pmid">24119291</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Harris</surname> <given-names>PA</given-names></name>, <name name-style="western"><surname>Boloor</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Cheung</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Kumar</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Crosby</surname> <given-names>RM</given-names></name>, <name name-style="western"><surname>Davis-Ward</surname> <given-names>RG</given-names></name>, <etal>et al</etal>. <article-title>Discovery of 5-[[4-[(2,3-dimethyl-2H-indazol-6-yl)methylamino]-2-pyrimidinyl]amino]-2-methyl-benzenesulfonamide (Pazopanib), a novel and potent vascular endothelial growth factor receptor inhibitor</article-title>. <source>J Med Chem</source>. <year>2008</year>; <volume>51</volume>:<fpage>4632</fpage>–<lpage>4640</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/jm800566m" xlink:type="simple">10.1021/jm800566m</ext-link></comment> <object-id pub-id-type="pmid">18620382</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fludzinski</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Evrard</surname> <given-names>DA</given-names></name>, <name name-style="western"><surname>Bloomquist</surname> <given-names>WE</given-names></name>, <name name-style="western"><surname>Lacefield</surname> <given-names>WB</given-names></name>, <name name-style="western"><surname>Pfeifer</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Jones</surname> <given-names>ND</given-names></name>, <etal>et al</etal>. <article-title>Indazoles as indole bioisosteres: synthesis and evaluation of the tropanyl ester and amide of indazole-3-carboxylate as antagonists at the serotonin 5HT3 receptor</article-title>. <source>J Med Chem</source>. <year>1987</year>; <volume>30</volume>:<fpage>1535</fpage>–<lpage>1537</lpage>. <object-id pub-id-type="pmid">3625701</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kumar</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Crouthamel</surname> <given-names>MC</given-names></name>, <name name-style="western"><surname>Rominger</surname> <given-names>DH</given-names></name>, <name name-style="western"><surname>Gontarek</surname> <given-names>RR</given-names></name>, <name name-style="western"><surname>Tummino</surname> <given-names>PJ</given-names></name>, <name name-style="western"><surname>Levin</surname> <given-names>RA</given-names></name>, <etal>et al</etal>. <article-title>Myelosuppression and kinase selectivity of multikinase angiogenesis inhibitors</article-title>. <source>Br J Cancer</source>. <year>2009</year>; <volume>101</volume>:<fpage>1717</fpage>–<lpage>1723</lpage> <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/sj.bjc.6605366" xlink:type="simple">10.1038/sj.bjc.6605366</ext-link></comment> <object-id pub-id-type="pmid">19844230</object-id></mixed-citation></ref>
+<ref id="pone.0138823.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Aertgeerts</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Skene</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Yano</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Sang</surname> <given-names>BC</given-names></name>, <name name-style="western"><surname>Zou</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Snell</surname> <given-names>G</given-names></name>, <etal>et al</etal>. <article-title>Structural analysis of the mechanism of inhibition and allosteric activation of the kinase domain of HER2 protein</article-title>. <source>J Biol Chem</source>. <year>2011</year>; <volume>286</volume>:<fpage>18756</fpage>–<lpage>18765</lpage> <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1074/jbc.M110.206193" xlink:type="simple">10.1074/jbc.M110.206193</ext-link></comment> <object-id pub-id-type="pmid">21454582</object-id></mixed-citation></ref>
+</ref-list>
+</back>
+</article>

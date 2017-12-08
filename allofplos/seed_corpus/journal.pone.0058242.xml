@@ -1,0 +1,1504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-30946</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0058242</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Computational neuroscience</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Mathematics</subject>
+          <subj-group>
+            <subject>Applied mathematics</subject>
+            <subj-group>
+              <subject>Algorithms</subject>
+              <subject>Decision theory</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Clinical research design</subject>
+            <subj-group>
+              <subject>Cross-sectional studies</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Diagnostic medicine</subject>
+            <subj-group>
+              <subject>Clinical laboratory sciences</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Nephrology</subject>
+            <subj-group>
+              <subject>Chronic kidney disease</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Public health</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Nephrology</subject>
+          <subject>Public Health and Epidemiology</subject>
+          <subject>Computational Biology</subject>
+          <subject>Mathematics</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Improved Glomerular Filtration Rate Estimation by an Artificial Neural Network</article-title>
+        <alt-title alt-title-type="running-head">Improved GFR Estimation by ANN</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Liu</surname>
+            <given-names>Xun</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Pei</surname>
+            <given-names>Xiaohua</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Li</surname>
+            <given-names>Ningshan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Zhang</surname>
+            <given-names>Yunong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Zhang</surname>
+            <given-names>Xiang</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Chen</surname>
+            <given-names>Jinxia</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lv</surname>
+            <given-names>Linsheng</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ma</surname>
+            <given-names>Huijuan</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Wu</surname>
+            <given-names>Xiaoming</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Zhao</surname>
+            <given-names>Weihong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lou</surname>
+            <given-names>Tanqi</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Division of Nephrology, Department of Internal Medicine, The Third Affiliated Hospital of Sun Yat-sen University, Guangzhou, China</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Biomedical Engineering, South China University of Technology, Guangzhou, China</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Division of Nephrology, Department of Geriatrics, The First Affiliated Hospital of Nanjing Medical University, Nanjing, China</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Department of Radiation Oncology, Chengdu International Cancer Treatment Hospital, Chengdu, China</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>School of Information Science &amp; Technology, Sun Yat-sen University, Guangzhou, China</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>Department of Internal Medicine, JieYang People's Hospital, Jieyang, China</addr-line>
+      </aff>
+      <aff id="aff7">
+        <label>7</label>
+        <addr-line>Operating Room, The Third Affiliated Hospital of Sun Yat-sen University, Guangzhou, China</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Abbott</surname>
+            <given-names>Derek</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>University of Adelaide, Australia</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">naturestyle@163.com</email> (TL); <email xlink:type="simple">zhaoweihong_1@medmail.com.cn</email> (WZ); <email xlink:type="simple">bmxmwus@scut.edu.cn</email> (XW)</corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: XL TQL. Performed the experiments: XHP WHZ XZ LSL JXC HJM XL. Analyzed the data: XL NSL YNZ JXC XMW. Contributed reagents/materials/analysis tools: XL NSL YNZ XMW. Wrote the paper: XL NSL.</p>
+        </fn>
+        <fn id="fn1" fn-type="other">
+          <p>¶ YZ, XZ, JC, LV and HM also contributed equally to this work. XW, WZ and TL also contributed equally to this work.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>13</day>
+        <month>3</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume>
+      <issue>3</issue>
+      <elocation-id>e58242</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>9</day>
+          <month>10</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>1</day>
+          <month>2</month>
+          <year>2013</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Liu et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>Accurate evaluation of glomerular filtration rates (GFRs) is of critical importance in clinical practice. A previous study showed that models based on artificial neural networks (ANNs) could achieve a better performance than traditional equations. However, large-sample cross-sectional surveys have not resolved questions about ANN performance.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>A total of 1,180 patients that had chronic kidney disease (CKD) were enrolled in the development data set, the internal validation data set and the external validation data set. Additional 222 patients that were admitted to two independent institutions were externally validated. Several ANNs were constructed and finally a Back Propagation network optimized by a genetic algorithm (GABP network) was chosen as a superior model, which included six input variables; i.e., serum creatinine, serum urea nitrogen, age, height, weight and gender, and estimated GFR as the one output variable. Performance was then compared with the Cockcroft-Gault equation, the MDRD equations and the CKD-EPI equation.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>In the external validation data set, Bland-Altman analysis demonstrated that the precision of the six-variable GABP network was the highest among all of the estimation models; i.e., 46.7 ml/min/1.73 m<sup>2</sup> vs. a range from 71.3 to 101.7 ml/min/1.73 m<sup>2</sup>, allowing improvement in accuracy (15% accuracy, 49.0%; 30% accuracy, 75.1%; 50% accuracy, 90.5% [<italic>P</italic>&lt;0.001 for all]) and CKD stage classification (misclassification rate of CKD stage, 32.4% vs. a range from 47.3% to 53.3% [<italic>P</italic>&lt;0.001 for all]). Furthermore, in the additional external validation data set, precision and accuracy were improved by the six-variable GABP network.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>A new ANN model (the six-variable GABP network) for CKD patients was developed that could provide a simple, more accurate and reliable means for the estimation of GFR and stage of CKD than traditional equations. Further validations are needed to assess the ability of the ANN model in diverse populations.</p>
+        </sec>
+      </abstract>
+      <funding-group>
+        <funding-statement>Project 81070612 supported by National Natural Science Foundation of China. This work was also supported by the China Postdoctoral Science Foundation (Grant No. 201104335), Guangdong Science and Technology Plan (Grant No. 2011B031800084), the Fundamental Research Funds for the Central Universities (Grant No. 11ykpy38) and the National Key Technology Research and Development Program of the Ministry of Science and Technology of China (Grant No. 2011BAI10B00). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="9"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Chronic kidney disease (CKD) is a major public health problem worldwide <xref ref-type="bibr" rid="pone.0058242-Levey1">[1]</xref>. The Center for Disease Control in the USA declared that the prevalence of CKD was 26 million in the United States <xref ref-type="bibr" rid="pone.0058242-Crews1">[2]</xref> and the number of patients with CKD in China was estimated to be about 119.5 million <xref ref-type="bibr" rid="pone.0058242-Zhang1">[3]</xref>. CKD is a serious threat to health and quality of life <xref ref-type="bibr" rid="pone.0058242-Chronic1">[4]</xref>. The number of patients that accepted maintenance renal replacement therapy in the United States increased from 281,000 in 2000 to 547,000 in 2010 to 571,000 in 2011 <xref ref-type="bibr" rid="pone.0058242-Collins1">[5]</xref>. Currently, over 270,000 chronic hemodialysis patients were registered in the Chinese Renal Data System <xref ref-type="bibr" rid="pone.0058242-Xie1">[6]</xref>.</p>
+      <p>Accurate evaluation of glomerular filtration rates (GFRs) is of critical importance in clinical practice and research <xref ref-type="bibr" rid="pone.0058242-Stevens1">[7]</xref>. Although inulin clearance and renal radionuclide excretion rates are the gold standards to determine GFRs, they cannot be used widely because of inconvenience and high cost. Therefore, serum creatinine (SC)-based estimating equations for GFR were developed. The National Kidney Foundation - Kidney Disease Outcomes Quality Initiative Working Group recommended that the Cockcroft-Gault equation <xref ref-type="bibr" rid="pone.0058242-Cockcroft1">[8]</xref> and the Modification of Diet in Renal Disease (MDRD) equations <xref ref-type="bibr" rid="pone.0058242-Levey2">[9]</xref> could be used to calculate the GFRs of adults <xref ref-type="bibr" rid="pone.0058242-National1">[10]</xref>. In order to improve the accuracy of estimation, the MDRD researchers in 2006 used a more accurate isotope dilution mass spectrometry to measure the SC level, and they developed re-expressed MDRD formulas <xref ref-type="bibr" rid="pone.0058242-Levey3">[11]</xref>. Furthermore, the studies were extended to 8,254 cases. The newly estimated GFR (eGFR) formula of the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI) equation was revised <xref ref-type="bibr" rid="pone.0058242-Levey4">[12]</xref>. However, the correct CKD stage classification rates of the Cockcroft-Gault and MDRD formulas were only 64% and 62%, suggesting that the traditional SC-based equations remain relatively imprecise in the estimation of GFR <xref ref-type="bibr" rid="pone.0058242-Inker1">[13]</xref> due to SC and the non-GFR determinants introducing significant errors when calculating the GFR <xref ref-type="bibr" rid="pone.0058242-Botev1">[14]</xref>. Such imprecision can potentially result in misclassification of the CKD stage, which leads to both incorrect diagnosis and treatment for individuals and bias in estimating the prevalence of CKD in the general population <xref ref-type="bibr" rid="pone.0058242-Matsushita1">[15]</xref>. Finding a more accurate method for estimating GFR is an urgent problem that needs to be solved.</p>
+      <p>Recently, Inker et al. developed a new estimating equation based on cystatin C in combination with creatinine and found that the combined equation performed better than equations based on either marker alone <xref ref-type="bibr" rid="pone.0058242-Inker1">[13]</xref>. These results indicated that the combination of novel filtration markers, such as cystatin C and SC, into the GFR estimating formula may be a key factor for improving the accuracy of estimation. However, the incremental cost of introducing the new marker should be considered.</p>
+      <p>The traditional GFR estimation equations were all developed by the linear regression method. A large number of samples, a priori knowledge, and specific limits such as absence of multi-collinearity between independent variables were necessary during the development of the equations. With the development of modern mathematics and information technology, artificial neural networks (ANNs) are one of the methods of mathematical modeling that has been widely applied in the field of engineering prediction. An ANN has been applied in the field of medicine and biology as well, such as cardiac output <xref ref-type="bibr" rid="pone.0058242-Young1">[16]</xref> and in other physiological measurements <xref ref-type="bibr" rid="pone.0058242-Emoto1">[17]</xref>–<xref ref-type="bibr" rid="pone.0058242-Hu1">[18]</xref>. A specifically trained three-layer ANN can infinitely approximate any linear or nonlinear function with precision <xref ref-type="bibr" rid="pone.0058242-Das1">[19]</xref>-<xref ref-type="bibr" rid="pone.0058242-GoldfarbRumyantzev1">[20]</xref>. Traditionally, the Back Propagation (BP) networks are widely used, though they have inherent defects <xref ref-type="bibr" rid="pone.0058242-Hagan1">[21]</xref>. More complicated ANN models have been recently published with greater descriptions of the construction of the models and software sharing <xref ref-type="bibr" rid="pone.0058242-Magosso1">[22]</xref>–<xref ref-type="bibr" rid="pone.0058242-Seguritan1">[23]</xref>. A genetic algorithm, a random search algorithm enlightened from biological natural selection and genetic mechanisms, can be applied to optimize BP networks <xref ref-type="bibr" rid="pone.0058242-Tong1">[24]</xref> for better performance.</p>
+      <p>In a previous study, we found that the Radial Basis Function network was superior to the traditional equations at estimating GFR <xref ref-type="bibr" rid="pone.0058242-Liu1">[25]</xref>. In the large-sample cross-sectional survey reported here, we assessed the performance of a BP network optimized by a genetic algorithm (GABP network) for the estimation of GFR, which had similar features to the Radial Basis Function network.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Patients</title>
+        <p>Chronic kidney disease was defined and staged according to the National Kidney Foundation - Kidney Disease Outcomes Quality Initiative clinical practice guidelines <xref ref-type="bibr" rid="pone.0058242-National1">[10]</xref>. Patients with acute kidney function deterioration, clinical edema, skeletal muscle atrophy, pleural effusion or ascites, malnutrition, amputation, heart failure or ketoacidosis were excluded from the study. Patients that were younger than 18 years were excluded. Patients that were taking cimetidine or trimethoprim were excluded as well. No subject was being treated with dialysis at the time of the study.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Measurement</title>
+        <p>The GFR was measured by the method of technetium-99 m diethylenetriaminepentaacetic acid (<sup>99 m</sup>Tc-DTPA) renal dynamic imaging (modified Gate's method) was used as the standard GFR (sGFR) <xref ref-type="bibr" rid="pone.0058242-Tong1">[24]</xref>-<xref ref-type="bibr" rid="pone.0058242-Liu1">[25]</xref>. A Millennium TMMPR SPECT with a General Electric Medical System was used to measure <sup>99 m</sup>Tc-DTPA renal dynamic imaging as previously described <xref ref-type="bibr" rid="pone.0058242-Liu2">[26]</xref>. There was good agreement between <sup>99 m</sup>Tc-DTPA renal imaging and plasma clearance of 51 chromium ethylenediamine tetraacetic acid <xref ref-type="bibr" rid="pone.0058242-Carlsen1">[27]</xref>. An enzymatic method was used to measure SC. Values of SC in the development data set, the internal validation data set and the external validation data set were all traceable to the National Institute of Standards and Technology creatinine standard reference material (SRM 967). Data on gender, age, height, and weight were recorded at the same time.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Study design</title>
+        <p>From January 2005 through December 2009, 831 patients with CKD in the third affiliated hospital of Sun Yat-sen University, China, were enrolled, of which 562 patients were randomly selected as the development data set and the remaining 269 patients constituted the internal validation data set. From January 2010 through December 2010, 349 patients in the same hospital were included in the external validation data set. An additional 222 patients were admitted to two independent institutions in other Chinese cities for external validation (<xref ref-type="table" rid="pone-0058242-t001">Table 1</xref> and <xref ref-type="supplementary-material" rid="pone.0058242.s005">Table S1</xref>). Stages 1 and 2, as well as stages 4 and 5 were combined for convenience. The study protocol was approved by the institutional review board at the Third Affiliated Hospital of Sun Yat-sen University and written informed consent was obtained before the study.</p>
+        <table-wrap id="pone-0058242-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0058242.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Patient characteristic.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0058242-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0058242.t001" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Characteristic</td>
+                  <td align="left" rowspan="1" colspan="1">Development and Internal Validation (N = 831)</td>
+                  <td align="left" rowspan="1" colspan="1">External Validation (n = 349)</td>
+                  <td align="left" rowspan="1" colspan="1">Additional External Validation (n = 222)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Causes of CKD, N (%)</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Primary glomerular disease</td>
+                  <td align="left" rowspan="1" colspan="1">255(30.7)</td>
+                  <td align="left" rowspan="1" colspan="1">71(20.3)</td>
+                  <td align="left" rowspan="1" colspan="1">71(32.0)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Diabetic nephropathy</td>
+                  <td align="left" rowspan="1" colspan="1">205(24.0)</td>
+                  <td align="left" rowspan="1" colspan="1">147(42.1)</td>
+                  <td align="left" rowspan="1" colspan="1">48(21.6)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Hypertension</td>
+                  <td align="left" rowspan="1" colspan="1">115(13.8)</td>
+                  <td align="left" rowspan="1" colspan="1">44(12.6)</td>
+                  <td align="left" rowspan="1" colspan="1">45(20.3)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Chronic tubulointerstitial disease</td>
+                  <td align="left" rowspan="1" colspan="1">81(9.7)</td>
+                  <td align="left" rowspan="1" colspan="1">30(8.6)</td>
+                  <td align="left" rowspan="1" colspan="1">16(7.2)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Polycystic kidney disease</td>
+                  <td align="left" rowspan="1" colspan="1">27(3.2)</td>
+                  <td align="left" rowspan="1" colspan="1">8(2.3)</td>
+                  <td align="left" rowspan="1" colspan="1">2(0.9)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Lupus nephritis</td>
+                  <td align="left" rowspan="1" colspan="1">13(1.6)</td>
+                  <td align="left" rowspan="1" colspan="1">5(1.4)</td>
+                  <td align="left" rowspan="1" colspan="1">5(2.3)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Other causes or causes unknown</td>
+                  <td align="left" rowspan="1" colspan="1">135(16.2)</td>
+                  <td align="left" rowspan="1" colspan="1">44(12.6)</td>
+                  <td align="left" rowspan="1" colspan="1">35(15.8)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Distribution of CKD stages, N (%)</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">
+                    <xref ref-type="table-fn" rid="nt103">‡</xref>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <xref ref-type="table-fn" rid="nt101">*</xref>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CKD 1</td>
+                  <td align="left" rowspan="1" colspan="1">62(7.5)</td>
+                  <td align="left" rowspan="1" colspan="1">32(9.2)</td>
+                  <td align="left" rowspan="1" colspan="1">39(17.6)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CKD 2</td>
+                  <td align="left" rowspan="1" colspan="1">167(20.1)</td>
+                  <td align="left" rowspan="1" colspan="1">75(21.5)</td>
+                  <td align="left" rowspan="1" colspan="1">63(28.4)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CKD 3</td>
+                  <td align="left" rowspan="1" colspan="1">310(37.3)</td>
+                  <td align="left" rowspan="1" colspan="1">140(40.1)</td>
+                  <td align="left" rowspan="1" colspan="1">73(32.9)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CKD 4</td>
+                  <td align="left" rowspan="1" colspan="1">195(23.5)</td>
+                  <td align="left" rowspan="1" colspan="1">80(22.9)</td>
+                  <td align="left" rowspan="1" colspan="1">32(14.4)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CKD 5</td>
+                  <td align="left" rowspan="1" colspan="1">97(11.7)</td>
+                  <td align="left" rowspan="1" colspan="1">22(6.3)</td>
+                  <td align="left" rowspan="1" colspan="1">15(6.8)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Age, mean (s.d.) in years</td>
+                  <td align="left" rowspan="1" colspan="1">53(17)</td>
+                  <td align="left" rowspan="1" colspan="1">58(15)<xref ref-type="table-fn" rid="nt101">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">57(17)<xref ref-type="table-fn" rid="nt102">†</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Male / Female (%)</td>
+                  <td align="left" rowspan="1" colspan="1">63.4/36.6</td>
+                  <td align="left" rowspan="1" colspan="1">60.2/39.8</td>
+                  <td align="left" rowspan="1" colspan="1">54.1/45.9<xref ref-type="table-fn" rid="nt103">‡</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Weight, mean (s.d.), kg</td>
+                  <td align="left" rowspan="1" colspan="1">61(11)</td>
+                  <td align="left" rowspan="1" colspan="1">62(12)</td>
+                  <td align="left" rowspan="1" colspan="1">62(10)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Height, mean (s.d.), cm</td>
+                  <td align="left" rowspan="1" colspan="1">163(8)</td>
+                  <td align="left" rowspan="1" colspan="1">162(8)</td>
+                  <td align="left" rowspan="1" colspan="1">164(7)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">BMI, mean (s.d.), kg/m<sup>2</sup></td>
+                  <td align="left" rowspan="1" colspan="1">23(3)</td>
+                  <td align="left" rowspan="1" colspan="1">23(4)<xref ref-type="table-fn" rid="nt103">‡</xref></td>
+                  <td align="left" rowspan="1" colspan="1">23(3)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">BSA, mean (s.d.), m<sup>2</sup></td>
+                  <td align="left" rowspan="1" colspan="1">1.65(0.17)</td>
+                  <td align="left" rowspan="1" colspan="1">1.66(0.18)</td>
+                  <td align="left" rowspan="1" colspan="1">1.67(0.15)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Serum albumin, mean (s.d.), g/dL</td>
+                  <td align="left" rowspan="1" colspan="1">3.8(0.7)</td>
+                  <td align="left" rowspan="1" colspan="1">3.8(0.6)</td>
+                  <td align="left" rowspan="1" colspan="1">3.9(0.7)<xref ref-type="table-fn" rid="nt103">‡</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Serum urea nitrogen, mean (s.d.), mg/dL</td>
+                  <td align="left" rowspan="1" colspan="1">37(24)</td>
+                  <td align="left" rowspan="1" colspan="1">36(26)</td>
+                  <td align="left" rowspan="1" colspan="1">30(23)<xref ref-type="table-fn" rid="nt101">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Serum creatinine, mean (s.d.), mg/dL</td>
+                  <td align="left" rowspan="1" colspan="1">3.0(2.7)</td>
+                  <td align="left" rowspan="1" colspan="1">2.5(2.3)<xref ref-type="table-fn" rid="nt102">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">2.8(3.4)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">sGFR, mean (s.d.), ml/min/1.73 m<sup>2</sup></td>
+                  <td align="left" rowspan="1" colspan="1">45 (27)</td>
+                  <td align="left" rowspan="1" colspan="1">49 (27)<xref ref-type="table-fn" rid="nt103">‡</xref></td>
+                  <td align="left" rowspan="1" colspan="1">60(32)<xref ref-type="table-fn" rid="nt101">*</xref></td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label>*</label>
+              <p>:<italic>P</italic>&lt;0.001 compared with the combined development and internal validation data sets.</p>
+            </fn>
+            <fn id="nt102">
+              <label>†</label>
+              <p>:<italic>P</italic>&lt;0.01 compared with the combined development and internal validation data sets.</p>
+            </fn>
+            <fn id="nt103">
+              <label>‡</label>
+              <p>:<italic>P</italic>&lt;0.05 compared with the combined development and internal validation data sets.</p>
+            </fn>
+            <fn id="nt104">
+              <label/>
+              <p>Abbreviations: CKD, chronic kidney disease; BMI, body mass index; BSA, body-surface area; sGFR, standard glomerular filtration rate.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Independent variables taken into account included albumin (Alb), serum urea nitrogen (SUN), SC, age, height, weight and gender, and the only dependent variable was estimated GFR. Gender as a binary variable was transformed with dumb variable encoding; e.g., male equaled 1 and female equaled 0. As the range of each variable from the raw data was not the same, and it would affect construction of the ANN, each variable was normalized into the same range. The maximum and minimum values of normalization are shown in <xref ref-type="supplementary-material" rid="pone.0058242.s006">Table S2</xref>, and all minimum values were set to be not less than 0 considering the practical significance of the data.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Modeling with the ANN</title>
+        <p>A three-layer BP network was constructed using commercial software (Matlab software version 2011b, The Mathworks, Boston MA, USA). The neurons of the input layer included all independent variables as the input variables of the network, and the neuron of the output layer was the dependent variable; i.e., eGFR, as the output variable of the network. Each neuron of the hidden layer took the S function as an exciting function, and several networks were constructed with different numbers of neurons in the hidden layer (1 to 13). Each BP network was initialized randomly and then trained by learning the rule of back propagation with the development data set, and was validated with the internal validation data set to achieve a superior topology. Performance was defined as mean square error of the internal validation data set. A set of thresholds and weights could be specified after training, and then the output of the network was calculated by the weighted summation of each neuron to approximate sGFR.</p>
+        <p>To achieve better performance of the ANN, initialization of the weights and thresholds of the BP network was optimized by the Genetic algorithm (GABP network). All weights and thresholds of one network were encoded as a chromosome, and then evolved from one generation to another, including the progression of mutation and crossing. When a network could achieve better performance in the internal validation data set, the initial weights and thresholds were selected for the next generation. Finally, superior initial weights and thresholds were achieved, and then applied in the initialization of the network.</p>
+        <p>To facilitate clinical use, we used a mean impact value analysis <xref ref-type="bibr" rid="pone.0058242-Shi1">[28]</xref> to select variables from the seven input variables of the GABP network gradually and, in turn, excluded Alb, gender, height, SUN, weight and age. We then established the appropriate GABP network with different input variables. The six-variable (including SC, age, weight, SUN, height and gender) GABP network with a topology of 6-2-1 (named the GABP6 network) was the optimal model in the internal validation data set. Explanations of the network are listed in <xref ref-type="supplementary-material" rid="pone.0058242.s007">Tables S3</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s008">S4</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s009">S5</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s010">S6</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s011">S7</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s012">S8</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s013">S9</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s014">S10</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s015">S11</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s016">S12</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s017">S13</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s018">S14</xref>, <xref ref-type="supplementary-material" rid="pone.0058242.s019">S15</xref> and <xref ref-type="supplementary-material" rid="pone.0058242.s001">Figure S1</xref>. Detailed performances in the internal validation data set are presented in <xref ref-type="supplementary-material" rid="pone.0058242.s020">Tables S16</xref> and <xref ref-type="supplementary-material" rid="pone.0058242.s021">S17</xref>, and <xref ref-type="supplementary-material" rid="pone.0058242.s002">Figures S2</xref> and <xref ref-type="supplementary-material" rid="pone.0058242.s003">S3</xref>.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Calculations</title>
+        <p>The GFR was estimated by using the following equations:</p>
+        <list list-type="order">
+          <list-item>
+            <p>Cockcroft-Gault-equation (CG) <xref ref-type="bibr" rid="pone.0058242-Cockcroft1">[8]</xref>: <disp-formula id="pone.0058242.e001"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0058242.e001" xlink:type="simple"/></disp-formula></p>
+          </list-item>
+          <list-item>
+            <p>Six-variable MDRD equation (MDRD1) <xref ref-type="bibr" rid="pone.0058242-Levey2">[9]</xref>:<disp-formula id="pone.0058242.e002"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0058242.e002" xlink:type="simple"/></disp-formula></p>
+          </list-item>
+          <list-item>
+            <p>Four-variable MDRD equation (MDRD4) <xref ref-type="bibr" rid="pone.0058242-Levey2">[9]</xref>:<disp-formula id="pone.0058242.e003"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0058242.e003" xlink:type="simple"/></disp-formula></p>
+          </list-item>
+          <list-item>
+            <p>CKD-EPI equation (CKD-EPI) <xref ref-type="bibr" rid="pone.0058242-Levey4">[12]</xref>:</p>
+            <list list-type="alpha-lower">
+              <list-item>
+                <p>κ = 0.7(Female)or 0.9(Male);</p>
+              </list-item>
+              <list-item>
+                <p>α = −0.329 (Female and SC≤0.7 mg/dl), α = −1.209(Female and SC&gt;0.7 mg/dl);</p>
+              </list-item>
+              <list-item>
+                <p>α = −0.411(Male and SC≤0.9 mg/dl), α = −1.209(Male and SC&gt;0.9 mg/dl)</p>
+              </list-item>
+            </list>
+          </list-item>
+        </list>
+      </sec>
+      <sec id="s2f">
+        <title>Statistical analysis</title>
+        <p>Quantitative data were expressed as mean ± SD or as median. The difference between eGFR and standard GFR (sGFR) was defined as eGFR minus sGFR. Accuracy was defined as the percentage of estimated GFR not deviating more than 15, 30, and 50% from the sGFR. The precision was defined as the width between the 95% limits of agreement. A prior acceptable tolerance for the precision was defined 60 ml/min/1.73 m<sup>2</sup> <xref ref-type="bibr" rid="pone.0058242-Du1">[29]</xref>. The difference between eGFR and sGFR was regressed against the average of eGFR and sGFR. The bias for eGFR was expressed as the slope of the regression line against the X-axis. The trend of accuracy for eGFR was expressed as the intercept of the regression line against the Y-axis. Independent samples t-test was used to compare the quantitative variables between two data sets. Wilcoxon Mann-Whitney test and Pearson's chi-squared test were used to compare the difference and accuracy between two data sets. Wilcoxon signed rank test and McNemar test were used to compare the difference and accuracy within data set. ANCOVA tests were used to compare first the slopes, and then the intercepts of the regression line. All statistics were performed using SPSS software (version 11.0 SPSS, Chicago IL, USA) and Medcalc for Windows (version 9.3.9.0 Medcalc software, Mariekerke, Belgium).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Patients</title>
+        <p>The clinical characteristics of the development data set (<italic>n</italic> = 562), internal validation data set (<italic>n</italic> = 269) external validation data set (<italic>n</italic> = 349) and the additional external validation data set (<italic>n</italic> = 222) are shown in <xref ref-type="table" rid="pone-0058242-t001">Table 1</xref> and <xref ref-type="supplementary-material" rid="pone.0058242.s005">Table S1</xref>. In the development data set, the mean sGFR was 46.1 ml/min/1.73 m<sup>2</sup> (SD, 27.0 ml/min/1.73 m<sup>2</sup>) and ranged from 3.3 ml/min/1.73 m<sup>2</sup> to 130.1 ml/min/1.73 m<sup>2</sup>. The external validation data set had a similar mean sGFR, gender, weight, height, body surface area (BSA) and mean SUN level with the development and internal validation data sets but differed in the distribution of CKD stages, age, body mass index (BMI), and mean Alb and SC levels.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Performance of the estimation models in the external validation data set</title>
+        <p>Bland-Altman analysis demonstrated that the precision of the six-variable GABP network was the highest among all of the estimation models (46.7 ml/min/1.73 m<sup>2</sup> vs. a range from 71.3 ml/min/1.73 m<sup>2</sup> to 101.7 ml/min/1.73 m<sup>2</sup>). Therefore, we chose eGFR calculated by the six-variable GABP network as the reference against which all comparisons between estimation models were made. Both the slope and the intercept of the regression line of the six-variable GABP network were improved (slope, −0.15 ml/min/1.73 m<sup>2</sup> vs. a range from 0.34 ml/min/1.73 m<sup>2</sup> to 0.53 [<italic>P</italic>&lt;0.001 for all]; intercept, 5.88 vs. a range from −14.79 to −21.54 [<italic>P</italic>&lt;0.01 for all]; <xref ref-type="table" rid="pone-0058242-t002">Table 2</xref>, <xref ref-type="fig" rid="pone-0058242-g001">Figure 1</xref>). The accuracies within 15%, 30% and 50% of the six-variable GABP network were all the greatest (<italic>P</italic>&lt;0.001 for all), and the median percent of the absolute difference was least (15.61 ml/min/1.73 m<sup>2</sup> vs. a range from 26.00 ml/min/1.73 m<sup>2</sup> to 36.21 ml/min/1.73 m<sup>2</sup>, <italic>P</italic>&lt;0.001 for all; <xref ref-type="table" rid="pone-0058242-t003">Table 3</xref>).</p>
+        <fig id="pone-0058242-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0058242.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Bland–Altman plot of eGFR and sGFR (ml/min/1.73 m<sup>2</sup>) in the external validation data set.</title>
+            <p>Solid blue line represents the mean of difference between methods; dashed brown lines represent 95% limits of agreement of the mean of difference between methods; solid red line represents the regression line of difference between methods against average of methods; dotted green lines represent 95% confidence intervals for the regression line, and dashed purple lines represent 95% limits of agreement of the regression line. A, B, C, D and E represent for the results of GFR estimated by the Cockcroft-Gault equation, the six variable MDRD equation, the four variable MDRD equation, the CKD-EPI equation and the six variable GABP network, respectively. Abbreviations: eGFR, estimated glomerular filtration rate; sGFR, standard glomerular filtration; CG, Cockcroft-Gault equation; MDRD: Modification of Diet in Renal Disease; CKD-EPI: Chronic Kidney Disease Epidemiology Collaboration; GABP: BP network with genetic algorithm.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0058242.g001" position="float" xlink:type="simple"/>
+        </fig>
+        <table-wrap id="pone-0058242-t002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0058242.t002</object-id>
+          <label>Table 2</label>
+          <caption>
+            <title>Overall performance of agreement between eGFR and sGFR in the external validation data set.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0058242-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0058242.t002" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Precision (ml/min/1.73 m<sup>2</sup>)</td>
+                  <td align="left" rowspan="1" colspan="1">Slope of regression line with the X-axis<sup>a</sup> (95% CI)</td>
+                  <td align="left" rowspan="1" colspan="1">Intercepts of regression line with the Y-axis<sup>a</sup> (95% CI)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CG equation</td>
+                  <td align="left" rowspan="1" colspan="1">92.8</td>
+                  <td align="left" rowspan="1" colspan="1">0.46(0.40,0.52)<xref ref-type="table-fn" rid="nt107">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">−19.83(−23.40,−16.26)<xref ref-type="table-fn" rid="nt108">†</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD1 equation</td>
+                  <td align="left" rowspan="1" colspan="1">90.3</td>
+                  <td align="left" rowspan="1" colspan="1">0.46(0.40,0.51)<xref ref-type="table-fn" rid="nt107">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">−19.44(−22.85,−16.02)<xref ref-type="table-fn" rid="nt107">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD4 equation</td>
+                  <td align="left" rowspan="1" colspan="1">101.7</td>
+                  <td align="left" rowspan="1" colspan="1">0.53(0.47,0.59)<xref ref-type="table-fn" rid="nt107">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">−21.54(−25.11,−17.64)<xref ref-type="table-fn" rid="nt107">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CKD-EPI equation</td>
+                  <td align="left" rowspan="1" colspan="1">71.3</td>
+                  <td align="left" rowspan="1" colspan="1">0.34(0.29,0.39)<xref ref-type="table-fn" rid="nt107">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">−14.79(−17.78,−11.80)<xref ref-type="table-fn" rid="nt108">†</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GABP6 network</td>
+                  <td align="left" rowspan="1" colspan="1">46.7</td>
+                  <td align="left" rowspan="1" colspan="1">−0.15(−0.20,−0.10)</td>
+                  <td align="left" rowspan="1" colspan="1">5.88(3.20,8.55)</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt105">
+              <label/>
+              <p>Abbreviations: eGFR, estimated glomerular filtration rate; sGFR, standard glomerular filtration; CG, Cockcroft-Gault; MDRD, Modification of Diet in Renal Disease; CKD-EPI, Chronic Kidney Disease Epidemiology Collaboration; GABP, BP network with genetic algorithm</p>
+            </fn>
+            <fn id="nt106">
+              <label/>
+              <p>a:The difference between eGFR and sGFR was regressed against the average of eGFR and sGFR. <italic>X</italic>-axis represented the average of eGFR and sGFR. <italic>Y</italic>-axis represented the difference between eGFR and sGFR. eGFR, estimated glomerular filtration rate; sGFR, standard glomerular filtration rate.</p>
+            </fn>
+            <fn id="nt107">
+              <label>*</label>
+              <p>:<italic>P</italic>&lt;0.001 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt108">
+              <label>†</label>
+              <p>:<italic>P</italic>&lt;0.01 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt109">
+              <label>‡</label>
+              <p>:<italic>P</italic>&lt;0.05 compared with GABP6 network-GFR.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <table-wrap id="pone-0058242-t003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0058242.t003</object-id>
+          <label>Table 3</label>
+          <caption>
+            <title>Overall performance of difference and accuracy between eGFR and sGFR in the external validation data set.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0058242-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0058242.t003" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Median of difference (25%, 75% Percentile)</td>
+                  <td align="left" rowspan="1" colspan="1">Median % Absolute difference (25%, 75% Percentile)</td>
+                  <td colspan="3" align="left" rowspan="1">Accuracy within</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">15%</td>
+                  <td align="left" rowspan="1" colspan="1">30%</td>
+                  <td align="left" rowspan="1" colspan="1">50%</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CG equation</td>
+                  <td align="left" rowspan="1" colspan="1">−1.23(9.96,12.25)</td>
+                  <td align="left" rowspan="1" colspan="1">26.00(13.03,47.55)<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">29.2<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">55.0<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">77.6<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD1 equation</td>
+                  <td align="left" rowspan="1" colspan="1">−0.70(−10.16,15.22)</td>
+                  <td align="left" rowspan="1" colspan="1">31.71(13.75,52.25)<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">26.3<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">46.7<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">72.2<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD4 equation</td>
+                  <td align="left" rowspan="1" colspan="1">1.18(−9.48,16.38)<xref ref-type="table-fn" rid="nt112">‡</xref></td>
+                  <td align="left" rowspan="1" colspan="1">32.21(14.08,54.45)<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">26.9<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">46.1<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">70.7<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CKD-EPI equation</td>
+                  <td align="left" rowspan="1" colspan="1">−0.12(−9.95,13.51)<xref ref-type="table-fn" rid="nt111">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">30.74(12.57,50.90)<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">26.9<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">49.6<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">73.9<xref ref-type="table-fn" rid="nt110">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GABP6 network</td>
+                  <td align="left" rowspan="1" colspan="1">−0.26(−8.54,5.73)</td>
+                  <td align="left" rowspan="1" colspan="1">15.61(8.44,29.87)</td>
+                  <td align="left" rowspan="1" colspan="1">49.0</td>
+                  <td align="left" rowspan="1" colspan="1">75.1</td>
+                  <td align="left" rowspan="1" colspan="1">90.5</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt110">
+              <label>*</label>
+              <p>:<italic>P</italic>&lt;0.001 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt111">
+              <label>†</label>
+              <p>:<italic>P</italic>&lt;0.01 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt112">
+              <label>‡</label>
+              <p>:<italic>P</italic>&lt;0.05 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt113">
+              <label/>
+              <p>Abbreviations: eGFR, estimated glomerular filtration rate; sGFR, standard glomerular filtration; CG: Cockcroft-Gault; MDRD: Modification of Diet in Renal Disease; CKD-EPI: Chronic Kidney Disease Epidemiology Collaboration; GABP: BP network with genetic algorithm</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>The performance of the six-variable GABP network in various stages of CKD was analyzed. The median of the difference of the six-variable GABP network was less than the traditional equations in CKD stages 1–2 and CKD stages 4–5 (<italic>P</italic>&lt;0.001 for all), as was the absolute difference in CKD stages 1–2 and CKD stage 3 (<italic>P</italic>&lt;0.001 for all). Accuracy within 30% and 50% of the six-variable GABP network in CKD stages 1–2 and CKD stage 3 were the greatest (<italic>P</italic>&lt;0.001 for all). There was also improvement in accuracy within 15% of the six-variable GABP network in CKD stages 1–2 (<italic>P</italic>&lt;0.001 for all). All estimation models showed the same variation trend for performances from CKD stage 1 to CKD stage 5; that is, performance of one specific CKD stage became worse with the progression of CKD stage. This is due to sGFR becoming smaller during the progression of CKD stages, and therefore the relative error becoming greater. Detailed performances are listed in <xref ref-type="supplementary-material" rid="pone.0058242.s022">Table S18</xref>. We also evaluated misclassification of CKD by various estimation models. Misclassification for the diagnosis of moderate renal failure (GFR &lt;60 ml/min/1.73 m<sup>2</sup>) as well as severe renal failure (GFR &lt;15 ml/min/1.73 m<sup>2</sup>) were improved (<italic>P</italic>&lt;0.01 for all) by the means of the six-variable GABP network (8.2% and 7.4%), as compared with those of the traditional equations (ranging from 12.6% to 13.2% and from 12.6% to 17.5%; <xref ref-type="table" rid="pone-0058242-t004">Table 4</xref>). The six-variable GABP network improved the CKD stage misclassification rate (32.4% vs. a range from 47.3% to 53.3%, <italic>P</italic>&lt;0.001 for all). In CKD stage 1 classified by various estimation models, the correct classification ratio of CKD stage 1 of the six-variable GABP network was significantly higher than for all traditional equations (90.9% vs. a range from 36.2% to 42.4%, <italic>P</italic>&lt;0.01 for all). There were also some improvements in the correct classification ratios of the six-variable GABP network in CKD stage 2, CKD stage 4 as well as CKD stage 5, but without statistical significance (<xref ref-type="supplementary-material" rid="pone.0058242.s023">Table S19</xref>).</p>
+        <table-wrap id="pone-0058242-t004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0058242.t004</object-id>
+          <label>Table 4</label>
+          <caption>
+            <title>CKD Misclassification in the external validation data set.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0058242-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0058242.t004" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="2" align="left" rowspan="1">Misclassification rate for the diagnosis of</td>
+                  <td align="left" rowspan="1" colspan="1">CKD stage misclassification rate</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">sGFR &lt;60 ml/min/1.73 m<sup>2</sup></td>
+                  <td align="left" rowspan="1" colspan="1">sGFR &lt;15 ml/min/1.73 m<sup>2</sup></td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CG equation</td>
+                  <td align="left" rowspan="1" colspan="1">12.6<xref ref-type="table-fn" rid="nt115">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">12.6<xref ref-type="table-fn" rid="nt115">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">47.3<xref ref-type="table-fn" rid="nt114">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD1 equation</td>
+                  <td align="left" rowspan="1" colspan="1">12.6<xref ref-type="table-fn" rid="nt115">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">17.2<xref ref-type="table-fn" rid="nt114">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">52.4<xref ref-type="table-fn" rid="nt114">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD4 equation</td>
+                  <td align="left" rowspan="1" colspan="1">13.2<xref ref-type="table-fn" rid="nt115">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">17.5<xref ref-type="table-fn" rid="nt114">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">51.9<xref ref-type="table-fn" rid="nt114">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CKD-EPI equation</td>
+                  <td align="left" rowspan="1" colspan="1">12.9<xref ref-type="table-fn" rid="nt115">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">17.5<xref ref-type="table-fn" rid="nt114">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">53.3<xref ref-type="table-fn" rid="nt114">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GABP6 network</td>
+                  <td align="left" rowspan="1" colspan="1">8.3</td>
+                  <td align="left" rowspan="1" colspan="1">7.4</td>
+                  <td align="left" rowspan="1" colspan="1">32.4</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt114">
+              <label>*</label>
+              <p>:<italic>P</italic>&lt;0.001 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt115">
+              <label>†</label>
+              <p>:<italic>P</italic>&lt;0.01 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt116">
+              <label>‡</label>
+              <p>:<italic>P</italic>&lt;0.05 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt117">
+              <label/>
+              <p>Abbreviations: sGFR, standard glomerular filtration rate; CG, Cockcroft-Gault; MDRD, Modification of Diet in Renal Disease; CKD-EPI, Chronic Kidney Disease Epidemiology Collaboration; GABP, BP network with genetic algorithm; CKD, chronic kidney disease</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s3c">
+        <title>Performance of the estimation models in the additional external validation data set</title>
+        <p>Bland-Altman analysis demonstrated that the precision of the six-variable GABP network was the highest among all of the estimation models (62.4 ml/min/1.73 m<sup>2</sup> vs. a range from 68.0 ml/min/1.73 m<sup>2</sup> to 73.5 ml/min/1.73 m<sup>2</sup>). The intercept of the regression line of the six-variable GABP network was improved (4.91 vs. a range from −16.07 to −18.05, <italic>P</italic>&lt;0.01 for all). However, the slope of the regression line of the six-variable GABP network was the worst (−0.27 vs. a range from 0.18 to 0.24, <italic>P</italic>&lt;0.001 for all; <xref ref-type="table" rid="pone-0058242-t005">Table 5</xref> and <xref ref-type="supplementary-material" rid="pone.0058242.s004">Figure S4</xref>), as was bias (median difference, −8.84 ml/min/1.73 m<sup>2</sup>vs. a range from −4.60 ml/min/1.73 m<sup>2</sup> to −6.56 ml/min/1.73 m<sup>2</sup>; <italic>P</italic>&lt;0.05 for all). The accuracies within 30% and 50% of the six-variable GABP network were all the greatest, and the median percent of the absolute difference was the least (20.75 ml/min/1.73 m<sup>2</sup> vs. a range from 21.52 ml/min/1.73 m<sup>2</sup> to 23.57 ml/min/1.73 m<sup>2</sup>, <italic>P</italic>&lt;0.05 for all; <xref ref-type="table" rid="pone-0058242-t006">Table 6</xref>). The misclassification rate for the diagnosis of severe renal failure (GFR &lt;15 ml/min/1.73 m<sup>2</sup>) was also improved (11.3% vs. a range from 16.7% to 17.1%, <italic>P</italic>&lt;0.01 for all) with the six-variable GABP network (<xref ref-type="table" rid="pone-0058242-t007">Table 7</xref>).</p>
+        <table-wrap id="pone-0058242-t005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0058242.t005</object-id>
+          <label>Table 5</label>
+          <caption>
+            <title>Overall performance of agreement between eGFR and sGFR in the additional external validation data set.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0058242-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0058242.t005" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Precision (ml/min/1.73 m<sup>2</sup>)</td>
+                  <td align="left" rowspan="1" colspan="1">Slope of regression line with the X-axis<sup>a</sup> (95% CI)</td>
+                  <td align="left" rowspan="1" colspan="1">Intercepts of regression line with the Y-axis<sup>a</sup> (95% CI)</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CG equation</td>
+                  <td align="left" rowspan="1" colspan="1">72.5</td>
+                  <td align="left" rowspan="1" colspan="1">0.21(0.15,0.28)<xref ref-type="table-fn" rid="nt120">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">−17.99(−22.29,−13.69)<xref ref-type="table-fn" rid="nt121">†</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD1 equation</td>
+                  <td align="left" rowspan="1" colspan="1">68.0</td>
+                  <td align="left" rowspan="1" colspan="1">0.20(0.14,0.26)<xref ref-type="table-fn" rid="nt120">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">−16.16(−20.23,−12.09)<xref ref-type="table-fn" rid="nt120">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD4 equation</td>
+                  <td align="left" rowspan="1" colspan="1">73.5</td>
+                  <td align="left" rowspan="1" colspan="1">0.24(0.18,0.30)<xref ref-type="table-fn" rid="nt120">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">−18.05(−22.28,−13.83)<xref ref-type="table-fn" rid="nt120">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CKD-EPI equation</td>
+                  <td align="left" rowspan="1" colspan="1">68.4</td>
+                  <td align="left" rowspan="1" colspan="1">0.18(0.12,0.25)<xref ref-type="table-fn" rid="nt120">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">−16.07(−20.24,−11.91)<xref ref-type="table-fn" rid="nt121">†</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GABP6 network</td>
+                  <td align="left" rowspan="1" colspan="1">62.4</td>
+                  <td align="left" rowspan="1" colspan="1">−0.27(−0.34,−0.20)</td>
+                  <td align="left" rowspan="1" colspan="1">4.91(0.76,9.06)</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt118">
+              <label/>
+              <p>Abbreviations: eGFR, estimated glomerular filtration rate; sGFR, standard glomerular filtration rate; CG, Cockcroft-Gault; MDRD, Modification of Diet in Renal Disease; CKD-EPI, Chronic Kidney Disease Epidemiology Collaboration; GABP, BP network with genetic algorithm</p>
+            </fn>
+            <fn id="nt119">
+              <label/>
+              <p>a:The difference between eGFR and sGFR was regressed against the average of eGFR and sGFR. <italic>X</italic>-axis represented the average of eGFR and sGFR. <italic>Y</italic>-axis represented the difference between eGFR and sGFR.</p>
+            </fn>
+            <fn id="nt120">
+              <label>*</label>
+              <p>:<italic>P</italic>&lt;0.001 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt121">
+              <label>†</label>
+              <p>:<italic>P</italic>&lt;0.01 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt122">
+              <label>‡</label>
+              <p>:<italic>P</italic>&lt;0.05 compared with GABP6 network-GFR.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <table-wrap id="pone-0058242-t006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0058242.t006</object-id>
+          <label>Table 6</label>
+          <caption>
+            <title>Overall performance of difference and accuracy between eGFR and sGFR in the additional external validation data set.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0058242-t006-6" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0058242.t006" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Median of difference (25%, 75% Percentile)</td>
+                  <td align="left" rowspan="1" colspan="1">Median % Absolute difference (25%, 75% Percentile)</td>
+                  <td colspan="3" align="left" rowspan="1">Accuracy within</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">15%</td>
+                  <td align="left" rowspan="1" colspan="1">30%</td>
+                  <td align="left" rowspan="1" colspan="1">50%</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CG equation</td>
+                  <td align="left" rowspan="1" colspan="1">−6.56(−16.85,3.42)<xref ref-type="table-fn" rid="nt126">‡</xref></td>
+                  <td align="left" rowspan="1" colspan="1">23.57(10.49,43.11)<xref ref-type="table-fn" rid="nt125">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">34.6</td>
+                  <td align="left" rowspan="1" colspan="1">61.2</td>
+                  <td align="left" rowspan="1" colspan="1">80.8<xref ref-type="table-fn" rid="nt125">†</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD1 equation</td>
+                  <td align="left" rowspan="1" colspan="1">−4.60(−15.38,5.14)<xref ref-type="table-fn" rid="nt124">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">21.52(9.78,44.38)<xref ref-type="table-fn" rid="nt126">‡</xref></td>
+                  <td align="left" rowspan="1" colspan="1">39.2</td>
+                  <td align="left" rowspan="1" colspan="1">63.3</td>
+                  <td align="left" rowspan="1" colspan="1">78.3<xref ref-type="table-fn" rid="nt124">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD4 equation</td>
+                  <td align="left" rowspan="1" colspan="1">−4.92(−15.02,5.10)<xref ref-type="table-fn" rid="nt124">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">23.26(8.94,46.84)<xref ref-type="table-fn" rid="nt125">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">34.2</td>
+                  <td align="left" rowspan="1" colspan="1">60.4</td>
+                  <td align="left" rowspan="1" colspan="1">76.7<xref ref-type="table-fn" rid="nt124">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CKD-EPI equation</td>
+                  <td align="left" rowspan="1" colspan="1">−5.71(−16.47,4.48)<xref ref-type="table-fn" rid="nt124">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">23.52(8.82,47.21)<xref ref-type="table-fn" rid="nt125">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">35.8</td>
+                  <td align="left" rowspan="1" colspan="1">60.0<xref ref-type="table-fn" rid="nt124">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">77.1<xref ref-type="table-fn" rid="nt124">*</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GABP6 network</td>
+                  <td align="left" rowspan="1" colspan="1">−8.44(−19.57,0.22)</td>
+                  <td align="left" rowspan="1" colspan="1">20.75(11.19,34.18)</td>
+                  <td align="left" rowspan="1" colspan="1">34.6</td>
+                  <td align="left" rowspan="1" colspan="1">67.5</td>
+                  <td align="left" rowspan="1" colspan="1">88.8</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt123">
+              <label/>
+              <p>Abbreviations: eGFR, estimated glomerular filtration rate; sGFR, standard glomerular filtration; CG: Cockcroft-Gault; MDRD: Modification of Diet in Renal Disease; CKD-EPI: Chronic Kidney Disease Epidemiology Collaboration; GABP: BP network with genetic algorithm</p>
+            </fn>
+            <fn id="nt124">
+              <label>*</label>
+              <p>:<italic>P</italic>&lt;0.001 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt125">
+              <label>†</label>
+              <p>:<italic>P</italic>&lt;0.01 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt126">
+              <label>‡</label>
+              <p>:<italic>P</italic>&lt;0.05 compared with GABP6 network-GFR.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <table-wrap id="pone-0058242-t007" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0058242.t007</object-id>
+          <label>Table 7</label>
+          <caption>
+            <title>CKD Misclassification in the additional external validation data set.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0058242-t007-7" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0058242.t007" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td colspan="2" align="left" rowspan="1">Misclassification rate for the diagnosis of</td>
+                  <td align="left" rowspan="1" colspan="1">CKD stage misclassification rate</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">sGFR &lt;60 ml/min/1.73 m<sup>2</sup></td>
+                  <td align="left" rowspan="1" colspan="1">sGFR &lt;15 ml/min/1.73 m<sup>2</sup></td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CG equation</td>
+                  <td align="left" rowspan="1" colspan="1">9.0</td>
+                  <td align="left" rowspan="1" colspan="1">16.7<xref ref-type="table-fn" rid="nt129">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">47.7</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD1 equation</td>
+                  <td align="left" rowspan="1" colspan="1">10.4</td>
+                  <td align="left" rowspan="1" colspan="1">16.7<xref ref-type="table-fn" rid="nt129">†</xref></td>
+                  <td align="left" rowspan="1" colspan="1">49.5</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">MDRD4 equation</td>
+                  <td align="left" rowspan="1" colspan="1">10.4</td>
+                  <td align="left" rowspan="1" colspan="1">17.1<xref ref-type="table-fn" rid="nt128">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">51.4<xref ref-type="table-fn" rid="nt130">‡</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">CKD-EPI equation</td>
+                  <td align="left" rowspan="1" colspan="1">10.4</td>
+                  <td align="left" rowspan="1" colspan="1">17.1<xref ref-type="table-fn" rid="nt128">*</xref></td>
+                  <td align="left" rowspan="1" colspan="1">53.6<xref ref-type="table-fn" rid="nt129">†</xref></td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">GABP6 network</td>
+                  <td align="left" rowspan="1" colspan="1">9.5</td>
+                  <td align="left" rowspan="1" colspan="1">11.3</td>
+                  <td align="left" rowspan="1" colspan="1">42.3</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt127">
+              <label/>
+              <p>Abbreviations: CG, Cockcroft-Gault; MDRD, Modification of Diet in Renal Disease; CKD-EPI, Chronic Kidney Disease Epidemiology Collaboration; GABP, BP network with genetic algorithm; CKD, chronic kidney disease</p>
+            </fn>
+            <fn id="nt128">
+              <label>*</label>
+              <p>:<italic>P</italic>&lt;0.001 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt129">
+              <label>†</label>
+              <p>:<italic>P</italic>&lt;0.01 compared with GABP6 network-GFR.</p>
+            </fn>
+            <fn id="nt130">
+              <label>‡</label>
+              <p>:<italic>P</italic>&lt;0.05 compared with GABP6 network-GFR.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>According to the comprehensive information from the internal validation data set and both external validation data sets, the six-variable GABP network was selected as the optimal estimation model for patients with CKD. In order to show the model and facilitate external validations, a table based on the Excel software (File S1) was developed for convenience.</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>The GFR is defined as the number of milliliters of plasma per unit time from kidney filtration and is a direct indicator of glomerular filtration function. GFR is the basis of CKD definition and staging and it affects evaluation of evolution, prognosis and follow-up <xref ref-type="bibr" rid="pone.0058242-Stevens1">[7]</xref>. With a worsening baseline of renal function, patients seem to have a greater probability of progressing to a worse CKD stage in the next year <xref ref-type="bibr" rid="pone.0058242-Liu3">[30]</xref>. Early detection and diagnosis are important means of effective prevention and treatment of CKD and its associated complications. Accurate evaluation of GFR is essential for CKD patients. Using this new ANN model (the six-variable GABP network, with a topology of 6-2-1), better precision and accuracy were achieved, which resulted in more accurate classification of severe renal failure (GFR &lt;15 ml/min/1.73 m<sup>2</sup>). This will be of great help to physicians in making proper decisions for patients with CKD, thereby avoiding unnecessary diagnostic and therapeutic interventions. The previous finding <xref ref-type="bibr" rid="pone.0058242-Liu1">[25]</xref> that the ANN was superior to the traditional equation in GFR estimation was supported as well by data. In conjunction with other studies <xref ref-type="bibr" rid="pone.0058242-Gaweda1">[31]</xref>–<xref ref-type="bibr" rid="pone.0058242-Guh1">[34]</xref>, it indicated that the method of ANN may have an advantage in solving clinical problems.</p>
+      <p>In the field of medical data processing, the traditional statistical regression method takes the ‘law of large numbers’ as the theoretical basis, with some assumptions and prior knowledge. An equation is developed by collecting large amounts of data to fit the general law of the population. This equation is very dependent on the samples collected, which are supposed to have the same distribution as the population, so a decline in accuracy would happen when applied to the other population. In addition, the regression methods can only fit limited functional forms. Multicollinearity and interactions between independent variables also limit the application of regression methods. However, ANN, as a common method of machine learning, is widely applied in the fields of not only science and engineering but also medicine with its own advantages such as nonlinear mapping and robustness. This method does not require any a priori knowledge of the data. Multicollinearity and interaction is no longer a limitation of the application of this method. Even if the sample size is small, the law of population can still be learned from the sample with limited accuracy.</p>
+      <p>There were limitations in this study. First, SC in the MDRD equations <xref ref-type="bibr" rid="pone.0058242-Levey2">[9]</xref> was measured by using the picric acid method. In the CKD-EPI equation <xref ref-type="bibr" rid="pone.0058242-Levey4">[12]</xref> and the development data set, the internal validation data set and the external validation data set of our models, SC was determined by the enzymatic method traceable to isotope dilution-mass spectrometry. In the additional external validation data set of our models, SC levels were measured by the enzymatic method. The Cockcroft-Gault-equation <xref ref-type="bibr" rid="pone.0058242-Cockcroft1">[8]</xref> was developed long ago, and the methods of SC measurement are not available now. The difference in calibration of SC assays introduces error in the comparison between different GFR estimation models and subgroups <xref ref-type="bibr" rid="pone.0058242-Vickery1">[35]</xref>. Second, different estimation models used different ways to measure sGFR, which was also a source of system bias. Both the MDRD equations <xref ref-type="bibr" rid="pone.0058242-Levey2">[9]</xref> and the CKD-EPI equation <xref ref-type="bibr" rid="pone.0058242-Levey4">[12]</xref> used urinary clearances of <sup>125</sup>I-iothalamate as the sGFR. In the Cockcroft-Gault equation <xref ref-type="bibr" rid="pone.0058242-Cockcroft1">[8]</xref>, the method of sGFR measurement used the means of two 24-hour urine creatinine clearances. In this study, according to other studies <xref ref-type="bibr" rid="pone.0058242-Du1">[29]</xref>, <xref ref-type="bibr" rid="pone.0058242-DU1">[36]</xref>, sGFR was measured by the <sup>99m</sup>Tc-DTPA renal dynamic imaging method. It is likely that differences in the results of our study and others were partly due to the use of different methods. Third, the sample contained only Chinese CKD patients. Further validations in separate studies with different races/ethnicities of CKD patients are needed to confirm the advantages of this ANN. Fourth, an ANN model is a ‘black box’, and cannot be expressed by a single mathematical equation. As a result, physicians are reluctant to accept the ANN's interpretation of data. In order to facilitate the application on a daily bedside basis, a simple table based on Excel software (File S1) was developed.</p>
+    </sec>
+    <sec id="s5">
+      <title>Conclusions</title>
+      <p>A new ANN model (the six-variable GABP network) for CKD patients was developed and can provide a simple, more accurate and reliable means for the estimation of GFR and stage of CKD than traditional equations. Further validations are needed to assess the ability of ANN model in diverse populations.</p>
+    </sec>
+    <sec id="s6">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0058242.s001" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s001" position="float" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p>
+            <bold>Topology of artificial neural network.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s002" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s002" position="float" xlink:type="simple">
+        <label>Figure S2</label>
+        <caption>
+          <p><bold>Bland–Altman plot of eGFR and sGFR (ml/min/1.73 m<sup>2</sup>) in the internal validation data set.</bold> Solid blue line represents the mean of difference between methods; dashed brown lines represent 95% limits of agreement of the mean of difference between methods; solid red line represents the regression line of difference between methods against average of methods; dotted green lines represent 95% confidence intervals for the regression line, and dashed purple lines represent 95% limits of agreement of the regression line. A, B, C, D, E and F represent for the results of GFR estimated by GABP-7 network, GABP-6 network, GABP-5 network, GABP-4 network, GABP-3 network and GABP-2 network, respectively.</p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s003" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s003" position="float" xlink:type="simple">
+        <label>Figure S3</label>
+        <caption>
+          <p><bold>Bland–Altman plot of eGFR and sGFR (ml/min/1.73 m<sup>2</sup>) in the internal validation data set.</bold> Solid blue line represents the mean of difference between methods; dashed brown lines represent 95% limits of agreement of the mean of difference between methods; solid red line represents the regression line of difference between methods against average of methods; dotted green lines represent 95% confidence intervals for the regression line, and dashed purple lines represent 95% limits of agreement of the regression line. G represent for the results of GFR estimated by GABP-1 network.</p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s004" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s004" position="float" xlink:type="simple">
+        <label>Figure S4</label>
+        <caption>
+          <p><bold>Bland–Altman plot of eGFR and sGFR (ml/min/1.73 m<sup>2</sup>) in the additional external validation data set.</bold> Dotted blue line represents the mean of difference between methods; dashed brown lines represent 95% limits of agreement of the mean of difference between methods; solid red line represents the regression line of difference between methods against average of methods. A, B, C, D and E represent for the results of GFR estimated by the Cockcroft-Gault-equation, the six variable MDRD equation, the four variable MDRD equation, the CKD-EPI equation and the six variable GABP network, respectively.</p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s005" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s005" position="float" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Detailed characteristic in different subgroup of patients.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s006" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s006" position="float" xlink:type="simple">
+        <label>Table S2</label>
+        <caption>
+          <p>
+            <bold>Maximum and minimum values of normalization of raw data.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s007" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s007" position="float" xlink:type="simple">
+        <label>Table S3</label>
+        <caption>
+          <p>
+            <bold>Performance of GABP network with different topology.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s008" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s008" position="float" xlink:type="simple">
+        <label>Table S4</label>
+        <caption>
+          <p>
+            <bold>MIV analysis based on GABP network with a topology of 7-11-1.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s009" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s009" position="float" xlink:type="simple">
+        <label>Table S5</label>
+        <caption>
+          <p>
+            <bold>Performance of GABP network with 6 input variables.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s010" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s010" position="float" xlink:type="simple">
+        <label>Table S6</label>
+        <caption>
+          <p>
+            <bold>MIV analysis based on GABP network with a topology of 6-2-1.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s011" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s011" position="float" xlink:type="simple">
+        <label>Table S7</label>
+        <caption>
+          <p>
+            <bold>Performance of GABP network with 5 input variables.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s012" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s012" position="float" xlink:type="simple">
+        <label>Table S8</label>
+        <caption>
+          <p>
+            <bold>MIV analysis based on GABP network with a topology of 5-4-1.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s013" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s013" position="float" xlink:type="simple">
+        <label>Table S9</label>
+        <caption>
+          <p>
+            <bold>Performance of GABP network with 4 input variables.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s014" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s014" position="float" xlink:type="simple">
+        <label>Table S10</label>
+        <caption>
+          <p>
+            <bold>MIV analysis based on GABP network with a topology of 4-2-1.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s015" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s015" position="float" xlink:type="simple">
+        <label>Table S11</label>
+        <caption>
+          <p>
+            <bold>Performance of GABP network with 3 input variables.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s016" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s016" position="float" xlink:type="simple">
+        <label>Table S12</label>
+        <caption>
+          <p>
+            <bold>MIV analysis based on GABP network with a topology of 3-4-1.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s017" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s017" position="float" xlink:type="simple">
+        <label>Table S13</label>
+        <caption>
+          <p>
+            <bold>Performance of GABP network with 2 input variables.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s018" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s018" position="float" xlink:type="simple">
+        <label>Table S14</label>
+        <caption>
+          <p>
+            <bold>MIV analysis based on GABP network with a topology of 2-3-1.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s019" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s019" position="float" xlink:type="simple">
+        <label>Table S15</label>
+        <caption>
+          <p>
+            <bold>Performance of GABP network with 1 input variable.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s020" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s020" position="float" xlink:type="simple">
+        <label>Table S16</label>
+        <caption>
+          <p>
+            <bold>Overall performance of agreement between eGFR and sGFR in GABP networks with different input variables in the internal validation data set.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s021" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s021" position="float" xlink:type="simple">
+        <label>Table S17</label>
+        <caption>
+          <p>
+            <bold>Overall performance of difference and accuracy between eGFR and sGFR in GABP networks with different number of input variables in the internal validation data set.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s022" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s022" position="float" xlink:type="simple">
+        <label>Table S18</label>
+        <caption>
+          <p>
+            <bold>Performances between eGFR and sGFR in different stages of CKD in the external validation data set.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s023" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pone.0058242.s023" position="float" xlink:type="simple">
+        <label>Table S19</label>
+        <caption>
+          <p>
+            <bold>Classification the CKD stage by the estimation models in different stages of CKD.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0058242.s024" mimetype="application/x-excel" xlink:href="info:doi/10.1371/journal.pone.0058242.s024" position="float" xlink:type="simple">
+        <label>File S1</label>
+        <caption>
+          <p>
+            <bold>An Excel table based on the six-variable GABP network to estimate GFR.</bold>
+          </p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>Thanks to the patients for their good cooperation.</p>
+      <p>We would also like to thank Dr. David Cushley from International Science Editing, Clare, Ireland for assistance with the English version of the manuscript.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0058242-Levey1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levey</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Coresh</surname><given-names>J</given-names></name> (<year>2012</year>) <article-title>Chronic kidney disease</article-title>. <source>Lancet</source> <volume>379</volume>: <fpage>165</fpage>–<lpage>80</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Crews1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Crews</surname><given-names>DC</given-names></name>, <name name-style="western"><surname>Plantinga</surname><given-names>LC</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>ER</given-names><suffix>3rd</suffix></name>, <name name-style="western"><surname>Saran</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Hedgeman </surname><given-names>E</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Prevalence of chronic kidney disease in persons with undiagnosed or prehypertension in the United States</article-title>. <source>Hypertension</source> <volume>55</volume>: <fpage>1102</fpage>–<lpage>9</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Zhang1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhang</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Liu</surname><given-names>B</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Prevalence of chronic kidney disease in China: a cross-sectional survey</article-title>. <source>Lancet</source> <volume>379</volume>: <fpage>815</fpage>–<lpage>22</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Chronic1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">Chronic Kidney Disease Prognosis Consortium</collab> (<year>2010</year>) <name name-style="western"><surname>Matsushita</surname><given-names>K</given-names></name>, <name name-style="western"><surname>van der Velde</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Astor</surname><given-names>BC</given-names></name>, <name name-style="western"><surname>Woodward</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Association of estimated glomerular filtration rate and albuminuria with all-cause and cardiovascular mortality in general population cohorts: a collaborative meta-analysis</article-title>. <source>Lancet</source> <volume>375</volume>: <fpage>2073</fpage>–<lpage>81</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Collins1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Collins</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Foley</surname><given-names>RN</given-names></name>, <name name-style="western"><surname>Chavers</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Gilbertson</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Herzog</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>United States Renal Data System 2011 Annual Data Report: Atlas of chronic kidney disease &amp; end-stage renal disease in the United States</article-title>. <source>Am J Kidney</source> <volume>Dis59</volume>: <fpage>e1</fpage>–<lpage>420</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Xie1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Xie</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Wu</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Yang</surname><given-names>Q</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Design and implementation of the first nationwide, web-based Chinese Renal Data System (CNRDS)</article-title>. <source>BMC Med Inform Decis Mak</source> <volume>12</volume>: <fpage>11</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Stevens1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stevens</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Coresh</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Greene</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Levey</surname><given-names>AS</given-names></name> (<year>2006</year>) <article-title>Assessing kidney function--measured and estimated glomerular filtration rate</article-title>. <source>N Engl J Med</source> <volume>354</volume>: <fpage>2473</fpage>–<lpage>83</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Cockcroft1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cockcroft</surname><given-names>DW</given-names></name>, <name name-style="western"><surname>Gault</surname><given-names>MH</given-names></name> (<year>1976</year>) <article-title>Prediction of creatinine clearance from serum creatinine</article-title>. <source>Nephron</source> <volume>16</volume>: <fpage>31</fpage>–<lpage>41</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Levey2">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levey</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Bosch</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Lewis</surname><given-names>JB</given-names></name>, <name name-style="western"><surname>Greene</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Rogers</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>1999</year>) <article-title>A more accurate method to estimate glomerular filtration rate from serum creatinine: a new prediction equation. Modification of Diet in Renal Disease Study Group</article-title>. <source>Ann Intern Med</source> <volume>130</volume>: <fpage>461</fpage>–<lpage>70</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-National1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">National Kidney Foundation</collab> (<year>2002</year>) <article-title>K/DOQI clinical practice guidelines for chronic kidney disease: evaluation, classification, and stratification</article-title>. <source>Am J Kidney Dis</source> <volume>39</volume>: <fpage>S1</fpage>–<lpage>266</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Levey3">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levey</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Coresh</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Greene</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Stevens</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>YL</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Using standardized serum creatinine values in the modification of diet in renal disease study equation for estimating glomerular filtration rate</article-title>. <source>Ann Intern Med</source> <volume>145</volume>: <fpage>247</fpage>–<lpage>54</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Levey4">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levey</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Stevens</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Schmid</surname><given-names>CH</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>YL</given-names></name>, <name name-style="western"><surname>Castro</surname><given-names>AF</given-names><suffix>3rd</suffix></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>A New Equation to Estimate Glomerular Filtration Rate</article-title>. <source>Ann Intern Med</source> <volume>150</volume>: <fpage>604</fpage>–<lpage>12</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Inker1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Inker</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Schmid</surname><given-names>CH</given-names></name>, <name name-style="western"><surname>Tighiouart</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Eckfeldt</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Feldman</surname><given-names>HI</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Estimating glomerular filtration rate from serum creatinine and cystatin C</article-title>. <source>N Engl J Med</source> <volume>367</volume>: <fpage>20</fpage>–<lpage>9</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Botev1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Botev</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Mallié</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Wetzels</surname><given-names>JF</given-names></name>, <name name-style="western"><surname>Couchoud</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Schück</surname><given-names>O</given-names></name> (<year>2011</year>) <article-title>The clinician and estimation of glomerular filtration rate by creatinine-based formulas: current limitations and quo vadis</article-title>. <source>Clin J Am Soc Nephrol</source> <volume>6</volume>: <fpage>937</fpage>–<lpage>50</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Matsushita1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Matsushita</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Mahmoodi</surname><given-names>BK</given-names></name>, <name name-style="western"><surname>Woodward</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Emberson</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Jafar</surname><given-names>TH</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Comparison of risk prediction using the CKD-EPI equation and the MDRD study equation for estimated glomerular filtration rate</article-title>. <source>JAMA</source> <volume>307</volume>: <fpage>1941</fpage>–<lpage>51</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Young1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Young</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Macke</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Tsoukalas</surname><given-names>LH</given-names></name> (<year>2012</year>) <article-title>Short-term acoustic forecasting via artificial neural networks for neonatal intensive care units</article-title>. <source>J Acoust Soc Am</source> <volume>132</volume>: <fpage>3234</fpage>–<lpage>9</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Emoto1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Emoto</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Abeyratne</surname><given-names>UR</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Kawata</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Akutagawa</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Artificial neural networks for breathing and snoring episode detection in sleep sounds</article-title>. <source>Physiol Meas</source> <volume>33</volume>: <fpage>1675</fpage>–<lpage>89</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Hu1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hu</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Wan</surname><given-names>JQ</given-names></name>, <name name-style="western"><surname>Ma</surname><given-names>YW</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Huang</surname><given-names>MZ</given-names></name> (<year>2012</year>) <article-title>A fuzzy neural network model for monitoring A<sup>2</sup>/O process using on-line monitoring parameters</article-title>. <source>J Environ Sci Health A Tox Hazard Subst Environ Eng</source> <volume>47</volume>: <fpage>744</fpage>–<lpage>54</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Das1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Das</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ben-Menachem</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Cooper</surname><given-names>GS</given-names></name>, <name name-style="western"><surname>Chak</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Sivak</surname><given-names>MV</given-names><suffix>Jr</suffix></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Prediction of outcome in acute lower-gastrointestinal haemorrhage based on an artificial neural network: internal and external validation of a predictive model</article-title>. <source>Lance</source> <volume>362</volume>: <fpage>1261</fpage>–<lpage>6</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-GoldfarbRumyantzev1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Goldfarb-Rumyantzev</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Pappas</surname><given-names>L</given-names></name> (<year>2002</year>) <article-title>Prediction of renal insufficiency in Pima Indians with nephropathy of type 2 diabetes mellitus</article-title>. <source>Am J Kidney Dis</source> <volume>40</volume>: <fpage>252</fpage>–<lpage>64</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Hagan1">
+        <label>21</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Hagan MT, Demuth HB, Beale MH (1996) Neural Network Design. Pws Pub. Co .</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Magosso1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Magosso</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Cuppini</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Ursino</surname><given-names>M</given-names></name> (<year>2012</year>) <article-title>A neural network model of ventriloquism effect and aftereffect</article-title>. <source>PLoS One</source> <volume>7</volume>: <fpage>e42503</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Seguritan1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Seguritan</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Alves</surname><given-names>N</given-names><suffix>Jr</suffix></name>, <name name-style="western"><surname>Arnoult</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Raymond</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Lorimer</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Artificial neural networks trained to detect viral and phage structural proteins</article-title>. <source>PLoS Comput Biol</source> <volume>8</volume>: <fpage>e1002657</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Tong1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tong</surname><given-names>DL</given-names></name>, <name name-style="western"><surname>Schierz</surname><given-names>AC</given-names></name> (<year>2011</year>) <article-title>Hybrid genetic algorithm-neural network: feature extraction for unpreprocessed microarray data</article-title>. <source>Artif Intell Med</source> <volume>53</volume>: <fpage>47</fpage>–<lpage>56</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Liu1">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Liu</surname><given-names>Xun</given-names></name>, <name name-style="western"><surname>Wu</surname><given-names>Xiaoming</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>Lingshan</given-names></name>, <name name-style="western"><surname>Lou</surname><given-names>Tanqi</given-names></name> (<year>2010</year>) <article-title>Application of radial basis function neural network to estimate glomerular filtration rate in Chinese patients with chronic kidney disease</article-title>. <source>ICCASM</source> <volume>15</volume>: <fpage>332</fpage>–<lpage>5</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Liu2">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Liu</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Lv</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Shi</surname><given-names>CG</given-names></name>, <name name-style="western"><surname>Cheng</surname><given-names>CL</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Comparison of prediction equations to estimate glomerular filtration rate in Chinese patients with chronic kidney disease</article-title>. <source>Intern Med J</source> <volume>42</volume>: <fpage>e59</fpage>–<lpage>67</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Carlsen1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Carlsen</surname><given-names>O</given-names></name> (<year>2004</year>) <article-title>The gamma camera as an absolute measurement device: determination of glomerular filtration rate in 99mTc-DTPA renography using a dual head gamma camera</article-title>. <source>Nucl Med Commun</source> <volume>25</volume>: <fpage>1021</fpage>–<lpage>9</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Shi1">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shi</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Lu</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Du</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Du</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Ye</surname><given-names>X</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Application of Back Propagation Artificial Neural Network on Genetic Variants in Adiponectin ADIPOQ, Peroxisome Proliferator-Activated Receptor-γ, and Retinoid X Receptor-α Genes and Type 2 Diabetes Risk in a Chinese Han Population</article-title>. <source>Diabetes Technol Ther</source> <volume>14</volume>: <fpage>293</fpage>–<lpage>300</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Du1">
+        <label>29</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Du</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Hu</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Jiang</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Wan</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Fan</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Implication of CKD-EPI equation to estimate glomerular filtration rate in Chinese patients with chronic kidney disease</article-title>. <source>Ren Fail</source> <volume>33</volume>: <fpage>859</fpage>–<lpage>65</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Liu3">
+        <label>30</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Liu</surname><given-names>Xun</given-names></name>, <name name-style="western"><surname>Lv</surname><given-names>Linsheng</given-names></name>, <name name-style="western"><surname>Ling</surname><given-names>Li</given-names></name>, <name name-style="western"><surname>Lou</surname><given-names>Tanqi</given-names></name> (<year>2012</year>) <article-title>A Markov model study on the hierarchical prognosis and risk factors in patients with chronic kidney disease</article-title>. <source>ICCSEE</source> <volume>2</volume>: <fpage>334</fpage>–<lpage>8</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Gaweda1">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gaweda</surname><given-names>AE</given-names></name>, <name name-style="western"><surname>Jacobs</surname><given-names>AA</given-names></name>, <name name-style="western"><surname>Aronoff</surname><given-names>GR</given-names></name>, <name name-style="western"><surname>Brier</surname><given-names>ME</given-names></name> (<year>2008</year>) <article-title>Model predictive control of erythropoietin administration in the anemia of ESRD</article-title>. <source>Am J Kidney Dis</source> <volume>51</volume>: <fpage>71</fpage>–<lpage>9</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Baxt1">
+        <label>32</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baxt</surname><given-names>WG</given-names></name>, <name name-style="western"><surname>Skora</surname><given-names>J</given-names></name> (<year>1996</year>) <article-title>Prospective validation of artificial neural network trained to identify acute myocardial infarction</article-title>. <source>Lancet</source> <volume>347</volume>: <fpage>12</fpage>–<lpage>5</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Dybowski1">
+        <label>33</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dybowski</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Weller</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Chang</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Gant</surname><given-names>V</given-names></name> (<year>1996</year>) <article-title>Prediction of outcome in critically ill patients using artificial neural network synthesised by genetic algorithm</article-title>. <source>Lancet</source> <volume>347</volume>: <fpage>1146</fpage>–<lpage>50</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Guh1">
+        <label>34</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Guh</surname><given-names>JY</given-names></name>, <name name-style="western"><surname>Yang</surname><given-names>CY</given-names></name>, <name name-style="western"><surname>Yang</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Lai</surname><given-names>YH</given-names></name> (<year>1998</year>) <article-title>Prediction of equilibrated postdialysis BUN by an artificial neural network in high-efficiency hemodialysis</article-title>. <source>Am J Kidney Dis</source> <volume>31</volume>: <fpage>638</fpage>–<lpage>46</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-Vickery1">
+        <label>35</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vickery</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Stevens</surname><given-names>PE</given-names></name>, <name name-style="western"><surname>Dalton</surname><given-names>RN</given-names></name>, <name name-style="western"><surname>van Lente</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Lamb</surname><given-names>EJ</given-names></name> (<year>2006</year>) <article-title>Does the ID-MS traceable MDRD equation work and is it suitable for use with compensated Jaffe and enzymatic creatinine assays?</article-title> <source>Nephrol Dial Transplant</source> <volume>21</volume>: <fpage>2439</fpage>–<lpage>45</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0058242-DU1">
+        <label>36</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DU</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Liu</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Hu</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Wan</surname><given-names>X</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Is the Chronic Kidney Disease Epidemiology Collaboration four-level race equation better than the cystatin C equation?</article-title> <source>Nephrology (Carlton)</source> <volume>17</volume>: <fpage>407</fpage>–<lpage>14</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

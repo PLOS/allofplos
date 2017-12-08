@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="nlm-ta">PLoS Biol</journal-id><journal-id journal-id-type="pmc">plosbiol</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Biology</journal-title></journal-title-group><issn pub-type="ppub">1544-9173</issn><issn pub-type="epub">1545-7885</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PBIOLOGY-D-11-03620</article-id><article-id pub-id-type="doi">10.1371/journal.pbio.1001315</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Immunology</subject>
+            <subj-group>
+              <subject>Immune cells</subject>
+              <subj-group>
+                <subject>Antigen-presenting cells</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Immunity</subject>
+              <subj-group>
+                <subject>Immune defense</subject>
+                <subject>Immunity to infections</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Microbiology</subject>
+            <subj-group>
+              <subject>Virology</subject>
+              <subj-group>
+                <subject>Viral transmission and infection</subject>
+                <subj-group>
+                  <subject>Host cells</subject>
+                </subj-group>
+              </subj-group>
+              <subj-group>
+                <subject>Immunodeficiency viruses</subject>
+                <subject>Viral immune evasion</subject>
+                <subject>Viruslike particles</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Host-pathogen interaction</subject>
+              <subject>Pathogenesis</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Molecular cell biology</subject>
+            <subj-group>
+              <subject>Cytometry</subject>
+              <subj-group>
+                <subject>Flow cytometry</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Membranes and sorting</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Immunology</subject>
+          <subject>Virology</subject>
+          <subject>Microbiology</subject>
+          <subject>Cell Biology</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Sialyllactose in Viral Membrane Gangliosides Is a Novel Molecular Recognition Pattern for Mature Dendritic Cell Capture of HIV-1</article-title><alt-title alt-title-type="running-head">Sialyllactose Governs HIV-1 Capture by Mature DCs</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Izquierdo-Useros</surname>
+            <given-names>Nuria</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lorizate</surname>
+            <given-names>Maier</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Contreras</surname>
+            <given-names>F.-Xabier</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Rodriguez-Plata</surname>
+            <given-names>Maria T.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Glass</surname>
+            <given-names>Bärbel</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Erkizia</surname>
+            <given-names>Itziar</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Prado</surname>
+            <given-names>Julia G.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Casas</surname>
+            <given-names>Josefina</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Fabriàs</surname>
+            <given-names>Gemma</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kräusslich</surname>
+            <given-names>Hans-Georg</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Martinez-Picado</surname>
+            <given-names>Javier</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>AIDS Research Institute IrsiCaixa, Institut d'Investigació en Ciències de la Salut Germans Trias i Pujol, Universitat Autònoma de Barcelona, Badalona, Spain</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Department of Infectious Diseases, Virology, Universitätsklinikum Heidelberg, Heidelberg, Germany</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Heidelberg University Biochemistry Center (BZH), Heidelberg</addr-line>       </aff><aff id="aff4"><label>4</label><addr-line>Department of Biomedicinal Chemistry, Institute of Advanced Chemistry of Catalonia (IQAC)/CSIC, Barcelona, Spain</addr-line>       </aff><aff id="aff5"><label>5</label><addr-line>Institució Catalana de Recerca i Estudis Avançats (ICREA), Barcelona, Spain</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Emerman</surname>
+            <given-names>Michael</given-names>
+          </name>
+          <role>Academic Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Fred Hutchinson Cancer Research Center, United States of America</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">nizquierdo@irsicaixa.es</email> (NI-U); <email xlink:type="simple">maier.lorizate@med.uni-heidelberg.de</email> (ML); <email xlink:type="simple">hans-georg.kraeusslich@med.uni-heidelberg.de</email> (H-GK); <email xlink:type="simple">jmpicado@irsicaixa.es</email> (JM-P)</corresp>
+        <fn fn-type="con">
+          <p>The author(s) have made the following declarations about their contributions: Conceived and designed the experiments: NI-U ML JM-P H-GK. Performed the experiments: NI-U ML F-XC MTR-P BG IE JC GF. Analyzed the data: NI-U ML F-XC MTR-P JC GF. Contributed reagents/materials/analysis tools: JGP. Wrote the paper: NI-U ML F-XC JM-P H-GK.</p>
+        </fn>
+        <fn fn-type="other" id="fn1">
+          <p>¶ F-XC and MTR-P also contributed equally to this work. H-GK and JM-P are joint senior authors on this work.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>A patent application based on this work has been filed (EP11382392.6, 2011). The authors have declared that no other competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <month>4</month>
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>24</day>
+        <month>4</month>
+        <year>2012</year>
+      </pub-date><volume>10</volume><issue>4</issue><elocation-id>e1001315</elocation-id><history>
+        <date date-type="received">
+          <day>8</day>
+          <month>9</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>16</day>
+          <month>3</month>
+          <year>2012</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2012</copyright-year><copyright-holder>Izquierdo-Useros et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><related-article ext-link-type="uri" id="RA1" related-article-type="companion" xlink:href="info:doi/10.1371/journal.pbio.1001316" xlink:type="simple"> <article-title>Lipids in HIV's Envelope Help the Virus to Spread</article-title></related-article><abstract abstract-type="toc">
+        <p>An accessible sialyllactose moiety on viral membrane gangliosides is shown to be essential for HIV-1 uptake into mature dendritic cells, thereby promoting viral transfer and infection of bystander CD4+ T lymphocytes.</p>
+      </abstract><abstract>
+        <p>HIV-1 is internalized into mature dendritic cells (mDCs) via an as yet undefined mechanism with subsequent transfer of stored, infectious virus to CD4<sup>+</sup> T lymphocytes. Thus, HIV-1 subverts a DC antigen capture mechanism to promote viral spread. Here, we show that gangliosides in the HIV-1 membrane are the key molecules for mDC uptake. HIV-1 virus-like particles and liposomes mimicking the HIV-1 lipid composition were shown to use a common internalization pathway and the same trafficking route within mDCs. Hence, these results demonstrate that gangliosides can act as viral attachment factors, in addition to their well known function as cellular receptors for certain viruses. Furthermore, the sialyllactose molecule present in specific gangliosides was identified as the determinant moiety for mDC HIV-1 uptake. Thus, sialyllactose represents a novel molecular recognition pattern for mDC capture, and may be crucial both for antigen presentation leading to immunity against pathogens and for succumbing to subversion by HIV-1.</p>
+      </abstract><abstract abstract-type="summary">
+        <title>Author Summary</title>
+        <p>Antigen-presenting cells such as dendritic cells (DCs) are required to combat infections, but viruses including HIV have evolved strategies to evade their anti-viral activity. HIV can enter DCs via a non-infectious endocytic mechanism and trick them into passing infectious virus on to bystander CD4<sup>+</sup> T cells. Immature DC (iDCs) are characterized by high endocytic activity and low T-cell activation potential. Interestingly, several groups have shown that DCs that have undergone “‘maturation’” (mDCs), a process that occurs on contact with a presentable antigen, capture higher numbers of HIV-1 particles than iDCs when they are matured in the presence of lipopolysaccharide. mDCs move to the lymph nodes where they have more opportunity to interact with T cells than iDCs, and thus to pass on infectious virus. But the molecular mechanism underlying HIV-1 uptake by mDCs has until now been elusive. Here we show that gangliosides, basic components of the host cell's plasma membrane, have an important role in this process. Gangliosides are known to be incorporated into the viral envelope membrane during the process of viral particle budding and here we show that they serve as viral attachment factors: they are recognized and enable HIV-1 uptake by mDCs. Thus, in addition to the well-known function of gangliosides as host cell receptors that mediate virus (e.g., polyoma and SV40) attachment and transport from the plasma membrane to the ER, we now demonstrate that they can also act as determinants for capture by mDCs. Furthermore, we identify a moiety composed of sialyllactose on HIV-1 membrane gangliosides as the specific domain recognized by mDCs. We propose that this novel recognition moiety might be crucial for inducing immune responses, but also critical to disseminate HIV-1 and other ganglioside-containing viruses.</p>
+      </abstract><funding-group><funding-statement>This work was supported by the Spanish Ministry of Science and Innovation through grant SAF2010-21224, the Spanish AIDS network “Red Temática Cooperativa de Investigación en SIDA” (RD06/0006), “Gala contra la sida: Barcelona 2011,” and the Catalan HIV Vaccine Development Program (HIVACAT). N.I.-U. was supported by the program “José Castillejo” from the Spanish Ministry of Education. M.L. and F.-X.C. are supported by a grant from the German Research Foundation (TRR83). M.T.R.-P. is supported by BES-2008-002609 from the Spanish Ministry of Science and Innovation. J.G.P. holds a Miguel Servet Contract funded by FIS-ISCIII (MS09/00279). H.-G.K. is investigator of the Cell Networks Cluster of Excellence (EXC81). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts>
+        <page-count count="15"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Dendritic cells (DCs) are the most potent antigen-presenting cells found in the organism and play a paramount role in initiating immune responses to assaulting pathogens <xref ref-type="bibr" rid="pbio.1001315-Banchereau1">[1]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Steinman1">[2]</xref>. DCs that patrol the mucosal tissue display an immature phenotype and are able to capture incoming pathogens, which leads to DC activation, maturation, and migration to the secondary lymphoid tissue, where DCs acquire the mature phenotype required to efficiently induce adaptive immune responses <xref ref-type="bibr" rid="pbio.1001315-Banchereau1">[1]</xref>.</p>
+      <p>Given the unique role of DCs in initiating primary immune responses <xref ref-type="bibr" rid="pbio.1001315-Banchereau1">[1]</xref>, it is generally believed that these antigen-presenting cells are critical to induce resistance to infection <xref ref-type="bibr" rid="pbio.1001315-Steinman1">[2]</xref>–<xref ref-type="bibr" rid="pbio.1001315-Villadangos1">[4]</xref>. In the specific case of viral infections, murine DC depletion models have provided in vivo evidence of the DC requirement to induce both humoral and cellular antiviral immune responses <xref ref-type="bibr" rid="pbio.1001315-Probst1">[5]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Browne1">[6]</xref>. However, some viruses, including HIV-1, have evolved strategies to subvert DC antiviral activity <xref ref-type="bibr" rid="pbio.1001315-Lambotin1">[7]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Cunningham1">[8]</xref>. DCs can even promote HIV-l dissemination, both through the direct release of new virus particles after productive infection, and through transmission of captured viruses to susceptible T cells without DC infection, a process known as <italic>trans</italic>-infection (reviewed in <xref ref-type="bibr" rid="pbio.1001315-Wu1">[9]</xref>). Direct infection and <italic>trans</italic>-infection occur to a different extent in immature DCs (iDCs) and mature DCs (mDCs) (reviewed in <xref ref-type="bibr" rid="pbio.1001315-Wu1">[9]</xref>,<xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros1">[10]</xref>). The initial Trojan horse hypothesis suggested that HIV-1 capture by iDCs in the mucosa may protect the virus from degradation and allow its transport to secondary lymphoid organs, facilitating <italic>trans</italic>-infection of CD4<sup>+</sup> T cells and fueling viral spread <xref ref-type="bibr" rid="pbio.1001315-Geijtenbeek1">[11]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Kwon1">[12]</xref>. However, iDCs show rapid degradation of captured viral particles <xref ref-type="bibr" rid="pbio.1001315-Moris1">[13]</xref>–, and several lines of evidence suggest now that the long-term ability of iDCs to transfer HIV-1 relies on de novo production of viral particles after productive infection <xref ref-type="bibr" rid="pbio.1001315-Turville1">[14]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Nobile1">[16]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Burleigh1">[17]</xref>. HIV-1 replication in DCs is generally less productive than in CD4<sup>+</sup> T cells (reviewed in <xref ref-type="bibr" rid="pbio.1001315-Wu1">[9]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Piguet1">[18]</xref>), however, probably due to the presence of cellular restriction factors such as SAMHD1 that limit reverse transcription following viral entry <xref ref-type="bibr" rid="pbio.1001315-Laguette1">[19]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Hrecka1">[20]</xref>.</p>
+      <p>Maturation of DCs further reduces their ability to support HIV-1 replication <xref ref-type="bibr" rid="pbio.1001315-GranelliPiperno1">[21]</xref>–<xref ref-type="bibr" rid="pbio.1001315-Cavrois1">[24]</xref>, but potently enhances their capacity to <italic>trans</italic>-infect bystander CD4<sup>+</sup> T cells <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros2">[15]</xref>,<xref ref-type="bibr" rid="pbio.1001315-GranelliPiperno1">[21]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Sanders1">[25]</xref>–<xref ref-type="bibr" rid="pbio.1001315-Wang1">[27]</xref>. <italic>Trans</italic>-infection occurs via the infectious synapse, a cell-to-cell contact zone that facilitates transmission of HIV-1 by locally concentrating virus and viral receptors <xref ref-type="bibr" rid="pbio.1001315-McDonald1">[26]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Garcia1">[28]</xref>. Strikingly, poorly macropinocytic mDCs <xref ref-type="bibr" rid="pbio.1001315-Sallusto1">[29]</xref> sequester significantly more complete, structurally intact virions into large vesicles than actively endocytic iDCs <xref ref-type="bibr" rid="pbio.1001315-Frank1">[30]</xref>, and retain greater amounts of virus 48 h post-pulse than iDCs immediately after viral wash <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros2">[15]</xref>. Thus, enhanced mDC <italic>trans</italic>-infection correlates with increased HIV-1 capture and a longer life span of trapped viruses <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros2">[15]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Wang1">[27]</xref>. Furthermore, mDCs efficiently interact with CD4<sup>+</sup> T cells in lymphoid tissues; key sites of viral replication, where naïve CD4<sup>+</sup> T cells are activated and turn highly susceptible to HIV-1 infection <xref ref-type="bibr" rid="pbio.1001315-Douek1">[31]</xref>. Accordingly, carriage of HIV-1 by mDCs could facilitate the loss of antigen-specific CD4<sup>+</sup> T cells <xref ref-type="bibr" rid="pbio.1001315-Cameron1">[32]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Cameron2">[33]</xref>, favoring HIV-1 pathogenesis. However, the molecular mechanism underlying HIV-1 uptake by mDCs remains largely uncharacterized.</p>
+      <p>We have previously identified an HIV-1 gp120-independent mechanism of viral binding and uptake that is upregulated upon DC maturation <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros2">[15]</xref>. Furthermore, HIV-1 Gag enhanced green fluorescent protein (eGFP)–expressing fluorescent virus-like particles (VLP<sub>HIV-Gag-eGFP</sub>) follow the same trafficking route as wild-type HIV-1 in mDCs <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros3">[34]</xref>, and hence share a common molecular pattern that governs entry into mDCs. In addition, we also reported that treatment of HIV-1 or VLP producer cells with inhibitors of glycosphingolipid biosynthesis yielded particles with less glycosphingolipids, which exhibited reduced entry into mDCs <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros3">[34]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Hatch1">[35]</xref>, without affecting net release from producer cells <xref ref-type="bibr" rid="pbio.1001315-Brgger1">[36]</xref>. Thus, we hypothesize that gangliosides in the outer monolayer of HIV-1 and VLP membranes could act as viral attachment factors and allow viral recognition and capture by mDCs.</p>
+      <p>Here we sought to investigate the molecular determinants involved in viral binding and internalization mediated by mDCs. Using liposomes to mimic the lipid composition and size of HIV-1, we demonstrate that gangliosides are the key molecules that mediate liposome uptake. We extended these observations to VLPs and HIV-1, characterizing a new role for these glycosphingolipids as viral attachment factors. Furthermore, we identify sialyllactose on HIV-1 membrane gangliosides as a novel molecular recognition pattern that mediates virus uptake into mDCs.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>Gangliosides Are Required for Viral Capture Mediated by mDC</title>
+        <p>Considering that glycosphingolipids are enriched in raft-like plasma membrane domains <xref ref-type="bibr" rid="pbio.1001315-Simons1">[37]</xref>–<xref ref-type="bibr" rid="pbio.1001315-Rajendran1">[39]</xref> from where HIV-1 is thought to bud (reviewed in <xref ref-type="bibr" rid="pbio.1001315-Lorizate1">[40]</xref>), we investigated the potential role of glycosphingolipids for HIV-1 capture by mDCs. The ganglioside GM3 was previously identified in the membrane of different retroviruses including HIV-1 <xref ref-type="bibr" rid="pbio.1001315-Chan1">[41]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Kalvodova1">[42]</xref>. We were able to confirm the presence of GM3 in HIV<sub>NL4-3</sub> derived from the T-cell line MT-4 by mass spectrometry (<xref ref-type="fig" rid="pbio-1001315-g001">Figure 1A</xref>). In addition, we detected several other gangliosides including GM1, GM2, and GD1 in the HIV-1 membrane (<xref ref-type="fig" rid="pbio-1001315-g001">Figure 1A</xref>).</p>
+        <fig id="pbio-1001315-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.1001315.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Gangliosides are required for viral capture mediated by mDC.</title>
+            <p>(A) Ganglioside detection in lipid extracts from MT4 derived HIV<sub>NL4-3</sub>.Partial mass spectrum (from 850 to 1550 amu) corresponding to the 5.3- and 6.5-min range of a UPLC/TOF ESI (+) chromatogram representative of three different viral isolations. The selected time range corresponds to the <italic>N</italic>-hexadecanoyl (N-C16) species. The N-C22, N-C24, and N-C24:1 species were also observed. For each compound of interest identified, the exact mass of its [M+H]+ and [M+Na]+ ions are indicated. The retention time of each compound is given within parenthesis next to its abbreviation. Inset: exact mass ion cluster obtained at 5.56 min for GD1 (a) and exact mass ion cluster corresponding to the formula C82H144N4O39 with a charge state of 2 (b). X 10 indicates a ten-fold magnification between 1,500 and 1,550 amu. GA2, <italic>N</italic>-acetyl-D-galactosaminyl-D-galactosyl-D-glucosylceramide; LacCer, D-galactosyl-D-glucosylceramide (lactosylceramide). (B) Comparative mDC capture of VLP<sub>HIV-Gag-eGFP</sub> produced in HEK-293T and distinct fluorescent LUV<sub>HIV-tRed</sub> containing Cer, GM3, GM2, GM1a, or PS. A total of 2×10<sup>5</sup> DCs were pulsed for 4 h at 37°C with 100 µM of LUV or 75 ng of VLP<sub>HIV-Gag-eGFP</sub> Gag in 0.2 ml, washed with PBS, and assessed by FACS to obtain the percentage of tRed or eGFP-positive cells. Data show mean values and standard error of the mean (SEM) from five independent experiments including cells from at least six donors. mDCs capture significantly higher amounts of GM3-containing LUV<sub>HIV-tRed</sub> than Cer or Ø LUV<sub>HIV-tRed</sub> (<italic>p</italic>&lt;0.0001, paired <italic>t</italic> test). mDCs capture significantly higher amounts of GM1a-containing LUV<sub>HIV-tRed</sub> than negatively charged PS-LUV<sub>HIV-tRed</sub> (<italic>p</italic> = 0.0081, paired <italic>t</italic> test). Schematic representation of the gangliosides used in the LUVs for these experiments is shown underneath. (C) Capture of VLP<sub>HIV-Gag-eGFP</sub> produced in CHO cell line, which is only able to synthesize gangliosides up to GM3. A total of 2×10<sup>5</sup> mDCs were incubated for 4 h at 37°C with 75 ng of sucrose-pelleted VLP<sub>HIV-Gag-eGFP</sub> Gag, washed and analyzed by FACS to determine the percentage of eGFP-positive cells. Data show mean values and SEM from one representative experiment out of two including cells from three donors. (D) mDC capture of VLP<sub>MLV-Gag-YFP</sub>. Graph shows mDCs pulsed for 4 h at 37°C with VLP<sub>MLV-Gag-YFP</sub>, washed with PBS and assayed by FACS to obtain the percentage of YFP-positive cells. Data show mean values and SEM of cells from three donors. Left image depicts <bold>c</bold>onfocal microscopy analysis of pulsed cells, showing a 3-D reconstruction of the <italic>x</italic>-<italic>y</italic> sections collected throughout the whole mDC <italic>z</italic> volume every 0.1 µm. Isosurface representation of DAPI-stained nucleus is depicted, computing the maximum intensity fluorescence of the sac-like compartment surface within a 3-D volumetric <italic>x</italic>-<italic>y</italic>-<italic>z</italic> data field, where VLP<sub>MLV-Gag-YFP</sub> accumulate within a compartment analogous to that observed for HIV-1. (E) Capture competition between 75 ng of VLP<sub>HIV-Gag-eGFP</sub> Gag and decreasing amounts (µM) of GM2-containing LUV<sub>HIV-tRed</sub>. As controls, we used the maximum concentration of LUV<sub>HIV-tRed</sub> (100 µM) with or without Cer. Cells were incubated for 4 h at 37°C, washed and analyzed by FACS to establish the percentage of eGFP- and tRed-positive cells. Data show mean values and SEM from three independent experiments including cells from at least four donors. mDCs capture fewer VLP<sub>HIV-Gag-eGFP</sub> in the presence of higher amounts of GM2-containing LUV<sub>HIV-tRed</sub> (<italic>p</italic>&lt;0.0001, paired <italic>t</italic> test).</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.g001" xlink:type="simple"/>
+        </fig>
+        <p>To test whether gangliosides in the outer leaflet of HIV-1 or vesicular membranes can act as attachment factors yielding mDC uptake, we prepared Texas Red (tRed)-labeled large unilamellar vesicles (LUV) mimicking the size and lipid composition of HIV-1 (referred to as LUV<sub>HIV-tRed</sub> and prepared as in <xref ref-type="bibr" rid="pbio.1001315-Lorizate2">[43]</xref>) and containing different gangliosides (<xref ref-type="supplementary-material" rid="pbio.1001315.s001">Figure S1</xref>). All LUVs displayed equal fluorescence intensities (<xref ref-type="supplementary-material" rid="pbio.1001315.s002">Figure S2</xref>). mDCs were pulsed with either LUV<sub>HIV-tRed</sub> or VLPs for 4 h at 37°C and the percentage of fluorescent cells was determined by fluorescence activated cell sorting (FACS). Similar to our previous results with infectious HIV-1 <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros2">[15]</xref>, a high percentage of mDCs captured the fluorescent VLP<sub>HIV-Gag-eGFP</sub> (<xref ref-type="fig" rid="pbio-1001315-g001">Figure 1B</xref>). Furthermore, VLPs produced in the CHO cell line, which is only able to synthesize gangliosides up to GM3 <xref ref-type="bibr" rid="pbio.1001315-Haberkant1">[44]</xref>, were also efficiently captured by mDCs (<xref ref-type="fig" rid="pbio-1001315-g001">Figure 1C</xref>). Uptake into mDCs was further observed for the murine retrovirus MuLV (<xref ref-type="fig" rid="pbio-1001315-g001">Figure 1D</xref>), which was previously shown to also contain gangliosides <xref ref-type="bibr" rid="pbio.1001315-Chan1">[41]</xref>. On the other hand, no significant uptake into mDCs was observed for LUV<sub>HIV-tRed</sub>, which contained the main lipid constituents of HIV-1, but were devoid of gangliosides (<italic>p</italic>&lt;0.0001, paired <italic>t</italic> test) (<xref ref-type="fig" rid="pbio-1001315-g001">Figures 1B</xref> and <xref ref-type="supplementary-material" rid="pbio.1001315.s003">S3</xref>). Uptake into mDCs remained negative for LUV<sub>HIV-tRed</sub> containing ceramide (Cer) (<italic>p</italic>&lt;0.0001, paired <italic>t</italic> test) (<xref ref-type="fig" rid="pbio-1001315-g001">Figures 1B</xref> and <xref ref-type="supplementary-material" rid="pbio.1001315.s003">S3</xref>). This was completely different when monosialogangliosides such as GM3, GM2, or GM1a were incorporated into the LUVs; mDCs were able to capture these liposomes with equal efficiency as VLP<sub>HIV-Gag-eGFP</sub> (<xref ref-type="fig" rid="pbio-1001315-g001">Figures 1B</xref> and <xref ref-type="supplementary-material" rid="pbio.1001315.s003">S3</xref>). To ensure that this capture was not merely due to electrostatic interactions between negatively charged gangliosides and surface charges on mDCs, LUV<sub>HIV-tRed</sub> containing negatively charged phosphatidylserine (PS) were analyzed in parallel and were found to be negative for mDC capture (<italic>p</italic> = 0.0081, paired <italic>t</italic> test) (<xref ref-type="fig" rid="pbio-1001315-g001">Figure 1B</xref>). These results reveal that monosialogangliosides mediate LUV capture by mDCs, and that the carbohydrate head group is essential for this process.</p>
+        <p>To determine whether ganglioside-containing LUV<sub>HIV-tRed</sub> and VLP<sub>HIV-Gag-eGFP</sub> exploit a common entry mechanism into mDCs, we performed competition experiments. mDCs were pulsed with decreasing amounts of GM2-containing LUV<sub>HIV-tRed</sub> and a constant amount of VLP<sub>HIV-Gag-eGFP</sub> for 4 h at 37°C. After extensive washing, the percentage of eGFP- and tRed-positive cells was determined by FACS. GM2-containing LUV<sub>HIV-tRed</sub> efficiently competed for the uptake of VLP<sub>HIV-Gag-eGFP</sub> into mDCs in a dose-dependent manner (<italic>p</italic>&lt;0.0001, paired <italic>t</italic> test) (<xref ref-type="fig" rid="pbio-1001315-g001">Figure 1E</xref>). However, no competition for VLP uptake was observed for LUV<sub>HIV-tRed</sub> containing Cer or lacking glycosphingolipids (<xref ref-type="fig" rid="pbio-1001315-g001">Figure 1E</xref>). Hence, GM-containing LUV<sub>HIV-tRed</sub> and VLP<sub>HIV-Gag-eGFP</sub>use a common entry mechanism to gain access into mDCs, which is dependent on the carbohydrate head group.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Ganglioside-Containing LUV<sub>HIV-tRed</sub> Traffic to the Same Compartment as VLP <sub>HIV-Gag-eGFP</sub> in mDCs</title>
+        <p>We next investigated whether GM-containing LUV<sub>HIV-tRed</sub> and VLP<sub>HIV-Gag-eGFP</sub> reach the same compartment in mDCs using spinning-disc confocal microscopy. We had previously described three types of patterns for HIV-1 captured into mDC: random, polarized, or sac-like compartments <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros2">[15]</xref>,<xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros4">[45]</xref>. The same patterns were also observed for GM-containing LUV<sub>HIV-tRed</sub> and the percentage of mDCs displaying the different patterns was similar regardless of the particle used (<xref ref-type="fig" rid="pbio-1001315-g002">Figure 2A</xref>). Thus, VLP<sub>HIV-Gag-eGFP</sub> and GM-containing LUV<sub>HIV-tRed</sub> not only compete for internalization, but also traffic to an analogous compartment within mDCs. To determine whether VLP<sub>HIV-Gag-eGFP</sub> and GM-containing LUV<sub>HIV-tRed</sub> are captured into the same compartment, mDCs were pre-incubated 3 h at 37°C with GM-containing LUV<sub>HIV-tRed</sub> and subsequently incubated with VLP<sub>HIV-Gag-eGFP</sub> for three additional hours. Confocal microscopy of fixed cells revealed that GM-containing LUV<sub>HIV-tRed</sub> and VLPs polarized towards the same cell area in mDCs (<xref ref-type="supplementary-material" rid="pbio.1001315.s004">Figure S4</xref>). Furthermore, VLPs extensively co-localized with GM-containing LUV<sub>HIV-tRed</sub> (including either GM1a, GM2, or GM3) in the same intracellular compartment (<xref ref-type="fig" rid="pbio-1001315-g002">Figure 2B</xref>; <xref ref-type="supplementary-material" rid="pbio.1001315.s007">Video S1</xref>).</p>
+        <fig id="pbio-1001315-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.1001315.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Ganglioside-containing LUV<sub>HIV-tRed</sub> traffic to the same compartment as VLP <sub>HIV-Gag-eGFP</sub> in mDCs.</title>
+            <p>(A) (Top) Fluorescence images showing the different patterns of 75 ng of VLP<sub>HIV-Gag-eGFP</sub> Gag and 100 µM of GM1a-containing LUV<sub>HIV-tRed</sub> capture mediated by mDCs: random binding, polarized accumulation, and formation of a sac-like compartment. 3-D reconstructions of the <italic>x</italic>-<italic>y</italic> sections were performed collecting images every 0.1 µm throughout the whole mDC volume. Isosurface representation of DAPI-stained nucleus is shown, computing the maximum intensity of the green and red fluorescence within a 3-D volumetric <italic>x</italic>-<italic>y</italic>-<italic>z</italic> data field. (Bottom) Percentage of mDCs with distinct capture patterns after 4 h of independent challenging with VLP<sub>HIV-Gag-eGFP</sub> or ganglioside-containing LUV<sub>HIV-tRed</sub>. Cells were classified using confocal microscopy displaying particles as indicated in the top images. Data show mean values and SEM of more than 100 cells from five different donors. (B) Confocal microscopy analysis of mDCs previously pulsed with 100 µM of GM1a, GM2, and GM3 containing LUV<sub>HIV-tRed</sub> and then exposed to 75 ng of VLP<sub>HIV-Gag-eGFP</sub> Gag. (Top images) 3-D reconstructions of the <italic>x</italic>-<italic>y</italic> sections collected throughout the whole mDC <italic>z</italic> volume every 0.1 µm. Isosurface representation of DAPI stained nucleus is shown, computing the maximum intensity fluorescence of the sac-like compartment surface within a 3-D volumetric <italic>x</italic>-<italic>y</italic>-<italic>z</italic> data field, where VLP<sub>HIV-Gag-eGFP</sub> and ganglioside-containing LUV<sub>HIV-tRed</sub> are accumulated within the same compartment. (Bottom graphs) Quantification of the percentage of VLP<sub>HIV-Gag-eGFP</sub> co-localizing with ganglioside-containing LUV<sub>HIV-tRed</sub> and <italic>vice versa</italic>, obtained analyzing at least ten compartments from mDCs of three different donors. The mean and standard deviation of the thresholded correlation coefficients of Manders and Pearson (obtained considering all the images) were 0.752±0.03 and 0.44±0.11, respectively, indicating co-localization.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.g002" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>Capture of Ganglioside-Containing LUV<sub>HIV-tRed</sub> by mDCs Is Independent of Membrane Liquid Order</title>
+        <p>The HIV-1 envelope is a liquid-ordered membrane and gangliosides are presumably enriched in this type of membranes <xref ref-type="bibr" rid="pbio.1001315-Chan1">[41]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Lorizate2">[43]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Simons2">[46]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Simons3">[47]</xref>. Moreover, ganglioside interaction with cholesterol in lipid rafts <xref ref-type="bibr" rid="pbio.1001315-Simons1">[37]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Brown1">[38]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Simons3">[47]</xref> is known to influence ganglioside conformation and alter its activity as a cellular receptor <xref ref-type="bibr" rid="pbio.1001315-Lingwood1">[48]</xref>. We therefore assessed whether membrane structure or the specific lipid composition (other than gangliosides) of the particle membrane influenced mDC capture. mDCs were incubated with LUV<sub>POPC-tRed</sub>composed of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) with or without different gangliosides (<xref ref-type="fig" rid="pbio-1001315-g003">Figure 3A</xref>). In contrast to LUV<sub>HIV-tRed</sub>, LUV<sub>POPC-tRed</sub> have a liquid-disordered membrane structure <xref ref-type="bibr" rid="pbio.1001315-Brown1">[38]</xref>. Results for LUV<sub>POPC-tRed</sub> were very similar to LUV<sub>HIV-tRed</sub> with efficient capture if either GM1a, GM2, or GM3 was present, while no uptake was observed for Cer containing LUV<sub>POPC-tRed</sub> or LUV<sub>POPC-tRed</sub> lacking gangliosides (<xref ref-type="fig" rid="pbio-1001315-g003">Figure 3A</xref>). Furthermore, the percentage of mDCs displaying particles in random, polarized or sac-like compartment capture patterns was again very similar for the different particles (<xref ref-type="fig" rid="pbio-1001315-g003">Figure 3B</xref>). These results show that ganglioside-containing LUVs use the same trafficking pathway as VLP<sub>HIV-Gag-eGFP</sub> regardless of their membrane structure, indicating that gangliosides themselves are the key molecules responsible for mDC capture.</p>
+        <fig id="pbio-1001315-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.1001315.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Capture of ganglioside-containing LUV<sub>HIV-tRed</sub> by mDCs is independent of membrane liquid order.</title>
+            <p>(A) Comparative mDC capture of LUV<sub>POPC-tRed</sub> containing or not Cer, GM3, GM2, or GM1a. A total of 2×10<sup>5</sup> DCs were pulsed for 4 h at 37°C with 100 µM of LUVs, washed with PBS, and assessed by FACS to obtain the percentage of tRed-positive cells. Data show mean values and SEM from three independent experiments including cells from at least six donors. mDCs capture significantly higher amounts of GM3-containing LUV<sub>POPC-tRed</sub> than Cer or LUV<sub>POPC-tRed</sub> (<italic>p</italic>-values on the graph, paired <italic>t</italic> test). (B) (Top images) Fluorescence images showing the different phases of ganglioside-containing LUV<sub>POPC-tRed</sub> capture mediated by mDCs: random binding, polarized accumulation, and formation of a sac-like compartment. 3-D reconstructions of the <italic>x</italic>-<italic>y</italic> sections were performed collecting images every 0.1 µm throughout the whole mDC <italic>z</italic> volume. Isosurface representation of DAPI stained nucleus is shown, computing the maximum intensity of the green and red fluorescence within a 3-D volumetric <italic>x</italic>-<italic>y</italic>-<italic>z</italic> data field. (Bottom graph) Percentages of mDCs with distinct liposome capture pattern after 4 h of ganglioside-containing LUV<sub>POPC-tRed</sub> challenging. Cells were classified using confocal microscopy displaying particles as indicated in the top images. Data show mean values and SEM of more than 100 mDCs from three different donors.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.g003" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2d">
+        <title>Ganglioside Complexity Determines mDC Capture</title>
+        <p>To gain further insight into the molecular determinant structure required for efficient recognition by mDCs, LUV<sub>HIV-tRed</sub> carrying more complex gangliosides were produced, including two, three, and four sialic acid groups at diverse positions in the carbohydrate polar head group (di-, tri-, and tetra-sialogangliosides) (<xref ref-type="fig" rid="pbio-1001315-g004">Figure 4A</xref>). mDCs pulsed with an equal amount of LUV<sub>HIV-tRed</sub>-containing gangliosides with two or three sialic acids (GD1b and GT1b, respectively) captured these particles with the same efficiency as GM1a-LUV<sub>HIV-tRed</sub> (<xref ref-type="fig" rid="pbio-1001315-g004">Figure 4A</xref>). However, capture was almost completely lost for LUV<sub>HIV-tRed</sub> containing a ganglioside with four sialic acids (GQ1b) (<xref ref-type="fig" rid="pbio-1001315-g004">Figure 4A</xref>). Accordingly, LUV<sub>HIV-tRed</sub> carrying GD1b or GT1b efficiently competed for mDC uptake with VLP<sub>HIV-Gag-eGFP</sub>, while no competition was observed for LUV<sub>HIV-tRed</sub> carrying GQ1b, PS, or Cer (<xref ref-type="fig" rid="pbio-1001315-g004">Figure 4B</xref>). These results indicate that complex gangliosides with up to three sialic acids located in distinct positions of the carbohydrate head group share a common structure determinant for mDC uptake, which is lost in GQ1b.</p>
+        <fig id="pbio-1001315-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.1001315.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Ganglioside complexity determines mDC capture.</title>
+            <p>(A) Comparative mDC capture of distinct LUV<sub>HIV-tRed</sub> containing GM1a, polysialogangliosides such as GD1b, GT1b, and GQ1b; PS and Cer. A total of 2×10<sup>5</sup> DCs were pulsed for 4 h at 37°C with 100 µM of LUVs, washed with PBS, and assessed by FACS to obtain the percentage of tRed-positive cells. Data show mean values and SEM from two independent experiments including cells from six donors. mDCs capture significantly higher amounts of GM1a-containing LUV<sub>HIV-tRed</sub> than GQ1b-containing LUV<sub>HIV-tRed</sub> (<italic>p</italic>&lt;0.0001, paired <italic>t</italic> test). Schematic of the gangliosides in the LUVs employed for these experiments is shown underneath. (B) Capture competition between mDCs pulsed with 75 ng of VLP<sub>HIV-Gag-eGFP</sub> Gag and 100 µM of different polysialogangliosides LUV<sub>HIV-tRed</sub>. Cells were incubated for 4 h at 37°C, washed, and analyzed by FACS to determine the percentage of eGFP- and tRed-positive cells. Data show mean values and SEM from two independent experiments including cells from six donors. mDCs capture fewer VLP<sub>HIV-Gag-eGFP</sub> in the presence of GM1a-containing LUV<sub>HIV-tRed</sub> than in the presence of the same concentration of GQ1b containing LUV<sub>HIV-tRed</sub> (<italic>p</italic>&lt;0.0001, paired <italic>t</italic> test). Representative fluorescence images from mDCs exposed to the indicated LUV<sub>HIV-tRed</sub> in these experiments are shown in the bottom of the graph. Isosurface representation of DAPI stained nucleus is shown, computing the maximum intensity of the green and red fluorescence within a 3-D volumetric <italic>x</italic>-<italic>y</italic>-<italic>z</italic> data field.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.g004" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2e">
+        <title>Identification of the Molecular Recognition Domain Present in Gangliosides That Is Essential for mDC Capture</title>
+        <p>The lack of internalization of Cer-containing LUVs indicated that the carbohydrate head group is specifically required for mDC capture. Sialic acid has previously been identified as a cellular receptor for certain viruses <xref ref-type="bibr" rid="pbio.1001315-Weis1">[49]</xref>. We therefore tested its importance for mDC capture. Incubation of mDCs with equal concentrations of LUV<sub>HIV-tRed</sub> containing Cer, GM1a, or GM1 without the sialic acid group (Asialo GM1) revealed sialic acid-dependent capture (<xref ref-type="fig" rid="pbio-1001315-g005">Figure 5A</xref>). In addition, in situ neuraminidase treatment of GM3-containing LUV<sub>HIV-tRed</sub> and VLP<sub>HIV-Gag-eGFP</sub>, significantly reduced particle capture (<xref ref-type="fig" rid="pbio-1001315-g005">Figure 5B</xref>) and LUV binding to mDCs (<xref ref-type="supplementary-material" rid="pbio.1001315.s005">Figure S5</xref>). Thus, the sialic acid moiety in gangliosides is necessary for specific recognition by mDCs. To assess the contribution of other components of the carbohydrate head group, we prepared LUV<sub>HIV-tRed</sub> containing either GM4 (lacking the glucose moiety of GM3) (<xref ref-type="fig" rid="pbio-1001315-g005">Figure 5C</xref>) or GalCer (lacking both the glucose and sialic acid moieties of GM3) (<xref ref-type="fig" rid="pbio-1001315-g005">Figure 5C</xref>). mDCs incubated with GM4- or GalCer-containing LUV<sub>HIV-tRed</sub> showed only background levels of liposome capture (<xref ref-type="fig" rid="pbio-1001315-g005">Figure 5C</xref>), indicating that the glucose moiety of sphingolipids is also necessary for mDC capture.</p>
+        <fig id="pbio-1001315-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.1001315.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Identification of the molecular recognition domain present in gangliosides essential for mDC capture.</title>
+            <p>(A) Comparative mDC capture of distinct LUV<sub>HIV-tRed</sub> containing Cer, GM1a, or GM1 lacking sialic acid (Asialo GM1). A total of 2×10<sup>5</sup> DCs were pulsed for 4 h at 37°C with 100 µM of LUVs, washed with PBS, and assessed by FACS to obtain the percentage of tRed-positive cells. Data show mean values and SEM from three independent experiments, including cells from nine donors. mDCs capture significantly higher amounts of GM1a-containing LUV<sub>HIV-tRed</sub> than Asialo GM1-containing LUV<sub>HIV-tRed</sub> (<italic>p</italic>&lt;0.0001, paired <italic>t</italic> test). Schematic of the gangliosides present in the LUVs of these experiments is shown underneath. (B) Comparative mDC capture of GM3-containing LUV<sub>HIV-tRed</sub> and VLP<sub>HIV-Gag-eGFP</sub> treated or not with neuraminidase to remove sialic acid. A total of 2×10<sup>5</sup> DCs were pulsed for 2 h at 37°C with 25 µM of LUVs and 75 ng of VLP<sub>HIV-Gag-eGFP</sub> Gag treated or not with <italic>C. perfringens</italic> neuraminidase for 12 h, washed with PBS, and assessed by FACS to obtain the percentage of tRed- and eGFP-positive cells. Data show mean values and SEM from two independent experiments including cells from five donors. mDCs capture significantly higher amounts of untreated particles than neuraminidase-treated particles (<italic>p-</italic>values on the graph, paired <italic>t</italic> test). (C) Comparative mDC capture of distinct LUV<sub>HIV-tRed</sub> containing GalCer, GM4, GM3, or GM1a. A total of 2×10<sup>5</sup> DCs were pulsed for 4 h at 37°C with 100 µM of LUVs, washed, and assessed by FACS to obtain the percentage of tRed-positive cells. Data show mean values and SEM from three independent experiments including cells from nine donors. mDCs capture significantly higher amounts of GM1a-containing LUV<sub>HIV-tRed</sub> than GalCer or GM4-containing LUV<sub>HIV-tRed</sub> (<italic>p</italic>&lt;0.0001, paired <italic>t</italic> test). Schematic of the molecules present in the LUVs for these experiments is shown underneath. (D) Graph representing the relative capture of GM3-containing LUV<sub>HIV-tRed</sub> and VLP<sub>HIV-Gag-eGFP</sub> by mDCs that had been pre-incubated with 10 mM of soluble lactose or with 5–10 mM of GM3 carbohydrate polar head group, normalized to the level of LUV/VLP capture by mock-treated mDCs (set at 100%). mDCs captured fewer particles upon treatment with GM3 polar head group (<italic>p-</italic>values on the graph, paired <italic>t</italic> test). Data show mean values and SEM from three independent experiments including cells from at least nine donors.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.g005" xlink:type="simple"/>
+        </fig>
+        <p>Given that the carbohydrate moiety within gangliosides constitutes the molecular recognition determinant for mDC capture, these head groups should compete for VLP and LUV uptake. Capture of GM3-containing LUV<sub>HIV-tRed</sub> or VLP<sub>HIV-Gag-eGFP</sub> by mDCs was completely blocked in the presence of the GM3 polar head group (sialyllactose), while equal concentrations of lactose (lacking the sialic acid group) had no effect (<xref ref-type="fig" rid="pbio-1001315-g005">Figure 5D</xref>). Taken together, these data clearly show that the sialyllactose moiety of gangliosides is the molecular determinant required for efficient VLP and LUV recognition and capture by mDCs. Noteworthy, the high concentrations of the GM3 head group required for competition in <xref ref-type="fig" rid="pbio-1001315-g005">Figure 5D</xref> compared to the low concentrations of gangliosides in LUVs needed to outcompete VLPs (∼1,000-fold less) (<xref ref-type="fig" rid="pbio-1001315-g001">Figure 1C</xref>) suggests that the attachment of sialyllactose to Cer within membranes confers a higher binding avidity. This is not surprising since viruses and toxins are multivalent: for instance, the VP1 capsid protein of SV40 is pentameric and the cholera toxin is pentavalent; both bind five GM1 molecules <xref ref-type="bibr" rid="pbio.1001315-Neu1">[50]</xref>–<xref ref-type="bibr" rid="pbio.1001315-Merritt1">[52]</xref>. In addition, the hydrophilic moiety of Cer in the membrane interface could be part of the recognition domain, directly increasing the binding affinity to mDCs.</p>
+        <p>Modeling of the 3-D structure of gangliosides (<xref ref-type="supplementary-material" rid="pbio.1001315.s006">Figure S6</xref>) suggested that mDC recognition required an exposed sialyllactose domain and that the lack of recognition of GQ1b could be caused by steric hindrance (<xref ref-type="supplementary-material" rid="pbio.1001315.s006">Figure S6</xref>). Thus, although the lipid and protein context of surrounding membranes might influence the biologically active conformation of gangliosides <xref ref-type="bibr" rid="pbio.1001315-Lingwood1">[48]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Li1">[53]</xref>; 3-D reconstructions provide a structural basis to explain the distinct recognition patterns observed for different gangliosides. The sialyllactose recognition domain defined in this study differs from the NeuAc α 2,3Gal β 1,3GalNAc on gangliosides identified as host cell receptors for SV40 and Sendai virus, and for cholera and tetanus toxin <xref ref-type="bibr" rid="pbio.1001315-Neu1">[50]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Merritt1">[52]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Markwell1">[54]</xref>, but is identical with the α 2,3-sialyllactose identified as host cell receptor for other paramyxoviruses <xref ref-type="bibr" rid="pbio.1001315-Lamb1">[55]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Villar1">[56]</xref>.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Sialyllactose in Membrane Gangliosides Is Required for mDC Uptake and <italic>Trans</italic>-infection of HIV-1</title>
+        <p>To determine whether the results obtained with LUVs and VLPs also hold true for the authentic virus, we performed experiments with wild-type HIV<sub>NL4-3</sub> produced in primary T cells. Similar to our previous data <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros2">[15]</xref>, a high percentage of mDCs captured HIV-1, while uptake into iDCs was much less efficient (<italic>p</italic> = 0.0047, one sample <italic>t</italic> test) (<xref ref-type="fig" rid="pbio-1001315-g006">Figure 6A</xref>). To confirm the importance of viral gangliosides for mDC capture, we purified HIV<sub>NL4-3</sub> from primary CD4<sup>+</sup> T cells pre-treated or not with the glycosphingolipid biosynthesis inhibitor NB-DNJ. HIV-1 capture was strongly reduced for virus obtained from inhibitor-treated cells compared to control virus (<italic>p</italic>&lt;0.0001, one sample <italic>t</italic> test) (<xref ref-type="fig" rid="pbio-1001315-g006">Figure 6B</xref>). To directly determine the importance of the sialyllactose head group for mDC capture of authentic HIV-1, we performed competition experiments showing a strong reduction of virus capture in the presence of the GM3 polar head group, but not in the presence of lactose (<italic>p</italic>&lt;0.0001, one sample <italic>t</italic> test) (<xref ref-type="fig" rid="pbio-1001315-g006">Figure 6C</xref>). These data confirm the observations obtained with liposomes and VLPs for authentic HIV-1 from primary CD4<sup>+</sup> T cells.</p>
+        <fig id="pbio-1001315-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.1001315.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Sialyllactose in membrane gangliosides is required for mDC uptake and <italic>trans</italic>-infection of HIV-1.</title>
+            <p>(A) Relative capture of HIV<sub>NL4-3</sub> produced in primary cells by mDCs and iDCs. DCs were pulsed for 4 h at 37°C with equal amounts of a HIV<sub>NL4-3</sub> produced in stimulated PBMCs, extensively washed, and then assayed for cell-associated p24<sup>Gag</sup> content by ELISA. Results are expressed as the percentage of HIV<sub>NL4-3</sub> captured by iDCs relative to mDCs, normalized to 100% of viral capture. Viral uptake was increased in mDCs compared to iDCs (<italic>p</italic> = 0.0047, one sample <italic>t</italic> test). Data show mean values and SEM from two independent experiments including cells from three donors. (B) Relative capture of HIV<sub>NL4-3</sub> produced in CD4<sup>+</sup> T cells that had been treated or not with the glycosphingolipid inhibitor NB-DNJ. mDCs were pulsed for 4 h at 37°C with equal amounts of HIV<sub>NL4-3</sub> generated in NB-DNJ-treated or mock-treated CD4<sup>+</sup> T cells and then assayed for p24<sup>Gag</sup> content. mDCs captured less HIV<sub>NL4-3</sub> generated in NB-DNJ-treated CD4<sup>+</sup> T cells (<italic>p</italic>&lt;0.0001, one sample <italic>t</italic> test). Data show mean values and SEM from two independent experiments including cells from six donors. (C) Competition of HIV<sub>NL4-3</sub> capture by mDCs in the presence of the GM3 head group. mDCs were either pre-incubated with 10 mM lactose, 10 mM GM3 head group, or mock treated, and were then pulsed for 4 h at 37°C with equal amounts of HIV<sub>NL4-3</sub> generated in CD4<sup>+</sup> T cells. Virus uptake was assayed by ELISA for p24<sup>Gag</sup>. HIV<sub>NL4-3</sub> capture was strongly reduced upon pre-treatment with the GM3 head group, but not lactose (<italic>p</italic>&lt;0.0001, one sample <italic>t</italic> test). Data show mean values and SEM from two independent experiments including cells from six donors. (D) Transmission of HIV<sub>NL4-3</sub> produced in NB-DNJ or mock-treated CD4<sup>+</sup> T cells to the TZM-bl target cell line, which expresses the luciferase gene under control of the HIV LTR. mDCs treated as described in (B) but pulsed with an equal MOI of 0.1 were extensively washed and co-cultured with TZM-bl cells in the presence of saquinavir (to prevent second round infection) for 48 h before measurement of luciferase activity. <italic>Trans</italic>-infection was less efficient for HIV<sub>NL4-3</sub> generated in NB-DNJ-treated compared to untreated CD4<sup>+</sup> T cells (<italic>p</italic> = 0.0404, paired <italic>t</italic> test). Data show mean values and SEM from one experiment including cells from three donors. (E) Competition of <italic>trans</italic>-infection of HIV<sub>NL4-3</sub> in the presence of the GM3 head group. mDCs treated as described in (C) but pulsed with an MOI of 0.1 were extensively washed and co-cultured with TZM-bl in the presence of saquinavir for 48 h before measurement of luciferase activity. <italic>Trans</italic>-infection was significantly reduced by the GM3 head group (<italic>p</italic> = 0.0197, paired <italic>t</italic> test). Data show mean values and SEM from two independent experiments including cells from six donors. (F) <italic>Trans</italic>-infection of activated primary CD4<sup>+</sup> T cells by co-culture with mDCs pulsed with HIV<sub>NL4-3</sub> produced in NB-DNJ or mock- treated CD4<sup>+</sup> T cells. mDCs were pulsed with HIV<sub>NL4-3</sub> at an equivalent MOI of 0.1 as described in (B). Unwashed pulsed mDCs were subsequently co-cultured with primary CD4<sup>+</sup> T cells for 48 h before measuring the intracellular p24<sup>Gag</sup> content in the lymphocyte gate (CD2<sup>+</sup> and CD11c<sup>−</sup> cells) by FACS (filled bars). Equivalent amounts of cell-free HIV<sub>NL4-3</sub> were used as a control (open bars). Experiments were done in the presence (left panel) or absence (right panel) of saquinavir to distinguish net <italic>trans</italic>-infection from re-infection events, respectively. mDCs transferred less HIV<sub>NL4-3</sub> generated in NB-DNJ-treated CD4<sup>+</sup> T cells (<italic>p</italic> = 0.0382, paired <italic>t</italic> test). Data show mean values and SEM from one representative experiment including cells from three donors. (G) <italic>Trans</italic>-infection of activated primary CD4<sup>+</sup> T cells by co-culture with mDCs pulsed with HIV<sub>NL4-3</sub> in the presence or absence of the GM3 head group. mDCs were pulsed with HIV<sub>NL4-3</sub> at an equivalent MOI of 0.1 as described in (C). Unwashed pulsed mDCs were subsequently co-cultured with primary CD4<sup>+</sup> T cells for 48 h before measuring the intracellular p24<sup>Gag</sup> content in the lymphocyte gate (CD2<sup>+</sup> and CD11c<sup>−</sup> cells) by FACS, as detailed in (F). mDCs transferred less HIV<sub>NL4-3</sub> upon treatment with the GM3 head group (<italic>p-</italic>values on the graph, paired <italic>t</italic> test). Data show mean values and SEM from two independent experiments including cells from six donors.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.g006" xlink:type="simple"/>
+        </fig>
+        <p>HIV-1 capture by mDCs has been shown to promote <italic>trans</italic>-infection of CD4<sup>+</sup> T cells and other target cells <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros2">[15]</xref>,<xref ref-type="bibr" rid="pbio.1001315-GranelliPiperno1">[21]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Sanders1">[25]</xref>–<xref ref-type="bibr" rid="pbio.1001315-Wang1">[27]</xref>, and we therefore analyzed whether sialyllactose recognition by mDCs is also important for viral transmission. Co-culturing mDCs that had been exposed to an equivalent amount of infectious HIV<sub>NL4-3</sub> derived from NB-DNJ-treated or untreated CD4<sup>+</sup> T cells with the TZM-bl reporter cell line revealed a strong reduction of <italic>trans</italic>-infection for the virus from inhibitor-treated cells compared to control virus (<italic>p</italic> = 0.0404, paired <italic>t</italic> test) (<xref ref-type="fig" rid="pbio-1001315-g006">Figure 6D</xref>). We also observed a strong reduction of <italic>trans</italic>-infection for mDCs pulsed with HIV<sub>NL4-3</sub> in the presence of the GM3 polar head group and subsequently incubated with TZM-bl cells (<xref ref-type="fig" rid="pbio-1001315-g006">Figure 6E</xref>) (<italic>p</italic> = 0.0197, paired <italic>t</italic> test). These results were further confirmed when we co-cultured HIV-1-pulsed mDCs with activated primary CD4<sup>+</sup> T cells. Co-cultures were performed in the presence or absence of the protease inhibitor saquinavir to distinguish net <italic>trans</italic>-infection from re-infection events (<xref ref-type="fig" rid="pbio-1001315-g006">Figure 6F and 6G</xref>; left and right panels, respectively). Infection of primary CD4<sup>+</sup> T cells was strongly enhanced when they were co-cultured with HIV-1 pulsed mDCs (<xref ref-type="fig" rid="pbio-1001315-g006">Figure 6F and 6G</xref>; filled bars). This effect was abrogated when mDCs were pulsed with virus produced from NB-DNJ-treated cells (<xref ref-type="fig" rid="pbio-1001315-g006">Figure 6F</xref>) or cultured with the GM3 polar head group (<xref ref-type="fig" rid="pbio-1001315-g006">Figure 6G</xref>). These data indicate that the sialyllactose moiety of gangliosides is the molecular determinant required for efficient HIV-1 capture by mDCs and for subsequent viral <italic>trans</italic>-infection.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>Sialic acid on gangliosides has previously been shown to function as host cell receptor for several viruses <xref ref-type="bibr" rid="pbio.1001315-Markwell1">[54]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Tsai1">[57]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Bergelson1">[58]</xref> and for human toxins <xref ref-type="bibr" rid="pbio.1001315-Merritt1">[52]</xref>. The current study clearly identifies a novel role for sialylated gangliosides in the membrane of viruses or LUVs as determinants for specific capture by mDCs. This recognition is reminiscent of the engulfment of apoptotic cells by phagocytes such as DCs, which is triggered by PS, a phospholipid normally found in the inner leaflet of the plasma membrane of living cells, but exposed on the surface of dying cells <xref ref-type="bibr" rid="pbio.1001315-Ravichandran1">[59]</xref>. However, the viral capture described here is dependent on an exposed sialyllactose moiety on gangliosides, which we identified as a novel molecular recognition pattern. The ganglioside GM3 was previously detected in the membrane of HIV-1 and several other viruses (SFV, VSV, MuLV) <xref ref-type="bibr" rid="pbio.1001315-Chan1">[41]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Kalvodova1">[42]</xref>, and this was extended to GM1, GM2, and GD1 for HIV-1 in the present study. Gangliosides are significant components of the plasma membrane lipidome <xref ref-type="bibr" rid="pbio.1001315-Kalvodova1">[42]</xref>, suggesting that all enveloped viruses, which bud from the plasma membrane of infected cells, may be captured into mDCs by the reported mechanism unless they exclude sialyllactose-containing gangliosides. Most studies of viral lipidomes have not included gangliosides so far, however, and it will be important to determine whether certain viruses have developed mechanisms to prevent sialyllactose presentation on their membrane lipids. This would be conceivable for influenza virus, which carries a viral neuraminidase needed for removal of the sialic acid receptor from the producer cell surface, thus allowing virus release. This neuraminidase may also remove sialic acid groups from viral gangliosides, thus preventing mDC uptake and potential antigen presentation. Consequently, neuraminidase inhibitor treatment should lead to increased DC capture and potentially enhance immunogenicity of influenza virus or VLPs. Moreover, viral ganglioside content may vary depending on the membrane composition of the producer cell. Viral replication in the nervous system, where gangliosides are particularly enriched <xref ref-type="bibr" rid="pbio.1001315-Svennerholm1">[60]</xref>, may thus lead to the insertion of an increased amount of distinct gangliosides into virions, affecting mDC recognition and local immunosurveillance.</p>
+      <p>The potential immunological role of mDC uptake implies efficient antigen capture and processing throughout the antigen presentation pathway. Interestingly, antigen-bearing cellular secreted vesicles known as exosomes also follow the same trafficking route as HIV-1 <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros3">[34]</xref> and contain gangliosides such as GM3 or GM1 <xref ref-type="bibr" rid="pbio.1001315-Fvrier1">[61]</xref>. Hence, sialyllactose-carrying gangliosides in the membrane of viruses and cellular vesicles are targeting molecules for mDC uptake, a pathway that may normally lead to antigen processing and presentation and has been subverted by HIV-1 for infectious virus storage and transmission. Furthermore, although downregulation of endocytosis is considered a hallmark of DC maturation (reviewed in <xref ref-type="bibr" rid="pbio.1001315-Mellman1">[3]</xref>), there is increasing evidence that under inflammatory conditions mDCs capture, process, and present antigens without exclusively relying on prior pathogen exposure <xref ref-type="bibr" rid="pbio.1001315-Platt1">[62]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Drutman1">[63]</xref>. This scenario might be particularly relevant in chronic infections, such as the one caused by HIV-1, where translocation of bacteria from the intestinal lumen <xref ref-type="bibr" rid="pbio.1001315-Brenchley1">[64]</xref> could stimulate DCs systemically and contribute to sustained antiviral immune responses. Remarkably, HIV-1 infected patients show enhanced GM3 content in the plasma membrane of T lymphocytes and high titers of anti-lymphocytic GM3 antibodies <xref ref-type="bibr" rid="pbio.1001315-Sorice1">[65]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Fantini1">[66]</xref>.</p>
+      <p>Paradoxically, HIV-1 capture into mDCs appears to also critically enhance viral dissemination in lymphoid tissue by efficient release of infectious virus to CD4<sup>+</sup> T cells in the DC-T-cell synapse, thus promoting pathogenesis and disease progression through <italic>trans</italic>-infection. Hence, although myeloid cells are largely refractory to productive HIV-1 infection due to the presence of cellular restriction factors such as the recently identified SAMHD1 <xref ref-type="bibr" rid="pbio.1001315-Laguette1">[19]</xref>,<xref ref-type="bibr" rid="pbio.1001315-Hrecka1">[20]</xref>, the sialyllactose driven <italic>trans</italic>-infection process characterized here in mDCs seems to exploit a pre-existing cellular-trafficking machinery that avoids the activation of these intrinsic immune pathways.</p>
+      <p>The efficient capture of ganglioside-carrying cellular vesicles or virions suggests a model where a specific receptor present on the cell surface of mDCs (and possibly other cells) recognizes the sialyllactose moiety on virions or vesicle membranes. Gangliosides have been reported to function as cell adhesion molecules <xref ref-type="bibr" rid="pbio.1001315-Hakomori1">[67]</xref>, and this may also involve such a receptor. Specific recognition of vesicular gangliosides would then trigger uptake of the respective particles into an intracellular compartment from where they are either recycled to the surface (as in HIV-1 transmission to CD4<sup>+</sup> T cells) or fed into the antigen presentation pathway. The results of the current study identify sialyllactose on membrane gangliosides as the relevant molecular recognition pattern, explaining the specificity of this process and providing the basis for its future exploitation for interventional or vaccine purposes.</p>
+    </sec>
+    <sec id="s4" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Ethics Statement</title>
+        <p>The institutional review board on biomedical research from Hospital Germans Trias i Pujol approved this study.</p>
+      </sec>
+      <sec id="s4b">
+        <title>Isolation of HIV-1 and Mass Spectrometry Analysis</title>
+        <p>MT-4 cells were infected with HIV<sub>NL4-3</sub> and co-cultured with uninfected cells. Virus was harvested before cytopathic effects were observed, and purified essentially as described in <xref ref-type="bibr" rid="pbio.1001315-Lorizate2">[43]</xref>. Briefly, medium was cleared by filtration, and particles were concentrated by ultracentrifugation through a cushion of 20% (w/w) sucrose. Concentrated HIV-1 was further purified by velocity gradient centrifugation on an OptiPrep gradient (Axis-Shield). The visible virus fraction was collected and concentrated by centrifugation. The final pellet was resuspended in 10 mM Hepes, 150 mM NaCl, pH 7.4 (hepes-sodium buffer), rapidly frozen in liquid nitrogen and stored at −80°C. For lipid composition analysis, samples were resuspended in methanol upon thawing and then assessed in a UPLC coupled to an orthogonal acceleration time-of-flight mass spectrometer with an electrospray ionization interface (LCT Premier; Waters) using the procedure previously described in <xref ref-type="bibr" rid="pbio.1001315-Canals1">[68]</xref>. Data were acquired using positive ionization mode over a mass range of m/z 50–1,500 in W-mode. A scan time of 0.15 s and interscan delay of 0.01 s were used at a nominal instrument resolution of 11,500 (FWHM). Leucine enkephalin was used as the lock spray calibrant.</p>
+      </sec>
+      <sec id="s4c">
+        <title>Primary Cell Cultures</title>
+        <p>Peripheral blood mononuclear cells (PBMCs) were obtained from HIV-1-seronegative donors and monocyte populations (&gt;97% CD14<sup>+</sup>) were isolated with CD14<sup>+</sup>-positive selection magnetic beads (Miltenyi Biotec). DCs were obtained culturing these cells in the presence of 1,000 IU/ml of granulocyte-macrophage colony-stimulating factor (GM-CSF) and interleukin-4 (IL-4; R&amp;D). mDCs were differentiated by culturing iDCs at day five for two more days in the presence of 100 ng/ml of lipopolysaccharide (LPS; Sigma). DCs were immunophenotyped at day 7 as previously described <xref ref-type="bibr" rid="pbio.1001315-IzquierdoUseros2">[15]</xref>. Adequate differentiation from monocytes to iDCs was based on the loss of CD14 and the acquisition of DC-SIGN, while DC maturation upregulated the expression of CD83, CD86, and HLA-DR. CD4<sup>+</sup> T lymphocytes required for <italic>trans</italic>-infection experiments were isolated from PBMCs with CD4-negative selection magnetic beads (Miltenyi Biotec) and stimulated for 72 h in the presence of 10 IU/ml of IL-2 (Roche) and 3 µg/ml of phytohaemagglutinin (PHA; SigmaAldrich). Primary cells were maintained in RPMI with 10% fetal bovine serum (FBS), 100 IU/ml of penicillin and 100 µg/ml of streptomycin (all from Invitrogen).</p>
+      </sec>
+      <sec id="s4d">
+        <title>Cell Lines, Plasmids, and Viral Stocks</title>
+        <p>HEK-293T and TZM-bl (obtained through the US National Institutes of Health [NIH] AIDS Research and Reference Reagent Program, from JC Kappes, X Wu, and Tranzyme Inc.) were maintained in D-MEM (Invitrogen). CHO cell line was maintained in α-MEM. MT4 cell line was maintained in RPMI. All media contained 10% FBS, 100 IU/ml of penicillin, and 100 µg/ml of streptomycin. VLP<sub>HIV-Gag-eGFP</sub> were obtained transfecting the molecular clone pGag-eGFP (obtained through the NIH AIDS Research and Reference Reagent Program, from MD Resh). VLP<sub>MLV-Gag-YFP</sub> were obtained transfecting the molecular clone pGag-MLV wt <xref ref-type="bibr" rid="pbio.1001315-Sherer1">[69]</xref>. HEK-293T cells were transfected with calcium phosphate (CalPhos, Clontech) in T75 flasks using 30 µg of plasmid DNA. CHO cells were electroporated (0.24 Kv and 950 µF) using 7×10<sup>6</sup> cells and 40 µg of plasmid DNA. Supernatants containing VLPs were filtered (Millex HV, 0.45 µm; Millipore) and frozen at −80°C until use. For studies with concentrated VLPs, medium was harvested, cleared by filtration, and particles were concentrated by ultracentrifugation (28,000 rpm 2 h at 4°C in SW32 rotor) through 20% (w/w) sucrose. The final pellet was resuspended in hepes-sodium buffer, rapidly frozen in liquid nitrogen, and stored at −80°C. The p24<sup>Gag</sup> content of the MT4-derived viral stock and VLP<sub>HIV-Gag-eGFP</sub>was determined by an ELISA (Perkin-Elmer) and by a quantitative Western blot. Detection was carried out with a LiCoR Odyssey system employing our own Rabbit anti-capsid polyclonal antibody and a purified Gag protein (kindly provided by J Mak) as a standard. To produce HIV<sub>NL4-3</sub> in PBMCs, cells were stimulated with 3 µg/ml PHA and 10 IU/ml of IL-2 for 72 h prior to infection with HIV<sub>NL4-3</sub>. To generate HIV<sub>NL4-3</sub> in CD4<sup>+</sup> T cells, whole blood from three HIV-1–seronegative donors were CD8<sup>+</sup> T cell depleted using Rossettesep anti-CD8<sup>+</sup> cocktail (Stem cell). Enriched CD4<sup>+</sup> T cells were pooled and stimulated under three different conditions: low-dose PHA (0.5 µg/ml), high-dose PHA (5 µg/ml), or plate-bound anti-CD3 monoclonal antibody OKT3 (e-Bioscience) <xref ref-type="bibr" rid="pbio.1001315-Prado1">[70]</xref>. After 72 h, cells were mixed together, infected with HIV<sub>NL4-3</sub> and resuspended to a final concentration of 10<sup>6</sup> cells/ml in RPM1 with 10% FBS supplemented with 100 IU/ml of IL-2. To produce glycosphingolipid deficient HIV<sub>NL4-3</sub>, enriched CD4<sup>+</sup> T cells were kept in the presence or absence of 500 µM of NB-DNJ (Calbiochem) and 10 IU/ml of IL-2 for 6 d before stimulation with 3 µg/ml of PHA and subsequent infection with HIV<sub>NL4-3</sub>. Virus growth was monitored by p24<sup>Gag</sup> ELISA (Perkin Elmer). Supernatants were harvested when the concentration of p24<sup>Gag</sup> was at least 10<sup>2</sup> ng/ml, filtered and stored at −80°C until use. Titers of all viruses were determined using the TZM-bl indicator cell line as described elsewhere <xref ref-type="bibr" rid="pbio.1001315-Li2">[71]</xref>.</p>
+      </sec>
+      <sec id="s4e">
+        <title>Production of Liposomes</title>
+        <p>LUVs were prepared following the extrusion method described in <xref ref-type="bibr" rid="pbio.1001315-Mayer1">[72]</xref>. Lipids were purchased from Avanti Polar Lipids and gangliosides were obtained from Santa Cruz Biotechnology. Ganglioside source was bovine brain with the exception of GM4, which was from human brain. The LUV<sub>HIV-tRed</sub> lipid composition was: POPC 25 mol%: 1,2-dipalmitoyl-sn-glycero-3-phosphocholine (DPPC) 16 mol%: brain sphingomyelin (SM) 14 mol%: cholesterol (Chol) 45 mol%, and when Cer, PS, or gangliosides were present (4 mol%) the SM amount was reduced to 10 mol%. The LUV<sub>POPC-tRed</sub> lipid composition was 96 mol% POPC containing or not 4 mol% of Cer, GM3, GM2, or GM1a. All the LUVs contained 2 mol% of 1,2-dihexadecanoyl-sn-glycero-3-phosphoethanolamine (DHPE)-tRed (Molecular Probes). Lipids were mixed in chloroform∶methanol (2∶1) and dried under nitrogen. Traces of organic solvent were removed by vacuum pumping for 1–2 h. Subsequently, the dried lipid film was dispersed in hepes-sodium buffer and subjected to ten freeze-thaw cycles prior to extruding ten times through two stacked polycarbonate membranes with a 100-nm pore size (Nucleopore, Inc.) using the Thermo-barrel extruder (Lipex extruder, Northern Lipids, Inc.). In order to perform mDC pulse with equal concentrations of LUV displaying similar fluorescence intensities, tRed containing LUVs concentration was quantified following the phosphate determination method of <xref ref-type="bibr" rid="pbio.1001315-Bottcher1">[73]</xref> and the fluorescence emission spectra was recorded setting the excitation at 580 nm in a SLM Aminco series 2 spectrofluorimeter (Spectronic Instruments).</p>
+      </sec>
+      <sec id="s4f">
+        <title>Liposome and VLP Capture Assays</title>
+        <p>All capture experiments were performed pulsing mDCs in parallel at a constant rate of 100 µM of distinct LUV<sub>tRed</sub> formulations and 75 ng of VLP<sub>HIV-Gag-eGFP</sub> Gag quantified by western blot (2,500 pg of VLP<sub>HIV-Gag-eGFP</sub> p24<sup>Gag</sup> estimated by ELISA) per 2×10<sup>5</sup> cells for 4 h at 37°C. After extensive washing, positive DCs were acquired by FACS with a FACSCalibur (BD) using CellQuest software to analyze collected data. Forward-angle and side-scatter light gating were used to exclude dead cells and debris from all the analysis.</p>
+        <p>Competition experiments were done incubating 2×10<sup>5</sup> mDCs with 75 ng of VLP<sub>HIV-Gag-eGFP</sub> Gag at a final concentration of 1×10<sup>6</sup> cells/ml for 4 h at 37°C in the presence of decreasing amounts of GM2-containing LUV<sub>HIV-tRed</sub> or 100 µM of Cer- and PS-containing LUV<sub>HIV-tRed</sub>. Alternatively, cells were incubated with 75 ng of VLP<sub>HIV-Gag-eGFP</sub> Gag and 100 µM of LUV<sub>HIV-tRed</sub> including or not GM1a, GD1b, GT1b, GQ1b, Cer, and PS. Cells were then analyzed by FACS as previously described.</p>
+      </sec>
+      <sec id="s4g">
+        <title>Confocal Microscopy Analysis</title>
+        <p>Co-localization experiments were done pulsing mDCs sequentially with LUV<sub>HIV-tRed</sub> and VLP<sub>HIV-Gag-eGFP</sub> for 3 h as described in the capture assays section. Capture patterns were analyzed similarly, incubating cells with distinct LUV<sub>HIV-tRed</sub> and VLP<sub>HIV-Gag-eGFP</sub> separately. After extensive washing, cells were fixed and cytospun into glass slides, mounted in DAPI-containing fluorescent media and sealed with nail polish to analyze them in a spinning disk confocal microscope. Z-sections were acquired at 0.1-µm steps using a 60× Nikon objective. Spinning disk confocal microscopy was performed on a Nikon TI Eclipse inverted optical microscope equipped with an Ultraview spinning disk setup (PerkinElmer) fitted with a two CCD camera (Hamamatsu). The co-localization signals in percentages of the compartment area and the thresholded Manders and Pearson coefficients were calculated for each image using Volocity 5.1 software (Improvision). To obtain 3-D reconstructions, confocal Z stacks were processed with Volocity 5.1 software, employing the isosurface module for the nucleus and the maximum fluorescent intensity projection for LUVs and VLPs.</p>
+      </sec>
+      <sec id="s4h">
+        <title>Neuraminidase Treatment of VLPs and LUVs</title>
+        <p>A total of 2×10<sup>5</sup> DCs were pulsed for 2 h at 37°C with 25 µM of GM3-containing LUV<sub>HIV-tRed</sub> and 75 ng of sucrose-pelleted VLP<sub>HIV-Gag-eGFP</sub> Gag treated or not during 12 h at 37°C with 100 or 50 mU of neuraminidase from <italic>Clostridium perfringens</italic> Factor X (Sigma Aldrich). The 12-h incubation was done in a glass-coated plate (LabHut) in hepes-sodium buffer, and the reaction was stopped adding RPMI media containing FBS. Cells were washed and assessed by FACS to obtain the percentage of tRed- and eGFP-positive cells.</p>
+      </sec>
+      <sec id="s4i">
+        <title>Lactose and GM3 Polar Head Group Treatment of mDCs</title>
+        <p>mDCs were preincubated with or without 5 or 10 mM of lactose (Sigma-Aldrich) and soluble GM3 carbohydrate head group (Carbosynth) for 30 min at RT. Cells were then pulsed with 50 µM of GM3-containing LUV<sub>HIV-tRed</sub> and 75 ng of sucrose-pelleted VLP<sub>HIV-Gag-eGFP</sub> Gag for 2 h at 37°C, at a final concentration of 5 or 10 mM for the compounds tested. Cells were analyzed by FACS as described previously. For experiments with HIV<sub>NL4-3</sub> generated in primary CD4<sup>+</sup> T cells, mDCs were equally pre-incubated with lactose and the GM3 head group.</p>
+      </sec>
+      <sec id="s4j">
+        <title>Minimize Energy Structures of Gangliosides</title>
+        <p>Minimal energy structures in vacuum were computed using Chem3D Ultra software employing the MM2-force field and the steepest-descent algorithm. Minimum root mean square gradient was set to 0.1; minimum and maximum move to 0.00001 and 1.0, respectively.</p>
+      </sec>
+      <sec id="s4k">
+        <title>Dendritic Cell capture and <italic>Trans</italic>-infection of HIV<sub>NL4-3</sub></title>
+        <p>mDCs and iDCs (5×10<sup>5</sup> cells) were exposed to 30 ng p24<sup>Gag</sup> of HIV<sub>NL4-3</sub> obtained from stimulated PBMCs for 4 h at 37°C. Cells were washed thoroughly to remove unbound particles, lysed, and assayed for cell-associated p24<sup>Gag</sup> content by an ELISA. mDCs (2.5×10<sup>5</sup> cells) were exposed to 50 ng p24<sup>Gag</sup> of HIV<sub>NL4-3</sub> obtained from CD4<sup>+</sup> T cells treated or not with NB-DNJ, incubated and assayed as previously described to detect the cell-associated p24<sup>Gag</sup>. Alternatively, mDCs (2.5×10<sup>5</sup> cells) pre-incubated or not with GM3 or lactose as previously indicated were exposed to 90 ng p24<sup>Gag</sup> of HIV<sub>NL4-3</sub> obtained from CD4<sup>+</sup> T cells and assayed equally. For <italic>trans</italic>-infection assays, mDCs were pulsed equally but with a constant multiplicity of infection (MOI) of 0.1, extensively washed and co-cultured in quadruplicate with the TZM-bl reporter cell line at a ratio of 10<sup>4</sup>∶10<sup>4</sup> cells in the presence of 0.5 µM of saquinavir to assay luciferase activity 48 h later (BrightGLo luciferase system; Promega) in a Fluoroskan Ascent FL luminometer. Background values consisting of non-HIV-1 pulsed co-cultures were subtracted for each sample (mean background of 8.668 RLUs×100). <italic>Trans</italic>-infection to primary cells was performed similarly, co-culturing pulsed mDCs with activated primary CD4<sup>+</sup> T cells for 48 h on a 96-well U-bottom plate without removal of unbound viral particles. Co-cultures were performed in the presence or in the absence of 0.5 µM of saquinavir. Infection of activated primary CD4<sup>+</sup> T cells was detected with FACS, measuring the intracellular p24<sup>Gag</sup> content within the CD2-positive CD11c negative population of CD4<sup>+</sup> T cells employing the monoclonal antibodies p24<sup>Gag</sup>-FITC (KC57-FITC, clone FH190-1-1, Beckman Coulter), CD2-PerCP Cy5.5 (clone RPA-2.10, BD Pharmingen), and CD11c-APC Cy7 (clone Bu15, BioLegend). Co-cultures containing non-pulsed cells were used as a background control for p24<sup>Gag</sup> labeling and used to set up the marker at 0.5%. To detect the possible cell free virus infection of activated CD4<sup>+</sup> T cells, an equal MOI was added directly to control wells lacking mDCs.</p>
+      </sec>
+      <sec id="s4l">
+        <title>Statistical Analysis</title>
+        <p>Statistics were performed using GraphPad Prism v.5 software.</p>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pbio.1001315.s001" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.s001" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>Ganglioside structures.</bold> 2-D model of asialo-, monosialo-, disialo-, trisialo-, and tetrasialo- gangliosides used in this study.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pbio.1001315.s002" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.s002" xlink:type="simple">
+        <label>Figure S2</label>
+        <caption>
+          <p><bold>Comparative fluorescence of tRed-containing LUVs.</bold> Maximum emission fluorescence at 608 nm of LUV<sub>HIV-tRed</sub> or LUV<sub>POPC-tRed</sub> containing the molecules indicated in the graphs. (A) Comparison of LUV<sub>HIV-tRed</sub> used in <xref ref-type="fig" rid="pbio-1001315-g001">Figures 1</xref> and <xref ref-type="fig" rid="pbio-1001315-g002">2</xref>; (B) comparison of LUV<sub>POPC-tRed</sub> used in <xref ref-type="fig" rid="pbio-1001315-g003">Figure 3</xref>; (C) comparison of LUV<sub>HIV-tRed</sub> used in <xref ref-type="fig" rid="pbio-1001315-g004">Figure 4</xref>; and (D) comparison of LUV<sub>HIV-tRed</sub> used in <xref ref-type="fig" rid="pbio-1001315-g005">Figure 5</xref>. Data show mean and SEM from independent measurements from at least two distinct LUV preparations.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pbio.1001315.s003" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.s003" xlink:type="simple">
+        <label>Figure S3</label>
+        <caption>
+          <p><bold>FACS capture-profiles of distinct LUVs in mDCs.</bold> Histograms showing a representative capture-profile from <xref ref-type="fig" rid="pbio-1001315-g001">Figure 1B</xref>, obtained pulsing mDCs derived from the same donor with 100 µM of distinct fluorescent LUV<sub>HIV-tRed</sub> containing or not Cer, GM3, GM2, or GM1a for 4 h at 37°C.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pbio.1001315.s004" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.s004" xlink:type="simple">
+        <label>Figure S4</label>
+        <caption>
+          <p><bold>Polarized accumulation of ganglioside-containing LUVs and VLPs in mDCs.</bold> Confocal microscopy analysis of mDCs previously pulsed with 100 µM of GM1a, GM2, and GM3 containing LUV<sub>HIV-tRed</sub> and then exposed to 75 ng of VLP<sub>HIV-Gag-eGFP</sub> Gag as in <xref ref-type="fig" rid="pbio-1001315-g002">Figure 2B</xref>. 3-D reconstructions of the <italic>x</italic>-<italic>y</italic> sections collected throughout the whole mDC <italic>z</italic> volume every 0.1 µm. Isosurface representation of DAPI stained nucleus is shown, computing the maximum intensity fluorescence within a 3-D volumetric <italic>x</italic>-<italic>y</italic>-<italic>z</italic> data field, where VLP<sub>HIV-Gag-eGFP</sub> and ganglioside-containing LUV<sub>HIV-tRed</sub> polarized towards the same area of mDCs.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pbio.1001315.s005" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.s005" xlink:type="simple">
+        <label>Figure S5</label>
+        <caption>
+          <p><bold>Binding of distinct LUVs to mDCs.</bold> (A) Comparative mDC binding of LUV<sub>HIV-tRed</sub> containing GM3, Cer, or PS treated or not with <italic>C. perfringens</italic> neuraminidase for 12 h prior to addition to cells. A total of 2×10<sup>5</sup> DCs were pulsed for 20 min at 37°C with 100 µM of LUV, washed with PBS, and assessed by FACS to obtain the percentage of tRed-positive cells. Data show mean values and SEM of cells from three donors. mDCs bound significantly higher amounts of untreated GM3 containing LUV<sub>HIV-tRed</sub> than neuraminidase treated liposomes (<italic>p</italic> = 0.024, paired <italic>t</italic> test). (B) Binding pattern analysis of mDCs pulsed with LUV<sub>HIV-tRed</sub> containing GM3, Cer, or PS treated or not with <italic>C. perfringens</italic> neuraminidase for 12 h prior addition to cells. Cells were incubated for 20 min at 37°C (top images) or 2 h at 16°C (bottom images) with100 µM of LUV, washed with PBS, and assessed by confocal microscopy. After 20 min at 37°C, liposomes remained randomly bound and no evident polarization or internalization was detected, as seen in mDCs incubated at 16°C to arrest endocytosis. Images show 3-D reconstruction of the <italic>x</italic>-<italic>y</italic> sections collected throughout the whole mDC <italic>z</italic> volume every 0.1 µm, computing the maximum intensity fluorescence of the liposome red signal and DAPI-stained nucleus.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pbio.1001315.s006" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.s006" xlink:type="simple">
+        <label>Figure S6</label>
+        <caption>
+          <p><bold>Minimal energy structures of the different gangliosides tested.</bold> Blue shadow indicates the proposed sialyllactose viral attachment moiety recognized by mDCs. For comparative purposes, GM4 and Asialo GM1 lacking sialyllactose domains are also depicted.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pbio.1001315.s007" mimetype="video/quicktime" position="float" xlink:href="info:doi/10.1371/journal.pbio.1001315.s007" xlink:type="simple">
+        <label>Video S1</label>
+        <caption>
+          <p><bold>3-D reconstruction of an mDC pulsed with GM3 containing LUV<sub>HIVtRed</sub> and then exposed to VLP<sub>HIV-Gag-eGFP</sub>.</bold> Confocal microscopy analysis of an mDC pulsed with GM3 containing LUV<sub>HIVtRed</sub> and then exposed to VLP<sub>HIV-Gag-eGFP</sub> as in <xref ref-type="fig" rid="pbio-1001315-g002">Figure 2b</xref>. The video shows a 3-D reconstruction of the <italic>x</italic>-<italic>y</italic> sections collected throughout the whole mDC <italic>z</italic> volume every 0.1 µm. Isosurface representation of DAPI stained nucleus is depicted, computing the maximum intensity fluorescence of the sac-like compartment surface within a 3-D volumetric <italic>x</italic>-<italic>y</italic>-<italic>z</italic> data field, where VLP<sub>HIV-Gag-eGFP</sub> and GM3-containing LUV<sub>HIV-tRed</sub> are accumulated within the same compartment.</p>
+          <p>(MOV)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank J. Janus for her excellent assistance and advice with confocal microscopy. We thank Eva Dalmau for her excellent technical assistance with mass spectrometry. We are grateful to J. Blanco for critical reading of the manuscript and helpful discussion.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pbio.1001315-Banchereau1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Banchereau</surname><given-names>J</given-names></name><name name-style="western"><surname>Steinman</surname><given-names>R. M</given-names></name></person-group>             <year>1998</year>             <article-title>Dendritic cells and the control of immunity.</article-title>             <source>Nature</source>             <volume>392</volume>             <fpage>245</fpage>             <lpage>252</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Steinman1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Steinman</surname><given-names>R. M</given-names></name><name name-style="western"><surname>Banchereau</surname><given-names>J</given-names></name></person-group>             <year>2007</year>             <article-title>Taking dendritic cells into medicine.</article-title>             <source>Nature</source>             <volume>449</volume>             <fpage>419</fpage>             <lpage>426</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Mellman1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Mellman</surname><given-names>I</given-names></name><name name-style="western"><surname>Steinman</surname><given-names>R. M</given-names></name></person-group>             <year>2001</year>             <article-title>Dendritic cells specialized and regulated antigen processing machines.</article-title>             <source>Cell</source>             <volume>106</volume>             <fpage>255</fpage>             <lpage>258</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Villadangos1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Villadangos</surname><given-names>J. A</given-names></name><name name-style="western"><surname>Schnorrer</surname><given-names>P</given-names></name></person-group>             <year>2007</year>             <article-title>Intrinsic and cooperative antigen-presenting functions of dendritic-cell subsets in vivo.</article-title>             <source>Nat Rev Immunol</source>             <volume>7</volume>             <fpage>543</fpage>             <lpage>555</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Probst1">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Probst</surname><given-names>H. C</given-names></name><name name-style="western"><surname>van den Broek</surname><given-names>M</given-names></name></person-group>             <year>2005</year>             <article-title>Priming of CTLs by lymphocytic choriomeningitis virus depends on dendritic cells.</article-title>             <source>J Immunol</source>             <volume>174</volume>             <fpage>3920</fpage>             <lpage>3924</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Browne1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Browne</surname><given-names>E. P</given-names></name><name name-style="western"><surname>Littman</surname><given-names>D. R</given-names></name></person-group>             <year>2009</year>             <article-title>Myd88 is required for an antibody response to retroviral infection.</article-title>             <source>PLoS Pathog</source>             <volume>5</volume>             <fpage>e1000298</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.1000298" xlink:type="simple">10.1371/journal.ppat.1000298</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Lambotin1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lambotin</surname><given-names>M</given-names></name><name name-style="western"><surname>Raghuraman</surname><given-names>S</given-names></name><name name-style="western"><surname>Stoll-Keller</surname><given-names>F</given-names></name><name name-style="western"><surname>Baumert</surname><given-names>T. F</given-names></name><name name-style="western"><surname>Barth</surname><given-names>H</given-names></name></person-group>             <year>2010</year>             <article-title>A look behind closed doors: interaction of persistent viruses with dendritic cells.</article-title>             <source>Nat Rev Microbiol</source>             <volume>8</volume>             <fpage>350</fpage>             <lpage>360</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Cunningham1">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cunningham</surname><given-names>A. L</given-names></name><name name-style="western"><surname>Donaghy</surname><given-names>H</given-names></name><name name-style="western"><surname>Harman</surname><given-names>A. N</given-names></name><name name-style="western"><surname>Kim</surname><given-names>M</given-names></name><name name-style="western"><surname>Turville</surname><given-names>S. G</given-names></name></person-group>             <year>2010</year>             <article-title>Manipulation of dendritic cell function by viruses.</article-title>             <source>Curr Opin Microbiol</source>             <volume>13</volume>             <fpage>524</fpage>             <lpage>529</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Wu1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wu</surname><given-names>L</given-names></name><name name-style="western"><surname>KewalRamani</surname><given-names>V. N</given-names></name></person-group>             <year>2006</year>             <article-title>Dendritic-cell interactions with HIV: infection and viral dissemination.</article-title>             <source>Nat Rev Immunol</source>             <volume>6</volume>             <fpage>859</fpage>             <lpage>868</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-IzquierdoUseros1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Izquierdo-Useros</surname><given-names>N</given-names></name><name name-style="western"><surname>Naranjo-Gómez</surname><given-names>M</given-names></name><name name-style="western"><surname>Erkizia</surname><given-names>I</given-names></name><name name-style="western"><surname>Puertas</surname><given-names>M. C</given-names></name><name name-style="western"><surname>Borràs</surname><given-names>F. E</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>HIV and mature dendritic cells: Trojan exosomes riding the Trojan horse?</article-title>             <source>PLoS Pathog</source>             <volume>6</volume>             <fpage>e1000740</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.ppat.1000740" xlink:type="simple">10.1371/journal.ppat.1000740</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Geijtenbeek1">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Geijtenbeek</surname><given-names>T. B</given-names></name><name name-style="western"><surname>Kwon</surname><given-names>D. S</given-names></name><name name-style="western"><surname>Torensma</surname><given-names>R</given-names></name><name name-style="western"><surname>van Vliet</surname><given-names>S. J</given-names></name><name name-style="western"><surname>van Duijnhoven</surname><given-names>G. C</given-names></name><etal/></person-group>             <year>2000</year>             <article-title>DC-SIGN, a dendritic cell-specific HIV-1-binding protein that enhances trans-infection of T cells.</article-title>             <source>Cell</source>             <volume>100</volume>             <fpage>587</fpage>             <lpage>597</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Kwon1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kwon</surname><given-names>D. S</given-names></name><name name-style="western"><surname>Gregorio</surname><given-names>G</given-names></name><name name-style="western"><surname>Bitton</surname><given-names>N</given-names></name><name name-style="western"><surname>Hendrickson</surname><given-names>W. A</given-names></name><name name-style="western"><surname>Littman</surname><given-names>D. R</given-names></name></person-group>             <year>2002</year>             <article-title>DC-SIGN-mediated internalization of HIV is required for trans-enhancement of T cell infection.</article-title>             <source>Immunity</source>             <volume>16</volume>             <fpage>135</fpage>             <lpage>144</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Moris1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Moris</surname><given-names>A</given-names></name><name name-style="western"><surname>Nobile</surname><given-names>C</given-names></name><name name-style="western"><surname>Buseyne</surname><given-names>F</given-names></name><name name-style="western"><surname>Porrot</surname><given-names>F</given-names></name><name name-style="western"><surname>Abastado</surname><given-names>J. P</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>DC-SIGN promotes exogenous MHC-I-restricted HIV-1 antigen presentation.</article-title>             <source>Blood</source>             <volume>103</volume>             <fpage>2648</fpage>             <lpage>2654</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Turville1">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Turville</surname><given-names>S. G</given-names></name><name name-style="western"><surname>Santos</surname><given-names>J. J</given-names></name><name name-style="western"><surname>Frank</surname><given-names>I</given-names></name><name name-style="western"><surname>Cameron</surname><given-names>P. U</given-names></name><name name-style="western"><surname>Wilkinson</surname><given-names>J</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>Immunodeficiency virus uptake, turnover, and 2-phase transfer in human dendritic cells.</article-title>             <source>Blood</source>             <volume>103</volume>             <fpage>2170</fpage>             <lpage>2179</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-IzquierdoUseros2">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Izquierdo-Useros</surname><given-names>N</given-names></name><name name-style="western"><surname>Blanco</surname><given-names>J</given-names></name><name name-style="western"><surname>Erkizia</surname><given-names>I</given-names></name><name name-style="western"><surname>Fernández-Figueras</surname><given-names>M. T</given-names></name><name name-style="western"><surname>Borràs</surname><given-names>F. E</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Maturation of blood-derived dendritic cells enhances human immunodeficiency virus type 1 capture and transmission.</article-title>             <source>J Virol</source>             <volume>81</volume>             <fpage>7559</fpage>             <lpage>7570</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Nobile1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Nobile</surname><given-names>C</given-names></name><name name-style="western"><surname>Petit</surname><given-names>C</given-names></name><name name-style="western"><surname>Moris</surname><given-names>A</given-names></name><name name-style="western"><surname>Skrabal</surname><given-names>K</given-names></name><name name-style="western"><surname>Abastado</surname><given-names>J. P</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>Covert human immunodeficiency virus replication in dendritic cells and in DC-SIGN-expressing cells promotes long-term transmission to lymphocytes.</article-title>             <source>J Virol</source>             <volume>79</volume>             <fpage>5386</fpage>             <lpage>5399</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Burleigh1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Burleigh</surname><given-names>L</given-names></name><name name-style="western"><surname>Lozach</surname><given-names>P. Y</given-names></name><name name-style="western"><surname>Schiffer</surname><given-names>C</given-names></name><name name-style="western"><surname>Staropoli</surname><given-names>I</given-names></name><name name-style="western"><surname>Pezo</surname><given-names>V</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Infection of dendritic cells (DCs), not DC-SIGN-mediated internalization of human immunodeficiency virus, is required for long-term transfer of virus to T cells.</article-title>             <source>J Virol</source>             <volume>80</volume>             <fpage>2949</fpage>             <lpage>2957</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Piguet1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Piguet</surname><given-names>V</given-names></name><name name-style="western"><surname>Steinman</surname><given-names>R. M</given-names></name></person-group>             <year>2007</year>             <article-title>The interaction of HIV with dendritic cells: outcomes and pathways.</article-title>             <source>Trends Immunol</source>             <volume>28</volume>             <fpage>503</fpage>             <lpage>510</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Laguette1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Laguette</surname><given-names>N</given-names></name><name name-style="western"><surname>Sobhian</surname><given-names>B</given-names></name><name name-style="western"><surname>Casartelli</surname><given-names>N</given-names></name><name name-style="western"><surname>Ringeard</surname><given-names>M</given-names></name><name name-style="western"><surname>Chable-Bessia</surname><given-names>C</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>SAMHD1 is the dendritic- and myeloid-cell-specific HIV-1 restriction factor counteracted by Vpx.</article-title>             <source>Nature</source>             <volume>474</volume>             <fpage>654</fpage>             <lpage>657</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Hrecka1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hrecka</surname><given-names>K</given-names></name><name name-style="western"><surname>Hao</surname><given-names>C</given-names></name><name name-style="western"><surname>Gierszewska</surname><given-names>M</given-names></name><name name-style="western"><surname>Swanson</surname><given-names>S. K</given-names></name><name name-style="western"><surname>Kesik-Brodacka</surname><given-names>M</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Vpx relieves inhibition of HIV-1 infection of macrophages mediated by the SAMHD1 protein.</article-title>             <source>Nature</source>             <volume>474</volume>             <fpage>658</fpage>             <lpage>661</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-GranelliPiperno1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Granelli-Piperno</surname><given-names>A</given-names></name><name name-style="western"><surname>Delgado</surname><given-names>E</given-names></name><name name-style="western"><surname>Finkel</surname><given-names>V</given-names></name><name name-style="western"><surname>Paxton</surname><given-names>W</given-names></name><name name-style="western"><surname>Steinman</surname><given-names>R. M</given-names></name></person-group>             <year>1998</year>             <article-title>Immature dendritic cells selectively replicate macrophagetropic (M-tropic) human immunodeficiency virus type 1, while mature cells efficiently transmit both M- and T-tropic virus to T cells.</article-title>             <source>J Virol</source>             <volume>72</volume>             <fpage>2733</fpage>             <lpage>2737</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Bakri1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bakri</surname><given-names>Y</given-names></name><name name-style="western"><surname>Schiffer</surname><given-names>C</given-names></name><name name-style="western"><surname>Zennou</surname><given-names>V</given-names></name><name name-style="western"><surname>Charneau</surname><given-names>P</given-names></name><name name-style="western"><surname>Kahn</surname><given-names>E</given-names></name><etal/></person-group>             <year>2001</year>             <article-title>The maturation of dendritic cells results in postintegration inhibition of HIV-1 replication.</article-title>             <source>J Immunol</source>             <volume>166</volume>             <fpage>3780</fpage>             <lpage>3788</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Pion1">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pion</surname><given-names>M</given-names></name><name name-style="western"><surname>Granelli-Piperno</surname><given-names>A</given-names></name><name name-style="western"><surname>Mangeat</surname><given-names>B</given-names></name><name name-style="western"><surname>Stalder</surname><given-names>R</given-names></name><name name-style="western"><surname>Correa</surname><given-names>R</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>APOBEC3G/3F mediates intrinsic resistance of monocyte-derived dendritic cells to HIV-1 infection.</article-title>             <source>J Exp Med</source>             <volume>203</volume>             <fpage>2887</fpage>             <lpage>2893</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Cavrois1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cavrois</surname><given-names>M</given-names></name><name name-style="western"><surname>Neidleman</surname><given-names>J</given-names></name><name name-style="western"><surname>Kreisberg</surname><given-names>J. F</given-names></name><name name-style="western"><surname>Fenard</surname><given-names>D</given-names></name><name name-style="western"><surname>Callebaut</surname><given-names>C</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Human immunodeficiency virus fusion to dendritic cells declines as cells mature.</article-title>             <source>J Virol</source>             <volume>80</volume>             <fpage>1992</fpage>             <lpage>1999</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Sanders1">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sanders</surname><given-names>R. W</given-names></name><name name-style="western"><surname>de Jong</surname><given-names>E. C</given-names></name><name name-style="western"><surname>Baldwin</surname><given-names>C. E</given-names></name><name name-style="western"><surname>Schuitemaker</surname><given-names>J. H. N</given-names></name><name name-style="western"><surname>Kapsenberg</surname><given-names>M. L</given-names></name><etal/></person-group>             <year>2002</year>             <article-title>Differential transmission of human immunodeficiency virus type 1 by distinct subsets of effector dendritic cells.</article-title>             <source>J Virol</source>             <volume>76</volume>             <fpage>7812</fpage>             <lpage>7821</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-McDonald1">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>McDonald</surname><given-names>D</given-names></name><name name-style="western"><surname>Wu</surname><given-names>L</given-names></name><name name-style="western"><surname>Bohks</surname><given-names>S. M</given-names></name><name name-style="western"><surname>KewalRamani</surname><given-names>V. N</given-names></name><name name-style="western"><surname>Unutmaz</surname><given-names>D</given-names></name><etal/></person-group>             <year>2003</year>             <article-title>Recruitment of HIV and its receptors to dendritic cell-T cell junctions.</article-title>             <source>Science</source>             <volume>300</volume>             <fpage>1295</fpage>             <lpage>1297</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Wang1">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wang</surname><given-names>J. H</given-names></name><name name-style="western"><surname>Janas</surname><given-names>A. M</given-names></name><name name-style="western"><surname>Olson</surname><given-names>W. J</given-names></name><name name-style="western"><surname>Wu</surname><given-names>L</given-names></name></person-group>             <year>2007</year>             <article-title>Functionally distinct transmission of human immunodeficiency virus type 1 mediated by immature and mature dendritic cells.</article-title>             <source>J Virol</source>             <volume>81</volume>             <fpage>8933</fpage>             <lpage>8943</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Garcia1">
+        <label>28</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Garcia</surname><given-names>E</given-names></name><name name-style="western"><surname>Pion</surname><given-names>M</given-names></name><name name-style="western"><surname>Pelchen-Matthews</surname><given-names>A</given-names></name><name name-style="western"><surname>Collinson</surname><given-names>L</given-names></name><name name-style="western"><surname>Arrighi</surname><given-names>J. F</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>HIV-1 trafficking to the dendritic cell-T-cell infectious synapse uses a pathway of tetraspanin sorting to the immunological synapse.</article-title>             <source>Traffic</source>             <volume>6</volume>             <fpage>488</fpage>             <lpage>501</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Sallusto1">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sallusto</surname><given-names>F</given-names></name><name name-style="western"><surname>Cella</surname><given-names>M</given-names></name><name name-style="western"><surname>Danieli</surname><given-names>C</given-names></name><name name-style="western"><surname>Lanzavecchia</surname><given-names>A</given-names></name></person-group>             <year>1995</year>             <article-title>Dendritic cells use macropinocytosis and the mannose receptor to concentrate macromolecules in the major histocompatibility complex class II compartment: downregulation by cytokines and bacterial products.</article-title>             <source>J Exp Med</source>             <volume>182</volume>             <fpage>389</fpage>             <lpage>400</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Frank1">
+        <label>30</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Frank</surname><given-names>I</given-names></name><name name-style="western"><surname>Piatak</surname><given-names>M</given-names></name><name name-style="western"><surname>Stoessel</surname><given-names>H</given-names></name><name name-style="western"><surname>Romani</surname><given-names>N</given-names></name><name name-style="western"><surname>Bonnyay</surname><given-names>D</given-names></name><etal/></person-group>             <year>2002</year>             <article-title>Infectious and whole inactivated simian immunodeficiency viruses interact similarly with primate dendritic cells (DCs): differential intracellular fate of virions in mature and immature DCs.</article-title>             <source>J Virol</source>             <volume>76</volume>             <fpage>2936</fpage>             <lpage>2951</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Douek1">
+        <label>31</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Douek</surname><given-names>D. C</given-names></name><name name-style="western"><surname>Brenchley</surname><given-names>J. M</given-names></name><name name-style="western"><surname>Betts</surname><given-names>M. R</given-names></name><name name-style="western"><surname>Ambrozak</surname><given-names>D. R</given-names></name><name name-style="western"><surname>Hill</surname><given-names>B. J</given-names></name><etal/></person-group>             <year>2002</year>             <article-title>HIV preferentially infects HIV-specific CD4+ T cells.</article-title>             <source>Nature</source>             <volume>417</volume>             <fpage>95</fpage>             <lpage>98</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Cameron1">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cameron</surname><given-names>P. U</given-names></name><name name-style="western"><surname>Freudenthal</surname><given-names>P. S</given-names></name><name name-style="western"><surname>Barker</surname><given-names>J. M</given-names></name><name name-style="western"><surname>Gezelter</surname><given-names>S</given-names></name><name name-style="western"><surname>Inaba</surname><given-names>K</given-names></name><etal/></person-group>             <year>1992</year>             <article-title>Dendritic cells exposed to human immunodeficiency virus type-1 transmit a vigorous cytopathic infection to CD4+ T cells.</article-title>             <source>Science</source>             <volume>257</volume>             <fpage>383</fpage>             <lpage>387</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Cameron2">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cameron</surname><given-names>P. U</given-names></name><name name-style="western"><surname>Pope</surname><given-names>M</given-names></name><name name-style="western"><surname>Gezelter</surname><given-names>S</given-names></name><name name-style="western"><surname>Steinman</surname><given-names>R. M</given-names></name></person-group>             <year>1994</year>             <article-title>Infection and apoptotic cell death of CD4+ T cells during an immune response to HIV-1-pulsed dendritic cells.</article-title>             <source>AIDS Res Hum Retroviruses</source>             <volume>10</volume>             <fpage>61</fpage>             <lpage>71</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-IzquierdoUseros3">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Izquierdo-Useros</surname><given-names>N</given-names></name><name name-style="western"><surname>Naranjo-Gómez</surname><given-names>M</given-names></name><name name-style="western"><surname>Archer</surname><given-names>J</given-names></name><name name-style="western"><surname>Hatch</surname><given-names>S. C</given-names></name><name name-style="western"><surname>Erkizia</surname><given-names>I</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Capture and transfer of HIV-1 particles by mature dendritic cells converges with the exosome-dissemination pathway.</article-title>             <source>Blood</source>             <volume>113</volume>             <fpage>2732</fpage>             <lpage>2741</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Hatch1">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hatch</surname><given-names>S. C</given-names></name><name name-style="western"><surname>Archer</surname><given-names>J</given-names></name><name name-style="western"><surname>Gummuluru</surname><given-names>S</given-names></name></person-group>             <year>2009</year>             <article-title>Glycosphingolipid composition of human immunodeficiency virus type 1 (HIV-1) particles is a crucial determinant for dendritic cell-mediated HIV-1 trans-infection.</article-title>             <source>J Virol</source>             <volume>83</volume>             <fpage>3496</fpage>             <lpage>3506</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Brgger1">
+        <label>36</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Brügger</surname><given-names>B</given-names></name><name name-style="western"><surname>Glass</surname><given-names>B</given-names></name><name name-style="western"><surname>Haberkant</surname><given-names>P</given-names></name><name name-style="western"><surname>Leibrecht</surname><given-names>I</given-names></name><name name-style="western"><surname>Wieland</surname><given-names>F. T</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>The HIV lipidome: a raft with an unusual composition.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>103</volume>             <fpage>2641</fpage>             <lpage>2646</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Simons1">
+        <label>37</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Simons</surname><given-names>K</given-names></name><name name-style="western"><surname>Ikonen</surname><given-names>E</given-names></name></person-group>             <year>2000</year>             <article-title>How cells handle cholesterol.</article-title>             <source>Science</source>             <volume>5497</volume>             <fpage>1721</fpage>             <lpage>1726</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Brown1">
+        <label>38</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Brown</surname><given-names>D. A</given-names></name><name name-style="western"><surname>London</surname><given-names>E</given-names></name></person-group>             <year>2000</year>             <article-title>Structure and function of sphingolipid- and cholesterol-rich membrane rafts.</article-title>             <source>J Biol Chem</source>             <volume>275</volume>             <fpage>17221</fpage>             <lpage>17224</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Rajendran1">
+        <label>39</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Rajendran</surname><given-names>L</given-names></name><name name-style="western"><surname>Simons</surname><given-names>K</given-names></name></person-group>             <year>2005</year>             <article-title>Lipid rafts and membrane dynamics.</article-title>             <source>J Cell Sci</source>             <volume>118</volume>             <fpage>1099</fpage>             <lpage>1102</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Lorizate1">
+        <label>40</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lorizate</surname><given-names>M</given-names></name><name name-style="western"><surname>Kräusslich</surname><given-names>H. G</given-names></name></person-group>             <year>2011</year>             <article-title>Role of lipids in virus replication.</article-title>             <source>Cold Spring Harb Perspect Biol</source>             <volume>3</volume>             <fpage>a004820</fpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Chan1">
+        <label>41</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chan</surname><given-names>R</given-names></name><name name-style="western"><surname>Uchil</surname><given-names>P. D</given-names></name><name name-style="western"><surname>Jin</surname><given-names>J</given-names></name><name name-style="western"><surname>Shui</surname><given-names>G</given-names></name><name name-style="western"><surname>Ott</surname><given-names>D. E</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Retroviruses human immunodeficiency virus and murine leukemia virus are enriched in phosphoinositides.</article-title>             <source>J Virol</source>             <volume>82</volume>             <fpage>11228</fpage>             <lpage>11238</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Kalvodova1">
+        <label>42</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kalvodova</surname><given-names>L</given-names></name><name name-style="western"><surname>Sampaio</surname><given-names>J. L</given-names></name><name name-style="western"><surname>Cordo</surname><given-names>S</given-names></name><name name-style="western"><surname>Ejsing</surname><given-names>C. S</given-names></name><name name-style="western"><surname>Shevchenko</surname><given-names>A</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>The lipidomes of vesicular stomatitis virus, semliki forest virus, and the host plasma membrane analyzed by quantitative shotgun mass spectrometry.</article-title>             <source>J Virol</source>             <volume>83</volume>             <fpage>7996</fpage>             <lpage>8003</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Lorizate2">
+        <label>43</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lorizate</surname><given-names>M</given-names></name><name name-style="western"><surname>Brügger</surname><given-names>B</given-names></name><name name-style="western"><surname>Akiyama</surname><given-names>H</given-names></name><name name-style="western"><surname>Glass</surname><given-names>B</given-names></name><name name-style="western"><surname>Müller</surname><given-names>B</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Probing HIV-1 membrane liquid order by Laurdan staining reveals producer cell-dependent differences.</article-title>             <source>J Biol Chem</source>             <volume>284</volume>             <fpage>22238</fpage>             <lpage>22247</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Haberkant1">
+        <label>44</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Haberkant</surname><given-names>P</given-names></name><name name-style="western"><surname>Schmitt</surname><given-names>O</given-names></name><name name-style="western"><surname>Contreras</surname><given-names>F. X</given-names></name><name name-style="western"><surname>Thiele</surname><given-names>C</given-names></name><name name-style="western"><surname>Hanada</surname><given-names>K</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Protein-sphingolipid interactions within cellular membranes.</article-title>             <source>J Lipid Res</source>             <volume>49</volume>             <fpage>251</fpage>             <lpage>262</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-IzquierdoUseros4">
+        <label>45</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Izquierdo-Useros</surname><given-names>N</given-names></name><name name-style="western"><surname>Esteban</surname><given-names>O</given-names></name><name name-style="western"><surname>Rodriguez-Plata</surname><given-names>M. T</given-names></name><name name-style="western"><surname>Erkizia</surname><given-names>I</given-names></name><name name-style="western"><surname>Prado</surname><given-names>J. G</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Dynamic imaging of cell-free and cell-associated viral capture in mature dendritic cells.</article-title>             <source>Traffic</source>             <volume>12</volume>             <fpage>1702</fpage>             <lpage>1713</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Simons2">
+        <label>46</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Simons</surname><given-names>K</given-names></name><name name-style="western"><surname>Ikonen</surname><given-names>E</given-names></name></person-group>             <year>1997</year>             <article-title>Functional rafts in cell membranes.</article-title>             <source>Nature</source>             <volume>387</volume>             <fpage>569</fpage>             <lpage>572</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Simons3">
+        <label>47</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Simons</surname><given-names>K</given-names></name><name name-style="western"><surname>Sampaio</surname><given-names>J. L</given-names></name></person-group>             <year>2011</year>             <article-title>Membrane organization and lipid rafts.</article-title>             <source>Cold Spring Harb Perspect Biol</source>             <volume>3</volume>             <fpage>a004697</fpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Lingwood1">
+        <label>48</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lingwood</surname><given-names>D</given-names></name><name name-style="western"><surname>Binnington</surname><given-names>B</given-names></name><name name-style="western"><surname>Róg</surname><given-names>T</given-names></name><name name-style="western"><surname>Vattulainen</surname><given-names>I</given-names></name><name name-style="western"><surname>Grzybek</surname><given-names>M</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Cholesterol modulates glycolipid conformation and receptor activity.</article-title>             <source>Nat Chem Biol</source>             <volume>7</volume>             <fpage>260</fpage>             <lpage>262</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Weis1">
+        <label>49</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Weis</surname><given-names>W</given-names></name><name name-style="western"><surname>Brown</surname><given-names>J. H</given-names></name><name name-style="western"><surname>Cusack</surname><given-names>S</given-names></name><name name-style="western"><surname>Paulson</surname><given-names>J. C</given-names></name><name name-style="western"><surname>Skehel</surname><given-names>J. J</given-names></name><etal/></person-group>             <year>1988</year>             <article-title>Structure of the influenza virus haemagglutinin complexed with its receptor, sialic acid.</article-title>             <source>Nature</source>             <volume>333</volume>             <fpage>426</fpage>             <lpage>431</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Neu1">
+        <label>50</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Neu</surname><given-names>U</given-names></name><name name-style="western"><surname>Woellner</surname><given-names>K</given-names></name><name name-style="western"><surname>Gauglitz</surname><given-names>G</given-names></name><name name-style="western"><surname>Stehle</surname><given-names>T</given-names></name></person-group>             <year>2008</year>             <article-title>Structural basis of GM1 ganglioside recognition by simian virus 40.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>105</volume>             <fpage>5219</fpage>             <lpage>5224</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-CampaneroRhodes1">
+        <label>51</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Campanero-Rhodes</surname><given-names>M. A</given-names></name><name name-style="western"><surname>Smith</surname><given-names>A</given-names></name><name name-style="western"><surname>Chai</surname><given-names>W</given-names></name><name name-style="western"><surname>Sonnino</surname><given-names>S</given-names></name><name name-style="western"><surname>Mauri</surname><given-names>L</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>N-glycolyl GM1 ganglioside as a receptor for simian virus 40.</article-title>             <source>J Virol</source>             <volume>81</volume>             <fpage>12846</fpage>             <lpage>12858</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Merritt1">
+        <label>52</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Merritt</surname><given-names>E. A</given-names></name><name name-style="western"><surname>Sarfaty</surname><given-names>S</given-names></name><name name-style="western"><surname>Akker</surname><given-names>F. V. D</given-names></name><name name-style="western"><surname>L'Hoir</surname><given-names>C</given-names></name><name name-style="western"><surname>Martial</surname><given-names>J. A</given-names></name><etal/></person-group>             <year>1994</year>             <article-title>Crystal structure of cholera toxin B-pentamer bound to receptor GM1 pentasaccharide.</article-title>             <source>Protein Science</source>             <volume>3</volume>             <fpage>166</fpage>             <lpage>175</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Li1">
+        <label>53</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Li</surname><given-names>X. M</given-names></name><name name-style="western"><surname>Smaby</surname><given-names>J. M</given-names></name><name name-style="western"><surname>Momsen</surname><given-names>M. M</given-names></name><name name-style="western"><surname>Brockman</surname><given-names>H. L</given-names></name><name name-style="western"><surname>Brown</surname><given-names>R. E</given-names></name></person-group>             <year>2000</year>             <article-title>Sphingomyelin interfacial behavior: the impact of changing acyl chain composition.</article-title>             <source>Biophys J</source>             <volume>78</volume>             <fpage>1921</fpage>             <lpage>1931</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Markwell1">
+        <label>54</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Markwell</surname><given-names>M. A</given-names></name><name name-style="western"><surname>Svennerholm</surname><given-names>L</given-names></name><name name-style="western"><surname>Paulson</surname><given-names>J. C</given-names></name></person-group>             <year>1981</year>             <article-title>Specific gangliosides function as host cell receptors for Sendai virus.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>78</volume>             <fpage>5406</fpage>             <lpage>5410</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Lamb1">
+        <label>55</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lamb</surname><given-names>R. A</given-names></name><name name-style="western"><surname>Paterson</surname><given-names>R. G</given-names></name><name name-style="western"><surname>Jardetzky</surname><given-names>T. S</given-names></name></person-group>             <year>2006</year>             <article-title>Paramyxovirus membrane fusion: lessons from the F and HN atomic structures.</article-title>             <source>Virology</source>             <volume>344</volume>             <fpage>30</fpage>             <lpage>37</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Villar1">
+        <label>56</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Villar</surname><given-names>E</given-names></name><name name-style="western"><surname>Barroso</surname><given-names>I. M</given-names></name></person-group>             <year>2006</year>             <article-title>Role of sialic acid-containing molecules in paramyxovirus entry into the host cell: a minireview.</article-title>             <source>Glycoconj J</source>             <volume>23</volume>             <fpage>5</fpage>             <lpage>17</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Tsai1">
+        <label>57</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Tsai</surname><given-names>B</given-names></name><name name-style="western"><surname>Gilbert</surname><given-names>J. M</given-names></name><name name-style="western"><surname>Stehle</surname><given-names>T</given-names></name><name name-style="western"><surname>Lencer</surname><given-names>W</given-names></name><name name-style="western"><surname>Benjamin</surname><given-names>T. L</given-names></name><etal/></person-group>             <year>2003</year>             <article-title>Gangliosides are receptors for murine polyoma virus and SV40.</article-title>             <source>EMBO J</source>             <volume>22</volume>             <fpage>4346</fpage>             <lpage>4355</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Bergelson1">
+        <label>58</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bergelson</surname><given-names>L. D</given-names></name><name name-style="western"><surname>Bukrinskaya</surname><given-names>A. G</given-names></name><name name-style="western"><surname>Prokazova</surname><given-names>N. V</given-names></name><name name-style="western"><surname>Shaposhnikova</surname><given-names>G. I</given-names></name><name name-style="western"><surname>Kocharov</surname><given-names>S. L</given-names></name><etal/></person-group>             <year>1982</year>             <article-title>Role of gangliosides in reception of influenza virus.</article-title>             <source>Eur J Biochem</source>             <volume>128</volume>             <fpage>467</fpage>             <lpage>474</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Ravichandran1">
+        <label>59</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ravichandran</surname><given-names>K. S</given-names></name><name name-style="western"><surname>Lorenz</surname><given-names>U</given-names></name></person-group>             <year>2007</year>             <article-title>Engulfment of apoptotic cells: signals for a good meal.</article-title>             <source>Nat Rev Immunol</source>             <volume>7</volume>             <fpage>964</fpage>             <lpage>974</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Svennerholm1">
+        <label>60</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Svennerholm</surname><given-names>L</given-names></name></person-group>             <year>1956</year>             <article-title>Composition of gangliosides from human brain.</article-title>             <source>Nature</source>             <volume>177</volume>             <fpage>524</fpage>             <lpage>525</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Fvrier1">
+        <label>61</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Février</surname><given-names>B</given-names></name><name name-style="western"><surname>Raposo</surname><given-names>G</given-names></name></person-group>             <year>2004</year>             <article-title>Exosomes: endosomal-derived vesicles shipping extracellular messages.</article-title>             <source>Curr Opin Cell Biol</source>             <volume>16</volume>             <fpage>415</fpage>             <lpage>421</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Platt1">
+        <label>62</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Platt</surname><given-names>C. D</given-names></name><name name-style="western"><surname>Ma</surname><given-names>J. K</given-names></name><name name-style="western"><surname>Chalouni</surname><given-names>C</given-names></name><name name-style="western"><surname>Ebersold</surname><given-names>M</given-names></name><name name-style="western"><surname>Bou-Reslan</surname><given-names>H</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Mature dendritic cells use endocytic receptors to capture and present antigens.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>107</volume>             <fpage>4287</fpage>             <lpage>4292</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Drutman1">
+        <label>63</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Drutman</surname><given-names>S. B</given-names></name><name name-style="western"><surname>Trombetta</surname><given-names>E. S</given-names></name></person-group>             <year>2010</year>             <article-title>Dendritic cells continue to capture and present antigens after maturation in vivo.</article-title>             <source>J Immunol</source>             <volume>185</volume>             <fpage>2140</fpage>             <lpage>2146</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Brenchley1">
+        <label>64</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Brenchley</surname><given-names>J. M</given-names></name><name name-style="western"><surname>Price</surname><given-names>D. A</given-names></name><name name-style="western"><surname>Schacker</surname><given-names>T. W</given-names></name><name name-style="western"><surname>Asher</surname><given-names>T. E</given-names></name><name name-style="western"><surname>Silvestri</surname><given-names>G</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Microbial translocation is a cause of systemic immune activation in chronic HIV infection.</article-title>             <source>Nat Med</source>             <volume>12</volume>             <fpage>1365</fpage>             <lpage>1371</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Sorice1">
+        <label>65</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sorice</surname><given-names>M</given-names></name><name name-style="western"><surname>Garofalo</surname><given-names>T</given-names></name><name name-style="western"><surname>Sansolini</surname><given-names>T</given-names></name><name name-style="western"><surname>Griggi</surname><given-names>T</given-names></name><name name-style="western"><surname>Circella</surname><given-names>A</given-names></name><etal/></person-group>             <year>1996</year>             <article-title>Overexpression of monosialoganglioside GM3 on lymphocyte plasma membrane in patients with HIV infection.</article-title>             <source>J Acquir Immune Defic Syndr Hum Retrovirol</source>             <volume>12</volume>             <fpage>112</fpage>             <lpage>119</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Fantini1">
+        <label>66</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Fantini</surname><given-names>J</given-names></name><name name-style="western"><surname>Tamalet</surname><given-names>C</given-names></name><name name-style="western"><surname>Hammache</surname><given-names>D</given-names></name><name name-style="western"><surname>Tourrès</surname><given-names>C</given-names></name><name name-style="western"><surname>Duclos</surname><given-names>N</given-names></name><etal/></person-group>             <year>1998</year>             <article-title>HIV-1-induced perturbations of glycosphingolipid metabolism are cell-specific and can be detected at early stages of HIV-1 infection.</article-title>             <source>J Acquir Immune Defic Syndr Hum Retrovirol</source>             <volume>19</volume>             <fpage>221</fpage>             <lpage>229</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Hakomori1">
+        <label>67</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hakomori</surname><given-names>S</given-names></name></person-group>             <year>2002</year>             <article-title>The glycosynapse.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>99</volume>             <fpage>225</fpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Canals1">
+        <label>68</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Canals</surname><given-names>D</given-names></name><name name-style="western"><surname>Mormeneo</surname><given-names>D</given-names></name><name name-style="western"><surname>Fabriàs</surname><given-names>G</given-names></name><name name-style="western"><surname>Llebaria</surname><given-names>A</given-names></name><name name-style="western"><surname>Casas</surname><given-names>J</given-names></name><name name-style="western"><surname>Delgado</surname><given-names>A</given-names></name></person-group>             <year>2009</year>             <article-title>Synthesis and biological properties of Pachastrissamine (jaspine B) and diastereoisomeric jaspines.</article-title>             <source>Bioorg Med Chem</source>             <volume>17</volume>             <fpage>235</fpage>             <lpage>241</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Sherer1">
+        <label>69</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sherer</surname><given-names>N. M</given-names></name><name name-style="western"><surname>Lehmann</surname><given-names>M. J</given-names></name><name name-style="western"><surname>Jimenez-Soto</surname><given-names>L. F</given-names></name><name name-style="western"><surname>Ingmundson</surname><given-names>A</given-names></name><name name-style="western"><surname>Horner</surname><given-names>S. M</given-names></name><etal/></person-group>             <year>2003</year>             <article-title>Visualization of retroviral replication in living cells reveals budding into multivesicular bodies.</article-title>             <source>Traffic</source>             <volume>4</volume>             <fpage>785</fpage>             <lpage>801</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Prado1">
+        <label>70</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Prado</surname><given-names>J. G</given-names></name><name name-style="western"><surname>Prendergast</surname><given-names>A</given-names></name><name name-style="western"><surname>Thobakgale</surname><given-names>C</given-names></name><name name-style="western"><surname>Molina</surname><given-names>C</given-names></name><name name-style="western"><surname>Tudor-Williams</surname><given-names>G</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Replicative capacity of human immunodeficiency virus type 1 transmitted from mother to child is associated with pediatric disease progression rate.</article-title>             <source>J Virol</source>             <volume>84</volume>             <fpage>492</fpage>             <lpage>502</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Li2">
+        <label>71</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Li</surname><given-names>M</given-names></name><name name-style="western"><surname>Gao</surname><given-names>F</given-names></name><name name-style="western"><surname>Mascola</surname><given-names>J. R</given-names></name><name name-style="western"><surname>Stamatatos</surname><given-names>L</given-names></name><name name-style="western"><surname>Polonis</surname><given-names>V. R</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>Human immunodeficiency virus type 1 env clones from acute and early subtype B infections for standardized assessments of vaccine-elicited neutralizing antibodies.</article-title>             <source>J Virol</source>             <volume>79</volume>             <fpage>10108</fpage>             <lpage>10125</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Mayer1">
+        <label>72</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Mayer</surname><given-names>L. D</given-names></name><name name-style="western"><surname>Hope</surname><given-names>M. J</given-names></name><name name-style="western"><surname>Cullis</surname><given-names>P. R</given-names></name></person-group>             <year>1986</year>             <article-title>Vesicles of variable sizes produced by a rapid extrusion procedure.</article-title>             <source>Biochim Biophys Acta</source>             <volume>858</volume>             <fpage>161</fpage>             <lpage>168</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001315-Bottcher1">
+        <label>73</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bottcher</surname><given-names>C. J. F</given-names></name></person-group>             <year>1961</year>             <article-title>A rapid and sensitive sub-micro phosphorus determination.</article-title>             <source>Anal Chim Acta</source>             <volume>24</volume>             <fpage>203</fpage>             <lpage>204</lpage>          </element-citation>
+      </ref>
+    </ref-list>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>Cer</term>
+          <def>
+            <p>ceramide</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>DC</term>
+          <def>
+            <p>dendritic cell</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FACS</term>
+          <def>
+            <p>fluorescence activated cell sorting</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FBS</term>
+          <def>
+            <p>fetal bovine serum</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>eGFP</term>
+          <def>
+            <p>enhanced GFP, green fluorescent protein</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>iDC</term>
+          <def>
+            <p>immature dendritic cell</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>IL</term>
+          <def>
+            <p>interleukin</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>LUV</term>
+          <def>
+            <p>large unilamellar vesicle</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>mDC</term>
+          <def>
+            <p>mature dendritic cell</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>MOI</term>
+          <def>
+            <p>multiplicity of infection</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PBMC</term>
+          <def>
+            <p>peripheral blood mononuclear cell</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PHA</term>
+          <def>
+            <p>phytohaemagglutinin</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>POPC</term>
+          <def>
+            <p>1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PS</term>
+          <def>
+            <p>phosphatidylserine</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SEM</term>
+          <def>
+            <p>standard error of the mean</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>tRed</term>
+          <def>
+            <p>Texas Red</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>VLP</term>
+          <def>
+            <p>virus-like particle</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    
+  </back>
+</article>

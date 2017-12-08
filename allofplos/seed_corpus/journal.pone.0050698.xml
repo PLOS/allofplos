@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-11032</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0050698</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Neuroscience</subject>
+            <subj-group>
+              <subject>Neuropsychology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Engineering</subject>
+          <subj-group>
+            <subject>Signal processing</subject>
+            <subj-group>
+              <subject>Data mining</subject>
+              <subject>Image processing</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Mental health</subject>
+            <subj-group>
+              <subject>Psychiatry</subject>
+              <subj-group>
+                <subject>Child psychiatry</subject>
+                <subject>Mood disorders</subject>
+                <subject>Schizophrenia</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Radiology</subject>
+            <subj-group>
+              <subject>Diagnostic radiology</subject>
+              <subj-group>
+                <subject>Magnetic resonance imaging</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Mental Health</subject>
+          <subject>Neuroscience</subject>
+          <subject>Radiology and Medical Imaging</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Anatomical Brain Images Alone Can Accurately Diagnose Chronic Neuropsychiatric Illnesses</article-title>
+        <alt-title alt-title-type="running-head">Diagnosing Chronic Psychiatric Disorders</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Bansal</surname>
+            <given-names>Ravi</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Staib</surname>
+            <given-names>Lawrence H.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Laine</surname>
+            <given-names>Andrew F.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Hao</surname>
+            <given-names>Xuejun</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Xu</surname>
+            <given-names>Dongrong</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Liu</surname>
+            <given-names>Jun</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Weissman</surname>
+            <given-names>Myrna</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Peterson</surname>
+            <given-names>Bradley S.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Psychiatry, Columbia College of Physicians &amp; Surgeons and the New York State Psychiatric Institute, New York, New York, United States of America</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Biomedical Engineering, Columbia University, New York, New York, United States of America</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Departments of Biomedical Engineering, Electrical Engineering and Diagnostic Radiology, Yale University, New Haven, Connecticut, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Zhan</surname>
+            <given-names>Wang</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>University of Maryland, United States of America</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">bansalr@nyspi.columbia.edu</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: RB LS AL DX MW BP. Performed the experiments: RB. Analyzed the data: RB XH JL. Wrote the paper: RB BP.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>7</day>
+        <month>12</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>7</volume>
+      <issue>12</issue>
+      <elocation-id>e50698</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>18</day>
+          <month>4</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>25</day>
+          <month>10</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2012</copyright-year>
+        <copyright-holder>Bansal et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Objective</title>
+          <p>Diagnoses using imaging-based measures alone offer the hope of improving the accuracy of clinical diagnosis, thereby reducing the costs associated with incorrect treatments. Previous attempts to use brain imaging for diagnosis, however, have had only limited success in diagnosing patients who are independent of the samples used to derive the diagnostic algorithms. We aimed to develop a classification algorithm that can accurately diagnose chronic, well-characterized neuropsychiatric illness in single individuals, given the availability of sufficiently precise delineations of brain regions across several neural systems in anatomical MR images of the brain.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>We have developed an automated method to diagnose individuals as having one of various neuropsychiatric illnesses using only anatomical MRI scans. The method employs a semi-supervised learning algorithm that discovers natural groupings of brains based on the spatial patterns of variation in the morphology of the cerebral cortex and other brain regions. We used split-half and leave-one-out cross-validation analyses in large MRI datasets to assess the reproducibility and diagnostic accuracy of those groupings.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>In MRI datasets from persons with Attention-Deficit/Hyperactivity Disorder, Schizophrenia, Tourette Syndrome, Bipolar Disorder, or persons at high or low familial risk for Major Depressive Disorder, our method discriminated with high specificity and nearly perfect sensitivity the brains of persons who had one specific neuropsychiatric disorder from the brains of healthy participants and the brains of persons who had a different neuropsychiatric disorder.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Although the classification algorithm presupposes the availability of precisely delineated brain regions, our findings suggest that patterns of morphological variation across brain surfaces, extracted from MRI scans alone, can successfully diagnose the presence of chronic neuropsychiatric disorders. Extensions of these methods are likely to provide biomarkers that will aid in identifying biological subtypes of those disorders, predicting disease course, and individualizing treatments for a wide range of neuropsychiatric illnesses.</p>
+        </sec>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was supported by National Institute of Mental Health grants MH036197, MH068318, and K02-74677, National Institute on Drug Abuse grant DA017820, the Suzanne Crosby Murphy endowment at Columbia University, the Tom Klingenstein and Nancy Perlman Family Fund, and The Brain and Behavior Research Foundation Independent Investigator Award. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="21"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Clinicians and researchers have long sought to use brain imaging measures as an aid in clinical diagnosis. In prior attempts to use magnetic resonance imaging (MRI) in the diagnosis of neuropsychiatric illnesses, conventional anatomical measures of putative pathological involvement, such as the overall volume of a brain region or a combination of brain regions, have not proven particularly useful, probably because brain regions that can be identified on MRI scans are anatomically and functionally heterogeneous, which means that for any given brain region, opposing measures of pathological involvement in its various subregions (such as volume loss in one subregion, compensatory hypertrophy in another, and normal volumes in yet another), when combined into an overall volume are dilute and highly variable, producing substantial overlap between diagnostic groups in the distributions of overall volumes. The overlap in distributions, in turn, yields poor sensitivity and specificity when trying to use those measures for clinical diagnosis. <xref ref-type="bibr" rid="pone.0050698-Peterson1">[1]</xref> However, recent methods in image processing permit measurements of local variation in the morphological features of brain subregions that are thought to be more anatomically and functionally homogeneous than are conventional overall volumes, <xref ref-type="bibr" rid="pone.0050698-Peterson1">[1]</xref> and that are associated significantly and more uniquely with various neuropsychiatric disorders than are overall volumes of the brain or a brain subregion. <xref ref-type="bibr" rid="pone.0050698-Peterson2">[2]</xref>–<xref ref-type="bibr" rid="pone.0050698-Csernansky1">[7]</xref></p>
+      <p>These measures of local variation in morphological features of the brain have been used to build algorithms that classify the brains of participants according to diagnostic group. For several reasons, however, those diagnostic algorithms have met with limited success when attempting to classify brains that are independent of the imaging dataset used to generate the diagnostic algorithm. First, the morphological measures at each voxel of the brain generally have been assumed to be statistically independent variables when building the classifiers, even though they are not independent of one another. Second, measures at each voxel of the brain generally have been treated as equally informative when building the diagnostic classifiers, when in fact the imaging measures at some voxels are much more diagnostically informative than at other voxels. More important, however, is that diagnostic information is more likely to be represented by the within-subject spatial variation in morphological measures <italic><underline>across</underline></italic> voxels and across brain subregions than by the between-subject variation <italic><underline>within</underline></italic> voxels. For it is the spatial variation across voxels and across brain subregions that is most likely to represent the circuit-based morphological abnormalities that produce and uniquely define a given neuropsychiatric illness. The value of identifying spatial patterns of variation in brain measures across voxels and across brain subregions is much like the value of identifying the spatial patterns for variation in the epidermal ridges of a fingerprint, which define more efficiently and more accurately the identity of an individual than do independent, point-wise measures of displacement of the dermal surface on the tip of a finger. Third, voxel-wise measures of morphological variation yields a vastly larger feature space on which the classification algorithm must operate compared with the feature space for the pattern of spatial variation across voxels, either compromising the validity and reproducibility of the algorithm for a given number of observations (participants) or requiring a much larger number of participants to yield comparable validity and reproducibility of the algorithm.</p>
+      <p>The fundamental assumption that we make in this paper, and the assumption that constitutes the foundation of our algorithm for diagnostic classification, is that identifying patterns of variation in morphological features that extend over many sets of contiguous voxels and across numerous brain subregions will capture individual disturbances in the morphological features of neural circuits that are unique to each neuropsychiatric disorder being classified. We also believe that rather than using variation at individuals voxels for diagnostic classification, basing the classifications on these patterns of regional variation will reduce the adverse effects of noise on the stability of the diagnostic algorithm, particularly when classifying brains that are independent of the datasets used to generate the algorithm. Herein we demonstrate that a classification using anatomical MR images of the brain if sufficiently precise delineations of brain regions are available across sufficiently distributed neural systems in a sufficiently large number of individuals drawn from healthy and patient populations.</p>
+      <p>Extant methods for machine-based classification of individual brains in imaging datasets generally <xref ref-type="bibr" rid="pone.0050698-Lao1">[8]</xref>–<xref ref-type="bibr" rid="pone.0050698-Jack1">[19]</xref> use quantitative imaging data and known clinical diagnoses to learn optimal decision boundaries in the feature space of the imaging dataset that best separate individuals who have differing illnesses. The quantitative features that enter the training dataset (e.g., the Jacobian matrix of the deformation field) have usually been extracted from images using voxel based morphometry <xref ref-type="bibr" rid="pone.0050698-Ashburner1">[20]</xref>, <xref ref-type="bibr" rid="pone.0050698-Lochhead1">[21]</xref> (VBM), a technique that provides automated, quantitative, and fine-grained morphological information about the brain. To ensure that the imaging measures are smoothly varying across the brain, the estimated deformation fields are constrained to be locally smooth. These smoothness constraints, however, create difficulties for the imaging measures when trying to classify individuals accurately into diagnostic categories. First, they assume that a voxel in template space (a brain from a healthy individual to which all other brains in the sample are point-wise matched) represents the corresponding anatomical region in the brains across all other individuals in the dataset. This assumption is unlikely to be true, even when the brains of differing individuals have been spatially normalized to the template using high-dimensional deformations, because the smoothness constraints employed when warping a brain into template space, and the variability in anatomy across individual brains, limit the ability of the normalization procedures to match precisely the corresponding anatomical regions across individuals. Second, the smoothness constraint causes deformations in a brain region to be influenced by deformations at all neighboring brain regions, and therefore brain measures derived from these deformation fields do not provide accurate measures of local changes in the brain region of interest. Third, brain measures derived using VBM are defined at each voxel in the brain, and therefore the dimensionality of the feature space is very high, requiring either implementation of techniques that can reduce the dimensionality substantially or else datasets from a much larger number of participants, in order to adequately train and validate the classification algorithms. Together, these limitations of techniques for machine-based classification introduce imprecision when identifying the point-to-point correspondences across brains that are required for accurate classification, as they allow measures from any point in the brain that is warped to a template space to be influenced by the variable features of brain regions at a distance remote from that point. Although more recently developed algorithms for high-order nonlinear warpings <xref ref-type="bibr" rid="pone.0050698-Ou1">[22]</xref> significantly reduce these inaccuracies, brain features close to but outside of the regions of interest likely still influence the smoothed deformation fields.</p>
+      <p>One alternative to VBM, termed “surface morphometry”, may be more accurate in identifying the point-to-point correspondences that are required to define the feature space upon which classification algorithms operate. Surface morphometry first delineates the surface of each brain region precisely and independently from other brain regions, and then it spatially registers independently points on the surface of each brain region to the corresponding points on the surface of the same region in the template brain. One of its major advantages is that point correspondences on brain surfaces are independent of the morphological features of points remote from those surfaces. In addition, its brain measures are defined on fewer voxels compared to VBM-like measures that are defined on all points throughout the entire three-dimensional volume of the brain, thereby dramatically reducing the dimensionality of the feature space on which the classification algorithm is developed and applied. Despite these limitations, the VBM-based algorithms afford the promise of providing completely automated techniques for diagnosing neuropsychiatric disorders, making them potentially attractive for applications within clinical settings. Therefore, comparing the performance of the VBM-based methods with ours and others is essential for future applications of imaging-based diagnostic algorithms. In the future, therefore, we will rigorously compare the performance of our algorithm with that of VBM-based classifications.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <p>We present a method to identify valid, naturalistic groupings of the brains based on the spatial patterns of local variation in the morphological features across the surfaces of numerous cortical and subcortical brain regions, with the aim of identifying neural circuit-based disturbances that are unique to specific neuropsychiatric disorders. We capture the patterns of spatial variation in these fine-grained, local morphological features across the surfaces of numerous brain regions in an attempt to represent neural circuit-based patterns of variation in local morphology. The patterns of spatial variations are analyzed using machine-based learning techniques to identify natural groupings of brains. We show that these naturalistic groupings map with high sensitivity and specificity to specific neuropsychiatric disorders. We use computer-generated datasets to validate this general approach, and use human MRI datasets comprising many individuals across a variety of neuropsychiatric disorders to validate and reproduce the specific diagnostic algorithms that classify brains with high sensitivity and specificity as belonging to persons of one specific diagnostic group rather than another.</p>
+      <sec id="s2a">
+        <title>Isolating the Brain and Defining ROIs</title>
+        <p>We isolated the brain from non-brain tissue and defined various brain regions using valid and highly reliable procedures to preclude any rater bias in region definitions. <xref ref-type="bibr" rid="pone.0050698-Kates1">[23]</xref>–<xref ref-type="bibr" rid="pone.0050698-Peterson4">[25]</xref> We first removed inhomogeneities in image intensity <xref ref-type="bibr" rid="pone.0050698-Sled1">[26]</xref> and then rotated the brains into a standard head orientation. Next, to ensure the absence of rater bias, we flipped images randomly in the left-right (ear-to-ear) direction prior to region definition and reversed the flips following region definition. We then isolated the brain from non-brain tissue <xref ref-type="bibr" rid="pone.0050698-Shattuck1">[27]</xref> together with manual editing. Therefore, the imaging data were not influenced in any way by knowledge of illness labels prior to generation and testing of the classification algorithm. We defined cortical gray matter using a combination of automated thresholding of gray and white matter and manual editing in orthogonal views. The boundary of each brain region was manually delineated by an expert neuroanatomist using detailed, validated, and well-documented procedures published elsewhere, providing surface delineations that were independent of the influences of other regions <xref ref-type="bibr" rid="pone.0050698-Peterson2">[2]</xref>, <xref ref-type="bibr" rid="pone.0050698-Peterson3">[3]</xref>, <xref ref-type="bibr" rid="pone.0050698-Peterson4">[25]</xref>, <xref ref-type="bibr" rid="pone.0050698-Plessen1">[28]</xref>, <xref ref-type="bibr" rid="pone.0050698-Peterson5">[29]</xref>. The manual editing needed to isolate the brain from non-brain tissue was 8 hours, to define the cortical mantle was 6 hours, to delineate the amygdala and hippocampus was 4 hours, and to define the basal ganglia was 6 hours of rater time. Therefore, up to 24 hours of a trained, bachelor's level rater was needed to provide initial definitions for all the brain regions used in these classification algorithms. An additional 8 hours was required to check all these definitions in their entirety and to make the necessary revisions by another trained rater before the definition was considered final. Although manual delineations were onerous and time-consuming for a trained expert, they provided valid, precise, and highly reliable region definitions that we believe was important in identifying individual variability in circuit-based morphological characteristics in each participant's brain that was important for the success of our automated classification algorithm.</p>
+        <p>The various brain regions that we used to train and validate the classification algorithm were defined by more than thirty trained raters over a period of fifteen years. During this 15-year period, several NIMH grants supported the costs for image acquisition and post-processing, with each grant providing support for a five-year period. Trained groups of raters delineated individual brain regions concurrently and while blind to clinical diagnosis and other demographic characteristics for all participants, and region definitions were interleaved randomly across diagnoses over time in our dataset (<bold><xref ref-type="supplementary-material" rid="pone.0050698.s001">Fig. S1</xref></bold>). Therefore, any potential rater bias is unlikely to have confounded the gold-standard clinical diagnoses used to train and validate the automated classification algorithms. Moreover, a senior, more experience rater verified and, when necessary, corrected the definitions before they were made available for further processing, further reducing the likelihood of rater bias. In addition, we reestablished the reliability of each rater every four months in the same set of 10 standardized brains to ensure the absence of drift in delineation of regions over time or raters. When a rater left the laboratory, we trained a new rater who continued to define brain regions on the remaining brains in the dataset. Intraclass correlation coefficients calculated from 10 brains defined by 2 or more raters were greater than (1) 0.91 for the hippocampus <xref ref-type="bibr" rid="pone.0050698-Peterson2">[2]</xref>, (2) 0.89 for the amygdala <xref ref-type="bibr" rid="pone.0050698-Peterson2">[2]</xref>, (3) 0.95 for the caudate and putamen <xref ref-type="bibr" rid="pone.0050698-Peterson5">[29]</xref>, (4) 0.90 for the globus pallidus <xref ref-type="bibr" rid="pone.0050698-Peterson5">[29]</xref>, (5) 0.99 for the cerebral hemispheres <xref ref-type="bibr" rid="pone.0050698-Peterson5">[29]</xref>, (6) 0.95 for the thalamus <xref ref-type="bibr" rid="pone.0050698-Ivanov1">[30]</xref>, and (7) 0.98 for cortical thickness <xref ref-type="bibr" rid="pone.0050698-Peterson3">[3]</xref>.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Quantifying Local Variation in Surface Morphology</title>
+        <p>We used previously described methods <xref ref-type="bibr" rid="pone.0050698-Peterson1">[1]</xref>–<xref ref-type="bibr" rid="pone.0050698-Peterson3">[3]</xref>, <xref ref-type="bibr" rid="pone.0050698-Plessen1">[28]</xref>, <xref ref-type="bibr" rid="pone.0050698-Bansal1">[31]</xref> to quantify precisely the local variations in morphological features across the surfaces of all of the brain regions that we have defined. These methods permit a much finer-grained subdivision of cerebral regions than is possible using more conventional measures of overall volume, thereby providing much greater power to detect localized abnormalities within the region. We first coregistered the cerebrum to a template brain using a similarity transformation that maximized mutual information across the images. <xref ref-type="bibr" rid="pone.0050698-Viola1">[32]</xref> We then used a rigid body transformation to coregister individual brain regions to the corresponding template region. Next we warped each brain region nonlinearly to the corresponding template region using a high-dimensional warping algorithm. <xref ref-type="bibr" rid="pone.0050698-Christensen1">[33]</xref> Each brain region was thus warped to the exact same size and shape as the template region, allowing us to identify points on the surface of each region that corresponded precisely with those of the template region. We then calculated across the entire surface of each region the Euclidean distance of each point from the corresponding point on the template. These distances were positive in sign for protrusions and negative for indentations relative to the template surface. For any given group of participants, this set of signed Euclidean distances constituted a smooth random field on the surface of the template region that quantified local variation in surface morphological features of that region for each participant. A single representative brain was selected as a template rather than an averaged brain because tissue interfaces, such as CSF gray matter or gray-white matter interfaces, are well defined in a single brain. In contrast, in an average brain these interfaces are blurred, thereby increasing registration errors that are subtle but important when distinguishing subtle effects across populations. In addition, precise surface morphometry requires smooth surface devoid of topological defects, which can only be ensured by using a single brain as a template.</p>
+        <p>We measured the thickness of the cortical mantle in each brain using a 3-dimensional morphological operator to distance-transform the surface of the white matter to the surface of the cortex. <xref ref-type="bibr" rid="pone.0050698-Haralick1">[34]</xref>, <xref ref-type="bibr" rid="pone.0050698-Rosenfeld1">[35]</xref> This operation calculated cortical thickness as the smallest distance of each point on the external cortical surface from the outermost surface of the white matter. Because these thicknesses were measured in template space, their values inherently accounted for generalized scaling effects in the brain.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Conformal Mapping of Local Variations in Brain Measures</title>
+        <p>We used conformal mapping to prepare the surface measures (Euclidean distances and cortical thickness) for spherical wavelet analyses. The purpose of conformal mapping was to transfer the surface measures from the template region onto the surface of a unit sphere, while preserving the angles between vectors on the template and spherical surfaces. Because conformal mapping preserved angles, the shape of a small region on the brain surface was preserved when it was mapped onto the unit sphere. We first used a Marching Cubes algorithm to extract the surface <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e001" xlink:type="simple"/></inline-formula> of the template region as a triangular mesh. <xref ref-type="bibr" rid="pone.0050698-Lorensen1">[36]</xref> The extracted surface <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e002" xlink:type="simple"/></inline-formula> was embedded into the three dimensional space <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e003" xlink:type="simple"/></inline-formula> and was assumed to be of genus 0, i.e. the surface was topologically equivalent to a sphere <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e004" xlink:type="simple"/></inline-formula> and does not intersect itself. By removing a single point p from the surface <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e005" xlink:type="simple"/></inline-formula> and a point p′ from the sphere <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e006" xlink:type="simple"/></inline-formula>, the conformal mapping <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e007" xlink:type="simple"/></inline-formula> was estimated by solving the partial differential equation<disp-formula id="pone.0050698.e008"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0050698.e008" xlink:type="simple"/></disp-formula>where <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e009" xlink:type="simple"/></inline-formula> is the Laplace-Beltrami operator, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e010" xlink:type="simple"/></inline-formula> is the Dirac delta function at point p, and u and v are the conformal coordinates in the neighborhood of the point p. This equation was solved using a method for finite element analysis by first mapping the coordinates of the template surface to the coordinates of a plane while preserving the angles between all measures on that surface. <xref ref-type="bibr" rid="pone.0050698-Angenent1">[37]</xref> Next, a stereographic projection mapped the coordinates of the plane to the coordinates of the sphere. We then used those coordinates to transfer the brain measures from the template surface to the corresponding locations on the sphere's surface.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Spherical Wavelet Representation</title>
+        <p>Morphological features are typically measured at more than 10,000 voxels across the surface of a template region. Although a classification algorithm can in principle diagnose an individual in a high-dimensional feature space, an imaging dataset containing many thousands of brains would be required to generate valid classification boundaries that have sufficient reproducibility and generalizability to be potentially useful in a clinical setting. Because even the largest imaging datasets contain images from only a few hundred participants, however, the dimensionality of the feature space must be reduced to generate an algorithm that has valid classification boundaries. Therefore, we elected to use morphological measures defining the two-dimensional manifold of regional surfaces rather than morphological measures for the entire three-dimensional volume of the corresponding regions.</p>
+        <p>Moreover, our interest was not in classifying individual points on the surface, but instead in classifying the spatial patterns of variation in those measures across the surface of each region. Therefore, before applying clustering (i.e., classification) techniques to the two-dimensional surface dataset, we first captured that spatial pattern in variation of our measures in a manner that also reduced further the dimensionality of the imaging dataset. We accomplished this by applying a spherical wavelet transform to surface measures that had been conformally mapped onto a unit sphere. This wavelet transform generated scaling coefficients that encoded the spatial variation in our measures on the unit sphere at varying degrees of spatial resolution.</p>
+        <p>Because wavelets have local support – i.e., they equal zero outside a small region – in both the spatial and frequency domains, they have been used to represent functions at multiple levels of spatial detail. A wavelet transform, through dyadic translations and dilations of a mother wavelet and scaling function, generates coefficients for a function such that only a small subset of the coefficients can represent the function with a high degree of precision, thereby permitting compression and efficient processing of imaging data. The wavelet function <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e011" xlink:type="simple"/></inline-formula> and the scaling <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e012" xlink:type="simple"/></inline-formula>, at a resolution <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e013" xlink:type="simple"/></inline-formula> and an index <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e014" xlink:type="simple"/></inline-formula> (K(j) is a set of integers at resolution <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e015" xlink:type="simple"/></inline-formula> indexing the position of the wavelet and scaling function), is a linear combination of the scaling functions <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e016" xlink:type="simple"/></inline-formula> at the higher resolution <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e017" xlink:type="simple"/></inline-formula>. Therefore, the wavelet and scaling functions are self-similar at differing spatial resolutions. If <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e018" xlink:type="simple"/></inline-formula> is the space of all scalar functions having finite energy over the sphere <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e019" xlink:type="simple"/></inline-formula>, a multi-resolution analysis generates a sequence of closed subspaces <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e020" xlink:type="simple"/></inline-formula>, such that: (1) <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e021" xlink:type="simple"/></inline-formula>, that is <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e022" xlink:type="simple"/></inline-formula>, (2) <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e023" xlink:type="simple"/></inline-formula> is dense in <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e024" xlink:type="simple"/></inline-formula>, and (3) the set of scaling functions <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e025" xlink:type="simple"/></inline-formula> is a Riesz basis of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e026" xlink:type="simple"/></inline-formula>. The wavelet functions <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e027" xlink:type="simple"/></inline-formula> form the bases of the difference space <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e028" xlink:type="simple"/></inline-formula> between two successive levels of representation, that is <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e029" xlink:type="simple"/></inline-formula>. In addition to local support, the wavelet functions have vanishing moments: If wavelets <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e030" xlink:type="simple"/></inline-formula> have N vanishing moments, then there exist N independent polynomials <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e031" xlink:type="simple"/></inline-formula> such that <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e032" xlink:type="simple"/></inline-formula>, for all <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e033" xlink:type="simple"/></inline-formula>,<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e034" xlink:type="simple"/></inline-formula>, where <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e035" xlink:type="simple"/></inline-formula> is an index set.</p>
+        <p>Historically, wavelet transforms were initially limited to infinite <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e036" xlink:type="simple"/></inline-formula> spaces <xref ref-type="bibr" rid="pone.0050698-Daubechies1">[38]</xref>, but they subsequently were extended to finite <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e037" xlink:type="simple"/></inline-formula> spaces. <xref ref-type="bibr" rid="pone.0050698-Cohen1">[39]</xref> More recently, they have been extended to analyze scalar functions defined on a sphere using lifting schemes. <xref ref-type="bibr" rid="pone.0050698-Schroder1">[40]</xref>, <xref ref-type="bibr" rid="pone.0050698-Sweldens1">[41]</xref> A lifting scheme builds biorthogonal wavelets that are smoother and that have more vanishing moments than do simple scaling and wavelet functions. A forward analysis of a spherical wavelet transform begins computing coefficients for a function at the highest spatial resolution, continuing until it reaches the lowest possible spatial resolution. At each resolution, unlifted wavelet coefficients are computed, and then these coefficients are lifted to compute the wavelet coefficients, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e038" xlink:type="simple"/></inline-formula>, and the scaling coefficients, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e039" xlink:type="simple"/></inline-formula>. Synthesis, or the inverse transform, in contrast, begins by computing the coefficients at the lowest resolution and ends at the function with the highest resolution. We used two differing methods of wavelet analyses to compute scaling coefficients for our surface measures: (1) the linear lifted method, which used information from the two nearest neighbors <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e040" xlink:type="simple"/></inline-formula> at a location on the mesh of the unit sphere to interpolate the transformation, and (2) the lifted butterfly method, which used information from all eight neighbors <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e041" xlink:type="simple"/></inline-formula> on the mesh of the sphere to compute the scaling coefficients (<xref ref-type="fig" rid="pone-0050698-g001"><bold>Fig. 1</bold></xref>).</p>
+        <fig id="pone-0050698-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Scaling coefficients at decreasing spatial resolutions.</title>
+            <p>The numbers of vertices in the triangulated mesh at each level of resolution are indicated at the bottom of the figure. The meshes with 12 and 162 vertices correspond to resolutions 0 and 2, respectively, of the spherical wavelet transformation. <italic>Top Row</italic>: Approximating a unit sphere at decreasing spatial resolutions. <italic>Middle and Bottom Row</italic>: Examples of scaling coefficients at decreasing resolutions for local variations in the surface morphological features of the right hippocampus in a representative healthy participant (NC) and a person with Schizophrenia (SZ). The scaling coefficients are color encoded and displayed at the vertices of sphere at the various resolutions. Protrusions with respect to a template surface are encoded in Red and Yellow, and indentations in the surface are encoded in Violet and Blue. Green indicates no difference in the surface. The scaling coefficients were computed by first using conformal mapping to map local variations in surface morphological features onto a unit sphere and then applying the lifted interpolate transformation to the mapped variations. At the lowest resolution, i.e. <italic>Resolution 0</italic> of the wavelet transformation, scaling coefficients at the 12 vertices of the icosahedron very coarsely approximate the high-resolution variations in local morphological features. Using scaling coefficients at low spatial resolutions for classification greatly reduces the dimensionality of the feature space.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.g001" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2e">
+        <title>Controlling for Nuisance Variables</title>
+        <p>Brain measures may differ because of differing ages, gender, or whole brain volume (WBV) across individuals, in addition to differences caused by pathological processes in neuropsychiatric illnesses. To ensure that our method generated naturalistic groupings that represent only the underlying pathological processes and not age and sex effects, we (1) matched our groups on age and sex, and (2) computed brain measures that were corrected for age, gender, and WBV. We had also assessed the effects of higher-order age terms but the linear effects alone were significant, and therefore, we only used linear terms to control for the effects of age. Because brain measures were computed on brains that were normalized into the coordinate space of a template brain of a healthy individual, they were inherently corrected for differing WBV across individuals. These brain measures were further corrected for age and gender effects by applying linear regression with age and gender as the independent variables and brain measure as the dependent variable.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Machine Learning</title>
+        <p>We employed a semi-supervised method for machine learning to identify natural groupings of people in the spatial variation of fine-grained, local morphological features across their brains. Machine-based learning and pattern classification seek to construct algorithms that automatically learn decision rules for classification from experimental datasets, and then it applies the learned rules to classify individuals in other datasets. <xref ref-type="bibr" rid="pone.0050698-Duda1">[42]</xref> These methods generally belong to either supervised or unsupervised classes of learning. Consider the pairs of data points <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e042" xlink:type="simple"/></inline-formula>, where <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e043" xlink:type="simple"/></inline-formula> are <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e044" xlink:type="simple"/></inline-formula>-dimensional feature vectors and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e045" xlink:type="simple"/></inline-formula> are scalar-valued labels. For our purposes, the vectors <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e046" xlink:type="simple"/></inline-formula> are brain measures and the labels <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e047" xlink:type="simple"/></inline-formula> are clinical diagnoses. Supervised learning uses a training sample to learn the mapping between <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e048" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e049" xlink:type="simple"/></inline-formula> using a parametric or nonparametric function, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e050" xlink:type="simple"/></inline-formula>. This function encodes a decision rule, or boundary, that optimally separates the feature vectors <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e051" xlink:type="simple"/></inline-formula> using the labels, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e052" xlink:type="simple"/></inline-formula>. If the labels <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e053" xlink:type="simple"/></inline-formula> are missing, then methods for unsupervised learning (for example, hierarchical clustering procedures) can be used to discover natural groupings within the data. Our method is semi-supervised because we first applied leave-one-out cross validation to select a set of features that differed significantly between groups of individuals who were already clinically diagnosed, and then we applied hierarchical clustering to the feature vectors to discover naturalistic groupings of individuals in the dataset. We then assessed the validity of these naturalistic groupings by applying leave-one-out and split-half cross-validation procedures to datasets that were independent of those that have been mined to generate the groupings.</p>
+        <sec id="s2f1">
+          <title>Discovering Natural Groupings Using Hierarchical Clustering</title>
+          <p>Hierarchical clustering is a powerful, unsupervised tool for discovering natural structure within a dataset, especially when the groupings of data are unknown a priori. Groupings of brains that are generated from clinical diagnoses alone could frequently misclassify brains if their features do not map tightly to a clinical diagnosis, especially when disturbances affect neural pathways that are common across disorders. To minimize these classification errors, we used hierarchical clustering procedures to discover naturalistic groupings of brain features. We presumed that those common features supported similar computational and behavioral functions, and that the brains that shared them would map more accurately to biologically based groupings of illnesses than would groups of brains classified on the basis of morphological features associated with clinical symptoms as identified by prior classification schemes. A clinical diagnostic label was assigned by a simple majority rule to each of the two naturalistic groupings, so that the known clinical diagnosis affecting the majority of participants in each group provided the diagnostic labels for those groupings. We then used those groupings and labels to classify new brains from a separate dataset. Thus, although the features that generated the classification algorithm were defined by the clinical diagnoses, hierarchical clustering generates groupings based solely on the morphological features and therefore the brains from participants were clustered in groups that shared similar morphological features.</p>
+          <p>One method for hierarchical clustering generated a sequence of clusters that partitions an imaging dataset from <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e054" xlink:type="simple"/></inline-formula> participants, using a measure of dissimilarity between any two groups of feature vectors. Starting with <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e055" xlink:type="simple"/></inline-formula> clusters at level 1, with each cluster containing data from exactly one participant, the dataset was partitioned into <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e056" xlink:type="simple"/></inline-formula> clusters at level 2, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e057" xlink:type="simple"/></inline-formula> clusters at level 3, and so on, such that only one cluster was present at level <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e058" xlink:type="simple"/></inline-formula>. In this sequence of clusterings, any two feature vectors x and x′ were grouped into one cluster at some level, and they remained together at all higher levels. Furthermore, dissimilarity between any two clusters increases with increasing levels, and therefore the groupings of feature vectors that were generated by hierarchical clustering were visualized at various levels using a nonintersecting, binary tree called dendrogram. A dendrogram was drawn to scale to show the dissimilarity between the groups of feature vectors and to help identify natural groupings within the dataset. An unusually large difference in the similarity values across levels may indicate a natural clustering at the lower level. If the similarity values for various levels were evenly distributed across the range of possible values, however, then no particular clustering was more natural than any other.</p>
+          <p>The use of hierarchical clustering to generate a correct natural grouping of participants depends heavily on the similarity measure used to compare feature vectors, as well as on the method that groups these features using those similarity measures. We defined the similarity between features (sets of scaling factors) as either the Euclidean distance for the feature vectors encoding local variations in the surface morphological measures of a single brain region, or the standardized Euclidean distance for the feature vectors encoding local variations in the surfaces from multiple brain regions. We then used either the average linkage or Ward's linkage on the similarity measures to group the feature vectors. The average linkage calculated the average of the distances between all pairs of feature vectors in the two clusters and then merged as level k the two groups that had the smallest distance between averages. In other words, the average distance <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e059" xlink:type="simple"/></inline-formula> between clusters <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e060" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e061" xlink:type="simple"/></inline-formula> was computed as<disp-formula id="pone.0050698.e062"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0050698.e062" xlink:type="simple"/></disp-formula>Ward's linkage, in contrast, calculated the distance between two clusters <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e063" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e064" xlink:type="simple"/></inline-formula> as the increase in the error sum of squares (ESS) of the new cluster <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e065" xlink:type="simple"/></inline-formula>, obtained as the union of the individual clusters. For a cluster <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e066" xlink:type="simple"/></inline-formula>, the <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e067" xlink:type="simple"/></inline-formula> was computed as<disp-formula id="pone.0050698.e068"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0050698.e068" xlink:type="simple"/></disp-formula>and therefore Ward's distance <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e069" xlink:type="simple"/></inline-formula> was computed as<disp-formula id="pone.0050698.e070"><graphic position="anchor" xlink:href="info:doi/10.1371/journal.pone.0050698.e070" xlink:type="simple"/></disp-formula>Ward's linkage therefore generated cohesive groupings of participants by minimizing the increase in within-group variance at each level.</p>
+          <p>Hierarchical clustering as we implemented it may converge to local rather than global optima. Starting with <italic>n</italic> sets of features from <italic>n</italic> brains, hierarchical clustering iteratively combines the features from two sets of brain features to generate a new set of features, thereby reducing the number of sets by one in each step of the iteration. Also at each step, among all possible combinations of two sets, only those two are combined such that the new set optimizes a pre-specified criterion. In our implementation of hierarchical clustering, we used for this pre-specified criterion Ward's distance, which computes within-set variance of brain features. Therefore, in our implementation of hierarchical clustering, two sets of features were combined such that the within-set variance (i.e., Ward's distance) of the new set was smallest among all possible other combinations of two feature sets. This strategy is a greedy one, in that the two sets to be combined at each step are selected from all sets available in that step, and therefore the two groups generated in the last step may not have the least possible within-group variance among all possible two-group combinations of <italic>n</italic> brains. Higher variances in the generated groupings would typically indicate that some brains are assigned to a group erroneously. Such groupings may limit the effectiveness of classification because use of these groupings would possibly create an erroneous assignment of a new participant. Although this is a risk using our implementation of hierarchical clustering, the superb performance and reliability of our classification algorithm suggests that local optima and their attendant errors in classification were very few.</p>
+        </sec>
+      </sec>
+      <sec id="s2g">
+        <title>Independent Validation</title>
+        <p>We validated the naturalistic groupings using both leave-one-out (LOO) cross-validation analyses and 10 independent split-half replication analyses. In addition, we computed misclassification rates using LOO cross-validation applied to the random halves of data generated in the split-half analyses. In each of the 10 split-half analyses, we (a) partitioned the imaging datasets randomly into two halves, the training set and the test set, (b) generated the classification algorithm using the training set, and then (c) evaluated the performance of the classification algorithm using the second, independent test half of the dataset. Automated, computer-based procedures assigned a brain in the second test dataset to one of the two putative diagnostic groups identified in the training dataset by assessing which of the two groups had morphological features most similar to its own. To assign the brain to one of the two previously defined groups, we first computed the distance between its scaling coefficients and the average coefficients of both groups, and then we assigned the brain to the diagnostic group having the smaller distance from its scaling coefficients. The brain was considered to be misclassified if its diagnosis differed from that of the group label assigned in the training dataset. Assigning each brain in the test dataset one at a time to a putative diagnostic label allowed us to compute misclassification rates in a dataset that was entirely independent of the training dataset that generated the classification algorithm. These split-half procedures were repeated independently for every pair of the 10 training and test datasets, thereby generating 10 independent estimates of the misclassification rates for each pair of clinical diagnoses that we tried to discriminate (e.g. TS vs HC). We computed the means and standard deviations of the misclassification rates across these multiple split-half and LOO cross-validations, which we then used to calculate the sensitivity and specificity of the diagnostic algorithms. It is important to note that, even though the features entering the classification algorithm and the labels assigned to the subsequent naturalistic groupings of brains were determined using previously known clinical diagnoses, it was the hierarchical clustering algorithm alone, operating without information about clinical diagnoses and based solely on the morphological features shared across brains within each dataset, that generated the naturalistic groupings of brains used in the following validation of MRI-based diagnoses.</p>
+      </sec>
+      <sec id="s2h">
+        <title>Validation using Computer-Generated Datasets</title>
+        <p>We generated two synthetic datasets, each with increasing levels of complexity in their surface morphologies, by superimposing spherical indentations or protrusions of known size positioned precisely in the dorsolateral prefrontal cortex (DLPFC) or occipital cortex (OC). <xref ref-type="bibr" rid="pone.0050698-Bansal1">[31]</xref> These two datasets were used to assess the construct validity of our procedures. The deformation in DLPFC was centered in the midportion of the pars triangularis over the inferior frontal gyrus. The deformation in OC was placed immediately to the left of the interhemispheric fissure on the lowermost portion of the occipital lobe, such that the deformation was tangential both to the cistern immediately superior to the cerebellum and the interhemispheric fissure (<xref ref-type="fig" rid="pone-0050698-g002"><bold>Figs. 2</bold></xref><bold> &amp; </bold><xref ref-type="fig" rid="pone-0050698-g003"><bold>3</bold></xref>). We confirmed the accuracy of the placement of these deformations by viewing the deformed brains in the coronal, axial, and sagittal planes. The first dataset was created from copies of a single brain, and the second dataset was created from the brains of 20 different individuals. The second dataset was used to determine the optimal resolution of the scaling coefficients that best discriminate brains of healthy individuals from those with neuropsychiatric illnesses.</p>
+        <fig id="pone-0050698-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Warping a deformed brain to the template brain.</title>
+            <p>We added deformations to copies of the template brain and then normalized those deformed brains to the undeformed template. The deformed brains were spatially normalized using a method that maximizes mutual information in the gray scale values across the images <xref ref-type="bibr" rid="pone.0050698-Viola1">[32]</xref> and then warped the coregistered brain using a method based on fluid dynamics. <xref ref-type="bibr" rid="pone.0050698-Christensen1">[33]</xref> Because a deformed brain was identical to the template brain except for the added deformation, the deformation field only shows a large spatial deformation in the region of the added deformation.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.g002" position="float" xlink:type="simple"/>
+        </fig>
+        <fig id="pone-0050698-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Deformations at the dorsolateral prefrontal cortex (DLPFC) in the template brain.</title>
+            <p><italic>Top Row</italic>: In copies of the template brain we added a 15 mm wide protrusion or indentation in the DLPFC by centering the deformation over the midportion of the pars triangularis in the inferior frontal gyrus. We placed the deformed brains randomly in the coordinate space of the template brain. The deformed brains were coregistered to the template brain and then we computed the signed Euclidean distances between the surface of the coregistered brain and the surface of the template brain. The signed Euclidean distances were color-encoded and displayed on the template brain, and were mapped onto a unit sphere using a conformal mapping. <italic>Red</italic>: protrusion on the surface; <italic>Violet</italic>: indentations on the surface. <italic>Bottom Row</italic>: The distances on the unit sphere were transformed by applying spherical wavelet transformation to compute scaling coefficients at decreasing resolutions.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.g003" position="float" xlink:type="simple"/>
+        </fig>
+        <sec id="s2h1">
+          <title>Synthetic Datasets Constructed from a Single Brain</title>
+          <p>To create the first set of 10 brains, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e071" xlink:type="simple"/></inline-formula>, we first generated a deformed brain by adding a 15 mm indentation in the DLPFC in a copy of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e072" xlink:type="simple"/></inline-formula>, and then placed 10 copies of that brain, each with a differing amounts of translations and rotations, in the coordinate space of the template brain (<xref ref-type="fig" rid="pone-0050698-g002"><bold>Figs. 2</bold></xref> <bold>&amp;</bold> <xref ref-type="fig" rid="pone-0050698-g003"><bold>3</bold></xref>). Similarly, for the second set of 10 brains, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e073" xlink:type="simple"/></inline-formula>, we first generated a deformed brain by adding a 15 mm protrusion to the same location of the DLPFC in a copy of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e074" xlink:type="simple"/></inline-formula>, and then we placed 10 copies of that same brain at 10 random locations in the coordinate space. Using identical procedures, we generated a third set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e075" xlink:type="simple"/></inline-formula> and a fourth set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e076" xlink:type="simple"/></inline-formula> of 10 images by adding an indentation and protrusion, respectively, in the OC region in the copies of <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e077" xlink:type="simple"/></inline-formula> and then placing them at 10 random locations in the space. From these four sets of deformed brains we generated three new sets: (1) <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e078" xlink:type="simple"/></inline-formula> of 20 brains, (2) <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e079" xlink:type="simple"/></inline-formula> of 20 brains, and (3) <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e080" xlink:type="simple"/></inline-formula> of 40 deformed brains. We then applied our wavelet transform and classification procedures to discover natural groupings in each of these three synthetic datasets. Because brains in these datasets were identical to <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e081" xlink:type="simple"/></inline-formula> except for the added protrusion and indentation, we expected the brains to be clustered into four groups: one with protrusions in the DLPFC, a second with indentations in the DLPFC, a third with protrusions in the OC, and a fourth group with indentations in the OC.</p>
+        </sec>
+        <sec id="s2h2">
+          <title>Synthetic Datasets Constructed from Different Individuals</title>
+          <p>From the brains of 20 healthy individuals, <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e082" xlink:type="simple"/></inline-formula>, we generated 4 sets of synthetic data: (1) the first set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e083" xlink:type="simple"/></inline-formula> of 20 deformed brains contained a 15 mm indentation in the DLPFC, (2) the second set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e084" xlink:type="simple"/></inline-formula> of 20 brains contained a 15 mm protrusion in the DLPFC, (3) the third set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e085" xlink:type="simple"/></inline-formula> of 20 brains contained a 15 mm indentation in the OC, and (4) the fourth set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e086" xlink:type="simple"/></inline-formula> of 20 brains contained a 15 mm protrusion in the OC. From these 4 sets of synthetic data we created 3 new subsets of brains: (1) the first subset <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e087" xlink:type="simple"/></inline-formula> contained 10 brains with indentations and another 10 brains with protrusions in the DLPFC, (2) the second subset <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e088" xlink:type="simple"/></inline-formula> of 10 brains with indentations and another 10 brains with protrusions in the OC, and (3) the third subset <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e089" xlink:type="simple"/></inline-formula> of 10 brains with indentations at DLPFC, another 10 brains with protrusion in the DLPFC, 10 more brains with indentations in the OC, and yet another 10 brains with protrusions in the OC. We then applied the method to automatically discover the natural groupings within these three sets of brains. For each of the two sets <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e090" xlink:type="simple"/></inline-formula> and <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e091" xlink:type="simple"/></inline-formula>, we expected to cluster the brains into two groups: one with only indentations and the other with only protrusions. We expected to cluster brains from the set <inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e092" xlink:type="simple"/></inline-formula> into four groups, one with only protrusions in the DLPFC, another with only indentations in the DLPFC, another with only protrusions in the OC, and a last one with only indentations in the OC.</p>
+        </sec>
+      </sec>
+      <sec id="s2i">
+        <title>Validation using Real-World Data and Gold-Standard Clinical Diagnoses</title>
+        <p>We validated the natural groupings identified in our classification algorithm using surface morphological measures in a large group of healthy individuals and groups of patients with known clinical diagnoses established by senior clinicians using research-based diagnostic interviews, either the Kiddie-Schedule for Affective Disorders and Schizophrenia (K-SADS) <xref ref-type="bibr" rid="pone.0050698-Kaufman1">[43]</xref> in participants younger than 18 years or the Structured Clinical Interviews for DSM Disorders (SCIDs) <xref ref-type="bibr" rid="pone.0050698-American1">[44]</xref> in participants older than 18 years. Final clinical diagnoses were assigned following a best-estimate consensus procedure conducted by two board-certified psychiatrists using all available research records but while blind to prior clinical diagnoses. <xref ref-type="bibr" rid="pone.0050698-Peterson6">[45]</xref>, <xref ref-type="bibr" rid="pone.0050698-Leckman1">[46]</xref> All participants were free of a history of neurological illness, substance dependence, sustained loss of consciousness, and significant medical illness. All participants provided written informed consent for their participation in these studies.</p>
+        <sec id="s2i1">
+          <title>Healthy Participants</title>
+          <p>We acquired imaging data in 42 healthy children (18 males, age 10.5±2.43 years) and 40 healthy adults (22 males, age 32.42±10.7 years). <xref ref-type="bibr" rid="pone.0050698-Peterson7">[47]</xref> Additional exclusion criteria for healthy participants included a lifetime or a current DSM-IV Axis 1 or 2 disorder, and IQ&lt;80 as measured by the WISC-III <xref ref-type="bibr" rid="pone.0050698-Wechsler1">[48]</xref>, WAIS <xref ref-type="bibr" rid="pone.0050698-Wechsler2">[49]</xref>, or Kaufmann-Brief Intelligence Test. <xref ref-type="bibr" rid="pone.0050698-Grados1">[50]</xref></p>
+        </sec>
+        <sec id="s2i2">
+          <title>Tourette Syndrome (TS) Participants</title>
+          <p>Imaging data was acquired in 71 TS children (59 males, age 11.19±2.2 years) and 36 TS adults (21 males, age 37.34±10.9 years). <xref ref-type="bibr" rid="pone.0050698-Peterson7">[47]</xref> They were ascertained through the local chapter of the Tourette Syndrome (TS) Association and through the Tic Disorder Clinic of the Yale Child Study Center, New Haven, Conn. Diagnoses were supplemented using the Schedule for Tourette and Other Behavioral Syndromes <xref ref-type="bibr" rid="pone.0050698-Pauls1">[51]</xref>., and ratings of current and worst ever severity of tic symptoms using the Yale Global Tic Severity Scale. <xref ref-type="bibr" rid="pone.0050698-Leckman2">[52]</xref></p>
+        </sec>
+        <sec id="s2i3">
+          <title>ADHD Participants</title>
+          <p>We imaged 41 ADHD children (33 males, age 12.6±3.18 years) <xref ref-type="bibr" rid="pone.0050698-Plessen1">[28]</xref> who were recruited through the general outpatient clinic at the Yale Child Study Center or through advertisements with a local chapter of ChADD (Children with Attention Deficit Disorder). Diagnostic assessments were supplemented using the Conners ADHD Parent and Teacher Rating Scales <xref ref-type="bibr" rid="pone.0050698-Conners1">[53]</xref>, <xref ref-type="bibr" rid="pone.0050698-Conners2">[54]</xref> and the DuPaul-Barkley ADHD rating scale <xref ref-type="bibr" rid="pone.0050698-DuPaul1">[55]</xref>. ADHD subjects with lifetime of Obsessive Compulsive Disorder (OCD), Tourette Syndrome or Tic disorder, and premature birth (gestation ≤36 weeks) were excluded from this group.</p>
+        </sec>
+        <sec id="s2i4">
+          <title>Bipolar Disorder (BD) I Participants</title>
+          <p>This group comprised 26 adults with BD (11 males, age 37.65±10.35 years) who were identified from general psychiatry outpatient clinics <xref ref-type="bibr" rid="pone.0050698-Blumberg1">[56]</xref> at the Yale School of Medical Center or the Veterans Affairs Connecticut Healthcare System, or referred by the practitioner. <xref ref-type="bibr" rid="pone.0050698-Blumberg2">[57]</xref> During the history of their illness, all participants met DSM-IV criteria for having had a clearly defined manic episode lasting at least one week.</p>
+        </sec>
+        <sec id="s2i5">
+          <title>Schizophrenia (SZ) Participants</title>
+          <p>We acquired imaging data in 65 adults with SZ (41 males, age 42.16±8.71 years). <xref ref-type="bibr" rid="pone.0050698-Wexler1">[58]</xref> They were identified from general psychiatry outpatient clinics at Yale University Medical Center. All participants had been on their medication for at least 30 days and had not abused substances for at least 60 days. Diagnostic assessments were supplemented using the Positive and Negative Symptom Scale for Schizophrenia. <xref ref-type="bibr" rid="pone.0050698-Wexler1">[58]</xref>, <xref ref-type="bibr" rid="pone.0050698-Kay1">[59]</xref></p>
+        </sec>
+        <sec id="s2i6">
+          <title>Participants at High or Low Risk for Major Depressive Disorder (MDD)</title>
+          <p>These individuals belonged to a 3-generation cohort in which the first two generations have been followed for more than 22 years. <xref ref-type="bibr" rid="pone.0050698-Peterson3">[3]</xref> In the first generation (“G1”), one group of adults was clinically ascertained during treatment of moderate to severe, recurrent, and functionally debilitating MDD; the other group was a sample of matched control adults from the same community who had no discernible lifetime history of depression. The biological offspring of the first generation comprised the second generation (“G2”), and the offspring of the second generation comprised the third generation (“G3”). <xref ref-type="bibr" rid="pone.0050698-Peterson3">[3]</xref>, <xref ref-type="bibr" rid="pone.0050698-Weissman1">[60]</xref> The participants identified at “high risk” for developing MDD were those members of G2 and G3 who were biological descendants of the MDD group in G1 and those identified at “low risk” were the G2 and G3 biological descendants of the unaffected control group in G1. We acquired imaging data for 131 individuals in G3: 66 (12 children, 54 adults) in the high risk group, and 65 in the low risk group (31 children, 34 adults).</p>
+        </sec>
+      </sec>
+      <sec id="s2j">
+        <title>MRI Pulse Sequence</title>
+        <p>T1-weighted MR images were acquired on a 1·5 Tesla GE scanner using a sagittal spoiled gradient recall sequence (TR = 24 msec, TE = 5 msec, 45° flip, frequency encoding S/I, no wrap, 256×192 matrix, FOV = 30 cm, 2 excitations, slice thickness = 1.2 mm, 124 contiguous slices). This sequence was selected to provide superior signal-to-noise and contrast-to-noise ratios in high-resolution images having nearly isotropic voxels (1.171×1.171×1.2 mm). For the participants who were at either a high (HR) or a low (LR) familial risk for depression, imaging data were acquired on a 1.5T Siemens Sonata scanner using a 3D MPRAGE sequence with the same parameters <xref ref-type="bibr" rid="pone.0050698-Peterson3">[3]</xref>.</p>
+        <p>We computed feature vectors from several brain regions, according to the availability of their manual tracings. The feature vector was composed of the scaling coefficients that were derived from the measures of surface morphology. For discriminating brains of individuals with either TS or ADHD from those of healthy comparison individuals and for discriminating TS children from ADHD children, we used feature vectors computed for the morphology of the cortex, globus palladus, putamen, caudate, thalamus, amygdala, and hippocampus. For discriminating brains between persons with other clinical diagnoses, however, we used feature vectors computed from the cortex, amygdala, and hippocampus. The brains of individuals who were at either high or low risk for depression, we used feature vectors computed from the cortical thickness. We applied our classification procedures to discriminate (a) 41 children with ADHD from 42 healthy children, (b) 71 children with TS from 41 children with ADHD, (c) 26 adults with BD from 40 healthy adults, (d) 65 adults with schizophrenia (SZ) from 36 TS adults, (e) 65 adults with SZ from 26 BD adults, (f) 65 adults with SZ from 40 healthy adults, (g) 36 adults with TS from 40 healthy adults, (h) 71 children with TS from 42 healthy children, (i) 65 adults with SZ, 36 adults with TS, and 40 healthy adults, and (j) 65 adults with SZ, 26 adults with BD, and 40 healthy adults.</p>
+        <p>We applied our classification scheme to the scaling coefficients that we determined differed at high levels of statistical significance (P-values<inline-formula><inline-graphic xlink:href="info:doi/10.1371/journal.pone.0050698.e093" xlink:type="simple"/></inline-formula>) between persons with a specific neuropsychiatric disorder and healthy comparison persons. The p-value for the statistical significance was determined empirically by first applying LOO analysis to scaling coefficients that differed at decreasing p-values and then selecting the p-value associated with the lowest misclassification rates (<xref ref-type="fig" rid="pone-0050698-g004"><bold>Fig. 4</bold></xref>). Using feature vectors that differed at this stringent statistical threshold both reduced the dimensionality of the feature space and identified the features that best discriminated feature vectors for brains in each of the two groups. We then applied hierarchical clustering techniques to the selected scaling coefficients to identify two natural groupings of brains based solely on the similarity of their morphological features.</p>
+        <fig id="pone-0050698-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Optimal P-value threshold for scaling coefficients.</title>
+            <p>Naturalistic groupings of the brains were generated using scaling coefficients that differed significantly with at most a specified P-value between groups of participants in our cohort. The optimal P-value of the statistical significance was selected from the plots of sensitivity and specificity, and the number of scaling coefficients, for various P-value thresholds in our cohort of 42 healthy children (HC) and 71 children with Tourette's Syndrome (TS). The scaling coefficients were computed for the right and left amygdalae, hippocampi, global pallidus, putamina, caudate nuclei, thalami, and hemisphere surfaces. At each P-value threshold, we applied hierarchical clustering to all coefficients that differed with at most the specified P-value to generate groupings of the brains. These groupings were analyzed using leave-one-out (LOO) cross validation to compute the sensitivity and specificity of our method for classifying an individual as a healthy child or a child with TS. We independently computed sensitivity and specificities for various P-value thresholds and plotted the sensitivity (SE, solid line) and specificity (SP, dashed line) (<italic>Left</italic>), and the number of coefficients (<italic>Right</italic>), as a function of P-value thresholds. For a P-value threshold&lt;10<sup>−7</sup>, the method classified an individual with both high sensitivity and high specificity. At this P-value threshold, moreover, the number of coefficients was sufficiently reduced, thereby reducing the dimensionality of the feature space. We therefore applied a P-value&lt;10<sup>−7</sup> as a threshold for classifying an individual among various neuropsychiatric illnesses. <bold>SE</bold>, sensitivity; <bold>SP</bold>, specificity.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.g004" position="float" xlink:type="simple"/>
+        </fig>
+        <p>Each group of brains that hierarchical clustering generated was assigned the diagnosis of the majority of participants contained in that group. Furthermore, although we empirically selected the feature vectors upon which hierarchical clustering was performed, that selection was subsequently validated and their reproducibility was assessed using split-half cross validation. The selected feature vectors therefore should generalize to other similar datasets.</p>
+      </sec>
+      <sec id="s2k">
+        <title>Identification of Persons at High or Low Familial Risk for Developing a Disorder</title>
+        <p>We attempted to classify individuals who were at either high familial risk (HR) or low familial risk (LR) for developing Major Depressive Disorder (MDD). The group consisted of 66 HR and 65 LR individuals. Previously we demonstrated the presence of a thinning of the cortical mantle in the lateral aspect of the right cerebral hemisphere and mesial wall of the left hemisphere of the HR compared with LR participants. <xref ref-type="bibr" rid="pone.0050698-Peterson3">[3]</xref> The cortical thinning was present even in those HR individuals who had never been ill with MDD. Therefore we computed scaling coefficients for local variations in cortical thickness of the HR and LR participants. Classification was more challenging in these high and low risk groups than in groups of already-affected people because most of the HR and LR participants had no lifetime history of MDD, some of the LR participants in generation 3 had parents with prior depression who married into the cohort, and some of the members of the LR group did have a lifetime history of MDD. Therefore, we expected at least some of the participants in these two risk groups to have similar brain features, and we expected misclassification of at least some participants in the HR group as being in the LR group, and vice versa.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Synthetic Datasets Constructed from a Single Brain</title>
+        <p>In the dataset with 40 brains with indentations and protrusions in both the DLPFC or OC, our method correctly clustered all brains into 4 groups of 10 brains each, one with only protrusions in the DLPFC, another with only indentations in the DLPFC, a third group with only protrusions in the OC, and a last group with only indentations in the OC (<xref ref-type="fig" rid="pone-0050698-g005"><bold>Fig. 5</bold></xref>). Classification rates were perfect for this synthetic dataset.</p>
+        <fig id="pone-0050698-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Identifying natural groupings of identical brains containing differing known deformations.</title>
+            <p><italic>Left Column</italic>: Brains 1 through 10 contained a protrusion, and brains 11 through 20 contained an indentation, in the DLPFC. <italic>Middle Column</italic>: Brains 1 through 10 contained a protrusion, and brains 11 through 20 contained an indentation, in the occipital cortex (OC). <italic>Right Column</italic>: Brains 1 through 10 had a protrusion at the OC, the brains 11 to 20 had an indentation at the OC whereas brains 21 through 30 contained a protrusion at the DLPFC and brains 31 through 40 had an indentation at the DLPFC. The deformed brains were normalized to the template to compute signed Euclidean distances. Those distances were mapped onto a sphere using a conformal mapping. We then applied either the lifted interpolate (<italic>top two rows</italic>) or the lifted butterfly (<italic>bottom row</italic>) to compute the scaling coefficients. Hierarchical clustering computed distances between features using either the average linkage or Ward's linkage. Left and middle dendrograms demonstrate that the brains were correctly clustered into two groups, one with indentations only and the other with protrusions only. Right dendrogram shows that the brains were correctly clustered into four groups: one with only protrusions in the OC, another with only protrusions in the DLPFC, another one with only indentations in the OC, and the last with only indentations in the DLPFC. Furthermore, Ward's distances between groups were larger than the average distances, indicating good separation of groups according to the type of synthetic deformation that was introduced into the data. Ward distances for feature vectors generated using lifted interpolate were generally greater than those generated using lifted butterfly, motivating our subsequent use of the lifted interpolate wavelet to compute scaling coefficients and use of Ward's linkage to cluster brains into naturalistic groups. <bold>Dp</bold>, protrusion in DLPFC; <bold>Di</bold>, indentation in DLPFC; <bold>Op</bold>, protrusion in OC; <bold>Oi</bold>, indentation in OC.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.g005" position="float" xlink:type="simple"/>
+        </fig>
+        <p>Additionally, the same groupings were generated when using either a lifted interpolate or a lifted butterfly wavelet and when using either an Average or a Ward's linkage measure of distance. The analysis using the lifted, interpolate wavelet and the Ward's linkage distance, however, generated more coherent and better separated groups (<xref ref-type="fig" rid="pone-0050698-g005"><bold>Fig. 5</bold></xref>). Thus, in all subsequent analyses we used the lifted interpolate wavelet to compute scaling coefficients and Ward's linkage to generate optimal groupings in hierarchical clustering.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Synthetic Datasets Constructed from Different Individuals</title>
+        <p>Using scaling coefficients at a higher resolution of the wavelet analyses, the method generated groups of brains with indentations in the DLPFC only, protrusions in the DLPFC only, indentations in the OC only, and protrusions in the OC only (<xref ref-type="fig" rid="pone-0050698-g006"><bold>Fig. 6</bold></xref>). At lower resolution, the performance of classification was poor when using datasets constructed from different individuals because differing surface morphology across individuals differentially affected the added deformations. The scaling coefficients at the lower resolution therefore encoded both the inherent variation in surface morphology in these individuals and the added deformations, and therefore the groupings generated by the method were guided by inherent variation in surface morphological features in these individuals. At higher resolutions (i.e. at smaller spatial extents across the cortical surface), the effects of inherent variation in surface morphology was smaller in the scaling coefficients computed across individuals; the scaling coefficients at the higher resolution therefore encoded more accurately the deformation added to the surfaces of these brains. Thus, we used scaling coefficients computed at the higher resolution for classifying individuals subsequently in all of our analyses of real-world datasets.</p>
+        <fig id="pone-0050698-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Identifying natural groupings of brains with known deformations from differing individuals.</title>
+            <p>Deformations were placed at either Dorsolateral Prefrontal Cortex (DLPFC) or Occipital Cortex (OC) in brain from 20 individuals. <italic>TopRow</italic>, <italic>Left</italic>: Brains 1 through 10 had protrusions and brains 11 through 20 had indentations at the DLPFC location. <italic>TopRow</italic>, <italic>Right</italic>: Brains 1 through 10 had protrusions and brains 11 through 20 had indentations at the OC location. The brains differed morphologically in addition to the added deformations. Variations in surface morphology from the template brain were analyzed by applying a method for spherical wavelet analysis to compute scaling coefficients at decreasing spatial resolution. The scaling coefficients were grouped by applying hierarchical clustering, which generated one group of brains with indentations only and another group of brains with protrusions only. <italic>TopLeft</italic>: Brains 1 through 10 had protrusions and brains 11 through 20 had indentations at the DLPFC location. Using the scaling coefficients at <italic>Resolution2</italic> that differed significantly between these groups (P-value&lt;10<sup>−7</sup>), the dendrogram shows that the brains were naturally clustered into two groups: one only with indentations, and the other only with protrusions. <italic>Top Right</italic>: Brains 1 through 10 had protrusions and brains 11 through 20 had indentations at the OC location. Using a different scaling coefficients at <italic>Resolution2</italic> that differed significantly, the dendrogram shows that the data were naturally clustered into two groups: one only with indentations, and the other only with protrusions. <italic>Bottom</italic>: Brains 1 through 10 had protrusions, and brains 11 through 20 had indentations, at the DLPFC location. Brains 21 through 30 had protrusions, and brains 31 through 40 had indentations, at the OC location. Using scaling coefficients at <italic>Resolution2</italic>, the dendrogram shows that the data were naturally clustered into 4 groups: one only with indentations at the DLPFC, another only with protrusions at the DLPFC, another only with indentations at the OC, and the last only with protrusions at the OC. However, brain 28 with protrusion at the OC was grouped with brains that had indentations at the OC location. <bold>Dp</bold>; protrusion in DLPFC; <bold>Di</bold>; indentation in DLPFC; <bold>Op</bold>, protrusion in OC; <bold>Oi</bold>, indentation in OC.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.g006" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s3c">
+        <title>Human Datasets</title>
+        <p>The classification algorithms that our procedures generated were able to discriminate the brains of persons with a specific neuropsychiatric disorder from the brains of healthy persons from the brains of persons who had differing neuropsychiatric disorders, with high sensitivities and specificities (<xref ref-type="table" rid="pone-0050698-t001"><bold>Table 1</bold></xref>). They discriminated the brains of children with ADHD from HC with 93.6% sensitivity and 88.5% specificity (<xref ref-type="fig" rid="pone-0050698-g007"><bold>Fig. 7</bold></xref><bold>, left</bold>); children with TS from children with ADHD with 99.83% sensitivity and 99.5% specificity (<xref ref-type="fig" rid="pone-0050698-g007"><bold>Fig. 7</bold></xref><bold>, right</bold>); adults with BD from HA with 100% sensitivity and 96.4% specificity (<xref ref-type="fig" rid="pone-0050698-g008"><bold>Fig. 8</bold></xref><bold>, 1st column</bold>); adults with SZ from adults with TS with 99.99% sensitivity and 100% specificity (<xref ref-type="fig" rid="pone-0050698-g008"><bold>Fig. 8</bold></xref><bold>, 2nd column</bold>); adults with SZ from adults with BD with 99.99% sensitivity and 100% specificity (<xref ref-type="fig" rid="pone-0050698-g008"><bold>Fig. 8</bold></xref><bold>, 3rd column</bold>); adults with SZ from healthy adults with 93.1% sensitivity and 94.5% specificity (<xref ref-type="fig" rid="pone-0050698-g008"><bold>Fig. 8</bold></xref><bold>, 4th column</bold>); adults with TS from HA with 83.2% sensitivity and 90% specificity (<xref ref-type="fig" rid="pone-0050698-g009"><bold>Fig. 9</bold></xref><bold>, left</bold>); children with TS from HC with 94.6% sensitivity and 79% specificity (<xref ref-type="fig" rid="pone-0050698-g009"><bold>Fig. 9</bold></xref><bold>, right</bold>); and participants at HR for depression from those at LR for depression with 81% sensitivity and 71% specificity (<xref ref-type="fig" rid="pone-0050698-g010"><bold>Fig. 10</bold></xref>). The positive predictive values for each of these classifications were high, ranging from 0.89 to 1.0, except for a value of 0.74 when classifying persons at HR or LR for depression that was not surprising, given we were classifying people at risk for developing an illness and not those with an already-established disorder. Specificities tended to be somewhat lower than sensitivities when classifying patient groups against healthy participants, as misclassifications tended to be more frequent in the healthy participants than when discriminating one neuropsychiatric disorder from another. We suspect that the misclassification of healthy participants may derive from their carrying a brain feature that could place them at greater risk for developing an illness, even though that illness may never become manifest. We have previously demonstrated that kind of brain-based vulnerability in our sample of participants at high or low familial risk for depression. <xref ref-type="bibr" rid="pone.0050698-Peterson3">[3]</xref> The positive predictive value (PPV), the likelihood that a person diagnosed with an illness using the classification algorithm actually has the illness, was close to 1.0 for most of the datasets. This high PPV could derive in part from be due to the roughly equal number of healthy and affected participants in each classification and therefore could be lower if the algorithms were applied to the brains of persons in the general population, where prevalence rates for neuropsychiatric disorders are typically 2–3%. Nevertheless, certainly 50% or more of persons seeking medical help are likely to have a disorder, and therefore the high PPVs may provide reasonable estimates of the performance of the classification algorithm within a real-world clinical setting.</p>
+        <fig id="pone-0050698-g007" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.g007</object-id>
+          <label>Figure 7</label>
+          <caption>
+            <title>Classifying a child as healthy or with ADHD, or as having either TS or ADHD.</title>
+            <p>In our cohort of 42 healthy children (HC), 41 ADHD children, and 71 children with TS, we first computed scaling coefficients for the left and right globus pallidus, putamina, caudate nuclei, thalami, amygdalae, and hippocampi. We then independently applied hierarchical clustering to those coefficients that differed significantly (P-value&lt;10<sup>−7</sup>) between (1) ADHD children and HC, and (2) TS children and ADHD children. The left dendrogram suggested the presence of two groups: one (labeled as HC) consisted of 36 healthy children, and the other (labeled as ADHD children) consisted of the 41 ADHD children and 6 healthy children. The right dendrogram suggested that the brains were clustered into two distinct groups: one labeled TS only comprised of TS children and the other labeled ADHD only consisted of ADHD children. The adjusted misclassification rates (<xref ref-type="table" rid="pone-0050698-t001"><bold>Table 1</bold></xref>) were: 11.5% for healthy children and 6.4% for ADHD children; and 0.17% for TS children and 0.5% ADHD children. Therefore, the sensitivity and specificity were: 93.6% and 89.5%, respectively, for classifying a child as an ADHD child; and 99.83% and 99.5%, respectively, for classifying a child as having either ADHD or TS. We plotted the patterns of surface features across the various brain regions that best classified a child. <italic><underline>Left</underline>:</italic> The patterns that discriminated ADHD child from healthy child were localized to: lateral and posterior portions of the right putamen; anterior portions of the left and medial portion of the right globus pallidus; ventral portion of the left caudate; posterior and medial portions of the left thalamus; ventral portion of the left amygdala, and anterior and posterior portions of the right amygdala; and posterior portion of the left hippocampus. In <italic>red</italic> are regions with local protrusions, and in <italic>violet</italic> are regions with local indentations in ADHD children compared with the healthy children. <italic><underline>Right</underline>:</italic> The pattern of surface features that discriminated between children with TS or ADHD included: anterior, lateral, and dorsal portions of the left globus pallidus, and dorsal, lateral, and medial portions of the right globus pallidus; ventral portion of the left caudate; dorso-medial portions of the left putamen, and lateral, dorsal, and medial portions of the right putamen; dorsal, posterior, and medial portions of the left thalamus, and posterior portion of the right thalamus; dorsal and posterior portions of the left amygdale, and anterior and posterior portions of the right amygdala; anterior and medial portions of the left hippocampus, and lateral portions of the right hippocampus. Regions in <italic>red</italic> are local protrusions, and regions in <italic>violet</italic> are local indentations, in TS children compared with ADHD children. <bold>GP</bold>, globus pallidus, <bold>CN</bold>, caudate nucleus; <bold>PUT</bold>, putamen; <bold>TH</bold>, thalamus; <bold>AMY</bold>, amygdala; <bold>HC</bold>, hippocampus; <bold>A</bold>: Anterior; <bold>P</bold>: Posterior.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.g007" position="float" xlink:type="simple"/>
+        </fig>
+        <fig id="pone-0050698-g008" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.g008</object-id>
+          <label>Figure 8</label>
+          <caption>
+            <title>Classifying an adult as healthy or with disorder, or between two neuropsychiatric illnesses.</title>
+            <p>In our cohort of 40 healthy adults (HA), 26 bipolar (BD) adults, 36 TS adults, and 65 adults with schizophrenia (SZ), we first computed scaling coefficients for the left and right hemispheres, amygdalae, and hippocampi. We then independently applied hierarchical clustering to those coefficients that differed significantly (P-value&lt;10<sup>−7</sup>) between (1) BD adults and healthy adults (<italic>1st column</italic>), (2) SZ adults and TS adults (<italic>2nd column</italic>), (3) SZ adults and BD adults (<italic>3rd column</italic>), and (4) SZ adults and HA (<italic>4th column</italic>). The first dendrogram suggested the presence of two groups: one (labeled as HA) consisted of the 40 healthy adults, and the other (labeled as BD adults) consisted of the 26 BD adults. The second dendrogram demonstrated that the brains were clustered into two distinct groups: one containing only TS adults and the other only SZ adults. The third dendrogram also consisted of two distinct groups, one group only of BD adults and the other group only of SZ adults. The fourth dendrogram showed two groups of the brains, one labeled healthy adults consisted of healthy adults only, and the other labeled SZ consisted of all SZ adults and two healthy adults. The adjusted misclassification rates were (1) 3.6% for HA and 0% for BD adults, (2) 0% for both the TS and SZ adults, (3) 0% for both the BD and SZ adults, and (4) 6.9% for SZ adults and 5.5% for healthy adults. Therefore, the sensitivity and specificity were (1) 100% and 96.4%, respectively, for classifying a participant as a BD adult, (2) 100% for classifying an adult as TS or SZ adult, (3) 100% for classifying an adult as BD or SZ adult, and (4) 93.1% and 94.5%, respectively, for classifying a participant as SZ adult. We plotted the patterns of surface features across the various brain regions that best classified an adult. <italic><underline>1st Column</underline></italic> These patterns were localized to: anterior and lateral regions of the left amygdala, and dorsal, lateral, and posterior regions of the right amygdala; posterior regions of the left hippocampus; and dorso-medial regions of the right hemisphere. In <italic>red</italic> are regions with local protrusions, and in <italic>violet</italic> are regions with local indentations in BD adults compared with the healthy adults. <italic><underline>2nd Column</underline></italic> The pattern of surface features (<italic>Bottom</italic>) that discriminated between groups included: anterior and medial portions of the left amygdala, and lateral and posterior regions of the right amygdala; anterior and lateral aspects of the left hippocampus, and posterior portion of the right hippocampus; and dorsolateral prefrontal, parietal, and medial regions of the left hemisphere, and dorsolateral prefrontal, temporal, medial, and parietal regions of the right hemisphere. Regions in <italic>red</italic> are local protrusions, and regions in <italic>violet</italic> are local indentations, in SZ adults compared with TS adults. <italic><underline>3rd Column</underline></italic> The pattern of surface features (<italic>Bottom</italic>) that discriminated between groups included: dorso-medial portions of the left amygdala, and ventro-medial regions of the right amygdala; posterior and lateral aspects of the left hippocampus, and anterior and posterior portion of the right hippocampus; medial dorso-lateral prefrontal, and parietal regions of the left hemisphere, and ventro-posterior, medial, and posterior lateral regions of the right hemisphere. Regions in <italic>red</italic> are local protrusions, and regions in <italic>violet</italic> are local indentations, in SZ adults compared with BD adults. <italic><underline>4th Column</underline></italic> The surface features that best discriminated SZ adults from healthy adults were localized to: dorsolateral prefrontal cortex, superior parietal, and medial regions of the left hemisphere, and temporal, occipital, dorso-lateral, and medial regions of the right hemisphere; dorsal regions of left amygdala, and anterior regions of right amygdala; posterior regions of the left hippocampus, and anterior and posterior regions of the right hippocampus. In <italic>red</italic> are regions with local protrusions, and in <italic>violet</italic> are regions with local indentations in SZ adults compared with the healthy adults. <bold>LH</bold>, left hemisphere; <bold>RH</bold>, right hemisphere; <bold>AMY</bold>, amygdala; <bold>HC</bold>, hippocampus; <bold>A</bold>, anterior; <bold>P</bold>, posterior.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.g008" position="float" xlink:type="simple"/>
+        </fig>
+        <fig id="pone-0050698-g009" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.g009</object-id>
+          <label>Figure 9</label>
+          <caption>
+            <title>Classifying an individual as a healthy individual or an individual with Tourette Syndrome (TS).</title>
+            <p>In 42 healthy children (HC), 40 healthy adults (HA), 71 children with TS, and 36 adults with TS, we independently applied hierarchical clustering to scaling coefficients that differed significantly (P-value&lt;10<sup>−7</sup>) between (1) adults with TS and healthy adults (<italic>left</italic>), and (2) children with TS and healthy children (<italic>right</italic>). The two largest groups in the right dendrogram were labeled HC (this group consisted of 27 healthy children) or TS children (which consisted of 71 TS and 15 healthy children); and those in the left dendrogram were labeled HA (40 healthy and 6 TS adults) or TS adults (30 TS adults). The adjusted misclassification rates were 5.4% and 21% for the TS children and HC, respectively, and 10% for HA and 16.8% for TS adults. Therefore, the sensitivity and specificity of the method were 94.6% and 79%, respectively, for classifying a child as either healthy child or as having TS, and were 83.2% and 90%, respectively, for classifying a participant as a TS adult. <italic><underline>Left</underline></italic> The dorso-anterior and ventro-posterior regions of the right hippocampus best classified a participant as either a healthy adult or TS adult. Regions in <italic>red</italic> are local protrusions, and regions in <italic>violet</italic> are local indentations, in TS adults compared with healthy adults. <italic><underline>Right</underline></italic> Shown here are the regions in right globus pallidus and right hippocampus where the scaling coefficients differed significantly between TS children and healthy children. The pattern of surface features that discriminated between the two groups included the dorso-anterior portions of the right globus pallidus, and the dorsal and ventro-posterior portion of the right hippocampus. Regions in <italic>red</italic> are local protrusions, and regions in <italic>violet</italic> are local indentations, in TS children compared with healthy children. <bold>RGP</bold>, Right Globus Pallidus; <bold>RHC</bold>, Right Hippocampus; <bold>A</bold>: anterior; <bold>P</bold>: posterior.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.g009" position="float" xlink:type="simple"/>
+        </fig>
+        <fig id="pone-0050698-g010" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.g010</object-id>
+          <label>Figure 10</label>
+          <caption>
+            <title>Classifying an individual as high or low familial risk for MDD.</title>
+            <p>In our cohort of 66 High Risk (HR) and 65 Low Risk (LR) participants, we applied hierarchical clustering using Ward's linkages to scaling coefficients computed at <italic>Resolution 2</italic> from the local variations in cortical thickness across the right and the left hemispheres. Each group was assigned a diagnosis using the majority rule, such that a group was labeled HR if the majority of participants in that group belonged to a family with a grandparent who had MDD. Otherwise the group was labeled as LR. Assuming only two groups of participants, the adjusted misclassification rates were 29% for the LR participants and 19% for HR participants. Therefore, the sensitivity and the specificity for classifying an individual as HR were 81% and 71%, respectively. The pattern of cortical thickness that discriminated between the groups included superior regions of the left hemisphere and lateral surface of the right hemisphere. Regions in <italic>red</italic> are local thickening, and regions in <italic>violet</italic> are local thinning, in HR participants as compared with LR participants. The spatial pattern of variation in cortical thickness in the HR compared with the LR group is consistent with the pattern previously identified across risk groups in this sample. <xref ref-type="bibr" rid="pone.0050698-Peterson3">[3]</xref> <bold>LH</bold>, left hemisphere; <bold>RH</bold>, right hemisphere.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.g010" position="float" xlink:type="simple"/>
+        </fig>
+        <table-wrap id="pone-0050698-t001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.t001</object-id>
+          <label>Table 1</label>
+          <caption>
+            <title>Performance of the method using real-world datasets.</title>
+          </caption>
+          <alternatives>
+            <graphic id="pone-0050698-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.t001" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Cohort</td>
+                  <td align="left" rowspan="1" colspan="1">Demographics</td>
+                  <td align="left" rowspan="1" colspan="1">Brain Regions (Number of coefficients)</td>
+                  <td colspan="4" align="left" rowspan="1">Misclassification Rates</td>
+                  <td align="left" rowspan="1" colspan="1">Sensitivity &amp; Specificity (adjusted)</td>
+                  <td align="left" rowspan="1" colspan="1">Positive Predictive Value (adjusted)</td>
+                  <td align="left" rowspan="1" colspan="1">Comments &amp; Figure</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">LOO (Entire Cohort)</td>
+                  <td align="left" rowspan="1" colspan="1">Split Half (10 Training &amp; 10 Test Samples)</td>
+                  <td align="left" rowspan="1" colspan="1">LOO Split (20 Split Half Samples)</td>
+                  <td align="left" rowspan="1" colspan="1">Adjusted (Entire Cohort)</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>ADHD Children; Healthy Children</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">41 participants, 33 males, 12.6±3.18 years; 42 participants, 18 males, 10.5±2.43 years</td>
+                  <td align="left" rowspan="1" colspan="1">L&amp;R AMY, L HC, L CN, L&amp;R GP, R PUT, L TH (44)</td>
+                  <td align="left" rowspan="1" colspan="1">0.024; 0.0952</td>
+                  <td align="left" rowspan="1" colspan="1">0.11±0.11; 0.16±0.10</td>
+                  <td align="left" rowspan="1" colspan="1">0.07±0.1; 0.14±0.14</td>
+                  <td align="left" rowspan="1" colspan="1">0.064; 0.115</td>
+                  <td align="left" rowspan="1" colspan="1">93.6% and 88.5%</td>
+                  <td align="left" rowspan="1" colspan="1">0.89</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <xref ref-type="fig" rid="pone-0050698-g001">Fig. 1</xref>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TS Children; ADHD Children</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">71 participants, 59 males, 11.19±2.2 years; 41 participants, 33 males, 12.6±3.18 years</td>
+                  <td align="left" rowspan="1" colspan="1">L&amp;R AMY, L&amp;R HC, L CN, L&amp;R GP, L&amp;R PUT, L&amp;R TH (141)</td>
+                  <td align="left" rowspan="1" colspan="1">0.014; 0</td>
+                  <td align="left" rowspan="1" colspan="1">0.0105±0.018; 0.005±0.0158</td>
+                  <td align="left" rowspan="1" colspan="1">0.0256±0.021; 0±0</td>
+                  <td align="left" rowspan="1" colspan="1">0.0017; 0·005</td>
+                  <td align="left" rowspan="1" colspan="1">99.83% and 99.5%</td>
+                  <td align="left" rowspan="1" colspan="1">0.997</td>
+                  <td align="left" rowspan="1" colspan="1">PPV for predicting TS child (<xref ref-type="fig" rid="pone-0050698-g001">Fig. 1</xref>)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>SZ Adults; BD Adults</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">65 participants, 41 males, 42.16±8.71 years 26 participants, 11 males, 37.66±10.36 years</td>
+                  <td align="left" rowspan="1" colspan="1">L&amp;R AMY, L&amp;R HC, LH &amp;RH (93)</td>
+                  <td align="left" rowspan="1" colspan="1">0; 0</td>
+                  <td align="left" rowspan="1" colspan="1">0.012±0.022; 0±0</td>
+                  <td align="left" rowspan="1" colspan="1">0.0108±0.017; 0±0</td>
+                  <td align="left" rowspan="1" colspan="1">0.001; 0</td>
+                  <td align="left" rowspan="1" colspan="1">99.999% and 100%</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">PPV for predicting SZ adult (<xref ref-type="fig" rid="pone-0050698-g002">Fig. 2</xref>)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>BD Adults; Healthy Adults</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">26 participants, 11 males, 37.66±10.36 years; 40 participants, 22 males, 32.42±10.7 years</td>
+                  <td align="left" rowspan="1" colspan="1">L&amp;R AMY, L HC, RH (82)</td>
+                  <td align="left" rowspan="1" colspan="1">0; 0·025</td>
+                  <td align="left" rowspan="1" colspan="1">0.044±0.048; 0.043±0.07</td>
+                  <td align="left" rowspan="1" colspan="1">0.044±0.07; 0.031±0.033</td>
+                  <td align="left" rowspan="1" colspan="1">0; 0.036</td>
+                  <td align="left" rowspan="1" colspan="1">100% and 96.4%</td>
+                  <td align="left" rowspan="1" colspan="1">0.95</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <xref ref-type="fig" rid="pone-0050698-g002">Fig. 2</xref>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>SZ Adults; TS Adults</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">65 participants, 41 males, 42.16±8.71 years; 36 participants, 21 males, 37·34±10·9 years</td>
+                  <td align="left" rowspan="1" colspan="1">L&amp;R AMY, L&amp;R HC, LH &amp; RH (196)</td>
+                  <td align="left" rowspan="1" colspan="1">0; 0</td>
+                  <td align="left" rowspan="1" colspan="1">0.003±0.009; 0±0</td>
+                  <td align="left" rowspan="1" colspan="1">0±0; 0±0</td>
+                  <td align="left" rowspan="1" colspan="1">0.003; 0</td>
+                  <td align="left" rowspan="1" colspan="1">99.997% and 100%</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">PPV for predicting SZ adult (<xref ref-type="fig" rid="pone-0050698-g002">Fig. 2</xref>)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>SZ Adults; Healthy Adults</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">65 participants, 41 males, 42.16±8.71 years; 40 participants, 22 males, 32.42±10.7 years</td>
+                  <td align="left" rowspan="1" colspan="1">L&amp;R AMY, L&amp;R HC, LH &amp;RH (119)</td>
+                  <td align="left" rowspan="1" colspan="1">0.015; 0.025</td>
+                  <td align="left" rowspan="1" colspan="1">0.106±0.047; 0.04±0.0459</td>
+                  <td align="left" rowspan="1" colspan="1">0.0525±0.045; 0.01±0.02108</td>
+                  <td align="left" rowspan="1" colspan="1">0.069; 0.055</td>
+                  <td align="left" rowspan="1" colspan="1">93.1%; 94.5%</td>
+                  <td align="left" rowspan="1" colspan="1">0.963</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <xref ref-type="fig" rid="pone-0050698-g002">Fig. 2</xref>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TS Adults; Healthy Adults</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">36 participants, 21 males, 37.34±10.9 years; 40 participants, 22 males, 32.42±10.7 years</td>
+                  <td align="left" rowspan="1" colspan="1">R HC (6)</td>
+                  <td align="left" rowspan="1" colspan="1">0.11; 0.025</td>
+                  <td align="left" rowspan="1" colspan="1">0.15±0.077; 0.18±0.193</td>
+                  <td align="left" rowspan="1" colspan="1">0.09±0.09; 0.10±0.1</td>
+                  <td align="left" rowspan="1" colspan="1">0·168; 0·10</td>
+                  <td align="left" rowspan="1" colspan="1">83.2% and 90%</td>
+                  <td align="left" rowspan="1" colspan="1">0.91</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <xref ref-type="fig" rid="pone-0050698-g003">Fig. 3</xref>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>TS Children Healthy Children</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">71 participants, 59 males, 11.19±2.2 years 42 participants, 18 males, 10.5±2.43 years</td>
+                  <td align="left" rowspan="1" colspan="1">R HC, R GP (14)</td>
+                  <td align="left" rowspan="1" colspan="1">0.014 0.19</td>
+                  <td align="left" rowspan="1" colspan="1">0.13±0.177 0.29±0.17</td>
+                  <td align="left" rowspan="1" colspan="1">0.09±0.15 0.31±0.15</td>
+                  <td align="left" rowspan="1" colspan="1">0.054 0.21</td>
+                  <td align="left" rowspan="1" colspan="1">94.6% and 79%</td>
+                  <td align="left" rowspan="1" colspan="1">0.90</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <xref ref-type="fig" rid="pone-0050698-g003">Fig. 3</xref>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>High Risk; Low Risk</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">66 participants, 31 males, 33.30±12.90 years; 65 participants, 30 males, 24.79±13.14 years</td>
+                  <td align="left" rowspan="1" colspan="1">L&amp;R Cortical Thickness (26)</td>
+                  <td align="left" rowspan="1" colspan="1">0.181; 0.246</td>
+                  <td align="left" rowspan="1" colspan="1">0.15±0.11; 0.45±0.145</td>
+                  <td align="left" rowspan="1" colspan="1">0.142±0.11; 0.4±0.143</td>
+                  <td align="left" rowspan="1" colspan="1">0.19; 0.29</td>
+                  <td align="left" rowspan="1" colspan="1">81% and 71%</td>
+                  <td align="left" rowspan="1" colspan="1">0.74</td>
+                  <td align="left" rowspan="1" colspan="1">
+                    <xref ref-type="fig" rid="pone-0050698-g004">Fig. 4</xref>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>SZ Adults; TS Adults; Healthy Adults</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">65 participants, 41 males, 42.16±8.71 years; 36 participants, 21 males, 37.34±10.9 years; 40 participants, 22 males, 32.42±10.7 years</td>
+                  <td align="left" rowspan="1" colspan="1">L&amp;R AMY, L&amp;R HC, LH &amp; RH (253)</td>
+                  <td align="left" rowspan="1" colspan="1">0.0153;0.22; 0.625</td>
+                  <td align="left" rowspan="1" colspan="1">0.08±0.14; 0.533±0.28; 0.49±0.31</td>
+                  <td align="left" rowspan="1" colspan="1">0.028±0.045; 0.64±0.31; 0.035±0.27</td>
+                  <td align="left" rowspan="1" colspan="1">0.067; 0.11; 0.737</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Classifying an individual among 3 groups: (1) SZ adult, (2) TS adult, or (3) healthy adult (Fig. S7)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">0.0153; 0</td>
+                  <td align="left" rowspan="1" colspan="1">0.015±0.036; 0.011±0.019</td>
+                  <td align="left" rowspan="1" colspan="1">0.006±0.01; 0.01±0.019</td>
+                  <td align="left" rowspan="1" colspan="1">0.0245; 0.001</td>
+                  <td align="left" rowspan="1" colspan="1">97.76% and 99.999%</td>
+                  <td align="left" rowspan="1" colspan="1">0.999</td>
+                  <td align="left" rowspan="1" colspan="1">Classifying an individual among two groups: (1) SZ adult, and (2) healthy or TS adult.</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">
+                    <bold>SZ Adults; BD Adults; Healthy Adults</bold>
+                  </td>
+                  <td align="left" rowspan="1" colspan="1">65 participants, 41 males, 42.16±8.71 years; 26 participants, 11 males, 37.66±10.36 years; 40 participants, 22 males, 32.42±10.7 years</td>
+                  <td align="left" rowspan="1" colspan="1">L&amp;R AMY, L&amp;R HC, LH &amp; RH (112)</td>
+                  <td align="left" rowspan="1" colspan="1">0.015; 0.11; 0</td>
+                  <td align="left" rowspan="1" colspan="1">0.73±0.177; 0.28±0.24; 0.0515±0.057</td>
+                  <td align="left" rowspan="1" colspan="1">0.078±0.10; 1±0; 0.097±0.133</td>
+                  <td align="left" rowspan="1" colspan="1">0.80; 0.83; 0.046</td>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">Classifying an individual among 3 groups: (1) SZ adult, (2) BD adult, or (3) healthy adult (Fig. S7)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1"/>
+                  <td align="left" rowspan="1" colspan="1">0.14; 0</td>
+                  <td align="left" rowspan="1" colspan="1">0.167±0.079; 0.0121±0.022</td>
+                  <td align="left" rowspan="1" colspan="1">0.165±0.092; 0.011±0.04</td>
+                  <td align="left" rowspan="1" colspan="1">0.14; 0</td>
+                  <td align="left" rowspan="1" colspan="1">86% and 100%</td>
+                  <td align="left" rowspan="1" colspan="1">1</td>
+                  <td align="left" rowspan="1" colspan="1">Classifying an individual among two groups: (1) SZ adult or BD adult, and (2) healthy adult.</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives>
+          <table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>We applied our method for discriminating the brains of persons with a specific neuropsychiatric disorder from those of healthy persons or persons with other neuropsychiatric disorders. The misclassification rates were computed by applying (1) leave-one-out (LOO) analysis to the entire cohort of participants, (2) split-half analysis to10 pairs of training and test samples, each sample with half the total number of brains in the entire cohort, and (3) LOO analysis to each of the 10 test and 10 training samples used for the split half analyses. The differences in the misclassification rates computed in (2) and (3) were added to the misclassification rates computed for the entire cohort to compute the adjusted misclassification rates. These adjusted rates were then used to calculate the sensitivity and specificity of our method for discriminating brains. In addition, we computed the Positive Predictive Value (PPV) that measures the proportion of individuals having the illness (true positives) among all individuals classified by the method as having that illness (true positives+false positives). The PPV gives the likelihood that a person diagnosed with an illness using the classification algorithm actually has the illness and was close to 1 in most of the datasets. Because procedures classified individuals with high sensitivity and specificity, multiple and independent split-half analyses provided strong evidence that the procedures were robust to variations in the sampling of participants who generated the classification algorithm. The performance of three-way classifications was poor, however, suggesting an iterative approach with nested two-way classifications for the accurate discrimination of the brains among three clinical conditions. Using the iterative approach for classifying an adult as healthy, with BD, or with SZ, the misclassification rates were 0 for healthy adult, 0·14 for BD adult, and 0·14 for SZ adult. Similarly, for the iterative approach for classifying an adult as healthy, with TS, or with SZ, the misclassification rates were 0.10 for healthy adult, 0.168 for TS adult, and 0.0245 for SZ adult.</p>
+            </fn>
+            <fn id="nt102">
+              <label/>
+              <p><bold>Brain Regions:</bold> these were the regions for which scaling coefficients differed significantly between diagnostic groups at a p-value&lt;10<sup>−7</sup> and that subsequently were submitted for hierarchical clustering. This column also lists the total number of coeffcients from all brain regions used in each classification.</p>
+            </fn>
+            <fn id="nt103">
+              <label/>
+              <p><bold>ADHD</bold>: Attention Deficit/Hyperactivity Disorder; <bold>HC</bold>: Healthy children; <bold>TS</bold>: Tourette Syndrome; <bold>SZ</bold>: Schizophrenia; <bold>BD</bold>: bipolar disorder; <bold>HA</bold>: healthy adults; <bold>L</bold>: left; <bold>R</bold>: right; <bold>LH</bold>: Left Hemisphere; <bold>RL</bold>, Right Hemisphere; <bold>AMY</bold>: Amygdala; <bold>HC</bold>: Hippocampus; <bold>GP</bold>: Globus Pallidus; <bold>PUT</bold>: Putamen; <bold>TH</bold>: Thalamus; <bold>CN</bold>, Caudate Nucleus; <bold>PPV</bold>: positive predictive value.</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+      </sec>
+      <sec id="s3d">
+        <title>Three-Way Classifications Using Real-World Data and Gold-Standard Clinical Diagnoses</title>
+        <p>In contrast to the two-way classifications, the performance of our method for three-way classifications was poor: In discriminating the brains of SZ adults, BD adults, and healthy adults (HA), for example, the adjusted misclassification rates were 0.80, 0.83, and 0.046, for SZ adults, BD adults, and HA, respectively (<xref ref-type="fig" rid="pone-0050698-g011"><bold>Fig. 11</bold></xref><bold>, left</bold>). However, the brains of SZ adults, BD adults, and HA could be accurately discriminated by applying an iterative, two-way classification strategy in which we first discriminated the brains of HA from those of a combined group of SZ adults and BD adults, and then applying a different set of feature vectors to discriminate the brains of SZ adults from BD adults (<xref ref-type="fig" rid="pone-0050698-g008"><bold>Fig. 8</bold></xref>). Because the brains of SZ adults can be perfectly discriminated from those of BD adults, the misclassification rates for the iterative approach were 0 for HA, 0.14 for BD adult, and 0.14 for SZ adult. Similarly, an iterative, two-way classification strategy was best for discriminating the brains of SZ adults, TS adults, and HA (<xref ref-type="fig" rid="pone-0050698-g011"><bold>Fig. 11</bold></xref><bold>, right</bold>): we first discriminated the brains of SZ adults from those of a combined group of TS adults and HA, and then used a different set of features to discriminate the brains of TS adults from HA (<xref ref-type="fig" rid="pone-0050698-g009"><bold>Fig. 9</bold></xref>). The misclassification rates for this iterative approach were 0.10 for HA, 0.168 for TS adult, and 0.0245 for SZ adult.</p>
+        <fig id="pone-0050698-g011" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0050698.g011</object-id>
+          <label>Figure 11</label>
+          <caption>
+            <title>Three-way classifications of an adult.</title>
+            <p>In our cohort of 40 healthy adults (HA), 26 BD adults, 65 SZ adults, and 36 TS adults, we applied hierarchical clustering to the scaling coefficients for the left and right amygdalae, hippocampi, and hemisphere surfaces that significantly differentiated between (1) both BD and SZ adults from HA (<italic>left</italic>), and (2) both TS and SZ adults from HA (<italic>right</italic>). The two largest groups in the left dendrogram were labeled HA (this group consisted of 40 HA) or BD+SZ adults (which consisted of 26 BD adults and 65 SZ adults). The groups in the right dendrogram were labeled HA+TS (which consisted of 40 HA and 35 TS adults) or SZ (which consisted of 65 SZ and 1 TS adults). Because the method performed poorly for these 3-way classifications of adults, we suggested an iterative two-step procedure for classification of these 3 groups. For classifying an individual as a healthy adult, an adult with BD, or an adult with SZ, first an individual was classified as belonging to one of two groups: (1) a healthy adult, or (2) a patient (i.e., as either an adult with BD or an adult with SZ). Our method classified adults between these two groups with 86% sensitivity and 100% specificity. Second, using a different set of scaling coefficients, the individual was classified as either an adult with BD or an adult with SZ with high sensitivity and specificity (<xref ref-type="fig" rid="pone-0050698-g002"><bold>Fig. 2</bold></xref>). Similarly, for classifying an individual as healthy adult, an adults with SZ or an adult with TS, an individual first was classified between two groups: (1) an adult with SZ, and (2) a healthy adult or an adult with TS. Our method classified an adult between these two groups with 99.99% sensitivity and 97.76% specificity. Second, using a different set of scaling coefficients, the individual was classified as either an adult with TS or a healthy adult (<xref ref-type="fig" rid="pone-0050698-g003"><bold>Fig. 3</bold></xref>). <italic><underline>Left</underline></italic> The pattern of the surface features that best classified an individual as either a healthy adult or a patient (i.e. as either an adults with BD or an adult with SZ) in the first 2-way classification included: smaller anterior and dorsal portions of the left amygdala, and smaller anterior and lateral portions of the right amygdala; smaller posterior regions of the left hippocampus, and smaller posterior portions of the right hippocampus; larger dorsolateral prefrontal, smaller ventro-medial, and larger parietal portions of the left hemisphere, and larger superior-parietal, larger superior-occipital, smaller temporal, and smaller medial portions of the right hemisphere. Regions in <italic>red</italic> are local protrusions, and regions in <italic>violet</italic> are local indentations, in BD adults or SZ adults compared with healthy adults. <italic><underline>Right</underline></italic> The pattern of the surface features that best classified an individual into one of the two groups (either as an adult with SZ, or as a healthy adult or adult with TS) included: anterior and lateral regions of the left and right amygdalae; posterior and lateral regions of the left hippocampus, and anterior and posterior regions of the right hippocampus; anterior, ventral, posterior, medial, and superior regions of the left hemisphere, and medial and lateral regions of the right hemisphere. Regions in <italic>red</italic> are local protrusions, and regions in <italic>violet</italic> are local indentations, in SZ adults compared with healthy adults or adults with TS. <bold>LH</bold>, left hemisphere; <bold>RH</bold>, right hemisphere; <bold>AMY</bold>, amygdala; <bold>HC</bold>, hippocampus; <bold>A</bold>, anterior; <bold>P</bold>, posterior.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0050698.g011" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>Although previous studies have applied various machine-based classification techniques to brain imaging measures in attempts to diagnose people with various neuropsychiatric illnesses, none to our knowledge have achieved a similar degree of accuracy across as wide a range of neuropsychiatric illnesses as those of the present study. We attribute this success to several unique features of our classification strategy. First, we applied these classification techniques across multiple individually and accurately defined brain regions, rather than to a single image of the entire brain, as is common using techniques such as voxel-based morphometry. Second, we used spherical wavelet transforms to capture spatial patterns of variation in local morphological features, rather than relying on individual and group variability of those local features alone when measured at single isolated voxels. Third, we applied hierarchical clustering techniques to identify natural groupings of spatial patterns of variation in morphological features of the brain across participants, rather than applying those clustering techniques to measures at each individual voxel of the brain. This approach was intended to classify brains according to normal and pathological spatial variations in morphological features that would identify unique, distributed, circuit-based disturbances across the brain associated with specific neuropsychiatric illnesses. <xref ref-type="bibr" rid="pone.0050698-Peterson1">[1]</xref>, <xref ref-type="bibr" rid="pone.0050698-Insel1">[61]</xref> The high diagnostic sensitivity and specificity of our classification algorithms across a wide range of disorders and across cohorts of varying sizes, demographic characteristics, and treatment histories, and even in a high risk sample (most of whom were unaffected by manifest illness in their lifetime) demonstrates the exceptional robustness of these methods for imaging-based diagnostic classification of individuals with chronic, well-characterized illness.</p>
+      <p>Our ability to use only morphological features of the brain to classify and diagnose individuals accurately as having a specific neuropsychiatric illness suggests that the brains of the individuals who share a primary clinical diagnosis also likely share a common core neurobiological substrate for that illness, despite the widely known and undeniable etiologic heterogeneity of virtually all neuropsychiatric disorders. This shared substrate does not mean that the brains of people who have a given neuropsychiatric diagnosis are identical. Indeed, visual inspection of the classification trees shows evidence for variability of feature vectors within diagnostic groupings, and even evidence for the presence of morphological subtypes within clusters of a single clinical diagnosis. That variability could represent either the presence of differing etiologic subtypes within a single diagnostic label or the presence of additional, co-occurring illnesses for persons who share a single primary clinical diagnosis, which is common in clinical samples.</p>
+      <p>Potential sources of error in classification included errors in the methods for extracting feature vectors from the images. Errors in extracted features would have increased their variance and therefore reduced the statistical power of our algorithms for accurately classifying and diagnosing individual brains. We have previously demonstrated, however, that our methods for spatial normalization of brain regions to the template brain are highly accurate. <xref ref-type="bibr" rid="pone.0050698-Bansal1">[31]</xref> Similarly, the methods that we used to map surface features conformally onto a unit sphere have also been previously validated. <xref ref-type="bibr" rid="pone.0050698-Angenent2">[62]</xref> Finally, we computed scaling coefficients using the well-validated wavelet transform. The methods applied in each of the various steps, therefore, have been extensively validated previously, and they computed highly accurate scaling coefficients. Another source of potential error in classification was the overlap of the feature spaces across disorders. We validated the structures discovered in our datasets by using leave-one-out and split-half cross validation procedures, which generally demonstrated very low rates of misclassification in independent datasets and a high level of reproducibility in generating the algorithms used for group classifications.</p>
+      <p>Although we expected that the accuracy of our classification algorithms would improve significantly by including as many as possible of the brain regions that are components of the many neural circuits distributed across the brain, cost constraints limited our inclusion of only those brain regions that already had been delineated in sufficient number for each disorder at the time when we trained and validated each classification algorithm. We have listed in <xref ref-type="table" rid="pone-0050698-t001">Table 1</xref> the brain regions initially assessed in the training of each classification algorithm and those that contributed significantly to accurate classification. If and when these algorithms are ever used in future real-world applications, a clinician who had narrowed the diagnostic field for a patient to one of two disorders and who wanted assistance in determining which of those disorders was most likely present would use <xref ref-type="table" rid="pone-0050698-t001">Table 1</xref> to determine the brain regions that need to be defined on the brain images of that patient and then enter those definitions into the relevant diagnostic algorithm. To determine whether a patient's most likely diagnosis is schizophrenia or bipolar disorder, for example, a clinician would need to obtain precisely defined boundaries of the amygdala, hippocampus, and cerebral hemispheres (regions that contribute to accurate discrimination of these disorders) and then enter those boundary definitions into the classification algorithm for schizophrenia and bipolar disorder.</p>
+      <p>Because our classification algorithm requires for its input the highly precise delineation of several brain regions, it is yet unsuited for dissemination as a complete and practical tool to aid in clinical diagnosis, for three reasons. First, the manual delineation of brain regions is onerous, requiring 3–4 days of rater time to define the various brain regions used to train and validate each of our classification algorithms. Any potential future application of the classification algorithms in practical clinical settings will require the development either of a more automated tool for region delineation or the availability of a central expert processing center that can define these brain regions with a high degree of precision and at relatively low cost, neither of which is currently available. Nevertheless, with these caveats limiting the real-world clinical implementation and dissemination of these techniques and algorithms, we have provided compelling evidence demonstrating the proof of concept that accurate neuropsychiatric diagnosis in single individuals is possible using anatomical MRIs alone. Given that demonstration, the way forward to real-world clinical implementation and dissemination is clear: we must now develop methods that will make precise region delineations widely available for front-line clinicians. Therefore, along with other investigators, we are designing and testing algorithms that automatically delineate brain regions and extract their image features with sufficiently high precision to maintain the performance of our diagnostic algorithms. Second, the critical assessment, comparison, and benchmarking of various combinations of algorithms for region delineation and diagnostic classification will be important in determining which of these combinations is most accurate and cost-effective for future applications within real-world settings. Third, because our algorithms were tested in chronically ill patients, they will need to be tested in new-onset patients if ever they are to be used in real-world practice, as the greatest diagnostic confusion tends to arise clinically with newly presenting patients. It is possible that the brain features that our algorithms found to be most discriminating among the various diagnostic categories were the consequences of the chronicity of the illnesses or their treatments, in which case they may not be as accurately discriminating in new-onset patients. This possibility notwithstanding, it is worth noting that most psychiatric illnesses are already chronic by the time patients present for initial clinical evaluation <xref ref-type="bibr" rid="pone.0050698-Substance1">[63]</xref>, <xref ref-type="bibr" rid="pone.0050698-SoRelle1">[64]</xref>, with the duration of illness prior to first treatment ranging from 2 years for schizophrenia <xref ref-type="bibr" rid="pone.0050698-Larsen1">[65]</xref>, to 6–8 years for mood disorders and 9–23 years for anxiety disorders <xref ref-type="bibr" rid="pone.0050698-Wang1">[66]</xref>.</p>
+      <p>Although our classification algorithms identified patients in specific diagnostic groups with remarkable accuracy, they did so in individuals who had chronic, well-defined illness. We intentionally assessed performance of these algorithms in patients whose illnesses were diagnostically clear and unambiguous because we needed confidence in the accuracy of the ground truth clinical labels with which the results of our automated classification could be compared. Those ground truth clinical labels generally are clearest and least ambiguous in chronic patients, for whom the range of symptoms and their clinical courses have fully evolved over time. <xref ref-type="bibr" rid="pone.0050698-Bromet1">[67]</xref>, <xref ref-type="bibr" rid="pone.0050698-Kraemer1">[68]</xref> The accuracy of those ground truth clinical labels was essential for this initial proof-of-concept demonstration that anatomical images alone can accurately diagnose neuropsychiatric illness. The clinical diagnoses were accurate and unambiguous for the participants with either TS, ADHD, SZ, or BD in our cohort because the participants had chronic, well-characterized psychiatric illnesses that had evolved over an average duration of illness of more than 10 years <xref ref-type="bibr" rid="pone.0050698-Blumberg3">[69]</xref>, <xref ref-type="bibr" rid="pone.0050698-Wexler2">[70]</xref>, and their diagnoses had been established using carefully applied, research-based diagnostic instruments (SCID) <xref ref-type="bibr" rid="pone.0050698-American1">[44]</xref> using DSM-IV-TR criteria. Diagnoses were confirmed by two senior, board-certified clinicians who reached clear consensus for the neuropsychiatric diagnoses <xref ref-type="bibr" rid="pone.0050698-Leckman1">[46]</xref> for each participant. Moreover, we note that our classification accuracies were greatest, and in fact near perfect, when discriminating between two disorders (i.e., between TS or ADHD, SZ or BD, or SZ or TS), compared with rates when we were discriminating between one patient group and healthy participants (<xref ref-type="table" rid="pone-0050698-t001">Table 1</xref>). We attribute this remarkable accuracy to the fact that when discriminating two patient groups, morphological abnormalities in both groups deviated from normal, so that the vectors representing those abnormalities in feature space for each group were further from one another than were their distances from the vectors in feature space for the healthy participants.</p>
+      <p>Diagnosing neuropsychiatric illnesses using brain imaging measures alone has the potential to transform the clinical care and research of these conditions. If imaging-based diagnoses prove to be as accurate at the stage of initial diagnosis as they seem to be in the diagnostic classification of our chronically ill patients, they will offer the promise of reducing the cost and morbidity associated with inappropriate treatments that are begun following an incorrect initial clinical diagnosis. In addition, imaging-based classifications will likely facilitate the development of primary or secondary prevention strategies for persons who are at increased risk for developing a neuropsychiatric illness. We have demonstrated the feasibility of identifying people who are at risk for becoming ill by discriminating individuals at high or low risk for familial MDD, a sample that include many individuals who had not yet manifested overt symptoms of illness. One of the most important potential future applications of this work is the use of the natural groupings of brains generated by our algorithms to identify brain-based subtypes within a single clinical diagnosis. Differing neurobiological subtypes of illness likely have differing natural histories and respond differentially to specific therapeutic interventions. Identifying those neurobiological subtypes would thereby facilitate the development of truly individualized plans for clinical care. Finally, brain-based diagnoses and the identification of biological subtypes will reduce the presence of phenocopies that are detrimental to the discovery of the genes that predispose to the development of neuropsychiatric illness.</p>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0050698.s001" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pone.0050698.s001" position="float" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p>
+            <bold>Distribution of Region Definitions by Raters and Diagnoses.</bold>
+          </p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0050698-Peterson1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peterson</surname><given-names>BS</given-names></name> (<year>2010</year>) <article-title>Form Determines Function: New Methods for Identifying the Neuroanatomical Loci of Circuit-Based Disturbances in Childhood Disorders</article-title>. <source>Journal of the American Academy of Child and Adolescent Psychiatry</source> <volume>49</volume>: <fpage>533</fpage>–<lpage>535</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Peterson2">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peterson</surname><given-names>BS</given-names></name>, <name name-style="western"><surname>Choi</surname><given-names>HA</given-names></name>, <name name-style="western"><surname>Hao</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Amat</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Zhu</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Morphology of the Amygdala and Hippocampus in Children and Adults with Tourette Syndrome</article-title>. <source>Archives General Psychiatry</source></mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Peterson3">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peterson</surname><given-names>BS</given-names></name>, <name name-style="western"><surname>Warner</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Bansal</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Zhu</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Hao</surname><given-names>X</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Cortical thinning in persons at increased familial risk for major depression</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>106</volume>: <fpage>6273</fpage>–<lpage>6278</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Toga1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Toga</surname><given-names>AW</given-names></name>, <name name-style="western"><surname>Thompson</surname><given-names>PA</given-names></name> (<year>2003</year>) <article-title>Mapping brain asymmetry</article-title>. <source>Nature Neuroscience</source> <volume>4</volume>: <fpage>37</fpage>–<lpage>48</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Luders1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Luders</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Narr</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Thompson</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Woods</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Rex</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Mapping cortical gray matter in the young adult brain: E®ects of gender</article-title>. <source>NeuroImage</source> <volume>26</volume>: <fpage>493</fpage>–<lpage>501</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Davatzikos1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Davatzikos</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Shen</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Gur</surname><given-names>RC</given-names></name>, <name name-style="western"><surname>Wu</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Liu</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Whole-brain morphometric study of schizophrenia reveals a spatially complex set of focal abnormalities</article-title>. <source>Arch General Psychiatry</source> <volume>62</volume>: <fpage>1218</fpage>–<lpage>1227</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Csernansky1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Csernansky</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>Schindler</surname><given-names>MK</given-names></name>, <name name-style="western"><surname>Splinter</surname><given-names>NR</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Gado</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Abnormalities of thalamic volume and shape in schizophrenia</article-title>. <source>Am J Psychiatry</source> <volume>161</volume>: <fpage>896</fpage>–<lpage>902</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Lao1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lao</surname><given-names>Z</given-names></name>, <name name-style="western"><surname>Shen</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Xue</surname><given-names>Z</given-names></name>, <name name-style="western"><surname>Karacali</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Resnick</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Morphological classification of brains via high-dimensional shape transformations and machine learning methods</article-title>. <source>NeuroImage</source> <volume>21</volume>: <fpage>46</fpage>–<lpage>57</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Klppel1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Klöppel</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Stonnington</surname><given-names>CM</given-names></name>, <name name-style="western"><surname>Chu</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Draganski</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Scahill</surname><given-names>RI</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Automatic Classification of MR Scans in Alzheimer's Disease</article-title>. <source>Brain</source> <volume>131</volume>: <fpage>681</fpage>–<lpage>689</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Duchesnay1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Duchesnay</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Cachia</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Roche</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Rivière</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Cointepas</surname><given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Classification Based on Cortical Folding Patterns</article-title>. <source>IEEE Trans on Medical Imaging</source> <volume>26</volume>: <fpage>553</fpage>–<lpage>565</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Davatzikos2">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Davatzikos</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Fan</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Wu</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Shen</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Resnick</surname><given-names>SM</given-names></name> (<year>2008</year>) <article-title>Detection of prodromal Alzheimer's disease via pattern classification of MRI</article-title>. <source>Neurobiol Aging</source> <volume>29</volume>: <fpage>514</fpage>–<lpage>523</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Liu1">
+        <label>12</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Liu Y, Teverovskiy L, Carmichael O, Kikinis R, Shenton M, <etal>et al</etal>.. Discriminative MR Image Feature Analysis for Automatic Schizophrenia and Alzheimer's Disease Classification. In: Barillot C, Haynor DR, Hellier P, editors; 2004. Springer-Verlag GmbH, Saint-Malo, France. pp. 393–401.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Teipel1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Teipel</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Born</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Ewers</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Bokde</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Reiser</surname><given-names>MF</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Multivariate deformation-based analysis of brain atrophy to predict Alzheimer's disease in mild cognitive impairment</article-title>. <source>NeuroImage</source> <volume>38</volume>: <fpage>13</fpage>–<lpage>24</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Fan1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fan</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Shen</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Davatzikos</surname><given-names>C</given-names></name> (<year>2005</year>) <article-title>Classification of structural images via high-dimensional image warping, robust feature extraction, and {SVM}</article-title>. <source>Med Image Comput Comput Assist Interv Int Conf</source> <volume>8</volume>: <fpage>1</fpage>–<lpage>8</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Kawasaki1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kawasaki</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Suzuki</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Kherif</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Takahashi</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Zhou</surname><given-names>SY</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Multivariate voxel-based morphometry successfully differentiates schizophrenia patients from healthy controls</article-title>. <source>NeuroImage</source> <volume>34</volume>: <fpage>235</fpage>–<lpage>242</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-MouraoMiranda1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mourao-Miranda</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Bokde</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Born</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Hampel</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Stetter</surname><given-names>M</given-names></name> (<year>2005</year>) <article-title>Classifying brain states and determining the discriminating activation patterns: Support Vector Machine on functional MRI data</article-title>. <source>NeuroImage</source> <volume>28</volume>: <fpage>980</fpage>–<lpage>995</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Herholz1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Herholz</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Salmon</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Perani</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Baron</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Holthoff</surname><given-names>V</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>Discrimination between Alzheimer dementia and controls by automated analysis of multicenter FDG PET</article-title>. <source>NeuroImage</source> <volume>17</volume>: <fpage>302</fpage>–<lpage>316</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Lerch1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lerch</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Pruessner</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Zijdenbos</surname><given-names>AP</given-names></name>, <name name-style="western"><surname>Collins</surname><given-names>DL</given-names></name>, <name name-style="western"><surname>Teipel</surname><given-names>SJ</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Automated cortical thickness measurements from MRI can accurately separate Alzheimer's patients from normal elderly controls</article-title>. <source>Neurobiol Aging</source> <volume>29</volume>: <fpage>23</fpage>–<lpage>30</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Jack1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jack</surname><given-names>CR</given-names></name>, <name name-style="western"><surname>Shiung</surname><given-names>MM</given-names></name>, <name name-style="western"><surname>Gunter</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>O'Brien</surname><given-names>PC</given-names></name>, <name name-style="western"><surname>Weigand</surname><given-names>SD</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Comparison of different MRI brain atrophy rate measures with clinical disease progression in AD</article-title>. <source>Neurology</source> <volume>62</volume>: <fpage>591</fpage>–<lpage>600</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Ashburner1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ashburner</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Friston</surname><given-names>KJ</given-names></name> (<year>2000</year>) <article-title>Voxel-based morphometry–the methods</article-title>. <source>NeuroImage</source> <volume>11</volume>: <fpage>805</fpage>–<lpage>821</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Lochhead1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lochhead</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Parsey</surname><given-names>RV</given-names></name>, <name name-style="western"><surname>Oquendo</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Mann</surname><given-names>JJ</given-names></name> (<year>2004</year>) <article-title>Regional brain gray matter volume differences in patients with bipolar disorder as assessed by optimized voxel-based morphometry</article-title>. <source>Biol Psychiatry</source> <volume>55</volume>: <fpage>1154</fpage>–<lpage>1162</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Ou1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ou</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Davatzikos</surname><given-names>C</given-names></name> (<year>2009</year>) <article-title>DRAMMS: deformable registration via attribute matching and mutual-saliency weighting</article-title>. <source>Inf Process Med Imaging</source> <volume>21</volume>: <fpage>50</fpage>–<lpage>62</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Kates1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kates</surname><given-names>WR</given-names></name>, <name name-style="western"><surname>Abrams</surname><given-names>MT</given-names></name>, <name name-style="western"><surname>Kaufman</surname><given-names>WE</given-names></name>, <name name-style="western"><surname>Breiter</surname><given-names>SN</given-names></name>, <name name-style="western"><surname>Reiss</surname><given-names>AL</given-names></name> (<year>1997</year>) <article-title>Reliability and validity of MRI measurement of the amygdala and hippocampus in children with fragile X syndrome</article-title>. <source>Psychiatry Res: Neuroimaging</source> <volume>75</volume>: <fpage>31</fpage>–<lpage>48</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Watson1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Watson</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Andermann</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Gloor</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Jones-Gotman</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Peters</surname><given-names>T</given-names></name>, <etal>et al</etal>. (<year>1992</year>) <article-title>Anatomic basis of amygdaloid and hippocampal volume measurement by magnetic resonance imaging</article-title>. <source>Neurology</source> <volume>42</volume>: <fpage>1743</fpage>–<lpage>1750</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Peterson4">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peterson</surname><given-names>BS</given-names></name>, <name name-style="western"><surname>Riddle</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Cohen</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Katz</surname><given-names>LD</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>JC</given-names></name>, <etal>et al</etal>. (<year>1993</year>) <article-title>Reduced basal ganglia volumes in tourette's syndrome using three-dimensional reconstruction techniques from magnetic resonance images</article-title>. <source>Neurology</source> <volume>43</volume>: <fpage>941</fpage>–<lpage>949</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Sled1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sled</surname><given-names>GJ</given-names></name>, <name name-style="western"><surname>Zijdenbos</surname><given-names>AP</given-names></name>, <name name-style="western"><surname>Evans</surname><given-names>AC</given-names></name> (<year>1998</year>) <article-title>A Nonparametric Method for Automatic Correction of Intensity Nonuniformity in MRI Data</article-title>. <source>IEEE Trans of Medical Imaging</source> <volume>17</volume>: <fpage>87</fpage>–<lpage>97</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Shattuck1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shattuck</surname><given-names>DW</given-names></name>, <name name-style="western"><surname>Leahy</surname><given-names>RM</given-names></name> (<year>2002</year>) <article-title>BrainSuite: An Automated Cortical Surface Identification Tool</article-title>. <source>Medical Image Analysis</source> <volume>8</volume>: <fpage>129</fpage>–<lpage>142</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Plessen1">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Plessen</surname><given-names>KJ</given-names></name>, <name name-style="western"><surname>Bansal</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Zhu</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Whiteman</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Quackenbush</surname><given-names>GA</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Hippocampus and amygdala morphology in Attention-Deficit/Hyperactivity Disorder</article-title>. <source>Arch Gen Psychiatry</source> <volume>63</volume>: <fpage>795</fpage>–<lpage>807</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Peterson5">
+        <label>29</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peterson</surname><given-names>BS</given-names></name>, <name name-style="western"><surname>Thomas</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Kane</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>others a</surname></name> (<year>2003</year>) <article-title>Basal ganglia volumes in patients with Gilles de la Tourette syndrome</article-title>. <source>Arch Gen Psychiatry</source> <volume>60</volume>: <fpage>415</fpage>–<lpage>424</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Ivanov1">
+        <label>30</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ivanov</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Bansal</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Hao</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Zhu</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Kellendonk</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Morphological Abnormalities of the Thalamus in Youths With Attention Deficit Hyperactivity Disorder</article-title>. <source>Am J Psychiatry</source> <volume>167</volume>: <fpage>397</fpage>–<lpage>408</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Bansal1">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bansal</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Staib</surname><given-names>LH</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Peterson</surname><given-names>BS</given-names></name> (<year>2005</year>) <article-title>ROC-based assessments of 3D cortical surface-matching algorithms</article-title>. <source>Neuroimage</source> <volume>24</volume>: <fpage>150</fpage>–<lpage>162</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Viola1">
+        <label>32</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Viola P, Wells, W. M. Alignment by Maximization of Mutual Information; 1995 June 20–23; Boston, MA. pp. 16–23.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Christensen1">
+        <label>33</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Christensen</surname><given-names>GE</given-names></name>, <name name-style="western"><surname>Rabbitt</surname><given-names>RD</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>MI</given-names></name> (<year>1994</year>) <article-title>3D brain mapping using a deformable neuroanatomy</article-title>. <source>Physics in medicine and biology</source> <volume>39</volume>: <fpage>609</fpage>–<lpage>618</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Haralick1">
+        <label>34</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Haralick R, L. S (1992) Computer and Robot Vision, volume 1: Addison-Wesley Publishing Company.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Rosenfeld1">
+        <label>35</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Rosenfeld A, Kak AC (1982) Digital Picture Processing: Academic Press, Inc.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Lorensen1">
+        <label>36</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lorensen</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Cline</surname><given-names>H</given-names></name> (<year>1987</year>) <article-title>Marching Cubes: a High-Resolution 3D surface construction algorithm</article-title>. <source>Computer Graphics</source> <volume>21</volume>: <fpage>163</fpage>–<lpage>169</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Angenent1">
+        <label>37</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Angenent</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Haker</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Tannenbaum</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kikinis</surname><given-names>R</given-names></name> (<year>1999</year>) <article-title>On the Laplace-Beltrami Operator and Brain Surface Flattening</article-title>. <source>IEEE Trans on Medical Imaging</source> <volume>18</volume>: <fpage>700</fpage>–<lpage>711</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Daubechies1">
+        <label>38</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Daubechies I (2004) Ten Lectures on Wavelets: Society for Industrial and Applied Mathematics.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Cohen1">
+        <label>39</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cohen</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Daubechies</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Jawerth</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Vial</surname><given-names>P</given-names></name> (<year>1993</year>) <article-title>Multiresolution analysis, wavelets and fast algorithms on an interval</article-title>. <source>CR Acad Sci Paris Ser I Math I</source> <volume>316</volume>: <fpage>417</fpage>–<lpage>421</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Schroder1">
+        <label>40</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schroder</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Sweldens</surname><given-names>W</given-names></name> (<year>1995</year>) <article-title>Spherical Wavelets: Efficiently Representing Function on the Sphere</article-title>. <source>Proceedings of the 22nd annual conference on Computer graphics and interactive techniques</source> <fpage>161</fpage>–<lpage>172</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Sweldens1">
+        <label>41</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Sweldens W (1994) The lifting scheme: A custom design construction of biorthogonal wavelets. Department of Mathematics, University of South Carolina.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Duda1">
+        <label>42</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Duda RO, Hart PE (1973) Pattern Classification and Scene Analysis: John Wiley &amp; Sons.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Kaufman1">
+        <label>43</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kaufman</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Birmaher</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Brent</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Rao</surname><given-names>U</given-names></name>, <name name-style="western"><surname>Flynn</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>1997</year>) <article-title>Schedule for Affective Disorders and Schizophrenia for School-Age Children-Present and Lifetime Version (K-SADS-PL): initial reliability and validity data</article-title>. <source>J Am Acad Child Adolesc Psychiatry</source> <volume>36</volume>: <fpage>980</fpage>–<lpage>988</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-American1">
+        <label>44</label>
+        <mixed-citation publication-type="other" xlink:type="simple">American Psychiatric Association Staff (2000) Diagnostic and Statistical Manual of Mental Disorders, DSM-IV-TR Text Revision. 4th ed. Arlington: American Psychiatric Publishing, Incorporated.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Peterson6">
+        <label>45</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peterson</surname><given-names>BS</given-names></name>, <name name-style="western"><surname>Thomas</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Kane</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Scahill</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Basal Ganglia volumes in patients with Gilles de la Tourette syndrome</article-title>. <source>Arch Gen Psychiatry</source> <volume>60</volume>: <fpage>415</fpage>–<lpage>424</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Leckman1">
+        <label>46</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Leckman</surname><given-names>JF</given-names></name>, <name name-style="western"><surname>Sholomskas</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Thompson</surname><given-names>WD</given-names></name>, <name name-style="western"><surname>Belanger</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Weissman</surname><given-names>MM</given-names></name> (<year>1982</year>) <article-title>Best estimate of lifetime psychiatric diagnosis: a methodological study</article-title>. <source>Arch Gen Psychiatry</source> <volume>39</volume>: <fpage>879</fpage>–<lpage>883</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Peterson7">
+        <label>47</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peterson</surname><given-names>BS</given-names></name>, <name name-style="western"><surname>Staib</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Scahill</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Anderson</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>Regional brain and ventricular volumes in Tourette syndrome</article-title>. <source>Arch Gen Psychiatry</source> <volume>58</volume>: <fpage>427</fpage>–<lpage>440</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Wechsler1">
+        <label>48</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wechsler D (1996) WISC-III Manual. Canadian Supplement.Toronto: Psychological Corporation.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Wechsler2">
+        <label>49</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Wechsler D (1991) Wechsler Adult Intelligence Scale-III. New York: Psychological Corporation</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Grados1">
+        <label>50</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Grados</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Russo-Garcia</surname><given-names>KA</given-names></name> (<year>1999</year>) <article-title>Comparison of the Kaufman Brief Intelligence Test and the Wechsler Intelligence Scale for Children-Third Edition in economically disadvantaged African American youth</article-title>. <source>J Clin Psychol</source> <volume>55</volume>: <fpage>1063</fpage>–<lpage>1071</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Pauls1">
+        <label>51</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Pauls DL, Hurst CR (1996) Schedule for Tourette and Other Behavioral Syndromes. New Haven, Conn.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Leckman2">
+        <label>52</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Leckman</surname><given-names>JF</given-names></name>, <name name-style="western"><surname>Riddle</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Hardin</surname><given-names>MT</given-names></name>, <name name-style="western"><surname>Ort</surname><given-names>SI</given-names></name>, <name name-style="western"><surname>Swartz</surname><given-names>KL</given-names></name>, <etal>et al</etal>. (<year>1989</year>) <article-title>The Yale Global Tic Severity Scale: initial testing of a clinician-rated scale of tic severity</article-title>. <source>J Am Acad Child Adolesc Psychiatry</source> <volume>28</volume>: <fpage>566</fpage>–<lpage>573</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Conners1">
+        <label>53</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Conners</surname><given-names>CK</given-names></name>, <name name-style="western"><surname>Sitarenios</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Parker</surname><given-names>JD</given-names></name>, <name name-style="western"><surname>Epstein</surname><given-names>JN</given-names></name> (<year>1998</year>) <article-title>The revised Conners' Parent Rating Scale (CPRS-R): factor structure, reliability, and criterion validity</article-title>. <source>J Abnorm Child Psychol</source> <volume>26</volume>: <fpage>257</fpage>–<lpage>268</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Conners2">
+        <label>54</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Conners</surname><given-names>CK</given-names></name>, <name name-style="western"><surname>Sitarenios</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Parker</surname><given-names>JD</given-names></name>, <name name-style="western"><surname>Epstein</surname><given-names>JN</given-names></name> (<year>1998</year>) <article-title>Revision and restandardization of the Conners Teacher Rating Scale (CTRS-R): factor structure, reliability, and criterion validity</article-title>. <source>J Abnorm Child Psychol</source> <volume>26</volume>: <fpage>279</fpage>–<lpage>291</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-DuPaul1">
+        <label>55</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DuPaul</surname><given-names>GJ</given-names></name> (<year>1991</year>) <article-title>Parent and teacher ratings of ADHD symptoms: psychometric properties in a community-based sample</article-title>. <source>J Clin Child Psychol</source> <volume>20</volume>: <fpage>245</fpage>–<lpage>253</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Blumberg1">
+        <label>56</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blumberg</surname><given-names>HP</given-names></name>, <name name-style="western"><surname>Kaufman</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Martin</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Whiteman</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>JH</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Amygdala and hippocampal volumes in adolescents and adults with bipolar disorder</article-title>. <source>Arch Gen Psychiatry</source> <volume>60</volume>: <fpage>1201</fpage>–<lpage>1208</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Blumberg2">
+        <label>57</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blumberg</surname><given-names>HP</given-names></name>, <name name-style="western"><surname>Krystal</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Bansal</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Martin</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Dziura</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <source>Age, Rapid-Cycling, and Pharmacotherapy Effects on Ventral Prefrontal Cortex in Bipolar Disorder: A Cross-Sectional Study Biol Psychiatry</source> <volume>59</volume>: <fpage>611</fpage>–<lpage>618</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Wexler1">
+        <label>58</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wexler</surname><given-names>BE</given-names></name>, <name name-style="western"><surname>Zhu</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Bell</surname><given-names>MD</given-names></name>, <name name-style="western"><surname>Nicholls</surname><given-names>S</given-names></name>, <name name-style="western"><surname>S,, Fulbright</surname><given-names>RK</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Neuropsychological Near Normality and Brain Structure Abnormality in Schizophrenia</article-title>. <source>Am J Psychiatry</source> <volume>166</volume>: <fpage>189</fpage>–<lpage>195</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Kay1">
+        <label>59</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kay</surname><given-names>SR</given-names></name>, <name name-style="western"><surname>Fiszbein</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Opler</surname><given-names>L</given-names></name> (<year>1987</year>) <article-title>The Positive and Negative Symptom Scale for Schizophrenia</article-title>. <source>Schizophr Bull</source> <volume>13</volume>: <fpage>261</fpage>–<lpage>276</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Weissman1">
+        <label>60</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Weissman</surname><given-names>MM</given-names></name>, <name name-style="western"><surname>Wickramaratne</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Nomura</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Warner</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Verdeli</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Families at High and Low Risk for Depression</article-title>. <source>Arch Gen Psychiatry</source> <volume>62</volume>: <fpage>29</fpage>–<lpage>36</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Insel1">
+        <label>61</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Insel</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Cuthbert</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Garvey</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Heinssen</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Pine</surname><given-names>DS</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Research Domain Criteria (RDoC): Toward a New Classification Framework for Research on Mental Disorders</article-title>. <source>Am J Psychiatry</source> <volume>167</volume>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Angenent2">
+        <label>62</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Angenent</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Haker</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Tannenbaum</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kikinis</surname><given-names>R</given-names></name> (<year>1999</year>) <article-title>On the Laplace-Beltrami operator and brain surface flattening</article-title>. <source>IEEE Transactions on Medical Imaging</source> <volume>18</volume>: <fpage>700</fpage>–<lpage>711</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Substance1">
+        <label>63</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Substance Abuse and Mental Health Services Administration (2012) Results from the 2010 National Survey on Drug Use and Health: Mental Health Findings. Substance Abuse and Mental Health Services Administration, Rockville, MD.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-SoRelle1">
+        <label>64</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>SoRelle</surname><given-names>R</given-names></name> (<year>2000</year>) <article-title>Nearly half of Americans with severe mental illness do not seek treatment</article-title>. <source>Circulation</source> <volume>101</volume>: <fpage>E66</fpage>–<lpage>E66</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Larsen1">
+        <label>65</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Larsen</surname><given-names>TK</given-names></name>, <name name-style="western"><surname>McGlashan</surname><given-names>TH</given-names></name>, <name name-style="western"><surname>Moe</surname><given-names>LC</given-names></name> (<year>1996</year>) <article-title>First-episode schizophrenia: I. Early course parameters</article-title>. <source>Schizophr Bull</source> <volume>22</volume>: <fpage>241</fpage>–<lpage>256</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Wang1">
+        <label>66</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wang</surname><given-names>PS</given-names></name>, <name name-style="western"><surname>Berglund</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Olfson</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Pincus</surname><given-names>HA</given-names></name>, <name name-style="western"><surname>Wells</surname><given-names>KB</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Failure and delay in initial treatment contact after first onset of mental disorders in the national comorbidity survey replication</article-title>. <source>Archives of General Psychiatry</source> <volume>62</volume>: <fpage>603</fpage>–<lpage>613</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Bromet1">
+        <label>67</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bromet</surname><given-names>EJ</given-names></name>, <name name-style="western"><surname>Kotov</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Fochtmann</surname><given-names>LJ</given-names></name>, <name name-style="western"><surname>Carlson</surname><given-names>GA</given-names></name>, <name name-style="western"><surname>Tanenberg-Karant</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Diagnostic shifts during the decade following first admission for psychosis</article-title>. <source>Am J Psychiatry</source> <volume>168</volume>: <fpage>1186</fpage>–<lpage>1194</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Kraemer1">
+        <label>68</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kraemer</surname><given-names>HC</given-names></name>, <name name-style="western"><surname>Kupfer</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Clarke</surname><given-names>DE</given-names></name>, <name name-style="western"><surname>Narrow</surname><given-names>WE</given-names></name>, <name name-style="western"><surname>Regier</surname><given-names>DA</given-names></name> (<year>2012</year>) <article-title>DSM-5: How Reliable Is Reliable Enough?</article-title> <source>American Journal of Psychiatry</source> <volume>169</volume>: <fpage>13</fpage>–<lpage>15</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Blumberg3">
+        <label>69</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blumberg</surname><given-names>HP</given-names></name>, <name name-style="western"><surname>Krystal</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Bansal</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Martin</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Dziura</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Age, rapid-cycling, and pharmacotherapy effects on ventral prefrontal cortex in bipolar disorder: a cross-sectional study</article-title>. <source>Biol Psychiatry</source> <volume>59</volume>: <fpage>611</fpage>–<lpage>618</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0050698-Wexler2">
+        <label>70</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wexler</surname><given-names>BE</given-names></name>, <name name-style="western"><surname>Zhu</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Bell</surname><given-names>MD</given-names></name>, <name name-style="western"><surname>Nicholls</surname><given-names>SS</given-names></name>, <name name-style="western"><surname>Fulbright</surname><given-names>RK</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Neuropsychological near normality and brain structure abnormality in schizophrenia</article-title>. <source>Am J Psychiatry</source> <volume>166</volume>: <fpage>189</fpage>–<lpage>195</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
