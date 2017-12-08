@@ -95,7 +95,7 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
 
     jats_article_type_list = []
 
-    for article_file in article_list:
+    for article_file in tqdm(article_list):
         article = Article.from_filename(article_file, directory=directory)
         jats_article_type_list.append(article.type_)
 
@@ -118,7 +118,7 @@ def get_plos_article_type_list(article_list=None, directory=corpusdir):
 
     PLOS_article_type_list = []
 
-    for article_file in article_list:
+    for article_file in tqdm(article_list):
         article = Article.from_filename(article_file, directory=directory)
         PLOS_article_type_list.append(article.plostype)
 
@@ -173,7 +173,7 @@ def get_retracted_doi_list(article_list=None, directory=corpusdir):
     retracted_doi_list = []
     if article_list is None:
         article_list = listdir_nohidden(directory)
-    for art in article_list:
+    for art in tqdm(article_list):
         article = Article.from_filename(art)
         article.directory = directory
         if article.type_ == 'retraction':
@@ -202,7 +202,7 @@ def get_amended_article_list(article_list=None, directory=corpusdir):
         article_list = listdir_nohidden(directory)
 
     # check for amendments article type
-    for art in article_list:
+    for art in tqdm(article_list):
         article = Article.from_filename(art)
         article.directory = directory
         if article.amendment:

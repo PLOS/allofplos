@@ -502,7 +502,7 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
         vor_updates_available = check_for_vor_updates()
     vor_updated_article_list = []
     if vor_updates_available:
-        for article in vor_updates_available:
+        for article in tqdm(vor_updates_available):
             updated = download_updated_xml(article, vor_check=True)
             if updated:
                 vor_updated_article_list.append(article)
