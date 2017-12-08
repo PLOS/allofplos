@@ -795,12 +795,13 @@ class Article():
         if self._tree is None:
             if self.local:
                 local_element_tree = et.parse(self.filename)
-                return local_element_tree
+                self._tree = local_element_tree
             else:
                 print("Local article file not found: {}".format(self.filename))
                 return None
         else:
-            return self._tree
+            pass
+        return self._tree
 
     @property
     def root(self):
@@ -839,9 +840,10 @@ class Article():
         Stored as attribute after first access
         """
         if self._local is None:
-            return os.path.isfile(self.filename)
+            self._local = os.path.isfile(self.filename)
         else:
-            return self._local
+            pass
+        return self._local
 
     @property
     def proof(self):
@@ -930,9 +932,10 @@ class Article():
         :rtype: {list}
         """
         if self._contributors is None:
-            return self.get_contributors_info()
+            self._contributors = self.get_contributors_info()
         else:
-            return self._contributors
+            pass
+        return self._contributors
 
     @property
     def authors(self):
