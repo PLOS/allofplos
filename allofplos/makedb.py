@@ -10,8 +10,9 @@ import datetime
 import os
 import random
 
+from tqdm import tqdm
 import sqlite3
-import progressbar
+
 from peewee import Model, CharField, ForeignKeyField, TextField, \
     DateTimeField, BooleanField, IntegerField, IntegrityError
 from playhouse.sqlite_ext import SqliteExtDatabase
@@ -108,8 +109,7 @@ if args.random:
 else:
     max_value = len(allfiles)
 
-bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-for i, file_ in enumerate(randomfiles if args.random else allfiles):
+for i, file_ in enumerate(tqdm(randomfiles if args.random else allfiles)):
     doi = filename_to_doi(file_)
     article = Article(doi)
     journal_name = journal_title_dict[article.journal.upper()]
@@ -185,5 +185,3 @@ for i, file_ in enumerate(randomfiles if args.random else allfiles):
                     corr_author = co_author,
                     article = p_art
                 )
-    bar.update(i+1)
-bar.finish()

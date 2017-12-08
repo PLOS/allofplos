@@ -39,6 +39,8 @@ import json
 import re
 from multiprocessing import Pool
 
+from tqdm import tqdm
+
 
 def soupify(filename):
     '''Opens the given XML file, parses it using Beautiful Soup, and returns the output.'''
@@ -472,7 +474,7 @@ def citation_database(papers, verbose=True):
 
     database = {}
 
-    for i, paper in enumerate(papers):
+    for i, paper in enumerate(tqdm(papers)):
         if verbose:
             paper_doi = plos_paper_doi(paper)
             print("DOI of paper " + str(i + 1) + " is " + paper_doi)
