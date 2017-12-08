@@ -229,16 +229,19 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         existing_articles = [filename_to_doi(file) for file in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
 
-    for doi in tqdm(sorted(dois)):
-        url = URL_TMP.format(doi)
-        articleXML = et.parse(url)
-        article_path = doi_to_path(doi, directory=tempdir)
-        # create new local XML files
-        if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
-            with open(article_path, 'w') as file:
-                file.write(et.tostring(articleXML, method='xml', encoding='unicode'))
-            if not plos_network:
-                time.sleep(1)
+    if dois:
+        for doi in tqdm(sorted(dois)):
+            url = URL_TMP.format(doi)
+            articleXML = et.parse(url)
+            article_path = doi_to_path(doi, directory=tempdir)
+            # create new local XML files
+            if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
+                with open(article_path, 'w') as file:
+                    file.write(et.tostring(articleXML, method='xml', encoding='unicode'))
+                if not plos_network:
+                    time.sleep(1)
+    else:
+        pass
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
 
@@ -369,13 +372,15 @@ def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amende
     """
     if amended_article_list is None:
         amended_article_list = check_for_amended_articles(directory)
-        print(amended_article_list)
     amended_updated_article_list = []
     print("Checking amended articles...")
-    for article in tqdm(amended_article_list):
-        updated = download_updated_xml(article)
-        if updated:
-            amended_updated_article_list.append(article)
+    if amended_article_list:
+        for article in tqdm(amended_article_list):
+            updated = download_updated_xml(article)
+            if updated:
+                amended_updated_article_list.append(article)
+    else:
+        pass
     print(len(amended_updated_article_list), 'amended articles downloaded with new xml.')
     return amended_updated_article_list
 
