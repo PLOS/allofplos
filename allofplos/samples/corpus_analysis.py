@@ -350,7 +350,7 @@ def get_article_metadata(article_file, size='small'):
     pubdate = article.pubdate
     counts = article.counts
     (fig_count, table_count, page_count) = ('', '', '')
-    body_word_count = article.body_word_count
+    body_word_count = article.word_count
     related_articles = article.related_dois
     abstract = article.abstract
     try:
