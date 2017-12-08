@@ -8,6 +8,7 @@ from .plos_corpus import get_all_solr_dois
 from .transformations import filename_to_doi
 
 
+
 class Corpus():
     """A collection of PLOS articles.
     """
@@ -56,6 +57,8 @@ class Corpus():
                 file_list = []
             self._files = file_list
         else:
+            pass
+
         return self._files
 
     @property
@@ -84,5 +87,4 @@ class Corpus():
             sample_doi_list = random.sample(doi_list, count)
 
         return sample_doi_list
-
 
