@@ -10,9 +10,10 @@ examples of analysis. It can:
 import collections
 import csv
 import os
-import progressbar
 import random
 import requests
+
+from tqdm import tqdm
 
 from .. import corpusdir, newarticledir
 
@@ -94,7 +95,7 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
 
     jats_article_type_list = []
 
-    for article_file in article_list:
+    for article_file in tqdm(article_list):
         article = Article.from_filename(article_file, directory=directory)
         jats_article_type_list.append(article.type_)
 
@@ -117,7 +118,7 @@ def get_plos_article_type_list(article_list=None, directory=corpusdir):
 
     PLOS_article_type_list = []
 
-    for article_file in article_list:
+    for article_file in tqdm(article_list):
         article = Article.from_filename(article_file, directory=directory)
         PLOS_article_type_list.append(article.plostype)
 
@@ -138,16 +139,12 @@ def get_article_types_map(article_list=None, directory=corpusdir):
     if article_list is None:
         article_list = listdir_nohidden(directory)
     article_types_map = []
-    max_value = len(article_list)
-    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-    for i, article_file in enumerate(article_list):
+    for i, article_file in tqdm(article_list):
         article = Article.from_filename(article_file)
         article.directory = directory
         types = [article.type_, article.plostype, article.dtd]
         types = tuple(types)
         article_types_map.append(types)
-        bar.update(i+1)
-    bar.finish()
     return article_types_map
 
 
@@ -176,7 +173,7 @@ def get_retracted_doi_list(article_list=None, directory=corpusdir):
     retracted_doi_list = []
     if article_list is None:
         article_list = listdir_nohidden(directory)
-    for art in article_list:
+    for art in tqdm(article_list):
         article = Article.from_filename(art)
         article.directory = directory
         if article.type_ == 'retraction':
@@ -205,7 +202,7 @@ def get_amended_article_list(article_list=None, directory=corpusdir):
         article_list = listdir_nohidden(directory)
 
     # check for amendments article type
-    for art in article_list:
+    for art in tqdm(article_list):
         article = Article.from_filename(art)
         article.directory = directory
         if article.amendment:
@@ -251,16 +248,12 @@ def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, director
     except FileExistsError:
         pass
     articles_different_list = []
-    max_value = len(article_list)
-    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-    for i, article_file in enumerate(article_list):
+    for article_file in tqdm(article_list):
         updated = download_updated_xml(article_file=article_file)
         if updated:
             articles_different_list.append(article_file)
         if list_provided:
             article_list.remove(article_file)  # helps save time if need to restart process
-        bar.update(i+1)
-    bar.finish()
     print(len(article_list), "article checked for updates.")
     print(len(articles_different_list), "articles have updates.")
     return articles_different_list
@@ -396,14 +389,10 @@ def get_corpus_metadata(article_list=None):
     """
     if article_list is None:
         article_list = listdir_nohidden(corpusdir)
-    max_value = len(article_list)
-    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
     corpus_metadata = []
-    for i, article_file in enumerate(article_list):
+    for article_file in tqdm(article_list):
         metadata = get_article_metadata(article_file)
         corpus_metadata.append(metadata)
-        bar.update(i+1)
-    bar.finish()
     return corpus_metadata
 
 

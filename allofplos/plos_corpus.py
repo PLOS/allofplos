@@ -30,7 +30,6 @@ import tarfile
 import zipfile
 
 import lxml.etree as et
-import progressbar
 import requests
 from tqdm import tqdm
 
@@ -230,20 +229,19 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         existing_articles = [filename_to_doi(file) for file in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
 
-    max_value = len(dois)
-    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-    for i, doi in enumerate(sorted(dois)):
-        url = URL_TMP.format(doi)
-        articleXML = et.parse(url)
-        article_path = doi_to_path(doi, directory=tempdir)
-        # create new local XML files
-        if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
-            with open(article_path, 'w') as file:
-                file.write(et.tostring(articleXML, method='xml', encoding='unicode'))
-            if not plos_network:
-                time.sleep(1)
-        bar.update(i+1)
-    bar.finish()
+    if dois:
+        for doi in tqdm(sorted(dois)):
+            url = URL_TMP.format(doi)
+            articleXML = et.parse(url)
+            article_path = doi_to_path(doi, directory=tempdir)
+            # create new local XML files
+            if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
+                with open(article_path, 'w') as file:
+                    file.write(et.tostring(articleXML, method='xml', encoding='unicode'))
+                if not plos_network:
+                    time.sleep(1)
+    else:
+        pass
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
 
@@ -374,17 +372,15 @@ def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amende
     """
     if amended_article_list is None:
         amended_article_list = check_for_amended_articles(directory)
-        print(amended_article_list)
     amended_updated_article_list = []
-    print("Checking amended articles")
-    max_value = len(amended_article_list)
-    bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-    for i, article in enumerate(amended_article_list):
-        updated = download_updated_xml(article)
-        if updated:
-            amended_updated_article_list.append(article)
-        bar.update(i+1)
-    bar.finish()
+    print("Checking amended articles...")
+    if amended_article_list:
+        for article in tqdm(amended_article_list):
+            updated = download_updated_xml(article)
+            if updated:
+                amended_updated_article_list.append(article)
+    else:
+        pass
     print(len(amended_updated_article_list), 'amended articles downloaded with new xml.')
     return amended_updated_article_list
 
@@ -402,22 +398,15 @@ def get_uncorrected_proofs_list():
         print("Creating new text list of uncorrected proofs from scratch.")
         article_files = listdir_nohidden(corpusdir)
         uncorrected_proofs_list = []
-        max_value = len(article_files)
-        bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-        for i, article_file in enumerate(article_files):
-            bar.update(i+1)
+        for article_file in tqdm(article_files):
             article = Article.from_filename(article_file)
             if article.proof == 'uncorrected-proof':
                 uncorrected_proofs_list.append(article.doi)
-        bar.finish()
         print("Saving uncorrected proofs.")
         with open(uncorrected_proofs_text_list, 'w') as file:
             max_value = len(uncorrected_proofs_list)
-            bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-            for i, item in enumerate(sorted(uncorrected_proofs_list)):
+            for item in tqdm(sorted(uncorrected_proofs_list)):
                 file.write("%s\n" % item)
-                bar.update(i+1)
-            bar.finish()
     return uncorrected_proofs_list
 
 
@@ -513,7 +502,7 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
         vor_updates_available = check_for_vor_updates()
     vor_updated_article_list = []
     if vor_updates_available:
-        for article in vor_updates_available:
+        for article in tqdm(vor_updates_available):
             updated = download_updated_xml(article, vor_check=True)
             if updated:
                 vor_updated_article_list.append(article)
@@ -562,7 +551,8 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     proofs_download_list = []
     if article_list is None:
         article_list = get_uncorrected_proofs_list()
-    for doi in list(set(article_list)):
+    print("Checking directly for additional VOR updates...")
+    for doi in tqdm(list(set(article_list))):
         file = doi_to_path(doi)
         updated = download_updated_xml(file, vor_check=True)
         if updated:
@@ -816,6 +806,7 @@ def main():
         # Returns specific URL query & the number of search results.
         # Parses the returned dictionary of article DOIs, removing common leading numbers, as a list.
         # Compares to list of existing articles in the PLOS corpus folder to create list of DOIs to download.
+    print("Checking for new articles...")
     dois_needed_list = get_dois_needed_list()
 
     # Step 2: Download new articles
