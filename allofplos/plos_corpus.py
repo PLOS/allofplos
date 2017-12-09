@@ -229,19 +229,17 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         existing_articles = [filename_to_doi(file) for file in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
 
-    if dois:
-        for doi in tqdm(sorted(dois)):
-            url = URL_TMP.format(doi)
-            articleXML = et.parse(url)
-            article_path = doi_to_path(doi, directory=tempdir)
-            # create new local XML files
-            if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
-                with open(article_path, 'w') as file:
-                    file.write(et.tostring(articleXML, method='xml', encoding='unicode'))
-                if not plos_network:
-                    time.sleep(1)
-    else:
-        pass
+    for doi in tqdm(sorted(dois), disable=len(dois)==0):
+        url = URL_TMP.format(doi)
+        articleXML = et.parse(url)
+        article_path = doi_to_path(doi, directory=tempdir)
+        # create new local XML files
+        if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
+            with open(article_path, 'w') as file:
+                file.write(et.tostring(articleXML, method='xml', encoding='unicode'))
+            if not plos_network:
+                time.sleep(1)
+
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
 
@@ -374,13 +372,10 @@ def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amende
         amended_article_list = check_for_amended_articles(directory)
     amended_updated_article_list = []
     print("Checking amended articles...")
-    if amended_article_list:
-        for article in tqdm(amended_article_list):
-            updated = download_updated_xml(article)
-            if updated:
-                amended_updated_article_list.append(article)
-    else:
-        pass
+    for article in tqdm(amended_article_list, disable=len(amended_article_list)==0):
+        updated = download_updated_xml(article)
+        if updated:
+            amended_updated_article_list.append(article)
     print(len(amended_updated_article_list), 'amended articles downloaded with new xml.')
     return amended_updated_article_list
 
@@ -501,11 +496,10 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
     if vor_updates_available is None:
         vor_updates_available = check_for_vor_updates()
     vor_updated_article_list = []
-    if vor_updates_available:
-        for article in tqdm(vor_updates_available):
-            updated = download_updated_xml(article, vor_check=True)
-            if updated:
-                vor_updated_article_list.append(article)
+    for article in tqdm(vor_updates_available, disable=len(vor_updates_available)==0):
+        updated = download_updated_xml(article, vor_check=True)
+        if updated:
+            vor_updated_article_list.append(article)
 
     old_uncorrected_proofs_list = get_uncorrected_proofs_list()
     new_uncorrected_proofs_list = list(set(old_uncorrected_proofs_list) - set(vor_updated_article_list))
