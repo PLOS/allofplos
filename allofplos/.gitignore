@@ -5,6 +5,7 @@ allofplos_xml/
 .ipynb_checkpoints/*
 *.nxml
 *.txt
+!dois.txt
 *.json
 *.swp
 *.pyc
