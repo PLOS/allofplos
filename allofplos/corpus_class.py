@@ -5,7 +5,7 @@ from . import corpusdir
 
 from .article_class import Article
 from .plos_corpus import get_all_solr_dois
-from .transformations import filename_to_doi
+from .transformations import filename_to_doi, doi_to_path
 
 
 class Corpus():
@@ -56,6 +56,7 @@ class Corpus():
                 file_list = []
             self._files = file_list
         else:
+            pass
         return self._files
 
     @property
@@ -64,9 +65,11 @@ class Corpus():
 
         if self._dois is None:
             doi_list = [filename_to_doi(article) for article in self.files]
-            return doi_list
+            self._dois = doi_list
         else:
-            return self._dois
+            pass
+
+        return self._dois
 
     def random_dois(self, count):
         """
@@ -85,4 +88,27 @@ class Corpus():
 
         return sample_doi_list
 
+    # @symlinks.setter
+    # def symlinks(self, value):
+    #     """Sets a corpus object using a set of dois.
 
+    #     Converts a filename to DOI using an existing function.
+    #     :param value: filename
+    #     :type value: string
+    #     """
+    #     self.doi = filename_to_doi(value)
+
+    @classmethod
+    def from_dois(cls, dois, source=corpusdir, destination='testdir'):
+        """Initiate a corpus object using a doi list with a source directory.
+        All DOIs must correspond to articles in the source directory
+        """
+        try:
+            os.mkdir(destination)
+        except FileExistsError:
+            print(os.listdir(destination))
+            return None
+        for doi in dois:
+            os.symlink(doi_to_path(doi, directory=source),
+                       doi_to_path(doi, directory=destination))
+        return cls(directory=destination)
