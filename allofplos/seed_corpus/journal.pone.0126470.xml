@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="3.0" xml:lang="en" article-type="research-article">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-14-37415</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0126470</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Topology Analysis of Social Networks Extracted from Literature</article-title>
+<alt-title alt-title-type="running-head">Topology Analysis of Social Networks Extracted from Literature</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" equal-contrib="yes" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Waumans</surname> <given-names>Michaël C.</given-names></name>
+<xref ref-type="aff" rid="aff001"/>
+<xref ref-type="fn" rid="currentaff001"><sup>¤</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Nicodème</surname> <given-names>Thibaut</given-names></name>
+<xref ref-type="aff" rid="aff001"/>
+<xref ref-type="fn" rid="currentaff001"><sup>¤</sup></xref>
+</contrib>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Bersini</surname> <given-names>Hugues</given-names></name>
+<xref ref-type="aff" rid="aff001"/>
+<xref ref-type="fn" rid="currentaff001"><sup>¤</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<addr-line>École polytechnique de Bruxelles CoDE-IRIDIA, ULB, Brussels, Belgium</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Sendina-Nadal</surname> <given-names>Irene</given-names></name>
+<role>Academic Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>Universidad Rey Juan Carlos, SPAIN</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: MCW TN. Performed the experiments: MCW TN. Analyzed the data: MCW TN. Contributed reagents/materials/analysis tools: MCW TN. Wrote the paper: MCW TN HB.</p>
+</fn>
+<fn fn-type="current-aff" id="currentaff001">
+<label>¤</label> <p>Current address: ULB, CoDE-IRIDIA, 50, Av. F. Roosevelt, CP 194/6, B-1050 Brussels, Belgium</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">mwaumans@ulb.ac.be</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<year>2015</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>3</day>
+<month>6</month>
+<year>2015</year>
+</pub-date>
+<volume>10</volume>
+<issue>6</issue>
+<elocation-id>e0126470</elocation-id>
+<history>
+<date date-type="received">
+<day>22</day>
+<month>8</month>
+<year>2014</year>
+</date>
+<date date-type="accepted">
+<day>2</day>
+<month>4</month>
+<year>2015</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2015</copyright-year>
+<copyright-holder>Waumans et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0126470" xlink:type="simple"/>
+<abstract>
+<p>In a world where complex networks are an increasingly important part of science, it is interesting to question how the new reading of social realities they provide applies to our cultural background and in particular, popular culture. Are authors of successful novels able to reproduce social networks faithful to the ones found in reality? Is there any common trend connecting an author’s oeuvre, or a genre of fiction? Such an analysis could provide new insight on how we, as a culture, perceive human interactions and consume media. The purpose of the work presented in this paper is to define the signature of a novel’s story based on the topological analysis of its social network of characters. For this purpose, an automated tool was built that analyses the dialogs in novels, identifies characters and computes their relationships in a time-dependent manner in order to assess the network’s evolution over the course of the story.</p>
+</abstract>
+<funding-group>
+<funding-statement>The authors have no support or funding to report.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="21"/>
+<table-count count="5"/>
+<page-count count="30"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability" xlink:type="simple">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are available from Figshare, under the DOI: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://dx.doi.org/10.6084/m9.figshare.1373869">http://dx.doi.org/10.6084/m9.figshare.1373869</ext-link>.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>The recipe of the Harry Potter saga’s [<xref ref-type="bibr" rid="pone.0126470.ref001">1</xref>–<xref ref-type="bibr" rid="pone.0126470.ref007">7</xref>] success might reside in part in the very unique way its author has installed a familiar kind of social network in a fantasy world. In order for the reader to be seduced by the story of any novel, the social network narrated in the book must not be too distinct from the ones typically found in real life. Interestingly enough, a novel respectful of the social reality of its time also constitutes an interesting temporal compression (many years of the life of many characters held in but one, or a few, books) that allows clever text mining and natural language algorithms to more easily catch the main features of the social network depicted in the novel: its topology (i.e. its degree distribution: is Harry Potter social network scale-free?), its clustering degree (are the friends of Harry friends themselves?) [<xref ref-type="bibr" rid="pone.0126470.ref048">48</xref>] and the way it is being constructed in time (does the social network grow in a random way or does it follow some form of preferential attachment? [<xref ref-type="bibr" rid="pone.0126470.ref049">49</xref>]). Not only is it possible at the end of a book (or the series) to extract and analyse the complete topology of the characters relationship, but it is as well possible to follow the way new characters enter this social network and connect to the existing nodes. Accordingly, a first investigation described in this paper is the study of the various social networks (both their static features and their dynamic nature) found in several popular series and one classic: The seven “Harry Potter” books by J.K. Rowling, the (presently) five “A Song of Ice and Fire” [<xref ref-type="bibr" rid="pone.0126470.ref008">8</xref>–<xref ref-type="bibr" rid="pone.0126470.ref012">12</xref>] books by George R. R. Martin, the three “His Dark Materials” [<xref ref-type="bibr" rid="pone.0126470.ref013">13</xref>–<xref ref-type="bibr" rid="pone.0126470.ref015">15</xref>] books by Philip Pullman, the (presently) three “Lunar Chronicles” books by Marissa Meyer [<xref ref-type="bibr" rid="pone.0126470.ref016">16</xref>–<xref ref-type="bibr" rid="pone.0126470.ref018">18</xref>], the six “The Mortal Instruments” books by Cassandra Clare [<xref ref-type="bibr" rid="pone.0126470.ref019">19</xref>–<xref ref-type="bibr" rid="pone.0126470.ref024">24</xref>], the three “Liveship Traders” [<xref ref-type="bibr" rid="pone.0126470.ref025">25</xref>–<xref ref-type="bibr" rid="pone.0126470.ref027">27</xref>] and four “Rain Wild Chronicles” [<xref ref-type="bibr" rid="pone.0126470.ref028">28</xref>–<xref ref-type="bibr" rid="pone.0126470.ref031">31</xref>] books by Robin Hobb, the fifteen “The Wheel of Time” books by Robert Jordan [<xref ref-type="bibr" rid="pone.0126470.ref032">32</xref>–<xref ref-type="bibr" rid="pone.0126470.ref046">46</xref>], and “Les Misérables” [<xref ref-type="bibr" rid="pone.0126470.ref047">47</xref>] by Victor Hugo.</p>
+<p>Our approach starts with an automated construction of the social networks, based on the processing of dialogs in the text. The characters intervening in each conversations are identified, and a network is formed between them based on these interactions. For instance, if in a given part of the text Harry speaks to Hermione, a new link will connect Harry to Hermione in the evolving social network if there were none. Similarly, the first time Jean Valjean addresses Cosette, both the new node “Cosette” and its new link to “Valjean” will be added. The temporal evolution of the network is assumed to follow the succession of dialogs in the books, meaning that new characters appear in a network as soon as they are involved in a conversation. However, we do not believe such an assumption has a major impact on the presented results.</p>
+<p>The various steps leading to the creation of this network, as well as the finished social network, provide with a series of key features that form what appears to be a signature of each story, characterizing important elements relating to it, such as the scope, the number of protagonists, and even the author’s style and reading level (for instance, whether or not an author assumes that the reader can keep track of the speakers in a conversation, or the relative proportion of narration within a conversation). This series of attributes leads to a way to characterize each book, and even draw parallels between several of them.</p>
+<p>The rest of the article first summarizes the main assumptions and key decisions taken to automatically construct and follow in time the social networks out of the several books. Then, a more complete and sufficiently detailed technological description of the algorithmic steps will be presented in order for any interested reader to easily perform a very similar analysis of their favourite books or series. Finally, the results will be presented and discussed for the forty-seven best-selling books in terms of typical network measures (size, clustering and degree distribution) and the way these networks evolve in time (preferential attachment).</p>
+</sec>
+<sec id="sec002">
+<title>The main assumptions and algorithmic ideas</title>
+<p>First of all, the software technologies presented in this paper should be as automated and user-friendly as possible for anyone interested to easily extract the final social network and its time evolution out of their favourite book. All the software tools and the way to use them will be made available in the bibliography of the paper. The full extraction starts with a text version of the complete book or the complete series. We have arbitrarily restricted our analysis to forty-seven books, but nothing prevents to easily move ahead and enlarge our statistic samples to any size.</p>
+<p>The key assumption to construct social networks lies in the exploitation of dialogs and successions of dialogs to automate the extraction in time of the nodes and the links. It is far from surprising to base a social network analysis upon communication among the nodes, since the most common interactive mode between people remains verbal communication. Dialogs are also generally easy to detect and to separate; however, indirect speech will be ignored as a result, as it is syntactically impossible to distinguish from regular narration.</p>
+<p>An important algorithmic step of the full protocol is to first isolate one single dialog and insert it in a larger piece of text (including some surrounding narration) referred to as its context. The following key step is to identify the speaker in this context. Then this speaker is connected to the characters he speaks to, and possibly to some others not directly present but mentioned during this dialog. The connectivity pattern to associate with this dialog will be described next but could be: the speakers with all the others, or a fully connected sub-graph (all characters with all).</p>
+<p>Incorporated in the algorithm is the possibility to weight or colour the links (as can be seen in the network <xref ref-type="fig" rid="pone.0126470.g001">Fig 1</xref>) as a result of a sentimental analysis performed on the basis of the words found in the context. In this paper, this additional description will be of no use as our focus is primarily on topology, while for a further characterization of the author’s style or a study extended to weighted graphs, this additional data could be very profitable.</p>
+<fig id="pone.0126470.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Network Extracted from the book “Harry Potter and the Philosopher’s Stone” [<xref ref-type="bibr" rid="pone.0126470.ref001">1</xref>] with sentiment scores (Produced with NetworkX [<xref ref-type="bibr" rid="pone.0126470.ref050">50</xref>]).</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g001"/>
+</fig>
+<p>One last assumption is to follow the network construction in time as a succession of the contexts just described above. This is a simplification: the events in a novel are not always told in chronological order. A classical figure of style is the use of flash-backs such as, for instance, at the heart of the narration in “les Misérables”; similarly, temporal inconsistencies may occur with shifting points of view, as are employed in “A Song of Ice and Fire”. Nonetheless, our interest lies mainly in at what point in the story each new character is introduced, and who they are originally attached to when introduced, to verify that a preferential attachment occurs; with this objective and restrictive frame of analysis (the social network’s evolution is only considered over the course of the book’s story, ignoring all backstory and previously-established continuity), this first-order approximation is expected to hold.</p>
+</sec>
+<sec id="sec003">
+<title>Implementation</title>
+<p>The principle of social network extraction from literature may seem simple in theory but is a very complex task in practice that involves many disciplines such as Natural Language Processing, Named-entity recognition, Co-references resolution, Aliases association, etc. Different steps are required to tackle the task properly, they are reviewed in detail in the following sections but an introduction of the important notions is first required.</p>
+<p>An author tells a story by switching between descriptions of the events occurring during the story (i.e. the narration) and descriptions of the conversations happening between the different <bold><italic>characters</italic></bold> involved. Both are important as they provide information about the characters intervening in the action, but the identification and analysis of the conversations provide a more precise description of the way social links are built through the storytelling.</p>
+<p>Each <bold><italic>conversation</italic></bold> depicted by the author consists in a succession of <bold><italic>dialogs</italic></bold> usually indicated in the text by double quotes (See Figs <xref ref-type="fig" rid="pone.0126470.g002">2</xref> and <xref ref-type="fig" rid="pone.0126470.g003">3</xref> for examples). As in real life, when someone speaks (the <bold><italic>speaker</italic></bold>), he addresses himself to one or more persons; <bold><italic>the audience</italic></bold> (See <xref ref-type="fig" rid="pone.0126470.g002">Fig 2</xref>).</p>
+<fig id="pone.0126470.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Schematic representation of one interaction between characters.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g002"/>
+</fig>
+<fig id="pone.0126470.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Text extract of a conversation from “Harry Potter and The Philosopher’s Stone” [<xref ref-type="bibr" rid="pone.0126470.ref001">1</xref>] displaying the different elements manipulated (i.e. Narration, dialogs, context, conversation,…) and their relation with each other.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g003"/>
+</fig>
+<p>One last notion must be introduced, the <bold><italic>context</italic></bold> in which a conversation takes place. As explained before, the author switches between conversation and narration all trough the storytelling and even during a conversation to provide the reader with more information about the context in which it takes place (i.e. the location, who is involved, who they are… See <xref ref-type="fig" rid="pone.0126470.g003">Fig 3</xref> for a practical example). The analysis of the context is necessary to differentiate between the characters participating in a conversation from those who are just mentioned in it (e.g. “I saw Ronald this morning”: Ronald is not actually participating to the conversation but is mentioned nonetheless), and to identify the speakers even though their actual last name, first name or alias is not being used.</p>
+<p>The speaker is usually identifiable (subject identification inside a dialog by means of grammatical analysis. See section) as well as the characters to whom he talks by analysing the entire conversion with all the dialogs it contains. The challenge resides in the identification of all the names that refer to each character, and building a network dynamically using the information extracted from the conversations.</p>
+<p>To summarize, a novel is composed of many conversations that describe the social interactions between all the characters involved in the action at the specific point in time. Building a network by extracting those information is a complex succession of operations necessary to identify those characters and the way they relate to each other (i.e. who talks to whom).</p>
+<p><bold>Lexicon</bold>:
+<list list-type="bullet">
+<list-item>
+<p><bold><italic>Character:</italic></bold> Person that participates to the story.</p>
+</list-item>
+<list-item>
+<p><bold><italic>Speaker:</italic></bold> Character that speaks to other characters involved.</p>
+</list-item>
+<list-item>
+<p><bold><italic>Audience:</italic></bold> Characters that listen to a speaker.</p>
+</list-item>
+<list-item>
+<p><bold><italic>Dialog:</italic></bold> Line of text occurring in a novel denoted by double quotes to indicate that someone is speaking.</p>
+</list-item>
+<list-item>
+<p><bold><italic>Conversation:</italic></bold> Succession of dialogs representing a conversation between two or more characters.</p>
+</list-item>
+<list-item>
+<p><bold><italic>Context:</italic></bold> Before, during as well as after a conversation, the author may tell us more about the context in which a conversation takes place. This is what we call the context.</p>
+</list-item>
+</list>
+</p>
+<p>To reach this goal an algorithm composed of four consecutive steps was developed: Pre-processing, Extraction of dialogs and conversations, Characters identification and Network building. They are composed of multiple sub operations as depicted in <xref ref-type="fig" rid="pone.0126470.g004">Fig 4</xref> that are detailed in the following sections.</p>
+<fig id="pone.0126470.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Schematic view of the entire algorithm’s process.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g004"/>
+</fig>
+<sec id="sec004">
+<title>Pre-processing</title>
+<p>The text to analyse has to respect a specific format to be processable by the algorithm, formatting it properly is the goal of this step. The pre-processing involves manual intervention on the raw text for some aspects (i.e. Removal of headers, table of content,…) and the application of automated procedures to extract the necessary information from the novel.</p>
+<p><bold>Manual pre-processing</bold> The manual step consists in the acquisition of a proper raw text file. The actual text to analyse may be found in different file formats (i.e. HTML, DOC, EPUB, PS, PDF,…) that need to be converted to TXT. (The software Calibre [<xref ref-type="bibr" rid="pone.0126470.ref051">51</xref>] was used for this purpose). The books may also be formatted in different ways (i.e. Use of double quotes or simple quotes to indicate dialogs, use of multiple spacing or specific formatting to indicate the chapters,…) that are not appropriate for an automated processing to take place. At the end of this manual step, whatever the way chosen to apply those modifications, the text must answer only two requirements:
+<list list-type="bullet"><list-item><p><italic>Use double quotes to denote dialogs (single quotes for apostrophes)</italic>.</p></list-item> <list-item><p><italic>Indicate chapter or scene breaks using empty lines with all other empty lines removed</italic>.</p></list-item></list></p>
+<p><bold>Automated pre-processing</bold> The next step is fully automated. It takes the cleaned raw TXT file as input to compute various information detailed here:
+<list list-type="order"><list-item><p>Split the text in sentences using the CLiPS Pattern [<xref ref-type="bibr" rid="pone.0126470.ref052">52</xref>] tree parser with two modifications applied to the content. First, some punctuation marks are transformed into others that are recognizable by the tree parser function. Then, the multiple lines forming one dialog are grouped in a same entity (by forcing an even number of quotation marks in a single entity).</p></list-item> <list-item><p>A sentiment score is computed for each line of text using the built-in opinion mining tool of CLiPS. (Other libraries like NLTK [<xref ref-type="bibr" rid="pone.0126470.ref052">52</xref>, <xref ref-type="bibr" rid="pone.0126470.ref053">53</xref>, <xref ref-type="bibr" rid="pone.0126470.ref060">60</xref>] with SentiWordNet [<xref ref-type="bibr" rid="pone.0126470.ref054">54</xref>–<xref ref-type="bibr" rid="pone.0126470.ref057">57</xref>] or CoreNLP [<xref ref-type="bibr" rid="pone.0126470.ref058">58</xref>] were considered, but CLiPS was retained as final solution for this implementation as it suited best the needs of this algorithm). Also, if a scene break or chapter break is found, it is indicated by a boolean value.</p></list-item> <list-item><p>Produce a parse tree using the CLiPS Tree parser for each sentence and do a division into chunks (i.e: Chunking consists in the division of a text in parts of word that are syntactically correlated. For examples, see <xref ref-type="fig" rid="pone.0126470.g003">Fig 3</xref> in the section ‘CLiPS Tree Parsing’ and the section ‘Characters identification and alias resolution’). This will also allow the determination of the grammatical roles of the words composing the sentences. (i.e. Subject, verb, complement,…).</p></list-item> <list-item><p>Save the metadata computed on files for later use.</p></list-item></list></p>
+<p>To sum up, this part of the algorithm is concerned with the cleaning of the text as well as the preparation of numerous metadata used for the next steps of the program. Those metadata do include, for each line of text, the sentiment score, the parse tree, the identification of scene or chapter break and the index. (i.e. Each line of text is identified by its index, the number of the line inside the entire novel)</p>
+</sec>
+<sec id="sec005">
+<title>Extraction of dialogs and conversations</title>
+<p>A novel tells us a story in which characters interact at different moments in time. While reading a book, we are able to differentiate the contexts that take place easily, as well as the different dialogs and members of the audience. This is much harder for a program to tackle without a perfect knowledge of the language used. This step tackles the task of solving this aspect of the problematic, it identifies the dialogs and conversations in each dialog and also extracts the context of a conversation. The algorithm proceeds as follows:
+<list list-type="order"><list-item><p><bold>Evaluating dialog spacing:</bold> This consists in a simple counting operation of the number of sentences present between two lines of dialog.</p> <p>To allow a proper division of the story into conversations using an automated process, the values of dialog spacing are analysed during the next step to compute a threshold indicating when one conversation must start and end. Drawing the distribution of those values yields histograms presented in Figs <xref ref-type="fig" rid="pone.0126470.g005">5</xref>, <xref ref-type="fig" rid="pone.0126470.g006">6</xref> and <xref ref-type="fig" rid="pone.0126470.g007">7</xref>.</p> <p>A few general conclusions can be derived from these results. First, the overall shape of the distribution (zeroes excluded since they represent chapter or scene breaks) remains the same and shows a rapidly decreasing profile. Second, each author appears to have a different typical profile as it was observed during the analysis of other series like “Game of Thrones” ([<xref ref-type="bibr" rid="pone.0126470.ref008">8</xref>–<xref ref-type="bibr" rid="pone.0126470.ref012">12</xref>]). This dialog spacing is a distinctive mark of the author’s style. Indeed some authors are more prone to write long sequences of narration, whereas others tend to do the opposite, showing respectively higher or lower value of dialog spacing. Third, the author is more important to the profile than the length of the novel is, even though we reach higher values of spacing in longer novels regardless of the author.</p></list-item> <list-item><p><bold>Conversation size thresholding:</bold> Using the values of dialog spacing, a threshold is computed to evaluate the maximum distance between two lines of dialog belonging to the same conversation.</p> <p>Unsurprisingly, the frequency distribution heavily favours small numbers since lines of dialog tend to be clustered in conversations. Such observation indicates that it is possible to extract most conversations automatically by relying on a threshold value of dialog spacing. This threshold corresponds to the usual number of spacing (i.e. Sentences of story telling) found between two dialogs. After the analysis of a few books, an empirical formula was derived. Namely, the threshold is the highest possible value of spacing, such that its frequency is higher than both 10 and double the frequency of the spacing one unit above, and such that all lower values of spacing have higher frequencies. However, if there is a higher value of spacing with a frequency above 100, this value is used as a threshold instead. This is summarized in the formula that follows:
+<disp-formula id="pone.0126470.e001"><alternatives><graphic id="pone.0126470.e001g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0126470.e001"/><mml:math id="M1" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>t</mml:mi> <mml:mi>h</mml:mi> <mml:mi>r</mml:mi> <mml:mi>e</mml:mi> <mml:mi>s</mml:mi> <mml:mi>h</mml:mi> <mml:mi>o</mml:mi> <mml:mi>l</mml:mi> <mml:mi>d</mml:mi></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mo movablelimits="true" form="prefix">max</mml:mo> <mml:mo>{</mml:mo> <mml:mi>s</mml:mi> <mml:mo>|</mml:mo> <mml:mi>s</mml:mi> <mml:mo>∈</mml:mo> <mml:mi>s</mml:mi> <mml:mi>p</mml:mi> <mml:mi>a</mml:mi> <mml:mi>c</mml:mi> <mml:mi>i</mml:mi> <mml:mi>n</mml:mi> <mml:mi>g</mml:mi> <mml:mspace width="3.33333pt"/><mml:mo>∧</mml:mo> <mml:mspace width="3.33333pt"/></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd/><mml:mtd/><mml:mtd columnalign="left"><mml:mrow><mml:mspace width="6.em"/><mml:mo>[</mml:mo> <mml:mspace width="3.33333pt"/><mml:mo>(</mml:mo> <mml:mspace width="3.33333pt"/><mml:mi>f</mml:mi> <mml:mi>r</mml:mi> <mml:mi>e</mml:mi> <mml:mi>q</mml:mi> <mml:mi>u</mml:mi> <mml:mi>e</mml:mi> <mml:mi>n</mml:mi> <mml:mi>c</mml:mi> <mml:mi>y</mml:mi> <mml:mo>(</mml:mo> <mml:mi>s</mml:mi> <mml:mo>)</mml:mo> <mml:mspace width="3.33333pt"/><mml:mo>≥</mml:mo> <mml:mspace width="3.33333pt"/><mml:mn>10</mml:mn> <mml:mspace width="3.33333pt"/><mml:mo>)</mml:mo> <mml:mspace width="3.33333pt"/><mml:mo>∧</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd/><mml:mtd/><mml:mtd columnalign="left"><mml:mrow><mml:mspace width="1.em"/><mml:mo>(</mml:mo> <mml:mspace width="3.33333pt"/><mml:mi>f</mml:mi> <mml:mi>r</mml:mi> <mml:mi>e</mml:mi> <mml:mi>q</mml:mi> <mml:mi>u</mml:mi> <mml:mi>e</mml:mi> <mml:mi>n</mml:mi> <mml:mi>c</mml:mi> <mml:mi>y</mml:mi> <mml:mo>(</mml:mo> <mml:mi>s</mml:mi> <mml:mo>)</mml:mo> <mml:mspace width="3.33333pt"/><mml:mo>≥</mml:mo> <mml:mspace width="3.33333pt"/><mml:mo>(</mml:mo> <mml:mn>2</mml:mn> <mml:mspace width="3.33333pt"/><mml:mo>*</mml:mo> <mml:mspace width="3.33333pt"/><mml:mi>f</mml:mi> <mml:mi>r</mml:mi> <mml:mi>e</mml:mi> <mml:mi>q</mml:mi> <mml:mi>u</mml:mi> <mml:mi>e</mml:mi> <mml:mi>n</mml:mi> <mml:mi>c</mml:mi> <mml:mi>y</mml:mi> <mml:mo>(</mml:mo> <mml:mi>s</mml:mi> <mml:mo>+</mml:mo> <mml:mn>1</mml:mn> <mml:mo>)</mml:mo> <mml:mo>)</mml:mo> <mml:mspace width="3.33333pt"/><mml:mo>)</mml:mo> <mml:mspace width="3.33333pt"/><mml:mo>∧</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd/><mml:mtd/><mml:mtd columnalign="left"><mml:mrow><mml:mspace width="0.33333.em"/><mml:mo>(</mml:mo> <mml:mo>∀</mml:mo> <mml:mspace width="3.33333pt"/><mml:mi>t</mml:mi> <mml:mspace width="3.33333pt"/><mml:mo>∈</mml:mo> <mml:mspace width="3.33333pt"/><mml:mi>s</mml:mi> <mml:mi>p</mml:mi> <mml:mi>a</mml:mi> <mml:mi>c</mml:mi> <mml:mi>i</mml:mi> <mml:mi>n</mml:mi> <mml:mi>g</mml:mi> <mml:mspace width="3.33333pt"/><mml:mo>:</mml:mo> <mml:mi>f</mml:mi> <mml:mi>r</mml:mi> <mml:mi>e</mml:mi> <mml:mi>q</mml:mi> <mml:mi>u</mml:mi> <mml:mi>e</mml:mi> <mml:mi>n</mml:mi> <mml:mi>c</mml:mi> <mml:mi>y</mml:mi> <mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo> <mml:mspace width="3.33333pt"/><mml:mo>&gt;</mml:mo> <mml:mspace width="3.33333pt"/><mml:mi>f</mml:mi> <mml:mi>r</mml:mi> <mml:mi>e</mml:mi> <mml:mi>q</mml:mi> <mml:mi>u</mml:mi> <mml:mi>e</mml:mi> <mml:mi>n</mml:mi> <mml:mi>c</mml:mi> <mml:mi>y</mml:mi> <mml:mo>(</mml:mo> <mml:mi>s</mml:mi> <mml:mo>)</mml:mo> <mml:mo>)</mml:mo> <mml:mspace width="3.33333pt"/><mml:mo>]</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd/><mml:mtd/><mml:mtd columnalign="left"><mml:mrow><mml:mspace width="17.em"/><mml:mo>∨</mml:mo> <mml:mi>f</mml:mi> <mml:mi>r</mml:mi> <mml:mi>e</mml:mi> <mml:mi>q</mml:mi> <mml:mi>u</mml:mi> <mml:mi>e</mml:mi> <mml:mi>n</mml:mi> <mml:mi>c</mml:mi> <mml:mi>y</mml:mi> <mml:mo>(</mml:mo> <mml:mi>s</mml:mi> <mml:mo>)</mml:mo> <mml:mspace width="3.33333pt"/><mml:mo>&gt;</mml:mo> <mml:mspace width="3.33333pt"/><mml:mn>100</mml:mn> <mml:mo>}</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(1)</label></disp-formula>
+For “Harry Potter and the Philosopher’s Stone” [<xref ref-type="bibr" rid="pone.0126470.ref001">1</xref>], the computed value is 8 (i.e. If more than eight lines do separate two dialogs, they do belong to two different conversations), as shown on <xref ref-type="fig" rid="pone.0126470.g008">Fig 8</xref>. It is then used to group the dialogs and to single out the successive conversations appearing in the novel.</p></list-item> <list-item><p><bold>Context generation:</bold> To improve the process of speaker identification coming later on during the process, the conversation is being extended to a context. (i.e. The named entities found inside the corresponding context are used to enrich the information already extracted from the dialogs forming a conversation) It is built by listing every sentence from the end of the previous conversation up to the start of the next one. (See <xref ref-type="fig" rid="pone.0126470.g003">Fig 3</xref>)</p></list-item> <list-item><p><bold>Dialog metadata extraction:</bold> For each dialog found inside the novel some metadata are computed and grouped to facilitate further processing. The result is a map of every dialog associated with the index of the dialog (i.e. the index of the corresponding line inside the novel, indicating the time at which the dialog occurs) as well as two fields, ‘from’ and ‘to’, containing the names identified and corresponding respectively to the speaker and the audience. Here they are explained with an example in <xref ref-type="fig" rid="pone.0126470.g009">Fig 9</xref>.</p></list-item></list></p>
+<fig id="pone.0126470.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Dialog spacing distribution in “Harry Potter and the Philosopher’s Stone” [<xref ref-type="bibr" rid="pone.0126470.ref001">1</xref>].</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g005"/>
+</fig>
+<fig id="pone.0126470.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>Dialog spacing distribution in “A Game of Thrones” [<xref ref-type="bibr" rid="pone.0126470.ref008">8</xref>].</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g006"/>
+</fig>
+<fig id="pone.0126470.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>Dialog spacing distribution in “Les Misérables” [<xref ref-type="bibr" rid="pone.0126470.ref047">47</xref>].</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g007"/>
+</fig>
+<fig id="pone.0126470.g008" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g008</object-id>
+<label>Fig 8</label>
+<caption>
+<title>Dialog spacing distribution in “Harry Potter and the Philosopher’s Stone” [<xref ref-type="bibr" rid="pone.0126470.ref001">1</xref>] with the computed threshold.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g008"/>
+</fig>
+<fig id="pone.0126470.g009" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g009</object-id>
+<label>Fig 9</label>
+<caption>
+<title>Example of input sentence and it’s related metadata.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g009"/>
+</fig>
+<p><bold>Metadata</bold>:
+<list list-type="bullet">
+<list-item>
+<p><bold>Index of the sentence:</bold> Position of the line of dialog inside the entire text.</p>
+</list-item>
+<list-item>
+<p><bold>Identified speakers (‘from’):</bold> Character that speaks at that moment.</p>
+</list-item>
+<list-item>
+<p><bold>List of the identified characters within the dialog (‘to’):</bold> Characters mentioned in the dialog. This list contains all the NNPs (proper nouns) identified in it.</p>
+</list-item>
+<list-item>
+<p><bold>Index of the context to which that dialog belongs:</bold> Corresponding to the number of the context (i.e. enriched conversation) in which the dialog falls after the conversation thresholding.</p>
+</list-item>
+</list></p>
+<p>At the end of this step, dialogs are grouped into conversations, each of which has an associated context, and each dialog is enriched with metadata that serves as the basis to build a social network.</p>
+</sec>
+<sec id="sec006">
+<title>Characters identification and alias resolution</title>
+<p>Another problem occurring while reading a novel is the speaker and characters identification. “Who talks to whom?” illustrates the problem perfectly. Once again, this task is easy for a human but may be more difficult for a program depending on the writing style of the author (Namely, whether the book is intended for a young or an adult readership). Identifying the characters involved in the action and more specifically distinguishing the speaker from the audience is another difficult problem to solve.</p>
+<p>This part of the algorithm runs in two steps and relies on the metadata previously computed (i.e. the parse tree and chunks already provide the information about the NNPs that are looked for) (See <xref ref-type="table" rid="pone.0126470.t001">Table 1</xref>).
+<list list-type="order"><list-item><p><bold>First</bold>, the program takes each dialog of the novel and checks its grammatical structure computed while pre-processing the novel. During the metadata extraction in the previous step, the program already checked for the presence of dialog tags (bits of narration interspersed within the dialog to indicate a speaker, e.g. “he said”) and extracted a speaker if the subject of that dialog tag was a proper noun (NNP tag), or a succession of proper nouns and stores it as the “from” field of the dialog occurrence. Otherwise, the speaker is not yet clearly identified, and that field is blank. (See <xref ref-type="fig" rid="pone.0126470.g010">Fig 10</xref> for an example and section for more information).</p></list-item> <list-item><p><bold>Second</bold>, the problem of aliases is handled. Almost every characters possesses one or more aliases used through the story telling by the author at different moments (i.e. name, diminutive, title, full name,…) This step handles this problem by building an alias network which provides an association of the different names with their aliases and replaces their occurrences by the same name; the key of the character. Doing so, instead of risking to create a network full of characters different in appearance but actually identical, the algorithm is able to reduce the size of the resulting network by properly identifying the characters.</p></list-item></list></p>
+<table-wrap id="pone.0126470.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Part-of-speech tags.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0126470.t001g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.t001"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"><bold>Tag</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Meaning</bold></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">CC</td>
+<td align="left" rowspan="1" colspan="1">Conjunction, Coordination</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">CD</td>
+<td align="left" rowspan="1" colspan="1">Cardinal number</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">DT</td>
+<td align="left" rowspan="1" colspan="1">Determiner</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">EC</td>
+<td align="left" rowspan="1" colspan="1">Existential there</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">FW</td>
+<td align="left" rowspan="1" colspan="1">Foreign word</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">IN</td>
+<td align="left" rowspan="1" colspan="1">Conjunction, subordinating proposition</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">JJ, JJR, JJS</td>
+<td align="left" rowspan="1" colspan="1">Adjective (regular, comparative and superlative)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">LS</td>
+<td align="left" rowspan="1" colspan="1">List item marker</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MD</td>
+<td align="left" rowspan="1" colspan="1">Verb, modal auxiliary</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">NN, NNS, NNP, NNPS</td>
+<td align="left" rowspan="1" colspan="1">Noun (singular or mass, plural, proper singular, proper plural)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PDT</td>
+<td align="left" rowspan="1" colspan="1">Predeterminer</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">POS</td>
+<td align="left" rowspan="1" colspan="1">Possessive ending</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">PRP, PRP$</td>
+<td align="left" rowspan="1" colspan="1">Pronoun (personal, possessive)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">RB,RBR,RBS,RP</td>
+<td align="left" rowspan="1" colspan="1">Adverb (regular, comparative, superlative, particle)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">SYM</td>
+<td align="left" rowspan="1" colspan="1">Symbol</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">TO</td>
+<td align="left" rowspan="1" colspan="1">Infinitival to</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">UH</td>
+<td align="left" rowspan="1" colspan="1">Interjection</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">VB, VBZ, VBP, VBD, VBN, VBG</td>
+<td align="left" rowspan="1" colspan="1">Verb (base form, 3rd person singular present, non-3rd person singular present, past tense, past participle, gerund or present participle)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">WDT, WP, WP$, WRB</td>
+<td align="left" rowspan="1" colspan="1">Wh-words (determiner, personal pronoun, possessive pronoun, adverb)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">. ,: ()</td>
+<td align="left" rowspan="1" colspan="1">Punctuation marks</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<fig id="pone.0126470.g010" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g010</object-id>
+<label>Fig 10</label>
+<caption>
+<title>Example of the first step of the speaker’s identification process.</title>
+<p>Locating the subject of the sentence.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g010"/>
+</fig>
+<p>Two main flaws arise from the use of the alias table however: the inability to identify characters from other proper nouns, and the handling of NNP tags that are applied to several characters, such as titles and family names.
+<disp-quote>
+<p>The part-of-speech tags are based on the Brown Corpus [<xref ref-type="bibr" rid="pone.0126470.ref059">59</xref>] reduced in size to fit the orientation of the Penn Treebank [<xref ref-type="bibr" rid="pone.0126470.ref061">61</xref>, <xref ref-type="bibr" rid="pone.0126470.ref062">62</xref>] used. It eliminates redundancy by taking into account lexical as well as syntactic information. Most NLP tools use those.</p>
+</disp-quote></p>
+<p>The former problem derives from the use of the Pen Treebank [<xref ref-type="bibr" rid="pone.0126470.ref061">61</xref>, <xref ref-type="bibr" rid="pone.0126470.ref062">62</xref>]) tag set as the primary identifier of character names. Indeed, a variety of proper nouns are tagged as NNPs (Example: Gryffindor) with no regard to what they refer to. Because of this, we are unable to differentiate capitalized neologisms or named locations from character names.</p>
+<p>The second error comes from titles and family names when several characters share them. It is impossible to fully solve those aliases, but a workaround (the alias table) was implemented to prevent those names from being referred to as mush as possible (e.g. “Professor McGonagall” would be included in the entry “McGonagall” but not professor, but if the author refers to her used only her title then the node “Professor” would still appear).</p>
+<p>It should also be noted that the algorithm is incapable of differentiating between two characters who would have the same name. This could be corrected by employing a disambiguation algorithm; however, that only results to minor errors: characters in a fictional narrative, especially in writing, are rarely named the same way [<xref ref-type="bibr" rid="pone.0126470.ref063">63</xref>], as that could cause confusion even for a normal reader. This is consistent with other research in stylistic analysis over works of fiction, such as Argamon et al. [<xref ref-type="bibr" rid="pone.0126470.ref064">64</xref>]. It should be noted that a disambiguation algorithm may help the second error mentioned above; this may thus be the subject of future research.</p>
+<p><bold>Speaker identification</bold>. During the metadata extraction step, speakers are identified locally for each dialog (i.e. within the dialog itself), using dialog tags as announced. This means that the resulting speaker identification rate is highly dependent on the author’s style; namely, whether or not they frequently remind the reader of who is speaking, and whether or not they use the character’s name or pronouns to do so.</p>
+<p>The resulting rate of speaker identification (SIR), averaged over all analysed books, is close to 50%, but with a high variance (standard deviation of about 10%). A breakdown by author, however, shows the expected result: the average rate of identification is very different depending on the writer. (See <xref ref-type="table" rid="pone.0126470.t002">Table 2</xref>)</p>
+<table-wrap id="pone.0126470.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.t002</object-id>
+<label>Table 2</label>
+<caption>
+<title>Rate of speaker identification (SIR).</title>
+</caption>
+<alternatives>
+<graphic id="pone.0126470.t002g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.t002"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"><bold>Author</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Average SIR</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Std dev</bold></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">C. Clare</td>
+<td align="char" char="." rowspan="1" colspan="1">50.04%</td>
+<td align="left" rowspan="1" colspan="1">3.2%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">R. Hobb</td>
+<td align="char" char="." rowspan="1" colspan="1">50.46%</td>
+<td align="left" rowspan="1" colspan="1">3.5%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">V. Hugo</td>
+<td align="char" char="." rowspan="1" colspan="1">37.85%</td>
+<td align="left" rowspan="1" colspan="1">N/A</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">R. Jordan</td>
+<td align="char" char="." rowspan="1" colspan="1">64.65%</td>
+<td align="left" rowspan="1" colspan="1">5.5%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">R. J. &amp; B. Sanderson</td>
+<td align="char" char="." rowspan="1" colspan="1">52.95%</td>
+<td align="left" rowspan="1" colspan="1">1.01%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">G.R.R Martin</td>
+<td align="char" char="." rowspan="1" colspan="1">48.08%</td>
+<td align="left" rowspan="1" colspan="1">4.41%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">M. Meyer</td>
+<td align="char" char="." rowspan="1" colspan="1">33.81%</td>
+<td align="left" rowspan="1" colspan="1">0.86%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">P.Pullman</td>
+<td align="char" char="." rowspan="1" colspan="1">40.91%</td>
+<td align="left" rowspan="1" colspan="1">4.84%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">J.K. Rowling</td>
+<td align="char" char="." rowspan="1" colspan="1">57.27%</td>
+<td align="left" rowspan="1" colspan="1">3.55%</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t002fn001">
+<p>For V. Hugo the standard deviation could not be computed since only one book was considered.</p>
+</fn>
+<fn id="t002fn002">
+<p>For B. Sanderson, due to the last three <italic>Wheel of Time</italic> books being written by a different author, they have to be considered separately.</p>
+</fn>
+</table-wrap-foot>
+</table-wrap>
+<p>This leads to an acceptable rate of speakers identification. To improve the results obtained, some assumptions are made. For example, in a conversation where only two characters were identified as speakers, the algorithm infers that the characters speak in turn, and fits that pattern to the dialogs where no speaker has been identified yet as best as possible. The same happens when more than two characters are involved in a conversation: the algorithm takes into account the speakers identified for the neighboring dialogs to propose the best possible inferences. Doing so, the average rate of speaker identification reaches over 98%.</p>
+<p>One question arises though: what about the accuracy of this identification? At this stage of development the accuracy cannot be measured for a simple reason: the correct speakers should be identified manually to assess the precision of the classifier. As an example, in <italic>Harry Potter and the Philosopher’s Stone</italic> [<xref ref-type="bibr" rid="pone.0126470.ref001">1</xref>], the correct speaker was identified for 56.9% of individual occurrences.</p>
+<p>However, the bulk of the analysis does not rely on individual occurrences, but on networks built from entire conversations. Within each conversation, all the identified speakers are interconnected; thus, as long as a speaker was identified within a conversation, it matters little whether or not it was assigned the correct specific lines of dialog, as it will result in the same network. This is measured by comparing the list of speakers appearing in each context of the extracted network to the same list in each context of a manually-generated correct graph, and counting how many are present in both lists. For the example of <italic>Philosopher’s Stone</italic>, the proportion of speakers that were correctly found goes up to 82.4% when performing this bulk analysis. To get a better sense of what this represents, a differential between the extracted graph and the correct graph is shown in <xref ref-type="fig" rid="pone.0126470.g011">Fig 11</xref>. 73.3% of the edges from the extracted are present in the correct graphs.</p>
+<fig id="pone.0126470.g011" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g011</object-id>
+<label>Fig 11</label>
+<caption>
+<title>Differential between the extracted and correct networks in “Harry Potter and the Philosopher’s Stone” [<xref ref-type="bibr" rid="pone.0126470.ref001">1</xref>].</title>
+<p>Red edges are incorrect edges, green edges were identified correctly.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g011"/>
+</fig>
+<p>The discrepancy can be explained by some of the assumptions made, especially when assuming a strict order in which characters speak within a conversation. This means that any error propagates quickly within a conversation, for instance by “flipping” the speakers, whereas the characters identified for that conversation might remain correct.</p>
+<p>To synthesize, this step is the most important. It tries to identify all the characters as well as their aliases and allows the identification of a speaker for a majority of the dialogs encountered. However, the interest of the speaker identification may seem useless at first glance. Indeed, building a social network should lead in a first approximation to an undirected network in which all the characters that do present social links are linked together. The speaker identification allows the algorithm to go further by giving a direction to each link, providing for a directed, dynamic network with an edge weight corresponding, for example, to the sentiment transmitted by the speaker. This aspect goes however out of the bounds of this paper and will be the object of later analysis. Here, the capabilities of the algorithm are just demonstrated.</p>
+</sec>
+<sec id="sec007">
+<title>Network building</title>
+<p>The final step of the process consists in the creation of the network. It is the simplest part in principle, but the potential outputs are numerous. Do we want a simple social network (undirected, unweighted, atemporal), do we want the network to be extracted from only one chapter, one context, one book or even an entire series? Do we want it to be dynamic? With sentiment scores? Do we want the scores obtained to be adapted over time or not? Many other networks can also be extracted such as the alias networks, dialog networks… However, for this paper, only social networks are used. Two types of social networks are extracted during the processing, each giving a different characteristic: the “Context Networks” and the “Incremental Networks”.</p>
+<p>The <bold>“Context Networks”</bold> are built using only the dialogs corresponding to a single conversation, for which the network is built. The resulting graph is undirected, since the interactions are considered to be reciprocal between two characters. All characters appearing in the context are interconnected. This is not mandatory: we could identify the speaker and the audience for each dialog and build a directed graph based on that information. Those networks can be used to analyse a precise sequence of storytelling, but are not the ones on which the following results are based; they will be the subject of further research. An example is given in <xref ref-type="fig" rid="pone.0126470.g012">Fig 12</xref> for the context number 64 in the first book of Harry Potter.</p>
+<fig id="pone.0126470.g012" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g012</object-id>
+<label>Fig 12</label>
+<caption>
+<title>Context network #64 in “Harry Potter and the Philosopher’s Stone” [<xref ref-type="bibr" rid="pone.0126470.ref001">1</xref>].</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g012"/>
+</fig>
+<p>The <bold>“Incremental Networks”</bold>, on the other hand, are built iteratively from the context networks by merging all the context network until some point in the story; in other words, by taking all context networks from the first conversation to a given conversation, and merging them together. An example is given in <xref ref-type="fig" rid="pone.0126470.g013">Fig 13</xref> with 498 contexts considered on the left side (<xref ref-type="fig" rid="pone.0126470.g013">Fig 13</xref> left), roughly corresponding to a specific period of the novel in which only the family members of the main character, Harry, are interacting, as well as a few professors; and the global network on the right side (<xref ref-type="fig" rid="pone.0126470.g013">Fig 13</xref> right), built using the 1670 dialogs available.</p>
+<fig id="pone.0126470.g013" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g013</object-id>
+<label>Fig 13</label>
+<caption>
+<title>Example of incremental networks for “Harry Potter and the Philosopher’s Stone” [<xref ref-type="bibr" rid="pone.0126470.ref001">1</xref>].</title>
+<p>On the left, context 0 to 498. On the right, context 0 to 1670.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g013"/>
+</fig>
+<p>Every network is exported to the CSV format and drawn as a PNG image, while the final incremental graph, representing the social network at the end of the story, is written to the additional formats GEXF and JSON. The possibilities of outputs are obviously numerous and will undergo additional research in the future. <xref ref-type="fig" rid="pone.0126470.g014">Fig 14</xref> shows an example of such a final graph from the Harry Potter series.</p>
+<fig id="pone.0126470.g014" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g014</object-id>
+<label>Fig 14</label>
+<caption>
+<title>Network Extracted from the book “Harry Potter and the Order of the Phoenix” [<xref ref-type="bibr" rid="pone.0126470.ref005">5</xref>].</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g014"/>
+</fig>
+<p>In summary, the algorithmic steps just described are able to generate many different types of networks all answering to specific questions. In this paper, we have decided to restrict our analysis on one main aspect: the topology and the time evolution of the characters social network (preferential attachment or not) as well as how they do compare with their real counterparts.</p>
+</sec>
+</sec>
+<sec id="sec008" sec-type="results">
+<title>Results</title>
+<p>As outcome of the execution of the algorithm many results can be obtained. For the purpose of this article, mainly one example resulting from the social network extraction on “Harry Potter” is examined more deeply, even though the other books and series were analyzed.</p>
+<sec id="sec009">
+<title>Degree distribution</title>
+<p>The degree distributions for each book (See <xref ref-type="fig" rid="pone.0126470.g015">Fig 15</xref> for the distributions of the book from the Harry Potter series) show similar profile and appear similar to the typical distribution of a scale-free network.</p>
+<fig id="pone.0126470.g015" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g015</object-id>
+<label>Fig 15</label>
+<caption>
+<title>Degree distribution for all Harry Potter books.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g015"/>
+</fig>
+<p>It should be noted that, while there is a discrepancy with an ideal power law, it is fairly small (as indicated by the <italic>R</italic><sup>2</sup> of the power function fitted to each distribuion) and mostly due to the small size of the networks, meaning that low frequencies for the highest degrees cannot effectively be reached. (See <xref ref-type="table" rid="pone.0126470.t003">Table 3</xref>) The exponent of the power approximation falls in the [−1, −2] range, which is outside of the [−2, −3] predicted by theory [<xref ref-type="bibr" rid="pone.0126470.ref049">49</xref>] or shown by large, scale-free networks, such as the Web graph [<xref ref-type="bibr" rid="pone.0126470.ref065">65</xref>]. However, social networks do show exponents falling in that range ([<xref ref-type="bibr" rid="pone.0126470.ref066">66</xref>–<xref ref-type="bibr" rid="pone.0126470.ref069">69</xref>]). That the networks extracted from novels fall into the lower end of that range can be attributed to two factors that contribute to increasing the probabilities of higher degrees:
+<list list-type="bullet"><list-item><p>Conversations tend to involve several people at once, either due to several people participating in a conversation or because another character is mentioned during the exchange.</p></list-item> <list-item><p>The specificities of fiction, in particular the so-called “Law of Conservation of Detail” [<xref ref-type="bibr" rid="pone.0126470.ref070">70</xref>], which dictates that any element mentioned in a work of fiction should be relevant (and thus be brought back up again).</p></list-item></list></p>
+<table-wrap id="pone.0126470.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.t003</object-id>
+<label>Table 3</label>
+<caption>
+<title>Exponent of the power approximation.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0126470.t003g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.t003"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"><bold>Book</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Equation</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold><italic>R</italic><sup>2</sup></bold></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 1</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.3166<italic>x</italic><sup>−1.2492</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8463</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 2</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.2785<italic>x</italic><sup>−1.1547</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8888</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 3</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.2320<italic>x</italic><sup>−1.0662</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8586</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 4</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.2668<italic>x</italic><sup>−1.1720</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8722</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 5</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.3177<italic>x</italic><sup>−1.2498</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8836</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 6</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.3088<italic>x</italic><sup>−1.2306</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8816</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 7</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.1994<italic>x</italic><sup>−1.0549</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.7682</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Game of Thrones</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.3585<italic>x</italic><sup>−1.2720</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8723</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Clash of Kings</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.3032<italic>x</italic><sup>−1.2195</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8455</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Storm of Swords</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.3985<italic>x</italic><sup>−1.3360</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.9123</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Feast of Crows</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.2713<italic>x</italic><sup>−1.1743</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8289</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Dance with Dragons</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.3207<italic>x</italic><sup>−1.2020</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8607</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Nothern Lights</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.3685<italic>x</italic><sup>−1.3620</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8951</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Subtle Knife</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.4106<italic>x</italic><sup>−1.4232</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8952</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Amber Spyglass</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.2782<italic>x</italic><sup>−1.1661</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.8238</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Les Misérables</td>
+<td align="left" rowspan="1" colspan="1"><italic>y</italic> = 0.3441<italic>x</italic><sup>−1.5805</sup></td>
+<td align="char" char="." rowspan="1" colspan="1">0.9291</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>These factors, added to the networks’ small size, contribute to increasing the real frequencies for higher degrees. This is true, even when considering a series as a single entity, as shown on <xref ref-type="fig" rid="pone.0126470.g016">Fig 16</xref>.</p>
+<fig id="pone.0126470.g016" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g016</object-id>
+<label>Fig 16</label>
+<caption>
+<title>Degree distribution in the full “Harry Potter” series plus the power approximation.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g016"/>
+</fig>
+</sec>
+<sec id="sec010">
+<title>Clustering coefficient</title>
+<p>The clustering coefficients of the incremental networks produced were also computed (See Figs <xref ref-type="fig" rid="pone.0126470.g017">17</xref> and <xref ref-type="fig" rid="pone.0126470.g018">18</xref>). It shows a clear common trend for all the books: the clustering coefficient starts at a value which is heavily dependent on the first few contexts occurring in the book to quickly stabilize at a value close to its final one. The values then converges slowly.</p>
+<fig id="pone.0126470.g017" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g017</object-id>
+<label>Fig 17</label>
+<caption>
+<title>Clustering coefficient in the Harry Potter books.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g017"/>
+</fig>
+<fig id="pone.0126470.g018" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g018</object-id>
+<label>Fig 18</label>
+<caption>
+<title>Average clustering coefficient for the seven “Harry Potter” books processed as a single entity.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g018"/>
+</fig>
+<p>To assess the significance of the clustering coefficient in a rigorous way, the best point of comparison to use is a similar random graph, whose clustering coefficient is given by <italic>C</italic><sub><italic>rand</italic></sub> = &lt; <italic>k</italic> &gt; /<italic>N</italic>. The same values are computed for the extracted social networks, i.e. their <bold>average clustering coefficient</bold> [<xref ref-type="bibr" rid="pone.0126470.ref048">48</xref>]. The coefficient of a random graph is the proportion of two neighbouring nodes that are connected, equivalent to the probability that two random nodes are connected. The comparison is presented in the table from <xref ref-type="fig" rid="pone.0126470.g004">Fig 4</xref>.</p>
+<p>The order of magnitude of the coefficient is greater for all the books considered, the same type of results that characterizes scale-free networks, as shown for instance in [<xref ref-type="bibr" rid="pone.0126470.ref048">48</xref>, <xref ref-type="bibr" rid="pone.0126470.ref066">66</xref>, <xref ref-type="bibr" rid="pone.0126470.ref067">67</xref>]: one of the common characteristic of social networks [<xref ref-type="bibr" rid="pone.0126470.ref073">73</xref>] is a high ratio of their clustering coefficient to that of a random graph with similar properties (average degree and size).</p>
+<p>Going further in the analysis, the clustering coefficient can be explained with more detail by studying the type of narration of each book. For instance, a book that focuses on a single character or group of characters will present a higher clustering than stories focused on several characters. Similarly, extending the scope of the story across time or space will have a tendency to reduce the resulting social network’s clustering.</p>
+<p>For instance, compare two very different series: <italic>Harry Potter</italic> and <italic>A Song of Ice and Fire</italic>. The former, focused on a single protagonist, features a much higher clustering coefficient than the latter, in which the story follows several protagonist, often very separated in-universe. Another example is within a single series itself, <italic>The Wheel of Time</italic>: the clustering coefficient changes greatly from books where the protagonists are few and/or gathered for a single event (“New Spring”, “The Eye of the World”, “Winter’s Heart”) to when the characters are very separated (“The Dragon Reborn”, “The Gathering Storm”). (See <xref ref-type="table" rid="pone.0126470.t004">Table 4</xref>)</p>
+<table-wrap id="pone.0126470.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.t004</object-id>
+<label>Table 4</label>
+<caption>
+<title>Average clustering coefficient for each book &amp; clustering coefficient for a similar random network.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0126470.t004g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.t004"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"><bold>Book</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Clustering</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Random</bold></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 1</td>
+<td align="char" char="." rowspan="1" colspan="1">48.00%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.47%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 2</td>
+<td align="char" char="." rowspan="1" colspan="1">49.43%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.75%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 3</td>
+<td align="char" char="." rowspan="1" colspan="1">50.80%</td>
+<td align="char" char="." rowspan="1" colspan="1">5.39%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 4</td>
+<td align="char" char="." rowspan="1" colspan="1">52.37%</td>
+<td align="char" char="." rowspan="1" colspan="1">3.92%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 5</td>
+<td align="char" char="." rowspan="1" colspan="1">54.19%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.92%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 6</td>
+<td align="char" char="." rowspan="1" colspan="1">52.07%</td>
+<td align="char" char="." rowspan="1" colspan="1">3.32%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Harry Potter 7</td>
+<td align="char" char="." rowspan="1" colspan="1">49.40%</td>
+<td align="char" char="." rowspan="1" colspan="1">3.92%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Game of Thrones</td>
+<td align="char" char="." rowspan="1" colspan="1">48.35%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.95%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Clash of Kings</td>
+<td align="char" char="." rowspan="1" colspan="1">47.48%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.58%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Storm of Swords</td>
+<td align="char" char="." rowspan="1" colspan="1">45.23%</td>
+<td align="char" char="." rowspan="1" colspan="1">1.82%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Feast of Crows</td>
+<td align="char" char="." rowspan="1" colspan="1">51.51%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.29%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Dance with Dragons</td>
+<td align="char" char="." rowspan="1" colspan="1">53.24%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.62%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Nothern Lights</td>
+<td align="char" char="." rowspan="1" colspan="1">35.41%</td>
+<td align="char" char="." rowspan="1" colspan="1">3.48%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Subtle Knife</td>
+<td align="char" char="." rowspan="1" colspan="1">43.29%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.07%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Amber Spyglass</td>
+<td align="char" char="." rowspan="1" colspan="1">34.55%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.74%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Les Misérables</td>
+<td align="char" char="." rowspan="1" colspan="1">20.55%</td>
+<td align="char" char="." rowspan="1" colspan="1">0.61%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cinder</td>
+<td align="char" char="." rowspan="1" colspan="1">33.16%</td>
+<td align="char" char="." rowspan="1" colspan="1">6.43%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Scarlet</td>
+<td align="char" char="." rowspan="1" colspan="1">52.38%</td>
+<td align="char" char="." rowspan="1" colspan="1">5.93%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cress</td>
+<td align="char" char="." rowspan="1" colspan="1">42.16%</td>
+<td align="char" char="." rowspan="1" colspan="1">5.65%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ship of Magic</td>
+<td align="char" char="." rowspan="1" colspan="1">46.17%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.69%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Mad Ship</td>
+<td align="char" char="." rowspan="1" colspan="1">35.22%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.99%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Ship of Destiny</td>
+<td align="char" char="." rowspan="1" colspan="1">45.82%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.29%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Dragon Keeper</td>
+<td align="char" char="." rowspan="1" colspan="1">33.44%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.43%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Dragon Haven</td>
+<td align="char" char="." rowspan="1" colspan="1">36.5%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.83%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">City of Dragons</td>
+<td align="char" char="." rowspan="1" colspan="1">25.14%</td>
+<td align="char" char="." rowspan="1" colspan="1">3.35%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Blood of Dragons</td>
+<td align="char" char="." rowspan="1" colspan="1">33.29%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.98%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">City of Bones</td>
+<td align="char" char="." rowspan="1" colspan="1">47.76%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.01%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">City of Ashes</td>
+<td align="char" char="." rowspan="1" colspan="1">45.81%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.93%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">City of Glass</td>
+<td align="char" char="." rowspan="1" colspan="1">42.85%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.74%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">City of Fallen Angels</td>
+<td align="char" char="." rowspan="1" colspan="1">43.16%</td>
+<td align="char" char="." rowspan="1" colspan="1">3.80%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">City of Lost Souls</td>
+<td align="char" char="." rowspan="1" colspan="1">42.61%</td>
+<td align="char" char="." rowspan="1" colspan="1">3.04%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">City of Heavenly Fire</td>
+<td align="char" char="." rowspan="1" colspan="1">42.78%</td>
+<td align="char" char="." rowspan="1" colspan="1">3.88%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">New Spring</td>
+<td align="char" char="." rowspan="1" colspan="1">49.62%</td>
+<td align="char" char="." rowspan="1" colspan="1">4.54%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Eye of the World</td>
+<td align="char" char="." rowspan="1" colspan="1">49.35%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.80%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Great Hunt</td>
+<td align="char" char="." rowspan="1" colspan="1">41.08%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.67%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Dragon Reborn</td>
+<td align="char" char="." rowspan="1" colspan="1">37.23%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.22%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Shadow Rising</td>
+<td align="char" char="." rowspan="1" colspan="1">45.16%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.34%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Fires of Heaven</td>
+<td align="char" char="." rowspan="1" colspan="1">38.9%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.29%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Lord of Chaos</td>
+<td align="char" char="." rowspan="1" colspan="1">38.87%</td>
+<td align="char" char="." rowspan="1" colspan="1">1.67%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Crown of Swords</td>
+<td align="char" char="." rowspan="1" colspan="1">38.21%</td>
+<td align="char" char="." rowspan="1" colspan="1">1.79%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Path of Daggers</td>
+<td align="char" char="." rowspan="1" colspan="1">35.32%</td>
+<td align="char" char="." rowspan="1" colspan="1">1.74%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Winter’s Heart</td>
+<td align="char" char="." rowspan="1" colspan="1">42.10%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.29%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Crossroads of Twilight</td>
+<td align="char" char="." rowspan="1" colspan="1">44.4%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.21%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Knife of Dreams</td>
+<td align="char" char="." rowspan="1" colspan="1">39.11%</td>
+<td align="char" char="." rowspan="1" colspan="1">1.35%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">The Gathering Storm</td>
+<td align="char" char="." rowspan="1" colspan="1">34.36%</td>
+<td align="char" char="." rowspan="1" colspan="1">1.80%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Towers of Midnight</td>
+<td align="char" char="." rowspan="1" colspan="1">37.04%</td>
+<td align="char" char="." rowspan="1" colspan="1">1.49%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">A Memory of Light</td>
+<td align="char" char="." rowspan="1" colspan="1">42.37%</td>
+<td align="char" char="." rowspan="1" colspan="1">2.17%</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec011">
+<title>Preferential attachment</title>
+<p>Preferential attachment has also been measured and evaluated. The plots in Figs <xref ref-type="fig" rid="pone.0126470.g019">19</xref> and <xref ref-type="fig" rid="pone.0126470.g020">20</xref> represents the probability that a new node be attached to a node of a given degree, with those degrees being taken a posteriori from the global graph. Those profiles are tested by comparing them to a fitted linear function.</p>
+<fig id="pone.0126470.g019" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g019</object-id>
+<label>Fig 19</label>
+<caption>
+<title>Preferential attachment in “Harry Potter and The Philosopher’s Stone” [<xref ref-type="bibr" rid="pone.0126470.ref001">1</xref>].</title>
+<p>This plot represents the probability, given the degree of a given node at a given time, that a new node being added to the social network will have a connection to that node.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g019"/>
+</fig>
+<fig id="pone.0126470.g020" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g020</object-id>
+<label>Fig 20</label>
+<caption>
+<title>Preferential attachment in “Harry Potter and The Chamber of Secrets” [<xref ref-type="bibr" rid="pone.0126470.ref002">2</xref>].</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g020"/>
+</fig>
+<p>From those graphs, we can observe that books with a single protagonist have a much higher tendency towards preferential attachment. Indeed, we can verify that in other series like “His Dark Materials”, the <italic>R</italic><sup>2</sup> values goes down tremendously due to the introduction of a new protagonist in every new book, where the value of <italic>R</italic><sup>2</sup> remains similar in the series of “Harry Potter” as well as in the other books.</p>
+</sec>
+<sec id="sec012">
+<title>Clustering of the books</title>
+<p>During the extraction of each book’s social network, a number of signature features were identified: the conversation size threshold, the speaker identification rate, the degree distribution’s exponent, and the average clustering coefficient in the final network. Two methods of clustering were implemented to test these four features: hierarchical clustering, using the Ward variance minimization algorithm, on <xref ref-type="fig" rid="pone.0126470.g021">Fig 21</xref>, and a K-means classification, shown in <xref ref-type="table" rid="pone.0126470.t005">Table 5</xref>.</p>
+<fig id="pone.0126470.g021" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.g021</object-id>
+<label>Fig 21</label>
+<caption>
+<title>Dendrogram for the hierarchical clustering of the books using the Ward variance minimization algorithm.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.g021"/>
+</fig>
+<table-wrap id="pone.0126470.t005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0126470.t005</object-id>
+<label>Table 5</label>
+<caption>
+<title>Clusters generated with K-Means, K = 10.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0126470.t005g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0126470.t005"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">‘His Dark Materials 3’</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">‘TLT 2’, ‘TRWC 4’, ‘TRWC 3’, ‘TRWC 2’, ‘TRWC 1’, ‘TWOT 13’, ‘TWOT 12’</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">‘Les Miserables’, ‘TLC 1’, ‘His Dark Materials 1’</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1">‘TLC 3’, ‘TLC 2’, ‘TMI 2’</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">5</td>
+<td align="left" rowspan="1" colspan="1">‘TWOT 01’, ‘TWOT 04’, ‘ASOIAF 1’, ‘TLT 1’, ‘Harry Potter 1’, ‘Harry Potter 2’, ‘Harry Potter 3’, ‘Harry Potter 4’, ‘Harry Potter 5’, ‘Harry Potter 6’, ‘Harry Potter 7’</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">6</td>
+<td align="left" rowspan="1" colspan="1">‘ASOIAF 4’, ‘ASOIAF 5’, ‘ASOIAF 2’, ‘TLT 3’</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1">‘ASOIAF 3’, ‘TMI 4’, ‘TMI 5’, ‘TMI 3’, ‘TMI 1’, ‘His Dark Materials 2’, ‘TWOT 14’</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">8</td>
+<td align="left" rowspan="1" colspan="1">‘TWOT 08’, ‘TWOT 02’, ‘TWOT 03’, ‘TWOT 06’, ‘TWOT 07’, ‘TWOT 05’, ‘TMI 6’, ‘TWOT 11’</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">9</td>
+<td align="left" rowspan="1" colspan="1">‘TWOT 09’, ‘TWOT 00’, ‘TWOT 10’</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>The dendrogram shows a good clustering of certain series: “Harry Potter”, “The Rain Wild Chronicles”, “The Lunar Chronicles” and “The Mortal Instruments”, for instance, appear to be clustered. Other series are more scattered, which can be attributed to a fluctuation of style: for instance, “The Wheel of Time” is separated in three sub-clusters, gathering similar books within the series together.</p>
+<p>The K-means classification yields better results: although some series are still split across several clusters, they are much less numerous than before. With the clustering computed in <xref ref-type="table" rid="pone.0126470.t005">Table 5</xref>, any pair of book is either in the same cluster and part of the same series, or part of different series and in different clusters, with a probability of 83.35%.</p>
+<p>These are preliminary results for a proof of concept, and can be improved further.
+<list list-type="bullet"><list-item><p>We cannot yet suggest a systematic way of pruning the dendrograms to obtain optimal clusters using this method.</p></list-item> <list-item><p>The number of clusters on the K-means analysis was assumed to be the number of distinct authors (10, counting that some books from “The Wheel of Time” were written by a different author). The K-means clustering was tested with other numbers of clusters (from 2 to 15 clusters), and that value did provide an optimum in the separation of the books. This is a weakness of the K-means algorithm, since it assumes that the number of clusters is known in advance</p></list-item></list></p>
+</sec>
+</sec>
+<sec id="sec013">
+<title>Conclusion and future work</title>
+<p>This paper attempted to replicate the type of network analysis that sociologists perform in their daily studies. Is it important for literature to be respectful of social realities, or are the authors of successful novels imaginative enough in imposing in the same social topology of their history the same fantasy as they create in the fictional worlds in which their characters act?</p>
+<p>We proposed a novel algorithm capable of generating multiple types of networks (directed, undirected, weighted, weighted using a sentiment analysis, dynamic) built from novels. Doing so, social networks, alias network, conversation networks now can be generated and analysed. A first social network analysis was also proposed and indicates similarities in the way the social network is presented in novels compared to real life social networks with explanation concerning the differences that might be observed (observation of a power-law degree distribution, high clustering coefficient and an a posteriori preferential attachment verification). Finally, some features were identified that might be relevant in the identification of the author’s style like the dialog spacing and alias network topology.</p>
+<p>Moreover, this network analysis provided with a number of characteristics related to the book’s story and the author’s style:
+<list list-type="bullet"><list-item><p>The dialog spacing frequency (and the resulting threshold value), indicating the relative presence of narration within conversations</p></list-item> <list-item><p>The speaker identification rate, specifically after the metadata extraction step, indicating how much the author reminds their readers of the speakers’ identity</p></list-item> <list-item><p>The degree distribution in the final network</p></list-item> <list-item><p>The average clustering coefficient in the final network, indicating the scope (in time, space and number of protagonists) as well as its relation to the clustering coefficient of a similar random network and its temporal evolution</p></list-item></list></p>
+<p>Once further refined, these features will be combined with other method of stylistic analysis, such as the frequency of function words [<xref ref-type="bibr" rid="pone.0126470.ref064">64</xref>, <xref ref-type="bibr" rid="pone.0126470.ref071">71</xref>], and the stylistic genome (“stylome”) introduced by van Halteren et al. [<xref ref-type="bibr" rid="pone.0126470.ref072">72</xref>].</p>
+<p>As the algorithm is still under development, there are many different ways to improve it and other further analyses are yet to be made considering the vast number of networks that can be generated. A few tasks seem to be most interesting to tackle quickly though. Those concern the formal verification of the character’s identification process as well as the alias table accuracy, solving the coreferences to avoid relying too much on inferences based on the ordering of the dialogs, as well as a sentiment analysis of the dynamic network produced.</p>
+<p>With those objectives as a priority, we hope to refine the algorithm further and apply it to other novels as well as other media and try to verify that those novels are built following the same schema of social network.</p>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>References</title>
+<ref id="pone.0126470.ref001">
+<label>1</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Rowling</surname> <given-names>JK</given-names></name>. <source>Harry Potter and the Philosopher’s Stone</source>. <publisher-name>Bloomsbury Publishing</publisher-name>; <year>1997</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref002">
+<label>2</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Rowling</surname> <given-names>JK</given-names></name>. <source>Harry Potter and the Chamber of Secrets</source>. <publisher-name>Bloomsbury Publishing</publisher-name>; <year>1998</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref003">
+<label>3</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Rowling</surname> <given-names>JK</given-names></name>. <source>Harry Potter and the Prisoner of Azkaban</source>. <publisher-name>Bloomsbury Publishing</publisher-name>; <year>1999</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref004">
+<label>4</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Rowling</surname> <given-names>JK</given-names></name>. <source>Harry Potter and the Goblet of Fire</source>. <publisher-name>Bloomsbury Publishing</publisher-name>; <year>2000</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref005">
+<label>5</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Rowling</surname> <given-names>JK</given-names></name>. <source>Harry Potter and the Order of the Phoenix</source>. <publisher-name>Bloomsbury Publishing</publisher-name>; <year>2003</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref006">
+<label>6</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Rowling</surname> <given-names>JK</given-names></name>. <source>Harry Potter and the Half-Blood Prince</source>. <publisher-name>Bloomsbury Publishing</publisher-name>; <year>2005</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref007">
+<label>7</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Rowling</surname> <given-names>JK</given-names></name>. <source>Harry Potter and the Deathly Hallows</source>. <publisher-name>Bloomsbury Publishing</publisher-name>; <year>2007</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref008">
+<label>8</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Martin</surname> <given-names>GRR</given-names></name>. <source>A Game of Thrones</source>. <publisher-name>Bantam</publisher-name>; <year>1996</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref009">
+<label>9</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Martin</surname> <given-names>GRR</given-names></name>. <source>A Clash of Kings</source>. <publisher-name>Bantam</publisher-name>; <year>1998</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref010">
+<label>10</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Martin</surname> <given-names>GRR</given-names></name>. <source>A Storm of Swords</source>. <publisher-name>Bantam</publisher-name>; <year>1999</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref011">
+<label>11</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Martin</surname> <given-names>GRR</given-names></name>. <source>A Feast For Crows</source>. <publisher-name>Bantam</publisher-name>; <year>2005</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref012">
+<label>12</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Martin</surname> <given-names>GRR</given-names></name>. <source>A Dance With Dragons</source>. <publisher-name>Bantam</publisher-name>; <year>2011</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref013">
+<label>13</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Pullman</surname> <given-names>P</given-names></name>. <source>Northern Lights</source>. <publisher-name>Alfred A. Knopf</publisher-name>; <year>1995</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref014">
+<label>14</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Pullman</surname> <given-names>P</given-names></name>. <source>The Subtle Knife</source>. <publisher-name>Alfred A. Knopf</publisher-name>; <year>1996</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref015">
+<label>15</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Pullman</surname> <given-names>P</given-names></name>. <source>The Amber Spyglass</source>. <publisher-name>Alfred A. Knopf</publisher-name>; <year>1999</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref016">
+<label>16</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Meyer</surname> <given-names>M</given-names></name>. <source>Cinder</source>. <publisher-name>Feiwel &amp; Friends</publisher-name>; <year>2012</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref017">
+<label>17</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Meyer</surname> <given-names>M</given-names></name>. <source>Scarlet</source>. <publisher-name>Feiwel &amp; Friends</publisher-name>; <year>2013</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref018">
+<label>18</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Meyer</surname> <given-names>M</given-names></name>. <source>Cress</source>. <publisher-name>Feiwel &amp; Friends</publisher-name>; <year>2014</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref019">
+<label>19</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Clare</surname> <given-names>C</given-names></name>. <source>City of Bones</source>. <publisher-name>Margaret K. McElderry Books</publisher-name>; <year>2007</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref020">
+<label>20</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Clare</surname> <given-names>C</given-names></name>. <source>City of Ashes</source>. <publisher-name>Margaret K. McElderry Books</publisher-name>; <year>2008</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref021">
+<label>21</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Clare</surname> <given-names>C</given-names></name>. <source>City of Glass</source>. <publisher-name>Margaret K. McElderry Books</publisher-name>; <year>2009</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref022">
+<label>22</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Clare</surname> <given-names>C</given-names></name>. <source>City of Fallen Angels</source>. <publisher-name>Margaret K. McElderry Books</publisher-name>; <year>2011</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref023">
+<label>23</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Clare</surname> <given-names>C</given-names></name>. <source>City of Lost Souls</source>. <publisher-name>Margaret K. McElderry Books</publisher-name>; <year>2012</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref024">
+<label>24</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Clare</surname> <given-names>C</given-names></name>. <source>City of Heavenly Fire</source>. <publisher-name>Margaret K. McElderry Books</publisher-name>; <year>2014</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref025">
+<label>25</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Hobb</surname> <given-names>R</given-names></name>. <source>Ship of Magic</source>. <publisher-name>Voyager</publisher-name>; <year>1998</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref026">
+<label>26</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Hobb</surname> <given-names>R</given-names></name>. <source>The Mad Ship</source>. <publisher-name>Voyager</publisher-name>; <year>1999</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref027">
+<label>27</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Hobb</surname> <given-names>R</given-names></name>. <source>Ship of Destiny</source>. <publisher-name>Voyager</publisher-name>; <year>2000</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref028">
+<label>28</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Hobb</surname> <given-names>R</given-names></name>. <source>The Dragon Keeper</source>. <publisher-name>Voyager</publisher-name>; <year>2009</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref029">
+<label>29</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Hobb</surname> <given-names>R</given-names></name>. <source>Dragon Haven</source>. <publisher-name>Voyager</publisher-name>; <year>2010</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref030">
+<label>30</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Hobb</surname> <given-names>R</given-names></name>. <source>City of Dragons</source>. <publisher-name>Voyager</publisher-name>; <year>2012</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref031">
+<label>31</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Hobb</surname> <given-names>R</given-names></name>. <source>Blood of Dragons</source>. <publisher-name>Voyager</publisher-name>; <year>2013</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref032">
+<label>32</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>New Spring</source>. <publisher-name>Tor</publisher-name>; <year>2004</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref033">
+<label>33</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>The Eye of the World</source>. <publisher-name>Tor</publisher-name>; <year>1990</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref034">
+<label>34</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>The Great Hunt</source>. <publisher-name>Tor</publisher-name>; <year>1990</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref035">
+<label>35</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>The Dragin Reborn</source>. <publisher-name>Tor</publisher-name>; <year>1991</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref036">
+<label>36</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>The Shadow Rising</source>. <publisher-name>Tor</publisher-name>; <year>1992</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref037">
+<label>37</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>The Fires of Heaven</source>. <publisher-name>Tor</publisher-name>; <year>1993</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref038">
+<label>38</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>Lord of Chaos</source>. <publisher-name>Tor</publisher-name>; <year>1994</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref039">
+<label>39</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>A Crown of Swords</source>. <publisher-name>Tor</publisher-name>; <year>1996</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref040">
+<label>40</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>The Path of Daggers</source>. <publisher-name>Tor</publisher-name>; <year>1998</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref041">
+<label>41</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>Winter’s Heart</source>. <publisher-name>Tor</publisher-name>; <year>2000</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref042">
+<label>42</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>Crossroads of Twilight</source>. <publisher-name>Tor</publisher-name>; <year>2003</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref043">
+<label>43</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>. <source>Knife of Dreams</source>. <publisher-name>Tor</publisher-name>; <year>2005</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref044">
+<label>44</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Sanderson</surname> <given-names>B</given-names></name>. <source>The Gathering Storm</source>. <publisher-name>Tor</publisher-name>; <year>2009</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref045">
+<label>45</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Sanderson</surname> <given-names>B</given-names></name>. <source>Towers of Midnight</source>. <publisher-name>Tor</publisher-name>; <year>2010</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref046">
+<label>46</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Jordan</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Sanderson</surname> <given-names>B</given-names></name>. <source>A Memory of Light</source>. <publisher-name>Tor</publisher-name>; <year>2013</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref047">
+<label>47</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Hugo</surname> <given-names>V</given-names></name>. <source>Les Misérables</source>. <publisher-name>Project Gutenberg</publisher-name>; <year>2008</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref048">
+<label>48</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Watts</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Strogatz</surname> <given-names>SH</given-names></name>. <article-title>Collective dynamics of ‘small-world’ networks</article-title>. <source>Nature</source> <year>1998</year>; <volume>393</volume>:<fpage>440</fpage>–<lpage>2</lpage>. <object-id pub-id-type="pmid">9623998</object-id></mixed-citation>
+</ref>
+<ref id="pone.0126470.ref049">
+<label>49</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Barabási</surname> <given-names>AL</given-names></name>, <name name-style="western"><surname>Albert</surname> <given-names>R</given-names></name>. <article-title>Emergence of scaling in random networks</article-title>. <source>Science</source> <year>1999</year> <month>Oct</month>; <volume>286</volume>:<fpage>509</fpage>–<lpage>12</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.286.5439.509" xlink:type="simple">10.1126/science.286.5439.509</ext-link></comment> <object-id pub-id-type="pmid">10521342</object-id></mixed-citation>
+</ref>
+<ref id="pone.0126470.ref050">
+<label>50</label>
+<mixed-citation xlink:type="simple" publication-type="other">NetworkX [Internet]. NetworkX developer team; c2014 May. Available from: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://networkx.github.io">http://networkx.github.io</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref051">
+<label>51</label>
+<mixed-citation xlink:type="simple" publication-type="other">Calibre Ebook Management [Internet], Kovid Goyal; c2014 May. Available from: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://calibre-ebook.com">http://calibre-ebook.com</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref052">
+<label>52</label>
+<mixed-citation xlink:type="simple" publication-type="other">CLiPS Pattern[Internet]. Computational Linguistics &amp; Psycholinguistics Research Center; c2014 May. Available from: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://www.clips.ua.ac.be/pattern">http://www.clips.ua.ac.be/pattern</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref053">
+<label>53</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Bird</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Loper</surname> <given-names>E</given-names></name>. <chapter-title>NLTK: The Natural Language Toolkit</chapter-title>. <source>Association for Computational Linguistics</source>; <publisher-name>Proceedings of the ACL demonstration session</publisher-name>; <publisher-loc>Barcelona</publisher-loc>; <year>2004</year> <month>Jul</month>; p. <fpage>214</fpage>–<lpage>17</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref054">
+<label>54</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Miller</surname> <given-names>GA</given-names></name>. <article-title>WordNet: A Lexical Database for English</article-title>. <source>Communications of the ACM</source>; <year>1995</year>; <volume>38</volume>(<issue>11</issue>):<fpage>39</fpage>–<lpage>41</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1145/219717.219748" xlink:type="simple">10.1145/219717.219748</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0126470.ref055">
+<label>55</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Fellbaum</surname> <given-names>C</given-names></name>. <source>WordNet: An Electronic Lexical Database</source>. <publisher-loc>Cambridge; MA</publisher-loc>: <publisher-name>MIT Press</publisher-name>; <year>1998</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref056">
+<label>56</label>
+<mixed-citation xlink:type="simple" publication-type="other">WordNet [Internet]. Princeton WordNet; c2014 May. Available from: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://wordnet.princeton.edu/wordnet/">http://wordnet.princeton.edu/wordnet/</ext-link>,</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref057">
+<label>57</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Baccianella</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Esuli</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Sebastiani</surname> <given-names>F</given-names></name>. <source>SENTIWORDNET 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining</source>. <publisher-name>LREC European Language Resources Association</publisher-name>; <year>2010</year> <month>Oct</month>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref058">
+<label>58</label>
+<mixed-citation xlink:type="simple" publication-type="other">Stanford Core NLP [Internet]. The Stanford Natural Language Processing Group; c2014 May. Available from: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://nlp.stanford.edu/software/corenlp.shtml">http://nlp.stanford.edu/software/corenlp.shtml</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref059">
+<label>59</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Francis</surname> <given-names>WN</given-names></name>, <name name-style="western"><surname>Kucera</surname> <given-names>H</given-names></name>. <source>A Standard Corpus of Present-Day Edited American English, for use with Digital Computers</source>. <publisher-name>Department of Linguistics; Brown University</publisher-name>; <year>1964</year>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref060">
+<label>60</label>
+<mixed-citation xlink:type="simple" publication-type="other">NLTK. The Natural Language Toolkit; c2014 May. Available from: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://www.nltk.org/">http://www.nltk.org/</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref061">
+<label>61</label>
+<mixed-citation xlink:type="simple" publication-type="other">Penn Treebank [Internet]. University of Pennsylvania—Penn Treebank; c2014 May. Available from: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://www.cis.upenn.edu/~treebank/">http://www.cis.upenn.edu/~treebank/</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref062">
+<label>62</label>
+<mixed-citation xlink:type="simple" publication-type="other">CLiPS Penn Treebank [Internet]. Computational Linguistics &amp; Psycholinguistics Research Center; c2014 May. Available from: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://www.clips.ua.ac.be/pages/mbsp-tags">http://www.clips.ua.ac.be/pages/mbsp-tags</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref063">
+<label>63</label>
+<mixed-citation xlink:type="simple" publication-type="other">TV Tropes—One Steve Limit [Internet]. TV Tropes; c2015 Mar. Available from: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://tvtropes.org/pmwiki/pmwiki.php/Main/OneSteveLimit">http://tvtropes.org/pmwiki/pmwiki.php/Main/OneSteveLimit</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref064">
+<label>64</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Argamon</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Whitelaw</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Chase</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Dhawle</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Hota</surname> <given-names>SR</given-names></name>, <name name-style="western"><surname>Garg</surname> <given-names>N</given-names></name>, <etal>et al</etal>. <article-title>Stylistic text classification using functional lexical features</article-title>. <source>Journal of the American Society for Information Science and Technology</source>; <year>2007</year>; <volume>58</volume>(<issue>6</issue>):<fpage>802822</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/asi.20553" xlink:type="simple">10.1002/asi.20553</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0126470.ref065">
+<label>65</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Broder</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Kumar</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Maghoul</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Raghavan</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Rajagopalan</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Stata</surname> <given-names>R</given-names></name> <etal>et al</etal>. <article-title>Graph structure in the Web</article-title>. <source>Computer Networks</source>; <year>2000</year> <month>Jun</month>; <volume>33</volume>(<issue>1?6</issue>):<fpage>309</fpage>–<lpage>20</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S1389-1286(00)00083-9" xlink:type="simple">10.1016/S1389-1286(00)00083-9</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0126470.ref066">
+<label>66</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Barabási</surname> <given-names>AL</given-names></name>, <name name-style="western"><surname>Jeong</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Néda</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Ravasz</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Schubert</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Vicsek</surname> <given-names>T</given-names></name>. <article-title>Evolution of the social network of scientific collaborations</article-title>. <source>Physical A: Statistical mechanics and its applications</source>; <year>2002</year>; <volume>311</volume>(<issue>3</issue>):<fpage>590</fpage>–<lpage>614</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref067">
+<label>67</label>
+<mixed-citation xlink:type="simple" publication-type="other">Mislove A, Marcon M, Gummadi KP, Druschel P, Bhattacharjee B, Measurement and analysis of online social networks. Proceedings of the 7th ACM SIGCOMM conference on Internet measurement; ACM; 2007.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref068">
+<label>68</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Stephen</surname> <given-names>AT</given-names></name>, <name name-style="western"><surname>Toubia</surname> <given-names>O</given-names></name>, <article-title>Explaining the power-law degree distribution in a social commerce network</article-title>. <source>Social Networks</source>; <year>2009</year> <month>Oct</month>; <volume>31</volume>(<issue>4</issue>):<fpage>262</fpage>–<lpage>70</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.socnet.2009.07.002" xlink:type="simple">10.1016/j.socnet.2009.07.002</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0126470.ref069">
+<label>69</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Muchnik</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Pei</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Parra</surname> <given-names>LC</given-names></name>, <name name-style="western"><surname>Reis</surname> <given-names>SDS</given-names></name>, <name name-style="western"><surname>Andrade</surname> <given-names>JS</given-names> <suffix>Jr</suffix></name>, <name name-style="western"><surname>Havlin</surname> <given-names>S</given-names></name> <etal>et al</etal>. <article-title>Origins of power-law degree distribution in the heterogeneity of human activity in social networks</article-title>. <source>Scientific Reports</source>; <year>2013</year>; <volume>3</volume>:<fpage>1783</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/srep01783" xlink:type="simple">10.1038/srep01783</ext-link></comment> <object-id pub-id-type="pmid">23648793</object-id></mixed-citation>
+</ref>
+<ref id="pone.0126470.ref070">
+<label>70</label>
+<mixed-citation xlink:type="simple" publication-type="other">TV Tropes, The Law of Conservation of Detail [Internet]. TV Tropes; c2014 May. Available from: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://tvtropes.org/pmwiki/pmwiki.php/Main/TheLawOfConservationOfDetail">http://tvtropes.org/pmwiki/pmwiki.php/Main/TheLawOfConservationOfDetail</ext-link>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref071">
+<label>71</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Mosteller</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Wallace</surname> <given-names>D</given-names></name>. <article-title>Inference and disputed authorship: The Federalist</article-title>. <source>American Statistical Association Journal</source>; <year>1963</year> <month>Jun</month>.</mixed-citation>
+</ref>
+<ref id="pone.0126470.ref072">
+<label>72</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>van Halteren</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Baayen</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Tweedie</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Haverkort</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Neijt</surname> <given-names>A</given-names></name>. <article-title>New machine learning methods demonstrate the existence of a human stylome</article-title>. <source>Journal of Quantitative Linguistics</source>; <year>2005</year>; <volume>12</volume>(<issue>1</issue>):<fpage>65</fpage>–<lpage>77</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1080/09296170500055350" xlink:type="simple">10.1080/09296170500055350</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0126470.ref073">
+<label>73</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Kossinets</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Watts</surname> <given-names>DJ</given-names></name>. <article-title>Empirical Analysis of an Evolving Social Network</article-title>. <source>Science</source>; <year>2006</year>; <volume>311</volume>:<fpage>88</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1116869" xlink:type="simple">10.1126/science.1116869</ext-link></comment> <object-id pub-id-type="pmid">16400149</object-id></mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

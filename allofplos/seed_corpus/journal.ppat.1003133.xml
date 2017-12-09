@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS Pathog</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plospath</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS Pathogens</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1553-7366</issn>
+      <issn pub-type="epub">1553-7374</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PPATHOGENS-D-12-02334</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.ppat.1003133</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Microbiology</subject>
+            <subj-group>
+              <subject>Virology</subject>
+              <subj-group>
+                <subject>Viral classification</subject>
+                <subj-group>
+                  <subject>RNA viruses</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Infectious diseases</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Veterinary science</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Virology</subject>
+          <subject>Infectious Diseases</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Schmallenberg Virus Pathogenesis, Tropism and Interaction with the Innate Immune System of the Host</article-title>
+        <alt-title alt-title-type="running-head">Characterization of Schmallenberg Virus</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Varela</surname>
+            <given-names>Mariana</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Schnettler</surname>
+            <given-names>Esther</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Caporale</surname>
+            <given-names>Marco</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Murgia</surname>
+            <given-names>Claudio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Barry</surname>
+            <given-names>Gerald</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>McFarlane</surname>
+            <given-names>Melanie</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>McGregor</surname>
+            <given-names>Eva</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Piras</surname>
+            <given-names>Ilaria M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Shaw</surname>
+            <given-names>Andrew</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lamm</surname>
+            <given-names>Catherine</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Janowicz</surname>
+            <given-names>Anna</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Beer</surname>
+            <given-names>Martin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Glass</surname>
+            <given-names>Mandy</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Herder</surname>
+            <given-names>Vanessa</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Hahn</surname>
+            <given-names>Kerstin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Baumgärtner</surname>
+            <given-names>Wolfgang</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kohl</surname>
+            <given-names>Alain</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Palmarini</surname>
+            <given-names>Massimo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>MRC Centre for Virus Research, Institute of Infection, Immunity and Inflammation, College of Medical, Veterinary and Life Sciences, University of Glasgow, Glasgow, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Istituto G. Caporale, Teramo, Italy</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Dipartimento di Medicina Veterinaria, Università degli Studi di Sassari, Sassari, Italy</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Institute of Diagnostic Virology, Friedrich-Loeffler-Institut, Greifswald-Insel Riems, Germany</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Department of Pathology and Center of Systems Neuroscience, University of Veterinary Medicine, Hannover, Germany</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Weber</surname>
+            <given-names>Friedemann</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Institute for Virology, Germany</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">massimo.palmarini@glasgow.ac.uk</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: MV ES AK MP. Performed the experiments: MV ES MC CM GB MMcF EMcG IMP AS AJ MG. Analyzed the data: MV ES MC CM GB AS CL MB VH KH WB AK MP. Contributed reagents/materials/analysis tools: MB VH KH WB. Wrote the paper: MV AK MP.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <month>1</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>10</day>
+        <month>1</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>9</volume>
+      <issue>1</issue>
+      <elocation-id>e1003133</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>18</day>
+          <month>9</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>1</day>
+          <month>12</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Varela et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Schmallenberg virus (SBV) is an emerging orthobunyavirus of ruminants associated with outbreaks of congenital malformations in aborted and stillborn animals. Since its discovery in November 2011, SBV has spread very rapidly to many European countries. Here, we developed molecular and serological tools, and an experimental <italic>in vivo</italic> model as a platform to study SBV pathogenesis, tropism and virus-host cell interactions. Using a synthetic biology approach, we developed a reverse genetics system for the rapid rescue and genetic manipulation of SBV. We showed that SBV has a wide tropism in cell culture and “synthetic” SBV replicates <italic>in vitro</italic> as efficiently as wild type virus. We developed an experimental mouse model to study SBV infection and showed that this virus replicates abundantly in neurons where it causes cerebral malacia and vacuolation of the cerebral cortex. These virus-induced acute lesions are useful in understanding the progression from vacuolation to porencephaly and extensive tissue destruction, often observed in aborted lambs and calves in naturally occurring Schmallenberg cases. Indeed, we detected high levels of SBV antigens in the neurons of the gray matter of brain and spinal cord of naturally affected lambs and calves, suggesting that muscular hypoplasia observed in SBV-infected lambs is mostly secondary to central nervous system damage. Finally, we investigated the molecular determinants of SBV virulence. Interestingly, we found a biological SBV clone that after passage in cell culture displays increased virulence in mice. We also found that a SBV deletion mutant of the non-structural NSs protein (SBVΔNSs) is less virulent in mice than wild type SBV. Attenuation of SBV virulence depends on the inability of SBVΔNSs to block IFN synthesis in virus infected cells. In conclusion, this work provides a useful experimental framework to study the biology and pathogenesis of SBV.</p>
+      </abstract>
+      <abstract abstract-type="summary">
+        <title>Author Summary</title>
+        <p>Schmallenberg virus (SBV) was discovered in Germany (near the town of Schmallenberg) in November 2011 and since then has been found to be the cause of malformations and stillbirths in ruminants. SBV has spread very rapidly to many European countries including the Netherlands, Belgium, France and the United Kingdom. Very little is known about the biological properties of this virus and there is no vaccine available. In this study (i) we developed an approach (called reverse genetics) that allows the recovery of “synthetic” SBV under laboratory conditions; (ii) we developed a mouse model of infection for SBV; (iii) we showed that SBV replicates in neurons of experimentally infected mice similar to naturally infected lambs and calves; (iv) we developed viral mutants that are not as pathogenic as the original virus due to the inability to counteract the host cell defenses; and v) we identified mutations that are associated with increased virulence. This work provides the experimental tools to understand how this newly emerged virus causes disease in ruminants. In addition, it will now be possible to manipulate the SBV genome in order to develop highly effective vaccines.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This work was funded by the MRC and Wellcome Trust. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="13"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Approximately 30 percent of all infectious diseases that emerged between 1990 and 2000 were caused by arthropod-borne viruses (arbovirus) <xref ref-type="bibr" rid="ppat.1003133-Jones1">[1]</xref>. This is probably the result of a combination of factors including a dramatic increase in travelling and commercial exchanges, climate and ecological changes and increased livestock production. In addition, changes in trading and commercial policies have created optimal conditions for the movement of infected vertebrate hosts and invertebrate vectors over wide geographical areas.</p>
+      <p>Several European countries are currently experiencing the emergence of a previously uncharacterized arbovirus of domesticated ruminants, Schmallenberg virus (SBV) <xref ref-type="bibr" rid="ppat.1003133-Kupferschmidt1">[2]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Hoffmann1">[3]</xref>. SBV infection causes a mild disease in adult cattle characterized by reduced milk production, pyrexia and diarrhea <xref ref-type="bibr" rid="ppat.1003133-Garigliany1">[4]</xref>. However, SBV infection of susceptible pregnant animals can be associated with musculoskeletal and central nervous system malformations in stillborn or newborn lambs and calves <xref ref-type="bibr" rid="ppat.1003133-Hoffmann1">[3]</xref>. SBV was detected for the first time in November 2011 in plasma samples collected from cows displaying fever and diarrhea and farmed near the town of Schmallenberg, Germany <xref ref-type="bibr" rid="ppat.1003133-Hoffmann1">[3]</xref>. The first acute infections associated with SBV were reported in August 2011, while the first malformations in stillborn animals caused by this virus were detected in The Netherlands in December 2011 <xref ref-type="bibr" rid="ppat.1003133-Beer1">[5]</xref>. Since then, 9 countries have reported congenital malformations and stillbirth associated with the presence of SBV as of May 2012 <xref ref-type="bibr" rid="ppat.1003133-OIE1">[6]</xref>. In some areas, SBV cross-reacting antibodies have been detected in as high as to 100% of the cattle surveyed <xref ref-type="bibr" rid="ppat.1003133-Garigliany2">[7]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Elbers1">[8]</xref>, although the clinical and consequent economic impact of this infection is not completely clear as yet <xref ref-type="bibr" rid="ppat.1003133-Dominguez1">[9]</xref>.</p>
+      <p>Phylogenetic analysis revealed that SBV belongs to the genus <italic>Orthobunyavirus</italic> within the <italic>Bunyaviridae</italic>, a large family comprising hundreds of viruses able to infect a broad range of vertebrate and invertebrate hosts. Bunyaviruses are significant pathogens both in humans and animals and cause a range of diseases including febrile illnesses (Oropouche virus), encephalitis (La Crosse virus) and hemorrhagic fevers (Rift Valley fever virus) <xref ref-type="bibr" rid="ppat.1003133-Walter1">[10]</xref>.</p>
+      <p>SBV clusters with viruses from the Simbu serogroup, in particular with viruses of the species <italic>Sathuperi virus</italic> including Sathuperi virus (SATV), Douglas virus (DOUV) and Shamonda virus (SHAV) currently classified within the <italic>Shamonda virus</italic> species <xref ref-type="bibr" rid="ppat.1003133-Goller1">[11]</xref>. Viruses from Simbu serogroup have been associated with abortions, stillbirths and malformations (arthrogryposis - hydranencephaly syndrome) in ruminants in Asia, Africa and Oceania. Akabane virus (AKAV) is the most widely studied member of the Simbu serogroup <xref ref-type="bibr" rid="ppat.1003133-Cybinski1">[12]</xref>–<xref ref-type="bibr" rid="ppat.1003133-Yanase1">[17]</xref>. In the literature, there is relatively little information on the diseases (if any) associated with SATV and SHAV infection. Viruses from the Simbu serogroup have not been detected in Europe before and given that SBV has not been found in archived samples so far, it is likely that the first introduction of SBV in Europe occurred in spring 2011. Given the current available data, it is not possible to ascertain when and how SBV was introduced in Europe.</p>
+      <p>With the exception of hantaviruses, all Bunyaviruses are transmitted by arthropod vectors <xref ref-type="bibr" rid="ppat.1003133-Walter1">[10]</xref>. SBV is also thought to be an arbovirus given its close relatedness to viruses of the Simbu serogroup (all known to be transmitted by insects). In addition, SBV has also been detected in pools of <italic>Culicoides</italic> biting midges in Denmark <xref ref-type="bibr" rid="ppat.1003133-Rasmussen1">[18]</xref>.</p>
+      <p>Bunyaviruses are enveloped viruses and have a segmented single stranded RNA genome of negative or ambisense polarity. The viral genome comprises three RNA segments referred to as small (S), medium (M) and large (L) which encode four structural proteins: the nucleocapsid protein (N); two glycoproteins (Gn and Gc); and the viral polymerase. Members of the <italic>Orthobunyavirus</italic> encode two additional non-structural proteins, NSs and NSm. NSs is encoded by an open reading frame in the S segment overlapping the N gene while NSm is encoded by the M segment as a polyprotein that is co-translationally cleaved into NSm, Gn and Gc <xref ref-type="bibr" rid="ppat.1003133-Walter1">[10]</xref>. The NSs protein of Bunyamwera virus (BUNV), the prototype of the family, is a non-essential gene product for viral replication that has been shown to play a role in the inhibition of the host cell mRNA and protein synthesis. The NSs protein contributes to viral pathogenesis by blocking the production of interferon (IFN) through transcriptional inhibition and consequently inhibiting the innate responses of the host <xref ref-type="bibr" rid="ppat.1003133-Bridgen1">[19]</xref>–<xref ref-type="bibr" rid="ppat.1003133-Kohl1">[21]</xref>.</p>
+      <p>Studies on the molecular biology of RNA viruses has been transformed by the development of reverse genetics that allow the rescue of infectious virus from cloned cDNA copies of the viral genomes <xref ref-type="bibr" rid="ppat.1003133-Neumann1">[22]</xref>. A reverse genetics for BUNV has proven invaluable in unraveling the underpinning mechanisms of viral replication and pathogenesis of this virus family <xref ref-type="bibr" rid="ppat.1003133-Bridgen1">[19]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Kohl1">[21]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Shi1">[23]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Terasaki1">[24]</xref>.</p>
+      <p>In this study, we developed reverse genetics platforms for SBV and used them to characterize the biology and pathogenesis of this emerging pathogen. We obtained SBV mutants revealing key determinants of viral virulence and show that the viral non-structural protein NSs counteracts the innate immunity of the host. In addition, we show that SBV replicates in neurons of both experimentally infected mice and in naturally occurring SBV infected lambs and calves.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title><italic>In vitro</italic> tropism of SBV</title>
+        <p>Our first goal was to gain insight into the <italic>in vitro</italic> growth kinetics of SBV in several cell lines derived from various animal species and humans. SBV grew efficiently in all the cell lines tested including sheep CPT-Tert, bovine BFAE, human 293T, dog MDCK and hamster BHK-21 and BSR cells (<xref ref-type="fig" rid="ppat-1003133-g001">Figure 1</xref>). SBV reached titers of 10<sup>6</sup> PFU/ml at 48 h post-infection and induced cytopathic effect (CPE) in most cell lines with the exception of BFAE (data not shown). We found SBV to replicate very efficiently in sheep CPT-Tert, where it induced well-defined plaques of approximately 3 mm in diameter at 72 h post-infection. Consequently, we used CPT-Tert for all the titrations of SBV performed in this study.</p>
+        <fig id="ppat-1003133-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1003133.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title><italic>In vitro g</italic>rowth kinetics of SBV.</title>
+            <p>A. Growth kinetics of SBV in a variety of established cell lines as indicated in the panel. Cells were infected with SBV at a MOI of 0.05 and supernatants were collected at 4, 8, 24 and 48 h post-infection. Supernatants were then titrated in CPT-Tert cells by limiting dilution analysis.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1003133.g001" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2b">
+        <title>Development of reverse genetics protocols for SBV</title>
+        <p>Several members of the <italic>Bunyaviridae</italic> have been successfully rescued by reverse genetics <xref ref-type="bibr" rid="ppat.1003133-Lowen1">[25]</xref>–<xref ref-type="bibr" rid="ppat.1003133-Blakqori1">[28]</xref>. The most successful and simple approach involves the transfection of plasmids encoding full-length antigenome viral RNAs under the control of the T7 polymerase promoter. We adopted a synthetic biology approach and obtained the 3 plasmids harboring the full full-length antigenome RNAs of each viral segment by <italic>in vitro</italic> synthesis, using the sequences of the first SBV isolate available in the International Nucleotide Sequence Database Collaboration in January 2011 (accession numbers HE649912–HE649914) <xref ref-type="bibr" rid="ppat.1003133-Hoffmann1">[3]</xref>. The complete sequences of the 5′ and 3′ untranslated regions (UTRs) of the SBV S, M and L segments were unavailable at that time and therefore we predicted the missing sequences based on the high similarity with the sequences of AKAV. The rescue plasmids were designed to contain the full-length antigenome RNAs flanked by the T7 promoter immediately upstream of the 5′ UTR and the hepatitis δ ribozyme followed by T7 terminator sequences immediately downstream of the 3′ UTR as previously described <xref ref-type="bibr" rid="ppat.1003133-Bridgen2">[29]</xref> within the pUC57 vector (<xref ref-type="fig" rid="ppat-1003133-g002">Figure 2A</xref>). We transfected the 3 antigenome-encoding plasmids in BSR-T7/5 cells, a BHK-derived cell line that constitutively expresses the T7 RNA polymerase <xref ref-type="bibr" rid="ppat.1003133-Buchholz1">[30]</xref>. Five days post transfection supernatants were collected and the presence of virus was assessed by standard plaque assays in CPT-Tert cells (<xref ref-type="fig" rid="ppat-1003133-g002">Figure 2B</xref>). Negative controls included cells transfected with only two of the rescue plasmids. We successfully rescued SBV following this method, although in some cases transfections did not result in viable rescued SBV.</p>
+        <fig id="ppat-1003133-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1003133.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Reverse genetics protocols for the rescue of SBV.</title>
+            <p>A. Schematic representation of the antigenome plasmids used to rescue SBV. B and C. Schematic representation of the strategies used for the rescue of SBV in BSR-T7/5 and 293T cells as described in the text. The two methods are very similar with the exception that BSR-T7/5 stably express the T7 RNA polymerase and therefore these cells are transfected only with the SBV antigenome plasmids. On the other hand 293T cells are transfected with the antigenome plasmids and an expression plasmid for the T7 RNA polymerase.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1003133.g002" position="float" xlink:type="simple"/>
+        </fig>
+        <p>From the <italic>in vitro</italic> growth assays described above, it appeared that SBV infected 293T cells readily. Thus, we reasoned that it would be possible to rescue SBV more efficiently in this cell line known to be highly transfectable if we provided the T7 RNA polymerase <italic>in trans</italic>. To this end, we transfected 293T cells with the 3 SBV antigenome plasmids (pUCSBVST7, pUCSBVMT7 and pUCSBVLT7) along with a plasmid expressing the T7 RNA polymerase under the control of the CMV immediate early promoter (pCMV-T7) (<xref ref-type="fig" rid="ppat-1003133-g002">Figure 2C</xref>). SBV was efficiently rescued following this method, which we found overall more reproducible. We were also able to rescue BUNV <xref ref-type="bibr" rid="ppat.1003133-Southam1">[31]</xref> in transiently transfected 293T cells (data not shown) demonstrating that this method can be easily applied to other viruses within this family. sSBV rescued in either 293T or BSR-T7/5 cells produced plaques of similar size and shape to SBV (<xref ref-type="fig" rid="ppat-1003133-g003">Figure 3A</xref>). In addition, we found that sSBV grew with the same kinetics and reached approximately the same titers of SBV in both sheep CPT-Tert and bovine BFAE cells (<xref ref-type="fig" rid="ppat-1003133-g003">Figure 3B</xref>). The presence of SBV in infected cells was confirmed by western blotting of cell lysates of infected cells (<xref ref-type="fig" rid="ppat-1003133-g003">Figure 3C</xref>). These results indicate that wild type SBV and sSBV display similar phenotypic characteristics <italic>in vitro</italic>.</p>
+        <fig id="ppat-1003133-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1003133.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title><italic>In vitro</italic> phenotypic characterization of SBV and sSBV.</title>
+            <p>A. Comparison of plaques produced by wild type SBV and sSBV rescued using BSR-T7/5 and 293T cells. B. Growth kinetics of SBV and sSBV. CPT-Tert and BFAE cells were infected at a MOI of 0.05 for 90 min. Supernatants were collected at the indicated times post-infection and virus titer was measured using standard plaque assays in CPT-Tert cells. C. The presence of SBV in CPT-Tert and BFAE cells infected with wild type and rescued virus was confirmed by western blotting using antibodies against the SBV N (nucleocapsid) protein.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1003133.g003" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>Determination of the 3′ and 5′ UTR sequences of the SBV genome segments</title>
+        <p>As mentioned above, we predicted the complete sequences of the 5′ and 3′ UTRs of the S, M and L segments of SBV on the basis of published AKAV sequences. We performed 5′ and 3′ RACE PCRs on RNA extracted from SBV-infected cells in order to establish that the sequence of sSBV faithfully represented the wild type field strain. The sequences of the 3′ and 5′ UTR of the M and L segments were 100% identical to the predicted sequences used in the rescue plasmids for sSBV (<xref ref-type="fig" rid="ppat-1003133-g004">Figure 4</xref>). We did not find with our RACE PCR an extra 54 nucleotides that were reported in the 5′ UTR of the M segment (accession number HE649913) (not shown) which represent most likely a sequencing artifact beyond the correct 3′ end of the published antigenome sequence. We found polymorphisms in SBV at positions 17 and 25 of the 3′ UTR of the S segment. Some of the clones analyzed contained thymine (T) at position 17 while others contained an adenine (A) at that position. Similarly, at position 25, some clones harbored a guanine (G) while other clones contained an A. The 3′ UTR sequences of the synthesized plasmids used for reverse genetics contained a T at position 17 and a G at position 25 indicating that the original sequence prediction was correct (<xref ref-type="fig" rid="ppat-1003133-g004">Figure 4</xref>). We also sequenced the remaining full genome of the SBV strain used in this study and we found it to be identical to the original sequences submitted in GenBank (data not shown).</p>
+        <fig id="ppat-1003133-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1003133.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Sequences of 3′ and 5′ UTRs of SBV obtained by RACE PCR.</title>
+            <p>A schematic representation of the genomes of the 3 viral segments is shown. Sequences on the top of each segment (sSBV) indicate the sequence of the UTRs of the plasmids used for reverse genetics. The middle sequences indicate the UTRs sequences inferred by RACE PCR (RACE1, RACE 2 etc). The bottom sequences indicate SBV UTRs reported in GenBank (HE649914, HE649913 and HE649912). Positions highlighted in red correspond to nucleotides inferred for the construction of sSBV sequences based on the AKAV sequence. Scores represent positions in the genome segments for which there was no sequence available in the submitted GenBank sequences. Note that 54 nucleotides previously reported in the 5′ UTR of the M segment that appeared to be a sequence artifact (i.e. not part of the SBV genome) were not, as expected, detected by RACE and are not shown in the figure. Numbers shown in this figure take into account the corrected 3′ and 5′ UTRs.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1003133.g004" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2d">
+        <title>Characterization of SBV virulence in mice</title>
+        <p>We next investigated whether mice could be used as an experimental model of SBV infection and pathogenesis. Firstly, we inoculated 3 litters of 2-day old newborn NIH-Swiss mice (n = 8–14) intracerebrally with 400 PFU of SBV, sSBV or cell culture media as a control (study 1). All mice inoculated with SBV and sSBV died within 8 days post-inoculation while all control mice survived until the end of the experiment (<xref ref-type="fig" rid="ppat-1003133-g005">Figure 5A</xref>, left panel). These data clearly indicate that sSBV is as virulent as SBV at least in this experimental model. In order to determine whether age susceptibility existed for SBV infection in this mouse model, we inoculated litters of 10 and 18-day old NIH-Swiss mice as described above with sSBV (study 2). We found that SBV infection was lethal for most of the infected mice of these age groups, displaying similar kinetics to the one displayed by SBV infection in newborn mice (<xref ref-type="fig" rid="ppat-1003133-g005">Figure 5A</xref>, right panel).</p>
+        <fig id="ppat-1003133-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1003133.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Neuropathology of SBV infection in mice inoculated intracerebrally.</title>
+            <p>A. Left panel: survival plots of 2-day old NIH-Swiss mice inoculated intracerebrally using the indicated viruses or cell culture media as a control. Right panel: survival plots of 10 and 18-day old NIH-Swiss mice inoculated as described in A. B–E histopathology of brain sections from SBV-infected infected mice stained with hematoxylin. B and C. brain sections from SBV-infected mice at 72 h post-infection. Arrows indicate areas of malacia and hemorrhage. D and E brain sections from SBV infected mice at 120 h post-infection, showing areas of vacuolation in low and high magnification respectively. F–K immunohistochemistry of brain sections of mock-infected mice (F–G), or SBV infected mice at 48 h (H–I) or 72 h (J–K) post-infection using an SBV N antiserum as described in <xref ref-type="sec" rid="s4">Materials and Methods</xref>. Bars = 2 mm in B, F, H, J; 200 µm in C; 500 µm in D; 100 µm in E, G, I, K.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1003133.g005" position="float" xlink:type="simple"/>
+        </fig>
+        <p>Histopathology of brains collected at 72 h post-infection revealed bilateral symmetrical vacuolation and loosening of the neuropil of the superficial cerebral cortex and the mesencephalon (<xref ref-type="fig" rid="ppat-1003133-g005">Figure 5B–C</xref>). In particular, we found small areas of haemorrhage within large areas of malacia (necrosis of brain tissue) in the cerebral cortex (<xref ref-type="fig" rid="ppat-1003133-g005">Figure 5C</xref>, arrow). In brains collected at 120 h post-infection (<xref ref-type="fig" rid="ppat-1003133-g005">Figure 5D–E</xref>) there was random multifocal vacuolation of the white matter of the cerebrum with small amount of nuclear debris (<xref ref-type="fig" rid="ppat-1003133-g005">Figure 5E</xref>). There was a minimal, multifocal perivascular infiltrate of lymphocytes in the adjacent grey matter. The presence of SBV was confirmed by immunohistochemistry using a polyclonal antibody against the N protein. We found no reactivity in mock-infected mice (<xref ref-type="fig" rid="ppat-1003133-g005">Figure 5F–G</xref>). We found patchy areas of positive staining in brain sections taken from mice euthanized 48 h post infection corresponding to the cytoplasm of neurons (<xref ref-type="fig" rid="ppat-1003133-g005">Figure 5H–I</xref>). Extensive immunoreactivity for SBV was noted within the cerebrum and mesencephalon of mice euthanized 72 h after inoculation corresponding to infection of neurons. SBV antigens were also detected in cells that morphologically resembled astrocytes (<xref ref-type="fig" rid="ppat-1003133-g005">Fig. 5 J–K</xref>). However, by immunofluorescence we were not able to detect SBV in cells expressing GFAP (glial fibrillary acidic protein), a specific marker for astrocytes (data not shown).</p>
+      </sec>
+      <sec id="s2e">
+        <title>SBV is neurotropic in naturally <italic>in utero</italic> infected lambs and calves</title>
+        <p>Next, we analysed tissue sections of brain and spinal cord from a total of 8 naturally infected lambs and calves presenting malformations commonly shown by animals congenitally infected with SBV such as, arthrogryposis, brachygnatia inferior, torticollis and curvature of the spine (<xref ref-type="fig" rid="ppat-1003133-g006">Figure 6A</xref>) <xref ref-type="bibr" rid="ppat.1003133-Herder1">[32]</xref>. All samples derived from abortion or stillborn cases that occurred in farms in an SBV-endemic area in Germany, although we cannot ascertain the time of infection nor the specific SBV strain involved in these cases. Histopathology of brain sections showed lesions commonly observed in SBV infected animals, including porencephaly associated with widespread tissue destruction (<xref ref-type="fig" rid="ppat-1003133-g006">Figure 6B</xref>). Clusters of myelin laden macrophages (<xref ref-type="fig" rid="ppat-1003133-g006">Fig. 6C</xref>, arrow) were noted in areas of rarefaction. Glial nodules were randomly scattered throughout the cerebrum (<xref ref-type="fig" rid="ppat-1003133-g006">Fig. 6D</xref>, arrow) and there was a mild, multifocal perivascular infiltrate of lymphocytes and macrophages/microglia.</p>
+        <fig id="ppat-1003133-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1003133.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>SBV tropism in the central nervous system of naturally <italic>in utero</italic> infected lambs and calves.</title>
+            <p>A. Stillborn lamb showing signs of congenital SBV infection including artrogryposis, brachygnatia inferior and torticollis. B–D: Tissue sections stained with hematoxylin and eosin derived from brain of a lamb congenitally infected with SBV. Panel B illustrates cerebral cortex with porencephaly. The white matter is lacking as indicated by (*). Adjacent grey matter is reduced in thickness (bar = 2 mm). C. Higher magnification micrographs showing areas of malacia and the presence of myelin laden macrophages (arrow; bar = 20 µm). D. Glial nodule (arrow) and mild lymphohistiocytic perivascular infiltrate (bar = 50 µm). E–L: Immunohistochemistry of tissue sections derived from brain (E–H) or spinal cord (I–J) of lambs congenitally infected with SBV. In sections shown in panels E, F, I and J a SBV N polyclonal rabbit antiserum was used, while panels G–H show instead serial sections (of E and F) incubated with the pre-immune serum. The use of SBV N antiserum reveals a strong positive reaction (characterized by the intracytoplasmic dark brown staining) in the cell body and processes of neurons of the grey matter, while no staining was observed with serial sections incubated with the pre-immune serum. K–L: Immunohistochemistry of control tissue sections derived from brains of sheep reared in Scotland and probed with the antiserum towards the SBV N protein showed no immunoreactive cells.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1003133.g006" position="float" xlink:type="simple"/>
+        </fig>
+        <p>By immunohistochemistry, we detected SBV predominantly in the cell body and processes of neurons of the grey matter, similarly to what we have observed in mice (<xref ref-type="fig" rid="ppat-1003133-g006">Figure 6E–F</xref>). In addition, we found expression of abundant SBV antigen also in the grey matter of the spinal cord (<xref ref-type="fig" rid="ppat-1003133-g006">Figure 6I–J</xref>). Our controls included serial sections of brains collected from SBV-infected animals incubated with the pre-immune serum collected from the rabbit used for the production of the polyclonal antibody against SBV N protein (<xref ref-type="fig" rid="ppat-1003133-g006">Figure 6G–H</xref>). No positive reaction was observed in all the SBV positive or suspected cases that we tested in this study. In addition, we used also as negative controls tissue sections collected from the brains of lambs or calves that died as result of unrelated pathologies from Germany (collected before 2001) or Scotland (n = 7). As expected, none of these negative controls showed immunoreactive cells (<xref ref-type="fig" rid="ppat-1003133-g006">Figure 6K–L</xref>). Moreover, our studies strongly indicate that SBV replicates in neurones of brain and spinal cord of animal naturally infected with SBV.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Molecular determinants of SBV virulence</title>
+        <p>The data obtained in calves and lambs suggested that newborn NIH-Swiss mice inoculated intracerebrally can be an useful experimental model of SBV infection. We attempted to further exploit this tool in order to identify determinants of SBV virulence using two different approaches. First, we attempted to attenuate SBV in tissue culture by passaging the virus serially in CPT-Tert cells, after which the resulting virus was plaque purified twice and a stock generated in the same cells reaching a total of 32 passages in tissue culture (virus referred to as SBVp32). In addition, given that the NSs proteins of several Bunyaviruses including BUNV <xref ref-type="bibr" rid="ppat.1003133-Bridgen1">[19]</xref>, Rift Valley fever virus (RVFV) <xref ref-type="bibr" rid="ppat.1003133-Vialat1">[33]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Muller1">[34]</xref>, AKAV <xref ref-type="bibr" rid="ppat.1003133-Ogawa1">[26]</xref> and La Crosse virus (LCV) <xref ref-type="bibr" rid="ppat.1003133-Blakqori2">[35]</xref> have been shown to play key roles in viral replication and pathogenesis, we attempted to rescue by reverse genetics a SBV mutant lacking this non-structural protein. Similarly to other orthobunyavirus, the predicted NSs of SBV is encoded by the S segment in an overlapping reading frame within the N gene. Because of the inherent capabilities of RNA viruses to mutate and revert to a wild type phenotype, we introduced 2 silent mutations in pUCSBVST7 within the N gene, abrogating the second and third initiation codons of the NSs gene. Moreover, we introduced 3 premature stop codons within NSs that did not affect the N reading frame (<xref ref-type="fig" rid="ppat-1003133-g007">Figure 7A</xref>). The resulting SBV NSs deletion mutant (termed SBVΔNSs) was then rescued in 293T cells as described above. We confirmed the identity of the deleted NSs mutant by sequencing.</p>
+        <fig id="ppat-1003133-g007" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1003133.g007</object-id>
+          <label>Figure 7</label>
+          <caption>
+            <title><italic>In vitro</italic> phenotypic characteristics of SBVΔNSs and SBVp32.</title>
+            <p>A. Strategy used to generate SBVSΔNSs. Nucleotide (antigenome) and amino acid sequences showing the translation start site of the NSs in an overlapping reading frame within the N gene are indicated (top sequences). Bottom sequences indicate silent mutations (low case) introduced in N that abrogate expression of the NSs protein. B. Growth kinetics of SBV lacking the NSs protein and SBVp32. CPT-Tert cells were infected at a MOI of 0.05 for 90 min. Supernatants were collected at the indicated times post-infection and the virus titer was measured using standard plaque assays in CPT-Tert cells. C. Schematic representation showing the nucleotide differences (red dots) found in SBVp32 in relation to SBV. Only the coding regions of the antigenomes of the 4 known genes are shown. Non-synonymous mutations are indicated with an asterisk.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1003133.g007" position="float" xlink:type="simple"/>
+        </fig>
+        <p>We hypothesized that sequence changes were likely to have occurred in SBVp32 following extensive passage and plaque purification in tissue culture. Consequently, we amplified the coding regions of all 3 SBV genome segments by RT-PCR and sequenced the PCR products directly without cloning. We identified a total of 17 nucleotide changes among the 3 genome segments, most of which were non-synonymous mutations (<xref ref-type="fig" rid="ppat-1003133-g007">Figure 7C</xref>). Most of the mutations were identified within the M and S segments. In particular, all the mutations found in the M segment were located within Gc and NSm proteins and none within Gn. We found that the S segment harbored the highest number of mutations in relation to its size. Three of the 4 changes found in the S segment of SBVp32 were non-synonymous mutations of the N protein. In addition, 3 of these mutations also affected the NSs protein leading to 1 synonymous and 2 non-synonymous changes.</p>
+        <p>We next characterized the <italic>in vitro</italic> growth properties of the rescued SBVΔNSs and SBVp32 in sheep cells (<xref ref-type="fig" rid="ppat-1003133-g007">Figure 7B</xref>). We found that both SBVΔNSs and SBVp32 had comparable growth kinetics to sSBV and SBV respectively and both viruses reached similar titers in infected cells.</p>
+      </sec>
+      <sec id="s2g">
+        <title>Virulence of SBVΔNSs and SBVp32 in experimentally infected mice</title>
+        <p>Thereafter, we inoculated litters of 3 and 7-day old NIH-Swiss mice intracerebrally with either 100 or 400 PFU of sSBV, SBVΔNSs, SBVp32 or cell culture media as a control (study 3). All mice inoculated with sSBV died within 7 days post-inoculation, with the exception of the litter of 7-day old mice inoculated with 100 PFU where 100% mortality was reached at day 9 post-inoculation (<xref ref-type="fig" rid="ppat-1003133-g008">Figure 8A</xref>). All control mice were healthy until the end of the experiment. SBVΔNSs showed an attenuated phenotype. There was a clear delay in the time of death in the groups inoculated with SBVΔNSs and 40–60% of the inoculated mice survived infection. Unexpectedly, SVBp32 was more virulent than sSBV in this experimental model. Inoculation of SBVp32 resulted in 100% lethality by day 4 and 5 post-infection in 3 and 7-day old mice respectively (<xref ref-type="fig" rid="ppat-1003133-g008">Figure 8A</xref>). To gain insight into the nature of the enhanced pathogenicity of SBVp32 observed in our mouse model of infection, we inoculated litters of 7-day old NIH-Swiss mice intracerebrally with SBVp32, sSBV (and media as a control) and brain samples were collected at different time points post-infection (study 4). Brain sections were analyzed by immunohistochemistry to detect the presence of SBV. We detected the presence of foci of virus-infected cells as early as 24 h post-infection in samples derived from mice infected with SBVp32 (<xref ref-type="fig" rid="ppat-1003133-g008">Figure 8B</xref>). In these mice, SBV antigens were widely spread by 48 h post-infection. In contrast, we first detected virus antigens at 72 h post-infection in brain sections derived from mice infected with sSBV. These results suggest that SBVp32 is able to spread faster than sSBV in the brain of experimentally infected mice.</p>
+        <fig id="ppat-1003133-g008" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1003133.g008</object-id>
+          <label>Figure 8</label>
+          <caption>
+            <title>Virulence of SBV mutants in suckling NIH-Swiss mice.</title>
+            <p>A. 3 and 7-day old mice were inoculated intracerebrally with either 100 or 400 PFU with the indicated viruses or cell culture media as a control. Survival plots show that SBVΔNSs possesses an attenuated phenotype while SBVp32 is more virulent than sSBV. B. Immunohistochemistry of brain sections derived from NIH-Swiss mice inoculated with sSBV or SBVp32 and killed at various time points post-infection as indicated in the figure. Immunohistochemistry was performed using an SBV N antiserum as described in <xref ref-type="sec" rid="s4">Materials and Methods</xref>. At the early time points SBV antigens are detected only in sections derived from SBVp32 infected mice (Bar = 500 µm).</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1003133.g008" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2h">
+        <title>The NSs protein of SBV counteracts the IFN response of the host</title>
+        <p>The attenuation of virulence displayed by SBVΔNSs suggested that the NSs protein plays an important role in viral pathogenesis. The NSs proteins of Orthobunyaviruses have been shown to indirectly inhibit synthesis of IFN-α and β by shutting down cellular mRNA synthesis <xref ref-type="bibr" rid="ppat.1003133-Thomas1">[20]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Neumann1">[22]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Blakqori1">[28]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Bouloy1">[36]</xref>. Consequently, we performed a series of assays to determine whether SBV and SBVΔNSs induce the synthesis of IFN in infected cells. Firstly, we tested the human 2fTGH cells, which are known to be IFN competent. Cell lines were infected with sSBV or SBVΔNSs and at 24 h post-infection the supernatant were collected and virus UV inactivated. An IFN-protection assay was then performed in CPT-Tert cells, which respond to IFN but are defective for its production (data not shown) and thus are a good target cell line for these experiments. Virus-inactivated supernatant from 2fTGH cells was added to CPT-Tert cells and incubated for 24 h before infection with encephalomyocarditis virus (EMCV), a virus susceptible to IFN <xref ref-type="bibr" rid="ppat.1003133-Killip1">[37]</xref>. In parallel, cells were also incubated with a known amount of universal IFN as a control. We found that supernatants from cells infected with sSBV did not contain IFN as they were not able to protect CPT-Tert cells from infection with EMCV (<xref ref-type="fig" rid="ppat-1003133-g009">Figure 9A</xref>). In contrast, supernatant from cells infected with SBVΔNSs was able to confer protection against infection of the target cells by EMCV, and contained an average of 40 IFN international units per ml (IU/ml).</p>
+        <fig id="ppat-1003133-g009" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1003133.g009</object-id>
+          <label>Figure 9</label>
+          <caption>
+            <title>SBVSΔNSs induces the production of IFN.</title>
+            <p>A. IFN protection assay. 2fGTH cells were infected with the indicated viruses and supernatants were collected 24 h post infection. Supernatants were UV treated to remove infectious virus and fed to CPT-Tert cells after serial dilution. CPT-Tert cells were later infected with EMCV and the presence of CPE monitored and compared to cells supplemented with known amounts of universal IFN. B. The induction of IFN-β mRNA was investigated by RT-PCR from RNA extracted from 2fGTH cells infected with virus as indicated or transfected with Poly I∶C as a positive control. To control for the presence of residual genomic DNA all the samples were amplified after reverse transcription performed without reverse transcriptase (top panel, indicated as+/−RT). The quality of the extracted RNA was verified by the amplification of the 45S ribosomal RNA (middle panel). The presence of virus was confirmed by the amplification of part of the SBV S segment (bottom panel). C. IFN protection assay performed in primary ovine trophoblast cell (oTr-1) and primary ovine endothelial cells as described in A. D. Survival plots of 7 day old IFNAR<sup>(−/−)</sup> mice inoculated intracerebrally with sSBV, SBVSΔNSs or cell culture media as a control. Data indicate that SBVΔNSs is as virulent as sSBV in these mice that lack an intact IFN system.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1003133.g009" position="float" xlink:type="simple"/>
+        </fig>
+        <p>Secondly, we investigated whether the lack of IFN production upon infection with sSBV was due to the inhibition of transcription of the type I IFN gene. To this end, we investigated the presence of IFN-β mRNA by RT-PCR in 2fTGH cells following infection with sSBV and SBVΔNSs, or transfection with poly I∶C as a positive control. We did not detect IFN-β mRNA in sSBV-infected or mock-infected cells, while it was clearly detectable in cells infected with SBVΔNSs or transfected with poly I∶C (<xref ref-type="fig" rid="ppat-1003133-g009">Figure 9B</xref>). These results suggest that the SBV NSs protein interferes with transcription of the IFN-β gene upon infection.</p>
+        <p>Furthermore, in an attempt to evaluate the data obtained above in a more relevant cell culture system, we repeated the IFN protection assays in sheep primary endothelial cell cultures (ovEC) and ovine trophoblast cells (oTr-1). Similarly to the data obtained in human cells, we found that the supernatant from sSBV-infected cells did not protect CPT-Tert cells from infection with EMCV. On the other hand, supernatant from SBVΔNSs-infected ovEC and oTr-1 was found to contain abundant amounts of IFN (estimated to be between 500 and 1000 IU/ml; <xref ref-type="fig" rid="ppat-1003133-g009">Figure 9C</xref>).</p>
+        <p>Finally, to evaluate the role of SBV NSs protein in counteracting the IFN response of the host <italic>in vivo</italic>, we inoculated litters of 7 day old IFN receptor null mice (IFNAR<sup>(−/−)</sup>) intracerebrally with sSBV (n = 11), SBVΔNSs (n = 10) and culture media as a control (n = 8) (study 5). All the control mice survived during the observation period (<xref ref-type="fig" rid="ppat-1003133-g009">Figure 9D</xref>). All mice inoculated with SBVΔNSs died by 4 post-infection mice while 80% of mice infected with sSBV died at the same time point and the remaining 20% died by day 6 post-infection. These data strongly suggest that animals lacking a competent IFN response are equally susceptible to sSBV and SBVΔNSs, confirming the role of the NSs protein as a modulator, at least indirectly, of the IFN response <italic>in vivo</italic>.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>SBV is a new emerging orthobunyavirus that has been associated with abortions and malformations in sheep and cattle. The <italic>Bunyaviridae</italic> include many viruses that have emerged or re-emerged in the last decade such as OROPV, Henan fever virus, Crimean-Congo hemorrhagic fever, RVFV, LCV and others <xref ref-type="bibr" rid="ppat.1003133-Hotez1">[38]</xref>–<xref ref-type="bibr" rid="ppat.1003133-Randolph1">[42]</xref>. SBV was isolated for the first time in Germany in October 2011 <xref ref-type="bibr" rid="ppat.1003133-Hoffmann1">[3]</xref>. However, the virus probably entered Northwestern Europe in the border region of The Netherlands, Germany and Belgium <xref ref-type="bibr" rid="ppat.1003133-Elbers1">[8]</xref> and subsequently spread rapidly to neighboring countries, including Luxembourg, France, Italy, Spain, Denmark and the United Kingdom. In this study, we have established an experimental platform that comprises both <italic>in vitro</italic> and <italic>in vivo</italic> systems to study SBV biology and pathogenesis.</p>
+      <p>Studies on SBV have thus far been concentrated in understanding the animal species susceptible to this virus, the spreading of the infection, and its impact on animal health and the farming industry. In this study, we undertook several steps towards understanding the molecular biology of SBV, its cellular tropism, pathogenesis and host-virus interaction. Using a synthetic biology approach, we developed two reverse genetics protocols for SBV, as powerful tools to characterize this emerging pathogen and to manipulate its genome. Using SBV sequences deposited in public databases, we synthesized the three SBV antigenome segments <italic>in vitro</italic> and rescued replication competent SBV in BSR-T7/5 transfected cells, as previously described for other bunyaviruses <xref ref-type="bibr" rid="ppat.1003133-Bridgen2">[29]</xref>. We also developed an alternative rescue system, using the plasmids above in transiently transfected 293T cells, where the T7 RNA polymerase was provided <italic>in trans</italic>. Using RACE RT-PCR performed on viral RNA extracted from early passages of SBV stocks we confirmed that the sequence identity of the viral UTRs in our synthetic plasmids indeed corresponded to SBV. This allowed us to provide for the first time the full-length sequence of circulating SBV since previous reports only provided partial sequences of the viral UTRs.</p>
+      <p>The “synthetic” SBV (sSBV) that we obtained was able to replicate <italic>in vitro</italic> as efficiently as wild type SBV. In addition, both wild type and sSBV were lethal in suckling mice injected intracerebrally. This experimental mouse system proved to be very useful in order to define SBV tropism. The histological lesions within the brains of mice inoculated with SBV show a progression from per-acute hemorrhage at 48 h post-infection to malacia at 72 h that extends to more widespread vacuolation of the white matter at 96–120 h post-inoculation. The strong immunoreactivity for SBV within the cerebral neurons of mice euthanized as early as 48 h post-inoculation, confirms that the histological changes within the brain are related to SBV infection. Importantly, we also found SBV to replicate in neurons of <italic>in utero</italic> infected calves and lambs. In fetal sheep, SBV infection can result in cavitation of the white matter of the cerebrum, cerebellar hypoplasia, mild lymphohistiocytic perivascular encephalitis, and small glial nodules scattered throughout the brain <xref ref-type="bibr" rid="ppat.1003133-Herder1">[32]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Peperkamp1">[43]</xref>. Thus, the cavitary lesions observed in naturally SBV infected lambs/calves appear to be the natural progression of vacuolar changes within the white matter observed suckling mice acutely infected with SBV. The similarities in the pathologic changes between naturally infected fetal sheep and mice inoculated with SBV intracerebrally, suggest that the mouse can be a useful model to study at least some aspects of SBV virulence.</p>
+      <p>In this study we have made substantial progress by generating an SBV antiserum that allowed us to define that neurons in the brain seem to be the major target for viral replication in the developing fetus. The limited time frame in which sheep fetuses seem to be susceptible to SBV infection (28–50 days of gestation) <xref ref-type="bibr" rid="ppat.1003133-European1">[44]</xref> coincides with the development of the blood brain barrier (BBB). In sheep the BBB starts to develop between days 50 and 60 of gestation and reaches full development by day 123 <xref ref-type="bibr" rid="ppat.1003133-Evans1">[45]</xref>. Thus, the virus could have easy access to the brain of the fetus during a short period of time: from day 28 of gestation when the placentomes (functional units of exchange between mother and fetus in the ruminant placenta) develop until day 50 when the BBB starts to develop. This would explain why disease in adult animals, that have an intact BBB, is mild with no apparent development of lesions in the CNS. Newborn mice have a fully mature BBB, however the developing cerebral vessels can be fragile and allow leakage of infectious agent <xref ref-type="bibr" rid="ppat.1003133-Saunders1">[46]</xref>. SBV could potentially reach the mouse brain tissue from subcutaneous inoculation proving an opportunity to develop a challenge model of infection that would better mimic natural exposure. It has been reported that subcutaneous inoculation of IFNAR<sup>−/−</sup> mice with SBV resulted in weight loss and 10–20% mortality, therefore a different aspect of SBV infection could be explored also with this model <xref ref-type="bibr" rid="ppat.1003133-Wernike1">[47]</xref>.</p>
+      <p>The malformations and deformities observed in SBV-infected lambs and calves are accompanied by muscle hypoplasia and demyelination. Here, we found SBV to infect the neurons of the grey matter of the spinal cord, which would suggest that muscular hypoplasia and muscular defects observed in SBV infected lambs and calves are mostly secondary to damage of the central nervous system (CNS).</p>
+      <p>Using reverse genetics we engineered a SBV NSs deletion mutant as this protein has been found in other orthobunyaviruses to be a virulence factor, acting by inhibiting cellular transcription and therefore indirectly antagonizing the host IFN response. SBVΔNSs replicated at levels comparable to wild type SBV in established cell lines, indicating that the NSs protein is not essential for viral replication <italic>in vitro</italic>. However SBVΔNSs was strongly attenuated in newborn mice. It is unlikely that the attenuation observed for SBVΔNSs is due to a change in cell tropism. On the contrary, we attribute its attenuated phenotype to its inability to counteract the innate immune response of host. This is supported by the fact that we were able to detect induction of IFN in IFN-competent human cell lines and in sheep primary cells when they were infected with SBVΔNSs but not when they were infected with wild type SBV. The production of IFN in SBVΔNSs-infected cells was associated with the presence of IFN-β transcripts, which were not detected in cells infected with wild type SBV indicating that the inhibition of IFN production occurred at the level of transcription. Most importantly, we found no differences in the virulence of sSBV and SBVΔNSs in IFNAR<sup>(−/−)</sup> mice, further reinforcing the notion that the SBV NSs protein is able to modulate at least indirectly the host innate immune response. Thus, the NSs protein of SBV acts as a virulence factor. Similar roles have been identified for the NSs proteins of RVFV <xref ref-type="bibr" rid="ppat.1003133-Bouloy1">[36]</xref> and LCV <xref ref-type="bibr" rid="ppat.1003133-Blakqori2">[35]</xref> underlying the importance of overcoming the host innate immune response for efficient viral replication.</p>
+      <p>In an attempt to identify other determinants of SBV virulence, we serially passaged SBV in CPT-Tert cells. Normally, serial passage of pathogenic viruses in cell culture results in decreased virulence especially when the cells used are defective in the production of factors mediating innate immune responses. However, using this approach, we unexpectedly obtained an SBV mutant (SBVp32) with increased pathogenicity in suckling mice. SBVp32 appeared to spread more rapidly than SBV in the brain of infected animals. SBVp32 accumulated a variety of mutations in all 3 viral segments. Of these, the ones found in the M and S segment are potentially the most interesting ones given that: i) we have already shown that the NSs is a virulence factor; and ii) most of the mutations found in the M segment are present in the Gc protein that is exposed in the outer surface of the virion and thus is the principal target of neutralizing antibodies. The mutations generated in Gc in an immunological unconstrained environment could be associated for example with an increased cell receptor affinity.</p>
+      <p>In conclusion, our synthetic biology approach demonstrates that, at least for the <italic>Bunyaviridae</italic>, it is possible very rapidly to investigate and characterize an emerging virus whilst only having knowledge of the complete sequence of the virus. Using synthetic plasmids we developed 2 reverse genetic protocols for the rescue of replication competent SBV. Most importantly, we developed a mouse model of infection that allowed us to identify a viral gene critical for virulence. Viral tropism for neurons of the CNS was shown to be similar in experimentally infected mice and naturally infected calves and lambs. Altogether, the molecular virology tools that we generated and the findings of this work open new avenues to study the biology and pathogenesis of a novel and rapidly spreading emerging virus.</p>
+    </sec>
+    <sec id="s4" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Ethical statement</title>
+        <p>All experimental procedures carried out in this study were approved by the ethical committee of the Istituto G. Caporale (protocol number 5383/2012) and further approved by the Italian Ministry of Health (Ministero della Salute) in accordance with Council Directive 86/609/EEC of the European Union and the Italian D.Igs 116/92.</p>
+      </sec>
+      <sec id="s4b">
+        <title>Cell lines</title>
+        <p>The 293T, 2fTGH, BHK-21, BSR and MDCK cell lines were grown in Dulbecco's modified Eagle's medium (DMEM) supplemented with 10% fetal bovine serum (FBS). BSR-T7/5 (provided by Karl Conzelmann) cells stably expressing the T7 polymerase were grown in Glasgow modified Eagle's medium supplemented with 10% FBS, 10% of tryptose phosphate broth and G418 at a final concentration of 1 mg/ml. Sheep choroid plexus cells (CPT-Tert) were grown in Iscove's modified Dulbecco's medium supplemented with 10% FBS (provided by David Griffiths) <xref ref-type="bibr" rid="ppat.1003133-Arnaud1">[48]</xref>. Bovine fetal aorta endothelial cells (BFAE, Health Protection Agency collection number 87022601) were cultured in Ham's F12 medium supplemented with 20% FBS. Ovine trophoblast cells, oTr-1, (provided by Thomas Spencer) <xref ref-type="bibr" rid="ppat.1003133-Farmer1">[49]</xref> were cultured in DMEM/F12 media supplemented with 15% FBS, 1 mM pyruvate, 700 nM of human recombinant insulin and 0.1 mM of nonessential amino acids. All cell lines were cultured at 37°C in a 5% CO<sub>2</sub> and 95% humidified atmosphere and were supplemented with 10,000 U/ml of penicillin and 10 mg/ml of streptomycin.</p>
+      </sec>
+      <sec id="s4c">
+        <title>Primary endothelial cell cultures</title>
+        <p>Ovine aortic endothelial (ovEC) cells were isolated by collagenase treatment using a method adapted from Gillespie et al. <xref ref-type="bibr" rid="ppat.1003133-Gillespie1">[50]</xref>. Aortas were harvested from recently euthanized animals and washed twice in sterile PBS. The aortas were then incubated at room temperature for 1 h in DMEM supplemented with 5% FBS, 25 µg/ml penicillin/streptomycin and 50 ng/ml amphotericin B. After incubation, the aortas were placed into collagenase in a Petri dish (2 mg/ml in DMEM) for 1 h at 37°C. After incubation, the endothelial cells were removed by scraping and seeded in 6-well plates. Cells were maintained at 37°C and 5% CO<sub>2</sub> in large vessel endothelial cell basal medium (TCS cellworks) supplemented with 20% FBS, human large vessel endothelial cell growth supplement (TCS cellworks), 25 µg/ml penicillin/streptomycin and 50 ng/ml amphotericin B. Cells were confirmed as endothelial cells by assessing their morphology using light microscopy and by immunofluorescence using antibodies against endothelial and smooth muscle cell markers. Cells used for this study were only passaged once.</p>
+      </sec>
+      <sec id="s4d">
+        <title>Antibodies</title>
+        <p>Antisera used in this study included a rabbit polyclonal antiserum against the SBV N protein expressed in bacteria as Glutathione-S-transferase (GST)-tagged recombinant protein (Proteintech). Antibodies against CD-31 (marker for endothelial cells) and actin (smooth muscle marker) were purchased from Source Bioscience and Abcam respectively.</p>
+      </sec>
+      <sec id="s4e">
+        <title>Viruses</title>
+        <p>Wild type SBV was originally isolated at the Friedrich-Loeffler-Institut (Germany). This virus was initially isolated from the blood of an infected cow and passaged once in KC cells and 6 times in BHK-21 cells. The virus was plaque purified and stocks were produced in BHK-21 cells. Virus titers were determined by standard plaque assays in CPT-Tert cells and expressed as plaque forming units per milliliter (PFU/ml). Encephalomyocarditis virus was provided by Rick Randall <xref ref-type="bibr" rid="ppat.1003133-Killip1">[37]</xref>.</p>
+      </sec>
+      <sec id="s4f">
+        <title>Plasmids</title>
+        <p>pUCSBVST7, pUCSBVMT7 and pUCSBVLT7 encode the full-length antigenomic S, M and L SBV segments and were used for the SBV reverse genetics protocols described in this study (see below). In each plasmid, the SBV antigenome is placed downstream of the bacteriophage T7 promoter and upstream of the hepatitis δ ribozyme and the T7 terminator similarly to what described previously for other Bunyaviruses <xref ref-type="bibr" rid="ppat.1003133-Bridgen2">[29]</xref>. Sequences of pUCSBVST7, pUCSBVMT7 and pUCSBVLT7 were synthesized commercially and were derived from the incomplete SBV sequences available in GenBank in January 2012 (HE649912; HE649913; and HE649914). Where missing, the 5′ and 3′ end sequences for each genome segment (not available in GenBank at that time) were predicted by alignment of AKAV 5′ and 3′ sequences. pUCSBVΔNSsT7 was obtained by inserting 5 point mutations in pUCSBVST7 as described below. Two mutations altered the second and third initiation codons in the NSs while the remaining 3 introduced premature stop codons. pCMV-T7 expresses the T7 polymerase under the control of the CMV immediate early promoter.</p>
+      </sec>
+      <sec id="s4g">
+        <title>Reverse genetics</title>
+        <p>293T cells or BSR-T7/5 cells were plated in 6 well plates one day before transfection without in a final volume of 2 ml of tissue culture media without antibiotics. For rescue in BSR-T7/5 cells, 1 µg of each antigenome-encoding plasmid was transfected using Fugene HD at a 1∶3 ratio (µg of plasmid: µl of Fugene). For rescue in 293T cells, a plasmid expressing the T7 polymerase under the control of the CMV promoter was transfected alongside the plasmids containing the SBV antigenomes (or derived deletion mutant antigenomes). In both protocols, cells transfected with only two genomic segments were used as negative control. Supernatants were collected 5 days post transfection, clarified by low speed centrifugation and the presence of virus (termed sSBV for “synthetic SBV” in this study) was assessed by standard plaque assays in CPT-Tert cells as already described <xref ref-type="bibr" rid="ppat.1003133-Ratinier1">[51]</xref>. Virus stocks were generated from plaque purified virus in CPT-Tert cells.</p>
+      </sec>
+      <sec id="s4h">
+        <title>Virus growth curves</title>
+        <p>The <italic>in vitro</italic> growth kinetics of SBV was determined by infecting a variety of cell lines at a multiplicity of infection (MOI) of 0.05. The presence of infectious virus was then assessed from clarified supernatants collected at different time points post infection by end point dilution analysis performed in CPT-Tert cells. Each experiment was performed in triplicate and repeated at least twice.</p>
+      </sec>
+      <sec id="s4i">
+        <title>RACE analysis</title>
+        <p>The 5′ and 3′ ends of the 3 genome segments of SBV were sequenced using the 5′/3′ RACE kit according to the manufacturer's instructions (Roche). 5′ RACE was carried out on the genome strand to obtain the sequence of the 5′ end of the virus segments. Briefly, 1 µg total RNA extracted from SBV infected BHK-21 cells was reverse transcribed using a gene specific cDNA synthesis primer. The synthesised cDNA was column purified and poly-A tailed at the 3′ end and then amplified using the oligodT anchor primer and a second nested gene specific primer. To obtain the 3′ end of the virus segments, 3′ RACE was performed on the genome strand. Briefly, 1 µg total RNA extracted from SBV infected BHK-21 cells was poly-A tailed at the 3′ end of the RNA using poly A polymerase (NEB) according to the manufacturer's protocol. The poly-A tailed RNA was reversed transcribed using the oligodT anchor primer. cDNA was then amplified using the anchor primer and a nested gene specific primer. Primer sequences are available upon request.</p>
+      </sec>
+      <sec id="s4j">
+        <title>Interferon detection</title>
+        <p>2fTGH cells were plated at a density of 1.7×10<sup>5</sup> cells/ml in 24 well plates. Cells were infected with the indicated viruses at MOI of 5 or transfected with poly I∶C (10 ng) using Lipofectamine 2000 according to the manufacturer's protocol. Cells were incubated at 37°C for 24 h, then lysed in TRizol Reagent (Invitrogen) and RNA extracted according to the manufacturer's protocol. 1 µg of total RNA was reverse transcribed using Superscript III (Invitrogen) according to the manufacturer's instructions. This cDNA was used as a template for amplification of the SBV S segment or 45S RNA using GoTaq polymerase (Promega) following the manufacturer's protocol. The sequences of the primers used for SBV detection are available on request. Primers for the amplification of the IFN-β and 45S RNAs have been previously published <xref ref-type="bibr" rid="ppat.1003133-Leonard1">[52]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Spiegel1">[53]</xref>.</p>
+      </sec>
+      <sec id="s4k">
+        <title>Interferon protection assays</title>
+        <p>Measurement of IFN levels was based on the methods described previously <xref ref-type="bibr" rid="ppat.1003133-Killip1">[37]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Barry1">[54]</xref>. 2fTGH, OvEC and oTr-1 cells were first seeded in 12-well plates and incubated for 2 days. Cells were then infected with the appropriate virus at a MOI of 5, 4 and 2 respectively and the medium was collected 24 h later. The medium was UV-treated for 5 minutes using a Spectrolinker XL-1500 UV crosslinker (Spectronics Corporation) in order to remove any infectious virus. CPT-Tert cells were then seeded in 96-well plates and 24 h later 2-fold serial dilutions (in duplicate) of the UV-treated media were added. Cells were then further incubated for 24 h. In parallel, cells were also incubated with 2-fold dilutions of a known amount of universal IFN. Cells were then infected with encephalomyocarditis virus (EMCV) and incubated for an additional 48 h. The levels of IFN were calculated by monitoring wells that were protected from cell death induced by EMCV and comparing them to the universal IFN control.</p>
+      </sec>
+      <sec id="s4l">
+        <title>Western blotting</title>
+        <p>SDS-PAGE and Western blots were performed from total cell lysates prepared 24 h post-infection as previously described <xref ref-type="bibr" rid="ppat.1003133-Palmarini1">[55]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Varela1">[56]</xref>. SBV was detected using a rabbit polyclonal antibody against the SBV nucleocapsid protein.</p>
+      </sec>
+      <sec id="s4m">
+        <title><italic>In vivo</italic> pathogenicity studies</title>
+        <p>Animal experiments were carried out at the Istituto G. Caporale (Teramo, Italy) following local and national approved protocols for animal experimentation. <bold>Study 1.</bold> Litters of 2-day old NIH-Swiss mice were inoculated intra-cerebrally with 400 PFU of SBV, sSBV or mock inoculated using cell culture medium. Animals were monitored daily for signs of disease for a period of 14 days.</p>
+        <p><bold>Study 2.</bold> Litters of 10-day and 18-day old NIH-Swiss mice were inoculated intracerebrally with 400 PFU of sSBV and monitored for signs of disease as above.</p>
+        <p><bold>Study 3.</bold> Litters of 3 and 7-day old mice were inoculated intracerebrally with 100 or 400 PFU with sSBV, SBVp32, SBVΔNSs or cell culture media and monitored for signs of disease for a period of 14 days.</p>
+        <p><bold>Study 4.</bold> Litters of 7-day old NIH-Swiss mice were inoculated intracerebrally with 400 PFU with sSBV, SBVp32, or cell culture media and 2 animals per group were euthanized at 24, 48, 72 and 96 h post-infection.</p>
+        <p><bold>Study 5.</bold> Litters of 4 day old mice deficient of the type I IFN receptor (IFN Alpha Ro/o IFN<sup>(−/−)</sup> 129/Sv) were inoculated intracerebrally with 400 PFU with sSBV, SBVΔNSs, or cell culture media as a control and monitored for signs of disease.</p>
+      </sec>
+      <sec id="s4n">
+        <title>Histopathology and immunohistochemistry</title>
+        <p>Brains from infected and control mice were collected and fixed in 10% neutral buffered formalin and paraffin embedded following standard histological procedures. In addition, brain tissues were also collected from 6 lambs and 5 calves born in North Rhine-Westphalia, a SBV-endemic area of Germany. At post-mortem, animals presented a variety of malformations including arthrogryposis, brachygnatia, torticollis, cerebellar hypoplasia, hydrocephalus, muscular hypoplasia. Negative controls included brain sections derived from a sheep and 3 calves, which died as a result of diseases unrelated to SBV-infection in Germany between 1994 and 2001. We also used as negative controls 3 brain tissues from Scotland, an area so far free of SBV infection. Tissue sections (4–6 µm) from mice, lambs and calves were stained with hematoxylin and eosin for histopathological examination. Sections were also examined for the presence of the SBV N protein using a specific antiserum and the EnVision (DAKO) detection system as described before <xref ref-type="bibr" rid="ppat.1003133-Ratinier1">[51]</xref>, <xref ref-type="bibr" rid="ppat.1003133-Caporale1">[57]</xref>.</p>
+      </sec>
+      <sec id="s4o">
+        <title>Accession numbers</title>
+        <p>The sequences of the synthetic SBV genomic segments have been deposited in GenBank (accession numbers JX853179, JX853180, JX853181).</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Ian McMillan and staff of the Veterinary Diagnostic Services of the University of Glasgow School of Veterinary Medicine for tissue processing. We are in debt to our colleagues indicated in the text for useful reagents. The image of aborted lamb was provided by Dr. M. Peters, Staatliches Veterinäruntersuchungsamt, Zur Taubeneiche, Arnsberg, Germany.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="ppat.1003133-Jones1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jones</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Patel</surname><given-names>NG</given-names></name>, <name name-style="western"><surname>Levy</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Storeygard</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Balk</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Global trends in emerging infectious diseases</article-title>. <source>Nature</source> <volume>451</volume>: <fpage>990</fpage>–<lpage>993</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Kupferschmidt1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kupferschmidt</surname><given-names>K</given-names></name> (<year>2012</year>) <article-title>Infectious disease. Scientists rush to find clues on new animal virus</article-title>. <source>Science</source> <volume>335</volume>: <fpage>1028</fpage>–<lpage>1029</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Hoffmann1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hoffmann</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Scheuch</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hoper</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Jungblut</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Holsteg</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Novel orthobunyavirus in Cattle, Europe, 2011</article-title>. <source>Emerg Infect Dis</source> <volume>18</volume>: <fpage>469</fpage>–<lpage>472</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Garigliany1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Garigliany</surname><given-names>MM</given-names></name>, <name name-style="western"><surname>Bayrou</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Kleijnen</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Cassart</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Jolly</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Schmallenberg virus: a new Shamonda/Sathuperi-like virus on the rise in Europe</article-title>. <source>Antiviral Res</source> <volume>95</volume>: <fpage>82</fpage>–<lpage>87</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Beer1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Beer</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Conraths</surname><given-names>FJ</given-names></name>, <name name-style="western"><surname>WH</surname><given-names>VDP</given-names></name> (<year>2012</year>) <article-title>‘Schmallenberg virus’ - a novel orthobunyavirus emerging in Europe</article-title>. <source>Epidemiol Infect</source> <fpage>1</fpage>–<lpage>8</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-OIE1">
+        <label>6</label>
+        <mixed-citation publication-type="other" xlink:type="simple">OIE (2012) Schmallenberg virus. OIE technical factsheet on SBV. May 2012.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Garigliany2">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Garigliany</surname><given-names>MM</given-names></name>, <name name-style="western"><surname>Bayrou</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Kleijnen</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Cassart</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Desmecht</surname><given-names>D</given-names></name> (<year>2012</year>) <article-title>Schmallenberg virus in domestic cattle, Belgium, 2012</article-title>. <source>Emerg Infect Dis</source> <volume>18</volume>: <fpage>1512</fpage>–<lpage>1514</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Elbers1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Elbers</surname><given-names>AR</given-names></name>, <name name-style="western"><surname>Loeffen</surname><given-names>WL</given-names></name>, <name name-style="western"><surname>Quak</surname><given-names>S</given-names></name>, <name name-style="western"><surname>de Boer-Luijtze</surname><given-names>E</given-names></name>, <name name-style="western"><surname>van der Spek</surname><given-names>AN</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Seroprevalence of Schmallenberg virus antibodies among dairy cattle, the Netherlands, winter 2011–2012</article-title>. <source>Emerg Infect Dis</source> <volume>18</volume>: <fpage>1065</fpage>–<lpage>1071</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Dominguez1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dominguez</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hendrikx</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Zientara</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Calavas</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Jay</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Preliminary estimate of Schmallenberg virus infection impact in sheep flocks - France</article-title>. <source>Vet Rec</source> <volume>171</volume>: <fpage>426</fpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Walter1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Walter</surname><given-names>CT</given-names></name>, <name name-style="western"><surname>Barr</surname><given-names>JN</given-names></name> (<year>2011</year>) <article-title>Recent advances in the molecular and cellular biology of bunyaviruses</article-title>. <source>J Gen Virol</source> <volume>92</volume>: <fpage>2467</fpage>–<lpage>2484</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Goller1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Goller</surname><given-names>KV</given-names></name>, <name name-style="western"><surname>Hoper</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Schirrmeier</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Mettenleiter</surname><given-names>TC</given-names></name>, <name name-style="western"><surname>Beer</surname><given-names>M</given-names></name> (<year>2012</year>) <article-title>Schmallenberg virus as possible ancestor of Shamonda virus</article-title>. <source>Emerg Infect Dis</source> <volume>18</volume>: <fpage>1644</fpage>–<lpage>1646</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Cybinski1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cybinski</surname><given-names>DH</given-names></name>, <name name-style="western"><surname>St George</surname><given-names>TD</given-names></name>, <name name-style="western"><surname>Paull</surname><given-names>NI</given-names></name> (<year>1978</year>) <article-title>Antibodies to Akabane virus in Australia</article-title>. <source>Aust Vet J</source> <volume>54</volume>: <fpage>1</fpage>–<lpage>3</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-DellaPorta1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Della-Porta</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Murray</surname><given-names>MD</given-names></name>, <name name-style="western"><surname>Cybinski</surname><given-names>DH</given-names></name> (<year>1976</year>) <article-title>Congenital bovine epizootic arthrogryposis and hydranencephaly in Australia. Distribution of antibodies to Akabane virus in Australian Cattle after the 1974 epizootic</article-title>. <source>Aust Vet J</source> <volume>52</volume>: <fpage>496</fpage>–<lpage>501</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Liao1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Liao</surname><given-names>YK</given-names></name>, <name name-style="western"><surname>Lu</surname><given-names>YS</given-names></name>, <name name-style="western"><surname>Goto</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Inaba</surname><given-names>Y</given-names></name> (<year>1996</year>) <article-title>The isolation of Akabane virus (Iriki strain) from calves in Taiwan</article-title>. <source>J Basic Microbiol</source> <volume>36</volume>: <fpage>33</fpage>–<lpage>39</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Shimshony1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shimshony</surname><given-names>S</given-names></name> (<year>1980</year>) <article-title>An epizootic of Akabane disease in bovines, ovines and caprines in Israel, 1969–70: epidemiological assessment</article-title>. <source>Acta Morphol Acad Sci Hung</source> <volume>28</volume>: <fpage>197</fpage>–<lpage>199</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Causey1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Causey</surname><given-names>OR</given-names></name>, <name name-style="western"><surname>Kemp</surname><given-names>GE</given-names></name>, <name name-style="western"><surname>Causey</surname><given-names>CE</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>VH</given-names></name> (<year>1972</year>) <article-title>Isolations of Simbu-group viruses in Ibadan, Nigeria 1964–69, including the new types Sango, Shamonda, Sabo and Shuni</article-title>. <source>Ann Trop Med Parasitol</source> <volume>66</volume>: <fpage>357</fpage>–<lpage>362</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Yanase1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yanase</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Fukutomi</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Yoshida</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Kato</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Ohashi</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>The emergence in Japan of Sathuperi virus, a tropical Simbu serogroup virus of the genus Orthobunyavirus</article-title>. <source>Arch Virol</source> <volume>149</volume>: <fpage>1007</fpage>–<lpage>1013</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Rasmussen1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rasmussen</surname><given-names>LD</given-names></name>, <name name-style="western"><surname>Kristensen</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Kirkeby</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Rasmussen</surname><given-names>TB</given-names></name>, <name name-style="western"><surname>Belsham</surname><given-names>GJ</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Culicoids as vectors of Schmallenberg virus</article-title>. <source>Emerg Infect Dis</source> <volume>18</volume>: <fpage>1204</fpage>–<lpage>1206</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Bridgen1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bridgen</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Weber</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Fazakerley</surname><given-names>JK</given-names></name>, <name name-style="western"><surname>Elliott</surname><given-names>RM</given-names></name> (<year>2001</year>) <article-title>Bunyamwera bunyavirus nonstructural protein NSs is a nonessential gene product that contributes to viral pathogenesis</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>98</volume>: <fpage>664</fpage>–<lpage>669</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Thomas1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Thomas</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Blakqori</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Wagner</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Banholzer</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Kessler</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Inhibition of RNA polymerase II phosphorylation by a viral interferon antagonist</article-title>. <source>J Biol Chem</source> <volume>279</volume>: <fpage>31471</fpage>–<lpage>31477</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Kohl1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kohl</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Clayton</surname><given-names>RF</given-names></name>, <name name-style="western"><surname>Weber</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Bridgen</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Randall</surname><given-names>RE</given-names></name>, <etal>et al</etal>. (<year>2003</year>) <article-title>Bunyamwera virus nonstructural protein NSs counteracts interferon regulatory factor 3-mediated induction of early cell death</article-title>. <source>J Virol</source> <volume>77</volume>: <fpage>7999</fpage>–<lpage>8008</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Neumann1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Neumann</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Kawaoka</surname><given-names>Y</given-names></name> (<year>2004</year>) <article-title>Reverse genetics systems for the generation of segmented negative-sense RNA viruses entirely from cloned cDNA</article-title>. <source>Curr Top Microbiol Immunol</source> <volume>283</volume>: <fpage>43</fpage>–<lpage>60</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Shi1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shi</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Kohl</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Leonard</surname><given-names>VH</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>P</given-names></name>, <name name-style="western"><surname>McLees</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Requirement of the N-terminal region of orthobunyavirus nonstructural protein NSm for virus assembly and morphogenesis</article-title>. <source>J Virol</source> <volume>80</volume>: <fpage>8089</fpage>–<lpage>8099</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Terasaki1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Terasaki</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Murakami</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Lokugamage</surname><given-names>KG</given-names></name>, <name name-style="western"><surname>Makino</surname><given-names>S</given-names></name> (<year>2011</year>) <article-title>Mechanism of tripartite RNA genome packaging in Rift Valley fever virus</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>108</volume>: <fpage>804</fpage>–<lpage>809</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Lowen1">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lowen</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Noonan</surname><given-names>C</given-names></name>, <name name-style="western"><surname>McLees</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Elliott</surname><given-names>RM</given-names></name> (<year>2004</year>) <article-title>Efficient bunyavirus rescue from cloned cDNA</article-title>. <source>Virology</source> <volume>330</volume>: <fpage>493</fpage>–<lpage>500</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Ogawa1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ogawa</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Sugiura</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Kato</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Tohya</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Akashi</surname><given-names>H</given-names></name> (<year>2007</year>) <article-title>Rescue of Akabane virus (family Bunyaviridae) entirely from cloned cDNAs by using RNA polymerase I</article-title>. <source>J Gen Virol</source> <volume>88</volume>: <fpage>3385</fpage>–<lpage>3390</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Ikegami1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ikegami</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Won</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Peters</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Makino</surname><given-names>S</given-names></name> (<year>2006</year>) <article-title>Rescue of infectious rift valley fever virus entirely from cDNA, analysis of virus lacking the NSs gene, and expression of a foreign gene</article-title>. <source>J Virol</source> <volume>80</volume>: <fpage>2933</fpage>–<lpage>2940</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Blakqori1">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blakqori</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Weber</surname><given-names>F</given-names></name> (<year>2005</year>) <article-title>Efficient cDNA-based rescue of La Crosse bunyaviruses expressing or lacking the nonstructural protein NSs</article-title>. <source>J Virol</source> <volume>79</volume>: <fpage>10420</fpage>–<lpage>10428</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Bridgen2">
+        <label>29</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bridgen</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Elliott</surname><given-names>RM</given-names></name> (<year>1996</year>) <article-title>Rescue of a segmented negative-strand RNA virus entirely from cloned complementary DNAs</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>93</volume>: <fpage>15400</fpage>–<lpage>15404</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Buchholz1">
+        <label>30</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Buchholz</surname><given-names>UJ</given-names></name>, <name name-style="western"><surname>Finke</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Conzelmann</surname><given-names>KK</given-names></name> (<year>1999</year>) <article-title>Generation of bovine respiratory syncytial virus (BRSV) from cDNA: BRSV NS2 is not essential for virus replication in tissue culture, and the human RSV leader region acts as a functional BRSV genome promoter</article-title>. <source>J Virol</source> <volume>73</volume>: <fpage>251</fpage>–<lpage>259</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Southam1">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Southam</surname><given-names>CM</given-names></name>, <name name-style="western"><surname>Moore</surname><given-names>AE</given-names></name> (<year>1951</year>) <article-title>West Nile, Ilheus, and Bunyamwera virus infections in man</article-title>. <source>Am J Trop Med Hyg</source> <volume>31</volume>: <fpage>724</fpage>–<lpage>741</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Herder1">
+        <label>32</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Herder</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Wohlsein</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Peters</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hansmann</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Baumgartner</surname><given-names>W</given-names></name> (<year>2012</year>) <article-title>Salient lesions in domestic ruminants infected with the emerging so-called Schmallenberg virus in Germany</article-title>. <source>Vet Pathol</source> <volume>49</volume>: <fpage>588</fpage>–<lpage>591</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Vialat1">
+        <label>33</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vialat</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Billecocq</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kohl</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Bouloy</surname><given-names>M</given-names></name> (<year>2000</year>) <article-title>The S segment of rift valley fever phlebovirus (Bunyaviridae) carries determinants for attenuation and virulence in mice</article-title>. <source>J Virol</source> <volume>74</volume>: <fpage>1538</fpage>–<lpage>1543</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Muller1">
+        <label>34</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Muller</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Saluzzo</surname><given-names>JF</given-names></name>, <name name-style="western"><surname>Lopez</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Dreier</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Turell</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>1995</year>) <article-title>Characterization of clone 13, a naturally attenuated avirulent isolate of Rift Valley fever virus, which is altered in the small segment</article-title>. <source>Am J Trop Med Hyg</source> <volume>53</volume>: <fpage>405</fpage>–<lpage>411</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Blakqori2">
+        <label>35</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blakqori</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Delhaye</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Habjan</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Blair</surname><given-names>CD</given-names></name>, <name name-style="western"><surname>Sanchez-Vargas</surname><given-names>I</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>La Crosse bunyavirus nonstructural protein NSs serves to suppress the type I interferon system of mammalian hosts</article-title>. <source>J Virol</source> <volume>81</volume>: <fpage>4991</fpage>–<lpage>4999</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Bouloy1">
+        <label>36</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bouloy</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Janzen</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Vialat</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Khun</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Pavlovic</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>Genetic evidence for an interferon-antagonistic function of rift valley fever virus nonstructural protein NSs</article-title>. <source>J Virol</source> <volume>75</volume>: <fpage>1371</fpage>–<lpage>1377</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Killip1">
+        <label>37</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Killip</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Young</surname><given-names>DF</given-names></name>, <name name-style="western"><surname>Ross</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Goodbourn</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Failure to activate the IFN-beta promoter by a paramyxovirus lacking an interferon antagonist</article-title>. <source>Virology</source> <volume>415</volume>: <fpage>39</fpage>–<lpage>46</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Hotez1">
+        <label>38</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Savioli</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Fenwick</surname><given-names>A</given-names></name> (<year>2012</year>) <article-title>Neglected tropical diseases of the Middle East and North Africa: review of their prevalence, distribution, and opportunities for control</article-title>. <source>PLoS Negl Trop Dis</source> <volume>6</volume>: <fpage>e1475</fpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Leisnham1">
+        <label>39</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Leisnham</surname><given-names>PT</given-names></name>, <name name-style="western"><surname>Juliano</surname><given-names>SA</given-names></name> (<year>2012</year>) <article-title>Impacts of climate, land use, and biological invasion on the ecology of immature Aedes mosquitoes: implications for La Crosse emergence</article-title>. <source>Ecohealth</source> <volume>9</volume>: <fpage>217</fpage>–<lpage>228</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Azevedo1">
+        <label>40</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Azevedo</surname><given-names>RS</given-names></name>, <name name-style="western"><surname>Nunes</surname><given-names>MR</given-names></name>, <name name-style="western"><surname>Chiang</surname><given-names>JO</given-names></name>, <name name-style="western"><surname>Bensabath</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Vasconcelos</surname><given-names>HB</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Reemergence of Oropouche fever, northern Brazil</article-title>. <source>Emerg Infect Dis</source> <volume>13</volume>: <fpage>912</fpage>–<lpage>915</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Xu1">
+        <label>41</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Xu</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Liu</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Huang</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Ma</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Metagenomic analysis of fever, thrombocytopenia and leukopenia syndrome (FTLS) in Henan Province, China: discovery of a new bunyavirus</article-title>. <source>PLoS Pathog</source> <volume>7</volume>: <fpage>e1002369</fpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Randolph1">
+        <label>42</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Randolph</surname><given-names>SE</given-names></name>, <name name-style="western"><surname>Rogers</surname><given-names>DJ</given-names></name> (<year>2010</year>) <article-title>The arrival, establishment and spread of exotic diseases: patterns and predictions</article-title>. <source>Nat Rev Microbiol</source> <volume>8</volume>: <fpage>361</fpage>–<lpage>371</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Peperkamp1">
+        <label>43</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Peperkamp</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Dijkman</surname><given-names>R</given-names></name>, <name name-style="western"><surname>van Maanen</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Vos</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Wouda</surname><given-names>W</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Polioencephalo-myelitis in a calf due to infection with Schmallenberg virus</article-title>. <source>Vet Rec</source> <volume>170</volume>: <fpage>570</fpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-European1">
+        <label>44</label>
+        <mixed-citation publication-type="other" xlink:type="simple">European Food Safety Authority (2012) Schmallenberg virus: likely epidemiologival scenarios and data needs. Technical report. Supporting publications 2012:EN-360. Parma, Italy.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Evans1">
+        <label>45</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Evans</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Reynolds</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Reynolds</surname><given-names>ML</given-names></name>, <name name-style="western"><surname>Saunders</surname><given-names>NR</given-names></name>, <name name-style="western"><surname>Segal</surname><given-names>MB</given-names></name> (<year>1974</year>) <article-title>The development of a blood-brain barrier mechanism in foetal sheep</article-title>. <source>J Physiol</source> <volume>238</volume>: <fpage>371</fpage>–<lpage>386</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Saunders1">
+        <label>46</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Saunders</surname><given-names>NR</given-names></name>, <name name-style="western"><surname>Liddelow</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Dziegielewska</surname><given-names>KM</given-names></name> (<year>2012</year>) <article-title>Barrier mechanisms in the developing brain</article-title>. <source>Front Pharmacol</source> <volume>3</volume>: <fpage>46</fpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Wernike1">
+        <label>47</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wernike</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Breithaupt</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Keller</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hoffmann</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Beer</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Schmallenberg virus infection of adult type I interferon receptor knock-out mice</article-title>. <source>PLoS One</source> <volume>7</volume>: <fpage>e40380</fpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Arnaud1">
+        <label>48</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Arnaud</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Black</surname><given-names>SG</given-names></name>, <name name-style="western"><surname>Murphy</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Griffiths</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Neil</surname><given-names>SJ</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Interplay between ovine bone marrow stromal cell antigen 2/tetherin and endogenous retroviruses</article-title>. <source>J Virol</source> <volume>84</volume>: <fpage>4415</fpage>–<lpage>4425</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Farmer1">
+        <label>49</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Farmer</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Burghardt</surname><given-names>RC</given-names></name>, <name name-style="western"><surname>Jousan</surname><given-names>FD</given-names></name>, <name name-style="western"><surname>Hansen</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Bazer</surname><given-names>FW</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Galectin 15 (LGALS15) functions in trophectoderm migration and attachment</article-title>. <source>Faseb J</source> <volume>22</volume>: <fpage>548</fpage>–<lpage>560</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Gillespie1">
+        <label>50</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gillespie</surname><given-names>JI</given-names></name>, <name name-style="western"><surname>Greenwell</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Johnson</surname><given-names>C</given-names></name> (<year>1991</year>) <article-title>Agonist-induced fluctuations in cytoplasmic calcium in primary cultures of bovine endothelial cells</article-title>. <source>Exp Physiol</source> <volume>76</volume>: <fpage>667</fpage>–<lpage>676</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Ratinier1">
+        <label>51</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ratinier</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Caporale</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Golder</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Franzoni</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Allan</surname><given-names>K</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Identification and characterization of a novel non-structural protein of bluetongue virus</article-title>. <source>PLoS Pathog</source> <volume>7</volume>: <fpage>e1002477</fpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Leonard1">
+        <label>52</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Leonard</surname><given-names>VH</given-names></name>, <name name-style="western"><surname>Kohl</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Hart</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Elliott</surname><given-names>RM</given-names></name> (<year>2006</year>) <article-title>Interaction of Bunyamwera Orthobunyavirus NSs protein with mediator protein MED8: a mechanism for inhibiting the interferon response</article-title>. <source>J Virol</source> <volume>80</volume>: <fpage>9667</fpage>–<lpage>9675</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Spiegel1">
+        <label>53</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Spiegel</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Pichlmair</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Martinez-Sobrido</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Cros</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Garcia-Sastre</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Inhibition of Beta interferon induction by severe acute respiratory syndrome coronavirus suggests a two-step model for activation of interferon regulatory factor 3</article-title>. <source>J Virol</source> <volume>79</volume>: <fpage>2079</fpage>–<lpage>2086</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Barry1">
+        <label>54</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Barry</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Breakwell</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Fragkoudis</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Attarzadeh-Yazdi</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Rodriguez-Andres</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>PKR acts early in infection to suppress Semliki Forest virus production and strongly enhances the type I interferon response</article-title>. <source>J Gen Virol</source> <volume>90</volume>: <fpage>1382</fpage>–<lpage>1391</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Palmarini1">
+        <label>55</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Palmarini</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Sharp</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>de las Heras</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Fan</surname><given-names>H</given-names></name> (<year>1999</year>) <article-title>Jaagsiekte sheep retrovirus is necessary and sufficient to induce a contagious lung cancer in sheep</article-title>. <source>J Virol</source> <volume>73</volume>: <fpage>6964</fpage>–<lpage>6972</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Varela1">
+        <label>56</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Varela</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Chow</surname><given-names>YH</given-names></name>, <name name-style="western"><surname>Sturkie</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Murcia</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Palmarini</surname><given-names>M</given-names></name> (<year>2006</year>) <article-title>Association of RON tyrosine kinase with the Jaagsiekte sheep retrovirus envelope glycoprotein</article-title>. <source>Virology</source> <volume>350</volume>: <fpage>347</fpage>–<lpage>357</lpage>.</mixed-citation>
+      </ref>
+      <ref id="ppat.1003133-Caporale1">
+        <label>57</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Caporale</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Wash</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Pini</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Savini</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Franchi</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Determinants of bluetongue virus virulence in murine models of disease</article-title>. <source>J Virol</source> <volume>85</volume>: <fpage>11479</fpage>–<lpage>11489</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

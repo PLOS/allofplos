@@ -1,0 +1,2892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="publisher">pmed</journal-id><journal-id journal-id-type="flc">plme</journal-id><journal-id journal-id-type="nlm-ta">PLoS Med</journal-id><journal-id journal-id-type="pmc">plosmed</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Medicine</journal-title></journal-title-group><issn pub-type="ppub">1549-1277</issn><issn pub-type="epub">1549-1676</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="doi">10.1371/journal.pmed.0030520</article-id><article-id pub-id-type="publisher-id">06-PLME-RA-0450R2</article-id><article-id pub-id-type="sici">plme-03-12-24</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Genetics and Genomics</subject>
+          <subject>Obstetrics</subject>
+          <subject>Public Health and Epidemiology</subject>
+          <subject>Women's Health</subject>
+        </subj-group>
+        <subj-group subj-group-type="System Taxonomy">
+          <subject>Obstetrics</subject>
+          <subject>Genetics</subject>
+          <subject>Epidemiology</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Angiotensin-Converting Enzyme I/D Polymorphism and Preeclampsia Risk:
+          Evidence of Small-Study Bias</article-title><alt-title alt-title-type="running-head">ACE Polymorphisms and Preeclampsia</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Serrano</surname>
+            <given-names>Norma C</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Díaz</surname>
+            <given-names>Luis A</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Páez</surname>
+            <given-names>Maria C</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Mesa</surname>
+            <given-names>Clara M</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Cifuentes</surname>
+            <given-names>Rodrigo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Monterrosa</surname>
+            <given-names>Alvaro</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>González</surname>
+            <given-names>Adriana</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Smeeth</surname>
+            <given-names>Liam</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Hingorani</surname>
+            <given-names>Aroon D</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Casas</surname>
+            <given-names>Juan P</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1">
+        <label>1</label><addr-line>Universidad Aut</addr-line>ónoma de Bucaramanga,
+        Bucaramanga, Colombia </aff><aff id="aff2">
+        <label>2</label><addr-line>Instituto de Ciencias de la Salud,
+        Medell</addr-line>ín, Colombia </aff><aff id="aff3">
+        <label>3</label>
+        <addr-line>Universidad del Valle, Cali, Colombia </addr-line>
+      </aff><aff id="aff4">
+        <label>4</label>
+        <addr-line>Universidad de Cartagena, Cartagena, Colombia </addr-line>
+      </aff><aff id="aff5">
+        <label>5</label>
+        <addr-line>Universidad Industrial de Santander, Bucaramanga, Colombia </addr-line>
+      </aff><aff id="aff6">
+        <label>6</label>
+        <addr-line>Department of Epidemiology and Population Health, London School of Hygiene and
+          Tropical Medicine, United Kingdom </addr-line>
+      </aff><aff id="aff7">
+        <label>7</label>
+        <addr-line>Centre for Clinical Pharmacology, Department of Medicine, at British Heart
+          Foundation laboratories at University College London, London, United Kingdom </addr-line>
+      </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Minelli</surname>
+            <given-names>Cosetta</given-names>
+          </name>
+          <role>Academic Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">University of Leicester, United Kingdom</aff><author-notes>
+        <fn fn-type="con" id="ack1">
+          <p>NCS, LAD, MCP, RC, AM, LS, ADH, and JPC designed the study. NCS, LAD, MCP, CMM, AM, AG,
+            LS, and JPC analyzed the data. NCS, MCP, CMM, RC, AM, AG, and LS enrolled patients. NCS,
+            LAD, MCP, CMM, AM, AG, LS, ADH, and JPC contributed to writing the paper. MCP genotyped
+            the insertion/deletion within the angiotensin-converting enzyme gene and collected the
+            data for the meta-analysis.</p>
+        </fn>
+        <corresp id="cor1">* To whom correspondence should be addressed. E-mail: <email xlink:type="simple">nserrano@unab.edu.co</email> (NCS), <email xlink:type="simple">Juan.Pablo-Casas@lshtm.ac.uk</email> (JPC)</corresp>
+      <fn fn-type="conflict" id="n102">
+        <p> University College London holds patents on the measurement of asymmetric
+          dimethylarginine in the management of preeclampsia.</p>
+      </fn></author-notes><pub-date pub-type="ppub">
+        <month>12</month>
+        <year>2006</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>26</day>
+        <month>12</month>
+        <year>2006</year>
+      </pub-date><volume>3</volume><issue>12</issue><elocation-id>e520</elocation-id><history>
+        <date date-type="received">
+          <day>15</day>
+          <month>6</month>
+          <year>2006</year>
+        </date>
+        <date date-type="accepted">
+          <day>31</day>
+          <month>10</month>
+          <year>2006</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2006</copyright-year><copyright-holder>Serrano et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms
+        of the Creative Commons Attribution License, which permits unrestricted use, distribution,
+        and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <sec id="st1">
+          <title>Background</title>
+          <p>Inappropriate activation of the renin–angiotensin system may play a part in
+            the development of preeclampsia. An insertion/deletion polymorphism within the
+            angiotensin-I converting enzyme gene <italic>(ACE-I/D)</italic> has shown to be reliably
+            associated with differences in angiotensin-converting enzyme (ACE) activity. However,
+            previous studies of the <italic>ACE-I/D</italic> variant and preeclampsia have been
+            individually underpowered to detect plausible genotypic risks.</p>
+        </sec>
+        <sec id="st2">
+          <title>Methods and Findings</title>
+          <p>A prospective case-control study was conducted in 1,711 unrelated young pregnant women
+            (665 preeclamptic and 1,046 healthy pregnant controls) recruited from five Colombian
+            cities. Maternal blood was obtained to genotype for the <italic>ACE-I/D</italic>
+            polymorphism. Crude and adjusted odds ratio (OR) and 95% confidence interval
+            (CI) using logistic regression models were obtained to evaluate the strength of the
+            association between <italic>ACE-I/D</italic> variant and preeclampsia risk. A
+            meta-analysis was then undertaken of all published studies to February 2006 evaluating
+            the <italic>ACE-I/D</italic> variant in preeclampsia. An additive model
+            (per-<italic>D</italic>-allele) revealed a null association between the
+            <italic>ACE-I/D</italic> variant and preeclampsia risk (crude OR = 0.95
+            [95% CI, 0.81–1.10]) in the new case-control
+            study. Similar results were obtained after adjusting for confounders (adjusted
+            per-allele OR = 0.90 [95% CI,
+            0.77–1.06]) and using other genetic models of inheritance. A
+            meta-analysis (2,596 cases and 3,828 controls from 22 studies) showed a per-allele OR of
+            1.26 (95% CI, 1.07–1.49). An analysis stratified by study size
+            showed an attenuated OR toward the null as study size increased.</p>
+        </sec>
+        <sec id="st3">
+          <title>Conclusions</title>
+          <p>It is highly likely that the observed small nominal increase in risk of preeclampsia
+            associated with the <italic>ACE D</italic>-allele is due to small-study bias, similar to
+            that observed in cardiovascular disease. Reliable assessment of the origins of
+            preeclampsia using a genetic approach may require the establishment of a collaborating
+            consortium to generate a dataset of adequate size.</p>
+        </sec>
+      </abstract><abstract abstract-type="toc">
+        <p>The observed small increase in risk of preeclampsia associated with the<italic>ACE
+          D</italic>-allele is likely to be due to small-study bias, a similar result to that
+          observed in cardiovascular disease.</p>
+      </abstract><abstract abstract-type="editor">
+        <title>Editors' Summary</title>
+        <sec id="sb1">
+          <title/>
+          <sec id="sb1a">
+            <title>Background.</title>
+            <p>Preeclampsia is a common condition affecting pregnant women worldwide; it is defined
+              as the presence of increased blood pressure, together with protein in the urine.
+              Although in many women preeclampsia may never result in symptoms, other women may
+              experience headaches, problems with their vision, swollen ankles and feet, and other
+              problems. Sometimes, preeclampsia progresses to eclampsia, in which potentially
+              life-threatening seizures result. The causes of preeclampsia are not well understood,
+              but several factors are known to contribute to the risk. These factors include
+              diabetes, high blood pressure prior to pregnancy, obesity, and first pregnancy. There
+              is also the possibility that preeclampsia has, at least in part, a genetic basis; the
+              condition is more likely among women whose relatives have also had it. However, no
+              definite genetic cause has yet been confirmed.</p>
+          </sec>
+          <sec id="sb1b">
+            <title>Why Was This Study Done?</title>
+            <p>A common variant in one particular gene, <italic>ACE,</italic> which codes for the
+              angiotensin-1 converting enzyme, has been linked with preeclampsia in a number of
+              different studies. The protein encoded by <italic>ACE</italic> is involved in
+              controlling blood pressure and the balance of fluid and salts in the blood. However,
+              many of the studies supposedly linking <italic>ACE</italic> and preeclampsia were done
+              on very few participants. Small studies are more likely to generate “false
+              positive” findings. Therefore, a group of investigators from Colombia and
+              the UK wanted to find out whether they could reproduce the supposed link between the
+                <italic>ACE</italic> gene variant and preeclampsia in a large study, and also to see
+              whether the previous studies could have been “false
+            positives.”</p>
+          </sec>
+          <sec id="sb1c">
+            <title>What Did the Researchers Do and Find?</title>
+            <p>These investigators carried out a case-control study. This means that women with
+              preeclampsia (“cases”) were recruited, and compared with women
+              similar in all other respects but who did not have preeclampsia
+              (“controls”). In total 1,711 pregnant women from five Colombian
+              cities were studied, of whom 665 had preeclampsia and 1,046 did not. Blood was taken
+              from each participant and used for DNA sequencing of the <italic>ACE</italic> gene.
+              The investigators then did a statistical comparison to see whether there was any
+              association between preeclampsia and possession of a particular variant of the
+                <italic>ACE</italic> gene. The results showed that there was no such association.
+              Then, the investigators did a literature search to find all previous studies that had
+              examined a possible link between variants of the <italic>ACE</italic> gene and
+              preeclampsia. They found 22 studies reporting data obtained from 6,424 women (these
+              figures include the results from the investigators' own case-control study described
+              here). The data from all of these studies were then put together into a combined
+              analysis. This combined analysis did suggest a small increase in the risk of
+              preeclampsia in women with one particular variant in the <italic>ACE</italic> gene.
+              However, this result was more likely in studies with small numbers of participants.
+              Furthermore, the earliest studies done were most likely to show an effect, with the
+              supposed link disappearing as more and more data were collected.</p>
+          </sec>
+          <sec id="sb1d">
+            <title>What Do These Findings Mean?</title>
+            <p>The findings presented here suggest that “small study bias” may
+              explain the discrepancy between the results of the case-control study and the combined
+              analysis. That is, studies involving few participants are less reliable and more
+              likely to produce false-positive results. Therefore, it is possible that the proposed
+              link between <italic>ACE</italic> gene variants and preeclampsia is a spurious one.
+              The investigators propose that in future, collaborative research networks will be
+              needed to carry out rigorous research on the genetics of preeclampsia. Such
+              initiatives will help to overcome the problem of bias that can arise from small
+              studies.</p>
+          </sec>
+          <sec id="sb1e">
+            <title>Additional Information.</title>
+            <p>Please access these Web sites via the online version of this summary at <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.0030520" xlink:type="simple">http://dx.doi.org/10.1371/journal.pmed.0030520</ext-link>.</p>
+            <list list-type="bullet">
+              <list-item>
+                <p>Information for patients from<ext-link ext-link-type="uri" xlink:href="http://www.nhsdirect.nhs.uk/articles/article.aspx?articleId=431" xlink:type="simple">
+                    NHS Direct (UK National Health Service)</ext-link> about preeclampsia.</p>
+              </list-item>
+              <list-item>
+                <p>Medical encyclopedia entry on preeclampsia from <ext-link ext-link-type="uri" xlink:href="http://www.nlm.nih.gov/medlineplus/ency/article/000898.htm" xlink:type="simple">MedLine
+                    Plus</ext-link>, supplied by the US National Library of Medicine.</p>
+              </list-item>
+              <list-item>
+                <p>Information from the World Health Organization and Pan American Health
+                  Organization on <ext-link ext-link-type="uri" xlink:href="http://www.paho.org/Project.asp?SEL=TP&amp;LNG=ENG&amp;ID=194" xlink:type="simple">maternal health in the Americas</ext-link>.</p>
+              </list-item>
+            </list>
+          </sec>
+        </sec>
+      </abstract><funding-group><funding-statement>This project was funded by a grant from Universidad Autónoma de Bucaramanga
+          (EGEN-10) awarded to NCS. LS holds a Medical Research Council Clinician Scientist
+          Fellowship. ADH holds a British Heart Foundation Senior Fellowship. The funders had no
+          role in study design, data collection and analysis, decision to publish, or preparation of
+          the manuscript.</funding-statement></funding-group><counts>
+        <page-count count="13"/>
+      </counts><!--===== Restructure custom-meta-wrap to custom-meta-group =====--><custom-meta-group>
+        <custom-meta>
+          <meta-name>citation</meta-name>
+          <meta-value>Serrano NC, Díaz LA, Páez MC, Mesa CM, Cifuentes R, et
+            al. (2006) Angiotensin-converting enzyme insertion/deletion polymorphism and
+            preeclampsia risk: Evidence of small-study bias. PLoS Med 3(12): e520. doi:<ext-link ext-link-type="doi" xlink:href="http://dx.doi.org/10.1371/journal.pmed.0030520" xlink:type="simple">10.1371/journal.pmed.0030520</ext-link></meta-value>
+        </custom-meta>
+      </custom-meta-group></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Preeclampsia is a maternal disease of pregnancy associated with increased blood pressure
+        and proteinuria after 20 weeks of gestation. It is a major cause of maternal and neonatal
+        mortality and morbidity worldwide and has particularly high incidence in Latin American and
+        Caribbean countries, in which hypertensive disorders during pregnancy account for
+        25.7% of maternal deaths [<xref ref-type="bibr" rid="pmed-0030520-b001">1</xref>,<xref ref-type="bibr" rid="pmed-0030520-b002">2</xref>]. Preeclampsia
+        is thought to be the result of the interplay between important genetic components and
+        environmental influences; however, the factors and the mechanisms that lead to preeclampsia
+        remain elusive [<xref ref-type="bibr" rid="pmed-0030520-b003">3</xref>].
+        As a result, there is a lack of effective preventive interventions [<xref ref-type="bibr" rid="pmed-0030520-b004">4</xref>].</p>
+      <p>With the exception of smoking, established risk factors for cardiovascular disease,
+        including high blood pressure, diabetes, and obesity, are also risk factors for preeclampsia
+          [<xref ref-type="bibr" rid="pmed-0030520-b005">5</xref>]. In addition,
+        women who suffer from preeclampsia have an increased risk of later cardiovascular disease,
+        which clearly suggests a shared aetiology [<xref ref-type="bibr" rid="pmed-0030520-b006">6</xref>].</p>
+      <p>Inappropriate activation of the renin–angiotensin system may play a part in the
+        development of many cardiovascular disorders, including preeclampsia [<xref ref-type="bibr" rid="pmed-0030520-b007">7</xref>,<xref ref-type="bibr" rid="pmed-0030520-b008">8</xref>]. A common insertion/deletion polymorphism
+        within the angiotensin-I converting enzyme gene <italic>(ACE-I/D)</italic> has been reliably
+        associated with substantial differences in the plasma and tissue angiotensin-converting
+        enzyme (ACE) activity in a codominant (additive) fashion not only in persons of European
+        descent, but also in other populations such as Hispanics [<xref ref-type="bibr" rid="pmed-0030520-b009">9</xref>–<xref ref-type="bibr" rid="pmed-0030520-b011">11</xref>]. Individuals carrying the <italic>D</italic> allele have higher ACE
+        activity, which has been proposed as an intermediate phenotype of potential relevance for
+        the development of high blood pressure and subclinical atheroma (i.e., higher intima-media
+        thickness of the carotid artery) [<xref ref-type="bibr" rid="pmed-0030520-b010">10</xref>,<xref ref-type="bibr" rid="pmed-0030520-b012">12</xref>]. Despite the
+        biological plausibility and the consistency of the effect of the <italic>ACE-I/D</italic>
+        polymorphism on ACE activity, associations of the <italic>ACE-I/D</italic> polymorphism and
+        coronary heart disease, coronary artery restenosis, stroke, and renal disease have been
+        inconsistent [<xref ref-type="bibr" rid="pmed-0030520-b013">13</xref>–<xref ref-type="bibr" rid="pmed-0030520-b016">16</xref>].
+        Moreover, systematic reviews and meta-analyses have indicated the presence of small-study
+        bias in the published literature [<xref ref-type="bibr" rid="pmed-0030520-b013">13</xref>–<xref ref-type="bibr" rid="pmed-0030520-b016">16</xref>].</p>
+      <p>Several studies, also usually small in size, have reported that women carrying the
+          <italic>D</italic> allele of the <italic>ACE-I/D</italic> polymorphism have higher ACE
+        activity and higher measures of uterine artery resistance, which is a marker for development
+        of intrauterine growth retardation and preeclampsia [<xref ref-type="bibr" rid="pmed-0030520-b008">8</xref>,<xref ref-type="bibr" rid="pmed-0030520-b017">17</xref>]. These observations led to the proposal that the
+        <italic>ACE-I/D</italic> polymorphism may be a good candidate in the search for a cause of
+        preeclampsia. However, to date, studies evaluating the role of <italic>ACE-I/D</italic>
+        polymorphism in preeclampsia have been individually underpowered to detect plausible genetic
+        effect sizes, being much smaller than more recent studies in cardiovascular disease. We
+        hypothesized that the published literature on the <italic>ACE-I/D</italic> polymorphism in
+        preeclampsia might be similarly affected by small-study bias. To test this hypothesis, we
+        conducted a new large genetic association study on the <italic>ACE-I/D</italic> polymorphism
+        and preeclampsia in a geographical region with a high incidence of preeclampsia. We then set
+        this study within the context of a systematic review and a meta-analysis of all studies
+        conducted to date.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Case-Control Study Participants</title>
+        <p>A prospective case-control study was conducted in 1,711 unrelated young pregnant women
+          (665 preeclamptic participants and 1,046 healthy pregnant controls) recruited from five
+          Colombian cities at the time of delivery between January 2000 and December 2005. A verbal
+          interview with a structured questionnaire was conducted by trained personnel at the time
+          of the delivery to ascertain maternal age, gestational age, parity, smoking status during
+          pregnancy, family history of preeclampsia, ethnic background, and socioeconomic position.
+          On two separate occasions, the mean of two readings of blood pressure was obtained (four
+          measurements in total) at the time of delivery. Blood pressure was measured in the right
+          arm after a five-minute period of rest in a seated position using mercury
+          sphygmomanometers or electronic devices calibrated against a mercury standard.</p>
+        <p>A case was defined as a primigravid woman younger than 26 years old with blood pressure
+          140/90 mm Hg or above, and proteinuria 0.3 grams or above in 24 hours, or a reading
+          2+ or above on a dipstick in a random urine determination with no evidence of
+          urinary tract infection after 20 weeks of gestation [<xref ref-type="bibr" rid="pmed-0030520-b018">18</xref>]. At least one control was recruited after
+          each case within a window of 24 hours from the same hospital that provided the cases. A
+          control was defined as a primigravid woman younger than 26 years old without preeclampsia
+          and in labour after 37 weeks of pregnancy. To improve the homogeneity of the phenotype
+          under evaluation, women with a prior history of autoimmune, metabolic (including diabetes
+          or gestational diabetes), renal, or cardiac (including chronic hypertension) diseases were
+          excluded from the study. All participants signed the informed consent document approved by
+          the Ethics Committee from the Universidad Autónoma de Bucaramanga, Colombia.</p>
+        <sec id="s2a1">
+          <title>DNA extraction and genotyping.</title>
+          <p>Blood was drawn from the antecubital vein into EDTA and samples stored at −50
+            °C for DNA extraction, using the QIAamp DNA blood mini-kit (QIAGEN, Hilden,
+            Germany). The <italic>ACE-I/D</italic> polymorphism in intron 16 was detected according
+            to the method described by Rigat, et al. [<xref ref-type="bibr" rid="pmed-0030520-b009">9</xref>]. PCR is known to have a tendency to
+            preferentially amplify the short deletion <italic>(D)</italic> allele in contrast to the
+            larger insertion <italic>(I)</italic> allele in a competitive amplification reaction
+            when both alleles are present, as occurs in individuals with the <italic>ID</italic>
+            genotype. This leads to mistyping of <italic>ID</italic> individuals as
+            <italic>DD</italic> in approximately 4%–5% of the
+            samples. To avoid any mistyping of <italic>ID</italic> as <italic>DD,</italic> a second
+            PCR amplification using insertion-specific primers was conducted for all participants
+            who were homozygous for the <italic>D</italic> allele [<xref ref-type="bibr" rid="pmed-0030520-b019">19</xref>]. For a detailed description of the
+            genotyping methods, see <xref ref-type="supplementary-material" rid="pmed-0030520-sd001">Protocol S1</xref>. All available DNA samples were genotyped and included in the
+            present report, with no exclusions. For quality control, a random sample
+            (<italic>n</italic> = 156) was subjected to a second PCR and genotyping to
+            minimize any possible misclassification. The Cohen's kappa value among the samples
+            regenotyped was equal to 0.95 (95% CI [confidence
+            interval], 0.94–0.96), and the error rate was 2.56%
+            (95% CI, 0.70–6.43). Genotyping was conducted blinded to the
+            clinical status of the participants.</p>
+        </sec>
+        <sec id="s2a2">
+          <title>Statistical analysis.</title>
+          <p>To evaluate the presence of differences between groups, unpaired Student's t-,
+              χ<sup>2</sup>, or Mann-Whitney tests were used as appropriate. A test for
+            departure from Hardy-Weinberg equilibrium was performed by
+              <italic>χ</italic><sup>2</sup> analysis. The principal a priori hypothesis was
+            that the association between the <italic>ACE-I/D</italic> polymorphism and preeclampsia
+            follows an additive model according to the number of <italic>D</italic> alleles. The
+            additive “per-allele” model (in a log-scale) was based on the effect
+            of the <italic>ACE-I/D</italic> variant on its intermediate phenotype (ACE activity),
+            established in large studies and overviews as being a reliable association
+              [<xref ref-type="bibr" rid="pmed-0030520-b010">10</xref>]. However,
+            recessive and dominant models and multiple pairwise comparisons (<italic>ID</italic>
+            versus <italic>II</italic> and <italic>DD</italic> versus <italic>II</italic>) were also
+            evaluated for completeness as secondary outcomes.</p>
+          <p>Multivariate analysis using logistic regression methods was also conducted to control
+            for potential confounders (maternal age, ethnic background, place of birth of the women,
+            recruitment centre, socioeconomic position, urinary or vaginal infections during
+            pregnancy, and smoking status during pregnancy).</p>
+          <p>To explore the prior hypothesis that the genotypic odds ratio (OR) is greater in women
+            with an enriched phenotype, an analysis using an additive model was repeated for women
+            stratified according to the presence of family history of preeclampsia (positive versus
+            negative family history in mother or sisters), and disease severity with severe
+            preeclampsia being defined as blood pressure above 160/110 mm Hg or proteinuria of 5
+            grams or more in 24 hours, eclampsia, or the HELLP syndrome. For these analyses
+            99% CIs were used to make some allowance for their exploratory nature. All
+            statistical analyses were conducted using Stata, Version 9 (Stata Corporation, College
+            Station, Texas, United States).</p>
+        </sec>
+      </sec>
+      <sec id="s2b">
+        <title>Meta-Analysis</title>
+        <sec id="s2b1">
+          <title>Search strategy and selection criteria.</title>
+          <p>Electronic databases (MEDLINE, EMBASE, LILACS, KoreaMed, and Google Scholar) were
+            searched up to February 2006 for all genetic association studies evaluating the
+              <italic>ACE-I/D</italic> polymorphism and preeclampsia in humans in all languages. The
+            search strategy contained both medical subject heading terms and text words as follows:
+            “angiotensin-converting enzyme” or “ACE” or
+            “peptidyl-dipeptidase A,” in combination with
+            “pre-eclampsia” or “preeclampsia” or
+            “pregnant hypertensive disorders” or “pregnancy
+            hypertension,” and combined with “genetic” or
+            “polymorphism(s)” or “mutation” or
+            “genotype” or “gene(s).” No limits were used in
+            the search strategy. We searched for any additional studies in the references of all
+            identified publications, including previous relevant meta-analyses, and used the MEDLINE
+            option “related articles” for all the relevant papers.</p>
+          <p>For inclusion, studies had to involve unrelated women and examine the association
+            between the <italic>ACE-I/D</italic> polymorphism and preeclampsia. Studies published as
+            full-length articles or letters in peer-reviewed journals in any language were included,
+            as well as abstracts taken from reference lists of identified publications. Authors were
+            contacted (on at least three occasions) to obtain information on the genotype frequency
+            by case-control status and by disease severity (severe and nonsevere preeclampsia), the
+            use of blinding of genotyping staff to clinical status, the definition of outcomes, and,
+            in a few cases, to clarify possible overlapping of study results. A positive reply was
+            obtained in 15 out of 21 study authors contacted.</p>
+        </sec>
+        <sec id="s2b2">
+          <title>Data extraction.</title>
+          <p>The following information was extracted (entered into databases by two of the authors,
+            JPC and MCP) from each study and disagreements resolved by consensus: year of
+            publication, total cases, total controls, number of individuals by each genotype, study
+            design, source of controls, matching variable, thresholds used to define preeclampsia,
+            country of origin, ethnicity, <italic>χ</italic><sup>2</sup> goodness of fit for
+            Hardy-Weinberg equilibrium and its <italic>p</italic>-value, use of blinding, mean age
+            of participants, frequency of nulliparous women, and main exclusion criteria. In the few
+            instances in which genotype frequencies provided by the investigators in tabular data
+            differed slightly from published figures, the tabular data were used. Women with
+            gestational hypertension were excluded from the present meta-analysis in order to
+            improve the homogeneity of phenotype between studies.</p>
+        </sec>
+        <sec id="s2b3">
+          <title>Statistical analysis.</title>
+          <p>Data were analysed using Stata 9. The genetic model to be considered as the priori
+            hypothesis was an additive model, following the considerations previously described for
+            the case-control study. Secondary analyses involved ORs for other genetic models of
+            inheritance such as recessive, dominant, and pairwise comparisons of the different
+            genotypes. For all the models used, the <italic>D</italic> allele was considered the one
+            at risk. For the additive or per-allele model, the OR was compared between cases and
+            controls by assigning scores for different genotype groups and calculating ORs by
+            logistic regression. We calculated the random effect summary OR and CIs for each
+            polymorphism. To make some allowance for multiple comparisons 99% CIs were
+            used for individual studies, and 95% CIs were reserved for the combined
+            estimates. The inverse variance-weighted method was used to calculate the summary OR
+              [<xref ref-type="bibr" rid="pmed-0030520-b020">20</xref>].
+            Heterogeneity was assessed by the DerSimonian and Laird <italic>Q</italic> test and
+              <italic>I</italic><sup>2</sup> was used as a measure to describe the percentage of
+            variability in point estimates that was due to heterogeneity rather than sampling error
+              [<xref ref-type="bibr" rid="pmed-0030520-b020">20</xref>]. Sources
+            of between-study heterogeneity were explored using random effect metaregression models
+            with restricted maximum likelihood estimation. The prespecified characteristics for
+            assessment of sources of inter-study heterogeneity were: Study size (number of cases:
+            &lt;100, 100–200, and ≥200); blinding of genotyping staff (blinded,
+            unblinded, or unknown); disease severity (severe versus nonsevere preeclampsia);
+            ethnicity of women evaluated (of European descent, Asian, Hispanic, Afro-Caribbean, and
+            others); preeclampsia definition (adequate versus unclear); and publication language
+            (English– versus non-English–language journals). Funnel plots of the
+            effect estimate against the sample size, Egger regression asymmetry test, and a weighted
+            (by the inverse of the variance of the estimate) linear fixed regression of the log OR
+            against the inverse of the sample size (linear-regression model) were used to evaluate
+            small-study effects [<xref ref-type="bibr" rid="pmed-0030520-b020">20</xref>,<xref ref-type="bibr" rid="pmed-0030520-b021">21</xref>]. To
+            evaluate stability over time of the effect estimate, cumulative meta-analysis using
+            random effect models was conducted [<xref ref-type="bibr" rid="pmed-0030520-b020">20</xref>].</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Case-Control Study</title>
+        <p>Clinical and demographic data of the cases and controls are shown in <xref ref-type="table" rid="pmed-0030520-t001">Table 1</xref>. There were no significant
+          differences in maternal age, ethnic background, and socioeconomic position between cases
+          and controls (<xref ref-type="table" rid="pmed-0030520-t001">Table 1</xref>). Expected
+          differences in maternal blood pressure, parity, and newborn weight and condition were
+          recorded.</p>
+        <table-wrap content-type="2col" id="pmed-0030520-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0030520.t001</object-id><label>Table 1</label><caption>
+            <p>Maternal and Neonatal Characteristics of the Sample Studied</p>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.t001" xlink:type="simple"/><!-- <table frame="hsides" rules="none"><colgroup><col id="tb1col1" align="left" charoff="0" char=""/><col id="tb1col2" align="left" charoff="0" char=""/><col id="tb1col3" align="char" charoff="0" char=""/><col id="tb1col4" align="left" charoff="0" char=""/><col id="tb1col5" align="char" charoff="0" char="."/></colgroup><thead><tr><td align="left"><hr/>Category</td><td valign="middle"><hr/>Variable</td><td valign="middle"><hr/>Cases (<italic>n</italic> &equals; 665)</td><td valign="middle"><hr/>Controls (<italic>n</italic> &equals; 1,046)</td><td valign="middle"><hr/><italic>p</italic>-Value</td></tr></thead><tbody><tr><td><bold>Ethnic background</bold></td><td>European descent</td><td>63 (9.5&percnt;)</td><td>141 (13.5&percnt;)</td><td></td></tr><tr><td></td><td>African American</td><td>117 (17.6&percnt;)</td><td>176 (16.3&percnt;)</td><td></td></tr><tr><td></td><td>Native American</td><td>9 (1.4&percnt;)</td><td>11 (1.1&percnt;)</td><td></td></tr><tr><td></td><td>Mixture</td><td>476 (71.6&percnt;)</td><td>718 (68.6&percnt;)</td><td>0.092</td></tr><tr><td><bold>Socioeconomic</bold></td><td>Low socioeconomic status</td><td valign="bottom">585/642 (91.1&percnt;)</td><td valign="bottom">922/1,011 (91.2&percnt;)</td><td valign="bottom">0.958</td></tr><tr><td><bold>Maternal</bold></td><td>Maternal age (y)</td><td valign="bottom">19.0 &plusmn; 2.9</td><td valign="bottom">18.7 &plusmn; 2.6</td><td valign="bottom">0.013</td></tr><tr><td></td><td>Smoking during pregnancy</td><td valign="bottom">11/660 (1.7&percnt;)</td><td valign="bottom">37/1,045 (3.5&percnt;)</td><td valign="bottom">0.023</td></tr><tr><td></td><td>Systolic blood pressure (mm Hg)</td><td valign="bottom">146.1 &plusmn; 12.1</td><td valign="bottom">110.9 &plusmn; 9.2</td><td valign="bottom">&lt; 0.001</td></tr><tr><td></td><td>Diastolic blood pressure (mm Hg)</td><td valign="bottom">96.5 &plusmn; 8.1</td><td valign="bottom">68.1 &plusmn; 7.1</td><td valign="bottom">&lt; 0.001</td></tr><tr><td></td><td>Multiple pregnancy</td><td valign="bottom">19/663 (2.9&percnt;)</td><td valign="bottom">4/1,038 (0.4&percnt;)</td><td valign="bottom">&lt; 0.001</td></tr><tr><td></td><td>Gestational age at delivery (wk)</td><td valign="bottom">37.0 &plusmn; 3.6</td><td valign="bottom">39.2 &plusmn; 1.2</td><td valign="bottom">&lt; 0.001</td></tr><tr><td><bold>Maternal <italic>ACE-I/D</italic> genotype</bold></td><td><italic>DD</italic></td><td>140 (21.1&percnt;)</td><td>230 (22.0&percnt;)</td><td></td></tr><tr><td></td><td><italic>ID</italic></td><td>382 (57.4&percnt;)</td><td>607 (58.0&percnt;)</td><td>0.72</td></tr><tr><td></td><td><italic>II</italic></td><td>143 (21.5&percnt;)</td><td>209 (20.0&percnt;)</td><td></td></tr><tr><td><bold>Allele frequency</bold></td><td><italic>D</italic></td><td>662 (49.8&percnt;)</td><td>1,067 (51.0&percnt;)</td><td></td></tr><tr><td></td><td><italic>I</italic></td><td>668 (50.2&percnt;)</td><td>1,025 (49.0&percnt;)</td><td>0.483</td></tr><tr><td><bold>Newborn characteristics</bold></td><td>Newborn weight (g)</td><td>2,626 &plusmn; 730</td><td>3,126 &plusmn; 434</td><td>&lt; 0.001</td></tr><tr><td></td><td>Newborn height (cm)</td><td>46.9 &plusmn; 4.6</td><td>49.6 &plusmn; 2.4</td><td>&lt; 0.001</td></tr><tr><td></td><td>Low (&lt; 7) Apgar score at first min</td><td>83/671 (12.4&percnt;)</td><td>67/1,025 (6.5&percnt;)</td><td>&lt; 0.001</td></tr><tr><td></td><td>Low (&lt; 7) Apgar score at fifth min</td><td>34/671 (5.1&percnt;)</td><td>5/1,024 (0.5&percnt;)</td><td>&lt; 0.001</td></tr></tbody></table> --><!-- <table-wrap-foot><fn id="nt101"><p>Data are presented as <italic>n</italic> (&percnt;) or mean &plusmn; SD.</p></fn></table-wrap-foot> --></table-wrap>
+        <p>The distribution of the <italic>ACE-I/D</italic> genotypes and allelic frequencies were
+          not significantly different according to the case-control status (<xref ref-type="table" rid="pmed-0030520-t001">Table 1</xref>). Genotype frequencies according to the ethnic
+          group and by recruitment centre are reported in “Appendix Table I” in
+            <xref ref-type="supplementary-material" rid="pmed-0030520-sd001">Protocol S1</xref>. An
+          additive model (per-<italic>D</italic>-allele) revealed a null association between the
+            <italic>ACE-I/D</italic> variant and preeclampsia risk (crude OR = 0.95
+          [95% CI, 0.81–1.10]). Adjusting for maternal age,
+          ethnicity, recruitment centre, and place of birth, aimed to minimize the effect of
+          possible population admixture, did not change the estimate of the effect (model-1 OR
+          = 0.92 [95% CI, 0.78–1.07]). A similar
+          result was obtained after further adjustment for additional potential confounders such as
+          socioeconomic position, presence of urinary or vaginal infections during pregnancy, and
+          smoking status during pregnancy (model-2 OR = 0.90 [95% CI,
+          0.77–1.06]). ORs for other genetic models of inheritance also yielded a
+          null association (<xref ref-type="table" rid="pmed-0030520-t002">Table 2</xref>).
+          Pre-specified exploratory subgroup analyses indicated that with the exception of family
+          history of preeclampsia (positive-history OR = 1.30 [99%
+          CI, 0.75–2.26] versus negative-history OR = 0.86
+          [99% CI, 0.68–1.10]; <italic>p</italic>-value for
+          heterogeneity equal to 0.07), no substantial heterogeneity of the genetic effect size was
+          observed for any of the subgroups (<xref ref-type="fig" rid="pmed-0030520-g001">Figure
+          1</xref>). Additionally, stratified analysis by recruitment centre according to the
+          conformity with Hardy-Weinberg equilibrium yielded similar, null results (see
+          “Appendix Table II” in <xref ref-type="supplementary-material" rid="pmed-0030520-sd001">Protocol S1</xref>).</p>
+        <table-wrap content-type="1col" id="pmed-0030520-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0030520.t002</object-id><label>Table 2</label><caption>
+            <p>Estimate of the Effect of the <italic>ACE-I/D</italic> Polymorphism on Preeclampsia
+              Risk Modeled with Logistic Regression</p>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.t002" xlink:type="simple"/><!-- <table frame="hsides" rules="none"><colgroup><col id="tb2col1" align="left" charoff="0" char=""/><col id="tb2col2" align="left" charoff="0" char=""/><col id="tb2col3" align="left" charoff="0" char=""/><col id="tb2col4" align="left" charoff="0" char=""/></colgroup><thead><tr><td align="left"><hr/>Association</td><td><hr/>Unadjusted OR (95&percnt; CI)</td><td><hr/>Model-1 OR (95&percnt; CI)</td><td><hr/>Model-2 OR (95&percnt; CI)</td></tr></thead><tbody><tr><td>Dominant model (<italic>D</italic>-carriers<sup>a</sup> versus <italic>II</italic>)</td><td>0.91 (0.71&ndash;1.17)</td><td>0.86 (0.67&ndash;1.11)</td><td>0.84 (0.65&ndash;1.09)</td></tr><tr><td>Recessive model (<italic>DD</italic><sup>a</sup> versus <italic>I</italic>-carriers)</td><td>0.95 (0.75&ndash;1.21)</td><td>0.93 (0.72&ndash;1.18)</td><td>0.92 (0.71&ndash;1.18)</td></tr><tr><td>Additive model (per- in increase in <italic>D</italic>-allele<sup>a</sup>)</td><td>0.95 (0.81&ndash;1.10)</td><td>0.92 (0.78&ndash;1.07)</td><td>0.90 (0.77&ndash;1.06)</td></tr><tr><td>Pairwise comparisons, <italic>ID</italic><sup>a</sup> versus <italic>II</italic></td><td>0.83 (0.65&ndash;1.06)</td><td>0.87 (0.67&ndash;1.13)</td><td>0.85 (10.65&ndash;1.12)</td></tr><tr><td>Pairwise comparisons, <italic>DD</italic><sup>a</sup> versus <italic>II</italic></td><td>0.81 (0.60&ndash;1.08)</td><td>0.83 (0.60&ndash;1.16)</td><td>0.82 (0.59&ndash;1.14)</td></tr></tbody></table> --><!-- <table-wrap-foot><fn id="nt201"><p>Model-1: Adjusted by maternal age, ethnicity, recruitment centre, and place of birth. Model-2: Previous variables plus socioeconomic status, infections during pregnancy (urinary or vaginal), and smoking status during pregnancy.</p></fn><fn id="nt202"><p><sup>a</sup>The genotype or allele considered at risk.</p></fn></table-wrap-foot> --></table-wrap>
+        <fig id="pmed-0030520-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pmed.0030520.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Risk Association of <italic>ACE-I/D</italic> Variant with Preeclampsia in
+              Selected Subgroups within the Current Study</title>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.g001" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s3b">
+        <title>Meta-Analysis</title>
+        <p>A total of 30 genetic association studies, including the present study, evaluating the
+            <italic>ACE-I/D</italic> gene variant and preeclampsia risk were identified
+            [<xref ref-type="bibr" rid="pmed-0030520-b017">17</xref>,<xref ref-type="bibr" rid="pmed-0030520-b022">22</xref>–<xref ref-type="bibr" rid="pmed-0030520-b049">49</xref>]. We excluded eight out of 30 studies for one
+          or more of the following reasons: two in which duplication or partial overlapping of
+          reported data were considered likely [<xref ref-type="bibr" rid="pmed-0030520-b043">43</xref>,<xref ref-type="bibr" rid="pmed-0030520-b044">44</xref>]; three in which the outcome evaluated was solely gestational
+          hypertension [<xref ref-type="bibr" rid="pmed-0030520-b045">45</xref>–<xref ref-type="bibr" rid="pmed-0030520-b047">47</xref>];
+          one in which relevant data were not reported and could not be obtained from study authors
+            [<xref ref-type="bibr" rid="pmed-0030520-b048">48</xref>]; one that
+          only recruited women with previous preeclampsia [<xref ref-type="bibr" rid="pmed-0030520-b017">17</xref>]; and one in which the sampling frame was
+          based on the <italic>ACE-I/D</italic> genotype [<xref ref-type="bibr" rid="pmed-0030520-b049">49</xref>]. A total of 22 genetic association studies
+          including 2,596 cases and 3,828 controls were included in the present meta-analysis (<xref ref-type="table" rid="pmed-0030520-t301">Tables 3</xref> and <xref ref-type="table" rid="pmed-0030520-t004">4</xref>) [<xref ref-type="bibr" rid="pmed-0030520-b022">22</xref>–<xref ref-type="bibr" rid="pmed-0030520-b042">42</xref>]. Out of the 22 studies, nine were conducted
+          with Asian participants, eight with participants of European descent, two with African
+          Americans, two with more than one ethnic group, and one with South Asians.</p>
+        <table-wrap content-type="3col" id="pmed-0030520-t301" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0030520.t301</object-id><label>Table 3</label><caption>
+            <p>Characteristics of Published Studies of the Association between the
+              <italic>ACE-I/D</italic> Polymorphism and Preeclampsia Included in the
+            Meta-Analysis</p>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.t301" xlink:type="simple"/><!-- <table frame="hsides" rules="none"><colgroup><col id="tb3col1" align="left" charoff="0" char=""/><col id="tb3col2" align="left" charoff="0" char=""/><col id="tb3col3" align="char" charoff="0" char="."/><col id="tb3col4" align="char" charoff="0" char="."/><col id="tb3col5" align="char" charoff="0" char="."/><col id="tb3col6" align="char" charoff="0" char="."/><col id="tb3col7" align="char" charoff="0" char="."/><col id="tb3col8" align="char" charoff="0" char="."/><col id="tb3col9" align="char" charoff="0" char="."/><col id="tb3col10" align="char" charoff="0" char="."/><col id="tb3col11" align="char" charoff="0" char="."/><col id="tb3col12" align="left" charoff="0" char=""/></colgroup><thead><tr><td align="left"><hr/>Reference</td><td><hr/>Year</td><td><hr/>Total Cases</td><td><hr/>Total Controls</td><td><hr/>Total Sample Size</td><td><hr/><italic>DD</italic> Genotype Cases, <italic>n</italic></td><td><hr/><italic>ID</italic> Genotype Cases, <italic>n</italic></td><td><hr/><italic>II</italic> Genotype Cases, <italic>n</italic></td><td><hr/><italic>DD</italic> Genotype Controls, <italic>n</italic></td><td><hr/><italic>ID</italic> Genotype Controls, <italic>n</italic></td><td><hr/><italic>II</italic> Genotype Controls, <italic>n</italic></td><td><hr/>Design</td></tr></thead><tbody><tr><td>Bai &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b022">22</xref>&rsqb; </td><td>2002</td><td>81</td><td>199</td><td>280</td><td>8</td><td>38</td><td>35</td><td>31</td><td>83</td><td>85</td><td>Case-control</td></tr><tr><td>Bouba &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b023">23</xref>&rsqb; </td><td>2003</td><td>41</td><td>102</td><td>143</td><td>17</td><td>19</td><td>5</td><td>29</td><td>52</td><td>21</td><td>Case-control</td></tr><tr><td>Choi H &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b024">24</xref>&rsqb; </td><td>2004</td><td>90</td><td>98</td><td>188</td><td>33</td><td>34</td><td>23</td><td>14</td><td>51</td><td>33</td><td>Case-control</td></tr><tr><td>Dizon-Townson &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b025">25</xref>&rsqb; </td><td>1995</td><td>124</td><td>200</td><td>324</td><td>49</td><td>42</td><td>33</td><td>65</td><td>98</td><td>37</td><td>Case-control</td></tr><tr><td>Galao &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b026">26</xref>&rsqb; </td><td>2004</td><td>51</td><td>71</td><td>122</td><td>16</td><td>23</td><td>12</td><td>21</td><td>33</td><td>17</td><td>Case-control</td></tr><tr><td>Gurdol &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b027">27</xref>&rsqb; </td><td>2004</td><td>95</td><td>89</td><td>184</td><td>47</td><td>31</td><td>17</td><td>31</td><td>37</td><td>21</td><td>Case-control</td></tr><tr><td>Heiskanen &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b028">28</xref>&rsqb;</td> <td>2001</td><td>133</td><td>115</td><td>248</td><td>43</td><td>59</td><td>31</td><td>31</td><td>58</td><td>26</td><td>Case-control</td></tr><tr><td>Kaur &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b029">29</xref>&rsqb; </td><td>2005</td><td>50</td><td>50</td><td>100</td><td>30</td><td>14</td><td>6</td><td>15</td><td>26</td><td>9</td><td>Case-control</td></tr><tr><td>Kim &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b030">30</xref>&rsqb; </td><td>2004</td><td>98</td><td>110</td><td>208</td><td>26</td><td>36</td><td>36</td><td>25</td><td>52</td><td>33</td><td>Case-control</td></tr><tr><td>Kobashi &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b031">31</xref>&rsqb; </td><td>2005</td><td>122</td><td>291</td><td>413</td><td>19</td><td>52</td><td>51</td><td>35</td><td>136</td><td>120</td><td>Case-control</td></tr><tr><td>Levesque &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b032">32</xref>&rsqb; </td><td>2004</td><td>174</td><td>306</td><td>480</td><td>50</td><td>92</td><td>32</td><td>97</td><td>151</td><td>58</td><td>Nested case-contol</td></tr><tr><td>Mingwei &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b033">33</xref>&rsqb; </td><td>1998</td><td>35</td><td>25</td><td>60</td><td>23</td><td>7</td><td>5</td><td>2</td><td>10</td><td>13</td><td>Case-control</td></tr><tr><td>Morgan &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b034">34</xref>&rsqb; </td><td>1999</td><td>73</td><td>83</td><td>156</td><td>23</td><td>31</td><td>19</td><td>25</td><td>36</td><td>22</td><td>Case-control</td></tr><tr><td>Mozgovaia &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b035">35</xref>&rsqb;</td><td>2000</td><td>45</td><td>73</td><td>118</td><td>21</td><td>14</td><td>10</td><td>28</td><td>37</td><td>8</td><td>Case-control</td></tr><tr><td>Roberts &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b036">36</xref>&rsqb; </td><td>2004</td><td>391</td><td>338</td><td>729</td><td>183</td><td>164</td><td>44</td><td>152</td><td>142</td><td>44</td><td>Case-control</td></tr><tr><td>Roh &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b037">37</xref>&rsqb; </td><td>1997</td><td>36</td><td>115</td><td>151</td><td>4</td><td>11</td><td>21</td><td>14</td><td>62</td><td>39</td><td>Case-control</td></tr><tr><td>Seremak-Mrozikiewicz &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b038">38</xref>&rsqb;</td><td>2000</td><td>25</td><td>110</td><td>135</td><td>16</td><td>7</td><td>2</td><td>34</td><td>61</td><td>15</td><td>Case-control</td></tr><tr><td>Serrano et al. (present study) </td><td>2006</td><td>665</td><td>1046</td><td>1711</td><td>140</td><td>382</td><td>143</td><td>230</td><td>607</td><td>209</td><td>Case-control</td></tr><tr><td>Tamura &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b039">39</xref>&rsqb; </td><td>1996</td><td>12</td><td>179</td><td>191</td><td>3</td><td>6</td><td>3</td><td>63</td><td>82</td><td>34</td><td>Cohort</td></tr><tr><td>Wang &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b040">40</xref>&rsqb; </td><td>2004</td><td>99</td><td>54</td><td>153</td><td>42</td><td>37</td><td>20</td><td>14</td><td>16</td><td>24</td><td>Case-control</td></tr><tr><td>Watanabe &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b041">41</xref>&rsqb; </td><td>2001</td><td>96</td><td>96</td><td>192</td><td>13</td><td>48</td><td>35</td><td>10</td><td>40</td><td>46</td><td>Case-control</td></tr><tr><td>Zhou &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b042">42</xref>&rsqb;</td><td>1999</td><td>60</td><td>78</td><td>138</td><td>39</td><td>12</td><td>9</td><td>8</td><td>32</td><td>38</td><td>Case-control</td></tr></tbody></table> --><!-- <table-wrap-foot><fn id="nt301"><p> <sup>a</sup>Studies on which the reporting of the criteria to define preeclampsia was unclear. Results from these studies were compared against the others in <xref ref-type="fig" rid="pmed-0030520-g003">Figure 3</xref>.</p></fn><fn id="nt302"><p> <sup>b</sup>Definition used from a posterior manuscript from the same authors.</p></fn><fn id="nt303"><p> BP, blood pressure; HWE, Hardy-Weinberg equilibrium.</p></fn></table-wrap-foot> --></table-wrap>
+        <table-wrap content-type="3col" id="pmed-0030520-t302" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0030520.t302</object-id><label>Table 3</label><caption>
+            <p>Extended. </p>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.t302" xlink:type="simple"/><!-- <table frame="hsides" rules="none"><colgroup><col id="tb3col1a" align="left" charoff="0" char=""/><col id="tb3col2a" align="left" charoff="0" char=""/><col id="tb3col3a" align="left" charoff="0" char=""/><col id="tb3col4a" align="left" charoff="0" char=""/><col id="tb3col5a" align="left" charoff="0" char=""/><col id="tb3col6a" align="left" charoff="0" char=""/></colgroup><thead><tr><td align="left"><hr/>Reference</td><td><hr/>Source of Controls</td><td><hr/>Matching Variable</td><td><hr/>Systolic BP Threshold (mm Hg)</td><td><hr/>Diastolic BP Threshold (mm Hg)</td><td><hr/>Proteinuria Threshold</td></tr></thead><tbody><tr><td>Bai &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b022">22</xref>&rsqb; </td><td>Normal pregnant women </td><td>Maternal age</td><td>140</td><td>90</td><td>Not specified</td></tr><tr><td>Bouba &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b023">23</xref>&rsqb; </td><td>Normotensive pregnant women who had undergone at least two pregnancies with no history of preeclampsia</td><td>None</td><td>140</td><td>90</td><td>&gt;300 mg/l in a random specimen or an excretion of &gt;300 mg per 24 h after 20 wk of gestation.</td></tr><tr><td>Choi H &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b024">24</xref>&rsqb; </td><td>Normotensive volunteers randomly recruited from the Obstetric Service at the Samsung Cheil Hospital</td><td>Maternal age</td><td>140</td><td>90</td><td>&gt; 1 g/l (or 2&plus; dipstick) in random urine</td></tr><tr><td>Dizon-Townson &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b025">25</xref>&rsqb; </td><td>Referred to only as &ldquo;controls&rdquo;</td><td>None</td><td>140</td><td>90</td><td>&gt; 500 mg of protein in 24 h or a new 3 dipstick without infection<sup>b</sup></td></tr><tr><td>Galao &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b026">26</xref>&rsqb; </td><td>Normotensive pregnancy under medical assistance </td><td>None</td><td>140</td><td>90</td><td>&gt; 300 mg/24 h</td></tr><tr><td>Gurdol &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b027">27</xref>&rsqb; </td><td>50 participants were complication-free-pregnancies. The remaining 39 women were normotensive with &ge; 2 pregnancies unaffected by preeclampsia</td><td>None</td><td>140</td><td>90</td><td>&gt; 300 mg/l in a 24-h collection</td></tr><tr><td>Heiskanen &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b028">28</xref>&rsqb;</td><td>Women who delivered at Kuopio University Hospital</td><td>None</td><td>140</td><td>90</td><td>&gt; 300 mg of urinary protein in 24 h</td></tr><tr><td>Kaur &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b029">29</xref>&rsqb; </td><td>Normotensive primigravidae who were followed till delivery</td><td>Gestation and maternal age</td><td>140</td><td>90</td><td>&gt; 0.3 g/l</td></tr><tr><td>Kim &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b030">30</xref>&rsqb; </td><td>Randomly selected nulliparous and parous women who were not affected by preeclampsia in the pregnancy progressing to &gt;20 weeks' gestation</td><td>None</td><td>140</td><td>90</td><td>&gt; 300 mg/24 h</td></tr><tr><td>Kobashi &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b031">31</xref>&rsqb; </td><td>Randomly selected from healthy pregnant women</td><td>None</td><td>140</td><td>90</td><td>30 mg/dl (1&plus; on a dipstick) or greater</td></tr><tr><td>Levesque &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b032">32</xref>&rsqb; </td><td>Normotensive nulliparous women attending a tertiary perinatal center</td><td>Maternal age, gestational age, body mass index, and month of the year at delivery.</td><td>Not specified</td><td>90</td><td>&ge; 0.3 g/l in a 24-h or &ge; 1&plus;, using Albustix</td></tr><tr><td>Mingwei &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b033">33</xref>&rsqb; </td><td>Control population </td><td>None</td><td>Not specified</td><td>Not specified</td><td>Not specified</td></tr><tr><td>Morgan &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b034">34</xref>&rsqb; </td><td>Normotensive women recruited during the second half of the pregnancy</td><td>None</td><td>140</td><td>90</td><td>&gt; 300 mg/l in 24 h or &ge; 2&plus; on dipstick in a random urine sample</td></tr><tr><td>Mozgovaia &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b035">35</xref>&rsqb;</td><td>Pregnant women without obvious somatic pathology</td><td>None</td><td>140</td><td>90</td><td>&ge; 0.3 g/l in a 24 h</td></tr><tr><td>Roberts &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b036">36</xref>&rsqb; </td><td>Healthy pregnant normotensive participants who had delivery normally beyond 37th week of gestation</td><td>None</td><td>140</td><td>90</td><td>1&plus; on dipstick after 34 wk of gestation</td></tr><tr><td>Roh &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b037">37</xref>&rsqb; </td><td>Normal population </td><td>None</td><td>140</td><td>90</td><td>&gt; 300 mg/24 h</td></tr><tr><td>Seremak-Mrozikiewicz &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b038">38</xref>&rsqb;</td><td>Healthy pregnant women</td><td>None</td><td>160</td><td>110</td><td>&gt; 5 g in 24 h</td></tr><tr><td>Serrano et al. (present study)</td><td>Healthy normotensive pregnant women at delivery from the same hospitals where cases were recruited</td><td>None</td><td>140</td><td>90</td><td>&gt; 0.3 g in 24 h, or &gt; 2&plus; reading on dipstick in a random sample</td></tr><tr><td>Tamura &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b039">39</xref>&rsqb; </td><td>Pregnant women enrolled in a clinical trial who did not develop preeclampsia or pregnancy induced hypertension</td><td>None</td><td>140</td><td>90</td><td>Referred to as proteinuria (not threshold reported)</td></tr><tr><td>Wang &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b040">40</xref>&rsqb;</td><td>Normal pregnant women</td><td>None</td><td>Not specified</td><td>Not specified</td><td>Not specified</td></tr><tr><td>Watanabe &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b041">41</xref>&rsqb; </td><td>Healthy pregnant volunteers</td><td>Maternal age</td><td>160</td><td>110</td><td>&ge; 5 g in a 24-h collection or &ge; 3&plus; on dipstick testing of two random urine samples collected at least 4 h apart</td></tr><tr><td>Zhou &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b042">42</xref>&rsqb; </td><td>Healthy pregnant women </td><td>None</td><td>Not specified</td><td>Not specified</td><td>Not specified</td></tr></tbody></table> --></table-wrap>
+        <table-wrap content-type="3col" id="pmed-0030520-t303" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0030520.t303</object-id><label>Table 3</label><caption>
+            <p>Extended. </p>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.t303" xlink:type="simple"/><!-- <table frame="hsides" rules="none"><colgroup><col id="tb3col1b" align="left" charoff="0" char=""/><col id="tb3col2b" align="left" charoff="0" char=""/><col id="tb3col3b" align="left" charoff="0" char=""/><col id="tb3col4b" align="left" charoff="0" char=""/><col id="tb3col5b" align="left" charoff="0" char=""/></colgroup><thead><tr><td align="left"><hr/>Reference</td><td><hr/>Reference Cited to Define Preeclampsia </td><td><hr/>Main Exclusion Criteria</td><td><hr/>Country</td><td><hr/>Ethnicity</td></tr></thead><tbody><tr><td>Bai &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b022">22</xref>&rsqb; </td><td>Authors referred only to: &ldquo;rigorous definition of pre-eclampsia&rdquo;<sup>a</sup></td><td>Not specified</td><td>China</td><td>Asian</td></tr><tr><td>Bouba &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b023">23</xref>&rsqb; </td><td>Not specified </td><td>Preexisting cardiovascular or renal disease</td><td>Greece</td><td>European</td></tr><tr><td>Choi H &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b024">24</xref>&rsqb; </td><td>&lsqb;<xref ref-type="bibr" rid="pmed-0030520-b066">66</xref>&rsqb; </td><td>Cardiac disease, serum creatinine &gt; 150 &mu;mol/l or the presence of other systemic disease</td><td>Korea</td><td>Asian</td></tr><tr><td>Dizon-Townson &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b025">25</xref>&rsqb; </td><td>Not specified<sup>a</sup> </td><td>Not specified</td><td>United States</td><td>European</td></tr><tr><td>Galao &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b026">26</xref>&rsqb; </td><td>&lsqb;<xref ref-type="bibr" rid="pmed-0030520-b066">66</xref>&rsqb;</td><td>History of essential or secondary hypertension, multiparous women, diabetes mellitus, renal disease</td><td>Brazil</td><td>Hispanic (European and American Indian)</td></tr><tr><td>Gurdol &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b027">27</xref>&rsqb; </td><td>Not specified </td><td>Preexisting hypertension</td><td>Turkey</td><td>European</td></tr><tr><td>Heiskanen &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b028">28</xref>&rsqb; </td><td>&lsqb;<xref ref-type="bibr" rid="pmed-0030520-b067">67</xref>&rsqb;</td><td>Chronic hypertension and multiple pregnancy</td><td>Finland</td><td>European</td></tr><tr><td>Kaur &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b029">29</xref>&rsqb; </td><td>&lsqb;<xref ref-type="bibr" rid="pmed-0030520-b066">66</xref>&rsqb;</td><td>Chronic hypertension, diabetes mellitus, hyperthyroidism, sarcoidosis, chronic renal disorders, collagen disorders</td><td>India</td><td>South Asian</td></tr><tr><td>Kim &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b030">30</xref>&rsqb; </td><td>&lsqb;<xref ref-type="bibr" rid="pmed-0030520-b066">66</xref>&rsqb; </td><td>No chronic hypertension. No personal or family history of preeclampsia (only for controls)</td><td>Korea</td><td>Asian</td></tr><tr><td>Kobashi &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b031">31</xref>&rsqb; </td><td>&lsqb;<xref ref-type="bibr" rid="pmed-0030520-b068">68</xref>&rsqb;</td><td>Preexisting hypertension, renal disease, diabetes mellitus, amniotic fluid abnormalities, fetal anomalies, multiple pregnancies</td><td>Japan</td><td>Asian</td></tr><tr><td>Levesque &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b032">32</xref>&rsqb; </td><td>&lsqb;<xref ref-type="bibr" rid="pmed-0030520-b069">69</xref>&rsqb; </td><td>Preexisting secondary hypertension, preexisting hypertension with superimposed preeclampsia, multiple pregnancies</td><td>Canada</td><td>European</td></tr><tr><td>Mingwei &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b033">33</xref>&rsqb; </td><td>Reported as standard criteria. The authors cited a Chinese textbook of obstetrics and gynecology.<sup>a</sup></td><td>Not specified</td><td>China</td><td>Asian</td></tr><tr><td>Morgan &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b034">34</xref>&rsqb; </td><td>Not specified</td><td>History of essential hypertension, diabetes mellitus, or chronic renal disease</td><td>United Kingdom</td><td>European</td></tr><tr><td>Mozgovaia &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b035">35</xref>&rsqb;</td><td>Not specified</td><td>Not specified</td><td>Russia</td><td>European</td></tr><tr><td>Roberts &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b036">36</xref>&rsqb; </td><td>Not specified</td><td>History of hypertension in a previous pregnancy (only for controls)</td><td>South Africa</td><td>Afro-Caribbean</td></tr><tr><td>Roh &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b037">37</xref>&rsqb; </td><td>American College of Obstetrics and Gynecology</td><td>Not specified</td><td>Korea</td><td>Asian</td></tr><tr><td>Seremak-Mrozikiewicz &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b038">38</xref>&rsqb;</td><td>Not specified</td><td>Multiparous women</td><td>Poland</td><td>European</td></tr><tr><td>Serrano et al. (present study) </td><td>&lsqb;<xref ref-type="bibr" rid="pmed-0030520-b067">67</xref>&rsqb;</td><td>See <xref ref-type="sec" rid="st2">methods</xref> section, manuscript</td><td>Colombia</td><td>Mixed (European, Hispanic, Afro-Caribbean, and Native American)</td></tr><tr><td>Tamura &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b039">39</xref>&rsqb; </td><td>Not specified</td><td>Hypertension, renal disease, diabetes, or other significant medical complications, such as heart disease</td><td>United States</td><td>Afro-Caribbean</td></tr><tr><td>Wang &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b040">40</xref>&rsqb; </td><td>Not specified &dagger;</td><td>Not specified</td><td>China</td><td>Asian</td></tr><tr><td>Watanabe &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b041">41</xref>&rsqb; </td><td>&lsqb;71&rsqb; </td><td>History of hypertension or renal disease</td><td>Japan</td><td>Asian</td></tr><tr><td>Zhou &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b042">42</xref>&rsqb;</td><td>Reported as standard criteria. The authors cited a Chinese textbook of obstetrics and gynaecology</td><td>Not specified</td><td>China</td><td>Asian</td></tr></tbody></table> --></table-wrap>
+        <table-wrap content-type="2col" id="pmed-0030520-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0030520.t004</object-id><label>Table 4</label><caption>
+            <p>Characteristics of Published Studies of the Association between the
+              <italic>ACE-I/D</italic> Polymorphism and Preeclampsia Included in the
+            Meta-Analysis</p>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.t004" xlink:type="simple"/><!-- <table frame="hsides" rules="none"><colgroup><col id="tb4col1" align="left" charoff="0" char=""/><col id="tb4col2" align="char" charoff="0" char=""/><col id="tb4col3" align="char" charoff="0" char=""/><col id="tb4col4" align="char" charoff="0" char=""/><col id="tb4col5" align="char" charoff="0" char=""/><col id="tb4col6" align="char" charoff="0" char=""/><col id="tb4col7" align="char" charoff="0" char=""/><col id="tb4col8" align="left" charoff="0" char=""/><col id="tb4col9" align="left" charoff="0" char=""/><col id="tb4col10" align="left" charoff="0" char=""/><col id="tb4col11" align="left" charoff="0" char=""/><col id="tb4col12" align="char" charoff="0" char="."/><col id="tb4col13" align="char" charoff="0" char="."/></colgroup><thead><tr><td align="left"><hr/>Study</td><td><hr/>Mean Maternal Age, Participants</td><td><hr/>Mean Maternal Age, Controls</td><td><hr/>Percentage of Nulliparous Cases</td><td><hr/>Percentage of Nulliparous Controls</td><td><hr/>Gestational Age, Cases</td><td><hr/>Gestational Age, Controls</td><td><hr/>Language of Publication</td><td><hr/>Blinding</td><td><hr/>Confirmation of <italic>DD</italic> Genotype</td><td><hr/>Regenotyping of a Random Subsample</td><td><hr/><italic>&chi;</italic><sup>2</sup> Value for HWE</td><td><hr/>Evidence for Departure from HWE (<italic>p</italic>-Value)</td></tr></thead><tbody><tr><td>Bai &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b022">22</xref>&rsqb;</td><td>28</td><td>28</td><td align="left">Not specified</td><td align="left">Not specified</td><td>Not specified</td><td>Not specified</td><td>Non-English</td><td>Unknown</td><td>Not reported</td><td>Not reported</td><td>1.971</td><td>0.160</td></tr><tr><td>Bouba &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b023">23</xref>&rsqb;</td><td>31</td><td>29</td><td align="left">Not specified</td><td>0</td><td>34.32</td><td>38.96</td><td>English</td><td>Yes</td><td>Yes</td><td>Not reported</td><td>0.069</td><td>0.793</td></tr><tr><td>Choi &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b024">24</xref>&rsqb;</td><td>30</td><td>31</td><td>69</td><td>67</td><td>36.2</td><td>39.7</td><td>English</td><td>Yes</td><td>Yes</td><td>Not reported</td><td>0.650</td><td>0.420</td></tr><tr><td>Dizon-Townson &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b025">25</xref>&rsqb;</td><td>Not specified</td><td>Not specified</td><td align="left">Not specified</td><td align="left">Not specified</td><td>Not specified</td><td>Not specified</td><td>English</td><td>Unknown</td><td>Yes</td><td>Not reported</td><td>&lt; 0.0001</td><td>0.995</td></tr><tr><td>Galao &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b026">26</xref>&rsqb;</td><td>21</td><td>25</td><td>100</td><td align="left">Not specified</td><td>36.2</td><td>39</td><td>English</td><td>No</td><td>Yes</td><td>Not reported</td><td>0.323</td><td>0.569</td></tr><tr><td>Gurdol &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b027">27</xref>&rsqb;</td><td>28</td><td>27</td><td align="left">Not specified</td><td>56</td><td>30&ndash;38</td><td>30&ndash;38</td><td>English</td><td>Yes</td><td>Yes</td><td>Not reported</td><td>2.219</td><td>0.136</td></tr><tr><td>Heiskanen &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b028">28</xref>&rsqb;</td><td>Not specified</td><td>Not specified</td><td align="left">Not specified</td><td align="left">Not specified</td><td>Not specified</td><td>Not specified</td><td>English</td><td>Yes</td><td>Not reported</td><td>Not reported</td><td>0.013</td><td>0.909</td></tr><tr><td>Kaur &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b029">29</xref>&rsqb;</td><td>25</td><td>24</td><td>100</td><td>100</td><td>35.9</td><td>35.8</td><td>English</td><td>Yes</td><td>Not reported</td><td>Not reported</td><td>0.152</td><td>0.696</td></tr><tr><td>Kim &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b030">30</xref>&rsqb;</td><td>31</td><td>31</td><td>58.6</td><td>48.2</td><td>36.2</td><td>39</td><td>English</td><td>Yes</td><td>Not reported</td><td>Not reported</td><td>0.270</td><td>0.603</td></tr><tr><td>Kobashi &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b031">31</xref>&rsqb;</td><td>29</td><td>29</td><td>70</td><td>57</td><td>36.4</td><td>39.1</td><td>English</td><td>Unknown</td><td>Yes</td><td>Not reported</td><td>0.140</td><td>0.708</td></tr><tr><td>Levesque &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b032">32</xref>&rsqb;</td><td>26</td><td>26</td><td>100</td><td>100</td><td>36.7</td><td>37.8</td><td>English</td><td>Yes</td><td>Yes</td><td>Not reported</td><td>0.003</td><td>0.955</td></tr><tr><td>Mingwei &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b033">33</xref>&rsqb;</td><td>Not specified</td><td>Not specified</td><td>100</td><td align="left">Not specified</td><td>Not specified</td><td>Not specified</td><td>Non-English</td><td>Unknown</td><td>Not reported</td><td>Not reported</td><td>0.002</td><td>0.968</td></tr><tr><td>Morgan &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b034">34</xref>&rsqb;</td><td>29</td><td>28</td><td>84.7</td><td>90</td><td>35.5</td><td>39.9</td><td>English</td><td>Yes</td><td>Yes</td><td>Not reported</td><td>1.433</td><td>0.231</td></tr><tr><td>Mozgovaia &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b035">35</xref>&rsqb;</td><td>Not specified</td><td>Not specified</td><td align="left">Not specified</td><td align="left">Not specified</td><td>Not specified</td><td>Not specified</td><td>English</td><td>Yes</td><td>Not reported</td><td>Not reported</td><td>0.672</td><td>0.412</td></tr><tr><td>Roberts &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b036">36</xref>&rsqb;</td><td>26</td><td>25</td><td>0</td><td>0</td><td>34.4</td><td>38.8</td><td>English</td><td>No</td><td>Yes</td><td>Not reported</td><td>1.394</td><td>0.237</td></tr><tr><td>Roh &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b037">37</xref>&rsqb;</td><td>Not specified</td><td>Not specified</td><td align="left">Not specified</td><td align="left">Not specified</td><td>Not specified</td><td>Not specified</td><td>Non-English</td><td>Unknown</td><td>Not reported</td><td>Not reported</td><td>1.990</td><td>0.157</td></tr><tr><td>Seremak- Mrozikiewicz &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b038">38</xref>&rsqb;</td><td>25.2</td><td>25.6</td><td>100</td><td align="left">Not specified</td><td>36</td><td>38.1</td><td>English</td><td>Yes</td><td>Not reported</td><td>Not reported</td><td>2.256</td><td>0.133</td></tr><tr><td>Serrano et al. (present study)</td><td>19</td><td>18</td><td>100</td><td>100</td><td>37</td><td>39</td><td>English</td><td>Yes</td><td>Yes</td><td>Yes</td><td>27.140</td><td>&lt; 0.00001</td></tr><tr><td>Tamura &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b039">39</xref>&rsqb;</td><td>23</td><td>23</td><td align="left">Not specified</td><td>53</td><td>Not specified</td><td>38</td><td>English</td><td>Yes</td><td>Yes</td><td>Not reported</td><td>0.625</td><td>0.429</td></tr><tr><td>Wang &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b040">40</xref>&rsqb;</td><td>Not specified</td><td>Not specified</td><td align="left">Not specified</td><td align="left">Not specified</td><td>Not specified</td><td>Not specified</td><td>Non-English</td><td>Unknown</td><td>Not reported</td><td>Not reported</td><td>8.061</td><td>0.004</td></tr><tr><td>Watanabe &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b041">41</xref>&rsqb;</td><td>Not specified</td><td>Not specified</td><td align="left">Not specified</td><td align="left">Not specified</td><td>Not specified</td><td>Not specified</td><td>English</td><td>No</td><td>Not reported</td><td>Not reported</td><td>0.088</td><td>0.766</td></tr><tr><td>Zhou &lsqb;<xref ref-type="bibr" rid="pmed-0030520-b042">42</xref>&rsqb;</td><td>Not specified</td><td>Not specified</td><td>100</td><td>100</td><td>Not specified</td><td>Not specified</td><td>Non-English</td><td>Unknown</td><td>Yes</td><td>Not reported</td><td>0.107</td><td>0.743</td></tr></tbody></table> --><!-- <table-wrap-foot><fn id="nt401"><p>&ldquo;Blinding&rdquo; column indicates whether laboratory staff was blind or not to the case-control status. All samples were genotyped by PCR.</p></fn><fn id="nt402"><p>HWE, Hardy-Weinberg equilibrium.</p></fn></table-wrap-foot> --></table-wrap>
+        <fig id="pmed-0030520-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pmed.0030520.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Meta-Analysis of Studies of <italic>ACE-I/D</italic> Polymorphism and Risk of
+              Preeclampsia</title>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.g002" xlink:type="simple"/>
+        </fig>
+        <fig id="pmed-0030520-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pmed.0030520.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Studies of <italic>ACE-I/D</italic> Polymorphism and Risk of Preeclampsia Grouped
+              by Study Characteristics</title>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.g003" xlink:type="simple"/>
+        </fig>
+        <p>The OR under an additive model for preeclampsia was 1.26 (95% CI,
+          1.07–1.49; <italic>p</italic> = 0.006) (<xref ref-type="fig" rid="pmed-0030520-g002">Figure 2</xref>). However, there was evidence of substantial
+          between-study heterogeneity (<italic>I</italic><sup>2</sup> = 75.1%,
+              <italic>χ<sub>21</sub></italic><sup>2</sup> = 84.23,
+            <italic>p</italic><sub>Het</sub> &lt; 0.0001). Study characteristics such as
+          blinding of genotyping staff, publication language, preeclampsia definition, and disease
+          severity explained little of the heterogeneity (<xref ref-type="fig" rid="pmed-0030520-g003">Figure 3</xref>). A stratified analysis by study size, evaluated
+          as the number of cases in each study (&lt;100, 100–200, and ≥200),
+          showed a diminished effect as the study size increased
+            (<italic>χ<sub>2</sub></italic><sup>2</sup> = 16.95,
+            <italic>p</italic><sub>Het</sub> = 0.0002) (<xref ref-type="fig" rid="pmed-0030520-g003">Figure 3</xref>). Analogous results were obtained when different
+          cutoff points (&lt; 100, 100–500, and ≥ 500) for the number of cases
+          were used (<italic>χ<sub>2</sub></italic><sup>2</sup> = 18.51,
+            <italic>p</italic><sub>Het</sub> = 0.00009). Similarly, stratifying by
+          ethnicity indicated that studies conducted in Asian populations tended to have a larger
+          ORs (<italic>χ<sub>5</sub></italic><sup>2</sup> = 14.4,
+            <italic>p</italic><sub>Het</sub> = 0.007). These findings might be explained
+          by the fact that eight out of the nine studies conducted in Asian populations had fewer
+          than 100 cases in each study. The funnel plot including all studies was asymmetric, and
+          the Egger's test (<italic>p</italic> = 0.06) and the linear regression model
+            (<italic>p</italic> = 0.003) suggested the presence of an excess of small
+          studies with more positive results, predominately of studies published in
+          non-English–language journals (<xref ref-type="supplementary-material" rid="pmed-0030520-sg001">Figure S1</xref>; see <xref ref-type="supplementary-material" rid="pmed-0030520-sd001">Protocol S1</xref> for details). A cumulative synthesis of
+          ACE-I/D variants and preeclampsia revealed substantial instability of the genetic effect
+          over time, with studies published between 1996 and 1997 demonstrating the most protective
+          effect, immediately followed by studies published in 1998 and 1999 indicating the most
+          significant results in the opposite direction. Then, the effect size is seen to attenuate
+          gradually over time toward a null association with the accumulation of more data (<xref ref-type="supplementary-material" rid="pmed-0030520-sg002">Figure S2</xref>; see <xref ref-type="supplementary-material" rid="pmed-0030520-sd001">Protocol S1</xref> for
+          details). Genotypic ORs under other genetic models of inheritance are outlined in <xref ref-type="table" rid="pmed-0030520-t005">Table 5</xref>.</p>
+        <table-wrap content-type="1col" id="pmed-0030520-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0030520.t005</object-id><label>Table 5</label><caption>
+            <p>Genotypic ORs for Preeclampsia and the <italic>ACE-I/D</italic> Variant.</p>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.t005" xlink:type="simple"/><!-- <table frame="hsides" rules="none"><colgroup><col id="tb5col1" align="left" charoff="0" char=""/><col id="tb5col2" align="left" charoff="0" char=""/><col id="tb5col3" align="left" charoff="0" char=""/></colgroup><thead><tr><td align="left"><hr/>Model</td><td><hr/>Comparison</td><td><hr/>ACE-I/D Variant</td></tr></thead><tbody><tr><td><bold>Additive model</bold></td><td>Random, OR (95&percnt; CI), <italic>p</italic>-value</td><td>1.26 (1.07&ndash;1.49), <italic>p</italic> &equals; 0.006</td></tr><tr><td></td><td><italic>I</italic><sup>2</sup> (<italic>p</italic> for heterogeneity)</td><td>75.1&percnt; (<italic>p</italic> &lt; 0.0001)</td></tr><tr><td></td><td>Egger test, <italic>p</italic>-value</td><td><italic>p</italic> &equals; 0.06</td></tr><tr><td><bold>Homozygous for rare allele versus homozygous for common allele</bold></td><td>Random, OR (95&percnt; CI), <italic>p</italic>-value</td><td>1.51 (1.09&ndash;2.08), <italic>p</italic> &equals; 0.01</td></tr><tr><td></td><td><italic>I</italic><sup>2</sup> (<italic>p</italic> for heterogeneity)</td><td>71.8&percnt; (<italic>p</italic> &lt; 0.0001)</td></tr><tr><td></td><td>Egger test, <italic>p</italic>-value</td><td><italic>p</italic> &equals; 0.02</td></tr><tr><td><bold>Heterozygous versus homozygous for common allele</bold></td><td>Random, OR (95&percnt; CI), <italic>p</italic>-value</td><td>0.94 (0.78&ndash;1.12), <italic>p</italic> &equals; 0.50</td></tr><tr><td></td><td><italic>I</italic><sup>2</sup> (<italic>p</italic> for heterogeneity)</td><td>31.5&percnt; (<italic>p</italic> &equals; 0.07)</td></tr><tr><td></td><td>Egger test, <italic>p</italic>-value</td><td><italic>p</italic> &equals; 0.76</td></tr><tr><td><bold>Recessive model</bold></td><td>Random, OR (95&percnt; CI), <italic>p</italic>-value</td><td>1.59 (1.22&ndash;2.07), <italic>p</italic> &equals; 0.001</td></tr><tr><td></td><td><italic>I</italic><sup>2</sup> (<italic>p</italic> for heterogeneity)</td><td>74.5&percnt; (<italic>p</italic> &lt; 0.0001)</td></tr><tr><td></td><td>Egger test, <italic>p</italic>-value</td><td><italic>p</italic> &equals;0.008</td></tr><tr><td><bold>Dominant model</bold></td><td>Random, OR (95&percnt; CI), <italic>p</italic>-value</td><td>1.15 (0.91&ndash;1.45), <italic>p</italic> &equals; 0.21</td></tr><tr><td></td><td><italic>I</italic><sup>2</sup> (<italic>p</italic> for heterogeneity)</td><td>63.1&percnt; (<italic>p</italic> &lt; 0.0001)</td></tr><tr><td></td><td>Egger test, <italic>p</italic>-value</td><td><italic>p</italic> &equals; 0.09</td></tr></tbody></table> --><!-- --></table-wrap>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>The current meta-analysis, which includes new data from the largest case-control study to
+        date, represents the most comprehensive evaluation of the <italic>ACE-I/D</italic> variant
+        in preeclampsia. Although a pooled per-allele OR suggested evidence of an increase in the
+        risk of preeclampsia of 1.26 (95% CI, 1.07–1.49), the robustness of
+        this summary estimate is uncertain. First, our study found a null association of the
+          <italic>ACE-I/D</italic> variant with preeclampsia. Moreover, there was no substantial
+        evidence of a positive effect in any of the subgroups in the prespecified analyses. Second,
+        the meta-analysis revealed diminishing summary risk estimate as study size increased (<xref ref-type="fig" rid="pmed-0030520-g003">Figure 3</xref>), regardless of the arbitrary
+        cutoff points used to define the categories. This result is concordant with the results of
+        several statistical tests used to evaluate the presence of small-study bias (Egger's test
+          <italic>p</italic> = 0.06 and linear-regression model test <italic>p</italic>
+        = 0.003). Furthermore, since only the published literature was included, it is
+        possible that including unpublished studies (which more often provide evidence of negative
+        or null effects) would have provided additional evidence of small-study bias. Taken
+        together, these findings point to small-study bias as a potential explanation for the
+        results observed in the meta-analysis. Discrepant findings from large and small studies are
+        not new in the field of genetics of complex disorders [<xref ref-type="bibr" rid="pmed-0030520-b050">50</xref>]. When present, discrepancy of genetic effects
+        sizes may be due to multiple causes such as genuine heterogeneity, data manipulation and
+        fabrication, study quality, or publication bias. A form of publication bias relevant to the
+        current report is within-study reporting bias. Because of the facility of measuring multiple
+        genetic markers in a study, significant positive and negative associations (sometimes
+        arising from multiple testing) are more likely to be published early rather than late.
+        Results from the cumulative meta-analysis support this as one possible explanation, which
+        has been referred to as the Proteus phenomenon [<xref ref-type="bibr" rid="pmed-0030520-b051">51</xref>]. Further evidence in support of the presence
+        of within-study reporting bias is the fact that studies published in languages other than
+        English, and in the Asian ethnic group, tend to have larger effects, findings consistent
+        with other recent results [<xref ref-type="bibr" rid="pmed-0030520-b052">52</xref>].</p>
+      <p>Publication bias is increasingly being recognized as one of the main threats to the
+        reliability of conclusions drawn from association studies with common disease outcomes. In
+        the setting of cardiovascular and neurological diseases, several positive
+        gene–disease associations, usually based on meta-analysis of small studies, have
+        been subsequently refuted by large genetic studies [<xref ref-type="bibr" rid="pmed-0030520-b013">13</xref>,<xref ref-type="bibr" rid="pmed-0030520-b053">53</xref>]. As a result, several initiatives are now underway to help overcome
+        problems of reporting and publication bias and to help to achieve datasets of appropriate
+        size to detect plausible genetic effects for common disorders, which are likely to require
+        several thousands of cases of the disease (The Wellcome Trust Case Control Consortium,
+          <ext-link ext-link-type="uri" xlink:href="http://www.wtccc.org.uk" xlink:type="simple">http://www.wtccc.org.uk</ext-link>) [<xref ref-type="bibr" rid="pmed-0030520-b054">54</xref>]. Genetic studies in preeclampsia continue to be somewhat small in
+        size [<xref ref-type="bibr" rid="pmed-0030520-b055">55</xref>,<xref ref-type="bibr" rid="pmed-0030520-b056">56</xref>] and are usually underpowered to detect
+        realistic genotypic relative risks (ORs between 1.15 and 1.4) [<xref ref-type="bibr" rid="pmed-0030520-b014">14</xref>,<xref ref-type="bibr" rid="pmed-0030520-b057">57</xref>]. However, considering the low incidence of
+        preeclampsia (2%–3% in developed countries), it is highly
+        unlikely that a single centre will be able to amass the large number of cases required, and
+        the development of networks of interested investigators may be essential [<xref ref-type="bibr" rid="pmed-0030520-b054">54</xref>]. Therefore, international
+        collaborations, particularly among those countries with a high incidence of preeclampsia,
+        may make recruitment more efficient and help to include participants with different cultural
+        and genetic backgrounds, which can provide further insight into the aetiology of the disease
+        both genetic and/or environmental.</p>
+      <p>Despite these obstacles, the investment in adequate resources to study the genetics of
+        preeclampsia is an important priority. Observational studies and the randomised trials of
+        interventions that have followed have been unsuccessful thus far in identifying causal
+        pathways in preeclampsia amenable to preventive therapies, a clear example of which are the
+        recently failed clinical trials using either antioxidant vitamins or calcium supplements
+          [<xref ref-type="bibr" rid="pmed-0030520-b058">58</xref>–<xref ref-type="bibr" rid="pmed-0030520-b061">61</xref>]. A genetic approach that is
+        less prone to confounding and reverse causation than nongenetic observational studies, may
+        be more likely to identify causal pathways and may help to prioritise therapeutic targets
+        that require evaluation in large and expensive randomised clinical trials [<xref ref-type="bibr" rid="pmed-0030520-b062">62</xref>,<xref ref-type="bibr" rid="pmed-0030520-b063">63</xref>]. The challenge is in how to make better use of
+        the genetic approach in complex diseases such as preeclampsia, in particular to overcome
+        random errors in risk estimates from small studies as well as publication bias. A suggested
+        approach is to establish a collaborating consortium of investigators from existing studies
+        in genetics of preeclampsia to reduce the multiple existing problems such as: (1) inadequate
+        selection of candidate gene variants to be evaluated, (2) biased analyses, and selective
+        reporting of positive results; (3) to promote access to unpublished data; (4) to overcome
+        inadequate outcome definitions; and (5) to provide guidance for developing new large studies
+          [<xref ref-type="bibr" rid="pmed-0030520-b054">54</xref>]. Until such
+        measures are established, it will be important for both authors and journal editors to
+        embrace the publication of both positive and negative results from “well-designed
+        case-control” studies to diminish the problem of publication bias [<xref ref-type="bibr" rid="pmed-0030520-b064">64</xref>]. This approach has recently
+        become a reality for clinical trials [<xref ref-type="bibr" rid="pmed-0030520-b065">65</xref>], and it might help in reducing the temptation of researchers to
+        explore multiple hypotheses in subgroup analyses to obtain one finding of nominal
+        statistical significance that might help acceptance of the paper.</p>
+      <p>Investigating the aetiology of preeclampsia, one of the main causes of maternal and
+        neonatal mortality and morbidity worldwide, should be a health research priority. A genetic
+        approach may indeed be useful, but large collaborative studies will also be needed.</p>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pmed-0030520-sg001" mimetype="application/mspowerpoint" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.sg001" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <title>Funnel Plot of Studies of <italic>ACE-I/D</italic> Polymorphism and Preeclampsia</title>
+          <p>ORs for outcome using a per-allele model. Studies in bold are those published in
+            non-English-language journals.</p>
+          <p>(38 KB PPT)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed-0030520-sg002" mimetype="application/mspowerpoint" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.sg002" xlink:type="simple">
+        <label>Figure S2</label>
+        <caption>
+          <title>Cumulative Synthesis of Studies of <italic>ACE-I/D</italic> Polymorphism and
+            Preeclampsia</title>
+          <p>OR (random effect model) for outcome using a per-allele model.</p>
+          <p>(36 KB PPT)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed-0030520-sd001" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.sd001" xlink:type="simple">
+        <label>Protocol S1</label>
+        <caption>
+          <title><italic>ACE-I/D</italic> Polymorphism and Preeclampsia Risk: Evidence of
+            Small-Study Bias</title>
+          <p>(68 KB DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed-0030520-sd002" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.sd002" xlink:type="simple">
+        <label>Alternative Language Abstract S1</label>
+        <caption>
+          <title>Translation of the Abstract into Spanish</title>
+          <p>Translation by N. C. Serrano, Universidad Autónoma de Bucaramanga,
+            Bucaramanga, Colombia.</p>
+          <p>(25 KB DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed-0030520-sd003" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.0030520.sd003" xlink:type="simple">
+        <label>Alternative Language Abstract S2</label>
+        <caption>
+          <title>Translation of the Abstract into Chinese</title>
+          <p>Translation by D. Wang, Medical Statistics Unit, London School of Hygiene and Tropical
+            Medicine, London, United Kingdom.</p>
+          <p>(33 KB DOC)</p>
+        </caption>
+      </supplementary-material>
+      <sec id="s5a">
+        <title>Accession Numbers</title>
+        <p>The SNP database (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/SNP/" xlink:type="simple">http://www.ncbi.nlm.nih.gov/SNP/</ext-link>) single-nucleotide polymorphism discussed in
+          this paper is an insertion/deletion variant (rs1799752) referenced to the
+          <italic>ACE</italic> gene with the GenBank (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/Genbank/" xlink:type="simple">http://www.ncbi.nlm.nih.gov/Genbank/</ext-link>) accession number J04144.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>Thanks to Drs Hideki Watanabe, Linda Morgan, Ioannis Georgiou, Rosanna Abate, Jeong Bae
+        Park, François Rousseau, Figen Gurdol, Young Ju Kim, Huai Bai, Tsunenobu Tamura,
+        Vanita Jain, Agnieszka Seremak-Mrozikiewicz, Vladislav S. Baranov, Adriani Oliveira
+        Galão, and Rosemary Pegoraro, who kindly provided additional valuable information
+        from their studies to the meta-analyses.</p>
+    </ack>
+    
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>ACE</term>
+          <def>
+            <p>angiotensin-converting enzyme</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>
+            <italic>ACE-I/D</italic>
+          </term>
+          <def>
+            <p>angiotensin- converting enzyme gene</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CI</term>
+          <def>
+            <p>confidence interval</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>OR</term>
+          <def>
+            <p>odds ratio</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <ref-list>
+      <title>References</title>
+      <ref id="pmed-0030520-b001">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <collab xlink:type="simple">World Health Organization International Collaborative Study of Hypertensive
+            Disorders of Pregnancy</collab>
+          <year>1988</year>
+          <article-title>Geographic variation in the incidence of hypertension in pregnancy.</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <volume>158</volume>
+          <fpage>80</fpage>
+          <lpage>83</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b002">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Khan</surname>
+              <given-names>KS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Wojdyla</surname>
+              <given-names>D</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Say</surname>
+              <given-names>L</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gulmezoglu</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Van Look</surname>
+              <given-names>PF</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>WHO analysis of causes of maternal death: A systematic review.</article-title>
+          <source>Lancet</source>
+          <volume>367</volume>
+          <fpage>1066</fpage>
+          <lpage>1074</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b003">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Sibai</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Dekker</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kupferminc</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Pre-eclampsia.</article-title>
+          <source>Lancet</source>
+          <volume>365</volume>
+          <fpage>785</fpage>
+          <lpage>799</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b004">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Villar</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Abalos</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nardin</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Merialdi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Carroli</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Strategies to prevent and treat preeclampsia: Evidence from randomized
+            controlled trials.</article-title>
+          <source>Semin Nephrol</source>
+          <volume>24</volume>
+          <fpage>607</fpage>
+          <lpage>615</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b005">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Duckitt</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Harrington</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Risk factors for pre-eclampsia at antenatal booking: Systematic review of
+            controlled studies.</article-title>
+          <source>BMJ</source>
+          <volume>330</volume>
+          <fpage>565</fpage>
+          <lpage>567</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b006">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ray</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Vermeulen</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Schull</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Redelmeier</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Cardiovascular health after maternal placental syndromes (CHAMPS):
+            Population-based retrospective cohort study.</article-title>
+          <source>Lancet</source>
+          <volume>366</volume>
+          <fpage>1797</fpage>
+          <lpage>1803</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b007">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Zaman</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Oparil</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Calhoun</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Drugs targeting the renin-angiotensin-aldosterone system.</article-title>
+          <source>Nat Rev Drug Discov</source>
+          <volume>1</volume>
+          <fpage>621</fpage>
+          <lpage>636</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b008">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Shah</surname>
+              <given-names>DM</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>The role of RAS in the pathogenesis of preeclampsia.</article-title>
+          <source>Curr Hypertens Rep</source>
+          <volume>8</volume>
+          <fpage>144</fpage>
+          <lpage>152</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b009">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Rigat</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hubert</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Alhenc-Gelas</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cambien</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Corvol</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1990</year>
+          <article-title>An insertion/deletion polymorphism in the angiotensin I-converting enzyme
+            gene accounting for half the variance of serum enzyme levels.</article-title>
+          <source>J Clin Invest</source>
+          <volume>86</volume>
+          <fpage>1343</fpage>
+          <lpage>1346</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b010">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Agerholm-Larsen</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nordestgaard</surname>
+              <given-names>BG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tybjaerg-Hansen</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>ACE gene polymorphism in cardiovascular disease: Meta-analyses of small and
+            large studies in whites.</article-title>
+          <source>Arterioscler Thromb Vasc Biol</source>
+          <volume>20</volume>
+          <fpage>484</fpage>
+          <lpage>492</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b011">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kammerer</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gouin</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Samollow</surname>
+              <given-names>PB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>VandeBerg</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hixson</surname>
+              <given-names>JE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Two quantitative trait loci affect ACE activities in Mexican-Americans.</article-title>
+          <source>Hypertension</source>
+          <volume>43</volume>
+          <fpage>466</fpage>
+          <lpage>470</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b012">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Sayed-Tabatabaei</surname>
+              <given-names>FA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Houwing-Duistermaat</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>van Duijn</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Witteman</surname>
+              <given-names>JC</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Angiotensin-converting enzyme gene polymorphism and carotid artery wall
+            thickness: A meta-analysis.</article-title>
+          <source>Stroke</source>
+          <volume>34</volume>
+          <fpage>1634</fpage>
+          <lpage>1639</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b013">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Keavney</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>McKenzie</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Parish</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Palmer</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Clark</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2000</year>
+          <article-title>Large-scale test of hypothesised associations between the
+            angiotensin-converting-enzyme insertion/deletion polymorphism and myocardial infarction
+            in about 5,000 cases and 6,000 controls. International Studies of Infarct Survival
+            (ISIS) Collaborators.</article-title>
+          <source>Lancet</source>
+          <volume>355</volume>
+          <fpage>434</fpage>
+          <lpage>442</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b014">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Casas</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hingorani</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bautista</surname>
+              <given-names>LE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sharma</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Meta-analysis of genetic studies in ischemic stroke: Thirty-two genes
+            involving approximately 18,000 cases and 58,000 controls.</article-title>
+          <source>Arch Neurol</source>
+          <volume>61</volume>
+          <fpage>1652</fpage>
+          <lpage>1661</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b015">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Bonnici</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Keavney</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Collins</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Danesh</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Angiotensin converting enzyme insertion or deletion polymorphism and
+            coronary restenosis: Meta-analysis of 16 studies.</article-title>
+          <source>BMJ</source>
+          <volume>325</volume>
+          <fpage>517</fpage>
+          <lpage>520</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b016">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ng</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tai</surname>
+              <given-names>BC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Koh</surname>
+              <given-names>D</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tan</surname>
+              <given-names>KW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Chia</surname>
+              <given-names>KS</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Angiotensin-I converting enzyme insertion/deletion polymorphism and its
+            association with diabetic nephropathy: A meta-analysis of studies reported between 1994
+            and 2004 and comprising 14,727 subjects.</article-title>
+          <source>Diabetologia</source>
+          <volume>48</volume>
+          <fpage>1008</fpage>
+          <lpage>1016</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b017">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Mello</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Parretti</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gensini</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sticchi</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mecacci</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title>Maternal-fetal flow, negative events, and preeclampsia: Role of ACE I/D
+            polymorphism.</article-title>
+          <source>Hypertension</source>
+          <volume>41</volume>
+          <fpage>932</fpage>
+          <lpage>937</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b018">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <collab xlink:type="simple">Report of the National High Blood Pressure Education Program</collab>
+          <year>2000</year>
+          <article-title>Working Group on High Blood Pressure in Pregnancy.</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <volume>183</volume>
+          <fpage>S1</fpage>
+          <lpage>S22</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b019">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Shanmugam</surname>
+              <given-names>V</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sell</surname>
+              <given-names>KW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Saha</surname>
+              <given-names>BK</given-names>
+            </name>
+          </person-group>
+          <year>1993</year>
+          <article-title>Mistyping ACE heterozygotes.</article-title>
+          <source>PCR Methods Appl</source>
+          <volume>3</volume>
+          <fpage>120</fpage>
+          <lpage>121</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b020">
+        <label>20</label>
+        <element-citation publication-type="other" xlink:type="simple">
+          <person-group person-group-type="editor">
+            <name name-style="western">
+              <surname>Little</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Higgins</surname>
+              <given-names>JPT</given-names>
+            </name>
+          </person-group>
+          <source>The HuGENet™ HuGE Review Handbook, version 1.0</source>
+          <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.hugenet.ca" xlink:type="simple">http://www.hugenet.ca</ext-link>. Accessed: 28 February 2006.</comment>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b021">
+        <label>21</label>
+        <element-citation publication-type="other" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Peters</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sutton</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jones</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Abrams</surname>
+              <given-names>KR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rushton</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <source>Performance of tests and adjustments for publication bias in the presence of
+            heterogeneity: Technical report 05–01</source>
+          <publisher-loc>Leicester, England</publisher-loc>
+          <publisher-name>Department of Health Sciences, University of Leicester</publisher-name>
+          <comment>Report Number 05–01. pp.</comment>
+          <fpage>1</fpage>
+          <lpage>31</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b022">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Bai</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Liu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Liu</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Liu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Li</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2002</year>
+          <article-title>Angiotensinogen and angiotensin-I converting enzyme gene variations in
+            Chinese pregnancy induced hypertension.</article-title>
+          <source>Hua Xi Yi Ke Da Xue Xue Bao</source>
+          <volume>33</volume>
+          <fpage>233</fpage>
+          <lpage>237</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b023">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Bouba</surname>
+              <given-names>I</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Makrydimas</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kalaitzidis</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lolis</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Siamopoulos</surname>
+              <given-names>KC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2003</year>
+          <article-title>Interaction between the polymorphisms of the renin-angiotensin system in
+            preeclampsia.</article-title>
+          <source>Eur J Obstet Gynecol Reprod Biol</source>
+          <volume>110</volume>
+          <fpage>8</fpage>
+          <lpage>11</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b024">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Choi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kang</surname>
+              <given-names>JY</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yoon</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Han</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Whang</surname>
+              <given-names>CS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Association of Angiotensin-converting enzyme and angiotensinogen gene
+            polymorphisms with preeclampsia.</article-title>
+          <source>J Korean Med Sci</source>
+          <volume>19</volume>
+          <fpage>253</fpage>
+          <lpage>257</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b025">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Dizon-Townson</surname>
+              <given-names>D</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lompe</surname>
+              <given-names>I</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hastings</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nelson</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Varner</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1995</year>
+          <article-title>A common genetic variant of the angiotensin converting enzyme is associated
+            with both preeclampsia and chronic hypertension [abstract].</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <volume>172</volume>
+          <fpage>374</fpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b026">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Galao</surname>
+              <given-names>AO</given-names>
+            </name>
+            <name name-style="western">
+              <surname>de Souza</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name name-style="western">
+              <surname>da Costa</surname>
+              <given-names>BE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Scheibe</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>de Figueiredo</surname>
+              <given-names>CE</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Angiotensin-converting enzyme gene polymorphism in preeclampsia and normal
+            pregnancy.</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <volume>191</volume>
+          <fpage>821</fpage>
+          <lpage>824</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b027">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Gurdol</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Isbilen</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yilmaz</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Isbir</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Dirican</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>The association between preeclampsia and angiotensin-converting enzyme
+            insertion/deletion polymorphism.</article-title>
+          <source>Clin Chim Acta</source>
+          <volume>341</volume>
+          <fpage>127</fpage>
+          <lpage>131</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b028">
+        <label>28</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Heiskanen</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pirskanen</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hiltunen</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mannermaa</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Punnonen</surname>
+              <given-names>KR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2001</year>
+          <article-title>Insertion-deletion polymorphism in the gene for angiotensin-converting
+            enzyme is associated with obstetric cholestasis but not with preeclampsia.</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <volume>185</volume>
+          <fpage>600</fpage>
+          <lpage>603</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b029">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kaur</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jain</surname>
+              <given-names>V</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Khuller</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gupta</surname>
+              <given-names>I</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sherawat</surname>
+              <given-names>BS</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Association of angiotensin-converting enzyme gene polymorphism with
+            pregnancy-induced hypertension.</article-title>
+          <source>Acta Obstet Gynecol Scand</source>
+          <volume>84</volume>
+          <fpage>929</fpage>
+          <lpage>933</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b030">
+        <label>30</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kim</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Park</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Park</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lee</surname>
+              <given-names>KS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ha</surname>
+              <given-names>EH</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Associations of polymorphisms of the angiotensinogen M235 polymorphism and
+            angiotensin-converting-enzyme intron 16 insertion/deletion polymorphism with
+            preeclampsia in Korean women.</article-title>
+          <source>Eur J Obstet Gynecol Reprod Biol</source>
+          <volume>116</volume>
+          <fpage>48</fpage>
+          <lpage>53</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b031">
+        <label>31</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kobashi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hata</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Shido</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ohta</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yamada</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>Insertion/deletion polymorphism of the angiotensin-converting enzyme gene
+            and preeclampsia in Japanese patients.</article-title>
+          <source>Semin Thromb Hemost</source>
+          <volume>31</volume>
+          <fpage>346</fpage>
+          <lpage>350</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b032">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Levesque</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Moutquin</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lindsay</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Roy</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rousseau</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Implication of an AGT haplotype in a multigene association study with
+            pregnancy hypertension.</article-title>
+          <source>Hypertension</source>
+          <volume>43</volume>
+          <fpage>71</fpage>
+          <lpage>78</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b033">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Mingwei</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yamping</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Wehwei</surname>
+              <given-names>Ch</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Study on a deletion polymorphism of the angiotensin converting enzyme gene
+            in pregnancy induced hypertension.</article-title>
+          <source>Chin J Obs Gynecol</source>
+          <volume>33</volume>
+          <fpage>83</fpage>
+          <lpage>85</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b034">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Morgan</surname>
+              <given-names>L</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Foster</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hayman</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Crawshaw</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Baker</surname>
+              <given-names>PN</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1999</year>
+          <article-title>Angiotensin-converting enzyme insertion-deletion polymorphism in
+            normotensive and pre-eclamptic pregnancies.</article-title>
+          <source>J Hypertens</source>
+          <volume>17</volume>
+          <fpage>765</fpage>
+          <lpage>768</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b035">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Mozgovaia</surname>
+              <given-names>EV</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Malysheva</surname>
+              <given-names>OV</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ivashchenko</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Branov</surname>
+              <given-names>VS</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Genetic predisposition to pre-eclampsia: Polymorphism of genes involved in
+            regulation of endothelial functions.</article-title>
+          <source>Balkan J Med Genetics</source>
+          <volume>5</volume>
+          <fpage>19</fpage>
+          <lpage>26</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b036">
+        <label>36</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Roberts</surname>
+              <given-names>CB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rom</surname>
+              <given-names>L</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Moodley</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pegoraro</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Hypertension-related gene polymorphisms in pre-eclampsia, eclampsia and
+            gestational hypertension in Black South African women.</article-title>
+          <source>J Hypertens</source>
+          <volume>22</volume>
+          <fpage>945</fpage>
+          <lpage>948</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b037">
+        <label>37</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Roh</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kim</surname>
+              <given-names>DK</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yoon</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yang</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Chung</surname>
+              <given-names>JH</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1997</year>
+          <article-title>A common genetic variant of the angiotensin converting enzyme (ACE) gene
+            and pregnancy induced hypertensive disorders.</article-title>
+          <source>Korean J Obstet Gynecol</source>
+          <volume>40</volume>
+          <fpage>1189</fpage>
+          <lpage>1199</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b038">
+        <label>38</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Seremak-Mrozikiewicz</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Drews</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Malewski</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Slomko</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mrozikiewicz</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Polymorphic genotypes of the angiotensin-converting enzyme in severe
+            pregnancy-induced hypertension.</article-title>
+          <source>Arch Perinat Med</source>
+          <volume>6</volume>
+          <fpage>22</fpage>
+          <lpage>24</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b039">
+        <label>39</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Tamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Johanning</surname>
+              <given-names>GL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Goldenberg</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Johnston</surname>
+              <given-names>KE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>DuBard</surname>
+              <given-names>MB</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>Effect of angiotensin-converting enzyme gene polymorphism on pregnancy
+            outcome, enzyme activity, and zinc concentration.</article-title>
+          <source>Obstet Gynecol</source>
+          <volume>88</volume>
+          <fpage>497</fpage>
+          <lpage>502</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b040">
+        <label>40</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Wang</surname>
+              <given-names>HY</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Li</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Wang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yang</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Relationships between polymorphisms of angiotensin-converting enzyme and
+            methylenetetrahydrofolate reductase genes and genetic susceptibility to
+            pregnancy-induced hypertension.</article-title>
+          <source>Zhonghua Fu Chan Ke Za Zhi</source>
+          <volume>39</volume>
+          <fpage>369</fpage>
+          <lpage>372</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b041">
+        <label>41</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Watanabe</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hamada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yamakawa-Kobayashi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yoshikawa</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Arinami</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Evidence for an association of the R485K polymorphism in the coagulation
+            factor V gene with severe preeclampsia from screening 35 polymorphisms in 27 candidate
+            genes.</article-title>
+          <source>Thromb Haemost</source>
+          <volume>86</volume>
+          <fpage>1594</fpage>
+          <lpage>1595</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b042">
+        <label>42</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Zhou</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yu</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Chen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Huang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jiang</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Detection of insertion/deletion polymorphism of angiotensin converting
+            enzyme gene in preeclampsia.</article-title>
+          <source>Chin J Med Genet</source>
+          <volume>16</volume>
+          <fpage>29</fpage>
+          <lpage>31</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b043">
+        <label>43</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kim</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pang</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Park</surname>
+              <given-names>MY</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Park</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kim</surname>
+              <given-names>YW</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2001</year>
+          <article-title>A study on the association between angiotensinogen gene and
+            angiotensin-converting-enzyme gene and pregnancy-induced hypertension in Korean women.</article-title>
+          <source>Korean J Obstet Gynecol</source>
+          <volume>44</volume>
+          <fpage>1072</fpage>
+          <lpage>1077</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b044">
+        <label>44</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Seremak-Mrozikiewicz</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Drews</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Chmara</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mrozikiewicz</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Polymorphism of gene angiotensin converting enzyme in pregnancy induced
+            hypertension.</article-title>
+          <source>Ginekol Pol</source>
+          <volume>72</volume>
+          <fpage>605</fpage>
+          <lpage>610</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b045">
+        <label>45</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Nalogowska-Glosnicka</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lacka</surname>
+              <given-names>BI</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zychma</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Grzeszczak</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zukowska-Szczechowska</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+            <collab xlink:type="simple">PIH Study Group</collab>
+          </person-group>
+          <year>2000</year>
+          <article-title>Angiotensin II type 1 receptor gene A1166C polymorphism is associated with
+            the increased risk of pregnancy-induced hypertension.</article-title>
+          <source>Med Sci Monit</source>
+          <volume>6</volume>
+          <fpage>523</fpage>
+          <lpage>529</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b046">
+        <label>46</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Nalogowska-Glosnicka</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lacka</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zychma</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Grzeszczak</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Michalski</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1998</year>
+          <article-title>Lack of relationship between angiotensinogen gene m235t polymorphism and
+            gene insertion/deletion (I/D-intron 16) and Pst I RFLP (P/M-intron 7) polymorphisms of
+            the angiotensin I converting enzyme (ACE) gene and the development of H-gestosis.
+            Preliminary results.</article-title>
+          <source>Pol Arch Med Wewn</source>
+          <volume>100</volume>
+          <fpage>19</fpage>
+          <lpage>26</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b047">
+        <label>47</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Zhu</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xia</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cheng</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Study on a deletion polymorphism of the angiotensin converting enzyme gene
+            in pregnancy induced hypertension.</article-title>
+          <source>Zhonghua Fu Chan Ke Za Zhi</source>
+          <volume>33</volume>
+          <fpage>83</fpage>
+          <lpage>85</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b048">
+        <label>48</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Huang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Liao</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sun</surname>
+              <given-names>X</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Study on the relation between the angiotensin converting enzyme gene and
+            pregnancy induced hypertension.</article-title>
+          <source>Zhonghua Fu Chan Ke Za Zhi</source>
+          <volume>36</volume>
+          <fpage>15</fpage>
+          <lpage>17</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b049">
+        <label>49</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Mello</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Parretti</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fatini</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Riviello</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gensini</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>Low-molecular-weight heparin lowers the recurrence rate of preeclampsia and
+            restores the physiological vascular changes in angiotensin-converting enzyme DD women.</article-title>
+          <source>Hypertension</source>
+          <volume>45</volume>
+          <fpage>86</fpage>
+          <lpage>91</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b050">
+        <label>50</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Trikalinos</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ntzani</surname>
+              <given-names>EE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Contopoulos-Ioannidis</surname>
+              <given-names>DG</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Genetic associations in large versus small studies: An empirical
+            assessment.</article-title>
+          <source>Lancet</source>
+          <volume>361</volume>
+          <fpage>567</fpage>
+          <lpage>571</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b051">
+        <label>51</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Trikalinos</surname>
+              <given-names>TA</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Early extreme contradictory estimates may appear in published research: The
+            Proteus phenomenon in molecular genetics research and randomized trials.</article-title>
+          <source>J Clin Epidemiol</source>
+          <volume>58</volume>
+          <fpage>543</fpage>
+          <lpage>549</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b052">
+        <label>52</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Pan</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Trikalinos</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kavvoura</surname>
+              <given-names>FK</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lau</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Local literature bias in genetic epidemiology: An empirical evaluation of
+            the Chinese literature.</article-title>
+          <source>PLoS Med</source>
+          <volume>2</volume>
+          <elocation-id>e334.</elocation-id>
+          <comment>doi:<ext-link ext-link-type="doi" xlink:href="http://dx.doi.org/10.1371/journal.pmed.0020334" xlink:type="simple">10.1371/journal.pmed.0020334</ext-link></comment>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b053">
+        <label>53</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Healy</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Abou-Sleiman</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Casas</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ahmadi</surname>
+              <given-names>KR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lynch</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>UCHL-1 is not a Parkinson's disease susceptibility gene.</article-title>
+          <source>Ann Neurol</source>
+          <volume>59</volume>
+          <fpage>627</fpage>
+          <lpage>633</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b054">
+        <label>54</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gwinn</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Little</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Higgins</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bernstein</surname>
+              <given-names>JL</given-names>
+            </name>
+            <etal/>
+            <collab xlink:type="simple"> Human Genome Epidemiology Network and the Network of Investigator
+            Networks</collab>
+          </person-group>
+          <year>2006</year>
+          <article-title>A road map for efficient and reliable human genome epidemiology.</article-title>
+          <source>Nat Genet</source>
+          <volume>38</volume>
+          <fpage>3</fpage>
+          <lpage>5</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b055">
+        <label>55</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Yu</surname>
+              <given-names>CK</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Casas</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Savvidou</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sahemey</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nicolaides</surname>
+              <given-names>KH</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>Endothelial nitric oxide synthase gene polymorphism (Glu298Asp) and
+            development of pre-eclampsia: A case-control study and a meta-analysis.</article-title>
+          <source>BMC Pregnancy Childbirth</source>
+          <volume>6</volume>
+          <fpage>7</fpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b056">
+        <label>56</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Lin</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>August</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Genetic thrombophilias and preeclampsia: A meta-analysis.</article-title>
+          <source>Obstet Gynecol</source>
+          <volume>105</volume>
+          <fpage>182</fpage>
+          <lpage>192</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b057">
+        <label>57</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Cardon</surname>
+              <given-names>LR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bell</surname>
+              <given-names>JI</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Association study designs for complex diseases.</article-title>
+          <source>Nat Rev Genet</source>
+          <volume>2</volume>
+          <fpage>91</fpage>
+          <lpage>99</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b058">
+        <label>58</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Rumbold</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Crowther</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Haslam</surname>
+              <given-names>RR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Dekker</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Robinson</surname>
+              <given-names>JS</given-names>
+            </name>
+            <collab xlink:type="simple">ACTS Study Group</collab>
+          </person-group>
+          <year>2006</year>
+          <article-title>Vitamins C and E and the risks of preeclampsia and perinatal complications.</article-title>
+          <source>N Engl J Med</source>
+          <volume>354</volume>
+          <fpage>1796</fpage>
+          <lpage>1806</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b059">
+        <label>59</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Poston</surname>
+              <given-names>L</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Briley</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Seed</surname>
+              <given-names>PT</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kelly</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Shennan</surname>
+              <given-names>AH</given-names>
+            </name>
+            <collab xlink:type="simple">Vitamins in Pre-eclampsia (VIP) Trial Consortium</collab>
+          </person-group>
+          <year>2006</year>
+          <article-title>Vitamin C and vitamin E in pregnant women at risk for pre-eclampsia (VIP
+            trial): Randomised placebo-controlled trial.</article-title>
+          <source>Lancet</source>
+          <volume>367</volume>
+          <fpage>1145</fpage>
+          <lpage>1154</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b060">
+        <label>60</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Villar</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Abdel-Aleem</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Merialdi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mathai</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ali</surname>
+              <given-names>MM</given-names>
+            </name>
+            <etal/>
+            <collab xlink:type="simple"> World Health Organization Calcium Supplementation for the Prevention of
+              Preeclampsia Trial Group</collab>
+          </person-group>
+          <year>2006</year>
+          <article-title>World Health Organization randomized trial of calcium supplementation among
+            low calcium intake pregnant women.</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <volume>194</volume>
+          <fpage>639</fpage>
+          <lpage>649</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b061">
+        <label>61</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Levine</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hauth</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Curet</surname>
+              <given-names>LB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sibai</surname>
+              <given-names>BM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Catalano</surname>
+              <given-names>PM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1997</year>
+          <article-title>Trial of calcium to prevent preeclampsia.</article-title>
+          <source>N Engl J Med</source>
+          <volume>337</volume>
+          <fpage>69</fpage>
+          <lpage>76</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b062">
+        <label>62</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Hingorani</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Shah</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Casas</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Linking observational and genetic approaches to determine the role of
+            C-reactive protein in heart disease risk.</article-title>
+          <source>Eur Heart J</source>
+          <volume>27</volume>
+          <fpage>1261</fpage>
+          <lpage>1263</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b063">
+        <label>63</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Hingorani</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Humphries</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Nature's randomised trials.</article-title>
+          <source>Lancet</source>
+          <volume>366</volume>
+          <fpage>1906</fpage>
+          <lpage>1908</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b064">
+        <label>64</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Journals should publish all “null” results and should
+            sparingly publish “positive” results.</article-title>
+          <source>Cancer Epidemiol Biomarkers Prev</source>
+          <volume>15</volume>
+          <fpage>186</fpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b065">
+        <label>65</label>
+        <element-citation publication-type="other" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Veitch</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <source>Introducing PLoS Clin trials</source>
+          <volume>1</volume>
+          <elocation-id>e8.</elocation-id>
+          <comment>doi: <ext-link ext-link-type="doi" xlink:href="http://dx.doi.org/10.1371/journal.pctr.0010008" xlink:type="simple">10.1371/journal.pctr.0010008</ext-link></comment>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b066">
+        <label>66</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <year>2000</year>
+          <article-title>Report of the National High Blood Pressure Education Program Working Group
+            on High Blood Pressure in Pregnancy.</article-title>
+          <source>Am J Obstet Gynecol</source>
+          <volume>183</volume>
+          <fpage>S1</fpage>
+          <lpage>S22</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b067">
+        <label>67</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Brown</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>de Swiet</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Classification of hypertension in pregnancy.</article-title>
+          <source>Baillieres Best Pract Res Clin Obstet Gynaecol</source>
+          <volume>13</volume>
+          <fpage>27</fpage>
+          <lpage>39</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b068">
+        <label>68</label>
+        <element-citation publication-type="other" xlink:type="simple">
+          <article-title>National High Blood Pressure Education Program Working Group Report on High
+            Blood Pressure in Pregnancy (1990).</article-title>
+          <source> Am J Obstet Gynecol</source>
+          <volume>163</volume>
+          <fpage>1691</fpage>
+          <lpage>1712</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b069">
+        <label>69</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Helewa</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Burrows</surname>
+              <given-names>RF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Smith</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Williams</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Brain</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1997</year>
+          <article-title>Report of the Canadian Hypertension Society Consensus Conference: 1.
+            Definitions, evaluation and classification of hypertensive disorders in pregnancy.</article-title>
+          <source>Can Med Assoc J</source>
+          <volume>157</volume>
+          <fpage>715</fpage>
+          <lpage>725</lpage>
+        </element-citation>
+      </ref>
+      <ref id="pmed-0030520-b070">
+        <label>70</label>
+        <element-citation publication-type="journal" xlink:type="simple">
+          <collab xlink:type="simple">Committee on Technical Bulletins of the American College of Obstetricians and
+            Gynecologists</collab>
+          <year>1996</year>
+          <article-title>ACOG technical bulletin. Hypertension in pregnancy. Number
+            219—January 1996 (replaces number 91, February 1986).</article-title>
+          <source>Int J Gynaecol Obstet</source>
+          <volume>53</volume>
+          <fpage>175</fpage>
+          <lpage>183</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

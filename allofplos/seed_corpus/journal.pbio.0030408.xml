@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="article-commentary" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="publisher">pbio</journal-id><journal-id journal-id-type="nlm-ta">PLoS Biol</journal-id><journal-id journal-id-type="pmc">plosbiol</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Biology</journal-title></journal-title-group><issn pub-type="ppub">1544-9173</issn><issn pub-type="epub">1545-7885</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="doi">10.1371/journal.pbio.0030408</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Synopsis</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Neuroscience</subject>
+        </subj-group>
+        <subj-group subj-group-type="System Taxonomy">
+          <subject>Homo (human)</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Stimulating the Brain Makes the Fingers More Sensitive</article-title><alt-title alt-title-type="running-head">Synopsis</alt-title></title-group><pub-date pub-type="ppub">
+        <month>11</month>
+        <year>2005</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>18</day>
+        <month>10</month>
+        <year>2005</year>
+      </pub-date><volume>3</volume><issue>11</issue><elocation-id>e408</elocation-id><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2005</copyright-year><copyright-holder>Public Library of Science</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><related-article page="e362" related-article-type="companion" vol="3" xlink:href="info:doi/10.1371/journal.pbio.0030362" xlink:title="research article" xlink:type="simple">
+				<article-title>Improvement of Tactile Discrimination Performance and Enlargement of Cortical Somatosensory Maps after 5 Hz rTMS</article-title>
+			</related-article></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title/>
+      <p>Repetitive transcranial magnetic stimulation (rTMS) has more than a whiff of Buck Rogers to it: a magnetic wand passes over the surface of the skull, triggering changes in the brain underneath. But it's not science fiction, and in the past decade, rTMS has emerged as an intriguing technique for exploring brain function, and a promising, though still unproven, form of therapy. In this issue, Hubert Dinse, Martin Tegenthoff, and their colleagues show that a short course of rTMS can increase finger sensitivity for up to two hours after treatment ends, and that this change corresponds to an increase in the size of the brain map representing the finger.</p>
+      <p>rTMS is applied with an electromagnetic coil in the shape of a figure-eight, placed on the scalp directly over the targeted portion of the brain. Short bursts of a strong magnetic pulse stimulate electrical currents within. Sensory input from each region of the body is represented on the surface of the brain, and the location of any region—in this case, the right index finger—can be mapped to allow precise targeting of the rTMS. The authors adjusted the strength of the magnetic field to just below that which triggered a sensory response in the finger, and then applied intermittent pulses of stimulation over the course of about ten minutes.</p>
+      <p>They tested the sensitivity of the index finger by determining how far apart two simultaneously applied pinpricks needed to be for the subject to distinguish them as separate stimuli. rTMS increased this two-point discrimination by about 15% immediately after stimulation, an effect that gradually diminished but still remained significant over the course of the next two hours. The effect was fairly specific for the right index finger: there was no effect on the left index finger, which is represented in the opposite hemisphere, and only a small effect on the right ring finger, which is represented several millimeters away from the index finger in the same hemisphere. When stimulation was applied over the area representing the lower leg, the index finger did not become more sensitive. <xref ref-type="fig" rid="pbio-0030408-g001"/></p>
+      <fig id="pbio-0030408-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pbio.0030408.g001</object-id>
+        <caption>
+          <title>Transcranial magnetic stimulation alters sensory perception and activity in sensory cortical areas</title>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0030408.g001" xlink:type="simple"/>
+      </fig>
+      <p>The authors used functional magnetic resonance imaging (fMRI) to see how the brain changed in response to the stimulation. They found that the region representing the index finger got larger, and that the degree of increase in any one subject corresponded to the degree of increased sensitivity in that same subject. As the sensory effect faded, so too did the fMRI changes. Thus, the cortex itself undergoes changes as a result of rTMS.</p>
+      <p>Practice affects the brain and the brain affects practice—it now appears possible to directly intervene in this brain–behavior loop to improve short-term tactile performance. Other recent work by the same authors shows that rTMS can also improve visual discrimination, suggesting a potential for affecting changes throughout the brain. These results are unlikely to be of immediate benefit to those who rely on exquisite sensitivity in their fingers, whether surgeons or safecrackers, as the equipment needed for rTMS is cumbersome and the duration of the effect relatively short. However, a related technique, transcranial direct current stimulation, employs much more portable equipment, suggesting it may find a role in neurorehabilitation. Further study of both techniques will be needed to determine the future of this futuristic technology. —<italic>Richard Robinson</italic></p>
+    </sec>
+  </body>
+</article>

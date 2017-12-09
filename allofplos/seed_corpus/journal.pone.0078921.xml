@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+	<front>
+		<journal-meta>
+    <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+    <journal-id journal-id-type="publisher-id">plos</journal-id>
+    <journal-id journal-id-type="pmc">plosone</journal-id>
+    <journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group>
+    <issn pub-type="epub">1932-6203</issn>
+    <publisher><publisher-name>Public Library of Science</publisher-name>
+    <publisher-loc>San Francisco, USA</publisher-loc></publisher>
+    </journal-meta><article-meta>
+			<article-id pub-id-type="publisher-id">PONE-D-13-13937</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0078921</article-id><article-categories><subj-group subj-group-type="heading">
+    <subject>Research Article</subject></subj-group></article-categories><title-group>
+				<article-title>Serum Based Diagnosis of Asthma Using Raman Spectroscopy: An Early Phase Pilot Study</article-title>
+			<alt-title alt-title-type="running-head">Raman Spectroscopy - Asthma Diagnosis</alt-title>
+      </title-group>
+			<contrib-group>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Sahu</surname>
+						<given-names>Aditi</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Dalal</surname>
+						<given-names>Krishna</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff2"><sup>2</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Naglot</surname>
+						<given-names>Sarla</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff2"><sup>2</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Aggarwal</surname>
+						<given-names>Parveen</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff3"><sup>3</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Murali Krishna</surname>
+						<given-names>C.</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+					<xref ref-type="corresp" rid="cor1"><sup>*</sup></xref>
+				</contrib>
+			</contrib-group>
+			<aff id="aff1"><label>1</label> <addr-line>KS-04, Chilakapati Laboratory, ACTREC, Kharghar, Navi Mumbai, India</addr-line></aff>
+			<aff id="aff2"><label>2</label> <addr-line>Department of Biophysics, All India Institute of Medical Sciences, Ansari Nagar, New Delhi, India</addr-line></aff>
+			<aff id="aff3"><label>3</label> <addr-line>Department of Emergency Medicine, All India Institute of Medical Sciences, Ansari Nagar, New Delhi, India</addr-line></aff>
+			<contrib-group><contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Khan</surname>
+            <given-names>Rizwan H.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+        </contrib-group><aff id="edit1"><addr-line>Aligarh Muslim University, India</addr-line></aff><author-notes>
+				<corresp id="cor1">* E-mail: <email xlink:type="simple">mchilakapati@actrec.gov.in</email>  </corresp>
+			<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn><fn fn-type="con"><p>Conceived and designed the experiments: KD CMK. Performed the experiments: AS SN. Analyzed the data: AS SN. Contributed reagents/materials/analysis tools: KD CMK. Wrote the manuscript: AS KD CMK. Diagnosis and selection of study subjects: PA. </p></fn></author-notes>
+			<pub-date pub-type="collection"><year>2013</year></pub-date><pub-date pub-type="epub">
+        <day>8</day>
+        <month>11</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume><issue>11</issue><elocation-id>e78921</elocation-id><history><date date-type="received">
+          <day>4</day>
+          <month>4</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>17</day>
+          <month>9</month>
+          <year>2013</year>
+        </date>
+      </history><permissions>
+    <copyright-year>2013</copyright-year><copyright-holder>Sahu et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license>
+    </permissions><abstract>
+				<p>The currently prescribed tests for asthma diagnosis require compulsory patient compliance, and are usually not sensitive to mild asthma. Development of an objective test using minimally invasive samples for diagnosing and monitoring of the response of asthma may help better management of the disease.  Raman spectroscopy (RS) has previously shown potential in several biomedical applications, including pharmacology and forensics. In this study, we have explored the feasibility of detecting asthma and determining treatment response in asthma patients, through RS of serum.  Serum samples from 44 asthma subjects of different grades (mild, moderate, treated severe and untreated severe) and from 15 reference subjects were subjected to Raman spectroscopic analysis and YKL-40 measurements. The force expiratory volume in 1 second (FEV1) values were used as gold standard and the serum YKL-40 levels were used as an additional parameter for diagnosing the different grades of asthma.  For spectral acquisition, serum was placed on a calcium fluoride (CaF<sub>2</sub>) window and spectra were recorded using Raman microprobe. Mean and difference spectra comparisons indicated significant differences between asthma and reference spectra. Differences like changes in protein structure, increase in DNA specific bands and increased glycosaminoglycans-like features were more prominent with increase in asthma severity. Multivariate tools using Principal-component-analysis (PCA) and Principal-component based-linear-discriminant analysis (PC-LDA) followed by Leave-one-out-cross-validation (LOOCV), were employed for data analyses. PCA and PC-LDA results indicate separation of all asthma groups from the reference group, with minor overlap (19.4%) between reference and mild groups. No overlap was observed between the treated severe and untreated severe groups, indicating that patient response to treatment could be determined. Overall promising results were obtained, and a large scale validation study on random subjects is warranted before the routine clinical usage of this technique.</p>
+			</abstract>
+		<funding-group><funding-statement>The Raman spectrometer employed in the study was procured from DBT project BT/PRI11282/MED/32/83/2008, entitled “Development of in vivo laser Raman spectroscopy methods for diagnosis of oral precancerous and cancerous conditions”, Department of Biotechnology, Government of India. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group></article-meta>
+	</front>
+	<body>
+		<sec id="s1" sec-type="introduction">
+			<title>Introduction</title>
+			<p>Asthma is a chronic inflammatory disorder of the airways characterized by airway hyper-responsiveness (AHR) and reversible airflow obstruction that fluctuates over time [<xref ref-type="bibr" rid="B1">1</xref>].  Airway obstruction and allergic inflammation during the disease occur due to release of IgE and pro-inflammatory cytokines such as interleukin(IL)-4, IL-5, IL-9, and IL-13 by T helper cell type 2 (Th2) and other immune effector cells producing toxic inflammatory molecules that ultimately elicit obstruction [<xref ref-type="bibr" rid="B2">2</xref>,<xref ref-type="bibr" rid="B3">3</xref>].  According to WHO estimates, 300 million people suffer from Asthma. In India, an estimated 57,000 deaths were attributed to Asthma in 2004 [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B5">5</xref>]. Earlier, asthma was considered a single disease entity, but in recent times multiple sub-phenotypes that differ in clinical severity, pathological findings, response to therapy, and long-term outcome have been discovered [<xref ref-type="bibr" rid="B6">6</xref>-<xref ref-type="bibr" rid="B8">8</xref>].  Based on clinical parameters, patients are assigned to distinct categories (mild, moderate, severe or very severe) that allow optimal medical decisions on treatment and prognosis to be made for individual phenotypes.</p>
+			<p>Current diagnosis of asthma is based on a history of wheeze, shortness of breath, and cough, which are variable in severity and over time [<xref ref-type="bibr" rid="B9">9</xref>]. New international guidelines recommend the measurement of serial peak expiratory flows, spirometry or bronchoprovocation to confirm the diagnosis of asthma [<xref ref-type="bibr" rid="B9">9</xref>-<xref ref-type="bibr" rid="B11">11</xref>]. However, these are primarily based on demonstrating abnormal airway physiology, which may not always be present in mild asthma, leading to a decreased sensitivity. Some other associated disadvantages including the need of patient compliance, high dependence on patient cooperation and effort, and the need for patient understanding reduce the overall diagnostic utility of these tests [<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B13">13</xref>]. In a clinical setting, diagnosis accomplished in a non-invasive or minimally invasive manner, for example, using body fluids is highly desirable. Body ﬂuids have garnered importance for biomarker identiﬁcation, because of the advantages in accessibility, less invasive procedure, low cost, and multiple sampling for monitoring the disease development [<xref ref-type="bibr" rid="B14">14</xref>]. Several studies investigating biomarkers in serum, mainly the molecules involved in the interplay between the host inflammatory response and allergen, are underway. Recent reports indicate the potential utility of YKL-40, a chitinase like protein belonging to 18 glycosyl hydrolase family and expressed in inflammatory conditions, as a possible biomarker of asthma [<xref ref-type="bibr" rid="B15">15</xref>-<xref ref-type="bibr" rid="B17">17</xref>]. </p>
+			<p>Biological ﬂuids are also being widely investigated with the use of molecular spectroscopy for clinical diagnosis of various diseases - degenerative, cancerous, and others. The methods newly introduced in the last decade for such investigations are Raman-, infrared-, and ﬂuorescence- spectroscopy. Fluorescence spectroscopy for oral and breast cancer detection has been reported [<xref ref-type="bibr" rid="B18">18</xref>,<xref ref-type="bibr" rid="B19">19</xref>]. Several IR spectroscopy studies on blood have shown its potential in detecting various diseases including Alzheimer’s, scrapie, sickle cell anaemia and several cancers [<xref ref-type="bibr" rid="B20">20</xref>-<xref ref-type="bibr" rid="B25">25</xref>]. Raman spectroscopy (RS), a vibrational spectroscopic method based on inelastic scattering of light, has been widely used for qualitative characterization of biological tissues [<xref ref-type="bibr" rid="B26">26</xref>-<xref ref-type="bibr" rid="B28">28</xref>], for diagnosis of periodontitis and lung cancer from saliva [<xref ref-type="bibr" rid="B29">29</xref>,<xref ref-type="bibr" rid="B30">30</xref>], breast cancers [<xref ref-type="bibr" rid="B31">31</xref>], atherosclerosis [<xref ref-type="bibr" rid="B32">32</xref>] and also for several cancers using serum [<xref ref-type="bibr" rid="B33">33</xref>-<xref ref-type="bibr" rid="B36">36</xref>]. For quantitative analysis, RS has been employed for determining glucose and other analytes in blood [<xref ref-type="bibr" rid="B37">37</xref>,<xref ref-type="bibr" rid="B38">38</xref>]. RS of body fluids has also shown potential in a multitude of biomedical applications, including pharmacological and forensic applications [<xref ref-type="bibr" rid="B39">39</xref>-<xref ref-type="bibr" rid="B45">45</xref>]. Thus, the RS of body fluids could be used to monitor metabolic changes occurring with disease. In light of need for better diagnostic tools with attributes like rapidity, objectivity and the use of minimally invasive samples, RS could serve useful for detection of asthma. Thus, this pilot study was carried out to explore the potential applicability of RS in detecting disease-related perturbations in serum of mild, moderate and severe asthma as well as reference subjects. The force expiratory volume in 1 second (FEV1) values were used as gold standard to verify the diagnosis of active subjects and to classify the different grades of asthma. The serum YKL-40 level was measured and the estimated levels were used as an additional parameter to confirm the clinical status of all subjects.  </p>
+		</sec>
+		<sec id="s2" sec-type="materials|methods">
+			<title>Materials and Methods</title>
+			<sec id="s2.1">
+				<title>1: Subject recruitment</title>
+				<sec id="s2.1.1">
+					<title>1.1: Ethics statement</title>
+					<p>Approval to conduct the study was issued by the human ethics committee of All India Institute of Medical Sciences (AIIMS), New Delhi. A written informed consent was taken from each participant following the ethical norms of the institute.  Access to the data was restricted to the investigators and was not available to the public.</p>
+				</sec>
+				<sec id="s2.1.2">
+					<title>1.2: Location of the study and study subjects</title>
+					<p>The subjects were screened and selected in the study from the Out Patient services of Department of Medicine, AIIMS, New Delhi following the Asthma criteria. For reference group, 15 subjects (age and gender matched) were chosen from patients’ relatives, friends and colleagues. Raman spectroscopic studies using serum of these subjects were carried out at Advanced Centre for Training, Research and Education in Cancer (ACTREC), Navi Mumbai, India. Serum YKL-40 levels were estimated at AIIMS, New Delhi. </p>
+				</sec>
+				<sec id="s2.1.3">
+					<title>1.3: Subject screening</title>
+					<p>A sample size of 44 subjects was included in the active arm of the study using gold standard diagnostic tests like Pulmonary Function Test for FEV1 values (as per Global Initiative for Asthma [GINA] guidelines), chest X-ray and complete blood count (CBC). The asthmatic conditions were further classified into 4 different categories viz., mild (n=12), moderate (n=12), untreated severe (n=10) and treated severe (n=10) cases, following the diagnostic criteria laid down by GINA guidelines. The ongoing pharmacological treatment for all the active group subjects comprised of either alone or a combination of the following medications viz., short acting β2 agonist (SABA), Long acting β2 agonist  (LABA), inhaled corticosteroids (ICS) and Methylxanthines. And this treatment was not suspended for any of the sub-groups prior to sample collection. The blood samples were collected at the time of admission and before administering any additional treatment in the respective outpatient and emergency departments for the mild, moderate and untreated severe groups, respectively. The treated severe group was comprised of patients who required additional treatment due to medical urgency. These patients were administered with Salbutamol (albuterol) and Ipratropium bromide nebulization along with intravenous corticosteroids (100mg hydrocortisone 6 hourly). The blood samples were collected from these patients just before their discharge from the emergency ward when they showed significant improvement in their FEV1 values (approximately 3-10 hrs after the initiation of drugs required for severity).  The reference group was constituted by healthy subjects (n=15) chosen from patients’ own relations, friends and colleagues. These subjects were declared ‘control’ (reference group) without any clinical history of disease as reported by themselves. </p>
+				</sec>
+				<sec id="s2.1.4">
+					<title>1.4: Serum separation</title>
+					<p>A quantity of 5 ml blood was collected from each subject in a micro-centrifuge tube (Axygen Inc.,USA) with the help of a sterile injection after informed and written consent. Samples were placed standing for 30 minutes to allow clot formation and then centrifuged at 3500 rpm for 10 minutes. After removing the fat body with the help of a microtip, samples were centrifuged again at 3500 rpm for 10 minutes. The obtained serum was aliquoted in different tubes and stored at -80°C till use. One aliquot of each sample was transported to ACTREC, Mumbai under cold conditions (4°C) for Raman spectroscopic analysis and other set of samples was subjected to YKL-40 protein quantification at AIIMS. All samples were subjected to the identical pre-treatment procedure which included initial storage at -20°C, transportation in cold packs at 4°C, and long term storage at -80° on arrival. After 24 hours, samples were allowed to thaw passively, following which Raman spectra were acquired. </p>
+				</sec>
+			</sec>
+			<sec id="s2.2">
+				<title>2: Estimation of serum YKL-40</title><p>YKL-40 levels were detected in the serum of 44 patients (with 4 subgroups, viz., mild, moderate,  untreated severe and treated severe) and 15 reference subjects by surface plasmon resonance (SPR) analysis (BIAcore 2000; Pharmacia Biosciences) after immobilizing anti- YKL-40 antibody [gp-39 (N-16):Sc-30464] procured from Santa Cruz Biotechnology Inc. on the sensor chip of the instrument. The results of this study were statistically analyzed using Stata SE 11.1 software (Stata Corp, TX, USA). Results were summarized as mean±SD or median (range) depending on the nature of the distributions of the data.  Since the data was not normally distributed, comparison between groups was performed by Kruskal–Wallis test followed by multiple comparison using Bonferroni correction.  A p-value of less than 0.05 was considered to be statistically significant in this study. The level elevation of YKL-40 protein level in asthma (active group) subjects with respect to the reference group was calculated using equation 1 which is stated as follows:  </p>
+				<disp-formula>	 <mml:math id="m1" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mi>%</mml:mi><mml:mtext> </mml:mtext><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:mi>e</mml:mi><mml:mi>v</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi><mml:mtext> </mml:mtext><mml:mi>o</mml:mi><mml:mi>f</mml:mi><mml:mtext> </mml:mtext><mml:mi>s</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mi>u</mml:mi><mml:mi>m</mml:mi><mml:mtext> </mml:mtext><mml:mi>Y</mml:mi><mml:mi>K</mml:mi><mml:mi>L</mml:mi><mml:mo>−</mml:mo><mml:mn>40</mml:mn><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>a</mml:mi><mml:mi>c</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>v</mml:mi><mml:mi>e</mml:mi><mml:mtext> </mml:mtext><mml:mi>g</mml:mi><mml:mi>r</mml:mi><mml:mi>o</mml:mi><mml:mi>u</mml:mi><mml:mi>p</mml:mi><mml:mtext> </mml:mtext><mml:mi>l</mml:mi><mml:mi>e</mml:mi><mml:mi>v</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi></mml:mrow><mml:mrow><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>f</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>n</mml:mi><mml:mi>c</mml:mi><mml:mi>e</mml:mi><mml:mtext> </mml:mtext><mml:mi>g</mml:mi><mml:mi>r</mml:mi><mml:mi>o</mml:mi><mml:mi>u</mml:mi><mml:mi>p</mml:mi><mml:mtext> </mml:mtext><mml:mi>l</mml:mi><mml:mi>e</mml:mi><mml:mi>v</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi></mml:mrow></mml:mfrac><mml:mo>×</mml:mo><mml:mn>100</mml:mn></mml:mrow></mml:semantics></mml:math></disp-formula>
+				<p>In equation 1, ‘active group level’ stands for the median serum YKL-40 protein level in the  individual category of asthma patients, such as mild, moderate, treated severe and untreated severe.  The ‘reference group level’ stands for the median serum YKL-40 protein level of the healthy individuals.  A positive sign indicates elevation in YKL-40 protein levels.</p>
+			</sec>
+			<sec id="s2.3">
+				<title>3: Raman spectroscopy</title>
+				<sec id="s2.3.1">
+					<title>3.1: Sample preparation for Raman spectroscopy</title>
+					<p>Serum samples were transported to ACTREC under cold conditions to avoid degradation of serum constituents. Upon arrival, samples were immediately transferred to –80°C, and removed from cold storage only immediately prior to Raman analysis. Spectra were recorded after passive thawing of the frozen serum samples. The serum samples from different groups were run randomly.</p>
+				</sec>
+				<sec id="s2.3.2">
+					<title>3.2: Spectral acquisition</title><p>After passive thawing, samples were subjected to Raman spectroscopy by placing 30 μl serum sample on calcium fluoride (CaF<sub>2</sub>) window and recording spectra using Fiber Optic Raman microprobe (Horiba-Jobin-Yvon, France). This Raman system consists of laser (785 nm, Process Instruments) as an excitation source and HE 785 spectrograph (Horiba-Jobin-Yvon, France) coupled with CCD (Synapse, Horiba-Jobin-Yvon) as dispersion and detection elements respectively. Optical filtering of unwanted noise, including Rayleigh signals, is accomplished through ‘Superhead’, the other component of the system. Optical fibers were employed to carry the incident light from the excitation source to the sample and also to collect the Raman scattered light from the sample to the detection system. Raman microprobe was assembled by coupling a 40X microscopic objective (Nikon, Japan) to the superhead (<xref ref-type="fig" rid="pone-0078921-g001">Figure 1</xref>). Spectral acquisition details were: Excitation wavelength (λ<sub>ex</sub>) = 785 nm, laser power = 40 mW.  Spectra were integrated for 10 seconds and averaged over 6 accumulations. On an average, 8 spectra were recorded from each sample to generate a total of 396 spectra under 5 groups, 98 spectra from 15 reference group samples, 82 from 12 mild asthma samples, 80 spectra from 12 moderate asthma samples, 70 from 10 treated severe cases and 66 spectra from 10 untreated severe asthma samples, respectively. </p>
+					<fig id="pone-0078921-g001" position="float">
+						<object-id pub-id-type="doi">10.1371/journal.pone.0078921.g001</object-id><label>Figure 1</label>
+						<caption>
+							<title>Raman instrumentation for <italic>ex</italic> <italic>vivo</italic> applications.</title><p>A. Laser: excitation source, λ<sub>785 nm</sub>, B. Superhead: optical assembly that couples excitation and detection elements, C. Sample stage: assembly to place <italic>ex</italic> <italic>vivo</italic> samples, D. Spectrograph:  E. CCD.</p>
+						</caption>
+						<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078921.g001"/>
+					</fig>
+				</sec>
+				<sec id="s2.3.3">
+					<title>3.3: Spectral pre-processing</title>
+					<p>Raman spectra from all serum samples were corrected for Charged coupled device (CCD) response with a National Institute of Standards and Technology (NIST) certified Standard Reference Material 2241 (SRM 2241) followed by the subtraction of background signals from optical elements and substrate. To remove interference of the slow moving background, first derivatives of spectra (Savitzky-Golay method and window size 3) were computed [<xref ref-type="bibr" rid="B46">46</xref>,<xref ref-type="bibr" rid="B47">47</xref>]. Spectra were interpolated in 800-1800 cm<sup>-1</sup> region, vector-normalized and used as input for multivariate analysis.</p>
+				</sec>
+				<sec id="s2.3.4">
+					<title>3.4: Multivariate analysis</title>
+					<p>Vector normalized first derivatives of spectra were subjected to multivariate unsupervised principal component analysis (PCA) and supervised Principal Component-Linear Discriminant Analysis (PC-LDA). PCA is a routinely used method for data compression and visualization. It describes data variance by identifying a new set of orthogonal features, called as principal components (PCs) or factors. For visual discrimination, we project each of the spectra in the newly formed co-ordinate space of selected PCs. While PCA aims to identify features that represent variance among complete data, LDA provides data classification based on an optimized criterion which is aimed for better class separability. In LDA, the classification criterion is identified using the scatter measure of within class and between class variance.  LDA can be used in companion with PCA to increase efficiency of classification. For this, PCA scores obtained using a set of significant PCs with maximum variance amongst data are used as input data for LDA based classification. The advantage of doing this is to remove or minimize noise from the data and concentrate on variables important for classification. In our analysis, significant principal components (p&lt;0.05) were selected as input for LDA. In order to avoid over-fitting of the data, as a thumb rule, total number of factors selected for analysis were less than half the number of the spectra in the smallest group [<xref ref-type="bibr" rid="B48">48</xref>]. LDA models were validated by Leave-one-out cross-validation (LOOCV). LOOCV is a type of rotation estimation used mainly for smaller datasets i.e. a technique useful for assessing performance of a predictive model with a hypothetical validation set when an explicit validation set is not available. Algorithms for these analyses were implemented in MATLAB (Mathworks Inc., USA) based software using in-house codes [<xref ref-type="bibr" rid="B49">49</xref>]. </p>
+					<p>Average spectra were computed from the background subtracted spectra prior to derivatization for each class, by averaging Y-axis variations keeping X-axis constant for each class, and baseline corrected by fitting a fifth order polynomial function. These baseline corrected spectra were used for computing mean and standard deviation spectra to illustrate the intra-group heterogeneity. Difference spectra were also calculated by subtracting average spectra of reference group from different grades of asthma. </p>
+				</sec>
+			</sec>
+		</sec>
+		<sec id="s3" sec-type="results">
+			<title>Results and Discussion</title>
+			<p>This early phase pilot study was undertaken to explore the possibility of RS based diagnosis of asthma using a minimally invasive sample like serum. Such an approach could serve as an objective method for asthma diagnosis for all patients (irrespective of age) and could also enable “distance diagnosis” where the samples could be transported to a centralized facility for analyses.</p>
+			<sec id="s3.1">
+				<title>YKL-40 and demographic data</title>
+				<p>The measured YKL-40 protein levels together with the demographic data for each group are summarized in <xref ref-type="table" rid="pone-0078921-t001">Table 1</xref>. The Box-and-Whisker Plot relating the variations of YKL-40 levels with different groups is shown in <xref ref-type="fig" rid="pone-0078921-g002">Figure 2</xref>. Results indicated a definite difference between mild, moderate and untreated severe groups as compared to reference individuals, with statistically high significances (p&lt;0.001). No statistically significant difference in YKL-40 levels was observed between the controls and the treated severe group (p-value = 0.2918).  The elevations of YKL-40 protein levels in different categories of asthma compared with the control (reference) group were found to be distinct and are stated as follows:  mild (79.2%), moderate (88.0%), untreated severe (122.5%) and treated severe (17.7%).</p>
+				<table-wrap id="pone-0078921-t001" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078921.t001</object-id><label>Table 1</label>
+					<caption>
+						<title>Summary of subject accrual and subject characteristics.</title>
+					</caption>
+					<table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1"><bold>Variables</bold></th>
+								<th rowspan="1" colspan="1"><bold>Control group</bold></th>
+								<th colspan="4" rowspan="1"><bold>Active group (n = 44)</bold><hr/></th>
+							</tr>
+							<tr>
+								<th rowspan="1" colspan="1"/>
+								<th rowspan="1" colspan="1"><bold>(n = 15)</bold></th>
+								<th rowspan="1" colspan="1"><bold>Mild (n = 12)</bold></th>
+								<th rowspan="1" colspan="1"><bold>Moderate (n = 12)</bold></th>
+								<th rowspan="1" colspan="1"><bold>Severe (Untreated) (n = 10)</bold></th>
+								<th rowspan="1" colspan="1"><bold>Severe (Treated)	(n = 10)</bold></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Age (in yrs): Median (range)</bold></td>
+								<td rowspan="1" colspan="1">28 (22-38)</td>
+								<td rowspan="1" colspan="1">29(25-40)</td>
+								<td rowspan="1" colspan="1">33.5 (26-52)</td>
+								<td rowspan="1" colspan="1">35(26-95)</td>
+								<td rowspan="1" colspan="1">37.5(18-98)</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Gender (Male : Female)</bold></td>
+								<td rowspan="1" colspan="1">2 : 1</td>
+								<td rowspan="1" colspan="1">1 : 3</td>
+								<td rowspan="1" colspan="1">7 : 5</td>
+								<td rowspan="1" colspan="1">1 : 1</td>
+								<td rowspan="1" colspan="1">2 : 3</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>n<sub>smokers</sub> : n<sub>never smokers</sub></bold> </td>
+								<td rowspan="1" colspan="1">0 : 15</td>
+								<td rowspan="1" colspan="1">1 : 5</td>
+								<td rowspan="1" colspan="1">1 : 1</td>
+								<td rowspan="1" colspan="1">0 : 10</td>
+								<td rowspan="1" colspan="1">0 : 10</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Family history of asthma:   n<sub>with</sub> : n<sub>without</sub></bold> </td>
+								<td rowspan="1" colspan="1">0 : 15</td>
+								<td rowspan="1" colspan="1">3 : 1</td>
+								<td rowspan="1" colspan="1">5 : 7</td>
+								<td rowspan="1" colspan="1">1 :  9</td>
+								<td rowspan="1" colspan="1">3 : 2</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Duration of asthma in years: median (range)</bold></td>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1">8.5(3-28)</td>
+								<td rowspan="1" colspan="1">8(2-35)</td>
+								<td rowspan="1" colspan="1">6(4-21)</td>
+								<td rowspan="1" colspan="1">5.5(1-25)</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>FEV1 values (% predicted) (Mean ± SD)</bold></td>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1">90.7 ±5.5</td>
+								<td rowspan="1" colspan="1">69.8±3.9</td>
+								<td rowspan="1" colspan="1">36.6± 14.5</td>
+								<td rowspan="1" colspan="1">70.5±23.2</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>YKL-40 Levels (ng/ml)L: Median (range)</bold></td>
+								<td rowspan="1" colspan="1">2.3(1.8 - 2.7)</td>
+								<td rowspan="1" colspan="1">4.1(1.9–6.7)</td>
+								<td rowspan="1" colspan="1">4.3(2.2-6.8)</td>
+								<td rowspan="1" colspan="1">5.0(2.4-7.8)</td>
+								<td rowspan="1" colspan="1">2.7( 1.1-5.0)  </td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>p-value: (individual group compared with reference group)</bold></td>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1">0.0004</td>
+								<td rowspan="1" colspan="1">0.0001</td>
+								<td rowspan="1" colspan="1">0.0001</td>
+								<td rowspan="1" colspan="1">0.2918</td>
+							</tr>
+						</tbody>
+					</table>
+				</table-wrap>
+				<fig id="pone-0078921-g002" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078921.g002</object-id><label>Figure 2</label>
+					<caption>
+						<title>Box-and-Whisker plot exhibiting the relationships of the measured YKL-40 protein levels with reference and active groups (with different sub-groups).</title></caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078921.g002"/>
+				</fig>
+			</sec>
+			<sec id="s3.2">
+				<title>Spectral features</title>
+				<p>On comparison of the normalized average spectra from reference and active groups, prominent spectral differences were observed in the amide I region, Phe-ring breathing, δCH<sub>2</sub> deformation and DNA specific bands which may indicate changes in the secondary structure and in the relative concentration of proteins and DNA in these groups, as shown in <xref ref-type="fig" rid="pone-0078921-g003">Figure 3A-E</xref>. The mean and standard deviation spectra were computed for each group and heterogeneity in the spectra were limited to minor intensity related variations, as shown in <xref ref-type="fig" rid="pone-0078921-g004">Figure 4A-E</xref>. </p>
+				<fig id="pone-0078921-g003" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078921.g003</object-id><label>Figure 3</label>
+					<caption>
+						<title>Mean Raman spectrum of reference and different asthma grades.</title><p>A. Reference, B. Mild asthma, C. Moderate asthma, D. Treated severe asthma, E. Untreated severe asthma.</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078921.g003"/>
+				</fig>
+				<fig id="pone-0078921-g004" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078921.g004</object-id><label>Figure 4</label>
+					<caption>
+						<title>Mean and standard deviation of reference and different asthma grades.</title><p>A. Reference, B. Mild asthma, C. Moderate asthma, D. Treated severe asthma, E. Untreated severe asthma.</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078921.g004"/>
+				</fig>
+				<p>Difference spectra were computed to bring out spectral differences. Subtraction of mean spectra is one of the conventional ways of looking at spectral differences, which can provide differences over selected spectral range and understanding of the moieties that may have been modified. Difference spectra were obtained by subtracting normalized average spectrum of reference group from all asthma groups: mild, moderate, treated severe and untreated severe (<xref ref-type="fig" rid="pone-0078921-g005">Figure 5A-D</xref>). All positive peaks belong to the pathological groups (mild, moderate, treated severe and untreated severe asthma), while all negative peaks are the features of reference group. Difference in mild and moderate asthma grades spectra revealed positive bands at ~1004 cm<sup>-1</sup>,  1450 cm<sup>-1</sup>, 1660 cm<sup>-1</sup>, 1340 cm<sup>-1</sup> and ~830 cm<sup>-1</sup> and negative peaks at ~1260 cm<sup>-1</sup>, ~1076 cm<sup>-1</sup>, 1495 cm<sup>-1</sup>and 1525 cm<sup>-1</sup> and 1560 cm<sup>-1</sup>. These peaks may be the indicative of molecules like proteins, plasma free amino acids and DNA with relatively higher concentrations persisting in the pathological (asthmatic) groups’ sera [<xref ref-type="bibr" rid="B50">50</xref>].</p>
+				<fig id="pone-0078921-g005" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078921.g005</object-id><label>Figure 5</label>
+					<caption>
+						<title>Difference spectra of the asthma groups.</title><p>Difference spectra were computed by subtracting average reference spectrum from average spectrum of each asthma grade: mild, moderate, treated severe and untreated severe. A. Mild asthma-reference, B. Moderate asthma-reference, C. Treated severe asthma- reference, D. Untreated severe asthma-reference.</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078921.g005"/>
+				</fig>
+				<p>The difference spectrum of the treated severe asthma group indicated additional positive peaks in the 800-1000 cm<sup>-1</sup> and 1400-1600 cm<sup>-1</sup> as compared to mild and moderate difference spectra. Similarly, in the untreated severe difference spectra, increased number of positive peaks could be observed in the same region. The bands observed could be attributed to the enhanced immune hyper-responsiveness in severe asthmatic conditions that might lead to a higher secretion of histamines, leukotrienes and prostaglandins and the increased deposition of glycosaminoglycans (like galactosamine, glucoronic acid and glucosamine) in the airways [<xref ref-type="bibr" rid="B51">51</xref>-<xref ref-type="bibr" rid="B54">54</xref>]. Sufficient literature for precise spectral and biochemical correlation was not available. Biochemical assays (for qualitative and quantitative determination of implicated biomolecules) will be undertaken to achieve better correlation. </p>
+			</sec>
+			<sec id="s3.3">
+				<title>Multivariate data analysis</title>
+				<p>To explore the feasibility of classifying the different grades of asthma serum from reference group, multivariate tools PCA and PC-LDA were used. The results of PCA were depicted as scatter plots, generated by plotting various combinations of scores of factors. The results of PC-LDA were also depicted as scatter plots, and furthermore in the form of confusion matrix.  All diagonal elements represent true positive predictions and ex-diagonal elements indicate false positive predictions. The confusion matrix was generated to understand separation between the groups obtained by accounting for contributions of all factors selected for analyses. </p>
+				<p>In the first step, 396 spectra belonging to reference and different asthma grades were subjected to PCA. PCA is an unsupervised classification methodology which explores patterns in the dataset. It decomposes spectral data into small number of independent variations known as factors and contributions of these factors to each spectrum are called scores. The total percent variance plot and loadings of first three factors are shown in <xref ref-type="fig" rid="pone-0078921-g006">Figure 6A-D</xref>. Scores of factors 1, 2 and 3 were used to visualize classification between the groups. As shown in <xref ref-type="fig" rid="pone-0078921-g006">Figure 6E</xref>, distinct and minimally overlapping clusters were obtained for the groups: reference, mild, moderate, treated severe, while an exclusive cluster for untreated severe was observed.  A slight overlap was observed between reference and mild groups. Since PCA is often used as a data overview tool which helps in identifying outliers, groups and trends in the data; supervised classification method PC-LDA was also explored.</p>
+				<fig id="pone-0078921-g006" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078921.g006</object-id><label>Figure 6</label>
+					<caption>
+						<title>PCA for classification of control and asthma groups.</title><p>A. Total % variance plot, B. Loadings of factor 1, C. Loadings of factor 2, D. Loadings of factor 3, E. 3D scatter plot.</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078921.g006"/>
+				</fig>
+				<p>LDA can be used along with PCA (PC-LDA) to further increase the performance efficiency of classification. The advantage of doing this is to remove or minimize noise from the data and concentrate on variables important for classification. To avoid over-fitting of the model, as a thumb rule, total number of factors selected for analysis were less than half the number of the spectra in the smallest group. Four factors contributing ~89% variance were employed for analysis (<xref ref-type="fig" rid="pone-0078921-g007">Figure 7A</xref>). The scatter plot was constructed using the scores of first 3 factors shown in <xref ref-type="fig" rid="pone-0078921-g007">Figure 7B</xref> indicates mostly well separated clusters for each group, with slight overlap seen between reference and mild asthma, moderate and treated severe asthma groups, while an exclusive cluster for untreated severe cases was observed. This finding is similar to that observed in PCA. The LDA confusion matrix indicates 79 out of 98 reference spectra were correctly classified, where 19 spectra misclassified as mild. In case of mild asthma, 77 spectra were correctly classified, while 2 and 3 spectra misclassified as reference and moderate, respectively. In case of moderate asthma, LDA yielded 70 correct classifications and 10 misclassifications as mild asthma. For treated severe cases, 64 spectra were correctly identified, and 6 spectra incorrectly assigned to moderate groups. In case of the untreated severe group, 61 spectra were correctly classified as untreated severe and 5 spectra misclassified as mild. The LDA results are summarized in <xref ref-type="table" rid="pone-0078921-t002">Table 2</xref>.</p>
+				<fig id="pone-0078921-g007" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078921.g007</object-id><label>Figure 7</label>
+					<caption>
+						<title>LDA for classification of control and asthma groups.</title><p>A. Scree plot, B. 3D Scatter plot.</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078921.g007"/>
+				</fig>
+				<table-wrap id="pone-0078921-t002" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078921.t002</object-id><label>Table 2</label>
+					<caption>
+						<title>Confusion matrix for LDA of reference, mild, moderate, treated severe and untreated severe age groups.</title></caption>
+					<table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1"/>
+								<th rowspan="1" colspan="1"><bold>Reference</bold> </th>
+								<th rowspan="1" colspan="1"><bold>Mild</bold> </th>
+								<th rowspan="1" colspan="1"><bold>Moderate</bold> </th>
+								<th rowspan="1" colspan="1"><bold>Treated Severe</bold> </th>
+								<th rowspan="1" colspan="1"><bold>Untreated Severe</bold> </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Reference</bold> </td>
+								<td rowspan="1" colspan="1"><bold>79</bold> </td>
+								<td rowspan="1" colspan="1">19 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Mild</bold> </td>
+								<td rowspan="1" colspan="1">2 </td>
+								<td rowspan="1" colspan="1"><bold>77</bold> </td>
+								<td rowspan="1" colspan="1">3 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Moderate</bold> </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">10 </td>
+								<td rowspan="1" colspan="1"><bold>70</bold> </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Treated Severe</bold> </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">6 </td>
+								<td rowspan="1" colspan="1"><bold>64</bold> </td>
+								<td rowspan="1" colspan="1">0 </td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Untreated Severe</bold> </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">5 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1"><bold>61</bold> </td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn>
+							<p>(Diagonal elements are true positive predictions and Ex-diagonal elements are false positive predictions)</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+				<p>LOOCV was carried out to evaluate the results obtained by PC-LDA. Cross-validation also called as rotation estimation, is a technique for assessing performance of a predictive model with a hypothetical validation set when an explicit validation set is not available. As the name suggests leave-one-out (LOO) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data and results are averaged over the rounds. The performance is estimated as the number of correct predictions over all the samples used in the data set. In the reference group, 79/98 spectra were correctly classified, while remaining (19.4%) misclassified with mild asthma group. In the mild asthma group, 77 out of 82 spectra were correctly classified as mild, while 2 and 3 spectra were misclassified as reference and moderate asthma, respectively. In the moderate asthma group, 70 spectra were correctly classified, and 10 spectra misclassified as mild asthma. In the treated severe group, 63 spectra were classified as treated severe, and 7 spectra misclassified as moderate asthma.  In the untreated group, 61/66 spectra were correctly classified while 5 misclassified as mild asthma.  The LOOCV results are summarized in <xref ref-type="table" rid="pone-0078921-t003">Table 3</xref>.</p>
+				<table-wrap id="pone-0078921-t003" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078921.t003</object-id><label>Table 3</label>
+					<caption>
+						<title>Confusion matrix for Leave-one-out cross validation of reference, mild, moderate, treated severe and untreated severe age groups.</title></caption>
+					<table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1"/>
+								<th rowspan="1" colspan="1"><bold>Reference</bold> </th>
+								<th rowspan="1" colspan="1"><bold>Mild</bold> </th>
+								<th rowspan="1" colspan="1"><bold>Moderate</bold> </th>
+								<th rowspan="1" colspan="1"><bold>Treated Severe</bold> </th>
+								<th rowspan="1" colspan="1"><bold>Untreated Severe</bold> </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Reference</bold> </td>
+								<td rowspan="1" colspan="1"><bold>79</bold> </td>
+								<td rowspan="1" colspan="1">19 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Mild</bold> </td>
+								<td rowspan="1" colspan="1">2 </td>
+								<td rowspan="1" colspan="1"><bold>77</bold> </td>
+								<td rowspan="1" colspan="1">3 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Moderate</bold> </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">10 </td>
+								<td rowspan="1" colspan="1"><bold>70</bold> </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Treated Severe</bold> </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">7 </td>
+								<td rowspan="1" colspan="1"><bold>63</bold> </td>
+								<td rowspan="1" colspan="1">0 </td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1"><bold>Untreated Severe</bold> </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">5 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1">0 </td>
+								<td rowspan="1" colspan="1"><bold>61</bold> </td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn>
+							<p>(Diagonal elements are true positive predictions and Ex-diagonal elements are false positive predictions)  </p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+				<p>Misclassifications of reference with mild asthma group and vice versa could be explained on the basis of less number of biochemical and immunological changes in the serum of mild group, the resemblance evident in the form of misclassifications across the two groups. In the mild group, some misclassifications were also observed with moderate asthma group and most misclassifications of moderate group were with mild group. This could be due to variations in cytokine and chemokine levels in blood, as very little is known about the dynamics of circulating cytokines, including degradation, regulation and half life time. In the treated severe group, most misclassifications were observed with the moderate group. This could possibly be due to reduction in the severity of asthma which had been brought about by the administered pharmacological treatment prior to sample collection. Misclassifications of the untreated severe group were observed only with mild group. These findings are also corroborated by estimation of serum YKL-40 level, where these levels in asthma group (N=44) were found to be significantly elevated with respect to controls, irrespective of the conditions of asthma. However, as the recorded Raman spectra are representative of the entire biochemical composition of the sample, no specific signals related to YKL-40 were observed to establish any correlation. </p>
+				<p>Also, no misclassifications of treated severe with untreated severe groups were observed. A statistically insignificant difference between YKL-40 protein levels of treated severe group and reference group was also observed (<xref ref-type="table" rid="pone-0078921-t001">Table 1</xref> and <xref ref-type="fig" rid="pone-0078921-g002">Figure 2</xref>). This may indicate the role of the administered treatment in alleviating the asthmatic symptoms which were simultaneously reflected as changes in serum and were also detected by Raman spectroscopy. This finding has important implications in future, especially in the context of predicting response to treatment and prognosis of the disease. </p>
+			</sec>
+		</sec>
+		<sec id="s4" sec-type="conclusions">
+			<title>Conclusions</title>
+			<p>The present study was carried out to explore the feasibility of detecting asthma by RS of sera.  Preliminary findings indicated the possibility of classifying reference and asthma conditions distinctly, as well as specific classifications based on the state of severity of the asthmatic grades. Significant elevation in serum YKL-40 levels in asthmatic conditions was also observed. Differences between the groups could also be traced in the spectra of different groups. Spectral comparisons indicate changes in protein structure, increased DNA and possible presence of molecules like histamine, prostaglandins, leukotrienes and glycosaminoglycans (GAGs). These molecules are known to play a role in the inflammatory response, and increased secretion and deposition of total GAGs are seen during asthma. Treated and untreated severe groups were classified distinctly, thus indicating that treatment related changes may also be detected using RS. The limitations of this study were small sample size which comprised of only North Indian asthma patients. As asthma is a heterogenous disease reflecting several phenotypes with varied inflammatory patterns, more studies are warranted on larger sample size by including subjects from different regions of same ethnic group. Treatment related changes observed in this study will also have to be confirmed on more number of subjects. Further, subjects with other pulmonary disorders like, chronic obstructive pulmonary disorder, cystic fibrosis, sarcoidosis, tuberculosis and bronchiectasis would be included to determine disease specificity of the stated method. Prospectively, validating the results of this pilot study using additional blinded studies on a multi-dimensional and large scale may enable routine clinical applications of this methodology for quick, economic and ‘distance’ diagnosis and prognosis of asthma.</p>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<p>The authors acknowledge the assistance of Ms Kalaibhani, Research Officer, Department of Biostatistics, All India Institute of Medical Sciences for performing the statistical analyses.  </p>
+		</ack>
+		<ref-list>
+			<title>References</title>
+			<ref id="B1">
+				<label>1</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shifren</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Witt</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Christie</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Castro</surname><given-names>M</given-names></name> (<year>2012</year>) <article-title>Mechanisms of remodeling in asthmatic airways</article-title>. <source>J Allergy</source> <fpage>2012</fpage>:<comment>316049</comment> </mixed-citation>
+			</ref>
+			<ref id="B2">
+				<label>2</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Barrios</surname><given-names>RJ</given-names></name>, <name name-style="western"><surname>Kheradmand</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Batts</surname><given-names>LK</given-names></name>, <name name-style="western"><surname>Corry</surname><given-names>DB</given-names></name> (<year>2006</year>) <article-title>Asthma: Pathology and Pathophysiology</article-title>. <source>Arch Pathol Lab Med</source> <volume>130</volume>: <fpage>447</fpage>–<lpage>451</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16594736" xlink:type="simple">16594736</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B3">
+				<label>3</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bloemen</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Verstraelen</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Van den Heuvel</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Witters</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Nelissen</surname><given-names>I</given-names></name> <etal>et al.</etal> (<year>2007</year>) <article-title>The allergic cascade: review of the most important molecules in the asthmatic lung</article-title>. <source>Immunol Lett</source> <volume>113</volume>(<issue-id>1</issue-id>): <fpage>6</fpage>–<lpage>18</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.imlet.2007.07.010" xlink:type="simple">10.1016/j.imlet.2007.07.010</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17765979" xlink:type="simple">17765979</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B4">
+				<label>4</label>
+				<mixed-citation publication-type="other" xlink:type="simple"><collab xlink:type="simple">World Health Organization</collab> (<year>2007</year>) <article-title>Global surveillance, prevention and control of chronic respiratory diseases: a comprehensive approach</article-title>. <publisher-loc>Geneva</publisher-loc>: <publisher-name>WHO Press</publisher-name>. p. <fpage>155</fpage>.</mixed-citation>
+			</ref>
+			<ref id="B5">
+				<label>5</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><collab xlink:type="simple">World Health Organization</collab> (<year>2008</year>) <source>The global burden of disease: 2004 update</source>. <publisher-loc>Geneva</publisher-loc>: <publisher-name>WHO Press</publisher-name>. p. <fpage>146</fpage>.</mixed-citation>
+			</ref>
+			<ref id="B6">
+				<label>6</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Anderson</surname><given-names>GP</given-names></name> (<year>2008</year>) <article-title>Endotyping asthma: new insights into key pathogenic mechanisms in a complex, heterogeneous disease</article-title>. <source>Lancet</source> <volume>372</volume>(<issue-id>9643</issue-id>): <fpage>1107</fpage>–<lpage>1119</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0140-6736(08)61452-X" xlink:type="simple">10.1016/S0140-6736(08)61452-X</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18805339" xlink:type="simple">18805339</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B7">
+				<label>7</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Montuschi</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Barnes</surname><given-names>PJ</given-names></name> (<year>2011</year>) <article-title>New perspectives in pharmacological treatment of mild persistent asthma</article-title>. <source>Drug Discov Today</source> <volume>16</volume>: <fpage>1084</fpage>–<lpage>1091</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.drudis.2011.09.005" xlink:type="simple">10.1016/j.drudis.2011.09.005</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21930234" xlink:type="simple">21930234</ext-link>. </mixed-citation>
+			</ref>
+			<ref id="B8">
+				<label>8</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Montuschi</surname><given-names>P</given-names></name> (<year>2010</year>) <article-title>Toward a Personalized Pharmacotherapy of Respiratory Diseases</article-title>. <source>Front Pharmacol</source> <volume>1</volume>: <fpage>131</fpage>.</mixed-citation>
+			</ref>
+			<ref id="B9">
+				<label>9</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>British</surname></name> <source>Thoracic Society; Scottish Intercollegiate Guidelines</source> <publisher-name>Network</publisher-name> (<year>2003</year>) <comment>British guideline on the management of asthma. Thorax 58: Suppl 1: i1–94</comment></mixed-citation>
+			</ref>
+			<ref id="B10">
+				<label>10</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><collab xlink:type="simple">National Institutes of Health</collab> (<year>1997</year>) <source>Guidelines for the diagnosis and management of asthma. National Asthma Education and Prevention Program Expert Panel Report 2</source>. <publisher-loc>Washington, DC</publisher-loc>: <publisher-name>U.S. Government Printing Office</publisher-name>. <comment>NIH Publication 97–4051</comment></mixed-citation>
+			</ref>
+			<ref id="B11">
+				<label>11</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Initiative</surname><given-names>Global</given-names></name><collab xlink:type="simple">for Asthma</collab> (<year>1995</year>) <source>Global strategy for asthma management and prevention. NHLBI/WHO Workshop Report</source>. <publisher-loc>Washington, DC</publisher-loc>: <publisher-name>U.S. Government Printing Office</publisher-name>. <comment>NIH Publication 02-3659</comment></mixed-citation>
+			</ref>
+			<ref id="B12">
+				<label>12</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Enright</surname><given-names>PL</given-names></name>, <name name-style="western"><surname>Lebowitz</surname><given-names>MD</given-names></name>, <name name-style="western"><surname>Cockroft</surname><given-names>DW</given-names></name> (<year>1994</year>) <article-title>Physiologic measures: pulmonary function tests</article-title>. <source>Am J Respir Crit Care Med</source> <volume>149</volume>: <fpage>S9</fpage>–<lpage>S20</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1164/ajrccm/149.2_Pt_2.S9" xlink:type="simple">10.1164/ajrccm/149.2_Pt_2.S9</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/8298772" xlink:type="simple">8298772</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B13">
+				<label>13</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hunter</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Brightling</surname><given-names>CE</given-names></name>, <name name-style="western"><surname>Woltmann</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Wardlaw</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Pavord</surname><given-names>ID</given-names></name> (<year>2002</year>) <article-title>A comparison of the validity of different diagnostic tests in adults with asthma</article-title>. <source>Chest</source> <volume>121</volume>(<issue-id>4</issue-id>): <fpage>1051</fpage>-<lpage>1057</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1378/chest.121.4.1051" xlink:type="simple">10.1378/chest.121.4.1051</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11948032" xlink:type="simple">11948032</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B14">
+				<label>14</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Good</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Thongboonkerd</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Novak</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Bascands</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Schanstra</surname><given-names>JP</given-names></name> <etal>et al.</etal> (<year>2007</year>) <article-title>Body fluid proteomics for biomarker discovery: lessons from the past hold the key to success in the future</article-title>. <source>J Proteome Res</source> <volume>6</volume>(<issue-id>12</issue-id>): <fpage>4549</fpage>–<lpage>4555</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/pr070529w" xlink:type="simple">10.1021/pr070529w</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17970587" xlink:type="simple">17970587</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B15">
+				<label>15</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tang</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Fang</surname><given-names>Z</given-names></name>, <name name-style="western"><surname>Sun</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Shi</surname><given-names>Z</given-names></name> <etal>et al.</etal> (<year>2010</year>) <article-title>YKL-40 in asthmatic patients, and its correlations with exacerbation, eosinophils and immunoglobulin E</article-title>. <source>Eur Respir J</source> <volume>35</volume>: <fpage>757</fpage>–<lpage>760</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1183/09031936.00034409" xlink:type="simple">10.1183/09031936.00034409</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20356987" xlink:type="simple">20356987</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B16">
+				<label>16</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Specjalski</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Jassem</surname><given-names>E</given-names></name> (<year>2011</year>) <article-title>YKL-40 Protein is a Marker of Asthma</article-title>. <source>J Asthma</source> <volume>48</volume> (<issue-id>8</issue-id>): <fpage>767</fpage>-<lpage>772</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21899483" xlink:type="simple">21899483</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B17">
+				<label>17</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chupp</surname><given-names>GL</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>CG</given-names></name>, <name name-style="western"><surname>Jarjour</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Shim</surname><given-names>YM</given-names></name>, <name name-style="western"><surname>Holm</surname><given-names>CT</given-names></name> <etal>et al.</etal> (<year>2007</year>) <article-title>A chitinase-like protein in the lung and circulation of patients with severe asthma</article-title>. <source>N Engl J Med</source> <volume>357</volume>: <fpage>2016</fpage>–<lpage>2027</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1056/NEJMoa073600" xlink:type="simple">10.1056/NEJMoa073600</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18003958" xlink:type="simple">18003958</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B18">
+				<label>18</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kalaivani</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Masilamani</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Sivaji</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Elangovan</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Selvaraj</surname><given-names>V</given-names></name> <etal>et al.</etal> (<year>2008</year>) <article-title>Fluorescence spectra of blood components for breast cancer diagnosis</article-title>. <source>Photomed Laser Surg</source> <volume>26</volume>: <fpage>251</fpage>–<lpage>256</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18588440" xlink:type="simple">18588440</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B19">
+				<label>19</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Madhuri</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Vengadesan</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Aruna</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Koteeswaran</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Venkatesan</surname><given-names>P</given-names></name> <etal>et al.</etal> (<year>2003</year>) <article-title>Native fluorescence spectroscopy of blood plasma in the characterization of oral malignancy</article-title>. <source>Photochem Photobiol</source> <volume>78</volume>(<issue-id>2</issue-id>): <fpage>197</fpage>-<lpage>204</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1562/0031-8655(2003)078" xlink:type="simple">10.1562/0031-8655(2003)078</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12945589" xlink:type="simple">12945589</ext-link>. </mixed-citation>
+			</ref>
+			<ref id="B20">
+				<label>20</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Burns</surname><given-names>DH</given-names></name>, <name name-style="western"><surname>Rosendahl</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Bandilla</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Maes</surname><given-names>OC</given-names></name>, <name name-style="western"><surname>Chertkow</surname><given-names>HM</given-names></name> <etal>et al.</etal> (<year>2009</year>) <article-title>Near-Infrared Spectroscopy of Blood Plasma for Diagnosis of Sporadic</article-title>. <source>J Alzheimers Dis</source> <volume>17</volume>(<issue-id>2</issue-id>): <fpage>391</fpage>-<lpage>397</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B21">
+				<label>21</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gajjar</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Trevisan</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Owens</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Keating</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Wood</surname><given-names>NJ</given-names></name> <etal>et al.</etal> (<year>2013</year>) <article-title>Fourier-transform infrared spectroscopy coupled with a classification machine for the analysis of blood plasma or serum: a novel diagnostic approach for ovarian cancer</article-title>. <source>Analyst</source> <volume>138</volume>(<issue-id>14</issue-id>): <fpage>3917</fpage>-<lpage>3926</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1039/c3an36654e" xlink:type="simple">10.1039/c3an36654e</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/23325355" xlink:type="simple">23325355</ext-link>. </mixed-citation>
+			</ref>
+			<ref id="B22">
+				<label>22</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nahavandi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Nichols</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Hassan</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Gandjbakhche</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kato</surname><given-names>GJ</given-names></name> <etal>et al.</etal> (<year>2009</year>) <article-title>Near-infrared spectra absorbance of blood from sickle cell patients and normal individuals</article-title>.   <source>Hematology</source> <volume>14</volume>(<issue-id>1</issue-id>): <fpage>46</fpage>-<lpage>48</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19154664" xlink:type="simple">19154664</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B23">
+				<label>23</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Erukhimovitch</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Talyshinsky</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Souprun</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Huleihel</surname><given-names>M</given-names></name> (<year>2006</year>) <article-title>FTIR spectroscopy examination of leukemia patients plasma</article-title>. <source>Vib Spectrosc</source> <volume>40</volume>(<issue-id>1</issue-id>): <fpage>40</fpage>-<lpage>46</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.vibspec.2005.06.004" xlink:type="simple">10.1016/j.vibspec.2005.06.004</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B24">
+				<label>24</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Backhaus</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Mueller</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Formanski</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Szlama</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Meerpohl</surname><given-names>HG</given-names></name> <etal>et al.</etal> (<year>2010</year>) <article-title>Diagnosis of breast cancer with infrared spectroscopy from serum samples</article-title>. <source>Vib Spectrosc</source> <volume>52</volume> (<issue-id>2</issue-id>): <fpage>173</fpage>-<lpage>177</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.vibspec.2010.01.013" xlink:type="simple">10.1016/j.vibspec.2010.01.013</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B25">
+				<label>25</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ahmed</surname><given-names>SSSJ</given-names></name>, <name name-style="western"><surname>Santosh</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Kumar</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Christlet</surname><given-names>THT</given-names></name> (<year>2010</year>) <article-title>Neural network algorithm for the early detection of Parkinson’s disease from blood plasma by FTIR micro-spectroscopy</article-title>. <source>Vib Spectrosc</source> <volume>53</volume>: <fpage>181</fpage>–<lpage>188</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.vibspec.2010.01.019" xlink:type="simple">10.1016/j.vibspec.2010.01.019</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B26">
+				<label>26</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Puppels</surname><given-names>GJ</given-names></name>, <name name-style="western"><surname>de Mul</surname><given-names>FFM</given-names></name>, <name name-style="western"><surname>Otto</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Greve</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Robert-Nicoud</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Arndt-Jovin</surname><given-names>DJ</given-names></name> <etal>et al.</etal> (<year>1990</year>) <article-title>Studying single living cells and chromosomes by confocal Raman microspectroscopy</article-title>. <source>Nature</source> <volume>347</volume>: <fpage>301</fpage>-<lpage>303</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/347301a0" xlink:type="simple">10.1038/347301a0</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/2205805" xlink:type="simple">2205805</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B27">
+				<label>27</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shim</surname><given-names>MG</given-names></name>, <name name-style="western"><surname>Song</surname><given-names>LMWM</given-names></name>, <name name-style="western"><surname>Marcon</surname><given-names>NE</given-names></name>, <name name-style="western"><surname>Wilson</surname><given-names>BC</given-names></name> (<year>2000</year>) <article-title>In vivo near-infrared Raman spectroscopy: Demonstration of feasibility during clinical gastrointestinal endoscopy</article-title>. <source>Photochem Photobiol</source> <volume>72</volume>: <fpage>146</fpage>-<lpage>150</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1562/0031-8655(2000)0720146IVNIRS2.0.CO2" xlink:type="simple">10.1562/0031-8655(2000)0720146IVNIRS2.0.CO2</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/10911740" xlink:type="simple">10911740</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B28">
+				<label>28</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Buschman</surname><given-names>HP</given-names></name>, <name name-style="western"><surname>Deinum</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Motz</surname><given-names>JT</given-names></name>, <name name-style="western"><surname>Fitzmaurice</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Kramer</surname><given-names>JR</given-names></name> <etal>et al.</etal> (<year>2001</year>) <article-title>Raman microspectroscopy of human coronary atherosclerosis: Biochemical assessment of cellular and extracellular morphologic structures <italic>in</italic> <italic>situ</italic></article-title>. <source>Cardiovasc Pathol</source> <volume>10</volume>(<issue-id>2</issue-id>): <fpage>69</fpage>–<lpage>82</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11425600" xlink:type="simple">11425600</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B29">
+				<label>29</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gonchukov</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Sukhinina</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Bakhmutov</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Minaeva</surname><given-names>S</given-names></name> (<year>2012</year>) <article-title>Raman spectroscopy of saliva as a perspective method for periodontitis diagnostics</article-title>. <source>Laser. Phys Lett</source> <volume>9</volume>: <fpage>73</fpage>-<lpage>77</lpage>. </mixed-citation>
+			</ref>
+			<ref id="B30">
+				<label>30</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Li</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Yang</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Yu</surname><given-names>T</given-names></name> (<year>2011</year>) <article-title>Surface-enhanced Raman spectroscopy differences of saliva between lung cancer patients and normal people</article-title>. In <person-group person-group-type="editor"><name name-style="western"><surname>Ramanujam</surname><given-names>N</given-names></name><name name-style="western"><surname>Popp</surname><given-names>J</given-names></name></person-group>. <source>Clinical and Biomedical Spectroscopy and Imaging II, Vol. 8087</source>. <source>Proceedings of SPIE-OSA Biomedical Optics</source>. <comment>Optical Society of America, paper 808722</comment></mixed-citation>
+			</ref>
+			<ref id="B31">
+				<label>31</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Haka</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Shafer-Peltier</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Fitzmaurice</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Crowe</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Dasari</surname><given-names>RR</given-names></name> <etal>et al.</etal> (<year>2002</year>) <article-title>Identifying Microcalcifications in Benign and Malignant Breast Lesions by Probing Differences in Their Chemical Composition Using</article-title>. <source>Journal of Raman Spectroscopy - Cancer Res</source> <volume>62</volume>: <fpage>5375</fpage>-<lpage>5380</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B32">
+				<label>32</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Buschman</surname><given-names>HP</given-names></name>, <name name-style="western"><surname>Motz</surname><given-names>JT</given-names></name>, <name name-style="western"><surname>Deinum</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Romer</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Fitzmaurice</surname><given-names>M</given-names></name> <etal>et al.</etal> (<year>2001</year>) <article-title>Diagnosis of human coronary atherosclerosis by morphology-based</article-title>. <source>Journal of Raman Spectroscopy - Cardiovasc Pathol</source> <volume>10</volume>: <fpage>59</fpage>-<lpage>68</lpage>. </mixed-citation>
+			</ref>
+			<ref id="B33">
+				<label>33</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Harris</surname><given-names>AT</given-names></name>, <name name-style="western"><surname>Lungari</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Needham</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>SL</given-names></name>, <name name-style="western"><surname>Lones</surname><given-names>MA</given-names></name> <etal>et al.</etal> (<year>2009</year>) <article-title>Potential for Raman spectroscopy to provide cancer screening using a peripheral blood sample</article-title>. <source>Head Neck Oncol</source> <volume>1</volume>: <fpage>34</fpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19761601" xlink:type="simple">19761601</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B34">
+				<label>34</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pichardo-Molina</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Frausto-Reyes</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Barbosa-García</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Huerta-Franco</surname><given-names>R</given-names></name>, <name name-style="western"><surname>González-Trujillo</surname><given-names>JL</given-names></name> <etal>et al.</etal> (<year>2007</year>) <article-title>Raman spectroscopy and multivariate analysis of serum samples from breast cancer patients</article-title>. <source>Lasers Med Sci</source> <volume>22</volume>: <fpage>229</fpage>–<lpage>236</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10103-006-0432-8" xlink:type="simple">10.1007/s10103-006-0432-8</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17297595" xlink:type="simple">17297595</ext-link>. </mixed-citation>
+			</ref>
+			<ref id="B35">
+				<label>35</label>
+				<mixed-citation publication-type="confproc" xlink:type="simple"><name name-style="western"><surname>González-Solís</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Rodríguez-López</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Martínez-Espinosa</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Frausto-Reyes</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Jave-Suárez</surname><given-names>LF</given-names></name> <etal>et al.</etal> (<year>2010</year>) <article-title>Detection of Cervical Cancer Analyzing Blood Samples with Raman Spectroscopy and Multivariate Analysis</article-title>. <source>AIP Conf. Proc. 1226</source>: <fpage>91</fpage>-<lpage>95</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B36">
+				<label>36</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Bai</surname><given-names>J</given-names></name> (<year>2001</year>) <article-title>Study of serum fluorescence and Raman spectroscopy for diagnosis of cancer</article-title>. <source>Proc SPIE</source> <volume>4432</volume>: <fpage>124</fpage>–<lpage>129</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1117/12.447127" xlink:type="simple">10.1117/12.447127</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B37">
+				<label>37</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Enejder</surname><given-names>AMK</given-names></name>, <name name-style="western"><surname>Koo</surname><given-names>T-W</given-names></name>, <name name-style="western"><surname>Oh</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Hunter</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Sasic</surname><given-names>S</given-names></name> <etal>et al.</etal> (<year>2002</year>) <article-title>Blood analysis by Raman spectroscopy</article-title>. <source>Opt Lett</source> <volume>27</volume>: <fpage>2004</fpage>-<lpage>2006</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1364/OL.27.002004" xlink:type="simple">10.1364/OL.27.002004</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18033426" xlink:type="simple">18033426</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B38">
+				<label>38</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Enejder</surname><given-names>AMK</given-names></name>, <name name-style="western"><surname>Scecina</surname><given-names>TG</given-names></name>, <name name-style="western"><surname>Oh</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Hunter</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Shih</surname><given-names>W-C</given-names></name> <etal>et al.</etal> (<year>2005</year>) <article-title>Raman spectroscopy for noninvasive glucose measurements</article-title>. <source>J Biomed Opt</source> <volume>10</volume>: <fpage>031114-1-031114-9</fpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16229639" xlink:type="simple">16229639</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B39">
+				<label>39</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yuen</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Zheng</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Huang</surname><given-names>Z</given-names></name> (<year>2010</year>) <article-title>Low-level detection of anti-cancer drug in blood plasma using microwave-treated gold-polystyrene beads as surface-enhanced Raman scattering substrates</article-title>. <source>Biosens Bioelectron</source> <volume>26</volume>(<issue-id>2</issue-id>): <fpage>580</fpage>-<lpage>584</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.bios.2010.07.030" xlink:type="simple">10.1016/j.bios.2010.07.030</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20709521" xlink:type="simple">20709521</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B40">
+				<label>40</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schmitt</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Popp</surname><given-names>J</given-names></name> (<year>2006</year>) <article-title>Raman spectroscopy at the beginning of the twenty-first century</article-title>. <source>J Raman Spectrosc</source> <volume>37</volume>: <fpage>20</fpage>–<lpage>28</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/jrs.1486" xlink:type="simple">10.1002/jrs.1486</ext-link>. </mixed-citation>
+			</ref>
+			<ref id="B41">
+				<label>41</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pappas</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>BW</given-names></name>, <name name-style="western"><surname>Winefordner</surname><given-names>JD</given-names></name> (<year>2000</year>) <article-title>Raman spectroscopy in bioanalysis</article-title>. <source>Talanta</source> <volume>51</volume>: <fpage>131</fpage>-<lpage>144</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0039-9140(99)00254-4" xlink:type="simple">10.1016/S0039-9140(99)00254-4</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18967845" xlink:type="simple">18967845</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B42">
+				<label>42</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Boyd</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Bertino</surname><given-names>MF</given-names></name>, <name name-style="western"><surname>Seashols</surname><given-names>SJ</given-names></name> (<year>2011</year>) <article-title>Raman spectroscopy of blood samples for forensic applications</article-title>. <source>Forensic Sci Int</source> <volume>208</volume>: <fpage>124</fpage>-<lpage>128</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.forsciint.2010.11.012" xlink:type="simple">10.1016/j.forsciint.2010.11.012</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21208757" xlink:type="simple">21208757</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B43">
+				<label>43</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sikirzhytski</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Virkler</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Lednev</surname><given-names>IK</given-names></name> (<year>2010</year>) <article-title>Discriminant Analysis of Raman Spectra for Body Fluid Identification for Forensic Purposes</article-title>. <source>Sensors (Basel)</source> <volume>10</volume>(<issue-id>4</issue-id>): <fpage>2869</fpage>–<lpage>2884</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3390/s100402869" xlink:type="simple">10.3390/s100402869</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22319277" xlink:type="simple">22319277</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B44">
+				<label>44</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Virkler</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Lednev</surname><given-names>IK</given-names></name> (<year>2008</year>) <article-title>Raman spectroscopy offers great potential for the nondestructive confirmatory identification of body fluids</article-title>. <source>Forensic Sci Int</source> <volume>181</volume>: <fpage>e1</fpage>–<lpage>e5</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.forsciint.2008.09.003" xlink:type="simple">10.1016/j.forsciint.2008.09.003</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18818034" xlink:type="simple">18818034</ext-link>. </mixed-citation>
+			</ref>
+			<ref id="B45">
+				<label>45</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Virkler</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Lednev</surname><given-names>IK</given-names></name> (<year>2009</year>) <article-title>Analysis of body fluids for forensic purposes: from laboratory testing to non-destructive rapid confirmatory identification at a crime scene</article-title>. <source>Forensic Sci Int</source> <volume>188</volume>: <fpage>1</fpage>–<lpage>17</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.forsciint.2009.02.006" xlink:type="simple">10.1016/j.forsciint.2009.02.006</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19328638" xlink:type="simple">19328638</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B46">
+				<label>46</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nijssen</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Maquelin</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Caspers</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Schut</surname><given-names>TCB</given-names></name>, <name name-style="western"><surname>Neumann</surname><given-names>MHA</given-names></name>, <etal>et al.</etal> (<year>2007</year>) <article-title>Discriminating basal cell carcinoma from perilesional skin using high wave-number Raman spectroscopy</article-title>. <source>J Biomed Opt</source> <volume>12</volume>:<fpage>034004</fpage>-<lpage>1</lpage> <comment>- 034004-7</comment> </mixed-citation>
+			</ref>
+			<ref id="B47">
+				<label>47</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Koljenović</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Choo-Smith</surname><given-names>LP</given-names></name>, <name name-style="western"><surname>Schut</surname><given-names>TCB</given-names></name>, <name name-style="western"><surname>Kros</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Berge</surname><given-names>HJ</given-names></name> <etal>et al.</etal> (<year>2002</year>) <article-title>Discriminating vital tumor from necrotic tissue in human glioblastoma tissue samples by Raman spectroscopy</article-title>. <source>Lab Invest</source> <volume>2</volume>: <fpage>1265</fpage>-<lpage>1277</lpage>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12379761" xlink:type="simple">12379761</ext-link>. </mixed-citation>
+			</ref>
+			<ref id="B48">
+				<label>48</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Harvey</surname><given-names>TJ</given-names></name>, <name name-style="western"><surname>Gazi</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Henderson</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Snook</surname><given-names>RD</given-names></name>, <name name-style="western"><surname>Clarke</surname><given-names>NW</given-names></name> <etal>et al.</etal> (<year>2009</year>) <article-title>Influencing the discrimination and classification of prostate cancer cell lines by FTIR micro spectroscopy</article-title>. <source>Analyst</source> <volume>134</volume>: <fpage>1083</fpage>-<lpage>1091</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1039/b903249e" xlink:type="simple">10.1039/b903249e</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19475133" xlink:type="simple">19475133</ext-link>. </mixed-citation>
+			</ref>
+			<ref id="B49">
+				<label>49</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ghanate</surname><given-names>AD</given-names></name>, <name name-style="western"><surname>Kothiwale</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Singh</surname><given-names>SP</given-names></name>, <name name-style="western"><surname>Bertrand</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Krishna</surname><given-names>CM</given-names></name> (<year>2011</year>) <article-title>Comparative evaluation of spectroscopic models using different multivariate statistical tools in a multicancer scenario</article-title>. <source>J Biomed Opt</source> <volume>16</volume>: <fpage>025003</fpage>-<lpage>1</lpage> <comment>- 025003-9</comment> </mixed-citation>
+			</ref>
+			<ref id="B50">
+				<label>50</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Parker</surname><given-names>FS</given-names></name> (<year>1983</year>) <source>Applications of Infrared, Raman and Resonance Raman spectroscopy in Biochemistry</source>. <publisher-loc>New York and London</publisher-loc>: <publisher-name>Plenum Press</publisher-name>. p. <fpage>550</fpage>.</mixed-citation>
+			</ref>
+			<ref id="B51">
+				<label>51</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Papakonstantinou</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Klagas</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Karakiulakis</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Hostettler</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Teck S’ng</surname><given-names>C</given-names></name> <etal>et al.</etal> (<year>2012</year>) <article-title>Steroids and β2-Agonists Regulate Hyaluronan Metabolism in Asthmatic Airway Smooth Muscle Cells</article-title>. <source>Am J Respir Cell Mol Biol</source> <volume>47</volume>:<fpage>759</fpage>-<lpage>767</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B52">
+				<label>52</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Priftis</surname><given-names>KN</given-names></name>, <name name-style="western"><surname>Loukopoulou</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Magkou</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Sitaras</surname><given-names>NM</given-names></name> (<year>2006</year>) <article-title>Increased glycosaminoglycans in the urine of asthmatic children on inhaled corticosteroids</article-title>. <source>Pediatr Allergy Immunol</source> <volume>17</volume>: <fpage>194</fpage>–<lpage>198</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1399-3038.2006.00387.x" xlink:type="simple">10.1111/j.1399-3038.2006.00387.x</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16672006" xlink:type="simple">16672006</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B53">
+				<label>53</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Venkatesan</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Siddiqui</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Jo</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Martin</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>Ludwig</surname><given-names>MS</given-names></name> (<year>2012</year>) <article-title>Allergen-induced airway remodeling in brown Norway rats: structural and metabolic changes in glycosaminoglycans</article-title>. <source>Am J Respir Cell Mol Biol</source> <volume>46</volume>: <fpage>96</fpage>–<lpage>105</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1165/rcmb.2011-0014OC" xlink:type="simple">10.1165/rcmb.2011-0014OC</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21852687" xlink:type="simple">21852687</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B54">
+				<label>54</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cohn</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Elias</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Chupp</surname><given-names>GL</given-names></name> (<year>2004</year>) <article-title>Asthma: mechanisms of disease persistence and progression</article-title>. <source>Annu Rev Immunol</source> <volume>22</volume>: <fpage>789</fpage>–<lpage>815</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev.immunol.22.012703.104716" xlink:type="simple">10.1146/annurev.immunol.22.012703.104716</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15032597" xlink:type="simple">15032597</ext-link>.</mixed-citation>
+			</ref>
+		</ref-list>
+	</back>
+</article>

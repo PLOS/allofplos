@@ -1,0 +1,2177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="publisher">pmed</journal-id><journal-id journal-id-type="nlm-ta">PLoS Med</journal-id><journal-id journal-id-type="pmc">plosmed</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Medicine</journal-title></journal-title-group><issn pub-type="ppub">1549-1277</issn><issn pub-type="epub">1549-1676</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="doi">10.1371/journal.pmed.0020171</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Nutrition</subject>
+        </subj-group>
+        <subj-group subj-group-type="System Taxonomy">
+          <subject>Nutrition and Metabolism</subject>
+          <subject>Obesity</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Intention to Lose Weight, Weight Changes, and 18-y Mortality in Overweight Individuals without Co-Morbidities</article-title><alt-title alt-title-type="running-head">Weight Loss and Mortality</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Sørensen</surname>
+            <given-names>Thorkild I.A</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Rissanen</surname>
+            <given-names>Aila</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Korkeila</surname>
+            <given-names>Maarit</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kaprio</surname>
+            <given-names>Jaakko</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="n2">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label>
+				
+				<addr-line>Danish Epidemiology Science Centre, Institute of Preventive Medicine, Copenhagen University Hospital, Copenhagen, Denmark</addr-line>
+				
+			</aff><aff id="aff2"><label>2</label>
+				
+				<addr-line>Obesity Research Unit, Helsinki University Central Hospital, Helsinki, Finland</addr-line>
+				
+			</aff><aff id="aff3"><label>3</label>
+				
+				<addr-line>Department of Public Health, University of Helsinki, Finland</addr-line>
+				
+			</aff><aff id="aff4"><label>4</label>
+				
+				<addr-line>Department of Mental Health, National Public Health Institute, Helsinki, Finland</addr-line>
+				
+			</aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ludwig</surname>
+            <given-names>David</given-names>
+          </name>
+          <role>Academic Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Children's Hospital Boston, 
+				
+				
+			United States of America</aff><author-notes>
+        <fn fn-type="con" id="n4">
+          <p>TIAS, AR, and JK designed the study. JK analyzed the data and enrolled participants. TIAS, AR, MK, and JK contributed to writing the paper.</p>
+        </fn>
+        <corresp id="n2">*To whom correspondence should be addressed. E-mail: <email xlink:type="simple">jaakko.kaprio@helsinki.fi</email></corresp>
+      <fn fn-type="conflict">
+        <p> TIAS has been a member of the working group that prepared the governmental national action plan against the obesity epidemic. TIAS is currently president of the Danish Association for the Study of Obesity. TIAS has received research grants from the European Commission to conduct research in the aetiology, development, and treatment of obesity. TIAS has a contract with the research company Nestec, owned by Nestlé, to conduct metabolomic analysis aiming at identifying targets for obesity prevention and treatment. TIAS was recently included in the scientific advisory board of the local national branch of the drug company Sanofi-Aventis, which plans to market the new anti-obesity drug rimonabant. The other authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="ppub">
+        <month>6</month>
+        <year>2005</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>28</day>
+        <month>6</month>
+        <year>2005</year>
+      </pub-date><volume>2</volume><issue>6</issue><elocation-id>e171</elocation-id><history>
+        <date date-type="received">
+          <day>21</day>
+          <month>4</month>
+          <year>2004</year>
+        </date>
+        <date date-type="accepted">
+          <day>25</day>
+          <month>4</month>
+          <year>2005</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2005</copyright-year><copyright-holder>Sørensen et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><related-article page="e181" related-article-type="companion" vol="2" xlink:href="info:doi/10.1371/journal.pmed.0020181" xlink:title="perspective" xlink:type="simple">
+				<article-title>Weight Loss and Mortality: What Does the Evidence Show?</article-title>
+			</related-article><related-article page="e200" related-article-type="companion" vol="2" xlink:href="info:doi/10.1371/journal.pmed.0020200" xlink:title="synopsis" xlink:type="simple">
+				<article-title>Weight Loss and Mortality</article-title>
+			</related-article><abstract>
+        <sec id="st1">
+          <title>Background</title>
+          <p>Weight loss in the obese improves risk factors for cardiovascular diseases and diabetes. However, several studies have shown inconsistent long-term effects of weight loss on mortality. We investigated the influence on mortality of intention to lose weight and subsequent weight changes among overweight individuals without known co-morbidities.</p>
+        </sec>
+        <sec id="st2">
+          <title>Methods and Findings</title>
+          <p>In 1975, a cohort of individuals reported height, weight, and current attempts (defined as “intention”) to lose weight, and in 1981, they reported current weight. Mortality of the 2,957 participants with body mass index ≥ 25 kg/m<sup>2</sup> in 1975 and without pre-existing or current diseases was followed from 1982 through 1999, and 268 participants died. The association of intention to lose weight in 1975 and actual weight change until 1981 with mortality was analysed while controlling for behavioural and psychosocial risk factors and hypertension as possible confounders. Compared with the group not intending to lose and able to maintain stable weight, the hazard ratios (with 95% confidence intervals) in the group intending to lose weight were 0.84 (0.49–1.48) for those with stable weight, 1.86 (1.22–2.87) for those losing weight, and 0.93 (0.55–1.56) for those gaining weight. In the group not intending to lose weight, hazard ratios were 1.17 (0.82–1.66) for those who did lose weight, and 1.57 (1.08–2.30) for those gaining weight.</p>
+        </sec>
+        <sec id="st3">
+          <title>Conclusion</title>
+          <p>Deliberate weight loss in overweight individuals without known co-morbidities may be hazardous in the long term. The health effects of weight loss are complex, possibly composed of oppositely acting processes, and need more research.</p>
+        </sec>
+      </abstract><abstract abstract-type="toc">
+        <p>Deliberate weight loss in overweight individuals without known illness is not obviously beneficial, and may be hazardous in the long term.</p>
+      </abstract><abstract abstract-type="patient">
+        <title>Patient Summary</title>
+        <sec id="sb1a">
+          <title>Background</title>
+          <p>Although it seems obvious that when overweight people lose weight their health should improve, previous work has suggested that the relationship between weight loss and health may not be as simple as that. For example, it is difficult to control for all other possible things that might cause weight loss, such as other medical conditions that could then increase mortality.</p>
+        </sec>
+        <sec id="sb1b">
+          <title>What Did the Researchers Do?</title>
+          <p>They started with a population of 19,993 Finnish twins who were asked in 1975 about their weight and whether they intended to lose weight. In 1981, they were asked again about their weight, and then followed for up to 18 years to see if any died. The researchers took out of the analyses all the people who had illnesses, or those who had data missing. They analysed mortality against intention to lose weight in 1975 and actual change in weight. They found that those people who intended to lose weight and who actually did so had a slightly higher mortality than those who gained weight or whose weight remained the same. In people who did not intend to lose weight, gaining weight was associated with a slightly higher mortality.</p>
+        </sec>
+        <sec id="sb1c">
+          <title>What Do These Results Mean?</title>
+          <p>In the people studied here who were otherwise healthy and only moderately overweight, losing weight seemed to be associated with higher mortality. What makes these results quite difficult to interpret is that the actual number of people who died was not very high, but nonetheless intentional weight loss did not improve mortality. One reason for this result may be that when people diet to lose weight, they lose fat-free tissue as well as fat.</p>
+          <p>In people who have medical conditions related to obesity, losing weight is obviously desirable. But overall, preventing people, especially children, from becoming overweight in the first place seems crucial, since this work suggests that once weight is gained losing it again may not be good for health.</p>
+        </sec>
+        <sec id="sb1d">
+          <title>Where Can I Get More Information?</title>
+          <p>The National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) of the National Institutes of Health (NIH) has several pages of information on weight control: <ext-link ext-link-type="uri" xlink:href="http://www.niddk.nih.gov/health/nutrit/nutrit.htm" xlink:type="simple">http://www.niddk.nih.gov/health/nutrit/nutrit.htm</ext-link></p>
+          <p>The International Association for the Study of Obesity has a Web site with information on obesity worldwide: <ext-link ext-link-type="uri" xlink:href="http://www.iotf.org/" xlink:type="simple">http://www.iotf.org/</ext-link></p>
+        </sec>
+      </abstract></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Weight loss in overweight and obese individuals leads to rapid improvement of the cardiovascular risk factor profile and reduced risk of developing type 2 diabetes. These observations have emerged from several studies of the general population [<xref ref-type="bibr" rid="pmed-0020171-b01">1</xref>–<xref ref-type="bibr" rid="pmed-0020171-b05">5</xref>] as well as from planned intervention studies [<xref ref-type="bibr" rid="pmed-0020171-b05">5</xref>–<xref ref-type="bibr" rid="pmed-0020171-b09">9</xref>]. In contrast, weight gain is associated with a worsened cardiovascular risk profile, increased risk of cardiovascular diseases and type 2 diabetes, and greater mortality from cardiovascular diseases and from all causes [<xref ref-type="bibr" rid="pmed-0020171-b05">5</xref>,<xref ref-type="bibr" rid="pmed-0020171-b10">10</xref>–<xref ref-type="bibr" rid="pmed-0020171-b13">13</xref>]. It would therefore be expected that overweight or obese individuals who lose weight would benefit from the effects leading to reduction or elimination of the excess mortality associated with overweight and obesity, which is largely attributable to cardiovascular disease and type 2 diabetes [<xref ref-type="bibr" rid="pmed-0020171-b05">5</xref>]. However, several prospective, long-term population-based studies have shown that weight loss, compared with stable weight in overweight or obese participants, is associated with future excess or unchanged mortality [<xref ref-type="bibr" rid="pmed-0020171-b10">10</xref>–<xref ref-type="bibr" rid="pmed-0020171-b13">13</xref>]. Moreover, cardiovascular diseases remain the main cause of mortality, even in studies that have taken other pertinent risk factors into account and eliminated confounding by diseases known to cause both weight loss and increased mortality [<xref ref-type="bibr" rid="pmed-0020171-b10">10</xref>–<xref ref-type="bibr" rid="pmed-0020171-b13">13</xref>].</p>
+      <p>The prevailing hypothesis to account for this apparent paradox is that the epidemiological studies have been unable to remove important confounding from several possible sources [<xref ref-type="bibr" rid="pmed-0020171-b14">14</xref>–<xref ref-type="bibr" rid="pmed-0020171-b18">18</xref>]. The excess mortality could be due to admixture of participants in the study populations with clinically manifest but undiagnosed diseases, sub-clinical diseases, or high-risk conditions or behaviours associated with both unintentional weight loss and excess mortality. Similarly, there may be participants with diseases or with high-risk conditions who have undertaken intentional weight loss in the hope of improving their health but who failed to eliminate the excess mortality, leading to so-called confounding by indication. A number of recent studies have included retrospective questions about whether an achieved weight loss was intentional or not [<xref ref-type="bibr" rid="pmed-0020171-b15">15</xref>,<xref ref-type="bibr" rid="pmed-0020171-b19">19</xref>–<xref ref-type="bibr" rid="pmed-0020171-b22">22</xref>]. The morbidity and mortality following intentional weight loss in these studies are equivocal and inconsistent, and they may also suffer from a variety of biases and confounding by indication [<xref ref-type="bibr" rid="pmed-0020171-b17">17</xref>,<xref ref-type="bibr" rid="pmed-0020171-b18">18</xref>]. One study from Israel [<xref ref-type="bibr" rid="pmed-0020171-b12">12</xref>], which included information on dieting for medical or slimming purposes prior to weight changes, found excess mortality associated with weight loss throughout the range of initial weight, although less excess mortality in the obese range. There was excess mortality in those who lost weight irrespective of whether it had been intended, but the study did not address this aspect specifically in the healthy overweight and obese groups. It is noteworthy that, contrary to its original aim, the large-scale, long-term clinical trial “Swedish obesity subjects study” comparing bariatric surgery to conventional treatment of obesity, in spite of considerable weight loss, improvement of risk factors, and reduction of diabetes incidence, has not yet found a reduced mortality [<xref ref-type="bibr" rid="pmed-0020171-b06">6</xref>].</p>
+      <p>In view of the rapidly rising prevalence of overweight and obesity almost everywhere, it is of paramount public health importance to know the long-term effects on mortality of the prevailing attempts to lose weight [<xref ref-type="bibr" rid="pmed-0020171-b05">5</xref>,<xref ref-type="bibr" rid="pmed-0020171-b17">17</xref>,<xref ref-type="bibr" rid="pmed-0020171-b18">18</xref>]. Randomised trials may be the best study design to address the effects of intended weight loss in selected groups such as the very obese, and among overweight or obese individuals with major co-morbidities or other high-risk conditions. However, such trials may not be feasible for addressing the problem of long-term effects in overweight and obese individuals who try to manage their body weight and who are still otherwise healthy and therefore have a much lower mortality in later life.</p>
+      <p>In the present population-based cohort study, we investigated whether intention to lose weight, as judged from actual attempts to lose weight at one point in time, and subsequent weight change among overweight or obese individuals were associated with subsequent long-term excess mortality. We selected individuals for whom there was no available evidence of diseases possibly linked to excess mortality or who were otherwise at increased risk of death, and we took into account lifestyle-related risk factors and any changes in them during the period of weight change.</p>
+    </sec>
+    <sec id="s2">
+      <title>Methods</title>
+      <p>The study was based on The Finnish Twin Cohort, which was composed of all same-sex twin pairs born in Finland before 1958 in which both twins were alive in 1967 [<xref ref-type="bibr" rid="pmed-0020171-b23">23</xref>]. The participants received questionnaires in 1975 and in 1981 addressing height, weight, lifestyle issues, and physician-diagnosed diseases, and the 1975 questionnaire included additional items about current attempts to lose weight. The response rate in the 1975 survey was 89%. Among those still alive at the 1981 survey and who had responded in 1975, the response rate was 91%. The present study sample was derived from the 19,993 participants who were alive at the end of 1981, when ages ranged from 24 y through 60 y. The further delineation of the study sample is illustrated in <xref ref-type="fig" rid="pmed-0020171-g001">Figure 1</xref>.</p>
+      <fig id="pmed-0020171-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pmed.0020171.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Flowchart Shows the Delineation of the Study Sample by Various Exclusions</title>
+          <p>MI, myocardial infarction; COPD, chronic obstructive pulmonary disease</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020171.g001" xlink:type="simple"/>
+      </fig>
+      <p>We aimed to exclude from the study sample participants suffering from any recognized chronic disease that could induce weight loss during 1975–1982 and subsequent increase in mortality. Thus, we excluded from the analyses participants who in the 1981 survey reported physician-diagnosed angina pectoris (<italic>n</italic> = 555), myocardial infarction (<italic>n</italic> = 170), or diabetes (<italic>n</italic> = 269), or who had angina pectoris according to standard chest pain history questions (<italic>n</italic> = 879). In addition, the cohort was linked to the national hospital discharge register, and participants with inpatient admissions for diabetes (<italic>n</italic> = 183), cardiovascular disease (<italic>n</italic> = 542) (except hypertension and venous disease), or chronic obstructive lung disease (<italic>n</italic> = 244) between 1972 and the end of 1982 were excluded. In addition, linking the cohort to a national drug prescription register allowed us to exclude participants who, based on medical certificates prior to 1983, had been granted reimbursable medication for somatic and psychiatric diseases. We excluded participants who had received prescriptions for all major chronic diseases (<italic>n</italic> = 1,119) except for hypertension. Presence of drug-treated arterial hypertension, as either reported in the 1981 survey or according to the medication reimbursement register, was rather common and therefore included as a covariate rather than used as an exclusion criterion. Participants who according to the Finnish Cancer Registry had diagnosed cancers before 1983 were excluded (<italic>n</italic> = 177). A total of 2,804 persons were excluded on the basis of known diseases. Finally, in order to take into account possible ill health not recorded otherwise, we excluded 1,274 participants who were not working in 1981 (“working” being defined as gainfully employed, working at home, or studying, and “not working” as being on early or disability pension (<italic>n</italic> = 356), unemployed (<italic>n</italic> = 461), or other (<italic>n</italic> = 457)), which is known to be associated with increased mortality.</p>
+      <p>Body mass index (BMI = weight/height<sup>2</sup>, kg/m<sup>2</sup>) was calculated from the reported height in the 1975 survey and from weight in both the surveys. Self-reported current height and weight generally have high accuracy [<xref ref-type="bibr" rid="pmed-0020171-b24">24</xref>,<xref ref-type="bibr" rid="pmed-0020171-b25">25</xref>], and the accuracy of the reports in the present study is supported by an analysis of another sub-study of The Finnish Twin Cohort [<xref ref-type="bibr" rid="pmed-0020171-b26">26</xref>]. The present analysis included only the participants who in 1975 were overweight or obese, defined as BMI ≥ 25 kg/m<sup>2</sup>, forming a total of 4,466 out of the 19,993 participants. These numbers were reduced to 3,152 out of 15,764 participants (with missing data in 151 participants) by the exclusions described above. Within this group, the median BMI was 26.7 kg/m<sup>2</sup>, the maximum BMI was 47.0 kg/m<sup>2</sup>, and 313 (9.9%) were obese (BMI ≥ 30 kg/m<sup>2</sup>). Recognizing that a change of 1.00 kg in body weight may have different implications for tall and short people, in analogy with body weight as such, we analysed weight changes as changes in BMI units rather than in kg. Weight loss and weight gain were analysed as separate continuous variables as well as categorical variables (the category weight loss was defined as any decline in BMI between 1975 and 1981, weight gain as an increase in BMI ≥ 1 kg/m<sup>2</sup>, and stable weight as no change in BMI or a gain less than 1 kg/m<sup>2</sup>).</p>
+      <p>In the 1975 survey, participants were asked whether they were currently trying to lose weight because of overweight, which was interpreted as “intention to lose weight,” and coded as yes/no. Then, if they were trying to lose weight, they were asked if they were doing so by voluntary restricting their food intake or changing their diet, increasing exercise, or by medication (coded yes/no in each case). No further details were requested, and these questions were not asked in the 1981 survey.</p>
+      <p>The lifestyle factors were recorded at both surveys and used in the analysis both as originally coded and recoded in simpler categories in order to avoid overloading the multivariate models. Smoking habits were originally coded as never smoker, occasional smoker (i.e., more than 10 packs of cigarettes in the lifetime, but never daily), former regular smoker, and current smoker. This variable was recoded as current smoker, yes/no. For alcohol drinking, the original question was used: five bottles of beer, a bottle of wine, or half a bottle of spirits on a single occasion at least once a month, yes/no; average alcohol consumption in g/d was also estimated. Physical activity was primarily assessed via an item on physical activity during leisure time with four response levels (i.e., equivalent to walking, alternating between walking and jogging, jogging, or running), but was recoded as engaging in physical activity more intense than walking, yes/no, which has previously proven adequate in relation to mortality analysis [<xref ref-type="bibr" rid="pmed-0020171-b27">27</xref>,<xref ref-type="bibr" rid="pmed-0020171-b28">28</xref>]. Life satisfaction was coded as being dissatisfied, yes/no, using a cut-point on a four-item dissatisfaction scale (range four to 20 points): yes if 12 or more, no if four to 11 [<xref ref-type="bibr" rid="pmed-0020171-b29">29</xref>]. Each of these risk factors were then categorized as being present both in 1975 and 1981, only in 1975, only in 1981, or absent at both surveys, which was coded by three dummy variables [<xref ref-type="bibr" rid="pmed-0020171-b28">28</xref>]. Work status (coded as gainfully employed, working at home, unemployed, studying, or other) and income (coded as eight levels) in 1975 were also included as potential confounders. Some of this information was missing in 195 participants, which led to the final sample size being reduced to 2,957 participants (<xref ref-type="fig" rid="pmed-0020171-g001">Figure 1</xref>).</p>
+      <p>The participants were followed up until death, or the end of 1999, and 268 died. Underlying causes of death were available from Statistics Finland (<ext-link ext-link-type="uri" xlink:href="http://www.stat.fi/index_en.html" xlink:type="simple">http://www.stat.fi/index_en.html</ext-link>). The ascertainment of causes of death was based on forensic autopsy in 40% of cases. The age-sex adjusted mortality during follow-up of those included in the analysis was significantly lower than of all overweight participants replying to the two questionnaires (hazard ratio [HR] = 0.42, 95% confidence 0.36–0.49).</p>
+      <p>Twin analyses of the genetic and environmental contributions to BMI, change in body weight, intention to lose weight, and mortality have been carried out using the same cohort data [<xref ref-type="bibr" rid="pmed-0020171-b27">27</xref>,<xref ref-type="bibr" rid="pmed-0020171-b28">28</xref>,<xref ref-type="bibr" rid="pmed-0020171-b30">30</xref>,<xref ref-type="bibr" rid="pmed-0020171-b31">31</xref>]. The selection of the study sample for the present study implied that 2,067 participants out of the final sample of 2,957 did not have the co-twin included in the sample. Only six pairs were concordant for death, i.e., both died during the follow-up period. The within-pair correlations of phenotypes were adjusted for in the statistical analyses (see below).</p>
+      <sec id="s2a">
+        <title>Statistical analysis</title>
+        <p>Total mortality from 1982 through 1999 was analysed by the Cox proportional hazards regression model with the number of days since the 1982 survey as the time scale using Stata software [<xref ref-type="bibr" rid="pmed-0020171-b32">32</xref>]. The estimated regression coefficients and standard errors were converted to HRs with 95% confidence intervals (CIs). Two types of models were analysed: a basic and a fully adjusted model. The basic model included sex and age (in 1981), an indication of whether the participants had attempted to lose weight (in 1975), the weight-change variables, and the BMI (in 1975). The validity of the model was assessed by running separate analyses, in which the covariates for sex, age, initial BMI (1975), and current smoking (1981) were each used for stratification; these analyses showed that the estimated effects of the variables of interest were reasonably consistent across the strata. In another series of analyses, we kept the covariates in the model together with the interaction terms between the variables of interest and the covariates, which showed that such interaction terms were not needed. The fully adjusted model additionally included the covariates for hypertension, smoking, alcohol drinking, physical activity, life satisfaction, work status, and income. For each of the covariates for which simplified recoding of the original variable was performed, models with the original and with the recoded version were estimated to assess if the simplified recoding showed indications of residual confounding of the effects of variables of interest, which was not the case. Therefore, only results from the analysis of the simplified, recoded covariates are presented. In both the basic and the fully adjusted models, age in 1981 was also used as a built-in stratification variable (age intervals 24–29, 30–34, 35–44, ≥45 y), allowing age to be modelled as a continuous variable within these age intervals as well.</p>
+        <p>In both types of models, we estimated HR for the <italic>main effects</italic> on mortality of intention to lose weight, and of weight change, and the separate effects of the 2 × 3 combinations of intention to lose weight and weight change, using the group not intending to lose weight and remaining stable in weight as the reference group (HR = 1.0). The intention to lose weight and the actual weight changes were then tested for <italic>interaction</italic> between them in their association to subsequent mortality (tested by the difference in global likelihood ratios of the models with and without the interaction terms). Thereafter, we estimated the differences in effects of weight changes within each of the groups intending and not intending to lose weight, and the differences in effects of intention versus no intention within each of the weight-change groups. The influences of the methods used to the weight-loss attempts were assessed by estimating the effects of weight loss versus stable weight among those who stated that they used diet as the method and among those using exercise as the method.</p>
+        <p>In order to evaluate the effects of sex, age, and follow-up time on the HR of interest, separate fully adjusted models were analysed within the two sexes, age strata &lt; 45 and ≥ 45 y, the combination of sex and these age strata, and for the first 5 y of follow-up and the period thereafter.</p>
+        <p>The proportionality of hazards and linearity of effect of the continuous variables were checked. Using the available “cluster” option in the Stata program, correlated observations in twin pairs included in the final sample were adjusted for in the estimation of the standard errors of the HR and the <italic>p</italic> values. Two-tailed <italic>p</italic>-values below 0.05 were considered statistically significant. Using the Stata program, survival functions were estimated from the Cox regression models for the groups of interest while adjusting for relevant co-variables (sex, median age, and median BMI).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>The numbers of participants were distributed by weight-loss intention in 1975 and weight change between 1975 and 1981 as shown in <xref ref-type="table" rid="pmed-0020171-t001">Table 1</xref>, which also shows their mean age at the start of mortality follow-up in 1981. Baseline BMI and the median and range of weight changes (in BMI units) in each group are shown in <xref ref-type="table" rid="pmed-0020171-t002">Table 2</xref> for all participants and the 268 among the 2,957 participants who died during the follow-up. The weight changes were about the same irrespective of intention to lose weight and whether the participants died or survived the follow-up period.</p>
+      <table-wrap id="pmed-0020171-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0020171.t001</object-id><label>Table 1</label><caption>
+          <title>Number of Participants and Mean Age by Sex and Intention to Lose Weight in 1975 and Weight Change between 1975 and 1981 among 2,957 Overweight or Obese Participants (BMI greater than or equal to 25 kg/m<sup>2</sup>) Aged 24-60 y in 1981</title>
+        </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020171.t001" xlink:type="simple"/><!-- <table>
+					<thead>
+						<tr>
+							<td>Intention to Lose Weight, and Weight Change</td>
+							<td colspan="<0"><italic>N</italic> of Participants
+						</td>
+						<td colspan="0">Mean Age in 1981 (and SD)
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Total</td>
+					<td>Men</td>
+					<td>Women</td>
+					<td>Total</td>
+					<td>Men</td>
+					<td>Women</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Yes, total</td>
+					<td>1,058</td>
+					<td>559</td>
+					<td>499</td>
+					<td>42.2 (9.0)</td>
+					<td>41.5 (8.3)</td>
+					<td>43.0 (9.7)</td>
+				</tr>
+				<tr>
+					<td>Yes, loss</td>
+					<td>398</td>
+					<td>205</td>
+					<td>193</td>
+					<td>41.5 (9.4)</td>
+					<td>41.1 (8.4)</td>
+					<td>42.0 (10.4)</td>
+				</tr>
+				<tr>
+					<td>Yes, stable</td>
+					<td>303</td>
+					<td>182</td>
+					<td>121</td>
+					<td>43.4 (8.4)</td>
+					<td>42.9 (7.9)</td>
+					<td>44.2 (9.0)</td>
+				</tr>
+				<tr>
+					<td>Yes, gain</td>
+					<td>357</td>
+					<td>172</td>
+					<td>185</td>
+					<td>41.9 (8.9)</td>
+					<td>40.4 (8.3)</td>
+					<td>43.4 (9.2)</td>
+				</tr>
+				<tr>
+					<td>No, total</td>
+					<td>1,899</td>
+					<td>1387</td>
+					<td>512</td>
+					<td>42.2 (9.0)</td>
+					<td>41.0 (8.5)</td>
+					<td>45.3 (9.7)</td>
+				</tr>
+				<tr>
+					<td>No, loss</td>
+					<td>728</td>
+					<td>514</td>
+					<td>214</td>
+					<td>42.6 (9.3)</td>
+					<td>41.4 (8.5)</td>
+					<td>45.4 (10.5)</td>
+				</tr>
+				<tr>
+					<td>No, stable</td>
+					<td>586</td>
+					<td>456</td>
+					<td>130</td>
+					<td>43.5 (8.7)</td>
+					<td>42.5 (8.5)</td>
+					<td>46.8 (8.6)</td>
+				</tr>
+				<tr>
+					<td>No, gain</td>
+					<td>585</td>
+					<td>417</td>
+					<td>168</td>
+					<td>40.4 (8.7)</td>
+					<td>38.9 (8.0)</td>
+					<td>44.1 (9.2)</td>
+				</tr>
+			</tbody>
+		</table> --></table-wrap>
+      <table-wrap id="pmed-0020171-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0020171.t002</object-id><label>Table 2</label><caption>
+          <title>Median and Range of Baseline BMI by Intention to Lose Weight in 1975 and Weight Change between 1975 and 1981, and Median and Range of Weight Change (BMI units kg/m<sup>2</sup>) for Each Group among Overweight or Obese Participants (BMI greater than or equal to 25 kg/m<sup>2</sup>) Aged 24-60 y in 1981</title>
+        </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020171.t002" xlink:type="simple"/><table-wrap-foot>
+          <fn id="nt002">
+            <p>Note that 1 kg/m<sup>2</sup> equals 2.25 kg in a person 1.5 m tall and 3.80 kg in a person 1.95 m tall. Numbers of deaths by group are given in <xref ref-type="table" rid="pmed-0020171-t003">Table 4</xref>.</p>
+          </fn>
+        </table-wrap-foot><!-- <table>
+			<thead>
+				<tr>
+					<td>Intention to Lose Weight, and Weight Change</td>
+					<td colspan="0">All Participants (<italic>N</italic> = 2,957)
+				</td>
+				<td colspan="0">Deceased during Follow-Up (<italic>N</italic> = 268)
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Median Baseline BMI</td>
+			<td colspan="0">Weight-Change Median and Range (kg/m<sup>2</sup>)
+		</td>
+		<td>Median Baseline BM</td>
+		<td colspan="0">Weight-Change Median and Range (kg/m<sup>2</sup>)
+	</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>Yes, total</td>
+	<td>27.04</td>
+	<td>0.33</td>
+	<td>&minus;8.02, &thinsp;11.57</td>
+	<td>27.44</td>
+	<td>&minus;0.05</td>
+	<td>&minus;6.93, &ensp;&thinsp;6.63</td>
+</tr>
+<tr>
+	<td>Yes, loss</td>
+	<td>27.40</td>
+	<td>&minus;1.21</td>
+	<td>&minus;8.02, &minus;0.00</td>
+	<td>28.37</td>
+	<td>&minus;1.15</td>
+	<td>&minus;6.93, &minus;0.00</td>
+</tr>
+<tr>
+	<td>Yes, stable</td>
+	<td>26.85</td>
+	<td>0.35</td>
+	<td>0.00, &ensp;&thinsp;1.00</td>
+	<td>26.99</td>
+	<td>0.34</td>
+	<td>0.00, &ensp;&thinsp;0.99</td>
+</tr>
+<tr>
+	<td>Yes, gain</td>
+	<td>26.84</td>
+	<td>2.00</td>
+	<td>1.00, &thinsp;11.57</td>
+	<td>26.54</td>
+	<td>2.54</td>
+	<td>1.20, &ensp;&thinsp;6.63</td>
+</tr>
+<tr>
+	<td>No, total</td>
+	<td>26.47</td>
+	<td>0.31</td>
+	<td>&minus;9.09, &ensp;&thinsp;9.95</td>
+	<td>26.78</td>
+	<td>0.33</td>
+	<td>&minus;5.13, &ensp;&thinsp;4.76</td>
+</tr>
+<tr>
+	<td>No, loss</td>
+	<td>26.72</td>
+	<td>&minus;1.09</td>
+	<td>&minus;9.09, &minus;0.00</td>
+	<td>27.34</td>
+	<td>&minus;0.98</td>
+	<td>&minus;5.13, &minus;0.01</td>
+</tr>
+<tr>
+	<td>No, stable</td>
+	<td>26.37</td>
+	<td>0.36</td>
+	<td>0.00, &ensp;&thinsp;0.99</td>
+	<td>26.27</td>
+	<td>0.35</td>
+	<td>0.00, &ensp;&thinsp;0.98</td>
+</tr>
+<tr>
+	<td>No, gain</td>
+	<td>26.37</td>
+	<td>1.92</td>
+	<td>1.00, &ensp;&thinsp;9.95</td>
+	<td>26.54</td>
+	<td>1.96</td>
+	<td>1.00, &ensp;&thinsp;4,76</td>
+</tr>
+</tbody>
+</table> --></table-wrap>
+      <sec id="s3a">
+        <title>Analysis of Main Effects of Intention to Lose Weight and of Weight Changes</title>
+        <p>Intention to lose weight as such had no influence on mortality in the follow-up period, the HR in the basic and fully adjusted models being 0.86 (CI 0.66–1.12) and 1.00 (CI 0.75–1.32), respectively, compared with no intention to lose weight (HR = 1.0).</p>
+        <p>Both those who gained weight and those who lost weight had increased mortality compared with the weight-stable group (HR = 1.0). In the basic and fully adjusted models, the respective HR for the weight losers was 1.43 (CI 1.06–1.92) and 1.40 (CI 1.04–1.90). For the weight gainers, the HRs were 1.46 (CI 1.06–2.02) and 1.38 (CI 1.00–1.92), respectively. Weight changes were also analysed as continuous variables (divided in weight loss and weight gain, the latter including the category defined as stable weight, i.e., with a gain of less than 1.00 kg/m<sup>2</sup>). The HR for weight loss per BMI units estimated in the two models was 1.12 (CI 1.00–1.26) and 1.11 (CI 0.99–1.24), respectively. For weight gain, the HRs were 1.13 (CI 1.02–1.25) and 1.11 (CI 1.00–1.23).</p>
+      </sec>
+      <sec id="s3b">
+        <title>Combined Analysis of Intention to Lose Weight and Actual Weight Changes</title>
+        <p><xref ref-type="table" rid="pmed-0020171-t003">Table 3</xref> combines intention to lose weight with the actual weight-change variable and compares each group with the group not intending to lose weight and able to maintain stable weight (HR = 1.0) during the 6 y from 1975 through 1981. There was significant excess mortality only in the group intending to lose weight in 1975 and who lost weight by 1981, and in the group not intending to lose weight and then gaining weight.</p>
+        <table-wrap id="pmed-0020171-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0020171.t003</object-id><label>Table 3</label><caption>
+            <title>HRs with 95% Confidence Intervals of Total Mortality between 1982 and 1999 by Intention to Lose Weight in 1975 and Weight Change between 1975 and 1981</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020171.t003" xlink:type="simple"/><table-wrap-foot>
+            <fn id="nt004">
+              <p>The HRs were estimated by a basic and a fully adjusted Cox proportional hazards regression model, and the mortality of the group of participants not intending to lose weight and with subsequent stable weight served as reference for comparison.</p>
+            </fn>
+            <fn id="nt005">
+              <p>The basic model included variables for sex, age (in 1981), and BMI (in 1975).</p>
+            </fn>
+            <fn id="nt006">
+              <p>The fully adjusted model included, in addition, variables for hypertension, smoking, alcohol drinking, physical activity, life satisfaction, work status, and income.</p>
+            </fn>
+            <fn id="nt007">
+              <p>The group “No, stable” was defined as the reference group assigned a HR = 1.00; NA, not applicable.</p>
+            </fn>
+          </table-wrap-foot><!-- <table>
+<thead>
+	<tr>
+		<td>Intention to Lose Weight, and Weight Change</td>
+		<td colspan="0">Basic Regression Model
+	</td>
+	<td colspan="0">Fully Adjusted Regression Model
+</td>
+</tr>
+<tr>
+<td></td>
+<td>HR</td>
+<td>Confidence Interval</td>
+<td><italic>p</italic>-value</td>
+<td>HR</td>
+<td>Confidence Interval</td>
+<td><italic>p</italic>-value</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yes, loss</td>
+<td>1.49</td>
+<td>0.99&ndash;2.26</td>
+<td>0.058</td>
+<td>1.87</td>
+<td>1.22&ndash;2.87</td>
+<td>0.004</td>
+</tr>
+<tr>
+<td>Yes, stable</td>
+<td>0.69</td>
+<td>0.40&ndash;1.19</td>
+<td>0.19</td>
+<td>0.84</td>
+<td>0.49&ndash;1.48</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>Yes, gain</td>
+<td>0.93</td>
+<td>0.57&ndash;1.53</td>
+<td>0.78</td>
+<td>0.93</td>
+<td>0.55&ndash;1.56</td>
+<td>0.78</td>
+</tr>
+<tr>
+<td>No, loss</td>
+<td>1.20</td>
+<td>0.84&ndash;1.70</td>
+<td>0.32</td>
+<td>1.17</td>
+<td>0.82&ndash;1.66</td>
+<td>0.40</td>
+</tr>
+<tr>
+<td>No, stable</td>
+<td>1.00</td>
+<td>NA</td>
+<td>NA</td>
+<td>1.00</td>
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>No, gain</td>
+<td>1.56</td>
+<td>1.07&ndash;2.25</td>
+<td>0.019</td>
+<td>1.58</td>
+<td>1.08&ndash;2.30</td>
+<td>0.018</td>
+</tr>
+</tbody>
+</table> --></table-wrap>
+        <p>The basic and fully adjusted models produced approximately the same estimates, except for the similar increases by adjustments in HR for the groups intending to lose weight and actually losing weight or maintaining it. The HR for mortality following intended weight loss increased from 1.49 to 1.87 and became statistically significant (<italic>p</italic> decreased from 0.06 to 0.004) with the adjustments of the fully adjusted model. In stepwise rebuilding of the model, it was found that adjustment for smoking increased the HR from 1.49 to 1.66, and further adjustment for physical activity increased the HR from 1.66 to 1.85, indicating the importance of these two variables as confounders; the group with intent to lose weight and actual weight loss smoked less and exercised more than other groups.</p>
+        <p>Except for this difference between the basic and the fully adjusted models, the two models produced essentially the same results, wherefore only the results from the fully adjusted models are presented in the following.</p>
+        <p>The lowest mortality was found in the group intending to lose weight but who maintained stable weight, the HR being 0.84, although this was not statistically significantly different from the reference group (HR = 1.0) of weight-stable participants who did not intend to lose weight (<italic>p</italic> = 0.56).</p>
+        <p>There was a statistically significant interaction between intention to lose weight (yes/no) and the weight-change variable (loss, stable, gain) (<italic>p</italic> = 0.014).</p>
+        <p>The distribution of causes of death (<xref ref-type="table" rid="pmed-0020171-t004">Table 4</xref>) did not differ significantly between the six groups (global chi-square test <italic>p</italic>-value = 0.89), and the deaths in the two groups exhibiting excess mortality showed no distinct differences compared with the distribution overall. The distribution of the causes of death was in accordance with that expected from concurrent national statistics for the same sex and age groups (data not shown).</p>
+        <table-wrap id="pmed-0020171-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0020171.t004</object-id><label>Table 4</label><caption>
+            <title>Distribution of Underlying Causes of Death among the 268 Overweight or Obese Participants Who Died during the Follow-Up Period 1982 through 1999 by Intention to Lose Weight in 1975 and Weight Change between 1975 and 1981</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020171.t004" xlink:type="simple"/><table-wrap-foot>
+            <fn id="nt009">
+              <p>The table gives the numbers of deaths <italic>(N)</italic> and the percentages within each group of those intending to lose weight and actual weight loss.</p>
+            </fn>
+            <fn id="nt0010">
+              <p>The ascertainment of causes of death was based on forensic autopsy in 40% of the deaths.</p>
+            </fn>
+            <fn id="nt0011">
+              <p>* In one case, cause of death was missing.</p>
+            </fn>
+          </table-wrap-foot><!-- <table>
+<thead>
+<tr>
+<td>Intention to Lose Weight, and Weight Change</td>
+<td colspan="0">Underlying Causes of Death
+</td>
+</tr>
+<tr>
+<td></td>
+<td>Cancer</td>
+<td>Coronary Heart Disease</td>
+<td>Cerebro-Vascular Disease</td>
+<td>Other Natural Causes</td>
+<td>Suicides</td>
+<td>Other Violent Causes</td>
+<td>Total</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yes, loss <italic>N</italic> &percnt;</td>
+<td>12, 28.6</td>
+<td>8, 19.0</td>
+<td>3, 7.1</td>
+<td>9, 21.4</td>
+<td>2, 4.8</td>
+<td>8, 19.0</td>
+<td>42, 100</td>
+</tr>
+<tr>
+<td>Yes, stable <italic>N</italic> &percnt;</td>
+<td>5, 29.4</td>
+<td>5, 29.4</td>
+<td>0, &thinsp;&thinsp;0</td>
+<td>6, 35.3</td>
+<td>0, &thinsp;&thinsp;0</td>
+<td>1, &ensp;5.9</td>
+<td>17, 100</td>
+</tr>
+<tr>
+<td>Yes, gain <italic>N</italic> &percnt;</td>
+<td>9, 40.9</td>
+<td>6, 27.3</td>
+<td>0, &thinsp;&thinsp;0</td>
+<td>4, 18.2</td>
+<td>0, &thinsp;&thinsp;0</td>
+<td>3, 13.6</td>
+<td>22, 100</td>
+</tr>
+<tr>
+<td>No, loss <italic>N</italic> &percnt;</td>
+<td>27, 37.0</td>
+<td>20, 27.4</td>
+<td>3, 4.1</td>
+<td>13, 17.8</td>
+<td>5, 6.8</td>
+<td>5, &ensp;6.8</td>
+<td>73, 100</td>
+</tr>
+<tr>
+<td>No, stable <italic>N</italic> &percnt;</td>
+<td>19, 35.2</td>
+<td>12, 22.2</td>
+<td>3, 5.6</td>
+<td>11, 20.4</td>
+<td>2, 3.7</td>
+<td>7, 13.0</td>
+<td>54, 100</td>
+</tr>
+<tr>
+<td>No, gain <italic>N</italic> &percnt;</td>
+<td>14, 23.3</td>
+<td>15, 25.0</td>
+<td>4, 6.7</td>
+<td>15*, 25.0</td>
+<td>4, 6.7</td>
+<td>8, 13.3</td>
+<td>60, 100</td>
+</tr>
+<tr>
+<td>Total <italic>N</italic> &percnt;</td>
+<td>86, 32.1</td>
+<td>66, 24.6</td>
+<td>13, 4.9</td>
+<td>58*, 21.6</td>
+<td>13, 4.9</td>
+<td>32, 11.9</td>
+<td>268, 100</td>
+</tr>
+</tbody>
+</table> --></table-wrap>
+      </sec>
+      <sec id="s3c">
+        <title>Analysis of Effects within Sex and Age Groups</title>
+        <p>The estimates of effects in the groups depicted in <xref ref-type="table" rid="pmed-0020171-t003">Table 3</xref> showed generally the same pattern in men and women, in participants younger than 45 and participants 45 y or older, and in the three groups of younger and older men and older women (only 10 women younger than 45 y died, and none in the groups with no intention to lose weight and subsequent stable or increasing weight, so model-based estimates could not be produced). <xref ref-type="table" rid="pmed-0020171-t005">Table 5</xref> shows that the estimated effects of weight change for those who intended to lose weight did exhibit the same pattern for the sex and age groups, and no statistically significant interactions by sex and/or age groups on mortality in the weight-loss group were found (all <italic>p</italic>-values &gt; 0.23).</p>
+        <table-wrap id="pmed-0020171-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0020171.t005</object-id><label>Table 5</label><caption>
+            <title>HRs with 95% Confidence Intervals of Total Mortality between 1982 and 1999 within the Group of Overweight or Obese Participants Intending to Lose Weight by Sex and Age Group, for Those Who Did Lose Weight or Gained Weight between 1975 and 1981 Compared with Those Who Maintained Stable Weight (Reference Group)</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020171.t005" xlink:type="simple"/><table-wrap-foot>
+            <fn id="nt0013">
+              <p>The HRs were estimated by a fully adjusted Cox proportional hazards regression model.</p>
+            </fn>
+            <fn id="nt0014">
+              <p>The models were estimated on the basis of all participants who intended to lose weight. The fully adjusted model included sex, age (in 1981), and BMI (in 1975), hypertension, smoking, alcohol drinking, physical activity, life satisfaction, work status, and income.</p>
+            </fn>
+          </table-wrap-foot><!-- <table>
+<thead>
+<tr>
+<td>Participants</td>
+<td><italic>N</italic> of Participants</td>
+<td>HR for Stable Weight and <italic>N</italic> of Deaths</td>
+<td colspan="0">Weight Gain
+</td>
+<td colspan="0">Weight Loss
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>HR</td>
+<td>Confidence Interval</td>
+<td>HR</td>
+<td>Confidence Interval</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All participants</td>
+<td>1,058</td>
+<td>1.0 (17)</td>
+<td>1.06 (22)</td>
+<td>0.56, 2.01</td>
+<td>2.13 (42)</td>
+<td>1.22, 3.71</td>
+</tr>
+<tr>
+<td>Women under 45</td>
+<td>267</td>
+<td>1.0 (1)</td>
+<td>4.78 (3)</td>
+<td>0.42, 54</td>
+<td>5.49 (3)</td>
+<td>0.15, 202</td>
+</tr>
+<tr>
+<td>Women 45 and over</td>
+<td>232</td>
+<td>1.0 (3)</td>
+<td>2.12 (8)</td>
+<td>0.48, 9.38</td>
+<td>3.54 (11)</td>
+<td>0.84, 15.0</td>
+</tr>
+<tr>
+<td>Men under 45</td>
+<td>352</td>
+<td>1.0 (4)</td>
+<td>1.12 (6)</td>
+<td>0.30, 4.21</td>
+<td>2.20 (12)</td>
+<td>0.71, 6.79</td>
+</tr>
+<tr>
+<td>Men 45 and over</td>
+<td>207</td>
+<td>1.0 (9)</td>
+<td>1.05 (5)</td>
+<td>0.15, 2.36</td>
+<td>2.26 (16)</td>
+<td>1.04, 4.90</td>
+</tr>
+</tbody>
+</table> --></table-wrap>
+      </sec>
+      <sec id="s3d">
+        <title>Analysis of Effects of Weight Change within the Group Intending to Lose Weight</title>
+        <p>Among the participants intending to lose weight, those who lost weight showed excess mortality compared with those maintaining stable weight (HR = 1), the HR being 2.13 (CI 1.22–3.71). The corresponding HR for all cancer deaths as the outcome were 2.06 (CI 0.71–5.96), for all cardiovascular deaths, 2.04 (CI 0.64–6.49), and for all other natural causes, 1.31 (0.45–3.81). The participants who gained weight despite their intention to lose weight did not differ significantly from those who maintained weight, the HR being 1.06 (CI 0.56–2.01); also, none of the cause-specific outcomes were increased.</p>
+        <p>As seen in <xref ref-type="fig" rid="pmed-0020171-g002">Figure 2</xref>, the excess mortality of the intentional-weight-loss group was numerically greater during the first 5 y of follow-up, during which period the HR was 6.26 (CI 0.33–118). After the first 5 y of follow-up, a statistically significant excess risk was still observed, the HR being 1.88 (CI 1.05–3.39).</p>
+        <fig id="pmed-0020171-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pmed.0020171.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Mortality by Weight Change in 1975–1981 among Those Reporting Trying to Lose Weight in 1975</title>
+            <p>Probability of survival from baseline in 1982 through 1999 among 1,058 participants who in 1975 reported intention to lose weight and who either lost weight, gained more than 1.0 kg/m<sup>2</sup> in BMI, or remained stable, i.e., were unchanged or gained less than 1.0 kg/m<sup>2</sup> in BMI, between 1975 and 1981.</p>
+            <p>The survival probability was adjusted using the Cox regression model for sex, median age, and median BMI. Note that the participants with weight loss had a lower survival rate throughout the 18 y of observation, whereas those with stable weight and weight gain did not differ.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020171.g002" xlink:type="simple"/>
+        </fig>
+        <p>When analysing weight loss and any gain as continuous variables among those intending to lose weight, the HR per BMI units were 1.27 (CI 1.07–1.49) and 1.03 (CI 0.87–1.23), respectively.</p>
+      </sec>
+      <sec id="s3e">
+        <title>Analysis of Effects of Weight Change within the Group Not Intending to Lose Weight</title>
+        <p>Among the participants not intending to lose weight, those who gained weight showed excess mortality compared with those with stable weight (HR = 1.0), with the HR being 1.64 (CI 1.12–2.42). Those who lost weight did not differ significantly from those with stable weight, the corresponding HR being 1.19 (CI 0.83–1.72). This pattern of mortality was apparent throughout the follow-up period (<xref ref-type="fig" rid="pmed-0020171-g003">Figure 3</xref>).</p>
+        <fig id="pmed-0020171-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pmed.0020171.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Mortality by Weight Change in 1975–1981 among Those with No Intention to Lose Weight in 1975</title>
+            <p>Probability of survival from baseline in 1982 through 1999 among 1,899 participants who in 1975 reported no intention to lose weight and who either lost weight, gained more than 1.0 kg/m<sup>2</sup> in BMI, or remained stable, i.e., were unchanged or gained less than 1.0 kg/m<sup>2</sup> in BMI, between 1975 and 1981. The survival probability was adjusted as in <xref ref-type="fig" rid="pmed-0020171-g001">Figure 2</xref>. Note that the participants with weight loss had about the same survival rates throughout the 18 y of observation as those with stable weight, whereas those gaining weight showed a lower survival rate.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020171.g003" xlink:type="simple"/>
+        </fig>
+        <p>When analysing weight loss and any gain as continuous variables among those not intending to lose weight, the HR per BMI units was 1.02 (CI 0.87–1.19) and 1.17 (CI 1.02–1.34), respectively.</p>
+      </sec>
+      <sec id="s3f">
+        <title>Analysis of Effects of Intention to Lose Weight within the Weight-Change Groups</title>
+        <p>Among the participants losing weight, those who intended to lose weight compared with those who did not intend to lose (HR = 1.0) showed a significantly increased mortality with a HR of 1.65 (CI 1.09–2.50) (in the basic model, the HR was 1.21 (CI 0.82–1.79), and this difference was due to the same confounding mentioned above and eliminated by the fully adjusted model).</p>
+        <p>Among participants who gained weight, those who had intended to lose weight had a lower mortality than those who did not intend to lose weight (HR = 1.0), the HR being 0.55 (CI 0.33–0.93). Participants who maintained stable weight had an insignificantly lower mortality if they had intended to lose weight, HR being 0.84 (0.49–1.48) (see <xref ref-type="table" rid="pmed-0020171-t003">Table 3</xref>).</p>
+      </sec>
+      <sec id="s3g">
+        <title>Analysis of Effects of Methods for Intended Weight Loss and Actual Weight Loss</title>
+        <p>The eventual weight losses observed in each of the groups employing the various methods for losing weight at the beginning of the observation period were quite similar in magnitude (<xref ref-type="table" rid="pmed-0020171-t006">Table 6</xref>). When dieting was the intended method, those who lost weight compared with those who maintained stable weight showed significant excess mortality (<xref ref-type="table" rid="pmed-0020171-t006">Table 6</xref>). When exercise was used as the method, the HR for those who lost weight compared with those who maintained weight was increased but not statistically significant.</p>
+        <table-wrap id="pmed-0020171-t006" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0020171.t006</object-id><label>Table 6</label><caption>
+            <title>HRs with 95% Confidence Intervals of Total Mortality between 1982 and 1999 within the Group of Overweight or Obese Participants Intending to Lose Weight by Reported Methods of Weight Loss, for Those Who Did Lose Weight between 1975 and 1981 Compared with Those Who Maintained Stable Weight</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020171.t006" xlink:type="simple"/><table-wrap-foot>
+            <fn id="nt0016">
+              <p>The HRs were estimated by a fully adjusted Cox proportional hazards regression model. Out of the 398 participants included in this analysis, 153 intended to use diet alone, 95 exercise alone, 140 both methods, five neither of the two (intended to use drugs only), and the intended method was unknown in five participants. 12 (of whom two died) intended to use some medication.</p>
+            </fn>
+            <fn id="nt0017">
+              <p>The models were estimated on the basis of all participants who intended to lose weight with the method indicated, irrespective of whether they lost or gained weight, and the group maintaining weight was used as the reference group (HR of 1.00).</p>
+            </fn>
+            <fn id="nt0018">
+              <p>The fully adjusted model included, in addition, variables for hypertension, smoking, alcohol drinking, physical activity, life satisfaction, work status, and income.</p>
+            </fn>
+          </table-wrap-foot><!-- <table>
+<thead>
+<tr>
+<td>Method of Intended Weight Loss</td>
+<td><italic>N</italic> of Participants</td>
+<td><italic>N</italic> of Deaths</td>
+<td>Mean BMI in 1975</td>
+<td colspan="0">Reported Weight Loss
+</td>
+<td colspan="0">Regression Model
+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Median (kg/m<sup>2</sup>)</td>
+<td>Range (kg/m<sup>2</sup>)</td>
+<td>HR</td>
+<td>Confidence Interval</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total weight loss group</td>
+<td>398</td>
+<td>42</td>
+<td>27.94</td>
+<td>&minus;1.21</td>
+<td>&minus;8.02, &minus;0.00</td>
+<td>2.13</td>
+<td>1.22, 3.71</td>
+</tr>
+<tr>
+<td>Diet</td>
+<td>293</td>
+<td>29</td>
+<td>28.00</td>
+<td>&minus;1.22</td>
+<td>&minus;7.42, &minus;0.00</td>
+<td>2.46</td>
+<td>1.25, 4.85</td>
+</tr>
+<tr>
+<td>Exercise</td>
+<td>235</td>
+<td>25</td>
+<td>27.65</td>
+<td>&minus;1.26</td>
+<td>&minus;6.93, &minus;0.00</td>
+<td>1.84</td>
+<td>0.93, 3.63</td>
+</tr>
+</tbody>
+</table> --></table-wrap>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>In our study, both net weight loss and weight gain over a 6-y period among overweight or obese participants without known co-morbidities or high-risk conditions were associated with later increased long-term mortality, whereas attempts to lose weight at the beginning of this period in time, interpreted as intention to lose weight, by itself did not affect the long-term mortality. However, participants intending to lose weight and who experienced a net weight loss over the 6-y period had increased long-term mortality compared both with participants maintaining weight in spite of the intention to lose it and with participants with unintended weight loss. Those not intending to lose weight who later gained weight had increased mortality compared with participants maintaining stable weight and with participants gaining weight in spite of intending to lose weight.</p>
+      <p>Considering the arguments involved in the continuing controversy over the long-term health benefits of weight loss among overweight and obese individuals [<xref ref-type="bibr" rid="pmed-0020171-b14">14</xref>–<xref ref-type="bibr" rid="pmed-0020171-b18">18</xref>,<xref ref-type="bibr" rid="pmed-0020171-b22">22</xref>], the present study offers evidence of importance. Hitherto, excess long-term mortality after weight loss has been observed in several large-scale population-based prospective studies. Despite careful efforts to control confounding by risk factors and by underlying diseases associated with both weight loss and increased mortality, this excess long-term mortality has been attributed to inadequate control of such confounding [<xref ref-type="bibr" rid="pmed-0020171-b17">17</xref>,<xref ref-type="bibr" rid="pmed-0020171-b18">18</xref>]. The prevailing hypothesis has been that the obviously expected reduction in mortality after deliberate weight loss in the epidemiological observational studies has been masked by admixture of a large group of participants who, for various reasons, suffered from ill health and, as one sign thereof, had also lost weight.</p>
+      <p>A recent study, based on the National Health Interview Survey in the United States, addressed the question in a group of 6,391 overweight or obese participants at least 35 y old who were followed for 9 y after reporting on weight change and intention to lose weight during the past year [<xref ref-type="bibr" rid="pmed-0020171-b22">22</xref>]. Except for the finding that the lowest mortality was observed for those not trying to lose weight and who gained weight, the study yielded results in agreement with the prevailing expectation. It showed that intended weight loss compared with stable weight was associated with lower all-cause mortality, and that weight loss was associated with higher mortality only if it was unintentional. Furthermore, attempted weight loss as such was associated with lower mortality, independent of weight change; this suggests that confounding by medical indications was not a problem, but, on the other hand, that these participants may have been more healthy than those not intending to lose weight.</p>
+      <p>In this and most of the previous studies, the question about intention to lose weight was posed after the participants had achieved the weight loss, which implies a possible selection and recall bias. If overweight or obese participants who at the time of reporting are feeling healthy and have experienced a weight loss are more prone to consider that this was intentional, then a study design of this type may favour delineation of a particular group of participants with low morbidity and mortality [<xref ref-type="bibr" rid="pmed-0020171-b17">17</xref>].</p>
+      <p>Our study was based on a large sample of overweight and obese adult working-aged participants. We aimed to effectively minimize the effect of confounding due to underlying disease before and during the weight-loss period. Notably, those suffering from relevant illnesses, diagnosed by physicians and reported either by the participants themselves or in three national medical registers, were excluded or otherwise taken into account. The finding that those not intending to lose weight but who did lose weight did not experience excess mortality suggests that the exclusion of underlying diseases as a possible confounder was successful. In contrast to most previous studies on intentional weight loss [<xref ref-type="bibr" rid="pmed-0020171-b15">15</xref>,<xref ref-type="bibr" rid="pmed-0020171-b19">19</xref>–<xref ref-type="bibr" rid="pmed-0020171-b22">22</xref>], this study obtained the information about the intention to lose weight on the basis of a current attempt to lose weight before the actual subsequent weight changes were known and 6 y prior to the baseline of the follow-up. This timing eliminates the recall and selection bias that might hamper studies in which such information is obtained later. On the other hand, subsequent weight loss may not be a direct consequence of the intent to lose weight during the following 6 y, and similarly the weight loss among those not initially intending to lose weight may be due to a later intentional weight loss. These changes over time in possible causes of the weight loss imply that the observed associations in our study can be interpreted only as conservative predictions of the effects of intentional weight loss on long-term mortality. The finding that among those intending to lose weight mortality increased only if weight was actually lost, but not if it remained stable or increased after 6 y, suggests that the excess mortality following weight loss is not due to later regain in body weight.</p>
+      <p>The most likely behavioural and psychosocial risk factors that could have confounding effects—smoking habits, alcohol drinking, physical activity, life satisfaction, work status, and income—were included in the analysis. It is reassuring that the results (with a few exceptions) were essentially independent of the adjustment for these confounders in both the original versions and the simplified recoded versions, which minimizes the likelihood of residual confounding because of insufficient precision in their assessment. The fact that the study sample consisted of adult twin individuals is unlikely to have affected the results; twinship itself was taken into account in the statistical analysis. Moreover, the genetic influence on total mortality and its relation to body weight is small [<xref ref-type="bibr" rid="pmed-0020171-b33">33</xref>,<xref ref-type="bibr" rid="pmed-0020171-b34">34</xref>], and adult twins have the same overall mortality as singletons [<xref ref-type="bibr" rid="pmed-0020171-b35">35</xref>].</p>
+      <p>Several other aspects of the results qualify their interpretation. The findings that weight loss and weight gain, compared with stable weight, were both associated with increased mortality indicates that the present study sample of overweight individuals in this respect was similar to several others without overt disease in which the same relationships have been found [<xref ref-type="bibr" rid="pmed-0020171-b10">10</xref>–<xref ref-type="bibr" rid="pmed-0020171-b14">14</xref>]. The finding that intention to lose weight as such had no detectable effect on mortality suggests that this intention is not an indicator of the participants being especially concerned about health. In particular, it does not seem to be a marker of an overall healthier or, conversely, more hazardous lifestyle resulting in mortality different from that in participants not reporting attempts to lose weight. The finding that the excess mortality in the weight-loss group with initial intention to lose weight was present also after the first 5 y of observation and throughout the entire subsequent follow-up period also supports that the weight loss in the group intending to lose weight did not reflect effects of incident diseases or other health problem inducing the weight loss.</p>
+      <p>However, we cannot exclude the possibility that this group of participants was heterogeneous, with some being very healthy and health-conscious, and others for whom intention to lose weight was an indicator of insidious or imminent health problems. In view of the difficulties in maintaining deliberate weight loss during a 6-y period, the observation that this was in fact achieved could in itself be an indicator of the presence of underlying disease processes in some of the overweight or obese participants that could have motivated the intention to lose weight, facilitated its apparent success and maintenance, and led to later increase in mortality. If this is the explanation of the finding, then it must be symptomatic chronic diseases, ongoing for more than 6 y and escaping clinical diagnosis during this period in spite of the universal and practically free access to medical care in Finland. Moreover, the effect of such diseases on total mortality would have to be strong enough to completely eliminate any beneficial effects of intentional weight loss in the entire group and to be contributing to increased mortality throughout the observation period. Although this explanation would bring our results in line with the prevailing expectations, it seems implausible and possibly hazardous to rely upon.</p>
+      <p>The analysis of the causes of death did not indicate any single disease as responsible for all the excess mortality. Cause-of-death information has its well-known limitations, and we had relatively modest numbers by cause of death. It is likely that the effects of intentional weight loss is carried through to increased mortality by a more general deleterious effect on ability to cope with or resist the risks of incident diseases, which justifies that we focus on total mortality rather than cause-specific mortality.</p>
+      <p>One condition possibly contributing to the excess total mortality could be type 2 diabetes, which can remain undiagnosed for several years and may induce weight loss. However, analysis of supplementary information on later-onset diabetes suggests that occurrence of diabetes cannot explain the excess mortality among those intending to lose weight and who did lose weight (unpublished results, based on both a follow-up questionnaire in 1990, i.e., 8 y after the start of the follow-up, and on medical certificates for diabetes medication in the national drug prescription register for diagnoses covering 1983–1994). Another possibility is non-psychotic depression, but this was not supported by the analysis of causes of death, which showed no particular excess of suicides or of cardiovascular deaths. Moreover, the inclusion of the life satisfaction score, highly correlated to depression, in the analysis did not change the results.</p>
+      <p>Although we have no definite explanation of our finding of an excess mortality following intentional weight loss, we may consider some possibilities based on comparison with other studies [<xref ref-type="bibr" rid="pmed-0020171-b17">17</xref>]. Weight loss may release toxic substances from the fat tissue [<xref ref-type="bibr" rid="pmed-0020171-b36">36</xref>], but if this mechanism were important, we would expect excess mortality in the unintentional weight-loss group as well. We may assume that intentional weight loss as induced by deliberate calorie restriction has multiple biological effects—some potentially beneficial, some potentially harmful. The net effects on the health of participants may depend on their current condition. Thus, overweight and obese participants with clinically manifest or sub-clinical diseases such as type 2 diabetes may benefit from intentional weight loss, also in terms of mortality [<xref ref-type="bibr" rid="pmed-0020171-b37">37</xref>]. However, we may speculate that in overweight or obese participants without such co-morbidities or high-risk conditions, the harmful effects of intentional weight loss may predominate and lead to excess mortality. If so, the outcome of a study of the association of weight loss with mortality would then depend on the particular admixture of healthy and diseased overweight or obese participants. The privileged conditions for conducting this type of research in Finland may have secured the identification of a study sample with minimal co-morbidity, resulting in a more clear manifestation of the harmful effects of intentional weight loss and the lack of such effects of unintentional weight loss.</p>
+      <p>Intentional weight loss may induce loss of fat-free mass, which seems an unavoidable accompanying consequence [<xref ref-type="bibr" rid="pmed-0020171-b38">38</xref>–<xref ref-type="bibr" rid="pmed-0020171-b40">40</xref>]. In cohort studies with a single baseline measurement of fat mass and fat-free mass, mortality increases with the decrease in fat-free mass [<xref ref-type="bibr" rid="pmed-0020171-b41">41</xref>–<xref ref-type="bibr" rid="pmed-0020171-b44">44</xref>]. The interpretation is further supported by a detailed re-analysis of two large longitudinal population studies in the United States, addressing the relation between total mortality and weight change in comparison with the relation between total mortality and changes in skin-fold thickness as an indicator of changes in the amount of subcutaneous fat tissue [<xref ref-type="bibr" rid="pmed-0020171-b45">45</xref>]. This analysis showed that decline in skin-fold thickness (for a given weight loss) was associated with reduced mortality, whereas overall weight loss (for a given change in skin-folds) was associated with increased mortality.</p>
+      <p>Even if the method reported being used for the attempts to lose weight at the beginning of the observation period had not been sustained, the differences in mortality between them may provide useful suggestion for explanation of the overall findings. In the present study, the distribution of the excess mortality over many years of the follow-up period suggests that the reason is not the known hazardous effects of severely imbalanced dieting. Our finding that the excess mortality was worse in the group reporting using dieting than in the group reporting using exercise, is consistent with the possibly hazardous effects of loss of fat-free body mass. In large-scale population studies, the association of changes in lean body mass and physical activity is barely detectable [<xref ref-type="bibr" rid="pmed-0020171-b38">38</xref>]. It is likely that those reporting exercise as their weight-loss method had in fact been dieting to some extent, because it is very difficult to achieve weight loss by exercising alone [<xref ref-type="bibr" rid="pmed-0020171-b46">46</xref>,<xref ref-type="bibr" rid="pmed-0020171-b47">47</xref>]. On the other hand, using exercise as part of a controlled dieting-based weight-loss program may inhibit the tendency to lose fat-free body mass [<xref ref-type="bibr" rid="pmed-0020171-b39">39</xref>,<xref ref-type="bibr" rid="pmed-0020171-b48">48</xref>], which could explain why the deleterious effects were less in this group compared with those using diet. In this connection, it is important to note that in the present study sample, reported leisure exercise, as expected, had an overall strong beneficial effect on total mortality [<xref ref-type="bibr" rid="pmed-0020171-b27">27</xref>,<xref ref-type="bibr" rid="pmed-0020171-b28">28</xref>].</p>
+      <p>To understand the difference in mortality patterns associated with intentional and unintentional weight loss in the present study, we should also consider other mechanisms. On one hand, it seems plausible that unintentional weight loss may be associated with excess mortality in overweight or obese participants who suffer from some of the many diseases that may lead to both weight loss and increased mortality; these cases were excluded as effectively as possible. On the other hand, unintentional weight loss in overweight or obese participants without co-morbidities may be interpreted in a different way. We need to allow for the possibility that the size of the fat mass may change by mechanisms other than negative energy balance enforced by deliberate calorie restriction. Health-enhancing lifestyle changes such as increased physical activity or dietary modifications may lead to loss of body fat and increase in lean body mass. This may also be the explanation why weight gain in the group intending to lose weight was followed by a lower mortality than weight gain in the group not intending to lose weight. There appear to be still unknown factors contributing to weight fluctuations in healthy individuals, in whom weight changes in one direction were the strongest predictors of subsequent weight change in the opposite direction [<xref ref-type="bibr" rid="pmed-0020171-b49">49</xref>], i.e., prior weight loss best predicted future weight gain.</p>
+      <p>In conclusion, the long-term effects of weight loss are complex, and they may be composed of oppositely operating effects with net results reflecting the balance between these effects. We may cautiously suggest that future studies assess short-term advantages of planned weight loss against possible long-term risks, and assess if the optimal strategy among already overweight individuals could be to avoid further weight gain. If this is true, it puts a major emphasis on the need for prevention of development of overweight and obesity. This conclusion does not contradict the possible beneficial effects of planned weight loss in obese individuals who have already developed co-morbidities of their obesity, such as type 2 diabetes and symptoms of cardiovascular disease [<xref ref-type="bibr" rid="pmed-0020171-b50">50</xref>]. Obviously, more research will be needed to evaluate and explain our findings before they can be used as basis for advice about intentional weight loss in the large population of otherwise healthy overweight and obese individuals.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>This study was supported by the Academy of Finland and the GenomEUtwin project (European Union Contract QLG2-CT-2002–01254). The Danish Epidemiology Science Centre is supported by the Danish National Research Foundation. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pmed-0020171-b01">
+        <label>1</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ashley</surname>
+              <given-names>FW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kannel</surname>
+              <given-names>WB</given-names>
+            </name>
+          </person-group>
+          <article-title>Relation of weight change to changes in atherogenic traits: The Framingham study.</article-title>
+          <source>J Chron Dis</source>
+          <year>1974</year>
+          <volume>27</volume>
+          <fpage>103</fpage>
+          <lpage>114</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b02">
+        <label>2</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Dattilo</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kris-Etherton</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <article-title>Effects of weight reduction on blood lipids and lipoproteins: A meta-analysis.</article-title>
+          <source>Am J Clin Nutr</source>
+          <year>1992</year>
+          <volume>56</volume>
+          <fpage>320</fpage>
+          <lpage>328</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b03">
+        <label>3</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Rainwater</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mitchell</surname>
+              <given-names>BD</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Comuzzie</surname>
+              <given-names>AG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>VandeBerg</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Stern</surname>
+              <given-names>MP</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Associations among 5-year changes in weight, physical activity, and cardiovascular disease risk factors in Mexican Americans.</article-title>
+          <source>Am J Epidemiol</source>
+          <year>2000</year>
+          <volume>152</volume>
+          <fpage>974</fpage>
+          <lpage>982</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b04">
+        <label>4</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Will</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Williamson</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ford</surname>
+              <given-names>ES</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Calle</surname>
+              <given-names>EE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Thun</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Intentional weight loss and 13-year diabetes incidence in overweight adults.</article-title>
+          <source>Am J Pub Health</source>
+          <year>2002</year>
+          <volume>92</volume>
+          <fpage>1245</fpage>
+          <lpage>1248</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b05">
+        <label>5</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <collab xlink:type="simple">World Health Organization</collab>
+          <article-title>Obesity, preventing and managing the global epidemic. Report of a WHO Consultation on Obesity.</article-title>
+          <source>&gt;World Health Organ Tech Rep Ser</source>
+          <year>2000</year>
+          <fpage>894</fpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b06">
+        <label>6</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Sjöström</surname>
+              <given-names>L</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lindroos</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Peltonen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Torgeson</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bouchard</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Lifestyle, diabetes, and cardiovascular risk factors 10 years after bariatric surgery.</article-title>
+          <source>N Engl J Med</source>
+          <year>2004</year>
+          <volume>351</volume>
+          <fpage>2683</fpage>
+          <lpage>2693</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b07">
+        <label>7</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Tuomilehto</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lindström</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Eriksson</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Valle</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hämäläinen</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Prevention of type 2 diabetes mellitus by changes in lifestyle among subjects with impaired glucose tolerance.</article-title>
+          <source>N Engl J Med</source>
+          <year>2001</year>
+          <volume>344</volume>
+          <fpage>1343</fpage>
+          <lpage>1350</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b08">
+        <label>8</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <collab xlink:type="simple">Diabetes Prevention Program Research Group</collab>
+          <article-title>Reduction in the incidence of type 2 diabetes with lifestyle intervention or metformin.</article-title>
+          <source>N Engl J Med</source>
+          <year>2004</year>
+          <volume>346</volume>
+          <fpage>393</fpage>
+          <lpage>403</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b09">
+        <label>9</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <collab xlink:type="simple">National Task Force on the Prevention and Treatment of Obesity</collab>
+          <article-title>Overweight, obesity, and health risk.</article-title>
+          <source>Arch Intern Med</source>
+          <year>2000</year>
+          <volume>160</volume>
+          <fpage>898</fpage>
+          <lpage>904</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b10">
+        <label>10</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Lee</surname>
+              <given-names>IM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Paffenbarger</surname>
+              <given-names>RS</given-names>
+            </name>
+          </person-group>
+          <article-title>Change in body weight and longevity.</article-title>
+          <source>JAMA</source>
+          <year>1992</year>
+          <volume>268</volume>
+          <fpage>2045</fpage>
+          <lpage>2049</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b11">
+        <label>11</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Andres</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Muller</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sorkin</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <article-title>Long-term effects of change in body weight on all-cause mortality.</article-title>
+          <source>Ann Int Med</source>
+          <year>1993</year>
+          <volume>119</volume>
+          <fpage>737</fpage>
+          <lpage>743</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b12">
+        <label>12</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Yaari</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Goldburt</surname>
+              <given-names>U</given-names>
+            </name>
+          </person-group>
+          <article-title>Voluntary and involuntary weight loss: Associations with long term mortality in 9,228 middle-aged and elderly men.</article-title>
+          <source>Am J Epidemiol</source>
+          <year>1998</year>
+          <volume>148</volume>
+          <fpage>546</fpage>
+          <lpage>555</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b13">
+        <label>13</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Mikkelsen</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Heitmann</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Keiding</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sørensen</surname>
+              <given-names>TIA</given-names>
+            </name>
+          </person-group>
+          <article-title>Independent effects of stable and changing body weight on total mortality.</article-title>
+          <source>Epidemiology</source>
+          <year>1999</year>
+          <volume>10</volume>
+          <fpage>671</fpage>
+          <lpage>678</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b14">
+        <label>14</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Byers</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>The observational epidemiology of changing weight: An appeal for reasons (Editorial).</article-title>
+          <source>Epidemiology</source>
+          <year>1999</year>
+          <volume>10</volume>
+          <fpage>662</fpage>
+          <lpage>664</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b15">
+        <label>15</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fontaine</surname>
+              <given-names>KR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Allison</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <article-title>Does intentional weight loss affect mortality rate?</article-title>
+          <source>Eating Behav</source>
+          <year>2001</year>
+          <volume>2</volume>
+          <fpage>87</fpage>
+          <lpage>95</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b16">
+        <label>16</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Wannamethee</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Shaper</surname>
+              <given-names>AG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Walker</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Weight change, weight fluctuation, and mortality.</article-title>
+          <source>Arch Intern Med</source>
+          <year>2002</year>
+          <volume>162</volume>
+          <fpage>2575</fpage>
+          <lpage>2580</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b17">
+        <label>17</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <collab xlink:type="simple">Sørensen TIA</collab>
+          <article-title>Weight loss causes increased mortality: Pros.</article-title>
+          <source>Obes Rev</source>
+          <year>2003</year>
+          <volume>4</volume>
+          <fpage>3</fpage>
+          <lpage>7</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b18">
+        <label>18</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Yang</surname>
+              <given-names>D</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fontaine</surname>
+              <given-names>KR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Wang</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Allison</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <article-title>Weight loss causes increased mortality: Cons.</article-title>
+          <source>Obes Rev</source>
+          <year>2003</year>
+          <volume>4</volume>
+          <fpage>9</fpage>
+          <lpage>16</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b19">
+        <label>19</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Williamson</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pamuk</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Thun</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Flanders</surname>
+              <given-names>D</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Byers</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Prospective study of intentional weight loss and mortality in never-smoking overweight US white women aged 40–64 years.</article-title>
+          <source>Am J Epidemiol</source>
+          <year>1995</year>
+          <volume>141</volume>
+          <fpage>1128</fpage>
+          <lpage>1141</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b20">
+        <label>20</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>French</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Folsom</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jeffery</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Williamson</surname>
+              <given-names>DF</given-names>
+            </name>
+          </person-group>
+          <article-title>Prospective study of intentionality of weight loss and mortality in older women: The Iowa Women's Health Study.</article-title>
+          <source>Am J Epidemiol</source>
+          <year>1999</year>
+          <volume>149</volume>
+          <fpage>504</fpage>
+          <lpage>514</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b21">
+        <label>21</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Williamson</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pamuk</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Thun</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Flanders</surname>
+              <given-names>D</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Byers</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Prospective study of intentional weight loss and mortality in overweight white men aged 40–64 years.</article-title>
+          <source>Am J Epidemiol</source>
+          <year>1999</year>
+          <volume>149</volume>
+          <fpage>491</fpage>
+          <lpage>503</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b22">
+        <label>22</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Gregg</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gerzoff</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Thompson</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Williamson</surname>
+              <given-names>DF</given-names>
+            </name>
+          </person-group>
+          <article-title>Intentional weight loss and death in overweight and obese U.S. adults 35 years of age and older.</article-title>
+          <source>Ann Int Med</source>
+          <year>2003</year>
+          <volume>138</volume>
+          <fpage>383</fpage>
+          <lpage>389</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b23">
+        <label>23</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kaprio</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Koskenvuo</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic and environmental factors in complex diseases: The older Finnish Twin Cohort.</article-title>
+          <source>Twin Res</source>
+          <year>2002</year>
+          <volume>5</volume>
+          <fpage>358</fpage>
+          <lpage>365</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b24">
+        <label>24</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Jalkanen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tuomilehto</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nissinen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Puska</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Changes in body mass index in a Finnish population between 1972 and 1982.</article-title>
+          <source>J Int Med</source>
+          <year>1989</year>
+          <volume>226</volume>
+          <fpage>163</fpage>
+          <lpage>170</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b25">
+        <label>25</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>French</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jeffery</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Folsom</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Williamson</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Byers</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Weight variability in a population-based sample of older women: Reliability and intercorrelation of measures.</article-title>
+          <source>Int J Obes Relat Metab Disord</source>
+          <year>1995</year>
+          <volume>19</volume>
+          <fpage>22</fpage>
+          <lpage>29</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b26">
+        <label>26</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Korkeila</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kaprio</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rissanen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Koskenvuo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sørensen</surname>
+              <given-names>TIA</given-names>
+            </name>
+          </person-group>
+          <article-title>Predictors of major weight gain in adult Finns: Stress, life satisfaction and personality traits.</article-title>
+          <source>Int J Obes</source>
+          <year>1998</year>
+          <volume>22</volume>
+          <fpage>949</fpage>
+          <lpage>958</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b27">
+        <label>27</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kujala</surname>
+              <given-names>UM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kaprio</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sarna</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Koskenvuo</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Relationship of leisure-time physical activity and mortality: The Finnish Twin Cohort.</article-title>
+          <source>JAMA</source>
+          <year>1998</year>
+          <volume>279</volume>
+          <fpage>440</fpage>
+          <lpage>444</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b28">
+        <label>28</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kujala</surname>
+              <given-names>UH</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kaprio</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Koskenvuo</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Modifiable risk factors as predictors of all-cause mortality: The roles of genetics and childhood environment.</article-title>
+          <source>Am J Epidemiol</source>
+          <year>2002</year>
+          <volume>156</volume>
+          <fpage>985</fpage>
+          <lpage>993</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b29">
+        <label>29</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Koivumaa-Honkanen</surname>
+              <given-names>HT</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Honkanen</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Viinamäki</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Heikkilä</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kaprio</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Self-reported life satisfaction and 20-year mortality in healthy Finnish adults.</article-title>
+          <source>Am J Epidemiol</source>
+          <year>2000</year>
+          <volume>152</volume>
+          <fpage>983</fpage>
+          <lpage>991</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b30">
+        <label>30</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Korkeila</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kaprio</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rissanen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Koskenvuo</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Consistency and change of body mass index and weight: A study of 5,967 Finnish twin pairs.</article-title>
+          <source>Int J Obes</source>
+          <year>1995</year>
+          <volume>19</volume>
+          <fpage>310</fpage>
+          <lpage>317</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b31">
+        <label>31</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Korkeila</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rissanen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kaprio</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sørensen</surname>
+              <given-names>TIA</given-names>
+            </name>
+          </person-group>
+          <article-title>Weight-loss attempts and risk of major weight gain: A prospective study in Finnish adults.</article-title>
+          <source>Am J Clin Nutr</source>
+          <year>1999</year>
+          <volume>70</volume>
+          <fpage>965</fpage>
+          <lpage>975</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b32">
+        <label>32</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <collab xlink:type="simple">StataCorp</collab>
+          <source>Stata Statistical Software, Release 7.0 [computer program]</source>
+          <year>2001</year>
+          <publisher-loc>College Station (Texas)</publisher-loc>
+          <publisher-name>Stata Corp</publisher-name>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b33">
+        <label>33</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Herskind</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>McGue</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Holm</surname>
+              <given-names>NV</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sørensen</surname>
+              <given-names>TIA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Harvald</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The heritability of human longevity: A population-based study of 2,872 Danish twin pairs born 1870–1900.</article-title>
+          <source>Hum Genet</source>
+          <year>1996</year>
+          <volume>97</volume>
+          <fpage>319</fpage>
+          <lpage>323</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b34">
+        <label>34</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Herskind</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>McGue</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Iachine</surname>
+              <given-names>IA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Holm</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sørensen</surname>
+              <given-names>TIA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Untangling genetic influences on smoking, body mass index and longevity: A multivariate study of 2,464 Danish twins followed for 28 years.</article-title>
+          <source>Hum Genet</source>
+          <year>1996</year>
+          <volume>98</volume>
+          <fpage>467</fpage>
+          <lpage>475</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b35">
+        <label>35</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Christensen</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Vaupel</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Holm</surname>
+              <given-names>NV</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yashin</surname>
+              <given-names>AI</given-names>
+            </name>
+          </person-group>
+          <article-title>Mortality among twins after age 6: Fetal origins hypothesis versus twin method.</article-title>
+          <source>BMJ</source>
+          <year>1995</year>
+          <volume>310</volume>
+          <fpage>432</fpage>
+          <lpage>436</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b36">
+        <label>36</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Pelletier</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Imbeault</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tremblay</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Energy balance and pollution by organochlorides and polychlorinated biphenyls.</article-title>
+          <source>Obes Rev</source>
+          <year>2002</year>
+          <volume>4</volume>
+          <fpage>17</fpage>
+          <lpage>24</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b37">
+        <label>37</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Gregg</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Thompson</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gerzoff</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Williamson</surname>
+              <given-names>DF</given-names>
+            </name>
+          </person-group>
+          <article-title>Trying to lose weight, losing weight and 9-year mortality in overweight US adults with diabetes.</article-title>
+          <source>Diabetes Care</source>
+          <year>2004</year>
+          <volume>27</volume>
+          <fpage>657</fpage>
+          <lpage>662</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b38">
+        <label>38</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Heitmann</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Garby</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Composition (lean and fat tissue) of weight changes in adult Danes.</article-title>
+          <source>Am J Clin Nutr</source>
+          <year>2002</year>
+          <volume>75</volume>
+          <fpage>840</fpage>
+          <lpage>847</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b39">
+        <label>39</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Garrow</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Summerbell</surname>
+              <given-names>CD</given-names>
+            </name>
+          </person-group>
+          <article-title>Meta-analysis: Effects of exercise, with and without dieting, on body composition of overweight subjects.</article-title>
+          <source>Eur J Clin Nutr</source>
+          <year>1995</year>
+          <volume>49</volume>
+          <fpage>1</fpage>
+          <lpage>10</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b40">
+        <label>40</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ensrud</surname>
+              <given-names>KE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ewing</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Stone</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cauley</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bowman</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Intentional and unintentional weight loss increases bone loss and hip fracture risk in older women.</article-title>
+          <source>J Am Geriatric Soc</source>
+          <year>2003</year>
+          <volume>51</volume>
+          <fpage>1740</fpage>
+          <lpage>1747</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b41">
+        <label>41</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Heitmann</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Erikson</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ellsinger</surname>
+              <given-names>BM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mikkelsen</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Larsson</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Mortality associated with body fat, fat free mass and body mass index among 60-year-old Swedish men—A 22 year follow-up.</article-title>
+          <source>Int J Obes</source>
+          <year>2000</year>
+          <volume>24</volume>
+          <fpage>33</fpage>
+          <lpage>37</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b42">
+        <label>42</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Allison</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zhu</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Plankey</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Faith</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Heo</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Differential associations of body mass index and adiposity with all-cause mortality among men in the first and second National Health and Nutrition Examination surveys (NHANES I and NHANES II) follow-up studies.</article-title>
+          <source>Int J Obes Relat Metab Disord</source>
+          <year>2002</year>
+          <volume>26</volume>
+          <fpage>410</fpage>
+          <lpage>416</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b43">
+        <label>43</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Zhu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Heo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Plankey</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Faith</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Allison</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <article-title>Associations of body mass index and anthropometric indicators of fat mass and fat free mass with all-cause mortality among women in the First and Second National and Nutrition Examination Surveys Follow-up Studies.</article-title>
+          <source>Ann Epidemiol</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>286</fpage>
+          <lpage>293</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b44">
+        <label>44</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Bigaard</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Frederiksen</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tjønneland</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Thomsen</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Overvad</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Body fat and fat-free mass and all-cause mortality.</article-title>
+          <source>Obes Res</source>
+          <year>2004</year>
+          <volume>12</volume>
+          <fpage>1042</fpage>
+          <lpage>1049</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b45">
+        <label>45</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Allison</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zannolli</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Faith</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Heo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pietrobelli</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Weight loss increases and fat loss decreases all-cause mortality rate: Results from two independent cohort studies.</article-title>
+          <source>Int J Obes</source>
+          <year>1999</year>
+          <volume>23</volume>
+          <fpage>603</fpage>
+          <lpage>611</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b46">
+        <label>46</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>DiPietro</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Physical activity in the prevention of obesity: Current evidence and research issues (Roundtable Consensus Statement).</article-title>
+          <source>Med Sci Sports Exerc</source>
+          <year>1999</year>
+          <volume>31</volume>
+          <fpage>S542</fpage>
+          <lpage>S546</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b47">
+        <label>47</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fogelholm</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kukkonen-Harjula</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Does physical activity prevent weight gain—A systematic review.</article-title>
+          <source>Obes Rev</source>
+          <year>2000</year>
+          <volume>1</volume>
+          <fpage>95</fpage>
+          <lpage>111</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b48">
+        <label>48</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Cox</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Burke</surname>
+              <given-names>V</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Morton</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Beilin</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Puddey</surname>
+              <given-names>IB</given-names>
+            </name>
+          </person-group>
+          <article-title>The independent and combined effects of 16 weeks of vigorous exercise and energy restriction on body mass and composition in free-living overweight men—A randomized controlled trial.</article-title>
+          <source>Metabolism</source>
+          <year>2003</year>
+          <volume>52</volume>
+          <fpage>107</fpage>
+          <lpage>115</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b49">
+        <label>49</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Colditz</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Willett</surname>
+              <given-names>WC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Stampfer</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>London</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Segal</surname>
+              <given-names>MR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Patterns of weight change and their relation to diet in a cohort of healthy women.</article-title>
+          <source>Am J Clin Nutr</source>
+          <year>1990</year>
+          <volume>51</volume>
+          <fpage>1100</fpage>
+          <lpage>1105</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020171-b50">
+        <label>50</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Eilat-Adar</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Goldburt</surname>
+              <given-names>U</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Resnick</surname>
+              <given-names>HE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Howard</surname>
+              <given-names>BV</given-names>
+            </name>
+          </person-group>
+          <article-title>Intentional weight loss, blood lipids and coronary morbidity and mortality.</article-title>
+          <source>Curr Opinion Lipid</source>
+          <year>2005</year>
+          <volume>16</volume>
+          <fpage>5</fpage>
+          <lpage>9</lpage>
+        </nlm-citation>
+      </ref>
+    </ref-list>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>BMI</term>
+          <def>
+            <p>body mass index</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CI</term>
+          <def>
+            <p>confidence interval</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>HR</term>
+          <def>
+            <p>hazard ratio</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    
+  </back>
+</article>

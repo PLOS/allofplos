@@ -182,7 +182,7 @@ def convert_country(country):
         country = 'Panama'
     elif 'Canada' in country:
         country = 'Canada'
-    elif 'Colombia' in country:
+    elif 'Colombia' in country or country == 'Universidad Aut':
         country = 'Colombia'
     elif 'Spain' in country or country=='España':
         country = 'Spain'
@@ -204,7 +204,8 @@ def convert_country(country):
         country = 'Taiwan'
     elif country == 'Brasil':
         country = 'Brazil'
-    elif country == 'México' or 'Mexico' in country:
+    elif country == 'México' or 'Mexico' in country or \
+            country == 'Centro de Investigación':
         country = 'Mexico'
     elif 'Slowakia' in country:
         country = 'Slowakia'

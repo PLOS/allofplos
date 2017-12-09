@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-12-08831</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0036880</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Neuroscience</subject>
+            <subj-group>
+              <subject>Cognitive neuroscience</subject>
+              <subj-group>
+                <subject>Cognition</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Mental health</subject>
+            <subj-group>
+              <subject>Psychology</subject>
+              <subj-group>
+                <subject>Cognitive psychology</subject>
+                <subject>Personality</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Non-clinical medicine</subject>
+            <subj-group>
+              <subject>Religion and spirituality</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Anthropology</subject>
+            <subj-group>
+              <subject>Cultural anthropology</subject>
+              <subj-group>
+                <subject>Religion</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Psychology</subject>
+            <subj-group>
+              <subject>Cognitive psychology</subject>
+              <subject>Social psychology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Sociology</subject>
+            <subj-group>
+              <subject>Religion</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Mental Health</subject>
+          <subject>Neuroscience</subject>
+          <subject>Non-Clinical Medicine</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Mentalizing Deficits Constrain Belief in a Personal God</article-title><alt-title alt-title-type="running-head">Mentalizing and Belief in God</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Norenzayan</surname>
+            <given-names>Ara</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Gervais</surname>
+            <given-names>Will M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Trzesniewski</surname>
+            <given-names>Kali H.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>Department of Psychology, University of British Columbia, Vancouver, Canada</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Department of Human Development and Family Studies, University of California, Davis, Davis, California, United States of America</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Zalla</surname>
+            <given-names>Tiziana</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Ecole Normale Supérieure, France</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">ara@psych.ubc.ca</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: AN WG. Performed the experiments: WG AN KT. Analyzed the data: AN WG KT. Contributed reagents/materials/analysis tools: AN WG KT. Wrote the paper: AN WG KT.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>30</day>
+        <month>5</month>
+        <year>2012</year>
+      </pub-date><volume>7</volume><issue>5</issue><elocation-id>e36880</elocation-id><history>
+        <date date-type="received">
+          <day>23</day>
+          <month>3</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>13</day>
+          <month>4</month>
+          <year>2012</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2012</copyright-year><copyright-holder>Norenzayan et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <p>Religious believers intuitively conceptualize deities as intentional agents with mental states who anticipate and respond to human beliefs, desires and concerns. It follows that mentalizing deficits, associated with the autistic spectrum and also commonly found in men more than in women, may undermine this intuitive support and reduce belief in a personal God. Autistic adolescents expressed less belief in God than did matched neuro-typical controls (Study 1). In a Canadian student sample (Study 2), and two American national samples that controlled for demographic characteristics and other correlates of autism and religiosity (Study 3 and 4), the autism spectrum predicted reduced belief in God, and mentalizing mediated this relationship. Systemizing (Studies 2 and 3) and two personality dimensions related to religious belief, Conscientiousness and Agreeableness (Study 3), failed as mediators. Mentalizing also explained the robust and well-known, but theoretically debated, gender gap in religious belief wherein men show reduced religious belief (Studies 2–4).</p>
+      </abstract><funding-group><funding-statement>The authors acknowledge support by SSHRC (Social Sciences and Humanities Research Council) grants to Norenzayan (410-2010-0297) and Trzesniewski (410-2009-1449), and an APA (American Psychological Association) Division 36 research seed grant to Gervais. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts>
+        <page-count count="8"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Belief in God and other supernatural agents is culturally and historically widespread, and is a deeply affecting aspect of human life <xref ref-type="bibr" rid="pone.0036880-Atran1">[1]</xref>. Yet relatively little is known about the cognitive foundations of these complex sociocultural beliefs. Believers intuitively treat gods as intentional agents with mental states who enter into social relationships with humans, using supernatural powers to assuage existential concerns, respond to human desires, and monitor their social behaviour <xref ref-type="bibr" rid="pone.0036880-Atran1">[1]</xref>–<xref ref-type="bibr" rid="pone.0036880-Guthrie1">[5]</xref>. Cognitive theories therefore converge on the hypothesis that supernatural agent beliefs are partly rooted in ordinary human social cognition. Specifically, the social-cognitive capacity to represent and reason about minds-termed mentalizing, theory of mind, or mind perception <xref ref-type="bibr" rid="pone.0036880-Mitchell1">[6]</xref>, <xref ref-type="bibr" rid="pone.0036880-Waytz1">[7]</xref> -also enables the mental representation of God and other supernatural agents <xref ref-type="bibr" rid="pone.0036880-Barrett1">[2]</xref>, <xref ref-type="bibr" rid="pone.0036880-Waytz1">[7]</xref>. If mentalizing supports the mental representation of supernatural agents, then mentalizing deficits associated with the autistic spectrum and also commonly found in men more than in women <xref ref-type="bibr" rid="pone.0036880-Mitchell1">[6]</xref>, <xref ref-type="bibr" rid="pone.0036880-BaronCohen1">[8]</xref>, <xref ref-type="bibr" rid="pone.0036880-Crespi1">[9]</xref> may undermine intuitive support for supernatural agent concepts and reduce belief in God <xref ref-type="bibr" rid="pone.0036880-Atran1">[1]</xref>, <xref ref-type="bibr" rid="pone.0036880-Barrett2">[10]</xref>–<xref ref-type="bibr" rid="pone.0036880-McCauley1">[13]</xref>. Here we examine the hypothesis-long predicted, though currently untested- that mentalizing deficits constrain belief in God.</p>
+      <p>In neuroimaging studies, thinking about <xref ref-type="bibr" rid="pone.0036880-Kapogiannis1">[14]</xref> and praying to <xref ref-type="bibr" rid="pone.0036880-Schjoedt1">[15]</xref> God activates brain regions implicated in mentalizing; thus mentalizing might be a necessary component of belief in God, without being a sufficient cause. When adults form inferences about God's mind, they show the same mentalizing biases that are typically found when reasoning about other peoples' minds <xref ref-type="bibr" rid="pone.0036880-Barrett3">[16]</xref>–<xref ref-type="bibr" rid="pone.0036880-Gervais1">[18]</xref>. Developmentally, children's reasoning about God's mental states, and about other non-physical agents, tracks the cognitive development of mentalizing tendencies <xref ref-type="bibr" rid="pone.0036880-Lane1">[19]</xref>, <xref ref-type="bibr" rid="pone.0036880-Taylor1">[20]</xref>. Finally, mentalizing is deficient at higher levels of the autism spectrum <xref ref-type="bibr" rid="pone.0036880-BaronCohen1">[8]</xref>, <xref ref-type="bibr" rid="pone.0036880-Crespi1">[9]</xref>, <xref ref-type="bibr" rid="pone.0036880-Castelli1">[21]</xref>, <xref ref-type="bibr" rid="pone.0036880-Gray1">[22]</xref>, and interestingly men are both more likely to score high on the autism spectrum <xref ref-type="bibr" rid="pone.0036880-BaronCohen2">[23]</xref> and more likely to be non-believers <xref ref-type="bibr" rid="pone.0036880-Roth1">[24]</xref>–<xref ref-type="bibr" rid="pone.0036880-Walter1">[26]</xref>. These lines of evidence suggest that mentally representing supernatural beings (and their mental states) requires mentalizing capacities. This in turn implies that mentalizing deficits would constrain intuitive support for belief in God. Recent unpublished findings by Caldwell-Harris, Murphy, Velazquez, and McNamara (2011) provide some indirect support to this line of reasoning. Adults who reported being diagnosed with autism spectrum disorder were more likely than a neuro-typical comparison group to self-identify as atheist and less likely to belong to an organized religion.</p>
+      <sec id="s1a">
+        <title>The Present Research</title>
+        <p>We used an individual differences approach to test three interrelated cognitive hypotheses: 1) the autistic spectrum is inversely related to belief in God, 2) mentalizing mediates this relation, and 3) mentalizing mediates the long-known, but theoretically ambiguous, gender gap wherein men show reduced religious belief than women. Study 1 compared religious belief in a sample of adolescents with clinical diagnoses of autism with a neuro-typical sample matched on relevant socio-demographic characteristics. Studies 2–4 replicated and extended our findings to three distinct non-clinical samples that measured autism as a continuous variable rather than as a clinical diagnosis. These studies also enabled formal mediation analyses, in which we tested our hypotheses with multiple mediation bootstrapping based on 9999 resamples <xref ref-type="bibr" rid="pone.0036880-Preacher1">[27]</xref>, an analytic technique for simultaneously testing multiple potential mediators (thus avoiding the inferential pitfalls of sequential analyses). In all analyses where gender was included, it was coded (female = 0, male = 1), and all other variables were standardized. Studies 2–4 also controlled for additional socio-demographic and psychological variables related to autism, mentalizing, and religiosity that addressed several alternative explanations, which we evaluate in the General Discussion.</p>
+      </sec>
+      <sec id="s1b">
+        <title>Ethics Statement</title>
+        <p>For Studies 2–4, approval was obtained from the Behavioral Research Ethics Board (BREB) at the University of British Columbia, and all participants provided written informed consent (for participants who completed the study via the internet, consent was provided by clicking a designated button online; this was approved by the UBC BREB). For Study 1, the parent was given a letter of information and signed a written consent form and the child was given an assent form to read and sign. Approval for the study was obtained from the University of Western Ontario Research Ethics Board.</p>
+      </sec>
+    </sec>
+    <sec id="s2">
+      <title>Results and Discussion</title>
+      <sec id="s2a">
+        <title>Study 1</title>
+        <p>In a logistic regression model with autism diagnosis and IQ predicting belief in God, autistic participants were only 11% as likely as neuro-typical controls to strongly endorse God, OR = .11, 95% CI = .01, .96, <italic>Wald</italic> = 3.98, <italic>p</italic> = .046, and IQ was unrelated to belief, OR = 1.01, 95% CI = .96, 1.06, <italic>Wald</italic> = .22, <italic>p</italic> = .64.</p>
+        <p>This study allowed comparison of individuals with autism diagnoses with a matched control group, but the small sample size rendered statistical mediation testing unfeasible. As an alternative, we entered IQ and parental ratings of adolescent mentalizing tendencies (the two were uncorrelated <italic>r</italic> = .15, <italic>p</italic> = .50) as independent predictors of belief in God. In this logistic regression model, only mentalizing was a significant predictor: for each standard deviation decrease in mentalizing, participants were only 21% as likely to strongly endorse God, OR = .21, 95% CI = .06, .73, <italic>Wald</italic> = 6.07, <italic>p</italic> = .01, and again IQ was not a significant predictor, OR = 1.03, 95% CI = .98, 1.08, <italic>Wald</italic> = .96, <italic>p</italic> = .33.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Study 2</title>
+        <p>Study 2 utilized a Canadian student sample and measured belief in God, a standard self-report measure of the autism spectrum, and both mentalizing (The Empathy Quotient) and systemizing <xref ref-type="bibr" rid="pone.0036880-Wakabayashi1">[28]</xref> as potential mediators. Empathy has been used extensively to detect individual differences in adult mentalizing tendencies, including perspective taking, interest in others' beliefs and desires, and understanding emotions. It is inversely correlated with autism and with being male <xref ref-type="bibr" rid="pone.0036880-BaronCohen1">[8]</xref>, <xref ref-type="bibr" rid="pone.0036880-Wakabayashi1">[28]</xref>. Systemizing assesses individual differences in abilities and interests concerning physical and rule-based systems. Because systemizing is positively correlated with autism and with being male <xref ref-type="bibr" rid="pone.0036880-Wakabayashi1">[28]</xref>, but is typically orthogonal to mentalizing, it was included as a second potential mediator. Neither mentalizing nor systemizing has religious content or share conceptual resemblance with the belief in God measure. We tested our two primary hypotheses with autism and gender (respectively) predicting belief in God, and mentalizing (Empathy) and systemizing as potential mediators.</p>
+        <p>First, we tested our autism-related hypothesis (<xref ref-type="fig" rid="pone-0036880-g001">Fig. 1A</xref>). As hypothesized, higher autism scores predicted lower belief in God, <italic>β</italic> = −.13, <italic>p</italic> = .02 (controlling for gender). Critically, as predicted, mentalizing significantly mediated this relationship, b<sub>MentalizingIndirect</sub> = −.07, 95% CI = −.14, −.01. Systemizing was not a significant mediator, b<sub>SystemizingIndirect</sub> = .00, 95% CI = −.007, .009.</p>
+        <fig id="pone-0036880-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0036880.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Study 2: Mentalizing, but not systemizing, mediated the effects of both autism spectrum (A) and gender (B) on belief in God (<italic>N</italic> = 327).</title>
+            <p>†<italic>p</italic>&lt;.10, *<italic>p</italic>&lt;.05, **<italic>p</italic>&lt;.01, ***<italic>p</italic>&lt;.001. Note. OR = odds ratio; <italic>β</italic> = standardized beta; b = unstandardized beta. Values in parentheses are mediated effects. <underline>Autism Analysis Covariate</underline>: Gender. <underline>Gender Analysis Covariate</underline>: Autism Spectrum.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0036880.g001" xlink:type="simple"/>
+        </fig>
+        <p>We next examined the effect of gender (<xref ref-type="fig" rid="pone-0036880-g001">Fig. 1B</xref>). Consistent with past research, there was a trend for men to report weaker belief in God than women (controlling for the autism spectrum), <italic>b</italic> = −.21, <italic>p</italic> = .08 (this gender gap was significant at <italic>p</italic> = .05 when autism was not controlled). As hypothesized, there was a significant indirect effect, such that men were lower in mentalizing, and in turn lower mentalizing predicted lower belief in God, b<sub>MentalizingIndirect</sub> = .04, 95% CI = .003, .103; there was no significant indirect effect for systemizing, b<sub>SystemizingIndirect</sub> = −.001, 95% CI = −.086, .084, even though gender more strongly predicted systemizing (<italic>b</italic> = .71) than mentalizing (<italic>b</italic> = −.21).</p>
+      </sec>
+      <sec id="s2c">
+        <title>Study 3</title>
+        <p>Study 3 replicated and extended findings from Study 2 to a broad national sample of American adults, controlled for a range of covariates of the autism spectrum and religious belief, and used an alternative measure of belief in and a personal relationship with God. We again tested mentalizing (The Empathy Quotient) and systemizing as mediators. In addition, we measured and tested two additional potential mediators. Two of the five basic facets of personality <xref ref-type="bibr" rid="pone.0036880-John1">[29]</xref>, Conscientiousness and Agreeableness, are reliably related to religious belief and involvement in both previous research <xref ref-type="bibr" rid="pone.0036880-McCullough1">[30]</xref>, <xref ref-type="bibr" rid="pone.0036880-Saroglou1">[31]</xref> and also in the current sample. Therefore it is plausible that they could also explain links between autism or gender and belief in God.</p>
+        <p>In a logistic regression model with autism spectrum predicting belief in a personal God, controlling for gender, age, educational attainment, income, and frequency of religious attendance, for each standard deviation increase in autism scores, participants were only 80% as likely to strongly endorse a personal God, OR = .80, 95% CI = .66, .97, <italic>Wald</italic> = 5.25, <italic>p</italic> = .02. Mentalizing emerged again as a significant mediator of this relationship, b<sub>MentalizingIndirect</sub> = −.20, 95% CI = −.37, −.04, while systemizing did not, b<sub>SystemizingIndirect</sub> = −.007, 95% CI = −.03, .008 (<xref ref-type="fig" rid="pone-0036880-g002">Fig. 2A</xref>). Furthermore, neither of the two personality measures were significant mediators, b<sub>ConscientiousnessIndirect</sub> = −.02, 95% CI = −.07, .02, b<sub>AgreeablenessIndirect</sub> = −.10, 95% CI = −.20, .004.</p>
+        <fig id="pone-0036880-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0036880.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Study 3: Mentalizing, but not systemizing, mediated the effects of both autism spectrum (A) and gender (B) on belief in a personal God (<italic>N</italic> = 706).</title>
+            <p>*<italic>p</italic>&lt;.05, **<italic>p</italic>&lt;.01, ***<italic>p</italic>&lt;.001. Note. OR = odds ratio; <italic>β</italic> = standardized beta; b = unstandardized beta. Agreeableness, or Conscientiousness (not shown) also failed as mediators. Values in parentheses are mediated effects. <underline>Autism Analysis Covariates</underline>: Gender, Age, Education, Income, Religious attendance. <underline>Gender Analysis Covariates</underline>: Autism Spectrum, Age, Education, Income, Religious attendance.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0036880.g002" xlink:type="simple"/>
+        </fig>
+        <p>In a separate logistic regression model, men were only 60% as likely to report strong belief in a personal God as women, controlling for the autism spectrum, age, income, educational attainment, and frequency of religious attendance, OR = .60, 95% CI = .41, .89, <italic>Wald</italic> = 6.55, <italic>p</italic> = .01. Replicating the pattern from Study 2, there was a significant indirect effect such that men were lower in mentalizing, and in turn lower mentalizing scores predicted lower belief in a personal God, b<sub>MentalizingIndirect</sub> = −.15, 95% CI = −.28, −.06 (<xref ref-type="fig" rid="pone-0036880-g002">Fig. 2B</xref>); there was no significant indirect effect for any other potential mediator, b<sub>SystemizingIndirect</sub> = −.007, 95% CI = −.03, .008, b<sub>ConscientiousnessIndirect</sub> = −.02, 95% CI = −.07, .02, b<sub>AgreeablenessIndirect</sub> = −.10, 95% CI = −.20, .004. It was noteworthy that systemizing again failed as a mediator of the gender effect, despite the fact that, once again, gender more strongly predicted systemizing (<italic>b</italic> = .62) than mentalizing (<italic>b</italic> = −.33) (<xref ref-type="fig" rid="pone-0036880-g002">Fig. 2B</xref>).</p>
+        <p>Finally, in a comprehensive logistic regression model predicting high belief in a personal God, including all predictors (autism and gender), covariates (age, education, income, religious attendance), and potential mediating variables (mentalizing, systemizing, Agreeableness, and Conscientiousness), mentalizing emerged as a specific, independent, and robust predictor of belief in a personal God, OR = 1.41, <italic>Wald</italic> = 6.01, <italic>p</italic> = .01 (<xref ref-type="table" rid="pone-0036880-t001">Table 1</xref>). Older age and religious attendance also independently predicted belief in God; Agreeableness and systemizing were statistically marginal predictors (<xref ref-type="table" rid="pone-0036880-t001">Table 1</xref>).</p>
+        <table-wrap id="pone-0036880-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0036880.t001</object-id><label>Table 1</label><caption>
+            <title>Logistic Regression Model Predicting High Belief in God (Study 3, N = 706).</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0036880-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0036880.t001" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Variable</td>
+                <td align="left" colspan="1" rowspan="1">
+                  <italic>odds  ratio</italic>
+                </td>
+                <td align="left" colspan="1" rowspan="1">95% CI</td>
+                <td align="left" colspan="1" rowspan="1">
+                  <italic>Wald</italic>
+                </td>
+                <td align="left" colspan="1" rowspan="1">
+                  <italic>P</italic>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Mentalizing (Empathy Quotient)</td>
+                <td align="left" colspan="1" rowspan="1">1.41</td>
+                <td align="left" colspan="1" rowspan="1">1.07–1.86</td>
+                <td align="left" colspan="1" rowspan="1">6.01</td>
+                <td align="left" colspan="1" rowspan="1">.01</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Systemizing</td>
+                <td align="left" colspan="1" rowspan="1">.83</td>
+                <td align="left" colspan="1" rowspan="1">.66–1.03</td>
+                <td align="left" colspan="1" rowspan="1">2.93</td>
+                <td align="left" colspan="1" rowspan="1">.09</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Agreeableness</td>
+                <td align="left" colspan="1" rowspan="1">1.26</td>
+                <td align="left" colspan="1" rowspan="1">.98–1.61</td>
+                <td align="left" colspan="1" rowspan="1">3.23</td>
+                <td align="left" colspan="1" rowspan="1">.07</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Conscientiousness</td>
+                <td align="left" colspan="1" rowspan="1">1.14</td>
+                <td align="left" colspan="1" rowspan="1">.91–1.43</td>
+                <td align="left" colspan="1" rowspan="1">1.30</td>
+                <td align="left" colspan="1" rowspan="1">.25</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Autism Spectrum (mediated)</td>
+                <td align="left" colspan="1" rowspan="1">1.09</td>
+                <td align="left" colspan="1" rowspan="1">.85–1.39</td>
+                <td align="left" colspan="1" rowspan="1">.51</td>
+                <td align="left" colspan="1" rowspan="1">.42</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Gender (female vs. male) (mediated)</td>
+                <td align="left" colspan="1" rowspan="1">.78</td>
+                <td align="left" colspan="1" rowspan="1">.50–1.22</td>
+                <td align="left" colspan="1" rowspan="1">1.14</td>
+                <td align="left" colspan="1" rowspan="1">.29</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Education</td>
+                <td align="left" colspan="1" rowspan="1">.94</td>
+                <td align="left" colspan="1" rowspan="1">.76–1.16</td>
+                <td align="left" colspan="1" rowspan="1">.36</td>
+                <td align="left" colspan="1" rowspan="1">.55</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Income</td>
+                <td align="left" colspan="1" rowspan="1">.88</td>
+                <td align="left" colspan="1" rowspan="1">.71–1.10</td>
+                <td align="left" colspan="1" rowspan="1">1.17</td>
+                <td align="left" colspan="1" rowspan="1">.28</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Age</td>
+                <td align="left" colspan="1" rowspan="1">1.38</td>
+                <td align="left" colspan="1" rowspan="1">1.11–1.70</td>
+                <td align="left" colspan="1" rowspan="1">8.66</td>
+                <td align="left" colspan="1" rowspan="1">.003</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Rel. Attendance</td>
+                <td align="left" colspan="1" rowspan="1">5.53</td>
+                <td align="left" colspan="1" rowspan="1">4.24–7.20</td>
+                <td align="left" colspan="1" rowspan="1">160.36</td>
+                <td align="left" colspan="1" rowspan="1">.0001</td>
+              </tr>
+            </tbody>
+          </table></alternatives></table-wrap>
+      </sec>
+      <sec id="s2d">
+        <title>Study 4</title>
+        <p>Study 4 again replicated our findings in another national, broad sample of American adults, and controlled for four different covariates (age, education, frequency of religious attendance, and a new 3-item measure of interest in math, science, and engineering, or IMSE). In addition to the Empathy Quotient, we added a second distinct measure of mentalizing-the performance-based Reading the Mind in the Eyes or Mindreading task <xref ref-type="bibr" rid="pone.0036880-BaronCohen3">[32]</xref>.</p>
+        <p>In a logistic regression model, the autistic spectrum inversely predicted belief in God, controlling for gender and the four covariates: for each standard deviation increase in autism scores, participants were only 66% as likely to strongly endorse God, OR = .66, 95% CI = .53, .84, <italic>Wald</italic> = 12.11, <italic>p</italic> = .001. The two distinct mentalizing measures significantly and independently mediated this relationship: b<sub>EmpathyIndirect</sub> = −.25, 95% CI = −.41, −.10, and b<sub>MindreadingIndirect</sub> = −.07, 95% CI = −.14, −.02 (<xref ref-type="fig" rid="pone-0036880-g003">Fig. 3A</xref>).</p>
+        <fig id="pone-0036880-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0036880.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Study 4: Two distinct measures of mentalizing mediated the effects of both autism spectrum (A) and gender (B) on belief in God (<italic>N</italic> = 452).</title>
+            <p>*<italic>p</italic>&lt;.05, **<italic>p</italic>&lt;.01, ***<italic>p</italic>&lt;.001. Note. OR = odds ratio; <italic>β</italic> = standardized beta; b = unstandardized beta. Values in parentheses are mediated effects. <underline>Autism Analysis Covariates</underline>: Gender, Age, Education, Religious attendance, Interest in math, science, engineering. <underline>Gender Analysis Covariates</underline>: Autism Spectrum, Age, Education, Religious attendance, Interest in math, science, engineering.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0036880.g003" xlink:type="simple"/>
+        </fig>
+        <p>A gender gap was again observed: men were 47% as likely as women to strongly endorse God, OR = .47, 95% CI = .30, .75, <italic>Wald</italic> = 10.07, <italic>p</italic> = .002, controlling for all four covariates and the autism spectrum. As hypothesized, both mentalizing measures independently mediated this gender effect: b<sub>EmpathyIndirect</sub> = .27, 95% CI = .12, .45, and b<sub>MindreadingIndirect</sub> = .11, 95% CI = .02, .25 (<xref ref-type="fig" rid="pone-0036880-g003">Fig. 3B</xref>). In a comprehensive logistic regression model, the two mentalizing measures emerged as significant predictors. Lower education and religious attendance also independently predicted belief in God (<xref ref-type="table" rid="pone-0036880-t002">Table 2</xref>).</p>
+        <table-wrap id="pone-0036880-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0036880.t002</object-id><label>Table 2</label><caption>
+            <title>Logistic Regression Model Predicting High Belief in God (Study 4, N = 452).</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0036880-t002-2" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0036880.t002" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Variable</td>
+                <td align="left" colspan="1" rowspan="1">
+                  <italic>odds ratio</italic>
+                </td>
+                <td align="left" colspan="1" rowspan="1">95% CI</td>
+                <td align="left" colspan="1" rowspan="1">
+                  <italic>Wald</italic>
+                </td>
+                <td align="left" colspan="1" rowspan="1">
+                  <italic>P</italic>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Mentalizing I (Empathy Quotient)</td>
+                <td align="left" colspan="1" rowspan="1">1.64</td>
+                <td align="left" colspan="1" rowspan="1">1.24–2.19</td>
+                <td align="left" colspan="1" rowspan="1">11.79</td>
+                <td align="left" colspan="1" rowspan="1">.001</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Mentalizing II (Mindreading)</td>
+                <td align="left" colspan="1" rowspan="1">1.39</td>
+                <td align="left" colspan="1" rowspan="1">1.09–1.79</td>
+                <td align="left" colspan="1" rowspan="1">6.92</td>
+                <td align="left" colspan="1" rowspan="1">.009</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Autism Spectrum (mediated)</td>
+                <td align="left" colspan="1" rowspan="1">.89</td>
+                <td align="left" colspan="1" rowspan="1">.68–1.17</td>
+                <td align="left" colspan="1" rowspan="1">.68</td>
+                <td align="left" colspan="1" rowspan="1">.41</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Gender (female vs. male) (mediated)</td>
+                <td align="left" colspan="1" rowspan="1">.67</td>
+                <td align="left" colspan="1" rowspan="1">.40–1.09</td>
+                <td align="left" colspan="1" rowspan="1">2.62</td>
+                <td align="left" colspan="1" rowspan="1">.11</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Education</td>
+                <td align="left" colspan="1" rowspan="1">.80</td>
+                <td align="left" colspan="1" rowspan="1">.63–1.01</td>
+                <td align="left" colspan="1" rowspan="1">3.52</td>
+                <td align="left" colspan="1" rowspan="1">.06</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Age</td>
+                <td align="left" colspan="1" rowspan="1">1.13</td>
+                <td align="left" colspan="1" rowspan="1">.90–1.42</td>
+                <td align="left" colspan="1" rowspan="1">1.15</td>
+                <td align="left" colspan="1" rowspan="1">.28</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Rel. Attendance</td>
+                <td align="left" colspan="1" rowspan="1">3.68</td>
+                <td align="left" colspan="1" rowspan="1">2.82–4.79</td>
+                <td align="left" colspan="1" rowspan="1">92.63</td>
+                <td align="left" colspan="1" rowspan="1">.0001</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Interest in Math, Science, Engineering</td>
+                <td align="left" colspan="1" rowspan="1">1.02</td>
+                <td align="left" colspan="1" rowspan="1">.80–1.31</td>
+                <td align="left" colspan="1" rowspan="1">0.03</td>
+                <td align="left" colspan="1" rowspan="1">.85</td>
+              </tr>
+            </tbody>
+          </table></alternatives></table-wrap>
+      </sec>
+      <sec id="s2e">
+        <title>General Discussion</title>
+        <p>We found new evidence for an inverse link between the autism spectrum and belief in God that was explained by mentalizing, as predicted by cognitive theories of religion <xref ref-type="bibr" rid="pone.0036880-Barrett2">[10]</xref>–<xref ref-type="bibr" rid="pone.0036880-McCauley1">[13]</xref>. Mentalizing also explained the widely observed <xref ref-type="bibr" rid="pone.0036880-Roth1">[24]</xref> gender gap in religious belief. Our findings should be interpreted with some caution; although the results held controlling for several key socio-demographic characteristics, further research conducted in other cultural contexts should assess generalizability of findings <xref ref-type="bibr" rid="pone.0036880-Henrich1">[33]</xref>. Most of the measures were self-report (or observer-report in Study 1), which are known to have their limitations. Moreover, the correlational natures of the observations are another limitation and preclude definite causal inferences without further experimental research. Nevertheless, results were robust to various methodological checks, including different sampling strategies, alternative measures of autism, mentalizing, and religious belief, and the inclusion of several theoretically relevant control variables addressing several alternative accounts.</p>
+        <p>Specifically, one alternative is that high levels of autism cause adjustment difficulties in social situations, leading to lower levels of religious attendance, which in turn reduce religious belief. Contrary to this prediction, the effect of autism on belief in God remained significant after controlling for religious attendance (Studies 3–4), and disappeared only after controlling for mentalizing. This demonstrates that the effect of autism on belief exists even after removing the considerable overlap between belief in God and religious attendance. Relatedly, the relationship between the autism spectrum and belief cannot be solely a by-product of the more challenging social circumstances of autistic individuals, as identical patterns emerged when autism was measured as a continuous variable in a non-clinical sample of university students sharing similar social circumstances (Study 2).</p>
+        <p>A second possible alternative is reverse-causation: that religious involvement somehow causes higher levels of mentalizing, which in turn predict low scores on the autism spectrum. One causal path for this alternative is that belief in God encourages greater social involvement in religious groups and activities, which in turn increases mentalizing tendencies and decreases the likelihood of being on the autism spectrum. This interpretation did not receive support in two studies, because holding constant frequency of religious attendance did not eliminate the effect of mentalizing on belief in God. Moreover, it fails to account for the gender findings (belief in God cannot cause gender), whereas the mentalizing hypothesis parsimoniously explains both the autism and gender effects. Another reverse-causation pathway is that religious involvement leads to greater levels of mentally-simulated social engagement with supernatural agents believed to have elaborate mental states, which in turn encourages more mentalizing, and lower autism scores. Future research could test this hypothesis, but we note that this alternative pathway is compatible with the hypothesis that mentalizing deficits constrain religious belief.</p>
+        <p>Third, it is possible that the autism spectrum is associated with interest in math, science, and engineering (IMSE), which in turn reduces religious belief. However, Study 4 statistically controlled for IMSE, which did not independently predict belief in God (<xref ref-type="table" rid="pone-0036880-t002">Table 2</xref>). Similarly, systemizing, a variable closely linked to IMSE, failed as a mediator (Studies 2–3). Fourth, the link between autism and low belief in God was not explained by general intelligence: autism remained a significant predictor of low belief in God even after statistically controlling for IQ (Study 1), and education (Studies 3–4), which is typically correlated with IQ. Fifth, the two basic personality dimensions that are most reliably predictive of religiosity, Agreeableness and Conscientiousness <xref ref-type="bibr" rid="pone.0036880-McCullough1">[30]</xref>, similarly failed as mediators.</p>
+        <p>Cognitive approaches to religion emphasize that a reliably developing social cognitive mechanism-mentalizing or theory of mind-is a key foundation that supports the intuitive understanding of God or gods. Present findings bolster this hypothesis, and further demonstrate that mentalizing deficits undermine not only intuitive understanding of God, but belief as well. Furthermore, these findings suggest one reason why, despite rich sociocultural diversity, key aspects of religion reoccur across history and cultures. Additionally, the robust gender gap in religious belief has been recognized for decades, although its origins continue to be vigorously debated <xref ref-type="bibr" rid="pone.0036880-Roth1">[24]</xref>–<xref ref-type="bibr" rid="pone.0036880-Walter1">[26]</xref>. Our findings contribute to this debate by providing an important and previously overlooked psychological explanation for the overrepresentation of men among disbelievers.</p>
+        <p>Finally, we emphasize that our data do not suggest that religious disbelief solely arises through mentalizing deficits; multiple psychological and socio-cultural pathways likely lead to a complex and over-determined phenomenon such as disbelief in God or gods. Therefore, mentalizing deficits are one pathway among several to disbelief. Analytic cognitive processing that suppresses or overrides the intuitions that make theism cognitively compelling <xref ref-type="bibr" rid="pone.0036880-Gervais2">[34]</xref> and exposure to secular cultural contexts lacking cues that one should believe in God or gods <xref ref-type="bibr" rid="pone.0036880-Gervais3">[35]</xref> also likely promote religious disbelief. In other words, the present results suggest that disbelief can result from mentalizing deficits, but it can also arise from multiple other sources, holding constant mentalizing tendencies.</p>
+        <p>A complete scientific account of religious belief and disbelief therefore requires consideration of not only cognitive underpinnings such as mentalizing and other core cognitive biases such as dualistic intuitions and teleological or purpose-driven thinking <xref ref-type="bibr" rid="pone.0036880-Bloom1">[12]</xref>, <xref ref-type="bibr" rid="pone.0036880-Boyer2">[36]</xref>. Equally important in explaining their cultural prevalence, supernatural agent beliefs­once cognitively available-can be co-opted for motivational and social functions, because of both their palliative effects on existential anxieties <xref ref-type="bibr" rid="pone.0036880-Atran1">[1]</xref> and their facilitative effects on cooperation in large, anonymous groups in a cultural evolutionary process <xref ref-type="bibr" rid="pone.0036880-Norenzayan1">[37]</xref>, <xref ref-type="bibr" rid="pone.0036880-McKay1">[38]</xref>. Finally, the prevalence and content of supernatural agent beliefs, although constrained by core social cognitive capacities, respond to and fluctuate with socio-demographic conditions across time and cultures <xref ref-type="bibr" rid="pone.0036880-Norris1">[39]</xref>. Within this broader theoretical landscape, these studies present new evidence for a social cognitive mechanism underlying one source of individual differences in religious belief.</p>
+      </sec>
+    </sec>
+    <sec id="s3" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s3a">
+        <title>Study 1</title>
+        <sec id="s3a1">
+          <title>Participants</title>
+          <p>We recruited 12 autistic and 13 neuro-typical adolescents from the same South Florida neighbourhood. Participants were matched on key demographic and socio-economic variables (see <xref ref-type="table" rid="pone-0036880-t003">Table 3</xref>). One additional autistic participant was excluded from analyses for failure to answer religious belief items. Families of autism-diagnosed children were contacted through local autism organizations. Autistic participants were diagnosed by registered clinicians based on DSM-IV criteria and were free of additional diagnoses.</p>
+          <table-wrap id="pone-0036880-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0036880.t003</object-id><label>Table 3</label><caption>
+              <title>Demographic and socio-economic background information in Study 1.</title>
+            </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0036880-t003-3" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0036880.t003" xlink:type="simple"/><table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Group</td>
+                  <td align="left" colspan="1" rowspan="1">Age</td>
+                  <td align="left" colspan="1" rowspan="1">Gender</td>
+                  <td align="left" colspan="1" rowspan="1">Race/ethnicity</td>
+                  <td align="left" colspan="1" rowspan="1">Parents' Religious Affiliation</td>
+                  <td align="left" colspan="1" rowspan="1">Parents' Education</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Neuro-typical (<italic>n</italic> = 13)</td>
+                  <td align="left" colspan="1" rowspan="1"><italic>M</italic> = 12.6</td>
+                  <td align="left" colspan="1" rowspan="1">12 Male</td>
+                  <td align="left" colspan="1" rowspan="1">11 Caucasian</td>
+                  <td align="left" colspan="1" rowspan="1">7 Protestant</td>
+                  <td align="left" colspan="1" rowspan="1"><italic>M</italic> = 4.80</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">1 Female</td>
+                  <td align="left" colspan="1" rowspan="1">1 Asian</td>
+                  <td align="left" colspan="1" rowspan="1">3 Catholic</td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">1 Hispanic</td>
+                  <td align="left" colspan="1" rowspan="1">1 Catholic/Other</td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">2 Jewish</td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Autistic (<italic>n</italic> = 12)</td>
+                  <td align="left" colspan="1" rowspan="1"><italic>M</italic> = 13.7</td>
+                  <td align="left" colspan="1" rowspan="1">11 Male</td>
+                  <td align="left" colspan="1" rowspan="1">11 Caucasian</td>
+                  <td align="left" colspan="1" rowspan="1">2 Protestant</td>
+                  <td align="left" colspan="1" rowspan="1"><italic>M</italic> = 4.90</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">1 Female</td>
+                  <td align="left" colspan="1" rowspan="1">1 Hispanic</td>
+                  <td align="left" colspan="1" rowspan="1">4 Catholic</td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">3 Jewish</td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">1 Jewish/Other</td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">1 Other Religion</td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">1 No Religion</td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                </tr>
+              </tbody>
+            </table></alternatives><table-wrap-foot>
+              <fn id="nt101">
+                <label/>
+                <p><italic>Note. Parents' education</italic> was defined as the average educational attainment of both parents (range 2–6; 2 = some college, 3 = college certificate, 4 = some university, 5 = university degree, 6 = graduate degree). <italic>Parents' Religious Affiliation</italic> refers to both parents' stated religion.</p>
+              </fn>
+            </table-wrap-foot></table-wrap>
+        </sec>
+        <sec id="s3a2">
+          <title>Dependent Measure: Belief in God</title>
+          <p>Participants rated their agreement (1–7) with four different statements (I believe in God; When I am in trouble, I find myself wanting to ask God for help. Reversed-coded items: When people pray they are only talking to themselves; I don't really spend much time thinking about my religious beliefs). One additional item (“I just don't understand religion”) was dropped, because it correlated poorly with the overall scale in this sample, leaving a four-item Intuitive Belief in God scale (<italic>α</italic> = .65, <italic>M</italic> = 5.03, <italic>SD</italic> = 1.37). (Retaining this item did not significantly alter the overall pattern of results). In previous research <xref ref-type="bibr" rid="pone.0036880-Gervais2">[34]</xref>, this measure correlated very highly with other scales measuring religious devotion, such as the Intrinsic Religiosity Scale <xref ref-type="bibr" rid="pone.0036880-Hoge1">[40]</xref> (<italic>r</italic> = .65, p&lt;.001), and the Spiritual Well-Being Scale <xref ref-type="bibr" rid="pone.0036880-Paloutzian1">[41]</xref> (<italic>r</italic> = .82, p&lt;.001). Belief in God was non-normally distributed and negatively skewed (Kolmogorov-Smirnov <italic>p</italic> = .08, skewness = −.82). Therefore, this variable was median-dichotomized into high believers (60%) and low believers (40%).</p>
+        </sec>
+        <sec id="s3a3">
+          <title>Predictor Measures: Autism, Mentalizing, and IQ</title>
+          <p>Parents rated their adolescent child using the parental version of the 50-item Autism Spectrum Quotient <xref ref-type="bibr" rid="pone.0036880-BaronCohen2">[23]</xref> (ASQ) (<italic>α</italic> = .91, <italic>M</italic> = 20.67, <italic>SD</italic> = 11.67). Representative items from the parental version of the ASQ: “S/he is fascinated by numbers,” “S/he is good at social chit-chat” (reverse-scored). The autistic group (<italic>M</italic> = 30.82, <italic>SD</italic> = 7.39) scored significantly higher on parental ratings of autism than did the neuro-typical control group (<italic>M</italic> = 12.08, <italic>SD</italic> = 6.42), <italic>t</italic>(22) = 6.65, <italic>p</italic> = .0001, <italic>Cohen's d</italic> = 2.84, validating the clinical diagnoses. Mentalizing was assessed by the parents' ratings of their child, using the short, 22-item version of the Empathy Quotient <xref ref-type="bibr" rid="pone.0036880-Wakabayashi1">[28]</xref> (<italic>α</italic> = .97, <italic>M</italic> = 17.50, <italic>SD</italic> = 12.75), which measures perspective taking, interest in inferring others' beliefs and desires, and understanding emotion. Representative items from the parental version of the Empathy Quotient: “My child often finds it difficult to judge if someone is rude or polite” (reverse scored), “My child is good at understanding how others feel and what they are thinking.” We assessed General Intelligence (IQ) with the age-appropriate Kauffman Brief Intelligence Test, 2<sup>nd</sup> Edition <xref ref-type="bibr" rid="pone.0036880-Kaufman1">[42]</xref>, which consists of both verbal and non-verbal subtests (<italic>M</italic> = 92.31, <italic>SD</italic> = 21.05). None of the items in any of the predictor measures had any religious content. Autism scores were not reliably associated with IQ, <italic>r</italic> (25) = −.275, <italic>p</italic> = .19.</p>
+        </sec>
+      </sec>
+      <sec id="s3b">
+        <title>Study 2</title>
+        <sec id="s3b1">
+          <title>Participants</title>
+          <p>In exchange for extra credit in psychology courses, 327 Canadian students (<italic>M<sub>Age</sub></italic> = 20.0, 66% female) completed a web-based questionnaire. For information about participants' religious backgrounds, see <xref ref-type="table" rid="pone-0036880-t004">Table 4</xref>.</p>
+          <table-wrap id="pone-0036880-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0036880.t004</object-id><label>Table 4</label><caption>
+              <title>Demographic and socio-economic background information in Studies 2–4.</title>
+            </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0036880-t004-4" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0036880.t004" xlink:type="simple"/><table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Study 2</td>
+                  <td align="left" colspan="1" rowspan="1"><italic>Religious affiliations</italic>: Catholic and Protestant Christians (37.1%), Buddhists (5.4%), Muslims (2.9%), Atheists (13.7%), Agnostics (11.7%), participants who listed “None” (26.0%), Hindus (.9%), Sikhs (2.0%), and one Jew (.3%).</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">(<italic>N</italic> = 327)</td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Study 3</td>
+                  <td align="left" colspan="1" rowspan="1"><italic>Religious affiliations</italic>: Catholic and Protestant Christian (48.5%), Jewish (2.5%), Buddhists (1.3%), Hindu (2%), Muslim (.7%), Atheists (11.6%), Agnostic (14.2%), “None” (14%), and a variety of “Other” faiths (5.2%).</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">(<italic>N</italic> = 706)</td>
+                  <td align="left" colspan="1" rowspan="1"><italic>Educational backgrounds</italic>: .8% less than high school, 10.8% high school or equivalent, 37.7% some university or college, 38.4% completed university or college, 12.3% completed a postgraduate degree).</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"><italic>Ethnic/racial background</italic>: White/Caucasian (76%), African American (5.8%), Hispanic (5.7%), East Asian (4.6%), other (7.9%).</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"><italic>Reported annual income</italic>: range: &lt;$10 K–&gt;$100 K, with the mean in the $30 K–$40 K range.</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"><italic>Religious attendance</italic>: (range: never – more often than weekly), with the median falling between once/twice per year and every other month.</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Study 4</td>
+                  <td align="left" colspan="1" rowspan="1"><italic>Religious affiliations</italic>: Christians (70%), Jews (4%), Buddhists (1%), Muslims (1%), Atheists (4%), Agnostics (5%), “Nones” (10%), and a variety of “Other” faiths (5%).</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">(<italic>N</italic> = 452)</td>
+                  <td align="left" colspan="1" rowspan="1"><italic>Educational backgrounds</italic>: (3% less than high school, 20% high school or equivalent, 36% some university or college, 27% completed university or college, 6% some postgraduate education, and 8% completed a postgraduate degree).</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"><italic>Religious attendance</italic>: “I attend church (or other religious services) often” (Range: 1–7, <italic>M</italic> = 3.50, <italic>SD</italic> = 2.42).</td>
+                </tr>
+              </tbody>
+            </table></alternatives></table-wrap>
+        </sec>
+        <sec id="s3b2">
+          <title>Dependent Measure: Belief in God</title>
+          <p>We used the same 5-item belief in God measure used in Study 1 (<italic>α</italic> = .81, <italic>M</italic> = 27.70, <italic>SD</italic> = 8.06). Participants rated their agreement (1–7) with five different statements. Because the Kolmogorov-Smirnov test is oversensitive in large samples, we assessed normality with visual inspection and other tests of normality (skewness = .08), which indicated that this measure was approximately normally distributed in this sample. <italic>Predictor Measures: Autism Spectrum and Gender</italic>. In addition to gender, we measured the widely used Autism Spectrum Quotient (<italic>α</italic> = .73, <italic>M</italic> = 16.83, <italic>SD</italic> = 5.96) a 50-item questionnaire that detects normal individual differences in autism for people having normal levels of intelligence <xref ref-type="bibr" rid="pone.0036880-BaronCohen2">[23]</xref>. Sample items: “I prefer to do things the same way over and over again.” “I am fascinated by numbers.” “I find social situations easy” (reverse scored).</p>
+        </sec>
+        <sec id="s3b3">
+          <title>Potential Mediators: Mentalizing and Systemizing</title>
+          <p>We measured mentalizing with the short self-report version of the Empathy Quotient <xref ref-type="bibr" rid="pone.0036880-Wakabayashi1">[28]</xref> (22 items, <italic>α</italic> = .88, <italic>M</italic> = 23.06, <italic>SD</italic> = 7.75), which assesses the ability to identify the mental states of others and to react appropriately to them (sample items: “I often find it difficult to judge if someone is rude or polite” (reverse scored). “I am good at predicting how someone will feel.”). We measured systemizing with the short version of the Systemizing Quotient <xref ref-type="bibr" rid="pone.0036880-Wakabayashi1">[28]</xref> (25 items, <italic>α</italic> = .84, <italic>M</italic> = 16.37, <italic>SD</italic> = 7.99). This scale measures aptitude for, and interest in, reasoning about mechanical and physical objects and processes. Sample items: “I am fascinated by how machines work.” “I find it difficult to understand information the bank sends me on different investment and saving systems” (reverse scored).</p>
+        </sec>
+      </sec>
+      <sec id="s3c">
+        <title>Study 3</title>
+        <sec id="s3c1">
+          <title>Participants</title>
+          <p>A broad national sample of Americans was drawn from a US-based online survey tool (Mechanical Turk, Amazon.com). A total of 725 participants were recruited, however incomplete data reduced the sample to <italic>N</italic> = 706, Age: 18–88, <italic>M</italic> = 30.23, <italic>SD</italic> = 10.65, 63% female. Participants came from all 50 states, and had diverse religious backgrounds, educational attainment, levels of income, and levels of religious attendance (see <xref ref-type="table" rid="pone-0036880-t004">Table 4</xref> for further demographic information).</p>
+        </sec>
+        <sec id="s3c2">
+          <title>Dependent Measure: Belief in a personal God</title>
+          <p>Participants rated their agreement (0–6) with 10 items selected from the previously validated and widely-used Spiritual Well Being Scale <xref ref-type="bibr" rid="pone.0036880-Paloutzian1">[41]</xref>. These items measure belief in, and a perceived relationship with, a personal God (<italic>α</italic> = .94, M = 43.88, SD = 18.55). Representative items: “I have a personally meaningful relationship with God,” “I believe that God is concerned about my problems.” Reverse Scored: “I believe that God is impersonal and not interested in my daily situations.” “I don't find much satisfaction in private prayer with God.” Visual inspection revealed a bimodal distribution (Kurtosis = −1.36). Therefore, the measure was median-dichotomized into low believers (51.6%) and high believes (48.4%).</p>
+        </sec>
+        <sec id="s3c3">
+          <title>Predictor Measures: Autistic Spectrum and Gender</title>
+          <p>In addition to identifying their gender, participants completed the same 50-item self-report version of the ASQ (<italic>α</italic> = .80, <italic>M</italic> = 19.10, <italic>SD</italic> = 7.03).</p>
+        </sec>
+        <sec id="s3c4">
+          <title>Potential Mediators: Mentalizing, Systemizing, Agreeableness, Conscientiousness</title>
+          <p>We measured mentalizing and systemizing with the same measures used in Study 2 (Empathy: <italic>α</italic> = .91, <italic>M</italic> = 22.87, <italic>SD</italic> = 9.46; systemizing: <italic>α</italic> = .87, M = 21.53, SD = 9.60). Agreeableness and Conscientiousness were measured using the relevant facets of a standard self-report instrument measuring basic personality dimensions <xref ref-type="bibr" rid="pone.0036880-John1">[29]</xref>.</p>
+        </sec>
+        <sec id="s3c5">
+          <title>Control Measures</title>
+          <p>We measured age, educational attainment, income level, and frequency of religious attendance. Older age, lower educational attainment, and lower income are often found to be associated with religious belief. The frequency of religious attendance measure was included to subject our hypotheses to a more stringent test, by disentangling belief in God from an associated inclination towards religious social participation.</p>
+        </sec>
+      </sec>
+      <sec id="s3d">
+        <title>Study 4</title>
+        <sec id="s3d1">
+          <title>Participants</title>
+          <p>A broad national sample of 452 Americans (Age: 18–84, M = 43.06; 50.7% female) was drawn from a paid subject pool administered by a US-based survey company (<ext-link ext-link-type="uri" xlink:href="http://www.Zoomerang.com" xlink:type="simple">www.Zoomerang.com</ext-link>). Although this was not a representative sample, participants' ethnic and religious backgrounds were roughly similar to the general American population, and there was a wide range of educational attainment and religious attendance (see <xref ref-type="table" rid="pone-0036880-t004">Table 4</xref> for further socio-demographic background information).</p>
+        </sec>
+        <sec id="s3d2">
+          <title>Dependent Measure: Belief in God</title>
+          <p>The same 5-item scale was used from Studies 1–2 (<italic>α</italic> = .82, <italic>M</italic> = 25.71, <italic>SD</italic> = 7.46). This American sample yielded a markedly non-normal distribution of belief in God scores, as levels of belief in God were generally high (skewness = −.56, kurtosis = −.51). This variable was therefore median-dichotomized into high believers (51% of sample) and low believers (49% of sample).</p>
+        </sec>
+        <sec id="s3d3">
+          <title>Predictor Measures: Autistic Spectrum and Gender</title>
+          <p>In addition to identifying their gender, participants completed the same 50-item self-report version of the ASQ <xref ref-type="bibr" rid="pone.0036880-BaronCohen2">[23]</xref> (<italic>α</italic> = .71, <italic>M</italic> = 18.60, <italic>SD</italic> = 6.04).</p>
+        </sec>
+        <sec id="s3d4">
+          <title>Potential Mediators: Mentalizing</title>
+          <p>First, participants again completed the self-report version of the Empathy Quotient from Studies 2–3 (<italic>α</italic> = .90, <italic>M</italic> = 22.21, <italic>SD</italic> = 8.85). Second, participants completed the revised Reading the Mind in the Eyes (RME) task <xref ref-type="bibr" rid="pone.0036880-BaronCohen3">[32]</xref> (<italic>α</italic> = .71, <italic>M</italic> = 24.43, <italic>SD</italic> = 4.91), which consists of a series of 36 pictures of peoples' eyes. Participants are instructed to select which of four words best describes what the person in the picture is thinking or feeling. This task has been used to detect individual differences in advanced adult mentalizing <xref ref-type="bibr" rid="pone.0036880-BaronCohen3">[32]</xref>. This latter measure shares neither conceptual resemblance nor method variance with the belief in God measure. The two mentalizing measures were related, but by no means redundant, <italic>r</italic> (450) = .25, <italic>p</italic>&lt;.001, and served as independent potential mediators in a multiple mediation model.</p>
+        </sec>
+        <sec id="s3d5">
+          <title>Control Measures</title>
+          <p>We again measured and controlled for age, educational attainment, frequency of religious attendance, and added a 3-item measure of interest in math, science, and engineering (IMSE, α = .69, on a 1–7 scale). IMSE was included to assess the possibility that the relationship between autism and belief in God, or gender and belief in God, are byproducts of greater levels of scientific interest among those high on the autism spectrum.</p>
+        </sec>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank Susan Birch and Jess Tracy for their helpful advice, and Marina Badillo for her assistance with Study 1. Joseph Henrich, Steven Heine, Ted Slingerland, Mark Schaller, Azim Shariff, and Scott Atran, provided valuable comments.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0036880-Atran1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Atran</surname><given-names>S</given-names></name><name name-style="western"><surname>Norenzayan</surname><given-names>A</given-names></name></person-group>             <year>2004</year>             <article-title>Religion's evolutionary landscape: Counterintuition, commitment, compassion, communion.</article-title>             <source>Behav Brain Sci</source>             <volume>27</volume>             <fpage>713</fpage>             <lpage>77</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Barrett1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Barrett</surname><given-names>JL</given-names></name></person-group>             <year>2000</year>             <article-title>Exploring the natural foundations of religious belief.</article-title>             <source>Trends Cog Sci</source>             <volume>4</volume>             <fpage>29</fpage>             <lpage>34</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Bering1">
+        <label>3</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bering</surname><given-names>JM</given-names></name></person-group>             <year>2011</year>             <article-title>The belief instinct: The psychology of souls, destiny, and the meaning of life.</article-title>             <publisher-loc>New York</publisher-loc>             <publisher-name>W.W. Norton</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">252</size>           </element-citation>
+      </ref>
+      <ref id="pone.0036880-Boyer1">
+        <label>4</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Boyer</surname><given-names>P</given-names></name></person-group>             <year>2001</year>             <article-title>Religion explained: The evolutionary origins of religious thought.</article-title>             <publisher-loc>New York</publisher-loc>             <publisher-name>Basic Books</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">384</size>           </element-citation>
+      </ref>
+      <ref id="pone.0036880-Guthrie1">
+        <label>5</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Guthrie</surname><given-names>SG</given-names></name></person-group>             <year>1993</year>             <article-title>Faces in the Clouds: A New Theory of Religion.</article-title>             <publisher-loc>Oxford</publisher-loc>             <publisher-name>Oxford University Press</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">336</size>           </element-citation>
+      </ref>
+      <ref id="pone.0036880-Mitchell1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Mitchell</surname><given-names>J</given-names></name></person-group>             <year>2009</year>             <article-title>Inferences about mental states.</article-title>             <source>Phil Trans R Soc B</source>             <volume>364</volume>             <fpage>1309</fpage>             <lpage>1316</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Waytz1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Waytz</surname><given-names>A</given-names></name><name name-style="western"><surname>Gray</surname><given-names>K</given-names></name><name name-style="western"><surname>Epley</surname><given-names>N</given-names></name><name name-style="western"><surname>Wegner</surname><given-names>DM</given-names></name></person-group>             <year>2010</year>             <article-title>Causes and consequences of mind perception.</article-title>             <source>Trends Cog Sci</source>             <volume>14</volume>             <fpage>383</fpage>             <lpage>388</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-BaronCohen1">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Baron-Cohen</surname><given-names>S</given-names></name><name name-style="western"><surname>Wheelwright</surname><given-names>S</given-names></name></person-group>             <year>2004</year>             <article-title>The Empathy Quotient: An investigation of adults with Asperger Syndrome or high functioning autism, and normal sex differences.</article-title>             <source>J Autism Devel Dis</source>             <volume>34</volume>             <fpage>163</fpage>             <lpage>175</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Crespi1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Crespi</surname><given-names>BJ</given-names></name><name name-style="western"><surname>Badcock</surname><given-names>C</given-names></name></person-group>             <year>2008</year>             <article-title>Psychosis and autism as diametrical disorders of the social brain.</article-title>             <source>Behav Brain Sci</source>             <volume>31</volume>             <fpage>284</fpage>             <lpage>320</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Barrett2">
+        <label>10</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Barrett</surname><given-names>J</given-names></name></person-group>             <year>2004</year>             <article-title>Why Would Anyone Believe in God?</article-title>             <publisher-loc>Walnut Creek</publisher-loc>             <publisher-name>AltaMira Press</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">152</size>           </element-citation>
+      </ref>
+      <ref id="pone.0036880-Bering2">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bering</surname><given-names>JM</given-names></name></person-group>             <year>2002</year>             <article-title>The existential theory of mind.</article-title>             <source>Rev Gen Psychol</source>             <volume>6</volume>             <fpage>3</fpage>             <lpage>24</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Bloom1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bloom</surname><given-names>P</given-names></name></person-group>             <year>2007</year>             <article-title>Religion is natural.</article-title>             <source>Dev Sci</source>             <volume>10</volume>             <fpage>147</fpage>             <lpage>151</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-McCauley1">
+        <label>13</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>McCauley</surname><given-names>RN</given-names></name></person-group>             <year>2011</year>             <article-title>Why Religion is Natural but Science is Not.</article-title>             <publisher-loc>New York</publisher-loc>             <publisher-name>Oxford University Press</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">352</size>           </element-citation>
+      </ref>
+      <ref id="pone.0036880-Kapogiannis1">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kapogiannis</surname><given-names>D</given-names></name><name name-style="western"><surname>Barbey</surname><given-names>AK</given-names></name><name name-style="western"><surname>Su</surname><given-names>M</given-names></name><name name-style="western"><surname>Zamboni</surname><given-names>G</given-names></name><name name-style="western"><surname>Krueger</surname><given-names>F</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Cognitive and neural foundations of religious belief.</article-title>             <source>Proc Natl Acad Sci</source>             <volume>106</volume>             <fpage>4876</fpage>             <lpage>4881</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Schjoedt1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Schjoedt</surname><given-names>U</given-names></name><name name-style="western"><surname>Stodkilde-Jorgensen</surname><given-names>H</given-names></name><name name-style="western"><surname>Geerts</surname><given-names>AW</given-names></name><name name-style="western"><surname>Roepstorff</surname><given-names>A</given-names></name></person-group>             <year>2009</year>             <article-title>Highly religious participants recruit areas of social cognition in personal prayer.</article-title>             <source>Soc Cog Affect Neurosci</source>             <volume>4</volume>             <fpage>199</fpage>             <lpage>207</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Barrett3">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Barrett</surname><given-names>JL</given-names></name><name name-style="western"><surname>Keil</surname><given-names>FC</given-names></name></person-group>             <year>1996</year>             <article-title>Anthropomorphism and God concepts: Conceptualizing a non-natural entity.</article-title>             <source>Cog Psych</source>             <volume>31</volume>             <fpage>219</fpage>             <lpage>247</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Epley1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Epley</surname><given-names>N</given-names></name><name name-style="western"><surname>Converse</surname><given-names>BA</given-names></name><name name-style="western"><surname>Delbosc</surname><given-names>A</given-names></name><name name-style="western"><surname>Monteleone</surname><given-names>G</given-names></name><name name-style="western"><surname>Cacioppo</surname><given-names>J</given-names></name></person-group>             <year>2009</year>             <article-title>Believers' estimates of God's beliefs are more egocentric than estimates of other people's beliefs.</article-title>             <source>Proc Natl Acad Sci</source>             <volume>106</volume>             <fpage>21533</fpage>             <lpage>21538</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Gervais1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gervais</surname><given-names>WM</given-names></name><name name-style="western"><surname>Norenzayan</surname><given-names>A</given-names></name></person-group>             <year>2012</year>             <article-title>Like a camera in the sky? Thinking about God increases public self-awareness and socially desirable responding.</article-title>             <source>J Exp Soc Pychol</source>             <volume>48</volume>             <fpage>298</fpage>             <lpage>302</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Lane1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lane</surname><given-names>JD</given-names></name><name name-style="western"><surname>Wellman</surname><given-names>H</given-names></name><name name-style="western"><surname>Evans</surname><given-names>EM</given-names></name></person-group>             <year>2010</year>             <article-title>Children's understanding of ordinary and extraordinary minds.</article-title>             <source>Child Dev</source>             <volume>81</volume>             <fpage>1475</fpage>             <lpage>1489</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Taylor1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Taylor</surname><given-names>M</given-names></name><name name-style="western"><surname>Carlson</surname><given-names>SM</given-names></name></person-group>             <year>1997</year>             <article-title>The relation between individual differences in fantasy and theory of mind.</article-title>             <source>Child Develop</source>             <volume>68</volume>             <fpage>436</fpage>             <lpage>455</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Castelli1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Castelli</surname><given-names>F</given-names></name><name name-style="western"><surname>Frith</surname><given-names>C</given-names></name><name name-style="western"><surname>Happé</surname><given-names>F</given-names></name><name name-style="western"><surname>Frith</surname><given-names>U</given-names></name></person-group>             <year>2002</year>             <article-title>Autism, Asperger syndrome and brain mechanisms for the attribution of mental states to animated shapes.</article-title>             <source>Brain</source>             <volume>125</volume>             <fpage>1839</fpage>             <lpage>1849</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Gray1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gray</surname><given-names>K</given-names></name><name name-style="western"><surname>Jenkins</surname><given-names>AC</given-names></name><name name-style="western"><surname>Heberlein</surname><given-names>AH</given-names></name><name name-style="western"><surname>Wegner</surname><given-names>DM</given-names></name></person-group>             <year>2011</year>             <article-title>Distortions of mind perception in psychopathology.</article-title>             <source>Proc Natl Acad Sci</source>             <volume>108</volume>             <fpage>477</fpage>             <lpage>479</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-BaronCohen2">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Baron-Cohen</surname><given-names>S</given-names></name><name name-style="western"><surname>Wheelwright</surname><given-names>S</given-names></name><name name-style="western"><surname>Skinner</surname><given-names>R</given-names></name><name name-style="western"><surname>Martin</surname><given-names>J</given-names></name><name name-style="western"><surname>Clubley</surname><given-names>E</given-names></name></person-group>             <year>2001</year>             <article-title>The autism spectrum quotient (AQ): evidence from Asperger syndrome/high functioning autism, males and females, scientists and mathematicians.</article-title>             <source>J Autism Devel Dis</source>             <volume>31</volume>             <fpage>5</fpage>             <lpage>17</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Roth1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Roth</surname><given-names>L</given-names></name><name name-style="western"><surname>Kroll</surname><given-names>JC</given-names></name></person-group>             <year>2007</year>             <article-title>Risky business: Assessing risk-preference explanations for gender differences in religiosity.</article-title>             <source>Am Sociol Rev</source>             <volume>27</volume>             <fpage>205</fpage>             <lpage>220</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Stark1">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Stark</surname><given-names>R</given-names></name></person-group>             <year>2002</year>             <article-title>Physiology and faith: Addressing the “universal” gender difference in religious commitment.</article-title>             <source>J Sci Stud Relig</source>             <volume>41</volume>             <fpage>495</fpage>             <lpage>507</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Walter1">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Walter</surname><given-names>T</given-names></name><name name-style="western"><surname>Davie</surname><given-names>G</given-names></name></person-group>             <year>1998</year>             <article-title>The Religiosity of Women in the Modern West.</article-title>             <source>Brit J Sociol</source>             <volume>49</volume>             <fpage>640</fpage>             <lpage>60</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Preacher1">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Preacher</surname><given-names>KJ</given-names></name><name name-style="western"><surname>Hayes</surname><given-names>AF</given-names></name></person-group>             <year>2008</year>             <article-title>Asymptotic and resampling strategies for assessing and comparing indirect effects in multiple mediator models.</article-title>             <source>Behav Res Meth</source>             <volume>40</volume>             <fpage>879</fpage>             <lpage>891</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Wakabayashi1">
+        <label>28</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Wakabayashi</surname><given-names>A</given-names></name><name name-style="western"><surname>Baron-Cohen</surname><given-names>S</given-names></name><name name-style="western"><surname>Wheelwright</surname><given-names>S</given-names></name><name name-style="western"><surname>Goldenfeld</surname><given-names>N</given-names></name><name name-style="western"><surname>Delaney</surname><given-names>J</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Development of short forms of the Empathy Quotient (EQ-Short) and the Systemizing-Quotient (SQ-Short).</article-title>             <source>Pers Individ Dif</source>             <volume>41</volume>             <fpage>929</fpage>             <lpage>940</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-John1">
+        <label>29</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>John</surname><given-names>OP</given-names></name><name name-style="western"><surname>Srivastava</surname><given-names>S</given-names></name></person-group>             <year>1999</year>             <article-title>The Big Five trait taxonomy: History, measurement, and theoretical perspectives.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Pervin</surname><given-names>LA</given-names></name><name name-style="western"><surname>John</surname><given-names>OP</given-names></name></person-group>             <source>Handbook of personality: Theory and research</source>             <publisher-loc>New York</publisher-loc>             <publisher-name>Guilford</publisher-name>             <fpage>102</fpage>             <lpage>138</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-McCullough1">
+        <label>30</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>McCullough</surname><given-names>ME</given-names></name><name name-style="western"><surname>Enders</surname><given-names>CK</given-names></name><name name-style="western"><surname>Brion</surname><given-names>SL</given-names></name><name name-style="western"><surname>Jain</surname><given-names>AR</given-names></name></person-group>             <year>2005</year>             <article-title>The varieties of religious development in adulthood: A longitudinal investigation of religion and rational choice.</article-title>             <source>J Pers Soc Psychol</source>             <volume>89</volume>             <fpage>78</fpage>             <lpage>89</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Saroglou1">
+        <label>31</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Saroglou</surname><given-names>V</given-names></name></person-group>             <year>2010</year>             <article-title>Religiousness as a cultural adaptation of basic traits: A five-factor model perspective.</article-title>             <source>Pers Soc Psychol Rev</source>             <volume>14</volume>             <fpage>108</fpage>             <lpage>125</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-BaronCohen3">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Baron-Cohen</surname><given-names>S</given-names></name><name name-style="western"><surname>Wheelwright</surname><given-names>S</given-names></name><name name-style="western"><surname>Hill</surname></name><name name-style="western"><surname>J</surname></name><name name-style="western"><surname>Raste</surname><given-names>Y</given-names></name><name name-style="western"><surname>Plumb</surname><given-names>I</given-names></name></person-group>             <year>2001</year>             <article-title>The “reading the mind in the eyes” test revised version: A study with normal adults, and adults with Asperger syndrome or high-functioning autism.</article-title>             <source>J Child Psychol Psychiat</source>             <volume>42</volume>             <fpage>241</fpage>             <lpage>251</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Henrich1">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Henrich</surname><given-names>J</given-names></name><name name-style="western"><surname>Heine</surname><given-names>SJ</given-names></name><name name-style="western"><surname>Norenzayan</surname><given-names>A</given-names></name></person-group>             <year>2010</year>             <article-title>The weirdest people in the world?</article-title>             <source>Behav Brain Sci</source>             <volume>33</volume>             <fpage>61</fpage>             <lpage>135</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Gervais2">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gervais</surname><given-names>WM</given-names></name><name name-style="western"><surname>Norenzayan</surname><given-names>A</given-names></name></person-group>             <year>2012</year>             <article-title>Analytic thinking promotes religious disbelief.</article-title>             <source>Science</source>             <volume>336</volume>             <fpage>493</fpage>             <lpage>496</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Gervais3">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gervais</surname><given-names>WM</given-names></name><name name-style="western"><surname>Willard</surname><given-names>A</given-names></name><name name-style="western"><surname>Norenzayan</surname><given-names>A</given-names></name><name name-style="western"><surname>Henrich</surname><given-names>J</given-names></name></person-group>             <year>2012</year>             <article-title>The cultural transmission of faith: Why natural intuitions and memory biases are necessary, but insufficient, to explain religious belief.</article-title>             <source>Religion</source>             <volume>41</volume>             <fpage>389</fpage>             <lpage>410</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Boyer2">
+        <label>36</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Boyer</surname><given-names>P</given-names></name></person-group>             <year>2008</year>             <article-title>Religion: Bound to believe?</article-title>             <source>Nature</source>             <volume>455</volume>             <fpage>1038</fpage>             <lpage>1039</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Norenzayan1">
+        <label>37</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Norenzayan</surname><given-names>A</given-names></name><name name-style="western"><surname>Shariff</surname><given-names>AF</given-names></name></person-group>             <year>2008</year>             <article-title>The origin and evolution of religious prosociality.</article-title>             <source>Science</source>             <volume>322</volume>             <fpage>58</fpage>             <lpage>62</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-McKay1">
+        <label>38</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>McKay</surname><given-names>R</given-names></name><name name-style="western"><surname>Efferson</surname><given-names>C</given-names></name><name name-style="western"><surname>Whitehouse</surname><given-names>H</given-names></name><name name-style="western"><surname>Fehr</surname><given-names>E</given-names></name></person-group>             <year>2011</year>             <article-title>Wrath of God: Religious primes and punishment.</article-title>             <source>Proc Royal Societ B: Biolog Sci</source>             <volume>278</volume>             <fpage>1858</fpage>             <lpage>1863</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Norris1">
+        <label>39</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Norris</surname><given-names>P</given-names></name><name name-style="western"><surname>Inglehart</surname><given-names>R</given-names></name></person-group>             <year>2004</year>             <article-title>Sacred and Secular: Religion and Politics Worldwide.</article-title>             <publisher-loc>Cambridge</publisher-loc>             <publisher-name>Cambridge University Press</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">348</size>           </element-citation>
+      </ref>
+      <ref id="pone.0036880-Hoge1">
+        <label>40</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hoge</surname><given-names>DR</given-names></name></person-group>             <year>1972</year>             <article-title>A validated intrinsic religious motivation scale.</article-title>             <source>J Sci Study Relig</source>             <volume>11</volume>             <fpage>369</fpage>             <lpage>376</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Paloutzian1">
+        <label>41</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Paloutzian</surname><given-names>RF</given-names></name><name name-style="western"><surname>Ellison</surname><given-names>CW</given-names></name></person-group>             <year>1991</year>             <article-title>Manual for the spiritual well-being scale.</article-title>             <publisher-loc>Nyack</publisher-loc>             <publisher-name>Life Advance, Inc</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0036880-Kaufman1">
+        <label>42</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kaufman</surname><given-names>AS</given-names></name><name name-style="western"><surname>Kaufman</surname><given-names>NL</given-names></name></person-group>             <year>1990</year>             <article-title>Kaufman Brief Intelligence Test Manual.</article-title>             <publisher-loc>Circle Pines</publisher-loc>             <publisher-name>American Guidance Service</publisher-name>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

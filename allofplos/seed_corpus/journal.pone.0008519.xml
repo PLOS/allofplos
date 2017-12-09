@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+<front>
+<journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="publisher-id">09-PONE-RA-14612</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0008519</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline"><subject>Virology</subject><subject>Virology/Diagnosis</subject><subject>Virology/Emerging Viral Diseases</subject><subject>Virology/Immunodeficiency Viruses</subject><subject>Virology/Persistence and Latency</subject><subject>Virology/Viruses and Cancer</subject></subj-group></article-categories><title-group><article-title>Failure to Detect the Novel Retrovirus XMRV in Chronic Fatigue Syndrome</article-title><alt-title alt-title-type="running-head">XMRV and CFS</alt-title></title-group><contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Erlwein</surname><given-names>Otto</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Kaye</surname><given-names>Steve</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>McClure</surname><given-names>Myra O.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Weber</surname><given-names>Jonathan</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Wills</surname><given-names>Gillian</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Collier</surname><given-names>David</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Wessely</surname><given-names>Simon</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Cleare</surname><given-names>Anthony</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref></contrib>
+</contrib-group><aff id="aff1"><label>1</label><addr-line>Jefferiss Research Trust Laboratories, Section of Infectious Diseases, Wright-Fleming Institute, Faculty of Medicine, Imperial College London, St Mary's Campus, Norfolk Place, London, United Kingdom</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Social Genetic and Developmental Psychiatry Centre, Institute of Psychiatry (King's College London) De Crespigny Park, Denmark Hill, London, United Kingdom</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Department of Psychological Medicine, Institute of Psychiatry, King's College London, Camberwell, London, United Kingdom</addr-line>       </aff><contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Nixon</surname><given-names>Douglas F.</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group><aff id="edit1">University of California San Francisco, United States of America</aff><author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">m.mcclure@imperial.ac.uk</email></corresp>
+<fn fn-type="con"><p>Conceived and designed the experiments: SK MM. Performed the experiments: OWE SK. Analyzed the data: SK MM. Contributed reagents/materials/analysis tools: SK GW DC SW AC. Wrote the paper: SK MM. Facilitated the study by setting up the collaboration: JW. Responsible for providing samples and associated data from a well characterised and valuable cohort of subjects: SW.</p></fn>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn></author-notes><pub-date pub-type="collection"><year>2010</year></pub-date><pub-date pub-type="epub"><day>6</day><month>1</month><year>2010</year></pub-date><volume>5</volume><issue>1</issue><elocation-id>e8519</elocation-id><history>
+<date date-type="received"><day>1</day><month>12</month><year>2009</year></date>
+<date date-type="accepted"><day>4</day><month>12</month><year>2009</year></date>
+</history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2010</copyright-year><copyright-holder>Erlwein et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract><sec>
+<title>Background</title>
+<p>In October 2009 it was reported that 68 of 101 patients with chronic fatigue syndrome (CFS) in the US were infected with a novel gamma retrovirus, xenotropic murine leukaemia virus-related virus (XMRV), a virus previously linked to prostate cancer. This finding, if confirmed, would have a profound effect on the understanding and treatment of an incapacitating disease affecting millions worldwide. We have investigated CFS sufferers in the UK to determine if they are carriers of XMRV.</p>
+</sec><sec>
+<title>Methodology</title>
+<p>Patients in our CFS cohort had undergone medical screening to exclude detectable organic illness and met the CDC criteria for CFS. DNA extracted from blood samples of 186 CFS patients were screened for XMRV provirus and for the closely related murine leukaemia virus by nested PCR using specific oligonucleotide primers. To control for the integrity of the DNA, the cellular beta-globin gene was amplified. Negative controls (water) and a positive control (XMRV infectious molecular clone DNA) were included. While the beta-globin gene was amplified in all 186 samples, neither XMRV nor MLV sequences were detected.</p>
+</sec><sec>
+<title>Conclusion</title>
+<p>XMRV or MLV sequences were not amplified from DNA originating from CFS patients in the UK. Although we found no evidence that XMRV is associated with CFS in the UK, this may be a result of population differences between North America and Europe regarding the general prevalence of XMRV infection, and might also explain the fact that two US groups found XMRV in prostate cancer tissue, while two European studies did not.</p>
+</sec></abstract><funding-group><funding-statement>AC, DC and SW are partially funded by the South London and Maudsley NHS Foundation Trust/Institute of Psychiatry National Institute of Health Biomedical Resaerch Centre. The team from Imperial College is grateful for support from the NIHR Biomedical Research Centre Funding Scheme. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="4"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>A recent study by Lombardi <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0008519-Lombardi1">[1]</xref> describing a gamma-retrovirus infection in 68 of 101 chronic fatigue syndrome (CFS) patients was notable not only for its claim of a new viral aetiology of a hitherto controversial disease, but also for the fact that proviral DNA could be amplified from the peripheral blood mononuclear cells (PBMC) of 3.75% (8/218) of the healthy controls. This follows an earlier claim that 1.7% (5/300) of healthy Japanese blood donors carried antibodies to the same virus <xref ref-type="bibr" rid="pone.0008519-Furuta1">[2]</xref>. The virus in question is a recently discovered retrovirus, Xenotropic Murine Leukaemia Virus (MLV)-Related Virus (XMRV).</p>
+<p>In the original identification of XMRV in prostate cancer stromal cells, Urisman <italic>et al.</italic> <xref ref-type="bibr" rid="pone.0008519-Urisman1">[3]</xref> confirmed by sequence analysis that XMRV is not a laboratory contaminant, as is often the case with claims of new retroviral associations with disease. It shares &gt;90% sequence identity in <italic>gag</italic> and <italic>env</italic> (two of the three viral structural genes) with other xenotropic MLVs.</p>
+<p>An association between XMRV and prostate cancer was strengthened with the demonstration of XMRV protein expression in malignant epithelial cells <xref ref-type="bibr" rid="pone.0008519-Schlaberg1">[4]</xref>. However, these results have not been duplicated in studies conducted in Europe <xref ref-type="bibr" rid="pone.0008519-Hohn1">[5]</xref>–<xref ref-type="bibr" rid="pone.0008519-Fischer1">[7]</xref>. Both prostate cancer and CFS have been linked to an Arg to Gln mutation at codon 462 (R462Q) in the RNaseL gene, an interferon-induced ribonuclease <xref ref-type="bibr" rid="pone.0008519-Silverman1">[8]</xref>. On activation, RNaseL destroys single stranded cellular and viral RNA, thereby preventing viral replication, blocking protein synthesis, triggering cellular apoptosis and providing an innate anti-viral response. The two US studies are of interest, not only because this would be a further example of a virus association with cancer, but because they represent the first demonstration of a gamma-retrovirus able to infect human cells, over-riding the intrinsic immune mechanisms that were believed to protect humans from MLV infection.</p>
+<p>The XMRV sequences derived from prostate cancer tissue are identical to those from CFS patients, but differ from xenotropic MLV sequences, endorsing a genuine cross-species transmission. However, the claim that XMRV is preferentially found in prostate tumours from patients homozygous for the R462Q variant <xref ref-type="bibr" rid="pone.0008519-Urisman1">[3]</xref> is not borne out by the second prostate cancer study to find XMRV in patients <xref ref-type="bibr" rid="pone.0008519-Schlaberg1">[4]</xref>, nor was the genetic variant detected in CFS patients carrying XMRV <xref ref-type="bibr" rid="pone.0008519-Hohn1">[5]</xref>.</p>
+<p>The finding of Lombardi <italic>et al.</italic> of a 67% XMRV infection rate among CFS patients, if confirmed, would have a serious impact on understanding the pathogenesis of this complex and debilitating disease and its treatment. Therefore, it was important to determine if CFS sufferers in the UK were carriers of XMRV. We have screened DNA extracts from the blood of CFS sufferers by PCRs targeted at an XMRV-specific sequence and at a sequence conserved amongst most murine retroviruses (MRV).</p>
+</sec><sec id="s2" sec-type="methods">
+<title>Methods</title>
+<sec id="s2a">
+<title>Patients</title>
+<p>All patients gave written informed consent for the use of their DNA to test aetiological theories of CFS, and the study was approved by the South London and Maudsley NHS Trust Ethics Committee. The study recruited 186 patients (62% female, age range 19–70, mean 39.6±11.3years) from consecutive referrals to the CFS clinic at King's College Hospital, London. All patients had undergone medical screening to exclude detectable organic illness, including a minimum of physical examination, urinalysis, full blood count, urea and electrolytes, thyroid function tests, liver function tests, 9 a.m. cortisol and ESR. Patients were interviewed using a semi-structured interview for CFS <xref ref-type="bibr" rid="pone.0008519-Sharpe1">[9]</xref> to determine whether they met international consensus criteria for CFS. All subjects met the CDC criteria <xref ref-type="bibr" rid="pone.0008519-Fukuda1">[10]</xref>; patients with the Fukuda-specified exclusionary psychiatric disorders, or somatisation disorder (as per DSM-IV), were not included. The patient set studied is a well-characterised and representative sample of CFS patients who have been described previously: all were routine clinic attendees, referred within the UK National Health Service, who had taken part in prior studies of neuroendocrine functioning <xref ref-type="bibr" rid="pone.0008519-Roberts1">[11]</xref> and/or of cognitive behaviour therapy <xref ref-type="bibr" rid="pone.0008519-Quarmby1">[12]</xref>. As is typical of the patients seen in this tertiary care centre, they were markedly unwell. Few were working, and 19% were members of patient support groups for CFS/ME <xref ref-type="bibr" rid="pone.0008519-Quarmby1">[12]</xref>–<xref ref-type="bibr" rid="pone.0008519-Deale1">[14]</xref>. The levels of fatigue in this sample were high (mean Chalder Fatigue Scale, 26.3±5.4) <xref ref-type="bibr" rid="pone.0008519-Chalder1">[15]</xref>, as were levels of disability (mean Work and Social Adjustment Scale, total score 28.2±7.2) <xref ref-type="bibr" rid="pone.0008519-Mundt1">[16]</xref>. The mean GHQ-12 score <xref ref-type="bibr" rid="pone.0008519-Goldberg1">[17]</xref> was 19.7±8.1. Patients had been unwell for a median of 4.0 y (range 1–28 y). Of note was that 45% said their illness definitely related to a viral illness and 45% said it might relate to a viral illness. Overall, we conclude that this sample is typical of CFS patients seen in specialist clinical services in the UK. We also know from collaborative studies that our patients resemble those seen in other specialist CFS services in the United States and Australia <xref ref-type="bibr" rid="pone.0008519-Wilson1">[18]</xref>.</p>
+<sec id="s2a1">
+<title>PCR detection of XMRV and MLV sequences</title>
+<p>DNA was extracted from EDTA whole blood using a standard phenol-based organic deproteinisation procedure <xref ref-type="bibr" rid="pone.0008519-Freeman1">[19]</xref>. DNA concentrations were determined by absorbance at 260 nm (A<sub>260</sub>). Each sample was amplified in three nested PCRs using primers targeted to an XMRV-specific sequence, to a sequence conserved amongst most MLV and, as a control for sample addition and PCR-inhibition, to a human beta-globin (hBG) sequence (<xref ref-type="table" rid="pone-0008519-t001">Table 1</xref>). Each first-round reaction was performed in a 25 µl volume containing 0.5 units TaqGold (Applied BioSystems, Warrington, UK), 1 x TaqGold reaction buffer (Applied BioSystems), 1.5 mM Mg<sup>2+</sup>, 200 mM each dNTP, 2.5 pmol each primer to which 5 µl DNA extract or control was added. Reaction conditions were one cycle of 94°C, 8 minutes, 35 cycles of 94°C 30 seconds, 55°C 30 seconds, 72°C 30 seconds and one cycle 0f 72°C, 7 minutes. Second round reaction mixes were identical to the first round and the sample was a 1 µl transfer from the first round reactions. Second round reaction conditions were as for the first round over 30 cycles. PCR amplicons were visualised on a 1% agarose gel stained with ethidium bromide. Each PCR run consisted of test samples, six negative (water) and two positive controls. The positive control was a dilution of a plasmid with a full-length XMRV (isolate VP62) insert, generously gifted by Dr R. Silverman. To validate the sensitivity of the PCR, an end-point dilution of the plasmid was performed. To determine specificity of the PCR, a sample of human DNA from the LNCaP prostate cancer cell line (American Type Culture Collection, code CRL-1740) was amplified with the XMRV and MLV primer sets. To ensure integrity of the DNA extracts, three randomly selected samples were titrated to end-point using the hBG PCR to determine if the PCR copy number equated with the A<sub>260</sub>. To determine if the DNA extracts exhibited low level non-specific inhibition of PCR, 10 samples were subjected to 30 cycles of the first round hBG PCR (reaction mix and conditions as above) followed by 40 cycles of a nested real-time SYBR-green PCR using the SYBR-green Fast PCR kit (Roche, Lewes UK) according to the manufacturer's instructions.</p>
+<table-wrap id="pone-0008519-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0008519.t001</object-id><label>Table 1</label><caption>
+<title>Oligonucleotide Primers.</title>
+</caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0008519-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0008519.t001" xlink:type="simple"/><table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" colspan="1" rowspan="1">Target</td>
+<td align="left" colspan="1" rowspan="1">Sequence</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">Location</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="1" rowspan="1"><bold>XMRV</bold></td>
+<td align="left" colspan="1" rowspan="1">Forward outer</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′CATTCTGTATCAGTTAACCTAC 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">411–432<sup>1</sup></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">Reverse outer</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′ ATGATCTCGAGAACACTTAAAG 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">606–588<sup>1</sup></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">Forward inner</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′ GACTTTTTGGAGTGGCTTTGT 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">441–461<sup>1</sup></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">Reverse inner</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′ ACAGAAGAACAACAAAACAAATC 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">566–544<sup>1</sup></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><bold>MLV</bold></td>
+<td align="left" colspan="1" rowspan="1">Forward outer</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′ GGATCAAGCCCCACATACAG 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">2796–2847<sup>1</sup></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">Reverse outer</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′ CATCAAACAGGGTGGGACTG 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">3179–3160<sup>1</sup></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">Forward inner</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′ AGAAGTCAACAAGCGGGTGG 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">2926–2945<sup>1</sup></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">Reverse inner</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′ GGTGGAGTCTCAGGCAGAAA 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">3062–3043<sup>1</sup></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"><bold>hBG</bold></td>
+<td align="left" colspan="1" rowspan="1">Forward outer</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′ TGGTGGTCTACCCTTGGACC 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">148–162<sup>2</sup></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">Reverse outer</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′ GAGGTTGTCCAGGTGAGCCA 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">296–277<sup>2</sup></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">Forward inner</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′ GAGGTTCTTTGAGTCCTTTGG 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">170–190<sup>2</sup></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">Reverse inner</td>
+<td align="left" colspan="1" rowspan="1"><named-content content-type="gene" xlink:type="simple">5′ CATCACTAAAGGCACCGAGCA 3′</named-content></td>
+<td align="left" colspan="1" rowspan="1">273–253<sup>2</sup></td>
+</tr>
+</tbody>
+</table></alternatives><table-wrap-foot><fn id="nt101"><label/><p>Locations in GenBank accessions <sup>1</sup>EF185282, <sup>2</sup>NM000518.4.</p></fn></table-wrap-foot></table-wrap></sec></sec></sec><sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Nested PCR Validation</title>
+<p>Based on A<sub>260</sub> of the purified plasmid, both primer sets (XMRV, MLV) were able to amplify a single target copy added to the reaction. Amplification of 600 ng of LNCaP cellular DNA added to XMRV and MLV PCRs yielded no non-specific bands when viewed on an ethidium bromide-stained agarose gel. Quantification of DNA samples from three randomly selected test samples by end-point dilution PCR with the hBG primer set showed concurrence of the PCR-determined copy number with A<sub>260</sub>, thus indicating integrity of the DNA preparations. Nested real-time amplification of 10 samples showed no evidence of non-specific inhibition as determined by the slope of the amplification curves and the height of the signal plateau.</p>
+</sec><sec id="s3b">
+<title>PCR Analysis of Test Samples</title>
+<p>Input DNA ranged from 10 to 600 ng (1.6×10<sup>3</sup> to 1.1×10<sup>5</sup> cell equivalents) as determined by A<sub>260</sub> of which 149 samples had an input of &gt;100 ng and 106 samples &gt;200 ng. None of the 186 test samples analysed yielded a specific PCR product with either the XMRV or MLV primer sets and no non-specific PCR products were observed. A specific hBG product was amplified from all 186 test samples. The positive control was amplified in each run by the XMRV and MLV primer sets. A stained gel of the XMRV and MLV PCR products is shown in <xref ref-type="fig" rid="pone-0008519-g001">figure 1</xref> and a representative sample of our results with CFS DNA and MLV primers is shown in <xref ref-type="fig" rid="pone-0008519-g002">figure 2</xref>.</p>
+<fig id="pone-0008519-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0008519.g001</object-id><label>Figure 1</label><caption>
+<title>PCR products of the XMRV VP62 clone.</title>
+<p>Primers are generic to MLV (lanes 1 and 2) or specific to XMRV (lanes 4 and 5). The sizes of the respective fragments are shown. Lane 3–200 bp molecular size ladder.</p>
+</caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0008519.g001" xlink:type="simple"/></fig><fig id="pone-0008519-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0008519.g002</object-id><label>Figure 2</label><caption>
+<title>Nested PCR from the DNA of 8 CFS patients.</title>
+<p>Products of generic MLV primers (including XMRV) are shown. Lanes 1–8, CFS patient DNA (2<sup>nd</sup> round); lanes 9 and 10, XMRV 2<sup>nd</sup> round and 1<sup>st</sup> round positive controls; lanes 11 and 12, DNA of uninfected cell line LNCaP; lanes 13–18, water controls.</p>
+</caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0008519.g002" xlink:type="simple"/></fig></sec></sec><sec id="s4">
+<title>Discussion</title>
+<p>Unlike the study of Lombardi <italic>et al</italic>., we have failed to detect XMRV or closely related MRV proviral DNA sequences in any sample from CFS cases. There have been numerous claims for an infective aetiology to CFS over the years, not least because, as in this sample, many patients report that their symptoms were triggered by an infective episode. Prospective epidemiological studies have confirmed that certain infective agents, for example Epstein Barr virus, are unequivocally associated with subsequent CFS <xref ref-type="bibr" rid="pone.0008519-White1">[20]</xref>, even if the mechanisms are unclear and almost certainly multi factorial. Nearly two decades ago, sequences from another retrovirus, the human T-lymphotropic virus type ll, were amplified from the PBMCs of 10/12 (83%) adult and 13/18 paediatric CFS patients, but not from healthy control subjects <xref ref-type="bibr" rid="pone.0008519-DeFreitas1">[21]</xref>. However, subsequent studies carried out on small numbers (20–30) of CFS patients, failed to confirm evidence for HTLV (type 1 or 11) <xref ref-type="bibr" rid="pone.0008519-Gow1">[22]</xref>–<xref ref-type="bibr" rid="pone.0008519-Khan1">[25]</xref> or other retroviruses, including the closely-related simian T lymphotropic virus type l, the prototype foamy virus, simian retrovirus, bovine and feline leukaemia viruses <xref ref-type="bibr" rid="pone.0008519-Heneine1">[26]</xref> and HIV-1 <xref ref-type="bibr" rid="pone.0008519-Honda1">[23]</xref>.</p>
+<p>The Lombardi paper is the first to study a significantly larger number of people than that in any previous study and to detect a virus only recently discovered. Our study resembles that of Lombardi <italic>et al.</italic> in certain respects. Both studies use the widely accepted 1994 clinical case definition of CFS<sup>10</sup>. Lombardi <italic>et al</italic>. reported that their cases “presented with severe disability” and we provide quantifiable evidence confirming high levels of disability in our subjects. Our subjects were also typical of those seen in secondary and tertiary care in other centres.</p>
+<p>Our own study also differs from that of Lombardi in other respects. Firstly, the PCR operator was blinded to the provenance of the DNA samples. In fact, with the exception of the PCR controls, all 186 DNA test samples originated from CFS patients. Care was taken to grow the XMRV plasmid in a laboratory in which no MLV had been cultured and no MLV vectors used and the PCR was carried out in a CPA-accredited Molecular Diagnostics Unit which processes only human tissue. Multiple (six) water (negative) controls were included in every run to detect low level contamination and a PCR to amplify a sequence that is conserved in most murine leukaemia viruses was included in order to expose any circulating MLV contamination and to detect any variant of XMRV that might be circulating in the UK CFS population.</p>
+<p>Based on our molecular data, we do not share the conviction that XMRV may be a contributory factor in the pathogenesis of CFS, at least in the U.K.</p>
+</sec></body>
+<back>
+<ack>
+<p>The assistance of Sarah Bull in data collection and processing is gratefully acknowledged.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0008519-Lombardi1"><label>1</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Lombardi</surname><given-names>V</given-names></name>
+<name name-style="western"><surname>Ruscetti</surname><given-names>FW</given-names></name>
+<name name-style="western"><surname>Gupta</surname><given-names>JD</given-names></name>
+<name name-style="western"><surname>Pfost</surname><given-names>MA</given-names></name>
+<name name-style="western"><surname>Hagen</surname><given-names>KS</given-names></name>
+<etal/></person-group>             <year>2009</year>             <article-title>Detection of an infectious retrovirus, XMRV, in blood cells of patients with chronic fatigue syndrome.</article-title>             <source>Science</source>             <volume>326</volume>             <fpage>585</fpage>             <lpage>589</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Furuta1"><label>2</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Furuta</surname><given-names>RA</given-names></name>
+<name name-style="western"><surname>Miyazawa</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Sugiyama</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Kimura</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Hirayama</surname><given-names>F</given-names></name>
+<etal/></person-group>             <year>2009</year>             <article-title>The Prevalence of Xenotropic Murine Leukemia Virus-related Virus in Healthy Blood Donors in Japan.</article-title>             <source>Cold Spring Harbor Retrovirus Symposium</source>          </element-citation></ref>
+<ref id="pone.0008519-Urisman1"><label>3</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Urisman</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Molinaro</surname><given-names>RJ</given-names></name>
+<name name-style="western"><surname>Fischer N Plummer</surname><given-names>SJ</given-names></name>
+<name name-style="western"><surname>Casey</surname><given-names>G</given-names></name>
+<etal/></person-group>             <year>2006</year>             <article-title>Identification of a novel gammaretrovirus in prostate tumors of patients homozygous for R462Q RNaseL variant.</article-title>             <source>PLoS Pathog</source>             <volume>2</volume>             <fpage>211</fpage>             <lpage>225</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Schlaberg1"><label>4</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Schlaberg</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Choe</surname><given-names>DJ</given-names></name>
+<name name-style="western"><surname>Brown</surname><given-names>KR</given-names></name>
+<name name-style="western"><surname>Thaker</surname><given-names>HM</given-names></name>
+<name name-style="western"><surname>Singh</surname><given-names>IR</given-names></name>
+</person-group>             <year>2009</year>             <article-title>XMRV is present in malignant prostatic epithelium and is associated with prostate cancer, especially high-grade tumours.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>106</volume>             <fpage>16351</fpage>             <lpage>6</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Hohn1"><label>5</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Hohn</surname><given-names>O</given-names></name>
+<name name-style="western"><surname>Krause</surname><given-names>H</given-names></name>
+<name name-style="western"><surname>Barbarotto</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Niederstadt</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Beimforde</surname><given-names>N</given-names></name>
+<etal/></person-group>             <year>2009</year>             <article-title>Lack of evidence for xenotropic murine leukemia virus-related virus (XMRV) in German prostate cancer patients.</article-title>             <source>Retrovirology</source>             <volume>6</volume>             <fpage>92</fpage>          </element-citation></ref>
+<ref id="pone.0008519-DArcy1"><label>6</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>D'Arcy</surname><given-names>FR</given-names></name>
+<name name-style="western"><surname>Foley</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Perry</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Marignol</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Lawler</surname><given-names>M</given-names></name>
+<etal/></person-group>             <year>2008</year>             <article-title>No evidence of XMRV in Irish prostate cancer patients with the R462Q mutations.</article-title>             <source>European Urology</source>             <volume>7</volume>             <supplement>Suppl</supplement>             <fpage>271</fpage>          </element-citation></ref>
+<ref id="pone.0008519-Fischer1"><label>7</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Fischer</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Hellwinkel</surname><given-names>O</given-names></name>
+<name name-style="western"><surname>Schulz</surname><given-names>C</given-names></name>
+<name name-style="western"><surname>Chun</surname><given-names>FK</given-names></name>
+<name name-style="western"><surname>Huland</surname><given-names>H</given-names></name>
+<etal/></person-group>             <year>2008</year>             <article-title>Prevalence of human gamma retrovirus XMRV in sporadic prostate cancer.</article-title>             <source>J Clin Virol</source>             <volume>43</volume>             <fpage>277</fpage>             <lpage>283</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Silverman1"><label>8</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Silverman</surname><given-names>RH</given-names></name>
+</person-group>             <year>2007</year>             <article-title>A scientific journey through the 2-5A/RNaseL system.</article-title>             <source>Cytokine Growth Factor Rev</source>             <volume>18</volume>             <fpage>381</fpage>             <lpage>388</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Sharpe1"><label>9</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Sharpe</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Chalder</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Palmer</surname><given-names>I</given-names></name>
+<name name-style="western"><surname>Wessely</surname><given-names>S</given-names></name>
+</person-group>             <year>1997</year>             <article-title>Chronic fatigue syndrome. A practical guide to assessment and management.</article-title>             <source>General Hospital Psychiatry</source>             <volume>19</volume>             <fpage>185</fpage>             <lpage>99</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Fukuda1"><label>10</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Fukuda</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Straus</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Hickie</surname><given-names>I</given-names></name>
+<name name-style="western"><surname>Sharpe</surname><given-names>MC</given-names></name>
+<name name-style="western"><surname>Dobbins</surname><given-names>JG</given-names></name>
+<etal/></person-group>             <year>1994</year>             <article-title>The chronic fatigue syndrome: a comprehensive approach to its definition and study.</article-title>             <source>Annals of Internal Medicine</source>             <volume>121</volume>             <fpage>953</fpage>             <lpage>959</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Roberts1"><label>11</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Roberts</surname><given-names>AD</given-names></name>
+<name name-style="western"><surname>Charler</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Papadopoulos</surname><given-names>AS</given-names></name>
+<name name-style="western"><surname>Wessely</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Chalder</surname><given-names>T</given-names></name>
+<etal/></person-group>             <year>2009</year>             <article-title>Does hypocortisolism predict a poor response to cognitive behavioural therapy in chronic fatigue syndrome?</article-title>             <source>Psychological Medicine. In press</source>          </element-citation></ref>
+<ref id="pone.0008519-Quarmby1"><label>12</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Quarmby</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Rimes</surname><given-names>KA</given-names></name>
+<name name-style="western"><surname>Deale</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Wessely</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Chalder</surname><given-names>T</given-names></name>
+</person-group>             <year>2007</year>             <article-title>Cognitive-behaviour therapy for chronic fatigue syndrome: comparison of outcomes within and outside the confines of a randomised controlled trial.</article-title>             <source>Behaviour Research &amp; Therapy</source>             <volume>45</volume>             <fpage>1085</fpage>             <lpage>94</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Euba1"><label>13</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Euba</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Chalder</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Deale</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Wessely</surname><given-names>S</given-names></name>
+</person-group>             <year>1996</year>             <article-title>A comparison of the characteristics of chronic fatigue syndrome in primary and tertiary care.</article-title>             <source>British Journal of Psychiatry</source>             <volume>168</volume>             <fpage>121</fpage>             <lpage>6</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Deale1"><label>14</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Deale</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Chalder</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Marks</surname><given-names>I</given-names></name>
+<name name-style="western"><surname>Wessely</surname><given-names>S</given-names></name>
+</person-group>             <year>1997</year>             <article-title>A randomised controlled trial of cognitive behaviour versus relaxation therapy for chronic fatigue syndrome.</article-title>             <source>American Journal of Psychiatry</source>             <volume>154</volume>             <fpage>408</fpage>             <lpage>14</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Chalder1"><label>15</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Chalder</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Berelowitz</surname><given-names>G</given-names></name>
+<name name-style="western"><surname>Pawlikowska</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Watts</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Wessely</surname><given-names>S</given-names></name>
+<etal/></person-group>             <year>1993</year>             <article-title>Development of a fatigue scale.</article-title>             <source>Journal of Psychosomatic Research</source>             <volume>37</volume>             <fpage>147</fpage>             <lpage>153</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Mundt1"><label>16</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Mundt</surname><given-names>JC</given-names></name>
+<name name-style="western"><surname>Marks</surname><given-names>IM</given-names></name>
+<name name-style="western"><surname>Shear</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Griest</surname><given-names>JH</given-names></name>
+</person-group>             <year>2002</year>             <article-title>The work and social adjustment scale: a simple measure of impairment in functioning.</article-title>             <source>British Journal of Psychiatry</source>             <volume>180</volume>             <fpage>461</fpage>             <lpage>464</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Goldberg1"><label>17</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Goldberg</surname><given-names>DP</given-names></name>
+<name name-style="western"><surname>Blackwell</surname><given-names>B</given-names></name>
+</person-group>             <year>1970</year>             <article-title>Psychiatric illness in general practice. A detailed study using a new method of case identification.</article-title>             <source>British Medical Journal</source>             <volume>1</volume>             <fpage>439</fpage>             <lpage>443</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Wilson1"><label>18</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Wilson</surname><given-names>AHI</given-names></name>
+<name name-style="western"><surname>Hadzi-Pavlovic</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Wakefield</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Parker</surname><given-names>G</given-names></name>
+<etal/></person-group>             <year>2001</year>             <article-title>What is chronic fatigue syndrome? Heterogeneity within an international multicentre study.</article-title>             <source>Australian and New Zealand Journal of Psychiatry</source>             <volume>35</volume>             <fpage>520</fpage>             <lpage>527</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Freeman1"><label>19</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Freeman</surname><given-names>B</given-names></name>
+<name name-style="western"><surname>Smith</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Curtis</surname><given-names>C</given-names></name>
+<name name-style="western"><surname>Huckett</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Mill</surname><given-names>J</given-names></name>
+<etal/></person-group>             <year>2003</year>             <article-title>DNA from buccal swabs recruited by mail: evaluation of storage effects on long-term stability and suitability for multiplex polymerase chain reaction genotyping.</article-title>             <source>Behav Genet</source>             <volume>33</volume>             <fpage>67</fpage>             <lpage>72</lpage>          </element-citation></ref>
+<ref id="pone.0008519-White1"><label>20</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>White</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Thomas</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Kangro</surname><given-names>HO</given-names></name>
+<name name-style="western"><surname>Bruce-Jones</surname><given-names>WD</given-names></name>
+<name name-style="western"><surname>Amess</surname><given-names>J</given-names></name>
+<etal/></person-group>             <year>2001</year>             <article-title>Predictions and associations of fatigue syndromes and mood disorders that occur after infectious mononucleosis.</article-title>             <source>Lancet</source>             <volume>358</volume>             <fpage>1946</fpage>             <lpage>1954</lpage>          </element-citation></ref>
+<ref id="pone.0008519-DeFreitas1"><label>21</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>De Freitas</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Hilliard</surname><given-names>B</given-names></name>
+<name name-style="western"><surname>Cheney</surname><given-names>PR</given-names></name>
+<name name-style="western"><surname>Bell</surname><given-names>DS</given-names></name>
+<name name-style="western"><surname>Kiggundu</surname><given-names>E</given-names></name>
+<etal/></person-group>             <year>1991</year>             <article-title>Retroviral sequences related to human T-lymphotropic virus type II in patients with chronic fatigue immune dysfunction syndrome.</article-title>             <source>Proc Natl Acad Sci USA</source>             <volume>88</volume>             <fpage>2922</fpage>             <lpage>2926</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Gow1"><label>22</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Gow</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Simpson</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Schliephake</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Behan</surname><given-names>WM</given-names></name>
+<name name-style="western"><surname>Morrison</surname><given-names>LJ</given-names></name>
+<etal/></person-group>             <year>1992</year>             <article-title>Search for retrovirus in the chronic fatigue syndrome.</article-title>             <source>J Clin pathol</source>             <volume>45</volume>             <fpage>1058</fpage>             <lpage>1061</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Honda1"><label>23</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Honda</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Kitamura</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Nakasone</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Fukushima</surname><given-names>Y</given-names></name>
+<name name-style="western"><surname>Matsuda</surname><given-names>S</given-names></name>
+<etal/></person-group>             <year>1993</year>             <article-title>Japanese patients with chronic fatigue syndrome are negative for known retrovirus infections.</article-title>             <source>Microbiol. Immunol</source>             <volume>37</volume>             <fpage>779</fpage>             <lpage>784</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Folks1"><label>24</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Folks</surname><given-names>TM</given-names></name>
+<name name-style="western"><surname>Heneine</surname><given-names>W</given-names></name>
+<name name-style="western"><surname>Khan</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Woods</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Chapman</surname><given-names>L</given-names></name>
+<etal/></person-group>             <year>1993</year>             <article-title>Investigation of retroviral involvement in chronic fatigue syndrome.</article-title>             <source>Ciba Found Symp</source>             <volume>173</volume>             <fpage>160</fpage>             <lpage>166</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Khan1"><label>25</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Khan</surname><given-names>AS</given-names></name>
+<name name-style="western"><surname>Heneine</surname><given-names>WM</given-names></name>
+<name name-style="western"><surname>Chapman</surname><given-names>LE</given-names></name>
+<name name-style="western"><surname>Gary</surname><given-names>HE</given-names><suffix>Jr</suffix></name>
+<name name-style="western"><surname>Woods</surname><given-names>TC</given-names></name>
+<etal/></person-group>             <year>1993</year>             <article-title>Assessment of retrovirus sequence and other possible risk factors for the chronic fatigue syndrome in adults.</article-title>             <source>Annals of Internal Med</source>             <volume>118</volume>             <fpage>241</fpage>             <lpage>245</lpage>          </element-citation></ref>
+<ref id="pone.0008519-Heneine1"><label>26</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Heneine</surname><given-names>W</given-names></name>
+<name name-style="western"><surname>Woods</surname><given-names>TC</given-names></name>
+<name name-style="western"><surname>Sinha</surname><given-names>SD</given-names></name>
+<name name-style="western"><surname>Khan</surname><given-names>AS</given-names></name>
+<name name-style="western"><surname>Chapman</surname><given-names>LE</given-names></name>
+<etal/></person-group>             <year>1994</year>             <article-title>Lack of evidence for infection with known human and animal retroviruses in patients with chronic fatigue syndrome.</article-title>             <source>Clin Infect Dis</source>             <volume>suppl 1</volume>             <fpage>s121</fpage>             <lpage>125</lpage>          </element-citation></ref>
+</ref-list>
+
+</back>
+</article>

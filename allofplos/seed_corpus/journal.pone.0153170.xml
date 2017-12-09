@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article article-type="research-article" dtd-version="3.0" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0153170</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-15-33710</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Antibody-producing cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Antibody-producing cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>Antibody-producing cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Blood cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>B cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Surgical and invasive medical procedures</subject><subj-group><subject>Transplantation</subject><subj-group><subject>Organ transplantation</subject><subj-group><subject>Renal transplantation</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Surgical and invasive medical procedures</subject><subj-group><subject>Urinary system procedures</subject><subj-group><subject>Renal transplantation</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Blood cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>T cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular types</subject><subj-group><subject>Animal cells</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>T cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>T cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune cells</subject><subj-group><subject>White blood cells</subject><subj-group><subject>T cells</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Surgical and invasive medical procedures</subject><subj-group><subject>Transplantation</subject><subj-group><subject>Solid organ transplantation</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Chemistry</subject><subj-group><subject>Chemical compounds</subject><subj-group><subject>Organic compounds</subject><subj-group><subject>Steroids</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Physical sciences</subject><subj-group><subject>Chemistry</subject><subj-group><subject>Organic chemistry</subject><subj-group><subject>Organic compounds</subject><subj-group><subject>Steroids</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune response</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Immune response</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Clinical medicine</subject><subj-group><subject>Clinical immunology</subject><subj-group><subject>Transplantation immunology</subject><subj-group><subject>Transplant rejection</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Clinical immunology</subject><subj-group><subject>Transplantation immunology</subject><subj-group><subject>Transplant rejection</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Immunology</subject><subj-group><subject>Clinical immunology</subject><subj-group><subject>Transplantation immunology</subject><subj-group><subject>Transplant rejection</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Pharmacology</subject><subj-group><subject>Drugs</subject><subj-group><subject>Immunosuppressives</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Renal Transplant Recipients Treated with Calcineurin-Inhibitors Lack Circulating Immature Transitional CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> Regulatory B-Lymphocytes</article-title>
+<alt-title alt-title-type="running-head">B-Regulatory Cells and Kidney Transplantation</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Tebbe</surname>
+<given-names>Bastian</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Wilde</surname>
+<given-names>Benjamin</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Ye</surname>
+<given-names>Zeng</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Wang</surname>
+<given-names>Junyu</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Wang</surname>
+<given-names>Xinning</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Jian</surname>
+<given-names>Fu</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Dolff</surname>
+<given-names>Sebastian</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Schedlowski</surname>
+<given-names>Manfred</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Hoyer</surname>
+<given-names>Peter F.</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Kribben</surname>
+<given-names>Andreas</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Witzke</surname>
+<given-names>Oliver</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Hoerning</surname>
+<given-names>André</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="aff" rid="aff005"><sup>5</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Department of Nephrology, University Hospital Essen, University Duisburg-Essen, Essen, Germany</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Department of Pediatrics II, Pediatric Nephrology, Gastroenterology, Endocrinology and Transplant Medicine, Children’s Hospital Essen, University Duisburg-Essen, Essen, Germany</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Institute of Medical Psychology and Behavioral Immunobiology, University Hospital Essen, University of Duisburg-Essen, Essen, Germany</addr-line></aff>
+<aff id="aff004"><label>4</label> <addr-line>Department of Infectious Diseases, University Hospital Essen, University Duisburg-Essen, Essen, Germany</addr-line></aff>
+<aff id="aff005"><label>5</label> <addr-line>Department of Pediatrics and Adolescent Medicine, University Hospital Erlangen, Friedrich-Alexander University of Erlangen-Nuremberg, Erlangen, Germany</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Stepkowski</surname>
+<given-names>Stanislaw</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>University of Toledo, UNITED STATES</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: AH. Performed the experiments: BT ZY JW XW FJ. Analyzed the data: BT BW SD OW AH. Contributed reagents/materials/analysis tools: MS AK OW. Wrote the paper: BT PFH OW AH.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">andre.hoerning@uk-erlangen.de</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>5</day>
+<month>4</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>4</issue>
+<elocation-id>e0153170</elocation-id>
+<history>
+<date date-type="received">
+<day>7</day>
+<month>8</month>
+<year>2015</year>
+</date>
+<date date-type="accepted">
+<day>24</day>
+<month>3</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Tebbe et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0153170"/>
+<abstract>
+<sec id="sec001">
+<title>Background</title>
+<p>CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> transitional immature B-lymphocytes have been demonstrated to play an important role in regulating the alloimmune response in transplant recipients. Here, we analyzed the effect of calcineurin inhibition on these peripherally circulating regulatory B-cells (Breg) in renal transplant recipients receiving cyclosporine A (CsA) or tacrolimus.</p>
+</sec>
+<sec id="sec002">
+<title>Methods</title>
+<p>PBMCs from healthy subjects (HS) (n = 16) and renal transplant recipients (n = 46) were isolated. Flow cytometry was performed for CD19, CD24, CD38 and IL-10 either after isolation or after 72 hours of co-culture in presence of PMA/Ionomycin and TLR9-ligand in presence or absence of increasing concentrations of tacrolimus or CsA.</p>
+</sec>
+<sec id="sec003">
+<title>Results</title>
+<p>The amount of CD19<sup>+</sup> B-cells among lymphocytes was ∼9.1% in HS, ∼3.6% in CsA (n = 11, <italic>p</italic>&lt;0.05) and ∼6.4% in TAC (n = 35, <italic>p</italic>&lt;0.05) treated patients. Among B-cells, a distinct subset of Breg was found to be 4.7% in HS, 1.4% in tacrolimus treated patients and almost blunted in patients receiving CsA. Similarily, ∼4% of B-cells in HS and even fewer in CsA or tacrolimus treated patients produced IL-10 (0.5% and 1.5%, <italic>p</italic>&lt;0.05) and this was confirmed both in non-transplanted CsA-treated healthy subjects and in <italic>in vitro</italic> co-culture experiments. Among 29 patients with &lt;1% of Breg, 9 cases (31%) displayed an allograft rejection in contrast to only one case of rejection (6%) among 17 patients with &gt;1%.</p>
+</sec>
+<sec id="sec004">
+<title>Conclusion</title>
+<p>Calcineurin inhibitors reduce number and IL-10 production of Bregs in the peripheral circulation of both renal transplant recipients and non-transplanted healthy subjects. CNI induced Breg reduction is not restricted to a solid organ transplant setting and is not mediated by co-medication with steroids or MPA. A low proportion of Breg cells is associated with an elevated frequency of allograft rejection events.</p>
+</sec>
+</abstract>
+<funding-group>
+<funding-statement>The authors have no support or funding to report.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="4"/>
+<table-count count="1"/>
+<page-count count="15"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec005" sec-type="intro">
+<title>1 Introduction</title>
+<p>B-cells shape the humoral immunity and are classically considered to amplify the immune response because of their capability to produce antibodies (including autoantibodies) as well as acting as antigen-presenting cells to modulate T-cell-mediated immune responses [<xref ref-type="bibr" rid="pone.0153170.ref001">1</xref>, <xref ref-type="bibr" rid="pone.0153170.ref002">2</xref>]. After solid organ transplantation, the production of donor-specific allo-antibodies (DSA) is involved in both acute and chronic allograft rejection [<xref ref-type="bibr" rid="pone.0153170.ref003">3</xref>, <xref ref-type="bibr" rid="pone.0153170.ref004">4</xref>]. By contrast, immature subsets of B-cells termed regulatory B-cells have recently been shown in mice and humans to mediate protective immune responses by producing regulatory cytokines such as IL-10, TGF-b, IL-35 and directly interacting with pathogenic T-cells via cell-to-cell contact [<xref ref-type="bibr" rid="pone.0153170.ref001">1</xref>, <xref ref-type="bibr" rid="pone.0153170.ref002">2</xref>, <xref ref-type="bibr" rid="pone.0153170.ref005">5</xref>–<xref ref-type="bibr" rid="pone.0153170.ref009">9</xref>]. The Breg cell population appears to be heterogenous as different murine B-cell subsets such as CD1d<sup>hi</sup>CD5<sup>+</sup> [<xref ref-type="bibr" rid="pone.0153170.ref010">10</xref>] and Tim-1<sup>+</sup>IL-10<sup>+</sup> B-cells [<xref ref-type="bibr" rid="pone.0153170.ref011">11</xref>, <xref ref-type="bibr" rid="pone.0153170.ref012">12</xref>] have been described to exert immunoregulatory function. In humans, the identification of B-cells with regulatory properties has first been demonstrated in several studies in allergic [<xref ref-type="bibr" rid="pone.0153170.ref013">13</xref>] and autoimmune diseases such as systemic lupus erythematosus [<xref ref-type="bibr" rid="pone.0153170.ref014">14</xref>] or gianT-cell arteritis [<xref ref-type="bibr" rid="pone.0153170.ref015">15</xref>]. An exact definition of human Breg cells by lineage-specific surface markers is lacking [<xref ref-type="bibr" rid="pone.0153170.ref009">9</xref>, <xref ref-type="bibr" rid="pone.0153170.ref016">16</xref>]. Studies in patients with relapsing-remitting multiple sclerosis or type 1 diabetes demonstrated that <italic>ex vivo</italic>-activated B-cells produced less IL-10 than B-cells from healthy subjects, suggesting that insufficient IL-10 secretion by B-cells might facilitate autoimmune pathogenesis in humans [<xref ref-type="bibr" rid="pone.0153170.ref017">17</xref>, <xref ref-type="bibr" rid="pone.0153170.ref018">18</xref>]. A widely accepted phenotypic characterization of Bregs in humans was suggested by Blair et al. [<xref ref-type="bibr" rid="pone.0153170.ref014">14</xref>]. In their studies, the immature transitional CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cell subset was shown to enrich for IL-10+ Bregs and these cells suppressed CD3-mediated activation and differentation of Th1-cells via both secretion of IL-10 and cell-cell interaction [<xref ref-type="bibr" rid="pone.0153170.ref014">14</xref>]. In addition, Tedder and colleagues [<xref ref-type="bibr" rid="pone.0153170.ref019">19</xref>] identified a CD19<sup>+</sup>CD24<sup>hi</sup>CD27<sup>+</sup> memory B-cell subset harboring a similar number of IL-10 producing cells that have been identfied to inhibit TNFα production of CD4<sup>+</sup> Th-cells and monocytes.</p>
+<p>In transplant immunology, recent findings from both experimental murine models and human studies pointed out that distinct B-cell subsets exert an immunoregulatory activity and may both participate in maintaining long-term allograft function and contribute in preventing allograft rejection [<xref ref-type="bibr" rid="pone.0153170.ref020">20</xref>]. This is a rather surprising finding because the presence of donor-specific allo-antibodies in transplant recipients is often associated with a decreased allograft function. Recent microarray analysis and Real Time PCR studies in operational tolerant allograft recipients (stable allograft function one year after withdrawal of immunosuppression) identified a B-cell specific gene signature indicating that subpopulations of B-cells may indeed play a relevant role in tolerance induction after solid organ transplantation [<xref ref-type="bibr" rid="pone.0153170.ref021">21</xref>, <xref ref-type="bibr" rid="pone.0153170.ref022">22</xref>]. Such a tolerogenic signature was characterized by an increase in immature transitional CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells exhibiting potent immunoregulatory properties compared to recipients with stable allograft function or with biopsy-proven chronic rejection. Although much attention has been focused on regulatory B-cell subsets in human and murine models of autoimmunity, the understanding of their role in solid organ transplantation is still limited. Moreover, information on the effect of immunosuppressive drugs on occurence and function of regulatory B-cells in renal transplant recipients receiving a calcineurin inhibitor based immunosuppressive therapy is scarce.</p>
+<p>In this study, we analyzed the distinct subset of CD24<sup>hi</sup>CD38<sup>hi</sup> Breg cells in renal transplant recipients receiving a calcineurin inhibitor based immunosuppression and compared these results with healthy subjects. The main finding was that calcineurin inhibition reduced the amount of CD24<sup>hi</sup>CD38<sup>hi</sup> Bregs and inhibited their IL-10 production independent of additional co-medications (e.g. steroids or mycophenolate derivatives) and that a decrease of peripherally circulating Bregs seems to be associated with the incidence of allograft rejection events.</p>
+</sec>
+<sec id="sec006">
+<title>2 Patients, Materials and Methods</title>
+<sec id="sec007" sec-type="materials|methods">
+<title>Material and Methods</title>
+<sec id="sec008">
+<title>Renal transplant patients</title>
+<p>Fourty-six Caucasian patients (26 male, mean age 54 ±14 years, range 23–74) were included that underwent renal transplantation receiving a CNI in combination with mycophenolate acid derivatives and steroids (TAC n = 35; CsA n = 11). None of these patients underwent kidney transplantation before. Mean trough level at timepoint of sample assessment was for TAC 6.2±2.7 ng/mL and 106±30 ng/mL for CsA. Except four, all patients underwent glucocorticoid therapy, mean dosage of prednisone was 6.6±3.3 mg/day. Mycophenolate mofetil (MMF) was given in a fixed dose of one to two times 1 g/day (n = 22) and mycophenolate sodium (MPA one to two times 720 mg/d (n = 14). None of the patients received a B-cell depleting therapy.</p>
+<p>Heparinized whole blood samples were collected in the outpatient clinic at periodical routine follow up visits starting six weeks after transplantation. Clinical chemistry was assessed out of the same samples that were used for FACS aquisition. Patients showing signs of acute infections (CrP &gt;0.5 mg/dL) or a history of autoimmune or malignant diseases were excluded from analysis. The mean time after transplantation at the timepoint of sample assessment by flow cytometry was 41 ±45 months. Twelve living donations were among the investigated patients. Ten patients developed a biopsy proved rejection within 24 months before or after measurement. After rejection, flow cytometry analysis was performed earliest after two months. Blood samples of patients with renal allograft rejection were assessed two months after the high pulse dosage steroid treatment was finished. Allograft function and the glomerular filtration rate (GFR) was estimated and calculated using the MDRD formula (ml/min). Informed consent was obtained before entering the study. The protocols for the investigations in patients and healthy subjects was approved by the ethics committee of the Medical Faculty of the University Duisburg-Essen (05–2803). None of the transplant donors were from a vulnerable population and all donors or next of kin provided written informed consent that was freely given.</p>
+</sec>
+<sec id="sec009">
+<title>Healthy subjects</title>
+<p>Sixteen healthy subjects served as a control group. There was no significant difference in age or sex compared to the patient groups. Blood specimen of four healthy subjects treated with CsA were kindly provided by the group of Professor M. Schedlowski (Institute of Medical Psychology and Behavioral Immunobiology, University Hospital Essen, University of Duisburg-Essen, Essen, Germany).</p>
+</sec>
+<sec id="sec010">
+<title>Antibodies and reagents</title>
+<p>Mouse anti-human CD19-PerCP or APC (HIB19), mouse anti-human CD24-FITC (eBioSN3), mouse anti-human CD38-APC (HIT2) and corresponding Ig-subclass-specific isotype controls were purchased from eBioscience (Frankfurt, Germany). Mouse anti-human CD25-PE (M-A251), mouse anti-human CD4-PerCP (L200), mouse anti-human CD127-FITC (hIL-7R-M21) and corresponding isotype controls were purchased from BD Biosciences (San Jose, CA, USA). For intracellular staining rat anti-human IL-10-APC, PE (JES3-9D7) from eBioscience (Frankfurt, Germany), mouse anti-human IFN-γ-APC (B27) from BD Biosciences and appropriate isotype controls were used. The cell stimulation cocktail plus protein transport inhibitor 500x was purchased from eBioscience, CpG ODN2006 from Invivogen (San Diego, USA). CsA was purchased from Novartis (Basel, Switzerland) and tacrolimus from Sigma-Aldrich (Hamburg, Germany).</p>
+</sec>
+<sec id="sec011">
+<title>Surface staining</title>
+<p>Heparinized venous blood was collected from all patients. 100μl was immediately used for surface staining using antibodies against CD19, CD24 and CD38. After 20 minutes of incubation at room temperature in the dark, red blood cells were lysed following the manufacturer´s protocol (PeliLyse buffer A1 set, Sanquin, Amsterdam, The Netherlands). Four color FACS analyses was performed by gating first on the lymphocyte and subsequently on the CD19<sup>+</sup> B-cell population. Gating for CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> cells was subsequently constantly performed as shown in <xref ref-type="fig" rid="pone.0153170.g001">Fig 1</xref>. Aquisition was performed on a FACSCalibur (BD Biosciences) using CellQuest software (BD Biosciences). Data were analyzed using FlowJo Software, Version 8.7.3 (Tree Star, Inc., Ashland, USA).</p>
+<fig id="pone.0153170.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0153170.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Calcineurin inhibitors reduce the expression of CD24 and CD38 on CD19<sup>+</sup> B lymphocytes.</title>
+<p>The expression of CD24, CD38 and IL-10 after gating on CD19<sup>+</sup> B-cells is shown in a representative healthy subject, indicating that only a minority of IL-10 producing B-cells highly express CD38 <bold>(A)</bold>. The dot blots in <bold>B</bold> depict CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells (red-framed boxes) in a representative healthy subject, a renal transplant recipient receiving a CsA or tacrolimus based immunosuppression. The respective isotype control staining is depicted in between. The scatter plot graphs in <bold>C</bold> and <bold>D</bold> summarize the results and show that treatment with tacrolimus (n = 35) or CsA (n = 11) not only reduce the percentage of peripherally circulating B-lymphocytes <bold>(C)</bold> but also affect the CD24<sup>hi</sup>CD38<sup>hi</sup> B-cell subset <bold>(D)</bold>. In contrast to healthy subjects (n = 16), the CD24<sup>hi</sup>38<sup>hi</sup> expressing B-cell subset of renal transplant patients receiving a calcineurin inhibitor were significantly reduced or even blunted <bold>(B, D)</bold>. No correlation was found between the amount of CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells and time of sample assessment after transplantation <bold>(E</bold>, Spearman test, <italic>r</italic> = -0,01, <italic>p</italic> = 0,9450).</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0153170.g001" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec012">
+<title>Cell culture and stimulation</title>
+<p>Peripheral mononuclear blood cells (PBMCs) were isolated by Ficoll density gradient centrifugation immediately after collecting the blood samples. Isolated PBMCs were washed, counted and incubated at a concentration of 1x10<sup>6</sup> cells/mL in 12-well plates at 37°C and 5% CO<sub>2</sub>. Isolated B-cells were cultured in 96-well flat bottom plates. Cell culture was performed in complete RPMI-1640 media containing 10% fetal calf serum, 2mM L-glutamine, 100 U/ml penicillin/streptomycin (1%, all from Invitrogen), 1% sodium bicarbonate and 1% sodium pyruvate (Cambrex). PBMCs were stimulated with 1μM ODN2006 Type B CPG (Invivogen, San Diego, USA) per well or were left unstimulated for control purposes and incubated for 72 hours. For the last six hours 2μl/mL cell stimulation cocktail plus protein transport inhibitors 500x containing PMA (40.5μM), Ionomycin (670μM), the protein transport inhibitors Brefeldin A (5.3mM), and Monensin (1mM) was added. Viability of cells before and after cell culture was assessed using 7-AAD staining (eBioscience) and methylen-blue.</p>
+</sec>
+<sec id="sec013">
+<title><italic>In vitro</italic> cell culture assay</title>
+<p>PBMCs were isolated and stimulated as described before. For some experiments, B-cells were isolated from buffy coats of healthy blood donors by negative selection using a magnetic column based system B-cell isolation kit II (Miltenyi Biotec, Bergisch Gladbach, Germany). Purity was typically above 95%. Incubation was performed in presence or absence of TAC or CsA. Increasing concentrations of tacrolimus (1, 5, 10 ng/mL) and CsA (1, 10, 100 ng/mL) were used according to clinical established trough levels.</p>
+</sec>
+<sec id="sec014">
+<title>Intracellular staining</title>
+<p>After stimulation and 72 hours of cell culture PBMCs were washed, stained for CD19, CD24, CD38 and incubated for 20 minutes at room temperature in the dark. Then intracellular staining according to manufacturer’s protocol for IL-10 and IFN-γ was performed using Fix&amp;Perm cell permeabilisation kit (Invitrogen, Karlsruhe, Germany). After staining and washing, FACS analyses were performed immediately.</p>
+</sec>
+<sec id="sec015">
+<title>Statistical analysis</title>
+<p>Statistical analyses were carried out using Graph Pad Prism 5.0 (Graph Pad Software, La Jolla, USA). If not mentioned otherwise, values are given as mean ± standard deviation. Results were compared using the Mann-Whitney U test, correlation analysis of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> cells with the glomerular filtration rate as calculated by MDRD (eGFR) was performed with Pearson’s test after proving normal distribution of the data. A <italic>p</italic> value &lt; 0.05 was considered as statistically significant.</p>
+</sec>
+</sec>
+</sec>
+<sec id="sec016" sec-type="results">
+<title>3 Results</title>
+<sec id="sec017">
+<title>Calcineurin inhibitors reduce the percentages of both CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> Bregs and IL-10 producing Bregs <italic>in vivo</italic> and <italic>in vitro</italic></title>
+<p>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells were assessed in renal transplant recipients receiving an immunosuppressive therapy consisting of prednisone, a mycophenol acid derivative and CsA (n = 11) or tacrolimus (n = 35) or age- and gender-matched healthy subjects (n = 16). Demographic data and clinical chemistry is shown in <xref ref-type="table" rid="pone.0153170.t001">Table 1</xref>. The percentages of peripheral circulating CD19<sup>+</sup> B-cells among lymphocytes was reduced both in TAC (6.4 ±0.7%) and CsA (3.6 ±0.7%) treated patients compared to healthy subjects (9.1 ±0.6%, <xref ref-type="fig" rid="pone.0153170.g001">Fig 1C</xref>). Repeatidly, the vast majority of IL-10 producing B-cells were found to express CD38 in a low or intermediate degree (<xref ref-type="fig" rid="pone.0153170.g001">Fig 1A</xref>, right panel) and only ~14.5% of the CD24<sup>hi</sup>CD38<sup>hi</sup> expressing cells were IL-10 positive in healthy subjects (n = 9), transplanted patients (n = 9) and healthy subjects receiving CsA (n = 4; not shown). Among B-cells, the distinct subset of CD24<sup>hi</sup>CD38<sup>hi</sup> cells was found to be 4.7 ±0.5% in healthy subjects, 1.4 ±0.4% in tacrolimus treated patients and almost blunted in patients receiving CsA (1.1 ±0.5%) (<xref ref-type="fig" rid="pone.0153170.g001">Fig 1B and 1D</xref>). There was neither a correlation in between the amount of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells and the timepoint of sample assessment (<xref ref-type="fig" rid="pone.0153170.g001">Fig 1E</xref>) or the trough levels of tacrolimus (r = -0.18 p = 0.3) or CsA (r = 0.48 p = 0.18, not shown), respectively.</p>
+<table-wrap id="pone.0153170.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0153170.t001</object-id>
+<label>Table 1</label> <caption><title>Patient data.</title></caption>
+<alternatives>
+<graphic id="pone.0153170.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0153170.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="justify" colspan="2"/>
+<th align="center">HS</th>
+<th align="center">TAC</th>
+<th align="center">CsA</th>
+</tr>
+<tr>
+<th align="justify" colspan="2"/>
+<th align="center">(n = 16)</th>
+<th align="center">(n = 35)</th>
+<th align="center">(n = 11)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" colspan="2"><bold>Age (yrs)</bold></td>
+<td align="center">44 ±3</td>
+<td align="center">49 ±11</td>
+<td align="center">57 ±12</td>
+</tr>
+<tr>
+<td align="center" colspan="2"><bold>Gender (m/f)</bold></td>
+<td align="center">1.3: 1</td>
+<td align="center">1.2: 1</td>
+<td align="center">1.75: 1</td>
+</tr>
+<tr>
+<td align="center" colspan="2"><bold>Donor (LDR vs CDR)</bold></td>
+<td align="center">-</td>
+<td align="center">8 vs. 27</td>
+<td align="center">4 vs. 7</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center"><bold>AAMR</bold></td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center"><bold>Renal allograft Rejection</bold></td>
+<td align="center"><bold>CAMR</bold></td>
+<td align="center">-</td>
+<td align="center">3</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="center"><bold>ACMR</bold></td>
+<td align="center">-</td>
+<td align="center">6</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center" colspan="2"><bold>Analysis post Tx (in months)</bold></td>
+<td align="center">-</td>
+<td align="center">24 ±26</td>
+<td align="center">93 ±54</td>
+</tr>
+<tr>
+<td align="center" colspan="2"><bold>Creatinin (mg/dL)</bold></td>
+<td align="center">-</td>
+<td align="center">1.8 ±0.7</td>
+<td align="center">2.1 ±1.1</td>
+</tr>
+<tr>
+<td align="center" colspan="2"><bold>MDRD (mL/min)</bold></td>
+<td align="center">-</td>
+<td align="center">44.1 ±13.4</td>
+<td align="center">34.8 ±12.0</td>
+</tr>
+<tr>
+<td align="center" colspan="2"><bold>Trough level (ng/ml)</bold></td>
+<td align="center">-</td>
+<td align="center">6.2 ±2.7</td>
+<td align="center">106 ±30</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001"><p>AAMR, Acute antibody mediated rejection; CAMR, Chronic antibody mediated rejection; ACMR, Acute cellular mediated rejection, CCMR, Chronic cellular mediated rejection</p></fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+<sec id="sec018">
+<title>The percentages of peripherally circulating IL-10 producing B-cells is reduced in calcineurin inhibitor treated renal transplant recipients</title>
+<p>After <italic>ex vivo</italic> mitogen stimulation of PBMCs containing the whole white blood cell population with a TLR-9 agonist, ∼4% of all CD19<sup>+</sup> B-cells showed IL-10 production in healthy subjects (n = 9) and even fewer in TAC (n = 5) or CsA (n = 4) treated patients (1.5 ±0.5% and 0.5 ±0.3%, respectively) (<xref ref-type="fig" rid="pone.0153170.g002">Fig 2A–2D</xref>). None of these patients shown in <xref ref-type="fig" rid="pone.0153170.g002">Fig 2</xref> did experience allograft rejection events before or after measurement, they had a stable renal function (mean eGFR 47.3 ±10.2ml/min) and the mean time after transplantation was 65 ±32 months. All patients were treated with steroids and MMF in addition to the CNIs. Co-culture of mitogen stimulated PBMCs of healthy subjects (n = 4) in presence of increasing concentrations of CsA or TAC resulted in a dose dependent reduction of IL-10 production after three days of incubation. Interestingly, the drug concentrations needed to suppress IL-10 production in B-cells were comparable to the trough levels applied in the clinical setting of renal transplantation (<xref ref-type="fig" rid="pone.0153170.g002">Fig 2A–2D</xref>). To get more insight in the possible mechanism and elucidate whether this effect was a secondary consequence of an IL-2 deprivation and abortion of T-cell mediated activation of Bregs, both PBMCs as well as positively isolated B-cells of nine healthy subjects were stimulated and co-cultured with CsA as previously performed. In both cell suspensions IL-10 production was significantly reduced compared to CsA free cultures (<xref ref-type="fig" rid="pone.0153170.g002">Fig 2E</xref>). The data from these unrelated experiments provided evidence that CsA directly inhibited B-cells to produce IL-10.</p>
+<fig id="pone.0153170.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0153170.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>The calcineurin inhibitors tacrolimus and CsA inhibit IL-10 expression of B-cells <italic>in vitro</italic> and <italic>in vivo</italic>.</title>
+<p>Freshly isolated PBMCs from healthy subjects (n = 9) and renal transplant recipients (n = 9) were mitogen/toll-like-receptor 9 stimulated for 72 hours and subsequently stained for surface CD19 and intracellular IL-10 or with the respective isotype control antibodies <bold>(A).</bold> The representative dot plots on the upper left in <bold>A</bold> show the intracellular IL-10 expression of stimulated CD19<sup>+</sup> B-cells from a healthy subject and representative renal transplant recipients receiving either tacrolimus or CsA (after gating on CD19<sup>+</sup> B-cells). The scatter plot in <bold>B</bold> summarizes the results of multiple unrelated experiments. PBMCs of healthy subjects were stimulated like described before in presence or absence of different concentrations of tacrolimus (n = 4) <bold>(C)</bold> or CsA (n = 4) <bold>(D)</bold>, as indicated. The bar graphs in <bold>E</bold> depict the decline of IL-10 production (in %) of PBMCs vs. positively isolated CD19<sup>+</sup> B-cells after stimulation co-cultured with CsA (n = 9 healthy subjects). 7-AAD staining was performed to ensure viability of cell culture.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0153170.g002" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec019">
+<title>CsA reduced the percentage of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> cells and IL-10<sup>+</sup> B-cells in healthy non-transplanted subjects</title>
+<p>To confirm that the decrease of both B-cells and Bregs in the peripheral circulation is directly caused by calcineurin inhibition, we took advantage of a pre-existing study in which healthy subjects were given CsA in clinical dosages. Whole blood specimen of four healthy subjects were analyzed for the percentage of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> and CD19<sup>+</sup> B-cells. In addition, the amount of IL-10 producing B-cells was assessed using isolated PBMCs and culturing them as described above, before and after a 14 days lasting treatment with CsA. CsA was given body weight adapted 4 times during the first two days using 2.5 mg/kg (high dosage) and then reduced to 0.25 mg/kg (<xref ref-type="fig" rid="pone.0153170.g003">Fig 3</xref>). After the first two days the mean drug trough level was 117±29 ng/mL. The frequency of CD19<sup>+</sup> B-cells including the CD24<sup>hi</sup>CD38<sup>hi</sup> subset was unaltered (<xref ref-type="fig" rid="pone.0153170.g003">Fig 3A and 3B</xref>). In contrast, the production of IL-10 in B-cells decreased from 3.7 ±1.3% to 1.5 ±0.8% and IFN-γ in CD3<sup>+</sup> T-cells from 36.2 ±0.5% to 15.6 ±2.5% at day 2. After additional 12 days of low dose CsA treatment all analyzed parameters did further substantially decrease: CD19<sup>+</sup> B-cells from 8.2 ±0.6% at day 0 to 6.9 ±0.3% after 14 days of treatment (<xref ref-type="fig" rid="pone.0153170.g003">Fig 3A</xref>), CD24<sup>hi</sup> CD38<sup>hi</sup> B-cells from 4.9 ±1.3% to 2.7 ±0.9% (<xref ref-type="fig" rid="pone.0153170.g003">Fig 3B</xref>), IL-10<sup>+</sup> B-cells from 3.7 ±1.3% to 2.7 ±0.5% (<xref ref-type="fig" rid="pone.0153170.g003">Fig 3C</xref>), and IFN-γ producing lymphocytes from 36.2 ±0.5% to 26.1 ±2.5% (<xref ref-type="fig" rid="pone.0153170.g003">Fig 3D</xref>). Only the frequency of CD25<sup>hi</sup>CD127<sup>lo</sup> expressing CD4+ Tregs remained unaltered. Altogether, these results demonstrate that calcineurin inhibitors reduced the production of IL10<sup>+</sup> in B-cells and that this effect is not restricted to a solid organ transplant setting or a co-medication with steroids or MPA.</p>
+<fig id="pone.0153170.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0153170.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>CsA reduced both the percentage of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells and IL-10<sup>+</sup> B-cells in healthy subjects.</title>
+<p>Healthy subjects (n = 4) were treated with CsA for 14 days, two days receiving a high dosage followed by an additional 12 days with a low dosage treatment. The bargraphs in panels <bold>A-C</bold> show the decline of peripheral circulating CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells and their intracellular production of IL-10<sup>+</sup> compared to day 0 (in %) while the percentage of CD4<sup>+</sup>CD25<sup>+</sup>CD127<sup>-</sup> Tregs was unaltered during CsA treatment <bold>(D)</bold>. The intracellular IFN-γ production of CD3<sup>+</sup> T-cells was assessed and served as a positive control reaction <bold>(E)</bold>. Corresponding representative dotplots or histograms are displayed on the right <bold>(A-E)</bold>.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0153170.g003" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec020">
+<title>A low percentage of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> Bregs in the peripheral blood of renal transplant recipients is associated with a reduced glomerular filtration rate</title>
+<p>To evaluate the relevance of our findings the correlation between the percentage of peripherally circulating CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells and renal allograft function (MDRD formula, eGFR) was tested (Spearman`s rank correlation test, <xref ref-type="fig" rid="pone.0153170.g004">Fig 4A</xref>). In our cohort of 46 patients (overall mean eGFR 40.6 ±13.4), a high amount of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> cells was associated with a higher eGFR (r = 0.38, p = 0.0079). When CsA and TAC treated patients were analysed separately, this correlation was mainly observed in the cohort of tacrolimus treated patients (TAC, n = 35; r = 0.46 p = 0.006; CsA, n = 11 r = 0.07 p = 0.81; not shown). Moreover, patients with a low amount of peripherally circulating CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells show an elevated frequency of biopsy proven allograft rejection events (<xref ref-type="fig" rid="pone.0153170.g004">Fig 4B</xref>, <italic>p</italic>&lt;0.05), although this analysis did not reach statistical significance using the Fisher’s exact test (<italic>p</italic>&lt;0.07). The likelihood ratio to develop an allograft rejection with a CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cell frequency &lt; 1% was 1.6.</p>
+<fig id="pone.0153170.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0153170.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title/>
+<p>The amount of peripheral circulating CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> cells correlated with the clinical outcome after kidney transplantation A low amount of peripheral circulating CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> cells was associated with a lower eGFR <bold>(A).</bold> The orange-framed box in <bold>B</bold> indicates a subgroup of 29 patients that exhibited &lt;1% of CD24<sup>hi</sup>38<sup>hi</sup> expressing CD19<sup>+</sup> peripherally circulating B-cells. 31% (n = 9) of these patients experienced a biopsy proven rejection event 24 months before or after the analyses (5 patients before and 4 patients within 24 months after sample assessment).</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0153170.g004" xlink:type="simple"/>
+</fig>
+<p>Among 29 patients with less than 1% of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> cells, 9 cases (31%) displayed a biopsy proven allograft rejection. Of these 9, five patients developed a rejection within 24 months before sample assessment, four of them were of acute cellular (ACMR) and one of chronic humoral origin (CAMR). Four patients (1 ACMR, 1 CCMR, 2 CAMR) developed allograft rejection within 24 months after measurement displaying no signs of a loss in renal allograft function at the time point of sample assessment. In contrast, only one case of acute rejection (6%, ACMR, BANFF 1A) occurred in the remaining group of 17 patients with greater than 1% of peripherally circulating CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells (assessed 2 months before the rejection event, <xref ref-type="fig" rid="pone.0153170.g004">Fig 4B</xref>). Prior to Tx, none of the patients displayed anti-HLA donor specific antibodies (DSA). During follow up, one patient developed de novo donor-specific anti-HLA antibodies and suffered from a humoral rejection (CAMR). The majority of biopsy proven acute rejections in this study was cellular mediated (ACMR/CCMR, 6/1), only three were of an antibody mediated origin (AAMR/CAMR, 1/2; <xref ref-type="table" rid="pone.0153170.t001">Table 1</xref>). Reduced frequencies of transitional CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells were associated with a higher risk of developing an allograft rejection but only 30% of these cases were antibody mediated (AAMR or ACMR).</p>
+<p>Statistical analysis of the amount of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells and TAC (r = 0.03, p = 0.83) or CsA (r = 0.48, p = 0.18) trough levels (<xref ref-type="fig" rid="pone.0153170.g004">Fig 4C and 4D</xref>), the time after transplantation, the dosage of co-medication (steroids and or MPA), CMV infections or the age of allograft recipients or donors revealed no significant correlation (not shown).</p>
+</sec>
+</sec>
+<sec id="sec021" sec-type="conclusions">
+<title>4 Discussion</title>
+<p>The presence and function of B regulatory cells are of increasing interest in solid organ transplantation. In particular, the immature transitional CD19<sup>+</sup> B-cell phenotype characterized by the surface expression of CD24<sup>hi</sup>CD38<sup>hi</sup> was previously suggested to play an important role not only in maintaining long-term allograft function but also in promoting allograft tolerance [<xref ref-type="bibr" rid="pone.0153170.ref021">21</xref>–<xref ref-type="bibr" rid="pone.0153170.ref023">23</xref>].</p>
+<p>In this study, we found a reduced amount of peripheral circulating CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells in renal transplant recipients receiving a calcineurin inhibitor based immunosuppressive therapy when compared to healthy subjects. A low percentage of peripheral circulating CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells in these patients was associated with a worse clinical outcome in allograft function (eGFR) and allograft rejection events. <italic>In vivo</italic> studies involving CsA treated healthy subjects proved that the reduced surface expression of the CD24 and CD38 molecules as well as the impaired IL-10 production was caused by calcineurin inhibition. Further <italic>in vitro</italic> experiments using immunomagnetic isolated B-cells confirmed that CsA directly affects the Breg’s IL-10 production and excluded the possibility of IL-2 deprivation and/or T helper cell mediated activation of Bregs.</p>
+<p>The most widely studied mechanism by which Bregs regulate immune responses is via direct suppression of CD4<sup>+</sup> T-cells through provision of IL-10. The CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> immature B-cell subset investigated in this study was also shown to exhibit regulatory capability mainly through the release of IL-10 [<xref ref-type="bibr" rid="pone.0153170.ref014">14</xref>]. However, as revealed in patients with SLE, their suppressive capacity was also dependent on CD80/CD86 expression indicating an important role for contact-mediated suppression apart from their production of IL-10 [<xref ref-type="bibr" rid="pone.0153170.ref014">14</xref>]. Although not a primary aim of this study, a further interesting observation was that only a minority of ~14.5% among CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> cells was found to produce IL-10 suggesting indeed that these transitional, immature B-cells are heterogenous and employ alternative mechanisms to exert their regulatory function independently of IL-10. Whether this mechanism is based on secretion of further suppressive soluble factors or solely vial cell-cell contact is currently under investigation.</p>
+<p>Not only functional defects but also a numerical reduction has been described for CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> immature B-cells and IL-10 producing Breg cells in autoimmune diseases, including SLE and multiple sclerosis [<xref ref-type="bibr" rid="pone.0153170.ref008">8</xref>]. In this study, both the percentage of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> immature B-cells in the peripheral circulation as well as the ability of B-cells to produce IL-10 were affected by calcineurin inhibition <italic>in vivo</italic> and <italic>in vitro</italic>. Similar findings were described in a very recent work by Shabir et al., who demonstrated a significant decrease of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> cells in pre- to three months posttransplant specimen and normalizing again six months after transplantation [<xref ref-type="bibr" rid="pone.0153170.ref024">24</xref>]. Recently, Chung et al. [<xref ref-type="bibr" rid="pone.0153170.ref025">25</xref>] also reported a decrease of the CD19+CD24<sup>hi</sup>CD38<sup>hi</sup> immature B-cell subset and their production of IL-10 in a cohort of 21 renal transplant patients undergoing a tacrolimus based immunosuppression. Although the authors performed their assay only shortly before and until one month after transplantation these results corroborate our observations. The primary target of CNIs is to prevent the activation of NFAT in T-cells leading to the suppression of IL2-gene transcription. Therefore, a reduced number of T-cells available for B-cell help caused by CNI mediated inhibition of T-cell proliferation or the induction of T-cell apoptosis may serve as an obvious and appealing explanation. However, studies elucidating direct effects of CNIs on B-cells are scarce. Especially, their effect on Breg subsets has not been elucidated so far. In purified human B-cells, Heidt et al. and Traitanon et al. demonstrated that in contrast to CsA and tacrolimus, Rapamycin and MPA profoundly inhibited B-cell proliferation [<xref ref-type="bibr" rid="pone.0153170.ref026">26</xref>], maturation into plasma cells [<xref ref-type="bibr" rid="pone.0153170.ref027">27</xref>] and immunoglobulin production [<xref ref-type="bibr" rid="pone.0153170.ref026">26</xref>], respectively. In addition, the <italic>in vitro</italic> effects of cyclosporine and tacrolimus on IL-6 and IL-10 production were less pronounced and depended on dosage and type of stimulation [<xref ref-type="bibr" rid="pone.0153170.ref026">26</xref>, <xref ref-type="bibr" rid="pone.0153170.ref027">27</xref>]. Our <italic>in vivo</italic> findings in healthy subjects and in CsA co-cultured immunomagnetic negatively isolated B-cells provide new biologically relevant aspects on this issue, because they clearly demonstrate that the production of IL-10 and hence the regulatory function of Bregs seem to be directly hampered by calcineurin inhibition. These observations furthermore reveal that the IL-10 production of Breg cells may occur without any T-cell interaction. However, the exact mechanism by which Calcineurin inhibitors suppress Breg function remains to be further elucidated.</p>
+<p>Although a dose dependent reduction of IL-10 production was observed in our <italic>in vitro</italic> experiments, a correlation of drug trough levels with the amount of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> Bregs in the renal transplant setting was not found. The reason may be a longer exposition of B-cells in patients receiving calcineurin inhibitors one the one hand or the polypharmaceutical treatment on the other. Indeed, most results in renal transplant studies are affected by a multicompound immunosuppressive therapy regime [<xref ref-type="bibr" rid="pone.0153170.ref028">28</xref>] and the majority of the CNI treated recipients receive co-medications with corticosteroids and/or MPA. This makes it difficult to dissect which drug in fact is responsible for the observed reduction of Breg cells. To solve this issue, a subcohort of non-transplanted healthy subjects that received a mono-therapy with CsA was included in this study. To the best of our knowledge this is a unique and so far unreported experiment. It enabled us to demonstrate that the observed reduction in CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> immature Breg subsets is solely mediated by Calcineurin inhibition and that this is independent of a renal transplant setting, renal allograft function or a co-medication with steroids or MPA derivatives.</p>
+<p>Breg cells seem to play a crucial role in balancing the alloreactive immune response, as kidney transplanted patients with &lt;1% of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells had a significant higher risk of experiencing allograft rejection events. Patients that suffered from rejection before or after sample assessment had a significant lower frequency of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells. Support to these findings is provided by Chesneau and coworkers who demonstrated that tolerant human renal transplant recipients exhibited higher frequencies of CD20<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> transitional and CD20<sup>+</sup>CD38<sup>lo</sup>CD24<sup>lo</sup> naive B-cells compared to patients with stable allograft function under immunosuppressive treatment [<xref ref-type="bibr" rid="pone.0153170.ref023">23</xref>]. Moreover, Silva et al. showed that operational tolerant subjects exhibited preservation in the number of circulating B-cells, particularly for the immature CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> Bregs, in contrast to decreased numbers in subjects with chronic rejection [<xref ref-type="bibr" rid="pone.0153170.ref029">29</xref>]. Most recently, Borrows' group also described a protective function of transitional CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> B-cells preventing allograft rejection within the first year of kidney transplantation [<xref ref-type="bibr" rid="pone.0153170.ref024">24</xref>]. Our findings are in line with Shabir et al. [<xref ref-type="bibr" rid="pone.0153170.ref024">24</xref>] who also demonstrated that in a cohort of 73 <italic>de novo</italic> kidney transplanted patients a low amount of transitional B-cells correlated with a higher risk of allograft rejection.</p>
+<p>Interestingly, allograft rejections in patients exhibiting &lt;1% of peripherally circulating CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> Bregs were mainly cellular mediated (ACMR). Only 30% of these cases were antibody mediated (CAMR) as might be expected (<xref ref-type="table" rid="pone.0153170.t001">Table 1</xref>, <xref ref-type="fig" rid="pone.0153170.g004">Fig 4</xref>). It is a limitation of this study that the development of <italic>de novo</italic> DSA was not assessed in a time-dependent fashion during our routine follow-up, since this might have enabled us to investigate the relationship in between DSA-producing and tolerogenic B-cells. Irrespectively, these results still allow the conclusion that a conserved Breg subset may protect rather from cellular than from humoral allograft rejections. Further multicenter studies including larger patient cohorts will be needed to fully elucidate these preliminary findings as monitoring of B-cell phenotypes could be of importance to both analyze and better predict the characteristics of a cellular or humoral alloimmune response.</p>
+<p>Altogether, these study results suggest that subsets of the CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> Breg population and possibly their production of IL-10 may be an important regulator of the inflammatory alloimmune response and that deficiency or loss of these transitional immature Bregs might be involved in the process of acute and chronic allograft rejection. Moreover, we observed a so far underestimated side effect of CNI inhibitors, especially of CsA in reducing the frequency and hampering the function of immature transitional Bregs that may compromise renal allograft function in the longterm. Whether the impairment of the transitional immature B-cell subset can be considered as an individual predisposition to a toxic side effect of Calcineurin inhibition needs to be clarified in further studies co-investigating pharmacodynamic drug effects.</p>
+<p>The analyses of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> Bregs in this study provide a further supplemental piece of relevant information on B regulatory cell components of the recipient’s immune system after renal transplantation. Patients displaying higher transitional B-cell frequencies experienced reduced rejection rates. In addition, CNI treatment results in a reduction of transitional B-cells and hence may negatively influence the development of a favorably balanced B-cell compartment. To investigate whether renal patients are at risk to develop allograft rejection events it thus may be helpful to determine the amount of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> Bregs periodically. The monitoring of CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> Bregs may thus have the potential to serve as an adjunct tool to improve the monitoring of the subjects peripheral cellular immunity in order to prevent renal allograft rejection independent from determining drug trough levels. Given the fact that drug trough levels provide no insight in the subjects pharmacodynamic response towards CNIs, a regular assessment of the numerical composition and function of the peripheral cellular immune regulation may gain in importance in the near future [<xref ref-type="bibr" rid="pone.0153170.ref030">30</xref>]. Further studies with a longitudinal monitoring of patients will therefore be necessary to define cut-off values of peripheral circulating CD19<sup>+</sup>CD24<sup>hi</sup>CD38<sup>hi</sup> Bregs cells that may predict allograft rejection events after solid organ transplantation.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>We would like to thank Tanja Hinkeldein and Barbara Nilewski-Kühl for their excellent technical assistance.</p>
+</ack>
+<glossary>
+<title>Abbreviations</title>
+<def-list>
+<def-item><term>AAMR</term>
+<def><p>Acute Antibody Mediated Rejection</p></def>
+</def-item>
+<def-item><term>ACMR</term>
+<def><p>Acute Cellular Mediated Rejection</p></def>
+</def-item>
+<def-item><term>Breg</term>
+<def><p>regulatory B-Lymphocytes</p></def>
+</def-item>
+<def-item><term>CCMR</term>
+<def><p>Chronic cellular mediated rejection</p></def>
+</def-item>
+<def-item><term>CD</term>
+<def><p>cadaveric donation</p></def>
+</def-item>
+<def-item><term>CNI</term>
+<def><p>Calcineurin Inhibitor</p></def>
+</def-item>
+<def-item><term>CsA</term>
+<def><p>Cyclosporine A</p></def>
+</def-item>
+<def-item><term>DSA</term>
+<def><p>donor-specific allo-antibodies</p></def>
+</def-item>
+<def-item><term>eGFR</term>
+<def><p>estimated Glomerular Filtration Rate</p></def>
+</def-item>
+<def-item><term>FACS</term>
+<def><p>Fluorescence Activated Cell Sorting</p></def>
+</def-item>
+<def-item><term>HS</term>
+<def><p>healthy subjects</p></def>
+</def-item>
+<def-item><term>IL</term>
+<def><p>Interleukin</p></def>
+</def-item>
+<def-item><term>LRD</term>
+<def><p>living related donation</p></def>
+</def-item>
+<def-item><term>MPA</term>
+<def><p>mycophenolate mofetil</p></def>
+</def-item>
+<def-item><term>PBMC</term>
+<def><p>Peripheral Blood Mononuclear Cells</p></def>
+</def-item>
+<def-item><term>RTx</term>
+<def><p>renal transplantation</p></def>
+</def-item>
+<def-item><term>TAC</term>
+<def><p>tacrolimus</p></def>
+</def-item>
+<def-item><term>Th</term>
+<def><p>T helper cell</p></def>
+</def-item>
+<def-item><term>Tx</term>
+<def><p>transplantation</p></def>
+</def-item>
+</def-list>
+</glossary>
+<ref-list>
+<title>References</title>
+<ref id="pone.0153170.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lund</surname> <given-names>FE</given-names></name>, <name name-style="western"><surname>Randall</surname> <given-names>TD</given-names></name>. <article-title>Effector and regulatory B cells: modulators of CD4+ T cell immunity</article-title>. <source>Nat Rev Immunol</source>. <year>2010</year>;<volume>10</volume>(<issue>4</issue>):<fpage>236</fpage>–<lpage>47</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nri2729" xlink:type="simple">10.1038/nri2729</ext-link></comment> <object-id pub-id-type="pmid">20224569</object-id>; PubMed Central PMCID: PMC3038334.</mixed-citation></ref>
+<ref id="pone.0153170.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kalampokis</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Yoshizaki</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Tedder</surname> <given-names>TF</given-names></name>. <article-title>IL-10-producing regulatory B cells (B10 cells) in autoimmune disease</article-title>. <source>Arthritis Res Ther</source>. <year>2013</year>;<volume>15</volume> <issue>Suppl 1</issue>:<fpage>S1</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/ar3907" xlink:type="simple">10.1186/ar3907</ext-link></comment> <object-id pub-id-type="pmid">23566714</object-id>; PubMed Central PMCID: PMC3624502.</mixed-citation></ref>
+<ref id="pone.0153170.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nankivell</surname> <given-names>BJ</given-names></name>, <name name-style="western"><surname>Alexander</surname> <given-names>SI</given-names></name>. <article-title>Rejection of the kidney allograft</article-title>. <source>N Engl J Med</source>. <year>2010</year>;<volume>363</volume>(<issue>15</issue>):<fpage>1451</fpage>–<lpage>62</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1056/NEJMra0902927" xlink:type="simple">10.1056/NEJMra0902927</ext-link></comment> <object-id pub-id-type="pmid">20925547</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Loupy</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Hill</surname> <given-names>GS</given-names></name>, <name name-style="western"><surname>Jordan</surname> <given-names>SC</given-names></name>. <article-title>The impact of donor-specific anti-HLA antibodies on late kidney allograft failure</article-title>. <source>Nat Rev Nephrol</source>. <year>2012</year>;<volume>8</volume>(<issue>6</issue>):<fpage>348</fpage>–<lpage>57</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nrneph.2012.81" xlink:type="simple">10.1038/nrneph.2012.81</ext-link></comment> <object-id pub-id-type="pmid">22508180</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shen</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Roch</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Lampropoulou</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>O'Connor</surname> <given-names>RA</given-names></name>, <name name-style="western"><surname>Stervbo</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Hilgenberg</surname> <given-names>E</given-names></name>, <etal>et al</etal>. <article-title>IL-35-producing B cells are critical regulators of immunity during autoimmune and infectious diseases</article-title>. <source>Nature</source>. <year>2014</year>;<volume>507</volume>(<issue>7492</issue>):<fpage>366</fpage>–<lpage>70</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature12979" xlink:type="simple">10.1038/nature12979</ext-link></comment> <object-id pub-id-type="pmid">24572363</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fillatreau</surname> <given-names>S</given-names></name>. <article-title>Cytokine-producing B cells as regulators of pathogenic and protective immune responses</article-title>. <source>Ann Rheum Dis</source>. <year>2013</year>;<volume>72</volume> <issue>Suppl 2</issue>:<fpage>ii80</fpage>–<lpage>4</lpage>. Epub 2012/12/21. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/annrheumdis-2012-202253" xlink:type="simple">10.1136/annrheumdis-2012-202253</ext-link></comment> <object-id pub-id-type="pmid">23253921</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ray</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Basu</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Williams</surname> <given-names>CB</given-names></name>, <name name-style="western"><surname>Salzman</surname> <given-names>NH</given-names></name>, <name name-style="western"><surname>Dittel</surname> <given-names>BN</given-names></name>. <article-title>A novel IL-10-independent regulatory role for B cells in suppressing autoimmunity by maintenance of regulatory T cells via GITR ligand</article-title>. <source>J Immunol</source>. <year>2012</year>;<volume>188</volume>(<issue>7</issue>):<fpage>3188</fpage>–<lpage>98</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4049/jimmunol.1103354" xlink:type="simple">10.4049/jimmunol.1103354</ext-link></comment> <object-id pub-id-type="pmid">22368274</object-id>; PubMed Central PMCID: PMC3311743.</mixed-citation></ref>
+<ref id="pone.0153170.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mauri</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Bosma</surname> <given-names>A</given-names></name>. <article-title>Immune regulatory function of B cells</article-title>. <source>Annu Rev Immunol</source>. <year>2012</year>;<volume>30</volume>:<fpage>221</fpage>–<lpage>41</lpage>. Epub 2012/01/10. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev-immunol-020711-074934" xlink:type="simple">10.1146/annurev-immunol-020711-074934</ext-link></comment> <object-id pub-id-type="pmid">22224776</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rosser</surname> <given-names>EC</given-names></name>, <name name-style="western"><surname>Mauri</surname> <given-names>C</given-names></name>. <article-title>Regulatory B cells: origin, phenotype, and function</article-title>. <source>Immunity</source>. <year>2015</year>;<volume>42</volume>(<issue>4</issue>):<fpage>607</fpage>–<lpage>12</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.immuni.2015.04.005" xlink:type="simple">10.1016/j.immuni.2015.04.005</ext-link></comment> <object-id pub-id-type="pmid">25902480</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yanaba</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Bouaziz</surname> <given-names>JD</given-names></name>, <name name-style="western"><surname>Haas</surname> <given-names>KM</given-names></name>, <name name-style="western"><surname>Poe</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Fujimoto</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Tedder</surname> <given-names>TF</given-names></name>. <article-title>A regulatory B cell subset with a unique CD1dhiCD5+ phenotype controls T cell-dependent inflammatory responses</article-title>. <source>Immunity</source>. <year>2008</year>;<volume>28</volume>(<issue>5</issue>):<fpage>639</fpage>–<lpage>50</lpage>. Epub 2008/05/17. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.immuni.2008.03.017" xlink:type="simple">10.1016/j.immuni.2008.03.017</ext-link></comment> <object-id pub-id-type="pmid">18482568</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ding</surname> <given-names>Q</given-names></name>, <name name-style="western"><surname>Yeung</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Camirand</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Zeng</surname> <given-names>Q</given-names></name>, <name name-style="western"><surname>Akiba</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Yagita</surname> <given-names>H</given-names></name>, <etal>et al</etal>. <article-title>Regulatory B cells are identified by expression of TIM-1 and can be induced through TIM-1 ligation to promote tolerance in mice</article-title>. <source>J Clin Invest</source>. <year>2011</year>;<volume>121</volume>(<issue>9</issue>):<fpage>3645</fpage>–<lpage>56</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1172/JCI46274" xlink:type="simple">10.1172/JCI46274</ext-link></comment> <object-id pub-id-type="pmid">21821911</object-id>; PubMed Central PMCID: PMC3163958.</mixed-citation></ref>
+<ref id="pone.0153170.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Xiao</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Brooks</surname> <given-names>CR</given-names></name>, <name name-style="western"><surname>Zhu</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Wu</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Sweere</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Petecka</surname> <given-names>S</given-names></name>, <etal>et al</etal>. <article-title>Defect in regulatory B-cell function and development of systemic autoimmunity in T-cell Ig mucin 1 (Tim-1) mucin domain-mutant mice</article-title>. <source>Proc Natl Acad Sci U S A</source>. <year>2012</year>;<volume>109</volume>(<issue>30</issue>):<fpage>12105</fpage>–<lpage>10</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1120914109" xlink:type="simple">10.1073/pnas.1120914109</ext-link></comment> <object-id pub-id-type="pmid">22773818</object-id>; PubMed Central PMCID: PMC3409739.</mixed-citation></ref>
+<ref id="pone.0153170.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Braza</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Chesne</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Castagnet</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Magnan</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Brouard</surname> <given-names>S</given-names></name>. <article-title>Regulatory functions of B cells in allergic diseases</article-title>. <source>Allergy</source>. <year>2014</year>;<volume>69</volume>(<issue>11</issue>):<fpage>1454</fpage>–<lpage>63</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/all.12490" xlink:type="simple">10.1111/all.12490</ext-link></comment> <object-id pub-id-type="pmid">25060230</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Blair</surname> <given-names>PA</given-names></name>, <name name-style="western"><surname>Norena</surname> <given-names>LY</given-names></name>, <name name-style="western"><surname>Flores-Borja</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Rawlings</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Isenberg</surname> <given-names>DA</given-names></name>, <name name-style="western"><surname>Ehrenstein</surname> <given-names>MR</given-names></name>, <etal>et al</etal>. <article-title>CD19(+)CD24(hi)CD38(hi) B cells exhibit regulatory capacity in healthy individuals but are functionally impaired in systemic Lupus Erythematosus patients</article-title>. <source>Immunity</source>. <year>2010</year>;<volume>32</volume>(<issue>1</issue>):<fpage>129</fpage>–<lpage>40</lpage>. Epub 2010/01/19. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.immuni.2009.11.009" xlink:type="simple">10.1016/j.immuni.2009.11.009</ext-link></comment> <object-id pub-id-type="pmid">20079667</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wilde</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Thewissen</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Damoiseaux</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Knippenberg</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Hilhorst</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>van Paassen</surname> <given-names>P</given-names></name>, <etal>et al</etal>. <article-title>Regulatory B cells in ANCA-associated vasculitis</article-title>. <source>Ann Rheum Dis</source>. <year>2013</year>;<volume>72</volume>(<issue>8</issue>):<fpage>1416</fpage>–<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/annrheumdis-2012-202986" xlink:type="simple">10.1136/annrheumdis-2012-202986</ext-link></comment> <object-id pub-id-type="pmid">23666929</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nouel</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Simon</surname> <given-names>Q</given-names></name>, <name name-style="western"><surname>Jamin</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Pers</surname> <given-names>JO</given-names></name>, <name name-style="western"><surname>Hillion</surname> <given-names>S</given-names></name>. <article-title>Regulatory B cells: an exciting target for future therapeutics in transplantation</article-title>. <source>Front Immunol</source>. <year>2014</year>;<volume>5</volume>:<fpage>11</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3389/fimmu.2014.00011" xlink:type="simple">10.3389/fimmu.2014.00011</ext-link></comment> <object-id pub-id-type="pmid">24478776</object-id>; PubMed Central PMCID: PMCPMC3897876.</mixed-citation></ref>
+<ref id="pone.0153170.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Duddy</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Niino</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Adatia</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Hebert</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Freedman</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Atkins</surname> <given-names>H</given-names></name>, <etal>et al</etal>. <article-title>Distinct effector cytokine profiles of memory and naive human B cell subsets and implication in multiple sclerosis</article-title>. <source>J Immunol</source>. <year>2007</year>;<volume>178</volume>(<issue>10</issue>):<fpage>6092</fpage>–<lpage>9</lpage>. <object-id pub-id-type="pmid">17475834</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jagannathan</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>McDonnell</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Liang</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Hasturk</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Hetzel</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Rubin</surname> <given-names>D</given-names></name>, <etal>et al</etal>. <article-title>Toll-like receptors regulate B cell cytokine production in patients with diabetes</article-title>. <source>Diabetologia</source>. <year>2010</year>;<volume>53</volume>(<issue>7</issue>):<fpage>1461</fpage>–<lpage>71</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00125-010-1730-z" xlink:type="simple">10.1007/s00125-010-1730-z</ext-link></comment> <object-id pub-id-type="pmid">20383694</object-id>; PubMed Central PMCID: PMC2895399.</mixed-citation></ref>
+<ref id="pone.0153170.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Iwata</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Matsushita</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Horikawa</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Dilillo</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Yanaba</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Venturi</surname> <given-names>GM</given-names></name>, <etal>et al</etal>. <article-title>Characterization of a rare IL-10-competent B-cell subset in humans that parallels mouse regulatory B10 cells</article-title>. <source>Blood</source>. <year>2011</year>;<volume>117</volume>(<issue>2</issue>):<fpage>530</fpage>–<lpage>41</lpage>. Epub 2010/10/22. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1182/blood-2010-07-294249" xlink:type="simple">10.1182/blood-2010-07-294249</ext-link></comment> <object-id pub-id-type="pmid">20962324</object-id>; PubMed Central PMCID: PMC3031478.</mixed-citation></ref>
+<ref id="pone.0153170.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chesneau</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Michel</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Degauque</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Brouard</surname> <given-names>S</given-names></name>. <article-title>Regulatory B Cells and Tolerance in Transplantation: From Animal Models to Human</article-title>. <source>Front Immunol</source>. <year>2013</year>;<volume>4</volume>:<fpage>497</fpage>. Epub 2014/01/16. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3389/fimmu.2013.00497" xlink:type="simple">10.3389/fimmu.2013.00497</ext-link></comment> <object-id pub-id-type="pmid">24427159</object-id>; PubMed Central PMCID: PMC3876023.</mixed-citation></ref>
+<ref id="pone.0153170.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Newell</surname> <given-names>KA</given-names></name>, <name name-style="western"><surname>Asare</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Kirk</surname> <given-names>AD</given-names></name>, <name name-style="western"><surname>Gisler</surname> <given-names>TD</given-names></name>, <name name-style="western"><surname>Bourcier</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Suthanthiran</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Identification of a B cell signature associated with renal transplant tolerance in humans</article-title>. <source>J Clin Invest</source>. <year>2010</year>;<volume>120</volume>(<issue>6</issue>):<fpage>1836</fpage>–<lpage>47</lpage>. Epub 2010/05/27. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1172/JCI39933" xlink:type="simple">10.1172/JCI39933</ext-link></comment> <object-id pub-id-type="pmid">20501946</object-id>; PubMed Central PMCID: PMC2877933.</mixed-citation></ref>
+<ref id="pone.0153170.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sagoo</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Perucha</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Sawitzki</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Tomiuk</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Stephens</surname> <given-names>DA</given-names></name>, <name name-style="western"><surname>Miqueu</surname> <given-names>P</given-names></name>, <etal>et al</etal>. <article-title>Development of a cross-platform biomarker signature to detect renal transplant tolerance in humans</article-title>. <source>J Clin Invest</source>. <year>2010</year>;<volume>120</volume>(<issue>6</issue>):<fpage>1848</fpage>–<lpage>61</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1172/JCI39922" xlink:type="simple">10.1172/JCI39922</ext-link></comment> <object-id pub-id-type="pmid">20501943</object-id>; PubMed Central PMCID: PMCPMC2877932.</mixed-citation></ref>
+<ref id="pone.0153170.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chesneau</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Pallier</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Braza</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Lacombe</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Le Gallou</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Baron</surname> <given-names>D</given-names></name>, <etal>et al</etal>. <article-title>Unique B cell differentiation profile in tolerant kidney transplant patients</article-title>. <source>Am J Transplant</source>. <year>2014</year>;<volume>14</volume>(<issue>1</issue>):<fpage>144</fpage>–<lpage>55</lpage>. Epub 2013/12/21. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/ajt.12508" xlink:type="simple">10.1111/ajt.12508</ext-link></comment> <object-id pub-id-type="pmid">24354874</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shabir</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Girdlestone</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Briggs</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Kaul</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Daga</surname> <given-names>S</given-names></name>, <etal>et al</etal>. <article-title>Transitional B lymphocytes are associated with protection from kidney allograft rejection: a prospective study</article-title>. <source>Am J Transplant</source>. <year>2015</year>;<volume>15</volume>(<issue>5</issue>):<fpage>1384</fpage>–<lpage>91</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/ajt.13122" xlink:type="simple">10.1111/ajt.13122</ext-link></comment> <object-id pub-id-type="pmid">25808898</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chung</surname> <given-names>BH</given-names></name>, <name name-style="western"><surname>Kim</surname> <given-names>KW</given-names></name>, <name name-style="western"><surname>Yu</surname> <given-names>JH</given-names></name>, <name name-style="western"><surname>Kim</surname> <given-names>BM</given-names></name>, <name name-style="western"><surname>Choi</surname> <given-names>BS</given-names></name>, <name name-style="western"><surname>Park</surname> <given-names>CW</given-names></name>, <etal>et al</etal>. <article-title>Decrease of immature B cell and interleukin-10 during early-post-transplant period in renal transplant recipients under tacrolimus based immunosuppression</article-title>. <source>Transpl Immunol</source>. <year>2014</year>;<volume>30</volume>(<issue>4</issue>):<fpage>159</fpage>–<lpage>67</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.trim.2014.03.003" xlink:type="simple">10.1016/j.trim.2014.03.003</ext-link></comment> <object-id pub-id-type="pmid">24709525</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Heidt</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Roelen</surname> <given-names>DL</given-names></name>, <name name-style="western"><surname>Eijsink</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>van Kooten</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Claas</surname> <given-names>FH</given-names></name>, <name name-style="western"><surname>Mulder</surname> <given-names>A</given-names></name>. <article-title>Effects of immunosuppressive drugs on purified human B cells: evidence supporting the use of MMF and rapamycin</article-title>. <source>Transplantation</source>. <year>2008</year>;<volume>86</volume>(<issue>9</issue>):<fpage>1292</fpage>–<lpage>300</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/TP.0b013e3181874a36" xlink:type="simple">10.1097/TP.0b013e3181874a36</ext-link></comment> <object-id pub-id-type="pmid">19005412</object-id>.</mixed-citation></ref>
+<ref id="pone.0153170.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Traitanon</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Mathew</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>La Monica</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Xu</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Mas</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Gallon</surname> <given-names>L</given-names></name>. <article-title>Differential Effects of Tacrolimus versus Sirolimus on the Proliferation, Activation and Differentiation of Human B Cells</article-title>. <source>PLoS One</source>. <year>2015</year>;<volume>10</volume>(<issue>6</issue>):<fpage>e0129658</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0129658" xlink:type="simple">10.1371/journal.pone.0129658</ext-link></comment> <object-id pub-id-type="pmid">26087255</object-id>; PubMed Central PMCID: PMCPMC4472515.</mixed-citation></ref>
+<ref id="pone.0153170.ref028"><label>28</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hoerning</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Kohler</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Jun</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Lu</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Fu</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Tebbe</surname> <given-names>B</given-names></name>, <etal>et al</etal>. <article-title>Cyclosporin but not everolimus inhibits chemokine receptor expression on CD4+ T cell subsets circulating in the peripheral blood of renal transplant recipients</article-title>. <source>Clinical and experimental immunology</source>. <year>2012</year>;<volume>168</volume>(<issue>2</issue>):<fpage>251</fpage>–<lpage>9</lpage>. Epub 2012/04/05. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-2249.2012.04571.x" xlink:type="simple">10.1111/j.1365-2249.2012.04571.x</ext-link></comment> <object-id pub-id-type="pmid">22471287</object-id>; PubMed Central PMCID: PMC3390527.</mixed-citation></ref>
+<ref id="pone.0153170.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Silva</surname> <given-names>HM</given-names></name>, <name name-style="western"><surname>Takenaka</surname> <given-names>MC</given-names></name>, <name name-style="western"><surname>Moraes-Vieira</surname> <given-names>PM</given-names></name>, <name name-style="western"><surname>Monteiro</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Hernandez</surname> <given-names>MO</given-names></name>, <name name-style="western"><surname>Chaara</surname> <given-names>W</given-names></name>, <etal>et al</etal>. <article-title>Preserving the B-cell compartment favors operational tolerance in human renal transplantation</article-title>. <source>Molecular medicine</source>. <year>2012</year>;<volume>18</volume>:<fpage>733</fpage>–<lpage>43</lpage>. Epub 2012/01/19. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2119/molmed.2011.00281" xlink:type="simple">10.2119/molmed.2011.00281</ext-link></comment> <object-id pub-id-type="pmid">22252714</object-id>; PubMed Central PMCID: PMC3409285.</mixed-citation></ref>
+<ref id="pone.0153170.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Albring</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Wendt</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Harz</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Engler</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Wilde</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Kribben</surname> <given-names>A</given-names></name>, <etal>et al</etal>. <article-title>Relationship between pharmacokinetics and pharmacodynamics of calcineurin inhibitors in renal transplant patients</article-title>. <source>Clin Transplant</source>. <year>2015</year>;<volume>29</volume>(<issue>4</issue>):<fpage>294</fpage>–<lpage>300</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/ctr.12504" xlink:type="simple">10.1111/ctr.12504</ext-link></comment> <object-id pub-id-type="pmid">25557538</object-id>.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

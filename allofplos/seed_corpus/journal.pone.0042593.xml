@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-12-11462</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0042593</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Mental health</subject>
+            <subj-group>
+              <subject>Psychology</subject>
+              <subj-group>
+                <subject>Behavior</subject>
+                <subject>Experimental psychology</subject>
+                <subject>Human relations</subject>
+                <subject>Psychological stress</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Non-clinical medicine</subject>
+            <subj-group>
+              <subject>Health care policy</subject>
+              <subj-group>
+                <subject>Sexual and gender issues</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Social and behavioral sciences</subject>
+          <subj-group>
+            <subject>Psychology</subject>
+            <subj-group>
+              <subject>Behavior</subject>
+              <subject>Experimental psychology</subject>
+              <subject>Human relations</subject>
+              <subject>Psychological stress</subject>
+              <subject>Social psychology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Sociology</subject>
+            <subj-group>
+              <subject>Sexual and gender issues</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Mental Health</subject>
+          <subject>Non-Clinical Medicine</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>The Impact of Psychological Stress on Men's Judgements of Female Body Size</article-title><alt-title alt-title-type="running-head">Stress and Body Size</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Swami</surname>
+            <given-names>Viren</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Tovée</surname>
+            <given-names>Martin J.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Psychology, University of Westminster, London, United Kingdom</addr-line>
+      </aff><aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Psychology, HELP University College, Kuala Lumpur, Malaysia</addr-line>
+      </aff><aff id="aff3">
+        <label>3</label>
+        <addr-line>Institute of Neuroscience, Newcastle University, Newcastle-upon-Tyne, United Kingdom</addr-line>
+      </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Denson</surname>
+            <given-names>Tom</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">
+        <addr-line>The University of South Wales, Australia</addr-line>
+      </aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">v.swami@westminster.ac.uk</email></corresp>
+        <fn fn-type="conflict">
+          <p>The authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: VS MJT. Performed the experiments: VS. Analyzed the data: VS. Contributed reagents/materials/analysis tools: VS MJT. Wrote the paper: VS MJT.</p>
+        </fn>
+      </author-notes><pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>8</day>
+        <month>8</month>
+        <year>2012</year>
+      </pub-date><volume>7</volume><issue>8</issue><elocation-id>e42593</elocation-id><history>
+        <date date-type="received">
+          <day>11</day>
+          <month>4</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>10</day>
+          <month>7</month>
+          <year>2012</year>
+        </date>
+      </history><permissions>
+        
+        <copyright-holder>Swami, Tovée</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions><abstract>
+        <sec>
+          <title>Background</title>
+          <p>Previous work has suggested that the experience of psychological stress may influence physical attractiveness ideals, but most evidence in favour of this hypothesis remains archival. The objective of this study was to experimentally investigate the impact of stress on men's judgements of female body size.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>Men were randomly assigned to either an experimental group, in which they took part in a task that heightened stress (experimental group, <italic>n</italic> = 41) or in which they did not take part in such a task (control group, <italic>n</italic> = 40). Both groups rated the attractiveness of female bodies varying in size from emaciated to obese, completed a measure of appetite sensation, and had their body mass indices (BMIs) measured.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Between-groups analyses showed that the experimental group was matched with the control group in terms of mean age, BMI, and appetite sensation. Further analyses showed that men in the experimental group rated a significantly heavier female body size as maximally attractive than the control group. Men in the experimental group also rated heavier female bodies as more attractive and idealised a wider range of female figures than did the control group.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>This study found that the experience of stress was associated with a preference among men for heavier female body sizes. These results indicate that human attractiveness judgements are sensitive to variations in local ecologies and reflect adaptive strategies for dealing with changing environmental conditions.</p>
+        </sec>
+      </abstract><funding-group>
+        <funding-statement>The authors have no support or funding to report.</funding-statement>
+      </funding-group><counts>
+        <page-count count="5"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>It is now widely-acknowledged that body size ideals are, in part at least, shaped by an individual's resource security, such that heavier body sizes are preferred where or when resources are unpredictable or unavailable <xref ref-type="bibr" rid="pone.0042593-Anderson1">[1]</xref>–<xref ref-type="bibr" rid="pone.0042593-Brown1">[2]</xref>. This proposition highlights the fact that a primary function of adipose tissue is the storage of calories, which in turn suggests that body fat is a reliable predictor of food availability <xref ref-type="bibr" rid="pone.0042593-Swami1">[3]</xref>. In situations marked by resource uncertainty, therefore, individuals should come to idealise heavier individuals <xref ref-type="bibr" rid="pone.0042593-Brown1">[2]</xref>, as fatness would be associated with access to resources. Conversely, thinness in such contexts may be associated with increased incidence of ill-health <xref ref-type="bibr" rid="pone.0042593-Tove1">[4]</xref> and, for women, ovulatory irregularities and lower capacity to support pregnancy <xref ref-type="bibr" rid="pone.0042593-Ellisson1">[5]</xref>.</p>
+      <p>Several lines of evidence support this reasoning. First, cross-cultural studies have reported a strong inverse relationship between socioeconomic status (a covariate of resource security) and ideal body size <xref ref-type="bibr" rid="pone.0042593-Tove1">[4]</xref>, <xref ref-type="bibr" rid="pone.0042593-Swami2">[6]</xref>–<xref ref-type="bibr" rid="pone.0042593-Swami5">[9]</xref>. Second, experimental studies have shown that hunger has an effect on men's body size preferences, such that hungry men prefer a significantly heavier body size than satiated men <xref ref-type="bibr" rid="pone.0042593-Swami1">[3]</xref>, <xref ref-type="bibr" rid="pone.0042593-Nelson1">[10]</xref>–<xref ref-type="bibr" rid="pone.0042593-Pettijohn1">[12]</xref>. These findings mirror reports that hunger intensifies selection for a larger body size in non-human species, such as water-spiders <xref ref-type="bibr" rid="pone.0042593-Ortigosa1">[13]</xref>. Nevertheless, it should be noted that the strength of the relationship may depend on the way in which resource security is operationalised: at least one study has failed to replicate the preference for a heavier body size when resource security was experimentally manipulated in terms of financial satisfaction <xref ref-type="bibr" rid="pone.0042593-Swami7">[14]</xref>.</p>
+      <p>Related work has also suggested that the experience of stress may affect body size preferences. Specifically, the Environmental Security Hypothesis <xref ref-type="bibr" rid="pone.0042593-Pettijohn2">[15]</xref>–<xref ref-type="bibr" rid="pone.0042593-Pettijohn3">[16]</xref> suggests that, when socioeconomic or individual conditions are threatening or uncertain, individuals will prefer others with more mature physical characteristics, including a heavier body size, compared to their preferences in non-threatening conditions. This is because physical maturity is associated with the ability to handle threatening situations and because more mature physical features may communicate attributes such as strength, control, and independence during periods when such qualities should be most desired <xref ref-type="bibr" rid="pone.0042593-Pettijohn2">[15]</xref>. To date, however, most of the evidence in favour of the Environmental Security Hypothesis is archival in nature: there is evidence, for example that American actresses with more mature facial and bodily features are more popular during periods of socioeconomic hardship <xref ref-type="bibr" rid="pone.0042593-Pettijohn2">[15]</xref>, <xref ref-type="bibr" rid="pone.0042593-Pettijohn4">[17]</xref>.</p>
+      <p>By contrast, experimental tests of the Environmental Security Hypothesis are currently lacking. In one study, Pettijohn and Tesser <xref ref-type="bibr" rid="pone.0042593-Pettijohn5">[18]</xref> experimentally manipulated stress by making female and male participants believe they would receive either benign or harmful shocks. These authors reported that, in the stress condition, participants preferred women with decreased eye size, whereas when stress was absent they preferred women with increased eye size. To date, however, experimental studies have not investigated the impact of psychological stress on perceptions of body size, which would appear to be a more direct candidate for assessing the impact of stress on physical attractiveness ideals for a number of reasons. First, although maturity is a broad construct, body size appears to be an important signal of both physical and psychological maturity, such that heavier and taller figures are perceived as more mature and also as having more mature personality traits <xref ref-type="bibr" rid="pone.0042593-Pettijohn4">[17]</xref>, <xref ref-type="bibr" rid="pone.0042593-Melamed1">[19]</xref>. Second, psychological stress, like any form of threat, helps prepare individuals for adaptive courses of action, which might include physical attractiveness ideals <xref ref-type="bibr" rid="pone.0042593-Loewenstein1">[20]</xref>. Psychological stress signals a threat to the individual and should lead the individual to show a preference for more mature physical characteristics that would be beneficial during periods of threat <xref ref-type="bibr" rid="pone.0042593-Pettijohn1">[12]</xref>.</p>
+      <p>In short, to the extent that heavier body sizes are perceived as more physically mature <xref ref-type="bibr" rid="pone.0042593-Pettijohn4">[17]</xref>, it seems plausible that individuals experiencing psychological stress may experience a shift in their body size ideals. In order to test this hypothesis, we examined the effects of acute stress on men's body size preferences. By utilising a standardised stress test and by controlling for subjective perceptions of hunger, we were able to investigate the direct effects of stress on body size preferences. Based on previous work <xref ref-type="bibr" rid="pone.0042593-Pettijohn3">[16]</xref>, <xref ref-type="bibr" rid="pone.0042593-Pettijohn5">[18]</xref>, we predicted that men would show a preference for a larger female body size when experiencing psychological stress.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Ethical Statement</title>
+        <p>The ethics committee at the Department of Psychology, University of Westminster, specifically approved this study. All participants provided written informed consent.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Participants</title>
+        <p>Participants were 81 heterosexual male undergraduates assigned to one of two groups: stress (<italic>n</italic> = 41) and control (<italic>n</italic> = 40), respectively. Because observer ethnicity may impact upon body size judgements <xref ref-type="bibr" rid="pone.0042593-Swami8">[21]</xref>, only British White participant were invited to take part in the present study. Participants in the former group ranged in age from 18 to 40 years (<italic>M</italic> = 21.73, <italic>SD</italic> = 3.67) and in body mass index (BMI) from 17.15 to 31.64 kg/m<sup>2</sup> (<italic>M</italic> = 21.71, <italic>SD</italic> = 3.47). Participants in the latter group ranged in age from 18 to 42 years (<italic>M</italic> = 22.15, <italic>SD</italic> = 4.05) and in BMI from 16.53 to 27.76 kg/m<sup>2</sup> (<italic>M</italic> = 21.37, <italic>SD</italic> = 3.70).</p>
+      </sec>
+      <sec id="s2c">
+        <title>Design and Procedure</title>
+        <p>Participants were recruited opportunistically by two research assistants from various campus locations. Upon arrival at the laboratory, participants provided informed consent and were randomly assigned to one of the two conditions. Participants in the stress condition took part in the Trier Social Stress Test (TSST) <xref ref-type="bibr" rid="pone.0042593-Kirschbaum1">[22]</xref>, a 15-minute laboratory stressor that has been reliably shown to increase levels of acute psychological stress (e.g., as measured by free cortisol levels) <xref ref-type="bibr" rid="pone.0042593-Kirschbaum1">[22]</xref>–<xref ref-type="bibr" rid="pone.0042593-Dickerson1">[23]</xref>. As part of the TSST, participants were given a 10-minute preparatory period, after which they were taken to a room in which four individuals (mixed genders) were already seated at a table and in which a video camera and tape recorder were installed. The participants stood at a microphone in front of the four individuals and took the role of a job applicant invited for a personal interview with a company's selection committee. Participants had to introduce themselves to the committee in a free speech of 5 minutes and attempt to convince the committee that they were suitable for the post. Participants were told that the committee was trained to monitor non-verbal behaviour and the voice and video analyses would be conducted. After 5 minutes, the selection committee asked the participants to serially subtract the number 13 from 1,022 as fast and accurately as possible. Standard responses were followed where participants ended their speech before the 5-minute duration or failed in the subtraction task <xref ref-type="bibr" rid="pone.0042593-Kirschbaum1">[22]</xref>.</p>
+        <p>Twenty minutes after the TSST, participants in the stress condition were taken to a separate room, where they completed the measures described below along with additional scales included to mask the study's aims. This delay is known to coincide with the onset of peak cortisol response following an acute psychological stressor <xref ref-type="bibr" rid="pone.0042593-Dickerson1">[23]</xref>. By contrast, participants in the control group were taken immediately to a room where they waited quietly for the same length of time as the TSST stress-induction procedure before they completed the measures described below. Once the measures had been completed, participants had their body mass (kg) and height (cm) directly measured to the nearest 0.5 kg and 0.5 cm, without shoes and in light clothing, using a standard tape measure and weighing scale. All testing sessions took place between 3.00pm and 5.00pm in order to control for diurnal variations in cortisol secretion.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Materials</title>
+        <sec id="s2d1">
+          <title>Body size preferences</title>
+          <p>Participants completed an adapted version of the Photographic Figure Rating Scale <xref ref-type="bibr" rid="pone.0042593-Swami9">[24]</xref>, a figural rating scale that consists of 10 photographic and standardized images of women in front view. The women depicted in the PFRS represent the full range of established BMI categories, from emaciated to obese. Participants were first asked to rate each of the 10 images for physical attractiveness on a 9-point Likert-type scale (1 = <italic>Very unattractive</italic>, 9 = <italic>Very attractive</italic>). As in previous work <xref ref-type="bibr" rid="pone.0042593-Swami10">[25]</xref>, they were then asked to additionally rate the figure that they found most physically attractive (‘ideal’), the largest figure they found physically attractive (‘largest’), and the thinnest figure they found physically attractive (‘thinnest’). Responses on the latter three items were made on a 10-point scale, with 1 representing the figure with the lowest BMI and 10 representing the figure with the highest BMI. ‘Largest’ and ‘thinnest’ ratings were used to calculate an ‘attractiveness range’ (smallest figure that participants found attractive subtracted from the largest figure). Previous work has shown that scores derived from the PFRS have good patterns of validity and good test-retest reliability after a three-week interval <xref ref-type="bibr" rid="pone.0042593-Swami9">[24]</xref>, <xref ref-type="bibr" rid="pone.0042593-Swami11">[26]</xref>.</p>
+        </sec>
+        <sec id="s2d2">
+          <title>Appetite sensation</title>
+          <p>We assessed participants' subjective appetite sensations using the Appetite Sensation Assessment <xref ref-type="bibr" rid="pone.0042593-Flint1">[27]</xref>. Participants were presented with 100 mm lines with words anchored at each end, describing extremes of hunger (<italic>I am not hungry at all</italic> versus <italic>I have never been more hungry</italic>) and satiety (<italic>I am completely empty</italic> versus <italic>I cannot eat another bite</italic>), fullness (<italic>Not at all full</italic> versus <italic>Totally full</italic>), and prospective food consumption (<italic>Nothing at all</italic> versus <italic>A lot</italic>). Participants were asked to mark across the line at the position on the scales corresponding to their feelings and quantification of the measurement was done by measuring the distance from the left end of the line to the mark. For the present purposes, an overall score of satiety was computed as the mean of all four responses, following reverse-scoring of appropriate items. Although based on self-reports, this method of appetite sensation measurement shows good retest-retest reliability, excellent reproducibility, and good validity <xref ref-type="bibr" rid="pone.0042593-Flint1">[27]</xref>–<xref ref-type="bibr" rid="pone.0042593-Merrill1">[28]</xref>.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Sample Characteristics</title>
+        <p>Preliminary analyses using independent samples <italic>t</italic>-tests showed that there were no significant between-group differences in mean age, <italic>t</italic>(79) = 0.49, <italic>p</italic> = .627, <italic>d</italic> = 0.11, and mean BMI, <italic>t</italic>(79) = 0.43, <italic>p</italic> = .670, <italic>d</italic> = 0.10. There were also no significant between-group difference on the measure of appetite sensation, <italic>t</italic>(79) = 0.55, <italic>p</italic> = .585, <italic>d</italic> = 0.12. These preliminary analyses suggest that our randomisation procedure was successful. We also computed bivariate correlations between each of the dependent variables (ideal, largest, thinnest, and the attractiveness range, respectively) and participant age, BMI, and appetite sensation. <xref ref-type="sec" rid="s3">Results</xref> showed that, with the exception of the correlation between largest and thinness ratings (<italic>r</italic> = .15, <italic>p</italic> = .193), the dependent variables were significantly and moderately correlated (<italic>r</italic>s = .34–.51, <italic>p</italic>&lt;.001). The results also showed that the only significant correlation between a dependent variable and remaining factors was between ratings of the largest figure perceived as attractive and satiety (<italic>r</italic> = −.24, <italic>p</italic> = .034), which is consistent with previous work <xref ref-type="bibr" rid="pone.0042593-Swami1">[3]</xref>, <xref ref-type="bibr" rid="pone.0042593-Nelson1">[10]</xref>. All other correlations did not reach significance (<italic>r</italic>s = .05–.20, <italic>p</italic>s&gt;.070).</p>
+      </sec>
+      <sec id="s3b">
+        <title>Body Size Ratings</title>
+        <p>Descriptive statistics (<italic>Ms</italic> and <italic>SD</italic>s) for ratings of each of the ten body size figures as a function of experimental group are reported in <xref ref-type="table" rid="pone-0042593-t001">Table 1</xref>. In order to examine whether there were statistically significant between-group differences on these ratings, we calculated a multivariate analysis of covariance (MANCOVA), with body size ratings as the dependent variable, experimental condition as the independent variable, and participant age, BMI, and appetite sensation as covariates. <xref ref-type="sec" rid="s3">Results</xref> showed a significant omnibus effect of experimental condition, <italic>F</italic>(10, 67) = 5.18, <italic>p</italic>&lt;.001, with a moderate effect size (η<sub>p</sub><sup>2</sup> = .44). Covariate age, BMI, and appetite sensation did not reach significance in this analysis (<italic>F</italic>s = 0.34–1.23, <italic>p</italic>&gt;.292, η<sub>p</sub><sup>2</sup>&lt;.16). Inspection of the ANCOVA results showed that there were no significant between-group differences in ratings of emaciated and underweight figures on the PFRS (<italic>F</italic>s = 0.04–1.42, <italic>p</italic>&gt;.237, η<sub>p</sub><sup>2</sup>&lt;.02). On the other hand, participants in the stress condition provided significantly higher ratings than control participants for normal weight figures (<italic>F</italic>s = 14.31–17.26, <italic>p</italic>&lt;.001, η<sub>p</sub><sup>2</sup> = .16–.19), overweight figures (<italic>F</italic>s = 15.45–15.97, <italic>p</italic>&lt;.001, η<sub>p</sub><sup>2</sup> = .17), and one obese figure, <italic>F</italic>(1, 79) = 5.86, <italic>p</italic> = .018, η<sub>p</sub><sup>2</sup> = .07. There was no significant between-group difference on ratings of the figure with the highest BMI, <italic>F</italic>(1, 76) = 0.90, <italic>p</italic> = .346, η<sub>p</sub><sup>2</sup> = .01.</p>
+        <table-wrap id="pone-0042593-t001" orientation="portrait" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0042593.t001</object-id><label>Table 1</label><caption>
+            <title>Descriptive statistics of body size ratings as a function of experimental group.</title>
+          </caption><alternatives>
+            <graphic id="pone-0042593-t001-1" mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pone.0042593.t001" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Item</td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="2" rowspan="1">Control group (<italic>n</italic> = 40)</td>
+                  <td align="left" colspan="2" rowspan="1">Stress group (<italic>n</italic> = 41)</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">
+                    <italic>M</italic>
+                  </td>
+                  <td align="left" colspan="1" rowspan="1">
+                    <italic>SD</italic>
+                  </td>
+                  <td align="left" colspan="1" rowspan="1">
+                    <italic>M</italic>
+                  </td>
+                  <td align="left" colspan="1" rowspan="1">
+                    <italic>SD</italic>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Figure ratings<xref ref-type="table-fn" rid="nt102">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">Fig. 1</td>
+                  <td align="left" colspan="1" rowspan="1">1.20</td>
+                  <td align="left" colspan="1" rowspan="1">0.85</td>
+                  <td align="left" colspan="1" rowspan="1">1.12</td>
+                  <td align="left" colspan="1" rowspan="1">0.64</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Fig. 2</td>
+                  <td align="left" colspan="1" rowspan="1">1.48</td>
+                  <td align="left" colspan="1" rowspan="1">1.48</td>
+                  <td align="left" colspan="1" rowspan="1">1.34</td>
+                  <td align="left" colspan="1" rowspan="1">1.06</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Fig. 3</td>
+                  <td align="left" colspan="1" rowspan="1">3.68</td>
+                  <td align="left" colspan="1" rowspan="1">1.91</td>
+                  <td align="left" colspan="1" rowspan="1">3.51</td>
+                  <td align="left" colspan="1" rowspan="1">2.25</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Fig. 4</td>
+                  <td align="left" colspan="1" rowspan="1">6.48</td>
+                  <td align="left" colspan="1" rowspan="1">1.87</td>
+                  <td align="left" colspan="1" rowspan="1">5.95</td>
+                  <td align="left" colspan="1" rowspan="1">2.14</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Fig. 5</td>
+                  <td align="left" colspan="1" rowspan="1">5.58</td>
+                  <td align="left" colspan="1" rowspan="1">1.91</td>
+                  <td align="left" colspan="1" rowspan="1">7.10</td>
+                  <td align="left" colspan="1" rowspan="1">1.66</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Fig. 6</td>
+                  <td align="left" colspan="1" rowspan="1">3.83</td>
+                  <td align="left" colspan="1" rowspan="1">1.30</td>
+                  <td align="left" colspan="1" rowspan="1">5.15</td>
+                  <td align="left" colspan="1" rowspan="1">1.53</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Fig. 7</td>
+                  <td align="left" colspan="1" rowspan="1">3.03</td>
+                  <td align="left" colspan="1" rowspan="1">1.40</td>
+                  <td align="left" colspan="1" rowspan="1">4.39</td>
+                  <td align="left" colspan="1" rowspan="1">1.67</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Fig. 8</td>
+                  <td align="left" colspan="1" rowspan="1">1.73</td>
+                  <td align="left" colspan="1" rowspan="1">0.85</td>
+                  <td align="left" colspan="1" rowspan="1">2.78</td>
+                  <td align="left" colspan="1" rowspan="1">1.41</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Fig. 9</td>
+                  <td align="left" colspan="1" rowspan="1">1.25</td>
+                  <td align="left" colspan="1" rowspan="1">0.67</td>
+                  <td align="left" colspan="1" rowspan="1">1.78</td>
+                  <td align="left" colspan="1" rowspan="1">1.15</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Fig. 10</td>
+                  <td align="left" colspan="1" rowspan="1">1.08</td>
+                  <td align="left" colspan="1" rowspan="1">0.35</td>
+                  <td align="left" colspan="1" rowspan="1">1.20</td>
+                  <td align="left" colspan="1" rowspan="1">0.68</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">Most physically attractive (ideal)</td>
+                  <td align="left" colspan="1" rowspan="1">3.90</td>
+                  <td align="left" colspan="1" rowspan="1">0.55</td>
+                  <td align="left" colspan="1" rowspan="1">4.44</td>
+                  <td align="left" colspan="1" rowspan="1">0.67</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">Largest attractive figure</td>
+                  <td align="left" colspan="1" rowspan="1">6.25</td>
+                  <td align="left" colspan="1" rowspan="1">1.10</td>
+                  <td align="left" colspan="1" rowspan="1">7.17</td>
+                  <td align="left" colspan="1" rowspan="1">1.50</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">Thinnest attractive figure</td>
+                  <td align="left" colspan="1" rowspan="1">3.28</td>
+                  <td align="left" colspan="1" rowspan="1">0.72</td>
+                  <td align="left" colspan="1" rowspan="1">3.34</td>
+                  <td align="left" colspan="1" rowspan="1">0.66</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="2" rowspan="1">Attractiveness range</td>
+                  <td align="left" colspan="1" rowspan="1">2.98</td>
+                  <td align="left" colspan="1" rowspan="1">1.35</td>
+                  <td align="left" colspan="1" rowspan="1">3.83</td>
+                  <td align="left" colspan="1" rowspan="1">1.45</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives><table-wrap-foot>
+            <fn id="nt101">
+              <p>Note:</p>
+            </fn>
+            <fn id="nt102">
+              <label>a</label>
+              <p>Figures 1 and 2 represent emaciated figures, 3 and 4 underweight figures, 5 and 6 normal weight figures, 7 and 8 overweight figures, and 9 and 10 obese figures.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <p>We next examined ratings of the figure perceived as the most physically attractive (ideal), the largest and thinnest figures rated as attractive, and the attractiveness range (descriptive statistics are reported in <xref ref-type="table" rid="pone-0042593-t001">Table 1</xref>). To do so, we computed analyses of covariance (ANCOVAs) with each of the aforementioned ratings as dependent variables, experimental condition as the independent variables, and participant age, BMI, and appetite sensation as covariates. <xref ref-type="sec" rid="s3">Results</xref> showed that participants in the stress group rated a significantly larger figure as their ideal compared to the control group, <italic>F</italic>(1, 80) = 14.45, <italic>p</italic>&lt;.001, η<sub>p</sub><sup>2</sup> = .16. The stress group also had a significantly wider attractiveness range than the control group, <italic>F</italic>(1, 80) = 6.63, <italic>p</italic> = .012, η<sub>p</sub><sup>2</sup> = .08. The latter effect appeared to be driven by the fact that the stress group rated a significantly heavier body size as the largest figure they considered attractive, <italic>F</italic>(1, 80) = 8.84, <italic>p</italic> = .004, η<sub>p</sub><sup>2</sup> = .10. By contrast, there was no significant between-group difference on ratings of the thinnest figure perceived as most attractive, <italic>F</italic>(1, 80) = 0.17, <italic>p</italic> = .683, η<sub>p</sub><sup>2</sup>&lt;.01. Covariate age, BMI, and appetite sensation did not have significant effects on between-group differences in ratings of the ideal, thinnest, or largest figures, or on the attractiveness range (<italic>F</italic>s = 0.21–1.01, <italic>p</italic>&gt;.318, η<sub>p</sub><sup>2</sup>&lt;.02).</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>In the present study, we examined the impact of psychological stress on men's body size preferences using an experimental design. By comparing the preferences of an experimental group with a matched control group, we were able to focus on the specific effects of stress, while discounting possible confounding effects of age, BMI, and hunger. As expected, and consistent with the Environmental Security Hypothesis <xref ref-type="bibr" rid="pone.0042593-Pettijohn2">[15]</xref>–<xref ref-type="bibr" rid="pone.0042593-Pettijohn3">[16]</xref>, <xref ref-type="bibr" rid="pone.0042593-Pettijohn5">[18]</xref>, we found that the experience of stress shifted men's body size preferences, such that heavier female body sizes were rated more positively. Broadly speaking, the present results are consistent with the suggestion that individuals are more likely to idealise mature morphological traits, including a heavier body size, when they experience environmental threat, whether from economic <xref ref-type="bibr" rid="pone.0042593-Nelson1">[10]</xref>, proprioceptive <xref ref-type="bibr" rid="pone.0042593-Swami1">[3]</xref>, <xref ref-type="bibr" rid="pone.0042593-Nelson1">[10]</xref>–<xref ref-type="bibr" rid="pone.0042593-Pettijohn1">[12]</xref>, or social sources <xref ref-type="bibr" rid="pone.0042593-Pettijohn5">[18]</xref>.</p>
+      <p>More specifically, the results of the present study showed that participants experiencing psychological stress selected a significantly heavier female body size as maximally attractive compared to the control group. Although the shift in preferences may appear small from a practical point-of-view, it should be noted that the effect size of the uncovered difference was moderate by conventional standards <xref ref-type="bibr" rid="pone.0042593-Cohen1">[29]</xref>. Additionally, our results showed that men who were stressed rated female body sizes at higher BMI categories as more attractive than their control group counterparts. That is, men in the experimental condition rated women of normal weight, overweight, and, partially at least, obese BMI categories as more attractive than the control group. These results are consistent with previous experimental work indicating that the experience of stress leads participants to prefer more mature physical characteristics <xref ref-type="bibr" rid="pone.0042593-Pettijohn5">[18]</xref>, but extends earlier studies in showing that the stress also impacts on body size judgements.</p>
+      <p>Finally, the present results also showed that men in the experimental group idealised a wider range of female body sizes as being physically attractive compared to the control group. As before, the effect size of this between-group difference was moderate by Cohen's <xref ref-type="bibr" rid="pone.0042593-Cohen1">[29]</xref> standards. It was notable that this difference was driven by the shift in the experimental group's upper limit of attractive female bodies. That is, while there was no significant difference in the lower end of the range, the experimental group appear to have shifted the maximum cut-off for attractive bodies at higher BMIs, which resulted in their wider attractiveness range. This has some similarities with the female attractiveness preferences of male and female Zulus living in rural South Africa <xref ref-type="bibr" rid="pone.0042593-Tove1">[4]</xref>, who also showed a tolerance of a heavier body relative to British observers, which may be linked to their more stressful environment.</p>
+      <p>Taken together, the present results provide support for the suggestion that human attractiveness judgements are sensitive to variations in local ecologies and may reflect adaptive strategies for dealing with experiences of threat <xref ref-type="bibr" rid="pone.0042593-Tove1">[4]</xref>, <xref ref-type="bibr" rid="pone.0042593-Swami2">[6]</xref>, <xref ref-type="bibr" rid="pone.0042593-Gangestad1">[30]</xref>. That is, human mate choice preferences are likely context-specific and recalibrate as local conditions and experiences change, the end result being mate preferences that remain adaptive regardless of the environmental landscape <xref ref-type="bibr" rid="pone.0042593-Tove1">[4]</xref>, <xref ref-type="bibr" rid="pone.0042593-Sugiyama1">[31]</xref>. The experience of stress may lead to a general preference for more mature physical traits in a potential partner because such traits are associated with improved ability to handle environmental stress <xref ref-type="bibr" rid="pone.0042593-Nelson2">[32]</xref>. More broadly, the present results may also help explain reported cross-cultural differences in ideal body size: in contexts marked by prolonged stress as a result of resource deprivation, individuals may idealise larger body sizes because such body types are associated with better ability to handle environmental threat <xref ref-type="bibr" rid="pone.0042593-Tove2">[33]</xref>.</p>
+      <p>Our results should be considered in the light of a number of limitations of our design. First, it is possible that having participants in the control group sit quietly without distractions impacted their levels of boredom, which in turn affected their body size judgments. It will, therefore, be important to replicate our findings using attention conditions that control for the task demands of the speech and math tasks, but that do not activate stress response systems <xref ref-type="bibr" rid="pone.0042593-VonDawans1">[34]</xref>. Second, although the TSST is known to induce acute psychological stress and increase levels of cortisol, our design could be improved through more comprehensive measures of the stress variable. For example, measuring stress-induced cortisol, a glucocorticoid that is known to be related to cognitive functions <xref ref-type="bibr" rid="pone.0042593-Clow1">[35]</xref> would allow for a more direct test of the associations between stress and body size preferences. At present, then, it cannot be fully established whether our stress procedure reliably activated stress response or sympathetic nervous systems (e.g., heart rate and blood pressure) in the intended manner. Future work could also manipulate when the body size judgements are collected: if stress-induced cortisol is indeed the mechanism that affects body size judgements, then collecting data on these judgements in the first three minutes post-TSST should produce no differential effects compared to collecting them 20 minutes post-TSST <xref ref-type="bibr" rid="pone.0042593-deQuervain1">[36]</xref>.</p>
+      <p>Second, it is possible that, in the present study, the experience of stress impacted on state self-esteem, empathy, or related constructs, which in turn may have impacted on body size perceptions. As such, in future work it may be necessary to control for these factors when examining the impact of stress on body size ideals. Third, because the PFRS currently only allows for the assessment of female body size judgements, we were not able to examine the effect of stress on women's judgements of male bodies. The available evidence from naturalistic designs would seem to point to a similar shift in preferences as a function of environmental threat <xref ref-type="bibr" rid="pone.0042593-Swami12">[37]</xref>. Conversely, there is also evidence that hunger salience has differential effects on the preferences of women and men. Specifically, hunger state does not appear to alter female preferences for physical indicators of maturity (e.g., a heavier body size) to the same extent as it does for non-physical characteristics (e.g., more mature personalities) <xref ref-type="bibr" rid="pone.0042593-Pettijohn4">[17]</xref>. As such, future experimental research would do well to examine the effects of acute stress on female preferences for male body size. Finally, our reliance on a student sample means that our findings should only be generalised to the wider population with caution.</p>
+      <p>These limitations notwithstanding, the present results provide the first experimental evidence that the experience of psychological stress shapes men's judgements of female body size. Men experiencing stress not only perceive a heavier female body size as maximally attractive, but also more positively perceive heavier female body sizes and have a wider range of body sizes considered physically attractive. Although our work was focused on psychological stress, accumulating evidence suggests that different forms of stress (e.g., physiological, economic, social) have similar effects on physical attractiveness preferences <xref ref-type="bibr" rid="pone.0042593-Swami1">[3]</xref>, <xref ref-type="bibr" rid="pone.0042593-Pettijohn3">[16]</xref>–<xref ref-type="bibr" rid="pone.0042593-Pettijohn5">[18]</xref>, <xref ref-type="bibr" rid="pone.0042593-Webster1">[38]</xref>. These results underline the malleability of physical attractiveness judgements and have important implications for scholarly understanding of reported cross-cultural differences in body size ideals. Further research may also help to better explain reported within-cultural differences in physical attractiveness ideals <xref ref-type="bibr" rid="pone.0042593-Swami13">[39]</xref>, particularly if it can be established that chronic stress impacts upon such ideals.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0042593-Anderson1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Anderson</surname><given-names>JL</given-names></name>, <name name-style="western"><surname>Crawford</surname><given-names>CE</given-names></name>, <name name-style="western"><surname>Nadeau</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Lindberg</surname><given-names>T</given-names></name> (<year>1992</year>) <article-title>Was the Duchess of Windsor right? A cross-cultural view of the socio-biology of ideals of female body shape</article-title>. <source>Ethol Sociobiol</source> <volume>13</volume>: <fpage>197</fpage>–<lpage>227</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Brown1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brown</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Konner</surname><given-names>MJ</given-names></name> (<year>1987</year>) <article-title>An anthropological perspective of obesity</article-title>. <source>Ann N Y Acad Sci</source> <volume>499</volume>: <fpage>29</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Tovée</surname><given-names>MJ</given-names></name> (<year>2006</year>) <article-title>Does hunger influence judgements of female physical attractiveness?</article-title> <source>Br J Psychol</source> <volume>97</volume>: <fpage>353</fpage>–<lpage>363</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Tove1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tovée</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Furnham</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Mangalparsad</surname><given-names>R</given-names></name> (<year>2006</year>) <article-title>Changing perceptions of attractiveness as observers are exposed to a different culture</article-title>. <source>Evol Hum Behav</source> <volume>27</volume>: <fpage>443</fpage>–<lpage>456</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Ellisson1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ellisson</surname><given-names>P</given-names></name> (<year>1990</year>) <article-title>Human ovarian function and reproductive ecology: New hypotheses</article-title>. <source>Am Anthropologist</source> <volume>92</volume>: <fpage>933</fpage>–<lpage>952</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami2">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Tovée</surname><given-names>MJ</given-names></name> (<year>2005</year>) <article-title>Female physical attractiveness in Britain and Malaysia: A cross-cultural study</article-title>. <source>Body Image</source> <volume>2</volume>: <fpage>115</fpage>–<lpage>128</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami3">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Tovée</surname><given-names>MJ</given-names></name> (<year>2007</year>) <article-title>Perceptions of female body weight and shape among indigenous and urban Europeans</article-title>. <source>Scand J Psychol</source> <volume>48</volume>: <fpage>43</fpage>–<lpage>50</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami4">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Knight</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Tovée</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Davies</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Furnham</surname><given-names>A</given-names></name> (<year>2007</year>) <article-title>Perceptions of female body size in Britain and the South Pacific</article-title>. <source>Body Image</source> <volume>4</volume>: <fpage>219</fpage>–<lpage>223</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami5">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Frederick</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Aavik</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Alcalay</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Allik</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Body weight ideals and body dissatisfaction in 26 countries across 10 world regions: Results of the International Body Project I</article-title>. <source>Pers Soc Psychol Bull</source> <volume>36</volume>: <fpage>309</fpage>–<lpage>325</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Nelson1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nelson</surname><given-names>LD</given-names></name>, <name name-style="western"><surname>Morrison</surname><given-names>EL</given-names></name> (<year>2005</year>) <article-title>The symptoms of resource scarcity: Judgements of food and finances influence preference for potential partners</article-title>. <source>Psych Sci</source> <volume>16</volume>: <fpage>167</fpage>–<lpage>173</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami6">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Poulogianni</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Furnham</surname><given-names>A</given-names></name> (<year>2006</year>) <article-title>The influence of resource availability on preferences for human body weight and non-human objects</article-title>. <source>J Articles Supp Null Hyp</source> <volume>4</volume>: <fpage>17</fpage>–<lpage>28</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Pettijohn1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pettijohn</surname><given-names>TF</given-names><suffix>II</suffix></name>, <name name-style="western"><surname>Sacco</surname><given-names>DF</given-names><suffix>Jr</suffix></name>, <name name-style="western"><surname>Yerkes</surname><given-names>MJ</given-names></name> (<year>2009</year>) <article-title>Hungry people prefer more mature mates: A field test of the environmental security hypothesis</article-title>. <source>J Soc Evol Cultural Psychol</source> <volume>3</volume>: <fpage>216</fpage>–<lpage>232</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Ortigosa1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ortigosa</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Rowe</surname><given-names>L</given-names></name> (<year>2002</year>) <article-title>The effect of hunger on mating behavior and sexual selection for male body size in <italic>Gerris buenoi</italic></article-title>. <source>Animal Behav</source> <volume>64</volume>: <fpage>369</fpage>–<lpage>375</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami7">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Tovée</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Furnham</surname><given-names>A</given-names></name> (<year>2008</year>) <article-title>Does financial security influence judgements of female physical attractiveness?</article-title> <source>J Socio-Economics</source> <volume>37</volume>: <fpage>1363</fpage>–<lpage>1370</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Pettijohn2">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pettijohn</surname><given-names>TF</given-names><suffix>II</suffix></name>, <name name-style="western"><surname>Tesser</surname><given-names>A</given-names></name> (<year>1999</year>) <article-title>An investigation of popularity in environmental context: Facial feature assessment of American movie actresses</article-title>. <source>Media Psychol</source> <volume>1</volume>: <fpage>229</fpage>–<lpage>247</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Pettijohn3">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pettijohn</surname><given-names>TF</given-names><suffix>II</suffix></name>, <name name-style="western"><surname>Tesser</surname></name> (<year>2003</year>) <article-title>History and facial features: The eyes have it for actresses by not for actors</article-title>. <source>North Am J Psychol</source> <volume>5</volume>: <fpage>335</fpage>–<lpage>345</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Pettijohn4">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pettijohn</surname><given-names>TF</given-names><suffix>II</suffix></name>, <name name-style="western"><surname>Jungeberg</surname><given-names>B</given-names></name> (<year>2004</year>) <article-title><italic>Playboy</italic> playmate curves: Changes in facial and body feature preferences across US social and economic conditions</article-title>. <source>Pers Soc Psychol Bull</source> <volume>30</volume>: <fpage>1186</fpage>–<lpage>1997</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Pettijohn5">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pettijohn</surname><given-names>TF</given-names><suffix>II</suffix></name>, <name name-style="western"><surname>Tesser</surname><given-names>A</given-names></name> (<year>2005</year>) <article-title>Threat and social choice: When eye size matters</article-title>. <source>J Soc Psych</source> <volume>145</volume>: <fpage>547</fpage>–<lpage>570</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Melamed1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Melamed</surname><given-names>T</given-names></name> (<year>1992</year>) <article-title>Personality correlates of physical height</article-title>. <source>Pers Ind Diff</source> <volume>13</volume>: <fpage>1349</fpage>–<lpage>1350</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Loewenstein1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Loewenstein</surname><given-names>G</given-names></name> (<year>1996</year>) <article-title>Out of control: Visceral influences on behavior</article-title>. <source>Org Behav Human Decision Processes</source> <volume>65</volume>: <fpage>272</fpage>–<lpage>292</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami8">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Jones</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Einon</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Furnham</surname><given-names>A</given-names></name> (<year>2009</year>) <article-title>Men's preferences for women's profile waist-to-hip ratio, breast size, and ethnic group in Britain and South Africa</article-title>. <source>Br J Psych</source> <volume>100</volume>: <fpage>313</fpage>–<lpage>325</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Kirschbaum1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kirschbaum</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Pirke</surname><given-names>K-M</given-names></name>, <name name-style="western"><surname>Hellhammer</surname><given-names>DH</given-names></name> (<year>1993</year>) <article-title>The ‘Trier Social Stress Test’: A tool for investigating psychobiological stress responses in a laboratory setting</article-title>. <source>Neuropsychobiol</source> <volume>28</volume>: <fpage>81</fpage>–<lpage>86</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Dickerson1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dickerson</surname><given-names>SS</given-names></name>, <name name-style="western"><surname>Kemeny</surname><given-names>ME</given-names></name> (<year>2004</year>) <article-title>Acute stressors and cortisol responses: A theoretical integration and synthesis of laboratory research</article-title>. <source>Psych Bull</source> <volume>130</volume>: <fpage>355</fpage>–<lpage>391</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami9">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Salem</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Furnham</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Tovée</surname><given-names>MJ</given-names></name> (<year>2008</year>) <article-title>Initial examination of the validity and reliability of the female Photographic Figure Rating Scale for body image assessment</article-title>. <source>Pers Ind Diff</source> <volume>44</volume>: <fpage>1752</fpage>–<lpage>1761, Personality and Individual Differences, 44, 1752–1761</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami10">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Furnham</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Chamorro-Premuzic</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Akbar</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Gordon</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>More than skin deep? Personality information influences men's ratings of the attractiveness of women's body size</article-title>. <source>J Soc Psychol</source> <volume>150</volume>: <fpage>628</fpage>–<lpage>647</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami11">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Stieger</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Harris</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Nader</surname><given-names>IW</given-names></name>, <name name-style="western"><surname>Pietschnig</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>in press</year>) <article-title>Further investigation of the validity and reliability of the Photographic Figure Rating Scale for body image assessment</article-title>. <source>J Pers Assess</source></mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Flint1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Flint</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Raben</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Blundell</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>Astrup</surname><given-names>A</given-names></name> (<year>2000</year>) <article-title>Reproducibility, power, and validity of visual analogue scales in assessment of appetite sensations in single test meal studies</article-title>. <source>Int J Obesity</source> <volume>24</volume>: <fpage>38</fpage>–<lpage>48</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Merrill1">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Merrill</surname><given-names>EP</given-names></name>, <name name-style="western"><surname>Kramer</surname><given-names>FM</given-names></name>, <name name-style="western"><surname>Cardello</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Schultz</surname><given-names>H</given-names></name> (<year>2002</year>) <article-title>A comparison of satiety measures</article-title>. <source>Appetite</source> <volume>39</volume>: <fpage>181</fpage>–<lpage>183</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Cohen1">
+        <label>29</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cohen</surname><given-names>J</given-names></name> (<year>1992</year>) <article-title>Statistics: A power primer</article-title>. <source>Psych Bull</source> <volume>112</volume>: <fpage>155</fpage>–<lpage>159</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Gangestad1">
+        <label>30</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gangestad</surname><given-names>SW</given-names></name>, <name name-style="western"><surname>Simpson</surname><given-names>JA</given-names></name> (<year>2000</year>) <article-title>The evolution of human mating: Trade-offs and strategic pluralism</article-title>. <source>Behav Brain Sci</source> <volume>23</volume>: <fpage>573</fpage>–<lpage>587</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Sugiyama1">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sugiyama</surname><given-names>LS</given-names></name> (<year>2004</year>) <article-title>Is beauty in the context-sensitive adaptations of the beholder? Shiwiar use of waist-to-hip ratio in assessments of female mate value</article-title>. <source>Evol Human Behav</source> <volume>25</volume>: <fpage>51</fpage>–<lpage>62</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Nelson2">
+        <label>32</label>
+        <mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Nelson</surname><given-names>LD</given-names></name>, <name name-style="western"><surname>Pettijohn</surname><given-names>TF</given-names><suffix>II</suffix></name>, <name name-style="western"><surname>Galak</surname><given-names>J</given-names></name> (<year>2007</year>) <article-title>Mate preferences in social cognitive context: When environmental and personal change leads to predictable cross-cultural variation</article-title>. In: <source>Body beautiful: Evolutionary and socio-cultural perspectives</source>. <name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Furnham</surname><given-names>A</given-names></name>, editors. <publisher-loc>New York</publisher-loc>: <publisher-name>Palgrave</publisher-name>. <fpage>185</fpage>–<lpage>206</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Tove2">
+        <label>33</label>
+        <mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Tovée</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Furnham</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Swami</surname><given-names>V</given-names></name> (<year>2007</year>) <article-title>Healthy body equals beautiful body? Changing perceptions of health and attractiveness with shifting socioeconomic status</article-title>. In <source>Body beautiful: Evolutionary and socio-cultural perspectives</source>. <name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Furnham</surname><given-names>A</given-names></name>, editors. <publisher-loc>New York</publisher-loc>: <publisher-name>Palgrave</publisher-name>. <fpage>108</fpage>–<lpage>128</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-VonDawans1">
+        <label>34</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Von Dawans</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Kirschbaum</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Heinrichs</surname><given-names>M</given-names></name> (<year>2011</year>) <article-title>The Trier Social Stress Test for Groups (TSST-G): A new research tool for controlled simultaneous social stress exposure in a group format</article-title>. <source>Psychoneuroendocrinology</source> <volume>36</volume>: <fpage>514</fpage>–<lpage>522</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Clow1">
+        <label>35</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Clow</surname><given-names>A</given-names></name> (<year>2004</year>) <article-title>Cortisol as a biomarker of stress</article-title>. <source>J Holistic Healthcare</source> <volume>1</volume>: <fpage>10</fpage>–<lpage>14</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-deQuervain1">
+        <label>36</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>de Quervain</surname><given-names>DJ-F</given-names></name>, <name name-style="western"><surname>Roozendaal</surname><given-names>B</given-names></name>, <name name-style="western"><surname>McGaugh</surname><given-names>JL</given-names></name> (<year>1998</year>) <article-title>Stress and glucocorticoids impair retrieval of long-term spatial memory</article-title>. <source>Nature</source> <volume>394</volume>: <fpage>787</fpage>–<lpage>790</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami12">
+        <label>37</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Tovée</surname><given-names>MJ</given-names></name> (<year>2005</year>) <article-title>Male physical attractiveness in Britain and Malaysia: A cross-cultural study</article-title>. <source>Body Image</source> <volume>2</volume>: <fpage>383</fpage>–<lpage>393</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Webster1">
+        <label>38</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Webster</surname><given-names>GD</given-names></name> (<year>2008</year>) <article-title><italic>Playboy</italic> playmates, the Dow Jones, consumer sentiment, 9/11, and the Doomsday Clock: A critical examination of the Environmental Security Hypothesis</article-title>. <source>J Soc Evol Cultural Psych</source> <volume>2</volume>: <fpage>23</fpage>–<lpage>41</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0042593-Swami13">
+        <label>39</label>
+        <mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Swami</surname><given-names>V</given-names></name> (<year>2011</year>) <article-title>Love at first sight? Individual differences and the psychology of initial romantic attraction</article-title>. In <source>The Wiley-Blackwell Handbook of individual differences</source>. <name name-style="western"><surname>Chamorro-Premuzic</surname><given-names>T</given-names></name>, <name name-style="western"><surname>von Stumm</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Furnham</surname><given-names>A</given-names></name>, editors. <publisher-loc>Oxford</publisher-loc>: <publisher-name>Wiley-Blackwell</publisher-name>. <fpage>747</fpage>–<lpage>772</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="3.0" xml:lang="en" article-type="research-article">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-14-22519</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0119074</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>The Effect of Cluster Size Variability on Statistical Power in Cluster-Randomized Trials</article-title>
+<alt-title alt-title-type="running-head">Cluster Size Variability in Cluster-Randomized Trials</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Lauer</surname>
+<given-names>Stephen A.</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Kleinman</surname> <given-names>Ken P.</given-names></name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Reich</surname> <given-names>Nicholas G.</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<label>1</label>
+<addr-line>Division of Biostatistics and Epidemiology, School of Public Health and Health Sciences, University of Massachusetts, Amherst, MA, USA</addr-line>
+</aff>
+<aff id="aff002">
+<label>2</label>
+<addr-line>Department of Population Medicine, Harvard Medical School/Harvard Pilgrim Health Care Institute, Boston, MA, USA</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Dalby</surname> <given-names>Andrew R.</given-names></name>
+<role>Academic Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>University of Westminster, UNITED KINGDOM</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>Co-author Nicholas G Reich is a PLOS ONE Editorial Board member. This does not alter the authors’ adherence to PLOS ONE Editorial policies and criteria.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: SAL NGR. Performed the experiments: SAL NGR. Analyzed the data: SAL NGR KPK. Contributed reagents/materials/analysis tools: SAL NGR KPK. Wrote the paper: SAL NGR KPK.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">slauer@schoolph.umass.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<year>2015</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>1</day>
+<month>4</month>
+<year>2015</year>
+</pub-date>
+<volume>10</volume>
+<issue>4</issue>
+<elocation-id>e0119074</elocation-id>
+<history>
+<date date-type="received">
+<day>20</day>
+<month>5</month>
+<year>2014</year>
+</date>
+<date date-type="accepted">
+<day>21</day>
+<month>1</month>
+<year>2015</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2015</copyright-year>
+<copyright-holder>Lauer et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0119074" xlink:type="simple"/>
+<abstract>
+<p>The frequency of cluster-randomized trials (CRTs) in peer-reviewed literature has increased exponentially over the past two decades. CRTs are a valuable tool for studying interventions that cannot be effectively implemented or randomized at the individual level. However, some aspects of the design and analysis of data from CRTs are more complex than those for individually randomized controlled trials. One of the key components to designing a successful CRT is calculating the proper sample size (i.e. number of clusters) needed to attain an acceptable level of statistical power. In order to do this, a researcher must make assumptions about the value of several variables, including a fixed mean cluster size. In practice, cluster size can often vary dramatically. Few studies account for the effect of cluster size variation when assessing the statistical power for a given trial. We conducted a simulation study to investigate how the statistical power of CRTs changes with variable cluster sizes. In general, we observed that increases in cluster size variability lead to a decrease in power.</p>
+</abstract>
+<funding-group>
+<funding-statement>This project was funded by the ResPECT study (clinicaltrials.gov, ID: NCT01249625) through an interagency agreement between the Centers for Disease Control and the United States Department of Veterans Affairs (CDC IAA 09FED905876). The findings and conclusions in this manuscript are those of the authors and do not necessarily represent the views of the Centers for Disease Control and Prevention. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="4"/>
+<table-count count="1"/>
+<page-count count="13"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability" xlink:type="simple">
+<meta-name>Data Availability</meta-name>
+<meta-value>All code and data for this project is available at <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="https://bitbucket.org/nickreich/clustersizepaper.">https://bitbucket.org/nickreich/clustersizepaper.</ext-link></meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>The cluster-randomized trial (CRT) is a common study design in public health research, in which interventions are administered to groups rather than to individuals. In situations where dividing a group of individuals into treatment and controls is unethical or impossible, a CRT design retains many of the strengths of an individually randomized study design [<xref ref-type="bibr" rid="pone.0119074.ref001">1</xref>]. By comparing the outcomes of small populations (clusters), CRTs can observe the impacts of interventions on a community as a whole.</p>
+<p>The number of published articles utilizing CRTs has increased every year since 1997 (See <xref ref-type="fig" rid="pone.0119074.g001">Fig. 1</xref>). Due to its rising popularity, this relatively complex study design is facing greater scrutiny from the scientific community. The Consolidated Standards of Reporting Trials (CONSORT) Group issued guidelines for conducting CRTs in 2004 [<xref ref-type="bibr" rid="pone.0119074.ref002">2</xref>], with an update published in 2012 [<xref ref-type="bibr" rid="pone.0119074.ref003">3</xref>]. One important component of CRT design is the sample size calculation; in which researchers must find the correct number of clusters to achieve sufficient statistical power. In <italic>CONSORT 2010 statement: extension to cluster randomised trials</italic>, there was an added focus on sample size reporting, which included a note about accounting for varying cluster sizes.</p>
+<fig id="pone.0119074.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119074.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>The annual number of articles published on CRTs (either trials themselves or methods for trials) has increased from 4 to 275 since 1997.</title>
+<p>Source: Web of Science. Search syntax used: (TI = (“cluster random*”) OR TI = (“group random*”)) AND Document Types = (Article).</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119074.g001"/>
+</fig>
+<p>This has been a subject of interest since Donner and Klar’s seminal paper <italic>Randomization by cluster: sample size requirements and analysis</italic> in 1981 [<xref ref-type="bibr" rid="pone.0119074.ref004">4</xref>]. As detailed in <italic>Unequal cluster sizes for trials in English and Welsh general practice: implications for sample size calculations</italic> [<xref ref-type="bibr" rid="pone.0119074.ref005">5</xref>], Kerry and Bland derived a formula to calculate the design effect of a CRT based on the number of participants in each cluster. The design effect is the ratio of the sample size required for a CRT over that of an individually randomized trial with the same power. Eldridge et al built upon this formula so that design effect could be calculated knowing only the mean cluster size and the coefficient of cluster size variation [<xref ref-type="bibr" rid="pone.0119074.ref006">6</xref>, <xref ref-type="bibr" rid="pone.0119074.ref007">7</xref>].</p>
+<p>Another approach to accounting for cluster size variation is by using a measure of relative efficiency [<xref ref-type="bibr" rid="pone.0119074.ref008">8</xref>–<xref ref-type="bibr" rid="pone.0119074.ref011">11</xref>]. Relative efficiency is mathematically derived and easy to implement once computed. However, there are several ways to calculate relative efficiency, all of which use complicated methods that may create obstacles to their use in practice. We seek to simplify the process of estimating the needed sample size for a CRT in the presence of variable cluster sizes. We hope this effort will encourage continued improvement in efficient implementation of CRTs within the medical and social science communities.</p>
+<p>Using the statistical programming language R v3.02 [<xref ref-type="bibr" rid="pone.0119074.ref012">12</xref>] and the package clusterPower [<xref ref-type="bibr" rid="pone.0119074.ref013">13</xref>, <xref ref-type="bibr" rid="pone.0119074.ref014">14</xref>], we designed a controlled simulation experiment in which we simulated hundreds of thousands of hypothetical CRTs. Using the results from these simulations, we examined the effect of variability in cluster sizes on statistical power of CRTs and developed simple and concrete quantitative guidelines for researchers who design CRTs with high variability in cluster sizes. This manuscript file was typeset reproducibly using the R package knitr [<xref ref-type="bibr" rid="pone.0119074.ref015">15</xref>, <xref ref-type="bibr" rid="pone.0119074.ref016">16</xref>], which we used to call files of pre-processed results from the simulation studies. All code and data for this project is available at <ext-link ext-link-type="uri" xlink:href="https://bitbucket.org/nickreich/clustersizepaper" xlink:type="simple">https://bitbucket.org/nickreich/clustersizepaper</ext-link>.</p>
+</sec>
+<sec id="sec002">
+<title>Project Overview</title>
+<p>We developed a framework that allowed us to measure the impact that variability in cluster size has on the power of a CRT. This framework was built on the foundation of the clusterPower package in R [<xref ref-type="bibr" rid="pone.0119074.ref013">13</xref>]. Statistical power is defined as the probability of rejecting the null hypothesis given that the null hypothesis is not true. In brief, to estimate statistical power for a given CRT design, we stochastically simulated data (i.e. results from a trial) from a hypothetical CRT design with a known, non-zero intervention effect size. Among all simulated trials, the percentage of time the null hypothesis is rejected is therefore an accurate estimate of the power for this design. We have leveraged this simple simulation framework to answer a complex question about CRT study design: how does variability in cluster size impact the power of a CRT?</p>
+<p>We designed a simulation study to systematically gather data on how cluster size variability impacts power and sample size requirements for a CRT. To provide a focused study of the effect of cluster size variability on CRT sample size, we limited the current investigation to a common CRT design. Namely, we focused on equal-armed CRTs that had a continuous outcome measure (as opposed to binary or count data) and assumed that the design did not incorporate a “controlled comparison” (e.g. a crossover, baseline comparison, or matching). We used a data generating model similar to that given by Reich et al. [<xref ref-type="bibr" rid="pone.0119074.ref013">13</xref>]:
+<disp-formula id="pone.0119074.e001"><alternatives><graphic id="pone.0119074.e001g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119074.e001"/><mml:math id="M1" mode="display" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>Y</mml:mi> <mml:mrow><mml:mi>j</mml:mi> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mrow><mml:mo>|</mml:mo></mml:mrow> <mml:msub><mml:mi>X</mml:mi> <mml:mi>k</mml:mi></mml:msub></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>η</mml:mi> <mml:mi>k</mml:mi></mml:msub> <mml:mo>+</mml:mo> <mml:mo>Δ</mml:mo> <mml:mo>·</mml:mo> <mml:msub><mml:mi>X</mml:mi> <mml:mi>k</mml:mi></mml:msub> <mml:mo>+</mml:mo> <mml:msub><mml:mi>ϵ</mml:mi> <mml:mrow><mml:mi>j</mml:mi> <mml:mi>k</mml:mi></mml:mrow></mml:msub> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:msub><mml:mi>η</mml:mi> <mml:mi>k</mml:mi></mml:msub></mml:mtd> <mml:mtd><mml:mo>∼</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mi mathvariant="italic">Normal</mml:mi> <mml:mo>(</mml:mo> <mml:mn>0</mml:mn> <mml:mo>,</mml:mo> <mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>η</mml:mi> <mml:mn>2</mml:mn></mml:msubsup> <mml:mo>)</mml:mo> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:msub><mml:mi>ϵ</mml:mi> <mml:mrow><mml:mi>j</mml:mi> <mml:mi>k</mml:mi></mml:mrow></mml:msub></mml:mtd> <mml:mtd><mml:mo>∼</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mi mathvariant="italic">Normal</mml:mi> <mml:mo>(</mml:mo> <mml:mn>0</mml:mn> <mml:mo>,</mml:mo> <mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>ϵ</mml:mi> <mml:mn>2</mml:mn></mml:msubsup> <mml:mo>)</mml:mo><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(1)</label></disp-formula>
+where <italic>Y</italic><sub><italic>jk</italic></sub> is the observed outcome for person <italic>j</italic> (<italic>j</italic> = 1, …, <italic>J</italic><sub><italic>k</italic></sub>) in cluster <italic>k</italic> (<italic>k</italic> = 1, …, <italic>K</italic>; <italic>K</italic> = total number of clusters), <italic>X</italic><sub><italic>k</italic></sub> is a binary variable indicating whether cluster <italic>k</italic> was assigned to the treatment (<italic>X</italic><sub><italic>k</italic></sub> = 1) or control (<italic>X</italic><sub><italic>k</italic></sub> = 0) group, <italic>Δ</italic> is the non-standardized treatment effect size, <italic>η</italic><sub><italic>k</italic></sub> is the effect due to variation between clusters, and <italic>ε</italic><sub><italic>jk</italic></sub> is the effect due to variation between the individuals in each cluster.</p>
+<sec id="sec003">
+<title>Simulation study</title>
+<p>The following list provides a brief description of each step in our simulation study. We provide a more detailed explanation of each step in the next section.
+<list list-type="order"><list-item><p>Defined the <italic>parameter sets</italic> (<bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub>). Each <bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub> is a vector of variables used to calculate the statistical power (<italic>P</italic>) of a theoretical CRT. The following components make up <bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub> and are also listed (with the values we assumed for each) in <xref ref-type="table" rid="pone.0119074.t001">Table 1</xref>:
+<list list-type="roman-lower"><list-item><p>Type I Error (<italic>α</italic>, fixed at 0.05 for all experiments)</p></list-item>
+<list-item><p>Mean cluster size (<italic>μ</italic>)</p></list-item>
+<list-item><p>Intraclass correlation coefficient (<inline-formula id="pone.0119074.e002"><mml:math id="M2" display="inline" overflow="scroll"><mml:mrow><mml:mtext mathvariant="normal">ICC</mml:mtext> <mml:mo>=</mml:mo> <mml:mfrac><mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>η</mml:mi> <mml:mn>2</mml:mn></mml:msubsup> <mml:mrow><mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>η</mml:mi> <mml:mn>2</mml:mn></mml:msubsup> <mml:mo>+</mml:mo> <mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>ε</mml:mi> <mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>)</p></list-item>
+<list-item><p>Between cluster variance (<inline-formula id="pone.0119074.e003"><mml:math id="M3" display="inline" overflow="scroll"><mml:mrow><mml:mtext mathvariant="normal">BCV</mml:mtext> <mml:mo>=</mml:mo> <mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>η</mml:mi> <mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula>)</p></list-item>
+<list-item><p>Number of clusters needed to reach 80% power with fixed cluster sizes (<italic>C</italic><sup>80</sup>)</p></list-item>
+<list-item><p>Effect size (<italic>Δ</italic>, calibrated on the combination of above variables)</p></list-item></list>
+Using parameters (i-v) and a type II error (<italic>β</italic>) of 0.2 in Murray’s effect size equation (defined in Methods), we calculated the minimum effect size required to find a significant result in a properly powered CRT, <italic>Δ</italic>. By jointly varying parameters (i-v) over realistic ranges of values, we created carefully calibrated hypothetical CRT settings. Then, when we simulated data from CRTs in these setting to make power estimates with clusterPower, we allowed for the actual number of clusters in the study (<italic>C</italic><sup><italic>A</italic></sup>) to be different than <italic>C</italic><sup>80</sup>.</p></list-item>
+<list-item><p>Estimated the statistical power when cluster sizes were fixed at <italic>μ</italic>. We refer to these estimates as our <italic>fixed cluster size power estimates</italic>, <inline-formula id="pone.0119074.e004"><mml:math id="M4" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mi>P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mi>F</mml:mi></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mi>A</mml:mi></mml:msup> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>. To do this, we simulated hypothesis tests on 5000 unique datasets for each (<bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub>, <italic>C</italic><sup><italic>A</italic></sup>) pair.</p></list-item>
+<list-item><p>Estimated the statistical power when cluster sizes have variability, defined by several coefficient of variation (<italic>cv</italic>) levels. We refer to these estimates as <italic>variable cluster size power estimates</italic>, <inline-formula id="pone.0119074.e005"><mml:math id="M5" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mi>P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msubsup> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mi>A</mml:mi></mml:msup> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>. To do this, we generated <italic>S</italic> = 2000 <italic>variable cluster size sets</italic> for each (<bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub>, <italic>C</italic><sup><italic>A</italic></sup>, <italic>cv</italic>) combination and ran a simulation on each variable cluster size set, which output a dataset. Hypothesis testing was performed on each dataset and produced a <inline-formula id="pone.0119074.e006"><mml:math id="M6" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mi>P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:mrow><mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi></mml:mrow> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msubsup> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mi>A</mml:mi></mml:msup> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mrow></mml:math></inline-formula>, where <italic>s</italic> = 1, …, <italic>S</italic>. The average result over all <italic>S</italic> datasets defined the <inline-formula id="pone.0119074.e007"><mml:math id="M7" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mi>P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mi>A</mml:mi></mml:msup> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>.</p></list-item>
+<list-item><p>Calculated the required number of clusters for each combination of <bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub> and <italic>cv</italic>. The vectors <inline-formula id="pone.0119074.e008"><mml:math id="M8" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mtext mathvariant="bold">P</mml:mtext> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mtext mathvariant="bold">F</mml:mtext></mml:msubsup></mml:mrow></mml:math></inline-formula> and <inline-formula id="pone.0119074.e009"><mml:math id="M9" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mtext mathvariant="bold">P</mml:mtext> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mtext mathvariant="bold">cv</mml:mtext></mml:msubsup></mml:mrow></mml:math></inline-formula> form power curves for each <bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub> along the range of <italic>C</italic><sup><italic>A</italic></sup>. Using the values just above and below <italic>P</italic> = 0.8, we interpolated the point where <italic>C</italic><sup><italic>A</italic></sup> is equal to the number of clusters required to achieve a statistical power of 80% for fixed-size cluster sets (<inline-formula id="pone.0119074.e010"><mml:math id="M10" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mi>C</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mi>F</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula>, which approximates <italic>C</italic><sup>80</sup>) and variable cluster sets (<inline-formula id="pone.0119074.e011"><mml:math id="M11" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mi>C</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mi mathvariant="bold">θ</mml:mi> <mml:mi mathvariant="bold">i</mml:mi></mml:msub> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula>).</p></list-item>
+<list-item><p>Using our results, we observed the effect of <italic>cv</italic> on the required number of clusters (<inline-formula id="pone.0119074.e012"><mml:math id="M12" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mi>C</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula>).</p></list-item></list></p>
+<table-wrap id="pone.0119074.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119074.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>List of simulation parameters and their values.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0119074.t001g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119074.t001"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"> </th>
+<th align="left" rowspan="1" colspan="1"><bold>Simulation Parameter</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Values</bold></th>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1"/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub></td>
+<td align="left" rowspan="1" colspan="1">Type I Error (<italic>α</italic>)</td>
+<td align="left" rowspan="1" colspan="1">.05</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Mean Cluster Size (<italic>μ</italic>)</td>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">50</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+<td align="left" rowspan="1" colspan="1">100</td>
+<td align="left" rowspan="1" colspan="1">125</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">ICC</td>
+<td align="left" rowspan="1" colspan="1">.001</td>
+<td align="left" rowspan="1" colspan="1">.002</td>
+<td align="left" rowspan="1" colspan="1">.006</td>
+<td align="left" rowspan="1" colspan="1">.01</td>
+<td align="left" rowspan="1" colspan="1">.03</td>
+<td align="left" rowspan="1" colspan="1">.08</td>
+<td align="left" rowspan="1" colspan="1">.2</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">BCV</td>
+<td align="left" rowspan="1" colspan="1">.01</td>
+<td align="left" rowspan="1" colspan="1">.1</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Number of clusters required to reach 80% power (<italic>C</italic><sup>80</sup>)</td>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">40</td>
+<td align="left" rowspan="1" colspan="1">60</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Effect Size (<italic>Δ</italic>)</td>
+<td colspan="9" align="left" rowspan="1">Calibrated on the combination of the above variables</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Actual No. of Clusters (<italic>C</italic><sup><italic>A</italic></sup>)</td>
+<td align="left" rowspan="1" colspan="1">5</td>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">15</td>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">40</td>
+<td align="left" rowspan="1" colspan="1">60</td>
+<td align="left" rowspan="1" colspan="1">80<xref ref-type="table-fn" rid="t001fn001">*</xref></td>
+<td align="left" rowspan="1" colspan="1">100<xref ref-type="table-fn" rid="t001fn002">**</xref></td>
+<td align="left" rowspan="1" colspan="1">120<xref ref-type="table-fn" rid="t001fn002">**</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Fixed-Variance Sims</td>
+<td align="left" rowspan="1" colspan="1">5000</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Coefficient of Variation (<italic>cv</italic>)</td>
+<td align="left" rowspan="1" colspan="1">0.5</td>
+<td align="left" rowspan="1" colspan="1">1.0</td>
+<td align="left" rowspan="1" colspan="1">1.5</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Variable-Sized Sets (<italic>S</italic>)</td>
+<td align="left" rowspan="1" colspan="1">2000</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Variable-Sized Set Sims</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001">
+<p>* Only used when <italic>C</italic><sup>80</sup> &gt; 10</p>
+</fn>
+<fn id="t001fn002">
+<p>** Only used when <italic>C</italic><sup>80</sup> &gt; 20</p>
+</fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+</sec>
+<sec id="sec004" sec-type="materials|methods">
+<title>Methods</title>
+<sec id="sec005">
+<title>Step 1: Parameter Selection</title>
+<p>To test the impact of cluster size variability on <italic>P</italic>, we simulated from 420 parameter sets (<bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub>). This is the number of unique combinations of <italic>μ</italic> values (5), ICC values (7), BCV values (3), and <italic>C</italic><sup>80</sup> values (4). Each <bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub> was simulated across a range of <italic>C</italic><sup><italic>A</italic></sup> values (6 to 9, depending on <italic>C</italic><sup>80</sup>) to create a total of 3,255 data points.</p>
+<p>For each <bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub> parameter set, we calculated a <italic>Δ</italic> value based on <italic>α</italic>, <italic>β</italic>, <italic>μ</italic>, ICC, BCV, and <italic>C</italic><sup>80</sup> according to these equations [<xref ref-type="bibr" rid="pone.0119074.ref017">17</xref>]:
+<disp-formula id="pone.0119074.e013"><alternatives><graphic id="pone.0119074.e013g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119074.e013"/><mml:math id="M13" mode="display" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mo>Δ</mml:mo></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:msqrt><mml:mfrac><mml:mrow><mml:mn>4</mml:mn> <mml:mo>·</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:msubsup><mml:mi>σ</mml:mi> <mml:mrow><mml:mi>ϵ</mml:mi></mml:mrow> <mml:mn>2</mml:mn></mml:msubsup> <mml:mo>+</mml:mo> <mml:mi>μ</mml:mi> <mml:mo>·</mml:mo> <mml:mtext>BCV</mml:mtext> <mml:mo>)</mml:mo></mml:mrow> <mml:msup><mml:mrow><mml:mo>(</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mrow><mml:mi>α</mml:mi> <mml:mo>/</mml:mo> <mml:mn>2</mml:mn></mml:mrow></mml:msub> <mml:mo>+</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mi>β</mml:mi></mml:msub> <mml:mo>)</mml:mo></mml:mrow> <mml:mn>2</mml:mn></mml:msup></mml:mrow> <mml:mrow><mml:mi>μ</mml:mi> <mml:mo>·</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mn>80</mml:mn></mml:msup></mml:mrow></mml:mfrac></mml:msqrt><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mtext>where:</mml:mtext> <mml:mspace width="4.pt"/><mml:msubsup><mml:mi>σ</mml:mi> <mml:mrow><mml:mi>ϵ</mml:mi></mml:mrow> <mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mfrac><mml:mrow><mml:mtext>BCV</mml:mtext> <mml:mo>·</mml:mo> <mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>-</mml:mo> <mml:mtext>ICC</mml:mtext> <mml:mo>)</mml:mo></mml:mrow> <mml:mtext>ICC</mml:mtext></mml:mfrac> <mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(2)</label></disp-formula></p>
+<p>Parameter selection required balancing the desire for well-spaced values across a meaningful range for each parameter with the computational burden of the simulations. (Over 68 million simulations took approximately two weeks running in parallel in 21 threads on a 12-core Mac Pro Desktop.)</p>
+<p>The values for <italic>α</italic> and <italic>β</italic> were set at the standard type I and type II error rates of 0.05 and 0.2, respectively.</p>
+<p>The five values of the mean cluster size, <italic>μ</italic>, were distributed between 20 and 125. We limited the maximum <italic>μ</italic> to 125 because simulations with large cluster sizes take considerably more computational time.</p>
+<p>The ICC quantities were seven evenly-spaced, rounded log-linear values between 0.001 and 0.2.</p>
+<p>The three BCV values were equally spread out on a log scale, spanning from 0.01 to 1.</p>
+<p>The four <italic>C</italic><sup>80</sup> values were chosen based on the range of popular numbers of clusters for CRTs. A CRT with 10 clusters would constitute a small trial and a CRT with 60 clusters is decidedly larger. We set the maximum <italic>C</italic><sup>80</sup> value at 60 because larger quantities of clusters take significantly longer to simulate.</p>
+<p>The <italic>C</italic><sup><italic>A</italic></sup> values ensured that the power curves for each CRT ranged from near 0 to 1. Initial tests showed that a wide range (5 ≤ <italic>C</italic><sup><italic>A</italic></sup> ≤ 120) was needed to accomplish this when <italic>C</italic><sup>80</sup> = 60. However, for smaller <italic>C</italic><sup>80</sup> values, the statistical power reached 1 sooner and thus the larger values of <italic>C</italic><sup><italic>A</italic></sup> were unnecessary.</p>
+</sec>
+<sec id="sec006">
+<title>Step 2: Generate fixed cluster size power estimates</title>
+<p>Prior to investigating the effect of variable cluster sizes on statistical power, we calibrated the empirical estimates of power from the clusterPower package against the formula-based estimates of power (<xref ref-type="disp-formula" rid="pone.0119074.e013">2</xref>). Since existing CRT formulas assume equal cluster sizes, we ran one 5000-simulation fixed cluster size CRT for each (<bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub>, <italic>C</italic><sup><italic>A</italic></sup>) pair. This produced <italic>fixed cluster size power estimates</italic>, <inline-formula id="pone.0119074.e014"><mml:math id="M14" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mi>P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mi>F</mml:mi></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mi>A</mml:mi></mml:msup> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>, where every cluster size in each CRT was fixed at <italic>μ</italic>. In Step 4, these estimates are used to compare the difference between the estimated number of clusters needed based on formulaic and simulated power calculations.</p>
+</sec>
+<sec id="sec007">
+<title>Step 3: Generate variable cluster size power estimates</title>
+<p>Next, we generated <italic>variable cluster size sets</italic>, sets of <italic>C</italic><sup><italic>A</italic></sup> randomly-drawn cluster sizes from a negative binomial distribution with mean <italic>μ</italic>. The negative binomial distribution was chosen due to the fact that the cluster sizes from trials that study investigators have worked on have shown over-dispersion similar to that of these distributions. We fixed the coefficient of variation (<italic>cv</italic>) of the negative binomial distribution, to roughly match observed skewness in cluster sizes from published CRTs. We used three levels of variability in cluster sizes: low variance (<italic>cv</italic> = 0.5), mid variance (<italic>cv</italic> = 1.0), and high variance (<italic>cv</italic> = 1.5).</p>
+<p>In our high variance cluster size set, the <italic>cv</italic> was fixed at 1.5, which is about twice the size of the largest <italic>cv</italic> in other CRT papers [<xref ref-type="bibr" rid="pone.0119074.ref008">8</xref>–<xref ref-type="bibr" rid="pone.0119074.ref010">10</xref>]. This ensured that our high variance cluster size power estimates represented a near-upper bound on the number of variable-sized clusters required in practice. By holding the <italic>cv</italic> constant, the size parameter of the negative binomial distribution (<italic>r</italic>) and consequently the variance, are functions of <italic>μ</italic> [<xref ref-type="bibr" rid="pone.0119074.ref018">18</xref>]:
+<disp-formula id="pone.0119074.e015"><alternatives><graphic id="pone.0119074.e015g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119074.e015"/><mml:math id="M15" mode="display" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mi>r</mml:mi></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mfrac><mml:mi>μ</mml:mi> <mml:mrow><mml:mi>μ</mml:mi> <mml:mo>·</mml:mo> <mml:mi>c</mml:mi> <mml:msup><mml:mi>v</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:mfrac><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(3)</label></disp-formula></p>
+<p>When <italic>cv</italic> = 1.5, draws from a negative binomial distribution with a mean of 20 yield a value of zero 18% of the time, a value of fifty or greater 12% of the time, and a value of 140 or greater 1% of the time. Because a cluster cannot consist of zero participants, we set the minimum cluster size to 3. Specifically, to obtain a mean cluster size of 20, we drew from a negative binomial distribution with a mean of 17 before adding 3 to all cluster sizes. The probability mass functions that these distributions are drawn from are shown in <xref ref-type="fig" rid="pone.0119074.g002">Fig. 2</xref>.</p>
+<fig id="pone.0119074.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119074.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>The negative binomial distributions used to draw the cluster sizes sets for each mean cluster size (<italic>μ</italic>) and coefficient of variance (<italic>cv</italic>).</title>
+<p>Each set had between 5 and 120 clusters, which made up the sample size of a CRT.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119074.g002"/>
+</fig>
+<p>The number of participants in the variable cluster size sets fluctuated immensely. Since this has an effect on the estimated power of a CRT, many variable cluster size sets (<italic>S</italic> = 2000) were created for each (<bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub>, <italic>C</italic><sup><italic>A</italic></sup>) pair, so that the mean cluster size of all sets would converge to <italic>μ</italic>. We ran one clusterPower hypothesis test simulation for every variable cluster size set. This generated a collection of binary outcomes (1 if the null hypothesis was correctly rejected, 0 if not), <inline-formula id="pone.0119074.e016"><mml:math id="M16" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mi>P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:mrow><mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:mi>s</mml:mi></mml:mrow> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mi>A</mml:mi></mml:msup> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula> for <italic>s</italic> = 1, ⋯, <italic>S</italic>. These outcomes were averaged to create one point:
+<disp-formula id="pone.0119074.e017"><alternatives><graphic id="pone.0119074.e017g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119074.e017"/><mml:math id="M17" mode="display" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msubsup><mml:mover accent="true"><mml:mi>P</mml:mi> <mml:mo>^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msubsup> <mml:mrow><mml:mo>(</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mi>A</mml:mi></mml:msup> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mfrac><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>s</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>S</mml:mi></mml:msubsup> <mml:msubsup><mml:mover accent="true"><mml:mi>P</mml:mi> <mml:mo>^</mml:mo></mml:mover> <mml:mrow><mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mo>,</mml:mo><mml:mi>s</mml:mi></mml:mrow> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msubsup> <mml:mrow><mml:mo>(</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mi>A</mml:mi></mml:msup> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mi>S</mml:mi></mml:mfrac> <mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(4)</label></disp-formula></p>
+</sec>
+<sec id="sec008">
+<title>Step 4: Estimate number of clusters needed with and without variability</title>
+<p>Let <inline-formula id="pone.0119074.e018"><mml:math id="M18" display="inline" overflow="scroll"><mml:mrow><mml:mover><mml:mi mathvariant="bold-italic">P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover></mml:mrow></mml:math></inline-formula> denote any <inline-formula id="pone.0119074.e019"><mml:math id="M19" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mtext mathvariant="bold">P</mml:mtext> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mtext mathvariant="bold">F</mml:mtext></mml:msubsup></mml:mrow></mml:math></inline-formula> or <inline-formula id="pone.0119074.e020"><mml:math id="M20" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mtext mathvariant="bold">P</mml:mtext> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mtext mathvariant="bold">cv</mml:mtext></mml:msubsup></mml:mrow></mml:math></inline-formula>, a vector of power values for each of the <bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub> across <italic>C</italic><sup><italic>A</italic></sup>, with or without variance. This vector creates a power curve that allows us to estimate the number of clusters required for that parameter set at a certain level of variability.</p>
+<p>For each <inline-formula id="pone.0119074.e021"><mml:math id="M21" display="inline" overflow="scroll"><mml:mrow><mml:mover><mml:mi mathvariant="bold-italic">P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover></mml:mrow></mml:math></inline-formula>, we found the <inline-formula id="pone.0119074.e034"><mml:math id="M34" display="inline" overflow="scroll"><mml:mrow><mml:mover accent="true"><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mo>(</mml:mo><mml:msup><mml:mi>C</mml:mi><mml:mi>A</mml:mi></mml:msup><mml:mo>)</mml:mo></mml:mrow></mml:math></inline-formula> and <italic>C</italic><sup><italic>A</italic></sup> at the points just below and above <italic>P</italic> = 0.8. <inline-formula id="pone.0119074.e035"><mml:math id="M35" display="inline" overflow="scroll"> <mml:mrow><mml:msub><mml:mrow><mml:mover><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:mn>0.8</mml:mn></mml:mrow><mml:mo>−</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> and <italic>C</italic><sub>0.8<sup>−</sup></sub> are the power and number of clusters below our point of interest. <inline-formula id="pone.0119074.e036"><mml:math id="M36" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mrow><mml:mover><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:mn>0.8</mml:mn></mml:mrow><mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> and <italic>C</italic><sub>0.8<sup>+</sup></sub> are the power and number of clusters above our point of interest. <inline-formula id="pone.0119074.e037"><mml:math id="M37" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mrow><mml:mover><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:mn>0.8</mml:mn></mml:mrow><mml:mo>−</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> and <inline-formula id="pone.0119074.e038"><mml:math id="M38" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mrow><mml:mover><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:mn>0.8</mml:mn></mml:mrow><mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula> were placed in a vector and <italic>C</italic><sub>0.8<sup>−</sup></sub> and <italic>C</italic><sub>0.8<sup>+</sup></sub> into a matrix as follows:
+<disp-formula id="pone.0119074.e022"><alternatives><graphic id="pone.0119074.e022g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119074.e022"/><mml:math id="M22" mode="display" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mfenced separators="" open="[" close="]"><mml:mtable><mml:mtr><mml:mtd><mml:msub><mml:mover accent="true"><mml:mi>P</mml:mi> <mml:mo>^</mml:mo></mml:mover> <mml:mrow><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:msup><mml:mn>8</mml:mn> <mml:mo>-</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mtd></mml:mtr> <mml:mtr><mml:mtd><mml:msub><mml:mover accent="true"><mml:mi>P</mml:mi> <mml:mo>^</mml:mo></mml:mover> <mml:mrow><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:msup><mml:mn>8</mml:mn> <mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mtd></mml:mtr></mml:mtable></mml:mfenced></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mfenced open="[" close="]"><mml:mtable><mml:mtr><mml:mtd><mml:msub><mml:mi>C</mml:mi> <mml:mrow><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:msup><mml:mn>8</mml:mn> <mml:mo>-</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mtd> <mml:mtd><mml:mn>1</mml:mn></mml:mtd></mml:mtr> <mml:mtr><mml:mtd><mml:msub><mml:mi>C</mml:mi> <mml:mrow><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:msup><mml:mn>8</mml:mn> <mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mtd> <mml:mtd><mml:mn>1</mml:mn></mml:mtd></mml:mtr></mml:mtable></mml:mfenced> <mml:mo>·</mml:mo> <mml:mfenced separators="" open="[" close="]"><mml:mtable><mml:mtr><mml:mtd><mml:mover accent="true"><mml:mi>a</mml:mi> <mml:mo>^</mml:mo></mml:mover></mml:mtd></mml:mtr> <mml:mtr><mml:mtd><mml:mover accent="true"><mml:mi>b</mml:mi> <mml:mo>^</mml:mo></mml:mover></mml:mtd></mml:mtr></mml:mtable></mml:mfenced><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(5)</label></disp-formula></p>
+<p>In solving this equation, we find the slope (<inline-formula id="pone.0119074.e039"><mml:math id="M39" display="inline" overflow="scroll"><mml:mover accent="true"><mml:mi>a</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:math></inline-formula>) and intercept (<inline-formula id="pone.0119074.e040"><mml:math id="M40" display="inline" overflow="scroll"><mml:mover accent="true"><mml:mi>b</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:math></inline-formula>) of a line that passed between the points (<italic>C</italic><sub>0.8<sup>−</sup></sub>, <inline-formula id="pone.0119074.e041"><mml:math id="M41" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mrow><mml:mover><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:mn>0.8</mml:mn></mml:mrow><mml:mo>−</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula>) and (<italic>C</italic><sub>0.8<sup>+</sup></sub>, <inline-formula id="pone.0119074.e042"><mml:math id="M42" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mrow><mml:mover><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:mn>0.8</mml:mn></mml:mrow><mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula>). From there, we set <italic>P</italic> = 0.8 to find the number of clusters required to achieve sufficient power, <inline-formula id="pone.0119074.e043"><mml:math id="M43" display="inline" overflow="scroll"><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:math></inline-formula>:
+<disp-formula id="pone.0119074.e023"><alternatives><graphic id="pone.0119074.e023g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119074.e023"/><mml:math id="M23" mode="display" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mn>0</mml:mn><mml:mo>.</mml:mo><mml:mn>8</mml:mn></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mover accent="true"><mml:mi>a</mml:mi> <mml:mo>^</mml:mo></mml:mover> <mml:mo>·</mml:mo> <mml:mover accent="true"><mml:mi>C</mml:mi> <mml:mo>^</mml:mo></mml:mover> <mml:mo>+</mml:mo> <mml:mover accent="true"><mml:mi>b</mml:mi> <mml:mo>^</mml:mo></mml:mover><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(6)</label></disp-formula></p>
+<p>Where <italic>Ĉ</italic> is the estimated number of required clusters to achieve a statistical power of 0.8. When using <inline-formula id="pone.0119074.e024"><mml:math id="M24" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mtext mathvariant="bold">P</mml:mtext> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mtext mathvariant="bold">F</mml:mtext></mml:msubsup></mml:mrow></mml:math></inline-formula>, <inline-formula id="pone.0119074.e025"><mml:math id="M25" display="inline" overflow="scroll"><mml:mrow><mml:mover><mml:mi>C</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:mo>=</mml:mo> <mml:msubsup><mml:mover><mml:mi>C</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mi>F</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula>, which is a simulated estimate of <italic>C</italic><sup>80</sup>. For <inline-formula id="pone.0119074.e026"><mml:math id="M26" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mtext mathvariant="bold">P</mml:mtext> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mtext mathvariant="bold">cv</mml:mtext></mml:msubsup></mml:mrow></mml:math></inline-formula>, <inline-formula id="pone.0119074.e027"><mml:math id="M27" display="inline" overflow="scroll"><mml:mrow><mml:mover><mml:mi>C</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:mo>=</mml:mo> <mml:msubsup><mml:mover><mml:mi>C</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula>, which is a value for which Murray’s formulas (<xref ref-type="disp-formula" rid="pone.0119074.e013">2</xref>) cannot be used. For the sake of simpler notation, we will refer to these as <inline-formula id="pone.0119074.e044"><mml:math id="M44" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> and <inline-formula id="pone.0119074.e045"><mml:math id="M45" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi mathvariant="italic">cv</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>.</p>
+<p>A graphical representation of this process is shown in <xref ref-type="fig" rid="pone.0119074.g003">Fig. 3</xref>.</p>
+<fig id="pone.0119074.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119074.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>How to find the required number of clusters (<italic>Ĉ</italic>).</title>
+<p>First, for a given set of parameters, <bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub>, hypothesis test simulations are run for each level of <italic>C</italic><sup><italic>A</italic></sup>. Second, the results of the simulations are averaged into one point per level. Third, <inline-formula id="pone.0119074.e046"><mml:math id="M46" display="inline" overflow="scroll"><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:math></inline-formula> is calculated by interpolating a point at <inline-formula id="pone.0119074.e047"><mml:math id="M47" display="inline" overflow="scroll"><mml:mrow><mml:mover accent="true"><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mo>=</mml:mo><mml:mn>0.8</mml:mn></mml:mrow></mml:math></inline-formula> between (<italic>C</italic><sub>0.8<sup>−</sup></sub>, <inline-formula id="pone.0119074.e048"><mml:math id="M48" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mrow><mml:mover><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:mn>0.8</mml:mn></mml:mrow><mml:mo>−</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula>) and (<italic>C</italic><sub>0.8<sup>+</sup></sub>, <inline-formula id="pone.0119074.e049"><mml:math id="M49" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mrow><mml:mover><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover></mml:mrow><mml:mrow><mml:msup><mml:mrow><mml:mn>0.8</mml:mn></mml:mrow><mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:msub></mml:mrow></mml:math></inline-formula>.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119074.g003"/>
+</fig>
+<p>Additionally, we defined and compared the percentage change in the number of clusters needed to achieve 80% power between those required by the Murray equation and the variable cluster size sets as:
+<disp-formula id="pone.0119074.e028"><alternatives><graphic id="pone.0119074.e028g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119074.e028"/><mml:math id="M28" mode="display" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi> <mml:mo>^</mml:mo></mml:mover> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msup> <mml:mo>%</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mfrac><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi> <mml:mo>^</mml:mo></mml:mover> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msup> <mml:mo>-</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mn>80</mml:mn></mml:msup></mml:mrow> <mml:msup><mml:mi>C</mml:mi> <mml:mn>80</mml:mn></mml:msup></mml:mfrac><mml:mo/><mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(7)</label></disp-formula></p>
+</sec>
+<sec id="sec009">
+<title>Step 5: Analyze effects of cluster size variance</title>
+<p>With <inline-formula id="pone.0119074.e050"><mml:math id="M50" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi mathvariant="italic">cv</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>, <inline-formula id="pone.0119074.e051"><mml:math id="M51" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>, and <italic>C</italic><sup>80</sup>, we observed the effect of cluster size variance on the required number of clusters.</p>
+<p>We compared and contrasted <inline-formula id="pone.0119074.e052"><mml:math id="M52" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> and <italic>C</italic><sup>80</sup>. If the numbers were similar, then the clusterPower simulations approximate the Murray equations and <inline-formula id="pone.0119074.e053"><mml:math id="M53" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi mathvariant="italic">cv</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> could be used with confidence. If they were substantially different, further analysis would be required before evaluating <inline-formula id="pone.0119074.e054"><mml:math id="M54" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi mathvariant="italic">cv</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>.</p>
+<p><inline-formula id="pone.0119074.e055"><mml:math id="M55" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi mathvariant="italic">cv</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> was analyzed with respect to <italic>C</italic><sup>80</sup>. From this analysis, we observed the effects of cluster size variation on the required number of clusters.</p>
+</sec>
+</sec>
+<sec id="sec010" sec-type="results">
+<title>Results</title>
+<sec id="sec011">
+<title>Without cluster size variability, simulations approximate formula</title>
+<p>The first clusterPower simulation used each unique parameter set (<bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub>) across a range of sample sizes (actual number of clusters, <italic>C</italic><sup><italic>A</italic></sup>) to generate fixed cluster size power estimates (<inline-formula id="pone.0119074.e029"><mml:math id="M29" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover><mml:mi>P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:mi>F</mml:mi></mml:msup> <mml:mo>=</mml:mo> <mml:msubsup><mml:mover><mml:mi>P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mi>F</mml:mi></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mi>A</mml:mi></mml:msup> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>). These estimates were plotted to form the power curves represented by the black lines in <xref ref-type="fig" rid="pone.0119074.g004">Fig. 4</xref>. Using these results and the technique described in Methods Step 4, we calculated the number of clusters required to achieve a statistical power of 80% for fixed-size cluster sets (<inline-formula id="pone.0119074.e056"><mml:math id="M56" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi mathvariant="italic">F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>). To validate clusterPower, <inline-formula id="pone.0119074.e057"><mml:math id="M57" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> was compared to Murray’s formula-based estimate of clusters required to reach 80% power (<italic>C</italic><sup>80</sup>, from <xref ref-type="disp-formula" rid="pone.0119074.e013">Equation 2</xref>).</p>
+<fig id="pone.0119074.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119074.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>The CRT power curves for two different parameter sets over four levels of cluster size variance.</title>
+<p>When <italic>C</italic><sup><italic>A</italic></sup> = 60, both fixed cluster size power estimates (<inline-formula id="pone.0119074.e030"><mml:math id="M30" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover><mml:mi>P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mi>F</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula>), the solid, black lines) should equal 0.8. By looking below the point (60, 0.8), one observes that power is lost as the cluster size variance increases in both scenarios. By looking to the right of the point, the observer notices that more clusters are required to attain a statistical power of 0.8 with increased variability.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119074.g004"/>
+</fig>
+<p>The clusterPower simulations produced accurate, though conservative estimates. One example of this is the result from the lower left corner of <xref ref-type="fig" rid="pone.0119074.g004">Fig. 4</xref>. In this scenario, the first five <bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub> parameters (type I error(<italic>α</italic>) = 0.05, mean cluster size (<italic>μ</italic>) = 75, ICC = 0.006, BCV = 0.1, <italic>C</italic><sup>80</sup> = 60) require an effect size (<italic>Δ</italic>) of 0.417 when the cluster sizes are fixed. Using these parameters and a <italic>C</italic><sup><italic>A</italic></sup> = 60, we should find that the statistical power is near 80%. The average statistical power across 5,000 simulations, <inline-formula id="pone.0119074.e058"><mml:math id="M58" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>, was 79.04%. Since this is smaller than 80%, from this point and the one at <italic>C</italic><sup><italic>A</italic></sup> = 80 we can interpolate to find that <inline-formula id="pone.0119074.e059"><mml:math id="M59" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup><mml:mo>=</mml:mo><mml:mn>61.74</mml:mn></mml:mrow></mml:math></inline-formula>. This is a slightly conservative result, in that the statistical power was less than one percent lower than expected and the required number of clusters were two greater than expected.</p>
+<p>More than half of our simulated <inline-formula id="pone.0119074.e060"><mml:math id="M60" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> values were closer to Murray’s <italic>C</italic><sup>80</sup> than in this example. In situations where <italic>C</italic><sup><italic>A</italic></sup> = <italic>C</italic><sup>80</sup>, the <inline-formula id="pone.0119074.e061"><mml:math id="M61" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> ranged from 75.04% to 81.44% with a median of 79.52%. The difference between <inline-formula id="pone.0119074.e062"><mml:math id="M62" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> and <italic>C</italic><sup>80</sup> ranged from -1.55 to 8.28 with a median difference of 0.51 (with negative values indicating <inline-formula id="pone.0119074.e063"><mml:math id="M63" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup><mml:mo>&lt;</mml:mo><mml:msup><mml:mi>C</mml:mi><mml:mn>80</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula>). The <inline-formula id="pone.0119074.e064"><mml:math id="M64" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> and <italic>C</italic><sup>80</sup> were highly correlated (<italic>R</italic> = 0.9982). A paired two-sample t-test showed that <inline-formula id="pone.0119074.e065"><mml:math id="M65" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> was significantly larger than <italic>C</italic><sup>80</sup> and that the average difference is within one cluster (Estimate: 0.81, CI: (0.69, 0.92)).</p>
+<p>While <inline-formula id="pone.0119074.e066"><mml:math id="M66" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> did not perfectly reflect <italic>C</italic><sup>80</sup>, the high correlation and generally conservative estimates suggest that clusterPower can be used to simulate variable cluster size CRTs.</p>
+</sec>
+<sec id="sec012">
+<title>With cluster size variability, power decreases</title>
+<p>The subsequent clusterPower simulations used <bold><italic>θ</italic></bold><sub><bold><italic>i</italic></bold></sub> with variable cluster size sets of <italic>C</italic><sup><italic>A</italic></sup> clusters and three levels of coefficient of variance (<italic>cv</italic> = 0.5, 1.0, 1.5) to generate variable cluster size power estimates (<inline-formula id="pone.0119074.e031"><mml:math id="M31" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover><mml:mi>P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msup> <mml:mo>=</mml:mo> <mml:msubsup><mml:mover><mml:mi>P</mml:mi> <mml:mo accent="true">^</mml:mo></mml:mover> <mml:msub><mml:mstyle mathvariant="bold-italic"><mml:mi>θ</mml:mi></mml:mstyle> <mml:mi mathvariant="bold-italic">i</mml:mi></mml:msub> <mml:mrow><mml:mi>c</mml:mi> <mml:mi>v</mml:mi></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>C</mml:mi> <mml:mi>A</mml:mi></mml:msup> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>). These estimates were plotted to form the power curves that form the blue, green, and orange lines in <xref ref-type="fig" rid="pone.0119074.g004">Fig. 4</xref> (which represent <italic>cv</italic> = 0.5, 1.0, 1.5, respectively). By performing the same process for calculating <inline-formula id="pone.0119074.e067"><mml:math id="M67" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>, we derived the number of clusters required to achieve a statistical power of 80% for variable cluster size sets, <inline-formula id="pone.0119074.e068"><mml:math id="M68" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi mathvariant="italic">cv</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>.</p>
+<p>Using the lower left plot again as an example, one can see how power decreases and required number of clusters increases with greater cluster size variation. Looking below the <inline-formula id="pone.0119074.e069"><mml:math id="M69" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> point at (60, 0.79), we see that the power decreases as variance increases: <inline-formula id="pone.0119074.e070"><mml:math id="M70" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>0.5</mml:mn></mml:msup><mml:mo>=</mml:mo><mml:mn>0.77</mml:mn></mml:mrow></mml:math></inline-formula>; <inline-formula id="pone.0119074.e071"><mml:math id="M71" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>1.0</mml:mn></mml:msup><mml:mo>=</mml:mo><mml:mn>0.73</mml:mn></mml:mrow></mml:math></inline-formula>; and <inline-formula id="pone.0119074.e072"><mml:math id="M72" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>P</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>1.5</mml:mn></mml:msup><mml:mo>=</mml:mo><mml:mn>0.69</mml:mn></mml:mrow></mml:math></inline-formula>. Looking to the right of the <inline-formula id="pone.0119074.e073"><mml:math id="M73" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi>F</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> point at (61.74, 0.8), we see that more clusters are required in the presence of variation: <inline-formula id="pone.0119074.e074"><mml:math id="M74" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>0.5</mml:mn></mml:msup><mml:mo>=</mml:mo><mml:mn>64.55</mml:mn></mml:mrow></mml:math></inline-formula>; <inline-formula id="pone.0119074.e075"><mml:math id="M75" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>1.0</mml:mn></mml:msup><mml:mo>=</mml:mo><mml:mn>72.6</mml:mn></mml:mrow></mml:math></inline-formula>; and <inline-formula id="pone.0119074.e076"><mml:math id="M76" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>1.5</mml:mn></mml:msup><mml:mo>=</mml:mo><mml:mn>79.82</mml:mn></mml:mrow></mml:math></inline-formula>.</p>
+<p>This is merely one example of a consistent pattern of decreasing power as cluster size variability increased. Using paired t-tests, we observed that the difference between <inline-formula id="pone.0119074.e077"><mml:math id="M77" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>0.5</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> and <italic>C</italic><sup>80</sup> was significantly greater than zero (Estimate: 2.19, CI:(2.05, 2.34)); that <inline-formula id="pone.0119074.e078"><mml:math id="M78" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>1.0</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> was significantly greater than <inline-formula id="pone.0119074.e079"><mml:math id="M79" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>0.5</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> (Estimate: 4.09, CI:(3.82, 4.36)); and <inline-formula id="pone.0119074.e080"><mml:math id="M80" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>1.5</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> was significantly greater than <inline-formula id="pone.0119074.e081"><mml:math id="M81" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>1.0</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> (Estimate: 4.91, CI:(4.59, 5.23)).</p>
+<p>Within each <italic>cv</italic> level, there is substantial variability in statistical power and required number of clusters due to the large diversity of parameter sets. We can observe this by looking at the percent increase in number of clusters required by variable cluster size sets over those from the Murray equation (<inline-formula id="pone.0119074.e082"><mml:math id="M82" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mi mathvariant="italic">cv</mml:mi></mml:msup><mml:mo>%</mml:mo></mml:mrow></mml:math></inline-formula>, from <xref ref-type="disp-formula" rid="pone.0119074.e028">Equation 7</xref>). The range for <inline-formula id="pone.0119074.e083"><mml:math id="M83" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>0.5</mml:mn></mml:msup><mml:mo>%</mml:mo></mml:mrow></mml:math></inline-formula> spans −2.03% to 30.83%, with a median of 7.47%; <inline-formula id="pone.0119074.e084"><mml:math id="M84" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>1.0</mml:mn></mml:msup><mml:mo>%</mml:mo></mml:mrow></mml:math></inline-formula> covers 2.8% to 43.27%, with a median of 21.49%; and <inline-formula id="pone.0119074.e085"><mml:math id="M85" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>1.5</mml:mn></mml:msup><mml:mo>%</mml:mo></mml:mrow></mml:math></inline-formula> ranges from 13.04% to 63.72%, with a median of 38.38%.</p>
+<p>In 21 cases (5%), <inline-formula id="pone.0119074.e086"><mml:math id="M86" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mover accent="true"><mml:mi>C</mml:mi><mml:mo>̂</mml:mo></mml:mover><mml:mn>0.5</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> was less than both the equivalent <italic>C</italic><sup>80</sup> and <italic>C</italic><sup><italic>F</italic></sup> values. However, there does not seem to be a common link between these scenarios, and thus their occurrence may be due to sampling variation from the stochastic simulations.</p>
+</sec>
+</sec>
+<sec id="sec013" sec-type="conclusions">
+<title>Discussion</title>
+<p>This study demonstrates that variability in cluster sizes reduces the power of a cluster-randomized trial when compared to a trial with no variation in cluster sizes. We observed between a 2% decrease and a 64% increase in the number of clusters needed across all scenarios studied. As the variability in cluster sizes increases, additional clusters are needed to maintain 80% power. This phenomenon has been described before [<xref ref-type="bibr" rid="pone.0119074.ref004">4</xref>, <xref ref-type="bibr" rid="pone.0119074.ref006">6</xref>, <xref ref-type="bibr" rid="pone.0119074.ref008">8</xref>, <xref ref-type="bibr" rid="pone.0119074.ref010">10</xref>]. Our simulation study has confirmed these results, and allowed us to quantify the expected loss of efficiency across many different possible study design scenarios. These results may only hold for equal-armed cluster-randomized trials that have a continuous outcome measure and no controlled comparison.</p>
+<p>A key feature of this paper is demonstrating the utility of the clusterPower package for R as a tool for conducting controlled simulation experiments to answer questions about CRT design. In this paper, we focused on estimating power in CRT designs with varying cluster sizes, but we have provided a template of a simulation study that could be used to answer many other types of questions. For example, different designs or analysis methods could be compared to determine the most efficient strategies for implementing CRTs.</p>
+<p>Our simulations do not fix the overall sample size of a given study with variable cluster sizes. So the estimated powers within a given parameter set reflect, to some extent, different total sample sizes of the studies. However, these differences are averaged out across the many simulations. In general, this setting mimics situations where the cluster sizes cannot be controlled by investigators. This might be the case when, for example, health care workers at different-sized clinics will be enrolled in a study; or, students in different-sized classes will be enrolled in a study. In these situations, the investigator will not know the exact number of participants who will be enrolled in the study, just how many clinics and the average number per clinic.</p>
+<p>Another difficulty that we did not confront in this paper is the effect of purposefully distributing different clusters into the treatment and control group. All group assignment was done in a random fashion. The impact of putting large clusters into one group and small clusters into the other is still unknown. Using some controlled comparison technique (such as matching on cluster size) may increase the efficiency of studies, but these methods were not examined in the present study.</p>
+<p>Due to the experimental design, we cannot observe the impact that changing any of the CRT parameters may have upon the required number of clusters because all of them are used to calibrate the effect size.</p>
+<p>As the use of cluster-randomized trials continue to expand in many scientific disciplines, it is vital that we continue to build our knowledge about how to design these trials efficiently. The results presented in this paper demonstrate the value of a new method for the efficient design of cluster-randomized trials in the presence of cluster size variability.</p>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>References</title>
+<ref id="pone.0119074.ref001">
+<label>1</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Platt</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Takvorian</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Septimus</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Hickok</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Moody</surname> <given-names>J</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Cluster randomized trials in comparative effectiveness research: randomizing hospitals to test methods for prevention of healthcare-associated infections</article-title>. <source>Medical Care</source> <volume>48</volume>: <fpage>S52</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/MLR.0b013e3181dbebcf" xlink:type="simple">10.1097/MLR.0b013e3181dbebcf</ext-link></comment> <object-id pub-id-type="pmid">20473200</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref002">
+<label>2</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Campbell</surname> <given-names>MK</given-names></name>, <name name-style="western"><surname>Elbourne</surname> <given-names>DR</given-names></name>, <name name-style="western"><surname>Altman</surname> <given-names>DG</given-names></name> (<year>2004</year>) <article-title>Consort statement: extension to cluster randomised trials</article-title>. <source>British Medical Journal</source> <volume>328</volume>: <fpage>702</fpage>–<lpage>708</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/bmj.328.7441.702" xlink:type="simple">10.1136/bmj.328.7441.702</ext-link></comment> <object-id pub-id-type="pmid">15031246</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref003">
+<label>3</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Campbell</surname> <given-names>MK</given-names></name>, <name name-style="western"><surname>Piaggio</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Elbourne</surname> <given-names>DR</given-names></name>, <etal>et al</etal> (<year>2012</year>) <article-title>Consort 2010 statement: extension to cluster randomised trials</article-title>. <source>British Medical Journal</source> <volume>345</volume>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/bmj.e5661" xlink:type="simple">10.1136/bmj.e5661</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref004">
+<label>4</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Donner</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Birkett</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Buck</surname> <given-names>C</given-names></name> (<year>1981</year>) <article-title>Randomization by cluster: sample size requirements and analysis</article-title>. <source>American Journal of Epidemiology</source> <volume>114</volume>: <fpage>906</fpage>–<lpage>914</lpage>. <object-id pub-id-type="pmid">7315838</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref005">
+<label>5</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Kerry</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Martin Bland</surname> <given-names>J</given-names></name> (<year>2001</year>) <article-title>Unequal cluster sizes for trials in english and welsh general practice: implications for sample size calculations</article-title>. <source>Statistics in Medicine</source> <volume>20</volume>: <fpage>377</fpage>–<lpage>390</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/1097-0258(20010215)20:3%3C377::AID-SIM799%3E3.0.CO;2-N" xlink:type="simple">10.1002/1097-0258(20010215)20:3%3C377::AID-SIM799%3E3.0.CO;2-N</ext-link></comment> <object-id pub-id-type="pmid">11180308</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref006">
+<label>6</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Eldridge</surname> <given-names>SM</given-names></name>, <name name-style="western"><surname>Ashby</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Kerry</surname> <given-names>S</given-names></name> (<year>2006</year>) <article-title>Sample size for cluster randomized trials: effect of coefficient of variation of cluster size and analysis method</article-title>. <source>International Journal of Epidemiology</source> <volume>35</volume>: <fpage>1292</fpage>–<lpage>1300</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/ije/dyl129" xlink:type="simple">10.1093/ije/dyl129</ext-link></comment> <object-id pub-id-type="pmid">16943232</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref007">
+<label>7</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Campbell</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Donner</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Klar</surname> <given-names>N</given-names></name> (<year>2007</year>) <article-title>Developments in cluster randomized trials and statistics in medicine</article-title>. <source>Statistics in Medicine</source> <volume>26</volume>: <fpage>2</fpage>–<lpage>19</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/sim.2731" xlink:type="simple">10.1002/sim.2731</ext-link></comment> <object-id pub-id-type="pmid">17136746</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref008">
+<label>8</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>van Breukelen</surname> <given-names>GJP</given-names></name>, <name name-style="western"><surname>Candel</surname> <given-names>MJJM</given-names></name>, <name name-style="western"><surname>Berger</surname> <given-names>MPF</given-names></name> (<year>2007</year>) <article-title>Relative efficiency of unequal versus equal cluster sizes in cluster randomized and multicentre trials</article-title>. <source>Statistics in Medicine</source> <volume>26</volume>: <fpage>2589</fpage>–<lpage>2603</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/sim.2740" xlink:type="simple">10.1002/sim.2740</ext-link></comment> <object-id pub-id-type="pmid">17094074</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref009">
+<label>9</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Candel</surname> <given-names>MJJM</given-names></name>, <name name-style="western"><surname>Van Breukelen</surname> <given-names>GJP</given-names></name> (<year>2010</year>) <article-title>Sample size adjustments for varying cluster sizes in cluster randomized trials with binary outcomes analyzed with second-order pql mixed logistic regression</article-title>. <source>Statistics in Medicine</source> <volume>29</volume>: <fpage>1488</fpage>–<lpage>1501</lpage>. <object-id pub-id-type="pmid">20101669</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref010">
+<label>10</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>You</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Williams</surname> <given-names>OD</given-names></name>, <name name-style="western"><surname>Aban</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Kabagambe</surname> <given-names>EK</given-names></name>, <name name-style="western"><surname>Tiwari</surname> <given-names>HK</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Relative efficiency and sample size for cluster randomized trials with variable cluster sizes</article-title>. <source>Clinical Trials</source> <volume>8</volume>: <fpage>27</fpage>–<lpage>36</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1177/1740774510391492" xlink:type="simple">10.1177/1740774510391492</ext-link></comment> <object-id pub-id-type="pmid">21163852</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref011">
+<label>11</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Hemming</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Girling</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Sitch</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Marsh</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Lilford</surname> <given-names>R</given-names></name> (<year>2011</year>) <article-title>Sample size calculations for cluster randomised controlled trials with a fixed number of clusters</article-title>. <source>BMC Medical Research Methodology</source> <volume>11</volume>: <fpage>102</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/1471-2288-11-102" xlink:type="simple">10.1186/1471-2288-11-102</ext-link></comment> <object-id pub-id-type="pmid">21718530</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref012">
+<label>12</label>
+<mixed-citation xlink:type="simple" publication-type="other">R Core Team (2013) R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing, Vienna, Austria. URL <ext-link ext-link-type="uri" xlink:href="http://www.R-project.org/" xlink:type="simple">http://www.R-project.org/</ext-link>. ISBN 3-900051-07-0.</mixed-citation>
+</ref>
+<ref id="pone.0119074.ref013">
+<label>13</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Reich</surname> <given-names>NG</given-names></name>, <name name-style="western"><surname>Myers</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Obeng</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Milstone</surname> <given-names>AM</given-names></name>, <name name-style="western"><surname>Perl</surname> <given-names>TM</given-names></name> (<year>2012</year>) <article-title>Empirical power and sample size calculations for cluster-randomized and cluster randomized crossover studies</article-title>. <source>PLoS ONE</source> <volume>7</volume>: <fpage>e35564</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0035564" xlink:type="simple">10.1371/journal.pone.0035564</ext-link></comment> <object-id pub-id-type="pmid">22558168</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119074.ref014">
+<label>14</label>
+<mixed-citation xlink:type="simple" publication-type="other">Reich NG, Obeng D (2012) clusterPower: Power calculations for cluster-randomized and cluster-randomized crossover trials. URL <ext-link ext-link-type="uri" xlink:href="http://CRAN.R-project.org/package=clusterPower" xlink:type="simple">http://CRAN.R-project.org/package=clusterPower</ext-link>. R package version 0.5.</mixed-citation>
+</ref>
+<ref id="pone.0119074.ref015">
+<label>15</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Xie</surname> <given-names>Y</given-names></name> (<year>2013</year>) <source>knitr: A general-purpose package for dynamic report generation in r. R package version</source> <volume>15</volume>.</mixed-citation>
+</ref>
+<ref id="pone.0119074.ref016">
+<label>16</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Xie</surname> <given-names>Y</given-names></name> (<year>2013</year>) <source>Dynamic Documents with R and knitr</source>. <publisher-name>CRC Press</publisher-name>.</mixed-citation>
+</ref>
+<ref id="pone.0119074.ref017">
+<label>17</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Murray</surname> <given-names>DM</given-names></name> (<year>1998</year>) <source>Design and Analysis of Group-Randomized Trials</source>. <publisher-name>Oxford University Press</publisher-name>.</mixed-citation>
+</ref>
+<ref id="pone.0119074.ref018">
+<label>18</label>
+<mixed-citation xlink:type="simple" publication-type="other">Using the form of the negative binomial with parameters <italic>r</italic> and <italic>p</italic>, where <inline-formula id="pone.0119074.e032"><mml:math id="M32" display="inline" overflow="scroll"><mml:mrow><mml:mi>E</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>X</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:mfrac><mml:mrow><mml:mi>r</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>−</mml:mo> <mml:mi>p</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mi>p</mml:mi></mml:mfrac></mml:mrow></mml:math></inline-formula> and <inline-formula id="pone.0119074.e033"><mml:math id="M33" display="inline" overflow="scroll"><mml:mrow><mml:mi>V</mml:mi> <mml:mi>a</mml:mi> <mml:mi>r</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>X</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:mfrac><mml:mrow><mml:mi>r</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>−</mml:mo> <mml:mi>p</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mrow><mml:msup><mml:mi>p</mml:mi> <mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac></mml:mrow></mml:math></inline-formula>.</mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

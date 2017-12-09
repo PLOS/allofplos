@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article article-type="research-article" dtd-version="1.1d3" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0147124</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-15-33930</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Integumentary system</subject><subj-group><subject>Hair</subject><subj-group><subject>Hair follicles</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Integumentary system</subject><subj-group><subject>Hair</subject><subj-group><subject>Hair follicles</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Integumentary system</subject><subj-group><subject>Skin</subject><subj-group><subject>Hair follicles</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Integumentary system</subject><subj-group><subject>Skin</subject><subj-group><subject>Hair follicles</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Organisms</subject><subj-group><subject>Animals</subject><subj-group><subject>Vertebrates</subject><subj-group><subject>Mammals</subject><subj-group><subject>Ruminants</subject><subj-group><subject>Goats</subject></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Genetics</subject><subj-group><subject>Gene expression</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Integumentary system</subject><subj-group><subject>Hair</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Anatomy</subject><subj-group><subject>Integumentary system</subject><subj-group><subject>Hair</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Biochemistry</subject><subj-group><subject>Proteins</subject><subj-group><subject>Cytoskeletal proteins</subject><subj-group><subject>Keratins</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Physiological processes</subject><subj-group><subject>Hair growth</subject><subj-group><subject>Anagen phase</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Medicine and health sciences</subject><subj-group><subject>Physiology</subject><subj-group><subject>Physiological processes</subject><subj-group><subject>Hair growth</subject><subj-group><subject>Anagen phase</subject></subj-group></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Bioassays and physiological analysis</subject><subj-group><subject>Microarrays</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Agriculture</subject><subj-group><subject>Animal products</subject><subj-group><subject>Wool</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>A Microarray-Based Analysis Reveals that a Short Photoperiod Promotes Hair Growth in the Arbas Cashmere Goat</article-title>
+<alt-title alt-title-type="running-head">A Short Photoperiod Promotes the Growth of Hair Follicles</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0001-9384-5421</contrib-id>
+<name name-style="western">
+<surname>Liu</surname>
+<given-names>Bin</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Gao</surname>
+<given-names>Fengqin</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Guo</surname>
+<given-names>Jun</given-names>
+</name>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Wu</surname>
+<given-names>Dubala</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Hao</surname>
+<given-names>Bayasihuliang</given-names>
+</name>
+<xref ref-type="aff" rid="aff005"><sup>5</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Li</surname>
+<given-names>Yurong</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Zhao</surname>
+<given-names>Cunfa</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Institute of Animal Husbandry, Academy of Agriculture and Stockbreeding Sciences, Hohhot, Inner Mongolia, China</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Kunming Institute of Animal Science, Chinese Academy of Sciences, Kunming, Yunna, Inner Mongolia, China</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Grassland Research Institute, Chinese Academy of Agricultural Sciences, Hohhot, China</addr-line></aff>
+<aff id="aff004"><label>4</label> <addr-line>College of Life Science, Inner Mongolia Agricultural University, Hohhot, Inner Mongolia, China</addr-line></aff>
+<aff id="aff005"><label>5</label> <addr-line>Etuokeqianqi Arctic God Research Institute of Cashmere and Livestock, Erdos, China</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Slominski</surname>
+<given-names>Andrzej T</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>University of Alabama at Birmingham, UNITED STATES</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: YL CZ BL. Performed the experiments: BL FG JG DW. Analyzed the data: BL FG JG DW. Contributed reagents/materials/analysis tools: DW BH. Wrote the paper: YL CZ BL JG.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">zhaocunfa@163.com</email> (CZ); <email xlink:type="simple">yurong622003@126.com</email> (YL)</corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>27</day>
+<month>1</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>1</issue>
+<elocation-id>e0147124</elocation-id>
+<history>
+<date date-type="received">
+<day>3</day>
+<month>9</month>
+<year>2015</year>
+</date>
+<date date-type="accepted">
+<day>29</day>
+<month>12</month>
+<year>2015</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Liu et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0147124"/>
+<abstract>
+<p>Many animals exhibit different behaviors in different seasons. The photoperiod can have effects on migration, breeding, fur growth, and other processes. The cyclic growth of the fur and feathers of some species of mammals and birds, respectively, is stimulated by the photoperiod as a result of hormone-dependent regulation of the nervous system. To further examine this phenomenon, we evaluated the Arbas Cashmere goat (<italic>Capra hircus</italic>), a species that is often used in this type of research. The goats were exposed to an experimentally controlled short photoperiod to study the regulation of cyclic cashmere growth. Exposure to a short photoperiod extended the anagen phase of the Cashmere goat hair follicle to increase cashmere production. Assessments of tissue sections indicated that the short photoperiod significantly induced cashmere growth. This conclusion was supported by a comparison of the differences in gene expression between the short photoperiod and natural conditions using gene chip technology. Using the gene chip data, we identified genes that showed altered expression under the short photoperiod compared to natural conditions, and these genes were found to be involved in the biological processes of hair follicle growth, structural composition of the hair follicle, and the morphogenesis of the surrounding skin appendages. Knowledge about differences in the expression of these genes as well as their functions and periodic regulation patterns increases our understanding of Cashmere goat hair follicle growth. This study also provides preliminary data that may be useful for the development of an artificial method to improve cashmere production by controlling the light cycle, which has practical significance for livestock breeding.</p>
+</abstract>
+<funding-group>
+<award-group id="award001">
+<funding-source>
+<institution-wrap>
+<institution-id institution-id-type="funder-id">http://dx.doi.org/10.13039/501100001809</institution-id>
+<institution>National Natural Science Foundation of China</institution>
+</institution-wrap>
+</funding-source>
+<award-id>31260545</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Li</surname>
+<given-names>Yurong</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award002">
+<funding-source>
+<institution>Special Fund for Agro-scientific Research in the Public Interest</institution>
+</funding-source>
+<award-id>201303059</award-id>
+<principal-award-recipient>
+<name name-style="western">
+<surname>Zhao</surname>
+<given-names>Cunfa</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award003">
+<funding-source>
+<institution>Natural Science Foundation Project of Inner Mongolia Autonomous Region</institution>
+</funding-source>
+<award-id>2014BS0333</award-id>
+<principal-award-recipient>
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0001-9384-5421</contrib-id>
+<name name-style="western">
+<surname>Liu</surname>
+<given-names>Bin</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<award-group id="award004">
+<funding-source>
+<institution>Young Scholars Innovative Foundation for Academy of Agriculture and Stockbreeding Sciences of Inner Mongolia Autonomous Region</institution>
+</funding-source>
+<award-id>2013QNJJM05</award-id>
+<principal-award-recipient>
+<contrib-id authenticated="true" contrib-id-type="orcid">http://orcid.org/0000-0001-9384-5421</contrib-id>
+<name name-style="western">
+<surname>Liu</surname>
+<given-names>Bin</given-names>
+</name>
+</principal-award-recipient>
+</award-group>
+<funding-statement>This work was supported by the National Natural Science Foundation of China (31260545); Special Fund for Agro-scientific Research in the Public Interest (201303059); Natural Science Foundation Project of Inner Mongolia Autonomous Region (2014BS0333); and Young Scholars Innovative Foundation for Academy of Agriculture and Stockbreeding Sciences of Inner Mongolia Autonomous Region (2013QNJJM05).</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="4"/>
+<table-count count="4"/>
+<page-count count="15"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>Data are available from Gene Expression Omnibus: GSE74860; GSM1936732; GSM1936731; GSM1936730.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>In Inner Mongolia, the Cashmere goat (<italic>Capra hircus</italic>) is important for its wool. Cashmere is always used to make luxury knitted fabric; thus, it has great economic value. The hair of the Cashmere goat is mainly divided into two types: guard hair produced by primary hair follicles and under hairs (referred to commercially as cashmere) produced by secondary follicles [<xref ref-type="bibr" rid="pone.0147124.ref001">1</xref>]. The hairs are highly similar in structure and composition but have notable differences in the degree of fineness, which is determined by each follicle's size and shape. Cashmere production depends primarily on the area and length of the cashmere fiber, which are determined by the number of secondary follicles and the hair growth cycle [<xref ref-type="bibr" rid="pone.0147124.ref002">2</xref>]. Moreover, there is a large difference among the different varieties of Cashmere goat. In addition to genetic factors, environmental factors are also important, including photoperiod, nutrition, and livestock management. Nutritional conditions typically affect cashmere production and quality, and the seasonal photoperiod induces a large increase in cashmere production [<xref ref-type="bibr" rid="pone.0147124.ref003">3</xref>]. This seasonal phenomenon depends on the photoperiod-dependent regulation of the endocrine and the nervous systems by illumination, which can release a variety of hormones. Previous studies have shown that melatonin (MEL) [<xref ref-type="bibr" rid="pone.0147124.ref004">4</xref>–<xref ref-type="bibr" rid="pone.0147124.ref006">6</xref>], prolactin (PRL), growth hormone, insulin-like growth factor 1 (IGF-1), and thyroid hormone directly affect cashmere growth in Australian goats [<xref ref-type="bibr" rid="pone.0147124.ref007">7</xref>–<xref ref-type="bibr" rid="pone.0147124.ref012">12</xref>].</p>
+<p>Arbas Cashmere goats (<xref ref-type="fig" rid="pone.0147124.g001">Fig 1A</xref>), a type of Inner Mongolian white Cashmere goat, are distributed in the western areas of Inner Mongolia, China, and their cashmere growth exhibits a strong seasonal variation [<xref ref-type="bibr" rid="pone.0147124.ref013">13</xref>] similar to that of Australian Cashmere goats. The activity of the secondary hair follicles (referred to as vellus hair) is regulated by various molecular signals with strict periodicity, which proceeds through the anagen, catagen, and telogen phases. In contrast, primary hair follicles do not have a clear telogen. Because the secondary hair follicles were activated relatively late in March, the cashmere grows out of the skin until July; thus, this stage should be named pro-anagen. This growth cycle of secondary hair follicles is related to the season; thus, the length of Cashmere goat fiber is strongly influenced by the season, and the inherent biological mechanism underlying this regulation is highly complex [<xref ref-type="bibr" rid="pone.0147124.ref014">14</xref>, <xref ref-type="bibr" rid="pone.0147124.ref015">15</xref>]. The cashmere of Arbas begins to grow out of the skin from July to August, stops in the following January, and begins to molt at the end of April or early May when the new cashmere follicles are activated [<xref ref-type="bibr" rid="pone.0147124.ref013">13</xref>]. Exogen and kenogen have been identified and may be superimposed on telogen. In mice, the process of shedding hair shafts is called exogen. Kenogen means that the exhausted exogen hair actually sheds, and the hair follicle remains empty [<xref ref-type="bibr" rid="pone.0147124.ref016">16</xref>–<xref ref-type="bibr" rid="pone.0147124.ref018">18</xref>]. In the exogen/kenogen in Arbas Cashmere goat, the secondary hair follicles come into telogen in January until late March or early April; thus, their kenogen should occur from January to late March or early April. The secondary hair follicles come into anagen I-III, and exogen should not occur in the secondary hair follicles[<xref ref-type="bibr" rid="pone.0147124.ref019">19</xref>, <xref ref-type="bibr" rid="pone.0147124.ref020">20</xref>].</p>
+<fig id="pone.0147124.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0147124.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Photograph of white Arbas Cashmere goat and paraffin sections of Cashmere goat skin stained with hematoxylin &amp; eosin.</title>
+<p>A. Photograph of a white Arbas Cashmere goat. B. Longitudinal section of goat skin sampled during the short photoperiod (anagen phase). C. Longitudinal section of goat skin sampled during the natural photoperiod (pro-anagen phase). The black arrows indicate the primary hair follicles (PHFs) and secondary hair follicles (SHFs) in the samples. Scale bars: 500 μm.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0147124.g001" xlink:type="simple"/>
+</fig>
+<p>Based on previous reports [<xref ref-type="bibr" rid="pone.0147124.ref021">21</xref>, <xref ref-type="bibr" rid="pone.0147124.ref022">22</xref>], this phenomenon is likely caused by a series of hormones produced by the nervous system in the Cashmere goat following the short-day stimulation; these hormones affect the hair follicle and regulate cashmere growth. Currently, the genes related to the hair follicle growth cycles in humans and mice have been extensively studied, but the molecular mechanisms of the growth cycle of secondary hair follicles in the Cashmere goat remain unclear. In particular, there is no detailed evidence on how the photoperiod activates anagen or the types of genes that regulate this process.</p>
+<p>With the development of next-generation sequencing technologies, digital data analysis provides us with more specific ways to identify differential gene expression. Therefore, changes in gene expression during the different stages of the hair follicle growth cycle can be detected at the transcript level, which provides us with a theoretical basis for further study of the cashmere growth mechanism [<xref ref-type="bibr" rid="pone.0147124.ref023">23</xref>–<xref ref-type="bibr" rid="pone.0147124.ref025">25</xref>].</p>
+<p>Using gene chip technology for expression profiling, we filtered the differentially expressed genes between the artificial short-day photoperiod and natural conditions from the skin tissue of Arbas Cashmere goats. We discuss the differences in gene expression and their possible molecular biological roles in the two types of skin tissue to provide a further theoretical basis for research on the cashmere growth mechanism.</p>
+</sec>
+<sec id="sec002" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="sec003">
+<title>Ethics Statement</title>
+<p>This study was performed in the Cashmere goat technology demonstration zone of Ordos City in Inner Mongolia, China. The goat skin tissue was collected in accordance with the International Guiding Principles for Biomedical Research Involving Animals and was approved by the Animal Ethics Committee of the Inner Mongolia Academy of Agriculture and Animal Husbandry Sciences, which is responsible for Animal Care and Use in the Inner Mongolia Autonomous Region of China. Skin excision was performed under xylazine hydrochloride anesthesia, and all efforts were made to minimize the goats' suffering.</p>
+</sec>
+<sec id="sec004">
+<title>Animals and Tissues</title>
+<p>Based on their similar weights, health conditions and good reproductive performance in a group of the same strain, we chose 6 female adult Arbas Cashmere goats that were 2 years old as our research specimens and randomly divided them into a test group (T1, T2, T3) and a control group (C1, C2, C3). The goats in the test group were grazed, fed, and allowed to drink from 9:30–16:30 daily, and they were housed in a dark shed with good air conditions for the remainder of the time. The temperature in the shed was 1°C colder than the outside temperature, and the opacity was controlled at approximately 0.1 lux. The control group grazed under natural conditions. We used regular management to care for all of the goats. The only factor that differed between the two groups was the photoperiod. Our experimental study was performed from May 2011 to May 2012. We obtained samples from one side of the body. After iodine disinfection and alcohol deiodination, we cut skin samples using sterile blades, quickly placed them into liquid nitrogen and stored them in a freezer (-80°C). A portion of the skin samples was used for gene chip analysis; the residual tissues were used to prepare paraffin sections, which were cut at 7 μm for hematoxylin-eosin staining and morphological observations.</p>
+</sec>
+<sec id="sec005">
+<title>RNA extraction and microarray hybridization</title>
+<p>TRIzol (Invitrogen, Gaithersburg, MD, USA) was used for the total RNA extractions according to the manufacturer's protocol. The quantity and quality of RNA were measured using a NanoDrop ND-1000 spectrophotometer. The mRNAs were purified with a NucleoSpin® RNA Clean-up Kit (MACHEREY-NAGEL, Germany). The concentrations of the RNAs present in the samples and the OD 260/280 ratios of the samples were determined using a NanoDrop ND-2000 spectrophotometer. The quality was assessed by standard denaturing agarose gel electrophoresis. Reverse transcription of first-strand cDNAs was performed using an oligo dT primer with T7 promoter sequences. The control group was labeled with Cy3, and the experimental group was labeled with Cy5. The samples were sent to CapitalBio Corporation (Beijing, China) for hybridization to an Agilent Sheep Gene Expression Microarray (Santa Clara, CA, USA).</p>
+<p>Each RNA sample was hybridized to one microarray slide. The total RNA from each sample was amplified and transcribed into a fluorescent cRNA using the Agilent Quick Amp Labeling protocol (version 5.7, Agilent Technologies). The labeled cRNAs were hybridized onto the Whole Genome Oligo Array (4x44K, Agilent Technologies). This study used the G2519F sheep gene expression profile chip from Agilent, which is 8×15k in size and contains 15,208 sheep genes for expression profiling. The labeled DNA was dissolved in 80 μl of hybridization buffer (3× saline sodium citrate [SSC], 0.2% sodium dodecyl sulfate [SDS], 5× Denhardt's solution, and 25% formamide) overnight at 42°C. After the hybridization, the gene chips were washed for 5 min (0.2% SDS, 2× SSC) at 42°C and then washed for 5 min (0.2× SSC) at room temperature. After drying, an Agilent G2565CA Microarray Scanner was used to obtain the hybridization images of the gene chips.</p>
+</sec>
+<sec id="sec006">
+<title>Microarray data analysis</title>
+<p>Feature Extraction software was used to transform the image signal into a digital signal, and then, the original data were normalized (fold change ≥ 2 or ≤ 0.5) using the Lowess method (locally weighted scatterplot smoothing). If there were more than three biological replicates, the samples were analyzed with SAM (Significance Analysis of Microarrays) software to select the differentially expressed genes (fold change ≥ 2 or ≤ 0.5); chip hybridization was performed with the assistance of the Beijing CapitalBio Company.</p>
+</sec>
+<sec id="sec007">
+<title>Real-time polymerase chain reaction</title>
+<p>We validated the differences in gene expression between Cashmere goats raised in natural and artificial conditions using the real-time quantitative polymerase chain reaction (qPCR) technique. Based on the results of the gene microarray analysis, we selected three representative genes that had significant differences for qPCR (<xref ref-type="table" rid="pone.0147124.t001">Table 1</xref>). Information on the primer design and the amplified genes is provided in <xref ref-type="table" rid="pone.0147124.t001">Table 1</xref>. The RNA extraction was performed according to the method described in the gene microarray analysis. Glyceraldehyde 3-phosphate dehydrogenase (GAPDH) was used as an internal standard in the real-time PCR amplification. We used the SYBR Green I fluorescence method to quantify the relative expression of each gene. Triplicate samples were used, and the cycle threshold (Ct) values were converted into relative amplification levels. The differences in gene expression between the two samples were calculated using the 2<sup>−ΔΔCt</sup> method.</p>
+<table-wrap id="pone.0147124.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0147124.t001</object-id>
+<label>Table 1</label> <caption><title>Primers for real-time polymerase chain reaction analysis of the differentially expressed genes.</title></caption>
+<alternatives>
+<graphic id="pone.0147124.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0147124.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Gene</th>
+<th align="center">GB. Accession</th>
+<th align="center"/>
+<th align="center">Primer Sequence 5'→3'</th>
+<th align="center">Amplicon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><bold>CYP1A1</bold></td>
+<td align="center">NM_001129905.1</td>
+<td align="center">F</td>
+<td align="center">ATGACCACGATGACCAAGAGTT</td>
+<td align="center">271</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="center"/>
+<td align="center">R</td>
+<td align="center">TTCTCGTCCAGCCTCTTATCC</td>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center"><bold>keratin 34</bold></td>
+<td align="center">HQ283081.1</td>
+<td align="center">F</td>
+<td align="center">ATGTGCCACCACCAATGCTA</td>
+<td align="center">125</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="center"/>
+<td align="center">R</td>
+<td align="center">ACCTTTCCTGGGCTTGTTCTA</td>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center"><bold>MLN</bold></td>
+<td align="center">NM_001009439.1</td>
+<td align="center">F</td>
+<td align="center">TTTGTTCCCATCTTCACCTACG</td>
+<td align="center">108</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="center"/>
+<td align="center">R</td>
+<td align="center">GCCCACCTCCTCTGACCTC</td>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center"><bold>GAPDH</bold></td>
+<td align="center">NM_001034034</td>
+<td align="center">F</td>
+<td align="center">AAGTTCAACGGCACAGTCAA</td>
+<td align="center">125</td>
+</tr>
+<tr>
+<td align="center"/>
+<td align="center"/>
+<td align="center">R</td>
+<td align="center">ACCACATACTCAGCACCAGC</td>
+<td align="center"/>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+</sec>
+<sec id="sec008" sec-type="results">
+<title>Results</title>
+<sec id="sec009">
+<title>Histological analysis of goat skin</title>
+<p>To ensure the accuracy of the results, the histology samples were obtained from the same tissue used for the gene chip microarray analysis. Primary hair follicles are long, do not contain kinks, and develop during the first wave of hair follicle morphogenesis [<xref ref-type="bibr" rid="pone.0147124.ref026">26</xref>, <xref ref-type="bibr" rid="pone.0147124.ref027">27</xref>]. The subsequent growth of hair during morphogenesis is the result of secondary hair follicles. Compared with primary hair follicles, dermal papilla of secondary hair follicles produce smaller hair shafts, which are thinner and show curvatures at varying degrees. In Cashmere goats, hard, rough wool is produced from primary hair follicles, and fine and soft cashmere is produced by secondary hair follicles. The tissue sections from the short photoperiod show that the quantities of the primary hair follicles were significantly increased and extended to the subcutaneous tissue, which was clearly in anagen phase (<xref ref-type="fig" rid="pone.0147124.g001">Fig 1B</xref>). Under the short photoperiod conditions, the Cashmere goat histology results showed that hair follicles have remarkable anagen morphological characteristics and are significantly thicker compared with the control group. Primary and secondary follicles grow significantly longer, and the diameter of the dermal papilla is greater, hair follicle density also increases significantly and is about 90% more than the control group (<xref ref-type="table" rid="pone.0147124.t002">Table 2</xref>). Furthermore, the morphological structure of the inner root sheath is clearly visible, the hair follicle passageway extends from the dermal papilla to the skin, and the hair follicle cells are active. In contrast, the control group is still in the pro-anagen phase, with thinner skin, no significant internal root sheath, and smaller and fewer hair follicles. A large amount of the hair shaft was observed to have fallen off, leaving only empty hair follicle passageways (<xref ref-type="fig" rid="pone.0147124.g001">Fig 1C</xref>). Therefore, the histomorphology results clearly show that the short photoperiod can induce the hair follicles to enter the anagen phase.</p>
+<table-wrap id="pone.0147124.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0147124.t002</object-id>
+<label>Table 2</label> <caption><title>Skin thickness, length of the primary and secondary follicles, density of the primary and secondary follicles and diameters of the primary and secondary follicles.</title></caption>
+<alternatives>
+<graphic id="pone.0147124.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0147124.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="center">Group</th>
+<th align="center">Short photoperiod</th>
+<th align="center">Natural photoperiod</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><bold>Skin thickness (μm)</bold></td>
+<td align="center">1826.80±91.44<sup>A</sup></td>
+<td align="center">1651.68±182.23<sup>B</sup></td>
+</tr>
+<tr>
+<td align="center"><bold>Length of the primary follicles (μm)</bold></td>
+<td align="center">1654.15±164.68 <sup>A</sup></td>
+<td align="center">916.23±217.79 <sup>B</sup></td>
+</tr>
+<tr>
+<td align="center"><bold>Length of the secondary follicles (μm)</bold></td>
+<td align="center">1039.54±224.37 <sup>A</sup></td>
+<td align="center">433.62±63.47 <sup>B</sup></td>
+</tr>
+<tr>
+<td align="center"><bold>Diameter of the primary follicle dermal papilla (μm)</bold></td>
+<td align="center">152.79±25.15 <sup>A</sup></td>
+<td align="center">106.18±20.68 <sup>B</sup></td>
+</tr>
+<tr>
+<td align="center"><bold>Diameter of the secondary follicle dermal papilla (μm)</bold></td>
+<td align="center">68.76±21.61 <sup>A</sup></td>
+<td align="center">45.51±10.46 <sup>B</sup></td>
+</tr>
+<tr>
+<td align="center"><bold>Density of the primary follicles (·mm</bold><sup><bold>-2</bold></sup><bold>)</bold></td>
+<td align="center">57.66±7.60 <sup>A</sup></td>
+<td align="center">27.10±1.77 <sup>B</sup></td>
+</tr>
+<tr>
+<td align="center"><bold>Density of the secondary follicles (·mm</bold><sup><bold>-2</bold></sup><bold>)</bold></td>
+<td align="center">6.49±0.10 <sup>A</sup></td>
+<td align="center">3.68±0.63 <sup>B</sup></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t002fn001"><p>A total of 30 H&amp;E sections were examined under short and natural photoperiods. Means with different lowercase letters within the same row indicate significant differences between different columns. Means with different capital superscripts within the same row indicate highly significant differences between different columns.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+</sec>
+<sec id="sec010">
+<title>Hierarchical cluster analysis</title>
+<p>We used the G2519F (Agilent) sheep gene expression profile chip (8 ×15k), which contains 15,208 sheep genes, to analyze differences in the expression patterns of the protein-coding genes in the Cashmere goat hair follicles. We compared the results of the skin samples from the short photoperiod and natural conditions using the hierarchical clustering method in Cluster 3.0 software (<xref ref-type="fig" rid="pone.0147124.g002">Fig 2</xref>). The up-regulated genes were highly expressed in the experimental group (red), and the expression levels of the down-regulated genes were significantly decreased (green). The cluster analysis showed that the short photoperiod induces differences in gene expression in Cashmere goat skin.</p>
+<fig id="pone.0147124.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0147124.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Hierarchical cluster analysis of the data from the different skin samples of goats raised under short and natural photoperiods.</title>
+<p>The color legend is at the bottom of the Fig Red indicates the genes with greater expression relative to the geometric means, and green indicates the genes with lower expression relative to the geometric means. T1, T2, and T3 represent the 3 samples of side skin from goats raised under the short photoperiod, and C1, C2, and C3 represent the 3 samples of skin from goats raised under the natural photoperiod.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0147124.g002" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec011">
+<title>Biological process gene ontology (GO) analyses</title>
+<p>We screened out 112 genes that were significantly differentially expressed (fold change ≥ 2 or ≤ 0.5), of which 63 genes were up-regulated (≥2) and 49 genes were down-regulated (≤0.5). Based on the gene annotations in the database, we attempted to correlate the differentially expressed genes with the regulation of the goat hair follicle. The GO results showed that the genes expressed in the Cashmere goats from the short photoperiod were functionally classified into three main ontologies: biological process, cellular component and molecular function (<xref ref-type="fig" rid="pone.0147124.g003">Fig 3</xref>). In the biological process category, the largest relative number of terms annotated to the contigs included the cellular process, metabolic process, biosynthetic process, macromolecule biosynthetic process and related regulation of the macromolecule biosynthetic process.</p>
+<fig id="pone.0147124.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0147124.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>GO classifications for the differentially expressed genes.</title>
+<p>Differentially expressed genes enriched in the following GO terms are indicated: biological processes, cellular components, and molecular function.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0147124.g003" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec012">
+<title>Results of the differentially expressed gene analysis</title>
+<p>Because of the limitations of these results and the existing information, most of the genes have not been annotated. Based on the existing reports, we screened out 24 genes, 14 up-regulated and 10 down-regulated (Tables <xref ref-type="table" rid="pone.0147124.t003">3</xref> and <xref ref-type="table" rid="pone.0147124.t004">4</xref>), that may be involved in the different stages of hair follicle growth and hair shaft fiber synthesis. Among these, some important genes are associated with hair follicle structure formation, such as keratin and the keratin-associated proteins keratin 27, keratin 34, and keratin 85. In addition to keratin, the cytoskeleton significantly contributes to the formation of the hair follicle, including the type I wool keratin intermediate filament and the type I keratin intermediate filament (<xref ref-type="table" rid="pone.0147124.t003">Table 3</xref>). In addition, many genes, such as cytochrome P450, major histocompatibility complex (MHC) class I antigen, somatostatin receptor, and vascular endothelial growth factor receptor, are not directly involved in the formation of the hair follicle but may be associated with the formation of the accessory structures of the hair follicle, including glands, blood vessels, and other structures, which are vital for the growth of the hair follicle. Taken together, these results show that the short photoperiod induces the differential expression of Cashmere goat hair follicle genes, which affects the natural cyclic activity of the hair follicle, makes the hair follicle enter the anagen phase ahead of schedule, extends the growth cycle of the hair follicle, and ultimately achieves the goal of increased cashmere production.</p>
+<table-wrap id="pone.0147124.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0147124.t003</object-id>
+<label>Table 3</label> <caption><title>Genes associated with the growth cycle of the hair follicle that are up-regulated in the Cashmere goat under the short photoperiod compared with natural conditions.</title></caption>
+<alternatives>
+<graphic id="pone.0147124.t003g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0147124.t003" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Gene Symbol</th>
+<th align="left">Gene Name</th>
+<th align="left">GenBank Accession Number</th>
+<th align="left">Fold Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>MLN</bold></td>
+<td align="left">motilin</td>
+<td align="left">NM_001009439</td>
+<td align="left">3.5967</td>
+</tr>
+<tr>
+<td align="left"><bold>CYP17A1</bold></td>
+<td align="left">"cytochrome P450, family 17, subfamily A, polypeptide 1"</td>
+<td align="left">NM_001009483</td>
+<td align="left">2.4345</td>
+</tr>
+<tr>
+<td align="left"><bold>LOC100125618</bold></td>
+<td align="left">metallothionein-4</td>
+<td align="left">NM_001105260</td>
+<td align="left">2.406</td>
+</tr>
+<tr>
+<td align="left"><bold>V15</bold></td>
+<td align="left">type I wool keratin intermediate filament 8c1</td>
+<td align="left">NM_001009445</td>
+<td align="left">2.3194</td>
+</tr>
+<tr>
+<td align="left"><bold>K27</bold></td>
+<td align="left">keratin 27</td>
+<td align="left">NM_001114763</td>
+<td align="left">2.3069</td>
+</tr>
+<tr>
+<td align="left"><bold>LOC100526781</bold></td>
+<td align="left">keratin 34</td>
+<td align="left">HQ283081</td>
+<td align="left">2.3041</td>
+</tr>
+<tr>
+<td align="left"><bold>SSTR2</bold></td>
+<td align="left">somatostatin receptor 2</td>
+<td align="left">AF335550</td>
+<td align="left">2.2758</td>
+</tr>
+<tr>
+<td align="left"><bold>FLT-1</bold></td>
+<td align="left">vascular endothelial growth factor receptor-1</td>
+<td align="left">AF534635</td>
+<td align="left">2.2321</td>
+</tr>
+<tr>
+<td align="left"><bold>K2.12</bold></td>
+<td align="left">keratin 85</td>
+<td align="left">EU216428</td>
+<td align="left">2.2016</td>
+</tr>
+<tr>
+<td align="left"><bold>LOC443079</bold></td>
+<td align="left">type I keratin intermediate filament IRSa1</td>
+<td align="left">NM_001009739</td>
+<td align="left">2.0122</td>
+</tr>
+<tr>
+<td align="left"><bold>SP-D</bold></td>
+<td align="left">surfactant protein D</td>
+<td align="left">AJ133002</td>
+<td align="left">2.7986</td>
+</tr>
+<tr>
+<td align="left"><bold>TP63</bold></td>
+<td align="left">tumor protein p63</td>
+<td align="left">EF491630</td>
+<td align="left">2.276</td>
+</tr>
+<tr>
+<td align="left"><bold>LAT2</bold></td>
+<td align="left">"linker for activation of T cells family, member 2"</td>
+<td align="left">AY162433</td>
+<td align="left">2.2725</td>
+</tr>
+<tr>
+<td align="left"><bold>JAG1</bold></td>
+<td align="left">jagged 1</td>
+<td align="left">DQ152971</td>
+<td align="left">2.2057</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="pone.0147124.t004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0147124.t004</object-id>
+<label>Table 4</label> <caption><title>Genes associated with the growth cycle of the hair follicle that are down-regulated in the Cashmere goat under the short photoperiod compared with natural conditions.</title></caption>
+<alternatives>
+<graphic id="pone.0147124.t004g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0147124.t004" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Gene Symbol</th>
+<th align="left">Gene Name</th>
+<th align="left">GenBank Accession Number</th>
+<th align="left">Fold Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><bold>FCGR1A</bold></td>
+<td align="left">"Fc fragment of IgG, high affinity Ia, receptor (CD64)"</td>
+<td align="left">NM_001139452</td>
+<td align="left">0.4764</td>
+</tr>
+<tr>
+<td align="left"><bold>OVAR</bold></td>
+<td align="left">MHC class I antigen</td>
+<td align="left">NM_001130934</td>
+<td align="left">0.4645</td>
+</tr>
+<tr>
+<td align="left"><bold>LOC100101238</bold></td>
+<td align="left">regakine 1-like protein</td>
+<td align="left">NM_001099629</td>
+<td align="left">0.453</td>
+</tr>
+<tr>
+<td align="left"><bold>BST-2B</bold></td>
+<td align="left">bone marrow stromal cell antigen 2B</td>
+<td align="left">NM_001178051</td>
+<td align="left">0.3148</td>
+</tr>
+<tr>
+<td align="left"><bold>ISG17</bold></td>
+<td align="left">interferon-stimulated gene 17</td>
+<td align="left">NM_001009735</td>
+<td align="left">0.1902</td>
+</tr>
+<tr>
+<td align="left"><bold>CYP1A1</bold></td>
+<td align="left">cytochrome P4501A1</td>
+<td align="left">NM_001129905</td>
+<td align="left">0.1034</td>
+</tr>
+<tr>
+<td align="left"><bold>SELE</bold></td>
+<td align="left">selectin E</td>
+<td align="left">NM_001009749</td>
+<td align="left">0.4907</td>
+</tr>
+<tr>
+<td align="left"><bold>C5aR</bold></td>
+<td align="left">C5a anaphylatoxin receptor</td>
+<td align="left">EE828358</td>
+<td align="left">0.487</td>
+</tr>
+<tr>
+<td align="left"><bold>ddit3</bold></td>
+<td align="left">DNA damage-inducible transcript 3</td>
+<td align="left">FE020981</td>
+<td align="left">0.4844</td>
+</tr>
+<tr>
+<td align="left"><bold>TLR7</bold></td>
+<td align="left">toll-like receptor 7</td>
+<td align="left">NM_001135059</td>
+<td align="left">0.4692</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec013">
+<title>qPCR validation</title>
+<p>To verify the gene chip results, we selected three genes, CYP1A1, keratin 34 and MLN, for qPCR and compared their expression patterns (<xref ref-type="fig" rid="pone.0147124.g004">Fig 4</xref>). Although the mRNA expression levels were not significantly different from the gene chip microarray, their trends were highly similar and reflected the reliability of the gene chip analysis results.</p>
+<fig id="pone.0147124.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0147124.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>qPCR validation of the expressed genes.</title>
+<p>For the 3 randomly selected differentially expressed genes, the fold changes of the genes in the short and natural photoperiods were assessed by qPCR (red bar) and compared to those detected in the gene chip microarray (black bar). All Ct values were normalized to GAPDH, and replicates (n = 3) of each sample were run. The P values (T-test) of the Q-PCR data are 0.1096 (keratin 34), 0.0003 (MLN), and 0.0201 (CYP1A1).</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0147124.g004" xlink:type="simple"/>
+</fig>
+</sec>
+</sec>
+<sec id="sec014" sec-type="conclusions">
+<title>Discussion</title>
+<sec id="sec015">
+<title>Experimental method and analysis of the results</title>
+<p>This study uses a gene chip microarray to study cyclic changes in cashmere growth under manual short photoperiod intervention and compares them to the related gene expression profiles in the hair follicles of Cashmere goats in artificial and natural conditions. All of the samples were obtained in July. Marked differences in gene expression can be observed between the two conditions at this time point, when the secondary follicles of the Cashmere goat have not entered the anagen phase. Therefore, the impact of the original cyclic growth of the hair follicle can be ruled out, and we can ensure that these differences in gene expression are highly reliable. In addition, it is common to study hair follicle-associated gene expression by analyzing skin samples. However, other parts of the skin, in addition to the hair follicles, might influence the gene expression specificity; therefore, in future studies, our analysis of the gene expression results must be more precise to eliminate as much interference as possible.</p>
+<p>Due to the limitations of the reproductive characteristics among Cashmere goats, we cannot obtain multiple individuals who have precisely the same genetic background. To ensure the accuracy of our tests, we chose Cashmere goats of the same gender and of similar ages and nutritional conditions, and each Cashmere goat bred in the short photoperiod was compared to a fellow individual (of the same parent) under natural conditions. Thus, we ensured the accuracy and reliability of the differences in gene expression to the extent feasible. In addition, we chose three representative genes for qPCR, and the results were consistent with the microarray data, further demonstrating the reliability of our results.</p>
+<p>In this study, we analyzed the molecular activity related to hair follicle growth. Microarray technology helped us to identify genes with greater than 2-fold differences in expression between the two groups, and compared to the complete microarray data, the number of these genes was greatly diminished (112/15,208), which narrows the scope of the relevant genes for hair follicle activity. We also verified the results though qPCR.</p>
+</sec>
+<sec id="sec016">
+<title>Differences in the expression of genes related to hair structure formation</title>
+<p>The most obvious among these differentially expressed genes were those related to keratin protein and keratin-associated protein expression. The hair of the Cashmere goat is diversified into two main types, wool and cashmere, which exists together in the hair follicle group and are produced by the primary and secondary follicles, respectively. The two types are highly similar in terms of structure and composition; in general, wool has a medulla, whereas cashmere does not. Therefore, notable differences in fineness are present, which are correspondingly determined by the shape and size of the hair follicle. Hair growth regulation depends on the cyclic activities of the hair follicle and the successive catagen and telogen phases in the growth cycles [<xref ref-type="bibr" rid="pone.0147124.ref028">28</xref>]. In the anagen phase, cashmere rapidly grows under the control of related genes; keratin protein gene expression is the strongest at this time.</p>
+<p>A previous study comparing human hair and different cashmere varieties identified significant differences in the high glycine tyrosine (HGT) keratin-associated protein (KAP) compositions of different animal wools; in particular, the HGT KAP (KAP6, KAP7 and KAP8) contents are less than 3% in human hair, 19% in sheep wool, and up to 30–40% in monotreme mammals [<xref ref-type="bibr" rid="pone.0147124.ref029">29</xref>]. The study also showed that in different species, the changes in the HGT KAP contents were closely related to hair quality. In addition, the studies of Jin et al. [<xref ref-type="bibr" rid="pone.0147124.ref030">30</xref>] have shown that KAP7.1 is a part of the cortex and inner root sheath structures, is involved in the formation of the inner root sheath of cashmere and keratinization of the hair shaft, and plays an important role in the growth of cashmere hair. Meanwhile, KAP7.1 is also expressed in the matrix of the secondary hair follicle. In humans, sheep and other mammals, KAP7.1 is not expressed in the outer root sheath (ORS), sebaceous glands or hair medulla but is expressed in the inner root sheath in both the primary and secondary hair follicles, which may be the reason for the differences in cashmere characteristics among different species [<xref ref-type="bibr" rid="pone.0147124.ref030">30</xref>]. Consistent with this hypothesis, research in Australian Merino sheep also concluded that HGT KAP expression is significantly reduced in mutants, which further indicates that the HGT KAPs can control the quality of the wool fiber [<xref ref-type="bibr" rid="pone.0147124.ref031">31</xref>]. In this experiment, the analysis of the Arbas Cashmere goat microarray revealed the up-regulated expression of keratin 27, keratin 34, keratin 85, KAP6 (EE752086) and KAP7 (EE757001), suggesting that under these experimental conditions, the Cashmere goat hair follicles enter the anagen phase early, inducing increased cashmere production. In addition, we also found significant expression of keratin 85. Although its role in the growth of cashmere is unclear, the hair matrix in the human hair follicle hair shaft is rich in keratin 85 [<xref ref-type="bibr" rid="pone.0147124.ref032">32</xref>], and mutations in the keratin 85 gene can lead to developmental disorders of the hair follicle and hair follicle appendages [<xref ref-type="bibr" rid="pone.0147124.ref033">33</xref>]. These results suggest that this structure plays an important role in hair structure; thus, keratin 85 expression likely indicates that the hair follicle has entered the anagen phase.</p>
+<p>Type I and type II keratin intermediate filaments (KIFs) are coordinately expressed in the different parts of each hair follicle and are expressed with filament-associated proteins to form the structures that promote the growth of the hair follicle and fiber synthesis. Research has demonstrated that many epidermal cytokeratin pairs are expressed in a specific hair follicle cell layer [<xref ref-type="bibr" rid="pone.0147124.ref034">34</xref>].</p>
+<p>Keratin is present throughout the epithelial tissue, and intermediate filaments are primarily composed of this protein and constitute the cytoskeletons of mammalian cells [<xref ref-type="bibr" rid="pone.0147124.ref035">35</xref>]. Tzu-Hao Chang et al. [<xref ref-type="bibr" rid="pone.0147124.ref036">36</xref>] found that KRT14, KRT19, KRT34, KRT-associated proteins (KRTAP) 1 to 5, and KRTAP2-3 were involved in the clustering of keratin (KRT) intermediate filaments. These genes are located on chromosome 17q21.2 and cause the formation of the actin cytoskeleton [<xref ref-type="bibr" rid="pone.0147124.ref036">36</xref>]. Therefore, the keratin intermediate filaments and the expression of the relevant downstream keratin genes are vital for the formation of the hair shaft. Thus, we can presume that these genes will be extremely active when the hair follicles enter the anagen phase, as shown in our study. Upon analysis of the microarray data, V15 (type I wool keratin intermediate filament eight c1), LOC443079 (type I keratin intermediate filament IRSa1) and the downstream genes LOC100526781 and keratin (34) were significantly up-regulated in the skin samples of the Cashmere goats in the experimental group, indicating that the genes that construct the hair shaft are highly active. These results provide important evidence that the shorter photoperiod can induce hair follicle growth.</p>
+</sec>
+<sec id="sec017">
+<title>Differences in the expression of genes related to the hair follicle peripheral skin appendages</title>
+<p>Immune privilege (IP) occurs in the anagen phase [<xref ref-type="bibr" rid="pone.0147124.ref022">22</xref>]. In the hair bulb and hair follicle bulge, the down-regulation of MHC class I is always accompanied by the expression of immunosuppressive factors. Previous studies have found that class I and class II human leukocyte antigen (HLA) alleles are significantly down-regulated in the hair bulb and root sheath, and this down-regulation is accompanied by the up-regulation of a variety of immunoregulatory genes. Compared to the epidermis, SST (somatostatin) is significantly up-regulated in these tissues. SST expression is strongest in the outer root sheath of the hair follicle, and cultures of sheath cells in vitro also secrete SST [<xref ref-type="bibr" rid="pone.0147124.ref037">37</xref>]. Our results showed that SSTR2 (somatostatin receptor 2) was significantly up-regulated in the skin samples of the experimental group, whereas OVAR (an MHC class I antigen) expression was significantly down-regulated. These findings are in accordance with previous reports and demonstrate that the hair follicles have entered the anagen phase; accordingly, cashmere starts to grow.</p>
+<p>The relationship between the CYP (cytochrome P450) gene families and the control of hair follicle growth has been reported in numerous studies [<xref ref-type="bibr" rid="pone.0147124.ref038">38</xref>, <xref ref-type="bibr" rid="pone.0147124.ref039">39</xref>]. CYP1A1 (cytochrome P450 1A1) is expressed at a low level in mouse skin; in contrast, it is expressed at a higher level in the hair follicle sebaceous glands [<xref ref-type="bibr" rid="pone.0147124.ref040">40</xref>]. Studies in goats have indicated that the expression of CYP17A1 (cytochrome P450 17A1) causes hypocortisolism in Angora goats in South Africa [<xref ref-type="bibr" rid="pone.0147124.ref041">41</xref>]. Our experimental results indicate that CYP17A1 is significantly up-regulated and that CYP1A1 is significantly down-regulated in the experimental group, which may be related to hair follicle growth and the construction of the hair follicle appendages during the anagen phase. This interesting phenomenon still requires further in-depth research.</p>
+<p>Tissue regeneration depends on an adequate blood supply, an important prerequisite of which is the formation of blood vessels, particularly in the early development and formation of the hair follicles [<xref ref-type="bibr" rid="pone.0147124.ref042">42</xref>]. As dermal papillae increase in number and size, more blood is required to transport nutrients and send signals; thus, a rich network of blood vessels is formed around the dermal papillae. During development, vascular endothelial growth factor (VEGF) is involved in regulating blood vessel formation. Moreover, as an important factor in blood vessel formation and regeneration, VEGF is expressed in skin during wound healing and the periodic vascular remodeling of the hair follicle. VEGF expression is particularly high when the dermal papillae are active to prompt blood vessel growth to meet the massive nutritional requirements of the hair follicles during anagen. Therefore, to some extent, VEGF expression indirectly reflects the degree of skin hair follicle growth [<xref ref-type="bibr" rid="pone.0147124.ref043">43</xref>]. It has been confirmed that the controlled release of VEGF in mice can induce cyclic hair follicle growth [<xref ref-type="bibr" rid="pone.0147124.ref044">44</xref>], and up-regulated VEGF expression can also lead to the regional growth of human hair follicles [<xref ref-type="bibr" rid="pone.0147124.ref045">45</xref>]. These studies have demonstrated the importance of VEGF for hair follicle growth and cyclic activities. To date, many studies have reported that VEGF receptor 2 (VEGFR-2) is expressed in the cells of human hair follicles, sebaceous glands, sudoriparous glands and other locations. VEGFR-2 plays an important role in the growth of the hair follicles [<xref ref-type="bibr" rid="pone.0147124.ref046">46</xref>] and is associated with bulge, K15 and K19 expression [<xref ref-type="bibr" rid="pone.0147124.ref047">47</xref>]. However, the role of VEGF in wool growth has been unclear. Our results reveal that the short photoperiod induced differential VEGFR-1 expression in the hair follicles in skin during the anagen phase, which provides important insight that VEGFR-1 may participate in the reconstruction of periodic Cashmere goat hair follicles, a possibility that should be investigated further.</p>
+</sec>
+<sec id="sec018">
+<title>Differences in the expression of genes related to photoperiod</title>
+<p>In Human hair growth model, the seasonal variation is not obvious, hair cycle is usually unsynchronized after age one. Unlike human, Cashmere goat is one of the typical species whose hair cycle is associated with hormone secretion and affected by the environmental change especially light cycle. In one year, the changeable length of sunlight can cause differences in hormone secretion, such as the pineal melatonin, forming a nerve-hormone regulation system to control hair follicle cyclic growth[<xref ref-type="bibr" rid="pone.0147124.ref048">48</xref>].It is surprising that the prolactin receptor (PRLR), responding to the photoperiod signal PRL in mammals, is expressed similarly in the two groups. In the Australian Cashmere goat, which exhibits seasonally dependent cycles of pelage, the increasing PRL during spring was shown to reactivate telogen follicles and induce them into the anagen phase [<xref ref-type="bibr" rid="pone.0147124.ref049">49</xref>]. Although PRL and melatonin have been shown to stimulate hair shaft elongation in vitro in Cashmere goats [<xref ref-type="bibr" rid="pone.0147124.ref050">50</xref>, <xref ref-type="bibr" rid="pone.0147124.ref051">51</xref>], Wiltshire sheep show increasing PRL levels after experimentally extended photoperiods associated with a short-term inhibitory effect on growing anagen follicles [<xref ref-type="bibr" rid="pone.0147124.ref052">52</xref>, <xref ref-type="bibr" rid="pone.0147124.ref053">53</xref>]. This phenomenon is consistent with the Arbas Cashmere goat, in which the reactivity and subsequent inhibitory effect of secondary hair follicles are observed in growing proanagen follicles. Although PRL was not detected in this study, PRLR mRNA has been reported in the dermal papilla and outer root sheath of ovine wool follicles and showed cycle-related patterns, indicating the dynamic regulation of PRLR by prolactin, which modulates the hormonal responsiveness of seasonally growing hair follicles [<xref ref-type="bibr" rid="pone.0147124.ref053">53</xref>]. This microarray chip contains the PRLR mRNA probe, but no differences were noted between the experimental and control groups. This lack of difference may have occurred because this method is not sufficiently sensitive or because PRLR is actually identical in the two groups. Indeed, at this stage, secondary hair follicles have been in the proanagen phase for up to three months. The short photoperiod can shorten the proanagen phase and promote the entrance of secondary hair follicles into anagen immediately, resulting in fast-growing cashmere.</p>
+</sec>
+</sec>
+<sec id="sec019" sec-type="conclusions">
+<title>Conclusions</title>
+<p>A comparative study of histology and gene expression in Cashmere goat skin samples exposed to an artificial short photoperiod and natural conditions demonstrated that a short photoperiod causes the Cashmere goat hair follicles to enter the anagen phase early. The gene chip data demonstrate that differential gene expression is involved in hair follicle growth, hair shaft structure formation, and biological processes of the skin appendages; in particular, the active expression of keratin and cytoskeleton-associated genes during this period provides important evidence of hair shaft formation. The results reveal that photoperiod is the main factor affecting the growth of cashmere; under the short photoperiod conditions, genes involved in the hair follicle growth process will be mobilized to participate in cyclic hair follicle growth. Controlling the light cycle is an effective method for increasing the production of cashmere and can be widely used in actual livestock production.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>We would like to thank Dr. Jun Yin for his useful suggestions and technical assistance. We thank Ruoyang Zhao for assisting in the sample collection and the histology experiments. We also thank the CapitalBio Corporation for their assistance in microarray profiling/qPCR validation. Finally, we acknowledge the Etuokeqianqi Arctic God Research Institute of Cashmere and Livestock for providing the Cashmere goats for these experiments.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0147124.ref001"><label>1</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Burns</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Bergen</surname> <given-names>WV</given-names></name>, <name name-style="western"><surname>Young</surname> <given-names>S</given-names></name>. <article-title>Cashmere and the undercoat of domestic and wild animals</article-title>. <source>J Textile Inst Trans</source>. <year>1962</year>;<volume>53</volume>(<issue>2</issue>):<fpage>T45</fpage>–<lpage>T68</lpage>.</mixed-citation></ref>
+<ref id="pone.0147124.ref002"><label>2</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Müller-Röver</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Handjiski</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>van der Veen</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Eichmüller</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Foitzik</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>McKay</surname> <given-names>IA</given-names></name>, <etal>et al</etal>. <article-title>A comprehensive guide for the accurate classification of murine hair follicles in distinct hair cycle stages</article-title>. <source>J Invest Dermatol</source>. <year>2001</year>;<volume>117</volume>(<issue>1</issue>):<fpage>3</fpage>–<lpage>15</lpage>. <object-id pub-id-type="pmid">11442744</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McGregor</surname> <given-names>BA</given-names></name>. <article-title>Nutrition, management and other environmental influences on the quality and production of mohair and cashmere: A review with particular reference to mediterranean and annual temperate climatic zones</article-title>. <source>Small Rum Res</source>. <year>1998</year>;<volume>28</volume>(<issue>3</issue>):<fpage>199</fpage>–<lpage>215</lpage>. <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0921-4488(97)00100-4" xlink:type="simple">http://dx.doi.org/10.1016/S0921-4488(97)00100-4</ext-link>.</mixed-citation></ref>
+<ref id="pone.0147124.ref004"><label>4</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slominski</surname> <given-names>RM</given-names></name>, <name name-style="western"><surname>Reiter</surname> <given-names>RJ</given-names></name>, <name name-style="western"><surname>Schlabritz-Loutsevitch</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Ostrom</surname> <given-names>RS</given-names></name>, <name name-style="western"><surname>Slominski</surname> <given-names>AT</given-names></name>. <article-title>Melatonin membrane receptors in peripheral tissues: distribution and functions</article-title>. <source>Mol Cell Endocrinol</source>. <year>2012</year>;<volume>351</volume>(<issue>2</issue>):<fpage>152</fpage>–<lpage>66</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.mce.2012.01.004" xlink:type="simple">10.1016/j.mce.2012.01.004</ext-link></comment> <object-id pub-id-type="pmid">22245784</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slominski</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Tobin</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Shibahara</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Wortsman</surname> <given-names>J</given-names></name>. <article-title>Melanin pigmentation in mammalian skin and its hormonal regulation</article-title>. <source>Physiol Rev</source>. <year>2004</year>;<volume>84</volume>(<issue>4</issue>):<fpage>1155</fpage>–<lpage>228</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1152/physrev.00044.2003" xlink:type="simple">10.1152/physrev.00044.2003</ext-link></comment> <object-id pub-id-type="pmid">15383650</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slominski</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Wortsman</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Tobin</surname> <given-names>DJ</given-names></name>. <article-title>The cutaneous serotoninergic/melatoninergic system: securing a place under the sun</article-title>. <source>FASEB J</source>. <year>2005</year>;<volume>19</volume>(<issue>2</issue>):<fpage>176</fpage>–<lpage>94</lpage>. <object-id pub-id-type="pmid">15677341</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fischer</surname> <given-names>TW</given-names></name>, <name name-style="western"><surname>Slominski</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Tobin</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Paus</surname> <given-names>R</given-names></name>. <article-title>Melatonin and the hair follicle</article-title>. <source>J Pineal Res</source>. <year>2008</year>;<volume>44</volume>(<issue>1</issue>):<fpage>1</fpage>–<lpage>15</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1600-079X.2007.00512.x" xlink:type="simple">10.1111/j.1600-079X.2007.00512.x</ext-link></comment> <object-id pub-id-type="pmid">18078443</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ibraheem</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Galbraith</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Scaife</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Ewen</surname> <given-names>S</given-names></name>. <article-title>Growth of secondary hair follicles of the Cashmere goat in vitro and their response to prolactin and melatonin</article-title>. <source>J Anat</source>. <year>1994</year>;<volume>185</volume>(<issue>Pt 1</issue>):<fpage>135</fpage>–<lpage>42</lpage>. PMC1166822. <object-id pub-id-type="pmid">7559108</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref009"><label>9</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dicks</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Morgan</surname> <given-names>CJ</given-names></name>, <name name-style="western"><surname>Morgan</surname> <given-names>PJ</given-names></name>, <name name-style="western"><surname>Kelly</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Williams</surname> <given-names>LM</given-names></name>. <article-title>The localisation and characterisation of insulin-like growth factor-I receptors and the investigation of melatonin receptors on the hair follicles of seasonal and non-seasonal fibre-producing goats</article-title>. <source>J Endocrinol</source>. <year>1996</year>;<volume>151</volume>(<issue>1</issue>):<fpage>55</fpage>–<lpage>63</lpage>. <object-id pub-id-type="pmid">8943769</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref010"><label>10</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Todini</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Malfatti</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Barbato</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Trabalza-Marinucci</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Acuti</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Antonini</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Plasma thyroid hormones, fibre characteristics and hair follicle activity in angora kids: effects of supplementation with horse bean (Vicia faba minor)</article-title>. <source>Atti della SocietaItaliana della Scienze Veterinarie</source>. <year>2005</year>;<volume>59</volume>:<fpage>39</fpage>–<lpage>40</lpage>.</mixed-citation></ref>
+<ref id="pone.0147124.ref011"><label>11</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hardman</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Haslam</surname> <given-names>IS</given-names></name>, <name name-style="western"><surname>Farjo</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Farjo</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Paus</surname> <given-names>R</given-names></name>. <article-title>Thyroxine differentially modulates the peripheral clock: Lessons from the human hair follicle</article-title>. <source>PLoS One</source>. <year>2015</year>;<volume>10</volume>(<issue>3</issue>):<fpage>e0121878</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0121878" xlink:type="simple">10.1371/journal.pone.0121878</ext-link></comment> <object-id pub-id-type="pmid">25822259</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slominski</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Wortsman</surname> <given-names>J</given-names></name>. <article-title>Neuroendocrinology of the skin 1</article-title>. <source>Endocr Rev</source>. <year>2000</year>;<volume>21</volume>(<issue>5</issue>):<fpage>457</fpage>–<lpage>87</lpage>. <object-id pub-id-type="pmid">11041445</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref013"><label>13</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname> <given-names>C-q</given-names></name>, <name name-style="western"><surname>Yin</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>Y-j</given-names></name>, <name name-style="western"><surname>Guo</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Gao</surname> <given-names>A</given-names></name>, <etal>et al</etal>. <article-title>Comparative study on skin and hair follicles cycling between Inner Mongolia and Liaoning cashmere goats</article-title>. <source>ACTA VETERINARIA ET ZOOTECHNICA SINICA</source>. <year>2005</year>;<volume>36</volume>(<issue>7</issue>):<fpage>674</fpage>.</mixed-citation></ref>
+<ref id="pone.0147124.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wu</surname> <given-names>J-H</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>Y-J</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>J-X</given-names></name>, <name name-style="western"><surname>Chang</surname> <given-names>Z-L</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>J-Q</given-names></name>, <name name-style="western"><surname>Yan</surname> <given-names>Z-W</given-names></name>, <etal>et al</etal>. <article-title>Hoxc13/β-catenin correlation with hair follicle activity in Cashmere goat</article-title>. <source>J Integrat Agric</source>. <year>2012</year>;<volume>11</volume>(<issue>7</issue>):<fpage>1159</fpage>–<lpage>66</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/s2095-3119(12)60110-5" xlink:type="simple">10.1016/s2095-3119(12)60110-5</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0147124.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stenn</surname> <given-names>KS</given-names></name>, <name name-style="western"><surname>Paus</surname> <given-names>R</given-names></name>. <article-title>Controls of hair follicle cycling</article-title>. <source>Physiol Rev</source>. <year>2001</year>;<volume>81</volume>(<issue>1</issue>):<fpage>449</fpage>–<lpage>94</lpage>. <object-id pub-id-type="pmid">11152763</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stenn</surname> <given-names>K</given-names></name>. <article-title>Exogen is an active, separately controlled phase of the hair growth cycle</article-title>. <source>J Am Acad Dermatol</source>. <year>2005</year>;<volume>52</volume>(<issue>2</issue>):<fpage>374</fpage>–<lpage>5</lpage>.</mixed-citation></ref>
+<ref id="pone.0147124.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rebora</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Guarrera</surname> <given-names>M</given-names></name>. <article-title>Teloptosis and kenogen: two new concepts in human trichology</article-title>. <source>Arch Dermatol</source>. <year>2004</year>;<volume>140</volume>(<issue>5</issue>):<fpage>619</fpage>–<lpage>20</lpage>. <object-id pub-id-type="pmid">15148114</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Plonka</surname> <given-names>PM</given-names></name>, <name name-style="western"><surname>Michalczyk</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Popik</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Handjiski</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Paus</surname> <given-names>R</given-names></name>. <article-title>Electron paramagnetic resonance (EPR) spectroscopy for investigating murine telogen skin after spontaneous or depilation-induced hair growth</article-title>. <source>J Dermatol Sci</source>. <year>2008</year>;<volume>49</volume>(<issue>3</issue>):<fpage>227</fpage>–<lpage>40</lpage>. <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jdermsci.2007.09.010" xlink:type="simple">http://dx.doi.org/10.1016/j.jdermsci.2007.09.010</ext-link>. <object-id pub-id-type="pmid">18061408</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Changqing</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Jun</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Yanjun</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Zhicheng</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Wenguang</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Aiqin</surname> <given-names>G</given-names></name>, <etal>et al</etal>. <article-title>Comparative Study on Skin and Hair Follicles Cycling between Inner Mongolia and Liaoning Cashmere Goats</article-title>. <source>Acta Veterinaria et Zootechnica Sinica</source>. <year>2005</year>;<volume>36</volume>(<issue>7</issue>):<fpage>674</fpage>–<lpage>9</lpage>.</mixed-citation></ref>
+<ref id="pone.0147124.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wen</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Jun</surname> <given-names>Y</given-names></name>. <article-title>The Secondary Follicles Growth Rhythm of Arbas Cashmere Goats</article-title>. <source>Journal of Inner Mongolia Agricultural University</source>. <year>2011</year>;<volume>32</volume>(<issue>3</issue>):<fpage>199</fpage>–<lpage>202</lpage>.</mixed-citation></ref>
+<ref id="pone.0147124.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Paus</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Ito</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Takigawa</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Ito</surname> <given-names>T</given-names></name>. <article-title>The hair follicle and immune privilege</article-title>. <source>J Invest Dermatol Sym Proc</source>. <year>2003</year>;<volume>8</volume>(<issue>2</issue>):<fpage>188</fpage>–<lpage>94</lpage>.</mixed-citation></ref>
+<ref id="pone.0147124.ref022"><label>22</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Paus</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Nickoloff</surname> <given-names>BJ</given-names></name>, <name name-style="western"><surname>Ito</surname> <given-names>T</given-names></name>. <article-title>A ‘hairy’privilege</article-title>. <source>Trends Immunol</source>. <year>2005</year>;<volume>26</volume>(<issue>1</issue>):<fpage>32</fpage>–<lpage>40</lpage>. <object-id pub-id-type="pmid">15629407</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Geng</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Yuan</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>Y</given-names></name>. <article-title>Exploring differentially expressed genes by RNA-Seq in cashmere goat (Capra hircus) skin during hair follicle development and cycling</article-title>. <source>PLoS One</source>. <year>2013</year>;<volume>8</volume>(<issue>4</issue>):<fpage>e62704</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0062704" xlink:type="simple">10.1371/journal.pone.0062704</ext-link></comment> <object-id pub-id-type="pmid">23638136</object-id>; PubMed Central PMCID: PMCPMC3640091.</mixed-citation></ref>
+<ref id="pone.0147124.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zhu</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Xu</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Yuan</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Guo</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>D</given-names></name>. <article-title>Transcriptome sequencing reveals differences between primary and secondary hair follicle-derived dermal papilla cells of the Cashmere goat (Capra hircus)</article-title>. <source>PLoS One</source>. <year>2013</year>;<volume>8</volume>(<issue>9</issue>):<fpage>e76282</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0076282" xlink:type="simple">10.1371/journal.pone.0076282</ext-link></comment> <object-id pub-id-type="pmid">24069460</object-id>; PubMed Central PMCID: PMCPMC3777969.</mixed-citation></ref>
+<ref id="pone.0147124.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Xu</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Guo</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Hao</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Du</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Gao</surname> <given-names>X</given-names></name>, <etal>et al</etal>. <article-title>Differential gene expression analysis between anagen and telogen of Capra hircus skin based on the de novo assembled transcriptome sequence</article-title>. <source>Gene</source>. <year>2013</year>;<volume>520</volume>(<issue>1</issue>):<fpage>30</fpage>–<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.gene.2013.01.068" xlink:type="simple">10.1016/j.gene.2013.01.068</ext-link></comment> <object-id pub-id-type="pmid">23466980</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Paus</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Müller-Röver</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>van der Veen</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Maurer</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Eichmüller</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Ling</surname> <given-names>G</given-names></name>, <etal>et al</etal>. <article-title>A comprehensive guide for the recognition and classification of distinct stages of hair follicle morphogenesis</article-title>. <source>J Invest Dermatol</source>. <year>1999</year>;<volume>113</volume>(<issue>4</issue>):<fpage>523</fpage>–<lpage>32</lpage>. <object-id pub-id-type="pmid">10504436</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schlake</surname> <given-names>T</given-names></name>. <article-title>Determination of hair structure and shape</article-title>. <source>Semin Cell Develop Biol</source>. <year>2007</year>;<volume>18</volume>(<issue>2</issue>):<fpage>267</fpage>–<lpage>73</lpage>.</mixed-citation></ref>
+<ref id="pone.0147124.ref028"><label>28</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cui</surname> <given-names>Zhi-Feng</given-names></name>, <name name-style="western"><surname>Zhao</surname> <given-names>Jing</given-names></name>, <name name-style="western"><surname>Hui</surname> <given-names>Wang</given-names></name>, <name name-style="western"><surname>Hao</surname> <given-names>Zhi-Ru</given-names></name>, <name name-style="western"><surname>Zhao-Yuan</surname> <given-names>Z</given-names></name>. <article-title>Influences of different mediums on goat hair follicles cultured in vitro</article-title>. <source>J Shandong Univ (Natural Science)</source>. <year>2008</year>;<volume>43</volume>(<issue>5</issue>):<fpage>1</fpage>–<lpage>05</lpage>.</mixed-citation></ref>
+<ref id="pone.0147124.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Aoki</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Ito</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Ito</surname> <given-names>M</given-names></name>. <article-title>Isolation and characterization of mouse high-glycine/tyrosine proteins</article-title>. <source>J Biol Chem</source>. <year>1997</year>;<volume>272</volume>(<issue>48</issue>):<fpage>30512</fpage>–<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1074/jbc.272.48.30512" xlink:type="simple">10.1074/jbc.272.48.30512</ext-link></comment> <object-id pub-id-type="pmid">9374545</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jin</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Xing</surname> <given-names>MX</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>X</given-names></name>. <article-title>Characterization and expression analysis of KAP7.1, KAP8.2 gene in Liaoning new-breeding cashmere goat hair follicle</article-title>. <source>Mol Biol Rep</source>. <year>2011</year>;<volume>38</volume>(<issue>5</issue>):<fpage>3023</fpage>–<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s11033-010-9968-6" xlink:type="simple">10.1007/s11033-010-9968-6</ext-link></comment> <object-id pub-id-type="pmid">20151326</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname> <given-names>SW</given-names></name>, <name name-style="western"><surname>Ouyang</surname> <given-names>HS</given-names></name>, <name name-style="western"><surname>Rogers</surname> <given-names>GE</given-names></name>, <name name-style="western"><surname>Bawden</surname> <given-names>CS</given-names></name>. <article-title>Characterization of the structural and molecular defects in fibres and follicles of the Merino felting lustre mutant</article-title>. <source>Exp Dermatol</source>. <year>2009</year>;<volume>18</volume>(<issue>2</issue>):<fpage>134</fpage>–<lpage>42</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1600-0625.2008.00774.x" xlink:type="simple">10.1111/j.1600-0625.2008.00774.x</ext-link></comment> <object-id pub-id-type="pmid">18637126</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Langbein</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Rogers</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Winter</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Praetzel</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Schweizer</surname> <given-names>J</given-names></name>. <article-title>The catalog of human hair keratins II. Expression of the six type II members in the hair follicle and the combined catalog of human type I and II keratins</article-title>. <source>J Biol Chem</source>. <year>2001</year>;<volume>276</volume>(<issue>37</issue>):<fpage>35123</fpage>–<lpage>32</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1074/jbc.M103305200" xlink:type="simple">10.1074/jbc.M103305200</ext-link></comment> <object-id pub-id-type="pmid">11445569</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref033"><label>33</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shimomura</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Wajid</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Kurban</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Sato</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Christiano</surname> <given-names>AM</given-names></name>. <article-title>Mutations in the keratin 85 (KRT85/hHb5) gene underlie pure hair and nail ectodermal dysplasia</article-title>. <source>J Invest Dermatol</source>. <year>2010</year>;<volume>130</volume>(<issue>3</issue>):<fpage>892</fpage>–<lpage>5</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/jid.2009.341" xlink:type="simple">10.1038/jid.2009.341</ext-link></comment> <object-id pub-id-type="pmid">19865094</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref034"><label>34</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bawden</surname> <given-names>CS</given-names></name>, <name name-style="western"><surname>McLaughlan</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Nesci</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Rogers</surname> <given-names>G</given-names></name>. <article-title>A unique type I keratin intermediate filament gene family is abundantly expressed in the inner root sheaths of sheep and human hair follicles</article-title>. <source>J Invest Dermatol</source>. <year>2001</year>;<volume>116</volume>(<issue>1</issue>):<fpage>157</fpage>–<lpage>66</lpage>. <object-id pub-id-type="pmid">11168812</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wang</surname> <given-names>YL</given-names></name>. <article-title>Dynamics of the cytoskeleton in live cells</article-title>. <source>Curr Opin Cell Biol</source>. <year>1991</year>;<volume>3</volume>(<issue>1</issue>):<fpage>27</fpage>–<lpage>32</lpage>. <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/0955-0674(91)90162-R" xlink:type="simple">http://dx.doi.org/10.1016/0955-0674(91)90162-R</ext-link>. <object-id pub-id-type="pmid">1854480</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref036"><label>36</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chang</surname> <given-names>TH</given-names></name>, <name name-style="western"><surname>Huang</surname> <given-names>HD</given-names></name>, <name name-style="western"><surname>Ong</surname> <given-names>WK</given-names></name>, <name name-style="western"><surname>Fu</surname> <given-names>YJ</given-names></name>, <name name-style="western"><surname>Lee</surname> <given-names>OK</given-names></name>, <name name-style="western"><surname>Chien</surname> <given-names>S</given-names></name>, <etal>et al</etal>. <article-title>The effects of actin cytoskeleton perturbation on keratin intermediate filament formation in mesenchymal stem/stromal cells</article-title>. <source>Biomaterials</source>. <year>2014</year>;<volume>35</volume>(<issue>13</issue>):<fpage>3934</fpage>–<lpage>44</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.biomaterials.2014.01.028" xlink:type="simple">10.1016/j.biomaterials.2014.01.028</ext-link></comment> <object-id pub-id-type="pmid">24513317</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref037"><label>37</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Breitkopf</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Lo</surname> <given-names>BKK</given-names></name>, <name name-style="western"><surname>Leung</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Yu</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Carr</surname> <given-names>N</given-names></name>, <etal>et al</etal>. <article-title>Somatostatin Expression in Human Hair Follicles and Its Potential Role in Immune Privilege</article-title>. <source>J Invest Dermatol</source>. <year>2013</year>;<volume>133</volume>(<issue>7</issue>):<fpage>1722</fpage>–<lpage>30</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/jid.2013.53" xlink:type="simple">10.1038/jid.2013.53</ext-link></comment> <object-id pub-id-type="pmid">23370538</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slominski</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Zbytek</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Nikolakis</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Manna</surname> <given-names>PR</given-names></name>, <name name-style="western"><surname>Skobowiat</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Zmijewski</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Steroidogenesis in the skin: implications for local immune functions</article-title>. <source>J Steroid Biochem Mol Biol</source>. <year>2013</year>;<volume>137</volume>:<fpage>107</fpage>–<lpage>23</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jsbmb.2013.02.006" xlink:type="simple">10.1016/j.jsbmb.2013.02.006</ext-link></comment> <object-id pub-id-type="pmid">23435015</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Skobowiat</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Slominski</surname> <given-names>AT</given-names></name>. <article-title>UVB activates hypothalamic–pituitary–adrenal axis in C57BL/6 mice</article-title>. <source>J Invest Dermatol</source>. <year>2015</year>;<volume>135</volume>(<issue>6</issue>):<fpage>1638</fpage>–<lpage>48</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/jid.2014.450" xlink:type="simple">10.1038/jid.2014.450</ext-link></comment> <object-id pub-id-type="pmid">25317845</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref040"><label>40</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rowe</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Welsh</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Pena</surname> <given-names>RN</given-names></name>, <name name-style="western"><surname>Wolf</surname> <given-names>CR</given-names></name>, <name name-style="western"><surname>Brown</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Whitelaw</surname> <given-names>CBA</given-names></name>. <article-title>Illuminating Role of CYP1A1 in Skin Function</article-title>. <source>J Invest Dermatol</source>. <year>2008</year>;<volume>128</volume>(<issue>7</issue>):<fpage>1866</fpage>–<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/sj.jid.5701236" xlink:type="simple">10.1038/sj.jid.5701236</ext-link></comment> <object-id pub-id-type="pmid">18185528</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref041"><label>41</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Storbeck</surname> <given-names>KH</given-names></name>, <name name-style="western"><surname>Swart</surname> <given-names>AC</given-names></name>, <name name-style="western"><surname>Swart</surname> <given-names>P</given-names></name>. <article-title>CYP17 causes hypocortisolism in the South African Angora goat</article-title>. <source>Mol Cell Endocrinol</source>. <year>2009</year>;<volume>300</volume>(<issue>1–2</issue>):<fpage>121</fpage>–<lpage>5</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.mce.2008.09.009" xlink:type="simple">10.1016/j.mce.2008.09.009</ext-link></comment> <object-id pub-id-type="pmid">18840497</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref042"><label>42</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mecklenburg</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Tobin</surname> <given-names>DJ</given-names></name>, <name name-style="western"><surname>Müller-Röver</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Handjiski</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Wendt</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Peters</surname> <given-names>EM</given-names></name>, <etal>et al</etal>. <article-title>Active hair growth (anagen) is associated with angiogenesis</article-title>. <source>J Invest Dermatol</source>. <year>2000</year>;<volume>114</volume>(<issue>5</issue>):<fpage>909</fpage>–<lpage>16</lpage>. <object-id pub-id-type="pmid">10771470</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yano</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Brown</surname> <given-names>LF</given-names></name>, <name name-style="western"><surname>Detmar</surname> <given-names>M</given-names></name>. <article-title>Control of hair growth and follicle size by VEGF-mediated angiogenesis</article-title>. <source>J Clin Invest</source>. <year>2001</year>;<volume>107</volume>(<issue>4</issue>):<fpage>409</fpage>–<lpage>17</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1172/JCI11317" xlink:type="simple">10.1172/JCI11317</ext-link></comment> <object-id pub-id-type="pmid">11181640</object-id>; PubMed Central PMCID: PMCPMC199257.</mixed-citation></ref>
+<ref id="pone.0147124.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ozeki</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Tabata</surname> <given-names>Y</given-names></name>. <article-title>In vivo promoted growth of mice hair follicles by the controlled release of growth factors</article-title>. <source>Biomaterials</source>. <year>2003</year>;<volume>24</volume>(<issue>13</issue>):<fpage>2387</fpage>–<lpage>94</lpage>. <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0142-9612(03)00045-0" xlink:type="simple">http://dx.doi.org/10.1016/S0142-9612(03)00045-0</ext-link>. <object-id pub-id-type="pmid">12699676</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref045"><label>45</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Simonetti</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Lucarini</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Bernardini</surname> <given-names>ML</given-names></name>, <name name-style="western"><surname>Simoncini</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Biagini</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Offidani</surname> <given-names>A</given-names></name>. <article-title>Expression of vascular endothelial growth factor, apoptosis inhibitors (survivin and p16) and CCL27 in alopecia areata before and after diphencyprone treatment: an immunohistochemical study</article-title>. <source>Br J Dermatol</source>. <year>2004</year>;<volume>150</volume>(<issue>5</issue>):<fpage>940</fpage>–<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-2133.2004.05881.x" xlink:type="simple">10.1111/j.1365-2133.2004.05881.x</ext-link></comment> <object-id pub-id-type="pmid">15149507</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref046"><label>46</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Man</surname> <given-names>XY</given-names></name>, <name name-style="western"><surname>Yang</surname> <given-names>XH</given-names></name>, <name name-style="western"><surname>Cai</surname> <given-names>SQ</given-names></name>, <name name-style="western"><surname>Bu</surname> <given-names>ZY</given-names></name>, <name name-style="western"><surname>Wu</surname> <given-names>XJ</given-names></name>, <name name-style="western"><surname>Lu</surname> <given-names>ZF</given-names></name>, <etal>et al</etal>. <article-title>Expression and localization of vascular endothelial growth factor and vascular endothelial growth factor receptor-2 in human epidermal appendages: a comparison study by immunofluorescence</article-title>. <source>Clin Exp Dermatol</source>. <year>2009</year>;<volume>34</volume>(<issue>3</issue>):<fpage>396</fpage>–<lpage>401</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-2230.2008.03104.x" xlink:type="simple">10.1111/j.1365-2230.2008.03104.x</ext-link></comment> <object-id pub-id-type="pmid">19309374</object-id>.</mixed-citation></ref>
+<ref id="pone.0147124.ref047"><label>47</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wu</surname> <given-names>X-J</given-names></name>, <name name-style="western"><surname>Zhu</surname> <given-names>J-W</given-names></name>, <name name-style="western"><surname>Jing</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Xue</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Zheng</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>VEGF165 modulates proliferation, adhesion, migration and differentiation of cultured human outer root sheath cells from central hair follicle epithelium through VEGFR-2 activation in vitro</article-title>. <source>J Dermatol Sci</source>. <year>2014</year>;<volume>73</volume>(<issue>2</issue>):<fpage>152</fpage>–<lpage>60</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jdermsci.2013.10.002" xlink:type="simple">10.1016/j.jdermsci.2013.10.002</ext-link></comment> <object-id pub-id-type="pmid">24296159</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref048"><label>48</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ebling</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Hale</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Randall</surname> <given-names>V</given-names></name>. <article-title>Hormones and hair growth</article-title>. <source>Biochemistry and Physiology of the Skin</source>. <year>1991</year>;<volume>1</volume>:<fpage>522</fpage>–<lpage>52</lpage>.</mixed-citation></ref>
+<ref id="pone.0147124.ref049"><label>49</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dicks</surname> <given-names>P</given-names></name>. <article-title>The role of prolactin and melatonin in regulating the timing of the spring moult in the cashmere goat</article-title>. <source>European Fine Fire Network, Occasional Publication</source>. <year>1994</year>;<volume>2</volume>(<issue>56</issue>):<fpage>109</fpage>–<lpage>27</lpage>.</mixed-citation></ref>
+<ref id="pone.0147124.ref050"><label>50</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slominski</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Paus</surname> <given-names>R</given-names></name>. <article-title>Melanogenesis is coupled to murine anagen: toward new concepts for the role of melanocytes and the regulation of melanogenesis in hair growth</article-title>. <source>J Invest Dermatol</source>. <year>1993</year>;<volume>101</volume>:<fpage>90S</fpage>–<lpage>7S</lpage>. <object-id pub-id-type="pmid">8326158</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref051"><label>51</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Slominski</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Wortsman</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Plonka</surname> <given-names>PM</given-names></name>, <name name-style="western"><surname>Schallreuter</surname> <given-names>KU</given-names></name>, <name name-style="western"><surname>Paus</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Tobin</surname> <given-names>DJ</given-names></name>. <article-title>Hair follicle pigmentation</article-title>. <source>J Invest Dermatol</source>. <year>2005</year>;<volume>124</volume>(<issue>1</issue>):<fpage>13</fpage>–<lpage>21</lpage>. <object-id pub-id-type="pmid">15654948</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref052"><label>52</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pearson</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Parry</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Ashby</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Choy</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Wildermoth</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Craven</surname> <given-names>A</given-names></name>. <article-title>Inhibitory effect of increased photoperiod on wool follicle growth</article-title>. <source>J Endocrinol</source>. <year>1996</year>;<volume>148</volume>(<issue>1</issue>):<fpage>157</fpage>–<lpage>66</lpage>. <object-id pub-id-type="pmid">8568463</object-id></mixed-citation></ref>
+<ref id="pone.0147124.ref053"><label>53</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nixon</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Ford</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Wildermoth</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Craven</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Ashby</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Pearson</surname> <given-names>A</given-names></name>. <article-title>Regulation of prolactin receptor expression in ovine skin in relation to circulating prolactin and wool follicle growth status</article-title>. <source>J Endocrinol</source>. <year>2002</year>;<volume>172</volume>(<issue>3</issue>):<fpage>605</fpage>–<lpage>14</lpage>. <object-id pub-id-type="pmid">11874709</object-id></mixed-citation></ref>
+</ref-list>
+</back>
+</article>

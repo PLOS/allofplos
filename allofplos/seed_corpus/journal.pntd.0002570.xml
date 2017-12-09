@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS Negl Trop Dis</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosntds</journal-id><journal-title-group>
+<journal-title>PLoS Neglected Tropical Diseases</journal-title></journal-title-group>
+<issn pub-type="epub">1935-2735</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PNTD-D-13-00821</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pntd.0002570</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Viewpoints</subject></subj-group></article-categories>
+<title-group>
+<article-title>NTDs V.2.0: “Blue Marble Health”—Neglected Tropical Disease Control and Elimination in a Shifting Health Policy Landscape</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>Peter J.</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="aff" rid="aff2"><sup>2</sup></xref><xref ref-type="aff" rid="aff3"><sup>3</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Departments of Pediatrics and Molecular Virology and Microbiology, National School of Tropical Medicine at Baylor College of Medicine, Houston, Texas, United States of America</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Sabin Vaccine Institute and Texas Children's Hospital Center for Vaccine Development, Houston, Texas, United States of America</addr-line></aff>
+<aff id="aff3"><label>3</label><addr-line>James A. Baker III Institute at Rice University, Houston, Texas, United States of America</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Knopp</surname><given-names>Stefanie</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>Natural History Museum, United Kingdom</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">hotez@bcm.edu</email></corresp>
+<fn fn-type="conflict"><p>The author has declared that no competing interests exist.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><month>11</month><year>2013</year></pub-date>
+<pub-date pub-type="epub"><day>21</day><month>11</month><year>2013</year></pub-date>
+<volume>7</volume>
+<issue>11</issue>
+<elocation-id>e2570</elocation-id><permissions>
+<copyright-year>2013</copyright-year>
+<copyright-holder>Peter J. Hotez</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract>
+<p>The concept of the neglected tropical diseases (NTDs) was established in the aftermath of the Millennium Development Goals. Here, we summarize the emergence of several new post-2010 global health documents and policies, and how they may alter the way we frame the world's major NTDs since they were first highlighted. These documents include a new Global Burden of Disease 2010 Study that identifies visceral leishmaniasis and food-borne trematode infections as priority diseases beyond the seven NTDs originally targeted by preventive chemotherapy, a London Declaration for access to essential medicines, and a 2013 World Health Assembly resolution on NTDs. Additional information highlights an emerging dengue fever pandemic. New United Nations resolutions on women and the non-communicable diseases (NCDs) have not yet embraced NTDs, which may actually be the most common afflictions of girls and women and represent a stealth cause of NCDs. NTDs also have important direct and collateral effects on HIV/AIDS and malaria, and there is now a robust evidence base and rationale for incorporating NTDs into the Global Fund to Fight AIDS, Tuberculosis, and Malaria. “Blue marble health” is an added concept that recognizes a paradoxical NTD disease burden among the poor living in G20 (Group of Twenty) and other wealthy countries, requiring these nations to take greater ownership for both disease control and research and development. As we advance past the year 2015, it will be essential to incorporate global NTD elimination into newly proposed Sustainable Development Goals. </p>
+</abstract>
+<funding-group><funding-statement>There was no direct funding for this article.</funding-statement></funding-group><counts><page-count count="7"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction: Version 1.0</title>
+<p>The conceptual framework of the neglected tropical diseases (NTDs) began to take shape in the first few years following the 2000 Millennium Development Goals (MDGs), which called for efforts to combat “other diseases” alongside HIV/AIDS and malaria (MDG 6). It was recognized that a group of 13 or more parasitic and tropical infections have a number of common features including their chronicity and ability to cause long-term disabilities, especially among the extreme poor living in low- and middle-income countries <xref ref-type="bibr" rid="pntd.0002570-Molyneux1">[1]</xref>–<xref ref-type="bibr" rid="pntd.0002570-Hotez2">[5]</xref>. Moreover, their public health importance (measured in disability-adjusted life years [DALYs]) was determined to be roughly equivalent to HIV/AIDS and malaria <xref ref-type="bibr" rid="pntd.0002570-Hotez1">[3]</xref>. Critical to this framework was the concept of integrating control of at least seven of these NTDs—three soil-transmitted helminth infections, schistosomiasis, lymphatic filariasis (LF), onchocerciasis, and trachoma—through a low-cost “rapid impact package” of essential medicines now mostly donated by the multinational pharmaceutical companies <xref ref-type="bibr" rid="pntd.0002570-Molyneux1">[1]</xref>–<xref ref-type="bibr" rid="pntd.0002570-Hotez2">[5]</xref>. The approach was considered “pro-poor” because the NTDs trapped people in poverty through their impact on child development, worker productivity, and other factors <xref ref-type="bibr" rid="pntd.0002570-Hotez3">[6]</xref>. Today, national programs of NTD control and elimination are underway in at least 20 developing countries, predominantly through financial support of the Governments of the United States and United Kingdom <xref ref-type="bibr" rid="pntd.0002570-USAIDs1">[7]</xref>, <xref ref-type="bibr" rid="pntd.0002570-Gov1">[8]</xref>, in addition to a private END (Ending Neglected Disease) Fund <xref ref-type="bibr" rid="pntd.0002570-The1">[9]</xref>, while under separate auspices, focused elimination and eradication efforts are underway for guinea worm <xref ref-type="bibr" rid="pntd.0002570-Centers1">[10]</xref> and leprosy <xref ref-type="bibr" rid="pntd.0002570-World1">[11]</xref>. In 2010, the World Health Organization (WHO) launched its first report on NTDs and expanded the list of major NTDs to 17 <xref ref-type="bibr" rid="pntd.0002570-World2">[12]</xref>.</p>
+<p>The “NTD movement” was not launched in a vacuum. Instead, it was constructed on a foundation of several key global health policies and documents that were advanced in the first few years of the new Millennium, including the MDGs, the <italic>Report on the Commission on Macroeconomics and Health</italic> led by Jeffrey Sachs, and <italic>Our Common Interest: Report of the Commission for Africa</italic>, commissioned by British Prime Minister Tony Blair <xref ref-type="bibr" rid="pntd.0002570-Hotez4">[13]</xref>. In parallel, key WHO meetings were held in Geneva and Berlin; the latter sponsored by the German Organisation for Technical Cooperation (GTZ) <xref ref-type="bibr" rid="pntd.0002570-Hotez4">[13]</xref>. These initiatives played an essential role for establishing a framework to integrate NTD control and elimination efforts through mass drug administration (also known as “preventive chemotherapy”) and allied approaches <xref ref-type="bibr" rid="pntd.0002570-Hotez4">[13]</xref>.</p>
+<p>Following this first NTD period (V.1.0)—when the United States and United Kingdom Governments first initiated, and later scaled up, support for NTDs—we may be entering a new phase that began after 2010. Over the past three to four years, several new key global health policies and documents began to emerge (See <xref ref-type="table" rid="pntd-0002570-t001">Table 1</xref>). Such activities may alter how we conceptually frame NTDs for policymakers and proceed on expanded, or even new, paths for disease elimination. Here, we briefly report on how these developments in the context of a shifting policy landscape could have a significant impact on global NTD control and elimination.</p>
+<table-wrap id="pntd-0002570-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pntd.0002570.t001</object-id><label>Table 1</label><caption>
+<title>Comparisons between strategies and policies related to the NTDs: 2005–06 vs. 2013–14.</title>
+</caption><alternatives><graphic id="pntd-0002570-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pntd.0002570.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Category</td>
+<td align="left" rowspan="1" colspan="1">V.1.0: 2005–06</td>
+<td align="left" rowspan="1" colspan="1">V.2.0: 2013–14</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Diseases</td>
+<td align="left" rowspan="1" colspan="1">Seven Major NTDs; 13 Overall</td>
+<td align="left" rowspan="1" colspan="1">17 NTDs</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Highest disease burden</td>
+<td align="left" rowspan="1" colspan="1">Hookworm &amp; other STHis<xref ref-type="table-fn" rid="nt101">1</xref>, Schistosomiasis, Lymphatic filariasis</td>
+<td align="left" rowspan="1" colspan="1">Visceral leishmaniasis, SchistosomiasisHookworm, and other STHis<xref ref-type="table-fn" rid="nt101">1</xref>, Lymphatic filariasis, Food-borne trematode infections</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rapid impact packages</td>
+<td align="left" rowspan="1" colspan="1">Publication of policy papers</td>
+<td align="left" rowspan="1" colspan="1">Implementation in &gt;20 countries</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Potential targets for elimination/eradiation in the coming decade</td>
+<td align="left" rowspan="1" colspan="1">Dracunculiasis, Leprosy</td>
+<td align="left" rowspan="1" colspan="1">Dracunculiasis, Leprosy, Lymphatic filariasis, Onchocerciasis, Trachoma, Sleeping sickness, Visceral leishmaniasis, Canine rabies</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Special at-risk populations</td>
+<td align="left" rowspan="1" colspan="1">Indigenous</td>
+<td align="left" rowspan="1" colspan="1">Indigenous; Girls and Women</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Incorporation into PEPFAR &amp; GFATM</td>
+<td align="left" rowspan="1" colspan="1">None</td>
+<td align="left" rowspan="1" colspan="1">Limited; One success story in Togo</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Links with NCDs</td>
+<td align="left" rowspan="1" colspan="1">None</td>
+<td align="left" rowspan="1" colspan="1">Published studies illustrating how NTDs are stealth causes of cardiovascular disease, cancer, and chronic pulmonary disease, among other conditions</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Major Geographic Targets</td>
+<td align="left" rowspan="1" colspan="1">Sub-Saharan Africa</td>
+<td align="left" rowspan="1" colspan="1">Sub-Saharan Africa+G20 Countries</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Key Policy Documents and Frameworks</td>
+<td align="left" rowspan="1" colspan="1">Millennium Development Goals, Commission on Macroeconomics and Health, and Commission for Africa</td>
+<td align="left" rowspan="1" colspan="1">London Declaration for NTDs, WHA Resolution, UN Women, UN Resolution on Prevention and Control of NCDs, Post-2015 MDGs, and Sustainable Development Goals</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label>1</label><p>STHis = Soil-transmitted helminth infections</p></fn></table-wrap-foot></table-wrap></sec><sec id="s2">
+<title>Global Burden of Disease 2010 Study: The High Disease Burden NTDs</title>
+<p>Early efforts to quantify the global burden of the major NTDs in DALYs found that these conditions were roughly equivalent to the DALYs lost from any of the “big three” conditions (i.e., HIV/AIDS, tuberculosis, and malaria), led by hookworm and other intestinal helminth infections, schistosomiasis, and lymphatic filariasis <xref ref-type="bibr" rid="pntd.0002570-Hotez1">[3]</xref>. In December 2012, the major results of the Global Burden of Disease 2010 (GBD 2010) Study were published, which calculated the disease burden for almost 300 diseases and injuries, including 17 NTDs <xref ref-type="bibr" rid="pntd.0002570-Lozano1">[14]</xref>–<xref ref-type="bibr" rid="pntd.0002570-Murray1">[16]</xref>. The results confirmed previous studies indicating that (with a few exceptions) the NTDs are mostly low mortality (measured in years of life lost—YLLs), but high morbidity (measured in years lived with disability—YLDs) conditions <xref ref-type="bibr" rid="pntd.0002570-Lozano1">[14]</xref>, <xref ref-type="bibr" rid="pntd.0002570-Vos1">[15]</xref>. However, GBD 2010 also found that in addition to the high disease burden helminthic NTDs identified in 2006 <xref ref-type="bibr" rid="pntd.0002570-Hotez1">[3]</xref>, the major kinetoplastid protozoan infections led by visceral leishmaniasis (VL), as well as sleeping sickness and Chagas disease, were also highly ranked in terms of DALYs lost annually <xref ref-type="bibr" rid="pntd.0002570-Murray1">[16]</xref>. The food-borne trematode infections, especially paragonimiasis and liver fluke infection, were also found to be important, as were selected emerging viral infections such as dengue or rabies <xref ref-type="bibr" rid="pntd.0002570-Murray1">[16]</xref>. Specifically regarding dengue, there is follow-up information pointing to an emerging pandemic with the troubling finding that up to 390 million dengue cases may occur annually <xref ref-type="bibr" rid="pntd.0002570-Bhatt1">[17]</xref>. Thus, any control or elimination strategy that fully embraces the major NTDs would need to address these specific diseases. Indeed, since 2010, several investigators have put forward suggestions for the global or regional elimination of sleeping sickness, VL, and canine rabies (the principal source of human infection) <xref ref-type="bibr" rid="pntd.0002570-Simarro1">[18]</xref>–<xref ref-type="bibr" rid="pntd.0002570-Ferdousi1">[20]</xref>.</p>
+</sec><sec id="s3">
+<title>UN Women: NTDs in Girls and Women</title>
+<p>In 2010, the United Nations General Assembly established UN Women as an initiative for gender equality and empowerment of women, operating through partnerships, civil societies, and the governments of member states <xref ref-type="bibr" rid="pntd.0002570-United1">[21]</xref>. These efforts paralleled efforts led by then-U.S. Secretary of State Hillary Clinton, which were documented in the First Quadrennial Diplomacy and Development Review <xref ref-type="bibr" rid="pntd.0002570-US1">[22]</xref>, and included the hiring of Melanne Verveer as the first United States Ambassador for Global Women's Issues <xref ref-type="bibr" rid="pntd.0002570-US2">[23]</xref>. There has also been increasing recognition of the disproportionate impact of NTDs on the health of girls and women <xref ref-type="bibr" rid="pntd.0002570-Hotez5">[24]</xref>, especially as a result of female urogenital schistosomiasis <xref ref-type="bibr" rid="pntd.0002570-Kjetland1">[25]</xref>, <xref ref-type="bibr" rid="pntd.0002570-Mbabazi1">[26]</xref>, possibly now the most common gynecologic condition among African women <xref ref-type="bibr" rid="pntd.0002570-Hotez6">[27]</xref>, in addition to hookworm infections and dengue in pregnancy <xref ref-type="bibr" rid="pntd.0002570-Brooker1">[28]</xref>, <xref ref-type="bibr" rid="pntd.0002570-Machado1">[29]</xref>, and mother-to-child transmission of Chagas disease <xref ref-type="bibr" rid="pntd.0002570-SestiCosta1">[30]</xref>, among other conditions <xref ref-type="bibr" rid="pntd.0002570-Roberts1">[31]</xref>. However, to date, very few organizations or initiatives committed to girls and women have understood or yet fully embraced the importance of the NTDs. Global advocacy efforts will need to better link NTDs to adverse global women's health and direct UN Women to these diseases.</p>
+</sec><sec id="s4">
+<title>Links to HIV/AIDS and Malaria and the Togo Study</title>
+<p>One of the very first papers to highlight the concept of NTDs simultaneously pointed out their potential and actual links to HIV/AIDS, tuberculosis, and malaria <xref ref-type="bibr" rid="pntd.0002570-Hotez1">[3]</xref>. Since then, a body of evidence has confirmed the associations between female urogenital schistosomiasis and HIV/AIDS <xref ref-type="bibr" rid="pntd.0002570-Kjetland1">[25]</xref>–<xref ref-type="bibr" rid="pntd.0002570-Hotez6">[27]</xref>, hookworm infections and malaria <xref ref-type="bibr" rid="pntd.0002570-Noblick1">[32]</xref>, <xref ref-type="bibr" rid="pntd.0002570-Brooker2">[33]</xref>, and other common links between NTDs and the big three diseases <xref ref-type="bibr" rid="pntd.0002570-Brooker3">[34]</xref>. Despite an ever-growing evidence base for rational incorporation of NTD control and elimination efforts into the Global Fund to Fight AIDS, Tuberculosis, and Malaria (GFATM) and the United States President's Emergency Plan for AIDS Relief (PEPFAR) <xref ref-type="bibr" rid="pntd.0002570-Brooker3">[34]</xref>, <xref ref-type="bibr" rid="pntd.0002570-Hotez7">[35]</xref>, there has been only sporadic inclusion of NTDs into these programs. An important exception and success story was the recent publication of near elimination of lymphatic filariasis in Togo through mass drug administration, which was supported through the GFATM <xref ref-type="bibr" rid="pntd.0002570-Sodahlon1">[36]</xref>. NTDs V.2.0 will require substantive and better incorporation into GFATM and PEPFAR.</p>
+</sec><sec id="s5">
+<title>Hidden Links to the Non-Communicable Diseases</title>
+<p>An important conclusion of the GBD 2010 Study is the increasing disease burden over the last 20 years that results from the non-communicable diseases (NCDs), e.g., cardiovascular disease, cancer, chronic pulmonary disease, and diabetes, with a roughly commensurate decrease in the disease burden resulting from infectious or communicable diseases <xref ref-type="bibr" rid="pntd.0002570-Lozano1">[14]</xref>. In anticipation of this finding, in 2011, at UN headquarters in New York, a high level summit on the NCDs adopted a resolution for the prevention and control of these conditions <xref ref-type="bibr" rid="pntd.0002570-United2">[37]</xref>. Mostly unappreciated is the stealth contribution of the NTDs to the NCD disease burden in developing countries <xref ref-type="bibr" rid="pntd.0002570-Hotez8">[38]</xref>. The NTDs are chronic and debilitating conditions that in many respects more closely resemble NCDs than most infections. For instance Chagas disease and loiasis are important causes of human cardiovascular disease; liver fluke and schistosomiasis are leading causes of cancer; and paragonimiasis and toxocariasis are leading causes of chronic pulmonary disease <xref ref-type="bibr" rid="pntd.0002570-Hotez8">[38]</xref>. However, with the exception of a 2011 conference held in Boston led by Partners in Health <xref ref-type="bibr" rid="pntd.0002570-Partners1">[39]</xref>, the role of NTDs has not yet entered high-level policy discussions on the NCDs.</p>
+</sec><sec id="s6">
+<title>NTDs in the G20: A Foreign Policy Framework for the Poor among the Wealthy</title>
+<p>The rapid impact package was originally conceived in 2005 to emphasize mass drug administration efforts in Sub-Saharan Africa, where almost all of the world's cases of schistosomiasis and onchocerciasis were found, as well as more than one-third of the cases of trachoma and lymphatic filariasis <xref ref-type="bibr" rid="pntd.0002570-Molyneux1">[1]</xref>. However, in consideration of the high disease burden NTDs identified by the GBD 2010 Study, we will need to embrace additional NTDs, such as VL and food-borne trematode infections, among others. Somewhat paradoxically, we have found that many of these highest disease burden NTDs occur predominantly in the largest emerging market economies that comprise the group of 20 nations (G20), in addition to Nigeria, which also has one of the world's largest economies <xref ref-type="bibr" rid="pntd.0002570-Hotez9">[40]</xref>. <xref ref-type="table" rid="pntd-0002570-t002">Table 2</xref> shows a detailed analysis of the distribution of some of these diseases; a summary of which was published earlier in <italic>Foreign Policy</italic> <xref ref-type="bibr" rid="pntd.0002570-Hotez9">[40]</xref>. Brazil, China, India, Indonesia, and Nigeria have the largest number of these NTDs, but even very wealthy nations, such as the United States, have a hidden burden of NTDs, especially in the American South <xref ref-type="bibr" rid="pntd.0002570-Hotez10">[41]</xref>. Thus, while Sub-Saharan Africa remains a key region affected by NTDs, as we advance to NTDs V.2.0, we will need to embrace the observation that these conditions are also widespread among wealthier G20 countries. As shown in <xref ref-type="fig" rid="pntd-0002570-g001">Figure 1</xref>, which was also published previously in <italic>Foreign Policy</italic>, it is the extreme poor living among the wealthy who disproportionately suffer from the world's NTDs <xref ref-type="bibr" rid="pntd.0002570-Hotez9">[40]</xref>. This blurring between the health of developed and developing countries has been termed “blue marble health” <xref ref-type="bibr" rid="pntd.0002570-Hotez9">[40]</xref>, in reference to the photograph of Earth (and a symbol for peace) taken by the Apollo 17 astronauts <xref ref-type="bibr" rid="pntd.0002570-Petsko1">[42]</xref>, and is meant to foster a global dialogue on the importance of poverty as a key underlying factor for NTDs, regardless of where they occur (<xref ref-type="fig" rid="pntd-0002570-g002">Figure 2</xref>). Blue marble health has the potential to be shaped into a new policy framework as it suggests that a substantial portion of the world's NTDs, up to one-half, or more, in some cases, may be eliminated if each of the G20 countries would assume greater responsibility for their own NTD problem and expand their indigenous control and elimination efforts. It was suggested previously that the new United States Department of State Office of Global Health Diplomacy (together with the UN and WHO) could have an important role in exerting diplomatic pressure on the G20 nations to aggressively pursue NTD disease control priorities <xref ref-type="bibr" rid="pntd.0002570-Hotez9">[40]</xref>.</p>
+<fig id="pntd-0002570-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pntd.0002570.g001</object-id><label>Figure 1</label><caption>
+<title>The poor living among the wealthy.</title>
+<p>Major areas of poverty in the G20 nations and Nigeria, where most of the world's NTDs occur (map prepared by Esther Inman). Figure originally appeared in “The Disease Next Door” by Peter Hotez, <italic>Foreign Policy</italic>, March 25, 2013, <ext-link ext-link-type="uri" xlink:href="http://www.foreignpolicy.com" xlink:type="simple">www.foreignpolicy.com</ext-link>. Information for Europe from Hotez PJ, Gurwith M. 2011. Europe's neglected infections of poverty. Int J Infect Dis 15: e611–9. Information for US and Mexico from Hotez PJ, Bottazzi ME, Dumonteil E, Valenzuela JG, et al. 2012. Texas and Mexico: sharing a legacy of poverty and neglected tropical diseases. PLOS Negl Trop Dis 6: e1497; Hotez PJ. 2012. Fighting neglected tropical diseases in the southern United States. BMJ 345: e6112; Hotez PJ. 2011. America's most distressed areas and their neglected infections: the United States Gulf Coast and the District of Columbia. PLOS Negl Trop Dis 5: e843; <ext-link ext-link-type="uri" xlink:href="http://geo-mexico.com/?tag=economics&amp;paged=2" xlink:type="simple">http://geo-mexico.com/?tag=economics&amp;paged=2</ext-link> accessed December 26, 2012; and <ext-link ext-link-type="uri" xlink:href="http://www.plosntds.org/article/info%3Adoi%2F10.1371%2Fjournal.pntd.0000256" xlink:type="simple">http://www.plosntds.org/article/info%3Adoi%2F10.1371%2Fjournal.pntd.0000256</ext-link>, accessed December 26, 2012. Information for India from <ext-link ext-link-type="uri" xlink:href="http://mapsofindia.com/maps/india/poverty.html" xlink:type="simple">http://mapsofindia.com/maps/india/poverty.html</ext-link>, accessed December 25, 2012. Information for China from Hotez PJ. 2012. Engaging a rising China through neglected tropical diseases. PLOS Negl Trop Dis 6: e1599. Information for Brazil from <ext-link ext-link-type="uri" xlink:href="http://web.worldbank.org/WBSITE/EXTERNAL/COUNTRIES/LACEXT/EXTLACREGTOPPOVANA/0,,contentMDK:22416581~pagePK:34004173~piPK:34003707~theSitePK:841175,00.html" xlink:type="simple">http://web.worldbank.org/WBSITE/EXTERNAL/COUNTRIES/LACEXT/EXTLACREGTOPPOVANA/0,,contentMDK:22416581~pagePK:34004173~piPK:34003707~theSitePK:841175,00.html</ext-link>, accessed December 26, 2012; Information for Indonesia from <ext-link ext-link-type="uri" xlink:href="http://sedac.ciesin.columbia.edu/data/set/povmap-small-area-estimates-poverty-inequality/maps/5" xlink:type="simple">http://sedac.ciesin.columbia.edu/data/set/povmap-small-area-estimates-poverty-inequality/maps/5</ext-link>, accessed December 26, 2012. Information for South Africa from <ext-link ext-link-type="uri" xlink:href="http://www.cepf.net/where_we_work/regions/africa/maputaland/ecosystem_profile/Pages/socioeconomic_context.aspx" xlink:type="simple">http://www.cepf.net/where_we_work/regions/africa/maputaland/ecosystem_profile/Pages/socioeconomic_context.aspx</ext-link>, accessed December 26, 2012. Information for Australia from <ext-link ext-link-type="uri" xlink:href="http://www.abs.gov.au/ausstats/abs.nsf/Latestproducts/1362.7Feature%20Article1Mar%202011?opendocument" xlink:type="simple">http://www.abs.gov.au/ausstats/abs.nsf/Latestproducts/1362.7Feature%20Article1Mar%202011?opendocument</ext-link>, accessed December 31, 2012. Information for Gran Chaco region of Argentina from <ext-link ext-link-type="uri" xlink:href="http://en.wikipedia.org/wiki/File:GranChacoApproximate.jpg" xlink:type="simple">http://en.wikipedia.org/wiki/File:GranChacoApproximate.jpg</ext-link>, accessed January 4, 2013.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pntd.0002570.g001" position="float" xlink:type="simple"/></fig><fig id="pntd-0002570-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pntd.0002570.g002</object-id><label>Figure 2</label><caption>
+<title>“The Blue Marble”—an international symbol of peace and healing—photographed by Astronauts, Eugene Cernan, Ronald Evans, and Jack Schmitt, December 7, 1972; </title>
+<p><ext-link ext-link-type="uri" xlink:href="http://visibleearth.nasa.gov/view.php?id=55418" xlink:type="simple">http://visibleearth.nasa.gov/view.php?id=55418</ext-link><bold>, accessed December 25, 2012.</bold></p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pntd.0002570.g002" position="float" xlink:type="simple"/></fig><table-wrap id="pntd-0002570-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pntd.0002570.t002</object-id><label>Table 2</label><caption>
+<title>Neglected Tropical Diseases in the G-20 countries and Nigeria<xref ref-type="table-fn" rid="nt102">1</xref>.</title>
+</caption><alternatives><graphic id="pntd-0002570-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pntd.0002570.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Country</td>
+<td align="left" rowspan="1" colspan="1">GDP Rank<xref ref-type="table-fn" rid="nt103">2</xref></td>
+<td align="left" rowspan="1" colspan="1">Cases of Visceral Leishmaniasis reported<xref ref-type="table-fn" rid="nt104">3</xref></td>
+<td align="left" rowspan="1" colspan="1">Cases of Schisto-somiasis<xref ref-type="table-fn" rid="nt105">4</xref></td>
+<td align="left" rowspan="1" colspan="1">Cases of Hookworm<xref ref-type="table-fn" rid="nt106">5</xref><sup>–</sup><xref ref-type="table-fn" rid="nt108">7</xref></td>
+<td align="left" rowspan="1" colspan="1">Population requiring MDA for lymphatic filariasis<xref ref-type="table-fn" rid="nt109">8</xref><sup>, </sup><xref ref-type="table-fn" rid="nt110">9</xref></td>
+<td align="left" rowspan="1" colspan="1">Cases of Food-borne trematodiases<xref ref-type="table-fn" rid="nt111">10</xref></td>
+<td align="left" rowspan="1" colspan="1">Registered cases of leprosy<xref ref-type="table-fn" rid="nt112">11</xref></td>
+<td align="left" rowspan="1" colspan="1">Cases of Chagas disease<xref ref-type="table-fn" rid="nt113">12</xref></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">United States</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.3 million</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">China</td>
+<td align="left" rowspan="1" colspan="1">2</td>
+<td align="left" rowspan="1" colspan="1">378</td>
+<td align="left" rowspan="1" colspan="1">0.8 million</td>
+<td align="left" rowspan="1" colspan="1">39 million</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">38 million</td>
+<td align="left" rowspan="1" colspan="1">2,468</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Japan</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">&lt;1 million</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Germany</td>
+<td align="left" rowspan="1" colspan="1">4</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">France</td>
+<td align="left" rowspan="1" colspan="1">5</td>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Brazil</td>
+<td align="left" rowspan="1" colspan="1">6</td>
+<td align="left" rowspan="1" colspan="1">3,481</td>
+<td align="left" rowspan="1" colspan="1">1.5 million</td>
+<td align="left" rowspan="1" colspan="1">32 million</td>
+<td align="left" rowspan="1" colspan="1">2 million</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">29,690</td>
+<td align="left" rowspan="1" colspan="1">1.9 million</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">United Kingdom</td>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Italy</td>
+<td align="left" rowspan="1" colspan="1">8</td>
+<td align="left" rowspan="1" colspan="1">134</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Russia</td>
+<td align="left" rowspan="1" colspan="1">9</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">&lt;1 million</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">India</td>
+<td align="left" rowspan="1" colspan="1">10</td>
+<td align="left" rowspan="1" colspan="1">34,918</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">71 million</td>
+<td align="left" rowspan="1" colspan="1">610 million</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">83,187</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Canada</td>
+<td align="left" rowspan="1" colspan="1">11</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">&lt;0.1 million</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Australia</td>
+<td align="left" rowspan="1" colspan="1">12</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mexico</td>
+<td align="left" rowspan="1" colspan="1">14</td>
+<td align="left" rowspan="1" colspan="1">7</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">&lt;1 million</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">480</td>
+<td align="left" rowspan="1" colspan="1">1.1 million</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">South Korea</td>
+<td align="left" rowspan="1" colspan="1">15</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1–2 million</td>
+<td align="left" rowspan="1" colspan="1">265</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Indonesia</td>
+<td align="left" rowspan="1" colspan="1">16</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">&lt;0.1 million</td>
+<td align="left" rowspan="1" colspan="1">62 million</td>
+<td align="left" rowspan="1" colspan="1">123 million</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">23,169</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Turkey</td>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="left" rowspan="1" colspan="1">29</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Saudi Arabia</td>
+<td align="left" rowspan="1" colspan="1">20</td>
+<td align="left" rowspan="1" colspan="1">34</td>
+<td align="left" rowspan="1" colspan="1">&lt;0.1 million</td>
+<td align="left" rowspan="1" colspan="1">&lt;1 million</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">5</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Argentina</td>
+<td align="left" rowspan="1" colspan="1">27</td>
+<td align="left" rowspan="1" colspan="1">8</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">2 million</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">723</td>
+<td align="left" rowspan="1" colspan="1">1.6 million</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">South Africa</td>
+<td align="left" rowspan="1" colspan="1">29</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">4.9 million</td>
+<td align="left" rowspan="1" colspan="1">5 million</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Nigeria</td>
+<td align="left" rowspan="1" colspan="1">40</td>
+<td align="left" rowspan="1" colspan="1">1</td>
+<td align="left" rowspan="1" colspan="1">28.8 million</td>
+<td align="left" rowspan="1" colspan="1">38 million</td>
+<td align="left" rowspan="1" colspan="1">106 million</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Total cases in G-20+Nigeria</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">39,008 reported</td>
+<td align="left" rowspan="1" colspan="1">36 million</td>
+<td align="left" rowspan="1" colspan="1">249 million</td>
+<td align="left" rowspan="1" colspan="1">841 million</td>
+<td align="left" rowspan="1" colspan="1">40 million</td>
+<td align="left" rowspan="1" colspan="1">139,994</td>
+<td align="left" rowspan="1" colspan="1">4.9 million</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Total cases globally</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">58,227 reported</td>
+<td align="left" rowspan="1" colspan="1">207 million</td>
+<td align="left" rowspan="1" colspan="1">576 million</td>
+<td align="left" rowspan="1" colspan="1">1.392 billion</td>
+<td align="left" rowspan="1" colspan="1">56 million</td>
+<td align="left" rowspan="1" colspan="1">181,941</td>
+<td align="left" rowspan="1" colspan="1">8 million</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">% of cases in G-20+Nigeria</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">67%</td>
+<td align="left" rowspan="1" colspan="1">17%</td>
+<td align="left" rowspan="1" colspan="1">43%</td>
+<td align="left" rowspan="1" colspan="1">60%</td>
+<td align="left" rowspan="1" colspan="1">71%</td>
+<td align="left" rowspan="1" colspan="1">77%</td>
+<td align="left" rowspan="1" colspan="1">61%</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt102"><label>1</label><p>A summary version of this table appeared in Reference 40.</p></fn><fn id="nt103"><label>2</label><p><ext-link ext-link-type="uri" xlink:href="https://www.cia.gov/library/publications/the-world-factbook/fields/2195.html" xlink:type="simple">https://www.cia.gov/library/publications/the-world-factbook/fields/2195.html</ext-link>, accessed December 31, 2012.</p></fn><fn id="nt104"><label>3</label><p>Alvar J, Velez IV, Bern C, Herrero M, Desjeux P, Cano J, Jannin J, den Boer M, the WHO Leishmaniasis Control Team. 2012. Leishmaniasis worldwide and global estimates of its incidence. PLOS One 7: e35671.</p></fn><fn id="nt105"><label>4</label><p>Steinmann P, Keiser J, Bos R, Tanner M, Utzinger J. 2006. Schistosomiasis and water resources development: systematic review, meta-analysis, and estimates of people at risk. Lancet Infect Dis 6: 411–25.</p></fn><fn id="nt106"><label>5</label><p>de Silva NR, Brooker S, Hotez PJ, Montresor A, Engels D, Savioli L. 2003. Soil-transmitted helminth infections: updating the global picture. Trends Parasitol 19: 547–551.</p></fn><fn id="nt107"><label>6</label><p>Bethony J, Brooker S, Albonico M, Geiger SM, Loukas A, Diemert D, Hotez PJ. 2006. Soil-transmitted helminth infections: ascariasis, trichuriasis, and hookworm. Lancet 367: 1521–32.</p></fn><fn id="nt108"><label>7</label><p>Li T, He S, Zhao H, Zhao G, Zhu X-Q. 2010. Major trends in human parasitic diseases in China. Trends Parasitol 26: 264–270.</p></fn><fn id="nt109"><label>8</label><p><ext-link ext-link-type="uri" xlink:href="http://www.who.int/neglected_diseases/preventive_chemotherapy/lf/db/index.html?units=minimal&amp;region=all&amp;country=all&amp;countries=all&amp;year=2011#" xlink:type="simple">http://www.who.int/neglected_diseases/preventive_chemotherapy/lf/db/index.html?units=minimal&amp;region=all&amp;country=all&amp;countries=all&amp;year=2011#</ext-link>, accessed December 24, 2012.</p></fn><fn id="nt110"><label>9</label><p>World Health Organization. 2012. Integrated preventive chemotherapy for neglected tropical diseases: estimation of the number of interventions required and delivered, 2009–2010. Weekly Epidemiol Rec 87: 17–28.</p></fn><fn id="nt111"><label>10</label><p>Furst T, Keiser J, Utzinger J. 2012. Global burden of human food-borne trematodiasis: a systematic review and meta-analysis. Lancet Infect Dis 12: 210–221.</p></fn><fn id="nt112"><label>11</label><p>World Health Organization 2012. Global leprosy situation, 2012. Weekly Epidemiological Record 87 317–28.</p></fn><fn id="nt113"><label>12</label><p>Bern C, Kjos S, Yabsley MJ, Montgomery SP. 2011. Trypanosoma cruzi and Chagas' disease in the United States. Clin Microbiol Rev 24: 655–81.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s7">
+<title>The R&amp;D Agenda and Vaccine Diplomacy</title>
+<p>The importance of the G20 countries in effecting NTD control and elimination also extends to research and development (R&amp;D). More than three-quarters of the world's public-sector global health R&amp;D investments come from the Governments of the United States and United Kingdom, with so far minimal public investments from the other G20 nations <xref ref-type="bibr" rid="pntd.0002570-Policy1">[43]</xref>. New technologies for most of the highest disease burden NTDs, including new medicines, vaccines, diagnostics, and insecticides are urgently needed <xref ref-type="bibr" rid="pntd.0002570-Hotez11">[44]</xref>. In 2010, a Consultative Expert Working Group (CEWG) of the WHO was established to advance a series of recommendations <xref ref-type="bibr" rid="pntd.0002570-World3">[45]</xref>. Among their findings, CEWG confirmed the inadequacy of funding for global health R&amp;D funding, especially for product development, the lack of incentives for private-sector investment, and deficiencies in the current intellectual property system <xref ref-type="bibr" rid="pntd.0002570-World3">[45]</xref>. CEWG identified a need to explore innovative financing mechanisms that include financial commitments from countries, as well as a requirement to establish a global health R&amp;D “observatory” under the auspices of the WHO to collect information and prioritize an R&amp;D pipeline <xref ref-type="bibr" rid="pntd.0002570-World3">[45]</xref>, <xref ref-type="bibr" rid="pntd.0002570-Hotez12">[46]</xref>. In response, a US-based group of experts was convened to move forward recommendations on how to prioritize, coordinate, finance, and execute R&amp;D to meet health needs in developing countries <xref ref-type="bibr" rid="pntd.0002570-Hotez12">[46]</xref>. The U.S. group supported the concept of a global health observatory, and also supported expanding a financial base for public R&amp;D expenditures through greater involvement from G20 countries other than the United States and United Kingdom, especially China, which has an active industrial investment portfolio in Sub-Saharan Africa <xref ref-type="bibr" rid="pntd.0002570-Hotez12">[46]</xref>. In general, global health investments are not easy to encourage, given that most nations do not consider R&amp;D as a component of overseas development assistance <xref ref-type="bibr" rid="pntd.0002570-Hotez12">[46]</xref>. It was also noted that support would need to be provided for both public and private R&amp;D institutions with a goal to promote true public-private partnerships <xref ref-type="bibr" rid="pntd.0002570-Hotez12">[46]</xref>. More than a dozen developing country vaccine manufacturers were identified that currently participate in an important network alongside product development partnerships, midsize biotechs, and multinational pharmaceutical companies <xref ref-type="bibr" rid="pntd.0002570-Hotez12">[46]</xref>. It was also noted that there is a new level of regulatory science required with a need for capacity building among many national regulatory authorities in low- and middle-income countries, as well as capacity building for research institutions in disease-endemic countries to partner with developing country manufacturers <xref ref-type="bibr" rid="pntd.0002570-Hotez12">[46]</xref>. A revamped WHO Special Programme in Tropical Diseases (TDR) has also confirmed its commitment to capacity building. Finally, IP guidelines need to be revised to foster more open R&amp;D efforts <xref ref-type="bibr" rid="pntd.0002570-Hotez12">[46]</xref>.</p>
+<p>Another key aspect of the NTD R&amp;D agenda is to promote scientific collaborations between institutions from countries regardless of their ideological perspectives, a concept sometimes referred to as “vaccine diplomacy” <xref ref-type="bibr" rid="pntd.0002570-Hotez13">[47]</xref>. In the case of the United States, vaccine diplomacy is particularly relevant to some of the world's Islamic countries with technological sophistication, which even includes nuclear capabilities, such as Iran and Pakistan <xref ref-type="bibr" rid="pntd.0002570-Hotez13">[47]</xref>, <xref ref-type="bibr" rid="pntd.0002570-Hotez14">[48]</xref>.</p>
+</sec><sec id="s8">
+<title>The London Declaration and a 2013 World Health Assembly Resolution</title>
+<p>NTDs V.2.0 would target the high disease burden NTDs identified through GBD 2010 and take forward attempts at control and/or elimination for these and other diseases. Most of these activities are consistent with the goals and aspirations of an important 2012 London Declaration for NTDs for controlling or eliminating ten NTDs by the end of this decade <xref ref-type="bibr" rid="pntd.0002570-London1">[49]</xref>. The multinational pharmaceutical partner signatories of the London Declaration, as well as the WHO, World Bank, United States Government, and selected non-governmental organizations and donors (including the Gates Foundation), have agreed to supply the necessary drugs for mass drug administration and provide access to the rapid impact package to eliminate LF and blinding trachoma, and to control onchocerciasis, soil-transmitted helminth infections, and schistosomiasis. In NTDs V.2.0, the importance of these activities through policies established for girls and women by UN Women and the United States Ambassador for Global Women's Issues must be emphasized, while simultaneously working to incorporate NTD targets into GFATM and PEPFAR. The London Declaration also ensures the availability of drugs to eliminate sleeping sickness and control VL and Chagas disease <xref ref-type="bibr" rid="pntd.0002570-London1">[49]</xref>. NTDs V.2.0 would expand these activities to include vector control insecticidal spraying and making bednets available when appropriate. Finally the London Declaration would make available multi-drug therapies for leprosy elimination. NTDs V.2.0 must also emphasize high burden NTDs not mentioned in the London Declaration, including dengue, food-borne trematode infections, and rabies. A key feature of NTDs V.2.0 is working with 18 of the G20 governments not currently committed to supporting NTD control and elimination efforts, in addition to the Nigerian government, and to commit to these targets within their own national borders in addition to helping neighboring countries <xref ref-type="bibr" rid="pntd.0002570-Hotez9">[40]</xref>. In the case of China there is added urgency to expand its outreach and technical capabilities to Sub-Saharan Africa <xref ref-type="bibr" rid="pntd.0002570-Hotez15">[50]</xref>. For all nations, there is a need to consider these activities as a component of the neglected portion of their NCD commitments.</p>
+<p>The London Declaration also renews a commitment from the major pharmaceutical partners and governmental and non-governmental organizations to promote R&amp;D for “next-generation treatments and interventions.” As noted above, NTDs V.2.0 emphasizes the important role of public investments in R&amp;D from all of the G20 countries, especially the major disease-endemic countries of Brazil, China, India, and Indonesia. Together, expanded use of available essential medicines for the NTDs and R&amp;D represent the cornerstone of an audacious goal to eliminate all of the 17 NTDs <xref ref-type="bibr" rid="pntd.0002570-Hotez16">[51]</xref>. NTDs V.2.0 recognizes the importance of London Declaration goals of access to “clean water, basic sanitation, improved living conditions, vector control, health education, and stronger health systems in endemic areas.”</p>
+<p>In May 2013, the 66<sup>th</sup> World Health Assembly approved a new resolution on the prevention, control, elimination, and eradication of NTDs. The resolution urges member states to take ownership of NTD programs, calling on international partners to provide “sufficient and predictable” funding, as well as emphasizing the importance of R&amp;D for new technologies <xref ref-type="bibr" rid="pntd.0002570-World4">[52]</xref>. Several member states highlighted, in particular, the importance of a growing dengue fever pandemic.</p>
+</sec><sec id="s9">
+<title>Concluding Statement: NTDs and the Sustainable Development Goals (SDGs)</title>
+<p>The UN is working with governments, civil society, and key partners to advance post-2015 MDGs <xref ref-type="bibr" rid="pntd.0002570-United3">[53]</xref>, and in 2012, hosted an important conference on sustainable development in Brazil, called Rio+20 (also known as Earth Summit 2012) to develop a new set of Sustainable Development Goals (SDGs) <xref ref-type="bibr" rid="pntd.0002570-United4">[54]</xref>. The SDGs would address important environmental issues not currently covered by the MDGs. In 2012, the UN Secretary-General announced the formation of a UN Sustainable Development Solutions Network (SDSN) that mobilizes scientific and technical expertise in support of the SDGs <xref ref-type="bibr" rid="pntd.0002570-Sustainable1">[55]</xref>. The NTDs are the most common infections in the world, thriving in the poorest communities, where they promote and cause poverty. They are the most common afflictions of girls and women and account for an important, but as yet unmeasured, component of the NCDs. The concept of blue marble health recognizes that NTDs are pervasive wherever poverty occurs, including not only the world's most devastated nations, but emerging market economies and wealthy countries in North America and Europe <xref ref-type="bibr" rid="pntd.0002570-Hotez9">[40]</xref>, <xref ref-type="bibr" rid="pntd.0002570-Global1">[56]</xref>. It will be essential to incorporate NTDs and blue marble health into the new framework of the SDGs.</p>
+</sec></body>
+<back><ref-list>
+<title>References</title>
+<ref id="pntd.0002570-Molyneux1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Molyneux</surname><given-names>DH</given-names></name>, <name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Fenwick</surname><given-names>A</given-names></name> (<year>2005</year>) <article-title>“Rapid-impact interventions”: how a policy of integrated control for Africa's neglected tropical diseases could benefit the poor</article-title>. <source>PLOS Med</source> <volume>2</volume>: <fpage>e336</fpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Fenwick1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fenwick</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Molyneux</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Nantulya</surname><given-names>V</given-names></name> (<year>2005</year>) <article-title>Achieving the Millennium Development Goals</article-title>. <source>Lancet</source> <volume>365</volume>: <fpage>1029</fpage>–<lpage>30</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Molyneux</surname><given-names>DH</given-names></name>, <name name-style="western"><surname>Fenwick</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ottesen</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Ehrlich Sachs</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Sachs</surname><given-names>JD</given-names></name> (<year>2006</year>) <article-title>Incorporating a rapid-impact package for neglected tropical diseases with programs for HIV/AIDS, tuberculosis, and malaria</article-title>. <source>PLOS Med</source> <volume>3</volume>: <fpage>e102</fpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Lammie1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lammie</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Fenwick</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Utzinger</surname><given-names>J</given-names></name> (<year>2006</year>) <article-title>A blueprint for success: integration of neglected tropical disease control programmes</article-title>. <source>Trends Parasitol</source> <volume>22</volume>: <fpage>313</fpage>–<lpage>21</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez2"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Molyneux</surname><given-names>DH</given-names></name>, <name name-style="western"><surname>Fenwick</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kumaresan</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Sachs</surname><given-names>SE</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Control of neglected tropical diseases</article-title>. <source>N Engl J Med</source> <volume>357</volume>: <fpage>1018</fpage>–<lpage>27</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez3"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Fenwick</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Savioli</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Molyneux</surname><given-names>DH</given-names></name> (<year>2009</year>) <article-title>Rescuing the bottom billion through control of neglected tropical diseases</article-title>. <source>Lancet</source> <volume>373</volume>: <fpage>1570</fpage>–<lpage>5</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-USAIDs1"><label>7</label>
+<mixed-citation publication-type="other" xlink:type="simple">USAID's NTD program. <ext-link ext-link-type="uri" xlink:href="http://www.neglecteddiseases.gov" xlink:type="simple">http://www.neglecteddiseases.gov</ext-link>, accessed May 19, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Gov1"><label>8</label>
+<mixed-citation publication-type="other" xlink:type="simple">Gov. UK. <ext-link ext-link-type="uri" xlink:href="https://www.gov.uk/government/news/uk-to-protect-140-million-people-from-tropical-diseases" xlink:type="simple">https://www.gov.uk/government/news/uk-to-protect-140-million-people-from-tropical-diseases</ext-link>, accessed May 19, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-The1"><label>9</label>
+<mixed-citation publication-type="other" xlink:type="simple">The End Fund. <ext-link ext-link-type="uri" xlink:href="http://www.end.org" xlink:type="simple">http://www.end.org</ext-link>, accessed May 19, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Centers1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">Centers for Disease Control and Prevention</collab> (<year>2012</year>) <article-title>Progress toward global eradication of dracunculiasis – January 2011–June 2012</article-title>. <source>MMWR Morb Mortal Wkly Rep</source> <volume>61</volume>: <fpage>854</fpage>–<lpage>7</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-World1"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">World Health Organization</collab> (<year>2012</year>) <article-title>WHO Expert Committee on Leprosy</article-title>. <source>World Health Organ Tech Rep Ser</source> <volume>(968)</volume>: <fpage>1</fpage>–<lpage>61</lpage> 1 p following 61.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-World2"><label>12</label>
+<mixed-citation publication-type="other" xlink:type="simple">World Health Organization (2010) Working to Overcome the Global Impact of Neglected Tropical Disease: First WHO Report on Neglected Tropical Diseases, Geneva, Switzerland.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez4"><label>13</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hotez PJ (2013) Forgotten People, Forgotten Diseases (Second Edition): The Neglected Tropical Diseases and Their Impact on Global Health and Development, ASM Press 275 p.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Lozano1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lozano</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Naghavi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Foreman</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Lim</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Shibuya</surname><given-names>K</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Global and regional mortality from 235 causes of death for 20 age groups in 990 and 2010: a systematic analysis for the Global Burden of Disease Study 2010</article-title>. <source>Lancet</source> <volume>380</volume>: <fpage>2095</fpage>–<lpage>128</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Vos1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vos</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Flaxman</surname><given-names>AD</given-names></name>, <name name-style="western"><surname>Naghavi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Lozano</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Michaud</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Years lived with disability (YLDs) for 1160 sequelae of 289 diseases and injuries 1990–2010: a systematic analysis for the Global Burden of Disease Study 2010</article-title>. <source>Lancet</source> <volume>380</volume>: <fpage>2163</fpage>–<lpage>96</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Murray1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Murray</surname><given-names>CJL</given-names></name>, <name name-style="western"><surname>Vos</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Lozano</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Naghavi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Flaxman</surname><given-names>AD</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Disability-adjusted life years (DALYs) for 291 diseases and injuries in 21 regions, 1990–2010: a systematic analysis for the Global Burden of Disease Study 2010</article-title>. <source>Lancet</source> <volume>380</volume>: <fpage>2197</fpage>–<lpage>223</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Bhatt1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bhatt</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Gething</surname><given-names>PW</given-names></name>, <name name-style="western"><surname>Brady</surname><given-names>OJ</given-names></name>, <name name-style="western"><surname>Messina</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Farlow</surname><given-names>AW</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>The global distribution of dengue</article-title>. <source>Nature</source> <volume>496</volume>: <fpage>504</fpage>–<lpage>7</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Simarro1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Simarro</surname><given-names>PP</given-names></name>, <name name-style="western"><surname>Cecchi</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Franco</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Paone</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Diarra</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Estimating and mapping the population at risk of sleeping sickness</article-title>. <source>PLOS Negl Trop Dis</source> <volume>6</volume>: <fpage>e1859</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pntd.0001859" xlink:type="simple">10.1371/journal.pntd.0001859</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pntd.0002570-Meslin1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Meslin</surname><given-names>FX</given-names></name>, <name name-style="western"><surname>Briggs</surname><given-names>DJ</given-names></name> (<year>2013</year>) <article-title>Eliminating canine rabies, the principal source of human infection: what will it take</article-title>? <source>Antiviral Res</source> <volume>98</volume>: <fpage>291</fpage>–<lpage>6</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Ferdousi1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ferdousi</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Alam</surname><given-names>MS</given-names></name>, <name name-style="western"><surname>Hossain</surname><given-names>MS</given-names></name>, <name name-style="western"><surname>Ma</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Itoh</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Visceral leishmaniasis eradication is a reality: data from a community-based active surveillance in Bangladesh</article-title>. <source>Trop Med Health</source> <volume>40</volume>: <fpage>133</fpage>–<lpage>9</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-United1"><label>21</label>
+<mixed-citation publication-type="other" xlink:type="simple">United Nations Entity for Gender Equality and the Empowerment of Women. <ext-link ext-link-type="uri" xlink:href="http://www.un.org/womenwatch/daw/daw/index.html" xlink:type="simple">http://www.un.org/womenwatch/daw/daw/index.html</ext-link>, accessed May 25, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-US1"><label>22</label>
+<mixed-citation publication-type="other" xlink:type="simple">US Department of State (2010) Leading through civilian power: The first quadrennial diplomacy and development review. <ext-link ext-link-type="uri" xlink:href="http://www.state.gov/documents/organization/153108.pdf" xlink:type="simple">http://www.state.gov/documents/organization/153108.pdf</ext-link>, accessed May 25, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-US2"><label>23</label>
+<mixed-citation publication-type="other" xlink:type="simple">US Department of State. Diplomacy in action. Secretary's International Fund for Women and Girls: Letter From Ambassador Verveer. <ext-link ext-link-type="uri" xlink:href="http://www.state.gov/s/gwi/programs/womensfund/mv/" xlink:type="simple">http://www.state.gov/s/gwi/programs/womensfund/mv/</ext-link>, accessed May 25, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez5"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name> (<year>2009</year>) <article-title>Empowering women and improving female reproductive health through control of neglected tropical diseases</article-title>. <source>PLOS Negl Trop Dis</source> <volume>3</volume>: <fpage>e559</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pntd.0000559" xlink:type="simple">10.1371/journal.pntd.0000559</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pntd.0002570-Kjetland1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kjetland</surname><given-names>EF</given-names></name>, <name name-style="western"><surname>Leutscher</surname><given-names>PD</given-names></name>, <name name-style="western"><surname>Ndhlovu</surname><given-names>PD</given-names></name> (<year>2012</year>) <article-title>A review of female genital schistosomiasis</article-title>. <source>Trends Parasitol</source> <volume>28</volume>: <fpage>58</fpage>–<lpage>65</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Mbabazi1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mbabazi</surname><given-names>PS</given-names></name>, <name name-style="western"><surname>Andan</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Fitzgerald</surname><given-names>DW</given-names></name>, <name name-style="western"><surname>Chitsulo</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Engels</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Downs</surname><given-names>JA</given-names></name> (<year>2011</year>) <article-title>Examining the relationship between urogenital schistosomiasis and HIV infection</article-title>. <source>PLOS Negl Trop Dis</source> <volume>5</volume>: <fpage>e1396</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pntd.0001396" xlink:type="simple">10.1371/journal.pntd.0001396</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez6"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Whitham</surname><given-names>M</given-names></name> (<year>2014</year>) <article-title>Helminth infections: a new global women's health agenda</article-title>. <source>Obstet Gynecol</source> <volume>123</volume> in press.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Brooker1"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brooker</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Bundy</surname><given-names>DA</given-names></name> (<year>2008</year>) <article-title>Hookworm-related anaemia among pregnant women: a systematic review</article-title>. <source>PLOS Negl Trop Dis</source> <volume>2</volume>: <fpage>e291</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pntd.0000291" xlink:type="simple">10.1371/journal.pntd.0000291</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pntd.0002570-Machado1"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Machado</surname><given-names>CR</given-names></name>, <name name-style="western"><surname>Machado</surname><given-names>ES</given-names></name>, <name name-style="western"><surname>Rohloff</surname><given-names>RD</given-names></name>, <name name-style="western"><surname>Azevedo</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Campos</surname><given-names>DP</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Is pregnancy associated with severe dengue? A review of data from the Rio de Janeiro surveillance information system</article-title>. <source>PLOS Negl Trop Dis</source> <volume>7</volume>: <fpage>e2217</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pntd.0002217" xlink:type="simple">10.1371/journal.pntd.0002217</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pntd.0002570-SestiCosta1"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sesti-Costa</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Silva</surname><given-names>JS</given-names></name>, <name name-style="western"><surname>Gutierrez</surname><given-names>FR</given-names></name> (<year>2012</year>) <article-title>Congenital Chagas disease: time to screen pregnant women</article-title>? <source>Expert Rev Anti Infect Ther</source> <volume>10</volume>: <fpage>1279</fpage>–<lpage>82</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Roberts1"><label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Roberts</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Gravett</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Velu</surname><given-names>PP</given-names></name>, <name name-style="western"><surname>Theodoratou</surname><given-names>E</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Epidemiology and aetiology of maternal parasitic infections in low- and middle-income countries</article-title>. <source>J Global Health</source> <volume>1</volume>: <fpage>189</fpage>–<lpage>200</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Noblick1"><label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Noblick</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Skolnik</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name> (<year>2011</year>) <article-title>Linking global HIV/AIDS treatments with national programs for the control and elimination of the neglected tropical diseases</article-title>. <source>PLOS Negl Trop Dis</source> <volume>5</volume>: <fpage>e1022</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pntd.0001022" xlink:type="simple">10.1371/journal.pntd.0001022</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pntd.0002570-Brooker2"><label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brooker</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Akhwale</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Pullan</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Estambale</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Clarke</surname><given-names>SE</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Epidemiology of plasmodium-helminth co-infection in Africa: populations at risk, potential impact on anemia, and prospects for combining control</article-title>. <source>Am J Trop Med Hyg</source> <volume>77</volume> (<issue>6 Suppl</issue>) <fpage>88</fpage>–<lpage>98</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Brooker3"><label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brooker</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Clements</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Hay</surname><given-names>SL</given-names></name>, <name name-style="western"><surname>Tatem</surname><given-names>AJ</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>The co-distribution of Plasmodium falciparum and hookworm among African schoolchildren</article-title>. <source>Malaria J</source> <volume>5</volume>: <fpage>99</fpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez7"><label>35</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Mistry</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Rubinstein</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Sachs</surname><given-names>JD</given-names></name> (<year>2011</year>) <article-title>Integrating neglected tropical diseases into AIDS, tuberculosis, and malaria control</article-title>. <source>N Engl J Med</source> <volume>364</volume>: <fpage>2086</fpage>–<lpage>9</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Sodahlon1"><label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sodahlon</surname><given-names>YK</given-names></name>, <name name-style="western"><surname>Dorkenoo</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Morgah</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Nabillou</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Agbo</surname><given-names>K</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>A success story: Togo is moving toward becoming the first sub-Saharan African nation to eliminate lymphatic filariasis through mass drug administration and countrywide morbidity alleviation</article-title>. <source>PLOS Negl Trop Dis</source> <volume>7</volume>: <fpage>e2080</fpage> <comment>accessed April 20, 2013. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pntd.0002080" xlink:type="simple"> 10.1371/journal.pntd.0002080</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pntd.0002570-United2"><label>37</label>
+<mixed-citation publication-type="other" xlink:type="simple">United Nations. 2011 High level meeting on prevention and control of non-communicable diseases. <ext-link ext-link-type="uri" xlink:href="http://www.un.org/en/ga/ncdmeeting2011/" xlink:type="simple">http://www.un.org/en/ga/ncdmeeting2011/</ext-link>, accessed May 25, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez8"><label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Daar</surname><given-names>AS</given-names></name> (<year>2008</year>) <article-title>The CNCDs and the NTDs: blurring the lines dividing noncommunicable and communicable chronic diseases</article-title>. <source>PLOS Negl Trop Dis</source> <volume>2</volume>: <fpage>e312</fpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Partners1"><label>39</label>
+<mixed-citation publication-type="other" xlink:type="simple">Partners in Health. Press conference held on treating non-communicable disease in poor populations. <ext-link ext-link-type="uri" xlink:href="http://www.pih.org/press/press-conference-held-on-treating-non-communicable-disease-in-poor-populati" xlink:type="simple">http://www.pih.org/press/press-conference-held-on-treating-non-communicable-disease-in-poor-populati</ext-link>, accessed May 25, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez9"><label>40</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hotez PJ (2013) The Disease next door. Foreign Policy March 25, 2013, accessed April 20, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez10"><label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name> (<year>2012</year>) <article-title>Fighting neglected tropical diseases in the southern United States</article-title>. <source>BMJ</source> <volume>345</volume>: <fpage>e6112</fpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Petsko1"><label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Petsko</surname><given-names>GA</given-names></name> (<year>2011</year>) <article-title>The blue marble</article-title>. <source>Genome Biol</source> <volume>12</volume>: <fpage>112</fpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Policy1"><label>43</label>
+<mixed-citation publication-type="other" xlink:type="simple">Policy Cures, Moran M, Guzman J, Henderson K, Liyanage R, et al. (2012) Neglected Disease Research and Development: A Five year Review. G-FINDER, December 2012.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez11"><label>44</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Pecoul</surname><given-names>B</given-names></name> (<year>2010</year>) <article-title>“Manifesto” for advancing the control and elimination of neglected tropical diseases</article-title>. <source>PLOS Negl Trop Dis</source> <volume>4</volume>: <fpage>e718</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pntd.0000718" xlink:type="simple">10.1371/journal.pntd.0000718</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pntd.0002570-World3"><label>45</label>
+<mixed-citation publication-type="other" xlink:type="simple">World Health Organization (2012) Research and development to meet health needs in developing countries: Strengthening global funding and coordination. Report of the Consultative Expert Working Group on Research and Development, <ext-link ext-link-type="uri" xlink:href="http://www.who.int/phi/cewg/en/" xlink:type="simple">http://www.who.int/phi/cewg/en/</ext-link>, accessed May 26, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez12"><label>46</label>
+<mixed-citation publication-type="other" xlink:type="simple">Hotez P, Cohen R, Mimura C, Yamada T, Hoffman SL (2013) Strengthening Mechanisms to Prioritize, Coordinate, Finance, and Execute R&amp;D to Meet Health Needs in Developing Countries. Institute of Medicine Discussion Paper, January 15, 2013, <ext-link ext-link-type="uri" xlink:href="http://www.iom.edu/Global/Perspectives/2013/StrengtheningMechanismsRD.aspx" xlink:type="simple">http://www.iom.edu/Global/Perspectives/2013/StrengtheningMechanismsRD.aspx</ext-link>, accessed May 26, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez13"><label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name> (<year>2010</year>) <article-title>Peace through vaccine diplomacy</article-title>. <source>Science</source> <volume>327</volume>: <fpage>1301</fpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez14"><label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name> (<year>2010</year>) <article-title>Nuclear weapons and neglected diseases: the “ten-thousand-to-one gap”</article-title>. <source>PLOS Negl Trop Dis</source> <volume>4</volume>: <fpage>e680</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pntd.0000680" xlink:type="simple">10.1371/journal.pntd.0000680</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pntd.0002570-London1"><label>49</label>
+<mixed-citation publication-type="other" xlink:type="simple">London Declaration on Neglected Tropical Diseases. <ext-link ext-link-type="uri" xlink:href="http://unitingtocombatntds.org/downloads/press/ntd_event_london_declaration_on_ntds.pdf" xlink:type="simple">http://unitingtocombatntds.org/downloads/press/ntd_event_london_declaration_on_ntds.pdf</ext-link>, accessed May 26, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez15"><label>50</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>PJ</given-names></name> (<year>2012</year>) <article-title>Engaging a rising China through neglected tropical diseases</article-title>. <source>PLOS Negl Trop Dis</source> <volume>6</volume>: <fpage>e1599</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pntd.0001599" xlink:type="simple">10.1371/journal.pntd.0001599</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pntd.0002570-Hotez16"><label>51</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hotez</surname><given-names>P</given-names></name> (<year>2011</year>) <article-title>Enlarging the “audacious goal”: elimination of the world's high prevalence neglected tropical diseases</article-title>. <source>Vaccine</source> <volume>29S</volume>: <fpage>D104</fpage>–<lpage>D110</lpage>.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-World4"><label>52</label>
+<mixed-citation publication-type="other" xlink:type="simple">World Health Organization. <ext-link ext-link-type="uri" xlink:href="http://apps.who.int/gb/ebwha/pdf_files/EB132/B132_R7-en.pdf" xlink:type="simple">http://apps.who.int/gb/ebwha/pdf_files/EB132/B132_R7-en.pdf</ext-link>, accessed May 27, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-United3"><label>53</label>
+<mixed-citation publication-type="other" xlink:type="simple">United Nations (2013). A New Global Partnership: Eradicate poverty and transform economies through sustainable development. <ext-link ext-link-type="uri" xlink:href="http://www.beyond2015.org/sites/default/files/HLPReport.pdf" xlink:type="simple">http://www.beyond2015.org/sites/default/files/HLPReport.pdf</ext-link>, accessed May 30, 2013</mixed-citation>
+</ref>
+<ref id="pntd.0002570-United4"><label>54</label>
+<mixed-citation publication-type="other" xlink:type="simple">United Nations. Sustainable development knowledge platform. <ext-link ext-link-type="uri" xlink:href="http://sustainabledevelopment.un.org/index.php?menu=1300" xlink:type="simple">http://sustainabledevelopment.un.org/index.php?menu=1300</ext-link>, accessed May 26, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Sustainable1"><label>55</label>
+<mixed-citation publication-type="other" xlink:type="simple">Sustainable Development Solutions Network. <ext-link ext-link-type="uri" xlink:href="http://unsdsn.org/" xlink:type="simple">http://unsdsn.org/</ext-link>, accessed May 26, 2013.</mixed-citation>
+</ref>
+<ref id="pntd.0002570-Global1"><label>56</label>
+<mixed-citation publication-type="other" xlink:type="simple">Global Post. G20's secret shame: ignoring tropical diseases among the world's profoundly poor. <ext-link ext-link-type="uri" xlink:href="http://www.globalpost.com/dispatches/globalpost-blogs/commentary/g20-tropical-disease-world-poor-st-petersburg-ntd-mdg" xlink:type="simple">http://www.globalpost.com/dispatches/globalpost-blogs/commentary/g20-tropical-disease-world-poor-st-petersburg-ntd-mdg</ext-link>, accessed May 27, 2013.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article article-type="research-article" dtd-version="3.0" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1371/journal.pone.0153152</article-id>
+<article-id pub-id-type="publisher-id">PONE-D-15-50620</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Law and legal sciences</subject><subj-group><subject>Administrative law</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Law and legal sciences</subject><subj-group><subject>Criminal justice system</subject><subj-group><subject>Law enforcement</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Law and legal sciences</subject><subj-group><subject>Regulations</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Economics</subject><subj-group><subject>Commerce</subject><subj-group><subject>Retail</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Earth sciences</subject><subj-group><subject>Geography</subject><subj-group><subject>Human geography</subject><subj-group><subject>Neighborhoods</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Human geography</subject><subj-group><subject>Neighborhoods</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Social sciences</subject><subj-group><subject>Law and legal sciences</subject><subj-group><subject>State law</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Biology and life sciences</subject><subj-group><subject>Behavior</subject><subj-group><subject>Habits</subject><subj-group><subject>Smoking habits</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3"><subject>Research and analysis methods</subject><subj-group><subject>Research design</subject><subj-group><subject>Survey research</subject><subj-group><subject>Census</subject></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>"May I Buy a Pack of Marlboros, Please?" A Systematic Review of Evidence to Improve the Validity and Impact of Youth Undercover Buy Inspections</article-title>
+<alt-title alt-title-type="running-head">Protocols Assessing Youth Access to Tobacco</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Lee</surname>
+<given-names>Joseph G. L.</given-names>
+</name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Gregory</surname>
+<given-names>Kyle R.</given-names>
+</name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Baker</surname>
+<given-names>Hannah M.</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Ranney</surname>
+<given-names>Leah M.</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Goldstein</surname>
+<given-names>Adam O.</given-names>
+</name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001"><label>1</label> <addr-line>Department of Health Education and Promotion, College of Health and Human Performance, East Carolina University, Greenville, North Carolina, United States of America</addr-line></aff>
+<aff id="aff002"><label>2</label> <addr-line>Tobacco Center of Regulatory Science, School of Public Health, Georgia State University, Atlanta, Georgia, United States of America</addr-line></aff>
+<aff id="aff003"><label>3</label> <addr-line>Tobacco Prevention and Evaluation Program, Department of Family Medicine, School of Medicine, University of North Carolina at Chapel Hill, Chapel Hill, North Carolina, United States of America</addr-line></aff>
+<aff id="aff004"><label>4</label> <addr-line>Lineberger Comprehensive Cancer Center, School of Medicine, University of North Carolina at Chapel Hill, Chapel Hill, North Carolina, United States of America</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Shahab</surname>
+<given-names>Lion</given-names>
+</name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>University College London, UNITED KINGDOM</addr-line></aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The University of North Carolina at Chapel Hill holds a subcontract of an Food &amp; Drug Administration funded tobacco retailer inspections program (AOG, PI). The FDA's inspection program did not fund this research. JGLL has a royalty interest in a store audit/compliance and mapping system, Counter Tools (<ext-link ext-link-type="uri" xlink:href="http://countertools.org" xlink:type="simple">http://countertools.org</ext-link>), owned by the University of North Carolina at Chapel Hill. The tools and audit mapping system were not used in this study. AOG is related to a PLOS One editor, Dr. Alan Blum. This does not alter the authors' adherence to PLOS ONE policies on sharing data and materials.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: JGLL HMB LMR AOG. Performed the experiments: JGLL KRG HMB. Analyzed the data: JGLL KRG HMB LMR AOG. Wrote the paper: JGLL KRG HMB LMR AOG.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">leejose14@ecu.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>6</day>
+<month>4</month>
+<year>2016</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2016</year>
+</pub-date>
+<volume>11</volume>
+<issue>4</issue>
+<elocation-id>e0153152</elocation-id>
+<history>
+<date date-type="received">
+<day>21</day>
+<month>11</month>
+<year>2015</year>
+</date>
+<date date-type="accepted">
+<day>23</day>
+<month>3</month>
+<year>2016</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2016</copyright-year>
+<copyright-holder>Lee et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0153152"/>
+<abstract>
+<p>Most smokers become addicted to tobacco products before they are legally able to purchase these products. We systematically reviewed the literature on protocols to assess underage purchase and their ecological validity. We conducted a systematic search in May 2015 in PubMed and PsycINFO. We independently screened records for inclusion. We conducted a narrative review and examined implications of two types of legal authority for protocols that govern underage buy enforcement in the United States: criminal (state-level laws prohibiting sales to youth) and administrative (federal regulations prohibiting sales to youth). Ten studies experimentally assessed underage buy protocols and 44 studies assessed the association between youth characteristics and tobacco sales. Protocols that mimicked real-world youth behaviors were consistently associated with substantially greater likelihood of a sale to a youth. Many of the tested protocols appear to be designed for compliance with criminal law rather than administrative enforcement in ways that limited ecological validity. This may be due to concerns about entrapment. For administrative enforcement in particular, entrapment may be less of an issue than commonly thought. Commonly used underage buy protocols poorly represent the reality of youths' access to tobacco from retailers. Compliance check programs should allow youth to present themselves naturally and attempt to match the community’s demographic makeup.</p>
+</abstract>
+<funding-group>
+<funding-statement>Research reported in this publication was supported with trainee support by grant numbers P50DA036128 from the U.S. National Institutes of Health (NIH)/National Institute on Drug Abuse (<ext-link ext-link-type="uri" xlink:href="http://www.drugabuse.gov/" xlink:type="simple">http://www.drugabuse.gov/</ext-link>) and Food and Drug Administration (FDA) Center for Tobacco Products (CTP, <ext-link ext-link-type="uri" xlink:href="http://www.fda.gov/" xlink:type="simple">http://www.fda.gov/</ext-link>) (KRG) and, also for trainee support, P50CA18090701 from NIH/National Cancer Institute (<ext-link ext-link-type="uri" xlink:href="http://www.cancer.gov/" xlink:type="simple">http://www.cancer.gov/</ext-link>) and FDA CTP (JGLL). The content is solely the responsibility of the authors and does not necessarily represent the official views of the NIH or the FDA. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="1"/>
+<table-count count="2"/>
+<page-count count="16"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Tobacco products remain one of the most deadly consumer products, killing almost half of their users when used as directed [<xref ref-type="bibr" rid="pone.0153152.ref001">1</xref>]. Most smokers become addicted to tobacco products before they are legally able to purchase these products [<xref ref-type="bibr" rid="pone.0153152.ref002">2</xref>]. Stores that sell tobacco products ("tobacco retailers") play an important role in minors' access to tobacco products, and researchers and policymakers have long been interested in reducing the availability of tobacco products to youth [<xref ref-type="bibr" rid="pone.0153152.ref003">3</xref>].</p>
+<p>Although 180 countries [<xref ref-type="bibr" rid="pone.0153152.ref004">4</xref>] are parties to the World Health Organization Framework Convention on Tobacco Control, of which Article 16 requires a prohibition of sales of tobacco products to youth, much less is known about how to implement bans on youth sales [<xref ref-type="bibr" rid="pone.0153152.ref005">5</xref>]. The most frequently employed method to assess sales to youth is an underage buy inspection, where a minor attempts to purchase tobacco products under the supervision of adults. Research in the 1980s and 1990s related to underage buys showed widespread access to tobacco products and conflicting evidence on the impact of restricting youth access on reducing youth tobacco use [<xref ref-type="bibr" rid="pone.0153152.ref006">6</xref>]. One explanation [<xref ref-type="bibr" rid="pone.0153152.ref007">7</xref>] of the conflicting findings has been a lack of validity in how youth access is measured while conducting underage buys [<xref ref-type="bibr" rid="pone.0153152.ref008">8</xref>]. That is, the tightly controlled, standardized, and scripted procedures implemented with well-dressed, non-smoking minors may not accurately reflect real-world youth access to tobacco products [<xref ref-type="bibr" rid="pone.0153152.ref008">8</xref>]. Ideal retailer compliance of 90% or higher in a given community may not be correctly measured, thereby limiting interpretation of the evidence of impact [<xref ref-type="bibr" rid="pone.0153152.ref007">7</xref>]. In the United States, both states and the federal government are investing heavily in underage buy inspections; the Food and Drug Administration (FDA), for example, has allocated over $178 million as of September 2015 and conducted over 495,000 retailer inspections of all types through state contractors since 2010 [<xref ref-type="bibr" rid="pone.0153152.ref009">9</xref>, <xref ref-type="bibr" rid="pone.0153152.ref010">10</xref>].</p>
+<p>States have been implementing underage buy inspections since 1992 under the Alcohol, Drug Abuse, and Mental Health Administration Reorganization Act [<xref ref-type="bibr" rid="pone.0153152.ref011">11</xref>], commonly called the Synar Amendment. The Synar Amendment required states to pass legislation prohibiting sales of tobacco products to minors and maintain a rate of retailer sales to minors under 20% or face substantial penalties to federal substance abuse block grant funding [<xref ref-type="bibr" rid="pone.0153152.ref011">11</xref>]. Although published retailer violation rates have decreased over time, Synar implementation has been mixed and funding dedicated to program implementation lacking [<xref ref-type="bibr" rid="pone.0153152.ref012">12</xref>, <xref ref-type="bibr" rid="pone.0153152.ref013">13</xref>]. It is important to note that the Synar Amendment required enforcement of <italic>state</italic> youth access laws. That is, though enforcement was required by federal law, enforcement operated under youth access laws passed by the individual state. These laws generally prohibit the sale of tobacco to minors as a <italic>criminal</italic> offense. Under criminal law, a state proscribes a certain activity by making its conduct punishable and the state prosecutes violations of the law in a criminal court.</p>
+<p>The Family Smoking Prevention and Tobacco Control Act of 2009 (FSPTCA) granted the FDA the authority to regulate tobacco products and implement regulations governing the sale and distribution of tobacco, including prohibiting the sale of cigarettes, cigarette tobacco, and smokeless tobacco to persons younger than 18. Unlike state criminal youth access laws, inspections conducted for the FDA under the FSPTCA seek to ensure compliance with an <italic>administrative</italic> regulation. Administrative regulations are designed as a tool of deterrence and compliance rather than punishment because they cannot result in imprisonment as punishment for a crime. Under the FSPTCA, FDA violations of selling tobacco products to minors result in a warning letter, civil financial penalty, or a no tobacco sales order (21 CFR 17). These violations are adjudicated through administrative hearings rather than criminal courts and are subject to lower evidence requirements than if they were settled in criminal courts. Moreover, the FDA regulations governing the sale of tobacco products operate on a different legal standard than criminal law. Liability arises simply through the existence of the minor sale violation. Intent is not taken into consideration and the FDA does not need to prove that the retailer knew the minor was underage (21 C.F.R. § 1140.14).</p>
+<p>Although some previous research has examined characteristics of underage buyers and violation rates [<xref ref-type="bibr" rid="pone.0153152.ref014">14</xref>], best practices in youth access reduction programs [<xref ref-type="bibr" rid="pone.0153152.ref015">15</xref>], and implementation of underage buy programs [<xref ref-type="bibr" rid="pone.0153152.ref013">13</xref>], the literature examining characteristics of underage buy <italic>protocols</italic> remains un-synthesized. Nor has the literature on underage buy protocols been examined in relation to differences in criminal and administrative enforcement authority. Protocols that do not match the relevant enforcement authority may limit the impact of underage buy inspections programs. Synthesis of this literature should inform FDA, Synar, and other state or local efforts to develop and implement underage buy inspection protocols that maximize impact on youth access, including future efforts to address e-cigarette sales to minors.</p>
+<p>The purpose of this research is to: (1) systematically examine the existing peer-reviewed evidence assessing underage buy protocols; (2) examine correlates of sales to minors in underage buy inspections that can be changed by state program staff, i.e., minor characteristics (age, race, gender) and neighborhood characteristics of the tobacco retailers that are chosen to be inspected; and (3) review the findings in relation to issues of entrapment with criminal vs. administrative enforcement authority.</p>
+</sec>
+<sec id="sec002" sec-type="materials|methods">
+<title>Methods</title>
+<p>Our protocol is available as <xref ref-type="supplementary-material" rid="pone.0153152.s001">S1 File</xref>. We first developed search keywords in four domains (1) tobacco, (2) youth, (3) access, and (4) compliance check characteristics. We based initial keywords off a Cochrane Review [<xref ref-type="bibr" rid="pone.0153152.ref016">16</xref>] and iteratively developed keywords and controlled vocabulary until no new relevant results were found in PubMed. A librarian reviewed and enhanced our search strategy. Once we established a final search string in PubMed, we translated the controlled vocabulary (i.e., the indexing terms used in the database, MeSH terms in PubMed) into the controlled vocabulary of PsycINFO. We implemented our search on May 22, 2015, in PubMed and PsycINFO (the final search strings are available in <xref ref-type="supplementary-material" rid="pone.0153152.s001">S1 File</xref>). Because the first four volumes of the journal <italic>Tobacco Control</italic> are not indexed in PubMed [<xref ref-type="bibr" rid="pone.0153152.ref017">17</xref>], one author (KRG) searched these by hand. During the full-text data abstraction process, one author (JGLL) reviewed references in the introduction and discussion section of each included paper for additional relevant records.</p>
+<p>Two authors (JGLL and HMB) independently screened identified records' titles and abstracts for inclusion or exclusion. Disagreements were resolved by discussion with a third author (LMR) and by review of the full-text of the record. <xref ref-type="fig" rid="pone.0153152.g001">Fig 1</xref> shows the inclusion process based on a PRISMA flow diagram [<xref ref-type="bibr" rid="pone.0153152.ref018">18</xref>]. We included records if they were published in peer-reviewed journals or as dissertations; addressed access to tobacco products by people under the age of 18; assessed underage purchase attempts or examined variations in implementation of purchase protocols or examined variations of purchase protocols; assessed the rate or likelihood of underage sales; were conducted from 1980 to the present; and were conducted in the United States. Conference presentations and published abstracts were not eligible for inclusion. We used no language restrictions. Records were classified as experimental or correlational based on the primary aims and methods of the record and reported in the respective evidence table. Once included, one author (JGLL) abstracted data directly into evidence tables in word processing software. For our second aim of assessing correlates of underage buy inspection non-compliance, we stratified results by our assessment of whether the study addressed confounding between minor age, race, gender, and area of assignment. One author coded confounding (JGLL) based on the methods used in each study, i.e., authors’ attempts to match youth in characteristics and equally assign youth with specific characteristics across neighborhood characteristics. Because our goal was to identify all existing studies, we conducted no further coding of risk of bias in included studies. We conducted a narrative review assessing the abstracted evidence, coming to a consensus about its implications for public health practice. One author, a lawyer with tobacco regulatory science training (KRG), then reviewed the findings and our conclusions against the legal authorities (i.e., criminal and administrative) that guide underage buy inspections programs with attention to the issue of entrapment. Regarding terminology, we use <italic>youths</italic> and <italic>minors</italic> interchangeably to indicate a person under 18 years of age.</p>
+<fig id="pone.0153152.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0153152.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Inclusion flow diagram, May 22, 2015.</title>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0153152.g001" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec003" sec-type="results">
+<title>Results</title>
+<p>We identified 47 records. Of these, ten studies experimentally assessed variations of underage buy protocols and 44 studies reported on the association of youth characteristics in underage buys and tobacco retailer non-compliance. We first discuss the experimental literature and then briefly summarize the evidence from correlational studies. Further details about correlational studies are presented in <xref ref-type="supplementary-material" rid="pone.0153152.s003">S1 Table</xref>.</p>
+<p>Of the experimental research, studies mimicked youth behaviors [<xref ref-type="bibr" rid="pone.0153152.ref008">8</xref>] with assessments of familiarity (i.e., recognition by clerks as a returning customer) [<xref ref-type="bibr" rid="pone.0153152.ref019">19</xref>], truthfulness [<xref ref-type="bibr" rid="pone.0153152.ref008">8</xref>, <xref ref-type="bibr" rid="pone.0153152.ref020">20</xref>, <xref ref-type="bibr" rid="pone.0153152.ref021">21</xref>], use of minors who smoke [<xref ref-type="bibr" rid="pone.0153152.ref008">8</xref>], purchasing non-tobacco products (e.g., a bag of chips) during the attempt [<xref ref-type="bibr" rid="pone.0153152.ref020">20</xref>, <xref ref-type="bibr" rid="pone.0153152.ref022">22</xref>], and using or not using an identification card [<xref ref-type="bibr" rid="pone.0153152.ref023">23</xref>, <xref ref-type="bibr" rid="pone.0153152.ref024">24</xref>]. Additional experimental research examined the impact of non-cigarette tobacco purchases [<xref ref-type="bibr" rid="pone.0153152.ref025">25</xref>], assessments of more frequent inspections [<xref ref-type="bibr" rid="pone.0153152.ref026">26</xref>], and not completing purchases rung up by the store clerk [<xref ref-type="bibr" rid="pone.0153152.ref027">27</xref>]. <xref ref-type="table" rid="pone.0153152.t001">Table 1</xref> presents the details of these studies.</p>
+<table-wrap id="pone.0153152.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0153152.t001</object-id>
+<label>Table 1</label> <caption><title>Experimental Testing of Youth Tobacco Inspections Protocols, 1980–May 22, 2015, N = 10.</title></caption>
+<alternatives>
+<graphic id="pone.0153152.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0153152.t001" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Setting: Design</th>
+<th align="left">Standard Protocol</th>
+<th align="left">Alternative</th>
+<th align="left">Results</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="4"><bold>Cummings <italic>et al</italic>., 1996 [<xref ref-type="bibr" rid="pone.0153152.ref027">27</xref>]</bold></td>
+</tr>
+<tr>
+<td align="left">Erie County, NY: Varied use of payment approach (youth paid for cigarettes) or termination approach (if clerk rang up sale, youth reported insufficient funds). Conducted in 1994 with 157 tobacco retailers. Same 16-year old boy used in all purchases. For both, when minor is asked age, he truthfully answered; when asked who cigarettes are for, he answered "me."</td>
+<td align="left">Enter store, pick up pack from display or ask clerk for Marlboros. (Purchasing pack is considered a successful sale.)</td>
+<td align="left">When pack is rung up by clerk, minor reports having inadequate funds. (Ringing up on the register is considered a successful sale.)</td>
+<td align="left">No difference between the two conditions, 61% payment, 68% no payment.</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><bold>DiFranza, Coleman, and St. Cyr, 1999 [<xref ref-type="bibr" rid="pone.0153152.ref025">25</xref>]</bold></td>
+</tr>
+<tr>
+<td align="left">Worcester, MA: Varied product purchased using three 16-year old boys, who each made 34 purchase attempts with rotation in order of products purchased at stores and order in which boys purchased products for a total of 292 attempts. Each attempt made by different boy and separated by a few weeks. Conducted in 1998.</td>
+<td align="left">Non-smoking male youths entered store alone and attempted to purchase, provided no ID, and answered questions about age honestly.</td>
+<td align="left">Alternated product purchased between cigarettes, smokeless, and cigars.</td>
+<td align="left">No difference in sales by type of product purchased: 53.5% cigarettes, 55.6% for cigars, and 50.0% for cigars.</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">"Although the three youths were all 15-year-old non-smokers, their individual sales rates varied from 26.5–88.4% (p &lt; 0.001). The youths were successful in 45.5% of the first third of their attempts, in 53.6% of the middle third, and in 60.4% of the final third of their attempts to purchase tobacco. The trend of increasing success over time was significant (p &lt; 0.05)" (p. 323).</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><bold>DiFranza, Savageau, and Bouchard, 2001 [<xref ref-type="bibr" rid="pone.0153152.ref008">8</xref>]</bold></td>
+</tr>
+<tr>
+<td align="left">Eight communities, Massachusetts: Two attempts made on same day (within 30 minutes to standardize clerk) at 160 retailers, matched age, sex, and race/ethnicity. Order randomized.</td>
+<td align="left">Nonsmoking youth instructed to not wear heavy makeup or to appear older, stated true age, presented no ID; if refused, left quietly. Youth chooses brand. A bonus of $1 per completed sale was paid to the youth.</td>
+<td align="left">Young smokers natural behavior to buy tobacco in a new community: Current tobacco using youth allowed to dress as they chose, allowed to purchase other items while asking for cigarettes, allowed to lie about age, allowed to present own ID (not allowed to use fake ID). Could say anything to clerk except threats, expressions of anger, or profanity. Note only one girl had an ID. Youth chooses brand. Bonus of $1 per sale.</td>
+<td align="left">The odds of a sale were 5.7 times greater (95% CI: 1.5–22.0) in the alternative, more realistic protocol using smokers than in the standard protocol. This is controlling for sales clerk age, ID request, and community.</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">"Smokers were almost twice as likely to be sold tobacco with no questions asked" (p. 230).</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">Lying had little effect on results.</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">ID effects may be confounded because only one youth had an ID.</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><bold>Hyland, Cummings, and Seiwell, 2000 [<xref ref-type="bibr" rid="pone.0153152.ref021">21</xref>]</bold></td>
+</tr>
+<tr>
+<td align="left">Chautauqua County, NY: One white female, age 15, attempted 76 purchases in a single October 1998 weekend. Half of outlets in each city were randomized to each protocol. Adult remained outside and minor requested a pack of Marlboro cigarettes.</td>
+<td align="left">Truthfully reported age if asked, reported not having an ID.</td>
+<td align="left">Minor told merchant she was 18 if asked.</td>
+<td align="left">No difference in rate of sales by protocol, p = 0.48.</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><bold>Klonoff &amp; Landrine, 2004 [<xref ref-type="bibr" rid="pone.0153152.ref020">20</xref>]</bold></td>
+</tr>
+<tr>
+<td align="left">San Bernardino and Riverside County, CA: 1,600 purchase attempts in 232 stores with extensive training and seven waves of data collection, alternating standard protocol with alternative protocols to assess for secular trends. Each wave was separated by four to six weeks. Checks took place between 3 p.m. and 7 p.m. on weekdays and 9 a.m. and 4 p.m. on weekends. Racially/ethnically diverse participants, aged 15–17 (n = 21). All were non-smokers.</td>
+<td align="left">Standard protocol: "May I buy a pack of Marlboros, please?" If asked, cigarettes are for them, age is reported truthfully, and did not present ID.</td>
+<td align="left">Tested: (1) lie about age protocol, (2) note from dad protocol, (3) foot-in-door protocol. These are reported controlling for if the clerk requested ID. (1) "May I buy a pack of Marlboros, please? I'm 18." Youth repeatedly insisted being of age but would not produce an ID.</td>
+<td align="left">(1) Lying about age increased likelihood of sale, OR 4.22 (1.69–10.57)</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(2) "May I buy a pack of Marlboros, please? They're not for me, they're for my dad, here's a note from him." A fake note was presented.</td>
+<td align="left">(2) Note from dad decreased likelihood of sale, OR 0.13 (0.06–0.32)</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(3) Youth selected 2–3 items (e.g., soda/candy), placed on counter, waited until clerk began to ring up sale, and said "Oh, and a pack of Marlboros too please." Questions about age and who cigarettes were for were answered truthfully.</td>
+<td align="left">(3) Foot in the door purchase of sundries had no impact on sale, OR 0.88 (0.35–2.22).</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">All manipulative conditions compared to standard, <italic>x</italic><sup>2</sup> = 4.408, df = 1, n = 1600, p &lt; 0.04.</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">Other than in the note from dad (which clerks "typically laughed at," p. 521) and rejected, requests for ID were lowest in the foot in the door protocol. Requesting ID was the strongest predictor of not selling.</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><bold>Landrine &amp; Klonoff, 2003 [<xref ref-type="bibr" rid="pone.0153152.ref019">19</xref>]</bold></td>
+</tr>
+<tr>
+<td align="left">San Bernardino and Riverside County, CA: Based on interviews with youth smokers, researchers designed an alternative protocol that was implemented by non-smoking youth age 15–17 in 232 randomly-selected tobacco retailers. Youth visited no more than seven retailers per week (one per day and one per clerk). Additional waves of data collection using the standard protocol (one prior, two after) were used to assess secular trends.</td>
+<td align="left">SAMHSA Synar Protocol: Enter store they are not known to and ask, "May I buy a pack of Marlboros, please?"</td>
+<td align="left">Familiarity protocol: Youths went to same store four times over six to eight days buying small items such as soda or candy from the same clerk and were friendly with the clerk. At visit five, youth then used standard protocol approach, walking up to register and asking, "May I buy a pack of Marlboros, please?"</td>
+<td align="left">Odds of a sale to a youth in the familiarity protocol were 5.51 (2.93–10.35) times greater than in the standard protocol.</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">Authors note: "SAMSHA's prescribed method of sending youths into randomly selected stores where they are strangers must be modified to more accurately reflect youths' and merchants' behavior and hence actual youth access rates" (p. 1885).</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><bold>Landrine, Klonoff, <italic>et al</italic>., 2001 [<xref ref-type="bibr" rid="pone.0153152.ref024">24</xref>]</bold></td>
+</tr>
+<tr>
+<td align="left">22 cities, California: Non-smoking minors age 15–17 attempted purchase at three time points to assess secular trends in 674 purchase attempts at 227 randomly selected retailers.</td>
+<td align="left">"May I have a pack of Marlboros, please?"</td>
+<td align="left">"May I have a pack of Marlboros please—I have ID" with flash of real California state ID or driver's license.</td>
+<td align="left">Odds of sale in the flash ID protocol were 3.8 time higher (2.05–7.03) than in the standard protocol.</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><bold>Levinson, Hendershott, and Byers, 2002 [<xref ref-type="bibr" rid="pone.0153152.ref023">23</xref>]</bold></td>
+</tr>
+<tr>
+<td align="left">Six urban and suburban counties, Colorado: Non-smoking youths age 14–17 (n = 12, ten were male), most with previous compliance check experience, conducted 1,083 purchase attempts varying the presentation or non-presentation of a Colorado state ID (which notes the holder is under age 21). Males were clean shaven. Females wore no makeup. Adult supervisors were present in the store during the check.</td>
+<td align="left">If asked for ID, responded they didn't have one.</td>
+<td align="left">If asked for ID, provided actual ID.</td>
+<td align="left">When asked for ID, the ID condition had a relative risk 6.2 times more likelihood of sale than the no ID condition for a sales rate of: 12.2% (ID condition) vs. 1.9% (no ID condition). When standardized with covariates, RR 7.2 and sales rates of 12.6% v. 1.8%</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">In final model with multiple covariates, odds of sale are 3.8 times greater for ID than no ID condition.</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">Most (87.2%) clerks asked for an ID.</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">"The current study suggests that the ID effect can increase cigarette sales to minors by nearly one third, even in locales where proof of age is usually required by clerks" (p. 298).</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><bold>Levinson &amp; Patnaik, 2013 [<xref ref-type="bibr" rid="pone.0153152.ref026">26</xref>]</bold></td>
+</tr>
+<tr>
+<td align="left">Three counties, Colorado: Using standard Synar protocol in one urban, one suburban, and one resort county, researchers conducted test-retest reliability assessment (1079 checks) in a census of 671 tobacco retailers. Minors (four female, seven male) were age 15.5–16, with A/B grades, non-smokers, clean shaven (males) with no tattoos, makeup, and modest/casual dress. Could enter alone or with another minor, answer questions evasively, buy snack or drink, use ID or not, and visit store several times before attempted purchase. Adults could stay outside or enter.</td>
+<td align="left">One check</td>
+<td align="left">Back-to-back checks separated by an average of 22.5 days. <bold>Note</bold>: Following classical test theory, unreliability in tests can be reduced by increasing the number of tests of the same construct</td>
+<td align="left">A single visit produced a retailer violation rate of 16.8% (first visit) or 15.7% (second visit); however, combining both visits produced a retailer violation rate of 25.3%.</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">Purchase of a snack is associated with greater odds of sale, OR 2.50 (1.13–5.54)</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">Odds of violation increased with minor experience.</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><bold>Schmidt, 2001 [<xref ref-type="bibr" rid="pone.0153152.ref022">22</xref>]</bold></td>
+</tr>
+<tr>
+<td align="left">Baltimore, MD: Using a convenience sample of stores from a commercial list, conducted 237 checks. Three conditions to assess the role of purchase of an additional item with cigarettes.</td>
+<td align="left">Racially concordant pairs of girls, age 16.5–17.5, entered a store together. One of the pair attempted to purchase cigarettes in alternating fashion. All were non-smokers. White girls asked for "a pack of Marlboro Reds" and Black girls for "a pack of Newports." Answered questions about age truthfully, showed ID if asked.</td>
+<td align="left">Three conditions: (1) Purchase with adult item (i.e., newspaper), (2) purchase with small bag of potato chips, and (3) no co-purchase (i.e., control).</td>
+<td align="left">No difference in sale rate between three conditions, <italic>x</italic><sup>2</sup>, df = 2, n = 237) = 0.213.</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<sec id="sec004">
+<title>Real-world youth behavior and familiarity in experimental studies</title>
+<p>One of ten studies compared real-world youth behavior with a standard protocol [<xref ref-type="bibr" rid="pone.0153152.ref008">8</xref>]. Concerned about the validity of underage compliance checks, DiFranza and colleagues experimentally tested a protocol that used youth smokers, making no requirements on their dress, appearance, truthfulness (youth could say anything except threats, profanity, or expressions of anger), purchase of other items, or use of identification cards (but fake identification cards were not allowed) [<xref ref-type="bibr" rid="pone.0153152.ref008">8</xref>]. These youth smokers were compared against a standard protocol that used non-smoking youth who were clean-shaven and did not use makeup. The youth smokers had 5.7 times greater odds of being sold a tobacco product (95% CI: 1.5–22.0) after controlling for the sales clerk age, ID request, and community characteristics. The authors noted that youth smokers were nearly twice as likely to be sold a tobacco product as their non-smoking peers. One of the ten studies experimentally tested underage buy protocols with minors who became familiar with the clerk by visiting the store multiple times [<xref ref-type="bibr" rid="pone.0153152.ref019">19</xref>]. Landrine and Klonoff interviewed youth about how they attained access to tobacco products at retailers [<xref ref-type="bibr" rid="pone.0153152.ref019">19</xref>]. Because being acquainted with the retail clerk was one of the strongest themes, the authors designed an experiment to test familiarity. Familiarity with the minor (i.e., the minor had been in the store four previous times and interacted with the clerk but had not attempted a tobacco purchase over six to eight days previously) was associated with higher sales: the odds of a sale were 5.51 times greater (95% CI: 2.93–10.35) than in the standard protocol [<xref ref-type="bibr" rid="pone.0153152.ref019">19</xref>].</p>
+<p>Other experimental studies examined specific aspects of real-world youth behaviors. Three studies examined the role of truthfulness in compliance rates [<xref ref-type="bibr" rid="pone.0153152.ref008">8</xref>, <xref ref-type="bibr" rid="pone.0153152.ref020">20</xref>, <xref ref-type="bibr" rid="pone.0153152.ref021">21</xref>]. Two studies reported on the use of actual IDs by youth during a compliance check [<xref ref-type="bibr" rid="pone.0153152.ref023">23</xref>, <xref ref-type="bibr" rid="pone.0153152.ref024">24</xref>]. Two studies experimentally examined the role of purchasing additional items with a tobacco product [<xref ref-type="bibr" rid="pone.0153152.ref020">20</xref>, <xref ref-type="bibr" rid="pone.0153152.ref022">22</xref>].</p>
+<p>In two of three studies, youth lying about their age did not increase the likelihood of a tobacco sale [<xref ref-type="bibr" rid="pone.0153152.ref008">8</xref>, <xref ref-type="bibr" rid="pone.0153152.ref021">21</xref>]. In the third, youth lying about their age increased the likelihood of the tobacco sale (OR = 4.22, 95% CI: 1.69–10.57) [<xref ref-type="bibr" rid="pone.0153152.ref020">20</xref>]. In this study, when the youth asked for a pack of Marlboros, they noted they were 18 and insisted on their age without providing ID [<xref ref-type="bibr" rid="pone.0153152.ref020">20</xref>]. In two studies, purchase of an additional item with the tobacco product did not change the likelihood of sale. In 2001, one study tested three buy conditions: purchase of tobacco items, purchase of a newspaper and tobacco, and purchase of a bag of chips and tobacco. There was no significant difference between the three conditions [<xref ref-type="bibr" rid="pone.0153152.ref022">22</xref>]. A second study from the early 2000s found no difference between a standard protocol and one in which, after several small items were purchased, the youth added, "Oh, and a pack of Marlboros too please" [<xref ref-type="bibr" rid="pone.0153152.ref020">20</xref>].</p>
+</sec>
+<sec id="sec005">
+<title>Use of an identification card and type of product requested in experimental studies</title>
+<p>One study compared youth flashing an ID quickly versus not using any ID [<xref ref-type="bibr" rid="pone.0153152.ref024">24</xref>]. Youth flashing of an ID resulted in 3.8 times greater likelihood of a sale (95% CI: 2.05–7.03) compared to no flashing of an ID [<xref ref-type="bibr" rid="pone.0153152.ref024">24</xref>]. In a separate study, if asked for an ID (which happened 87% of the time), the minor responded they had no ID or they provided an actual ID (which was marked "Under 21") [<xref ref-type="bibr" rid="pone.0153152.ref023">23</xref>]. When the youth presented the ID, there was a significantly higher rate of sales, relative risk was 6.2 times greater, than when no ID was presented [<xref ref-type="bibr" rid="pone.0153152.ref023">23</xref>].</p>
+<p>One of the ten experimental studies addressed the relationship between tobacco product requested and likelihood of a sale [<xref ref-type="bibr" rid="pone.0153152.ref025">25</xref>]. In a 1999 experimental examination of purchases of cigarettes, smokeless tobacco, and cigars, no differences in sales were found [<xref ref-type="bibr" rid="pone.0153152.ref025">25</xref>]. Two studies were reported in three correlational records that included experimental manipulations that were not the primary purpose of the studies. In an experimental study that was published across two correlational records (showing results for pack purchases in one [<xref ref-type="bibr" rid="pone.0153152.ref028">28</xref>] and single cigarettes in the other [<xref ref-type="bibr" rid="pone.0153152.ref029">29</xref>]), youth were more likely to be sold the pack than the single cigarette [<xref ref-type="bibr" rid="pone.0153152.ref029">29</xref>]. In a 1995 study that used a partial split sample approach to select what product to buy, among boys (girls were not asked to purchase smokeless), the likelihood of sale of a smokeless product was greater than when a cigarette pack was requested [<xref ref-type="bibr" rid="pone.0153152.ref030">30</xref>].</p>
+</sec>
+<sec id="sec006">
+<title>Purchase completion in experimental studies</title>
+<p>One study looked at terminating the purchase after having the clerk ring up the sale, versus completing the purchase of the pack of cigarettes [<xref ref-type="bibr" rid="pone.0153152.ref027">27</xref>]. The youth would ask for a pack of cigarettes and then either pay for the cigarettes or make up an excuse about not having enough money to complete the purchase. In this study, not completing versus completing the purchase did not impact the calculation of the violation rate [<xref ref-type="bibr" rid="pone.0153152.ref027">27</xref>].</p>
+</sec>
+<sec id="sec007">
+<title>Frequency of visits in experimental studies</title>
+<p>One study examined the frequency of visits, comparing results between youth visiting stores a single time or visiting twice (an average of 23 days later) [<xref ref-type="bibr" rid="pone.0153152.ref026">26</xref>]. Visiting the same store twice (with different combinations of youth and clerks) produced a violation rate that was seven to eight percentage points higher than visiting just once. The authors conceptualized the study as a measurement study, showing limited reliability in a given underage buy attempt. Following Classical Test Theory, the addition of more checks of the same construct would increase measurement reliability, which is what the authors found [<xref ref-type="bibr" rid="pone.0153152.ref026">26</xref>].</p>
+</sec>
+<sec id="sec008">
+<title>The role of minors’ experience</title>
+<p>Although no studies experimentally examined youths’ experience directly, findings from one study that used youth smokers may be related to experience and comfort in purchasing cigarettes that would be more challenging for a non-smoking youth [<xref ref-type="bibr" rid="pone.0153152.ref008">8</xref>]. In ancillary analyses, a 1998 study found a significant dose-response relationship between youth experience with attempting to purchase tobacco products and their purchase rates, with rates of purchase in the last one-third of the project 15 percentage points higher than in the first one-third of the project [<xref ref-type="bibr" rid="pone.0153152.ref025">25</xref>].</p>
+</sec>
+<sec id="sec009">
+<title>Youth and neighborhood characteristic correlates of underage sales</title>
+<p>Of the 44 correlational records identified, we judged 20 to be at low risk of confounding between youth age, gender, race, and neighborhood characteristics. Details about each record are presented in <xref ref-type="supplementary-material" rid="pone.0153152.s003">S1 Table</xref>. Of these, 11 reported on age of youth [<xref ref-type="bibr" rid="pone.0153152.ref028">28</xref>, <xref ref-type="bibr" rid="pone.0153152.ref029">29</xref>, <xref ref-type="bibr" rid="pone.0153152.ref031">31</xref>–<xref ref-type="bibr" rid="pone.0153152.ref039">39</xref>], 13 on gender of youth [<xref ref-type="bibr" rid="pone.0153152.ref028">28</xref>–<xref ref-type="bibr" rid="pone.0153152.ref033">33</xref>, <xref ref-type="bibr" rid="pone.0153152.ref035">35</xref>–<xref ref-type="bibr" rid="pone.0153152.ref041">41</xref>], six on race/ethnicity of youth [<xref ref-type="bibr" rid="pone.0153152.ref022">22</xref>, <xref ref-type="bibr" rid="pone.0153152.ref028">28</xref>, <xref ref-type="bibr" rid="pone.0153152.ref029">29</xref>, <xref ref-type="bibr" rid="pone.0153152.ref037">37</xref>, <xref ref-type="bibr" rid="pone.0153152.ref040">40</xref>, <xref ref-type="bibr" rid="pone.0153152.ref041">41</xref>], and 14 on community characteristics associated with retailer sales rates [<xref ref-type="bibr" rid="pone.0153152.ref022">22</xref>, <xref ref-type="bibr" rid="pone.0153152.ref028">28</xref>, <xref ref-type="bibr" rid="pone.0153152.ref029">29</xref>, <xref ref-type="bibr" rid="pone.0153152.ref035">35</xref>, <xref ref-type="bibr" rid="pone.0153152.ref036">36</xref>, <xref ref-type="bibr" rid="pone.0153152.ref039">39</xref>–<xref ref-type="bibr" rid="pone.0153152.ref047">47</xref>].</p>
+<p>There is unequivocal evidence that the age of the minor attempting the purchase is positively associated with the likelihood of a sale. All 11 studies we identified as being at low risk of confounding reported a significant and positive association with age. The dose-response between these variables is striking: Authors in a 1996–1997 Massachusetts study reported a 4.2% buy rate for 13-year-old minors while 16-year-old minors had a 30.5% buy rate [<xref ref-type="bibr" rid="pone.0153152.ref034">34</xref>]. In a national study of FDA inspections, the odds of a tobacco sale to a 17-year-old minor were 2.43 times greater than for a 15-year-old minor [<xref ref-type="bibr" rid="pone.0153152.ref036">36</xref>].</p>
+<p>The pattern of results suggests that girls are more likely to be sold tobacco products than boys. Indeed, of the studies at low risk of confounding, seven studies found positive associations between female gender and sales [<xref ref-type="bibr" rid="pone.0153152.ref028">28</xref>, <xref ref-type="bibr" rid="pone.0153152.ref031">31</xref>–<xref ref-type="bibr" rid="pone.0153152.ref033">33</xref>, <xref ref-type="bibr" rid="pone.0153152.ref036">36</xref>, <xref ref-type="bibr" rid="pone.0153152.ref037">37</xref>, <xref ref-type="bibr" rid="pone.0153152.ref039">39</xref>]. Five studies found no significant differences [<xref ref-type="bibr" rid="pone.0153152.ref029">29</xref>, <xref ref-type="bibr" rid="pone.0153152.ref030">30</xref>, <xref ref-type="bibr" rid="pone.0153152.ref038">38</xref>, <xref ref-type="bibr" rid="pone.0153152.ref040">40</xref>, <xref ref-type="bibr" rid="pone.0153152.ref041">41</xref>]. No studies found a positive association between male gender and likelihood of a sale. One study reported on gender discordance between the clerk and the buyer, finding higher rates of sales from female clerks to female minors and male minors than from male clerks to male minors [<xref ref-type="bibr" rid="pone.0153152.ref035">35</xref>].</p>
+<sec id="sec010">
+<title>Race and ethnicity</title>
+<p>Of the six studies that reported on the role of the race or ethnicity of the youth and addressed confounding with other youth characteristics, five of the six showed significantly higher likelihood of sales to a Black youth than a White youth [<xref ref-type="bibr" rid="pone.0153152.ref022">22</xref>, <xref ref-type="bibr" rid="pone.0153152.ref028">28</xref>, <xref ref-type="bibr" rid="pone.0153152.ref037">37</xref>, <xref ref-type="bibr" rid="pone.0153152.ref040">40</xref>, <xref ref-type="bibr" rid="pone.0153152.ref041">41</xref>]. The remaining study, which examined only the sale of single cigarettes to youth, found no significant difference by the race of the minor [<xref ref-type="bibr" rid="pone.0153152.ref029">29</xref>].</p>
+</sec>
+<sec id="sec011">
+<title>Neighborhood characteristic correlates of underage sales</title>
+<p>The literature on whether the likelihood of a sale differs by the demographic characteristics of a given neighborhood is complicated by a diversity of definitions of neighborhoods, limited reporting of unadjusted results, and the use of dichotomized neighborhood characteristics (which can reduce the power to detect an association [<xref ref-type="bibr" rid="pone.0153152.ref048">48</xref>]). Two records reported decreased likelihood of sales to minors as neighborhood income increased: Asumda and colleagues used <italic>t</italic>-tests to compare census block groups with a violation to all census block groups in Florida, finding lower per capita income in block groups with a violation [<xref ref-type="bibr" rid="pone.0153152.ref046">46</xref>]. Schmidt found similar results in Baltimore, MD [<xref ref-type="bibr" rid="pone.0153152.ref022">22</xref>]. However, these findings were not replicated in results adjusted for multiple covariates in Los Angeles, California, zip codes and Seattle, Washington, zip codes [<xref ref-type="bibr" rid="pone.0153152.ref035">35</xref>, <xref ref-type="bibr" rid="pone.0153152.ref042">42</xref>] or in unadjusted results from a Midwestern city's census block groups comparing the top decile against all others [<xref ref-type="bibr" rid="pone.0153152.ref044">44</xref>].</p>
+<p>Evidence of the relationship between the percentage of Black residents in a given neighborhood and the likelihood of a store's sale to minors was also complex. In adjusted regression analysis, positive associations were found in Los Angeles, CA, zip codes and Washington, DC, block groups. In unadjusted analyses, there was no significant relationship in four studies [<xref ref-type="bibr" rid="pone.0153152.ref028">28</xref>, <xref ref-type="bibr" rid="pone.0153152.ref040">40</xref>, <xref ref-type="bibr" rid="pone.0153152.ref041">41</xref>, <xref ref-type="bibr" rid="pone.0153152.ref044">44</xref>] and a positive association in three studies [<xref ref-type="bibr" rid="pone.0153152.ref022">22</xref>, <xref ref-type="bibr" rid="pone.0153152.ref029">29</xref>, <xref ref-type="bibr" rid="pone.0153152.ref045">45</xref>], two of which were for the purchase of single cigarettes [<xref ref-type="bibr" rid="pone.0153152.ref029">29</xref>, <xref ref-type="bibr" rid="pone.0153152.ref045">45</xref>]. Two studies found negative associations between Black residents and retailer sales to minors, one in Florida block groups [<xref ref-type="bibr" rid="pone.0153152.ref046">46</xref>] and the other in four San Diego, CA, communities as defined by the authors [<xref ref-type="bibr" rid="pone.0153152.ref039">39</xref>].</p>
+<p>Regarding the proportion of Hispanic residents in a neighborhood and underage sales, four studies found significant positive associations in Florida block groups [<xref ref-type="bibr" rid="pone.0153152.ref046">46</xref>], San Diego, CA, communities defined by the authors, [<xref ref-type="bibr" rid="pone.0153152.ref039">39</xref>] a Midwestern metropolitan area’s block groups, [<xref ref-type="bibr" rid="pone.0153152.ref044">44</xref>] and, for single cigarettes, San Bernardino, CA, census tracts [<xref ref-type="bibr" rid="pone.0153152.ref029">29</xref>]. One study found no significant association for cigarette packs in San Bernardino, CA, census tracts [<xref ref-type="bibr" rid="pone.0153152.ref040">40</xref>].</p>
+</sec>
+</sec>
+<sec id="sec012">
+<title>Legal considerations</title>
+<p>Our review of the protocols in relation to criminal and administrative authority suggests the differences between the legal powers authorizing underage buy inspections matter. Public health professionals appeared to be concerned about underage purchase attempts constituting entrapment and designed restrictive, ecologically invalid protocols in response to this concern. The existing legal literature suggests this fear may be unsubstantiated. Entrapment would occur when compliance check personnel acquired the evidence necessary to prosecute a potential violator by inducing the retailer to violate the law when the retailer would not have otherwise done so. Simply put, if the intent originated in the mind of the inspection program rather than the retailer, the retailer has a potential defense. The issue of entrapment for retail compliance checks conducted under the FSPTCA has not been raised thus far by a retailer but such a defense is highly unlikely to succeed. To meet the legal standard for entrapment, significant inducement or coercion is required—something well beyond the straightforward underage tobacco purchase attempt—and it must be proven that the retailer would not have sold to the minor under regular (non-compliance check) circumstances. Historically, this has been extremely difficult to prove, particularly in situations involving the sale of alcohol and tobacco to minors (55 A.L.R.2d 1322). As a general rule, the use of underage buyers to expose illegal activity or regulatory violations does not constitute entrapment because the inspection does no more than offer the opportunity to commit the violation [<xref ref-type="bibr" rid="pone.0153152.ref049">49</xref>, <xref ref-type="bibr" rid="pone.0153152.ref050">50</xref>].</p>
+</sec>
+</sec>
+<sec id="sec013" sec-type="conclusions">
+<title>Discussion</title>
+<p>Based on the existing experimental research, commonly used underage buy protocols appear to poorly represent the reality of youths' access to tobacco products from tobacco retailers for two reasons: (1) local youth making tobacco purchases are likely to be known by (i.e., become familiar to) clerks over time and (2) most youth tobacco purchasers look like, act like, and are (logically) tobacco users. In traditional measurement terminology, standard compliance checks have concerning issues with validity and additionally with reliability; a single compliance check is subject to considerable variability based on the age and experience of the minor conducting it as well as the clerk on duty [<xref ref-type="bibr" rid="pone.0153152.ref026">26</xref>]. Efforts are needed to reduce the use of younger rather than older minors in underage buy inspections and to maximize impact by targeting underage buy inspections where non-compliance is highest.</p>
+<p>Using younger youth in underage buy protocols raises important issues regarding validity because younger youth are less likely to purchase tobacco from a retailer and more likely to get cigarettes from older acquaintances [<xref ref-type="bibr" rid="pone.0153152.ref002">2</xref>]. A previous review and General Accounting Office (GAO) report indicated older youth are more likely to be sold a tobacco product than younger youth at a tobacco retailer [<xref ref-type="bibr" rid="pone.0153152.ref013">13</xref>, <xref ref-type="bibr" rid="pone.0153152.ref014">14</xref>]. Our review confirms that finding; there is striking evidence that older youths have much higher rates of purchase in underage buy inspections. The GAO recommended the removal of 15-year-olds from use in state inspections [<xref ref-type="bibr" rid="pone.0153152.ref013">13</xref>]. The use of 15-year-olds likely further reduces the validity of underage buy protocols. Use of 15-year-olds may assist in criminal prosecution of retailers in local courts by countering judicial views of underage tobacco sales being unimportant [<xref ref-type="bibr" rid="pone.0153152.ref051">51</xref>].</p>
+<p>Programs implementing underage buy inspections under criminal statutory authority may need to be aware of local courts, public opinion, and pressure placed on health departments and prosecutors because these have proven to be barriers to underage buy programs [<xref ref-type="bibr" rid="pone.0153152.ref051">51</xref>, <xref ref-type="bibr" rid="pone.0153152.ref052">52</xref>]. FDA administrative hearings are less likely to be susceptible to the pressures of local business interests. Administrative law judges are not elected by the community, nor do they work with local prosecutors or have relationships with local law enforcement.</p>
+<p>There is some evidence for differences in likelihood of a sale by the demographic makeup of the neighborhood; sampling strategies for retail compliance checks should take into account potential disparities in violation rates and target areas with lower income. Evidence published after our search shows clear evidence of neighborhood disparities in the sale of single cigarettes by the racial and economic composition of neighborhoods [<xref ref-type="bibr" rid="pone.0153152.ref053">53</xref>].</p>
+<p>We believe that the existing experimental research offers some clear improvements to the standard underage buy protocol (<xref ref-type="table" rid="pone.0153152.t002">Table 2</xref>); whether or not they are for enforcement of criminal state laws or administrative FDA regulations should influence the protocols.</p>
+<table-wrap id="pone.0153152.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0153152.t002</object-id>
+<label>Table 2</label> <caption><title>Recommendations for Protocol.</title></caption>
+<alternatives>
+<graphic id="pone.0153152.t002g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0153152.t002" xlink:type="simple"/>
+<table>
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<tbody>
+<tr>
+<td align="left"><bold>Recommendations for Youth Recruitment, Age, and Appearance</bold></td>
+<td align="left"><bold>Rationale</bold></td>
+</tr>
+<tr>
+<td align="left">States should consider using minors no younger than 16, though exclusively using minors age 17 is ideal.</td>
+<td align="left">Younger minors often acquire their cigarettes from older youth and young adults.</td>
+</tr>
+<tr>
+<td align="left">States should strive for minors who represent real-world youth smokers, reflecting the gender and racial/ethnic composition of their locale.</td>
+<td align="left">It is illegal to sell to a 17-year-old regardless of appearance.</td>
+</tr>
+<tr>
+<td align="left">States should not artificially make minors look younger by requiring them to dress in a particular way (business casual dress codes, no makeup, no facial hair, etc.). For hiring purposes, states should consider interviewing minors by phone to avoid biasing appearance.</td>
+<td align="left">Efforts at using youthful appearing minors bias inspection results.</td>
+</tr>
+<tr>
+<td align="left">States should train and maintain experienced minors, including minor smokers who smoked before being recruited<xref ref-type="table-fn" rid="t002fn002">*</xref>.</td>
+<td align="left">(1) Real-world minor smokers are able to project confidence during a purchase attempt. (2) Using minors who smoke improves the validity of the purchase attempt, however programs leveraging minors who smoke have an ethical obligation to provide meaningful resources to quit.</td>
+</tr>
+<tr>
+<td align="left"><bold>Recommendations for Protocol</bold></td>
+<td align="left"><bold>Rationale</bold></td>
+</tr>
+<tr>
+<td align="left">States should vary the requested tobacco product to match the product typically purchased by minors of each particular demographic.</td>
+<td align="left">To reflect real-world minor behavior, products selected should match community and minor characteristics.</td>
+</tr>
+<tr>
+<td align="left">States should require minors to carry identification cards and show them <italic>if asked</italic>.</td>
+<td align="left">Presentation of ID does not necessarily preclude sale of tobacco products, and presentation of ID cards more closely reflects real-world experience of underage purchase attempts because some underage youth may assume that the clerk would not actually check the date of birth.</td>
+</tr>
+<tr>
+<td align="left">States should train minors in avoiding answering questions to disclose a compliance check, but there is no evidence to suggest lying about age improves validity of compliance checks.</td>
+<td align="left">Lying about age does not change the outcome of a purchase attempt. However, if retailers use answering this question as a way to identify a compliance check in progress, it may not be legally problematic to allow minors to lie.</td>
+</tr>
+<tr>
+<td align="left">States should consider sending the same minor to conduct purchase attempts more than once at the same store.</td>
+<td align="left">(1) Using a familiarity protocol clearly reflects real-world behaviors of neighborhood youth. (2) More frequent visits improve the reliability of underage buy rate measurement and, with enforcement, improve compliance. (3) More frequent visits improve the reliability of underage buy rate measurement and, with enforcement, improve compliance.</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t002fn001"><p>Note: Some state laws may preempt these recommendations and readers are advised to consult with local attorneys general to ensure compliance.</p></fn>
+<fn id="t002fn002"><p>*States should make available smoking cessation resources to any employed minor smokers. Starting to smoke while participating in the program should be grounds for dismissal.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<sec id="sec014">
+<title>Other considerations and future research</title>
+<p>The literature identified does not address several important issues of underage buy compliance check protocols including how and when retailers become aware that they are being assessed for compliance. The use of adult chaperones who enter with the minor and the use of "unmarked" police cars (e.g., the classic gray sedans with tinted windows and extra antennas) may alert the retailer to a compliance check, again reducing the validity of the underage buy protocol. Further investigation of best practices to reduce inadvertent disclosure of a compliance check in process is needed. It is unclear if youth are more or less likely to be sold to depending on what brand they request. As the retail environment continues to evolve, protection of minors remains of paramount concern; at least one study shows no negative impacts from participation [<xref ref-type="bibr" rid="pone.0153152.ref054">54</xref>]. Additionally, with the FSPTCA and changes in legal landscape, there are new considerations for the age of the minor. We note that in FDA regulations, retailers should card all purchasers who appear to be under 28 years old. Failing to card a 19-year-old would still be a violation of the FSPTCA, although the sale itself would be legal (21 CFR 1140, FSPTCA Section 102). With growing adoption of Tobacco 21 laws increasing the legal age of sale to 21, young adults may be needed to participate in retailer inspection programs. Future research should assess how to optimize the ages of youth (or potentially young adult) inspections to maximize population health. Additionally, future research should (1) seek to disentangle the role of different real-world youth behaviors and (2) examine disparities in retailer sales to minors by neighborhood characteristics (e.g., income, racial composition) in wider geographic areas.</p>
+</sec>
+<sec id="sec015">
+<title>Limitations</title>
+<p>There are a number of limitations to this review. First, the age of the identified literature raises questions about (1) changes in the format of state-issued identification and (2) changes in the retail environment. The identified literature is older and thus may not reflect newer advances in vertical or color-coded licenses for youth under 18 or 21. However, it's unclear if use of an ID reflects real-world purchase attempts by youth [<xref ref-type="bibr" rid="pone.0153152.ref023">23</xref>]. The age of the existing literature is also a cause for concern given changes in the retail environment: Although self-service displays of tobacco products and vending machines were widely available in the 1990s, the contemporary retail landscape is substantially different. Second, due to an omission in our protocol and record-tracking system, we failed to record detailed information on the reasons records were excluded. Third, because of the limited literature and its age, we do not exclude records based on their quality or risk of bias instead opting to present as much of the existing evidence as we could identify. Future work should more thoroughly assess records for risk of bias. Like any systematic review, records not identified in our search may have been omitted. Publication bias may be present. Although our search reviewed citations in included records, we did not search for unpublished reports or government documents.</p>
+</sec>
+</sec>
+<sec id="sec016" sec-type="conclusions">
+<title>Conclusions</title>
+<p>The standard underage purchase protocol can be improved. State programs developing or updating protocols should consider the legal authority under which the protocol is being implemented and strive to mimic real-world appearance, behaviors, and demographics of participating youth in protocol development. Developing standard protocols that focus on the validity and reliability of the data is key to identifying violators, remedying the problem, and ultimately reducing youth access to tobacco products.</p>
+<p>Previous federally mandated inspections programs have shown evidence of inconsistent implementation by states and used protocols that poorly reflect real-world levels of youth access to tobacco products at retailers [<xref ref-type="bibr" rid="pone.0153152.ref013">13</xref>, <xref ref-type="bibr" rid="pone.0153152.ref015">15</xref>]. Current FDA inspections of tobacco retailers also show some evidence of differences in implementation by FDA’s state subcontractors in the identification of single cigarette sales [<xref ref-type="bibr" rid="pone.0153152.ref055">55</xref>]. Both states and researchers can improve the validity and reliability of underage buy protocols. As new efforts to reduce youth access to e-cigarettes emerge, there will be additional reasons for improving underage buy protocols. These improvements would likely help maximize the impact of scarce public health resources.</p>
+</sec>
+<sec id="sec017">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0153152.s001" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0153152.s001" xlink:type="simple">
+<label>S1 File</label>
+<caption>
+<title>Protocol for Underage Buys: Validity and Implementation Systematic Review.</title>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0153152.s002" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0153152.s002" xlink:type="simple">
+<label>S2 File</label>
+<caption>
+<title>PRISMA 2009 Checklist.</title>
+<p>(DOC)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0153152.s003" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pone.0153152.s003" xlink:type="simple">
+<label>S1 Table</label>
+<caption>
+<title>Evidence Regarding Youth, Protocol, and Neighborhood Correlates of Non-Compliance with Prohibition on Sales of Tobacco Products to Minors, May 22, 2015, N = 44, Stratified by Risk of Confounding.</title>
+<p>(DOCX)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>Our thanks to UNC Health Sciences Library’s Lara Handler, MSLS, for expert assistance with the development of our search strategy.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0153152.ref001"><label>1</label><mixed-citation publication-type="book" xlink:type="simple"><collab>WHO</collab>. <source>Report on the Global Tobacco Epidemic, 2008: the MPOWER Package</source>. <publisher-loc>Geneva</publisher-loc>: <publisher-name>World Health Organization</publisher-name>; <year>2008</year>.</mixed-citation></ref>
+<ref id="pone.0153152.ref002"><label>2</label><mixed-citation publication-type="book" xlink:type="simple"><collab>Institute of Medicine</collab>. <source>Public health implications of raising the minimum age of legal access to tobacco products</source>. <publisher-loc>Washington, DC</publisher-loc>: <publisher-name>The National Academies Press</publisher-name>; <year>2015</year>.</mixed-citation></ref>
+<ref id="pone.0153152.ref003"><label>3</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hawkins</surname> <given-names>CH</given-names></name>. <article-title>Legal restrictions on minors' smoking</article-title>. <source>Am J Public Health</source>. <year>1964</year>;<volume>54</volume>:<fpage>1741</fpage>–<lpage>4</lpage>. Epub 1964/10/01. <object-id pub-id-type="pmid">14240497</object-id>; PubMed Central PMCID: PMCPMC1255050.</mixed-citation></ref>
+<ref id="pone.0153152.ref004"><label>4</label><mixed-citation publication-type="other" xlink:type="simple">World Health Organization. Parties to the WHO Framework Convention on Tobacco Control: United Nations; 2016. Available: <ext-link ext-link-type="uri" xlink:href="http://www.who.int/fctc/signatories_parties/en/" xlink:type="simple">http://www.who.int/fctc/signatories_parties/en/</ext-link>. Accessed 4 February 2016.</mixed-citation></ref>
+<ref id="pone.0153152.ref005"><label>5</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nagler</surname> <given-names>RH</given-names></name>, <name name-style="western"><surname>Viswanath</surname> <given-names>K</given-names></name>. <article-title>Implementation and research priorities for FCTC Articles 13 and 16: tobacco advertising, promotion, and sponsorship and sales to and by minors</article-title>. <source>Nicotine Tob Res</source>. <year>2013</year>;<volume>15</volume>(<issue>4</issue>):<fpage>832</fpage>–<lpage>46</lpage>. Epub 2013/01/08. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/ntr/nts331" xlink:type="simple">10.1093/ntr/nts331</ext-link></comment> <object-id pub-id-type="pmid">23291641</object-id>; PubMed Central PMCID: PMCPMC3601914.</mixed-citation></ref>
+<ref id="pone.0153152.ref006"><label>6</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fichtenberg</surname> <given-names>CM</given-names></name>, <name name-style="western"><surname>Glantz</surname> <given-names>SA</given-names></name>. <article-title>Youth access interventions do not affect youth smoking</article-title>. <source>Pediatrics</source>. <year>2002</year>;<volume>109</volume>(<issue>6</issue>):<fpage>1088</fpage>–<lpage>92</lpage>. Epub 2002/06/04. <object-id pub-id-type="pmid">12042547</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref007"><label>7</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DiFranza</surname> <given-names>JR</given-names></name>. <article-title>Is it time to abandon youth access programmes?</article-title> <source>Tob Control</source>. <year>2002</year>;<volume>11</volume>(<issue>3</issue>):<fpage>282</fpage>; author reply 3–4. Epub 2002/08/29. <object-id pub-id-type="pmid">12198288</object-id>; PubMed Central PMCID: PMCPMC1759006.</mixed-citation></ref>
+<ref id="pone.0153152.ref008"><label>8</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DiFranza</surname> <given-names>JR</given-names></name>, <name name-style="western"><surname>Savageau</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Bouchard</surname> <given-names>J</given-names></name>. <article-title>Is the standard compliance check protocol a valid measure of the accessibility of tobacco to underage smokers?</article-title> <source>Tob Control</source>. <year>2001</year>;<volume>10</volume>(<issue>3</issue>):<fpage>227</fpage>–<lpage>32</lpage>. Epub 2001/09/07. <object-id pub-id-type="pmid">11544386</object-id>; PubMed Central PMCID: PMCPMC1747587.</mixed-citation></ref>
+<ref id="pone.0153152.ref009"><label>9</label><mixed-citation publication-type="other" xlink:type="simple">Food and Drug Administration. Compliance check inspections of tobacco product retailers [Internet Site]. Silver Spring, MD2015 [updated August 31]. Available: <ext-link ext-link-type="uri" xlink:href="http://www.accessdata.fda.gov/scripts/oce/inspections/oce_insp_searching.cfm" xlink:type="simple">http://www.accessdata.fda.gov/scripts/oce/inspections/oce_insp_searching.cfm</ext-link>. Accessed 1 October 2015.</mixed-citation></ref>
+<ref id="pone.0153152.ref010"><label>10</label><mixed-citation publication-type="other" xlink:type="simple">Food and Drug Administration. FDA Tobacco Retail Inspection Contracts 2015. Available: <ext-link ext-link-type="uri" xlink:href="http://www.fda.gov/TobaccoProducts/GuidanceComplianceRegulatoryInformation/Retail/ucm228914.htm" xlink:type="simple">http://www.fda.gov/TobaccoProducts/GuidanceComplianceRegulatoryInformation/Retail/ucm228914.htm</ext-link>. Accessed 1 October 2015.</mixed-citation></ref>
+<ref id="pone.0153152.ref011"><label>11</label><mixed-citation publication-type="other" xlink:type="simple">Alcohol, Drug Abuse, and Mental Health Administration Reorganization Act Pub. L. No. 102-321(July 10, 1992).</mixed-citation></ref>
+<ref id="pone.0153152.ref012"><label>12</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DiFranza</surname> <given-names>JR</given-names></name>, <name name-style="western"><surname>Dussault</surname> <given-names>GF</given-names></name>. <article-title>The federal initiative to halt the sale of tobacco to children—the Synar Amendment, 1992–2000: lessons learned</article-title>. <source>Tob Control</source>. <year>2005</year>;<volume>14</volume>(<issue>2</issue>):<fpage>93</fpage>–<lpage>8</lpage>. Epub 2005/03/26. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/tc.2004.009373" xlink:type="simple">10.1136/tc.2004.009373</ext-link></comment> <object-id pub-id-type="pmid">15791018</object-id>; PubMed Central PMCID: PMC1748003.</mixed-citation></ref>
+<ref id="pone.0153152.ref013"><label>13</label><mixed-citation publication-type="book" xlink:type="simple"><collab>U.S. General Accounting Office</collab>. <source>Synar Amendment Implementation: Quality of state data on reducing youth access to tobacco could be improved</source>. <publisher-loc>Washington, DC</publisher-loc>: <publisher-name>Author</publisher-name>, <year>2001</year>.</mixed-citation></ref>
+<ref id="pone.0153152.ref014"><label>14</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Forster</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Wolfson</surname> <given-names>M</given-names></name>. <article-title>Youth access to tobacco: policies and politics</article-title>. <source>Annu Rev Public Health</source>. <year>1998</year>;<volume>19</volume>:<fpage>203</fpage>–<lpage>35</lpage>. Epub 1998/06/05. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev.publhealth.19.1.203" xlink:type="simple">10.1146/annurev.publhealth.19.1.203</ext-link></comment> <object-id pub-id-type="pmid">9611618</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref015"><label>15</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DiFranza</surname> <given-names>JR</given-names></name>. <article-title>Best practices for enforcing state laws prohibiting the sale of tobacco to minors</article-title>. <source>J Public Health Manag Pract</source>. <year>2005</year>;<volume>11</volume>(<issue>6</issue>):<fpage>559</fpage>–<lpage>65</lpage>. Epub 2005/10/15. <object-id pub-id-type="pmid">16224293</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref016"><label>16</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stead</surname> <given-names>LF</given-names></name>, <name name-style="western"><surname>Lancaster</surname> <given-names>T</given-names></name>. <article-title>Interventions for preventing tobacco sales to minors</article-title>. <source>Cochrane Database Syst Rev</source>. <year>2005</year>;(<volume>1</volume>):<fpage>CD001497</fpage>. Epub 2005/01/28. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/14651858.CD001497.pub2" xlink:type="simple">10.1002/14651858.CD001497.pub2</ext-link></comment> <object-id pub-id-type="pmid">15674880</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref017"><label>17</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Davis</surname> <given-names>RM</given-names></name>. <article-title>Tobacco Control joins Index Medicus and Medline</article-title>. <source>Tob Control</source>. <year>1996</year>;<volume>5</volume>(<issue>2</issue>):<fpage>99</fpage>. Epub 1996/01/01. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/tc.5.2.99" xlink:type="simple">10.1136/tc.5.2.99</ext-link></comment> <object-id pub-id-type="pmid">8910987</object-id>; PubMed Central PMCID: PMCPMC1759498.</mixed-citation></ref>
+<ref id="pone.0153152.ref018"><label>18</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Moher</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Liberati</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Tetzlaff</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Altman</surname> <given-names>DG</given-names></name>. <article-title>Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement</article-title>. <source>PLoS Med</source>. <year>2009</year>;<volume>6</volume>(<issue>7</issue>):<fpage>e1000097</fpage>. Epub 2009/07/22. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1000097" xlink:type="simple">10.1371/journal.pmed.1000097</ext-link></comment> <object-id pub-id-type="pmid">19621072</object-id>; PubMed Central PMCID: PMC2707599.</mixed-citation></ref>
+<ref id="pone.0153152.ref019"><label>19</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Landrine</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Klonoff</surname> <given-names>EA</given-names></name>. <article-title>Validity of Assessments of Youth Access to Tobacco: The Familiarity Effect</article-title>. <source>American Journal of Public Health</source>. <year>2003</year>;<volume>93</volume>(<issue>11</issue>):<fpage>1883</fpage>–<lpage>6</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2105/AJPH.93.11.1883" xlink:type="simple">10.2105/AJPH.93.11.1883</ext-link></comment> 2003-09633-012. <object-id pub-id-type="pmid">14600057</object-id></mixed-citation></ref>
+<ref id="pone.0153152.ref020"><label>20</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Klonoff</surname> <given-names>EA</given-names></name>, <name name-style="western"><surname>Landrine</surname> <given-names>H</given-names></name>. <article-title>Predicting Youth Access to Tobacco: The Role of Youth Versus Store-Clerk Behavior and Issues of Ecological Validity</article-title>. <source>Health Psychol</source>. <year>2004</year>;<volume>23</volume>(<issue>5</issue>):<fpage>517</fpage>–<lpage>24</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1037/0278-6133.23.5.517" xlink:type="simple">10.1037/0278-6133.23.5.517</ext-link></comment> 2004-18051-009. <object-id pub-id-type="pmid">15367071</object-id></mixed-citation></ref>
+<ref id="pone.0153152.ref021"><label>21</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hyland</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Cummings</surname> <given-names>KM</given-names></name>, <name name-style="western"><surname>Seiwell</surname> <given-names>M</given-names></name>. <article-title>The impact of untruthful age reporting during tobacco compliance checks</article-title>. <source>J Public Health Manag Pract</source>. <year>2000</year>;<volume>6</volume>(<issue>3</issue>):<fpage>115</fpage>–<lpage>8</lpage>. Epub 2000/06/10. <object-id pub-id-type="pmid">10848478</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref022"><label>22</label><mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Schmitt</surname> <given-names>CL</given-names></name>. <source>The effect of decision heuristics and ethnicity on cigarette sales to minor girls</source>. <publisher-loc>Baltimore, MD</publisher-loc>: <publisher-name>University of Maryland, Baltimore County</publisher-name>; <year>2001</year>.</mixed-citation></ref>
+<ref id="pone.0153152.ref023"><label>23</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levinson</surname> <given-names>AH</given-names></name>, <name name-style="western"><surname>Hendershott</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Byers</surname> <given-names>TE</given-names></name>. <article-title>The ID effect on youth access to cigarettes</article-title>. <source>Tob Control</source>. <year>2002</year>;<volume>11</volume>(<issue>4</issue>):<fpage>296</fpage>–<lpage>9</lpage>. Epub 2002/11/15. <object-id pub-id-type="pmid">12432154</object-id>; PubMed Central PMCID: PMCPMC1747672.</mixed-citation></ref>
+<ref id="pone.0153152.ref024"><label>24</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Landrine</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Klonoff</surname> <given-names>EA</given-names></name>, <name name-style="western"><surname>Lang</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Alcaraz</surname> <given-names>R</given-names></name>. <article-title>Use of identification cards by underage youth to purchase tobacco</article-title>. <source>JAMA</source>. <year>2001</year>;<volume>285</volume>(<issue>18</issue>):<fpage>2329</fpage>. Epub 2001/05/10. <object-id pub-id-type="pmid">11343479</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref025"><label>25</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DiFranza</surname> <given-names>JR</given-names></name>, <name name-style="western"><surname>Coleman</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>St Cyr</surname> <given-names>D</given-names></name>. <article-title>A comparison of the advertising and accessibility of cigars, cigarettes, chewing tobacco, and loose tobacco</article-title>. <source>Prev Med</source>. <year>1999</year>;<volume>29</volume>(<issue>5</issue>):<fpage>321</fpage>–<lpage>6</lpage>. Epub 1999/11/18. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/pmed.1999.0553" xlink:type="simple">10.1006/pmed.1999.0553</ext-link></comment> <object-id pub-id-type="pmid">10564622</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref026"><label>26</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Levinson</surname> <given-names>AH</given-names></name>, <name name-style="western"><surname>Patnaik</surname> <given-names>JL</given-names></name>. <article-title>A practical way to estimate retail tobacco sales violation rates more accurately</article-title>. <source>Nicotine &amp; Tobacco Research</source>. <year>2013</year>;<volume>15</volume>(<issue>11</issue>):<fpage>1952</fpage>–<lpage>5</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/ntr/ntt084" xlink:type="simple">10.1093/ntr/ntt084</ext-link></comment> 2013-35572-021.</mixed-citation></ref>
+<ref id="pone.0153152.ref027"><label>27</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cummings</surname> <given-names>KM</given-names></name>, <name name-style="western"><surname>Saunders-Martin</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Clarke</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Perla</surname> <given-names>J</given-names></name>. <article-title>Monitoring vendor compliance with tobacco sales laws: payment vs no payment approaches</article-title>. <source>Am J Public Health</source>. <year>1996</year>;<volume>86</volume>(<issue>5</issue>):<fpage>750</fpage>–<lpage>1</lpage>. Epub 1996/05/01. <object-id pub-id-type="pmid">8629737</object-id>; PubMed Central PMCID: PMCPMC1380496.</mixed-citation></ref>
+<ref id="pone.0153152.ref028"><label>28</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Klonoff</surname> <given-names>EA</given-names></name>, <name name-style="western"><surname>Landrine</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Alcaraz</surname> <given-names>R</given-names></name>. <article-title>An experimental analysis of sociocultural variables in sales of cigarettes to minors</article-title>. <source>Am J Public Health</source>. <year>1997</year>;<volume>87</volume>(<issue>5</issue>):<fpage>823</fpage>–<lpage>6</lpage>. Epub 1997/05/01. <object-id pub-id-type="pmid">9184513</object-id>; PubMed Central PMCID: PMCPmc1381057.</mixed-citation></ref>
+<ref id="pone.0153152.ref029"><label>29</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Landrine</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Klonoff</surname> <given-names>EA</given-names></name>, <name name-style="western"><surname>Alcaraz</surname> <given-names>R</given-names></name>. <article-title>Minors' access to single cigarettes in California</article-title>. <source>Prev Med</source>. <year>1998</year>;<volume>27</volume>(<issue>4</issue>):<fpage>503</fpage>–<lpage>5</lpage>. Epub 1998/07/22. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/pmed.1998.0326" xlink:type="simple">10.1006/pmed.1998.0326</ext-link></comment> <object-id pub-id-type="pmid">9672942</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref030"><label>30</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Biglan</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Henderson</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Humphrey</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Yasui</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Whisman</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Black</surname> <given-names>C</given-names></name>, <etal>et al</etal>. <article-title>Mobilising positive reinforcement to reduce youth access to tobacco</article-title>. <source>Tob Control</source>. <year>1995</year>;<volume>4</volume>(<issue>1</issue>):<fpage>42</fpage>–<lpage>8</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/tc.4.1.42" xlink:type="simple">10.1136/tc.4.1.42</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0153152.ref031"><label>31</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Keay</surname> <given-names>KD</given-names></name>, <name name-style="western"><surname>Woodruff</surname> <given-names>SI</given-names></name>, <name name-style="western"><surname>Wildey</surname> <given-names>MB</given-names></name>, <name name-style="western"><surname>Kenney</surname> <given-names>EM</given-names></name>. <article-title>Effect of a retailer intervention on cigarette sales to minors in San Deigo County, California</article-title>. <source>Tob Control</source>. <year>1993</year>;<volume>2</volume>(<issue>2</issue>):<fpage>145</fpage>–<lpage>51</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/tc.2.2.145" xlink:type="simple">10.1136/tc.2.2.145</ext-link></comment></mixed-citation></ref>
+<ref id="pone.0153152.ref032"><label>32</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DiFranza</surname> <given-names>JR</given-names></name>, <name name-style="western"><surname>Savageau</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Aisquith</surname> <given-names>BF</given-names></name>. <article-title>Youth access to tobacco: the effects of age, gender, vending machine locks, and "it's the law" programs</article-title>. <source>Am J Public Health</source>. <year>1996</year>;<volume>86</volume>(<issue>2</issue>):<fpage>221</fpage>–<lpage>4</lpage>. Epub 1996/02/01. <object-id pub-id-type="pmid">8633739</object-id>; PubMed Central PMCID: PMCPMC1380331.</mixed-citation></ref>
+<ref id="pone.0153152.ref033"><label>33</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Forster</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Hourigan</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>McGovern</surname> <given-names>P</given-names></name>. <article-title>Availability of cigarettes to underage youth in three communities</article-title>. <source>Prev Med</source>. <year>1992</year>;<volume>21</volume>(<issue>3</issue>):<fpage>320</fpage>–<lpage>8</lpage>. Epub 1992/05/01. <object-id pub-id-type="pmid">1614994</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref034"><label>34</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DiFranza</surname> <given-names>JR</given-names></name>, <name name-style="western"><surname>Celebucki</surname> <given-names>CC</given-names></name>, <name name-style="western"><surname>Mowery</surname> <given-names>PD</given-names></name>. <article-title>Measuring statewide merchant compliance with tobacco minimum age laws: the Massachusetts experience</article-title>. <source>Am J Public Health</source>. <year>2001</year>;<volume>91</volume>(<issue>7</issue>):<fpage>1124</fpage>–<lpage>5</lpage>. Epub 2001/07/10. <object-id pub-id-type="pmid">11441743</object-id>; PubMed Central PMCID: PMCPMC1446711.</mixed-citation></ref>
+<ref id="pone.0153152.ref035"><label>35</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pearson</surname> <given-names>DC</given-names></name>, <name name-style="western"><surname>Song</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Valdez</surname> <given-names>RB</given-names></name>, <name name-style="western"><surname>Angulo</surname> <given-names>AS</given-names></name>. <article-title>Youth tobacco sales in a metropolitan county: Factors associated with compliance</article-title>. <source>American Journal of Preventive Medicine</source>. <year>2007</year>;<volume>33</volume>(<issue>2</issue>):<fpage>91</fpage>–<lpage>7</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.amepre.2007.04.010" xlink:type="simple">10.1016/j.amepre.2007.04.010</ext-link></comment> <object-id pub-id-type="pmid">17673095</object-id></mixed-citation></ref>
+<ref id="pone.0153152.ref036"><label>36</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Clark</surname> <given-names>PI</given-names></name>, <name name-style="western"><surname>Natanblut</surname> <given-names>SL</given-names></name>, <name name-style="western"><surname>Schmitt</surname> <given-names>CL</given-names></name>, <name name-style="western"><surname>Wolters</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Iachan</surname> <given-names>R</given-names></name>. <article-title>Factors associated with tobacco sales to minors: lessons learned from the FDA compliance checks</article-title>. <source>JAMA</source>. <year>2000</year>;<volume>284</volume>(<issue>6</issue>):<fpage>729</fpage>–<lpage>34</lpage>. Epub 2000/08/06. <object-id pub-id-type="pmid">10927782</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref037"><label>37</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Landrine</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Corral</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Klonoff</surname> <given-names>EA</given-names></name>, <name name-style="western"><surname>Jensen</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Kashima</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Hickman</surname> <given-names>N</given-names></name>, <etal>et al</etal>. <article-title>Ethnic disparities in youth access to tobacco: California statewide results, 1999–2003</article-title>. <source>Health Promotion Practice</source>. <year>2010</year>;<volume>11</volume>(<issue>1</issue>):<fpage>132</fpage>–<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1177/1524839908317230" xlink:type="simple">10.1177/1524839908317230</ext-link></comment> 2010-00004-019. <object-id pub-id-type="pmid">18480321</object-id></mixed-citation></ref>
+<ref id="pone.0153152.ref038"><label>38</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lipperman-Kreda</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Grube</surname> <given-names>JW</given-names></name>, <name name-style="western"><surname>Friend</surname> <given-names>KB</given-names></name>. <article-title>Contextual and community factors associated with youth access to cigarettes through commercial sources</article-title>. <source>Tobacco Control: An International Journal</source>. <year>2014</year>;<volume>23</volume>(<issue>1</issue>):<fpage>39</fpage>–<lpage>44</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/tobaccocontrol-2012-050473" xlink:type="simple">10.1136/tobaccocontrol-2012-050473</ext-link></comment> 2014-03752-005.</mixed-citation></ref>
+<ref id="pone.0153152.ref039"><label>39</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Erickson</surname> <given-names>AD</given-names></name>, <name name-style="western"><surname>Woodruff</surname> <given-names>SI</given-names></name>, <name name-style="western"><surname>Wildey</surname> <given-names>MB</given-names></name>, <name name-style="western"><surname>Kenney</surname> <given-names>E</given-names></name>. <article-title>A baseline assessment of cigarette sales to minors in San Diego, California</article-title>. <source>J Community Health</source>. <year>1993</year>;<volume>18</volume>(<issue>4</issue>):<fpage>213</fpage>–<lpage>24</lpage>. Epub 1993/08/01. <object-id pub-id-type="pmid">8408751</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref040"><label>40</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Landrine</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Klonoff</surname> <given-names>EA</given-names></name>, <name name-style="western"><surname>Campbell</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Reina-Patton</surname> <given-names>A</given-names></name>. <article-title>Sociocultural variables in youth access to tobacco: replication 5 years later</article-title>. <source>Prev Med</source>. <year>2000</year>;<volume>30</volume>(<issue>5</issue>):<fpage>433</fpage>–<lpage>7</lpage>. Epub 2000/06/14. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/pmed.2000.0652" xlink:type="simple">10.1006/pmed.2000.0652</ext-link></comment> <object-id pub-id-type="pmid">10845753</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref041"><label>41</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Landrine</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Klonoff</surname> <given-names>EA</given-names></name>, <name name-style="western"><surname>Alcaraz</surname> <given-names>R</given-names></name>. <article-title>Racial discrimination in minor's access to tobacco</article-title>. <source>Journal of Black Psychology</source>. <year>1997</year>;<volume>23</volume>(<issue>2</issue>):<fpage>135</fpage>–<lpage>47</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1177/00957984970232004" xlink:type="simple">10.1177/00957984970232004</ext-link></comment> 1997-04329-003.</mixed-citation></ref>
+<ref id="pone.0153152.ref042"><label>42</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lipton</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Banerjee</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Levy</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Manzanilla</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Cochrane</surname> <given-names>M</given-names></name>. <article-title>The spatial distribution of underage tobacco sales in Los Angeles</article-title>. <source>Subst Use Misuse</source>. <year>2008</year>;<volume>43</volume>(<issue>11</issue>):<fpage>1594</fpage>–<lpage>614</lpage>. Epub 2008/08/30. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1080/10826080802241110" xlink:type="simple">10.1080/10826080802241110</ext-link></comment> <object-id pub-id-type="pmid">18752162</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref043"><label>43</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kirchner</surname> <given-names>TR</given-names></name>, <name name-style="western"><surname>Villanti</surname> <given-names>AC</given-names></name>, <name name-style="western"><surname>Cantrell</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Anesetti-Rothermel</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Ganz</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Conway</surname> <given-names>KP</given-names></name>, <etal>et al</etal>. <article-title>Tobacco retail outlet advertising practices and proximity to schools, parks and public housing affect Synar underage sales violations in Washington, DC</article-title>. <source>Tob Control</source>. <year>2015</year>;<volume>24</volume>(<issue>e1</issue>):<fpage>e52</fpage>–<lpage>8</lpage>. Epub 2014/02/27. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1136/tobaccocontrol-2013-051239" xlink:type="simple">10.1136/tobaccocontrol-2013-051239</ext-link></comment> <object-id pub-id-type="pmid">24570101</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref044"><label>44</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Widome</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Brock</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Noble</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Forster</surname> <given-names>JL</given-names></name>. <article-title>The relationship of point-of-sale tobacco advertising and neighborhood characteristics to underage sales of tobacco</article-title>. <source>Evaluation &amp; the Health Professions</source>. <year>2012</year>;<volume>35</volume>(<issue>3</issue>):<fpage>331</fpage>–<lpage>45</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1177/0163278712447624" xlink:type="simple">10.1177/0163278712447624</ext-link></comment> 2012-21477-005.</mixed-citation></ref>
+<ref id="pone.0153152.ref045"><label>45</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Klonoff</surname> <given-names>EA</given-names></name>, <name name-style="western"><surname>Fritz</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Landrine</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Riddle</surname> <given-names>RW</given-names></name>, <name name-style="western"><surname>Tully-Payne</surname> <given-names>L</given-names></name>. <article-title>The problem and sociocultural context of single-cigarette sales</article-title>. <source>Jama</source>. <year>1994</year>;<volume>271</volume>(<issue>8</issue>):<fpage>618</fpage>–<lpage>20</lpage>. Epub 1994/02/23. 8301795. <object-id pub-id-type="pmid">8301795</object-id></mixed-citation></ref>
+<ref id="pone.0153152.ref046"><label>46</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Asumda</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Jordan</surname> <given-names>L</given-names></name>. <article-title>Minority youth access to tobacco: a neighborhood analysis of underage tobacco sales</article-title>. <source>Health Place</source>. <year>2009</year>;<volume>15</volume>(<issue>1</issue>):<fpage>140</fpage>–<lpage>7</lpage>. Epub 2008/05/17. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.healthplace.2008.03.006" xlink:type="simple">10.1016/j.healthplace.2008.03.006</ext-link></comment> <object-id pub-id-type="pmid">18482856</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref047"><label>47</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Landrine</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Klonoff</surname> <given-names>EA</given-names></name>, <name name-style="western"><surname>Reina-Patton</surname> <given-names>A</given-names></name>. <article-title>Minors' access to tobacco before and after the California STAKE Act</article-title>. <source>Tob Control</source>. <year>2000</year>;<volume>9</volume> <issue>Suppl 2</issue>:<fpage>II15</fpage>–<lpage>7</lpage>. Epub 2000/06/07. <object-id pub-id-type="pmid">10841587</object-id>; PubMed Central PMCID: PMCPMC1766282.</mixed-citation></ref>
+<ref id="pone.0153152.ref048"><label>48</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>MacCallum</surname> <given-names>RC</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Preacher</surname> <given-names>KJ</given-names></name>, <name name-style="western"><surname>Rucker</surname> <given-names>DD</given-names></name>. <article-title>On the practice of dichotomization of quantitative variables</article-title>. <source>Psychol Methods</source>. <year>2002</year>;<volume>7</volume>(<issue>1</issue>):<fpage>19</fpage>–<lpage>40</lpage>. Epub 2002/04/04. <object-id pub-id-type="pmid">11928888</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref049"><label>49</label><mixed-citation publication-type="other" xlink:type="simple">Mathews v. United States. 485 U.S. 58, 66; 1988.</mixed-citation></ref>
+<ref id="pone.0153152.ref050"><label>50</label><mixed-citation publication-type="other" xlink:type="simple">United States v. Russell. 411 U.S. 423, 435–436; 1973.</mixed-citation></ref>
+<ref id="pone.0153152.ref051"><label>51</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>DiFranza</surname> <given-names>JR</given-names></name>, <name name-style="western"><surname>Rigotti</surname> <given-names>NA</given-names></name>. <article-title>Impediments to the enforcement of youth access laws</article-title>. <source>Tob Control</source>. <year>1999</year>;<volume>8</volume>(<issue>2</issue>):<fpage>152</fpage>–<lpage>5</lpage>. Epub 1999/09/09. <object-id pub-id-type="pmid">10478398</object-id>; PubMed Central PMCID: PMCPMC1759707.</mixed-citation></ref>
+<ref id="pone.0153152.ref052"><label>52</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Feighery</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Altman</surname> <given-names>DG</given-names></name>, <name name-style="western"><surname>Shaffer</surname> <given-names>G</given-names></name>. <article-title>The effects of combining education and enforcement to reduce tobacco sales to minors. A study of four northern California communities</article-title>. <source>JAMA</source>. <year>1991</year>;<volume>266</volume>(<issue>22</issue>):<fpage>3168</fpage>–<lpage>71</lpage>. Epub 1991/12/11. <object-id pub-id-type="pmid">1956106</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref053"><label>53</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lee</surname> <given-names>JG</given-names></name>, <name name-style="western"><surname>Baker</surname> <given-names>HM</given-names></name>, <name name-style="western"><surname>Ranney</surname> <given-names>LM</given-names></name>, <name name-style="western"><surname>Goldstein</surname> <given-names>AO</given-names></name>. <article-title>Neighborhood Inequalities in Retailers' Compliance With the Family Smoking Prevention and Tobacco Control Act of 2009, January 2014-July 2014</article-title>. <source>Prev Chronic Dis</source>. <year>2015</year>;<volume>12</volume>:<fpage>E171</fpage>. Epub 2015/10/09. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.5888/pcd12.150231" xlink:type="simple">10.5888/pcd12.150231</ext-link></comment> <object-id pub-id-type="pmid">26447548</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref054"><label>54</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alcaraz</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Klonoff</surname> <given-names>EA</given-names></name>, <name name-style="western"><surname>Landrine</surname> <given-names>H</given-names></name>. <article-title>The effects on children of participating in studies of minors' access to tobacco</article-title>. <source>Prev Med</source>. <year>1997</year>;<volume>26</volume>(<issue>2</issue>):<fpage>236</fpage>–<lpage>40</lpage>. Epub 1997/03/01. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/pmed.1996.0133" xlink:type="simple">10.1006/pmed.1996.0133</ext-link></comment> <object-id pub-id-type="pmid">9085393</object-id>.</mixed-citation></ref>
+<ref id="pone.0153152.ref055"><label>55</label><mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Baker</surname> <given-names>HM</given-names></name>, <name name-style="western"><surname>Lee</surname> <given-names>JG</given-names></name>, <name name-style="western"><surname>Ranney</surname> <given-names>LM</given-names></name>, <name name-style="western"><surname>Goldstein</surname> <given-names>AO</given-names></name>. <article-title>Single Cigarette Sales: State Differences in FDA Advertising and Labeling Violations, 2014, United States</article-title>. <source>Nicotine Tob Res</source>. <year>2016</year>;<volume>18</volume>(<issue>2</issue>):<fpage>221</fpage>–<lpage>6</lpage>. Epub 2015/03/07. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/ntr/ntv053" xlink:type="simple">10.1093/ntr/ntv053</ext-link></comment> <object-id pub-id-type="pmid">25744967</object-id>; PubMed Central PMCID: PMCPMC4723674.</mixed-citation></ref>
+</ref-list>
+</back>
+</article>

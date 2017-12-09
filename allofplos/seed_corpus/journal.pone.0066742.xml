@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id><journal-title-group>
+<journal-title>PLoS ONE</journal-title></journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-13-04452</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0066742</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Biology</subject><subj-group><subject>Population biology</subject><subj-group><subject>Epidemiology</subject><subj-group><subject>Epidemiology of aging</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v2"><subject>Medicine</subject><subj-group><subject>Clinical research design</subject><subj-group><subject>Cohort studies</subject><subject>Survey research</subject></subj-group></subj-group><subj-group><subject>Epidemiology</subject><subj-group><subject>Epidemiology of aging</subject></subj-group></subj-group><subj-group><subject>Geriatrics</subject></subj-group><subj-group><subject>Global health</subject></subj-group><subj-group><subject>Mental health</subject><subj-group><subject>Psychiatry</subject><subj-group><subject>Mood disorders</subject></subj-group></subj-group></subj-group><subj-group><subject>Neurology</subject><subj-group><subject>Parkinson disease</subject></subj-group></subj-group><subj-group><subject>Non-clinical medicine</subject><subj-group><subject>Health care policy</subject><subj-group><subject>Quality of life</subject></subj-group></subj-group></subj-group><subj-group><subject>Nutrition</subject><subj-group><subject>Obesity</subject></subj-group></subj-group><subj-group><subject>Primary care</subject></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Relative Impact of Multimorbid Chronic Conditions on Health-Related Quality of Life – Results from the MultiCare Cohort Study</article-title>
+<alt-title alt-title-type="running-head">Impact of Multimorbidity on Quality of Life</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Brettschneider</surname><given-names>Christian</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Leicht</surname><given-names>Hanna</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Bickel</surname><given-names>Horst</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Dahlhaus</surname><given-names>Anne</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Fuchs</surname><given-names>Angela</given-names></name><xref ref-type="aff" rid="aff4"><sup>4</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Gensichen</surname><given-names>Jochen</given-names></name><xref ref-type="aff" rid="aff5"><sup>5</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Maier</surname><given-names>Wolfgang</given-names></name><xref ref-type="aff" rid="aff6"><sup>6</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Riedel-Heller</surname><given-names>Steffi</given-names></name><xref ref-type="aff" rid="aff7"><sup>7</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Schäfer</surname><given-names>Ingmar</given-names></name><xref ref-type="aff" rid="aff8"><sup>8</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Schön</surname><given-names>Gerhard</given-names></name><xref ref-type="aff" rid="aff9"><sup>9</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Weyerer</surname><given-names>Siegfried</given-names></name><xref ref-type="aff" rid="aff10"><sup>10</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Wiese</surname><given-names>Birgitt</given-names></name><xref ref-type="aff" rid="aff11"><sup>11</sup></xref></contrib>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple"><name name-style="western"><surname>van den Bussche</surname><given-names>Hendrik</given-names></name><xref ref-type="aff" rid="aff8"><sup>8</sup></xref></contrib>
+<contrib contrib-type="author" equal-contrib="yes" xlink:type="simple"><name name-style="western"><surname>Scherer</surname><given-names>Martin</given-names></name><xref ref-type="aff" rid="aff8"><sup>8</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>König</surname><given-names>Hans-Helmut</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><collab xlink:type="simple">the MultiCare Study Group</collab><xref ref-type="fn" rid="fn1"><sup>¶</sup></xref></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Altiner</surname><given-names>Attila</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Bickel</surname><given-names>Horst</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Blank</surname><given-names>Wolfgang</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Brettschneider</surname><given-names>Christian</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Bullinger</surname><given-names>Monika</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>van den Bussche</surname><given-names>Hendrik</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Dahlhaus</surname><given-names>Anne</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Ehreke</surname><given-names>Lena</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Freitag</surname><given-names>Michael </given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Fuchs</surname><given-names>Angela</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Gensichen</surname><given-names>Jochen</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Gerlach</surname><given-names>Ferdinand</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Hansen</surname><given-names>Heike</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Heinrich</surname><given-names>Sven</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Höfels</surname><given-names>Susanne</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>von dem Knesebeck</surname><given-names>Olaf</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>König</surname><given-names>Hans-Helmut</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Krause</surname><given-names>Norbert</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Leicht</surname><given-names>Hanna</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Luppa</surname><given-names>Melanie</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Maier</surname><given-names>Wolfgang</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Mayer</surname><given-names>Manfred</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Mellert</surname><given-names>Christine</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Nützel</surname><given-names>Anna</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Paschke</surname><given-names>Thomas</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Petersen</surname><given-names>Juliana</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Prokein</surname><given-names>Jana</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Riedel-Heller</surname><given-names>Steffi</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Romberg</surname><given-names>Heinz-Peter</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Schäfer</surname><given-names>Ingmar</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Scherer</surname><given-names>Martin</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Schön</surname><given-names>Gerhard</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Steinmann</surname><given-names>Susanne</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Schulz</surname><given-names>Sven</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Wegscheider</surname><given-names>Karl</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Weckbecker</surname><given-names>Klaus</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Werle</surname><given-names>Jochen</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Weyerer</surname><given-names>Siegfried</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Wiese</surname><given-names>Birgitt</given-names></name></contrib>
+<contrib xlink:type="simple"><name name-style="western"><surname>Zieger</surname><given-names>Margrit</given-names></name></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Department of Health Economics and Health Services Research, Hamburg Center for Health Economics, University Medical Center Hamburg-Eppendorf, Hamburg, Germany</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Department of Psychiatry, Technical University of Munich, Munich, Germany</addr-line></aff>
+<aff id="aff3"><label>3</label><addr-line>Institute of General Practice, Goethe-University Frankfurt on the Main, Frankfurt on the Main, Germany</addr-line></aff>
+<aff id="aff4"><label>4</label><addr-line>Department of General Practice, University of Düsseldorf Medical Center, Düsseldorf, Germany</addr-line></aff>
+<aff id="aff5"><label>5</label><addr-line>Department of General Practice, Jena University Hospital, Jena, Germany</addr-line></aff>
+<aff id="aff6"><label>6</label><addr-line>Department of Psychiatry and Psychotherapy, University of Bonn, Bonn, Germany</addr-line></aff>
+<aff id="aff7"><label>7</label><addr-line>Institute of Social Medicine, Occupational Health and Public Health, University of Leipzig, Leipzig, Germany</addr-line></aff>
+<aff id="aff8"><label>8</label><addr-line>Department of Primary Medical Care, University Medical Center Hamburg-Eppendorf, Hamburg, Germany</addr-line></aff>
+<aff id="aff9"><label>9</label><addr-line>Department of Medical Biometry and Epidemiology, University Medical Center Hamburg-Eppendorf, Hamburg, Germany</addr-line></aff>
+<aff id="aff10"><label>10</label><addr-line>Central Institute of Mental Health, Medical Faculty Mannheim/Heidelberg University, Mannheim, Germany</addr-line></aff>
+<aff id="aff11"><label>11</label><addr-line>Institute for Biometry, Hannover Medical School, Hannover, Germany</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Scuteri</surname><given-names>Angelo</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>INRCA, Italy</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">c.brettschneider@uke.de</email></corresp>
+<fn id="fn1" fn-type="other"><p>¶ Membership of the MultiCare Study Group is provided in the Acknowledgments.</p></fn>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: HB AD AF JG WM SRH IS GS SW BW HvdB MS HHK. Analyzed the data: CB HL HHK. Wrote the paper: CB HL HHK.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><year>2013</year></pub-date>
+<pub-date pub-type="epub"><day>24</day><month>6</month><year>2013</year></pub-date>
+<volume>8</volume>
+<issue>6</issue>
+<elocation-id>e66742</elocation-id>
+<history>
+<date date-type="received"><day>30</day><month>1</month><year>2013</year></date>
+<date date-type="accepted"><day>10</day><month>5</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2013</copyright-year>
+<copyright-holder>Brettschneider et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract><sec>
+<title>Background</title>
+<p>Multimorbidity has a negative impact on health-related quality of life (HRQL). Previous studies included only a limited number of conditions. In this study, we analyse the impact of a large number of conditions on HRQL in multimorbid patients without preselecting particular diseases. We also explore the effects of these conditions on the specific dimensions of HRQL.</p>
+</sec><sec>
+<title>Materials and Methods</title>
+<p>This analysis is based on a multicenter, prospective cohort study of 3189 multimorbid primary care patients aged 65 to 85. The impact of 45 conditions on HRQL was analysed. The severity of the conditions was rated. The EQ-5D, consisting of 5 dimensions and a visual-analogue-scale (EQ VAS), was employed. Data were analysed using multiple ordinary least squares and multiple logistic regressions. Multimorbidity measured by a weighted count score was significantly associated with lower overall HRQL (EQ VAS), b = −1.02 (SE: 0.06). Parkinson’s disease had the most pronounced negative effect on overall HRQL (EQ VAS), b = −12.29 (SE: 2.18), followed by rheumatism, depression, and obesity. With regard to the individual EQ-5D dimensions, depression (OR = 1.39 to 3.3) and obesity (OR = 1.44 to 1.95) affected all five dimensions of the EQ-5D negatively except for the dimension anxiety/depression. Obesity had a positive effect on this dimension, OR = 0.78 (SE: 0.07). The dimensions “self-care”, OR = 4.52 (SE: 1.37) and “usual activities”, OR = 3.59 (SE: 1.0), were most strongly affected by Parkinson’s disease. As a limitation our sample may only represent patients with at most moderate disease severity.</p>
+</sec><sec>
+<title>Conclusions</title>
+<p>The overall HRQL of multimorbid patients decreases with an increasing count and severity of conditions. Parkinson’s disease, depression and obesity have the strongest impact on HRQL. Further studies should address the impact of disease combinations which require very large sample sizes as well as advanced statistical methods.</p>
+</sec></abstract>
+<funding-group><funding-statement>The study was funded by the German Federal Ministry of Education and Research (grant numbers 01ET0725-31 and 01ET1006A-K). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="9"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>In ageing societies multimorbidity is becoming an increasingly common phenomenon. Multimorbidity refers to the coexistence of more than one chronic condition in an individual, a phenomenon much more common in subjects aged 65 years and above than in younger subjects <xref ref-type="bibr" rid="pone.0066742-vandenAkker1">[1]</xref>, <xref ref-type="bibr" rid="pone.0066742-Fortin1">[2]</xref>. Rates of prevalence vary across studies, owing to methodological differences. Since there is no uniform cut-off point for multimorbidity across studies, both two or more and three or more conditions are common criteria <xref ref-type="bibr" rid="pone.0066742-Marengoni1">[3]</xref>. Also, rates of prevalence were found to be higher in primary-care based study populations than in samples drawn from the general population <xref ref-type="bibr" rid="pone.0066742-Fortin2">[4]</xref>, and may depend on the number of conditions taken into consideration <xref ref-type="bibr" rid="pone.0066742-Fortin3">[5]</xref>. In a German study based on claims data from a large sample, van den Bussche et al. <xref ref-type="bibr" rid="pone.0066742-vandenBussche1">[6]</xref> found a prevalence of 62.1% for multimorbidity, defined as three or more conditions, among subjects aged 65 years or older and a mean number of 5.8 chronic conditions among these multimorbid subjects.</p>
+<p>In the current study, our interest is in the impact of coexisting chronic conditions on health-related quality of life (HRQL). Multimorbidity, measured as the number of conditions, has been extensively shown to have a negative impact on HRQL <xref ref-type="bibr" rid="pone.0066742-Marengoni1">[3]</xref>, <xref ref-type="bibr" rid="pone.0066742-Fortin4">[7]</xref>, which is more pronounced if disease severity is taken into account <xref ref-type="bibr" rid="pone.0066742-Fortin5">[8]</xref>. However, understanding the effects of multimorbidity in detail is not straightforward. First, individual chronic conditions may vary in their impact on patients’ daily lives and functioning <xref ref-type="bibr" rid="pone.0066742-Hodek1">[9]</xref>, <xref ref-type="bibr" rid="pone.0066742-Rijken1">[10]</xref>. Moreover, different conditions may combine to produce subadditive, additive or superadditive effects on HRQL <xref ref-type="bibr" rid="pone.0066742-Fortin6">[11]</xref>. For instance, Hunger et al. <xref ref-type="bibr" rid="pone.0066742-Hunger1">[12]</xref> reported superadditive effects on HRQL of diabetes combined with a coronary event on the one and of a coronary event combined with stroke on the other hand, compared to the individual effects of these conditions. Also, conditions may affect separate dimensions of HRQL differently. Hodek et al. <xref ref-type="bibr" rid="pone.0066742-Hodek2">[13]</xref>, for example, found that peripheral arterial disease (PAD) and both cardiovascular and cerebrovascular events had a negative effect on overall HRQL as measured by the EQ-5D. While cardiovascular events affected HRQL across all EQ-5D dimensions, PAD had effects on mobility and pain/discomfort, and cerebrovascular events had effects on self-care and anxiety/depression only.</p>
+<p>Finally, the number of potential combinations of diseases is virtually limitless <xref ref-type="bibr" rid="pone.0066742-vandenBussche1">[6]</xref>. To separate out the effects of individual conditions on HRQL, a large number of potentially relevant conditions has to be controlled for. Previous studies that analysed the impact of specific multimorbid conditions or their combination on HRQL are based on data which include only a limited number of conditions or their combinations, but no additional potentially comorbid diseases <xref ref-type="bibr" rid="pone.0066742-Hunger1">[12]</xref>, <xref ref-type="bibr" rid="pone.0066742-Vogel1">[14]</xref>, <xref ref-type="bibr" rid="pone.0066742-Heyworth1">[15]</xref>.</p>
+<p>In this study, we take a somewhat different, bottom-up approach and analyse the relative impact of a large number of potentially coexisting conditions on overall HRQL in multimorbid patients without preselecting particular diseases. We also explore the effects of these different conditions on the specific dimensions of HRQL.</p>
+</sec><sec id="s2" sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec id="s2a">
+<title>Ethics Statement</title>
+<p>Written informed consent was obtained previous to inclusion into the study. The study was approved by the Ethics Committee of the Medical Association of Hamburg (Approval-No. 2881) and conducted according to the principles expressed in the declaration of Helsinki.</p>
+</sec><sec id="s2b">
+<title>Sample</title>
+<p>Data were collected as part of the MultiCare Cohort Study. Details regarding the methods of the study and the cohort have been published elsewhere <xref ref-type="bibr" rid="pone.0066742-Schafer1">[16]</xref>, <xref ref-type="bibr" rid="pone.0066742-Schfer1">[17]</xref>. The analyses presented here are based on data from the MultiCare baseline assessment. Briefly, the MultiCare Cohort Study is a multicentre, prospective cohort study of multimorbid primary care patients selected randomly from the databases of 158 general practitioner’s (GP) offices at 8 study centres across Germany. The study’s aims are the investigation of multimorbidity patterns over time, the identification of patients’ resources and risk factors that influence the course of these patterns, and the analysis of somatic, psychological and social consequences of these patterns for the patients’ quality of life and functional status. Inclusion criteria were multimorbidity, defined as the coexistence of at least 3 chronic conditions from a list of 29 diseases, age between 65 and 85 years, and at least one visit to the GP within the last completed quarter (three-month period). Patients were excluded from the study if they were no regular patients of the GP. Other exclusion criteria were inability to participate due to medical reasons (such as blindness and deafness), insufficient German language skills, residence in a nursing home, inability to provide written informed consent and participation in another ongoing study. A diagnosis of dementia was therefore an exclusion criterion.</p>
+<p>A total of 24,862 patients from the databases of the participating GP practices were checked for inclusion and exclusion criteria. 7,172 patients fulfilled the criteria and were contacted for informed consent to participate. 3,317 patients agreed to participate and were available for the baseline interview within a time frame of 16 months. In retrospect, 128 of these cases had to be excluded either because in direct contact exclusion criteria were found to apply or because the patient died before the baseline interview. Thus, a final number of 3,189 patients were included in the study.</p>
+<p>Recruitment and baseline interviews took place between July 2008 and October 2009. The study was approved by the Ethics Committee of the Medical Association of Hamburg.</p>
+</sec><sec id="s2c">
+<title>Sociodemographic Variables and Social Support</title>
+<p>Socio-economic status (education, income) was assessed with an established questionnaire <xref ref-type="bibr" rid="pone.0066742-Jckel1">[18]</xref>. The level of education was rated according to the international CASMIN classification <xref ref-type="bibr" rid="pone.0066742-Brauns1">[19]</xref>. Income is reported as net income adjusted for household size (this is net income divided by the equivalised household size, for which a value of 1.0 is assigned to the householder, 0.5 is assigned to every other household member aged 15 or over and 0.3 is assigned to every child under the age of 15). Social support was assessed by the F-SOZU K-14 questionnaire <xref ref-type="bibr" rid="pone.0066742-Fydrich1">[20]</xref>, which comprises 14 items for emotional and practical support and social integration and yields an overall score between 1 and 5. A higher score means better social support.</p>
+</sec><sec id="s2d">
+<title>Multimorbidity</title>
+<p>Multimorbidity was assessed by means of a standardised GP questionnaire which comprised 46 diagnosis groups. The list was newly compiled at the beginning of the MultiCare study with the aim of representing the most frequent chronic conditions in the population and is based on prevalence data <xref ref-type="bibr" rid="pone.0066742-vandenBussche1">[6]</xref>, <xref ref-type="bibr" rid="pone.0066742-Schafer1">[16]</xref>. In the 46 groups, ICD-10 codes are classified together if diseases and syndromes are similar pathophysiologically or if ICD codes of related disorders are used ambiguously in practice. At the beginning of the baseline interviews, the compilation of the list had not been quite finalised, and for this reason seven of the diagnosis groups were not part of the standardised baseline GP questionnaire, but were assessed using responses to open questions. This applies to chronic gastritis/gastroesophageal reflux disease (GERD), insomnia, allergies, obesity, hypotension, sexual dysfunction and tobacco abuse, which may be subject to underreporting as a result.</p>
+<p>The diagnosis groups assessed in a standardised fashion in the GP questionnaire at baseline include hypertension, lipid metabolism disorders, chronic low back pain, joint arthrosis, diabetes mellitus, thyroid dysfunction, chronic ischemic heart disease, cardiac arrhythmias, asthma/chronic obstructive pulmonary disease (COPD), lower limb varicosis, osteoporosis, severe vision reduction, cancers, depression, purine/pyrimidine metabolism disorders and gout, atherosclerosis/peripheral arterial occlusive disease (PAD), intestinal diverticulosis, neuropathies, cardiac insufficiency, cerebral ischemia/chronic stroke, prostatic hyperplasia, renal insufficiency, cardiac valve disorders, chronic cholecystitis/gallstones, dizziness, liver diseases, haemorrhoids, urinary incontinence, somatoform disorders, severe hearing loss, anemias, rheumatoid arthritis/chronic polyarthritis (rheumatism), anxiety disorders, psoriasis, migraine/chronic headache, noninflammatory gynaecological problems, Parkinson’s disease, and urinary tract calculi. Dementia was also listed, but constituted an exclusion criterion at baseline, reducing the list of diseases to 45. Conditions were rated as present or not and, if present, were given a severity rating accounting for the prognosis of the course of disease and for the burden of disease between 0 (insignificant) and 4 (very severe). From these data, a simple and a weighted count score were derived, with the weighted count score corresponding to the sum of the severity ratings.</p>
+</sec><sec id="s2e">
+<title>Quality of Life</title>
+<p>Health-related quality of life (HRQL) was assessed by means of the EQ-5D descriptive system and the EQ-5D visual analogue scale (EQ-VAS) <xref ref-type="bibr" rid="pone.0066742-Rabin1">[21]</xref>. The descriptive system consists of five items for the dimensions mobility, self-care, usual activities, pain/discomfort and anxiety/depression, with response categories 1 (no problems), 2 (some problems) or 3 (severe problems). We used the EQ-VAS for an overall HRQL-score, ranging from 0 (worst imaginable health state) to 100 (best imaginable health state). We also evaluated the individual scores for the five separate items of the EQ-5D descriptive system. For use as dependent variables in multiple logistic regression these scores were dichotomised to obtain the values 0 (no problems) and 1 (moderate or severe problems).</p>
+</sec><sec id="s2f">
+<title>Missing Values</title>
+<p>Missing values were imputed using the hot deck method, in which missing values are replaced using observed values from a responding unit that is as similar as possible to the non-responding unit <xref ref-type="bibr" rid="pone.0066742-Schfer1">[17]</xref>, <xref ref-type="bibr" rid="pone.0066742-Andridge1">[22]</xref>.</p>
+</sec><sec id="s2g">
+<title>Statistical Analyses</title>
+<p>For the analyses of effects of multimorbidity and of individual conditions on overall HRQL and on specific dimensions, multiple ordinary least squares (OLS) regression and multiple logistic regression were used. All models controlled for the same set of sociodemographic variables (age, gender, marital status, living situation, education, net income adjusted for household size) and for social support.</p>
+<p>In a first model, multiple ordinary least squares (OLS) regression was used to estimate the effect of multimorbidity, as measured by the weighted count score, on overall HRQL as expressed by the EQ-VAS. Another multiple OLS model analysed the effects of individual conditions (coded as present or absent) on HRQL. Conditions with a prevalence of &lt;1% in the sample (corresponding to less than 30 individuals concerned) were excluded in order to avoid problems resulting from insufficient cell size. This applied to hypotension, sexual dysfunction and tobacco abuse. For the regression analyses, the obesity item from the GP questionnaire, which was likely to be affected by underreporting (see above), was replaced by a dichotomous variable for obesity derived from the patients’ body mass index (BMI) using the WHO definition of obesity (BMI ≥30) <xref ref-type="bibr" rid="pone.0066742-World1">[23]</xref>.</p>
+<p>A first model including all 42 conditions with a prevalence of ≥1% resulted in a large number of conditions without significant effect on HRQL. Therefore a reduced model included only those predictors with a <italic>p</italic> value of &lt;0.05, and a nested model F-test was used to check whether the full model had greater explanatory power than the reduced model. Since this was not the case, the reduced model was selected over the full model.</p>
+<p>In the second part of the analyses, multiple logistic regression models were estimated to explore the effects of individual conditions on the five specific dimensions of HRQL using dichotomised responses to the respective EQ-5D dimension as the dependent variable. Again, the five initial models contained a large number of insignificant variables, thus the same selection strategy as described for the OLS model above was applied to limit the list of independent variables to those with predictive value for the dependent variable, resulting in five reduced models with different sets of predictors.</p>
+<p>A p-value &lt;0.01 was considered as statistically significant. Statistical analysis was performed using STATA Release 11 (Stata Corp., College Station, Texas).</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Sociodemographic Data</title>
+<p>The mean age of the sample at baseline was 74.4 years, and 59.3% were female. Over half of the participants were married (56.2%), while approximately a quarter were widowed (27.7%). 57.9% were living with their spouse or partner and 35.4% were living alone in their own home. The proportions of subjects in assisted living (1.7%) or retirement homes (0.3%) were low. The majority of the sample had a low degree of education (62.3%), and mean household-size adjusted income was 1,412 € (see <xref ref-type="table" rid="pone-0066742-t001">Table 1</xref>).</p>
+<table-wrap id="pone-0066742-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066742.t001</object-id><label>Table 1</label><caption>
+<title>Sociodemographics characteristics and morbidity.</title>
+</caption><alternatives><graphic id="pone-0066742-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066742.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Characteristic</td>
+<td align="left" rowspan="1" colspan="1">n (3,189)</td>
+<td align="left" rowspan="1" colspan="1">%</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean age (SD)</td>
+<td align="left" rowspan="1" colspan="1">74.4 (5.2)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Sex</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Female</td>
+<td align="left" rowspan="1" colspan="1">1,891</td>
+<td align="left" rowspan="1" colspan="1">59.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Male</td>
+<td align="left" rowspan="1" colspan="1">1,298</td>
+<td align="left" rowspan="1" colspan="1">40,7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Marital status<xref ref-type="table-fn" rid="nt101">a</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Single</td>
+<td align="left" rowspan="1" colspan="1">188</td>
+<td align="left" rowspan="1" colspan="1">5.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Married</td>
+<td align="left" rowspan="1" colspan="1">1,791</td>
+<td align="left" rowspan="1" colspan="1">56.2</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Married, but separated</td>
+<td align="left" rowspan="1" colspan="1">72</td>
+<td align="left" rowspan="1" colspan="1">2.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Divorced</td>
+<td align="left" rowspan="1" colspan="1">255</td>
+<td align="left" rowspan="1" colspan="1">8.0</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Widowed</td>
+<td align="left" rowspan="1" colspan="1">882</td>
+<td align="left" rowspan="1" colspan="1">27.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Living situation</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Alone</td>
+<td align="left" rowspan="1" colspan="1">1,128</td>
+<td align="left" rowspan="1" colspan="1">35.4</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">With spouse/partner</td>
+<td align="left" rowspan="1" colspan="1">1,847</td>
+<td align="left" rowspan="1" colspan="1">57.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">With family members</td>
+<td align="left" rowspan="1" colspan="1">132</td>
+<td align="left" rowspan="1" colspan="1">4.1</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">With others</td>
+<td align="left" rowspan="1" colspan="1">21</td>
+<td align="left" rowspan="1" colspan="1">0.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Assisted living</td>
+<td align="left" rowspan="1" colspan="1">53</td>
+<td align="left" rowspan="1" colspan="1">1.7</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Retirement home</td>
+<td align="left" rowspan="1" colspan="1">8</td>
+<td align="left" rowspan="1" colspan="1">0.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Education</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Low</td>
+<td align="left" rowspan="1" colspan="1">1,986</td>
+<td align="left" rowspan="1" colspan="1">62.3</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Medium</td>
+<td align="left" rowspan="1" colspan="1">856</td>
+<td align="left" rowspan="1" colspan="1">26.8</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">High</td>
+<td align="left" rowspan="1" colspan="1">347</td>
+<td align="left" rowspan="1" colspan="1">10.9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean income (SD)<xref ref-type="table-fn" rid="nt102">b</xref> [€]</td>
+<td align="left" rowspan="1" colspan="1">1,412 (704)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Multimorbidity: mean (SD)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Number of conditions</td>
+<td align="left" rowspan="1" colspan="1">7.0 (2.5)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Multimorbidity: mean (SD)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Weighted count</td>
+<td align="left" rowspan="1" colspan="1">11.2 (5.1)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">EQ-VAS: mean (SD)<xref ref-type="table-fn" rid="nt103">c</xref></td>
+<td align="left" rowspan="1" colspan="1">62.4 (18.2)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label>a</label><p>n = 3,188;</p></fn><fn id="nt102"><label>b</label><p>n = 2,793;</p></fn><fn id="nt103"><label>c</label><p>n = 3,178.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3b">
+<title>Multimorbidity</title>
+<p>On average, the participants had 7.0 chronic conditions (see <xref ref-type="table" rid="pone-0066742-t001">Table 1</xref>), with no significant differences between men and women (data not shown). The ten most prevalent conditions in the overall sample, in descending order, were hypertension (77.9%), lipid metabolism disorders (58.5%), chronic low back pain (49.5%), joint arthrosis (43.3%), diabetes mellitus (37.6%), thyroid dysfunction (33.8%), chronic ischemic heart disease (31.4%), cardiac arrythmias (26.9%), asthma/COPD (24.2%) and lower limb varicosis (23.3%; see <xref ref-type="table" rid="pone-0066742-t002">Table 2</xref>). However, there were some differences in rank order by gender. For instance, the prevalence of chronic ischemic heart disease is twice as high for men (44.7%) as for women (22.2%), for whom this condition only ranks twelfth. Osteoporosis, by contrast, was much more common among women, for whom this conditions ranks seventh, than men (28.9% vs. 6.6%). Among men thyroid dysfunction and lower limb varicosis are less common than among women (19.6% vs. 43.5% and 15.2% vs. 28.8%), while the ten most prevalent conditions for men also include prostatic hyperplasia (27.9%, ranking eighth) and purine/pyrimidine metabolism disorders and gout (23.7%, ranking tenth).</p>
+<table-wrap id="pone-0066742-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066742.t002</object-id><label>Table 2</label><caption>
+<title>Prevalence of diagnosis groups and rank order in the sample, overall and by gender.</title>
+</caption><alternatives><graphic id="pone-0066742-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066742.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Diagnosis group</td>
+<td align="left" rowspan="1" colspan="1">Overall (n = 3,189)</td>
+<td align="left" rowspan="1" colspan="1">Female (n = 1,891)</td>
+<td align="left" rowspan="1" colspan="1">Male (n = 1,298)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Hypertension</td>
+<td align="left" rowspan="1" colspan="1">77.9% (1)</td>
+<td align="left" rowspan="1" colspan="1">77.5% (1)</td>
+<td align="left" rowspan="1" colspan="1">78.4% (1)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Lipid metabolism disorders</td>
+<td align="left" rowspan="1" colspan="1">58.5% (2)</td>
+<td align="left" rowspan="1" colspan="1">57.0% (2)</td>
+<td align="left" rowspan="1" colspan="1">60.8% (2)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chronic low back pain</td>
+<td align="left" rowspan="1" colspan="1">49.5% (3)</td>
+<td align="left" rowspan="1" colspan="1">55.2% (3)</td>
+<td align="left" rowspan="1" colspan="1">41.1% (5)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Joint arthrosis</td>
+<td align="left" rowspan="1" colspan="1">43.3% (4)</td>
+<td align="left" rowspan="1" colspan="1">48.9% (4)</td>
+<td align="left" rowspan="1" colspan="1">35.3% (6)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Diabetes mellitus</td>
+<td align="left" rowspan="1" colspan="1">37.6% (5)</td>
+<td align="left" rowspan="1" colspan="1">33.3% (6)</td>
+<td align="left" rowspan="1" colspan="1">43.8% (4)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Thyroid dysfunction</td>
+<td align="left" rowspan="1" colspan="1">33.8% (6)</td>
+<td align="left" rowspan="1" colspan="1">43.5% (5)</td>
+<td align="left" rowspan="1" colspan="1">19.6% (13)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chronic ischemic heart disease</td>
+<td align="left" rowspan="1" colspan="1">31.4% (7)</td>
+<td align="left" rowspan="1" colspan="1">22.2% (12)</td>
+<td align="left" rowspan="1" colspan="1">44.7% (3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cardiac arrhythmias</td>
+<td align="left" rowspan="1" colspan="1">26.9% (8)</td>
+<td align="left" rowspan="1" colspan="1">23.5% (9)</td>
+<td align="left" rowspan="1" colspan="1">31.9% (7)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Asthma/COPD</td>
+<td align="left" rowspan="1" colspan="1">24.2% (9)</td>
+<td align="left" rowspan="1" colspan="1">23.1% (10)</td>
+<td align="left" rowspan="1" colspan="1">25.7% (9)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Lower limb varicosis</td>
+<td align="left" rowspan="1" colspan="1">23.3% (10)</td>
+<td align="left" rowspan="1" colspan="1">28.8% (8)</td>
+<td align="left" rowspan="1" colspan="1">15.2% (17)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Osteoporosis</td>
+<td align="left" rowspan="1" colspan="1">19.8% (11)</td>
+<td align="left" rowspan="1" colspan="1">28.9% (7)</td>
+<td align="left" rowspan="1" colspan="1">6.6% (27)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Severe vision reduction</td>
+<td align="left" rowspan="1" colspan="1">18.9% (12)</td>
+<td align="left" rowspan="1" colspan="1">19.5% (13)</td>
+<td align="left" rowspan="1" colspan="1">18.2% (14)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cancers</td>
+<td align="left" rowspan="1" colspan="1">18.3% (13)</td>
+<td align="left" rowspan="1" colspan="1">15.5% (14)</td>
+<td align="left" rowspan="1" colspan="1">22.4% (12)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Depression</td>
+<td align="left" rowspan="1" colspan="1">17.8% (14)</td>
+<td align="left" rowspan="1" colspan="1">22.6% (11)</td>
+<td align="left" rowspan="1" colspan="1">10.6% (22)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Purine/pyrimidine metabolism disorders/Gout</td>
+<td align="left" rowspan="1" colspan="1">17.3% (15)</td>
+<td align="left" rowspan="1" colspan="1">12.9% (18)</td>
+<td align="left" rowspan="1" colspan="1">23.7% (10)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Atherosclerosis/PAOD</td>
+<td align="left" rowspan="1" colspan="1">16.7% (16)</td>
+<td align="left" rowspan="1" colspan="1">12.0% (19)</td>
+<td align="left" rowspan="1" colspan="1">23.4% (11)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Intestinal diverticulosis</td>
+<td align="left" rowspan="1" colspan="1">14.5% (17)</td>
+<td align="left" rowspan="1" colspan="1">15.5% (14)</td>
+<td align="left" rowspan="1" colspan="1">13.0% (20)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neuropathies</td>
+<td align="left" rowspan="1" colspan="1">14.7% (18)</td>
+<td align="left" rowspan="1" colspan="1">13.0% (17)</td>
+<td align="left" rowspan="1" colspan="1">17.3% (15)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cardiac insufficiency</td>
+<td align="left" rowspan="1" colspan="1">13.1% (19)</td>
+<td align="left" rowspan="1" colspan="1">11.8% (20)</td>
+<td align="left" rowspan="1" colspan="1">15.0% (19)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chronic gastritis/GERD<xref ref-type="table-fn" rid="nt104">*</xref></td>
+<td align="left" rowspan="1" colspan="1">12.9% (20)</td>
+<td align="left" rowspan="1" colspan="1">13.6% (16)</td>
+<td align="left" rowspan="1" colspan="1">11.9% (21)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cerebral ischemia/Chronic stroke</td>
+<td align="left" rowspan="1" colspan="1">11.8% (21)</td>
+<td align="left" rowspan="1" colspan="1">9.5% (22)</td>
+<td align="left" rowspan="1" colspan="1">15.1% (18)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Prostatic hyperplasia</td>
+<td align="left" rowspan="1" colspan="1">11.4% (22)</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">27.9% (8)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Renal insufficiency</td>
+<td align="left" rowspan="1" colspan="1">10.7% (23)</td>
+<td align="left" rowspan="1" colspan="1">7.1% (27)</td>
+<td align="left" rowspan="1" colspan="1">15.8% (16)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cardiac valve disorders</td>
+<td align="left" rowspan="1" colspan="1">9.4% (24)</td>
+<td align="left" rowspan="1" colspan="1">8.8% (23)</td>
+<td align="left" rowspan="1" colspan="1">10.3% (23)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chronic cholecystitis/Gallstones</td>
+<td align="left" rowspan="1" colspan="1">7.9% (25)</td>
+<td align="left" rowspan="1" colspan="1">8.3% (25)</td>
+<td align="left" rowspan="1" colspan="1">7.2% (26)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Dizziness</td>
+<td align="left" rowspan="1" colspan="1">7.7% (26)</td>
+<td align="left" rowspan="1" colspan="1">8.7% (24)</td>
+<td align="left" rowspan="1" colspan="1">6.3% (29)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Liver diseases</td>
+<td align="left" rowspan="1" colspan="1">7.7% (27)</td>
+<td align="left" rowspan="1" colspan="1">6.8% (28)</td>
+<td align="left" rowspan="1" colspan="1">9.0% (25)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Haemorrhoids</td>
+<td align="left" rowspan="1" colspan="1">7.5% (28)</td>
+<td align="left" rowspan="1" colspan="1">5.6% (30)</td>
+<td align="left" rowspan="1" colspan="1">10.3% (23)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Urinary incontinence</td>
+<td align="left" rowspan="1" colspan="1">7.2% (29)</td>
+<td align="left" rowspan="1" colspan="1">9.9% (21)</td>
+<td align="left" rowspan="1" colspan="1">3.3% (36)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Somatoform disorders</td>
+<td align="left" rowspan="1" colspan="1">6.1% (30)</td>
+<td align="left" rowspan="1" colspan="1">7.7% (26)</td>
+<td align="left" rowspan="1" colspan="1">3.7% (34)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Insomnia<xref ref-type="table-fn" rid="nt104">*</xref></td>
+<td align="left" rowspan="1" colspan="1">5.6% (31)</td>
+<td align="left" rowspan="1" colspan="1">5.1% (33)</td>
+<td align="left" rowspan="1" colspan="1">6.2% (30)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Severe hearing loss</td>
+<td align="left" rowspan="1" colspan="1">5.2% (32)</td>
+<td align="left" rowspan="1" colspan="1">4.2% (36)</td>
+<td align="left" rowspan="1" colspan="1">6.8% (28)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Allergies<xref ref-type="table-fn" rid="nt104">*</xref></td>
+<td align="left" rowspan="1" colspan="1">4.9% (33)</td>
+<td align="left" rowspan="1" colspan="1">6.0% (29)</td>
+<td align="left" rowspan="1" colspan="1">3.4% (35)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Obesity<xref ref-type="table-fn" rid="nt104">*</xref></td>
+<td align="left" rowspan="1" colspan="1">4.8% (34)</td>
+<td align="left" rowspan="1" colspan="1">4.8% (35)</td>
+<td align="left" rowspan="1" colspan="1">4.9% (33)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Anemias</td>
+<td align="left" rowspan="1" colspan="1">4.3% (35)</td>
+<td align="left" rowspan="1" colspan="1">3.1% (38)</td>
+<td align="left" rowspan="1" colspan="1">5.9% (31)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rheumatoid arthritis/Chronic polyarthritis</td>
+<td align="left" rowspan="1" colspan="1">4.2% (36)</td>
+<td align="left" rowspan="1" colspan="1">5.6% (31)</td>
+<td align="left" rowspan="1" colspan="1">2.2% (39)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Anxiety</td>
+<td align="left" rowspan="1" colspan="1">4.1% (37)</td>
+<td align="left" rowspan="1" colspan="1">5.3% (32)</td>
+<td align="left" rowspan="1" colspan="1">2.2% (39)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Psoriasis</td>
+<td align="left" rowspan="1" colspan="1">3.6% (38)</td>
+<td align="left" rowspan="1" colspan="1">2.7% (39)</td>
+<td align="left" rowspan="1" colspan="1">5.0% (32)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Migraine/chronic headache</td>
+<td align="left" rowspan="1" colspan="1">3.5% (39)</td>
+<td align="left" rowspan="1" colspan="1">4.9% (34)</td>
+<td align="left" rowspan="1" colspan="1">1.5% (41)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Noninflammatory gynaecological problems</td>
+<td align="left" rowspan="1" colspan="1">2.0% (40)</td>
+<td align="left" rowspan="1" colspan="1">3.4% (37)</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Parkinson’s disease</td>
+<td align="left" rowspan="1" colspan="1">1.9% (41)</td>
+<td align="left" rowspan="1" colspan="1">1.4% (40)</td>
+<td align="left" rowspan="1" colspan="1">2.8% (37)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Urinary tract calculi</td>
+<td align="left" rowspan="1" colspan="1">1.8% (42)</td>
+<td align="left" rowspan="1" colspan="1">1.3% (41)</td>
+<td align="left" rowspan="1" colspan="1">2.6% (38)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Hypotension<xref ref-type="table-fn" rid="nt104">*</xref></td>
+<td align="left" rowspan="1" colspan="1">0.5% (43)</td>
+<td align="left" rowspan="1" colspan="1">0.5% (42)</td>
+<td align="left" rowspan="1" colspan="1">0.4% (43)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Sexual dysfunction<xref ref-type="table-fn" rid="nt104">*</xref></td>
+<td align="left" rowspan="1" colspan="1">0.2% (44)</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">0.5% (42)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Tobacco abuse<xref ref-type="table-fn" rid="nt104">*</xref></td>
+<td align="left" rowspan="1" colspan="1">0.1% (45)</td>
+<td align="left" rowspan="1" colspan="1">0 (43)</td>
+<td align="left" rowspan="1" colspan="1">0.2% (44)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Dementias</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt104"><label>*</label><p>Not part of the GP questionnaire. Assessed using responses to open questions.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3c">
+<title>EQ-5D</title>
+<p>The average EQ-VAS score in the sample was 62.4 (see <xref ref-type="table" rid="pone-0066742-t001">Table 1</xref>). There was a small but statistically significant difference, with higher EQ-VAS scores for men (mean 63.6, SD 18.4) than women (mean 61.6, SD 18.0; <italic>p</italic>&lt;.01, two-tailed t test). Results for the EQ-5D descriptive system are displayed in <xref ref-type="table" rid="pone-0066742-t003">Table 3</xref>. Half of the sample (49.4%) reported no problems with mobility, 90.5% reported no problems with regard to self care, and 71.6% reported no problems with usual activities and no anxiety or depression, respectively. Only 31.7% of the sample reported no pain/discomfort. There were significant gender differences in the proportions of the sample reporting no problems for all dimensions except self-care, with fewer women reporting no problems than men throughout (mobility: 47.3% of women vs. 52.4% of men, usual activities: 76.4% vs. 86.3%, pain: 26.4% vs. 39.4%, anxiety/depression: 64.8% vs. 81.5%, details not shown).</p>
+<table-wrap id="pone-0066742-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066742.t003</object-id><label>Table 3</label><caption>
+<title>Distribution of responses in the EQ-5D dimensions in the study sample.</title>
+</caption><alternatives><graphic id="pone-0066742-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066742.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">EQ-5D item</td>
+<td colspan="3" align="left" rowspan="1">n (%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">No problems</td>
+<td align="left" rowspan="1" colspan="1">Some problems</td>
+<td align="left" rowspan="1" colspan="1">Severe problems</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">EQ1: Mobility <xref ref-type="table-fn" rid="nt105">a</xref></td>
+<td align="left" rowspan="1" colspan="1">1,575 (49.4)</td>
+<td align="left" rowspan="1" colspan="1">1,598 (50.1)</td>
+<td align="left" rowspan="1" colspan="1">12 (0.4)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">EQ2: Self-care <xref ref-type="table-fn" rid="nt106">b</xref></td>
+<td align="left" rowspan="1" colspan="1">2,886 (90.5)</td>
+<td align="left" rowspan="1" colspan="1">259 (8.1)</td>
+<td align="left" rowspan="1" colspan="1">43 (1.4)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">EQ3: Usual activities</td>
+<td align="left" rowspan="1" colspan="1">2,284 (71.6)</td>
+<td align="left" rowspan="1" colspan="1">813 (25.5)</td>
+<td align="left" rowspan="1" colspan="1">92 (2.9)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">EQ4: Pain/discomfort <xref ref-type="table-fn" rid="nt106">b</xref></td>
+<td align="left" rowspan="1" colspan="1">1,010 (31.7)</td>
+<td align="left" rowspan="1" colspan="1">1,689 (53.0)</td>
+<td align="left" rowspan="1" colspan="1">489 (15.3)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">EQ5: Anxiety/depression <xref ref-type="table-fn" rid="nt107">c</xref></td>
+<td align="left" rowspan="1" colspan="1">2,284 (71.6)</td>
+<td align="left" rowspan="1" colspan="1">783 (24.6)</td>
+<td align="left" rowspan="1" colspan="1">120 (3.8)</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt105"><label>a</label><p>n = 3,185;</p></fn><fn id="nt106"><label>b</label><p>n = 3,188;</p></fn><fn id="nt107"><label>c</label><p>n = 3,187.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3d">
+<title>Effects of Multimorbidity and of Individual Conditions on Overall HRQL</title>
+<p>The analysis of the effect of multimorbidity, as measured by the weighted count score, on HRQL indicates a highly significant relationship between greater morbidity and lower HRQL (see <xref ref-type="table" rid="pone-0066742-t004">Table 4</xref>). The more detailed analysis of the impact of individual disease groups, coded as present vs. absent, on HRQL is presented in <xref ref-type="table" rid="pone-0066742-t005">Table 5</xref>.</p>
+<table-wrap id="pone-0066742-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066742.t004</object-id><label>Table 4</label><caption>
+<title>Regression model of the effect of multimorbidity (weighted count score) on overall HRQL measured by the EQ VAS.</title>
+</caption><alternatives><graphic id="pone-0066742-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066742.t004" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Variable</td>
+<td align="left" rowspan="1" colspan="1">b (SE)</td>
+<td align="left" rowspan="1" colspan="1"><italic>p</italic> value</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Weighted count </bold><bold><italic>(centered)</italic></bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−1.02 (0.06)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Sex </bold><bold><italic>(Ref: male)</italic></bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−1.97 (0.67)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.003</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age <italic>(centered)</italic></td>
+<td align="left" rowspan="1" colspan="1">−0.15 (0.61)</td>
+<td align="left" rowspan="1" colspan="1">0.015</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Marital Status <italic>(ref: Married)</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Married but separated</td>
+<td align="left" rowspan="1" colspan="1">−2.53 (2.12)</td>
+<td align="left" rowspan="1" colspan="1">0.233</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Single</td>
+<td align="left" rowspan="1" colspan="1">2.47 (1.74)</td>
+<td align="left" rowspan="1" colspan="1">0.157</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Divorced</td>
+<td align="left" rowspan="1" colspan="1">−2.72 (1.56)</td>
+<td align="left" rowspan="1" colspan="1">0.081</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Widowed</td>
+<td align="left" rowspan="1" colspan="1">−1.08 (1.33)</td>
+<td align="left" rowspan="1" colspan="1">0.418</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Living situation <italic>(ref: Alone)</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">With spouse/partner</td>
+<td align="left" rowspan="1" colspan="1">−1.41 (1.31)</td>
+<td align="left" rowspan="1" colspan="1">0.280</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">With family members</td>
+<td align="left" rowspan="1" colspan="1">0.85 (1.59)</td>
+<td align="left" rowspan="1" colspan="1">0.591</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">With others</td>
+<td align="left" rowspan="1" colspan="1">6.15 (3.76)</td>
+<td align="left" rowspan="1" colspan="1">0.102</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Assisted living</td>
+<td align="left" rowspan="1" colspan="1">−3.80 (2.40)</td>
+<td align="left" rowspan="1" colspan="1">0.114</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Retirement home</td>
+<td align="left" rowspan="1" colspan="1">−4.69 (6.03)</td>
+<td align="left" rowspan="1" colspan="1">0.436</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Level of education <italic>(ref: low)</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Medium</td>
+<td align="left" rowspan="1" colspan="1">1.14 (0.70)</td>
+<td align="left" rowspan="1" colspan="1">0.105</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">High</td>
+<td align="left" rowspan="1" colspan="1">2.47 (1.04)</td>
+<td align="left" rowspan="1" colspan="1">0.017</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Income (in 1000 €) </bold><bold><italic>(centered)</italic></bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>2.00 (0.4)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Social support </bold><bold><italic>(centered)</italic></bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>3.95 (0.45)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Intercept</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>66.21 (1.74)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt108"><label/><p>n = 3,189; Adj. R<sup>2</sup> = 0.14; Significant results are printed bold.</p></fn></table-wrap-foot></table-wrap><table-wrap id="pone-0066742-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066742.t005</object-id><label>Table 5</label><caption>
+<title>Multiple linear regression model of the effect of individual conditions on overall HRQL measured by EQ-VAS.</title>
+</caption><alternatives><graphic id="pone-0066742-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066742.t005" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">EQ-VAS</td>
+<td align="left" rowspan="1" colspan="1">b (SE)</td>
+<td align="left" rowspan="1" colspan="1"><italic>p</italic> value</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Age </bold><bold><italic>(centered)</italic></bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−0.22 (0.06)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Sex <italic>(Ref.: male)</italic></td>
+<td align="left" rowspan="1" colspan="1">−0.16 (0.73)</td>
+<td align="left" rowspan="1" colspan="1">0.831</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Marital Status <italic>(ref: Married)</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Separated</td>
+<td align="left" rowspan="1" colspan="1">−1.37 (2.03)</td>
+<td align="left" rowspan="1" colspan="1">0.500</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold> Single</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>4.40 (1.33)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.001</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Divorced</td>
+<td align="left" rowspan="1" colspan="1">−0.98 (1.16)</td>
+<td align="left" rowspan="1" colspan="1">0.398</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Widowed</td>
+<td align="left" rowspan="1" colspan="1">0.50 (0.77)</td>
+<td align="left" rowspan="1" colspan="1">0.516</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Level of education <italic>(ref: low)</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Education: medium</td>
+<td align="left" rowspan="1" colspan="1">1.09 (0.70)</td>
+<td align="left" rowspan="1" colspan="1">0.122</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold> Education: high</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>3.23 (1.04)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.002</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Adj. income (1,000 €)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.681 (0.45)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Social support</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>3.76 (0.45)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Parkinson’s disease</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−12.29 (2.18)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Rheumatism/CPA</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−5.56 (1.50)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Depression</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−5.33 (0.80)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Obesity</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−4.33 (0.66)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Cardiac insufficiency</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−4.19 (0.92)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Neuropathies</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−3.70 (0.85)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Asthma/COPD</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−2.96 (0.71)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Osteoporosis</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−2.92 (0.79)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Chronic low back pain</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−2.70 (0.62)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Coronary heart disease</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−2.47 (0.68)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Insomnia</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−3.79 (1.32)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.004</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Urinary incontinence</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>−3.18 (1.17)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.007</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cardiac arrhythmias</td>
+<td align="left" rowspan="1" colspan="1">−1.66 (0.69)</td>
+<td align="left" rowspan="1" colspan="1">0.016</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Joint arthrosis</td>
+<td align="left" rowspan="1" colspan="1">−1.60 (0.62)</td>
+<td align="left" rowspan="1" colspan="1">0.010</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Lip. met. disord.</td>
+<td align="left" rowspan="1" colspan="1">1.15 (0.62)</td>
+<td align="left" rowspan="1" colspan="1">0.061</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Allergies</td>
+<td align="left" rowspan="1" colspan="1">3.22 (1.39)</td>
+<td align="left" rowspan="1" colspan="1">0.021</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Intercept</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>69.74 (1.33)</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.000</bold></td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt109"><label/><p>n = 3189; Adj. R<sup>2</sup>: 0.14; Significant results are printed bold.</p></fn></table-wrap-foot></table-wrap>
+<p>Parkinson’s disease had the most pronounced negative effect on HRQL, as measured by the EQ-VAS (−12.29), followed by rheumatism/CPA (−5.56), depression (−5.33), obesity (−4.33) and cardiac insufficiency (−4.19). Neuropathies, asthma/COPD, osteoporosis, chronic low back pain, coronary heart disease, insomnia and urinary incontinence had significant negative effects on HRQL. In addition, higher age was associated with lower HRQL, while being single (as opposed to being married), a high education, income and social support were positively related to HRQL.</p>
+</sec><sec id="s3e">
+<title>Effects of Individual Conditions on Specific EQ-5D Dimensions</title>
+<p><xref ref-type="table" rid="pone-0066742-t006">Table 6</xref> summarizes the results of five logistic regression models for the effects of individual diseases on the occurrence of problems in the separate EQ-5D dimensions. The probability of moderate or severe problems with mobility is most markedly increased by the presence of obesity (OR 1.95), anemia (OR 1.79), joint arthrosis (OR 1.68), cardiac insufficiency (OR 1.63), chronic stroke (OR 1.53) and depression (OR 1.44). Furthermore atherosclerosis, neuropathy, asthma/COPD, diabetes mellitus and chronic low back pain were associated with problems in mobility. As regards the probability of problems with self-care, Parkinson’s disease has the greatest impact (OR 4.52), followed by chronic stroke (OR 2.04), urinary incontinence (2.01) cardiac insufficiency (OR 1.95), osteoporosis (OR 1.75), depression (OR 1.75), renal insufficiency (OR 1.70) and obesity (OR 1.69). Additionally neuropathy and chronic low back pain were related to problems in self-care.</p>
+<table-wrap id="pone-0066742-t006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0066742.t006</object-id><label>Table 6</label><caption>
+<title>Logistic regression models of the effect of individual conditions on separate EQ-5D dimensions.</title>
+</caption><alternatives><graphic id="pone-0066742-t006-6" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0066742.t006" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="5" align="left" rowspan="1">Odds ratios <italic>(SE)</italic></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">EQ-1: mobility</td>
+<td align="left" rowspan="1" colspan="1">EQ-2: self-care</td>
+<td align="left" rowspan="1" colspan="1">EQ-3: usual activities</td>
+<td align="left" rowspan="1" colspan="1">EQ-4: pain/discomfort</td>
+<td align="left" rowspan="1" colspan="1">EQ-5:anxiety/depression</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Age</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.05 (0.01)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.04 (0.01)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.04 (0.01)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1">1.01 (0.01)</td>
+<td align="left" rowspan="1" colspan="1">0.99 (0.01)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Sex</td>
+<td align="left" rowspan="1" colspan="1">1.13 (0.10)</td>
+<td align="left" rowspan="1" colspan="1">0.90 (0.14)</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.38 (0.14)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.51 (0.13)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>2.09 (0.19)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Living situation <italic>(Ref.: Alone)</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">With spouse/partner</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.00 (0.15)</td>
+<td align="left" rowspan="1" colspan="1">1.16 (0.11)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">With relatives</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.46 (0.41)</td>
+<td align="left" rowspan="1" colspan="1">1.28 (0.26)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">With others</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.98 (0.68)</td>
+<td align="left" rowspan="1" colspan="1">2.38 (1.14)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Assisted living</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>3.89 (1.31)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>2.24 (0.69)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Retirement home</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.87 (1.03)</td>
+<td align="left" rowspan="1" colspan="1">2.41 (1.84)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Education <italic>(Ref.: Low)</italic></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Medium</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>0.76 (0.08)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">High</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.96 (0.14)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Social support</td>
+<td align="left" rowspan="1" colspan="1"><bold>0.82 (0.05)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.63 (0.05)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.76 (0.05)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1">0.87 (0.05)</td>
+<td align="left" rowspan="1" colspan="1"><bold>0.62 (0.04)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Depression</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.44 (0.15)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.75 (0.27)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.76 (0.19)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.39 (0.16)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>3.30 (0.33)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Obesity</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.95 (0.17)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.69 (0.23)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.63 (0.15)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.44 (0.13)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.78 (0.07)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chronic low back pain</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.23 (0.10)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.54 (0.21)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.38 (0.12)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.66 (0.14)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Neuropathies</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.36 (0.15)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.59 (0.26)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.39 (0.16)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.40 (0.17)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Anemias</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.79 (0.34)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>1.89 (0.37)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.80 (0.38)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Asthma/COPD</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.31 (0.12)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>1.38 (0.13)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.49 (0.14)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cardiac insufficiency</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.63 (0.19)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.95 (0.32)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.94 (0.23)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Osteoporosis</td>
+<td align="left" rowspan="1" colspan="1">1.28 (0.13)</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.75 (0.28)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.39 (0.14)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.35 (0.15)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chronic stroke</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.53 (0.18)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>2.04 (0.34)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1">1.38 (0.17)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Joint arthrosis</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.68 (0.13)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.22 (0.10)</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.64 (0.14)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Lipid metabolism disorders</td>
+<td align="left" rowspan="1" colspan="1"><bold>0.76 (0.06)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>0.62 (0.08)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1">0.85 (0.07)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Parkinson’s disease</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>4.52 (1.37)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>3.59 (1.00)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">2.11 (0.61)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Urinary incontinence</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>2.01 (0.40)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"><bold>1.53 (0.23)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.39 (0.21)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Anxiety disorders</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.48 (0.19)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>2.31 (0.46)</bold> <xref ref-type="table-fn" rid="nt111">**</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Atherosclerosis</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.36 (0.14)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.77 (0.09)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Cardiac valve disorders</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>0.77 (0.10)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Diabetes mellitus</td>
+<td align="left" rowspan="1" colspan="1"><bold>1.27 (0.10)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1">1.41 (0.19)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Insomnia</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>1.60 (0.28)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Renal insufficiency</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>1.70 (0.31)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1">1.36 (0.18)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Severe hearing loss</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><bold>0.63 (0.11)</bold> <xref ref-type="table-fn" rid="nt110">*</xref></td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Coronary heart disease</td>
+<td align="left" rowspan="1" colspan="1">1.24 (0.11)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Dizziness</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.36 (0.20)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Intestinal diverticulosis</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.28 (0.15)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Psoriasis</td>
+<td align="left" rowspan="1" colspan="1">1.53 (0.31)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Rheumatism/CPA</td>
+<td align="left" rowspan="1" colspan="1">1.57 (0.31)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Urinary tract calculi</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">1.81 (0.53)</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Varicosis</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">0.80 (0.08)</td>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt110"><label>*</label><p>p&lt;0.01;</p></fn><fn id="nt111"><label>**</label><p>p&lt;0.001; Significant results are printed bold. All variables included in the second model are presented.</p></fn></table-wrap-foot></table-wrap>
+<p>With respect to usual activities the probability of difficulties is most markedly increased by Parkinson’s disease (OR 3.59), cardiac insufficiency (OR 1.94), anemia (OR 1.89), depression (OR 1.76), obesity (OR 1.63) and urinary incontinence (OR 1.53). There were also associations between problems in usual activities and osteoporosis, neuropathy, chronic low back pain and asthma/COPD.</p>
+<p>The association with moderate or severe pain or discomfort is greatest for anemia (OR 1.80), chronic low back pain (OR 1.66), joint arthrosis (OR 1.64), asthma/COPD (OR 1.49) and obesity (OR 1.44). Neuropathy, depression and osteoporosis were also related to problems in pain/discomfort.</p>
+<p>Finally, there are only three conditions with significant effects on the dimension depression/anxiety. Depression had the greatest effect (OR 3.30), followed by anxiety disorders (OR 2.31) and insomnia (OR 1.60).</p>
+<p>Across the five EQ-5D dimensions, there were individual positive effects on the outcome for lipid metabolism disorders (mobility, self-care), severe hearing loss (pain/discomfort) cardiac valve disorders (pain/discomfort) and obesity (anxiety/depression).</p>
+<p>Apart from the effects of chronic conditions, there was an effect of higher age on the probability of difficulties in the dimensions mobility, self-care and usual activities. Female gender was associated with greater likelihood of problems with usual activities as well as pain or discomfort and depression or anxiety. Social support was a highly significant protective factor for all dimensions except pain/discomfort. Furthermore assisted living as compared to living alone was associated with problems in the dimension self-care (OR 3.89) and usual activities (OR 2.24). Compared to a lower level of education, a medium level was associated with fewer problems in the dimension usual activities. There were no other consistent effects of sociodemographic variables.</p>
+</sec></sec><sec id="s4">
+<title>Discussion</title>
+<p>The aim of this study was to analyze the relative impact of multiple chronic conditions on HRQL in elderly patients. The patient cohort was recruited in general practices in eight German cities. Patients residing in nursing homes were excluded as well as those suffering from severe diseases likely to be fatal within three months according to the GP. Therefore our study sample may have missed some patients with higher disease severities. On average patients suffered from seven conditions and had a mean weighted multimorbidity count score of 11.2. This means that the average disease severity was 1.6. This indicates that patients were suffering from a greater number of less severe diseases but does not preclude that there were very severe disease affecting the patients life profoundly.</p>
+<p>An advantage of our study compared to other studies of HROL in multimorbid patients is the great number of included conditions. We included 42 conditions whereas other studies considered only 6 <xref ref-type="bibr" rid="pone.0066742-Hunger1">[12]</xref> up to 29 conditions <xref ref-type="bibr" rid="pone.0066742-Saarni1">[24]</xref>. A greater number of conditions allows for a more comprehensive description of the influence of multimorbidity on HRQL. On the other hand the comparability of our results to the results of other studies is limited by the greater number of conditions.</p>
+<p>In general, we found that multimorbidity measured by a weighted count score was negatively associated with overall HRQL measured by the EQ VAS. This is in line with findings of various other studies which also used the EQ-5D <xref ref-type="bibr" rid="pone.0066742-Vogel1">[14]</xref>, <xref ref-type="bibr" rid="pone.0066742-Heyworth1">[15]</xref>, <xref ref-type="bibr" rid="pone.0066742-Saarni1">[24]</xref>, <xref ref-type="bibr" rid="pone.0066742-Ose1">[25]</xref>, <xref ref-type="bibr" rid="pone.0066742-Agborsangaya1">[26]</xref>. However, the patient samples of these studies differed with regard to age. While two study samples <xref ref-type="bibr" rid="pone.0066742-Vogel1">[14]</xref>, <xref ref-type="bibr" rid="pone.0066742-Ose1">[25]</xref> had a mean age (70 years) similar to our study, the studies of Agborsangaya et al. <xref ref-type="bibr" rid="pone.0066742-Agborsangaya1">[26]</xref> and Saarni et al. <xref ref-type="bibr" rid="pone.0066742-Saarni1">[24]</xref> analysed samples with a mean age of approximately 50 years which indicates that the negative association of multimorbidity and overall HRQL can also be found in younger populations. Yet, all mentioned studies only used a simple count score to measure multimorbidity, whereas we additionally employed a severity weighting.</p>
+<p>Focussing on the individual conditions we found 21 chronic conditions affecting the overall HRQL or the single dimensions of the EQ-5D. In general, Parkinsońs disease had the strongest effect on overall HRQL of the individual chronic conditions, followed by rheumatism, depression, cardiac insufficiency and obesity. With regard to the five dimensions of the EQ-5D, depression was significantly associated with problems across dimensions. Obesity, chronic low back pain and neuropathies were associated with greater problems in all dimensions but anxiety/depression. At the same time, obesity had a protective effect with regard to anxiety/depression. Cardiac insufficiency, anemia, asthma/COPD and osteoporosis were associated with three dimensions. Parkinsońs disease had the strongest negative impact (i.e. the largest OR) of all conditions on the EQ-5D dimensions self-care and usual activities. In the following section we will point out the most important of these chronic conditions as they influence overall HRQL and the dimensions of the EQ-5D in a substantial manner.</p>
+<p>The effect of Parkinsońs disease is remarkable. It had the strongest influence of all chronic conditions on overall HRQL and the dimensions self-care and usual activities. The presence of Parkinsońs disease was associated with a mean loss of overall HRQL of more than 12 points on the EQ-VAS. Furthermore it increased the odds of reporting problems in self-care and usual activities by factors 4.5 and 3.6, respectively. In the literature reporting the effect of multimorbidity on HRQL, Parkinsońs disease has rarely been considered. One exception is the study by Saarni et al. who used the EQ-5D index in their analysis <xref ref-type="bibr" rid="pone.0066742-Saarni1">[24]</xref>. These authors also found that Parkinsońs disease had the strongest impact on HRQL of all 29 conditions included in their analysis.</p>
+<p>Regarding the influence of Parkinsońs disease on the dimensions self-care and usual activities we found no comparable data from multimorbid populations in the literature. Winter et al <xref ref-type="bibr" rid="pone.0066742-Winter1">[27]</xref> and Schrag et al <xref ref-type="bibr" rid="pone.0066742-Schrag1">[28]</xref> who assessed the impact of Parkinsońs disease on the EQ-5D dimensions without considering co-morbidity also found a higher proportion of patients reporting problems in these dimensions. Unfortunately it is not possible to compare their odds ratios with our findings as both studies compared their samples to younger general population samples.</p>
+<p>The great impact of Parkinsońs disease on HRQL in multimorbid patients becomes obvious when compared to the next most influential conditions: chronic stroke (on self-care) and cardiac insufficiency (on usual activities). They show much smaller OR of 2.04 (compared to 4.52 for Parkinson’s disease) and 1.94 (compared to 3.59).</p>
+<p>We found that obesity is another highly important factor for HRQL. The presence of obesity caused a decrease in overall HRQL of more than 4 points. This finding is in line with results reported by Hunger et al. from a population of multimorbid patients showing that HRQL decreases with increasing BMI after exceeding the threshold of 25 kg/m<sup>2</sup> <xref ref-type="bibr" rid="pone.0066742-Hunger1">[12]</xref>. This is also reported by S?ltoft et al from a general population sample <xref ref-type="bibr" rid="pone.0066742-Sltoft1">[29]</xref>. Furthermore the presence of obesity had an effect on the dimensions mobility, self-care and usual activities. Especially the effect on mobility was substantial with an OR of nearly 2. Overall, the OR found in our study were smaller in comparison to other studies. Agborsangaya et al. reported OR of 3.7 for mobility, 3.5 for usual activities and 2.9 for self-care <xref ref-type="bibr" rid="pone.0066742-Agborsangaya1">[26]</xref>. Interestingly, the OR they reported are larger in general. Possible reasons for this are the mean age of their study sample and the number of chronic conditions considered. We analysed the impact of 42 conditions in sample with a mean age of 74.4 years whereas Agborsangaya et al. considered 16 conditions in a sample with a mean age of 46.6 years. Based on the observations that the number of diseases <xref ref-type="bibr" rid="pone.0066742-Saarni1">[24]</xref> and the number of reported problems <xref ref-type="bibr" rid="pone.0066742-Agborsangaya1">[26]</xref> increases with increasing age, it is plausible that we found smaller OR in our study.</p>
+<p>As expected, anxiety and depression had the strongest impact on the dimension Anxiety/Depression. The presence of these conditions was associated with comparatively large OR in our sample. Furthermore we found a strong impact of depression on overall HRQL. Its presence corresponds to a decrease of more than 5 points on the EQ-VAS. Another condition affecting several dimensions and overall HRQL was cardiac insufficiency. On the EQ-VAS its presence led to a decrease of more than four points, while it affected the dimensions self care, usual activities and mobility significantly. As expected, conditions like chronic low back pain and joint arthrosis were very influential factors on Pain/Discomfort. However, anemia had the strongest impact on pain/discomfort and was remarkably associated with mobility and usual activities.</p>
+<p>Although the objective of our study was the analysis of the effect of multimorbidity on HRQL we want to point out the influence of social support on HRQL of patients suffering from multiple chronic conditions. Various studies have reported that low social support is a predictor for negative health outcomes such as increased mortality (e.g. <xref ref-type="bibr" rid="pone.0066742-Mazzella1">[30]</xref>). We found similar results for HRQL with low social support being associated with worse overall HRQL and more problems in HRQL dimensions. This is in accordance with the results of Fortin et al. who showed that social support is associated with all dimensions of the SF-36 <xref ref-type="bibr" rid="pone.0066742-Fortin5">[8]</xref>.</p>
+<p>A potential limitation of our study is the composition of our study sample. Patients were recruited in a GP setting, and subjects residing in nursing homes were excluded, as well as patients suffering from severe diseases likely to be fatal within a short time. Consequently, our sample may represent patients with at most moderate disease severity. For this reason HRQL aspects specific for multimorbid patients suffering from severe conditions may not have been captured.</p>
+<sec id="s4a">
+<title>Conclusion</title>
+<p>The HRQL of multimorbid patients is affected by the number of conditions and the severity of these conditions. In our sample of elderly multimorbid patients, Parkinsońs disease had the strongest impact on overall HRQL, followed by rheumatism, depression and obesity. The specific dimensions of HRQL (mobility, self-care, usual activities, pain/discomfort, anxiety/depression) were affected by a great number of different conditions, especially depression, obesity, chronic low back pain, neuropathies and Parkinsońs disease.</p>
+<p>Thus, the impact of chronic conditions on HRQL is complex and heterogeneous. Further studies should address the impact of disease combinations which require very large sample sizes as well as advanced statistical methods because of to the great number of possible combinations.</p>
+</sec></sec></body>
+<back>
+<ack>
+<p>We are grateful to the general practitioners in Bonn, Dusseldorf, Frankfurt/Main, Hamburg, Jena, Leipzig, Mannheim and Munich who supplied the clinical information on their patients, namely Theodor Alfen, Martina Amm, Katrin Ascher, Philipp Ascher, Heinz-Michael Assmann, Hubertus Axthelm, Leonhard Badmann, Horst Bauer, Veit-Harold Bauer, Sylvia Baumbach, Brigitte Behrend-Berdin, Rainer Bents, Werner Besier, Liv Betge, Arno Bewig, Hannes Blankenfeld, Harald Bohnau, Claudia Böhnke, Ulrike Börgerding, Gundula Bormann, Martin Braun, Inge Bürfent, Klaus Busch, Jürgen Claus, Peter Dick, Heide Dickenbrok, Wolfgang Dörr, Nadejda Dörrler-Naidenoff, Ralf Dumjahn, Norbert Eckhardt, Richard Ellersdorfer, Doris Fischer-Radizi, Martin Fleckenstein, Anna Frangoulis, Daniela Freise, Denise Fricke, Nicola Fritz, Sabine Füllgraf-Horst, Angelika Gabriel-Müller, Rainer Gareis, Benno Gelshorn, Maria Göbel-Schlatholt, Manuela Godorr, Jutta Goertz, Cornelia Gold, Stefanie Grabs, Hartmut Grella, Peter Gülle, Elisabeth Gummersbach, Heinz Gürster, Eva Hager, Wolfgang-Christoph Hager, Henning Harder, Matthias Harms, Dagmar Harnisch, Marie-Luise von der Heide, Katharina Hein, Ludger Helm, Silvia Helm, Udo Hilsmann, Claus W. Hinrichs, Bernhard Hoff, Karl-Friedrich Holtz, Wolf-Dietrich Honig, Christian Hottas, Helmut Ilstadt, Detmar Jobst, Gunter Kässner, Volker Kielstein, Gabriele Kirsch, Thomas Kochems, Martina Koch-Preißer, Andreas Koeppel, Almut Körner, Gabriele Krause, Jens Krautheim, Nicolas Kreff, Daniela Kreuzer, Franz Kreuzer, Judith Künstler, Christiane Kunz, Doris Kurzeja-Hüsch, Felizitas Leitner, Holger Liebermann, Ina Lipp, Thomas Lipp, Bernd Löbbert, Guido Marx, Stefan Maydl, Manfred Mayer, Stefan-Wolfgang Meier, Jürgen Meissner, Anne Meister, Ruth Möhrke, Christian Mörchen, Andrea Moritz, Ute Mühlmann, Gabi Müller, Sabine Müller, Karl-Christian Münter, Helga Nowak, Erwin Ottahal, Christina Panzer, Thomas Paschke, Helmut Perleberg, Eberhard Prechtel, Hubertus Protz, Sandra Quantz, Eva-Maria Rappen-Cremer, Thomas Reckers, Elke Reichert, Birgitt Richter-Polynice, Franz Roegele, Heinz-Peter Romberg, Anette Rommel, Michael Rothe, Uwe Rumbach, Michael Schilp, Franz Schlensog, Ina Schmalbruch, Angela Schmid, Holger Schmidt, Lothar Schmittdiel, Matthias Schneider, Ulrich Schott, Gerhard Schulze, Heribert Schützendorf, Harald Siegmund, Gerd Specht, Karsten Sperling, Meingard Staude, Hans-Günter Stieglitz, Martin Strickfaden, Hans-Christian Taut, Johann Thaller, Uwe Thürmer, Ljudmila Titova, Michael Traub, Martin Tschoke, Maya Tügel, Christian Uhle, Kristina Vogel, Florian Vorderwülbecke, Hella Voß, Christoph Weber, Klaus Weckbecker, Sebastian Weichert, Sabine Weidnitzer, Brigitte Weingärtner, Karl-Michael Werner, Hartmut Wetzel, Edgar Widmann, Alexander Winkler, Otto-Peter Witt, Martin Wolfrum, Rudolf Wolter, Armin Wunder, and Steffi Wünsch.</p>
+<p>We also thank Corinna Contenius, Cornelia Eichhorn, Sarah Floehr, Vera Kleppel, Heidi Kubieziel, Rebekka Maier, Natascha Malukow, Karola Mergenthal, Christine Müller, Sandra Müller, Michaela Schwarzbach, Wibke Selbig, Astrid Steen, Miriam Steigerwald, and Meike Thiele for data collection as well as Ulrike Barth, Elena Hoffmann, Friederike Isensee, Leyla Kalaz, Heidi Kubieziel, Helga Mayer, Karine Mnatsakanyan, Michael Paulitsch, Merima Ramic, Sandra Rauck, Nico Schneider, Jakob Schroeber, Susann Schumann, and Daniel Steigerwald for data entry.</p>
+<p><bold>The members of the MultiCare Cohort Study Group are:</bold> Attila Altiner, Horst Bickel, Wolfgang Blank, Christian Brettschneider, Monika Bullinger, Hendrik van den Bussche, Anne Dahlhaus, Lena Ehreke, Michael Freitag, Angela Fuchs, Jochen Gensichen, Ferdinand Gerlach, Heike Hansen, Sven Heinrich, Susanne Höfels, Olaf von dem Knesebeck, Hans-Helmut König, Norbert Krause, Hanna Leicht, Melanie Luppa, Wolfgang Maier, Manfred Mayer, Christine Mellert, Anna Nützel, Thomas Paschke, Juliana Petersen, Jana Prokein, Steffi Riedel-Heller, Heinz-Peter Romberg, Ingmar Schäfer, Martin Scherer, Gerhard Schön, Susanne Steinmann, Sven Schulz, Karl Wegscheider, Klaus Weckbecker, Jochen Werle, Siegfried Weyerer, Birgitt Wiese, and Margrit Zieger.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0066742-vandenAkker1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>van den Akker</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Buntinx</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Metsemakers</surname><given-names>JFM</given-names></name>, <name name-style="western"><surname>Roos</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Knottnerus</surname><given-names>JA</given-names></name> (<year>1998</year>) <article-title>Multimorbidity in general practice: Prevalence, incidence, and determinants of co-occurring chronic and recurrent diseases</article-title>. <source>J Clin Epidemiol</source> <volume>51</volume>: <fpage>367</fpage>–<lpage>375</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Fortin1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fortin</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Bravo</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Hudon</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Vanasse</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Lapointe</surname><given-names>L</given-names></name> (<year>2005</year>) <article-title>Prevalence of multimorbidity among adults seen in family practice</article-title>. <source>Ann Fam Med</source> <volume>3</volume>: <fpage>223</fpage>–<lpage>228</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Marengoni1"><label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Marengoni</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Angleman</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Melis</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Mangialasche</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Karp</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Aging with multimorbidity: A systematic review of the literature</article-title>. <source>Ageing Res Rev</source> <volume>10</volume>: <fpage>430</fpage>–<lpage>439</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Fortin2"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fortin</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hudon</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Haggerty</surname><given-names>J</given-names></name>, <name name-style="western"><surname>van den Akker</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Almirall</surname><given-names>J</given-names></name> (<year>2010</year>) <article-title>Prevalence estimates of multimorbidity: a comparative study of two sources</article-title>. <source>BMC Health Serv Res</source> <volume>10</volume>: <fpage>6</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Fortin3"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fortin</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Stewart</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Poitras</surname><given-names>ME</given-names></name>, <name name-style="western"><surname>Almirall</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Maddocks</surname><given-names>H</given-names></name> (<year>2012</year>) <article-title>A Systematic Review of Prevalence Studies on Multimorbidity: Toward a More Uniform Methodology</article-title>. <source>Ann Fam Med</source> <volume>10</volume>: <fpage>142</fpage>–<lpage>151</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-vandenBussche1"><label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>van den Bussche</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Koller</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Kolonko</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Hansen</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Wegscheider</surname><given-names>K</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Which chronic diseases and disease combinations are specific to multimorbidity in the elderly? Results of a claims data based cross-sectional study in Germany</article-title>. <source>BMC Public Health</source> <volume>11</volume>: <fpage>101</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Fortin4"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fortin</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Lapointe</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Hudon</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Vanasse</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ntetu</surname><given-names>AL</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Multimorbidity and quality of life in primary care: a systematic review</article-title>. <source>Health Qual Life Outcomes</source> <volume>2</volume>: <fpage>51</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Fortin5"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fortin</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Bravo</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Hudon</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Lapointe</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Almirall</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Relationship between multimorbidity and health-related quality of life of patients in primary care</article-title>. <source>Qual Life Res</source> <volume>15</volume>: <fpage>83</fpage>–<lpage>91</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Hodek1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hodek</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Ruhe</surname><given-names>AK</given-names></name>, <name name-style="western"><surname>Greiner</surname><given-names>W</given-names></name> (<year>2010</year>) <article-title>Relationship Between Health-Related Quality of Life and Multimorbidity</article-title>. <source>Gesundheitswesen</source> <volume>72</volume>: <fpage>455</fpage>–<lpage>465</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Rijken1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rijken</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Kerkhof</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Dekker</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Schellevis</surname><given-names>FG</given-names></name> (<year>2005</year>) <article-title>Comorbidity of chronic diseases - Effects of disease pairs on physical and mental functioning</article-title>. <source>Qual Life Res</source> <volume>14</volume>: <fpage>45</fpage>–<lpage>55</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Fortin6"><label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fortin</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Dubois</surname><given-names>MF</given-names></name>, <name name-style="western"><surname>Hudon</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Soubhi</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Almirall</surname><given-names>J</given-names></name> (<year>2007</year>) <article-title>Multimorbidity and quality of life: A closer look</article-title>. <source>Health Qual Life Outcomes</source> <volume>5</volume>: <fpage>52</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Hunger1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hunger</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Thorand</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Schunk</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Doering</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Menn</surname><given-names>P</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Multimorbidity and health-related quality of life in the older population: results from the German KORA-Age study</article-title>. <source>Health Qual Life Outcomes</source> <volume>9</volume>: <fpage>53</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Hodek2"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hodek</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Greiner</surname><given-names>W</given-names></name> (<year>2009</year>) <article-title>Relationship Between Health-Related Quality of Life and Multimorbidity Among Older Persons in Germany-Results of the Priscus-Cohort</article-title>. <source>Value Health</source> <volume>12</volume>: <fpage>A297</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Vogel1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vogel</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Miksch</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Goetz</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Ose</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Szecsenyi</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>The impact of perceived social support and sense of coherence on health-related quality of life in multimorbid primary care patients</article-title>. <source>Chronic Illn</source> <volume>8</volume>: <fpage>296</fpage>–<lpage>307</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Heyworth1"><label>15</label>
+<mixed-citation publication-type="other" xlink:type="simple">Heyworth IT, Hazell ML, Linehan MF, Frank TL (2009) How do common chronic conditions affect health-related quality of life? Br J Gen Pract 59: e353 - e358.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Schafer1"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schafer</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Hansen</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Schon</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Maier</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Hofels</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>The German MultiCare-study: Patterns of multimorbidity in primary health care - protocol of a prospective cohort study</article-title>. <source>BMC Health Serv Res</source> <volume>9</volume>: <fpage>9</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Schfer1"><label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schäfer</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Hansen</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Schön</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Höfels</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Altiner</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>The influence of age, gender and socio-economic status on multimorbidity patterns in primary care. First results from the multicare cohort study</article-title>. <source>BMC Health Serv Res</source> <volume>12</volume>: <fpage>89</fpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Jckel1"><label>18</label>
+<mixed-citation publication-type="other" xlink:type="simple">Jöckel KH, Babitsch B, Bellach BM, Bloomfield K, Hoffmeyer-Zlotnik J, <etal>et al</etal>.. (1998) Empfehlungen der Arbeitsgruppe "Epidemiologische Methoden" in der Deutschen Arbeitsgemeinschaft Epidemiologie der GMDS und der DGSMP zur Messung und Quantifizierung soziodemographischer Merkmale in epidemiologischen Studien. In: Ahrens WB, Bellach BM, Jöckel KH, editors. Messung soziodemographischer Merkmale in der Epidemiologie. München: Urban &amp; Vogel.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Brauns1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brauns</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Steinmann</surname><given-names>S</given-names></name> (<year>1999</year>) <article-title>Educational Reform in France, West-Germany and the United Kingdom: Updating the CASMIN Educational Classification</article-title>. <source>ZUMA-Nachrichten</source> <volume>44</volume>: <fpage>7</fpage>–<lpage>44</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Fydrich1"><label>20</label>
+<mixed-citation publication-type="other" xlink:type="simple">Fydrich T, Sommer G, Brähler E (2007) F-SOZU: Fragebogen zur sozialen Unterstützung. Göttingen: Hogrefe.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Rabin1"><label>21</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rabin</surname><given-names>R</given-names></name>, <name name-style="western"><surname>de Charro</surname><given-names>F</given-names></name> (<year>2001</year>) <article-title>EQ-5D: a measure of health status from the EuroQol Group</article-title>. <source>Ann Med</source> <volume>33</volume>: <fpage>337</fpage>–<lpage>343</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Andridge1"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Andridge</surname><given-names>RR</given-names></name>, <name name-style="western"><surname>Little</surname><given-names>RJA</given-names></name> (<year>2010</year>) <article-title>A Review of Hot Deck Imputation for Survey Non-response</article-title>. <source>Int Stat Rev</source> <volume>78</volume>: <fpage>40</fpage>–<lpage>64</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-World1"><label>23</label>
+<mixed-citation publication-type="other" xlink:type="simple">World Health Organization (2012) Fact sheet N°311: Obesity and overweight.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Saarni1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Saarni</surname><given-names>SI</given-names></name>, <name name-style="western"><surname>Härkänen</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Sintonen</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Suvisaari</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Koskinen</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>The impact of 29 chronic conditions on health-related quality of life: a general population survey in Finland using 15D and EQ-5D</article-title>. <source>Qual Life Res</source> <volume>15</volume>: <fpage>1403</fpage>–<lpage>1408</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Ose1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ose</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Wensing</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Szecsenyi</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Joos</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Hermann</surname><given-names>K</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Impact of primary care-based disease management on the health-related quality of life in patients with type 2 diabetes and comorbidity</article-title>. <source>Diabetes Care</source> <volume>32</volume>: <fpage>1594</fpage>–<lpage>1596</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Agborsangaya1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Agborsangaya</surname><given-names>CB</given-names></name>, <name name-style="western"><surname>Lau</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Lahtinen</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Cooke</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Johnson</surname><given-names>JA</given-names></name> (<year>2013</year>) <article-title>Health-related quality of life and healthcare utilization in multimorbidity: results of a cross-sectional survey</article-title>. <source>Qual Life Res</source> <volume>22</volume>: <fpage>791</fpage>–<lpage>799</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Winter1"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Winter</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>von Campenhausen</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Arend</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Longo</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Boetzel</surname><given-names>K</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Health-related quality of life and its determinants in Parkinson's disease: results of an Italian cohort study</article-title>. <source>Parkinsonism Relat Disord</source> <volume>17</volume>: <fpage>265</fpage>–<lpage>269</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Schrag1"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schrag</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Jahanshahi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Quinn</surname><given-names>N</given-names></name> (<year>2000</year>) <article-title>How does Parkinson's disease affect quality of life? A comparison with quality of life in the general population</article-title>. <source>Mov Disord</source> <volume>15</volume>: <fpage>1112</fpage>–<lpage>1118</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Sltoft1"><label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Søltoft</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Hammer</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Kragh</surname><given-names>N</given-names></name> (<year>2009</year>) <article-title>The association of body mass index and health-related quality of life in the general population: data from the 2003 Health Survey of England</article-title>. <source>Qual Life Res</source> <volume>18</volume>: <fpage>1293</fpage>–<lpage>1299</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0066742-Mazzella1"><label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mazzella</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Cacciatore</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Galizia</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Della-Morte</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Rossetti</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Social support and long-term mortality in the elderly: role of comorbidity</article-title>. <source>Arch Gerontol Geriatr</source> <volume>51</volume>: <fpage>323</fpage>–<lpage>328</lpage>.</mixed-citation>
+</ref>
+</ref-list></back>
+</article>

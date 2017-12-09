@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-11-11828</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0026358</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Immunology</subject>
+            <subj-group>
+              <subject>Immune cells</subject>
+              <subj-group>
+                <subject>B cells</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Immunity</subject>
+              <subj-group>
+                <subject>Immunotherapy</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Autoimmunity</subject>
+              <subject>Immunomodulation</subject>
+              <subject>Immunopathology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Anatomy and physiology</subject>
+            <subj-group>
+              <subject>Immune physiology</subject>
+              <subj-group>
+                <subject>Antibodies</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Clinical immunology</subject>
+            <subj-group>
+              <subject>Immune cells</subject>
+              <subj-group>
+                <subject>B cells</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Immunity</subject>
+              <subj-group>
+                <subject>Immunotherapy</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Autoimmune diseases</subject>
+              <subject>Immunomodulation</subject>
+              <subject>Immunopathology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Clinical research design</subject>
+            <subj-group>
+              <subject>Clinical trials</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Diagnostic medicine</subject>
+            <subj-group>
+              <subject>Clinical laboratory sciences</subject>
+              <subj-group>
+                <subject>Clinical immunology</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Drugs and devices</subject>
+            <subj-group>
+              <subject>Clinical pharmacology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Mental health</subject>
+            <subj-group>
+              <subject>Psychiatry</subject>
+              <subject>Therapies</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Rheumatology</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Immunology</subject>
+          <subject>Mental Health</subject>
+          <subject>Physiology</subject>
+          <subject>Pharmacology</subject>
+          <subject>Rheumatology</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Benefit from B-Lymphocyte Depletion Using the Anti-CD20 Antibody Rituximab in Chronic Fatigue Syndrome. A Double-Blind and Placebo-Controlled Study</article-title><alt-title alt-title-type="running-head">B-Cell Depletion in Chronic Fatigue Syndrome</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Fluge</surname>
+            <given-names>Øystein</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Bruland</surname>
+            <given-names>Ove</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Risa</surname>
+            <given-names>Kristin</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Storstein</surname>
+            <given-names>Anette</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kristoffersen</surname>
+            <given-names>Einar K.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Sapkota</surname>
+            <given-names>Dipak</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Næss</surname>
+            <given-names>Halvor</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Dahl</surname>
+            <given-names>Olav</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Nyland</surname>
+            <given-names>Harald</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Mella</surname>
+            <given-names>Olav</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>Department of Oncology and Medical Physics, Haukeland University Hospital, Bergen, Norway</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Department of Medical Genetics and Molecular Medicine, Haukeland University Hospital, Bergen, Norway</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Department of Neurology, Haukeland University Hospital, Bergen, Norway</addr-line>       </aff><aff id="aff4"><label>4</label><addr-line>Department of Immunology and Transfusion Medicine, Haukeland University Hospital, and The Gade Institute, University of Bergen, Bergen, Norway</addr-line>       </aff><aff id="aff5"><label>5</label><addr-line>Institute of Internal Medicine, Section of Oncology, University of Bergen, Bergen, Norway</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Reindl</surname>
+            <given-names>Markus</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Innsbruck Medical University, Austria</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">oystein.fluge@gmail.com</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: ØF OM. Performed the experiments: ØF OM OB KR DS AS EK HN. Analyzed the data: ØF OB KR DS EK OM. Contributed reagents/materials/analysis tools: ØF OM OB HN EK OD. Wrote the paper: ØF OM. Revised the manuscript: ØF OB KR DS AS EK H.Næss OD H.Nyland OM.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>Haukeland University Hospital has patents and pending patent applications on the issue of B-cell depletion therapy for chronic fatigue syndrome. Family members of WO2009083602 A1 are pending, as well as granted US 12/348024. The two authors ØF and OM are named as inventors in these applications. This does not alter the authors' adherence to all the PLoS ONE policies on sharing data and materials.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>19</day>
+        <month>10</month>
+        <year>2011</year>
+      </pub-date><volume>6</volume><issue>10</issue><elocation-id>e26358</elocation-id><history>
+        <date date-type="received">
+          <day>28</day>
+          <month>6</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>25</day>
+          <month>9</month>
+          <year>2011</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2011</copyright-year><copyright-holder>Fluge et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <sec>
+          <title>Background</title>
+          <p>Chronic fatigue syndrome (CFS) is a disease of unknown aetiology. Major CFS symptom relief during cancer chemotherapy in a patient with synchronous CFS and lymphoma spurred a pilot study of B-lymphocyte depletion using the anti-CD20 antibody Rituximab, which demonstrated significant clinical response in three CFS patients.</p>
+        </sec>
+        <sec>
+          <title>Methods and Findings</title>
+          <p>In this double-blind, placebo-controlled phase II study (NCT00848692), 30 CFS patients were randomised to either Rituximab 500 mg/m<sup>2</sup> or saline, given twice two weeks apart, with follow-up for 12 months. Xenotropic murine leukemia virus-related virus (XMRV) was not detected in any of the patients.</p>
+          <p>The responses generally affected all CFS symptoms. Major or moderate overall response, defined as lasting improvements in self-reported Fatigue score during follow-up, was seen in 10 out of 15 patients (67%) in the Rituximab group and in two out of 15 patients (13%) in the Placebo group (p = 0.003). Mean response duration within the follow-up period for the 10 responders to Rituximab was 25 weeks (range 8–44). Four Rituximab patients had clinical response durations past the study period. General linear models for repeated measures of Fatigue scores during follow-up showed a significant interaction between time and intervention group (p = 0.018 for self-reported, and p = 0.024 for physician-assessed), with differences between the Rituximab and Placebo groups between 6–10 months after intervention. The primary end-point, defined as effect on self-reported Fatigue score 3 months after intervention, was negative. There were no serious adverse events. Two patients in the Rituximab group with pre-existing psoriasis experienced moderate psoriasis worsening.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>The delayed responses starting from 2–7 months after Rituximab treatment, in spite of rapid B-cell depletion, suggests that CFS is an autoimmune disease and may be consistent with the gradual elimination of autoantibodies preceding clinical responses. The present findings will impact future research efforts in CFS.</p>
+        </sec>
+        <sec>
+          <title>Trial registration</title>
+          <p>ClinicalTrials.gov <ext-link ext-link-type="uri" xlink:href="http://clinicaltrials.gov/ct2/show/NCT00848692" xlink:type="simple">NCT00848692</ext-link></p>
+        </sec>
+      </abstract><funding-group><funding-statement>The work received financial support from Helse Vest grant no 911557, and also from the legacy of Torstein Hereid. These funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts>
+        <page-count count="13"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Chronic fatigue syndrome (CFS)/Myalgic encephalomyelitis (ME) is an illness of unknown aetiology. CFS is characterized by unexplained severe fatigue, excessive post-exercise exhaustion and malaise, sleep disturbances, cognitive impairment, sensory hypersensitivity, muscle and joint pain, headache, bowel symptoms, flu-like episodes and severe impairment of daily functioning. CFS is a major public health problem, with extensive family and public costs for medication, nursing and disability <xref ref-type="bibr" rid="pone.0026358-Devanur1">[1]</xref>, <xref ref-type="bibr" rid="pone.0026358-Capelli1">[2]</xref>. The prevalence estimates vary up to 1%, but is probably 0.1–0.2% of the population using strict diagnostic criteria <xref ref-type="bibr" rid="pone.0026358-Nacul1">[3]</xref>. There is at present no established interventional drug treatment for CFS. However, infections frequently precede the outbreak of symptoms and studies point at the immune system being chronically activated <xref ref-type="bibr" rid="pone.0026358-Devanur1">[1]</xref>.</p>
+      <p>The present line of investigation was initiated after we observed a patient with CFS who experienced unexpected and marked recovery of CFS symptoms lasting for five months during and after cytotoxic chemotherapy for Hodgkin's disease. We recently published the first pilot case series describing clinical activity from B-lymphocyte depletion using the anti-CD20 monoclonal antibody Rituximab in three CFS patients <xref ref-type="bibr" rid="pone.0026358-Fluge1">[4]</xref>. These observations suggest that B-cells play a significant role in the ongoing clinical features of CFS, and provide clues to possible aetiological mechanisms. To pursue these clues, we performed a randomised, double-blind and placebo-controlled phase II study using Rituximab or saline, in 30 CFS patients.</p>
+    </sec>
+    <sec id="s2" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Ethics</title>
+        <p>The study, including amendment, was approved by the Regional Ethical Committee in Norway, no 200800657-9/MRO/400, and by the National Medicines Agency. All patients gave written consent to participate in the study.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Study design, pre-treatment evaluation, and randomisation</title>
+        <p>This study (KTS-1-2008, EudraCT no. 2007-007973-22, ClinicalTrials.gov NCT00848692) was a single centre, randomised, double-blind, and placebo-controlled phase II trial comprising 30 patients with chronic fatigue syndrome (CFS). The protocol for this trial and supporting CONSORT checklist are available as supporting information (<xref ref-type="supplementary-material" rid="pone.0026358.s008">Protocol S1</xref> and <xref ref-type="supplementary-material" rid="pone.0026358.s009">Checklist S1</xref>). The main aim was to evaluate the use of B-cell depletion with the anti-CD20 monoclonal antibody Rituximab for CFS symptom relief, during 12 months follow-up. The inclusion criteria were: a diagnosis of CFS by a neurologist, according to the Fukuda 1994 criteria <xref ref-type="bibr" rid="pone.0026358-Fukuda1">[5]</xref>, age 18–65 years, and written informed consent. Exclusion criteria were: fatigue not fulfilling CFS criteria, previous malignant disease (except basal cell carcinoma and cervical dysplasia), previous long-term immunosuppressive treatment, previous Rituximab treatment, endogenous depression, lack of ability to adhere to protocol, or evidence of on-going infection.</p>
+        <p>The primary end-point was effect on CFS symptoms (self-reported and physician-assessed) three months after intervention. The secondary endpoints were effects on CFS symptoms (self-reported and physician-assessed) at 2, 4, 6, 8, 10 and 12 months after intervention, and assessment of toxicity during 12 months follow-up. Overall clinical response was also recorded. In November 2008, an amendment was submitted to the Regional Ethical Committee (approved January 2009), with addition to the initial protocol of secondary endpoints at 8 and 10 months after inclusion. This amendment was based on observation of patient 3 in our pilot case series, who had a major clinical response occurring late after Rituximab intervention <xref ref-type="bibr" rid="pone.0026358-Fluge1">[4]</xref>. The sample size was estimated based on the initial case series <xref ref-type="bibr" rid="pone.0026358-Fluge1">[4]</xref>, showing response in three out of three consecutive patients, presuming an overall response rate (ORR) of at least 60%, and one or two responders among 15 placebo patients.</p>
+        <p>Most of the participants were recruited from patients referred to Department of Neurology, Haukeland University Hospital, which is a tertiary referral centre. After examining the patient hospital files from approximately 60 patients, 36 patients who after a telephone interview still seemed to fulfil the inclusion criteria were invited to a new thorough assessment at the Department of Oncology, Haukeland University Hospital (ØF and OM). Six out of these 36 patients chose not to participate (<xref ref-type="fig" rid="pone-0026358-g001">Figure 1</xref>).</p>
+        <fig id="pone-0026358-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026358.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Study flow-diagram.</title>
+            <p>Approximately 60 patients with CFS diagnosed by a neurologist were identified from the hospital files and contacted by telephone for an interview, and 36 of these were invited for a further thorough assessment. During 12 months follow-up, one out of 15 patients in the placebo group was excluded from further analysis after 28 weeks due to pregnancy, and one after 42 weeks due to study withdrawal and patient's decision to start alternative therapy.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.g001" xlink:type="simple"/>
+        </fig>
+        <p>The pre-treatment evaluation included standard laboratory tests (haematological, liver function, renal function), HCG to exclude pregnancy in fertile women, endocrine assessment (thyroid, adrenal, prolactin), serology for virus (EBV, CMV, HSV, VZV, Enterovirus, Parvovirus B19, adenovirus), immunophenotyping of peripheral blood lymphocyte subsets, common autoantibodies, serum immunoglobulins (IgG, IgM, IgA) with IgG subclasses. MRI of the brain had been performed in all patients. Further diagnostic tests were performed if the pre-treatment evaluation including a thorough clinical examination revealed any relevant abnormality that could explain the severe fatigue experienced by the patients.</p>
+        <p>The 30 patients were randomly allocated to either treatment with Rituximab or placebo using saline. The randomisation was performed prior to study start by the Pharmacy at Haukeland University Hospital, using a simple (unrestricted) method without blocking. The inclusion period was from June 2008 until June 2009, and the follow-up lasted until June 2010.</p>
+        <p>According to protocol, four months after the last patient entered the study (end of October, 2009), the patient files and code for intervention, Rituximab versus placebo, were inspected by one of the authors (OD, who did not have patient contact). Based upon his assessment, a decision was made to prolong the blinding until the last included patient had finished eight months follow-up (end of February 2010), at which time 19 patients had finished 10 months follow-up, and 13 patients had finished the complete 12 months observation period. The patients were blinded for group allocation until the end of follow-up (at least 12 months, up to 20 months).</p>
+      </sec>
+      <sec id="s2c">
+        <title>Treatment schedule, symptom registration, and follow-up</title>
+        <p>The patients were in-hospital at the Department of Oncology for one night when given the intervention. The infusion bags had double plastic covers to avoid content identification by nurse or patient. Rituximab 500 mg/m<sup>2</sup> (maximum 1000 mg), diluted in saline to a concentration of 2 mg/ml, or an equal volume of saline, were given twice two weeks apart, with nurse surveillance and according to local guidelines used for treating B-cell lymphomas. No additional Rituximab infusions, or other intervention, were given during follow-up. All patients were given oral cetirizine 10 mg, paracetamol 1 g, and dexamethasone 8 mg prior to infusion.</p>
+      </sec>
+      <sec id="s2d">
+        <title>CFS symptom scoring</title>
+        <p>Before intervention, the patients assessed their CFS disease status the last three months and recorded their symptoms according to a visual analogue scale (1–10, 1: no symptom, 10: very severe symptom) (<xref ref-type="supplementary-material" rid="pone.0026358.s002">Figure S1</xref>). During follow-up, the patients recorded overall change in each symptom the preceding two weeks, as compared to baseline (<xref ref-type="supplementary-material" rid="pone.0026358.s003">Figure S2</xref>). The visual analogue scale (0–6) for the follow-up scheme was: 0: Major worsening; 1: Moderate worsening; 2: Slight worsening; 3: No change; 4: Slight improvement; 5: Moderate improvement; 6: Major improvement, similar to a Clinical Global Impression Scale used previously in CFS <xref ref-type="bibr" rid="pone.0026358-Blacker1">[6]</xref>. The patients were assessed at the outpatient clinic pre-treatment, and at 2, 3, 4, 6, 8, 10, and 12 months follow-up. A separate scheme for physician-assessed symptom change was used, with the same scale (0–6) and recorded at all visits (<xref ref-type="supplementary-material" rid="pone.0026358.s004">Figure S3</xref>). Pre-treatment, and once every month until 10 months follow-up, the patients recorded the SF-36 short form scheme (Norwegian translation), which is a general health-related quality of life questionnaire also assessing eight subdimensions, such as e.g. physical function, bodily pain, social function and mental health. Before treatment, and at 4 months follow-up, the patients were in addition assessed by a neurologist. Patients still in clinical response were followed also after the study period of 12 months.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Response definitions and statistical analyses</title>
+        <p>From the self-reported symptoms recorded every second week (<xref ref-type="supplementary-material" rid="pone.0026358.s003">Figure S2</xref>, scale 0–6), a <italic>Fatigue score</italic> was calculated as the mean of the four symptoms: Fatigue, Post-exertional exhaustion, Need for rest, Daily functioning. The <italic>Pain score</italic> was calculated as the mean of the two pain symptoms assessed to be characteristic for the patient (if pre-treatment level ≥5, among Muscle pain, Joint pain, Headache, Cutaneous pain). The <italic>Cognitive score</italic> was the mean of the three symptoms: Concentration ability, Memory disturbance, Mental tiredness. The <italic>“Other symptoms score”</italic> was derived from the mean of the two symptoms assessed as characteristic for the patient's CFS disease, among those with the highest self-reported pre-treatment level. Also, the patient's self-reported overall interpretation of their CFS disease was recorded <italic>(“CFS overall score”)</italic>. The <italic>Fatigue score, Pain score, Cognitive score, “CFS overall score”</italic>, and <italic>“Other symptoms score”</italic>, were plotted every second week, for each patient in separate diagrams.</p>
+        <p>The main response was defined from the <italic>Fatigue score</italic>. A major response was defined as a <italic>Fatigue score</italic> ≥4.5 for at least six consecutive weeks, also demanding recordings of some fatigue symptoms as major improvement (value 6) during the response period. A moderate response was recorded as <italic>Fatigue score</italic> ≥4.5 for at least six consecutive weeks, but without recordings of fatigue symptoms as major improvement during the response period. The ORR included both major and moderate responses. The Chi-square test of proportions was used to compare the ORR between the Rituximab and Placebo groups. Improvements in <italic>Fatigue score</italic> with duration less than six weeks were not recorded as significant responses, neither were major improvements in <italic>Cognitive, Pain or “Other symptoms” score</italic> unless followed by a significant improvement in <italic>Fatigue score</italic>.</p>
+        <p>The self-reported <italic>Fatigue scores</italic> with means for each time interval during follow-up (i.e. 16–24 weeks), and physician-assessed <italic>Fatigue scores</italic>, were plotted. The differences in distribution of <italic>Fatigue scores</italic> for the consecutive time intervals during follow-up, between the Rituximab and Placebo groups, were compared using General Linear Model (GLM) for repeated measures. Separate analyses for self-reported and physician-assessed <italic>Fatigue scores</italic> were made. Five time intervals (with mean <italic>Fatigue scores</italic> in each) were included in the analyses, and Greenhouse-Geisser adjustments were made due to significant Mauchly's tests for sphericity. Main effects for time, for the interaction between time and intervention group, and for the overall difference between groups (Rituximab versus Placebo) were assessed. In addition, the estimates for differences in <italic>Fatigue score</italic> between groups at the five time intervals during follow-up, each level compared to baseline, were generated from the GLM analyses for the interaction time by intervention group (as tests of within-subjects contrasts).</p>
+        <p>The response durations were defined as the time interval, during 12 months follow-up, with continuous <italic>Fatigue score</italic> ≥4.0 and including the periods of major or moderate responses. The analyses of SF-36 short forms, with physical health summary score, mental health summary score, and scores for the eight SF-36 subdimensions, were generated from a standardised syntax file for each patient before treatment and monthly until 10 months follow-up. The changes in SF-36 scores, compared to baseline, were calculated for each patient during follow-up. For the Rituximab and Placebo groups, the mean baseline SF-36 scores, and the mean values for maximum changes in SF-36 scores during follow-up, were compared using t-tests for independent samples. The statistical analyses were performed using SPSS for Macintosh, version 19.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Patient characteristics</title>
+        <p>Between June 2008 and June 2009, 30 patients were randomised. The demographic data and CFS disease characteristics are shown in <xref ref-type="table" rid="pone-0026358-t001">Table 1</xref>. The mean age was 37.3 years (80% female) in the Rituximab group, and 31.5 years (60% female) in the Placebo group. The mean CFS disease duration was 5.1 years in the Rituximab group and 8.1 years in the Placebo group, with maximum disease durations of 13 and 18 years, respectively. A clear or possible clinical infection preceding CFS onset could be identified in 73% and 67% of the patients in the Rituximab and Placebo groups, respectively (<xref ref-type="table" rid="pone-0026358-t001">Table 1</xref>). The frequencies of previous autoimmune diseases for patients and first-degree relatives are also shown (<xref ref-type="table" rid="pone-0026358-t001">Table 1</xref>). The baseline symptom scores were derived from the baseline scheme (<xref ref-type="supplementary-material" rid="pone.0026358.s002">Figure S1</xref>, scale 1–10) as explained, and are shown in <xref ref-type="table" rid="pone-0026358-t002">Table 2</xref>. The levels of baseline self-reported <italic>Fatigue score</italic>, <italic>Cognitive score</italic>, <italic>Pain score</italic>, <italic>“Other symptoms” score</italic>, and <italic>“CFS overall” score</italic>, were similar in the Rituximab and Placebo groups. Generally, the patients reported a relatively high level of distress for the different symptom scores, while one patient in the Placebo group reported almost no pain (score 1.3), and one patient in the Placebo group reported only mild cognitive symptoms (score 4.0) (<xref ref-type="table" rid="pone-0026358-t002">Table 2</xref>).</p>
+        <table-wrap id="pone-0026358-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0026358.t001</object-id><label>Table 1</label><caption>
+            <title>Demographic and CFS disease characteristics for patients in the Rituximab and Placebo groups.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0026358-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.t001" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Rituximab group</td>
+                <td align="left" colspan="1" rowspan="1">Placebo group</td>
+                <td align="left" colspan="1" rowspan="1">p-value<xref ref-type="table-fn" rid="nt101">a</xref></td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">n = 15</td>
+                <td align="left" colspan="1" rowspan="1">n = 15</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Age, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">37.3 years (11.5)</td>
+                <td align="left" colspan="1" rowspan="1">31.5 years (11.6)</td>
+                <td align="left" colspan="1" rowspan="1">0.18</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Women, number (%)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">12 (80%)</td>
+                <td align="left" colspan="1" rowspan="1">9 (60%)</td>
+                <td align="left" colspan="1" rowspan="1">0.43</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">CFS disease duration, mean (range)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">5.1 years (1.0–13.0)</td>
+                <td align="left" colspan="1" rowspan="1">8.1 years (0.7–18.0)</td>
+                <td align="left" colspan="1" rowspan="1">0.09</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Infection before CFS onset</td>
+                <td align="left" colspan="1" rowspan="1">Defined<xref ref-type="table-fn" rid="nt102">b</xref></td>
+                <td align="left" colspan="1" rowspan="1">8</td>
+                <td align="left" colspan="1" rowspan="1">8</td>
+                <td align="left" colspan="1" rowspan="1">0.86</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Possible</td>
+                <td align="left" colspan="1" rowspan="1">3</td>
+                <td align="left" colspan="1" rowspan="1">2</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">No infection</td>
+                <td align="left" colspan="1" rowspan="1">4</td>
+                <td align="left" colspan="1" rowspan="1">5</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Clinical course prior study<xref ref-type="table-fn" rid="nt103">c</xref></td>
+                <td align="left" colspan="1" rowspan="1">Stable</td>
+                <td align="left" colspan="1" rowspan="1">9</td>
+                <td align="left" colspan="1" rowspan="1">12</td>
+                <td align="left" colspan="1" rowspan="1">0.42</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Improvement</td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Worsening</td>
+                <td align="left" colspan="1" rowspan="1">5</td>
+                <td align="left" colspan="1" rowspan="1">2</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Previous autoimmune disease</td>
+                <td align="left" colspan="1" rowspan="1">In patient<xref ref-type="table-fn" rid="nt104">d</xref></td>
+                <td align="left" colspan="1" rowspan="1">3 (20%)</td>
+                <td align="left" colspan="1" rowspan="1">4 (27%)</td>
+                <td align="left" colspan="1" rowspan="1">1.00</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">In first degree relative<xref ref-type="table-fn" rid="nt105">e</xref></td>
+                <td align="left" colspan="1" rowspan="1">5 (33%)</td>
+                <td align="left" colspan="1" rowspan="1">7 (47%)</td>
+                <td align="left" colspan="1" rowspan="1">0.46</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt101">
+              <label>a</label>
+              <p>: p-values from student's t-test for continuous data, and from Chi-square tests (or Fisher's exact test) for categorical characteristics.</p>
+            </fn>
+            <fn id="nt102">
+              <label>b</label>
+              <p>: infectious mononucleosis or unspecific viral infection (6), gastroenteritis (4), respiratory infection (5), urinary infection (1).</p>
+            </fn>
+            <fn id="nt103">
+              <label>c</label>
+              <p>: patient's assessment of CFS clinical course the last year before inclusion.</p>
+            </fn>
+            <fn id="nt104">
+              <label>d</label>
+              <p>: thyroiditis (2), psoriasis (2), carpal tunnel syndrome (1), diabetes mellitus type I (1), celiac disease (1), juvenile arthritis (1).</p>
+            </fn>
+            <fn id="nt105">
+              <label>e</label>
+              <p>: Bechterew's disease, rheumatoid arthritis, psoriasis, Cushing's disease, diabetes mellitus type I, systemic lupus erythematosus, thyroiditis, celiac disease, ulcerative colitis, Sjogren's disease, glomerulonephritis.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <table-wrap id="pone-0026358-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0026358.t002</object-id><label>Table 2</label><caption>
+            <title>Baseline self-reported symptom scores, RNase L genotype, and XMRV status, for patients in the Rituximab and Placebo groups.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0026358-t002-2" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.t002" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Rituximab group</td>
+                <td align="left" colspan="1" rowspan="1">Placebo group</td>
+                <td align="left" colspan="1" rowspan="1">P-value<xref ref-type="table-fn" rid="nt106">a</xref></td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">n = 15</td>
+                <td align="left" colspan="1" rowspan="1">n = 15</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Fatigue score<xref ref-type="table-fn" rid="nt107">b</xref>, mean (range)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">8,1 (7,3–9,8)</td>
+                <td align="left" colspan="1" rowspan="1">7,9 (6,0–9,3)</td>
+                <td align="left" colspan="1" rowspan="1">0.51</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Cognitive score</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">7,7 (5,0–9,7)</td>
+                <td align="left" colspan="1" rowspan="1">7,2 (4,0–9,3)</td>
+                <td align="left" colspan="1" rowspan="1">0.31</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Pain score</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">6,5 (4,0–9,3)</td>
+                <td align="left" colspan="1" rowspan="1">6,2 (1,3–9,0)</td>
+                <td align="left" colspan="1" rowspan="1">0.62</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">“Other symptoms” score</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">7,8 (5,5–10,0)</td>
+                <td align="left" colspan="1" rowspan="1">7,9 (5,0–10,0)</td>
+                <td align="left" colspan="1" rowspan="1">0.62</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">“CFS overall” score</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">8,3 (7,0–10,0)</td>
+                <td align="left" colspan="1" rowspan="1">7,9 (6,0–10,0)</td>
+                <td align="left" colspan="1" rowspan="1">0.29</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Rnase L genotype<xref ref-type="table-fn" rid="nt108">c</xref></td>
+                <td align="left" colspan="1" rowspan="1">462 Q/Q</td>
+                <td align="left" colspan="1" rowspan="1">5</td>
+                <td align="left" colspan="1" rowspan="1">6</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">462 Q/R</td>
+                <td align="left" colspan="1" rowspan="1">10</td>
+                <td align="left" colspan="1" rowspan="1">7</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">462 R/R</td>
+                <td align="left" colspan="1" rowspan="1">0</td>
+                <td align="left" colspan="1" rowspan="1">2</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">XMRV status</td>
+                <td align="left" colspan="1" rowspan="1">PCR<xref ref-type="table-fn" rid="nt109">d</xref></td>
+                <td align="left" colspan="1" rowspan="1">0/15</td>
+                <td align="left" colspan="1" rowspan="1">0/15</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Coculture<xref ref-type="table-fn" rid="nt110">e</xref></td>
+                <td align="left" colspan="1" rowspan="1">0/4</td>
+                <td align="left" colspan="1" rowspan="1">0/5</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt106">
+              <label>a</label>
+              <p>: p-values from Student's t-test.</p>
+            </fn>
+            <fn id="nt107">
+              <label>b</label>
+              <p>: baseline self-reported symptom scores, generated as the mean (range) of relevant symptoms, as explained in <xref ref-type="sec" rid="s2">Materials and Methods</xref> (scale 1–10; 1: no symptom, 5: moderate symptom, 10: very severe symptom, see <xref ref-type="supplementary-material" rid="pone.0026358.s002">Figure S1</xref>).</p>
+            </fn>
+            <fn id="nt108">
+              <label>c</label>
+              <p>: using Taqman SNP Genotyping (Applied Biosystems, assay c_935391_1).</p>
+            </fn>
+            <fn id="nt109">
+              <label>d</label>
+              <p>: including four Taqman qPCR and four nested PCR setups (see <xref ref-type="supplementary-material" rid="pone.0026358.s006">Table S1</xref>).</p>
+            </fn>
+            <fn id="nt110">
+              <label>e</label>
+              <p>: performed for nine patients using freshly drawn blood samples. Coculture of patient PBMNC with LNCap prostate cancer cells, and subsequent PCR, as described in <xref ref-type="supplementary-material" rid="pone.0026358.s001">Text S1</xref>.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+      </sec>
+      <sec id="s2g">
+        <title>B-lymphocytes</title>
+        <p>Lymphocyte subpopulations, including CD19 positive B cells, were determined in EDTA anticoagulated blood samples before treatment, and during all follow-up visits (2, 3, 4, 6, 8, 10 and 12 months). Immunophenotyping of lymphocyte subpopulations was performed using the BD Multitest 6-color TBNK kit with BD Trucount Tubes for relative and absolute concentration determination (BD Biosciences). The samples were prepared according to the manufacturers instructions and immediately analysed on a BD Canto II flowcytometer (BD Biosciences). These data were not made available to the clinical researchers before the end of the study.</p>
+      </sec>
+      <sec id="s2h">
+        <title>Quantitative PCR and PCR for XMRV and MLV, RNase L genotyping</title>
+        <p>For details of DNA and RNA purification, cDNA synthesis, Quantitative PCR for XMRV detection, XMRV and MLV PCR, Viral amplification, and RNase L genotyping, see <xref ref-type="supplementary-material" rid="pone.0026358.s001">Text S1</xref> and <xref ref-type="supplementary-material" rid="pone.0026358.s006">Table S1</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Clinical responses</title>
+        <p>Overall response was recorded from the self-reported <italic>Fatigue scores</italic>, defined as lasting improvements for at least six consecutive weeks, independent on when the responses occurred during follow-up. A major response was detected in nine patients in the Rituximab group, and in one patient in the Placebo group (p = 0.002). One patient in the each group achieved a moderate response, giving an total ORR of 10 patients in the Rituximab group (67%, 95%CI 41%–85%) and two patients in the Placebo group (13%, 95%CI 4%–38%), p = 0.003 (<xref ref-type="table" rid="pone-0026358-t003">Table 3</xref>).</p>
+        <table-wrap id="pone-0026358-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0026358.t003</object-id><label>Table 3</label><caption>
+            <title>Clinical responses in the Rituximab and Placebo groups, and response durations for patients with significant responses, derived from self-reported <italic>Fatigue scores</italic> during 12 months follow-up.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0026358-t003-3" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.t003" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Rituximab group</td>
+                <td align="left" colspan="1" rowspan="1">Placebo group</td>
+                <td align="left" colspan="1" rowspan="1">p-value<xref ref-type="table-fn" rid="nt111">a</xref></td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">n = 15</td>
+                <td align="left" colspan="1" rowspan="1">n = 15</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Clinical responses<xref ref-type="table-fn" rid="nt112">b</xref></td>
+                <td align="left" colspan="1" rowspan="1">Major</td>
+                <td align="left" colspan="1" rowspan="1">9 (60%)</td>
+                <td align="left" colspan="1" rowspan="1">1 (7%)</td>
+                <td align="left" colspan="1" rowspan="1">0.002</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Moderate</td>
+                <td align="left" colspan="1" rowspan="1">1 (7%)</td>
+                <td align="left" colspan="1" rowspan="1">1 (7%)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Overall 95% CI</td>
+                <td align="left" colspan="1" rowspan="1">10 (67%) (41%–85%)</td>
+                <td align="left" colspan="1" rowspan="1">2 (13%) (4%–38%)</td>
+                <td align="left" colspan="1" rowspan="1">0.003</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Response duration<xref ref-type="table-fn" rid="nt113">c</xref> weeks, mean (range)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">25 (8–&gt;44) n = 10</td>
+                <td align="left" colspan="1" rowspan="1">41 (34–&gt;48) n = 2</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt111">
+              <label>a</label>
+              <p>: p-values from Chi-square statistics.</p>
+            </fn>
+            <fn id="nt112">
+              <label>b</label>
+              <p>: One patient was withdrawn from further follow-up registration 28 weeks after inclusion, due to pregnancy. One patient decided to withdraw from the study 42 weeks after inclusion, due to start of alternative therapy. Both patients were allocated to the placebo group and both reported no significant improvement during follow-up. These two were included in the analysis for overall response. Overall response including major and moderate responses, number of patients and proportion (%) with 95% confidence intervals.</p>
+            </fn>
+            <fn id="nt113">
+              <label>c</label>
+              <p>: response duration within the 12 months study period, for those achieving a significant response (10 patients in the Rituximab group, and two patients in the Placebo group). In addition, four out of the 10 Rituximab responders had response durations past the formal study period.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <p>The effect of intervention was assessed by studying the interaction effect between time and intervention group, from GLM for repeated measures of self-reported <italic>Fatigue score</italic>. There was a significant interaction time by intervention group in favour of the Rituximab group (p = 0.018), and an overall difference between groups (p = 0.045) (<xref ref-type="fig" rid="pone-0026358-g002">Figure 2</xref>, panels A and B, <xref ref-type="supplementary-material" rid="pone.0026358.s007">Table S2</xref>). Similarly, in GLM for repeated measures of physician-assessed <italic>Fatigue score</italic>, the interaction time by intervention group (p = 0.024) and the overall difference between groups (p = 0.021) were both significant in favour of the Rituximab group (<xref ref-type="fig" rid="pone-0026358-g002">Figure 2</xref>, panels C and D, <xref ref-type="supplementary-material" rid="pone.0026358.s007">Table S2</xref>).</p>
+        <fig id="pone-0026358-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026358.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Fatigue scores in Rituximab and Placebo groups, self-reported and physician-assessed.</title>
+            <p>In panel A, the self-reported <italic>Fatigue scores</italic> were calculated for each patient every second week, from the mean of the four symptoms: Fatigue, Post-exertional exhaustion, Need for rest, Daily functioning. Then the mean values in <italic>Fatigue scores</italic> for the time intervals during follow-up were plotted. In panel C, the physician-assessed <italic>Fatigue scores</italic> were calculated from the mean of the same four symptoms, registered by the physician at the visits in the outpatient clinic. In panel B and D, estimated marginal means for self-reported and physician-assessed <italic>Fatigue scores</italic> during follow-up are shown. The scales on Y-axes were 0–6 (0: Major worsening; 1: Moderate worsening; 2: Slight worsening; 3: No change; 4: Slight improvement; 5: Moderate improvement; 6: Major improvement). The differences in distribution of <italic>Fatigue scores</italic> during follow-up, between the Rituximab and Placebo groups, were assessed by General Linear Model (GLM) for repeated measures, analysing the effects of time, the interaction time by intervention group, and the overall difference between intervention groups. Below panels C and D, the estimates for differences in mean <italic>Fatigue scores</italic> between the Rituximab and Placebo groups at the specific time intervals during follow-up, with 95% CI and p-values from the GLM (tests of within-subjects contrasts) are presented. In addition, Holm-Bonferroni step-down adjusted p-values for these time intervals are shown (five comparisons).</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.g002" xlink:type="simple"/>
+        </fig>
+        <p>From the GLM tests of within-subjects contrasts for the interaction time by intervention group, with estimates for differences in <italic>Fatigue score</italic> between groups at the specific time intervals, there was no difference in self-reported <italic>Fatigue scores</italic> between the Rituximab and Placebo groups at the predetermined primary endpoint three months after intervention neither from self-reported nor from physician-assessed symptom scores (<xref ref-type="fig" rid="pone-0026358-g002">Figure 2</xref>, panels A–D). The differences in <italic>Fatigue scores</italic> between intervention groups were most evident between 6–10 months after intervention (<xref ref-type="fig" rid="pone-0026358-g002">Figure 2</xref>, panels A–D), i.e. corresponding to secondary endpoints of the study.</p>
+        <p>The response durations within 12 months follow-up are shown in <xref ref-type="table" rid="pone-0026358-t003">Table 3</xref>, with mean duration 25 weeks (range 8–44) for the 10 responders in the Rituximab group. Interestingly, four patients in the Rituximab group, and one patient in the Placebo group, had response durations beyond the study period of 12 months, i.e. still <italic>Fatigue score</italic> ≥4 at 12 months. At the time of submission of this manuscript, two patients in the Rituximab group, and one patient in the Placebo group, have lasting major responses for all CFS-related symptoms without signs of relapse, 32, 30, and 23 months after intervention, respectively.</p>
+        <p>The self-reported symptoms scores were plotted every second week for each patient. These data are shown for the 10 responders in the Rituximab group (<xref ref-type="fig" rid="pone-0026358-g003">Figure 3</xref>, panels A–J), and for the two patients with significant improvement in the Placebo group (<xref ref-type="supplementary-material" rid="pone.0026358.s005">Figure S4</xref>, panels A–B). These charts show that symptoms in all the four main categories tend to follow each other in time. Also included in these plots are the B-cell numbers during follow-up.</p>
+        <fig id="pone-0026358-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026358.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>CFS symptom changes during follow-up for patients in the Rituximab group with significant responses.</title>
+            <p>In panels A–J, changes in <italic>Fatigue score</italic> (black), <italic>Cognitive score</italic> (red), <italic>Pain score</italic> (green), <italic>“Other symptoms” score</italic> (orange), and <italic>“CFS overall” score</italic> (blue), during 12 months follow-up are shown for the 10 patients in the Rituximab group with significant improvement. The scales on Y-axes were 0–6 (0: Major worsening; 1: Moderate worsening; 2: Slight worsening; 3: No change; 4: Slight improvement; 5: Moderate improvement; 6: Major improvement). Also shown are the B-cell numbers from immunophenotyping of peripheral blood mononuclear cells during follow-up (×10<sup>6</sup>/L).</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.g003" xlink:type="simple"/>
+        </fig>
+        <p>The SF-36 short form, registering health related quality of life, was filled-in by the patients at baseline and every four weeks during follow-up. Two patients in the Rituximab group did not fill in baseline SF-36 form and were excluded from these analyses, one with a major response and one with no response during follow-up. The patients reported a low baseline “physical health summary score”, with a mean value of 24 in the Rituximab and 26 in the Placebo group (scale 0–100, lower value denotes worse symptoms), while the baseline “mental health summary score” was higher with a mean value of 46 in both groups (<xref ref-type="table" rid="pone-0026358-t004">Table 4</xref>). There were no differences in baseline levels for the different SF-36 subdimensions, except for “general health”, which was lower in the Rituximab group than in the Placebo group (<xref ref-type="table" rid="pone-0026358-t004">Table 4</xref>). During follow-up, the maximum changes in SF-36 scores (as compared to the baseline level) were significantly different in favour of the Rituximab group, for “physical health summary score” (p = 0.039), and the subdimensions “physical function” (p = 0.014) and “bodily pain” (p = 0.005), while there were trends for difference for “general health” (p = 0.081) and “social function” (p = 0.081). There were no differences in maximum changes (compared to baseline) during follow-up between the Rituximab and Placebo groups, for instance for the subdimensions “role emotional” (p = 0.44) or “mental health” (p = 0.81) (<xref ref-type="table" rid="pone-0026358-t004">Table 4</xref>).</p>
+        <table-wrap id="pone-0026358-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0026358.t004</object-id><label>Table 4</label><caption>
+            <title>SF-36 scores, baseline levels (0–100) and maximum changes (%) during follow-up, for patients in the Rituximab and Placebo groups.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0026358-t004-4" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.t004" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Rituximab group</td>
+                <td align="left" colspan="1" rowspan="1">Placebo group</td>
+                <td align="left" colspan="1" rowspan="1">p-value<xref ref-type="table-fn" rid="nt114">a</xref></td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">n = 13<xref ref-type="table-fn" rid="nt115">b</xref></td>
+                <td align="left" colspan="1" rowspan="1">n = 15</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Physical health summary score</td>
+                <td align="left" colspan="1" rowspan="1">baseline<xref ref-type="table-fn" rid="nt116">c</xref>, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">24 (5)</td>
+                <td align="left" colspan="1" rowspan="1">26 (6)</td>
+                <td align="left" colspan="1" rowspan="1">0.41</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">max change<xref ref-type="table-fn" rid="nt117">d</xref>, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">54% (46)</td>
+                <td align="left" colspan="1" rowspan="1">26% (17)</td>
+                <td align="left" colspan="1" rowspan="1">0.039</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Mental health summary score</td>
+                <td align="left" colspan="1" rowspan="1">baseline, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">46 (11)</td>
+                <td align="left" colspan="1" rowspan="1">46 (8)</td>
+                <td align="left" colspan="1" rowspan="1">0.99</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">max change, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">9% (54)</td>
+                <td align="left" colspan="1" rowspan="1">5% (32)</td>
+                <td align="left" colspan="1" rowspan="1">0.84</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Physical function</td>
+                <td align="left" colspan="1" rowspan="1">baseline, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">34 (6)</td>
+                <td align="left" colspan="1" rowspan="1">35 (7)</td>
+                <td align="left" colspan="1" rowspan="1">0.71</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">max change, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">39% (33)</td>
+                <td align="left" colspan="1" rowspan="1">11% (22)</td>
+                <td align="left" colspan="1" rowspan="1">0.014</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Role physical</td>
+                <td align="left" colspan="1" rowspan="1">baseline, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">28 (8)</td>
+                <td align="left" colspan="1" rowspan="1">28 (2)</td>
+                <td align="left" colspan="1" rowspan="1">0.92</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">max change, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">27% (35)</td>
+                <td align="left" colspan="1" rowspan="1">20% (35)</td>
+                <td align="left" colspan="1" rowspan="1">0.64</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Bodily pain</td>
+                <td align="left" colspan="1" rowspan="1">baseline, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">32 (8)</td>
+                <td align="left" colspan="1" rowspan="1">34 (9)</td>
+                <td align="left" colspan="1" rowspan="1">0.62</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">max change, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">40% (31)</td>
+                <td align="left" colspan="1" rowspan="1">8% (24)</td>
+                <td align="left" colspan="1" rowspan="1">0.005</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">General health</td>
+                <td align="left" colspan="1" rowspan="1">baseline, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">27 (5)</td>
+                <td align="left" colspan="1" rowspan="1">33 (6)</td>
+                <td align="left" colspan="1" rowspan="1">0.007</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">max change, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">36% (51)</td>
+                <td align="left" colspan="1" rowspan="1">9% (23)</td>
+                <td align="left" colspan="1" rowspan="1">0.081</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Vitality</td>
+                <td align="left" colspan="1" rowspan="1">baseline, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">35 (8)</td>
+                <td align="left" colspan="1" rowspan="1">31 (5)</td>
+                <td align="left" colspan="1" rowspan="1">0.15</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">max change, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">24% (50)</td>
+                <td align="left" colspan="1" rowspan="1">31% (30)</td>
+                <td align="left" colspan="1" rowspan="1">0.66</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Social function</td>
+                <td align="left" colspan="1" rowspan="1">baseline, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">21 (9)</td>
+                <td align="left" colspan="1" rowspan="1">21 (8)</td>
+                <td align="left" colspan="1" rowspan="1">0.92</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">max change, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">98% (110)</td>
+                <td align="left" colspan="1" rowspan="1">38% (62)</td>
+                <td align="left" colspan="1" rowspan="1">0.081</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Role emotional</td>
+                <td align="left" colspan="1" rowspan="1">baseline, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">50 (12)</td>
+                <td align="left" colspan="1" rowspan="1">51 (11)</td>
+                <td align="left" colspan="1" rowspan="1">0.74</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">max change, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">10% (53)</td>
+                <td align="left" colspan="1" rowspan="1">−4% (42)</td>
+                <td align="left" colspan="1" rowspan="1">0.44</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Mental health</td>
+                <td align="left" colspan="1" rowspan="1">baseline, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">49 (9)</td>
+                <td align="left" colspan="1" rowspan="1">50 (7)</td>
+                <td align="left" colspan="1" rowspan="1">0.69</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">max change, mean (SD)</td>
+                <td align="left" colspan="1" rowspan="1">6% (36)</td>
+                <td align="left" colspan="1" rowspan="1">3% (22)</td>
+                <td align="left" colspan="1" rowspan="1">0.81</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt114">
+              <label>a</label>
+              <p>: p-values from Student's t-test for independent samples.</p>
+            </fn>
+            <fn id="nt115">
+              <label>b</label>
+              <p>: two patients in the Rituximab group did not fill in baseline SF-36 form, one with major response and one non-responder.</p>
+            </fn>
+            <fn id="nt116">
+              <label>c</label>
+              <p>: range for baseline SF-36 scores is 0–100 (lower score denotes increasing symptoms).</p>
+            </fn>
+            <fn id="nt117">
+              <label>d</label>
+              <p>: maximum change (%) in SF-36 scores during follow-up, as compared to baseline. The patients filled in SF-36 forms at baseline and then every month until 10 months after intervention. Five out of 143 forms were missing (not filled in) in the Rituximab group (excluding the two patients with no baseline scheme), and nine out of 161 forms were missing in the Placebo group (one patient withdrawn after 28 weeks due to pregnancy).</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <p>In spite of written and verbal information to avoid pregnancy, one patient was pregnant after 28 weeks follow-up. The randomisation code for this patient was then revealed. She was allocated to the placebo group and was withdrawn from further follow-up registration after 28 weeks. One patient decided to withdraw from the study after 42 weeks follow-up to start alternative therapy. This patient proved also to be allocated to the placebo group.</p>
+      </sec>
+      <sec id="s3b">
+        <title>Adverse effects</title>
+        <p>Infusion-related complaints and side-effects during 12 months follow-up are listed in <xref ref-type="table" rid="pone-0026358-t005">Table 5</xref>. There were no serious adverse events or major toxicity. The complaints during infusion or the following day were mild and also reported by the placebo patients (five in the Rituximab group and four in the Placebo group). Two patients in each group reported slight worsening of CFS the first two months after intervention (<xref ref-type="table" rid="pone-0026358-t005">Table 5</xref>). Two patients in the Rituximab group reported feeling uneasy and sleepless from 2–7 and 6–8 months, respectively, synchronous with a clear clinical response. Two patients in the Rituximab group with pre-existing psoriasis experienced moderate psoriasis worsening from two months after intervention, in both preceding a clinical response of CFS. One patient in the Rituximab group had a five years history of major CFS symptoms, and reported some lower back pain and episodes of balanitis from 5–7 months, synchronous with improvement of his CFS-related muscle pain and headache and with improving fatigue and cognitive function. His low back pain disappeared, and after the 12 month study period his CFS symptoms have resolved further and he is at present back in full-time work 30 months after intervention.</p>
+        <table-wrap id="pone-0026358-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0026358.t005</object-id><label>Table 5</label><caption>
+            <title>Infusion-related complaints during or the first 24 hours after infusion, and side-effects during 12 months follow-up, in the Rituximab and Placebo groups.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0026358-t005-5" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.t005" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Rituximab group</td>
+                <td align="left" colspan="1" rowspan="1">Placebo group</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">n = 15</td>
+                <td align="left" colspan="1" rowspan="1">n = 15</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Infusion-related complaints</td>
+                <td align="left" colspan="1" rowspan="1">Palpitations</td>
+                <td align="left" colspan="1" rowspan="1">1 (7%)</td>
+                <td align="left" colspan="1" rowspan="1">1 (7%)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Slight itching</td>
+                <td align="left" colspan="1" rowspan="1">2 (13%)</td>
+                <td align="left" colspan="1" rowspan="1">0</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Nausea</td>
+                <td align="left" colspan="1" rowspan="1">0</td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Discomfort</td>
+                <td align="left" colspan="1" rowspan="1">2 (13%)</td>
+                <td align="left" colspan="1" rowspan="1">2 (13%)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Slight CFS worsening the first two months</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">2 (13%)</td>
+                <td align="left" colspan="1" rowspan="1">2 (13%)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Irregular menstrual bleeding the first two months</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">1 (7%)</td>
+                <td align="left" colspan="1" rowspan="1">0</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Feeling uneasy and sleepless</td>
+                <td align="left" colspan="1" rowspan="1">6–8 months</td>
+                <td align="left" colspan="1" rowspan="1">1 (7%)</td>
+                <td align="left" colspan="1" rowspan="1">0</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">2–7 months</td>
+                <td align="left" colspan="1" rowspan="1">1 (7%)</td>
+                <td align="left" colspan="1" rowspan="1">0</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Slight facial acne</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">1 (7%)</td>
+                <td align="left" colspan="1" rowspan="1">0</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Psoriasis worsening</td>
+                <td align="left" colspan="1" rowspan="1">2–12 months</td>
+                <td align="left" colspan="1" rowspan="1">2 (13%)</td>
+                <td align="left" colspan="1" rowspan="1">0</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Low back pain and balanitis</td>
+                <td align="left" colspan="1" rowspan="1">5–7 months</td>
+                <td align="left" colspan="1" rowspan="1">1 (7%)</td>
+                <td align="left" colspan="1" rowspan="1">0</td>
+              </tr>
+            </tbody>
+          </table></alternatives></table-wrap>
+        <p>There were some uncomplicated upper airways infections and lower urinary tract infections during follow-up, evenly distributed between the two groups. There were two hospitalisations during the study period within 12 months follow-up, one in the Rituximab group due to abdominal pain where a laparoscopy showed a corpus luteum cyst interpreted as a normal finding, and one in the Placebo group due to a myocardial infarction.</p>
+      </sec>
+      <sec id="s3c">
+        <title>XMRV</title>
+        <p>In this study, XMRV could not be detected in any of the 30 patients, using four Taqman quantitative PCR setups, and four nested PCR approaches (<xref ref-type="supplementary-material" rid="pone.0026358.s001">Text S1</xref> and <xref ref-type="supplementary-material" rid="pone.0026358.s006">Table S1</xref>), and using both genomic DNA and cDNA from baseline blood samples as templates. When performing coculture of patient lymphocytes with LNCaP prostate cancer cells for biological amplification prior to PCR, XMRV was not detected in any sample. The positive control was readily amplified in all setups, and both sensitivity and specificity of the Taqman assays proved to be high, detecting 5–15 viral copies per vial with dilution series of the plasmid spiked in normal genomic DNA background (data not shown). For details on analyses, see Supporting information.</p>
+      </sec>
+      <sec id="s3d">
+        <title>RNase L</title>
+        <p>Results from genotyping of the RNase L Q462R variant are shown in <xref ref-type="table" rid="pone-0026358-t002">Table 2</xref>. Two patients in the Placebo group had the 462 R/R genotype. The distribution of the Q/Q, Q/R, and R/R alleles was close to that expected in the general population.</p>
+      </sec>
+      <sec id="s3e">
+        <title>B-lymphocytes</title>
+        <p>Results from immunophenotyping with B-cell counts, for patients in the Rituximab group (responders and non-responders) and the Placebo group, from baseline and at all visits at 1, 2, 3, 4, 6, 8, 10, and 12 months, are shown in <xref ref-type="fig" rid="pone-0026358-g004">Figure 4</xref>. At baseline, three out of 30 patients had a B-cell count below the normal range (110–449×10<sup>6</sup>/L). All patients in the Rituximab group were B-cell depleted at one month after the intervention, except for one patient in which B-cells were not adequately depleted until four months after intervention (<xref ref-type="fig" rid="pone-0026358-g004">Figure 4</xref>). During follow-up, there were no differences in B-cell levels between patients in the Rituximab group achieving a response (n = 10), and those with no significant response (n = 5) (<xref ref-type="fig" rid="pone-0026358-g004">Figure 4</xref>). Many patients treated with Rituximab were not completely B-cell depleted, with values in the range 0–4 (×10<sup>6</sup>/L) (<xref ref-type="fig" rid="pone-0026358-g004">Figure 4</xref>). After two infusions of Rituximab two weeks apart, the B-cell levels started to increase from 4–8 months after intervention, and four out of 15 patients had regained B-cell counts in the normal range at the end of follow-up at 12 months. We also performed Taqman qPCR for the B-cell specific CD19 molecule, normalised according to β-actin mRNA, at baseline and during follow-up at 4, 6 and 8 months. These data confirmed the B-cell depletion in Rituximab-treated patients but could not separate the Rituximab responders and non-responders (data not shown).</p>
+        <fig id="pone-0026358-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0026358.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>B-lymphocytes during follow-up.</title>
+            <p>B-cell numbers from immunophenotyping of peripheral blood during follow-up are shown, for patients in the Placebo group (black, n = 15), patients in the Rituximab group with significant response (red, n = 10), and patients in the Rituximab group with no response (blue, n = 5). The B-cell value zero was substituted by 0.1 (to be able to plot on the log scale). B-lymphocyte counts ×10<sup>6</sup>/L (normal range 110–449). The error bars denote mean ± SEM.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.g004" xlink:type="simple"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>In this double-blind and placebo-controlled study, treatment with Rituximab (two infusions two weeks apart) was associated with a significant overall clinical response during 12 months follow-up, as compared to placebo using saline. The ORRs were 67% in the Rituximab group and 13% in the Placebo group.</p>
+      <p>From GLM for repeated measures, there were significant interactions between time and intervention group in favour of the Rituximab group both for self-reported and physician-assessed <italic>Fatigue scores</italic>. The differences were most evident corresponding to secondary endpoints between 6 and 10 months after intervention. However, at the predetermined primary endpoint, defined as effect on CFS symptoms (<italic>Fatigue score</italic>) at three months after intervention, there was no difference between the groups.</p>
+      <p>The change in <italic>Fatigue scores</italic> was chosen as the main criterion for clinical response because this is a key symptom defining the CFS disease. However, with few exceptions, the different symptoms scores (<italic>Fatigue, Cognitive, Pain, “Other symptoms”, “CFS overall”</italic>) followed each other during responses and relapses, indicating that a central mechanism for the symptom maintenance is influenced by the B-cell depletion treatment.</p>
+      <p>For the 10 Rituximab responders, the response durations varied from 8–44 weeks (within the 12 month study period). These responses were considered to have a significant impact on symptom improvement and quality of life by the patients, by their families, and by the treating physicians. Importantly, four patients in the Rituximab group and one in the Placebo group had response durations beyond 12 months. When submitting this manuscript, two patients in the Rituximab group and one in the Placebo group have lasting major responses with no signs of relapse and are back in full-time work. Two of these patients (one in each group) had the shortest disease durations, 1.0 and 0.7 years, respectively, and in both CFS was preceded by Epstein-Barr infection. These two lasting responses may be examples of spontaneous recovery <xref ref-type="bibr" rid="pone.0026358-Naess1">[7]</xref>. The third “long-time responder” with no later relapse had a 5-year history with major CFS symptoms before entering the study.</p>
+      <p>This study with the primary endpoint at three months after intervention was designed when we had very limited experience with B-cell depletion in CFS, having observed only two pilot patients, both with an early response pattern. In the pilot case series <xref ref-type="bibr" rid="pone.0026358-Fluge1">[4]</xref> the third patient had major response occurring from 5 ½ until 9 months after intervention, and with an almost identical response and relapse pattern after her second Rituximab treatment. In the present study, only one out of 10 responders in the Rituximab group had an “early” response pattern with the major response starting from 2 months, while the remaining nine responded later, starting to improve from between 3–7 months after treatment.</p>
+      <p>The SF-36 short form analyses before intervention confirmed a low quality of life particularly for the dimensions related to physical health, while the subdimensions “mental health” and “role emotional” showed higher baseline values. In support for the overall clinical response data, SF-36 analyses during follow-up demonstrated significant differences in favour of the Rituximab group in maximum changes compared to baseline level, for several subdimensions related to physical health, such as “physical health summary score”, “physical function” and “bodily pain”. There were no significant differences between the groups in maximum changes for in the subdimensions “mental health” or “role emotional”. These results support the assumption that CFS is not primarily a mental health disease.</p>
+      <p>The lack of specific markers of disease and the fact that the CFS diagnosis is controversial imply that the level of diagnostic accuracy and adherence to international criteria are likely to be variable. In this study, patients have been recruited from a tertiary referral centre and were re-evaluated by the researchers, using the Fukuda criteria for inclusion. Retrospectively, we checked the 30 patients according to the Clinical Working Case Definition (“Canadian criteria”) <xref ref-type="bibr" rid="pone.0026358-Carruthers1">[8]</xref>. Two patients in the placebo group did not fulfil these criteria, and it could therefore be argued that they might not have CFS. One of these had almost no pain, and one had only slight cognitive symptoms and also reported marked mood disturbances. The latter patient reported major improvement after intervention with saline and was recorded as one of the two responders in the Placebo group. Generally, the patients reported a high level of disease-related symptoms prior to entering the study, with major impact on daily life and ability to participate in family and social activities. Most of the patients had a long CFS disease duration, also with a stable or worsening clinical course the last year before study entry.</p>
+      <p>A limitation of this study is the lack of predetermined exact definitions of clinical response with respect to duration and extent of improvement. Limited experience with the clinical course of CFS after B-cell depletion when designing the protocol, with erroneous estimation of time frame for the clinical responses, is a main reason why the primary end-point is negative. Therefore, even though this is a randomised, double-blind and placebo-controlled study, there are also exploratory elements with respect to response characterization.</p>
+      <p>Even when interpreting the results with caution, there are obvious differences between the two groups in favour of the Rituximab group, from the significant interactions time by intervention group and also from difference in ORR. Thus, we have shown that in a subset of CFS patients, Rituximab treatment with subsequent B-cell depletion results in major responses of CFS related symptoms, with responses starting to occur between 2 and 7 months after intervention, and with response durations of 2–15 months and in addition two patients with no relapse. Five patients in the Rituximab group did not achieve a significant response during follow-up. Whether their CFS pathogeneses are unrelated to B-lymphocytes, or whether they could achieve a clinical response through prolonged B-cell depletion with Rituximab maintenance therapy is at present unknown.</p>
+      <p>The associations between B-cell depletion and clinical responses, and the time frames for clinical responses delayed 2–7 months after the initial and rapid B-cell depletion, indicate that CFS may be an autoimmune disease, often preceded by an infection, and targeting specific parts of the nervous system. We speculate that the responses occurring late after intervention could be explained by the elimination of disease-associated autoantibodies, while the early response pattern could be related to interaction of B-cells with T-cells in antigen presentation, as suggested in systemic lupus erythematosus <xref ref-type="bibr" rid="pone.0026358-Sanz1">[9]</xref>. Work is in progress in our laboratory to elucidate the localization and nature of a putative target for an autoimmune process.</p>
+      <p>The high rate of CFS in women compared to men is a suggestion of an underlying autoimmune process. On-going autoimmune phenomena in CFS have been discussed <xref ref-type="bibr" rid="pone.0026358-OrtegaHernandez1">[10]</xref> perhaps triggered by infections through molecular mimicry, through structural similarity between a pathogen component and self-structures <xref ref-type="bibr" rid="pone.0026358-Blank1">[11]</xref>. Several autoantibodies have been reported in CFS, but their pathogenic roles have not been established, for a review see <xref ref-type="bibr" rid="pone.0026358-OrtegaHernandez1">[10]</xref>. In the present study, 23% of the patients had a previous known autoimmune disease, and 40% had first-degree relatives with an autoimmune disease. However, there were low frequencies of positive known common autoantibodies, none had elevated anti-nuclear antibodies, and two had elevated anti-thyroid peroxidase antibodies (data not shown). A possible or established clinical infection before CFS onset was identified in 21 out of 30 patients included (70%).</p>
+      <p>A recent study of cytokine patterns in CFS showed attenuated Th1 and Th17 immune responses, while there was high Th2 marker expression <xref ref-type="bibr" rid="pone.0026358-Broderick1">[12]</xref>. A Th2 profile with increase in the numbers of CD4+ and CD8+ T cells secreting IL-4 following polyclonal stimulation, including in resting cells, was demonstrated in CFS patients <xref ref-type="bibr" rid="pone.0026358-Skowera1">[13]</xref>.</p>
+      <p>There are limited data on the role of B-lymphocytes in CFS. One study of gene expression in peripheral blood mononuclear cells indicated that B cells might be altered in CFS <xref ref-type="bibr" rid="pone.0026358-Aspler1">[14]</xref>. Our pilot case series <xref ref-type="bibr" rid="pone.0026358-Fluge1">[4]</xref> suggested that B-cell depletion was associated with clinical improvement in CFS patients. B-cell targeting therapy has been increasingly used for diverse autoimmune diseases in later years <xref ref-type="bibr" rid="pone.0026358-Townsend1">[15]</xref>. The monoclonal anti-CD20 antibody Rituximab has been the major B-cell depleting agent so far. The B-cells have multiple immune functions, the main ones being antibody production, antigen presentation and regulation of the function and activity of other immune cells, i.e. T-regulatory cells, NK cells and macrophages <xref ref-type="bibr" rid="pone.0026358-Kessel1">[16]</xref>. Thus, the total effects of B-cell depletion on the immune system are likely to be complex and time-dependent.</p>
+      <p>In Stiff Person Syndrome, which is a rare autoimmune disease in the central nervous system with autoantibodies targeting glutamic acid decarboxylase (GAD65), the humoral autoimmune response was shown to consist of a Rituximab-sensitive part rapidly cleared after treatment, and a Rituximab-resistant part from long-lived and persistent plasma cells acting as a reservoir for secretion of autoantibodies. This may be one mechanism for lack of effect from B-cell depletion therapy <xref ref-type="bibr" rid="pone.0026358-Rizzi1">[17]</xref>.</p>
+      <p>An alternative explanation for the observed clinical improvement from B-cell depletion could be elimination or reduction of B-lymphotrophic viruses such as cytomegalovirus (CMV) or Epstein-Barr virus (EBV). A recent study <xref ref-type="bibr" rid="pone.0026358-Lerner1">[18]</xref> showed clinical benefit from long-term valacyclovir or valgancicliovir treatment in a subset of CFS patients with evidence of active on-going herpes virus infections, also shown in a previous small study of 12 patients with elevated antibodies to EBV or human herpes virus 6 (HHV-6) <xref ref-type="bibr" rid="pone.0026358-Kogelnik1">[19]</xref>. We find the delayed clinical responses after B-cell depletion, that we observed in the majority of responders, difficult to explain from a viral elimination mechanism. In our opinion, this response pattern is more compatible with the gradual elimination of an autoantibody, perhaps by preferential elimination of short-lived pre-plasma cells. Although poorly understood, immune system alterations seen in stress-related diseases such as post-traumatic stress disorder could also be relevant for the effects of B-cell depletion seen in CFS <xref ref-type="bibr" rid="pone.0026358-Pace1">[20]</xref>.</p>
+      <p>In this study there were no serious adverse events. Two hospitalisations (one in each group) during follow-up were not perceived to be caused by the intervention. There were no serious infections. Two patients in the Rituximab group (both responders) had a slight to moderate worsening of pre-existing psoriasis, which could be a direct side-effect from the intervention. Two patients in the Rituximab group (also responders) felt uneasy and sleepless while improving in CFS symptoms. These symptoms are not usual side effects from treatment of B-cell lymphomas and may be related to the effects of B-cell depletion on the underlying CFS disease rather than direct side-effects from Rituximab. The infusion-related complaints were generally mild and reported both from the Rituximab and Placebo groups. Interestingly, no side-effects during follow-up were reported from the five non-responders in the Rituximab group.</p>
+      <p>Current use of Rituximab in autoimmune diseases has been discussed <xref ref-type="bibr" rid="pone.0026358-Gurcan1">[21]</xref>, and a recent review on the safety in rheumatoid arthritis concluded that Rituximab is well tolerated with no increasing rate of serious infections <xref ref-type="bibr" rid="pone.0026358-Covelli1">[22]</xref>. Even if serious side-effects including reactivation of viral infections such as hepatitis B are very rare, they may appear <xref ref-type="bibr" rid="pone.0026358-Cooper1">[23]</xref>. A study reviewing progressive multifocal leukoencephalopathy (PML) cases in patients treated with Rituximab, from available databases including the Food and Drug Administration, the manufacturer, physicians, and including a literature review from 1997–2008, identified 52 patients with lymphoproliferative disorders and five patients with autoimmune diseases <xref ref-type="bibr" rid="pone.0026358-Carson1">[24]</xref>. All had received either chemotherapy or other immunosuppressive treatment in addition to Rituximab, and to our knowledge PML has not been reported in patients receiving Rituximab monotherapy. The absolute risk of PML is difficult to estimate, but is very low.</p>
+      <p>Although B-cell depletion has a major impact on the immune system, it can be argued that the persistent and often devastating symptoms of CFS and the very low quality of life in many sufferers justify the use of Rituximab in carefully evaluated CFS patients.</p>
+      <p>There has been an intense focus on XMRV as a possible causal gammaretroviral infection in CFS patients since the first report in October 2009 <xref ref-type="bibr" rid="pone.0026358-Lombardi1">[25]</xref>. One later study demonstrated presence of closely related MLV in CFS patients <xref ref-type="bibr" rid="pone.0026358-Lo1">[26]</xref>. However, several other studies have not been able to reproduce these findings and reported no evidence for XMRV infection in CFS, as examples <xref ref-type="bibr" rid="pone.0026358-Satterfield1">[27]</xref>–<xref ref-type="bibr" rid="pone.0026358-Knox1">[30]</xref>. We have not been able to demonstrate XMRV or MLV infection in any of the 30 patients included in this study, despite multiple different approaches including four different highly sensitive Taqman qPCR and four nested PCR approaches, and using both genomic DNA and cDNA as templates. We also performed coculture of patient peripheral blood mononuclear cells with LNCaP prostate cancer cells for biological virus amplification prior to PCR, also with no XMRV positive cases.</p>
+      <p>In conclusion, we have shown that B-lymphocyte depletion with the monoclonal anti-CD20 antibody Rituximab, two infusions two weeks apart, is associated with significant, though generally transient clinical responses, with CFS symptom improvement in two thirds of the included patients. No major toxicity was observed in 12 months follow-up. Even though this study is small, it is a randomised, double-blind, and placebo-controlled study showing significant differences in favour of the Rituximab group, and with general improvement of all CFS symptoms. Thus, we believe that B-cell depletion targets a central player in the pathogenesis of the CFS disease, directly or indirectly. Whether this mechanism applies to specific subsets of CFS patients or the group as a whole is a subject for further research. While this study can be interpreted as preliminary, being the first to describe the treatment principle in CFS except for our pilot case series <xref ref-type="bibr" rid="pone.0026358-Fluge1">[4]</xref>, we believe the results are best compatible with an autoimmune disease mechanism and that the presented findings may have a major impact on the direction of biomedical research in CFS. Based on new pilot patient experiences, we have now started two new open-label phase-II studies investigating Rituximab treatment with two infusions two weeks apart (as in the present study) followed by maintenance Rituximab infusions at 3, 6, 10 and 15 months, to further explore this treatment principle in CFS (ClinicalTrials.gov, NCT01156909 and NCT01156922). The present study may be interpreted as a “proof of principle”. The next studies will indicate to what extent the patients actually over time may recover through B-cell depletion treatment.</p>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0026358.s001" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.s001" xlink:type="simple">
+        <label>Text S1</label>
+        <caption>
+          <p><bold>Materials and Methods</bold><bold> (DNA and RNA purification, and cDNA synthesis.</bold> Quantitative PCR for XMRV detection. XMRV and MLV PCR. Viral amplification. RNase L Genotyping).</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0026358.s002" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.s002" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>Scheme for patient's self-reported baseline CFS symptoms.</bold> Before intervention, the patients assessed their CFS disease and recorded their symptoms the last three months according to a visual analogue, scale 1–10 (1: no symptom; 5: moderate symptom; 10: very severe symptom).</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0026358.s003" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.s003" xlink:type="simple">
+        <label>Figure S2</label>
+        <caption>
+          <p><bold>Scheme for patient's self-reported CFS symptom change during follow-up.</bold> During 12 months follow-up, the patients recorded symptom changes the preceding two weeks, as compared to baseline. The visual analogue scale for the follow-up scheme was 0–6 (0: Major worsening; 1: Moderate worsening; 2: Slight worsening; 3: No change; 4: Slight improvement; 5: Moderate improvement; 6: Major improvement).</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0026358.s004" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.s004" xlink:type="simple">
+        <label>Figure S3</label>
+        <caption>
+          <p><bold>Scheme for physician-assessed CFS symptoms, at baseline and during follow-up.</bold> The patients were assessed at the outpatient clinic before intervention, and at 2, 3, 4, 6, 8, 10, and 12 months follow-up. The physicians assessed the patients CFS disease and recorded the symptoms according to visual analogue scales. Before intervention, the scale was 1–10 (1: no symptom; 5: moderate symptom; 10: very severe symptom). During 12 months follow-up, the physicians assessed patients symptom changes as compared to baseline, scale 0–6 (0: Major worsening; 1: Moderate worsening; 2: Slight worsening; 3: No change; 4: Slight improvement; 5: Moderate improvement; 6: Major improvement).</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0026358.s005" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.s005" xlink:type="simple">
+        <label>Figure S4</label>
+        <caption>
+          <p><bold>CFS symptom changes during follow-up, for the two patients in the Placebo group with significant improvement.</bold> In panels A and B, changes in <italic>Fatigue score</italic> (black), <italic>Cognitive score</italic> (red), <italic>Pain score</italic> (green), <italic>“Other symptoms” score</italic> (orange), and <italic>“CFS overall” score</italic> (blue), during 12 months follow-up are shown for the two patients in the Placebo group with significant improvement. The scales on Y-axes were 0–6 (0: Major worsening; 1: Moderate worsening; 2: Slight worsening; 3: No change; 4: Slight improvement; 5: Moderate improvement; 6: Major improvement). Also shown are the B-cell numbers from immunophenotyping of peripheral blood mononuclear cells during follow-up (×10<sup>6</sup>/L).</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0026358.s006" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.s006" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Primers and probes for detection of Xenotropic murine leukemia virus-related virus (XMRV) and MLV-related virus.</bold>
+          </p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0026358.s007" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.s007" xlink:type="simple">
+        <label>Table S2</label>
+        <caption>
+          <p>
+            <bold>Effects of intervention group (Rituximab versus Placebo) on </bold>
+            <bold>
+              <italic>Fatigue score</italic>
+            </bold>
+            <bold> during 12 months follow-up, using General Linear Model for repeated measures, with separate analyses for self-reported and physician-assessed symptoms.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0026358.s008" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.s008" xlink:type="simple">
+        <label>Protocol S1</label>
+        <caption>
+          <p>
+            <bold>Trial Protocol.</bold>
+          </p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0026358.s009" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pone.0026358.s009" xlink:type="simple">
+        <label>Checklist S1</label>
+        <caption>
+          <p>
+            <bold>CONSORT Checklist.</bold>
+          </p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The authors thank nurse Helle Øvrebø, the staff at the Lymphoma section, and at the outpatient clinic, Department of Oncology, Haukeland University Hospital. We are grateful to the patients who volunteered for the study.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0026358-Devanur1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Devanur</surname><given-names>LD</given-names></name><name name-style="western"><surname>Kerr</surname><given-names>JR</given-names></name></person-group>             <year>2006</year>             <article-title>Chronic fatigue syndrome.</article-title>             <source>J Clin Virol</source>             <volume>37</volume>             <fpage>139</fpage>             <lpage>150</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Capelli1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Capelli</surname><given-names>E</given-names></name><name name-style="western"><surname>Zola</surname><given-names>R</given-names></name><name name-style="western"><surname>Lorusso</surname><given-names>L</given-names></name><name name-style="western"><surname>Venturini</surname><given-names>L</given-names></name><name name-style="western"><surname>Sardi</surname><given-names>F</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Chronic fatigue syndrome/myalgic encephalomyelitis: an update.</article-title>             <source>Int J Immunopathol Pharmacol</source>             <volume>23</volume>             <fpage>981</fpage>             <lpage>989</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Nacul1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Nacul</surname><given-names>LC</given-names></name><name name-style="western"><surname>Lacerda</surname><given-names>EM</given-names></name><name name-style="western"><surname>Pheby</surname><given-names>D</given-names></name><name name-style="western"><surname>Campion</surname><given-names>P</given-names></name><name name-style="western"><surname>Molokhia</surname><given-names>M</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Prevalence of myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) in three regions of England: a repeated cross-sectional study in primary care.</article-title>             <source>BMC Med</source>             <volume>9</volume>             <fpage>91</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Fluge1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Fluge</surname><given-names>O</given-names></name><name name-style="western"><surname>Mella</surname><given-names>O</given-names></name></person-group>             <year>2009</year>             <article-title>Clinical impact of B-cell depletion with the anti-CD20 antibody rituximab in chronic fatigue syndrome: a preliminary case series.</article-title>             <source>BMC Neurol</source>             <volume>9</volume>             <fpage>28</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Fukuda1">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Fukuda</surname><given-names>K</given-names></name><name name-style="western"><surname>Straus</surname><given-names>SE</given-names></name><name name-style="western"><surname>Hickie</surname><given-names>I</given-names></name><name name-style="western"><surname>Sharpe</surname><given-names>MC</given-names></name><name name-style="western"><surname>Dobbins</surname><given-names>JG</given-names></name><etal/></person-group>             <year>1994</year>             <article-title>The chronic fatigue syndrome: a comprehensive approach to its definition and study. International Chronic Fatigue Syndrome Study Group.</article-title>             <source>Ann Intern Med</source>             <volume>121</volume>             <fpage>953</fpage>             <lpage>959</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Blacker1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Blacker</surname><given-names>CV</given-names></name><name name-style="western"><surname>Greenwood</surname><given-names>DT</given-names></name><name name-style="western"><surname>Wesnes</surname><given-names>KA</given-names></name><name name-style="western"><surname>Wilson</surname><given-names>R</given-names></name><name name-style="western"><surname>Woodward</surname><given-names>C</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>Effect of galantamine hydrobromide in chronic fatigue syndrome: a randomized controlled trial.</article-title>             <source>Jama</source>             <volume>292</volume>             <fpage>1195</fpage>             <lpage>1204</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Naess1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Naess</surname><given-names>H</given-names></name><name name-style="western"><surname>Sundal</surname><given-names>E</given-names></name><name name-style="western"><surname>Myhr</surname><given-names>KM</given-names></name><name name-style="western"><surname>Nyland</surname><given-names>HI</given-names></name></person-group>             <year>2010</year>             <article-title>Postinfectious and chronic fatigue syndromes: clinical experience from a tertiary-referral centre in Norway.</article-title>             <source>In Vivo</source>             <volume>24</volume>             <fpage>185</fpage>             <lpage>188</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Carruthers1">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Carruthers</surname><given-names>BM</given-names></name><name name-style="western"><surname>Jain</surname><given-names>AK</given-names></name><name name-style="western"><surname>De Meirleir</surname><given-names>KL</given-names></name><name name-style="western"><surname>Peterson</surname><given-names>DL</given-names></name><name name-style="western"><surname>Klimas</surname><given-names>NG</given-names></name><etal/></person-group>             <year>2003</year>             <article-title>Myalgic encephalomyelitis/chronic fatigue syndrome: clinical working case definition, diagnostic and treatment protocols.</article-title>             <source>J Chronic Fatigue Syndr</source>             <volume>11</volume>             <fpage>7</fpage>             <lpage>36</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Sanz1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sanz</surname><given-names>I</given-names></name><name name-style="western"><surname>Lee</surname><given-names>FE</given-names></name></person-group>             <year>2010</year>             <article-title>B cells as therapeutic targets in SLE.</article-title>             <source>Nat Rev Rheumatol</source>             <volume>6</volume>             <fpage>326</fpage>             <lpage>337</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-OrtegaHernandez1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ortega-Hernandez</surname><given-names>OD</given-names></name><name name-style="western"><surname>Shoenfeld</surname><given-names>Y</given-names></name></person-group>             <year>2009</year>             <article-title>Infection, vaccination, and autoantibodies in chronic fatigue syndrome, cause or coincidence?</article-title>             <source>Ann N Y Acad Sci</source>             <volume>1173</volume>             <fpage>600</fpage>             <lpage>609</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Blank1">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Blank</surname><given-names>M</given-names></name><name name-style="western"><surname>Barzilai</surname><given-names>O</given-names></name><name name-style="western"><surname>Shoenfeld</surname><given-names>Y</given-names></name></person-group>             <year>2007</year>             <article-title>Molecular mimicry and auto-immunity.</article-title>             <source>Clin Rev Allergy Immunol</source>             <volume>32</volume>             <fpage>111</fpage>             <lpage>118</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Broderick1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Broderick</surname><given-names>G</given-names></name><name name-style="western"><surname>Fuite</surname><given-names>J</given-names></name><name name-style="western"><surname>Kreitz</surname><given-names>A</given-names></name><name name-style="western"><surname>Vernon</surname><given-names>SD</given-names></name><name name-style="western"><surname>Klimas</surname><given-names>N</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>A formal analysis of cytokine networks in chronic fatigue syndrome.</article-title>             <source>Brain Behav Immun</source>             <volume>24</volume>             <fpage>1209</fpage>             <lpage>1217</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Skowera1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Skowera</surname><given-names>A</given-names></name><name name-style="western"><surname>Cleare</surname><given-names>A</given-names></name><name name-style="western"><surname>Blair</surname><given-names>D</given-names></name><name name-style="western"><surname>Bevis</surname><given-names>L</given-names></name><name name-style="western"><surname>Wessely</surname><given-names>SC</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>High levels of type 2 cytokine-producing cells in chronic fatigue syndrome.</article-title>             <source>Clin Exp Immunol</source>             <volume>135</volume>             <fpage>294</fpage>             <lpage>302</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Aspler1">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Aspler</surname><given-names>AL</given-names></name><name name-style="western"><surname>Bolshin</surname><given-names>C</given-names></name><name name-style="western"><surname>Vernon</surname><given-names>SD</given-names></name><name name-style="western"><surname>Broderick</surname><given-names>G</given-names></name></person-group>             <year>2008</year>             <article-title>Evidence of inflammatory immune signaling in chronic fatigue syndrome: A pilot study of gene expression in peripheral blood.</article-title>             <source>Behav Brain Funct</source>             <volume>4</volume>             <fpage>44</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Townsend1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Townsend</surname><given-names>MJ</given-names></name><name name-style="western"><surname>Monroe</surname><given-names>JG</given-names></name><name name-style="western"><surname>Chan</surname><given-names>AC</given-names></name></person-group>             <year>2010</year>             <article-title>B-cell targeted therapies in human autoimmune diseases: an updated perspective.</article-title>             <source>Immunol Rev</source>             <volume>237</volume>             <fpage>264</fpage>             <lpage>283</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Kessel1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kessel</surname><given-names>A</given-names></name><name name-style="western"><surname>Rosner</surname><given-names>I</given-names></name><name name-style="western"><surname>Toubi</surname><given-names>E</given-names></name></person-group>             <year>2008</year>             <article-title>Rituximab: beyond simple B cell depletion.</article-title>             <source>Clin Rev Allergy Immunol</source>             <volume>34</volume>             <fpage>74</fpage>             <lpage>79</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Rizzi1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Rizzi</surname><given-names>M</given-names></name><name name-style="western"><surname>Knoth</surname><given-names>R</given-names></name><name name-style="western"><surname>Hampe</surname><given-names>CS</given-names></name><name name-style="western"><surname>Lorenz</surname><given-names>P</given-names></name><name name-style="western"><surname>Gougeon</surname><given-names>ML</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Long-lived plasma cells and memory B cells produce pathogenic anti-GAD65 autoantibodies in Stiff Person Syndrome.</article-title>             <source>PLoS One</source>             <volume>5</volume>             <fpage>e10838</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Lerner1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lerner</surname><given-names>AM</given-names></name><name name-style="western"><surname>Beqai</surname><given-names>S</given-names></name><name name-style="western"><surname>Fitzgerald</surname><given-names>JT</given-names></name><name name-style="western"><surname>Gill</surname><given-names>K</given-names></name><name name-style="western"><surname>Gill</surname><given-names>C</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Subset-directed antiviral treatment of 142 herpesvirus patients with chronic fatigue syndrome.</article-title>             <source>Virus adaptation and treatment</source>             <volume>2</volume>             <fpage>47</fpage>             <lpage>57</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Kogelnik1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kogelnik</surname><given-names>AM</given-names></name><name name-style="western"><surname>Loomis</surname><given-names>K</given-names></name><name name-style="western"><surname>Hoegh-Petersen</surname><given-names>M</given-names></name><name name-style="western"><surname>Rosso</surname><given-names>F</given-names></name><name name-style="western"><surname>Hischier</surname><given-names>C</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Use of valganciclovir in patients with elevated antibody titers against Human Herpesvirus-6 (HHV-6) and Epstein-Barr Virus (EBV) who were experiencing central nervous system dysfunction including long-standing fatigue.</article-title>             <source>J Clin Virol</source>             <volume>37</volume>             <supplement>Suppl 1</supplement>             <fpage>S33</fpage>             <lpage>38</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Pace1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pace</surname><given-names>TW</given-names></name><name name-style="western"><surname>Heim</surname><given-names>CM</given-names></name></person-group>             <year>2011</year>             <article-title>A short review on the psychoneuroimmunology of posttraumatic stress disorder: from risk factors to medical comorbidities.</article-title>             <source>Brain Behav Immun</source>             <volume>25</volume>             <fpage>6</fpage>             <lpage>13</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Gurcan1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gurcan</surname><given-names>HM</given-names></name><name name-style="western"><surname>Keskin</surname><given-names>DB</given-names></name><name name-style="western"><surname>Stern</surname><given-names>JN</given-names></name><name name-style="western"><surname>Nitzberg</surname><given-names>MA</given-names></name><name name-style="western"><surname>Shekhani</surname><given-names>H</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>A review of the current use of rituximab in autoimmune diseases.</article-title>             <source>Int Immunopharmacol</source>             <volume>9</volume>             <fpage>10</fpage>             <lpage>25</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Covelli1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Covelli</surname><given-names>M</given-names></name><name name-style="western"><surname>Sarzi-Puttini</surname><given-names>P</given-names></name><name name-style="western"><surname>Atzeni</surname><given-names>F</given-names></name><name name-style="western"><surname>Macchioni</surname><given-names>P</given-names></name></person-group>             <year>2010</year>             <article-title>Safety of rituximab in rheumatoid arthritis.</article-title>             <source>Reumatismo</source>             <volume>62</volume>             <fpage>101</fpage>             <lpage>106</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Cooper1">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cooper</surname><given-names>N</given-names></name><name name-style="western"><surname>Arnold</surname><given-names>DM</given-names></name></person-group>             <year>2010</year>             <article-title>The effect of rituximab on humoral and cell mediated immunity and infection in the treatment of autoimmune diseases.</article-title>             <source>Br J Haematol</source>             <volume>149</volume>             <fpage>3</fpage>             <lpage>13</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Carson1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Carson</surname><given-names>KR</given-names></name><name name-style="western"><surname>Evens</surname><given-names>AM</given-names></name><name name-style="western"><surname>Richey</surname><given-names>EA</given-names></name><name name-style="western"><surname>Habermann</surname><given-names>TM</given-names></name><name name-style="western"><surname>Focosi</surname><given-names>D</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Progressive multifocal leukoencephalopathy after rituximab therapy in HIV-negative patients: a report of 57 cases from the Research on Adverse Drug Events and Reports project.</article-title>             <source>Blood</source>             <volume>113</volume>             <fpage>4834</fpage>             <lpage>4840</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Lombardi1">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lombardi</surname><given-names>VC</given-names></name><name name-style="western"><surname>Ruscetti</surname><given-names>FW</given-names></name><name name-style="western"><surname>Das Gupta</surname><given-names>J</given-names></name><name name-style="western"><surname>Pfost</surname><given-names>MA</given-names></name><name name-style="western"><surname>Hagen</surname><given-names>KS</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Detection of an Infectious Retrovirus, XMRV, in Blood Cells of Patients with Chronic Fatigue Syndrome.</article-title>             <source>Science</source>             <volume>326</volume>             <fpage>585</fpage>             <lpage>589</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Lo1">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lo</surname><given-names>SC</given-names></name><name name-style="western"><surname>Pripuzova</surname><given-names>N</given-names></name><name name-style="western"><surname>Li</surname><given-names>B</given-names></name><name name-style="western"><surname>Komaroff</surname><given-names>AL</given-names></name><name name-style="western"><surname>Hung</surname><given-names>GC</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Detection of MLV-related virus gene sequences in blood of patients with chronic fatigue syndrome and healthy blood donors.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>107</volume>             <fpage>15874</fpage>             <lpage>15879</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Satterfield1">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Satterfield</surname><given-names>BC</given-names></name><name name-style="western"><surname>Garcia</surname><given-names>RA</given-names></name><name name-style="western"><surname>Jia</surname><given-names>H</given-names></name><name name-style="western"><surname>Tang</surname><given-names>S</given-names></name><name name-style="western"><surname>Zheng</surname><given-names>H</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Serologic and PCR testing of persons with chronic fatigue syndrome in the United States shows no association with xenotropic or polytropic murine leukemia virus-related viruses.</article-title>             <source>Retrovirology</source>             <volume>8</volume>             <fpage>12</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Shin1">
+        <label>28</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Shin</surname><given-names>CH</given-names></name><name name-style="western"><surname>Bateman</surname><given-names>L</given-names></name><name name-style="western"><surname>Schlaberg</surname><given-names>R</given-names></name><name name-style="western"><surname>Bunker</surname><given-names>AM</given-names></name><name name-style="western"><surname>Leonard</surname><given-names>CJ</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Absence of XMRV Retrovirus and Other Murine Leukemia Virus-Related Viruses in Patients with Chronic Fatigue Syndrome.</article-title>             <source>J Virol</source>             <volume>85</volume>             <fpage>7195</fpage>             <lpage>7202</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Paprotka1">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Paprotka</surname><given-names>T</given-names></name><name name-style="western"><surname>Delviks-Frankenberry</surname><given-names>KA</given-names></name><name name-style="western"><surname>Cingoz</surname><given-names>O</given-names></name><name name-style="western"><surname>Martinez</surname><given-names>A</given-names></name><name name-style="western"><surname>Kung</surname><given-names>HJ</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Recombinant origin of the retrovirus XMRV.</article-title>             <source>Science</source>             <volume>333</volume>             <fpage>97</fpage>             <lpage>101</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0026358-Knox1">
+        <label>30</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Knox</surname><given-names>K</given-names></name><name name-style="western"><surname>Carrigan</surname><given-names>D</given-names></name><name name-style="western"><surname>Simmons</surname><given-names>G</given-names></name><name name-style="western"><surname>Teque</surname><given-names>F</given-names></name><name name-style="western"><surname>Zhou</surname><given-names>Y</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>No evidence of murine-like gammaretroviruses in CFS patients previously identified as XMRV-infected.</article-title>             <source>Science</source>             <volume>333</volume>             <fpage>94</fpage>             <lpage>97</lpage>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="3.0" xml:lang="en" article-type="research-article">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-14-54759</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0119705</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>TBI Server: A Web Server for Predicting Ion Effects in RNA Folding</article-title>
+<alt-title alt-title-type="running-head">TBI Server: A Web Server for Predicting Ion Effects in RNA Folding</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Zhu</surname> <given-names>Yuhong</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>He</surname> <given-names>Zhaojian</given-names></name>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Chen</surname> <given-names>Shi-Jie</given-names></name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<label>1</label>
+<addr-line>Department of Physics, Department of Biochemistry, and Informatics Institute, University of Missouri, Columbia, MO 65211, USA; Department of Physics, Hangzhou Normal University, Hangzhou, Zhejiang 310036, China</addr-line>
+</aff>
+<aff id="aff002">
+<label>2</label>
+<addr-line>Department of Physics, Department of Biochemistry, and Informatics Institute, University of Missouri, Columbia, MO 65211, USA</addr-line>
+</aff>
+<aff id="aff003">
+<label>3</label>
+<addr-line>Department of Physics, Department of Biochemistry, and Informatics Institute, University of Missouri, Columbia, MO 65211, USA</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Huang</surname> <given-names>Xuhui</given-names></name>
+<role>Academic Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>Hong Kong University of Science and Technology, HONG KONG</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: SJC. Performed the experiments: YZ ZH. Analyzed the data: YZ ZH SJC. Wrote the paper: YZ ZH SJC.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">chenshi@missouri.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="epub">
+<day>23</day>
+<month>3</month>
+<year>2015</year>
+</pub-date>
+<pub-date pub-type="collection">
+<year>2015</year>
+</pub-date>
+<volume>10</volume>
+<issue>3</issue>
+<elocation-id>e0119705</elocation-id>
+<history>
+<date date-type="received">
+<day>6</day>
+<month>12</month>
+<year>2014</year>
+</date>
+<date date-type="accepted">
+<day>12</day>
+<month>1</month>
+<year>2015</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2015</copyright-year>
+<copyright-holder>ZHU et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0119705" xlink:type="simple"/>
+<abstract>
+<sec id="sec001">
+<title>Background</title>
+<p>Metal ions play a critical role in the stabilization of RNA structures. Therefore, accurate prediction of the ion effects in RNA folding can have a far-reaching impact on our understanding of RNA structure and function. Multivalent ions, especially Mg<sup>2+</sup>, are essential for RNA tertiary structure formation. These ions can possibly become strongly correlated in the close vicinity of RNA surface. Most of the currently available software packages, which have widespread success in predicting ion effects in biomolecular systems, however, do not explicitly account for the ion correlation effect. Therefore, it is important to develop a software package/web server for the prediction of ion electrostatics in RNA folding by including ion correlation effects.</p>
+</sec>
+<sec id="sec002">
+<title>Results</title>
+<p>The TBI web server <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://rna.physics.missouri.edu/tbi_index.html">http://rna.physics.missouri.edu/tbi_index.html</ext-link> provides predictions for the total electrostatic free energy, the different free energy components, and the mean number and the most probable distributions of the bound ions. A novel feature of the TBI server is its ability to account for ion correlation and ion distribution fluctuation effects.</p>
+</sec>
+<sec id="sec003">
+<title>Conclusions</title>
+<p>By accounting for the ion correlation and fluctuation effects, the TBI server is a unique online tool for computing ion-mediated electrostatic properties for given RNA structures. The results can provide important data for in-depth analysis for ion effects in RNA folding including the ion-dependence of folding stability, ion uptake in the folding process, and the interplay between the different energetic components.</p>
+</sec>
+</abstract>
+<funding-group>
+<funding-statement>This research was supported by National Institutes of Health grant GM063732 and National Science Foundation grant MCB0920411. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="7"/>
+<table-count count="3"/>
+<page-count count="13"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability" xlink:type="simple">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper and in the web server (URL: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://rna.physics.missouri.edu/tbi_index.html">http://rna.physics.missouri.edu/tbi_index.html</ext-link>).</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec004" sec-type="intro">
+<title>Introduction</title>
+<p>Because RNA backbone is highly negatively charged, the folding of RNA requires counterions to neutralize the backbone charge and to reduce Coulomb repulsion. As a result, RNA folding is sensitive to the ionic condition, such as ion type, size, valence and concentration [<xref ref-type="bibr" rid="pone.0119705.ref001">1</xref>–<xref ref-type="bibr" rid="pone.0119705.ref012">12</xref>]. The interaction between counterions (metal ions) and RNA plays a critical role in RNA folding, including the structure and the folding stability and folding kinetics [<xref ref-type="bibr" rid="pone.0119705.ref013">13</xref>–<xref ref-type="bibr" rid="pone.0119705.ref015">15</xref>]. Accurate evaluation of the ion electrostatic effect is essential for the prediction of RNA folding.</p>
+<p>One of the challenges in modeling the ion effects is how to treat the potentially important ion correlation and fluctuation effects. Coulomb interaction is a long-range force. As a result, the electric force acting on an ion is a function not only of the its own coordinates but also of the simultaneous positions of the other ions. In an ionic solution, ions have a strong tendency to accumulate in the close vicinity of (the negatively charged) RNA. The ions could reach high local density which leads to ion correlation. One of the resultant effects from ion correlation is the coupling between the ion binding events at the different sites. Such a coupling effect is stronger for multivalent ions than monovalent ions due to their higher charges. Motivated by the importance to treat ion correlation effects, especially for multivalent ions such as Mg<sup>2+</sup> ions, which are essential for the stabilization of RNA tertiary structure, we developed the Tightly Bound Ion (TBI) model [<xref ref-type="bibr" rid="pone.0119705.ref016">16</xref>–<xref ref-type="bibr" rid="pone.0119705.ref020">20</xref>]. To treat the correlation effect inevitably requires the consideration of the ensemble of discrete many-ion distributions instead of a mean-field distribution. Thus, the TBI model can also account for the fluctuations in ion distribution.</p>
+<p>The TBI model is a theory for predicting ion-dependent RNA folding stability [<xref ref-type="bibr" rid="pone.0119705.ref016">16</xref>–<xref ref-type="bibr" rid="pone.0119705.ref020">20</xref>]. The model was first reported in 2005 [<xref ref-type="bibr" rid="pone.0119705.ref016">16</xref>] and further developed in 2008 [<xref ref-type="bibr" rid="pone.0119705.ref017">17</xref>] with explicit inclusion of the solvent polarization effect through the Generalized Born model. In 2012 [<xref ref-type="bibr" rid="pone.0119705.ref020">20</xref>], with an energy landscape-guided approach for the sampling of ion distribution, the model undergoes a significant improvement with a drastically enhanced computational efficiency. The enhanced version of the TBI allows us to treat RNAs of sequences longer than 80 nucleotides. For example, with enhanced version of the model, the computational time of a Tetraloop-receptor system of 81 nucleotides is about 30–80 minutes for the different ionic conditions [<xref ref-type="bibr" rid="pone.0119705.ref021">21</xref>]. Tests of the TBI predictions against the experimental data for ion binding properties and ion-dependent folding stabilities (<xref ref-type="table" rid="pone.0119705.t001">Table 1</xref>.) [<xref ref-type="bibr" rid="pone.0119705.ref017">17</xref>–<xref ref-type="bibr" rid="pone.0119705.ref019">19</xref>, <xref ref-type="bibr" rid="pone.0119705.ref022">22</xref>] suggested that the TBI model may be reliable for predicting ion effects in RNA folding.</p>
+<table-wrap id="pone.0119705.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119705.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Comparison between the TBI and the Poisson-Boltzmann predictions and test against experimental data.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0119705.t001g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119705.t001"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1">RNA or DNA</th>
+<th align="left" rowspan="1" colspan="1">Comparison of parameters</th>
+<th align="left" rowspan="1" colspan="1">Reference</th>
+<th align="left" rowspan="1" colspan="1">The average error for BP</th>
+<th align="left" rowspan="1" colspan="1">The average error for TBI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Three DNA helices</td>
+<td align="left" rowspan="1" colspan="1">Folding free energy</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="fig" rid="pone.0119705.g002">Fig. 2</xref>d [<xref ref-type="bibr" rid="pone.0119705.ref022">22</xref>]</td>
+<td align="left" rowspan="1" colspan="1">1.2 kcal/mol</td>
+<td align="left" rowspan="1" colspan="1">0.1 kcal/mol</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Two DNA helices</td>
+<td align="left" rowspan="1" colspan="1">Melting temperature</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="fig" rid="pone.0119705.g005">Fig. 5</xref> [<xref ref-type="bibr" rid="pone.0119705.ref023">23</xref>]</td>
+<td align="left" rowspan="1" colspan="1">5.4°C</td>
+<td align="left" rowspan="1" colspan="1">1.0°C</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Two RNA helices</td>
+<td align="left" rowspan="1" colspan="1">Ion binding Fraction</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="fig" rid="pone.0119705.g002">Fig. 2</xref>a [<xref ref-type="bibr" rid="pone.0119705.ref023">23</xref>]</td>
+<td align="left" rowspan="1" colspan="1">0.11</td>
+<td align="left" rowspan="1" colspan="1">0.06</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">24bp B-DNA helix</td>
+<td align="left" rowspan="1" colspan="1">Ion binding Fraction</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="fig" rid="pone.0119705.g002">Fig. 2</xref>a [<xref ref-type="bibr" rid="pone.0119705.ref024">24</xref>]</td>
+<td align="left" rowspan="1" colspan="1">0.08</td>
+<td align="left" rowspan="1" colspan="1">0.01</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">40bp A-RNA helix</td>
+<td align="left" rowspan="1" colspan="1">Ion binding Fraction</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="fig" rid="pone.0119705.g002">Fig. 2</xref>c [<xref ref-type="bibr" rid="pone.0119705.ref024">24</xref>]</td>
+<td align="left" rowspan="1" colspan="1">0.15</td>
+<td align="left" rowspan="1" colspan="1">0.04</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">40bp B-DNA helix</td>
+<td align="left" rowspan="1" colspan="1">Ion binding Fraction</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="fig" rid="pone.0119705.g002">Fig. 2</xref>e [<xref ref-type="bibr" rid="pone.0119705.ref024">24</xref>]</td>
+<td align="left" rowspan="1" colspan="1">0.12</td>
+<td align="left" rowspan="1" colspan="1">0.03</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BWYV pseudoknot RNA</td>
+<td align="left" rowspan="1" colspan="1">Ion binding Fraction</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="fig" rid="pone.0119705.g003">Fig. 3</xref>a [<xref ref-type="bibr" rid="pone.0119705.ref024">24</xref>]</td>
+<td align="left" rowspan="1" colspan="1">0.05</td>
+<td align="left" rowspan="1" colspan="1">0.03</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">58-nt rRNA</td>
+<td align="left" rowspan="1" colspan="1">Ion binding Fraction</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="fig" rid="pone.0119705.g003">Fig. 3</xref>c [<xref ref-type="bibr" rid="pone.0119705.ref024">24</xref>]</td>
+<td align="left" rowspan="1" colspan="1">0.10</td>
+<td align="left" rowspan="1" colspan="1">0.03</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Yeast tRNA<sup><italic>Phe</italic></sup></td>
+<td align="left" rowspan="1" colspan="1">Ion binding Fraction</td>
+<td align="left" rowspan="1" colspan="1"><xref ref-type="fig" rid="pone.0119705.g003">Fig. 3</xref>e [<xref ref-type="bibr" rid="pone.0119705.ref024">24</xref>]</td>
+<td align="left" rowspan="1" colspan="1">0.06</td>
+<td align="left" rowspan="1" colspan="1">0.03</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec005" sec-type="materials|methods">
+<title>Methods</title>
+<sec id="sec006">
+<title>The Tightly Bound Ion (TBI) model</title>
+<p>We classify the ions into two types according to their Coulomb correlation strengths: The tightly bound ions (of strong correlation) and the diffusive ions (of weak correlation). The region (a thin layer around the RNA surface) where the tightly bound ions are distributed is called the tightly bound region. For an <italic>N</italic>-nt RNA, the tightly bound region can be divided into <italic>N</italic> cells, each around a phosphate. For the tightly bound ions, we sample the discrete modes of ion distribution. Here a mode is defined by the number of bound ions in the cells. Through enumeration of the discrete ion binding modes and evaluation of the multi-ion electrostatic energy for each mode, the TBI model accounts for the correlation between the bound ions and the fluctuation of ion distributions [<xref ref-type="bibr" rid="pone.0119705.ref016">16</xref>–<xref ref-type="bibr" rid="pone.0119705.ref019">19</xref>, <xref ref-type="bibr" rid="pone.0119705.ref023">23</xref>, <xref ref-type="bibr" rid="pone.0119705.ref024">24</xref>].</p>
+<p>For a given ion binding mode <italic>M</italic>, ions are allowed to move inside the respective cells. By sampling the coordinates of the tightly bound ions within their respective cells (<italic>dR</italic><sub>i</sub> below), we calculate the partition function <italic>Z</italic><sub>M</sub> of the system:
+<disp-formula id="pone.0119705.e001"><alternatives><graphic id="pone.0119705.e001g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119705.e001"/><mml:math id="M1" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>Z</mml:mi> <mml:mi mathvariant="normal">M</mml:mi></mml:msub> <mml:mo>=</mml:mo> <mml:msup><mml:mi>Z</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:msup> <mml:msup><mml:mfenced separators="" open="(" close=")"><mml:mfrac><mml:msub><mml:mi>N</mml:mi> <mml:mi mathvariant="normal">Z</mml:mi></mml:msub> <mml:mi>V</mml:mi></mml:mfrac></mml:mfenced> <mml:msub><mml:mi>N</mml:mi> <mml:mi mathvariant="normal">b</mml:mi></mml:msub></mml:msup> <mml:mfenced separators="" open="(" close=")"><mml:mo>∫</mml:mo> <mml:mrow><mml:munderover><mml:mo>∏</mml:mo> <mml:mrow><mml:mi mathvariant="normal">i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:msub><mml:mi>N</mml:mi> <mml:mi mathvariant="normal">b</mml:mi></mml:msub></mml:munderover> <mml:mi>d</mml:mi> <mml:msub><mml:mi>R</mml:mi> <mml:mi mathvariant="normal">i</mml:mi></mml:msub></mml:mrow></mml:mfenced> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:msub><mml:mi>G</mml:mi> <mml:mi>M</mml:mi></mml:msub> <mml:mo>/</mml:mo> <mml:msub><mml:mi>k</mml:mi> <mml:mi mathvariant="normal">B</mml:mi></mml:msub> <mml:mi>T</mml:mi></mml:mrow></mml:msup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(1)</label></disp-formula>
+where <italic>Z</italic><sup>(<italic>id</italic>)</sup> is the partition function for the uniform ion solution (without the RNA), <italic>N</italic><sub>Z</sub> is the total number of z-valent counterions and <italic>V</italic> is the volume of the solution, <italic>N</italic><sub>b</sub> and <inline-formula id="pone.0119705.e002"><mml:math id="M2" display="inline" overflow="scroll"><mml:mrow><mml:mo>∫</mml:mo> <mml:mrow><mml:msubsup><mml:mo>Π</mml:mo> <mml:mrow><mml:mtext mathvariant="normal">i</mml:mtext> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:msub><mml:mi>N</mml:mi> <mml:mtext mathvariant="normal">b</mml:mtext></mml:msub></mml:msubsup> <mml:mi>d</mml:mi> <mml:msub><mml:mi>R</mml:mi> <mml:mtext mathvariant="normal">i</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math></inline-formula> are the number and the volume integral for the tightly bound ions, respectively, and Δ<italic>G</italic><sub><italic>M</italic></sub> is the free energy of the system for mode <italic>M</italic>.</p>
+</sec>
+<sec id="sec007">
+<title>Electrostatic free energy for each mode</title>
+<p>The electrostatic energy for the charges inside the tightly bound region is computed as the sum of the self-energy Δ<italic>U</italic><sub>self</sub>, the polarization energy Δ<italic>U</italic><sub>pol</sub>, and the Coulomb energy Δ<italic>U</italic><sub>ele</sub>:
+<disp-formula id="pone.0119705.e003"><alternatives><graphic id="pone.0119705.e003g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119705.e003"/><mml:math id="M3" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msub><mml:mi>U</mml:mi> <mml:mi>self</mml:mi></mml:msub></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:mfenced separators="" open="(" close=")"><mml:mfrac><mml:mn>1</mml:mn> <mml:msub><mml:mi>ϵ</mml:mi> <mml:mi mathvariant="normal">w</mml:mi></mml:msub></mml:mfrac> <mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:msub><mml:mi>ϵ</mml:mi> <mml:mi>in</mml:mi></mml:msub></mml:mfrac></mml:mfenced> <mml:mspace width="1pt"/> <mml:munder><mml:mo>∑</mml:mo> <mml:mi>p</mml:mi></mml:munder> <mml:mfrac><mml:msubsup><mml:mi>q</mml:mi> <mml:mi>p</mml:mi> <mml:mn>2</mml:mn></mml:msubsup> <mml:msub><mml:mi>B</mml:mi> <mml:mi>i</mml:mi></mml:msub></mml:mfrac> <mml:mo>+</mml:mo> <mml:mfenced separators="" open="(" close=")"><mml:mfrac><mml:mn>1</mml:mn> <mml:msub><mml:mi>ϵ</mml:mi> <mml:mi mathvariant="normal">w</mml:mi></mml:msub></mml:mfrac> <mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:msub><mml:mi>ϵ</mml:mi> <mml:mi>in</mml:mi></mml:msub></mml:mfrac></mml:mfenced> <mml:mspace width="1pt"/> <mml:munder><mml:mo>∑</mml:mo> <mml:mi>i</mml:mi></mml:munder> <mml:mfrac><mml:msubsup><mml:mi>q</mml:mi> <mml:mi>i</mml:mi> <mml:mn>2</mml:mn></mml:msubsup> <mml:mn>2</mml:mn></mml:mfrac> <mml:mfenced separators="" open="(" close=")"><mml:mfrac><mml:mn>1</mml:mn> <mml:msub><mml:mi>B</mml:mi> <mml:mi>i</mml:mi></mml:msub></mml:mfrac> <mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:msubsup><mml:mi>B</mml:mi> <mml:mi>i</mml:mi> <mml:mn>0</mml:mn></mml:msubsup></mml:mfrac></mml:mfenced></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msub><mml:mi>U</mml:mi> <mml:mi>pol</mml:mi></mml:msub></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mfenced separators="" open="(" close=")"><mml:mfrac><mml:mn>1</mml:mn> <mml:msub><mml:mi>ϵ</mml:mi> <mml:mi mathvariant="normal">w</mml:mi></mml:msub></mml:mfrac> <mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:msub><mml:mi>ϵ</mml:mi> <mml:mi>in</mml:mi></mml:msub></mml:mfrac></mml:mfenced> <mml:munder><mml:mo>∑</mml:mo> <mml:mrow><mml:mi mathvariant="normal">m</mml:mi> <mml:mo>&lt;</mml:mo> <mml:mi>n</mml:mi></mml:mrow></mml:munder> <mml:mfrac><mml:mrow><mml:msub><mml:mi>q</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:msub><mml:mi>q</mml:mi> <mml:mi>n</mml:mi></mml:msub></mml:mrow> <mml:msqrt><mml:mrow><mml:msubsup><mml:mi>r</mml:mi> <mml:mrow><mml:mi>mn</mml:mi></mml:mrow> <mml:mn>2</mml:mn></mml:msubsup> <mml:mo>+</mml:mo> <mml:msub><mml:mi>B</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:msub><mml:mi>B</mml:mi> <mml:mi>n</mml:mi></mml:msub> <mml:mo form="prefix">exp</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mo>-</mml:mo> <mml:mfrac><mml:msubsup><mml:mi>r</mml:mi> <mml:mrow><mml:mi>mn</mml:mi></mml:mrow> <mml:mn>2</mml:mn></mml:msubsup> <mml:mrow><mml:mn>4</mml:mn> <mml:msub><mml:mi>B</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:msub><mml:mi>B</mml:mi> <mml:mi>n</mml:mi></mml:msub></mml:mrow></mml:mfrac> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:msqrt></mml:mfrac></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msub><mml:mi>U</mml:mi> <mml:mi>ele</mml:mi></mml:msub></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:munder><mml:mo>∑</mml:mo> <mml:mrow><mml:mi mathvariant="normal">m</mml:mi> <mml:mo>&lt;</mml:mo> <mml:mi>n</mml:mi></mml:mrow></mml:munder> <mml:mfrac><mml:mrow><mml:msub><mml:mi>q</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:msub><mml:mi>q</mml:mi> <mml:mi>n</mml:mi></mml:msub></mml:mrow> <mml:mrow><mml:msub><mml:mi>ϵ</mml:mi> <mml:mi>in</mml:mi></mml:msub> <mml:msub><mml:mi>r</mml:mi> <mml:mi>mn</mml:mi></mml:msub></mml:mrow></mml:mfrac></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(2)</label></disp-formula>
+where ∑<sub><italic>p</italic></sub>, ∑<sub>i</sub>, ∑<sub>mn</sub> are the summations over the phosphates, tightly bound ions, and both, respectively, and <italic>q</italic><sub><italic>p</italic></sub>, <italic>q</italic><sub><italic>i</italic></sub>, <italic>q</italic><sub><italic>m</italic></sub> <italic>q</italic><sub><italic>n</italic></sub> are the respective charges. <italic>r</italic><sub>mn</sub> is the distance between <italic>m</italic> and <italic>n</italic>, <italic>B</italic><sub><italic>x</italic></sub> is the Born radius of <italic>x</italic>, <inline-formula id="pone.0119705.e004"><mml:math id="M4" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>B</mml:mi> <mml:mi>i</mml:mi> <mml:mn>0</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> is the radius of the hydrated ion, and <italic>ϵ</italic><sub>in</sub> (∼ 12) and <italic>ϵ</italic><sub>w</sub> (∼ 78 at room temperature) are the dielectric constants of RNA and water, respectively. <italic>ϵ</italic><sub>w</sub> is given by
+<disp-formula id="pone.0119705.e005"><alternatives><graphic id="pone.0119705.e005g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119705.e005"/><mml:math id="M5" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>ϵ</mml:mi> <mml:mi mathvariant="normal">w</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>T</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:mn>87</mml:mn> <mml:mo>.</mml:mo> <mml:mn>740</mml:mn> <mml:mo>-</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mn>0</mml:mn> <mml:mo>.</mml:mo> <mml:mn>4008</mml:mn> <mml:mo>)</mml:mo></mml:mrow> <mml:mspace width="0.166667em"/><mml:mi>T</mml:mi> <mml:mo>+</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mn>9</mml:mn> <mml:mo>.</mml:mo> <mml:mn>398</mml:mn> <mml:mo>×</mml:mo> <mml:msup><mml:mn>10</mml:mn> <mml:mrow><mml:mo>-</mml:mo> <mml:mn>4</mml:mn></mml:mrow></mml:msup> <mml:mo>)</mml:mo></mml:mrow> <mml:mspace width="0.166667em"/><mml:msup><mml:mi>T</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>-</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>.</mml:mo> <mml:mn>41</mml:mn> <mml:mo>×</mml:mo> <mml:msup><mml:mn>10</mml:mn> <mml:mrow><mml:mo>-</mml:mo> <mml:mn>6</mml:mn></mml:mrow></mml:msup> <mml:mo>)</mml:mo></mml:mrow> <mml:mspace width="0.166667em"/><mml:msup><mml:mi>T</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(3)</label></disp-formula>
+where <italic>T</italic> is the temperature in Celsius.</p>
+<p>The free energy of the diffusive ions is calculated as the sum of the enthalpic Δ<italic>U</italic><sub>d</sub> and entropic −<italic>T</italic>Δ<italic>S</italic><sub>d</sub> terms:
+<disp-formula id="pone.0119705.e006"><alternatives><graphic id="pone.0119705.e006g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119705.e006"/><mml:math id="M6" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msub><mml:mi>U</mml:mi> <mml:mi mathvariant="normal">d</mml:mi></mml:msub></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:mo>∫</mml:mo> <mml:mrow><mml:munder><mml:mo>∑</mml:mo> <mml:mi>α</mml:mi></mml:munder> <mml:mrow><mml:msub><mml:mi>c</mml:mi> <mml:mi>α</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi mathvariant="bold">r</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:msub><mml:mi>z</mml:mi> <mml:mi>α</mml:mi></mml:msub> <mml:mi>q</mml:mi> <mml:mfenced separators="" open="[" close="]"><mml:mo>Ψ</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mi mathvariant="bold">r</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:msup><mml:mo>Ψ</mml:mo> <mml:mo>'</mml:mo></mml:msup> <mml:mrow><mml:mo>(</mml:mo> <mml:mi mathvariant="bold">r</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mfenced> <mml:msup><mml:mi>d</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mi mathvariant="bold">r</mml:mi></mml:mrow></mml:mrow></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msub><mml:mi>S</mml:mi> <mml:mi mathvariant="normal">d</mml:mi></mml:msub></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mi>k</mml:mi> <mml:mi>B</mml:mi></mml:msub> <mml:mo>∫</mml:mo> <mml:mrow><mml:munder><mml:mo>∑</mml:mo> <mml:mi>α</mml:mi></mml:munder> <mml:mrow><mml:mfenced separators="" open="[" close="]"><mml:msub><mml:mi>c</mml:mi> <mml:mi>α</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi mathvariant="bold">r</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo form="prefix">ln</mml:mo> <mml:mfrac><mml:mrow><mml:msub><mml:mi>c</mml:mi> <mml:mi>α</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi mathvariant="bold">r</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:msubsup><mml:mi>c</mml:mi> <mml:mrow><mml:mi>α</mml:mi></mml:mrow> <mml:mn>0</mml:mn></mml:msubsup></mml:mfrac> <mml:mo>-</mml:mo> <mml:msub><mml:mi>c</mml:mi> <mml:mi>α</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi mathvariant="bold">r</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:msubsup><mml:mi>c</mml:mi> <mml:mrow><mml:mi>α</mml:mi></mml:mrow> <mml:mn>0</mml:mn></mml:msubsup></mml:mfenced> <mml:mspace width="1pt"/> <mml:msup><mml:mi>d</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mi mathvariant="bold">r</mml:mi></mml:mrow></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(4)</label></disp-formula>
+where <italic>c</italic><sub>α</sub> is the concentration of ion species <italic>α</italic>, <inline-formula id="pone.0119705.e007"><mml:math id="M7" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>c</mml:mi> <mml:mtext mathvariant="normal">α</mml:mtext> <mml:mn>0</mml:mn></mml:msubsup></mml:mrow></mml:math></inline-formula> is the bulk concentration, Ψ(<italic>r</italic>) and Ψ<sup>′</sup>(<italic>r</italic>) are the electrostatic potentials with and without the diffusive ions, respectively. The electric potentials are determined from the Poisson-Boltzmann equation with the presence of the tightly bound ions.</p>
+<p>For a given mode <italic>M</italic>, the ensemble average over the positions of the tightly bound ions, denoted as ⟨…⟩, gives the electrostatic free energy components: Δ<italic>G</italic><sub><italic>M</italic></sub> = ⟨Δ<italic>U</italic><sub>self</sub> + Δ<italic>U</italic><sub>pol</sub> + Δ<italic>U</italic><sub>ele</sub> + Δ<italic>U</italic><sub>d</sub> − <italic>T</italic>Δ<italic>S</italic><sub>d</sub>⟩.</p>
+</sec>
+<sec id="sec008">
+<title>Free energy components</title>
+<p>Averaging over all the tightly bound ion distribution modes gives the electrostatic free energy of the system:
+<disp-formula id="pone.0119705.e008"><alternatives><graphic id="pone.0119705.e008g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119705.e008"/><mml:math id="M8" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msub><mml:mi>G</mml:mi> <mml:mi>tot</mml:mi></mml:msub> <mml:mo>=</mml:mo> <mml:mo>-</mml:mo> <mml:msub><mml:mi>k</mml:mi> <mml:mi mathvariant="normal">B</mml:mi></mml:msub> <mml:mi>T</mml:mi> <mml:mo form="prefix">ln</mml:mo> <mml:munder><mml:mo>∑</mml:mo> <mml:mi mathvariant="normal">M</mml:mi></mml:munder> <mml:mrow><mml:mo>(</mml:mo> <mml:msub><mml:mi>Z</mml:mi> <mml:mi mathvariant="normal">M</mml:mi></mml:msub> <mml:mo>/</mml:mo> <mml:msup><mml:mi>Z</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>i</mml:mi> <mml:mi>d</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:msup> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(5)</label></disp-formula>
+The probability of mode <italic>M</italic> is P<sub>M</sub> = <italic>e</italic><sup>−(Δ<italic>G</italic><sub><italic>M</italic></sub>−Δ<italic>G</italic><sub>tot</sub>)/<italic>k</italic><sub>B</sub> <italic>T</italic></sup>.</p>
+<p>The weighted sum over all the modes gives the free energy components:
+<list list-type="bullet"><list-item><p>Coulomb free energy Δ<italic>E</italic><sub>ele</sub> = ∑<sub><italic>M</italic></sub>⟨Δ<italic>U</italic><sub>ele</sub>⟩P<sub>M</sub></p></list-item> <list-item><p>Polarization free energy Δ<italic>G</italic><sub>pol</sub> = ∑<sub><italic>M</italic></sub>⟨Δ<italic>U</italic><sub>pol</sub>⟩P<sub>M</sub></p></list-item> <list-item><p>Self-polarization free energy Δ<italic>G</italic><sub>self</sub> = ∑<sub><italic>M</italic></sub>⟨Δ<italic>U</italic><sub>self</sub>⟩P<sub>M</sub></p></list-item> <list-item><p>Entropic free energy Δ<italic>G</italic><sub><italic>s</italic></sub> = Δ<italic>G</italic><sub>tot</sub> − (Δ<italic>E</italic><sub>ele</sub> + Δ<italic>G</italic><sub>pol</sub> + Δ<italic>G</italic><sub>self</sub>)</p></list-item></list>
+Here the entropic free energy Δ<italic>G</italic><sub><italic>s</italic></sub> includes the entropy of the diffusive ions and the (combinatorial) entropy of the tightly bound ions.</p>
+</sec>
+<sec id="sec009">
+<title>Binding fraction</title>
+<p>The TBI model [<xref ref-type="bibr" rid="pone.0119705.ref023">23</xref>, <xref ref-type="bibr" rid="pone.0119705.ref024">24</xref>] gives the mean binding fraction of Na<sup>+</sup> and Mg<sup>2+</sup> ions on each nucleotide <italic>i</italic>:
+<disp-formula id="pone.0119705.e009"><alternatives><graphic id="pone.0119705.e009g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119705.e009"/><mml:math id="M9" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:msubsup><mml:mi>f</mml:mi> <mml:msup><mml:mi>Mg</mml:mi> <mml:mrow><mml:mn>2</mml:mn> <mml:mo>+</mml:mo></mml:mrow></mml:msup> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>i</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:msubsup></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:msubsup><mml:mover accent="true"><mml:mi>f</mml:mi> <mml:mo>¯</mml:mo></mml:mover> <mml:mi>b</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>i</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>+</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mi>N</mml:mi></mml:mfrac> <mml:mo>∫</mml:mo> <mml:mrow><mml:mfenced separators="" open="[" close="]"><mml:msub><mml:mi>c</mml:mi> <mml:msup><mml:mi>Mg</mml:mi> <mml:mrow><mml:mn>2</mml:mn> <mml:mo>+</mml:mo></mml:mrow></mml:msup></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi mathvariant="bold">r</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>-</mml:mo> <mml:msubsup><mml:mi>c</mml:mi> <mml:mrow><mml:msup><mml:mi>Mg</mml:mi> <mml:mrow><mml:mn>2</mml:mn> <mml:mo>+</mml:mo></mml:mrow></mml:msup></mml:mrow> <mml:mn>0</mml:mn></mml:msubsup></mml:mfenced> <mml:mspace width="1pt"/> <mml:msup><mml:mi>d</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mi mathvariant="bold">r</mml:mi></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(6)</label></disp-formula>
+<disp-formula id="pone.0119705.e010"><alternatives><graphic id="pone.0119705.e010g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119705.e010"/><mml:math id="M10" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:msub><mml:mi>f</mml:mi> <mml:msup><mml:mi>Na</mml:mi> <mml:mo>+</mml:mo></mml:msup></mml:msub></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mfrac><mml:mn>1</mml:mn> <mml:mi>N</mml:mi></mml:mfrac> <mml:mo>∫</mml:mo> <mml:mrow><mml:mfenced separators="" open="[" close="]"><mml:msub><mml:mi>c</mml:mi> <mml:msup><mml:mi>Na</mml:mi> <mml:mo>+</mml:mo></mml:msup></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi mathvariant="bold">r</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>-</mml:mo> <mml:msubsup><mml:mi>c</mml:mi> <mml:mrow><mml:msup><mml:mi>Na</mml:mi> <mml:mo>+</mml:mo></mml:msup></mml:mrow> <mml:mn>0</mml:mn></mml:msubsup></mml:mfenced> <mml:mspace width="1pt"/> <mml:msup><mml:mi>d</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mi mathvariant="bold">r</mml:mi></mml:mrow></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(7)</label></disp-formula>
+where <italic>N</italic> is the number of the nucleotides in RNA and <inline-formula id="pone.0119705.e011"><mml:math id="M11" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mover accent="true"><mml:mi>f</mml:mi> <mml:mo>‾</mml:mo></mml:mover> <mml:mi>b</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>i</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> is the average binding fraction of the tightly bound Mg<sup>2+</sup> ions on nucleotide <italic>i</italic>:
+<disp-formula id="pone.0119705.e012"><alternatives><graphic id="pone.0119705.e012g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119705.e012"/><mml:math id="M12" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msubsup><mml:mover accent="true"><mml:mi>f</mml:mi> <mml:mo>¯</mml:mo></mml:mover> <mml:mi>b</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>i</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:munder><mml:mo>∑</mml:mo> <mml:mi mathvariant="normal">M</mml:mi></mml:munder> <mml:msubsup><mml:mi>N</mml:mi> <mml:mi>b</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>i</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:msubsup> <mml:mspace width="0.166667em"/><mml:msub><mml:mi mathvariant="normal">P</mml:mi> <mml:mi mathvariant="normal">M</mml:mi></mml:msub></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(8)</label></disp-formula>
+where <inline-formula id="pone.0119705.e013"><mml:math id="M13" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>N</mml:mi> <mml:mi>b</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>i</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> is the number of the bound ions on the <italic>i</italic><sup><italic>th</italic></sup> nucleotide in ion binding mode <italic>M</italic>. We note the different expressions above for Mg<sup>2+</sup> and Na<sup>+</sup> ions. This is because the monovalent ions (Na<sup>+</sup>) are usually weakly correlated and do not exist in the form of tightly bound ions.</p>
+</sec>
+</sec>
+<sec id="sec010" sec-type="results">
+<title>Results</title>
+<sec id="sec011">
+<title>Input</title>
+<p>The TBI server predicts the electrostatic thermodynamic properties for a given RNA structure. The server has a simple input interface (see <xref ref-type="fig" rid="pone.0119705.g001">Fig. 1</xref>). The input parameters include the temperature, the monovalent/divalent ion concentrations, and the RNA structure. The current version of the TBI server allows only Na<sup>+</sup> and Mg<sup>2+</sup> ions. The server accepts the standard PDB format for the input RNA 3D structure. The user can paste the PDB file into the text window for the input structure. To conveniently identify the submitted jobs, user has the option to define the job names. The user also has the option to retrieve the calculated results either through email (provided by the user) or from a webpage.</p>
+<fig id="pone.0119705.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119705.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>The user interface of the TBI server.</title>
+<p>(a) the job submission page, (b) the notification page, and (c) the result email.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119705.g001"/>
+</fig>
+<p>For example, to calculate the electrostatic free energy for T2 pseudoknot (PDB code: 2TPK [<xref ref-type="bibr" rid="pone.0119705.ref025">25</xref>], an RNA pseudoknot), we input the parameters as shown in <xref ref-type="fig" rid="pone.0119705.g001">Fig. 1a</xref> and the 3D structure of the RNA by pasting the text data of the 2TPK PDB file. We can choose to receive the calculated results through email with the job name and job ID (automatically generated by web server) shown in the subject line (see <xref ref-type="fig" rid="pone.0119705.g001">Fig. 1b</xref>)</p>
+</sec>
+<sec id="sec012">
+<title>Output</title>
+<p>The results from the TBI server are presented in three output files, one text file and two figure files (see <xref ref-type="fig" rid="pone.0119705.g001">Fig. 1c</xref>). The text file (with filename extension “.dat”) (shown in <xref ref-type="fig" rid="pone.0119705.g002">Fig. 2</xref>) shows the solution condition (input parameters) and the numerical results of the predicted fractional bound ions and the free energies.</p>
+<fig id="pone.0119705.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119705.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>An example for the result text file.</title>
+<p>The file includes two parts: the solution condition and the calculated results.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119705.g002"/>
+</fig>
+<p>In the output data file, the first column is the index number of the nucleotides, and the third and the fifth column are the average ion binding fraction for each nucleotide (Equations <xref ref-type="disp-formula" rid="pone.0119705.e009">6</xref> &amp; <xref ref-type="disp-formula" rid="pone.0119705.e010">7</xref>) and the most probable binding mode (the mode <italic>M</italic> of the lowest free energy Δ<italic>G</italic><sub>M</sub>) [<xref ref-type="bibr" rid="pone.0119705.ref016">16</xref>], respectively. For example, the number “1” in the fifth column means that the corresponding nucleotide has one tightly bound Mg<sup>2+</sup> ion in the most probable ion binding mode, while the number “0” means there is no tightly bound Mg<sup>2+</sup> bound to the nucleotide in the most probable mode. The ion binding properties are shown diagrammatically in the two output figure files, which give the mean (see <xref ref-type="fig" rid="pone.0119705.g003">Fig. 3</xref>) and the most probable ion binding modes, respectively (see <xref ref-type="fig" rid="pone.0119705.g004">Fig. 4</xref>).</p>
+<fig id="pone.0119705.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119705.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>The average binding fraction.</title>
+<p>The average binding fraction on each nucleotide of the T2 RNA pseudoknot in 10mM Mg<sup>2+</sup> and 100 mM Na<sup>+</sup> at <italic>T</italic> = 37°C.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119705.g003"/>
+</fig>
+<fig id="pone.0119705.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119705.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>The most probable binding mode for the tightly bound ions.</title>
+<p>The lowest energy ion binding mode for the T2 RNA pseudoknot at [Mg<sup>2+</sup>] = 10mM, [Na<sup>+</sup>] = 100mM, <italic>T</italic> = 37°C. The most probable binding sites (nucleotides) are denoted with the orange color in the inset.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119705.g004"/>
+</fig>
+<p>The data file also gives the total electrostatic free energy Δ<italic>G</italic><sub>tot</sub> and the free components: the self-polarization energy Δ<italic>G</italic><sub>self</sub>, the polarization energy Δ<italic>G</italic><sub>pol</sub>, the Coulomb energy Δ<italic>E</italic><sub>ele</sub>, and the entropic free energy Δ<italic>G</italic><sub><italic>s</italic></sub>. The units of the (free) energies are <italic>k</italic><sub><italic>B</italic></sub><italic>T</italic>.</p>
+</sec>
+<sec id="sec013">
+<title>Examples of usage</title>
+<sec id="sec014">
+<title>Example 1: Basic calculations with the TBI server</title>
+<p>Here, we show the basic usage of the TBI server through a simply example (shown in <xref ref-type="fig" rid="pone.0119705.g005">Fig. 5</xref>). The first step is to input the parameters and the RNA structure data (PDB code: 2TPK [<xref ref-type="bibr" rid="pone.0119705.ref025">25</xref>]) (see <xref ref-type="fig" rid="pone.0119705.g005">Fig. 5</xref>-step1). We then provide the job name and a valid email address if we choose to receive the results via email notification. We can simply leave the email address blank if we choose to retrieve the results from a webpage. In this example, we use “T2_test” for the job name. We then click “Calculate” to submit the job. The calculated results will be send to user provided email address (see <xref ref-type="fig" rid="pone.0119705.g005">Fig. 5</xref> step2) or shown on the webpage for download when the calculations are finished. The three output files are “T2_test.*.dat”, “T2_test.*.eps” and “T2_test.*.site.eps” for this example. The “T2_test.*.dat” file contains all the free energy and ion binding properties data, which can be used to predict ion-dependent folding stabilities (see Examples 2 and 3 below). The two figures show the profile of the average binding fractions for all the nucleotides (see <xref ref-type="fig" rid="pone.0119705.g003">Fig. 3</xref> or <xref ref-type="fig" rid="pone.0119705.g005">Fig. 5</xref>-step 3a) and the most probability binding sites (see <xref ref-type="fig" rid="pone.0119705.g004">Fig. 4</xref> or <xref ref-type="fig" rid="pone.0119705.g005">Fig. 5</xref>-step 3b). <xref ref-type="fig" rid="pone.0119705.g005">Fig. 5</xref>-step 4 shows the most probable Mg<sup>2+</sup> ion binding mode for the T2 RNA pseudoknot. It is important to note that the most probable binding mode does not necessarily correspond to the specific ion binding sites observed in the structure determination experiment. This is because the current TBI model does not account for effects that may be important for specific ion binding such as ion dehydration and ion chelated interactions with specific chemical groups.</p>
+<fig id="pone.0119705.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119705.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>An example for the usage of the TBI server.</title>
+<p>The server computes the ion binding properties and the electrostatic free energies for T2 RNA (PDB code 2TPK [<xref ref-type="bibr" rid="pone.0119705.ref025">25</xref>]) in a solution with 10 mM Mg<sup>2+</sup>, 100 mM Na<sup>+</sup>, and <italic>T</italic> = 37°C.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119705.g005"/>
+</fig>
+</sec>
+<sec id="sec015">
+<title>Example 2: Mg<sup>2+</sup>-induced folding stability of T2 pseudoknot</title>
+<p>To understand the ion-dependent folding stability of the T2 pseudoknot (see Example 1), we compute the ion-dependence of the free energy difference between the folded (pseudoknot) state and the intermediate (hairpin) state [<xref ref-type="bibr" rid="pone.0119705.ref019">19</xref>, <xref ref-type="bibr" rid="pone.0119705.ref026">26</xref>, <xref ref-type="bibr" rid="pone.0119705.ref027">27</xref>]. For the purpose of free energy calculation, previous studies suggested a computationally efficient method by using an effective 24-nt helix to represent the hairpin conformational ensemble [<xref ref-type="bibr" rid="pone.0119705.ref019">19</xref>, <xref ref-type="bibr" rid="pone.0119705.ref026">26</xref>, <xref ref-type="bibr" rid="pone.0119705.ref027">27</xref>]. We input the two structures (the effective helix and the pseudoknot; see Figs. <xref ref-type="fig" rid="pone.0119705.g006">6ab</xref>) into the TBI server and compute the free energies at the different Mg<sup>2+</sup> ion concentrations.</p>
+<fig id="pone.0119705.g006" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119705.g006</object-id>
+<label>Fig 6</label>
+<caption>
+<title>The Mg<sup>2+</sup>-induced folding stability ΔΔ<italic>G</italic><sub>Mg<sup>2+</sup></sub> for the T2 pseudoknot.</title>
+<p>(a) and (b) show the 3D structures of T2 pseudoknot (the folded state) and the 24-nt A-form helix, respectively; (c) shows the Mg<sup>2+</sup>-induced folding stability.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119705.g006"/>
+</fig>
+<p>According to the thermodynamic cycle of RNA folding and [Mg<sup>2+</sup>] ion binding [<xref ref-type="bibr" rid="pone.0119705.ref026">26</xref>–<xref ref-type="bibr" rid="pone.0119705.ref029">29</xref>], we calculate the Mg<sup>2+</sup>-induced folding stability ΔΔ<italic>G</italic><sub>Mg<sup>2+</sup></sub> from the following equation:
+<disp-formula id="pone.0119705.e014"><alternatives><graphic id="pone.0119705.e014g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119705.e014"/><mml:math id="M14" display="block" overflow="scroll"><mml:mrow><mml:mtable><mml:mtr><mml:mtd><mml:mrow><mml:mi>Δ</mml:mi><mml:mi>Δ</mml:mi><mml:msub><mml:mi>G</mml:mi><mml:mrow><mml:mi>M</mml:mi><mml:msup><mml:mi>g</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mo>+</mml:mo></mml:mrow></mml:msup></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mi>Δ</mml:mi><mml:msubsup><mml:mi>G</mml:mi><mml:mrow><mml:mi>M</mml:mi><mml:msup><mml:mi>g</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mo>+</mml:mo></mml:mrow></mml:msup></mml:mrow><mml:mi>F</mml:mi></mml:msubsup><mml:mo>−</mml:mo><mml:mi>Δ</mml:mi><mml:msubsup><mml:mi>G</mml:mi><mml:mrow><mml:mi>M</mml:mi><mml:msup><mml:mi>g</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mo>+</mml:mo></mml:mrow></mml:msup></mml:mrow><mml:mi>I</mml:mi></mml:msubsup><mml:mo>=</mml:mo><mml:mrow><mml:mo>[</mml:mo> <mml:mrow><mml:mi>Δ</mml:mi><mml:mi>G</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>F</mml:mi><mml:mo>·</mml:mo><mml:mi>M</mml:mi><mml:msup><mml:mi>g</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mo>+</mml:mo></mml:mrow></mml:msup></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:mi>Δ</mml:mi><mml:msubsup><mml:mi>G</mml:mi><mml:mi>o</mml:mi><mml:mi>F</mml:mi></mml:msubsup></mml:mrow> <mml:mo>]</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:mrow><mml:mo>[</mml:mo> <mml:mrow><mml:mi>Δ</mml:mi><mml:mi>G</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:mi>I</mml:mi><mml:mo>·</mml:mo><mml:mi>M</mml:mi><mml:msup><mml:mi>g</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mo>+</mml:mo></mml:mrow></mml:msup></mml:mrow><mml:mo>)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:mi>Δ</mml:mi><mml:msubsup><mml:mi>G</mml:mi><mml:mi>o</mml:mi><mml:mi>I</mml:mi></mml:msubsup></mml:mrow> <mml:mo>]</mml:mo></mml:mrow><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mrow></mml:math></alternatives> <label>(9)</label></disp-formula>
+where, <inline-formula id="pone.0119705.e015"><mml:math id="M15" display="inline" overflow="scroll"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msubsup><mml:mi>G</mml:mi> <mml:msup><mml:mtext mathvariant="normal">Mg</mml:mtext> <mml:mrow><mml:mn>2</mml:mn> <mml:mo>+</mml:mo></mml:mrow></mml:msup> <mml:mi>F</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula> and <inline-formula id="pone.0119705.e016"><mml:math id="M16" display="inline" overflow="scroll"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msubsup><mml:mi>G</mml:mi> <mml:msup><mml:mtext mathvariant="normal">Mg</mml:mtext> <mml:mrow><mml:mn>2</mml:mn> <mml:mo>+</mml:mo></mml:mrow></mml:msup> <mml:mi>I</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula> are the Mg<sup>2+</sup>-caused electrostatic free energy differences for the folded and the intermediate states [<xref ref-type="bibr" rid="pone.0119705.ref018">18</xref>, <xref ref-type="bibr" rid="pone.0119705.ref026">26</xref>, <xref ref-type="bibr" rid="pone.0119705.ref027">27</xref>], respectively, Δ<italic>G</italic>(<italic>F</italic> ⋅ Mg<sup>2+</sup>) and <inline-formula id="pone.0119705.e017"><mml:math id="M17" display="inline" overflow="scroll"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msubsup><mml:mi>G</mml:mi> <mml:mi>o</mml:mi> <mml:mi>F</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula> are the electrostatic free energies of the folded state with and without Mg<sup>2+</sup> ions, respectively; Δ<italic>G</italic>(<italic>I</italic> ⋅ Mg<sup>2+</sup>) and <inline-formula id="pone.0119705.e018"><mml:math id="M18" display="inline" overflow="scroll"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msubsup><mml:mi>G</mml:mi> <mml:mi>o</mml:mi> <mml:mi>I</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula> are the electrostatic free energies of the unfolded state with and without Mg<sup>2+</sup> ions, respectively. The electrostatic free energies Δ<italic>G</italic>(<italic>F</italic> ⋅ Mg<sup>2+</sup>) and <inline-formula id="pone.0119705.e019"><mml:math id="M19" display="inline" overflow="scroll"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msubsup><mml:mi>G</mml:mi> <mml:mi>o</mml:mi> <mml:mi>F</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula> for the folded state and Δ<italic>G</italic>(<italic>I</italic> ⋅ Mg<sup>2+</sup>) and <inline-formula id="pone.0119705.e020"><mml:math id="M20" display="inline" overflow="scroll"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msubsup><mml:mi>G</mml:mi> <mml:mi>o</mml:mi> <mml:mi>I</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula> for the intermediate state can be calculated from the TBI server. To estimate Δ<italic>G</italic>(<italic>I</italic> ⋅ Mg<sup>2+</sup>) and <inline-formula id="pone.0119705.e021"><mml:math id="M21" display="inline" overflow="scroll"><mml:mrow><mml:mo>Δ</mml:mo> <mml:msubsup><mml:mi>G</mml:mi> <mml:mi>o</mml:mi> <mml:mi>I</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula>, we use a 24-nt helix [<xref ref-type="bibr" rid="pone.0119705.ref018">18</xref>, <xref ref-type="bibr" rid="pone.0119705.ref026">26</xref>, <xref ref-type="bibr" rid="pone.0119705.ref027">27</xref>]: for the electrostatic free energy calculation:
+<disp-formula id="pone.0119705.e022"><alternatives><graphic id="pone.0119705.e022g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0119705.e022"/><mml:math id="M22" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mo>Δ</mml:mo> <mml:mi>G</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>I</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:mo>Δ</mml:mo> <mml:msub><mml:mi>G</mml:mi> <mml:mi>helix</mml:mi></mml:msub> <mml:mo>·</mml:mo> <mml:mfrac><mml:msub><mml:mi>N</mml:mi> <mml:mi>I</mml:mi></mml:msub> <mml:msub><mml:mi>N</mml:mi> <mml:mi>helix</mml:mi></mml:msub></mml:mfrac> <mml:mo>=</mml:mo> <mml:mo>Δ</mml:mo> <mml:msub><mml:mi>G</mml:mi> <mml:mi>helix</mml:mi></mml:msub> <mml:mo>·</mml:mo> <mml:mfrac><mml:mn>36</mml:mn> <mml:mn>24</mml:mn></mml:mfrac></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(10)</label></disp-formula>
+Here <italic>N</italic><sub><italic>I</italic></sub> (36) and <italic>N</italic><sub>helix</sub> (24) are the number of nucleotides of the T2 pseudoknot and the 24-nt helix, respectively. The calculated results are shown in the <xref ref-type="table" rid="pone.0119705.t002">Table 2</xref> and the curve of Mg<sup>2+</sup>-induced folding stability is shown in <xref ref-type="fig" rid="pone.0119705.g006">Fig. 6c</xref>.</p>
+<table-wrap id="pone.0119705.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119705.t002</object-id>
+<label>Table 2</label>
+<caption>
+<title>The table shows the calculated electrostatic free energies of the T2 pseudoknot (the folded state, Δ<italic>G</italic><sup><italic>F</italic></sup>), the 24-nt helix (Δ<italic>G</italic><sub>helix</sub>) and the intermediate state (Δ<italic>G</italic><sup><italic>I</italic></sup>) under various [Mg<sup>2+</sup>].</title>
+</caption>
+<alternatives>
+<graphic id="pone.0119705.t002g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119705.t002"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1">[Mg<sup>2+</sup>] (in mol)</th>
+<th align="left" rowspan="1" colspan="1">0</th>
+<th align="left" rowspan="1" colspan="1">0.00005</th>
+<th align="left" rowspan="1" colspan="1">0.0001</th>
+<th align="left" rowspan="1" colspan="1">0.0005</th>
+<th align="left" rowspan="1" colspan="1">0.001</th>
+<th align="left" rowspan="1" colspan="1">0.005</th>
+<th align="left" rowspan="1" colspan="1">0.01</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Δ<italic>G</italic><sup><italic>F</italic></sup> (in kcal/mol)</td>
+<td align="char" char="." rowspan="1" colspan="1">59.52</td>
+<td align="char" char="." rowspan="1" colspan="1">59.47</td>
+<td align="char" char="." rowspan="1" colspan="1">59.45</td>
+<td align="char" char="." rowspan="1" colspan="1">58.41</td>
+<td align="char" char="." rowspan="1" colspan="1">57.27</td>
+<td align="char" char="." rowspan="1" colspan="1">51.64</td>
+<td align="char" char="." rowspan="1" colspan="1">47.28</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Δ<italic>G</italic><sub>helix</sub> (in kcal/mol)</td>
+<td align="char" char="." rowspan="1" colspan="1">30.30</td>
+<td align="char" char="." rowspan="1" colspan="1">30.29</td>
+<td align="char" char="." rowspan="1" colspan="1">30.28</td>
+<td align="char" char="." rowspan="1" colspan="1">30.18</td>
+<td align="char" char="." rowspan="1" colspan="1">30.04</td>
+<td align="char" char="." rowspan="1" colspan="1">28.51</td>
+<td align="char" char="." rowspan="1" colspan="1">26.55</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Δ<italic>G</italic><sup><italic>I</italic></sup> (in kcal/mol)</td>
+<td align="char" char="." rowspan="1" colspan="1">45.45</td>
+<td align="char" char="." rowspan="1" colspan="1">45.43</td>
+<td align="char" char="." rowspan="1" colspan="1">45.42</td>
+<td align="char" char="." rowspan="1" colspan="1">45.26</td>
+<td align="char" char="." rowspan="1" colspan="1">45.05</td>
+<td align="char" char="." rowspan="1" colspan="1">42.77</td>
+<td align="char" char="." rowspan="1" colspan="1">39.82</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec016">
+<title>Example 3: Estimation of Mg<sup>2+</sup> ion uptake</title>
+<p>The uptake of ions is the increase in the number of bound ions in a process such as RNA structural change [<xref ref-type="bibr" rid="pone.0119705.ref030">30</xref>, <xref ref-type="bibr" rid="pone.0119705.ref031">31</xref>]. The TBI server gives the average binding fraction of monovalent and divalent ions for a given RNA structure. The average uptake Mg<sup>2+</sup> ions for the folding process can be estimated from the difference in binding fraction between the folded and the unfolded RNA [<xref ref-type="bibr" rid="pone.0119705.ref021">21</xref>, <xref ref-type="bibr" rid="pone.0119705.ref030">30</xref>, <xref ref-type="bibr" rid="pone.0119705.ref031">31</xref>]. Using T2 pseudoknot as an example, we estimate the Mg<sup>2+</sup> uptake for the folding from the hairpin intermediate to the final pseudoknot state.</p>
+<p>Since the ion binding distribution can be sensitive to the RNA structure, we need to generate explicitly the ensemble of discrete hairpin conformations [<xref ref-type="bibr" rid="pone.0119705.ref032">32</xref>–<xref ref-type="bibr" rid="pone.0119705.ref035">35</xref>]. This can be achieved by using a separate method such as molecular dynamics or Monte Carlo simulational method or a coarse-grained conformational sampling method. To the purpose of illustrate the electrostatic calculations, we use the lowest free energy T2 hairpin structure as an example. The structure is based on a conformational ensemble generated by molecular dynamics simulation [<xref ref-type="bibr" rid="pone.0119705.ref034">34</xref>, <xref ref-type="bibr" rid="pone.0119705.ref035">35</xref>]. Using the TBI server, for the different Mg<sup>2+</sup> ion concentrations, we can compute the Mg<sup>2+</sup> ion binding fractions (<italic>f</italic><sub>Mg<sup>2+</sup></sub>) for the T2 pseudoknot and the hairpin, respectively. We then predict the Mg<sup>2+</sup> ion uptake in the folding process from the hairpin to the pseudoknot. As shown in <xref ref-type="fig" rid="pone.0119705.g007">Fig. 7</xref>, with a fixed 0.1M Na<sup>+</sup> and increasing [Mg<sup>2+</sup>] from 0 M to 5 mM, the Mg<sup>2+</sup> ion uptake increases from 0 to 0.035 per nucleotide. <xref ref-type="table" rid="pone.0119705.t003">Table 3</xref> and <xref ref-type="fig" rid="pone.0119705.g007">Fig. 7</xref> show the TBI-calculated binding fractions and the Mg<sup>2+</sup> ion uptake curve as a function of [Mg<sup>2+</sup>].</p>
+<fig id="pone.0119705.g007" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119705.g007</object-id>
+<label>Fig 7</label>
+<caption>
+<title>The binding fraction and the uptake of Mg<sup>2+</sup> ions as a function of [Mg<sup>2+</sup>].</title>
+<p>(a) and (b) show the 3D structures of the T2 pseudoknot (the folded state) and T2 hairpin (the intermediate state), respectively; (c) shows the binding fraction curves for the T2 pseudoknot (black) and the hairpin (red). (d) shows the Mg<sup>2+</sup> uptake as a function of [Mg<sup>2+</sup>].</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119705.g007"/>
+</fig>
+<table-wrap id="pone.0119705.t003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0119705.t003</object-id>
+<label>Table 3</label>
+<caption>
+<title>The table lists the calculated average binding fraction of the T2 pseudoknot (the folded state, <italic>f</italic><sup><italic>F</italic></sup>) and the intermediate state (<italic>f</italic><sup><italic>I</italic></sup>) under the different [Mg<sup>2+</sup>] conditions.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0119705.t003g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0119705.t003"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1">[Mg<sup>2+</sup>] (in mol)</th>
+<th align="left" rowspan="1" colspan="1">0</th>
+<th align="left" rowspan="1" colspan="1">0.00005</th>
+<th align="left" rowspan="1" colspan="1">0.0001</th>
+<th align="left" rowspan="1" colspan="1">0.0005</th>
+<th align="left" rowspan="1" colspan="1">0.001</th>
+<th align="left" rowspan="1" colspan="1">0.005</th>
+<th align="left" rowspan="1" colspan="1">0.01</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>f</italic><sup><italic>F</italic></sup></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="char" char="." rowspan="1" colspan="1">0.002</td>
+<td align="char" char="." rowspan="1" colspan="1">0.005</td>
+<td align="char" char="." rowspan="1" colspan="1">0.040</td>
+<td align="char" char="." rowspan="1" colspan="1">0.072</td>
+<td align="char" char="." rowspan="1" colspan="1">0.211</td>
+<td align="char" char="." rowspan="1" colspan="1">0.286</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>f</italic><sup><italic>I</italic></sup></td>
+<td align="left" rowspan="1" colspan="1">0</td>
+<td align="char" char="." rowspan="1" colspan="1">0.002</td>
+<td align="char" char="." rowspan="1" colspan="1">0.005</td>
+<td align="char" char="." rowspan="1" colspan="1">0.030</td>
+<td align="char" char="." rowspan="1" colspan="1">0.056</td>
+<td align="char" char="." rowspan="1" colspan="1">0.177</td>
+<td align="char" char="." rowspan="1" colspan="1">0.252</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+</sec>
+</sec>
+<sec id="sec017" sec-type="conclusions">
+<title>Conclusion</title>
+<p>Accurate prediction of ion-mediated forces in the stabilization of RNA structure is critical to understanding RNA structure and function. Multivalent ions, especially Mg<sup>2+</sup> ions, are crucial for RNA tertiary structure folding. For the multivalent ions, ion correlation and fluctuation may play a important role in RNA folding. This demands a web server that can treat ion correlation and fluctuation effects in RNA folding. TBI is such a server. For a user provided RNA structure and ionic condition, the server computes ion binding properties, electrostatic free energies and various components. The TBI server provides results can be used to predict the ion-dependence of folding stability and ion uptake/release in the folding process. In the future development, we plan (a) to expand the server to treat other types of ions beyond the Mg<sup>2+</sup> and Na<sup>+</sup> ions, (b) to use a more detailed charge distribution (such as partial charge) to model RNA charges, and (c) to include ion dehydration effects for ion binding.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>We thank Dr. Zhijie Tan for helpful discussions. Most of the computations involved in this research were performed on the HPC resources at the University of Missouri Bioinformatics Consortium (UMBC).</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0119705.ref001">
+<label>1</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Bowman</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Lenz</surname> <given-names>TK</given-names></name>, <name name-style="western"><surname>Hud</surname> <given-names>NV</given-names></name>, <name name-style="western"><surname>Williams</surname> <given-names>LD</given-names></name>. <article-title>Cations in charge: magnesium ions in RNA folding and catalysis</article-title>. <source>Curr Opin Chem Biol</source>. <year>2012</year>;<volume>22</volume>: <fpage>262</fpage>–<lpage>272</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0119705.ref002">
+<label>2</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Chen</surname> <given-names>AA</given-names></name>, <name name-style="western"><surname>Marucho</surname> <given-names>MN</given-names></name>, <name name-style="western"><surname>Baker</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Pappu</surname> <given-names>RV</given-names></name>. <article-title>Simulations of RNA interactions with mono-valent ions</article-title>. <source>Meth Enzymol</source>. <year>2009</year>;<volume>469</volume>: <fpage>411</fpage>–<lpage>432</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0076-6879(09)69020-0" xlink:type="simple">10.1016/S0076-6879(09)69020-0</ext-link></comment> <object-id pub-id-type="pmid">20946801</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref003">
+<label>3</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Draper</surname> <given-names>DE</given-names></name>. <article-title>A guide to ions and RNA structure</article-title>. <source>RNA</source>. <year>2004</year>;<volume>10</volume>: <fpage>335</fpage>–<lpage>343</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1261/rna.5205404" xlink:type="simple">10.1261/rna.5205404</ext-link></comment> <object-id pub-id-type="pmid">14970378</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref004">
+<label>4</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Draper</surname> <given-names>DE</given-names></name>, <name name-style="western"><surname>Grilley</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Soto</surname> <given-names>AM</given-names></name>. <article-title>Ions and RNA folding</article-title>. <source>Annu Rev Biophys Biomol Struct</source>. <year>2005</year>;<volume>34</volume>: <fpage>221</fpage>–<lpage>243</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev.biophys.34.040204.144511" xlink:type="simple">10.1146/annurev.biophys.34.040204.144511</ext-link></comment> <object-id pub-id-type="pmid">15869389</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref005">
+<label>5</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Ha</surname> <given-names>BY</given-names></name>, <name name-style="western"><surname>Thirumalai</surname> <given-names>D</given-names></name>. <article-title>Bending rigidity of stiff polyelectrolyte chains: A single chain and a bundle of multichains</article-title>. <source>Macromolecules</source>. <year>2003</year>;<volume>36</volume>: <fpage>9658</fpage>–<lpage>9666</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/ma021226k" xlink:type="simple">10.1021/ma021226k</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref006">
+<label>6</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Harris</surname> <given-names>RC</given-names></name>, <name name-style="western"><surname>Boschitsch</surname> <given-names>AH</given-names></name>, <name name-style="western"><surname>Fenley</surname> <given-names>MO</given-names></name>. <article-title>Sensitivities to parameterization in the size-modified poisson-boltzmann equation</article-title>. <source>J Chem Phys</source>. <year>2014</year>;<volume>140</volume>: <fpage>075102</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1063/1.4864460" xlink:type="simple">10.1063/1.4864460</ext-link></comment> <object-id pub-id-type="pmid">24559370</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref007">
+<label>7</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Kirmizialtin</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Pabit</surname> <given-names>SA</given-names></name>, <name name-style="western"><surname>Meisburger</surname> <given-names>SP</given-names></name>, <name name-style="western"><surname>Pollack</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Elber</surname> <given-names>R</given-names></name>. <article-title>RNA and its ionic cloud: Solution scattering experiments and atomically detailed simulations</article-title>. <source>Biophys J</source>. <year>2012</year>;<volume>102</volume>: <fpage>819</fpage>–<lpage>828</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.bpj.2012.01.013" xlink:type="simple">10.1016/j.bpj.2012.01.013</ext-link></comment> <object-id pub-id-type="pmid">22385853</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref008">
+<label>8</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Leipply</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Lambert</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Draper</surname> <given-names>DE</given-names></name>. <article-title>Ion-RNA interactions: thermodynamic analysis of the effects of mono- and divalent ions on RNA conformational equilibria</article-title>. <source>Meth Enzymol</source>. <year>2009</year>;<volume>469</volume>: <fpage>433</fpage>–<lpage>463</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0076-6879(09)69021-2" xlink:type="simple">10.1016/S0076-6879(09)69021-2</ext-link></comment> <object-id pub-id-type="pmid">20946802</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref009">
+<label>9</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Li Pan</surname> <given-names>TX</given-names></name>, <name name-style="western"><surname>Tinoco</surname> <given-names>I</given-names></name>. <article-title>Mechanical unfolding of two DIS RNA kissing complexes from HIV-1</article-title>. <source>J Mol Biol</source>. <year>2009</year>;<volume>386</volume>: <fpage>1343</fpage>–<lpage>1356</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jmb.2009.01.023" xlink:type="simple">10.1016/j.jmb.2009.01.023</ext-link></comment> <object-id pub-id-type="pmid">19452632</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref010">
+<label>10</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Moghaddam</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Caliskan</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Chauhan</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Hyeon</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Briber</surname> <given-names>RM</given-names></name>, <name name-style="western"><surname>Thirumalai</surname> <given-names>D</given-names></name>, <etal>et al</etal>. <article-title>Metal ion dependence of cooperative collapse transitions in RNA</article-title>. <source>J Mol Biol</source>. <year>2009</year>;<volume>393</volume>: <fpage>753</fpage>–<lpage>764</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jmb.2009.08.044" xlink:type="simple">10.1016/j.jmb.2009.08.044</ext-link></comment> <object-id pub-id-type="pmid">19712681</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref011">
+<label>11</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Qiu</surname> <given-names>X</given-names></name>, <name name-style="western"><surname>Giannini</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Howell</surname> <given-names>SC</given-names></name>, <name name-style="western"><surname>Xia</surname> <given-names>Q</given-names></name>, <name name-style="western"><surname>Ke</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Andresen</surname> <given-names>K</given-names></name>. <article-title>Ion competition in condensed DNA arrays in the attractive regime</article-title>. <source>Biophys J</source>. <year>2013</year>;<volume>105</volume>: <fpage>984</fpage>–<lpage>992</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.bpj.2013.07.004" xlink:type="simple">10.1016/j.bpj.2013.07.004</ext-link></comment> <object-id pub-id-type="pmid">23972850</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref012">
+<label>12</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Qiua</surname> <given-names>XY</given-names></name>, <name name-style="western"><surname>Parsegian</surname> <given-names>VA</given-names></name>, <name name-style="western"><surname>Rau</surname> <given-names>DC</given-names></name>. <article-title>Divalent counterion-induced condensation of triple-strand DNA</article-title>. <source>Proc Natl Acad Sci U S A</source>. <year>2010</year>;<volume>107</volume>: <fpage>21482</fpage>–<lpage>21486</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1003374107" xlink:type="simple">10.1073/pnas.1003374107</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref013">
+<label>13</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Baker</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Holst</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>F</given-names></name>. <article-title>Adaptive Multilevel Finite Element Solution of the Poisson-Boltzmann Equation II: Refinement at Solvent-Accessible Surfaces in Biomolecular Systems</article-title>. <source>J Comput Chem</source>. <year>2010</year>;<volume>21</volume>: <fpage>1343</fpage>–<lpage>1352</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/1096-987X(20001130)21:15%3C1343::AID-JCC2%3E3.3.CO;2-B" xlink:type="simple">10.1002/1096-987X(20001130)21:15%3C1343::AID-JCC2%3E3.3.CO;2-B</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref014">
+<label>14</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Li</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Sarkar</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Witham</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>Z</given-names></name>, <etal>et al</etal>. <article-title>DelPhi: a comprehensive suite for DelPhi software and associated resources</article-title>. <source>BMC Biophys</source>. <year>2012</year>;<volume>5</volume>: <fpage>9</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1186/2046-1682-5-9" xlink:type="simple">10.1186/2046-1682-5-9</ext-link></comment> <object-id pub-id-type="pmid">22583952</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref015">
+<label>15</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Hou</surname> <given-names>TJ</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>YY</given-names></name>, <name name-style="western"><surname>Wang</surname> <given-names>W</given-names></name>. <article-title>Assessing the Performance of the MM/PBSA and MM/GBSA Methods. 1 The Accuracy of Binding Free Energy Calculations Based on Molecular Dynamics Simulations</article-title>. <source>J Chem Inf Model</source>. <year>2011</year>;<volume>5</volume>: <fpage>69</fpage>–<lpage>82</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/ci100275a" xlink:type="simple">10.1021/ci100275a</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref016">
+<label>16</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Tan</surname> <given-names>ZJ</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>S-J</given-names></name>. <article-title>Electrostatic correlations and fluctuations for ion binding to a finite length polyelectrolyte</article-title>. <source>J Chem Phys</source>. <year>2005</year>;<volume>122</volume>: <fpage>44903</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1063/1.1842059" xlink:type="simple">10.1063/1.1842059</ext-link></comment> <object-id pub-id-type="pmid">15740294</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref017">
+<label>17</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Tan</surname> <given-names>ZJ</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>S-J</given-names></name>. <article-title>Electrostatic free energy landscapes for dna helix bending</article-title>. <source>Biophys J</source>. <year>2008</year>;<volume>94</volume>: <fpage>3137</fpage>–<lpage>3149</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1529/biophysj.107.122366" xlink:type="simple">10.1529/biophysj.107.122366</ext-link></comment> <object-id pub-id-type="pmid">18192348</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref018">
+<label>18</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Tan</surname> <given-names>ZJ</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>S-J</given-names></name>. <article-title>Importance of diffuse metal ion binding to RNA</article-title>. <source>Met Ions Life Sci</source>. <year>2011</year>;<volume>9</volume>: <fpage>101</fpage>–<lpage>124</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1039/9781849732512-00101" xlink:type="simple">10.1039/9781849732512-00101</ext-link></comment> <object-id pub-id-type="pmid">22010269</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref019">
+<label>19</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Tan</surname> <given-names>ZJ</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>S-J</given-names></name>. <article-title>Salt contribution to RNA tertiary structure folding stability</article-title>. <source>Biophys J</source>. <year>2011</year>;<volume>101</volume>: <fpage>176</fpage>–<lpage>187</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.bpj.2011.05.050" xlink:type="simple">10.1016/j.bpj.2011.05.050</ext-link></comment> <object-id pub-id-type="pmid">21723828</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref020">
+<label>20</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>He</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>S-J</given-names></name>. <article-title>Predicting ioncnucleic acid interactions by energy landscape-guided sampling</article-title>. <source>J Chem Theory Comput</source>. <year>2012</year>;<volume>8</volume>: <fpage>2095</fpage>–<lpage>2102</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/ct300227a" xlink:type="simple">10.1021/ct300227a</ext-link></comment> <object-id pub-id-type="pmid">23002389</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref021">
+<label>21</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>He</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Zhu</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>S-J</given-names></name>. <article-title>Exploring the electrostatic energy landscape for tetraloop-receptor docking</article-title>. <source>Phys Chem Chem Phys</source>. <year>2014</year>;<volume>16</volume>: <fpage>6367</fpage>–<lpage>6375</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1039/c3cp53655f" xlink:type="simple">10.1039/c3cp53655f</ext-link></comment> <object-id pub-id-type="pmid">24322001</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref022">
+<label>22</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Tan</surname> <given-names>ZJ</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>S-J</given-names></name>. <article-title>Nucleic acid helix stability: effects of salt concentration, cation valence and size, and chain length</article-title>. <source>Biophys J</source>. <year>2006</year>;<volume>90</volume>: <fpage>1175</fpage>–<lpage>1190</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1529/biophysj.105.070904" xlink:type="simple">10.1529/biophysj.105.070904</ext-link></comment> <object-id pub-id-type="pmid">16299077</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref023">
+<label>23</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Tan</surname> <given-names>ZJ</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>S-J</given-names></name>. <article-title>RNA helix stability in mixed Na<sup>+</sup>/Mg<sup>2+</sup>solution</article-title>. <source>Biophys J</source>. <year>2007</year>;<volume>92</volume>: <fpage>3615</fpage>–<lpage>3632</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1529/biophysj.106.100388" xlink:type="simple">10.1529/biophysj.106.100388</ext-link></comment> <object-id pub-id-type="pmid">17325014</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref024">
+<label>24</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Tan</surname> <given-names>ZJ</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>S-J</given-names></name>. <article-title>Predicting ion binding properties for RNA tertiary structures</article-title>. <source>Biophys J</source>. <year>2010</year>;<volume>99</volume>: <fpage>1565</fpage>–<lpage>1576</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.bpj.2010.06.029" xlink:type="simple">10.1016/j.bpj.2010.06.029</ext-link></comment> <object-id pub-id-type="pmid">20816069</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref025">
+<label>25</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Holland</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Hansen</surname> <given-names>MR</given-names></name>, <name name-style="western"><surname>Du</surname> <given-names>ZH</given-names></name>, <name name-style="western"><surname>Hofman</surname> <given-names>DW</given-names></name>. <article-title>An examination of coaxial stacking of helical stems in a pseudoknot motif: The gene 32 messenger RNA pseudoknot of bacteriophage T2</article-title>. <source>RNA</source>. <year>1999</year>;<volume>5</volume>: <fpage>257</fpage>–<lpage>271</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1017/S1355838299981360" xlink:type="simple">10.1017/S1355838299981360</ext-link></comment> <object-id pub-id-type="pmid">10024177</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref026">
+<label>26</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Misra</surname> <given-names>VK</given-names></name>, <name name-style="western"><surname>Draper</surname> <given-names>DE</given-names></name>. <article-title>The linkage between magnesium binding and RNA folding</article-title>. <source>J Mol Biol</source>. <year>2002</year>;<volume>317</volume>: <fpage>507</fpage>–<lpage>521</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/jmbi.2002.5422" xlink:type="simple">10.1006/jmbi.2002.5422</ext-link></comment> <object-id pub-id-type="pmid">11955006</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref027">
+<label>27</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Misra</surname> <given-names>VK</given-names></name>, <name name-style="western"><surname>Shiman</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Draper</surname> <given-names>DE</given-names></name>. <article-title>A thermodynamic framework for the magnesium-dependent folding of RNA</article-title>. <source>Biopolymers</source>. <year>2003</year>;<volume>69</volume>: <fpage>118</fpage>–<lpage>136</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/bip.10353" xlink:type="simple">10.1002/bip.10353</ext-link></comment> <object-id pub-id-type="pmid">12717727</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref028">
+<label>28</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Grilley</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Misra</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Caliskan</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Draper</surname> <given-names>DE</given-names></name>. <article-title>Importance of partially unfolded conformations for Mg<sup>2+</sup>-induced folding of RNA tertiary structure: Structural models and free energies of Mg<sup>2+</sup> interactions</article-title>. <source>Biochemistry</source>. <year>2007</year>;<volume>46</volume>: <fpage>10266</fpage>–<lpage>10278</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/bi062284r" xlink:type="simple">10.1021/bi062284r</ext-link></comment> <object-id pub-id-type="pmid">17705557</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref029">
+<label>29</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Woodson</surname> <given-names>SA</given-names></name>. <article-title>Metal ions and RNA folding: a highly charged topic with a dynamic future</article-title>. <source>Curr Opin Chem Biol</source>. <year>2005</year>;<volume>9</volume>: <fpage>104</fpage>–<lpage>109</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cbpa.2005.02.004" xlink:type="simple">10.1016/j.cbpa.2005.02.004</ext-link></comment> <object-id pub-id-type="pmid">15811793</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref030">
+<label>30</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Leipply</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Draper</surname> <given-names>DE</given-names></name>. <article-title>Dependence of rna tertiary structural stability on Mg<sup>2+</sup> concentration: interpretation of the hill equation and coefficient</article-title>. <source>Biochemistry</source>. <year>2010</year>;<volume>49</volume>: <fpage>1843</fpage>–<lpage>1853</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1021/bi902036j" xlink:type="simple">10.1021/bi902036j</ext-link></comment> <object-id pub-id-type="pmid">20112919</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref031">
+<label>31</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Fiore</surname> <given-names>JL</given-names></name>, <name name-style="western"><surname>Holmstrom</surname> <given-names>ED</given-names></name>, <name name-style="western"><surname>Fiegland</surname> <given-names>LR</given-names></name>, <name name-style="western"><surname>Hodak</surname> <given-names>JH</given-names></name>, <name name-style="western"><surname>Nesbitt</surname> <given-names>DJ</given-names></name>. <article-title>The role of counterion valence and size in GAAA tetraloop-receptor docking/undocking kinetics</article-title>. <source>J Mol Biol</source>. <year>2012</year>;<volume>423</volume>: <fpage>198</fpage>–<lpage>216</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.jmb.2012.07.006" xlink:type="simple">10.1016/j.jmb.2012.07.006</ext-link></comment> <object-id pub-id-type="pmid">22796627</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref032">
+<label>32</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Schroeder</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Barta</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Semrad</surname> <given-names>K</given-names></name>. <article-title>Strategies for RNA folding and assembly</article-title>. <source>Nat Rev Mol Cell Biol</source>. <year>2004</year>;<volume>5</volume>: <fpage>908</fpage>–<lpage>919</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nrm1497" xlink:type="simple">10.1038/nrm1497</ext-link></comment> <object-id pub-id-type="pmid">15520810</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref033">
+<label>33</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Zhou</surname> <given-names>HX</given-names></name>. <article-title>From induced fit to conformational selection: a continuum of binding mechanism controlled by the time scale of conformational transitions</article-title>. <source>Biophys J</source>. <year>2010</year>;<volume>98</volume>: <fpage>L15</fpage>–<lpage>7</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.bpj.2009.11.029" xlink:type="simple">10.1016/j.bpj.2009.11.029</ext-link></comment> <object-id pub-id-type="pmid">20303846</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref034">
+<label>34</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Xu</surname> <given-names>XJ</given-names></name>, <name name-style="western"><surname>Zhao</surname> <given-names>PN</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>S-J</given-names></name>. <article-title>Vfold: a web server for RNA structure and folding thermodynamics prediction</article-title>. <source>PLoS ONE</source>. <year>2014</year>;<volume>9</volume>: <fpage>e107504</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0107504" xlink:type="simple">10.1371/journal.pone.0107504</ext-link></comment> <object-id pub-id-type="pmid">25215508</object-id></mixed-citation>
+</ref>
+<ref id="pone.0119705.ref035">
+<label>35</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Zhu</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>S-J</given-names></name>. <article-title>Many-body effect in ion binding to RNA</article-title>. <source>J Chem Phys</source>. <year>2014</year>;<volume>141</volume>: <fpage>055101</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1063/1.4890656" xlink:type="simple">10.1063/1.4890656</ext-link></comment> <object-id pub-id-type="pmid">25106614</object-id></mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>
