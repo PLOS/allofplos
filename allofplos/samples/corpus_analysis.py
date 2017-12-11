@@ -315,7 +315,7 @@ def get_random_list_of_dois(directory=corpusdir, count=100):
     try:
         article_list = listdir_nohidden(directory)
         sample_file_list = random.sample(article_list, count)
-        sample_doi_list = [filename_to_doi(file) for file in sample_file_list]
+        sample_doi_list = [filename_to_doi(f) for f in sample_file_list]
     except OSError:
         doi_list = get_all_solr_dois()
         sample_doi_list = random.sample(doi_list, count)
