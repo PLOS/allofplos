@@ -22,6 +22,8 @@ regex_file_search = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7})"
 full_doi_regex_match = re.compile(regex_match_prefix+regex_body_match)
 full_doi_regex_search = re.compile(r"10\.1371/journal\.p[a-zA-Z]{3}\.[\d]{7}"
                                    "|10\.1371/annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")
+partial_doi_regex_search = re.compile(r"p[a-zA-Z]{3}\.[\d]{7}"
+                                      "|annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")
 currents_doi_regex = re.compile(regex_match_prefix+regex_body_currents)
 file_regex_match = re.compile(regex_file_search+r"\.xml")
 BASE_URL = 'http://journals.plos.org/plosone/article/file?id='
@@ -73,6 +75,15 @@ def find_valid_dois(doi):
     :return: list of valid PLOS DOIs contained within string
     """
     return full_doi_regex_search.findall(doi)
+
+
+def find_valid_partial_dois(doi):
+    """
+    For an individual string, searches for any valid partial PLOS DOIs within it and returns them
+    Uses for finding DOIs in PLOS job tickets
+    :return: list of valid PLOS partial DOIs contained within string
+    """
+    return partial_doi_regex_search.findall(doi)
 
 
 def show_invalid_dois(doi_list):
