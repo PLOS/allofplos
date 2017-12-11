@@ -229,7 +229,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         existing_articles = [filename_to_doi(file) for file in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
 
-    for doi in tqdm(sorted(dois), disable=len(dois)==0):
+    for doi in tqdm(sorted(dois), disable=not dois):
         url = URL_TMP.format(doi)
         articleXML = et.parse(url)
         article_path = doi_to_path(doi, directory=tempdir)
@@ -372,7 +372,7 @@ def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amende
         amended_article_list = check_for_amended_articles(directory)
     amended_updated_article_list = []
     print("Checking amended articles...")
-    for article in tqdm(amended_article_list, disable=len(amended_article_list)==0):
+    for article in tqdm(amended_article_list, disable=not amended_article_list):
         updated = download_updated_xml(article)
         if updated:
             amended_updated_article_list.append(article)
@@ -496,7 +496,7 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
     if vor_updates_available is None:
         vor_updates_available = check_for_vor_updates()
     vor_updated_article_list = []
-    for article in tqdm(vor_updates_available, disable=len(vor_updates_available)==0):
+    for article in tqdm(vor_updates_available, disable=not vor_updates_available):
         updated = download_updated_xml(article, vor_check=True)
         if updated:
             vor_updated_article_list.append(article)
