@@ -1,3 +1,4 @@
+from collections import OrderedDict
 import os
 import random
 
@@ -25,8 +26,7 @@ class Corpus():
         For corpus attributes that are memoized and specific to that particular corpus,
         reset them when creating a new corpus object.
         """
-        self._files = None
-        self._dois = None
+        self._file_doi = None
 
     @property
     def directory(self):
@@ -43,6 +43,18 @@ class Corpus():
         """
         self.reset_memoized_attrs()
         self._directory = d
+
+    @property
+    def file_doi(self):
+        """An ordered dict that maps every corpus file to its accompanying DOI.
+        Used to generate both DOI and file lists for the corpus; both also ordered.
+        """
+        if self._file_doi is None:
+            self._file_doi = OrderedDict((file_, filename_to_doi(file_)) for file_ in os.listdir(self.directory)
+                                         if file_.endswith('.xml') and 'DS_Store' not in file_)
+        else:
+            pass
+        return self._file_doi
 
     @property
     def files(self):
@@ -72,6 +84,7 @@ class Corpus():
             pass
 
         return self._dois
+
 
     def random_dois(self, count):
         """
