@@ -82,11 +82,11 @@ def listdir_nohidden(path, extension='.xml', include_dir=True):
     """
 
     if include_dir:
-        file_list = [os.path.join(path, file) for file in os.listdir(path)
-                     if file.endswith(extension) and 'DS_Store' not in file]
+        file_list = [os.path.join(path, f) for f in os.listdir(path)
+                     if f.endswith(extension) and 'DS_Store' not in f]
     else:
-        file_list = [file for file in os.listdir(path) if file.endswith(extension) and
-                     'DS_Store' not in file]
+        file_list = [f for f in os.listdir(path) if f.endswith(extension) and
+                     'DS_Store' not in f]
     return file_list
 
 
@@ -226,7 +226,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         pass
 
     if ignore_existing:
-        existing_articles = [filename_to_doi(file) for file in listdir_nohidden(tempdir)]
+        existing_articles = [filename_to_doi(f) for f in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
 
     for doi in tqdm(sorted(dois), disable=not dois):
@@ -235,8 +235,8 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         article_path = doi_to_path(doi, directory=tempdir)
         # create new local XML files
         if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
-            with open(article_path, 'w') as file:
-                file.write(et.tostring(articleXML, method='xml', encoding='unicode'))
+            with open(article_path, 'w') as f:
+                f.write(et.tostring(articleXML, method='xml', encoding='unicode'))
             if not plos_network:
                 time.sleep(1)
 
@@ -327,8 +327,8 @@ def download_updated_xml(article_file,
             #     updated = False
         if get_new:
             article_new = Article(article.doi, directory=tempdir)
-            with open(article_new.filename, 'w') as file:
-                file.write(articleXML_remote)
+            with open(article_new.filename, 'w') as f:
+                f.write(articleXML_remote)
             updated = True
     return updated
 
@@ -387,8 +387,8 @@ def get_uncorrected_proofs_list():
     :return: list of DOIs of uncorrected proofs from text list
     """
     try:
-        with open(uncorrected_proofs_text_list) as file:
-            uncorrected_proofs_list = file.read().splitlines()
+        with open(uncorrected_proofs_text_list) as f:
+            uncorrected_proofs_list = f.read().splitlines()
     except FileNotFoundError:
         print("Creating new text list of uncorrected proofs from scratch.")
         article_files = listdir_nohidden(corpusdir)
@@ -398,10 +398,10 @@ def get_uncorrected_proofs_list():
             if article.proof == 'uncorrected-proof':
                 uncorrected_proofs_list.append(article.doi)
         print("Saving uncorrected proofs.")
-        with open(uncorrected_proofs_text_list, 'w') as file:
+        with open(uncorrected_proofs_text_list, 'w') as f:
             max_value = len(uncorrected_proofs_list)
             for item in tqdm(sorted(uncorrected_proofs_list)):
-                file.write("%s\n" % item)
+                f.write("%s\n" % item)
     return uncorrected_proofs_list
 
 
@@ -429,9 +429,9 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
             uncorrected_proofs_list.append(article.doi)
             new_proofs += 1
     # Copy all uncorrected proofs from list to clean text file
-    with open(text_list, 'w') as file:
+    with open(text_list, 'w') as f:
         for item in sorted(set(uncorrected_proofs_list)):
-            file.write("%s\n" % item)
+            f.write("%s\n" % item)
     if uncorrected_proofs_list:
         print("{} new uncorrected proofs found. {} total in list.".format(new_proofs, len(uncorrected_proofs_list)))
     else:
@@ -516,9 +516,9 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
 
     # if any VOR articles have been downloaded, update static uncorrected proofs list
     if vor_updated_article_list:
-        with open(uncorrected_proofs_text_list, 'w') as file:
+        with open(uncorrected_proofs_text_list, 'w') as f:
             for item in sorted(new_uncorrected_proofs_list):
-                file.write("%s\n" % item)
+                f.write("%s\n" % item)
         print("{} uncorrected proofs updated to version of record.\n".format(len(vor_updated_article_list)) +
               "{} uncorrected proofs remaining in uncorrected proof list.".format(len(new_uncorrected_proofs_list)))
 
@@ -547,8 +547,8 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
         article_list = get_uncorrected_proofs_list()
     print("Checking directly for additional VOR updates...")
     for doi in tqdm(list(set(article_list))):
-        file = doi_to_path(doi)
-        updated = download_updated_xml(file, vor_check=True)
+        f = doi_to_path(doi)
+        updated = download_updated_xml(f, vor_check=True)
         if updated:
             proofs_download_list.append(doi)
     if proofs_download_list:
