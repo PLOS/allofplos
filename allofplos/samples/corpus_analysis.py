@@ -17,7 +17,7 @@ from tqdm import tqdm
 
 from .. import corpusdir, newarticledir
 
-from ..plos_regex import (validate_doi, full_doi_regex_match, validate_url)
+from ..plos_regex import (validate_doi, full_doi_regex_match, validate_url, validate_filename)
 from ..transformations import (filename_to_doi, doi_to_url)
 from ..plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list,
                            download_updated_xml, get_all_solr_dois,
@@ -83,11 +83,11 @@ def validate_corpus(corpusdir=corpusdir):
 
 def get_jats_article_type_list(article_list=None, directory=corpusdir):
     """Makes a list of of all JATS article types in the corpus
-    
+
     Sorts them by frequency of occurrence
     :param article_list: list of articles, defaults to None
     :param directory: directory of articles, defaults to corpusdir
-    :returns: dictionary with each JATS type matched to number of occurrences 
+    :returns: dictionary with each JATS type matched to number of occurrences
     :rtype: dict
     """
     if article_list is None:
@@ -106,11 +106,11 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
 
 def get_plos_article_type_list(article_list=None, directory=corpusdir):
     """Makes a list of of all internal PLOS article types in the corpus
-    
+
     Sorts them by frequency of occurrence
     :param article_list: list of articles, defaults to None
     :param directory: directory of articles, defaults to corpusdir
-    :returns: dictionary with each PLOS type matched to number of occurrences 
+    :returns: dictionary with each PLOS type matched to number of occurrences
     :rtype: dict
     """
     if article_list is None:
@@ -150,7 +150,7 @@ def get_article_types_map(article_list=None, directory=corpusdir):
 
 def article_types_map_to_csv(article_types_map):
     """put the `get_article_types_map.()` list of tuples into a csv.
-    
+
     :param article_types_map: output of `get_article_types_map()`
     """
     with open('articletypes.csv', 'w') as out:
@@ -271,7 +271,7 @@ def check_solr_doi(doi):
 
 def get_all_local_dois(corpusdir=corpusdir):
     """Get all local DOIs in a corpus directory.
-    
+
     :param corpusdir: directory of articles, defaults to corpusdir
     :returns: list of DOIs
     :rtype: list

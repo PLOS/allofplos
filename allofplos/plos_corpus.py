@@ -399,7 +399,6 @@ def get_uncorrected_proofs_list():
                 uncorrected_proofs_list.append(article.doi)
         print("Saving uncorrected proofs.")
         with open(uncorrected_proofs_text_list, 'w') as f:
-            max_value = len(uncorrected_proofs_list)
             for item in tqdm(sorted(uncorrected_proofs_list)):
                 f.write("%s\n" % item)
     return uncorrected_proofs_list
