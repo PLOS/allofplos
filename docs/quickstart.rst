@@ -15,6 +15,7 @@ DOIs are used to initialize an article object. The Article class parses the loca
     >>> article = Article(corpus.dois[99])
     >>> article.journal
     'PLOS ONE'
+    
     >>> article.type_
     'research-article'
 
@@ -23,7 +24,7 @@ DOIs are used to initialize an article object. The Article class parses the loca
 
     >>> article.pubdate
     datetime.datetime(2015, 4, 1, 0, 0)
-    
+
     >>> article.authors[1]
     {'affiliations': ['Department of Population Medicine, Harvard Medical School/Harvard Pilgrim Health Care Institute, Boston, MA, USA'],
      'author_roles': {'author_notes': ['Analyzed the data',
