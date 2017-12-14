@@ -14,10 +14,11 @@ class Corpus():
     """A collection of PLOS articles.
     """
 
-    def __init__(self, directory=corpusdir, plos_network=False):
+    def __init__(self, directory=corpusdir, plos_network=False, extension='.xml'):
         """Creation of an article corpus class."""
         self.directory = directory
         self.plos_network = plos_network
+        self.extension = extension
         self.reset_memoized_attrs()
 
     def reset_memoized_attrs(self):
@@ -51,7 +52,7 @@ class Corpus():
         """
         if self._file_doi is None:
             self._file_doi = OrderedDict((file_, filename_to_doi(file_)) for file_ in os.listdir(self.directory)
-                                         if file_.endswith('.xml') and 'DS_Store' not in file_)
+                                         if file_.endswith(self.extension) and 'DS_Store' not in file_)
         else:
             pass
         return self._file_doi
