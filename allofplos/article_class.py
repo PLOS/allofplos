@@ -910,7 +910,8 @@ class Article():
                                                           "title-group",
                                                           "article-title"])
         title_text = et.tostring(title[0], encoding='unicode', method='text', pretty_print=True)
-        return title_text.rstrip('\n')
+        title_cleaned = " ".join(title_text.split())
+        return title_cleaned
 
     @property
     def pubdate(self):
