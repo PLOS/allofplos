@@ -45,9 +45,6 @@ help_str = "This program downloads a zip file with all PLOS articles and checks 
 # Making sure DS.Store not included as file
 ignore_func = shutil.ignore_patterns('.DS_Store')
 
-# List of uncorrected proof articles to check for updates
-uncorrected_proofs_text_list = 'uncorrected_proofs_list.txt'
-
 # Some example URLs that may be useful
 EXAMPLE_VOR_URL = ('http://solr-101.soma.plos.org:8011/solr/collection1/select?'
                    'q=id%3A+10.1371%2Fjournal.pgen.1006621%0A&fq=publication_stage%3A+vor-update-to-uncorrected-proof'

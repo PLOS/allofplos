@@ -12,6 +12,9 @@ starterdir = os.path.join(ALLOFPLOS_DIR_PATH, 'starter_corpus')
 # Temporary folder for downloading and processing new articles
 newarticledir = os.path.join(ALLOFPLOS_DIR_PATH, 'new_plos_articles')
 
+# List of uncorrected proof articles to check for updates
+uncorrected_proofs_text_list = os.path.join(ALLOFPLOS_DIR_PATH, 'uncorrected_proofs_list.txt')
+
 del os
 
 # NB: any packages that you want to expose at the top level, you will need to
