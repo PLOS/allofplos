@@ -45,6 +45,17 @@ class Corpus():
         self.reset_memoized_attrs()
         self._directory = d
 
+
+    def __repr__(self):
+        """Value of a corpus object when you call it directly on the command line.
+
+        Shows the directory location of the corpus
+        :returns: directory
+        :rtype: {str}
+        """
+        out = "Corpus location: {0}\nNumber of files: {1}".format(self.directory, len(self.files))
+        return out
+
     @property
     def file_doi(self):
         """An ordered dict that maps every corpus file to its accompanying DOI.
