@@ -1,4 +1,5 @@
 from collections import OrderedDict
+from pathlib import Path
 import os
 import random
 
@@ -127,16 +128,53 @@ class Corpus():
     #     self.doi = filename_to_doi(value)
 
     @classmethod
-    def from_dois(cls, dois, source=corpusdir, destination='testdir'):
-        """Initiate a corpus object using a doi list with a source directory.
-        All DOIs must correspond to articles in the source directory
+    def from_dois(cls, dois, source=corpusdir, destination='testdir', overwrite=True):
+        """Initiate a corpus object using a doi list, with a source directory.
+        Uses symlinks instead of creating duplicate article objects.
+        All DOIs must correspond to articles in the source directory.
+        Will not work if files already exist in testdir. Will erase existing symlinks
+        by default.
+        :param dois: list of PLOS DOIs
+        :param source: directory with PLOS article XML files
+        :param destination: new directory where will create symlinks to articles
+        :param overwrite: if symlinks already exist in testdir, overwrite them
         """
-        try:
-            os.mkdir(destination)
-        except FileExistsError:
-            print(os.listdir(destination))
+        os.makedirs(destination, exist_ok=True)
+
+        # make sure that all files exist in the source
+        corpus_source = Corpus(directory=source)
+        source_dois = corpus_source.dois
+        if set(dois).issubset(set(source_dois)):
+            pass
+        else:
+            print("unable to create links; not all DOIs represented in source directory.")
             return None
-        for doi in dois:
-            os.symlink(doi_to_path(doi, directory=source),
-                       doi_to_path(doi, directory=destination))
-        return cls(directory=destination)
+
+        # if already files/symlinks at destination
+        if os.listdir(destination) and overwrite is True:
+            print("removing existing symlinks...")
+            p = Path(destination)
+            for item in p.iterdir():
+                if Path(item).is_symlink():
+                    Path(item).unlink()
+                elif Path(item).is_file():
+                    if '.DS_Store' not in item.name:
+                        print("files already exist in destination; aborting corpus creation")
+                        return None
+                    else:
+                        pass
+        elif os.listdir(destination) and overwrite is False:
+            print("ignoring existing files in destination directory")
+        else:
+            pass
+
+        # create the symlinks
+        if dois:
+            for doi in dois:
+                os.symlink(doi_to_path(doi, directory=source),
+                           doi_to_path(doi, directory=destination))
+            print("New corpus created with {} files".format(len(dois)))
+            return cls(directory=destination)
+        else:
+            print("No DOIs in DOI list; corpus not created")
+            return None
