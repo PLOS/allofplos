@@ -43,7 +43,7 @@ As an example of what can be done with this data, can be found in the corpus_ana
 
 The project includes a ready to use SQLite [sqlite] Database with the seed data and a script to generate a custom database (makedb.py). With this script the user can generate a database out of the whole PLOS Corpus or a random subset with any given amount of articles. The database includes most article metadata and the abstract. This way the corpus can be searched with any standard SQL query. As an alternative to SQL, an Object Relational Mapper (ORM) based search is provided in dbtoorm.py.
 
-![Database schema showing the relationship between different paper metadata.](graphs.png)
+![Database schema showing the relationship between different paper metadata.](graph.png)
 
 # Data Availability
 
