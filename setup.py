@@ -32,8 +32,7 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='science PLOS publishing',
-    #packages=find_packages(exclude=['contrib', 'docs', 'tests']),
-    packages=['allofplos'],
+    packages=find_packages(),
     # List run-time dependencies here.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
@@ -57,7 +56,7 @@ setup(
     # have to be included in MANIFEST.in as well.
     package_data={
         'allofplos':['seed.db'],
-        'seed_corpus': ['*.xml'],
+        'allofplos.seed_corpus': ['*.xml'],
     },
 
     #include_package_data=True,
