@@ -15,7 +15,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='allofplos',
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.9.5',
+    version='0.9.6',
     description='Get and analyze all PLOS articles',
     long_description=long_description,
     url='https://github.com/PLOS/allofplos',
@@ -32,8 +32,7 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='science PLOS publishing',
-    #packages=find_packages(exclude=['contrib', 'docs', 'tests']),
-    packages=['allofplos'],
+    packages=find_packages(),
     # List run-time dependencies here.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
@@ -55,9 +54,10 @@ setup(
     # If there are data files included in your packages that need to be
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
-    ##package_data={
-    ##    'sample': ['package_data.dat'],
-    ##},
+    package_data={
+        'allofplos':['seed.db'],
+        'allofplos.seed_corpus': ['*.xml'],
+    },
 
     # Although 'package_data' is the preferred approach, in some case you may
     # need to place data files outside of your packages. See:
