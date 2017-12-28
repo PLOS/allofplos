@@ -5,9 +5,7 @@ import random
 from . import corpusdir
 
 from .article_class import Article
-from .plos_corpus import get_all_solr_dois
-from .transformations import filename_to_doi
-
+from .transformations import filename_to_doi, doi_to_path
 
 
 class Corpus():
@@ -99,17 +97,13 @@ class Corpus():
     def random_dois(self, count):
         """
         Gets a list of random DOIs. Construct from local files in
-        corpusdir, otherwise tries Solr DOI list as backup.
+        corpusdir.
         :param directory: directory of articles for class object
         :param count: specify how many DOIs are to be returned
         :return: a list of random DOIs for analysis
         """
-        try:
-            doi_list = self.dois
-            sample_doi_list = random.sample(doi_list, count)
-        except OSError:
-            doi_list = get_all_solr_dois()
-            sample_doi_list = random.sample(doi_list, count)
+        doi_list = self.dois
+        sample_doi_list = random.sample(doi_list, count)
 
         return sample_doi_list
 
