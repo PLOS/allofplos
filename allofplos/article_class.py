@@ -815,7 +815,19 @@ class Article():
 
         Where to access an article's HTML version
         """
-        return BASE_URL_ARTICLE_LANDING_PAGE + self.doi
+        if len(self.journal.split(' ')) == 2:
+            BASE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='.format(self.journal.lower().split(' ')[1])
+        elif 'negl' in self.journal.lower():
+            BASE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='.format('ntds')
+        elif 'comp' in self.journal.lower():
+            BASE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='.format('compbiol')
+        elif 'clinical trials' in self.journal.lower():
+            BASE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='.format('ctr')
+        else:
+            print('URL error for {}'.format(self.doi))
+            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE
+
+        return BASE_LANDING_PAGE + self.doi
 
     @property
     def url(self):
