@@ -3,6 +3,7 @@ import re
 import subprocess
 
 import lxml.etree as et
+from lxml import objectify
 import requests
 
 from . import corpusdir
@@ -913,17 +914,38 @@ class Article():
     def title(self):
         """For an individual PLOS article, get its title.
 
+        Preserves HTML formatting but removes all other XML tagging, namespace/xlink info, etc.
+        Doesn't do xpath directly on `self.root` so can deannotate separate object
+        See http://lxml.de/objectify.html#how-data-types-are-matched for more info on deannotate process
+        Exceptions that still need handling:
+        10.1371/journal.pone.0179720, 10.1371/journal.pone.0068479, 10.1371/journal.pone.0069681,
+        10.1371/journal.pone.0068965, 10.1371/journal.pone.0083868, 10.1371/journal.pone.0069554,
+        10.1371/journal.pone.0068324, 10.1371/journal.pone.0067986, 10.1371/journal.pone.0068704,
+        10.1371/journal.pone.0068492, 10.1371/journal.pone.0068764, 10.1371/journal.pone.0068979,
+        10.1371/journal.pone.0068544, 10.1371/journal.pone.0069084, 10.1371/journal.pone.0069675
+
         :return: string of article title at specified xpath location
         """
-        title = self.get_element_xpath(tag_path_elements=["/",
-                                                          "article",
-                                                          "front",
-                                                          "article-meta",
-                                                          "title-group",
-                                                          "article-title"])
-        title_text = et.tostring(title[0], encoding='unicode', method='text', pretty_print=True)
-        title_cleaned = " ".join(title_text.split())
-        return title_cleaned
+        root = self.root
+        objectify.deannotate(root, cleanup_namespaces=True, xsi_nil=True)
+        art_title = root.xpath("/article/front/article-meta/title-group/article-title")
+        art_title = art_title[0]
+        try:
+            text = art_title.text
+            if text is None:
+                text = ''
+            text += ''.join(et.tostring(child, encoding='unicode') if child.tag not in ('ext-link', 'named-content', 'sc', 'monospace') \
+                                                                   else child.text + child.tail if child.tail is not None \
+                                                                   else child.text
+                            for child in art_title.getchildren())
+            title = text.replace(' xmlns:xlink="http://www.w3.org/1999/xlink"', '') \
+                        .replace(' xmlns:mml="http://www.w3.org/1998/Math/MathML"', '') \
+                        .replace(' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance', '')
+        except TypeError:
+            # try to rewrite so this isn't needed
+            print('Error processing article title for {}'.format(self.doi))
+            title = et.tostring(art_title, method='text', encoding='unicode')
+        return title
 
     @property
     def pubdate(self):
