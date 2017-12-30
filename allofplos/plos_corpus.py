@@ -134,12 +134,15 @@ def search_solr_records(days_ago=14, start=0, rows=1000, start_date=None, end_da
     howmanyarticles_url = ''.join(howmanyarticles_url_base) + '&rows=1000'
     # if include_uncorrected is False:
     num_results = requests.get(howmanyarticles_url).json()["response"]["numFound"]
+    print(num_results)
 
     # Create solr_search_results & paginate through results
+    solr_search_results = []
     while(start < num_results):
         query_url = ''.join(howmanyarticles_url_base) + '&start=' + str(start) + '&rows=' + str(rows)
         article_search = requests.get(query_url).json()
-        solr_search_results = [x[item] for x in article_search["response"]["docs"]]
+        solr_partial_results = [x[item] for x in article_search["response"]["docs"]]
+        solr_search_results.extend(solr_partial_results)
         start = start + rows
         if start + rows > num_results:
             rows = num_results - start
