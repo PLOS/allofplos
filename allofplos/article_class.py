@@ -914,6 +914,22 @@ class Article():
     def title(self):
         """For an individual PLOS article, get its title.
 
+        :return: string of article title at specified xpath location
+        """
+        title = self.get_element_xpath(tag_path_elements=["/",
+                                                          "article",
+                                                          "front",
+                                                          "article-meta",
+                                                          "title-group",
+                                                          "article-title"])
+        title_text = et.tostring(title[0], encoding='unicode', method='text', pretty_print=True)
+        title_cleaned = " ".join(title_text.split())
+        return title_cleaned
+
+    @property
+    def rich_title(self):
+        """For an individual PLOS article, get its title with HTML formatting.
+
         Preserves HTML formatting but removes all other XML tagging, namespace/xlink info, etc.
         Doesn't do xpath directly on `self.root` so can deannotate separate object
         See http://lxml.de/objectify.html#how-data-types-are-matched for more info on deannotate process
