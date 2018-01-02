@@ -1,3 +1,4 @@
+import datetime
 import os
 import re
 import subprocess
@@ -281,6 +282,25 @@ class Article():
                     print('Error getting history dates for {}'.format(self.doi))
                     date = ''
                 dates[date_type] = date
+
+        # third location is for vor updates when it's updated (see `proof(self)`)
+        rev_date = ''
+        if self.proof == 'vor_update':
+            tag_path = ('/',
+                        'article',
+                        'front',
+                        'article-meta',
+                        'custom-meta-group',
+                        'custom-meta')
+            xpath_results = self.get_element_xpath(tag_path_elements=tag_path)
+            for result in xpath_results:
+                if result.xpath('./meta-name')[0].text == 'Publication Update':
+                    rev_date_string = result.xpath('./meta-value')[0].text
+                    rev_date = datetime.datetime.strptime(rev_date_string, '%Y-%m-%d')
+                    break
+                else:
+                    pass
+        dates['updated'] = rev_date
 
         if string_:
             # can return dates as strings instead of datetime objects if desired
