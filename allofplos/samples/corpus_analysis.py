@@ -339,8 +339,9 @@ def get_article_metadata(article_file, size='small'):
     plos_article_type = article.plostype
     dtd_version = article.dtd
     dates = article.get_dates()
-    (pubdate, collection, received, accepted) = ('', '', '', '')
+    (pubdate, collection, received, accepted, revdate) = ('', '', '', '', '')
     pubdate = article.pubdate
+    revdate = article.revdate
     counts = article.counts
     (fig_count, table_count, page_count) = ('', '', '')
     body_word_count = article.word_count
@@ -370,10 +371,10 @@ def get_article_metadata(article_file, size='small'):
         page_count = counts['page-count']
     except KeyError:
         pass
-    metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate, received,
+    metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate, revdate, received,
                 accepted, collection, fig_count, table_count, page_count, body_word_count, related_articles, abstract]
     metadata = tuple(metadata)
-    if len(metadata) == 17:
+    if len(metadata) == 18:
         return metadata
     else:
         print('Error in {}: {} items'.format(article_file, len(metadata)))
@@ -411,7 +412,7 @@ def corpus_metadata_to_csv(corpus_metadata=None,
     with open(csv_file, 'w') as out:
         csv_out = csv.writer(out)
         csv_out.writerow(['doi', 'filename', 'title', 'journal', 'jats_article_type', 'plos_article_type',
-                          'dtd_version', 'pubdate', 'received', 'accepted', 'collection', 'fig_count', 'table_count',
+                          'dtd_version', 'pubdate', 'revdate', 'received', 'accepted', 'collection', 'fig_count', 'table_count',
                           'page_count', 'body_word_count', 'related_article', 'abstract'])
         for row in corpus_metadata:
             csv_out.writerow(row)
