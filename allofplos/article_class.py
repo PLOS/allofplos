@@ -994,6 +994,16 @@ class Article():
         return dates['epub']
 
     @property
+    def revdate(self):
+        """The date an article's version-of-record (`proof(self)` == 'vor_update') was published online.
+
+        :returns: article revision date
+        :rtype: {datetime.datetime}
+        """
+        dates = self.get_dates()
+        return dates['updated']
+
+    @property
     def contributors(self):
         """ List of contributors to an article.
 
