@@ -119,11 +119,8 @@ def unzip_articles(file_path,
     :param delete_file: whether to delete the compressed archive after extracting articles
     :return: None
     """
-    try:
-        os.makedirs(extract_directory)
-    except OSError as e:
-        if e.errno != errno.EEXIST:
-            raise
+
+    os.makedirs(extract_directory, exist_ok=True)
 
     if filetype == 'zip':
         with zipfile.ZipFile(file_path, "r") as zip_ref:
