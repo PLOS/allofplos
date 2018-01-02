@@ -17,6 +17,7 @@ time_formatting = "%Y_%b_%d_%Hh%Mm%Ss"
 min_files_for_valid_corpus = 200000
 test_zip_id = '12VomS72LdTI3aYn4cphYAShv13turbX3'
 local_test_zip = 'sample_corpus.zip'
+gdrive_url = "https://docs.google.com/uc?export=download"
 
 
 def download_file_from_google_drive(id, filename, destination=corpusdir,
@@ -30,19 +31,18 @@ def download_file_from_google_drive(id, filename, destination=corpusdir,
     :param file_size: size of the file being downloaded
     :return: None
     """
-    URL = "https://docs.google.com/uc?export=download"
 
     file_path = os.path.join(destination, filename)
     if not os.path.isfile(file_path):
         session = requests.Session()
 
-        response = session.get(URL, params={'id': id}, stream=True)
+        response = session.get(gdrive_url, params={'id': id}, stream=True)
         token = get_confirm_token(response)
 
         if token:
             params = {'id': id, 'confirm': token}
-            response = session.get(URL, params=params, stream=True)
-            r = requests.get(URL, params=params, stream=True)
+            response = session.get(gdrive_url, params=params, stream=True)
+            r = requests.get(gdrive_url, params=params, stream=True)
         save_response_content(response, file_path, file_size=file_size)
     return file_path
 
