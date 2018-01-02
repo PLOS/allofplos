@@ -134,7 +134,6 @@ def search_solr_records(days_ago=14, start=0, rows=1000, start_date=None, end_da
     howmanyarticles_url = ''.join(howmanyarticles_url_base) + '&rows=1000'
     # if include_uncorrected is False:
     num_results = requests.get(howmanyarticles_url).json()["response"]["numFound"]
-    print(num_results)
 
     # Create solr_search_results & paginate through results
     solr_search_results = []
