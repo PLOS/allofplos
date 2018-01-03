@@ -1,7 +1,7 @@
 import datetime
 import os
 import tarfile
-import zipfile
+from zipfile import ZipFile
 
 import requests
 from tqdm import tqdm
@@ -123,7 +123,7 @@ def unzip_articles(file_path,
     os.makedirs(extract_directory, exist_ok=True)
 
     if filetype == 'zip':
-        with zipfile.ZipFile(file_path, "r") as zip_ref:
+        with ZipFile(file_path, "r") as zip_ref:
             print("Extracting zip file...")
             zip_ref.extractall(extract_directory)
             print("Extraction complete.")
