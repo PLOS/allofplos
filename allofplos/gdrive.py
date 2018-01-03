@@ -141,9 +141,10 @@ def unzip_articles(file_path,
 
     if filetype == 'zip':
         with ZipFile(file_path, "r") as zip_ref:
-            print("Extracting zip file...")
-            zip_ref.extractall(extract_directory)
-            print("Extraction complete.")
+            tqdm.write("Extracting zip file...")
+            for article in tqdm(zip_ref.namelist()):
+                zip_ref.extract(article, path=extract_directory)
+            tqdm.write("Extraction complete.")
     elif filetype == 'tar':
         tar = tarfile.open(file_path)
         print("Extracting tar file...")
