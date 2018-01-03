@@ -1,7 +1,7 @@
 import datetime
 import os
 import tarfile
-from zipfile import ZipFile
+from zipfile import ZipFile, BadZipFile
 
 import requests
 from tqdm import tqdm
@@ -33,6 +33,24 @@ def download_file_from_google_drive(id, filename, destination=corpusdir,
     """
 
     file_path = os.path.join(destination, filename)
+    extension = os.path.splitext(file_path)[1]
+
+    # check for existing incomplete zip download. Delete if invalid zip.
+    if os.path.isfile(file_path) and extension.lower() == '.zip':
+        try:
+            zip_file = ZipFile(file_path)
+            if zip_file.testzip():
+                os.remove(file_path)
+                print("Deleted corrupted previous zip download.")
+            else:
+                pass
+        except BadZipFile as e:
+            os.remove(file_path)
+            print("Deleted invalid previous zip download.")
+
+    else:
+        pass
+
     if not os.path.isfile(file_path):
         session = requests.Session()
 
@@ -42,7 +60,6 @@ def download_file_from_google_drive(id, filename, destination=corpusdir,
         if token:
             params = {'id': id, 'confirm': token}
             response = session.get(gdrive_url, params=params, stream=True)
-            r = requests.get(gdrive_url, params=params, stream=True)
         save_response_content(response, file_path, file_size=file_size)
     return file_path
 
