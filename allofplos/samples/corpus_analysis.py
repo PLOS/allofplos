@@ -27,7 +27,6 @@ from ..article_class import Article
 counter = collections.Counter
 pmcdir = "pmc_articles"
 max_invalid_files_to_print = 100
-pmcdir = 'pmc_articles'
 
 
 def validate_corpus(corpusdir=corpusdir):
