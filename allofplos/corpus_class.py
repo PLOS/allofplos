@@ -43,7 +43,6 @@ class Corpus():
         self.reset_memoized_attrs()
         self._directory = d
 
-
     def __repr__(self):
         """Value of a corpus object when you call it directly on the command line.
 
@@ -70,29 +69,13 @@ class Corpus():
     def files(self):
         """List of article XML files in the corpus directory."""
 
-        if self._files is None:
-            if os.path.isdir(self.directory):
-                file_list = [file_ for file_ in os.listdir(self.directory) if file_.endswith('.xml') and
-                             'DS_Store' not in file_]
-            else:
-                # if directory doesn't exist, return empty list
-                file_list = []
-            self._files = file_list
-        else:
-            pass
-
-        return self._files
+        return list(self.file_doi.keys())
 
     @property
     def dois(self):
         """List of DOIs of the articles in the corpus directory."""
 
-        if self._dois is None:
-            doi_list = [filename_to_doi(article) for article in self.files]
-            return doi_list
-        else:
-            return self._dois
-
+        return list(self.file_doi.values())
 
     def random_dois(self, count):
         """
