@@ -6,6 +6,8 @@ import random
 from . import corpusdir
 
 from .article_class import Article
+from .gdrive import (get_zip_metadata, download_file_from_google_drive, unzip_articles,
+                    zip_id, local_zip)
 from .transformations import filename_to_doi, doi_to_path
 
 
@@ -101,6 +103,28 @@ class Corpus():
     #     :type value: string
     #     """
     #     self.doi = filename_to_doi(value)
+
+    @classmethod
+    def create(cls, directory=corpusdir, overwrite=False):
+        """ Create a PLOS corpus from scratch.
+
+        Downloads and unzips the main PLOS .zip file hosted on Google Drive.
+        :param directory: directory to download and unzip zip file
+        :param overwrite: whether to overwrite existing files, defaults to False
+        """
+        os.makedirs(directory, exist_ok=True)
+        if overwrite is False and len(os.listdir(directory)) > 2:
+            print("Can't create corpus at {}; files already exist.".format(directory))
+            return None
+        else:
+            zip_date, zip_size, metadata_path = get_zip_metadata()
+            zip_path = download_file_from_google_drive(zip_id, local_zip, file_size=zip_size,
+                                                       destination=directory)
+            unzip_articles(file_path=zip_path, extract_directory=directory)
+            os.remove(metadata_path)
+            print("Corpus created with {} files".format(len(os.listdir(directory))))
+            return cls(directory=directory)
+
 
     @classmethod
     def from_dois(cls, dois, source=corpusdir, destination='testdir', overwrite=True):
