@@ -223,7 +223,6 @@ class Article():
                                                                 "journal-title"])
             journal = journal[0].text
         except IndexError:
-            # Need to file JIRA ticket: only affects pone.0047704
             journal_meta = self.get_element_xpath(tag_path_elements=["/",
                                                                      "article",
                                                                      "front",
