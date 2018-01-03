@@ -80,7 +80,7 @@ class Corpus():
     def random_dois(self, count):
         """
         Gets a list of random DOIs. Construct from local files in
-        corpusdir.
+        corpusdir. Length of list specified in `count` parameter.
         :param directory: directory of articles for class object
         :param count: specify how many DOIs are to be returned
         :return: a list of random DOIs for analysis
