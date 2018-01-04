@@ -588,7 +588,7 @@ def download_file_from_google_drive(id, filename, destination=corpusdir,
     :param filename: name of the zip file
     :param destination: directory where to download the zip file, defaults to corpusdir
     :param file_size: size of the file being downloaded
-    :return: None
+    :return: file path to the zip file
     """
     URL = "https://docs.google.com/uc?export=download"
 
