@@ -1,5 +1,4 @@
 from collections import OrderedDict
-import hashlib
 import json
 from pathlib import Path
 import os
@@ -11,8 +10,8 @@ from . import corpusdir
 
 from .article_class import Article
 from .corpus_helpers import hash_file
-from .gdrive import (get_zip_metadata, download_file_from_google_drive, unzip_articles,
-                     zip_id, local_zip)
+from .gdrive import (get_zip_metadata, download_file_from_google_drive,
+                     unzip_articles, zip_id, local_zip)
 from .transformations import filename_to_doi, doi_to_path
 
 hash_json = 'corpus_hash.json'
@@ -123,6 +122,7 @@ class Corpus():
             hashtable = self.hashtable()
         with open(hash_json, 'w') as fp:
             json.dump(hashtable, fp)
+        return hashtable
 
     def read_hashtable(self):
         """Read the `hash_json` file into memory.
@@ -132,7 +132,7 @@ class Corpus():
         if os.path.isfile(hash_json):
             return OrderedDict(json.load(open(hash_json)))
         else:
-            print("Hashtable not found; create with Corpus.hashtable()")
+            print("Hashtable not found; create with Corpus().hashtable()")
             return None
 
 
