@@ -77,6 +77,11 @@ class Corpus():
 
         return list(self.file_doi.values())
 
+    @property
+    def filepaths(self):
+        """List of article XML files in corpus directory, including the full path."""
+        return [os.path.join(self.directory, fname) for fname in self.files]
+
     def random_dois(self, count):
         """
         Gets a list of random DOIs. Construct from local files in
