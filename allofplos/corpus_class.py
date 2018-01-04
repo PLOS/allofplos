@@ -1,14 +1,20 @@
 from collections import OrderedDict
+import hashlib
+import json
 from pathlib import Path
 import os
 import random
+
+from tqdm import tqdm
 
 from . import corpusdir
 
 from .article_class import Article
 from .gdrive import (get_zip_metadata, download_file_from_google_drive, unzip_articles,
-                    zip_id, local_zip)
+                     zip_id, local_zip)
 from .transformations import filename_to_doi, doi_to_path
+
+hash_json = 'corpus_hash.json'
 
 
 class Corpus():
@@ -92,6 +98,43 @@ class Corpus():
         sample_doi_list = random.sample(doi_list, count)
 
         return sample_doi_list
+
+    def hashtable(self, directory=directory):
+        """For every XML file in the corpus, create a dict of its DOI to its filehash.
+
+        :return: dict of article DOIs to hashes
+        """
+        hash_dict = {}
+        fnames = [os.path.join(directory, fname) for fname in self.files]
+        BLOCKSIZE = 65536
+        hasher = hashlib.sha256()
+        for fname in tqdm(fnames):
+            with open(fname, 'rb') as afile:
+                buf = afile.read(BLOCKSIZE)
+                while len(buf) > 0:
+                    hasher.update(buf)
+                    buf = afile.read(BLOCKSIZE)
+            hash_dict[filename_to_doi(fname)] = hasher.hexdigest()
+
+        return OrderedDict(hash_dict)
+
+    def hashtable_to_json(self, hashtable=None):
+        """Dump `self.hashtable` OrderedDict into a .json file."""
+        if hashtable is None:
+            hashtable = self.hashtable()
+        with open(hash_json, 'w') as fp:
+            json.dump(hashtable, fp)
+
+    def read_hashtable(self):
+        """Read the `hash_json` file into memory.
+
+        Also see `self.hashtable{}`
+        """
+        if os.path.isfile(hash_json):
+            return OrderedDict(json.load(open(hash_json)))
+        else:
+            print("Hashtable not found; create with Corpus.hashtable()")
+            return None
 
 
     # @symlinks.setter
