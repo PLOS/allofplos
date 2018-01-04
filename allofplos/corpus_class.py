@@ -1,4 +1,5 @@
 from collections import OrderedDict
+import datetime
 import json
 from pathlib import Path
 import os
@@ -134,6 +135,40 @@ class Corpus():
         else:
             print("Hashtable not found; create with Corpus().hashtable()")
             return None
+
+    def update_hashtable(self, update_json=True):
+        """Update the hashtable by comparing the hashtable .json file and XML dates modified.
+
+        This is to incrementally update the hashtable but timestamps are not foolproof. When in doubt,
+        create from scratch using `self.hashtable_to_json`.
+        :param update_json: whether to also update the accompanying json file
+        :return: updated hashtable for new files
+        """
+        hashtable = self.read_hashtable()
+        if hashtable:
+            json_mod_date = datetime.datetime.fromtimestamp(os.path.getmtime(hash_json))
+            modded_files = [fname for fname in self.filepaths if json_mod_date < datetime.datetime.fromtimestamp(os.path.getmtime(fname))]
+            print(len(modded_files))
+
+            # get new hashes, and replace or insert their values into hashtable
+            for fname in tqdm(modded_files):
+                file_hash = hash_file(fname)
+                if hashtable.get(fname, '') != file_hash:
+                    hashtable[filename_to_doi(fname)] = file_hash
+                else:
+                    pass
+
+            # re-order hashtable dict by DOI/key:
+            resorted_hashtable = OrderedDict(sorted(hashtable.items(), key=lambda t: t[0]))
+
+        if update_json:
+            json_dump = self.hashtable_to_json(hashtable=resorted_hashtable)
+
+        else:
+            print('Hashtable .json file not found. Create with `Corpus().hashtable_to_json()`')
+            resorted_hashtable = {}
+
+        return resorted_hashtable
 
 
     # @symlinks.setter
