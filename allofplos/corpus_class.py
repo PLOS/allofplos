@@ -10,6 +10,7 @@ from tqdm import tqdm
 from . import corpusdir
 
 from .article_class import Article
+from .corpus_helpers import hash_file
 from .gdrive import (get_zip_metadata, download_file_from_google_drive, unzip_articles,
                      zip_id, local_zip)
 from .transformations import filename_to_doi, doi_to_path
@@ -110,16 +111,9 @@ class Corpus():
         :return: dict of article DOIs to hashes
         """
         hash_dict = {}
-        fnames = [os.path.join(directory, fname) for fname in self.files]
-        BLOCKSIZE = 65536
-        hasher = hashlib.sha256()
-        for fname in tqdm(fnames):
-            with open(fname, 'rb') as afile:
-                buf = afile.read(BLOCKSIZE)
-                while len(buf) > 0:
-                    hasher.update(buf)
-                    buf = afile.read(BLOCKSIZE)
-            hash_dict[filename_to_doi(fname)] = hasher.hexdigest()
+        for fname in tqdm(self.filepaths):
+            file_hash = hash_file(fname)
+            hash_dict[filename_to_doi(fname)] = file_hash
 
         return OrderedDict(hash_dict)
 
