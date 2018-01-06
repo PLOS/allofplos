@@ -117,12 +117,18 @@ class Corpus():
 
         return OrderedDict(hash_dict)
 
-    def hashtable_to_json(self, hashtable=None):
-        """Dump `self.hashtable` OrderedDict into a .json file."""
+    def hashtable_to_json(self, hashtable=None, overwrite=True):
+        """Dump `self.hashtable` OrderedDict into a .json file.
+
+        :param hashtable: the hashtable, defaults to None
+        :param overwrite: whether to replace existing .json file, defaults to True"""
         if hashtable is None:
             hashtable = self.hashtable()
-        with open(hash_json, 'w') as fp:
-            json.dump(hashtable, fp)
+        if overwrite is True or os.path.isfile(hash_json) is False:
+            with open(hash_json, 'w') as fp:
+                json.dump(hashtable, fp)
+        else:
+            print("aborting: .json hashtable exists. To overwrite, set parameter 'overwrite' to False.")
         return hashtable
 
     def read_hashtable(self):
