@@ -836,16 +836,16 @@ class Article():
         Where to access an article's HTML version
         """
         if len(self.journal.split(' ')) == 2:
-            BASE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='.format(self.journal.lower().split(' ')[1])
+            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format(self.journal.lower().split(' ')[1])
         elif 'negl' in self.journal.lower():
-            BASE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='.format('ntds')
+            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('ntds')
         elif 'comp' in self.journal.lower():
-            BASE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='.format('compbiol')
+            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('compbiol')
         elif 'clinical trials' in self.journal.lower():
-            BASE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='.format('ctr')
+            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('ctr')
         else:
             print('URL error for {}'.format(self.doi))
-            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE
+            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('one')
 
         return BASE_LANDING_PAGE + self.doi
 
