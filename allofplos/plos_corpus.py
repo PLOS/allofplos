@@ -33,7 +33,7 @@ import lxml.etree as et
 import requests
 from tqdm import tqdm
 
-from . import corpusdir, newarticledir
+from . import corpusdir, newarticledir, uncorrected_proofs_text_list
 
 from .plos_regex import validate_doi
 from .transformations import (BASE_URL_API, EXT_URL_TMP, INT_URL_TMP, URL_TMP, filename_to_doi,
@@ -44,9 +44,6 @@ help_str = "This program downloads a zip file with all PLOS articles and checks 
 
 # Making sure DS.Store not included as file
 ignore_func = shutil.ignore_patterns('.DS_Store')
-
-# List of uncorrected proof articles to check for updates
-uncorrected_proofs_text_list = 'uncorrected_proofs_list.txt'
 
 # Some example URLs that may be useful
 EXAMPLE_VOR_URL = ('http://solr-101.soma.plos.org:8011/solr/collection1/select?'
@@ -139,10 +136,12 @@ def search_solr_records(days_ago=14, start=0, rows=1000, start_date=None, end_da
     num_results = requests.get(howmanyarticles_url).json()["response"]["numFound"]
 
     # Create solr_search_results & paginate through results
+    solr_search_results = []
     while(start < num_results):
         query_url = ''.join(howmanyarticles_url_base) + '&start=' + str(start) + '&rows=' + str(rows)
         article_search = requests.get(query_url).json()
-        solr_search_results = [x[item] for x in article_search["response"]["docs"]]
+        solr_partial_results = [x[item] for x in article_search["response"]["docs"]]
+        solr_search_results.extend(solr_partial_results)
         start = start + rows
         if start + rows > num_results:
             rows = num_results - start
@@ -229,7 +228,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         existing_articles = [filename_to_doi(f) for f in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
 
-    for doi in tqdm(sorted(dois), disable=not dois):
+    for doi in tqdm(sorted(dois), disable=None):
         url = URL_TMP.format(doi)
         articleXML = et.parse(url)
         article_path = doi_to_path(doi, directory=tempdir)
@@ -372,7 +371,7 @@ def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amende
         amended_article_list = check_for_amended_articles(directory)
     amended_updated_article_list = []
     print("Checking amended articles...")
-    for article in tqdm(amended_article_list, disable=not amended_article_list):
+    for article in tqdm(amended_article_list, disable=None):
         updated = download_updated_xml(article)
         if updated:
             amended_updated_article_list.append(article)
@@ -393,14 +392,13 @@ def get_uncorrected_proofs_list():
         print("Creating new text list of uncorrected proofs from scratch.")
         article_files = listdir_nohidden(corpusdir)
         uncorrected_proofs_list = []
-        for article_file in tqdm(article_files):
+        for article_file in tqdm(article_files, disable=None):
             article = Article.from_filename(article_file)
             if article.proof == 'uncorrected-proof':
                 uncorrected_proofs_list.append(article.doi)
         print("Saving uncorrected proofs.")
         with open(uncorrected_proofs_text_list, 'w') as f:
-            max_value = len(uncorrected_proofs_list)
-            for item in tqdm(sorted(uncorrected_proofs_list)):
+            for item in tqdm(sorted(uncorrected_proofs_list), disable=None):
                 f.write("%s\n" % item)
     return uncorrected_proofs_list
 
@@ -496,7 +494,7 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
     if vor_updates_available is None:
         vor_updates_available = check_for_vor_updates()
     vor_updated_article_list = []
-    for article in tqdm(vor_updates_available, disable=not vor_updates_available):
+    for article in tqdm(vor_updates_available, disable=None):
         updated = download_updated_xml(article, vor_check=True)
         if updated:
             vor_updated_article_list.append(article)
@@ -546,7 +544,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     if article_list is None:
         article_list = get_uncorrected_proofs_list()
     print("Checking directly for additional VOR updates...")
-    for doi in tqdm(list(set(article_list))):
+    for doi in tqdm(list(set(article_list)), disable=None):
         f = doi_to_path(doi)
         updated = download_updated_xml(f, vor_check=True)
         if updated:
@@ -635,7 +633,7 @@ def save_response_content(response, download_path, file_size=None):
         with open(download_path, "wb") as f:
             size = file_size
             pieces = round(size / CHUNK_SIZE)
-            with tqdm(total=pieces) as pbar:
+            with tqdm(total=pieces, disable=None) as pbar:
                 for chunk in response.iter_content(CHUNK_SIZE):
                     pbar.update(1)
                     if chunk:  # filter out keep-alive new chunks

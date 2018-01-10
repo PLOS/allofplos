@@ -17,7 +17,7 @@ from tqdm import tqdm
 
 from .. import corpusdir, newarticledir
 
-from ..plos_regex import (validate_doi, full_doi_regex_match, validate_url)
+from ..plos_regex import (validate_doi, full_doi_regex_match, validate_url, validate_filename)
 from ..transformations import (filename_to_doi, doi_to_url)
 from ..plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list,
                            download_updated_xml, get_all_solr_dois,
@@ -27,7 +27,6 @@ from ..article_class import Article
 counter = collections.Counter
 pmcdir = "pmc_articles"
 max_invalid_files_to_print = 100
-pmcdir = 'pmc_articles'
 
 
 def validate_corpus(corpusdir=corpusdir):
@@ -83,11 +82,11 @@ def validate_corpus(corpusdir=corpusdir):
 
 def get_jats_article_type_list(article_list=None, directory=corpusdir):
     """Makes a list of of all JATS article types in the corpus
-    
+
     Sorts them by frequency of occurrence
     :param article_list: list of articles, defaults to None
     :param directory: directory of articles, defaults to corpusdir
-    :returns: dictionary with each JATS type matched to number of occurrences 
+    :returns: dictionary with each JATS type matched to number of occurrences
     :rtype: dict
     """
     if article_list is None:
@@ -106,11 +105,11 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
 
 def get_plos_article_type_list(article_list=None, directory=corpusdir):
     """Makes a list of of all internal PLOS article types in the corpus
-    
+
     Sorts them by frequency of occurrence
     :param article_list: list of articles, defaults to None
     :param directory: directory of articles, defaults to corpusdir
-    :returns: dictionary with each PLOS type matched to number of occurrences 
+    :returns: dictionary with each PLOS type matched to number of occurrences
     :rtype: dict
     """
     if article_list is None:
@@ -150,7 +149,7 @@ def get_article_types_map(article_list=None, directory=corpusdir):
 
 def article_types_map_to_csv(article_types_map):
     """put the `get_article_types_map.()` list of tuples into a csv.
-    
+
     :param article_types_map: output of `get_article_types_map()`
     """
     with open('articletypes.csv', 'w') as out:
@@ -271,7 +270,7 @@ def check_solr_doi(doi):
 
 def get_all_local_dois(corpusdir=corpusdir):
     """Get all local DOIs in a corpus directory.
-    
+
     :param corpusdir: directory of articles, defaults to corpusdir
     :returns: list of DOIs
     :rtype: list
@@ -339,8 +338,9 @@ def get_article_metadata(article_file, size='small'):
     plos_article_type = article.plostype
     dtd_version = article.dtd
     dates = article.get_dates()
-    (pubdate, collection, received, accepted) = ('', '', '', '')
+    (pubdate, collection, received, accepted, revdate) = ('', '', '', '', '')
     pubdate = article.pubdate
+    revdate = article.revdate
     counts = article.counts
     (fig_count, table_count, page_count) = ('', '', '')
     body_word_count = article.word_count
@@ -370,10 +370,10 @@ def get_article_metadata(article_file, size='small'):
         page_count = counts['page-count']
     except KeyError:
         pass
-    metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate, received,
+    metadata = [doi, filename, title, journal, jats_article_type, plos_article_type, dtd_version, pubdate, revdate, received,
                 accepted, collection, fig_count, table_count, page_count, body_word_count, related_articles, abstract]
     metadata = tuple(metadata)
-    if len(metadata) == 17:
+    if len(metadata) == 18:
         return metadata
     else:
         print('Error in {}: {} items'.format(article_file, len(metadata)))
@@ -411,7 +411,7 @@ def corpus_metadata_to_csv(corpus_metadata=None,
     with open(csv_file, 'w') as out:
         csv_out = csv.writer(out)
         csv_out.writerow(['doi', 'filename', 'title', 'journal', 'jats_article_type', 'plos_article_type',
-                          'dtd_version', 'pubdate', 'received', 'accepted', 'collection', 'fig_count', 'table_count',
+                          'dtd_version', 'pubdate', 'revdate', 'received', 'accepted', 'collection', 'fig_count', 'table_count',
                           'page_count', 'body_word_count', 'related_article', 'abstract'])
         for row in corpus_metadata:
             csv_out.writerow(row)

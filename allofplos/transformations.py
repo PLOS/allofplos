@@ -25,7 +25,7 @@ correction = 'correction'
 annotation_url = 'http://journals.plos.org/plosone/article/file?id=10.1371/annotation/'
 annotation_url_int = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-repo?key=10.1371/annotation/'
 annotation_doi = '10.1371/annotation'
-BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plosone/article?id='
+BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='
 
 
 def filename_to_url(filename, plos_network=False):

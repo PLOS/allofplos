@@ -1,8 +1,10 @@
+import datetime
 import os
 import re
 import subprocess
 
 import lxml.etree as et
+from lxml import objectify
 import requests
 
 from . import corpusdir
@@ -221,7 +223,6 @@ class Article():
                                                                 "journal-title"])
             journal = journal[0].text
         except IndexError:
-            # Need to file JIRA ticket: only affects pone.0047704
             journal_meta = self.get_element_xpath(tag_path_elements=["/",
                                                                      "article",
                                                                      "front",
@@ -280,6 +281,25 @@ class Article():
                     print('Error getting history dates for {}'.format(self.doi))
                     date = ''
                 dates[date_type] = date
+
+        # third location is for vor updates when it's updated (see `proof(self)`)
+        rev_date = ''
+        if self.proof == 'vor_update':
+            tag_path = ('/',
+                        'article',
+                        'front',
+                        'article-meta',
+                        'custom-meta-group',
+                        'custom-meta')
+            xpath_results = self.get_element_xpath(tag_path_elements=tag_path)
+            for result in xpath_results:
+                if result.xpath('./meta-name')[0].text == 'Publication Update':
+                    rev_date_string = result.xpath('./meta-value')[0].text
+                    rev_date = datetime.datetime.strptime(rev_date_string, '%Y-%m-%d')
+                    break
+                else:
+                    pass
+        dates['updated'] = rev_date
 
         if string_:
             # can return dates as strings instead of datetime objects if desired
@@ -815,7 +835,19 @@ class Article():
 
         Where to access an article's HTML version
         """
-        return BASE_URL_ARTICLE_LANDING_PAGE + self.doi
+        if len(self.journal.split(' ')) == 2:
+            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format(self.journal.lower().split(' ')[1])
+        elif 'negl' in self.journal.lower():
+            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('ntds')
+        elif 'comp' in self.journal.lower():
+            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('compbiol')
+        elif 'clinical trials' in self.journal.lower():
+            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('ctr')
+        else:
+            print('URL error for {}'.format(self.doi))
+            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('one')
+
+        return BASE_LANDING_PAGE + self.doi
 
     @property
     def url(self):
@@ -910,7 +942,45 @@ class Article():
                                                           "title-group",
                                                           "article-title"])
         title_text = et.tostring(title[0], encoding='unicode', method='text', pretty_print=True)
-        return title_text.rstrip('\n')
+        title_cleaned = " ".join(title_text.split())
+        return title_cleaned
+
+    @property
+    def rich_title(self):
+        """For an individual PLOS article, get its title with HTML formatting.
+
+        Preserves HTML formatting but removes all other XML tagging, namespace/xlink info, etc.
+        Doesn't do xpath directly on `self.root` so can deannotate separate object
+        See http://lxml.de/objectify.html#how-data-types-are-matched for more info on deannotate process
+        Exceptions that still need handling:
+        10.1371/journal.pone.0179720, 10.1371/journal.pone.0068479, 10.1371/journal.pone.0069681,
+        10.1371/journal.pone.0068965, 10.1371/journal.pone.0083868, 10.1371/journal.pone.0069554,
+        10.1371/journal.pone.0068324, 10.1371/journal.pone.0067986, 10.1371/journal.pone.0068704,
+        10.1371/journal.pone.0068492, 10.1371/journal.pone.0068764, 10.1371/journal.pone.0068979,
+        10.1371/journal.pone.0068544, 10.1371/journal.pone.0069084, 10.1371/journal.pone.0069675
+
+        :return: string of article title at specified xpath location
+        """
+        root = self.root
+        objectify.deannotate(root, cleanup_namespaces=True, xsi_nil=True)
+        art_title = root.xpath("/article/front/article-meta/title-group/article-title")
+        art_title = art_title[0]
+        try:
+            text = art_title.text
+            if text is None:
+                text = ''
+            text += ''.join(et.tostring(child, encoding='unicode') if child.tag not in ('ext-link', 'named-content', 'sc', 'monospace') \
+                                                                   else child.text + child.tail if child.tail is not None \
+                                                                   else child.text
+                            for child in art_title.getchildren())
+            title = text.replace(' xmlns:xlink="http://www.w3.org/1999/xlink"', '') \
+                        .replace(' xmlns:mml="http://www.w3.org/1998/Math/MathML"', '') \
+                        .replace(' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance', '')
+        except TypeError:
+            # try to rewrite so this isn't needed
+            print('Error processing article title for {}'.format(self.doi))
+            title = et.tostring(art_title, method='text', encoding='unicode')
+        return title
 
     @property
     def pubdate(self):
@@ -921,6 +991,16 @@ class Article():
         """
         dates = self.get_dates()
         return dates['epub']
+
+    @property
+    def revdate(self):
+        """The date an article's version-of-record (`proof(self)` == 'vor_update') was published online.
+
+        :returns: article revision date
+        :rtype: {datetime.datetime}
+        """
+        dates = self.get_dates()
+        return dates['updated']
 
     @property
     def contributors(self):
