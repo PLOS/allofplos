@@ -20,7 +20,7 @@ setup(
     long_description=long_description,
     url='https://github.com/PLOS/allofplos',
     author='Elizabeth Seiver, Sebastian Bassi',
-    author_email='eseiver@plos.org, sbassi@plos.org',
+    author_email='eseiver@plos.org, sebastian.bassi@globant.com',
     license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',
