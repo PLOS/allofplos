@@ -19,23 +19,13 @@ hash_json = 'corpus_hash.json'
 
 
 class Corpus():
-    """A collection of PLOS articles.
-    """
+    """A collection of PLOS articles."""
 
     def __init__(self, directory=corpusdir, plos_network=False, extension='.xml'):
         """Creation of an article corpus class."""
         self.directory = directory
         self.plos_network = plos_network
         self.extension = extension
-        self.reset_memoized_attrs()
-
-    def reset_memoized_attrs(self):
-        """Reset attributes to None when instantiating a new corpus object.
-
-        For corpus attributes that are memoized and specific to that particular corpus,
-        reset them when creating a new corpus object.
-        """
-        self._file_doi = None
 
     @property
     def directory(self):
@@ -50,7 +40,6 @@ class Corpus():
         """
         Reset memoized info when changing the path to the corpus.
         """
-        self.reset_memoized_attrs()
         self._directory = d
 
     def __repr__(self):
@@ -194,7 +183,6 @@ class Corpus():
 
         return resorted_hashtable
 
-
     # @symlinks.setter
     # def symlinks(self, value):
     #     """Sets a corpus object using a set of dois.
@@ -225,7 +213,6 @@ class Corpus():
             os.remove(metadata_path)
             print("Corpus created with {} files".format(len(os.listdir(directory))))
             return cls(directory=directory)
-
 
     @classmethod
     def from_dois(cls, dois, source=corpusdir, destination='testdir', overwrite=True):
