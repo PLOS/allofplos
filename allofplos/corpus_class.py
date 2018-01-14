@@ -54,28 +54,46 @@ class Corpus():
         return out
 
     @property
-    def file_doi(self):
-        """An ordered dict that maps every corpus file to its accompanying DOI.
-        Used to generate both DOI and file lists for the corpus; both also ordered.
+    def iter_file_doi(self):
+        """Generator that returns filename, doi tuples for every file in the corpus.
+
+        Used to generate both DOI and file generators for the corpus. 
         """
-        if self._file_doi is None:
-            self._file_doi = OrderedDict((file_, filename_to_doi(file_)) for file_ in os.listdir(self.directory)
-                                         if file_.endswith(self.extension) and 'DS_Store' not in file_)
-        else:
-            pass
-        return self._file_doi
+        return ((file_, filename_to_doi(file_))
+                for file_ in os.listdir(self.directory)
+                if file_.endswith(self.extension) and 'DS_Store' not in file_)
+
+    @property
+    def file_doi(self):
+        """An ordered dict that maps every corpus file to its accompanying DOI."""
+        return OrderedDict(self.iter_file_doi)
+
+    @property
+    def iter_files(self):
+        """Generator of article XML filenames in the corpus directory."""
+
+        return (x[0] for x in self.iter_file_doi)
+
+    @property
+    def iter_dois(self):
+        """Generator of DOIs of the articles in the corpus directory.
+
+        Use for looping through all corpus articles with the Article class.
+        """
+
+        return (x[1] for x in self.iter_file_doi)
 
     @property
     def files(self):
         """List of article XML files in the corpus directory."""
 
-        return list(self.file_doi.keys())
+        return list(self.iter_files)
 
     @property
     def dois(self):
         """List of DOIs of the articles in the corpus directory."""
 
-        return list(self.file_doi.values())
+        return list(self.iter_dois)
 
     @property
     def filepaths(self):
