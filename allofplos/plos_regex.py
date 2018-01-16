@@ -5,7 +5,7 @@ The following RegEx pertains to the 7 main PLOS journals and the defunct PLOS Cl
 import re
 import os
 
-from . import corpusdir, newarticledir
+from . import get_corpus_dir, newarticledir
 
 corpusdir_regex = re.escape(corpusdir)
 newarticledir_regex = re.escape(newarticledir)

@@ -10,7 +10,7 @@ regular tool.
 import os
 from shutil import copyfile
 
-from . import corpusdir
+from . import get_corpus_dir
 from .transformations import doi_to_path
 
 seed_directory = 'seed_corpus'

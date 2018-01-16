@@ -33,7 +33,7 @@ import lxml.etree as et
 import requests
 from tqdm import tqdm
 
-from . import corpusdir, newarticledir, uncorrected_proofs_text_list
+from . import get_corpus_dir, newarticledir, uncorrected_proofs_text_list
 
 from .plos_regex import validate_doi
 from .transformations import (BASE_URL_API, EXT_URL_TMP, INT_URL_TMP, URL_TMP, filename_to_doi,

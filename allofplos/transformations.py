@@ -3,7 +3,7 @@
 
 import os
 
-from . import corpusdir
+from . import get_corpus_dir
 
 from .plos_regex import validate_filename, validate_doi
 

@@ -15,7 +15,7 @@ import requests
 
 from tqdm import tqdm
 
-from .. import corpusdir, newarticledir
+from .. import get_corpus_dir, newarticledir
 
 from ..plos_regex import (validate_doi, full_doi_regex_match, validate_url, validate_filename)
 from ..transformations import (filename_to_doi, doi_to_url)

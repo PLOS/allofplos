@@ -7,7 +7,7 @@ import lxml.etree as et
 from lxml import objectify
 import requests
 
-from . import corpusdir
+from . import get_corpus_dir
 
 from .transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
                               BASE_URL_ARTICLE_LANDING_PAGE)
