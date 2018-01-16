@@ -29,13 +29,15 @@ pmcdir = "pmc_articles"
 max_invalid_files_to_print = 100
 
 
-def validate_corpus(directory=corpusdir):
+def validate_corpus(directory=None):
     """
     For every local article file and DOI listed on Solr, validate file names, DOIs, URLs in terms of
     regular expressions.
     Stops checking as soon as encounters problem and prints it
     :return: boolean of whether corpus passed validity checks
     """
+    if directory is None:
+        directory = get_corpus_dir()
     # check DOIs
     plos_dois = get_all_plos_dois()
     plos_valid_dois = [doi for doi in plos_dois if validate_doi(doi)]
@@ -80,7 +82,7 @@ def validate_corpus(directory=corpusdir):
 # These functions are for getting the article types of all PLOS articles.
 
 
-def get_jats_article_type_list(article_list=None, directory=corpusdir):
+def get_jats_article_type_list(article_list=None, directory=None):
     """Makes a list of of all JATS article types in the corpus
 
     Sorts them by frequency of occurrence
@@ -89,6 +91,8 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
     :returns: dictionary with each JATS type matched to number of occurrences
     :rtype: dict
     """
+    if directory is None:
+        directory = get_corpus_dir()
     if article_list is None:
         article_list = listdir_nohidden(directory)
 
@@ -103,7 +107,7 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
     return article_types_structured
 
 
-def get_plos_article_type_list(article_list=None, directory=corpusdir):
+def get_plos_article_type_list(article_list=None, directory=None):
     """Makes a list of of all internal PLOS article types in the corpus
 
     Sorts them by frequency of occurrence
@@ -112,6 +116,8 @@ def get_plos_article_type_list(article_list=None, directory=corpusdir):
     :returns: dictionary with each PLOS type matched to number of occurrences
     :rtype: dict
     """
+    if directory is None:
+        directory = get_corpus_dir()
     if article_list is None:
         article_list = listdir_nohidden(directory)
 
@@ -126,7 +132,7 @@ def get_plos_article_type_list(article_list=None, directory=corpusdir):
     return PLOS_article_types_structured
 
 
-def get_article_types_map(article_list=None, directory=corpusdir):
+def get_article_types_map(article_list=None, directory=None):
     """Maps the JATS and PLOS article types onto the XML DTD.
 
     Used for comparing how JATS and PLOS article types are assigned
@@ -135,6 +141,8 @@ def get_article_types_map(article_list=None, directory=corpusdir):
     :returns: list of tuples of JATS, PLOS, DTD for each article in the corpus
     :rtype: list
     """
+    if directory is None:
+        directory = get_corpus_dir()
     if article_list is None:
         article_list = listdir_nohidden(directory)
     article_types_map = []
@@ -162,12 +170,14 @@ def article_types_map_to_csv(article_types_map):
 # These functions are for getting retracted articles
 
 
-def get_retracted_doi_list(article_list=None, directory=corpusdir):
+def get_retracted_doi_list(article_list=None, directory=None):
     """
     Scans through articles in a directory to see if they are retraction notifications,
     scans articles that are that type to find DOIs of retracted articles
     :return: tuple of lists of DOIs for retractions articles, and retracted articles
     """
+    if directory is None:
+        directory = get_corpus_dir()
     retractions_doi_list = []
     retracted_doi_list = []
     if article_list is None:
@@ -187,7 +197,7 @@ def get_retracted_doi_list(article_list=None, directory=corpusdir):
     return retractions_doi_list, retracted_doi_list
 
 
-def get_amended_article_list(article_list=None, directory=corpusdir):
+def get_amended_article_list(article_list=None, directory=None):
     """
     Scans through articles in a directory to see if they are amendment notifications,
     scans articles that are that type to find DOI substrings of amended articles
@@ -195,6 +205,8 @@ def get_amended_article_list(article_list=None, directory=corpusdir):
     :param directory: directory where the article file is, default is get_corpus_dir()
     :return: list of DOIs for articles issued a correction
     """
+    if directory is None:
+        directory = get_corpus_dir()
     amendments_article_list = []
     amended_article_list = []
     if article_list is None:
@@ -218,22 +230,26 @@ def get_amended_article_list(article_list=None, directory=corpusdir):
 
 # These functions are for checking for silent XML updates
 
-def create_pubdate_dict(directory=corpusdir):
+def create_pubdate_dict(directory=None):
     """
     For articles in directory, create a dictionary mapping them to their pubdate.
     Used for truncating the revisiondate_sanity_check to more recent articles only
     :param directory: directory of articles
     :return: a dictionary mapping article files to datetime objects of their pubdates
     """
+    if directory is None:
+        directory = get_corpus_dir()
     articles = listdir_nohidden(directory)
     pubdates = {art: Article.from_filename(art).pubdate for art in articles}
     return pubdates
 
 
-def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, directory=corpusdir, truncated=True):
+def revisiondate_sanity_check(article_list=None, tempdir=newarticledir, directory=None, truncated=True):
     """
     :param truncated: if True, restrict articles to only those with pubdates from the last year or two
     """
+    if directory is None:
+        directory = get_corpus_dir()
     list_provided = bool(article_list)
     if article_list is None and truncated is False:
         article_list = listdir_nohidden(directory)
@@ -268,13 +284,15 @@ def check_solr_doi(doi):
     return bool(article_search['response']['numFound'])
 
 
-def get_all_local_dois(directory=corpusdir):
+def get_all_local_dois(directory=None):
     """Get all local DOIs in a corpus directory.
 
     :param directory: directory of articles, defaults to get_corpus_dir()
     :returns: list of DOIs
     :rtype: list
     """
+    if directory is None:
+        directory = get_corpus_dir()
     local_dois = [filename_to_doi(art) for art in listdir_nohidden(directory)]
     return local_dois
 
@@ -303,7 +321,7 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
     return plos_articles
 
 
-def get_random_list_of_dois(directory=corpusdir, count=100):
+def get_random_list_of_dois(directory=None, count=100):
     '''
     Gets a list of random DOIs. Tries first to construct from local files in
     directory, otherwise tries Solr DOI list as backup.
@@ -311,6 +329,8 @@ def get_random_list_of_dois(directory=corpusdir, count=100):
     :param count: specify how many DOIs are to be returned
     :return: a list of random DOIs for analysis
     '''
+    if directory is None:
+        directory = get_corpus_dir()
     try:
         article_list = listdir_nohidden(directory)
         sample_file_list = random.sample(article_list, count)
@@ -380,7 +400,7 @@ def get_article_metadata(article_file, size='small'):
         return False
 
 
-def get_corpus_metadata(article_list=None, directory=corpusdir):
+def get_corpus_metadata(article_list=None, directory=None):
     """
     Run get_article_metadata() on a list of files, by default every file in directory 
     Includes a progress bar
@@ -390,6 +410,8 @@ def get_corpus_metadata(article_list=None, directory=corpusdir):
     :param article_list: list of articles to run it on
     :return: list of tuples for each article; list of dicts for wrong date orders
     """
+    if directory is None:
+        directory = get_corpus_dir()
     if article_list is None:
         article_list = listdir_nohidden(directory)
     corpus_metadata = []
@@ -403,7 +425,7 @@ def corpus_metadata_to_csv(corpus_metadata=None,
                            article_list=None,
                            wrong_dates=None,
                            csv_file='allofplos_metadata.csv',
-                           directory=corpusdir
+                           directory=None
                            ):
     """
     Convert list of tuples from get_article_metadata to csv
@@ -414,6 +436,8 @@ def corpus_metadata_to_csv(corpus_metadata=None,
     :directory: 
     :return: None
     """
+    if directory is None:
+        directory = get_corpus_dir()
     if corpus_metadata is None:
         corpus_metadata, wrong_dates = get_corpus_metadata(article_list, directory=directory)
     # write main metadata csv file
@@ -446,13 +470,15 @@ def read_corpus_metadata_from_csv(csv_file='allofplos_metadata.csv'):
     return corpus_metadata
 
 
-def update_corpus_metadata_csv(csv_file='allofplos_metadata.csv', comparison_dois=None, directory=corpusdir):
+def update_corpus_metadata_csv(csv_file='allofplos_metadata.csv', comparison_dois=None, directory=None):
     """
     Incrementally update the metadata of PLOS articles in the csv file
     :param csv_file: csv file of data, defaults to 'allofplos_metadata.csv'
     :comparison_dois: list of DOIs to check whether their metadats is included
     return updated corpus metadata
     """
+    if directory is None:
+        directory = get_corpus_dir()
     # Step 1: get metadata and DOI list from existing csv file
     try:
         corpus_metadata = read_corpus_metadata_from_csv(csv_file)

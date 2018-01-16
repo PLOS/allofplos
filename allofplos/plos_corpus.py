@@ -171,7 +171,7 @@ def get_all_solr_dois():
     return solr_dois
 
 
-def get_dois_needed_list(comparison_list=None, directory=corpusdir):
+def get_dois_needed_list(comparison_list=None, directory=None):
     """
     Takes result of query from get_all_solr_dois and compares to local article directory.
     :param comparison_list: Defaults to creating a full list of local article files.
@@ -180,6 +180,8 @@ def get_dois_needed_list(comparison_list=None, directory=corpusdir):
     """
     if comparison_list is None:
         comparison_list = get_all_solr_dois()
+    if directory is None:
+        directory = get_corpus_dir()
 
     # Transform local files to DOIs
     local_article_list = [filename_to_doi(article) for article in listdir_nohidden(directory, '.xml')]
@@ -268,7 +270,7 @@ def move_articles(source, destination):
         shutil.rmtree(source)
 
 
-def compare_article_pubdate(doi, days=22, directory=corpusdir):
+def compare_article_pubdate(doi, days=22, directory=None):
     """
     Check if an article's publication date was more than 3 weeks ago.
     :param doi: doi of the article
@@ -276,6 +278,8 @@ def compare_article_pubdate(doi, days=22, directory=corpusdir):
     :param directory: directory the article file is located in (defaults to get_corpus_dir())
     :return: boolean for whether the pubdate was older than the days value
     """
+    if directory is None:
+        directory = get_corpus_dir()
     article = Article(doi, directory=directory)
     try:
         pubdate = article.pubdate
@@ -356,7 +360,7 @@ def check_for_amended_articles(directory=newarticledir, article_list=None):
     return amended_article_list
 
 
-def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amended_article_list=None):
+def download_amended_articles(directory=None, tempdir=newarticledir, amended_article_list=None):
     """For a list of articles that have been amended, check if the xml was also updated.
 
     Use with `check_for_amended_articles`
@@ -367,6 +371,8 @@ def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amende
     :param tempdir: where new articles are downloaded to-
     :return: list of DOIs for articles downloaded with new XML versions
     """
+    if directory is None:
+        directory = get_corpus_dir()
     if amended_article_list is None:
         amended_article_list = check_for_amended_articles(directory)
     amended_updated_article_list = []
@@ -379,13 +385,16 @@ def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amende
     return amended_updated_article_list
 
 
-def get_uncorrected_proofs_list(directory=corpusdir):
+def get_uncorrected_proofs_list(directory=None):
     """
     Loads the uncorrected proofs txt file.
     Failing that, creates new txt file from scratch using directory.
     :param directory: Directory containing the article files
     :return: list of DOIs of uncorrected proofs from text list
     """
+    if directory is None:
+        directory = get_corpus_dir()
+        
     try:
         with open(uncorrected_proofs_text_list) as f:
             uncorrected_proofs_list = f.read().splitlines()
@@ -480,7 +489,7 @@ def check_for_vor_updates(uncorrected_list=None):
     return vor_updates_available
 
 
-def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
+def download_vor_updates(directory=None, tempdir=newarticledir,
                          vor_updates_available=None, plos_network=False):
     """
     For existing uncorrected proofs list, check whether a vor is available to download
@@ -492,6 +501,8 @@ def download_vor_updates(directory=corpusdir, tempdir=newarticledir,
     :param vor_updates_available: Partial DOI/filenames of uncorrected articles, default None
     :return: List of articles from uncorrected_list for which new version successfully downloaded
     """
+    if directory is None:
+        directory = get_corpus_dir()
     if vor_updates_available is None:
         vor_updates_available = check_for_vor_updates()
     vor_updated_article_list = []
@@ -578,7 +589,7 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
     move_articles(tempdir, destination)
 
 
-def download_file_from_google_drive(id, filename, destination=corpusdir,
+def download_file_from_google_drive(id, filename, destination=None,
                                     file_size=None):
     """
     General method for downloading from Google Drive.
@@ -590,6 +601,9 @@ def download_file_from_google_drive(id, filename, destination=corpusdir,
     :return: file path to the zip file
     """
     URL = "https://docs.google.com/uc?export=download"
+    
+    if destination is None:
+        destination = get_corpus_dir()
 
     file_path = os.path.join(destination, filename)
     if not os.path.isfile(file_path):
@@ -666,7 +680,7 @@ def get_zip_metadata(method='initial'):
 
 
 def unzip_articles(file_path,
-                   extract_directory=corpusdir,
+                   extract_directory=None,
                    filetype='zip',
                    delete_file=True
                    ):
@@ -678,6 +692,8 @@ def unzip_articles(file_path,
     :param delete_file: whether to delete the compressed archive after extracting articles
     :return: None
     """
+    if extract_directory is None:
+        extract_directory = get_corpus_dir()
     try:
         os.makedirs(extract_directory)
     except OSError as e:
@@ -700,7 +716,7 @@ def unzip_articles(file_path,
         os.remove(file_path)
 
 
-def create_local_plos_corpus(directory=corpusdir, rm_metadata=True):
+def create_local_plos_corpus(directory=None, rm_metadata=True):
     """
     Downloads a fresh copy of the PLOS corpus by:
     1) creating directory if it doesn't exist
@@ -711,6 +727,8 @@ def create_local_plos_corpus(directory=corpusdir, rm_metadata=True):
     :param rm_metadata: COMPLETE HERE
     :return: None
     """
+    if directory is None:
+        directory = get_corpus_dir()
     if os.path.isdir(directory) is False:
         os.mkdir(directory)
         print('Creating folder for article xml')
@@ -721,7 +739,7 @@ def create_local_plos_corpus(directory=corpusdir, rm_metadata=True):
         os.remove(metadata_path)
 
 
-def create_test_plos_corpus(directory=corpusdir):
+def create_test_plos_corpus(directory=None):
     """
     Downloads a copy of 10,000 randomly selected PLOS articles by:
     1) creating directory if it doesn't exist
@@ -730,6 +748,8 @@ def create_test_plos_corpus(directory=corpusdir):
     :param directory: directory where the corpus is to be downloaded and extracted
     :return: None
     """
+    if directory is None:
+        directory = get_corpus_dir()
     if os.path.isdir(directory) is False:
         os.mkdir(directory)
         print('Creating folder for article xml')
@@ -814,7 +834,7 @@ def main():
     download_check_and_move(dois_needed_list,
                             uncorrected_proofs_text_list,
                             tempdir=newarticledir,
-                            destination=corpusdir,
+                            destination=get_corpus_dir(),
                             plos_network=plos_network)
     return None
 
