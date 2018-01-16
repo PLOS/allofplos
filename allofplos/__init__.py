@@ -14,13 +14,15 @@ newarticledir = os.path.join(ALLOFPLOS_DIR_PATH, 'new_plos_articles')
 
 # List of uncorrected proof articles to check for updates
 uncorrected_proofs_text_list = os.path.join(ALLOFPLOS_DIR_PATH, 'uncorrected_proofs_list.txt')
-del os
 
 def get_corpus_dir():
-    del os
-    import os
-    # this is used to make sure that we have a fresh os.environ object when get_corpus_dir is called
+    """If you want to set the corpus directory, assign the desired path to 
+    ``os.environ['PLOS_CORPUS']``.
+    """
     return os.environ.get("PLOS_CORPUS", "") or corpusdir
+
+del os
+
     
 
 # NB: any packages that you want to expose at the top level, you will need to
