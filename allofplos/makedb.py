@@ -20,6 +20,10 @@ from playhouse.sqlite_ext import SqliteExtDatabase
 from .transformations import filename_to_doi, convert_country
 from .article_class import Article
 
+
+# TODO: this may need to be updated to take into account the new get_corpus_dir() logic.
+# It is not clear, since this is a relative path from the package how this should work without
+# diving into the code more thoroughly 
 corpusdir = 'allofplos/allofplos_xml'
 
 journal_title_dict = {
