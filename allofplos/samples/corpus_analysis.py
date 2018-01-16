@@ -29,7 +29,7 @@ pmcdir = "pmc_articles"
 max_invalid_files_to_print = 100
 
 
-def validate_corpus(corpusdir=corpusdir):
+def validate_corpus(directory=corpusdir):
     """
     For every local article file and DOI listed on Solr, validate file names, DOIs, URLs in terms of
     regular expressions.
@@ -55,7 +55,7 @@ def validate_corpus(corpusdir=corpusdir):
         return False
 
     # check files and filenames
-    plos_files = listdir_nohidden(corpusdir)
+    plos_files = listdir_nohidden(directory)
     if plos_files:
         plos_valid_filenames = [article for article in plos_files if validate_filename(article)]
         if len(plos_valid_dois) == len(plos_valid_filenames):
@@ -268,14 +268,14 @@ def check_solr_doi(doi):
     return bool(article_search['response']['numFound'])
 
 
-def get_all_local_dois(corpusdir=corpusdir):
+def get_all_local_dois(directory=corpusdir):
     """Get all local DOIs in a corpus directory.
 
-    :param corpusdir: directory of articles, defaults to corpusdir
+    :param directory: directory of articles, defaults to corpusdir
     :returns: list of DOIs
     :rtype: list
     """
-    local_dois = [filename_to_doi(art) for art in listdir_nohidden(corpusdir)]
+    local_dois = [filename_to_doi(art) for art in listdir_nohidden(directory)]
     return local_dois
 
 
@@ -306,8 +306,8 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
 def get_random_list_of_dois(directory=corpusdir, count=100):
     '''
     Gets a list of random DOIs. Tries first to construct from local files in
-    corpusdir, otherwise tries Solr DOI list as backup.
-    :param directory: defaults to searching corpusdir
+    directory, otherwise tries Solr DOI list as backup.
+    :param directory: defaults to corpusdir
     :param count: specify how many DOIs are to be returned
     :return: a list of random DOIs for analysis
     '''
@@ -380,15 +380,18 @@ def get_article_metadata(article_file, size='small'):
         return False
 
 
-def get_corpus_metadata(article_list=None):
+def get_corpus_metadata(article_list=None, directory=corpusdir):
     """
-    Run get_article_metadata() on a list of files, by default every file in corpusdir
+    Run get_article_metadata() on a list of files, by default every file in directory 
     Includes a progress bar
+    
+    TODO: this does not return a tuple, other parts of the code expect it to return a tuple, and its docs expect a tuple
+
     :param article_list: list of articles to run it on
     :return: list of tuples for each article; list of dicts for wrong date orders
     """
     if article_list is None:
-        article_list = listdir_nohidden(corpusdir)
+        article_list = listdir_nohidden(directory)
     corpus_metadata = []
     for article_file in tqdm(article_list):
         metadata = get_article_metadata(article_file)
@@ -399,14 +402,20 @@ def get_corpus_metadata(article_list=None):
 def corpus_metadata_to_csv(corpus_metadata=None,
                            article_list=None,
                            wrong_dates=None,
-                           csv_file='allofplos_metadata.csv'):
+                           csv_file='allofplos_metadata.csv',
+                           directory=corpusdir
+                           ):
     """
     Convert list of tuples from get_article_metadata to csv
-    :param corpus_metadata: the list of tuples, defaults to creating from corpusdir
+    :param corpus_metadata: the list of tuples, defaults to None
+    :param article_list: TODO: needs documentation, defaults to None
+    :param wrong_dates: TODO: needs documentation, defaults to None
+    :csv_file: string, TODO: needs more documentation, defaults to 'allofplos_metadata.csv'
+    :directory: 
     :return: None
     """
     if corpus_metadata is None:
-        corpus_metadata, wrong_dates = get_corpus_metadata(article_list)
+        corpus_metadata, wrong_dates = get_corpus_metadata(article_list, directory=directory)
     # write main metadata csv file
     with open(csv_file, 'w') as out:
         csv_out = csv.writer(out)
@@ -437,7 +446,7 @@ def read_corpus_metadata_from_csv(csv_file='allofplos_metadata.csv'):
     return corpus_metadata
 
 
-def update_corpus_metadata_csv(csv_file='allofplos_metadata.csv', comparison_dois=None):
+def update_corpus_metadata_csv(csv_file='allofplos_metadata.csv', comparison_dois=None, directory=corpusdir):
     """
     Incrementally update the metadata of PLOS articles in the csv file
     :param csv_file: csv file of data, defaults to 'allofplos_metadata.csv'
@@ -456,14 +465,14 @@ def update_corpus_metadata_csv(csv_file='allofplos_metadata.csv', comparison_doi
         comparison_dois = get_all_solr_dois()
     dois_needed_list = list(set(comparison_dois) - set(csv_doi_list))
     # Step 3: compare to local file list
-    local_doi_list = [filename_to_doi(article_file) for article_file in listdir_nohidden(corpusdir)]
+    local_doi_list = [filename_to_doi(article_file) for article_file in listdir_nohidden(directory)]
     files_needed_list = list(set(dois_needed_list) - set(local_doi_list))
     if files_needed_list:
         print('Local corpus must be updated before .csv metadata can be updated.\nUpdating local corpus now')
         download_check_and_move(files_needed_list,
                                 uncorrected_proofs_text_list,
                                 tempdir=newarticledir,
-                                destination=corpusdir)
+                                destination=directory)
 
     # Step 4: append new data to existing list
     new_corpus_metadata, wrong_dates = get_corpus_metadata(article_list=dois_needed_list)

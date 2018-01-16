@@ -379,10 +379,11 @@ def download_amended_articles(directory=corpusdir, tempdir=newarticledir, amende
     return amended_updated_article_list
 
 
-def get_uncorrected_proofs_list():
+def get_uncorrected_proofs_list(directory=corpusdir):
     """
     Loads the uncorrected proofs txt file.
-    Failing that, creates new txt file from scratch using corpusdir.
+    Failing that, creates new txt file from scratch using directory.
+    :param directory: Directory containing the article files
     :return: list of DOIs of uncorrected proofs from text list
     """
     try:
@@ -390,7 +391,7 @@ def get_uncorrected_proofs_list():
             uncorrected_proofs_list = f.read().splitlines()
     except FileNotFoundError:
         print("Creating new text list of uncorrected proofs from scratch.")
-        article_files = listdir_nohidden(corpusdir)
+        article_files = listdir_nohidden(directory)
         uncorrected_proofs_list = []
         for article_file in tqdm(article_files, disable=None):
             article = Article.from_filename(article_file)
@@ -406,7 +407,7 @@ def get_uncorrected_proofs_list():
 def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_proofs_text_list):
     """
     For a list of articles, check whether they are the 'uncorrected proof' type
-    One of the checks on newly downloaded articles before they're added to corpusdir
+    One of the checks on newly downloaded articles.
     :param text_list: List of DOIs
     :param directory: Directory containing the article files
     :return: all articles that are uncorrected proofs, including from main article directory
@@ -699,19 +700,19 @@ def unzip_articles(file_path,
         os.remove(file_path)
 
 
-def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
+def create_local_plos_corpus(directory=corpusdir, rm_metadata=True):
     """
     Downloads a fresh copy of the PLOS corpus by:
-    1) creating corpusdir if it doesn't exist
+    1) creating directory if it doesn't exist
     2) downloading metadata about the .zip of all PLOS XML
     2) downloading the zip file (defaults to corpus directory)
     3) extracting the individual XML files into the corpus directory
-    :param corpusdir: directory where the corpus is to be downloaded and extracted
+    :param directory: directory where the corpus is to be downloaded and extracted
     :param rm_metadata: COMPLETE HERE
     :return: None
     """
-    if os.path.isdir(corpusdir) is False:
-        os.mkdir(corpusdir)
+    if os.path.isdir(directory) is False:
+        os.mkdir(directory)
         print('Creating folder for article xml')
     zip_date, zip_size, metadata_path = get_zip_metadata()
     zip_path = download_file_from_google_drive(zip_id, local_zip, file_size=zip_size)
@@ -720,20 +721,20 @@ def create_local_plos_corpus(corpusdir=corpusdir, rm_metadata=True):
         os.remove(metadata_path)
 
 
-def create_test_plos_corpus(corpusdir=corpusdir):
+def create_test_plos_corpus(directory=corpusdir):
     """
     Downloads a copy of 10,000 randomly selected PLOS articles by:
-    1) creating corpusdir if it doesn't exist
+    1) creating directory if it doesn't exist
     2) downloading the zip file (defaults to corpus directory)
     3) extracting the individual XML files into the corpus directory
-    :param corpusdir: directory where the corpus is to be downloaded and extracted
+    :param directory: directory where the corpus is to be downloaded and extracted
     :return: None
     """
-    if os.path.isdir(corpusdir) is False:
-        os.mkdir(corpusdir)
+    if os.path.isdir(directory) is False:
+        os.mkdir(directory)
         print('Creating folder for article xml')
     zip_path = download_file_from_google_drive(test_zip_id, local_test_zip)
-    unzip_articles(file_path=zip_path, extract_directory=corpusdir)
+    unzip_articles(file_path=zip_path, extract_directory=directory)
 
 
 def download_corpus_metadata_files(csv_abstracts=True, csv_no_abstracts=True, sqlitedb=True, destination=None):
