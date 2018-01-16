@@ -30,7 +30,7 @@ BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='
 
 def filename_to_url(filename, plos_network=False):
     """
-    For a local XML file in the corpusdir directory, transform it to the downloadable URL where its XML resides
+    For a local XML file in the get_corpus_dir() directory, transform it to the downloadable URL where its XML resides
     Includes transform for the 'annotation' DOIs
     Example:
     filename_to_url('allofplos_xml/journal.pone.1000001.xml') = \
@@ -38,8 +38,8 @@ def filename_to_url(filename, plos_network=False):
     
     TODO: directory is neither a parameter that is given nor one that is used.
     
-    :param file: relative path to local XML file in the corpusdir directory
-    :param directory: defaults to corpusdir, containing article files
+    :param file: relative path to local XML file in the get_corpus_dir() directory
+    :param directory: defaults to get_corpus_dir(), containing article files
     :return: online location of a PLOS article's XML
     """
     if correction in filename:
@@ -52,7 +52,7 @@ def filename_to_url(filename, plos_network=False):
 
 def filename_to_doi(filename):
     """
-    For a local XML file in the corpusdir directory, transform it to the article's DOI
+    For a local XML file in the get_corpus_dir() directory, transform it to the article's DOI
     Includes transform for the 'annotation' DOIs
     Uses regex to make sure it's a file and not a DOI
     Example:
@@ -60,8 +60,8 @@ def filename_to_doi(filename):
     
     TODO: directory is neither a parameter that is given nor one that is used.
     
-    :param article_file: relative path to local XML file in the corpusdir directory
-    :param directory: defaults to corpusdir, containing article files
+    :param article_file: relative path to local XML file in the get_corpus_dir() directory
+    :param directory: defaults to get_corpus_dir(), containing article files
     :return: full unique identifier for a PLOS article
     """
     if correction in filename and validate_filename(filename):
@@ -82,7 +82,7 @@ def url_to_path(url, directory=corpusdir, plos_network=False):
     url_to_path('http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001') = \
     'allofplos_xml/journal.pone.1000001.xml'
     :param url: online location of a PLOS article's XML
-    :param directory: defaults to corpusdir, containing article files
+    :param directory: defaults to get_corpus_dir(), containing article files
     :return: relative path to local XML file in the directory
     """
     annot_prefix = 'plos.correction.'
@@ -135,7 +135,7 @@ def doi_to_path(doi, directory=corpusdir):
     Example:
     doi_to_path('10.1371/journal.pone.1000001') = 'allofplos_xml/journal.pone.1000001.xml'
     :param doi: full unique identifier for a PLOS article
-    :param directory: defaults to corpusdir, containing article files
+    :param directory: defaults to get_corpus_dir(), containing article files
     :return: relative path to local XML file
     """
     if doi.startswith(annotation_doi) and validate_doi(doi):

@@ -273,7 +273,7 @@ def compare_article_pubdate(doi, days=22, directory=corpusdir):
     Check if an article's publication date was more than 3 weeks ago.
     :param doi: doi of the article
     :param days: how long ago to compare the publication date (default 22 days)
-    :param directory: directory the article file is located in (defaults to corpusdir)
+    :param directory: directory the article file is located in (defaults to get_corpus_dir())
     :return: boolean for whether the pubdate was older than the days value
     """
     article = Article(doi, directory=directory)
@@ -585,7 +585,7 @@ def download_file_from_google_drive(id, filename, destination=corpusdir,
     Doesn't require using API or having credentials
     :param id: Google Drive id for file (constant even if filename change)
     :param filename: name of the zip file
-    :param destination: directory where to download the zip file, defaults to corpusdir
+    :param destination: directory where to download the zip file, defaults to get_corpus_dir()
     :param file_size: size of the file being downloaded
     :return: file path to the zip file
     """
@@ -778,6 +778,7 @@ def main():
                         'Used when inside the plos network')
     args = parser.parse_args()
     plos_network = False
+    directory = get_corpus_dir()
     if args.plos:
         URL_TMP = INT_URL_TMP
         plos_network = True
@@ -785,12 +786,12 @@ def main():
         URL_TMP = EXT_URL_TMP
     # Step 0: Initialize first copy of repository
     try:
-        corpus_files = [name for name in os.listdir(corpusdir) if os.path.isfile(
-                        os.path.join(corpusdir, name))]
+        corpus_files = [name for name in os.listdir(directory) if os.path.isfile(
+                        os.path.join(directory, name))]
     except FileNotFoundError:
         corpus_files = []
     if len(corpus_files) < min_files_for_valid_corpus:
-        print('Not enough articles in corpusdir, re-downloading zip file')
+        print('Not enough articles in {}, re-downloading zip file').format(directory)
         # TODO: check if zip file is in top-level directory before downloading
         create_local_plos_corpus()
 

@@ -85,7 +85,7 @@ def get_jats_article_type_list(article_list=None, directory=corpusdir):
 
     Sorts them by frequency of occurrence
     :param article_list: list of articles, defaults to None
-    :param directory: directory of articles, defaults to corpusdir
+    :param directory: directory of articles, defaults to get_corpus_dir()
     :returns: dictionary with each JATS type matched to number of occurrences
     :rtype: dict
     """
@@ -108,7 +108,7 @@ def get_plos_article_type_list(article_list=None, directory=corpusdir):
 
     Sorts them by frequency of occurrence
     :param article_list: list of articles, defaults to None
-    :param directory: directory of articles, defaults to corpusdir
+    :param directory: directory of articles, defaults to get_corpus_dir()
     :returns: dictionary with each PLOS type matched to number of occurrences
     :rtype: dict
     """
@@ -131,7 +131,7 @@ def get_article_types_map(article_list=None, directory=corpusdir):
 
     Used for comparing how JATS and PLOS article types are assigned
     :param article_list: list of articles, defaults to None
-    :param directory: directory of articles, defaults to corpusdir
+    :param directory: directory of articles, defaults to get_corpus_dir()
     :returns: list of tuples of JATS, PLOS, DTD for each article in the corpus
     :rtype: list
     """
@@ -192,7 +192,7 @@ def get_amended_article_list(article_list=None, directory=corpusdir):
     Scans through articles in a directory to see if they are amendment notifications,
     scans articles that are that type to find DOI substrings of amended articles
     :param article: the filename for a single article
-    :param directory: directory where the article file is, default is corpusdir
+    :param directory: directory where the article file is, default is get_corpus_dir()
     :return: list of DOIs for articles issued a correction
     """
     amendments_article_list = []
@@ -271,7 +271,7 @@ def check_solr_doi(doi):
 def get_all_local_dois(directory=corpusdir):
     """Get all local DOIs in a corpus directory.
 
-    :param directory: directory of articles, defaults to corpusdir
+    :param directory: directory of articles, defaults to get_corpus_dir()
     :returns: list of DOIs
     :rtype: list
     """
@@ -307,7 +307,7 @@ def get_random_list_of_dois(directory=corpusdir, count=100):
     '''
     Gets a list of random DOIs. Tries first to construct from local files in
     directory, otherwise tries Solr DOI list as backup.
-    :param directory: defaults to corpusdir
+    :param directory: defaults to get_corpus_dir()
     :param count: specify how many DOIs are to be returned
     :return: a list of random DOIs for analysis
     '''

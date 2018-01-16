@@ -25,7 +25,7 @@ for doi in open('dois.txt'):
     seed_dois.append(doi.replace('\n',''))
 
 for doi in seed_dois:
-    # Copy file from corpusdir
-    article_path = doi_to_path(doi, corpusdir)
+    # Copy file from get_corpus_dir()
+    article_path = doi_to_path(doi, get_corpus_dir())
     file_name = os.path.basename(article_path)
     copyfile(article_path, os.path.join(seed_directory,file_name))
