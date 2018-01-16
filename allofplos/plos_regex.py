@@ -7,7 +7,6 @@ import os
 
 from . import get_corpus_dir, newarticledir
 
-get_corpus_dir()_regex = re.escape(get_corpus_dir())
 newarticledir_regex = re.escape(newarticledir)
 regex_match_prefix = r"^10\.1371/"
 regex_body_match = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7}$)"

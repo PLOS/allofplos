@@ -19,7 +19,8 @@ def get_corpus_dir():
     """If you want to set the corpus directory, assign the desired path to 
     ``os.environ['PLOS_CORPUS']``.
     """
-    return os.environ.get("PLOS_CORPUS", "") or corpusdir
+    import os
+    return os.path.expanduser(os.environ.get("PLOS_CORPUS", "")) or corpusdir
 
 del os
 
