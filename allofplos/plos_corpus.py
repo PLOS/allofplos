@@ -729,9 +729,9 @@ def create_local_plos_corpus(directory=None, rm_metadata=True):
     """
     if directory is None:
         directory = get_corpus_dir()
-    if os.path.isdir(directory) is False:
-        os.mkdir(directory)
+    if not os.path.isdir(directory):
         print('Creating folder for article xml')
+    os.makedirs(directory, exist_ok=True)
     zip_date, zip_size, metadata_path = get_zip_metadata()
     zip_path = download_file_from_google_drive(zip_id, local_zip, file_size=zip_size)
     unzip_articles(file_path=zip_path)
@@ -750,9 +750,9 @@ def create_test_plos_corpus(directory=None):
     """
     if directory is None:
         directory = get_corpus_dir()
-    if os.path.isdir(directory) is False:
-        os.mkdir(directory)
+    if not os.path.isdir(directory):
         print('Creating folder for article xml')
+    os.makedirs(directory, exist_ok=True)
     zip_path = download_file_from_google_drive(test_zip_id, local_test_zip)
     unzip_articles(file_path=zip_path, extract_directory=directory)
 
