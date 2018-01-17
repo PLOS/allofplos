@@ -7,7 +7,7 @@ import lxml.etree as et
 from lxml import objectify
 import requests
 
-from . import corpusdir
+from . import get_corpus_dir
 
 from .transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
                               BASE_URL_ARTICLE_LANDING_PAGE)
@@ -20,7 +20,7 @@ class Article():
     """The primary object of a PLOS article, initialized by a valid PLOS DOI.
 
     """
-    def __init__(self, doi, directory=corpusdir, plos_network=False):
+    def __init__(self, doi, directory=None, plos_network=False):
         """Creation of an article object.
 
         Usage:
@@ -40,7 +40,10 @@ class Article():
         :type plos_network: bool, optional
         """
         self.doi = doi
-        self.directory = directory
+        if directory:
+            self.directory = directory
+        else:
+            self.directory = get_corpus_dir()
         self.reset_memoized_attrs()
         self.plos_network = plos_network
         self._editor = None

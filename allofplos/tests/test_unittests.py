@@ -3,7 +3,7 @@ import os
 import unittest
 
 from . import TESTDIR, TESTDATADIR
-from .. import Article, corpusdir
+from .. import Article, get_corpus_dir
 
 from ..transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
                                filename_to_url, doi_to_url, INT_URL_TMP, EXT_URL_TMP)
@@ -32,7 +32,7 @@ class TestDOIMethods(unittest.TestCase):
         """
         TODO: What this tests are about!
         """
-        self.assertEqual(os.path.join(corpusdir, example_file), doi_to_path(example_doi), "{0} does not transform to {1}".format(example_doi, example_file))
+        self.assertEqual(os.path.join(get_corpus_dir(), example_file), doi_to_path(example_doi), "{0} does not transform to {1}".format(example_doi, example_file))
         self.assertEqual(example_file2, doi_to_path(example_doi2, ''), "{0} does not transform to {1}".format(example_doi2, example_file2))
         self.assertEqual(example_url2, doi_to_url(example_doi2), "{0} does not transform to {1}".format(example_doi2, example_url2))
         self.assertEqual(example_url, doi_to_url(example_doi), "In doi_to_url, {0} does not transform to {1}".format(example_doi, example_url))

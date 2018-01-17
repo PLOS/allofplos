@@ -5,9 +5,8 @@ The following RegEx pertains to the 7 main PLOS journals and the defunct PLOS Cl
 import re
 import os
 
-from . import corpusdir, newarticledir
+from . import get_corpus_dir, newarticledir
 
-corpusdir_regex = re.escape(corpusdir)
 newarticledir_regex = re.escape(newarticledir)
 regex_match_prefix = r"^10\.1371/"
 regex_body_match = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7}$)"
@@ -44,8 +43,10 @@ def validate_doi(doi):
 
 def validate_filename(filename):
     """
-    For an individual string, tests whether the full string is in a valid article file in corpusdir or newarticledir
-    format or not.
+    For an individual string, tests whether the full string is in a valid article file. This can take two forms.
+    
+    TODO: Officially document these two forms and give them names. Also, Explain the example below.
+    
     Example: 'allofplos_xml/journal.pbio.2000777.xml' is True, but 'allofplos_xml/journal.pbio.20007779.xml' is False
     :filename: A string with a file name
     :return: True if string is in a valid PLOS corpus article format; False if not
