@@ -19,21 +19,6 @@ class Corpus():
         self.plos_network = plos_network
         self.extension = extension
 
-    @property
-    def directory(self):
-        """
-        :returns: directory of corpus
-        :rtype: {str}
-        """
-        return self._directory
-
-    @directory.setter
-    def directory(self, d):
-        """
-        Reset memoized info when changing the path to the corpus.
-        """
-        self._directory = d
-
     def __repr__(self):
         """Value of a corpus object when you call it directly on the command line.
 
