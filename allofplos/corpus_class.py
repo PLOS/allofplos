@@ -2,7 +2,7 @@ from collections import OrderedDict
 import os
 import random
 
-from . import corpusdir
+from . import get_corpus_dir
 
 from .article_class import Article
 from .transformations import filename_to_doi, doi_to_path
@@ -11,8 +11,10 @@ from .transformations import filename_to_doi, doi_to_path
 class Corpus():
     """A collection of PLOS articles."""
 
-    def __init__(self, directory=corpusdir, plos_network=False, extension='.xml'):
+    def __init__(self, directory=None, plos_network=False, extension='.xml'):
         """Creation of an article corpus class."""
+        if directory is None:
+            directory = get_corpus_dir()
         self.directory = directory
         self.plos_network = plos_network
         self.extension = extension
@@ -92,8 +94,7 @@ class Corpus():
     def random_dois(self, count):
         """
         Gets a list of random DOIs. Construct from local files in
-        corpusdir. Length of list specified in `count` parameter.
-        :param directory: directory of articles for class object
+        corpus directory. Length of list specified in `count` parameter.
         :param count: specify how many DOIs are to be returned
         :return: a list of random DOIs for analysis
         """
