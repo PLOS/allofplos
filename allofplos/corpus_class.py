@@ -72,7 +72,7 @@ class Corpus():
     @property
     def filepaths(self):
         """List of article XML files in corpus directory, including the full path."""
-        return [os.path.join(self.directory, fname) for fname in self.files]
+        return [os.path.join(self.directory, fname) for fname in self.iter_files]
 
     def random_dois(self, count):
         """
