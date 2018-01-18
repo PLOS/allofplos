@@ -86,7 +86,5 @@ class Corpus():
         :param count: specify how many DOIs are to be returned
         :return: a list of random DOIs for analysis
         """
-        doi_list = self.dois
-        sample_doi_list = random.sample(doi_list, count)
 
-        return sample_doi_list
+        return random.sample(self.dois, count)
