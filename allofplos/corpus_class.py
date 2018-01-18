@@ -58,6 +58,11 @@ class Corpus():
         return (x[1] for x in self.iter_file_doi)
 
     @property
+    def iter_filepaths(self):
+        """Generator of article XML files in corpus directory, including the full path."""
+        return (os.path.join(self.directory, fname) for fname in self.iter_files)
+
+    @property
     def files(self):
         """List of article XML files in the corpus directory."""
 
