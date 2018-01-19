@@ -811,7 +811,7 @@ def main():
     except FileNotFoundError:
         corpus_files = []
     if len(corpus_files) < min_files_for_valid_corpus:
-        print('Not enough articles in {}, re-downloading zip file').format(directory)
+        print('Not enough articles in {}, re-downloading zip file'.format(directory))
         # TODO: check if zip file is in top-level directory before downloading
         create_local_plos_corpus()
 
