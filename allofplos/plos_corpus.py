@@ -236,7 +236,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         article_path = doi_to_path(doi, directory=tempdir)
         # create new local XML files
         if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
-            with open(article_path, 'w') as f:
+            with open(article_path, 'w', encoding='utf8') as f:
                 f.write(et.tostring(articleXML, method='xml', encoding='unicode'))
             if not plos_network:
                 time.sleep(1)
@@ -330,7 +330,7 @@ def download_updated_xml(article_file,
             #     updated = False
         if get_new:
             article_new = Article(article.doi, directory=tempdir)
-            with open(article_new.filename, 'w') as f:
+            with open(article_new.filename, 'w', encoding='utf8') as f:
                 f.write(articleXML_remote)
             updated = True
     return updated
