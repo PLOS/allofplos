@@ -15,7 +15,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='allofplos',
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.9.6',
+    version='0.10.0',
     description='Get and analyze all PLOS articles',
     long_description=long_description,
     url='https://github.com/PLOS/allofplos',
