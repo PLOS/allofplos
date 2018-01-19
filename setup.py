@@ -57,7 +57,6 @@ setup(
     package_data={
         'allofplos': ['starter.db'],
         'allofplos.starter_corpus': ['*.xml'],
-        'allofplos.tests.testdata': ['*.xml']
     },
 
     # Although 'package_data' is the preferred approach, in some case you may
