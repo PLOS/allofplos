@@ -3,10 +3,11 @@ import os
 import unittest
 
 from . import TESTDIR, TESTDATADIR
-from .. import Article, get_corpus_dir
+from .. import Article, Corpus, get_corpus_dir, starterdir
 
 from ..transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
                                filename_to_url, doi_to_url, INT_URL_TMP, EXT_URL_TMP)
+from ..plos_corpus import listdir_nohidden
 
 
 suffix = '.xml'
@@ -209,6 +210,15 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.type_, "retraction", 'type_ does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.url[:100], "http://journals.plos.org/plosone/article/file?id=10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846e", 'url does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.word_count, 129, 'word_count does not transform correctly for {}'.format(article.doi))
+
+
+class TestCorpusClass(unittest.TestCase):
+    def test_starterdir(self):
+        corpus = Corpus(directory=starterdir)
+        self.assertEqual(len(corpus.files), len(listdir_nohidden(starterdir)), 'Number of files in corpus incorrect')
+        self.assertEqual(set(corpus.filepaths), set(listdir_nohidden(starterdir)), "Files in corpus incorrect")
+        self.assertTrue('journal.pcbi.0030158.xml' in corpus.files)
+        self.assertTrue('10.1371/journal.pmed.0030132' in corpus.dois)
 
 if __name__ == "__main__":
     unittest.main()
