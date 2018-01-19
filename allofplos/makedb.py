@@ -52,18 +52,18 @@ parser.add_argument('--db', action='store', help=
 parser.add_argument('--random', action='store', type=int, help=
                     'Number of articles in a random subset. '
                     'By default will use all articles')
-parser.add_argument('--seeddb', action='store_true', help=
-                    'Make the seed database', dest='seed')
+parser.add_argument('--starterdb', action='store_true', help=
+                    'Make the starter database', dest='starter')
 args = parser.parse_args()
 
 # TODO: Put a warning that the DB will be deleted
 if os.path.isfile(args.db):
     os.remove(args.db)
 
-if args.seed:
-    if os.path.isfile('seed.db'):
-        os.remove('seed.db')
-    db = SqliteExtDatabase('seed.db')
+if args.starter:
+    if os.path.isfile('starter.db'):
+        os.remove('starter.db')
+    db = SqliteExtDatabase('starter.db')
 else:
     db = SqliteExtDatabase(args.db)
 
@@ -114,8 +114,8 @@ db.create_tables([Journal, PLOSArticle, ArticleType,
                       CoAuthorPLOSArticle, CorrespondingAuthor,
                       JATSType, Affiliations, Country])
 
-if args.seed:
-    allfiles = os.listdir('seed_corpus')
+if args.starter:
+    allfiles = os.listdir('starter_corpus')
 else:
     allfiles = os.listdir(corpusdir)
 if args.random:

@@ -15,12 +15,12 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='allofplos',
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.9.6',
+    version='0.10.0',
     description='Get and analyze all PLOS articles',
     long_description=long_description,
     url='https://github.com/PLOS/allofplos',
-    author='Elizabeth Seiver, Sebastian Bassi',
-    author_email='eseiver@plos.org, sbassi@plos.org',
+    author='Elizabeth Seiver, Sebastian Bassi, M Pacer',
+    author_email='eseiver@plos.org, sebastian.bassi@globant.com, mpacer@berkeley.edu',
     license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -55,8 +55,8 @@ setup(
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
     package_data={
-        'allofplos':['seed.db'],
-        'allofplos.seed_corpus': ['*.xml'],
+        'allofplos': ['starter.db'],
+        'allofplos.starter_corpus': ['*.xml'],
     },
 
     # Although 'package_data' is the preferred approach, in some case you may
