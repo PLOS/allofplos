@@ -1,3 +1,7 @@
+.. image:: https://api.travis-ci.org/PLOS/allofplos.svg?branch=master
+   :target: https://travis-ci.org/PLOS/allofplos
+   :alt: Build Status
+
 All of Plos (allofplos)
 =======================
 
