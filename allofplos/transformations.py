@@ -23,6 +23,7 @@ BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id={}'
 BASE_URL_LANDING_PAGE = 'http://journals.plos.org/plos{}/'
 LANDING_PAGE_SUFFIX = '{}?id={}'
 xlink_href = '{http://www.w3.org/1999/xlink}href'
+doi_url = 'https://doi.org/'
 
 plos_page_dict = {'article': 'article',
                   'asset': 'article/asset',

@@ -11,7 +11,7 @@ from . import get_corpus_dir
 from .transformations import (filename_to_doi, _get_base_page, LANDING_PAGE_SUFFIX,
                               URL_SUFFIX, plos_page_dict, xlink_href, cc_by_3_link,
                               cc0_link, cc_by_3_igo_link, crown_link, cc_dict,
-                              cc_by_4_link)
+                              cc_by_4_link, doi_url)
 from .plos_regex import validate_doi
 from .article_elements import (parse_article_date, get_contrib_info,
                                match_contribs_to_dicts, parse_license)
@@ -139,6 +139,10 @@ class Article():
         """
         out = "DOI: {0}\nTitle: {1}".format(self.doi, self.title)
         return out
+
+    def doi_link(self):
+        """The link of the DOI, which redirects to the journal URL."""
+        return doi_url + self.doi
 
     def get_remote_xml(self):
         """For an article, parse its XML file at the location of self.url.
