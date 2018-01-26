@@ -327,6 +327,21 @@ class Article():
 
         return order_correct
 
+    @property
+    def volume(self):
+        """Volume of the article."""
+        return int(self.root.xpath('/article/front/article-meta/volume')[0].text)
+
+    @property
+    def issue(self):
+        """Issue of the article."""
+        return int(self.root.xpath('/article/front/article-meta/issue')[0].text)
+
+    @property
+    def elocation(self):
+        """Elocation ID of the article."""
+        return self.root.xpath('/article/front/article-meta/elocation-id')[0].text
+
     def get_aff_dict(self):
         """For a given PLOS article, get list of contributor-affiliated institutions.
 
