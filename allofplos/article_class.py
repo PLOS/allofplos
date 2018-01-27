@@ -1202,17 +1202,22 @@ class Article():
     def abstract(self):
         """For an individual PLOS article, get the string of the abstract content.
 
+        PLOS articles can have multiple abstract fields at the same XPath location,
+        however the actual abstract is distinguished by having no attributes (`[count(@*)=0]`).
         Info about the article abstract: http://journals.plos.org/plosone/s/submission-guidelines#loc-abstract
         :return: plain-text string of content in abstract
         """
-        abstract = self.get_element_xpath(tag_path_elements=["/",
-                                                             "article",
-                                                             "front",
-                                                             "article-meta",
-                                                             "abstract"])
-        try:
-            abstract_text = et.tostring(abstract[0], encoding='unicode', method='text')
-        except IndexError:
+        abstract_list = self.get_element_xpath(tag_path_elements=["/",
+                                                                  "article",
+                                                                  "front",
+                                                                  "article-meta",
+                                                                  "abstract[count(@*)=0]"])
+        if abstract_list:
+                abstract = abstract_list[0]
+                assert len(abstract_list) == 1
+
+                abstract_text = et.tostring(abstract[0], encoding='unicode', method='text')
+        else:
             if self.type_ == 'research-article' and self.plostype == 'Research Article':
                 print('No abstract found for research article {}'.format(self.doi))
 
