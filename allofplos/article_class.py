@@ -1304,6 +1304,7 @@ class Article():
         """For a single article, return a dictionary of the several counts functions that are available.
 
         Dictionary format for XML tags: {figures: fig-count, pages: page-count, tables: table-count}
+        For articles without the figure and table counts fields, calculates those values using XPath.
         :return: counts dictionary of number of figures, pages, and tables in the article
         """
         counts = {}
@@ -1318,9 +1319,13 @@ class Article():
             for count_item in count_element:
                 count = count_item.get('count')
                 count_type = count_item.tag
-                counts[count_type] = count
+                counts[count_type] = int(count)
         if len(counts) > 3:  # this shouldn't happen
             print(counts)
+        if 'fig-count' not in counts:
+            counts['fig-count'] = len(self.root.xpath('.//fig'))
+        if 'table-count' not in counts:
+            counts['table-count'] = len(self.root.xpath('.//table-wrap'))
         return counts
 
     @property
