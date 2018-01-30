@@ -220,9 +220,12 @@ class TestArticleClass(unittest.TestCase):
         article = Article(example_vor_doi, directory=TESTDATADIR)
         self.assertTrue(article.proof == 'vor_update')
         text_file = os.path.join(TESTDIR, 'test.txt')
+        os.makedirs('test_corpus', exist_ok=True)
+        os.environ['PLOS_CORPUS'] = os.path.abspath('test_corpus')
         proofs = check_for_uncorrected_proofs(directory=TESTDATADIR, text_list=text_file)
         self.assertEqual(proofs, [example_uncorrected_doi], 'wrong number uncorrected proofs found.')
         os.remove(text_file)
+        os.rmdir('test_corpus')
 
 
 class TestCorpusClass(unittest.TestCase):
