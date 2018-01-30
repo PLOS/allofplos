@@ -385,33 +385,33 @@ def download_amended_articles(directory=None, tempdir=newarticledir, amended_art
     return amended_updated_article_list
 
 
-def get_uncorrected_proofs_list(directory=None, list_path=uncorrected_proofs_text_list):
+def get_uncorrected_proofs(directory=None, list_path=uncorrected_proofs_text_list):
     """
     Loads the uncorrected proofs txt file.
     Failing that, creates new txt file from scratch using directory.
     :param directory: Directory containing the article files
-    :return: list of DOIs of uncorrected proofs from text list
+    :return: set of DOIs of uncorrected proofs from text list
     """
     if directory is None:
         directory = get_corpus_dir()
 
     try:
         with open(list_path) as f:
-            uncorrected_proofs_list = f.read().splitlines()
+            uncorrected_proofs = set(f.read().splitlines())
     except FileNotFoundError:
         print("Creating new text list of uncorrected proofs from scratch.")
         article_files = listdir_nohidden(directory)
-        uncorrected_proofs_list = []
+        uncorrected_proofs = set()
         for article_file in tqdm(article_files, disable=None):
             article = Article.from_filename(article_file)
             article.directory = directory
             if article.proof == 'uncorrected_proof':
-                uncorrected_proofs_list.append(article.doi)
+                uncorrected_proofs.add(article.doi)
         print("Saving uncorrected proofs.")
         with open(list_path, 'w') as f:
-            for item in tqdm(sorted(uncorrected_proofs_list), disable=None):
+            for item in tqdm(sorted(uncorrected_proofs), disable=None):
                 f.write("%s\n" % item)
-    return uncorrected_proofs_list
+    return uncorrected_proofs
 
 
 def check_for_uncorrected_proofs(directory=newarticledir, list_path=uncorrected_proofs_text_list):
@@ -420,32 +420,32 @@ def check_for_uncorrected_proofs(directory=newarticledir, list_path=uncorrected_
     One of the checks on newly downloaded articles.
     :param list_path: List of DOIs
     :param directory: Directory containing the article files
-    :return: all articles that are uncorrected proofs, including from main article directory
+    :return: set of all articles that are uncorrected proofs, including from main article directory
     """
 
     # Read in uncorrected proofs from uncorrected_proofs_text_list txt file
-    # If uncorrected_proofs_list txt file doesn't exist, build that list from scratch from main article directory
-    uncorrected_proofs_list = get_uncorrected_proofs_list(list_path=list_path)
+    # If uncorrected_proofs txt file doesn't exist, build that set from scratch from main article directory
+    uncorrected_proofs = get_uncorrected_proofs(list_path=list_path)
 
     # Check directory for uncorrected proofs
-    # Append uncorrected proofs to running list
+    # Append uncorrected proofs to running set
     articles = listdir_nohidden(directory)
     new_proofs = 0
     for article_file in articles:
         article = Article.from_filename(article_file)
         article.directory = directory
-        if article.proof == 'uncorrected_proof' and article.doi not in uncorrected_proofs_list:
-            uncorrected_proofs_list.append(article.doi)
+        if article.proof == 'uncorrected_proof':
+            uncorrected_proofs.add(article.doi)
             new_proofs += 1
     # Copy all uncorrected proofs from list to clean text file
     with open(list_path, 'w') as f:
-        for item in sorted(set(uncorrected_proofs_list)):
+        for item in sorted(uncorrected_proofs):
             f.write("%s\n" % item)
-    if uncorrected_proofs_list:
-        print("{} new uncorrected proofs found. {} total in list.".format(new_proofs, len(uncorrected_proofs_list)))
+    if uncorrected_proofs:
+        print("{} new uncorrected proofs found. {} total in set.".format(new_proofs, len(uncorrected_proofs)))
     else:
-        print("No uncorrected proofs found in folder or in existing list.")
-    return uncorrected_proofs_list
+        print("No uncorrected proofs found in folder or in existing file.")
+    return uncorrected_proofs
 
 
 def check_for_vor_updates(uncorrected_list=None):
@@ -458,7 +458,7 @@ def check_for_vor_updates(uncorrected_list=None):
 
     # First get/make list of uncorrected proofs
     if uncorrected_list is None:
-        uncorrected_list = get_uncorrected_proofs_list()
+        uncorrected_list = list(get_uncorrected_proofs())
     # Make it check a single article
     if isinstance(uncorrected_list, str):
         uncorrected_list = [uncorrected_list]
@@ -512,8 +512,8 @@ def download_vor_updates(directory=None, tempdir=newarticledir,
         if updated:
             vor_updated_article_list.append(article)
 
-    old_uncorrected_proofs_list = get_uncorrected_proofs_list()
-    new_uncorrected_proofs_list = list(set(old_uncorrected_proofs_list) - set(vor_updated_article_list))
+    old_uncorrected_proofs_list = get_uncorrected_proofs()
+    new_uncorrected_proofs_list = list(old_uncorrected_proofs_list - set(vor_updated_article_list))
 
     # direct remote XML check; add their totals to totals above
     if new_uncorrected_proofs_list:
@@ -555,9 +555,9 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
         pass
     proofs_download_list = []
     if article_list is None:
-        article_list = get_uncorrected_proofs_list()
+        article_list = list(get_uncorrected_proofs())
     print("Checking directly for additional VOR updates...")
-    for doi in tqdm(list(set(article_list)), disable=None):
+    for doi in tqdm(article_list, disable=None):
         f = doi_to_path(doi)
         updated = download_updated_xml(f, vor_check=True)
         if updated:

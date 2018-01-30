@@ -7,7 +7,7 @@ from .. import Article, Corpus, get_corpus_dir, starterdir
 
 from ..transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
                                filename_to_url, doi_to_url, INT_URL_TMP, EXT_URL_TMP)
-from ..plos_corpus import listdir_nohidden, check_for_uncorrected_proofs, get_uncorrected_proofs_list
+from ..plos_corpus import listdir_nohidden, check_for_uncorrected_proofs, get_uncorrected_proofs
 
 
 suffix = '.xml'
@@ -222,10 +222,10 @@ class TestArticleClass(unittest.TestCase):
         text_file = os.path.join(TESTDIR, 'test.txt')
         os.makedirs('test_corpus', exist_ok=True)
         os.environ['PLOS_CORPUS'] = os.path.abspath('test_corpus')
-        proofs1 = get_uncorrected_proofs_list(directory=TESTDATADIR, list_path=text_file)
-        self.assertEqual(proofs1, [example_uncorrected_doi], 'wrong number uncorrected proofs found.')
+        proofs1 = get_uncorrected_proofs(directory=TESTDATADIR, list_path=text_file)
+        self.assertEqual(proofs1, {example_uncorrected_doi}, 'wrong number uncorrected proofs found.')
         proofs2 = check_for_uncorrected_proofs(directory=TESTDATADIR, list_path=text_file)
-        self.assertEqual(proofs2, [example_uncorrected_doi], 'wrong number uncorrected proofs found.')
+        self.assertEqual(proofs2, {example_uncorrected_doi}, 'wrong number uncorrected proofs found.')
         os.remove(text_file)
         os.rmdir('test_corpus')
 
