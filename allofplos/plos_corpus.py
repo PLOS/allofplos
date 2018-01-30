@@ -404,6 +404,7 @@ def get_uncorrected_proofs_list(directory=None, text_list=uncorrected_proofs_tex
         uncorrected_proofs_list = []
         for article_file in tqdm(article_files, disable=None):
             article = Article.from_filename(article_file)
+            article.directory = directory
             if article.proof == 'uncorrected_proof':
                 uncorrected_proofs_list.append(article.doi)
         print("Saving uncorrected proofs.")
