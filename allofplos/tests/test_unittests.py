@@ -219,7 +219,6 @@ class TestArticleClass(unittest.TestCase):
         self.assertTrue(article.proof == 'uncorrected_proof')
         article = Article(example_vor_doi, directory=TESTDATADIR)
         self.assertTrue(article.proof == 'vor_update')
-        self.assertEqual(TESTDATADIR, os.environ['PLOS_CORPUS'])
         text_file = os.path.join(TESTDIR, 'test.txt')
         proofs = check_for_uncorrected_proofs(directory=TESTDATADIR, text_list=text_file)
         self.assertEqual(proofs, [example_uncorrected_doi], 'wrong number uncorrected proofs found.')
