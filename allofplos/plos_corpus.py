@@ -385,7 +385,7 @@ def download_amended_articles(directory=None, tempdir=newarticledir, amended_art
     return amended_updated_article_list
 
 
-def get_uncorrected_proofs_list(directory=None):
+def get_uncorrected_proofs_list(directory=None, text_list=uncorrected_proofs_text_list):
     """
     Loads the uncorrected proofs txt file.
     Failing that, creates new txt file from scratch using directory.
@@ -424,7 +424,7 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
 
     # Read in uncorrected proofs from uncorrected_proofs_text_list txt file
     # If uncorrected_proofs_list txt file doesn't exist, build that list from scratch from main article directory
-    uncorrected_proofs_list = get_uncorrected_proofs_list()
+    uncorrected_proofs_list = get_uncorrected_proofs_list(text_list=text_list)
 
     # Check directory for uncorrected proofs
     # Append uncorrected proofs to running list
