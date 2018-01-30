@@ -394,9 +394,9 @@ def get_uncorrected_proofs_list(directory=None, text_list=uncorrected_proofs_tex
     """
     if directory is None:
         directory = get_corpus_dir()
-        
+
     try:
-        with open(uncorrected_proofs_text_list) as f:
+        with open(text_list) as f:
             uncorrected_proofs_list = f.read().splitlines()
     except FileNotFoundError:
         print("Creating new text list of uncorrected proofs from scratch.")
@@ -407,7 +407,7 @@ def get_uncorrected_proofs_list(directory=None, text_list=uncorrected_proofs_tex
             if article.proof == 'uncorrected_proof':
                 uncorrected_proofs_list.append(article.doi)
         print("Saving uncorrected proofs.")
-        with open(uncorrected_proofs_text_list, 'w') as f:
+        with open(text_list, 'w') as f:
             for item in tqdm(sorted(uncorrected_proofs_list), disable=None):
                 f.write("%s\n" % item)
     return uncorrected_proofs_list
