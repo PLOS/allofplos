@@ -385,7 +385,7 @@ def download_amended_articles(directory=None, tempdir=newarticledir, amended_art
     return amended_updated_article_list
 
 
-def get_uncorrected_proofs_list(directory=None, text_list=uncorrected_proofs_text_list):
+def get_uncorrected_proofs_list(directory=None, list_path=uncorrected_proofs_text_list):
     """
     Loads the uncorrected proofs txt file.
     Failing that, creates new txt file from scratch using directory.
@@ -396,7 +396,7 @@ def get_uncorrected_proofs_list(directory=None, text_list=uncorrected_proofs_tex
         directory = get_corpus_dir()
 
     try:
-        with open(text_list) as f:
+        with open(list_path) as f:
             uncorrected_proofs_list = f.read().splitlines()
     except FileNotFoundError:
         print("Creating new text list of uncorrected proofs from scratch.")
@@ -408,24 +408,24 @@ def get_uncorrected_proofs_list(directory=None, text_list=uncorrected_proofs_tex
             if article.proof == 'uncorrected_proof':
                 uncorrected_proofs_list.append(article.doi)
         print("Saving uncorrected proofs.")
-        with open(text_list, 'w') as f:
+        with open(list_path, 'w') as f:
             for item in tqdm(sorted(uncorrected_proofs_list), disable=None):
                 f.write("%s\n" % item)
     return uncorrected_proofs_list
 
 
-def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_proofs_text_list):
+def check_for_uncorrected_proofs(directory=newarticledir, list_path=uncorrected_proofs_text_list):
     """
     For a list of articles, check whether they are the 'uncorrected proof' type
     One of the checks on newly downloaded articles.
-    :param text_list: List of DOIs
+    :param list_path: List of DOIs
     :param directory: Directory containing the article files
     :return: all articles that are uncorrected proofs, including from main article directory
     """
 
     # Read in uncorrected proofs from uncorrected_proofs_text_list txt file
     # If uncorrected_proofs_list txt file doesn't exist, build that list from scratch from main article directory
-    uncorrected_proofs_list = get_uncorrected_proofs_list(text_list=text_list)
+    uncorrected_proofs_list = get_uncorrected_proofs_list(list_path=list_path)
 
     # Check directory for uncorrected proofs
     # Append uncorrected proofs to running list
@@ -438,7 +438,7 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
             uncorrected_proofs_list.append(article.doi)
             new_proofs += 1
     # Copy all uncorrected proofs from list to clean text file
-    with open(text_list, 'w') as f:
+    with open(list_path, 'w') as f:
         for item in sorted(set(uncorrected_proofs_list)):
             f.write("%s\n" % item)
     if uncorrected_proofs_list:
@@ -570,7 +570,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     return proofs_download_list
 
 
-def download_check_and_move(article_list, text_list, tempdir, destination,
+def download_check_and_move(article_list, list_path, tempdir, destination,
                             plos_network=False):
     """
     For a list of new articles to get, first download them from content-repo to the temporary directory
@@ -578,7 +578,7 @@ def download_check_and_move(article_list, text_list, tempdir, destination,
     Act on available VOR updates & amended articles
     Then, move to corpus directory where the rest of the articles are
     :param article_list: List of new articles to download
-    :param text_list: List of uncorrected proofs to check for vor updates
+    :param list_path: List of uncorrected proofs to check for vor updates
     :param tempdir: Directory where articles to be downloaded to
     :param destination: Directory where new articles are to be moved to
     """
