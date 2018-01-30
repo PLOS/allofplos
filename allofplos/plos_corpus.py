@@ -433,7 +433,7 @@ def check_for_uncorrected_proofs(directory=newarticledir, text_list=uncorrected_
     for article_file in articles:
         article = Article.from_filename(article_file)
         article.directory = directory
-        if article.proof == 'uncorrected_proof':
+        if article.proof == 'uncorrected_proof' and article.doi not in uncorrected_proofs_list:
             uncorrected_proofs_list.append(article.doi)
             new_proofs += 1
     # Copy all uncorrected proofs from list to clean text file
