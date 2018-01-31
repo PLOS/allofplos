@@ -221,9 +221,9 @@ class TestArticleClass(unittest.TestCase):
         article = Article(example_vor_doi)
         self.assertTrue(article.proof == 'vor_update')
         text_file = os.path.join(TESTDIR, 'test.txt')
-        proofs1 = get_uncorrected_proofs(list_path=text_file)
+        proofs1 = get_uncorrected_proofs(proof_filepath=text_file)
         self.assertEqual(proofs1, {example_uncorrected_doi}, 'wrong number uncorrected proofs found.')
-        proofs2 = check_for_uncorrected_proofs(directory=None, list_path=text_file)
+        proofs2 = check_for_uncorrected_proofs(directory=None, proof_filepath=text_file)
         self.assertEqual(proofs2, {example_uncorrected_doi}, 'wrong number uncorrected proofs found.')
         os.remove(text_file)
 
