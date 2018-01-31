@@ -10,7 +10,8 @@ import requests
 from . import get_corpus_dir
 
 from .transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
-                              BASE_URL_ARTICLE_LANDING_PAGE)
+                              BASE_URL_ARTICLE_LANDING_PAGE, get_base_page,
+                              LANDING_PAGE_SUFFIX, url_suffix, plos_page_dict)
 from .plos_regex import validate_doi
 from .article_elements import (parse_article_date, get_contrib_info,
                                match_contribs_to_dicts)
@@ -832,31 +833,35 @@ class Article():
         """
         return self.tree.getroot()
 
+    def get_page(self, page_type='article'):
+        """Get any of the PLOS URLs associated with a particular DOI.
+
+        Based on `get_page_base()`, which customizes the beginning URL by journal.
+        :param page_type: one of the keys in `plos_page_dict`, defaults to article
+        """
+        BASE_LANDING_PAGE = get_base_page(self.journal)
+        try:
+            page = BASE_LANDING_PAGE + LANDING_PAGE_SUFFIX.format(plos_page_dict[page_type],
+                                                                  self.doi)
+            if page_type == 'assetXMLFile':
+                page += url_suffix
+        except KeyError:
+            raise Exception('Invalid page_type; value must be one of the following: {}'.format(list(plos_page_dict.keys())))
+        return page
+
     @property
     def page(self):
         """ The URL of the landing page for an article.
 
         Where to access an article's HTML version
         """
-        if len(self.journal.split(' ')) == 2:
-            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format(self.journal.lower().split(' ')[1])
-        elif 'negl' in self.journal.lower():
-            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('ntds')
-        elif 'comp' in self.journal.lower():
-            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('compbiol')
-        elif 'clinical trials' in self.journal.lower():
-            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('ctr')
-        else:
-            print('URL error for {}'.format(self.doi))
-            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('one')
-
-        return BASE_LANDING_PAGE + self.doi
+        return self.get_page()
 
     @property
     def url(self):
         """The direct url of an article's XML file.
         """
-        return self.get_url(plos_network=self.plos_network)
+        return self.get_page(page_type='assetXMLFile')
 
     @property
     def filename(self):
