@@ -7,7 +7,7 @@ from .. import Article, Corpus, get_corpus_dir, starterdir
 
 from ..transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
                                filename_to_url, doi_to_url, INT_URL_TMP, EXT_URL_TMP)
-from ..plos_corpus import listdir_nohidden
+from ..plos_corpus import listdir_nohidden, check_for_uncorrected_proofs, get_uncorrected_proofs
 
 
 suffix = '.xml'
@@ -24,6 +24,8 @@ example_url2_int = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-'\
                    '07a-e9a4846ec0b6.XML'
 example_file2 = 'plos.correction.3155a3e9-5fbe-435c-a07a-e9a4846ec0b6.xml'
 example_doi2 = '10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846ec0b6'
+example_uncorrected_doi = '10.1371/journal.pbio.2002399'
+example_vor_doi = '10.1371/journal.pbio.2002354'
 class_doi = '10.1371/journal.pone.0185809'
 
 
@@ -210,6 +212,20 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.type_, "retraction", 'type_ does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.url[:100], "http://journals.plos.org/plosone/article/file?id=10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846e", 'url does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.word_count, 129, 'word_count does not transform correctly for {}'.format(article.doi))
+
+    def test_proofs(self):
+        """Tests whether uncorrected proofs and VOR updates are being detected correctly."""
+        os.environ['PLOS_CORPUS'] = TESTDATADIR
+        article = Article(example_uncorrected_doi)
+        self.assertTrue(article.proof == 'uncorrected_proof')
+        article = Article(example_vor_doi)
+        self.assertTrue(article.proof == 'vor_update')
+        text_file = os.path.join(TESTDIR, 'test.txt')
+        proofs1 = get_uncorrected_proofs(proof_filepath=text_file)
+        self.assertEqual(proofs1, {example_uncorrected_doi}, 'wrong number uncorrected proofs found.')
+        proofs2 = check_for_uncorrected_proofs(directory=None, proof_filepath=text_file)
+        self.assertEqual(proofs2, {example_uncorrected_doi}, 'wrong number uncorrected proofs found.')
+        os.remove(text_file)
 
 
 class TestCorpusClass(unittest.TestCase):
