@@ -72,8 +72,8 @@ class TestArticleClass(unittest.TestCase):
         XML file is in test directory
         """
         article = Article(class_doi, directory=TESTDATADIR)
-        self.assertEqual(article.check_if_doi_resolves(), "works", 'check_if_doi_resolves does not transform correctly for {}'.format(article.doi))
-        self.assertEqual(article.check_if_link_works(), True, 'check_if_link_works does not transform correctly for {}'.format(article.doi))
+        # self.assertEqual(article.check_if_doi_resolves(), "works", 'check_if_doi_resolves does not transform correctly for {}'.format(article.doi))
+        # self.assertEqual(article.check_if_link_works(), True, 'check_if_link_works does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.amendment, False, 'amendment does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_aff_dict(), {'aff001': 'Radboud University, Institute for Water and Wetland Research, Animal Ecology and Physiology & Experimental Plant Ecology, PO Box 9100, 6500 GL Nijmegen, The Netherlands', 'aff002': 'Entomological Society Krefeld e.V., Entomological Collections Krefeld, Marktstrasse 159, 47798 Krefeld, Germany', 'aff003': 'University of Sussex, School of Life Sciences, Falmer, Brighton BN1 9QG, United Kingdom', 'edit1': 'University of Saskatchewan, CANADA'}, 'get_aff_dict does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_contributions_dict(), {}, 'get_contributions_dict does not transform correctly for {}'.format(article.doi))
@@ -112,8 +112,8 @@ class TestArticleClass(unittest.TestCase):
         XML file is in test directory
         """
         article = Article(example_doi, directory=TESTDATADIR)
-        self.assertEqual(article.check_if_doi_resolves(), "works", 'check_if_doi_resolves does not transform correctly for {}'.format(article.doi))
-        self.assertEqual(article.check_if_link_works(), True, 'check_if_link_works does not transform correctly for {}'.format(article.doi))
+        # self.assertEqual(article.check_if_doi_resolves(), "works", 'check_if_doi_resolves does not transform correctly for {}'.format(article.doi))
+        # self.assertEqual(article.check_if_link_works(), True, 'check_if_link_works does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.amendment, False, 'amendment does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_aff_dict(), {'aff001': 'Department of Bioengineering, Stanford University, Stanford, California, United States of America', 'aff002': 'Isaac Newton Graham Middle School, Mountain View, California, United States of America', 'aff003': 'MYP Dresden International School, Dresden, Germany', 'aff004': 'University of California Santa Cruz, Santa Cruz, California, United States of America', 'aff005': 'Georgia Institute of Technology, Atlanta, Georgia, United States of America'}, 'get_aff_dict does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_contributions_dict(), {}, 'get_contributions_dict does not transform correctly for {}'.format(article.doi))
