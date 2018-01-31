@@ -62,6 +62,30 @@ def get_base_page(journal):
     return BASE_LANDING_PAGE
 
 
+def doi_to_journal(doi):
+    """For a given doi, get the PLOS journal that the article is published in.
+
+    For the subset of DOIs with 'annotation' in the name, defaults to PLOS ONE.
+    :return: string of journal name
+    """
+    journal = "PLOS ONE"
+    if 'pcbi' in doi:
+        journal = "PLOS Computational Biology"
+    elif 'pntd' in doi:
+        journal = "PLOS Neglected Tropical Diseases"
+    elif 'pgen' in doi:
+        journal = "PLOS Genetics"
+    elif 'ppat' in doi:
+        journal = "PLOS Pathogens"
+    elif 'pbio' in doi:
+        journal = "PLOS Biology"
+    elif 'pmed' in doi:
+        journal = "PLOS Medicine"
+    elif 'pctr' in doi:
+        journal = "PLOS Clinical Trials"
+    return journal
+
+
 def filename_to_url(filename, plos_network=False):
     """
     Transform filename a downloadable URL where its XML resides
