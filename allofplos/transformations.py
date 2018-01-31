@@ -19,7 +19,7 @@ annotation = 'annotation'
 correction = 'correction'
 ANNOTATION_URL = 'http://journals.plos.org/plosone/article/file?id=10.1371/annotation/'
 ANNOTATION_DOI = '10.1371/annotation'
-BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='
+BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id={}'
 BASE_URL_LANDING_PAGE = 'http://journals.plos.org/plos{}/'
 LANDING_PAGE_SUFFIX = '{}?id={}'
 

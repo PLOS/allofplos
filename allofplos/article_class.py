@@ -142,18 +142,6 @@ class Article():
         out = "DOI: {0}\nTitle: {1}".format(self.doi, self.title)
         return out
 
-    def get_url(self, plos_network=False):
-        """The PLOS external URL for the XML of a particular article.
-
-        Used for downloading articles, and comparing local XML to remote XML
-        :param plos_network: whether inside the PLOS network, defaults to False
-        :type plos_network: bool, optional
-        :returns: direct URL to the article XML file
-        :rtype: {str}
-        """
-        URL_TMP = INT_URL_TMP if plos_network else EXT_URL_TMP
-        return URL_TMP.format(self.doi)
-
     def get_remote_xml(self):
         """For an article, parse its XML file at the location of self.url.
 
