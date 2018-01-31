@@ -9,9 +9,8 @@ import requests
 
 from . import get_corpus_dir
 
-from .transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
-                              BASE_URL_ARTICLE_LANDING_PAGE, get_base_page,
-                              LANDING_PAGE_SUFFIX, url_suffix, plos_page_dict)
+from .transformations import (filename_to_doi, get_base_page, LANDING_PAGE_SUFFIX,
+                              url_suffix, plos_page_dict)
 from .plos_regex import validate_doi
 from .article_elements import (parse_article_date, get_contrib_info,
                                match_contribs_to_dicts)

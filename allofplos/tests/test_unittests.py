@@ -6,22 +6,17 @@ from . import TESTDIR, TESTDATADIR
 from .. import Article, Corpus, get_corpus_dir, starterdir
 
 from ..transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
-                               filename_to_url, doi_to_url, INT_URL_TMP, EXT_URL_TMP)
+                               filename_to_url, doi_to_url)
 from ..corpus import listdir_nohidden, check_for_uncorrected_proofs, get_uncorrected_proofs
 
 
 suffix = '.xml'
 example_url = 'http://journals.plos.org/plosbiology/article/file?id=10.1371/'\
               'journal.pbio.2001413&type=manuscript'
-example_url_int = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-'\
-                  'repo?key=10.1371/journal.pbio.2001413.XML'
 example_file = 'journal.pbio.2001413.xml'
 example_doi = '10.1371/journal.pbio.2001413'
 example_url2 = 'http://journals.plos.org/plosone/article/file?id=10.1371/'\
                'annotation/3155a3e9-5fbe-435c-a07a-e9a4846ec0b6&type=manuscript'
-example_url2_int = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-'\
-                   'prod-repo?key=10.1371/annotation/3155a3e9-5fbe-435c-a'\
-                   '07a-e9a4846ec0b6.XML'
 example_file2 = 'plos.correction.3155a3e9-5fbe-435c-a07a-e9a4846ec0b6.xml'
 example_doi2 = '10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846ec0b6'
 example_uncorrected_doi = '10.1371/journal.pbio.2002399'
@@ -39,11 +34,6 @@ class TestDOIMethods(unittest.TestCase):
         self.assertEqual(example_file2, doi_to_path(example_doi2, ''), "{0} does not transform to {1}".format(example_doi2, example_file2))
         self.assertEqual(example_url2, doi_to_url(example_doi2), "{0} does not transform to {1}".format(example_doi2, example_url2))
         self.assertEqual(example_url, doi_to_url(example_doi), "In doi_to_url, {0} does not transform to {1}".format(example_doi, example_url))
-        self.assertEqual(example_url2_int, doi_to_url(example_doi2, plos_network=True),
-                         "In doi_to_url, {0} does not transform to {1}, but to {2}".format(example_doi2,
-                         example_url2_int, doi_to_url(example_doi2)))
-        self.assertEqual(example_url_int, doi_to_url(example_doi, plos_network=True),
-                         "{0} does not transform to {1}".format(example_doi, example_url_int))
 
     def test_file_conversions(self):
         """
@@ -57,14 +47,6 @@ class TestDOIMethods(unittest.TestCase):
                          "{0} does not transform to {1}".format(example_file, example_url))
         self.assertEqual(example_url2, filename_to_url(example_file2),
                          "{0} does not transform to {1}".format(example_file2, example_url2))
-        self.assertEqual(example_url_int, filename_to_url(example_file,
-                         plos_network=True),
-                         "{0} does not transform to {1}".format(example_file,
-                         example_url_int))
-        self.assertEqual(example_url2_int, filename_to_url(example_file2,
-                         plos_network=True),
-                         "{0} does not transform to {1}".format(example_file2,
-                         example_url2))
 
 
     def test_url_conversions(self):
@@ -79,15 +61,6 @@ class TestDOIMethods(unittest.TestCase):
                          "{0} does not transform to {1}".format(example_url, example_file))
         self.assertEqual(example_file2, url_to_path(example_url2, ''),
                          "{0} does not transform to {1}".format(example_url2, example_file2))
-        self.assertEqual(example_doi, url_to_doi(example_url_int),
-                         "{0} does not transform to {1}".format(example_url_int, example_doi))
-        self.assertEqual(example_doi2, url_to_doi(example_url2_int),
-                         "{0} does not transform to {1}".format(example_url2_int, example_doi2))
-        self.assertEqual(example_file, url_to_path(example_url_int, ''),
-                         "{0} does not transform to {1}".format(example_url_int, example_file))
-        # Test temporary commented out.
-        # self.assertEqual(example_file2, url_to_path(example_url2_int, plos_network=True),
-        #                 "{0} does not transform to {1}".format(example_url2_int, example_file2))
 
 
 class TestArticleClass(unittest.TestCase):
@@ -190,8 +163,8 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.get_fn_dict(), {}, 'get_fn_dict does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_plos_journal(), "PLOS ONE", 'get_plos_journal does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_related_dois(), {'retracted-article': ['10.1371/journal.pone.0035142']}, 'get_related_dois does not transform correctly for {}'.format(article.doi))
-        self.assertEqual(article.get_url()[:100], "http://journals.plos.org/plosone/article/file?id=10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846e", 'get_url does not transform correctly for {}'.format(article.doi))
-        self.assertEqual(article.abstract, "", 'abstract does not transform correctly for {}'.format(article.doi))
+        self.assertEqual(article.get_page(page_type='assetXMLFile'), "http://journals.plos.org/plosone/article/file?id=10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846ec0b6&type=manuscript", 'get_page does not transform correctly for {}'.format(article.doi))
+        self.assertEqual(article.abstract[:100], "", 'abstract does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.authors, [{'contrib_initials': 'LW', 'given_names': 'LingLin', 'surname': 'Wan', 'group_name': None, 'ids': [], 'rid_dict': {}, 'contrib_type': 'author', 'author_type': 'contributing', 'editor_type': None, 'email': None, 'affiliations': [], 'author_roles': {}, 'footnotes': []}, {'contrib_initials': 'JH', 'given_names': 'Juan', 'surname': 'Han', 'group_name': None, 'ids': [], 'rid_dict': {}, 'contrib_type': 'author', 'author_type': 'contributing', 'editor_type': None, 'email': None, 'affiliations': [], 'author_roles': {}, 'footnotes': []}, {'contrib_initials': 'MS', 'given_names': 'Min', 'surname': 'Sang', 'group_name': None, 'ids': [], 'rid_dict': {}, 'contrib_type': 'author', 'author_type': 'contributing', 'editor_type': None, 'email': None, 'affiliations': [], 'author_roles': {}, 'footnotes': []}, {'contrib_initials': 'AL', 'given_names': 'AiFen', 'surname': 'Li', 'group_name': None, 'ids': [], 'rid_dict': {}, 'contrib_type': 'author', 'author_type': 'contributing', 'editor_type': None, 'email': None, 'affiliations': [], 'author_roles': {}, 'footnotes': []}, {'contrib_initials': 'HW', 'given_names': 'Hong', 'surname': 'Wu', 'group_name': None, 'ids': [], 'rid_dict': {}, 'contrib_type': 'author', 'author_type': 'contributing', 'editor_type': None, 'email': None, 'affiliations': [], 'author_roles': {}, 'footnotes': []}, {'contrib_initials': 'SY', 'given_names': 'ShunJi', 'surname': 'Yin', 'group_name': None, 'ids': [], 'rid_dict': {}, 'contrib_type': 'author', 'author_type': 'contributing', 'editor_type': None, 'email': None, 'affiliations': [], 'author_roles': {}, 'footnotes': []}, {'contrib_initials': 'CZ', 'given_names': 'ChengWu', 'surname': 'Zhang', 'group_name': None, 'ids': [], 'rid_dict': {}, 'contrib_type': 'author', 'author_type': 'contributing', 'editor_type': None, 'email': None, 'affiliations': [], 'author_roles': {}, 'footnotes': []}], 'authors does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.corr_author, [], 'corr_author does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.amendment, True, 'amendment does not transform correctly for {}'.format(article.doi))

@@ -9,7 +9,7 @@ Workflow:
 Check whether list of DOI files is complete
     * query Solr API for list of new articles (limited by date)
     * create list of missing DOIs, by comparing against existing list of DOIs or file names
-Update by downloading articles content-repo if local store is not complete
+Update by downloading articles from journal pages if local store is not complete
 Check for and download amended articles that have been issued amendments
 Check for and download versions of record (VOR) for uncorrected proofs
 Zip folder down, appending when able
@@ -36,8 +36,7 @@ from tqdm import tqdm
 from .. import get_corpus_dir, newarticledir, uncorrected_proofs_text_list
 
 from ..plos_regex import validate_doi
-from ..transformations import (BASE_URL_API, EXT_URL_TMP, INT_URL_TMP, URL_TMP, filename_to_doi,
-                              doi_to_path)
+from ..transformations import (BASE_URL_API, filename_to_doi, doi_to_path, doi_to_url)
 from ..article_class import Article
 from .gdrive import (download_file_from_google_drive, get_zip_metadata, unzip_articles,
                      ZIP_ID, LOCAL_ZIP, LOCAL_TEST_ZIP, TEST_ZIP_ID, min_files_for_valid_corpus)
@@ -48,9 +47,6 @@ help_str = "This program downloads a zip file with all PLOS articles and checks 
 ignore_func = shutil.ignore_patterns('.DS_Store')
 
 # Some example URLs that may be useful
-EXAMPLE_VOR_URL = ('http://solr-101.soma.plos.org:8011/solr/collection1/select?'
-                   'q=id%3A+10.1371%2Fjournal.pgen.1006621%0A&fq=publication_stage%3A+vor-update-to-uncorrected-proof'
-                   '&fl=publication_stage%2C+id&wt=json&indent=true')
 EXAMPLE_SEARCH_URL = ('http://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,'
                       '&wt=json&indent=true&fq=article_type:"research+article"+OR+article_type:"correction"+OR+'
                       'article_type:"meta-research+article"&sort=%20id%20asc&'
@@ -206,7 +202,7 @@ def copytree(source, destination, symlinks=False, ignore=None):
 
 def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
     """
-    Downloads a list of articles by DOI from PLOS's content-repo (crepo) to a temporary directory
+    Downloads a list of articles by DOI from PLOS's journal pages to a temporary directory
     Use in conjunction with get_dois_needed_list
     :param dois: Iterable with DOIs for articles to obtain
     :param tempdir: Temporary directory where files are copied to
@@ -223,7 +219,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         dois = set(dois) - set(existing_articles)
 
     for doi in tqdm(sorted(dois), disable=None):
-        url = URL_TMP.format(doi)
+        url = doi_to_url(doi)
         articleXML = et.parse(url)
         article_path = doi_to_path(doi, directory=tempdir)
         # create new local XML files
@@ -567,7 +563,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
 def download_check_and_move(article_list, proof_filepath, tempdir, destination,
                             plos_network=False):
     """
-    For a list of new articles to get, first download them from content-repo to the temporary directory
+    For a list of new articles to get, first download them from journal pages to the temporary directory
     Next, check these articles for uncorrected proofs and article_type amendments
     Act on available VOR updates & amended articles
     Then, move to corpus directory where the rest of the articles are
@@ -625,27 +621,27 @@ def create_test_plos_corpus(directory=None):
     unzip_articles(file_path=zip_path, extract_directory=directory)
 
 
-def download_corpus_metadata_files(csv_abstracts=True, csv_no_abstracts=True, sqlitedb=True, directory=None):
+def download_corpus_metadata_files(csv_abstracts=True, csv_no_abstracts=True, sqlitedb=True, destination=None):
     """Downloads up to three files of metadata generated from the PLOS Corpus XML.
     Includes two csvs and a sqlite database.
     """
-    if directory is None:
-        directory = os.getcwd()
+    if destination is None:
+        destination = os.getcwd()
     if csv_abstracts:
         csv_abstracts_id = '0B_JDnoghFeEKQWlNUUJtY1pIY3c'
         csv_abstracts_file = download_file_from_google_drive(csv_abstracts_id,
                                                              'allofplos_metadata_test.csv',
-                                                             directory=directory)
+                                                             destination=destination)
     if csv_no_abstracts:
         csv_no_abstracts_id = '0B_JDnoghFeEKeEp6S0R2Sm1YcEk'
         csv_no_abstracts_file = download_file_from_google_drive(csv_no_abstracts_id,
                                                                 'allofplos_metadata_no_abstracts_test.csv',
-                                                                directory=directory)
+                                                                destination=destination)
     if sqlitedb:
         sqlitedb_id = '1gcQW7cc6Z9gDBu_vHxghNwQaMkyvVuMC'
         sqlitedb_file = download_file_from_google_drive(sqlitedb_id,
                                                         'ploscorpus_test.db.gz',
-                                                        directory=directory)
+                                                        destination=destination)
         print("Extracting sqlite db...")
         inF = gzip.open(sqlitedb_file, 'rb')
         outF = open('ploscorpus_test.db', 'wb')
@@ -668,10 +664,8 @@ def main():
     plos_network = False
     directory = get_corpus_dir()
     if args.plos:
-        URL_TMP = INT_URL_TMP
         plos_network = True
-    else:
-        URL_TMP = EXT_URL_TMP
+
     # Step 0: Initialize first copy of repository
     try:
         corpus_files = [name for name in os.listdir(directory) if os.path.isfile(
@@ -692,7 +686,7 @@ def main():
     dois_needed_list = get_dois_needed_list()
 
     # Step 2: Download new articles
-        # For every doi in dois_needed_list, grab the accompanying XML from content-repo
+        # For every doi in dois_needed_list, grab the accompanying XML from journal pages
         # If no new articles, don't run any other cells
         # Check if articles are uncorrected proofs
         # Check if amended articles linked to new amendment articles are updated
@@ -706,5 +700,5 @@ def main():
                             plos_network=plos_network)
     return None
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
