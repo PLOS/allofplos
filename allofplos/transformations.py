@@ -26,6 +26,40 @@ ANNOTATION_URL = 'http://journals.plos.org/plosone/article/file?id=10.1371/annot
 annotation_url_int = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-repo?key=10.1371/annotation/'
 ANNOTATION_DOI = '10.1371/annotation'
 BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='
+BASE_URL_LANDING_PAGE = 'http://journals.plos.org/plos{}/'
+LANDING_PAGE_SUFFIX = '{}?id={}'
+
+plos_page_dict = {'article': 'article',
+                  'asset': 'article/asset',
+                  'articleFigsAndTables': 'article/assets/figsAndTables',
+                  'articleAuthors': 'article/authors',
+                  'citationDownloadPage': 'article/citation',
+                  'downloadBibtexCitation': 'article/citation/bibtex',
+                  'downloadRisCitation': 'article/citation/ris',
+                  'figuresPage': 'article/figures',
+                  'assetFile': 'article/file',
+                  'assetXMLFile': 'article/file',
+                  'articleMetrics': 'article/metrics',
+                  'articleRelated': 'article/related'}
+
+
+def get_base_page(journal):
+    """Make the base of a PLOS URL journal-specific.
+
+    Use in conjunction with `get_page()` in the Article class.
+    """
+    if len(journal.split(' ')) == 2:
+        BASE_LANDING_PAGE = BASE_URL_LANDING_PAGE.format(journal.lower().split(' ')[1])
+    elif 'negl' in journal.lower():
+        BASE_LANDING_PAGE = BASE_URL_LANDING_PAGE.format('ntds')
+    elif 'comp' in journal.lower():
+        BASE_LANDING_PAGE = BASE_URL_LANDING_PAGE.format('compbiol')
+    elif 'clinical trials' in journal.lower():
+        BASE_LANDING_PAGE = BASE_URL_LANDING_PAGE.format('ctr')
+    else:
+        print('URL error for {}'.format(journal))
+        BASE_LANDING_PAGE = BASE_URL_LANDING_PAGE.format('one')
+    return BASE_LANDING_PAGE
 
 
 def filename_to_url(filename, plos_network=False):
