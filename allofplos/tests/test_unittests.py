@@ -215,19 +215,17 @@ class TestArticleClass(unittest.TestCase):
 
     def test_proofs(self):
         """Tests whether uncorrected proofs and VOR updates are being detected correctly."""
-        article = Article(example_uncorrected_doi, directory=TESTDATADIR)
+        os.environ['PLOS_CORPUS'] = TESTDATADIR
+        article = Article(example_uncorrected_doi)
         self.assertTrue(article.proof == 'uncorrected_proof')
-        article = Article(example_vor_doi, directory=TESTDATADIR)
+        article = Article(example_vor_doi)
         self.assertTrue(article.proof == 'vor_update')
         text_file = os.path.join(TESTDIR, 'test.txt')
-        os.makedirs('test_corpus', exist_ok=True)
-        os.environ['PLOS_CORPUS'] = os.path.abspath('test_corpus')
-        proofs1 = get_uncorrected_proofs(directory=TESTDATADIR, list_path=text_file)
+        proofs1 = get_uncorrected_proofs(list_path=text_file)
         self.assertEqual(proofs1, {example_uncorrected_doi}, 'wrong number uncorrected proofs found.')
-        proofs2 = check_for_uncorrected_proofs(directory=TESTDATADIR, list_path=text_file)
+        proofs2 = check_for_uncorrected_proofs(directory=None, list_path=text_file)
         self.assertEqual(proofs2, {example_uncorrected_doi}, 'wrong number uncorrected proofs found.')
         os.remove(text_file)
-        os.rmdir('test_corpus')
 
 
 class TestCorpusClass(unittest.TestCase):

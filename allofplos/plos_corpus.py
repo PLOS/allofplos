@@ -429,6 +429,8 @@ def check_for_uncorrected_proofs(directory=newarticledir, list_path=uncorrected_
 
     # Check directory for uncorrected proofs
     # Append uncorrected proofs to running set
+    if directory is None:
+        directory = get_corpus_dir()
     articles = listdir_nohidden(directory)
     new_proofs = 0
     for article_file in articles:
@@ -444,7 +446,7 @@ def check_for_uncorrected_proofs(directory=newarticledir, list_path=uncorrected_
     if uncorrected_proofs:
         print("{} new uncorrected proofs found. {} total in set.".format(new_proofs, len(uncorrected_proofs)))
     else:
-        print("No uncorrected proofs found in folder or in existing file.")
+        print("No uncorrected proofs found in {} or in {}.".format(directory, list_path))
     return uncorrected_proofs
 
 
@@ -512,8 +514,8 @@ def download_vor_updates(directory=None, tempdir=newarticledir,
         if updated:
             vor_updated_article_list.append(article)
 
-    old_uncorrected_proofs_list = get_uncorrected_proofs()
-    new_uncorrected_proofs_list = list(old_uncorrected_proofs_list - set(vor_updated_article_list))
+    old_uncorrected_proofs = get_uncorrected_proofs()
+    new_uncorrected_proofs_list = list(old_uncorrected_proofs - set(vor_updated_article_list))
 
     # direct remote XML check; add their totals to totals above
     if new_uncorrected_proofs_list:
