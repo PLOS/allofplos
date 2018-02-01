@@ -170,7 +170,9 @@ def doi_to_url(doi, plos_network=False):
     :param doi: full unique identifier for a PLOS article
     :return: online location of a PLOS article's XML
     """
-    return ''.join([get_base_page(doi_to_journal(doi)), 'article/file?id=', doi, url_suffix])
+    journal = doi_to_journal(doi)
+    base_page = get_base_page(journal)
+    return ''.join([base_page, 'article/file?id=', doi, url_suffix])
 
 
 def doi_to_path(doi, directory=None):
