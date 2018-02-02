@@ -15,7 +15,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='allofplos',
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.10.1',
+    version='0.10.2',
     description='Get and analyze all PLOS articles',
     long_description=long_description,
     url='https://github.com/PLOS/allofplos',
@@ -38,17 +38,17 @@ setup(
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        'certifi==2017.7.27.1',
+        'certifi>=2017.7.27.1',
         'chardet>=3.0.4',
         'idna>=2.6',
         'lxml>=4.0.0',
-        'peewee==2.10.2',
+        'peewee>=2.10.2',
         'python-utils>=2.2.0',
         'requests>=2.18.4',
         'six>=1.11.0',
-        'tqdm==4.17.1',
-        'urllib3==1.22',
-        'unidecode==0.04.21',
+        'tqdm>=4.17.1',
+        'urllib3>=1.22',
+        'unidecode>=0.04.21',
         ],
     python_requires='>=3.4',
     # If there are data files included in your packages that need to be
