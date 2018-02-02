@@ -6,7 +6,7 @@ from zipfile import ZipFile, BadZipFile
 import requests
 from tqdm import tqdm
 
-from . import corpusdir
+from . import get_corpus_dir
 
 # Variables needed
 zip_id = '0B_JDnoghFeEKLTlJT09IckMwOFk'
@@ -20,17 +20,19 @@ local_test_zip = 'sample_corpus.zip'
 gdrive_url = "https://docs.google.com/uc?export=download"
 
 
-def download_file_from_google_drive(id, filename, destination=corpusdir,
+def download_file_from_google_drive(id, filename, destination=None,
                                     file_size=None):
     """
     General method for downloading from Google Drive.
     Doesn't require using API or having credentials
     :param id: Google Drive id for file (constant even if filename change)
     :param filename: name of the zip file
-    :param destination: directory where to download the zip file, defaults to corpusdir
+    :param destination: directory where to download the zip file, defaults to get_corpus_dir
     :param file_size: size of the file being downloaded
     :return: None
     """
+    if destination is None:
+        destination = get_corpus_dir()
 
     file_path = os.path.join(destination, filename)
     extension = os.path.splitext(file_path)[1]
@@ -124,7 +126,7 @@ def get_zip_metadata(method='initial'):
 
 
 def unzip_articles(file_path,
-                   extract_directory=corpusdir,
+                   extract_directory=None,
                    filetype='zip',
                    delete_file=True
                    ):
@@ -136,6 +138,8 @@ def unzip_articles(file_path,
     :param delete_file: whether to delete the compressed archive after extracting articles
     :return: None
     """
+    if extract_directory is None:
+        extract_directory = get_corpus_dir()
 
     os.makedirs(extract_directory, exist_ok=True)
 
