@@ -39,6 +39,7 @@ from .plos_regex import validate_doi
 from .transformations import (BASE_URL_API, EXT_URL_TMP, INT_URL_TMP, URL_TMP, filename_to_doi,
                               doi_to_path)
 from .article_class import Article
+from .gdrive import download_file_from_google_drive, get_zip_metadata, unzip_articles
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -590,133 +591,6 @@ def download_check_and_move(article_list, proof_filepath, tempdir, destination,
     download_vor_updates(plos_network=plos_network)
     check_for_uncorrected_proofs(directory=tempdir)
     move_articles(tempdir, destination)
-
-
-def download_file_from_google_drive(id, filename, destination=None,
-                                    file_size=None):
-    """
-    General method for downloading from Google Drive.
-    Doesn't require using API or having credentials
-    :param id: Google Drive id for file (constant even if filename change)
-    :param filename: name of the zip file
-    :param destination: directory where to download the zip file, defaults to get_corpus_dir()
-    :param file_size: size of the file being downloaded
-    :return: file path to the zip file
-    """
-    URL = "https://docs.google.com/uc?export=download"
-    
-    if destination is None:
-        destination = get_corpus_dir()
-
-    file_path = os.path.join(destination, filename)
-    if not os.path.isfile(file_path):
-        session = requests.Session()
-
-        response = session.get(URL, params={'id': id}, stream=True)
-        token = get_confirm_token(response)
-
-        if token:
-            params = {'id': id, 'confirm': token}
-            response = session.get(URL, params=params, stream=True)
-            r = requests.get(URL, params=params, stream=True)
-        save_response_content(response, file_path, file_size=file_size)
-    return file_path
-
-
-def get_confirm_token(response):
-    """
-    Part of keep-alive method for downloading large files from Google Drive
-    Discards packets of data that aren't the actual file
-    :param response: session-based google query
-    :return: either datapacket or discard unneeded data
-    """
-    for key, value in response.cookies.items():
-        if key.startswith('download_warning'):
-            return value
-    return None
-
-
-def save_response_content(response, download_path, file_size=None):
-    """
-    Saves the downloaded file parts from Google Drive to local file
-    Includes progress bar for download %
-    :param response: session-based google query
-    :param download_path: path to local zip file
-    :param file_size: size of the file being downloaded
-    :return: None
-    """
-    CHUNK_SIZE = 32768
-    # for downloading zip file
-    if os.path.basename(download_path) == local_zip:
-        with open(download_path, "wb") as f:
-            size = file_size
-            pieces = round(size / CHUNK_SIZE)
-            with tqdm(total=pieces, disable=None) as pbar:
-                for chunk in response.iter_content(CHUNK_SIZE):
-                    pbar.update(1)
-                    if chunk:  # filter out keep-alive new chunks
-                        f.write(chunk)
-    # for downloading zip metadata text file
-    else:
-        with open(download_path, "wb") as f:
-            for chunk in response.iter_content(CHUNK_SIZE):
-                if chunk:  # filter out keep-alive new chunks
-                    f.write(chunk)
-
-
-def get_zip_metadata(method='initial'):
-    """
-    Gets metadata txt file from Google Drive, that has info about zip file
-    Used to get the file name, as well as byte size for progress bar
-    Includes progress bar for download %
-    :param method: boolean if initializing the PLOS Corpus (defaults to True)
-    :return: tuple of data about zip file: date zip created, zip size, and location of metadata txt file
-    """
-    if method == 'initial':
-        metadata_path = download_file_from_google_drive(metadata_id, zip_metadata)
-    with open(metadata_path) as f:
-        zip_stats = f.read().splitlines()
-    zip_datestring = zip_stats[0]
-    zip_date = datetime.datetime.strptime(zip_datestring, time_formatting)
-    zip_size = int(zip_stats[1])
-    return zip_date, zip_size, metadata_path
-
-
-def unzip_articles(file_path,
-                   extract_directory=None,
-                   filetype='zip',
-                   delete_file=True
-                   ):
-    """
-    Unzips zip file of all of PLOS article XML to specified directory
-    :param file_path: path to file to be extracted
-    :param extract_directory: directory where articles are copied to
-    :param filetype: whether a 'zip' or 'tar' file (tarball), which use different decompression libraries
-    :param delete_file: whether to delete the compressed archive after extracting articles
-    :return: None
-    """
-    if extract_directory is None:
-        extract_directory = get_corpus_dir()
-    try:
-        os.makedirs(extract_directory)
-    except OSError as e:
-        if e.errno != errno.EEXIST:
-            raise
-
-    if filetype == 'zip':
-        with zipfile.ZipFile(file_path, "r") as zip_ref:
-            print("Extracting zip file...")
-            zip_ref.extractall(extract_directory)
-            print("Extraction complete.")
-    elif filetype == 'tar':
-        tar = tarfile.open(file_path)
-        print("Extracting tar file...")
-        tar.extractall(path=extract_directory)
-        tar.close()
-        print("Extraction complete.")
-
-    if delete_file:
-        os.remove(file_path)
 
 
 def create_local_plos_corpus(directory=None, rm_metadata=True):
