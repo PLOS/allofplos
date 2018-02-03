@@ -39,7 +39,8 @@ from .plos_regex import validate_doi
 from .transformations import (BASE_URL_API, EXT_URL_TMP, INT_URL_TMP, URL_TMP, filename_to_doi,
                               doi_to_path)
 from .article_class import Article
-from .gdrive import download_file_from_google_drive, get_zip_metadata, unzip_articles
+from .gdrive import (download_file_from_google_drive, get_zip_metadata, unzip_articles,
+                     ZIP_ID, LOCAL_ZIP, LOCAL_TEST_ZIP, TEST_ZIP_ID, min_files_for_valid_corpus)
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -57,16 +58,6 @@ EXAMPLE_SEARCH_URL = ('http://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=
 
 # Starting out list of needed articles as empty
 dois_needed_list = []
-
-# For zip file and google drive
-zip_id = '0B_JDnoghFeEKLTlJT09IckMwOFk'
-metadata_id = '0B_JDnoghFeEKQUhKWXBOVy1aTlU'
-local_zip = 'allofplos_xml.zip'
-zip_metadata = 'zip_info.txt'
-time_formatting = "%Y_%b_%d_%Hh%Mm%Ss"
-min_files_for_valid_corpus = 200000
-test_zip_id = '12VomS72LdTI3aYn4cphYAShv13turbX3'
-local_test_zip = 'sample_corpus.zip'
 
 
 def listdir_nohidden(path, extension='.xml', include_dir=True):
