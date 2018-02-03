@@ -20,21 +20,21 @@ LOCAL_TEST_ZIP = 'sample_corpus.zip'
 GDRIVE_URL = "https://docs.google.com/uc?export=download"
 
 
-def download_file_from_google_drive(id, filename, destination=None,
+def download_file_from_google_drive(id, filename, directory=None,
                                     file_size=None):
     """
     General method for downloading from Google Drive.
     Doesn't require using API or having credentials
     :param id: Google Drive id for file (constant even if filename change)
     :param filename: name of the zip file
-    :param destination: directory where to download the zip file, defaults to get_corpus_dir
+    :param directory: directory where to download the zip file, defaults to get_corpus_dir
     :param file_size: size of the file being downloaded
     :return: None
     """
-    if destination is None:
-        destination = get_corpus_dir()
+    if directory is None:
+        directory = get_corpus_dir()
 
-    file_path = os.path.join(destination, filename)
+    file_path = os.path.join(directory, filename)
     extension = os.path.splitext(file_path)[1]
 
     # check for existing incomplete zip download. Delete if invalid zip.

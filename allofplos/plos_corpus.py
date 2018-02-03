@@ -625,27 +625,27 @@ def create_test_plos_corpus(directory=None):
     unzip_articles(file_path=zip_path, extract_directory=directory)
 
 
-def download_corpus_metadata_files(csv_abstracts=True, csv_no_abstracts=True, sqlitedb=True, destination=None):
+def download_corpus_metadata_files(csv_abstracts=True, csv_no_abstracts=True, sqlitedb=True, directory=None):
     """Downloads up to three files of metadata generated from the PLOS Corpus XML.
     Includes two csvs and a sqlite database.
     """
-    if destination is None:
-        destination = os.getcwd()
+    if directory is None:
+        directory = os.getcwd()
     if csv_abstracts:
         csv_abstracts_id = '0B_JDnoghFeEKQWlNUUJtY1pIY3c'
         csv_abstracts_file = download_file_from_google_drive(csv_abstracts_id,
                                                              'allofplos_metadata_test.csv',
-                                                             destination=destination)
+                                                             directory=directory)
     if csv_no_abstracts:
         csv_no_abstracts_id = '0B_JDnoghFeEKeEp6S0R2Sm1YcEk'
         csv_no_abstracts_file = download_file_from_google_drive(csv_no_abstracts_id,
                                                                 'allofplos_metadata_no_abstracts_test.csv',
-                                                                destination=destination)
+                                                                directory=directory)
     if sqlitedb:
         sqlitedb_id = '1gcQW7cc6Z9gDBu_vHxghNwQaMkyvVuMC'
         sqlitedb_file = download_file_from_google_drive(sqlitedb_id,
                                                         'ploscorpus_test.db.gz',
-                                                        destination=destination)
+                                                        directory=directory)
         print("Extracting sqlite db...")
         inF = gzip.open(sqlitedb_file, 'rb')
         outF = open('ploscorpus_test.db', 'wb')
