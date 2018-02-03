@@ -16,15 +16,15 @@ INT_URL_TMP = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-repo?ke
 URL_TMP = EXT_URL_TMP
 
 BASE_URL_DOI = 'https://doi.org/'
-url_suffix = '&type=manuscript'
+URL_SUFFIX = '&type=manuscript'
 INT_URL_SUFFIX = '.XML'
-prefix = '10.1371/'
-suffix_lower = '.xml'
+PREFIX = '10.1371/'
+SUFFIX_LOWER = '.xml'
 annotation = 'annotation'
 correction = 'correction'
-annotation_url = 'http://journals.plos.org/plosone/article/file?id=10.1371/annotation/'
+ANNOTATION_URL = 'http://journals.plos.org/plosone/article/file?id=10.1371/annotation/'
 annotation_url_int = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-repo?key=10.1371/annotation/'
-annotation_doi = '10.1371/annotation'
+ANNOTATION_DOI = '10.1371/annotation'
 BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='
 
 
@@ -43,7 +43,7 @@ def filename_to_url(filename, plos_network=False):
         article = 'annotation/' + (filename.split('.', 4)[2])
     else:
         article = os.path.splitext((os.path.basename(filename)))[0]
-    doi = prefix + article
+    doi = PREFIX + article
     return doi_to_url(doi, plos_network)
 
 
@@ -60,9 +60,9 @@ def filename_to_doi(filename):
     """
     if correction in filename and validate_filename(filename):
         article = 'annotation/' + (filename.split('.', 4)[2])
-        doi = prefix + article
+        doi = PREFIX + article
     elif validate_filename(filename):
-        doi = prefix + os.path.splitext((os.path.basename(filename)))[0]
+        doi = PREFIX + os.path.splitext((os.path.basename(filename)))[0]
     # NOTE: A filename should never validate as a DOI, so the next elif is wrong.
     elif validate_doi(filename):
         doi = filename
@@ -82,17 +82,17 @@ def url_to_path(url, directory=None, plos_network=False):
     if directory is None:
         directory = get_corpus_dir()
     annot_prefix = 'plos.correction.'
-    if url.startswith(annotation_url) or url.startswith(annotation_url_int):
+    if url.startswith(ANNOTATION_URL) or url.startswith(annotation_url_int):
         # NOTE: REDO THIS!
         file_ = os.path.join(directory,
                              annot_prefix +
-                             url[url.index(annotation_doi + '/')+len(annotation_doi + '/'):].
-                             replace(url_suffix, '').
+                             url[url.index(ANNOTATION_DOI + '/')+len(ANNOTATION_DOI + '/'):].
+                             replace(URL_SUFFIX, '').
                              replace(INT_URL_SUFFIX, '') + '.xml')
     else:
         file_ = os.path.join(directory,
-                             url[url.index(prefix)+len(prefix):].
-                             replace(url_suffix, '').
+                             url[url.index(PREFIX)+len(PREFIX):].
+                             replace(URL_SUFFIX, '').
                              replace(INT_URL_SUFFIX, '') + '.xml')
     return file_
 
@@ -106,7 +106,7 @@ def url_to_doi(url):
     :param url: online location of a PLOS article's XML
     :return: full unique identifier for a PLOS article
     """
-    return url[url.index(prefix):].rstrip(url_suffix).rstrip(INT_URL_SUFFIX)
+    return url[url.index(PREFIX):].rstrip(URL_SUFFIX).rstrip(INT_URL_SUFFIX)
 
 
 def doi_to_url(doi, plos_network=False):
@@ -136,10 +136,10 @@ def doi_to_path(doi, directory=None):
     """
     if directory is None:
         directory = get_corpus_dir()
-    if doi.startswith(annotation_doi) and validate_doi(doi):
-        article_file = os.path.join(directory, "plos.correction." + doi.split('/')[-1] + suffix_lower)
+    if doi.startswith(ANNOTATION_DOI) and validate_doi(doi):
+        article_file = os.path.join(directory, "plos.correction." + doi.split('/')[-1] + SUFFIX_LOWER)
     elif validate_doi(doi):
-        article_file = os.path.join(directory, doi.lstrip(prefix) + suffix_lower)
+        article_file = os.path.join(directory, doi.lstrip(PREFIX) + SUFFIX_LOWER)
     # NOTE: The following check is weird, a DOI should never validate as a file name.
     elif validate_filename(doi):
         article_file = doi
