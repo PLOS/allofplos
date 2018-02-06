@@ -67,7 +67,7 @@ setup(
 
     entry_points={
         'console_scripts': [
-            'plos_corpus=allofplos.plos_corpus:main',
+            'plos_corpus=allofplos.corpus.plos_corpus:main',
         ],
     },
 )
