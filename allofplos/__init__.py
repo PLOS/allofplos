@@ -31,4 +31,4 @@ del os
 # (e.g., corpusdir)
 
 from .article_class import Article
-from .corpus_class import Corpus
+from .corpus import Corpus

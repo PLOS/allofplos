@@ -2,8 +2,8 @@ from collections import OrderedDict
 import os
 import random
 
-from . import get_corpus_dir, Article
-from .transformations import filename_to_doi, doi_to_path
+from .. import get_corpus_dir, Article
+from ..transformations import filename_to_doi, doi_to_path
 
 
 class Corpus():
