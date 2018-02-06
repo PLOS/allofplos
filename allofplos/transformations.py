@@ -172,7 +172,7 @@ def doi_to_url(doi, plos_network=False):
     """
     journal = doi_to_journal(doi)
     base_page = get_base_page(journal)
-    return ''.join([base_page, 'article/file?id=', doi, url_suffix])
+    return ''.join([base_page, 'article/file?id=', doi, URL_SUFFIX])
 
 
 def doi_to_path(doi, directory=None):
