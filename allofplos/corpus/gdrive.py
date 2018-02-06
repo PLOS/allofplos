@@ -6,7 +6,7 @@ from zipfile import ZipFile, BadZipFile
 import requests
 from tqdm import tqdm
 
-from . import get_corpus_dir
+from .. import get_corpus_dir
 
 # Variables needed
 ZIP_ID = '0B_JDnoghFeEKLTlJT09IckMwOFk'

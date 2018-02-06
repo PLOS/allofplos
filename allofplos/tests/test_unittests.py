@@ -7,7 +7,7 @@ from .. import Article, Corpus, get_corpus_dir, starterdir
 
 from ..transformations import (doi_to_path, url_to_path, filename_to_doi, url_to_doi,
                                filename_to_url, doi_to_url, INT_URL_TMP, EXT_URL_TMP)
-from ..plos_corpus import listdir_nohidden, check_for_uncorrected_proofs, get_uncorrected_proofs
+from ..corpus import listdir_nohidden, check_for_uncorrected_proofs, get_uncorrected_proofs
 
 
 suffix = '.xml'
