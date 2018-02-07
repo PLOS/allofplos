@@ -62,22 +62,18 @@ def doi_to_journal(doi):
     For the subset of DOIs with 'annotation' in the name, defaults to PLOS ONE.
     :return: string of journal name
     """
-    journal = "PLOS ONE"
-    if 'pcbi' in doi:
-        journal = "PLOS Computational Biology"
-    elif 'pntd' in doi:
-        journal = "PLOS Neglected Tropical Diseases"
-    elif 'pgen' in doi:
-        journal = "PLOS Genetics"
-    elif 'ppat' in doi:
-        journal = "PLOS Pathogens"
-    elif 'pbio' in doi:
-        journal = "PLOS Biology"
-    elif 'pmed' in doi:
-        journal = "PLOS Medicine"
-    elif 'pctr' in doi:
-        journal = "PLOS Clinical Trials"
-    return journal
+    journal_map = OrderedDict([
+                               ('pone', 'PLOS ONE'),
+                               ('pcbi', 'PLOS Computational Biology'),
+                               ('pntd', 'PLOS Neglected Tropical Diseases'),
+                               ('pgen', 'PLOS Genetics'),
+                               ('ppat', 'PLOS Pathogens'),
+                               ('pbio', 'PLOS Biology'),
+                               ('pmed', 'PLOS Medicine'),
+                               ('pctr', 'PLOS Clinical Trials'),
+                              ])
+                    
+    return next(value for key, value in journal_map.items() if key in doi)
 
 
 def filename_to_url(filename):
