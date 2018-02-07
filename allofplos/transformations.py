@@ -1,6 +1,6 @@
 """ Includes all global variables
 """
-
+from collections import OrderedDict
 import os
 
 from . import get_corpus_dir
