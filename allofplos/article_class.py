@@ -9,7 +9,7 @@ import requests
 
 from . import get_corpus_dir
 
-from .transformations import (filename_to_doi, get_base_page, LANDING_PAGE_SUFFIX,
+from .transformations import (filename_to_doi, _get_base_page, LANDING_PAGE_SUFFIX,
                               URL_SUFFIX, plos_page_dict)
 from .plos_regex import validate_doi
 from .article_elements import (parse_article_date, get_contrib_info,
@@ -826,7 +826,7 @@ class Article():
         Based on `get_page_base()`, which customizes the beginning URL by journal.
         :param page_type: one of the keys in `plos_page_dict`, defaults to article
         """
-        BASE_LANDING_PAGE = get_base_page(self.journal)
+        BASE_LANDING_PAGE = _get_base_page(self.journal)
         try:
             page = BASE_LANDING_PAGE + LANDING_PAGE_SUFFIX.format(plos_page_dict[page_type],
                                                                   self.doi)

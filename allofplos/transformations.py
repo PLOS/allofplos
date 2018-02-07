@@ -37,29 +37,36 @@ plos_page_dict = {'article': 'article',
                   'articleRelated': 'article/related'}
 
 
-def get_base_page(journal):
+def _get_base_page(journal):
     """Make the base of a PLOS URL journal-specific.
+    
+    Defaults to PLOS ONE.
 
     Use in conjunction with `get_page()` in the Article class.
     """
-    if len(journal.split(' ')) == 2:
-        BASE_LANDING_PAGE = BASE_URL_LANDING_PAGE.format(journal.lower().split(' ')[1])
-    elif 'negl' in journal.lower():
-        BASE_LANDING_PAGE = BASE_URL_LANDING_PAGE.format('ntds')
-    elif 'comp' in journal.lower():
-        BASE_LANDING_PAGE = BASE_URL_LANDING_PAGE.format('compbiol')
-    elif 'clinical trials' in journal.lower():
-        BASE_LANDING_PAGE = BASE_URL_LANDING_PAGE.format('ctr')
-    else:
+    journal_map = OrderedDict([
+                               ('PLOS ONE', 'one'),
+                               ('PLOS Computational Biology', 'compbiol'),
+                               ('PLOS Neglected Tropical Diseases', 'ntds'),
+                               ('PLOS Genetics', 'genetics'),
+                               ('PLOS Pathogens', 'pathogens'),
+                               ('PLOS Biology', 'biology'),
+                               ('PLOS Medicine', 'medicine'),
+                               ('PLOS Clinical Trials', 'ctr'),
+                              ])
+    try:
+        url = BASE_URL_LANDING_PAGE.format(journal_map[journal]) 
+    except KeyError:
         print('URL error for {}'.format(journal))
-        BASE_LANDING_PAGE = BASE_URL_LANDING_PAGE.format('one')
-    return BASE_LANDING_PAGE
+        url = BASE_URL_LANDING_PAGE.format('one')
+        
+    return url
 
 
 def doi_to_journal(doi):
     """For a given doi, get the PLOS journal that the article is published in.
 
-    For the subset of DOIs with 'annotation' in the name, defaults to PLOS ONE.
+    For the subset of DOIs with 'annotation' in the name, assumes PLOS ONE.
     :return: string of journal name
     """
     journal_map = OrderedDict([
@@ -71,6 +78,7 @@ def doi_to_journal(doi):
                                ('pbio', 'PLOS Biology'),
                                ('pmed', 'PLOS Medicine'),
                                ('pctr', 'PLOS Clinical Trials'),
+                               ('annotation', 'PLOS ONE')
                               ])
                     
     return next(value for key, value in journal_map.items() if key in doi)
@@ -167,7 +175,7 @@ def doi_to_url(doi, plos_network=False):
     :return: online location of a PLOS article's XML
     """
     journal = doi_to_journal(doi)
-    base_page = get_base_page(journal)
+    base_page = _get_base_page(journal)
     return ''.join([base_page, 'article/file?id=', doi, URL_SUFFIX])
 
 
