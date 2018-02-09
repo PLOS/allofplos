@@ -389,7 +389,7 @@ def get_uncorrected_proofs(directory=None, proof_filepath=uncorrected_proofs_tex
         print("Creating new text list of uncorrected proofs from scratch.")
         article_files = listdir_nohidden(directory)
         uncorrected_proofs = set()
-        for article_file in tqdm(article_files, disable=None):
+        for article_file in tqdm(article_files, disable=None, miniters=len(article_files)/1000):
             article = Article.from_filename(article_file)
             article.directory = directory
             if article.proof == 'uncorrected_proof':
