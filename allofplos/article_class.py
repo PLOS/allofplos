@@ -1259,6 +1259,10 @@ class Article():
 
     @classmethod
     def from_filename(cls, filename):
-        """Initiate an article object using a local XML file.
+        """Initiate an article object using a local XML file. Set `self.directory` if possible.
         """
-        return cls(filename_to_doi(filename))
+        if os.path.isfile(filename):
+            directory = os.path.dirname(filename)
+        else:
+            directory = None
+        return cls(filename_to_doi(filename), directory=directory)
