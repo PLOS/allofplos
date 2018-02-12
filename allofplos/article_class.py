@@ -71,7 +71,7 @@ class Article():
 
     @property
     def text_viewer(self):
-        """Command line application for viewing text to be used with 
+        """Command line application for viewing text to be used with
         open_in_viewer.
 
         Defaults to "open", which opens in whatever the default application is
@@ -857,6 +857,25 @@ class Article():
         """The direct url of an article's XML file.
         """
         return self.get_url(plos_network=self.plos_network)
+
+    @property
+    def taxonomy(self):
+        """Taxonomy information
+        """
+        tag_path_elements = ('/',
+                             'article',
+                             'front',
+                             'article-meta',
+                             'article-categories')
+        e_list = self.get_element_xpath(tag_path_elements=tag_path_elements)
+        taxonomy_item = []
+        for subj in e_list[0].getchildren():
+            if subj.values()[0] == 'Discipline-v3':
+                subj_list = []
+                for e in subj.iter('subject'):
+                    subj_list.append(e.text)
+                taxonomy_item.append(subj_list)
+        return taxonomy_item
 
     @property
     def filename(self):
