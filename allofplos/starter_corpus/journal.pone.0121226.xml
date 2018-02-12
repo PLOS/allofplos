@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="3.0" xml:lang="en" article-type="research-article">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-14-39086</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0121226</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>AIB-OR: Improving Onion Routing Circuit Construction Using Anonymous Identity-Based Cryptosystems</article-title>
+<alt-title alt-title-type="running-head">An Improved Onion Routing Circuit Construction</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Wang</surname> <given-names>Changji</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Shi</surname> <given-names>Dongyuan</given-names></name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Xu</surname> <given-names>Xilei</given-names></name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+<xref ref-type="aff" rid="aff004"><sup>4</sup></xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<label>1</label>
+<addr-line>National Pilot School of Software, Yunnan University, Kunming, China</addr-line>
+</aff>
+<aff id="aff002">
+<label>2</label>
+<addr-line>Yunnan Key Laboratory of Software Engineering, Yunnan University, Kunming, China</addr-line>
+</aff>
+<aff id="aff003">
+<label>3</label>
+<addr-line>School of Information Science and Technology, Sun Yat-sen University, Guangzhou, China</addr-line>
+</aff>
+<aff id="aff004">
+<label>4</label>
+<addr-line>Guangdong Key Laboratory of Information Security Technology, Sun Yat-sen University, Guangzhou 510275, China</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Xiao</surname> <given-names>Gaoxi</given-names></name>
+<role>Academic Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>Nanyang Technological University, SINGAPORE</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: CJW DYS XLX. Performed the experiments: DYS XLX. Analyzed the data: CJW DYS. Contributed reagents/materials/analysis tools: CJW DYS. Wrote the paper: CJW.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">wchangji@gmail.com</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<year>2015</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>27</day>
+<month>3</month>
+<year>2015</year>
+</pub-date>
+<volume>10</volume>
+<issue>3</issue>
+<elocation-id>e0121226</elocation-id>
+<history>
+<date date-type="received">
+<day>31</day>
+<month>8</month>
+<year>2014</year>
+</date>
+<date date-type="accepted">
+<day>29</day>
+<month>1</month>
+<year>2015</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2015</copyright-year>
+<copyright-holder>Wang et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0121226" xlink:type="simple"/>
+<abstract>
+<p>The rapid growth of Internet applications has made communication anonymity an increasingly important or even indispensable security requirement. Onion routing has been employed as an infrastructure for anonymous communication over a public network, which provides anonymous connections that are strongly resistant to both eavesdropping and traffic analysis. However, existing onion routing protocols usually exhibit poor performance due to repeated encryption operations. In this paper, we first present an improved anonymous multi-receiver identity-based encryption (AMRIBE) scheme, and an improved identity-based one-way anonymous key agreement (IBOWAKE) protocol. We then propose an efficient onion routing protocol named AIB-OR that provides provable security and strong anonymity. Our main approach is to use our improved AMRIBE scheme and improved IBOWAKE protocol in onion routing circuit construction. Compared with other onion routing protocols, AIB-OR provides high efficiency, scalability, strong anonymity and fault tolerance. Performance measurements from a prototype implementation show that our proposed AIB-OR can achieve high bandwidths and low latencies when deployed over the Internet.</p>
+</abstract>
+<funding-group>
+<funding-statement>National Natural Science Foundation of China (Grant No. 61173189, <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://www.nsfc.gov.cn/">http://www.nsfc.gov.cn/</ext-link>), Yunnan Province Software Engineering Key Laboratory Project (Grant No. 2015SE203), the Foundation for Innovative Research Team of Yunnan University, and Guangdong Province Information Security Key Laboratory Project (<ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://ist.sysu.edu.cn/">http://ist.sysu.edu.cn/</ext-link>). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="4"/>
+<table-count count="2"/>
+<page-count count="15"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability" xlink:type="simple">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>The rapid development of network technology has made anonymous communication an increasingly important security requirement for many network applications [<xref ref-type="bibr" rid="pone.0121226.ref001">1</xref>]. While end-to-end encryption can protect the data content of communications from unauthorized access, it does not conceal all the relevant information that two communicating parties are communicating. For example, routing information is still transmitted in the clear because routers need to know packets’ destinations in order to route them in the right direction. Traffic analysis can also be done by watching particular data moving through a network, by matching the amount of data, or by examining coincidences, such as connections opening and closing at about the same time.</p>
+<p>In many situations, it is highly desirable or indispensable for users to be able to preserve the communications anonymity. For example, an abrupt change in the traffic pattern may indicate some forthcoming activities in a tactical military communication network. This can be extremely dangerous in that adversaries can easily identify critical network nodes and then launch targeted attacks on them. In addition, people have a strong desire to remain anonymous when pursuing sensitive information in order to avoid unnecessary trouble.</p>
+<p>Over the years, a large number of anonymity networks have been proposed and some have been implemented. Among them, onion routing has been widely employed as an infrastructure for private communication over a public network.</p>
+<sec id="sec002">
+<title>Related Work</title>
+<sec id="sec003">
+<title>Identity-Based Cryptography</title>
+<p>To simplify certificate management in tradition public key infrastructure, Shamir [<xref ref-type="bibr" rid="pone.0121226.ref002">2</xref>] first introduced the concept of identity-based public key cryptography, where an entity’s public key can be publicly computed from his recognizable identity information, such as a complete name or an e-mail address, while the corresponding private key is generated by a trusted third party named as private key generator (PKG).</p>
+<p>The first practical and secure identity-based encryption (IBE) scheme was constructed from bilinear pairings by Boneh and Franklin [<xref ref-type="bibr" rid="pone.0121226.ref003">3</xref>]. Since then, various IBE schemes, identity-based signature schemes and identity-based key agreement (IBKA) protocols have been proposed [<xref ref-type="bibr" rid="pone.0121226.ref004">4</xref>].</p>
+<p>For example, considering a situation where a sender would like to encrypt a message for <italic>t</italic> receivers, the sender must encrypt the message <italic>t</italic> time using conventional IBE schemes. To improve the performance, Baek et al. [<xref ref-type="bibr" rid="pone.0121226.ref005">5</xref>] introduced the notion of multi-receiver IBE scheme, and proposed an efficient provably secure multi-receiver IBE scheme from bilinear pairings. To guarantee receiver’s privacy, Boyen and Waters [<xref ref-type="bibr" rid="pone.0121226.ref006">6</xref>] proposed an anonymous IBE scheme, where the ciphertext does not leak the identity of the recipient.</p>
+<p>Later, Fan et al. [<xref ref-type="bibr" rid="pone.0121226.ref007">7</xref>] introduced the concept of anonymous multi-receiver IBE (AMRIBE) scheme and proposed an efficient AMRIBE scheme from bilinear parings. In an AMRIBE scheme, one can examine whether himself is a selected receiver or not. Nobody, except the sender, knows who the other selected receivers are. Subsequently, Chien [<xref ref-type="bibr" rid="pone.0121226.ref008">8</xref>] pointed out that Fan et al.’s AMRIBE scheme only provides receiver anonymity for outsider attackers or non-selected receivers, and presented an improved AMRIBE scheme. However, only heuristic arguments for security proofs are presented. Tseng et al. [<xref ref-type="bibr" rid="pone.0121226.ref009">9</xref>] proposed a new AMRIBE scheme that was proved to be semantically secure against adaptive chosen ciphertext attacks in the random oracle model under the Gap-BDH assumption.</p>
+<p>Sakai et al. proposed the first non-interactive IBKA protocol from bilinear pairing, where the established key consists of only one participant’s identity-based private key and the other participant’s identity. Thus, the established key can not be used as a session key because it always establishes the same (secret) key for the same entities in each run of the protocol. Kate et al. [<xref ref-type="bibr" rid="pone.0121226.ref010">10</xref>] extended Sakai et al.’s IBKA protocol, and proposed an identity-based one-way anonymous key agreement (IBOWAKE) protocol to provide unconditional anonymity for participants by replacing the identities of the participants by pseudonyms. Unfortunately, Kate et al. IBOWAKE protocol is insecure against man-in-the-middle (MIMA) attack because it can not authenticate the communication entities.</p>
+</sec>
+<sec id="sec004">
+<title>Certificateless Cryptography</title>
+<p>The concept of certificateless public key cryptography was first introduced by Al-Riyami and Paterson [<xref ref-type="bibr" rid="pone.0121226.ref011">11</xref>], which combines the advantages of traditional certificate-based public key cryptography and identity-based public key cryptography. In a certificateless cryptosystem, the key generation center (KGC) does not have access to the entity’s private key, the KGC derives a partial private key from the entity’s identity and the master secret key. The entity then combines the partial private key with some secret information to generate the actual private key. Thus, certificates are not considered necessary anymore to guarantee the authenticity of public keys in traditional certificate-based public key cryptography, and at the same time the private key is not fully determined by the KGC to prevent the inherent key escrow problem in identity-based public key cryptography.</p>
+<p>Certificateless public key cryptography has received a significant attention in recent years, several certificateless encryption schemes, certificateless signature schemes and certificateless key agreement protocols were presented. For example, Catalano et al. [<xref ref-type="bibr" rid="pone.0121226.ref012">12</xref>] introduced the concept of anonymous certificateless key agreement and proposed two constructions.</p>
+</sec>
+<sec id="sec005">
+<title>Attribute-Based Encryption</title>
+<p>Attribute-based encryption (ABE) was first introduced by Sahai and Waters [<xref ref-type="bibr" rid="pone.0121226.ref013">13</xref>] with the original goal of providing an error-tolerant IBE that uses biometric identities. ABE can be viewed as an extension of the notion of IBE in which user identity is generalized to a set of descriptive attributes instead of a single string specifying the user identity. Compared with IBE, ABE has significant advantage as it achieves flexible one-to-many encryption instead of one-to-one, it is envisioned as a promising tool for addressing the problem of secure and fine-grained data sharing and decentralized access control.</p>
+<p>ABE have drawn extensive attention from both academia and industry in recent years, many ABE schemes have been proposed [<xref ref-type="bibr" rid="pone.0121226.ref014">14</xref>–<xref ref-type="bibr" rid="pone.0121226.ref016">16</xref>] and several cloud-based secure systems using ABE have been developed [<xref ref-type="bibr" rid="pone.0121226.ref017">17</xref>–<xref ref-type="bibr" rid="pone.0121226.ref019">19</xref>]. There are two types of ABE depending on which of private keys or ciphertexts that access policies are associated with.</p>
+<p>In a key-policy attribute-based encryption (KP-ABE) system, ciphertexts are labeled by the sender with a set of descriptive attributes, and users’ private keys are issued by the trusted attribute authority are associated with access policies (also called access structures) that specify which type of ciphertexts the key can decrypt. In a ciphertext-policy attribute-based encryption (CP-ABE) system, when a sender encrypts a message, they specify a specific access policy in terms of access structure over attributes in the ciphertext, stating what kind of receivers will be able to decrypt the ciphertext. Users possess sets of attributes and obtain corresponding secret attribute keys from the attribute authority, such a user can decrypt a ciphertext if his/her attributes satisfy the access policy associated with the ciphertext.</p>
+</sec>
+<sec id="sec006">
+<title>Onion Routing</title>
+<p>Onion routing was first proposed by Reed, Syverson and Goldschlag [<xref ref-type="bibr" rid="pone.0121226.ref020">20</xref>, <xref ref-type="bibr" rid="pone.0121226.ref021">21</xref>]. In onion routing, for a given connection, the sender selects a sequence of routers, known as a circuit, that will be used to forward the sender’s traffic. The sender establishes a circuit by first directly opening a circuit with the first router, and then iteratively extending the circuit by sending message over the existing circuit. Messages are encrypted with the key of each router in the circuit in the reverse order that the routers appear. Like someone peeling an onion, each onion router removes a layer of encryption to uncover routing instructions, and sends the message to the next router where this is repeated. This prevents these intermediary nodes from knowing the origin, destination, and contents of the message.</p>
+<p>In the original onion routing protocol [<xref ref-type="bibr" rid="pone.0121226.ref022">22</xref>], each onion router is equipped with a pair of public and private key. The source uses the public keys of the intermediate routers with the top layer encrypted with the public key of the router immediately next to the source. The intermediate routers then use their own corresponding private keys to decrypt the packet and obtain the information about the next hop in the network. The packets thus routed and forwarded by each intermediate genuine node, eventually reach the destination. The advantage here is that if any one of the routers is compromised by an adversary, even then, the other components remain beyond the reach, because of being encrypted using a different public key. However, it is evident that a sender is required to encrypt a message as many times as is the number of intermediate onion routers.</p>
+<p>Kate et al. [<xref ref-type="bibr" rid="pone.0121226.ref010">10</xref>] presented a pairing-based onion routing (PB-OR) protocol by using an IBOWAKE protocol. Catalano et al. [<xref ref-type="bibr" rid="pone.0121226.ref012">12</xref>] then proposed a certificateless onion routing (CL-OR) protocol by using an anonymous certificateless key agreement protocol. Later, Catalano et al. [<xref ref-type="bibr" rid="pone.0121226.ref023">23</xref>] proposed a fully non-interactive onion routing protocol with forward secrecy by using a forward-secure IBE scheme. Recently, Doshi et al. [<xref ref-type="bibr" rid="pone.0121226.ref024">24</xref>] proposed an onion routing circuit construction called attribute-based onion routing (AB-OR) using the Bethencourt et al. CP-ABE scheme [<xref ref-type="bibr" rid="pone.0121226.ref015">15</xref>]. Here the access policy is boolean formula over routers’ identities and the access policy is sent in the clear along with the ciphertext. Thus, AB-OR provides neither recipient anonymity nor route anonymity.</p>
+</sec>
+</sec>
+<sec id="sec007">
+<title>Motivation and Our Contributions</title>
+<p>Compared to the original onion routing protocol, onion routing protocols proposed in recent years have greatly improved in terms of efficiency and anonymity. However, there are still three drawbacks in the existing onion routing protocols.</p>
+<list list-type="bullet">
+<list-item><p>Failure tolerance is relatively poor. The palsy of any one of the intermediate onion router will result in the palsy of the entire onion routing process.</p></list-item>
+<list-item><p>Recipient anonymity is not strong enough. The last onion router will know the identity of the recipient.</p></list-item>
+<list-item><p>Communication anonymity is weak. Each intermediate onion router needs to know the identity of the next hop router on the path, which impairs the communication anonymity.</p></list-item>
+</list>
+<p>In this paper, we first improve Kate et al.’s IBOWAKE protocol [<xref ref-type="bibr" rid="pone.0121226.ref010">10</xref>] and Tseng et al.’s AMRIBE scheme [<xref ref-type="bibr" rid="pone.0121226.ref009">9</xref>], then we propose a new onion routing circuit construction called anonymous identity-based onion routing (AIB-OR) by integrating our improved IBOWAKE protocol with AMRIBE scheme in onion routing circuits construction. Compared to PB-OR and CL-OR, our proposed AIB-OR achieves both efficiency improvement and anonymity enhancement. This paper makes three primary contributions in the field of anonymous communication.</p>
+<list list-type="bullet">
+<list-item><p>The efficiency of onion routing circuit construction is improved. The performance of AIB-OR surpasses those of PB-OR and CL-OR, requiring significantly less computation and fewer network communications. Unlike existing onion routing protocols, Our proposed AIB-OR only requires the sender to encrypt the message twice, irrespective of the number of intermediate onion routers.</p></list-item>
+<list-item><p>Failure tolerance of onion routing circuit construction is provided. The sender can select any one of the path through which to forward the packet out of the multiple paths at its disposal in the proposed AIB-OR.</p></list-item>
+<list-item><p>Anonymity of onion routing circuit construction is enhanced. The sender, the recipient and the intermediate onion routers are anonymous to others, no one knows the real identities and location of the sender, the intermediate onion routers, or the recipient. Adversaries cannot trace a packet flow back to its sender or the recipient. Nobody, except the sender, knows the real routing path between the sender and the recipient.</p></list-item>
+</list>
+</sec>
+<sec id="sec008">
+<title>Paper Organization</title>
+<p>The rest of this paper is organized as follows. Some necessary preliminary work and our improved IBOWAKE protocol and AMRIBE scheme are introduced in Section 2. The proposed AIB-OR model and construction are described in Section 3. Efficiency and security analysis of our AIB-OR are discussed in Section 4. Performance test of PB-OR and our AIB-OR are explained in Section 5. Finally, we conclude our work in Section 6.</p>
+</sec>
+</sec>
+<sec id="sec009">
+<title>Preliminary Work</title>
+<sec id="sec010">
+<title>Notations</title>
+<p>To facilitate further description, we introduce notations in <xref ref-type="table" rid="pone.0121226.t001">Table 1</xref>.</p>
+<table-wrap id="pone.0121226.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0121226.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Notations.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0121226.t001g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0121226.t001"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1">Symbol</th>
+<th align="left" rowspan="1" colspan="1">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">
+<inline-formula id="pone.0121226.e001">
+<mml:math id="M1" display="inline" overflow="scroll">
+<mml:mrow>
+<mml:mi>x</mml:mi>
+<mml:mover>
+<mml:mo>←</mml:mo>
+<mml:mtext>$</mml:mtext>
+</mml:mover>
+<mml:mtext mathvariant="bold">S</mml:mtext>
+</mml:mrow>
+</mml:math>
+</inline-formula>
+</td>
+<td align="left" rowspan="1" colspan="1">Pick an element <italic>x</italic> uniformly at random from the set <bold>S</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>κ</italic></td>
+<td align="left" rowspan="1" colspan="1">The system security parameter</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Π</td>
+<td align="left" rowspan="1" colspan="1">A semantically secure symmetric encryption scheme</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">len</td>
+<td align="left" rowspan="1" colspan="1">The key length of Π</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">E<sub><italic>k</italic></sub>(<italic>m</italic>)</td>
+<td align="left" rowspan="1" colspan="1">Encrypt a message <italic>m</italic> under Π with a session key <italic>k</italic> ∈ {0, 1}<sup>len</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">D<sub><italic>k</italic></sub>(<italic>c</italic>)</td>
+<td align="left" rowspan="1" colspan="1">Decrypt a ciphertext <italic>c</italic> under Π with a session key <italic>k</italic> ∈ {0, 1}<sup>len</sup></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>H</italic><sub>0</sub></td>
+<td align="left" rowspan="1" colspan="1">Hash function <inline-formula id="pone.0121226.e002"><mml:math id="M2" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mi>H</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mo>:</mml:mo><mml:msup><mml:mrow><mml:mrow><mml:mo>{</mml:mo> <mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mn>1</mml:mn></mml:mrow> <mml:mo>}</mml:mo></mml:mrow></mml:mrow><mml:mo>*</mml:mo></mml:msup><mml:mo>→</mml:mo><mml:msubsup><mml:mstyle mathvariant="bold" mathsize="normal"><mml:mi>G</mml:mi></mml:mstyle><mml:mn>1</mml:mn><mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math>
+</inline-formula></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>H</italic><sub>1</sub></td>
+<td align="left" rowspan="1" colspan="1">Hash function <inline-formula id="pone.0121226.e003"><mml:math id="M3" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mi>H</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mo>:</mml:mo> <mml:msub><mml:mtext mathvariant="bold">G</mml:mtext> <mml:mn>2</mml:mn></mml:msub> <mml:mo>→</mml:mo> <mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>H</italic><sub>2</sub></td>
+<td align="left" rowspan="1" colspan="1">Hash function <inline-formula id="pone.0121226.e004"><mml:math id="M4" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mi>H</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>:</mml:mo><mml:msubsup><mml:mstyle mathvariant="bold" mathsize="normal"><mml:mi>Z</mml:mi></mml:mstyle><mml:mi>q</mml:mi><mml:mo>*</mml:mo></mml:msubsup><mml:mo>→</mml:mo><mml:msup><mml:mrow><mml:mrow><mml:mo>{</mml:mo> <mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mn>1</mml:mn></mml:mrow> <mml:mo>}</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>l</mml:mi><mml:mi>e</mml:mi><mml:mi>n</mml:mi></mml:mrow></mml:msup></mml:mrow></mml:math>
+</inline-formula></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><italic>H</italic><sub>3</sub></td>
+<td align="left" rowspan="1" colspan="1">Hash function <italic>H</italic><sub>3</sub>:{0, 1}<sup>*</sup> → {0, 1}<sup>2len</sup></td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec011">
+<title>Bilinear Group Generator and Complexity Assumptions</title>
+<p><bold>Definition 1</bold> <italic>The bilinear group generator 𝒢 is an algorithm that takes as input a security parameter κ and outputs a bilinear group</italic> (<italic>q</italic>, <bold>G</bold><sub>1</sub>, <bold>G</bold><sub>2</sub>, <italic>ê</italic>, <italic>P</italic>), <italic>where q is a prime of size</italic> 2<sup><italic>κ</italic></sup>, <bold>G</bold><sub>1</sub> and <bold>G</bold><sub>2</sub> <italic>are cyclic groups of order q</italic>, <italic>P is a generator of</italic> <bold>G</bold><sub>1</sub>, <italic>and ê</italic>:<bold>G</bold><sub>1</sub>×<bold>G</bold><sub>1</sub> → <bold>G</bold><sub>2</sub> <italic>is a bilinear map with the following properties:</italic>
+<list list-type="bullet"><list-item><p><italic>Bilinearity: For</italic> <inline-formula id="pone.0121226.e005"><mml:math id="M5" display="inline" overflow="scroll"><mml:mrow><mml:mi>a</mml:mi> <mml:mo>,</mml:mo> <mml:mi>b</mml:mi> <mml:mover><mml:mo>←</mml:mo> <mml:mo>$</mml:mo></mml:mover> <mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula>, <italic>we have ê</italic>(<italic>aP</italic>, <italic>bP</italic>) = <italic>e</italic>(<italic>P</italic>, <italic>P</italic>)<sup><italic>ab</italic></sup>.</p></list-item> <list-item><p><italic>Non-degeneracy:</italic> <italic>ê</italic>(<italic>P</italic>, <italic>P</italic>) <italic>is a generator of</italic> <bold>G</bold><sub>2</sub>.</p></list-item> <list-item><p><italic>Computability: For</italic> <inline-formula id="pone.0121226.e006"><mml:math id="M6" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mi>P</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mo>,</mml:mo> <mml:msub><mml:mi>P</mml:mi> <mml:mn>2</mml:mn></mml:msub> <mml:mover><mml:mo>←</mml:mo> <mml:mo>$</mml:mo></mml:mover> <mml:msub><mml:mtext mathvariant="bold">G</mml:mtext> <mml:mn>1</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula>, <italic>there is an efficient algorithm to compute ê</italic>(<italic>P</italic><sub>1</sub>, <italic>P</italic><sub>2</sub>).</p></list-item></list></p>
+<p><bold>Definition 2 (Bilinear Diffie-Hellman Assumption)</bold> <italic>The BDH assumption in a prime order bilinear group</italic> (<italic>q</italic>, <bold>G</bold><sub>1</sub>, <bold>G</bold><sub>2</sub>, <italic>ê</italic>, <italic>P</italic>) <italic>generated by</italic> 𝒢(1<sup><italic>κ</italic></sup>) <italic>is that if a tuple</italic> <inline-formula id="pone.0121226.e007"><mml:math id="M7" display="inline" overflow="scroll"><mml:mrow><mml:mo>〈</mml:mo> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>a</mml:mi> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>b</mml:mi> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>c</mml:mi> <mml:mi>P</mml:mi> <mml:mo>〉</mml:mo> <mml:mo>∈</mml:mo> <mml:msubsup><mml:mtext mathvariant="bold">G</mml:mtext> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>4</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> <italic>is given for unknown</italic> <inline-formula id="pone.0121226.e008"><mml:math id="M8" display="inline" overflow="scroll"><mml:mrow><mml:mi>a</mml:mi> <mml:mo>,</mml:mo> <mml:mi>b</mml:mi> <mml:mo>,</mml:mo> <mml:mi>c</mml:mi> <mml:mover><mml:mo>←</mml:mo> <mml:mo>$</mml:mo></mml:mover> <mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula>, <italic>there is no probabilistic polynomial-time (PPT) adversary 𝒜 can compute</italic> <italic>ê</italic>(<italic>P</italic>, <italic>P</italic>)<sup><italic>abc</italic></sup> ∈ <bold>G</bold><sub>2</sub> <italic>with non-negligible advantage</italic> [<xref ref-type="bibr" rid="pone.0121226.ref003">3</xref>].</p>
+<p><bold>Definition 3 (Decisional Bilinear Diffie-Hellman Assumption)</bold> <italic>The DBDH assumption in a prime order bilinear group</italic> (<italic>q</italic>, <bold>G</bold><sub>1</sub>, <bold>G</bold><sub>2</sub>, <italic>ê</italic>, <italic>P</italic>) <italic>generated by</italic> 𝒢(1<sup><italic>κ</italic></sup>) <italic>is that if a tuple</italic> <inline-formula id="pone.0121226.e009"><mml:math id="M9" display="inline" overflow="scroll"><mml:mrow><mml:mo>〈</mml:mo> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>a</mml:mi> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>b</mml:mi> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>c</mml:mi> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>T</mml:mi> <mml:mo>〉</mml:mo> <mml:mo>∈</mml:mo> <mml:msubsup><mml:mtext mathvariant="bold">G</mml:mtext> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>4</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>×</mml:mo> <mml:msub><mml:mtext mathvariant="bold">G</mml:mtext> <mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula> <italic>is given for unknown</italic> <inline-formula id="pone.0121226.e010"><mml:math id="M10" display="inline" overflow="scroll"><mml:mrow><mml:mi>a</mml:mi> <mml:mo>,</mml:mo> <mml:mi>b</mml:mi> <mml:mo>,</mml:mo> <mml:mi>c</mml:mi> <mml:mover><mml:mo>←</mml:mo> <mml:mo>$</mml:mo></mml:mover> <mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula> <italic>and</italic> <inline-formula id="pone.0121226.e011"><mml:math id="M11" display="inline" overflow="scroll"><mml:mrow><mml:mi>T</mml:mi> <mml:mover><mml:mo>←</mml:mo> <mml:mo>$</mml:mo></mml:mover> <mml:msub><mml:mtext mathvariant="bold">G</mml:mtext> <mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula>, <italic>there is no PPT adversary 𝒜 can decide whether T</italic> = <italic>ê</italic>(<italic>P</italic>, <italic>P</italic>)<sup><italic>abc</italic></sup> <italic>with non-negligible advantage</italic> [<xref ref-type="bibr" rid="pone.0121226.ref004">4</xref>].</p>
+<p><bold>Definition 4 (Gap Bilinear Diffie-Hellman Assumption)</bold> <italic>The Gap-BDH assumption in a prime order bilinear group</italic> (<italic>q</italic>, <bold>G</bold><sub>1</sub>, <bold>G</bold><sub>2</sub>, <italic>ê</italic>, <italic>P</italic>) <italic>generated by</italic> 𝒢(1<sup><italic>κ</italic></sup>) <italic>is that if a tuple</italic> <inline-formula id="pone.0121226.e012"><mml:math id="M12" display="inline" overflow="scroll"><mml:mrow><mml:mo>〈</mml:mo> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>a</mml:mi> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>b</mml:mi> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>c</mml:mi> <mml:mi>P</mml:mi> <mml:mo>〉</mml:mo> <mml:mo>∈</mml:mo> <mml:msubsup><mml:mtext mathvariant="bold">G</mml:mtext> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>4</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> <italic>is given for unknown</italic> <inline-formula id="pone.0121226.e013"><mml:math id="M13" display="inline" overflow="scroll"><mml:mrow><mml:mi>a</mml:mi> <mml:mo>,</mml:mo> <mml:mi>b</mml:mi> <mml:mo>,</mml:mo> <mml:mi>c</mml:mi> <mml:mover><mml:mo>←</mml:mo> <mml:mo>$</mml:mo></mml:mover> <mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula>, <italic>there is no PPT adversary 𝒜 can compute ê</italic>(<italic>P</italic>, <italic>P</italic>)<sup><italic>abc</italic></sup> ∈ <bold>G</bold><sub>2</sub> <italic>with the help of the DBDH oracle with non-negligible advantage. The DBDH oracle means that given a tuple</italic> <inline-formula id="pone.0121226.e014"><mml:math id="M14" display="inline" overflow="scroll"><mml:mrow><mml:mo>〈</mml:mo> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>a</mml:mi> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>b</mml:mi> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>c</mml:mi> <mml:mi>P</mml:mi> <mml:mo>,</mml:mo> <mml:mi>T</mml:mi> <mml:mo>〉</mml:mo> <mml:mo>∈</mml:mo> <mml:msubsup><mml:mtext mathvariant="bold">G</mml:mtext> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>4</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>×</mml:mo> <mml:msub><mml:mtext mathvariant="bold">G</mml:mtext> <mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:math></inline-formula>, <italic>outputs 1 if</italic> <italic>T</italic> = <italic>ê</italic>(<italic>P</italic>, <italic>P</italic>)<sup><italic>abc</italic></sup> <italic>and 0 otherwise</italic> [<xref ref-type="bibr" rid="pone.0121226.ref009">9</xref>].</p>
+</sec>
+<sec id="sec012">
+<title>Our Improved IBOWAKE Protocol</title>
+<p>Kate et al. [<xref ref-type="bibr" rid="pone.0121226.ref010">10</xref>] proposed an IBOWAKE protocol that was proved to be secure in the random oracle model under the BDH assumption. The core idea of Kate et al.’s IBOWAKE protocol is to replace the identity hashes with pseudonyms generated by users, and each user can randomly generate many possible pseudonyms and the corresponding private keys.</p>
+<p>To avoid impersonation and MIMA attacks, it is desirable that only the pseudonym with valid certificate can be used as an encryption key during an anonymous communication session. For privacy purposes, we require that the PKG will not know the real pseudonym of an entity and the corresponding certificate. Our improved IBOWAKE protocol is described as follows.</p>
+<list list-type="bullet">
+<list-item><p><bold>Setup</bold>: The PKG runs 𝒢(1<sup><italic>κ</italic></sup>) to get (<italic>q</italic>, <bold>G</bold><sub>1</sub>, <bold>G</bold><sub>2</sub>, <italic>ê</italic>, <italic>P</italic>), chooses <inline-formula id="pone.0121226.e015"><mml:math id="M15" display="inline" overflow="scroll"><mml:mrow><mml:mi>s</mml:mi> <mml:mover><mml:mo>←</mml:mo> <mml:mo>$</mml:mo></mml:mover> <mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula>, computes <italic>P</italic><sub><italic>pub</italic></sub> = <italic>sP</italic> ∈ <bold>G</bold><sub>1</sub>. Finally, the PKG sets the master secret key <italic>msk</italic> = <italic>s</italic> and the system parameters <italic>mpk</italic> = ⟨<italic>q</italic>, <bold>G</bold><sub>1</sub>, <bold>G</bold><sub>2</sub>, <italic>ê</italic>, <italic>P</italic>, <italic>P</italic><sub><italic>pub</italic></sub>, <italic>H</italic><sub>0</sub>⟩.</p></list-item>
+<list-item><p><bold>Extract</bold>: Given a user’s identity ID, the PKG computes <italic>Q</italic><sub>ID</sub> = <italic>H</italic><sub>0</sub>(ID) and <italic>d</italic><sub>ID</sub> = <italic>sQ</italic><sub>ID</sub>. Finally, the PKG sends the user’s private key <italic>d</italic><sub>ID</sub> to the user via a secure channel.</p></list-item>
+<list-item><p><bold>PNGen</bold>: An entity X chooses <inline-formula id="pone.0121226.e016"><mml:math id="M16" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mi>k</mml:mi> <mml:mi>X</mml:mi></mml:msub> <mml:mover><mml:mo>←</mml:mo> <mml:mo>$</mml:mo></mml:mover> <mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula>, computes PN<sub><italic>X</italic></sub> = <italic>k</italic><sub><italic>X</italic></sub> <italic>P</italic> and <italic>sk</italic><sub>PN<sub><italic>X</italic></sub></sub> = <italic>k</italic><sub><italic>X</italic></sub> <italic>P</italic><sub><italic>pub</italic></sub> = <italic>s</italic>PN<sub><italic>X</italic></sub>. Finally, the entity X sets PN<sub><italic>X</italic></sub> and <italic>sk</italic><sub>PN<sub><italic>X</italic></sub></sub> as his pseudonym and the corresponding private key, respectively.</p></list-item>
+<list-item><p><bold>BlindCert</bold> An entity X with a pseudonym PN<sub><italic>X</italic></sub> chooses <inline-formula id="pone.0121226.e017"><mml:math id="M17" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mi>r</mml:mi> <mml:mi>X</mml:mi></mml:msub> <mml:mover><mml:mo>←</mml:mo> <mml:mo>$</mml:mo></mml:mover> <mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula>, generates a masked pseudonym by computing <inline-formula id="pone.0121226.e018"><mml:math id="M18" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mtext mathvariant="sans-serif">PN</mml:mtext> <mml:mi>X</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:mo>=</mml:mo> <mml:msub><mml:mi>r</mml:mi> <mml:mi>X</mml:mi></mml:msub> <mml:msub><mml:mi>H</mml:mi> <mml:mn>0</mml:mn></mml:msub> <mml:mo stretchy="false">(</mml:mo> <mml:msub><mml:mtext mathvariant="sans-serif">PN</mml:mtext> <mml:mi>X</mml:mi></mml:msub> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>, X then sends <inline-formula id="pone.0121226.e019"><mml:math id="M19" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mtext mathvariant="sans-serif">PN</mml:mtext> <mml:mi>X</mml:mi> <mml:mo>′</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula> to the PKG. The PKG computes <inline-formula id="pone.0121226.e020"><mml:math id="M20" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>X</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:mo>=</mml:mo> <mml:mi>s</mml:mi> <mml:msubsup><mml:mtext mathvariant="sans-serif">PN</mml:mtext> <mml:mi>X</mml:mi> <mml:mo>′</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula> and sends the signature <inline-formula id="pone.0121226.e021"><mml:math id="M21" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>X</mml:mi> <mml:mo>′</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula> to X. Upon receiving <inline-formula id="pone.0121226.e022"><mml:math id="M22" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>X</mml:mi> <mml:mo>′</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula>, X verifies <inline-formula id="pone.0121226.e023"><mml:math id="M23" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>X</mml:mi> <mml:mo>′</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula> by checking <inline-formula id="pone.0121226.e024"><mml:math id="M24" display="inline" overflow="scroll"><mml:mrow><mml:mover accent="true"><mml:mi>e</mml:mi> <mml:mo>^</mml:mo></mml:mover> <mml:mo stretchy="false">(</mml:mo> <mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>X</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:mo>,</mml:mo> <mml:mi>P</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:mover accent="true"><mml:mi>e</mml:mi> <mml:mo>^</mml:mo></mml:mover> <mml:mo stretchy="false">(</mml:mo> <mml:msubsup><mml:mtext mathvariant="sans-serif">PN</mml:mtext> <mml:mi>X</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:mo>,</mml:mo> <mml:msub><mml:mi>P</mml:mi> <mml:mrow><mml:mi>p</mml:mi> <mml:mi>u</mml:mi> <mml:mi>b</mml:mi></mml:mrow></mml:msub> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>. If the equation holds, X then computes <inline-formula id="pone.0121226.e025"><mml:math id="M25" display="inline" overflow="scroll"><mml:mrow><mml:msub><mml:mi>σ</mml:mi> <mml:mi>X</mml:mi></mml:msub> <mml:mo>=</mml:mo> <mml:msubsup><mml:mi>r</mml:mi> <mml:mi>X</mml:mi> <mml:mrow><mml:mo>−</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msubsup> <mml:msubsup><mml:mi>σ</mml:mi> <mml:mi>X</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:mo>=</mml:mo> <mml:mi>s</mml:mi> <mml:msub><mml:mi>H</mml:mi> <mml:mn>0</mml:mn></mml:msub> <mml:mo stretchy="false">(</mml:mo> <mml:msub><mml:mtext mathvariant="sans-serif">PN</mml:mtext> <mml:mi>X</mml:mi></mml:msub> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>, and obtains his pseudonym certificate 〈PN<sub><italic>X</italic></sub>, <italic>σ</italic><sub><italic>X</italic></sub>〉. Anyone can verify entity X’s pseudonym certificate 〈PN<sub><italic>X</italic></sub>, <italic>σ</italic><sub><italic>X</italic></sub>〉 by testing <italic>ê</italic>(<italic>σ</italic><sub><italic>X</italic></sub>, <italic>P</italic>) = <italic>ê</italic>(<italic>H</italic><sub>0</sub>(PN<sub><italic>X</italic></sub>), <italic>P</italic><sub><italic>pub</italic></sub>).</p></list-item>
+<list-item><p><bold>Key Agreement</bold>: Suppose Alice wants to perform a session key agreement with Bob. Alice knows Bob’s identity ID<sub><italic>B</italic></sub> and wishes to remain anonymous to Bob, Alice and Bob perform the following steps:
+<list list-type="bullet">
+<list-item>
+<p>Alice generates her pseudonym PN<sub><italic>X</italic></sub> and gets her pseudonym certificate 〈PN<sub><italic>A</italic></sub>, <italic>σ</italic><sub><italic>A</italic></sub>〉 by performing the <bold>PNGen</bold> algorithm and the <bold>BlindCert</bold> algorithm, respectively.</p>
+</list-item>
+<list-item>
+<p>Alice computes the session key <italic>K</italic><sub><italic>A</italic>, <italic>B</italic></sub> = <italic>ê</italic>(<italic>sk</italic><sub>PN<sub><italic>A</italic></sub></sub>, <italic>Q</italic><sub>ID<sub><italic>B</italic></sub></sub>). Alice then sends her pseudonym certificate 〈PN<sub><italic>A</italic></sub>, <italic>σ</italic><sub><italic>A</italic></sub>〉 to Bob.</p>
+</list-item>
+<list-item>
+<p>Upon receiving Alice’s pseudonym certificate 〈PN<sub><italic>A</italic></sub>, <italic>σ</italic><sub><italic>A</italic></sub>〉, Bob verifies Alice’s pseudonym certificate by testing <italic>ê</italic>(<italic>σ</italic><sub><italic>A</italic></sub>, <italic>P</italic>) = <italic>ê</italic>(<italic>H</italic><sub>0</sub>(PN<sub><italic>A</italic></sub>), <italic>P</italic><sub><italic>pub</italic></sub>). If the equation holds, Bob then computes the corresponding session key <italic>K</italic><sub><italic>A</italic>, <italic>B</italic></sub> = <italic>ê</italic>(PN<sub><italic>A</italic></sub>, <italic>d</italic><sub>ID<sub><italic>B</italic></sub></sub>) by using his private key <italic>d</italic><sub>ID<sub><italic>B</italic></sub></sub>.</p>
+</list-item>
+</list></p>
+</list-item>
+</list>
+<p>Note that the <bold>BlindCert</bold> algorithm is in fact a blind Boneh-Lynn-Shacham (BLS) signature scheme [<xref ref-type="bibr" rid="pone.0121226.ref025">25</xref>], which is proved to be existentially unforgeable under adaptive chosen-message attacks under the computational Diffie-Hellman assumption in the random oracle model.</p>
+</sec>
+<sec id="sec013">
+<title>Our Improved AMRIBE Scheme</title>
+<p>Tseng et al. [<xref ref-type="bibr" rid="pone.0121226.ref009">9</xref>] proposed an AMRIBE scheme that was proved to be semantically secure against adaptive chosen ciphertext attacks in the random oracle model under the Gap-BDH assumption.</p>
+<p>Tseng et al.’s AMRIBE scheme [<xref ref-type="bibr" rid="pone.0121226.ref009">9</xref>] is an extension of Boneh and Franlin’s IBE scheme [<xref ref-type="bibr" rid="pone.0121226.ref003">3</xref>] to multiple recipients scenario. Rapid enhanced-security asymmetric cryptosystems transform (REACT) [<xref ref-type="bibr" rid="pone.0121226.ref026">26</xref>] is an important tool for any asymmetric encryption schemes to achieve IND-CCA secure from IND-CPA secure. We apply the REACT transformation in Tseng et al.’s AMRIBE scheme to further improve the efficiency without compromising security.</p>
+<list list-type="bullet">
+<list-item><p><bold>Setup</bold>: The PKG runs 𝒢(1<sup><italic>κ</italic></sup>) to get (<italic>q</italic>, <bold>G</bold><sub>1</sub>, <bold>G</bold><sub>2</sub>, <italic>ê</italic>, <italic>P</italic>), chooses <inline-formula id="pone.0121226.e026"><mml:math id="M26" display="inline" overflow="scroll"><mml:mrow><mml:mi>s</mml:mi> <mml:mover><mml:mo>←</mml:mo> <mml:mo>$</mml:mo></mml:mover> <mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula>, computes <italic>P</italic><sub><italic>pub</italic></sub> = <italic>sP</italic> ∈ <bold>G</bold><sub>1</sub>. Finally, the PKG sets <italic>msk</italic> = <italic>s</italic> and <italic>mpk</italic> = ⟨<italic>q</italic>, <bold>G</bold><sub>1</sub>, <bold>G</bold><sub>2</sub>, <italic>ê</italic>, <italic>P</italic>, <italic>P</italic><sub><italic>pub</italic></sub>, <italic>H</italic><sub>0</sub>, <italic>H</italic><sub>1</sub>, <italic>H</italic><sub>2</sub>, <italic>H</italic><sub>3</sub>, Π⟩.</p></list-item>
+<list-item><p><bold>Extract</bold>: Given a user’s identity ID, the PKG computes <italic>Q</italic><sub>ID</sub> = <italic>H</italic><sub>0</sub>(ID) and <italic>d</italic><sub>ID</sub> = <italic>sQ</italic><sub>ID</sub>. Finally, the PKG sends the user’s private key <italic>d</italic><sub>ID</sub> to the user via a secure channel.</p></list-item>
+<list-item><p><bold>Encrypt</bold>: To encrypt a message <italic>m</italic> ∈ {0, 1}<sup>*</sup> for <italic>t</italic> receivers with identities <inline-formula id="pone.0121226.e027"><mml:math id="M27" display="inline" overflow="scroll"><mml:mrow><mml:mstyle mathvariant="bold" mathsize="normal"><mml:mi>I</mml:mi><mml:mi>D</mml:mi></mml:mstyle><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mrow><mml:mo>{</mml:mo> <mml:mrow><mml:mtext>I</mml:mtext><mml:msub><mml:mtext>D</mml:mtext><mml:mi>i</mml:mi></mml:msub></mml:mrow> <mml:mo>}</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>t</mml:mi></mml:msubsup></mml:mrow></mml:math>
+</inline-formula>, the sender chooses <inline-formula id="pone.0121226.e028"><mml:math id="M28" display="inline" overflow="scroll"><mml:mrow><mml:mi>r</mml:mi> <mml:mo>,</mml:mo> <mml:mi>k</mml:mi> <mml:mover><mml:mo>←</mml:mo> <mml:mo>$</mml:mo></mml:mover> <mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula>, computes <italic>U</italic> = <italic>rP</italic>, <italic>T</italic> = <italic>rP</italic><sub><italic>pub</italic></sub>, <italic>Q</italic><sub>ID<sub><italic>i</italic></sub></sub> = <italic>H</italic><sub>0</sub>(ID<sub><italic>i</italic></sub>) and <italic>v</italic><sub><italic>i</italic></sub> = <italic>H</italic><sub>1</sub>(<italic>ê</italic>(<italic>Q</italic><sub>ID<sub><italic>i</italic></sub></sub>, <italic>T</italic>)) for 1 ≤ <italic>i</italic> ≤ <italic>t</italic>, and constructs a polynomial <italic>f</italic>(<italic>x</italic>) with degree <italic>t</italic> as
+<disp-formula id="pone.0121226.e029"><alternatives><graphic id="pone.0121226.e029g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0121226.e029"/><mml:math id="M29" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>f</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>x</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:munderover><mml:mo>∏</mml:mo> <mml:mrow><mml:mi>i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>t</mml:mi></mml:munderover> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>x</mml:mi> <mml:mo>-</mml:mo> <mml:msub><mml:mi>v</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:mi>k</mml:mi> <mml:mspace width="0.277778em"/><mml:mo form="prefix">mod</mml:mo> <mml:mspace width="0.277778em"/><mml:mi>q</mml:mi> <mml:mo>=</mml:mo> <mml:msub><mml:mi>c</mml:mi> <mml:mn>0</mml:mn></mml:msub> <mml:mo>+</mml:mo> <mml:msub><mml:mi>c</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mi>x</mml:mi> <mml:mo>+</mml:mo> <mml:mo>…</mml:mo> <mml:mo>+</mml:mo> <mml:msub><mml:mi>c</mml:mi> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msub> <mml:msup><mml:mi>x</mml:mi> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msup> <mml:mo>+</mml:mo> <mml:msup><mml:mi>x</mml:mi> <mml:mi>t</mml:mi></mml:msup> <mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives></disp-formula>
+The sender then computes <italic>W</italic> = <italic>E</italic><sub><italic>H</italic><sub>2</sub>(<italic>k</italic>)</sub>(<italic>m</italic>) and <italic>λ</italic> = <italic>H</italic><sub>3</sub>(<italic>m</italic>,<italic>k</italic>,<italic>c</italic><sub>0</sub>,<italic>c</italic><sub>1</sub>,…<italic>c</italic><sub><italic>t</italic>−1</sub>, <italic>U</italic>, <italic>W</italic>). Finally, the sender sets the ciphertext <italic>C</italic> = 〈<italic>c</italic><sub>0</sub>, <italic>c</italic><sub>1</sub>,…,<italic>c</italic><sub><italic>t</italic>−1</sub>, <italic>U</italic>, <italic>W</italic>, <italic>λ</italic>〉.</p></list-item>
+<list-item><p><bold>Decrypt</bold>: Upon receiving a ciphertext <italic>C</italic> = 〈<italic>c</italic><sub>0</sub>,<italic>c</italic><sub>1</sub>,…,<italic>c</italic><sub><italic>t</italic>−1</sub>, <italic>U</italic>, <italic>W</italic>, <italic>λ</italic>〉 that is encrypted using identities <inline-formula id="pone.0121226.e030"><mml:math id="M30" display="inline" overflow="scroll"><mml:mrow><mml:mstyle mathvariant="bold" mathsize="normal"><mml:mi>I</mml:mi><mml:mi>D</mml:mi></mml:mstyle><mml:mo>=</mml:mo><mml:msubsup><mml:mrow><mml:mrow><mml:mo>{</mml:mo> <mml:mrow><mml:mtext>I</mml:mtext><mml:msub><mml:mtext>D</mml:mtext><mml:mi>i</mml:mi></mml:msub></mml:mrow> <mml:mo>}</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>t</mml:mi></mml:msubsup></mml:mrow></mml:math></inline-formula>, a selected receiver with identity ID<sub><italic>j</italic></sub> ∈ <bold>ID</bold> first computes <italic>v</italic><sub><italic>j</italic></sub> = <italic>H</italic><sub>1</sub>(<italic>ê</italic>(<italic>d</italic><sub>ID<sub><italic>j</italic></sub></sub>, <italic>U</italic>)), <inline-formula id="pone.0121226.e031"><mml:math id="M31" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mi>k</mml:mi> <mml:mo>′</mml:mo></mml:msup> <mml:mo>=</mml:mo> <mml:mi>f</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:msub><mml:mi>v</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:msub><mml:mi>c</mml:mi> <mml:mn>0</mml:mn></mml:msub> <mml:mo>+</mml:mo> <mml:msub><mml:mi>c</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:msub><mml:mi>v</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo>+</mml:mo> <mml:mo>⋯</mml:mo> <mml:mo>+</mml:mo> <mml:msub><mml:mi>c</mml:mi> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>−</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msub> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>j</mml:mi> <mml:mrow><mml:mi>t</mml:mi> <mml:mo>−</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msubsup> <mml:mo>+</mml:mo> <mml:msubsup><mml:mi>v</mml:mi> <mml:mi>j</mml:mi> <mml:mi>t</mml:mi></mml:msubsup> <mml:mspace width="0.278em"/> <mml:mtext>mod</mml:mtext> <mml:mspace width="0.278em"/><mml:mi>q</mml:mi></mml:mrow></mml:math></inline-formula> and <italic>m</italic><sup>′</sup> = <italic>D</italic><sub><italic>H</italic><sub>2</sub>(<italic>k</italic><sup>′</sup>)</sub>(<italic>W</italic>). The receiver then sets <italic>λ</italic><sup>′</sup> = <italic>H</italic><sub>3</sub>(<italic>m</italic><sup>′</sup>, <italic>k</italic><sup>′</sup>, <italic>c</italic><sub>0</sub>, <italic>c</italic><sub>1</sub>,…<italic>c</italic><sub><italic>t</italic>−1</sub>, <italic>U</italic>, <italic>W</italic>), and tests whether <italic>λ</italic><sup>′</sup> = <italic>λ</italic> holds or not. If it does not hold, the recipient rejects the ciphertext. Otherwise, the recipient outputs <italic>m</italic> as the decryption of <italic>C</italic>.</p></list-item>
+</list>
+</sec>
+</sec>
+<sec id="sec014">
+<title>The AIB-OR Protocol</title>
+<p>The system model for our proposed AIB-OR protocol is illustrated as <xref ref-type="fig" rid="pone.0121226.g001">Fig. 1</xref>, in which the round represents the users and the rectangle represents the onion routers. Assume that there are <italic>t</italic>−1 onion routers between the sender and the receiver along the routing path. We denote the <italic>i</italic>-th router in the path by OR<sub><italic>i</italic></sub> where 1 ≤ <italic>i</italic> ≤ <italic>t</italic>−1. Unlike existing onion routing protocols, we will distinguish users and routers in our AIB-OR.</p>
+<fig id="pone.0121226.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0121226.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>System Model of Onion Routing.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0121226.g001"/>
+</fig>
+<p>The proposed AIB-OR protocol involves a trusted PKG whose responsibility is to initialize system parameters and to issue identity-based private keys and blind pseudonym certificates for all participants. The PKG runs the setup algorithm in AMRIBE scheme, sets the master key <italic>msk</italic> = <italic>s</italic>, and publishes the system parameters <italic>mpk</italic> = ⟨<italic>q</italic>, <bold>G</bold><sub>1</sub>, <bold>G</bold><sub>2</sub>, <italic>ê</italic>, <italic>P</italic>, <italic>P</italic><sub><italic>pub</italic></sub>, <italic>H</italic><sub>0</sub>, <italic>H</italic><sub>1</sub>, <italic>H</italic><sub>2</sub>, <italic>H</italic><sub>3</sub>, Π⟩.</p>
+<sec id="sec015">
+<title>Circuit Construction</title>
+<p>When the sender would like to send a message <italic>m</italic> ∈ {0, 1}<sup>ℓ</sup> to the designated recipient with identity ID<sub><italic>R</italic></sub> anonymously and securely, he performs the following steps:
+<list list-type="order">
+<list-item><p>The sender generates his pseudonym PN<sub><italic>S</italic></sub> and gets his pseudonym certificate 〈PN<sub><italic>S</italic></sub>, <italic>σ</italic><sub><italic>S</italic></sub>〉 by performing the <bold>PNGen</bold> algorithm and the <bold>BlindCert</bold> algorithm, respectively.</p></list-item> <list-item><p>The sender runs the <bold>Key Agreement</bold> algorithm of our improved IBOWAKE protocol, gets the session key <italic>K</italic><sub><italic>S</italic>, <italic>R</italic></sub> = <italic>ê</italic>(<italic>sk</italic><sub>PN<sub><italic>S</italic></sub></sub>, <italic>Q</italic><sub>ID<sub><italic>R</italic></sub></sub>), and encrypts message <italic>m</italic> using a symmetric encryption algorithm (such as Advanced Encryption Standard, AES) with the session key <italic>K</italic><sub><italic>S</italic>, <italic>R</italic></sub> to get the ciphertext <italic>C</italic><sub>0</sub>. Note that the seesion key is used to encrypt data and is valid only for the duration of the communication.</p></list-item> <list-item><p>The sender then constructs a circuit by selecting an ordered subset of onion routers from a generally known set of onion routers. We denote the identities of selected subset of onion routers by <inline-formula id="pone.0121226.e032"><mml:math id="M32" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mrow><mml:mrow><mml:mo>{</mml:mo> <mml:mrow><mml:mtext>I</mml:mtext><mml:msub><mml:mtext>D</mml:mtext><mml:mi>i</mml:mi></mml:msub></mml:mrow> <mml:mo>}</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula>, where ID<sub><italic>t</italic>−1</sub> is the identity of onion router closest to the designated receiver.</p></list-item> <list-item><p>The sender encrypts the inner ciphertext <italic>C</italic><sub>0</sub> for identities <inline-formula id="pone.0121226.e033"><mml:math id="M33" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mrow><mml:mrow><mml:mo>{</mml:mo> <mml:mrow><mml:mtext>I</mml:mtext><mml:msub><mml:mtext>D</mml:mtext><mml:mi>i</mml:mi></mml:msub></mml:mrow> <mml:mo>}</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup><mml:mo>∪</mml:mo><mml:mtext>I</mml:mtext><mml:msub><mml:mtext>D</mml:mtext><mml:mi>R</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> by applying the <bold>Encrypt</bold> algorithm of our improved AMRIBE scheme to get the outer ciphertext <italic>C</italic><sub>1</sub>.</p></list-item> <list-item><p>Finally, the sender transmits the onion packet ONI ≜(<italic>seq</italic>, 〈PN<sub><italic>S</italic></sub>, <italic>σ</italic><sub><italic>S</italic></sub>〉, <italic>C</italic><sub>1</sub>) to the first onion router OR<sub>1</sub> along the path.</p></list-item></list></p>
+</sec>
+<sec id="sec016">
+<title>Decrypt by Onion Router</title>
+<p>When an onion router OR<sub><italic>i</italic></sub> receives the onion packet, it processes the onion packet as follows.</p>
+<list list-type="order">
+<list-item><p>The onion router OR<sub><italic>i</italic></sub> checks whether the packet has already been received or not by using the field <italic>seq</italic> as the unique identifier for the packet. If there is an entry with the same <italic>seq</italic> field in its local routing table, it simply discards the onion packet. Otherwise it inserts a new record (<italic>seq</italic>, OR<sub><italic>i</italic>−1</sub>, <italic>ttl</italic>) into the local routing table.</p></list-item>
+<list-item><p>The onion router OR<sub><italic>i</italic></sub> decrypts the ciphertext <italic>C</italic><sub>1</sub> of the onion packet with its private key <italic>d</italic><sub>ID<sub><italic>i</italic></sub></sub> by running the <bold>Decrypt</bold> algorithm of our improved AMRIBE scheme. If the decryption fails, the OR<sub><italic>i</italic></sub> just discards the packet without forwarding. Otherwise, the OR<sub><italic>i</italic></sub> forwards the onion packet to all the connecting onion routers and users except the previous onion router (whom it gets the packet from).</p></list-item>
+</list>
+</sec>
+<sec id="sec017">
+<title>Decrypt by the Recipient</title>
+<p>When a user receives the onion packet, he performs the same operations as the onion routers. Note that a user can not decrypt the ciphertext <italic>C</italic><sub>1</sub> of the onion packet with his private key unless he is the designated recipient. If he is not the designated recipient, he simply discards the packet. Otherwise, he is the designated recipient, and he can further decrypt the inner ciphertext <italic>C</italic><sub>0</sub> with the session key <italic>K</italic><sub><italic>S</italic>, <italic>R</italic></sub> = <italic>ê</italic>(PN<sub><italic>S</italic></sub>, <italic>d</italic><sub>ID<sub><italic>R</italic></sub></sub>) and get the plaintext <italic>m</italic>.</p>
+</sec>
+</sec>
+<sec id="sec018">
+<title>Security and Efficiency Analysis</title>
+<p>In this section, we explain how the proposed AIB-OR protocol meets the sender anonymity, recipient anonymity, route anonymity and failure tolerance, and analyze why the proposed AIB-OR protocol can greatly reduce computational and communications costs. In the following, all analyzes and discussions are based on the onion routing example illustrated in <xref ref-type="fig" rid="pone.0121226.g002">Fig. 2</xref>.</p>
+<fig id="pone.0121226.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0121226.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Example of Onion Routing.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0121226.g002"/>
+</fig>
+<list list-type="bullet">
+<list-item><p><bold>Sender Anonymity</bold>: The sender constructs circuit using its one-time pseudonym in our AIB-OR protocol, which ensures sender anonymity.</p></list-item>
+<list-item><p><bold>Recipient Anonymity</bold>: In existing onion routing protocols, if an adversary compromised the onion router <italic>OR</italic><sub>10</sub>, then he knows the address or identity of the recipient. In our AIB-OR protocol, the sender encrypts the inner ciphertext for multiple identities <inline-formula id="pone.0121226.e034"><mml:math id="M34" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mrow><mml:mrow><mml:mo>{</mml:mo> <mml:mrow><mml:mtext>I</mml:mtext><mml:msub><mml:mtext>D</mml:mtext><mml:mi>i</mml:mi></mml:msub></mml:mrow> <mml:mo>}</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup><mml:mo>∪</mml:mo><mml:mtext>I</mml:mtext><mml:msub><mml:mtext>D</mml:mtext><mml:mi>R</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> by applying AMRIBE scheme, which provides privacy protection for the recipient and the onion routers in the circuit.</p></list-item>
+<list-item><p><bold>Route Anonymity</bold>: In the circuit construction given in PB-OR and CL-OR, the sender sends to each onion router a pseudonym and a message symmetrically encrypted with the session key <italic>K</italic><sub><italic>i</italic></sub>. The session key <italic>K</italic><sub><italic>i</italic></sub> is generated by a non-interactive anonymous key agreement protocol, and the message contains the identity of the next node in the circuit. Thus every onion router in the circuit knows the address or identity of both the previous onion router and the next onion router. In the circuit construction of our AIB-OR protocol, the sender encrypts the inner ciphertext for multiple identities <inline-formula id="pone.0121226.e035"><mml:math id="M35" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mrow><mml:mrow><mml:mo>{</mml:mo> <mml:mrow><mml:mtext>I</mml:mtext><mml:msub><mml:mtext>D</mml:mtext><mml:mi>i</mml:mi></mml:msub></mml:mrow> <mml:mo>}</mml:mo></mml:mrow></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>−</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msubsup><mml:mo>∪</mml:mo><mml:mtext>I</mml:mtext><mml:msub><mml:mtext>D</mml:mtext><mml:mi>R</mml:mi></mml:msub></mml:mrow></mml:math></inline-formula> by applying AMRIBE scheme, which ensures none of the onion routers knows who is the next onion router or user since every onion router sends message to all the connecting onion routers and users except the previous onion router.</p></list-item>
+<list-item><p><bold>Failure Tolerance</bold>: Assume that sender sends a message to the receiver using the routing path Sender → OR<sub>1</sub> → OR<sub>2</sub> → OR<sub>5</sub> → OR<sub>6</sub> → OR<sub>10</sub> → Recipient. If there is something wrong with OR<sub>6</sub>, the message will be discarded after OR<sub>5</sub> in the existing onion routing protocols. In our AIB-OR protocol, the sender can add both the identity of OR<sub>8</sub> and OR<sub>9</sub> to the recipient collection. In this way, both OR<sub>8</sub> and OR<sub>9</sub> can decrypt the ciphertext with their own private key, respectively. If OR<sub>6</sub> failed, the message can still be transferred to the receiver following the path Sender → OR<sub>1</sub> → OR<sub>2</sub> → OR<sub>5</sub> → OR<sub>8</sub> → OR<sub>9</sub> → OR<sub>10</sub> → Recipient. This will bring extra overhead in circuit construction since the sender needs to construct higher order polynomial. Here we assume the sender has sufficient knowledge of routing paths leading to the recipient and the sender make a tradeoff between efficiency and failure tolerance to decide the actual routing path.</p></list-item>
+<list-item><p><bold>Message Consistency</bold>: We assume the adversaries have complete control over some part of the network, but not all parts of the network, since this cannot be possible for large network with thousands of network links. It may look like the message is not changing at every hop in the path so this may give path information to an attacker. However, attackers do not know the next hop in the path in our AIB-OR. So there is nearly no possibility for adversaries to get the whole path information by utilizing techniques such as traffic analysis, unless they are watching the entire network. In addition, our AIB-OR, unlike PB-OR and CL-OR, provides message integrity detection by verifying the value of <italic>λ</italic>.</p></list-item>
+<list-item><p><bold>Forward Secrecy</bold>: To achieve forward secrecy in PB-OR and CL-OR, onion routers’ keys are required to be changed frequently, this implies a significant computational effort for the PKG. In contrast our AIB-OR, none of the onion routers can decrypt the inner ciphertext and know who is the next onion router or user. To achieve forward secrecy in our proposed AIB-OR, only the sender’s pseudonym or the recipient’s key is required to be changed.</p></list-item>
+<list-item><p><bold>Communication Cost</bold>: At first glance, our AIB-OR protocol will bring higher network overhead since each onion router forwards the onion packet to all the connecting onion routers and users except the previous onion router. In fact, out of all only onion routers in the circuit can decrypt and the remaining will discard the onion packet. In <xref ref-type="fig" rid="pone.0121226.g002">Fig. 2</xref>, when OR<sub>5</sub> receives an onion packet from OR<sub>2</sub>, it will send the onion packet to the onion routers OR<sub>4</sub>, OR<sub>6</sub>, OR<sub>7</sub>, OR<sub>8</sub> and a user, respectively. However, only OR<sub>6</sub> can decrypt the onion packet and others will discard it since they can not decrypt the onion packet. In addition, the size of the onion packet is shorter than those of PB-OR and CL-OR.</p></list-item>
+<list-item><p><bold>Storage Cost</bold>: Both onion routers and users are given an identity-based private key from the trusted PKG, which can be used to decrypt the ciphertext encrypted by AMRIBE scheme as well as symmetric encryption algorithm with the session key <italic>K</italic><sub><italic>S</italic>, <italic>R</italic></sub>, thus the overhead of key management is greatly reduced. In addition, for an onion router or a user who receives the same packet for the second time, they can check the field <italic>seq</italic> in the packet against entries in the local routing table. If there is a matching record in the routing table, the onion router or user will discard the packet. A time to live field (<italic>ttl</italic>) is set in the local routing table, so that the entry can be removed from the local routing table when the <italic>ttl</italic> reaches zero.</p></list-item>
+<list-item><p><bold>Computation Cost</bold>: In the PB-OR and CL-OR, a sender is required to perform symmetric encryption operation <italic>t</italic> times if there are <italic>t</italic> onion routers in the path. In our AIB-OR, a sender is only required to perform symmetric encryption operation 2 times irrespective of number of onion routers in the path. Our AIB-OR, like PB-OR and CL-OR, each intermediate onion router is required to perform one bilinear pairing and one symmetric decryption operations. Note that, message is actually transmitted from the last onion router to the designated recipient in the clear text both in the PB-OR and CL-OR. Thus, the recipient does not need to perform any operations in PB-OR and CL-OR. Obviously, this would lead to the disclosure of messages and exposure of recipient identity. Our AIB-OR, unlike existing onion routing protocols, the user and the onion router is different, and the recipient is required to perform two bilinear pairing and two symmetric decryption operations.</p></list-item>
+</list>
+<p>We compare the security properties, computational and communications costs on circuit construction in PB-OR, CL-OR and our AIB-OR. The comparison is summarized in <xref ref-type="table" rid="pone.0121226.t002">Table 2</xref>. We denote by <italic>t</italic>, |<italic>m</italic>|, |ID|, |<bold>G</bold><sub>1</sub>| and <inline-formula id="pone.0121226.e036"><mml:math id="M36" display="inline" overflow="scroll"><mml:mrow><mml:mo stretchy="false">|</mml:mo> <mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup> <mml:mo stretchy="false">|</mml:mo></mml:mrow></mml:math></inline-formula> the number of onion routers in the circuit, the bit-length of a plaintext, an identity, an element in group <bold>G</bold><sub>1</sub>, and an element in group <inline-formula id="pone.0121226.e037"><mml:math id="M37" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mtext mathvariant="bold">Z</mml:mtext> <mml:mi>q</mml:mi> <mml:mo>*</mml:mo></mml:msubsup></mml:mrow></mml:math></inline-formula>, respectively. We denote by <italic>e</italic><sub>1</sub>, <italic>e</italic><sub>2</sub>, <italic>p</italic>, <italic>E</italic>, <italic>D</italic> the computation cost of an exponentiation in <bold>G</bold><sub>1</sub>, an exponentiation in <bold>G</bold><sub>2</sub>, a bilinear pairing in (<bold>G</bold><sub>1</sub>, <bold>G</bold><sub>2</sub>), a encryption operation and a decryption operation in Π, respectively. Other operations are omitted in the following analysis since their computation cost is trivial.</p>
+<table-wrap id="pone.0121226.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0121226.t002</object-id>
+<label>Table 2</label>
+<caption>
+<title>Comparison among our AIB-OR, PB-OR and CL-OR.</title>
+</caption>
+<alternatives>
+<graphic id="pone.0121226.t002g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0121226.t002"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1">PB-OR [<xref ref-type="bibr" rid="pone.0121226.ref010">10</xref>]</th>
+<th align="left" rowspan="1" colspan="1">CL-OR [<xref ref-type="bibr" rid="pone.0121226.ref012">12</xref>]</th>
+<th align="left" rowspan="1" colspan="1">AIB-OR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Sender Cost</td>
+<td align="left" rowspan="1" colspan="1"><italic>tp</italic>+<italic>tE</italic>+<italic>te</italic><sub>1</sub>+<italic>te</italic><sub>2</sub></td>
+<td align="left" rowspan="1" colspan="1"><italic>tE</italic>+5<italic>te</italic><sub>1</sub></td>
+<td align="left" rowspan="1" colspan="1">(<italic>t</italic>+1)<italic>p</italic>+2<italic>E</italic>+2<italic>e</italic><sub>1</sub></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">OR Cost</td>
+<td align="left" rowspan="1" colspan="1">1<italic>p</italic>+1<italic>D</italic></td>
+<td align="left" rowspan="1" colspan="1">3<italic>e</italic><sub>1</sub>+1<italic>D</italic></td>
+<td align="left" rowspan="1" colspan="1">1<italic>p</italic>+1<italic>D</italic></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Onion Packet Size</td>
+<td align="left" rowspan="1" colspan="1">|<italic>m</italic>|+(<italic>t</italic>−1)|ID|+<italic>t</italic>|<bold>G</bold><sub>1</sub>|</td>
+<td align="left" rowspan="1" colspan="1">
+<inline-formula id="pone.0121226.e038">
+<mml:math id="M38" display="inline" overflow="scroll">
+<mml:mrow>
+<mml:mo stretchy="false">|</mml:mo>
+<mml:mi>m</mml:mi>
+<mml:mo stretchy="false">|</mml:mo>
+<mml:mo>+</mml:mo>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mi>t</mml:mi>
+<mml:mo>−</mml:mo>
+<mml:mn>1</mml:mn>
+<mml:mo stretchy="false">)</mml:mo>
+<mml:mo stretchy="false">|</mml:mo>
+<mml:mtext mathvariant="sans-serif">ID</mml:mtext>
+<mml:mo stretchy="false">|</mml:mo>
+<mml:mo>+</mml:mo>
+<mml:mi>t</mml:mi>
+<mml:mo stretchy="false">|</mml:mo>
+<mml:msubsup>
+<mml:mtext mathvariant="bold">Z</mml:mtext>
+<mml:mi>q</mml:mi>
+<mml:mo>*</mml:mo>
+</mml:msubsup>
+<mml:mo stretchy="false">|</mml:mo>
+</mml:mrow>
+</mml:math>
+</inline-formula>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<inline-formula id="pone.0121226.e039">
+<mml:math id="M39" display="inline" overflow="scroll">
+<mml:mrow>
+<mml:mo stretchy="false">|</mml:mo>
+<mml:mi>m</mml:mi>
+<mml:mo stretchy="false">|</mml:mo>
+<mml:mo>+</mml:mo>
+<mml:mo stretchy="false">(</mml:mo>
+<mml:mi>t</mml:mi>
+<mml:mo>+</mml:mo>
+<mml:mn>1</mml:mn>
+<mml:mo stretchy="false">)</mml:mo>
+<mml:mo stretchy="false">|</mml:mo>
+<mml:msubsup>
+<mml:mtext mathvariant="bold">Z</mml:mtext>
+<mml:mi>q</mml:mi>
+<mml:mo>*</mml:mo>
+</mml:msubsup>
+<mml:mo stretchy="false">|</mml:mo>
+<mml:mo>+</mml:mo>
+<mml:mo stretchy="false">|</mml:mo>
+<mml:msub>
+<mml:mtext mathvariant="bold">G</mml:mtext>
+<mml:mn>1</mml:mn>
+</mml:msub>
+<mml:mo stretchy="false">|</mml:mo>
+</mml:mrow>
+</mml:math>
+</inline-formula>
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Recipient Anonymity</td>
+<td align="left" rowspan="1" colspan="1">No</td>
+<td align="left" rowspan="1" colspan="1">No</td>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Sender Anonymity</td>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">OR Anonymity</td>
+<td align="left" rowspan="1" colspan="1">Partial</td>
+<td align="left" rowspan="1" colspan="1">Partial</td>
+<td align="left" rowspan="1" colspan="1">Complete</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fault Tolerance</td>
+<td align="left" rowspan="1" colspan="1">No</td>
+<td align="left" rowspan="1" colspan="1">No</td>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Forward Secrecy</td>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Message Integrity</td>
+<td align="left" rowspan="1" colspan="1">No</td>
+<td align="left" rowspan="1" colspan="1">No</td>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MIMA Resistance</td>
+<td align="left" rowspan="1" colspan="1">No</td>
+<td align="left" rowspan="1" colspan="1">No</td>
+<td align="left" rowspan="1" colspan="1">Yes</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec019">
+<title>Performance Test</title>
+<p>We conducted several experiments to compare AIB-OR with PB-OR in terms of computation cost and bandwidth overhead. The experiments were run on a machine with 2GB of RAM, and hosted on 2.00GHz. We implement our algorithms based on Charm-Crypto Framework (version 0.42) [<xref ref-type="bibr" rid="pone.0121226.ref027">27</xref>] and Pairing-Based Crypto (PBC) library [<xref ref-type="bibr" rid="pone.0121226.ref028">28</xref>].</p>
+<p>In our experiment, we use symmetric bilinear groups over supersingular elliptic curves of type A [<xref ref-type="bibr" rid="pone.0121226.ref028">28</xref>], where an element in <bold>G</bold><sub>1</sub> can be represented by 512 bits. We choose AES-256 as the symmetric encryption algorithm, and the number of onion routers is chosen to be from 5 to 20, and the packet size is chosen to be 512 bytes.</p>
+<p>The time cost of circuit construction is measured on encryption time run by the source node, decryption time run by all the intermediate nodes in the circuit and decryption time run by the destination node. <xref ref-type="fig" rid="pone.0121226.g003">Fig. 3</xref> shows the comparison of computation time required by the sender in PB-OR [<xref ref-type="bibr" rid="pone.0121226.ref010">10</xref>] and our AIB-OR. As shown in the figure, the computation time required by the sender in our AIB-OR is shorter than in PB-OR for the same number of onion routers. Moreover, the growth rate of computation time required by the sender in our AIB-OR is slower than in PB-OR.</p>
+<fig id="pone.0121226.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0121226.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Comparison of Circuit Construction Cost.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0121226.g003"/>
+</fig>
+<p>For PB-OR, the size of onion packets becomes larger with the increase in the number of onion routers. For the intermediate routers, the closer to the destination node, the higher bandwidth overhead will be. There is no such problem in our AIB-OR. <xref ref-type="fig" rid="pone.0121226.g004">Fig. 4</xref> shows the comparison of onion packet size in PB-OR [<xref ref-type="bibr" rid="pone.0121226.ref010">10</xref>] and in our AIB-OR. As shown in the figure, the size of onion packet in our AIB-OR is shorter than in PB-OR. Moreover, the growth rate of onion packet size in our AIB-OR is slower than in PB-OR.</p>
+<fig id="pone.0121226.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0121226.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Comparison of Onion Packet Size.</title>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0121226.g004"/>
+</fig>
+</sec>
+<sec id="sec020" sec-type="conclusions">
+<title>Conclusion</title>
+<p>In this paper, we propose a new approach for circuit construction in onion routing anonymity networks by using our improved anonymous multi-receiver identity-based encryption scheme and our improved anonymous identity-based one-way key agreement protocol. Compared to existing approach for circuit construction in onion routing anonymity networks, our approach provides high efficiency, scalability, strong anonymity and fault tolerance. Performance experiment shows that our proposed approach uses significantly less computation and communication than that of paring-based onion routing.</p>
+</sec>
+</body>
+<back>
+<ack>
+<p>The authors would like to thank the editors and the anonymous reviewers of this paper for their valuable comments and suggestions while at the same time helping us to improve the English spelling and grammar throughout the manuscript.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pone.0121226.ref001">
+<label>1</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Ren</surname> <given-names>J</given-names></name> and <name name-style="western"><surname>Wu</surname> <given-names>J</given-names></name>. <article-title>Survey on Anonymous Communications in Computer Networks</article-title>. <source>Computer Communications</source>. <year>2010</year>, <volume>33</volume>(<issue>4</issue>): <fpage>420</fpage>–<lpage>431</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0121226.ref002">
+<label>2</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Shamir</surname> <given-names>A</given-names></name>. <article-title>Identity-Based Cryptosystems and Signature Schemes</article-title>. <source>Advances in Cryptology – CRYPTO 1984, Lecture Notes in Computer Science</source> <volume>Volume 196</volume>, <year>1985</year>, pp. <fpage>47</fpage>–<lpage>53</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0121226.ref003">
+<label>3</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Boneh</surname> <given-names>D</given-names></name> and <name name-style="western"><surname>Franklin</surname> <given-names>M</given-names></name>. <article-title>Identity-Based Encryption from the Weil Pairing</article-title>. <source>Advances in Cryptology—CRYPTO 2001, Lecture Notes in Computer Science</source> <volume>Volume 2139</volume>, <year>2001</year>, pp. <fpage>213</fpage>–<lpage>229</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/3-540-44647-8_13" xlink:type="simple">10.1007/3-540-44647-8_13</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref004">
+<label>4</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Baek</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Newmarch</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Safavi-naini</surname> <given-names>R</given-names></name> and <name name-style="western"><surname>Susilo</surname> <given-names>W</given-names></name>. <article-title>A Survey of Identity-Based Cryptography</article-title>. <source>Prooceedings of Australian Unix Users Group Annual Conference</source>, <year>2004</year>, pp. <fpage>95</fpage>–<lpage>102</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0121226.ref005">
+<label>5</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Baek</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Safavi-Naini</surname> <given-names>R</given-names></name> and <name name-style="western"><surname>Susilo</surname> <given-names>W</given-names></name>. <article-title>Efficient Multi-receiver Identity-Based Encryption and Its Application to Broadcast Encryption</article-title>. <source>Public Key Cryptography—PKC 2005, Lecture Notes in Computer Science</source> <volume>Volume 3386</volume>, <year>2005</year>, pp. <fpage>380</fpage>–<lpage>397</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/978-3-540-30580-4_26" xlink:type="simple">10.1007/978-3-540-30580-4_26</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref006">
+<label>6</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Boyen</surname> <given-names>X</given-names></name> and <name name-style="western"><surname>Waters</surname> <given-names>B</given-names></name>. <article-title>Anonymous Hierarchical Identity-Based Encryption (Without Random Oracles)</article-title>. <source>Advances in Cryptology—CRYPTO 2006, Lecture Notes in Computer Science</source> <volume>Volume 4117</volume>, <year>2006</year>, pp. <fpage>290</fpage>–<lpage>307</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/11818175_17" xlink:type="simple">10.1007/11818175_17</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref007">
+<label>7</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Fan</surname> <given-names>CI</given-names></name>, <name name-style="western"><surname>Huang</surname> <given-names>LY</given-names></name> and <name name-style="western"><surname>Ho</surname> <given-names>PH</given-names></name>. <article-title>Anonymous Multireceiver Identity-Based Encryption</article-title>. <source>IEEE Transactions on Computers</source>, <year>2010</year>, <volume>59</volume>(<issue>9</issue>): <fpage>1239</fpage>–<lpage>1249</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/TC.2010.23" xlink:type="simple">10.1109/TC.2010.23</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref008">
+<label>8</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Chien</surname> <given-names>HY</given-names></name>. <article-title>Improved Anonymous Multi-receiver Identity-based Encryption</article-title>. <source>The Computer Journal</source>, <year>2012</year>, <volume>55</volume>(<issue>4</issue>): <fpage>439</fpage>–<lpage>445</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/comjnl/bxr086" xlink:type="simple">10.1093/comjnl/bxr086</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref009">
+<label>9</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Tseng</surname> <given-names>YM</given-names></name>, <name name-style="western"><surname>Huang</surname> <given-names>YH</given-names></name> and <name name-style="western"><surname>Chang</surname> <given-names>HJ</given-names></name>. <article-title>CCA-secure Anonymous Multi-receiver ID-based Encryption</article-title>. <source>The 26th International Conference on Advanced Information Networking and Applications Workshops</source>, <year>2012</year>, pp. <fpage>177</fpage>–<lpage>182</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/WAINA.2012.50" xlink:type="simple">10.1109/WAINA.2012.50</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref010">
+<label>10</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Kate</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Zaverucha</surname> <given-names>G</given-names></name> and <name name-style="western"><surname>Goldberg</surname> <given-names>I</given-names></name>. <article-title>Pairing-Based Onion Routing</article-title>. <source>Privacy Enhancing Technologies—PET 2007, Lecture Notes in Computer Science</source> <volume>Volume 4776</volume>, <year>2007</year>, pp. <fpage>95</fpage>–<lpage>112</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0121226.ref011">
+<label>11</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Al-Riyami</surname> <given-names>SS</given-names></name> and <name name-style="western"><surname>Paterson</surname> <given-names>KG</given-names></name>. <article-title>Certificateless Public Key Cryptography</article-title>. <source>Advances in Cryptology—ASIACRYPT 2003, Lecture Notes in Computer Science</source> <volume>Volume 2894</volume>, <year>2003</year>, pp. <fpage>452</fpage>–<lpage>473</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/978-3-540-40061-5_29" xlink:type="simple">10.1007/978-3-540-40061-5_29</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref012">
+<label>12</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Catalano</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Fiore</surname> <given-names>D</given-names></name> and <name name-style="western"><surname>Gennaro</surname> <given-names>R</given-names></name>. <article-title>Certificateless Onion Routing</article-title>. <source>Proceedings of the 16th ACM Conference on Computer and Communications Security</source>, <year>2009</year>, pp. <fpage>151</fpage>–<lpage>160</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0121226.ref013">
+<label>13</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Sahai</surname> <given-names>A</given-names></name> and <name name-style="western"><surname>Waters</surname> <given-names>B</given-names></name>. <article-title>Fuzzy Identity-based Encryption</article-title>. <source>Advances in Cryptology—EUROCRYPT 2005, Lecture Notes in Computer Science</source> <volume>Volume 3494</volume>, <year>2005</year>, pp. <fpage>457</fpage>–<lpage>473</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/11426639_27" xlink:type="simple">10.1007/11426639_27</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref014">
+<label>14</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Goyal</surname> <given-names>V</given-names></name>, <name name-style="western"><surname>Pandey</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Sahai</surname> <given-names>A</given-names></name> and <name name-style="western"><surname>Waters</surname> <given-names>B</given-names></name>. <article-title>Attribute-based Encryption for Fine-grained Access Control of Encrypted Data</article-title>. <source>Proceedings of the 13th ACM Conference on Computer and Communications Security</source>, <year>2006</year>, pp. <fpage>89</fpage>–<lpage>98</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0121226.ref015">
+<label>15</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Bethencourt</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Sahai</surname> <given-names>A</given-names></name> and <name name-style="western"><surname>Waters</surname> <given-names>B</given-names></name>. <article-title>Ciphertext-Policy Attribute-Based Encryption</article-title>. <source>IEEE Symposium on Security and Privacy</source>, <year>2007</year>, pp. <fpage>321</fpage>–<lpage>334</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/SP.2007.11" xlink:type="simple">10.1109/SP.2007.11</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref016">
+<label>16</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Waters</surname> <given-names>B</given-names></name>. <article-title>Ciphertext-Policy Attribute-Based Encryption: An Expressive, Efficient, and Provably Secure Realization</article-title>. <source>Public Key Cryptography—PKC 2011, Lecture Notes in Computer Science</source> <volume>Volume 6571</volume>, <year>2011</year>, pp. <fpage>53</fpage>–<lpage>70</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/978-3-642-19379-8_4" xlink:type="simple">10.1007/978-3-642-19379-8_4</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref017">
+<label>17</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Ibraimi</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Asim</surname> <given-names>M</given-names></name> and <name name-style="western"><surname>Petkovic</surname> <given-names>M</given-names></name>. <article-title>Secure Management of Personal Health Records by Applying Attribute-based Encryption</article-title>. <source>6th International Workshop on Wearable Micro and Nano Technologies for Personalized Health</source>, <year>2009</year>, pp.<fpage>71</fpage>–<lpage>74</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/PHEALTH.2009.5754828" xlink:type="simple">10.1109/PHEALTH.2009.5754828</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref018">
+<label>18</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Pirretti</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Traynor</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>McDaniel</surname> <given-names>P</given-names></name> and <name name-style="western"><surname>Waters</surname> <given-names>B</given-names></name>. <article-title>Secure Attribute-based Systems</article-title>. <source>Journal of Computer Security</source>, <year>2010</year>, <volume>18</volume>(<issue>5</issue>): <fpage>799</fpage>–<lpage>837</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0121226.ref019">
+<label>19</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Wang</surname> <given-names>CJ</given-names></name>, <name name-style="western"><surname>Liu</surname> <given-names>X</given-names></name> and <name name-style="western"><surname>Li</surname> <given-names>WT</given-names></name>. <article-title>Design and Implementation of a Secure Cloud-based Personal Health Record System Using Ciphertext-policy Attribute-based Encryption</article-title>. <source>International Journal of Intelligent Information and Database Systems</source>, <year>2013</year>, <volume>7</volume>(<issue>5</issue>): <fpage>389</fpage>–<lpage>399</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1504/IJIIDS.2013.056381" xlink:type="simple">10.1504/IJIIDS.2013.056381</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref020">
+<label>20</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Reed</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Syverson</surname> <given-names>P</given-names></name> and <name name-style="western"><surname>Goldschlag</surname> <given-names>D</given-names></name>. <article-title>Anonymous Connections and Onion Routing</article-title>. <source>IEEE Journal on Selected Areas in Communications</source>. <year>1999</year>, <volume>16</volume>(<issue>4</issue>): <fpage>482</fpage>–<lpage>494</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1109/49.668972" xlink:type="simple">10.1109/49.668972</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref021">
+<label>21</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Goldschlag</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Reed</surname> <given-names>M</given-names></name> and <name name-style="western"><surname>Syverson</surname> <given-names>P</given-names></name>. <article-title>Onion Routing</article-title>. <source>Communications of the ACM</source>, <year>1999</year>, <volume>42</volume>(<issue>2</issue>): <fpage>39</fpage>–<lpage>41</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1145/293411.293443" xlink:type="simple">10.1145/293411.293443</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref022">
+<label>22</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Mauw</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Verschuren</surname> <given-names>JHS</given-names></name> and <name name-style="western"><surname>de Vink</surname> <given-names>EP</given-names></name>. <article-title>A Formalization of Anonymity and Onion Routing</article-title>. <source>European Symposium on Research in Computer Security—ESORICS 2004, Lecture Notes in Computer Science</source> <volume>Volume 3193</volume>, <year>2004</year>, pp. <fpage>109</fpage>–<lpage>124</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/978-3-540-30108-0_7" xlink:type="simple">10.1007/978-3-540-30108-0_7</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref023">
+<label>23</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Catalano</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Raimondo</surname> <given-names>MD</given-names></name>, <name name-style="western"><surname>Fiore</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Gennaro</surname> <given-names>R</given-names></name> and <name name-style="western"><surname>Puglisi</surname> <given-names>O</given-names></name>. <article-title>Fully Non-interactive Onion Routing with Forward-Secrecy</article-title>. <source>Applied Cryptography and Network Security—ACNS 2011, Lecture Notes in Computer Science</source> <volume>Volume 6715</volume>, <year>2011</year>, pp. <fpage>255</fpage>–<lpage>273</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0121226.ref024">
+<label>24</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Nishant</surname> <given-names>D</given-names></name> and <name name-style="western"><surname>Devesh</surname> <given-names>J</given-names></name>. <article-title>AB-OR: Improving the Efficiency in Onion Routing Using Attribute Based Cryptography</article-title>. <source>Computer Networks &amp; Communications—NetCom 2013, Lecture Notes in Electrical Engineering</source> <volume>Volume 131</volume>, <year>2013</year>, pp. <fpage>425</fpage>–<lpage>432</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0121226.ref025">
+<label>25</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Boneh</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Lynn</surname> <given-names>B</given-names></name> and <name name-style="western"><surname>Shacham</surname> <given-names>H</given-names></name>. <article-title>Short Signatures from the Weil Pairing</article-title>. <source>Journal of Cryptology</source>, <year>2004</year>, <volume>17</volume>(<issue>4</issue>): <fpage>297</fpage>–<lpage>319</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00145-004-0314-9" xlink:type="simple">10.1007/s00145-004-0314-9</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref026">
+<label>26</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Okamoto</surname> <given-names>T</given-names></name> and <name name-style="western"><surname>Pointcheval</surname> <given-names>D</given-names></name>. <article-title>REACT: Rapid Enhanced-Security Asymmetric Cryptosystem Transform</article-title>. <source>Topics in Cryptology—CT-RSA 2001, Lecture Notes in Computer Science</source> <volume>Volume 2020</volume>, <year>2001</year>, pp. <fpage>159</fpage>–<lpage>174</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/3-540-45353-9_13" xlink:type="simple">10.1007/3-540-45353-9_13</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref027">
+<label>27</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Akinyele</surname> <given-names>JA</given-names></name>, <name name-style="western"><surname>Garman</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Miers</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Pagano</surname> <given-names>MW</given-names></name>, <name name-style="western"><surname>Rushanan</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Green</surname> <given-names>M</given-names></name>, <etal>et al</etal>. <article-title>Charm: a Framework for Rapidly Prototyping Cryptosystems</article-title>. <source>Journal of Cryptographic Engineering</source>, <year>2013</year>, <volume>3</volume>(<issue>2</issue>): <fpage>111</fpage>–<lpage>128</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s13389-013-0057-3" xlink:type="simple">10.1007/s13389-013-0057-3</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0121226.ref028">
+<label>28</label>
+<mixed-citation xlink:type="simple" publication-type="other">Lynn B. The Pairing-Based Cryptography Library. 2014. Available: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://crypto.stanford.edu/pbc/">http://crypto.stanford.edu/pbc/</ext-link>.</mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-12-15907</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0046041</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Clinical immunology</subject>
+            <subj-group>
+              <subject>Immune response</subject>
+              <subject>Immunologic techniques</subject>
+              <subject>Immunopathology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Diagnostic medicine</subject>
+            <subj-group>
+              <subject>Test evaluation</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Infectious diseases</subject>
+            <subj-group>
+              <subject>Bacterial diseases</subject>
+              <subj-group>
+                <subject>Mycobacterium</subject>
+                <subject>Tuberculosis</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Pediatrics</subject>
+            <subj-group>
+              <subject>Pediatric pulmonology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Immunology</subject>
+          <subject>Infectious Diseases</subject>
+          <subject>Pediatrics and Child Health</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Potential Role of <italic>M. tuberculosis</italic> Specific IFN-γ and IL-2 ELISPOT Assays in Discriminating Children with Active or Latent Tuberculosis</article-title><alt-title alt-title-type="running-head">ELISPOT in Children at Risk for Tuberculosis</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Chiappini</surname>
+            <given-names>Elena</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Della Bella</surname>
+            <given-names>Chiara</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Bonsignori</surname>
+            <given-names>Francesca</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Sollai</surname>
+            <given-names>Sara</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Amedei</surname>
+            <given-names>Amedeo</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Galli</surname>
+            <given-names>Luisa</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Niccolai</surname>
+            <given-names>Elena</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" deceased="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Del Prete</surname>
+            <given-names>Gianfranco</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Singh</surname>
+            <given-names>Mahavir</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>D'Elios</surname>
+            <given-names>Mario M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>de Martino</surname>
+            <given-names>Maurizio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1">
+        <label>1</label>
+        <addr-line>Anna Meyer University Hospital, Department of Science for Woman and Child Health, University of Florence, Florence, Italy</addr-line>
+      </aff><aff id="aff2">
+        <label>2</label>
+        <addr-line>Department of Internal Medicine, University of Florence, Florence, Italy</addr-line>
+      </aff><aff id="aff3">
+        <label>3</label>
+        <addr-line>Lionex GmbH, Braunschweig, Germany</addr-line>
+      </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Cardona</surname>
+            <given-names>Pere-Joan</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">
+        <addr-line>Fundació Institut d'Investigació en Ciències de la Salut Germans Trias i Pujol. Universitat Autònoma de Barcelona. CIBERES, Spain</addr-line>
+      </aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">echiappini@unifi.it</email></corresp>
+        <fn fn-type="conflict">
+          <p>MS is the owner and director of commercial company Lionex GmbH, Braunschweig, Germany. Lionex has not provided any financial support for the research mentioned in the manuscript. This does not alter the authors' adherence to all the PLOS ONE policies on sharing data and materials. All other authors do not have a commercial or other association that might pose a conflict of interest.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Performed the experiments: MdM CDB MMD AA EN MS. Analyzed the data: EC FB LG. Contributed reagents/materials/analysis tools: MdM CDB MMD. Wrote the paper: EC MMD MdM FB. Performed data collection, analysis and wrote the draft: EC GFDP CDB MdM. Supervised the project: MdM. Performed data collection and analysis: LG FB SS. Commented on and approved the final draft: EC CDB FB SS AA LG EN GFDP MS MMD MdM.</p>
+        </fn>
+      </author-notes><pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>28</day>
+        <month>9</month>
+        <year>2012</year>
+      </pub-date><volume>7</volume><issue>9</issue><elocation-id>e46041</elocation-id><history>
+        <date date-type="received">
+          <day>31</day>
+          <month>5</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>27</day>
+          <month>8</month>
+          <year>2012</year>
+        </date>
+      </history><permissions>
+        
+        <copyright-holder>Chiappini et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions><abstract>
+        <sec>
+          <title>Background</title>
+          <p>Although currently available IGRA have been reported to be promising markers for TB infection, they cannot distinguish active tuberculosis (TB) from latent infection (LTBI).</p>
+        </sec>
+        <sec>
+          <title>Objective</title>
+          <p>Children with LTBI, active TB disease or uninfected were prospectively evaluated by an in-house ELISPOT assay in order to investigate possible immunological markers for a differential diagnosis between LTBI and active TB.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>Children at risk for TB infection prospectively enrolled in our infectious disease unit were evaluated by in-house IFN-γ and IL-2 based ELISPOT assays using a panel of <italic>Mycobacterium tuberculosis</italic> antigens.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Twenty-nine children were classified as uninfected, 21 as LTBI and 25 as active TB cases (including 5 definite and 20 probable cases). Significantly higher IFN-γ ELISPOT responses were observed in infected <italic>vs.</italic> uninfected children for ESAT-6 (p&lt;0.0001), CFP-10 (p&lt;0.0001), TB 10.3 (p = 0.003), and AlaDH (p = 0.001), while differences were not significant considering Ag85B (p = 0.063), PstS1 (p = 0.512), and HspX (16 kDa) (p = 0.139). IL-2 ELISPOT assay responses were different for ESAT-6 (p&lt;0.0001), CFP-10 (p&lt;0.0001), TB 10.3 (p&lt;0.0001), HspX (16 kDa) (p&lt;0.0001), PstS1 (p&lt;0.0001) and AlaDH (p = 0.001); but not for Ag85B (p = 0.063). Comparing results between children with LTBI and those with TB disease differences were significant for IFN-γ ELISPOT only for AlaDH antigen (p = 0.021) and for IL-2 ELISPOT assay for AlaDH (p&lt;0.0001) and TB 10.3 antigen (p = 0.043). ROC analyses demonstrated sensitivity of 100% and specificity of 81% of AlaDH-IL-2 ELISPOT assay in discriminating between latent and active TB using a cut off of 12.5 SCF per million PBMCs.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>Our data suggest that IL-2 based ELISPOT with AlaDH antigen may be of help in discriminating children with active from those with latent TB.</p>
+        </sec>
+      </abstract><funding-group>
+        <funding-statement>Financial support was given in part by Italian Health Ministry, Young Research Prize, 2007, and by European Union FP7 NOPERSIST research grants. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group><counts>
+        <page-count count="6"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Substantial advances have been recently achieved in the immunological diagnosis of <italic>Mycobacterium tuberculosis</italic> infection <xref ref-type="bibr" rid="pone.0046041-Machingaidze1">[1]</xref>. Three <italic>Mycobacterium tuberculosis</italic> specific interferon-γ (INF-γ) release assays (IGRAs) are now commercially available. With respect of tuberculin skin test (TST), IGRAs have a number of advantages: they are minimally influenced by previous bacille Calmette-Guérin (BCG) vaccination or infection by non-tuberculosis mycobacteria, do not cause booster effect, do not necessitate of a double access to health care facility, and interpretation of results is not operator-dependent <xref ref-type="bibr" rid="pone.0046041-Chiappini1">[2]</xref>. In adults IGRAs have been reported to be more specific and at least as sensitive as TST <xref ref-type="bibr" rid="pone.0046041-Pai1">[3]</xref>, and are currently included in diagnostic algorithms in adult guidelines <xref ref-type="bibr" rid="pone.0046041-Mazurek1">[4]</xref>. However, reported IGRAs sensitivity and specificity largely vary among studies in paediatric populations and caution is recommended regarding their use in children <xref ref-type="bibr" rid="pone.0046041-Machingaidze1">[1]</xref>, <xref ref-type="bibr" rid="pone.0046041-Sun1">[5]</xref>, <xref ref-type="bibr" rid="pone.0046041-Mandalakas1">[6]</xref>, <xref ref-type="bibr" rid="pone.0046041-American1">[7]</xref>. Moreover, IGRAs do not distinguish LTBI from active tuberculosis (TB) patients <xref ref-type="bibr" rid="pone.0046041-Amanatidou1">[8]</xref>. This issue is fundamental for paediatricians since a definite diagnosis of active TB is rare in children. Paediatric TB disease is typically paucibacillary and most TB diagnoses are “probable “diseases, based on TST/IGRA results, clinical symptoms and signs, radiological findings, epidemiological data, and response to antitubercular therapy <xref ref-type="bibr" rid="pone.0046041-Machingaidze1">[1]</xref>, <xref ref-type="bibr" rid="pone.0046041-Sun1">[5]</xref>–<xref ref-type="bibr" rid="pone.0046041-Amanatidou1">[8]</xref>. Therefore a test able to distinguish accurately LTBI from active TB would be valuable. IGRAs based on cytokines other than IFN- <bold>γ</bold> or exploring immune response to other mycobacterial antigens besides those included in the commercially available IGRAs are currently under investigations <xref ref-type="bibr" rid="pone.0046041-Amanatidou1">[8]</xref>.</p>
+      <p>Previous observations suggest a possible role of IL-2- based ELISPOT assay in addition to the IFN-gamma-based assay in discriminating active from latent TB, as only cells from individuals with LTBI and not those from individuals with active TB has been found to secrete IL-2 after specific stimulation <xref ref-type="bibr" rid="pone.0046041-Biselli1">[9]</xref>. These results probably reflect the increased number of IL-2 secreting and IL-2/IFN-gamma secreting central memory T cells and the reduced number of IFN-gamma effector T-cells in LTBI patients, associated with the low bacterial replication and low antigen load <xref ref-type="bibr" rid="pone.0046041-Millington1">[10]</xref>. In the present study we prospectively evaluated the performances of in-house IFN-γ and IL-2 based ELISPOT assays by the use of a panel of <italic>Mycobacterium tuberculosis</italic> antigens in children consecutively referred to one paediatric infectious disease unit and at risk for TB infection with the aim of investigating possible immunological markers for a differential diagnosis between LTBI and active TB.</p>
+    </sec>
+    <sec id="s2" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s2a">
+        <title>Study subjects</title>
+        <p>Children at risk for TB infection consecutively referred to our Infectious Disease Unit were prospectively enrolled between 1 st January 2009 and 31<sup>st</sup> April 2010. Study children were those with clinical suspicion of TB disease and/or in close contact with recently diagnosed cases of contagious TB disease and/or internationally adopted or recently immigrated children coming from countries with a high-prevalence of TB. Children with congenital or acquired immunodeficiency disorders (based on their medical history, clinical examination and/or laboratory tests) were excluded from the study. This study was approved by the ethical committee of the Anna Meyer University Hospital, Florence, Italy. All the parents/tutors of the study children gave written consent to the study.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Tuberculin skin test (TST)</title>
+        <p>TST was administered by trained nurses dedicated to our Infectious Disease Unit and was performed according to the Mantoux method by injecting intradermally 5 tuberculin units (in 0.1 mL) of purified protein derivative (Statens Serum Institute, Copenhagen, Denmark) into the volar surface of the forearm. The transversed skin induration was recorded (in mm) after 48–72 hours directly by a pediatrician of the Infectious Disease Unit. Following the American Academy of Pediatrics guidelines <xref ref-type="bibr" rid="pone.0046041-American1">[7]</xref>, a positive TST was defined as an induration size ≥5 mm for children in close contact with known or suspected contagious case of TB disease or for children suspected to have TB disease (based on clinical evidence and/or chest radiograph) and ≥10 mm for children born in countries with a high prevalence of TB and recently immigrated.</p>
+      </sec>
+      <sec id="s2c">
+        <title>QuantiFERON Gold In tube test (QFT-G-IT)</title>
+        <p>The QFT-IT assay (Cellestis Inc., Australia) was performed according to the manufacturer's instructions as described previously. After subtracting the value from the negative control, the result was positive if, the antigen-dependent response was ≥0.35 IU, negative if the mitogen–induced response was ≥0.5 IU/mL and the antigen-dependent response was &lt;0.35 IU/mL, and indeterminate if both mitogen-induced and antigen-dependent responses were below cut-off or mitogen-induced response &gt;8 IU/mL.</p>
+      </sec>
+      <sec id="s2d">
+        <title>ELISPOT Assay</title>
+        <p>In-house ELIPOT assay detecting IFN-gamma and IL-2 responses were performed using recombinant <italic>M. tuberculosis</italic> antigens (ESAT-6, CFP-10, TB 10.3, AlaDH, Ag85B, PstS1, HspX (16 kDa) protein), provided by Lionex Diagnostics &amp; Therapeutics GmbH (Braunschweig, Germany), as previously reported <xref ref-type="bibr" rid="pone.0046041-Millington1">[10]</xref>, <xref ref-type="bibr" rid="pone.0046041-Vilaplana1">[11]</xref>. Characteristics of the used antigens are summarized in <xref ref-type="table" rid="pone-0046041-t001">Table 1</xref>. Briefly, peripheral blood mononuclear cells (PBMCs; 1×10<sup>6</sup> cells/mL) of each patients were stimulated with <italic>M. tuberculosis</italic> recombinant antigen (5 µg/mL), and seeded in triplicate in 96-well plates coated with anti–IFN-γ or anti–IL-2 antibody. Cells stimulated with medium alone served as negative controls. Cells stimulated with phytohemoagglutinin (PHA) served as positive controls. IFN-γ and IL-2 ELISPOT microplates were then incubated at 37°C in 5% CO<sub>2</sub> for 24 hours. At the end of the culture period, plates were washed and incubated for 3 hours with the appropriate biotinylated anti–IFN-γ or anti–IL-2 monoclonal antibody. Streptavidin-HRP complex was then added for 2 hours, followed by the substrate solution. Spot forming colonies (SFCs) were counted using an automated ELISPOT reader (Autoimmune Diagnostika GmbH) and results expressed as number of SFCs per million PBMCs, as described <xref ref-type="bibr" rid="pone.0046041-Benagiano1">[12]</xref>. Laboratory workers were blind to the clinical status of participants.</p>
+        <table-wrap id="pone-0046041-t001" orientation="portrait" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0046041.t001</object-id><label>Table 1</label><caption>
+            <title>Characteristics of the used antigens: all the used antigens were recombinant proteins (from Hoghart et al. <xref ref-type="bibr" rid="pone.0046041-Hogarth1">[14]</xref>, modified).</title>
+          </caption><alternatives>
+            <graphic id="pone-0046041-t001-1" mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pone.0046041.t001" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Protein</td>
+                  <td align="left" colspan="1" rowspan="1">Gene Bank Accession number</td>
+                  <td align="left" colspan="1" rowspan="1">Remarks</td>
+                  <td align="left" colspan="1" rowspan="1">Putative function</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">ESAT-6</td>
+                  <td align="left" colspan="1" rowspan="1">Rv3875</td>
+                  <td align="left" colspan="1" rowspan="1">6 kDa early secreted antigen</td>
+                  <td align="left" colspan="1" rowspan="1">Unknown</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">CFP-10</td>
+                  <td align="left" colspan="1" rowspan="1">Rv3874</td>
+                  <td align="left" colspan="1" rowspan="1">10 kDa culture filtrate antigen of <italic>M. tuberculosis</italic></td>
+                  <td align="left" colspan="1" rowspan="1">Unknown</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Ag85B</td>
+                  <td align="left" colspan="1" rowspan="1">Rv1886c</td>
+                  <td align="left" colspan="1" rowspan="1">Secreted antigen, member of the immunodominant complex Antigen 85</td>
+                  <td align="left" colspan="1" rowspan="1">Cell wall synthesis, fibronectin binding</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">PstS1 (38 kDa)</td>
+                  <td align="left" colspan="1" rowspan="1">Rv0934</td>
+                  <td align="left" colspan="1" rowspan="1">Periplasmic phosphate binding protein</td>
+                  <td align="left" colspan="1" rowspan="1">Protein mediated phosphate transport</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">TB10.3</td>
+                  <td align="left" colspan="1" rowspan="1">Rv3019c</td>
+                  <td align="left" colspan="1" rowspan="1">Secreted ESAT6-like protein</td>
+                  <td align="left" colspan="1" rowspan="1">Unknown</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">HspX (16 kDa;Acr)</td>
+                  <td align="left" colspan="1" rowspan="1">Rv2031c</td>
+                  <td align="left" colspan="1" rowspan="1">Heat shock protein. It has been identified as a major protein expressed in dormant state</td>
+                  <td align="left" colspan="1" rowspan="1">Stress protein induced by anoxia. It has a role in manteinance of long-term viability during latent asymptomatic infection and a proposed role in replication during initial infection</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">AlaDH</td>
+                  <td align="left" colspan="1" rowspan="1">Rv2780</td>
+                  <td align="left" colspan="1" rowspan="1">Secreted L-alanine deydrogenase of <italic>M. tuberculosis</italic></td>
+                  <td align="left" colspan="1" rowspan="1">May play a role in cell wall synthesis (as L-alanine in an important constituent of the peptidoglycan layer) <italic>;</italic> crystal structure varies in the phase of active disease with respect to the state of latent infection in “open” and “closed” ternary forms</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives></table-wrap>
+      </sec>
+      <sec id="s2e">
+        <title>Study design</title>
+        <p>Information regarding demographic data, prior TB exposure, and past medical history was obtained from each child's parents or tutors or from medical documentation and recorded into the study database. Children were considered vaccinated with BCG whether a clear documentation was available and/or a scar was present. All children underwent clinical evaluation, TST and venipuncture for IGRAs (QFT-G-IT and in-house ELISPOT assay) and results entered into a databse. Blood was taken during the first examination after the parent's or tutor's informed consent had been obtained and before starting any anti-tubercular treatment. Chest radiography was performed in all symptomatic children, in those with a positive TST, and in all contacts aged less than 5 years <xref ref-type="bibr" rid="pone.0046041-American1">[7]</xref>. Children with suspected pulmonary TB had three sputum or early morning gastric aspirates samples collected for <italic>Mycobacterium tuberculosis</italic> detection (by means of microscopy, polymerase chain reaction and culture) <xref ref-type="bibr" rid="pone.0046041-American1">[7]</xref>. Chest computed tomography (CT) scan was performed in selected cases at the paediatrician's discretion. No suspected or ascertained extra-pulmonary TB cases presented at the Infectious Disease Unit during the study period.</p>
+        <p>The study received approval from the Ethical Committee of Anna Meyer Children University Hospital.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Definition of study groups</title>
+        <p>Study children were classified as not-infected, LTBI cases, or active TB disease cases, following the American Academy Guidelines definition <xref ref-type="bibr" rid="pone.0046041-American1">[7]</xref>. In the event of discordant TST/QFT-G-IT results, children were assigned to the corresponding group on the bases on the TST result <xref ref-type="bibr" rid="pone.0046041-American1">[7]</xref>. In particular, asymptomatic children with negative TST were defined as uninfected. LTBI diagnosis was assigned to any child with a positive TST and no clinical or radiographic evidence of active TB <xref ref-type="bibr" rid="pone.0046041-American1">[7]</xref>. Cases of active TB were defined according to two categories: 1) definite TB, children with <italic>Mycobacterium tuberculosis</italic> cultured or detected by microscopy or molecular methods from sputum or gastric aspirate culture; 2) probable TB: absence of microbiological confirmation but presence of all of the following criteria: (A) clinical symptoms and signs of active TB, (B) abnormal radiography and/or CT scan consistent with lung TB, (C) response to TB therapy plus, (D) either a history of TB contact or travel to a TB-endemic country within the last 24 months <xref ref-type="bibr" rid="pone.0046041-Kampmann1">[13]</xref>. No suspected or ascertained extra-pulmonary TB cases presented at the Infectious Disease Unit during the study period.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Statistical Analysis</title>
+      <p>Categorical data were compared using the Chi-squared test (or Fisher's exact test, when expected cell sizes were smaller than five). The Wilcoxon-Mann-Whitney test was used for continuous measurements to test relationships in unpaired analysis, when assumed that the dependent variable is a not normally distributed interval variable. Test concordance was assessed by Cohen's κ-statistics with agreement considered slight'for k≤0.2, ‘fair’ for 0.2&lt;k≤0.4, ‘moderate’for 0.4&lt;k≤0.6, ‘substantial’for 0.6&lt;k≤0.8 and ‘optimal’for 0.8&lt;k≤1.0. Receiver operating characteristic (ROC) curve analysis was conducted to determine the best IL-2 and IFN-γ ELISPOT result thresholds in discriminating between children with active or latent TB, relatively to a specific <italic>M. tuberculosis</italic> antigen, and correspondent sensitivity and specificity were reported. The area under the ROC curve (AUC) and 95% confidence interval (CI) were also calculated. <xref ref-type="sec" rid="s3">Statistical analysis</xref> was performed using the statistical software SPSS for Windows, version 14.0. <italic>P</italic>&lt;0.05 was considered statistically significant.</p>
+    </sec>
+    <sec id="s4">
+      <title>Results</title>
+      <p>Seventy five children were included in the study. Twenty-none children were classified as uninfected, 21 as LTBI and 25 as active TB cases (including 5 definite and 20 probable cases). Characteristics of the study children are summarized in <xref ref-type="table" rid="pone-0046041-t002">Table 2</xref>.</p>
+      <table-wrap id="pone-0046041-t002" orientation="portrait" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0046041.t002</object-id><label>Table 2</label><caption>
+          <title>Characteristic of the 75 study children, according to their final diagnosis.</title>
+        </caption><alternatives>
+          <graphic id="pone-0046041-t002-2" mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pone.0046041.t002" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Uninfected</td>
+                <td align="left" colspan="1" rowspan="1">Latent TB</td>
+                <td align="left" colspan="1" rowspan="1">Probable TB disease</td>
+                <td align="left" colspan="1" rowspan="1">Definite TB disease</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">n = 29</td>
+                <td align="left" colspan="1" rowspan="1">n = 21</td>
+                <td align="left" colspan="1" rowspan="1">n = 20</td>
+                <td align="left" colspan="1" rowspan="1">n = 5</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">n (%)</td>
+                <td align="left" colspan="1" rowspan="1">n (%)</td>
+                <td align="left" colspan="1" rowspan="1">n (%)</td>
+                <td align="left" colspan="1" rowspan="1">n (%)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"><bold>Age</bold>, months (median and IQR)</td>
+                <td align="left" colspan="1" rowspan="1">77 (28–101)</td>
+                <td align="left" colspan="1" rowspan="1">86 (61–101)</td>
+                <td align="left" colspan="1" rowspan="1">52(27–82)</td>
+                <td align="left" colspan="1" rowspan="1">47 (8–97)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>Immigrated</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1">21 (72.4)</td>
+                <td align="left" colspan="1" rowspan="1">15 (71.4)</td>
+                <td align="left" colspan="1" rowspan="1">18 (90)</td>
+                <td align="left" colspan="1" rowspan="1">4 (80.0)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>BCG vaccinated</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1">5 (17.2)</td>
+                <td align="left" colspan="1" rowspan="1">7 (33.3)</td>
+                <td align="left" colspan="1" rowspan="1">1 (5.0)</td>
+                <td align="left" colspan="1" rowspan="1">0 (0.0)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"><bold>TST</bold> (mm)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">&lt;5</td>
+                <td align="left" colspan="1" rowspan="1">28 (96.5)</td>
+                <td align="left" colspan="1" rowspan="1">0 (0.0)</td>
+                <td align="left" colspan="1" rowspan="1">0 (0.0)</td>
+                <td align="left" colspan="1" rowspan="1">1 (20.0)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">≥5 and &lt;10</td>
+                <td align="left" colspan="1" rowspan="1">1 (3.5)</td>
+                <td align="left" colspan="1" rowspan="1">1 (4.8)</td>
+                <td align="left" colspan="1" rowspan="1">2 (10.0)</td>
+                <td align="left" colspan="1" rowspan="1">0 (0.0)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">≥10 and &lt;15</td>
+                <td align="left" colspan="1" rowspan="1">0 (0.0)</td>
+                <td align="left" colspan="1" rowspan="1">5 (23.1)</td>
+                <td align="left" colspan="1" rowspan="1">1 (5.0)</td>
+                <td align="left" colspan="1" rowspan="1">1 (20.0)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">≥15</td>
+                <td align="left" colspan="1" rowspan="1">0 (0.0)</td>
+                <td align="left" colspan="1" rowspan="1">15 (71.5)</td>
+                <td align="left" colspan="1" rowspan="1">17 (85.0)</td>
+                <td align="left" colspan="1" rowspan="1">3 (60.0)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>QFT-G-IT result</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">negative</td>
+                <td align="left" colspan="1" rowspan="1">29 (100.0)</td>
+                <td align="left" colspan="1" rowspan="1">5 (23.1)</td>
+                <td align="left" colspan="1" rowspan="1">3 (15.0)</td>
+                <td align="left" colspan="1" rowspan="1">5 (100.0)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">positive</td>
+                <td align="left" colspan="1" rowspan="1">0 (0.0)</td>
+                <td align="left" colspan="1" rowspan="1">15 (71.5)</td>
+                <td align="left" colspan="1" rowspan="1">17 (85.0)</td>
+                <td align="left" colspan="1" rowspan="1">0 (0.0)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">indeterminate</td>
+                <td align="left" colspan="1" rowspan="1">0 (0.0)</td>
+                <td align="left" colspan="1" rowspan="1">1 (4.8)</td>
+                <td align="left" colspan="1" rowspan="1">0 (0.0)</td>
+                <td align="left" colspan="1" rowspan="1">0 (0.0)</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives><table-wrap-foot>
+          <fn id="nt101">
+            <p>Note. TB: tuberculosis; BCG: Bacille Calmette-Guérin vaccine; TST = tuberculin skin test; QFT-G-IT: QuantiFERON-Gold In Tube test.</p>
+          </fn>
+        </table-wrap-foot></table-wrap>
+      <p>Discordant TST/QFT-G-IT result was obtained in four children (one child with definite TB, positive QFT-G-IT and negative TST and three children with probable TB, negative QFT-G-IT and positive TST). The overall agreement between QFT-G-IT and the TST was substantial with a <italic>k</italic> value of 0.679.</p>
+      <sec id="s4a">
+        <title>IFN-γ and IL-2 ELISpot results</title>
+        <p>ELISPOT assay results are summarized in <xref ref-type="table" rid="pone-0046041-t003">Table 3</xref>. Significantly higher median values were evidenced in infected <italic>vs.</italic> uninfected children considering IFN-γ ELISPOT responses to ESAT-6 (p&lt;0.0001), CFP-10 (p&lt;0.0001), TB 10.3 (p = 0.003), and AlaDH (p = 0.001), while differences were not significant considering Ag85B (p = 0.063), PstS1 (p = 0.512), and HspX (16 kDa) protein (p = 0.139). Considering IL-2 ELISPOT results significantly different responses were evidenced for ESAT-6 (p&lt;0.0001), CFP-10 (p&lt;0.0001), TB 10.3 (p&lt;0.0001), HspX (16 kDa) (p&lt;0.0001), PstS1 (p&lt;0.0001) and AlaDH (p = 0.001); but not for Ag85B (p = 0.063). Comparing results between children with LTBI and those with TB disease (probable plus definite disease) differences were significant for IFN-γ ELISPOTt only for AlaDH antigen (p = 0.021) (<xref ref-type="table" rid="pone-0046041-t003">Table 3</xref>). With regard to IL-2 ELISPOT assay, significant differences were observed for AlaDH (p&lt;0.0001) and TB 10.3 antigen (p = 0.043), while no difference was evidenced considering other antigens. ROC analyses demonstrated sensitivity of 100% and specificity of 81%, in discriminating between latent and active TB, considering response to AlaDH by IL-2 ELISPOT assay for a cut off of 12.5 SCF per million PBMCs. For IFN-γ ELISPOT assay the performance was much poorer: for the best threshold of 42.0 SCF per million PBMCs sensitivity was 88% and specificity 56% (<xref ref-type="fig" rid="pone-0046041-g001">Figure 1</xref>).</p>
+        <fig id="pone-0046041-g001" orientation="portrait" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0046041.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>A receiver operator characteristic (ROC) plot is shown, illustrating sensitivity and specificity of AlaDH IFN-γ and IL-2 ELISpot results in discriminating children with latent (n = 21) and overt (n = 25) tuberculosis.</title>
+            <p>Area under the ROC curve was 0.700 (95%IC: 0.547-0.853; p = 0.021 <italic>vs.</italic> the identity - diagonal - line) considering IFN-γ ELISpot and 0,896 (95%IC: 0.785–1.008; p&lt;0.0001 <italic>vs.</italic> the identity - diagonal - line) for IL-2 ELISPOT.</p>
+          </caption>
+          <graphic mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pone.0046041.g001" xlink:type="simple"/>
+        </fig>
+        <table-wrap id="pone-0046041-t003" orientation="portrait" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0046041.t003</object-id><label>Table 3</label><caption>
+            <title>ELISPOT assay results from 75 study children according to final diagnosis.</title>
+          </caption><alternatives>
+            <graphic id="pone-0046041-t003-3" mimetype="image" orientation="portrait" position="float" xlink:href="info:doi/10.1371/journal.pone.0046041.t003" xlink:type="simple"/>
+            <table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Uninfected</td>
+                  <td align="left" colspan="1" rowspan="1">Latent TB</td>
+                  <td align="left" colspan="1" rowspan="1">Probable TB disease</td>
+                  <td align="left" colspan="1" rowspan="1">Definite TB disease</td>
+                  <td align="left" colspan="1" rowspan="1">P</td>
+                  <td align="left" colspan="1" rowspan="1">P</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">(n = 29)</td>
+                  <td align="left" colspan="1" rowspan="1">(n = 21)</td>
+                  <td align="left" colspan="1" rowspan="1">n = 20</td>
+                  <td align="left" colspan="1" rowspan="1">n = 5</td>
+                  <td align="left" colspan="1" rowspan="1">Uninfected vs. infected children</td>
+                  <td align="left" colspan="1" rowspan="1">Latent vs. overt disease</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">
+                    <bold>IFN-γ ELISpot result</bold>
+                    <xref ref-type="table-fn" rid="nt103">*</xref>
+                  </td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- ESAT-6</td>
+                  <td align="left" colspan="1" rowspan="1">35 (1–102)</td>
+                  <td align="left" colspan="1" rowspan="1">320 (157–520)</td>
+                  <td align="left" colspan="1" rowspan="1">292 (170–631)</td>
+                  <td align="left" colspan="1" rowspan="1">330 (190–1575)</td>
+                  <td align="left" colspan="1" rowspan="1">&lt;0.0001</td>
+                  <td align="left" colspan="1" rowspan="1">0.724</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- CFP-10</td>
+                  <td align="left" colspan="1" rowspan="1">40 (1–120)</td>
+                  <td align="left" colspan="1" rowspan="1">305 (130–625)</td>
+                  <td align="left" colspan="1" rowspan="1">280 (76–986)</td>
+                  <td align="left" colspan="1" rowspan="1">875 (200–3532)</td>
+                  <td align="left" colspan="1" rowspan="1">&lt;0.0001</td>
+                  <td align="left" colspan="1" rowspan="1">0.691</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- Ag85B</td>
+                  <td align="left" colspan="1" rowspan="1">65 (12–152)</td>
+                  <td align="left" colspan="1" rowspan="1">150 (47–322)</td>
+                  <td align="left" colspan="1" rowspan="1">107 (46–192)</td>
+                  <td align="left" colspan="1" rowspan="1">90 (27–1517)</td>
+                  <td align="left" colspan="1" rowspan="1">0.063</td>
+                  <td align="left" colspan="1" rowspan="1">0.724</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- TB 10.3</td>
+                  <td align="left" colspan="1" rowspan="1">100 (27–292)</td>
+                  <td align="left" colspan="1" rowspan="1">270 (135–465)</td>
+                  <td align="left" colspan="1" rowspan="1">252 (80–395)</td>
+                  <td align="left" colspan="1" rowspan="1">570 (225–1742)</td>
+                  <td align="left" colspan="1" rowspan="1">0.003</td>
+                  <td align="left" colspan="1" rowspan="1">0.487</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- AlaDH</td>
+                  <td align="left" colspan="1" rowspan="1">35 (12.5–110)</td>
+                  <td align="left" colspan="1" rowspan="1">85 (17–180)</td>
+                  <td align="left" colspan="1" rowspan="1">147 (71–303)</td>
+                  <td align="left" colspan="1" rowspan="1">280 (115–1565)</td>
+                  <td align="left" colspan="1" rowspan="1">&lt;0.001</td>
+                  <td align="left" colspan="1" rowspan="1">0.021</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- PstS1</td>
+                  <td align="left" colspan="1" rowspan="1">40 (1–122)</td>
+                  <td align="left" colspan="1" rowspan="1">50 (1–197)</td>
+                  <td align="left" colspan="1" rowspan="1">60 (11–241)</td>
+                  <td align="left" colspan="1" rowspan="1">95 (18–982)</td>
+                  <td align="left" colspan="1" rowspan="1">0.0512</td>
+                  <td align="left" colspan="1" rowspan="1">0.504</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- HspX - 16KD</td>
+                  <td align="left" colspan="1" rowspan="1">10 (1–162)</td>
+                  <td align="left" colspan="1" rowspan="1">85 (1–300)</td>
+                  <td align="left" colspan="1" rowspan="1">42 (1–307)</td>
+                  <td align="left" colspan="1" rowspan="1">40 (13–1345)</td>
+                  <td align="left" colspan="1" rowspan="1">0.139</td>
+                  <td align="left" colspan="1" rowspan="1">0.720</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">
+                    <bold>IL-2 ELISpot result</bold>
+                    <xref ref-type="table-fn" rid="nt103">*</xref>
+                  </td>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- ESAT-6</td>
+                  <td align="left" colspan="1" rowspan="1">10 (1–35)</td>
+                  <td align="left" colspan="1" rowspan="1">220 (35–410)</td>
+                  <td align="left" colspan="1" rowspan="1">110 (60–402)</td>
+                  <td align="left" colspan="1" rowspan="1">420 (155–1365)</td>
+                  <td align="left" colspan="1" rowspan="1">&lt;0.0001</td>
+                  <td align="left" colspan="1" rowspan="1">0.791</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- CFP-10</td>
+                  <td align="left" colspan="1" rowspan="1">10 (1–20)</td>
+                  <td align="left" colspan="1" rowspan="1">210 (85–710)</td>
+                  <td align="left" colspan="1" rowspan="1">160 (100–637)</td>
+                  <td align="left" colspan="1" rowspan="1">510 (355–1735)</td>
+                  <td align="left" colspan="1" rowspan="1">&lt;0.0001</td>
+                  <td align="left" colspan="1" rowspan="1">0.574</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- Ag85B</td>
+                  <td align="left" colspan="1" rowspan="1">20 (10–75)</td>
+                  <td align="left" colspan="1" rowspan="1">40 (10–140)</td>
+                  <td align="left" colspan="1" rowspan="1">45 (17–195)</td>
+                  <td align="left" colspan="1" rowspan="1">200 (135–1485)</td>
+                  <td align="left" colspan="1" rowspan="1">0.063</td>
+                  <td align="left" colspan="1" rowspan="1">0.188</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- TB 10.3</td>
+                  <td align="left" colspan="1" rowspan="1">1 (1–30)</td>
+                  <td align="left" colspan="1" rowspan="1">50 (12.5–210)</td>
+                  <td align="left" colspan="1" rowspan="1">130 (52–402)</td>
+                  <td align="left" colspan="1" rowspan="1">390 (220–1695)</td>
+                  <td align="left" colspan="1" rowspan="1">&lt;0.0001</td>
+                  <td align="left" colspan="1" rowspan="1">0.043</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- AlaDH</td>
+                  <td align="left" colspan="1" rowspan="1">1 (1–20)</td>
+                  <td align="left" colspan="1" rowspan="1">1 (1–10)</td>
+                  <td align="left" colspan="1" rowspan="1">75 (36–130)</td>
+                  <td align="left" colspan="1" rowspan="1">340 (110–1365)</td>
+                  <td align="left" colspan="1" rowspan="1">0.001</td>
+                  <td align="left" colspan="1" rowspan="1">&lt;0.0001</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- PstS1</td>
+                  <td align="left" colspan="1" rowspan="1">10 (1–50)</td>
+                  <td align="left" colspan="1" rowspan="1">20 (1–75)</td>
+                  <td align="left" colspan="1" rowspan="1">20 (10–95)</td>
+                  <td align="left" colspan="1" rowspan="1">10 (5–155)</td>
+                  <td align="left" colspan="1" rowspan="1">&lt;0.0001</td>
+                  <td align="left" colspan="1" rowspan="1">0.755</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">- HspX- 16 KD</td>
+                  <td align="left" colspan="1" rowspan="1">1 (1–10)</td>
+                  <td align="left" colspan="1" rowspan="1">60 (20–280)</td>
+                  <td align="left" colspan="1" rowspan="1">45 (1–155)</td>
+                  <td align="left" colspan="1" rowspan="1">240 (45–920)</td>
+                  <td align="left" colspan="1" rowspan="1">&lt;0.0001</td>
+                  <td align="left" colspan="1" rowspan="1">0.626</td>
+                </tr>
+              </tbody>
+            </table>
+          </alternatives><table-wrap-foot>
+            <fn id="nt102">
+              <p>Note.</p>
+            </fn>
+            <fn id="nt103">
+              <label>*</label>
+              <p><xref ref-type="sec" rid="s4">Results</xref> are expressed as median and interquartile range of spot forming colonies per million PBMCs; TB:tuberculosis.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Discussion</title>
+      <p>In the present study we evaluated the performances of IFN-γ and IL-2 based ELISPOT assays in children at risk for TB using an array of <italic>M. tuberculosis</italic> specific antigens. We observed significantly different responses between infected and not-infected children with respect to antigens included in the commercially available IGRAs (ESAT-6 and CFP-10), as well as to other mycobacterial antigens (TB 10.3, AlaDH for IFN-gamma and IL-2; HspX and PstS1 only for IL-2 based ELISPOT), but not for Ag86B. This latter result was in contrast to what we expected, considering that Ag85B has been described to elicit a robust immune response in TB patients and it is a candidate protein to be included in new antitubercular vaccines <xref ref-type="bibr" rid="pone.0046041-Hogarth1">[14]</xref>. Indeed Ag85B is one of the most dominant protein antigens secreted from all mycobacteria species, showing extensive cross-reactivity between different species <xref ref-type="bibr" rid="pone.0046041-Takamura1">[15]</xref>. Thus, exposure to enviromental mycobacteria might sustain an immune response to this antigen in children not-infected by <italic>M. tuberculosis</italic>.</p>
+      <p>No difference in responses to ESAT-6, CFP-10 and other mycobacterial antigens (Ag85B, PstS1, HpsX) was found between children with latent and active tuberculosis, while significant differences were found in responses to TB 10.3 and AlaDH antigens. TB 10.3 is a member of the large 23 protein ESAT-6 gene family and contains several unique T-cell epitopes strongly recognised by TB patients <xref ref-type="bibr" rid="pone.0046041-Kampmann1">[13]</xref>. The recognition of a number of unique epitopes on TB10.3 suggests that this protein is highly expressed by the bacteria during active TB infection, potentially explaining our finding <xref ref-type="bibr" rid="pone.0046041-Skjt1">[16]</xref>. To our knowledge this is the first report on a potential role of TB 10.3 to differentiate between LTBI and active TB, deserving further investigations.</p>
+      <p>Considering AlaDH antigen, the differences observed in children with LTBI and active TB may have a biological explanation. Differently from the other antigens included in our study, AlaDH is the only whose conformation is modified in latent with respect to active TB <xref ref-type="bibr" rid="pone.0046041-Agren1">[17]</xref>. It has been demonstrated that AlaDH shows altered expression profile upon adaptation to dormancy: a condition that may be related to the state of latent infection. Though an obligatory aerobic organism, <italic>M. tuberculosis</italic> is able to adapt to and survive in the hypoxic and hostile environment of host macrophages undergoing a dramatic change in gene transcription during a latent infection <xref ref-type="bibr" rid="pone.0046041-Amanatidou1">[8]</xref>. AlaDH is an enzyme involved in nitrogen metabolism and has been implicated in the adaptation of mycobacteria to the anaerobic dormant state. The crystal structure varies in the phase of active disease with respect to the state of latent infection in “open” and “closed” ternary forms, thus explaining a possible different host immune response according to the infectious status <xref ref-type="bibr" rid="pone.0046041-Agren1">[17]</xref>. We observed that different responses between children with LTBI and active TB were more pronounced with the IL-2 based than with the IFN-γ based ELISPOT. ROC analyses demonstrated that, for a cut off of 12,5 SCF per million PBMC, the sensitivity in discriminating children with LTBI and active TB reached 100% while specificity was 81% by the use of IL-2 based ELISpot assay. The performance of the IFN-γ ELISpot assay was poor, especially due to its low specificity. These findings suggest that IL-2 based ELISPOT assay with AlaDH antigen may be of help in discriminating children with active from those with latent TB. The finding that the differences in response to AlaDH were more pronounced considering IL-2 instead of IFN-γ based ELISPOT assays are not clearly explainable. In contrast with our findings, in adults studies, ESAT-6 and CFP-10 IFN-γ ELISPOT assays were more likely to be positive in recently infected patients, while IL-2 a positive ELISPOT was related to ancient exposure, since this test better explores the central memory T-cell response <xref ref-type="bibr" rid="pone.0046041-Biselli1">[9]</xref>, <xref ref-type="bibr" rid="pone.0046041-Krummel1">[18]</xref>. A higher production of IL-2 in latently infected people after 72 h incubation has been documented. Thus a prolonged incubation period seems to be essential to reveal increased number of central memory T-cells in LTBI adults <xref ref-type="bibr" rid="pone.0046041-Biselli1">[9]</xref>. However, it should be remembered that the T<sub>H</sub>1 response may be immature and peculiar in children. In this population IL-2 based IGRAs have been reported to show higher performance than IFN-γ based assays, explaining, at least partially, our results <xref ref-type="bibr" rid="pone.0046041-Mori1">[19]</xref>. Further pediatric studies prolonging the culture up to 3 days could provide further information in children. Further pediatric studies prolonging the culture up to 3 days could provide further information in children. We did not observe any difference between children with active or latent diseases when exploring response to HspX (16 kDa) antigen. This antigen has been depicted as one of the most prominent latency proteins <xref ref-type="bibr" rid="pone.0046041-Demissie1">[20]</xref>, and a strong response to HspX, largely restricted to latently infected individuals, has been previously reported by Demissie and colleagues in adults <xref ref-type="bibr" rid="pone.0046041-Demissie1">[20]</xref>. Discrepancies between our and previous findings at this regard may be due to the limited datasets, or to actual differences in the immune response between adult and paediatric populations.</p>
+      <p>Our study has several limitations. Definition of study groups was based on TST results and not on QFT-G-IT results according to the most recent US guidelines in children <xref ref-type="bibr" rid="pone.0046041-American1">[7]</xref>. However, children could have been classified according to their QFT-G-IT instead of TST results and three of our study children with discordant TST+/QFT-G-IT would have assigned to a different group. We repeated the analyses after excluding these children and results were substantially unchanged. Moreover, similarly to the majority of paediatric studies most of the overt TB cases were probable and not definite diseases and in general our dataset is small. Thus even if intriguing, our findings should be confirmed in larger paediatric populations.</p>
+      <sec id="s5a">
+        <title>Conclusion</title>
+        <p>Our data suggest that IL-2 and IFN-gamma based ELISPOT with AlaDH antigen may be of help in discriminating children with active from those with latent TB.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0046041-Machingaidze1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Machingaidze</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Wiysonge</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Gonzalez-Angulo</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Hatherill</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Moyo</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>The utility of an interferon gamma release assay for diagnosis of latent tuberculosis infection and disease in children: a systematic review and meta-analysis</article-title>. <source>Pediatr Infect Dis J</source> <volume>30</volume>: <fpage>694</fpage>–<lpage>700</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Chiappini1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chiappini</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Fossi</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Bonsignori</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Sollai</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Galli</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Utility of Interferon-γ Release Assay Results to Monitor Anti-Tubercular Treatment in Adults and Children</article-title>. <source>Clin Ther</source> 2012 Apr 16. [Epub ahead of print].</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Pai1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pai</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Zwerling</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Menzies</surname><given-names>D</given-names></name> (<year>2008</year>) <article-title>Systematic review: T-cell-based assays for the diagnosis of latent tuberculosis infection: an update</article-title>. <source>Ann Intern Med</source> <volume>149</volume>: <fpage>177</fpage>–<lpage>84</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Mazurek1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mazurek</surname><given-names>GH</given-names></name>, <name name-style="western"><surname>Jereb</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Vernon</surname><given-names>A</given-names></name>, <name name-style="western"><surname>LoBue</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Goldberg</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>IGRA Expert Committee; Centers for Disease Control and Prevention (CDC).Updated guidelines for using Interferon Gamma Release Assays to detect Mycobacterium tuberculosis infection - United States, 2010</article-title>. <source>MMWR Recomm Rep</source> <volume>59</volume>: <fpage>1</fpage>–<lpage>25</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Sun1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sun</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Xiao</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Miao</surname><given-names>Q</given-names></name>, <name name-style="western"><surname>Feng</surname><given-names>WX</given-names></name>, <name name-style="western"><surname>Wu</surname><given-names>XR</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Interferon gamma release assay in diagnosis of pediatric tuberculosis: a meta-analysis</article-title>. <source>FEMS Immunol Med Microbiol</source> <volume>63</volume>: <fpage>165</fpage>–<lpage>73</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Mandalakas1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mandalakas</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Detjen</surname><given-names>AK</given-names></name>, <name name-style="western"><surname>Hesseling</surname><given-names>AC</given-names></name>, <name name-style="western"><surname>Benedetti</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Menzies</surname><given-names>D</given-names></name> (<year>2011</year>) <article-title>Interferon-gamma release assays and childhood tuberculosis: systematic review and meta-analysis</article-title>. <source>Int J Tuberc Lung Dis</source> <volume>15</volume>: <fpage>1018</fpage>–<lpage>32</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-American1">
+        <label>7</label>
+        <mixed-citation publication-type="other" xlink:type="simple">American Academy of Pediatrics. (2009) [Tuberculosis]. In: Pickering LK, Baker CJ, Kimberlin DW, Long SS, eds. Red Book: 2009 Report of the Committee on Infectious Diseases. 28th ed. Elk Grove Village, IL: American Academy of Pediatrics; 680–701.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Amanatidou1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Amanatidou</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Syridou</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Mavrikou</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Tsolia</surname><given-names>MN</given-names></name> (<year>2012</year>) <article-title>Latent tuberculosis infection in children: diagnostic approaches</article-title>. <source>Eur J Clin Microbiol Infect Dis</source> 2012 Jan 4. [Epub ahead of print].</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Biselli1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Biselli</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Mariotti</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Sargentini</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Sauzullo</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Lastilla</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Detection of interleukin-2 in addition to interferon-gamma discriminates active tuberculosis patients, latently infected individuals, and controls</article-title>. <source>Clin Microbiol Infect</source> <volume>16</volume>: <fpage>1282</fpage>–<lpage>4</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Millington1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Millington</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>Fortune</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Low</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Garces</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Hingley-Wilson</surname><given-names>SM</given-names></name> (<year>2011</year>) <article-title>Rv3615c is a highly immunodominant RD1 (Region of Difference 1)-dependent secreted antigen specific for Mycobacterium tuberculosis infection.</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>108</volume>: <fpage>5730</fpage>–<lpage>5</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Vilaplana1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vilaplana</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Ruiz-Manzano</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Gil</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Cuchillo</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Montané</surname><given-names>E</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>The tuberculin skin test increases the responses measured by T cell interferon-gamma release assays</article-title>. <source>Scand J Immunol</source> <volume>67</volume>: <fpage>610</fpage>–<lpage>7</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Benagiano1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Benagiano</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Munari</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Ciervo</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Amedei</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Paccani</surname><given-names>SR</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Chlamydophila pneumoniae phospholipase D (CpPLD) drives Th17 inflammation in human atherosclerosis</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>109</volume>: <fpage>1222</fpage>–<lpage>7</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Kampmann1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kampmann</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Whittaker</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Williams</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Walters</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Gordon</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Martinez-Alier N, Williams B, Crook AM, Hutton AM, Anderson ST. Interferon-gamma release assays do not identify more children with active tuberculosis than the tuberculin skin test</article-title>. <source>Eur Respir J</source> <volume>33</volume>: <fpage>1374</fpage>–<lpage>82</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Hogarth1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hogarth</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Logan</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Ferraz</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Hewinson</surname><given-names>RG</given-names></name>, <name name-style="western"><surname>Chambers</surname><given-names>MA</given-names></name> (<year>2006</year>) <article-title>Protective efficacy induced by Mycobacterium bovis bacille Calmette-Guèrin can be augmented in an antigen independent manner by use of non-coding plasmid DNA</article-title>. <source>Vaccine</source> <volume>24</volume>: <fpage>95</fpage>–<lpage>101</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Takamura1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Takamura</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Matsuo</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Takebe</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Yasutomi</surname><given-names>Y</given-names></name> (<year>2005</year>) <article-title>Ag85B of mycobacteria elicits effective CTL responses through activation of robust Th1 immunity as a novel adjuvant in DNA vaccine</article-title>. <source>J Immunol</source> <volume>175</volume>: <fpage>2541</fpage>–<lpage>7</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Skjt1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Skjøt</surname><given-names>RL</given-names></name>, <name name-style="western"><surname>Brock</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Arend</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Munk</surname><given-names>ME</given-names></name>, <name name-style="western"><surname>Theisen</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2002</year>) <article-title>Epitope mapping of the immunodominant antigen TB10.4 and the two homologous proteins TB10.3and TB12.9, which constitute a subfamily of the esat-6 gene family</article-title>. <source>Infect Immun</source> <volume>70</volume>: <fpage>5446</fpage>–<lpage>53</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Agren1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Agren</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Stehr</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Berthold</surname><given-names>CL</given-names></name>, <name name-style="western"><surname>Kapoor</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Oehlmann</surname><given-names>W</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Singh M, Schneider G.Three-dimensional structures of apo- and holo-L-alanine dehydrogenase from Mycobacterium tuberculosis reveal conformational changes upon coenzyme binding</article-title>. <source>J Mol Biol</source> <volume>377</volume>: <fpage>1161</fpage>–<lpage>73</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Krummel1">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Krummel</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Strassburg</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Ernst</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Reiling</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Eker</surname><given-names>B</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Potential role for IL-2 ELISpot in differentiating recent and remote infection in tuberculosis contact tracing</article-title>. <source>PLoS One</source> <volume>5</volume>: <fpage>e11670</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Mori1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mori</surname><given-names>T</given-names></name> (<year>2009</year>) <article-title>Usefulness of interferon-gamma release assays for diagnosing TB infection and problems with these assays</article-title>. <source>J Infect Chemother</source> <volume>15</volume>: <fpage>143</fpage>–<lpage>55</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0046041-Demissie1">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Demissie</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Leyten</surname><given-names>EM</given-names></name>, <name name-style="western"><surname>Abebe</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Wassie</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Aseffa</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>VACSEL Study Group. Recognition of stage-specific mycobacterial antigens differentiates between acute and latent infections with Mycobacteriumtuberculosis</article-title>. <source>Clin Vaccine Immunol</source> <volume>13</volume>: <fpage>179</fpage>–<lpage>86</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

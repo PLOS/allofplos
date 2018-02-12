@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-11-14584</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0028031</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Anatomy and physiology</subject>
+            <subj-group>
+              <subject>Musculoskeletal system</subject>
+              <subj-group>
+                <subject>Bone</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Biochemistry</subject>
+            <subj-group>
+              <subject>Metabolism</subject>
+              <subj-group>
+                <subject>Bone and mineral metabolism</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Computational biology</subject>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Genetic polymorphism</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Evolutionary biology</subject>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Genetic polymorphism</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Genetic polymorphism</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Genetics of disease</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Population biology</subject>
+            <subj-group>
+              <subject>Epidemiology</subject>
+              <subj-group>
+                <subject>Genetic epidemiology</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Genetic polymorphism</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Rheumatology</subject>
+            <subj-group>
+              <subject>Bone and mineral metabolism</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Genetics and Genomics</subject>
+          <subject>Public Health and Epidemiology</subject>
+          <subject>Physiology</subject>
+          <subject>Computational Biology</subject>
+          <subject>Evolutionary Biology</subject>
+          <subject>Rheumatology</subject>
+          <subject>Biochemistry</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Polymorphisms in Genes Involved in the NF-κB Signalling Pathway Are Associated with Bone Mineral Density, Geometry and Turnover in Men</article-title><alt-title alt-title-type="running-head">Genetics of Bone Density, Geometry and Turnover</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Roshandel</surname>
+            <given-names>Delnaz</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Thomson</surname>
+            <given-names>Wendy</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Pye</surname>
+            <given-names>Stephen R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Boonen</surname>
+            <given-names>Steven</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Borghs</surname>
+            <given-names>Herman</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Vanderschueren</surname>
+            <given-names>Dirk</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Huhtaniemi</surname>
+            <given-names>Ilpo T.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Adams</surname>
+            <given-names>Judith E.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ward</surname>
+            <given-names>Kate A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Bartfai</surname>
+            <given-names>Gyorgy</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Casanueva</surname>
+            <given-names>Felipe F.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Finn</surname>
+            <given-names>Joseph D.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Forti</surname>
+            <given-names>Gianni</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff9">
+            <sup>9</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Giwercman</surname>
+            <given-names>Aleksander</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff10">
+            <sup>10</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Han</surname>
+            <given-names>Thang S.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff11">
+            <sup>11</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Kula</surname>
+            <given-names>Krzysztof</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff12">
+            <sup>12</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lean</surname>
+            <given-names>Michael E.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff13">
+            <sup>13</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Pendleton</surname>
+            <given-names>Neil</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff14">
+            <sup>14</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Punab</surname>
+            <given-names>Margus</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff15">
+            <sup>15</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Wu</surname>
+            <given-names>Frederick C.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff16">
+            <sup>16</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Holliday</surname>
+            <given-names>Kate L.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>O'Neill</surname>
+            <given-names>Terence W.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <collab xlink:type="simple">the EMAS Study Group</collab>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>Arthritis Research UK Epidemiology Unit, The University of Manchester, Manchester Academic Health Science Centre, Manchester, United Kingdom</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Leuven University Division of Geriatric Medicine, Katholieke Universiteit Leuven, Leuven, Belgium</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Department of Andrology and Endocrinology, Katholieke Universiteit Leuven, Leuven, Belgium</addr-line>       </aff><aff id="aff4"><label>4</label><addr-line>Department of Surgery and Cancer, Imperial College London, Hammersmith Campus, London, United Kingdom</addr-line>       </aff><aff id="aff5"><label>5</label><addr-line>Clinical Radiology, Imaging Science and Biomedical Engineering, The University of Manchester, Manchester Academic Health Science Centre, Manchester, United Kingdom</addr-line>       </aff><aff id="aff6"><label>6</label><addr-line>MRC-Human Nutrition Research, Elsie Widdowson Laboratory, Cambridge, United Kingdom</addr-line>       </aff><aff id="aff7"><label>7</label><addr-line>Department of Obstetrics, Gynaecology and Andrology, Albert Szent-Gyorgy Medical University, Szeged, Hungary</addr-line>       </aff><aff id="aff8"><label>8</label><addr-line>Department of Medicine, Santiago de Compostela University, Complejo Hospitalario Universitario de Santiago (CHUS), CIBER de Fisiopatología Obesidad y Nutricion (CB06/03), Instituto Salud Carlos III, Santiago de Compostela, Spain</addr-line>       </aff><aff id="aff9"><label>9</label><addr-line>Andrology Unit, Department of Clinical Physiopathology, University of Florence, Florence, Italy</addr-line>       </aff><aff id="aff10"><label>10</label><addr-line>Scanian Andrology Centre, Department of Urology, Malmö University Hospital, University of Lund, Lund, Sweden</addr-line>       </aff><aff id="aff11"><label>11</label><addr-line>Department of Endocrinology, Royal Free and University College Hospital Medical School, Royal Free Hospital, Hampstead, London</addr-line>       </aff><aff id="aff12"><label>12</label><addr-line>Department of Andrology and Reproductive Endocrinology, Medical University of Lodz, Lodz, Poland</addr-line>       </aff><aff id="aff13"><label>13</label><addr-line>Department of Human Nutrition, University of Glasgow, Glasgow, Scotland</addr-line>       </aff><aff id="aff14"><label>14</label><addr-line>Clinical Gerontology, The University of Manchester, Manchester Academic Health Science Centre, Hope Hospital, Salford, United Kingdom</addr-line>       </aff><aff id="aff15"><label>15</label><addr-line>Andrology Unit, United Laboratories of Tartu University Clinics, Tartu, Estonia</addr-line>       </aff><aff id="aff16"><label>16</label><addr-line>Department of Endocrinology, Manchester Royal Infirmary, The University of Manchester, Manchester Academic Health Science Centre, Manchester, United Kingdom</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Agarwal</surname>
+            <given-names>Sudha</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Ohio State University, United States of America</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">Kate.Holliday@manchester.ac.uk</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: DR KLH TWO WT. Performed the experiments: DR. Analyzed the data: DR. Wrote the paper: DR. Interpretation of results: KLH TWO WT SRP TSH MEL NP FCW. Conceived and designed population-based study: SB HB DV ITH JEA KAW GB FFC JDF GF AG KK MP FCW. Acquired subjects and data: FCW SB HB DV ITH JEA KAW GB FFC JDF GF AG KK MP. Revision/final approval of the manuscript: KLH TWO WT SB HB DV ITH JEA KAW GB FFC JDF GF AG KK MP SRP TSH MEL NP FCW.</p>
+        </fn>
+        <fn fn-type="other" id="fn1">
+          <p>¶ Membership of the EMAS Study Group is provided in the Acknowledgments.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>21</day>
+        <month>11</month>
+        <year>2011</year>
+      </pub-date><volume>6</volume><issue>11</issue><elocation-id>e28031</elocation-id><history>
+        <date date-type="received">
+          <day>27</day>
+          <month>7</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>31</day>
+          <month>10</month>
+          <year>2011</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2011</copyright-year><copyright-holder>Roshandel et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <sec>
+          <title>Introduction</title>
+          <p>In this study, we aimed to investigate the association between single nucleotide polymorphisms (SNPs) within two genes involved in the NF-κB cascade (<italic>GPR177</italic> and <italic>MAP3K14</italic>) and bone mineral density (BMD) assessed at different skeletal sites, radial geometric parameters and bone turnover.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>Ten <italic>GPR177</italic> SNPs previously associated with BMD with genome-wide significance and twelve tag SNPs (r<sup>2</sup>≥0.8) within <italic>MAP3K14</italic> (±10 kb) were genotyped in 2359 men aged 40–79 years recruited from 8 centres for participation in the European Male Aging Study (EMAS). Measurement of bone turnover markers (PINP and CTX-I) in the serum and quantitative ultrasound (QUS) at the calcaneus were performed in all centres. Dual energy X-ray absorptiometry (DXA), at the lumbar spine and hip, and peripheral quantitative computed tomography (pQCT), at the distal and midshaft radius, were performed in a subsample (2 centres). Linear regression was used to test for association between the SNPs and bone measures under an additive genetic model adjusting for study centre.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>We validated the associations between SNPs in <italic>GPR177</italic> and BMD<sub>a</sub> previously reported and also observed evidence of pleiotrophic effects on density and geometry. Rs2772300 in <italic>GPR177</italic> was associated with increased total hip and LS BMD<sub>a</sub>, increased total and cortical vBMD at the radius and increased cortical area, thickness and stress strain index. We also found evidence of association with BMD<sub>a</sub>, vBMD, geometric parameters and CTX-I for SNPs in <italic>MAP3K14</italic>. None of the <italic>GPR177</italic> and <italic>MAP3K14</italic> SNPs were associated with calcaneal estimated BMD measured by QUS.</p>
+        </sec>
+        <sec>
+          <title>Conclusion</title>
+          <p>Our findings suggest that SNPs in <italic>GPR177</italic> and <italic>MAP3K14</italic> involved in the NF-κB signalling pathway influence bone mineral density, geometry and turnover in a population-based cohort of middle aged and elderly men. This adds to the understanding of the role of genetic variation in this pathway in determining bone health.</p>
+        </sec>
+      </abstract><funding-group><funding-statement>The European Male Ageing Study (EMAS) is funded by the Commission of the European Communities Fifth Framework Programme “Quality of Life and Management of Living Resources” Grant QLK6-CT-2001-00258 and supported by funding from the Arthritis Research UK. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts>
+        <page-count count="8"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Osteoporosis is characterized by reduced bone mass and deterioration in bone micro-architecture leading to bone fragility and increased risk of fracture <xref ref-type="bibr" rid="pone.0028031-Consensus1">[1]</xref>. It is a major health problem with the lifetime risk of fracture estimated to be about 50% and 20% at age 50 years in women and men, respectively <xref ref-type="bibr" rid="pone.0028031-vanStaa1">[2]</xref>. Prospective studies suggest that there is a strong relationship between levels of bone mineral density (BMD) and subsequent risk of fracture in both men <xref ref-type="bibr" rid="pone.0028031-Cummings1">[3]</xref> and women <xref ref-type="bibr" rid="pone.0028031-Stone1">[4]</xref>, <xref ref-type="bibr" rid="pone.0028031-DargentMolina1">[5]</xref>.</p>
+      <p>Genetic factors are important determinants of bone mass. Family and twin studies suggest that up to 80% of areal BMD (BMD<sub>a</sub>) at the lumbar spine (LS) and hip is determined by genetic factors <xref ref-type="bibr" rid="pone.0028031-Videman1">[6]</xref>–<xref ref-type="bibr" rid="pone.0028031-Flicker1">[8]</xref>. Genome-wide association studies (GWAS) have identified a number of loci associated with LS and hip BMD<sub>a</sub> reaching genome-wide significance (GWS), including the genes involved in the RANKL/RANK/OPG signalling pathway <xref ref-type="bibr" rid="pone.0028031-Richards1">[9]</xref>–<xref ref-type="bibr" rid="pone.0028031-Styrkarsdottir2">[12]</xref>, which have also been associated with markers of bone turnover <xref ref-type="bibr" rid="pone.0028031-Roshandel1">[13]</xref>. The RANKL/RANK/OPG signalling pathway has an important role in bone turnover. Interaction of RANKL (receptor activator of NF-κB ligand) with its receptor RANK (receptor activator of NF-κB) on the surface of osteoclast precursors <xref ref-type="bibr" rid="pone.0028031-Hadjidakis1">[14]</xref> activates both canonical and non-canonical pathways of NF-κB. Subsequently, active NF-κB dimers move into the nucleus, bind to the DNA and cause gene transcription and osteoclast differentiation <xref ref-type="bibr" rid="pone.0028031-Soysa1">[15]</xref>. OPG acts as a decoy receptor for RANKL and can block its effects <xref ref-type="bibr" rid="pone.0028031-Hadjidakis1">[14]</xref>.</p>
+      <p>Rivadeneira et al. performed a meta-analysis of five GWAS of LS and femoral neck (FN) BMD<sub>a</sub> in approximately 20,000 subjects <xref ref-type="bibr" rid="pone.0028031-Rivadeneira1">[10]</xref>. They strengthened the association of <italic>RANKL</italic>, <italic>RANK</italic> and <italic>OPG</italic> with BMD<sub>a</sub>; and also identified two new loci including genes involved in the NF-κB pathway. <italic>GPR177</italic> is located on chromosome 1p31.3 and single nucleotide polymorphisms (SNPs) within this gene were associated with LS and FN BMD<sub>a</sub> at the GWS level <xref ref-type="bibr" rid="pone.0028031-Rivadeneira1">[10]</xref>. GPR177 which is also known as WNTLESS homolog is an activator of the NF-κB pathway <xref ref-type="bibr" rid="pone.0028031-Matsuda1">[16]</xref>. It also induces osteoblast differentiation through the Wnt signalling pathway <xref ref-type="bibr" rid="pone.0028031-Banziger1">[17]</xref>. A single SNP on chromosome 17q12, rs9303521, which is located about 400 kb upstream of <italic>MAP3K14</italic>, was also associated with LS BMD<sub>a</sub> at the GWS level in the meta-analysis <xref ref-type="bibr" rid="pone.0028031-Rivadeneira1">[10]</xref>. <italic>MAP3K14</italic> encodes NIK (NF-κB inducing kinase) which induces production of active NF-κB dimers in the non-canonical pathway <xref ref-type="bibr" rid="pone.0028031-Soysa1">[15]</xref>.</p>
+      <p>In this study, we aimed to validate <italic>GPR177</italic> SNP associations with BMD<sub>a</sub> and to determine if SNPs in <italic>MAP3K14</italic> are associated with BMD<sub>a</sub> utilizing an independent population of middle-aged and elderly men recruited in the European Male Aging Study (EMAS) <xref ref-type="bibr" rid="pone.0028031-Lee1">[18]</xref>. We also explored the influence of <italic>GPR177</italic> and <italic>MAP3K14</italic> SNPs on bone geometry, another important determinant of bone strength. As both genes investigated here are involved in bone turnover related pathways, one would expect that their effects on bone density and geometry would, at least partly, be through altering bone turnover. Therefore, we sought to test this hypothesis. We also investigated the combined effect of strongly associated SNPs in <italic>RANKL</italic>, <italic>RANK</italic>, <italic>OPG</italic>, <italic>GPR177</italic> and <italic>MAP3K14</italic> on BMD<sub>a</sub>.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Ethics statement</title>
+        <p>Ethical approval for the study was obtained in accordance with local institutional requirements in each centre: Florence (Ethical Committee of the Azienda Ospedaliera Careggi &amp; University of Florence), Leuven (Commissie Medische Ethiek UZ Gasthuisberg &amp; KU Leuven), Lodz (Bioethical Committee of Medical University of Lodz for Human Studies), Malmö (Ethical Committee of Lund University), Manchester (North West Multi Centre Ethical Research Committee, University of Manchester &amp; CMMCUH), Santiago de Compostela (Comité Ético de Investigación Clínica de Galicia &amp; Universidad de Santiago de Compostela), Szeged (Human Investigation Review Board, University of Szeged) and Tartu (Ethical Committee, Medical University of Tartu). All subjects provided written informed consent. Approval for the genetic analysis described here was obtained for seven of the eight centres. Therefore, analysis was restricted to subjects from these seven centres (all centres except for Malmö, Sweden).</p>
+      </sec>
+      <sec id="s2b">
+        <title>Study Participants</title>
+        <p>Men aged 40–79 years were recruited from population registers in 8 European centres (Manchester, UK; Leuven, Belgium; Tartu, Estonia; Lodz, Poland; Szeged, Hungary; Florence, Italy; Santiago de Compostela, Spain; Malmö, Sweden) into the European Male Ageing Study, for further details see Lee at al. (2008) <xref ref-type="bibr" rid="pone.0028031-Lee2">[19]</xref>. Blood samples were collected for genetic analysis. Quantitative ultrasound (QUS) at the calcaneus was performed in subjects at all centres. Dual energy X-ray absorptiometry (DXA) and peripheral quantitative computed tomography (pQCT) were performed in a subsample of subjects in two centres (Manchester, UK and Leuven, Belgium). Participants were excluded from this analysis if they reported that at least one of their parents or grandparents was born outside Europe or North America, or if they reported use of anti-osteoporotic medications or systemic glucocorticoids.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Bone Assessments</title>
+        <sec id="s2c1">
+          <title>DXA</title>
+          <p>DXA scans were performed in Manchester and Leuven centres using a DXA QDR 4500A device (Hologic, Inc, Waltham, MA, USA). BMD<sub>a</sub> (g/cm<sup>2</sup>) was measured at LS (L1 to L4) and total hip (TH). All scans and measurements were performed by trained and experienced DXA technicians. The Hologic Spine Phantom was scanned daily to monitor the device performance and long-term stability. The precision of these measurements in the LS and TH were 0.57% and 0.56% in Leuven, and 0.97% and 0.97% in Manchester, respectively. Both devices were cross-calibrated with the European Spine Phantom <xref ref-type="bibr" rid="pone.0028031-Reid1">[20]</xref>.</p>
+        </sec>
+        <sec id="s2c2">
+          <title>pQCT</title>
+          <p>Peripheral QCT measurements were performed in the non-dominant radius using XCT-2000 scanners (Stratec, Pforzheim, Germany) in Manchester and Leuven centres following the manufacturer's standard quality assurance procedures. Total and trabecular vBMD (mg/mm<sup>3</sup>), and bone cross-sectional area (mm<sup>2</sup>) were measured at the distal radius (4%) (voxel size 0.4 mm). Cortical vBMD (mg/mm<sup>3</sup>); total, cortical and medullary area (mm<sup>2</sup>); cortical thickness (mm) and stress strain index (SSI) (mm<sup>3</sup>) were measured at the midshaft radius (50%) (voxel size 0.6 mm). The detailed methodology for these measurements has been described previously <xref ref-type="bibr" rid="pone.0028031-Ward1">[21]</xref>.</p>
+          <p>The European Forearm Phantom (EFP) was measured for cross-calibration between the two centres; 10 repeat measurements were taken in slices 1–4. The differences were less than precision error for total, trabecular and cortical vBMD, and cortical area. Therefore, no cross-calibration was performed between the two centres. The short term precision of 2 repeat measurements with repositioning were: 2.1% and 1.3% for total vBMD; 1.27% and 1.42% for trabecular vBMD; 0.77% and 0.71% for cortical vBMD; and 2.4% and 1.3% for cortical area; in Manchester (n = 22) and Leuven (n = 40), respectively.</p>
+        </sec>
+        <sec id="s2c3">
+          <title>QUS</title>
+          <p>BMD at the left calcaneus was estimated by QUS using the Sahara Clinical Sonometer (Hologic, Bedford, MA, USA) in all centres following a standardized protocol. Outputs included broadband ultrasound attenuation (BUA) (dB/MHz) and speed of sound (SOS) (m/s). Calcaneal eBMD was calculated (g/cm<sup>2</sup>) using the following formula: BMD = 0.002592×(BUA+SOS)−3.687. The CVs were 2.8%, 0.3% and 3.4% for BUA, SOS and BMD, respectively as described previously <xref ref-type="bibr" rid="pone.0028031-Roshandel1">[13]</xref>.</p>
+        </sec>
+        <sec id="s2c4">
+          <title>Bone Turnover Markers</title>
+          <p>Serum N-terminal propeptide of type I procollagen (PINP) (ng/ml) and C-terminal cross-linked telopeptide of type I collagen (CTX-I) (ng/ml) levels were measured in Leuven, using electrochemiluminescence immunoassay (ECLIA) (Roche Diagnostics) on samples from all centres. The detection limit of PINP assay was &lt;5 ng/ml, and the intra-assay and inter-assay coefficients of variations (CVs) were 0.8–2.9 and 1.8–2.9%, respectively. The detection limit of CTX-I assay was 0.01 ng/ml, and the intra-assay and inter-assay CVs were 2.0–5.5% and 1.0–4.6%, respectively.</p>
+        </sec>
+      </sec>
+      <sec id="s2d">
+        <title>SNPs Selection</title>
+        <sec id="s2d1">
+          <title>GPR177</title>
+          <p>The SNPs within <italic>GPR177</italic> associated with LS or FN BMD<sub>a</sub> at the genome-wide significant level (p&lt;5×10<sup>−8</sup>) in a previous GWAS meta-analysis <xref ref-type="bibr" rid="pone.0028031-Rivadeneira1">[10]</xref> were selected for genotyping. Where SNPs were in high linkage disequilibrium (LD) (r<sup>2</sup>≥0.8) based on HapMap Phase II CEPH SNP data (<ext-link ext-link-type="uri" xlink:href="http://www.hapmap.org" xlink:type="simple">http://www.hapmap.org</ext-link>), only one of them was genotyped.</p>
+        </sec>
+        <sec id="s2d2">
+          <title>MAP3K14</title>
+          <p>Pair-wise tag SNPs (r<sup>2</sup>≥0.8) were selected for SNPs in HapMap Phase II CEPH SNP data (<ext-link ext-link-type="uri" xlink:href="http://www.hapmap.org" xlink:type="simple">http://www.hapmap.org</ext-link>) with a minor allele frequency (MAF) of greater than 5% within <italic>MAP3K14</italic> and its 10 kb flanking regions using Tagger implemented in Haploview 4.0 <xref ref-type="bibr" rid="pone.0028031-Barrett1">[22]</xref>.</p>
+        </sec>
+      </sec>
+      <sec id="s2e">
+        <title>Genotyping and Quality Control</title>
+        <p>SNPs were genotyped using SEQUENOM MassARRAY technology following the manufacturer's instructions (<ext-link ext-link-type="uri" xlink:href="http://www.sequenom.com" xlink:type="simple">http://www.sequenom.com</ext-link>). Sample and assay quality control thresholds were set to 90%. The SNPs deviating from Hardy-Weinberg equilibrium (HWE), p≤0.05, were excluded from the analysis.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Statistical Analysis</title>
+        <p>The outcome variables were standardised, z = (x−μ)/σ where x = raw value of bone measure, μ = mean of bone measure and σ = standard deviation of bone measure.</p>
+        <p>The association between the SNPs and the standardised outcome variables (DXA: LS and TH BMD<sub>a</sub>, pQCT: radius vBMD and geometric parameters, QUS: calcaneal BMD, and bone turnover markers: PINP and CTX-I) was tested using linear regression under an additive genetic model using PLINK (1.05) <xref ref-type="bibr" rid="pone.0028031-Purcell1">[23]</xref>. The results were adjusted for study centre and also for study centre, age, height and weight. The results are presented as a percentage change (β) in a standard deviation (SD) with 95% confidence intervals for each copy of the minor allele. For significantly associated SNPs, the interaction between the SNP and centre was tested to see if the relationship between the SNP and the outcome differed across centres.</p>
+        <p>Pairs of SNPs associated with BMD<sub>a</sub> and located in different genes (<italic>RANKL</italic>, <italic>RANK</italic>, <italic>OPG</italic>, <italic>GPR177</italic> and <italic>MAP3K14</italic>) at the same skeletal site with a p-value&lt;0.01 were tested to determine if carrying the risk allele (allele associated with lower BMD) for both SNPs was associated with a greater effect on BMD<sub>a</sub>. For <italic>RANKL</italic>, <italic>RANK</italic> and <italic>OPG</italic>, data from previous analysis in the EMAS cohort was used <xref ref-type="bibr" rid="pone.0028031-Roshandel1">[13]</xref>. In order to determine the combined effect of the two SNPs, a new combined genotype variable was defined based on the number of risk alleles each individual carried for either SNP. This new variable could have a value between 0 to 4; 0: having no copy of risk alleles for both SNPs, 1: having one copy of risk alleles for either SNPs, 2: having two copies of risk alleles for either SNPs, 3: having two copies of risk allele for one SNP and one copy of risk allele for the other one, and 4: having 2 copies of risk alleles for both SNPs. Subsequently, linear regression was used for testing the association between BMD<sub>a</sub> and this new variable adjusting for centre in STATA (9.2).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Subject Characteristics</title>
+        <p>Of the 2658 men who consented to participate in the genetic analysis, 299 were excluded: 180 failed sample quality control, 21 reported at least one of their parents or grandparents was born outside Europe or North America, and 98 reported use of anti-osteoporotic medications or systemic glucocorticoids. In total, 2359 men, mean (±SD) age 60±11 years, were included in the analysis. Bone turnover markers and ultrasound BMD were measured in almost all men (N = 2244 and 2314, respectively). DXA and pQCT were performed in a subsample of men from 2 centres (N = 588 and 560, respectively). Mean values of the bone turnover markers, QUS, DXA and pQCT parameters are presented in <xref ref-type="table" rid="pone-0028031-t001">Table 1</xref>.</p>
+        <table-wrap id="pone-0028031-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0028031.t001</object-id><label>Table 1</label><caption>
+            <title>Mean (SD) of bone turnover markers, DXA, pQCT and QUS parameters.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0028031-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0028031.t001" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">N</td>
+                <td align="left" colspan="1" rowspan="1">Mean</td>
+                <td align="left" colspan="1" rowspan="1">SD</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>Bone turnover markers</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">PINP (ng/ml)</td>
+                <td align="left" colspan="1" rowspan="1">2244</td>
+                <td align="left" colspan="1" rowspan="1">42.91</td>
+                <td align="left" colspan="1" rowspan="1">21.72</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">CTX-I (ng/ml)</td>
+                <td align="left" colspan="1" rowspan="1">2242</td>
+                <td align="left" colspan="1" rowspan="1">357.72</td>
+                <td align="left" colspan="1" rowspan="1">181.37</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>DXA BMD<sub>a</sub></bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Lumbar spine (g/cm<sup>2</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">588</td>
+                <td align="left" colspan="1" rowspan="1">1.06</td>
+                <td align="left" colspan="1" rowspan="1">0.18</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Total hip (g/cm<sup>2</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">587</td>
+                <td align="left" colspan="1" rowspan="1">1.02</td>
+                <td align="left" colspan="1" rowspan="1">0.14</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Femoral neck (g/cm<sup>2</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">587</td>
+                <td align="left" colspan="1" rowspan="1">0.81</td>
+                <td align="left" colspan="1" rowspan="1">0.13</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>pQCT</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>4% radius</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"> Total vBMD (mg/mm<sup>3</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">560</td>
+                <td align="left" colspan="1" rowspan="1">400.66</td>
+                <td align="left" colspan="1" rowspan="1">71.21</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"> Trabecular vBMD (mg/mm<sup>3</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">560</td>
+                <td align="left" colspan="1" rowspan="1">203.82</td>
+                <td align="left" colspan="1" rowspan="1">42.72</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"> Cross-sectional area (mm<sup>2</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">560</td>
+                <td align="left" colspan="1" rowspan="1">374.62</td>
+                <td align="left" colspan="1" rowspan="1">66.31</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>50% site</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"> Cortical vBMD (mg/mm<sup>3</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">560</td>
+                <td align="left" colspan="1" rowspan="1">1214.47</td>
+                <td align="left" colspan="1" rowspan="1">29.68</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"> Cortical thickness (mm)</td>
+                <td align="left" colspan="1" rowspan="1">560</td>
+                <td align="left" colspan="1" rowspan="1">3.24</td>
+                <td align="left" colspan="1" rowspan="1">0.42</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"> Total area (mm<sup>2</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">560</td>
+                <td align="left" colspan="1" rowspan="1">149.31</td>
+                <td align="left" colspan="1" rowspan="1">20.72</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"> Cortical area (mm<sup>2</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">560</td>
+                <td align="left" colspan="1" rowspan="1">106.44</td>
+                <td align="left" colspan="1" rowspan="1">13.63</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"> Medullary area (mm<sup>2</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">560</td>
+                <td align="left" colspan="1" rowspan="1">42.87</td>
+                <td align="left" colspan="1" rowspan="1">15.71</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"> SSI (mm<sup>3</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">560</td>
+                <td align="left" colspan="1" rowspan="1">337.56</td>
+                <td align="left" colspan="1" rowspan="1">63.87</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>QUS</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">BMD at calcaneus (g/cm<sup>2</sup>)</td>
+                <td align="left" colspan="1" rowspan="1">2314</td>
+                <td align="left" colspan="1" rowspan="1">0.54</td>
+                <td align="left" colspan="1" rowspan="1">0.14</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>PINP: N-terminal propeptide of type I procollagen, CTX-I: C-terminal cross-linked telopeptide of type I collagen, DXA: dual energy X-ray absorptiometry, BMD<sub>a</sub>: areal bone mineral density, pQCT: peripheral quantitative computed tomography, vBMD: volumetric bone mineral density, SSI: stress strain index, QUS: quantitative ultrasound.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+      </sec>
+      <sec id="s3b">
+        <title>Genotyping</title>
+        <sec id="s3b1">
+          <title>GPR177</title>
+          <p>Thirteen SNPs within <italic>GPR177</italic> were selected for genotyping. Of these, 10 SNPs were successfully genotyped and passed quality control. Rs919540, rs994082 and rs2772304 failed genotyping.</p>
+        </sec>
+        <sec id="s3b2">
+          <title>MAP3K14</title>
+          <p>Forty-three SNPs with a MAF&gt;0.05 were identified in <italic>MAP3K14</italic> and its 10 kb flanking regions. These SNPs were tagged by 13 SNPs. Of these, 12 SNPs were successfully genotyped and passed quality control covering 98% of the selected SNPs with a MAF of more than 5% in the region. Rs2867316 failed genotyping.</p>
+        </sec>
+      </sec>
+      <sec id="s3c">
+        <title>Genetic Association Analysis</title>
+        <p>For the bone turnover markers and ultrasound BMD, with α = 0.05, there was greater than 80% power to detect differences of 0.2 SD for SNPs with a MAF = 0.05 and 0.1 SD for SNPs with a MAF = 0.45 under an additive genetic model. For DXA and pQCT outcomes, with α = 0.05, there was greater than 80% power to detect differences of 0.4 SD for SNPs with a MAF = 0.05 and 0.2 SD for SNPs with a MAF = 0.45 under an additive genetic model. Statistical power was calculated using Quanto v1.2.3 software <xref ref-type="bibr" rid="pone.0028031-Kraft1">[24]</xref>.</p>
+        <sec id="s3c1">
+          <title>GPR177</title>
+          <p>Of the 10 SNPs successfully genotyped, 6 were associated with total hip BMD<sub>a</sub>. Rs1430742, which was the most significantly associated SNP in this locus in a GWAS meta-analysis of LS and FN BMD<sub>a</sub> <xref ref-type="bibr" rid="pone.0028031-Rivadeneira1">[10]</xref>, showed the largest effect with each allele resulting in a 0.18 SD (95%CI 0.04, 0.33) p = 0.015 increase in total hip BMD<sub>a</sub>. Of these 6 SNPs, 2 (rs2772300 and rs7554551) also showed a significant association with LS BMD<sub>a</sub> and 2 showed a non-significant effect in the same direction as total hip BMD<sub>a</sub> but of a lesser magnitude (<xref ref-type="table" rid="pone-0028031-t002">Table 2</xref>). Three of the SNPs, associated with total hip BMD<sub>a</sub>, also showed a significant association with total vBMD at the distal radius, with rs1430742 again showing the largest effect (0.15 SD (95%CI 0.02, 0.28) p = 0.024 per allele). rs2772300, which is in moderate LD with rs1430742 (r<sup>2</sup> = 0.67) (<xref ref-type="fig" rid="pone-0028031-g001">Figure 1</xref>) was also significantly associated with increased cortical vBMD at the mid-shaft radius (0.18 SD (0.05, 0.32) p = 0.007 per allele). Other SNPs showed a change in cortical vBMD but did not attain statistical significance. Rs891257 was also significantly associated with increased cortical vBMD, but was not associated with LS or TH BMD<sub>a</sub> or total vBMD (<xref ref-type="table" rid="pone-0028031-t003">Table 3</xref>). There was no association between any of the SNPs and trabecular vBMD. The results were broadly similar when applying further adjustment for age, height and weight (<xref ref-type="table" rid="pone-0028031-t002">Tables 2</xref> and <xref ref-type="table" rid="pone-0028031-t003">3</xref>).</p>
+          <fig id="pone-0028031-g001" position="float">
+            <object-id pub-id-type="doi">10.1371/journal.pone.0028031.g001</object-id>
+            <label>Figure 1</label>
+            <caption>
+              <title>The pair-wise LD between <italic>GPR177</italic> SNPs associated with bone health parameters.</title>
+              <p>(black r<sup>2</sup> = 1, white r<sup>2</sup> = 0).</p>
+            </caption>
+            <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0028031.g001" xlink:type="simple"/>
+          </fig>
+          <table-wrap id="pone-0028031-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0028031.t002</object-id><label>Table 2</label><caption>
+              <title>Genetic association between <italic>GPR177</italic> SNPs and BMD<sub>a</sub>.</title>
+            </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0028031-t002-2" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0028031.t002" xlink:type="simple"/><table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="4" rowspan="1">Total Hip BMD<sub>a</sub></td>
+                  <td align="left" colspan="4" rowspan="1">LS BMD<sub>a</sub></td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">SNP</td>
+                  <td align="left" colspan="1" rowspan="1">Alleles</td>
+                  <td align="left" colspan="1" rowspan="1">MAF</td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt102">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt102">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt102">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt103">b</xref></td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt102">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt102">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt102">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt103">b</xref></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2566784</td>
+                  <td align="left" colspan="1" rowspan="1">G&gt;T</td>
+                  <td align="left" colspan="1" rowspan="1">0.25</td>
+                  <td align="left" colspan="1" rowspan="1">0.13 (−0.01, 0.26)</td>
+                  <td align="left" colspan="1" rowspan="1">0.063</td>
+                  <td align="left" colspan="1" rowspan="1">0.18 (0.06, 0.29)</td>
+                  <td align="left" colspan="1" rowspan="1">0.003</td>
+                  <td align="left" colspan="1" rowspan="1">0.11 (−0.01, 0.24)</td>
+                  <td align="left" colspan="1" rowspan="1">0.077</td>
+                  <td align="left" colspan="1" rowspan="1">0.14 (0.03, 0.26)</td>
+                  <td align="left" colspan="1" rowspan="1">0.018</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs3762371</td>
+                  <td align="left" colspan="1" rowspan="1">G&gt;A</td>
+                  <td align="left" colspan="1" rowspan="1">0.4</td>
+                  <td align="left" colspan="1" rowspan="1">−0.07 (−0.19, 0.05)</td>
+                  <td align="left" colspan="1" rowspan="1">0.261</td>
+                  <td align="left" colspan="1" rowspan="1">−0.03 (−0.14, 0.07)</td>
+                  <td align="left" colspan="1" rowspan="1">0.565</td>
+                  <td align="left" colspan="1" rowspan="1">−0.02 (−0.14, 0.09)</td>
+                  <td align="left" colspan="1" rowspan="1">0.676</td>
+                  <td align="left" colspan="1" rowspan="1">−0.02 (−0.12, 0.09)</td>
+                  <td align="left" colspan="1" rowspan="1">0.74</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2566759</td>
+                  <td align="left" colspan="1" rowspan="1">A&gt;G</td>
+                  <td align="left" colspan="1" rowspan="1">0.5</td>
+                  <td align="left" colspan="1" rowspan="1">−0.12 (−0.24, 0.00)</td>
+                  <td align="left" colspan="1" rowspan="1">0.049</td>
+                  <td align="left" colspan="1" rowspan="1">−0.09 (−0.20, 0.01)</td>
+                  <td align="left" colspan="1" rowspan="1">0.088</td>
+                  <td align="left" colspan="1" rowspan="1">−0.04 (−0.15, 0.07)</td>
+                  <td align="left" colspan="1" rowspan="1">0.495</td>
+                  <td align="left" colspan="1" rowspan="1">−0.04 (−0.15, 0.06)</td>
+                  <td align="left" colspan="1" rowspan="1">0.439</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2566758</td>
+                  <td align="left" colspan="1" rowspan="1">T&gt;C</td>
+                  <td align="left" colspan="1" rowspan="1">0.46</td>
+                  <td align="left" colspan="1" rowspan="1">−0.13 (−0.24, −0.01)</td>
+                  <td align="left" colspan="1" rowspan="1">0.039</td>
+                  <td align="left" colspan="1" rowspan="1">−0.10 (−0.21, 0.00)</td>
+                  <td align="left" colspan="1" rowspan="1">0.053</td>
+                  <td align="left" colspan="1" rowspan="1">−0.06 (−0.17, 0.06)</td>
+                  <td align="left" colspan="1" rowspan="1">0.316</td>
+                  <td align="left" colspan="1" rowspan="1">−0.07 (−0.18, 0.03)</td>
+                  <td align="left" colspan="1" rowspan="1">0.187</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs1367447</td>
+                  <td align="left" colspan="1" rowspan="1">C&gt;T</td>
+                  <td align="left" colspan="1" rowspan="1">0.19</td>
+                  <td align="left" colspan="1" rowspan="1">0.15 (−0.01, 0.30)</td>
+                  <td align="left" colspan="1" rowspan="1">0.062</td>
+                  <td align="left" colspan="1" rowspan="1">0.09 (−0.05, 0.23)</td>
+                  <td align="left" colspan="1" rowspan="1">0.208</td>
+                  <td align="left" colspan="1" rowspan="1">0.07 (−0.08, 0.22)</td>
+                  <td align="left" colspan="1" rowspan="1">0.377</td>
+                  <td align="left" colspan="1" rowspan="1">0.04 (−0.10, 0.18)</td>
+                  <td align="left" colspan="1" rowspan="1">0.567</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs1430742</td>
+                  <td align="left" colspan="1" rowspan="1">T&gt;C</td>
+                  <td align="left" colspan="1" rowspan="1">0.23</td>
+                  <td align="left" colspan="1" rowspan="1">0.18 (0.04, 0.33)</td>
+                  <td align="left" colspan="1" rowspan="1">0.015</td>
+                  <td align="left" colspan="1" rowspan="1">0.17 (0.04, 0.30)</td>
+                  <td align="left" colspan="1" rowspan="1">0.011</td>
+                  <td align="left" colspan="1" rowspan="1">0.13 (−0.01, 0.27)</td>
+                  <td align="left" colspan="1" rowspan="1">0.077</td>
+                  <td align="left" colspan="1" rowspan="1">0.14 (0.01, 0.27)</td>
+                  <td align="left" colspan="1" rowspan="1">0.036</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2195682</td>
+                  <td align="left" colspan="1" rowspan="1">C&gt;T</td>
+                  <td align="left" colspan="1" rowspan="1">0.39</td>
+                  <td align="left" colspan="1" rowspan="1">−0.16 (−0.28, −0.04)</td>
+                  <td align="left" colspan="1" rowspan="1">0.007</td>
+                  <td align="left" colspan="1" rowspan="1">−0.14 (−0.24, −0.03)</td>
+                  <td align="left" colspan="1" rowspan="1">0.011</td>
+                  <td align="left" colspan="1" rowspan="1">−0.11 (−0.22, 0.01)</td>
+                  <td align="left" colspan="1" rowspan="1">0.063</td>
+                  <td align="left" colspan="1" rowspan="1">−0.11 (−0.21, 0.00)</td>
+                  <td align="left" colspan="1" rowspan="1">0.052</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs891527</td>
+                  <td align="left" colspan="1" rowspan="1">A&gt;T</td>
+                  <td align="left" colspan="1" rowspan="1">0.42</td>
+                  <td align="left" colspan="1" rowspan="1">0.05 (−0.07, 0.17)</td>
+                  <td align="left" colspan="1" rowspan="1">0.411</td>
+                  <td align="left" colspan="1" rowspan="1">0.06 (−0.04, 0.17)</td>
+                  <td align="left" colspan="1" rowspan="1">0.242</td>
+                  <td align="left" colspan="1" rowspan="1">0.02 (−0.10, 0.13)</td>
+                  <td align="left" colspan="1" rowspan="1">0.751</td>
+                  <td align="left" colspan="1" rowspan="1">0.04 (−0.07, 0.15)</td>
+                  <td align="left" colspan="1" rowspan="1">0.446</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2772300</td>
+                  <td align="left" colspan="1" rowspan="1">G&gt;A</td>
+                  <td align="left" colspan="1" rowspan="1">0.28</td>
+                  <td align="left" colspan="1" rowspan="1">0.15 (0.02, 0.29)</td>
+                  <td align="left" colspan="1" rowspan="1">0.026</td>
+                  <td align="left" colspan="1" rowspan="1">0.18 (0.06, 0.30)</td>
+                  <td align="left" colspan="1" rowspan="1">0.003</td>
+                  <td align="left" colspan="1" rowspan="1">0.16 (0.03, 0.29)</td>
+                  <td align="left" colspan="1" rowspan="1">0.013</td>
+                  <td align="left" colspan="1" rowspan="1">0.20 (0.08, 0.32)</td>
+                  <td align="left" colspan="1" rowspan="1">0.001</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs7554551</td>
+                  <td align="left" colspan="1" rowspan="1">T&gt;C</td>
+                  <td align="left" colspan="1" rowspan="1">0.33</td>
+                  <td align="left" colspan="1" rowspan="1">0.17 (0.05, 0.30)</td>
+                  <td align="left" colspan="1" rowspan="1">0.005</td>
+                  <td align="left" colspan="1" rowspan="1">0.19 (0.08, 0.29)</td>
+                  <td align="left" colspan="1" rowspan="1">0.001</td>
+                  <td align="left" colspan="1" rowspan="1">0.14 (0.03, 0.26)</td>
+                  <td align="left" colspan="1" rowspan="1">0.016</td>
+                  <td align="left" colspan="1" rowspan="1">0.17 (0.06, 0.28)</td>
+                  <td align="left" colspan="1" rowspan="1">0.003</td>
+                </tr>
+              </tbody>
+            </table></alternatives><table-wrap-foot>
+              <fn id="nt102">
+                <label>a</label>
+                <p>adjusted for study centre;</p>
+              </fn>
+              <fn id="nt103">
+                <label>b</label>
+                <p>adjusted for study centre, age, height and weight.</p>
+              </fn>
+            </table-wrap-foot></table-wrap>
+          <table-wrap id="pone-0028031-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0028031.t003</object-id><label>Table 3</label><caption>
+              <title>Genetic association between <italic>GPR177</italic> SNPs and BMD<sub>v</sub>.</title>
+            </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0028031-t003-3" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0028031.t003" xlink:type="simple"/><table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="4" rowspan="1">Total vBMD (4%)</td>
+                  <td align="left" colspan="4" rowspan="1">Cortical vBMD (50%)</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">SNP</td>
+                  <td align="left" colspan="1" rowspan="1">Alleles</td>
+                  <td align="left" colspan="1" rowspan="1">MAF</td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt104">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt104">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt104">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt105">b</xref></td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt104">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt104">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt104">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt105">b</xref></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2566784</td>
+                  <td align="left" colspan="1" rowspan="1">G&gt;T</td>
+                  <td align="left" colspan="1" rowspan="1">0.25</td>
+                  <td align="left" colspan="1" rowspan="1">0.08 (−0.04, 0.19)</td>
+                  <td align="left" colspan="1" rowspan="1">0.178</td>
+                  <td align="left" colspan="1" rowspan="1">0.09 (−0.02, 0.20)</td>
+                  <td align="left" colspan="1" rowspan="1">0.099</td>
+                  <td align="left" colspan="1" rowspan="1">0.04 (−0.09, 0.18)</td>
+                  <td align="left" colspan="1" rowspan="1">0.52</td>
+                  <td align="left" colspan="1" rowspan="1">0.06 (−0.07, 0.19)</td>
+                  <td align="left" colspan="1" rowspan="1">0.365</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs3762371</td>
+                  <td align="left" colspan="1" rowspan="1">G&gt;A</td>
+                  <td align="left" colspan="1" rowspan="1">0.40</td>
+                  <td align="left" colspan="1" rowspan="1">−0.02 (−0.13, 0.08)</td>
+                  <td align="left" colspan="1" rowspan="1">0.639</td>
+                  <td align="left" colspan="1" rowspan="1">0.01 (−0.09, 0.11)</td>
+                  <td align="left" colspan="1" rowspan="1">0.887</td>
+                  <td align="left" colspan="1" rowspan="1">−0.03 (−0.15, 0.09)</td>
+                  <td align="left" colspan="1" rowspan="1">0.641</td>
+                  <td align="left" colspan="1" rowspan="1">−0.01 (−0.12, 0.11)</td>
+                  <td align="left" colspan="1" rowspan="1">0.904</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2566759</td>
+                  <td align="left" colspan="1" rowspan="1">A&gt;G</td>
+                  <td align="left" colspan="1" rowspan="1">0.50</td>
+                  <td align="left" colspan="1" rowspan="1">−0.05 (−0.16, 0.05)</td>
+                  <td align="left" colspan="1" rowspan="1">0.308</td>
+                  <td align="left" colspan="1" rowspan="1">−0.02 (−0.12, 0.08)</td>
+                  <td align="left" colspan="1" rowspan="1">0.664</td>
+                  <td align="left" colspan="1" rowspan="1">−0.08 (−0.20, 0.04)</td>
+                  <td align="left" colspan="1" rowspan="1">0.17</td>
+                  <td align="left" colspan="1" rowspan="1">−0.06 (−0.17, 0.06)</td>
+                  <td align="left" colspan="1" rowspan="1">0.331</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2566758</td>
+                  <td align="left" colspan="1" rowspan="1">T&gt;C</td>
+                  <td align="left" colspan="1" rowspan="1">0.46</td>
+                  <td align="left" colspan="1" rowspan="1">−0.10 (−0.21, 0.00)</td>
+                  <td align="left" colspan="1" rowspan="1">0.053</td>
+                  <td align="left" colspan="1" rowspan="1">−0.06 (−0.16, 0.04)</td>
+                  <td align="left" colspan="1" rowspan="1">0.222</td>
+                  <td align="left" colspan="1" rowspan="1">−0.09 (−0.21, 0.03)</td>
+                  <td align="left" colspan="1" rowspan="1">0.133</td>
+                  <td align="left" colspan="1" rowspan="1">−0.06 (−0.18, 0.05)</td>
+                  <td align="left" colspan="1" rowspan="1">0.291</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs1367447</td>
+                  <td align="left" colspan="1" rowspan="1">C&gt;T</td>
+                  <td align="left" colspan="1" rowspan="1">0.19</td>
+                  <td align="left" colspan="1" rowspan="1">0.12 (−0.02, 0.25)</td>
+                  <td align="left" colspan="1" rowspan="1">0.093</td>
+                  <td align="left" colspan="1" rowspan="1">0.09 (−0.04, 0.22)</td>
+                  <td align="left" colspan="1" rowspan="1">0.196</td>
+                  <td align="left" colspan="1" rowspan="1">0.11 (−0.05, 0.27)</td>
+                  <td align="left" colspan="1" rowspan="1">0.170</td>
+                  <td align="left" colspan="1" rowspan="1">0.07 (−0.08, 0.23)</td>
+                  <td align="left" colspan="1" rowspan="1">0.362</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs1430742</td>
+                  <td align="left" colspan="1" rowspan="1">T&gt;C</td>
+                  <td align="left" colspan="1" rowspan="1">0.23</td>
+                  <td align="left" colspan="1" rowspan="1">0.15 (0.02, 0.28)</td>
+                  <td align="left" colspan="1" rowspan="1">0.024</td>
+                  <td align="left" colspan="1" rowspan="1">0.12 (0.00, 0.25)</td>
+                  <td align="left" colspan="1" rowspan="1">0.057</td>
+                  <td align="left" colspan="1" rowspan="1">0.11 (−0.04, 0.26)</td>
+                  <td align="left" colspan="1" rowspan="1">0.158</td>
+                  <td align="left" colspan="1" rowspan="1">0.06 (−0.09, 0.21)</td>
+                  <td align="left" colspan="1" rowspan="1">0.427</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2195682</td>
+                  <td align="left" colspan="1" rowspan="1">C&gt;T</td>
+                  <td align="left" colspan="1" rowspan="1">0.39</td>
+                  <td align="left" colspan="1" rowspan="1">−0.10 (−0.21, 0.00)</td>
+                  <td align="left" colspan="1" rowspan="1">0.053</td>
+                  <td align="left" colspan="1" rowspan="1">−0.07 (−0.17, 0.03)</td>
+                  <td align="left" colspan="1" rowspan="1">0.164</td>
+                  <td align="left" colspan="1" rowspan="1">−0.10 (−0.22, 0.02)</td>
+                  <td align="left" colspan="1" rowspan="1">0.094</td>
+                  <td align="left" colspan="1" rowspan="1">−0.10 (−0.21, 0.02)</td>
+                  <td align="left" colspan="1" rowspan="1">0.108</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs891527</td>
+                  <td align="left" colspan="1" rowspan="1">A&gt;T</td>
+                  <td align="left" colspan="1" rowspan="1">0.42</td>
+                  <td align="left" colspan="1" rowspan="1">0.04 (−0.07, 0.14)</td>
+                  <td align="left" colspan="1" rowspan="1">0.504</td>
+                  <td align="left" colspan="1" rowspan="1">0.02 (−0.08, 0.12)</td>
+                  <td align="left" colspan="1" rowspan="1">0.72</td>
+                  <td align="left" colspan="1" rowspan="1">0.16 (0.04, 0.28)</td>
+                  <td align="left" colspan="1" rowspan="1">0.011</td>
+                  <td align="left" colspan="1" rowspan="1">0.14 (0.02, 0.25)</td>
+                  <td align="left" colspan="1" rowspan="1">0.023</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2772300</td>
+                  <td align="left" colspan="1" rowspan="1">G&gt;A</td>
+                  <td align="left" colspan="1" rowspan="1">0.28</td>
+                  <td align="left" colspan="1" rowspan="1">0.13 (0.01, 0.23)</td>
+                  <td align="left" colspan="1" rowspan="1">0.036</td>
+                  <td align="left" colspan="1" rowspan="1">0.10 (−0.01, 0.22)</td>
+                  <td align="left" colspan="1" rowspan="1">0.074</td>
+                  <td align="left" colspan="1" rowspan="1">0.18 (0.05, 0.32)</td>
+                  <td align="left" colspan="1" rowspan="1">0.007</td>
+                  <td align="left" colspan="1" rowspan="1">0.15 (0.01, 0.28)</td>
+                  <td align="left" colspan="1" rowspan="1">0.031</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs7554551</td>
+                  <td align="left" colspan="1" rowspan="1">T&gt;C</td>
+                  <td align="left" colspan="1" rowspan="1">0.33</td>
+                  <td align="left" colspan="1" rowspan="1">0.12 (0.01, 0.23)</td>
+                  <td align="left" colspan="1" rowspan="1">0.028</td>
+                  <td align="left" colspan="1" rowspan="1">0.10 (0.00, 0.21)</td>
+                  <td align="left" colspan="1" rowspan="1">0.047</td>
+                  <td align="left" colspan="1" rowspan="1">0.03 (−0.09, 0.15)</td>
+                  <td align="left" colspan="1" rowspan="1">0.641</td>
+                  <td align="left" colspan="1" rowspan="1">0.01 (−0.11, 0.13)</td>
+                  <td align="left" colspan="1" rowspan="1">0.914</td>
+                </tr>
+              </tbody>
+            </table></alternatives><table-wrap-foot>
+              <fn id="nt104">
+                <label>a</label>
+                <p>adjusted for study centre;</p>
+              </fn>
+              <fn id="nt105">
+                <label>b</label>
+                <p>adjusted for study centre, age, height and weight.</p>
+              </fn>
+            </table-wrap-foot></table-wrap>
+          <p>SNPs in <italic>GPR177</italic> which were associated with BMD also showed evidence of association with geometric parameters of bone (<xref ref-type="table" rid="pone-0028031-t004">Table 4</xref>). Two SNPs (rs2566759 and rs2195682 were associated with cross-sectional area at the distal radius. Rs277230 and rs1430742 were associated with increased cortical area at the mid-shaft radius and rs2772300 was also associated with increased cortical thickness and SSI. Rs7554551 was associated with cortical thickness at the midshaft radius. There was no association between SNPs in <italic>GPR177</italic> and bone turnover markers or ultrasound eBMD.</p>
+          <table-wrap id="pone-0028031-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0028031.t004</object-id><label>Table 4</label><caption>
+              <title><italic>GPR177</italic> SNP associations with radius geometric parameters.</title>
+            </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0028031-t004-4" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0028031.t004" xlink:type="simple"/><table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">SNP</td>
+                  <td align="left" colspan="1" rowspan="1">Alleles</td>
+                  <td align="left" colspan="1" rowspan="1">MAF</td>
+                  <td align="left" colspan="1" rowspan="1">Phenotype</td>
+                  <td align="left" colspan="1" rowspan="1">Skeletal Site</td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt107">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt107">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt108">b</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt108">b</xref></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2566759</td>
+                  <td align="left" colspan="1" rowspan="1">A&gt;G</td>
+                  <td align="left" colspan="1" rowspan="1">0.5</td>
+                  <td align="left" colspan="1" rowspan="1">Cross-sectional area</td>
+                  <td align="left" colspan="1" rowspan="1">4% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.11 (0.01, 0.21)</td>
+                  <td align="left" colspan="1" rowspan="1">0.037</td>
+                  <td align="left" colspan="1" rowspan="1">0.10 (0.00, 0.20)</td>
+                  <td align="left" colspan="1" rowspan="1">0.045</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2566758</td>
+                  <td align="left" colspan="1" rowspan="1">T&gt;C</td>
+                  <td align="left" colspan="1" rowspan="1">0.46</td>
+                  <td align="left" colspan="1" rowspan="1">Cross-sectional area</td>
+                  <td align="left" colspan="1" rowspan="1">4% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.11 (0.01, 0.22)</td>
+                  <td align="left" colspan="1" rowspan="1">0.030</td>
+                  <td align="left" colspan="1" rowspan="1">0.09 (0.00, 0.19)</td>
+                  <td align="left" colspan="1" rowspan="1">0.060</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs1430742</td>
+                  <td align="left" colspan="1" rowspan="1">T&gt;C</td>
+                  <td align="left" colspan="1" rowspan="1">0.23</td>
+                  <td align="left" colspan="1" rowspan="1">Cortical area</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.17 (0.02, 0.32)</td>
+                  <td align="left" colspan="1" rowspan="1">0.031</td>
+                  <td align="left" colspan="1" rowspan="1">0.14 (0.00, 0.27)</td>
+                  <td align="left" colspan="1" rowspan="1">0.053</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs2772300</td>
+                  <td align="left" colspan="1" rowspan="1">G&gt;A</td>
+                  <td align="left" colspan="1" rowspan="1">0.28</td>
+                  <td align="left" colspan="1" rowspan="1">Cortical area</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.17 (0.03, 0.30)</td>
+                  <td align="left" colspan="1" rowspan="1">0.015</td>
+                  <td align="left" colspan="1" rowspan="1">0.18 (0.05, 0.30)</td>
+                  <td align="left" colspan="1" rowspan="1">0.005</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Cortical Thickness</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.17 (0.04, 0.31)</td>
+                  <td align="left" colspan="1" rowspan="1">0.012</td>
+                  <td align="left" colspan="1" rowspan="1">0.17 (0.04, 0.30)</td>
+                  <td align="left" colspan="1" rowspan="1">0.011</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">SSI</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.15 (0.01, 0.28)</td>
+                  <td align="left" colspan="1" rowspan="1">0.030</td>
+                  <td align="left" colspan="1" rowspan="1">0.16 (0.03, 0.28)</td>
+                  <td align="left" colspan="1" rowspan="1">0.013</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs7554551</td>
+                  <td align="left" colspan="1" rowspan="1">T&gt;C</td>
+                  <td align="left" colspan="1" rowspan="1">0.33</td>
+                  <td align="left" colspan="1" rowspan="1">Cortical Thickness</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.15 (0.03, 0.27)</td>
+                  <td align="left" colspan="1" rowspan="1">0.018</td>
+                  <td align="left" colspan="1" rowspan="1">0.15 (0.03, 0.27)</td>
+                  <td align="left" colspan="1" rowspan="1">0.015</td>
+                </tr>
+              </tbody>
+            </table></alternatives><table-wrap-foot>
+              <fn id="nt106">
+                <label/>
+                <p>SSI: stress strain index;</p>
+              </fn>
+              <fn id="nt107">
+                <label>a</label>
+                <p>adjusted for study centre;</p>
+              </fn>
+              <fn id="nt108">
+                <label>b</label>
+                <p>adjusted for study centre, age, height and weight.</p>
+              </fn>
+            </table-wrap-foot></table-wrap>
+        </sec>
+        <sec id="s3c2">
+          <title>MAP3K14</title>
+          <p>Two SNPs showed evidence of association with BMD. Rs8065345 was significantly associated with a 0.25 SD (95%CI 0.10, 0.41) p = 0.002 per allele increase in LS BMD<sub>a</sub> and was also associated with increased cortical area and cortical thickness. Rs7215764 was significantly associated with increased total hip BMD<sub>a</sub> and cortical vBMD at the mid-shaft radius. Three further SNPs were associated with geometric parameters, rs11651968 was associated with decreased cortical area at the mid-shaft radius and rs1785379 was associated with decreased medullary area and increased cortical thickness at the mid-shaft radius. Rs16939948 was associated with total area at the mid-shaft radius; however, this association became non-significant after further adjustment for age, height and weight (<xref ref-type="table" rid="pone-0028031-t005">Table 5</xref>). Further adjusting the associations between <italic>MAP3K14</italic> SNPs and bone health parameters for age, height and weight gave broadly similar results with effect estimates of similar magnitude. LD between the associated SNPs was weak, r<sup>2</sup>≤0.13. The results for all <italic>MAP3K14</italic> SNPs with LS and total hip BMD<sub>a</sub> and total and cortical vBMD are given in <xref ref-type="supplementary-material" rid="pone.0028031.s001">Tables S1</xref> &amp; S2 respectively.</p>
+          <table-wrap id="pone-0028031-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0028031.t005</object-id><label>Table 5</label><caption>
+              <title><italic>MAP3K14</italic> SNP associations with bone mineral density and radius geometric parameters.</title>
+            </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0028031-t005-5" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0028031.t005" xlink:type="simple"/><table>
+              <colgroup span="1">
+                <col align="left" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+                <col align="center" span="1"/>
+              </colgroup>
+              <thead>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">SNP</td>
+                  <td align="left" colspan="1" rowspan="1">Alleles</td>
+                  <td align="left" colspan="1" rowspan="1">MAF</td>
+                  <td align="left" colspan="1" rowspan="1">Location</td>
+                  <td align="left" colspan="1" rowspan="1">Phenotype</td>
+                  <td align="left" colspan="1" rowspan="1">Skeletal Site</td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt110">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt110">a</xref></td>
+                  <td align="left" colspan="1" rowspan="1">β(SD) (95% CI)<xref ref-type="table-fn" rid="nt111">b</xref></td>
+                  <td align="left" colspan="1" rowspan="1">p<xref ref-type="table-fn" rid="nt111">b</xref></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs8065345</td>
+                  <td align="left" colspan="1" rowspan="1">A&gt;G</td>
+                  <td align="left" colspan="1" rowspan="1">0.15</td>
+                  <td align="left" colspan="1" rowspan="1">3′ downstream</td>
+                  <td align="left" colspan="1" rowspan="1">BMD<sub>a</sub></td>
+                  <td align="left" colspan="1" rowspan="1">Lumbar spine</td>
+                  <td align="left" colspan="1" rowspan="1">0.25 (0.10, 0.41)</td>
+                  <td align="left" colspan="1" rowspan="1">0.002</td>
+                  <td align="left" colspan="1" rowspan="1">0.21 (0.06, 0.35)</td>
+                  <td align="left" colspan="1" rowspan="1">0.006</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Cortical area</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.21 (0.05, 0.38)</td>
+                  <td align="left" colspan="1" rowspan="1">0.011</td>
+                  <td align="left" colspan="1" rowspan="1">0.16 (0.01, 0.31)</td>
+                  <td align="left" colspan="1" rowspan="1">0.041</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Cortical thickness</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.24 (0.07, 0.40)</td>
+                  <td align="left" colspan="1" rowspan="1">0.004</td>
+                  <td align="left" colspan="1" rowspan="1">0.22 (0.06, 0.38)</td>
+                  <td align="left" colspan="1" rowspan="1">0.006</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs11651968</td>
+                  <td align="left" colspan="1" rowspan="1">C&gt;T</td>
+                  <td align="left" colspan="1" rowspan="1">0.48</td>
+                  <td align="left" colspan="1" rowspan="1">3′ downstream</td>
+                  <td align="left" colspan="1" rowspan="1">Cortical area</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">−0.13 (−0.25, −0.01)</td>
+                  <td align="left" colspan="1" rowspan="1">0.031</td>
+                  <td align="left" colspan="1" rowspan="1">−0.11, −0.22, 0.01)</td>
+                  <td align="left" colspan="1" rowspan="1">0.062</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs7215764</td>
+                  <td align="left" colspan="1" rowspan="1">C&gt;G</td>
+                  <td align="left" colspan="1" rowspan="1">0.25</td>
+                  <td align="left" colspan="1" rowspan="1">3′ downstream</td>
+                  <td align="left" colspan="1" rowspan="1">BMD<sub>a</sub></td>
+                  <td align="left" colspan="1" rowspan="1">Total hip</td>
+                  <td align="left" colspan="1" rowspan="1">0.17 (0.03, 0.31)</td>
+                  <td align="left" colspan="1" rowspan="1">0.021</td>
+                  <td align="left" colspan="1" rowspan="1">0.10 (−0.03, 0.22)</td>
+                  <td align="left" colspan="1" rowspan="1">0.136</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Cortical vBMD</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.17 (0.03, 0.32)</td>
+                  <td align="left" colspan="1" rowspan="1">0.020</td>
+                  <td align="left" colspan="1" rowspan="1">0.17 (0.03, 0.31)</td>
+                  <td align="left" colspan="1" rowspan="1">0.016</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs17685379</td>
+                  <td align="left" colspan="1" rowspan="1">C&gt;G</td>
+                  <td align="left" colspan="1" rowspan="1">0.14</td>
+                  <td align="left" colspan="1" rowspan="1">Intronic</td>
+                  <td align="left" colspan="1" rowspan="1">Medullary area</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">−0.17 (−0.35, 0.00)</td>
+                  <td align="left" colspan="1" rowspan="1">0.048</td>
+                  <td align="left" colspan="1" rowspan="1">−0.19 (−0.36, −0.02)</td>
+                  <td align="left" colspan="1" rowspan="1">0.031</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1"/>
+                  <td align="left" colspan="1" rowspan="1">Cortical thickness</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.18 (0.01, 0.35)</td>
+                  <td align="left" colspan="1" rowspan="1">0.043</td>
+                  <td align="left" colspan="1" rowspan="1">0.22 (0.05, 0.38)</td>
+                  <td align="left" colspan="1" rowspan="1">0.011</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">rs16939948</td>
+                  <td align="left" colspan="1" rowspan="1">T&gt;C</td>
+                  <td align="left" colspan="1" rowspan="1">0.05</td>
+                  <td align="left" colspan="1" rowspan="1">Intronic</td>
+                  <td align="left" colspan="1" rowspan="1">Total area</td>
+                  <td align="left" colspan="1" rowspan="1">50% radius</td>
+                  <td align="left" colspan="1" rowspan="1">0.29 (0.01, 0.57)</td>
+                  <td align="left" colspan="1" rowspan="1">0.044</td>
+                  <td align="left" colspan="1" rowspan="1">0.23 (−0.03, 0.50)</td>
+                  <td align="left" colspan="1" rowspan="1">0.089</td>
+                </tr>
+              </tbody>
+            </table></alternatives><table-wrap-foot>
+              <fn id="nt109">
+                <label/>
+                <p>BMD<sub>a</sub>: areal bone mineral density, vBMD: volumetric bone mineral density;</p>
+              </fn>
+              <fn id="nt110">
+                <label>a</label>
+                <p>adjusted for study centre;</p>
+              </fn>
+              <fn id="nt111">
+                <label>b</label>
+                <p>adjusted for study centre, age, height and weight.</p>
+              </fn>
+            </table-wrap-foot></table-wrap>
+          <p>In contrast to <italic>GPR177</italic>, there were three <italic>MAP3K14</italic> SNPs associated with CTX-I serum levels; rs4792847 (0.07 SD (95%CI 0.01, 0.12) p = 0.013), rs4792849 (0.06 SD (95%CI 0.00, 0.12) p = 0.042) and rs4328483 (0.08 SD (95%CI 0.03, 0.14) p = 0.003). None of the SNPs were associated with PINP serum levels. There was a moderate LD between these three SNPs (0.69&lt;r<sup>2</sup>&gt;0.39). There was no association between SNPs in <italic>MAP3K14</italic> SNPs and ultrasound BMD.</p>
+        </sec>
+      </sec>
+      <sec id="s3d">
+        <title>The combined effect of BMD associated SNPs in different pathway genes</title>
+        <p>A single pair of SNPs, rs9594738 in <italic>RANKL</italic> and rs8065345 in <italic>MAP3K14</italic>, which were both associated with LS BMD<sub>a</sub> (p = 0.001) met the inclusion criteria for examining their combined effect. Five hundred seventy-eight subjects were included in the analysis: 5, 47, 188, 250 and 88 subjects had 0 to 4 copies of the risk alleles for either rs9594738 in <italic>RANKL</italic> or rs8065345 in <italic>MAP3K14</italic>, respectively. LS BMD<sub>a</sub> was reduced by 0.04 g/cm<sup>2</sup> (95% CI −0.06, −0.02) per risk alleles carried (p = 4.6×10<sup>−6</sup>) (<xref ref-type="fig" rid="pone-0028031-g002">Figure 2</xref>).</p>
+        <fig id="pone-0028031-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0028031.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>The decline in lumbar spine areal BMD by increasing number of carried risk alleles of rs9594738 (<italic>RANKL</italic>) and rs8065345 (<italic>MAP3K14</italic>).</title>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0028031.g002" xlink:type="simple"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>In this study, we investigated the association between SNPs within two genes involved in the NF-κB cascade (<italic>GPR177</italic> and <italic>MAP3K14</italic>) and bone mineral density assessed at different skeletal sites, radial geometric parameters and bone turnover. Additionally, for the first time, we investigated the potential combined effect of two associated SNPs in <italic>MAP3K14</italic> and <italic>RANKL</italic> (previously reported) on LS BMD<sub>a</sub>.</p>
+      <p>First, we attempted to validate the association between ten SNPs in <italic>GPR177</italic> and BMD<sub>a</sub> reported in a GWAS meta-analysis <xref ref-type="bibr" rid="pone.0028031-Rivadeneira1">[10]</xref>, six of which showed significant association with total hip BMD<sub>a</sub> in the same direction in EMAS. Two of these SNPs were also significantly associated with LS BMD<sub>a</sub> and another 2 showed suggestive association (p&lt;0.1) with LS BMD<sub>a</sub>. This weaker evidence of association with LS BMD<sub>a</sub> may have arisen due to the presence of concomitant disease such as osteoarthritis which can artificially raise BMD of the spine in an elderly cohort, making it harder to detect an association, particularly in a cohort of modest sample size. The results confirm the GWAS meta-analysis findings and show that SNPs in <italic>GPR177</italic> influence BMD<sub>a</sub> at osteoporotic sites in a population of middle aged and elderly men at that their effects can be detected in a relatively modest sample size.</p>
+      <p>In addition, SNPs in <italic>GPR177</italic> were also associated with total and cortical BMD at the radius, which is a novel finding, however despite testing in a larger sample size, there was no evidence of association with calcaneal eBMD as measured by ultrasound, a pattern which has been observed for other BMD susceptibility genes <xref ref-type="bibr" rid="pone.0028031-Roshandel1">[13]</xref>. The findings reported here also suggest that these SNPs may have pleiotrophic effects on bone as SNPs associating with cortical vBMD were also associated with geometric parameters at the radius. Rs2772300, which was associated with increased BMD<sub>a</sub> at the hip and LS and total and cortical vBMD at the radius, was also associated with increased cortical area, thickness and stress strain index. It seems unlikely that these effects are mediated by bone turnover as no association was observed between these SNPs and the bone turnover markers CTX-I and PINP, in a larger sample size. Variation in the level of markers may be one explanation for this. We attempted to reduce variability in the bone turnover markers by taking fasting blood samples and measuring them in a single laboratory (to reduce technical variability). Further, the bone turnover markers selected here (PINP and CTX-I) both had low intra-assay and inter-assay CVs minimizing their analytical variability. Turnover marker levels, however, reflect current skeletal turnover and may not necessarily reflect previous levels, such misclassification may in part explain the absence of any observed significant associations.</p>
+      <p>We also looked at the association of common SNPs (MAF≥0.05) in <italic>MAP3K14</italic> with bone health parameters as this gene was previously highlighted as a good candidate, however there is no LD between the SNPs tested here in the <italic>MAP3K14</italic> gene and the 17q12 SNP associated with BMD<sub>a</sub> <xref ref-type="bibr" rid="pone.0028031-Rivadeneira1">[10]</xref>. There was evidence of association between <italic>MAP3K14</italic> SNPs and BMD<sub>a</sub>, vBMD and radius geometric parameters, however unlike <italic>GPR177</italic>, there were no SNPs showing association with vBMD and geometric parameters, therefore the findings should be interpreted with caution. This is the first time that genetic variation in the <italic>MAP3K14</italic> gene has been investigated with bone health parameters and in a modest sample size, therefore replication of these findings is required in larger cohorts.</p>
+      <p>Notably, we also found that individuals carrying risk alleles for SNPs in the <italic>MAP3K14</italic> and <italic>RANKL</italic> genes had a significantly lower LS BMD<sub>a</sub> suggesting that, despite the modest effects of single SNPs, in individuals carrying multiple risk alleles for SNPs in the RANKL/RANK/OPG and Nf-κb signalling pathways they could have a profound effect on bone health. This finding also requires replication in independent cohorts.</p>
+      <p>Important potential limitations of this study are that false positive associations might have been produced due to population stratification and multiple testing. We tried to minimize the probability of population stratification by excluding subjects of non-European ancestry and did not observe any between centre heterogeneity. However, we were unable to explore population substructure using methods such as genomic control or principal component analysis as these require data on a large number of SNPs. Based on the method described by Li and Ji <xref ref-type="bibr" rid="pone.0028031-Li1">[25]</xref>, 19 independent SNPs (<italic>GPR177</italic>: 8 and <italic>MAP3K14</italic>: 11 SNPs) were investigated in this study. The majority of the positive findings would not remain significant if Bonferroni correction (p&lt;0.0026, 0.05/19) was applied to correct for multiple testing. On the other hand, we may have missed some genuine associations due to low statistical power. Lack of replication for association of some SNPs with BMD<sub>a</sub> may also be due to the relatively small number of subjects in our DXA subsample compared with the GWAS meta-analysis. In addition, EMAS is a male population whereas the GWAS meta-analysis data was based on studies of both men and women.</p>
+      <p>Assessment of cortical vBMD using pQCT is subject to the partial volume effect; the thinner the cortices the lower vBMD. In our analysis, we used a higher threshold (960 mg/cm<sup>3</sup>) for analysis of cortical vBMD rather than the traditional 710 mg/cm<sup>3</sup> threshold <xref ref-type="bibr" rid="pone.0028031-Ward2">[26]</xref> to reduce the likelihood of this effect. In addition, most of the SNPs associated with cortical vBMD were also associated with areal and/or volumetric BMD at other skeletal sites but they were not associated with cortical thickness suggesting that they are real findings rather than false positive results arising due to technical artefact.</p>
+      <p>In summary, our findings suggest that SNPs within <italic>GPR177</italic> and <italic>MAP3K14</italic> involved in the NF-κB pathway influence BMD at both axial (LS and Hip) and peripheral sites (radius) and they also influence radius geometry. We also found some evidence of association between SNPs within <italic>MAP3K14</italic> and bone turnover. However, these findings require replication in independent populations. If confirmed, fine mapping and functional studies will be needed to identify the causal variants. In addition, combinations of SNPs from different genes in the NF-κB and RANKL/RANK/OPG pathways may have substantial effects on individuals carrying risk alleles of both SNPs highlighting the importance of these pathways in the genetic basis of bone health.</p>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0028031.s001" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0028031.s001" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Genetic association between </bold>
+            <bold>
+              <italic>MAP3K14</italic>
+            </bold>
+            <bold> SNPs and BMD<sub>a</sub>.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0028031.s002" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0028031.s002" xlink:type="simple">
+        <label>Table S2</label>
+        <caption>
+          <p>
+            <bold>Genetic association between </bold>
+            <bold>
+              <italic>MAP3K14</italic>
+            </bold>
+            <bold> SNPs and BMD<sub>v</sub>.</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The EMAS principal investigator is Professor Frederick Wu, MD, Dept of Endocrinology, Manchester Royal Infirmary, UK. The authors wish to thank the men who participated in the eight countries, the research/nursing staff in the eight centres: C Pott, Manchester, E Wouters, Leuven, M Nilsson, Malmö, M del Mar Fernandez, Santiago de Compostela, M Jedrzejowska, Lodz, H-M Tabo, Tartu, A Heredi, Szeged for their data collection and C Moseley, Manchester for data entry and project coordination. Dr. Vanderschueren is a senior clinical investigator supported by the Clinical Research Fund of the University Hospitals Leuven, Belgium. Dr. Boonen is a senior clinical investigator of the Fund for Scientific Research-Flanders, Belgium (F.W.O.-Vlaanderen). Dr. Boonen is holder of the Leuven University Chair in Metabolic Bone Diseases.</p>
+      <p>FCW Wu is the co-ordinator for the European Male Ageing Study (EMAS).</p>
+      <p>The EMAS Study Group: Florence (Gianni Forti, Luisa Petrone, Glovanni Corona); Leuven (Dirk Vanderschueren, Steven Boonen, Herman Borghs); Lodz (Krzysztof Kula, Jolanta Slowikowska-Hilczer, Renata Walczak-Jedrzejowska); London (Ilpo Huhtaniemi); Malmö (Aleksander Giwercman); Manchester (Frederick Wu, Alan Silman, Terence O'Neill, Joseph Finn, Philip Steer, Abdelouahid Tajar, David Lee, Stephen Pye); Santiago (Felipe F Casanueva, Mary Lage, Ana I Castro); Szeged (Gyorgy Bartfai, Imre Fö ldesi, Imre Fejes); Tartu (Margus Punab, Paul Korrovitz); Turku (Min Jiang).</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0028031-Consensus1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <year>1993</year>             <article-title>Consensus development conference: diagnosis, prophylaxis, and treatment of osteoporosis.</article-title>             <source>Am J Med</source>             <volume>94</volume>             <fpage>646</fpage>             <lpage>650</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-vanStaa1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>van Staa</surname><given-names>TP</given-names></name><name name-style="western"><surname>Dennison</surname><given-names>EM</given-names></name><name name-style="western"><surname>Leufkens</surname><given-names>HG</given-names></name><name name-style="western"><surname>Cooper</surname><given-names>C</given-names></name></person-group>             <year>2001</year>             <article-title>Epidemiology of fractures in England and Wales.</article-title>             <source>Bone</source>             <volume>29</volume>             <fpage>517</fpage>             <lpage>522</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Cummings1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cummings</surname><given-names>SR</given-names></name><name name-style="western"><surname>Cawthon</surname><given-names>PM</given-names></name><name name-style="western"><surname>Ensrud</surname><given-names>KE</given-names></name><name name-style="western"><surname>Cauley</surname><given-names>JA</given-names></name><name name-style="western"><surname>Fink</surname><given-names>HA</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>BMD and risk of hip and nonvertebral fractures in older men: a prospective study and comparison with older women.</article-title>             <source>J Bone Miner Res</source>             <volume>21</volume>             <fpage>1550</fpage>             <lpage>1556</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Stone1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Stone</surname><given-names>KL</given-names></name><name name-style="western"><surname>Seeley</surname><given-names>DG</given-names></name><name name-style="western"><surname>Lui</surname><given-names>LY</given-names></name><name name-style="western"><surname>Cauley</surname><given-names>JA</given-names></name><name name-style="western"><surname>Ensrud</surname><given-names>K</given-names></name><etal/></person-group>             <year>2003</year>             <article-title>BMD at multiple sites and risk of fracture of multiple types: long-term results from the Study of Osteoporotic Fractures.</article-title>             <source>J Bone Miner Res</source>             <volume>18</volume>             <fpage>1947</fpage>             <lpage>1954</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-DargentMolina1">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dargent-Molina</surname><given-names>P</given-names></name><name name-style="western"><surname>Schott</surname><given-names>AM</given-names></name><name name-style="western"><surname>Hans</surname><given-names>D</given-names></name><name name-style="western"><surname>Favier</surname><given-names>F</given-names></name><name name-style="western"><surname>Grandjean</surname><given-names>H</given-names></name><etal/></person-group>             <year>1999</year>             <article-title>Separate and combined value of bone mass and gait speed measurements in screening for hip fracture risk: results from the EPIDOS study. Epidemiologie de l'Osteoporose.</article-title>             <source>Osteoporos Int</source>             <volume>9</volume>             <fpage>188</fpage>             <lpage>192</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Videman1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Videman</surname><given-names>T</given-names></name><name name-style="western"><surname>Levalahti</surname><given-names>E</given-names></name><name name-style="western"><surname>Battie</surname><given-names>MC</given-names></name><name name-style="western"><surname>Simonen</surname><given-names>R</given-names></name><name name-style="western"><surname>Vanninen</surname><given-names>E</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Heritability of BMD of femoral neck and lumbar spine: a multivariate twin study of Finnish men.</article-title>             <source>J Bone Miner Res</source>             <volume>22</volume>             <fpage>1455</fpage>             <lpage>1462</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Krall1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Krall</surname><given-names>EA</given-names></name><name name-style="western"><surname>wson-Hughes</surname><given-names>B</given-names></name></person-group>             <year>1993</year>             <article-title>Heritable and life-style determinants of bone mineral density.</article-title>             <source>J Bone Miner Res</source>             <volume>8</volume>             <fpage>1</fpage>             <lpage>9</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Flicker1">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Flicker</surname><given-names>L</given-names></name><name name-style="western"><surname>Hopper</surname><given-names>JL</given-names></name><name name-style="western"><surname>Rodgers</surname><given-names>L</given-names></name><name name-style="western"><surname>Kaymakci</surname><given-names>B</given-names></name><name name-style="western"><surname>Green</surname><given-names>RM</given-names></name><etal/></person-group>             <year>1995</year>             <article-title>Bone density determinants in elderly women: a twin study.</article-title>             <source>J Bone Miner Res</source>             <volume>10</volume>             <fpage>1607</fpage>             <lpage>1613</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Richards1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Richards</surname><given-names>JB</given-names></name><name name-style="western"><surname>Rivadeneira</surname><given-names>F</given-names></name><name name-style="western"><surname>Inouye</surname><given-names>M</given-names></name><name name-style="western"><surname>Pastinen</surname><given-names>TM</given-names></name><name name-style="western"><surname>Soranzo</surname><given-names>N</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Bone mineral density, osteoporosis, and osteoporotic fractures: a genome-wide association study.</article-title>             <source>Lancet</source>             <volume>371</volume>             <fpage>1505</fpage>             <lpage>1512</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Rivadeneira1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Rivadeneira</surname><given-names>F</given-names></name><name name-style="western"><surname>Styrkarsdottir</surname><given-names>U</given-names></name><name name-style="western"><surname>Estrada</surname><given-names>K</given-names></name><name name-style="western"><surname>Halldorsson</surname><given-names>BV</given-names></name><name name-style="western"><surname>Hsu</surname><given-names>YH</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Twenty bone-mineral-density loci identified by large-scale meta-analysis of genome-wide association studies.</article-title>             <source>Nat Genet</source>             <volume>41</volume>             <fpage>1199</fpage>             <lpage>1206</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Styrkarsdottir1">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Styrkarsdottir</surname><given-names>U</given-names></name><name name-style="western"><surname>Halldorsson</surname><given-names>BV</given-names></name><name name-style="western"><surname>Gretarsdottir</surname><given-names>S</given-names></name><name name-style="western"><surname>Gudbjartsson</surname><given-names>DF</given-names></name><name name-style="western"><surname>Walters</surname><given-names>GB</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Multiple genetic loci for bone mineral density and fractures.</article-title>             <source>N Engl J Med</source>             <volume>358</volume>             <fpage>2355</fpage>             <lpage>2365</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Styrkarsdottir2">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Styrkarsdottir</surname><given-names>U</given-names></name><name name-style="western"><surname>Halldorsson</surname><given-names>BV</given-names></name><name name-style="western"><surname>Gretarsdottir</surname><given-names>S</given-names></name><name name-style="western"><surname>Gudbjartsson</surname><given-names>DF</given-names></name><name name-style="western"><surname>Walters</surname><given-names>GB</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>New sequence variants associated with bone mineral density.</article-title>             <source>Nat Genet</source>             <volume>41</volume>             <fpage>15</fpage>             <lpage>17</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Roshandel1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Roshandel</surname><given-names>D</given-names></name><name name-style="western"><surname>Holliday</surname><given-names>KL</given-names></name><name name-style="western"><surname>Pye</surname><given-names>SR</given-names></name><name name-style="western"><surname>Boonen</surname><given-names>S</given-names></name><name name-style="western"><surname>Borghs</surname><given-names>H</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Genetic variation in the RANKL/RANK/OPG signaling pathway is associated with bone turnover and bone mineral density in men.</article-title>             <source>J Bone Miner Res</source>             <volume>25</volume>             <fpage>1830</fpage>             <lpage>1838</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Hadjidakis1">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hadjidakis</surname><given-names>DJ</given-names></name><name name-style="western"><surname>Androulakis</surname><given-names>II</given-names></name></person-group>             <year>2006</year>             <article-title>Bone remodeling.</article-title>             <source>Ann N Y Acad Sci</source>             <volume>1092</volume>             <fpage>385</fpage>             <lpage>396</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Soysa1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Soysa</surname><given-names>NS</given-names></name><name name-style="western"><surname>Alles</surname><given-names>N</given-names></name></person-group>             <year>2009</year>             <article-title>NF-kappaB functions in osteoclasts.</article-title>             <source>Biochem Biophys Res Commun</source>             <volume>378</volume>             <fpage>1</fpage>             <lpage>5</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Matsuda1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Matsuda</surname><given-names>A</given-names></name><name name-style="western"><surname>Suzuki</surname><given-names>Y</given-names></name><name name-style="western"><surname>Honda</surname><given-names>G</given-names></name><name name-style="western"><surname>Muramatsu</surname><given-names>S</given-names></name><name name-style="western"><surname>Matsuzaki</surname><given-names>O</given-names></name><etal/></person-group>             <year>2003</year>             <article-title>Large-scale identification and characterization of human genes that activate NF-kappaB and MAPK signaling pathways.</article-title>             <source>Oncogene</source>             <volume>22</volume>             <fpage>3307</fpage>             <lpage>3318</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Banziger1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Banziger</surname><given-names>C</given-names></name><name name-style="western"><surname>Soldini</surname><given-names>D</given-names></name><name name-style="western"><surname>Schutt</surname><given-names>C</given-names></name><name name-style="western"><surname>Zipperlen</surname><given-names>P</given-names></name><name name-style="western"><surname>Hausmann</surname><given-names>G</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Wntless, a conserved membrane protein dedicated to the secretion of Wnt proteins from signaling cells.</article-title>             <source>Cell</source>             <volume>125</volume>             <fpage>509</fpage>             <lpage>522</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Lee1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lee</surname><given-names>D</given-names></name><name name-style="western"><surname>O'Neill</surname><given-names>T</given-names></name><name name-style="western"><surname>Pye</surname><given-names>S</given-names></name><name name-style="western"><surname>Silman</surname><given-names>A</given-names></name><name name-style="western"><surname>Finn</surname><given-names>J</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>The European Male Ageing Study (EMAS): design, methods and recruitment.</article-title>             <source>Int J Androl</source>             <volume>32</volume>             <fpage>11</fpage>             <lpage>24</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Lee2">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lee</surname><given-names>DM</given-names></name><name name-style="western"><surname>O'Neill</surname><given-names>TW</given-names></name><name name-style="western"><surname>Pye</surname><given-names>SR</given-names></name><name name-style="western"><surname>Silman</surname><given-names>AJ</given-names></name><name name-style="western"><surname>Finn</surname><given-names>JD</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>The European Male Ageing Study (EMAS): design, methods and recruitment.</article-title>             <source>Int J Androl</source>             <volume>32</volume>             <fpage>11</fpage>             <lpage>24</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Reid1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Reid</surname><given-names>DM</given-names></name><name name-style="western"><surname>Mackay</surname><given-names>I</given-names></name><name name-style="western"><surname>Wilkinson</surname><given-names>S</given-names></name><name name-style="western"><surname>Miller</surname><given-names>C</given-names></name><name name-style="western"><surname>Schuette</surname><given-names>DG</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Cross-calibration of dual-energy X-ray densitometers for a large, multi-center genetic study of osteoporosis.</article-title>             <source>Osteoporos Int</source>             <volume>17</volume>             <fpage>125</fpage>             <lpage>132</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Ward1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ward</surname><given-names>KA</given-names></name><name name-style="western"><surname>Roberts</surname><given-names>SA</given-names></name><name name-style="western"><surname>Adams</surname><given-names>JE</given-names></name><name name-style="western"><surname>Mughal</surname><given-names>MZ</given-names></name></person-group>             <year>2005</year>             <article-title>Bone geometry and density in the skeleton of pre-pubertal gymnasts and school children.</article-title>             <source>Bone</source>             <volume>36</volume>             <fpage>1012</fpage>             <lpage>1018</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Barrett1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Barrett</surname><given-names>JC</given-names></name><name name-style="western"><surname>Fry</surname><given-names>B</given-names></name><name name-style="western"><surname>Maller</surname><given-names>J</given-names></name><name name-style="western"><surname>Daly</surname><given-names>MJ</given-names></name></person-group>             <year>2005</year>             <article-title>Haploview: analysis and visualization of LD and haplotype maps.</article-title>             <source>Bioinformatics</source>             <volume>21</volume>             <fpage>263</fpage>             <lpage>265</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Purcell1">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Purcell</surname><given-names>S</given-names></name><name name-style="western"><surname>Neale</surname><given-names>B</given-names></name><name name-style="western"><surname>Todd-Brown</surname><given-names>K</given-names></name><name name-style="western"><surname>Thomas</surname><given-names>L</given-names></name><name name-style="western"><surname>Ferreira</surname><given-names>MA</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>PLINK: a tool set for whole-genome association and population-based linkage analyses.</article-title>             <source>Am J Hum Genet</source>             <volume>81</volume>             <fpage>559</fpage>             <lpage>575</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Kraft1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kraft</surname><given-names>P</given-names></name><name name-style="western"><surname>Yen</surname><given-names>YC</given-names></name><name name-style="western"><surname>Stram</surname><given-names>DO</given-names></name><name name-style="western"><surname>Morrison</surname><given-names>J</given-names></name><name name-style="western"><surname>Gauderman</surname><given-names>WJ</given-names></name></person-group>             <year>2007</year>             <article-title>Exploiting gene-environment interaction to detect genetic associations.</article-title>             <source>Hum Hered</source>             <volume>63</volume>             <fpage>111</fpage>             <lpage>119</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Li1">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Li</surname><given-names>J</given-names></name><name name-style="western"><surname>Ji</surname><given-names>L</given-names></name></person-group>             <year>2005</year>             <article-title>Adjusting multiple testing in multilocus analyses using the eigenvalues of a correlation matrix.</article-title>             <source>Heredity</source>             <volume>95</volume>             <fpage>221</fpage>             <lpage>227</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0028031-Ward2">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ward</surname><given-names>KA</given-names></name><name name-style="western"><surname>Adams</surname><given-names>JE</given-names></name><name name-style="western"><surname>Hangartner</surname><given-names>TN</given-names></name></person-group>             <year>2005</year>             <article-title>Recommendations for thresholds for cortical bone geometry and density measurement by peripheral quantitative computed tomography.</article-title>             <source>Calcif Tissue Int</source>             <volume>77</volume>             <fpage>275</fpage>             <lpage>280</lpage>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

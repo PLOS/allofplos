@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+	<front>
+		<journal-meta>
+    <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+    <journal-id journal-id-type="publisher-id">plos</journal-id>
+    <journal-id journal-id-type="pmc">plosone</journal-id>
+    <journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group>
+    <issn pub-type="epub">1932-6203</issn>
+    <publisher><publisher-name>Public Library of Science</publisher-name>
+    <publisher-loc>San Francisco, USA</publisher-loc></publisher>
+    </journal-meta><article-meta>
+			<article-id pub-id-type="publisher-id">PONE-D-13-11786</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0067227</article-id><article-categories><subj-group subj-group-type="heading">
+    <subject>Research Article</subject></subj-group></article-categories><title-group>
+				<article-title>The Relationship between Leukocyte Mitochondrial DNA Copy Number and Telomere Length in Community-Dwelling Elderly Women</article-title>
+    	<alt-title alt-title-type="running-head">Leukocyte mtDNA Content and Telomere Length</alt-title>
+			</title-group>
+			<contrib-group>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Kim</surname>
+						<given-names>Jung-Ha</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Kim</surname>
+						<given-names>Hye Kyung</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff2"><sup>2</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Ko</surname>
+						<given-names>Jae-Hong</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff3"><sup>3</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author" equal-contrib="yes">
+					<name name-style="western">
+						<surname>Bang</surname>
+						<given-names>Hyoweon</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff3"><sup>3</sup></xref>
+					<xref ref-type="corresp" rid="cor1"><sup>*</sup></xref>
+				</contrib>
+				<contrib xlink:type="simple" contrib-type="author" equal-contrib="yes">
+					<name name-style="western">
+						<surname>Lee</surname>
+						<given-names>Duk-Chul</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff4"><sup>4</sup></xref>
+					<xref ref-type="corresp" rid="cor1"><sup>*</sup></xref>
+				</contrib>
+			</contrib-group>
+			<aff id="aff1"><label>1</label> <addr-line>Department of Family Medicine, Chung-Ang University Healthcare System, Seoul, Korea</addr-line></aff>
+			<aff id="aff2"><label>2</label> <addr-line>Health Promotion Center, Gangnam Severance Hospital, Yonsei University College of Medicine, Seoul, Korea</addr-line></aff>
+			<aff id="aff3"><label>3</label> <addr-line>Department of Physiology, College of Medicine, Chung-Ang University, Seoul, Korea</addr-line></aff>
+			<aff id="aff4"><label>4</label> <addr-line>Department of Family Medicine, Severance Hospital, Yonsei University College of Medicine, Seoul, Korea</addr-line></aff>
+    	<contrib-group>
+    		<contrib contrib-type="editor" xlink:type="simple">
+    			<name name-style="western">
+    				<surname>Vina</surname>
+    				<given-names>Jose</given-names>
+    			</name>
+    			<role>Editor</role>
+    			<xref ref-type="aff" rid="edit1"/>
+    		</contrib>
+    	</contrib-group>
+    	<aff id="edit1">
+    		<addr-line>University of Valencia, Spain</addr-line></aff>
+    	<author-notes>
+				<corresp id="cor1">* E-mail: <email xlink:type="simple">faith@yuhs.ac</email> (D-CL); <email xlink:type="simple">haena@cau.ac.kr</email> (HB)</corresp>
+			<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn><fn fn-type="con"><p>Conceived and designed the experiments: J.H. Kim KHK J.H. Ko HB DCL. Performed the experiments: J.H. Kim KHK DCL. Analyzed the data: J.H. Kim DCL. Contributed reagents/materials/analysis tools: J.H. Ko HB. Wrote the manuscript: J.H. Kim HB DCL. </p></fn></author-notes>
+			<pub-date pub-type="collection"><year>2013</year></pub-date><pub-date pub-type="epub">
+        <day>13</day>
+        <month>6</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume><issue>6</issue><elocation-id>e67227</elocation-id><history><date date-type="received">
+          <day>18</day>
+          <month>03</month>
+          <year>2013</year>
+        </date>
+        <date date-type="accepted">
+          <day>15</day>
+          <month>05</month>
+          <year>2013</year>
+        </date>
+      </history><permissions>
+    <copyright-year>2013</copyright-year><copyright-holder>Kim et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license>
+    </permissions><abstract>
+				<sec sec-type="headed">
+					<title>Purpose</title>
+					<p>Both telomere length and mitochondrial function are accepted as reflective indices of aging. Recent studies have shown that telomere dysfunction may influence impaired mitochondrial biogenesis and function. However, there has been no study regarding the possible association between telomere and mitochondrial function in humans. Therefore, the purpose of the study was to identify any relationships between mitochondrial and telomere function.</p>
+				</sec>
+				<sec sec-type="headed">
+					<title>Methods</title>
+					<p>The present study included 129 community-dwelling, elderly women. The leukocyte mitochondrial DNA copy number and telomere length were measured using a quantitative real-time polymerase chain reaction method. Anthropometric measurement, biochemical blood testing, a depression screening questionnaire using a 15-question geriatric depression scale (GDS-15), and a cognitive function test using the Korean version of the mini mental state examination (K-MMSE) were performed.</p>
+				</sec>
+				<sec sec-type="headed">
+					<title>Results</title>
+					<p>Leukocyte mtDNA copy number was positively associated with telomere length (<italic>r</italic>=0.39, <italic>p</italic>=&lt;0.0001) and K-MMSE score (<italic>r</italic>=0.06, <italic>p</italic>=0.02). Additionally, leukocyte mtDNA copy number was negatively correlated with GDS-15 score (<italic>r</italic>=-0.17, <italic>p</italic>=0.04). Age (<italic>r</italic>=-0.15, <italic>p</italic>=0.09), waist circumference (r=-0.16, <italic>p</italic>=0.07), and serum ferritin level (<italic>r</italic>=-0.13, <italic>p</italic>=0.07) tended to be inversely correlated with leukocyte mtDNA copy number. With a stepwise multiple regression analysis, telomere length was found to be an independent factor associated with leukocyte mtDNA copy number after adjustment for confounding variables including age, body mass index, waist circumference, total cholesterol, HDL-cholesterol, LDL-cholesterol, triglycerides, hs-CRP, serum ferritin, HOMA-IR, K-MMSE, GDS-15, hypertension, diabetes, dyslipidemia, currently smoking, alcohol drinking, and regular exercise.</p>
+				</sec>
+				<sec sec-type="headed">
+					<title>Conclusions</title>
+					<p>This study showed that leukocyte mtDNA copy number was positively correlated with leukocyte telomere length in community-dwelling elderly women. Our findings suggest that telomere function may influence mitochondrial function in humans.</p>
+				</sec>
+			</abstract>
+		<funding-group><funding-statement>No current external funding sources for this study</funding-statement></funding-group></article-meta>
+	</front>
+	<body>
+		<sec id="s1" sec-type="introduction">
+			<title>Introduction</title>
+			<p>Mitochondria are the cellular energy-generation organelles that convert ingested food into adenosine triphosphate (ATP) using the electron transport chain. In this process, reactive oxygen species (ROS) are produced as necessary by-products and can easily lead to mitochondrial DNA damage and respiratory chain impairment [<xref ref-type="bibr" rid="B1">1</xref>]. Mitochondria also play an essential role in cell proliferation, differentiation and apoptosis [<xref ref-type="bibr" rid="B2">2</xref>]. Functional changes in mitochondria may be associated with aging, age-related conditions or disorders, and age-related loss of vigor [<xref ref-type="bibr" rid="B3">3</xref><xref ref-type="bibr" rid="B4"/>-<xref ref-type="bibr" rid="B5">5</xref>]. Therefore, mitochondrial gene stability and biogenesis are necessary for maintaining the functions of cells, tissues and organs.</p>
+			<p>Telomeres are repetitive sequences of DNA (TTAGGG) located at the ends of mammalian chromosomes and contribute to the stability and function of chromosomes [<xref ref-type="bibr" rid="B6">6</xref>]. Telomere length is influenced not only by birth telomere length as the genetic factor [<xref ref-type="bibr" rid="B7">7</xref>] but also by inflammation, oxidative stress, or psychosocial as environmental factors [<xref ref-type="bibr" rid="B8">8</xref><xref ref-type="bibr" rid="B9"/>-<xref ref-type="bibr" rid="B10">10</xref>]. Leukocyte telomere length decreases in length with age, and its shortening is thought to be associated with increased aging-related diseases, such as cardiovascular disease, dementia and type 2 diabetes mellitus, as well as overall mortality [<xref ref-type="bibr" rid="B11">11</xref><xref ref-type="bibr" rid="B12"/><xref ref-type="bibr" rid="B13"/>-<xref ref-type="bibr" rid="B14">14</xref>]. Furthermore, telomere length in red blood cells is a strong predictor of lifespan in birds [<xref ref-type="bibr" rid="B15">15</xref>]. Therefore, telomere length has been deemed a useful marker for monitoring aging.</p>
+			<p>Both telomere length and mitochondrial function are generally accepted as being reflective of aging. Recent studies showed that telomere dysfunction including shortening is associated with impaired mitochondrial biogenesis and function, as well as increased ROS level [<xref ref-type="bibr" rid="B16">16</xref>]. It has been suggested that the telomere-p53-peroxisome proliferator-activated receptor gamma coactivator (PGC) axis has a direct connection with telomere dysfunction and mitochondrial compromise in a telomere dysfunction mouse model [<xref ref-type="bibr" rid="B16">16</xref>].</p>
+			<p>However, there has been no study about the possible association between telomere and mitochondrial function in humans. Therefore, the purpose of the present study was to determine the relationship between mitochondrial and telomere functions using leukocyte mtDNA copy number and telomere length.</p>
+		</sec>
+		<sec id="s2" sec-type="methods">
+			<title>Patients and Methods</title>
+			<sec id="s2.1">
+				<title>Ethics Statement</title>
+				<p>All subjects participated in the study voluntarily, and written informed consent was obtained from each participant. The study complied with the Declaration of Helsinki and the institutional review board of Gangnam Severance Hospital approved this study.</p>
+			</sec>
+			<sec id="s2.2">
+				<title>Study subjects</title>
+				<p>The Yonsei Aging Study was designed to identify factors related to cognitive function, physical performance and the aging process in community dwelling, otherwise healthy elderly people in Korea [<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B18">18</xref>]. In all, 200 elderly people were recruited through public health centers located in the Yangpyung and Ilsan districts in 2008. In this cross-sectional study, we included 129 women over the age of 60 years. The subjects had no previous diagnoses of dementia, Parkinson’s disease, stroke, ischemic heart disease, congestive heart failure, arrhythmia, depression, cancer, thyroid disorders, or chronic renal disease. Patients who were taking estrogen or those with histories of estrogen replacement therapy were excluded. Additionally, individuals with serious cognitive dysfunction (MMSE score ≤10) or functional impairment of Activities of Daily Living and Instrumental Activities of Daily Living (score &gt;0) were also ruled out.</p>
+			</sec>
+			<sec id="s2.3">
+				<title>Assessment of clinical parameters</title>
+				<p>All subjects completed a lifestyle questionnaire which assessed alcohol consumption, smoking status, physical exercise, current medications, and medication history. Alcohol consumption was defined as the consumption of one or more drinks per week. Patients who reported that they smoked at the time of the study were considered to have a smoking habit. Regular exercise was defined as physical exercise performed for at least 30 min more than three times each week.</p>
+				<p>One highly trained examiner conducted all of the anthropometric measurements. Body weight was measured to the nearest 0.1 kg using an electronic scale while participants wore light clothing and no shoes. Height was measured to the nearest 0.1 cm using a stadiometer. Waist circumference was measured midway between the lowest rib and the iliac crest while participants stood upright, and hip circumference was measured at the maximal protrusion of the greater trochanter. Body mass index (BMI) was calculated as weight/height<sup>2</sup> (kg/m<sup>2</sup>). Bioelectrical impedence analysis was used to estimate body fat percentage using an Inbody 3.0 meter (Biospace, Seoul, Korea). Blood pressure was measured in the sitting position after a 10-min rest period.</p>
+				<p>Biochemical tests were performed on blood samples collected after overnight fasting (&gt;12 hours). Serum levels of fasting glucose, total cholesterol, HDL-cholesterol, triglycerides, and high-sensitivity C-reactive protein (hs-CRP) were measured using an ADVIA 1650 Chemistry System (Siemens, Tarrytown, NY, USA). Low-density lipoprotein (LDL)-cholesterol was calculated using Friedewald’s formula [LDL-cholesterol=total cholesterol − high-density liproprotein (HDL)-cholesterol − (triglycerides/5)] if the serum triglyceride level was below 400 mg/dL. Fasting insulin level was measured by electrochemiluminescence immunoassay (Roche, Indianapolis, IN, USA), and insulin resistance was estimated using the homeostasis model assessment of insulin resistance (HOMA-IR) index [(insulin (µlU/ml) × fasting blood glucose (mg/dl)/18)/22.5]. Ferritin level was assayed using an Immulite 2000 (Siemens, Tarrytown, NY, USA). The hypertension group was defined as patients with systolic BP ≥140 mmHg or diastolic BP ≥90 mmHg or use of anti-hypertensive medication. The diabetes group was defined as participants with fasting blood glucose ≥126 mg/dL or those who used insulin or hypoglycemic medication. The dyslipidemia group was defined as patients with hypercholesterolemia (&gt;240 mg/dL), hypertriglyceridemia (≥150 mg/dL), low HDL-cholesterol (&lt;50 mg/dL), or those using lipid-lowering agents.</p>
+			</sec>
+			<sec id="s2.4">
+				<title>Assessment of depression and cognitive function</title>
+				<p>For screening of depression, we used the validated Korean version of the short-form Geriatric Depression Scale (GDS-15), which consists of 15 questions [<xref ref-type="bibr" rid="B19">19</xref>]. Cognitive function was evaluated with the Korean Mini-Mental State Examination (K-MMSE). Both questionnaires were administered by two experienced family physicians who fully understood their use.</p>
+			</sec>
+			<sec id="s2.5">
+				<title>Measurement of leukocyte mitochondrial DNA (mtDNA) copy number</title>
+				<p>DNA from peripheral leukocytes was extracted from 1 ml of whole blood using a commercial kit (Qiagen Inc, Valencia, CA, USA). The relative mtDNA copy number was measured using real-time polymerase chain reaction (RT-PCR) with the Light Cycler-Fast Start DNA Master SYBR Green I kit from Roche Molecular Biochemicals (Pleasanton, CA, USA). mtDNA quantity was normalized by simultaneous measurement of the nuclear gene β-globin [<xref ref-type="bibr" rid="B20">20</xref>]. Forward and reverse primers for β-globin were <named-content content-type="gene" xlink:type="simple">5′-GAAGAGCCAAGGACAGGTAC-3′</named-content> and <named-content content-type="gene" xlink:type="simple">5′-CAACTTCATCCACGTTCACC-3′</named-content>, respectively, and forward and reverse primers for the mitochondrial ND1 gene were <named-content content-type="gene" xlink:type="simple">5′-AACATACCCATGGCCAACCT-3′</named-content> and <named-content content-type="gene" xlink:type="simple">5′-AGCGAAGGGTTGTAGTAGCCC-3′</named-content>, respectively. After denaturation at 95 °C for 300 s, DNA samples were subjected to 40 cycles of incubation at 95 °C for 0.1 s, 58 °C for 6 s, and 72 °C for 18 s. The number of PCR cycles necessary to produce 20 ng of DNA product was defined as the threshold cycle number (Ct), and the mtDNA copy number was calculated using the following equation: relative copy number = 2<sup>ΔCt</sup> (ΔCt = Ct<sub>β-globin</sub> − Ct<sub>ND1</sub>).</p>
+			</sec>
+			<sec id="s2.6">
+				<title>Measurement of leukocyte telomere length</title>
+				<p>Genomic DNA was extracted from whole blood using the G-spin<sup>TM</sup> Genomic DNA Extraction Kit for Blood (iNtRON Biotechnology Inc., Korea). All DNA samples were diluted to the same concentration (based on ultraviolet (UV) absorbance) and stored at -80°C until use. Leukocyte telomere length was measured as telomere repeat copy number relative to single gene copy number (T/S ratio) by quantitative real-time PCR, as previously described by Cawthon [<xref ref-type="bibr" rid="B21">21</xref>]. Real-time PCR was performed using a LightCycler 2.0 (Roche, Mannheim, Germany), and the rate of accumulation of amplified DNA was measured by continuous monitoring with the LightCycler FastStart DNA Master SYBR Green I (Roche Diagnostic, Mannheim, Germany), with MgCl<sub>2</sub> at a final concentration of 2 mM. The primers for the telomere PCR were 200 nmol/L of <named-content content-type="gene" xlink:type="simple">5'-GGTTTTTGAGGGT GAGGGTGAGGGTGAGGGTGAGGGT-3'</named-content> and 200 nmol/L of <named-content content-type="gene" xlink:type="simple">5'-TCCCGACTATCCC TATCCCTATCCCTATCCCTATCC CTA-3'</named-content>. The primers for the beta-globin PCR were 300 nmol/L of <named-content content-type="gene" xlink:type="simple">5’-GCTTCTGACACAACTGTGTTCACTAGC-3'</named-content> and 500 nmol/L of <named-content content-type="gene" xlink:type="simple">5'-CACCAACTTCATCCACGTTCACC-3'</named-content>. The thermal cycling profile for telomere amplification was 95°C for 10 min followed by 25 cycles of 95°C for 10 s and 58°C for 1 min; the beta-globin amplification was 95°C for 10 min followed by 35 cycles of 95°C for 10 s and 56°C for 15s. Each sample was run in duplicate using 25 ng of DNA per 10 µl reaction. A no-template control was included in each run, and the same calibrator sample was used in all runs to allow comparison of results across runs. A melting curve analysis was performed on every run to verify specificity and identity of the PCR products. Quantitative values were obtained from the Ct value at which a single increase associated with exponential growth of PCR products was detected using LightCycler analysis software. The Ct values were used to calculate the T/S ratio for each sample using the following equation: T/S=2<sup>−ΔCt</sup> (where ΔCt = Ct<sub>single-copy gene</sub>-Ct<sub>telomere</sub>). The coefficients of variation (CV) of the telomere, single-gene and T/S ratio duplicate assays were &lt;4%, &lt;3%, and &lt;5%, respectively.</p>
+			</sec>
+			<sec id="s2.7">
+				<title>Statistical analyses</title>
+				<p>Data are presented as mean ± standard deviation (SD) in a normal distribution, median with interquartile range (IQR, 25<sup>th</sup>-75<sup>th</sup> percentile) in non-normal distribution or number (%) in categorical variables. Insulin, HOMA-IR, hs-CRP, triglycerides, serum ferritin, and mtDNA copy numbers were logarithmically transformed prior to statistical analyses in order to approximate a normal distribution. Pearson correlation coefficients were calculated to evaluate the relationships between mtDNA copy number and the continuous variables. Significance was defined at the 0.05 level of confidence. We performed a stepwise multiple linear regression analysis to exclude the influences of potential confounding variables. Significance for entry into the model used the 0.15 level automatically determined in the stepwise regression. All calculations were performed using the SAS 9.1 statistics package (SAS Institute, Inc., Cary, NC, US).</p>
+			</sec>
+		</sec>
+		<sec id="s3" sec-type="results">
+			<title>Results</title>
+			<p>The mean age of the participants was 73.74±6.99 years, and the mean log transformed mtDNA copy number and telomere length were 0.63±0.25 and 0.91±0.36, respectively. <xref ref-type="table" rid="tab1">Table 1</xref> shows the clinical characteristics of the study participants.</p>
+			<table-wrap id="tab1" position="float">
+				
+				<label>Table 1</label>
+				<caption>
+					<title>Clinical characteristics of study subjects (N=129).</title>
+				</caption>
+				<table>
+					<thead>
+						<tr>
+							<th rowspan="1" colspan="1"><bold>Variables</bold></th>
+							<th rowspan="1" colspan="1"><bold>Value</bold></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="1" colspan="1">Age (years)</td>
+							<td char="±" align="left" rowspan="1" colspan="1">73.74 ± 6.99</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">Body mass index (kg/m<sup>2</sup>)</td>
+							<td char="±" align="left" rowspan="1" colspan="1">25.23 ± 3.25</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">Waist circumference (cm)</td>
+							<td char="±" align="left" rowspan="1" colspan="1">87.87 ± 8.81</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="1"><bold>Cardiometabolic parameters</bold></td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Systolic blood pressure (mmHg)</td>
+							<td char="±" align="left" rowspan="1" colspan="1">131.04 ± 16.98</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Diastolic blood pressure (mmHg)</td>
+							<td char="±" align="left" rowspan="1" colspan="1">73.66 ± 10.32</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Fasting glucose (mg/dL)</td>
+							<td char="±" align="left" rowspan="1" colspan="1">100.38 ± 24.59</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Fasting insulin (µIU/mL)</td>
+							<td char="." align="left" rowspan="1" colspan="1">5.91 (4.04-9.21)</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  HOMA-IR</td>
+							<td char="." align="left" rowspan="1" colspan="1">1.42 (0.90-2.26)</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Total cholesterol (mg/dL)</td>
+							<td char="±" align="left" rowspan="1" colspan="1">188.62 ± 36.84</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  High-density lipoprotein cholesterol (mg/dL)</td>
+							<td char="±" align="left" rowspan="1" colspan="1">53.43 ± 12.73</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Low-density lipoprotein cholesterol (mg/dL)</td>
+							<td char="±" align="left" rowspan="1" colspan="1">108.89 ± 35.59</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Triglyceride (mg/dL)</td>
+							<td rowspan="1" colspan="1">110 (89-55)</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  High-sensitivity C-reactive protein (mg/mL)</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.10 (0.053-0.172)</td>
+						</tr>
+					    <tr>
+					    	<td rowspan="1" colspan="1">Ferritin (ng/mL)</td>
+					    	<td rowspan="1" colspan="1">76.39 (54.39-110.90)</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Log mitochondrial DNA copy number</td>
+							<td char="±" align="left" colspan="2" rowspan="1">0.63 ± 0.25</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Telomere length (T/S ratio)</td>
+							<td char="±" align="left" colspan="2" rowspan="1">0.91 ± 0.36</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="1"><bold>Mental function</bold></td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Korean mini-mental state examination (score)</td>
+							<td char="±" align="left" colspan="2" rowspan="1">24.58 ± 4.18</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Geriatric depression scales-15 (score)</td>
+							<td char="±" align="left" colspan="2" rowspan="1">6.31 ± 3.78</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">Hypertension</td>
+							<td char="." align="left" colspan="2" rowspan="1">80 (62.02)</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">Diabetes</td>
+							<td char="." align="left" colspan="2" rowspan="1">21 (16.28)</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">Dyslipidemia</td>
+							<td char="." align="left" colspan="2" rowspan="1">64 (49.61)</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">Regular exercise</td>
+							<td char="." align="left" colspan="2" rowspan="1">62 (48.06)</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">Alcohol drinking</td>
+							<td char="." align="left" colspan="2" rowspan="1">6 (4.65)</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">Current smoking</td>
+							<td char="." align="left" colspan="2" rowspan="1">4 (3.10)</td>
+						</tr>
+					</tbody>
+				</table>
+				<table-wrap-foot>
+					<fn>
+						<p>Note: HOMA-IR; homeostasis model of assessment of insulin resistance.</p>
+					</fn>
+					<fn>
+						<p>Regular exercise was defined as physical exercise performed for at least 30 min more than three times each week. Alcohol drinking was defined as the consumption of one or more drinks per week.</p>
+					</fn>
+					<fn>
+						<p>Data are expressed as mean ± SD or number (%). Skewed data are expressed as median (25<sup>th</sup>-75<sup>th</sup> percentile).</p>
+					</fn>
+				</table-wrap-foot>
+			</table-wrap>
+			<p><xref ref-type="table" rid="tab2">Table 2</xref> shows the associations between leukocyte mtDNA copy number and measured parameters. In univariate analyses, leukocyte mtDNA copy number was positively associated with K-MMSE score (r=0.06, p=0.02). Additionally, leukocyte mtDNA copy number was negatively correlated with GDS-15 score (r=-0.17, p=0.04). Age (r=-0.15, p=0.09), waist circumference (r=-0.16, p=0.07), and serum ferritin level (r=-0.13, p=0.07) tended to be inversely correlated with leukocyte mtDNA copy number, although the relationship was not statistically significant. <xref ref-type="fig" rid="pone-0067227-g001">Figure 1</xref> shows the relationship between leukocyte mtDNA copy number and telomere length (r=0.39, p=&lt;0.0001).</p>
+			<table-wrap id="tab2" position="float">
+				
+				<label>Table 2</label>
+				<caption>
+					<title>Correlation between leukocyte mtDNA copy numbers and various parameters.</title>
+				</caption>
+				<table>
+					<thead>
+						<tr>
+							<th rowspan="1" colspan="1"><bold>Variables</bold></th>
+							<th rowspan="1" colspan="1"><bold><italic>r</italic></bold></th>
+							<th rowspan="1" colspan="1"><bold><italic>P</italic>-value</bold></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="1" colspan="1">Age</td>
+							<td char="." align="left" rowspan="1" colspan="1">-0.15</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.09</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">Body mass index</td>
+							<td char="." align="left" rowspan="1" colspan="1">-0.01</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.90</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">Waist circumference</td>
+							<td char="." align="left" rowspan="1" colspan="1">-0.16</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.07</td>
+						</tr>
+						<tr>
+							<td colspan="3" rowspan="1"><bold>Cardiometabolic parameters</bold></td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Systolic blood pressure</td>
+							<td char="." align="left" rowspan="1" colspan="1">-0.07</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.45</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Diastolic blood pressure</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.02</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.81</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Fasting glucose</td>
+							<td char="." align="left" rowspan="1" colspan="1">-0.05</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.12</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Fasting insulin</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.08</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.36</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  HOMA-IR</td>
+							<td char="." align="left" rowspan="1" colspan="1">-0.12</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.10</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Total cholesterol</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.02</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.78</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  High-density lipoprotein cholesterol</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.13</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.11</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Low-density lipoprotein cholesterol</td>
+							<td char="." align="left" rowspan="1" colspan="1">-0.07</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.46</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Triglyceride</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.02</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.80</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  High-sensitivity C-reactive protein</td>
+							<td char="." align="left" rowspan="1" colspan="1">-0.04</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.67</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Ferritin</td>
+							<td char="." align="left" rowspan="1" colspan="1">-0.13</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.07</td>
+						</tr>
+						<tr>
+							<td colspan="3" rowspan="1"><bold>Mental function</bold></td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Korean mini-mental state examination</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.06</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.02</td>
+						</tr>
+						<tr>
+							<td rowspan="1" colspan="1">  Geriatric depression scales-15</td>
+							<td char="." align="left" rowspan="1" colspan="1">-0.17</td>
+							<td char="." align="left" rowspan="1" colspan="1">0.04</td>
+						</tr>
+					</tbody>
+				</table>
+				<table-wrap-foot>
+					<fn>
+						<p>Note: HOMA-IR; homeostasis model of assessment of insulin resistance.</p>
+					</fn>
+					<fn>
+						<p>Coefficients(r) and p-values were calculated by the Pearson correlation model.</p>
+					</fn>
+					<fn>
+						<p>Fasting insulin, HOMA-IR, triglyceride, high sensitivity C-reactive protein, and ferritin were analyzed after log-transformation to correct for the skew in the distribution.</p>
+					</fn>
+				</table-wrap-foot>
+			</table-wrap>
+			<fig id="pone-0067227-g001" position="float">
+				<object-id pub-id-type="doi">10.1371/journal.pone.0067227.g001</object-id><label>Figure 1</label>
+				<caption>
+					<title>Relatioship between leukocyte mtDNA copy number and telomere length.</title>
+					<p>Values of mtDNA copy number were analyzed after log-transformation. <italic>p</italic>-values were calculated by Pearson’s correlation.</p>
+				</caption>
+				<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0067227.g001"/>
+			</fig>
+			<p><xref ref-type="table" rid="tab3">Table 3</xref> shows the independent associations between telomere length and mtDNA copy number. The multivariate model explained 16% of the variance of mtDNA copy number by telomere length (β=0.253, p=&lt;0.0001), 3% by current smoking (β=-0.028, p=0.03), 3% by hypertension (β=-0.091, p=0.03), 2% by serum ferritin (β=-0.056, p=0.06), and 1% by waist circumference (β=-0.004, p=0.12) in stepwise multiple regression analysis that included age, BMI, waist circumference, total cholesterol, HDL-cholesterol, LDL-cholesterol, triglycerides, hs-CRP, serum ferritin, HOMA-IR, K-MMSE score, GDS-15 score, hypertension, diabetes, dyslipidemia, current smoking, alcohol drinking, and regular exercise.</p>
+			<table-wrap id="tab3" position="float">
+				
+				<label>Table 3</label>
+				<caption>
+					<title>Stepwise multiple regression analysis for leukocyte mtDNA copy number. </title>
+				</caption>
+				<table>
+					<thead>
+						<tr>
+							<th colspan="2" rowspan="1"/>
+							<th colspan="2" rowspan="1"><bold>β coefficient</bold></th>
+							<th colspan="2" rowspan="1"><bold>SE</bold></th>
+							<th colspan="2" rowspan="1"><bold><italic>F</italic>-value</bold></th>
+							<th colspan="2" rowspan="1"><bold><italic>P</italic>-value</bold></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="2" rowspan="1">Telomere length</td>
+							<td char="." align="left" colspan="2" rowspan="1">0.253</td>
+							<td char="." align="left" colspan="2" rowspan="1">0.056</td>
+							<td char="." align="left" colspan="2" rowspan="1">23.12</td>
+							<td char="." align="left" colspan="2" rowspan="1">&lt;0.0001</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="1">Current smoking</td>
+							<td char="." align="left" colspan="2" rowspan="1">-0.028</td>
+							<td char="." align="left" colspan="2" rowspan="1">0.012</td>
+							<td char="." align="left" colspan="2" rowspan="1">5.06</td>
+							<td char="." align="left" colspan="2" rowspan="1">0.03</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="1">Hypertension</td>
+							<td char="." align="left" colspan="2" rowspan="1">-0.091</td>
+							<td char="." align="left" colspan="2" rowspan="1">0.040</td>
+							<td char="." align="left" colspan="2" rowspan="1">4.66</td>
+							<td char="." align="left" colspan="2" rowspan="1">0.03</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="1">Ferritin</td>
+							<td char="." align="left" colspan="2" rowspan="1">-0.056</td>
+							<td char="." align="left" colspan="2" rowspan="1">0.032</td>
+							<td char="." align="left" colspan="2" rowspan="1">3.50</td>
+							<td char="." align="left" colspan="2" rowspan="1">0.06</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="1">Waist circumference</td>
+							<td char="." align="left" colspan="2" rowspan="1">-0.004</td>
+							<td char="." align="left" colspan="2" rowspan="1">0.002</td>
+							<td char="." align="left" colspan="2" rowspan="1">2.47</td>
+							<td char="." align="left" colspan="2" rowspan="1">0.12</td>
+						</tr>
+					</tbody>
+				</table>
+				<table-wrap-foot>
+					<fn>
+						<p>R<sup>2</sup>=0.25. All variables left in the model are significant at the 0.15 level. No other variable met the 0.15 significant level for entry into the model. Variables included in the stepwise model: age, body mass index, waist circumference, total cholesterol, HDL-cholesterol, LDL-cholesterol, triglyceride, hs-CRP, HOMA-IR, K-MMSE, GDS-15, hypertension, diabetes, dyslipidemia, alcohol drinking, regular exercise, current smoking.</p>
+					</fn>
+					<fn>
+						<p>Fasting insulin, HOMA-IR, triglyceride, high sensitivity C-reactive protein, and ferritin were analyzed after log-transformation to correct for the skew in the distribution.</p>
+					</fn>
+				</table-wrap-foot>
+			</table-wrap>
+		</sec>
+		<sec id="s4" sec-type="discussion">
+			<title>Discussion</title>
+			<p>This study showed that leukocyte mtDNA copy number was positively correlated with leukocyte telomere length in elderly women. We also found that leukocyte telomere length was an independent factor associated with leukocyte mtDNA copy number after adjusting for potential confounders including age, obesity and inflammatory indices in a stepwise multiple linear regression analysis.</p>
+			<p>Recently, many studies have shown that a low leukocyte mtDNA copy number is correlated with mitochondrial-related metabolic disorders or conditions, such as insulin resistance [<xref ref-type="bibr" rid="B22">22</xref>,<xref ref-type="bibr" rid="B23">23</xref>], glucose dysregulation [<xref ref-type="bibr" rid="B24">24</xref>], non-alcoholic fatty liver disease [<xref ref-type="bibr" rid="B25">25</xref>], elevated homocysteine level [<xref ref-type="bibr" rid="B26">26</xref>], and hyperlipidemia [<xref ref-type="bibr" rid="B27">27</xref>]. Therefore, leukocyte mtDNA copy number could not only be related with mitochondrial biogenesis reflecting mitochondrial function, but also might be used as a surrogate marker of numerous metabolic diseases associated with mitochondrial dysfunction. Mitochondrial dysfunction may additionally be related to the aging process [<xref ref-type="bibr" rid="B1">1</xref>,<xref ref-type="bibr" rid="B2">2</xref>,<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B5">5</xref>]. The increase of ROS production and the decrease of ATP generation in the mitochondria both play a pivotal role in cellular aging, and mitochondrial dysfunction can lead to aging-associated conditions or disorders such as neurodegenerative diseases, sarcopenia and malignancy [<xref ref-type="bibr" rid="B3">3</xref>].</p>
+			<p>The mitochondrial circular genomes that encode 37 genes are composed only of respiratory complex subunits and some mitochondrial tRNA and rRNA [<xref ref-type="bibr" rid="B28">28</xref>]. Therefore, in the regulation of mitochondrial biogenesis as well as various functions including cellular respiration, nuclear proteins play an important role through the expression of nuclear-encoded genes. These proteins which regulate mitochondrial functions include transcription factors such as nuclear respiratory factor (NRF)-1 and peroxisome proliferator-activated receptor (PPAR) α and γ, transcriptional coactivator such as PGC-1α and -1β, and enzymes such as Sirt1 (NAD<sup>+</sup>-dependent deacetylase), AMP-activated protein kinase, and the mammalian target of rapamycin (mTOR, kinase) [<xref ref-type="bibr" rid="B28">28</xref>]. Interestingly, a recent study showed that telomeres, the nucleoprotein complexes found at chromosome ends, can influence not only oxidative defense mechanisms, but also mitochondrial function, including biogenesis and metabolism in transcriptomic, molecular, genetic, and functional analyses of various cells or organs such as proliferative and post-mitotic tissues [<xref ref-type="bibr" rid="B16">16</xref>]. Further impaired mitochondrial biogenesis and decreased energy production were observed in telomerase-deficient mice with severe telomere dysfunction compared to that in telomerase-deficient mice with largely intact telomeres [<xref ref-type="bibr" rid="B16">16</xref>]. It has been suggested that p53 induced by telomere dysfunction and PGCs repressed by the p53 or directly by telomere dysfunction act as potential pathophysiologic mediators between telomere dysfunction and mitochondrial compromise [<xref ref-type="bibr" rid="B16">16</xref>]. Therefore, this telomere-p53-PGC-mitochondria axis may explain why shortened telomeres lead to metabolic deterioration related to biological aging.</p>
+			<p>Caloric restriction (CR), the reduction of total caloric intake while still maintaining adequate nutrition, is the most effective and useful manner to increase the lifespan [<xref ref-type="bibr" rid="B29">29</xref><xref ref-type="bibr" rid="B30"/>-<xref ref-type="bibr" rid="B31">31</xref>] and is also associated with improvement of metabolic compromises and prevention of aging-related disorders [<xref ref-type="bibr" rid="B32">32</xref>,<xref ref-type="bibr" rid="B33">33</xref>]. The longer lifespan associated with CR is involved in increased mitochondrial mass and respiration [<xref ref-type="bibr" rid="B34">34</xref>]. Although it has been reported that proteins, such as Sirt1, play a key role in the interaction of CR and lifespan lengthening [<xref ref-type="bibr" rid="B34">34</xref>], the mechanism of longevity extension by CR is not fully understood. A recent study suggested that adult-onset, short-term CR may prevent telomere shortening without increased telomerase activity or reduced oxidative damage in the small intestine and the liver of mice [<xref ref-type="bibr" rid="B35">35</xref>]. A conflicting result has also been reported regarding the effects of CR on telomere function. Long-term CR did not influence telomere length in leukocytes or muscles of rhesus monkeys [<xref ref-type="bibr" rid="B36">36</xref>]. In humans, further research will be needed to clarify the relationship between CR and telomere function/dynamics. However, the possibility cannot be excluded that improvement of mitochondrial function via preservation of telomere function is involved in other mechanisms of CR-associated health benefits.</p>
+			<p>Serum ferritin reflects body iron stores and is known to be an index of oxidative stress [<xref ref-type="bibr" rid="B37">37</xref>]. It has been reported that increased serum ferritin level is associated with insulin resistance [<xref ref-type="bibr" rid="B38">38</xref>], chronic inflammation [<xref ref-type="bibr" rid="B39">39</xref>] and metabolic syndrome [<xref ref-type="bibr" rid="B40">40</xref>]. Additionally, cigarette smoke contains many oxidants [<xref ref-type="bibr" rid="B41">41</xref>], and smokers show an elevated oxidative stress status [<xref ref-type="bibr" rid="B42">42</xref>]. In our study, serum ferritin concentration and current cigarette smoking status were inversely correlated with leukocyte mtDNA copy number. These results support the previous findings that oxidative stress can lead to a decrease in mitochondrial biogenesis.</p>
+			<p>Increasing evidence also indicates that there is a highly significant association between mitochondrial dysfunction and vascular diseases such as hypertension [<xref ref-type="bibr" rid="B43">43</xref><xref ref-type="bibr" rid="B44"/><xref ref-type="bibr" rid="B45"/><xref ref-type="bibr" rid="B46"/>-<xref ref-type="bibr" rid="B47">47</xref>]. It has been suggested that mitochondrial dysfunction, related to elevated ROS production [<xref ref-type="bibr" rid="B43">43</xref><xref ref-type="bibr" rid="B44"/>-<xref ref-type="bibr" rid="B45">45</xref>], increased mitochondrial Ca<sup>2+</sup> accumulation [<xref ref-type="bibr" rid="B46">46</xref>], and polymorphisms of mitochondria-shaping genes [<xref ref-type="bibr" rid="B47">47</xref>], may act as potential pathophysiological mechanisms in hypertension. We also found that patients in the hypertension group consistently showed decreased mtDNA copy numbers in this study.</p>
+			<p>This study has some limitations. First, it is difficult to identify the mechanisms that underlie the relationship between leukocyte mtDNA copy number and telomere length with a cross-sectional study design. Second, our results may not be generalizable to men or adults because our subjects are only elderly women. Third, the small sample size of our study is another limitation. Although our results showed a positive association between leukocyte mtDNA copy number and telomere length, further study is needed for a valid conclusion. Fourth, we did not examine mitochondrial biogenesis in skeletal muscle, which is generally accepted as the gold standard for evaluation of mitochondrial function. However, repair and regeneration of skeletal muscle, a post-mitotic tissue, may be limited, and most studies relating to the human telomeres use leukocytes, since peripheral blood can be obtained with a relatively noninvasive procedure. It has been suggested that the mtDNA content of the peripheral blood may reflect mtDNA density of muscle and liver tissue in rats [<xref ref-type="bibr" rid="B48">48</xref>]. And, data of telomere length and mtDNA copy number, provided in the same resources, could impart coherence in interpretation of results. Finally, we did not measure the levels of oxidative stress and therefore cannot directly investigate the role of oxidative stress as a mediator between leukocyte mtDNA copy number and telomere length. In spite of these limitations, this study was the first to show the relationship between mitochondrial biogenesis and telomere length in humans.</p>
+			<p>In conclusion, this study showed that leukocyte mtDNA copy number was positively correlated with leukocyte telomere length in community-dwelling elderly women. Our findings suggest that telomere function may influence mitochondrial function in humans. Further studies are needed to clearly examine the associations not only between mitochondrial and telomere function, but also between mitochondrial dysfunction-dependent metabolic disorders and telomere dysfunction.</p>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<p>The authors would like to thank Jee-Aee Im, PhD for performing laboratory analyses.</p>
+		</ack>
+		<ref-list>
+			<title>References</title>
+			<ref id="B1">
+				<label>1</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wei</surname><given-names>YH</given-names></name>, <name name-style="western"><surname>Lu</surname><given-names>CY</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>HC</given-names></name>, <name name-style="western"><surname>Pang</surname><given-names>CY</given-names></name>, <name name-style="western"><surname>Ma</surname><given-names>YS</given-names></name> (<year>1998</year>) <article-title>Oxidative damage and mutation to mitochondrial DNA and age-dependent decline of mitochondrial respiratory function</article-title>. <source>Ann N Y Acad Sci</source> <volume>854</volume>: <fpage>155</fpage>-<lpage>170</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1749-6632.1998.tb09899.x" xlink:type="simple">10.1111/j.1749-6632.1998.tb09899.x</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://9928427" xlink:type="simple">9928427</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B2">
+				<label>2</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kiefel</surname><given-names>BR</given-names></name>, <name name-style="western"><surname>Gilson</surname><given-names>PR</given-names></name>, <name name-style="western"><surname>Beech</surname><given-names>PL</given-names></name> (<year>2006</year>) <article-title>Cell biology of mitochondrial dynamics</article-title>. <source>Int Rev Cytol</source> <volume>254</volume>: <fpage>151</fpage>-<lpage>213</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0074-7696(06)54004-5" xlink:type="simple">10.1016/S0074-7696(06)54004-5</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17147999" xlink:type="simple">17147999</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B3">
+				<label>3</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wallace</surname><given-names>DC</given-names></name> (<year>2005</year>) <article-title>A mitochondrial paradigm of metabolic and degenerative diseases, aging, and cancer: a dawn for evolutionary medicine</article-title>. <source>Annu Rev Genet</source> <volume>39</volume>: <fpage>359</fpage>-<lpage>407</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev.genet.39.110304.095751" xlink:type="simple">10.1146/annurev.genet.39.110304.095751</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16285865" xlink:type="simple">16285865</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B4">
+				<label>4</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Balaban</surname><given-names>RS</given-names></name>, <name name-style="western"><surname>Nemoto</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Finkel</surname><given-names>T</given-names></name> (<year>2005</year>) <article-title>Mitochondria, oxidants, and aging</article-title>. <source>Cell</source> <volume>120</volume>: <fpage>483</fpage>-<lpage>495</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cell.2005.02.001" xlink:type="simple">10.1016/j.cell.2005.02.001</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15734681" xlink:type="simple">15734681</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B5">
+				<label>5</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Conley</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Marcinek</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Villarin</surname><given-names>J</given-names></name> (<year>2007</year>) <article-title>Mitochondrial dysfunction and age</article-title>. <source>Curr Opin Clin Nutr Metab Care</source> <volume>10</volume>: <fpage>688</fpage>-<lpage>692</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1097/MCO.0b013e3282f0dbfb" xlink:type="simple">10.1097/MCO.0b013e3282f0dbfb</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18089948" xlink:type="simple">18089948</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B6">
+				<label>6</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Eisenberg</surname><given-names>DT</given-names></name> (<year>2011</year>) <article-title>An evolutionary review of human telomere biology: the thrifty telomere hypothesis and notes on potential adaptive paternal effects</article-title>. <source>Am J Hum Biol</source> <volume>23</volume>: <fpage>149</fpage>-<lpage>167</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/ajhb.21127" xlink:type="simple">10.1002/ajhb.21127</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21319244" xlink:type="simple">21319244</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B7">
+				<label>7</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Njajou</surname><given-names>OT</given-names></name>, <name name-style="western"><surname>Cawthon</surname><given-names>RM</given-names></name>, <name name-style="western"><surname>Damcott</surname><given-names>CM</given-names></name>, <name name-style="western"><surname>Wu</surname><given-names>SH</given-names></name>, <name name-style="western"><surname>Ott</surname><given-names>S</given-names></name> <etal>et al.</etal> (<year>2007</year>) <article-title>Telomere length is paternally inherited and is associated with parental lifespan</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>104</volume>: <fpage>12135</fpage>-<lpage>12139</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.0702703104" xlink:type="simple">10.1073/pnas.0702703104</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17623782" xlink:type="simple">17623782</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B8">
+				<label>8</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Epel</surname><given-names>ES</given-names></name> (<year>2009</year>) <article-title>Psychological and metabolic stress: a recipe for accelerated cellular aging?</article-title> <source>Hormones (Athens)</source> <volume>8</volume>: <fpage>7</fpage>-<lpage>22</lpage><comment>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19269917" xlink:type="simple">19269917</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B9">
+				<label>9</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alder</surname><given-names>JK</given-names></name>, <name name-style="western"><surname>Guo</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Kembou</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Parry</surname><given-names>EM</given-names></name>, <name name-style="western"><surname>Anderson</surname><given-names>CJ</given-names></name> <etal>et al.</etal> (<year>2011</year>) <article-title>Telomere length is a determinant of emphysema susceptibility</article-title>. <source>Am J Respir Crit Care Med</source> <volume>184</volume>: <fpage>904</fpage>-<lpage>912</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1164/rccm.201103-0520OC" xlink:type="simple">10.1164/rccm.201103-0520OC</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21757622" xlink:type="simple">21757622</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B10">
+				<label>10</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Entringer</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Epel</surname><given-names>ES</given-names></name>, <name name-style="western"><surname>Kumsta</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Lin</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Hellhammer</surname><given-names>DH</given-names></name> <etal>et al.</etal> (<year>2011</year>) <article-title>Stress exposure in intrauterine life is associated with shorter telomere length in young adulthood</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>108</volume>: <fpage>E513</fpage>-<lpage>E518</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1107759108" xlink:type="simple">10.1073/pnas.1107759108</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21813766" xlink:type="simple">21813766</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B11">
+				<label>11</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cawthon</surname><given-names>RM</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>KR</given-names></name>, <name name-style="western"><surname>O’Brien</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Sivatchenko</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kerber</surname><given-names>RA</given-names></name> (<year>2003</year>) <article-title>Association between telomere length in blood and mortality in people aged 60 years or older</article-title>. <source>Lancet</source> <volume>361</volume>: <fpage>393</fpage>-<lpage>395</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0140-6736(03)12384-7" xlink:type="simple">10.1016/S0140-6736(03)12384-7</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12573379" xlink:type="simple">12573379</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B12">
+				<label>12</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mainous</surname><given-names>AG</given-names><suffix>3rd</suffix></name>, <name name-style="western"><surname>Codd</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Diaz</surname><given-names>VA</given-names></name>, <name name-style="western"><surname>Schoepf</surname><given-names>UJ</given-names></name>, <name name-style="western"><surname>Everett</surname><given-names>CJ</given-names></name> <etal>et al.</etal> (<year>2010</year>) <article-title>Leukocyte telomere length and coronary artery calcification</article-title>. <source>Atherosclerosis</source> <volume>210</volume>: <fpage>262</fpage>-<lpage>267</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.atherosclerosis.2009.10.047" xlink:type="simple">10.1016/j.atherosclerosis.2009.10.047</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19945703" xlink:type="simple">19945703</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B13">
+				<label>13</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Tentolouris</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Nzietchueng</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Cattan</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Poitevin</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Lacolley</surname><given-names>P</given-names></name> <etal>et al.</etal> (<year>2007</year>) <article-title>White blood cells telomere length is shorter in males with type 2 diabetes and microalbuminuria</article-title>. <source>Diabetes Care</source> <volume>30</volume>: <fpage>2909</fpage>-<lpage>2915</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2337/dc07-0633" xlink:type="simple">10.2337/dc07-0633</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17666463" xlink:type="simple">17666463</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B14">
+				<label>14</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>von Zglinicki</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Serra</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Lorenz</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Saretzki</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Lenzen-Grossimlighaus</surname><given-names>R</given-names></name> <etal>et al.</etal> (<year>2000</year>) <article-title>Short telomeres in patients with vascular dementia: an indicator of low antioxidative capacity and a possible risk factor?</article-title> <source>Lab Invest</source> <volume>80</volume>: <fpage>1739</fpage>-<lpage>1747</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/labinvest.3780184" xlink:type="simple">10.1038/labinvest.3780184</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11092534" xlink:type="simple">11092534</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B15">
+				<label>15</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Heidinger</surname><given-names>BJ</given-names></name>, <name name-style="western"><surname>Blount</surname><given-names>JD</given-names></name>, <name name-style="western"><surname>Boner</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Griffiths</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Metcalfe</surname><given-names>NB</given-names></name> <etal>et al.</etal> (<year>2012</year>) <article-title>Telomere length in early life predicts lifespan</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>109</volume>: <fpage>1743</fpage>-<lpage>1748</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1113306109" xlink:type="simple">10.1073/pnas.1113306109</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22232671" xlink:type="simple">22232671</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B16">
+				<label>16</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sahin</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Colla</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Liesa</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Moslehi</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Müller</surname><given-names>FL</given-names></name> <etal>et al.</etal> (<year>2011</year>) <article-title>Telomere dysfunction induces metabolic and mitochondrial compromise</article-title>. <source>Nature</source> <volume>470</volume>: <fpage>359</fpage>-<lpage>365</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature09787" xlink:type="simple">10.1038/nature09787</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21307849" xlink:type="simple">21307849</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B17">
+				<label>17</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lee</surname><given-names>JW</given-names></name>, <name name-style="western"><surname>Park</surname><given-names>KD</given-names></name>, <name name-style="western"><surname>Im</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>MY</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>DC</given-names></name> (<year>2010</year>) <article-title>Mitochondrial DNA copy number in peripheral blood is associated with cognitive function in apparently healthy elderly women</article-title>. <source>Clin Chim Acta</source> <volume>411</volume>: <fpage>592</fpage>-<lpage>596</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cca.2010.01.024" xlink:type="simple">10.1016/j.cca.2010.01.024</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20114042" xlink:type="simple">20114042</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B18">
+				<label>18</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kim</surname><given-names>MY</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>JW</given-names></name>, <name name-style="western"><surname>Kang</surname><given-names>HC</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>DC</given-names></name> (<year>2011</year>) <article-title>Leukocyte mitochondrial DNA (mtDNA) content is associated with depression in old women</article-title>. <source>Arch Gerontol Geriatr</source> <volume>53</volume>: <fpage>e218</fpage>-<lpage>e221</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.archger.2010.11.019" xlink:type="simple">10.1016/j.archger.2010.11.019</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21159390" xlink:type="simple">21159390</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B19">
+				<label>19</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cho</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Bae</surname><given-names>JN</given-names></name>, <name name-style="western"><surname>Suh</surname><given-names>GH</given-names></name>, <name name-style="western"><surname>Hahm</surname><given-names>BJ</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>JK</given-names></name> <etal>et al.</etal> (<year>1999</year>) <article-title>Validation of Geriatric Depression Scale, Korean Version(GDS) in the Assessment of DSM-III-R Major Depression</article-title>. <source>J Korean Neuropsychiatr Assoc</source> <volume>38</volume>: <fpage>48</fpage>-<lpage>63</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B20">
+				<label>20</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wong</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Cortopassi</surname><given-names>G</given-names></name> (<year>2002</year>) <article-title>Reproducible quantitative PCR of mitochondrial and nuclear DNA copy number using the LightCycler</article-title>. <source>Methods Mol Biol</source> <volume>197</volume>: <fpage>129</fpage>-<lpage>137</lpage><comment>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12013791" xlink:type="simple">12013791</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B21">
+				<label>21</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cawthon</surname><given-names>RM</given-names></name> (<year>2002</year>) <article-title>Telomere measurement by quantitative PCR</article-title>. <source>Nucleic Acids Res</source> <volume>30</volume>: <fpage>e47</fpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/nar/30.10.e47" xlink:type="simple">10.1093/nar/30.10.e47</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12000852" xlink:type="simple">12000852</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B22">
+				<label>22</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Song</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Oh</surname><given-names>JY</given-names></name>, <name name-style="western"><surname>Sung</surname><given-names>YA</given-names></name>, <name name-style="western"><surname>Pak</surname><given-names>YK</given-names></name>, <name name-style="western"><surname>Park</surname><given-names>KS</given-names></name> <etal>et al.</etal> (<year>2001</year>) <article-title>Peripheral blood mitochondrial DNA content is related to insulin sensitivity in offspring of type 2 diabetic patients</article-title>. <source>Diabetes Care</source> <volume>24</volume>: <fpage>865</fpage>-<lpage>869</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2337/diacare.24.5.865" xlink:type="simple">10.2337/diacare.24.5.865</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11347745" xlink:type="simple">11347745</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B23">
+				<label>23</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lee</surname><given-names>HK</given-names></name>, <name name-style="western"><surname>Song</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Shin</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Park</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Park</surname><given-names>KS</given-names></name> <etal>et al.</etal> (<year>1998</year>) <article-title>Decreased mitochondrial DNA content in peripheral blood precedes the development of non-insulin-dependent diabetes mellitus</article-title>. <source>Diabetes Res Clin Pract</source> <volume>42</volume>: <fpage>161</fpage>-<lpage>167</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0168-8227(98)00110-7" xlink:type="simple">10.1016/S0168-8227(98)00110-7</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://9925346" xlink:type="simple">9925346</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B24">
+				<label>24</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Weng</surname><given-names>SW</given-names></name>, <name name-style="western"><surname>Lin</surname><given-names>TK</given-names></name>, <name name-style="western"><surname>Liou</surname><given-names>CW</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>SD</given-names></name>, <name name-style="western"><surname>Wei</surname><given-names>YH</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>HC</given-names></name>, <name name-style="western"><surname>Chen</surname><given-names>IY</given-names></name>, <name name-style="western"><surname>Hsieh</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>PW</given-names></name> (<year>2009</year>) <article-title>Peripheral blood mitochondrial DNA content and dysregulation of glucose metabolism</article-title>. <source>Diabetes Res Clin Pract</source>;<volume>83</volume>: <fpage>94</fpage>-<lpage>99</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.diabres.2008.10.002" xlink:type="simple">10.1016/j.diabres.2008.10.002</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19019479" xlink:type="simple">19019479</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B25">
+				<label>25</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lim</surname><given-names>CY</given-names></name>, <name name-style="western"><surname>Jun</surname><given-names>DW</given-names></name>, <name name-style="western"><surname>Jang</surname><given-names>SS</given-names></name>, <name name-style="western"><surname>Cho</surname><given-names>WK</given-names></name>, <name name-style="western"><surname>Chae</surname><given-names>JD</given-names></name> <etal>et al.</etal> (<year>2010</year>) <article-title>Effects of carnitine on peripheral blood mitochondrial DNA copy number and liver function in non-alcoholic fatty liver disease</article-title>. <source>Korean J Gastroenterol</source> <volume>55</volume>: <fpage>384</fpage>-<lpage>389</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4166/kjg.2010.55.6.384" xlink:type="simple">10.4166/kjg.2010.55.6.384</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20571306" xlink:type="simple">20571306</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B26">
+				<label>26</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lim</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>MS</given-names></name>, <name name-style="western"><surname>Park</surname><given-names>KS</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>An</surname><given-names>GH</given-names></name> <etal>et al.</etal> (<year>2001</year>) <article-title>Correlation of plasma homocysteine and mitochondrial DNA content in peripheral blood in healthy women</article-title>. <source>Atherosclerosis</source> <volume>158</volume>: <fpage>399</fpage>-<lpage>405</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0021-9150(01)00436-1" xlink:type="simple">10.1016/S0021-9150(01)00436-1</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11583719" xlink:type="simple">11583719</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B27">
+				<label>27</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Liu</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Kuo</surname><given-names>CL</given-names></name>, <name name-style="western"><surname>Cheng</surname><given-names>WL</given-names></name>, <name name-style="western"><surname>Huang</surname><given-names>CS</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>CF</given-names></name> <etal>et al.</etal> (<year>2005</year>) <article-title>Alteration of the copy number of mitochondrial DNA in leukocytes of patients with hyperlipidemia</article-title>. <source>Ann N Y Acad Sci</source> <volume>1042</volume>: <fpage>70</fpage>-<lpage>75</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1196/annals.1338.008" xlink:type="simple">10.1196/annals.1338.008</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15965047" xlink:type="simple">15965047</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B28">
+				<label>28</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lombard</surname><given-names>DB</given-names></name>, <name name-style="western"><surname>Tishkoff</surname><given-names>DX</given-names></name>, <name name-style="western"><surname>Bao</surname><given-names>J</given-names></name> (<year>2011</year>) <article-title>Mitochondrial sirtuins in the regulation of mitochondrial activity and metabolic adaptation</article-title>. <source>Handb Exp Pharmacol</source> <volume>206</volume>: <fpage>163</fpage>-<lpage>188</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/978-3-642-21631-2_8" xlink:type="simple">10.1007/978-3-642-21631-2_8</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21879450" xlink:type="simple">21879450</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B29">
+				<label>29</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Weindruch</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Walford</surname><given-names>RL</given-names></name> (<year>1988</year>) <source>The retardation of aging and disease by dietary restriction. Springfield, IL: C.C</source>. <publisher-name>Thomas Publisher</publisher-name>.</mixed-citation>
+			</ref>
+			<ref id="B30">
+				<label>30</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Masoro</surname><given-names>EJ</given-names></name> (<year>2006</year>) <article-title>Caloric restriction and aging: controversial issues</article-title>. <source>J Gerontol A Biol Sci Med Sci</source> <volume>61</volume>: <fpage>14</fpage>-<lpage>19</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/gerona/61.1.14" xlink:type="simple">10.1093/gerona/61.1.14</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16456190" xlink:type="simple">16456190</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B31">
+				<label>31</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Colman</surname><given-names>RJ</given-names></name>, <name name-style="western"><surname>Anderson</surname><given-names>RM</given-names></name>, <name name-style="western"><surname>Johnson</surname><given-names>SC</given-names></name>, <name name-style="western"><surname>Kastman</surname><given-names>EK</given-names></name>, <name name-style="western"><surname>Kosmatka</surname><given-names>KJ</given-names></name> <etal>et al.</etal> (<year>2009</year>) <article-title>Caloric restriction delays disease onset and mortality in rhesus monkeys</article-title>. <source>Science</source> <volume>325</volume>: <fpage>201</fpage>-<lpage>204</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1173635" xlink:type="simple">10.1126/science.1173635</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19590001" xlink:type="simple">19590001</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B32">
+				<label>32</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Colman</surname><given-names>RJ</given-names></name>, <name name-style="western"><surname>Beasley</surname><given-names>TM</given-names></name>, <name name-style="western"><surname>Allison</surname><given-names>DB</given-names></name>, <name name-style="western"><surname>Weindruch</surname><given-names>R</given-names></name> (<year>2008</year>) <article-title>Attenuation of sarcopenia by dietary restriction in rhesus monkeys</article-title>. <source>J Gerontol A Biol Sci Med Sci</source> <volume>63</volume>: <fpage>556</fpage>-<lpage>559</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/gerona/63.6.556" xlink:type="simple">10.1093/gerona/63.6.556</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18559628" xlink:type="simple">18559628</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B33">
+				<label>33</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Das</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Gabriely</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Barzilai</surname><given-names>N</given-names></name> (<year>2004</year>) <article-title>Caloric restriction, body fat and ageing in experimental models</article-title>. <source>Obes Rev</source> <volume>5</volume>: <fpage>13</fpage>-<lpage>19</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1467-789X.2004.00115.x" xlink:type="simple">10.1111/j.1467-789X.2004.00115.x</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/14969503" xlink:type="simple">14969503</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B34">
+				<label>34</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rodgers</surname><given-names>JT</given-names></name>, <name name-style="western"><surname>Lerin</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Haas</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Gygi</surname><given-names>SP</given-names></name>, <name name-style="western"><surname>Spiegelman</surname><given-names>BM</given-names></name> <etal>et al.</etal> (<year>2005</year>) <article-title>Nutrient control of glucose homeostasis through a complex of PGC-1alpha and SIRT1</article-title>. <source>Nature</source> <volume>434</volume>: <fpage>113</fpage>-<lpage>118</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature03354" xlink:type="simple">10.1038/nature03354</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15744310" xlink:type="simple">15744310</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B35">
+				<label>35</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wang</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Maddick</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Miwa</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Jurk</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Czapiewski</surname><given-names>R</given-names></name> <etal>et al.</etal> (<year>2010</year>) <article-title>Adult-onset, short-term dietary restriction reduces cell senescence in mice</article-title>. <source>Aging (Albany NY)</source> <volume>2</volume>: <fpage>555</fpage>-<lpage>566</lpage><comment>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20844316" xlink:type="simple">20844316</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B36">
+				<label>36</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Smith</surname><given-names>DL Jr</given-names></name>, <name name-style="western"><surname>Mattison</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Desmond</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Gardner</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Kimura</surname><given-names>M</given-names></name> <etal>et al.</etal> (<year>2011</year>) <article-title>Telomere dynamics in rhesus monkeys: no apparent effect of caloric restriction</article-title>. <source>J Gerontol A Biol Sci Med Sci</source> <volume>66</volume>: <fpage>1163</fpage>-<lpage>1168</lpage><comment>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21860014" xlink:type="simple">21860014</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B37">
+				<label>37</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Syrovatka</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Kraml</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Potockova</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Fialova</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Vejrazka</surname><given-names>M</given-names></name> <etal>et al.</etal> (<year>2009</year>) <article-title>Relationship between increased body iron stores, oxidative stress and insulin resistance in healthy men</article-title>. <source>Ann Nutr Metab</source> <volume>54</volume>: <fpage>268</fpage>-<lpage>274</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1159/000229507" xlink:type="simple">10.1159/000229507</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19641304" xlink:type="simple">19641304</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B38">
+				<label>38</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kim</surname><given-names>CH</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>HK</given-names></name>, <name name-style="western"><surname>Bae</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Park</surname><given-names>JY</given-names></name>, <name name-style="western"><surname>Lee</surname><given-names>KU</given-names></name> (<year>2011</year>) <article-title>Association of elevated serum ferritin concentration with insulin resistance and impaired glucose metabolism in Korean men and women</article-title>. <source>Metabolism</source> <volume>60</volume>: <fpage>414</fpage>-<lpage>420</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.metabol.2010.03.007" xlink:type="simple">10.1016/j.metabol.2010.03.007</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20423745" xlink:type="simple">20423745</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B39">
+				<label>39</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gabay</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Kushner</surname><given-names>I</given-names></name> (<year>1999</year>) <article-title>Acute-phase proteins and other systemic responses to inflammation</article-title>. <source>N Engl J Med</source> <volume>340</volume>: <fpage>448</fpage>-<lpage>454</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1056/NEJM199902113400607" xlink:type="simple">10.1056/NEJM199902113400607</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://9971870" xlink:type="simple">9971870</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B40">
+				<label>40</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kang</surname><given-names>HT</given-names></name>, <name name-style="western"><surname>Linton</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Shim</surname><given-names>JY</given-names></name> (<year>2012</year>) <article-title>Serum ferritin level is associated with the prevalence of metabolic syndrome in Korean adults: The 2007-2008 Korean National Health and Nutrition Examination Survey</article-title>. <source>Clin Chim Acta</source> <volume>413</volume>: <fpage>636</fpage>-<lpage>641</lpage><comment>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22212623" xlink:type="simple">22212623</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B41">
+				<label>41</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mur</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Clària</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Rodela</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Lario</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Campistol</surname><given-names>JM</given-names></name> <etal>et al.</etal> (<year>2004</year>) <article-title>Cigarette smoke concentrate increases 8-epi-PGF2alpha and TGFbeta1 secretion in rat mesangial cells</article-title>. <source>Life Sci</source> <volume>75</volume>: <fpage>611</fpage>-<lpage>621</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.lfs.2003.12.026" xlink:type="simple">10.1016/j.lfs.2003.12.026</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15158370" xlink:type="simple">15158370</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B42">
+				<label>42</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yamaguchi</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Haginaka</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Morimoto</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Fujioka</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Kunitomo</surname><given-names>M</given-names></name> (<year>2005</year>) <article-title>Facilitated nitration and oxidation of LDL in cigarette smokers</article-title>. <source>Eur J Clin Invest</source> <volume>35</volume>: <fpage>186</fpage>-<lpage>193</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-2362.2005.01472.x" xlink:type="simple">10.1111/j.1365-2362.2005.01472.x</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15733073" xlink:type="simple">15733073</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B43">
+				<label>43</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Puddu</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Puddu</surname><given-names>GM</given-names></name>, <name name-style="western"><surname>Cravero</surname><given-names>E</given-names></name>, <name name-style="western"><surname>De Pascalis</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Muscari</surname><given-names>A</given-names></name> (<year>2007</year>) <article-title>The putative role of mitochondrial dysfunction in hypertension</article-title>. <source>Clin Exp Hypertens</source> <volume>29</volume>: <fpage>427</fpage>-<lpage>434</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1080/10641960701613852" xlink:type="simple">10.1080/10641960701613852</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17994352" xlink:type="simple">17994352</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B44">
+				<label>44</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ramachandran</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Levonen</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Brookes</surname><given-names>PS</given-names></name>, <name name-style="western"><surname>Ceaser</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Shiva</surname><given-names>S</given-names></name> <etal>et al.</etal> (<year>2002</year>) <article-title>Mitochondria, nitric oxide, and cardiovascular dysfunction</article-title>. <source>Free Radic Biol Med</source> <volume>33</volume>: <fpage>1465</fpage>-<lpage>1474</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0891-5849(02)01142-5" xlink:type="simple">10.1016/S0891-5849(02)01142-5</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12446203" xlink:type="simple">12446203</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B45">
+				<label>45</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zimmerman</surname><given-names>MC</given-names></name>, <name name-style="western"><surname>Zucker</surname><given-names>IH</given-names></name> (<year>2009</year>) <article-title>Mitochondrial dysfunction and mitochondrial-produced reactive oxygen species: new targets for neurogenic hypertension?</article-title> <source>Hypertension</source> <volume>53</volume>: <fpage>112</fpage>-<lpage>114</lpage><comment>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19114641" xlink:type="simple">19114641</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B46">
+				<label>46</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dedkova</surname><given-names>EN</given-names></name>, <name name-style="western"><surname>Blatter</surname><given-names>LA</given-names></name> (<year>2008</year>) <article-title>Mitochondrial Ca2+ and the heart</article-title>. <source>Cell Calcium</source>;<volume>44</volume>(<issue-id>1</issue-id>): <fpage>77</fpage>-<lpage>91</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.ceca.2007.11.002" xlink:type="simple">10.1016/j.ceca.2007.11.002</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18178248" xlink:type="simple">18178248</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B47">
+				<label>47</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jin</surname><given-names>HS</given-names></name>, <name name-style="western"><surname>Sober</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Hong</surname><given-names>KW</given-names></name>, <name name-style="western"><surname>Org</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>BY</given-names></name> <etal>et al.</etal> (<year>2011</year>) <article-title>Age-dependent association of the polymorphisms in the mitochondria-shaping gene, OPA1, with blood pressure and hypertension in Korean population</article-title>. <source>Am J Hypertens</source> <volume>24</volume>: <fpage>1127</fpage>-<lpage>1135</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/ajh.2011.131" xlink:type="simple">10.1038/ajh.2011.131</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21796221" xlink:type="simple">21796221</ext-link>.</comment></mixed-citation>
+			</ref>
+			<ref id="B48">
+				<label>48</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lim</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>SK</given-names></name>, <name name-style="western"><surname>Park</surname><given-names>KS</given-names></name>, <name name-style="western"><surname>Kim</surname><given-names>SY</given-names></name>, <name name-style="western"><surname>Cho</surname><given-names>BY</given-names></name> <etal>et al.</etal> (<year>2000</year>) <article-title>Effect of exercise on the mitochondrial DNA content of peripheral blood in healthy women</article-title>. <source>Eur J Appl Physiol</source> <volume>82</volume>: <fpage>407</fpage>-<lpage>412</lpage><comment>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s004210000238" xlink:type="simple">10.1007/s004210000238</ext-link>. PubMed: </comment><comment><ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/10985594" xlink:type="simple">10985594</ext-link>.</comment></mixed-citation>
+			</ref>
+		</ref-list>
+	</back>
+</article>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="nlm-ta">PLoS Biol</journal-id><journal-id journal-id-type="pmc">plosbiol</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Biology</journal-title></journal-title-group><issn pub-type="ppub">1544-9173</issn><issn pub-type="epub">1545-7885</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PBIOLOGY-D-11-03321</article-id><article-id pub-id-type="doi">10.1371/journal.pbio.1001289</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Essay</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Neuroscience, Ethics, and National Security: The State of the Art</article-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Tennison</surname>
+            <given-names>Michael N.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Moreno</surname>
+            <given-names>Jonathan D.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>Wake Forest University, Winston-Salem, North Carolina, United States of America</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>University of Pennsylvania, Philadelphia, Pennsylvania, United States of America</addr-line>       </aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">morenojd@mail.med.upenn.edu</email></corresp>
+        <fn>
+          <p>Essays articulate a specific perspective on a topic of broad interest to scientists.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <month>3</month>
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>20</day>
+        <month>3</month>
+        <year>2012</year>
+      </pub-date><volume>10</volume><issue>3</issue><elocation-id>e1001289</elocation-id><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2012</copyright-year><copyright-holder>Tennison, Moreno</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract abstract-type="toc">
+        <p>Military involvement and research in neuroscience generates unique ethical, legal, and social issues that require careful elucidation and consideration in order to align the potentially conflicting needs of national defense, public interest, and scientific progress.</p>
+      </abstract><abstract>
+        <p>National security organizations in the United States, including the armed services and the intelligence community, have developed a close relationship with the scientific establishment. The latest technology often fuels warfighting and counter-intelligence capacities, providing the tactical advantages thought necessary to maintain geopolitical dominance and national security. Neuroscience has emerged as a prominent focus within this milieu, annually receiving hundreds of millions of Department of Defense dollars. Its role in national security operations raises ethical issues that need to be addressed to ensure the pragmatic synthesis of ethical accountability and national security.</p>
+      </abstract><funding-group><funding-statement>The authors received no specific funding for this work.</funding-statement></funding-group><counts>
+        <page-count count="4"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>During the past decade, the US national security establishment has come to see neuroscience as a promising and integral component of its 21st century needs. Much neuroscience is “dual use” research, asking questions and developing technologies that are of both military and civilian interest. Historically, dual use has often involved a trickle down of military technology into civilian hands. The Internet, for example, originated as a non-local, distributed means to secure military information. In the case of neuroscience, however, civilian research has outpaced that of the military. Both National Research Council (NRC) reports and Department of Defense (DoD) funding reveal ongoing national security interests in neuroscience and indicate that the military is quite eager to glean what it can from the emerging science <xref ref-type="bibr" rid="pbio.1001289-Committee1">[1]</xref>,<xref ref-type="bibr" rid="pbio.1001289-Committee2">[2]</xref>. To pursue cognitive neuroscience research, the Pentagon's science agency, the Defense Advanced Research Projects Agency (DARPA), received about US$240 million for the fiscal year of 2011, while the Army trails at US$55 million, the Navy at US$34 million, and the Air Force at US$24 million <xref ref-type="bibr" rid="pbio.1001289-Kosal1">[3]</xref>.</p>
+      <p>The military establishment's interest in understanding, developing, and exploiting neuroscience generates a tension in its relationship with science: the goals of national security and the goals of science may conflict. The latter employs rigorous standards of validation in the expansion of knowledge, while the former depends on the most promising deployable solutions for the defense of the nation. As a result, the exciting potential of high-tech developments on the horizon may be overhyped, misunderstood, or worse: they could be deployed before sufficiently validated.</p>
+      <p>Current state-of-the-art neuroscience, including new forms of brain scanning, brain–computer interfaces (BCIs), and neuromodulation, is being tapped for warfighter enhancement, deception detection, and other cutting-edge military applications to serve national security interests.</p>
+    </sec>
+    <sec id="s2">
+      <title>Brain–Computer Interfaces</title>
+      <p>BCIs exemplify the dual use nature of neuroscience applications. BCIs convert neural activity into input for technological mechanisms, from communication devices to prosthetics. The military's interests in BCIs are manifold, including treatment modalities, augmented systems for controlling vehicles, and assistance for detecting danger on the battlefield.</p>
+      <p>In the late 1990s, scientists demonstrated neurological control of the movement of a simple device in rats, and soon thereafter, of a robotic arm in monkeys <xref ref-type="bibr" rid="pbio.1001289-Lebedev1">[4]</xref>. More recently, a pilot study of BrainGate technology, an intracortical microelectrode array implanted in human subjects, confirmed 1,000 days of continuous, successful neurological control of a mouse cursor <xref ref-type="bibr" rid="pbio.1001289-Simeral1">[5]</xref>. Non-invasive technologies for harnessing brain activity also show promise for human use. Progress has recently been reported on a “dry” EEG cap that does not require a gel to obtain sufficient data from the brain. The “brain cap” is reported to reconstruct movements of humans' ankle, knee, and hip joints during treadmill walking in order to aid rehabilitation <xref ref-type="bibr" rid="pbio.1001289-Presacco1">[6]</xref>.</p>
+      <p>DARPA's Augmented Cognition (AugCog) program sought to find ways to use neurological information gathered from warfighters to modify their equipment accordingly. For example, the “cognitive cockpit” concept involved recording a pilot's brain activity to customize the cockpit to that individual's needs in real time, from selecting the least burdened sensory organ for communicating information to prioritizing informational needs and eliminating distractions <xref ref-type="bibr" rid="pbio.1001289-Keiper1">[7]</xref>. Although the Augmented Cognition moniker (and funding mechanism) seem to have been dropped, its spirit lives on in other DARPA projects. For example, the Cognitive Technology Threat Warning System is developing portable binoculars that convert subconscious, neurological responses to danger into consciously available information <xref ref-type="bibr" rid="pbio.1001289-Defense1">[8]</xref>. Such a system could reduce the information-processing burden on warfighters, helping them to identify and respond to areas of interest in the visual field more quickly.</p>
+      <p>Via intracortical microstimulation (ICMS), a neurologically controlled prosthetic could send tactile information back to the brain in nearly real time, essentially creating a “brain-machine-brain interface” <xref ref-type="bibr" rid="pbio.1001289-Lebedev2">[9]</xref>. The technology underlying this concept is already evolving, and some researchers hope that optogenetics, which both enables “precise, millisecond control of specific neurons” and “eliminates most of the key problems with ICMS,” will ultimately supplant the ICMS for sensory feedback <xref ref-type="bibr" rid="pbio.1001289-Lebedev2">[9]</xref>. In addition to devising prosthetics that can supply sensory information to the brain, brain-machine-brain interfaces may directly modify neurological activity. Portable technologies like near infrared spectroscopy (NIRS), for example, could detect deficiencies in a warfighter's neurological processes and feed that information into a device utilizing in-helmet or in-vehicle transcranial magnetic stimulation (TMS) to suppress or enhance individual brain functions <xref ref-type="bibr" rid="pbio.1001289-Committee2">[2]</xref>.</p>
+      <p>Much of the technological evolution of warfare has introduced a distance between the parties involved. From the advent of firearms to airplanes, aerial bombs to remotely operated drones, the visceral reality of combat afforded by the physical proximity to one's enemy has steadily eroded. In 2007, researchers taught a monkey to neurologically control a walking robot on the other side of the world by means of electrochemical measurements of motor cortical activity <xref ref-type="bibr" rid="pbio.1001289-Lebedev2">[9]</xref>. Considering this in light of the work on robotic tactile feedback, it is easy to imagine a new phase of warfare in which ground troops become obsolete.</p>
+    </sec>
+    <sec id="s3">
+      <title>Warfighter Enhancement</title>
+      <p>The therapeutic paradigm of medical practice aims to heal and reduce suffering, to return the ill to a state of normal health. Yet, many interventions can be used by the healthy to enhance specific traits or capacities beyond the physiological or statistical norm <xref ref-type="bibr" rid="pbio.1001289-Presidents1">[10]</xref>. For example, BCIs can operate prosthetics for therapeutic purposes, but they could also connect to orthotic exoskeletons that enhance strength and endurance. Similarly, therapeutic drugs like methylphenidate can help patients recover focus and attention, but they are also used, for example, by healthy college students looking to maximize academic performance <xref ref-type="bibr" rid="pbio.1001289-Smith1">[11]</xref>. Whether they do in fact improve performance is open to disagreement <xref ref-type="bibr" rid="pbio.1001289-Smith1">[11]</xref>,<xref ref-type="bibr" rid="pbio.1001289-Outram1">[12]</xref>. Military pharmaceutical neuroenhancement came to the public's attention in 2003 when “two American pilots accidentally killed four Canadian soldiers and injured eight others in Afghanistan” <xref ref-type="bibr" rid="pbio.1001289-Moreno1">[13]</xref>. It turned out that the pilots had been taking Dexedrine, the amphetamine-based “go pills” often used to reduce the fatigue induced by long missions.</p>
+      <p>In 2008, a report for the US Army compared the effects of amphetamines with those of modafinil, a drug typically used and approved to treat narcolepsy, in combination with sleep-aiding drugs. Despite the controversy over “go pills”, the study found that for long-duration missions, both amphetamines and modafinil have statistically similar effects of reducing the cognitive decline associated with fatigue <xref ref-type="bibr" rid="pbio.1001289-Storm1">[14]</xref>. Other reports state that modafinil significantly outperforms methylphenidate for cognitive enhancement in healthy individuals, “especially on people undergoing sleep deprivation” <xref ref-type="bibr" rid="pbio.1001289-Repantis1">[15]</xref>. Related research has investigated other ways to combat fatigue as well. Published in 2007, a DARPA-sponsored study showed that nasally administered orexin-A, a neuropeptide, restored the short-term memory of sleep-deprived monkeys <xref ref-type="bibr" rid="pbio.1001289-Deadwyler1">[16]</xref>.</p>
+      <p>In its 2009 report for the US Army, the NRC recommends that TMS should also be a part of further research on central nervous system fatigue <xref ref-type="bibr" rid="pbio.1001289-Committee2">[2]</xref>. Studies suggest that TMS can enhance a variety of neurological functions in healthy individuals, from mood and social cognition to working memory and learning <xref ref-type="bibr" rid="pbio.1001289-Hamilton1">[17]</xref>. Another noninvasive neuromodulation technology, transcranial pulsed ultrasound, was demonstrated to have a number of promising effects, from being “useful for sonoporation in gene therapy” to “promoting nerve regeneration” <xref ref-type="bibr" rid="pbio.1001289-Tyler1">[18]</xref>. With the aid of both DARPA and US Army funding, researchers envision and work toward developing portable, in-helmet ultrasound transducers capable of stimulating neural circuits with a better precision and depth than TMS <xref ref-type="bibr" rid="pbio.1001289-Tyler2">[19]</xref>. Direct current polarization, or transcranial direct current stimulation (TDCS), is another noninvasive, DARPA-supported technology for neuromodulation. “As might be expected, TDCS can enhance cognitive processes occurring in targeted brain areas” <xref ref-type="bibr" rid="pbio.1001289-Ukueberuwa1">[20]</xref>, including learning and memory <xref ref-type="bibr" rid="pbio.1001289-Hamilton1">[17]</xref>.</p>
+      <p>While cognitive augmentation will enhance performance on some tasks, other situations call for the reduction of neurological capacity. For example, if a memory of a traumatic event could be dampened, one may be less likely to experience post-traumatic stress disorder (PTSD) as a result. In 2002, scientists produced preliminary evidence that propranolol, when administered shortly after a traumatic event, could mitigate the long-term potential for internal cues to invoke post-traumatic stress <xref ref-type="bibr" rid="pbio.1001289-Pitman1">[21]</xref>. More recently, scientists demonstrated that propranolol can similarly reduce PTSD symptoms when administered “after retrieval of the memory of a past traumatic event”, not just immediately after the event itself <xref ref-type="bibr" rid="pbio.1001289-Brunet1">[22]</xref>.</p>
+      <p>Human enhancement may benefit individuals and society in myriad ways, but it also poses many risks. In the civilian world, if more and more people begin enhancing their minds and bodies, individuals may eventually feel subtly coerced into enhancing themselves in order to remain competitive in school or the workplace <xref ref-type="bibr" rid="pbio.1001289-Presidents1">[10]</xref>. In the military context, the risk of coercion is much more pronounced <xref ref-type="bibr" rid="pbio.1001289-Moreno1">[13]</xref>:</p>
+      <disp-quote>
+        <p>According to the Uniform Code of Military Justice, soldiers are required to accept medical interventions that make them fit for duty. Experimental treatments are a harder case, but the US government has shown a tendency to defer to commanders in a combat situation if they think some treatment is likely to do more harm than good, even if unproven.</p>
+      </disp-quote>
+      <p>If a warfighter is allowed no autonomous freedom to accept or decline an enhancement intervention, and the intervention in question is as invasive as remote brain control, then the ethical implications are immense. As Peter W. Singer has observed, “the Pentagon's real-world record with things like the aboveground testing of atomic bombs, Agent Orange, and Gulf War syndrome certainly doesn't inspire the greatest confidence among the first generation of soldiers involved [in human enhancement]” <xref ref-type="bibr" rid="pbio.1001289-Singer1">[23]</xref>.</p>
+    </sec>
+    <sec id="s4">
+      <title>Neuroscientific Deception Detection and Interrogation</title>
+      <p>National security agencies are also mining neuroscience for ways to advance interrogation methods and the detection of deception. The increasing sophistication of brain-reading neurotechnologies has led many to investigate their potential applications for lie detection. Deception has long been associated with empirically measurable correlates, arguably originating nearly a century ago with research into blood pressure <xref ref-type="bibr" rid="pbio.1001289-Greely1">[24]</xref>. Yet blood pressure, among other modern bases for polygraphy like heart and breathing rates, indicates the presence of a proxy for deception: stress. Although the polygraph performs better than chance, it does not reliably and accurately indicate the presence of deception, and it is susceptible to counter measures. Because of these problems with the polygraph, researchers are eagerly following up on preliminary successes in using new neurotechnological modalities for detecting deception.</p>
+      <p>“Brain fingerprinting” utilizes EEG to detect the P300 wave, an event-related potential (ERP) associated with the perception of a recognized, meaningful stimulus, and it is thought to hold potential for confirming the presence of “concealed information” <xref ref-type="bibr" rid="pbio.1001289-Ganis1">[25]</xref>. The technology is marketed for a number of uses: “national security, medical diagnostics, advertising, insurance fraud and in the criminal justice system” <xref ref-type="bibr" rid="pbio.1001289-Brain1">[26]</xref>. Similarly, fMRI-based lie detection services are currently offered by several companies, including No Lie MRI <xref ref-type="bibr" rid="pbio.1001289-No1">[27]</xref> and Cephos <xref ref-type="bibr" rid="pbio.1001289-Cephos1">[28]</xref>. DARPA funded the pioneering research that showed how deception involves a more complex array of neurological processes than truth-telling, and that fMRI arguably can detect the difference between the two <xref ref-type="bibr" rid="pbio.1001289-Langleben1">[29]</xref>. No Lie MRI also has ties to national security: they market their services to the DoD, Department of Homeland Security, and the intelligence community, among other potential customers <xref ref-type="bibr" rid="pbio.1001289-No2">[30]</xref>.</p>
+      <p>The Defense Intelligency Agency (DIA)-commissioned 2008 NRC report, <italic>Emerging Cognitive Neuroscience and Related Technologies</italic>, in which one of the present authors (JDM) participated, reiterates the conclusion of a 2003 NRC report <xref ref-type="bibr" rid="pbio.1001289-Committee3">[31]</xref> that “traditional measures of deception detection technology have proven to be insufficiently accurate” <xref ref-type="bibr" rid="pbio.1001289-Committee1">[1]</xref>. While the NRC ultimately recommends pursuing “research on multimodal methodological approaches for detecting and measuring neurophysiological indicators of psychological states and intentions”, it cautions that like traditional polygraphy, neurological measurements do not directly reveal psychological states <xref ref-type="bibr" rid="pbio.1001289-Committee1">[1]</xref>. In fact, many scholars and scientists dispute the validity of brain scan-based lie detection <xref ref-type="bibr" rid="pbio.1001289-Greely1">[24]</xref>,<xref ref-type="bibr" rid="pbio.1001289-Farrell1">[32]</xref>.</p>
+      <p>In addition to questions of scientific validity, these technologies raise legal and ethical issues. Legally required brain scans arguably violate “the guarantee against self-incrimination” because they differ from acceptable forms of bodily evidence, such as fingerprints or blood samples, in an important way: they are not simply physical, hard evidence, but evidence that is intimately linked to the defendant's mind <xref ref-type="bibr" rid="pbio.1001289-Farrell1">[32]</xref>. Under US law, brain-scanning technologies might also raise implications for the Fourth Amendment, calling into question whether they constitute an unreasonable search and seizure <xref ref-type="bibr" rid="pbio.1001289-Greely2">[33]</xref>.</p>
+      <p>Another neuroscientific field stimulating national security interest pertains to the hormone oxytocin, which has been shown to augment the expression of various virtues, from “trust and trustworthiness” to “generosity and sacrifice” <xref ref-type="bibr" rid="pbio.1001289-Zak1">[34]</xref>. Without elaborating, the NRC's 2008 report specifies oxytocin as a “neuropeptide of interest” <xref ref-type="bibr" rid="pbio.1001289-Committee1">[1]</xref>. If the interest in question relates to pharmacologically incapacitating the psychological defenses of interrogation suspects, this may conflict with the Chemical Weapons Convention (CWC). According to the CWC, a chemical that can cause “temporary incapacitation” is defined as a “toxic chemical” and is therefore banned from such use <xref ref-type="bibr" rid="pbio.1001289-Organisation1">[35]</xref>. Beyond this ethical concern, oxytocin is far from being confirmed as a truth serum, and without further verification it should not be treated as such. The history of research on finding the ultimate truth serum is long and storied. Suffice it to say, “[T]he urban myth of the drugged detainee imparting pristine nuggets of intelligence is firmly rooted and hard to dispel” <xref ref-type="bibr" rid="pbio.1001289-Marks1">[36]</xref>.</p>
+    </sec>
+    <sec id="s5">
+      <title>Recommendations</title>
+      <p>This paper has detailed the national security establishment's interest in and ability to fund a panoply of diverse neuroscientific studies. It has also reviewed the ethical, legal, and social issues that emerge from this relationship. Yet, discussions in themselves will not ensure that the translation of basic science into deployed product will proceed ethically or contribute to the greater good. These considerations must be embedded and explored at various levels in society: upstream in the minds and goals of scientists, downstream in the creation of advisory bodies, and broadly in the public at large.</p>
+      <p>Although they may receive funding from national security agencies, neuroscientists may not consider how their work contributes to warfare. As we have seen, however, neuroscience does, and will continue to, play a role in military operations. This fact spawns a plenitude of ethical concerns, from which one may surmise that the sciences should divorce themselves from the military completely. However, the fact that the material explored in this paper is public information speaks to the possibility that a discussion about the role and limits of neuroscience in national security may be open and transparent. Bifurcating public science from national security may only drive the same research underground, undermining its current public accountability <xref ref-type="bibr" rid="pbio.1001289-Moreno1">[13]</xref>. Thus, it would be impractical to try to circumvent the ethical problems simply by cutting ties between science and national defense.</p>
+      <p>Many would agree with George Mason University anthropologist Hugh Gusterson that “[m]ost rational human beings would believe that if we could have a world where nobody does military neuroscience, we'll all be better off. But for some people in the Pentagon, it's too delicious to ignore” <xref ref-type="bibr" rid="pbio.1001289-Cressey1">[37]</xref>. In any case, as we have suggested, the dual use possibilities for neuroscience render such a world unlikely. Therefore, scientists themselves could become more aware of the dual use phenomenon, whether their work is specifically funded by national security bodies or not, in order to create a more self-conscious scientific enterprise. They could also involve themselves in constructing the parameters to guide and govern their relationships with national security agencies. Just as many nuclear scientists opposed the development of atomic weapons, contributing to the test-ban treaties of the 1960s and the drawdown of armed missiles in the 1980s <xref ref-type="bibr" rid="pbio.1001289-Moreno1">[13]</xref>, neuroscientists could consider and promulgate their perspectives on the military implications and ethical issues associated with their work.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pbio.1001289-Committee1">
+        <label>1</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">Committee on Military and Intelligence Methodology for Emergent Neurophysiological and Cognitive/Neural Research in the Next Two Decades, National Research Council of the National Academies</collab>             <year>2008</year>             <source>Emerging cognitive neuroscience and related technologies</source>             <publisher-loc>Washington (D.C.)</publisher-loc>             <publisher-name>National Academies Press</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">214</size>           </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Committee2">
+        <label>2</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">Committee on Opportunities in Neuroscience for Future Army Applications, National Research Council of the National Academies</collab>             <year>2009</year>             <source>Opportunities in neuroscience for future army applications</source>             <publisher-loc>Washington (D.C.)</publisher-loc>             <publisher-name>National Academies Press</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">136</size>           </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Kosal1">
+        <label>3</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kosal</surname><given-names>M. E</given-names></name><name name-style="western"><surname>Huang</surname><given-names>J. Y</given-names></name></person-group>             <year>2011</year>             <source>Security implications of cognitive neuroscience research: Results from an ethnographic survey of researchers. Brain Waves Module 3: Neuroscience, conflict and security</source>             <publisher-loc>London</publisher-loc>             <publisher-name>The Royal Society</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Lebedev1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lebedev</surname><given-names>M. A</given-names></name><name name-style="western"><surname>Nicolelis</surname><given-names>M. A. L</given-names></name></person-group>             <year>2006</year>             <article-title>Brain-machine interfaces: past, present and future.</article-title>             <source>Trends Neurosci</source>             <volume>29</volume>             <issue>9</issue>             <fpage>536</fpage>             <lpage>546</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Simeral1">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Simeral</surname><given-names>J. D</given-names></name><name name-style="western"><surname>Kim</surname><given-names>S. P</given-names></name><name name-style="western"><surname>Black</surname><given-names>M. J</given-names></name><name name-style="western"><surname>Donoghue</surname><given-names>J. P</given-names></name><name name-style="western"><surname>Hochberg</surname><given-names>L. R</given-names></name></person-group>             <year>2011</year>             <article-title>Neural control of cursor trajectory and click by a human with tetraplegia 1000 days after implant of an intracortical microelectrode array.</article-title>             <source>J Neural Eng</source>             <volume>8</volume>             <fpage>1</fpage>             <lpage>24</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Presacco1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Presacco</surname><given-names>A</given-names></name><name name-style="western"><surname>Goodman</surname><given-names>R</given-names></name><name name-style="western"><surname>Forrester</surname><given-names>L. W</given-names></name><name name-style="western"><surname>Contreras-Vidal</surname><given-names>J. L</given-names></name></person-group>             <year>2011</year>             <article-title>Neural decoding of treadmill walking from non-invasive, electroencephalographic (EEG) signals.</article-title>             <source>J Neurophysiol</source>             <volume>106</volume>             <fpage>1875</fpage>             <lpage>1887</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Keiper1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Keiper</surname><given-names>A</given-names></name></person-group>             <year>2006</year>             <article-title>The age of neuroelectronics.</article-title>             <source>New Atlantis</source>             <volume>11</volume>             <fpage>4</fpage>             <lpage>41</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Defense1">
+        <label>8</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">Defense Advanced Research Projects Agency, Defense Sciences Office</collab>             <article-title>Cognitive technology threat warning system.</article-title>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.darpa.mil/Our_Work/DSO/Programs/Cognitive_Technology_Threat_Warning_System_(CT2WS).aspx" xlink:type="simple">http://www.darpa.mil/Our_Work/DSO/Programs/Cognitive_Technology_Threat_Warning_System_(CT2WS).aspx</ext-link>. Accessed 15 July 2011</comment>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Lebedev2">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lebedev</surname><given-names>M. A</given-names></name><name name-style="western"><surname>Tate</surname><given-names>A. J</given-names></name><name name-style="western"><surname>Hanson</surname><given-names>T. L</given-names></name><name name-style="western"><surname>Li</surname><given-names>Z</given-names></name><name name-style="western"><surname>O'Doherty</surname><given-names>J. E</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Future developments in brain-machine interface research.</article-title>             <source>Clinics</source>             <volume>66</volume>             <issue>S1</issue>             <fpage>25</fpage>             <lpage>32</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Presidents1">
+        <label>10</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">President's Council on Bioethics</collab>             <year>2003</year>             <source>Beyond therapy: biotechnology and the pursuit of happiness</source>             <publisher-loc>New York</publisher-loc>             <publisher-name>Regan Books</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">328</size>           </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Smith1">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Smith</surname><given-names>M. E</given-names></name><name name-style="western"><surname>Farah</surname><given-names>M. J</given-names></name></person-group>             <year>2011</year>             <article-title>Are prescription stimulants “smart pills”? The epidemiology and cognitive neuroscience of prescription stimulant use by normal healthy individuals.</article-title>             <source>Psychol Bull</source>             <volume>137</volume>             <issue>5</issue>             <fpage>717</fpage>             <lpage>741</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Outram1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Outram</surname><given-names>S. M</given-names></name></person-group>             <year>2010</year>             <article-title>The use of methylphenidate among students: the future of enhancement?</article-title>             <source>J Med Ethics</source>             <volume>36</volume>             <fpage>198</fpage>             <lpage>202</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Moreno1">
+        <label>13</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Moreno</surname><given-names>J. D</given-names></name></person-group>             <year>2006</year>             <source>Mind wars: brain research and national defense</source>             <publisher-loc>New York/Washington (D.C.)</publisher-loc>             <publisher-name>Dana Press</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">210</size>           </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Storm1">
+        <label>14</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Storm</surname><given-names>W. F</given-names></name></person-group>             <year>2008</year>             <article-title>A fatigue management system for sustained military operations.</article-title>             <comment>DTIC document</comment> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">104</size>           </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Repantis1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Repantis</surname><given-names>D</given-names></name><name name-style="western"><surname>Schlattmann</surname><given-names>P</given-names></name><name name-style="western"><surname>Laisney</surname><given-names>O</given-names></name><name name-style="western"><surname>Heuser</surname><given-names>I</given-names></name></person-group>             <year>2010</year>             <article-title>Modafinil and methylphenidate for neuroenhancement in healthy individuals: a systematic review.</article-title>             <source>Pharmacol Res</source>             <volume>62</volume>             <fpage>187</fpage>             <lpage>206</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Deadwyler1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Deadwyler</surname><given-names>S. A</given-names></name><name name-style="western"><surname>Porrino</surname><given-names>L</given-names></name><name name-style="western"><surname>Siegel</surname><given-names>J. M</given-names></name><name name-style="western"><surname>Hampson</surname><given-names>R. E</given-names></name></person-group>             <year>2007</year>             <article-title>Systemic and nasal delivery of orexin-A (Hypocretin-1) reduces the effects of sleep deprivation on cognitive performance in nonhuman primates.</article-title>             <source>J Neurosci</source>             <volume>27</volume>             <issue>52</issue>             <fpage>14239</fpage>             <lpage>14247</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Hamilton1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hamilton</surname><given-names>R</given-names></name><name name-style="western"><surname>Messing</surname><given-names>S</given-names></name><name name-style="western"><surname>Chatterjee</surname><given-names>A</given-names></name></person-group>             <year>2011</year>             <article-title>Rethinking the thinking cap: ethics of neural enhancement using noninvasive brain stimulation.</article-title>             <source>Neurology</source>             <volume>76</volume>             <issue>2</issue>             <fpage>187</fpage>             <lpage>193</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Tyler1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Tyler</surname><given-names>W. J</given-names></name></person-group>             <year>2011</year>             <article-title>Noninvasive neuromodulation with ultrasound? A continuum mechanics hypothesis.</article-title>             <source>Neuroscientist</source>             <volume>17</volume>             <issue>1</issue>             <fpage>25</fpage>             <lpage>36</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Tyler2">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Tyler</surname><given-names>W. J</given-names></name></person-group>             <year>2010</year>             <article-title>Remote control of brain activity using ultrasound.</article-title>             <source>Armed with Science</source>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://science.dodlive.mil/2010/09/01/remote-control-of-brain-activity-using-ultrasound/" xlink:type="simple">http://science.dodlive.mil/2010/09/01/remote-control-of-brain-activity-using-ultrasound/</ext-link>. Accessed 21 July 2011</comment>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Ukueberuwa1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ukueberuwa</surname><given-names>D</given-names></name><name name-style="western"><surname>Wassermann</surname><given-names>E. M</given-names></name></person-group>             <year>2010</year>             <article-title>Direct current brain polarization: A simple, noninvasive technique for human neuromodulation.</article-title>             <source>Neuromodulation</source>             <volume>13</volume>             <issue>3</issue>             <fpage>168</fpage>             <lpage>173</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Pitman1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pitman</surname><given-names>R. K</given-names></name><name name-style="western"><surname>Sanders</surname><given-names>K. M</given-names></name><name name-style="western"><surname>Zusman</surname><given-names>R. M</given-names></name><name name-style="western"><surname>Healy</surname><given-names>A. R</given-names></name><name name-style="western"><surname>Cheema</surname><given-names>F</given-names></name><etal/></person-group>             <year>2002</year>             <article-title>Pilot study of secondary prevention of posttraumatic stress disorder with propranolol.</article-title>             <source>Biol Psychiatry</source>             <volume>51</volume>             <issue>2</issue>             <fpage>189</fpage>             <lpage>192</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Brunet1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Brunet</surname><given-names>A</given-names></name><name name-style="western"><surname>Orr</surname><given-names>S. P</given-names></name><name name-style="western"><surname>Tremblay</surname><given-names>J</given-names></name><name name-style="western"><surname>Robertson</surname><given-names>K</given-names></name><name name-style="western"><surname>Nader</surname><given-names>K</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Effect of post-retrieval propranolol on psychophysiologic responding during subsequent script-driven traumatic imagery in post-traumatic stress disorder.</article-title>             <source>J Psychiat Res</source>             <volume>42</volume>             <issue>6</issue>             <fpage>503</fpage>             <lpage>506</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Singer1">
+        <label>23</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Singer</surname><given-names>P. W</given-names></name></person-group>             <year>2009</year>             <source>Wired for war: The robotics revolution and conflict in the 21<sup>st</sup> century</source>             <publisher-loc>New York</publisher-loc>             <publisher-name>Penguin Group</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">512</size>           </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Greely1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Greely</surname><given-names>H. T</given-names></name><name name-style="western"><surname>Illes</surname><given-names>J</given-names></name></person-group>             <year>2007</year>             <article-title>Neuroscience-based lie detection: The urgent need for regulation.</article-title>             <source>Am J Law Med</source>             <volume>33</volume>             <fpage>377</fpage>             <lpage>431</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Ganis1">
+        <label>25</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ganis</surname><given-names>G</given-names></name><name name-style="western"><surname>Rosenfeld</surname><given-names>J. P</given-names></name></person-group>             <year>2011</year>             <article-title>Neural correlates of deception.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Illes</surname><given-names>J</given-names></name><name name-style="western"><surname>Sahakian</surname><given-names>B. J</given-names></name></person-group>             <source>The Oxford handbook of neuroethics</source>             <publisher-loc>Oxford</publisher-loc>             <publisher-name>Oxford University Press</publisher-name>             <fpage>101</fpage>             <lpage>117</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Brain1">
+        <label>26</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">Brain Fingerprinting Laboratories</collab>             <year>n.d.</year>             <article-title>Brain Fingerprinting Laboratories executive summary.</article-title>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.brainwavescience.com/ExecutiveSummary.php" xlink:type="simple">http://www.brainwavescience.com/ExecutiveSummary.php</ext-link>. Accessed 13 January 2012</comment>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-No1">
+        <label>27</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">No Lie MRI, Inc.</collab>             <year>n.d.</year>             <article-title>No Lie MRI home page.</article-title>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://noliemri.com/" xlink:type="simple">http://noliemri.com/</ext-link>. Accessed 13 January 2012</comment>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Cephos1">
+        <label>28</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">Cephos</collab>             <year>n.d.</year>             <article-title>Cephos home page.</article-title>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.cephoscorp.com/" xlink:type="simple">http://www.cephoscorp.com/</ext-link>. Accessed 13 January 2012</comment>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Langleben1">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Langleben</surname><given-names>D. D</given-names></name><name name-style="western"><surname>Loughead</surname><given-names>J. W</given-names></name><name name-style="western"><surname>Bilker</surname><given-names>W. B</given-names></name><name name-style="western"><surname>Ruparel</surname><given-names>K</given-names></name><name name-style="western"><surname>Childress</surname><given-names>A. R</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>Telling truth from lie in individual subjects with fast event-related fMRI.</article-title>             <source>Hum Brain Mapp</source>             <volume>26</volume>             <fpage>262</fpage>             <lpage>272</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-No2">
+        <label>30</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">No Lie MRI, Inc.</collab>             <year>n.d.</year>             <article-title>Customers - government.</article-title>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://noliemri.com/customers/Government.htm" xlink:type="simple">http://noliemri.com/customers/Government.htm</ext-link>. Accessed 19 July 2011</comment>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Committee3">
+        <label>31</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">Committee to Review the Scientific Evidence on the Polygraph, Board on Behavioral, Cognitive, and Sensory Sciences and Committee on National Statistics, National Research Council of the National Academies</collab>             <year>2003</year>             <source>The polygraph and lie detection</source>             <publisher-loc>Washington (D.C.)</publisher-loc>             <publisher-name>National Academies Press</publisher-name> <!--===== Restructure page-count as size[@units="page"] =====--><size units="page">416</size>           </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Farrell1">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Farrell</surname><given-names>B</given-names></name></person-group>             <year>2010</year>             <article-title>Can't get you out of my head: the human rights implications of using brain scans as criminal evidence.</article-title>             <source>Interdisciplinary Journal of Human Rights Law</source>             <volume>4</volume>             <issue>1</issue>             <fpage>89</fpage>             <lpage>95</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Greely2">
+        <label>33</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Greely</surname><given-names>H. T</given-names></name></person-group>             <year>2006</year>             <article-title>The social effects of advances in neuroscience: legal problems, legal perspectives.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Illes</surname><given-names>J</given-names></name></person-group>             <source>Neuroethics: defining the issues in theory, practice, and policy</source>             <publisher-loc>Oxford</publisher-loc>             <publisher-name>Oxford University Press</publisher-name>             <fpage>245</fpage>             <lpage>263</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Zak1">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Zak</surname><given-names>P. J</given-names></name></person-group>             <year>2011</year>             <article-title>The physiology of moral sentiments.</article-title>             <source>J Econ Behav Organ</source>             <volume>77</volume>             <issue>1</issue>             <fpage>53</fpage>             <lpage>65</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Organisation1">
+        <label>35</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">Organisation for the Prohibition of Chemical Weapons</collab>             <year>1997</year>             <article-title>Chemical Weapons Convention, article II: definitions and criteria.</article-title>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.opcw.org/chemical-weapons-convention/articles/article-ii-definitions-and-criteria/" xlink:type="simple">http://www.opcw.org/chemical-weapons-convention/articles/article-ii-definitions-and-criteria/</ext-link>. Accessed 7 August 2011</comment>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Marks1">
+        <label>36</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Marks</surname><given-names>J. H</given-names></name></person-group>             <year>2007</year>             <article-title>Interrogational neuroimaging in counterterrorism: a no-brainer or a human rights hazard?</article-title>             <source>Am J Law Med</source>             <volume>33</volume>             <fpage>483</fpage>             <lpage>500</lpage>          </element-citation>
+      </ref>
+      <ref id="pbio.1001289-Cressey1">
+        <label>37</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cressey</surname><given-names>D</given-names></name></person-group>             <year>2008</year>             <article-title>Pentagon goes psycho.</article-title>             <source>Nature News Blog</source>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://blogs.nature.com/news/2008/08/pentagon_goes_psycho.html" xlink:type="simple">http://blogs.nature.com/news/2008/08/pentagon_goes_psycho.html</ext-link>. Accessed 8 August 2011</comment>          </element-citation>
+      </ref>
+    </ref-list>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>BCI</term>
+          <def>
+            <p>brain–computer interface</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>DARPA</term>
+          <def>
+            <p>Defense Advanced Research Projects Agency</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>NRC</term>
+          <def>
+            <p>National Research Council</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TMS</term>
+          <def>
+            <p>transcranial magnetic stimulation</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    
+  </back>
+</article>

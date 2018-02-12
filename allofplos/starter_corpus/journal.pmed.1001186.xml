@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS Med</journal-id><journal-id journal-id-type="publisher-id">PLoS</journal-id><journal-id journal-id-type="pmc">plosmed</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Medicine</journal-title></journal-title-group><issn pub-type="epub">1549-1676</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PMEDICINE-D-10-00719</article-id><article-id pub-id-type="doi">10.1371/journal.pmed.1001186</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Policy Forum</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Global health</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories><title-group><article-title>Guidance for Evidence-Informed Policies about Health Systems: Linking Guidance Development to Policy Development</article-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lavis</surname>
+            <given-names>John N.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Røttingen</surname>
+            <given-names>John-Arne</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Bosch-Capblanch</surname>
+            <given-names>Xavier</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Atun</surname>
+            <given-names>Rifat</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>El-Jardali</surname>
+            <given-names>Fadi</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Gilson</surname>
+            <given-names>Lucy</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Lewin</surname>
+            <given-names>Simon</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Oliver</surname>
+            <given-names>Sandy</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ongolo-Zogo</surname>
+            <given-names>Pierre</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff9">
+            <sup>9</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Haines</surname>
+            <given-names>Andy</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff10">
+            <sup>10</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>McMaster Health Forum, Centre for Health Economics and Policy Analysis, Department of Clinical Epidemiology and Biostatistics, and Department of Political Science, McMaster University, Hamilton, Ontario, Canada</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Norwegian Knowledge Centre for the Health Services, Oslo, Norway</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Swiss Tropical and Public Health Institute, Basel, Switzerland</addr-line>       </aff><aff id="aff4"><label>4</label><addr-line>Global Fund to Fight AIDS, Tuberculosis and Malaria, Geneva, Switzerland and Imperial College, London, United Kingdom</addr-line>       </aff><aff id="aff5"><label>5</label><addr-line>Department of Health Policy and Management, American University of Beirut, Beirut, Lebanon and McMaster Health Forum, McMaster University, Hamilton, Ontario, Canada</addr-line>       </aff><aff id="aff6"><label>6</label><addr-line>University of Cape Town, Cape Town, South Africa, and London School of Hygiene and Tropical Medicine, London, United Kingdom</addr-line>       </aff><aff id="aff7"><label>7</label><addr-line>Norwegian Knowledge Centre for the Health Services, Oslo, Norway, and Health Systems Research Unit, Medical Research Council of South Africa, Cape Town, South Africa</addr-line>       </aff><aff id="aff8"><label>8</label><addr-line>EPPI-Centre, Social Science Research Unit, Institute of Education, London, United Kingdom</addr-line>       </aff><aff id="aff9"><label>9</label><addr-line>Centre for the Development of Best Practices in Health, Yaoundé Central Hospital, and University of Yaoundé, Yaoundé, Cameroon</addr-line>       </aff><aff id="aff10"><label>10</label><addr-line>London School of Hygiene and Tropical Medicine, London, United Kingdom</addr-line>       </aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">lavisj@mcmaster.ca</email></corresp>
+        <fn fn-type="con">
+          <p>Wrote the first draft of the manuscript: JNL. Contributed to the writing of the manuscript: JNL J-AR XB-C RA FE-J LG SL SO PO-Z AH. <ext-link ext-link-type="uri" xlink:href="http://www.icmje.org/" xlink:type="simple">ICMJE</ext-link> criteria for authorship read and met: JNL J-AR XB-C RA FE-J LG SL SO PO-Z AH. Agree with manuscript results and conclusions: JNL J-AR XB-C RA FE-J LG SL SO PO-Z AH. Conceived and designed the process: JNL J-AR XB-C RA FE-J LG SL SO PO-Z AH.</p>
+        </fn>
+        <fn>
+          <p>The Policy Forum allows health policy makers around the world to discuss challenges and opportunities for improving health care in their societies.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The Swiss Tropical and Public Health Institute and the Norwegian Knowledge Centre for the Health Services received funds from the WHO for the contributions of XBC and SL to developing the Handbook to produce health systems guidance, and some of this work is reported in this article. All other authors declare no competing interests.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <month>3</month>
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>13</day>
+        <month>3</month>
+        <year>2012</year>
+      </pub-date><volume>9</volume><issue>3</issue><elocation-id>e1001186</elocation-id><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2012</copyright-year><copyright-holder>Lavis et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><related-article ext-link-type="uri" id="RA1" related-article-type="companion" xlink:href="info:doi/10.1371/journal.pmed.1001185" xlink:type="simple"> <article-title>Guidance for Evidence-Informed Policies about Health Systems: Rationale for and Challenges of Guidance Development</article-title></related-article><related-article ext-link-type="uri" id="RA2" related-article-type="companion" xlink:href="info:doi/10.1371/journal.pmed.1001187" xlink:type="simple"> <article-title>Guidance for Evidence-Informed Policies about Health Systems: Assessing How Much Confidence to Place in the Research Evidence</article-title></related-article><related-article ext-link-type="uri" id="RA3" related-article-type="companion" xlink:href="info:doi/10.1371/journal.pmed.1001188" xlink:type="simple"> <article-title>Better Guidance Is Welcome, but without Blinders</article-title></related-article><abstract abstract-type="toc">
+        <p>In the second paper in a three-part series on health systems guidance, John Lavis and colleagues explore the challenge of linking guidance development and policy development at global and national levels.</p>
+      </abstract><funding-group><funding-statement>The development of the Handbook was supported by a grant to the WHO by the Rockefeller Foundation, which had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. The paper represents the views of the authors and neither WHO nor the Rockefeller Foundation.</funding-statement></funding-group><counts>
+        <page-count count="7"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <boxed-text id="pmed-1001186-box001" position="float">
+      <sec id="s1a">
+        <title>Summary Points</title>
+        <list list-type="bullet">
+          <list-item>
+            <p>Contextual factors are extremely important in shaping decisions about health systems, and policy makers need to work through all the pros and cons of different options before adopting specific health systems guidance.</p>
+          </list-item>
+          <list-item>
+            <p>A division of labour between global guidance developers, global policy developers, national guidance developers, and national policy developers is needed to support evidence-informed policy-making about health systems.</p>
+          </list-item>
+          <list-item>
+            <p>A panel charged with developing health systems guidance at the global level could best add value by ensuring that its output can be used for policy development at the global and national level, and for guidance development at the national level.</p>
+          </list-item>
+          <list-item>
+            <p>Rigorous health systems analyses and political systems analyses are needed at the global and national level to support guideline and policy development.</p>
+          </list-item>
+          <list-item>
+            <p>Further research is needed into the division of labour in guideline development and policy development and on frameworks for supporting system and political analyses.</p>
+          </list-item>
+          <list-item>
+            <p>This is the second paper in a three-part series in <italic>PLoS Medicine</italic> on health systems guidance.</p>
+          </list-item>
+        </list>
+      </sec>
+    </boxed-text>
+    <sec id="s2">
+      <title/>
+      <disp-quote>
+        <p>
+          <italic>This is one paper in a three-part series that sets out how evidence should be translated into guidance to inform policies on health systems and improve the delivery of clinical and public health interventions.</italic>
+        </p>
+      </disp-quote>
+    </sec>
+    <sec id="s3">
+      <title>Introduction</title>
+      <p>Policies about health systems can have profound impacts on citizens, patients, health professionals, and managers. For physicians, for example, the impacts can include changing their scope of practice (a governance arrangement), how they are paid (a financial arrangement), where they provide care (a delivery arrangement), and how their practices are supported in providing the types of care that citizens and patients value (an implementation strategy). Contextual factors are extremely important in shaping decisions about health systems, and policy makers have to work through all the pros and cons of different options before developing new policies on health systems.</p>
+      <p>In this paper, which is the second of a three-part series on health systems guidance <xref ref-type="bibr" rid="pmed.1001186-BoschCapblanch1">[1]</xref>,<xref ref-type="bibr" rid="pmed.1001186-Lewin1">[2]</xref>, by considering issues raised during meetings of the World Health Organization's (WHO) Task Force on Developing Health Systems Guidance (<xref ref-type="boxed-text" rid="pmed-1001186-box002">Box 1</xref>), we:</p>
+      <list list-type="bullet">
+        <list-item>
+          <p>Explore the links between health systems guidance development and policy development at global and national levels;</p>
+        </list-item>
+        <list-item>
+          <p>Examine the range of factors that can influence policy development.</p>
+        </list-item>
+      </list>
+      <p>The first article in the series makes a case for developing guidance to inform decisions on health systems-level questions based on an analysis of strategic health sector documents, explores specific challenges in producing such guidance, and identifies options for addressing these challenges <xref ref-type="bibr" rid="pmed.1001186-BoschCapblanch1">[1]</xref>. The third paper focuses on assessing how much confidence can be placed on health systems research evidence in both guidance and policy development processes <xref ref-type="bibr" rid="pmed.1001186-Lewin1">[2]</xref>.</p>
+      <boxed-text id="pmed-1001186-box002" position="float">
+        <sec id="s3a1">
+          <title>Box 1. The Task Force on Developing Health Systems Guidance</title>
+          <p>To improve how it responds to requests for guidance on health systems, WHO established the Task Force on Developing Health Systems Guidance in 2009. Briefly:</p>
+          <list list-type="bullet">
+            <list-item>
+              <p>WHO selected the 20 members of this Task Force to ensure diversity in terms of skills and experience in four broad domains—health policy and systems research (30% of the panel members), systematic reviews (55%), national deliberative processes (20%), and guidance development (40%)—and in terms of gender (25% female) and current base in a low- and middle-income country (30%).</p>
+            </list-item>
+            <list-item>
+              <p>The Task Force provided input to the development of a <italic>Handbook for Developing Health Systems Guidance</italic> and to the identification of broader issues that warranted further dialogue and debate <xref ref-type="bibr" rid="pmed.1001186-BoschCapblanch2">[12]</xref>.</p>
+            </list-item>
+            <list-item>
+              <p>As part of this process, the Task Force reviewed approaches to developing clinical guidelines and the instruments used as well as the broader literature on the four broad domains listed above, which were synthesized by the Handbook developers.</p>
+            </list-item>
+            <list-item>
+              <p>The Task Force suggested ways in which some of the approaches and instruments used to develop clinical guidelines could be adapted for use in the development of health systems guidance and indicated where there were important differences between these two types of guidance.</p>
+            </list-item>
+          </list>
+          <p>The writing group for this paper further considered the issues raised in these discussions and produced a first draft of the manuscript for comment by the Task Force. This paper and the other two in the series <xref ref-type="bibr" rid="pmed.1001186-BoschCapblanch1">[1]</xref>,<xref ref-type="bibr" rid="pmed.1001186-Lewin1">[2]</xref> were finalised after several iterations of comments by the Task Force and external reviewers.</p>
+        </sec>
+      </boxed-text>
+      <p>Here and in the other two papers in the series, we rely on a set of key definitions (<xref ref-type="supplementary-material" rid="pmed.1001186.s006">Text S1</xref>). While the definitions of health systems and health systems interventions may be familiar to many, the definition of health systems guidance differs significantly from the definition of clinical guidelines <xref ref-type="bibr" rid="pmed.1001186-Schunemann1">[3]</xref>, both in its focus on including options for consideration and in its focus on using guidance to assist decision-making in a range of settings. The importance of contextual factors in shaping decisions about health systems means that health systems guidance should include information about what is known about the pros and cons of different options, the factors that will likely influence decisions about the options in different settings, and the tools that can support local guidance or policy development processes. A policy brief can be used to provide background evidence to inform a policy dialogue among stakeholders <xref ref-type="bibr" rid="pmed.1001186-Lavis1">[4]</xref>,<xref ref-type="bibr" rid="pmed.1001186-Lavis2">[5]</xref>, which can in turn result in the articulation of the preferred policy option(s).</p>
+      <p>Importantly, in our definitions of both health systems guidance and policy briefs (<xref ref-type="supplementary-material" rid="pmed.1001186.s006">Text S1</xref>) and throughout this paper, we emphasize the importance of being systematic and of involving all stakeholders. The recent World Health Assembly resolution on guidance for health system policies gives much needed attention to the issue of health systems guidance <xref ref-type="bibr" rid="pmed.1001186-World1">[6]</xref>,<xref ref-type="bibr" rid="pmed.1001186-World2">[7]</xref>. However, the resolution contains only two uses of the phrase “evidence-based” (one for the assessment of a country's health and health system problems, the other for responses to evolving problems) and one call for “involv[ing] all relevant stakeholders.” Moreover, the resolution and related materials are largely silent on the need to follow systematic processes for evidence synthesis and stakeholder engagement.</p>
+    </sec>
+    <sec id="s4">
+      <title>Links between Guidance Development and Policy Development</title>
+      <p>Economy of scale and efficiency considerations at the global level, and resource and capacity constraints at the national level, mean that a division of labour among global guidance developers, global policy developers, national guidance developers, and national policy developers is needed to support evidence-informed policy-making about health systems (<xref ref-type="fig" rid="pmed-1001186-g001">Figure 1</xref>). All these groups would help to set priorities and provide feedback (double-headed arrows in <xref ref-type="fig" rid="pmed-1001186-g001">Figure 1</xref>).</p>
+      <fig id="pmed-1001186-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pmed.1001186.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Potential links between guidance and policy development at global and national levels.</title>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001186.g001" xlink:type="simple"/>
+      </fig>
+      <p>The first group—a panel charged with developing guidance about health systems at the global level similar to the panels convened by WHO to address specific issues—could likely best add value by developing health systems guidance and by supporting its use in three types of processes:</p>
+      <list list-type="bullet">
+        <list-item>
+          <p>Policy development at the global level (where applicable);</p>
+        </list-item>
+        <list-item>
+          <p>Guidance development at the national level;</p>
+        </list-item>
+        <list-item>
+          <p>Policy development at the national level.</p>
+        </list-item>
+      </list>
+      <sec id="s4a">
+        <title>Policy Development at the Global Level</title>
+        <p>International organizations like WHO and the World Bank, global initiatives like the Global Alliance for Vaccines and Immunization and the Global Fund to Fight AIDS, Tuberculosis and Malaria, and many bilateral initiatives and some very large multinational nongovernmental organizations (NGOs) could draw on the global guidance to inform decisions within their respective remits. Such decisions may be about how the organization invests its money directly (e.g., bulk-purchasing arrangements) or about how it attaches conditionalities to funds invested in related areas (e.g., staffing in HIV clinics). For some of these organizations and initiatives, making policy decisions about health systems is a relatively new area that lies outside their normally perceived remit, but the impacts of their involvement in making policy decisions on health systems could be profound given their scale of funding.</p>
+      </sec>
+      <sec id="s4b">
+        <title>Guidance Development at the National Level</title>
+        <p>A national Evidence-Informed Policy Network (EVIPNet, see <xref ref-type="supplementary-material" rid="pmed.1001186.s006">Text S1</xref>) sponsored by government or a guidance panel appointed by government (or other groups provided their members have the skills and experiences for such work) could draw on the global guidance to develop a country-specific policy brief that contextualizes the health system problem, options for addressing the problem, key implementation considerations, and (possibly) monitoring and evaluation considerations. The policy brief could draw on context-specific data and research evidence in each of these domains and could take into consideration any global decisions that might be considered binding on the country. A recent example of such an effort is the policy briefs that were developed to scale up the widespread use of artemisinin-based combination therapy to treat malaria. In this instance, global guidance spurred (but did not fully support) the national guidance development processes that EVIPNets undertook in several African countries and regions <xref ref-type="bibr" rid="pmed.1001186-Lavis3">[8]</xref>.</p>
+        <p>An EVIPNet could also convene a policy dialogue that allows the data and research evidence contained in the policy brief to inform and be considered alongside the views, experiences, and tacit knowledge of those who will be involved in, or affected by, future decisions about the health system problem <xref ref-type="bibr" rid="pmed.1001186-Lavis2">[5]</xref>. The evidence brief and dialogue summary could then be used by the national government to inform a decision.</p>
+        <p>Global decisions that might be considered in national guidance development processes include the normative standards that WHO member states collectively endorse at the World Health Assembly and agree to abide by in their respective countries. However, worryingly, a review of the statements made by the World Bank and WHO on topics addressed by the World Health Assembly between 2000 and 2003 (including three broad health systems topic areas) revealed that these statements are rarely consistent with the direction and the nature of effect claims from systematic reviews, which suggests that there is significant potential for improvement in how these organizations use or report the use of synthesized research evidence in their policy-development processes <xref ref-type="bibr" rid="pmed.1001186-Hoffman1">[9]</xref>.</p>
+      </sec>
+      <sec id="s4c">
+        <title>Policy Development at the National Level</title>
+        <p>A national government could make decisions for its country by drawing on the health systems guidance produced at the global level and/or a policy brief produced at the national level (with or without the summary of a policy dialogue that was informed by the policy brief) and by keeping in mind any global decisions that it acknowledges as binding on itself. The national government may choose to convene one or more policy dialogues or use other stakeholder-engagement approaches to support its decision-making and to reach agreement among stakeholders, ideally informed by the policy brief and supported by relevant tools highlighted in the guidance produced at the global level.</p>
+      </sec>
+      <sec id="s4d">
+        <title>Will This Proposed Division of Labour Work?</title>
+        <p>We suggest that this proposed division of labour should be explored retrospectively by looking at several cases where health systems guidance has been developed at the global level and examining how the process could have unfolded differently with a view to refining the process. The division of labour could also be examined prospectively by examining cases where guidance is being developed at the global level and EVIPNets (among others) are drawing on this guidance to develop national policy briefs and convene national policy dialogues. Additional insights could be derived by examining the lessons learned in the field of health technology assessment where a similar need for a division of labour has been documented, albeit mainly at the level of drugs, devices, and other technologies <xref ref-type="bibr" rid="pmed.1001186-VelascoGarrido1">[10]</xref>.</p>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Factors That Can Influence Policy Development</title>
+      <p>The final stage in the process of health systems policy development is the preparation of a document (or documents) produced within a national government to support decision-making by that government. A range of names might be applied to the document(s), which is ideally informed by global guidance, a national policy brief, and other inputs, but for simplicity, we refer to this decision-support document as a policy proposal.</p>
+      <p>The health systems guidance (which emphasizes global evidence), policy brief (which emphasizes global and national research evidence), and policy proposal (which emphasizes the many considerations supporting a preferred course of action) all need to synthesize what is known and not known about the pros and cons of the options under consideration. They also all need to assess the factors that can influence the choice, implementation, and monitoring and evaluation of these options in different settings (or in the case of the policy brief and policy proposal, at least refer to the synthesis contained in the guidance and policy brief, respectively, when they exist). While varying in emphasis, each of these documents would ideally document:</p>
+      <list list-type="bullet">
+        <list-item>
+          <p>Key features of an assessment about how to address a health system problem;</p>
+        </list-item>
+        <list-item>
+          <p>Key features of a health system (or health systems) that can influence decision-making about how to address a health system problem;</p>
+        </list-item>
+        <list-item>
+          <p>Key features of a political system (or political systems) that can influence decision-making about how to address a health system problem.</p>
+        </list-item>
+      </list>
+      <sec id="s5a">
+        <title>Key Features of an Assessment about How to Address a Health System Problem</title>
+        <p>An assessment about how to address a health system problem requires working through the underlying problem, the appropriate options to address the problem, and implementation issues (see <xref ref-type="supplementary-material" rid="pmed.1001186.s005">Table S1</xref>). Much of what is known and not known about each of these areas can be derived from available data and research evidence. Health systems guidance that is produced at the global level can present overall summaries of the answers to these questions and identify patterns in the variation in these answers across health systems and political systems. Synthesized research evidence about health systems is increasingly available, and initiatives to make it easier to find and use evidence can support guidance development at the global level (e.g., Health Systems Evidence at <ext-link ext-link-type="uri" xlink:href="http://www.healthsystemsevidence.org" xlink:type="simple">http://www.healthsystemsevidence.org</ext-link>, which is now available in Arabic, Chinese, English, French, Portuguese, Russian, and Spanish). A policy brief produced at the national level can supplement the data and research evidence contained in global health systems guidance with local data and research evidence in order to present as clearly as possible what is known about how to address a health system problem in a particular country.</p>
+      </sec>
+      <sec id="s5b">
+        <title>Key Features of Health Systems That Can Influence Decision-Making about How to Address a Health System Problem</title>
+        <p>An assessment of the key features of health systems that can influence decision-making about how to address a health system problem involves working through existing governance, financial, and delivery arrangements to determine which arrangements might help or hinder any options being considered (<xref ref-type="table" rid="pmed-1001186-t001">Table 1</xref>). A new health systems intervention such as pay-for-performance might “fit” into one health system, but the same intervention or part of the health system might require significant adjustment or complementary interventions to fit into a system where performance data are not collected systematically. Moreover, any new health systems intervention may have unanticipated consequences for the existing health system arrangements in which it is introduced, for example, by removing incentives for some types of activity.</p>
+        <table-wrap id="pmed-1001186-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001186.t001</object-id><label>Table 1</label><caption>
+            <title>Key features of a health system that can influence decision-making about how to address a health system problem.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pmed-1001186-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001186.t001" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Key Features</td>
+                <td align="left" colspan="1" rowspan="1">Examples</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>Governance arrangements</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Policy authority</td>
+                <td align="left" colspan="1" rowspan="1">• National ministry sets policy directions for the health system but sub-national (e.g., provincial) ministries and private organizations can accept, adapt, or reject them• National and provincial ministries only weakly enforce anti-corruption policies</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Organizational authority</td>
+                <td align="left" colspan="1" rowspan="1">• Private for-profit companies own most hospitals in urban centres, whereas religious charities own most hospitals in rural areas• A national network of pharmacies acts as a de facto monopoly</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Commercial authority</td>
+                <td align="left" colspan="1" rowspan="1">• Limited regulation of patents, prices, and marketing of diagnostic tests• Strong safeguards against the production and sale of counterfeit medicines</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Professional authority</td>
+                <td align="left" colspan="1" rowspan="1">• Only physicians have the regulatory authority to diagnose and prescribe• Mandatory continuing professional development of health professionals</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Consumer and stakeholder involvement</td>
+                <td align="left" colspan="1" rowspan="1">• Half of the seats on all health system advisory councils are reserved for consumers• Large non-governmental organizations participate in key ministry planning meetings</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>Financial arrangements</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Financing systems</td>
+                <td align="left" colspan="1" rowspan="1">• Mandatory participation in a private or community-based insurance scheme• Reliance on donor contributions for major infectious disease programs but insufficient funding from any source for non-communicable disease programs</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Funding organizations</td>
+                <td align="left" colspan="1" rowspan="1">• Ministry uses global budgets to fund public and private not-for-profit hospitals• Clinics incur a financial penalty if they fail to achieve performance targets, one of which is high consumer satisfaction ratings</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Remunerating providers</td>
+                <td align="left" colspan="1" rowspan="1">• All hospital-based personnel are paid by salary• Community health workers receive a bonus if they achieve performance targets</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Purchasing products and services</td>
+                <td align="left" colspan="1" rowspan="1">• List of substitutable products and services is updated every three years• Prior approval requirements are in place for high-cost purchases</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Incentivizing consumers</td>
+                <td align="left" colspan="1" rowspan="1">• Patients face large out-of-pocket costs for seeking care outside their local clinic• Patients receive conditional cash transfers for select health-related behaviours</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>Delivery arrangements</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• How care is designed to meet consumers' needs</td>
+                <td align="left" colspan="1" rowspan="1">• Local cultural beliefs limit the demand for certain types of programs and services• Optimal packages of care (e.g., Integrated Management of Childhood Illness) have been adapted to the country and are widely used</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• By whom care is provided</td>
+                <td align="left" colspan="1" rowspan="1">• Many parts of the country are experiencing physician shortages• Community health workers receive high-quality training and supervision to play a defined role in tuberculosis control</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Where care is provided</td>
+                <td align="left" colspan="1" rowspan="1">• Hospitals in urban areas have high-quality infrastructure• Clinics frequently lack functioning diagnostic equipment and covered/reimbursed medicines</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• With what supports is care provided</td>
+                <td align="left" colspan="1" rowspan="1">• Information and communication technologies do not function well in rural and remote communities• Quality monitoring and improvement systems are in place and functioning well</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>The taxonomy is drawn from Health Systems Evidence (<ext-link ext-link-type="uri" xlink:href="http://www.healthsystemsevidence.org" xlink:type="simple">http://www.healthsystemsevidence.org</ext-link>), which is an adapted and more detailed operationalization of the WHO “building blocks of health systems” <xref ref-type="bibr" rid="pmed.1001186-World3">[15]</xref>, and the examples are drawn from a range of sources (e.g., <xref ref-type="bibr" rid="pmed.1001186-Hanson1">[21]</xref>). The word “care” within the section of delivery arrangements could be replaced by programs and services or by prevention, treatment, and support when the focus is more on public health than on clinical care.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <p>Some of what is known and not known about the key health system arrangements can be derived from available data and research evidence. Health systems guidance that is produced at the global level can present overall summaries of what is known about which arrangements are key for achieving the desired impacts in different health system contexts. A policy brief produced at the national level can enrich these summaries with local data and research evidence in order to present as clearly as possible what is known about how existing health system arrangements may influence the selection and implementation of options. In this way, policy-making about health systems can be informed by a good understanding of the system-level context for an option and the range of its potential desired and undesired system-wide effects, and any adaptation and re-design of the option (and potentially other health system arrangements) that is needed to optimize synergies among health system elements.</p>
+      </sec>
+      <sec id="s5c">
+        <title>Key Features of Political Systems That Can Influence Decision-Making about How to Address a Health System Problem</title>
+        <p>An assessment of the key features of a political system that can influence decision-making about how to address a health system problem involves working through the institutions, interests, and ideas that currently drive decision-making, as well as the “external factors” that can open windows of opportunity to introduce change (<xref ref-type="table" rid="pmed-1001186-t002">Table 2</xref>). As above, globally produced health systems guidance can ideally present overall summaries about what is known about which features are key and identify patterns in the variation of these features across health systems and political systems. A policy brief produced at the national level can enrich the data and research evidence from health systems guidance with local data and research evidence. Moreover, a policy dialogue conducted at the national level can further enrich the available data and research evidence with local views, experiences, and tacit knowledge about how the political system really works and which system features are most important for the issue at hand.</p>
+        <table-wrap id="pmed-1001186-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001186.t002</object-id><label>Table 2</label><caption>
+            <title>Key features of a political system that can influence decision-making about how to address a health system problem.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pmed-1001186-t002-2" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001186.t002" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Key Features</td>
+                <td align="left" colspan="1" rowspan="1">National (or Sub-National) Examples</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>Institutions</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Government structures</td>
+                <td align="left" colspan="1" rowspan="1">• Constitution states that health care is a sub-national responsibility, so provincial finance and health ministries are where most key decisions are made• Health minister has delegated authority from the prime minister and cabinet to make almost all key decisions regarding the health system</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Policy legacies</td>
+                <td align="left" colspan="1" rowspan="1">• Legislation created only a limited role for the ministry of health so civil servants never developed the administrative capacities required to pursue many options• Health care insurance policy has shaped the thinking and influence of the country's medical association</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Policy networks</td>
+                <td align="left" colspan="1" rowspan="1">• A standing government-appointed guidance panel engages key stakeholders in the process of informing policy-making on select issues• A committee comprised of government and medical association representatives makes many recommendations that later become law</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>Interests</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Interest groups</td>
+                <td align="left" colspan="1" rowspan="1">• For-profit companies that face concentrated benefits or costs in relation to an option mobilize quickly and exert pressure effectively• Nursing association has the technical and communication staff needed to influence the policy-making process</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Civil society</td>
+                <td align="left" colspan="1" rowspan="1">• Citizens are poorly organized and groups representing them have difficulty reaching consensus on their preferred option• Lack of independent media hampers dialogue and debate</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>Ideas</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Values</td>
+                <td align="left" colspan="1" rowspan="1">• Widely held values support a focus on equity in the health systems• Government holds a strong pro-market orientation</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Personal experiences</td>
+                <td align="left" colspan="1" rowspan="1">• Personal experiences of the minister influence much of her decision-making• A highly visible consumer representative very effectively mobilizes the stories of individuals' poor treatment in the system to push for change</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Research evidence</td>
+                <td align="left" colspan="1" rowspan="1">• A systematic review suggests that one option is more effective and cost-effective than others• A qualitative synthesis identified that stakeholders' views and experiences are such that one option is likely to achieve higher coverage rates than others</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">
+                  <bold>External factors</bold>
+                </td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Political change</td>
+                <td align="left" colspan="1" rowspan="1">• Election brings a new president or legislative coalition to power• Cabinet shuffle introduces a new minister to the health portfolio</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Economic change</td>
+                <td align="left" colspan="1" rowspan="1">• Global economic crisis reduces donors' capacity to support national programs• National economic situation spurs calls to “do more with less”</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Release of major reports</td>
+                <td align="left" colspan="1" rowspan="1">• A report by a prominent international organization endorses one option over others• An external audit of a malaria eradication program reveals significant corruption</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Technological change</td>
+                <td align="left" colspan="1" rowspan="1">• Mobile phone technology introduces new possibilities for performance management</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• New diseases</td>
+                <td align="left" colspan="1" rowspan="1">• An influenza outbreak spreads rapidly to other countries</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">• Media coverage</td>
+                <td align="left" colspan="1" rowspan="1">• A series of investigative news articles in the national newspaper reveals the weak enforcement of contracts in the health system</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt102">
+              <label/>
+              <p>The framework is adapted from one presented elsewhere <xref ref-type="bibr" rid="pmed.1001186-Lavis8">[22]</xref>, which in turn was informed by a set of related frameworks (e.g., <xref ref-type="bibr" rid="pmed.1001186-Weatherford1">[23]</xref>,<xref ref-type="bibr" rid="pmed.1001186-Hall1">[24]</xref>) as well sub-frameworks (e.g., <xref ref-type="bibr" rid="pmed.1001186-Pierson1">[25]</xref>–<xref ref-type="bibr" rid="pmed.1001186-Olson1">[28]</xref>).</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+      </sec>
+      <sec id="s5d">
+        <title>How Do These Assessments Relate to One Another and to Other Approaches?</title>
+        <p>These three types of assessment are clearly interrelated. For example, empirical research has shown that an option is often deemed an appropriate solution if it is technically feasible (which can come from <xref ref-type="supplementary-material" rid="pmed.1001186.s005">Tables S1</xref> and <xref ref-type="table" rid="pmed-1001186-t001">1</xref>), fits with dominant values and the current national/provincial mood (which can come from <xref ref-type="table" rid="pmed-1001186-t002">Table 2</xref>), and is acceptable in terms of affordability (which can come from <xref ref-type="supplementary-material" rid="pmed.1001186.s005">Tables S1</xref> and <xref ref-type="table" rid="pmed-1001186-t002">2</xref>) and likely political support or opposition (which can come from <xref ref-type="table" rid="pmed-1001186-t002">Table 2</xref>) <xref ref-type="bibr" rid="pmed.1001186-Kingdon1">[11]</xref>. The <italic>Handbook for Developing Health Systems Guidance</italic> sets out an approach that focuses on the intervention as tested (e.g., costs, appropriateness, ease of implementation), requirements in relation to implementers or facilitators (e.g., credibility, skills, experience), requirements in terms of users of the interventions (e.g., capacity, training), and factors related to the context (e.g., political, socioeconomic, rights), which again can be traced to <xref ref-type="supplementary-material" rid="pmed.1001186.s005">Tables S1</xref>, <xref ref-type="table" rid="pmed-1001186-t001">1</xref>, and <xref ref-type="table" rid="pmed-1001186-t002">2</xref> <xref ref-type="bibr" rid="pmed.1001186-BoschCapblanch2">[12]</xref>. Unpacking these assessments further, as we have done here, can help to provide a more systematic and transparent assessment.</p>
+        <p>As we discuss in the next paper, existing approaches to grading the quality of recommendations about clinical options will likely require significant modification for use in a health system context <xref ref-type="bibr" rid="pmed.1001186-Lewin1">[2]</xref>. The GRADE approach <xref ref-type="bibr" rid="pmed.1001186-Schunemann2">[13]</xref>, for example, focuses only on two of the system-level factors that we have described—“values and preferences” and “feasibility”—but there are many more factors that will influence the choice of options for addressing a health system problem in different settings (as well as the implementation and the monitoring and evaluation of the preferred option). Also, the GRADE approach is typically executed by experts, and, while it can inform and complement policy dialogues and other stakeholder-engagement processes, it cannot substitute for these processes in the assessment of system factors.</p>
+      </sec>
+    </sec>
+    <sec id="s6">
+      <title>Conclusions</title>
+      <p>Our proposed division of labour links guidance development at the global level with policy development at the national level. Balancing a broad range of system and political considerations to come to a reasoned judgment about how to address a health system problem is arguably the purview of those who have been given the accountability to make decisions about health systems, whether democratically elected or appointed. Typically, these policy makers are located at the national level. Our examination of the range of factors that can influence policy development (and that can be flagged for consideration in health systems guidance) highlights the need for rigorous system and political analyses in policy briefs at the national level. These analyses can be supported at the global level by health systems guidance that presents overall summaries about what is known about which health and political system features help and hinder particular options. These analyses can also be aided by the frameworks presented in <xref ref-type="supplementary-material" rid="pmed.1001186.s005">Tables S1</xref>, <xref ref-type="table" rid="pmed-1001186-t001">1</xref>, and <xref ref-type="table" rid="pmed-1001186-t002">2</xref>, by the SUPporting POlicy Relevant Trials (SUPPORT) tools <xref ref-type="bibr" rid="pmed.1001186-Lavis4">[14]</xref>—a set of tools that can be used by people involved in finding and using research evidence to support evidence-informed health policy-making—and by a range of other approaches such as the evidence synthesis and grading approaches presented in the other two papers in the series <xref ref-type="bibr" rid="pmed.1001186-BoschCapblanch1">[1]</xref>,<xref ref-type="bibr" rid="pmed.1001186-Lewin1">[2]</xref> and the decision trees, system modeling, and evaluation frameworks presented in the <italic>Handbook for Developing Health Systems Guidance</italic> <xref ref-type="bibr" rid="pmed.1001186-BoschCapblanch2">[12]</xref>. Those involved in policy development at the national level will need to, as representatives of member states of WHO, push for change at the global level if guidance development in the area of health systems is to support the type of context-sensitive policy development at the national level that we have proposed here.</p>
+      <p>Certainly, there is a fruitful research agenda ahead for those interested in studying the division of responsibilities across guidance panels at the global level, EVIPNets or guidance panels at the national level, and national (or sub-national) governments, as well as the conditions under which global organizations have a legitimate role in making decisions about health systems. A complementary research agenda could focus on assessing frameworks and approaches to supporting system and political analyses, particularly in the difficult (but not uncommon) situation where a health system intervention is actually a complex bundle of interventions that can interact in helpful and unhelpful ways. The results of such research could inform ongoing modifications to the division of labour that we propose in this paper to ensure that limited resources are used wisely and that both the best available research evidence and the contextual insights of key stakeholders informs guidance development and policy development.</p>
+    </sec>
+    <sec id="s7">
+      <title>Supporting Information</title>
+      <supplementary-material id="pmed.1001186.s001" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001186.s001" xlink:type="simple">
+        <label>Alternative Language Summary Points S1</label>
+        <caption>
+          <p>
+            <bold>Translation of the Summary Points into Spanish by Xavier Bosch-Capblanch</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001186.s002" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001186.s002" xlink:type="simple">
+        <label>Alternative Language Summary Points S2</label>
+        <caption>
+          <p>
+            <bold>Translation of the Summary Points into French by Bruno Clary, William Lenoir, and Lise Beck</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001186.s003" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001186.s003" xlink:type="simple">
+        <label>Alternative Language Summary Points S3</label>
+        <caption>
+          <p>
+            <bold>Translation of the Summary Points into Portuguese by Bruno Viana</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001186.s004" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001186.s004" xlink:type="simple">
+        <label>Alternative Language Summary Points S4</label>
+        <caption>
+          <p>
+            <bold>Translation of the Summary Points into Arabic by Fadi El-Jardali</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001186.s005" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001186.s005" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Key features of an assessment about how to address a health system problem</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pmed.1001186.s006" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.1001186.s006" xlink:type="simple">
+        <label>Text S1</label>
+        <caption>
+          <p>
+            <bold>Definitions used in this paper</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We acknowledge other members of the Task Force on Developing Health Systems Guidance, who include (with their affiliations at the time when the Task Force was initiated): Edgardo Abalos, Centro Rosarino de Estudios Perinatales (Argentina); Abdul Ghaffar, Alliance for Health Policy and Systems Research, World Health Organization (Switzerland); Timothy Evans, Assistant Director-General, Information, Evidence and Research, World Health Organization (Switzerland); Davina Ghersi, Department of Research Policy and Cooperation, Information, Evidence and Research, World Health Organization (Switzerland); Metin Gulmezoglu, UNDP/UNFPA/WHO/World Bank Special Programme of Research, Development and Research Training in Human Reproduction, World Health Organization (Switzerland); Regina Kulier, Department of Research Policy and Cooperation, Information, Evidence and Research, World Health Organization (Switzerland); Peter Tugwell, Institute of Population Health, Department of Epidemiology and Community Medicine, and Department of Medicine, University of Ottawa (Canada); Tikki Pang, Department of Research Policy and Cooperation, Information, Evidence and Research, World Health Organization (Switzerland); Ulysses Panisset, Department of Research Policy and Cooperation, Information, Evidence and Research, World Health Organization (Switzerland); Gunn Vist, Norwegian Knowledge Centre (Norway).</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pmed.1001186-BoschCapblanch1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bosch-Capblanch</surname><given-names>X</given-names></name><name name-style="western"><surname>Lavis</surname><given-names>JN</given-names></name><name name-style="western"><surname>Lewin</surname><given-names>S</given-names></name><name name-style="western"><surname>Atun</surname><given-names>R</given-names></name><name name-style="western"><surname>Røttingen</surname><given-names>JA</given-names></name><etal/></person-group>             <year>2012</year>             <article-title>Guidance for evidence-informed decisions about health systems: rationale for and challenges of guidance development.</article-title>             <source>PLoS Med</source>             <volume>9</volume>             <fpage>e1001185</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001185" xlink:type="simple">10.1371/journal.pmed.1001185</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Lewin1">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lewin</surname><given-names>S</given-names></name><name name-style="western"><surname>Bosch-Capblanch</surname><given-names>X</given-names></name><name name-style="western"><surname>Oliver</surname><given-names>S</given-names></name><name name-style="western"><surname>Akl</surname><given-names>EA</given-names></name><name name-style="western"><surname>Vist</surname><given-names>GE</given-names></name><etal/></person-group>             <year>2012</year>             <article-title>Guidance for evidence-informed decisions about health systems: assessing how much confidence to place in health systems evidence.</article-title>             <source>PLoS Med</source>             <volume>9</volume>             <fpage>e1001187</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001187" xlink:type="simple">10.1371/journal.pmed.1001187</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Schunemann1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Schunemann</surname><given-names>HJ</given-names></name><name name-style="western"><surname>Fretheim</surname><given-names>A</given-names></name><name name-style="western"><surname>Oxman</surname><given-names>AD</given-names></name></person-group>             <year>2006</year>             <article-title>Improving the use of research evidence in guideline development: 1. guidelines for guidelines.</article-title>             <source>Health Res Policy Syst</source>             <volume>4</volume>             <fpage>13</fpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Lavis1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lavis</surname><given-names>JN</given-names></name><name name-style="western"><surname>Permanand</surname><given-names>G</given-names></name><name name-style="western"><surname>Oxman</surname><given-names>AD</given-names></name><name name-style="western"><surname>Lewin</surname><given-names>S</given-names></name><name name-style="western"><surname>Fretheim</surname><given-names>A</given-names></name></person-group>             <year>2009</year>             <article-title>SUPPORT tools for evidence-informed health policymaking (STP) 13: preparing and using policy briefs to support evidence-informed policymaking.</article-title>             <source>Health Res Policy Syst</source>             <volume>7</volume>             <supplement>Suppl 1</supplement>             <fpage>S13</fpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Lavis2">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lavis</surname><given-names>JN</given-names></name><name name-style="western"><surname>Boyko</surname><given-names>J</given-names></name><name name-style="western"><surname>Oxman</surname><given-names>AD</given-names></name><name name-style="western"><surname>Lewin</surname><given-names>S</given-names></name><name name-style="western"><surname>Fretheim</surname><given-names>A</given-names></name></person-group>             <year>2009</year>             <article-title>SUPPORT tools for evidence-informed health policymaking (STP) 14: organising and using policy dialogues to support evidence-informed policymaking.</article-title>             <source>Health Res Policy Syst</source>             <volume>7</volume>             <supplement>Suppl 1</supplement>             <fpage>S14</fpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-World1">
+        <label>6</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">World Health Organization</collab>             <year>2011</year>             <article-title>Health system strengthening: improving support to policy dialogue around national health policies, strategies and plans.</article-title>             <comment>Report by the Secretariat to the 64th World Health Assembly. A64/12. Geneva: World Health Organization. Available: <ext-link ext-link-type="uri" xlink:href="http://apps.who.int/gb/ebwha/pdf_files/WHA64/A64_12-en.pdf" xlink:type="simple">http://apps.who.int/gb/ebwha/pdf_files/WHA64/A64_12-en.pdf</ext-link>. Accessed 3 February 2012</comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-World2">
+        <label>7</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">World Health Assembly</collab>             <year>2011</year>             <article-title>WHA resolution 64.8: strengthening national policy dialogue to build more robust health policies, strategies and plans.</article-title>             <comment>Geneva: World Health Organization. <ext-link ext-link-type="uri" xlink:href="http://apps.who.int/gb/ebwha/pdf_files/WHA64/A64_R8-en.pdf" xlink:type="simple">http://apps.who.int/gb/ebwha/pdf_files/WHA64/A64_R8-en.pdf</ext-link>. Accessed 3 February 2012</comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Lavis3">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lavis</surname><given-names>JN</given-names></name><name name-style="western"><surname>Panisset</surname><given-names>UB</given-names></name></person-group>             <year>2010</year>             <article-title>EVIPNet Africa's first series of policy briefs to support evidence-informed policymaking.</article-title>             <source>International Journal of Technology Assessment in Health Care</source>             <volume>26</volume>             <issue>2</issue>             <fpage>229</fpage>             <lpage>232</lpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1017/S0266462310000206" xlink:type="simple">10.1017/S0266462310000206</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Hoffman1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hoffman</surname><given-names>SJ</given-names></name><name name-style="western"><surname>Lavis</surname><given-names>JN</given-names></name><name name-style="western"><surname>Bennett</surname><given-names>S</given-names></name></person-group>             <year>2009</year>             <article-title>The use of research evidence in two international organizations' recommendations about health systems.</article-title>             <source>Healthc Policy</source>             <volume>5</volume>             <issue>1</issue>             <fpage>66</fpage>             <lpage>86</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-VelascoGarrido1">
+        <label>10</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Velasco-Garrido</surname><given-names>M</given-names></name><name name-style="western"><surname>Kristensen</surname><given-names>FB</given-names></name><name name-style="western"><surname>Nielsen</surname><given-names>CP</given-names></name><name name-style="western"><surname>Busse</surname><given-names>R</given-names></name></person-group>             <year>2008</year>             <source>Health technology assessment and health policy-making in Europe: current status, challenges and potential</source>             <publisher-loc>Copenhagen</publisher-loc>             <publisher-name>World Health Organization</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Kingdon1">
+        <label>11</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kingdon</surname><given-names>JW</given-names></name></person-group>             <year>2003</year>             <source>Agendas, alternatives, and public policies. Second edition</source>             <publisher-loc>New York</publisher-loc>             <publisher-name>Longman</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-BoschCapblanch2">
+        <label>12</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">Bosch-Capblanch X and Project Team</collab>             <year>2011</year>             <article-title>Handbook for developing health systems guidance: supporting informed judgements for health systems policies.</article-title>             <comment>Basel: Swiss Tropical and Public Health Institute. Available: <ext-link ext-link-type="uri" xlink:href="http://www.swisstph.ch/?id=53" xlink:type="simple">http://www.swisstph.ch/?id=53</ext-link>; <ext-link ext-link-type="uri" xlink:href="http://www.swisstph.ch/fileadmin/user_upload/Pdfs/SCIH/WHOHSG_Handbook_v04.pdf" xlink:type="simple">http://www.swisstph.ch/fileadmin/user_upload/Pdfs/SCIH/WHOHSG_Handbook_v04.pdf</ext-link>. Accessed 3 February 2012</comment>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Schunemann2">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Schunemann</surname><given-names>HJ</given-names></name><name name-style="western"><surname>Fretheim</surname><given-names>A</given-names></name><name name-style="western"><surname>Oxman</surname><given-names>AD</given-names></name></person-group>             <year>2006</year>             <article-title>Improving the use of research evidence in guideline development: 9. grading evidence and recommendations.</article-title>             <source>Health Res Policy Syst</source>             <volume>4</volume>             <fpage>21</fpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Lavis4">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lavis</surname><given-names>JN</given-names></name><name name-style="western"><surname>Oxman</surname><given-names>AD</given-names></name><name name-style="western"><surname>Lewis</surname><given-names>S</given-names></name><name name-style="western"><surname>Fretheim</surname><given-names>A</given-names></name></person-group>             <year>2009</year>             <article-title>SUPPORT tools for evidence-informed health policymaking (STP). Introduction.</article-title>             <source>Health Res Policy Syst</source>             <volume>7</volume>             <supplement>Suppl 1</supplement>             <fpage>I1</fpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-World3">
+        <label>15</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">World Health Organization</collab>             <year>2008</year>             <source>Everybody's business: strengthening health systems to improve health outcomes: WHO's framework for action</source>             <publisher-loc>Geneva</publisher-loc>             <publisher-name>World Health Organization</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Hamid1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hamid</surname><given-names>M</given-names></name><name name-style="western"><surname>Bustamante-Manaog</surname><given-names>T</given-names></name><name name-style="western"><surname>Dung</surname><given-names>TV</given-names></name><name name-style="western"><surname>Akkhavong</surname><given-names>K</given-names></name><name name-style="western"><surname>Fu</surname><given-names>H</given-names></name><etal/></person-group>             <year>2005</year>             <article-title>EVIPNet: translating the spirit of Mexico.</article-title>             <source>Lancet</source>             <volume>366</volume>             <issue>9499</issue>             <fpage>1758</fpage>             <lpage>1760</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Lavis5">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lavis</surname><given-names>JN</given-names></name><name name-style="western"><surname>Lomas</surname><given-names>J</given-names></name><name name-style="western"><surname>Hamid</surname><given-names>M</given-names></name><name name-style="western"><surname>Sewankambo</surname><given-names>NK</given-names></name></person-group>             <year>2006</year>             <article-title>Assessing country-level efforts to link research to action.</article-title>             <source>Bull World Health Organ</source>             <volume>84</volume>             <issue>8</issue>             <fpage>620</fpage>             <lpage>628</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Lavis6">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lavis</surname><given-names>JN</given-names></name><name name-style="western"><surname>Oxman</surname><given-names>AD</given-names></name><name name-style="western"><surname>Lewin</surname><given-names>S</given-names></name><name name-style="western"><surname>Freitheim</surname><given-names>A</given-names></name></person-group>             <year>2009</year>             <article-title>SUPPORT tools for evidence-informed health policymaking (STP) 4: using research evidence to clarify a problem.</article-title>             <source>Health Res Policy Syst</source>             <volume>7</volume>             <supplement>Suppl 1</supplement>             <fpage>S4</fpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Lavis7">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lavis</surname><given-names>JN</given-names></name><name name-style="western"><surname>Wilson</surname><given-names>M</given-names></name><name name-style="western"><surname>Oxman</surname><given-names>AD</given-names></name><name name-style="western"><surname>Grimshaw</surname><given-names>J</given-names></name><name name-style="western"><surname>Lewin</surname><given-names>S</given-names></name><name name-style="western"><surname>Fretheim</surname><given-names>A</given-names></name></person-group>             <year>2009</year>             <article-title>SUPPORT tools for evidence-informed health policymaking (STP) 5: using research evidence to frame options to address a problem.</article-title>             <source>Health Res Policy Syst</source>             <volume>7</volume>             <supplement>Suppl 1</supplement>             <fpage>S5</fpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Fretheim1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Fretheim</surname><given-names>A</given-names></name><name name-style="western"><surname>Munabi-Babigumira</surname><given-names>S</given-names></name><name name-style="western"><surname>Oxman</surname><given-names>AD</given-names></name><name name-style="western"><surname>Lavis</surname><given-names>JN</given-names></name><name name-style="western"><surname>Lewin</surname><given-names>S</given-names></name></person-group>             <year>2009</year>             <article-title>SUPPORT tools for evidence-informed policymaking in health 6: using research evidence to address how an option will be implemented.</article-title>             <source>Health Res Policy Syst</source>             <volume>7</volume>             <supplement>Suppl 1</supplement>             <fpage>S6</fpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Hanson1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hanson</surname><given-names>K</given-names></name><name name-style="western"><surname>Ranson</surname><given-names>MK</given-names></name><name name-style="western"><surname>Oliveria-Cruz</surname><given-names>V</given-names></name><name name-style="western"><surname>Mills</surname><given-names>A</given-names></name></person-group>             <year>2011</year>             <article-title>Expanding access to priority health interventions: a framework for understanding the constrains to scaling-up.</article-title>             <source>Journal of International Development</source>             <volume>15</volume>             <issue>1</issue>             <fpage>1</fpage>             <lpage>14</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Lavis8">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lavis</surname><given-names>JN</given-names></name><name name-style="western"><surname>Ross</surname><given-names>SE</given-names></name><name name-style="western"><surname>Hurley</surname><given-names>JE</given-names></name><name name-style="western"><surname>Hohenadel</surname><given-names>JM</given-names></name><name name-style="western"><surname>Stoddart</surname><given-names>GL</given-names></name><name name-style="western"><surname>Woodward</surname><given-names>CA</given-names></name><etal/></person-group>             <year>2002</year>             <article-title>Examining the role of health services research in public policymaking.</article-title>             <source>Milbank Q</source>             <volume>80</volume>             <issue>1</issue>             <fpage>125</fpage>             <lpage>154</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Weatherford1">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Weatherford</surname><given-names>MS</given-names></name><name name-style="western"><surname>Mayhew</surname><given-names>TB</given-names></name></person-group>             <year>1995</year>             <article-title>Tax policy and presidential leadership: ideas, interests, and the quality of advice.</article-title>             <source>Studies in American Political Development</source>             <volume>9</volume>             <issue>Fall</issue>             <fpage>287</fpage>             <lpage>330</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Hall1">
+        <label>24</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hall</surname><given-names>PA</given-names></name></person-group>             <year>1996</year>             <source>Politics and markets in the industrialized nations: interests, institutions and ideas in comparative political economy</source>             <publisher-loc>Cambridge (MA)</publisher-loc>             <publisher-name>Centre for European Studies, Harvard University</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Pierson1">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pierson</surname><given-names>P</given-names></name></person-group>             <year>1993</year>             <article-title>When effect becomes cause: policy feedback and political change.</article-title>             <source>World Politics</source>             <volume>45</volume>             <fpage>595</fpage>             <lpage>628</lpage>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Coleman1">
+        <label>26</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Coleman</surname><given-names>WD</given-names></name><name name-style="western"><surname>Skogstad</surname><given-names>GD</given-names></name></person-group>             <year>1990</year>             <source>Policy communities and public policy in Canada: a Structural Approach</source>             <publisher-loc>Mississauga (Canada)</publisher-loc>             <publisher-name>Copp Clark Pitman Ltd</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Arnold1">
+        <label>27</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Arnold</surname><given-names>RD</given-names></name></person-group>             <year>1990</year>             <source>The logic of congressional action</source>             <publisher-loc>New Haven</publisher-loc>             <publisher-name>Yale University Press</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pmed.1001186-Olson1">
+        <label>28</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Olson</surname><given-names>M</given-names></name></person-group>             <year>1965</year>             <source>The logic of collective action: public goods and the theory of groups</source>             <publisher-loc>Cambridge (MA)</publisher-loc>             <publisher-name>Harvard University Press</publisher-name>          </element-citation>
+      </ref>
+    </ref-list>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>EVIPNet</term>
+          <def>
+            <p>Evidence-Informed Policy Network</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>WHO</term>
+          <def>
+            <p>World Health Organization</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <fn-group><fn fn-type="other">
+        <p><bold>Provenance:</bold> Not commissioned; externally peer reviewed.</p>
+      </fn></fn-group>
+  </back>
+</article>

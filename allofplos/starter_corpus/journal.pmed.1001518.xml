@@ -1,0 +1,1851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">PLoS</journal-id>
+<journal-id journal-id-type="nlm-ta">PLoS Med</journal-id>
+<journal-id journal-id-type="pmc">plosmed</journal-id><journal-title-group>
+<journal-title>PLoS Medicine</journal-title></journal-title-group>
+<issn pub-type="epub">1549-1676</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PMEDICINE-D-13-00589</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pmed.1001518</article-id>
+<article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group></article-categories>
+<title-group>
+<article-title>Acupuncture and Counselling for Depression in Primary Care: A Randomised Controlled Trial</article-title>
+<alt-title alt-title-type="running-head">Acupuncture and Counselling for Depression</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>MacPherson</surname><given-names>Hugh</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Richmond</surname><given-names>Stewart</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Bland</surname><given-names>Martin</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Brealey</surname><given-names>Stephen</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Gabe</surname><given-names>Rhian</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Hopton</surname><given-names>Ann</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Keding</surname><given-names>Ada</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Lansdown</surname><given-names>Harriet</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Perren</surname><given-names>Sara</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Sculpher</surname><given-names>Mark</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Spackman</surname><given-names>Eldon</given-names></name><xref ref-type="aff" rid="aff2"><sup>2</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Torgerson</surname><given-names>David</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Watt</surname><given-names>Ian</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref></contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label><addr-line>Department of Health Sciences, University of York, York, United Kingdom</addr-line></aff>
+<aff id="aff2"><label>2</label><addr-line>Centre for Health Economics, University of York, York, United Kingdom</addr-line></aff>
+<aff id="aff3"><label>3</label><addr-line>Hull York Medical School, University of York, York, United Kingdom</addr-line></aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple"><name name-style="western"><surname>Patel</surname><given-names>Vikram</given-names></name>
+<role>Academic Editor</role>
+<xref ref-type="aff" rid="edit1"/></contrib>
+</contrib-group>
+<aff id="edit1"><addr-line>London School of Hygiene &amp; Tropical Medicine, United Kingdom</addr-line></aff>
+<author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">hugh.macpherson@york.ac.uk</email></corresp>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn>
+<fn fn-type="con"><p>Conceived and designed the experiments: HM SR MB MS DT IW. Performed the experiments: HM SR MB SB AH HL SP MS DT IW. Analyzed the data: MB RG AK MS ES. Wrote the first draft of the manuscript: HM AK RG ES. Contributed to the writing of the manuscript: HM SR MB SB RG AH AK HL SP MS ES DT IW. <ext-link ext-link-type="uri" xlink:href="http://www.icmje.org/" xlink:type="simple">ICMJE</ext-link> criteria for authorship read and met: HM SR MB SB RG AH AK HL SP MS ES DT IW. Agree with manuscript results and conclusions: HM SR MB SB RG AH AK HL SP MS ES DT IW. Enrolled patients: SR AH.</p></fn>
+</author-notes>
+<pub-date pub-type="collection"><month>9</month><year>2013</year></pub-date>
+<pub-date pub-type="epub"><day>24</day><month>9</month><year>2013</year></pub-date>
+<volume>10</volume>
+<issue>9</issue>
+<elocation-id>e1001518</elocation-id>
+<history>
+<date date-type="received"><day>25</day><month>2</month><year>2013</year></date>
+<date date-type="accepted"><day>14</day><month>8</month><year>2013</year></date>
+</history>
+<permissions>
+<copyright-year>2013</copyright-year>
+<copyright-holder>MacPherson et al</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions>
+<abstract abstract-type="toc"><sec>
+<title/>
+<p>In a randomized controlled trial, Hugh MacPherson and colleagues investigate the effectiveness of acupuncture and counseling compared with usual care alone for the treatment of depression symptoms in primary care settings.</p>
+<p><italic>Please see later in the article for the Editors' Summary</italic></p>
+</sec></abstract>
+<abstract><sec>
+<title>Background</title>
+<p>Depression is a significant cause of morbidity. Many patients have communicated an interest in non-pharmacological therapies to their general practitioners. Systematic reviews of acupuncture and counselling for depression in primary care have identified limited evidence. The aim of this study was to evaluate acupuncture versus usual care and counselling versus usual care for patients who continue to experience depression in primary care.</p>
+</sec><sec>
+<title>Methods and Findings</title>
+<p>In a randomised controlled trial, 755 patients with depression (Beck Depression Inventory BDI-II score ≥20) were recruited from 27 primary care practices in the North of England. Patients were randomised to one of three arms using a ratio of 2∶2∶1 to acupuncture (302), counselling (302), and usual care alone (151). The primary outcome was the difference in mean Patient Health Questionnaire (PHQ-9) scores at 3 months with secondary analyses over 12 months follow-up. Analysis was by intention-to-treat.</p>
+<p>PHQ-9 data were available for 614 patients at 3 months and 572 patients at 12 months. Patients attended a mean of ten sessions for acupuncture and nine sessions for counselling. Compared to usual care, there was a statistically significant reduction in mean PHQ-9 depression scores at 3 months for acupuncture (−2.46, 95% CI −3.72 to −1.21) and counselling (−1.73, 95% CI −3.00 to −0.45), and over 12 months for acupuncture (−1.55, 95% CI −2.41 to −0.70) and counselling (−1.50, 95% CI −2.43 to −0.58). Differences between acupuncture and counselling were not significant. In terms of limitations, the trial was not designed to separate out specific from non-specific effects. No serious treatment-related adverse events were reported.</p>
+</sec><sec>
+<title>Conclusions</title>
+<p>In this randomised controlled trial of acupuncture and counselling for patients presenting with depression, after having consulted their general practitioner in primary care, both interventions were associated with significantly reduced depression at 3 months when compared to usual care alone.</p>
+</sec><sec>
+<title>Trial Registration</title>
+<p>Controlled-Trials.com <ext-link ext-link-type="uri" xlink:href="http://www.controlled-trials.com/ISRCTN63787732/ISRCTN63787732" xlink:type="simple">ISRCTN63787732</ext-link></p>
+<p><italic>Please see later in the article for the Editors' Summary</italic></p>
+</sec></abstract>
+<abstract abstract-type="editors-summary"><title>Editors' Summary</title><sec>
+<title>Background</title>
+<p>Depression–overwhelming sadness and hopelessness–is responsible for a substantial proportion of the global disease burden and is a major cause of suicide. It affects more than 350 million people worldwide and about one in six people will have an episode of depression during their lifetime. Depression is different from everyday mood fluctuations. For people who are clinically depressed, feelings of severe sadness, anxiety, hopelessness, and worthlessness can last for months and years. Affected individuals lose interest in activities they used to enjoy and sometimes have physical symptoms such as disturbed sleep. Clinicians can diagnose depression and determine its severity by asking patients to complete a questionnaire (for example, the Beck Depression Inventory [BDI-II] or the Patient Health Questionnaire 9 [PHQ-9]) about their feelings and symptoms. The answer to each question is given a score and the total score from the questionnaire (“depression rating scale”) indicates the severity of depression. Antidepressant drugs are usually the front-line treatment for depression in primary care.</p>
+</sec><sec>
+<title>Why Was This Study Done?</title>
+<p>Unfortunately, antidepressants don't work for more than half of patients. Moreover, many patients would like to be offered non-pharmacological treatment options for depression such as acupuncture–a therapy originating from China in which fine needles are inserted into the skin at specific points of the body–and counseling–a “talking therapy” that provides patients with a safe, non-judgmental place to express feelings and emotions and that helps them recognize their capacity for growth and fulfillment. However, it is unclear whether either of these treatments is effective in depression. In this pragmatic randomized controlled trial, the researchers investigate the clinical effectiveness of acupuncture or counseling in patients with depression compared to usual care in primary care in northern England. A randomized controlled trial compares outcomes in groups of patients who are assigned to different interventions through the play of chance. A pragmatic trial asks whether the intervention works under real-life conditions. Patient selection reflects routine practice and some aspects of the intervention are left to the discretion of clinician, By contrast, an explanatory trial asks whether an intervention works under ideal conditions and involves a strict protocol for patient selection and treatment.</p>
+</sec><sec>
+<title>What Did the Researchers Do and Find?</title>
+<p>The researchers recruited 755 patients who had consulted their primary health care provider about depression within the past 5 years and who had a score of more than 20 on the BDI-II–a score that is defined as moderate-to-severe depression on this depression rating scale–at the start of the study. Patients were randomized to receive up to 12 weekly sessions of acupuncture plus usual care (302 patients), up to 12 weekly sessions of counseling plus usual care (302 patients), or usual care alone (151 patients). Both the acupuncture protocol and the counseling protocols allowed for some individualization of treatment. Usual care, including antidepressants, was available according to need and monitored in all three groups. Compared to usual care alone, there was a significant reduction (a reduction unlikely to have occurred by chance) in the average PHQ-9 scores at both 3 and 6 months for both the acupuncture and counseling interventions. The difference between the mean PHQ-9 score for acupuncture and counseling was not significant. At 9 months and 12 months, because of improvements in the PHQ-9 scores in the usual care group, acupuncture and counseling were no longer significantly better than usual care.</p>
+</sec><sec>
+<title>What Do These Findings Mean?</title>
+<p>These findings suggest that, compared to usual care alone, both acupuncture and counseling when provided alongside usual care provided significant benefits at 3 months in primary care to patients with recurring depression. Because this trial was a pragmatic trial, these findings cannot indicate which aspects of acupuncture and counseling are likely to be most or least beneficial. Nevertheless they do provide an estimate of the overall effects of these complex interventions, an estimate that is of most interest to patients, practitioners, and health care providers. Moreover, because this trial only considers the effect of these interventions on patients with moderate-to-severe depression as classified by the BDI-II; it provides no information about the effectiveness of acupuncture or counseling compared to usual care for patients with mild depression. Importantly, however, these findings suggest that further research into optimal treatment regimens for the treatment of depression with acupuncture and counseling is merited.</p>
+</sec><sec>
+<title>Additional Information</title>
+<p>Please access these Web sites via the online version of this summary at <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1001518" xlink:type="simple">http://dx.doi.org/10.1371/journal.pmed.1001518</ext-link>.</p>
+<list list-type="bullet"><list-item>
+<p>The US National Institute of Mental Health provides information on all aspects of <ext-link ext-link-type="uri" xlink:href="http://www.nimh.nih.gov/health/topics/depression/index.shtml" xlink:type="simple">depression</ext-link> (in English and Spanish)</p>
+</list-item><list-item>
+<p>The UK National Health Service Choices website provides detailed information about <ext-link ext-link-type="uri" xlink:href="http://www.nhs.uk/Conditions/Depression/Pages/Introduction.aspx" xlink:type="simple">depression</ext-link>, including <ext-link ext-link-type="uri" xlink:href="http://www.nhs.uk/Conditions/Depression/Pages/Vanessasstory.aspx" xlink:type="simple">personal stories about depression</ext-link>, and information on <ext-link ext-link-type="uri" xlink:href="http://www.nhs.uk/Conditions/Counselling/Pages/Introduction.aspx?url=Pages/what-is-it.aspx" xlink:type="simple">counseling</ext-link> and <ext-link ext-link-type="uri" xlink:href="http://www.nhs.uk/Conditions/Acupuncture/Pages/Introduction.aspx" xlink:type="simple">acupuncture</ext-link></p>
+</list-item><list-item>
+<p>The UK charity <ext-link ext-link-type="uri" xlink:href="http://www.mind.org.uk/" xlink:type="simple">Mind</ext-link> provides  information on <ext-link ext-link-type="uri" xlink:href="http://www.mind.org.uk/mental_health_a-z/7980_understanding_depression" xlink:type="simple">depression</ext-link>, on <ext-link ext-link-type="uri" xlink:href="http://www.mind.org.uk/mental_health_a-z/7972_talking_treatments" xlink:type="simple">talking treatments</ext-link>, and on <ext-link ext-link-type="uri" xlink:href="http://www.mind.org.uk/mental_health_a-z/8067_complementary_and_alternative_therapy" xlink:type="simple">complementary and alternative therapies including acupuncture</ext-link>; Mind also includes <ext-link ext-link-type="uri" xlink:href="http://www.mind.org.uk/campaigns_and_issues/case_studies" xlink:type="simple">personal stories about depression</ext-link> on its website</p>
+</list-item><list-item>
+<p>More personal stories about depression are available from <ext-link ext-link-type="uri" xlink:href="http://www.healthtalkonline.org/mental_health/Depression" xlink:type="simple">Healthtalkonline</ext-link></p>
+</list-item><list-item>
+<p>MedlinePlus provides links to other resources about <ext-link ext-link-type="uri" xlink:href="http://www.nlm.nih.gov/medlineplus/depression.html" xlink:type="simple">depression</ext-link> and about <ext-link ext-link-type="uri" xlink:href="http://www.nlm.nih.gov/medlineplus/acupuncture.html" xlink:type="simple">acupuncture</ext-link> (in English and Spanish)</p>
+</list-item></list>
+</sec></abstract>
+<funding-group><funding-statement>This article presents independent research funded by the National Institute for Health Research (NIHR) under its Programme Grants for Applied Research Programme (RP-PG-0707-10186). The views expressed are those of the author(s) and not necessarily those of the National Health Service, the NIHR or the Department of Health. The funders, and the University of York in its role as sponsor for the study, had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts><page-count count="13"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Depression will be the second leading cause of disease burden worldwide by 2020, according to the Global Burden of Disease Study <xref ref-type="bibr" rid="pmed.1001518-Lopez1">[1]</xref>. An estimated 2·6 million cases of depression were reported in England in 2000 <xref ref-type="bibr" rid="pmed.1001518-Thomas1">[2]</xref>. It is the third most common reason for primary care consultations <xref ref-type="bibr" rid="pmed.1001518-Effective1">[3]</xref>. The economic burden is estimated to exceed UK£9 billion per annum in England, with direct costs of treatment being approximately UK£370 million <xref ref-type="bibr" rid="pmed.1001518-Thomas1">[2]</xref>. Anti-depressants are the front-line treatment in primary care, yet an inadequate response to antidepressant treatment has been reported in up to 60% of patients <xref ref-type="bibr" rid="pmed.1001518-Fava1">[4]</xref> and lack of adherence to medication in 30% <xref ref-type="bibr" rid="pmed.1001518-Effective1">[3]</xref>. The effectiveness of newer anti-depressants for mild to moderate depression has recently come under question <xref ref-type="bibr" rid="pmed.1001518-Kirsch1">[5]</xref>. Patients have been concerned about an over-reliance on prescribed antidepressant medications and are keen to have access to non-pharmacological treatment options <xref ref-type="bibr" rid="pmed.1001518-Mind1">[6]</xref>.</p>
+<p>Acupuncturists commonly treat depression <xref ref-type="bibr" rid="pmed.1001518-Hopton1">[7]</xref>, but it is rarely provided within the UK's mental health services or primary care <xref ref-type="bibr" rid="pmed.1001518-Thomas2">[8]</xref>. A Cochrane review found insufficient data on whether or not acupuncture is an effective intervention for depression, in part because of the high risk of bias in the majority of studies <xref ref-type="bibr" rid="pmed.1001518-Smith1">[9]</xref>. This review recommended the use of comparative designs in future research, comparing acupuncture to structured psychotherapies such as counselling or standard care. A widely used intervention for patients with depression is counselling, which is provided in approximately half of the 9,000 primary care practices in England <xref ref-type="bibr" rid="pmed.1001518-MellorClark1">[10]</xref>. Most counsellors provide a humanistic style of counselling. Recent National Institute for Health and Care Excellence (NICE) guidance is equivocal in recommending counselling for mild to moderate depression, identifying uncertainty regarding its effectiveness <xref ref-type="bibr" rid="pmed.1001518-1">[11]</xref>. A Cochrane review, which identifies short-term but not long-term benefits from counselling, recommends extending the evidence base to include comparisons not just with usual care but also other interventions, including acupuncture, as this would have the potential to increase patient choice <xref ref-type="bibr" rid="pmed.1001518-Bower1">[12]</xref>.</p>
+<p>The primary aim of this study was to determine the clinical effectiveness and cost-effectiveness of short courses of either acupuncture or counselling when compared to usual care for patients with moderate to severe depression, with the secondary aim to compare acupuncture and counselling on the basis that there is structural equivalence regarding time and attention. The health economic results will be reported separately.</p>
+</sec><sec id="s2" sec-type="methods">
+<title>Methods</title>
+<sec id="s2a">
+<title>Ethics Statement</title>
+<p>Ethical approval was obtained on 21st September 2009 from the York NHS Research Ethics Committee (ref: 09/H1311/75).</p>
+</sec><sec id="s2b">
+<title>Design</title>
+<p>The design was that of an open parallel-arm randomised controlled trial with patients randomised by the York Trials Unit to one of three arms using the allocation ratio of 2∶2∶1, respectively: acupuncture plus usual care; counselling plus usual care; and usual care alone, as detailed in the published protocol <xref ref-type="bibr" rid="pmed.1001518-MacPherson1">[13]</xref>. Patient details were recorded by the Trials Unit prior to using Structured Query Language (SQL) software for computer-generated block randomisation, with block sizes of five and ten, conducted by an investigator with no clinical involvement in the trial. This ensured that the allocation was securely concealed from the researchers who subsequently informed patients of their allocation.</p>
+</sec><sec id="s2c">
+<title>Population</title>
+<p>Patients who had consulted with depression in primary care within the past 5 years, and were continuing to experience moderate to severe depression were recruited. Identified from general medical practice databases, potential participants were aged 18 or over. Patients returned written consent forms and baseline questionnaires and were eligible if scoring 20 or above on the Beck Depression Inventory-II <xref ref-type="bibr" rid="pmed.1001518-Seggar1">[14]</xref>. Thus all participants would be recognised as having depression. We used a different screening questionnaire from our chosen outcome measurement of depression, PHQ9 <xref ref-type="bibr" rid="pmed.1001518-Kroenke1">[15]</xref>, because we did not want to use a screening questionnaire with a cut-off as the baseline measure in our analysis, to avoid problems of regression towards the mean. We did not want to give people the same questionnaire twice in fairly rapid succession, hence our choice of a second, also well-established, questionnaire for screening. We excluded patients who were receiving acupuncture or counselling at the time, who had terminal illness, significant learning disabilities, haemophilia, hepatitis, HIV, were pregnant, or who had confounding psychiatric conditions (bipolar disorder, postpartum depression, adjustment disorder, psychosis, dementia, or personality disorder). Patients who had suffered a close personal bereavement or given birth during the previous 12 months were excluded. Spoken English was a requirement.</p>
+</sec><sec id="s2d">
+<title>Interventions</title>
+<p>Patients allocated to the acupuncture and counselling groups were offered up to 12 sessions usually on a weekly basis. Participating acupuncturists were registered with the British Acupuncture Council with at least 3 years post-qualification experience. An acupuncture treatment protocol was developed <xref ref-type="bibr" rid="pmed.1001518-MacPherson2">[16]</xref> and subsequently refined in consultation with participating acupuncturists. It allowed for customised treatments within a standardised theory-driven framework. Counselling was provided by members of the British Association for Counselling and Psychotherapy who were accredited or were eligible for accreditation having completed 400 supervised hours post-qualification. A manualised protocol, using a humanistic approach, was based on competences independently developed for Skills for Health <xref ref-type="bibr" rid="pmed.1001518-Roth1">[17]</xref>. Practitioners recorded in logbooks the number and length of sessions, treatment provided, and adverse events. Further details of the two interventions are presented in <xref ref-type="supplementary-material" rid="pmed.1001518.s003">Tables S2</xref> and <xref ref-type="supplementary-material" rid="pmed.1001518.s004">S3</xref>. Usual care, both NHS and private, was available according to need and monitored for all patients in all three groups for the purposes of comparison.</p>
+</sec><sec id="s2e">
+<title>Outcome Measures</title>
+<p>Our primary outcome measure was the PHQ-9 <xref ref-type="bibr" rid="pmed.1001518-Kroenke1">[15]</xref> at 3 months. In addition, we evaluated the overall impact over a 12-month period. PHQ-9 scores range from 0 to 27, with depression considered mild (5–9), moderate (10–14), moderately severe (15–19), or severe (20 and above). The EQ-5D was used as a preference-based measure of health outcome <xref ref-type="bibr" rid="pmed.1001518-The1">[18]</xref>. The use of medication was ascertained by asking patients whether they had taken any prescribed medication for depression or any prescribed analgesics/painkillers. Patients were asked to report health service use, including the number of times they had consulted a health professional because of their depression. Out-of-pocket costs included patient reports on spending on acupuncture, counselling, or psychotherapy including cognitive behavioural therapy. These data were collected at baseline and by postal questionnaire at 3, 6, 9, and 12 months These data were self-reported by patients independent of the research team, thereby avoiding problems of potential differentials between trial arms, such as unblinding, that could lead to bias. BDI-II was collected at baseline and 12 months. We collected baseline demographic data and patients' prior preferences and expectations of the interventions. For both acupuncture and counselling groups, we measured patients' perceptions of their practitioners' empathy at 3 months using the Consultational and Relational Empathy (CARE) measure <xref ref-type="bibr" rid="pmed.1001518-Price1">[19]</xref>. A reimbursement of UK£5 was enclosed with the final questionnaire to enhance response rate <xref ref-type="bibr" rid="pmed.1001518-Roberts1">[20]</xref>. In-depth interviews were used to explore the experiences and perspectives of patient and practitioner, the results of which will be reported separately.</p>
+</sec><sec id="s2f">
+<title>Sample Size</title>
+<p>An effect size of 0·39 on the PHQ-9 was sought when comparing either acupuncture versus usual care alone or counselling versus with usual care alone. An allocation ratio of 2∶2∶1 was chosen in order to increase power to detect statistically significant differences between acupuncture and counselling. As a result, a smaller effect size of 0·32 was sought when comparing acupuncture and counselling. Anticipated differences between the treatments were likely to be smaller but not clinically meaningful. With 90% power and a two-sided significance level of 5%, the required group sizes were 204, 204, and 102 participants in the acupuncture, counselling, and usual care alone arms, respectively. Allowing for 20% attrition, the total sample size required was 640 (i.e., groups of 256, 256, 128, respectively).</p>
+</sec><sec id="s2g">
+<title>Analysis</title>
+<p>The primary effectiveness comparisons were between acupuncture plus usual care versus usual care alone, and counselling plus usual care versus usual care alone. A secondary comparison was between acupuncture plus usual care versus counselling plus usual care. The primary outcome was PHQ-9 at 3 months, for which we used analysis of covariance (ANCOVA), with baseline PHQ-9 score as covariate. Multiple imputation by chained regression was used for missing data using treatment group, baseline measures (PHQ-9, BDI-II, SF-36, EQ-5D Anxiety/Depression), and demographics (age and gender). The primary analysis was based on the imputed rather than raw data in order to take account of the profile of non-responders.</p>
+<p>To assess the overall clinical impact at 12 months, we evaluated area under the curve (AUC) for PHQ-9 over that period by linear regression, predicting average AUC while controlling for baseline PHQ-9. We also explored PHQ-9 outcomes across all time points in more detail using random intercept linear mixed models with fixed effects for treatment arm, time, and arm by time interaction for each treatment comparison. The models nested time points within patients and controlled for baseline PHQ-9 and potential mediators including patients' prior expectations and preferences regarding the treatments. These were identified by univariate regressions (<italic>p</italic>&lt;0·1) of PHQ-9 at 3 months for the whole patient sample, controlling for baseline PHQ-9. When comparing acupuncture and counselling, we controlled for treatment time (combined length of sessions) and quality of attention (CARE empathy score). Treatment differences between BDI-II depression scores at 12 months were analysed by ANCOVA, controlling for BDI-II baseline scores and covariates for depression as identified above. Missing data were multiply imputed as for the PHQ-9.</p>
+<p>All analyses were carried out in Stata (version 12.1) on an intention-to-treat basis. Statistical tests were at a two-sided 0·05 significance level. Analysis of residuals was undertaken for all regression models in order to assess model assumptions.</p>
+</sec></sec><sec id="s3">
+<title>Results</title>
+<sec id="s3a">
+<title>Participants</title>
+<p>Patient flow in the trial is presented in <xref ref-type="fig" rid="pmed-1001518-g001">Figure 1</xref>. In total 755 patients were recruited, 18% over target, from 27 general medical practices between December 2009 and April 2011 in Yorkshire and northeast England. General practices recruited an average of 28 patients (range 0 to 122). Baseline patient characteristics were balanced between the trial arms and are presented in <xref ref-type="table" rid="pmed-1001518-t001">Table 1</xref>. These characteristics included data on expectations of the treatments, which were lowest for acupuncture (68% were undecided) and preferences, for which the majority (58%) would have preferred to have been allocated acupuncture. These variations were taken into account in the linear mixed model analysis. Comparison of baseline data between patients with and without missing data at 3 months is presented in <xref ref-type="supplementary-material" rid="pmed.1001518.s002">Table S1</xref>.</p>
+<fig id="pmed-1001518-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001518.g001</object-id><label>Figure 1</label><caption>
+<title>CONSORT flow diagram.</title>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001518.g001" position="float" xlink:type="simple"/></fig><table-wrap id="pmed-1001518-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001518.t001</object-id><label>Table 1</label><caption>
+<title>Demographics and variables of interest at bastline.</title>
+</caption><alternatives><graphic id="pmed-1001518-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001518.t001" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Characteristic</td>
+<td align="left" rowspan="1" colspan="1">Acupuncture + Usual Care</td>
+<td align="left" rowspan="1" colspan="1">Counselling + Usual Care</td>
+<td align="left" rowspan="1" colspan="1">Usual Care</td>
+<td align="left" rowspan="1" colspan="1">Total</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold><italic>n</italic></bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>302</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>302</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>151</bold></td>
+<td align="left" rowspan="1" colspan="1"><bold>755</bold></td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Age</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean (SD)</td>
+<td align="left" rowspan="1" colspan="1">43·4 (13·24)</td>
+<td align="left" rowspan="1" colspan="1">43·5 (13·26)</td>
+<td align="left" rowspan="1" colspan="1">43·5 (13·93)</td>
+<td align="left" rowspan="1" colspan="1">43·5 (13·37)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Median (min, max)</td>
+<td align="left" rowspan="1" colspan="1">43 (18–86)</td>
+<td align="left" rowspan="1" colspan="1">43 (18–93)</td>
+<td align="left" rowspan="1" colspan="1">42 (18–89)</td>
+<td align="left" rowspan="1" colspan="1">43 (18–93)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Inter-quartile range</td>
+<td align="left" rowspan="1" colspan="1">34–52</td>
+<td align="left" rowspan="1" colspan="1">33–52</td>
+<td align="left" rowspan="1" colspan="1">32–54</td>
+<td align="left" rowspan="1" colspan="1">33–53</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Sex</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Male</td>
+<td align="left" rowspan="1" colspan="1">88 (29·1%)</td>
+<td align="left" rowspan="1" colspan="1">69 (22·9%)</td>
+<td align="left" rowspan="1" colspan="1">44 (29·1%)</td>
+<td align="left" rowspan="1" colspan="1">201 (26·6%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Female</td>
+<td align="left" rowspan="1" colspan="1">214 (70·9%)</td>
+<td align="left" rowspan="1" colspan="1">233 (77·1%)</td>
+<td align="left" rowspan="1" colspan="1">107 (70·9%)</td>
+<td align="left" rowspan="1" colspan="1">554 (73·4%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Age left education</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean (SD)</td>
+<td align="left" rowspan="1" colspan="1">18·0 (4·69)</td>
+<td align="left" rowspan="1" colspan="1">18·0 (3·92)</td>
+<td align="left" rowspan="1" colspan="1">18·1 (4·62)</td>
+<td align="left" rowspan="1" colspan="1">18·0 (4·37)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Median (min, max)</td>
+<td align="left" rowspan="1" colspan="1">16 (13–54)</td>
+<td align="left" rowspan="1" colspan="1">16 (14–48)</td>
+<td align="left" rowspan="1" colspan="1">16 (14–54)</td>
+<td align="left" rowspan="1" colspan="1">16 (13–54)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Inter-quartile range</td>
+<td align="left" rowspan="1" colspan="1">16–18</td>
+<td align="left" rowspan="1" colspan="1">16–19</td>
+<td align="left" rowspan="1" colspan="1">16–19</td>
+<td align="left" rowspan="1" colspan="1">16–19</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">17 (5·6%)</td>
+<td align="left" rowspan="1" colspan="1">7 (2·3%)</td>
+<td align="left" rowspan="1" colspan="1">7 (4·6%)</td>
+<td align="left" rowspan="1" colspan="1">31 (4·1%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Employment</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Full-time education</td>
+<td align="left" rowspan="1" colspan="1">13 (4·4%)</td>
+<td align="left" rowspan="1" colspan="1">5 (1·7%)</td>
+<td align="left" rowspan="1" colspan="1">5 (3·3%)</td>
+<td align="left" rowspan="1" colspan="1">23 (3·1%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Working full-time</td>
+<td align="left" rowspan="1" colspan="1">112 (38·0%)</td>
+<td align="left" rowspan="1" colspan="1">107 (36·4%)</td>
+<td align="left" rowspan="1" colspan="1">62 (41·3%)</td>
+<td align="left" rowspan="1" colspan="1">281 (38·0%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Working part-time</td>
+<td align="left" rowspan="1" colspan="1">57 (19·3%)</td>
+<td align="left" rowspan="1" colspan="1">59 (20·1%)</td>
+<td align="left" rowspan="1" colspan="1">28 (18·7%)</td>
+<td align="left" rowspan="1" colspan="1">144 (19·5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Unable to work</td>
+<td align="left" rowspan="1" colspan="1">38 (12·9%)</td>
+<td align="left" rowspan="1" colspan="1">42 (14·3%)</td>
+<td align="left" rowspan="1" colspan="1">15 (10·0%)</td>
+<td align="left" rowspan="1" colspan="1">95 (12·9%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Looking after home</td>
+<td align="left" rowspan="1" colspan="1">37 (12·5%)</td>
+<td align="left" rowspan="1" colspan="1">32 (10·9%)</td>
+<td align="left" rowspan="1" colspan="1">14 (9·3%)</td>
+<td align="left" rowspan="1" colspan="1">83 (11·2%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Retired</td>
+<td align="left" rowspan="1" colspan="1">23 (7·8%)</td>
+<td align="left" rowspan="1" colspan="1">30 (10·2%)</td>
+<td align="left" rowspan="1" colspan="1">12 (8·0%)</td>
+<td align="left" rowspan="1" colspan="1">65 (8·8%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Other</td>
+<td align="left" rowspan="1" colspan="1">15 (5·1%)</td>
+<td align="left" rowspan="1" colspan="1">19 (6·5%)</td>
+<td align="left" rowspan="1" colspan="1">14 (9·3%)</td>
+<td align="left" rowspan="1" colspan="1">48 (6·5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">7 (2·3%)</td>
+<td align="left" rowspan="1" colspan="1">8 (2·6%)</td>
+<td align="left" rowspan="1" colspan="1">1 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">16 (2·1%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Depression</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">In last 2 wk</td>
+<td align="left" rowspan="1" colspan="1">224 (75·7%)</td>
+<td align="left" rowspan="1" colspan="1">235 (78·6%)</td>
+<td align="left" rowspan="1" colspan="1">115 (77·7%)</td>
+<td align="left" rowspan="1" colspan="1">574 (77·3%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">6 (2·0%)</td>
+<td align="left" rowspan="1" colspan="1">3 (1·0%)</td>
+<td align="left" rowspan="1" colspan="1">3 (2·0%)</td>
+<td align="left" rowspan="1" colspan="1">12 (1·6%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Not first major episode</td>
+<td align="left" rowspan="1" colspan="1">196 (89·5%)</td>
+<td align="left" rowspan="1" colspan="1">217 (93·5%)</td>
+<td align="left" rowspan="1" colspan="1">100 (87·7%)</td>
+<td align="left" rowspan="1" colspan="1">513 (90·8%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">5 (2·2%)</td>
+<td align="left" rowspan="1" colspan="1">3 (1·3%)</td>
+<td align="left" rowspan="1" colspan="1">1 (0·9%)</td>
+<td align="left" rowspan="1" colspan="1">9 (1·6%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">4+ previous episodes</td>
+<td align="left" rowspan="1" colspan="1">143 (73·0%)</td>
+<td align="left" rowspan="1" colspan="1">165 (76·7%)</td>
+<td align="left" rowspan="1" colspan="1">81 (82·7%)</td>
+<td align="left" rowspan="1" colspan="1">389 (76·4%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">2 (0·9%)</td>
+<td align="left" rowspan="1" colspan="1">2 (2·0%)</td>
+<td align="left" rowspan="1" colspan="1">4 (0·8%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Age at first major depressive episode</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean (SD)</td>
+<td align="left" rowspan="1" colspan="1">25·8 (12·69)</td>
+<td align="left" rowspan="1" colspan="1">24·9 (11·73)</td>
+<td align="left" rowspan="1" colspan="1">24·4 (12·55)</td>
+<td align="left" rowspan="1" colspan="1">25·2 (12·28)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Median (min, max)</td>
+<td align="left" rowspan="1" colspan="1">23 (3–79)</td>
+<td align="left" rowspan="1" colspan="1">22 (6–71)</td>
+<td align="left" rowspan="1" colspan="1">20 (0–78)</td>
+<td align="left" rowspan="1" colspan="1">22 (0–79)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Inter-quartile range</td>
+<td align="left" rowspan="1" colspan="1">16–33</td>
+<td align="left" rowspan="1" colspan="1">16–31</td>
+<td align="left" rowspan="1" colspan="1">16–30</td>
+<td align="left" rowspan="1" colspan="1">16–31</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">9 (3·0%)</td>
+<td align="left" rowspan="1" colspan="1">3 (1·0%)</td>
+<td align="left" rowspan="1" colspan="1">4 (2·6%)</td>
+<td align="left" rowspan="1" colspan="1">16 (2·1%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Medication</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Depression medication in last 3 mo</td>
+<td align="left" rowspan="1" colspan="1">189 (62·6%)</td>
+<td align="left" rowspan="1" colspan="1">220 (72·9%)</td>
+<td align="left" rowspan="1" colspan="1">110 (72·9%)</td>
+<td align="left" rowspan="1" colspan="1">519 (68·7%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Analgesic medication in last 3 mo</td>
+<td align="left" rowspan="1" colspan="1">147 (48·8%)</td>
+<td align="left" rowspan="1" colspan="1">126 (42·3%)</td>
+<td align="left" rowspan="1" colspan="1">86 (57·3%)</td>
+<td align="left" rowspan="1" colspan="1">359 (47·9%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">1 (0·3%)</td>
+<td align="left" rowspan="1" colspan="1">4 (1·3%)</td>
+<td align="left" rowspan="1" colspan="1">1 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">6 (0·8%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>EQ-5D Anxiety/Depression</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Not anxious/depressed</td>
+<td align="left" rowspan="1" colspan="1">8 (2·7%)</td>
+<td align="left" rowspan="1" colspan="1">8 (2·7%)</td>
+<td align="left" rowspan="1" colspan="1">5 (3·3%)</td>
+<td align="left" rowspan="1" colspan="1">21 (2·8%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Moderately anxious/depressed</td>
+<td align="left" rowspan="1" colspan="1">219 (73·0%)</td>
+<td align="left" rowspan="1" colspan="1">221 (73·2%)</td>
+<td align="left" rowspan="1" colspan="1">114 (75·5%)</td>
+<td align="left" rowspan="1" colspan="1">554 (73·6%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Extremely anxious/depressed</td>
+<td align="left" rowspan="1" colspan="1">73 (24·3%)</td>
+<td align="left" rowspan="1" colspan="1">73 (24·2%)</td>
+<td align="left" rowspan="1" colspan="1">32 (21·2%)</td>
+<td align="left" rowspan="1" colspan="1">178 (23·6%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">2 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">2 (0·3%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>PHQ-9</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean (SD)</td>
+<td align="left" rowspan="1" colspan="1">15·3 (5·33)</td>
+<td align="left" rowspan="1" colspan="1">16·6 (5·27)</td>
+<td align="left" rowspan="1" colspan="1">16·2 (5·09)</td>
+<td align="left" rowspan="1" colspan="1">16·0 (5·29)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Median (min, max)</td>
+<td align="left" rowspan="1" colspan="1">15 (3–27)</td>
+<td align="left" rowspan="1" colspan="1">17 (4–27)</td>
+<td align="left" rowspan="1" colspan="1">16 (5–27)</td>
+<td align="left" rowspan="1" colspan="1">16 (3–27)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Inter-quartile range</td>
+<td align="left" rowspan="1" colspan="1">11–19</td>
+<td align="left" rowspan="1" colspan="1">13–21</td>
+<td align="left" rowspan="1" colspan="1">13–20</td>
+<td align="left" rowspan="1" colspan="1">12–20</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">1 (0·33%)</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">1 (0·1%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>PHQ Group</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">None (0–4)</td>
+<td align="left" rowspan="1" colspan="1">4 (1·3%)</td>
+<td align="left" rowspan="1" colspan="1">2 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">6 (0·8%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mild (5–9)</td>
+<td align="left" rowspan="1" colspan="1">44 (14·6%)</td>
+<td align="left" rowspan="1" colspan="1">29 (9·6%)</td>
+<td align="left" rowspan="1" colspan="1">14 (9·3%)</td>
+<td align="left" rowspan="1" colspan="1">87 (11·5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Moderate (10–14)</td>
+<td align="left" rowspan="1" colspan="1">97 (32·2%)</td>
+<td align="left" rowspan="1" colspan="1">74 (24·5%)</td>
+<td align="left" rowspan="1" colspan="1">46 (30·5%)</td>
+<td align="left" rowspan="1" colspan="1">217 (28·8%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Moderately severe (15–19)</td>
+<td align="left" rowspan="1" colspan="1">88 (29·2%)</td>
+<td align="left" rowspan="1" colspan="1">96 (31·8%)</td>
+<td align="left" rowspan="1" colspan="1">47 (31·1%)</td>
+<td align="left" rowspan="1" colspan="1">231 (30·6%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Severe (20–27)</td>
+<td align="left" rowspan="1" colspan="1">68 (22·6%)</td>
+<td align="left" rowspan="1" colspan="1">101 (33·4%)</td>
+<td align="left" rowspan="1" colspan="1">44 (29·1%)</td>
+<td align="left" rowspan="1" colspan="1">213 (28·3%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>BDI-II</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean (SD)</td>
+<td align="left" rowspan="1" colspan="1">32·0 (8·54)</td>
+<td align="left" rowspan="1" colspan="1">33·3 (9·11)</td>
+<td align="left" rowspan="1" colspan="1">31·8 (8·17)</td>
+<td align="left" rowspan="1" colspan="1">32·5 (8·72)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Median (min, max)</td>
+<td align="left" rowspan="1" colspan="1">31 (20–57)</td>
+<td align="left" rowspan="1" colspan="1">32 (20–60)</td>
+<td align="left" rowspan="1" colspan="1">30 (20–56)</td>
+<td align="left" rowspan="1" colspan="1">31 (20–60)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Inter-quartile range</td>
+<td align="left" rowspan="1" colspan="1">25–37</td>
+<td align="left" rowspan="1" colspan="1">26–39</td>
+<td align="left" rowspan="1" colspan="1">25–37</td>
+<td align="left" rowspan="1" colspan="1">26–38</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>BDI-II Group</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Moderate (20–28)<sup>2</sup></td>
+<td align="left" rowspan="1" colspan="1">124 (41·1%)</td>
+<td align="left" rowspan="1" colspan="1">104 (34·4%)</td>
+<td align="left" rowspan="1" colspan="1">56 (37·1%)</td>
+<td align="left" rowspan="1" colspan="1">284 (37·6%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Severe (29–63)</td>
+<td align="left" rowspan="1" colspan="1">178 (58·9%)</td>
+<td align="left" rowspan="1" colspan="1">198 (65·6%)</td>
+<td align="left" rowspan="1" colspan="1">95 (62·9%)</td>
+<td align="left" rowspan="1" colspan="1">471 (62·4%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>SF-36 Bodily Pain</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean (SD)</td>
+<td align="left" rowspan="1" colspan="1">58·8 (27·99)</td>
+<td align="left" rowspan="1" colspan="1">58·0 (29·17)</td>
+<td align="left" rowspan="1" colspan="1">54·4 (27·83)</td>
+<td align="left" rowspan="1" colspan="1">57·6 (28·44)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Median (min, max)</td>
+<td align="left" rowspan="1" colspan="1">62 (0–100)</td>
+<td align="left" rowspan="1" colspan="1">62 (0–100)</td>
+<td align="left" rowspan="1" colspan="1">51 (0–100)</td>
+<td align="left" rowspan="1" colspan="1">52 (0–100)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Inter-quartile range</td>
+<td align="left" rowspan="1" colspan="1">41–84</td>
+<td align="left" rowspan="1" colspan="1">31–84</td>
+<td align="left" rowspan="1" colspan="1">31–74</td>
+<td align="left" rowspan="1" colspan="1">32–84</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">1 (0·3%)</td>
+<td align="left" rowspan="1" colspan="1">3 (1·0%)</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">4 (0·5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Expectation acupuncture</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Very ineffective</td>
+<td align="left" rowspan="1" colspan="1">10 (3·3%)</td>
+<td align="left" rowspan="1" colspan="1">6 (2·0%)</td>
+<td align="left" rowspan="1" colspan="1">1 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">17 (2·3%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fairly ineffective</td>
+<td align="left" rowspan="1" colspan="1">9 (3·0%)</td>
+<td align="left" rowspan="1" colspan="1">11 (3·7%)</td>
+<td align="left" rowspan="1" colspan="1">6 (4·0%)</td>
+<td align="left" rowspan="1" colspan="1">26 (3·5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Can't decide</td>
+<td align="left" rowspan="1" colspan="1">187 (61·9%)</td>
+<td align="left" rowspan="1" colspan="1">204 (68·0%)</td>
+<td align="left" rowspan="1" colspan="1">103 (68·2%)</td>
+<td align="left" rowspan="1" colspan="1">494 (65·6%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fairly effective</td>
+<td align="left" rowspan="1" colspan="1">66 (21·9%)</td>
+<td align="left" rowspan="1" colspan="1">44 (14·7%)</td>
+<td align="left" rowspan="1" colspan="1">29 (19·2%)</td>
+<td align="left" rowspan="1" colspan="1">139 (18·5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Very effective</td>
+<td align="left" rowspan="1" colspan="1">30 (9·9%)</td>
+<td align="left" rowspan="1" colspan="1">35 (11·7%)</td>
+<td align="left" rowspan="1" colspan="1">12 (8·0%)</td>
+<td align="left" rowspan="1" colspan="1">77 (10·2%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">2 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">2 (0·3%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Expectation counselling</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Very ineffective</td>
+<td align="left" rowspan="1" colspan="1">23 (7·7%)</td>
+<td align="left" rowspan="1" colspan="1">18 (6·0%)</td>
+<td align="left" rowspan="1" colspan="1">15 (9·9%)</td>
+<td align="left" rowspan="1" colspan="1">56 (7·5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fairly ineffective</td>
+<td align="left" rowspan="1" colspan="1">50 (16·7%)</td>
+<td align="left" rowspan="1" colspan="1">43 (14·3%)</td>
+<td align="left" rowspan="1" colspan="1">21 (13·9%)</td>
+<td align="left" rowspan="1" colspan="1">114 (15·2%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Can't decide</td>
+<td align="left" rowspan="1" colspan="1">101 (33·8%)</td>
+<td align="left" rowspan="1" colspan="1">100 (33·2%)</td>
+<td align="left" rowspan="1" colspan="1">39 (25·8%)</td>
+<td align="left" rowspan="1" colspan="1">240 (32·0%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fairly effective</td>
+<td align="left" rowspan="1" colspan="1">95 (31·8%)</td>
+<td align="left" rowspan="1" colspan="1">97 (32·2%)</td>
+<td align="left" rowspan="1" colspan="1">65 (43·1%)</td>
+<td align="left" rowspan="1" colspan="1">257 (34·2%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Very effective</td>
+<td align="left" rowspan="1" colspan="1">30 (10·0%)</td>
+<td align="left" rowspan="1" colspan="1">43 (14·3%)</td>
+<td align="left" rowspan="1" colspan="1">11 (7·3%)</td>
+<td align="left" rowspan="1" colspan="1">84 (11·2%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">3 (1·0%)</td>
+<td align="left" rowspan="1" colspan="1">1 (0·3%)</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">4 (0·5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Expectation usual care</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Very ineffective</td>
+<td align="left" rowspan="1" colspan="1">29 (9·6%)</td>
+<td align="left" rowspan="1" colspan="1">34 (11·3%)</td>
+<td align="left" rowspan="1" colspan="1">6 (4·1%)</td>
+<td align="left" rowspan="1" colspan="1">69 (9·2%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fairly ineffective</td>
+<td align="left" rowspan="1" colspan="1">60 (19·9%)</td>
+<td align="left" rowspan="1" colspan="1">62 (20·7%)</td>
+<td align="left" rowspan="1" colspan="1">44 (29·7%)</td>
+<td align="left" rowspan="1" colspan="1">166 (22·1%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Can't decide</td>
+<td align="left" rowspan="1" colspan="1">108 (35·8%)</td>
+<td align="left" rowspan="1" colspan="1">92 (30·7%)</td>
+<td align="left" rowspan="1" colspan="1">50 (33·8%)</td>
+<td align="left" rowspan="1" colspan="1">250 (33·3%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fairly effective</td>
+<td align="left" rowspan="1" colspan="1">95 (31·5%)</td>
+<td align="left" rowspan="1" colspan="1">97 (32·3%)</td>
+<td align="left" rowspan="1" colspan="1">46 (31·1%)</td>
+<td align="left" rowspan="1" colspan="1">238 (31·7%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Very effective</td>
+<td align="left" rowspan="1" colspan="1">10 (3·3%)</td>
+<td align="left" rowspan="1" colspan="1">15 (5·0%)</td>
+<td align="left" rowspan="1" colspan="1">2 (1·4%)</td>
+<td align="left" rowspan="1" colspan="1">27 (3·6%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">2 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">3 (2·0%)</td>
+<td align="left" rowspan="1" colspan="1">5 (0·7%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Expectation of actual treatment randomised to</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Very ineffective</td>
+<td align="left" rowspan="1" colspan="1">10 (3·3%)</td>
+<td align="left" rowspan="1" colspan="1">18 (6·0%)</td>
+<td align="left" rowspan="1" colspan="1">6 (4·1%)</td>
+<td align="left" rowspan="1" colspan="1">34 (4·5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fairly ineffective</td>
+<td align="left" rowspan="1" colspan="1">9 (3·0%)</td>
+<td align="left" rowspan="1" colspan="1">43 (14·3%)</td>
+<td align="left" rowspan="1" colspan="1">44 (29·7%)</td>
+<td align="left" rowspan="1" colspan="1">96 (12·8%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Can't decide</td>
+<td align="left" rowspan="1" colspan="1">187 (61·9%)</td>
+<td align="left" rowspan="1" colspan="1">100 (33·2%)</td>
+<td align="left" rowspan="1" colspan="1">50 (33·8%)</td>
+<td align="left" rowspan="1" colspan="1">337 (44·9%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Fairly effective</td>
+<td align="left" rowspan="1" colspan="1">66 (21·9%)</td>
+<td align="left" rowspan="1" colspan="1">97 (32·2%)</td>
+<td align="left" rowspan="1" colspan="1">46 (31·1%)</td>
+<td align="left" rowspan="1" colspan="1">209 (27·8%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Very effective</td>
+<td align="left" rowspan="1" colspan="1">30 (9·9%)</td>
+<td align="left" rowspan="1" colspan="1">43 (14·3%)</td>
+<td align="left" rowspan="1" colspan="1">2 (1·4%)</td>
+<td align="left" rowspan="1" colspan="1">75 (10·0%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">0 (0·0%)</td>
+<td align="left" rowspan="1" colspan="1">1 (0·3%)</td>
+<td align="left" rowspan="1" colspan="1">3 (2·0%)</td>
+<td align="left" rowspan="1" colspan="1">4 (0·5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Treatment preference</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Acupuncture</td>
+<td align="left" rowspan="1" colspan="1">177 (58·8%)</td>
+<td align="left" rowspan="1" colspan="1">171 (57·6%)</td>
+<td align="left" rowspan="1" colspan="1">82 (54·7%)</td>
+<td align="left" rowspan="1" colspan="1">430 (57·5%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Counselling</td>
+<td align="left" rowspan="1" colspan="1">55 (18·3%)</td>
+<td align="left" rowspan="1" colspan="1">75 (25·3%)</td>
+<td align="left" rowspan="1" colspan="1">34 (22·7%)</td>
+<td align="left" rowspan="1" colspan="1">164 (21·9%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Usual Care</td>
+<td align="left" rowspan="1" colspan="1">2 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">7 (2·4%)</td>
+<td align="left" rowspan="1" colspan="1">1 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">10 (1·3%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">No preference</td>
+<td align="left" rowspan="1" colspan="1">67 (22·3%)</td>
+<td align="left" rowspan="1" colspan="1">44 (14·8%)</td>
+<td align="left" rowspan="1" colspan="1">33 (22·0%)</td>
+<td align="left" rowspan="1" colspan="1">144 (19·3%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">1 (0·3%)</td>
+<td align="left" rowspan="1" colspan="1">5 (1·7%)</td>
+<td align="left" rowspan="1" colspan="1">1 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">7 (0·9%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Treatment concordance</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Randomised to preferred treatment</td>
+<td align="left" rowspan="1" colspan="1">177 (58·8%)</td>
+<td align="left" rowspan="1" colspan="1">75 (25·3%)</td>
+<td align="left" rowspan="1" colspan="1">1 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">253 (33·8%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Randomised to non-preferred treatment</td>
+<td align="left" rowspan="1" colspan="1">57 (18·9%)</td>
+<td align="left" rowspan="1" colspan="1">178 (59·9%)</td>
+<td align="left" rowspan="1" colspan="1">116 (77·3%)</td>
+<td align="left" rowspan="1" colspan="1">351 (46·9%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">No preference</td>
+<td align="left" rowspan="1" colspan="1">67 (22·3%)</td>
+<td align="left" rowspan="1" colspan="1">44 (14·8%)</td>
+<td align="left" rowspan="1" colspan="1">33 (22·0%)</td>
+<td align="left" rowspan="1" colspan="1">144 (19·3%)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Missing</td>
+<td align="left" rowspan="1" colspan="1">1 (0·3%)</td>
+<td align="left" rowspan="1" colspan="1">5 (1·7%)</td>
+<td align="left" rowspan="1" colspan="1">1 (0·7%)</td>
+<td align="left" rowspan="1" colspan="1">7 (0·9%)</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt101"><label/><p>Percent given out of non-missing data, percent missing given out of applicable group total.</p></fn><fn id="nt102"><label/><p>A BDI-II score of 20 or above was required to be eligible for the trial.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3b">
+<title>Interventions</title>
+<p>In the acupuncture arm, 266 patients (88.1%) received one or more treatment sessions (mean  = 10.3, standard deviation [SD] 3.14) with one of 23 acupuncturists. By the 3-month time point, the average number of sessions received was 8.7 (SD = 3.34), with 133 patients (50.0%) having completed all of their sessions. In the counselling arm, 231 patients (76.5%) received one or more treatment sessions (mean  = 9.0, SD = 3.74) with one of 37 therapists. By the 3-month time point, the average number of sessions received was 7.5 (SD = 3.60), with 114 patients (49.4%) having completed all of their sessions. The mean time from randomisation to last treatment was 117 days in both treatment arms (SD = 47.0 and 51.2, respectively), a period that included time to first appointment. Acupuncturists were allocated an average of 13 patients each (range two to 45), and counsellors an average of eight patients each (range one to 27).</p>
+<p>In the logbooks, we collected data on acupuncturists' and counsellors' self-reports of intervention protocol violations. We received reports of four cases of violations of the acupuncture protocol (which incidentally did not involve counselling), one of which was deemed a true case involving prescription of a herbal lotion application to reduce swelling and pain. We received seven reports of violations of the counselling protocol, of which two were deemed true cases; one case involved goal setting and in another the counsellor reported being analytical and interpretative beyond the scope of humanistic counselling.</p>
+<p>Details of medication use over the period of the trial is reported below, and further details of all three interventions are summarised for acupuncture (<xref ref-type="supplementary-material" rid="pmed.1001518.s003">Table S2</xref>) and counselling (<xref ref-type="supplementary-material" rid="pmed.1001518.s004">Table S3</xref>), and, respectively, and for usual care: patients seeing a health professional (<xref ref-type="supplementary-material" rid="pmed.1001518.s005">Table S4</xref>); patients attending hospital accident and emergency departments (<xref ref-type="supplementary-material" rid="pmed.1001518.s006">Table S5</xref>); patients admitted to hospital (<xref ref-type="supplementary-material" rid="pmed.1001518.s007">Table S6</xref>); and patients paying for private health care (<xref ref-type="supplementary-material" rid="pmed.1001518.s008">Table S7</xref>). A more complete report on the acupuncture provision has now been published <xref ref-type="bibr" rid="pmed.1001518-MacPherson3">[21]</xref> and one on the counselling provision will follow shortly.</p>
+</sec><sec id="s3c">
+<title>Clinical Outcomes</title>
+<p>Unadjusted mean scores for the PHQ-9 at all time points are presented in <xref ref-type="table" rid="pmed-1001518-t001">Table 2</xref> and <xref ref-type="fig" rid="pmed-1001518-g002">Figure 2</xref>. For the primary outcome, <xref ref-type="table" rid="pmed-1001518-t002">Table 3</xref> gives results for between-group differences in PHQ-9 depression at 3 months using ANCOVA. Patients for whom no data were available at that point tended to be younger with higher levels of baseline depression, and imputed data were used to take their profile into account. Compared to usual care, patients in the acupuncture arm experienced an average additional reduction in depression of −2·46 points on the PHQ-9 (<italic>p</italic>&lt;0·001, 95% CI −3·72 to −1·21), an observed effect size equivalent to a Cohen's <italic>d</italic> of −0·39 (95% CI −0·58 to −0·19). Compared to usual care, patients allocated to the counselling arm experienced an average additional reduction in depression of −1·73 points (<italic>p</italic> = 0·008, 95% CI −3·00 to −0·45), equivalent to a Cohen's <italic>d</italic> of −0·27 (95% CI −0·47 to −0·07). The difference between acupuncture and counselling, −0·76 points on the PHQ-9 (<italic>p</italic> = 0.41, 95% CI −1·77 to 0·25), was not statistically significant. These data are conservative, as non-imputed data showed slightly larger treatment effects (see <xref ref-type="supplementary-material" rid="pmed.1001518.s009">Table S8</xref>).</p>
+<fig id="pmed-1001518-g002" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001518.g002</object-id><label>Figure 2</label><caption>
+<title>Unadjusted PHQ-9 mean scores from baseline to 12 months.</title>
+<p>Acupuncture, black line; counselling, grey line; usual care, dashed line.</p>
+</caption><graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001518.g002" position="float" xlink:type="simple"/></fig><table-wrap id="pmed-1001518-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001518.t002</object-id><label>Table 2</label><caption>
+<title>Unadjusted depression outcomes.</title>
+</caption><alternatives><graphic id="pmed-1001518-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001518.t002" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Outcome Measures</td>
+<td colspan="2" align="left" rowspan="1">Acupuncture + Usual Care</td>
+<td colspan="2" align="left" rowspan="1">Counselling + Usual Care</td>
+<td colspan="2" align="left" rowspan="1">Usual Care</td>
+<td colspan="2" align="left" rowspan="1">Total</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><italic>n</italic></td>
+<td align="left" rowspan="1" colspan="1">Mean (SD)</td>
+<td align="left" rowspan="1" colspan="1"><italic>n</italic></td>
+<td align="left" rowspan="1" colspan="1">Mean (SD)</td>
+<td align="left" rowspan="1" colspan="1"><italic>n</italic></td>
+<td align="left" rowspan="1" colspan="1">Mean (SD)</td>
+<td align="left" rowspan="1" colspan="1"><italic>n</italic></td>
+<td align="left" rowspan="1" colspan="1">Mean (SD)</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">PHQ-9</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Baseline</td>
+<td align="left" rowspan="1" colspan="1">301</td>
+<td align="left" rowspan="1" colspan="1">15·3 (5·33)</td>
+<td align="left" rowspan="1" colspan="1">302</td>
+<td align="left" rowspan="1" colspan="1">16·6 (5·27)</td>
+<td align="left" rowspan="1" colspan="1">151</td>
+<td align="left" rowspan="1" colspan="1">16·2 (5·09)</td>
+<td align="left" rowspan="1" colspan="1">754</td>
+<td align="left" rowspan="1" colspan="1">16·0 (5·29)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">3 mo</td>
+<td align="left" rowspan="1" colspan="1">249</td>
+<td align="left" rowspan="1" colspan="1">9·4 (6·33)</td>
+<td align="left" rowspan="1" colspan="1">237</td>
+<td align="left" rowspan="1" colspan="1">10·9 (6·45)</td>
+<td align="left" rowspan="1" colspan="1">128</td>
+<td align="left" rowspan="1" colspan="1">12·7 (6·47)</td>
+<td align="left" rowspan="1" colspan="1">614</td>
+<td align="left" rowspan="1" colspan="1">10·7 (6·51)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">6 mo</td>
+<td align="left" rowspan="1" colspan="1">235</td>
+<td align="left" rowspan="1" colspan="1">9·1 (6·51)</td>
+<td align="left" rowspan="1" colspan="1">228</td>
+<td align="left" rowspan="1" colspan="1">10·1 (6·87)</td>
+<td align="left" rowspan="1" colspan="1">120</td>
+<td align="left" rowspan="1" colspan="1">12·0 (6·85)</td>
+<td align="left" rowspan="1" colspan="1">583</td>
+<td align="left" rowspan="1" colspan="1">10·1 (6·80)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">9 mo</td>
+<td align="left" rowspan="1" colspan="1">234</td>
+<td align="left" rowspan="1" colspan="1">9·7 (6·90)</td>
+<td align="left" rowspan="1" colspan="1">215</td>
+<td align="left" rowspan="1" colspan="1">10·1 (7·03)</td>
+<td align="left" rowspan="1" colspan="1">120</td>
+<td align="left" rowspan="1" colspan="1">11·9 (7·04)</td>
+<td align="left" rowspan="1" colspan="1">569</td>
+<td align="left" rowspan="1" colspan="1">10·3 (7·02)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">12 mo</td>
+<td align="left" rowspan="1" colspan="1">233</td>
+<td align="left" rowspan="1" colspan="1">9·3 (6·68)</td>
+<td align="left" rowspan="1" colspan="1">220</td>
+<td align="left" rowspan="1" colspan="1">10·1 (6·86)</td>
+<td align="left" rowspan="1" colspan="1">119</td>
+<td align="left" rowspan="1" colspan="1">11·5 (6·98)</td>
+<td align="left" rowspan="1" colspan="1">572</td>
+<td align="left" rowspan="1" colspan="1">10·1 (6·85)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">BDI-II</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Baseline</td>
+<td align="left" rowspan="1" colspan="1">302</td>
+<td align="left" rowspan="1" colspan="1">32·0 (8·54)</td>
+<td align="left" rowspan="1" colspan="1">302</td>
+<td align="left" rowspan="1" colspan="1">33·3 (9·11)</td>
+<td align="left" rowspan="1" colspan="1">151</td>
+<td align="left" rowspan="1" colspan="1">31·8 (8·17)</td>
+<td align="left" rowspan="1" colspan="1">755</td>
+<td align="left" rowspan="1" colspan="1">32·5 (8·72)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">12 mo</td>
+<td align="left" rowspan="1" colspan="1">226</td>
+<td align="left" rowspan="1" colspan="1">20·4 (13·19)</td>
+<td align="left" rowspan="1" colspan="1">211</td>
+<td align="left" rowspan="1" colspan="1">21·4 (13·64)</td>
+<td align="left" rowspan="1" colspan="1">151</td>
+<td align="left" rowspan="1" colspan="1">23·8 (12·63)</td>
+<td align="left" rowspan="1" colspan="1">550</td>
+<td align="left" rowspan="1" colspan="1">21·4 (13·29)</td>
+</tr>
+</tbody>
+</table>
+</alternatives></table-wrap>
+<p>In the AUC analysis of PHQ-9 scores over 12 months, the benefit of acupuncture and counselling over usual care alone in terms of score reduction seen at 3 months remained when averaging over the 12-month trial period: acupuncture reduced PHQ-9 scores by −1·55 (95% CI −2·41 to −0·70); counselling by −1·50 (95% CI −2·43 to −0·58) (<xref ref-type="table" rid="pmed-1001518-t002">Table 3</xref>).</p>
+<p>In secondary analyses, PHQ-9 at 3 months was associated with two factors: expectations of counselling (<italic>p</italic> = 0·064) and expectations about the treatment that patients were allocated to (<italic>p</italic> = 0·015). These factors were included as potential mediators of the effect of trial arm in further analyses. Within the acupuncture and counselling arms, additional significant factors were total session time at 3 months (<italic>p</italic>&lt;0·001) and perceived empathy of practitioners (<italic>p</italic>&lt;0·001), which were added as further covariates.</p>
+<p>Linear mixed modelling showed reduced PHQ-9 depression in the acupuncture and counselling groups as compared to usual care at 3 and 6 months (<xref ref-type="table" rid="pmed-1001518-t002">Table 3</xref>). The scores in the usual care group continued to reduce over time, such that differences were no longer statistically significant at 9 and 12 months. There was no evidence of significant differences between acupuncture and counselling throughout.</p>
+<p>Unadjusted mean scores for the BDI-II at baseline and 12 months are shown in <xref ref-type="table" rid="pmed-1001518-t001">Table 2</xref>. Results using ANCOVA show that depression scores on the BDI-II were reduced in the acupuncture arm (−2·88, 95% CI −5·68 to −0·08) and counselling arm (−2·74, 95% CI −5·50 to 0·02) to a greater extent than by usual care alone at 12 months, but with no statistically significant differences between the two interventions (<xref ref-type="table" rid="pmed-1001518-t003">Table 4</xref>).</p>
+<table-wrap id="pmed-1001518-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001518.t003</object-id><label>Table 3</label><caption>
+<title>Effect of trial arm on PHQ-9 depression.</title>
+</caption><alternatives><graphic id="pmed-1001518-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001518.t003" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Analysis</td>
+<td align="left" rowspan="1" colspan="1">Month</td>
+<td align="left" rowspan="1" colspan="1"><italic>n</italic></td>
+<td colspan="2" align="left" rowspan="1">Group 1</td>
+<td colspan="2" align="left" rowspan="1">Group 2</td>
+<td colspan="4" align="left" rowspan="1">Group Difference</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="2" align="left" rowspan="1"/>
+<td colspan="2" align="left" rowspan="1"/>
+<td colspan="4" align="left" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Mean</td>
+<td align="left" rowspan="1" colspan="1">SE</td>
+<td align="left" rowspan="1" colspan="1">Mean</td>
+<td align="left" rowspan="1" colspan="1">SE</td>
+<td align="left" rowspan="1" colspan="1">Mean</td>
+<td align="left" rowspan="1" colspan="1">SE</td>
+<td align="left" rowspan="1" colspan="1">95% CI</td>
+<td align="left" rowspan="1" colspan="1"><italic>p</italic>-Value</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="2" align="left" rowspan="1">Acupuncture</td>
+<td colspan="2" align="left" rowspan="1">Usual Care</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ANCOVA<xref ref-type="table-fn" rid="nt103">a</xref></td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">452</td>
+<td align="left" rowspan="1" colspan="1">9·8</td>
+<td align="left" rowspan="1" colspan="1">0·41</td>
+<td align="left" rowspan="1" colspan="1">12·3</td>
+<td align="left" rowspan="1" colspan="1">0·58</td>
+<td align="left" rowspan="1" colspan="1">−2·46</td>
+<td align="left" rowspan="1" colspan="1">0·636</td>
+<td align="left" rowspan="1" colspan="1">−3·72 to −1·21</td>
+<td align="left" rowspan="1" colspan="1">&lt;0·001</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mixed<xref ref-type="table-fn" rid="nt104">b</xref></td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">372</td>
+<td align="left" rowspan="1" colspan="1">9·8</td>
+<td align="left" rowspan="1" colspan="1">0·27</td>
+<td align="left" rowspan="1" colspan="1">12·1</td>
+<td align="left" rowspan="1" colspan="1">0·38</td>
+<td align="left" rowspan="1" colspan="1">−2·29</td>
+<td align="left" rowspan="1" colspan="1">0·475</td>
+<td align="left" rowspan="1" colspan="1">−3·22 to −1·36</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">6</td>
+<td align="left" rowspan="1" colspan="1">350</td>
+<td align="left" rowspan="1" colspan="1">9·6</td>
+<td align="left" rowspan="1" colspan="1">0·33</td>
+<td align="left" rowspan="1" colspan="1">11·5</td>
+<td align="left" rowspan="1" colspan="1">0·46</td>
+<td align="left" rowspan="1" colspan="1">−1·90</td>
+<td align="left" rowspan="1" colspan="1">0·569</td>
+<td align="left" rowspan="1" colspan="1">−3·02 to −0·79</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">9</td>
+<td align="left" rowspan="1" colspan="1">348</td>
+<td align="left" rowspan="1" colspan="1">10·2</td>
+<td align="left" rowspan="1" colspan="1">0·39</td>
+<td align="left" rowspan="1" colspan="1">11·1</td>
+<td align="left" rowspan="1" colspan="1">0·54</td>
+<td align="left" rowspan="1" colspan="1">−0·83</td>
+<td align="left" rowspan="1" colspan="1">0·671</td>
+<td align="left" rowspan="1" colspan="1">−2·15 to 0·49</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">12</td>
+<td align="left" rowspan="1" colspan="1">347</td>
+<td align="left" rowspan="1" colspan="1">9·7</td>
+<td align="left" rowspan="1" colspan="1">0·45</td>
+<td align="left" rowspan="1" colspan="1">10·7</td>
+<td align="left" rowspan="1" colspan="1">0·64</td>
+<td align="left" rowspan="1" colspan="1">−0·99</td>
+<td align="left" rowspan="1" colspan="1">0·785</td>
+<td align="left" rowspan="1" colspan="1">−2·53 to 0·55</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">AUC<xref ref-type="table-fn" rid="nt105">c</xref></td>
+<td align="left" rowspan="1" colspan="1">3–12</td>
+<td align="left" rowspan="1" colspan="1">407</td>
+<td align="left" rowspan="1" colspan="1">10·9</td>
+<td align="left" rowspan="1" colspan="1">0·25</td>
+<td align="left" rowspan="1" colspan="1">12·5</td>
+<td align="left" rowspan="1" colspan="1">0·35</td>
+<td align="left" rowspan="1" colspan="1">−1·55</td>
+<td align="left" rowspan="1" colspan="1">0·435</td>
+<td align="left" rowspan="1" colspan="1">−2·41 to −0·70</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="2" align="left" rowspan="1">Counselling</td>
+<td colspan="2" align="left" rowspan="1">Usual Care</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ANCOVA</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">453</td>
+<td align="left" rowspan="1" colspan="1">11·1</td>
+<td align="left" rowspan="1" colspan="1">0·40</td>
+<td align="left" rowspan="1" colspan="1">12·8</td>
+<td align="left" rowspan="1" colspan="1">0·58</td>
+<td align="left" rowspan="1" colspan="1">−1·73</td>
+<td align="left" rowspan="1" colspan="1">0·648</td>
+<td align="left" rowspan="1" colspan="1">−3·00 to −0·45</td>
+<td align="left" rowspan="1" colspan="1">0·008</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mixed</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">362</td>
+<td align="left" rowspan="1" colspan="1">10·9</td>
+<td align="left" rowspan="1" colspan="1">0·28</td>
+<td align="left" rowspan="1" colspan="1">12·8</td>
+<td align="left" rowspan="1" colspan="1">0·38</td>
+<td align="left" rowspan="1" colspan="1">−1·83</td>
+<td align="left" rowspan="1" colspan="1">0·477</td>
+<td align="left" rowspan="1" colspan="1">−2·76 to −0·90</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">6</td>
+<td align="left" rowspan="1" colspan="1">345</td>
+<td align="left" rowspan="1" colspan="1">10·4</td>
+<td align="left" rowspan="1" colspan="1">0·33</td>
+<td align="left" rowspan="1" colspan="1">12·2</td>
+<td align="left" rowspan="1" colspan="1">0·47</td>
+<td align="left" rowspan="1" colspan="1">−1·78</td>
+<td align="left" rowspan="1" colspan="1">0·576</td>
+<td align="left" rowspan="1" colspan="1">−2·91 to −0·65</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">9</td>
+<td align="left" rowspan="1" colspan="1">332</td>
+<td align="left" rowspan="1" colspan="1">10·5</td>
+<td align="left" rowspan="1" colspan="1">0·40</td>
+<td align="left" rowspan="1" colspan="1">11·8</td>
+<td align="left" rowspan="1" colspan="1">0·55</td>
+<td align="left" rowspan="1" colspan="1">−1·26</td>
+<td align="left" rowspan="1" colspan="1">0·688</td>
+<td align="left" rowspan="1" colspan="1">−2·61 to 0·08</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">12</td>
+<td align="left" rowspan="1" colspan="1">336</td>
+<td align="left" rowspan="1" colspan="1">10·4</td>
+<td align="left" rowspan="1" colspan="1">0·47</td>
+<td align="left" rowspan="1" colspan="1">11·4</td>
+<td align="left" rowspan="1" colspan="1">0·65</td>
+<td align="left" rowspan="1" colspan="1">−1·00</td>
+<td align="left" rowspan="1" colspan="1">0·805</td>
+<td align="left" rowspan="1" colspan="1">−2·58 to 0·57</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">AUC</td>
+<td align="left" rowspan="1" colspan="1">3–12</td>
+<td align="left" rowspan="1" colspan="1">402</td>
+<td align="left" rowspan="1" colspan="1">11·6</td>
+<td align="left" rowspan="1" colspan="1">0·28</td>
+<td align="left" rowspan="1" colspan="1">13·1</td>
+<td align="left" rowspan="1" colspan="1">0·38</td>
+<td align="left" rowspan="1" colspan="1">−1·50</td>
+<td align="left" rowspan="1" colspan="1">0·470</td>
+<td align="left" rowspan="1" colspan="1">−2·43</td>
+<td align="left" rowspan="1" colspan="1">−0·58</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="2" align="left" rowspan="1">Acupuncture</td>
+<td colspan="2" align="left" rowspan="1">Counselling</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ANCOVA</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">603</td>
+<td align="left" rowspan="1" colspan="1">10·0</td>
+<td align="left" rowspan="1" colspan="1">0·41</td>
+<td align="left" rowspan="1" colspan="1">10·8</td>
+<td align="left" rowspan="1" colspan="1">0·40</td>
+<td align="left" rowspan="1" colspan="1">−0·76</td>
+<td align="left" rowspan="1" colspan="1">0·514</td>
+<td align="left" rowspan="1" colspan="1">−1·77 to 0·25</td>
+<td align="left" rowspan="1" colspan="1">0·140</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mixed</td>
+<td align="left" rowspan="1" colspan="1">3</td>
+<td align="left" rowspan="1" colspan="1">402</td>
+<td align="left" rowspan="1" colspan="1">9·5</td>
+<td align="left" rowspan="1" colspan="1">0·29</td>
+<td align="left" rowspan="1" colspan="1">9·4</td>
+<td align="left" rowspan="1" colspan="1">0·32</td>
+<td align="left" rowspan="1" colspan="1">0·11</td>
+<td align="left" rowspan="1" colspan="1">0·439</td>
+<td align="left" rowspan="1" colspan="1">−0·75 to 0·97</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">6</td>
+<td align="left" rowspan="1" colspan="1">371</td>
+<td align="left" rowspan="1" colspan="1">9·6</td>
+<td align="left" rowspan="1" colspan="1">0·35</td>
+<td align="left" rowspan="1" colspan="1">9·1</td>
+<td align="left" rowspan="1" colspan="1">0·38</td>
+<td align="left" rowspan="1" colspan="1">0·45</td>
+<td align="left" rowspan="1" colspan="1">0·527</td>
+<td align="left" rowspan="1" colspan="1">−0·58 to 1·49</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">9</td>
+<td align="left" rowspan="1" colspan="1">360</td>
+<td align="left" rowspan="1" colspan="1">10·0</td>
+<td align="left" rowspan="1" colspan="1">0·41</td>
+<td align="left" rowspan="1" colspan="1">9·0</td>
+<td align="left" rowspan="1" colspan="1">0·45</td>
+<td align="left" rowspan="1" colspan="1">0·97</td>
+<td align="left" rowspan="1" colspan="1">0·621</td>
+<td align="left" rowspan="1" colspan="1">−0·25 to 2·19</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">12</td>
+<td align="left" rowspan="1" colspan="1">361</td>
+<td align="left" rowspan="1" colspan="1">9·6</td>
+<td align="left" rowspan="1" colspan="1">0·48</td>
+<td align="left" rowspan="1" colspan="1">9·0</td>
+<td align="left" rowspan="1" colspan="1">0·53</td>
+<td align="left" rowspan="1" colspan="1">0·59</td>
+<td align="left" rowspan="1" colspan="1">0·721</td>
+<td align="left" rowspan="1" colspan="1">−0·82 to 2·01</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">AUC</td>
+<td align="left" rowspan="1" colspan="1">3–12</td>
+<td align="left" rowspan="1" colspan="1">531</td>
+<td align="left" rowspan="1" colspan="1">11·1</td>
+<td align="left" rowspan="1" colspan="1">0·27</td>
+<td align="left" rowspan="1" colspan="1">11·2</td>
+<td align="left" rowspan="1" colspan="1">0·27</td>
+<td align="left" rowspan="1" colspan="1">−0·06</td>
+<td align="left" rowspan="1" colspan="1">0·378</td>
+<td align="left" rowspan="1" colspan="1">−0·81 to 0·68</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt103"><label>a</label><p>ANCOVA, effect of trial arm on imputed PHQ-9 at 3 months (adjusting for baseline PHQ-9).</p></fn><fn id="nt104"><label>b</label><p>Mixed, effect of trial arm on PHQ-9 over 12 months, (mixed effects model, including time, trial arm x time, baseline PHQ-9, baseline expectation of counselling and baseline expectation of allocated treatment. For the comparison between acupuncture and counselling, treatment time by 3 months and practitioner's empathy were additionally included.)</p></fn><fn id="nt105"><label>c</label><p>AUC, effect of trial arm on average PHQ-9 depression over 12 months (adjusting for Baseline PHQ-9).</p></fn><fn id="nt106"><label/><p>SE, standard error.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3d">
+<title>Prescribed Medication</title>
+<p>The majority (68·7%) of all patients were taking antidepressants at baseline (<xref ref-type="table" rid="pmed-1001518-t004">Table 5</xref>). The use of prescribed antidepressants decreased steadily by an average of 12% over the 12-month study period, the rate of which was comparable between trial arms. Around half (47·9%) of patients were taking analgesics at baseline, which decreased on average to 41·0% over 12 months. Patients in the acupuncture arm showed a marked decrease in the use of analgesics in the first 3 months, which was not sustained following the end of the intervention.</p>
+<table-wrap id="pmed-1001518-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001518.t004</object-id><label>Table 4</label><caption>
+<title>Effect of trial arm on BDI-II depression.</title>
+</caption><alternatives><graphic id="pmed-1001518-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001518.t004" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Analysis</td>
+<td align="left" rowspan="1" colspan="1">Month</td>
+<td align="left" rowspan="1" colspan="1"><italic>n</italic></td>
+<td colspan="2" align="left" rowspan="1">Group 1</td>
+<td colspan="2" align="left" rowspan="1">Group 2</td>
+<td colspan="3" align="left" rowspan="1">Group Difference</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1">Mean</td>
+<td align="left" rowspan="1" colspan="1">SE</td>
+<td align="left" rowspan="1" colspan="1">Mean</td>
+<td align="left" rowspan="1" colspan="1">SE</td>
+<td align="left" rowspan="1" colspan="1">Mean</td>
+<td align="left" rowspan="1" colspan="1">SE</td>
+<td align="left" rowspan="1" colspan="1">95% CI</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="2" align="left" rowspan="1">Acupuncture</td>
+<td colspan="2" align="left" rowspan="1">Usual Care</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ANCOVA<xref ref-type="table-fn" rid="nt107">a</xref></td>
+<td align="left" rowspan="1" colspan="1">12</td>
+<td align="left" rowspan="1" colspan="1">445</td>
+<td align="left" rowspan="1" colspan="1">22·8</td>
+<td align="left" rowspan="1" colspan="1">1·34</td>
+<td align="left" rowspan="1" colspan="1">25·7</td>
+<td align="left" rowspan="1" colspan="1">1·82</td>
+<td align="left" rowspan="1" colspan="1">−2·88</td>
+<td align="left" rowspan="1" colspan="1">1·419</td>
+<td align="left" rowspan="1" colspan="1">−5·68 to −0·08</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="2" align="left" rowspan="1">Counselling</td>
+<td colspan="2" align="left" rowspan="1">Usual Care</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ANCOVA</td>
+<td align="left" rowspan="1" colspan="1">12</td>
+<td align="left" rowspan="1" colspan="1">449</td>
+<td align="left" rowspan="1" colspan="1">22·7</td>
+<td align="left" rowspan="1" colspan="1">1·47</td>
+<td align="left" rowspan="1" colspan="1">25·4</td>
+<td align="left" rowspan="1" colspan="1">1·74</td>
+<td align="left" rowspan="1" colspan="1">−2·74</td>
+<td align="left" rowspan="1" colspan="1">1·399</td>
+<td align="left" rowspan="1" colspan="1">−5·50 to 0·02</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td colspan="2" align="left" rowspan="1">Acupuncture</td>
+<td colspan="2" align="left" rowspan="1">Counselling</td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">ANCOVA</td>
+<td align="left" rowspan="1" colspan="1">12</td>
+<td align="left" rowspan="1" colspan="1">401</td>
+<td align="left" rowspan="1" colspan="1">22·5</td>
+<td align="left" rowspan="1" colspan="1">0·92</td>
+<td align="left" rowspan="1" colspan="1">21·9</td>
+<td align="left" rowspan="1" colspan="1">1·02</td>
+<td align="left" rowspan="1" colspan="1">0·59</td>
+<td align="left" rowspan="1" colspan="1">1·281</td>
+<td align="left" rowspan="1" colspan="1">−1·93 to 3·11</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt107"><label>a</label><p>ANCOVA, effect of trial arm on imputed BDI-II at 12 months (adjusting for baseline BDI-II, baseline expectation of counselling and baseline expectation of allocated treatment. For the comparison between acupuncture and counselling, treatment time by 3 months and practitioner's empathy were additionally included.)</p></fn></table-wrap-foot></table-wrap><table-wrap id="pmed-1001518-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1001518.t005</object-id><label>Table 5</label><caption>
+<title>Number of patients taking prescribed medication in the preceding 3 months.</title>
+</caption><alternatives><graphic id="pmed-1001518-t005-5" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pmed.1001518.t005" xlink:type="simple"/>
+<table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" rowspan="1" colspan="1">Prescribed Medication</td>
+<td colspan="3" align="left" rowspan="1">Acupuncture + Usual Care</td>
+<td colspan="3" align="left" rowspan="1">Counselling + Usual Care</td>
+<td colspan="3" align="left" rowspan="1">Usual Care</td>
+<td colspan="3" align="left" rowspan="1">Total</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"><italic>n</italic></td>
+<td align="left" rowspan="1" colspan="1">Percent<xref ref-type="table-fn" rid="nt108">a</xref></td>
+<td align="left" rowspan="1" colspan="1">Change from Baseline</td>
+<td align="left" rowspan="1" colspan="1">Percent</td>
+<td align="left" rowspan="1" colspan="1">Percent</td>
+<td align="left" rowspan="1" colspan="1">Change from Baseline</td>
+<td align="left" rowspan="1" colspan="1"><italic>n</italic></td>
+<td align="left" rowspan="1" colspan="1">Percent</td>
+<td align="left" rowspan="1" colspan="1">Change from Baseline</td>
+<td align="left" rowspan="1" colspan="1"><italic>n</italic></td>
+<td align="left" rowspan="1" colspan="1">Percent</td>
+<td align="left" rowspan="1" colspan="1">Change from Baseline</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Antidepressants</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Baseline</td>
+<td align="left" rowspan="1" colspan="1">189</td>
+<td align="left" rowspan="1" colspan="1">62·6%</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">220</td>
+<td align="left" rowspan="1" colspan="1">72·9%</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">110</td>
+<td align="left" rowspan="1" colspan="1">72·9%</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">519</td>
+<td align="left" rowspan="1" colspan="1">68·7%</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">3 mo</td>
+<td align="left" rowspan="1" colspan="1">147</td>
+<td align="left" rowspan="1" colspan="1">60·7%</td>
+<td align="left" rowspan="1" colspan="1">−0·9%</td>
+<td align="left" rowspan="1" colspan="1">155</td>
+<td align="left" rowspan="1" colspan="1">69·2%</td>
+<td align="left" rowspan="1" colspan="1">−3·7%</td>
+<td align="left" rowspan="1" colspan="1">80</td>
+<td align="left" rowspan="1" colspan="1">66·7%</td>
+<td align="left" rowspan="1" colspan="1">−6·2%</td>
+<td align="left" rowspan="1" colspan="1">382</td>
+<td align="left" rowspan="1" colspan="1">65·2%</td>
+<td align="left" rowspan="1" colspan="1">−3·5%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">6 mo</td>
+<td align="left" rowspan="1" colspan="1">126</td>
+<td align="left" rowspan="1" colspan="1">54·6%</td>
+<td align="left" rowspan="1" colspan="1">−8·0%</td>
+<td align="left" rowspan="1" colspan="1">145</td>
+<td align="left" rowspan="1" colspan="1">65·3%</td>
+<td align="left" rowspan="1" colspan="1">−7·6%</td>
+<td align="left" rowspan="1" colspan="1">75</td>
+<td align="left" rowspan="1" colspan="1">63·6%</td>
+<td align="left" rowspan="1" colspan="1">−9·3%</td>
+<td align="left" rowspan="1" colspan="1">346</td>
+<td align="left" rowspan="1" colspan="1">60·6%</td>
+<td align="left" rowspan="1" colspan="1">−8·1%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">9 mo</td>
+<td align="left" rowspan="1" colspan="1">123</td>
+<td align="left" rowspan="1" colspan="1">54·0%</td>
+<td align="left" rowspan="1" colspan="1">−8·6%</td>
+<td align="left" rowspan="1" colspan="1">124</td>
+<td align="left" rowspan="1" colspan="1">60·8%</td>
+<td align="left" rowspan="1" colspan="1">−12·1%</td>
+<td align="left" rowspan="1" colspan="1">74</td>
+<td align="left" rowspan="1" colspan="1">66·1%</td>
+<td align="left" rowspan="1" colspan="1">−6·8%</td>
+<td align="left" rowspan="1" colspan="1">321</td>
+<td align="left" rowspan="1" colspan="1">59·0%</td>
+<td align="left" rowspan="1" colspan="1">−9·7%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">12 mo</td>
+<td align="left" rowspan="1" colspan="1">121</td>
+<td align="left" rowspan="1" colspan="1">52·4%</td>
+<td align="left" rowspan="1" colspan="1">−10·2%</td>
+<td align="left" rowspan="1" colspan="1">124</td>
+<td align="left" rowspan="1" colspan="1">58·2%</td>
+<td align="left" rowspan="1" colspan="1">−14·7%</td>
+<td align="left" rowspan="1" colspan="1">69</td>
+<td align="left" rowspan="1" colspan="1">61·6%</td>
+<td align="left" rowspan="1" colspan="1">−11·3%</td>
+<td align="left" rowspan="1" colspan="1">314</td>
+<td align="left" rowspan="1" colspan="1">56·5%</td>
+<td align="left" rowspan="1" colspan="1">−12·2%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1"><bold>Analgesics</bold></td>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+<td align="left" rowspan="1" colspan="1"/>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Baseline</td>
+<td align="left" rowspan="1" colspan="1">147</td>
+<td align="left" rowspan="1" colspan="1">48·8%</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">126</td>
+<td align="left" rowspan="1" colspan="1">42·3%</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">86</td>
+<td align="left" rowspan="1" colspan="1">57·3%</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">359</td>
+<td align="left" rowspan="1" colspan="1">47·9%</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">3 mo</td>
+<td align="left" rowspan="1" colspan="1">73</td>
+<td align="left" rowspan="1" colspan="1">30·8%</td>
+<td align="left" rowspan="1" colspan="1">−18·0%</td>
+<td align="left" rowspan="1" colspan="1">93</td>
+<td align="left" rowspan="1" colspan="1">42·5%</td>
+<td align="left" rowspan="1" colspan="1">+0·2%</td>
+<td align="left" rowspan="1" colspan="1">57</td>
+<td align="left" rowspan="1" colspan="1">48·3%</td>
+<td align="left" rowspan="1" colspan="1">−9·0%</td>
+<td align="left" rowspan="1" colspan="1">223</td>
+<td align="left" rowspan="1" colspan="1">38·9%</td>
+<td align="left" rowspan="1" colspan="1">−9·0%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">6 mo</td>
+<td align="left" rowspan="1" colspan="1">99</td>
+<td align="left" rowspan="1" colspan="1">43·4%</td>
+<td align="left" rowspan="1" colspan="1">−5·4%</td>
+<td align="left" rowspan="1" colspan="1">84</td>
+<td align="left" rowspan="1" colspan="1">38·5%</td>
+<td align="left" rowspan="1" colspan="1">−3·8%</td>
+<td align="left" rowspan="1" colspan="1">52</td>
+<td align="left" rowspan="1" colspan="1">46·4%</td>
+<td align="left" rowspan="1" colspan="1">−10·9%</td>
+<td align="left" rowspan="1" colspan="1">235</td>
+<td align="left" rowspan="1" colspan="1">42·1%</td>
+<td align="left" rowspan="1" colspan="1">−5·8%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">9 mo</td>
+<td align="left" rowspan="1" colspan="1">82</td>
+<td align="left" rowspan="1" colspan="1">36·8%</td>
+<td align="left" rowspan="1" colspan="1">−12·0%</td>
+<td align="left" rowspan="1" colspan="1">71</td>
+<td align="left" rowspan="1" colspan="1">34·8%</td>
+<td align="left" rowspan="1" colspan="1">−7·5%</td>
+<td align="left" rowspan="1" colspan="1">55</td>
+<td align="left" rowspan="1" colspan="1">50·0%</td>
+<td align="left" rowspan="1" colspan="1">−7·3%</td>
+<td align="left" rowspan="1" colspan="1">208</td>
+<td align="left" rowspan="1" colspan="1">38·7%</td>
+<td align="left" rowspan="1" colspan="1">−9·2%</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">12 mo</td>
+<td align="left" rowspan="1" colspan="1">84</td>
+<td align="left" rowspan="1" colspan="1">36·8%</td>
+<td align="left" rowspan="1" colspan="1">−12·0%</td>
+<td align="left" rowspan="1" colspan="1">87</td>
+<td align="left" rowspan="1" colspan="1">41·0%</td>
+<td align="left" rowspan="1" colspan="1">−1·3%</td>
+<td align="left" rowspan="1" colspan="1">54</td>
+<td align="left" rowspan="1" colspan="1">49·5%</td>
+<td align="left" rowspan="1" colspan="1">−7·8%</td>
+<td align="left" rowspan="1" colspan="1">225</td>
+<td align="left" rowspan="1" colspan="1">41·0%</td>
+<td align="left" rowspan="1" colspan="1">−6·9%</td>
+</tr>
+</tbody>
+</table>
+</alternatives><table-wrap-foot><fn id="nt108"><label>a</label><p>All percentages given out of total number of patients with valid responses.</p></fn></table-wrap-foot></table-wrap></sec><sec id="s3e">
+<title>Adverse Events</title>
+<p>The number of patients experiencing a serious adverse event (SAE) over the 12 months, as judged by a clinician (IW), was 16 (5·3%) of 302, 26 (8·6%) of 302, and nine (6·0%) of 151 from the acupuncture, counselling, and usual care groups, respectively, of whom nine had more than one SAE (range 2–4). No SAEs, including three deaths, were known to be related to treatment. The number of patients experiencing a non-serious adverse event (NSAE) was 56 (18·5%), 47 (15·6%), and 40 (26·5%), respectively, of whom 17 had more than one NSAE (range 2–4).</p>
+</sec></sec><sec id="s4">
+<title>Discussion</title>
+<sec id="s4a">
+<title>Principal Findings</title>
+<p>In this first randomised trial of acupuncture and counselling for patients continuing to experience depression in primary care, we found statistically significant benefits at 3 months associated with both interventions when provided alongside usual care. This population can be characterised as having experienced recurring bouts of depression (76% having had four or more episodes), with the first episode on average at age 25, some 19 years previously, and 69% were on anti-depressant medication. Moreover significant benefits were observed over the 12-month period as a whole in an AUC analysis. Over time, the usual care group improved such that by 9 and 12 months the benefits of acupuncture and counselling were no longer significantly better than usual care in our primary outcome measure, the PHQ-9. No serious adverse events related to treatment were reported.</p>
+</sec><sec id="s4b">
+<title>Strengths and Limitations</title>
+<p>This study had a clear and practical research question with an appropriate trial design, namely a pragmatic randomised controlled trial, which modelled closely what would happen if patient referrals to acupuncturists and counsellors were routine. Pragmatic trials have an emphasis on external validity with the intention that findings are generalisable to typical patients and settings. We recruited patients in primary care from those who had consulted with depression and continued to be moderately or severely depressed, thereby excluding patients whose symptoms had been alleviated sufficiently by other treatment. Using a different screening measure (BDI-II) from the one we used for measuring outcome (PHQ-9) had the advantage that we avoided the well-known problems of regression towards the mean that occur when we choose people as being above a cut-off. The natural variation in responses to questionnaires produced a few scores below the cut-off for depression on the PHQ9 measurement, 0.8% of participants being below 5, which would have them classified as not depressed, and 11.5% between 5 and 9, which would be mild depression. This is an inevitable consequence of the difficulty of measuring depression. A single PHQ9 below 5 does not mean that someone is not depressed and a single BDI above 20 does not mean that they are depressed, these scores occurring in the same individuals for six participants. Each of these scores is only an uncertain estimate of the person's position on a continuum.</p>
+<p>The attrition between invitation to participate and randomisation at baseline was typical of trials that recruit via primary care databases. Multiple imputation was used to compensate to some degree for the limitations related to the loss of follow-up data. The randomisation into groups provided a control for temporal effects and other factors across all patients that might have influenced outcomes beyond the treatment itself. We provided standardised treatment protocols for the acupuncturists and counsellors that were designed to reflect routine practice, allowing individualisation to match patient variability, while ensuring all practitioners met appropriate standards of qualification and experience. While no attempt was made to standardise usual care, it was however provided to patients in all arms of the trial, with a majority of patients continuing with anti-depressants, and differences between groups in usual care at all time points were minimal (see <xref ref-type="supplementary-material" rid="pmed.1001518.s005">Tables S4</xref>–<xref ref-type="supplementary-material" rid="pmed.1001518.s007">S7</xref>). Accordingly, we can assume that the differences between arms can largely be ascribed to the treatments provided by the acupuncturists and the counsellors.</p>
+<p>Pragmatic trials, however, tell us less about which aspects of the interventions might be most or least beneficial. Such trials are not designed to separate out relative contributions from treatment components that are specific or non-specific to the intervention. With regard to two treatment components in the acupuncture and counselling groups that are often considered “non-specific,” namely session time and quality of therapist attention, we found that specific treatment effects remained when these were accounted for. Despite the limitation that a pragmatic approach has in ascribing outcomes to different treatment components, exacerbated by some loss to follow-up, this design nevertheless provides a useful estimate of overall effects of complex interventions, an estimate of most interest to patients, practitioners and providers.</p>
+</sec><sec id="s4c">
+<title>Relationship to the Literature</title>
+<p>In a recent Cochrane review of acupuncture for depression, no studies focussed on moderate to severe depression. The only comparator equivalent to the usual care of our study was a wait list comparator, which involved two trials by the same research team <xref ref-type="bibr" rid="pmed.1001518-Allen1">[22]</xref>–<xref ref-type="bibr" rid="pmed.1001518-Allen2">[23]</xref>. The Cochrane review's meta-analysis involving 94 patients in these two trials showed a reduction in standardised mean difference (SMD) of −0·73 (95% CI −1·18 to −0·29). This is a larger effect size than we found, however we need to be cautious in the interpretation of the result, as the patients were less depressed and the numbers analysed were small. Regarding counselling, we found no trial based in primary care that evaluated counselling for moderate to severe depression. From a Cochrane review, there is evidence from six trials of counselling for mild to moderate depression with 772 patients that counselling is more effective than usual care in terms of mental health outcomes over 1 to 6 months (SMD −0·28, 95% CI −0·43 to −0·13). These advantages were not shown to endure over the longer term from 7 to 12 months (SMD −0·09, 95% CI −0·27 to 0·10). Their number-needed-to-treat for short-term benefit was 6, somewhat less than the 10 we found for moderate to severely depressed patients. In another review of psychological interventions, four cognitive behaviour therapy studies based in primary care covering 259 patients with depression found a similar short-term effect (SMD −0·33, 95% CI −0·60 to −0·06) <xref ref-type="bibr" rid="pmed.1001518-Cape1">[24]</xref>. In our rigorously conducted large-scale trial, we present the first evidence on acupuncture and counselling for patients in primary care who are representative of those continuing to experience symptoms of moderate to severe depression. Both interventions are shown to be effective treatments at 3 months when compared to usual care alone, with evidence that there are benefits over the 12-month period in terms of clinical symptoms.</p>
+</sec><sec id="s4d">
+<title>Implications for Clinical Practice and Future Research</title>
+<p>If treatment success is defined as improvement from a depressed PHQ-9 score (≥10) to a non-depressed score (≤9) with an improvement of at least 50% <xref ref-type="bibr" rid="pmed.1001518-McMillan1">[25]</xref>, then 33% of acupuncture patients, 29% of counselling patients, and 18% of usual care patients achieved this. These percentages apply to the total number of patients with a baseline PHQ-9 score of 10 or above and for whom data were available at 3 months. The number-needed-to-treat for one additional treatment success, as defined above, was 7 for acupuncture (95% CI 4·3–17·4) and 10 for counselling (95% CI 5·3–47·3). The patient experience can be further illustrated in terms of “depression free days” <xref ref-type="bibr" rid="pmed.1001518-Vannoy1">[26]</xref>, an approximate summary measure derived from PHQ-9 cut-off scores averaged over the period between measurements. The mean number of depression free days over 3 months was 34 (95% CI 31–38) for the acupuncture group, 27 (95% CI 24–30) for the counselling group, and 23 (95% CI 19–27) for the usual care group.</p>
+<p>Further research into the optimal populations and treatment regimens for acupuncture and counselling is merited. The characteristics of patients one recruits to trials of interventions for depression in primary care will depend on the recruitment methods used. Patients recruited at the point of consultation will be different from those recruited via databases, as we did in this trial, and different again from those with depression who are not consulting at all. In the trial we report here, what was important was that patients had consulted in primary care, continued to be depressed, and were seeking other interventions that might help with their depression. A different recruitment method could be used to assess whether the interventions would be more effective for patients referred at the onset of their first episode of depression, rather than after many episodes, as was the case in the present study in which 76% had had four or more previous episodes.</p>
+<p>We recruited patients using the Beck Inventory (BDI-II) with scores greater or equal to 20, which is classified by this measure as “moderate to severe.” However other classifications systems, such as DSM, have different categories of severity. What our trial does not tell us is whether acupuncture or counselling performs better or worse for the more mild forms of depression. Nor do we know whether patients not receiving anti-depressant medication (one third of our sample) do better or not, or whether fewer sessions would be sufficient for mild to moderate depression, or more sessions would improve outcomes for those with severe depression (approximately 60% of our sample). For those randomised to acupuncture, it was usually their first experience of this intervention, whereas many randomised to counselling had received this intervention before; however, it is not clear whether this difference impacted on outcomes.</p>
+<p>With regard to the acupuncture provision, there is some evidence from the literature that a uniform combination of points can work for depressed patients <xref ref-type="bibr" rid="pmed.1001518-Mischoulon1">[27]</xref>,<xref ref-type="bibr" rid="pmed.1001518-Yeung1">[28]</xref>; however, a head-to-head trial or large individual patient data meta-analysis would be required to determine whether a uniform approach was more beneficial than an individualised approach.</p>
+<p>A full economic analysis is needed to combine the costs and effects of each treatment option to determine the cost-effective treatment. Although no other trial data are available on the costs and effects of acupuncture for these primary care patients, other trials exist for counselling in primary care and, to guide policy, these should be synthesized into cost-effectiveness estimates.</p>
+</sec></sec><sec id="s5">
+<title>Conclusion</title>
+<p>To our knowledge, our study is the first to rigorously evaluate the clinical and economic impact of acupuncture and counselling for patients in primary care who are representative of those who continue to experience depression in primary care. We have provided evidence that acupuncture versus usual care and counselling versus usual care are both associated with a significant reduction in symptoms of depression in the short to medium term, and are not associated with serious adverse events.</p>
+</sec><sec id="s6">
+<title>Supporting Information</title>
+<supplementary-material id="pmed.1001518.s001" mimetype="application/pdf" xlink:href="info:doi/10.1371/journal.pmed.1001518.s001" position="float" xlink:type="simple"><label>Protocol S1</label><caption>
+<p><bold>Trial protocol.</bold></p>
+<p>(PDF)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1001518.s002" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pmed.1001518.s002" position="float" xlink:type="simple"><label>Table S1</label><caption>
+<p><bold>Baseline characteristics for patients with and without missing data at 3 months.</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1001518.s003" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pmed.1001518.s003" position="float" xlink:type="simple"><label>Table S2</label><caption>
+<p><bold>Details of the acupuncture treatment based on STRICTA reporting guidelines.</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1001518.s004" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pmed.1001518.s004" position="float" xlink:type="simple"><label>Table S3</label><caption>
+<p><bold>Details of the competences that underpinned the delivery of counselling.</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1001518.s005" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pmed.1001518.s005" position="float" xlink:type="simple"><label>Table S4</label><caption>
+<p><bold>Usual care provided: number of patients seeing a health professional and average number of visits (total and specifically for depression) for these patients in the preceding 3 months.</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1001518.s006" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pmed.1001518.s006" position="float" xlink:type="simple"><label>Table S5</label><caption>
+<p><bold>Usual care provided: number of patients attending hospital accident and emergency departments and number of attendances in the preceding 3 months.</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1001518.s007" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pmed.1001518.s007" position="float" xlink:type="simple"><label>Table S6</label><caption>
+<p><bold>Usual care provided: number of patients admitted to hospital and number of overnight stays in the preceding 3 months.</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1001518.s008" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pmed.1001518.s008" position="float" xlink:type="simple"><label>Table S7</label><caption>
+<p><bold>Usual care provided: number of patients paying for private health care &amp; money spent in the preceding 3 months.</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1001518.s009" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pmed.1001518.s009" position="float" xlink:type="simple"><label>Table S8</label><caption>
+<p><bold>Effect of trial arm on PHQ-9 depression at 3 months and BDI-II depression at 12 months (non-imputed data).</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1001518.s010" mimetype="application/msword" xlink:href="info:doi/10.1371/journal.pmed.1001518.s010" position="float" xlink:type="simple"><label>Text S1</label><caption>
+<p><bold>CONSORT statement checklist.</bold></p>
+<p>(DOC)</p>
+</caption></supplementary-material></sec></body>
+<back>
+<ack>
+<p>We acknowledge the patients, counsellors, acupuncturists, and general medical practitioners; Sylvia Schroer for conducting the pilot study; Mike Bennett and David Smith from York &amp; District Mind; and from the ACUDep research team, Matthew Bailey, Richard Blackwell, Sally Brabyn, Ben Cross, Janet Eldred, David Geddes, Simon Gilbody, Pauline Holloway, Hillary Marshall, Stephen Morley, Karen Overend, Lucy Revell, Val Wadsworth, and Kerry Wheeler. We especially acknowledge Peter Bower who chaired our Independent Steering Group.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pmed.1001518-Lopez1"><label>1</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lopez</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Murray</surname><given-names>C</given-names></name> (<year>1998</year>) <article-title>The global burden of disease 1990–2020</article-title>. <source>Nat Med</source> <volume>4</volume>: <fpage>1241</fpage>–<lpage>1243</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Thomas1"><label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Thomas</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Morris</surname><given-names>S</given-names></name> (<year>2003</year>) <article-title>Cost of depression among adults in England in 2000</article-title>. <source>Br J Psychiatry</source> <volume>183</volume>: <fpage>514</fpage>–<lpage>519</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Effective1"><label>3</label>
+<mixed-citation publication-type="other" xlink:type="simple">Effective Health Care Bulletin (2005) Improving the recognition and management of depression in primary care. York: Centre for Reviews and Dissemination, University of York: 1–12.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Fava1"><label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fava</surname><given-names>M</given-names></name> (<year>2003</year>) <article-title>Diagnosis and definition of treatment resistant depression</article-title>. <source>Biol Psychiatry</source> <volume>53</volume>: <fpage>649</fpage>–<lpage>659</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Kirsch1"><label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kirsch</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Deacon</surname><given-names>BJ</given-names></name>, <name name-style="western"><surname>Huedo-Medina</surname><given-names>TB</given-names></name>, <name name-style="western"><surname>Scoboria</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Moore</surname><given-names>TJ</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Initial severity and antidepressant benefits: a meta-analysis of data submitted to the Food and Drug Administration</article-title>. <source>PLoS Med</source> <volume>5</volume>: <fpage>e45</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.0050045" xlink:type="simple">10.1371/journal.pmed.0050045</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pmed.1001518-Mind1"><label>6</label>
+<mixed-citation publication-type="other" xlink:type="simple">Mind (2002) My Choice: A Survey. Available: <ext-link ext-link-type="uri" xlink:href="http://www.mind.org.uk/Newspolicyandcampaigns/Pressarchive/MindlaunchescampaignformorechoiceofmentalhealthservicesatGPlevel.htmAccessed" xlink:type="simple">http://www.mind.org.uk/Newspolicyandcampaigns/Pressarchive/MindlaunchescampaignformorechoiceofmentalhealthservicesatGPlevel.htmAccessed</ext-link> 13 January 2008.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Hopton1"><label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hopton</surname><given-names>AK</given-names></name>, <name name-style="western"><surname>Curnoe</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kanaan</surname><given-names>M</given-names></name>, <name name-style="western"><surname>MacPherson</surname><given-names>H</given-names></name> (<year>2012</year>) <article-title>Acupuncture in practice: mapping the providers, the patients and the settings in a national cross-sectional survey</article-title>. <source>BMJ Open 1</source> <volume>2(1)</volume> Available: <ext-link ext-link-type="uri" xlink:href="http://bmjopen.bmj.com/content/2/1/e000456.abstract" xlink:type="simple">http://bmjopen.bmj.com/content/2/1/e000456.abstract</ext-link>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Thomas2"><label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Thomas</surname><given-names>KJ</given-names></name>, <name name-style="western"><surname>Nicholl</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Coleman</surname><given-names>P</given-names></name> (<year>2001</year>) <article-title>Use and expenditure on complementary medicine in England: a population based survey</article-title>. <source>Complement Ther Med 9</source> <volume>1</volume>: <fpage>2</fpage>–<lpage>11</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Smith1"><label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Smith</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Hay</surname><given-names>PP</given-names></name>, <name name-style="western"><surname>MacPherson</surname><given-names>H</given-names></name> (<year>2010</year>) <article-title>Acupuncture for depression</article-title>. <source>Cochrane Database Syst Rev</source> <volume>20</volume>: <fpage>CD004046</fpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-MellorClark1"><label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mellor-Clark</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Simms-Ellis</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Burton</surname><given-names>M</given-names></name> (<year>2001</year>) <article-title>National survey of counsellors working in primary care: evidence for growing professionalisation?</article-title> <source>Occas Pap R Coll Gen Pract</source> <volume>79</volume>: <fpage>vi</fpage>–<lpage>7</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-1"><label>11</label>
+<mixed-citation publication-type="other" xlink:type="simple"> National Collaborating Centre for Mental Health (2010) The NICE guideline on the treatment and management of depression in adults: 1–707. Available: <ext-link ext-link-type="uri" xlink:href="http://www.nice.org.uk/nicemedia/live/12329/45896/45896.pdf" xlink:type="simple">http://www.nice.org.uk/nicemedia/live/12329/45896/45896.pdf</ext-link>. Accessed 25 July 2013</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Bower1"><label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bower</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Knowles</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Coventry</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Rowland</surname><given-names>N</given-names></name> (<year>2011</year>) <article-title>Counselling for mental health and psychosocial problems in primary care</article-title>. <source>Cochrane Database Syst Rev</source> <volume>9</volume>: <fpage>CD001025</fpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-MacPherson1"><label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>MacPherson</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Richmond</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Bland</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Lansdown</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Hopton</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Acupuncture, Counseling, and Usual care for Depression (ACUDep): study protocol for a randomized controlled trial</article-title>. <source>Trials 14</source> <volume>13</volume>: <fpage>209</fpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Seggar1"><label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Seggar</surname><given-names>LB</given-names></name>, <name name-style="western"><surname>Lambert</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Hansen</surname><given-names>NB</given-names></name> (<year>2002</year>) <article-title>Assessing clinical significance: Application to the Beck depression inventory</article-title>. <source>Behav Ther</source> <volume>33</volume>: <fpage>253</fpage>–<lpage>269</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Kroenke1"><label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Kroenke</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Spitzer</surname><given-names>RL</given-names></name>, <name name-style="western"><surname>Williams</surname><given-names>JB</given-names></name> (<year>2001</year>) <article-title>The PHQ-9: validity of a brief depression severity measure</article-title>. <source>J Gen Intern Med</source> <volume>16</volume>: <fpage>606</fpage>–<lpage>613</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-MacPherson2"><label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>MacPherson</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Schroer</surname><given-names>S</given-names></name> (<year>2007</year>) <article-title>Acupuncture as a complex intervention for depression: a consensus method to develop a standardised treatment protocol for a randomised controlled trial</article-title>. <source>Complement Ther Med</source> <volume>15</volume>: <fpage>92</fpage>–<lpage>100</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Roth1"><label>17</label>
+<mixed-citation publication-type="other" xlink:type="simple">Roth A, Hill A, Pilling S (2009) The competences required to deliver effective Humanistic Psychological Therapies. London: University College London, Centre for Outcomes Research and Effectiveness.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-The1"><label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">The EuroQol Group</collab> (<year>1990</year>) <article-title>EuroQol–a new facility for the measurement of health-related quality of life</article-title>. <source>Health Policy</source> <volume>16</volume>: <fpage>199</fpage>–<lpage>208</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Price1"><label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Price</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Mercer</surname><given-names>SW</given-names></name>, <name name-style="western"><surname>MacPherson</surname><given-names>H</given-names></name> (<year>2006</year>) <article-title>Practitioner empathy, patient enablement and health outcomes: a prospective study of acupuncture patients</article-title>. <source>Patient Educ Couns</source> <volume>6</volume>: <fpage>239</fpage>–<lpage>245</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Roberts1"><label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Roberts</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Roberts</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Sibbald</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Torgerson</surname><given-names>DJ</given-names></name> (<year>2002</year>) <article-title>Increasing response rates to postal questionnaires: effect of incentives on response rates must be considered</article-title>. <source>BMJ 24</source> <volume>325</volume>: <fpage>444</fpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-MacPherson3"><label>21</label>
+<mixed-citation publication-type="other" xlink:type="simple">MacPherson H, Elliot B, Hopton A, Lansdown H, Richmond S (2013) Acupuncture for depression: patterns of diagnosis and treatment within a randomised controlled trial. Evid Based Complement Alternat Med 1–9.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Allen1"><label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Allen</surname><given-names>JJB</given-names></name>, <name name-style="western"><surname>Schnyer</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Hitt</surname><given-names>SK</given-names></name> (<year>1998</year>) <article-title>The efficacy of acupuncture in the treatment of major depression in women</article-title>. <source>Psychol Sci</source> <volume>9</volume>: <fpage>397</fpage>–<lpage>401</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Allen2"><label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Allen</surname><given-names>JJB</given-names></name>, <name name-style="western"><surname>Schnyer</surname><given-names>RN</given-names></name>, <name name-style="western"><surname>Chambers</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Hitt</surname><given-names>SK</given-names></name>, <name name-style="western"><surname>Moreno</surname><given-names>FA</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Acupuncture for depression: a randomized controlled trial</article-title>. <source>J Clin Psychiatry</source> <volume>67</volume>: <fpage>1665</fpage>–<lpage>1673</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Cape1"><label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cape</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Whittington</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Buszewicz</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Wallace</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Underwood</surname><given-names>L</given-names></name> (<year>2010</year>) <article-title>Brief psychological therapies for anxiety and depression in primary care: meta-analysis and meta-regression</article-title>. <source>BMC Med</source> <volume>8</volume>: <fpage>38</fpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-McMillan1"><label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McMillan</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Gilbody</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Richards</surname><given-names>D</given-names></name> (<year>2010</year>) <article-title>Defining successful treatment outcome in depression using the PHQ-9: a comparison of methods</article-title>. <source>J Affect Disord</source> <volume>127</volume>: <fpage>122</fpage>–<lpage>129</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Vannoy1"><label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vannoy</surname><given-names>SD</given-names></name>, <name name-style="western"><surname>Arean</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Unutzer</surname><given-names>J</given-names></name> (<year>2010</year>) <article-title>Advantages of using estimated depression-free days for evaluating treatment efficacy</article-title>. <source>Psychiatr Serv</source> <volume>61</volume>: <fpage>160</fpage>–<lpage>163</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Mischoulon1"><label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mischoulon</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Brill</surname><given-names>CD</given-names></name>, <name name-style="western"><surname>Ameral</surname><given-names>VE</given-names></name>, <name name-style="western"><surname>Fava</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Yeung</surname><given-names>AS</given-names></name> (<year>2012</year>) <article-title>A pilot study of acupuncture monotherapy in patients with major depressive disorder</article-title>. <source>J Affect Disord</source> <volume>141 (2–3)</volume>: <fpage>469</fpage>–<lpage>473</lpage>.</mixed-citation>
+</ref>
+<ref id="pmed.1001518-Yeung1"><label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Yeung</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Ameral</surname><given-names>VE</given-names></name>, <name name-style="western"><surname>Chuzi</surname><given-names>SE</given-names></name>, <name name-style="western"><surname>Fava</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Mischoulon</surname><given-names>D</given-names></name> (<year>2011</year>) <article-title>A pilot study of acupuncture augmentation therapy in antidepressant partial and non-responders with major depressive disorder</article-title>. <source>J Affect Disord</source> <volume>130</volume>: <fpage>285</fpage>–<lpage>289</lpage>.</mixed-citation>
+</ref>
+</ref-list><glossary><title>Abbreviations</title><def-list><def-item>
+<term>ANCOVA</term>
+<def>
+<p>analysis of covariance</p>
+</def>
+</def-item><def-item>
+<term>AUC</term>
+<def>
+<p>area under the curve</p>
+</def>
+</def-item><def-item>
+<term>SD</term>
+<def>
+<p>standard deviation</p>
+</def>
+</def-item></def-list></glossary></back>
+</article>

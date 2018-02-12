@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="pmc">plosone</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group><issn pub-type="epub">1932-6203</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PONE-D-10-05521</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0016976</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Clinical research design</subject>
+            <subj-group>
+              <subject>Clinical trials</subject>
+              <subject>Meta-analyses</subject>
+              <subject>Systematic reviews</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Epidemiology</subject>
+            <subj-group>
+              <subject>Infectious disease epidemiology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Global health</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Infectious diseases</subject>
+            <subj-group>
+              <subject>Parasitic diseases</subject>
+              <subj-group>
+                <subject>Malaria</subject>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Tropical diseases (non-neglected)</subject>
+              <subj-group>
+                <subject>Malaria</subject>
+                <subj-group>
+                  <subject>Plasmodium falciparum</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+            <subj-group>
+              <subject>Infectious disease control</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Public health</subject>
+            <subj-group>
+              <subject>Child health</subject>
+              <subject>Preventive medicine</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Public Health and Epidemiology</subject>
+          <subject>Infectious Diseases</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>A Systematic Review and Meta-Analysis of the Efficacy and Safety of Intermittent Preventive Treatment of Malaria in Children (IPTc)</article-title><alt-title alt-title-type="running-head">A Systematic Review and Meta-Analysis of IPTc</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Wilson</surname>
+            <given-names>Anne L.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1"/>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <collab xlink:type="simple">on behalf of the IPTc Taskforce</collab>
+          <xref ref-type="fn" rid="fn1">
+            <sup>¶</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1">          <addr-line>London School of Hygiene and Tropical Medicine, London, United Kingdom</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Diemert</surname>
+            <given-names>David</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">The George Washington University Medical Center, United States of America</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">Anne.wilson@lshtm.ac.uk</email></corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: AW. Analyzed the data: AW. Wrote the manuscript: AW.</p>
+        </fn>
+        <fn fn-type="other" id="fn1">
+          <p>¶ Membership of the IPTc Taskforce is provided in the Acknowledgments.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <year>2011</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>14</day>
+        <month>2</month>
+        <year>2011</year>
+      </pub-date><volume>6</volume><issue>2</issue><elocation-id>e16976</elocation-id><history>
+        <date date-type="received">
+          <day>14</day>
+          <month>10</month>
+          <year>2010</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>1</month>
+          <year>2011</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2011</copyright-year><copyright-holder>Wilson, IPTc Taskforce</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <sec>
+          <title>Background</title>
+          <p>Intermittent preventive treatment of malaria in children less than five years of age (IPTc) has been investigated as a measure to control the burden of malaria in the Sahel and sub-Sahelian areas of Africa where malaria transmission is markedly seasonal.</p>
+        </sec>
+        <sec>
+          <title>Methods and Findings</title>
+          <p>IPTc studies were identified using a systematic literature search. Meta-analysis was used to assess the protective efficacy of IPTc against clinical episodes of falciparum malaria. The impact of IPTc on all-cause mortality, hospital admissions, severe malaria and the prevalence of parasitaemia and anaemia was investigated. Three aspects of safety were also assessed: adverse reactions to study drugs, development of drug resistance and loss of immunity to malaria. Twelve IPTc studies were identified: seven controlled and five non-controlled trials. Controlled studies demonstrated protective efficacies against clinical malaria of between 31% and 93% and meta-analysis gave an overall protective efficacy of monthly administered IPTc of 82% (95%CI 75%–87%) during the malaria transmission season. Pooling results from twelve studies demonstrated a protective effect of IPTc against all-cause mortality of 57% (95%CI 24%–76%) during the malaria transmission season. No serious adverse events attributable to the drugs used for IPTc were observed in any of the studies. Data from three studies that followed children during the malaria transmission season in the year following IPTc administration showed evidence of a slight increase in the incidence of clinical malaria compared to children who had not received IPTc.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>IPTc is a safe method of malaria control that has the potential to avert a significant proportion of clinical malaria episodes in areas with markedly seasonal malaria transmission and also appears to have a substantial protective effect against all-cause mortality. These findings indicate that IPTc is a potentially valuable tool that can contribute to the control of malaria in areas with markedly seasonal transmission.</p>
+        </sec>
+      </abstract><funding-group><funding-statement>This work was supported by a grant to the London School of Hygiene &amp; Tropical Medicine from the Bill &amp; Melinda Gates Foundation (Grant number: OPP51371). The funders had no role in study design, data collection and analysis, decision to publish or preparation of the manuscript.</funding-statement></funding-group><counts>
+        <page-count count="12"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Intermittent preventive treatment of malaria (IPT) refers to the administration of a full therapeutic course of an anti-malarial drug to the whole of a population at risk, whether or not they are known to be infected, at specific times, with the aim of preventing mortality or morbidity from malaria <xref ref-type="bibr" rid="pone.0016976-Greenwood1">[1]</xref>. IPT with sulphadoxine-pyrimethamine (SP) is recommended by the WHO for use in pregnant women (IPTp) and has recently been recommended by the WHO for use in infants (IPTi), delivered alongside vaccines within the context of the routine Expanded Programme on Immunisation <xref ref-type="bibr" rid="pone.0016976-World1">[2]</xref>. The decision by WHO to recommend IPTi in areas where there is a significant malaria burden in infants and where parasites are still sensitive to SP was made on the basis of data including a pooled analysis of six IPTi studies which demonstrated a 30% protective efficacy (PE) against episodes of clinical malaria <xref ref-type="bibr" rid="pone.0016976-Aponte1">[3]</xref>. In areas of markedly seasonal malaria transmission, such as the Sahel and sub-Sahel regions of Africa, the main burden of malaria is in older children rather than infants, and the risk of clinical malaria is restricted largely to a few months each year <xref ref-type="bibr" rid="pone.0016976-Etard1">[4]</xref>, <xref ref-type="bibr" rid="pone.0016976-Jaffar1">[5]</xref>. In such areas, administration of IPT to children several times during the seasonal peak in malaria transmission (IPTc) has been investigated as a method of preventing malaria.</p>
+      <p>A Cochrane review published in 2008 reviewed the efficacy and safety of chemoprophylaxis and IPT in children <xref ref-type="bibr" rid="pone.0016976-Meremikwu1">[6]</xref>. However, although there is some overlap in the mechanism of protection provided by chemoprophylaxis and IPT, these two approaches set out to produce different blood concentration profiles and the efficacy and safety of the two methods may differ. Since the Cochrane review was undertaken, additional IPTc studies have been conducted in different settings using several different drug regimens. A systematic review and meta-analysis was therefore carried out to review new and existing data on the safety and efficacy of IPTc administered seasonally to children under five years of age. We specifically reviewed randomised controlled trials that assessed the efficacy of IPTc against clinical malaria, severe malaria, all-cause hospital admissions, <italic>Plasmodium falciparum</italic> parasitaemia and anaemia when administered to children under five years of age compared to placebo or no intervention. The same studies were also used to assess the effect of IPTc on the prevalence of markers of resistance to SP, as well as any rebound effect in clinical malaria or anaemia in the year following IPTc administration. Non-controlled studies were used additionally to assess the efficacy of IPTc against all-cause mortality and to assess the toxicity of the drugs used.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Search Strategy and Selection Criteria</title>
+        <p>A systematic literature search for IPTc studies (published, unpublished and ongoing) was carried out on 25th March 2009 and updated on 19th August 2010. A single investigator (ALW) developed and conducted the search. Studies were identified using database searches, citation searches of selected articles and contact with investigators. The electronic databases searched were: Pubmed (1965-present), Web of Science (1970-present), and Global Health (1910-present). Articles in English, German or French were selected for review and no date restrictions were applied to the search. The search was conducted using free-text terms and standardised subject terms appropriate to the specific database. Combinations of the following search terms were used; intermittent, prevention, presumptive, season, therapy/treatment, malaria and mass drug administration (<xref ref-type="supplementary-material" rid="pone.0016976.s001">Table S1</xref>). Ongoing and completed clinical trials were identified through searches of clinical trial databases <xref ref-type="bibr" rid="pone.0016976-National1">[7]</xref>, <xref ref-type="bibr" rid="pone.0016976-World2">[8]</xref>.</p>
+        <p>Study eligibility was assessed by a single investigator (ALW) in an un-blinded manner. Studies were retained if they met the following criteria; i) seasonal administration of more than one therapeutic course of anti-malarial drugs, whether or not subjects were known to be infected, ii) study subjects were children, aged less than 5 years, resident in a malaria endemic area, and, iii) the objective of the study was evaluation of the effect of drug administration on clinical malaria (with parasitological confirmation). Studies which enrolled children older than 5 years were included if data on children under 5 years were available for analysis. All study designs were accepted, although only controlled studies were used for analysis of primary efficacy outcomes. Studies were excluded if their aim was to evaluate; i) the effect of a sustained protective drug concentration against infection (chemoprophylaxis), or, ii) the effect of drug administration on interruption of transmission (mass drug administration). Studies in population subgroups such as anaemic children were also excluded.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Data Extraction and Outcome Measures</title>
+        <p>Data from eligible studies was extracted based on the intention-to-treat principle into a purpose built database by a single investigator (ALW) (Excel, Microsoft, 2007). We did not have access to data from individual children and, instead, combined results taken from published papers were used. Investigators were contacted directly if any information was unclear or not specified in the published articles.</p>
+        <p>Clinical malaria was defined as an illness accompanied by an axillary temperature of greater than or equal to 37.5°C or a history of fever within the previous 24 or 48 hours and the presence of asexual forms of <italic>P. falciparum</italic> parasitaemia at any density. An alternative definition of clinical malaria using a locally defined threshold concentration of <italic>P. falciparum</italic> parasitaemia was also used for comparison. Severe malaria was defined as per the WHO definition <xref ref-type="bibr" rid="pone.0016976-World3">[9]</xref>. Anaemia was defined as a haemoglobin (Hb) concentration less than 8g/dL or an haematocrit (Hct) of less than 25%. Parasitaemia was defined as the presence of asexual forms of <italic>P. falciparum</italic> at any density. Molecular markers of SP resistance assessed were the <italic>dhfr</italic> triple (51, 59, 108) mutations and the <italic>dhps</italic> 437 mutation, associated with resistance to pyrimethamine and sulphones respectively. Adverse events (AE) and Serious Adverse Events (SAE) were defined as per standard ICH definitions <xref ref-type="bibr" rid="pone.0016976-International1">[10]</xref>.</p>
+        <p>All trials used in the meta-analysis, whether published or unpublished, had been approved by an ethics committee. The risk of bias in the studies was assessed by a single investigator (ALW) in an un-blinded manner using a tool developed by the Cochrane Collaboration (focusing on specific domains including sequence generation, allocation concealment, blinding, incomplete outcome data and selective outcome reporting) <xref ref-type="bibr" rid="pone.0016976-The1">[11]</xref>. Due to the small number of studies identified, trials were not excluded based on quality assessment and sensitivity analysis was not performed. For the same reason, we were not able to formally assess for publication bias.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Data Analysis</title>
+        <p>The effect of IPTc on malaria incidence (total number of episodes) was expressed as a rate ratio. Person time at risk was expressed in years (Person Years at Risk, PYAR) and was defined as date of exit from the study minus date of enrolment into the study. Date of exit for children who died was the date of death and was defined as the date of the last contact with active or passive malaria surveillance systems if a child was lost to follow up. Person time at risk was reduced by 28 days (21 days in two studies <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>) for each episode of clinical malaria treated according to national guidelines with an effective anti-malarial drug, thus reducing the likelihood of recrudescence affecting the rate ratio. Only crude rates were used, as opposed to those adjusted for covariates, such as usage of insecticide treated bednets (ITN) or age. Confidence intervals (CI) were calculated using an approximate standard error obtained from the summary data on the total number of clinical malaria episodes and PYAR. 95% CI and P-values were calculated using standard formulae <xref ref-type="bibr" rid="pone.0016976-Kirkwood1">[14]</xref>. Protective efficacy was calculated as PE = 1−(Rate ratio of clinical malaria during the intervention period)×100%. The difference between rates in the IPTc and control arms was calculated. Due to the heterogeneity of the efficacy estimates from the studies, a summary effect measure was calculated using random effect meta-analysis with inverse-variance weights. Forest plots also depict a summary effect measure calculated using fixed effect meta-analysis for comparison. Fixed effect meta-analysis considers that variation between studies is due purely to random variation. Random effect meta-analysis assumes a different underlying effect for each study and takes this into account as an additional source of variation, resulting in a summary effect measure with wider CI. Where studies are heterogeneous it is more appropriate to use a random effect model <xref ref-type="bibr" rid="pone.0016976-Egger1">[15]</xref>. Heterogeneity between trials was quantified using the I<sup>2</sup> statistic <xref ref-type="bibr" rid="pone.0016976-Higgins1">[16]</xref>. The effect of IPTc on the prevalence of anaemia and of parasitaemia, as well as the mean Hb or Hct concentration was assessed and 95% CI and two-sided P-values were calculated using standard methods <xref ref-type="bibr" rid="pone.0016976-Kirkwood1">[14]</xref>. Deaths occurring during the intervention period were expressed per 1000 children who received the first dose of at least one course of IPTc and per 1000 PYAR, with the 95% CI and P-value for the corresponding relative risk and rate ratio calculated using standard methods <xref ref-type="bibr" rid="pone.0016976-Kirkwood1">[14]</xref>. The most common AEs were pooled across studies for each IPTc regimen and expressed per 1000 courses of IPTc delivered. Incidence of AEs was then compared to that in the control arms using a z-test. Statistical analysis was conducted using Excel (Microsoft, 2007) and STATA 10 (StataCorp, Texas, U.S.A.). This review has been reported according to PRISMA guidelines <xref ref-type="bibr" rid="pone.0016976-Moher1">[17]</xref>, <xref ref-type="bibr" rid="pone.0016976-Liberati1">[18]</xref> (<xref ref-type="supplementary-material" rid="pone.0016976.s002">Table S2</xref>).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <sec id="s3a">
+        <title>Characteristics of Studies Identified</title>
+        <p>The systematic literature search identified seven controlled IPTc studies <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>, <xref ref-type="bibr" rid="pone.0016976-Bojang1">[19]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>, <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>, <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref> and a further five studies which were not controlled <xref ref-type="bibr" rid="pone.0016976-Sokhna1">[24]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse2">[25]</xref>, <xref ref-type="bibr" rid="pone.0016976-Bojang2">[26]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku2">[27]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse3">[28]</xref> (<xref ref-type="fig" rid="pone-0016976-g001">Figure 1</xref>). Characteristics of controlled and non-controlled studies are shown in <xref ref-type="table" rid="pone-0016976-t001">Table 1</xref> and <xref ref-type="table" rid="pone-0016976-t002">Table 2</xref>, respectively. Studies which were excluded from the review are described in <xref ref-type="supplementary-material" rid="pone.0016976.s003">Table S3</xref>.</p>
+        <fig id="pone-0016976-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0016976.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Flow Diagram of Study Selection Process.</title>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.g001" xlink:type="simple"/>
+        </fig>
+        <table-wrap id="pone-0016976-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0016976.t001</object-id><label>Table 1</label><caption>
+            <title>Characteristics of Controlled Studies.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0016976-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.t001" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Cisse (2006) <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kweku (2008) <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Dicko (2008) <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Bojang (2010) <xref ref-type="bibr" rid="pone.0016976-Bojang1">[19]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Dicko (2011) <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Konaté (2011) <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Sesay (2011) <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Location</td>
+                <td align="left" colspan="1" rowspan="1">Niakhar, Senegal</td>
+                <td align="left" colspan="1" rowspan="1">Hohoe, Ghana</td>
+                <td align="left" colspan="1" rowspan="1">Kambila, Mali</td>
+                <td align="left" colspan="1" rowspan="1">Basse, Gambia</td>
+                <td align="left" colspan="1" rowspan="1">Kati Region, Mali</td>
+                <td align="left" colspan="1" rowspan="1">Boussé, Burkina Faso</td>
+                <td align="left" colspan="1" rowspan="1">Farafenni Gambia</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Entomological inoculation rate (per person per year)</td>
+                <td align="left" colspan="1" rowspan="1">10</td>
+                <td align="left" colspan="1" rowspan="1">65</td>
+                <td align="left" colspan="1" rowspan="1">137</td>
+                <td align="left" colspan="1" rowspan="1">1–50</td>
+                <td align="left" colspan="1" rowspan="1">7–37</td>
+                <td align="left" colspan="1" rowspan="1">11–74</td>
+                <td align="left" colspan="1" rowspan="1">&lt;10</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Bednet usage</td>
+                <td align="left" colspan="1" rowspan="1">22% any net</td>
+                <td align="left" colspan="1" rowspan="1">11% ITN</td>
+                <td align="left" colspan="1" rowspan="1">&lt;5% any net</td>
+                <td align="left" colspan="1" rowspan="1">68% ITN</td>
+                <td align="left" colspan="1" rowspan="1">&gt;99% ITN</td>
+                <td align="left" colspan="1" rowspan="1">93% ITN</td>
+                <td align="left" colspan="1" rowspan="1">93% ITN</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">IPTc Drugs</td>
+                <td align="left" colspan="1" rowspan="1">AS+SP</td>
+                <td align="left" colspan="1" rowspan="1">SP bimonthly AS+AQ bimonthly, AS+AQ</td>
+                <td align="left" colspan="1" rowspan="1">SP bimonthly</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ, SP+PQ, DHA+PQ</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Delivery</td>
+                <td align="left" colspan="1" rowspan="1">Trial staff at facility</td>
+                <td align="left" colspan="1" rowspan="1">CHW</td>
+                <td align="left" colspan="1" rowspan="1">Trial staff at facility</td>
+                <td align="left" colspan="1" rowspan="1">Trial staff at facility</td>
+                <td align="left" colspan="1" rowspan="1">Trial staff at facility</td>
+                <td align="left" colspan="1" rowspan="1">Trial staff at facility</td>
+                <td align="left" colspan="1" rowspan="1">CHW</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Control</td>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">Nothing</td>
+                <td align="left" colspan="1" rowspan="1">Non-randomised arm</td>
+                <td align="left" colspan="1" rowspan="1">Placebo &amp; ITN</td>
+                <td align="left" colspan="1" rowspan="1">Placebo &amp; home management of malaria</td>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>AQ: amodiaquine, AS: artesunate, CHW: community health worker, DHA: dihydroartemisinin, ITN: insecticide treated bednet, PQ: piperaquine, SP: sulphadoxine pyrimethamine.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <table-wrap id="pone-0016976-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0016976.t002</object-id><label>Table 2</label><caption>
+            <title>Characteristics of Non-controlled Studies.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0016976-t002-2" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.t002" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Sokhna (2008) <xref ref-type="bibr" rid="pone.0016976-Sokhna1">[24]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Cisse (2009) <xref ref-type="bibr" rid="pone.0016976-Cisse2">[25]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Bojang (2011) <xref ref-type="bibr" rid="pone.0016976-Bojang2">[26]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kweku (2009) <xref ref-type="bibr" rid="pone.0016976-Kweku2">[27]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Cisse (unpublished) <xref ref-type="bibr" rid="pone.0016976-Cisse3">[28]</xref></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Location</td>
+                <td align="left" colspan="1" rowspan="1">Niakhar, Senegal</td>
+                <td align="left" colspan="1" rowspan="1">Ndoffane, Senegal</td>
+                <td align="left" colspan="1" rowspan="1">Basse, The Gambia</td>
+                <td align="left" colspan="1" rowspan="1">Jasikan, Ghana</td>
+                <td align="left" colspan="1" rowspan="1">Tivaouane, Senegal</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Entomological inoculation rate (per person per year)</td>
+                <td align="left" colspan="1" rowspan="1">10</td>
+                <td align="left" colspan="1" rowspan="1">Not known</td>
+                <td align="left" colspan="1" rowspan="1">1–50</td>
+                <td align="left" colspan="1" rowspan="1">65</td>
+                <td align="left" colspan="1" rowspan="1">10</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Bednet usage</td>
+                <td align="left" colspan="1" rowspan="1">18% slept under intact or impregnated net</td>
+                <td align="left" colspan="1" rowspan="1">29% slept under intact or impregnated net</td>
+                <td align="left" colspan="1" rowspan="1">50%/62% slept under intact or impregnated net in Reproductive and Child Health trekking team and CHW arms, respectively</td>
+                <td align="left" colspan="1" rowspan="1">19% bednet usage, 14% ITN usage</td>
+                <td align="left" colspan="1" rowspan="1">28% bednet usage, 13% ITN usage</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">IPTc Drugs</td>
+                <td align="left" colspan="1" rowspan="1">SP+1AS monthlySP+3AS monthlyAQ+3AS monthlySP+AQ monthly</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ monthlyDHA+PQ monthlySP+PQ monthly</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ monthly</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ (May/Jun./Sept./Oct)</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ monthly</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Delivery</td>
+                <td align="left" colspan="1" rowspan="1">Study staff</td>
+                <td align="left" colspan="1" rowspan="1">CHW</td>
+                <td align="left" colspan="1" rowspan="1">CHW or Reproductive and Child Health trekking team</td>
+                <td align="left" colspan="1" rowspan="1">Health facility (routine staff with support) or CHW</td>
+                <td align="left" colspan="1" rowspan="1">CHW</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt102">
+              <label/>
+              <p>AQ: amodiaquine, AS: artesunate, CHW: community health worker, DHA: dihydroartemisinin, ITN: insecticide treated bednet, PQ: piperaquine, SP: sulphadoxine pyrimethamine.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <p>All seven controlled trials were conducted in West Africa in areas of seasonal malaria transmission, although the transmission in the two sites in Ghana was perennial with seasonal peaks (<xref ref-type="table" rid="pone-0016976-t001">Table 1</xref>). The estimated Entomological Inoculation Rate in the study areas ranged from less than 10 up to 137 infectious bites per person per year. The incidence of malaria in the placebo group during the transmission season was relatively low in Farafenni and Basse, The Gambia and Hohoe, Ghana but higher in Kati Region and Kambila, Mali, Boussé, Burkina Faso and Niakhar, Senegal. Usage of bednets was low (&lt;5–22%) in three study sites <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>, <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref> and, at these sites, nets were usually in a bad condition or un-treated. However, in Basse <xref ref-type="bibr" rid="pone.0016976-Bojang1">[19]</xref> and Farafenni <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref> usage of ITNs was relatively high (68% and 93%, respectively). In two studies conducted in Boussé <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref> and Kati Region <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, all study participants received ITNs on entry into the study and surveys found ITN usage to be over 93% and 99%, respectively.</p>
+        <p>IPTc was administered either monthly or every 2 months and the number of courses (between 2 and 6) was tailored to the duration of the malaria transmission season. In all studies, except for one (Tivaouane), the intervention was implemented for only one transmission season. A variety of anti-malarial drugs were used, either alone or in combination. Standard adult tablets were used throughout. All studies reported that study drugs had greater than 90% efficacy when used for treatment of patients (children or adults) with uncomplicated but symptomatic malaria in the study area. Two efficacy studies (Hohoe <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref> and Farafenni <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref>) utilised community health workers (CHWs) to deliver IPTc; in the other studies, IPTc was delivered in routine health facilities by dedicated study staff. In all efficacy studies, over 75% of children received at least the first dose of each IPTc round.</p>
+        <p>In the majority of the studies, two cross-sectional surveys were carried out during the intervention year; one at baseline and another at the end of the intervention period. Either passive <xref ref-type="bibr" rid="pone.0016976-Bojang1">[19]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>, <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref> or both passive and active case detection <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>, <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref> took place during the intervention period, which began at the time of administration of the first IPTc course and ended 4–6 weeks after the last IPTc course had been given. Surveillance was continued through the intervening dry season in four studies (Boussé, Hohoe, Kambila and Kati <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>, <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>) and during the subsequent malaria transmission season in five (Boussé, Hohoe, Kambila, Kati and Niakhar <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>, <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>), although data for the second year of follow-up for the Boussé and Kati Region trials were not yet available at the time of data analysis. Methods used to assess the safety of IPTc varied across studies. In all studies, physicians were available to assess any events which arose during the period of follow up. In addition, all children, or a random sample of children, were questioned or a standardised questionnaire was administered following the first or all courses of IPTc to identify any AEs. In one study (Niakhar), children were physically examined. In the Kambila study, only the incidence of SAEs was recorded.</p>
+        <p>Controlled studies were generally of high quality (<xref ref-type="table" rid="pone-0016976-t003">Table 3</xref>). Four studies were placebo controlled and double blind (Niakhar <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>; Boussé <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>; Kati Region <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref> and Farafenni <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref>). In one placebo-controlled study (Hohoe) <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref> the lead investigator was accidentally un-blinded. In another study (Kambila <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>) children in the control arm received no intervention. In both these cases there may have been potential for introduction of bias. In Basse <xref ref-type="bibr" rid="pone.0016976-Bojang1">[19]</xref>, a non-randomised cohort of children of the same age group from neighbouring villages was used as a reference group for comparisons of malaria incidence and safety. In this study, there was also potential for introduction of bias due to a higher loss to follow up in the SP+amodiaquine (AQ) arm (22%) compared to the other arms (11–12%). The reason for this difference in attrition is unclear since there was no obvious difference in the characteristics of the groups of children and the incidence of AEs in children in the SP+AQ arm was similar to that recorded in children in the other arms of the trial. Non-controlled trials were all non-blinded and so there was a risk of introduction of bias in these studies.</p>
+        <table-wrap id="pone-0016976-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0016976.t003</object-id><label>Table 3</label><caption>
+            <title>Assessment of risk of bias in studies.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0016976-t003-3" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.t003" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Study Site</td>
+                <td align="left" colspan="1" rowspan="1">Adequate sequence generation</td>
+                <td align="left" colspan="1" rowspan="1">Allocation assignment</td>
+                <td align="left" colspan="1" rowspan="1">Blinding of participants, personnel and outcome assessors</td>
+                <td align="left" colspan="1" rowspan="1">No evidence of incomplete outcome data</td>
+                <td align="left" colspan="1" rowspan="1">No evidence of selective outcome reporting</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Cisse (2006) <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Niakhar</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes (double blind)</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Kweku (2008) <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Hohoe</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">No (drug packers and principal investigator un-blinded)</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Dicko (2008) <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kambila</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">No (open label, control arm received no intervention)</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Bojang (2010) <xref ref-type="bibr" rid="pone.0016976-Bojang1">[19]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Basse</td>
+                <td align="left" colspan="1" rowspan="1">No (control arm for malaria incidence/safety comparison non randomised)</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">No (open label)</td>
+                <td align="left" colspan="1" rowspan="1">No (higher loss to follow up in SP+AQ arm, 22% vs 11–12%, no obvious explanation)</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Dicko (2011) <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kati Region</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes (double blind)</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Konaté (2011) <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Boussé</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes (double blind)</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Sesay (2011) <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Farafenni</td>
+                <td align="left" colspan="5" rowspan="1">Not assessed (information not available)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Sokhna (2008) <xref ref-type="bibr" rid="pone.0016976-Sokhna1">[24]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Niakhar</td>
+                <td align="left" colspan="2" rowspan="1">No (villages chosen for logistical convenience, systematic allocation of individual children)</td>
+                <td align="left" colspan="1" rowspan="1">No (open label)</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Cisse (2009) <xref ref-type="bibr" rid="pone.0016976-Cisse2">[25]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Ndoffane</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">No (open label)</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Bojang (2011) <xref ref-type="bibr" rid="pone.0016976-Bojang2">[26]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Basse</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">No (open label)</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Kweku (2009) <xref ref-type="bibr" rid="pone.0016976-Kweku2">[27]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Jasikan</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">No (open label)</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+                <td align="left" colspan="1" rowspan="1">Yes</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Cisse <xref ref-type="bibr" rid="pone.0016976-Cisse3">[28]</xref> (unpublished)</td>
+                <td align="left" colspan="1" rowspan="1">Tivaouane</td>
+                <td align="left" colspan="5" rowspan="1">Not assessed (information not available)</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt103">
+              <label/>
+              <p>AQ: amodiaquine, SP: sulphadoxine pyrimethamine.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+      </sec>
+      <sec id="s3b">
+        <title>Efficacy of IPTc</title>
+        <p>The PE of IPTc with SP monotherapy administered every 2 months against uncomplicated clinical malaria (any parasite density) was 35% (95%CI: 17–48%) in Ghana and 69% (95%CI: 54–80%) in Mali (<xref ref-type="table" rid="pone-0016976-t004">Table 4</xref>). Artesunate (AS)+AQ administered bimonthly in Ghana had the lowest PE of any drug regimen investigated (31%; 95%CI: 13–46%), but this drug regimen administered monthly had a much higher PE (75%; 95%CI: 65–82%). SP+AS had a PE of 83% (95%CI: 79–86%) in Senegal. The PE of SP+AQ given monthly was consistently high, ranging from 71% (95%CI: 68–74%) in Burkina Faso, to 93% (95%CI: 79–97%) in The Gambia. The PE of SP+piperaquine (PQ) in The Gambia was 93% (95%CI: 80–97%). The PE of SP+AQ administered monthly in the Kati and Boussé region trials, in which ITNs were also given to each child at the onset of the trial, was 83% (95%CI: 80–86%) and 71% (95%CI: 68–74%), respectively. The very low number of malaria episodes in Farafenni precluded any meaningful interpretation of the effect of IPTc (SP+AQ) on clinical malaria in this study (PE: 49%, 95%CI: −459–95%). The rate difference was highest in Kambila, Mali at 4544 episodes per 1000 children due to the high incidence of clinical malaria in the control arm in this study. The rate difference was also high in Niakhar, Boussé and Kati Region at 3681, 2671 and 1996 clinical malaria episodes per 1000 PYAR, respectively. The rate difference was lowest in Farafenni at 6 episodes per 1000 PYAR.</p>
+        <table-wrap id="pone-0016976-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0016976.t004</object-id><label>Table 4</label><caption>
+            <title>Effect of IPTc on clinical malaria during the intervention period.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0016976-t004-4" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.t004" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Study Site</td>
+                <td align="left" colspan="1" rowspan="1">Drug Regimen</td>
+                <td align="left" colspan="1" rowspan="1">No. of children</td>
+                <td align="left" colspan="4" rowspan="1">Definition of clinical malaria (fever or history of fever plus any level of parasitaemia)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">No. of episodes<xref ref-type="table-fn" rid="nt104">A</xref></td>
+                <td align="left" colspan="1" rowspan="1">Incidence Rate per 1000 PYAR</td>
+                <td align="left" colspan="1" rowspan="1">Rate Difference per 1000 PYAR</td>
+                <td align="left" colspan="1" rowspan="1">PE (95% CI)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Cisse (2006) <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Niakhar</td>
+                <td align="left" colspan="1" rowspan="1">SP+AS</td>
+                <td align="left" colspan="1" rowspan="1">542</td>
+                <td align="left" colspan="1" rowspan="1">96</td>
+                <td align="left" colspan="1" rowspan="1">758</td>
+                <td align="left" colspan="1" rowspan="1">3681</td>
+                <td align="left" colspan="1" rowspan="1">83 (79–86)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">546</td>
+                <td align="left" colspan="1" rowspan="1">438</td>
+                <td align="left" colspan="1" rowspan="1">4439</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Kweku (2008) <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Hohoe</td>
+                <td align="left" colspan="1" rowspan="1">SP bimonthly</td>
+                <td align="left" colspan="1" rowspan="1">613</td>
+                <td align="left" colspan="1" rowspan="1">112</td>
+                <td align="left" colspan="1" rowspan="1">403</td>
+                <td align="left" colspan="1" rowspan="1">214</td>
+                <td align="left" colspan="1" rowspan="1">35 (17–48)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">AS+AQ bimonthly</td>
+                <td align="left" colspan="1" rowspan="1">562</td>
+                <td align="left" colspan="1" rowspan="1">109</td>
+                <td align="left" colspan="1" rowspan="1">425</td>
+                <td align="left" colspan="1" rowspan="1">192</td>
+                <td align="left" colspan="1" rowspan="1">31 (13–46)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">AS+AQ monthly</td>
+                <td align="left" colspan="1" rowspan="1">626</td>
+                <td align="left" colspan="1" rowspan="1">44</td>
+                <td align="left" colspan="1" rowspan="1">153</td>
+                <td align="left" colspan="1" rowspan="1">464</td>
+                <td align="left" colspan="1" rowspan="1">75 (65–82)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">650</td>
+                <td align="left" colspan="1" rowspan="1">183</td>
+                <td align="left" colspan="1" rowspan="1">617</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Dicko (2008) <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kambila</td>
+                <td align="left" colspan="1" rowspan="1">SP bimonthly</td>
+                <td align="left" colspan="1" rowspan="1">58</td>
+                <td align="left" colspan="1" rowspan="1">30</td>
+                <td align="left" colspan="1" rowspan="1">2000</td>
+                <td align="left" colspan="1" rowspan="1">4544</td>
+                <td align="left" colspan="1" rowspan="1">69 (54–80)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Control</td>
+                <td align="left" colspan="1" rowspan="1">59</td>
+                <td align="left" colspan="1" rowspan="1">86</td>
+                <td align="left" colspan="1" rowspan="1">6544</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Bojang (2010) <xref ref-type="bibr" rid="pone.0016976-Bojang1">[19]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Basse</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">336</td>
+                <td align="left" colspan="1" rowspan="1">4</td>
+                <td align="left" colspan="1" rowspan="1">58</td>
+                <td align="left" colspan="1" rowspan="1">733</td>
+                <td align="left" colspan="1" rowspan="1">93 (79–97)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">SP+PQ</td>
+                <td align="left" colspan="1" rowspan="1">336</td>
+                <td align="left" colspan="1" rowspan="1">4</td>
+                <td align="left" colspan="1" rowspan="1">57</td>
+                <td align="left" colspan="1" rowspan="1">734</td>
+                <td align="left" colspan="1" rowspan="1">93 (80–97)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">DHA+PQ</td>
+                <td align="left" colspan="1" rowspan="1">336</td>
+                <td align="left" colspan="1" rowspan="1">7</td>
+                <td align="left" colspan="1" rowspan="1">103</td>
+                <td align="left" colspan="1" rowspan="1">688</td>
+                <td align="left" colspan="1" rowspan="1">87 (71–94)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Control</td>
+                <td align="left" colspan="1" rowspan="1">286</td>
+                <td align="left" colspan="1" rowspan="1">41</td>
+                <td align="left" colspan="1" rowspan="1">791</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Dicko (2011) <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kati Region</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">1509</td>
+                <td align="left" colspan="1" rowspan="1">149</td>
+                <td align="left" colspan="1" rowspan="1">411</td>
+                <td align="left" colspan="1" rowspan="1">1996</td>
+                <td align="left" colspan="1" rowspan="1">83 (80–86)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">1508</td>
+                <td align="left" colspan="1" rowspan="1">832</td>
+                <td align="left" colspan="1" rowspan="1">2407</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Konaté (2011) <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Boussé</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">1509</td>
+                <td align="left" colspan="1" rowspan="1">416</td>
+                <td align="left" colspan="1" rowspan="1">1114</td>
+                <td align="left" colspan="1" rowspan="1">2671</td>
+                <td align="left" colspan="1" rowspan="1">71 (67–74)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">1505</td>
+                <td align="left" colspan="1" rowspan="1">1232</td>
+                <td align="left" colspan="1" rowspan="1">3785</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Sesay (2011) <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Farafenni</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">639</td>
+                <td align="left" colspan="1" rowspan="1">1</td>
+                <td align="left" colspan="1" rowspan="1">5</td>
+                <td align="left" colspan="1" rowspan="1">6</td>
+                <td align="left" colspan="1" rowspan="1">49 (−459–95)</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">638</td>
+                <td align="left" colspan="1" rowspan="1">2</td>
+                <td align="left" colspan="1" rowspan="1">11</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt104">
+              <label>A</label>
+              <p>Total number of clinical malaria episodes, AQ: amodiaquine, AS: artesunate, CI: confidence interval, DHA: dihydroartemisinin, PE: protective efficacy, PQ: piperaquine, PYAR: person years at risk, SP: sulphadoxine pyrimethamine.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <p>Random effect meta-analysis of all studies gave a summary rate ratio of 0.25 (95%CI: 0.17–0.36) (<xref ref-type="fig" rid="pone-0016976-g002">Figure 2</xref>) and restricting the meta-analysis to studies in which IPTc was delivered monthly gave a summary rate ratio of 0.18 (95%CI: 0.13–0.25, p&lt;0.001) which is equivalent to a summary PE of 82% (95%CI: 75–87%). Use of fixed effect meta-analysis or a more specific malaria case definition which included a locally defined parasite threshold did not alter the results appreciably (data not shown).</p>
+        <fig id="pone-0016976-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0016976.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Effect of IPTc on clinical malaria (any level of parasitaemia) during the intervention period.</title>
+            <p>NOTE: D+L Overall = Random effect meta-analysis, I–V Overall = Fixed effect meta-analysis. AQ: amodiaquine, AS: artesunate, bi: bimonthly administration, CI: confidence interval, DHA: dihydroartemisinin, PQ: piperaquine, SP: sulphadoxine pyrimethamine.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.g002" xlink:type="simple"/>
+        </fig>
+        <p>Data on severe malaria were available only for two trials (Kati Region <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref> and Boussé <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>) which were conducted in parallel and designed to have sufficient power to assess this outcome when the data were pooled. There were 4 and 22 cases of severe malaria detected in intervention and placebo groups, respectively, giving a PE of 82% (95%CI: 48–94%, p = 0.002). There was also evidence of a substantial reduction in the incidence of all-cause hospital admissions in these two trials; 27 children were admitted to hospital in the IPTc group compared with 45 in the placebo group (PE: 41%, 95%CI: 5–63%, p = 0.03).</p>
+        <p>Pooling of data across twelve studies <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>, <xref ref-type="bibr" rid="pone.0016976-Bojang1">[19]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>, <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>, <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref>, <xref ref-type="bibr" rid="pone.0016976-Sokhna1">[24]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse2">[25]</xref>, <xref ref-type="bibr" rid="pone.0016976-Bojang2">[26]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku2">[27]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse3">[28]</xref> indicated that there were 47 deaths (all-cause) among 35,350 children in the IPTc arms compared to 16 deaths per 5,186 children in the control arms during the intervention period. This gives a PE of IPTc against all-cause mortality of 57% (95%CI: 24–76%, p = 0.003) during the intervention period. Pooling of mortality data across eight studies <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>, <xref ref-type="bibr" rid="pone.0016976-Bojang1">[19]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>, <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>, <xref ref-type="bibr" rid="pone.0016976-Bojang2">[26]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku2">[27]</xref> which reported person time at risk, showed that children receiving IPTc had 0.51 times the rate of all-cause mortality compared to children in control arms during the intervention period (95%CI 0.28–0.95, p = 0.03).</p>
+        <p>In the trials conducted in Kati Region and Boussé <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>, children who received IPTc with SP+AQ had a significantly lower prevalence of anaemia and higher mean Hb concentration at the end of the intervention period compared to children who received placebo (<xref ref-type="table" rid="pone-0016976-t005">Table 5</xref>). In contrast to these findings, no significant difference in mean Hb/Hct concentration was observed at the end of the intervention period in the three other studies which assessed this endpoint <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>, <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref>. Meta-analysis of the prevalence of anaemia in five studies showed no overall positive effect of IPTc (Risk ratio: 0.84, 95%CI: 0.59–1.21, p = 0.36) <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>, <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>.</p>
+        <table-wrap id="pone-0016976-t005" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0016976.t005</object-id><label>Table 5</label><caption>
+            <title>Effect of IPTc on mean haemoglobin/haematocrit concentrations in intervention and control arms at the end of the intervention period.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0016976-t005-5" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.t005" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Study Site</td>
+                <td align="left" colspan="1" rowspan="1">Drug Regimen</td>
+                <td align="left" colspan="1" rowspan="1">No. children</td>
+                <td align="left" colspan="1" rowspan="1">Mean Hb (g/dL)/Hct (%) concentration [95% CI]</td>
+                <td align="left" colspan="1" rowspan="1">p-value (z-test)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Kweku (2008) <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Hohoe</td>
+                <td align="left" colspan="1" rowspan="1">SP bimonthly</td>
+                <td align="left" colspan="1" rowspan="1">550</td>
+                <td align="left" colspan="1" rowspan="1">9.2 (6.6–11.8)</td>
+                <td align="left" colspan="1" rowspan="1">0.20</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">AS+AQ bimonthly</td>
+                <td align="left" colspan="1" rowspan="1">464</td>
+                <td align="left" colspan="1" rowspan="1">9.2 (6.6–11.8)</td>
+                <td align="left" colspan="1" rowspan="1">0.23</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">AS+AQ monthly</td>
+                <td align="left" colspan="1" rowspan="1">559</td>
+                <td align="left" colspan="1" rowspan="1">9.4 (7.0–11.8)</td>
+                <td align="left" colspan="1" rowspan="1">0.18</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">589</td>
+                <td align="left" colspan="1" rowspan="1">9.3 (6.7–11.9)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Dicko (2008) <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kambila</td>
+                <td align="left" colspan="1" rowspan="1">SP bimonthly</td>
+                <td align="left" colspan="1" rowspan="1">55</td>
+                <td align="left" colspan="1" rowspan="1">32.1 (31.2–33.0)</td>
+                <td align="left" colspan="1" rowspan="1">0.80</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Control</td>
+                <td align="left" colspan="1" rowspan="1">54</td>
+                <td align="left" colspan="1" rowspan="1">31.9 (31.0–32.8)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Dicko (2011) <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kati Region</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">1422</td>
+                <td align="left" colspan="1" rowspan="1">11.0 (10.7–11.2)</td>
+                <td align="left" colspan="1" rowspan="1">0.06</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">1433</td>
+                <td align="left" colspan="1" rowspan="1">10.7 (10.5–10.9)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Konaté (2011) <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Boussé</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">1444</td>
+                <td align="left" colspan="1" rowspan="1">11.0 (10.9–11.1)</td>
+                <td align="left" colspan="1" rowspan="1">&lt;0.001</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">1441</td>
+                <td align="left" colspan="1" rowspan="1">10.4 (10.3–10.4)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Sesay (2011) <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Farafenni</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">513</td>
+                <td align="left" colspan="1" rowspan="1">10.2 (7.1–13.3)</td>
+                <td align="left" colspan="1" rowspan="1">0.79</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">533</td>
+                <td align="left" colspan="1" rowspan="1">10.3 (7.4–13.2)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt105">
+              <label/>
+              <p>AQ: amodiaquine, AS: artesunate, CI: confidence interval, DHA: dihydroartemisinin, Hb: haemoglobin, Hct: haematocrit, PQ: piperaquine, SP: sulphadoxine pyrimethamine.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <p>In three studies <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>, there was a highly significant reduction in the prevalence of parasitaemia in the IPTc arm at the end of the intervention period (<xref ref-type="table" rid="pone-0016976-t006">Table 6</xref>). In an additional study <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>, there was evidence of a lower prevalence of parasitaemia in the IPTc arm compared to the control but the sample sizes were relatively small. Data from Hohoe <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref> indicated that bimonthly administered IPTc was less effective at reducing parasitaemia at the end of the intervention period compared to monthly administered IPTc. In one study conducted in Farafenni, The Gambia <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref> the prevalence of parasitaemia was very low and was similar among IPTc and control children at both the pre- and post-intervention surveys. Meta-analysis of the prevalence of parasitaemia in six studies which assessed this endpoint showed a positive effect of IPTc (Risk ratio: 0.47, 95%CI: 0.30–0.75, p = 0.002) <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>, <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>, <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>, <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>, <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref>.</p>
+        <table-wrap id="pone-0016976-t006" position="float"><object-id pub-id-type="doi">10.1371/journal.pone.0016976.t006</object-id><label>Table 6</label><caption>
+            <title>Effect of IPTc on prevalence of parasitaemia, <italic>dhps</italic> and <italic>dhfr</italic> resistance markers measured at cross sectional surveys during the intervention year.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pone-0016976-t006-6" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.t006" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Study</td>
+                <td align="left" colspan="1" rowspan="1">Arm</td>
+                <td align="left" colspan="1" rowspan="1">Children with asexual Parasitaemia<xref ref-type="table-fn" rid="nt106">A</xref> % (N)</td>
+                <td align="left" colspan="1" rowspan="1">p-value<xref ref-type="table-fn" rid="nt107">B</xref></td>
+                <td align="left" colspan="4" rowspan="1">Parasite carriage of resistance markers</td>
+                <td align="left" colspan="2" rowspan="1">Estimated minimum prevalence of resistant parasitaemia amongst children</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"><italic>dhfr</italic> triple mutation % (N)</td>
+                <td align="left" colspan="1" rowspan="1">p-value<xref ref-type="table-fn" rid="nt107">B</xref></td>
+                <td align="left" colspan="1" rowspan="1"><italic>dhps</italic> 437 mutation % (N)</td>
+                <td align="left" colspan="1" rowspan="1">p-value<xref ref-type="table-fn" rid="nt107">B</xref></td>
+                <td align="left" colspan="1" rowspan="1"><italic>dhfr triple</italic> mutation %</td>
+                <td align="left" colspan="1" rowspan="1"><italic>dhps</italic> 437 mutation %</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="11" rowspan="1">Pre-intervention</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Cisse (2006) <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Niakhar</td>
+                <td align="left" colspan="1" rowspan="1">SP+AS</td>
+                <td align="left" colspan="1" rowspan="1">37 (516)</td>
+                <td align="left" colspan="1" rowspan="1">0.77</td>
+                <td align="left" colspan="1" rowspan="1">51 (71)</td>
+                <td align="left" colspan="1" rowspan="1">0.06</td>
+                <td align="left" colspan="1" rowspan="1">28 (67)</td>
+                <td align="left" colspan="1" rowspan="1">0.92</td>
+                <td align="left" colspan="1" rowspan="1">19</td>
+                <td align="left" colspan="1" rowspan="1">10</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">36 (512)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">67 (69)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">29 (72)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">24</td>
+                <td align="left" colspan="1" rowspan="1">11</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Dicko (2008) <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kambila</td>
+                <td align="left" colspan="1" rowspan="1">SP bimonthly</td>
+                <td align="left" colspan="1" rowspan="1">36 (53)</td>
+                <td align="left" colspan="1" rowspan="1">0.14</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Control</td>
+                <td align="left" colspan="1" rowspan="1">23 (53)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Dicko (2011) <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kati Region</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">59 (41)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">38 (41)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Konaté (2011) <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Boussé</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">33 (132)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Sesay (2011) <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Farafenni</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">0.5 (639)</td>
+                <td align="left" colspan="1" rowspan="1">0.99</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">0.5 (638)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="11" rowspan="1">Post-intervention</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Cisse (2006) <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Niakhar</td>
+                <td align="left" colspan="1" rowspan="1">SP+AS</td>
+                <td align="left" colspan="1" rowspan="1">14 (440)</td>
+                <td align="left" colspan="1" rowspan="1">&lt;0.001</td>
+                <td align="left" colspan="1" rowspan="1">95 (41)</td>
+                <td align="left" colspan="1" rowspan="1">0.01</td>
+                <td align="left" colspan="1" rowspan="1">86 (28)</td>
+                <td align="left" colspan="1" rowspan="1">&lt;0.001</td>
+                <td align="left" colspan="1" rowspan="1">13</td>
+                <td align="left" colspan="1" rowspan="1">12</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">37 (446)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">75 (122)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">44 (89)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">28</td>
+                <td align="left" colspan="1" rowspan="1">16</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Kweku (2008) <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Hohoe</td>
+                <td align="left" colspan="1" rowspan="1">SP bimonthly</td>
+                <td align="left" colspan="1" rowspan="1">16 (550)</td>
+                <td align="left" colspan="1" rowspan="1">0.14</td>
+                <td align="left" colspan="1" rowspan="1">90 (51)</td>
+                <td align="left" colspan="1" rowspan="1">0.41</td>
+                <td align="left" colspan="1" rowspan="1">63 (54)</td>
+                <td align="left" colspan="1" rowspan="1">0.33</td>
+                <td align="left" colspan="1" rowspan="1">14</td>
+                <td align="left" colspan="1" rowspan="1">10</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">AS+AQ bimonthly</td>
+                <td align="left" colspan="1" rowspan="1">22 (464)</td>
+                <td align="left" colspan="1" rowspan="1">0.29</td>
+                <td align="left" colspan="1" rowspan="1">84 (55)</td>
+                <td align="left" colspan="1" rowspan="1">0.86</td>
+                <td align="left" colspan="1" rowspan="1">63 (51)</td>
+                <td align="left" colspan="1" rowspan="1">0.35</td>
+                <td align="left" colspan="1" rowspan="1">18</td>
+                <td align="left" colspan="1" rowspan="1">14</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">AS+AQ monthly</td>
+                <td align="left" colspan="1" rowspan="1">5 (559)</td>
+                <td align="left" colspan="1" rowspan="1">&lt;0.001</td>
+                <td align="left" colspan="1" rowspan="1">92 (13)</td>
+                <td align="left" colspan="1" rowspan="1">0.49</td>
+                <td align="left" colspan="1" rowspan="1">45 (11)</td>
+                <td align="left" colspan="1" rowspan="1">0.62</td>
+                <td align="left" colspan="1" rowspan="1">4</td>
+                <td align="left" colspan="1" rowspan="1">2</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">20 (589)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">85 (53)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">54 (54)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">17</td>
+                <td align="left" colspan="1" rowspan="1">11</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Dicko (2008) <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kambila</td>
+                <td align="left" colspan="1" rowspan="1">SP bimonthly</td>
+                <td align="left" colspan="1" rowspan="1">4 (55)</td>
+                <td align="left" colspan="1" rowspan="1">0.04</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Control</td>
+                <td align="left" colspan="1" rowspan="1">15 (54)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Dicko (2011) <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Kati Region</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">7 (1405)</td>
+                <td align="left" colspan="1" rowspan="1">&lt;0.001</td>
+                <td align="left" colspan="1" rowspan="1">49 (83)</td>
+                <td align="left" colspan="1" rowspan="1">0.02</td>
+                <td align="left" colspan="1" rowspan="1">68 (83)</td>
+                <td align="left" colspan="1" rowspan="1">&lt;0.001</td>
+                <td align="left" colspan="1" rowspan="1">5</td>
+                <td align="left" colspan="1" rowspan="1">6</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">13 (1423)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">34 (160)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">44 (165)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">6</td>
+                <td align="left" colspan="1" rowspan="1">8</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Konaté (2011) <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Boussé</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">11 (1436)</td>
+                <td align="left" colspan="1" rowspan="1">&lt;0.001</td>
+                <td align="left" colspan="1" rowspan="1">50 (114)</td>
+                <td align="left" colspan="1" rowspan="1">0.61</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">6</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">42 (1430)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">53 (122)</td>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">22</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Sesay (2011) <xref ref-type="bibr" rid="pone.0016976-Sesay1">[23]</xref></td>
+                <td align="left" colspan="1" rowspan="1">Farafenni</td>
+                <td align="left" colspan="1" rowspan="1">SP+AQ</td>
+                <td align="left" colspan="1" rowspan="1">0.6 (513)</td>
+                <td align="left" colspan="1" rowspan="1">0.52</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1"/>
+                <td align="left" colspan="1" rowspan="1">Placebo</td>
+                <td align="left" colspan="1" rowspan="1">0.9 (533)</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+                <td align="left" colspan="1" rowspan="1">-</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt106">
+              <label>A</label>
+              <p>Any density parasitaemia,</p>
+            </fn>
+            <fn id="nt107">
+              <label>B</label>
+              <p>Chi<sup>2</sup> test, AQ: amodiaquine, AS: artesunate, DHA: dihydroartemisinin, N = total number of samples analysed, PQ: piperaquine, SP: sulphadoxine pyrimethamine.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+      </sec>
+      <sec id="s3c">
+        <title>Safety of IPTc</title>
+        <p>No drug-related SAEs were observed during the intervention period in which a total of 100,767 IPTc courses were delivered to 35,350 children. No cases of Stevens Johnson syndrome were seen in the 32,757 children who received SP or SP-containing regimens, and no cases of serious blood dyscrasias or liver damage in the 31,327 children who received AQ-containing combinations.</p>
+        <p>The prevalence of AEs varied greatly between individual studies, especially for vomiting which was the most commonly reported AE. Thus, care is needed in the interpretation of the results of comparisons between treatment regimens when combined data from several trials are used. Nevertheless, some general observations can be made (<xref ref-type="supplementary-material" rid="pone.0016976.s004">Table S4</xref>). Vomiting was reported most frequently following administration of SP+PQ, DHA+PQ and SP+AQ. Fever, headache and pruritus were also reported more frequently following administration of these regimens. Administration of SP+PQ and DHA+PQ was associated with increased reports of minor skin rash and coughing compared to children in control arms. AS+AQ was associated with a low incidence of AEs, with only reports of drowsiness and abdominal pain being significantly raised compared to control children. SP+AS was well tolerated and was associated with the lowest incidence of AEs overall.</p>
+        <p>In studies in which alternative drug regimens were compared, vomiting was reported more frequently following administration of AQ- containing regimens than other regimens. For example in Ndoffane, Senegal, vomiting was reported more frequently following administration of SP+AQ than DHA+PQ or SP+PQ <xref ref-type="bibr" rid="pone.0016976-Cisse2">[25]</xref>.</p>
+        <p>A concern of any form of community wide drug administration is that it will encourage the emergence of drug resistant parasites. In the study conducted in Niakhar, the prevalence of the <italic>dhfr</italic> triple mutation and the <italic>dhps</italic> mutation increased substantially in both IPTc and placebo arms during the intervention period (<xref ref-type="table" rid="pone-0016976-t006">Table 6</xref>) <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>. At the post-intervention survey, the proportion of parasitaemic children carrying parasites with the <italic>dhfr</italic> triple mutation and the <italic>dhps</italic> mutation was higher in children in the SP+AS arm than in the placebo arm (<italic>dhfr</italic>: SP+AS 95%, placebo 75%, p = 0.01 and <italic>dhps</italic>: SP+AS 86%, placebo 44%, p&lt;0.001). However, as the prevalence of parasitaemia in the children who received IPTc was overall much lower than that in children in the placebo group, the estimated prevalence of drug resistant parasitaemia among study children was lower in the SP+AS arm than in the placebo arm (<italic>dhfr</italic>: SP+AS 13%, placebo 28% and <italic>dhps</italic>: SP+AS 12%, placebo 16%). Data on the prevalence of drug resistance markers in the second year of follow-up was only available for the study conducted in Niakhar. In this study, the difference in the prevalence of markers of resistance to SP was lost at the end of the second year of follow-up (<italic>dhfr</italic>: SP+AS 88%, placebo 86%, p = 0.69 and <italic>dhps</italic>: SP+AS 64%, placebo 77%, p = 0.10). In the Kati Region, the prevalence of the <italic>dhfr</italic> triple and <italic>dhps</italic> mutations was higher in the IPTc arm compared to the placebo arm at the post intervention survey <xref ref-type="bibr" rid="pone.0016976-Dicko1">[12]</xref>. However, the estimated prevalence of drug resistant parasitaemia among study children was comparable in the SP+AQ arm and placebo arms (<italic>dhfr</italic> triple mutation SP+AQ 5%, placebo 6% and <italic>dhps</italic> 437 mutation SP+AS 6%, placebo 8%). In a further two studies (Boussé and Hohoe), the proportion of parasites carrying SP resistance markers was similar in IPTc and placebo arms at the post-intervention survey <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>.</p>
+        <p>A further safety concern for IPTc is that it will impair the development of natural immunity making children more susceptible to malaria after treatment is stopped. At the time of this review, data on clinical outcomes in the year after administration of IPTc were available for only three studies <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>, <xref ref-type="bibr" rid="pone.0016976-Dicko2">[21]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>. None of these studies demonstrated a statistically significant increase in the incidence of clinical malaria during the transmission season following the intervention. Random effect meta-analysis gave a summary effect measure of 1.11 (95% CI 0.99–1.24, p = 0.07) (<xref ref-type="fig" rid="pone-0016976-g003">Figure 3</xref>). A similar result was obtained when a more specific malaria case definition was used (data not shown). At the end of the malaria transmission season in year 2, the prevalence of anaemia in children who had received SP+AS in Niakhar was higher than in children who had received placebo in year 1 (SP+AS 10%, placebo 6%, p = 0.02) <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>. However, the mean Hb concentration (g/dL, 95%CI) was similar in SP+AS and placebo arms (SP+AS: 9.4 (9.3–9.6), placebo: 9.6 (9.4–9.6), p = 0.24). The prevalence of anaemia was similar in IPTc and placebo arms of the Hohoe trial at the end of the transmission season in the post-intervention year (SP bimonthly 12%, AS+AQ bimonthly 15%, AS+AQ monthly 10%, placebo 12%) <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>. The prevalence of parasitaemia at the end of the transmission season in the post-intervention year was similar among children who received IPTc or placebo in the previous year in the Niakhar and Hohoe studies (Niakhar: SP+AS 28%, placebo 30%, Hohoe: SP bimonthly 39%, AS+AQ bimonthly 40%, AS+AQ monthly 42%, placebo 40%) <xref ref-type="bibr" rid="pone.0016976-Cisse1">[20]</xref>, <xref ref-type="bibr" rid="pone.0016976-Kweku1">[22]</xref>.</p>
+        <fig id="pone-0016976-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pone.0016976.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Effect of IPTc on clinical malaria (any level of parasitaemia) during the subsequent transmission season (following IPTc administration).</title>
+            <p>NOTE: D+L Overall = Random effect meta-analysis, I–V Overall = Fixed effect meta-analysis. AQ: amodiaquine, AS: artesunate, bi: bimonthly administration, CI: confidence interval, SP: sulphadoxine pyrimethamine.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.g003" xlink:type="simple"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>As with any retrospective study of this kind, this review has a number of limitations. It is possible that the literature search may have missed some studies. However, we consider that this is unlikely as the group of scientists involved in the study of IPTc is small and personal enquiries from those known to be active in the field, as well as formal literature searches, were undertaken. Heterogeneity in study design and findings makes some comparisons, for example those on the occurrence of AEs, difficult. Since the reviewers did not have access to individual patient data, the effect of study/patient characteristics, such as baseline parasitaemia, age or ITN usage, on clinical outcomes could not be assessed. Study quality was variable but the small number of IPTc studies identified limited the extent to which sensitivity analysis could be conducted. However, an attempt was made to increase the robustness of the meta-analysis by assessing the effect on PE of using different malaria definitions and using both fixed and random effect meta-analysis. The meta-analysis focused on total malaria episodes, the important public health outcome, rather than first episodes so it may have overestimated PE for this endpoint. Despite these limitations we believe that this review provides a valid overview of current knowledge on the potential of IPTc as a malaria control tool.</p>
+      <p>All of the controlled studies identified demonstrated a protective effect of IPTc against clinical episodes of malaria during the malaria transmission season ranging from 31% to 93%; the overall PE of IPTc administered monthly was 82%. Analysis of the efficacy trials allows some conclusions to be made about the efficacy of individual drugs and dosing regimens in preventing episodes of clinical malaria. The highest PE was observed using two drugs with a long half-life in combination, SP+AQ or SP+PQ. Long acting drugs used alone or in combination with short acting drugs, such as AS or DHA showed lower PEs. No advantage was seen from the use of artemisinin combination therapies, which should probably be reserved for treatment of clinical malaria when the rapid action of artemisinins is of particular benefit. As would be expected, bimonthly administration of SP or AS+AQ demonstrated a lower PE than monthly IPTc administration. The results add weight to the growing body of evidence which suggests that IPT works largely by providing a period of post-treatment prophylaxis and that the length of this period of protection is determined by the pharmacodynamics of the drugs used <xref ref-type="bibr" rid="pone.0016976-Cairns1">[29]</xref>.</p>
+      <p>None of the trials was individually powered to demonstrate an effect on severe malaria or all-cause mortality. However, pooled data from Kati Region and Boussé showed a PE of 82% against severe malaria and data from twelve studies suggests that administration of IPTc reduced overall mortality in children aged 3–59 months by more than 50% during the intervention period. These results are supported by a study in The Gambia, which deployed fortnightly chemoprophylaxis with pyrimethamine/dapsone during the malaria transmission season, and demonstrated an approximately 40% reduction in overall mortality in children in the same age range <xref ref-type="bibr" rid="pone.0016976-Greenwood2">[30]</xref>. The PE of IPTc against all-cause mortality over the whole year will have been lower than the PE during the high transmission season, but in countries of the Sahel and sub-Sahel a high proportion of deaths occur during the high transmission season <xref ref-type="bibr" rid="pone.0016976-Etard1">[4]</xref>, <xref ref-type="bibr" rid="pone.0016976-Jaffar1">[5]</xref>, <xref ref-type="bibr" rid="pone.0016976-Ramroth1">[31]</xref>, <xref ref-type="bibr" rid="pone.0016976-Becher1">[32]</xref>. The studies reviewed here may have underestimated the protective effect of IPTc against all-cause mortality as a result of close monitoring of all study children, including those in control arms. In contrast, effectiveness of IPTc against all-cause mortality may be lower than that observed in controlled studies if IPTc were to be deployed routinely in a public health programme. The apparent impact of IPTc on mortality revealed by this review is impressive. However, these findings should be treated with caution as the number of deaths was small. A large, community randomised trial of IPTc currently under way in Senegal will provide further information on the impact of IPTc on all-cause mortality, although the overall level of malaria transmission has fallen substantially in the study area since the trial was planned and this may reduce the statistical power of this study (B. Cisse, personal communication).</p>
+      <p>Two of the five studies which assessed the effect of IPTc on the prevalence of anaemia and mean Hb levels demonstrated a beneficial effect. The lack of effect in other studies may have been due in part to the fact that children were kept under close observation, so episodes of malaria or anaemia were detected and treated promptly during the course of the intervention period, and partly due to the varying importance of malaria as a contributory factor to the pathogenesis of anaemia in different epidemiological settings <xref ref-type="bibr" rid="pone.0016976-Konat1">[13]</xref>.</p>
+      <p>Three aspects of the safety of IPTc have been considered in this review – immediate toxicity, facilitation of the spread of drug resistance and impairment of naturally acquired immunity.</p>
+      <p>No SAEs which could be attributed to administration of drugs for IPTc were recorded. In particular, no cases of Stevens Johnson syndrome were observed in the 32,757 children who received SP or SP-containing regimens. These observations confirm reports of the safety of SP when used for IPT in infants <xref ref-type="bibr" rid="pone.0016976-Aponte1">[3]</xref>. Concerns about the safety of AQ followed the occurrence of serious haematological and hepatic side effects in travellers when the drug was used for chemoprophylaxis. No cases of hepatic failure were recorded in the children included in the studies covered by this review but minor degrees of damage cannot be excluded because liver function tests were not undertaken routinely. A review of a large number of patients included in trials of AQ-containing regimens used for treatment of clinical episodes of malaria in both adults and children concluded that the drug is safe when used in this context <xref ref-type="bibr" rid="pone.0016976-Olliaro1">[33]</xref>.</p>
+      <p>The most commonly recorded AEs were fever and vomiting, which were reported most often following administration of SP+PQ, DHA+PQ and SP+AQ. Vomiting may have been misreported when children spat out AQ or PQ tablets in reaction to their bitter taste. In the study conducted in Jasikan, Ghana <xref ref-type="bibr" rid="pone.0016976-Kweku2">[27]</xref>, there was a reduction in the incidence of AEs at each round of drug administration. In Jasikan, vomiting of the study drugs was successfully mitigated by coaching caretakers to feed the children sugary food at the time of drug administration. It may also be possible to reduce the incidence of vomiting caused by AQ through better dosing and production of tablets with a drug content optimised for use in IPTc. Analysis of data from two IPTc studies conducted in Senegal showed that the incidence of vomiting was most marked in children who were overdosed, because of the dose stratification used, and that it should be possible to reduce the occurrence of vomiting by adjusting the dose <xref ref-type="bibr" rid="pone.0016976-Cairns2">[34]</xref>. It will be important to minimise the incidence of even minor AEs as these could reduce uptake and compliance with IPTc.</p>
+      <p>Extensive use of anti-malarials for prevention adds to drug pressure and carries some risk of facilitating the emergence and spread of drug resistant parasites. Drug pressure will be higher when a drug is used for IPTc, covering up to 20% of the population, than when used for IPT in infants or pregnant women (2–5% of the population). Some evidence to support the view that IPTc with SP-containing regimens will select resistant parasites was obtained from the study in Niakhar, Senegal where the proportion of parasites carrying markers of resistance to SP was higher at the end of the malaria transmission season in children who had received IPTc than in children who had received placebo. However, although the proportion was higher, the prevalence of resistant parasitaemia in children who had received IPTc was lower than that in control children because of the effect of IPTc in reducing the overall prevalence of parasitaemia in these children. Which of these variables is most relevant to the spread of drug resistance is uncertain. It was reassuring that by the following year the difference between groups had been lost, suggesting that the parasites carrying resistance markers were at a biological disadvantage in the absence of drug pressure. Nevertheless, if IPTc is sustained for a period of many years it will exert significant drug pressure on the parasite population; use of a combination of drugs rather than a monotherapy should help to mitigate this risk and use of the same drugs for both first-line treatment and IPTc should be avoided whenever possible.</p>
+      <p>As for any other successful malaria control measure, an effective IPTc regimen will reduce exposure to malaria parasites and thus has the potential to impair the development of naturally acquired immunity. Meta-analysis indicated a small increase in the incidence of clinical malaria episodes during the malaria transmission season in the year following IPTc administration among children who received IPTc compared to control children. In Niakhar, a small increase in the prevalence of anaemia was observed in children who had received IPTc in the previous year but no significant effect on mean Hb concentration was observed so this may have been a chance finding. Unpublished results from Kati Region, Mali and Boussé, Burkina Faso also indicate a slight rebound effect on clinical malaria among children who received IPTc (D. Diallo, personal communication). The 12 month incidence of clinical malaria in the placebo arms of the studies conducted in Kati Region and Boussé indicates that approximately 10% of episodes occur outside the high transmission season. Taking these two factors into account, the PE of IPTc against clinical malaria defined using a parasite threshold of 5000 asexual forms of <italic>P. falciparum</italic> per µL was reduced from 82% during the high transmission season to 63% during the whole 12 month period in Mali and similarly from 70% to 49% during the whole 12 month period in Burkina Faso.</p>
+      <p>A limitation of the efficacy studies is that IPTc was only administered for only one transmission season. It is likely that if children are given IPTc each year for their first five years of life this will have a greater impact on the development of naturally acquired immunity to malaria. This was observed in The Gambia when fortnightly chemoprophylaxis during the rainy season was given each year for many years <xref ref-type="bibr" rid="pone.0016976-Greenwood3">[35]</xref>. In this Gambian study there was an increase in the incidence of clinical attacks of malaria in the year after the intervention was stopped which was most marked in children who had received chemoprophylaxis during each of the first five years of life. There was, however, no significant rebound in deaths but the number of deaths was small. IPTc may allow greater exposure to malaria parasites than chemoprophylaxis thus facilitating the development of some naturally acquired immunity but if IPTc is widely deployed surveillance for a potential rebound effect will need to be maintained.</p>
+      <p>Based on the data reviewed, IPTc offers young children a high level of protection against clinical malaria and appears to substantially reduce mortality during the malaria transmission season. Widespread deployment of IPTc will inevitably cause some drug related side effects, may enhance drug resistance and, like all effective malaria control measures, may lead to some loss of naturally acquired immunity. Balancing these benefits and risks will require careful assessment of the burden of malaria in a particular community, its seasonality and the sensitivity of the prevalent parasites to the drugs currently available for use in IPTc. Implementation of IPTc should now be considered as part of an integrated malaria control strategy in areas of seasonal malaria transmission. In considering introduction of IPTc as a malaria control policy it will also be important to assess the acceptability, feasibility, sustainability, cost and cost effectiveness of the intervention. Research that investigates some of these aspects of IPTc is underway <xref ref-type="bibr" rid="pone.0016976-Bojang2">[26]</xref>, <xref ref-type="bibr" rid="pone.0016976-Conteh1">[36]</xref> and this topic will be the subject of a further review.</p>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="pone.0016976.s001" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.s001" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>
+            <bold>Search Strategy for Pubmed and Web of Science Databases</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0016976.s002" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.s002" xlink:type="simple">
+        <label>Table S2</label>
+        <caption>
+          <p>
+            <bold>PRISMA Checklist</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0016976.s003" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.s003" xlink:type="simple">
+        <label>Table S3</label>
+        <caption>
+          <p>
+            <bold>IPT Studies Excluded From Review</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pone.0016976.s004" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pone.0016976.s004" xlink:type="simple">
+        <label>Table S4</label>
+        <caption>
+          <p>
+            <bold>Incidence of Most Common Adverse Events During the Intervention Period</bold>
+          </p>
+          <p>(DOC)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>This paper is based on a report prepared for the IPTc Taskforce whose members are Dr. Kalifa Bojang (Medical Research Council Laboratories, Banjul, The Gambia), Dr. Badara Cisse (University of Dakar, Dakar, Senegal), Dr. Lesong Conteh (Imperial College, London, UK), Dr. Diadier Diallo (Taskforce Secretary, IRSS/Centre Muraz, Burkina Faso/LSHTM, London, UK), Prof. Ogobara Doumbo (Malaria Research and Training Centre, University of Bamako, Bamako, Mali), Malang Fofana (National Malaria Control Programme, The Gambia), Prof. Oumar Gaye (Taskforce Chairman, University of Dakar, Dakar, Senegal), Dr. Bocar Kouyaté (National Malaria Research and Training Centre, Burkina Faso), Dr. Laurent Moyenga (National Malaria Control Programme, Burkina Faso), Dr. Seth Owusu-Agyei (Kintampo Health Research Centre, Kintampo, Ghana) and Dr. Klenon Traore (National Malaria Control Programme, Mali).</p>
+      <p>We are sad to acknowledge the death of Malang Fofana who passed away while this document was in preparation. Part of this analysis was presented at the MIM Pan-African Malaria Conference 2009, Nairobi, Kenya. The author kindly acknowledges the provision of unpublished clinical trial data by investigators. The author also wishes to thank Prof. Brian M Greenwood, Prof. Daniel Chandramohan and Dr. Paul Milligan for their support in the preparation of this report.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0016976-Greenwood1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Greenwood</surname><given-names>B</given-names></name></person-group>             <year>2006</year>             <article-title>Intermittent preventive treatment - a new approach to the prevention of malaria in children in areas with seasonal malaria transmission.</article-title>             <source>Trop Med Int Health</source>             <volume>11</volume>             <fpage>983</fpage>             <lpage>991</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-World1">
+        <label>2</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">World Health Organisation</collab>             <year>2010</year>             <source>WHO Policy recommendation on Intermittent Preventive Treatment during infancy with sulphadoxine-pyrimethamine (SP-IPTi) for Plasmodium falciparum malaria control in Africa</source>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Aponte1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Aponte</surname><given-names>JJ</given-names></name><name name-style="western"><surname>Schellenberg</surname><given-names>D</given-names></name><name name-style="western"><surname>Egan</surname><given-names>A</given-names></name><name name-style="western"><surname>Breckenridge</surname><given-names>A</given-names></name><name name-style="western"><surname>Carneiro</surname><given-names>I</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Efficacy and safety of intermittent preventive treatment with sulfadoxine-pyrimethamine for malaria in African infants: a pooled analysis of six randomised, placebo-controlled trials.</article-title>             <source>The Lancet</source>             <volume>374</volume>             <fpage>1533</fpage>             <lpage>1542</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Etard1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Etard</surname><given-names>JF</given-names></name><name name-style="western"><surname>Le Hesran</surname><given-names>JY</given-names></name><name name-style="western"><surname>Diallo</surname><given-names>A</given-names></name><name name-style="western"><surname>Diallo</surname><given-names>JP</given-names></name><name name-style="western"><surname>Ndiaye</surname><given-names>JL</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>Childhood mortality and probable causes of death using verbal autopsy in Niakhar, Senegal, 1989–2000.</article-title>             <source>Int J Epidemiol</source>             <volume>33</volume>             <fpage>1286</fpage>             <lpage>1292</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Jaffar1">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Jaffar</surname><given-names>S</given-names></name><name name-style="western"><surname>Leach</surname><given-names>A</given-names></name><name name-style="western"><surname>Greenwood</surname><given-names>AM</given-names></name><name name-style="western"><surname>Jepson</surname><given-names>A</given-names></name><name name-style="western"><surname>Muller</surname><given-names>O</given-names></name><etal/></person-group>             <year>1997</year>             <article-title>Changes in the pattern of infant and childhood mortality in upper river division, The Gambia, from 1989 to 1993.</article-title>             <source>Trop Med Int Health</source>             <volume>2</volume>             <fpage>28</fpage>             <lpage>37</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Meremikwu1">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Meremikwu</surname><given-names>MM</given-names></name><name name-style="western"><surname>Donegan</surname><given-names>S</given-names></name><name name-style="western"><surname>Esu</surname><given-names>E</given-names></name></person-group>             <year>2008</year>             <article-title>Chemoprophylaxis and intermittent treatment for preventing malaria in children.</article-title>             <source>Cochrane Database Syst Rev</source>             <volume>2</volume>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-National1">
+        <label>7</label>
+        <element-citation publication-type="other" xlink:type="simple">             <comment>National Institutes of Health ClinicalTrials.gov</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-World2">
+        <label>8</label>
+        <element-citation publication-type="other" xlink:type="simple">             <comment>World Health Organisation International Clinical Trials Registry Platform</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-World3">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <collab xlink:type="simple">World Health Organisation</collab>             <year>2000</year>             <article-title>Severe Falciparum Malaria.</article-title>             <source>Trans R Soc Trop Med Hyg</source>             <volume>94</volume>             <fpage>S1</fpage>             <lpage>90</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-International1">
+        <label>10</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">International Conference on Harmonisation</collab>             <year>2004</year>             <source>ICH Harmonised Tripartite Guideline, Clinical Safety Data Management, Definitions and Standards for Expedited Reporting, E2A, Step 4 Version</source>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-The1">
+        <label>11</label>
+        <element-citation publication-type="other" xlink:type="simple">             <collab xlink:type="simple">The Cochrane Collaboration</collab>             <year>2008</year>             <article-title>Cochrane Handbook for Systematic Reviews of Interventions.</article-title>             <comment>Version 5.0.0; Higgins JPT, Green S, editors</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Dicko1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dicko</surname><given-names>A</given-names></name><name name-style="western"><surname>Diallo</surname><given-names>AI</given-names></name><name name-style="western"><surname>Tembine</surname><given-names>I</given-names></name><name name-style="western"><surname>Dicko</surname><given-names>Y</given-names></name><name name-style="western"><surname>Dara</surname><given-names>N</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>A randomised, placebo-controlled trial of intermittent preventive treatment of malaria with sulphadoxine -pyrimethamine plus amodiaquine in children protected by a long lasting insecticide treated net in Mali.</article-title>             <source>PLoS Med</source>             <comment>(in press)</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Konat1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Konaté</surname><given-names>AT</given-names></name><name name-style="western"><surname>Yaro</surname><given-names>JB</given-names></name><name name-style="western"><surname>Ouédraogo</surname><given-names>AZ</given-names></name><name name-style="western"><surname>Diarra</surname><given-names>A</given-names></name><name name-style="western"><surname>Gansané</surname><given-names>A</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Intermittent preventive treatment of malaria provides substantial protection against malaria in children already protected by an insecticide treated bednet in Burkina Faso.</article-title>             <source>PLoS Med</source>             <comment>(in press)</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Kirkwood1">
+        <label>14</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kirkwood</surname><given-names>B</given-names></name><name name-style="western"><surname>Sterne</surname><given-names>J</given-names></name></person-group>             <year>2003</year>             <source>Essential Medical Statistics</source>             <publisher-loc>Oxford, UK</publisher-loc>             <publisher-name>Blackwell Science Ltd</publisher-name>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Egger1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Egger</surname><given-names>M</given-names></name><name name-style="western"><surname>Smith</surname><given-names>GD</given-names></name><name name-style="western"><surname>Phillips</surname><given-names>AN</given-names></name></person-group>             <year>1997</year>             <article-title>Meta-analysis: principles and procedures.</article-title>             <source>BMJ</source>             <volume>315</volume>             <fpage>1533</fpage>             <lpage>1537</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Higgins1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Higgins</surname><given-names>JP</given-names></name><name name-style="western"><surname>Thompson</surname><given-names>SG</given-names></name><name name-style="western"><surname>Deeks</surname><given-names>JJ</given-names></name><name name-style="western"><surname>Altman</surname><given-names>DG</given-names></name></person-group>             <year>2003</year>             <article-title>Measuring inconsistency in meta-analyses.</article-title>             <source>BMJ</source>             <volume>327</volume>             <fpage>557</fpage>             <lpage>560</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Moher1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Moher</surname><given-names>D</given-names></name><name name-style="western"><surname>Liberati</surname><given-names>A</given-names></name><name name-style="western"><surname>Tetzlaff</surname><given-names>J</given-names></name><name name-style="western"><surname>Altman</surname><given-names>DG</given-names></name><name name-style="western"><surname>Group</surname><given-names>P</given-names></name></person-group>             <year>2009</year>             <article-title>Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement.</article-title>             <source>PLoS Med</source>             <volume>6</volume>             <fpage>e1000097</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Liberati1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Liberati</surname><given-names>A</given-names></name><name name-style="western"><surname>Altman</surname><given-names>DG</given-names></name><name name-style="western"><surname>Tetzlaff</surname><given-names>J</given-names></name><name name-style="western"><surname>Mulrow</surname><given-names>C</given-names></name><name name-style="western"><surname>Gøtzsche</surname><given-names>PC</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>The PRISMA statement for reporting systematic reviews and meta-analyses of studies that evaluate health care interventions: explanation and elaboration.</article-title>             <source>PLoS Med</source>             <volume>6</volume>             <fpage>e1000100</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Bojang1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bojang</surname><given-names>K</given-names></name><name name-style="western"><surname>Akor</surname><given-names>F</given-names></name><name name-style="western"><surname>Bittaye</surname><given-names>O</given-names></name><name name-style="western"><surname>Conway</surname><given-names>D</given-names></name><name name-style="western"><surname>Bottomley</surname><given-names>C</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>A randomised trial to compare the safety, tolerability and efficacy of three drug combinations for intermittent preventive treatment in children.</article-title>             <source>PLoS One</source>             <volume>5</volume>             <fpage>e11225</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Cisse1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cisse</surname><given-names>B</given-names></name><name name-style="western"><surname>Sokhna</surname><given-names>C</given-names></name><name name-style="western"><surname>Boulanger</surname><given-names>D</given-names></name><name name-style="western"><surname>Milet</surname><given-names>J</given-names></name><name name-style="western"><surname>Bâ</surname><given-names>eH</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Seasonal intermittent preventive treatment with artesunate and sulfadoxine-pyrimethamine for prevention of malaria in Senegalese children: a randomised, placebo-controlled, double-blind trial.</article-title>             <source>Lancet</source>             <volume>367</volume>             <fpage>659</fpage>             <lpage>667</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Dicko2">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dicko</surname><given-names>A</given-names></name><name name-style="western"><surname>Sagara</surname><given-names>I</given-names></name><name name-style="western"><surname>Sissoko</surname><given-names>MS</given-names></name><name name-style="western"><surname>Guindo</surname><given-names>O</given-names></name><name name-style="western"><surname>Diallo</surname><given-names>AI</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Impact of intermittent preventive treatment with sulphadoxine-pyrimethamine targeting the transmission season on the incidence of clinical malaria in children in Mali.</article-title>             <source>Malar J</source>             <volume>7</volume>             <fpage>123</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Kweku1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kweku</surname><given-names>M</given-names></name><name name-style="western"><surname>Liu</surname><given-names>D</given-names></name><name name-style="western"><surname>Adjuik</surname><given-names>M</given-names></name><name name-style="western"><surname>Binka</surname><given-names>F</given-names></name><name name-style="western"><surname>Seidu</surname><given-names>M</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Seasonal intermittent preventive treatment for the prevention of anaemia and malaria in ghanaian children: a randomized, placebo controlled trial.</article-title>             <source>PLoS ONE</source>             <volume>3</volume>             <fpage>e4000</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Sesay1">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sesay</surname><given-names>S</given-names></name><name name-style="western"><surname>Milligan</surname><given-names>P</given-names></name><name name-style="western"><surname>Touray</surname><given-names>E</given-names></name><name name-style="western"><surname>Sowe</surname><given-names>M</given-names></name><name name-style="western"><surname>Conway</surname><given-names>D</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>A trial of intermittent preventive treatment and home based management of malaria in a rural area of The Gambia.</article-title>             <source>Malar J</source>             <volume>10</volume>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Sokhna1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sokhna</surname><given-names>C</given-names></name><name name-style="western"><surname>Cisse</surname><given-names>B</given-names></name><name name-style="western"><surname>Ba</surname><given-names>e-H</given-names></name><name name-style="western"><surname>Milligan</surname><given-names>P</given-names></name><name name-style="western"><surname>Hallett</surname><given-names>R</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>A trial of the efficacy, safety and impact on drug resistance of four drug regimens for seasonal intermittent preventive treatment for malaria in Senegalese children.</article-title>             <source>PLoS ONE</source>             <volume>3</volume>             <fpage>e1471</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Cisse2">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cisse</surname><given-names>B</given-names></name><name name-style="western"><surname>Cairns</surname><given-names>M</given-names></name><name name-style="western"><surname>Faye</surname><given-names>E</given-names></name><name name-style="western"><surname>N'Diaye</surname><given-names>O</given-names></name><name name-style="western"><surname>Faye</surname><given-names>B</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Randomized trial of piperaquine with sulfadoxine-pyrimethamine or dihydroartemisinin for intermittent preventive treatment of malaria in children.</article-title>             <source>PLoS ONE</source>             <volume>4</volume>             <fpage>e7164</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Bojang2">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bojang</surname><given-names>KA</given-names></name><name name-style="western"><surname>Akor</surname><given-names>F</given-names></name><name name-style="western"><surname>Conteh</surname><given-names>L</given-names></name><name name-style="western"><surname>Webb</surname><given-names>EL</given-names></name><name name-style="western"><surname>Bittaye</surname><given-names>O</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Comparison of two strategies for the delivery of IPTc in an area of seasonal malaria transmission.</article-title>             <source>PLoS Med</source>             <comment>(in press)</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Kweku2">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kweku</surname><given-names>M</given-names></name><name name-style="western"><surname>Liu</surname><given-names>D</given-names></name><name name-style="western"><surname>Adjuik</surname><given-names>M</given-names></name><name name-style="western"><surname>Binka</surname><given-names>F</given-names></name><name name-style="western"><surname>Seidu</surname><given-names>M</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Options for the delivery of intermittent preventive treatment for malaria to children: a community randomised trial.</article-title>             <source>PLoS ONE</source>             <volume>4</volume>             <fpage>e7256</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Cisse3">
+        <label>28</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cisse</surname><given-names>B</given-names></name></person-group>             <year>2008</year>             <comment>Pilot study of routine delivery of intermittent preventive treatment of malaria ot children by community health workers in Tivaouane District, Senegal (unpublished)</comment>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Cairns1">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cairns</surname><given-names>M</given-names></name><name name-style="western"><surname>Gosling</surname><given-names>R</given-names></name><name name-style="western"><surname>Carneiro</surname><given-names>I</given-names></name><name name-style="western"><surname>Gesase</surname><given-names>S</given-names></name><name name-style="western"><surname>Mosha</surname><given-names>JF</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Duration of protection against malaria provided by three different regimens of intermittent preventive treatment in Tanzanian infants.</article-title>             <source>PLoS ONE</source>             <volume>3</volume>             <fpage>e2227</fpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Greenwood2">
+        <label>30</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Greenwood</surname><given-names>BM</given-names></name><name name-style="western"><surname>Greenwood</surname><given-names>AM</given-names></name><name name-style="western"><surname>Bradley</surname><given-names>AK</given-names></name><name name-style="western"><surname>Snow</surname><given-names>RW</given-names></name><name name-style="western"><surname>Byass</surname><given-names>P</given-names></name><etal/></person-group>             <year>1988</year>             <article-title>Comparison of two strategies for control of malaria within a primary health care programme in the Gambia.</article-title>             <source>Lancet</source>             <volume>1</volume>             <fpage>1121</fpage>             <lpage>1127</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Ramroth1">
+        <label>31</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ramroth</surname><given-names>H</given-names></name><name name-style="western"><surname>Ndugwa</surname><given-names>RP</given-names></name><name name-style="western"><surname>Müller</surname><given-names>O</given-names></name><name name-style="western"><surname>Yé</surname><given-names>Y</given-names></name><name name-style="western"><surname>Sié</surname><given-names>A</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Decreasing childhood mortality and increasing proportion of malaria deaths in rural Burkina Faso.</article-title>             <source>Glob Health Action</source>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3402/gha.v2i0.1909" xlink:type="simple">10.3402/gha.v2i0.1909</ext-link></comment>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Becher1">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Becher</surname><given-names>H</given-names></name><name name-style="western"><surname>Kynast-Wolf</surname><given-names>G</given-names></name><name name-style="western"><surname>Sié</surname><given-names>A</given-names></name><name name-style="western"><surname>Ndugwa</surname><given-names>R</given-names></name><name name-style="western"><surname>Ramroth</surname><given-names>H</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Patterns of malaria: cause-specific and all-cause mortality in a malaria-endemic area of west Africa.</article-title>             <source>Am J Trop Med Hyg</source>             <volume>78</volume>             <fpage>106</fpage>             <lpage>113</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Olliaro1">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Olliaro</surname><given-names>P</given-names></name><name name-style="western"><surname>Mussano</surname><given-names>P</given-names></name></person-group>             <year>2003</year>             <article-title>Amodiaquine for treating malaria.</article-title>             <source>Cochrane Database Syst Rev</source>             <volume>2</volume>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Cairns2">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cairns</surname><given-names>M</given-names></name><name name-style="western"><surname>Cisse</surname><given-names>B</given-names></name><name name-style="western"><surname>Sokhna</surname><given-names>C</given-names></name><name name-style="western"><surname>Cames</surname><given-names>C</given-names></name><name name-style="western"><surname>Simondon</surname><given-names>K</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Amodiaquine dosage and tolerability for intermittent preventive treatment to prevent malaria in children.</article-title>             <source>Antimicrob Agents Chemother</source>             <volume>54</volume>             <fpage>1265</fpage>             <lpage>1274</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Greenwood3">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Greenwood</surname><given-names>BM</given-names></name><name name-style="western"><surname>David</surname><given-names>PH</given-names></name><name name-style="western"><surname>Otoo-Forbes</surname><given-names>LN</given-names></name><name name-style="western"><surname>Allen</surname><given-names>SJ</given-names></name><name name-style="western"><surname>Alonso</surname><given-names>PL</given-names></name><etal/></person-group>             <year>1995</year>             <article-title>Mortality and morbidity from malaria after stopping malaria chemoprophylaxis.</article-title>             <source>Trans R Soc Trop Med Hyg</source>             <volume>89</volume>             <fpage>629</fpage>             <lpage>633</lpage>          </element-citation>
+      </ref>
+      <ref id="pone.0016976-Conteh1">
+        <label>36</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Conteh</surname><given-names>L</given-names></name><name name-style="western"><surname>Patouillard</surname><given-names>E</given-names></name><name name-style="western"><surname>Kweku</surname><given-names>M</given-names></name><name name-style="western"><surname>Legood</surname><given-names>R</given-names></name><name name-style="western"><surname>Greenwood</surname><given-names>BM</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Cost Effectiveness of Seasonal Intermittent Preventive Treatment in Children (IPTc) using Amodiaquine and Artesunate or Sulphadoxine-Pyrimethamine in Ghanaian children.</article-title>             <source>PLoS One</source>             <volume>5</volume>             <fpage>e12223</fpage>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

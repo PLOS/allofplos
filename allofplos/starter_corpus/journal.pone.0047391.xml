@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="pmc">plosone</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS ONE</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1932-6203</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PONE-D-12-15685</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pone.0047391</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Microbiology</subject>
+            <subj-group>
+              <subject>Virology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Medicine</subject>
+          <subj-group>
+            <subject>Clinical immunology</subject>
+            <subj-group>
+              <subject>Immunity</subject>
+              <subj-group>
+                <subject>Immune deficiency</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Clinical research design</subject>
+            <subj-group>
+              <subject>Cross-sectional studies</subject>
+              <subject>Epidemiology</subject>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Global health</subject>
+          </subj-group>
+          <subj-group>
+            <subject>Infectious diseases</subject>
+            <subj-group>
+              <subject>Viral diseases</subject>
+              <subj-group>
+                <subject>HIV</subject>
+                <subj-group>
+                  <subject>HIV diagnosis and management</subject>
+                  <subject>HIV epidemiology</subject>
+                </subj-group>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+          <subj-group>
+            <subject>Non-clinical medicine</subject>
+            <subj-group>
+              <subject>Health care policy</subject>
+              <subj-group>
+                <subject>Health statistics</subject>
+                <subject>Health systems strengthening</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Virology</subject>
+          <subject>Immunology</subject>
+          <subject>Infectious Diseases</subject>
+          <subject>Epidemiology</subject>
+          <subject>Non-Clinical Medicine</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Monitoring HIV Viral Load in Resource Limited Settings: Still a Matter of Debate?</article-title>
+        <alt-title alt-title-type="running-head">HIV Viral Load in Resource Limited Settings</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Arnedo</surname>
+            <given-names>Mireia</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Alonso</surname>
+            <given-names>Elena</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Eisenberg</surname>
+            <given-names>Nell</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ibáñez</surname>
+            <given-names>Laura</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ferreyra</surname>
+            <given-names>Cecilia</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Jaén</surname>
+            <given-names>Angels</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Flevaud</surname>
+            <given-names>Laurence</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Khamadi</surname>
+            <given-names>Samuel</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Roddy</surname>
+            <given-names>Paul</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Gatell</surname>
+            <given-names>Jose Maria</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Dalmau</surname>
+            <given-names>David</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+          <on-behalf-of>on behalf of Busia OR Study Group</on-behalf-of>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <collab xlink:type="simple">Busia OR Study Group</collab>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Médécins sans Frontières-Operational Center Barcelona Athens, Barcelona, Spain</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>Hospital Clínic de Barcelona, IDIBAPS, Barcelona, Spain</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>Hospital Universitari MútuaTerrassa, Medicine Department, Terrassa, Spain</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>Fundació Docència i Recerca MutuaTerrassa, Terrassa, Spain</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Kenya Medical Research Institute (KEMRI), Nairobi, Kenya</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Wainberg</surname>
+            <given-names>Mark</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>McGill University AIDS Centre, Canada</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">ddalmau@mutuaterrassa.cat</email></corresp>
+        <fn fn-type="conflict">
+          <p>D Dalmau and JM Gatell have been a consultant on advisory boards, have participated in speakers' bureaus, have received research grants or have conducted clinical trials with Roche, Boehringer Ingelheim, Abbott, BMS, GSK, Gilead, Janssen, Merck and Pfizer. M. Arnedo, E. Alonso, N. Eisenberg, L. Ibáñez, C. Ferreyra, A. Jaén, L. Flevaud, S. Khamadi, P. Roddy, J. Mashala, A. Alvarez and E. Velilla report no conflicts of interest relevant to this article. No other potential conflict of interest relevant to this article was reported. This does not alter the authors' adherence to all the PLOS ONE policies on sharing data and materials.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: DD MA EA NE. Performed the experiments: MA LI LF. Analyzed the data: DD AJ PR MA. Contributed reagents/materials/analysis tools: MA LI LF AJ DD SK. Wrote the paper: DD MA. Reviewed and edited manuscript: EA NE LI CF AJ LF SK PR JMG.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>6</day>
+        <month>12</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>7</volume>
+      <issue>12</issue>
+      <elocation-id>e47391</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>27</day>
+          <month>5</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>12</day>
+          <month>9</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2012</copyright-year>
+        <copyright-holder>Arnedo et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec>
+          <title>Introduction</title>
+          <p>Consequences of lack of viral monitoring in predicting the effects of development of HIV drug resistance mutations during HAART in resource-limited settings (RLS) is still a matter of debate.</p>
+        </sec>
+        <sec>
+          <title>Design</title>
+          <p>To assess, among HIV+ patients receiving their first-line HAART, prevalence of virological failure and genotypic resistance mutations pattern in a Médécins Sans Frontières/Ministry of Health programme in Busia District (Kenya).</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>Patients with HAART treatment for ≥12 months were eligible for the study and those with HIV-RNA ≥5000 copies/ml underwent genotypic study. Total HIV-1 RNA from Dried Blood Spots was extracted using Nuclisens method.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>926 patients were included. Among 274 (29.6%) patients with detectable viral load, 55 (5.9%) experienced treatment failure (viral load &gt;5.000 copies/ml); 61.8% were female and 10 (18.2%) had clinical failure. Median CD4 cell count was 116 cell/mm3 (IQR: 54–189). Median HIV-RNA was 32,000 copies/ml (IQR: 11000–68000). Eighteen out of 55 (33%) samples could be sequenced on PR and RT genes, with resistance associated mutations (RAMs) in 15 out of 18 samples (83%). Among patients carrying RAMs, 12/15 (81%) harboured RAMs associated to thymidine analogues (TAMs). All of them (100%) showed M184V resistance associated mutation to lamivudine as well as NNRTI's RAMS.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>Virological failure rate in resource-limited settings are similar to those observed in developed countries. Resistance mutation patterns were concordant with HAART received by failing patients. Long term detectable viral load confers greater probability of developing resistance and as a consequence, making difficult to find out a cost-effective subsequent treatment regimen.</p>
+        </sec>
+      </abstract>
+      <funding-group>
+        <funding-statement>MSF (Médécins Sans Frontières) are the sources of funding that have supported the work. There were no funding sources in the writing of the manuscript or the decision to submit it for publication neither to write this article by a pharmaceutical company or other agency. The corresponding author had full access to all the data in the study and had final responsibility for the decision to submit for publication. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="8"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>Early virological failure on a nucleoside reverse transcriptase inhibitor (NRTI) and nonnucleoside reverse transcriptase inhibitor (NNRTI) regimen is associated with emergence of the M184V mutation and an NNRTI resistance mutation in approximately 50–75% of patients in resource-rich settings <xref ref-type="bibr" rid="pone.0047391-Margot1">[1]</xref>, <xref ref-type="bibr" rid="pone.0047391-Gallant1">[2]</xref>, <xref ref-type="bibr" rid="pone.0047391-Gulick1">[3]</xref>.</p>
+      <p>Continuation of a failing regimen may be associated with more complex mutation patterns, as has been observed in several studies in developing countries <xref ref-type="bibr" rid="pone.0047391-Marconi1">[4]</xref>, <xref ref-type="bibr" rid="pone.0047391-Sungkanuparph1">[5]</xref>, <xref ref-type="bibr" rid="pone.0047391-DART1">[6]</xref>, <xref ref-type="bibr" rid="pone.0047391-Sung1">[7]</xref>, <xref ref-type="bibr" rid="pone.0047391-Ferradini1">[8]</xref>. The number and pattern of resistance mutations may depend on the exact components of the regimen, HIV-1 subtype <xref ref-type="bibr" rid="pone.0047391-Brenner1">[9]</xref>, <xref ref-type="bibr" rid="pone.0047391-Hosseinipour1">[10]</xref> and the duration of failure. Substantial NRTI resistance may occur, making empiric selection of second-line NRTI difficult.</p>
+      <p>Sub-Saharan Africa need to face major challenges to the scaling up of treatment programs such is scarcity in financial and human resources and inadequate health-care infrastructure. Models of care must be adapted to these circumstances, accounting for the few trained health personnel, different groups of patients compared with high-income countries (increased proportions of children and women of child-bearing age affected), restricted drug availability and procurement, inadequate access to monitoring equipment, and few extra funds.</p>
+      <p>Scaling up antiretroviral (ARV) therapy in RLS requires a simplified approach. Because of inadequate laboratory capacity, many programs have minimized laboratory monitoring in an effort to accelerate widespread availability of HIV treatment <xref ref-type="bibr" rid="pone.0047391-Petti1">[11]</xref>. However, is no longer valid the topic saying that majority of HIV-infected people are still unable to access treatment and that resources should be applied to prevention measures and to the initiation of treatment, rather than to performance of expensive laboratory tests used to monitor patients who are already receiving treatment. Continuous expansion of HIV-infected people receiving ARV therapy in RLS increases the need to detect cases in which first-line treatment has failed. As the need for viral load testing increases, technologies to determine the viral load are becoming simpler, and costs are decreasing. Thus, question of whether high-quality, effective HIV care can be provided without viral load monitoring needs to be revisited.</p>
+      <p>If one of the main issues that remain still a matter of debate in low and middle income countries is the suitability for using viral load monitoring, does it make sense to use it in order to predict development of resistance mutations to HAART?</p>
+      <p>The aim of the study was to assess, among HIV+ patients receiving their first-line HAART and with virological failure (viral load &gt;5.000 copies/ml), the prevalence of genotypic resistance mutations and their pattern. Technology used was dried blood spots filter paper (DBS), due to its simplicity and feasibility in resource limited settings.</p>
+    </sec>
+    <sec id="s2" sec-type="methods">
+      <title>Methods</title>
+      <sec id="s2a">
+        <title>Setting</title>
+        <p>Médécins sans Frontieres Spain (MSF-S) has provided ARV treatment since July 2003 in Busia District Hospital, in the western region of Kenya (Western province). Busia has a population of approximately 430,000 and HIV prevalence of 5.9% (age 15–49 years). After a period of expansion and scale-up of patient numbers, the project focused on strengthening the care and treatment of patients, having started around 3.500 patients on treatment at district level and rural level through decentralised provision of care by December 2008.</p>
+      </sec>
+      <sec id="s2b">
+        <title>Study population</title>
+        <p>The first-line regimen in Kenya when this study was performed consisted in stavudine (d4T), lamivudine (3TC), and nevirapine (NVP). In the event of toxicity, one can substitute zidovudine (ZDV) for d4T or efavirenz (EFV) for NVP, using TDF/3TC or abacavir (ABC)/didanosine (DDI) for patients failing first-line treatment <xref ref-type="bibr" rid="pone.0047391-WHO1">[12]</xref>.</p>
+        <p>In April 2008, all the adult ART-naïve patients receiving a triple ARV therapy regimen classified as standard first-line (e.g. D4T or AZT, 3TC and either NVP or EFV) for 12 months or more, who had attended the clinic at least once within the previous 6 months, and had given informed consent to participate, were considered for the study. The most widely ATR drug used is Triomune<sup>R</sup>, a fixed-dose formulation containing a combination of 2 nucleoside reverse transcriptase inhibitors (stavudine and lamivudine) with the non-nucleoside reverse transcriptase inhibitor nevirapine. Triomune can be taken twice daily, irrespective of food.</p>
+        <p>As of mid-April 2008 there were 1037 adult, active, previously treatment-naïve patients who were receiving standard fist line ARV for more than 12 months at start of study period in Busia program. Non-naïve patients as well as those treated with any other ARV regimen were excluded from the study.</p>
+      </sec>
+      <sec id="s2c">
+        <title>Ethical approval</title>
+        <p>This study was approved by the Ethical Review Board of Médecins Sans Frontières and the Kenya National Ethical Review Committee in KEMRI (Kenya Medical Research Institute). Written inform consent was not obtained because the majority of local people participating in this study were illiterate. Therefore, and after a thorough explanation of the study purposes, and in presence of a third person (family related if possible or health care worker instead), we requested to all participants to acknowledge their verbal informed consent. Ethical Review Board of Médecins Sans Frontières as well as Kenya National Ethical Review Committee in KEMRI (Kenya Medical Research Institute) approved this consent procedure.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Laboratory procedures</title>
+        <p>On the day of enrolment, a venous blood sample of 10 mL was taken and divided into two parts: one had a CD4 count done at the Busia lab using the FASCOUNT machine using the manufacturer's guidelines, and the other one was sent to Kenya Research Institute Nairobi (KEMRI) in a plasma preparation tube where viral load testing was done using the NucliSENS EasyQ HIV equipment, version 1.2, using the manufacturer's guidelines, with limit of detection of 50 copies/ml.</p>
+        <p>Patients having a viral load &gt;5.000 copies/ml provided an additional sample for preparation in dried blood spot (DBS) <xref ref-type="bibr" rid="pone.0047391-Masciotra1">[13]</xref>, <xref ref-type="bibr" rid="pone.0047391-Youngpairoj1">[14]</xref>. Even though viral load &gt;1.000 copies/ml would be enough to perform genotyping, we decided to select patients with &gt;5.000 copies/ml for two main reasons: the lower sensitivity of genotype testing using Dried Blood Spots Filter Papers and the fact that due to technical constraints, that is, inability to keep cold chain during the whole transportation process, we used BD Vacutainer PPT Plasma Preparation tubes (PPT) (Becton Dickinson and Company, Franklin Lakes, NJ). Several studies have reported that the use of Vacutainer plasma preparation tubes (PPTs) to transport plasma specimens have consistently yielded higher HIV RNA levels than EDTA tubes <xref ref-type="bibr" rid="pone.0047391-Squires1">[15]</xref>, <xref ref-type="bibr" rid="pone.0047391-Stosor1">[16]</xref>, <xref ref-type="bibr" rid="pone.0047391-Elbeik1">[17]</xref>, <xref ref-type="bibr" rid="pone.0047391-GarcaBujalance1">[18]</xref>.</p>
+        <p>Fifty microlitres of whole blood and plasma were used to make each spot respectively. These were dried overnight on special drying racks, packed and sent to the Research Laboratory from Hospital Universitari MutuaTerrassa, in Barcelona, for HIV resistance genotyping tests. Before study initiation, training was implemented among technicians (local staff) responsible of sampling procedure.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Self report adherence questionnaire</title>
+        <p>Adherence was measured using a simple questionnaire translated to the local language. The questions were structured based on the WHO adherence criteria. Pill counts for the patients were done by adherence counsellors.</p>
+      </sec>
+      <sec id="s2f">
+        <title>Definition of treatment and virological failure</title>
+        <p>For the purpose of our study we performed a viral load test for all patients that were enrolled in the study. Samples with viral loads ≥5.000 copies/ml were selected for genotype testing.</p>
+      </sec>
+      <sec id="s2g">
+        <title>Treatment failure</title>
+        <p>Treatment failure based on CD4 test criteria was defined as either a CD4 below the baseline or less than 50% of peak at 12 months or CD4 &lt;100 cells/mm<sup>3</sup> after 12 months of therapy. Treatment failure based on clinical criteria was defined as the occurrence of either a new or a recurrent disease defining WHO 3 or stage 4 at 12 months from the start of medication <xref ref-type="bibr" rid="pone.0047391-Antiretroviral1">[19]</xref>.</p>
+      </sec>
+      <sec id="s2h">
+        <title>Virological failure</title>
+        <p>Currently, WHO defines virological failure as plasma HIV-1 RNA level &gt;5.000 copies/ml after 6 months of treatment. However, at the time of the study (2008) the programme was following WHO 2006 recommendations where the cut-off for virological failure was &gt;10.000 copies/ml,. Notwithstanding, in our study the aim was to assess the level of HIV drug resistance mutations and to describe and rank specific HIV-Drug Resistance mutations and mutation patterns among patients not achieving virological suppression. Therefore, all patients with VL &gt;5.000 had their sample collected for genotype testing.</p>
+      </sec>
+      <sec id="s2i">
+        <title>Sample collection and shipment</title>
+        <p>Patients having a viral load ≥5.000 copies/ml provided an additional blood sample to prepare dried blood (DBS-FP) on Schleicher and Schuell 903 filter paper to send to Hospital Universitari MutuaTerrassa, AIDS research Unit, in Terrassa, for genotyping test. The BD PPT™ tubes (plasma preparation tubes) were used to separate plasma, following the manufacturer's instructions. Briefly, 5 ml of whole blood were collected into the PPT<sup>TM</sup> tubes using universal phlebotomy practices, and briefly gently inverted to mix. Of this sample, 400 ul were spoted on the filter paper in the 5 pre-marked circles (50 ul each). The remaining sample was centrifuged at 3000 rpm for 10 minutes to obtain plasma. This plasma was collected into vacutainer tubes for viral load assay. Filter papers were leaved to dry on drying racks overnight in a horizontal position at a room temperature. They were then packed in glycine envelopes with desiccants to keep them dry and shipped to the genotyping laboratory in Barcelona following the laid down procedures for sample packaging and shipment. Samples were kept during the whole procedure and transportation at room temperature. In our laboratory, total HIV-1 RNA from DBS was extracted using Nuclisens method (Easymag, Biomerieux). A unique fragment of 1023 bp of pol gene containing the major part of PR and RT was amplified using in-house RT-PCR and nested PCR previously described in the literature <xref ref-type="bibr" rid="pone.0047391-Masciotra1">[13]</xref>.</p>
+        <p>Genotyping was validated using the ViroScore Suite (ABL, Luxembourg, v3.9.2).</p>
+      </sec>
+      <sec id="s2j">
+        <title>Statistical analysis</title>
+        <p>Qualitative and quantitative variables were described using percentages and 95% confidence intervals (CI), means and standard deviation or median and interquartile ranges (IQR), depending upon distribution was normal or not. Comparisons between patients with or without virological failure were examined using Pearson's chi square test or Fisher's exact test for qualitative variables and t-test or U Mann-Whitney test for quantitative variables. Previously, Levene test was performed to determine homogeneity of variance.</p>
+        <p>In addition, proportion comparison test for independent samples through Z statistic were performed for comparison of adherence results.</p>
+        <p>P values less than 0.05 were considered statistically significant. Analyses were conducted using the statistical package StataSE vs9.0 (Stata Corporation, College Station, Texas, USA).</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Results</title>
+      <p>Among 1037 recruited patients under HAART during ≥12 months, 926 were included in the analysis (<xref ref-type="fig" rid="pone-0047391-g001">Figure 1</xref>). Out of 111 non-included patients only 8 (7.2%) were non-responders and 4 died, the remaining patients were lost of follow-up, or have an exclusion criteria. Mean time on ARVs were 38.8 months (range: 17.0–60.0) and patients mean age were 42.1 y. (range: 18,6–73,1), with a higher proportion of females (67.3%) (<xref ref-type="table" rid="pone-0047391-t001">Table 1</xref>).</p>
+      <fig id="pone-0047391-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0047391.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>Patient's disposition.</title>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0047391.g001" position="float" xlink:type="simple"/>
+      </fig>
+      <table-wrap id="pone-0047391-t001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0047391.t001</object-id>
+        <label>Table 1</label>
+        <caption>
+          <title>Patients with VL &gt;5.000 copies/ml (N = 55).</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0047391-t001-1" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0047391.t001" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">VL &gt;5.000 copies/ml</td>
+                <td align="left" rowspan="1" colspan="1">55/926 (5,9%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Mean age</td>
+                <td align="left" rowspan="1" colspan="1">37.9 (range:18.7–72.5)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Females</td>
+                <td align="left" rowspan="1" colspan="1">34 (61.8%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Clinical failure</td>
+                <td align="left" rowspan="1" colspan="1">10 (18.2%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Median CD4+</td>
+                <td align="left" rowspan="1" colspan="1">116 cells/mm3 (IQR: 54–189)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Median VL (RNA-VIH)</td>
+                <td align="left" rowspan="1" colspan="1">32.000 copies/ml (IQR: 11.000–68.000)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">ARV regimen started: d4T/3TC/NVP AZT/3TC/NVP</td>
+                <td align="left" rowspan="1" colspan="1">53 (96.4%)2 (3.6%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Mean duration on HAART</td>
+                <td align="left" rowspan="1" colspan="1">40.1 months (range: 20–52)</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <p>Among the whole population studied, 274 patients (29,7%, 95% CI: 13.6–18.4) had detectable viral load (≥50 copies/ml) and 55 (5.9%, 95% CI: 4.4–7.5) had a viral load ≥5.000 copies/ml, thus underwent genotypic study. Among 55 patients of genotypic study, mean age was 37.9 years (range: 18.7–72.5) and 34 (61.8%) were females. Only 10 out of 55 patients (18.2%) experienced clinical failure, (treatment failure based on clinical criteria) defined as the occurrence of either a new or a recurrent disease defining WHO 3 or stage 4 at 12 months from the start of medication. The median CD4 cell count and HIV RNA were 116 cell/mm3 [interquartile range (IQR) 54–189] and 32,000 copies/ml respectively (IQR: 11.000–68.000) (<xref ref-type="table" rid="pone-0047391-t001">table 1</xref>). ART regimen started at time of inclusion were d4T/3TC/NVP in 53 (96.4%) and AZT/3TC/NVP in 2 patients (3.6%). Regarding mean time on HAART, there were no significant statistical differences between patients that had virological failure (n = 55) and those patients (n = 871) who did not (mean: 40,1 vs. 38,7 months respectively).</p>
+      <p>Of the 55 samples, only 18 (33%) could be amplified and evaluated by genotyping. Based on Stanford University HIV Drug Resistance Database, we inferred subtypes from entering FASTA sequence information: the majority of samples were subtype A (13/18; 72,2%), subtype D (4/18; 22,2%) and G (1/18; 5,6%).</p>
+      <p>Among 18 samples sequenced on PR and RT genes, 15 out of 18 (83.3%, 95% CI: 58.6–96.4) showed RT resistance associated mutations (RAMs). The median number of resistance mutations (any class) was 5 (IQR: 2,75–6). Three samples had no mutations identified (<xref ref-type="table" rid="pone-0047391-t002">table 2</xref>).</p>
+      <table-wrap id="pone-0047391-t002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0047391.t002</object-id>
+        <label>Table 2</label>
+        <caption>
+          <title>RAMS among patients with virological failure (VL&gt;5.000 copies/ml) amplified and evaluated by genotyping.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0047391-t002-2" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0047391.t002" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Resistance Associated Mutations (RAMs)</td>
+                <td align="left" rowspan="1" colspan="1">N (%)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Some RAMs</td>
+                <td align="left" rowspan="1" colspan="1">15/18 (83.3%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">• <bold>TAMS</bold> (M41L, D67N, K70R, V75I, L210W, T215Y/F, Q151M)</td>
+                <td align="left" rowspan="1" colspan="1">11/15 (73.3%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">• <bold>M184V</bold></td>
+                <td align="left" rowspan="1" colspan="1">15/15 (100%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">• <bold>NNRTI</bold> (K101E, K103N/S, G190A, V108I, Y181C/V, Y188L)</td>
+                <td align="left" rowspan="1" colspan="1">15/15 (100%)</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+      </table-wrap>
+      <p>Fifteen out of 18 patients (83.3%) carried NNRTI resistance associated mutations, although there were no patients with only NNRTI mutations. The median number of NNRTI mutations was 1 (IQR: 1–2). The most frequent NNRTI mutations were K103N/S (27.8%), followed by Y181C (22.2%), V108I and G190A (16.7%), Y181V (11.1%), K101E and Y188L (5.6%) (<xref ref-type="fig" rid="pone-0047391-g002">Figure 2</xref>).</p>
+      <fig id="pone-0047391-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0047391.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>NNRTI's resistance mutations prevalence.</title>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0047391.g002" position="float" xlink:type="simple"/>
+      </fig>
+      <p>Prevalence of NRTI resistance associated mutations are depicted in <xref ref-type="fig" rid="pone-0047391-g003">Figure 3</xref>. The M184V mutation was present in virus from 15 patients (83.3%), although never as the only mutation. Four patients (22.2%) carried virus with only M184V and NNRTI mutations (<xref ref-type="table" rid="pone-0047391-t003">Table 3</xref>). The most common mutation pattern was M184V and NNRTI mutations with one or more TAMs, which occurred in 12 (66.7%) patients.</p>
+      <fig id="pone-0047391-g003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0047391.g003</object-id>
+        <label>Figure 3</label>
+        <caption>
+          <title>NRTI's resistance mutations prevalence.</title>
+        </caption>
+        <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0047391.g003" position="float" xlink:type="simple"/>
+      </fig>
+      <table-wrap id="pone-0047391-t003" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0047391.t003</object-id>
+        <label>Table 3</label>
+        <caption>
+          <title>Genotypic results.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0047391-t003-3" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0047391.t003" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">ID</td>
+                <td align="left" rowspan="1" colspan="1">HAART</td>
+                <td align="left" rowspan="1" colspan="1">VL</td>
+                <td align="left" rowspan="1" colspan="1">H*</td>
+                <td align="left" rowspan="1" colspan="1">Protease</td>
+                <td align="left" rowspan="1" colspan="1">Retrotranscriptase</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>2</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">63000</td>
+                <td align="left" rowspan="1" colspan="1">10%</td>
+                <td align="left" rowspan="1" colspan="1">H69K, L89V</td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>K101E, M184V, G190A, T215Y</bold>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>4</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">11000</td>
+                <td align="left" rowspan="1" colspan="1">10%</td>
+                <td align="left" rowspan="1" colspan="1">I62V, L63P, I64V, <italic>H69Y</italic></td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>K103N, M184V</bold>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>5</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">5600</td>
+                <td align="left" rowspan="1" colspan="1">10%</td>
+                <td align="left" rowspan="1" colspan="1">M36I, D60E</td>
+                <td align="left" rowspan="1" colspan="1"><bold>M41L</bold>, A98G, <bold>K103N, M184V, T215Y</bold></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>6</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">5700</td>
+                <td align="left" rowspan="1" colspan="1">10%</td>
+                <td align="left" rowspan="1" colspan="1">H69K, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1"><bold>M41L, V75I</bold>, V90I, <bold>K103N,</bold> <italic>V179I</italic><bold>, M184V, T215Y</bold></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>8</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">1000000</td>
+                <td align="left" rowspan="1" colspan="1">10%</td>
+                <td align="left" rowspan="1" colspan="1"><italic>H69Q</italic>, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1"><bold>M41L, V108I</bold>, <italic>V179I</italic>, <bold>Y181C, M184V, L210W, T215Y</bold></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>10</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">140000</td>
+                <td align="left" rowspan="1" colspan="1">10%</td>
+                <td align="left" rowspan="1" colspan="1">M36I, I62V, <italic>H69R</italic>, <italic>V82Y</italic>, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>11</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">9200</td>
+                <td align="left" rowspan="1" colspan="1">10%</td>
+                <td align="left" rowspan="1" colspan="1">D60E, H69K, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1"><bold>M41L, M184V, Y188L</bold>, <italic>L210S</italic>, <bold>T215Y</bold></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>13</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">910000</td>
+                <td align="left" rowspan="1" colspan="1">10%</td>
+                <td align="left" rowspan="1" colspan="1">H69K, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1">
+                  <italic>V179I</italic>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>19</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">6200</td>
+                <td align="left" rowspan="1" colspan="1">60%</td>
+                <td align="left" rowspan="1" colspan="1"><italic>L63Q</italic>, <italic>H69Y</italic></td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>K70R, V108I, Y181C, M184V</bold>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>30</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">29000</td>
+                <td align="left" rowspan="1" colspan="1">30%</td>
+                <td align="left" rowspan="1" colspan="1">M36I, I62V, <italic>L63T</italic>, I64M, H69K, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1"><bold>M41L, V75I</bold>, <italic>V179I</italic>, <bold>Y181C, M184V, T215Y</bold></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>31</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">47000</td>
+                <td align="left" rowspan="1" colspan="1">30%</td>
+                <td align="left" rowspan="1" colspan="1">M36I, H69K, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1"><bold>M41L</bold>, <italic>V179I</italic>, <bold>M184V, G190A, T215F</bold></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>33</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">1200000</td>
+                <td align="left" rowspan="1" colspan="1">30%</td>
+                <td align="left" rowspan="1" colspan="1"><italic>E35D</italic>, M36I, H69K, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>36</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">11000</td>
+                <td align="left" rowspan="1" colspan="1">30%</td>
+                <td align="left" rowspan="1" colspan="1">H69K, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1"><bold>K103S</bold>, <italic>V179I</italic>, <bold>M184V</bold></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>37</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">130000</td>
+                <td align="left" rowspan="1" colspan="1">30%</td>
+                <td align="left" rowspan="1" colspan="1">L63P, H69K, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>M41L, D67N, K103N, Q151M, M184V, T215F</bold>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>38</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">43000</td>
+                <td align="left" rowspan="1" colspan="1">30%</td>
+                <td align="left" rowspan="1" colspan="1">D60E, H69K, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1"><bold>M41L, D67N</bold>, <italic>V179I</italic>, <bold>Y181V, M184V, L210W, T215Y</bold></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>39</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">68000</td>
+                <td align="left" rowspan="1" colspan="1">30%</td>
+                <td align="left" rowspan="1" colspan="1">M36I, <italic>L63T</italic>, H69K, V82I, <italic>L89M</italic>, I93L</td>
+                <td align="left" rowspan="1" colspan="1"><italic>K101A</italic>, <italic>V179I</italic>, <bold>M184V, G190A</bold></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>46</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">2</td>
+                <td align="left" rowspan="1" colspan="1">170000</td>
+                <td align="left" rowspan="1" colspan="1">30%</td>
+                <td align="left" rowspan="1" colspan="1">H69K, <italic>L89V</italic>, <italic>L90T</italic></td>
+                <td align="left" rowspan="1" colspan="1"><bold>M41L, D67N</bold>, <bold>Y181V, M184V, L210W, T215Y</bold></td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>53</bold>
+                </td>
+                <td align="left" rowspan="1" colspan="1">1</td>
+                <td align="left" rowspan="1" colspan="1">130000</td>
+                <td align="left" rowspan="1" colspan="1">40%</td>
+                <td align="left" rowspan="1" colspan="1">D60E, H69K, <italic>L89M</italic></td>
+                <td align="left" rowspan="1" colspan="1"><bold>M41L, V108I</bold>, <italic>V179I</italic>, <bold>Y181C, M184V, T215Y</bold></td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="nt101">
+            <label/>
+            <p>• <bold>% of humidity.</bold></p>
+          </fn>
+          <fn id="nt102">
+            <label/>
+            <p>• <bold>HAART: 1.-3TC/d4T/NVP; 2.-AZT/3TC/NVP.</bold></p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>Among patients carrying RAMs, 12/15 (80.0%) harboured RAMs associated to thymidine analogues (TAMs) (M41L, D67N, K70R, V75I, L210W, T215F/Y) (<xref ref-type="table" rid="pone-0047391-t003">Table 3</xref>). All of them (100%) showed also M184V RAM to lamivudine. Of the patients with TAMs containing virus, 16.7% had one, 33.3% had two, and 50.0% had three or more TAMs. The most frequent TAMs were T215F/Y (11/12, 91.7%), M41L (10/12, 83.3%), L210W (3/12, 27,3%), D67N (3/12, 25.0%), K70R (1/12, 8.3%) and V75I (1/12, 8.3%) (<xref ref-type="table" rid="pone-0047391-t003">Table 3</xref>). One patient carried Q151M mutation, associated with M41L, D67N, T215F and M184V, conferring pan-nucleoside resistance, except to tenofovir. There were no patients carrying either K65R or T69 insertion.</p>
+      <p>In our study all failing patients with HIV-1 RNA &gt;5.000 copies/ml harboured TAMs. Among the three patients having samples with no mutations identified, viral load were high (mean: 750.000 copies/ml; 5,9 logs).</p>
+      <p>According to Stanford HIV database, 10 out of 15 (66.7%) patients were resistant to both ARV families used, that are stavudine, zidovudine, lamivudine and nevirapine/efavirenz.</p>
+      <p>Regarding samples sequenced on protease gene, we have found only common polymorphisms not associated with decreased PI susceptibility. We did not find primary RAMs to protease inhibitors (<xref ref-type="table" rid="pone-0047391-t003">Table 3</xref>).</p>
+      <sec id="s3a">
+        <title>Adherence results</title>
+        <p>Adherence questionnaire did not discriminate among those patients harbouring some resistance mutations and those without any resistance at all. In contrast, 30,99% of patients having viral load &gt;5000 copies/ml (n = 55) vs. 44.2% of patients with viral load &lt;5000 copies/ml (n = 871) reported “never missed medications” (p&lt;0,05).</p>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Discussion</title>
+      <p>Despite earlier doubts, evidence is available that even in countries with very limited resources, ART programmes based on the public health approach have shown effectiveness equal to that seen in clinical cohorts in USA and Europe using similar regimens <xref ref-type="bibr" rid="pone.0047391-Ferradini1">[8]</xref>, <xref ref-type="bibr" rid="pone.0047391-Ferradini2">[20]</xref>, <xref ref-type="bibr" rid="pone.0047391-Ivers1">[21]</xref>, <xref ref-type="bibr" rid="pone.0047391-Sow1">[22]</xref>, <xref ref-type="bibr" rid="pone.0047391-Bartlett1">[23]</xref>, <xref ref-type="bibr" rid="pone.0047391-Bartlett2">[24]</xref>, <xref ref-type="bibr" rid="pone.0047391-Severe1">[25]</xref>, <xref ref-type="bibr" rid="pone.0047391-WoolsKaloustian1">[26]</xref>. Therefore, fears that HIV/AIDS treatment in RLS would lead to widespread drug resistance have been unfounded. Our study provides additional scientific concerns about comprehensive approach to monitoring, care and treatment management in settings in which resources are limited.</p>
+      <p>Also virological failure rate in our study is similar than those reported so far in developed countries. Likely, results from several operational research performed in different RLS yielded the same results than our study, with a longer follow-up period (<xref ref-type="table" rid="pone-0047391-t004">Table 4</xref>).</p>
+      <table-wrap id="pone-0047391-t004" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pone.0047391.t004</object-id>
+        <label>Table 4</label>
+        <caption>
+          <title>Virological failure rates over time in different resource limited settings.</title>
+        </caption>
+        <alternatives>
+          <graphic id="pone-0047391-t004-4" position="float" mimetype="image" xlink:href="info:doi/10.1371/journal.pone.0047391.t004" xlink:type="simple"/>
+          <table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Busia Mean Tx duration: 38,8 m. (926 patients)</td>
+                <td align="left" rowspan="1" colspan="1">Malawi<xref ref-type="table-fn" rid="nt103">2</xref> Mean Tx duration: 9 m (397 patients)</td>
+                <td align="left" rowspan="1" colspan="1">Cambodia<sup>3</sup> Mean Tx duration: 24 m (346 patients)</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">VL&gt;400 = 16%</td>
+                <td align="left" rowspan="1" colspan="1">VL&gt;400 = 16%</td>
+                <td align="left" rowspan="1" colspan="1">VL&gt;400 = 11.6%</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">VL&gt;1000 = 10,7%</td>
+                <td align="left" rowspan="1" colspan="1">VL&gt;1000 = 13%</td>
+                <td align="left" rowspan="1" colspan="1">VL&gt;1000 = 9%</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">VL&gt;30.000 = 3,0%</td>
+                <td align="left" rowspan="1" colspan="1">VL&gt;30.000 = 5.0%</td>
+                <td align="left" rowspan="1" colspan="1">VL&gt;30.000 = 4.3%</td>
+              </tr>
+            </tbody>
+          </table>
+        </alternatives>
+        <table-wrap-foot>
+          <fn id="nt103">
+            <label>2</label>
+            <p>
+              <bold>Ferradini et al. Lancet 2006; 367:1335–42. <sup>3</sup> Ferradini et al. AIDS 2007, 21:2293–2301.</bold>
+            </p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>The ability to collect blood samples on filter paper represents an advantage for HIV drug resistance surveillance and monitoring, particularly in areas that lack the appropriate infrastructure for plasma processing and transport. We used DBS method for genotyping purposes due to its simplicity and the fact that filter paper technology allows shipment with minimal biohazard risks. One of the crucial points for the use of dried fluid spots for drug resistance genotyping in the field is the stability of RNA over time. Dried blood spots can be kept for long periods when refrigerated or frozen in hermetic bags with desiccant but exposure to high temperatures for extended periods seems to be associated with degradation. Few studies have reported on long-term storage or testing under field temperature conditions, and contradictory percentage of genotyping efficiency of blood and plasma sample collection devices such DBS results have been reported, compared with gold standard plasma <xref ref-type="bibr" rid="pone.0047391-Monleau1">[27]</xref>, <xref ref-type="bibr" rid="pone.0047391-Pieniazek1">[28]</xref>, <xref ref-type="bibr" rid="pone.0047391-GarcaLerma1">[29]</xref>.</p>
+      <p>In our study, we could amplify to evaluate by genotyping only one third of samples. Such a low percentage of positive genotypic results among failing patients might be explained by different factors, mainly related with the obstinate real life in Operational Research in RLS that make difficult the optimisation of sampling procedure: storage conditions, transportation and cold chain preservation as it was mentioned in methods, in our study samples were kept during the whole procedure and transportation at room temperature. Also, combination of insufficient concentration of viral RNA and decreased quality of RNA in DBS specimens can explain our low PCR amplification rate. Nonetheless, in our study, there were no statistically differences in viral load between amplificated and non amplificated samples. McNulty et al. demonstrated also the same rate of amplification of HIV-1 <italic>pol</italic> in DBS among Cameroonian HIV infected people that were stratified according different plasma viral load (from 5.000 to &gt;50.000 copies/ml) <xref ref-type="bibr" rid="pone.0047391-McNulty1">[30]</xref>. Moreover, although filter paper were packed in glycine envelopes with desiccants to keep them dry, more than half of the samples (62%) received in our research lab in Terrassa had a humidity degree of 30% or higher, according humidity indicators. We hypothesized that such a high humidity degree was due, at least in part, because Busia OR study was performed during rainy season. Contradictory results in the literature suggest that some degradation of RNA may have occurred during long-term storage at 48°C possibly due to suboptimal storage temperature, humidity or both. High humidity conditions are thought to be detrimental to resistance testing from DBS given the extreme sensitivity of HIV nucleic acids to degradation in the presence of humidity <xref ref-type="bibr" rid="pone.0047391-Youngpairoj1">[14]</xref>.</p>
+      <p>Although resistance mutation patterns were not available among the whole samples sequenced, genotypic results were concordant with ARV treatment received by failing patients, which is either nevirapine/d4T/3TC or nevirapine/AZT/3TC (<xref ref-type="table" rid="pone-0047391-t003">Table 3</xref>). Resistance mutations profile allowed us to switch ART to a second-line therapy based on a backbone of either tenofovir/FTC or ABC/ddI with a boosted protease inhibitor (lopinavir). The majority of samples amplified from failing patients carried out M184V RAM (high level resistance to 3TC/FTC), NNRTI resistance associated mutations (cross resistance to NVP and EFV), as well as several thymidine analogue resistance mutations (TAMS), conferring different degrees of resistance to NRTIs.</p>
+      <p>The absence of any relevant resistance mutation among three patients probably corresponds to patients who did not take medication at all, reinforcing the importance of treatment adherence in the context of lack of regular access to VL monitoring and genotype. Intensive therapeutic education, counselling and psychosocial support might explain the very low rate of lost-to follow-up patients observed, thus emphasizing that human resources remain a key factor in resource-limited settings.</p>
+      <p>The mutations observed were those expected under the first-line regimen used, and the great majority of patients were resistant to nevirapine/efavirenz (100%), lamivudine (100%) and stavudine (83%). Overall, these observations are similar to other first-line cohort studies in RLS describing HIV-1 mutation patterns <xref ref-type="bibr" rid="pone.0047391-Ferradini2">[20]</xref>, <xref ref-type="bibr" rid="pone.0047391-Bourgeois1">[31]</xref>, <xref ref-type="bibr" rid="pone.0047391-Laurent1">[32]</xref>, suggesting that switch after a first-line ART failure in RLS might be feasible without a genotypic test. However, some authors have warned about the fact that d4T-based initial therapy in patients infected with subtype C virus selects for a broader array of mutations, including the K65R mutation, conferring resistance to d4T, ddI, ABC, 3TC, FTC, and TDF <xref ref-type="bibr" rid="pone.0047391-Hosseinipour1">[10]</xref>. Subtypes profile found in our study are very concordant with results of a multicenter study carried out in four African cities, one of them closer from Busia (subtype distribution in Busia and Kisumu were 72% vs. 71%, 22% vs. 20% and 5,6% vs. 2% for A, D and G respectively) <xref ref-type="bibr" rid="pone.0047391-Morison1">[33]</xref>.</p>
+      <p>The accumulation of thymidine analogue and other resistance mutations can confer cross-resistance to many, and possibly, to all NRTIs that might be used in a second line-regimen. This phenomenon may be less likely when tenofovir is included in the first-line regimen. However, despite WHO 2010 recommendations, tenofovir is still commonly unaffordable in RLS. This data, together with our findings showing high TAMS mutation rate in our cohort, as well as the high rate of d4T-related polineuropathy–data not shown-, suggest that in RLS we desperately need other changes to make treatment more comparable to that in industrialised countries. We should consider moving away from d4T, rarely used in the North, to the easier tenofovir, although it would also cost more money (tenofovir currently costs four times more).</p>
+      <p>UNAIDS 2010 global report have included important key elements to improve the efficiency and quality of HIV treatment and care: a) start ARV therapy earlier, b) use less toxic and more patient-friendly options (fixed dose combinations) and c) use of laboratory monitoring tools such as CD4 and viral load counts. Nevertheless, introduction of safer but currently more expensive first-line ARTs, as well as viral load monitoring, needs to be phased-in as currently they may not be feasible or affordable in many high-burden settings with low coverage, less developed health systems, limited laboratory capacity, finite budgets and competing health priorities.</p>
+      <p>Newer guidelines <xref ref-type="bibr" rid="pone.0047391-WHO2">[34]</xref> suggest also starting one of the following regimens in ART-naïve individuals eligible for treatment: AZT + 3TC + EFV; AZT + 3TC + NVP; TDF + 3TC or FTC + EFV, TDF + 3TC or FTC + NVP. A boosted protease inhibitor (PI/r) plus two nucleoside analogues (ZDV, 3TC and tenofovir as a NRTI backbone) are recommended for second-line ART, being ATV/r and LPV/r the preferred boosted PI's. The main objective of these recommendations try to avoid the disfiguring, unpleasant and potentially life threatening toxicity of d4T, the need to select regimens suitable for use in most patient groups, and the benefits of using fixed dose combinations. Therefore, with the increasing need for availability of second-line regimens, there is a reasonable argument in support of the widespread, rational use of viral load testing. Although still expensive for RLS at present, it has the potential to prevent unnecessary switches to expensive second line therapies.</p>
+      <p>Although recent modelling study support little added survival benefit to the addition of laboratory viral load monitoring compared with clinical monitoring alone <xref ref-type="bibr" rid="pone.0047391-Phillips1">[35]</xref>, not only early survival need to be considered <xref ref-type="bibr" rid="pone.0047391-Sigaloff1">[36]</xref>. The long term consequences of high viral load must be calibrated. High viral load on treatment is associated with a greater probability of developing resistance. Therefore, despite that, according some data, from a survival point of view benefits from viral load monitoring might be modest, the accumulation of resistance mutations will confer difficulties to find a cost-effective subsequent treatment regimens, especially in settings with limited second line options and where people will still need decades of therapy. Moreover, the same modelling strategy authors have demonstrated in a more recent study that to preserve current first line drugs as widespread treatment options for future generations, there is a long term need for introduction of some form of cheap, practical, and sustainable viral load monitoring in resource limited settings which can be used in rural as well as urban settings. Also, their results indicated that even very infrequent (e.g. 3 yearly) testing, is likely to provide significant benefit in reducing resistance transmission <xref ref-type="bibr" rid="pone.0047391-Phillips2">[37]</xref>.</p>
+      <p>In this regard, recently, some authors have presented data from an operational research trial in Zambia, aiming to ascertain the added value of routine viral load testing. This cluster randomized trial of routine versus discretionary (if clinical failure criteria met) viral load monitoring among adults starting ARV therapy, demonstrated that routine viral load testing clearly limits the amount of time spent on a failing regimen in RLS. Time between virological failure and change of the regimen to second line treatment among routine viral load testing group was 168 days compared with 560 days among control group, thus with substantially less time (&gt;1 year) on a failing regimen and higher rate of change to a second line regimen <xref ref-type="bibr" rid="pone.0047391-Saag1">[38]</xref>. Results of the resistance and cost-effective analysis are still pending, and they will provide important information on the costs of that delay for future treatment options.</p>
+    </sec>
+    <sec id="s5">
+      <title>Conclusion</title>
+      <p>We have long known of increased mortality in African patients on ART compared with outcomes elsewhere. A conclusion would seem that if the future is to be different, we have to intervene earlier. Current worldwide expansion of ARV therapy for HIV in resource-limited countries entails new challenges to be considered. More than 6,5 million people are receiving ART, with the majority of patients on treatment worldwide now being from resource limited settings. Important treatment-related issues identified by several scientific communities, such as when to switch therapies, long-term consequences of virological failure after current first ART strategy, toxicity, adherence, drug-drug interactions or optimal treatment of pregnant women, need to be addressed immediately.</p>
+      <p>Moreover, controversial issues about comprehensive laboratory monitoring such as routine monitoring viral load for safety and efficacy in these settings should be elucidated. VL testing could increase in importance as a guide for clinical decisions on when to switch to second-line treatment and on how to optimize the duration of the first-line treatment regimen, minimizing the impact of ARV resistance mutations on treatment. Therefore, now we must pay attention to monitoring to limit the costs associated with widespread use of expensive second-line therapy, ensuring that VL testing becomes affordable, simple and easy to use in RLS.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>Other members of Busia OR Study Group: M. Mugendi, A. Alvarez, E. Velilla, P.P. Palma, M. Mwau and O. Yun. We would like to acknowledge the support of the MSF staff in Busia, especially Dr. Victor Piriz, Mrs. Caroline Odunga, and Mr. Juma Oulo Mashala, and all the patients included in the study, without whom this study would not have been possible.</p>
+      <p>This work was presented in part at the XVIII HIV International Drug Resistance Workshop, Fort Myers, Florida, June 2009. Antiviral Therapy 2009;14 <bold>Suppl</bold> 1:A188.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pone.0047391-Margot1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">Margot NA, Lu B, Miller MD, Study 903 Team</collab> (<year>2006</year>) <article-title>Resistance development over 144 weeks in treatment-naive patients receiving tenofovir disoproxil fumarate or stavudine with lamivudine and efavirenz in Study 903</article-title>. <source>HIV Med</source> <volume>7</volume>: <fpage>442</fpage>–<lpage>450</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Gallant1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gallant</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>DeJesus</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Arribas</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Pozniak</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Gazzard</surname><given-names>B</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Tenofovir DF, emtricitabine, and efavirenz vs. zidovudine, lamivudine and efavirenz for HIV</article-title>. <source>N Engl J Med</source> <volume>354</volume>: <fpage>251</fpage>–<lpage>260</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Gulick1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">Gulick R, Ribaudo H, for the AIDS Clinical Trials Group Study A5095 Team</collab> (<year>2004</year>) <article-title>Triple nucleoside regimens versus efavirenz containing regimens for the initial treatment of HIV-1 infection</article-title>. <source>N Engl J Med</source> <volume>350</volume>: <fpage>1850</fpage>–<lpage>1861</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Marconi1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Marconi</surname><given-names>VC</given-names></name>, <name name-style="western"><surname>Sunpath</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Lu</surname><given-names>Z</given-names></name>, <name name-style="western"><surname>Gordon</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Koranteng-Apeagyei</surname><given-names>K</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>South Africa Resistance Cohort Study Team. Prevalence of HIV-1 drug resistance after failure of a first highly active antiretroviral therapy regimen in KwaZulu Natal, South Africa</article-title>. <source>Clin Infect Dis</source> <volume>46</volume>: <fpage>1589</fpage>–<lpage>1597</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Sungkanuparph1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sungkanuparph</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Manosuthi</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Kiertiburanakul</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Piyavong</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Chumpathat</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Options for the second antiretroviral regimen for HIV-infected patients whose initial regimen of a fixed-dose combination of stavudine, lamivudine, and nevirapine fails</article-title>. <source>Clin Infect Dis</source> <volume>44</volume>: <fpage>447</fpage>–<lpage>452</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-DART1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><collab xlink:type="simple">DART Virology Group and Trial Team</collab> (<year>2006</year>) <article-title>Virological response to a triple nucleoside/nucleotide analogue regime over 48 weeks in HIV-1 infected adults in Africa</article-title>. <source>AIDS</source> <volume>20</volume>: <fpage>1291</fpage>–<lpage>1299</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Sung1">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sung</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Jung</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Kang</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Baie</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Chang</surname><given-names>H</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>High frequency of drug resistance mutations in human immunodeficiency virus type-1 infected Korean patients treated with HAART</article-title>. <source>AIDS Res Hum Retroviruses</source> <volume>23</volume>: <fpage>1223</fpage>–<lpage>1229</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Ferradini1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ferradini</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Jeannin</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Pinoges</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Izopet</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Odhiambo</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Scaling up of highly active antiretroviral therapy in a rural district of Malawi: an effectiveness assessment</article-title>. <source>Lancet</source> <volume>367</volume>: <fpage>1335</fpage>–<lpage>1342</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Brenner1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Brenner</surname><given-names>BG</given-names></name>, <name name-style="western"><surname>Oliveire</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Doualla-Bell</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Moisi</surname><given-names>DD</given-names></name>, <name name-style="western"><surname>Ntemgwa</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>HIV-1 subtype C viruses rapidly develop K65R resistance to tenofovir in cell culture</article-title>. <source>AIDS</source> <volume>20</volume>: <fpage>F9</fpage>–<lpage>F13</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Hosseinipour1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hosseinipour</surname><given-names>MC</given-names></name>, <name name-style="western"><surname>van Oosterhout</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Weigel</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Phiri</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kamwendo</surname><given-names>D</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>The public health approach to identify antiretroviral therapy failure: high-level nucleoside reverse transcriptase inhibitor resistance among Malawians failing first-line antiretroviral therapy. AIDS</article-title>. <source>Jun 1</source> <volume>23(9)</volume>: <fpage>1127</fpage>–<lpage>34</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Petti1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Petti</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Polage</surname><given-names>CR</given-names></name>, <name name-style="western"><surname>Quinn</surname><given-names>TC</given-names></name>, <name name-style="western"><surname>Ronald</surname><given-names>AR</given-names></name>, <name name-style="western"><surname>Sande</surname><given-names>MA</given-names></name> (<year>2006</year>) <article-title>Laboratory medicine in Africa: a barrier to effective health care</article-title>. <source>Clin Infect Dis</source> <volume>42</volume>: <fpage>377</fpage>–<lpage>82</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-WHO1">
+        <label>12</label>
+        <mixed-citation publication-type="other" xlink:type="simple">WHO (2007) Prioritizing second line antiretroviral drugs for adults and adolescents: a public health approach. Report of a WHO Working Group Meeting. Geneva: WHO.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Masciotra1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Masciotra</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Garrido</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Youngpairoj</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>McNulty</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Zahonero</surname><given-names>N</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>High concordance between HIV-1 drug resistance genotypes generated from plasma and dried blood spots in antiretroviral-experienced patients. AIDS</article-title>. <source>Nov 30</source> <volume>21(18)</volume>: <fpage>2503</fpage>–<lpage>11</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Youngpairoj1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Youngpairoj</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Masciotra</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Garrido</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Zahonero</surname><given-names>N</given-names></name>, <name name-style="western"><surname>de Mendoza</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>HIV-1 drug resistance genotyping from dried blood spots stored for 1 year at 4 degrees C. J Antimicrob Chemother</article-title>. <source>Jun</source> <volume>61(6)</volume>: <fpage>1217</fpage>–<lpage>20</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Squires1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Squires</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Lazzarin</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Gatell</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Powderly</surname><given-names>WG</given-names></name>, <name name-style="western"><surname>Pokrovskiy</surname><given-names>V</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Comparison of once-daily atazanavir with efavirenz, each in combination with fixed-dose zidovudine and lamivudine, as initial therapy for patients infected with HIV</article-title>. <source>J Acquir Immune Defic Syndr</source> <volume>36</volume>: <fpage>1011</fpage>–<lpage>19</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Stosor1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stosor</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Palella</surname><given-names>FJ</given-names></name>, <name name-style="western"><surname>Berzins</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Till</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Leake</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Transient Viremia in HIV-Infected Patients and Use of Plasma Preparation Tubes Clin Infect Dis</article-title>. <volume>41</volume>: <fpage>1671</fpage>–<lpage>4</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Elbeik1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Elbeik</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Nassos</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Kipnis</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Haller</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Ngi</surname><given-names>Vl</given-names></name> (<year>2005</year>) <article-title>Evaluation of the VACUTAINER PPT Plasma Preparation Tube for Use with the Bayer VERSANT Assay for Quantification of Human Immunodeficiency Virus Type 1 RNA. J Clin Microbiol, Aug</article-title>. <volume>48(8)</volume>: <fpage>3769</fpage>–<lpage>71</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-GarcaBujalance1">
+        <label>18</label>
+        <mixed-citation publication-type="other" xlink:type="simple">García-Bujalance S, Ladrón de Guevara C, González-García J, Arribas JR, Zamora F, <etal>et al</etal>.. (2007) Elevation of viral load by PCR and use of plasma preparation tubes for quantification of human immunodeficiency virus type 1. J Microbiol Methods. May 69(2):384–6. Epub 2007 Feb 7.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Antiretroviral1">
+        <label>19</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Antiretroviral therapy for HIV infection in adults and adolescents. Recommendations for a public health approach (2010) Available: <ext-link ext-link-type="uri" xlink:href="http://www.who.int/hiv/pub/guidelines/artadultguidelines.pdf" xlink:type="simple">http://www.who.int/hiv/pub/guidelines/artadultguidelines.pdf</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Ferradini2">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ferradini</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Laureillard</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Prak</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Ngethd</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Fernandez</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Positive outcomes of HAART at 24 months in HIV-infected patients in Cambodia</article-title>. <source>AIDS</source> <volume>21</volume>: <fpage>2293</fpage>–<lpage>2301</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Ivers1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ivers</surname><given-names>LC</given-names></name>, <name name-style="western"><surname>Kendrick</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Doucette</surname><given-names>K</given-names></name> (<year>2005</year>) <article-title>Efficacy of antiretroviral therapy programmes in resource poor settings: a meta-analysis of the published literature</article-title>. <source>Clin Infect Dis</source> <volume>41</volume>: <fpage>217</fpage>–<lpage>224</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Sow1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sow</surname><given-names>PS</given-names></name>, <name name-style="western"><surname>Otieno</surname><given-names>LF</given-names></name>, <name name-style="western"><surname>Bissagnene</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Kityo</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Bennink</surname><given-names>R</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Implementation of an antiretroviral access program for HIV-infected individuals in resource-limited settings: clinical results from 4 African countries</article-title>. <source>J Acquir Immune Defic Syndr</source> <volume>44</volume>: <fpage>262</fpage>–<lpage>267</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Bartlett1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bartlett</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>DeMasi</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Quinn</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Moxham</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Rousseau</surname><given-names>F</given-names></name> (<year>2001</year>) <article-title>Overview of the effectiveness of triple combination therapy in antiretroviral-naive HIV-1 infected adults</article-title>. <source>AIDS</source> <volume>15</volume>: <fpage>1369</fpage>–<lpage>1377</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Bartlett2">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bartlett</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Buda</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Von</surname><given-names>SB</given-names></name>, <name name-style="western"><surname>Mauskopf</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Davis</surname><given-names>EA</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Minimizing resistance consequences after virologic failure on initial combination therapy: a systematic overview</article-title>. <source>J Acquir Immune Defic Syndr</source> <volume>41</volume>: <fpage>323</fpage>–<lpage>331</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Severe1">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Severe</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Leger</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Charles</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Noel</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Bonhomme</surname><given-names>G</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Antiretroviral therapy in a thousand patients with AIDS in Haiti</article-title>. <source>N Engl J Med</source> <volume>353</volume>: <fpage>2325</fpage>–<lpage>2334</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-WoolsKaloustian1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wools-Kaloustian</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Kimaiyo</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Diero</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Siika</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Sidle</surname><given-names>J</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>Viability and effectiveness of large-scale HIV treatment initiatives in sub-saharan Africa: experience from western Kenya</article-title>. <source>AIDS</source> <volume>20</volume>: <fpage>41</fpage>–<lpage>48</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Monleau1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Monleau</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Butel</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Delaporte</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Boillot</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Peeters</surname><given-names>M</given-names></name> (<year>2010</year>) <article-title>Effect of storage conditions of dried plasma and blood spots on HIV-1 RNA quantification and PCR amplification for drug resistance genotyping. J Antimicrob Chemother</article-title>. <volume>(8)</volume>: <fpage>1562</fpage>–<lpage>6</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Pieniazek1">
+        <label>28</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Pieniazek D, Ziebell R, Kline R, Bodnar U, Prejean J, <etal>et al</etal>.. (2010) HIV-1 Drug Resistance Genotyping and Subtyping Using Dried Fluid Spots, United States, 2005–2009. [Abstract 569]. In: Programs and Abstracts, 17th Conference on Retroviruses and Opportunistic Infections, February 2010, San Francisco (California), USA.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-GarcaLerma1">
+        <label>29</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>García-Lerma</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>McNulty</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Jennings</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Huang</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Heneine</surname><given-names>W</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Rapid decline in the efficiency of HIV drug resistance genotyping from dried blood spots (DBS) and dried plasma spots (DPS) stored at 378C and high humidity</article-title>. <source>J Antimicrob Chemother 2009</source> <volume>64</volume>: <fpage>33</fpage>–<lpage>6</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-McNulty1">
+        <label>30</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>McNulty</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Jennings</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Bennett</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Fitzgibbon</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Bremer</surname><given-names>JW</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>Evaluation of Dried Blood Spots for Human Immunodeficiency Virus Type 1 Drug Resistance Testing</article-title>. <source>J Clin Microbiol, Feb</source> <volume>45(2)</volume>: <fpage>517</fpage>–<lpage>21</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Bourgeois1">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bourgeois</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Laurent</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Mougnutou</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Nkoue</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Lactuock</surname><given-names>B</given-names></name>, <etal>et al</etal>. (<year>2005</year>) <article-title>Field assessment of generic antiretroviral drugs: a prospective cohort study in Cameroon</article-title>. <source>Antiv Ther</source> <volume>10</volume>: <fpage>335</fpage>–<lpage>341</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Laurent1">
+        <label>32</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Laurent</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Kouanfack</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Koulla-Shiro</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Nkoue</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Bourgeois</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2004</year>) <article-title>Effectiveness and safety of a generic fixed-dose combination of nevirapine, stavudine, and lamivudine in HIV-1 infected adults in Cameroon: open-label multicentre trial</article-title>. <source>Lancet</source> <volume>364</volume>: <fpage>29</fpage>–<lpage>34</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Morison1">
+        <label>33</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Morison</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Buve</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Zekeng</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Heindrickx</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Anagonou</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2001</year>) <article-title>HIV-1 subtypes and the HIV epidemics in four cities in sub-Saharan Africa. AIDS</article-title>. <source>Aug</source> <volume>15</volume> Suppl 4<fpage>S109</fpage>–<lpage>16</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-WHO2">
+        <label>34</label>
+        <mixed-citation publication-type="other" xlink:type="simple">WHO (2009) Antiretroviral therapy for HIV infection in adults and adolescents in resource-limited settings: toward universal access. Recommendations for a public health approach. 2009 ed. Geneva, Switzerland: WHO. Available: <ext-link ext-link-type="uri" xlink:href="http://www.who.int/hiv/pub/arv/rapid_advice_art.pdf" xlink:type="simple">http://www.who.int/hiv/pub/arv/rapid_advice_art.pdf</ext-link>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Phillips1">
+        <label>35</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Phillips</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Pillay</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Miners</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Bennett</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Gilks</surname><given-names>C</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Outcomes from monitoring of patients on antiretroviral therapy in resource-limited settings with viral load, CD4 cell count, or clinical observation alone: a computer simulation model</article-title>. <source>Lancet</source> <volume>371</volume>: <fpage>1443</fpage>–<lpage>1451</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Sigaloff1">
+        <label>36</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sigaloff</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Hamers</surname><given-names>RL</given-names></name>, <name name-style="western"><surname>Wallis</surname><given-names>CL</given-names></name>, <name name-style="western"><surname>Kityo</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Siwale</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Unnecessary antiretroviral treatment switches and accumulation of HIV resistance mutations; two arguments for viral load monitoring in Africa</article-title>. <source>JAIDS</source> <volume>58</volume>: <fpage>23</fpage>–<lpage>31</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Phillips2">
+        <label>37</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Phillips A, Pillay D, Garnett G, Bennett D, Vitoria M, <etal>et al</etal>.. (2010) Predicted Effect on Transmission of HIV-1 Resistance of Timing of Implementation of Viral Load Monitoring to Determine Switches from First to Second Line Antiretroviral Regimens in Resource-limited Settings. [Abstract 596]. In: Programs and Abstracts, 17th Conference on Retroviruses and Opportunistic Infections, February 2010, San Francisco (California), USA.</mixed-citation>
+      </ref>
+      <ref id="pone.0047391-Saag1">
+        <label>38</label>
+        <mixed-citation publication-type="other" xlink:type="simple">Saag M, Westfall A, Luhanga D, Mulenga P, Chi B, <etal>et al</etal>.. (2012) A cluster randomized trial of routine vs discretionary viral load monitoring among adults starting ART: Zambia. [abstract 87]. In: Program and Abstracts, 19th Conference on Retroviruses and Opportunistic Infections, March 2012, Seattle (Washington State), USA.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

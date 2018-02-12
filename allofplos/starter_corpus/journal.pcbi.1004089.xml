@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="3.0" xml:lang="en" article-type="research-article">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS Comput Biol</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">ploscomp</journal-id>
+<journal-title-group>
+<journal-title>PLOS Computational Biology</journal-title>
+</journal-title-group>
+<issn pub-type="ppub">1553-734X</issn>
+<issn pub-type="epub">1553-7358</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PCOMPBIOL-D-14-01476</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pcbi.1004089</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Delayed Response and Biosonar Perception Explain Movement Coordination in Trawling Bats</article-title>
+<alt-title alt-title-type="running-head">Biosonar Movement Coordination in Trawling Bats</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Giuggioli</surname> <given-names>Luca</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>McKetterick</surname> <given-names>Thomas J.</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="aff" rid="aff002"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Holderied</surname> <given-names>Marc</given-names></name>
+<xref ref-type="aff" rid="aff003"><sup>3</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<label>1</label>
+<addr-line>Bristol Centre for Complexity Sciences, University of Bristol, Bristol, United Kingdom</addr-line>
+</aff>
+<aff id="aff002">
+<label>2</label>
+<addr-line>School of Biological Sciences, University of Bristol, Bristol, United Kingdom</addr-line>
+</aff>
+<aff id="aff003">
+<label>3</label>
+<addr-line>Department of Engineering Mathematics, University of Bristol, Bristol, United Kingdom</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Ayers</surname> <given-names>Joseph</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>Northeastern University, United States of America</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: LG MH. Performed the experiments: LG MH. Analyzed the data: TJM LG MH. Contributed reagents/materials/analysis tools: MH LG. Wrote the paper: LG MH.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">marc.holderied@bristol.ac.uk</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<month>3</month>
+<year>2015</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>26</day>
+<month>3</month>
+<year>2015</year>
+</pub-date>
+<volume>11</volume>
+<issue>3</issue>
+<elocation-id>e1004089</elocation-id>
+<history>
+<date date-type="received">
+<day>13</day>
+<month>8</month>
+<year>2014</year>
+</date>
+<date date-type="accepted">
+<day>15</day>
+<month>12</month>
+<year>2014</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2015</copyright-year>
+<copyright-holder>Giuggioli et al</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pcbi.1004089" xlink:type="simple"/>
+<abstract>
+<p>Animal coordinated movement interactions are commonly explained by assuming unspecified social forces of attraction, repulsion and alignment with parameters drawn from observed movement data. Here we propose and test a biologically realistic and quantifiable biosonar movement interaction mechanism for echolocating bats based on spatial perceptual bias, i.e. actual sound field, a reaction delay, and observed motor constraints in speed and acceleration. We found that foraging pairs of bats flying over a water surface swapped leader-follower roles and performed chases or coordinated manoeuvres by copying the heading a nearby individual has had up to 500 ms earlier. Our proposed mechanism based on the interplay between sensory-motor constraints and delayed alignment was able to recreate the observed spatial actor-reactor patterns. Remarkably, when we varied model parameters (response delay, hearing threshold and echolocation directionality) beyond those observed in nature, the spatio-temporal interaction patterns created by the model only recreated the observed interactions, i.e. chases, and best matched the observed spatial patterns for just those response delays, hearing thresholds and echolocation directionalities found to be used by bats. This supports the validity of our sensory ecology approach of movement coordination, where interacting bats localise each other by active echolocation rather than eavesdropping.</p>
+</abstract>
+<abstract abstract-type="summary">
+<title>Author Summary</title>
+<p>Collective movements of flocking birds or shoaling fish are amongst the most fascinating natural phenomena, and everyone has experienced the challenges of walking through a moving crowd. What information individuals use for movement coordination is, however, very difficult to know, except for echolocating bats. These flying mammals perceive their surroundings by emitting loud and high-pitched biosonar calls and listening for the returning echoes. Because bat biosonar imaging is much sparser in information than vision, we can accurately measure the biosonar calls of interacting bats with a group of microphones and then calculate what each of the individuals perceived. When observing pairs of Daubenton’s bats foraging low over water for stranded insects, we found they have intriguing ‘traffic rules’—they chase each other, perform tandem turns and even slow down to avoid collision. When we then modelled their biosonar view of the surroundings during these interactions we discovered that one simple trick suffices to create all their interactive behaviours: once another individual is close enough for your biosonar to pick up its echo, copy this individual’s flight direction within 4–5 of your own wingbeats.</p>
+</abstract>
+<funding-group>
+<funding-statement>LG and TJM acknowledge support from EPSRC grant EP/I013717/1, and MH from BBSRC grant BB/F002386/1. This work was also supported by an Engineering Faculty Research Fund and a summer studentship from the School of Biological Sciences at Bristol. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="4"/>
+<table-count count="1"/>
+<page-count count="21"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability" xlink:type="simple">
+<meta-name>Data Availability</meta-name>
+<meta-value>The data used in this study are available on Movebank (movebank.org, study name “Movement coordination in trawling bats (data from Giuggioli *et al.* 2015)”) and are published in the Movebank Data Repository with DOI 10.5441/001/1.62h1f7k9.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Group movement patterns are dependent on perceptual inputs, governed by cognitive mechanisms, and constrained by the motor abilities of the interacting agents [<xref ref-type="bibr" rid="pcbi.1004089.ref001">1</xref>–<xref ref-type="bibr" rid="pcbi.1004089.ref004">4</xref>]. The intrinsic sequential occurrence of these three stages gives rise to delayed movement responses [<xref ref-type="bibr" rid="pcbi.1004089.ref005">5</xref>]. Current collective movement interpretations acknowledge such delays [<xref ref-type="bibr" rid="pcbi.1004089.ref006">6</xref>–<xref ref-type="bibr" rid="pcbi.1004089.ref009">9</xref>], but to explain observed patterns the existence of generic, albeit plausible, interaction rules are postulated. Since individual decisions depend on the information about the actions of other conspecifics [<xref ref-type="bibr" rid="pcbi.1004089.ref010">10</xref>–<xref ref-type="bibr" rid="pcbi.1004089.ref014">14</xref>] and movement response are shaped by an animal’s sensory-motor abilities, it is however biologically most realistic to explain interaction exclusively from perception biases and delayed responses without inferring social forces from the observed movements.</p>
+<p>Even though various models are capable of capturing many of the emerging features of coordinated movement patterns, the individual behavioural rules are heuristics of the underlying mechanisms. There is awareness that more biologically oriented experimental analysis and modelling is necessary [<xref ref-type="bibr" rid="pcbi.1004089.ref015">15</xref>]. Recent experimental studies on golden shiners (<italic>Notemigonus crysoleucas</italic>) [<xref ref-type="bibr" rid="pcbi.1004089.ref016">16</xref>] have indicated that speed regulation along the direction of travel appears a more dominant component of the interaction compared to alignment, whereas studies in mosquitofish reported the lack of any justifiable alignment rule [<xref ref-type="bibr" rid="pcbi.1004089.ref017">17</xref>]. From three-dimensional stereographic images of starling flocks [<xref ref-type="bibr" rid="pcbi.1004089.ref018">18</xref>], evidence of a topological rather than a metric interaction rule was brought to the fore, i.e. individuals interacted with an average of six or seven neighbours rather than every conspecific within a certain distance. Other network topologies have also been proposed recently based on animal communication across a ‘Voronoi shell’ of nearest-neighbours [<xref ref-type="bibr" rid="pcbi.1004089.ref019">19</xref>] or the network of visible neighbours estimated from a ray-casting algorithm around a fish eye [<xref ref-type="bibr" rid="pcbi.1004089.ref020">20</xref>]. Other investigations have also questioned the assumptions about how individuals perceive and integrate information from their neighbours. Experiments on saithe (<italic>Pollachius virens</italic>) pointed to the importance of the use of lateral line compared to vision on school structure and dynamics [<xref ref-type="bibr" rid="pcbi.1004089.ref021">21</xref>].</p>
+<p>All these recent efforts point to the importance of sensory inputs that shape an animal’s movement decisions. Animal species that use an active sensory modality, such as echolocation, offer an opportunity to tap directly into the source of this sensory information. Active-sensing, compared to passive, requires the emission of a signal whose spatial propagation is governed by quantifiable physical laws [<xref ref-type="bibr" rid="pcbi.1004089.ref022">22</xref>]. Therefore, once the call intensity and echolocation directionality of an echolocating species are known, it is possible to infer with sufficient accuracy over what spatial range individuals can detect and track each other, either by active sensing or, over greater distances, by eavesdropping on the others’ signals [<xref ref-type="bibr" rid="pcbi.1004089.ref023">23</xref>–<xref ref-type="bibr" rid="pcbi.1004089.ref025">25</xref>].</p>
+<p>Here we introduce and test the biosonar movement interaction (BSMI) hypothesis, whereby bats interact with conspecifics, to perform coordinated flight, based on the information collected by their biosonar and not by eavesdropping. While foraging, bats send out sonar search pulses several times per second. Whenever a sound pulse hits an object an echo is generated, which then travels back to the bat who interprets the echo for target detection, recognition and localisation. Because real objects do not reflect all the impinging sound back to the echolocator (target strength &lt; 1) and because the sound has to travel the bat-object distance twice incurring double propagation losses, the biosonar survey range is limited to several meters at best (see e.g. [<xref ref-type="bibr" rid="pcbi.1004089.ref024">24</xref>, <xref ref-type="bibr" rid="pcbi.1004089.ref026">26</xref>, <xref ref-type="bibr" rid="pcbi.1004089.ref027">27</xref>]). The spatial profile of biosonar is therefore determined by the amplitude of the biosonar pulses and by the directionality of sound emission as well as the directionality of bat hearing, where the biosonar detection range is greatest on axis and drops off towards either side. The core of the BSMI hypothesis is thus that the directional spatial profiles of the individuals’ biosonar fields determine the animals’ mutual positions and headings during movement interactions, with the information obtained via eavesdropping having a minor role in movement coordination. Note that by eavesdropping we mean locating conspecifics by listening to their echolocation calls [<xref ref-type="bibr" rid="pcbi.1004089.ref023">23</xref>] and not locating oneself by trailing a conspecific and extracting information from the echoes resulting from their calls [<xref ref-type="bibr" rid="pcbi.1004089.ref028">28</xref>].</p>
+<p>Sound field emission profiles of echolocating bats have been documented in various species [<xref ref-type="bibr" rid="pcbi.1004089.ref029">29</xref>] including Daubenton’s bat, <italic>Myotis daubentonii</italic>, our study animal. This widespread medium-sized species [<xref ref-type="bibr" rid="pcbi.1004089.ref030">30</xref>] has been selected for two reasons. On one hand, the animal’s cognitive abilities allow for rich behavioural patterns. On the other hand, its habit to forage low over still water surfaces to glean arthropod prey [<xref ref-type="bibr" rid="pcbi.1004089.ref031">31</xref>] reduces the spatio-temporal complexity of the interactions to just a two-dimensional plane.</p>
+<p>To test our BSMI hypothesis we collected movement trajectories of Daubenton’s bat pairs foraging freely in the wild. Based on these observations, we proceeded in three steps: (<bold>i</bold>), (<bold>ii</bold>), and (<bold>iii</bold>). First, we built a behavioural classifier (<bold>i</bold>) based solely on the paired movement paths, which segments these movement trajectories into different behaviours, and determines actor-reactor roles by extracting response delays. We then tested the BSMI hypothesis by comparing the relative positions of the interacting bats with the calculated biosonar perception field (<bold>ii</bold>). Finally, we constructed and tested a BSMI model of interacting bats (<bold>iii</bold>) whereby the mechanisms of interaction are based exclusively on aerodynamic constraints. i.e. actual speed and acceleration, and sensory inputs, i.e. the known spatial extent of the sonar perception field. The quality of the BSMI model is judged against its ability to reproduce the observed spatio-temporal interaction dynamics of the bats.</p>
+</sec>
+<sec id="sec002" sec-type="results">
+<title>Results</title>
+<p>We recorded flight interactions of foraging Daubenton’s bats flying in the South-West corner of Barrow Tanks reservoir number three near Barrow Gurney in England. The experimental set-up allowed for a 20 ms temporal resolution of flight tracking (see <xref ref-type="sec" rid="sec004">Methods</xref> section). The recordings were taken over 10 evenings in the summer of 2009: June 15<sup>th</sup>, 22<sup>nd</sup>, 29<sup>th</sup>; July 1<sup>st</sup>, 7<sup>th</sup>, 8<sup>th</sup>, 9<sup>th</sup>, 15<sup>th</sup>; and August 19<sup>th</sup> and 25<sup>th</sup>. Overall we collected nearly 70,000 individual data points (fixes) including 70 interactions as displayed in <xref ref-type="table" rid="pcbi.1004089.t001">Table 1</xref>.</p>
+<table-wrap id="pcbi.1004089.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1004089.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Summary of the entire experimental dataset.</title>
+</caption>
+<alternatives>
+<graphic id="pcbi.1004089.t001g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.t001"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"/>
+<th align="left" rowspan="1" colspan="1">Individual Flight</th>
+<th align="left" rowspan="1" colspan="1">Paired Flight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">Data points</td>
+<td align="left" rowspan="1" colspan="1">60202</td>
+<td align="left" rowspan="1" colspan="1">9134</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Trajectories</td>
+<td align="left" rowspan="1" colspan="1">405</td>
+<td align="left" rowspan="1" colspan="1">70</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Coordinated Flight (% of data)</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">22.35</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Coordinated Flight (contributing trajectories)</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">28</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chase Flight (% of data)</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">4.11</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Chase Flight (contributing trajectories)</td>
+<td align="left" rowspan="1" colspan="1">–</td>
+<td align="left" rowspan="1" colspan="1">9</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean Time Flight (s)</td>
+<td align="left" rowspan="1" colspan="1">2.95 ± 2.16</td>
+<td align="left" rowspan="1" colspan="1">1.28 ± 1.19</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean Flight Distance (m)</td>
+<td align="left" rowspan="1" colspan="1">13.20 ± 9.60</td>
+<td align="left" rowspan="1" colspan="1">12.59 ± 12.33</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">Mean Flight Speed (ms<sup>−1</sup>)</td>
+<td align="left" rowspan="1" colspan="1">4.46 ± 1.51</td>
+<td align="left" rowspan="1" colspan="1">4.89 ± 2.14</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+<table-wrap-foot>
+<fn id="t001fn001">
+<p>Breakdown of the original spatio-temporal data into the individual and paired flight trajectories together with mean and standard deviation values of the temporal and spatial length as well as speed of all flights.</p>
+</fn>
+</table-wrap-foot>
+</table-wrap>
+<p>To identify interacting flight behaviour we used two mathematical tools: the <italic>time-dependent delayed correlation</italic> (TDDC) and the <italic>time-dependent delayed separation</italic> (TDDS). For a given point in time, the TDDC compares the heading of one of the bats with the heading of the other at all other times, thus allowing us to establish whether one bat was copying the direction of the other (coordinated flight). Similarly the TDDS compares the position of one of the bats at one time with the position of the other bat at all other times, thus allowing us to specify if one bat was copying the position of the other (chase flight). The remaining data, when no indication of interaction emerged, were deemed unclassified.</p>
+<p>In <xref ref-type="fig" rid="pcbi.1004089.g001">Fig. 1A</xref> we show a sample trajectory (shown also in <xref ref-type="supplementary-material" rid="pcbi.1004089.s001">S1 Video</xref>), whose reaction delays have been extracted from the time-dependent delay directional correlation (TDDC) plot displayed in <xref ref-type="fig" rid="pcbi.1004089.g001">Fig. 1B</xref>—the corresponding time-dependent delay separation (TDDS) plot is not shown in this example as it reveals absence of chase behaviour. The presence of a black dot with coordinates (<italic>t</italic>, <italic>τ</italic>) in the <italic>C</italic><sub><italic>i</italic>,<italic>j</italic></sub>(<italic>t</italic>, <italic>τ</italic>) plot shows that bat <italic>j</italic> has copied the heading of bat <italic>i</italic> with a delay <italic>τ</italic> at time <italic>t</italic>. A straight black line segment indicates that the bats have maintained a constant reaction delay over a certain period of time, whereas an inclined line, e.g. in the intervals 3.14 s &lt; <italic>t</italic> &lt; 3.20 s and 3.50 s &lt; <italic>t</italic> &lt; 3.88 s, illustrates an interaction with changing delay. If the extracted delay turns negative, bat <italic>i</italic> now copies the heading of bat <italic>j</italic> and actor-reactor roles have swapped. In this sample trajectory, this swap has occurred in two stages. At <italic>t</italic> = 1.4 s bat <italic>i</italic> first terminates the nearly parallel flight it was maintaining with bat <italic>j</italic>, and subsequently, at <italic>t</italic> = 1.8 s, tries to align its heading with that of bat <italic>j</italic> (see caption of <xref ref-type="fig" rid="pcbi.1004089.g001">Fig. 1</xref> for more details).</p>
+<fig id="pcbi.1004089.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1004089.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Sample spatio-temporal paired trajectory with the corresponding TDDC function, and observed delay values.</title>
+<p>(A) Example of a paired flight trajectory subsampled for clarity with every other data point from the original 20 ms resolution. Non-grey symbols show interacting flight segments classified as either chase or coordinated flight extracted (see <xref ref-type="sec" rid="sec004">Methods</xref>) from the analysis of the TDDC plot, shown in panel (B), and the TDDS plot (not shown). For a given time and delay the TDDC plot shows the correlation between the headings of the two bats (1 is perfect alignment, 0 occurs when the relative headings is ±90°, -1 represents opposite alignments). Regions of the TTDC plot inside the area demarcated by the 0.95 correlation threshold correspond to relative heading values smaller than 18.2° in magnitude. The colour-coding of the movement paths is obtained from the coordinates (<italic>t</italic>, <italic>τ</italic>) of the disjoint black lines (time-ordered procedure) in panel (b), which assign delay response values between the bats at each instant in time. When no black line is present in the TDDC plot, the behaviour is deemed unclassified and the corresponding movement path in panel (a) is drawn grey. Panel (C) displays the observed delay values of coordinated and chase flights from <italic>all</italic> recorded trajectories through the analysis of the corresponding TDDS and TDDC plots.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.g001"/>
+</fig>
+<p>We analysed those flights which had more than one bat in the field of view of the camera at one time. Our analysis allowed us to classify each recorded data point from all seventy paired trajectories as non-interacting (74%) and interacting behaviour (26%), with the latter further subdivided into chases (4%) and coordinated flights (22%). Non-interacting is the definition given to flight segments where there is low correlation between the headings of the individuals. Coordinated flight is defined as a flight segment with high correlation between the headings of the individuals, and chase flight is a flight segment where one individual occupies the previous positions of another. Note that chase flights are a subset of coordinated flights. As shown in <xref ref-type="fig" rid="pcbi.1004089.g001">Fig. 1C</xref> chase flights and most coordinated flights were characterized by similar response delay values of up to 500 ms, which corresponds to 5–7 biosonar calls, i.e. information updates, at the known average call interval of 70–100 ms [<xref ref-type="bibr" rid="pcbi.1004089.ref032">32</xref>]. One marked distinction between chases and coordinated manoeuvres was in their leader-follower dynamics, synonym here of actor-reactor. During chase flights, the individual ahead was clearly the leader [<xref ref-type="bibr" rid="pcbi.1004089.ref033">33</xref>], as the follower was retracing the movement path of the individual in front. This leader-follower hierarchy was not equally prominent when bats were performing coordinated flights, for example the reactor was not necessarily behind the actor (see e.g. <xref ref-type="supplementary-material" rid="pcbi.1004089.s002">S1 Fig</xref>. panel (f)).</p>
+<p>In summary to realise step (<bold>i</bold>) in the validation of our BSMI hypothesis, we reconstructed movement trajectories from videogrammetry data, analysed the corresponding TDDC and TDDS plots, and extracted the associated delay values. This allowed us to distinguish movement paths among non-interacting flights, chases and coordinated flights. For the last two categories, the sign of the extracted delay values provided the sought actor-reactor roles as a function of time for each interacting paired trajectory (see <xref ref-type="supplementary-material" rid="pcbi.1004089.s002">S1 Fig</xref>. panels (a)-(f) for a graphical representation of the 6 steps of this procedure).</p>
+<p>To quantify alignment dynamics of the interacting bats, in <xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2</xref> we plot bat separation distance, relative heading and relative position [<xref ref-type="bibr" rid="pcbi.1004089.ref019">19</xref>]. Chases were characterised by low separation distances (<xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2B</xref>), high alignment (<xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2C</xref>) and narrow frontal exposure angles (<xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2D</xref>), while coordinated flights occurred over larger separations, wider range of relative headings and only a moderate preference for frontal exposure angles (see <xref ref-type="supplementary-material" rid="pcbi.1004089.s003">S2 Fig</xref>. for the difference in the TDDS and TDDC plots between a coordinated flight and a chase). Unclassified data showed no preference in relative headings and exposure angles, yet comparison with randomised pairing of trajectories (dashed lines) revealed that unclassified data points were overrepresented at separations below 3.5 m and underrepresented above approximately 7 m. This indicated that even non-interacting bats tended to fly closer than random.</p>
+<fig id="pcbi.1004089.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1004089.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Bats’ relative locations with corresponding sound fields and summary statistics of all co-flying bats.</title>
+<p>Panel (A): relative positions of co-flying bats with reactor’s sound fields. Symbols indicate locations of one individual relative to the position (centred) and heading (upwards) of the other: blue for chases, green for coordinated flights, and grey for unclassified behaviour. In the latter case, the individual at the centre is picked at random for each pair. Reactor is in the centre with upward heading with symbols showing actor’s positions and with red lines representing isocontours of the reactor’s calculated echolocation field. Parameters: cosine directionality with front-rear difference of 36 dB accounting for both emission and hearing directionality (see <xref ref-type="disp-formula" rid="pcbi.1004089.e016">Equation (11)</xref> below). Source level is 110 dB [<xref ref-type="bibr" rid="pcbi.1004089.ref029">29</xref>] and absorption is 1.28 dB m<sup>−1</sup>[<xref ref-type="bibr" rid="pcbi.1004089.ref022">22</xref>]. Inset indicates separation distances <italic>d</italic><sub><italic>ij</italic></sub>, relative headings <italic>ϕ</italic><sub><italic>ij</italic></sub>, i.e. the angular difference between the two velocity vectors, and exposure angles <italic>θ</italic><sub><italic>ij</italic></sub>, i.e. the angular position of the actor with respect to the heading of the reactor. Panel (B), (C), and (D) display histograms of separation distances, absolute relative headings and exposure angles of co-flying bats obtained from panel (A).</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.g002"/>
+</fig>
+<p>With the identified actor-reactor roles, it became possible to superimpose the bat’s echolocation field and test whether a plausible explanation for the observed interacting flights is the existence of an acoustic response threshold—step (<bold>ii</bold>) in our BSMI hypothesis. A match between the actual spatial patterns of interactions with these superimposed sound fields would indicate a potential functional link. In <xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2A</xref>, where we plotted the actor’s position relative to the heading and location of the reactor, we added isocontours of the calculated biosonar field, i.e. the amplitude of the echo reflected from the actor’s body returning to the reactor. We noticed that 99% of observations were above 0 dB and 97% above 10 dB, i.e. almost no reaction occurred when the actor’s echo was below the likely range for the reactor’s hearing threshold of 0–10 dB [<xref ref-type="bibr" rid="pcbi.1004089.ref034">34</xref>]. In short, there was no reaction when the actor was outside the reactor’s echolocation field.</p>
+<p>Step (<bold>iii</bold>) in our BSMI hypothesis consists of investigating whether alignment dynamics with delay in combination with the perceptual bias created by the shape of the echolocation field suffice to produce the observed behavioural interactions. For that purpose we constructed a mathematical movement model (BSMI model) of echolocating bat pairs capable of generating interacting trajectories that mimic the patterns of chases and coordinated flights observed in the field data (see <xref ref-type="sec" rid="sec004">Methods</xref>). From the spatio-temporal patterns emerging in the BSMI model, we generated relative position plots in <xref ref-type="fig" rid="pcbi.1004089.g003">Fig. 3</xref> for different delay response <italic>τ</italic>, directionalities of the echolocation field—asymmetry parameter <italic>A</italic> in <xref ref-type="disp-formula" rid="pcbi.1004089.e016">Equation (11)</xref> below—and hearing threshold—parameter <italic>B</italic> in <xref ref-type="disp-formula" rid="pcbi.1004089.e017">Equation (12)</xref> below. By varying these parameters in the model we produced actor-reactor and chaser-chasee spatial relationships that can be compared to the observations in <xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2A</xref>. We found that the best fit was achieved for response delays between 100 ms and 500 ms, and with <italic>B</italic> = 10 ± 5 dB and <italic>A</italic> = 16 ± 1 (root mean standard error RMS = 0.0179), see <xref ref-type="fig" rid="pcbi.1004089.g004">Fig. 4</xref>. We used this latter value to calculate sound fields displayed in Figs. <xref ref-type="fig" rid="pcbi.1004089.g002">2A</xref> and <xref ref-type="fig" rid="pcbi.1004089.g003">3</xref>.</p>
+<fig id="pcbi.1004089.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1004089.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>Model-generated spatio-temporal trajectories.</title>
+<p>BSMI model output of the actor’s locations relative to the reactor, according to the TDDC and TDDS analysis, for different delayed response scenarios, each with echo amplitude reaction threshold at 10 dB. The blue and green points represent chase and coordinated flight respectively. The grey points represent non-interacting flights for which, having neither actor nor reactor, one of the pair was randomly placed at the center. (A) Spatial patterns when alignment response is immediate; when delay values are multiple of 100 ms and up to 500 ms; and (C) with reaction delay values multiple of 100 ms and between 600 ms and 2 s. For clarity only around three thousand randomly selected grey points have been plotted in each panel. Only short delay values, panel (B), reproduce the observed spatial relationship in <xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2</xref> where actors are aligned within the sound field contour and chasees occupy the forward position directly in front of the chaser. Panels (A) and (C) corresponding to the model with instant and long delays respectively, fail to produce the same populating of the sound field and have chases absent or present at greater separations than recorded in the field, respectively.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.g003"/>
+</fig>
+<fig id="pcbi.1004089.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1004089.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Fit of the model output to the observed interacting flights.</title>
+<p>Contour level plot representing the fit of the coordinated flight movement patterns with those obtained from the model. The fitting procedure consists of comparing the relative position plot of coordinated flights from <xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2A</xref> and from the model with 1.5 × 1.5 m<sup>2</sup> resolution. For each grid square (<italic>i</italic>, <italic>j</italic>) the normalised probability density, <inline-formula id="pcbi.1004089.e020"><inline-graphic xlink:href="info:doi/10.1371/journal.pcbi.1004089.e020" xlink:type="simple"/></inline-formula>(<italic>i</italic>, <italic>j</italic>) is calculated and the lowest mean square error obtained via the expression <inline-formula id="pcbi.1004089.e021"><inline-graphic xlink:href="info:doi/10.1371/journal.pcbi.1004089.e021" xlink:type="simple"/></inline-formula>. The best fit is marked by the white point and corresponds to the model interaction field with parameters <italic>A</italic> = 16 and <italic>B</italic> = 10 dB.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.g004"/>
+</fig>
+</sec>
+<sec id="sec003" sec-type="conclusions">
+<title>Discussion</title>
+<p>Movement analysis has a long tradition in animal ecology [<xref ref-type="bibr" rid="pcbi.1004089.ref035">35</xref>, <xref ref-type="bibr" rid="pcbi.1004089.ref036">36</xref>], however, the segmentation and classification of trajectories of co-moving individuals is an area of research still in its infancy [<xref ref-type="bibr" rid="pcbi.1004089.ref037">37</xref>]. Here we have shown that a use of the velocity and separation delayed correlation maps, respectively the TDDC and TDDS functions, allowed us to classify interaction patterns in the movement trajectories of coflying bat pairs. Considering only those reactions that are strictly ordered in time, it is possible to reconstruct the delay with which one bat copies the heading of the other bat as a function of time.</p>
+<p>With our automatic classifier we have found that bats foraging in the field move in coordination five times more often than chasing the bat in front. Although a chaser has a spatial advantage when either the leader fails to capture a prey item (2nd attacker advantage) or when a patch of resources is found (shared exploitation), a chase might also become an aggressive behaviour if the chaser directs unpleasant or even harmful loud signals at the chasee. On the other hand, coordinated flight could improve search efficiency because both individuals hear when and where the other has searched for and found prey, which can allow each member of the pair to survey larger areas of the water surface per unit of time through eavesdropping.</p>
+<p>Empirical evidence strongly suggests that active echolocation was used by the reacting individual for alignment during interactions: 99% of all interactions were within the echolocation field and the entire echolocation field down to echo amplitudes of 0–10 dB was used (<xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2A</xref>). The possibility that eavesdropping per se might have produced the observed patterns was tenuous. We reached that conclusion by drawing the reactor’s position relative to the actor (see <xref ref-type="supplementary-material" rid="pcbi.1004089.s004">S3 Fig</xref>.). In that case no match of spatial interaction patterns with the received sound appeared obvious as interactions did not follow any sound exposure isocontour and most interactions happened in a direction opposite to the main lobe of emission. However, the fact that unclassified, i.e. non-interacting, bats flew at closer than random distances (<xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2B</xref>), often outside the maximum calculated echolocation range but within eavesdropping range (<xref ref-type="supplementary-material" rid="pcbi.1004089.s004">S3 Fig</xref>.), suggests the idea that it is beneficial for a bat to remain in the eavesdropping region of others, thereby possibly profiting from overhearing the other’s search success. Eavesdropping might also account for the low number of observations above -∣135∣° relative heading (<xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2C</xref>) in unclassified flights, which indicates that even bats outside mutual echolocation range avoid head-on flights.</p>
+<p>In contrast to other species, where alignment occurs by copying the heading of the individual in front, e.g. in Surf scoters [<xref ref-type="bibr" rid="pcbi.1004089.ref038">38</xref>], we observed several coordinated flights where the reactor was in front of the actor (<xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2A and 2D</xref> when ∣<italic>θ</italic><sub><italic>ij</italic></sub>∣ &gt; 90°). Although our dataset is limited in size, these large exposure angles indicate that bats may be able to respond to an individual behind them because echolocation can provide information from rear angles e.g. in <xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2A</xref> an interaction, represented by a row of green points, tracing just outside the -40 dB contour from a position of 3 o’clock (lateral) to 6 o’clock (directly behind). Also note that in contrast to other movement coordination studies foraging Daubenton’s bats search for ephemeral and depletable prey and therefore their direction of motion is not targeted at one specific location of a shareable resource. As a result their respective position and orientation could change considerably facilitating actor-reactor swaps within an interaction.</p>
+<p>Our BSMI model was able to create interactive behaviours (chases and coordinated flights) given that the model is based on biosonar perception with no input from movement interaction data other than observed flight speeds and turning angle distributions. Most importantly, the model output can reproduce the observed spatial interaction patterns only when the emission directionality <italic>A</italic>, hearing threshold <italic>B</italic> and delay were at their natural values. The best fit directionality value <italic>A</italic> = 16 is in the middle of the known range of emission directionality for this species (<italic>A</italic> = 7.3 for an independent measurement shown in <xref ref-type="supplementary-material" rid="pcbi.1004089.s005">S4 Fig</xref>., and <italic>A</italic> = 25.7 [<xref ref-type="bibr" rid="pcbi.1004089.ref029">29</xref>]), and the hearing threshold of <italic>B</italic> = 10 dB is also within the expected range [<xref ref-type="bibr" rid="pcbi.1004089.ref034">34</xref>].</p>
+<p>In this study we have provided an answer to <italic>how</italic> individuals react to each other while they are foraging together, but it was not possible to determine <italic>why</italic>. As at least some data were collected at dates after juvenile bats had taken flight, it is not entirely impossible that some flight interactions were training flights between mothers and their offspring. Increased foraging success might be a driver for coordinating flight manoeuvres. This might be possible because bats that coordinate their movement at short distance have each other survey zones overlap and may thus enter into coordinated exploitations in presence of locally rich prey patches. Alternatively, with small prey density a bat may enter agonistic interactions forcing conspecifics away to monopolise a diminishing resource patch. The chases we observed might well contain such an agonistic component [<xref ref-type="bibr" rid="pcbi.1004089.ref039">39</xref>]. With the help of collective movement models of delayed interaction [<xref ref-type="bibr" rid="pcbi.1004089.ref040">40</xref>] future research could address some of these issues by testing responses of conspecifics to the locations and timings of foraging success of others, which they inadvertently indicate by their feeding buzzes.</p>
+<p>In conclusion, we corroborate our BSMI hypothesis of foraging bats by (i) classifying bat interactions in the wild from highly resolved trajectory data, (ii) explaining the individuals’ relative positions based on the calculated biosonar perception field, and (iii) fitting the experimental observations with a bio-inspired movement model of interacting bats. In the process we have constructed a procedure to identify actor and reactor based not on their relative distance but on the delay dynamics of their relative orientation (defined through relative headings and exposure angles), which is independent of the animal species studied and can be applied to all types of coordinated movement data. The emerging actor-reactor relations and the associated delays with which an animal copies the heading of a conspecific provides a moving reference frame with which to determine when, where and how individuals respond to the actions of a conspecific and represents a powerful tool in the arsenal of computational techniques for movement ecology [<xref ref-type="bibr" rid="pcbi.1004089.ref041">41</xref>, <xref ref-type="bibr" rid="pcbi.1004089.ref042">42</xref>].</p>
+</sec>
+<sec id="sec004" sec-type="materials|methods">
+<title>Methods</title>
+<sec id="sec005">
+<title>Experimental methods</title>
+<p>Animal movement trajectories were obtained by videogrammetry using two 525EX CCIR (Watec Inc., Newburgh, NY) with Cinegon 1.8/4.8 IR lens (Jos. Schneider Optische Werke GmbH, Bad Kreuznach, Germany) on tripods at heights between 4.13 and 5.66 m above the water surface as measured with Laser rangefinder DLE50 professional (Robert Bosch GmbH, Gerlingen, Germany). Pitch towards the water surface and lateral roll angles of the cameras were measured using Clinometer GeoMaxiclin (Geo Supplies Ltd, Sheffield, UK) to the nearest half degree. The recording area of approximately 900 m<sup>2</sup> was illuminated with 850 nm IR light by a Raymax 200 (Raytec, Ashington, UK) positioned between the cameras at the shoreline. The video outputs were recorded synchronously on one XM-DVR PRO S153 (Datatoys, Mequon, MI) solid state dual-channel video recorder. Videos with bat flights were selected manually. Bat positions in the videos were selected by hand in every frame and the corresponding spatial positions calculated in custom written scripts (M. Holderied and H. Goerlitz) in MATLAB (The MathWorks Inc., Natick,MA). Each camera was calibrated and pixel based ray bundles for each camera were obtained using VMS software (Mark Shortis and Stuart Robson). Fields of view of both cameras did overlap only slightly and bat positions were not triangulated by stereo-imaging but rather by intersection of the pixel bundles originating at position, height and orientation of the single respective camera with a 2D plane 20 cm above the water surface, which was taken as the average flight height of this species [<xref ref-type="bibr" rid="pcbi.1004089.ref043">43</xref>]. The slight left-right asymmetry in the dataset indicates a preference for clockwise turns and a slight tendency to move parallel to the shoreline (<xref ref-type="supplementary-material" rid="pcbi.1004089.s006">S5 Fig</xref>.). This resulted in fewer trajectories moving away from the cameras, and thus making the (projected) reconstruction of the flight paths with similar level of errors. Videos were recorded in VGA format at 25 Hz frame rate. Each VGA frame is based on two half frames (odd and even lines taken in alternation). We analysed each half frame independently and interpolated the respectively missing odd or even lines such that the effective rate was 50 half frames per second, allowing for a temporal resolution of flight tracking equal to Δ<italic>t</italic> = 20 ms. This is about a factor four higher than the average call interval, i.e. the information update rate of Daubenton’s bats [<xref ref-type="bibr" rid="pcbi.1004089.ref032">32</xref>].</p>
+</sec>
+<sec id="sec006">
+<title>Data segmentation</title>
+<p>The dataset of paired bat trajectories was analysed to determine the fraction of data where interactions had occurred. For those data deemed to represent interaction we identified leader and follower dynamics in pairs of co-flying bats based on the sign of the automatically extracted delay values as a function of time with the help of the time-dependent directional correlation (TDDC) function, shown in <xref ref-type="disp-formula" rid="pcbi.1004089.e003">Equation (2)</xref> below, and the time-dependent distance separation (TDDS) function, displayed below in <xref ref-type="disp-formula" rid="pcbi.1004089.e005">Equation (4)</xref>. Analysis of the TDDC and TDDS plots allowed us to segment paired movement trajectories into different behaviours.</p>
+<sec id="sec007">
+<title>The time-dependent delayed directional correlation</title>
+<p>A good indicator of the alignment of two individuals is the normalised scalar product of the velocity of bat <italic>i</italic> at time <italic>t</italic> with bat <italic>j</italic> at time <italic>t</italic> + <italic>τ</italic> expressed by
+<disp-formula id="pcbi.1004089.e002"><alternatives><graphic id="pcbi.1004089.e002g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e002"/><mml:math id="M2" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>ν</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>,</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:mfrac><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>v</mml:mi> <mml:mo>→</mml:mo></mml:mover> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mrow><mml:mrow><mml:mo>∣</mml:mo></mml:mrow> <mml:msub><mml:mover accent="true"><mml:mi>v</mml:mi> <mml:mo>→</mml:mo></mml:mover> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>∣</mml:mo></mml:mrow></mml:mrow></mml:mfrac> <mml:mo>·</mml:mo> <mml:mfrac><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>v</mml:mi> <mml:mo>→</mml:mo></mml:mover> <mml:mi>j</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>+</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mrow><mml:mrow><mml:mo>∣</mml:mo></mml:mrow> <mml:msub><mml:mover accent="true"><mml:mi>v</mml:mi> <mml:mo>→</mml:mo></mml:mover> <mml:mi>j</mml:mi></mml:msub> <mml:mrow><mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>+</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>∣</mml:mo></mml:mrow></mml:mrow></mml:mfrac> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(1)</label></disp-formula>
+which varies between 1, indicating perfect alignment, 0, when the heading of the bats is orthogonal, and -1 when in opposite directions.</p>
+<p>In our recorded trajectories it was clear that bats changed behaviour dynamically as time <italic>t</italic> progressed. Integrating <italic>ν</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) over all <italic>N</italic> values of the observation times [<xref ref-type="bibr" rid="pcbi.1004089.ref006">6</xref>] would wash out many of the transient features. An average over a smaller time-window empirically adjusted to the temporal scale of the observed dynamics was more appropriate [<xref ref-type="bibr" rid="pcbi.1004089.ref007">7</xref>, <xref ref-type="bibr" rid="pcbi.1004089.ref044">44</xref>, <xref ref-type="bibr" rid="pcbi.1004089.ref045">45</xref>] and represented a time-averaged correlation between the direction of the two bats. This averaging was also necessary to compensate for high-frequency noise due to pixelation and measurement errors. For each paired trajectory we thus computed the TDDC function
+<disp-formula id="pcbi.1004089.e003"><alternatives><graphic id="pcbi.1004089.e003g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e003"/><mml:math id="M3" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>C</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>,</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mrow><mml:mn>2</mml:mn> <mml:mi>w</mml:mi> <mml:mo>+</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:mfrac> <mml:munderover><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>k</mml:mi> <mml:mo>=</mml:mo> <mml:mo>-</mml:mo> <mml:mi>w</mml:mi></mml:mrow> <mml:mi>w</mml:mi></mml:munderover> <mml:msub><mml:mi>ν</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>+</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mi>k</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(2)</label></disp-formula>
+where <italic>v</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) has been averaged over a symmetric time-window 2<italic>w</italic>Δ<italic>t</italic> (<italic>t</italic><sub><italic>k</italic></sub> = <italic>k</italic>Δ<italic>t</italic>) for times <italic>t</italic> and delays <italic>τ</italic> constrained by
+<disp-formula id="pcbi.1004089.e004"><alternatives><graphic id="pcbi.1004089.e004g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e004"/><mml:math id="M4" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>w</mml:mi> <mml:mspace width="0.166667em"/><mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>&lt;</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mi>t</mml:mi></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mo>&lt;</mml:mo> <mml:mo>(</mml:mo> <mml:mi>N</mml:mi> <mml:mo>-</mml:mo> <mml:mi>w</mml:mi> <mml:mo>)</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mo>-</mml:mo> <mml:mi>t</mml:mi> <mml:mo>≤</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mi>τ</mml:mi></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mo>≤</mml:mo> <mml:mi>N</mml:mi> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(3)</label></disp-formula>
+These constraints generate the sharp boundaries (see e.g. in <xref ref-type="fig" rid="pcbi.1004089.g001">Fig. 1B</xref>, <xref ref-type="supplementary-material" rid="pcbi.1004089.s002">S1 Fig</xref>. panel (b) and <xref ref-type="supplementary-material" rid="pcbi.1004089.s003">S2 Fig</xref>. panels (c) and (e)) and correspond to the line of points given by <italic>τ</italic> + <italic>t</italic> = 0 s and <italic>τ</italic> + <italic>t</italic> − <italic>N</italic>Δ<italic>t</italic> with Δ<italic>t</italic> = 0.02 s. To obtain sufficiently smooth trajectories the window width <italic>w</italic> = 2 was chosen, corresponding to a moving average over five data points for each coordinate, two on each side of the spatial coordinate pair. Note that the horizontal axis is relative to bat <italic>i</italic>. To interpret time relative to bat <italic>j</italic> one ought to compute <italic>C</italic><sub><italic>ji</italic></sub>(<italic>t</italic>, <italic>τ</italic>), but only the exchange <italic>i</italic> → <italic>j</italic> together with <italic>t</italic> → <italic>t</italic> − <italic>τ</italic> in <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) would produce the same TDDC plot.</p>
+<p>To define when two animals performed an interacting flight, it was necessary to set a threshold value <italic>v</italic><sub><italic>c</italic></sub> for <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) at and above which the heading of the two bats were deemed sufficiently correlated. To determine the effects of the choice of correlation threshold on our results, we studied how the extracted delays change as a function of <italic>v</italic><sub><italic>c</italic></sub>. Since the appropriate <italic>v</italic><sub><italic>c</italic></sub> is clearly species dependent, requiring a judgement of an animal’s ability to align, our choice was a compromise guided by the need to capture bats’ coordination in the observed manoeuvres, e.g. the turns displayed in <xref ref-type="fig" rid="pcbi.1004089.g001">Fig. 1A</xref>. On one hand, we used a sufficiently high threshold to avoid misinterpreting noise features with alignment and to capture when a reacting animal attempted to copy the actions of the actor. On the other hand, we reduced the threshold value from <italic>v</italic><sub><italic>c</italic></sub> = 1, corresponding to persistent and perfect alignment, to increase the number and length of the interacting trajectories across the entire dataset. In <xref ref-type="supplementary-material" rid="pcbi.1004089.s007">S6 Fig</xref>. we display how the length of these interacting segments changes in each trajectory for different choice of <italic>v</italic><sub><italic>c</italic></sub>. Overall there is a limited increase on the number of interacting data points for threshold values smaller than 0.95. In addition Gaussian fit of the resulting delay histograms for values 0.85 ≤ <italic>v</italic><sub><italic>c</italic></sub> ≤ 0.95 did not show significant differences either in the standard deviation or the 95% confidence interval from a Gaussian fit of <xref ref-type="fig" rid="pcbi.1004089.g001">Fig. 1C</xref> with the choice <italic>v</italic><sub><italic>c</italic></sub> = 0.95. The choice <italic>v</italic><sub><italic>c</italic></sub> = 0.95 was hence used to identify contour levels in the TDDC plot where interactions might have occurred (e.g. in <xref ref-type="fig" rid="pcbi.1004089.g001">Fig. 1B</xref>, <xref ref-type="supplementary-material" rid="pcbi.1004089.s002">S1 Fig</xref>. panel (b), <xref ref-type="supplementary-material" rid="pcbi.1004089.s003">S2</xref> Figs. panels (c) and (d)).</p>
+</sec>
+<sec id="sec008">
+<title>The time-dependent delayed separation</title>
+<p>To identify chase flight behaviour in the dataset, we considered <italic>R</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>), the spatial separation between bat <italic>i</italic> at time <italic>t</italic> and bat <italic>j</italic> at time <italic>t</italic> + <italic>τ</italic> averaged over a time-window <italic>w</italic>, namely
+<disp-formula id="pcbi.1004089.e005"><alternatives><graphic id="pcbi.1004089.e005g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e005"/>
+<mml:math id="M5" display="block" overflow="scroll">
+<mml:msub>
+<mml:mi>R</mml:mi>
+<mml:mrow>
+<mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow>
+</mml:msub>
+<mml:mrow><mml:mo>(</mml:mo>
+<mml:mrow>
+<mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi>τ</mml:mi></mml:mrow>
+<mml:mo>)</mml:mo></mml:mrow><mml:mspace width="1pt"/><mml:mo>=</mml:mo><mml:mspace width="1pt"/><mml:mfrac>
+<mml:mn>1</mml:mn>
+<mml:mrow>
+<mml:mn>2</mml:mn><mml:mi>w</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow>
+</mml:mfrac>
+<mml:munderover>
+<mml:mrow>
+<mml:msup>
+<mml:mstyle mathsize="140%" displaystyle="true"><mml:mo>∑</mml:mo></mml:mstyle>
+<mml:mtext>​</mml:mtext>
+</mml:msup>
+</mml:mrow>
+<mml:mrow>
+<mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mo>−</mml:mo><mml:mi>w</mml:mi></mml:mrow>
+<mml:mi>w</mml:mi>
+</mml:munderover>
+<mml:msup>
+<mml:mrow><mml:mo>{</mml:mo> <mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mrow><mml:mo>[</mml:mo> <mml:mrow>
+<mml:msub>
+<mml:mi>x</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:msub>
+<mml:mrow><mml:mo>(</mml:mo>
+<mml:mrow>
+<mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:msub>
+<mml:mi>t</mml:mi>
+<mml:mi>k</mml:mi>
+</mml:msub>
+</mml:mrow>
+<mml:mo>)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:msub>
+<mml:mi>x</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+<mml:mrow><mml:mo>(</mml:mo>
+<mml:mrow>
+<mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mi>τ</mml:mi><mml:mo>+</mml:mo><mml:msub>
+<mml:mi>t</mml:mi>
+<mml:mi>k</mml:mi>
+</mml:msub>
+</mml:mrow>
+<mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mo>]</mml:mo></mml:mrow></mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:msup>
+<mml:mo>+</mml:mo><mml:mo>+</mml:mo><mml:msup>
+<mml:mrow>
+<mml:mrow><mml:mo>[</mml:mo> <mml:mrow>
+<mml:msub>
+<mml:mi>y</mml:mi>
+<mml:mi>i</mml:mi>
+</mml:msub>
+<mml:mrow><mml:mo>(</mml:mo>
+<mml:mrow>
+<mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:msub>
+<mml:mi>t</mml:mi>
+<mml:mi>k</mml:mi>
+</mml:msub>
+</mml:mrow>
+<mml:mo>)</mml:mo></mml:mrow><mml:mo>−</mml:mo><mml:msub>
+<mml:mi>y</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+<mml:mrow><mml:mo>(</mml:mo>
+<mml:mrow>
+<mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mi>τ</mml:mi><mml:mo>+</mml:mo><mml:msub>
+<mml:mi>t</mml:mi>
+<mml:mi>k</mml:mi>
+</mml:msub>
+</mml:mrow>
+<mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mo>]</mml:mo></mml:mrow></mml:mrow>
+<mml:mn>2</mml:mn>
+</mml:msup>
+</mml:mrow> <mml:mo>}</mml:mo></mml:mrow>
+<mml:mrow>
+<mml:mn>1</mml:mn><mml:mo>/</mml:mo><mml:mn>2</mml:mn></mml:mrow>
+</mml:msup>
+<mml:mo>.</mml:mo>
+</mml:math>
+</alternatives> <label>(4)</label></disp-formula>
+In <xref ref-type="disp-formula" rid="pcbi.1004089.e005">Equation (4)</xref> (<italic>x</italic><sub><italic>l</italic></sub>(<italic>t</italic>), <italic>y</italic><sub><italic>l</italic></sub>(<italic>t</italic>)) with <italic>l</italic> = <italic>i</italic> or <italic>j</italic> is the coordinate pair of bat <italic>i</italic> or <italic>j</italic> at time <italic>t</italic>. When this separation equals zero for positive <italic>τ</italic>, then bat <italic>j</italic> occupied all previous positions that bat <italic>i</italic> had between time <italic>t</italic> − <italic>τ</italic> − 2Δ<italic>t</italic> and <italic>t</italic> − <italic>τ</italic> + 2Δ<italic>t</italic>. To avoid classifying trajectories where bats crossed each other’s paths with arbitrary headings and delays as chases, the set of paired values (<italic>t</italic>, <italic>τ</italic>) where interaction occurred were first extracted from the analysis of <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>). <italic>R</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) was then computed at the specific (<italic>t</italic>, <italic>τ</italic>) values and the interaction was classified as chase if <italic>R</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) ≤ <italic>d</italic><sub><italic>c</italic></sub>. Hence chase flights were a sub-category of coordinated flights, as bats were both well aligned, <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) ≥ <italic>v</italic><sub><italic>c</italic></sub>, and had small spatial separation, <italic>R</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) ≤ <italic>d</italic><sub><italic>c</italic></sub>, in the delayed reference frame. The threshold used was <italic>d</italic><sub><italic>c</italic></sub> = 0.15 m, which is smaller than 0.25 m, the average wingspan of a Daubenton’s bat. It turned out that for all behaviours classified as chases the average separation in delayed time were at most 0.09 m.</p>
+</sec>
+<sec id="sec009">
+<title>Extracting delay values</title>
+<p>For each time <italic>t</italic> in the TDDC and TDDS plots within the respective regions of interaction, i.e. <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) ≥ <italic>v</italic><sub><italic>c</italic></sub> and <italic>R</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) ≤ <italic>d</italic><sub><italic>c</italic></sub>, it is possible to associate different delay values <italic>τ</italic>. A procedure was thus developed to extract a single interaction delay <italic>τ</italic>, and its associated uncertainty, for each time <italic>t</italic>. These values can then be used to identify leader and follower and subsequently to classify the trajectory in terms of the behavioural mode of interaction (chase and coordinated flight).</p>
+<p>There are several potential methods to extract such ‘interaction path’ (delays as a function of time) from the TDDC plot. Two straightforward methods consist of taking the delay value which maximises the correlation: over the extent of the entire recording of a bat pair [<xref ref-type="bibr" rid="pcbi.1004089.ref006">6</xref>], or over a time-window, either forward from [<xref ref-type="bibr" rid="pcbi.1004089.ref044">44</xref>, <xref ref-type="bibr" rid="pcbi.1004089.ref045">45</xref>] or symmetric around each time-step [<xref ref-type="bibr" rid="pcbi.1004089.ref007">7</xref>]. Whilst easy to perform, these procedures are poor at reconstructing biologically realistic interactions most importantly because they violate the simple assumption that each bat’s reactions are strictly ordered in time. To understand this, consider that bat <italic>i</italic> acts at time <italic>t</italic> and bat <italic>j</italic> reacts at time (<italic>t</italic> + <italic>τ</italic>) then a subsequent action by bat <italic>i</italic> at time <italic>t</italic> + Δ<italic>t</italic> can be reacted to by bat <italic>j</italic> at time (<italic>t</italic> + Δ<italic>t</italic> + <italic>τ</italic> + Δ<italic>τ</italic>), where Δ<italic>τ</italic> represents a change in delay. If Δ<italic>τ</italic> &lt; −Δ<italic>t</italic> then (<italic>t</italic> + Δ<italic>t</italic> + <italic>τ</italic> + Δ<italic>τ</italic>) &lt; (<italic>t</italic> + <italic>τ</italic>), and bat <italic>j</italic> performed the second reaction before the first reaction at time (<italic>t</italic> + <italic>τ</italic>). Such situations are deemed nonsensical and hence changes in delay should be restricted to Δ<italic>τ</italic>/Δ<italic>t</italic> ≥ −1.</p>
+<p>In the TDDC plot all possible ‘interaction paths’ represent delay values that change over time. The actual response delay across the trajectory is obtained by computing the cumulative value of <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) from left to right, i.e. from the first to the last observation time, according to three requirements: <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) &lt; <italic>v</italic><sub><italic>c</italic></sub>, the change of delay along a path must fulfil the time-ordered requirement, and the actual <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) value along a possible path gets reduced if delay changes over time.</p>
+<p>More specifically, each possible path starts from the coordinates (<italic>t</italic><sub>0</sub>, <italic>τ</italic>*), with <italic>t</italic><sub>0</sub> = <italic>w</italic>Δ<italic>t</italic> and (−<italic>N</italic> + <italic>w</italic>)Δ<italic>t</italic> &lt; <italic>τ</italic>* &lt; (<italic>N</italic> − <italic>w</italic>)Δ<italic>t</italic>, and finish at (<italic>t</italic><sub>max</sub>, <italic>τ</italic><sub>max</sub>), with <italic>t</italic><sub>max</sub> = (<italic>N</italic> − <italic>w</italic>)Δ<italic>t</italic>. Any path is thus represented by the coupled elements (<bold><italic>t</italic></bold>, <bold><italic>τ</italic></bold>) with
+<disp-formula id="pcbi.1004089.e006"><alternatives><graphic id="pcbi.1004089.e006g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e006"/><mml:math id="M6" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mi mathvariant="bold-italic">t</mml:mi></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mo>{</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mn>0</mml:mn></mml:msub> <mml:mo>,</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mo>,</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mn>2</mml:mn></mml:msub> <mml:mo>,</mml:mo> <mml:mo>…</mml:mo> <mml:mo>,</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mtext>max</mml:mtext></mml:msub> <mml:mo>}</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(5)</label></disp-formula>
+and the corresponding delay values,
+<disp-formula id="pcbi.1004089.e007"><alternatives><graphic id="pcbi.1004089.e007g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e007"/><mml:math id="M7" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi mathvariant="bold-italic">τ</mml:mi> <mml:mo>=</mml:mo> <mml:mfenced open="{" close="}"><mml:mtable><mml:mtr><mml:mtd><mml:msup><mml:mover accent="true"><mml:mi>τ</mml:mi> <mml:mo>→</mml:mo></mml:mover> <mml:mn>0</mml:mn></mml:msup></mml:mtd></mml:mtr> <mml:mtr><mml:mtd><mml:msup><mml:mover accent="true"><mml:mi>τ</mml:mi> <mml:mo>→</mml:mo></mml:mover> <mml:mn>1</mml:mn></mml:msup></mml:mtd></mml:mtr> <mml:mtr><mml:mtd><mml:mo>…</mml:mo></mml:mtd></mml:mtr> <mml:mtr><mml:mtd><mml:msup><mml:mover accent="true"><mml:mi>τ</mml:mi> <mml:mo>→</mml:mo></mml:mover> <mml:mi>M</mml:mi></mml:msup></mml:mtd></mml:mtr></mml:mtable></mml:mfenced> <mml:mo>=</mml:mo> <mml:mfenced open="{" close="}"><mml:mtable><mml:mtr><mml:mtd><mml:mrow><mml:msubsup><mml:mi>τ</mml:mi> <mml:mn>0</mml:mn> <mml:mn>0</mml:mn></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mrow><mml:msubsup><mml:mi>τ</mml:mi> <mml:mn>1</mml:mn> <mml:mn>0</mml:mn></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mrow><mml:msubsup><mml:mi>τ</mml:mi> <mml:mn>2</mml:mn> <mml:mn>0</mml:mn></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mrow><mml:mo>…</mml:mo> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:msubsup><mml:mi>τ</mml:mi> <mml:mtext>max</mml:mtext> <mml:mn>0</mml:mn></mml:msubsup></mml:mtd></mml:mtr> <mml:mtr><mml:mtd><mml:mrow><mml:msubsup><mml:mi>τ</mml:mi> <mml:mn>0</mml:mn> <mml:mn>1</mml:mn></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mrow><mml:msubsup><mml:mi>τ</mml:mi> <mml:mn>1</mml:mn> <mml:mn>1</mml:mn></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mrow><mml:msubsup><mml:mi>τ</mml:mi> <mml:mn>2</mml:mn> <mml:mn>1</mml:mn></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mrow><mml:mo>…</mml:mo> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:msubsup><mml:mi>τ</mml:mi> <mml:mtext>max</mml:mtext> <mml:mn>1</mml:mn></mml:msubsup></mml:mtd></mml:mtr> <mml:mtr><mml:mtd><mml:mo>…</mml:mo></mml:mtd> <mml:mtd/><mml:mtd/><mml:mtd/><mml:mtd/></mml:mtr> <mml:mtr><mml:mtd><mml:mrow><mml:msubsup><mml:mi>τ</mml:mi> <mml:mn>0</mml:mn> <mml:mi>M</mml:mi></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mrow><mml:msubsup><mml:mi>τ</mml:mi> <mml:mn>1</mml:mn> <mml:mi>M</mml:mi></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mrow><mml:msubsup><mml:mi>τ</mml:mi> <mml:mn>2</mml:mn> <mml:mi>M</mml:mi></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:mrow><mml:mo>…</mml:mo> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd><mml:msubsup><mml:mi>τ</mml:mi> <mml:mtext>max</mml:mtext> <mml:mi>M</mml:mi></mml:msubsup></mml:mtd></mml:mtr></mml:mtable></mml:mfenced> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(6)</label></disp-formula>
+with <italic>M</italic> limited by the various constraints.</p>
+<p>The ‘optimal’ path has the highest overall correlation for each pairwise trajectory given by
+<disp-formula id="pcbi.1004089.e008"><alternatives><graphic id="pcbi.1004089.e008g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e008"/><mml:math id="M8" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>p</mml:mi> <mml:mi>l</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:msup><mml:mover accent="true"><mml:mi>τ</mml:mi> <mml:mo>→</mml:mo></mml:mover> <mml:mrow><mml:mspace width="0.166667em"/><mml:mi>l</mml:mi></mml:mrow></mml:msup> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:munderover><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>n</mml:mi> <mml:mo>=</mml:mo> <mml:mi>w</mml:mi></mml:mrow> <mml:mrow><mml:mi>N</mml:mi> <mml:mo>-</mml:mo> <mml:mi>w</mml:mi></mml:mrow></mml:munderover> <mml:mfenced separators="" open="{" close=""><mml:mtable><mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>C</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mi>n</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mi>n</mml:mi> <mml:mrow><mml:mspace width="0.166667em"/><mml:mi>l</mml:mi></mml:mrow></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mtext>if</mml:mtext> <mml:mspace width="4.pt"/><mml:mspace width="0.166667em"/><mml:mspace width="0.166667em"/><mml:msub><mml:mi>C</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mi>n</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mi>n</mml:mi> <mml:mrow><mml:mspace width="0.166667em"/><mml:mi>l</mml:mi></mml:mrow></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>≥</mml:mo> <mml:msub><mml:mi>v</mml:mi> <mml:mi>c</mml:mi></mml:msub> <mml:mspace width="0.166667em"/><mml:mspace width="0.166667em"/><mml:mtext>and</mml:mtext> <mml:mspace width="4.pt"/><mml:msubsup><mml:mi>τ</mml:mi> <mml:mi>n</mml:mi> <mml:mrow><mml:mspace width="0.166667em"/><mml:mi>l</mml:mi></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mrow><mml:mi>n</mml:mi> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mrow><mml:mspace width="0.166667em"/><mml:mi>l</mml:mi></mml:mrow></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>C</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mi>n</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mi>n</mml:mi> <mml:mrow><mml:mspace width="0.166667em"/><mml:mi>l</mml:mi></mml:mrow></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>-</mml:mo> <mml:mi>q</mml:mi> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mtext>if</mml:mtext> <mml:mspace width="4.pt"/><mml:mspace width="0.166667em"/><mml:mspace width="0.166667em"/><mml:msub><mml:mi>C</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mi>n</mml:mi></mml:msub> <mml:mo>,</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mi>n</mml:mi> <mml:mrow><mml:mspace width="0.166667em"/><mml:mi>l</mml:mi></mml:mrow></mml:msubsup> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>≥</mml:mo> <mml:msub><mml:mi>v</mml:mi> <mml:mi>c</mml:mi></mml:msub> <mml:mspace width="0.166667em"/><mml:mspace width="0.166667em"/><mml:mtext>and</mml:mtext> <mml:mspace width="4.pt"/><mml:msubsup><mml:mi>τ</mml:mi> <mml:mi>n</mml:mi> <mml:mrow><mml:mspace width="0.166667em"/><mml:mi>l</mml:mi></mml:mrow></mml:msubsup> <mml:mo>≠</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mrow><mml:mi>n</mml:mi> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mrow><mml:mspace width="0.166667em"/><mml:mi>l</mml:mi></mml:mrow></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="left"><mml:mn>0</mml:mn></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mtext>otherwise,</mml:mtext> <mml:mspace width="4.pt"/></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mfenced></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(7)</label></disp-formula>
+where <italic>q</italic> is a penalising cost associated with changing delay. The inclusion of this penalising cost in the algorithm for extracting delay values was imposed to account for the added cognitive requirements that an animal would incur if it were to interact by constantly changing the timeframe of reference. As the animals’ relative locations fluctuate considerably during an interaction—change of speed and heading is a necessity during foraging activities—a constant delay may in fact represent a steady source of information through which to control the conspecific’s actions and take decisions accordingly. The appropriate <italic>q</italic> value to use depends on the profile of the correlation map which in turn is affected by the spatio-temporal trajectories. For our bats, the value of <italic>q</italic> had to be small enough to allow for delay changes when approaching the contours delimiting the interaction region in the correlation map, and large enough to restrict the change of delays when away from those limiting contours. These goals were met with the choice <italic>q</italic> = 0.02.</p>
+<p>By setting to 0 the contributions of all paths with profiles Δ<italic>τ</italic>/Δ<italic>t</italic> ≥ −1 and favouring those with zero slope, the extracted delays represent a compromise between having the longest segments within the disconnected regions of interaction and the shallowest slope. In this way we identify interaction events as those behaviours with the longest duration and with limited variations in delay response. In other words we associate delayed interactions with actions and reactions that are persistent rather than brief or instantaneous.</p>
+<p>The procedure for extracting delays for chase flight behaviour differs slightly. Any region of the TDDC map exceeding the threshold <italic>v</italic><sub><italic>c</italic></sub> and with the corresponding TDDS region less than or equal to <italic>d</italic><sub><italic>c</italic></sub> pertains to chase-flight, therefore the interaction path is constructed by minimising the delayed separation, (rather than maximising the directional correlation), again satisfying the constraint that interactions be strictly ordered in time and with a penalising cost for changing delay. If a trajectory contains both chase flight and coordinated flight the chase flight interaction path is found first and then the coordinated flight interaction path is chosen as the maximum correlation path that connects to the chase paths.</p>
+</sec>
+<sec id="sec010">
+<title>Uncertainty in delay extraction</title>
+<p>Current methodologies to determine reaction delays from movement data are unable to specify ranges of uncertainty of the extracted values. The use of the TDDC and TDDS, however, provides the means to quantify this delay uncertainty. This uncertainty, which can be asymmetric around the extracted delay, is affected by the classification (chase or coordinated flight) as well as the curvature of the trajectories with lower uncertainty being obtained when bats make interactive turns as compared to when they move straight in coordination.</p>
+<p>Choosing between multiple delays at a given time in the region of high correlation in the TDDC plot is a source of uncertainty. For coordinated flight the number of possible delays at each time is dependent on the trajectories themselves. Consider two extreme examples, one where the paired trajectories are parallel lines and the other where both trajectories contain many turns and are therefore curved and winding. In the first case the bats are perfectly aligned at all times and for all delays. In such a case <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) ≥ <italic>v</italic><sub><italic>c</italic></sub> for all (<italic>t</italic>, <italic>τ</italic>), and identifying uniquely the delay with which the bats performed this flight is not possible. In the second case, as a result of all the turns, the delay with which the bats flew is more apparent and the number of delays that exceed the correlation threshold will converge to the correct one as the threshold is increased.</p>
+<p>For a given threshold, one could determine the range of values around the extracted delay for each value of time in the TDDC plot. However using the relationship between the delay range and the curvature of the trajectory allows to obtain a smaller bound of the delay uncertainty. To understand this, consider <xref ref-type="supplementary-material" rid="pcbi.1004089.s008">S7 Fig</xref>. where we plot an hypothetical TDDC function whereby the associated paired trajectories contain flight segments with high-curvature ending at time <italic>t</italic><sub><italic>hc</italic></sub>. These segments subsequently transition to parallel motion for both individuals beginning at time <italic>t</italic><sub><italic>p</italic></sub>. There is obviously a large range of possible delays for the parallel segment, <inline-formula id="pcbi.1004089.e009"><mml:math id="M9" display="inline" overflow="scroll"><mml:mrow><mml:mo stretchy="false">[</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mi>p</mml:mi> <mml:mo>↓</mml:mo></mml:msubsup> <mml:mo>,</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mi>p</mml:mi> <mml:mo>↑</mml:mo></mml:msubsup> <mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:math></inline-formula>, and a small range, <inline-formula id="pcbi.1004089.e010"><mml:math id="M10" display="inline" overflow="scroll"><mml:mrow><mml:mo stretchy="false">[</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mrow><mml:mi>h</mml:mi> <mml:mi>c</mml:mi></mml:mrow> <mml:mo>↓</mml:mo></mml:msubsup> <mml:mo>,</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mrow><mml:mi>h</mml:mi> <mml:mi>c</mml:mi></mml:mrow> <mml:mo>↑</mml:mo></mml:msubsup> <mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:math></inline-formula>, for the high-curvature segment, and a highly dynamic range for the transition region <italic>t</italic><sub><italic>hc</italic></sub> ≤ <italic>t</italic> ≤ <italic>t</italic><sub><italic>p</italic></sub>. However due to our condition, Δ<italic>τ</italic>/Δ<italic>t</italic> ≥ −1, if the change in the minimum delay is greater than the elapsed time, i.e. <inline-formula id="pcbi.1004089.e011"><mml:math id="M11" display="inline" overflow="scroll"><mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mi>p</mml:mi> <mml:mo>↓</mml:mo></mml:msubsup> <mml:mo>−</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mrow><mml:mi>h</mml:mi> <mml:mi>c</mml:mi></mml:mrow> <mml:mo>↓</mml:mo></mml:msubsup> <mml:mo stretchy="false">)</mml:mo> <mml:mo>/</mml:mo> <mml:mo stretchy="false">(</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mi>p</mml:mi></mml:msub> <mml:mo>−</mml:mo> <mml:msub><mml:mi>t</mml:mi> <mml:mrow><mml:mi>h</mml:mi> <mml:mi>c</mml:mi></mml:mrow></mml:msub> <mml:mo stretchy="false">)</mml:mo> <mml:mo>&lt;</mml:mo> <mml:mo>−</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:math></inline-formula>, (or similarly for the maximum delays looking backwards in time), some of the parallel-flight delays cannot contribute to the interaction path and the delay choice is made from the reduced range, <inline-formula id="pcbi.1004089.e012"><mml:math id="M12" display="inline" overflow="scroll"><mml:mrow><mml:mo stretchy="false">[</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mrow><mml:mi>p</mml:mi> <mml:mo>*</mml:mo></mml:mrow> <mml:mo>↓</mml:mo></mml:msubsup> <mml:mo>,</mml:mo> <mml:msubsup><mml:mi>τ</mml:mi> <mml:mi>p</mml:mi> <mml:mo>↑</mml:mo></mml:msubsup> <mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:math></inline-formula>. In this way knowledge from the high-curvature flight has reduced the uncertainty in choosing delays from the parallel-flight. Although we have only compared two times to illustrate the idea, the procedure consists of drawing the −1 gradient lines forward in time at each time point from the minimum delay value, and backward in time from the maximum delay value. Anywhere these gradient lines are within a threshold contour, the delay is reduced to the value along that line. For example for all times between the marked values of <italic>t</italic><sub>1</sub> and <italic>t</italic><sub>2</sub>, the −1 gradient line lies inside the contour and so reduces the delay-range for those times. The extracted delay uncertainty is therefore quantified as the delay range after the time ordered condition has been applied to each point along the contour.</p>
+<p>For coordinated flights we thus have that the straighter a trajectory, the larger is the uncertainty in the delay. This however does not occur in chase flights for which the delay uncertainty is independent of the curvature of the flight because only a small delay window allows one bat to occupy the other bat’s previous position (see e.g. <xref ref-type="supplementary-material" rid="pcbi.1004089.s002">S1 Fig</xref>. panel (d) and <xref ref-type="supplementary-material" rid="pcbi.1004089.s003">S2 Fig</xref>. panel (f)). Hence the uncertainty in the chase flight delays is quantified simply by the (small) range of possible delays.</p>
+<p>A comparison between the use of the time-independent directional correlation function [<xref ref-type="bibr" rid="pcbi.1004089.ref006">6</xref>], as well as of the ‘maximal’ path in <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) [<xref ref-type="bibr" rid="pcbi.1004089.ref007">7</xref>], with our procedure to extract delay values is displayed in the 8-panel <xref ref-type="supplementary-material" rid="pcbi.1004089.s009">S8 Fig</xref>. In panels (d) and (f) one can see that tracking the maximum of the TDDC function gives a delay path that displays sudden jumps, at times between positive and negative values. Furthermore, it is apparent from panels (g) and (h) that this maximum delay path violates our time-ordering procedure being outside the allowed uncertainty. A clear example of the inability to identify the correct response delays by tracking the maximum of the directional correlation is shown in <xref ref-type="supplementary-material" rid="pcbi.1004089.s009">S8 Fig</xref>. panel (f). There, around <italic>t</italic> = 1.3 s the maximum of <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>) (green line) suddenly jumps from <italic>τ</italic> ≃ 0.2 s to <italic>τ</italic> = 1 s. This jump occurs because bat <italic>i</italic>’s heading after the right turn at <italic>t</italic> = 1.4 s is approximately parallel to bat <italic>j</italic>’s heading after its own right turn at <italic>t</italic> = 2.3 s (see the corresponding trajectory plot in <xref ref-type="fig" rid="pcbi.1004089.g001">Fig. 1A</xref>).</p>
+</sec>
+</sec>
+<sec id="sec011">
+<title>The BSMI model</title>
+<p>An agent based model was created to demonstrate the effects of asymmetric perception and reaction delays on the spatio-temporal trajectories of simulated bat pairs. The model contains the minimal ingredients necessary to account for the salient sensory biology features of the bats and their interaction. The individual movement statistics of a bat follows that of a correlated random walker [<xref ref-type="bibr" rid="pcbi.1004089.ref046">46</xref>, <xref ref-type="bibr" rid="pcbi.1004089.ref047">47</xref>] with turning angles and speed values obtained from the observed ones. Each animal is limited in its manoeuvrability by aerodynamic constraints and tries to align to a conspecific present within its interaction field. Each bat echolocates every 100 ms with a certain hearing and emission directionality and detects the presence of the other animal only when above a certain threshold. When another bat is detected, an individual responds by copying the other’s heading with some delay (see Equations (<xref ref-type="disp-formula" rid="pcbi.1004089.e013">8</xref>–<xref ref-type="disp-formula" rid="pcbi.1004089.e017">12</xref>) and <xref ref-type="supplementary-material" rid="pcbi.1004089.s010">S9 Fig</xref>. for further details). The simulations were run in discrete time, for 10 s and Δ<italic>t</italic> = 20 ms corresponding to the resolution of the observations, and continuous space by generating initial random positions and headings inside a region of 30 × 30 m<sup>2</sup>.</p>
+<sec id="sec012">
+<title>Flight dynamics</title>
+<p>Bat <italic>i</italic>’s heading <italic>ϕ</italic><sub><italic>i</italic></sub>(<italic>t</italic>), speed magnitude <italic>v</italic><sub><italic>i</italic></sub>(<italic>t</italic>) and location (<italic>x</italic><sub><italic>i</italic></sub>(<italic>t</italic>), <italic>y</italic><sub><italic>i</italic></sub>(<italic>t</italic>)) are updated at each time step as follows:
+<disp-formula id="pcbi.1004089.e013"><alternatives><graphic id="pcbi.1004089.e013g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e013"/><mml:math id="M13" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>v</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd> <mml:mtd><mml:mo>∼</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mi>𝓡</mml:mi> <mml:mo>(</mml:mo> <mml:mn>4</mml:mn> <mml:mo>.</mml:mo> <mml:mn>81</mml:mn> <mml:mspace width="4.pt"/><mml:mtext>m</mml:mtext> <mml:mspace width="0.166667em"/><mml:msup><mml:mtext>s</mml:mtext> <mml:mrow><mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msup> <mml:mo>,</mml:mo> <mml:mn>2</mml:mn> <mml:mo>.</mml:mo> <mml:mn>18</mml:mn> <mml:mspace width="4.pt"/><mml:mtext>m</mml:mtext> <mml:mspace width="0.166667em"/><mml:msup><mml:mtext>s</mml:mtext> <mml:mrow><mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msup> <mml:mo>)</mml:mo> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mfenced separators="" open="{" close=""><mml:mtable><mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>γ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mrow><mml:mtext>if</mml:mtext> <mml:mspace width="4.pt"/><mml:mo>∣</mml:mo></mml:mrow> <mml:msub><mml:mi>γ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>-</mml:mo> <mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>∣</mml:mo> <mml:mo>≤</mml:mo></mml:mrow> <mml:msub><mml:mi>β</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:msub><mml:mi>β</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mtext>if</mml:mtext> <mml:mspace width="4.pt"/><mml:msub><mml:mi>γ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>-</mml:mo> <mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>&gt;</mml:mo> <mml:msub><mml:mi>β</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>-</mml:mo> <mml:msub><mml:mi>β</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>,</mml:mo></mml:mrow></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mtext>if</mml:mtext> <mml:mspace width="4.pt"/><mml:msub><mml:mi>γ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>-</mml:mo> <mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>&lt;</mml:mo> <mml:msub><mml:mi>β</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mfenced></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>x</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>x</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:msub><mml:mi>v</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mspace width="0.166667em"/><mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo form="prefix">cos</mml:mo> <mml:mrow><mml:mo>[</mml:mo> <mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>]</mml:mo></mml:mrow> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>y</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd> <mml:mtd><mml:mo>=</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>y</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:msub><mml:mi>v</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mspace width="0.166667em"/><mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo form="prefix">sin</mml:mo> <mml:mrow><mml:mo>[</mml:mo> <mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>]</mml:mo></mml:mrow> <mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(8)</label></disp-formula>
+In <xref ref-type="disp-formula" rid="pcbi.1004089.e013">Equation (8)</xref> the symbol ∼ means that <italic>v</italic><sub><italic>i</italic></sub>(<italic>t</italic>) is drawn from the Rician distribution [<xref ref-type="bibr" rid="pcbi.1004089.ref048">48</xref>] 𝓡(<italic>μ</italic>, <italic>σ</italic>) with non-centrality parameter <italic>μ</italic> and scale parameter <italic>σ</italic>, which was fitted (<italic>R</italic><sup>2</sup> = 0.97) to the observed movement patterns of paired flying bats. The desired heading of bat <italic>i</italic>, that is the heading that a bat would choose depending only on its behavioural state (see below) at time <italic>t</italic>, is <italic>γ</italic><sub><italic>i</italic></sub>(<italic>t</italic>). The actual heading at time <italic>t</italic> − Δ<italic>t</italic> and time <italic>t</italic>, taken by bat <italic>i</italic> once the aerodynamic constraints have also been accounted for, are represented, respectively, by <italic>ϕ</italic><sub><italic>i</italic></sub>(<italic>t</italic> − Δ<italic>t</italic>) and <italic>ϕ</italic><sub><italic>i</italic></sub>(<italic>t</italic>). The angular rate of change <italic>β</italic><sub><italic>i</italic></sub>(<italic>t</italic>) is limited by aerodynamic constraints corresponding to a maximum lateral acceleration <italic>a</italic><sub><italic>c</italic></sub> of 4 g (4 times the gravitational acceleration of 9.81 ms<sup>−2</sup>), providing a maximum given by <italic>β</italic><sub><italic>i</italic></sub>(<italic>t</italic>) = <italic>a</italic><sub><italic>c</italic></sub>/<italic>v</italic><sub><italic>i</italic></sub>(<italic>t</italic>). The 4 g limit was measured to contain 99.9% of the turning angles from the paired flight data. Examples of an interacting and independent path generated by the BSMI model are displayed in <xref ref-type="supplementary-material" rid="pcbi.1004089.s010">S9 Fig</xref>.</p>
+<p>The bat may be in either of two behavioural states: independent or interacting. The behavioral state determines the shape of the distribution from which an individual would draw its desired turning angle <italic>γ</italic><sub><italic>i</italic></sub>(<italic>t</italic>), and it is updated in two ways. (i) Every five time steps an individual would send an echolocation call to determine the heading of the other bat. When a conspecific is detected, a bat enters an interacting behavioural state and attempts to align by selecting a turning angle that reduces the difference in relative heading. If the other bat is not detected, the individual enters an independent state and it maintains that behaviour until it detects a conspecific. Once in the independent state the bat selects a turning angle from a broader distribution. (ii) The other way a bat may change its behavioural state is by moving from the interacting to the independent state at each time step. Even though a bat is in the process of aligning to another individual detected in the last echolocation call, it may find convenient to evade alignment, e.g. for the purpose of being the first to detect a prey or to ensure exclusive access to certain areas of the water’s surface. To reproduce this feature in the model an individual in the interaction state may choose, at each 20 ms time step, to enter an independent state with a small probability of 0.05.</p>
+</sec>
+<sec id="sec013">
+<title>Independent flight</title>
+<p>When an individual is in the independent state, the animal’s turning angles are drawn from a von Mises distribution [<xref ref-type="bibr" rid="pcbi.1004089.ref049">49</xref>], displayed in <xref ref-type="supplementary-material" rid="pcbi.1004089.s010">S9 Fig</xref>. panel (a), centred around its heading at the previous time step. The desired heading of bat <italic>i</italic> at time <italic>t</italic> is thus
+<disp-formula id="pcbi.1004089.e014"><alternatives><graphic id="pcbi.1004089.e014g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e014"/><mml:math id="M14" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>γ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>∼</mml:mo> <mml:mi>𝓜</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>,</mml:mo> <mml:mn>557</mml:mn> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(9)</label></disp-formula>
+where 𝓜(<italic>ξ</italic>, <italic>κ</italic>) represents a von Mises distribution with mean direction <italic>ξ</italic> and concentration parameter <italic>κ</italic>. The concentration parameter <italic>κ</italic> = 557, was obtained by a fit (<italic>R</italic><sup>2</sup> = 0.997) to the turning angles of unclassified flying bats.</p>
+</sec>
+<sec id="sec014">
+<title>Interacting flight</title>
+<p>lnteraction in the form of alignment was constructed by setting a bat’s desired heading as the mean of its own with the one of its conspecific [<xref ref-type="bibr" rid="pcbi.1004089.ref002">2</xref>, <xref ref-type="bibr" rid="pcbi.1004089.ref050">50</xref>] but with the characteristic feature that the heading of the conspecific is the one at time <italic>τ</italic> in the past. In other words, at time <italic>t</italic> the desired heading of bat <italic>i</italic> is drawn from a von Mises distribution centred around the average between bat <italic>i</italic>’s heading at time <italic>t</italic> − Δ<italic>t</italic> and the heading that bat <italic>j</italic> had at time <italic>τ</italic> in the past. The concentration parameter of the von Mises distribution was chosen to be intermediate between the turning angle distribution observed in unclassified flights and a distribution with no noise. To avoid the need to impose additional assumptions that specify under what conditions individuals would choose to enter a coordinated or chase behaviour, we used the turning angle distribution fitted (<italic>R</italic><sup>2</sup> = 0.999) to the observed chases, whose concentration parameter was <italic>κ</italic> = 2473 (<xref ref-type="supplementary-material" rid="pcbi.1004089.s010">S9 Fig</xref>. panel (b)). The desired heading of bat <italic>i</italic> is thus
+<disp-formula id="pcbi.1004089.e015"><alternatives><graphic id="pcbi.1004089.e015g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e015"/><mml:math id="M15" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>γ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>∼</mml:mo> <mml:mi>𝓜</mml:mi> <mml:mfenced separators="" open="(" close=")"><mml:mfrac><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mn>2</mml:mn></mml:mfrac> <mml:mo>,</mml:mo> <mml:mn>2473</mml:mn></mml:mfenced> <mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(10)</label></disp-formula></p>
+</sec>
+</sec>
+<sec id="sec015">
+<title>Sound field modelling</title>
+<sec id="sec016">
+<title>Echolocation directionality</title>
+<p>A bat may enter into an interacting state if the received echo amplitude is above its hearing threshold. This echo amplitude is the result of the echolocation directionality of the animal as well as the target strength of the echo-giving object and the transmission losses during sound propagation [<xref ref-type="bibr" rid="pcbi.1004089.ref051">51</xref>]. By considering a source level SL = 110 dB [<xref ref-type="bibr" rid="pcbi.1004089.ref029">29</xref>] and a target strength TS = -10 dB, the echo amplitude <italic>α</italic>, expressed in dB, at angle <italic>ζ</italic> from the emission direction and returning from a bat at distance <italic>ρ</italic> in meters, is given by
+<disp-formula id="pcbi.1004089.e016"><alternatives><graphic id="pcbi.1004089.e016g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e016"/><mml:math id="M16" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>α</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>ρ</mml:mi> <mml:mo>,</mml:mo> <mml:mi>ζ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>=</mml:mo> <mml:mtext>SL</mml:mtext> <mml:mo>+</mml:mo> <mml:mtext>TS</mml:mtext> <mml:mo>+</mml:mo> <mml:mfenced separators="" open="{" close="}"><mml:mrow><mml:mo>(</mml:mo> <mml:mi>A</mml:mi> <mml:mo>+</mml:mo> <mml:mn>2</mml:mn> <mml:mo>)</mml:mo></mml:mrow> <mml:mfenced separators="" open="[" close="]"><mml:mo form="prefix">cos</mml:mo> <mml:mfenced open="(" close=")"><mml:mi>ζ</mml:mi></mml:mfenced> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mfenced></mml:mfenced> <mml:mo>+</mml:mo> <mml:mn>2</mml:mn> <mml:mfenced separators="" open="[" close="]"><mml:mn>20</mml:mn> <mml:mo form="prefix">log</mml:mo> <mml:mfenced separators="" open="(" close=")"><mml:mfrac><mml:mrow><mml:mn>0</mml:mn> <mml:mo>.</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>ρ</mml:mi></mml:mfrac></mml:mfenced> <mml:mo>+</mml:mo> <mml:mi>ρ</mml:mi> <mml:mi>c</mml:mi></mml:mfenced> <mml:mo>.</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(11)</label></disp-formula></p>
+<p>The third term, in curly brackets, in <xref ref-type="disp-formula" rid="pcbi.1004089.e016">Equation (11)</xref> corresponds to the azimuthal echolocation directionality of the bat consisting of (i) an emission directionality with a (positive) asymmetry parameter <italic>A</italic> and (ii) a hearing directionality. The representation of the emission directionality with a cosine law is supported by the experimental results displayed in <xref ref-type="supplementary-material" rid="pcbi.1004089.s005">S4 Fig</xref>. Hearing directionality was calculated from a head-related transfer function (HRTF) obtained from a 3D acoustic modelling of a <italic>Myotis daubentonii</italic> head for the frontal hemisphere and for frequencies between 35 and 45 kHz [<xref ref-type="bibr" rid="pcbi.1004089.ref052">52</xref>]. Hearing directionality was very broad with attenuation being -2 and -3 dB at ±90°, respectively. For simplicity we also fitted a cosine function giving an asymmetry parameter equal to 2 dB (<italic>R</italic><sup>2</sup> = 0.44), which we have used in the third term of <xref ref-type="disp-formula" rid="pcbi.1004089.e016">Equation (11)</xref>. The fourth term, in square parenthesis, is (i) the sound attenuation of a spherical point source relative to a reference distance of 0.1 m, and (ii) the sound absorption losses <italic>c</italic> = −1.28 dB m<sup>−1</sup> for 10°C, 86% relative humidity and 45 kHz following [<xref ref-type="bibr" rid="pcbi.1004089.ref022">22</xref>]. The factor of 2 in front of the square parenthesis accounts for the distance to the target and back.</p>
+</sec>
+<sec id="sec017">
+<title>Flight dynamics simulation with echolocation</title>
+<p>In a simulation run of the model, every five time steps bats <italic>i</italic> and <italic>j</italic> emit an echolocation call with the axis of emission corresponding to the bats’ headings. The attenuation of the emitted sound at the location of the other bat is then estimated by knowing the exposure angles <italic>θ</italic><sub><italic>ij</italic></sub>(<italic>t</italic>) and <italic>θ</italic><sub><italic>ji</italic></sub>(<italic>t</italic>) and their relative distance <italic>d</italic>(<italic>t</italic>) = <italic>d</italic><sub><italic>ij</italic></sub>(<italic>t</italic>) = <italic>d</italic><sub><italic>ji</italic></sub>(<italic>t</italic>), and computing <italic>α</italic><sub><italic>ij</italic></sub>(<italic>d</italic>(<italic>t</italic>), <italic>θ</italic><sub><italic>ij</italic></sub>(<italic>t</italic>)) for the sound emitted by bat <italic>i</italic> and <italic>α</italic><sub><italic>ji</italic></sub>(<italic>d</italic>(<italic>t</italic>), <italic>θ</italic><sub><italic>ji</italic></sub>(<italic>t</italic>)) for the sound emitted by bat <italic>j</italic>. If <italic>α</italic><sub><italic>ij</italic></sub> or <italic>α</italic><sub><italic>ji</italic></sub> are greater than the attenuation threshold <italic>B</italic>, the bats carry on independently of the conspecific. However if either attenuation is less than or equal to <italic>B</italic> the corresponding bat will enter the interacting state after a reaction delay <italic>τ</italic>. Combining <xref ref-type="disp-formula" rid="pcbi.1004089.e014">Equation (9)</xref> and <xref ref-type="disp-formula" rid="pcbi.1004089.e015">(10)</xref>, the desired heading of bat <italic>i</italic> becomes
+<disp-formula id="pcbi.1004089.e017"><alternatives><graphic id="pcbi.1004089.e017g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1004089.e017"/><mml:math id="M17" display="block" overflow="scroll"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msub><mml:mi>γ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:mtd> <mml:mtd><mml:mo>∼</mml:mo></mml:mtd> <mml:mtd columnalign="left"><mml:mfenced separators="" open="{" close=""><mml:mtable><mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:mi>𝓜</mml:mi> <mml:mo>(</mml:mo> <mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>,</mml:mo> <mml:mn>557</mml:mn> <mml:mo>)</mml:mo></mml:mrow></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mtext>if</mml:mtext> <mml:mspace width="4.pt"/><mml:msub><mml:mi>α</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mfenced separators="" open="(" close=")"><mml:mi>d</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>,</mml:mo> <mml:msub><mml:mi>θ</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mfenced> <mml:mo>&gt;</mml:mo> <mml:mi>B</mml:mi></mml:mrow></mml:mtd></mml:mtr> <mml:mtr><mml:mtd columnalign="left"><mml:mrow><mml:mi>𝓜</mml:mi> <mml:mfenced separators="" open="(" close=")"><mml:mfrac><mml:mrow><mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:msub><mml:mi>ϕ</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mo>Δ</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mn>2</mml:mn></mml:mfrac> <mml:mo>,</mml:mo> <mml:mn>2473</mml:mn></mml:mfenced></mml:mrow></mml:mtd> <mml:mtd columnalign="left"><mml:mrow><mml:mtext>if</mml:mtext> <mml:mspace width="4.pt"/><mml:msub><mml:mi>α</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mfenced separators="" open="(" close=")"><mml:mi>d</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>,</mml:mo> <mml:msub><mml:mi>θ</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>-</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:mfenced> <mml:mo>≤</mml:mo> <mml:mi>B</mml:mi></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:mfenced></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(12)</label></disp-formula>
+and similarly for bat <italic>j</italic>.</p>
+<p>To verify that the delays extracted from the movement trajectories are biologically meaningful, we ran the model using no delay, with delays within the observed range 100–500 ms, as well as larger delay values between 500 ms and 2 s. We generated spatio-temporal trajectories of co-flying pairs as a function of the emission directionality <italic>A</italic> and threshold <italic>B</italic> parameters with values -60 dB ≤ <italic>B</italic> ≤ 60 dB and 0 ≤ <italic>A</italic> ≤ 72. The model-generated trajectories were then analysed and classified with the analysis of the TDDC and TDDS plot, and the locations of the actor relative to the reactor compared to the observed spatial patterns of interaction as displayed in the relative position plot (<xref ref-type="fig" rid="pcbi.1004089.g003">Fig. 3</xref>).</p>
+</sec>
+</sec>
+</sec>
+<sec id="sec018">
+<title>Supporting Information</title>
+<supplementary-material id="pcbi.1004089.s001" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.s001" mimetype="video/quicktime" xlink:type="simple">
+<label>S1 Video</label>
+<caption>
+<title>Sample spatio-temporal paired trajectory.</title>
+<p>Example of a paired flight trajectory, with 20 ms temporal resolution, corresponding to <xref ref-type="fig" rid="pcbi.1004089.g001">Fig. 1A</xref>.</p>
+<p>(MOV)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1004089.s002" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.s002" mimetype="image/tiff" xlink:type="simple">
+<label>S1 Fig</label>
+<caption>
+<title>Summary of the data analysis procedure.</title>
+<p>Graphical representation of the sequential steps involved in extracting behavioural states to identify actors and reactors (a-f) and their relative positions from a sample movement trajectory (g).</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1004089.s003" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.s003" mimetype="image/tiff" xlink:type="simple">
+<label>S2 Fig</label>
+<caption>
+<title>Representative sample of coordinated flight and chase.</title>
+<p>The top panels show two different recorded trajectories from the dataset: (a) is an example of coordinated flight behaviour and (b) is an example of chase flight behaviour. Panels (c) and (d) show contour level plots of the corresponding TDDC function <italic>C</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>). Similarly panel (e) and (f) show the corresponding TDDS function <italic>R</italic><sub><italic>ij</italic></sub>(<italic>t</italic>, <italic>τ</italic>). In panels (a) and (b) the similarity in the TDDC plots is evident. It is possible to distinguish clearly the bats’ behaviour only when comparing their respective TDDS plots.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1004089.s004" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.s004" mimetype="image/tiff" xlink:type="simple">
+<label>S3 Fig</label>
+<caption>
+<title>Bats’ relative locations and calculated actor’s sound emission field.</title>
+<p>Symbols indicate positions of the reactor relative to the location (centred) and heading (upwards) of the actor. For behaviour deemed unclassified, the individual at the centre is picked at random for each pair. Parameters of emission directionality, source level and sound absorption are the same as in <xref ref-type="fig" rid="pcbi.1004089.g002">Fig. 2A</xref>. Red lines are isocontours of the emitted sound field.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1004089.s005" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.s005" mimetype="image/tiff" xlink:type="simple">
+<label>S4 Fig</label>
+<caption>
+<title>Perceptual bias of <italic>Myotis daubentonii</italic>.</title>
+<p>Foraging flight trajectory and cumulative emission directionality of <italic>Myotis daubentonii</italic> over approximately a 30 m diameter pool. (a) Top view and (b) lateral view of flight trajectory. Open circles are 126 positions of individual sound emissions as determined by acoustic tomography. Filled symbols represent the positions of recording microphones. (c) Measured emission directionality with 15° resolution based on calibrated microphone recordings, and taking transmission losses of sound on the way from the bat to the microphone for the temperature and humidity [<xref ref-type="bibr" rid="pcbi.1004089.ref022">22</xref>] at the time of recording into account. Flight direction is to the top. Emission amplitude expressed in dB is normalized to the highest observed value. Thin solid lines: maximum and minimum relative amplitude. Bold solid line: mean relative amplitude. Bold dotted line: cosine function fitted to relative emission amplitudes. <italic>A</italic> is the parameter of the fitted cosine function, namely <italic>A</italic>[cos(<italic>ζ</italic>) − 1], resulting in a front-rear amplitude difference of 14.6 dB.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1004089.s006" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.s006" mimetype="image/tiff" xlink:type="simple">
+<label>S5 Fig</label>
+<caption>
+<title>Observed bat headings.</title>
+<p>Two polar histograms showing all the recorded headings of the individually flying bats (<italic>a</italic>) and the paired flying bats (<italic>b</italic>) captured during the experiment. The line connecting the two recording cameras corresponds approximately to 180° and 0°. In both panels the measured headings, rather than being uniformly distributed, are biased towards mean angles. Computing the mean and standard deviations we obtain 349.4° and 169.4°, (±33.1°), for the individual flying bats and 348.0° and 168.0°, (±36.7°), for the paired flying bats. This bias might be caused by the bats trying to avoid the perimeter demarcating their foraging environment: one part along the shoreline where the cameras were mounted and the other part perpendicular to the latter and located just outside the recording region.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1004089.s007" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.s007" mimetype="image/tiff" xlink:type="simple">
+<label>S6 Fig</label>
+<caption>
+<title>Sensitivity to the choice of directional correlation threshold.</title>
+<p>For each of the 70 trajectories that comprise the paired flight dataset, the percentage of that trajectory deemed interacting flight behaviour is shown for different correlation thresholds <italic>v</italic><sub><italic>c</italic></sub>. The effect of changing <italic>v</italic><sub><italic>c</italic></sub> is trajectory-dependent with almost no change in some cases, e.g. 14, and large variation in others, e.g. 56. An analysis of each of the 70 paired flights with thresholds smaller than the one used (0.85 ≤ <italic>v</italic><sub><italic>c</italic></sub> &lt; 0.95) reveals that only four trajectories (4, 38, 53, 59) brings about interacting behaviour that is otherwise missed. In all the other trajectories, a lower threshold simply increases the length of the interacting paths by converting unclassified segments to classified ones at the beginning or the end of a segment already deemed interacting. The right panel shows the total fraction of interacting flight behaviour for all the data for different thresholds <italic>v</italic><sub><italic>c</italic></sub>. Trajectory 17, 20, 40 and 64 were depicted, respectively, in <xref ref-type="supplementary-material" rid="pcbi.1004089.s003">S2 Fig</xref>. panels (a) and (b), and <xref ref-type="supplementary-material" rid="pcbi.1004089.s009">S8 Fig</xref>. panels (a) (and also <xref ref-type="supplementary-material" rid="pcbi.1004089.s002">S1 Fig</xref>. panel(a)) and (b), whereas trajectory 7, 29 and 56, plotted respectively in <xref ref-type="supplementary-material" rid="pcbi.1004089.s011">S10 Fig</xref>. panels (a), (c) and (e), were deemed outliers and their entire dataset were catalogued as unclassified behaviour.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1004089.s008" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.s008" mimetype="image/tiff" xlink:type="simple">
+<label>S7 Fig</label>
+<caption>
+<title>Uncertainty in delay extraction.</title>
+<p>A schematic correlation map demonstrating the effect of trajectory curvature on delay extraction. Within the plot the correlations are distinguished by those below a selected threshold (white-space) and those above the threshold (shaded area), separated by the correlation threshold itself (black-line). Two distinct flight behaviours are drawn: high correlation flight where the bats are well aligned but turn frequently, and parallel flight where the bats fly in straight lines. Times and delays have been marked to demonstrate the effect of the time ordering condition (Δ<italic>τ</italic>/Δ<italic>t</italic> ≥ −1) on the uncertainty of delay extraction.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1004089.s009" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.s009" mimetype="image/tiff" xlink:type="simple">
+<label>S8 Fig</label>
+<caption>
+<title>Comparison of delay extraction procedures.</title>
+<p>In panels (a) and (b) two sample trajectories are drawn with their corresponding TDDC functions in panels (d) and (f), respectively. The maximum of the TDDC function averaged over all times is shown in panel (c) and (e), respectively. In panel (d) and (f) we also show the delay path extracted from our time-ordered procedure (black line) and from selecting the so-called ‘maximal path’ [<xref ref-type="bibr" rid="pcbi.1004089.ref007">7</xref>], that is the maximum at each time of <xref ref-type="disp-formula" rid="pcbi.1004089.e003">Equation (2)</xref>. For panel (d) delay values (and uncertainties) for our time-ordered procedure between 1 s &lt; <italic>t</italic> &lt; 2 s are extracted by considering the TDDS plot (displayed in <xref ref-type="supplementary-material" rid="pcbi.1004089.s002">S1 Fig</xref>. panel (d)) when the interaction becomes a chase. A comparison of the delay values extracted with the different procedures from panel (a) and (b) is displayed, respectively, in panels (g) and (h) with shaded light red areas representing the uncertainty in the extracted delay from our combined analysis of the TDDC and TDDS function.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1004089.s010" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.s010" mimetype="image/tiff" xlink:type="simple">
+<label>S9 Fig</label>
+<caption>
+<title>Observed turning angle distribution and BSMI model sample trajectories.</title>
+<p>Panels (a) and (b) compare the distributions of turning angles for the observed unclassified and chase flights, respectively. A fit of the histograms with a von Mises distribution is also shown as well as the maximum lateral acceleration imposed on the model animals. Panels (c) and (d) show two examples of trajectories that emerge from the model in which the bats act independently and interactively. At the end of each trajectory we show the bats’ echolocation range obtained by selecting hearing threshold of 10 dB and an emission directionality with an asymmetric parameter <italic>A</italic> = 16 in <xref ref-type="disp-formula" rid="pcbi.1004089.e016">Equation (11)</xref>. Panels (e) and (f) show the bats’ headings corresponding to the coloured trajectories in (c) and (d), respectively.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1004089.s011" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1004089.s011" mimetype="image/tiff" xlink:type="simple">
+<label>S10 Fig</label>
+<caption>
+<title>Outliers.</title>
+<p>The paired panels (a)-(b), (c)-(d) and (e)-(f) show respectively the trajectory and correlation maps of bat pairs whose interactive behavioural identification was discarded because the animals’ separation distance was at the limit of their hearing range.</p>
+<p>(TIFF)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>We thank Dr Dieter Vanderelst for his comments on earlier draft of the ms and for his help on hearing directionality, Jeremy Cusack for data collection and him and Dr Holger Görlitz for the video analysis and trajectory generation. We also thank Bristol Water plc for support and site access.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pcbi.1004089.ref001">
+<label>1</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Warburton</surname> <given-names>K</given-names></name> (<year>1997</year>) <chapter-title>Social forces in animal congregations: interactive, motivational, and sensory aspects</chapter-title>. In: <name name-style="western"><surname>Parrish</surname> <given-names>JK</given-names></name>, <name name-style="western"><surname>Hammer</surname> <given-names>WM</given-names></name>, editors, <source>Animal groups in three dimensions</source>, <publisher-name>Cambridge University Press</publisher-name>, <publisher-loc>Cambridge</publisher-loc>. pp. <fpage>313</fpage>–<lpage>336</lpage>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref002">
+<label>2</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Couzin</surname> <given-names>ID</given-names></name>, <name name-style="western"><surname>Krause</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>James</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Ruxton</surname> <given-names>GD</given-names></name>, <name name-style="western"><surname>Franks</surname> <given-names>NR</given-names></name> (<year>2002</year>) <article-title>Collective memory and spatial sorting in animal groups</article-title>. <source>J Theor Biol</source> <volume>218</volume>: <fpage>1</fpage>–<lpage>11</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/jtbi.2002.3065" xlink:type="simple">10.1006/jtbi.2002.3065</ext-link></comment> <object-id pub-id-type="pmid">12297066</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref003">
+<label>3</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Killen</surname> <given-names>SS</given-names></name>, <name name-style="western"><surname>Marras</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Steffensen</surname> <given-names>JF</given-names></name>, <name name-style="western"><surname>McKenzie</surname> <given-names>DJ</given-names></name> (<year>2011</year>) <article-title>Aerobic capacity influences the spatial position of individuals within fish schools</article-title>. <source>Proc R Soc London B</source> <volume>279</volume>: <fpage>357</fpage>–<lpage>364</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1098/rspb.2011.1006" xlink:type="simple">10.1098/rspb.2011.1006</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref004">
+<label>4</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Vicsek</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Zafeiris</surname> <given-names>A</given-names></name> (<year>2012</year>) <article-title>Collective motion</article-title>. <source>Phys Rep</source> <volume>517</volume>: <fpage>71</fpage>–<lpage>140</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.physrep.2012.03.004" xlink:type="simple">10.1016/j.physrep.2012.03.004</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref005">
+<label>5</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Shadmehr</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Smith</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Krakauer</surname> <given-names>JW</given-names></name> (<year>2010</year>) <article-title>Error correction, sensory prediction, and adaptation in motor control</article-title>. <source>Annu Rev Neurosci</source> <volume>33</volume>: <fpage>89</fpage>–<lpage>108</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1146/annurev-neuro-060909-153135" xlink:type="simple">10.1146/annurev-neuro-060909-153135</ext-link></comment> <object-id pub-id-type="pmid">20367317</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref006">
+<label>6</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Nagy</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Akos</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Biro</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Vicsek</surname> <given-names>T</given-names></name> (<year>2010</year>) <article-title>Hierarchical group dynamics in pigeon flocks</article-title>. <source>Nature</source> <volume>464</volume>: <fpage>890</fpage>–<lpage>893</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature08891" xlink:type="simple">10.1038/nature08891</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref007">
+<label>7</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Nagy</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Váasáarhelyi</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Pettit</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Roberts-Mariani</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Vicsek</surname> <given-names>T</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Context-dependent hierarchies in pigeons</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>110</volume>: <fpage>13049</fpage>–<lpage>13054</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1305552110" xlink:type="simple">10.1073/pnas.1305552110</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref008">
+<label>8</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Yang</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Zhang</surname> <given-names>Q</given-names></name>, <name name-style="western"><surname>Jiang</surname> <given-names>Z</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>Z</given-names></name> (<year>2012</year>) <article-title>Flocking of multi-agents with time delay</article-title>. <source>Int J Syst Sci</source> <volume>43</volume>: <fpage>2125</fpage>–<lpage>2134</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1080/00207721.2011.564675" xlink:type="simple">10.1080/00207721.2011.564675</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref009">
+<label>9</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Yomosa</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Mizuguchi</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Hayakawa</surname> <given-names>Y</given-names></name> (<year>2013</year>) <article-title>Spatio-temporal structure of hooded gull flocks</article-title>. <source>PLoS ONE</source> <volume>8</volume>: <fpage>e81754</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0081754" xlink:type="simple">10.1371/journal.pone.0081754</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref010">
+<label>10</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Couzin</surname> <given-names>ID</given-names></name>, <name name-style="western"><surname>Krause</surname> <given-names>J</given-names></name> (<year>2003</year>) <article-title>Self-organization and collective behavior in vertebrates</article-title>. <source>Adv Stud Behav</source> <volume>32</volume>: <fpage>1</fpage>–<lpage>75</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0065-3454(03)01001-5" xlink:type="simple">10.1016/S0065-3454(03)01001-5</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref011">
+<label>11</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Couzin</surname> <given-names>ID</given-names></name>, <name name-style="western"><surname>Krause</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Franks</surname> <given-names>NR</given-names></name>, <name name-style="western"><surname>Levin</surname> <given-names>SA</given-names></name> (<year>2005</year>) <article-title>Effective leadership and decision-making in animal groups on the move</article-title>. <source>Nature</source> <volume>433</volume>: <fpage>513</fpage>–<lpage>516</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature03236" xlink:type="simple">10.1038/nature03236</ext-link></comment> <object-id pub-id-type="pmid">15690039</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref012">
+<label>12</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Sumpter</surname> <given-names>DJT</given-names></name> (<year>2010</year>) <source>Coolective animal behavior</source>. <publisher-name>Princeton University Press</publisher-name>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref013">
+<label>13</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Arganda</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Prez-Escudero</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>de Polavieja</surname> <given-names>G</given-names></name> (<year>2012</year>) <article-title>A common rule for decision making in animal collectives across species</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>109</volume>: <fpage>20508</fpage>–<lpage>20513</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1210664109" xlink:type="simple">10.1073/pnas.1210664109</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref014">
+<label>14</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Weitz</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Blanco</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Fournier</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Gautrais</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Jost</surname> <given-names>C</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Modelling collective animal behavior with a cognitive perspective: a methodological framework</article-title>. <source>PLoS ONE</source> <volume>7</volume>: <fpage>e38588</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0038588" xlink:type="simple">10.1371/journal.pone.0038588</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref015">
+<label>15</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Lopez</surname> <given-names>U</given-names></name>, <name name-style="western"><surname>Gautrais</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Couzin</surname> <given-names>ID</given-names></name>, <name name-style="western"><surname>Theraulaz</surname> <given-names>G</given-names></name> (<year>2012</year>) <article-title>From behavioural analyses to models of collective motion in fish schools</article-title>. <source>Interface Focus</source> <volume>2</volume>: <fpage>693</fpage>–<lpage>707</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1098/rsfs.2012.0033" xlink:type="simple">10.1098/rsfs.2012.0033</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref016">
+<label>16</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Katz</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Tunstrøm</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Ioannou</surname> <given-names>CC</given-names></name>, <name name-style="western"><surname>Huepe</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Couzin</surname> <given-names>ID</given-names></name> (<year>2011</year>) <article-title>Inferring the structure and dynamics of interactions in schooling fish</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>108</volume>: <fpage>18720</fpage>–<lpage>18725</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1107583108" xlink:type="simple">10.1073/pnas.1107583108</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref017">
+<label>17</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Herbert-Read</surname> <given-names>JE</given-names></name>, <name name-style="western"><surname>Perna</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Mann</surname> <given-names>RP</given-names></name>, <name name-style="western"><surname>Schaerf</surname> <given-names>TM</given-names></name>, <name name-style="western"><surname>Sumpter</surname> <given-names>DJT</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Inferring the rules of interaction of shoaling fish</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>108</volume>: <fpage>18726</fpage>–<lpage>18731</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1109355108" xlink:type="simple">10.1073/pnas.1109355108</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref018">
+<label>18</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Ballerini</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Cabibbo</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Candelier</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Cavagna</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Cisbani</surname> <given-names>E</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Interaction ruling animal collective behavior depends on topological rather than metric distance: Evidence from a field study</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>105</volume>: <fpage>1232</fpage>–<lpage>1237</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.0711437105" xlink:type="simple">10.1073/pnas.0711437105</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref019">
+<label>19</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Gautrais</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Ginelli</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Fournier</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Blanco</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Soria</surname> <given-names>M</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Deciphering interactions in moving animal groups</article-title>. <source>PLoS Comput Biol</source> <volume>8</volume>: <fpage>e1002678</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pcbi.1002678" xlink:type="simple">10.1371/journal.pcbi.1002678</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref020">
+<label>20</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Stranbourg-Peskin</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Twomey</surname> <given-names>CR</given-names></name>, <name name-style="western"><surname>Bode</surname> <given-names>NWF</given-names></name>, <name name-style="western"><surname>Kao</surname> <given-names>AB</given-names></name>, <name name-style="western"><surname>Katz</surname> <given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Visual sensory networks and effective information transfer in animal groups</article-title>. <source>Curr Biol</source> <volume>23</volume>: <fpage>R709</fpage>–<lpage>R711</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cub.2013.07.059" xlink:type="simple">10.1016/j.cub.2013.07.059</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref021">
+<label>21</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Partridge</surname> <given-names>BL</given-names></name>, <name name-style="western"><surname>Pitcher</surname> <given-names>TJ</given-names></name> (<year>1980</year>) <article-title>The sensory basis of fish schools: relative roles of lateral line and vision</article-title>. <source>J Comp Physiol</source> <volume>135</volume>: <fpage>315</fpage>–<lpage>325</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/BF00657647" xlink:type="simple">10.1007/BF00657647</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref022">
+<label>22</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Bazley</surname> <given-names>EN</given-names></name> (<year>1976</year>) <article-title>Sound absorption in air at frequencies up to 100 khz</article-title>. <source>NPL Acoustics Report</source> <volume>74</volume>: <fpage>1</fpage>–<lpage>43</lpage>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref023">
+<label>23</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Dechmann</surname> <given-names>DKN</given-names></name>, <name name-style="western"><surname>Heucke</surname> <given-names>SL</given-names></name>, <name name-style="western"><surname>Giuggioli</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Safi</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Voigt</surname> <given-names>CC</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Experimental evidence for group hunting via eavesdropping in echolocating bats</article-title>. <source>Proc R Soc B</source> <volume>276</volume>: <fpage>2721</fpage>–<lpage>2728</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1098/rspb.2009.0473" xlink:type="simple">10.1098/rspb.2009.0473</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref024">
+<label>24</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Goerlitz</surname> <given-names>HR</given-names></name>, <name name-style="western"><surname>ter Hofstede</surname> <given-names>HM</given-names></name>, <name name-style="western"><surname>Zeale</surname> <given-names>MRK</given-names></name>, <name name-style="western"><surname>Jones</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Holderied</surname> <given-names>MW</given-names></name> (<year>2010</year>) <article-title>An aerial-hawking bat uses stealth echolocation to counter moth hearing</article-title>. <source>Curr Biol</source> <volume>20</volume>: <fpage>1568</fpage>–<lpage>1572</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.cub.2010.08.057" xlink:type="simple">10.1016/j.cub.2010.08.057</ext-link></comment> <object-id pub-id-type="pmid">20727755</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref025">
+<label>25</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Jones</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Siemers</surname> <given-names>BM</given-names></name> (<year>2011</year>) <article-title>The communicative potential of bat echolocation pulses</article-title>. <source>J Comp Physiol</source> <volume>197</volume>: <fpage>447</fpage>–<lpage>457</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00359-010-0565-x" xlink:type="simple">10.1007/s00359-010-0565-x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref026">
+<label>26</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Holderied</surname> <given-names>MW</given-names></name>, <name name-style="western"><surname>von Helversen</surname> <given-names>O</given-names></name> (<year>2003</year>) <article-title>Echolocation range and wingbeat period match in aerial-hawking bats</article-title>. <source>Proc Roy Soc B</source> <volume>270</volume>: <fpage>2293</fpage>–<lpage>2299</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1098/rspb.2003.2487" xlink:type="simple">10.1098/rspb.2003.2487</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref027">
+<label>27</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>ter Hofstede</surname> <given-names>HM</given-names></name>, <name name-style="western"><surname>Goerlitz</surname> <given-names>HR</given-names></name>, <name name-style="western"><surname>Ratcliffe</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Holderied</surname></name>, <name name-style="western"><surname>Surlykke</surname> <given-names>A</given-names></name> (<year>2013</year>) <article-title>The simple ears of noctuoid moths are tuned to the calls sof their sympatric bat community</article-title>. <source>J Exp Biol</source> <volume>216</volume>: <fpage>3954</fpage>–<lpage>3962</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1242/jeb.093294" xlink:type="simple">10.1242/jeb.093294</ext-link></comment> <object-id pub-id-type="pmid">23913945</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref028">
+<label>28</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Chiu</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Xian</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Moss</surname> <given-names>CF</given-names></name> (<year>2008</year>) <article-title>Flying in silence: echolocating bats cease vocalizing to avoid sonar jamming</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>105</volume>: <fpage>13116</fpage>–<lpage>13121</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.0804408105" xlink:type="simple">10.1073/pnas.0804408105</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref029">
+<label>29</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Jakobsen</surname> <given-names>L</given-names></name>, <name name-style="western"><surname>Ratcliffe</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Surlykke</surname> <given-names>A</given-names></name> (<year>2013</year>) <article-title>Convergent acoustic field of view in echolocating bats</article-title>. <source>Nature</source> <volume>493</volume>: <fpage>93</fpage>–<lpage>96</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature11664" xlink:type="simple">10.1038/nature11664</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref030">
+<label>30</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Dietz</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Dietz</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Siemers</surname> <given-names>BM</given-names></name> (<year>2007</year>) <article-title>Growth of horseshoe bats <italic>(Chiroptera, Rhinolophidae)</italic> in temperate continental conditions and the influence of climate</article-title>. <source>Mamm Biol</source> <volume>72</volume>: <fpage>129</fpage>–<lpage>144</lpage>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref031">
+<label>31</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Siemers</surname> <given-names>BM</given-names></name>, <name name-style="western"><surname>Stilz</surname> <given-names>P</given-names></name>, <name name-style="western"><surname>Schnitzler</surname> <given-names>HU</given-names></name> (<year>2001</year>) <article-title>The acoustic advantage of hunting at low heights above water: behavioural experiments on the european ‘trawling bats myotis capaccinii, m. dasycneme and m. daubentonii</article-title>. <source>J Exp Biol</source> <volume>204</volume>: <fpage>3843</fpage>–<lpage>3854</lpage>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref032">
+<label>32</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Bogdanowicz</surname> <given-names>W</given-names></name> (<year>1994</year>) <article-title>Myotis daubentonii</article-title>. <source>Mamm Species</source> <volume>475</volume>: <fpage>1</fpage>–<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/3504215" xlink:type="simple">10.2307/3504215</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref033">
+<label>33</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Conradt</surname> <given-names>L</given-names></name> (<year>2012</year>) <article-title>Models in animal collective decision making: information uncertainty and conflicting preferences</article-title>. <source>Roy Soc Interface Focus</source> <volume>2</volume>: <fpage>226</fpage>–<lpage>240</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1098/rsfs.2011.0090" xlink:type="simple">10.1098/rsfs.2011.0090</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref034">
+<label>34</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Jung</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Kalko</surname> <given-names>EKV</given-names></name>, <name name-style="western"><surname>Helvensen</surname> <given-names>OV</given-names></name> (<year>2007</year>) <article-title>Echolocation calls in central american emballonurid bats: signal design and call frequency alternation</article-title>. <source>J Zool</source> <volume>272</volume>: <fpage>125</fpage>–<lpage>137</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1469-7998.2006.00250.x" xlink:type="simple">10.1111/j.1469-7998.2006.00250.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref035">
+<label>35</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Turchin</surname> <given-names>P</given-names></name> (<year>1998</year>) <source>Quantitative analysis of movement: measuring and modelling population redistribution in animals and plants</source>. <publisher-loc>Sunderland, MA, USA</publisher-loc>: <publisher-name>Sinauer Associates</publisher-name>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref036">
+<label>36</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Codling</surname> <given-names>EA</given-names></name>, <name name-style="western"><surname>Planck</surname> <given-names>MJ</given-names></name>, <name name-style="western"><surname>Benhamou</surname> <given-names>S</given-names></name> (<year>2008</year>) <article-title>Random walk models in biology</article-title>. <source>J Roy Soc Interface</source> <volume>95</volume>: <fpage>813</fpage>–<lpage>834</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1098/rsif.2008.0014" xlink:type="simple">10.1098/rsif.2008.0014</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref037">
+<label>37</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Parent</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Spaccapietra</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Renso</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Andrienko</surname> <given-names>G</given-names></name>, <name name-style="western"><surname>Andrienko</surname> <given-names>N</given-names></name>, <etal>et al</etal>. (<year>2013</year>) <article-title>Semantic trajectories modeling and analysis</article-title>. <source>ACM Computing Surveys</source> <volume>45</volume>: <volume>42</volume>:<fpage>1</fpage>–<lpage>31</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1145/2501654.2501656" xlink:type="simple">10.1145/2501654.2501656</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref038">
+<label>38</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Lukeman</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Li</surname> <given-names>YX</given-names></name>, <name name-style="western"><surname>Edelstein-Keshet</surname> <given-names>L</given-names></name> (<year>2010</year>) <article-title>Inferring individual rules from collective behavior</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>107</volume>: <fpage>12576</fpage>–<lpage>12580</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.1001763107" xlink:type="simple">10.1073/pnas.1001763107</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref039">
+<label>39</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Chiu</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Reddy</surname> <given-names>PV</given-names></name>, <name name-style="western"><surname>Xian</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Krishnaprasad</surname> <given-names>PS</given-names></name>, <name name-style="western"><surname>Moss</surname> <given-names>CF</given-names></name> (<year>2010</year>) <article-title>Effects of competitive prey capture on flight behavior and sonar beam pattern in paired big brown bats, eptesicus fuscus</article-title>. <source>J Exp Biol</source> <volume>213</volume>: <fpage>3348</fpage>–<lpage>3356</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1242/jeb.044818" xlink:type="simple">10.1242/jeb.044818</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref040">
+<label>40</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>McKetterick</surname> <given-names>TJ</given-names></name>, <name name-style="western"><surname>Giuggioli</surname> <given-names>L</given-names></name> (<year>2014</year>) <article-title>Exact dynamics of stochastic linear delayed systems: Application to spatiotemporal coordination of comoving agents</article-title>. <source>Phys Rev E</source> <volume>90</volume>: <fpage>042135</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1103/PhysRevE.90.042135" xlink:type="simple">10.1103/PhysRevE.90.042135</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref041">
+<label>41</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Nathan</surname> <given-names>RM</given-names></name> (<year>2008</year>) <article-title>An emerging movement ecology paradigm</article-title>. <source>Proc Natl Acad Sci USA</source> <volume>105</volume>: <fpage>19050</fpage>–<lpage>19051</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.0800375105" xlink:type="simple">10.1073/pnas.0800375105</ext-link></comment> <object-id pub-id-type="pmid">19060197</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref042">
+<label>42</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Nathan</surname> <given-names>RM</given-names></name>, <name name-style="western"><surname>Giuggioli</surname> <given-names>L</given-names></name> (<year>2013</year>) <article-title>A milestone for movement ecology research</article-title>. <source>Move Ecol</source> <volume>1</volume>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref043">
+<label>43</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Kalko</surname> <given-names>EKV</given-names></name>, <name name-style="western"><surname>Schnitzler</surname> <given-names>HU</given-names></name> (<year>1989</year>) <article-title>The echolocation and hunting behaviour of daubenton’s bat, <italic>Myotis daubentoni</italic></article-title>. <source>Behav Ecol Sociobiol</source> <volume>24</volume>: <fpage>225</fpage>–<lpage>238</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/BF00295202" xlink:type="simple">10.1007/BF00295202</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref044">
+<label>44</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Shirabe</surname> <given-names>T</given-names></name> (<year>2006</year>) <chapter-title>Correlation analysis of discrete motions</chapter-title>. In: <conf-name>Proc. of the Fourth International Conference on GIS, Lecture Notes In Computer Science</conf-name>, <conf-loc>Springer-Verlag, Berlin</conf-loc>. pp. <fpage>370</fpage>–<lpage>382</lpage>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref045">
+<label>45</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Long</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Nelson</surname> <given-names>TA</given-names></name> (<year>2013</year>) <article-title>Measuring dynamic interaction in movement data</article-title>. <source>Trans GIS</source> <volume>17</volume>: <fpage>62</fpage>–<lpage>77</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1467-9671.2012.01353.x" xlink:type="simple">10.1111/j.1467-9671.2012.01353.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref046">
+<label>46</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Kareiva</surname> <given-names>PM</given-names></name>, <name name-style="western"><surname>Shigesada</surname> <given-names>N</given-names></name> (<year>1983</year>) <article-title>Analyzing insect movement as a correlated random walk</article-title>. <volume>Oecologia</volume> <volume>56</volume>: <fpage>234</fpage>–<lpage>238</lpage>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref047">
+<label>47</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Okubo</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Levin</surname> <given-names>SA</given-names></name> (<year>2001</year>) <source>Diffusion and ecological problems: modern perspectives</source>. <publisher-name>Springer Verlag</publisher-name>, <publisher-loc>New York</publisher-loc>, <edition>2nd edition</edition>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref048">
+<label>48</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Rice</surname> <given-names>SO</given-names></name> (<year>1954</year>) <chapter-title>Mathematical analysis of random noise</chapter-title>. In: <name name-style="western"><surname>Wax</surname> <given-names>N</given-names></name>, editor, <source>Selected papers on noise and stochastic processes</source>, <publisher-name>Dover Publications</publisher-name>, <publisher-loc>New York</publisher-loc>. pp. <fpage>133</fpage>–<lpage>294</lpage>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref049">
+<label>49</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Jones</surname> <given-names>MC</given-names></name>, <name name-style="western"><surname>Pewsey</surname> <given-names>A</given-names></name> (<year>2005</year>) <article-title>A family of symmetric distributions on the circle</article-title>. <source>J Am Stat Assoc</source> <volume>100</volume>: <fpage>1422</fpage>–<lpage>1428</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1198/016214505000000286" xlink:type="simple">10.1198/016214505000000286</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref050">
+<label>50</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Vicsek</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Cziráok</surname> <given-names>A</given-names></name>, <name name-style="western"><surname>Ben-Jacob</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Cohen</surname> <given-names>I</given-names></name>, <name name-style="western"><surname>Shochet</surname> <given-names>O</given-names></name> (<year>1995</year>) <article-title>Novel type of phase transition in a system of self-driven particles</article-title>. <source>Phys Rev Lett</source> <volume>75</volume>: <fpage>1226</fpage>–<lpage>1229</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1103/PhysRevLett.75.1226" xlink:type="simple">10.1103/PhysRevLett.75.1226</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref051">
+<label>51</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Møhl</surname> <given-names>B</given-names></name> (<year>1988</year>) <article-title>Target detection by echolocating bats</article-title>. In: <source>Animal Sonar</source>, <series>NATO ASI Series</series>, <volume>volume 156</volume>. pp. <fpage>435</fpage>–<lpage>450</lpage>.</mixed-citation>
+</ref>
+<ref id="pcbi.1004089.ref052">
+<label>52</label>
+<mixed-citation xlink:type="simple" publication-type="other">Vanderelst, D (2013) Chiroping (chiroptera, robots, sonar) project funded by the seventh framework programme ict challenge 2: cognitive systems, interaction, robotics. personal communication.</mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

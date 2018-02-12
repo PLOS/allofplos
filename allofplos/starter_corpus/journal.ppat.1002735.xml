@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="nlm-ta">PLoS Pathog</journal-id><journal-id journal-id-type="pmc">plospath</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Pathogens</journal-title></journal-title-group><issn pub-type="ppub">1553-7366</issn><issn pub-type="epub">1553-7374</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="publisher-id">PPATHOGENS-D-11-02445</article-id><article-id pub-id-type="doi">10.1371/journal.ppat.1002735</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Agriculture</subject>
+          <subj-group>
+            <subject>Pest control</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Zoology</subject>
+            <subj-group>
+              <subject>Parasitology</subject>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Veterinary science</subject>
+          <subj-group>
+            <subject>Veterinary pathology</subject>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Pathology</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Synergistic Parasite-Pathogen Interactions Mediated by Host Immunity Can Drive the Collapse of Honeybee Colonies</article-title><alt-title alt-title-type="running-head">Multi-Parasite Interactions and Colony Collapse</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Nazzi</surname>
+            <given-names>Francesco</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Brown</surname>
+            <given-names>Sam P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Annoscia</surname>
+            <given-names>Desiderato</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Del Piccolo</surname>
+            <given-names>Fabio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Di Prisco</surname>
+            <given-names>Gennaro</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Varricchio</surname>
+            <given-names>Paola</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Della Vedova</surname>
+            <given-names>Giorgio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Cattonaro</surname>
+            <given-names>Federica</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Caprio</surname>
+            <given-names>Emilio</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Pennacchio</surname>
+            <given-names>Francesco</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1"><label>1</label><addr-line>Dipartimento di Scienze Agrarie e Ambientali, Università degli Studi di Udine, Udine, Italy</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Centre for Immunity, Infection and Evolution, School of Biological Sciences, University of Edinburgh, Edinburgh, United Kingdom</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Dipartimento di Entomologia e Zoologia Agraria “Filippo Silvestri”, Università degli Studi di Napoli “Federico II”, Portici (Napoli), Italy</addr-line>       </aff><aff id="aff4"><label>4</label><addr-line>Istituto di Genomica Applicata, Parco Scientifico e Tecnologico Luigi Danieli, Udine, Italy</addr-line>       </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Schneider</surname>
+            <given-names>David S.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Stanford University, United States of America</aff><author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">francesco.nazzi@uniud.it</email> (FN); <email xlink:type="simple">f.pennacchio@unina.it</email> (FP)</corresp>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: FN FP. Performed the experiments: FN DA FDP GDP PV GDV FC EC. Analyzed the data: FN SPB. Wrote the paper: FN FP SPB.</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p>The authors have declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="collection">
+        <month>6</month>
+        <year>2012</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>14</day>
+        <month>6</month>
+        <year>2012</year>
+      </pub-date><volume>8</volume><issue>6</issue><elocation-id>e1002735</elocation-id><history>
+        <date date-type="received">
+          <day>2</day>
+          <month>11</month>
+          <year>2011</year>
+        </date>
+        <date date-type="accepted">
+          <day>23</day>
+          <month>4</month>
+          <year>2012</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2012</copyright-year><copyright-holder>Nazzi et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><abstract>
+        <p>The health of the honeybee and, indirectly, global crop production are threatened by several biotic and abiotic factors, which play a poorly defined role in the induction of widespread colony losses. Recent descriptive studies suggest that colony losses are often related to the interaction between pathogens and other stress factors, including parasites. Through an integrated analysis of the population and molecular changes associated with the collapse of honeybee colonies infested by the parasitic mite <italic>Varroa destructor</italic>, we show that this parasite can de-stabilise the within-host dynamics of Deformed wing virus (DWV), transforming a cryptic and vertically transmitted virus into a rapidly replicating killer, which attains lethal levels late in the season. The de-stabilisation of DWV infection is associated with an immunosuppression syndrome, characterized by a strong down-regulation of the transcription factor NF-κB. The centrality of NF-κB in host responses to a range of environmental challenges suggests that this transcription factor can act as a common currency underlying colony collapse that may be triggered by different causes. Our results offer an integrated account for the multifactorial origin of honeybee losses and a new framework for assessing, and possibly mitigating, the impact of environmental challenges on honeybee health.</p>
+      </abstract><abstract abstract-type="summary">
+        <title>Author Summary</title>
+        <p>Honeybees are of capital importance for humans since crop production significantly depends upon pollination by these insects. In recent years, widespread collapses of honeybee colonies have been reported throughout the world; unfortunately, despite intense research efforts, the causal agents of such losses are not yet identified, although parasites seem to play a key-role. We combined molecular, field-longitudinal and theoretical approaches to describe the mechanistic basis and dynamical properties of collapse-causing interactions within the multi-parasite community infecting the honeybees. We found that the parasitic mite <italic>Varroa destructor</italic> can de-stabilise the within-host dynamics of Deformed wing virus (DWV), transforming a cryptic and vertically transmitted virus into a rapidly replicating killer. The de-stabilisation of DWV infection results from a widespread immunosuppression characterized by a strong down-regulation of a member of the gene family NF-κB. This gene family not only plays a central role in insect immunity, but is also involved in intricate cross-talks with a number of physiological and stress response pathways. This suggests that different stress factors may alter the critical balance between viral pathogens and host-defences, promoting intense viral replication in bees harbouring silent infections and subsequent colony collapse. The model we propose can potentially explain the multifactorial origin of bee losses.</p>
+      </abstract><funding-group><funding-statement>This work was funded by the Italian Ministry of Agriculture (MIPAAF), (research project “Apenet - Ricerca e Monitoraggio in Apicoltura”). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group><counts>
+        <page-count count="16"/>
+      </counts></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>In the last few years, large-scale losses of honeybees (<italic>Apis mellifera</italic> L.) have been recorded all over the world <xref ref-type="bibr" rid="ppat.1002735-vanEngelsdorp1">[1]</xref>. A poorly understood syndrome, called Colony Collapse Disorder (CCD), reported in the United States of America since 2006 <xref ref-type="bibr" rid="ppat.1002735-vanEngelsdorp2">[2]</xref>, has attracted the attention of both the scientific community and the public opinion <xref ref-type="bibr" rid="ppat.1002735-Stokstad1">[3]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Oldroyd1">[4]</xref>. However, elevated winter colony losses, not related to CCD, have been reported in most regions of the northern hemisphere <xref ref-type="bibr" rid="ppat.1002735-vanderZee1">[5]</xref> and, even in the USA, CCD seems to be just one of the many causes of colony losses <xref ref-type="bibr" rid="ppat.1002735-vanEngelsdorp3">[6]</xref>.</p>
+      <p>Several possible causes have been claimed for colony losses but there is now a general consensus about the fact that many factors are likely involved <xref ref-type="bibr" rid="ppat.1002735-Neumann1">[7]</xref>. Whatever the origin, this problem has caused great concern due to the importance of honeybees as pollinators of many crops, which represent a significant and increasing proportion of human diet <xref ref-type="bibr" rid="ppat.1002735-Klein1">[8]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Aizen1">[9]</xref>. Unfortunately, despite the considerable research efforts devoted to the study of the problem, the causes of widespread colony losses still remain poorly understood from a functional point of view, although pathogens seem to play a key-role <xref ref-type="bibr" rid="ppat.1002735-Neumann1">[7]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Ratnieks1">[10]</xref>.</p>
+      <p>Several lines of direct and indirect evidence for the involvement of existing and emerging parasites and pathogens have been provided <xref ref-type="bibr" rid="ppat.1002735-CoxFoster1">[11]</xref>–<xref ref-type="bibr" rid="ppat.1002735-GuzmnNovoa1">[17]</xref>. Recent studies suggest that, more generally, the collapse of honeybee colonies involves an interaction between pathogens and other stress factors, including the parasitic mite <italic>Varroa destructor</italic> Anderson &amp; Trueman <xref ref-type="bibr" rid="ppat.1002735-vanEngelsdorp2">[2]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Hedtka1">[18]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Dainat1">[19]</xref>.</p>
+      <p><italic>V. destructor</italic> is a widespread and economically important parasite of <italic>A. mellifera</italic> <xref ref-type="bibr" rid="ppat.1002735-Sammataro1">[20]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Rosenkranz1">[21]</xref>, which can transmit pathogenic viruses, often associated with colony collapse <xref ref-type="bibr" rid="ppat.1002735-Highfield1">[14]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Berthoud1">[16]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Dainat1">[19]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Chen1">[22]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Martin1">[23]</xref>, and determine a host immunosuppression syndrome not fully characterized at the molecular level <xref ref-type="bibr" rid="ppat.1002735-Yang1">[24]</xref>–<xref ref-type="bibr" rid="ppat.1002735-Navajas1">[26]</xref>. Even though the possible role of the <italic>Varroa</italic> mite in colony losses is supported by a wealth of data <xref ref-type="bibr" rid="ppat.1002735-Neumann1">[7]</xref>, <xref ref-type="bibr" rid="ppat.1002735-GuzmnNovoa1">[17]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Dainat1">[19]</xref>, <xref ref-type="bibr" rid="ppat.1002735-LeConte1">[27]</xref>, and its active vectoring of bee viruses is demonstrated <xref ref-type="bibr" rid="ppat.1002735-Boecking1">[28]</xref>, the functional details of this dangerous association still remain poorly defined <xref ref-type="bibr" rid="ppat.1002735-Rosenkranz1">[21]</xref>. In particular, the association with Deformed wing virus (DWV) appears particularly interesting due to the increasing body of evidence about the role of this virus in bee colony losses <xref ref-type="bibr" rid="ppat.1002735-Highfield1">[14]</xref>–<xref ref-type="bibr" rid="ppat.1002735-Berthoud1">[16]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Dainat1">[19]</xref>. DWV is a positive strand RNA virus that can be vertically transmitted through the germ-line, causing covert infections in honeybee populations <xref ref-type="bibr" rid="ppat.1002735-de1">[29]</xref>. Available data suggest that DWV copy control can be undermined by concurrent infestation with <italic>V. destructor</italic>, leading to damaging overt infection <xref ref-type="bibr" rid="ppat.1002735-de1">[29]</xref>. However, although significant contributions have been provided <xref ref-type="bibr" rid="ppat.1002735-Gisder1">[30]</xref>–<xref ref-type="bibr" rid="ppat.1002735-Moore1">[32]</xref>, the mechanism of this interaction remains unclear.</p>
+      <p>Multi-parasite within-host interactions are receiving increasing attention <xref ref-type="bibr" rid="ppat.1002735-Lafferty1">[33]</xref> in order to achieve a better comprehension of the structure, dynamics and pathogenic significance of parasite communities <xref ref-type="bibr" rid="ppat.1002735-Petney1">[34]</xref>. Unfortunately, the descriptive nature of most studies carried out so far on honeybees has not allowed a detailed functional representation of the complex network of biotic interactions underpinning the decline of honeybee colonies.</p>
+      <p>The present study aims at filling this gap, by dissecting at the population and molecular level the major changes that underlie the colony collapse associated with <italic>V. destructor</italic> infestation, in order to describe both the mechanistic basis and dynamical properties of the biotic interactions that are involved. To address these issues we adopted an approach based on the comparative analysis of bee colonies exposed to different infestation levels of <italic>V. destructor</italic>, while maintained in the same environmental conditions. This allowed to accurately monitor the major changes occurring over time in the colonies and to shed light on the most crucial components involved in the decline and eventual collapse; laboratory experiments, carried out under strictly controlled conditions, complemented our field study.</p>
+      <p>The results allow us to define and analyse a novel dynamical model to describe the complex interactions between bees, pathogens and parasites and other stress factors, providing a new predictive framework for the study of the impact of diverse environmental stress factors on honeybee health.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>Dynamics of Bee Population</title>
+        <p>In an isolated location we set up two experimental apiaries, one of which received conventional acaricide treatments to control mite infestation (low infested colonies: LIC), while the other was left untreated, to monitor the effects of an increasing mite population (highly infested colonies: HIC).</p>
+        <p>A decline of bee population was observed in all colonies along the Summer, although a marked acceleration of the process was noted in HIC late in the season so that, at the end of October, a significant reduction of bee population was observed in such colonies (U = 0, n<sub>1</sub> = 6, n<sub>2</sub> = 5: <italic>P</italic>&lt;0.01; <xref ref-type="fig" rid="ppat-1002735-g001">Figure 1A</xref>). Two highly infested colonies collapsed by the end of Autumn, whereas the remaining ones did so by the following Spring. Bee mortality, as determined from the number of dead bees recovered in front of the hives and bee population, was abruptly and significantly raised at the end of the season in HIC (U = 0, n<sub>1</sub> = 6, n<sub>2</sub> = 5: <italic>P</italic>&lt;0.01; <xref ref-type="fig" rid="ppat-1002735-g001">Figure 1B</xref>).</p>
+        <fig id="ppat-1002735-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1002735.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Seasonal dynamics of bees in colonies with low and high levels of mite infestation.</title>
+            <p>(<bold>A</bold>) Estimated bee numbers recorded in each hive in October, when a sudden decrease of bee population was observed in highly infested colonies. (<bold>B</bold>) Bee mortality over time. The error bars indicate the standard deviation; mean values significantly different are denoted with asterisks (*<italic>P</italic>≤0.05; **<italic>P</italic>≤0.01). Bee population in highly infested colonies reached minimum levels in October, because of a marked increase of bee mortality.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.g001" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2b">
+        <title>Parasites and Pathogens</title>
+        <p>After a steady increase over time, the HIC mite population reached its highest level at the end of the season, whereas acaricide treatments kept it under control in the LIC (<xref ref-type="fig" rid="ppat-1002735-g002">Figure 2A</xref>).</p>
+        <fig id="ppat-1002735-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1002735.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Mites and DWV in low and highly infested colonies.</title>
+            <p>(<bold>A</bold>) Number of mites per 1,000 bees. (<bold>B</bold>) Seasonal prevalence of Deformed wing virus (DWV) in low and highly infested colonies. (<bold>C</bold>) Number of DWV genome copies in infected honeybees, collected in September and October from low and highly infested colonies. The error bars indicate the standard deviation; mean values significantly different are denoted with asterisks (*<italic>P</italic>≤0.05; **<italic>P</italic>≤0.01). Mite population steadily increased along the season in untreated colonies; DWV prevalence approached 100% at the end of the season both in low and highly infested colonies, but the number of genome copies was much higher in highly infested colonies.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.g002" xlink:type="simple"/>
+        </fig>
+        <p>A metagenomic analysis of bee samples collected in October from all experimental hives revealed the presence of a few common symbionts <xref ref-type="bibr" rid="ppat.1002735-CoxFoster1">[11]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Babendreier1">[35]</xref> (<xref ref-type="supplementary-material" rid="ppat.1002735.s006">Table S1</xref>). With regard to non-viral pathogens, <italic>Nosema ceranae</italic>, linked to colony losses in Spain <xref ref-type="bibr" rid="ppat.1002735-MartnHernndez1">[12]</xref>, occurred at similar rates both in LIC and HIC (<xref ref-type="supplementary-material" rid="ppat.1002735.s006">Table S1</xref>).</p>
+        <p>A survey by RT-PCR of the most common pathogenic bee viruses <xref ref-type="bibr" rid="ppat.1002735-Chen1">[22]</xref>, carried out on bee samples collected monthly from the experimental hives, revealed the widespread presence of Black queen cell virus (BQCV), Deformed wing virus (DWV) and Sacbrood virus (SBV) only. Both BQCV and SBV prevalence fluctuated and overall declined along the season (<xref ref-type="supplementary-material" rid="ppat.1002735.s001">Figure S1</xref>); in contrast, DWV prevalence increased over time and, in September, approached 100% in all experimental hives (<xref ref-type="fig" rid="ppat-1002735-g002">Figure 2B</xref>), similar to reports in other studies <xref ref-type="bibr" rid="ppat.1002735-Dainat1">[19]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Tentcheva1">[36]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Martin2">[37]</xref>.</p>
+        <p>Quantitative Real-Time RT-PCR analysis of DWV infected bees collected in October from the experimental hives showed that the number of viral genome copies was significantly higher in honeybees from HIC (U = 46, n<sub>1</sub> = 14, n<sub>2</sub> = 11: <italic>P</italic>≤0.05; <xref ref-type="fig" rid="ppat-1002735-g002">Figure 2C</xref>), and that the significant increase of bee mortality recorded concurrently (<xref ref-type="fig" rid="ppat-1002735-g001">Figure 1B</xref>) was associated with higher viral loads in infested colonies, exceeding 1×10<sup>15</sup> genome copies per bee.</p>
+        <p>The increase of viral load associated with intense <italic>Varroa</italic> infestation and its lethal impact were further corroborated by laboratory experiments. A significant increase of DWV genome copies in artificially mite-infested honeybee larvae was triggered by <italic>Varroa</italic> feeding (H = 12.46, df = 2: <italic>P</italic>&lt;0.01; <xref ref-type="fig" rid="ppat-1002735-g003">Figure 3A</xref>). Moreover, the level of viral infection alone markedly influenced the survival of honeybees. In fact, injection of different dilutions of bee lysates obtained from individuals showing deformed wings resulted in rates of bee mortality significantly higher than in controls (M = 5.645 and 7.442 for lower and higher concentration respectively: <italic>P</italic>&lt;0.001) and positively related to the lysate concentration used (M = 2.564: <italic>P</italic>&lt;0.01; <xref ref-type="fig" rid="ppat-1002735-g003">Figure 3B</xref>). This effect can be considered the result of different levels of DWV injected. In fact, this virus was exclusively present in the lysate of symptomatic bees, it was absent in control extracts, while both experimental lysates contained BQCV and were <italic>Nosema</italic>-free (data not shown).</p>
+        <fig id="ppat-1002735-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1002735.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title><italic>Varroa</italic> infestation and DWV genome copies in infested bees and the effect of viral load on bee survival.</title>
+            <p>(<bold>A</bold>) Number of DWV genome copies in honeybees larvae artificially infested with different numbers of <italic>V. destructor</italic> mites, for different time intervals; the error bars indicate the standard error. (<bold>B</bold>) Survival of honeybees larvae injected with two different dilutions (1∶1,000 and 1∶100,000) of a whole body lysate of bees with deformed wings (DW) and of bees with normal wings as control (NW). Infestation by the <italic>Varroa</italic> mite caused increasing number of DWV genome copies in infected bees, this significantly affected bee longevity.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.g003" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>Honeybee Immune System</title>
+        <p>To shed light on the alterations of the honeybee immune system associated with <italic>Varroa</italic>-induced viral replication, we applied RNA-seq technology to perform a transcriptomic analysis of adult bees collected from each experimental colony in October, when the concurrent viral outbreak and the bee mortality peak were observed. An immunosuppressive effect was evident in bees collected from HIC, which was characterized by a significant down-regulation of 19 immune genes <xref ref-type="bibr" rid="ppat.1002735-Evans1">[38]</xref>. The most pronounced effects were observed on signalling molecules (e.g. <italic>dorsal-1A</italic>, a member of the protein family NF-κB, and serine proteases), while a relatively lower degree of down-regulation was recorded for those involved in recognition of non-self (e.g. AmSCR, scavenger receptors B5 and B7, C-type lectin 8) and for a few components of immune signalling pathways (e.g. Hem, Tak1, SOCS) (<xref ref-type="table" rid="ppat-1002735-t001">Table 1</xref>, <xref ref-type="supplementary-material" rid="ppat.1002735.s007">Table S2</xref>). However, this immunosuppressive syndrome was associated with a significant up-regulation of 6 immune genes, encoding both recognition (PGRP-S2, NimC2, Eater-like) and signalling (serine proteases) molecules (<xref ref-type="table" rid="ppat-1002735-t001">Table 1</xref>, <xref ref-type="supplementary-material" rid="ppat.1002735.s007">Table S2</xref>), part of them playing a role in phagocytosis. The differential expression of the genes which showed the most evident alteration of their transcriptional profile was confirmed by means of a Real-Time RT-PCR analysis of bee samples collected from the same colonies (<xref ref-type="supplementary-material" rid="ppat.1002735.s002">Figure S2</xref>); in particular, the absolute quantification of <italic>dorsal-1A</italic>, the most down-regulated gene, with potential impact on several immune and stress responses, confirmed the strong reduction of transcript level observed late in the season in HIC (U = 2, n<sub>1</sub> = 5, n<sub>2</sub> = 5: <italic>P</italic>&lt;0.05; <xref ref-type="supplementary-material" rid="ppat.1002735.s003">Figure S3</xref>).</p>
+        <table-wrap id="ppat-1002735-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.ppat.1002735.t001</object-id><label>Table 1</label><caption>
+            <title>Honeybee immune genes showing significant differences (<italic>P</italic>≤0.05) of their transcription level, as affected by different mite infestation densities.</title>
+          </caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="ppat-1002735-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.t001" xlink:type="simple"/><table>
+            <colgroup span="1">
+              <col align="left" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+              <col align="center" span="1"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">Gene ID</td>
+                <td align="left" colspan="1" rowspan="1">Name</td>
+                <td align="left" colspan="1" rowspan="1">Family/pathway</td>
+                <td align="left" colspan="1" rowspan="1">RPKM (LIC) X±SD</td>
+                <td align="left" colspan="1" rowspan="1">RPKM (HIC) X±SD</td>
+                <td align="left" colspan="1" rowspan="1">Fold change</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB19066</td>
+                <td align="left" colspan="1" rowspan="1">dorsal-1A*</td>
+                <td align="left" colspan="1" rowspan="1">NF-κB/Toll</td>
+                <td align="left" colspan="1" rowspan="1">0.76±0.40</td>
+                <td align="left" colspan="1" rowspan="1">0.12±0.21</td>
+                <td align="left" colspan="1" rowspan="1">0.16</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB14309</td>
+                <td align="left" colspan="1" rowspan="1">cSP33*</td>
+                <td align="left" colspan="1" rowspan="1">serine proteases</td>
+                <td align="left" colspan="1" rowspan="1">0.13±0.09</td>
+                <td align="left" colspan="1" rowspan="1">0.03±0.04</td>
+                <td align="left" colspan="1" rowspan="1">0.22</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB13397</td>
+                <td align="left" colspan="1" rowspan="1">SPH51*</td>
+                <td align="left" colspan="1" rowspan="1">serine proteases</td>
+                <td align="left" colspan="1" rowspan="1">1.67±0.39</td>
+                <td align="left" colspan="1" rowspan="1">0.71±0.28</td>
+                <td align="left" colspan="1" rowspan="1">0.42</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB13813</td>
+                <td align="left" colspan="1" rowspan="1">AmSCR-B5</td>
+                <td align="left" colspan="1" rowspan="1">Scav. Receptor B</td>
+                <td align="left" colspan="1" rowspan="1">24.11±5.32</td>
+                <td align="left" colspan="1" rowspan="1">13.63±3.69</td>
+                <td align="left" colspan="1" rowspan="1">0.57</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB15549</td>
+                <td align="left" colspan="1" rowspan="1">AmSCR-B7</td>
+                <td align="left" colspan="1" rowspan="1">Scav. Receptor B</td>
+                <td align="left" colspan="1" rowspan="1">16.66±4.53</td>
+                <td align="left" colspan="1" rowspan="1">9.50±2.20</td>
+                <td align="left" colspan="1" rowspan="1">0.57</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB14642</td>
+                <td align="left" colspan="1" rowspan="1">IGFn3-1</td>
+                <td align="left" colspan="1" rowspan="1">IG Superfam. Genes</td>
+                <td align="left" colspan="1" rowspan="1">40.74±5.69</td>
+                <td align="left" colspan="1" rowspan="1">24.87±2.72</td>
+                <td align="left" colspan="1" rowspan="1">0.61</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB17018</td>
+                <td align="left" colspan="1" rowspan="1">Angiopoietin</td>
+                <td align="left" colspan="1" rowspan="1">Fibrinogen</td>
+                <td align="left" colspan="1" rowspan="1">4.90±1.18</td>
+                <td align="left" colspan="1" rowspan="1">3.07±0.32</td>
+                <td align="left" colspan="1" rowspan="1">0.63</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB18789</td>
+                <td align="left" colspan="1" rowspan="1">TEPA</td>
+                <td align="left" colspan="1" rowspan="1">TEP</td>
+                <td align="left" colspan="1" rowspan="1">9.41±0.88</td>
+                <td align="left" colspan="1" rowspan="1">6.05±1.45</td>
+                <td align="left" colspan="1" rowspan="1">0.64</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB17167</td>
+                <td align="left" colspan="1" rowspan="1">Hem</td>
+                <td align="left" colspan="1" rowspan="1">JNK</td>
+                <td align="left" colspan="1" rowspan="1">15.95±2.04</td>
+                <td align="left" colspan="1" rowspan="1">10.75±2.13</td>
+                <td align="left" colspan="1" rowspan="1">0.67</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB11846</td>
+                <td align="left" colspan="1" rowspan="1">IGFn3-7</td>
+                <td align="left" colspan="1" rowspan="1">IG Superfamily</td>
+                <td align="left" colspan="1" rowspan="1">24.27±1.47</td>
+                <td align="left" colspan="1" rowspan="1">16.78±0.72</td>
+                <td align="left" colspan="1" rowspan="1">0.69</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB11358</td>
+                <td align="left" colspan="1" rowspan="1">IGFn3-2</td>
+                <td align="left" colspan="1" rowspan="1">IG Superfamily</td>
+                <td align="left" colspan="1" rowspan="1">34.09±6.60</td>
+                <td align="left" colspan="1" rowspan="1">23.85±2.48</td>
+                <td align="left" colspan="1" rowspan="1">0.70</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB14382</td>
+                <td align="left" colspan="1" rowspan="1">CTL8</td>
+                <td align="left" colspan="1" rowspan="1">C-lectin domain</td>
+                <td align="left" colspan="1" rowspan="1">25.59±2.81</td>
+                <td align="left" colspan="1" rowspan="1">19.04±1.28</td>
+                <td align="left" colspan="1" rowspan="1">0.74</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB13522</td>
+                <td align="left" colspan="1" rowspan="1">MAPKKK9</td>
+                <td align="left" colspan="1" rowspan="1">MAPK</td>
+                <td align="left" colspan="1" rowspan="1">27.91±3.00</td>
+                <td align="left" colspan="1" rowspan="1">20.95±3.73</td>
+                <td align="left" colspan="1" rowspan="1">0.75</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB18949</td>
+                <td align="left" colspan="1" rowspan="1">SOCS</td>
+                <td align="left" colspan="1" rowspan="1">JakSTAT</td>
+                <td align="left" colspan="1" rowspan="1">89.91±10.51</td>
+                <td align="left" colspan="1" rowspan="1">67.66±5.18</td>
+                <td align="left" colspan="1" rowspan="1">0.75</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB14664</td>
+                <td align="left" colspan="1" rowspan="1">Tak1</td>
+                <td align="left" colspan="1" rowspan="1">IMD</td>
+                <td align="left" colspan="1" rowspan="1">32.92±3.47</td>
+                <td align="left" colspan="1" rowspan="1">24.94±2.29</td>
+                <td align="left" colspan="1" rowspan="1">0.76</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB11373</td>
+                <td align="left" colspan="1" rowspan="1">Rac</td>
+                <td align="left" colspan="1" rowspan="1">RAC1 protein</td>
+                <td align="left" colspan="1" rowspan="1">230.71±27.37</td>
+                <td align="left" colspan="1" rowspan="1">178±54±22.84</td>
+                <td align="left" colspan="1" rowspan="1">0.77</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB18324</td>
+                <td align="left" colspan="1" rowspan="1">Galectin-2</td>
+                <td align="left" colspan="1" rowspan="1">Galectin</td>
+                <td align="left" colspan="1" rowspan="1">21.50±1.74</td>
+                <td align="left" colspan="1" rowspan="1">17.18±1.48</td>
+                <td align="left" colspan="1" rowspan="1">0.80</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB10026</td>
+                <td align="left" colspan="1" rowspan="1">Galectin-1</td>
+                <td align="left" colspan="1" rowspan="1">Galectin</td>
+                <td align="left" colspan="1" rowspan="1">162.84±11.12</td>
+                <td align="left" colspan="1" rowspan="1">130.91±11.23</td>
+                <td align="left" colspan="1" rowspan="1">0.80</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB18923</td>
+                <td align="left" colspan="1" rowspan="1">STAT92E</td>
+                <td align="left" colspan="1" rowspan="1">JakSTAT</td>
+                <td align="left" colspan="1" rowspan="1">32.98±2.34</td>
+                <td align="left" colspan="1" rowspan="1">26.58±3.98</td>
+                <td align="left" colspan="1" rowspan="1">0.81</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB11320</td>
+                <td align="left" colspan="1" rowspan="1">RIP1</td>
+                <td align="left" colspan="1" rowspan="1">MAPK</td>
+                <td align="left" colspan="1" rowspan="1">14.08±1.83</td>
+                <td align="left" colspan="1" rowspan="1">19.37±3.71</td>
+                <td align="left" colspan="1" rowspan="1">1.38</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB14603</td>
+                <td align="left" colspan="1" rowspan="1">SP17</td>
+                <td align="left" colspan="1" rowspan="1">serine proteases</td>
+                <td align="left" colspan="1" rowspan="1">3500.37±541.87</td>
+                <td align="left" colspan="1" rowspan="1">4815.52±669.39</td>
+                <td align="left" colspan="1" rowspan="1">1.38</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB14654</td>
+                <td align="left" colspan="1" rowspan="1">SP11</td>
+                <td align="left" colspan="1" rowspan="1">serine proteases</td>
+                <td align="left" colspan="1" rowspan="1">5.99±1.80</td>
+                <td align="left" colspan="1" rowspan="1">11.65±3.18</td>
+                <td align="left" colspan="1" rowspan="1">1.95</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB14645</td>
+                <td align="left" colspan="1" rowspan="1">Eater-like*</td>
+                <td align="left" colspan="1" rowspan="1">EGF Family</td>
+                <td align="left" colspan="1" rowspan="1">14.64±4.84</td>
+                <td align="left" colspan="1" rowspan="1">33.27±13.01</td>
+                <td align="left" colspan="1" rowspan="1">2.27</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB13979</td>
+                <td align="left" colspan="1" rowspan="1">NimC2*</td>
+                <td align="left" colspan="1" rowspan="1">Phagocytosis</td>
+                <td align="left" colspan="1" rowspan="1">13.93±5.48</td>
+                <td align="left" colspan="1" rowspan="1">32.50±11.71</td>
+                <td align="left" colspan="1" rowspan="1">2.33</td>
+              </tr>
+              <tr>
+                <td align="left" colspan="1" rowspan="1">GB19301</td>
+                <td align="left" colspan="1" rowspan="1">PGRP-S2*</td>
+                <td align="left" colspan="1" rowspan="1">PGRP</td>
+                <td align="left" colspan="1" rowspan="1">226.29±52.86</td>
+                <td align="left" colspan="1" rowspan="1">981.11±868.53</td>
+                <td align="left" colspan="1" rowspan="1">4.34</td>
+              </tr>
+            </tbody>
+          </table></alternatives><table-wrap-foot>
+            <fn id="nt101">
+              <label/>
+              <p>The gene expression values, as Reads Per Kilobase of exon model per Million mapped reads (RPKM) <xref ref-type="bibr" rid="ppat.1002735-Mortazavi1">[84]</xref>, scored on bees from low infested and highly infested colonies are reported. The “fold change” represents the ratio between the average gene expression value of highly infested colonies and that of low infested ones; values smaller than one indicate a significant transcriptional down-regulation, while those higher than 1 indicate up-regulation. An asterisk marks genes whose differential expression was confirmed by Quantitative Real-Time RT-PCR (<xref ref-type="supplementary-material" rid="ppat.1002735.s002">Figures S2</xref> and <xref ref-type="supplementary-material" rid="ppat.1002735.s003">S3</xref>). A significant down-regulation of several immune genes was observed in bees from highly infested colonies; the most marked effect was recorded for <italic>dorsal-1A</italic>, a member of the NF-κB gene family.</p>
+            </fn>
+          </table-wrap-foot></table-wrap>
+        <p>To tentatively assess the respective contribution of <italic>Varroa</italic> mites and DWV in the induction of the observed immunosuppression, we measured the transcriptional level of <italic>dorsal-1A</italic> in bees, either infected or not by DWV, as affected by infestation of <italic>Varroa</italic> mites <italic>in vitro</italic>. No significant differences in the level of the <italic>dorsal-1A</italic> transcript were induced by mite feeding in lab reared bees that resulted DWV-free at the end of the experiment; conversely the expression level of <italic>dorsal-1A</italic> in lab reared bees infected by DWV was significantly lower than in the case of virus-free individuals, irrespective of their exposure to mite infestation (F = 26.79, df = 1: <italic>P</italic>&lt;0.001; <xref ref-type="fig" rid="ppat-1002735-g004">Figure 4</xref>). This result indirectly indicates that the virus may play an important role in the observed transcriptional down-regulation of <italic>dorsal-1A</italic>, which could be considered part of the virulence strategy adopted by DWV to overcome one of the central components of the antiviral immunity in insects <xref ref-type="bibr" rid="ppat.1002735-Lemaitre1">[39]</xref>–<xref ref-type="bibr" rid="ppat.1002735-Costa1">[45]</xref>.</p>
+        <fig id="ppat-1002735-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1002735.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Dorsal expression in virus free and virus infected bees.</title>
+            <p>Dorsal copies in virus free and virus infected honeybee larvae, either infested or not with one <italic>Varroa</italic> mite, 12 days after cell sealing; the error bars indicate the standard deviation. Average viral load in infected bee larvae, uninfested or infested by the <italic>Varroa</italic> mite, was 2.40E+10 and 3.22E+12, respectively. Dorsal expression was significantly reduced in virus infected bees compared to virus free bees, while <italic>Varroa</italic> infestation did not affect gene expression.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.g004" xlink:type="simple"/>
+        </fig>
+        <p>To corroborate this hypothesis, we assessed whether <italic>dorsal-1A</italic> transcript abundance can affect viral infection in honeybees, by using RNA interference (RNAi) and measuring the resulting effects on viral load. We observed a significant suppression of <italic>dorsal-1A</italic> transcription in bees ingesting the corresponding dsRNA (H = 7.00, df = 1: <italic>P</italic> = 0.008; <xref ref-type="fig" rid="ppat-1002735-g005">Figure 5A</xref>), along with a concurrent significant increase of DWV genome copies (H = 9.61, df = 1: <italic>P</italic> = 0.002; <xref ref-type="fig" rid="ppat-1002735-g005">Figure 5B</xref>). This result demonstrates that a reduction of NF-κB availability promotes viral replication, and supports the hypothesis that this transcription factor is an important component of the antiviral response in honeybees. Moreover, it indirectly indicates that any stress factor triggering responses mediated by NF-κB can compete for the use of this transcription factor and promote viral replication.</p>
+        <fig id="ppat-1002735-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1002735.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>Effect of the down-regulation of the transcription factor <italic>dorsal-1A</italic> by RNAi on DWV replication in bees.</title>
+            <p>(<bold>A</bold>) <italic>Dorsal-1A</italic> transcript level in bees fed for different times with a sucrose/protein solution, containing dsRNA of honeybee <italic>dorsal-1A</italic> (dsRNA Dorsal) or dsRNA of Green Fluorescent Protein (dsRNA GFP) as a control. (<bold>B</bold>) Deformed wing virus genome copies in bees treated as above. The error bars indicate the standard deviation. The significant rate (H = 7.00, df = 1: <italic>P</italic> = 0.008) of silencing of the target gene triggered a significant increase (H = 9.61, df = 1: <italic>P</italic> = 0.002) of viral replication.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.g005" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2d">
+        <title>Dynamics of Multiple Interactions</title>
+        <p>To explore the dynamical properties of our proposed pathogen-parasite interaction, we constructed and analysed a series of simple dynamical models of DWV copy number, mediated by a shared immune currency that can in turn be modified by the presence of virus and other stressors such as mite feeding. Under a default chronic infection model (with a constant rate of immuno-excitation) <xref ref-type="bibr" rid="ppat.1002735-Alizon1">[46]</xref>, we see a stable intermediate viral set-point. If, in contrast, we have constant immuno-suppression, then a purely aggressive viral dynamic results, with all successful infections leading to explosive growth. The simplest model consistent with the observed bistable copy number control (low, cryptic or high, overt infection) requires that the immunosuppressive effect of DWV displays some form of threshold function with increasing copy number. Given this assumption, <xref ref-type="fig" rid="ppat-1002735-g006">Figure 6</xref> and the corresponding analysis highlights that in the absence of any additional immunological strain on the host (such as mite feeding), DWV can be effectively regulated to low copy number, so long as DWV is kept below a high and critical threshold. However, any factor that depletes the immune system will cause a gradual increase in the stable set-point until a critical transition occurs and uncontrolled viral replication ensues. The sudden transition to explosive viral growth results directly from the non-linear immuno-suppressive behaviour of DWV, potentially allowing the virus to function as an opportunistic pathogen, sensing and exploiting host weakness with escalating immuno-suppression and explosive growth.</p>
+        <fig id="ppat-1002735-g006" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.ppat.1002735.g006</object-id>
+          <label>Figure 6</label>
+          <caption>
+            <title>Accelerating or ‘threshold’ immuno-suppression by DWV can create bistable DWV dynamics.</title>
+            <p>The stable (solid line) and unstable (dotted line) equilibrium level of DWV (arbitrary scale) are calculated from equations S4, S5, and plotted as a function of increasing levels of immune depletion (<italic>y</italic>). Below the dotted line, the virus can be efficiently regulated by the immune-system to some intermediate (potentially cryptic) density, represented by the solid line. Above the dotted line (and for high <italic>y</italic>, any point to right of intersection with solid line), the virus cannot be efficiently regulated and a viral explosion ensues. Any factor such as mite feeding that depletes the immune system (increasing <italic>y</italic>) will first cause a gradual increase in copy number, <italic>V</italic> (moving right along the solid line), and then at a defined point (intersection of solid and dotted lines), a viral explosion will ensue. Parameters are <italic>x</italic> = 0.09 (<italic>y&gt;x</italic> ensures that the virus can invade from rare) and <italic>z</italic> = 0.4.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.g006" xlink:type="simple"/>
+        </fig>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>A steady decline of bee population during Summer, after the peak of nectar importation, is a common event under temperate climatic conditions, often followed by population collapse in untreated bee colonies exposed to increasing mite infestations <xref ref-type="bibr" rid="ppat.1002735-Rosenkranz1">[21]</xref>. However, the data reported here show that the decline of highly infested colonies is characterized by a sharp acceleration occurring at the end of the Summer.</p>
+      <p>The time course of mite infestation did not mirror the sudden increase in bee mortality, suggesting that other mortality factors, interacting with the <italic>Varroa</italic> mite, were likely involved but neither the metagenomic analysis nor the molecular survey of bee viruses revealed any relevant qualitative difference between HIC, that collapsed at the end of the season, and LIC, that survived in good condition. Instead, significant quantitative differences in DWV genome copies were found associated with different mite infestation levels, with bees from HIC bearing viral loads 10<sup>3</sup> fold higher than bees exposed to a lower mite pressure, as reported also by other authors <xref ref-type="bibr" rid="ppat.1002735-Dainat1">[19]</xref>.</p>
+      <p>The field data were further corroborated by laboratory experiments showing that mite feeding triggers viral replication in bees, which show a mortality rate that is positively associated with the viral load.</p>
+      <p>The negative effects of the association between the <italic>Varroa</italic> mite and DWV have been widely investigated and many interesting details of this dangerous interaction have been revealed <xref ref-type="bibr" rid="ppat.1002735-Dainat1">[19]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Martin1">[23]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Yang1">[24]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Gisder1">[30]</xref>–<xref ref-type="bibr" rid="ppat.1002735-Moore1">[32]</xref>, <xref ref-type="bibr" rid="ppat.1002735-BowenWalker1">[47]</xref>–<xref ref-type="bibr" rid="ppat.1002735-DiPrisco1">[50]</xref>. Experimental data on the impact of this interaction on honeybee health and colony stability are currently being expanded, largely on the basis of correlation studies, which allow a thorough analysis of the factors involved <xref ref-type="bibr" rid="ppat.1002735-Highfield1">[14]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Genersch1">[15]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Dainat1">[19]</xref>. The present study builds upon this growing background information, by providing experimental evidence on the mechanistic details of this virus-mite association, trying to shed light on the functional link between <italic>V. destructor</italic> infestation, DWV abundance and bee mortality.</p>
+      <p>The transcriptomic analysis of adult bees, collected from each experimental colony in October, when viral replication rate was high, evidenced a severe alteration of the transcriptional profile of several immune genes. This immune syndrome was largely suppressive, with the majority of genes showing negative regulation in bees from HIC. In particular, the marked transcriptional down-regulation of a member of the NF-κB gene family indicates that the pathogen-parasite interaction can interfere with a number of immune responses regulated by this transcription factor, such as the synthesis of antimicrobial peptides, clotting, melanisation and antiviral defences <xref ref-type="bibr" rid="ppat.1002735-Evans1">[38]</xref>–<xref ref-type="bibr" rid="ppat.1002735-Costa1">[45]</xref>. Furthermore, the marked impact on some serine proteases seems to reinforce the virus-mite effect on humoral components of the immune response. Even though we have limited information on the role of these enzymes in honeybee immunity <xref ref-type="bibr" rid="ppat.1002735-Evans1">[38]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Zou1">[51]</xref>, we can reasonably assume, on the basis of studies on other model insects, that the down-regulation of these genes may well impair the enzymatic cascades leading to the activation of melanisation and clotting responses <xref ref-type="bibr" rid="ppat.1002735-Cerenius1">[52]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Cerenius2">[53]</xref>, as well as other immune pathways that remains to be further characterized.</p>
+      <p>This immunosuppressive effect seems to be largely driven by viral replication, since we have observed that <italic>Varroa</italic> feeding alone does not seem to influence the expression level of <italic>dorsal-1A</italic>, the most down-regulated gene that we used as an indicator of immunosuppression, in our <italic>in vitro</italic> infestations with mites on bee larvae, either bearing or not a DWV infection. This finding is further corroborated by a recent genome-wide analysis of the transcriptional profile in bees infested by the <italic>Varroa</italic> mite, but not infected by viruses, which evidenced a clear differential expression, with respect to control uninfested bees, only for genes involved in metabolic processes and nerve signalling <xref ref-type="bibr" rid="ppat.1002735-Zhang1">[54]</xref>. Collectively, these experimental evidences indicate that DWV may use a conditional virulence strategy which disrupts NF-κB immune signalling. However, a more direct experimental approach is needed to assess the impact of DWV infection on the bee immunosuppression syndrome and to follow its dynamic changes with the progression of viral infection.</p>
+      <p>The significant increase of DWV genome copies in response to <italic>dorsal-1A</italic> knockout by RNAi shows that this gene plays a crucial role in the antiviral immune response controlling DWV replication, and corroborates the hypothesis that DWV adopts a conditional virulence strategy partly based on the transcriptional down-regulation of this NF-κB family member. Many viruses target this key-molecule, which is central in the orchestration of the complex network of responses to infection and, more generally, to environmental stress <xref ref-type="bibr" rid="ppat.1002735-Hayden1">[55]</xref>–<xref ref-type="bibr" rid="ppat.1002735-Strand1">[57]</xref>. However, the present case seems to be different, as, unlike other viruses infecting vertebrates <xref ref-type="bibr" rid="ppat.1002735-Mohamed1">[56]</xref> or invertebrates <xref ref-type="bibr" rid="ppat.1002735-Strand1">[57]</xref>, DWV would exert a transcriptional down-regulation, which results in a reduced level of NF-κB transcripts. This suggests that any bee antiviral immune response relying on this transcription factor is reduced, but not strongly suppressed, as happens in more aggressive viral pathogens, which are able to interfere with NF-κB, either directly or indirectly, by targeting upstream events that control NF-κB activation <xref ref-type="bibr" rid="ppat.1002735-Mohamed1">[56]</xref>–<xref ref-type="bibr" rid="ppat.1002735-Falabella1">[59]</xref>. Therefore, the delicate balance of covert DWV infections could be disrupted by any stress factor that activates a response triggered by NF-κB. In other words, the limited availability of this transcription factor seems to be sufficient to maintain under control the DWV infection, which, however, may undergo intense replication if NF-κB is substantially subtracted by any other pathway activated by acute responses to stress factors.</p>
+      <p>In insects, wounding activates NF-κB dependent clotting and melanisation <xref ref-type="bibr" rid="ppat.1002735-Lemaitre1">[39]</xref>; therefore, the bee reaction to <italic>Varroa</italic> feeding wounds is expected to use the already limited cellular pool of this transcription factor in DWV infected individuals, and consequently can promote an intense viral replication, which can be further aggravated by the injection of additional virus particles.</p>
+      <p>In this framework, the observed viral replication triggered by injection of bacteria in DWV infected bees, rather than to be exclusively considered a consequence of a wide antimicrobial immunosuppression induced by mite feeding <xref ref-type="bibr" rid="ppat.1002735-Yang1">[24]</xref>, could be partly reinterpreted as a possible effect of the competitive use of this transcription factor involved in multiple immune responses <xref ref-type="bibr" rid="ppat.1002735-Evans1">[38]</xref>–<xref ref-type="bibr" rid="ppat.1002735-Costa1">[45]</xref>, and available at reduced level in infected bees. Indeed, we have observed that the immunosuppression syndrome is unexpectedly characterized by the up-regulation of a limited number of genes (Eater-like, NimC2, serine proteases), that are mostly involved in bacterial phagocytosis <xref ref-type="bibr" rid="ppat.1002735-Stuart1">[60]</xref>. The up-regulation of Eater-like has also been reported in bees infected by IAPV <xref ref-type="bibr" rid="ppat.1002735-DiPrisco2">[61]</xref>. This experimental evidence suggests that a complete suppression of the bee antimicrobial response is not a stringent functional requirement of the complex co-evolutionary process among bees, DWV and <italic>V. destructor</italic>.</p>
+      <p>The DWV-mediated immunosuppression of NF-κB signalling may provide significant benefits to the vector mite, because it reinforces the disruption of immune reactions activated by feeding wounds and salivary components <xref ref-type="bibr" rid="ppat.1002735-Richards1">[62]</xref>. This could be particularly relevant to the <italic>Varroa</italic> mite since both the invading mite and its offspring feed through the same hole made in the honeybee cuticle, at the beginning of the pupal stage, by the mother mite <xref ref-type="bibr" rid="ppat.1002735-Donz1">[63]</xref>: clotting and melanization could severely impair mite feeding activity. We reasonably speculate that the <italic>Varroa</italic>-DWV association can be interpreted as a mutualistic symbiosis in its early stages. A similar, but more ancient, evolutionary pattern can be observed in some parasitoids of lepidopteran larvae, which are associated with immunosuppressive viral symbionts in the family Polydnaviridae <xref ref-type="bibr" rid="ppat.1002735-Pennacchio1">[64]</xref>. The ancestor of bracoviruses, members of the polydnavirus family, is a host pathogen of the Nudivirus group, closely related to baculoviruses, which was domesticated by the wasp to its own benefit <xref ref-type="bibr" rid="ppat.1002735-Bzier1">[65]</xref>. The “alliance” of parasitic organisms with the viral pathogens of the host seems to be an effective strategy also for some insects attacking plants. The tight association between stylet feeding insects and viral plant pathogens provides a good example of how these latter can be used for suppressing the plant defense response against them. Indeed, it has been recently demonstrated that the Cucumber mosaic virus (CMV) encodes a protein that disrupts the plant antiviral mechanisms, and, at the same time, blocks defense pathways active against aphids <xref ref-type="bibr" rid="ppat.1002735-Lewsey1">[66]</xref>. These are just a few examples of the multifaceted viral mutualistic symbioses, which have played an important role in life evolution, by allowing a more effective exploitation of hostile ecological niches <xref ref-type="bibr" rid="ppat.1002735-Roossinck1">[67]</xref>.</p>
+      <p>In order to investigate the dynamical properties of our system, we built and analysed a series of dynamical models capturing differing assumptions on the interactions between virus, host and additional stressors (e.g. mite infestation), and contrasted the model behavior with our observed results. This methodology allowed us to conclude in favour of a threshold immune-suppression model for DWV, which would allow the virus to function as an opportunistic pathogen, able to switch in response to host condition from a stable, cryptic state to aggressive exploitation. This opportunistic strategy is highly reminiscent of the condition-dependent behaviour of temperate phage viruses, which are able to switch between cryptic vertical transmission and aggressive horizontal transmission, as a function of the stress level (SOS response) in their bacterial host <xref ref-type="bibr" rid="ppat.1002735-Ptashne1">[68]</xref>. Clearly, the mechanisms underlying condition-dependent host exploitation are vastly different between phage lambda and DWV, however the selective contexts contain analogies: aggressive exploitation and increased horizontal transmission is likely to be more favourable when current host condition dips below a critical limit - broader biological examples of rats leaving a sinking ship. This novel dynamical framework builds on our experimental results and offers predictions for future work. Specifically, not only <italic>V. destructor</italic> but other stressors competing for immune resources have the potential to destabilise DWV dynamics by tipping DWV copy number above its control threshold into its aggressive exploitation regime.</p>
+      <p>The key immune currency identified by our transcriptome analysis is a member of NF-κB gene family. This gene family not only plays a central role in insect immunity <xref ref-type="bibr" rid="ppat.1002735-Silverman1">[69]</xref>, but is also involved in intricate cross-talks with a number of physiological and stress response pathways, conserved across different organisms <xref ref-type="bibr" rid="ppat.1002735-Hayden1">[55]</xref>, which are often reciprocally tuned to allow optimal energy allocation between metabolism and immune response, as recently demonstrated in <italic>Drosophila</italic> <xref ref-type="bibr" rid="ppat.1002735-DiAngelo1">[70]</xref>; the observed induction of DWV replication in bees exposed to cold stress <xref ref-type="bibr" rid="ppat.1002735-DiPrisco1">[50]</xref> seems to lend further support to this hypothesis. Therefore, different stress factors impacting immunity and metabolism may compete for the use of NF-κB cellular pools, already reduced by the parasite-pathogen association, promoting intense viral replication in bees harbouring silent infections and subsequent colony collapse (<xref ref-type="fig" rid="ppat-1002735-g007">Figure 7</xref>). The considerable diversity of stress factors that can interfere with the immune system may partly account for the variety of putative causal agents invoked so far to explain honeybee colony losses, that do not seem to be univocally linked to a specific causative agent.</p>
+      <fig id="ppat-1002735-g007" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.ppat.1002735.g007</object-id>
+        <label>Figure 7</label>
+        <caption>
+          <title>Schematic diagram of within-host viral copy number (<italic>V</italic>) and immune currency (<italic>I</italic>) dynamics.</title>
+          <p>The bold lines represent dynamical processes captured explicitly in equations S4, S5. In this model, the viral population dynamics are governed by two antagonistic processes, replication and control (by the immune system). The immune dynamics are in turn governed by three processes; maintenance (increasing immune stocks), stressors (depleting immune stocks) and a specific impact of virally-mediated immune modification (ranging from excitatory to suppressive). The dotted lines represent processes that are external to the model: 1) over-growth of the virus directly leads to increased bee mortality and collapse of the colony (<xref ref-type="fig" rid="ppat-1002735-g001">Figures 1</xref> and <xref ref-type="fig" rid="ppat-1002735-g002">2</xref>); 2) despite impending collapse within a focal colony, the virus can escape its host via horizontal transmission facilitated by its mite symbiont <xref ref-type="bibr" rid="ppat.1002735-Rosenkranz1">[21]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Greatti1">[73]</xref>; 3) the mite may gain further advantages from its association with an immuno-suppressive virus, as the suppression will further release immunological control of mite feeding; 4) the mite can affect honeybee survival <xref ref-type="bibr" rid="ppat.1002735-Rosenkranz1">[21]</xref>.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.g007" xlink:type="simple"/>
+      </fig>
+    </sec>
+    <sec id="s4" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s4a">
+        <title>Population Sampling</title>
+        <p>Two apiaries, made of six colonies each, were set up at the end of April in an isolated location of the Prealps (Porzus, Udine, Italy; 46°11′N, 13°20′E), 1.6 km apart from each other. Previous studies indicated that the local bee population consists of hybrids between <italic>A. mellifera ligustica</italic> and <italic>A.m. carnica</italic> <xref ref-type="bibr" rid="ppat.1002735-Comparini1">[71]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Nazzi1">[72]</xref>. Queens were local and naturally inseminated; hives were all treated the preceding year with acaricides, in order to have very low starting populations of the parasitic mite <italic>V. destructor</italic> at the beginning of the experiment.</p>
+        <p>In one apiary mite populations were kept under control during the experiment by treating the hives with prophylactic acaricides (the colonies of this apiary are referred to as “low infested colonies” (LIC) in the text). A thymol-based product in tablets (ApiLife Var) was used, from mid-August to mid-September, in presence of brood; at the end of October, two treatments were carried out with oxalic acid, in absence of brood (5 ml of a solution of 30 g of oxalic acid in 1 l of deionized water were sprayed on both sides of each comb of the hive). In the other apiary no acaricidal treatments were carried out (the colonies of this apiary are referred to as “highly infested colonies” (HIC) in the text). In August, one hive in this apiary succumbed because the queen became drone layer, and was not further considered.</p>
+        <p>Re-infestation can strongly affect the population dynamics of the mite if highly infested, weak colonies are robbed by low infested, strong colonies located in the vicinities <xref ref-type="bibr" rid="ppat.1002735-Greatti1">[73]</xref>. Therefore, we adopted an experimental design in which treatments (high and low infestation) were applied to hives belonging to two different apiaries located at a distance such that the environmental conditions were the same but robbing was prevented. As regards as possible factors affecting the independency of hives, with similar infestation rates, belonging to the same apiary (e.g. worker drifiting), available data suggest that they should not affect significantly any of the variables considered in the field study <xref ref-type="bibr" rid="ppat.1002735-Neumann2">[74]</xref>.</p>
+        <p>This experimental design was conceived to allow a very detailed and direct analysis of the potential collapse-inducing factors, under uniform experimental conditions. Severe logistical constraints precluded the use of multiple apiaries per treatment in the field experiment; however, the laboratory experiments had a replicated design and confirmed the central field observations.</p>
+        <p>Bee population in the experimental hives was estimated approximately once a month, from May to October, by counting the number of full or partial “sixth of frames” covered by bees in each hive at sunset and calculating the overall bee population, on the basis of the correlation which indicates that one fully covered sixth of comb corresponds to 253 adult bees <xref ref-type="bibr" rid="ppat.1002735-Marchetti1">[75]</xref>. The number of brood cells was estimated using the same method, taking into account that one sixth of frame of brood cells corresponds to 728 worker brood cells.</p>
+        <p>On the same sampling dates, starting in June, the infestation of adult bees and brood by <italic>Varroa</italic> mites was estimated. The first was assessed on a sample of about 1,000 bees, collected from a frame located in the central part of the hive. Sampled bees were transferred into a flask, covered with 35∶65 ethanol∶water, and hand-shaken for about 5 minutes. Then, bees were recovered by filtration, the liquid phase was filtered again with a convenient sieve to collect the mites and reused for rinsing the bees until no mites were found in three consecutive washes. Infestation level was expressed as number of mites per adult bee.</p>
+        <p>To assess brood infestation, one piece of brood comb (10×10 cm) was collected from each colony and 50 sealed cells from each side were opened and inspected for the presence of mites. Only dark-red mites were considered, to exclude any offspring produced by founder mites. Infestation was expressed as number of mites per cell.</p>
+        <p>Mite infestation was calculated using the following formula: [(adult bees infestation×bee population)+(brood infestation×brood cells)]×1,000/(bee population+brood cells).</p>
+        <p>Dead bees found in cages placed in front of the colonies were counted on weekly basis, from May to October. Bee mortality on each sampling occasion was calculated by averaging the number of dead bees in the time interval elapsed since the last sampling date; this value was then referred to the mean bee population in that period, obtained by considering the initial and final bee population and then multiplied by 1,000.</p>
+      </sec>
+      <sec id="s4b">
+        <title>Metagenomic Survey of Microrganisms in the Hives</title>
+        <p>Samples of 10 bees were collected in October, from each LIC and HIC colony (n = 6 and n = 5 for the two groups respectively), ground in liquid nitrogen and immediately used to extract total RNA, using Tri-Reagent (Ambion Inc.). These RNA samples were processed using the TruSeq mRNA-seq sample prep kit (Illumina, Inc., CA, USA) starting from 2 micrograms of total RNA. Briefly, poly-A containing mRNA molecules were isolated using poly-T oligo-attached magnetic beads using two rounds of purification. During the second elution of the poly-A RNA, the RNA is also fragmented and primed for cDNA synthesis. Then standard blunt-ending plus add ‘A’ was performed and Illumina adapters with indexes (from 1 to 12) were ligated to the ends of the cDNA fragments. After ligation reaction, separation of not ligated adapters and size selection in the range 500–600 bp was performed on 2% low-range agarose gel. Samples were amplified by PCR to selectively enrich those DNA fragments in the library having adapter molecules at both ends.</p>
+        <p>Pools of 3–4 samples were loaded on cBot, to create clusters and sequenced at ultra-high throughput <xref ref-type="bibr" rid="ppat.1002735-Ju1">[76]</xref> on HiSeq2000 (Illumina Inc.). One lane for 12 samples was run obtaining 23–36 millions of pair-end reads per colony, 100 bp long.</p>
+        <p>Sequences from each colony were quality trimmed by CLC (modified-Mott trimming algorithm, trim using quality score 0.03) and mapped on Amel 4.0 bee genome reference sequence using CLC Genomics Workbench (CLCBio, Denmark). The un-aligned reads (about 20% of total reads) were de novo assembled using the same software. Contigs were compared to the non-redundant sequence databases at NCBI (<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov" xlink:type="simple">http://www.ncbi.nlm.nih.gov</ext-link>), using BLASTX (protein homology). BLASTX alignment hits with e-values larger than 1×10<sup>−5</sup>, scores lower than 100 and percentage identity lower than 50% were filtered; isolated assignments (i.e. taxa hit by one sequence only) were discarded. Custom applications written in Perl were used to parse the results. Raw pair-end sequences used for metagenome survey are available at: <ext-link ext-link-type="uri" xlink:href="https://services.appliedgenomics.org/sequences-export/193-Nazzi_et_al/" xlink:type="simple">https://services.appliedgenomics.org/sequences-export/193-Nazzi_et_al/</ext-link>; password: rawdata).</p>
+        <p>To get a description of the microorganisms associated to the bees under study, taking into account all taxa whose presence was not just sporadic, we considered only those represented in at least two colonies of either group of hives. The resulting list was then filtered against available data on honeybee symbionts from previous reports <xref ref-type="bibr" rid="ppat.1002735-CoxFoster1">[11]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Babendreier1">[35]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Bailey1">[77]</xref>–<xref ref-type="bibr" rid="ppat.1002735-Jeyaprakash1">[79]</xref> retaining only taxa whose presence in honeybees had already been demonstrated.</p>
+      </sec>
+      <sec id="s4c">
+        <title>PCR Analysis of Bee Viruses</title>
+        <p>Total RNA was isolated from individual bees by using Trizol Reagent (Invitrogen, Carlsbad, CA), according to the manufacturers' instructions. The concentration and the purity of total RNA was determined using a spectrophotometer (Nanodrop ND100, Thermo Scientific Inc.).</p>
+        <p>Virus presence was assessed by conventional RT-PCR as described elsewhere <xref ref-type="bibr" rid="ppat.1002735-Chen2">[80]</xref> using the primer pairs reported in <xref ref-type="supplementary-material" rid="ppat.1002735.s008">Table S3</xref>.</p>
+        <p>The quantification of DWV genome copies in individual bees was performed by SYBR-Green Real-Time Quantitative RT-PCR. The amplification conditions and reaction mixture were the same as conventional RT-PCR, using QuantiFast SYBR Green RT-PCR Kit (Quiagen, Hilden, Germany). The titers of DWV were determined by relating the <italic>C</italic><sub>T</sub> values of unknown samples to an established standard curve, according to the absolute quantification method previously reported <xref ref-type="bibr" rid="ppat.1002735-Boncristiani1">[81]</xref>. The standard curve was established by plotting the logarithm of seven 10-fold dilutions of a starting solution containing 21.9 ng of plasmid DNA (TOPO TA Cloning) with DWV insert (from 21.9 ng to 21.9 fg), against the corresponding threshold value (<italic>C</italic><sub>T</sub>) as the average of three repetitions. The PCR efficiency (E = 107.5%) was calculated based on the slope and coefficient of correlation (R<sup>2</sup>) of the standard curve, according to the following formula: E = 10<sup>(−1/slope)</sup>−1 (Slope = −3.155, Y-intercept = 41.84, R<sup>2</sup> = 0.999).</p>
+      </sec>
+      <sec id="s4d">
+        <title>Effect of <italic>Varroa</italic> Mite feeding on Viral Replication in Honeybee Larvae</title>
+        <p>This experiment was designed to assess the impact of <italic>Varroa</italic> mite feeding on DWV replication in honeybees.</p>
+        <p>Bees and mites used in this and the following laboratory experiments came from <italic>A. mellifera</italic> colonies maintained in Udine (northeastern Italy). Previous studies indicated that the local bee population consists of hybrids between <italic>A.m. ligustica</italic> and <italic>A.m. carnica</italic> <xref ref-type="bibr" rid="ppat.1002735-Comparini1">[71]</xref>, <xref ref-type="bibr" rid="ppat.1002735-Nazzi1">[72]</xref>.</p>
+        <p>The mites and last instar bee larvae were collected from brood cells capped in the preceding 15 h obtained as follows. In the evening of the day preceding the experiment the capped brood cells of a comb were marked. The following morning the comb was transferred to the lab and unmarked cells, that had been capped overnight, were manually unsealed. The comb was then placed in an incubator at 35°C, 75% R.H. where larvae, either infested or not, spontaneously emerged.</p>
+        <p>Last instar bee larvae were transferred into gelatin capsules (Agar Scientific ltd., 6.5 mm diameter) with 1 or 3 mites, and maintained at 35°C, 75% R.H. for 12 days <xref ref-type="bibr" rid="ppat.1002735-Nazzi2">[82]</xref>; <italic>Varroa</italic>-free larvae were used as controls (<xref ref-type="supplementary-material" rid="ppat.1002735.s004">Figure S4</xref>). After 1, 6 and 12 days, 5 bees for each infestation level were sampled to determine the total number of DWV genome copies, as described above.</p>
+      </sec>
+      <sec id="s4e">
+        <title>Effect of Artificial Virus Infection on the Survival of Adult Bees</title>
+        <p>This experiment was designed to assess the longevity of adult bees emerging from larvae that received an injection of different numbers of DWV genome copies.</p>
+        <p>The artificial infection with DWV of last instar bee larvae, collected as described above, was performed by injecting 2 µl of a lysate of symptomatic bees, at two different dilutions, using a Hamilton syringe equipped with a 30 gauge needle. Five bees with crippled wings, that is the typical symptom of DWV infection, collected in mite-infested colonies, were frozen in liquid nitrogen, crushed with a pestle in a mortar and suspended in 5 ml of phosphate buffer solution, pH 7.4. After centrifugation (3,000 rpm/min for 30 min at 4°C), the supernatant was transferred into sealed tubes and stored at −20°C until use <xref ref-type="bibr" rid="ppat.1002735-Iqbal1">[83]</xref>. The extract of five healthy bees was prepared in the same way and used for control injections.</p>
+        <p>The lysates obtained as above were tested for seven honeybee viruses and two fungi species by conventional RT-PCR as described elsewhere <xref ref-type="bibr" rid="ppat.1002735-Chen2">[80]</xref> using the primer pairs reported in <xref ref-type="supplementary-material" rid="ppat.1002735.s008">Table S3</xref>.</p>
+        <p>The number of DWV genomic copies in the samples was assessed by Real-Time Quantitative PCR, as described above. The two adopted dilutions (10<sup>−3</sup> and 10<sup>−5</sup>) in PBS allowed the delivery of an estimated number of DWV genome copies of 1.66×10<sup>3</sup> and 16.6, respectively.</p>
+        <p>Following injection, bee larvae were confined into gelatin capsules, as described above, and maintained in an incubator at 35°C, 75% R.H.. After 12 days, when adult bees were fully developed, gelatin capsules were opened and the experimental bees transferred to an aerated plastic cage (18.5×10.5×8.5 cm), maintained in an incubator, at the same condition indicated above, and fed <italic>ad libitum</italic> with sugar candy (Apifonda) and water. The number of bees with deformed wings was recorded and dead bees were daily counted and removed. The experiment was replicated 3 times, across April–May, using 25–30 bees per replicate of each treatment. The proportion of symptomatic bees among those treated as above confirmed the effective infection by this method (<xref ref-type="supplementary-material" rid="ppat.1002735.s005">Figure S5</xref>).</p>
+      </sec>
+      <sec id="s4f">
+        <title>RNA-seq</title>
+        <p>The same RNAs used for metagenomic analysis were analyzed in terms of gene expression. The standard mRNA sample prep from Illumina was used to produce 36 bp long tags, about 25–30 millions per sample. CLC-Bio Genomics Workbench software (CLC Bio, Denmark) was used to calculate gene expression levels based on Mortazavi et al. approach <xref ref-type="bibr" rid="ppat.1002735-Mortazavi1">[84]</xref>. A table reporting the data used for subsequent analysis can be found at: <ext-link ext-link-type="uri" xlink:href="https://services.appliedgenomics.org/sequences-export/193-Nazzi_et_al/" xlink:type="simple">https://services.appliedgenomics.org/sequences-export/193-Nazzi_et_al/</ext-link> (username: nazzi_et_al; password: rawdata).</p>
+        <p>Differential expression of six selected genes was confirmed by means of Quantitative Real-Time RT-PCR using the primer pairs reported in <xref ref-type="supplementary-material" rid="ppat.1002735.s008">Table S3</xref>. Relative gene expression data were analyzed using the 2<sup>−ΔΔ<italic>C</italic><sub>T</sub></sup> method <xref ref-type="bibr" rid="ppat.1002735-Livak1">[85]</xref>. To assess that the amplification efficiencies of the target and reference gene (β-actin) were approximately equal, the amplification of six five-fold dilution of total RNA sample (from 1,000 ng to 0.32 ng per reaction) were analysed; in all cases the efficiency plot for log input RNA versus Δ<italic>C</italic><sub>T</sub> had a slope lower than 0.1 (Dorsal = 0.089; cSP33 = 0.019; SPH51 = 0.025; Eater-like = 0.064; NimC2 = 0.035; PGRP-S2 = 0.048). The calibrator was the LIC group. Three estimates of the ΔΔ<italic>C</italic><sub>T</sub> of each gene were obtained from independent analyses; for each analysis, one pool of three bees from each colony of both groups was used.</p>
+        <p>The differential expression of <italic>dorsal-1A</italic>, the most down-regulated gene with potential impact on several immune and stress responses, was also confirmed by absolute quantification; in this case, one pool of three bees from five colonies of both groups was analysed.</p>
+        <p>The standard curve was established by plotting the logarithm of nine 10-fold dilutions of a starting solution containing 127.4 ng of plasmid DNA (TOPO TA Cloning) with <italic>dorsal-1A</italic> insert (from 127.4 ng to 1.3 fg), against the corresponding threshold value (<italic>C</italic><sub>T</sub>) as the average of three repetitions. The PCR efficiency (E = 93.2%) was calculated based on the slope and coefficient of correlation (R<sup>2</sup>) of the standard curve, according to the following formula: E = 10<sup>(−1/slope)</sup>−1 (Slope = −3.495, Y-intercept = 46.19, R<sup>2</sup> = 0.996).</p>
+      </sec>
+      <sec id="s4g">
+        <title>Effect of <italic>Varroa</italic> Infestation and Virus Infection on the Expression of <italic>dorsal-1A</italic></title>
+        <p>In order to assess the role of the <italic>Varroa</italic> mite and DWV in the transcriptional down-regulation of <italic>dorsal-1A</italic>, we measured the impact of mite feeding on the expression level of this gene in virus-free bee pupae and pupae testing positive for DWV. Honeybee pupae, either uninfested or infested by one mite, were prepared as described above, then, after 12 days, they were processed for Quantitative Real-Time RT-PCR, to evaluate the expression of <italic>dorsal-1A</italic> and DWV infection rate in infected bees. To increase the chances of sampling DWV-free bees, the experiment was carried out on three dates in early Spring, when, according to the data shown in <xref ref-type="fig" rid="ppat-1002735-g002">Figure 2B</xref>, the prevalence of infection is low, and repeated twice later in the year, when most bees test positive for DWV. Thus virus free and virus infected bees had to be collected on different times; however, a regression analysis revealed no significant effect of time on Dorsal expression in virus free bees.</p>
+      </sec>
+      <sec id="s4h">
+        <title>RNAi</title>
+        <p>Double-stranded honeybee <italic>dorsal-1A</italic> (<italic>A. mellifera</italic> Dorsal variant A, mRNA, GI:58585243, 2389 bp) was prepared using MEGAscript RNAi kit (Ambion), following the manufacturer's standard protocol. The target sequence was PCR amplified with specific primers, carrying a 5′ tail of the T7 promoter at both ends and used as template for T7-<italic>depended in-vitro</italic> transcription. Primers used were:</p>
+        <p>F-<named-content content-type="gene" xlink:type="simple">5′-TAATACGACTCACTATAGGGAGACAATCCAGCACTTATTC-3′</named-content>;</p>
+        <p>R-<named-content content-type="gene" xlink:type="simple">5′-TAATACGACTCACTATAGGGAGCCTGAATAGTGTTATTAGC-3′</named-content>.</p>
+        <p>The reaction product was subjected to DNase digestion, purified and the final preparation was dissolved in nuclease free-water.</p>
+        <p>Individual frames were removed from the colony and stored in an incubator overnight, at 34°C, 90% R.H.. Emerging bees were maintained as groups of 30 individuals in sterile boxes, as described by Evans et al. <xref ref-type="bibr" rid="ppat.1002735-Evans2">[86]</xref>. Experimental bees were fed daily with 2 ml of a 50% sucrose/protein solution, containing 50 µg of dsRNA of <italic>dorsal-1A</italic>, while controls were fed with a similar solution, containing a dsRNA of mGFP6 (Green Fluorescent Protein), obtained as described above. Samples of 5 bees were collected at the beginning of the experiment, to assess the starting level of scored parameters, and after 48 and 96 hours of exposure to the dsRNA feeding solution. Samples were stored at a −80°C, until use for RNA extraction.</p>
+        <p>The transcription level of <italic>dorsal-1A</italic> and the number of DWV genome copies were determined by SYBR-Green Real-Time Quantitative RT-PCR, as described above.</p>
+      </sec>
+      <sec id="s4i">
+        <title>Statistical Analysis</title>
+        <p>Comparisons between treated and untreated colonies, for bee population, bee mortality, <italic>Varroa</italic> mite infestation and gene expression values resulting from RNA-seq, were carried out using the non-parametric Mann-Whitney test. In all cases, the number of replicates in each group correspond to the number of colonies, that was 6 for the low infested group (LIC) and 5 for the highly infested one (HIC).</p>
+        <p>To compare both the mortality rates and the infestations in the two groups of colonies while controlling for the correlation among repeated observations on the same colony over time, a model for longitudinal data was estimated; in this case a total of 44 observations, deriving from 11 colonies, observed 4 times each, were considered. A between groups regression panel model pointed out a significant effect of the indicator variables (bee mortality and mite infestation respectively) for HIC (bee mortality: estimated coefficient 3.045, <italic>P</italic> = 0.005; mites/1,000 bees: estimated coefficient 116.968, <italic>P</italic> = 0.005).</p>
+        <p>The proportion of DWV infected bees, out of the total analyzed in LIC and HIC, was compared using the Fisher Exact Solution test. In this case, 5 bees per group and per date were used for the analysis.</p>
+        <p>The number of DWV genome copies in individual honeybees, from LIC and HIC, was compared with the non-parametric Mann-Whitney test. In this case, 6 and 13 bees from LIC and HIC, respectively, were used in September, while, in October, 14 and 11 bees were considered for the same experimental categories.</p>
+        <p>Data from the experiment on the effect of <italic>Varroa</italic> mite feeding on viral replication in honeybee larvae were analyzed using the Scheirer-Ray-Hare extension of the Kruskal-Wallis test. Data from 5 bees per infestation level per time after the beginning of the experiment were used. Comparison of survival rates following injection of bee body lysates were carried out using the logrank test without continuity correction; in this case, 25–30 bees per group were used in each of the 3 replicates.</p>
+        <p>Data on gene expression in virus free and virus infected bees either infested or not by the <italic>Varroa</italic> mite were compared with the GLM procedure after log tranforming data; 9 uninfested and 9 infested virus-free bees, 10 uninfested and 10 infested virus infected bees were used for the analysis; the software Minitab was used.</p>
+        <p>In RNAi experiments, gene expression and viral replication in bees fed with dsRNA of <italic>dorsal-1A</italic> or dsRNA of Green Fluorescent Protein, as a control, were compared using the Scheirer-Ray-Hare extension of the Kruskal-Wallis test. Five bees per each time per treatment were used in the analysis.</p>
+      </sec>
+      <sec id="s4j">
+        <title>Theoretical Analysis</title>
+        <p>A characteristic of DWV infections in unstressed hosts is the ability of the virus to persist in a cryptic state, and to be stably transmitted vertically <xref ref-type="bibr" rid="ppat.1002735-de1">[29]</xref>. We use the existence of a stable state of chronic infection to base our dynamical model on a ‘predator-prey like system’ <xref ref-type="bibr" rid="ppat.1002735-Alizon1">[46]</xref>, as described by the following equations for viral copy number (<italic>V</italic>) and shared immune currency (<italic>I</italic>),<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.e001" xlink:type="simple"/><label>(S1)</label></disp-formula><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.e002" xlink:type="simple"/><label>(S2)</label></disp-formula></p>
+        <p>These equations (identical to equations 1 and 3 in <xref ref-type="bibr" rid="ppat.1002735-Alizon1">[46]</xref>) describe the within-host growth of a pathogen population <italic>V</italic> and its controlling immunological counterpart <italic>I</italic>. The maximal rate of pathogen replication is <italic>r</italic>, which is countervailed by a rate of immunological control <italic>cI</italic>. The dynamics of <italic>I</italic> are shaped by an intrinsic production rate <italic>a</italic>, a rate of decay <italic>u</italic> and an activation rate <italic>bV</italic> (activation by the pathogen population). A stability analysis of equations S1, S2 using standard techniques <xref ref-type="bibr" rid="ppat.1002735-Otto1">[87]</xref> and assuming all parameters are positive, reveals that whenever pathogens are able to invade a naïve host (when <italic>r</italic>&gt;<italic>ca/u</italic>) then their density <italic>V</italic> will tend to a single stable equilibrium at <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1002735.e003" xlink:type="simple"/></inline-formula>.</p>
+        <p>A key characteristic of the interaction between DWV and its host is some degree of immuno-suppression (<xref ref-type="table" rid="ppat-1002735-t001">Table 1</xref>). The simplest modification of equation S2 to allow for immuno-suppression is to consider the negative space of the ‘immune-activation’ parameter <italic>b</italic>. If <italic>b</italic> is negative, then increasing pathogen density <italic>V</italic> will act to reduce the immunological control variable <italic>I</italic>, with potentially de-stabilising consequences. Accordingly, a stability analysis now reveals that whenever pathogens can invade a host (same condition as above), their density will always increase without bounds, thus we have an obligately virulent pathogen that will grow and consume any host that they are able to establish within.</p>
+        <p>We now turn to our threshold suppression model. We again assume that the dynamics of <italic>I</italic> are modified by an interaction with the pathogen population <italic>V</italic>, however we now assume that the sign of the interaction (immuno-stimulatory or immuno-suppressive) will depend on the magnitude of <italic>V</italic>. Specifically, we assume that at low densities the pathogen is a net activator of immunological activity, whereas at high densities (whenever <italic>V</italic>&gt;<italic>b/s</italic>) the pathogen becomes immuno-suppressive, with <italic>b/s</italic> controlling the threshold point between the two regimes. These assumptions give the following revised equation for the dynamics of <italic>I</italic><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.e004" xlink:type="simple"/><label>(S3)</label></disp-formula></p>
+        <p>To clarify presentation, we first normalize the system (S1,S3) to reduce the parameter dimensions. Specifically, we rescale the units of time to the maximal growth rate of the virus (<italic>t′ = rt</italic>), the units of viral density to the density that halts immune proliferation (<italic>V</italic>′ = <italic>Vs/b</italic>) and the units of immune density to the density that halts viral proliferation (<italic>I′ = Ic/r</italic>). Applying these normalizations to equations (S1,S3) lead to the following equations<disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.e005" xlink:type="simple"/><label>(S4)</label></disp-formula><disp-formula><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.e006" xlink:type="simple"/><label>(S5)</label></disp-formula></p>
+        <p>Note that the full system (S1,S3) can be recovered from (S4,S5) by rescaling the units and replacing parameters as follows: <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1002735.e007" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1002735.e008" xlink:type="simple"/></inline-formula>, <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1002735.e009" xlink:type="simple"/></inline-formula>. A stability analysis of the system (S4,S5) reveals equivalent invasion conditions (<italic>1&gt;x/y</italic>) but following invasion the virus can either tend to a stable equilibrium at <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1002735.e010" xlink:type="simple"/></inline-formula> (solid line in <xref ref-type="fig" rid="ppat-1002735-g006">Figure 6</xref>), or grow without limit if <italic>V</italic> is above an unstable equilibrium at <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1002735.e011" xlink:type="simple"/></inline-formula> (dashed line in <xref ref-type="fig" rid="ppat-1002735-g006">Figure 6</xref>) or if non-viral immunological depletion is sufficiently high (if y&gt;x+z/4, to right of intersection in <xref ref-type="fig" rid="ppat-1002735-g006">Figure 6</xref>). For low <italic>y</italic> (<italic>y&lt;x+z/4</italic>), the stable equilibrium <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1002735.e012" xlink:type="simple"/></inline-formula> is an increasing function of <italic>y</italic> and the unstable equilibrium <inline-formula><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.ppat.1002735.e013" xlink:type="simple"/></inline-formula> is a decreasing function of <italic>y</italic>.</p>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="ppat.1002735.s001" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.s001" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p><bold>Proportion of bees infected by different viruses in highly and low infested colonies.</bold> BQCV: Black queen cell virus, SBV: Sacbrood virus. Error bars indicate the standard deviation. Both BQCV and SBV prevalence fluctuated and overall declined over time.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="ppat.1002735.s002" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.s002" xlink:type="simple">
+        <label>Figure S2</label>
+        <caption>
+          <p><bold>Relative gene expression of six immunity genes, by Quantitative Real-Time RT-PCR, in honeybees from highly infested colonies.</bold> The 2<sup>−ΔΔ<italic>C</italic><sub>T</sub></sup> of each gene ± the standard deviation is reported; the horizontal line represents the reference level in low infested colonies: gene expression values below the line are down-regulated, values above the line denote up-regulation. Real-Time RT-PCR data confirmed the differential expression of selected immunity genes detected late in the season by RNAseq analysis in bees from highly infested colonies.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="ppat.1002735.s003" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.s003" xlink:type="simple">
+        <label>Figure S3</label>
+        <caption>
+          <p><bold>Dorsal expression in low and highly infested colonies.</bold> Dorsal copies in honeybees, collected in October from low and highly infested colonies. The error bars indicate the standard deviation; the reported difference is statistically significant (Mann Whitney test: U = 2, n<sub>1</sub> = n<sub>2</sub> = 5: <italic>P</italic>≤0.05). Dorsal expression was reduced in bees from highly infested colonies in October.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="ppat.1002735.s004" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.s004" xlink:type="simple">
+        <label>Figure S4</label>
+        <caption>
+          <p><bold>Honeybees obtained from larvae infested or not by the parasitic mite </bold><bold><italic>V. destructor</italic></bold><bold> and maintained in gelatin capsules until the completion of their development.</bold> In the capsule on the right, a mite can be noted on an infested bee which shows a short abdomen, induced by the viral infection.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="ppat.1002735.s005" mimetype="image/tiff" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.s005" xlink:type="simple">
+        <label>Figure S5</label>
+        <caption>
+          <p><bold>Proportion of bees showing the characteristic symptom of DWV after artificial infection at the larval stage.</bold> Bee larvae received an injection of two different dilutions (1∶1,000 and 1∶100,000) of a whole body lysate obtained from bees with deformed wings (DW), and a diluted lysate (1∶1,000) of bees with normal wings (NW) as a control. The error bars indicate the standard error. The dose-response relationship between the injected dose and the proportion of symptomatic bees confirms the efficiency of the infection method.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="ppat.1002735.s006" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.s006" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p><bold>Closest sequenced relatives identified, through BLAST analysis of the high-throughput sequence data, in the colonies under study, in October.</bold> Only taxa that were present in at least two colonies of either group of hives are reported. The number of hits and the average percentage identity are reported for each taxon.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="ppat.1002735.s007" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.s007" xlink:type="simple">
+        <label>Table S2</label>
+        <caption>
+          <p><bold>Relative expression of honeybee immune genes in highly infested colonies.</bold> For each highly infested colony (HIC1 to HIC5), the RPKM ratio between that colony and the average of low infested colonies is reported; red, pink, yellow and green are used to denote genes whose ratio was lower than 0.5, between 0.5 and 0.9, between 1.1 and 2, higher than 2, respectively. Gene list from <xref ref-type="bibr" rid="ppat.1002735-Evans1">[38]</xref>; only genes with no-zero reads in at least one colony of each group are reported. Most genes were down-regulated in highly infested colonies, the most marked effect was noted for members of the Toll pathway and Serine Proteases.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="ppat.1002735.s008" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.ppat.1002735.s008" xlink:type="simple">
+        <label>Table S3</label>
+        <caption>
+          <p>
+            <bold>Primer pairs used for conventional RT-PCR or Quantitative Real-Time RT-PCR analyses.</bold>
+          </p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We gratefully acknowledge Francesca Covre and Nicola Franceschi (University of Udine), Donato Mancini and Ilaria Di Lelio (University of Napoli “Federico II”), for their technical support, Laura Rizzi (University of Udine) for her advice on statistical methods, Silvia Gigliotti (CNR Institute of Genetics and Biophysics) for critically reading the manuscript.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="ppat.1002735-vanEngelsdorp1">
+        <label>1</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>vanEngelsdorp</surname><given-names>D</given-names></name><name name-style="western"><surname>Meixner</surname><given-names>MD</given-names></name></person-group>             <year>2010</year>             <article-title>A historical review of managed honey bee populations in Europe and the United States and the factors that may affect them.</article-title>             <source>J Invertebr Pathol</source>             <volume>103</volume>             <fpage>S80</fpage>             <lpage>S95</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-vanEngelsdorp2">
+        <label>2</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>vanEngelsdorp</surname><given-names>D</given-names></name><name name-style="western"><surname>Evans</surname><given-names>JD</given-names></name><name name-style="western"><surname>Saegerman</surname><given-names>C</given-names></name><name name-style="western"><surname>Mullin</surname><given-names>C</given-names></name><name name-style="western"><surname>Haubruge</surname><given-names>E</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Colony collapse disorder: a descriptive study.</article-title>             <source>PLoS One</source>             <volume>4</volume>             <fpage>e6481</fpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Stokstad1">
+        <label>3</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Stokstad</surname><given-names>E</given-names></name></person-group>             <year>2007</year>             <article-title>The Case of the Empty Hives.</article-title>             <source>Science</source>             <volume>316</volume>             <fpage>970</fpage>             <lpage>972</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Oldroyd1">
+        <label>4</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Oldroyd</surname><given-names>BP</given-names></name></person-group>             <year>2007</year>             <article-title>What's Killing American Honey Bees?</article-title>             <source>PLoS Biol</source>             <volume>5</volume>             <fpage>e168</fpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-vanderZee1">
+        <label>5</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>van der Zee</surname><given-names>R</given-names></name><name name-style="western"><surname>Pisa</surname><given-names>L</given-names></name><name name-style="western"><surname>Andonov</surname><given-names>S</given-names></name><name name-style="western"><surname>Brodschneider</surname><given-names>R</given-names></name><name name-style="western"><surname>Charrière</surname><given-names>JD</given-names></name><etal/></person-group>             <year>2012</year>             <article-title>Managed honey bee colony losses in Canada, China, Europe, Israel and Turkey, for the winters of 2008–9 and 2009–10.</article-title>             <source>J Apic Res</source>             <volume>51</volume>             <fpage>100</fpage>             <lpage>114</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-vanEngelsdorp3">
+        <label>6</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>vanEngelsdorp</surname><given-names>D</given-names></name><name name-style="western"><surname>Caron</surname><given-names>D</given-names></name><name name-style="western"><surname>Hayes</surname><given-names>J</given-names></name><name name-style="western"><surname>Underwood</surname><given-names>R</given-names></name><name name-style="western"><surname>Henson</surname><given-names>M</given-names></name><etal/></person-group>             <year>2012</year>             <article-title>A national survey of managed honey bee 2010–11 winter colony losses in the USA: results from the Bee Informed Partnership.</article-title>             <source>J Apic Res</source>             <volume>51</volume>             <fpage>115</fpage>             <lpage>124</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Neumann1">
+        <label>7</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Neumann</surname><given-names>P</given-names></name><name name-style="western"><surname>Carreck</surname><given-names>NL</given-names></name></person-group>             <year>2010</year>             <article-title>Honeybee colony losses.</article-title>             <source>J Apic Res</source>             <volume>49</volume>             <fpage>1</fpage>             <lpage>6</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Klein1">
+        <label>8</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Klein</surname><given-names>AM</given-names></name><name name-style="western"><surname>Vaissière</surname><given-names>BE</given-names></name><name name-style="western"><surname>Cane</surname><given-names>JH</given-names></name><name name-style="western"><surname>Steffan-Dewenter</surname><given-names>I</given-names></name><name name-style="western"><surname>Cunningham</surname><given-names>SA</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Importance of pollinators in changing landscapes for world crops.</article-title>             <source>Proc R Soc B</source>             <volume>274</volume>             <fpage>303</fpage>             <lpage>313</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Aizen1">
+        <label>9</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Aizen</surname><given-names>MA</given-names></name><name name-style="western"><surname>Harder</surname><given-names>LD</given-names></name></person-group>             <year>2009</year>             <article-title>The global stock of domesticated honey bees is growing slower than agricultural demand for pollination.</article-title>             <source>Curr Biol</source>             <volume>19</volume>             <fpage>915</fpage>             <lpage>918</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Ratnieks1">
+        <label>10</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ratnieks</surname><given-names>FL</given-names></name><name name-style="western"><surname>Carreck</surname><given-names>NL</given-names></name></person-group>             <year>2010</year>             <article-title>Clarity on honey bee collapse?</article-title>             <source>Science</source>             <volume>327</volume>             <fpage>152</fpage>             <lpage>153</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-CoxFoster1">
+        <label>11</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cox-Foster</surname><given-names>DL</given-names></name><name name-style="western"><surname>Conlan</surname><given-names>S</given-names></name><name name-style="western"><surname>Holmes</surname><given-names>EC</given-names></name><name name-style="western"><surname>Palacios</surname><given-names>G</given-names></name><name name-style="western"><surname>Evans</surname><given-names>JD</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>A metagenomic survey of microbes in honey bee colony collapse disorder.</article-title>             <source>Science</source>             <volume>318</volume>             <fpage>283</fpage>             <lpage>287</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-MartnHernndez1">
+        <label>12</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Martín-Hernández</surname><given-names>R</given-names></name><name name-style="western"><surname>Meana</surname><given-names>A</given-names></name><name name-style="western"><surname>Prieto</surname><given-names>L</given-names></name><name name-style="western"><surname>Martínez Salvador</surname><given-names>A</given-names></name><name name-style="western"><surname>Garrido-Bailón</surname><given-names>E</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Outcome of Colonization of <italic>Apis mellifera</italic> by <italic>Nosema ceranae</italic>.</article-title>             <source>Appl Environ Microbiol</source>             <volume>73</volume>             <fpage>6331</fpage>             <lpage>6338</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Johnson1">
+        <label>13</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Johnson</surname><given-names>RM</given-names></name><name name-style="western"><surname>Evans</surname><given-names>JD</given-names></name><name name-style="western"><surname>Robinson</surname><given-names>GE</given-names></name><name name-style="western"><surname>Berenbaum</surname><given-names>MR</given-names></name></person-group>             <year>2009</year>             <article-title>Changes in transcript abundance relating to colony collapse disorder in honey bees (<italic>Apis mellifera</italic>).</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>106</volume>             <fpage>14790</fpage>             <lpage>14795</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Highfield1">
+        <label>14</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Highfield</surname><given-names>AC</given-names></name><name name-style="western"><surname>El Nagar</surname><given-names>A</given-names></name><name name-style="western"><surname>Mackinder</surname><given-names>LCM</given-names></name><name name-style="western"><surname>Noël</surname><given-names>LMLJ</given-names></name><name name-style="western"><surname>Hall</surname><given-names>MJ</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Deformed Wing Virus Implicated in Overwintering Honeybee Colony Losses.</article-title>             <source>Appl Environ Microbiol</source>             <volume>75</volume>             <fpage>7212</fpage>             <lpage>7220</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Genersch1">
+        <label>15</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Genersch</surname><given-names>E</given-names></name><name name-style="western"><surname>von der Ohe</surname><given-names>W</given-names></name><name name-style="western"><surname>Kaatz</surname><given-names>H</given-names></name><name name-style="western"><surname>Schroeder</surname><given-names>A</given-names></name><name name-style="western"><surname>Otten</surname><given-names>C</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>The German bee monitoring project: a long term study to understand periodically high winter losses of honey bee colonies.</article-title>             <source>Apidologie</source>             <volume>41</volume>             <fpage>332</fpage>             <lpage>352</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Berthoud1">
+        <label>16</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Berthoud</surname><given-names>H</given-names></name><name name-style="western"><surname>Imdorf</surname><given-names>A</given-names></name><name name-style="western"><surname>Haueter</surname><given-names>M</given-names></name><name name-style="western"><surname>Radloff</surname><given-names>S</given-names></name><name name-style="western"><surname>Neumann</surname><given-names>P</given-names></name></person-group>             <year>2010</year>             <article-title>Virus infections and winter losses of honey bee colonies (<italic>Apis mellifera</italic>).</article-title>             <source>J Apic Res</source>             <volume>49</volume>             <fpage>60</fpage>             <lpage>65</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-GuzmnNovoa1">
+        <label>17</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Guzmán-Novoa</surname><given-names>E</given-names></name><name name-style="western"><surname>Eccles</surname><given-names>L</given-names></name><name name-style="western"><surname>Calvete</surname><given-names>Y</given-names></name><name name-style="western"><surname>Mcgowan</surname><given-names>J</given-names></name><name name-style="western"><surname>Kelly</surname><given-names>PG</given-names></name><etal/></person-group>             <year>2010</year>             <article-title><italic>Varroa destructor</italic> is the main culprit for the death and reduced populations of overwintered honey bee (<italic>Apis mellifera</italic>) colonies in Ontario, Canada.</article-title>             <source>Apidologie</source>             <volume>41</volume>             <fpage>443</fpage>             <lpage>450</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Hedtka1">
+        <label>18</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hedtka</surname><given-names>K</given-names></name><name name-style="western"><surname>Jensen</surname><given-names>PM</given-names></name><name name-style="western"><surname>Jensen</surname><given-names>AB</given-names></name><name name-style="western"><surname>Genersch</surname><given-names>E</given-names></name></person-group>             <year>2011</year>             <article-title>Evidence for emerging parasites and pathogens influencing outbreaks of stress-related diseases like chalkbrood.</article-title>             <source>J Invertebr Pathol</source>             <volume>108</volume>             <fpage>167</fpage>             <lpage>173</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Dainat1">
+        <label>19</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Dainat</surname><given-names>B</given-names></name><name name-style="western"><surname>Evans</surname><given-names>JD</given-names></name><name name-style="western"><surname>Chen</surname><given-names>YP</given-names></name><name name-style="western"><surname>Gauthier</surname><given-names>L</given-names></name><name name-style="western"><surname>Neumann</surname><given-names>P</given-names></name></person-group>             <year>2012</year>             <article-title>Dead or alive: Deformed Wing Virus and <italic>Varroa destructor</italic> reduce the life span of winter honeybees.</article-title>             <source>Appl Environ Microbiol</source>             <volume>78</volume>             <fpage>981</fpage>             <lpage>987</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Sammataro1">
+        <label>20</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sammataro</surname><given-names>D</given-names></name><name name-style="western"><surname>Gerson</surname><given-names>U</given-names></name><name name-style="western"><surname>Needham</surname><given-names>G</given-names></name></person-group>             <year>2000</year>             <article-title>Parasitic Mites of Honey Bees: Life History, Implications, and Impact.</article-title>             <source>Annu Rev Entomol</source>             <volume>45</volume>             <fpage>519</fpage>             <lpage>548</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Rosenkranz1">
+        <label>21</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Rosenkranz</surname><given-names>P</given-names></name><name name-style="western"><surname>Aumeier</surname><given-names>P</given-names></name><name name-style="western"><surname>Ziegelmann</surname><given-names>B</given-names></name></person-group>             <year>2010</year>             <article-title>Biology and control of <italic>Varroa destructor</italic>.</article-title>             <source>J Invertebr Pathol</source>             <volume>103</volume>             <fpage>S96</fpage>             <lpage>S119</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Chen1">
+        <label>22</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chen</surname><given-names>YP</given-names></name><name name-style="western"><surname>Siede</surname><given-names>R</given-names></name></person-group>             <year>2007</year>             <article-title>Honey Bee Viruses.</article-title>             <source>Adv Virus Res</source>             <volume>70</volume>             <fpage>33</fpage>             <lpage>80</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Martin1">
+        <label>23</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Martin</surname><given-names>SJ</given-names></name></person-group>             <year>2001</year>             <article-title>The role of <italic>Varroa</italic> and viral pathogens in the collapse of honeybee colonies: a modelling approach.</article-title>             <source>J Appl Ecol</source>             <volume>38</volume>             <fpage>1082</fpage>             <lpage>1093</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Yang1">
+        <label>24</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Yang</surname><given-names>X</given-names></name><name name-style="western"><surname>Cox-Foster</surname><given-names>DL</given-names></name></person-group>             <year>2005</year>             <article-title>Impact of an ectoparasite on the immunity and pathology of an invertebrate: Evidence for host immunosuppression and viral amplification.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>102</volume>             <fpage>7470</fpage>             <lpage>7475</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Gregory1">
+        <label>25</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gregory</surname><given-names>PG</given-names></name><name name-style="western"><surname>Evans</surname><given-names>JD</given-names></name><name name-style="western"><surname>Rinderer</surname><given-names>T</given-names></name><name name-style="western"><surname>de Guzman</surname><given-names>L</given-names></name></person-group>             <year>2005</year>             <article-title>Conditional immune-gene suppression of honeybees parasitized by <italic>Varroa</italic> mites.</article-title>             <source>J Insect Sci</source>             <volume>5</volume>             <fpage>7</fpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Navajas1">
+        <label>26</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Navajas</surname><given-names>M</given-names></name><name name-style="western"><surname>Migeon</surname><given-names>A</given-names></name><name name-style="western"><surname>Alaux</surname><given-names>C</given-names></name><name name-style="western"><surname>Martin-Magniette</surname><given-names>ML</given-names></name><name name-style="western"><surname>Robinson</surname><given-names>GE</given-names></name><etal/></person-group>             <year>2008</year>             <article-title>Differential gene expression of the honey bee <italic>Apis mellifera</italic> associated with <italic>Varroa destructor</italic> infection.</article-title>             <source>BMC Genomics</source>             <volume>9</volume>             <fpage>301</fpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-LeConte1">
+        <label>27</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Le Conte</surname><given-names>Y</given-names></name><name name-style="western"><surname>Ellis</surname><given-names>M</given-names></name><name name-style="western"><surname>Ritter</surname><given-names>W</given-names></name></person-group>             <year>2010</year>             <article-title><italic>Varroa</italic> mites and honey bee health: can <italic>Varroa</italic> explain part of the colony losses?</article-title>             <source>Apidologie</source>             <volume>41</volume>             <fpage>353</fpage>             <lpage>363</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Boecking1">
+        <label>28</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Boecking</surname><given-names>O</given-names></name><name name-style="western"><surname>Genersch</surname><given-names>E</given-names></name></person-group>             <year>2008</year>             <article-title>Varroosis - the ongoing crisis in bee keeping.</article-title>             <source>J Consum Protect Food Safety</source>             <volume>3</volume>             <fpage>221</fpage>             <lpage>228</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-de1">
+        <label>29</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>de Miranda</surname><given-names>JR</given-names></name><name name-style="western"><surname>Genersch</surname><given-names>E</given-names></name></person-group>             <year>2010</year>             <article-title>Deformed wing virus.</article-title>             <source>J Invertebr Pathol</source>             <volume>103</volume>             <fpage>S48</fpage>             <lpage>S61</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Gisder1">
+        <label>30</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gisder</surname><given-names>S</given-names></name><name name-style="western"><surname>Aumeier</surname><given-names>P</given-names></name><name name-style="western"><surname>Genersch</surname><given-names>E</given-names></name></person-group>             <year>2009</year>             <article-title>Deformed wing virus: replication and viral load in mites (<italic>Varroa destructor</italic>).</article-title>             <source>J Gen Virol</source>             <volume>90</volume>             <fpage>463</fpage>             <lpage>467</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Mckel1">
+        <label>31</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Möckel</surname><given-names>N</given-names></name><name name-style="western"><surname>Gisder</surname><given-names>S</given-names></name><name name-style="western"><surname>Genersch</surname><given-names>E</given-names></name></person-group>             <year>2011</year>             <article-title>Horizontal transmission of deformed wing virus: pathological consequences in adult bees (<italic>Apis mellifera</italic>) depend on the transmission route.</article-title>             <source>J Gen Virol</source>             <volume>92</volume>             <fpage>370</fpage>             <lpage>377</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Moore1">
+        <label>32</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Moore</surname><given-names>J</given-names></name><name name-style="western"><surname>Jironkin</surname><given-names>A</given-names></name><name name-style="western"><surname>Chandler</surname><given-names>D</given-names></name><name name-style="western"><surname>Burroughs</surname><given-names>N</given-names></name><name name-style="western"><surname>Evans</surname><given-names>DJ</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Recombinants between Deformed wing virus and <italic>Varroa destructor</italic> virus-1 may prevail in <italic>Varroa destructor</italic>-infested honeybee colonies.</article-title>             <source>J Gen Virol</source>             <volume>92</volume>             <fpage>156</fpage>             <lpage>161</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Lafferty1">
+        <label>33</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lafferty</surname><given-names>K</given-names></name></person-group>             <year>2010</year>             <article-title>Interacting parasites.</article-title>             <source>Science</source>             <volume>330</volume>             <fpage>187</fpage>             <lpage>188</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Petney1">
+        <label>34</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Petney</surname><given-names>TN</given-names></name><name name-style="western"><surname>Andrews</surname><given-names>RH</given-names></name></person-group>             <year>1998</year>             <article-title>Multiparasite communities in animals and humans: frequency, structure and pathogenic significance.</article-title>             <source>Int J Parasitol</source>             <volume>28</volume>             <fpage>377</fpage>             <lpage>393</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Babendreier1">
+        <label>35</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Babendreier</surname><given-names>D</given-names></name><name name-style="western"><surname>Joller</surname><given-names>D</given-names></name><name name-style="western"><surname>Romeis</surname><given-names>J</given-names></name><name name-style="western"><surname>Bigler</surname><given-names>F</given-names></name><name name-style="western"><surname>Widmer</surname><given-names>F</given-names></name></person-group>             <year>2007</year>             <article-title>Bacterial community structures in honeybee intestines and their response to two insecticidal proteins.</article-title>             <source>FEMS Microbiol Ecol</source>             <volume>59</volume>             <fpage>600</fpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Tentcheva1">
+        <label>36</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Tentcheva</surname><given-names>D</given-names></name><name name-style="western"><surname>Gauthier</surname><given-names>L</given-names></name><name name-style="western"><surname>Zappulla</surname><given-names>N</given-names></name><name name-style="western"><surname>Dainat</surname><given-names>B</given-names></name><name name-style="western"><surname>Cousserans</surname><given-names>F</given-names></name><etal/></person-group>             <year>2004</year>             <article-title>Prevalence and Seasonal Variations of Six Bee Viruses in <italic>Apis mellifera</italic> L. and <italic>Varroa destructor</italic> Mite Populations in France.</article-title>             <source>Appl Environ Microbiol</source>             <volume>70</volume>             <fpage>7185</fpage>             <lpage>7191</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Martin2">
+        <label>37</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Martin</surname><given-names>SJ</given-names></name><name name-style="western"><surname>Ball</surname><given-names>BV</given-names></name><name name-style="western"><surname>Carreck</surname><given-names>NL</given-names></name></person-group>             <year>2010</year>             <article-title>Prevalence and persistence of deformed wing virus (DWV) in untreated or acaricide-treated <italic>Varroa destructor</italic> infested honey bee (<italic>Apis mellifera</italic>) colonies.</article-title>             <source>J Apic Res</source>             <volume>49</volume>             <fpage>72</fpage>             <lpage>79</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Evans1">
+        <label>38</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Evans</surname><given-names>JD</given-names></name><name name-style="western"><surname>Aronstein</surname><given-names>K</given-names></name><name name-style="western"><surname>Chen</surname><given-names>YP</given-names></name><name name-style="western"><surname>Hetru</surname><given-names>C</given-names></name><name name-style="western"><surname>Imler</surname><given-names>JL</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Immune pathways and defence mechanisms in honey bees <italic>Apis mellifera</italic>.</article-title>             <source>Insect Mol Biol</source>             <volume>15</volume>             <fpage>645</fpage>             <lpage>656</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Lemaitre1">
+        <label>39</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lemaitre</surname><given-names>B</given-names></name><name name-style="western"><surname>Hoffmann</surname><given-names>J</given-names></name></person-group>             <year>2007</year>             <article-title>The host defense of <italic>Drosophila melanogaster</italic>.</article-title>             <source>Annu Rev Immunol</source>             <volume>25</volume>             <fpage>697</fpage>             <lpage>743</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Zambon1">
+        <label>40</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Zambon</surname><given-names>RA</given-names></name><name name-style="western"><surname>Nandakumar</surname><given-names>M</given-names></name><name name-style="western"><surname>Vakharia</surname><given-names>VN</given-names></name><name name-style="western"><surname>Wu</surname><given-names>LP</given-names></name></person-group>             <year>2005</year>             <article-title>The Toll pathway is important for an antiviral response in <italic>Drosophila</italic>.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>102</volume>             <fpage>7257</fpage>             <lpage>7262</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Xi1">
+        <label>41</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Xi</surname><given-names>Z</given-names></name><name name-style="western"><surname>Ramirez</surname><given-names>JL</given-names></name><name name-style="western"><surname>Dimopoulos</surname><given-names>G</given-names></name></person-group>             <year>2008</year>             <article-title>The <italic>Aedes aegypti</italic> Toll pathway controls Dengue virus infection.</article-title>             <source>PLoS Pathog</source>             <volume>4</volume>             <fpage>e1000098</fpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Kemp1">
+        <label>42</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Kemp</surname><given-names>C</given-names></name><name name-style="western"><surname>Imler</surname><given-names>JL</given-names></name></person-group>             <year>2009</year>             <article-title>Antiviral immunity in drosophila.</article-title>             <source>Curr Opin Immunol</source>             <volume>21</volume>             <fpage>3</fpage>             <lpage>9</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Sabin1">
+        <label>43</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Sabin</surname><given-names>LR</given-names></name><name name-style="western"><surname>Hanna</surname><given-names>SL</given-names></name><name name-style="western"><surname>Cherry</surname><given-names>S</given-names></name></person-group>             <year>2010</year>             <article-title>Innate antiviral immunity in <italic>Drosophila</italic>.</article-title>             <source>Curr Opin Immunol</source>             <volume>22</volume>             <fpage>4</fpage>             <lpage>9</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Beutler1">
+        <label>44</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Beutler</surname><given-names>B</given-names></name><name name-style="western"><surname>Eidenschenk</surname><given-names>C</given-names></name><name name-style="western"><surname>Crozat</surname><given-names>K</given-names></name><name name-style="western"><surname>Imler</surname><given-names>JL</given-names></name><name name-style="western"><surname>Takeuchi</surname><given-names>O</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Genetic analysis of resistance to viral infection.</article-title>             <source>Nat Rev Immunol</source>             <volume>7</volume>             <fpage>753</fpage>             <lpage>766</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Costa1">
+        <label>45</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Costa</surname><given-names>A</given-names></name><name name-style="western"><surname>Jan</surname><given-names>E</given-names></name><name name-style="western"><surname>Sarnow</surname><given-names>P</given-names></name><name name-style="western"><surname>Schneider</surname><given-names>D</given-names></name></person-group>             <year>2009</year>             <article-title>The Imd pathway is involved in antiviral immune responses in <italic>Drosophila</italic>.</article-title>             <source>PLoS One</source>             <volume>4</volume>             <fpage>e7436</fpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Alizon1">
+        <label>46</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Alizon</surname><given-names>S</given-names></name><name name-style="western"><surname>van Baalen</surname><given-names>M</given-names></name></person-group>             <year>2008</year>             <article-title>Acute or Chronic? Within-Host Models with Immune Dynamics, Infection Outcome, and Parasite Evolution.</article-title>             <source>Am Nat</source>             <volume>172</volume>             <fpage>E244</fpage>             <lpage>E256</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-BowenWalker1">
+        <label>47</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bowen-Walker</surname><given-names>PL</given-names></name><name name-style="western"><surname>Martin</surname><given-names>SJ</given-names></name><name name-style="western"><surname>Gunn</surname><given-names>A</given-names></name></person-group>             <year>1999</year>             <article-title>The transmission of deformed wing virus between honeybees (<italic>Apis mellifera</italic> L.) by the ectoparasitic mite <italic>Varroa jacobsoni</italic> Oud.</article-title>             <source>J Invertebr Pathol</source>             <volume>73</volume>             <fpage>101</fpage>             <lpage>106</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Shen1">
+        <label>48</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Shen</surname><given-names>M</given-names></name><name name-style="western"><surname>Yang</surname><given-names>X</given-names></name><name name-style="western"><surname>Cox-Foster</surname><given-names>D</given-names></name><name name-style="western"><surname>Cui</surname><given-names>L</given-names></name></person-group>             <year>2005</year>             <article-title>The role of varroa mites in infections of Kashmir bee virus (KBV) and deformed wing virus (DWV) in honey bees.</article-title>             <source>Virology</source>             <volume>342</volume>             <fpage>141</fpage>             <lpage>149</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Yang2">
+        <label>49</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Yang</surname><given-names>X</given-names></name><name name-style="western"><surname>Cox-Foster</surname><given-names>D</given-names></name></person-group>             <year>2007</year>             <article-title>Effects of parasitization by <italic>Varroa destructor</italic> on survivorship and physiological traits of <italic>Apis mellifera</italic> in correlation with viral incidence and microbial challenge.</article-title>             <source>Parasitology</source>             <volume>134</volume>             <fpage>405</fpage>             <lpage>412</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-DiPrisco1">
+        <label>50</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Di Prisco</surname><given-names>G</given-names></name><name name-style="western"><surname>Zhang</surname><given-names>X</given-names></name><name name-style="western"><surname>Pennacchio</surname><given-names>F</given-names></name><name name-style="western"><surname>Caprio</surname><given-names>E</given-names></name><name name-style="western"><surname>Li</surname><given-names>J</given-names></name><etal/></person-group>             <year>2011</year>             <article-title>Dynamics of Persistent and Acute Deformed Wing Virus Infections in Honey Bees, <italic>Apis mellifera</italic>.</article-title>             <source>Viruses</source>             <volume>3</volume>             <fpage>2425</fpage>             <lpage>2441</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Zou1">
+        <label>51</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Zou</surname><given-names>Z</given-names></name><name name-style="western"><surname>Lopez</surname><given-names>DL</given-names></name><name name-style="western"><surname>Kanost</surname><given-names>MR</given-names></name><name name-style="western"><surname>Evans</surname><given-names>JD</given-names></name><name name-style="western"><surname>Jiang</surname><given-names>H</given-names></name></person-group>             <year>2006</year>             <article-title>Comparative analysis of serine protease-related genes in the honey bee genome: possible involvement in embryonic development and innate immunity.</article-title>             <source>Insect Mol Biol</source>             <volume>15</volume>             <fpage>603</fpage>             <lpage>614</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Cerenius1">
+        <label>52</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cerenius</surname><given-names>L</given-names></name><name name-style="western"><surname>Lee</surname><given-names>BL</given-names></name><name name-style="western"><surname>Söderhäll</surname><given-names>K</given-names></name></person-group>             <year>2008</year>             <article-title>The proPo-system: pros and cons for its role in invertebrate immunity.</article-title>             <source>Trends Immunol</source>             <volume>29</volume>             <fpage>263</fpage>             <lpage>271</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Cerenius2">
+        <label>53</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Cerenius</surname><given-names>L</given-names></name><name name-style="western"><surname>Kawabata</surname><given-names>S</given-names></name><name name-style="western"><surname>Lee</surname><given-names>BL</given-names></name><name name-style="western"><surname>Nonaka</surname><given-names>M</given-names></name><name name-style="western"><surname>Söderhäll</surname><given-names>K</given-names></name></person-group>             <year>2010</year>             <article-title>Proteolytic cascades and their involvement in invertebrate immunity.</article-title>             <source>Trends Biochem Sci</source>             <volume>35</volume>             <fpage>575</fpage>             <lpage>583</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Zhang1">
+        <label>54</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Zhang</surname><given-names>Y</given-names></name><name name-style="western"><surname>Liu</surname><given-names>X</given-names></name><name name-style="western"><surname>Zhang</surname><given-names>W</given-names></name><name name-style="western"><surname>Han</surname><given-names>R</given-names></name></person-group>             <year>2010</year>             <article-title>Differential gene expression of the honey bees <italic>Apis mellifera</italic> and <italic>A. cerana</italic> induced by <italic>Varroa destructor</italic> infection.</article-title>             <source>J Insect Physiol</source>             <volume>56</volume>             <fpage>1207</fpage>             <lpage>1218</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Hayden1">
+        <label>55</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Hayden</surname><given-names>MS</given-names></name><name name-style="western"><surname>Ghosh</surname><given-names>S</given-names></name></person-group>             <year>2008</year>             <article-title>Shared principles of NF-κB signaling.</article-title>             <source>Cell</source>             <volume>132</volume>             <fpage>344</fpage>             <lpage>362</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Mohamed1">
+        <label>56</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Mohamed</surname><given-names>MR</given-names></name><name name-style="western"><surname>McFadden</surname><given-names>G</given-names></name></person-group>             <year>2009</year>             <article-title>NF-κB inhibitors - Strategies from poxviruses.</article-title>             <source>Cell Cycle</source>             <volume>8</volume>             <fpage>3125</fpage>             <lpage>3132</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Strand1">
+        <label>57</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Strand</surname><given-names>MR</given-names></name></person-group>             <year>2012</year>             <article-title>Polydnavirus gene products that interact with the host immune system.</article-title>             <person-group person-group-type="editor"><name name-style="western"><surname>Beckage</surname><given-names>NE</given-names></name><name name-style="western"><surname>Drezen</surname><given-names>JM</given-names></name></person-group>             <comment>editors.</comment>             <comment>Parasitoid viruses.</comment>             <comment>Amsterdam: Elsevier.</comment>             <comment>pp 149–161.</comment>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Thoetkiattikul1">
+        <label>58</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Thoetkiattikul</surname><given-names>H</given-names></name><name name-style="western"><surname>Beck</surname><given-names>MH</given-names></name><name name-style="western"><surname>Strand</surname><given-names>MR</given-names></name></person-group>             <year>2005</year>             <article-title>Inhibitor κB-like proteins from a polydnavirus inhibit NF-κB activation and suppress the insect immune response.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>102</volume>             <fpage>11426</fpage>             <lpage>11431</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Falabella1">
+        <label>59</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Falabella</surname><given-names>P</given-names></name><name name-style="western"><surname>Varricchio</surname><given-names>P</given-names></name><name name-style="western"><surname>Provost</surname><given-names>B</given-names></name><name name-style="western"><surname>Espagne</surname><given-names>E</given-names></name><name name-style="western"><surname>Ferrarese</surname><given-names>R</given-names></name><etal/></person-group>             <year>2007</year>             <article-title>Characterization of the IκB-like gene family in polydnaviruses associated with wasps belonging to different Braconid subfamilies.</article-title>             <source>J Gen Virol</source>             <volume>88</volume>             <fpage>92</fpage>             <lpage>104</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Stuart1">
+        <label>60</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Stuart</surname><given-names>LM</given-names></name><name name-style="western"><surname>Ezekowitz</surname><given-names>RA</given-names></name></person-group>             <year>2008</year>             <article-title>Phagocytosis and comparative innate immunity: learning on the fly.</article-title>             <source>Nature Rev Immunol</source>             <volume>8</volume>             <fpage>131</fpage>             <lpage>141</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-DiPrisco2">
+        <label>61</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Di Prisco</surname><given-names>G</given-names></name><name name-style="western"><surname>Pennacchio</surname><given-names>F</given-names></name><name name-style="western"><surname>Caprio</surname><given-names>E</given-names></name><name name-style="western"><surname>Boncristiani</surname><given-names>HF</given-names><suffix>Jr</suffix></name><name name-style="western"><surname>Evans</surname><given-names>JD</given-names></name><etal/></person-group>             <year>2011</year>             <article-title><italic>Varroa destructor</italic> is an effective vector of Israeli acute paralysis virus in the honeybee, <italic>Apis mellifera</italic>.</article-title>             <source>J Gen Virol</source>             <volume>92</volume>             <fpage>151</fpage>             <lpage>155</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Richards1">
+        <label>62</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Richards</surname><given-names>EH</given-names></name><name name-style="western"><surname>Jones</surname><given-names>B</given-names></name><name name-style="western"><surname>Bowman</surname><given-names>A</given-names></name></person-group>             <year>2011</year>             <article-title>Salivary secretions from the honeybee mite, <italic>Varroa destructor</italic>: effects on insect haemocytes and preliminary biochemical characterization.</article-title>             <source>Parasitology</source>             <volume>138</volume>             <fpage>602</fpage>             <lpage>608</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Donz1">
+        <label>63</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Donzé</surname><given-names>G</given-names></name><name name-style="western"><surname>Guerin</surname><given-names>PM</given-names></name></person-group>             <year>1997</year>             <article-title>Time-activity budgets and space structuring by the different life stages of <italic>Varroa jacobsoni</italic> in capped brood of the honey bee, <italic>Apis mellifera</italic>.</article-title>             <source>J Insect Behav</source>             <volume>10</volume>             <fpage>371</fpage>             <lpage>393</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Pennacchio1">
+        <label>64</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Pennacchio</surname><given-names>F</given-names></name><name name-style="western"><surname>Strand</surname><given-names>MR</given-names></name></person-group>             <year>2006</year>             <article-title>Evolution of developmental strategies in parasitic hymenoptera.</article-title>             <source>Annu Rev Entomol</source>             <volume>51</volume>             <fpage>233</fpage>             <lpage>258</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Bzier1">
+        <label>65</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bézier</surname><given-names>A</given-names></name><name name-style="western"><surname>Annaheim</surname><given-names>M</given-names></name><name name-style="western"><surname>Herbinière</surname><given-names>J</given-names></name><name name-style="western"><surname>Wetterwald</surname><given-names>C</given-names></name><name name-style="western"><surname>Gyapay</surname><given-names>G</given-names></name><etal/></person-group>             <year>2009</year>             <article-title>Polydnaviruses of braconid wasps derive from an ancestral nudivirus.</article-title>             <source>Science</source>             <volume>323</volume>             <fpage>926</fpage>             <lpage>930</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Lewsey1">
+        <label>66</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Lewsey</surname><given-names>MG</given-names></name><name name-style="western"><surname>Murphy</surname><given-names>AM</given-names></name><name name-style="western"><surname>MacLean</surname><given-names>D</given-names></name><name name-style="western"><surname>Dalchau</surname><given-names>N</given-names></name><name name-style="western"><surname>Westwood</surname><given-names>JH</given-names></name><etal/></person-group>             <year>2010</year>             <article-title>Disruption of two defensive signaling pathways by a viral RNA silencing suppressor.</article-title>             <source>Mol Plant-Microbe Interact</source>             <volume>23</volume>             <fpage>835</fpage>             <lpage>845</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Roossinck1">
+        <label>67</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Roossinck</surname><given-names>MJ</given-names></name></person-group>             <year>2011</year>             <article-title>The good viruses: viral mutualistic symbioses.</article-title>             <source>Nature Rev Microbiol</source>             <volume>9</volume>             <fpage>99</fpage>             <lpage>108</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Ptashne1">
+        <label>68</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ptashne</surname><given-names>M</given-names></name></person-group>             <year>2004</year>             <article-title>A Genetic Switch: Phage Lambda Revisited (3rd ed.). Cold Spring Harbor: Cold Spring Harbor Laboratory Press.</article-title>             <source>154 p</source>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Silverman1">
+        <label>69</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Silverman</surname><given-names>N</given-names></name><name name-style="western"><surname>Maniatis</surname><given-names>T</given-names></name></person-group>             <year>2001</year>             <article-title>NF-κB signaling pathways in mammalian and insect innate immunity.</article-title>             <source>Genes Dev</source>             <volume>15</volume>             <fpage>2321</fpage>             <lpage>2342</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-DiAngelo1">
+        <label>70</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>DiAngelo</surname><given-names>JR</given-names></name><name name-style="western"><surname>Bland</surname><given-names>ML</given-names></name><name name-style="western"><surname>Bambina</surname><given-names>S</given-names></name><name name-style="western"><surname>Cherry</surname><given-names>S</given-names></name><name name-style="western"><surname>Birnbaum</surname><given-names>MJ</given-names></name></person-group>             <year>2009</year>             <article-title>The immune response attenuates growth and nutrient storage in <italic>Drosophila</italic> by reducing insulin signaling.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>106</volume>             <fpage>20853</fpage>             <lpage>20858</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Comparini1">
+        <label>71</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Comparini</surname><given-names>A</given-names></name><name name-style="western"><surname>Biasiolo</surname><given-names>A</given-names></name></person-group>             <year>1991</year>             <article-title>Genetic discrimination of Italian bee, <italic>Apis mellifera ligustica</italic> versus Carniolan bee, <italic>Apis mellifera carnica</italic> by allozyme variability analysis.</article-title>             <source>Biochem Syst Ecol</source>             <volume>19</volume>             <fpage>189</fpage>             <lpage>194</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Nazzi1">
+        <label>72</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Nazzi</surname><given-names>F</given-names></name></person-group>             <year>1992</year>             <article-title>Morphometric analysis of honey bees from an area of racial hybridization in northeastern Italy.</article-title>             <source>Apidologie</source>             <volume>23</volume>             <fpage>89</fpage>             <lpage>96</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Greatti1">
+        <label>73</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Greatti</surname><given-names>M</given-names></name><name name-style="western"><surname>Milani</surname><given-names>N</given-names></name><name name-style="western"><surname>Nazzi</surname><given-names>F</given-names></name></person-group>             <year>1992</year>             <article-title>Reinfestation of an acaricide-treated apiary by <italic>Varroa jacobsoni</italic> Oud..</article-title>             <source>Exp Appl Acarol</source>             <volume>16</volume>             <fpage>279</fpage>             <lpage>286</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Neumann2">
+        <label>74</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Neumann</surname><given-names>P</given-names></name><name name-style="western"><surname>Moritz</surname><given-names>RFA</given-names></name><name name-style="western"><surname>Mautz</surname><given-names>D</given-names></name></person-group>             <year>2000</year>             <article-title>Colony evaluation is not affected by drifting of drone and worker honeybees (<italic>Apis mellifera</italic> L.) at a performance testing apiary.</article-title>             <source>Apidologie</source>             <volume>31</volume>             <fpage>67</fpage>             <lpage>79</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Marchetti1">
+        <label>75</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Marchetti</surname><given-names>S</given-names></name></person-group>             <year>1985</year>             <article-title>Il “metodo dei sesti” per la valutazione numerica degli adulti in famiglie di <italic>Apis mellifera</italic> L..</article-title>             <source>Apicoltura</source>             <volume>1</volume>             <fpage>41</fpage>             <lpage>61</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Ju1">
+        <label>76</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Ju</surname><given-names>J</given-names></name><name name-style="western"><surname>Kim</surname><given-names>DH</given-names></name><name name-style="western"><surname>Bi</surname><given-names>L</given-names></name><name name-style="western"><surname>Meng</surname><given-names>Q</given-names></name><name name-style="western"><surname>Bai</surname><given-names>X</given-names></name><etal/></person-group>             <year>2006</year>             <article-title>Four-color DNA sequencing by synthesis using cleavable fluorescent nucleotide reversible terminators.</article-title>             <source>Proc Natl Acad Sci U S A</source>             <volume>103</volume>             <fpage>19635</fpage>             <lpage>19640</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Bailey1">
+        <label>77</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Bailey</surname><given-names>LL</given-names></name><name name-style="western"><surname>Ball</surname><given-names>BV</given-names></name></person-group>             <year>1991</year>             <article-title>Honey bee pathology. London: Academic Press.</article-title>             <source>208 p</source>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Gilliam1">
+        <label>78</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Gilliam</surname><given-names>M</given-names></name></person-group>             <year>1997</year>             <article-title>Identification and roles of non-pathogenic microflora associated with honey bees.</article-title>             <source>FEMS Microbiol Lett</source>             <volume>155</volume>             <fpage>1</fpage>             <lpage>10</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Jeyaprakash1">
+        <label>79</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Jeyaprakash</surname><given-names>A</given-names></name><name name-style="western"><surname>Hoy</surname><given-names>MA</given-names></name><name name-style="western"><surname>Allsopp</surname><given-names>MH</given-names></name></person-group>             <year>2003</year>             <article-title>Bacterial diversity in worker adults of <italic>Apis mellifera capensis</italic> and <italic>Apis mellifera scutellata</italic> (Insecta: Hymenoptera) assessed using 16S rRNA sequences.</article-title>             <source>J Invertebr Pathol</source>             <volume>84</volume>             <fpage>96</fpage>             <lpage>103</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Chen2">
+        <label>80</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Chen</surname><given-names>YP</given-names></name><name name-style="western"><surname>Pettis</surname><given-names>JS</given-names></name><name name-style="western"><surname>Collins</surname><given-names>A</given-names></name><name name-style="western"><surname>Feldlaufer</surname><given-names>MF</given-names></name></person-group>             <year>2006</year>             <article-title>Prevalence and transmission of honey bee viruses.</article-title>             <source>Appl Environ Microbiol</source>             <volume>72</volume>             <fpage>606</fpage>             <lpage>611</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Boncristiani1">
+        <label>81</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Boncristiani</surname><given-names>HF</given-names></name><name name-style="western"><surname>Di Prisco</surname><given-names>G</given-names></name><name name-style="western"><surname>Pettis</surname><given-names>JS</given-names></name><name name-style="western"><surname>Hamilton</surname><given-names>M</given-names></name><name name-style="western"><surname>Chen</surname><given-names>YP</given-names></name></person-group>             <year>2009</year>             <article-title>Molecular approaches to the analysis of deformed wings virus replication and pathogenesis in honey bees, <italic>Apis mellifera</italic>.</article-title>             <source>Virol J</source>             <volume>6</volume>             <fpage>221</fpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Nazzi2">
+        <label>82</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Nazzi</surname><given-names>F</given-names></name><name name-style="western"><surname>Milani</surname><given-names>N</given-names></name></person-group>             <year>1994</year>             <article-title>A technique for reproduction of <italic>Varroa jacobsoni</italic> Oud. under laboratory conditions.</article-title>             <source>Apidologie</source>             <volume>25</volume>             <fpage>579</fpage>             <lpage>584</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Iqbal1">
+        <label>83</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Iqbal</surname><given-names>J</given-names></name><name name-style="western"><surname>Mueller</surname><given-names>U</given-names></name></person-group>             <year>2007</year>             <article-title>Virus infection causes specific learning deficits in honeybee foragers.</article-title>             <source>Proc R Soc B</source>             <volume>274</volume>             <fpage>1517</fpage>             <lpage>1521</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Mortazavi1">
+        <label>84</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Mortazavi</surname><given-names>A</given-names></name><name name-style="western"><surname>Williams</surname><given-names>BA</given-names></name><name name-style="western"><surname>McCue</surname><given-names>K</given-names></name><name name-style="western"><surname>Schaeffer</surname><given-names>L</given-names></name><name name-style="western"><surname>Wold</surname><given-names>B</given-names></name></person-group>             <year>2008</year>             <article-title>Mapping and quantifying mammalian transcriptomes by RNA-Seq.</article-title>             <source>Nat Methods</source>             <volume>5</volume>             <fpage>621</fpage>             <lpage>628</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Livak1">
+        <label>85</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Livak</surname><given-names>KJ</given-names></name><name name-style="western"><surname>Schmittgen</surname><given-names>TD</given-names></name></person-group>             <year>2001</year>             <article-title>Analysis of relative gene expression data using Real-Time Quantitative PCR and the 2<sup>−ΔΔ<italic>C</italic><sub>T</sub></sup> method.</article-title>             <source>Methods</source>             <volume>25</volume>             <fpage>402</fpage>             <lpage>408</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Evans2">
+        <label>86</label>
+        <element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Evans</surname><given-names>JD</given-names></name><name name-style="western"><surname>Chen</surname><given-names>YP</given-names></name><name name-style="western"><surname>Di Prisco</surname><given-names>G</given-names></name><name name-style="western"><surname>Pettis</surname><given-names>JS</given-names></name><name name-style="western"><surname>Williams</surname><given-names>V</given-names></name></person-group>             <year>2009</year>             <article-title>Bee cups: Single-use cages for honey bee experiments.</article-title>             <source>J Apic Res</source>             <volume>48</volume>             <fpage>300</fpage>             <lpage>302</lpage>          </element-citation>
+      </ref>
+      <ref id="ppat.1002735-Otto1">
+        <label>87</label>
+        <element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author"><name name-style="western"><surname>Otto</surname><given-names>S</given-names></name><name name-style="western"><surname>Day</surname><given-names>T</given-names></name></person-group>             <year>2007</year>             <article-title>A biologist's guide to mathematical modeling in ecology and evolution. Princeton: Princeton University Press.</article-title>             <source>752 p</source>          </element-citation>
+      </ref>
+    </ref-list>
+    
+  </back>
+</article>

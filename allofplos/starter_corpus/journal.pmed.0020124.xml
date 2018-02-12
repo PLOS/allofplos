@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="discussion" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="publisher">pmed</journal-id><journal-id journal-id-type="nlm-ta">PLoS Med</journal-id><journal-id journal-id-type="pmc">plosmed</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Medicine</journal-title></journal-title-group><issn pub-type="ppub">1549-1277</issn><issn pub-type="epub">1549-1676</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="doi">10.1371/journal.pmed.0020124</article-id><article-id pub-id-type="publisher-id">04-PLME-E-0321R2</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Essay</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Genetics and Genomics</subject>
+          <subject>Science Policy</subject>
+          <subject>Public Health and Epidemiology</subject>
+          <subject>Mathematics/Statistics</subject>
+          <subject>Public Health and Epidemiology</subject>
+        </subj-group>
+        <subj-group subj-group-type="System Taxonomy">
+          <subject>Communication in Health Care</subject>
+          <subject>Editorial policies (including conflicts of interest)</subject>
+          <subject>Medical journals</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Why Most Published Research Findings Are False</article-title><alt-title alt-title-type="running-head">Essay</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ioannidis</surname>
+            <given-names>John P. A.</given-names>
+          </name>
+        </contrib>
+      </contrib-group><author-notes>
+        <fn fn-type="current-aff" id="n1">
+          <p>John P. A. Ioannidis is in the Department of Hygiene and Epidemiology, University of Ioannina School of Medicine, Ioannina, Greece, and Institute for Clinical Research and Health Policy Studies, Department of Medicine, Tufts-New England Medical Center, Tufts University School of Medicine, Boston, Massachusetts, United States of America. E-mail: <email xlink:type="simple">jioannid@cc.uoi.gr</email></p>
+        </fn>
+      <fn fn-type="conflict" id="n2">
+        <p> The author has declared that no competing interests exist.</p>
+      </fn></author-notes><pub-date pub-type="ppub">
+        <month>8</month>
+        <year>2005</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>30</day>
+        <month>8</month>
+        <year>2005</year>
+      </pub-date><volume>2</volume><issue>8</issue><elocation-id>e124</elocation-id><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2005</copyright-year><copyright-holder>John P. A. Ioannidis</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><related-article page="e272" related-article-type="companion" vol="2" xlink:href="info:doi/10.1371/journal.pmed.0020272" xlink:title="editorial" xlink:type="simple">
+				<article-title>Minimizing Mistakes and Embracing Uncertainty </article-title>
+			</related-article><related-article related-article-type="companion" xlink:href="info:doi/10.1371/journal.pmed.0040026" xlink:type="simple">
+        <article-title>When Should Potentially False Research Findings Be Considered Acceptable?</article-title>
+      </related-article><related-article related-article-type="companion" xlink:href="info:doi/10.1371/journal.pmed.0040026" xlink:type="simple">
+        <article-title>When Should Potentially False Research Findings Be Considered Acceptable?</article-title>
+      </related-article><related-article related-article-type="companion" xlink:href="info:doi/10.1371/journal.pmed.0040028" xlink:type="simple">
+        <article-title>Most Published Research Findings Are FalseBut a Little Replication Goes a Long Way</article-title>
+      </related-article><abstract>
+        <sec id="english">
+          <title>Summary</title>
+          <p>There is increasing concern that most current published research findings are false. The probability that a research claim is true may depend on study power and bias, the number of other studies on the same question, and, importantly, the ratio of true to no relationships among the relationships probed in each scientific field. In this framework, a research finding is less likely to be true when the studies conducted in a field are smaller; when effect sizes are smaller; when there is a greater number and lesser preselection of tested relationships; where there is greater flexibility in designs, definitions, outcomes, and analytical modes; when there is greater financial and other interest and prejudice; and when more teams are involved in a scientific field in chase of statistical significance. Simulations show that for most study designs and settings, it is more likely for a research claim to be false than true. Moreover, for many current scientific fields, claimed research findings may often be simply accurate measures of the prevailing bias. In this essay, I discuss the implications of these problems for the conduct and interpretation of research.</p>
+        </sec>
+      </abstract><abstract abstract-type="toc">
+        <p>Published research findings are sometimes refuted by subsequent evidence, says Ioannidis, with ensuing confusion and disappointment.</p>
+      </abstract></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title/>
+      <p>Published research findings are sometimes refuted by subsequent evidence, with ensuing confusion and disappointment. Refutation and controversy is seen across the range of research designs, from clinical trials and traditional epidemiological studies [<xref ref-type="bibr" rid="pmed-0020124-b1">1–3</xref>] to the most modern molecular research [<xref ref-type="bibr" rid="pmed-0020124-b4">4</xref>,<xref ref-type="bibr" rid="pmed-0020124-b5">5</xref>]. There is increasing concern that in modern research, false findings may be the majority or even the vast majority of published research claims [<xref ref-type="bibr" rid="pmed-0020124-b6">6–8</xref>]. However, this should not be surprising. It can be proven that most claimed research findings are false. Here I will examine the key factors that influence this problem and some corollaries thereof.</p>
+    </sec>
+    <sec id="s2">
+      <title>Modeling the Framework for False Positive Findings</title>
+      <p>Several methodologists have pointed out [<xref ref-type="bibr" rid="pmed-0020124-b9">9–11</xref>] that the high rate of nonreplication (lack of confirmation) of research discoveries is a consequence of the convenient, yet ill-founded strategy of claiming conclusive research findings solely on the basis of a single study assessed by formal statistical significance, typically for a <italic>p</italic>-value less than 0.05. Research is not most appropriately represented and summarized by <italic>p</italic>-values, but, unfortunately, there is a widespread notion that medical research articles should be interpreted based only on <italic>p</italic>-values. Research findings are defined here as any relationship reaching formal statistical significance, e.g., effective interventions, informative predictors, risk factors, or associations. “Negative” research is also very useful. “Negative” is actually a misnomer, and the misinterpretation is widespread. However, here we will target relationships that investigators claim exist, rather than null findings.</p>
+      <p>
+				<disp-quote><p>It can be proven that most claimed research findings are false</p></disp-quote>
+			</p>
+      <p>As has been shown previously, the probability that a research finding is indeed true depends on the prior probability of it being true (before doing the study), the statistical power of the study, and the level of statistical significance [<xref ref-type="bibr" rid="pmed-0020124-b10">10</xref>,<xref ref-type="bibr" rid="pmed-0020124-b11">11</xref>]. Consider a 2 × 2 table in which research findings are compared against the gold standard of true relationships in a scientific field. In a research field both true and false hypotheses can be made about the presence of relationships. Let <italic>R</italic> be the ratio of the number of “true relationships” to “no relationships” among those tested in the field. <italic>R</italic> is characteristic of the field and can vary a lot depending on whether the field targets highly likely relationships or searches for only one or a few true relationships among thousands and millions of hypotheses that may be postulated. Let us also consider, for computational simplicity, circumscribed fields where either there is only one true relationship (among many that can be hypothesized) or the power is similar to find any of the several existing true relationships. The pre-study probability of a relationship being true is <italic>R</italic>/(<italic>R</italic> + 1). The probability of a study finding a true relationship reflects the power 1 - β (one minus the Type II error rate). The probability of claiming a relationship when none truly exists reflects the Type I error rate, α. Assuming that <italic>c</italic> relationships are being probed in the field, the expected values of the 2 × 2 table are given in <xref ref-type="table" rid="pmed-0020124-t001">Table 1</xref>. After a research finding has been claimed based on achieving formal statistical significance, the post-study probability that it is true is the positive predictive value, PPV. The PPV is also the complementary probability of what Wacholder et al. have called the false positive report probability [<xref ref-type="bibr" rid="pmed-0020124-b10">10</xref>]. According to the 2 × 2 table, one gets PPV = (1 - β)<italic>R</italic>/(<italic>R</italic> - βR + α). A research finding is thus more likely true than false if (1 - β)<italic>R</italic> &gt; α. Since usually the vast majority of investigators depend on a = 0.05, this means that a research finding is more likely true than false if (1 - β)<italic>R</italic> &gt; 0.05.</p>
+      <table-wrap id="pmed-0020124-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0020124.t001</object-id><label>Table 1</label><caption>
+          <title>Research Findings and True Relationships</title>
+        </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020124.t001" xlink:type="simple"/><!-- <table><thead><tr><td><bold>Research</bold></td><td NAMEST="col2" NAMEEND="col4"><bold>True Relationship</bold></td></tr><tr><td><bold>Finding</bold></td><td><bold>Yes</bold></td><td><bold>No</bold></td><td><bold>Total</bold></td></tr></thead><tbody><tr><td>Yes</td><td><italic>c</italic>(1 - &szlig;)<italic>R</italic>/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>&alpha;/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>(<italic>R</italic> &plus; &alpha; - &szlig;<italic>R</italic>)/(<italic>R</italic> &plus; 1)</td></tr><tr><td>No</td><td><italic>c</italic>&szlig;<italic>R</italic>/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>(1 - &alpha;)/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>(1 - &alpha; &plus; &szlig;<italic>R</italic>)/(<italic>R</italic> &plus; 1)</td></tr><tr><td>Total</td><td><italic>cR</italic>/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic></td></tr></tbody></table> --></table-wrap>
+      <p>What is less well appreciated is that bias and the extent of repeated independent testing by different teams of investigators around the globe may further distort this picture and may lead to even smaller probabilities of the research findings being indeed true. We will try to model these two factors in the context of similar 2 × 2 tables.</p>
+    </sec>
+    <sec id="s3">
+      <title>Bias</title>
+      <p>First, let us define bias as the combination of various design, data, analysis, and presentation factors that tend to produce research findings when they should not be produced. Let <italic>u</italic> be the proportion of probed analyses that would not have been “research findings,” but nevertheless end up presented and reported as such, because of bias. Bias should not be confused with chance variability that causes some findings to be false by chance even though the study design, data, analysis, and presentation are perfect. Bias can entail manipulation in the analysis or reporting of findings. Selective or distorted reporting is a typical form of such bias. We may assume that <italic>u</italic> does not depend on whether a true relationship exists or not. This is not an unreasonable assumption, since typically it is impossible to know which relationships are indeed true. In the presence of bias (<xref ref-type="table" rid="pmed-0020124-t002">Table 2</xref>), one gets PPV = ([1 - β]<italic>R</italic> + <italic>u</italic>β<italic>R</italic>)/(<italic>R</italic> + α − β<italic>R</italic> + <italic>u</italic> − <italic>u</italic>α + <italic>u</italic>β<italic>R</italic>), and PPV decreases with increasing <italic>u</italic>, unless 1 − β ≤ α, i.e., 1 − β ≤ 0.05 for most situations. Thus, with increasing bias, the chances that a research finding is true diminish considerably. This is shown for different levels of power and for different pre-study odds in <xref ref-type="fig" rid="pmed-0020124-g001">Figure 1</xref>. Conversely, true research findings may occasionally be annulled because of reverse bias. For example, with large measurement errors relationships are lost in noise [<xref ref-type="bibr" rid="pmed-0020124-b12">12</xref>], or investigators use data inefficiently or fail to notice statistically significant relationships, or there may be conflicts of interest that tend to “bury” significant findings [<xref ref-type="bibr" rid="pmed-0020124-b13">13</xref>]. There is no good large-scale empirical evidence on how frequently such reverse bias may occur across diverse research fields. However, it is probably fair to say that reverse bias is not as common. Moreover measurement errors and inefficient use of data are probably becoming less frequent problems, since measurement error has decreased with technological advances in the molecular era and investigators are becoming increasingly sophisticated about their data. Regardless, reverse bias may be modeled in the same way as bias above. Also reverse bias should not be confused with chance variability that may lead to missing a true relationship because of chance.</p>
+      <fig id="pmed-0020124-g001" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pmed.0020124.g001</object-id>
+        <label>Figure 1</label>
+        <caption>
+          <title>PPV (Probability That a Research Finding Is True) as a Function of the Pre-Study Odds for Various Levels of Bias, <italic>u</italic></title>
+          <p>Panels correspond to power of 0.20, 0.50, and 0.80.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020124.g001" xlink:type="simple"/>
+      </fig>
+      <table-wrap id="pmed-0020124-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0020124.t002</object-id><label>Table 2</label><caption>
+          <title>Research Findings and True Relationships in the Presence of Bias</title>
+        </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020124.t002" xlink:type="simple"/><!-- <table><thead><tr><td><bold>Research</bold></td><td NAMEST="col2" NAMEEND="col4"><bold>True Relationship</bold></td></tr><tr><td><bold>Finding</bold></td><td><bold>Yes</bold></td><td><bold>No</bold></td><td><bold>Total</bold></td></tr></thead><tbody><tr><td>Yes</td><td>(<italic>c</italic>&lsqb;1 - &szlig;&rsqb;<italic>R</italic> &plus; <italic>uc</italic>&szlig;<italic>R</italic>)/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>&alpha; &plus; <italic>uc</italic>(1 - &alpha;)/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>(<italic>R</italic> &plus; &alpha; - &szlig;<italic>R</italic> &plus; <italic>u</italic> - <italic>u</italic>&alpha; &plus; <italic>u</italic>&szlig;<italic>R</italic>)/(<italic>R</italic> &plus; 1)</td></tr><tr><td>No</td><td>(1 - <italic>u</italic>)<italic>c</italic>&szlig;<italic>R</italic>/(<italic>R</italic> &plus; 1)</td><td>(1 - <italic>u</italic>)<italic>c</italic>(1 - &alpha;)/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>(1 - <italic>u</italic>)(1 - &alpha; &plus; &szlig;<italic>R</italic>)/(<italic>R</italic> &plus; 1)</td></tr><tr><td>Total</td><td><italic>cR/</italic>(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic></td></tr></tbody></table> --></table-wrap>
+    </sec>
+    <sec id="s4">
+      <title>Testing by Several Independent Teams</title>
+      <p>Several independent teams may be addressing the same sets of research questions. As research efforts are globalized, it is practically the rule that several research teams, often dozens of them, may probe the same or similar questions. Unfortunately, in some areas, the prevailing mentality until now has been to focus on isolated discoveries by single teams and interpret research experiments in isolation. An increasing number of questions have at least one study claiming a research finding, and this receives unilateral attention. The probability that at least one study, among several done on the same question, claims a statistically significant research finding is easy to estimate. For <italic>n</italic> independent studies of equal power, the 2 × 2 table is shown in <xref ref-type="table" rid="pmed-0020124-t003">Table 3</xref>: PPV = <italic>R</italic>(1 − β<sup><italic>n</italic></sup>)/(<italic>R</italic> + 1 − [1 − α]<sup><italic>n</italic></sup> − <italic>R</italic>β<sup><italic>n</italic></sup>) (not considering bias). With increasing number of independent studies, PPV tends to decrease, unless 1 - β &lt; a, i.e., typically 1 − β &lt; 0.05. This is shown for different levels of power and for different pre-study odds in <xref ref-type="fig" rid="pmed-0020124-g002">Figure 2</xref>. For <italic>n</italic> studies of different power, the term β<sup><italic>n</italic></sup> is replaced by the product of the terms β<sub><italic>i</italic></sub> for <italic>i</italic> = 1 to <italic>n</italic>, but inferences are similar.</p>
+      <fig id="pmed-0020124-g002" position="float">
+        <object-id pub-id-type="doi">10.1371/journal.pmed.0020124.g002</object-id>
+        <label>Figure 2</label>
+        <caption>
+          <title>PPV (Probability That a Research Finding Is True) as a Function of the Pre-Study Odds for Various Numbers of Conducted Studies, <italic>n</italic></title>
+          <p>Panels correspond to power of 0.20, 0.50, and 0.80.</p>
+        </caption>
+        <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020124.g002" xlink:type="simple"/>
+      </fig>
+      <table-wrap id="pmed-0020124-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0020124.t003</object-id><label>Table 3</label><caption>
+          <title>Research Findings and True Relationships in the Presence of Multiple Studies</title>
+        </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020124.t003" xlink:type="simple"/><!-- <table><thead><tr><td><bold>Research</bold></td><td NAMEST="C2" NAMEEND="C4"><bold>True Relationship</bold></td></tr><tr><td><bold>Finding</bold></td><td><bold>Yes</bold></td><td><bold>No</bold></td><td><bold>Total</bold></td></tr></thead><tbody><tr><td>Yes</td><td><italic>cR</italic>(1 - &szlig;<sup><italic>n</italic></sup>)/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>(1 - &lsqb;1 - &alpha;&rsqb;<sup><italic>n</italic></sup>)/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>(<italic>R</italic> &plus; 1 - &lsqb;1 - &alpha;&rsqb;<sup><italic>n</italic></sup> - <italic>R</italic>&szlig;<sup><italic>n</italic></sup>)/(<italic>R</italic> &plus; 1)</td></tr><tr><td>No</td><td><italic>cR</italic>&szlig;<sup><italic>n</italic></sup>/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>(1 - &alpha;)<sup><italic>n</italic></sup>/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>(&lsqb;1 - &alpha;&rsqb;<sup><italic>n</italic></sup> &plus; <italic>R</italic>&szlig;<sup><italic>n</italic></sup>)/(<italic>R</italic> &plus; 1)</td></tr><tr><td>Total</td><td><italic>cR</italic>/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic>/(<italic>R</italic> &plus; 1)</td><td><italic>c</italic></td></tr></tbody></table> --></table-wrap>
+    </sec>
+    <sec id="s5">
+      <title>Corollaries</title>
+      <p>A practical example is shown in <xref ref-type="boxed-text" rid="box1">Box 1</xref>. Based on the above considerations, one may deduce several interesting corollaries about the probability that a research finding is indeed true.</p>
+      <boxed-text id="box1" position="float">
+        <sec>
+          <title>Box 1. An Example: Science at Low Pre-Study Odds</title>
+          <p>Let us assume that a team of investigators performs a whole genome association study to test whether any of 100,000 gene polymorphisms are associated with susceptibility to schizophrenia. Based on what we know about the extent of heritability of the disease, it is reasonable to expect that probably around ten gene polymorphisms among those tested would be truly associated with schizophrenia, with relatively similar odds ratios around 1.3 for the ten or so polymorphisms and with a fairly similar power to identify any of them. Then <italic>R</italic> = 10/100,000 = 10<sup>−4</sup>, and the pre-study probability for any polymorphism to be associated with schizophrenia is also <italic>R</italic>/(<italic>R</italic> + 1) = 10<sup>−4</sup>. Let us also suppose that the study has 60% power to find an association with an odds ratio of 1.3 at α = 0.05. Then it can be estimated that if a statistically significant association is found with the <italic>p</italic>-value barely crossing the 0.05 threshold, the post-study probability that this is true increases about 12-fold compared with the pre-study probability, but it is still only 12 × 10<sup>−4</sup>.</p>
+          <p>Now let us suppose that the investigators manipulate their design, analyses, and reporting so as to make more relationships cross the <italic>p</italic> = 0.05 threshold even though this would not have been crossed with a perfectly adhered to design and analysis and with perfect comprehensive reporting of the results, strictly according to the original study plan. Such manipulation could be done, for example, with serendipitous inclusion or exclusion of certain patients or controls, post hoc subgroup analyses, investigation of genetic contrasts that were not originally specified, changes in the disease or control definitions, and various combinations of selective or distorted reporting of the results. Commercially available “data mining” packages actually are proud of their ability to yield statistically significant results through data dredging. In the presence of bias with <italic>u</italic> = 0.10, the post-study probability that a research finding is true is only 4.4 × 10<sup>−4</sup>. Furthermore, even in the absence of any bias, when ten independent research teams perform similar experiments around the world, if one of them finds a formally statistically significant association, the probability that the research finding is true is only 1.5 × 10<sup>−4</sup>, hardly any higher than the probability we had before any of this extensive research was undertaken!</p>
+        </sec>
+      </boxed-text>
+      <p><bold>Corollary 1: The smaller the studies conducted in a scientific field, the less likely the research findings are to be true.</bold> Small sample size means smaller power and, for all functions above, the PPV for a true research finding decreases as power decreases towards 1 − β = 0.05. Thus, other factors being equal, research findings are more likely true in scientific fields that undertake large studies, such as randomized controlled trials in cardiology (several thousand subjects randomized) [<xref ref-type="bibr" rid="pmed-0020124-b14">14</xref>] than in scientific fields with small studies, such as most research of molecular predictors (sample sizes 100-fold smaller) [<xref ref-type="bibr" rid="pmed-0020124-b15">15</xref>].</p>
+      <p><bold>Corollary 2: The smaller the effect sizes in a scientific field, the less likely the research findings are to be true.</bold> Power is also related to the effect size. Thus research findings are more likely true in scientific fields with large effects, such as the impact of smoking on cancer or cardiovascular disease (relative risks 3–20), than in scientific fields where postulated effects are small, such as genetic risk factors for multigenetic diseases (relative risks 1.1–1.5) [<xref ref-type="bibr" rid="pmed-0020124-b7">7</xref>]. Modern epidemiology is increasingly obliged to target smaller effect sizes [<xref ref-type="bibr" rid="pmed-0020124-b16">16</xref>]. Consequently, the proportion of true research findings is expected to decrease. In the same line of thinking, if the true effect sizes are very small in a scientific field, this field is likely to be plagued by almost ubiquitous false positive claims. For example, if the majority of true genetic or nutritional determinants of complex diseases confer relative risks less than 1.05, genetic or nutritional epidemiology would be largely utopian endeavors.</p>
+      <p><bold>Corollary 3: The greater the number and the lesser the selection of tested relationships in a scientific field, the less likely the research findings are to be true.</bold> As shown above, the post-study probability that a finding is true (PPV) depends a lot on the pre-study odds <italic>(R)</italic>. Thus, research findings are more likely true in confirmatory designs, such as large phase III randomized controlled trials, or meta-analyses thereof, than in hypothesis-generating experiments. Fields considered highly informative and creative given the wealth of the assembled and tested information, such as microarrays and other high-throughput discovery-oriented research [<xref ref-type="bibr" rid="pmed-0020124-b4">4</xref>,<xref ref-type="bibr" rid="pmed-0020124-b8">8</xref>,<xref ref-type="bibr" rid="pmed-0020124-b17">17</xref>], should have extremely low PPV.</p>
+      <p><bold>Corollary 4: The greater the flexibility in designs, definitions, outcomes, and analytical modes in a scientific field, the less likely the research findings are to be true.</bold> Flexibility increases the potential for transforming what would be “negative” results into “positive” results, i.e., bias, <italic>u</italic>. For several research designs, e.g., randomized controlled trials [<xref ref-type="bibr" rid="pmed-0020124-b18">18–20</xref>] or meta-analyses [<xref ref-type="bibr" rid="pmed-0020124-b21">21</xref>,<xref ref-type="bibr" rid="pmed-0020124-b22">22</xref>], there have been efforts to standardize their conduct and reporting. Adherence to common standards is likely to increase the proportion of true findings. The same applies to outcomes. True findings may be more common when outcomes are unequivocal and universally agreed (e.g., death) rather than when multifarious outcomes are devised (e.g., scales for schizophrenia outcomes) [<xref ref-type="bibr" rid="pmed-0020124-b23">23</xref>]. Similarly, fields that use commonly agreed, stereotyped analytical methods (e.g., Kaplan-Meier plots and the log-rank test) [<xref ref-type="bibr" rid="pmed-0020124-b24">24</xref>] may yield a larger proportion of true findings than fields where analytical methods are still under experimentation (e.g., artificial intelligence methods) and only “best” results are reported. Regardless, even in the most stringent research designs, bias seems to be a major problem. For example, there is strong evidence that selective outcome reporting, with manipulation of the outcomes and analyses reported, is a common problem even for randomized trails [<xref ref-type="bibr" rid="pmed-0020124-b25">25</xref>]. Simply abolishing selective publication would not make this problem go away.</p>
+      <p><bold>Corollary 5: The greater the financial and other interests and prejudices in a scientific field, the less likely the research findings are to be true.</bold> Conflicts of interest and prejudice may increase bias, <italic>u</italic>. Conflicts of interest are very common in biomedical research [<xref ref-type="bibr" rid="pmed-0020124-b26">26</xref>], and typically they are inadequately and sparsely reported [<xref ref-type="bibr" rid="pmed-0020124-b26">26</xref>,<xref ref-type="bibr" rid="pmed-0020124-b27">27</xref>]. Prejudice may not necessarily have financial roots. Scientists in a given field may be prejudiced purely because of their belief in a scientific theory or commitment to their own findings. Many otherwise seemingly independent, university-based studies may be conducted for no other reason than to give physicians and researchers qualifications for promotion or tenure. Such nonfinancial conflicts may also lead to distorted reported results and interpretations. Prestigious investigators may suppress via the peer review process the appearance and dissemination of findings that refute their findings, thus condemning their field to perpetuate false dogma. Empirical evidence on expert opinion shows that it is extremely unreliable [<xref ref-type="bibr" rid="pmed-0020124-b28">28</xref>].</p>
+      <p><bold>Corollary 6: The hotter a scientific field (with more scientific teams involved), the less likely the research findings are to be true.</bold> This seemingly paradoxical corollary follows because, as stated above, the PPV of isolated findings decreases when many teams of investigators are involved in the same field. This may explain why we occasionally see major excitement followed rapidly by severe disappointments in fields that draw wide attention. With many teams working on the same field and with massive experimental data being produced, timing is of the essence in beating competition. Thus, each team may prioritize on pursuing and disseminating its most impressive “positive” results. “Negative” results may become attractive for dissemination only if some other team has found a “positive” association on the same question. In that case, it may be attractive to refute a claim made in some prestigious journal. The term Proteus phenomenon has been coined to describe this phenomenon of rapidly alternating extreme research claims and extremely opposite refutations [<xref ref-type="bibr" rid="pmed-0020124-b29">29</xref>]. Empirical evidence suggests that this sequence of extreme opposites is very common in molecular genetics [<xref ref-type="bibr" rid="pmed-0020124-b29">29</xref>].</p>
+      <p>These corollaries consider each factor separately, but these factors often influence each other. For example, investigators working in fields where true effect sizes are perceived to be small may be more likely to perform large studies than investigators working in fields where true effect sizes are perceived to be large. Or prejudice may prevail in a hot scientific field, further undermining the predictive value of its research findings. Highly prejudiced stakeholders may even create a barrier that aborts efforts at obtaining and disseminating opposing results. Conversely, the fact that a field is hot or has strong invested interests may sometimes promote larger studies and improved standards of research, enhancing the predictive value of its research findings. Or massive discovery-oriented testing may result in such a large yield of significant relationships that investigators have enough to report and search further and thus refrain from data dredging and manipulation.</p>
+    </sec>
+    <sec id="s6">
+      <title>Most Research Findings Are False for Most Research Designs and for Most Fields</title>
+      <p>In the described framework, a PPV exceeding 50% is quite difficult to get. <xref ref-type="table" rid="pmed-0020124-t004">Table 4</xref> provides the results of simulations using the formulas developed for the influence of power, ratio of true to non-true relationships, and bias, for various types of situations that may be characteristic of specific study designs and settings. A finding from a well-conducted, adequately powered randomized controlled trial starting with a 50% pre-study chance that the intervention is effective is eventually true about 85% of the time. A fairly similar performance is expected of a confirmatory meta-analysis of good-quality randomized trials: potential bias probably increases, but power and pre-test chances are higher compared to a single randomized trial. Conversely, a meta-analytic finding from inconclusive studies where pooling is used to “correct” the low power of single studies, is probably false if <italic>R</italic> ≤ 1:3. Research findings from underpowered, early-phase clinical trials would be true about one in four times, or even less frequently if bias is present. Epidemiological studies of an exploratory nature perform even worse, especially when underpowered, but even well-powered epidemiological studies may have only a one in five chance being true, if <italic>R</italic> = 1:10. Finally, in discovery-oriented research with massive testing, where tested relationships exceed true ones 1,000-fold (e.g., 30,000 genes tested, of which 30 may be the true culprits) [<xref ref-type="bibr" rid="pmed-0020124-b30">30</xref>,<xref ref-type="bibr" rid="pmed-0020124-b31">31</xref>], PPV for each claimed relationship is extremely low, even with considerable standardization of laboratory and statistical methods, outcomes, and reporting thereof to minimize bias.</p>
+      <table-wrap id="pmed-0020124-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.0020124.t004</object-id><label>Table 4</label><caption>
+          <title>PPV of Research Findings for Various Combinations of Power (1 - ß), Ratio of True to Not-True Relationships <italic>(R)</italic>, and Bias <italic>(u)</italic></title>
+        </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.0020124.t004" xlink:type="simple"/><table-wrap-foot>
+          <fn>
+            <p>The estimated PPVs (positive predictive values) are derived assuming a = 0.05 for a single study.</p>
+          </fn>
+          <fn>
+            <p>RCT, randomized controlled trial.</p>
+          </fn>
+        </table-wrap-foot><!-- <table><thead><tr><td><bold>1 - &szlig;</bold></td><td><bold><italic>R</italic></bold></td><td><bold><italic>u</italic></bold></td><td><bold>Practical Example</bold></td><td><bold>PPV</bold></td></tr></thead><tbody><tr><td>0.80</td><td>1:1</td><td>0.10</td><td>Adequately powered RCT with little bias and 1:1 pre-study odds</td><td>0.85</td></tr><tr><td>0.95</td><td>2:1</td><td>0.30</td><td>Confirmatory meta-analysis of good-quality RCTs</td><td>0.85</td></tr><tr><td>0.80</td><td>1:3</td><td>0.40</td><td>Meta-analysis of small inconclusive studies</td><td>0.41</td></tr><tr><td>0.20</td><td>1:5</td><td>0.20</td><td>Underpowered, but well-performed phase I/II RCT</td><td>0.23</td></tr><tr><td>0.20</td><td>1:5</td><td>0.80</td><td>Underpowered, poorly performed phase I/II RCT</td><td>0.17</td></tr><tr><td>0.80</td><td>1:10</td><td>0.30</td><td>Adequately powered exploratory epidemiological study</td><td>0.20</td></tr><tr><td>0.20</td><td>1:10</td><td>0.30</td><td>Underpowered exploratory epidemiological study</td><td>0.12</td></tr><tr><td>0.20</td><td>1:1,000</td><td>0.80</td><td>Discovery-oriented exploratory research with massive testing</td><td>0.0010</td></tr><tr><td>0.20</td><td>1:1,000</td><td>0.20</td><td>As in previous example, but with more limited bias (more standardized)</td><td>0.0015</td></tr></tbody></table> --></table-wrap>
+    </sec>
+    <sec id="s7">
+      <title>Claimed Research Findings May Often Be Simply Accurate Measures of the Prevailing Bias</title>
+      <p>As shown, the majority of modern biomedical research is operating in areas with very low pre- and post-study probability for true findings. Let us suppose that in a research field there are no true findings at all to be discovered. History of science teaches us that scientific endeavor has often in the past wasted effort in fields with absolutely no yield of true scientific information, at least based on our current understanding. In such a “null field,” one would ideally expect all observed effect sizes to vary by chance around the null in the absence of bias. The extent that observed findings deviate from what is expected by chance alone would be simply a pure measure of the prevailing bias.</p>
+      <p>For example, let us suppose that no nutrients or dietary patterns are actually important determinants for the risk of developing a specific tumor. Let us also suppose that the scientific literature has examined 60 nutrients and claims all of them to be related to the risk of developing this tumor with relative risks in the range of 1.2 to 1.4 for the comparison of the upper to lower intake tertiles. Then the claimed effect sizes are simply measuring nothing else but the net bias that has been involved in the generation of this scientific literature. Claimed effect sizes are in fact the most accurate estimates of the net bias. It even follows that between “null fields,” the fields that claim stronger effects (often with accompanying claims of medical or public health importance) are simply those that have sustained the worst biases.</p>
+      <p>For fields with very low PPV, the few true relationships would not distort this overall picture much. Even if a few relationships are true, the shape of the distribution of the observed effects would still yield a clear measure of the biases involved in the field. This concept totally reverses the way we view scientific results. Traditionally, investigators have viewed large and highly significant effects with excitement, as signs of important discoveries. Too large and too highly significant effects may actually be more likely to be signs of large bias in most fields of modern research. They should lead investigators to careful critical thinking about what might have gone wrong with their data, analyses, and results.</p>
+      <p>Of course, investigators working in any field are likely to resist accepting that the whole field in which they have spent their careers is a “null field.” However, other lines of evidence, or advances in technology and experimentation, may lead eventually to the dismantling of a scientific field. Obtaining measures of the net bias in one field may also be useful for obtaining insight into what might be the range of bias operating in other fields where similar analytical methods, technologies, and conflicts may be operating.</p>
+    </sec>
+    <sec id="s8">
+      <title>How Can We Improve the Situation?</title>
+      <p>Is it unavoidable that most research findings are false, or can we improve the situation? A major problem is that it is impossible to know with 100% certainty what the truth is in any research question. In this regard, the pure “gold” standard is unattainable. However, there are several approaches to improve the post-study probability.</p>
+      <p>Better powered evidence, e.g., large studies or low-bias meta-analyses, may help, as it comes closer to the unknown “gold” standard. However, large studies may still have biases and these should be acknowledged and avoided. Moreover, large-scale evidence is impossible to obtain for all of the millions and trillions of research questions posed in current research. Large-scale evidence should be targeted for research questions where the pre-study probability is already considerably high, so that a significant research finding will lead to a post-test probability that would be considered quite definitive. Large-scale evidence is also particularly indicated when it can test major concepts rather than narrow, specific questions. A negative finding can then refute not only a specific proposed claim, but a whole field or considerable portion thereof. Selecting the performance of large-scale studies based on narrow-minded criteria, such as the marketing promotion of a specific drug, is largely wasted research. Moreover, one should be cautious that extremely large studies may be more likely to find a formally statistical significant difference for a trivial effect that is not really meaningfully different from the null [<xref ref-type="bibr" rid="pmed-0020124-b32">32–34</xref>].</p>
+      <p>Second, most research questions are addressed by many teams, and it is misleading to emphasize the statistically significant findings of any single team. What matters is the totality of the evidence. Diminishing bias through enhanced research standards and curtailing of prejudices may also help. However, this may require a change in scientific mentality that might be difficult to achieve. In some research designs, efforts may also be more successful with upfront registration of studies, e.g., randomized trials [<xref ref-type="bibr" rid="pmed-0020124-b35">35</xref>]. Registration would pose a challenge for hypothesis-generating research. Some kind of registration or networking of data collections or investigators within fields may be more feasible than registration of each and every hypothesis-generating experiment. Regardless, even if we do not see a great deal of progress with registration of studies in other fields, the principles of developing and adhering to a protocol could be more widely borrowed from randomized controlled trials.</p>
+      <p>Finally, instead of chasing statistical significance, we should improve our understanding of the range of <italic>R</italic> values—the pre-study odds—where research efforts operate [<xref ref-type="bibr" rid="pmed-0020124-b10">10</xref>]. Before running an experiment, investigators should consider what they believe the chances are that they are testing a true rather than a non-true relationship. Speculated high <italic>R</italic> values may sometimes then be ascertained. As described above, whenever ethically acceptable, large studies with minimal bias should be performed on research findings that are considered relatively established, to see how often they are indeed confirmed. I suspect several established “classics” will fail the test [<xref ref-type="bibr" rid="pmed-0020124-b36">36</xref>].</p>
+      <p>Nevertheless, most new discoveries will continue to stem from hypothesis-generating research with low or very low pre-study odds. We should then acknowledge that statistical significance testing in the report of a single study gives only a partial picture, without knowing how much testing has been done outside the report and in the relevant field at large. Despite a large statistical literature for multiple testing corrections [<xref ref-type="bibr" rid="pmed-0020124-b37">37</xref>], usually it is impossible to decipher how much data dredging by the reporting authors or other research teams has preceded a reported research finding. Even if determining this were feasible, this would not inform us about the pre-study odds. Thus, it is unavoidable that one should make approximate assumptions on how many relationships are expected to be true among those probed across the relevant research fields and research designs. The wider field may yield some guidance for estimating this probability for the isolated research project. Experiences from biases detected in other neighboring fields would also be useful to draw upon. Even though these assumptions would be considerably subjective, they would still be very useful in interpreting research claims and putting them in context.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="pmed-0020124-b1">
+        <label>1</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Haidich</surname>
+              <given-names>AB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lau</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Any casualties in the clash of randomised and observational evidence?</article-title>
+          <source>BMJ</source>
+          <year>2001</year>
+          <volume>322</volume>
+          <fpage>879</fpage>
+          <lpage>880</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b2">
+        <label>2</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Lawlor</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Davey Smith</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kundu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bruckdorfer</surname>
+              <given-names>KR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ebrahim</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Those confounded vitamins: What can we learn from the differences between observational versus randomised trial evidence?</article-title>
+          <source>Lancet</source>
+          <year>2004</year>
+          <volume>363</volume>
+          <fpage>1724</fpage>
+          <lpage>1727</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b3">
+        <label>3</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Vandenbroucke</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <article-title>When are observational studies as credible as randomised trials?</article-title>
+          <source>Lancet</source>
+          <year>2004</year>
+          <volume>363</volume>
+          <fpage>1728</fpage>
+          <lpage>1731</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b4">
+        <label>4</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Michiels</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Koscielny</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hill</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Prediction of cancer outcome with microarrays: A multiple random validation strategy.</article-title>
+          <source>Lancet</source>
+          <year>2005</year>
+          <volume>365</volume>
+          <fpage>488</fpage>
+          <lpage>492</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b5">
+        <label>5</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JPA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ntzani</surname>
+              <given-names>EE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Trikalinos</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Contopoulos-Ioannidis</surname>
+              <given-names>DG</given-names>
+            </name>
+          </person-group>
+          <article-title>Replication validity of genetic association studies.</article-title>
+          <source>Nat Genet</source>
+          <year>2001</year>
+          <volume>29</volume>
+          <fpage>306</fpage>
+          <lpage>309</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b6">
+        <label>6</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Colhoun</surname>
+              <given-names>HM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>McKeigue</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Davey Smith</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Problems of reporting genetic associations with complex outcomes.</article-title>
+          <source>Lancet</source>
+          <year>2003</year>
+          <volume>361</volume>
+          <fpage>865</fpage>
+          <lpage>872</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b7">
+        <label>7</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic associations: False or true?</article-title>
+          <source>Trends Mol Med</source>
+          <year>2003</year>
+          <volume>9</volume>
+          <fpage>135</fpage>
+          <lpage>138</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b8">
+        <label>8</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JPA</given-names>
+            </name>
+          </person-group>
+          <article-title>Microarrays and molecular research: Noise discovery?</article-title>
+          <source>Lancet</source>
+          <year>2005</year>
+          <volume>365</volume>
+          <fpage>454</fpage>
+          <lpage>455</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b9">
+        <label>9</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Sterne</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Davey Smith</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Sifting the evidence—What's wrong with significance tests.</article-title>
+          <source>BMJ</source>
+          <year>2001</year>
+          <volume>322</volume>
+          <fpage>226</fpage>
+          <lpage>231</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b10">
+        <label>10</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Wacholder</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Chanock</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Garcia-Closas</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Elghormli</surname>
+              <given-names>L</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rothman</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Assessing the probability that a positive report is false: An approach for molecular epidemiology studies.</article-title>
+          <source>J Natl Cancer Inst</source>
+          <year>2004</year>
+          <volume>96</volume>
+          <fpage>434</fpage>
+          <lpage>442</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b11">
+        <label>11</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Risch</surname>
+              <given-names>NJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Searching for genetic determinants in the new millennium.</article-title>
+          <source>Nature</source>
+          <year>2000</year>
+          <volume>405</volume>
+          <fpage>847</fpage>
+          <lpage>856</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b12">
+        <label>12</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kelsey</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Whittemore</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Evans</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Thompson</surname>
+              <given-names>WD</given-names>
+            </name>
+          </person-group>
+          <source>Methods in observational epidemiology, 2nd ed</source>
+          <year>1996</year>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Oxford U Press</publisher-name>
+          <page-count count="432"/>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b13">
+        <label>13</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Topol</surname>
+              <given-names>EJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Failing the public health—Rofecoxib, Merck, and the FDA.</article-title>
+          <source>N Engl J Med</source>
+          <year>2004</year>
+          <volume>351</volume>
+          <fpage>1707</fpage>
+          <lpage>1709</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b14">
+        <label>14</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Yusuf</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Collins</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Peto</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Why do we need some large, simple randomized trials?</article-title>
+          <source>Stat Med</source>
+          <year>1984</year>
+          <volume>3</volume>
+          <fpage>409</fpage>
+          <lpage>422</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b15">
+        <label>15</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Altman</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Royston</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>What do we mean by validating a prognostic model?</article-title>
+          <source>Stat Med</source>
+          <year>2000</year>
+          <volume>19</volume>
+          <fpage>453</fpage>
+          <lpage>473</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b16">
+        <label>16</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Taubes</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Epidemiology faces its limits.</article-title>
+          <source>Science</source>
+          <year>1995</year>
+          <volume>269</volume>
+          <fpage>164</fpage>
+          <lpage>169</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b17">
+        <label>17</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Golub</surname>
+              <given-names>TR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Slonim</surname>
+              <given-names>DK</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tamayo</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Huard</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gaasenbeek</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Molecular classification of cancer: Class discovery and class prediction by gene expression monitoring.</article-title>
+          <source>Science</source>
+          <year>1999</year>
+          <volume>286</volume>
+          <fpage>531</fpage>
+          <lpage>537</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b18">
+        <label>18</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Moher</surname>
+              <given-names>D</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Schulz</surname>
+              <given-names>KF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Altman</surname>
+              <given-names>DG</given-names>
+            </name>
+          </person-group>
+          <article-title>The CONSORT statement: Revised recommendations for improving the quality of reports of parallel-group randomised trials.</article-title>
+          <source>Lancet</source>
+          <year>2001</year>
+          <volume>357</volume>
+          <fpage>1191</fpage>
+          <lpage>1194</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b19">
+        <label>19</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Evans</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gotzsche</surname>
+              <given-names>PC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>O'Neill</surname>
+              <given-names>RT</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Altman</surname>
+              <given-names>DG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Better reporting of harms in randomized trials: An extension of the CONSORT statement.</article-title>
+          <source>Ann Intern Med</source>
+          <year>2004</year>
+          <volume>141</volume>
+          <fpage>781</fpage>
+          <lpage>788</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b20">
+        <label>20</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <collab xlink:type="simple">International Conference on Harmonisation E9 Expert Working Group</collab>
+          <article-title>ICH Harmonised Tripartite Guideline. Statistical principles for clinical trials.</article-title>
+          <source>Stat Med</source>
+          <year>1999</year>
+          <volume>18</volume>
+          <fpage>1905</fpage>
+          <lpage>1942</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b21">
+        <label>21</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Moher</surname>
+              <given-names>D</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cook</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Eastwood</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Olkin</surname>
+              <given-names>I</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rennie</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Improving the quality of reports of meta-analyses of randomised controlled trials: The QUOROM statement. Quality of Reporting of Meta-analyses.</article-title>
+          <source>Lancet</source>
+          <year>1999</year>
+          <volume>354</volume>
+          <fpage>1896</fpage>
+          <lpage>1900</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b22">
+        <label>22</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Stroup</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Berlin</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Morton</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Olkin</surname>
+              <given-names>I</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Williamson</surname>
+              <given-names>GD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Meta-analysis of observational studies in epidemiology: A proposal for reporting. Meta-analysis of Observational Studies in Epidemiology (MOOSE) group.</article-title>
+          <source>JAMA</source>
+          <year>2000</year>
+          <volume>283</volume>
+          <fpage>2008</fpage>
+          <lpage>2012</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b23">
+        <label>23</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Marshall</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lockwood</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bradley</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Adams</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Joy</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Unpublished rating scales: A major source of bias in randomised controlled trials of treatments for schizophrenia.</article-title>
+          <source>Br J Psychiatry</source>
+          <year>2000</year>
+          <volume>176</volume>
+          <fpage>249</fpage>
+          <lpage>252</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b24">
+        <label>24</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Altman</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Goodman</surname>
+              <given-names>SN</given-names>
+            </name>
+          </person-group>
+          <article-title>Transfer of technology from statistical journals to the biomedical literature. Past trends and future predictions.</article-title>
+          <source>JAMA</source>
+          <year>1994</year>
+          <volume>272</volume>
+          <fpage>129</fpage>
+          <lpage>132</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b25">
+        <label>25</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Chan</surname>
+              <given-names>AW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hrobjartsson</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Haahr</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gotzsche</surname>
+              <given-names>PC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Altman</surname>
+              <given-names>DG</given-names>
+            </name>
+          </person-group>
+          <article-title>Empirical evidence for selective reporting of outcomes in randomized trials: Comparison of protocols to published articles.</article-title>
+          <source>JAMA</source>
+          <year>2004</year>
+          <volume>291</volume>
+          <fpage>2457</fpage>
+          <lpage>2465</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b26">
+        <label>26</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Krimsky</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rothenberg</surname>
+              <given-names>LS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Stott</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kyle</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Scientific journals and their authors' financial interests: A pilot study.</article-title>
+          <source>Psychother Psychosom</source>
+          <year>1998</year>
+          <volume>67</volume>
+          <fpage>194</fpage>
+          <lpage>201</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b27">
+        <label>27</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Papanikolaou</surname>
+              <given-names>GN</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Baltogianni</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Contopoulos-Ioannidis</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Haidich</surname>
+              <given-names>AB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Giannakakis</surname>
+              <given-names>IA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Reporting of conflicts of interest in guidelines of preventive and therapeutic interventions.</article-title>
+          <source>BMC Med Res Methodol</source>
+          <year>2001</year>
+          <volume>1</volume>
+          <fpage>3</fpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b28">
+        <label>28</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Antman</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lau</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kupelnick</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mosteller</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Chalmers</surname>
+              <given-names>TC</given-names>
+            </name>
+          </person-group>
+          <article-title>A comparison of results of meta-analyses of randomized control trials and recommendations of clinical experts. Treatments for myocardial infarction.</article-title>
+          <source>JAMA</source>
+          <year>1992</year>
+          <volume>268</volume>
+          <fpage>240</fpage>
+          <lpage>248</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b29">
+        <label>29</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Trikalinos</surname>
+              <given-names>TA</given-names>
+            </name>
+          </person-group>
+          <article-title>Early extreme contradictory estimates may appear in published research: The Proteus phenomenon in molecular genetics research and randomized trials.</article-title>
+          <source>J Clin Epidemiol</source>
+          <year>2005</year>
+          <volume>58</volume>
+          <fpage>543</fpage>
+          <lpage>549</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b30">
+        <label>30</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ntzani</surname>
+              <given-names>EE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <article-title>Predictive ability of DNA microarrays for cancer outcomes and correlates: An empirical assessment.</article-title>
+          <source>Lancet</source>
+          <year>2003</year>
+          <volume>362</volume>
+          <fpage>1439</fpage>
+          <lpage>1444</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b31">
+        <label>31</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ransohoff</surname>
+              <given-names>DF</given-names>
+            </name>
+          </person-group>
+          <article-title>Rules of evidence for cancer molecular-marker discovery and validation.</article-title>
+          <source>Nat Rev Cancer</source>
+          <year>2004</year>
+          <volume>4</volume>
+          <fpage>309</fpage>
+          <lpage>314</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b32">
+        <label>32</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Lindley</surname>
+              <given-names>DV</given-names>
+            </name>
+          </person-group>
+          <article-title>A statistical paradox.</article-title>
+          <source>Biometrika</source>
+          <year>1957</year>
+          <volume>44</volume>
+          <fpage>187</fpage>
+          <lpage>192</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b33">
+        <label>33</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Bartlett</surname>
+              <given-names>MS</given-names>
+            </name>
+          </person-group>
+          <article-title>A comment on D.V. Lindley's statistical paradox.</article-title>
+          <source>Biometrika</source>
+          <year>1957</year>
+          <volume>44</volume>
+          <fpage>533</fpage>
+          <lpage>534</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b34">
+        <label>34</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Senn</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Two cheers for P-values.</article-title>
+          <source>J Epidemiol Biostat</source>
+          <year>2001</year>
+          <volume>6</volume>
+          <fpage>193</fpage>
+          <lpage>204</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b35">
+        <label>35</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>De Angelis</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Drazen</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Frizelle</surname>
+              <given-names>FA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Haug</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Hoey</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Clinical trial registration: A statement from the International Committee of Medical Journal Editors.</article-title>
+          <source>N Engl J Med</source>
+          <year>2004</year>
+          <volume>351</volume>
+          <fpage>1250</fpage>
+          <lpage>1251</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b36">
+        <label>36</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names>JPA</given-names>
+            </name>
+          </person-group>
+          <article-title>Contradicted and initially stronger effects in highly cited clinical research.</article-title>
+          <source>JAMA</source>
+          <year>2005</year>
+          <volume>294</volume>
+          <fpage>218</fpage>
+          <lpage>228</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pmed-0020124-b37">
+        <label>37</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Hsueh</surname>
+              <given-names>HM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Chen</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kodell</surname>
+              <given-names>RL</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparison of methods for estimating the number of true null hypotheses in multiplicity testing.</article-title>
+          <source>J Biopharm Stat</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>675</fpage>
+          <lpage>689</lpage>
+        </nlm-citation>
+      </ref>
+    </ref-list>
+    <glossary>
+      <title>Abbreviation</title>
+      <def-list>
+        <def-item>
+          <term>PPV</term>
+          <def>
+            <p>positive predictive value</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    
+  </back>
+</article>

@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="publisher-id">plos</journal-id>
+      <journal-id journal-id-type="nlm-ta">PLoS Genet</journal-id>
+      <journal-id journal-id-type="pmc">plosgen</journal-id>
+      <journal-title-group>
+        <journal-title>PLoS Genetics</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1553-7390</issn>
+      <issn pub-type="epub">1553-7404</issn>
+      <publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="publisher-id">PGENETICS-D-12-02218</article-id>
+      <article-id pub-id-type="doi">10.1371/journal.pgen.1003316</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline-v2">
+          <subject>Biology</subject>
+          <subj-group>
+            <subject>Genetics</subject>
+            <subj-group>
+              <subject>Population genetics</subject>
+              <subj-group>
+                <subject>Effective population size</subject>
+                <subject>Gene flow</subject>
+                <subject>Gene pool</subject>
+                <subject>Genetic drift</subject>
+                <subject>Haplotypes</subject>
+              </subj-group>
+            </subj-group>
+          </subj-group>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Genetics and Genomics</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Genome-Wide Diversity in the Levant Reveals Recent Structuring by Culture</article-title>
+        <alt-title alt-title-type="running-head">Genome-Wide Structure of the Levantines</alt-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Haber</surname>
+            <given-names>Marc</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Gauguier</surname>
+            <given-names>Dominique</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">
+            <sup>3</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff4">
+            <sup>4</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Youhanna</surname>
+            <given-names>Sonia</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Patterson</surname>
+            <given-names>Nick</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Moorjani</surname>
+            <given-names>Priya</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Botigué</surname>
+            <given-names>Laura R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Platt</surname>
+            <given-names>Daniel E.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff7">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Matisoo-Smith</surname>
+            <given-names>Elizabeth</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff8">
+            <sup>8</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Soria-Hernanz</surname>
+            <given-names>David F.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff9">
+            <sup>9</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Wells</surname>
+            <given-names>R. Spencer</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff9">
+            <sup>9</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Bertranpetit</surname>
+            <given-names>Jaume</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Tyler-Smith</surname>
+            <given-names>Chris</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff10">
+            <sup>10</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Comas</surname>
+            <given-names>David</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Zalloua</surname>
+            <given-names>Pierre A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">
+            <sup>2</sup>
+          </xref>
+          <xref ref-type="aff" rid="aff11">
+            <sup>11</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1">
+        <label>1</label>
+        <addr-line>Institut de Biologia Evolutiva (CSIC–UPF), Departament de Ciències de la Salut i de la Vida, Universitat Pompeu Fabra, Barcelona, Spain</addr-line>
+      </aff>
+      <aff id="aff2">
+        <label>2</label>
+        <addr-line>The Lebanese American University, Chouran, Beirut, Lebanon</addr-line>
+      </aff>
+      <aff id="aff3">
+        <label>3</label>
+        <addr-line>The Wellcome Trust Centre for Human Genetics, University of Oxford, Oxford, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff4">
+        <label>4</label>
+        <addr-line>INSERM UMRS872, Centre de Recherche des Cordeliers, Paris, France</addr-line>
+      </aff>
+      <aff id="aff5">
+        <label>5</label>
+        <addr-line>Broad Institute of Harvard and MIT, Cambridge, Massachusetts, United States of America</addr-line>
+      </aff>
+      <aff id="aff6">
+        <label>6</label>
+        <addr-line>Department of Genetics, Harvard Medical School, Boston, Massachusetts, United States of America</addr-line>
+      </aff>
+      <aff id="aff7">
+        <label>7</label>
+        <addr-line>Bioinformatics and Pattern Discovery, IBM T. J. Watson Research Centre, Yorktown Heights, New York, United States of America</addr-line>
+      </aff>
+      <aff id="aff8">
+        <label>8</label>
+        <addr-line>Allan Wilson Centre for Molecular Ecology and Evolution and Department of Anatomy, University of Otago, Dunedin, New Zealand</addr-line>
+      </aff>
+      <aff id="aff9">
+        <label>9</label>
+        <addr-line>The Genographic Project, National Geographic Society, Washington, D.C., United States of America</addr-line>
+      </aff>
+      <aff id="aff10">
+        <label>10</label>
+        <addr-line>The Wellcome Trust Sanger Institute, Wellcome Trust Genome Campus, Hinxton, United Kingdom</addr-line>
+      </aff>
+      <aff id="aff11">
+        <label>11</label>
+        <addr-line>Harvard School of Public Health, Boston, Massachusetts, United States of America</addr-line>
+      </aff>
+      <contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Williams</surname>
+            <given-names>Scott M.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group>
+      <aff id="edit1">
+        <addr-line>Dartmouth College, United States of America</addr-line>
+      </aff>
+      <author-notes>
+        <corresp id="cor1">* E-mail: <email xlink:type="simple">pierre.zalloua@lau.edu.lb</email></corresp>
+        <fn fn-type="conflict">
+          <p>DEP is an employee of IBM. There are no patents or products in development or marketed products to declare. This does not alter the author's adherence to all the PLOS Genetics policies on sharing data and materials. All other authors have declared that no competing interests exist.</p>
+        </fn>
+        <fn fn-type="con">
+          <p>Conceived and designed the experiments: MH DC PAZ. Performed the experiments: MH PM. Analyzed the data: MH NP PM DFS-H CT-S DC PAZ. Contributed reagents/materials/analysis tools: DG SY LRB DEP EM-S RSW JB. Wrote the paper: MH DC PAZ.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="collection">
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>28</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>9</volume>
+      <issue>2</issue>
+      <elocation-id>e1003316</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>2</day>
+          <month>9</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>20</day>
+          <month>12</month>
+          <year>2012</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-year>2013</copyright-year>
+        <copyright-holder>Haber et al</copyright-holder>
+        <license xlink:type="simple">
+          <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>The Levant is a region in the Near East with an impressive record of continuous human existence and major cultural developments since the Paleolithic period. Genetic and archeological studies present solid evidence placing the Middle East and the Arabian Peninsula as the first stepping-stone outside Africa. There is, however, little understanding of demographic changes in the Middle East, particularly the Levant, after the first Out-of-Africa expansion and how the Levantine peoples relate genetically to each other and to their neighbors. In this study we analyze more than 500,000 genome-wide SNPs in 1,341 new samples from the Levant and compare them to samples from 48 populations worldwide. Our results show recent genetic stratifications in the Levant are driven by the religious affiliations of the populations within the region. Cultural changes within the last two millennia appear to have facilitated/maintained admixture between culturally similar populations from the Levant, Arabian Peninsula, and Africa. The same cultural changes seem to have resulted in genetic isolation of other groups by limiting admixture with culturally different neighboring populations. Consequently, Levant populations today fall into two main groups: one sharing more genetic characteristics with modern-day Europeans and Central Asians, and the other with closer genetic affinities to other Middle Easterners and Africans. Finally, we identify a putative Levantine ancestral component that diverged from other Middle Easterners ∼23,700–15,500 years ago during the last glacial period, and diverged from Europeans ∼15,900–9,100 years ago between the last glacial warming and the start of the Neolithic.</p>
+      </abstract>
+      <abstract abstract-type="summary">
+        <title>Author Summary</title>
+        <p>Population stratification caused by nonrandom mating between groups of the same species is often due to geographical distances leading to physical separation followed by genetic drift of allele frequencies in each group. In humans, population structures are also often driven by geographical barriers or distances; however, humans might also be structured by abstract factors such as culture, a consequence of their reasoning and self-awareness. Religion in particular, is one of the unusual conceptual factors that can drive human population structures. This study explores the Levant, a region flanked by the Middle East and Europe, where individual and population relationships are still strongly influenced by religion. We show that religious affiliation had a strong impact on the genomes of the Levantines. In particular, conversion of the region's populations to Islam appears to have introduced major rearrangements in populations' relations through admixture with culturally similar but geographically remote populations, leading to genetic similarities between remarkably distant populations like Jordanians, Moroccans, and Yemenis. Conversely, other populations, like Christians and Druze, became genetically isolated in the new cultural environment. We reconstructed the genetic structure of the Levantines and found that a pre-Islamic expansion Levant was more genetically similar to Europeans than to Middle Easterners.</p>
+      </abstract>
+      <funding-group>
+        <funding-statement>This study was partly supported by the Lebanese American University and the National Geographic Society (The Genographic Project). CT-S was supported by grant number 098051 from The Wellcome Trust. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement>
+      </funding-group>
+      <counts>
+        <page-count count="8"/>
+      </counts>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>The Levant is a geographical area in the eastern Mediterranean region bounded by Anatolia, Egypt, and the Arabian Desert. It includes Lebanon, Syria, Jordan, Israel, Palestine, and often Cyprus and historical Armenia. The region has been central to human cultural development, embracing the earliest civilizations, agricultural communities, and the rise of the first urban cities. The genetic diversity based on uniparental markers (i.e. Y-chromosome and mtDNA) of the Levantine populations shows a strong correlation with geography <xref ref-type="bibr" rid="pgen.1003316-ElSibai1">[1]</xref> and religion <xref ref-type="bibr" rid="pgen.1003316-Hammer1">[2]</xref>–<xref ref-type="bibr" rid="pgen.1003316-Behar1">[4]</xref>. It has been suggested that the Islamic expansion from the Arabian Peninsula beginning in the 7th century CE introduced lineages typical of this Peninsula into those who subsequently became Lebanese Muslims, whereas the Crusader activity in the 11<sup>th</sup>–13<sup>th</sup> centuries CE introduced western European lineages into Lebanese Christians <xref ref-type="bibr" rid="pgen.1003316-Zalloua1">[5]</xref>. This recent differential penetration of exogenous Y-chromosome lineages into the Lebanese has probably been maintained by limited admixture between the religious groups, resulting in population stratifications in the present-day populations. However, it is not yet known if those structures are genome-wide and if they extend beyond Lebanese borders. Genome-wide surveys in the Levant are limited and most of our knowledge comes from studies assessing the relationship of Diaspora Jewish groups to a Levantine/Middle Eastern origin <xref ref-type="bibr" rid="pgen.1003316-Atzmon1">[6]</xref>, <xref ref-type="bibr" rid="pgen.1003316-Behar2">[7]</xref>. These studies show that the Jews form a distinctive cluster in the Middle East, and it is not known whether the factors driving this structure would also involve other groups in the Levant. For example, would the Druze from Mount Lebanon have the same genome-wide diversity as the Druze from Mount Carmel, and would the predominantly Muslim populations in the Levant from Syria, Palestine, and Jordan have more genetic similarities to the populations of the Arabian Peninsula (Saudis, Yemenis) than would other non Muslims Levantines have? A recent study by Moorjani et al. <xref ref-type="bibr" rid="pgen.1003316-Moorjani1">[8]</xref>, estimated that Jewish admixture with African genes ended much earlier (∼75 generations ago) than other Levantines (Muslims) (∼32 generations ago). However, it is not known if this different admixture history is the result of out-migration from the region and the discontinued gene flow from neighboring populations or if it is a result of cultural isolation in a predominantly Christian (∼100–650 CE) and later Muslim (∼650 CE-present) environment. Would today's Christians from the Levant also show older dates for cessation of African admixture than other Levantines, reflecting cultural/genetic isolation from their surrounding neighbors? By exploring the genetic isolation of populations like the Christians and Druze, it would then be possible to assess the pre-Islamic genetic structure of the Levantines and accurately construct the genetic relationships with neighboring populations.</p>
+      <p>In this study we analyze newly-generated genome-wide data from Lebanon in addition to individuals from 48 published global populations <xref ref-type="bibr" rid="pgen.1003316-Behar2">[7]</xref>, <xref ref-type="bibr" rid="pgen.1003316-Li1">[9]</xref>. We aim to assess the genome-wide genetic relationships of the Levantines and to resolve previous uncertainties about population structure in the Levant region. We pay particular attention to cultural influences on genetic structure, and explore the consequences of more than 2,000 years of cultural differentiation on the genetic composition of modern Levantines.</p>
+    </sec>
+    <sec id="s2">
+      <title>Results/Discussion</title>
+      <sec id="s2a">
+        <title>Genome-wide structure of the Lebanese</title>
+        <p>A multidimensional scaling (MDS) plot based on the identity-by-state (IBS) matrix shows strong stratification in Lebanon by religion, with separate clusters for Christians, Muslims, and Druze, irrespective of their geographic origin (<xref ref-type="fig" rid="pgen-1003316-g001">Figure 1</xref>). The results suggest endogamous practices among the religious groups of Lebanon within a small geographical area not exceeding 10,452 km<sup>2</sup> (half the size of the state of New Jersey or one third the size of Belgium). Christianity in Lebanon dates back to the first century CE, whereas Islam was brought to the Levant through the Islamic expansions in 635 CE. In 986 CE, the Druze faith developed as a movement within Islam, and from 1030 AD, a person could only be Druze if born Druze. This correlation of genetic structure within Lebanon with cultural traits was previously described by Haber et al. <xref ref-type="bibr" rid="pgen.1003316-Haber1">[3]</xref> based on the religious structuring of Y-chromosomal variation within Lebanon, but here we see it is genome-wide. In order to assess the proportion of putative ancestral components in the Lebanese, an unsupervised clustering method (ADMIXTURE) <xref ref-type="bibr" rid="pgen.1003316-Alexander1">[10]</xref> was applied to the Lebanese dataset (<xref ref-type="supplementary-material" rid="pgen.1003316.s001">Figure S1A</xref>). At <italic>K</italic> = 2, which showed the lowest cross-validation error (<xref ref-type="supplementary-material" rid="pgen.1003316.s001">Figure S1B</xref>), Christians present one major component (∼82% on average per individual), which is also found in Druze and in lower frequencies in Muslims; in contrast, the second component is almost exclusive to Muslims with a lower representation in Druze. At <italic>K</italic> = 3 and <italic>K</italic> = 4, new components most abundant in Lebanese Muslims are shown, probably reflecting recent admixture after the split from the other Lebanese groups.</p>
+        <fig id="pgen-1003316-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pgen.1003316.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>Multidimensional scaling of &gt;240K SNPs in 1,341 Lebanese samples showing the first four dimensions.</title>
+            <p>The SNPs were pruned from &gt;500,000 SNPs excluding r<sup>2</sup>&gt;0.4. The samples were classified by their religion or region of origin.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pgen.1003316.g001" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2b">
+        <title>Genome-wide structure of the Levantines</title>
+        <p>In order to assess the population structure of Levantine populations more generally, an MDS (<xref ref-type="fig" rid="pgen-1003316-g002">Figure 2</xref>) and a normalized principle component analysis (PCA) (<xref ref-type="supplementary-material" rid="pgen.1003316.s002">Figure S2</xref>) plots with 48 additional Old World populations (<xref ref-type="supplementary-material" rid="pgen.1003316.s007">Table S1</xref>) were built. Only 25 randomly selected samples from each Lebanese group were used in order to avoid population size biases (<xref ref-type="supplementary-material" rid="pgen.1003316.s003">Figure S3</xref>). The plots reveal a Levantine structure not reported previously: Lebanese Christians and all Druze cluster together, and Lebanese Muslims are extended towards Syrians, Palestinians, and Jordanians, which are close to Saudis and Bedouins. Ashkenazi Jews are drawn towards the Caucasus and Eastern Europe, reflecting historical admixture events with Europeans, while Sephardi Jews cluster tightly with the Levantine groups. These results are consistent with previous studies reporting higher European genome-wide admixture in Ashkenazi Jews compared with other Jews <xref ref-type="bibr" rid="pgen.1003316-Bray1">[11]</xref> and higher Y-chromosomal gene flow to Lebanese Muslims from the Arabian Peninsula compared with other Lebanese <xref ref-type="bibr" rid="pgen.1003316-Zalloua1">[5]</xref>.</p>
+        <fig id="pgen-1003316-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pgen.1003316.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>Multidimensional scaling of &gt;240K SNPs showing the top two dimensions.</title>
+            <p>Main plot shows global diversity using 50 populations. Inset shows Levantine populations in their regional and religion context. The Levant region includes Lebanon, Syria, Jordan, Israel, Palestine, and often Cyprus and historical Armenia. The Levantine core cluster is shaded in pink.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pgen.1003316.g002" position="float" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>Inferences of population relations from haplotypes</title>
+        <p>The previous analyses are based on linkage disequilibrium (LD) pruned data (r<sup>2</sup>&lt;0.4) since LD can bias cluster analysis. However, identification of haplotypes shared between groups is a valuable tool to infer population history events <xref ref-type="bibr" rid="pgen.1003316-Conrad1">[12]</xref>–<xref ref-type="bibr" rid="pgen.1003316-Gattepaille1">[15]</xref>. Thus, we phased our data and generated a coancestry matrix using ChromoPainter <xref ref-type="bibr" rid="pgen.1003316-Lawson1">[16]</xref> which reconstruct the haplotype of every individual using the haplotypes of each of the other individuals as possible donors. ChromoPainter computes a similarity measure which is the number of haplotype “chunks” used to reconstruct the recipient individual from each donor individual. We then used fineSTRUCTURE <xref ref-type="bibr" rid="pgen.1003316-Lawson1">[16]</xref> which employ model-based Bayesian clustering to construct a tree that infer population relationships and similarities using ChromoPainter's coancestry matrix. The population tree (<xref ref-type="fig" rid="pgen-1003316-g003">Figure 3A</xref>) splits Levantine populations in two branches: one leading to Europeans and Central Asians that includes Lebanese, Armenians, Cypriots, Druze and Jews, as well as Turks, Iranians and Caucasian populations; and a second branch composed of Palestinians, Jordanians, Syrians, as well as North Africans, Ethiopians, Saudis, and Bedouins. The tree shows a correlation between religion and the population structures in the Levant: all Jews (Sephardi and Ashkenazi) cluster in one branch; Druze from Mount Lebanon and Druze from Mount Carmel are depicted on a private branch; and Lebanese Christians form a private branch with the Christian populations of Armenia and Cyprus placing the Lebanese Muslims as an outer group. The predominantly Muslim populations of Syrians, Palestinians and Jordanians cluster on branches with other Muslim populations as distant as Morocco and Yemen. It should be noted here that the results depend significantly on populations included in the analysis as well as recent admixture events, and so should be treated as an approximate guide to similarity, rather than a full population history.</p>
+        <fig id="pgen-1003316-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pgen.1003316.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>Population relationships from genome-wide haplotypes.</title>
+            <p>A) Each tip of the tree corresponds to an individual; numbers of individuals are shown next to their population name at the tip of the branches. Numbers on branches show partition posterior probability. The Levantine populations' tips are highlighted in pink. B) Raw coancestry matrix shows relationships between the Levantines and the world populations. Intensity of the colors reflects the number of haplotype chunks donated to the Levantines. The vertical line is a visual aid to reflect the Levantine split observed in the tree. Horizontal lines distinguish the major geographic regions. C) Principal component analysis using the world coancestry matrix, figure is magnified on West Asia.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pgen.1003316.g003" position="float" xlink:type="simple"/>
+        </fig>
+        <p>ChromoPainter's coancestry matrix (<xref ref-type="fig" rid="pgen-1003316-g003">Figure 3B</xref>, <xref ref-type="supplementary-material" rid="pgen.1003316.s004">Figure S4</xref>) shows the haplotype chunks donated from the world populations to the Levantines and shows that Jordanians, Palestinians, and Syrians receive more chunks from sub-Saharan Africans and from Middle Easterners compared with other Levantines. We explored the sub-Saharan/Middle Eastern gene flow to the Levantines further by employing a previously developed method (ROLLOFF) <xref ref-type="bibr" rid="pgen.1003316-Moorjani1">[8]</xref> that estimates the time since admixture with sub-Saharan African genes using the rate of exponential decline of admixture LD. Previous simulations <xref ref-type="bibr" rid="pgen.1003316-Moorjani1">[8]</xref> showed that bias from ROLLOFF estimates is removed with increased sample size, so we used the entire Lebanese religious subgroups after carrying out a rigorous outlier removal based on PCA <xref ref-type="bibr" rid="pgen.1003316-Patterson1">[17]</xref> and keeping the main core clusters (336 Christians, 85 Druze, 747 Muslims) (<xref ref-type="supplementary-material" rid="pgen.1003316.s010">Text S1</xref>). We found that Christians have the oldest admixture dates (2,375-2,025 years ago, y.a) with bounds coinciding with the decline of Phoenicia and the control of the region by the Hellenistic rulers. The time since the observed Druze admixture (1,275-1,025 y.a) closely precedes the development of the Druze faith and their divergence from other Muslims. The Muslims appear to have maintained contact with populations carrying sub-Saharan genes until 675-625 y.a, which overlaps with the rise of the Ottoman Empire and formation of a semi-autonomous state in Lebanon. Historical events coinciding with our observed admixture dates are some of the examples of population processes and demographic events that were occurring during this period in the Levant. These historical events, in addition to cultural adoptions and transitions, may have contributed to the differences among the religious groups through facilitating or restricting contact with other Middle Easterners carrying the sub-Saharan genes. It should also be noted here that ROLLOFF estimates dates assuming instantaneous mixture, without distinguishing between the patterns expected for instantaneous admixture and continuous gene flow. Previous simulations <xref ref-type="bibr" rid="pgen.1003316-Moorjani1">[8]</xref> show that for continuous gene flow, the dates from ROLLOFF reflect the average of mixture dates over a range of times, hence the date should be interpreted only as an average number.</p>
+        <p>The principal component plot performed with the coancestry matrix (<xref ref-type="fig" rid="pgen-1003316-g003">Figure 3C</xref>, <xref ref-type="supplementary-material" rid="pgen.1003316.s005">Figure S5</xref>) is similar to the pattern seen in West Asia with the MDS and PCA analysis based on LD-pruned SNPs.</p>
+      </sec>
+      <sec id="s2d">
+        <title>Admixture analysis and ancestral population divergence</title>
+        <p>In order to identify and quantify the ancestral components in the Levantines, an ADMIXTURE analysis <xref ref-type="bibr" rid="pgen.1003316-Alexander1">[10]</xref> was performed with Old World samples (<xref ref-type="supplementary-material" rid="pgen.1003316.s006">Figure S6A</xref>).</p>
+        <p>ADMIXTURE requires the assignment of a specific population number (K). We chose to assign a <italic>K</italic> = 10 (<xref ref-type="supplementary-material" rid="pgen.1003316.s006">Figure S6</xref>, <xref ref-type="supplementary-material" rid="pgen.1003316.s009">Table S3</xref>) since it captures many of the population structures identified by fineSTRUCTURE, particularly the formation of separate ancestral components for Levantines and Middle Easterners. ADMIXTURE's cross-validation (<xref ref-type="supplementary-material" rid="pgen.1003316.s006">Figure S6B</xref>) shows that <italic>K</italic> = 8 has the lowest cross-validation (CV) error, however the CV effectiveness in predicting the “truth” <italic>K</italic> can be challenged when considering closely related populations <xref ref-type="bibr" rid="pgen.1003316-Alexander2">[18]</xref>–<xref ref-type="bibr" rid="pgen.1003316-Lawson2">[20]</xref>. Therefore, in this analysis we use the ChromoPainter/fineSTRUCTURE pipeline to identify fine populations subdivisions without the drawback of specifying a <italic>K</italic> value <xref ref-type="bibr" rid="pgen.1003316-Lawson1">[16]</xref>, <xref ref-type="bibr" rid="pgen.1003316-Lawson2">[20]</xref>, and use ADMIXTURE to estimate the genetic distances between the ancestral components independent of subsequent admixture events.</p>
+        <p>ADMIXTURE identifies at <italic>K</italic> = 10 an ancestral component (light green) with a geographically restricted distribution representing ∼50% of the individual component in Ethiopians, Yemenis, Saudis, and Bedouins, decreasing towards the Levant, with higher frequency (∼25%) in Syrians, Jordanians, and Palestinians, compared with other Levantines (4%–20%). The geographical distribution pattern of this component (<xref ref-type="fig" rid="pgen-1003316-g004">Figure 4A, 4B</xref>) correlates with the pattern of the Islamic expansion, but its presence in Lebanese Christians, Sephardi and Ashkenazi Jews, Cypriots and Armenians might suggest that its spread to the Levant could also represent an earlier event. Besides this component, the most frequent ancestral component (shown in dark blue) in the Levantines (42–68%) is also present, at lower frequencies, in Europe and Central Asia (<xref ref-type="fig" rid="pgen-1003316-g004">Figure 4A, 4C</xref>). We found that this Levantine component is closer to the European component (dark green) (<italic>F<sub>ST</sub> = </italic>0.035) than to the Arabian Peninsula/East Africa component (light green) (<italic>F<sub>ST</sub></italic> = 0.046). Our estimates show that the Levantine and the Arabian Peninsula/East African components diverged ∼23,700-15,500 y.a., while the Levantine and European components diverged ∼15,900-9,100 y.a. We note here that our divergence time estimates are based on the assumption that “effective population sizes” have not significantly changed overtime. We make this assumption, and obtain divergence times from genetic data which appear to coincide well with archeology.</p>
+        <fig id="pgen-1003316-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pgen.1003316.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>Comparisons of the Levantine and Middle Eastern modal components.</title>
+            <p>A) ADMIXTURE analysis based on 10 constructed ancestral components, with only the Levantine and Middle Eastern components highlighted. B) Frequency of the Middle Eastern component in world populations. C) Frequency of the Levantine component in world populations. Intensity of the colors reflects the frequency of a component in the plotted populations. Maps were produced using a weighted average interpolating algorithm, and therefore should be used as a guide rather than a precise representation of the frequency distribution.</p>
+          </caption>
+          <graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pgen.1003316.g004" position="float" xlink:type="simple"/>
+        </fig>
+        <p>The estimated time of divergence between the Levantine component and other Middle Easterners overlaps with evidence from archeological findings of a major cultural development in the Levant during the early Epipaleolithic period (23,000-14,500 y.a) <xref ref-type="bibr" rid="pgen.1003316-Maher1">[21]</xref>. The period of climatic warming after the Last Glacial Maximum (∼26,000-19,900 y.a) in the Levant was characterized by the spread of the microlithic technologies and the appearance of highly mobile populations between the Sinai Peninsula and southern Turkey. This Early Epipaleolithic phase formed a cultural continuity with the last Epipaleolithic phase, immediately preceding the appearance of the Natufian culture and the development of sedentism <xref ref-type="bibr" rid="pgen.1003316-BarYosef1">[22]</xref>. Our time estimate of divergence between the Levantine and European components (∼15,900-9,100 y.a) overlaps with the transition to agriculture in the Levant ∼11,000 y.a but is also slightly earlier than the proposed expansion to Europe starting at ∼9,000 y.a. <xref ref-type="bibr" rid="pgen.1003316-Balaresque1">[23]</xref>–<xref ref-type="bibr" rid="pgen.1003316-Dupanloup1">[25]</xref>. In agreement with this, a recent study of complete mtDNA sequences also proposed earlier expansion dates (19,000-12,000 y.a) of certain female lineages from the Near East to Europe <xref ref-type="bibr" rid="pgen.1003316-Pala1">[26]</xref>. These results suggest that population migration to Europe from the Near East could have started after the LGM warming and continued until the Neolithic. In addition, these results show that the modern European genetic component is more recent than would be expected from a component that developed from the initial peopling of Europe in the Upper Paleolithic ∼40,000 y.a.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Conclusions</title>
+        <p>From the first ventures out of Africa, to admixture with archaic humans, to the earliest Neolithic transition, the developments in the Levant have marked the history of modern humans. However, the Levant had been underrepresented in genome-wide studies and little is known about its population structure. In this study, we show a multilayered history of the Levantines with multiple components that might be traced to different historical population events. We propose that the Levant and Middle Eastern modal components diverged after the LGM during the early Epipaleolithic period, which was characterized by behavioral variability and innovations accompanied by major life-style and technological changes in the Levant <xref ref-type="bibr" rid="pgen.1003316-Maher1">[21]</xref>, <xref ref-type="bibr" rid="pgen.1003316-Holt1">[27]</xref>, <xref ref-type="bibr" rid="pgen.1003316-Maher2">[28]</xref>. We also show that the Levantines and Europeans diverged between the last glacial warming and the start of the Neolithic age.</p>
+        <p>Finally, we show that although population movements and expansions during the Epipaleolithic marked the emergence of a Levantine component and made the Levantines genetically similar, recent cultural developments, such as the founding and spread of major world religions, have had a strong impact on population stratifications in the Levant.</p>
+        <p>Populations like the Levantines, where geography is not the only major correlate of genetic variation, are unusual. In addition to their importance in understanding human evolution and history, these unusual stratifications can be hard to control in association studies for mapping complex disease susceptibilities and therefore require particular attention.</p>
+      </sec>
+    </sec>
+    <sec id="s3" sec-type="materials|methods">
+      <title>Materials and Methods</title>
+      <sec id="s3a">
+        <title>Subjects, genotyping, and comparative datasets</title>
+        <p>Samples were collected from 1,341 Lebanese subjects with informed consent approved by the IRB of the Lebanese American University. Genotyping was performed on Illumina 610K or 660K bead arrays. PLINK <xref ref-type="bibr" rid="pgen.1003316-Purcell1">[29]</xref> was used for data management and quality control. Genotyping success rate was set to 99%, sex-linked and mitochondrial SNPs removed, keeping 505,859 SNPs. After LD pruning (excluding r2&gt;0.4) 244,919 SNPs remained. 75 Lebanese samples (<xref ref-type="supplementary-material" rid="pgen.1003316.s003">Figure S3</xref>, <xref ref-type="supplementary-material" rid="pgen.1003316.s007">Table S1</xref>) were selected through a stratified random sampling taking into consideration the distribution of the religious groups in Lebanon and merged with 994 samples from literature representing 48 populations (<xref ref-type="supplementary-material" rid="pgen.1003316.s008">Table S2</xref>). The selected Lebanese data set is available at: <ext-link ext-link-type="uri" xlink:href="http://bhusers.upf.edu/~mhaber/PLOS/" xlink:type="simple">bhusers.upf.edu/~mhaber/PLOS/</ext-link></p>
+      </sec>
+      <sec id="s3b">
+        <title>Population structure</title>
+        <sec id="s3b1">
+          <title>Multidimensional scaling and principle component analysis</title>
+          <p>The <italic>N x N</italic> matrix of the genome-wide IBS pairwise distances was constructed using PLINK on pruned SNPs. The MDS was performed in the R environment <xref ref-type="bibr" rid="pgen.1003316-R1">[30]</xref>.</p>
+          <p>PCA was performed using <italic>smartpca</italic>, part of the EIGENSOFT 3.0 package <xref ref-type="bibr" rid="pgen.1003316-Patterson1">[17]</xref>.</p>
+        </sec>
+        <sec id="s3b2">
+          <title>Inference of population relations from haplotypes</title>
+          <p>Samples (505,859 SNPs) were phased with SHAPEIT <xref ref-type="bibr" rid="pgen.1003316-Delaneau1">[31]</xref> using as a reference the HapMap3 genetic maps <xref ref-type="bibr" rid="pgen.1003316-Frazer1">[32]</xref>. A coancestry matrix was constructed using ChromoPainter <xref ref-type="bibr" rid="pgen.1003316-Lawson1">[16]</xref> with the default settings. FineSTRUCTURE <xref ref-type="bibr" rid="pgen.1003316-Lawson1">[16]</xref> was used to perform an MCMC iteration on the coancestry matrix generated by ChromoPainter using 10,000,000 burnin and runtime and 10,000 MCMC samples. A tree was built using fineSTRUCTURE which starts with the maximum a posteriori state by taking the MCMC iteration with the highest observed posterior likelihood. Starting from this initial partition, additional hill-climbing moves are then performed, successively merging and splitting populations, and identifying the merges that further improve the Posterior probability, generating a bifurcating tree of relationships amongst these populations.</p>
+        </sec>
+        <sec id="s3b3">
+          <title>Estimating time since admixture</title>
+          <p>ROLLOFF analysis <xref ref-type="bibr" rid="pgen.1003316-Moorjani1">[8]</xref> was performed to estimate the time since mixture with sub-Saharan African genes. The analysis was carried out using Georgians and Ethiopians as the reference populations and a generation time of 25 years. The choice of the reference populations is shown not to be critical (<xref ref-type="supplementary-material" rid="pgen.1003316.s010">Text S1</xref>) as the use of Sardinians and West Africans (Yoruba), as reference populations, produced qualitatively similar results.</p>
+        </sec>
+        <sec id="s3b4">
+          <title>Admixture analysis</title>
+          <p>The clustering algorithm ADMIXTURE <xref ref-type="bibr" rid="pgen.1003316-Alexander1">[10]</xref> was used on pruned SNPs and different number of ancestral populations were considered. The plots were visualized using R.</p>
+          <p><italic>F<sub>STs</sub></italic> were calculated using ADMIXTURE at <italic>K</italic> = 10. In order to map our <italic>F<sub>ST</sub></italic> estimates into population divergence dates some information about population demography is needed. Li et al. <xref ref-type="bibr" rid="pgen.1003316-Li1">[9]</xref> provide an estimate of “effective population size” for 53 human populations which can be interpreted as the mean time to a common ancestor for genetic material from 2 aligned chromosomes from the population. We use this information to estimate the divergence time between the ancestral components using the relationship <xref ref-type="bibr" rid="pgen.1003316-Holsinger1">[33]</xref> between <italic>F<sub>ST</sub></italic> and the effective population size <italic>Ne</italic> (using the range for Europeans (5,379–8,677) <xref ref-type="bibr" rid="pgen.1003316-Li1">[9]</xref> and Middle Easterners (7,006–9,505) <xref ref-type="bibr" rid="pgen.1003316-Li1">[9]</xref>, using 25 years generation time.</p>
+          <p>Contour maps showing the distribution of the ancestral components were generated using Surfer 8 (Golden Software) implementing the Kriging method.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="s4">
+      <title>Supporting Information</title>
+      <supplementary-material id="pgen.1003316.s001" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pgen.1003316.s001" position="float" xlink:type="simple">
+        <label>Figure S1</label>
+        <caption>
+          <p>Lebanon religion groups structure inferred by ADMIXTURE analysis of &gt;240K autosomal SNPs. A) Each horizontal line represents ancestry probabilities of an individual in the 2–4 constructed ancestral populations. B) Cross-validation plot for the Lebanese dataset.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pgen.1003316.s002" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pgen.1003316.s002" position="float" xlink:type="simple">
+        <label>Figure S2</label>
+        <caption>
+          <p>Principle component analysis of &gt;240K SNPs showing the top two components. A) Plot shows global diversity using 50 populations. B) Magnification of West Asia region showing the Levantine populations in their regional and religion context.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pgen.1003316.s003" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pgen.1003316.s003" position="float" xlink:type="simple">
+        <label>Figure S3</label>
+        <caption>
+          <p>Stratified random sampling of 75 Lebanese samples. A) 25 samples from each of the three main religion groups in Lebanon were randomly chosen from the 1,341 samples illustrated in <xref ref-type="fig" rid="pgen-1003316-g001">Figure 1</xref>. B) Map of Lebanon showing the distribution of the samples.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pgen.1003316.s004" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pgen.1003316.s004" position="float" xlink:type="simple">
+        <label>Figure S4</label>
+        <caption>
+          <p>Raw coancestry matrix shows relationships between the Levantines and the world populations. A) Intensity of the colors reflects the number of haplotype chunks donated to the Levantines. The vertical line is a visual aid to reflect the Levantine split observed in the tree. Horizontal lines distinguish the major geographic regions. B) coancestry matrix with an alternative color scale.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pgen.1003316.s005" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pgen.1003316.s005" position="float" xlink:type="simple">
+        <label>Figure S5</label>
+        <caption>
+          <p>Principle component analysis generated with fineSTRUCTURE using ChromoPainter's coancestry matrix showing the top two components. A) Plot shows global diversity using 50 populations. B) Magnification of West Asia region showing the Levantine populations in their regional and religion context.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pgen.1003316.s006" mimetype="image/tiff" xlink:href="info:doi/10.1371/journal.pgen.1003316.s006" position="float" xlink:type="simple">
+        <label>Figure S6</label>
+        <caption>
+          <p>World population structure inferred by ADMIXTURE analysis of &gt;240K autosomal SNPs. A) Each horizontal line represents ancestry probabilities of an individual in 2–10 constructed ancestral populations. Levantine population names are shown in blue. B) Cross-validation plot for the world dataset.</p>
+          <p>(TIF)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pgen.1003316.s007" mimetype="application/x-excel" xlink:href="info:doi/10.1371/journal.pgen.1003316.s007" position="float" xlink:type="simple">
+        <label>Table S1</label>
+        <caption>
+          <p>Location of the 75 Lebanese samples used in the comparative analyzes.</p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pgen.1003316.s008" mimetype="application/x-excel" xlink:href="info:doi/10.1371/journal.pgen.1003316.s008" position="float" xlink:type="simple">
+        <label>Table S2</label>
+        <caption>
+          <p>Populations selected for this study.</p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pgen.1003316.s009" mimetype="application/x-excel" xlink:href="info:doi/10.1371/journal.pgen.1003316.s009" position="float" xlink:type="simple">
+        <label>Table S3</label>
+        <caption>
+          <p>Ancestry probabilities of individuals considering 10 ancestral populations. Highlighted cells indicate individuals have &gt;60% of one component. Standard errors were estimated using 200 bootstrap replicates.</p>
+          <p>(XLS)</p>
+        </caption>
+      </supplementary-material>
+      <supplementary-material id="pgen.1003316.s010" mimetype="application/pdf" xlink:href="info:doi/10.1371/journal.pgen.1003316.s010" position="float" xlink:type="simple">
+        <label>Text S1</label>
+        <caption>
+          <p>Description of the ROLLOFF analysis.</p>
+          <p>(PDF)</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank the sample donors for taking part in this study. We also thank Dr. Kamal Jaroudy and Mr. Said Kreidieh for their insightful comments on the history of the Levant.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pgen.1003316-ElSibai1">
+        <label>1</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>El-Sibai</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Platt</surname><given-names>DE</given-names></name>, <name name-style="western"><surname>Haber</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Xue</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Youhanna</surname><given-names>SC</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Geographical structure of the Y-chromosomal genetic landscape of the Levant: a coastal-inland contrast</article-title>. <source>Ann Hum Genet</source> <volume>73</volume>: <fpage>568</fpage>–<lpage>581</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Hammer1">
+        <label>2</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hammer</surname><given-names>MF</given-names></name>, <name name-style="western"><surname>Behar</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Karafet</surname><given-names>TM</given-names></name>, <name name-style="western"><surname>Mendez</surname><given-names>FL</given-names></name>, <name name-style="western"><surname>Hallmark</surname><given-names>B</given-names></name>, <etal>et al</etal>. (<year>2009</year>) <article-title>Extended Y chromosome haplotypes resolve multiple and unique lineages of the Jewish priesthood</article-title>. <source>Hum Genet</source> <volume>126</volume>: <fpage>707</fpage>–<lpage>717</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Haber1">
+        <label>3</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Haber</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Platt</surname><given-names>DE</given-names></name>, <name name-style="western"><surname>Badro</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Xue</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>El-Sibai</surname><given-names>M</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>Influences of history, geography, and religion on genetic structure: the Maronites in Lebanon</article-title>. <source>Eur J Hum Genet</source> <volume>19</volume>: <fpage>334</fpage>–<lpage>340</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Behar1">
+        <label>4</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Behar</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Metspalu</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Kivisild</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Achilli</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Hadid</surname><given-names>Y</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>The matrilineal ancestry of Ashkenazi Jewry: portrait of a recent founder event</article-title>. <source>Am J Hum Genet</source> <volume>78</volume>: <fpage>487</fpage>–<lpage>497</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Zalloua1">
+        <label>5</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zalloua</surname><given-names>PA</given-names></name>, <name name-style="western"><surname>Xue</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Khalife</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Makhoul</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Debiane</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Y-chromosomal diversity in Lebanon is structured by recent historical events</article-title>. <source>Am J Hum Genet</source> <volume>82</volume>: <fpage>873</fpage>–<lpage>882</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Atzmon1">
+        <label>6</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Atzmon</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Hao</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Pe'er</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Velez</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Pearlman</surname><given-names>A</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Abraham's children in the genome era: major Jewish diaspora populations comprise distinct genetic clusters with shared Middle Eastern Ancestry</article-title>. <source>Am J Hum Genet</source> <volume>86</volume>: <fpage>850</fpage>–<lpage>859</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Behar2">
+        <label>7</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Behar</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Yunusbayev</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Metspalu</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Metspalu</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Rosset</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>The genome-wide structure of the Jewish people</article-title>. <source>Nature</source> <volume>466</volume>: <fpage>238</fpage>–<lpage>242</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Moorjani1">
+        <label>8</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Moorjani</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Patterson</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Hirschhorn</surname><given-names>JN</given-names></name>, <name name-style="western"><surname>Keinan</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Hao</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2011</year>) <article-title>The history of African gene flow into Southern Europeans, Levantines, and Jews</article-title>. <source>PLoS Genet</source> <volume>7</volume>: <fpage>e1001373</fpage> </mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Li1">
+        <label>9</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Li</surname><given-names>JZ</given-names></name>, <name name-style="western"><surname>Absher</surname><given-names>DM</given-names></name>, <name name-style="western"><surname>Tang</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Southwick</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Casto</surname><given-names>AM</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Worldwide human relationships inferred from genome-wide patterns of variation</article-title>. <source>Science</source> <volume>319</volume>: <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1001373" xlink:type="simple">10.1371/journal.pgen.1001373</ext-link></comment><fpage>1100</fpage>–<lpage>1104</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Alexander1">
+        <label>10</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alexander</surname><given-names>DH</given-names></name>, <name name-style="western"><surname>Novembre</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Lange</surname><given-names>K</given-names></name> (<year>2009</year>) <article-title>Fast model-based estimation of ancestry in unrelated individuals</article-title>. <source>Genome Res</source> <volume>19</volume>: <fpage>1655</fpage>–<lpage>1664</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Bray1">
+        <label>11</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bray</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Mulle</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>Dodd</surname><given-names>AF</given-names></name>, <name name-style="western"><surname>Pulver</surname><given-names>AE</given-names></name>, <name name-style="western"><surname>Wooding</surname><given-names>S</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Signatures of founder effects, admixture, and selection in the Ashkenazi Jewish population</article-title>. <source>Proc Natl Acad Sci U S A</source> <volume>107</volume>: <fpage>16222</fpage>–<lpage>16227</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Conrad1">
+        <label>12</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Conrad</surname><given-names>DF</given-names></name>, <name name-style="western"><surname>Jakobsson</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Coop</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Wen</surname><given-names>X</given-names></name>, <name name-style="western"><surname>Wall</surname><given-names>JD</given-names></name>, <etal>et al</etal>. (<year>2006</year>) <article-title>A worldwide survey of haplotype variation and linkage disequilibrium in the human genome</article-title>. <source>Nat Genet</source> <volume>38</volume>: <fpage>1251</fpage>–<lpage>1260</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Hellenthal1">
+        <label>13</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hellenthal</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Auton</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Falush</surname><given-names>D</given-names></name> (<year>2008</year>) <article-title>Inferring human colonization history using a copying model</article-title>. <source>PLoS Genet</source> <volume>4</volume>: <fpage>e1000078</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1000078" xlink:type="simple">10.1371/journal.pgen.1000078</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Jakobsson1">
+        <label>14</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jakobsson</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Scholz</surname><given-names>SW</given-names></name>, <name name-style="western"><surname>Scheet</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Gibbs</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>VanLiere</surname><given-names>JM</given-names></name>, <etal>et al</etal>. (<year>2008</year>) <article-title>Genotype, haplotype and copy-number variation in worldwide human populations</article-title>. <source>Nature</source> <volume>451</volume>: <fpage>998</fpage>–<lpage>1003</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Gattepaille1">
+        <label>15</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gattepaille</surname><given-names>LM</given-names></name>, <name name-style="western"><surname>Jakobsson</surname><given-names>M</given-names></name> (<year>2012</year>) <article-title>Combining markers into haplotypes can improve population structure inference</article-title>. <source>Genetics</source> <volume>190</volume>: <fpage>159</fpage>–<lpage>174</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Lawson1">
+        <label>16</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lawson</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Hellenthal</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Myers</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Falush</surname><given-names>D</given-names></name> (<year>2012</year>) <article-title>Inference of population structure using dense haplotype data</article-title>. <source>PLoS Genet</source> <volume>8</volume>: <fpage>e1002453</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.1002453" xlink:type="simple">10.1371/journal.pgen.1002453</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Patterson1">
+        <label>17</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Patterson</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Price</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Reich</surname><given-names>D</given-names></name> (<year>2006</year>) <article-title>Population structure and eigenanalysis</article-title>. <source>PLoS Genet</source> <volume>2</volume>: <fpage>e190</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pgen.0020190" xlink:type="simple">10.1371/journal.pgen.0020190</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Alexander2">
+        <label>18</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Alexander</surname><given-names>DH</given-names></name>, <name name-style="western"><surname>Lange</surname><given-names>K</given-names></name> (<year>2011</year>) <article-title>Enhancements to the ADMIXTURE algorithm for individual ancestry estimation</article-title>. <source>BMC Bioinformatics</source> <volume>12</volume>: <fpage>246</fpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Bouaziz1">
+        <label>19</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bouaziz</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Paccard</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Guedj</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Ambroise</surname><given-names>C</given-names></name> (<year>2012</year>) <article-title>SHIPS: Spectral Hierarchical Clustering for the Inference of Population Structure in Genetic Studies</article-title>. <source>PLoS ONE</source> <volume>7</volume>: <fpage>e45685</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0045685" xlink:type="simple">10.1371/journal.pone.0045685</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Lawson2">
+        <label>20</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lawson</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Falush</surname><given-names>D</given-names></name> (<year>2012</year>) <article-title>Population identification using genetic data</article-title>. <source>Annu Rev Genomics Hum Genet</source> <volume>13</volume>: <fpage>337</fpage>–<lpage>361</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Maher1">
+        <label>21</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Maher</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Richter</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Stock</surname><given-names>JT</given-names></name> (<year>2012</year>) <article-title>The Pre-Natufian Epipaleolithic: Long-term Behavioral Trends in the Levant</article-title>. <source>Evol Anthropol</source> <volume>21</volume>: <fpage>69</fpage>–<lpage>81</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-BarYosef1">
+        <label>22</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bar-Yosef</surname><given-names>O</given-names></name> (<year>1998</year>) <article-title>The Natufian culture in the Levant, threshold to the origins of agriculture</article-title>. <source>Evolutionary Anthropology</source> <volume>6</volume>: <fpage>159</fpage>–<lpage>177</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Balaresque1">
+        <label>23</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Balaresque</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Bowden</surname><given-names>GR</given-names></name>, <name name-style="western"><surname>Adams</surname><given-names>SM</given-names></name>, <name name-style="western"><surname>Leung</surname><given-names>HY</given-names></name>, <name name-style="western"><surname>King</surname><given-names>TE</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>A predominantly neolithic origin for European paternal lineages</article-title>. <source>PLoS Biol</source> <volume>8</volume>: <fpage>e1000285</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pbio.1000285" xlink:type="simple">10.1371/journal.pbio.1000285</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Haak1">
+        <label>24</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Haak</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Balanovsky</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Sanchez</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Koshel</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Zaporozhchenko</surname><given-names>V</given-names></name>, <etal>et al</etal>. (<year>2010</year>) <article-title>Ancient DNA from European early neolithic farmers reveals their near eastern affinities</article-title>. <source>PLoS Biol</source> <volume>8</volume>: <fpage>e1000536</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pbio.1000536" xlink:type="simple">10.1371/journal.pbio.1000536</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Dupanloup1">
+        <label>25</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Dupanloup</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Bertorelle</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Chikhi</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Barbujani</surname><given-names>G</given-names></name> (<year>2004</year>) <article-title>Estimating the impact of prehistoric admixture on the genome of Europeans</article-title>. <source>Mol Biol Evol</source> <volume>21</volume>: <fpage>1361</fpage>–<lpage>1372</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Pala1">
+        <label>26</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pala</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Olivieri</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Achilli</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Accetturo</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Metspalu</surname><given-names>E</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Mitochondrial DNA signals of late glacial recolonization of Europe from near eastern refugia</article-title>. <source>Am J Hum Genet</source> <volume>90</volume>: <fpage>915</fpage>–<lpage>924</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Holt1">
+        <label>27</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Holt</surname><given-names>BM</given-names></name>, <name name-style="western"><surname>Formicola</surname><given-names>V</given-names></name> (<year>2008</year>) <article-title>Hunters of the Ice Age: The biology of Upper Paleolithic people</article-title>. <source>Am J Phys Anthropol</source> <supplement>Suppl 47</supplement>  <fpage>70</fpage>–<lpage>99</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Maher2">
+        <label>28</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Maher</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Richter</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Macdonald</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Jones</surname><given-names>MD</given-names></name>, <name name-style="western"><surname>Martin</surname><given-names>L</given-names></name>, <etal>et al</etal>. (<year>2012</year>) <article-title>Twenty thousand-year-old huts at a hunter-gatherer settlement in eastern Jordan</article-title>. <source>PLoS ONE</source> <volume>7</volume>: <fpage>e31447</fpage> <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0031447" xlink:type="simple">10.1371/journal.pone.0031447</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Purcell1">
+        <label>29</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Purcell</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Neale</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Todd-Brown</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Thomas</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Ferreira</surname><given-names>MA</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>PLINK: a tool set for whole-genome association and population-based linkage analyses</article-title>. <source>Am J Hum Genet</source> <volume>81</volume>: <fpage>559</fpage>–<lpage>575</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-R1">
+        <label>30</label>
+        <mixed-citation publication-type="other" xlink:type="simple">R Development Core Team (2011) R: A language and environment for statistical computing. R Foundation for Statistical Computing.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Delaneau1">
+        <label>31</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Delaneau</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Marchini</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Zagury</surname><given-names>JF</given-names></name> (<year>2012</year>) <article-title>A linear complexity phasing method for thousands of genomes</article-title>. <source>Nat Methods</source> <volume>9</volume>: <fpage>179</fpage>–<lpage>181</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Frazer1">
+        <label>32</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Frazer</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>Ballinger</surname><given-names>DG</given-names></name>, <name name-style="western"><surname>Cox</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Hinds</surname><given-names>DA</given-names></name>, <name name-style="western"><surname>Stuve</surname><given-names>LL</given-names></name>, <etal>et al</etal>. (<year>2007</year>) <article-title>A second generation human haplotype map of over 3.1 million SNPs</article-title>. <source>Nature</source> <volume>449</volume>: <fpage>851</fpage>–<lpage>861</lpage>.</mixed-citation>
+      </ref>
+      <ref id="pgen.1003316-Holsinger1">
+        <label>33</label>
+        <mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Holsinger</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Weir</surname><given-names>BS</given-names></name> (<year>2009</year>) <article-title>Genetics in geographically structured populations: defining, estimating and interpreting F(ST)</article-title>. <source>Nat Rev Genet</source> <volume>10</volume>: <fpage>639</fpage>–<lpage>650</lpage>.</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

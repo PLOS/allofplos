@@ -1,0 +1,3111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="EN">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher-id">plos</journal-id><journal-id journal-id-type="publisher">pbio</journal-id><journal-id journal-id-type="nlm-ta">PLoS Biol</journal-id><journal-id journal-id-type="pmc">plosbiol</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Biology</journal-title></journal-title-group><issn pub-type="ppub">1544-9173</issn><issn pub-type="epub">1545-7885</issn><publisher>
+        <publisher-name>Public Library of Science</publisher-name>
+        <publisher-loc>San Francisco, USA</publisher-loc>
+      </publisher></journal-meta>
+    <article-meta><article-id pub-id-type="doi">10.1371/journal.pbio.0040088</article-id><article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Research Article</subject>
+        </subj-group>
+        <subj-group subj-group-type="Discipline">
+          <subject>Computational Biology</subject>
+          <subject>Evolutionary Biology</subject>
+          <subject>Genetics and Genomics</subject>
+          <subject>Evolutionary Biology/Paleontology</subject>
+          <subject>Virology</subject>
+          <subject>Ecology</subject>
+          <subject>Mathematics/Statistics</subject>
+        </subj-group>
+        <subj-group subj-group-type="System Taxonomy">
+          <subject>Eubacteria</subject>
+          <subject>Yeast and Fungi</subject>
+          <subject>Plants</subject>
+          <subject>Animals</subject>
+          <subject>Primates</subject>
+        </subj-group>
+      </article-categories><title-group><article-title>Relaxed Phylogenetics and Dating with Confidence</article-title><alt-title alt-title-type="running-head">Relaxed Phylogenetics</alt-title></title-group><contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Drummond</surname>
+            <given-names>Alexei J</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="fn" rid="n2">
+            <sup>¤</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ho</surname>
+            <given-names>Simon Y. W</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Phillips</surname>
+            <given-names>Matthew J</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Rambaut</surname>
+            <given-names>Andrew</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">
+            <sup>1</sup>
+          </xref>
+          <xref ref-type="corresp" rid="cor1">
+            <sup>*</sup>
+          </xref>
+        </contrib>
+      </contrib-group><aff id="aff1">
+        <label>1</label>
+        <addr-line>Department of Zoology, University of Oxford, Oxford, United Kingdom </addr-line>
+      </aff><contrib-group>
+        <contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Penny</surname>
+            <given-names>David</given-names>
+          </name>
+          <role>Academic Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+      </contrib-group><aff id="edit1">Massey University, New Zealand</aff><author-notes>
+        <corresp id="cor1">* To whom correspondence should be addressed. E-mail: <email xlink:type="simple">andrew.rambaut@zoo.ox.ac.uk</email></corresp>
+        <fn fn-type="con" id="n1">
+          <p> AJD and AR conceived the original idea, developed the software, and performed the
+            marsupial and virus data analyses. SYWH developed the simulation software, performed the
+            simulation analysis, developed the use of prior distributions for calibrating node ages,
+            and performed the analyses on the bacteria, yeast, plant, metazoan, and primate
+            datasets. MJP collected and curated the marsupial dataset and provided expert
+            calibration information. AJD, SYWH, MJP, and AR contributed to the writing of the
+            article. </p>
+        </fn>
+        <fn fn-type="current-aff" id="n2">
+          <p>¤ Current address: Department of Computer Science, University of Auckland,
+            Auckland, New Zealand</p>
+        </fn>
+      <fn fn-type="conflict">
+        <p> The authors have declared that no competing interests exist. </p>
+      </fn></author-notes><pub-date pub-type="ppub">
+        <month>5</month>
+        <year>2006</year>
+      </pub-date><pub-date pub-type="epub">
+        <day>14</day>
+        <month>3</month>
+        <year>2006</year>
+      </pub-date><volume>4</volume><issue>5</issue><elocation-id>e88</elocation-id><history>
+        <date date-type="received">
+          <day>16</day>
+          <month>5</month>
+          <year>2005</year>
+        </date>
+        <date date-type="accepted">
+          <day>23</day>
+          <month>1</month>
+          <year>2006</year>
+        </date>
+      </history><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2006</copyright-year><copyright-holder>Drummond et al</copyright-holder><license><license-p>This is an open-access article distributed under the
+        terms of the Creative Commons Attribution License, which permits unrestricted use,
+        distribution, and reproduction in any medium, provided the original author and source are
+        credited.</license-p></license></permissions><related-article page="e106" related-article-type="companion" vol="4" xlink:href="info:doi/10.1371/journal.pbio.0040106" xlink:title="synopsis" xlink:type="simple">
+        <article-title>Relaxing the Clock Brings Time Back into Phylogenetics</article-title>
+      </related-article><related-article related-article-type="companion" xlink:href="info:doi/10.1371/journal.pbio.0040151" xlink:type="simple">
+        <article-title>Model Selection and the Molecular Clock</article-title>
+      </related-article><abstract>
+        <p>In phylogenetics, the unrooted model of phylogeny and the strict molecular clock model
+          are two extremes of a continuum. Despite their dominance in phylogenetic inference, it is
+          evident that both are biologically unrealistic and that the real evolutionary process lies
+          between these two extremes. Fortunately, intermediate models employing relaxed molecular
+          clocks have been described. These models open the gate to a new field of
+          “relaxed phylogenetics.” Here we introduce a new approach to
+          performing relaxed phylogenetic analysis. We describe how it can be used to estimate
+          phylogenies and divergence times in the face of uncertainty in evolutionary rates and
+          calibration times. Our approach also provides a means for measuring the clocklikeness of
+          datasets and comparing this measure between different genes and phylogenies. We find no
+          significant rate autocorrelation among branches in three large datasets, suggesting that
+          autocorrelated models are not necessarily suitable for these data. In addition, we place
+          these datasets on the continuum of clocklikeness between a strict molecular clock and the
+          alternative unrooted extreme. Finally, we present analyses of 102 bacterial, 106 yeast, 61
+          plant, 99 metazoan, and 500 primate alignments. From these we conclude that our method is
+          phylogenetically more accurate and precise than the traditional unrooted model while
+          adding the ability to infer a timescale to evolution.</p>
+      </abstract><abstract abstract-type="toc">
+        <p>This new method can simultaneously infer phylogeny and estimate the molecular clock. The
+          authors run their method on several large alignments to show its phylogenetic accuracy and
+          ability to infer a timescale to evolution.</p>
+      </abstract><funding-group><funding-statement> AJD was supported by the Wellcome Trust. SYWH was supported by a Commonwealth (Oxford)
+          Scholarship from the Commonwealth Scholarship Commission and a Domus Research Studentship
+          and Edward Penley Abraham Cephalosporin Scholarship from Linacre College, Oxford. AR is
+          supported by a University Research Fellowship from The Royal Society. </funding-statement></funding-group></article-meta>
+  </front>
+  <body>
+    <sec id="s1">
+      <title>Introduction</title>
+      <p>From obscure beginnings, phylogenetics has become an essential tool for understanding
+        molecular sequence variation. In the past decade, huge progress has been made in developing
+        methods for inferring phylogenies and estimating divergence dates. This development has been
+        characterized by increases, both in the complexity of the models used to describe molecular
+        sequence evolution, and in the sophistication of the methods for analyzing these new models.
+        Nevertheless, a well-known problem that has persistently troubled phylogenetic inference is
+        that of substitution rate variation among lineages. In order to infer divergence dates, it
+        is convenient to assume a constant rate of evolution throughout the tree [<xref ref-type="bibr" rid="pbio-0040088-b001">1</xref>, <xref ref-type="bibr" rid="pbio-0040088-b002">2</xref>]. This practice has been regularly challenged by
+        results from datasets showing considerable departures from clocklike evolution
+          [<xref ref-type="bibr" rid="pbio-0040088-b003">3</xref>–<xref ref-type="bibr" rid="pbio-0040088-b005">5</xref>], and rate variation among
+        lineages can seriously mislead not only divergence date estimation [<xref ref-type="bibr" rid="pbio-0040088-b006">6</xref>] but also phylogenetic inference
+        (e.g., [<xref ref-type="bibr" rid="pbio-0040088-b007">7</xref>, <xref ref-type="bibr" rid="pbio-0040088-b008">8</xref>]). </p>
+      <p>Such problems with the molecular clock hypothesis have resulted in it being abandoned
+        almost entirely for phylogenetic inference in favor of a model that assumes that every
+        branch has an independent rate of molecular evolution. Under such an assumption, it is
+        possible to infer phylogenies (e.g., [<xref ref-type="bibr" rid="pbio-0040088-b009">9</xref>, <xref ref-type="bibr" rid="pbio-0040088-b010">10</xref>]), but not to
+        estimate molecular rates or divergence times, because the individual contributions of rate
+        and time to molecular evolution cannot be separated. If the rate and time along each branch
+        can only be estimated as their product, then the position of the root of the tree cannot be
+        estimated without additional assumptions such as an outgroup or a non-reversible
+        substitution process. This unrooted alternative to the molecular clock was first suggested
+        by Felsenstein [<xref ref-type="bibr" rid="pbio-0040088-b010">10</xref>]
+        and has formed the basis of all modern phylogenetic inference and is implemented in all
+        major phylogenetic packages (e.g., PHYLIP [<xref ref-type="bibr" rid="pbio-0040088-b011">11</xref>], PAUP* [<xref ref-type="bibr" rid="pbio-0040088-b012">12</xref>], and MrBayes [<xref ref-type="bibr" rid="pbio-0040088-b009">9</xref>]). </p>
+      <p>Recently, it has been realized that less drastic alternatives to the unrooted model of
+        phylogeny may exist. Instead of dispensing with the molecular clock entirely, attempts have
+        been made to relax the molecular clock assumption by allowing the rate to vary across the
+        tree [<xref ref-type="bibr" rid="pbio-0040088-b013">13</xref>–<xref ref-type="bibr" rid="pbio-0040088-b015">15</xref>]. For example, local molecular
+        clock models estimate a separate molecular rate for each user-circumscribed group of
+        branches in the tree [<xref ref-type="bibr" rid="pbio-0040088-b006">6</xref>, <xref ref-type="bibr" rid="pbio-0040088-b013">13</xref>, <xref ref-type="bibr" rid="pbio-0040088-b016">16</xref>]. However, assigning branches to different
+        groups can be a difficult exercise if the number of sequences is large or if there is
+        considerable uncertainty about the phylogenetic relationships among the taxa. Essentially,
+        such models are only useful in cases in which there is a strong prior hypothesis that the
+        rate of specific taxa will differ from the rest of the tree [<xref ref-type="bibr" rid="pbio-0040088-b006">6</xref>]. </p>
+      <p>Bayesian relaxed-clock methods, including those published by Thorne et al. [<xref ref-type="bibr" rid="pbio-0040088-b015">15</xref>] and Aris-Brosou and Yang
+          [<xref ref-type="bibr" rid="pbio-0040088-b017">17</xref>], present an
+        enticing alternative to local clock models. These model the molecular rate among lineages as
+        varying in an autocorrelated manner, with the rate in each branch being drawn (a priori)
+        from a parametric distribution whose mean is a function of the rate on the parent branch.
+        For example, a lognormal distribution can be employed with the variance scaled relative to
+        the length of the branch in units of time, implying that the evolutionary rate changes
+        continuously along the branch. Alternatively, the use of an exponential distribution would
+        imply that changes occurred at the nodes, with the size of the change being independent of
+        the branch length. </p>
+      <p>Autocorrelation of rates from ancestral to descendant lineages will occur whenever the
+        largest component of rate variation is due to inherited factors, whether these are
+        life-history traits or biochemical mechanisms. As one looks over smaller and smaller
+        timescales, the differences in such inherited factors become smaller relative to the
+        variance caused by stochastic and uninherited factors (such as environmental or chance
+        events). An alternative way of considering this is that the autocorrelation is so strong
+        that very little of the variation in rate can be attributed to inherited factors. At the
+        other extreme, over very long timescales, we might expect so much variation in the inherited
+        determinants of rate that the autocorrelation from lineage to lineage begins to break down,
+        especially with sparse taxon sampling. However, it is difficult to predict where the
+        boundaries between these effects are and thus to specify what the degree of autocorrelation
+        will be.</p>
+      <p>Relaxed-clock models present a potentially useful method for removing the assumption of a
+        strict molecular clock, but a major shortcoming of the methods that have been proposed thus
+        far is that they require the user to specify the tree topology. This is a problem because in
+        many cases, important parts of the tree may be uncertain or unresolved, resulting in a
+        number of plausible tree topologies. Furthermore, a molecular clock may have been assumed
+        when estimating the input tree (for example to find a root), but rate variation among
+        lineages can adversely affect phylogenetic inference (e.g., [<xref ref-type="bibr" rid="pbio-0040088-b007">7</xref>, <xref ref-type="bibr" rid="pbio-0040088-b008">8</xref>]). In some settings, the tree topology may actually be a nuisance
+        parameter and some other aspect of the model (such as the variance in evolutionary rate, the
+        effective population size, or the age of the most recent common ancestor) is the object of
+        interest. Lastly, the assumption of a relaxed clock will alter the posterior probabilities
+        of alternative tree topologies, so that the best tree under a relaxed-clock model may differ
+        from the best tree under an unrooted or strict molecular clock model. For these reasons, a
+        “relaxed phylogenetics” approach, in which the phylogeny and the
+        divergence dates are co-estimated under a relaxed molecular clock, is preferred
+          [<xref ref-type="bibr" rid="pbio-0040088-b018">18</xref>]. </p>
+      <p>Here we present a Bayesian Markov chain Monte Carlo (MCMC) [<xref ref-type="bibr" rid="pbio-0040088-b019">19</xref>, <xref ref-type="bibr" rid="pbio-0040088-b020">20</xref>] method for performing relaxed phylogenetics that is able to co-estimate
+        phylogeny and divergence times under a new class of relaxed-clock models. Its utility is
+        demonstrated through simulation and on 871 real datasets. When absolute rates and divergence
+        dates are estimated, we use probabilistic calibration priors, rather than point
+        calibrations, since these more appropriately incorporate calibration uncertainties. We have
+        implemented this method in the application BEAST [<xref ref-type="bibr" rid="pbio-0040088-b021">21</xref>] in which they can be used in conjunction with
+        a wide range of other evolutionary models. </p>
+    </sec>
+    <sec id="s2">
+      <title>Results</title>
+      <sec id="s2a">
+        <title>Simulations</title>
+        <p>We generated alignments of nine nucleotide sequences, each 1,000 nucleotides in length,
+          on the rooted tree in <xref ref-type="fig" rid="pbio-0040088-g001">Figure 1</xref>. The
+          outgroup sequence, O, is only used for rooting; otherwise, the tree is symmetric.
+          Simulations were performed using the program RateEvolver v1.0 [<xref ref-type="bibr" rid="pbio-0040088-b022">22</xref>], which can simulate
+          nucleotide substitution under different rate conditions, including constant (molecular
+          clock), autocorrelated, and uncorrelated rates. </p>
+        <fig id="pbio-0040088-g001" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0040088.g001</object-id>
+          <label>Figure 1</label>
+          <caption>
+            <title>The Rooted Binary Tree Used for Simulating Sequence Evolution</title>
+            <p>The timescale is drawn in arbitrary time units. Apart from the branch leading to the
+              outgroup, sequence O, all branches are five time units in length.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.g001" xlink:type="simple"/>
+        </fig>
+        <p>Fifty sequence alignments were generated under each of five sets of rate variation
+          models: (1) Rates were fixed at 0.01 average substitutions per site per time unit
+          throughout the tree (i.e., rates conformed to a molecular clock) (CLOC); (2) rates were
+          lognormally autocorrelated among branches, with an ancestral rate of 0.01 average
+          substitutions per site per time unit and a variance parameter (
+            <italic>S</italic><sup>2</sup>) of 0.1, so that <italic>S</italic><sup>2</sup>
+          <italic>t = 0.5</italic> (ACLN); (3) rates were exponentially autocorrelated among
+          branches, with an ancestral rate of 0.01 average substitutions per site (ACED); (4) rates
+          were uncorrelated, with the rate in each branch independently drawn from a lognormal
+          distribution with mean 0.01 and variance parameter of 0.5 (UCLN); and (5) rates were
+          uncorrelated, with the rate in each branch independently drawn from an exponential
+          distribution with mean (and therefore standard deviation) of 0.01 (UCED). </p>
+        <p>A normally distributed calibration prior with mean 20.0 and standard deviation 1.0 was
+          specified for the age of the root of the tree, and the tree topology was fixed. Each
+          alignment was analyzed using BEAST [<xref ref-type="bibr" rid="pbio-0040088-b021">21</xref>] with 5,000,000 steps, following a discarded burn-in of 500,000
+          steps. In each analysis, convergence of the chain to the stationary distribution was
+          confirmed by inspection of the MCMC samples using the program Tracer 1.2 [<xref ref-type="bibr" rid="pbio-0040088-b023">23</xref>]. This application analyses
+          posterior samples of continuous parameters from Bayesian MCMCs to allow visual inspection
+          of the chain behavior, estimating of the effective sample size of parameters and the
+          plotting of marginal posterior densities. The effective sample size is the number of
+          independent samples that would be the equivalent to the autocorrelated samples produced by
+          the MCMC. This provides a measure of whether the chain has been run for an adequate length
+          (for example, if the effective sample sizes of all continuous parameters are greater than
+          200). </p>
+        <p>In four of the five cases, the uncorrelated relaxed-clock approach to estimating rates
+          performed well (<xref ref-type="table" rid="pbio-0040088-t001">Table 1</xref>). In all
+          cases, the rate estimates made under the UCED had the largest 95% highest
+          posterior densities (HPDs). This can be most clearly seen in the rates estimated from
+          sequences generated under a molecular clock, with the average 95% HPD size
+          under the UCED model exceeding that under the UCLN model by an order of magnitude. </p>
+        <table-wrap id="pbio-0040088-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.0040088.t001</object-id><label>Table 1</label><caption>
+            <title>The Proportion of Datasets (50 Simulations for Each of Five Models) for Which the
+              True Rate Was within the 95% HPD Limits at the Given Branch</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.t001" xlink:type="simple"/><!-- <table><thead><TR><TD align="left" valign="top" ROWSPAN="1" COLSPAN="1">Simulated Model</TD><TD COLSPAN="3" valign="middle" ROWSPAN="1"><HR>CLOC</TD><TD COLSPAN="3" valign="middle" ROWSPAN="1"><HR>ACLN</TD><TD COLSPAN="3" valign="middle" ROWSPAN="1"><HR>ACED</TD><TD COLSPAN="3" valign="middle" ROWSPAN="1"><HR>UCLN</TD><TD COLSPAN="3" valign="middle" ROWSPAN="1"><HR>UCED</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>Analyzed Model</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>CLOC</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCED</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCLN</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>CLOC</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCED</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCLN</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>CLOC</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCED</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCLN</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>CLOC</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCED</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCLN</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>CLOC</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCED</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCLN</TD></TR></thead><tbody><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Sequence A</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.12</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.92</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.02</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.58</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.36</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.18</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.94</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.02</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.94</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.78</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Sequence B</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.02</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.94</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.06</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.66</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.38</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.06</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.96</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.10</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.98</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.80</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Sequence C</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.96</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.12</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.94</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.02</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.58</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.46</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.10</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.90</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.02</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.92</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Sequence D</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.08</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.92</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.02</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.62</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.52</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.10</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.90</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.16</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.94</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.84</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Sequence E</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.08</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.96</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.90</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.62</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.50</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.06</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.90</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.10</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.94</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.82</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Sequence F</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.08</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.98</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.90</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.06</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.70</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.38</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.10</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.96</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.04</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.96</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.74</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Sequence G</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.12</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.98</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.88</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.02</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.72</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.56</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.20</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.92</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.10</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.96</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.80</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Sequence H</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.06</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.92</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.06</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.72</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.50</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.12</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.90</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.04</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.96</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.80</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Node 09</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.08</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.98</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.04</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.78</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.54</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.06</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.94</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.10</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.98</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.84</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Node 10</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.08</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.76</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.62</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.14</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.96</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.18</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.80</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Node 11</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.98</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.08</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.04</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.90</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.68</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.12</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.92</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.06</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.96</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.84</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Node 12</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.10</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.98</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.98</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.02</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.80</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.62</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.16</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.94</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.08</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.98</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.82</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Node 13</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.08</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.02</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.84</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.78</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.08</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.92</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.18</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.96</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.82</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Node 14</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.06</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.98</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.10</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.90</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.76</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.08</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.14</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.96</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.88</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Overall</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.08<sup>a</sup></TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.99</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.95</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.03<sup>a</sup></TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.73<sup>a</sup></TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.55<sup>a</sup></TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.11<sup>a</sup></TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1.00</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.93</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.09<sup>a</sup></TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.97</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.82<sup>a</sup></TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Average HPD size</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.002</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.056</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.006</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.006</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.047</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.024</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.003</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.022</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.016</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.009</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.049</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.023</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.002</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.025</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">0.025</TD></TR></tbody></table> --><!-- <table-wrap-foot> 
+						<fn id="nt101">
+							<p>
+								<p>Each cell reports the results at the branch above the specified node for a particular combination of simulated and analyzed rate models. Node labels correspond to those given in Figure 1. The simulated models were CLOC, ACLN, ACED, UCLN, and UCED. The models used for inference were CLOC, UCED, and UCLN.</p></p>
+						</fn>
+						<fn id="nt102">
+							<p>
+								<p>
+									<sup>a</sup>The overall false-positive rate is significantly greater than 5&percnt; for these combinations of simulated and analyzed modes.
+								</p>
+							</p>
+						</fn>
+					</table-wrap-foot> --></table-wrap>
+        <p>When the sequences were simulated under a molecular clock, the 95% HPD
+          interval of the posterior rate estimate almost always contained the true rate under all
+          three analysis models (<xref ref-type="table" rid="pbio-0040088-t001">Table 1</xref>). For
+          sequences simulated under any of the other models, CLOC did extremely poorly, with the
+          true rates included in the 95% HPDs between only 3% and
+          11% of the time. Clock estimates of rates from data generated under exponential
+          rate models (ACED and UCED) were poorer than those from data generated under lognormal
+          rate models (ACLN and UCLN); this was expected, since the variance of the exponential
+          distribution is larger than those of the lognormal distributions in our simulations. </p>
+        <p>For the data generated under lognormal models (ACLN and UCLN), both of the uncorrelated
+          models (UCED and UCLN) performed well with respect to coverage, with the 95%
+          HPD containing the true rate between 93% and 100% of the time for
+          individual branches. However, for the UCED model this was at the expense of power, with
+          the average size of the HPDs being twice as large as those for the UCLN model.</p>
+        <p>For data generated under UCED, the UCED model performed better than UCLN with both models
+          giving the same average size of HPDs, but with the latter model including the true rates
+          in the HPDs slightly less often (82%). Neither model performed as well when the
+          data were generated under an ACED model, with the true rate in the 95% HPD
+          between 36% and 90% of the time.</p>
+        <p>The accurate estimation of molecular rates is important because it has a direct impact on
+          the estimation of branch lengths, which can in turn affect the inferred tree topology.
+          Collectively, the results provide a strong recommendation against assuming a molecular
+          clock when analyzing data that have not evolved under clocklike conditions, but the
+          uncorrelated relaxed-clock models also perform well when the data are clocklike. The
+          results favor the use of the UCLN model in that it has an accuracy comparable to the UCED
+          model, but it results in considerably smaller HPDs. In particular, because the UCLN model
+          has the variance of the lognormal distribution as a parameter, it can better accommodate
+          data that are close to being clocklike. This is not contradicting the findings of a
+          previous simulation-based study [<xref ref-type="bibr" rid="pbio-0040088-b022">22</xref>], which suggested that the autocorrelated exponential model
+          outperformed the lognormal model in rate estimation, because the uncorrelated models
+          presented here are fundamentally different from autocorrelated models. Moreover, the
+          previous simulation study considered only the accuracy of the estimates, and not their
+          precision. </p>
+      </sec>
+      <sec id="s2b">
+        <title>Dengue Virus Type 4 and Human Influenza A Virus</title>
+        <p>We selected two virus datasets that were matched in the number of sequences (
+            <italic>n</italic> = 69) and the time span over which the data had been sampled (17 y).
+          The first dataset was a previously published sequence alignment of the <italic>E</italic>
+          gene of dengue-4 virus (1,485 base pairs [bp]) from Puerto Rico
+            [<xref ref-type="bibr" rid="pbio-0040088-b024">24</xref>]. The second
+          dataset was an alignment of hemagglutinin sequences from human influenza A virus selected
+          to have a similar time frame (1981–1998; see <xref ref-type="supplementary-material" rid="sd001">Protocol S1</xref> for details). In both
+          of these datasets, each sequence in the alignment represents a consensus of the viral
+          population within a single infected human host at the time of sampling. Therefore, both
+          genealogies represent the ancestral relationships between the virus populations in a
+          sample of 69 infected people spanning a 17-y period. These two viral datasets,
+          particularly influenza A virus, are expected to exhibit the effects of natural selection,
+          given the nature of their life histories [<xref ref-type="bibr" rid="pbio-0040088-b024">24</xref>–<xref ref-type="bibr" rid="pbio-0040088-b026">26</xref>]. </p>
+        <p>Both datasets were analyzed under the strict molecular clock and the UCLN and UCED
+          models. For all analyses the HKY (Hasegawa-Kishino-Yano) model of nucleotide substitution
+            [<xref ref-type="bibr" rid="pbio-0040088-b027">27</xref>] was used
+          with gamma-distributed rate heterogeneity among sites [<xref ref-type="bibr" rid="pbio-0040088-b028">28</xref>]. Calibration information for the rate of
+          evolution stems from the fact that each sequence has a date of sampling associated with it
+            [<xref ref-type="bibr" rid="pbio-0040088-b029">29</xref>]. A
+          constant-population coalescent prior was assumed [<xref ref-type="bibr" rid="pbio-0040088-b030">30</xref>]. For each combination of data and model, two
+          independent MCMC analyses were each run for 10,000,000 steps, resulting in acceptable
+          mixing as determined by Tracer 1.2 [<xref ref-type="bibr" rid="pbio-0040088-b023">23</xref>]. Given adequate sampling, these two runs were combined to obtain an
+          estimate of the posterior distribution. The resulting estimates for the overall rate of
+          evolution and coefficients of variation from the six analyses are presented in <xref ref-type="table" rid="pbio-0040088-t002">Table 2</xref>. </p>
+        <table-wrap id="pbio-0040088-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.0040088.t002</object-id><label>Table 2</label><caption>
+            <title>Rate and Variance Estimates for Two Viral Datasets (Human Influenza A Virus and
+              Dengue Type-4 Virus)</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.t002" xlink:type="simple"/><!-- <table><thead><TR><TD align="left" valign="top" ROWSPAN="1" COLSPAN="1"><HR>Virus</TD><TD valign="top" ROWSPAN="1" COLSPAN="1"><HR>Clock Model</TD><TD valign="top" ROWSPAN="1" COLSPAN="1"><HR>Parameters</TD><TD valign="top" ROWSPAN="1" COLSPAN="1"><HR>Coefficient of Variation (&sigma;<ITALIC><SUB>r</SUB></ITALIC>)</TD><TD valign="top" ROWSPAN="1" COLSPAN="1"><HR>Mean Rate</TD><TD valign="top" ROWSPAN="1" COLSPAN="1"><HR>External Rate</TD><TD valign="top" ROWSPAN="1" COLSPAN="1"><HR>Internal Rate</TD><TD valign="top" ROWSPAN="1" COLSPAN="1"><HR>Log (Marginal Posterior)</TD><TD valign="top" ROWSPAN="1" COLSPAN="1"><HR>Log (Tree Likelihood)</TD><TD valign="top" ROWSPAN="1" COLSPAN="1"><HR>Log (Coalescent Prior)</TD><TD valign="top" ROWSPAN="1" COLSPAN="1"><HR>Population Size Scaled by Generation Length</TD></TR></thead><tbody><TR><TD ROWSPAN="1" COLSPAN="1">Dengue-4</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">Clock</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">1</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&mdash;</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00098</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&mdash;</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&mdash;</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;3939.60</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;3709.95</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;229.65</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">11.10</TD></TR><TR><TD ROWSPAN="1" COLSPAN="1"></TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">Exponential</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">1</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.99</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00113</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00138</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00088</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;3901.47</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;3690.44</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;211.03</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">8.55</TD></TR><TR><TD ROWSPAN="1" COLSPAN="1"></TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">Lognormal</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">2</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.39</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00099</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00103</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00094</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;3927.62</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;3701.53</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;226.10</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">10.58</TD></TR><TR><TD ROWSPAN="1" COLSPAN="1">Influenza A</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">Clock</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">1</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&mdash;</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00505</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&mdash;</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&mdash;</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;4367.76</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;4202.48</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;165.28</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">4.30</TD></TR><TR><TD ROWSPAN="1" COLSPAN="1"></TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">Exponential</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">1</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.99</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00551</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00598</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00502</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;4310.65</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;4164.33</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;146.33</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">3.27</TD></TR><TR><TD ROWSPAN="1" COLSPAN="1"></TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">Lognormal</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">2</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.51</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00517</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00518</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">0.00519</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;4331.27</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;4172.54</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">&minus;158.74</TD><TD valign="bottom" ROWSPAN="1" COLSPAN="1">3.92</TD></TR></tbody></table> --></table-wrap>
+        <p>The estimated coefficient of variation, σ <italic>
+            <sub>r</sub>
+          </italic>, was 0.39 for the dengue virus dataset under the UCLN model. This compares with
+          0.51 for the influenza A dataset, suggesting that the dengue virus sequences are evolving
+          in a more clocklike manner than the influenza virus sequences. Under the UCED model, both
+          datasets produce an estimated σ <italic>
+            <sub>r</sub>
+          </italic> of 0.99. Under the exponential distribution σ <italic>
+            <sub>r</sub>
+          </italic> should be equal to 1.0 by definition, and the small discrepancy arises because
+          of the discretization procedure described in <xref ref-type="sec" rid="s4">Materials and
+            Methods</xref>. In both datasets the estimated average rate was higher under the UCED
+          model, especially in the internal branches. This elevated rate also corresponded with a
+          lower estimate of the effective population size. <xref ref-type="fig" rid="pbio-0040088-g002">Figure 2</xref> shows a tree topology sampled from the posterior
+          of the UCLN analysis of the influenza A virus dataset. </p>
+        <fig id="pbio-0040088-g002" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0040088.g002</object-id>
+          <label>Figure 2</label>
+          <caption>
+            <title>A Tree of 69 Influenza A Virus Sequences Drawn Randomly from the Posterior
+              Distribution</title>
+            <p>The divergence times correspond to the mean posterior estimate of their age in years.
+              The yellow bars represent the 95% HPD interval for the divergence time
+              estimates. Both the mean and 95% HPD of the divergence times were
+              calculated conditional on the existence of the clade defined by the divergence. Each
+              node in the tree that has a posterior probability greater than 0.5 is labeled with its
+              posterior probability. The sampling times of the tips were assumed to be known
+              exactly. Branches colored in red had a posterior rate greater than the average rate,
+              whereas branches colored in blue had a lower-than-average rate.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.g002" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2c">
+        <title>Marsupials</title>
+        <p>In addition to the viral sequences, we analyzed a marsupial dataset. The alignment
+          contained concatenated nuclear protein–coding genes ( <italic>APOB, RAG1, IRBP,
+            vWF,</italic> and <italic>BRCA1;</italic> 3,772 bp) for 17 marsupials and seven
+          (outgroup) placental mammals, obtained from Amrine-Madsen et al. [<xref ref-type="bibr" rid="pbio-0040088-b031">31</xref>]. </p>
+        <p>The extensions to BEAST for inferring divergence times, described here, are well suited
+          to the marsupial dataset. It possesses some phylogenetic uncertainty, so it is more
+          reasonable to integrate over the posterior distribution of topologies than to assume a
+          single true topology. Furthermore, the dataset includes taxa that have evolved to
+          substantially different sizes, life histories, and niches, which are all hypothesized
+          predictors of molecular rate variation [<xref ref-type="bibr" rid="pbio-0040088-b032">32</xref>, <xref ref-type="bibr" rid="pbio-0040088-b033">33</xref>]. </p>
+        <p>The early fossil record of marsupials [<xref ref-type="bibr" rid="pbio-0040088-b034">34</xref>] is poorly known. As a result, point
+          calibrations that utilize the oldest fossils that mark divergences of one group from
+          another are likely to be substantial underestimates, whereas simply defining wide
+          calibration bounds can poorly represent our understanding of the fossil record. We
+          selected prior probability distributions as calibration priors (<xref ref-type="table" rid="pbio-0040088-t003">Table 3</xref>) with the intention of providing realistic
+          assessments of the uncertainty associated with the fossil record [<xref ref-type="bibr" rid="pbio-0040088-b035">35</xref>]. </p>
+        <table-wrap id="pbio-0040088-t003" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.0040088.t003</object-id><label>Table 3</label><caption>
+            <title>Prior Probability Distributions and Posterior Probability Densities of the
+              Marsupial Calibrations</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.t003" xlink:type="simple"/><!-- <table><thead><TR><TD align="left" ROWSPAN="2" COLSPAN="1"><HR>Calibration Node<sup>a</sup></TD><TD COLSPAN="2" ROWSPAN="1"><HR>Prior</TD><TD COLSPAN="2" ROWSPAN="1"><HR>MCMC Results</TD></TR><TR><TD ROWSPAN="1" COLSPAN="1"><HR>Distribution</TD><TD ROWSPAN="1" COLSPAN="1"><HR>Mean &lsqb;95&percnt; CI&rsqb;<sup>b</sup></TD><TD ROWSPAN="1" COLSPAN="1"><HR>Mean, No Data &lsqb;95&percnt; HPD&rsqb;<sup>c</sup></TD><TD ROWSPAN="1" COLSPAN="1"><HR>Mean, Posterior &lsqb;95&percnt; HPD&rsqb;<sup>d</sup></TD></TR></thead><tbody><TR><TD ROWSPAN="1" COLSPAN="1">Elephants versus sirenians</TD><TD ROWSPAN="1" COLSPAN="1">Normal</TD><TD ROWSPAN="1" COLSPAN="1">61.5 &lsqb;52,71&rsqb;</TD><TD ROWSPAN="1" COLSPAN="1">61.3 &lsqb;52.2,70.9&rsqb;</TD><TD ROWSPAN="1" COLSPAN="1">56.1 &lsqb;46.2,65.2&rsqb;</TD></TR><TR><TD ROWSPAN="1" COLSPAN="1">Dasyurids versus diprotodontians</TD><TD ROWSPAN="1" COLSPAN="1">Normal</TD><TD ROWSPAN="1" COLSPAN="1">64 &lsqb;54,74&rsqb;</TD><TD ROWSPAN="1" COLSPAN="1">64.2 &lsqb;55.1,74.1&rsqb;</TD><TD ROWSPAN="1" COLSPAN="1">65.2 &lsqb;56.7,73.7&rsqb;</TD></TR><TR><TD ROWSPAN="1" COLSPAN="1"><ITALIC>Phascogale</ITALIC> versus <ITALIC>Dasyurus</ITALIC></TD><TD ROWSPAN="1" COLSPAN="1">Normal</TD><TD ROWSPAN="1" COLSPAN="1">17 &lsqb;10,24&rsqb;</TD><TD ROWSPAN="1" COLSPAN="1">17.1 &lsqb;10.5,24.3&rsqb;</TD><TD ROWSPAN="1" COLSPAN="1">14.4 &lsqb;9.7,18.9&rsqb;</TD></TR><TR><TD ROWSPAN="1" COLSPAN="1">Marsupials versus placentals</TD><TD ROWSPAN="1" COLSPAN="1">Translated Lognormal</TD><TD ROWSPAN="1" COLSPAN="1">145 &lsqb;132,180&rsqb;</TD><TD ROWSPAN="1" COLSPAN="1">148.4 &lsqb;131.5,170.4&rsqb;</TD><TD ROWSPAN="1" COLSPAN="1">170.0 &lsqb;140.0,204.6&rsqb;</TD></TR></tbody></table> --><!-- <table-wrap-foot> 
+						<fn id="nt301">
+							<p>
+								<p>
+									<sup>a</sup>Calibration nodes are defined as the most recent common ancestor of the pair of taxa at any given step in the MCMC chain.
+								</p>
+							</p>
+						</fn>
+						<fn id="nt302">
+							<p>
+								<p>
+									<sup>b</sup>The mean and 95&percnt; confidence intervals (CIs) of the prior probability distribution in millions of years.
+								</p>
+							</p>
+						</fn>
+						<fn id="nt303">
+							<p>
+								<p>
+									<sup>c</sup>The mean and 95&percnt; HPD intervals of the posterior probability distribution in millions of years given by the MCMC procedure run without any sequence data. This will reveal the joint prior distribution on these parameters.
+								</p>
+							</p>
+						</fn>
+						<fn id="nt304">
+							<p>
+								<p>
+									<sup>d</sup>The mean and 95&percnt; HPD intervals of the posterior probability distribution in millions of years.
+								</p>
+							</p>
+						</fn>
+					</table-wrap-foot> --></table-wrap>
+        <p>First, to ascertain the joint prior distribution on the nodes of interest, the four
+          calibration points, the Yule prior, and the reciprocal monophyly constraints were analyzed
+          without any sequence data. The combined results of two runs of 10,000,000 steps are given
+          in <xref ref-type="table" rid="pbio-0040088-t003">Table 3</xref>. </p>
+        <p>In order to analyze the marsupial data, we assumed a general time-reversible
+            [<xref ref-type="bibr" rid="pbio-0040088-b036">36</xref>] model of
+          nucleotide substitution with gamma-distributed rate heterogeneity among sites
+            [<xref ref-type="bibr" rid="pbio-0040088-b028">28</xref>] and a
+          proportion of invariant sites. In addition, we assumed a UCLN model of rate variation
+          among branches in the tree. A Yule prior on branching rates was employed and the
+          reciprocal monophyly of the ingroup and outgroup was assumed a priori. Four independent
+          MCMC analyses were each run for 10,000,000 steps, resulting in acceptable mixing as
+          determined by Tracer 1.2 [<xref ref-type="bibr" rid="pbio-0040088-b023">23</xref>]. These four runs were combined to obtain an estimate of the posterior
+          distribution (<xref ref-type="table" rid="pbio-0040088-t003">Table 3</xref>). The
+          95% credible set of the marsupial analysis included 12 unique tree topologies,
+          and the maximum a posteriori (MAP) tree topology accounted for 0.32 of the total posterior
+          probability. The estimated rate of the fastest branch in the MAP topology was 2.7 times
+          faster than that of the slowest branch. The mean rate of evolution was 0.944 substitutions
+          per site per billion years (95% HPD: 0.817–1.073). The birth rate of
+          the Yule prior was estimated to be 0.0133 (95% HPD: 0.0035–0.0234). </p>
+        <p>There was a slight tendency toward a positive correlation in the rate of parent and child
+          branches but this was not significant (zero was included in the 95% HPD). The
+          coefficient of variation was estimated to be 0.32 (95% HPD:
+          0.23–0.43), suggesting that the marsupial dataset is more clocklike than both of
+          the virus datasets. <xref ref-type="fig" rid="pbio-0040088-g003">Figure 3</xref> shows the
+          (A) prior and (B) posterior distributions of the clades present in the MAP tree topology. </p>
+        <fig id="pbio-0040088-g003" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0040088.g003</object-id>
+          <label>Figure 3</label>
+          <caption>
+            <title>The Analysis of 17 Marsupials and Seven Placental Mammals</title>
+            <p>(A) The combined prior distribution of divergence times for the MAP tree topology.
+              The green bars represent the 95% HPD interval for the divergence times. (B)
+              The posterior distribution of the divergence times. The divergence times correspond to
+              the mean posterior estimate of their age in millions of years. The yellow bars
+              represent the 95% HPD interval for the divergence time estimates. Both the
+              mean and 95% HPD of the divergence times were calculated conditional on the
+              existence of the clade defined by the divergence. Each node in the tree is labeled
+              with its posterior probability if it is greater than 0.5. The three nodes with
+              normally distributed calibration priors are indicated by orange bars. Branches colored
+              in red had a posterior rate greater than the average rate, whereas branches colored in
+              blue had a lower-than-average rate.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.g003" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s2d">
+        <title>Autocorrelation of Rates amongst Lineages</title>
+        <p>We see no autocorrelation for the viruses we analyzed (the HPD interval of the covariance
+          of parent and child branches was [−0.17,0.15] and
+          [−0.18,0.15] for influenza and dengue-4 datasets respectively
+          under the lognormally distributed model of rate variation and
+          [−0.2,0.13] and [−0.19,0.13] for
+          the exponentially distributed model of rate variation). For the marsupial dataset there is
+          a small degree of autocorrelation suggested by the mean estimate, but it is not
+          significantly different from zero (mean: 0.07, HPD: [−0.256,
+          0.4]). We would expect that larger datasets, particularly of diverse organisms
+          that vary considerably in life-history traits or proofreading mechanisms, might exhibit
+          substantial autocorrelation.</p>
+      </sec>
+      <sec id="s2e">
+        <title>Assessing Accuracy and Precision with Five Large Datasets</title>
+        <p>Five large datasets were obtained from previous studies: (1) amino acid alignments of 102
+          genes from eight bacterial species; (2) nucleotide alignments of 106 genes from eight
+          yeast species [<xref ref-type="bibr" rid="pbio-0040088-b037">37</xref>];
+          (3) nucleotide alignments of 61 genes from nine plants; (4) amino acid alignments of 99
+          genes from nine metazoans; and (5) 500 nucleotide alignments of non-coding sequence from
+          nine primates. The bacterial dataset was a subset of a larger dataset comprising 730 genes
+          representing 45 species of bacteria [<xref ref-type="bibr" rid="pbio-0040088-b038">38</xref>]. Eight species of Proteobacteria were
+          selected due to their close phylogenetic relationship, as well as representation among the
+          730 genes. A total of 102 genes spanned all eight of the species that were retained for
+          analysis. The plant dataset was taken from a larger dataset comprising 61 genes from 12
+          taxa [<xref ref-type="bibr" rid="pbio-0040088-b039">39</xref>]. Nine
+          species were selected in accordance with the stipulation that their phylogeny was known
+          with almost complete certainty. The metazoan alignment was a subset of a larger dataset
+          comprising 123 genes from 36 eukaryotes [<xref ref-type="bibr" rid="pbio-0040088-b040">40</xref>]. Nine metazoan taxa were selected from this
+          dataset so that the tree relating the selected taxa was not in dispute. Genes that were
+          unavailable for one or more of the nine selected taxa were removed, leaving 99 genes in
+          the final dataset used for phylogenetic analysis. The primate dataset was a subset of a
+          2,160,276 bp alignment of non-coding DNA from 19 mammals [<xref ref-type="bibr" rid="pbio-0040088-b041">41</xref>, <xref ref-type="bibr" rid="pbio-0040088-b042">42</xref>]. The non-primates were removed from the alignment, and sites with a
+          gap in any sequence were removed. The remaining alignment was broken up into 500
+          alignments of equal length (632 bp). These individual alignments were each intended to
+          represent the data produced by an ordinary phylogenetic study in which a gene fragment has
+          been sequenced from a number of organisms. The question being asked is if we only have one
+          such alignment, how well are we able to reconstruct the phylogenetic relationships of the
+          organisms? </p>
+        <p>To assess the accuracy of the phylogenetic methods being tested, estimates of the
+          phylogeny need to be tested against the true phylogeny for each dataset. In order to
+          obtain the best possible estimates of the phylogeny for each dataset, the alignments in
+          each of the five datasets were concatenated. The five concatenated alignments were
+          analyzed under the HKY model of nucleotide substitution with gamma-distributed rate
+          variation among sites and a proportion of invariant sites. Each analysis was run for
+          5,000,000 MCMC steps, with a discarded burn-in of 500,000 steps. Identical trees were
+          obtained using BEAST with a UCLN model and with MrBayes (<xref ref-type="fig" rid="pbio-0040088-g004">Figure 4</xref>). The trees inferred from the plant, metazoan,
+          and primate datasets agree well with the established trees for these groups. However, the
+          bacterial and yeast phylogenies are relatively uncertain [<xref ref-type="bibr" rid="pbio-0040088-b037">37</xref>, <xref ref-type="bibr" rid="pbio-0040088-b043">43</xref>], and the trees inferred from the concatenated alignments are
+          probably the best estimates currently available. Even if these trees turn out to be
+          different from the true evolutionary histories of the studied organisms, we can at least
+          assume that the trees used in this analysis are very near in tree space to the truth, and
+          therefore we would expect our results to be little affected. The yeast tree inferred in
+          this study from concatenated data agreed with that published by Rokas et al.
+            [<xref ref-type="bibr" rid="pbio-0040088-b037">37</xref>], also
+          confirmed by Phillips et al. [<xref ref-type="bibr" rid="pbio-0040088-b043">43</xref>] under different phylogenetic models. </p>
+        <fig id="pbio-0040088-g004" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0040088.g004</object-id>
+          <label>Figure 4</label>
+          <caption>
+            <title>The “True” Phylogenies for the Large Datasets</title>
+            <p>The datasets are as follows: (A) bacterial, (B) yeast, (C) plant, (D) metazoan, and
+              (E) primate.</p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.g004" xlink:type="simple"/>
+        </fig>
+        <p>For each of the five groups of data, each alignment was analyzed using MrBayes (unrooted
+          Felsenstein [UF] model), BEAST with a molecular clock (CLOC); and
+          uncorrelated lognormal relaxed clock (UCLN). The HKY model of nucleotide substitution was
+          assumed, with gamma-distributed rate variation among sites and a proportion of invariant
+          sites. Most analyses were run for 500,000 MCMC steps with 50,000 burn-in steps, although
+          some datasets required 1,000,000 steps with 100,000 burn-in steps. All analyses were
+          checked for convergence using the program Tracer 1.2 [<xref ref-type="bibr" rid="pbio-0040088-b023">23</xref>]. The 95% credible set of trees
+          was obtained for each alignment and compared with the “true” trees
+          obtained using the method described above. The accuracy of the methods was considered to
+          be the frequency with which the true tree was contained in the 95% credible
+          set, whereas the average size of the credible sets was taken to represent precision. These
+          terms have statistical definitions, but we take liberties here to facilitate easier
+          interpretation. </p>
+        <p>All three methods performed poorly in analyses of the bacterial and metazoan datasets.
+          This result is not surprising, however, considering the substantial time depth of these
+          trees. The uncorrelated relaxed-clock method produced the most accurate estimates of
+          phylogeny overall (<xref ref-type="table" rid="pbio-0040088-t004">Table 4</xref>). It
+          outperformed other methods in analyses of the bacterial, yeast, metazoan, and primate
+          data, but the molecular clock method was the most accurate in the analysis of the plant
+          data. A large proportion (76%) of the yeast alignments were significantly
+          non-clocklike (as measured by a likelihood ratio test [<xref ref-type="bibr" rid="pbio-0040088-b010">10</xref>] on the true tree topology), which explains
+          the considerable difference in accuracy between the uncorrelated relaxed-clock method
+          (85.8% of the credible sets contain the true tree) and the molecular clock
+          method (67.9% of the credible sets contain the true tree). The superior
+          performance of the molecular clock in the analysis of the plant data, for which the
+          molecular clock was rejected for 67% of the alignments, may be due to the
+          sensitivity of the likelihood ratio test to even small departures from the clock
+          assumption. </p>
+        <table-wrap id="pbio-0040088-t004" position="float"><object-id pub-id-type="doi">10.1371/journal.pbio.0040088.t004</object-id><label>Table 4</label><caption>
+            <title>Accuracy and Precision of Phylogenetic Inference Using Three Bayesian Methods:
+              CLOC, UCLN, and UF</title>
+          </caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.t004" xlink:type="simple"/><!-- <table><thead><TR><TD align="left" ROWSPAN="2" valign="top" COLSPAN="1"><HR>Dataset</TD><TD ROWSPAN="2" valign="top" COLSPAN="1"><HR>Sample Size</TD><TD ROWSPAN="2" valign="top" COLSPAN="1"><HR>Average Length</TD><TD ROWSPAN="2" valign="top" COLSPAN="1"><HR>Clock Rejected by LRT</TD><TD COLSPAN="3" valign="top" ROWSPAN="1"><HR>Accuracy (&percnt;) (True Tree in 95&percnt; Credible Set)<sup>a</sup></TD><TD COLSPAN="3" valign="top" ROWSPAN="1"><HR>Precision (Number of Trees in 95&percnt; Credible Set)<sup>b</sup></TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>CLOC</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCLN</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UF</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>CLOC</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UCLN</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><HR>UF</TD></TR></thead><tbody><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Bacteria</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">102</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">170. aa</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">26&percnt;</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">46.1</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><BOLD>48.0</BOLD></TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">42.2</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">5.7</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">10.3</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">11.3</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Yeast</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">106</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">1,198. bp</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">76&percnt;</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">67.0</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><BOLD>84.9</BOLD></TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">79.2</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">3.5</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">5.9</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">6.5</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Plants</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">61</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">647. bp</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">67&percnt;</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><BOLD>91.8</BOLD></TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">88.5</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">83.6</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">7.5</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">15.4</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">9.2</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Animals</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">99</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">197. aa</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">59&percnt;</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">64.6</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><BOLD>69.7</BOLD></TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">57.6</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">5.7</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">10.2</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">14.2</TD></TR><TR><TD valign="middle" ROWSPAN="1" COLSPAN="1">Primates</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">500</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">632. bp</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">13&percnt;</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">88.8</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1"><BOLD>89.0</BOLD></TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">88.8</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">3.1</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">3.4</TD><TD valign="middle" ROWSPAN="1" COLSPAN="1">5.1</TD></TR></tbody></table> --><!-- <table-wrap-foot> 
+						<fn id="nt401">
+							<p>
+								<p>
+									<sup>a</sup>The percentage of alignments for which the 95&percnt; credible set contained the &ldquo;true&rdquo; tree. The numbers in boldface indicate the better performing model.
+								</p>
+							</p>
+						</fn>
+						<fn id="nt402">
+							<p>
+								<p>
+									<sup>b</sup>The largest 10&percnt; of credible sets were treated as outliers and excluded from the calculation of the average. The medians were comparatively uninformative and are not given here.
+								</p>
+							</p>
+						</fn>
+						<fn id="nt403">
+							<p>
+								<p>aa, amino acids; LRT, likelihood ratio test.</p></p>
+						</fn>
+					</table-wrap-foot> --></table-wrap>
+        <p>In the case of the primate data, all three methods were similarly accurate in estimating
+          phylogenies. This is probably because the data were relatively clocklike, with the
+          molecular clock assumption rejected for less than a third of the alignments. For all of
+          the datasets that were analyzed, the phylogenetic estimates made using a strict molecular
+          clock were the most precise. As expected, the average size of the 95% credible
+          set of trees was always the smallest for the molecular clock method, and nearly always
+          greatest for the unrooted method. Under conditions in which the data more or less conform
+          to a molecular clock, such as the primate data examined in this study, the molecular clock
+          method should be used due to its superior precision.</p>
+      </sec>
+    </sec>
+    <sec id="s3">
+      <title>Discussion</title>
+      <p>The relaxed phylogenetics methods described here co-estimate phylogeny and divergence times
+        under a relaxed molecular clock model, thus providing an integrated framework for biologists
+        interested in reconstructing ancestral divergence dates and phylogenetic relationships. The
+        method presented here naturally incorporates the time-dependent nature of the evolutionary
+        process without assuming a strict molecular clock. One of the byproducts of estimating a
+        phylogeny using a relaxed clock is an estimate of the position of the root of the tree, even
+        in the absence of a non-reversible model of substitution [<xref ref-type="bibr" rid="pbio-0040088-b044">44</xref>, <xref ref-type="bibr" rid="pbio-0040088-b045">45</xref>] or a known outgroup. </p>
+      <p>Recently, a number of authors have begun to investigate the impact of various forms of
+        model misspecification on the accuracy of posterior probabilities of clade support
+          [<xref ref-type="bibr" rid="pbio-0040088-b046">46</xref>–<xref ref-type="bibr" rid="pbio-0040088-b048">48</xref>]. In a Bayesian framework, the
+        absence of a molecular clock assumption (either strict or relaxed) represents a prior belief
+        that the tree topology provides no information about relative branch lengths. We suggest
+        that this represents a poor prior belief, and that Bayesian estimation of phylogeny from
+        short sequences may be biased when the time-dependency of the evolutionary process is not
+        modeled. We would argue that the complex time-dependency of the evolutionary process should
+        not be ignored a priori as has been common practice, but should instead be carefully
+        modeled. This paper represents a first attempt at incorporating a relaxed-clock model into a
+        Bayesian method of phylogenetic inference. </p>
+      <p>We have presented a large analysis of 102 bacterial, 106 yeast, 61 plant, 99 metazoan, and
+        500 primate alignments that overall suggests the relaxed-clock models are both more accurate
+        and more precise at estimating phylogenetic relationships than current unrooted methods
+        implemented in MrBayes and other programs. Overall, these initial results suggest that a
+        relaxed phylogenetic approach may be the most appropriate even when phylogenetic
+        relationships are of primary concern and the rooting and dating of the tree are of less
+        interest.</p>
+    </sec>
+    <sec id="s4">
+      <title>Materials and Methods</title>
+      <p>The molecular clock assumption can be relaxed in a variety of ways [<xref ref-type="bibr" rid="pbio-0040088-b013">13</xref>–<xref ref-type="bibr" rid="pbio-0040088-b015">15</xref>, <xref ref-type="bibr" rid="pbio-0040088-b017">17</xref>, <xref ref-type="bibr" rid="pbio-0040088-b049">49</xref>–<xref ref-type="bibr" rid="pbio-0040088-b052">52</xref>]. In Bayesian treatments of the
+        relaxed clock, there is a vector of rates <italic>R</italic>={
+          <italic>r</italic><sub>1</sub>, <italic>r</italic><sub>2</sub>,…,
+          <italic>r</italic><sub>2 <italic>n</italic>−1 </sub>} and a
+        corresponding vector of node heights <bold>t</bold>={
+          <italic>t</italic><sub>1</sub>, <italic>t</italic><sub>2</sub>,…,
+          <italic>t</italic><sub>2 <italic>n</italic>−1 </sub>} in units of time.
+        The node height vector, in conjunction with an edge graph, <italic>E,</italic> define an
+        ancestral tree g = { <italic>E</italic>, <bold>t</bold>} in units of time.
+        To convert this tree from units of time to molecular evolutionary units, the rates are
+        either assigned to branches [<xref ref-type="bibr" rid="pbio-0040088-b015">15</xref>, <xref ref-type="bibr" rid="pbio-0040088-b017">17</xref>] or to nodes
+          [<xref ref-type="bibr" rid="pbio-0040088-b053">53</xref>, <xref ref-type="bibr" rid="pbio-0040088-b054">54</xref>]. In both types of models, the prior
+        probability of the rates <italic>f<sub>R</sub>
+        </italic>( <italic>R</italic>| <italic>g</italic>) can be calculated by the product of the
+        probability of each rate <italic>r</italic><sub>2</sub> in the tree given the ancestral rate
+            <italic>r<sub>A</sub>
+        </italic><sub>( <italic>i</italic>) </sub> and the time Δ <italic>t<sub>i</sub>
+        </italic> between the ancestral and derived rate: </p>
+      <p>
+        <disp-formula id="pbio-0040088-e001"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.e001" xlink:type="simple"/><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+					</ext-link> xmlns:xlink="
+					<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+					<mml:mrow>
+						<mml:msub>
+							<mml:mi>f</mml:mi>
+							<mml:mi>R</mml:mi>
+						</mml:msub>
+						<mml:mo STRETCHY="false">(</mml:mo>
+						<mml:mi>R</mml:mi>
+						<mml:mo>|</mml:mo>
+						<mml:mi>g</mml:mi>
+						<mml:mo STRETCHY="false">)</mml:mo>
+						<mml:mo>=</mml:mo>
+						<mml:mstyle DISPLAYSTYLE="true">
+							<mml:munder>
+								<mml:mo>&Pi;</mml:mo>
+								<mml:mi>i</mml:mi>
+							</mml:munder>
+							<mml:mrow>
+								<mml:mi>f</mml:mi>
+								<mml:mo STRETCHY="false">(</mml:mo>
+								<mml:msub>
+									<mml:mi>r</mml:mi>
+									<mml:mi>i</mml:mi>
+								</mml:msub>
+								<mml:mo>|</mml:mo>
+								<mml:msub>
+									<mml:mi>r</mml:mi>
+									<mml:mrow>
+										<mml:mi>A</mml:mi>
+										<mml:mo STRETCHY="false">(</mml:mo>
+										<mml:mi>i</mml:mi>
+										<mml:mo STRETCHY="false">)</mml:mo>
+									</mml:mrow>
+								</mml:msub>
+								<mml:mo>,</mml:mo>
+								<mml:mi>&Delta;</mml:mi>
+								<mml:msub>
+									<mml:mi>t</mml:mi>
+									<mml:mi>i</mml:mi>
+								</mml:msub>
+								<mml:mo STRETCHY="false">)</mml:mo>
+								<mml:mo>.</mml:mo>
+							</mml:mrow>
+						</mml:mstyle>
+					</mml:mrow>
+				</mml:math> --></disp-formula>
+      </p>
+      <p>The first such model to be described [<xref ref-type="bibr" rid="pbio-0040088-b015">15</xref>] assigned rates to the midpoints of branches
+        and the assumed lognormal prior distribution relating the midpoint of the ancestral branch
+        to the midpoint of the derived branch. Another interesting model is the exponential
+        distribution model of Aris-Brosou and Yang [<xref ref-type="bibr" rid="pbio-0040088-b017">17</xref>], which employed an exponential prior
+        distribution on rate <italic>r</italic> with a mean (and therefore standard deviation) equal
+        to the ancestral rate <italic>r<sub>A</sub>, </italic> and with no dependence on the time
+        between the two rates. This second model represents a more punctuated view of change in
+        evolutionary rate, so that only the number of branching events, and not the length of time
+        between events, determines the amount of change in evolutionary rate. In all autocorrelated
+        relaxed-clock models, an additional assumption must be made about the rate at the root. For
+        models that assign rates to nodes, it is necessary to treat the root node in a special way,
+        as it does not have a parent node [<xref ref-type="bibr" rid="pbio-0040088-b015">15</xref>]. For models that assign rates to branches, a branch above the root is
+        implied and must be assigned a rate. </p>
+      <p>In the autocorrelated relaxed-clock models that have been described, including the commonly
+        used lognormal model [<xref ref-type="bibr" rid="pbio-0040088-b015">15</xref>,
+          <xref ref-type="bibr" rid="pbio-0040088-b017">17</xref>, <xref ref-type="bibr" rid="pbio-0040088-b055">55</xref>], it is also necessary to specify the degree of
+        autocorrelation as a prior. Other prior models of rate change, such as the gamma
+        distribution model and the Ornstein-Uhlenbeck process [<xref ref-type="bibr" rid="pbio-0040088-b055">55</xref>], require more than one hyperparameter to be
+        specified, so that selecting suitable values for a particular dataset may be an even more
+        difficult exercise. The effects of varying these hyperparameters are poorly understood
+          [<xref ref-type="bibr" rid="pbio-0040088-b022">22</xref>], but there is
+        likely to be a considerable impact on posterior estimates of rates. </p>
+      <sec id="s4a">
+        <title>Uncorrelated relaxed clocks</title>
+        <p>We present an alternative to the autocorrelated prior in which there is, a priori, no
+          correlation of the rates on adjacent branches of the tree. Instead we propose a model in
+          which the rate on each branch of the tree is drawn independently and identically from an
+          underlying rate distribution. We investigate two candidates for the rate distribution
+          among branches:</p>
+        <p>
+          <disp-formula id="pbio-0040088-e002"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.e002" xlink:type="simple"/><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+					</ext-link> xmlns:xlink="
+					<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+					<mml:mi>r</mml:mi>
+					<mml:mo>&sim;</mml:mo>
+					<mml:mtext>Exp</mml:mtext>
+					<mml:mo>(</mml:mo>
+					<mml:mi>&lambda;</mml:mi>
+					<mml:mo>)</mml:mo>
+				</mml:math> --></disp-formula>
+        </p>
+        <p>
+          <disp-formula id="pbio-0040088-e003"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.e003" xlink:type="simple"/><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+				</ext-link> xmlns:xlink="
+				<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+				<mml:mrow>
+					<mml:mi>r</mml:mi>
+					<mml:mo>&sim;</mml:mo>
+					<mml:mi>L</mml:mi>
+					<mml:mi>o</mml:mi>
+					<mml:mi>g</mml:mi>
+					<mml:mi>N</mml:mi>
+					<mml:mi>o</mml:mi>
+					<mml:mi>r</mml:mi>
+					<mml:mi>m</mml:mi>
+					<mml:mi>a</mml:mi>
+					<mml:mi>l</mml:mi>
+					<mml:mo STRETCHY="false">(</mml:mo>
+					<mml:mi>&mu;</mml:mi>
+					<mml:mo>,</mml:mo>
+					<mml:msup>
+						<mml:mi>&sigma;</mml:mi>
+						<mml:mn>2</mml:mn>
+					</mml:msup>
+					<mml:mo STRETCHY="false">)</mml:mo>
+				</mml:mrow>
+				<mml:mrow>
+					<mml:mo>.</mml:mo>
+				</mml:mrow>
+			</mml:math> --></disp-formula>
+        </p>
+        <p>These uncorrelated priors can be framed in a hierarchical Bayesian framework, as with the
+          autocorrelated priors. In this scenario the exponential version of uncorrelated relaxed
+          clock would have a prior probability on the rate vector of:</p>
+        <p>
+          <disp-formula id="pbio-0040088-e004"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.e004" xlink:type="simple"/><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+			</ext-link> xmlns:xlink="
+			<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+			<mml:mrow>
+				<mml:msub>
+					<mml:mi>f</mml:mi>
+					<mml:mi>R</mml:mi>
+				</mml:msub>
+				<mml:mo STRETCHY="false">(</mml:mo>
+				<mml:mi>R</mml:mi>
+				<mml:mo>|</mml:mo>
+				<mml:mi>g</mml:mi>
+				<mml:mo STRETCHY="false">)</mml:mo>
+				<mml:mo>=</mml:mo>
+				<mml:mi>f</mml:mi>
+				<mml:mo STRETCHY="false">(</mml:mo>
+				<mml:mi>R</mml:mi>
+				<mml:mo STRETCHY="false">)</mml:mo>
+				<mml:mo>=</mml:mo>
+				<mml:mstyle DISPLAYSTYLE="true">
+					<mml:munder>
+						<mml:mo>&Pi;</mml:mo>
+						<mml:mi>i</mml:mi>
+					</mml:munder>
+					<mml:mrow>
+						<mml:mi>&lambda;</mml:mi>
+						<mml:msup>
+							<mml:mi>e</mml:mi>
+							<mml:mrow>
+								<mml:mo>&minus;</mml:mo>
+								<mml:mi>&lambda;</mml:mi>
+								<mml:msub>
+									<mml:mi>r</mml:mi>
+									<mml:mi>i</mml:mi>
+								</mml:msub>
+							</mml:mrow>
+						</mml:msup>
+					</mml:mrow>
+				</mml:mstyle>
+			</mml:mrow>
+			<mml:mrow>
+				<mml:mo>.</mml:mo>
+			</mml:mrow>
+		</mml:math> --></disp-formula>
+        </p>
+        <p>This model corresponds to an exponential prior distribution on rate <italic>r<sub>i</sub>
+          </italic> with a mean (and therefore standard deviation) equal to
+            λ<sup>−1</sup> and no dependence on either the rate of the previous
+          branch or the time between the two rates. The parameter λ is a hyperparameter
+          that is fixed and not estimated via MCMC, and represents a prior statement about both the
+          mean and the variance of branch rates. This prior reflects a punctuated view of change in
+          evolutionary rate, so that the prior expectation of the rate at all branches is the same,
+          with no autocorrelation between adjacent branches. Notice that the posterior distribution
+          of rates among branches need not be the same as the prior in this setup and that
+          autocorrelation may exist in the posterior, even though it is not specified in the prior. </p>
+        <p>Instead of framing Equations <xref ref-type="disp-formula" rid="pbio-0040088-e002">2</xref> and <xref ref-type="disp-formula" rid="pbio-0040088-e003">3</xref> as prior
+          distributions in a hierarchical Bayesian framework, they can instead be reformulated as a
+          full likelihood model. In this case, the branch rates are not independent random variables
+          with a prior distribution, but are instead constrained so as to fit one of the
+          distributions in Equations <xref ref-type="disp-formula" rid="pbio-0040088-e002">2</xref>
+          and <xref ref-type="disp-formula" rid="pbio-0040088-e003">3</xref> exactly. The parameters
+          of the rate distribution are no longer hyperparameters of a prior distribution, but are
+          instead parameters of the likelihood model. This is closely analogous to the common way in
+          which rate heterogeneity among sites is treated [<xref ref-type="bibr" rid="pbio-0040088-b028">28</xref>]. </p>
+      </sec>
+      <sec id="s4b">
+        <title>Priors on phylogeny</title>
+        <p>A particular requirement of Bayesian phylogenetic inference is the responsibility given
+          to users to specify a prior probability distribution on the shape of the phylogeny (node
+          ages and branching order). This can be either a benefit or a burden, largely depending on
+          whether an obvious prior distribution presents itself for the data at hand. For example,
+          the coalescent prior [<xref ref-type="bibr" rid="pbio-0040088-b056">56</xref>,
+            <xref ref-type="bibr" rid="pbio-0040088-b057">57</xref>] is a commonly used
+          prior for population-level data and has been extended to include various forms of
+          demographic functions [<xref ref-type="bibr" rid="pbio-0040088-b058">58</xref>,
+            <xref ref-type="bibr" rid="pbio-0040088-b059">59</xref>], sub-divided
+          populations [<xref ref-type="bibr" rid="pbio-0040088-b060">60</xref>],
+          and other complexities. Traditional speciation models such as the Yule process
+            [<xref ref-type="bibr" rid="pbio-0040088-b061">61</xref>] and various
+          birth–death models [<xref ref-type="bibr" rid="pbio-0040088-b062">62</xref>, <xref ref-type="bibr" rid="pbio-0040088-b063">63</xref>] can also
+          provide useful priors for species-level data. Such models generally have a number of
+          hyperparameters (for example, effective population size, growth rate, or speciation and
+          extinction rates), which, under a Bayesian framework, can be sampled to provide a
+          posterior distribution of these potentially interesting biological quantities. </p>
+        <p>In some cases, the choice of prior on the phylogenetic tree can exert a strong influence
+          on inferences made from a given dataset [<xref ref-type="bibr" rid="pbio-0040088-b064">64</xref>]. The sensitivity of inference results to the
+          prior chosen will be largely dependent on the data analyzed and few general
+          recommendations can be made. It is, however, good practice to perform the MCMC analysis
+          without any data in order to sample wholly from the prior distribution. This distribution
+          can be compared to the posterior distribution for parameters of interest in order to
+          examine the relative influence of the data and the prior (<xref ref-type="fig" rid="pbio-0040088-g003">Figure 3</xref>). </p>
+      </sec>
+      <sec id="s4c">
+        <title>Bayesian inference</title>
+        <p>The full Bayesian sequence analysis with an uncorrelated relaxed-clock model allows the
+          co-estimation of substitution parameters, relaxed-clock parameters, and the ancestral
+          phylogeny. The posterior distribution is of the following form:</p>
+        <p>
+          <disp-formula id="pbio-0040088-e005"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.e005" xlink:type="simple"/><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+		</ext-link> xmlns:xlink="
+		<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+		<mml:mrow>
+			<mml:mi>f</mml:mi>
+			<mml:mo STRETCHY="false">(</mml:mo>
+			<mml:mi>g</mml:mi>
+			<mml:mo>,</mml:mo>
+			<mml:mi>&Thetas;</mml:mi>
+			<mml:mo>,</mml:mo>
+			<mml:mi>&Phi;</mml:mi>
+			<mml:mo>,</mml:mo>
+			<mml:mi>&Omega;</mml:mi>
+			<mml:mo>|</mml:mo>
+			<mml:mi>D</mml:mi>
+			<mml:mo STRETCHY="false">)</mml:mo>
+			<mml:mo>=</mml:mo>
+			<mml:mfrac>
+				<mml:mn>1</mml:mn>
+				<mml:mi>Z</mml:mi>
+			</mml:mfrac>
+			<mml:mi>Pr</mml:mi>
+			<mml:mo></mml:mo>
+			<mml:mo></mml:mo>
+			<mml:mi>D</mml:mi>
+			<mml:mo>|</mml:mo>
+			<mml:mi>g</mml:mi>
+			<mml:mo>,</mml:mo>
+			<mml:mi>&Phi;</mml:mi>
+			<mml:mo>,</mml:mo>
+			<mml:mi>&Omega;</mml:mi>
+			<mml:mo STRETCHY="false">)</mml:mo>
+			<mml:msub>
+				<mml:mi>f</mml:mi>
+				<mml:mi>G</mml:mi>
+			</mml:msub>
+			<mml:mo STRETCHY="false">(</mml:mo>
+			<mml:mi>g</mml:mi>
+			<mml:mo>|</mml:mo>
+			<mml:mi>&Thetas;</mml:mi>
+			<mml:mo STRETCHY="false">)</mml:mo>
+			<mml:msub>
+				<mml:mi>f</mml:mi>
+				<mml:mrow>
+					<mml:mi>&Thetas;</mml:mi>
+					<mml:mi>&Omega;</mml:mi>
+					<mml:mi>&Phi;</mml:mi>
+				</mml:mrow>
+			</mml:msub>
+			<mml:mo STRETCHY="false">(</mml:mo>
+			<mml:mi>&Thetas;</mml:mi>
+			<mml:mo>,</mml:mo>
+			<mml:mi>&Omega;</mml:mi>
+			<mml:mo>,</mml:mo>
+			<mml:mi>&Phi;</mml:mi>
+			<mml:mo STRETCHY="false">)</mml:mo>
+		</mml:mrow>
+		<mml:mrow>
+			<mml:mo>.</mml:mo>
+		</mml:mrow>
+	</mml:math> --></disp-formula>
+        </p>
+        <p>The vector Φ contains the parameters of the relaxed-clock model (e.g., μ
+          and σ<sup>2</sup> in the case of lognormally distributed rates among branches).
+          The term Pr <italic>D</italic>|g,Φ,Ω is the standard Felsenstein
+          likelihood, where <italic>g</italic> is a tree with branch length measured in units of
+          time. For the purposes of calculating this likelihood, branch lengths are converted to
+          units of substitutions by multiplying the rates defined by Φ with the internode
+          distance between node <italic>i</italic> and parent node <italic>j</italic> in tree
+            <italic>g</italic>. The tree prior, <italic>f<sub>G</sub>
+          </italic>( <italic>g</italic>|Θ), can either be a coalescent-based prior
+            [<xref ref-type="bibr" rid="pbio-0040088-b030">30</xref>, <xref ref-type="bibr" rid="pbio-0040088-b065">65</xref>] for within-population data or some other
+          appropriate prior if the sequences come from multiple populations/species [<xref ref-type="bibr" rid="pbio-0040088-b055">55</xref>]. The vector Θ
+          contains the hyperparameters of the tree prior. The vector Ω contains the
+          parameters of the substitution model (such as transition/transversion ratio, κ;
+          shape parameter for gamma-distributed rates among sites, α; and proportion of
+          invariant sites, <italic>p<sub>inv</sub>
+          </italic>). </p>
+        <p>We summarize the posterior density in <xref ref-type="disp-formula" rid="pbio-0040088-e005">Equation 5</xref> using samples (
+          <italic>g</italic>,Θ,Φ,Ω) ∼ <italic>f</italic>
+          obtained via MCMC. If, for example, the divergence times are of primary interest then the
+          other sampled parameters can be thought of as nuisance parameters, and vice versa. </p>
+        <p>The formulation in <xref ref-type="disp-formula" rid="pbio-0040088-e005">Equation
+            5</xref> implies that the branch-rates could be integrated analytically in the
+          Felsenstein likelihood. Although this could be accomplished relatively easily by
+          discretizing the rate distribution and averaging the likelihood over the rate categories
+          on each branch, we elected to do the integration using MCMC. This was achieved by
+          assigning a unique rate category <italic>c</italic> ∈ 1,2,…,2
+            <italic>n</italic>−2 to each branch <italic>j</italic> of the tree. During the
+          calculation of the likelihood the rate category <italic>c</italic> is converted to a rate
+          by the following method: </p>
+        <p>
+          <disp-formula id="pbio-0040088-e006"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.e006" xlink:type="simple"/><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+	</ext-link> xmlns:xlink="
+	<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+	<mml:mrow>
+		<mml:msub>
+			<mml:mi>r</mml:mi>
+			<mml:mi>c</mml:mi>
+		</mml:msub>
+		<mml:mo>=</mml:mo>
+		<mml:msup>
+			<mml:mi>D</mml:mi>
+			<mml:mrow>
+				<mml:mo>&minus;</mml:mo>
+				<mml:mn>1</mml:mn>
+			</mml:mrow>
+		</mml:msup>
+		<mml:mo STRETCHY="true">(</mml:mo>
+		<mml:mfrac>
+			<mml:mrow>
+				<mml:mi>c</mml:mi>
+				<mml:mo>&minus;</mml:mo>
+				<mml:mn>1</mml:mn>
+				<mml:mo>/</mml:mo>
+				<mml:mn>2</mml:mn>
+			</mml:mrow>
+			<mml:mrow>
+				<mml:mn>2</mml:mn>
+				<mml:mi>n</mml:mi>
+				<mml:mo>&minus;</mml:mo>
+				<mml:mn>2</mml:mn>
+			</mml:mrow>
+		</mml:mfrac>
+		<mml:mo STRETCHY="true">)</mml:mo>
+	</mml:mrow>
+	<mml:mrow>
+		<mml:mo>.</mml:mo>
+	</mml:mrow>
+</mml:math> --></disp-formula>
+        </p>
+        <p>The function <italic>D</italic><sup>−1</sup>( <italic>x</italic>) is the
+          inverse function of the probability distribution function, <italic>D</italic>(
+            <italic>x</italic>)= <italic>P</italic>( <italic>X</italic>≤ <italic>x</italic>),
+          of the relaxed-clock model specified by Equations <xref ref-type="disp-formula" rid="pbio-0040088-e002">2</xref> and <xref ref-type="disp-formula" rid="pbio-0040088-e003">3</xref>. This discretization of the underlying rate
+          distribution is illustrated in <xref ref-type="fig" rid="pbio-0040088-g005">Figure
+            5</xref> for a lognormal distribution with 12 rate categories (sufficient for a tree of
+          seven tips). To integrate the branch rates out, the assignment of rate categories
+            <italic>c</italic> to branches was sampled via MCMC. </p>
+        <fig id="pbio-0040088-g005" position="float">
+          <object-id pub-id-type="doi">10.1371/journal.pbio.0040088.g005</object-id>
+          <label>Figure 5</label>
+          <caption>
+            <title>A Lognormal Distribution Discretized into 12 Rate Categories</title>
+            <p>Each of the 12 categories has equal probability ( <italic>p</italic> = 1/12). The
+                <italic>i</italic><sup>th</sup> rate category (numbered from left to right)
+              corresponds to the (I − 0.5)/12 quantile of the lognormal distribution. </p>
+          </caption>
+          <graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.g005" xlink:type="simple"/>
+        </fig>
+      </sec>
+      <sec id="s4d">
+        <title>Model selection</title>
+        <p>One issue that remains largely unresolved in this piece of work is the issue of model
+          comparison and model selection. Within a Bayesian framework, Bayes factors are usually
+          regarded as the correct way to deal with model selection. Typically this involves a
+          technique known as reversible-jump MCMC. We have not implemented this, but we do plan on
+          developing a reversible-jump MCMC version of this framework in the future. Typically model
+          selection is easy when one model produces a much better fit. Because all of the models for
+          rate variation examined here differ by one free parameter at most, a simple comparison of
+          the average log posterior probabilities will usually be revealing. It is only when the log
+          posteriors are very similar and the results are qualitatively different between the two
+          models that model selection becomes an issue. This combination of conditions did not occur
+          in any of our real datasets.</p>
+      </sec>
+      <sec id="s4e">
+        <title>Proposing new states in the MCMC kernel</title>
+        <p>The MCMC must sample the tree topology, the divergence times, and the individual
+          parameters of the substitution model and tree prior(s). Therefore, a series of proposal
+          distributions (often called “moves”) needs to be employed. Our MCMC
+          implementation employs an array of moves, each of which is designed to explore a certain
+          subspace in the overall parameter/model space being explored. For example, some moves
+          propose local changes to the tree topology while keeping the coalescent interval and all
+          the other parameters constant. Some moves propose a change to a single substitution
+          parameter (such as the shape parameter of the gamma distribution) while keeping everything
+          else constant. The general scheme is to (1) choose a random move with a probability
+          proportional to a specified weight, then (2) apply the move to the current state, and (3)
+          assess the relative score of the new state. The new state is adopted if it has a higher
+          posterior probability; otherwise it is adopted with probability equal to the ratio of its
+          posterior probability to the posterior probability of the previous state. The weights
+          allow the researcher to favor certain moves which can help with the performance of the
+          MCMC, but generally the default weights give good results. Most of the moves used in our
+          MCMC implementation have been previously described [<xref ref-type="bibr" rid="pbio-0040088-b030">30</xref>]. The two new moves involve sampling the rate
+          categories of the branches (a random pair of branches are chosen and their categories are
+          swapped) and dealing with rate categories of branches when a change to the tree topology
+          is made. (We implement two alternatives: keeping all the rate categories the same when a
+          subtree is moved or performing a single rate swap simultaneously with a tree topology
+          change.) These moves are very simplistic, and we suspect that better proposal
+          distributions exist. We have found a small number of datasets in which our current
+          proposal distribution does not work well. Nevertheless, for a large number of datasets
+          including the ones presented in this paper, our scheme performs more than adequately as
+          assessed by repeated runs and estimation of integrated autocorrelation times. </p>
+      </sec>
+      <sec id="s4f">
+        <title>Summarizing the posterior distribution</title>
+        <p>The output of an MCMC analysis is a set of samples from the posterior distribution. In
+          the case of the uncorrelated relaxed-clock models described above, the posterior
+          distribution is a distribution over tree topologies, dates of divergence, branch rates,
+          and parameters of the rate and substitution models. This complex set of samples can be
+          summarized in many ways. One of the simplest summaries of the branch rate distribution is
+          to sample the coefficient of variation (σ <italic>
+            <sub>r</sub>
+          </italic>; the standard deviation divided by the mean) of the branch rates. Under the
+          exponential model, σ <italic><sub>r</sub> = 1 </italic> by definition; under the
+          lognormal model, σ <italic>
+            <sub>r</sub>
+          </italic> gives a measure of the degree of clocklikeness of the data. If σ <italic>
+            <sub>r</sub>
+          </italic> = 0 then the data are perfectly clocklike, whereas larger values correspond to
+          increasing rate heterogeneity among branches. A posterior estimate of σ <italic>
+            <sub>r</sub>
+          </italic> can be easily calculated: </p>
+        <p>
+          <disp-formula id="pbio-0040088-e007"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.e007" xlink:type="simple"/><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+</ext-link> xmlns:xlink="
+<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+<mml:mrow>
+	<mml:mi>E</mml:mi>
+	<mml:mo STRETCHY="false">&lsqb;</mml:mo>
+	<mml:msub>
+		<mml:mi>&sigma;</mml:mi>
+		<mml:mi>r</mml:mi>
+	</mml:msub>
+	<mml:mo>|</mml:mo>
+	<mml:mi>D</mml:mi>
+	<mml:mo STRETCHY="false">&rsqb;</mml:mo>
+	<mml:mo>=</mml:mo>
+	<mml:mfrac>
+		<mml:mn>1</mml:mn>
+		<mml:mi>L</mml:mi>
+	</mml:mfrac>
+	<mml:mstyle DISPLAYSTYLE="true">
+		<mml:munderover>
+			<mml:mo>&sum;</mml:mo>
+			<mml:mrow>
+				<mml:mi>i</mml:mi>
+				<mml:mo>=</mml:mo>
+				<mml:mn>1</mml:mn>
+			</mml:mrow>
+			<mml:mi>L</mml:mi>
+		</mml:munderover>
+		<mml:mrow>
+			<mml:msubsup>
+				<mml:mi>&sigma;</mml:mi>
+				<mml:mi>r</mml:mi>
+				<mml:mrow>
+					<mml:mo STRETCHY="false">(</mml:mo>
+					<mml:mi>i</mml:mi>
+					<mml:mo STRETCHY="false">)</mml:mo>
+				</mml:mrow>
+			</mml:msubsup>
+		</mml:mrow>
+	</mml:mstyle>
+</mml:mrow>
+<mml:mrow>
+	<mml:mo>.</mml:mo>
+</mml:mrow>
+</mml:math> --></disp-formula>
+        </p>
+        <p>This is the simple average of the calculated <inline-formula id="pbio-0040088-ex001"><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pbio.0040088.ex001" xlink:type="simple"/></inline-formula>
+          
+          over all <italic>L</italic> samples in the estimated posterior distribution. In addition,
+          95% HPD limits can also be calculated. In a similar manner, marginal posterior
+          estimates can be calculated for </p>
+        <p>
+          <disp-formula id="pbio-0040088-ex002"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.ex002" xlink:type="simple"/><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+</ext-link> xmlns:xlink="
+<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+<mml:mi>E</mml:mi>
+<mml:mo>&lsqb;</mml:mo>
+<mml:msub>
+<mml:mi>t</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+<mml:mo>|</mml:mo>
+<mml:mi>D</mml:mi>
+<mml:mo>&rsqb;</mml:mo>
+<mml:mtext>&thinsp;the length of time the&thinsp;</mml:mtext>
+<mml:msup>
+<mml:mi>j</mml:mi>
+<mml:mtext>th</mml:mtext>
+</mml:msup>
+<mml:mtext>&thinsp;branch represents,</mml:mtext>
+</mml:math> --><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+</ext-link> xmlns:xlink="
+<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+<mml:mi>E</mml:mi>
+<mml:mo>&lsqb;</mml:mo>
+<mml:msub>
+<mml:mi>r</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+<mml:mo>|</mml:mo>
+<mml:mi>D</mml:mi>
+<mml:mo>&rsqb;</mml:mo>
+<mml:mtext>&thinsp;the rate of evolution on the&thinsp;</mml:mtext>
+<mml:msup>
+<mml:mi>j</mml:mi>
+<mml:mtext>th</mml:mtext>
+</mml:msup>
+<mml:mtext>&thinsp;branch, and,</mml:mtext>
+</mml:math> --><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+</ext-link> xmlns:xlink="
+<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+<mml:mi>E</mml:mi>
+<mml:mo>&lsqb;</mml:mo>
+<mml:msub>
+<mml:mi>r</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+<mml:msub>
+<mml:mi>t</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+<mml:mo>|</mml:mo>
+<mml:mi>D</mml:mi>
+<mml:mo>&rsqb;</mml:mo>
+<mml:mtext>&thinsp;the expected number of substitutions per site occurring</mml:mtext>
+</mml:math> --><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+</ext-link> xmlns:xlink="
+<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+<mml:mtext>on the&thinsp;</mml:mtext>
+<mml:msup>
+<mml:mi>j</mml:mi>
+<mml:mtext>th</mml:mtext>
+</mml:msup>
+<mml:mtext>&thinsp;branch.</mml:mtext>
+</mml:math> --></disp-formula>
+        </p>
+        <p>Some subtlety in the interpretation of the posterior distribution of rates is required
+          because both the amount of time a branch represents, <italic>t<sub>j</sub>, </italic> and
+          the rate of evolution along the branch, <italic>r<sub>j</sub>
+          </italic>, are random variables in the MCMC analysis. For example, in general,
+            <italic>E</italic>[ <italic>r<sub>j</sub>t<sub>j</sub>
+          </italic>| <italic>D</italic>] ≠ <italic>E</italic>[
+              <italic>r<sub>j</sub>
+          </italic>| <italic>D</italic>]· <italic>E</italic>[
+              <italic>t<sub>j</sub>
+          </italic>| <italic>D</italic>]. For the purposes of this paper, when we refer to
+          the average rate for a set of branches <italic>B</italic> (such as the set of external
+          branches or the set of internal branches), we define it as the weighted average: </p>
+        <p>
+          <disp-formula id="pbio-0040088-e008"><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pbio.0040088.e008" xlink:type="simple"/><!-- <mml:math xmlns:mml="<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1998/Math/MathML"">http://www.w3.org/1998/Math/MathML"
+</ext-link> xmlns:xlink="
+<ext-link ext-link-type="uri" xlink:href="http://www.w3.org/1999/xlink"">http://www.w3.org/1999/xlink"</ext-link> DISPLAY="block" OVERFLOW="scroll">
+<mml:mrow>
+<mml:msup>
+<mml:mi>r</mml:mi>
+<mml:mrow>
+<mml:mo STRETCHY="false">(</mml:mo>
+<mml:mi>B</mml:mi>
+<mml:mo STRETCHY="false">)</mml:mo>
+</mml:mrow>
+</mml:msup>
+<mml:mo>=</mml:mo>
+<mml:mstyle DISPLAYSTYLE="true">
+<mml:munder>
+<mml:mo>&sum;</mml:mo>
+<mml:mrow>
+<mml:mi>j</mml:mi>
+<mml:mo>&isin;</mml:mo>
+<mml:mi>B</mml:mi>
+</mml:mrow>
+</mml:munder>
+<mml:mrow>
+<mml:msub>
+<mml:mi>r</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+<mml:msub>
+<mml:mi>t</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+</mml:mrow>
+</mml:mstyle>
+<mml:mo>/</mml:mo>
+<mml:mstyle DISPLAYSTYLE="true">
+<mml:munder>
+<mml:mo>&sum;</mml:mo>
+<mml:mrow>
+<mml:mi>j</mml:mi>
+<mml:mo>&isin;</mml:mo>
+<mml:mi>B</mml:mi>
+</mml:mrow>
+</mml:munder>
+<mml:mrow>
+<mml:msub>
+<mml:mi>t</mml:mi>
+<mml:mi>j</mml:mi>
+</mml:msub>
+</mml:mrow>
+</mml:mstyle>
+</mml:mrow>
+<mml:mrow>
+<mml:mo>,</mml:mo>
+</mml:mrow>
+</mml:math> --></disp-formula>
+        </p>
+        <p>rather than the simple unweighted average <inline-formula id="pbio-0040088-ex003"><inline-graphic mimetype="image" xlink:href="info:doi/10.1371/journal.pbio.0040088.ex003" xlink:type="simple"/></inline-formula>
+          .
+          Thus the posterior estimate of average rate over the whole tree is
+          <italic>E</italic>[ <italic>r</italic><sup>( <italic>T</italic>) </sup>|
+            <italic>D</italic>], where <italic>T</italic> = {1,2,…,2
+            <italic>n</italic>−2}. In general, this will be different from the
+          mean of the underlying rate distribution because the rate at each branch is weighted by
+          the time represented by the branch. The justification for this is that the overall rate is
+          best summarized by the total amount of substitutions over the total amount of time, which
+          is what <xref ref-type="disp-formula" rid="pbio-0040088-e008">Equation 8</xref>
+          calculates. </p>
+      </sec>
+      <sec id="s4g">
+        <title>Calibrating the rate of evolution</title>
+        <p>In the above discussion on rate models, it was assumed that it is possible to estimate
+          absolute rates of evolution and the variance in absolute rates. In fact, even under a
+          molecular clock assumption, the divergence times and the overall substitution rate can
+          only be separately estimated if there is a source of external calibration information. In
+          the framework described here, this information can come from one of three sources: (1)
+          Prior information on the age of internal nodes: In a phylogenetic context, calibration
+          information is often obtained by assigning the age of a known fossil to a particular
+          internal node [<xref ref-type="bibr" rid="pbio-0040088-b002">2</xref>].
+          Uncertainty in the association between an internal node and the fossil record can be
+          accommodated by providing a prior probability distribution for the age of the node.
+          Previous studies have used a uniform distribution with upper and lower bounds on the age
+            [<xref ref-type="bibr" rid="pbio-0040088-b054">54</xref>], although
+          other distributions may be suitable [<xref ref-type="bibr" rid="pbio-0040088-b035">35</xref>]. In the above Results section, we presented
+          examples in which calibration times are treated with parametric prior distributions
+          (normal and lognormal). Assigning an age to a particular node is only possible when the
+          tree itself is assumed to be known and fixed, a limitation of previous relaxed-clock
+          implementations [<xref ref-type="bibr" rid="pbio-0040088-b015">15</xref>, <xref ref-type="bibr" rid="pbio-0040088-b017">17</xref>, <xref ref-type="bibr" rid="pbio-0040088-b054">54</xref>]. In the framework presented here, the tree
+          itself is being sampled and thus we cannot define the age of a particular internal node.
+          Instead we specify the age, or the prior distribution of age, for the most recent common
+          ancestor of a set of taxa. Every time a new tree is proposed in the MCMC chain, the most
+          recent common ancestor of the specified taxa is located in the tree, and the prior
+          probability of the age of this node is used to assess the acceptance probability of the
+          proposed tree. (2) Known ages of the sequences: Recently it has also been demonstrated
+          that calibrations can be associated with the sequences at the tips of the tree if they are
+          sampled at significantly different times [<xref ref-type="bibr" rid="pbio-0040088-b029">29</xref>, <xref ref-type="bibr" rid="pbio-0040088-b030">30</xref>, <xref ref-type="bibr" rid="pbio-0040088-b066">66</xref>] with
+          respect to their rate of evolution. Again, there may be uncertainty in calibration dates
+            [<xref ref-type="bibr" rid="pbio-0040088-b067">67</xref>]. The RNA
+          virus data in this study provide examples of this form of calibration information. (3) A
+          strong prior on the substitution rate: If the mean substitution rate is known from a
+          previous study on independent data, then this can be incorporated as prior knowledge. In
+          the simplest case this can be achieved by fixing the rate of evolution to a known value.
+          It is also straightforward to sample the rate from a parametric distribution obtained from
+          a previous (independent) analysis [<xref ref-type="bibr" rid="pbio-0040088-b068">68</xref>, <xref ref-type="bibr" rid="pbio-0040088-b069">69</xref>]. If there
+          is no prior information about the mean substitution rate, then it can be fixed to 1,
+          resulting in time being in units of substitutions per site. </p>
+        <p>All of these forms of calibration information can be incorporated into our MCMC
+          implementation either on their own or in any combination, as appropriate.</p>
+      </sec>
+    </sec>
+    <sec id="s5">
+      <title>Supporting Information</title>
+      <supplementary-material id="sd001" mimetype="application/msword" position="anchor" xlink:href="info:doi/10.1371/journal.pbio.0040088.sd001" xlink:type="simple">
+        <label>Protocol S1</label>
+        <caption>
+          <title>Relaxed Phylogenetics and Dating with Confidence</title>
+          <p>(167 KB DOC).</p>
+        </caption>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>The authors would like to thank S.-M. Chaw and H. Philippe for providing data, and Lindell
+        Bromham for coining the phrase “dating with confidence.” All of the
+        methods described above have been implemented in the BEAST software package ( <ext-link ext-link-type="uri" xlink:href="http://evolve.zoo.ox.ac.uk/beast" xlink:type="simple">http://evolve.zoo.ox.ac.uk/beast</ext-link>). </p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="pbio-0040088-b001">
+        <label>1</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Zuckerkandl</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pauling</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name name-style="western">
+              <surname>Kasha</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pullman</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular disease, evolution and genic heterogeneity.</article-title>
+          <source>Horizons in biochemistry</source>
+          <year>1962</year>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Academic Press</publisher-name>
+          <fpage>189</fpage>
+          <lpage>225</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b002">
+        <label>2</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Zuckerkandl</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pauling</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name name-style="western">
+              <surname>Bryson</surname>
+              <given-names>V</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Vogel</surname>
+              <given-names>HJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolutionary divergence and convergence in proteins.</article-title>
+          <source>Evolving genes and proteins</source>
+          <year>1965</year>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Academic Press</publisher-name>
+          <fpage>97</fpage>
+          <lpage>166</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b003">
+        <label>3</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Britten</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Rates of DNA sequence evolution differ between taxonomic
+            groups.</article-title>
+          <source>Science</source>
+          <year>1986</year>
+          <volume>231</volume>
+          <fpage>1393</fpage>
+          <lpage>1398</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b004">
+        <label>4</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ayala</surname>
+              <given-names>FJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Vagaries of the molecular clock.</article-title>
+          <source>Proc Nat Acad Sci U S A</source>
+          <year>1997</year>
+          <volume>94</volume>
+          <fpage>7776</fpage>
+          <lpage>7783</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b005">
+        <label>5</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Hasegawa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kishino</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Heterogeneity of tempo and mode of mitochondrial DNA evolution among
+            mammalian orders.</article-title>
+          <source>Jpn J Genet</source>
+          <year>1989</year>
+          <volume>64</volume>
+          <fpage>243</fpage>
+          <lpage>258</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b006">
+        <label>6</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Yoder</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yang</surname>
+              <given-names>ZH</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimation of primate speciation dates using local molecular
+            clocks.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2000</year>
+          <volume>17</volume>
+          <fpage>1081</fpage>
+          <lpage>1090</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b007">
+        <label>7</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Felsenstein</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Cases in which parsimony or compatibility methods will be positively
+            misleading.</article-title>
+          <source>Syst Zool</source>
+          <year>1978</year>
+          <volume>27</volume>
+          <fpage>401</fpage>
+          <lpage>410</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b008">
+        <label>8</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ho</surname>
+              <given-names>SYW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jermiin</surname>
+              <given-names>LS</given-names>
+            </name>
+          </person-group>
+          <article-title>Tracing the decay of the historical signal in biological sequence
+            data.</article-title>
+          <source>Syst Biol</source>
+          <year>2004</year>
+          <volume>53</volume>
+          <fpage>628</fpage>
+          <lpage>637</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b009">
+        <label>9</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Huelsenbeck</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ronquist</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>MRBAYES: Bayesian inference of phylogenetic trees.</article-title>
+          <source>Bioinformatics</source>
+          <year>2001</year>
+          <volume>17</volume>
+          <fpage>754</fpage>
+          <lpage>755</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b010">
+        <label>10</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Felsenstein</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Evolutionary trees from DNA sequences: A maximum likelihood
+            approach.</article-title>
+          <source>J Mol Evol</source>
+          <year>1981</year>
+          <volume>17</volume>
+          <fpage>368</fpage>
+          <lpage>376</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b011">
+        <label>11</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Felsenstein</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <source>PHYLIP (Phylogeny Inference Package) version 3.6 [computer
+            program]</source>
+          <year>2004</year>
+          <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://evolution.genetics.washington.edu/phylip.html" xlink:type="simple">http://evolution.genetics.washington.edu/phylip.html</ext-link>. Accessed 31 January
+            2006 </comment>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b012">
+        <label>12</label>
+        <nlm-citation publication-type="book" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Swofford</surname>
+              <given-names>DL</given-names>
+            </name>
+          </person-group>
+          <source>PAUP*: Phylogenetic analysis using parsimony (and other methods), version 4
+            [computer program]</source>
+          <year>2003</year>
+          <publisher-loc>Sunderland (Massachusetts)</publisher-loc>
+          <publisher-name>Sinauer Associates</publisher-name>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b013">
+        <label>13</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Rambaut</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bromham</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimating divergence dates from molecular sequences.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>1998</year>
+          <volume>15</volume>
+          <fpage>442</fpage>
+          <lpage>448</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b014">
+        <label>14</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Sanderson</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title>A nonparametric approach to estimating divergence times in the absence of
+            rate constancy.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>1997</year>
+          <volume>14</volume>
+          <fpage>1218</fpage>
+          <lpage>1231</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b015">
+        <label>15</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Thorne</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kishino</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Painter</surname>
+              <given-names>IS</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimating the rate of evolution of the rate of molecular
+            evolution.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>1998</year>
+          <volume>15</volume>
+          <fpage>1647</fpage>
+          <lpage>1657</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b016">
+        <label>16</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Hasegawa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kishino</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yano</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimation of branching dates among primates by molecular clocks of nuclear
+            DNA which slowed down in Hominoidea.</article-title>
+          <source>J Hum Evol</source>
+          <year>1989</year>
+          <volume>18</volume>
+          <fpage>461</fpage>
+          <lpage>476</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b017">
+        <label>17</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Aris-Brosou</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yang</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>Effects of models of rate evolution on estimation of divergence dates with
+            special reference to the metazoan 18S ribosomal RNA phylogeny.</article-title>
+          <source>Syst Biol</source>
+          <year>2002</year>
+          <volume>51</volume>
+          <fpage>703</fpage>
+          <lpage>714</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b018">
+        <label>18</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Cranston</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rannala</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Closing the gap between rocks and clocks.</article-title>
+          <source>Heredity</source>
+          <year>2005</year>
+          <volume>94</volume>
+          <fpage>461</fpage>
+          <lpage>462</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b019">
+        <label>19</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Hastings</surname>
+              <given-names>WK</given-names>
+            </name>
+          </person-group>
+          <article-title>Monte Carlo sampling methods using Markov chains and their
+            applications.</article-title>
+          <source>Biometrika</source>
+          <year>1970</year>
+          <volume>57</volume>
+          <fpage>97</fpage>
+          <lpage>109</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b020">
+        <label>20</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Metropolis</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rosenbluth</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rosenbluth</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Teller</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Teller</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Equations of state calculations by fast computing machines.</article-title>
+          <source>J Chem Phys</source>
+          <year>1953</year>
+          <volume>21</volume>
+          <fpage>1087</fpage>
+          <lpage>1091</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b021">
+        <label>21</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Drummond</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rambaut</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <source>BEAST version 1.3 [computer program]</source>
+          <year>2003</year>
+          <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://evolve.zoo.ox.ac.uk/beast" xlink:type="simple">http://evolve.zoo.ox.ac.uk/beast</ext-link>. Accessed 31 January 2006 </comment>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b022">
+        <label>22</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ho</surname>
+              <given-names>SY</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Phillips</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Drummond</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cooper</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Accuracy of rate estimation using relaxed-clock models with a critical
+            focus on the early metazoan radiation.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2005</year>
+          <volume>22</volume>
+          <fpage>1355</fpage>
+          <lpage>1363</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b023">
+        <label>23</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Rambaut</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Drummond</surname>
+              <given-names>AJ</given-names>
+            </name>
+          </person-group>
+          <source>Tracer version 1.2 [computer program]</source>
+          <year>2003</year>
+          <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://evolve.zoo.ox.ac.uk" xlink:type="simple">http://evolve.zoo.ox.ac.uk</ext-link>. Accessed 31 January 2006 </comment>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b024">
+        <label>24</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Bennett</surname>
+              <given-names>SN</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Holmes</surname>
+              <given-names>EC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Chirivella</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rodriguez</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Beltran</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Selection-driven evolution of emergent dengue virus.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2003</year>
+          <volume>20</volume>
+          <fpage>1650</fpage>
+          <lpage>1658</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b025">
+        <label>25</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fitch</surname>
+              <given-names>WM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bush</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bender</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cox</surname>
+              <given-names>NJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Long term trends in the evolution of H(3) HA1 human influenza type
+            A.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>1997</year>
+          <volume>94</volume>
+          <fpage>7712</fpage>
+          <lpage>7718</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b026">
+        <label>26</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ferguson</surname>
+              <given-names>NM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Galvani</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bush</surname>
+              <given-names>RM</given-names>
+            </name>
+          </person-group>
+          <article-title>Ecological and immunological determinants of influenza
+            evolution.</article-title>
+          <source>Nature</source>
+          <year>2003</year>
+          <volume>422</volume>
+          <fpage>428</fpage>
+          <lpage>433</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b027">
+        <label>27</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Hasegawa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kishino</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yano</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Dating of the human–ape splitting by a molecular clock of
+            mitochondrial DNA.</article-title>
+          <source>J Mol Evol</source>
+          <year>1985</year>
+          <volume>22</volume>
+          <fpage>160</fpage>
+          <lpage>174</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b028">
+        <label>28</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Yang</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>Maximum likelihood phylogenetic estimation from DNA sequences with variable
+            rates over sites: Approximate methods.</article-title>
+          <source>J Mol Evol</source>
+          <year>1994</year>
+          <volume>39</volume>
+          <fpage>306</fpage>
+          <lpage>314</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b029">
+        <label>29</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Rambaut</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimating the rate of molecular evolution: Incorporating
+            non-contemporaneous sequences into maximum likelihood phylogenies.</article-title>
+          <source>Bioinformatics</source>
+          <year>2000</year>
+          <volume>16</volume>
+          <fpage>395</fpage>
+          <lpage>399</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b030">
+        <label>30</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Drummond</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nicholls</surname>
+              <given-names>GK</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rodrigo</surname>
+              <given-names>AG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Solomon</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimating mutation parameters, population history and genealogy
+            simultaneously from temporally spaced sequence data.</article-title>
+          <source>Genetics</source>
+          <year>2002</year>
+          <volume>161</volume>
+          <fpage>1307</fpage>
+          <lpage>1320</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b031">
+        <label>31</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Amrine-Madsen</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Scally</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Westerman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Stanhope</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Krajewski</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nuclear gene sequences provide evidence for the monophyly of
+            australidelphian marsupials.</article-title>
+          <source>Mol Phylogenet Evol</source>
+          <year>2003</year>
+          <volume>28</volume>
+          <fpage>186</fpage>
+          <lpage>196</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b032">
+        <label>32</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Martin</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Palumbi</surname>
+              <given-names>SR</given-names>
+            </name>
+          </person-group>
+          <article-title>Body size, metabolic rate, generation time, and the molecular
+            clock.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>1993</year>
+          <volume>90</volume>
+          <fpage>4087</fpage>
+          <lpage>4091</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b033">
+        <label>33</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Bromham</surname>
+              <given-names>L</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rambaut</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Harvey</surname>
+              <given-names>PH</given-names>
+            </name>
+          </person-group>
+          <article-title>Determinants of rate variation in mammalian DNA sequence
+            evolution.</article-title>
+          <source>J Mol Evol</source>
+          <year>1996</year>
+          <volume>43</volume>
+          <fpage>610</fpage>
+          <lpage>621</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b034">
+        <label>34</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Godthelp</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Wroe</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Archer</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>A new marsupial from the Early Eocene Tingamarra local fauna of Murgon,
+            southeastern Queensland: A prototypical Australian marsupial?</article-title>
+          <source>J Mammal Evol</source>
+          <year>1999</year>
+          <volume>6</volume>
+          <fpage>289</fpage>
+          <lpage>313</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b035">
+        <label>35</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Hedges</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kumar</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Precision of molecular time estimates.</article-title>
+          <source>Trends Genet</source>
+          <year>2004</year>
+          <volume>20</volume>
+          <fpage>242</fpage>
+          <lpage>247</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b036">
+        <label>36</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Rodriguez</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Oliver</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Marin</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Medina</surname>
+              <given-names>JR</given-names>
+            </name>
+          </person-group>
+          <article-title>The general stochastic model of nucleotide substitution.</article-title>
+          <source>J Theor Biol</source>
+          <year>1990</year>
+          <volume>142</volume>
+          <fpage>485</fpage>
+          <lpage>501</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b037">
+        <label>37</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Rokas</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Williams</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>King</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Carroll</surname>
+              <given-names>SB</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-scale approaches to resolving incongruence in molecular
+            phylogenies.</article-title>
+          <source>Nature</source>
+          <year>2003</year>
+          <volume>425</volume>
+          <fpage>798</fpage>
+          <lpage>804</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b038">
+        <label>38</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Daubin</surname>
+              <given-names>V</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gouy</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Perriere</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>A phylogenomic approach to bacterial phylogeny: Evidence of a core of genes
+            sharing a common history.</article-title>
+          <source>Genome Res</source>
+          <year>2002</year>
+          <volume>12</volume>
+          <fpage>1080</fpage>
+          <lpage>1090</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b039">
+        <label>39</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Chaw</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Chang</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Chen</surname>
+              <given-names>HL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Li</surname>
+              <given-names>WH</given-names>
+            </name>
+          </person-group>
+          <article-title>Dating the monocot–dicot divergence and the origin of core
+            eudicots using whole chloroplast genomes.</article-title>
+          <source>J Mol Evol</source>
+          <year>2004</year>
+          <volume>58</volume>
+          <fpage>424</fpage>
+          <lpage>441</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b040">
+        <label>40</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Philippe</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Snell</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bapteste</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lopez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Holland</surname>
+              <given-names>PW</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Phylogenomics of eukaryotes: impact of missing data on large
+            alignments.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2004</year>
+          <volume>21</volume>
+          <fpage>1740</fpage>
+          <lpage>1752</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b041">
+        <label>41</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Hwang</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Green</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Bayesian Markov chain Monte Carlo sequence analysis reveals varying neutral
+            substitution patterns in mammalian evolution.</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2004</year>
+          <volume>101</volume>
+          <fpage>13994</fpage>
+          <lpage>14001</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b042">
+        <label>42</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Thomas</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Touchman</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Blakesley</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bouffard</surname>
+              <given-names>GG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Beckstrom-Sternberg</surname>
+              <given-names>SM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Comparative analyses of multi-species sequences from targeted genomic
+            regions.</article-title>
+          <source>Nature</source>
+          <year>2003</year>
+          <volume>424</volume>
+          <fpage>788</fpage>
+          <lpage>793</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b043">
+        <label>43</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Phillips</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Delsuc</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Penny</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-scale phylogeny and the detection of systematic
+            biases.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2004</year>
+          <volume>21</volume>
+          <fpage>1455</fpage>
+          <lpage>1458</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b044">
+        <label>44</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Yap</surname>
+              <given-names>VB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Speed</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Rooting a phylogenetic tree with nonreversible substitution
+            models.</article-title>
+          <source>BMC Evol Biol</source>
+          <year>2005</year>
+          <volume>5</volume>
+          <fpage>2</fpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b045">
+        <label>45</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Huelsenbeck</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bollback</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Levine</surname>
+              <given-names>AM</given-names>
+            </name>
+          </person-group>
+          <article-title>Inferring the root of a phylogenetic tree.</article-title>
+          <source>Syst Biol</source>
+          <year>2002</year>
+          <volume>51</volume>
+          <fpage>32</fpage>
+          <lpage>43</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b046">
+        <label>46</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Lemmon</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Moriarty</surname>
+              <given-names>EC</given-names>
+            </name>
+          </person-group>
+          <article-title>The importance of proper model assumption in bayesian
+            phylogenetics.</article-title>
+          <source>Syst Biol</source>
+          <year>2004</year>
+          <volume>53</volume>
+          <fpage>265</fpage>
+          <lpage>277</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b047">
+        <label>47</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Yang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rannala</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Branch-length prior influences Bayesian posterior probability of
+            phylogeny.</article-title>
+          <source>Syst Biol</source>
+          <year>2005</year>
+          <volume>54</volume>
+          <fpage>455</fpage>
+          <lpage>470</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b048">
+        <label>48</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Buckley</surname>
+              <given-names>TR</given-names>
+            </name>
+          </person-group>
+          <article-title>Model misspecification and probabilistic tests of topology: evidence from
+            empirical data sets.</article-title>
+          <source>Syst Biol</source>
+          <year>2002</year>
+          <volume>51</volume>
+          <fpage>509</fpage>
+          <lpage>523</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b049">
+        <label>49</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Cooper</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Penny</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Mass survival of birds across the Cretaceous–Tertiary boundary:
+            Molecular evidence.</article-title>
+          <source>Science</source>
+          <year>1997</year>
+          <volume>275</volume>
+          <fpage>1109</fpage>
+          <lpage>1113</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b050">
+        <label>50</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Sanderson</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimating absolute rates of molecular evolution and divergence times: A
+            penalized likelihood approach.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2002</year>
+          <volume>19</volume>
+          <fpage>101</fpage>
+          <lpage>109</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b051">
+        <label>51</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Cutler</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Estimating divergence times in the presence of an overdispersed molecular
+            clock.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2000</year>
+          <volume>17</volume>
+          <fpage>1647</fpage>
+          <lpage>1660</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b052">
+        <label>52</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Takezaki</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rzhetsky</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nei</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Phylogenetic test of the molecular clock and linearized
+            trees.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>1995</year>
+          <volume>12</volume>
+          <fpage>823</fpage>
+          <lpage>833</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b053">
+        <label>53</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kishino</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Thorne</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bruno</surname>
+              <given-names>WJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Performance of a divergence time estimation method under a probabilistic
+            model of rate evolution.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2001</year>
+          <volume>18</volume>
+          <fpage>352</fpage>
+          <lpage>361</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b054">
+        <label>54</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Thorne</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kishino</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Divergence time and evolutionary rate estimation with multilocus
+            data.</article-title>
+          <source>Syst Biol</source>
+          <year>2002</year>
+          <volume>51</volume>
+          <fpage>689</fpage>
+          <lpage>702</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b055">
+        <label>55</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Aris-Brosou</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yang</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>Bayesian models of episodic evolution support a late Precambrian explosive
+            diversification of the Metazoa.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2003</year>
+          <volume>20</volume>
+          <fpage>1947</fpage>
+          <lpage>1954</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b056">
+        <label>56</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kingman</surname>
+              <given-names>JFC</given-names>
+            </name>
+          </person-group>
+          <article-title>The coalescent.</article-title>
+          <source>Stoch Proc Appl</source>
+          <year>1982</year>
+          <volume>13</volume>
+          <fpage>235</fpage>
+          <lpage>248</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b057">
+        <label>57</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Kingman</surname>
+              <given-names>JFC</given-names>
+            </name>
+          </person-group>
+          <article-title>On the genealogy of large populations.</article-title>
+          <source>J Appl Probab</source>
+          <year>1982</year>
+          <volume>19</volume>
+          <fpage>27</fpage>
+          <lpage>43</lpage>
+          <comment>A</comment>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b058">
+        <label>58</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Drummond</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rambaut</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Shapiro</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pybus</surname>
+              <given-names>OG</given-names>
+            </name>
+          </person-group>
+          <article-title>Bayesian coalescent inference of past population dynamics from molecular
+            sequences.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2005</year>
+          <volume>22</volume>
+          <fpage>1185</fpage>
+          <lpage>1192</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b059">
+        <label>59</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Pybus</surname>
+              <given-names>OG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rambaut</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Harvey</surname>
+              <given-names>PH</given-names>
+            </name>
+          </person-group>
+          <article-title>An integrated framework for the inference of viral population history from
+            reconstructed genealogies.</article-title>
+          <source>Genetics</source>
+          <year>2000</year>
+          <volume>155</volume>
+          <fpage>1429</fpage>
+          <lpage>1437</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b060">
+        <label>60</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ewing</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nicholls</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rodrigo</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Using temporally spaced sequences to simultaneously estimate migration
+            rates, mutation rate and population sizes in measurably evolving
+            populations.</article-title>
+          <source>Genetics</source>
+          <year>2004</year>
+          <volume>168</volume>
+          <fpage>2407</fpage>
+          <lpage>2420</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b061">
+        <label>61</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Yule</surname>
+              <given-names>GU</given-names>
+            </name>
+          </person-group>
+          <article-title>A mathematical theory of evolution, based on the conclusions of Dr. J. C.
+            Willis, F.R.S.</article-title>
+          <source>Philos Trans R Soc Lond B</source>
+          <year>1924</year>
+          <volume>213</volume>
+          <fpage>21</fpage>
+          <lpage>87</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b062">
+        <label>62</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Nee</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>May</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Harvey</surname>
+              <given-names>PH</given-names>
+            </name>
+          </person-group>
+          <article-title>The reconstructed evolutionary process.</article-title>
+          <source>Philos Trans R Soc Lond B Biol Sci</source>
+          <year>1994</year>
+          <volume>344</volume>
+          <fpage>305</fpage>
+          <lpage>311</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b063">
+        <label>63</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Yang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rannala</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Bayesian phylogenetic inference using DNA sequences: A Markov Chain Monte
+            Carlo Method.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>1997</year>
+          <volume>14</volume>
+          <fpage>717</fpage>
+          <lpage>724</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b064">
+        <label>64</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Welch</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fontanillas</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bromham</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular dates for the “cambrian explosion”: The
+            influence of prior assumptions.</article-title>
+          <source>Syst Biol</source>
+          <year>2005</year>
+          <volume>54</volume>
+          <fpage>672</fpage>
+          <lpage>678</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b065">
+        <label>65</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Wilson</surname>
+              <given-names>IJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Balding</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Genealogical inference from microsatellite data.</article-title>
+          <source>Genetics</source>
+          <year>1998</year>
+          <volume>150</volume>
+          <fpage>499</fpage>
+          <lpage>510</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b066">
+        <label>66</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Drummond</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pybus</surname>
+              <given-names>OG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rambaut</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Forsberg</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rodrigo</surname>
+              <given-names>AG</given-names>
+            </name>
+          </person-group>
+          <article-title>Measurably evolving populations.</article-title>
+          <source>Trends Ecol Evol</source>
+          <year>2003</year>
+          <volume>18</volume>
+          <fpage>481</fpage>
+          <lpage>488</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b067">
+        <label>67</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Korber</surname>
+              <given-names>B</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Muldoon</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Theiler</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gao</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gupta</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Timing the ancestor of the HIV-1 pandemic strains.</article-title>
+          <source>Science</source>
+          <year>2000</year>
+          <volume>288</volume>
+          <fpage>1789</fpage>
+          <lpage>1796</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b068">
+        <label>68</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Lemey</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pybus</surname>
+              <given-names>OG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rambaut</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Drummond</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Robertson</surname>
+              <given-names>DL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The molecular population genetics of HIV-1 group O.</article-title>
+          <source>Genetics</source>
+          <year>2004</year>
+          <volume>167</volume>
+          <fpage>1059</fpage>
+          <lpage>1068</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="pbio-0040088-b069">
+        <label>69</label>
+        <nlm-citation publication-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Pybus</surname>
+              <given-names>OG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Drummond</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nakano</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Robertson</surname>
+              <given-names>BH</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rambaut</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>The epidemiology and iatrogenic transmission of hepatitis C virus in Egypt:
+            A Bayesian coalescent approach.</article-title>
+          <source>Mol Biol Evol</source>
+          <year>2003</year>
+          <volume>20</volume>
+          <fpage>381</fpage>
+          <lpage>387</lpage>
+        </nlm-citation>
+      </ref>
+    </ref-list>
+    <glossary>
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term>ACED</term>
+          <def>
+            <p>autocorrelated exponential distribution</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>ACLN</term>
+          <def>
+            <p>autocorrelated lognormal distribution</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>bp</term>
+          <def>
+            <p>base pairs</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CLOC</term>
+          <def>
+            <p>strict molecular clock</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>HPD</term>
+          <def>
+            <p>highest posterior density</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>MAP</term>
+          <def>
+            <p>maximum a posteriori</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>MCMC</term>
+          <def>
+            <p>Markov chain Monte Carlo</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>UCED</term>
+          <def>
+            <p>uncorrelated exponential distribution</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>UCLN</term>
+          <def>
+            <p>uncorrelated lognormal distribution</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>UF</term>
+          <def>
+            <p>unrooted Felsenstein</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    
+  </back>
+</article>

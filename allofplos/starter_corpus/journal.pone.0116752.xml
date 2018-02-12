@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="3.0" xml:lang="en" article-type="research-article">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">plosone</journal-id>
+<journal-title-group>
+<journal-title>PLOS ONE</journal-title>
+</journal-title-group>
+<issn pub-type="epub">1932-6203</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PONE-D-14-23309</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pone.0116752</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>A Kramers-Moyal Approach to the Analysis of Third-Order Noise with Applications in Option Valuation</article-title>
+<alt-title alt-title-type="running-head">Kramers-Moyal and Option Valuation</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" xlink:type="simple">
+<name name-style="western">
+<surname>Popescu</surname> <given-names>Dan M.</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<name name-style="western">
+<surname>Lipan</surname> <given-names>Ovidiu</given-names></name>
+<xref ref-type="aff" rid="aff001"><sup>1</sup></xref>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<label>1</label>
+<addr-line>Department of Physics, University of Richmond, Richmond, Virginia, United States of America</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Germano</surname> <given-names>Guido</given-names></name>
+<role>Academic Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>University College London, UNITED KINGDOM</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<fn fn-type="con" id="contrib001">
+<p>Conceived and designed the experiments: DMP OL. Performed the experiments: DMP OL. Analyzed the data: DMP OL. Contributed reagents/materials/analysis tools: DMP OL. Wrote the paper: DMP OL.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">olipan@richmond.edu</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<year>2015</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>27</day>
+<month>1</month>
+<year>2015</year>
+</pub-date>
+<volume>10</volume>
+<issue>1</issue>
+<elocation-id>e0116752</elocation-id>
+<history>
+<date date-type="received">
+<day>25</day>
+<month>5</month>
+<year>2014</year>
+</date>
+<date date-type="accepted">
+<day>13</day>
+<month>12</month>
+<year>2014</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2015</copyright-year>
+<copyright-holder>Popescu, Lipan</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pone.0116752" xlink:type="simple"/>
+<abstract>
+<p>We propose the use of the Kramers-Moyal expansion in the analysis of third-order noise. In particular, we show how the approach can be applied in the theoretical study of option valuation. Despite Pawula’s theorem, which states that a truncated model may exhibit poor statistical properties, we show that for a third-order Kramers-Moyal truncation model of an option’s and its underlier’s price, important properties emerge: (i) the option price can be written in a closed analytical form that involves the Airy function, (ii) the price is a positive function for positive skewness in the distribution, (iii) for negative skewness, the price becomes negative only for price values that are close to zero. Moreover, using third-order noise in option valuation reveals additional properties: (iv) the inconsistencies between two popular option pricing approaches (using a “delta-hedged” portfolio and using an option replicating portfolio) that are otherwise equivalent up to the second moment, (v) the ability to develop a measure <italic>R</italic> of how accurately an option can be replicated by a mixture of the underlying stocks and cash, (vi) further limitations of <italic>second</italic>-order models revealed by introducing <italic>third</italic>-order noise.</p>
+</abstract>
+<funding-group>
+<funding-statement>The authors have no support or funding to report.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="3"/>
+<table-count count="2"/>
+<page-count count="12"/>
+</counts>
+<custom-meta-group>
+<custom-meta id="data-availability" xlink:type="simple">
+<meta-name>Data Availability</meta-name>
+<meta-value>All relevant data are within the paper and its Supporting Information files.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>Finance is one of the areas in which there exists a strong emphasis on high-order fluctuations, as these can have a massive impact on markets. Arguably, the most common formula in financial mathematics is the Black-Scholes-Merton [<xref ref-type="bibr" rid="pone.0116752.ref001">1</xref>, <xref ref-type="bibr" rid="pone.0116752.ref002">2</xref>] used in option valuation. Viewing it not from an Itô, but from a Kramers-Moyal (KM) perspective, Black-Scholes-Merton employs a truncation of terms in the KM expansion from infinity down to the second order. It is tempting to truncate the terms down to a higher order such as the third, thereby introducing third-order noise. The existence of a third order enriches the model with a skewness parameter, <italic>γ</italic>, in a natural way that preserves the economic interpretation. However, Pawula’s theorem warns that, once the third order is accounted for, the model may end up exhibiting poor properties. For example, it may turn out that the option price takes negative values for a wide range of stock prices. Or, that the price will be positive only for few selective regions of the skewness parameter. Before studying the truncated model and show that it displays useful properties, we discuss the importance of the stock price stochastic properties in building a model for the option price.</p>
+<p>Our aim is not to tweak the Black-Scholes-Merton option pricing formula, but to provide a theoretical framework for working with third-order noise. We chose the Black-Scholes-Merton as a starting point given the widespread focus in the literature regarding the lognormality assumption underlying it. Several attempts were made in the last 40 years to account for non-Gaussian noise in the underlying stock price distribution. One of the first was Merton’s [<xref ref-type="bibr" rid="pone.0116752.ref003">3</xref>] through the introduction of a Poisson jump process in addition to the classic diffusion process. This model captures a variety of stock price movements through three variables—the average number of jumps per unit time and the mean and standard deviation of the jump size. A different approach taken to relax the normality assumption was to consider the volatility parameter as a random variable (see [<xref ref-type="bibr" rid="pone.0116752.ref004">4</xref>–<xref ref-type="bibr" rid="pone.0116752.ref006">6</xref>]). Other models start with a modified normal distribution. For example, Jarrow and Rudd [<xref ref-type="bibr" rid="pone.0116752.ref007">7</xref>] perform an Edgeworth expansion of the lognormal distribution of asset prices, whereas Brigo and Mercurio [<xref ref-type="bibr" rid="pone.0116752.ref008">8</xref>] assume the underlying asset price distribution is a mixture of lognormals. Lastly, we would like to mention local volatility models (see [<xref ref-type="bibr" rid="pone.0116752.ref009">9</xref>–<xref ref-type="bibr" rid="pone.0116752.ref011">11</xref>]), in which the volatility of the underlying asset is a function of time and the underlying asset’s price. An example of how this model can be used is to assume that the Black-Scholes-Merton partial differential equation still holds and to infer the local volatility from the estimated implied volatility smile.</p>
+<p>In this paper, we assume that observations are carried out on a time scale small enough to consider the price returns as being well approximated by a Markov process. We then use the Chapman-Kolmogorov equation in its differential form (also known as the Master Equation) to describe movements in price [<xref ref-type="bibr" rid="pone.0116752.ref012">12</xref>]. Under certain conditions [<xref ref-type="bibr" rid="pone.0116752.ref013">13</xref>], the differential Chapman-Kolmogorov equation decomposes the process into drift, diffusion and jumps. The drift and diffusion components are part of the classic lognormal description of asset prices, whereas the jumps were used by Merton in the form of a compound Poisson process. Alternatively, instead of decomposing the Master Equation, we will use a formally equivalent representation, the KM expansion [<xref ref-type="bibr" rid="pone.0116752.ref014">14</xref>, <xref ref-type="bibr" rid="pone.0116752.ref015">15</xref>]. This provides the benefit of truncation after a suitable number of terms [<xref ref-type="bibr" rid="pone.0116752.ref012">12</xref>]. Although Pawula’s theorem limits the truncation possibilities to second order or to infinity, Risken [<xref ref-type="bibr" rid="pone.0116752.ref016">16</xref>] shows that truncations of the KM expansion are useful and offer good approximations to probability distributions.</p>
+</sec>
+<sec id="sec002" sec-type="results">
+<title>Results</title>
+<p>Despite the discouraging possibility that Pawula’s theorem can make the price distribution unintuitive, it turns out that the third-order KM option pricing model has the following useful proprieties: (i) the price can be written in a closed analytical form that involves the Airy function, (ii) the price is a positive function for any <italic>γ</italic> &gt; 0, (iii) for <italic>γ</italic> &lt; 0, the price becomes negative only for price values that are close to zero, (iv) the third-order moment distinguishes between two popular derivation methods of the Black-Scholes-Merton equation, which are otherwise equivalent up to the second moment, (v) from the discrepancy between the two methods, it is possible to infer a measure <italic>R</italic> of how precisely options can be replicated using the underliers and cash, (vi) limitations of models truncated from infinity to the second order are revealed.</p>
+<p>For example, to point out property (i), the cost of the option with expiration time <italic>T</italic> and strike <italic>K</italic> is
+<disp-formula id="pone.0116752.e001">
+<alternatives>
+<graphic id="pone.0116752.e001g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e001"/>
+<mml:math id="M1" display="block" overflow="scroll"><mml:mrow><mml:mi>c</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:mo>±</mml:mo> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>−</mml:mo> <mml:mi>r</mml:mi> <mml:mi>τ</mml:mi></mml:mrow></mml:msup> <mml:mi>K</mml:mi> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>−</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>3</mml:mn></mml:mfrac> <mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>η</mml:mi> <mml:mo>−</mml:mo> <mml:mi>β</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mn>3</mml:mn></mml:msup></mml:mrow></mml:msup> <mml:mstyle displaystyle="true"><mml:mrow><mml:msubsup><mml:mo>∫</mml:mo> <mml:mi>a</mml:mi> <mml:mrow><mml:mo>±</mml:mo> <mml:mi>∞</mml:mi></mml:mrow></mml:msubsup> <mml:mi>d</mml:mi></mml:mrow></mml:mstyle> <mml:mi>ξ</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>−</mml:mo> <mml:mi>β</mml:mi> <mml:mi>a</mml:mi></mml:mrow></mml:msup> <mml:mo>−</mml:mo> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>−</mml:mo> <mml:mi>β</mml:mi> <mml:mi>ξ</mml:mi></mml:mrow></mml:msup></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mi>η</mml:mi> <mml:mi>ξ</mml:mi></mml:mrow></mml:msup> <mml:mtext>Ai</mml:mtext> <mml:mo stretchy="false">(</mml:mo> <mml:mi>ξ</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(1)</label>
+</disp-formula>
+with ± = sign(<italic>γ</italic>), <italic>η</italic> = (<italic>σ</italic>/<italic>γ</italic>)<sup>2</sup>(<italic>τ</italic>/2)<sup>1/3</sup>, <italic>β</italic> = <italic>γ</italic>(<italic>τ</italic>/2)<sup>1/3</sup>, <italic>a</italic> = (<italic>m</italic><sup>2</sup>/3<italic>n</italic>)(<italic>τ</italic>/<italic>β</italic>) − <italic>x</italic>/<italic>β</italic>. Here, <italic>m</italic> = 2<sup>−1</sup>(<italic>σ</italic><sup>2</sup> − <italic>γ</italic><sup>3</sup>), <italic>n</italic> = 6<sup>−1</sup> <italic>γ</italic><sup>3</sup> and
+<disp-formula id="pone.0116752.e002">
+<alternatives>
+<graphic id="pone.0116752.e002g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e002"/>
+<mml:math id="M2" display="block" overflow="scroll"><mml:mrow><mml:mi>x</mml:mi> <mml:mspace width="1pt"/><mml:mo>=</mml:mo> <mml:mtext>ln</mml:mtext> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mfrac><mml:mi>s</mml:mi> <mml:mi>K</mml:mi></mml:mfrac></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mi>r</mml:mi> <mml:mo>−</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:msup><mml:mi>σ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>+</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>3</mml:mn></mml:mfrac> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>τ</mml:mi> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(2a)</label>
+</disp-formula>
+<disp-formula id="pone.0116752.e003">
+<alternatives>
+<graphic id="pone.0116752.e003g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e003"/><mml:math id="M3" display="block" overflow="scroll"><mml:mrow><mml:mi>τ</mml:mi> <mml:mspace width="1pt"/><mml:mo>=</mml:mo> <mml:mspace width="1pt"/><mml:mi>T</mml:mi> <mml:mo>−</mml:mo> <mml:mi>t</mml:mi> <mml:mo>.</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(2b)</label>
+</disp-formula></p>
+<p>The asymptotic expansion of the cost for small values of <italic>γ</italic> makes the Black-Scholes-Merton formula apparent in the limit <italic>γ</italic> → 0
+<disp-formula id="pone.0116752.e004">
+<alternatives>
+<graphic id="pone.0116752.e004g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e004"/>
+<mml:math id="M4" display="block" overflow="scroll"><mml:mrow><mml:mi>c</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mspace width="1pt"/><mml:mo>=</mml:mo> <mml:mspace width="1pt"/><mml:mi>s</mml:mi> <mml:mfrac><mml:mn>1</mml:mn> <mml:mrow><mml:mn>2</mml:mn> <mml:mi>π</mml:mi></mml:mrow></mml:mfrac> <mml:mstyle displaystyle="true"><mml:mrow><mml:msubsup><mml:mo>∫</mml:mo> <mml:mrow><mml:mo>−</mml:mo> <mml:mi>∞</mml:mi></mml:mrow> <mml:mrow><mml:msub><mml:mi>d</mml:mi> <mml:mo>+</mml:mo></mml:msub></mml:mrow></mml:msubsup> <mml:mi>d</mml:mi></mml:mrow></mml:mstyle> <mml:mi>θ</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mn>1</mml:mn> <mml:mo>+</mml:mo> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mi>Ω</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mi>θ</mml:mi> <mml:mo>−</mml:mo> <mml:msqrt><mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>σ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>−</mml:mo> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mo stretchy="false">)</mml:mo> <mml:mi>τ</mml:mi></mml:mrow></mml:msqrt></mml:mrow> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>−</mml:mo> <mml:msup><mml:mi>θ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>/</mml:mo> <mml:mn>2</mml:mn></mml:mrow></mml:msup> <mml:mspace width="1pt"/><mml:mo>−</mml:mo> <mml:mspace width="1pt"/><mml:mi>K</mml:mi> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>−</mml:mo> <mml:mi>r</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>T</mml:mi> <mml:mo>−</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msup> <mml:mfrac><mml:mn>1</mml:mn> <mml:mrow><mml:mn>2</mml:mn> <mml:mi>π</mml:mi></mml:mrow></mml:mfrac> <mml:mstyle displaystyle="true"><mml:mrow><mml:msubsup><mml:mo>∫</mml:mo> <mml:mrow><mml:mo>−</mml:mo> <mml:mi>∞</mml:mi></mml:mrow> <mml:mrow><mml:msub><mml:mi>d</mml:mi> <mml:mo>−</mml:mo></mml:msub></mml:mrow></mml:msubsup> <mml:mi>d</mml:mi></mml:mrow></mml:mstyle> <mml:mi>θ</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mn>1</mml:mn> <mml:mo>+</mml:mo> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mi>Ω</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>θ</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:msup><mml:mi>e</mml:mi> <mml:mrow><mml:mo>−</mml:mo> <mml:msup><mml:mi>θ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>/</mml:mo> <mml:mn>2</mml:mn></mml:mrow></mml:msup> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(3)</label>
+</disp-formula>
+where
+<disp-formula id="pone.0116752.e005">
+<alternatives>
+<graphic id="pone.0116752.e005g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e005"/>
+<mml:math id="M5" display="block" overflow="scroll"><mml:mrow><mml:msub><mml:mi>d</mml:mi> <mml:mo>±</mml:mo></mml:msub> <mml:mo>=</mml:mo> <mml:mfrac><mml:mrow><mml:mtext>ln</mml:mtext> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mfrac><mml:mi>s</mml:mi> <mml:mi>K</mml:mi></mml:mfrac></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>+</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mi>r</mml:mi> <mml:mo>±</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:msup><mml:mi>σ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>−</mml:mo> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup></mml:mrow> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>τ</mml:mi></mml:mrow> <mml:mrow><mml:msqrt><mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>σ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>−</mml:mo> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mo stretchy="false">)</mml:mo> <mml:mi>τ</mml:mi></mml:mrow></mml:msqrt></mml:mrow></mml:mfrac> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(4)</label>
+</disp-formula>
+and the correction term
+<disp-formula id="pone.0116752.e006">
+<alternatives>
+<graphic id="pone.0116752.e006g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e006"/><mml:math id="M6" display="block" overflow="scroll"><mml:mrow><mml:mi>Ω</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>θ</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>4</mml:mn></mml:mfrac> <mml:mfrac><mml:mi>θ</mml:mi> <mml:mrow><mml:msqrt><mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>σ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>−</mml:mo> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mo stretchy="false">)</mml:mo> <mml:mi>τ</mml:mi></mml:mrow></mml:msqrt></mml:mrow></mml:mfrac> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mn>1</mml:mn> <mml:mo>−</mml:mo> <mml:mfrac><mml:mrow><mml:msup><mml:mi>θ</mml:mi> <mml:mn>2</mml:mn></mml:msup></mml:mrow> <mml:mn>3</mml:mn></mml:mfrac></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>.</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(5)</label>
+</disp-formula></p>
+<p>The effect of the new skewness parameter, <italic>γ</italic>, is that the stock price stochastic process is no longer lognormal, as it is in the Black-Scholes-Merton model.</p>
+</sec>
+<sec id="sec003" sec-type="materials|methods">
+<title>Model</title>
+<p>The stochastic process for each financial instrument is described by a corresponding probability density <italic>p</italic>(<italic>z</italic>, <italic>t</italic>), where <italic>z</italic> is the value of the financial instrument at time <italic>t</italic>. The probability density is treated as an unknown that satisfies the KM equation:
+<disp-formula id="pone.0116752.e007">
+<alternatives>
+<graphic id="pone.0116752.e007g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e007"/><mml:math id="M7" display="block" overflow="scroll"><mml:mrow><mml:mfrac><mml:mrow><mml:mo>∂</mml:mo> <mml:mi>p</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>z</mml:mi> <mml:mo>,</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>t</mml:mi></mml:mrow></mml:mfrac> <mml:mo>=</mml:mo> <mml:mstyle displaystyle="true"><mml:munderover><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>n</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>∞</mml:mi></mml:munderover> <mml:mrow><mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mo>−</mml:mo> <mml:mfrac><mml:mo>∂</mml:mo> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>z</mml:mi></mml:mrow></mml:mfrac></mml:mrow> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mi>n</mml:mi></mml:msup></mml:mrow></mml:mstyle> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:msup><mml:mi>D</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>n</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>z</mml:mi> <mml:mo>,</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mi>p</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>z</mml:mi> <mml:mo>,</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>.</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(6)</label>
+</disp-formula></p>
+<p>Here, the <italic>D</italic><sup>(<italic>n</italic>)</sup>(<italic>z</italic>), <italic>n</italic> = 1, 2, …, called the <italic>derivate transition moments</italic> for the process [<xref ref-type="bibr" rid="pone.0116752.ref016">16</xref>], are inferred from financial data and are, therefore, considered to be known functions of <italic>z</italic> (for a discussion on their estimation, see [<xref ref-type="bibr" rid="pone.0116752.ref017">17</xref>]). In this manuscript, the cost of the option, <italic>c</italic>(<italic>s</italic>, <italic>t</italic>), is obtained from solving a partial differential equation whose coefficients are completely based on the derivate transition moments of the underlying stocks and risk-free bonds. The reasoning employed to deduce the cost of the option is based on the transition probability moments of the financial instruments. They are given by <italic>M</italic><sup>(<italic>n</italic>)</sup>(<italic>z</italic>, <italic>t</italic>, <italic>ϵ</italic>) = <italic>∫</italic> <italic>dZ</italic>(<italic>Z</italic> − <italic>z</italic>)<sup><italic>n</italic></sup> <italic>p</italic>(<italic>Z</italic>, <italic>t</italic> + <italic>ϵ</italic>∣<italic>z</italic>, <italic>t</italic>), where <italic>p</italic>(<italic>Z</italic>, <italic>t</italic> + <italic>ϵ</italic>∣<italic>z</italic>, <italic>t</italic>) is the transition probability for the stochastic process to have the value <italic>Z</italic> at time <italic>t</italic> + <italic>ϵ</italic> given that it had the value <italic>z</italic> at time <italic>t</italic> and integrals without limits are considered from −∞ to ∞. The stochastic transition takes place during a small time interval <italic>ϵ</italic>, between <italic>t</italic> and <italic>t</italic> + <italic>ϵ</italic>. The transition probability moments and the derivate transition moments are connected through <inline-formula id="pone.0116752.e054"><mml:math id="M54" display="inline" overflow="scroll"><mml:mrow><mml:msup><mml:mi>M</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>n</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:msup> <mml:mo>(</mml:mo> <mml:mi>z</mml:mi> <mml:mo>,</mml:mo> <mml:mi>t</mml:mi> <mml:mo>,</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo>)</mml:mo> <mml:mo>=</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mi>n</mml:mi> <mml:mo>!</mml:mo> <mml:msup><mml:mi>D</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>n</mml:mi> <mml:mo>)</mml:mo></mml:mrow></mml:msup> <mml:mo>(</mml:mo> <mml:mi>z</mml:mi> <mml:mo>,</mml:mo> <mml:mi>t</mml:mi> <mml:mo>)</mml:mo> <mml:mo>+</mml:mo> <mml:mi mathvariant="script">O</mml:mi> <mml:mo>(</mml:mo> <mml:msup><mml:mi>ϵ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>)</mml:mo></mml:mrow></mml:math></inline-formula>.</p>
+<p>When considering a truncation of the Kramers-Moyal expansion in (<xref ref-type="disp-formula" rid="pone.0116752.e007">6</xref>), it is important to know how many terms of the expansion should be taken into account such that the approximation reaches the desired level of precision. Pawula’s theorem shows that the positivity constraint on the probability, <italic>p</italic>(<italic>z</italic>, <italic>t</italic>) ≥ 0, translates into a constraint on the KM expansion. Namely, the KM expansion must stop either after the first or after the second term. If it does not stop after the second term, then it must contain an infinite number of terms [<xref ref-type="bibr" rid="pone.0116752.ref018">18</xref>]. That is, if the expansion has a non-zero third-order term, then it must contain an infinity of terms.</p>
+<p>The theorem, however, does not say that expansions truncated after or at the third order are of no use. If the negative values for <italic>p</italic>(<italic>z</italic>, <italic>t</italic>) resulting from the approximate distribution are small or confined to a small region of <italic>z</italic> and <italic>t</italic>, the resulting approximation could be very good [<xref ref-type="bibr" rid="pone.0116752.ref016">16</xref>]. Furthermore, van Kampen [<xref ref-type="bibr" rid="pone.0116752.ref012">12</xref>] points out that, at least in physical systems, nonzero moments higher than the second order are to be expected. Gardiner [<xref ref-type="bibr" rid="pone.0116752.ref013">13</xref>] also shows the importance of higher-order terms (in particular, the third) in the treatment of trimolecular reactions. This warrants a similar higher-order approach in the case of stock prices as well.</p>
+<p>In the development of the model, we will assume ideal conditions similar to those present in the Black-Scholes-Merton model [<xref ref-type="bibr" rid="pone.0116752.ref001">1</xref>]: (a) The markets are “frictionless”: transactions do not incur fees and costs. (b) Participants in the market can borrow and lend cash at the risk-free rate. (c) The underlying security does not pay dividends. (d) The option is “European”, therefore one can exercise it at maturity only. (e) There are no restrictions on borrowing or short-selling. (f) The market is arbitrage-free. (g) The market is “perfectly liquid”: participants can buy or sell any amount (positive or negative) of the asset. It is worth pointing out that assumptions (a)-(d) are relatively weak. Methods have been designed in the literature to relax them. Assumptions (e), (f) and (g) are, however, strictly required.</p>
+<p>Several types of financial instruments are used in this paper: (i) <italic>options</italic> represent securities with value <italic>c</italic>(<italic>s</italic>(<italic>t</italic>), <italic>t</italic>) at time <italic>t</italic> written on an underlier <italic>s</italic>(<italic>t</italic>) (in this case, common stock). The analysis will focus on European-style “call” options with maturity <italic>T</italic> and strike price <italic>K</italic>. The option has non-zero higher-order derivate moments <inline-formula id="pone.0116752.e008"><mml:math id="M8" display="inline" overflow="scroll">
+<mml:mrow>
+<mml:msubsup>
+<mml:mi>D</mml:mi>
+<mml:mi>c</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>2</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+</mml:mrow>
+</mml:math>
+</inline-formula>, <inline-formula id="pone.0116752.e009"><mml:math id="M9" display="inline" overflow="scroll"><mml:mrow>
+<mml:msubsup>
+<mml:mi>D</mml:mi>
+<mml:mi>c</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>3</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+</mml:mrow>
+</mml:math></inline-formula> …; (ii) <italic>stocks</italic>, with value <italic>s</italic>(<italic>t</italic>) at <italic>t</italic>, are the underliers for the option. The value <italic>s</italic>(<italic>t</italic>) is random with higher-order non-zero derivate moments: <inline-formula id="pone.0116752.e010"><mml:math id="M10" display="inline" overflow="scroll"><mml:mrow>
+<mml:msubsup>
+<mml:mi>D</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>2</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+</mml:mrow>
+</mml:math></inline-formula>, <inline-formula id="pone.0116752.e011"><mml:math id="M11" display="inline" overflow="scroll"><mml:mrow>
+<mml:msubsup>
+<mml:mi>D</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>3</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+</mml:mrow>
+</mml:math></inline-formula> …; (iii) <italic>risk-free bonds</italic> with value <italic>b</italic>(<italic>t</italic>) at time <italic>t</italic> are assets earning the risk-free rate. Since they have no fluctuations, <inline-formula id="pone.0116752.e012"><mml:math id="M12" display="inline" overflow="scroll"><mml:mrow>
+<mml:msubsup>
+<mml:mi>D</mml:mi>
+<mml:mi>b</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>i</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+ <mml:mo>=</mml:mo> <mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula> for <italic>i</italic> ≥ 2.</p>
+<p>A <italic>portfolio</italic> of <italic>n</italic> assets <italic>z</italic><sub><italic>i</italic></sub>(<italic>t</italic>) is defined as <inline-formula id="pone.0116752.e013"><mml:math id="M13" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>n</mml:mi></mml:msubsup> <mml:msub><mml:mo>Δ</mml:mo> <mml:mi>i</mml:mi></mml:msub> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:msub><mml:mi>z</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>, where Δ<sub><italic>i</italic></sub> is the quantity of asset <italic>i</italic> with price <italic>z</italic><sub><italic>i</italic></sub> per unit. A portfolio is self-financing if its value after a small positive increment in time <italic>ϵ</italic> ∈ [0, Δ<italic>t</italic>), Δ<italic>t</italic> &gt; 0, is given by <inline-formula id="pone.0116752.e014"><mml:math id="M14" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>i</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>n</mml:mi></mml:msubsup> <mml:msub><mml:mo>Δ</mml:mo> <mml:mi>i</mml:mi></mml:msub> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:msub><mml:mi>z</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo>+</mml:mo> <mml:mi>ϵ</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula>, which means that the change in the value of the portfolio during a short time interval Δ<italic>t</italic> comes only from the change of the price of the assets and not from the change in the quantities of assets Δ<sub><italic>i</italic></sub>(<italic>t</italic>).</p>
+<p>Two popular approaches used to derive the option dynamics in the Black-Scholes-Merton framework are: the <italic>delta-hedged</italic> portfolio method (DHP) and the option replicating portfolio method (ORP). In models based on KM truncations from infinity to the second order, the two methods are equivalent. However, when considering the third order, two noteworthy results emerge: (i) the two methods are no longer perfectly equivalent and (ii) the replication in the ORP is not perfect, so a measure of the accuracy of replication is necessary.</p>
+<p>In describing the methods, upper-case letters and lower-case letters will be used to distinguish between each variable at two different times <italic>t</italic> and <italic>t</italic> + <italic>ϵ</italic>, respectively. For example, <italic>c</italic>(<italic>s</italic>(<italic>t</italic> + <italic>ϵ</italic>), <italic>t</italic> + <italic>ϵ</italic>) ≡ <italic>C</italic>, <italic>c</italic>(<italic>s</italic>(<italic>t</italic>), <italic>t</italic>) ≡ <italic>c</italic>.</p>
+<sec id="sec003a">
+<title>Delta-hedged portfolio method</title>
+<p>In DHP, the aim is to create a self-financing portfolio <inline-formula id="pone.0116752.e015"><mml:math id="M15" display="inline" overflow="scroll"><mml:mrow><mml:mi>f</mml:mi> <mml:mo>=</mml:mo> <mml:mo>−</mml:mo> <mml:mi>c</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>+</mml:mo> <mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>f</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mi>s</mml:mi></mml:mrow></mml:math></inline-formula> by going short one unit of the option <italic>c</italic>(<italic>s</italic>, <italic>t</italic>) and long a quantity <inline-formula id="pone.0116752.e016"><mml:math id="M16" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>f</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula> of <italic>s</italic>(<italic>t</italic>) chosen such that the portfolio is risk-free, that is, it has no fluctuations <inline-formula id="pone.0116752.e017"><mml:math id="M17" display="inline" overflow="scroll"><mml:mrow>
+<mml:msubsup>
+<mml:mi>M</mml:mi>
+<mml:mi>f</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>2</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+ <mml:mo>=</mml:mo> <mml:msubsup>
+<mml:mi>M</mml:mi>
+<mml:mi>f</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>3</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+ <mml:mo>=</mml:mo> <mml:mo>…</mml:mo> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula>. The <italic>no-arbitrage</italic> condition requires that a portfolio with no risk have a return equal to the risk-free rate. That is,
+<disp-formula id="pone.0116752.e018">
+<alternatives>
+<graphic id="pone.0116752.e018g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e018"/><mml:math id="M18" display="block" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>f</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>b</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(7)</label>
+</disp-formula>
+where <italic>b</italic> is a bond returning the risk-free rate. This equation will be used to find an explicit form for <italic>c</italic>(<italic>s</italic>, <italic>t</italic>) from the moments of <italic>f</italic> as a function of the moments of <italic>s</italic>:
+<disp-formula id="pone.0116752.e019">
+<alternatives>
+<graphic id="pone.0116752.e019g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e019"/><mml:math id="M19" display="block" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>f</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:mo>−</mml:mo> <mml:mfrac><mml:mrow><mml:mo>∂</mml:mo> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>t</mml:mi></mml:mrow></mml:mfrac> <mml:mi>ϵ</mml:mi> <mml:mo>−</mml:mo> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mfrac><mml:mrow><mml:mo>∂</mml:mo> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>s</mml:mi></mml:mrow></mml:mfrac> <mml:mo>−</mml:mo> <mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>f</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>−</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>2</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mfrac><mml:mrow><mml:msup><mml:mo>∂</mml:mo> <mml:mn>2</mml:mn></mml:msup> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:msup><mml:mi>s</mml:mi> <mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac> <mml:mo>−</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>6</mml:mn></mml:mfrac> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>3</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mfrac><mml:mrow><mml:msup><mml:mo>∂</mml:mo> <mml:mn>3</mml:mn></mml:msup> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:msup><mml:mi>s</mml:mi> <mml:mn>3</mml:mn></mml:msup></mml:mrow></mml:mfrac> <mml:mo>+</mml:mo> <mml:mo>…</mml:mo> <mml:mo>+</mml:mo> <mml:mi mathvariant="script">O</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>ϵ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo stretchy="false">)</mml:mo> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(8a)</label>
+</disp-formula>
+<disp-formula id="pone.0116752.e020">
+<alternatives>
+<graphic id="pone.0116752.e020g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e020"/><mml:math id="M20" display="block" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>f</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>2</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mfrac><mml:mrow><mml:mo>∂</mml:mo> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>s</mml:mi></mml:mrow></mml:mfrac> <mml:mo>−</mml:mo> <mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>f</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mn>2</mml:mn></mml:msup> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>2</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>+</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:mfrac><mml:mrow><mml:msup><mml:mo>∂</mml:mo> <mml:mn>2</mml:mn></mml:msup> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:msup><mml:mi>s</mml:mi> <mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mfrac><mml:mrow><mml:mo>∂</mml:mo> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>s</mml:mi></mml:mrow></mml:mfrac> <mml:mo>−</mml:mo> <mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>f</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>3</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>+</mml:mo> <mml:mo>…</mml:mo> <mml:mo>+</mml:mo> <mml:mi mathvariant="script">O</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>ϵ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo stretchy="false">)</mml:mo> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(8b)</label>
+</disp-formula>
+<disp-formula id="pone.0116752.e021">
+<alternatives>
+<graphic id="pone.0116752.e021g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e021"/><mml:math id="M21" display="block" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>f</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>3</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mfrac><mml:mrow><mml:mo>∂</mml:mo> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>s</mml:mi></mml:mrow></mml:mfrac> <mml:mo>−</mml:mo> <mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>f</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mn>3</mml:mn></mml:msup> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>3</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>+</mml:mo> <mml:mo>…</mml:mo> <mml:mo>+</mml:mo> <mml:mi mathvariant="script">O</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>ϵ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo stretchy="false">)</mml:mo> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(8c)</label>
+</disp-formula>
+where in (<xref ref-type="disp-formula" rid="pone.0116752.e019">8a</xref>), (<xref ref-type="disp-formula" rid="pone.0116752.e020">8b</xref>), (<xref ref-type="disp-formula" rid="pone.0116752.e021">8c</xref>), the “…” stand for terms containing the moments <italic>M</italic><sub><italic>s</italic></sub> of order higher than the third. The moments <inline-formula id="pone.0116752.e022"><mml:math id="M22" display="inline" overflow="scroll"><mml:mrow><mml:msubsup>
+<mml:mi>M</mml:mi>
+<mml:mi>f</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>i</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+</mml:mrow></mml:math></inline-formula> for <italic>i</italic> ≥ 4 depend only on moments <italic>M</italic><sub><italic>s</italic></sub> of forth and higher order plus terms of order <inline-formula id="pone.0116752.e055"><mml:math id="M55" display="inline" overflow="scroll"><mml:mrow><mml:mi mathvariant="script">O</mml:mi> <mml:mo>(</mml:mo> <mml:msup><mml:mi>ϵ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>)</mml:mo></mml:mrow></mml:math></inline-formula>.</p>
+<p>Such a risk-free portfolio can be constructed if the following two conditions are fulfilled. First, the KM expansion for the stock <italic>s</italic>(<italic>t</italic>) is truncated after the third term, i.e. <inline-formula id="pone.0116752.e023"><mml:math id="M23" display="inline" overflow="scroll"><mml:mrow>
+<mml:msubsup>
+<mml:mi>M</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>4</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+ <mml:mo>=</mml:mo> <mml:msubsup>
+<mml:mi>M</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>5</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+ <mml:mo>=</mml:mo> <mml:mo>…</mml:mo> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula>. Second, the particular choice for the amount of stock held in the portfolio during each interval of time [<italic>t</italic>, <italic>t</italic> + Δ<italic>t</italic>), Δ<italic>t</italic> &gt; 0 is <inline-formula id="pone.0116752.e024"><mml:math id="M24" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>f</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:mo>∂</mml:mo> <mml:mi>c</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>s</mml:mi> <mml:mo>,</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>/</mml:mo> <mml:mo>∂</mml:mo> <mml:mi>s</mml:mi></mml:mrow></mml:math></inline-formula>.</p>
+</sec>
+<sec id="sec003b">
+<title>Option-replicating portfolio method</title>
+<p>In the ORP method, the goal is to create a portfolio of the underlying stocks and risk-free bonds that replicates a capital-equivalent investment in options. To achieve this, form a self-financing portfolio of value <italic>h</italic> at time <italic>t</italic> consisting of an amount <inline-formula id="pone.0116752.e025"><mml:math id="M25" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula> of stock and an amount <inline-formula id="pone.0116752.e026"><mml:math id="M26" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>2</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula> of the risk-free bond: <inline-formula id="pone.0116752.e027"><mml:math id="M27" display="inline" overflow="scroll"><mml:mrow><mml:mi>h</mml:mi> <mml:mo>=</mml:mo> <mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mi>s</mml:mi> <mml:mo>+</mml:mo> <mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>2</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mi>b</mml:mi></mml:mrow></mml:math></inline-formula>. To replicate options, suppose that at time <italic>t</italic> an amount equal to the value of the portfolio <italic>h</italic> is invested in the options. If this investment is self-financing, then, after a small increment in time <italic>ϵ</italic>, the value of the investment will be (<italic>h</italic>/<italic>c</italic>)<italic>C</italic>. The moments of <italic>h</italic> in terms of <italic>c</italic> are therefore <inline-formula id="pone.0116752.e028"><mml:math id="M28" display="inline" overflow="scroll"><mml:mrow>
+<mml:msup>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mi>h</mml:mi><mml:mo>/</mml:mo><mml:mi>c</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+<mml:mi>n</mml:mi>
+</mml:msup>
+<mml:msubsup>
+<mml:mi>M</mml:mi>
+<mml:mi>c</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mi>n</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+<mml:mo stretchy="false">(</mml:mo><mml:mi>c</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi>ϵ</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:math>
+</inline-formula>. The moments of an option, <inline-formula id="pone.0116752.e029"><mml:math id="M29" display="inline" overflow="scroll">
+<mml:mrow>
+<mml:msubsup>
+<mml:mi>M</mml:mi>
+<mml:mi>c</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mi>n</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+<mml:mo stretchy="false">(</mml:mo><mml:mi>c</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi>ϵ</mml:mi><mml:mo stretchy="false">)</mml:mo><mml:mo>=</mml:mo><mml:mstyle displaystyle="true">
+<mml:mrow><mml:mo>∫</mml:mo>
+<mml:mi>d</mml:mi>
+</mml:mrow>
+</mml:mstyle><mml:mi>C</mml:mi><mml:msup>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mi>C</mml:mi><mml:mo>−</mml:mo><mml:mi>c</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+<mml:mi>n</mml:mi>
+</mml:msup>
+<mml:mi>p</mml:mi><mml:mo stretchy="false">(</mml:mo><mml:mi>C</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>+</mml:mo><mml:mi>ϵ</mml:mi><mml:mo>|</mml:mo><mml:mi>c</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:math>
+</inline-formula>, are formally the same as the right hand side of (<xref ref-type="disp-formula" rid="pone.0116752.e019">8a</xref>), (<xref ref-type="disp-formula" rid="pone.0116752.e020">8b</xref>), (<xref ref-type="disp-formula" rid="pone.0116752.e021">8c</xref>) where <inline-formula id="pone.0116752.e030"><mml:math id="M30" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>f</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula> and the sign of each term in the odd moments (<xref ref-type="disp-formula" rid="pone.0116752.e019">8a</xref>), (<xref ref-type="disp-formula" rid="pone.0116752.e020">8b</xref>), (<xref ref-type="disp-formula" rid="pone.0116752.e021">8c</xref>) is flipped. On the other hand, the moments of <italic>h</italic> as a function of those of <italic>s</italic> and <italic>b</italic> are:
+<disp-formula id="pone.0116752.e031">
+<alternatives>
+<graphic id="pone.0116752.e031g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e031"/>
+<mml:math id="M31" display="block" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>h</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mspace width="1pt"/><mml:mo>=</mml:mo> <mml:mspace width="1pt"/><mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>+</mml:mo> <mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>2</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>b</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(9a)</label>
+</disp-formula>
+<disp-formula id="pone.0116752.e032">
+<alternatives>
+<graphic id="pone.0116752.e032g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e032"/>
+<mml:math id="M32" display="block" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>h</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>2</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mspace width="1pt"/><mml:mo>=</mml:mo> <mml:mspace width="1pt"/><mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mn>2</mml:mn></mml:msup> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>2</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(9b)</label>
+</disp-formula>
+<disp-formula id="pone.0116752.e033">
+<alternatives>
+<graphic id="pone.0116752.e033g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e033"/>
+<mml:math id="M33" display="block" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>h</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>3</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mspace width="1pt"/><mml:mo>=</mml:mo> <mml:mspace width="1pt"/><mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mn>3</mml:mn></mml:msup> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>3</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>.</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(9c)</label>
+</disp-formula>
+In the construction of this portfolio, it will also be assumed that the KM expansion for the stock <italic>s</italic>(<italic>t</italic>) is truncated after the third term, i.e. <inline-formula id="pone.0116752.e034"><mml:math id="M34" display="inline" overflow="scroll"><mml:mrow><mml:msubsup>
+<mml:mi>M</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>4</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+ <mml:mo>=</mml:mo> <mml:msubsup>
+<mml:mi>M</mml:mi>
+<mml:mi>s</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mn>5</mml:mn><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup> <mml:mo>=</mml:mo> <mml:mo>…</mml:mo> <mml:mo>=</mml:mo> <mml:mn>0</mml:mn></mml:mrow></mml:math></inline-formula>. By choosing during each interval of time [<italic>t</italic>, <italic>t</italic> + Δ<italic>t</italic>), Δ<italic>t</italic> &gt; 0, <inline-formula id="pone.0116752.e035"><mml:math id="M35" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo>/</mml:mo> <mml:mi>c</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo stretchy="false">(</mml:mo> <mml:mo>∂</mml:mo> <mml:mi>c</mml:mi> <mml:mo>/</mml:mo> <mml:mo>∂</mml:mo> <mml:mi>s</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:math></inline-formula> and <inline-formula id="pone.0116752.e036"><mml:math id="M36" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>2</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:mrow><mml:mrow><mml:mo stretchy="true">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo>−</mml:mo> <mml:msubsup><mml:mo>Δ</mml:mo> <mml:mn>1</mml:mn> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>h</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo stretchy="false">(</mml:mo> <mml:mi>t</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mi>s</mml:mi> <mml:mo stretchy="true">)</mml:mo></mml:mrow> <mml:mo>/</mml:mo> <mml:mi>b</mml:mi></mml:mrow></mml:mrow></mml:math></inline-formula>, such that the portfolio equation holds at <italic>t</italic>, the fluctuations of the two investments are approximately balanced. The approximation is stronger as the ratio <italic>R</italic>,
+<disp-formula id="pone.0116752.e037">
+<alternatives>
+<graphic id="pone.0116752.e037g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e037"/><mml:math id="M37" display="block" overflow="scroll"><mml:mrow><mml:mi>R</mml:mi> <mml:mo>=</mml:mo> <mml:mfrac><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>3</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mfrac><mml:mrow><mml:mo>∂</mml:mo> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>s</mml:mi></mml:mrow></mml:mfrac> <mml:mfrac><mml:mrow><mml:msup><mml:mo>∂</mml:mo> <mml:mn>2</mml:mn></mml:msup> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:msup><mml:mi>s</mml:mi> <mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac></mml:mrow> <mml:mrow><mml:mn>2</mml:mn> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>2</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:msup><mml:mrow><mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mfrac><mml:mrow><mml:mo>∂</mml:mo> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>s</mml:mi></mml:mrow></mml:mfrac></mml:mrow> <mml:mo>)</mml:mo></mml:mrow></mml:mrow> <mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(10)</label>
+</disp-formula>
+becomes smaller, <italic>R</italic> ≪ 1. The ratio <italic>R</italic> is a measure of the accuracy of replication in the ORP method (for a detailed discussion on <italic>R</italic>, see <italic><xref ref-type="supplementary-material" rid="pone.0116752.s001">Supporting Information</xref></italic>, <xref ref-type="supplementary-material" rid="pone.0116752.s002">S1 Fig.</xref> and <xref ref-type="supplementary-material" rid="pone.0116752.s003">S2 Fig.</xref>). The <italic>no-arbitrage</italic> condition requires the two investments have equal returns:
+<disp-formula id="pone.0116752.e038">
+<alternatives>
+<graphic id="pone.0116752.e038g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e038"/><mml:math id="M38" display="block" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>h</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:mfrac><mml:mi>h</mml:mi> <mml:mi>c</mml:mi></mml:mfrac> <mml:msubsup><mml:mi>M</mml:mi> <mml:mi>c</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>.</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(11)</label>
+</disp-formula></p>
+<p>In the classic Black-Scholes-Merton theory, the DHP and ORP methods are perfectly equivalent yielding compatible systems of equations with the same solution. However, when third-order noise is taken into account, the ORP fails to provide a compatible system of equations. Surprisingly, the truncation from infinity down to the third term keeps the system of equations resulting from the DHP approach compatible, so, even with third-order noise, the fluctuations of an option and stock portfolio can still be canceled.</p>
+</sec>
+<sec id="sec003c">
+<title>Price of option written on underlier with skewed probability distribution</title>
+<p>We will motivate here a particular choice for the functional form of the transition moments used above. In terms of the transition probability per unit time, <italic>W</italic>, the <italic>n</italic>th derivate transition moment for an asset <italic>z</italic> is <inline-formula id="pone.0116752.e039"><mml:math id="M39" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>D</mml:mi> <mml:mi>z</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>n</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>/</mml:mo> <mml:mi>n</mml:mi><mml:mo>!</mml:mo> <mml:mo stretchy="false">)</mml:mo> <mml:mo>∫</mml:mo> <mml:msup><mml:mi>ρ</mml:mi> <mml:mi>n</mml:mi></mml:msup> <mml:mi>W</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>ρ</mml:mi><mml:mo>;</mml:mo> <mml:mi>z</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mi>d</mml:mi> <mml:mi>ρ</mml:mi></mml:mrow></mml:math></inline-formula>. This leads to the derivate transition moments for the percent return <inline-formula id="pone.0116752.e040"><mml:math id="M40" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>D</mml:mi> <mml:mi>z</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>n</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>/</mml:mo> <mml:msup><mml:mi>z</mml:mi> <mml:mi>n</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula> = (1/<italic>n</italic>!) <italic>∫</italic> <italic>κ</italic><sup><italic>n</italic></sup> <italic>W</italic>(<italic>κ</italic>; <italic>z</italic>)<italic>dκ</italic> through a change in variables from the price jump <italic>ρ</italic> to the percent return <italic>κ</italic>(<italic>ρ</italic>) = <italic>ρ</italic>/<italic>z</italic>. Recall that <italic>p</italic>(<italic>κ</italic>; <italic>z</italic>)<italic>dκ</italic> = <italic>p</italic>(<italic>ρ</italic>; <italic>z</italic>)<italic>dρ</italic> for the transition probabilities implies <italic>W</italic>(<italic>κ</italic>; <italic>z</italic>)<italic>dκ</italic> = <italic>W</italic>(<italic>ρ</italic>; <italic>z</italic>)<italic>dρ</italic>.</p>
+<p>Using a <italic>no-arbitrage</italic> argument, the derivate transition moments for the percent return should be independent of the nominal value of the asset <italic>z</italic>. There are multiple ways to get market exposure to the same asset, so the risk-return characteristics should not be a function of the asset price. Then, <inline-formula id="pone.0116752.e041"><mml:math id="M41" display="inline" overflow="scroll"><mml:mrow>
+<mml:msubsup>
+<mml:mi>D</mml:mi>
+<mml:mi>z</mml:mi>
+<mml:mrow>
+<mml:mo stretchy="false">(</mml:mo><mml:mi>n</mml:mi><mml:mo stretchy="false">)</mml:mo></mml:mrow>
+</mml:msubsup>
+<mml:mo>∝</mml:mo><mml:msup>
+<mml:mi>z</mml:mi>
+<mml:mi>n</mml:mi>
+</mml:msup>
+</mml:mrow>
+</mml:math>
+</inline-formula>.</p>
+<p>The derivate transition moments and the transition moments for the stock become thus <inline-formula id="pone.0116752.e042"><mml:math id="M42" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>D</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>n</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo>/</mml:mo> <mml:mi>n</mml:mi><mml:mo>!</mml:mo> <mml:mo stretchy="false">)</mml:mo> <mml:msub><mml:mi>ξ</mml:mi> <mml:mi>n</mml:mi></mml:msub> <mml:msup><mml:mi>s</mml:mi> <mml:mi>n</mml:mi></mml:msup></mml:mrow></mml:math></inline-formula>, <inline-formula id="pone.0116752.e043"><mml:math id="M43" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>s</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>n</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:msub><mml:mi>ξ</mml:mi> <mml:mi>n</mml:mi></mml:msub> <mml:msup><mml:mi>s</mml:mi> <mml:mi>n</mml:mi></mml:msup> <mml:mi>ϵ</mml:mi></mml:mrow></mml:math></inline-formula>. To use the familiar notation in the literature, let <italic>ξ</italic><sub>1</sub> = <italic>μ</italic>, <italic>ξ</italic><sub>2</sub> = <italic>σ</italic><sup>2</sup> and the new third-order parameter <italic>ξ</italic><sub>3</sub> = <italic>γ</italic><sup>3</sup>. For bonds, <inline-formula id="pone.0116752.e044"><mml:math id="M44" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>D</mml:mi> <mml:mi>b</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:mi>r</mml:mi> <mml:mi>b</mml:mi></mml:mrow></mml:math></inline-formula>, <inline-formula id="pone.0116752.e045"><mml:math id="M45" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>b</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>1</mml:mn> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup> <mml:mo>=</mml:mo> <mml:mi>r</mml:mi> <mml:mi>b</mml:mi> <mml:mi>ϵ</mml:mi></mml:mrow></mml:math></inline-formula> and <inline-formula id="pone.0116752.e046"><mml:math id="M46" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>M</mml:mi> <mml:mi>b</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>n</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> and <inline-formula id="pone.0116752.e047"><mml:math id="M47" display="inline" overflow="scroll"><mml:mrow><mml:msubsup><mml:mi>D</mml:mi> <mml:mi>b</mml:mi> <mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mi>n</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:msubsup></mml:mrow></mml:math></inline-formula> are zero for <italic>n</italic> ≥ 2.</p>
+<p>The partial differential equation governing the option price <italic>c</italic>(<italic>s</italic>, <italic>t</italic>) is obtained using using either (<xref ref-type="disp-formula" rid="pone.0116752.e018">7</xref>) or (<xref ref-type="disp-formula" rid="pone.0116752.e038">11</xref>), dividing by <italic>ϵ</italic> and taking the limit <italic>ϵ</italic> → 0
+<disp-formula id="pone.0116752.e048">
+<alternatives>
+<graphic id="pone.0116752.e048g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e048"/><mml:math id="M48" display="block" overflow="scroll"><mml:mrow><mml:mfrac><mml:mrow><mml:mo>∂</mml:mo> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>t</mml:mi></mml:mrow></mml:mfrac> <mml:mo>+</mml:mo> <mml:mi>r</mml:mi> <mml:mi>s</mml:mi> <mml:mfrac><mml:mrow><mml:mo>∂</mml:mo> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>s</mml:mi></mml:mrow></mml:mfrac> <mml:mo>+</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:msup><mml:mi>σ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:msup><mml:mi>s</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mfrac><mml:mrow><mml:msup><mml:mo>∂</mml:mo> <mml:mn>2</mml:mn></mml:msup> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:msup><mml:mi>s</mml:mi> <mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac> <mml:mo>+</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>6</mml:mn></mml:mfrac> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:msup><mml:mi>s</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mfrac><mml:mrow><mml:msup><mml:mo>∂</mml:mo> <mml:mn>3</mml:mn></mml:msup> <mml:mi>c</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:msup><mml:mi>s</mml:mi> <mml:mn>3</mml:mn></mml:msup></mml:mrow></mml:mfrac> <mml:mo>−</mml:mo> <mml:mi>r</mml:mi> <mml:mi>c</mml:mi> <mml:mo>=</mml:mo> <mml:mn>0.</mml:mn></mml:mrow></mml:math></alternatives>
+<label>(12)</label>
+</disp-formula></p>
+<p>The boundary conditions for an European-style call option [<xref ref-type="bibr" rid="pone.0116752.ref001">1</xref>, <xref ref-type="bibr" rid="pone.0116752.ref002">2</xref>] are: <italic>c</italic>(0,<italic>t</italic>) = 0 for all <italic>t</italic>, <italic>c</italic>(<italic>s</italic>, <italic>t</italic>) → <italic>s</italic> as <italic>s</italic> → ∞ and <italic>c</italic>(<italic>s</italic>, <italic>T</italic>) = max{<italic>s</italic>−<italic>K</italic>,0}. Using the change of variables, (<xref ref-type="disp-formula" rid="pone.0116752.e002">2</xref>), and <italic>u</italic>(<italic>x</italic>, <italic>τ</italic>) = <italic>c</italic>(<italic>s</italic>, <italic>t</italic>)exp(<italic>rτ</italic>), the equation (<xref ref-type="disp-formula" rid="pone.0116752.e048">12</xref>) becomes
+<disp-formula id="pone.0116752.e049">
+<alternatives>
+<graphic id="pone.0116752.e049g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e049"/><mml:math id="M49" display="block" overflow="scroll"><mml:mrow><mml:mfrac><mml:mrow><mml:mo>∂</mml:mo> <mml:mi>u</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:mi>τ</mml:mi></mml:mrow></mml:mfrac> <mml:mo>=</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:mo stretchy="false">(</mml:mo> <mml:msup><mml:mi>σ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>−</mml:mo> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mo stretchy="false">)</mml:mo> <mml:mfrac><mml:mrow><mml:msup><mml:mo>∂</mml:mo> <mml:mn>2</mml:mn></mml:msup> <mml:mi>u</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:msup><mml:mi>x</mml:mi> <mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac> <mml:mo>+</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>6</mml:mn></mml:mfrac> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mfrac><mml:mrow><mml:msup><mml:mo>∂</mml:mo> <mml:mn>3</mml:mn></mml:msup> <mml:mi>u</mml:mi></mml:mrow> <mml:mrow><mml:mo>∂</mml:mo> <mml:msup><mml:mi>x</mml:mi> <mml:mn>3</mml:mn></mml:msup></mml:mrow></mml:mfrac> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(13)</label>
+</disp-formula>
+with solution
+<disp-formula id="pone.0116752.e050">
+<alternatives>
+<graphic id="pone.0116752.e050g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e050"/><mml:math id="M50" display="block" overflow="scroll"><mml:mrow><mml:mi>u</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>x</mml:mi> <mml:mo>,</mml:mo> <mml:mi>τ</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:mstyle displaystyle="true"><mml:mrow><mml:mo>∫</mml:mo> <mml:mi>u</mml:mi></mml:mrow></mml:mstyle> <mml:mo stretchy="false">(</mml:mo> <mml:mi>φ</mml:mi> <mml:mo>,</mml:mo> <mml:mn>0</mml:mn> <mml:mo stretchy="false">)</mml:mo> <mml:mi>G</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>x</mml:mi> <mml:mo>−</mml:mo> <mml:mi>φ</mml:mi> <mml:mo>,</mml:mo> <mml:mi>τ</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mi>d</mml:mi> <mml:mi>φ</mml:mi> <mml:mo>.</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(14)</label>
+</disp-formula>
+Here, <italic>u</italic>(<italic>ϕ</italic>,0) = <italic>K</italic>(<italic>e</italic><sup>max{<italic>ϕ</italic>,0}</sup>−1) and the Green function <italic>G</italic> is given by
+<disp-formula id="pone.0116752.e051">
+<alternatives>
+<graphic id="pone.0116752.e051g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e051"/><mml:math id="M51" display="block" overflow="scroll"><mml:mrow><mml:mi>G</mml:mi> <mml:mo stretchy="false">(</mml:mo> <mml:mi>x</mml:mi> <mml:mo>,</mml:mo> <mml:mi>τ</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mspace width="1pt"/><mml:mo>=</mml:mo> <mml:mspace width="1pt"/><mml:mo>±</mml:mo> <mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>3</mml:mn> <mml:mi>τ</mml:mi> <mml:mi>n</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mrow><mml:mo>−</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>3</mml:mn></mml:mfrac></mml:mrow></mml:msup> <mml:mi>exp</mml:mi> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mfrac><mml:mrow><mml:mn>2</mml:mn> <mml:msup><mml:mi>m</mml:mi> <mml:mn>3</mml:mn></mml:msup></mml:mrow> <mml:mrow><mml:msup><mml:mn>3</mml:mn> <mml:mn>3</mml:mn></mml:msup> <mml:msup><mml:mi>n</mml:mi> <mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac> <mml:mi>τ</mml:mi> <mml:mo>−</mml:mo> <mml:mfrac><mml:mi>m</mml:mi> <mml:mrow><mml:mn>3</mml:mn> <mml:mi>n</mml:mi></mml:mrow></mml:mfrac> <mml:mi>x</mml:mi></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mtext>Ai</mml:mtext> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:msup><mml:mi>m</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>3</mml:mn> <mml:mi>n</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mrow><mml:mo>−</mml:mo> <mml:mfrac><mml:mn>4</mml:mn> <mml:mn>3</mml:mn></mml:mfrac></mml:mrow></mml:msup> <mml:msup><mml:mi>τ</mml:mi> <mml:mrow><mml:mfrac><mml:mn>2</mml:mn> <mml:mn>3</mml:mn></mml:mfrac></mml:mrow></mml:msup> <mml:mo>−</mml:mo> <mml:msup><mml:mrow><mml:mo stretchy="false">(</mml:mo> <mml:mn>3</mml:mn> <mml:mi>τ</mml:mi> <mml:mi>n</mml:mi> <mml:mo stretchy="false">)</mml:mo></mml:mrow> <mml:mrow><mml:mo>−</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>3</mml:mn></mml:mfrac></mml:mrow></mml:msup> <mml:mi>x</mml:mi></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mo>.</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(15)</label>
+</disp-formula>
+with ± = sign(<italic>γ</italic>) and Ai(<italic>x</italic>) is the Airy function [<xref ref-type="bibr" rid="pone.0116752.ref019">19</xref>]. Therefore, the solution takes the form in (<xref ref-type="disp-formula" rid="pone.0116752.e001">1</xref>).</p>
+<p>The solution <italic>c</italic>(<italic>s</italic>, <italic>t</italic>) represents a valid price only if it is a positive function. This will happen if <italic>u</italic>(<italic>x</italic>, <italic>τ</italic>) is positive. It turns out that <italic>u</italic>(<italic>x</italic>, <italic>τ</italic>) ≥ 0 for all <italic>γ</italic> &gt; 0 (see <italic><xref ref-type="supplementary-material" rid="pone.0116752.s001">Supporting Information</xref></italic>). On the other hand, for <italic>γ</italic> &lt; 0, the price is positive for all pairs in the upper plane (<italic>a</italic> ≥ 0,<italic>τ</italic>) but becomes negative for regions in the lower plane (<italic>a</italic> &lt; 0,<italic>τ</italic>). However, for (<italic>a</italic> &lt; 0,<italic>τ</italic>) the negative prices predicted by (<xref ref-type="disp-formula" rid="pone.0116752.e001">1</xref>) are very small, so it can be assumed that the cost is virtually zero. Avoiding the region (<italic>a</italic> &lt; 0,<italic>τ</italic>) imposes a condition on the moneyness, <italic>M</italic> = ln(<italic>s</italic>/<italic>K</italic>), of the option. <italic>Moneyness</italic> is a measure of how much “in-the-money” (<italic>s</italic> exceeds <italic>K</italic>) or “out-of-the-money” (<italic>K</italic> exceeds <italic>s</italic>) the option is. In other words, it provides a measure of how valuable the option is. Excluding the region <italic>a</italic> &lt; 0 implies a “minimum allowable moneyness” condition. Namely, for <italic>γ</italic> &lt; 0 the option price is guaranteed to be positive for all (<italic>s</italic>, <italic>τ</italic>) for which the moneyness <italic>M</italic> &gt; <italic>M</italic><sub>min</sub> with
+<disp-formula id="pone.0116752.e052">
+<alternatives>
+<graphic id="pone.0116752.e052g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e052"/><mml:math id="M52" display="block" overflow="scroll"><mml:mrow><mml:msub><mml:mi>M</mml:mi> <mml:mrow><mml:mi>min</mml:mi></mml:mrow></mml:msub> <mml:mo stretchy="false">(</mml:mo> <mml:mi>τ</mml:mi> <mml:mo>|</mml:mo> <mml:mi>σ</mml:mi> <mml:mo>,</mml:mo> <mml:mi>γ</mml:mi> <mml:mo>,</mml:mo> <mml:mi>r</mml:mi> <mml:mo stretchy="false">)</mml:mo> <mml:mo>=</mml:mo> <mml:mo>−</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mi>r</mml:mi> <mml:mo>+</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:msup><mml:mi>σ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>−</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>6</mml:mn></mml:mfrac> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mo>−</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:mfrac><mml:mrow><mml:msup><mml:mi>σ</mml:mi> <mml:mn>4</mml:mn></mml:msup></mml:mrow> <mml:mrow><mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup></mml:mrow></mml:mfrac></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>τ</mml:mi> <mml:mo>.</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(16)</label>
+</disp-formula>
+As <italic>γ</italic> → 0<sup>−</sup>, the minimum threshold <italic>M</italic><sub>min</sub> → −∞, implying that the option price becomes positive for all (<italic>s</italic>, <italic>τ</italic>), recovering the Black-Scholes-Merton result. Another minimum moneyness condition appears from a completely different reason and only for the ORP method. The measure <italic>R</italic> that quantifies the accuracy of the replication, (<xref ref-type="disp-formula" rid="pone.0116752.e037">10</xref>), should be small, ∣<italic>R</italic>∣ &lt; <italic>R</italic><sub><italic>c</italic></sub>. The constant <italic>R</italic><sub><italic>c</italic></sub> is a predefined level of precision accepted by the market participant. <xref ref-type="fig" rid="pone.0116752.g001">Fig. 1</xref> helps to locate the region ∣<italic>R</italic>∣ &lt; <italic>R</italic><sub><italic>c</italic></sub> in the plane moneyness-time to maturity, (ln(<italic>s</italic>/<italic>K</italic>), <italic>τ</italic>).</p>
+<fig id="pone.0116752.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0116752.g001</object-id>
+<label>Figure 1</label>
+<caption>
+<title>ORP replication accuracy region.</title>
+<p>Approximation for the accuracy region ∣<italic>R</italic>∣ &lt; <italic>R</italic><sub><italic>c</italic></sub> in the (<italic>M</italic>, <italic>τ</italic>)–plane for <italic>σ</italic> = 0.2 years<sup>−1/2</sup>, <italic>γ</italic> = ±0.01 years<sup>−1/3</sup>, <italic>r</italic> = 0.02 years<sup>−1</sup>, <italic>R</italic><sub><italic>c</italic></sub> = 0.1 and <italic>η</italic><sub><italic>c</italic></sub> = 6.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0116752.g001"/>
+</fig>
+<p>The region must be above the curve <italic>R</italic> = <italic>R</italic><sub><italic>c</italic></sub> which starts at <italic>τ</italic> = <italic>T</italic> at a low negative moneyness, implying that the replication is valid for stock prices covering the whole range from close to zero to infinity. As the time to maturity decreases, the curve has a linear growth.</p>
+<p>This means that, for a given time to maturity <italic>τ</italic>, and for a given set of parameters (<italic>σ</italic>, <italic>γ</italic>, <italic>r</italic>), the replication is better than <italic>R</italic><sub><italic>c</italic></sub> if the stock price <italic>s</italic> at <italic>τ</italic> takes a value such that the moneyness is above a minimum threshold, ln(<italic>s</italic>/<italic>K</italic>) &gt; <italic>M</italic><sub>min</sub>(<italic>τ</italic>∣<italic>σ</italic>, <italic>γ</italic>, <italic>r</italic>) given by
+<disp-formula id="pone.0116752.e053">
+<alternatives>
+<graphic id="pone.0116752.e053g" mimetype="image" xlink:type="simple" position="anchor" xlink:href="info:doi/10.1371/journal.pone.0116752.e053"/><mml:math id="M53" display="block" overflow="scroll"><mml:mrow><mml:msub><mml:mi>M</mml:mi> <mml:mrow><mml:mi>min</mml:mi></mml:mrow></mml:msub> <mml:mo>=</mml:mo> <mml:mo>−</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mi>r</mml:mi> <mml:mo>+</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>2</mml:mn></mml:mfrac> <mml:msup><mml:mi>σ</mml:mi> <mml:mn>2</mml:mn></mml:msup> <mml:mo>−</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mn>6</mml:mn></mml:mfrac> <mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup> <mml:mo>±</mml:mo> <mml:msub><mml:mi>R</mml:mi> <mml:mi>c</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mrow><mml:mn>1</mml:mn> <mml:mo>±</mml:mo> <mml:mfrac><mml:mrow><mml:msub><mml:mi>R</mml:mi> <mml:mi>c</mml:mi></mml:msub></mml:mrow> <mml:mn>2</mml:mn></mml:mfrac></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mfrac><mml:mrow><mml:msup><mml:mi>σ</mml:mi> <mml:mn>4</mml:mn></mml:msup></mml:mrow> <mml:mrow><mml:msup><mml:mi>γ</mml:mi> <mml:mn>3</mml:mn></mml:msup></mml:mrow></mml:mfrac></mml:mrow> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>τ</mml:mi> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives>
+<label>(17)</label>
+</disp-formula>
+with ± = sign(<italic>γ</italic>).</p>
+<p>Close to the expiration time, the curve ∣<italic>R</italic>∣ = <italic>R</italic><sub><italic>c</italic></sub> changes from a linear growth to an exponential one. This change occurs around a <italic>τ</italic><sub>min</sub> and the exponential growth of the curve is confined to the left of the vertical line at <italic>τ</italic><sub>min</sub>. For <italic>τ</italic> &lt; <italic>τ</italic><sub>min</sub> the replication is accurate only for large stock prices. Therefore, a simple approximation is to restrict the region of high ORP replication accuracy to the right of a vertical line located at a <italic>τ</italic><sub>min</sub>. In <xref ref-type="fig" rid="pone.0116752.g001">Fig. 1</xref>, <italic>τ</italic><sub>min</sub> = 13 hours and was found from <italic>τ</italic> = 2(<italic>γ</italic>/<italic>σ</italic>)<sup>6</sup> <italic>η</italic><sup>3</sup> with <italic>η</italic> = 6 (see <italic><xref ref-type="supplementary-material" rid="pone.0116752.s001">Supporting Information</xref></italic>). For precise results, a one-time numerical tabulation of the curve <italic>R</italic> = <italic>R</italic><sub><italic>c</italic></sub> can be performed in the plane (<italic>η</italic>, <italic>a</italic>) and transformed in the plane (ln(<italic>s</italic>/<italic>K</italic>), <italic>τ</italic>) for given (<italic>σ</italic>, <italic>γ</italic>, <italic>r</italic>). An analysis of the minimum moneyness condition for various <italic>σ</italic> and <italic>γ</italic> is shown in <xref ref-type="supplementary-material" rid="pone.0116752.s004">S3 Fig.</xref> of the <italic>Supporting Information</italic>.</p>
+</sec>
+</sec>
+<sec id="sec004">
+<title>Numerical example</title>
+<p>The presence of third-order noise in the stochastic process used to describe the option’s underlier can lead to sizable option price differentials relative to the Black-Scholes predicted valuations. This section explores the difference in the option prices derived using the model in this manuscript and the traditional Black-Scholes approach. We consider European call options written on the publicly traded stock of General Electric Company (NYSE:GE). The choice in security was motivated by its very high trading volume (a 3-month average of roughly 27.9M [<xref ref-type="bibr" rid="pone.0116752.ref020">20</xref>]).</p>
+<p>For the estimation of the 2 unobservable parameters <italic>σ</italic> and <italic>γ</italic> in (<xref ref-type="disp-formula" rid="pone.0116752.e001">1</xref>), we used daily end-of-day closing prices [<xref ref-type="bibr" rid="pone.0116752.ref020">20</xref>] between 2010/8/15 and 2014/8/15. We segmented the data set consisting of approximately 1000 points in 10 bins. For each bin, the averages ⟨<italic>ρ</italic><sup>2</sup>⟩/⟨<italic>z</italic><sup>2</sup>⟩ and ⟨<italic>ρ</italic><sup>3</sup>⟩/⟨<italic>z</italic><sup>3</sup>⟩ were taken, where <italic>ρ</italic> is the price jump and <italic>z</italic> is the is the asset price before the jump. The values obtained appeared stable, which confirms the second and third derivate transition moments’ dependency on <italic>z</italic><sup>2</sup> and <italic>z</italic><sup>3</sup>, respectively. The values for <italic>σ</italic> and <italic>γ</italic> were finally obtained by taking the simple average of the previously obtained values of each bin’s averages. The risk-free rate <italic>r</italic> was taken at 3.5%, the average daily yield on the 30-year U.S. Government Bond during the same time period [<xref ref-type="bibr" rid="pone.0116752.ref021">21</xref>].</p>
+<p>To understand the difference (see <xref ref-type="table" rid="pone.0116752.t001">Table 1</xref> and <xref ref-type="table" rid="pone.0116752.t002">Table 2</xref>) between the option prices derived using the proposed model and the Black-Scholes-Merton theory, we look at this difference expressed as a fraction of the Black-Scholes price. One can see in <xref ref-type="fig" rid="pone.0116752.g002">Fig. 2</xref> that the price difference reaches a minimum of about −11 basis points (bps) as the time to maturity falls to about 0.5 years, given that the option is $4 in-the-money. Now, fixing the maturity of the option to 0.5 years, <xref ref-type="fig" rid="pone.0116752.g003">Fig. 3</xref> shows the dependency of the price difference on the strike price <italic>K</italic>. It can be seen that, when the option is $3 in-the-money, the proposed price is 10 bps under the Black-Scholes price, but, when the option is $6 out-of-the-money, the sign flips and the proposed price is 7 bps above.</p>
+<fig id="pone.0116752.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0116752.g002</object-id>
+<label>Figure 2</label>
+<caption>
+<title>Option price difference for different maturities.</title>
+<p>Difference in option prices (proposed vs. Black-Scholes) expressed as a percent of the Black-Scholes price for different times to maturity <italic>τ</italic>, where <italic>K</italic> = 21 USD, <italic>σ</italic> = 0.265 years<sup>−1/2</sup>, <italic>γ</italic> = 0.068 years<sup>−1/3</sup> and <italic>r</italic> = 0.035 years<sup>−1</sup>.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0116752.g002"/>
+</fig>
+<fig id="pone.0116752.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0116752.g003</object-id>
+<label>Figure 3</label>
+<caption>
+<title>Option price difference for different strikes.</title>
+<p>Difference in option prices (proposed vs. Black-Scholes) expressed as a percent of the Black-Scholes price for different strikes <italic>K</italic>, where <italic>τ</italic> = 0.5 years, <italic>σ</italic> = 0.265 years<sup>−1/2</sup>, <italic>γ</italic> = 0.068 years<sup>−1/3</sup> and <italic>r</italic> = 0.035 years<sup>−1</sup>.</p>
+</caption>
+<graphic mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0116752.g003"/>
+</fig>
+<table-wrap id="pone.0116752.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0116752.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>Option price (USD) comparison for different maturities.</title>
+<p>Difference in option prices (proposed vs. Black-Scholes) for different times to maturity <italic>τ</italic>, where <italic>K</italic> = 21 USD, <italic>σ</italic> = 0.265 years<sup>−1/2</sup>, <italic>γ</italic> = 0.068 years<sup>−1/3</sup> and <italic>r</italic> = 0.035 years<sup>−1</sup>.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0116752.t001g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0116752.t001"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"><bold>Option Maturity</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Proposed Price</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Black-Scholes Price</bold></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="char" char="." rowspan="1" colspan="1">0.25</td>
+<td align="char" char="." rowspan="1" colspan="1">4.2942</td>
+<td align="char" char="." rowspan="1" colspan="1">4.2984</td>
+</tr>
+<tr>
+<td align="char" char="." rowspan="1" colspan="1">0.50</td>
+<td align="char" char="." rowspan="1" colspan="1">4.6975</td>
+<td align="char" char="." rowspan="1" colspan="1">4.7029</td>
+</tr>
+<tr>
+<td align="char" char="." rowspan="1" colspan="1">0.75</td>
+<td align="char" char="." rowspan="1" colspan="1">5.0837</td>
+<td align="char" char="." rowspan="1" colspan="1">5.0894</td>
+</tr>
+<tr>
+<td align="char" char="." rowspan="1" colspan="1">1.00</td>
+<td align="char" char="." rowspan="1" colspan="1">5.4439</td>
+<td align="char" char="." rowspan="1" colspan="1">5.4498</td>
+</tr>
+<tr>
+<td align="char" char="." rowspan="1" colspan="1">1.25</td>
+<td align="char" char="." rowspan="1" colspan="1">5.7810</td>
+<td align="char" char="." rowspan="1" colspan="1">5.7871</td>
+</tr>
+<tr>
+<td align="char" char="." rowspan="1" colspan="1">1.50</td>
+<td align="char" char="." rowspan="1" colspan="1">6.0986</td>
+<td align="char" char="." rowspan="1" colspan="1">6.1049</td>
+</tr>
+<tr>
+<td align="char" char="." rowspan="1" colspan="1">1.75</td>
+<td align="char" char="." rowspan="1" colspan="1">6.3998</td>
+<td align="char" char="." rowspan="1" colspan="1">6.4062</td>
+</tr>
+<tr>
+<td align="char" char="." rowspan="1" colspan="1">2.00</td>
+<td align="char" char="." rowspan="1" colspan="1">6.6868</td>
+<td align="char" char="." rowspan="1" colspan="1">6.6933</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<table-wrap id="pone.0116752.t002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pone.0116752.t002</object-id>
+<label>Table 2</label>
+<caption>
+<title>Option price (USD) comparison for different strikes.</title>
+<p>Difference in option prices (proposed vs. Black-Scholes) for different strikes <italic>K</italic>, where <italic>τ</italic> = 0.5 years, <italic>σ</italic> = 0.265 years<sup>−1/2</sup>, <italic>γ</italic> = 0.068 years<sup>−1/3</sup> and <italic>r</italic> = 0.035 years<sup>−1</sup>.</p>
+</caption>
+<alternatives>
+<graphic id="pone.0116752.t002g" mimetype="image" xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0116752.t002"/>
+<table frame="box" rules="all" border="0">
+<colgroup span="1">
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+<col align="left" valign="top" span="1"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" rowspan="1" colspan="1"><bold>Option Strike</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Proposed Price</bold></th>
+<th align="left" rowspan="1" colspan="1"><bold>Black-Scholes Price</bold></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="1" colspan="1">15</td>
+<td align="char" char="." rowspan="1" colspan="1">10.2625</td>
+<td align="char" char="." rowspan="1" colspan="1">10.2628</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">18</td>
+<td align="char" char="." rowspan="1" colspan="1">7.3598</td>
+<td align="char" char="." rowspan="1" colspan="1">7.3623</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">21</td>
+<td align="char" char="." rowspan="1" colspan="1">4.6975</td>
+<td align="char" char="." rowspan="1" colspan="1">4.7029</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">24</td>
+<td align="char" char="." rowspan="1" colspan="1">2.6055</td>
+<td align="char" char="." rowspan="1" colspan="1">2.6096</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">27</td>
+<td align="char" char="." rowspan="1" colspan="1">1.2549</td>
+<td align="char" char="." rowspan="1" colspan="1">1.2546</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">30</td>
+<td align="char" char="." rowspan="1" colspan="1">0.5332</td>
+<td align="char" char="." rowspan="1" colspan="1">0.5299</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">33</td>
+<td align="char" char="." rowspan="1" colspan="1">0.2044</td>
+<td align="char" char="." rowspan="1" colspan="1">0.2007</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">36</td>
+<td align="char" char="." rowspan="1" colspan="1">0.0722</td>
+<td align="char" char="." rowspan="1" colspan="1">0.0697</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+</sec>
+<sec id="sec005" sec-type="conclusions">
+<title>Conclusion</title>
+<p>A third-order KM expansion was used to describe the distribution of stock prices. This allowed for the introduction of skewness (third-order noise) in the price distribution. The price of European-style call options written on stocks governed by the truncated KM expansion was then derived using two methods. In the first, it was shown that a portfolio which is short one unit of the option and long a varying amount of the underlying stock (<italic>i.e.</italic>, a <italic>delta-hedged portfolio</italic>) can be constructed to return the risk-free return. In the second, a portfolio consisting of a varying amount of a stocks and risk-free bonds was constructed to have the same fluctuations (moments higher than the first) as a capital-equivalent investment in options. In both methods, the assumption that the option is a function of the underlier’s price and of time led to a partial differential equation for the option price. This equation can be solved in closed form. A surprising result emerged in the analysis of the two methods described above. Different than a usual second-order truncation of the KM expansion, as in the Black-Scholes-Merton theory, the two methods are no longer equivalent. The introduction of a third-order moment only approximately equates the risk of the stock-bond portfolio to that of the option. This approximation was explored analytically and a measure for the replication accuracy <italic>R</italic> was developed. However, the fluctuations of the option-stock portfolio do cancel out even with the third order included.</p>
+</sec>
+<sec id="sec006">
+<title>Supporting Information</title>
+<supplementary-material id="pone.0116752.s001" position="float" xlink:href="info:doi/10.1371/journal.pone.0116752.s001" mimetype="application/pdf" xlink:type="simple">
+<label>S1 Supporting Information</label>
+<caption>
+<title>Supporting Information.</title>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0116752.s002" position="float" xlink:href="info:doi/10.1371/journal.pone.0116752.s002" mimetype="image/tiff" xlink:type="simple">
+<label>S1 Fig</label>
+<caption>
+<title>The case <italic>γ</italic> &gt; 0.</title>
+<p>The curve <italic>R</italic>(<italic>η</italic>, <italic>a</italic>) = <italic>R</italic><sub><italic>c</italic></sub> = 0.1, connected line, is approximated by two curves, namely the crossed line for <italic>a</italic> &lt; 0 and the parabola, dashed line, for <italic>a</italic> &gt; 0. The shaded region corresponds to <italic>R</italic> &lt; 0.1.</p>
+<p>(TIF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0116752.s003" position="float" xlink:href="info:doi/10.1371/journal.pone.0116752.s003" mimetype="image/tiff" xlink:type="simple">
+<label>S2 Fig</label>
+<caption>
+<title>The case <italic>γ</italic> &lt; 0.</title>
+<p>The curve <italic>R</italic>(<italic>η</italic>, <italic>a</italic>) = <italic>R</italic><sub><italic>c</italic></sub> = 0.1, connected line, is approximated by the parabola, dashed line, for <italic>a</italic> &gt; 0. The region <italic>a</italic> &lt; 0 is not used because the cost can take negative values, although close to zero. The shaded region corresponds to <italic>R</italic> &lt; 0.1.</p>
+<p>(TIF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pone.0116752.s004" position="float" xlink:href="info:doi/10.1371/journal.pone.0116752.s004" mimetype="image/tiff" xlink:type="simple">
+<label>S3 Fig</label>
+<caption>
+<title>Area where <italic>η</italic> &gt; <italic>η</italic><sub><italic>c</italic></sub>.</title>
+<p>The region above the curves shows combinations of (<italic>σ</italic>, <italic>γ</italic>) for which <italic>η</italic> &gt; <italic>η</italic><sub><italic>c</italic></sub> and <italic>M</italic><sub>min</sub> &lt; <italic>M</italic><sub><italic>c</italic></sub> for <italic>τ</italic> = 14 days, <italic>R</italic><sub><italic>c</italic></sub> = 0.1, <italic>η</italic><sub><italic>c</italic></sub> = 10, <italic>M</italic><sub><italic>c</italic></sub> = 1/100 and <italic>r</italic> = 0.02 years<sup>−1</sup>.</p>
+<p>(TIF)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>References</title>
+<ref id="pone.0116752.ref001">
+<label>1</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Black</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Scholes</surname> <given-names>M</given-names></name> (<year>1973</year>) <article-title>The Pricing of Options and Corporate Liabilities</article-title>. <source>Journal of Political Economy</source> <volume>81</volume>: <fpage>637</fpage>–<lpage>654</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1086/260062" xlink:type="simple">10.1086/260062</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0116752.ref002">
+<label>2</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Merton</surname> <given-names>RC</given-names></name> (<year>1973</year>) <article-title>Theory of Rational Option Pricing</article-title>. <source>Bell Journal of Economics</source> <volume>4</volume>: <fpage>141</fpage>–<lpage>183</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/3003143" xlink:type="simple">10.2307/3003143</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0116752.ref003">
+<label>3</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Merton</surname> <given-names>RC</given-names></name> (<year>1976</year>) <article-title>Option Pricing When Underlying Stock Returns Are Discontinuous</article-title>. <source>Journal of Financial Economics</source> <volume>3</volume>: <fpage>125</fpage>–<lpage>144</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/0304-405X(76)90022-2" xlink:type="simple">10.1016/0304-405X(76)90022-2</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0116752.ref004">
+<label>4</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Heston</surname> <given-names>SL</given-names></name> (<year>1993</year>) <article-title>A Closed-form Solution for Options with Stochastic Volatility with Applications to Bond and Currency Options</article-title>. <source>Review of Financial Studies</source> <volume>6</volume>: <fpage>327</fpage>–<lpage>43</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1093/rfs/6.2.327" xlink:type="simple">10.1093/rfs/6.2.327</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0116752.ref005">
+<label>5</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Hull</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>White</surname> <given-names>A</given-names></name> (<year>1988</year>) <article-title>An Analysis of the Bias in Option Pricing caused by a Stochastic Volatility</article-title>. <source>Advances in Futures and Options Research</source> <volume>3</volume>: <fpage>29</fpage>–<lpage>61</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0116752.ref006">
+<label>6</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Hagan</surname> <given-names>PS</given-names></name>, <name name-style="western"><surname>Kumar</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Lesniewski</surname> <given-names>AS</given-names></name>, <name name-style="western"><surname>Woodward</surname> <given-names>E</given-names></name> (<year>2004</year>) <article-title>Managing Smile Risk</article-title>. <source>Wilmott</source>: <fpage>84</fpage>–<lpage>108</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0116752.ref007">
+<label>7</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Jarrow</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Rudd</surname> <given-names>A</given-names></name> (<year>1982</year>) <article-title>Approximate Option Valuation For Arbitrary Stochastic Processes</article-title>. <source>Journal of Financial Economics</source> <volume>10</volume>: <fpage>347</fpage>–<lpage>369</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/0304-405X(82)90007-1" xlink:type="simple">10.1016/0304-405X(82)90007-1</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0116752.ref008">
+<label>8</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Brigo</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Mercurio</surname> <given-names>F</given-names></name> (<year>2000</year>) <article-title>A mixed-up Smile</article-title>. <source>RISK</source> <volume>13</volume>: <fpage>123</fpage>–<lpage>126</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0116752.ref009">
+<label>9</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Derman</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Kani</surname> <given-names>I</given-names></name> (<year>1994</year>) <article-title>Riding on a Smile</article-title>. <source>RISK</source> <volume>7</volume>: <fpage>32</fpage>–<lpage>39</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0116752.ref010">
+<label>10</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Dupire</surname> <given-names>B</given-names></name> (<year>1994</year>) <article-title>Pricing with a Smile</article-title>. <source>RISK</source> <volume>7</volume>: <fpage>18</fpage>–<lpage>20</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0116752.ref011">
+<label>11</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Rubenstein</surname> <given-names>M</given-names></name> (<year>1994</year>) <article-title>Implied Binomial Trees</article-title>. <source>Journal of Finance</source> <volume>49</volume>: <fpage>771</fpage>–<lpage>818</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1540-6261.1994.tb00079.x" xlink:type="simple">10.1111/j.1540-6261.1994.tb00079.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0116752.ref012">
+<label>12</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>van Kampen</surname> <given-names>NG</given-names></name> (<year>1992</year>) <source>Stochastic Processes in Physics and Chemistry</source>. <publisher-loc>North Holland</publisher-loc>, <publisher-name>Amsterdam</publisher-name>.</mixed-citation>
+</ref>
+<ref id="pone.0116752.ref013">
+<label>13</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Gardiner</surname> <given-names>CW</given-names></name> (<year>2004</year>) <source>Handbook of Stochastic Methods: for Physics, Chemistry and the Natural Sciences</source>. <series>Springer Series in Synergetics</series>, <publisher-loc>Berlin</publisher-loc>, <edition>3rd edition</edition>.</mixed-citation>
+</ref>
+<ref id="pone.0116752.ref014">
+<label>14</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Kramers</surname> <given-names>HA</given-names></name> (<year>1940</year>) <article-title>Brownian Motion in a Field of Force and the Diffusion Model of Chemical Reactions</article-title>. <source>Physica</source> <volume>7</volume>: <fpage>284</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/S0031-8914(40)90098-2" xlink:type="simple">10.1016/S0031-8914(40)90098-2</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0116752.ref015">
+<label>15</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Moyal</surname> <given-names>JE</given-names></name> (<year>1949</year>) <article-title>Stochastic Processes and Statistical Physics</article-title>. <source>Journal of the Royal Statistical Society B</source> <volume>11</volume>: <fpage>150</fpage>–<lpage>210</lpage>.</mixed-citation>
+</ref>
+<ref id="pone.0116752.ref016">
+<label>16</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Risken</surname> <given-names>H</given-names></name> (<year>1996</year>) <source>The Fokker-Planck Equation: Methods of Solution and Application</source>. <publisher-name>Springer</publisher-name>, <publisher-loc>Berlin</publisher-loc>, <edition>second edition</edition>.</mixed-citation>
+</ref>
+<ref id="pone.0116752.ref017">
+<label>17</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Friedrich</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Peinke</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Renner</surname> <given-names>C</given-names></name> (<year>2000</year>) <article-title>How to Quantify Deterministic and Random Influences on the Statistics of the Foreign Exchange Market</article-title>. <source>Phys Rev Lett</source> <volume>84</volume>: <fpage>5224</fpage>–<lpage>5227</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1103/PhysRevLett.84.5224" xlink:type="simple">10.1103/PhysRevLett.84.5224</ext-link></comment> <object-id pub-id-type="pmid">10990908</object-id></mixed-citation>
+</ref>
+<ref id="pone.0116752.ref018">
+<label>18</label>
+<mixed-citation xlink:type="simple" publication-type="journal">
+<name name-style="western"><surname>Pawula</surname> <given-names>RF</given-names></name> (<year>1967</year>) <article-title>Approximation of the Linear Boltzmann Equation by the Fokker-Planck Equation</article-title>. <source>Physical Review</source>: <fpage>186</fpage>–<lpage>188</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1103/PhysRev.162.186" xlink:type="simple">10.1103/PhysRev.162.186</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pone.0116752.ref019">
+<label>19</label>
+<mixed-citation xlink:type="simple" publication-type="book">
+<name name-style="western"><surname>Vallée</surname> <given-names>O</given-names></name>, <name name-style="western"><surname>Soares</surname> <given-names>M</given-names></name> (<year>2004</year>) <source>Airy Functions and Applications to Physics</source>. <publisher-name>Imperial College Press</publisher-name>.</mixed-citation>
+</ref>
+<ref id="pone.0116752.ref020">
+<label>20</label>
+<mixed-citation xlink:type="simple" publication-type="other">
+<collab xlink:type="simple">Google Finance: Stock market quotes, news, currency conversions &amp; more</collab>. (<comment>n.d.</comment>). <source>Google Inc.</source> <comment>Available: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="https://www.google.com/finance?cid=14135">https://www.google.com/finance?cid=14135</ext-link>. Accessed 2014 Sep 2.</comment></mixed-citation>
+</ref>
+<ref id="pone.0116752.ref021">
+<label>21</label>
+<mixed-citation xlink:type="simple" publication-type="other">
+<collab xlink:type="simple">U.S. Department of Treasury: Resource Center, Data and Charts Center, Daily Yield Curve Rates</collab>. (<comment>n.d.</comment>) <comment>Available: <ext-link ext-link-type="uri" xlink:type="simple" xlink:href="http://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield">http://www.treasury.gov/resource-center/data-chart-center/interest-rates/Pages/TextView.aspx?data=yield</ext-link>. Accessed 2014 Sep 2.</comment></mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="discussion" dtd-version="3.0" xml:lang="EN">
+<front>
+<journal-meta><journal-id journal-id-type="nlm-ta">PLoS Med</journal-id><journal-id journal-id-type="publisher-id">PLoS</journal-id><journal-id journal-id-type="pmc">plosmed</journal-id><!--===== Grouping journal title elements =====--><journal-title-group><journal-title>PLoS Medicine</journal-title></journal-title-group><issn pub-type="epub">1549-1676</issn><publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, USA</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="publisher-id">08-PLME-GG-3245R2</article-id><article-id pub-id-type="doi">10.1371/journal.pmed.1000097</article-id><article-categories><subj-group subj-group-type="heading"><subject>Guidelines and Guidance</subject></subj-group><subj-group subj-group-type="Discipline"><subject>Evidence-Based Healthcare</subject></subj-group></article-categories><title-group><article-title>Preferred Reporting Items for Systematic Reviews and Meta-Analyses: The PRISMA Statement</article-title></title-group><contrib-group>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Moher</surname><given-names>David</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref><xref ref-type="aff" rid="aff2"><sup>2</sup></xref><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Liberati</surname><given-names>Alessandro</given-names></name><xref ref-type="aff" rid="aff3"><sup>3</sup></xref><xref ref-type="aff" rid="aff4"><sup>4</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Tetzlaff</surname><given-names>Jennifer</given-names></name><xref ref-type="aff" rid="aff1"><sup>1</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><name name-style="western"><surname>Altman</surname><given-names>Douglas G.</given-names></name><xref ref-type="aff" rid="aff5"><sup>5</sup></xref></contrib>
+<contrib contrib-type="author" xlink:type="simple"><collab xlink:type="simple">The PRISMA Group</collab><xref ref-type="fn" rid="fn1"><sup>¶</sup></xref></contrib>
+</contrib-group><aff id="aff1"><label>1</label><addr-line>Ottawa Methods Centre, Ottawa Hospital Research Institute, Ottawa, Ontario, Canada</addr-line>       </aff><aff id="aff2"><label>2</label><addr-line>Department of Epidemiology and Community Medicine, Faculty of Medicine, University of Ottawa, Ottawa, Ontario, Canada</addr-line>       </aff><aff id="aff3"><label>3</label><addr-line>Università di Modena e Reggio Emilia, Modena, Italy</addr-line>       </aff><aff id="aff4"><label>4</label><addr-line>Centro Cochrane Italiano, Istituto Ricerche Farmacologiche Mario Negri, Milan, Italy</addr-line>       </aff><aff id="aff5"><label>5</label><addr-line>Centre for Statistics in Medicine, University of Oxford, Oxford, United Kingdom</addr-line>       </aff><author-notes>
+<corresp id="cor1">* E-mail: <email xlink:type="simple">dmoher@ohri.ca</email></corresp>
+<fn fn-type="con"><p><ext-link ext-link-type="uri" xlink:href="http://www.icmje.org/" xlink:type="simple">ICMJE</ext-link> criteria for authorship read and met: DM AL JT DGA. Wrote the first draft of the paper: DM AL DGA. Contributed to the writing of the paper: DM AL JT DGA. Participated in regular conference calls, identified the participants, secured funds, planned the meeting, participated in the meeting, and drafted the manuscript: DM AL DGA. Participated in identifying the evidence base for PRISMA, refining the checklist, and drafting the manuscript: JT. Agree with the recommendations: DM AL JT DGA.</p></fn>
+<fn fn-type="other" id="fn1"><p>¶ Membership of the PRISMA Group is provided in the Acknowledgments.</p></fn>
+<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn></author-notes><pub-date pub-type="collection"><month>7</month><year>2009</year></pub-date><pub-date pub-type="epub"><day>21</day><month>7</month><year>2009</year></pub-date><volume>6</volume><issue>7</issue><elocation-id>e1000097</elocation-id><!--===== Grouping copyright info into permissions =====--><permissions><copyright-year>2009</copyright-year><copyright-holder>Moher et al</copyright-holder><license><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license></permissions><funding-group><funding-statement>PRISMA was funded by the Canadian Institutes of Health Research; Università di Modena e Reggio Emilia, Italy; Cancer Research UK; Clinical Evidence BMJ Knowledge; the Cochrane Collaboration; and GlaxoSmithKline, Canada. AL is funded, in part, through grants of the Italian Ministry of University (COFIN - PRIN 2002 prot. 2002061749 and COFIN - PRIN 2006 prot. 2006062298). DGA is funded by Cancer Research UK. DM is funded by a University of Ottawa Research Chair. None of the sponsors had any involvement in the planning, execution, or write-up of the PRISMA documents. Additionally, no funder played a role in drafting the manuscript.</funding-statement></funding-group><counts><page-count count="6"/></counts></article-meta>
+</front>
+<body><sec id="s1">
+<title>Introduction</title>
+<p>Systematic reviews and meta-analyses have become increasingly important in health care. Clinicians read them to keep up to date with their field <xref ref-type="bibr" rid="pmed.1000097-Oxman1">[1]</xref>,<xref ref-type="bibr" rid="pmed.1000097-Swingler1">[2]</xref>, and they are often used as a starting point for developing clinical practice guidelines. Granting agencies may require a systematic review to ensure there is justification for further research <xref ref-type="bibr" rid="pmed.1000097-Canadian1">[3]</xref>, and some health care journals are moving in this direction <xref ref-type="bibr" rid="pmed.1000097-Young1">[4]</xref>. As with all research, the value of a systematic review depends on what was done, what was found, and the clarity of reporting. As with other publications, the reporting quality of systematic reviews varies, limiting readers' ability to assess the strengths and weaknesses of those reviews.</p>
+<p>Several early studies evaluated the quality of review reports. In 1987, Mulrow examined 50 review articles published in four leading medical journals in 1985 and 1986 and found that none met all eight explicit scientific criteria, such as a quality assessment of included studies <xref ref-type="bibr" rid="pmed.1000097-Mulrow1">[5]</xref>. In 1987, Sacks and colleagues <xref ref-type="bibr" rid="pmed.1000097-Sacks1">[6]</xref> evaluated the adequacy of reporting of 83 meta-analyses on 23 characteristics in six domains. Reporting was generally poor; between one and 14 characteristics were adequately reported (mean = 7.7; standard deviation = 2.7). A 1996 update of this study found little improvement <xref ref-type="bibr" rid="pmed.1000097-Sacks2">[7]</xref>.</p>
+<p>In 1996, to address the suboptimal reporting of meta-analyses, an international group developed a guidance called the QUOROM Statement (<italic>QU</italic>ality <italic>O</italic>f <italic>R</italic>eporting <italic>O</italic>f <italic>M</italic>eta-analyses), which focused on the reporting of meta-analyses of randomized controlled trials <xref ref-type="bibr" rid="pmed.1000097-Moher1">[8]</xref>. In this article, we summarize a revision of these guidelines, renamed PRISMA (Preferred Reporting Items for Systematic reviews and Meta-Analyses), which have been updated to address several conceptual and practical advances in the science of systematic reviews (<xref ref-type="boxed-text" rid="pmed-1000097-box001">Box 1</xref>).</p>
+<boxed-text id="pmed-1000097-box001" position="float"><sec id="s1a1">
+<title>Box 1: Conceptual Issues in the Evolution from QUOROM to PRISMA</title>
+<sec id="s1a1a">
+<title>Completing a Systematic Review Is an Iterative Process</title>
+<p>The conduct of a systematic review depends heavily on the scope and quality of included studies: thus systematic reviewers may need to modify their original review protocol during its conduct. Any systematic review reporting guideline should recommend that such changes can be reported and explained without suggesting that they are inappropriate. The PRISMA Statement (Items 5, 11, 16, and 23) acknowledges this iterative process. Aside from Cochrane reviews, all of which should have a protocol, only about 10% of systematic reviewers report working from a protocol <xref ref-type="bibr" rid="pmed.1000097-Moher3">[22]</xref>. Without a protocol that is publicly accessible, it is difficult to judge between appropriate and inappropriate modifications.</p>
+</sec><sec id="s1a1b">
+<title>Conduct and Reporting Research Are Distinct Concepts</title>
+<p>This distinction is, however, less straightforward for systematic reviews than for assessments of the reporting of an individual study, because the reporting and conduct of systematic reviews are, by nature, closely intertwined. For example, the failure of a systematic review to report the assessment of the risk of bias in included studies may be seen as a marker of poor conduct, given the importance of this activity in the systematic review process <xref ref-type="bibr" rid="pmed.1000097-Moja1">[37]</xref>.</p>
+</sec><sec id="s1a1c">
+<title>Study-Level Versus Outcome-Level Assessment of Risk of Bias</title>
+<p>For studies included in a systematic review, a thorough assessment of the risk of bias requires both a “study-level” assessment (e.g., adequacy of allocation concealment) and, for some features, a newer approach called “outcome-level” assessment. An outcome-level assessment involves evaluating the reliability and validity of the data for each important outcome by determining the methods used to assess them in each individual study <xref ref-type="bibr" rid="pmed.1000097-Guyatt1">[38]</xref>. The quality of evidence may differ across outcomes, even within a study, such as between a primary efficacy outcome, which is likely to be very carefully and systematically measured, and the assessment of serious harms <xref ref-type="bibr" rid="pmed.1000097-Schunemann1">[39]</xref>, which may rely on spontaneous reports by investigators. This information should be reported to allow an explicit assessment of the extent to which an estimate of effect is correct <xref ref-type="bibr" rid="pmed.1000097-Guyatt1">[38]</xref>.</p>
+</sec><sec id="s1a1d">
+<title>Importance of Reporting Biases</title>
+<p>Different types of reporting biases may hamper the conduct and interpretation of systematic reviews. Selective reporting of complete studies (e.g., publication bias) <xref ref-type="bibr" rid="pmed.1000097-Dickersin1">[28]</xref> as well as the more recently empirically demonstrated “outcome reporting bias” within individual studies <xref ref-type="bibr" rid="pmed.1000097-Chan1">[40]</xref>,<xref ref-type="bibr" rid="pmed.1000097-Chan2">[41]</xref> should be considered by authors when conducting a systematic review and reporting its results. Though the implications of these biases on the conduct and reporting of systematic reviews themselves are unclear, some previous research has identified that selective outcome reporting may occur also in the context of systematic reviews <xref ref-type="bibr" rid="pmed.1000097-Silagy1">[42]</xref>.</p>
+</sec></sec></boxed-text></sec><sec id="s2">
+<title>Terminology</title>
+<p>The terminology used to describe a systematic review and meta-analysis has evolved over time. One reason for changing the name from QUOROM to PRISMA was the desire to encompass both systematic reviews and meta-analyses. We have adopted the definitions used by the Cochrane Collaboration <xref ref-type="bibr" rid="pmed.1000097-Green1">[9]</xref>. A systematic review is a review of a clearly formulated question that uses systematic and explicit methods to identify, select, and critically appraise relevant research, and to collect and analyze data from the studies that are included in the review. Statistical methods (meta-analysis) may or may not be used to analyze and summarize the results of the included studies. Meta-analysis refers to the use of statistical techniques in a systematic review to integrate the results of included studies.</p>
+</sec><sec id="s3">
+<title>Developing the PRISMA Statement</title>
+<p>A three-day meeting was held in Ottawa, Canada, in June 2005 with 29 participants, including review authors, methodologists, clinicians, medical editors, and a consumer. The objective of the Ottawa meeting was to revise and expand the QUOROM checklist and flow diagram, as needed.</p>
+<p>The executive committee completed the following tasks, prior to the meeting: a systematic review of studies examining the quality of reporting of systematic reviews, and a comprehensive literature search to identify methodological and other articles that might inform the meeting, especially in relation to modifying checklist items. An international survey of review authors, consumers, and groups commissioning or using systematic reviews and meta-analyses was completed, including the International Network of Agencies for Health Technology Assessment (INAHTA) and the Guidelines International Network (GIN). The survey aimed to ascertain views of QUOROM, including the merits of the existing checklist items. The results of these activities were presented during the meeting and are summarized on the PRISMA Web site (<ext-link ext-link-type="uri" xlink:href="http://www.prisma-statement.org/" xlink:type="simple">http://www.prisma-statement.org/</ext-link>).</p>
+<p>Only items deemed essential were retained or added to the checklist. Some additional items are nevertheless desirable, and review authors should include these, if relevant <xref ref-type="bibr" rid="pmed.1000097-Strech1">[10]</xref>. For example, it is useful to indicate whether the systematic review is an update <xref ref-type="bibr" rid="pmed.1000097-Moher2">[11]</xref> of a previous review, and to describe any changes in procedures from those described in the original protocol.</p>
+<p>Shortly after the meeting a draft of the PRISMA checklist was circulated to the group, including those invited to the meeting but unable to attend. A disposition file was created containing comments and revisions from each respondent, and the checklist was subsequently revised 11 times. The group approved the checklist, flow diagram, and this summary paper.</p>
+<p>Although no direct evidence was found to support retaining or adding some items, evidence from other domains was believed to be relevant. For example, Item 5 asks authors to provide registration information about the systematic review, including a registration number, if available. Although systematic review registration is not yet widely available <xref ref-type="bibr" rid="pmed.1000097-University1">[12]</xref>,<xref ref-type="bibr" rid="pmed.1000097-The1">[13]</xref>, the participating journals of the International Committee of Medical Journal Editors (ICMJE) <xref ref-type="bibr" rid="pmed.1000097-DeAngelis1">[14]</xref> now require all clinical trials to be registered in an effort to increase transparency and accountability <xref ref-type="bibr" rid="pmed.1000097-Whittington1">[15]</xref>. Those aspects are also likely to benefit systematic reviewers, possibly reducing the risk of an excessive number of reviews addressing the same question <xref ref-type="bibr" rid="pmed.1000097-Bagshaw1">[16]</xref>,<xref ref-type="bibr" rid="pmed.1000097-BiondiZoccai1">[17]</xref> and providing greater transparency when updating systematic reviews.</p>
+</sec><sec id="s4">
+<title>The PRISMA Statement</title>
+<p>The PRISMA Statement consists of a 27-item checklist (<xref ref-type="table" rid="pmed-1000097-t001">Table 1</xref>; see also <xref ref-type="supplementary-material" rid="pmed.1000097.s002">Text S1</xref> for a downloadable Word template for researchers to re-use) and a four-phase flow diagram (<xref ref-type="fig" rid="pmed-1000097-g001">Figure 1</xref>; see also <xref ref-type="supplementary-material" rid="pmed.1000097.s001">Figure S1</xref> for a downloadable Word template for researchers to re-use). The aim of the PRISMA Statement is to help authors improve the reporting of systematic reviews and meta-analyses. We have focused on randomized trials, but PRISMA can also be used as a basis for reporting systematic reviews of other types of research, particularly evaluations of interventions. PRISMA may also be useful for critical appraisal of published systematic reviews. However, the PRISMA checklist is not a quality assessment instrument to gauge the quality of a systematic review.</p>
+<fig id="pmed-1000097-g001" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1000097.g001</object-id><label>Figure 1</label><caption>
+<title>Flow of information through the different phases of a systematic review.</title>
+</caption><graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1000097.g001" xlink:type="simple"/></fig><table-wrap id="pmed-1000097-t001" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1000097.t001</object-id><label>Table 1</label><caption>
+<title>Checklist of items to include when reporting a systematic review or meta-analysis.</title>
+</caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pmed-1000097-t001-1" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1000097.t001" xlink:type="simple"/><table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" colspan="1" rowspan="1">Section/Topic</td>
+<td align="left" colspan="1" rowspan="1">#</td>
+<td align="left" colspan="1" rowspan="1">Checklist Item</td>
+<td align="left" colspan="1" rowspan="1">Reported on Page #</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="4" rowspan="1"><bold>TITLE</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Title</td>
+<td align="left" colspan="1" rowspan="1">1</td>
+<td align="left" colspan="1" rowspan="1">Identify the report as a systematic review, meta-analysis, or both.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="4" rowspan="1"><bold>ABSTRACT</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Structured summary</td>
+<td align="left" colspan="1" rowspan="1">2</td>
+<td align="left" colspan="1" rowspan="1">Provide a structured summary including, as applicable: background; objectives; data sources; study eligibility criteria, participants, and interventions; study appraisal and synthesis methods; results; limitations; conclusions and implications of key findings; systematic review registration number.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="4" rowspan="1"><bold>INTRODUCTION</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Rationale</td>
+<td align="left" colspan="1" rowspan="1">3</td>
+<td align="left" colspan="1" rowspan="1">Describe the rationale for the review in the context of what is already known.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Objectives</td>
+<td align="left" colspan="1" rowspan="1">4</td>
+<td align="left" colspan="1" rowspan="1">Provide an explicit statement of questions being addressed with reference to participants, interventions, comparisons, outcomes, and study design (PICOS).</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="4" rowspan="1"><bold>METHODS</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Protocol and registration</td>
+<td align="left" colspan="1" rowspan="1">5</td>
+<td align="left" colspan="1" rowspan="1">Indicate if a review protocol exists, if and where it can be accessed (e.g., Web address), and, if available, provide registration information including registration number.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Eligibility criteria</td>
+<td align="left" colspan="1" rowspan="1">6</td>
+<td align="left" colspan="1" rowspan="1">Specify study characteristics (e.g., PICOS, length of follow-up) and report characteristics (e.g., years considered, language, publication status) used as criteria for eligibility, giving rationale.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Information sources</td>
+<td align="left" colspan="1" rowspan="1">7</td>
+<td align="left" colspan="1" rowspan="1">Describe all information sources (e.g., databases with dates of coverage, contact with study authors to identify additional studies) in the search and date last searched.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Search</td>
+<td align="left" colspan="1" rowspan="1">8</td>
+<td align="left" colspan="1" rowspan="1">Present full electronic search strategy for at least one database, including any limits used, such that it could be repeated.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Study selection</td>
+<td align="left" colspan="1" rowspan="1">9</td>
+<td align="left" colspan="1" rowspan="1">State the process for selecting studies (i.e., screening, eligibility, included in systematic review, and, if applicable, included in the meta-analysis).</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Data collection process</td>
+<td align="left" colspan="1" rowspan="1">10</td>
+<td align="left" colspan="1" rowspan="1">Describe method of data extraction from reports (e.g., piloted forms, independently, in duplicate) and any processes for obtaining and confirming data from investigators.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Data items</td>
+<td align="left" colspan="1" rowspan="1">11</td>
+<td align="left" colspan="1" rowspan="1">List and define all variables for which data were sought (e.g., PICOS, funding sources) and any assumptions and simplifications made.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Risk of bias in individual studies</td>
+<td align="left" colspan="1" rowspan="1">12</td>
+<td align="left" colspan="1" rowspan="1">Describe methods used for assessing risk of bias of individual studies (including specification of whether this was done at the study or outcome level), and how this information is to be used in any data synthesis.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Summary measures</td>
+<td align="left" colspan="1" rowspan="1">13</td>
+<td align="left" colspan="1" rowspan="1">State the principal summary measures (e.g., risk ratio, difference in means).</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Synthesis of results</td>
+<td align="left" colspan="1" rowspan="1">14</td>
+<td align="left" colspan="1" rowspan="1">Describe the methods of handling data and combining results of studies, if done, including measures of consistency (e.g., I<sup>2</sup>) for each meta-analysis.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Risk of bias across studies</td>
+<td align="left" colspan="1" rowspan="1">15</td>
+<td align="left" colspan="1" rowspan="1">Specify any assessment of risk of bias that may affect the cumulative evidence (e.g., publication bias, selective reporting within studies).</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Additional analyses</td>
+<td align="left" colspan="1" rowspan="1">16</td>
+<td align="left" colspan="1" rowspan="1">Describe methods of additional analyses (e.g., sensitivity or subgroup analyses, meta-regression), if done, indicating which were pre-specified.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="4" rowspan="1"><bold>RESULTS</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Study selection</td>
+<td align="left" colspan="1" rowspan="1">17</td>
+<td align="left" colspan="1" rowspan="1">Give numbers of studies screened, assessed for eligibility, and included in the review, with reasons for exclusions at each stage, ideally with a flow diagram.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Study characteristics</td>
+<td align="left" colspan="1" rowspan="1">18</td>
+<td align="left" colspan="1" rowspan="1">For each study, present characteristics for which data were extracted (e.g., study size, PICOS, follow-up period) and provide the citations.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Risk of bias within studies</td>
+<td align="left" colspan="1" rowspan="1">19</td>
+<td align="left" colspan="1" rowspan="1">Present data on risk of bias of each study and, if available, any outcome-level assessment (see Item 12).</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Results of individual studies</td>
+<td align="left" colspan="1" rowspan="1">20</td>
+<td align="left" colspan="1" rowspan="1">For all outcomes considered (benefits or harms), present, for each study: (a) simple summary data for each intervention group and (b) effect estimates and confidence intervals, ideally with a forest plot.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Synthesis of results</td>
+<td align="left" colspan="1" rowspan="1">21</td>
+<td align="left" colspan="1" rowspan="1">Present results of each meta-analysis done, including confidence intervals and measures of consistency.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Risk of bias across studies</td>
+<td align="left" colspan="1" rowspan="1">22</td>
+<td align="left" colspan="1" rowspan="1">Present results of any assessment of risk of bias across studies (see Item 15).</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Additional analysis</td>
+<td align="left" colspan="1" rowspan="1">23</td>
+<td align="left" colspan="1" rowspan="1">Give results of additional analyses, if done (e.g., sensitivity or subgroup analyses, meta-regression [see Item 16]).</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="4" rowspan="1"><bold>DISCUSSION</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Summary of evidence</td>
+<td align="left" colspan="1" rowspan="1">24</td>
+<td align="left" colspan="1" rowspan="1">Summarize the main findings including the strength of evidence for each main outcome; consider their relevance to key groups (e.g., health care providers, users, and policy makers).</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Limitations</td>
+<td align="left" colspan="1" rowspan="1">25</td>
+<td align="left" colspan="1" rowspan="1">Discuss limitations at study and outcome level (e.g., risk of bias), and at review level (e.g., incomplete retrieval of identified research, reporting bias).</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Conclusions</td>
+<td align="left" colspan="1" rowspan="1">26</td>
+<td align="left" colspan="1" rowspan="1">Provide a general interpretation of the results in the context of other evidence, and implications for future research.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+<tr>
+<td align="left" colspan="4" rowspan="1"><bold>FUNDING</bold></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Funding</td>
+<td align="left" colspan="1" rowspan="1">27</td>
+<td align="left" colspan="1" rowspan="1">Describe sources of funding for the systematic review and other support (e.g., supply of data); role of funders for the systematic review.</td>
+<td align="left" colspan="1" rowspan="1"/>
+</tr>
+</tbody>
+</table></alternatives></table-wrap></sec><sec id="s5">
+<title>From QUOROM to PRISMA</title>
+<p>The new PRISMA checklist differs in several respects from the QUOROM checklist, and the substantive specific changes are highlighted in <xref ref-type="table" rid="pmed-1000097-t002">Table 2</xref>. Generally, the PRISMA checklist “decouples” several items present in the QUOROM checklist and, where applicable, several checklist items are linked to improve consistency across the systematic review report.</p>
+<table-wrap id="pmed-1000097-t002" position="float"><object-id pub-id-type="doi">10.1371/journal.pmed.1000097.t002</object-id><label>Table 2</label><caption>
+<title>Substantive specific changes between the QUOROM checklist and the PRISMA checklist (a tick indicates the presence of the topic in QUOROM or PRISMA).</title>
+</caption><!--===== Grouping alternate versions of objects =====--><alternatives><graphic id="pmed-1000097-t002-2" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pmed.1000097.t002" xlink:type="simple"/><table><colgroup span="1"><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup>
+<thead>
+<tr>
+<td align="left" colspan="1" rowspan="1">Section/Topic</td>
+<td align="left" colspan="1" rowspan="1">Item</td>
+<td align="left" colspan="1" rowspan="1">QUOROM</td>
+<td align="left" colspan="1" rowspan="1">PRISMA</td>
+<td align="left" colspan="1" rowspan="1">Comment</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="1" rowspan="1">Abstract</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">QUOROM and PRISMA ask authors to report an abstract. However, PRISMA is not specific about format.</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Introduction</td>
+<td align="left" colspan="1" rowspan="1">Objective</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">This new item (4) addresses the explicit question the review addresses using the PICO reporting system (which describes the participants, interventions, comparisons, and outcome(s) of the systematic review), together with the specification of the type of study design (PICOS); the item is linked to Items 6, 11, and 18 of the checklist.</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Methods</td>
+<td align="left" colspan="1" rowspan="1">Protocol</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">This new item (5) asks authors to report whether the review has a protocol and if so how it can be accessed.</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Methods</td>
+<td align="left" colspan="1" rowspan="1">Search</td>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">Although reporting the search is present in both QUOROM and PRISMA checklists, PRISMA asks authors to provide a full description of at least one electronic search strategy (Item 8). Without such information it is impossible to repeat the authors' search.</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Methods</td>
+<td align="left" colspan="1" rowspan="1">Assessment of risk of bias in included studies</td>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">Renamed from “quality assessment” in QUOROM. This item (12) is linked with reporting this information in the results (Item 19). The new concept of “outcome-level” assessment has been introduced.</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Methods</td>
+<td align="left" colspan="1" rowspan="1">Assessment of risk of bias across studies</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">This new item (15) asks authors to describe any assessments of risk of bias in the review, such as selective reporting within the included studies. This item is linked with reporting this information in the results (Item 22).</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Discussion</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">Although both QUOROM and PRISMA checklists address the discussion section, PRISMA devotes three items (24–26) to the discussion. In PRISMA the main types of limitations are explicitly stated and their discussion required.</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Funding</td>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1"/>
+<td align="left" colspan="1" rowspan="1">√</td>
+<td align="left" colspan="1" rowspan="1">This new item (27) asks authors to provide information on any sources of funding for the systematic review.</td>
+</tr>
+</tbody>
+</table></alternatives></table-wrap>
+<p>The flow diagram has also been modified. Before including studies and providing reasons for excluding others, the review team must first search the literature. This search results in records. Once these records have been screened and eligibility criteria applied, a smaller number of articles will remain. The number of included articles might be smaller (or larger) than the number of studies, because articles may report on multiple studies and results from a particular study may be published in several articles. To capture this information, the PRISMA flow diagram now requests information on these phases of the review process.</p>
+</sec><sec id="s6">
+<title>Endorsement</title>
+<p>The PRISMA Statement should replace the QUOROM Statement for those journals that have endorsed QUOROM. We hope that other journals will support PRISMA; they can do so by registering on the PRISMA Web site. To underscore to authors, and others, the importance of transparent reporting of systematic reviews, we encourage supporting journals to reference the PRISMA Statement and include the PRISMA Web address in their Instructions to Authors. We also invite editorial organizations to consider endorsing PRISMA and encourage authors to adhere to its principles.</p>
+</sec><sec id="s7">
+<title>The PRISMA Explanation and Elaboration Paper</title>
+<p>In addition to the PRISMA Statement, a supporting Explanation and Elaboration document has been produced <xref ref-type="bibr" rid="pmed.1000097-Liberati1">[18]</xref> following the style used for other reporting guidelines <xref ref-type="bibr" rid="pmed.1000097-Altman1">[19]</xref>–<xref ref-type="bibr" rid="pmed.1000097-Vandenbroucke1">[21]</xref>. The process of completing this document included developing a large database of exemplars to highlight how best to report each checklist item, and identifying a comprehensive evidence base to support the inclusion of each checklist item. The Explanation and Elaboration document was completed after several face to face meetings and numerous iterations among several meeting participants, after which it was shared with the whole group for additional revisions and final approval. Finally, the group formed a dissemination subcommittee to help disseminate and implement PRISMA.</p>
+</sec><sec id="s8">
+<title>Discussion</title>
+<p>The quality of reporting of systematic reviews is still not optimal <xref ref-type="bibr" rid="pmed.1000097-Moher3">[22]</xref>–<xref ref-type="bibr" rid="pmed.1000097-Delaney1">[27]</xref>. In a recent review of 300 systematic reviews, few authors reported assessing possible publication bias <xref ref-type="bibr" rid="pmed.1000097-Moher3">[22]</xref>, even though there is overwhelming evidence both for its existence <xref ref-type="bibr" rid="pmed.1000097-Dickersin1">[28]</xref> and its impact on the results of systematic reviews <xref ref-type="bibr" rid="pmed.1000097-Sutton1">[29]</xref>. Even when the possibility of publication bias is assessed, there is no guarantee that systematic reviewers have assessed or interpreted it appropriately <xref ref-type="bibr" rid="pmed.1000097-Lau1">[30]</xref>. Although the absence of reporting such an assessment does not necessarily indicate that it was not done, reporting an assessment of possible publication bias is likely to be a marker of the thoroughness of the conduct of the systematic review.</p>
+<p>Several approaches have been developed to conduct systematic reviews on a broader array of questions. For example, systematic reviews are now conducted to investigate cost-effectiveness <xref ref-type="bibr" rid="pmed.1000097-Ladabaum1">[31]</xref>, diagnostic <xref ref-type="bibr" rid="pmed.1000097-Deeks1">[32]</xref> or prognostic questions <xref ref-type="bibr" rid="pmed.1000097-Altman2">[33]</xref>, genetic associations <xref ref-type="bibr" rid="pmed.1000097-Ioannidis1">[34]</xref>, and policy making <xref ref-type="bibr" rid="pmed.1000097-Lavis1">[35]</xref>. The general concepts and topics covered by PRISMA are all relevant to any systematic review, not just those whose objective is to summarize the benefits and harms of a health care intervention. However, some modifications of the checklist items or flow diagram will be necessary in particular circumstances. For example, assessing the risk of bias is a key concept, but the items used to assess this in a diagnostic review are likely to focus on issues such as the spectrum of patients and the verification of disease status, which differ from reviews of interventions. The flow diagram will also need adjustments when reporting individual patient data meta-analysis <xref ref-type="bibr" rid="pmed.1000097-Stewart1">[36]</xref>.</p>
+<p>We have developed an explanatory document <xref ref-type="bibr" rid="pmed.1000097-Liberati1">[18]</xref> to increase the usefulness of PRISMA. For each checklist item, this document contains an example of good reporting, a rationale for its inclusion, and supporting evidence, including references, whenever possible. We believe this document will also serve as a useful resource for those teaching systematic review methodology. We encourage journals to include reference to the explanatory document in their Instructions to Authors.</p>
+<p>Like any evidence-based endeavor, PRISMA is a living document. To this end we invite readers to comment on the revised version, particularly the new checklist and flow diagram, through the PRISMA Web site. We will use such information to inform PRISMA's continued development.</p>
+</sec><sec id="s9">
+<title>Supporting Information</title>
+<supplementary-material id="pmed.1000097.s001" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.1000097.s001" xlink:type="simple"><label>Figure S1</label><caption>
+<p><bold>Flow of information through the different phases of a systematic review (downloadable template document for researchers to re-use).</bold></p>
+<p>(0.08 MB DOC)</p>
+</caption></supplementary-material><supplementary-material id="pmed.1000097.s002" mimetype="application/msword" position="float" xlink:href="info:doi/10.1371/journal.pmed.1000097.s002" xlink:type="simple"><label>Text S1</label><caption>
+<p><bold>Checklist of items to include when reporting a systematic review or meta-analysis (downloadable template document for researchers to re-use).</bold></p>
+<p>(0.04 MB DOC)</p>
+</caption></supplementary-material></sec></body>
+<back>
+<ack>
+<p>The following people contributed to the PRISMA Statement: Doug Altman, DSc, Centre for Statistics in Medicine (Oxford, UK); Gerd Antes, PhD, University Hospital Freiburg (Freiburg, Germany); David Atkins, MD, MPH, Health Services Research and Development Service, Veterans Health Administration (Washington, D. C., US); Virginia Barbour, MRCP, DPhil, <italic>PLoS Medicine</italic> (Cambridge, UK); Nick Barrowman, PhD, Children's Hospital of Eastern Ontario (Ottawa, Canada); Jesse A. Berlin, ScD, Johnson &amp; Johnson Pharmaceutical Research and Development (Titusville, New Jersey, US); Jocalyn Clark, PhD, <italic>PLoS Medicine</italic> (at the time of writing, <italic>BMJ</italic>, London, UK); Mike Clarke, PhD, UK Cochrane Centre (Oxford, UK) and School of Nursing and Midwifery, Trinity College (Dublin, Ireland); Deborah Cook, MD, Departments of Medicine, Clinical Epidemiology and Biostatistics, McMaster University (Hamilton, Canada); Roberto D'Amico, PhD, Università di Modena e Reggio Emilia (Modena, Italy) and Centro Cochrane Italiano, Istituto Ricerche Farmacologiche Mario Negri (Milan, Italy); Jonathan J. Deeks, PhD, University of Birmingham (Birmingham, UK); P. J. Devereaux, MD, PhD, Departments of Medicine, Clinical Epidemiology and Biostatistics, McMaster University (Hamilton, Canada); Kay Dickersin, PhD, Johns Hopkins Bloomberg School of Public Health (Baltimore, Maryland, US); Matthias Egger, MD, Department of Social and Preventive Medicine, University of Bern (Bern, Switzerland); Edzard Ernst, MD, PhD, FRCP, FRCP(Edin), Peninsula Medical School (Exeter, UK); Peter C. Gøtzsche, MD, MSc, The Nordic Cochrane Centre (Copenhagen, Denmark); Jeremy Grimshaw, MBChB, PhD, FRCFP, Ottawa Hospital Research Institute (Ottawa, Canada); Gordon Guyatt, MD, Departments of Medicine, Clinical Epidemiology and Biostatistics, McMaster University (Hamilton, Canada); Julian Higgins, PhD, MRC Biostatistics Unit (Cambridge, UK); John P. A. Ioannidis, MD, University of Ioannina Campus (Ioannina, Greece); Jos Kleijnen, MD, PhD, Kleijnen Systematic Reviews Ltd (York, UK) and School for Public Health and Primary Care (CAPHRI), University of Maastricht (Maastricht, Netherlands); Tom Lang, MA, Tom Lang Communications and Training (Davis, California, US); Alessandro Liberati, MD, Università di Modena e Reggio Emilia (Modena, Italy) and Centro Cochrane Italiano, Istituto Ricerche Farmacologiche Mario Negri (Milan, Italy); Nicola Magrini, MD, NHS Centre for the Evaluation of the Effectiveness of Health Care – CeVEAS (Modena, Italy); David McNamee, PhD, <italic>The Lancet</italic> (London, UK); Lorenzo Moja, MD, MSc, Centro Cochrane Italiano, Istituto Ricerche Farmacologiche Mario Negri (Milan, Italy); David Moher, PhD, Ottawa Methods Centre, Ottawa Hospital Research Institute (Ottawa, Canada); Cynthia Mulrow, MD, MSc, <italic>Annals of Internal Medicine</italic> (Philadelphia, Pennsylvania, US); Maryann Napoli, Center for Medical Consumers (New York, New York, US); Andy Oxman, MD, Norwegian Health Services Research Centre (Oslo, Norway); Ba' Pham, MMath, Toronto Health Economics and Technology Assessment Collaborative (Toronto, Canada) (at the time of the first meeting of the group, GlaxoSmithKline Canada, Mississauga, Canada); Drummond Rennie, MD, FRCP, FACP, University of California San Francisco (San Francisco, California, US); Margaret Sampson, MLIS, Children's Hospital of Eastern Ontario (Ottawa, Canada); Kenneth F. Schulz, PhD, MBA, Family Health International (Durham, North Carolina, US); Paul G. Shekelle, MD, PhD, Southern California Evidence Based Practice Center (Santa Monica, California, US); Jennifer Tetzlaff, BSc, Ottawa Methods Centre, Ottawa Hospital Research Institute (Ottawa, Canada); David Tovey, FRCGP, The Cochrane Library, Cochrane Collaboration (Oxford, UK) (at the time of the first meeting of the group, <italic>BMJ</italic>, London, UK); Peter Tugwell, MD, MSc, FRCPC, Institute of Population Health, University of Ottawa (Ottawa, Canada).</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pmed.1000097-Oxman1"><label>1</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Oxman</surname><given-names>AD</given-names></name>
+<name name-style="western"><surname>Cook</surname><given-names>DJ</given-names></name>
+<name name-style="western"><surname>Guyatt</surname><given-names>GH</given-names></name>
+</person-group>             <year>1994</year>             <article-title>Users' guides to the medical literature. VI. How to use an overview. Evidence-Based Medicine Working Group.</article-title>             <source>JAMA</source>             <volume>272</volume>             <fpage>1367</fpage>             <lpage>1371</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Swingler1"><label>2</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Swingler</surname><given-names>GH</given-names></name>
+<name name-style="western"><surname>Volmink</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Ioannidis</surname><given-names>JP</given-names></name>
+</person-group>             <year>2003</year>             <article-title>Number of published systematic reviews and global burden of disease: Database analysis.</article-title>             <source>BMJ</source>             <volume>327</volume>             <fpage>1083</fpage>             <lpage>1084</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Canadian1"><label>3</label><element-citation publication-type="journal" xlink:type="simple">             <collab xlink:type="simple">Canadian Institutes of Health Research</collab>             <year>2006</year>             <article-title>Randomized controlled trials registration/application checklist (12/2006).</article-title>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.cihr-irsc.gc.ca/e/documents/rct_reg_e.pdf" xlink:type="simple">http://www.cihr-irsc.gc.ca/e/documents/rct_reg_e.pdf</ext-link>. Accessed 19 May 2009</comment>          </element-citation></ref>
+<ref id="pmed.1000097-Young1"><label>4</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Young</surname><given-names>C</given-names></name>
+<name name-style="western"><surname>Horton</surname><given-names>R</given-names></name>
+</person-group>             <year>2005</year>             <article-title>Putting clinical trials into context.</article-title>             <source>Lancet</source>             <volume>366</volume>             <fpage>107</fpage>          </element-citation></ref>
+<ref id="pmed.1000097-Mulrow1"><label>5</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Mulrow</surname><given-names>CD</given-names></name>
+</person-group>             <year>1987</year>             <article-title>The medical review article: State of the science.</article-title>             <source>Ann Intern Med</source>             <volume>106</volume>             <fpage>485</fpage>             <lpage>488</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Sacks1"><label>6</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Sacks</surname><given-names>HS</given-names></name>
+<name name-style="western"><surname>Berrier</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Reitman</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Ancona-Berk</surname><given-names>VA</given-names></name>
+<name name-style="western"><surname>Chalmers</surname><given-names>TC</given-names></name>
+</person-group>             <year>1987</year>             <article-title>Meta-analysis of randomized controlled trials.</article-title>             <source>New Engl J Med</source>             <volume>316</volume>             <fpage>450</fpage>             <lpage>455</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Sacks2"><label>7</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Sacks</surname><given-names>HS</given-names></name>
+<name name-style="western"><surname>Reitman</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Pagano</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Kupelnick</surname><given-names>B</given-names></name>
+</person-group>             <year>1996</year>             <article-title>Meta-analysis: An update.</article-title>             <source>Mt Sinai J Med</source>             <volume>63</volume>             <fpage>216</fpage>             <lpage>224</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Moher1"><label>8</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Moher</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Cook</surname><given-names>DJ</given-names></name>
+<name name-style="western"><surname>Eastwood</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Olkin</surname><given-names>I</given-names></name>
+<name name-style="western"><surname>Rennie</surname><given-names>D</given-names></name>
+<etal/></person-group>             <year>1994</year>             <article-title>Improving the quality of reporting of meta-analysis of randomized controlled trials: The QUOROM statement.</article-title>             <source>Lancet</source>             <volume>354</volume>             <fpage>1896</fpage>             <lpage>1900</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Green1"><label>9</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="editor">
+<name name-style="western"><surname>Green</surname><given-names>S</given-names></name>
+<name name-style="western"><surname>Higgins</surname><given-names>J</given-names></name>
+</person-group>             <year>2005</year>             <article-title>Glossary. Cochrane handbook for systematic reviews of interventions 4.2.5. The Cochrane Collaboration.</article-title>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.cochrane.org/resources/glossary.htm" xlink:type="simple">http://www.cochrane.org/resources/glossary.htm</ext-link>. Accessed 19 May 2009</comment>          </element-citation></ref>
+<ref id="pmed.1000097-Strech1"><label>10</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Strech</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Tilburt</surname><given-names>J</given-names></name>
+</person-group>             <year>2008</year>             <article-title>Value judgments in the analysis and synthesis of evidence.</article-title>             <source>J Clin Epidemiol</source>             <volume>61</volume>             <fpage>521</fpage>             <lpage>524</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Moher2"><label>11</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Moher</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Tsertsvadze</surname><given-names>A</given-names></name>
+</person-group>             <year>2006</year>             <article-title>Systematic reviews: When is an update an update?</article-title>             <source>Lancet</source>             <volume>367</volume>             <fpage>881</fpage>             <lpage>883</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-University1"><label>12</label><element-citation publication-type="journal" xlink:type="simple">             <collab xlink:type="simple">University of York</collab>             <year>2009</year>             <article-title>Centre for Reviews and Dissemination.</article-title>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.york.ac.uk/inst/crd/" xlink:type="simple">http://www.york.ac.uk/inst/crd/</ext-link>. Accessed 19 May 2009</comment>          </element-citation></ref>
+<ref id="pmed.1000097-The1"><label>13</label><element-citation publication-type="journal" xlink:type="simple">             <collab xlink:type="simple">The Joanna Briggs Institute</collab>             <year>2008</year>             <article-title>Protocols &amp; work in progress.</article-title>             <comment>Available: <ext-link ext-link-type="uri" xlink:href="http://www.joannabriggs.edu.au/pubs/systematic_reviews_prot.php" xlink:type="simple">http://www.joannabriggs.edu.au/pubs/systematic_reviews_prot.php</ext-link>. Accessed 19 May 2009</comment>          </element-citation></ref>
+<ref id="pmed.1000097-DeAngelis1"><label>14</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>De Angelis</surname><given-names>C</given-names></name>
+<name name-style="western"><surname>Drazan</surname><given-names>JM</given-names></name>
+<name name-style="western"><surname>Frizelle</surname><given-names>FA</given-names></name>
+<name name-style="western"><surname>Haug</surname><given-names>C</given-names></name>
+<name name-style="western"><surname>Hoey</surname><given-names>J</given-names></name>
+<etal/></person-group>             <year>2004</year>             <article-title>Clinical trial registration: A statement from the International Committee of Medical Journal Editors.</article-title>             <source>CMAJ</source>             <volume>171</volume>             <fpage>606</fpage>             <lpage>607</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Whittington1"><label>15</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Whittington</surname><given-names>CJ</given-names></name>
+<name name-style="western"><surname>Kendall</surname><given-names>T</given-names></name>
+<name name-style="western"><surname>Fonagy</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Cottrell</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Cotgrove</surname><given-names>A</given-names></name>
+<etal/></person-group>             <year>2004</year>             <article-title>Selective serotonin reuptake inhibitors in childhood depression: Systematic review of published versus unpublished data.</article-title>             <source>Lancet</source>             <volume>363</volume>             <fpage>1341</fpage>             <lpage>1345</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Bagshaw1"><label>16</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Bagshaw</surname><given-names>SM</given-names></name>
+<name name-style="western"><surname>McAlister</surname><given-names>FA</given-names></name>
+<name name-style="western"><surname>Manns</surname><given-names>BJ</given-names></name>
+<name name-style="western"><surname>Ghali</surname><given-names>WA</given-names></name>
+</person-group>             <year>2006</year>             <article-title>Acetylcysteine in the prevention of contrast-induced nephropathy: A case study of the pitfalls in the evolution of evidence.</article-title>             <source>Arch Intern Med</source>             <volume>166</volume>             <fpage>161</fpage>             <lpage>166</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-BiondiZoccai1"><label>17</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Biondi-Zoccai</surname><given-names>GG</given-names></name>
+<name name-style="western"><surname>Lotrionte</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Abbate</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Testa</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Remigi</surname><given-names>E</given-names></name>
+<etal/></person-group>             <year>2006</year>             <article-title>Compliance with QUOROM and quality of reporting of overlapping meta-analyses on the role of acetylcysteine in the prevention of contrast associated nephropathy: Case study.</article-title>             <source>BMJ</source>             <volume>332</volume>             <fpage>202</fpage>             <lpage>209</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Liberati1"><label>18</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Liberati</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Altman</surname><given-names>DG</given-names></name>
+<name name-style="western"><surname>Tetzlaff</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Mulrow</surname><given-names>C</given-names></name>
+<name name-style="western"><surname>Gøtzsche</surname><given-names>P</given-names></name>
+<etal/></person-group>             <year>2009</year>             <article-title>The PRISMA statement for reporting systematic reviews and meta-analyses of studies that evaluate health care interventions: Explanation and elaboration.</article-title>             <source>PLoS Med</source>             <volume>6</volume>             <fpage>e1000100</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.1000100" xlink:type="simple">10.1371/journal.pmed.1000100</ext-link></comment>          </element-citation></ref>
+<ref id="pmed.1000097-Altman1"><label>19</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Altman</surname><given-names>DG</given-names></name>
+<name name-style="western"><surname>Schulz</surname><given-names>KR</given-names></name>
+<name name-style="western"><surname>Moher</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Egger</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Davidoff</surname><given-names>F</given-names></name>
+<etal/></person-group>             <year>2001</year>             <article-title>The revised CONSORT statement for reporting randomized trials: Explanation and elaboration.</article-title>             <source>Ann Intern Med</source>             <volume>134</volume>             <fpage>663</fpage>             <lpage>694</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Bossuyt1"><label>20</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Bossuyt</surname><given-names>PM</given-names></name>
+<name name-style="western"><surname>Reitsma</surname><given-names>JB</given-names></name>
+<name name-style="western"><surname>Bruns</surname><given-names>DE</given-names></name>
+<name name-style="western"><surname>Gatsonis</surname><given-names>CA</given-names></name>
+<name name-style="western"><surname>Glasziou</surname><given-names>PP</given-names></name>
+<etal/></person-group>             <year>2003</year>             <article-title>Towards complete and accurate reporting of studies of diagnostic accuracy: The STARD explanation and elaboration.</article-title>             <source>Ann Intern Med</source>             <volume>138</volume>             <fpage>W1</fpage>             <lpage>W12</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Vandenbroucke1"><label>21</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Vandenbroucke</surname><given-names>JP</given-names></name>
+<name name-style="western"><surname>von Elm</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>Altman</surname><given-names>DG</given-names></name>
+<name name-style="western"><surname>Gøtzsche</surname><given-names>PC</given-names></name>
+<name name-style="western"><surname>Mulrow</surname><given-names>CD</given-names></name>
+<etal/></person-group>             <year>2007</year>             <article-title>Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): Explanation and elaboration.</article-title>             <source>Ann Intern Med</source>             <volume>147</volume>             <fpage>W163</fpage>             <lpage>W194</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Moher3"><label>22</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Moher</surname><given-names>D</given-names></name>
+<name name-style="western"><surname>Tetzlaff</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Tricco</surname><given-names>AC</given-names></name>
+<name name-style="western"><surname>Sampson</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Altman</surname><given-names>DG</given-names></name>
+</person-group>             <year>2007</year>             <article-title>Epidemiology and reporting characteristics of systematic reviews.</article-title>             <source>PLoS Med</source>             <volume>4</volume>             <fpage>e78</fpage>             <comment>doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pmed.0040078" xlink:type="simple">10.1371/journal.pmed.0040078</ext-link></comment>          </element-citation></ref>
+<ref id="pmed.1000097-Bhandari1"><label>23</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Bhandari</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Morrow</surname><given-names>F</given-names></name>
+<name name-style="western"><surname>Kulkarni</surname><given-names>AV</given-names></name>
+<name name-style="western"><surname>Tornetta</surname><given-names>P</given-names></name>
+</person-group>             <year>2001</year>             <article-title>Meta-analyses in orthopaedic surgery: A systematic review of their methodologies.</article-title>             <source>J Bone Joint Surg Am</source>             <volume>83-A</volume>             <fpage>15</fpage>             <lpage>24</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Kelly1"><label>24</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Kelly</surname><given-names>KD</given-names></name>
+<name name-style="western"><surname>Travers</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Dorgan</surname><given-names>M</given-names></name>
+<name name-style="western"><surname>Slater</surname><given-names>L</given-names></name>
+<name name-style="western"><surname>Rowe</surname><given-names>BH</given-names></name>
+</person-group>             <year>2001</year>             <article-title>Evaluating the quality of systematic reviews in the emergency medicine literature.</article-title>             <source>Ann Emerg Med</source>             <volume>38</volume>             <fpage>518</fpage>             <lpage>526</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Richards1"><label>25</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Richards</surname><given-names>D</given-names></name>
+</person-group>             <year>2004</year>             <article-title>The quality of systematic reviews in dentistry.</article-title>             <source>Evid Based Dent</source>             <volume>5</volume>             <fpage>17</fpage>          </element-citation></ref>
+<ref id="pmed.1000097-Choi1"><label>26</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Choi</surname><given-names>PT</given-names></name>
+<name name-style="western"><surname>Halpern</surname><given-names>SH</given-names></name>
+<name name-style="western"><surname>Malik</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Jadad</surname><given-names>AR</given-names></name>
+<name name-style="western"><surname>Tramer</surname><given-names>MR</given-names></name>
+<etal/></person-group>             <year>2001</year>             <article-title>Examining the evidence in anesthesia literature: A critical appraisal of systematic reviews.</article-title>             <source>Anesth Analg</source>             <volume>92</volume>             <fpage>700</fpage>             <lpage>709</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Delaney1"><label>27</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Delaney</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Bagshaw</surname><given-names>SM</given-names></name>
+<name name-style="western"><surname>Ferland</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Manns</surname><given-names>B</given-names></name>
+<name name-style="western"><surname>Laupland</surname><given-names>KB</given-names></name>
+</person-group>             <year>2005</year>             <article-title>A systematic evaluation of the quality of meta-analyses in the critical care literature.</article-title>             <source>Crit Care</source>             <volume>9</volume>             <fpage>R575</fpage>             <lpage>R582</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Dickersin1"><label>28</label><element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Dickersin</surname><given-names>K</given-names></name>
+</person-group>             <year>2005</year>             <article-title>Publication bias: Recognizing the problem, understanding its origins and scope, and preventing harm.</article-title>             <person-group person-group-type="editor">
+<name name-style="western"><surname>Rothstein</surname><given-names>HR</given-names></name>
+<name name-style="western"><surname>Sutton</surname><given-names>AJ</given-names></name>
+<name name-style="western"><surname>Borenstein</surname><given-names>M</given-names></name>
+</person-group>             <source>Publication bias in meta-analysis-Prevention, assessment and adjustments</source>             <publisher-loc>Chichester (UK)</publisher-loc>             <publisher-name>John Wiley &amp; Sons</publisher-name>             <fpage>11</fpage>             <lpage>33</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Sutton1"><label>29</label><element-citation publication-type="other" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Sutton</surname><given-names>AJ</given-names></name>
+</person-group>             <year>2005</year>             <article-title>Evidence concerning the consequences of publication and related biases.</article-title>             <person-group person-group-type="editor">
+<name name-style="western"><surname>Rothstein</surname><given-names>HR</given-names></name>
+<name name-style="western"><surname>Sutton</surname><given-names>AJ</given-names></name>
+<name name-style="western"><surname>Borenstein</surname><given-names>M</given-names></name>
+</person-group>             <source>Publication bias in meta-analysis-Prevention, assessment and adjustments</source>             <publisher-loc>Chichester (UK)</publisher-loc>             <publisher-name>John Wiley &amp; Sons</publisher-name>             <fpage>175</fpage>             <lpage>192</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Lau1"><label>30</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Lau</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Ioannidis</surname><given-names>JP</given-names></name>
+<name name-style="western"><surname>Terrin</surname><given-names>N</given-names></name>
+<name name-style="western"><surname>Schmid</surname><given-names>CH</given-names></name>
+<name name-style="western"><surname>Olkin</surname><given-names>I</given-names></name>
+</person-group>             <year>2006</year>             <article-title>The case of the misleading funnel plot.</article-title>             <source>BMJ</source>             <volume>333</volume>             <fpage>597</fpage>             <lpage>600</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Ladabaum1"><label>31</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Ladabaum</surname><given-names>U</given-names></name>
+<name name-style="western"><surname>Chopra</surname><given-names>CL</given-names></name>
+<name name-style="western"><surname>Huang</surname><given-names>G</given-names></name>
+<name name-style="western"><surname>Scheiman</surname><given-names>JM</given-names></name>
+<name name-style="western"><surname>Chernew</surname><given-names>ME</given-names></name>
+<etal/></person-group>             <year>2001</year>             <article-title>Aspirin as an adjunct to screening for prevention of sporadic colorectal cancer: A cost-effectiveness analysis.</article-title>             <source>Ann Intern Med</source>             <volume>135</volume>             <fpage>769</fpage>             <lpage>781</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Deeks1"><label>32</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Deeks</surname><given-names>JJ</given-names></name>
+</person-group>             <year>2001</year>             <article-title>Systematic reviews in health care: Systematic reviews of evaluations of diagnostic and screening tests.</article-title>             <source>BMJ</source>             <volume>323</volume>             <fpage>157</fpage>             <lpage>162</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Altman2"><label>33</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Altman</surname><given-names>DG</given-names></name>
+</person-group>             <year>2001</year>             <article-title>Systematic reviews of evaluations of prognostic variables.</article-title>             <source>BMJ</source>             <volume>323</volume>             <fpage>224</fpage>             <lpage>228</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Ioannidis1"><label>34</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Ioannidis</surname><given-names>JP</given-names></name>
+<name name-style="western"><surname>Ntzani</surname><given-names>EE</given-names></name>
+<name name-style="western"><surname>Trikalinos</surname><given-names>TA</given-names></name>
+<name name-style="western"><surname>Contopoulos-Ioannidis</surname><given-names>DG</given-names></name>
+</person-group>             <year>2001</year>             <article-title>Replication validity of genetic association studies.</article-title>             <source>Nat Genet</source>             <volume>29</volume>             <fpage>306</fpage>             <lpage>309</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Lavis1"><label>35</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Lavis</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Davies</surname><given-names>H</given-names></name>
+<name name-style="western"><surname>Oxman</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Denis</surname><given-names>J</given-names></name>
+<name name-style="western"><surname>Golden-Biddle</surname><given-names>K</given-names></name>
+<etal/></person-group>             <year>2005</year>             <article-title>Towards systematic reviews that inform health care management and policy-making.</article-title>             <source>J Health Serv Res Policy</source>             <volume>10</volume>             <fpage>35</fpage>             <lpage>48</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Stewart1"><label>36</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Stewart</surname><given-names>LA</given-names></name>
+<name name-style="western"><surname>Clarke</surname><given-names>MJ</given-names></name>
+</person-group>             <year>1995</year>             <article-title>Practical methodology of meta-analyses (overviews) using updated individual patient data. Cochrane Working Group.</article-title>             <source>Stat Med</source>             <volume>14</volume>             <fpage>2057</fpage>             <lpage>2079</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Moja1"><label>37</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Moja</surname><given-names>LP</given-names></name>
+<name name-style="western"><surname>Telaro</surname><given-names>E</given-names></name>
+<name name-style="western"><surname>D'Amico</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Moschetti</surname><given-names>I</given-names></name>
+<name name-style="western"><surname>Coe</surname><given-names>L</given-names></name>
+<etal/></person-group>             <year>2005</year>             <article-title>Assessment of methodological quality of primary studies by systematic reviews: Results of the metaquality cross sectional study.</article-title>             <source>BMJ</source>             <volume>330</volume>             <fpage>1053</fpage>             <lpage>1055</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Guyatt1"><label>38</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Guyatt</surname><given-names>GH</given-names></name>
+<name name-style="western"><surname>Oxman</surname><given-names>AD</given-names></name>
+<name name-style="western"><surname>Vist</surname><given-names>GE</given-names></name>
+<name name-style="western"><surname>Kunz</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Falck-Ytter</surname><given-names>Y</given-names></name>
+<etal/></person-group>             <year>2008</year>             <article-title>GRADE: An emerging consensus on rating quality of evidence and strength of recommendations.</article-title>             <source>BMJ</source>             <volume>336</volume>             <fpage>924</fpage>             <lpage>926</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Schunemann1"><label>39</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Schunemann</surname><given-names>HJ</given-names></name>
+<name name-style="western"><surname>Jaeschke</surname><given-names>R</given-names></name>
+<name name-style="western"><surname>Cook</surname><given-names>DJ</given-names></name>
+<name name-style="western"><surname>Bria</surname><given-names>WF</given-names></name>
+<name name-style="western"><surname>El-Solh</surname><given-names>AA</given-names></name>
+<etal/></person-group>             <year>2006</year>             <article-title>An official ATS statement: Grading the quality of evidence and strength of recommendations in ATS guidelines and recommendations.</article-title>             <source>Am J Respir Crit Care Med</source>             <volume>174</volume>             <fpage>605</fpage>             <lpage>614</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Chan1"><label>40</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Chan</surname><given-names>AW</given-names></name>
+<name name-style="western"><surname>Hrobjartsson</surname><given-names>A</given-names></name>
+<name name-style="western"><surname>Haahr</surname><given-names>MT</given-names></name>
+<name name-style="western"><surname>Gøtzsche</surname><given-names>PC</given-names></name>
+<name name-style="western"><surname>Altman</surname><given-names>DG</given-names></name>
+</person-group>             <year>2004</year>             <article-title>Empirical evidence for selective reporting of outcomes in randomized trials: Comparison of protocols to published articles.</article-title>             <source>JAMA</source>             <volume>291</volume>             <fpage>2457</fpage>             <lpage>2465</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Chan2"><label>41</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Chan</surname><given-names>AW</given-names></name>
+<name name-style="western"><surname>Krleza-Jeric</surname><given-names>K</given-names></name>
+<name name-style="western"><surname>Schmid</surname><given-names>I</given-names></name>
+<name name-style="western"><surname>Altman</surname><given-names>DG</given-names></name>
+</person-group>             <year>2004</year>             <article-title>Outcome reporting bias in randomized trials funded by the Canadian Institutes of Health Research.</article-title>             <source>CMAJ</source>             <volume>171</volume>             <fpage>735</fpage>             <lpage>740</lpage>          </element-citation></ref>
+<ref id="pmed.1000097-Silagy1"><label>42</label><element-citation publication-type="journal" xlink:type="simple">             <person-group person-group-type="author">
+<name name-style="western"><surname>Silagy</surname><given-names>CA</given-names></name>
+<name name-style="western"><surname>Middleton</surname><given-names>P</given-names></name>
+<name name-style="western"><surname>Hopewell</surname><given-names>S</given-names></name>
+</person-group>             <year>2002</year>             <article-title>Publishing protocols of systematic reviews: Comparing what was done to what was planned.</article-title>             <source>JAMA</source>             <volume>287</volume>             <fpage>2831</fpage>             <lpage>2834</lpage>          </element-citation></ref>
+</ref-list><glossary><title>Abbreviations</title><def-list><def-item>
+<term>PRISMA</term>
+<def>
+<p>Preferred Reporting Items for Systematic reviews and Meta-Analyses</p>
+</def>
+</def-item><def-item>
+<term>QUOROM</term>
+<def>
+<p><italic>QU</italic>ality <italic>O</italic>f <italic>R</italic>eporting <italic>O</italic>f <italic>M</italic>eta-analyses</p>
+</def>
+</def-item></def-list></glossary>
+<fn-group><fn fn-type="other"><p><bold>Provenance:</bold> Not commissioned; externally peer reviewed. In order to encourage dissemination of the PRISMA Statement, this article is freely accessible on the <italic>PLoS Medicine</italic> Web site (<ext-link ext-link-type="uri" xlink:href="http://medicine.plosjournals.org/" xlink:type="simple">http://medicine.plosjournals.org/</ext-link>) and will be also published in the <italic>Annals of Internal Medicine</italic>, <italic>BMJ</italic>, <italic>Journal of Clinical Epidemiology</italic>, and <italic>Open Medicine</italic>. The authors jointly hold the copyright of this article. For details on further use, see the PRISMA Web site (<ext-link ext-link-type="uri" xlink:href="http://www.prisma-statement.org/" xlink:type="simple">http://www.prisma-statement.org/</ext-link>).</p></fn></fn-group>
+</back>
+</article>

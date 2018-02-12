@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://dtd.nlm.nih.gov/publishing/3.0/journalpublishing3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="3.0" xml:lang="en">
+	<front>
+		<journal-meta>
+    <journal-id journal-id-type="nlm-ta">PLoS ONE</journal-id>
+    <journal-id journal-id-type="publisher-id">plos</journal-id>
+    <journal-id journal-id-type="pmc">plosone</journal-id>
+    <journal-title-group><journal-title>PLoS ONE</journal-title></journal-title-group>
+    <issn pub-type="epub">1932-6203</issn>
+    <publisher><publisher-name>Public Library of Science</publisher-name>
+    <publisher-loc>San Francisco, USA</publisher-loc></publisher>
+    </journal-meta><article-meta>
+			<article-id pub-id-type="publisher-id">PONE-D-12-33790</article-id><article-id pub-id-type="doi">10.1371/journal.pone.0078761</article-id><article-categories><subj-group subj-group-type="heading">
+    <subject>Research Article</subject></subj-group></article-categories><title-group>
+				<article-title>Additive Partitioning of Coral Reef Fish Diversity across Hierarchical Spatial Scales throughout the Caribbean</article-title>
+			<alt-title alt-title-type="running-head">Reef Fish Diversity Partitioning</alt-title>
+      </title-group>
+			<contrib-group>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Francisco-Ramos</surname>
+						<given-names>Vanessa</given-names>
+					</name>
+				<xref ref-type="aff" rid="aff1"/></contrib>
+				<contrib xlink:type="simple" contrib-type="author">
+					<name name-style="western">
+						<surname>Arias-González</surname>
+						<given-names>Jesús Ernesto</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff1"/><xref ref-type="corresp" rid="cor1"><sup>*</sup></xref>
+				</contrib>
+			</contrib-group>
+			<aff id="aff1"><addr-line>Departamento de Recursos del Mar, Centro de Investigación <chem-struct xlink:type="simple"><label>y</label> de Estudios Avanzados del Instituto Politécnico Nacional-Unidad Mérida, Mérida, Yucatán, México </chem-struct></addr-line></aff>
+			<contrib-group><contrib contrib-type="editor" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ferse</surname>
+            <given-names>Sebastian C. A.</given-names>
+          </name>
+          <role>Editor</role>
+          <xref ref-type="aff" rid="edit1"/>
+        </contrib>
+        </contrib-group><aff id="edit1"><addr-line>Leibniz Center for Tropical Marine Ecology, Germany</addr-line></aff><author-notes>
+				<corresp id="cor1">* E-mail: <email xlink:type="simple">earias@mda.cinvestav.mx</email></corresp>
+			<fn fn-type="conflict"><p>The authors have declared that no competing interests exist.</p></fn><fn fn-type="con"><p>Conceived and designed the experiments: VFR JEAG. Performed the experiments: VFR JEAG. Analyzed the data: VFR JEAG. Contributed reagents/materials/analysis tools: VFR JEAG. Wrote the manuscript: VFR JEAG. </p></fn></author-notes>
+			<pub-date pub-type="collection"><year>2013</year></pub-date><pub-date pub-type="epub">
+        <day>25</day>
+        <month>10</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>8</volume><issue>10</issue><elocation-id>e78761</elocation-id><history><date date-type="received">
+          <day>31</day>
+          <month>10</month>
+          <year>2012</year>
+        </date>
+        <date date-type="accepted">
+          <day>23</day>
+          <month>9</month>
+          <year>2013</year>
+        </date>
+      </history><permissions>
+    <copyright-year>2013</copyright-year><copyright-holder>Francisco-Ramos, Arias-González</copyright-holder><license xlink:type="simple"><license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p></license>
+    </permissions><abstract>
+				<p>There is an increasing need to examine regional patterns of diversity in coral-reef systems since their biodiversity is declining globally. In this sense, additive partitioning might be useful since it quantifies the contribution of alpha and beta to total diversity across different scales. We applied this approach using an unbalanced design across four hierarchical scales (80 sites, 22 subregions, six ecoregions, and the Caribbean basin). Reef-fish species were compiled from the Reef Environmental Education Foundation (REEF) database and distributions were confirmed with published data. Permutation tests were used to compare observed values to those expected by chance. The primary objective was to identify patterns of reef-fish diversity across multiple spatial scales under different scenarios, examining factors such as fisheries and demographic connectivity. Total diversity at the Caribbean scale was attributed to β-diversity (nearly 62% of the species), with the highest β-diversity at the site scale. <inline-formula><mml:math id="m1" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity was higher than expected by chance in all scenarios and at all studied scales. This suggests that fish assemblages are more homogenous than expected, particularly at the ecoregion scale. Within each ecoregion, diversity was mainly attributed to alpha, except for the Southern ecoregion where there was a greater difference in species among sites. β-components were lower than expected in all ecoregions, indicating that fishes within each ecoregion are a subsample of the same species pool. The scenario involving the effects of fisheries showed a shift in dominance for β-diversity from regions to subregions, with no major changes to the diversity patterns. In contrast, demographic connectivity partially explained the diversity pattern. β-components were low within connectivity regions and higher than expected by chance when comparing between them. Our results highlight the importance of ecoregions as a spatial scale to conserve local and regional coral reef-fish diversity.</p>
+			</abstract>
+		<funding-group><funding-statement>The work was supported by the following: CONACYT (doctoral scholarship 229484). Biodiversidad y Conectividad de los Arrecifes Coralinos del Atlántico Mexicano Ante el Cambio Global. CLAVE: 000000000194539, Red Temática de investigación de Ecosistemas. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</funding-statement></funding-group></article-meta>
+	</front>
+	<body>
+		<sec id="s1" sec-type="introduction">
+			<title>Introduction</title>
+			<p>Ecologists have been striving to understand the uneven spatial distribution of species [<xref ref-type="bibr" rid="B1">1</xref>] and how spatial scales influence biodiversity [<xref ref-type="bibr" rid="B2">2</xref>]. There is a growing demand for both large and multiscale analyses to answer crucial questions concerning the origin of diversity and how we might best act in order to maintain it [<xref ref-type="bibr" rid="B3">3</xref>]. Traditionally, most attention has been directed toward terrestrial environments, while large-scale diversity patterns in marine ecosystems have received less attention. Recent studies have indicated the need to examine regional patterns of diversity in coral reef systems since their biodiversity is declining on a global scale [<xref ref-type="bibr" rid="B4">4</xref>-<xref ref-type="bibr" rid="B6">6</xref>]. Such a decline has increased the number of studies on critical groups, including coral reef fishes, which play fundamental ecological roles and are an integral part of coral reefs [<xref ref-type="bibr" rid="B6">6</xref>]. </p>
+			<p>Coral reef fish communities vary across multiple scales as a function of dispersion, environmental variables and/or inter- and intra-specific relationships [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B7">7</xref>,<xref ref-type="bibr" rid="B8">8</xref>]. It is important to understand the spatial scale at which diversity patterns are generated in order to conserve regional and local diversity [<xref ref-type="bibr" rid="B9">9</xref>]. Additive partitioning provides a way of exploring diversity distribution over a range of user-defined spatial scales [<xref ref-type="bibr" rid="B10">10</xref>,<xref ref-type="bibr" rid="B11">11</xref>]. In the additive approach γ-diversity (regional diversity) is partitioned into the sum of the average α-diversity (local diversity) and the β-diversity. Additive association allows diversity measures such as species richness to be hierarchically partitioned because β-diversity at each level is measured in the same units (i.e. species presence). The within-community diversity at a higher spatial level is a combined effect of heterogeneity at various lower levels [<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B13">13</xref>]. Furthermore, the null models generated in the partitioning allow comparisons between observed and expected α and β-diversity.</p>
+			<p>Additive partitioning of diversity has mostly been studied in terrestrial ecosystems using bats [<xref ref-type="bibr" rid="B14">14</xref>], birds [<xref ref-type="bibr" rid="B15">15</xref>], insects [<xref ref-type="bibr" rid="B2">2</xref>,<xref ref-type="bibr" rid="B13">13</xref>,<xref ref-type="bibr" rid="B16">16</xref>-<xref ref-type="bibr" rid="B18">18</xref>], and plants [<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B19">19</xref>]. Marine studies applying additive partitioning of species diversity are less common, but include benthic macroinvertebrates [<xref ref-type="bibr" rid="B20">20</xref>], stony corals [<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B22">22</xref>], and coral reef fish [<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B24">24</xref>]. Rodríguez-Zaragoza and Arias-González [<xref ref-type="bibr" rid="B23">23</xref>] applied additive partitioning to fish diversity at different spatial scales for 11 coral reef sites along 400 km of coast in the Mexican Caribbean. These authors found that at the reef scale, observed α- and inter-habitat β-diversity were higher than expected (from a random distribution), while observed β-diversity among sites was lower than expected. They also observed a small contribution of <inline-formula><mml:math id="m2" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity with the highest β-diversity at the largest spatial scale among reefs. Based on these results and the bioregionalization of the Caribbean Sea by Spalding et al. [<xref ref-type="bibr" rid="B25">25</xref>], we addressed the following questions: can we detect changes in the reef fish diversity partition pattern when moving through higher hierarchical spatial scales (sites, subregions, regions, and the Caribbean basin); if so, do the observed relative sizes of partitions reflect more than random sampling? And which spatial scale is associated with the highest β-diversity? We hypothesize that our highest comparable spatial level (ecoregions) will present the highest β-diversity. Diversity in each ecoregion is expected to be relatively different due to reasons related to their biogeography and history. </p>
+			<p>Fisheries could also affect the diversity patterns of reef fish [<xref ref-type="bibr" rid="B26">26</xref>,<xref ref-type="bibr" rid="B27">27</xref>]. The direct effects of fishing depend on the relative impact on common versus rare species [<xref ref-type="bibr" rid="B28">28</xref>]. In the Caribbean, the biomass of predatory fishes on coral reefs has been reduced [<xref ref-type="bibr" rid="B29">29</xref>]. Fisheries impacts are usually reflected in the size and abundance of target species, although in some cases they can drive species to local extinction (e.g. Nassau grouper) [<xref ref-type="bibr" rid="B30">30</xref>]. Therefore, we attempt to detect fishing effects on the diversity-partitioning pattern using the hierarchical spatial scales design, the bioregionalization proposed by Spalding et al. [<xref ref-type="bibr" rid="B25">25</xref>] and the fishing target species list of the Western Atlantic-Region 31 [<xref ref-type="bibr" rid="B31">31</xref>]. Depending on the spatial distribution of the fishing target species we predict changes in the dominance of the β-diversity components due to fishing. </p>
+			<p>Other factors rather than fisheries could affect the spatial distribution of species. Dispersal processes can yield large-scale patterns in species richness but also seem to determine which species are present within local assemblages [<xref ref-type="bibr" rid="B7">7</xref>]. Most of reef-fish species are sedentary partly due to their nature but also because the spatial structure resulting from the patchy environment restricts their movement. Most of the connectivity in these species is through the dispersal of larval stages rather than the movements of adult organisms [<xref ref-type="bibr" rid="B32">32</xref>]. Therefore, understanding connectivity among coral reef ecosystems is fundamental in order to explain diversity patterns. Cowen et al. [<xref ref-type="bibr" rid="B33">33</xref>] studied the likely connectivity of reef-fish species in the Caribbean, using individual-based modeling of larval dispersal in a hydrodynamic field. We also used the connectivity regions proposed by these authors to compare the diversity patterns at different scales. With the partitioning approach we tested the hypothesis that connectivity drives the patterns of α- and β-diversity. We expected low β-diversity within regions and high β-diversity between them. For the different scenarios and scales studied, the results address the importance of the ecoregion as a scale for preserving local and regional fish diversity.</p>
+		</sec>
+		<sec id="s2" sec-type="materials|methods">
+			<title>Material and Methods</title>
+			<sec id="s2.1">
+				<title>Study sites and database</title>
+				<p>We compiled data on the species richness of coral reef-associated fish communities from six ecoregions across the Caribbean (<xref ref-type="fig" rid="pone-0078761-g001">Figure 1</xref>). Data were compiled from the online source Reef Environmental Education Foundation (REEF) at http://www.reef.org/, accessed between April and July 2010 [<xref ref-type="bibr" rid="B34">34</xref>]. Trained volunteer SCUBA divers using the Roving Diver Technique (RDT) collected data. In the RDT divers swim around a reef site for approximately 45–60 min recording all fish species observed [<xref ref-type="bibr" rid="B34">34</xref>]. REEF has two categories of volunteers, beginners and experts; the data collected by each type are kept separate. Volunteers had to take the advanced fish identification exam and conduct a minimum of 35 surveys with the organization to become an expert, which helps to minimize the variation between divers. Only fish censuses by expert divers were used in this study. Schmitt et al. [<xref ref-type="bibr" rid="B35">35</xref>] analyzed RDT in comparison with other sampling techniques such as the traditional linear transects and concluded that RDT is a good sampling method for achieving a better representation of the fish community (more species). We used six of the ecoregions of the Tropical Northwestern Atlantic province proposed by Spalding et al. [<xref ref-type="bibr" rid="B25">25</xref>]. Currently there is no biogeographic consensus for the regionalization of the Caribbean [<xref ref-type="bibr" rid="B36">36</xref>]. Bioregionalization by Spalding et al. [<xref ref-type="bibr" rid="B25">25</xref>] was based on taxonomic configurations, influenced by evolutionary history, patterns of dispersal, and isolation. These authors suggested that their classification could be critical for supporting marine biodiversity patterns. Bioregionalization by Spalding et al. [<xref ref-type="bibr" rid="B25">25</xref>] includes the Bahamian ecoregion (BE): Bahamas, Turks and Caicos; the Greater Antilles ecoregion (GE): Cuba, Jamaica, Cayman Islands, Dominican Republic and Puerto Rico; the Western Caribbean ecoregion (WE): Mesoamerican reef from Mexico to Honduras. The Southwestern ecoregion (SWE): Colombian off-shore islands and Panama. Eastern ecoregion (EE): British Virgin Islands, United States Virgin Islands and the Lesser Antilles; and the Southern ecoregion (SE) from Aruba to Trinidad and Tobago including Venezuelan off-shore islands. Each region was subdivided into a different number of subregions. The number of subregions was variable within each region. We used a total of 22 subregions across the Caribbean (<xref ref-type="fig" rid="pone-0078761-g001">Figure 1</xref>). </p>
+				<fig id="pone-0078761-g001" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078761.g001</object-id><label>Figure 1</label>
+					<caption>
+						<title>The Caribbean basin with ecoregions, subregions and sites used for the analyses.</title><p>Bahamian ecoregion: Bahamas, Turks and Caicos; Greater Antilles ecoregion: Cuba, Jamaica, Cayman Islands, Dominican Republic and Puerto Rico; Western Caribbean ecoregion: Mesoamerican reef from Mexico to Honduras; Southwestern ecoregion: Colombian off-shore islands and Panama; Eastern ecoregion: British Virgin Islands (BVI), United States Virgin Islands (USVI) and the Lesser Antilles; and the Southern ecoregion from Aruba to Trinidad and Tobago including Venezuelan off-shore islands. Ecoregions according to Spalding et al. [25]. Subregions within each region are shown by name. Black dots represent the most dived location of each site. </p>
+						<p>Dashed yellow lines delimitate the five connectivity regions according to Cowen et al. [29]. Solid yellow lines represent major biogeographic breaks. See the text for more details on connectivity regions.</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078761.g001"/>
+				</fig>
+				<p>Data included coral reef systems located in 80 sites (77 insular and 3 coastal areas), and consisted of 2670 diving spots with 24,777 expert surveys conducted between 1993 and 2010. We decided to use REEF data because carrying out a scientific campaign of this nature to cover the extension of the Caribbean would be practically and financially impossible. Other studies that used the REEF base include Stallings [<xref ref-type="bibr" rid="B37">37</xref>] and Holt et al. [<xref ref-type="bibr" rid="B38">38</xref>]. Due to the qualitative nature of species abundance estimations in four categories by RDT divers we only used species presence-absence data. </p>
+				<p>We selected study sites with a minimum of 20 surveys based on species accumulation curves (9999 permutations) using EstimateS (v.7) [<xref ref-type="bibr" rid="B39">39</xref>], and STATISTICA (v.7.1) [<xref ref-type="bibr" rid="B40">40</xref>]. This method has been developed for assessing the completeness of museum and inventory collections; see Jiménez-Valverde and Hortal [<xref ref-type="bibr" rid="B41">41</xref>] for details on analyses; we did not make a distinction between protected (e.g. marine reserves, national parks, sanctuaries) or unprotected sites, as long as they achieved the minimum number of surveys. </p>
+				<p>The REEF organization has a validation step built in before uploading volunteers’ reports into the data base; however, to reinsure the validity of the species presence in the selected sites we completed a geographical distribution confirmation process based on a wide variety of references including general field guides [<xref ref-type="bibr" rid="B42">42</xref>-<xref ref-type="bibr" rid="B45">45</xref>], region-specific checklists [<xref ref-type="bibr" rid="B46">46</xref>-<xref ref-type="bibr" rid="B51">51</xref>], and online information [<xref ref-type="bibr" rid="B52">52</xref>,<xref ref-type="bibr" rid="B53">53</xref>]. We excluded certain species from the analyses, e.g. hybrids of <italic>Hypoplectrus</italic>, species identified at genus level, and species difficult to identify in the field, such as some belonging to the genus <italic>Elacatinus</italic>, among others. The complete list of all species used in this study can be found in <xref ref-type="supplementary-material" rid="pone.0078761.s001">Table S1</xref>.</p>
+			</sec>
+		
+		<sec id="s2.2">
+			<title>Richness and Species Composition Overview</title>
+			<p>In order to compare species richness between the six ecoregions proposed by Spalding et al. [<xref ref-type="bibr" rid="B25">25</xref>], the Kruskal-Wallis test was used to determine whether there were significant differences among any of the means (PAST v.2.1) [<xref ref-type="bibr" rid="B54">54</xref>]. </p>
+			<p>To visualize species composition patterns in assemblages across these ecoregions, we performed non-metric multidimensional scaling (NMDS) based on a Bray-Curtis similarity matrix. We also performed a similarity percentage (SIMPER) routine to assess similarity among subregions and regions based on their species composition (cut off 90%). Data analysis was performed using PRIMER v.6 [<xref ref-type="bibr" rid="B55">55</xref>]. </p>
+			<p>Permutational multivariate analysis of variance (PERMANOVA; [<xref ref-type="bibr" rid="B56">56</xref>]) based on the same similarity matrix was used to test the null hypothesis of no differences among reef fish assemblages at different spatial scales: (1) among subregions within the six ecoregions, and (2) among sites within subregions. Using the hierarchical sampling design, we evaluated the differences at the spatial scale of highest variation in community structure [<xref ref-type="bibr" rid="B57">57</xref>]. We used a nested design with 9999 permutations of residuals under a reduced model [<xref ref-type="bibr" rid="B58">58</xref>]. Since a significant result for a given factor from PERMANOVA suggests that groups may differ because of their location, their relative dispersion, or both, the Permutational test of multivariate dispersion (PERMDISP) was used to test each of these. PERMDISP were performed to test the factors “subregion” and “site” using a Bray-Curtis similarity matrix for an appropriate comparison [<xref ref-type="bibr" rid="B59">59</xref>]. </p>
+			<p>To analyze patterns of variation in species composition between the ecoregions we calculated the Russel and Rao similarity coefficient as follows:</p>
+			<disp-formula id="eqn1"><mml:math id="m3" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:msub><mml:mi>I</mml:mi><mml:mrow><mml:mi>R</mml:mi><mml:mi>R</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mi>a</mml:mi><mml:mrow><mml:mi>a</mml:mi><mml:mo>+</mml:mo><mml:mi>b</mml:mi><mml:mo>+</mml:mo><mml:mi>c</mml:mi><mml:mo>+</mml:mo><mml:mi>d</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:semantics></mml:math>	<label>(1)</label></disp-formula>
+			<p>where <italic>a</italic> is the total number of species common to two regions; <italic>b</italic> is the total number of species present in the first region but absent from the second; <italic>c</italic> is the total number of species present in the second region but absent from the first, and <italic>d</italic> is the total number of species absent from both regions but that can be found in the rest of the study area, the Caribbean, in our case.</p>
+			<p>The Russel and Rao coefficient [<xref ref-type="bibr" rid="B60">60</xref>] has an upper boundary of 1 for identical compositions and a lower boundary of 0 when species composition is totally different. We chose the Russel and Rao coefficient over other similarity indexes because of the use of the <italic>d</italic> term (<xref ref-type="disp-formula" rid="eqn1">Eq. 1</xref>), which allows us to consider the effect of other species from Caribbean coral reefs.</p>
+			<p>The total number of shared species among regions was calculated and used to generate the percentage of similarity between the six ecoregions. The total number of species present in only one region and only one site (true singletons) was assessed and their distribution according to Froese and Pauly [<xref ref-type="bibr" rid="B53">53</xref>] was evaluated to account for cases of endemism.</p></sec>
+			<sec id="s2.3">
+				<title>Additive partitioning of diversity</title><p>Additive partitioning was applied to species richness using an unbalanced design involving four hierarchical spatial scales: sites, sub-regions, regions and the Caribbean basin (<xref ref-type="table" rid="pone-0078761-t001">Table 1</xref>). We performed the hierarchical partitioning analysis excluding the species targeted by the fishery from the entire dataset. For the target species we used the list of commercially important species reported to the Food and Agriculture Organization (FAO) by the countries of the Western Atlantic-Region 31 [<xref ref-type="bibr" rid="B31">31</xref>]. Some of the targeted species are not fished specifically for food but are still of commercial value as baitfish (long-line and recreational). The FAO list included 134 species of commercial interest, of which 55 were present in our data. </p>
+				<table-wrap id="pone-0078761-t001" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078761.t001</object-id><label>Table 1</label>
+					<caption>
+						<title>Hierarchical model of species richness.</title></caption>
+					<table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1"><bold>Level</bold></th>
+								<th rowspan="1" colspan="1"><bold><inline-formula><mml:math id="m4" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-Diversity</bold></th>
+								<th rowspan="1" colspan="1"><bold>β-Diversity</bold></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1">Caribbean basin</td>
+								<td rowspan="1" colspan="1">Additive species richness of the Caribbean</td>
+								<td rowspan="1" colspan="1">Variation in species richness among regions, subregions and sites</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Ecoregions (6)</td>
+								<td rowspan="1" colspan="1">Species richness of each region</td>
+								<td rowspan="1" colspan="1">Variation in species richness among subregions and sites</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Subregions (22)</td>
+								<td rowspan="1" colspan="1">Species richness of each subregion</td>
+								<td rowspan="1" colspan="1">Variation in species richness among sites</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Sites (80)</td>
+								<td rowspan="1" colspan="1">Species richness of each site</td>
+								<td rowspan="1" colspan="1">-</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn>
+							<p>Species richness at each spatial level derived from the sum of α and β-diversities at the next lower level. In parentheses is the total number of samples at each level of analysis.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+				<p>We performed the diversity partitioning at the Caribbean basin scale and built the primary null model. The grain was always the “site” and the total spatial extent was the Caribbean basin. However, when analyzing the partitioning pattern for each region this became the spatial extent. Total diversity (γ) was partitioned into local <inline-formula><mml:math id="m5" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity (i.e., average diversity within a particular region) and β-diversity (i.e., species variation among selected sites and subregions). The β-diversity component can be calculated as the total diversity minus the average local diversity (<inline-formula><mml:math id="m6" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mi>β</mml:mi><mml:mo>=</mml:mo><mml:mi>γ</mml:mi><mml:mo>−</mml:mo><mml:mover><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow><mml:mrow/></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>). The additive partitioning approach enabled us to directly calculate and compare the contribution of α and β to the total diversity [<xref ref-type="bibr" rid="B10">10</xref>]. </p>
+				<p>Partitioning was applied at all hierarchical spatial scales, therefore “samples” at one scale are themselves composed of “samples” at a smaller scale. Consequently, γ-diversity was partitioned into the diversity contributed by each scale. At the lower level of analysis, the local average diversity (<inline-formula><mml:math id="m7" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>) was calculated among sites. β<sub>1</sub> is regarded as the average diversity among sites within sub-region; β<sub>2</sub> is the average diversity among sub-regions within regions; and β<sub>3</sub> is the average diversity among regions within the Caribbean. These components can be calculated using the following equations:</p>
+				<disp-formula id="eqn2"><mml:math id="m8" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:msub><mml:mtext>β</mml:mtext><mml:mtext>1</mml:mtext></mml:msub><mml:mtext>=</mml:mtext><mml:msub><mml:mrow><mml:mover><mml:mrow><mml:mover><mml:mtext>S</mml:mtext><mml:mo>¯</mml:mo></mml:mover></mml:mrow><mml:mrow/></mml:mover></mml:mrow><mml:mrow><mml:mtext>sr</mml:mtext></mml:mrow></mml:msub><mml:mtext>-</mml:mtext><mml:mover><mml:mrow><mml:mover><mml:mtext>α</mml:mtext><mml:mo>¯</mml:mo></mml:mover></mml:mrow><mml:mrow/></mml:mover></mml:mrow></mml:semantics></mml:math>	<label>(2)</label></disp-formula>
+				<disp-formula id="eqn3"><mml:math id="m9" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:msub><mml:mi>β</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mover><mml:mrow><mml:mover><mml:mi>S</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow><mml:mrow/></mml:mover></mml:mrow><mml:mi>r</mml:mi></mml:msub><mml:mo>-</mml:mo><mml:msub><mml:mrow><mml:mover><mml:mrow><mml:mover><mml:mi>S</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow><mml:mrow/></mml:mover></mml:mrow><mml:mrow><mml:mi>s</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:semantics></mml:math>	<label>(3)</label></disp-formula>
+				<disp-formula id="eqn4"><mml:math id="m10" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:msub><mml:mi>β</mml:mi><mml:mn>3</mml:mn></mml:msub><mml:mo>=</mml:mo><mml:mi>γ</mml:mi><mml:mo>-</mml:mo><mml:msub><mml:mrow><mml:mover><mml:mrow><mml:mover><mml:mi>S</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow><mml:mrow/></mml:mover></mml:mrow><mml:mi>r</mml:mi></mml:msub></mml:mrow></mml:semantics></mml:math>	<label>(4)</label></disp-formula>
+				<p>where <inline-formula><mml:math id="m11" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>S</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mi>s</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:semantics></mml:math></inline-formula> and <inline-formula><mml:math id="m12" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>S</mml:mi><mml:mo>¯</mml:mo></mml:mover><mml:mi>r</mml:mi></mml:mrow></mml:semantics></mml:math></inline-formula> are the average number of species within a sub-region and a region, respectively. For the Caribbean basin spatial scale the total diversity can be expressed as:</p>
+				
+					<p><disp-formula id="eqn5"><mml:math id="m13" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mi>γ</mml:mi><mml:mo>=</mml:mo><mml:mover><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow><mml:mrow/></mml:mover><mml:mo>+</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mn>3</mml:mn></mml:msub></mml:mrow></mml:semantics></mml:math>					<label>(5)</label></disp-formula>
+						
+				</p>
+				<p>We performed all additive partitioning using the PARTITION v.3 program [<xref ref-type="bibr" rid="B61">61</xref>]. We used the reshuffling algorithm of the program to test whether the observed diversity components (α and β) at each spatial scale could have been obtained by a random distribution of individuals among samples at all hierarchical levels. Individual-based randomizations were repeated 999 times. The Individual-based randomization performed by the PARTITION program randomly reassigns each individual presence in the dataset to any given sample level to generate the null model for that dataset. We evaluated statistical significance by determining the proportion of null values that were greater or less than the observed components [<xref ref-type="bibr" rid="B61">61</xref>]. Presence-absence data have been previously used to generate null distributions (see Semmens et al. [<xref ref-type="bibr" rid="B62">62</xref>]). Obviously when using presence-absence data all species have the same weight. The null distribution used by PARTITION to calculate p-values will not be robust to the sample size and species abundance effects in the same way it would be if abundance data were included. This has to be taken into account when interpreting results from any presence-absence data analysis.</p>
+			</sec>
+			<sec id="s2.4">
+				<title>Fisheries and the diversity partition pattern</title>
+				<p>In order to detect fishing effects on the diversity partition pattern, we compared the “natural” observed partition distribution that contained all species with the null distribution previously generated for the “unfished” species.</p>
+				<p>We determined the proportion of null values that were greater or less than the observed components to address statistical differences [<xref ref-type="bibr" rid="B61">61</xref>]. We then tested for fishing effects on the diversity partition pattern at the Caribbean basin scale and for each of the ecoregions using the PARTITION v.3 program [<xref ref-type="bibr" rid="B61">61</xref>] as described above. </p>
+			</sec>
+			<sec id="s2.5">
+				<title>Connectivity and the diversity partition pattern</title>
+				<p>Finally, in order to evaluate whether the demographic connectivity could be driving the α- and β-diversity patterns we performed the partitioning analyses within and between the regions proposed by Cowen et al. [<xref ref-type="bibr" rid="B33">33</xref>]. These authors divided the Caribbean into four broadly defined regions of connectivity and a central mixing zone (see yellow lines and major biogeographic breaks in <xref ref-type="fig" rid="pone-0078761-g001">Figure 1</xref>). The connectivity regions proposed by Cowen et al. [<xref ref-type="bibr" rid="B33">33</xref>] include: the Bahamas and the Turks and Caicos (BC); the Western region (WC), which includes the Mesoamerican Reef, Cayman islands and southern Cuba; the Eastern region (EC), which includes Aruba, Curacao, Bonaire, the Venezuelan coast, Trinidad and Tobago, the Lesser Antilles, British Virgin Islands, US Virgin Islands and Puerto Rico; the region at the periphery of the Colombia-Panama gyre (SWC) and a Central mixing zone (MC) that includes Jamaica and the Hispaniola islands. We reassigned the 80 sites to these five connectivity regions and performed the diversity partition analyses for each region and the pair-wise combination of them using the PARTITION v.3 program [<xref ref-type="bibr" rid="B61">61</xref>] as previously described. </p>
+			</sec>
+		</sec>
+		<sec id="s3" sec-type="results">
+			<title>Results</title>
+			<sec id="s3.1">
+				<title>Richness and species composition overview</title>
+				<p>The entire data set consisted of 539 reef fish species belonging to 89 families and 24 taxonomic orders. A complete list of all species is presented in <xref ref-type="supplementary-material" rid="pone.0078761.s001">Table S1</xref>. Several patterns emerge across the Caribbean in the relationships between local and regional richness of the coral reef fish community. The Southern ecoregion (SE) showed the highest species richness (454), followed by the Eastern ecoregion (422), Western ecoregion (393), Bahamian (379), the Greater Antilles (342), and the Southwestern ecoregion (302). Even though there was no significant inter-region variation in the median number of species (Kruskal-Wallis H = 7.095, p = 0.2136), there was significant variation in the community.</p>
+				<p>Differences in species composition among sites within the Southern ecoregion (SE) were more evident. Compared to the other regions, sites in the Southern ecoregion were more distant from one another (<xref ref-type="fig" rid="pone-0078761-g002">Figure 2</xref>). When comparing within ecoregions we found that the Bahamian (BE) showed the highest among-subregions SIMPER similarity percentage, around 78%. The Southern ecoregion (SE) had the lowest among-subregions similarity (67.1%), while the Greater Antilles, Eastern, Western, and Southwestern regions showed similarities of 74.3, 75.8, 76.8 and 77.5%, respectively (<xref ref-type="table" rid="pone-0078761-t002">Table 2</xref>).</p>
+				<fig id="pone-0078761-g002" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078761.g002</object-id><label>Figure 2</label>
+					<caption>
+						<title>Non-metric multidimensional scaling analysis (NMDS) of fish assemblage structure.</title><p>Ordination of the 80 sites according to species composition based on a Bray-Curtis similarity matrix. See <xref ref-type="fig" rid="pone-0078761-g001">Figure 1</xref> for details on ecoregions. </p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078761.g002"/>
+				</fig>
+				<table-wrap id="pone-0078761-t002" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078761.t002</object-id><label>Table 2</label>
+					<caption>
+						<title>Average similarity percentage (SIMPER), Russel and Rao similarity coefficient (I<sub>RR</sub>) and PERMANOVA pairwise <italic>post</italic> <italic>hoc</italic> test results between the six ecoregions of the Caribbean.</title></caption>
+					<table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1">Regions</th>
+								<th rowspan="1" colspan="1">Average Similarity between regions (%)</th>
+								<th rowspan="1" colspan="1">I<sub>RR</sub></th>
+								<th colspan="3" rowspan="1">PERMANOVA PAIR WISE TEST<hr/></th>
+							</tr>
+							<tr>
+								<th rowspan="1" colspan="1"/>
+								<th rowspan="1" colspan="1"/>
+								<th rowspan="1" colspan="1"/>
+								<th rowspan="1" colspan="1">t</th>
+								<th rowspan="1" colspan="1">p(perm)</th>
+								<th rowspan="1" colspan="1">Unique perms</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1">BE-GE</td>
+								<td rowspan="1" colspan="1">74.11</td>
+								<td rowspan="1" colspan="1">0.575</td>
+								<td rowspan="1" colspan="1">2.6011</td>
+								<td rowspan="1" colspan="1">0.0001</td>
+								<td rowspan="1" colspan="1">9909</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">BE-WE</td>
+								<td rowspan="1" colspan="1">75.04</td>
+								<td rowspan="1" colspan="1">0.610</td>
+								<td rowspan="1" colspan="1">2.1713</td>
+								<td rowspan="1" colspan="1">0.0013</td>
+								<td rowspan="1" colspan="1">9915</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">BE-EE</td>
+								<td rowspan="1" colspan="1">74.41</td>
+								<td rowspan="1" colspan="1">0.629</td>
+								<td rowspan="1" colspan="1">2.5775</td>
+								<td rowspan="1" colspan="1">0.0001</td>
+								<td rowspan="1" colspan="1">9918</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">BE-SWE</td>
+								<td rowspan="1" colspan="1">72.61</td>
+								<td rowspan="1" colspan="1">0.503</td>
+								<td rowspan="1" colspan="1">1.8711</td>
+								<td rowspan="1" colspan="1">0.0043</td>
+								<td rowspan="1" colspan="1">9930</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">BE-SE</td>
+								<td rowspan="1" colspan="1">66.39</td>
+								<td rowspan="1" colspan="1">0.625</td>
+								<td rowspan="1" colspan="1">3.0807</td>
+								<td rowspan="1" colspan="1">0.0001</td>
+								<td rowspan="1" colspan="1">9946</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">GE-WE</td>
+								<td rowspan="1" colspan="1">74.07</td>
+								<td rowspan="1" colspan="1">0.588</td>
+								<td rowspan="1" colspan="1">2.1515</td>
+								<td rowspan="1" colspan="1">0.0029</td>
+								<td rowspan="1" colspan="1">9946</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">GE-EE</td>
+								<td rowspan="1" colspan="1">73.76</td>
+								<td rowspan="1" colspan="1">0.605</td>
+								<td rowspan="1" colspan="1">2.4005</td>
+								<td rowspan="1" colspan="1">0.0006</td>
+								<td rowspan="1" colspan="1">9918</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">GE-SWE</td>
+								<td rowspan="1" colspan="1">72.58</td>
+								<td rowspan="1" colspan="1">0.495</td>
+								<td rowspan="1" colspan="1">1.8532</td>
+								<td rowspan="1" colspan="1">0.0145</td>
+								<td rowspan="1" colspan="1">9940</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">GE-SE</td>
+								<td rowspan="1" colspan="1">67.1</td>
+								<td rowspan="1" colspan="1">0.601</td>
+								<td rowspan="1" colspan="1">2.5693</td>
+								<td rowspan="1" colspan="1">0.0003</td>
+								<td rowspan="1" colspan="1">9927</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">WE-EE</td>
+								<td rowspan="1" colspan="1">72.87</td>
+								<td rowspan="1" colspan="1">0.655</td>
+								<td rowspan="1" colspan="1">1.9915</td>
+								<td rowspan="1" colspan="1">0.0046</td>
+								<td rowspan="1" colspan="1">9935</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">WE-SWE</td>
+								<td rowspan="1" colspan="1">75.46</td>
+								<td rowspan="1" colspan="1">0.523</td>
+								<td rowspan="1" colspan="1">1.1728</td>
+								<td rowspan="1" colspan="1">0.2436</td>
+								<td rowspan="1" colspan="1">9846</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">WE-SE</td>
+								<td rowspan="1" colspan="1">67.45</td>
+								<td rowspan="1" colspan="1">0.659</td>
+								<td rowspan="1" colspan="1">2.1448</td>
+								<td rowspan="1" colspan="1">0.0012</td>
+								<td rowspan="1" colspan="1">9949</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">EE-SWE</td>
+								<td rowspan="1" colspan="1">72.13</td>
+								<td rowspan="1" colspan="1">0.521</td>
+								<td rowspan="1" colspan="1">1.4125</td>
+								<td rowspan="1" colspan="1">0.0984</td>
+								<td rowspan="1" colspan="1">9934</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">EE-SE</td>
+								<td rowspan="1" colspan="1">68.53</td>
+								<td rowspan="1" colspan="1">0.696</td>
+								<td rowspan="1" colspan="1">1.8259</td>
+								<td rowspan="1" colspan="1">0.0049</td>
+								<td rowspan="1" colspan="1">9934</td>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">SWE-SE</td>
+								<td rowspan="1" colspan="1">68.98</td>
+								<td rowspan="1" colspan="1">0.544</td>
+								<td rowspan="1" colspan="1">0.3175</td>
+								<td rowspan="1" colspan="1">0.3175</td>
+								<td rowspan="1" colspan="1">9657</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn>
+							<p>p&lt;0.001 differences among groups. Regions abbreviations: Bahamian (BE), Greater Antilles (GE), Eastern ecoregion (EE), Southern ecoregion (SE), Southwestern ecoregion (SWE) and Western ecoregion (WE).</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+				<p>The PERMANOVA showed significant variability at all spatial scales analyzed, with a significant effect of the “ecoregion” grouping (Pseudo-F = 4.3811, p&lt;0.0001). The greatest variability occurred at the smallest spatial scale studied (among sites, within subregions; Pseudo-F = 2.1637, p&lt;0.0001). </p>
+				<p>The PERMDISP was also significant, F = 4.3495, p<sub>(perm)</sub> = 0.0069. The PERMANOVA pairwise <italic>a posteriori</italic> comparison of all ecoregions was significant (p<sub>(perm)</sub>&lt;0.05), except for the comparison between the Western and Southwestern, and the Southern and Southwestern ecoregions (<xref ref-type="table" rid="pone-0078761-t002">Table 2</xref>). </p>
+				<p>The Russel and Rao similarity coefficient varied little between ecoregions (<xref ref-type="table" rid="pone-0078761-t002">Table 2</xref>). It was highest between Eastern and Southern ecoregions (0.696), and lowest between the Bahamian and the Southwestern ecoregion (0.503).</p>
+				<p>We observed 247 fish species in all regions (45.8%) compared to 92 species present in only one region (17.1%). When analyzing the distribution of the species observed in only one region, around 10% of them have been reported to be exclusive to the ecoregion where they were observed (e.g. <italic>Elacatinus atronasum</italic> and <italic>Vomerogobius flavus</italic> only reported for the Bahamian ecoregion). Most of these species has been reported only for the Southern ecoregion, Venezuelan coast, and Trinidad and Tobago (e.g. <italic>Emblemariopsis remirezi</italic>, <italic>Protemblemaria punctata</italic> or <italic>Elacatinus zebrellus</italic>). About 75% of the species we observed in only one of the studied regions have been reported for other regions [<xref ref-type="bibr" rid="B53">53</xref>]. Less than 2% of the species observed in just one region are considered endemic (e.g. <italic>Sanopus splendidus</italic> from Cozumel-Mexico, and <italic>Emblemaria diphyodontis</italic> from Cuabagua-Venezuela) [<xref ref-type="bibr" rid="B53">53</xref>]. A complete list of these species is presented in <xref ref-type="supplementary-material" rid="pone.0078761.s002">Table S2</xref>.</p>
+				<p>Only 63 fish species were present just once in each ecoregion, true singletons. The Eastern (EE) and Southern ecoregions (SE) showed the highest number of singletons. In these two ecoregions we found the highest number of shared species (375 species). However, these regions did not show the highest similarity percentage because both showed the greatest number of species (<xref ref-type="table" rid="pone-0078761-t003">Table 3</xref>). The lowest number of shared species (267) was observed between the Greater Antilles (GE) and the Southwestern ecoregion (SE); while the lowest pairwise similarity percentage was between the Southern (SE) and Southwestern ecoregions (SWE), 63.3%. The Western (WE) and Eastern ecoregions (EE) shared the highest similarity percentage (76.4%), <xref ref-type="table" rid="pone-0078761-t003">Table 3</xref>. </p>
+				<table-wrap id="pone-0078761-t003" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078761.t003</object-id><label>Table 3</label>
+					<caption>
+						<title>Total and percentage of shared coral-reef fish species between six ecoregions of the Caribbean.</title></caption>
+					<table>
+						<colgroup span="1"><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/><col span="1"/></colgroup>
+						<thead>
+							<tr>
+								<th rowspan="1" colspan="1"/>
+								<th rowspan="1" colspan="1">Bahamian</th>
+								<th rowspan="1" colspan="1">Greater Antilles</th>
+								<th rowspan="1" colspan="1">Western</th>
+								<th rowspan="1" colspan="1">Eastern</th>
+								<th rowspan="1" colspan="1">Southwestern</th>
+								<th rowspan="1" colspan="1">Southern</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="1" colspan="1">Bahamian</td>
+								<td rowspan="1" colspan="1">379 (100%)</td>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Greater Antilles</td>
+								<td rowspan="1" colspan="1">310 (75.43%)</td>
+								<td rowspan="1" colspan="1">342 (100%)</td>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Western</td>
+								<td rowspan="1" colspan="1">329 (74.27%)</td>
+								<td rowspan="1" colspan="1">317 (75.84%)</td>
+								<td rowspan="1" colspan="1">393 (100%)</td>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Eastern</td>
+								<td rowspan="1" colspan="1">339 (73.38%)</td>
+								<td rowspan="1" colspan="1">326 (74.42%)</td>
+								<td rowspan="1" colspan="1">353 (76.41%)</td>
+								<td rowspan="1" colspan="1">422 (100%)</td>
+								<td rowspan="1" colspan="1"/>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Southwestern</td>
+								<td rowspan="1" colspan="1">271 (66.09%)</td>
+								<td rowspan="1" colspan="1">267 (70.82%)</td>
+								<td rowspan="1" colspan="1">282 (68.28%)</td>
+								<td rowspan="1" colspan="1">281 (63.43%)</td>
+								<td rowspan="1" colspan="1">302 (100%)</td>
+								<td rowspan="1" colspan="1"/>
+							</tr>
+							<tr>
+								<td rowspan="1" colspan="1">Southern</td>
+								<td rowspan="1" colspan="1">337 (67.94%)</td>
+								<td rowspan="1" colspan="1">324 (68.64%)</td>
+								<td rowspan="1" colspan="1">355 (72.16%)</td>
+								<td rowspan="1" colspan="1">375 (74.85%)</td>
+								<td rowspan="1" colspan="1">293 (63.28%)</td>
+								<td rowspan="1" colspan="1">454 (100%)</td>
+							</tr>
+						</tbody>
+					</table>
+				</table-wrap>
+			
+		</sec>
+		<sec id="s3.2">
+			<title>Additive Partitioning at the Caribbean Basin Scale</title>
+			<p>The total γ-diversity at the Caribbean scale was mainly attributed to β-diversity. The diversity percentage explained by all β-components was 61.8%, of which 22.9% (ca.111 species) was among-sites (β<sub>1</sub>), 7.8% (ca. 38 species) among-subregions (β<sub>2</sub>), and 31.1% (ca. 151 species) at the regional level (β<sub>3</sub>). The <inline-formula><mml:math id="m14" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity was higher than expected by chance (p&lt;0.0001) and comprised 38.1% of the total “unfished” species richness at the Caribbean basin spatial scale, ca. 184 average observed species from the total γ-diversity of 484 species (<xref ref-type="fig" rid="pone-0078761-g003">Figure 3A</xref>). </p>
+			<fig id="pone-0078761-g003" position="float">
+				<object-id pub-id-type="doi">10.1371/journal.pone.0078761.g003</object-id><label>Figure 3</label>
+				<caption>
+					<title>Additive partitioning of reef fish diversity at the Caribbean basin scale.</title><p>Contributions of average α-diversity and three β-diversity components: β<sub>1</sub> among sites, β<sub>2</sub> among subregions, and β<sub>3</sub> among ecoregions to γ-diversity. A: without fishing target species and B: including all the reef-fish species. The observed partitions (Obs.) are compared with the expected values (Exp.) as predicted by the null model based on 999 randomizations. Results are presented as percentages for easier comparison. Open star symbols: Exp &lt; Obs, p&lt;0.0001. Filled star symbols: Exp &gt; Obs, p&lt;0.0001.</p>
+				</caption>
+				<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078761.g003"/>
+			</fig>
+			<p>The contribution of β-diversity decreased across hierarchical levels. The observed β-diversity among sites (β<sub>1</sub>) and among ecoregions (β<sub>3</sub>) was lower than expected by chance. Only β-diversity among subregions (β<sub>2</sub>) was higher than expected by chance but it was not statistically significant (p = 0.059). This implies that species variation at this spatial scale is not a consequence of sample design and effort, nor is it merely random. </p></sec>
+			<sec id="s3.3">
+				<title>Additive partitioning at the ecoregional scale</title>
+				<p><inline-formula><mml:math id="m15" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity explained a very similar proportion of the total γ-diversity for the Bahamian (BE), Eastern (EE), Western (WE), and Greater Antilles (GE) ecoregions with values between 51.4 and 55.2%. The Southwestern ecoregion (SWE) showed the highest <inline-formula><mml:math id="m16" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula> contribution (67.7%), whereas in the Southern ecoregion (SE) the β-component (β<sub>1 +</sub> β<sub>2</sub>) was more important. The partition pattern was very similar for the Bahamian, Eastern, Western, and Greater Antilles ecoregions where the species differentiation among sites (β<sub>1</sub>) was between 32.4% (ca.113 species) and 39.4% (ca. 133 species).</p>
+				<p>As was the case for the entire Caribbean basin, the <inline-formula><mml:math id="m17" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-component was greater than expected by chance (p&lt;0.0001) for all partitioning at the ecoregional scale. β-components were in general lower than expected (<xref ref-type="fig" rid="pone-0078761-g004">Figure 4A</xref>). Observed β-diversities among sites (β<sub>1</sub>) were lower than expected for all regions except for the Southwestern (p = 0.045). </p>
+				<fig id="pone-0078761-g004" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078761.g004</object-id><label>Figure 4</label>
+					<caption>
+						<title>Additive partitioning at the ecoregion level and fishing effects.</title><p>Contributions of average α-diversity and two β-diversity components: β1 among sites, β2 among subregions, and β3 among ecoregions to γ-diversity. A: without fishing target species and B: including all the reef-fish species. The observed partitions (Obs.) are compared with the expected values (Exp.) as predicted by the null model based on 999 randomizations. Ecoregions abbreviations: Southwestern (SWE), Western (WE), Bahamian (BE), Greater Antilles (GE), Eastern (EE) and Southern (SE). Open star symbols: Exp &lt; Obs, p&lt;0.0001. Filled star symbols: Exp &gt; Obs, p&lt;0.0001. Ecoregions according to Spalding et al. [25].</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078761.g004"/>
+				</fig>
+			</sec>
+			<sec id="s3.4">
+				<title>Including fishing target species in the diversity partition</title><p>At the Caribbean basin scale, total diversity was explained by β-diversity (61.7%), of which 27.2% (ca.146 species) was among-sites (β<sub>1</sub>), 17.5% (ca.95 species) among-subregions (β<sub>2</sub>), and 17% (ca. 92 species) at the regional level (β<sub>3</sub>). All β-components were lower than expected from a random distribution. <inline-formula><mml:math id="m18" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity was greater than expected by chance (p&lt;0.0001) and comprised 38.3% of the total fish species richness, with ca. 206 average observed species from the total γ-diversity of 539 species (<xref ref-type="fig" rid="pone-0078761-g003">Figure 3B</xref>). </p>
+				<p>Not all the 55 fishing target species were present in each ecoregion. In the Bahamian ecoregion (BE), 41 fishing target species were found. In the Eastern (EE) and Western (WE) ecoregions the total number of fished species was 46; but they were not the same species. In the Greater Antilles (GE), 35 fishing target species were found. The Southern ecoregion (SE) showed the highest number of species important to fisheries (47) while only 26 were present in the Southwestern region (SWE).</p>
+				<p>For all ecoregions, the <inline-formula><mml:math id="m19" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity was greater than expected from a random distribution of species (p&lt;0.0001), <xref ref-type="fig" rid="pone-0078761-g004">Figure 4B</xref>. Similar to when fishing target species were excluded, the partition pattern was comparable for the BE, EE, WE and GE. In these regions the contribution of lower than expected β<sub>1</sub> was between 32.4% (ca.127 species) and 38.8% (ca. 147 species) and lower than expected β<sub>2</sub> was between 8.2 and 12.4% (<xref ref-type="fig" rid="pone-0078761-g004">Figure 4B</xref>). </p>
+			</sec>
+			<sec id="s3.5">
+				<title>Demographic connectivity and diversity partition patterns</title>
+				<p>Considering the connectivity regions proposed by Cowen et al. [<xref ref-type="bibr" rid="B33">33</xref>], we found that for all five regions <inline-formula><mml:math id="m20" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity was greater than expected by chance (p&lt;0.0001), and almost all observed β-components were lower than expected (<xref ref-type="fig" rid="pone-0078761-g005">Figure 5A</xref>). <inline-formula><mml:math id="m21" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>was the most important element for all regions except for the Eastern connectivity region (EC). The contribution of variation among subregions (β<sub>2</sub>) was smaller than or very similar to the contribution among sites (β<sub>1</sub>), except for the EC region.</p>
+				<fig id="pone-0078761-g005" position="float">
+					<object-id pub-id-type="doi">10.1371/journal.pone.0078761.g005</object-id><label>Figure 5</label>
+					<caption>
+						<title>Additive partitioning of reef fish diversity at different scales for the connectivity regions.</title><p>Contributions of average α-diversity and three β-diversity components: β1 among sites, β2 among subregions, and β3 between regions to γ-diversity. A: partitioning for individual connectivity regions and B: for pairs of regions. The observed partitions (Obs.) are compared with the expected values (Exp.) as predicted by the null model based on 999 randomizations. Connectivity regions abbreviations: Southwestern-Panama Gyre (SWS), Western Caribbean (WC), Bahamas Turks and Caicos (BC), Mixing zone (MC) and Eastern Caribbean (EC). Open star symbols: Exp &lt; Obs, p&lt;0.0001. Filled star symbols: Exp &gt; Obs, p&lt;0.0001. See the text for details on Connectivity regions proposed by Cowen et al. [29].</p>
+					</caption>
+					<graphic xlink:type="simple" position="float" xlink:href="info:doi/10.1371/journal.pone.0078761.g005"/>
+				</fig>
+				<p>When comparing between connectivity regions <inline-formula><mml:math id="m22" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity was also higher than expected from a random distribution (p&lt;0.0001). β<sub>3</sub> was higher than expected for all comparisons except when SWC was included (<xref ref-type="fig" rid="pone-0078761-g005">Figure 5B</xref>). In general β-components were low within connectivity regions and high when comparing between them (<xref ref-type="fig" rid="pone-0078761-g005">Figure 5</xref>). The partition between SWC-WC and SWC-MC regions showed the lowest observed β-component.</p>
+			</sec>
+		</sec>
+		<sec id="s4" sec-type="discussion">
+			<title>Discussion</title>
+			<sec id="s4.1">
+				<title>General richness pattern and species composition</title>
+				<p>The known species richness of Caribbean reef fishes is between 500 and 700 species [<xref ref-type="bibr" rid="B53">53</xref>,<xref ref-type="bibr" rid="B63">63</xref>]. After the references-based geographic distribution corroboration, we used 539 species for the analysis, which seems to be a fair representation of the total documented richness of reef fish species for the Caribbean.</p>
+				<p>Region-scale diversity assemblages were in general homogenous, primarily reflecting a similar species composition with differentiation in the southern Caribbean. The relatively small number of singleton species, the high percentage of similarity within sites and regions and the very similar values of the Russel and Rao coefficient among regions suggest that there is an important number of species that are common to many sites throughout the Caribbean. However, there is some variation in species composition between the different spatial scales. The combined PERMANOVA and PERMDISP allowed us to detect that variation in composition was highest among the studied sites. In particular, the strongest differentiation was between the sites of the Southern ecoregion (high degree of dispersion in the NMDS plot). We think this differentiation could be related to the fact that sites in the Southern ecoregion are located in very different physicochemical provinces [<xref ref-type="bibr" rid="B64">64</xref>]. Trinidad and Tobago reefs are influenced by freshwater from the Orinoco River, an area characterized by turbid waters and low salinity [<xref ref-type="bibr" rid="B64">64</xref>]. Aruba, Curacao, Bonaire and some Venezuelan reef sites are found in relatively clear and warm waters of high salinity, while other Venezuelan reef sites are influenced by wind-driven upwelling near the coast [<xref ref-type="bibr" rid="B64">64</xref>,<xref ref-type="bibr" rid="B65">65</xref>]. </p>
+			</sec>
+			<sec id="s4.2">
+				<title>Additive partition, more than random sampling</title>
+				<p>The average α-diversity was higher than expected in all analyses. This pattern was geographically consistent for the ecoregions, suggesting that fish assemblages within ecoregions are more homogenous than expected. One explanation for this important finding could be related to the evolutionary history of the area. The Caribbean today seems to possess only a portion of an old and possibly widespread fish fauna [<xref ref-type="bibr" rid="B66">66</xref>]. Species loss has occurred in the past [<xref ref-type="bibr" rid="B67">67</xref>], with only those species able to resist intense environmental pressure surviving in many places. </p>
+				<p>Another explanation for the high observed <inline-formula><mml:math id="m23" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity could be related to a ubiquitous larval pool or high demographic connectivity among regions. Movements between spatial units (i.e. dispersal) would act as a homogenizing force, raising the <inline-formula><mml:math id="m24" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity and reducing the β-component [<xref ref-type="bibr" rid="B68">68</xref>]. This would allow a large number of species to be common to all studied regions. β-components were lower than expected by chance in all ecoregions, indicating that fish species within each ecoregion are a subsample of the same species pool. The connectivity of reef fishes is typically accomplished by the dispersal of pelagic larvae [<xref ref-type="bibr" rid="B32">32</xref>]. The biogeography and oceanography of the Caribbean show a strong potential for demographic connectivity due to its stepping-stone geography and a total distance along a current track of more than 4000 km [<xref ref-type="bibr" rid="B69">69</xref>]. We analyze whether the demographic connectivity is driving the α- and β-diversity patterns later in this section.</p>
+			</sec>
+			<sec id="s4.3">
+				<title>The spatial scale associated with the highest β-diversity</title>
+				<p>β-diversity reflects the importance of variation at each scale, as it contributes to the total diversity of a system [<xref ref-type="bibr" rid="B70">70</xref>]. For coral reef ecosystems off the eastern coast of the Yucatan Peninsula, Rodríguez-Zaragoza and Arias-González [<xref ref-type="bibr" rid="B23">23</xref>] found that β-diversity was the most important component at all the studied spatial scales; they found it to be higher between sites. At the Caribbean scale we found that the β-components explained nearly 62% of the total diversity. Although it was less than expected, we found the greatest species differentiation among sites. Our results suggest that the site spatial scale within regions is a very important level for conserving the total diversity of Caribbean coral reef fishes; this finding partially corroborates that of Semmens et al. [<xref ref-type="bibr" rid="B62">62</xref>], namely that conserving diverse sites regardless of region is effectively equal to conserving diverse sites within each region. We also found that observed β-components decreased across hierarchical levels. In a recent revision, Holland [<xref ref-type="bibr" rid="B70">70</xref>] found that β-diversity increased across hierarchical levels in just half of the 15 studies reviewed. Thus, there is apparently no simple rule for the size of β-diversity at progressively larger scales [<xref ref-type="bibr" rid="B70">70</xref>]. </p>
+				<p>It is important to consider that we included information from protected (e.g. marine reserves) and non-protected sites. This difference in protection could be a factor increasing β-diversity at the site scale. Species diversity tends to be higher inside marine protected areas [<xref ref-type="bibr" rid="B28">28</xref>,<xref ref-type="bibr" rid="B71">71</xref>]. Habitat differences in coral cover and complexity [<xref ref-type="bibr" rid="B72">72</xref>,<xref ref-type="bibr" rid="B73">73</xref>] as well as variation in depth [<xref ref-type="bibr" rid="B72">72</xref>] or wave exposure [<xref ref-type="bibr" rid="B74">74</xref>] could generate differentiation in species composition among sites. Other factors such as pollution [<xref ref-type="bibr" rid="B75">75</xref>], coral-reef phase shift [<xref ref-type="bibr" rid="B76">76</xref>] and fisheries could also affect β-diversity [<xref ref-type="bibr" rid="B28">28</xref>].</p>
+			</sec>
+			<sec id="s4.4">
+				<title>Additive Partitioning and Fisheries Effects</title>
+				<p>The direct effects of fishing could increase, decrease, or have no effect on species richness or distribution, depending on the relative impact on common versus rare species [<xref ref-type="bibr" rid="B28">28</xref>]. Observed distributions with and without fisheries target species were very similar in terms of proportions. This finding suggests that our fishing scenario cannot explain the fish diversity partition pattern observed at the Caribbean basin scale. </p>
+				<p>When comparing the diversity distributions with and without fishing target species at the ecoregional scale, the dominance of the β-diversity components changed for the Southern and Southwestern regions. In the Southern ecoregion some fishing target species were common to all sites but many others were common to just two or three sites of the same subregion. Therefore, the Southern ecoregion without fishing target species showed more similar sites in terms of species composition but with greater differences between subregions. We think this could be related to environmental differences among site locations, with the Southern reefs located in very different physicochemical provinces as previously mentioned.</p>
+				<p>Excluding the fishing target species and using presence-absence data are a coarse way of investigating the fisheries effect on diversity patterns; some species could be less abundant or diminish in size as a consequence of fisheries before becoming completely absent. However, our fishing scenario shows the potential loss of local species to be less than that caused by other kinds of disturbances on coral reef systems, e.g. coral cover reduction. During experimentally induced disturbances, in which coral cover was reduced by 16-36%, the proportional decline in fish diversity was 1.8-2.3 times the proportional coral loss [<xref ref-type="bibr" rid="B77">77</xref>]. </p>
+				<p>Local strategies of fish species usage should also be taken into account in order to obtain more realistic results. The importance of certain target species varies with location. For example, parrotfishes are an important food source in some countries [<xref ref-type="bibr" rid="B78">78</xref>], while in others these species are not highly commercial [<xref ref-type="bibr" rid="B79">79</xref>]. </p>
+				<p>We found a more heterogeneous distribution of the reef-fish species and the fishing target species along the northern coast of South America. The ecological consequences of such a difference are hard to predict. Fisheries exploitation affects not only target stocks but also communities of organisms, ecological processes and entire ecosystems [<xref ref-type="bibr" rid="B80">80</xref>]. Reef fish may perform different functional roles and can have different effects on the diversity and abundance of prey species [<xref ref-type="bibr" rid="B37">37</xref>]. The loss of a species and its functional roles can lead to a reduction in ecological stability [<xref ref-type="bibr" rid="B81">81</xref>,<xref ref-type="bibr" rid="B82">82</xref>]. The ecosystem can become less resilient to perturbations such as hurricanes or invasions [<xref ref-type="bibr" rid="B6">6</xref>,<xref ref-type="bibr" rid="B83">83</xref>]. </p>
+			</sec>
+			<sec id="s4.5">
+				<title>Demographic connectivity and diversity partition patterns</title>
+				<p>We expected to find high β-diversity among weakly connected areas and lower β-diversity among highly connected locations. β-components were low within regions proposed by Cowen et al. [<xref ref-type="bibr" rid="B33">33</xref>] and significantly higher when comparing between them (β<sub>3</sub>), showing a more similar species composition among its highly connected subregions and sites. This has very important conservation implications since high connectivity can buffer populations from local extinction and facilitates post-disturbance recovery [<xref ref-type="bibr" rid="B69">69</xref>]. </p>
+				<p>Within connectivity regions the highest β-diversity was at the site scale and observed <inline-formula><mml:math id="m25" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity was higher than expected in all partitioning analyses; fish assemblages throughout the Caribbean are more homogenous than expected, as we found with the Spalding et al. [<xref ref-type="bibr" rid="B25">25</xref>] bioregionalization. Some studies suggest a basin-scale mixing among reef fish populations across the Caribbean [<xref ref-type="bibr" rid="B84">84</xref>,<xref ref-type="bibr" rid="B85">85</xref>], but as we have seen, relative variation in species composition between regions persists. </p>
+				<p>We detected higher than expected β-diversity between some suggested weakly connected regions such as distant BC and EC. In general, the difference between connectivity regions (β<sub>3</sub>) was higher than expected (from a random distribution) for seven of ten pair-wise comparisons, showing that there are differences in composition between these regions. </p>
+				<p>According to Cowen et al. [<xref ref-type="bibr" rid="B33">33</xref>] the Bahamas and the Turks and Caicos Islands are largely isolated from the rest of the Caribbean, forming an enclave of high connectivity among its islands. We found that sites in this region were similar in terms of species composition with lower than expected β<sub>1</sub>, suggesting there is an important intra-connection. </p>
+				<p>Other regions such as the SWC (similar in terms of geographic delimitation as SWE) have also been described as highly isolated [<xref ref-type="bibr" rid="B33">33</xref>]; this was supported by an important number of unshared species with other regions and a higher than expected β<sub>3</sub> between SWC and EC. These two regions have been described as moderately isolated from each other along a meridional break that goes from the western end of Puerto Rico south to Aruba (<xref ref-type="fig" rid="pone-0078761-g001">Figure 1</xref>). Its relative isolation has been related to a high proportion of self-recruitment partially due to low importation from upstream locations and the proximity to the semipermanent Panama-Colombia Gyre [<xref ref-type="bibr" rid="B33">33</xref>]. Is important to consider that the high <inline-formula><mml:math id="m26" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity of SWC might be explained by the reduced number of sites.</p>
+				<p>The Eastern connectivity region (EC), broadly composed by the Eastern and Southern ecoregions, showed a differential pattern in its β-component and was the only connectivity region where β-diversity was more important. The explanation for this is related to large differences in composition between sites along the northern South American coast in SE, which are located in very different physicochemical provinces. </p>
+				<p>The connectivity regionalization proposed by Cowen et al. [<xref ref-type="bibr" rid="B33">33</xref>] partially explained the similarity within regions and differences between them. However, it is clear that the Caribbean reef-fish diversity pattern is not only driven by present-day connectivity but also has important biogeographic and evolutionary components. Contemporary distribution patterns reflect biological and physical processes operating at multiple spatial scales, over both evolutionary and ecological time scales [<xref ref-type="bibr" rid="B69">69</xref>]. Biogeographic and evolutionary mechanisms seem to determine the species distribution in the different ecoregions. Limited connectivity could be responsible for demographic isolation in some areas with an important number of unshared species. Each regionalization was based on different processes but the results using ecoregions and connectivity regions were complementary. Ecoregions are based on a broader assemblage of processes such as taxonomic configurations, influenced by evolutionary history, patterns of dispersal, and isolation [<xref ref-type="bibr" rid="B25">25</xref>]; whereas connectivity predictions depend greatly on the assumptions made concerning larval behavior, the accuracy of dispersal and the hydrodynamic model used [<xref ref-type="bibr" rid="B32">32</xref>]. Ecoregions allowed us to detect changes in β-diversity throughout the Caribbean, while connectivity explained part of this compositional variation. </p>
+			</sec>
+			<sec id="s4.6">
+				<title>Final comment</title>
+				<p>Our study helps to improve the understanding of diversity partitioning at different scales, and some of the effects that fisheries and connectivity might have. </p>
+				<p>To the best of our knowledge, this is the first study to use additive partitioning to analyze the diversity pattern of coral reef fish at the Caribbean basin scale. This approach helped us to identify that the β-component explains nearly 62% of the total diversity of Caribbean coral reef-fish and that observed <inline-formula><mml:math id="m27" overflow="scroll"><mml:semantics definitionURL="" encoding=""><mml:mrow><mml:mover><mml:mi>α</mml:mi><mml:mo>¯</mml:mo></mml:mover></mml:mrow></mml:semantics></mml:math></inline-formula>-diversity was higher than expected at all spatial scales and for both types of regions. The demographic connectivity partially explained the diversity distribution pattern we have found. Other studies indicate that geographic or physical constraints as well as connectivity [<xref ref-type="bibr" rid="B33">33</xref>,<xref ref-type="bibr" rid="B86">86</xref>] seem to play an important role in shaping fish species communities. Paleontological, phylogenetic and biogeographic data strongly suggest that present-day diversity patterns have an important historical component [<xref ref-type="bibr" rid="B87">87</xref>,<xref ref-type="bibr" rid="B88">88</xref>].</p>
+				<p>Further studies could include the separation of species by guilds or by commercial importance, as Sandin et al. [<xref ref-type="bibr" rid="B89">89</xref>] already started to explore, in order to try to identify changes in diversity patterns. We also need to address how much of the diversity partitioning is explained by habitat differences, e.g. reef condition, coral cover, benthic structure or complexity. </p>
+			</sec>
+		</sec>
+		<sec sec-type="supplementary-material">
+			<title>Supporting Information</title>
+			<supplementary-material xlink:type="simple" position="float" id="pone.0078761.s001" xlink:href="info:doi/10.1371/journal.pone.0078761.s001" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+				<label>Table S1</label>
+				<caption>
+					<p><bold>Scientific name, families, order and REEF data base code of all fish species used in this study.</bold></p><p>(XLSX)</p></caption>
+				</supplementary-material>
+			<supplementary-material xlink:type="simple" position="float" id="pone.0078761.s002" xlink:href="info:doi/10.1371/journal.pone.0078761.s002" mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+				<label>Table S2</label>
+				<caption>
+					<p><bold>List of the species common to all regions and the species that appeared in only one region.</bold>
+				</p><p>(XLSX)</p></caption>
+				</supplementary-material>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<p>We thank Gemma Franklin and Horacio de la Cueva for comments and language corrections that improved the manuscript. We also thank the staff at Reef Environmental Education Foundation and all the trained volunteers that make the REEF data base available. Gilberto Acosta-González helped with the map figure design and exchanged valuable comments and ideas. Comments and suggestions of two anonymous reviewers improved the paper.</p>
+		</ack>
+		<ref-list>
+			<title>References</title>
+			<ref id="B1">
+				<label>1</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Magurran</surname><given-names>AE</given-names></name> (<year>2004</year>) <source>Measuring Biological Diversity</source>. <publisher-loc>Malden (MA)</publisher-loc>: <publisher-name>Blackwell Publishing</publisher-name>. 256 pp. </mixed-citation>
+			</ref>
+			<ref id="B2">
+				<label>2</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gering</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Crist</surname><given-names>TO</given-names></name>, <name name-style="western"><surname>Veech</surname><given-names>JA</given-names></name> (<year>2003</year>) <article-title>Additive partitioning of species diversity across multiple spatial scales: Implications for regional conservation of biodiversity</article-title>. <source>Conserv Biol</source> <volume>17</volume>: <fpage>488</fpage>-<lpage>499</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1046/j.1523-1739.2003.01465.x" xlink:type="simple">10.1046/j.1523-1739.2003.01465.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B3">
+				<label>3</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gaston</surname><given-names>KJ</given-names></name> (<year>2000</year>) <article-title>Global patterns in biodiversity</article-title>. <source>Nature</source> <volume>405</volume>: <fpage>220</fpage>-<lpage>227</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/35012228" xlink:type="simple">10.1038/35012228</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/10821282" xlink:type="simple">10821282</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B4">
+				<label>4</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bellwood</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Hughes</surname><given-names>TP</given-names></name> (<year>2001</year>) <article-title>Regional-Scale Assembly Rules and Biodiversity of Coral Reefs</article-title>. <source>Science</source> <volume>292</volume>: <fpage>1532</fpage>-<lpage>1534</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1058635" xlink:type="simple">10.1126/science.1058635</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11375488" xlink:type="simple">11375488</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B5">
+				<label>5</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pandolfi</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Bradbury</surname><given-names>RH</given-names></name>, <name name-style="western"><surname>Sala</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Hughes</surname><given-names>TP</given-names></name>, <name name-style="western"><surname>Bjorndal</surname><given-names>KA</given-names></name> <etal>et al.</etal> (<year>2003</year>) <article-title>Global trajectories of long-term decline of coral reef ecosystems</article-title>. <source>Science</source> <volume>301</volume>: <fpage>955</fpage>-<lpage>958</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1085706" xlink:type="simple">10.1126/science.1085706</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12920296" xlink:type="simple">12920296</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B6">
+				<label>6</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bellwood</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Hughes</surname><given-names>TP</given-names></name>, <name name-style="western"><surname>Folke</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Nyström</surname><given-names>M</given-names></name> (<year>2004</year>) <article-title>Confronting the coral reef crisis</article-title>. <source>Nature</source> <volume>429</volume>: <fpage>827</fpage>-<lpage>833</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature02691" xlink:type="simple">10.1038/nature02691</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15215854" xlink:type="simple">15215854</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B7">
+				<label>7</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mora</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Chittaro</surname><given-names>PM</given-names></name>, <name name-style="western"><surname>Sale</surname><given-names>PF</given-names></name>, <name name-style="western"><surname>Kritzer</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Ludsin</surname><given-names>SA</given-names></name> <etal>et al.</etal> (<year>2003</year>) <article-title>Patterns and processes in reef fish diversity</article-title>. <source>Nature</source> <volume>421</volume>: <fpage>933</fpage>-<lpage>936</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1038/nature01393" xlink:type="simple">10.1038/nature01393</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12606998" xlink:type="simple">12606998</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B8">
+				<label>8</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Albany</surname><given-names>GR</given-names></name> (<year>2004</year>) <article-title>Does increased habitat complexity reduces predation and competition in coral reef fish assemblages?</article-title> <source>Oikos</source> <volume>106</volume>: <fpage>275</fpage>-<lpage>284</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.0030-1299.2004.13193.x" xlink:type="simple">10.1111/j.0030-1299.2004.13193.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B9">
+				<label>9</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Clarke</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Mac Nally</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Bond</surname><given-names>NR</given-names></name>, <name name-style="western"><surname>Lake</surname><given-names>PS</given-names></name> (<year>2010</year>) <article-title>Conserving macroinvertebrate diversity in headwater streams: the importance of knowing the relative contributions of α and  β diversity</article-title>. <source>Divers Distrib</source> <volume>16</volume>: <fpage>725</fpage>-<lpage>736</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1472-4642.2010.00692.x" xlink:type="simple">10.1111/j.1472-4642.2010.00692.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B10">
+				<label>10</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Lande</surname><given-names>R</given-names></name> (<year>1996</year>) <article-title>Statistics and partitioning of species diversity and similarity among multiple communities</article-title>. <source>Oikos</source> <volume>76</volume>: <fpage>5</fpage>-<lpage>13</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/3545743" xlink:type="simple">10.2307/3545743</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B11">
+				<label>11</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Gering</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Crist</surname><given-names>TO</given-names></name> (<year>2002</year>) <article-title>The alpha-beta-regional relationship: providing new insights into local-regional patterns of species richness and scale dependence of diversity components</article-title>. <source>Ecol Lett</source> <volume>5</volume>: <fpage>433</fpage>-<lpage>444</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1046/j.1461-0248.2002.00335.x" xlink:type="simple">10.1046/j.1461-0248.2002.00335.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B12">
+				<label>12</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wagner</surname><given-names>HH</given-names></name>, <name name-style="western"><surname>Wildi</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Ewald</surname><given-names>KC</given-names></name> (<year>2000</year>) <article-title>Additive partitioning of plant species diversity in an agricultural mosaic landscape</article-title>. <source>Landscape Ecol</source> <volume>15</volume>: <fpage>219</fpage>-<lpage>227</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1023/A:1008114117913" xlink:type="simple">10.1023/A:1008114117913</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B13">
+				<label>13</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Crist</surname><given-names>TO</given-names></name>, <name name-style="western"><surname>Veech</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Gering</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Summerville</surname><given-names>KS</given-names></name> (<year>2003</year>) <article-title>Partitioning species diversity across landscapes and regions: A hierarchical analysis of alpha, beta, and gamma diversity</article-title>. <source>Am Nat</source> <volume>162</volume>: <fpage>734</fpage>-<lpage>743</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1086/378901" xlink:type="simple">10.1086/378901</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/14737711" xlink:type="simple">14737711</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B14">
+				<label>14</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Pech-Canché</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Moreno</surname><given-names>CE</given-names></name>, <name name-style="western"><surname>Halffter</surname><given-names>G</given-names></name> (<year>2011</year>) <article-title>Additive Partitioning of Phyllostomid Bat Richness at Fine and Coarse Spatial and Temporal Scales in Yucatan, Mexico</article-title>. <source>EcoScience</source> <volume>18</volume>: <fpage>42</fpage>-<lpage>51</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2980/18-1-3392" xlink:type="simple">10.2980/18-1-3392</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B15">
+				<label>15</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Fleishman</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Betrus</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Blair</surname><given-names>RB</given-names></name> (<year>2003</year>) <article-title>Effects of spatial scale and taxonomic group on partitioning of butterfly and bird diversity in the Great Basin, USA</article-title>. <source>Landscape Ecol</source> <volume>18</volume>: <fpage>675</fpage>-<lpage>685</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1023/B:LAND.0000004183.82140.48" xlink:type="simple">10.1023/B:LAND.0000004183.82140.48</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B16">
+				<label>16</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Summerville</surname><given-names>KS</given-names></name>, <name name-style="western"><surname>Crist</surname><given-names>TO</given-names></name> (<year>2005</year>) <article-title>Temporal patterns of species accumulation in a survey of Lepidoptera in a beech-maple forest</article-title>. <source>Biodivers Conserv</source> <volume>14</volume>: <fpage>3393</fpage>-<lpage>3406</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10531-004-0546-x" xlink:type="simple">10.1007/s10531-004-0546-x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B17">
+				<label>17</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Clough</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Holzschuh</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Gabriel</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Purtauf</surname><given-names>T</given-names></name>, <name name-style="western"><surname>Kleijn</surname><given-names>D</given-names></name> <etal>et al.</etal> (<year>2007</year>) <article-title>Alpha and beta diversity of arthropods and plants in organically and conventionally managed wheat fields</article-title>. <source>J Appl Ecol</source> <volume>44</volume>: <fpage>804</fpage>-<lpage>813</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-2664.2007.01294.x" xlink:type="simple">10.1111/j.1365-2664.2007.01294.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B18">
+				<label>18</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Moreno</surname><given-names>CE</given-names></name>, <name name-style="western"><surname>Barragán-Torres</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Ortega-Martínez</surname><given-names>IJ</given-names></name>, <name name-style="western"><surname>Verdú</surname><given-names>JR</given-names></name>, <name name-style="western"><surname>Sánchez-Rojas</surname><given-names>G</given-names></name> <etal>et al.</etal> (<year>2009</year>) <article-title>Influencia de la ganadería en la contribución de la riqueza de especies de escarabajos coprófagos en la Reserva de la Biósfera Barranca de Meztitlán</article-title>. <source>Entomol Mexicana</source> <volume>9</volume>: <fpage>209</fpage>-<lpage>214</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B19">
+				<label>19</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chandy</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Gibson</surname><given-names>DJ</given-names></name>, <name name-style="western"><surname>Robertson</surname><given-names>PA</given-names></name> (<year>2006</year>) <article-title>Additive partitioning of diversity across hierarchical spatial scales in a forested landscape</article-title>. <source>J Appl Ecol</source> <volume>43</volume>: <fpage>792</fpage>-<lpage>801</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1365-2664.2006.01178.x" xlink:type="simple">10.1111/j.1365-2664.2006.01178.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B20">
+				<label>20</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Josefson</surname><given-names>AB</given-names></name> (<year>2009</year>) <article-title>Additive partitioning of estuarine benthic macroinvertebrate diversity across multiple spatial scales</article-title>. <source>Mar Ecol Prog Ser</source> <volume>396</volume>: <fpage>283</fpage>-<lpage>292</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3354/meps08375" xlink:type="simple">10.3354/meps08375</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B21">
+				<label>21</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Belmaker</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Shashar</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Ziv</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Connolly</surname><given-names>SR</given-names></name> (<year>2008</year>) <article-title>Regional variation in the hierarchical partitioning of diversity in coral-dwelling fishes</article-title>. <source>Ecology</source> <volume>89</volume>: <fpage>2829</fpage>-<lpage>2840</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1890/07-1464.1" xlink:type="simple">10.1890/07-1464.1</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/18959320" xlink:type="simple">18959320</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B22">
+				<label>22</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Zvuloni</surname><given-names>A</given-names></name>, <name name-style="western"><surname>van Woesik</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Loya</surname><given-names>Y</given-names></name> (<year>2010</year>) <article-title>Diversity partitioning of stony corals across multiple spatial scales around Zanzibar Island, Tanzania</article-title>. <source>PLOS ONE</source> <volume>5</volume>: <fpage>e9941</fpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0009941" xlink:type="simple">10.1371/journal.pone.0009941</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20360956" xlink:type="simple">20360956</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B23">
+				<label>23</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rodríguez-Zaragoza</surname><given-names>FA</given-names></name>, <name name-style="western"><surname>Arias-González</surname><given-names>JE</given-names></name> (<year>2008</year>) <article-title>Additive diversity partitioning of reef fish across multiple spatial scales</article-title>. <source>Caribb J Sci</source> <volume>44</volume>: <fpage>90</fpage>-<lpage>101</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B24">
+				<label>24</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rodríguez-Zaragoza</surname><given-names>FA</given-names></name>, <name name-style="western"><surname>Cupul-Magaña</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Galván-Villa</surname><given-names>CM</given-names></name>, <name name-style="western"><surname>Ríos-Jara</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Ortiz</surname><given-names>M</given-names></name> <etal>et al.</etal> (<year>2011</year>) <article-title>Additive partitioning of reef fish diversity variation: a promising marine biodiversity management tool</article-title>. <source>Biodivers Conserv</source> <volume>20</volume>: <fpage>1655</fpage>-<lpage>1675</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s10531-011-0053-9" xlink:type="simple">10.1007/s10531-011-0053-9</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B25">
+				<label>25</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Spalding</surname><given-names>MD</given-names></name>, <name name-style="western"><surname>Fox</surname><given-names>HE</given-names></name>, <name name-style="western"><surname>Allen</surname><given-names>GR</given-names></name>, <name name-style="western"><surname>Davidson</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Ferdaña</surname><given-names>ZA</given-names></name> <etal>et al.</etal> (<year>2007</year>) <article-title>Marine Ecoregions of the World: A Bioregionalization of Coastal and Shelf Areas</article-title>. <source>BioScience</source> <volume>57</volume>: <fpage>573</fpage>-<lpage>583</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B26">
+				<label>26</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jackson</surname><given-names>JBC</given-names></name>, <name name-style="western"><surname>Kirby</surname><given-names>MX</given-names></name>, <name name-style="western"><surname>Berger</surname><given-names>WH</given-names></name>, <name name-style="western"><surname>Bjorndal</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>Botsford</surname><given-names>LW</given-names></name> <etal>et al.</etal> (<year>2001</year>) <article-title>Historical Overfishing and the Recent Collapse of Coastal Ecosystems</article-title>. <source>Science</source> <volume>293</volume>: <fpage>629</fpage>-<lpage>638</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1059199" xlink:type="simple">10.1126/science.1059199</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11474098" xlink:type="simple">11474098</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B27">
+				<label>27</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hawkins</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Roberts</surname><given-names>CM</given-names></name> (<year>2004</year>) <article-title>Effects of artisanal fishing on Caribbean coral reefs</article-title>. <source>Conserv Biol</source> <volume>18</volume>: <fpage>215</fpage>-<lpage>226</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1523-1739.2004.00328.x" xlink:type="simple">10.1111/j.1523-1739.2004.00328.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B28">
+				<label>28</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Vanderklift</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Babcock</surname><given-names>RC</given-names></name>, <name name-style="western"><surname>Cook</surname><given-names>K</given-names></name> (<year>2013</year>) <article-title>The effects of protection from fishing on species richness: distinguishing between alternative explanations</article-title>. <source>Oecologia</source> <volume>171</volume>: <fpage>309</fpage>-<lpage>315</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1007/s00442-012-2408-7" xlink:type="simple">10.1007/s00442-012-2408-7</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22776907" xlink:type="simple">22776907</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B29">
+				<label>29</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Mora</surname><given-names>C</given-names></name> (<year>2008</year>) <article-title>A clear human footprint in the coral reefs of the Caribbean</article-title>. <source>Proc R Soc Lond B Biol Sci</source> <volume>275</volume>: <fpage>767</fpage>-<lpage>773</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1098/rspb.2007.1472" xlink:type="simple">10.1098/rspb.2007.1472</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B30">
+				<label>30</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Sadovy</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Eklund</surname><given-names>A</given-names></name> (<year>1999</year>) <article-title>Synopsis of biological data on the Nassau grouper <italic>Epinephelus</italic> <italic>striatus</italic> (Bloch 1792) and the jewfish <italic>Epinephelus</italic> <italic>itajara</italic> (Lichenstein 1822)</article-title>. <source>NOAA-NMFS Technical Paper 146</source>. <publisher-loc>Maryland</publisher-loc>: <publisher-name>Silver Spring</publisher-name>. <fpage>65</fpage> p.</mixed-citation>
+			</ref>
+			<ref id="B31">
+				<label>31</label>
+				<mixed-citation publication-type="web" xlink:type="simple"><collab xlink:type="simple">FAO Statistics and Information Service of the Fisheries and Aquaculture Department</collab> (<year>2012</year>). <article-title>Capture production 1950-2010. Food and Agriculture Organization of the United Nations</article-title>. <comment>Available: </comment><ext-link ext-link-type="uri" xlink:href="http://www.fao.org/fishery/statistics/en" xlink:type="simple"><underline>http://www.fao.org/fishery/statistics/en</underline></ext-link>. <comment>Accessed</comment> January 2012..</mixed-citation>
+			</ref>
+			<ref id="B32">
+				<label>32</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Sale</surname><given-names>PF</given-names></name>, <name name-style="western"><surname>Kritzer</surname><given-names>JP</given-names></name> (<year>2008</year>) <article-title>Connectivity: What it is, how it is measured, and why it is important for 12 management of reef fishes</article-title>. In: <person-group person-group-type="editor"><name name-style="western"><surname>Grober-Dunsmore</surname><given-names>R</given-names></name><name name-style="western"><surname>Keller</surname><given-names>BD</given-names></name></person-group>. <source>Caribbean connectivity: Implications for marine protected area management</source>. <source>Proceedings of a Special Symposium, 9- 11 November 2006, 59th Annual Meeting of the Gulf and Caribbean Fisheries Institute, Belize City, Belize</source>. <source>Marine Sanctuaries Conservation Series ONMS-08-07</source>. <publisher-loc>Silver Spring</publisher-loc>: <publisher-name>U.S. Department of Commerce, National Oceanic and Atmospheric Administration, Office of National Marine Sanctuaries</publisher-name>. pp. <fpage>12</fpage>-<lpage>26</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B33">
+				<label>33</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cowen</surname><given-names>RK</given-names></name>, <name name-style="western"><surname>Paris</surname><given-names>CB</given-names></name>, <name name-style="western"><surname>Srinivasan</surname><given-names>A</given-names></name> (<year>2006</year>) <article-title>Scaling of connectivity in marine populations</article-title>. <source>Science</source> <volume>311</volume>: <fpage>522</fpage>-<lpage>527</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1122039" xlink:type="simple">10.1126/science.1122039</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16357224" xlink:type="simple">16357224</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B34">
+				<label>34</label>
+				<mixed-citation publication-type="web" xlink:type="simple"><collab xlink:type="simple">REEF</collab> (<year>2008</year>) <article-title>Reef Environmental Education Foundation</article-title>. <comment>Available: </comment><ext-link ext-link-type="uri" xlink:href="http://www.reef.org" xlink:type="simple"><underline>http://www.reef.org</underline></ext-link>. <comment>Accessed: between May and August 2010</comment></mixed-citation>
+			</ref>
+			<ref id="B35">
+				<label>35</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Schmitt</surname><given-names>EF</given-names></name>, <name name-style="western"><surname>Sluka</surname><given-names>RD</given-names></name>, <name name-style="western"><surname>Sullivan</surname><given-names>KM</given-names></name> (<year>2002</year>) <article-title>Evaluating the use of roving diver and transect surveys to assess the coral reef fish assemblage off southeastern Hispaniola</article-title>. <source>Coral Reefs</source> <volume>21</volume>: <fpage>216</fpage>-<lpage>223</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B36">
+				<label>36</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Miloslavich</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Díaz</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Klein</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Alvarado</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Díaz</surname><given-names>C</given-names></name> <etal>et al.</etal> (<year>2010</year>) <article-title>Marine Biodiversity in the Caribbean: Regional Estimates and Distribution Patterns</article-title>. <source>PLOS ONE</source> <volume>5</volume>: <fpage>e11916</fpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0011916" xlink:type="simple">10.1371/journal.pone.0011916</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20689856" xlink:type="simple">20689856</ext-link>. </mixed-citation>
+			</ref>
+			<ref id="B37">
+				<label>37</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Stallings</surname><given-names>CD</given-names></name> (<year>2009</year>) <article-title>Fishery-Independent Data Reveal Negative Effect of Human Population Density on Caribbean Predatory Fish Communities</article-title>. <source>PLOS ONE</source> <volume>4</volume>: <fpage>e5333</fpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0005333" xlink:type="simple">10.1371/journal.pone.0005333</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19421312" xlink:type="simple">19421312</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B38">
+				<label>38</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Holt</surname><given-names>BG</given-names></name>, <name name-style="western"><surname>Côté</surname><given-names>IM</given-names></name>, <name name-style="western"><surname>Emerson</surname><given-names>BC</given-names></name> (<year>2010</year>) <article-title>Signatures of speciation? Distribution and diversity of <italic>Hypoplectrus</italic> (Teleostei: Serranidae) colour morphotypes</article-title>. <source>Glob Ecol Biogeogr</source> <volume>19</volume>: <fpage>432</fpage>-<lpage>441</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B39">
+				<label>39</label>
+				<mixed-citation publication-type="software-URL" xlink:type="simple"><name name-style="western"><surname>Colwell</surname><given-names>RK</given-names></name> (<year>2005</year>) <article-title>EstimateS: Statistical Estimation of Species Richness and Shared Species Samples</article-title>. version 7.5. <comment>Available: </comment><ext-link ext-link-type="uri" xlink:href="http://purl.oclc.org/estimates" xlink:type="simple"><underline>http://purl.oclc.org/estimates</underline></ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B40">
+				<label>40</label>
+				<mixed-citation publication-type="web" xlink:type="simple"><name name-style="western"><surname>StatSoft Inc</surname></name> (<year>2005</year>). <source>TATISTICA (data analysis software system), version 7.1</source>. <comment>Available: </comment><ext-link ext-link-type="uri" xlink:href="http://www.statsoft.com" xlink:type="simple">www.statsoft.com</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B41">
+				<label>41</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jiménez-Valverde</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Hortal</surname><given-names>J</given-names></name> (<year>2003</year>) <article-title>Las curvas de acumulación de especies y las necesidades de evaluar la calidad de los inventarios biológicos</article-title>. <source>Rev Iber Aracnol</source> <volume>8</volume>: <fpage>151</fpage>-<lpage>161</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B42">
+				<label>42</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Carpenter</surname><given-names>KE</given-names></name> (<year>2002a</year>) <article-title>The living marine resources of the Western Central Atlantic. Volume 1: Introduction, mollusks, crustaceans, hagfishes, sharks, batoid fishes, and chimaeras</article-title>. <source>Rome: FAO Species Identification Guide for Fishery Purposes and American Society of Ichthyologists and Herpetologists Special Publication</source> No. <volume>5</volume>. <fpage>600</fpage> p.</mixed-citation>
+			</ref>
+			<ref id="B43">
+				<label>43</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Carpenter</surname><given-names>KE</given-names></name> (<year>2002b</year>) <article-title>The living marine resources of the Western Central Atlantic. Volume 2: Bony fishes part 1 (Acipenseridae to Grammatidae)</article-title>. <source>Rome: FAO Species Identification Guide for Fishery Purposes and American Society of Ichthyologists and Herpetologists Special Publication</source> No. <volume>5</volume>. pp. <fpage>601</fpage>-<lpage>1374</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B44">
+				<label>44</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Carpenter</surname><given-names>KE</given-names></name> (<year>2002c</year>) <article-title>The living marine resources of the Western Central Atlantic. Volume 3: Bony fishes part 2 (Opistognathidae to Molidae), sea turtles and marine mammals</article-title>. <source>Rome: FAO Species Identification Guide for Fishery Purposes and American Society of Ichthyologists and Herpetologists Special Publication</source> No. <volume>5</volume>. pp. <fpage>1375</fpage>-<lpage>2127</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B45">
+				<label>45</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Smith</surname><given-names>CL</given-names></name> (<year>1997</year>) <source>National Audubon Society field guide to tropical marine fishes of the Caribbean, the Gulf of Mexico, Florida, the Bahamas, and Bermuda</source>. <publisher-loc>New York</publisher-loc>: <publisher-name>Alfred A. Knopf Inc.</publisher-name>. p. <fpage>720</fpage>.</mixed-citation>
+			</ref>
+			<ref id="B46">
+				<label>46</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Böhlke</surname><given-names>JE</given-names></name>, <name name-style="western"><surname>Chaplin</surname><given-names>CCG</given-names></name> (<year>1993</year>) <source>Fishes of the Bahamas and adjacent tropical waters</source>. <edition>2nd</edition> edn. <publisher-loc>Austin</publisher-loc>: <publisher-name>University of Texas Press</publisher-name>. 771 pp. </mixed-citation>
+			</ref>
+			<ref id="B47">
+				<label>47</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Clifton</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>Clifton</surname><given-names>LM</given-names></name> (<year>1998</year>) <article-title>A survey of fishes from various coral reef habitats within the Cayos Cochinos Marine Reserve, Honduras</article-title>. <source>Rev Biol Trop</source> <volume>46</volume>: <fpage>109</fpage>-<lpage>124</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B48">
+				<label>48</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Cervigón</surname><given-names>F</given-names></name> (<year>1991</year>) <source>Los peces marinos de Venezuela. Volumen I</source>. <publisher-loc>Caracas</publisher-loc>: <publisher-name>Fundación Científica Los</publisher-name> <comment>Roques. 425 p</comment></mixed-citation>
+			</ref>
+			<ref id="B49">
+				<label>49</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Cervigón</surname><given-names>F</given-names></name> (<year>1993</year>) <source>Los peces marinos de Venezuela. Volumen II</source>. <publisher-loc>Caracas</publisher-loc>: <publisher-name>Fundación Científica Los</publisher-name> <comment>Roques. 497 p</comment> </mixed-citation>
+			</ref>
+			<ref id="B50">
+				<label>50</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Cervigón</surname><given-names>F</given-names></name> (<year>1994</year>) <source>Los peces marinos de Venezuela. Volumen III</source>. <publisher-loc>Caracas</publisher-loc>: <publisher-name>Fundación Científica Los</publisher-name> <comment>Roques. 295 p</comment> </mixed-citation>
+			</ref>
+			<ref id="B51">
+				<label>51</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Reyes-Nivia</surname><given-names>MC</given-names></name>, <name name-style="western"><surname>Rodríguez-Ramírez</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Garzón-Ferreira</surname><given-names>J</given-names></name> (<year>2004</year>) <article-title>Reef fishes associated to coral reefs in five Colombian Caribbean areas: species list and new records</article-title>. <source>Bol Invest Mar Cost</source> <volume>33</volume>: <fpage>101</fpage>-<lpage>115</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B52">
+				<label>52</label>
+				<mixed-citation publication-type="web" xlink:type="simple"><name name-style="western"><surname>Vanden Berghe</surname><given-names>E</given-names></name> (<year>2007</year>) <article-title>The Ocean Biogeographic Information System</article-title>. <comment>Available: </comment><ext-link ext-link-type="uri" xlink:href="http://www.iobis.org" xlink:type="simple"><underline>http://www.iobis.org</underline></ext-link>. <comment>Accessed: between May and August 2011</comment> </mixed-citation>
+			</ref>
+			<ref id="B53">
+				<label>53</label>
+				<mixed-citation publication-type="web" xlink:type="simple"><name name-style="western"><surname>Froese</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Pauly</surname><given-names>D</given-names></name> (<year>2011</year>) <article-title>FishBase</article-title>. <comment>Available: </comment><ext-link ext-link-type="uri" xlink:href="http://www.fishbase.org" xlink:type="simple"><underline>http://www.fishbase.org</underline></ext-link>. <comment>Accessed: between May and August 2011</comment></mixed-citation>
+			</ref>
+			<ref id="B54">
+				<label>54</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hammer</surname><given-names>Ø</given-names></name>, <name name-style="western"><surname>Harper</surname><given-names>DAT</given-names></name>, <name name-style="western"><surname>Ryan</surname><given-names>PD</given-names></name> (<year>2001</year>) <article-title>PAST: Paleontological Statistics Software Package for Education and Data Analysis</article-title>. <source>Palaeontol Electron</source> <volume>4</volume>: <fpage>1</fpage>-<lpage>9</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B55">
+				<label>55</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Clarke</surname><given-names>KR</given-names></name>, <name name-style="western"><surname>Gorley</surname><given-names>RN</given-names></name> (<year>2006</year>) <source>PRIMER version 6: User manual/tutorial</source>. <publisher-loc>Plymouth</publisher-loc>: <publisher-name>PRIMER-E Ltd.</publisher-name>. p. <fpage>190</fpage>.</mixed-citation>
+			</ref>
+			<ref id="B56">
+				<label>56</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Anderson</surname><given-names>MJ</given-names></name> (<year>2001</year>) <article-title>A new method for non-parametric multivariate analysis of variance</article-title>. <source>Austral Ecol</source> <volume>26</volume>: <fpage>32</fpage>-<lpage>46</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1442-9993.2001.01070.pp.x" xlink:type="simple">10.1111/j.1442-9993.2001.01070.pp.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B57">
+				<label>57</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Anderson</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Crist</surname><given-names>TO</given-names></name>, <name name-style="western"><surname>Chase</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Vellend</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Inouye</surname><given-names>BD</given-names></name> <etal>et al.</etal> (<year>2011</year>) <article-title>Navigating the multiple meanings of β diversity: a roadmap for the practicing ecologist</article-title>. <source>Ecol Lett</source> <volume>14</volume>: <fpage>19</fpage>-<lpage>28</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1461-0248.2010.01552.x" xlink:type="simple">10.1111/j.1461-0248.2010.01552.x</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21070562" xlink:type="simple">21070562</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B58">
+				<label>58</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Anderson</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>ter Braak</surname><given-names>CJF</given-names></name> (<year>2003</year>) <article-title>Permutation test for multi-factorial analysis of variance</article-title>. <source>J Stat Comput Sim</source> <volume>73</volume>: <fpage>85</fpage>-<lpage>113</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1080/00949650215733" xlink:type="simple">10.1080/00949650215733</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B59">
+				<label>59</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Anderson</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Ellingsen</surname><given-names>KE</given-names></name>, <name name-style="western"><surname>McArdle</surname><given-names>BH</given-names></name> (<year>2006</year>) <article-title>Multivariate dispersion as a measure of beta diversity</article-title>. <source>Ecol Lett</source> <volume>9</volume>: <fpage>683</fpage>-<lpage>693</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1461-0248.2006.00926.x" xlink:type="simple">10.1111/j.1461-0248.2006.00926.x</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16706913" xlink:type="simple">16706913</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B60">
+				<label>60</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Russel</surname><given-names>PF</given-names></name>, <name name-style="western"><surname>Rao</surname><given-names>TR</given-names></name> (<year>1940</year>) <source>On habitat and association of species of anopheline larvae in south-eastern Madras</source>. <publisher-name>J Malaria Inst India</publisher-name> <comment>3: 154-178</comment></mixed-citation>
+			</ref>
+			<ref id="B61">
+				<label>61</label>
+				<mixed-citation publication-type="web" xlink:type="simple"><name name-style="western"><surname>Veech</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Crist</surname><given-names>TO</given-names></name> (<year>2009</year>) <article-title>PARTITION 3.0 Software for the partitioning of species diversity</article-title>. <comment>Available: </comment><ext-link ext-link-type="uri" xlink:href="http://www.users.muohio.edu/cristto/partition.html" xlink:type="simple">http://www.users.muohio.edu/cristto/partition.html</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B62">
+				<label>62</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Semmens</surname><given-names>BX</given-names></name>, <name name-style="western"><surname>Auster</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Paddack</surname><given-names>MJ</given-names></name> (<year>2010</year>) <article-title>Using Ecological Null Models to Assess the Potential for Marine Protected Area Networks to Protect Biodiversity</article-title>. <source>PLOS ONE</source> <volume>5</volume>(<issue-id>1</issue-id>): <fpage>e8895</fpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0008895" xlink:type="simple">10.1371/journal.pone.0008895</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20111711" xlink:type="simple">20111711</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B63">
+				<label>63</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Rocha</surname><given-names>LA</given-names></name> (<year>2003</year>) <article-title>Patterns of distribution and processes of speciation in Brazilian reef fishes</article-title>. <source>J Biogeogr</source> <volume>30</volume>: <fpage>1161</fpage>-<lpage>1171</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1046/j.1365-2699.2003.00900.x" xlink:type="simple">10.1046/j.1365-2699.2003.00900.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B64">
+				<label>64</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chollett</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Mumby</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Müller-Karger</surname><given-names>FE</given-names></name>, <name name-style="western"><surname>Hu</surname><given-names>C</given-names></name> (<year>2012</year>) <article-title>Physical environments of the Caribbean Sea</article-title>. <source>Limnol Oceanogr</source> <volume>57</volume>: <fpage>1233</fpage>-<lpage>1244</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.4319/lo.2012.57.4.1233" xlink:type="simple">10.4319/lo.2012.57.4.1233</ext-link>. </mixed-citation>
+			</ref>
+			<ref id="B65">
+				<label>65</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Müller-Karger</surname><given-names>FE</given-names></name>, <name name-style="western"><surname>Varela</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Thunell</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Astor</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Zhang</surname><given-names>H</given-names></name> <etal>et al.</etal> (<year>2004</year>) <article-title>Processes of coastal upwelling and carbon flux in the Cariaco basin</article-title>. <source>Deep Sea Res</source> <volume>51</volume>: <fpage>927</fpage>-<lpage>943</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.dsr2.2003.10.010" xlink:type="simple">10.1016/j.dsr2.2003.10.010</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B66">
+				<label>66</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Bellwood</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Wainwright</surname><given-names>PC</given-names></name> (<year>2002</year>) <article-title>The history and biogeography of fishes on coral reefs</article-title> In: <person-group person-group-type="editor"><name name-style="western"><surname>Sale</surname><given-names>PF</given-names></name></person-group>. <source>Coral reef fishes dynamics and diversity in a complex ecosystem</source>. <publisher-loc>New York</publisher-loc>: <publisher-name>Academic Press</publisher-name>. pp. <fpage>5</fpage>-<lpage>32</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B67">
+				<label>67</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Getty</surname><given-names>SR</given-names></name>, <name name-style="western"><surname>Asmeronm</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Quinn</surname><given-names>TM</given-names></name>, <name name-style="western"><surname>Budd</surname><given-names>AF</given-names></name> (<year>2001</year>) <article-title>Accelerated Pleistocene coral extinctions in the Caribbean Basin shown by uranium-lead (U-Pb) dating</article-title>. <source>Geology</source> <volume>29</volume>: <fpage>639</fpage>-<lpage>642</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1130/0091-7613(2001)029" xlink:type="simple">10.1130/0091-7613(2001)029</ext-link>. </mixed-citation>
+			</ref>
+			<ref id="B68">
+				<label>68</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Loreau</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Mouquet</surname><given-names>N</given-names></name> (<year>1999</year>) <article-title>Immigration and the maintenance of local species diversity</article-title>. <source>Am Nat</source> <volume>154</volume>: <fpage>427</fpage>-<lpage>440</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1086/303252" xlink:type="simple">10.1086/303252</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/10523489" xlink:type="simple">10523489</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B69">
+				<label>69</label>
+				<mixed-citation publication-type="book" xlink:type="simple"><name name-style="western"><surname>Morrison</surname><given-names>RA</given-names></name>, <name name-style="western"><surname>Sandin</surname><given-names>SA</given-names></name> (<year>2011</year>) <article-title>Biogeography and Population Connectivity of Coral Reef Fishes</article-title> In: <person-group person-group-type="editor"><name name-style="western"><surname>Grillo</surname><given-names>O</given-names></name></person-group>. <source>Changing Diversity in Changing Environment. Rijeca</source>. <source>InTech</source>: <fpage>299</fpage>-<lpage>322</lpage>.</mixed-citation>
+			</ref>
+			<ref id="B70">
+				<label>70</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Holland</surname><given-names>S</given-names></name> (<year>2010</year>) <article-title>Additive diversity partitioning in Paleobiology: Revisiting Sepkoski’s question</article-title>. <source>Palaeontology</source> <volume>53</volume>: <fpage>1237</fpage>-<lpage>1254</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1475-4983.2010.01017.x" xlink:type="simple">10.1111/j.1475-4983.2010.01017.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B71">
+				<label>71</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Côté</surname><given-names>IM</given-names></name>, <name name-style="western"><surname>Mosquera</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Reynolds</surname><given-names>JD</given-names></name> (<year>2001</year>) <article-title>Effects of marine reserve characteristics on the protection of fish populations: a meta-analysis</article-title>. <source>J Fish Biol</source> <volume>59</volume>: <fpage>178</fpage>-<lpage>189</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1095-8649.2001.tb01385.x" xlink:type="simple">10.1111/j.1095-8649.2001.tb01385.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B72">
+				<label>72</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Núñez-Lara</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Arias-González</surname><given-names>JE</given-names></name> (<year>1998</year>) <article-title>The relationship between reef fish community structure and environmental variables in the southern Mexican Caribbean</article-title>. <source>J Fish Biol</source> <volume>53</volume>: <fpage>209</fpage>-<lpage>221</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1095-8649.1998.tb01028.x" xlink:type="simple">10.1111/j.1095-8649.1998.tb01028.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B73">
+				<label>73</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Jones</surname><given-names>GP</given-names></name>, <name name-style="western"><surname>McCormick</surname><given-names>MI</given-names></name>, <name name-style="western"><surname>Srinivasan</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Eagle</surname><given-names>JV</given-names></name> (<year>2004</year>) <article-title>Coral decline threatens biodiversity in marine reserves</article-title>. <source>Proc Natl Acad Sci U_S_A</source> <volume>101</volume>: <fpage>8251</fpage>-<lpage>8253</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1073/pnas.0401277101" xlink:type="simple">10.1073/pnas.0401277101</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15150414" xlink:type="simple">15150414</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B74">
+				<label>74</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Friedlander</surname><given-names>AM</given-names></name>, <name name-style="western"><surname>Sandin</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>DeMartini</surname><given-names>EE</given-names></name>, <name name-style="western"><surname>Sala</surname><given-names>E</given-names></name> (<year>2010</year>) <article-title>Spatial patterns of the structure of reef fish assemblages at a pristine atoll in the central Pacific</article-title>. <source>Mar Ecol Prog Ser</source> <volume>410</volume>: <fpage>219</fpage>-<lpage>231</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3354/meps08634" xlink:type="simple">10.3354/meps08634</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B75">
+				<label>75</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hughes</surname><given-names>TP</given-names></name>, <name name-style="western"><surname>Baird</surname><given-names>AH</given-names></name>, <name name-style="western"><surname>Bellwood</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Card</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Connolly</surname><given-names>SR</given-names></name> <etal>et al.</etal> (<year>2003</year>) <article-title>Climate change, human impacts, and the resilience of coral reefs</article-title>. <source>Science</source> <volume>301</volume>: <fpage>929</fpage>-<lpage>933</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1126/science.1085046" xlink:type="simple">10.1126/science.1085046</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12920289" xlink:type="simple">12920289</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B76">
+				<label>76</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Acosta-González</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Rodríguez-Zaragoza</surname><given-names>FA</given-names></name>, <name name-style="western"><surname>Hernández-Landa</surname><given-names>RC</given-names></name>, <name name-style="western"><surname>Arias-González</surname><given-names>JE</given-names></name> (<year>2013</year>) <article-title>Additive Diversity Partitioning of Fish in a Caribbean Coral Reef Undergoing Shift Transition</article-title>. <source>PLOS ONE</source> <volume>8</volume>(<issue-id>6</issue-id>): <fpage>e65665</fpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0065665" xlink:type="simple">10.1371/journal.pone.0065665</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/23776521" xlink:type="simple">23776521</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B77">
+				<label>77</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Syms</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Jones</surname><given-names>GP</given-names></name> (<year>2000</year>) <article-title>Disturbance, habitat structure, and the dynamics of a coral-reef fish community</article-title>. <source>Ecology</source> <volume>81</volume>: <fpage>2714</fpage>-<lpage>2729</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://tinyurl.com/mfzrupr" xlink:type="simple">10.1890/0012-9658(2000)081[2714:DHSATD]2.0.CO;2</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B78">
+				<label>78</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Debrot</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Choat</surname><given-names>JH</given-names></name>, <name name-style="western"><surname>Posada</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Robertson</surname><given-names>DR</given-names></name> (<year>2007</year>) <article-title>High densities of the large bodied parrotfishes (Scaridae) at two Venezuelan Offshore Reefs: Comparison Among Four localities in the Caribbean</article-title>. <source>Proceedings of the 60th Gulf &amp; Caribb Fish Inst. Punta Cana, Dominican Republic</source>. pp. <comment>pp. 335-337</comment></mixed-citation>
+			</ref>
+			<ref id="B79">
+				<label>79</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Cervigón</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Cipriani</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Fischer</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Garibaldi</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Hendrickx</surname><given-names>M</given-names></name> <etal>et al.</etal> (<year>1992</year>) <article-title>Fichas FAO de identificación de especies para los fines de pesca. Guía de campo de las especies comerciales marinas y de aguas salobres de la costa septentrional de Sur América</article-title>. <source>Rome Organ Naciones Unidas Agricultura La Aliment</source>: <fpage>513</fpage>. </mixed-citation>
+			</ref>
+			<ref id="B80">
+				<label>80</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Agardy</surname><given-names>T</given-names></name> (<year>2000</year>) <article-title>Effects of fisheries on marine ecosystems: a conservationist’s perspective</article-title>. <source>ICES J Mar Sci</source> <volume>57</volume>: <fpage>761</fpage>-<lpage>765</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1006/jmsc.2000.0721" xlink:type="simple">10.1006/jmsc.2000.0721</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B81">
+				<label>81</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Bellwood</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Hoey</surname><given-names>AS</given-names></name>, <name name-style="western"><surname>Choat</surname><given-names>JH</given-names></name> (<year>2003</year>) <article-title>Limited functional redundancy in high diversity systems: resilience and ecosystem function on coral reefs</article-title>. <source>Ecol Lett</source> <volume>6</volume>: <fpage>281</fpage>-<lpage>285</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1046/j.1461-0248.2003.00432.x" xlink:type="simple">10.1046/j.1461-0248.2003.00432.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B82">
+				<label>82</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Hooper</surname><given-names>DU</given-names></name>, <name name-style="western"><surname>Chapin</surname><given-names>FS</given-names></name>, <name name-style="western"><surname>Ewel</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Hector</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Inchausti</surname><given-names>P</given-names></name> <etal>et al.</etal> (<year>2005</year>) <article-title>Effects of Biodiversity on Ecosystem Functioning: A Consensus of Current Knowledge</article-title>. <source>Ecol Monogr</source> <volume>75</volume>: <fpage>3</fpage>-<lpage>35</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1890/04-0922" xlink:type="simple">10.1890/04-0922</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B83">
+				<label>83</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Nyström</surname><given-names>M</given-names></name> (<year>2006</year>) <article-title>Redundancy and Response Diversity of Functional Groups: Implications for the resilience of Coral reefs</article-title>. <source>Ambio</source> <volume>35</volume>: <fpage>30</fpage>-<lpage>35</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1579/0044-7447-35.1.30" xlink:type="simple">10.1579/0044-7447-35.1.30</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16615697" xlink:type="simple">16615697</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B84">
+				<label>84</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Shulman</surname><given-names>MJ</given-names></name>, <name name-style="western"><surname>Bermingham</surname><given-names>E</given-names></name> (<year>1995</year>) <article-title>Early life histories, ocean currents, and the population genetics of Caribbean reef fishes</article-title>. <source>Evolution</source> <volume>49</volume>: <fpage>897</fpage>-<lpage>910</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.2307/2410412" xlink:type="simple">10.2307/2410412</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B85">
+				<label>85</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Geertjes</surname><given-names>GJ</given-names></name>, <name name-style="western"><surname>Postema</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Kamping</surname><given-names>A</given-names></name>, <name name-style="western"><surname>van Delden</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Videler</surname><given-names>JJ</given-names></name> <etal>et al.</etal> (<year>2004</year>) <article-title>Allozymes and RAPDs detect little population substructuring in the Caribbean stoplight parrotfish <italic>Sparisoma</italic> <italic>viride</italic></article-title>. <source>Mar Ecol Prog Ser</source> <volume>279</volume>: <fpage>225</fpage>-<lpage>235</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.3354/meps279225" xlink:type="simple">10.3354/meps279225</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B86">
+				<label>86</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Chong-Seng</surname><given-names>KM</given-names></name>, <name name-style="western"><surname>Mannering</surname><given-names>TD</given-names></name>, <name name-style="western"><surname>Pratchett</surname><given-names>MS</given-names></name>, <name name-style="western"><surname>Bellwood</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Graham</surname><given-names>NAJ</given-names></name> (<year>2012</year>) <article-title>The Influence of Coral Reef Benthic Condition on Associated Fish Assemblages</article-title>. <source>PLOS ONE</source> <volume>7</volume>(<issue-id>8</issue-id>): <fpage>e42167</fpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1371/journal.pone.0042167" xlink:type="simple">10.1371/journal.pone.0042167</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/22870294" xlink:type="simple">22870294</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B87">
+				<label>87</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Ricklefs</surname><given-names>RE</given-names></name> (<year>2004</year>) <article-title>A comprehensive framework for global patterns in biodiversity</article-title>. <source>Ecol Lett</source> <volume>7</volume>: <fpage>1</fpage>-<lpage>15</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1046/j.1461-0248.2003.00554.x" xlink:type="simple">10.1046/j.1461-0248.2003.00554.x</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B88">
+				<label>88</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Wiens</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Donoghue</surname><given-names>MJ</given-names></name> (<year>2004</year>) <article-title>Historical biogeography, ecology and species richness</article-title>. <source>Trends Ecol Evol</source> <volume>19</volume>: <fpage>639</fpage>-<lpage>644</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.tree.2004.09.011" xlink:type="simple">10.1016/j.tree.2004.09.011</ext-link>. PubMed: <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/16701326" xlink:type="simple">16701326</ext-link>.</mixed-citation>
+			</ref>
+			<ref id="B89">
+				<label>89</label>
+				<mixed-citation publication-type="journal" xlink:type="simple"><name name-style="western"><surname>Sandin</surname><given-names>SA</given-names></name>, <name name-style="western"><surname>Vermei</surname><given-names>MJA</given-names></name>, <name name-style="western"><surname>Hurlbert</surname><given-names>AH</given-names></name> (<year>2008</year>) <article-title>Island biogeography of Caribbean coral reef fish</article-title>. <source>Glob Ecol Biogeogr</source> <volume>17</volume>: <fpage>770</fpage>-<lpage>777</lpage>. doi:<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1111/j.1466-8238.2008.00418.x" xlink:type="simple">10.1111/j.1466-8238.2008.00418.x</ext-link>.</mixed-citation>
+			</ref>
+		</ref-list>
+	</back>
+</article>
