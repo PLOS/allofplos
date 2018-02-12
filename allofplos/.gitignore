@@ -1,4 +1,3 @@
-*.xml
 allofplos_xml/
 *.zip
 *.log
@@ -6,6 +5,7 @@ allofplos_xml/
 .ipynb_checkpoints/*
 *.nxml
 *.txt
+!dois.txt
 *.json
 *.swp
 *.pyc

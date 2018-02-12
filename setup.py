@@ -15,12 +15,12 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='allofplos',
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.9.0',
+    version='0.10.2',
     description='Get and analyze all PLOS articles',
     long_description=long_description,
     url='https://github.com/PLOS/allofplos',
-    author='Elizabeth Seiver, Sebastian Bassi',
-    author_email='eseiver@plos.org, sbassi@plos.org',
+    author='Elizabeth Seiver, Sebastian Bassi, M Pacer',
+    author_email='eseiver@plos.org, sebastian.bassi@globant.com, mpacer@berkeley.edu',
     license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -32,33 +32,32 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='science PLOS publishing',
-    #packages=find_packages(exclude=['contrib', 'docs', 'tests']),
-    packages=['allofplos'],
+    packages=find_packages(),
     # List run-time dependencies here.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        'certifi==2017.7.27.1',
+        'certifi>=2017.7.27.1',
         'chardet>=3.0.4',
         'idna>=2.6',
         'lxml>=4.0.0',
-        'peewee==2.10.2',
-        'progressbar2>=3.34.3',
+        'peewee>=2.10.2',
         'python-utils>=2.2.0',
         'requests>=2.18.4',
         'six>=1.11.0',
-        'tqdm==4.17.1',
-        'urllib3==1.22',
-        'unidecode==0.04.21',
+        'tqdm>=4.17.1',
+        'urllib3>=1.22',
+        'unidecode>=0.04.21',
         ],
     python_requires='>=3.4',
     # If there are data files included in your packages that need to be
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
-    ##package_data={
-    ##    'sample': ['package_data.dat'],
-    ##},
+    package_data={
+        'allofplos': ['starter.db'],
+        'allofplos.starter_corpus': ['*.xml'],
+    },
 
     # Although 'package_data' is the preferred approach, in some case you may
     # need to place data files outside of your packages. See:
@@ -68,7 +67,7 @@ setup(
 
     entry_points={
         'console_scripts': [
-            'plos_corpus=allofplos.plos_corpus:main',
+            'plos_corpus=allofplos.corpus.plos_corpus:main',
         ],
     },
 )

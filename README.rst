@@ -1,3 +1,7 @@
+.. image:: https://api.travis-ci.org/PLOS/allofplos.svg?branch=master
+   :target: https://travis-ci.org/PLOS/allofplos
+   :alt: Build Status
+
 All of Plos (allofplos)
 =======================
 
@@ -29,7 +33,7 @@ Using pip:
 
 ``(allofplos)$ pip install allofplos``
 
-This should install *allofplos* and requirements. At this stage your are ready to go.
+This should install *allofplos* and requirements. At this stage you are ready to go.
 
 If you want to manually install from source (for example for development purposes), first clone the proyect repository:
 
@@ -113,4 +117,4 @@ Community guidelines
 
 If you wish to contribute to this project please open a ticket in the
 GitHub repo at https://github.com/PLOS/allofplos/issues. For support
-requests write to eseiver@plos.org
+requests write to mining@plos.org

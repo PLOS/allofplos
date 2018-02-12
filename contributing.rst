@@ -7,6 +7,8 @@ Thing to check before doing a release
 
 Making a release
 ----------------
+Remove untracked files::
+	git clean -xfdi
 
 Delete previous packages from dist directory::
 

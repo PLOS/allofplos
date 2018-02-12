@@ -1,3 +1,19 @@
+0.10.2 Fix updating uncorrected proofs to versions of record
+
+0.10.1 Fix unicode download and print statement
+
+0.10.0 Corpus changes
+- new Corpus class
+- customize location of corpus directory
+- rename seed corpus to starter corpus
+- two new Article class properties: revision date for VORs (revdate) and rich article title that includes HTML markup (rich_title)
+- initialize TravisCI testing
+- update tqdm progress bars to disable if not on command line (i.e. for cron jobs)
+
+0.9.6 This version includes automatic seed data download from pip install
+
+0.9.5 tqdm instead of progressbar2. Seed data. Generate database out of ploscorpus. Several bugfixes.
+
 0.9.0 New Article class and new test data.
 
 0.8.4 Moved transformation methods to new file and changes in the tests.

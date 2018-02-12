@@ -10,8 +10,9 @@ import datetime
 import os
 import random
 
+from tqdm import tqdm
 import sqlite3
-import progressbar
+
 from peewee import Model, CharField, ForeignKeyField, TextField, \
     DateTimeField, BooleanField, IntegerField, IntegrityError
 from playhouse.sqlite_ext import SqliteExtDatabase
@@ -19,6 +20,10 @@ from playhouse.sqlite_ext import SqliteExtDatabase
 from .transformations import filename_to_doi, convert_country
 from .article_class import Article
 
+
+# TODO: this may need to be updated to take into account the new get_corpus_dir() logic.
+# It is not clear, since this is a relative path from the package how this should work without
+# diving into the code more thoroughly 
 corpusdir = 'allofplos/allofplos_xml'
 
 journal_title_dict = {
@@ -47,12 +52,20 @@ parser.add_argument('--db', action='store', help=
 parser.add_argument('--random', action='store', type=int, help=
                     'Number of articles in a random subset. '
                     'By default will use all articles')
+parser.add_argument('--starterdb', action='store_true', help=
+                    'Make the starter database', dest='starter')
 args = parser.parse_args()
 
 # TODO: Put a warning that the DB will be deleted
 if os.path.isfile(args.db):
     os.remove(args.db)
-db = SqliteExtDatabase(args.db)
+
+if args.starter:
+    if os.path.isfile('starter.db'):
+        os.remove('starter.db')
+    db = SqliteExtDatabase('starter.db')
+else:
+    db = SqliteExtDatabase(args.db)
 
 class BaseModel(Model):
     class Meta:
@@ -101,15 +114,17 @@ db.create_tables([Journal, PLOSArticle, ArticleType,
                       CoAuthorPLOSArticle, CorrespondingAuthor,
                       JATSType, Affiliations, Country])
 
-allfiles = os.listdir(corpusdir)
+if args.starter:
+    allfiles = os.listdir('starter_corpus')
+else:
+    allfiles = os.listdir(corpusdir)
 if args.random:
     randomfiles = random.sample(allfiles, args.random)
     max_value = len(randomfiles)
 else:
     max_value = len(allfiles)
 
-bar = progressbar.ProgressBar(redirect_stdout=True, max_value=max_value)
-for i, file_ in enumerate(randomfiles if args.random else allfiles):
+for i, file_ in enumerate(tqdm(randomfiles if args.random else allfiles)):
     doi = filename_to_doi(file_)
     article = Article(doi)
     journal_name = journal_title_dict[article.journal.upper()]
@@ -155,10 +170,15 @@ for i, file_ in enumerate(randomfiles if args.random else allfiles):
                     aff = Affiliations.create(affiliations = author_aff)
                 except (sqlite3.IntegrityError, IntegrityError):
                     db.rollback()
-                    aff = Affiliations.get(Affiliations.affiliations == author_aff)
+                    aff = Affiliations.get(Affiliations.affiliations ==
+                                           author_aff)
             with db.atomic() as atomic:
                 try:
-                    country_from_aff = auths['affiliations'][0].split(',')[-1].strip()
+                    if auths['affiliations'][0] == '':
+                        country_from_aff = 'N/A'
+                    else:
+                        country_from_aff = auths['affiliations'][0].\
+                                           split(',')[-1].strip()
                 except IndexError:
                     country_from_aff = 'N/A'
                 country_from_aff = convert_country(country_from_aff)
@@ -185,5 +205,3 @@ for i, file_ in enumerate(randomfiles if args.random else allfiles):
                     corr_author = co_author,
                     article = p_art
                 )
-    bar.update(i+1)
-bar.finish()
