@@ -39,27 +39,26 @@ plos_page_dict = {'article': 'article',
 
 def _get_base_page(journal):
     """Make the base of a PLOS URL journal-specific.
-    
+
     Defaults to PLOS ONE.
 
     Use in conjunction with `get_page()` in the Article class.
     """
-    journal_map = OrderedDict([
-                               ('PLOS ONE', 'one'),
-                               ('PLOS Computational Biology', 'compbiol'),
-                               ('PLOS Neglected Tropical Diseases', 'ntds'),
-                               ('PLOS Genetics', 'genetics'),
-                               ('PLOS Pathogens', 'pathogens'),
-                               ('PLOS Biology', 'biology'),
-                               ('PLOS Medicine', 'medicine'),
-                               ('PLOS Clinical Trials', 'ctr'),
-                              ])
+    journal_map = {'PLOS ONE': 'one',
+                   'PLOS Computational Biology': 'compbiol',
+                   'PLOS Neglected Tropical Diseases': 'ntds',
+                   'PLOS Genetics': 'genetics',
+                   'PLOS Pathogens': 'pathogens',
+                   'PLOS Biology': 'biology',
+                   'PLOS Medicine': 'medicine',
+                   'PLOS Clinical Trials': 'ctr',
+                   }
     try:
-        url = BASE_URL_LANDING_PAGE.format(journal_map[journal]) 
+        url = BASE_URL_LANDING_PAGE.format(journal_map[journal])
     except KeyError:
         print('URL error for {}'.format(journal))
         url = BASE_URL_LANDING_PAGE.format('one')
-        
+
     return url
 
 
@@ -80,13 +79,13 @@ def doi_to_journal(doi):
                                ('pctr', 'PLOS Clinical Trials'),
                                ('annotation', 'PLOS ONE')
                               ])
-                    
+
     return next(value for key, value in journal_map.items() if key in doi)
 
 
 def filename_to_url(filename):
     """
-    Transform filename a downloadable URL where its XML resides
+    Transform filename into a downloadable URL where its XML resides
     Includes transform for the 'annotation' DOIs
     Example:
     filename_to_url('allofplos_xml/journal.pone.1000001.xml') = \
