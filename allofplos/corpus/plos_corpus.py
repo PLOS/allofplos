@@ -200,7 +200,7 @@ def copytree(source, destination, symlinks=False, ignore=None):
             shutil.copy2(s, d)
 
 
-def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
+def repo_download(dois, tempdir, ignore_existing=True):
     """
     Downloads a list of articles by DOI from PLOS's journal pages to a temporary directory
     Use in conjunction with get_dois_needed_list
@@ -226,8 +226,7 @@ def repo_download(dois, tempdir, ignore_existing=True, plos_network=False):
         if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
             with open(article_path, 'w', encoding='utf8') as f:
                 f.write(et.tostring(articleXML, method='xml', encoding='unicode'))
-            if not plos_network:
-                time.sleep(1)
+                time.sleep(.5)
 
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
@@ -481,7 +480,7 @@ def check_for_vor_updates(uncorrected_list=None):
 
 
 def download_vor_updates(directory=None, tempdir=newarticledir,
-                         vor_updates_available=None, plos_network=False):
+                         vor_updates_available=None):
     """
     For existing uncorrected proofs list, check whether a vor is available to download
     Used in conjunction w/check_for_vor_updates
@@ -507,12 +506,11 @@ def download_vor_updates(directory=None, tempdir=newarticledir,
 
     # direct remote XML check; add their totals to totals above
     if new_uncorrected_proofs_list:
-        proofs_download_list = remote_proofs_direct_check(article_list=new_uncorrected_proofs_list,
-                                                          plos_network=plos_network)
+        proofs_download_list = remote_proofs_direct_check(article_list=new_uncorrected_proofs_list)
         vor_updated_article_list.extend(proofs_download_list)
         new_uncorrected_proofs_list = list(set(new_uncorrected_proofs_list) - set(vor_updated_article_list))
         too_old_proofs = [proof for proof in new_uncorrected_proofs_list if compare_article_pubdate(proof)]
-        if too_old_proofs and plos_network:
+        if too_old_proofs:
             print("Proofs older than 3 weeks: {}".format(too_old_proofs))
 
     # if any VOR articles have been downloaded, update static uncorrected proofs list
@@ -529,7 +527,7 @@ def download_vor_updates(directory=None, tempdir=newarticledir,
     return vor_updated_article_list
 
 
-def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_network=False):
+def remote_proofs_direct_check(tempdir=newarticledir, article_list=None):
     """
     Takes list of of DOIs of uncorrected proofs and compared to raw XML of the article online
     If article status is now 'vor-update-to-uncorrected-proof', download new copy
@@ -560,8 +558,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None, plos_ne
     return proofs_download_list
 
 
-def download_check_and_move(article_list, proof_filepath, tempdir, destination,
-                            plos_network=False):
+def download_check_and_move(article_list, proof_filepath, tempdir, destination):
     """
     For a list of new articles to get, first download them from journal pages to the temporary directory
     Next, check these articles for uncorrected proofs and article_type amendments
@@ -572,10 +569,10 @@ def download_check_and_move(article_list, proof_filepath, tempdir, destination,
     :param tempdir: Directory where articles to be downloaded to
     :param destination: Directory where new articles are to be moved to
     """
-    repo_download(article_list, tempdir, plos_network=plos_network)
+    repo_download(article_list, tempdir)
     amended_articles = check_for_amended_articles(directory=tempdir)
     download_amended_articles(amended_article_list=amended_articles)
-    download_vor_updates(plos_network=plos_network)
+    download_vor_updates()
     check_for_uncorrected_proofs(directory=tempdir)
     move_articles(tempdir, destination)
 
@@ -657,14 +654,7 @@ def main():
     standalone script
     :return: None
     """
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--plos', action='store_true', help=
-                        'Used when inside the plos network')
-    args = parser.parse_args()
-    plos_network = False
     directory = get_corpus_dir()
-    if args.plos:
-        plos_network = True
 
     # Step 0: Initialize first copy of repository
     try:
@@ -696,9 +686,10 @@ def main():
     download_check_and_move(dois_needed_list,
                             uncorrected_proofs_text_list,
                             tempdir=newarticledir,
-                            destination=get_corpus_dir(),
-                            plos_network=plos_network)
+                            destination=get_corpus_dir()
+                            )
     return None
+
 
 if __name__ == "__main__":
     main()

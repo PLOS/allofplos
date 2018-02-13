@@ -20,7 +20,7 @@ class Article():
     """The primary object of a PLOS article, initialized by a valid PLOS DOI.
 
     """
-    def __init__(self, doi, directory=None, plos_network=False):
+    def __init__(self, doi, directory=None):
         """Creation of an article object.
 
         Usage:
@@ -36,8 +36,6 @@ class Article():
         :type doi: str
         :param directory: where the local article XML file is located, defaults to None
         :type directory: str, optional
-        :param plos_network: whether on the local PLOS network, defaults to False
-        :type plos_network: bool, optional
         """
         self.doi = doi
         if directory:
@@ -45,7 +43,6 @@ class Article():
         else:
             self.directory = get_corpus_dir()
         self.reset_memoized_attrs()
-        self.plos_network = plos_network
         self._editor = None
 
     def reset_memoized_attrs(self):

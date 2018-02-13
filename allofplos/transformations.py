@@ -124,7 +124,7 @@ def filename_to_doi(filename):
     return doi
 
 
-def url_to_path(url, directory=None, plos_network=False):
+def url_to_path(url, directory=None):
     """
     For a given PLOS URL to an XML file, return the relative path to the local XML file
     Example:
@@ -164,7 +164,7 @@ def url_to_doi(url):
     return url[url.index(PREFIX):].rstrip(URL_SUFFIX).rstrip(INT_URL_SUFFIX)
 
 
-def doi_to_url(doi, plos_network=False):
+def doi_to_url(doi):
     """
     For a given PLOS DOI, return the PLOS URL to that article's XML file
     Example:
