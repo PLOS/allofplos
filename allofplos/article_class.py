@@ -871,9 +871,7 @@ class Article():
         taxonomy_item = []
         for subj in e_list[0].getchildren():
             if subj.values()[0] == 'Discipline-v3':
-                subj_list = []
-                for e in subj.iter('subject'):
-                    subj_list.append(e.text)
+                subj_list = tuple(e.text for e in subj.iter('subject'))
                 taxonomy_item.append(subj_list)
         return taxonomy_item
 
