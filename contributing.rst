@@ -1,3 +1,19 @@
+How to install for developing
+-----------------------------
+
+Clone the repository with::
+
+    git clone https://github.com/PLOS/allofplos.git
+
+Change to the directory where the code is downloaded::
+
+    cd allofplos
+
+Provided that you are in the allofplos directory, install it with::
+
+    pip install -U -e .
+
+
 Thing to check before doing a release
 -------------------------------------
 
