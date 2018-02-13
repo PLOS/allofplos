@@ -1256,7 +1256,12 @@ class Article():
 
     @classmethod
     def from_filename(cls, filename):
-        """Initiate an article object using a local XML file. Set `self.directory` if possible.
+        """Initiate an article object using a local XML file.
+
+        Will set `self.directory` if the full file path is available. If not, it will
+        default to `get_corpus_dir()` via `Article().__init__`. This method is most useful
+        for instantiating an Article object when the file is not in the default corpus
+        directory, or when changing directories.
         """
         if os.path.isfile(filename):
             directory = os.path.dirname(filename)
