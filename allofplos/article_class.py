@@ -860,7 +860,8 @@ class Article():
 
     @property
     def taxonomy(self):
-        """Taxonomy information
+        """Taxonomy information. For a complete list of subject areas see
+        https://github.com/PLOS/plos-thesaurus
         """
         tag_path_elements = ('/',
                              'article',
@@ -868,12 +869,22 @@ class Article():
                              'article-meta',
                              'article-categories')
         e_list = self.get_element_xpath(tag_path_elements=tag_path_elements)
-        taxonomy_item = []
+        subjs_dict = {}
         for subj in e_list[0].getchildren():
-            if subj.values()[0] == 'Discipline-v3':
-                subj_list = tuple(e.text for e in subj.iter('subject'))
-                taxonomy_item.append(subj_list)
-        return taxonomy_item
+            try:
+                sbjindex = subj.values()[0].strip()
+                if sbjindex in subjs_dict:
+                    subjs_dict[sbjindex].append(tuple(e.text for e in subj.iter('subject')))
+                else:
+                    subjs_dict[sbjindex] = [tuple(e.text for e in subj.iter('subject'))]
+            except IndexError:
+                if 'No subject' in subjs_dict:
+                    subjs_dict['No subject'].append(tuple(e.text for e in
+                                                 subj.iter('subject')))
+                else:
+                    subjs_dict['No subject'] = [tuple(e.text for e in
+                                                 subj.iter('subject'))]
+        return subjs_dict
 
     @property
     def filename(self):
