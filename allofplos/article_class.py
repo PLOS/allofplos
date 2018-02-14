@@ -68,7 +68,7 @@ class Article():
 
     @property
     def text_viewer(self):
-        """Command line application for viewing text to be used with 
+        """Command line application for viewing text to be used with
         open_in_viewer.
 
         Defaults to "open", which opens in whatever the default application is
@@ -846,6 +846,34 @@ class Article():
         """The direct url of an article's XML file.
         """
         return self.get_page(page_type='assetXMLFile')
+
+    @property
+    def taxonomy(self):
+        """Taxonomy information. For a complete list of subject areas see
+        https://github.com/PLOS/plos-thesaurus
+        """
+        tag_path_elements = ('/',
+                             'article',
+                             'front',
+                             'article-meta',
+                             'article-categories')
+        e_list = self.get_element_xpath(tag_path_elements=tag_path_elements)
+        subjs_dict = {}
+        for subj in e_list[0].getchildren():
+            try:
+                sbjindex = subj.values()[0].strip()
+                if sbjindex in subjs_dict:
+                    subjs_dict[sbjindex].append(tuple(e.text for e in subj.iter('subject')))
+                else:
+                    subjs_dict[sbjindex] = [tuple(e.text for e in subj.iter('subject'))]
+            except IndexError:
+                if 'No subject' in subjs_dict:
+                    subjs_dict['No subject'].append(tuple(e.text for e in
+                                                 subj.iter('subject')))
+                else:
+                    subjs_dict['No subject'] = [tuple(e.text for e in
+                                                 subj.iter('subject'))]
+        return subjs_dict
 
     @property
     def filename(self):
