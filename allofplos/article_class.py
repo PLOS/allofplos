@@ -11,7 +11,7 @@ from . import get_corpus_dir
 from .transformations import (filename_to_doi, _get_base_page, LANDING_PAGE_SUFFIX,
                               URL_SUFFIX, plos_page_dict, xlink_href, cc_by_3_link,
                               cc0_link, cc_by_3_igo_link, crown_link, cc_dict,
-                              cc_by_4_link, doi_url)
+                              cc_by_4_link, doi_url, doi_to_journal)
 from .plos_regex import validate_doi
 from .article_elements import (parse_article_date, get_contrib_info,
                                match_contribs_to_dicts, parse_license)
@@ -204,26 +204,37 @@ class Article():
     def get_plos_journal(self, caps_fixed=True):
         """For an individual PLOS article, get the journal it was published in.
 
+        Relies on article XML metadata. For DOI to journal conversion, see `transformations.doi_to_journal`.
         :param caps_fixed: whether to render 'PLOS' in the journal name correctly, or as-is ('PLoS')
         :return: PLOS journal name at specified xpath location
         """
-        try:
-            journal = self.get_element_xpath(tag_path_elements=["/",
-                                                                "article",
-                                                                "front",
-                                                                "journal-meta",
-                                                                "journal-title-group",
-                                                                "journal-title"])
-            journal = journal[0].text
-        except IndexError:
-            journal_meta = self.get_element_xpath(tag_path_elements=["/",
-                                                                     "article",
-                                                                     "front",
-                                                                     "journal-meta"])
-            for journal_child in journal_meta[0]:
-                if journal_child.attrib['journal-id-type'] == 'nlm-ta':
-                    journal = journal_child.text
-                    break
+        journal = ''
+        journal_path_1 = self.get_element_xpath(tag_path_elements=["/",
+                                                                   "article",
+                                                                   "front",
+                                                                   "journal-meta",
+                                                                   "journal-title-group",
+                                                                   "journal-title"])
+        if len(journal_path_1):
+            journal = journal_path_1[0].text
+        else:
+            journal_path_2 = self.get_element_xpath(tag_path_elements=["/",
+                                                                       "article",
+                                                                       "front",
+                                                                       "journal-meta",
+                                                                       "journal-title"])
+            if len(journal_path_2):
+                journal = journal_path_2[0].text
+
+            else:
+                journal_meta = self.get_element_xpath(tag_path_elements=["/",
+                                                                         "article",
+                                                                         "front",
+                                                                         "journal-meta"])
+                for journal_child in journal_meta[0]:
+                    if journal_child.attrib['journal-id-type'] == 'nlm-ta':
+                        journal = journal_child.text
+                        break
 
         if caps_fixed:
             journal = journal.split()
@@ -963,11 +974,16 @@ class Article():
     @property
     def journal(self):
         """Journal that an article was published in.
-
         Can be PLOS Biology, Medicine, Neglected Tropical Diseases, Pathogens,
         Genetics, Computational Biology, ONE, or the now defunct Clinical Trials.
+        Relies on a simple doi_to_journal transform when possible, and uses `self.get_plos_journal()`
+        for the "annotation" DOIs that don't have that journal information in the DOI.
         """
-        return self.get_plos_journal()
+        if 'annotation' not in self.doi:
+            journal = doi_to_journal(self.doi)
+        else:
+            journal = self.get_plos_journal()
+        return journal
 
     @property
     def title(self):
