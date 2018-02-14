@@ -9,8 +9,8 @@ import requests
 
 from . import get_corpus_dir
 
-from .transformations import (filename_to_doi, EXT_URL_TMP, INT_URL_TMP,
-                              BASE_URL_ARTICLE_LANDING_PAGE)
+from .transformations import (filename_to_doi, _get_base_page, LANDING_PAGE_SUFFIX,
+                              URL_SUFFIX, plos_page_dict)
 from .plos_regex import validate_doi
 from .article_elements import (parse_article_date, get_contrib_info,
                                match_contribs_to_dicts)
@@ -20,7 +20,7 @@ class Article():
     """The primary object of a PLOS article, initialized by a valid PLOS DOI.
 
     """
-    def __init__(self, doi, directory=None, plos_network=False):
+    def __init__(self, doi, directory=None):
         """Creation of an article object.
 
         Usage:
@@ -36,8 +36,6 @@ class Article():
         :type doi: str
         :param directory: where the local article XML file is located, defaults to None
         :type directory: str, optional
-        :param plos_network: whether on the local PLOS network, defaults to False
-        :type plos_network: bool, optional
         """
         self.doi = doi
         if directory:
@@ -45,7 +43,6 @@ class Article():
         else:
             self.directory = get_corpus_dir()
         self.reset_memoized_attrs()
-        self.plos_network = plos_network
         self._editor = None
 
     def reset_memoized_attrs(self):
@@ -141,18 +138,6 @@ class Article():
         """
         out = "DOI: {0}\nTitle: {1}".format(self.doi, self.title)
         return out
-
-    def get_url(self, plos_network=False):
-        """The PLOS external URL for the XML of a particular article.
-
-        Used for downloading articles, and comparing local XML to remote XML
-        :param plos_network: whether inside the PLOS network, defaults to False
-        :type plos_network: bool, optional
-        :returns: direct URL to the article XML file
-        :rtype: {str}
-        """
-        URL_TMP = INT_URL_TMP if plos_network else EXT_URL_TMP
-        return URL_TMP.format(self.doi)
 
     def get_remote_xml(self):
         """For an article, parse its XML file at the location of self.url.
@@ -832,31 +817,35 @@ class Article():
         """
         return self.tree.getroot()
 
+    def get_page(self, page_type='article'):
+        """Get any of the PLOS URLs associated with a particular DOI.
+
+        Based on `get_page_base()`, which customizes the beginning URL by journal.
+        :param page_type: one of the keys in `plos_page_dict`, defaults to article
+        """
+        BASE_LANDING_PAGE = _get_base_page(self.journal)
+        try:
+            page = BASE_LANDING_PAGE + LANDING_PAGE_SUFFIX.format(plos_page_dict[page_type],
+                                                                  self.doi)
+            if page_type == 'assetXMLFile':
+                page += URL_SUFFIX
+        except KeyError:
+            raise Exception('Invalid page_type; value must be one of the following: {}'.format(list(plos_page_dict.keys())))
+        return page
+
     @property
     def page(self):
         """ The URL of the landing page for an article.
 
         Where to access an article's HTML version
         """
-        if len(self.journal.split(' ')) == 2:
-            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format(self.journal.lower().split(' ')[1])
-        elif 'negl' in self.journal.lower():
-            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('ntds')
-        elif 'comp' in self.journal.lower():
-            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('compbiol')
-        elif 'clinical trials' in self.journal.lower():
-            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('ctr')
-        else:
-            print('URL error for {}'.format(self.doi))
-            BASE_LANDING_PAGE = BASE_URL_ARTICLE_LANDING_PAGE.format('one')
-
-        return BASE_LANDING_PAGE + self.doi
+        return self.get_page()
 
     @property
     def url(self):
         """The direct url of an article's XML file.
         """
-        return self.get_url(plos_network=self.plos_network)
+        return self.get_page(page_type='assetXMLFile')
 
     @property
     def filename(self):
@@ -1268,5 +1257,14 @@ class Article():
     @classmethod
     def from_filename(cls, filename):
         """Initiate an article object using a local XML file.
+
+        Will set `self.directory` if the full file path is available. If not, it will
+        default to `get_corpus_dir()` via `Article().__init__`. This method is most useful
+        for instantiating an Article object when the file is not in the default corpus
+        directory, or when changing directories.
         """
-        return cls(filename_to_doi(filename))
+        if os.path.isfile(filename):
+            directory = os.path.dirname(filename)
+        else:
+            directory = None
+        return cls(filename_to_doi(filename), directory=directory)

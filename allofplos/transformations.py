@@ -1,6 +1,6 @@
 """ Includes all global variables
 """
-
+from collections import OrderedDict
 import os
 
 from . import get_corpus_dir
@@ -10,11 +10,6 @@ from .plos_regex import validate_filename, validate_doi
 # URL bases for PLOS's Solr instances, that index PLOS articles
 BASE_URL_API = 'http://api.plos.org/search'
 
-# URL bases for PLOS's raw article XML
-EXT_URL_TMP = 'http://journals.plos.org/plosone/article/file?id={0}&type=manuscript'
-INT_URL_TMP = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-repo?key={0}.XML'
-URL_TMP = EXT_URL_TMP
-
 BASE_URL_DOI = 'https://doi.org/'
 URL_SUFFIX = '&type=manuscript'
 INT_URL_SUFFIX = '.XML'
@@ -23,20 +18,80 @@ SUFFIX_LOWER = '.xml'
 annotation = 'annotation'
 correction = 'correction'
 ANNOTATION_URL = 'http://journals.plos.org/plosone/article/file?id=10.1371/annotation/'
-annotation_url_int = 'http://contentrepo.plos.org:8002/v1/objects/mogilefs-prod-repo?key=10.1371/annotation/'
 ANNOTATION_DOI = '10.1371/annotation'
-BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id='
+BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id={}'
+BASE_URL_LANDING_PAGE = 'http://journals.plos.org/plos{}/'
+LANDING_PAGE_SUFFIX = '{}?id={}'
+
+plos_page_dict = {'article': 'article',
+                  'asset': 'article/asset',
+                  'articleFigsAndTables': 'article/assets/figsAndTables',
+                  'articleAuthors': 'article/authors',
+                  'citationDownloadPage': 'article/citation',
+                  'downloadBibtexCitation': 'article/citation/bibtex',
+                  'downloadRisCitation': 'article/citation/ris',
+                  'figuresPage': 'article/figures',
+                  'assetFile': 'article/file',
+                  'assetXMLFile': 'article/file',
+                  'articleMetrics': 'article/metrics',
+                  'articleRelated': 'article/related'}
 
 
-def filename_to_url(filename, plos_network=False):
+def _get_base_page(journal):
+    """Make the base of a PLOS URL journal-specific.
+
+    Defaults to PLOS ONE.
+
+    Use in conjunction with `get_page()` in the Article class.
     """
-    Transform filename a downloadable URL where its XML resides
+    journal_map = {'PLOS ONE': 'one',
+                   'PLOS Computational Biology': 'compbiol',
+                   'PLOS Neglected Tropical Diseases': 'ntds',
+                   'PLOS Genetics': 'genetics',
+                   'PLOS Pathogens': 'pathogens',
+                   'PLOS Biology': 'biology',
+                   'PLOS Medicine': 'medicine',
+                   'PLOS Clinical Trials': 'ctr',
+                   }
+    try:
+        url = BASE_URL_LANDING_PAGE.format(journal_map[journal])
+    except KeyError:
+        print('URL error for {}'.format(journal))
+        url = BASE_URL_LANDING_PAGE.format('one')
+
+    return url
+
+
+def doi_to_journal(doi):
+    """For a given doi, get the PLOS journal that the article is published in.
+
+    For the subset of DOIs with 'annotation' in the name, assumes PLOS ONE.
+    :return: string of journal name
+    """
+    journal_map = OrderedDict([
+                               ('pone', 'PLOS ONE'),
+                               ('pcbi', 'PLOS Computational Biology'),
+                               ('pntd', 'PLOS Neglected Tropical Diseases'),
+                               ('pgen', 'PLOS Genetics'),
+                               ('ppat', 'PLOS Pathogens'),
+                               ('pbio', 'PLOS Biology'),
+                               ('pmed', 'PLOS Medicine'),
+                               ('pctr', 'PLOS Clinical Trials'),
+                               ('annotation', 'PLOS ONE')
+                              ])
+
+    return next(value for key, value in journal_map.items() if key in doi)
+
+
+def filename_to_url(filename):
+    """
+    Transform filename into a downloadable URL where its XML resides
     Includes transform for the 'annotation' DOIs
     Example:
     filename_to_url('allofplos_xml/journal.pone.1000001.xml') = \
     'http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001'
-    
-    :param filename: string representing a filename 
+
+    :param filename: string representing a filename
     :return: online location of a PLOS article's XML
     """
     if correction in filename:
@@ -44,7 +99,7 @@ def filename_to_url(filename, plos_network=False):
     else:
         article = os.path.splitext((os.path.basename(filename)))[0]
     doi = PREFIX + article
-    return doi_to_url(doi, plos_network)
+    return doi_to_url(doi)
 
 
 def filename_to_doi(filename):
@@ -69,7 +124,7 @@ def filename_to_doi(filename):
     return doi
 
 
-def url_to_path(url, directory=None, plos_network=False):
+def url_to_path(url, directory=None):
     """
     For a given PLOS URL to an XML file, return the relative path to the local XML file
     Example:
@@ -82,7 +137,7 @@ def url_to_path(url, directory=None, plos_network=False):
     if directory is None:
         directory = get_corpus_dir()
     annot_prefix = 'plos.correction.'
-    if url.startswith(ANNOTATION_URL) or url.startswith(annotation_url_int):
+    if url.startswith(ANNOTATION_URL):
         # NOTE: REDO THIS!
         file_ = os.path.join(directory,
                              annot_prefix +
@@ -109,7 +164,7 @@ def url_to_doi(url):
     return url[url.index(PREFIX):].rstrip(URL_SUFFIX).rstrip(INT_URL_SUFFIX)
 
 
-def doi_to_url(doi, plos_network=False):
+def doi_to_url(doi):
     """
     For a given PLOS DOI, return the PLOS URL to that article's XML file
     Example:
@@ -118,8 +173,9 @@ def doi_to_url(doi, plos_network=False):
     :param doi: full unique identifier for a PLOS article
     :return: online location of a PLOS article's XML
     """
-    URL_TMP = INT_URL_TMP if plos_network else EXT_URL_TMP
-    return URL_TMP.format(doi)
+    journal = doi_to_journal(doi)
+    base_page = _get_base_page(journal)
+    return ''.join([base_page, 'article/file?id=', doi, URL_SUFFIX])
 
 
 def doi_to_path(doi, directory=None):

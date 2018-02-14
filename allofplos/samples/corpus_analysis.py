@@ -1,7 +1,7 @@
 """
 This set of functions is for analyzing all the articles in the PLOS corpus. A Jupyter Notebook is provided with
 examples of analysis. It can:
-    * compare the articles indexed in Solr, PMC, and content-repo
+    * compare the articles indexed in Solr, PMC, and article pages
     * spot-check individual JATS fields for irregularities
     * create summaries of articles by type, publication date, etc
     * generate lists of retracted or corrected articles

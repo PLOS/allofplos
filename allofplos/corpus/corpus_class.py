@@ -9,12 +9,11 @@ from ..transformations import filename_to_doi, doi_to_path
 class Corpus():
     """A collection of PLOS articles."""
 
-    def __init__(self, directory=None, plos_network=False, extension='.xml'):
+    def __init__(self, directory=None, extension='.xml'):
         """Creation of an article corpus class."""
         if directory is None:
             directory = get_corpus_dir()
         self.directory = directory
-        self.plos_network = plos_network
         self.extension = extension
 
     def __repr__(self):
