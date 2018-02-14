@@ -1050,9 +1050,12 @@ class Article():
         copy_holder = ''
         permissions = self.root.xpath('/article/front/article-meta/permissions')[0]
         if permissions.xpath('./copyright-year'):
-            copy_year = permissions.xpath('./copyright-year')[0].text.strip()
+            copy_year = int(permissions.xpath('./copyright-year')[0].text.strip())
         if permissions.xpath('./copyright-holder'):
-            copy_holder = ', '.join([x.text.strip() for x in permissions.xpath('./copyright-holder')])
+            try:
+                copy_holder = ', '.join([x.text.strip() for x in permissions.xpath('./copyright-holder')])
+            except AttributeError:
+                print('error getting copyright holder for {}'.format(self.doi))
 
         license = permissions.xpath('./license')[0]
         if license.attrib.get(xlink_href):
