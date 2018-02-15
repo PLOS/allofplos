@@ -125,6 +125,11 @@ class Article:
         return self._doi
 
     @property
+    def partial_doi(self):
+        """Convert a DOI to a partial DOI."""
+        return self.doi.lstrip('10.1371/').replace('journal.', '')
+
+    @property
     def text_viewer(self):
         """Command line application for viewing text to be used with
         open_in_viewer.
