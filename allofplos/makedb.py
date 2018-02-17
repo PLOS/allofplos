@@ -7,6 +7,7 @@ Make a SQLite DB out of articles XML files
 
 import argparse
 import datetime
+import glob
 import os
 import random
 
@@ -17,14 +18,15 @@ from peewee import Model, CharField, ForeignKeyField, TextField, \
     DateTimeField, BooleanField, IntegerField, IntegrityError
 from playhouse.sqlite_ext import SqliteExtDatabase
 
+from .corpus import Corpus
 from .transformations import filename_to_doi, convert_country
+from . import get_corpus_dir
 from .article_class import Article
-
 
 # TODO: this may need to be updated to take into account the new get_corpus_dir() logic.
 # It is not clear, since this is a relative path from the package how this should work without
-# diving into the code more thoroughly 
-corpusdir = 'allofplos/allofplos_xml'
+# diving into the code more thoroughly
+corpusdir = get_corpus_dir()
 
 journal_title_dict = {
     'PLOS ONE': 'PLOS ONE',
@@ -83,6 +85,9 @@ class Country(BaseModel):
 class Affiliations(BaseModel):
     affiliations = CharField(unique=True)
 
+class Subjects(BaseModel):
+    subjects = CharField(unique=True)
+
 class CorrespondingAuthor(BaseModel):
     corr_author_email = CharField(unique=True)
     tld = TextField(null=True)
@@ -105,26 +110,33 @@ class PLOSArticle(BaseModel):
     word_count = IntegerField()
     JATS_type = ForeignKeyField(JATSType, related_name='jats')
 
+class SubjectsPLOSArticle(BaseModel):
+    subject = ForeignKeyField(Subjects)
+    article = ForeignKeyField(PLOSArticle)
+
 class CoAuthorPLOSArticle(BaseModel):
     corr_author = ForeignKeyField(CorrespondingAuthor)
     article = ForeignKeyField(PLOSArticle)
 
 db.connect()
-db.create_tables([Journal, PLOSArticle, ArticleType,
-                      CoAuthorPLOSArticle, CorrespondingAuthor,
-                      JATSType, Affiliations, Country])
+db.create_tables([Journal, PLOSArticle, ArticleType, CoAuthorPLOSArticle,
+                  CorrespondingAuthor, JATSType, Affiliations, Country,
+                  SubjectsPLOSArticle, Subjects])
+
 
 if args.starter:
-    allfiles = os.listdir('starter_corpus')
+    starter_dir = os.path.join(os.path.dirname(__file__), 'starter_corpus')
+    corpus = Corpus(starter_dir)
+    allfiles = corpus.iter_files
 else:
-    allfiles = os.listdir(corpusdir)
-if args.random:
-    randomfiles = random.sample(allfiles, args.random)
-    max_value = len(randomfiles)
-else:
-    max_value = len(allfiles)
+    corpus = Corpus(corpusdir)
+    allfiles = corpus.iter_files
 
-for i, file_ in enumerate(tqdm(randomfiles if args.random else allfiles)):
+if args.random:
+    corpus = Corpus(corpusdir)
+    allfiles = random.sample(list(corpus.iter_files), args.random)
+
+for file_ in tqdm(allfiles):
     doi = filename_to_doi(file_)
     article = Article(doi)
     journal_name = journal_title_dict[article.journal.upper()]
@@ -155,6 +167,24 @@ for i, file_ in enumerate(tqdm(randomfiles if args.random else allfiles)):
         created_date = article.pubdate,
         word_count=article.word_count,
         JATS_type = j_type)
+    # Get subject information
+    taxonomy_set = set()
+    taxonomy = article.taxonomy
+    for values in taxonomy.values():
+        for value in values:
+            for taxon in value:
+                taxonomy_set.add(taxon)
+    for taxon in taxonomy_set:
+        with db.atomic() as atomic:
+            try:
+                subject = Subjects.create(subjects = taxon)
+            except (sqlite3.IntegrityError, IntegrityError):
+                db.rollback()
+                subject = Subjects.get(Subjects.subjects == taxon)
+        SubjectsPLOSArticle.create(
+                subject = subject,
+                article = p_art
+            )
     if article.authors:
         iterable_authors = article.authors
     else:
