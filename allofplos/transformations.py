@@ -22,7 +22,6 @@ ANNOTATION_DOI = '10.1371/annotation'
 BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id={}'
 BASE_URL_LANDING_PAGE = 'http://journals.plos.org/plos{}/'
 LANDING_PAGE_SUFFIX = '{}?id={}'
-xlink_href = '{http://www.w3.org/1999/xlink}href'
 doi_url = 'https://doi.org/'
 
 plos_page_dict = {'article': 'article',
@@ -62,20 +61,6 @@ def _get_base_page(journal):
         url = BASE_URL_LANDING_PAGE.format('one')
 
     return url
-
-
-# Creative Commons links
-cc_by_4_link = 'https://creativecommons.org/licenses/by/4.0/'
-cc_by_3_link = 'https://creativecommons.org/licenses/by/3.0/'
-cc0_link = 'https://creativecommons.org/publicdomain/zero/1.0/'
-cc_by_3_igo_link = 'https://creativecommons.org/licenses/by/3.0/igo/'
-crown_link = 'http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/'
-cc_dict = {'CC-BY 4.0': cc_by_4_link,
-           'CC-BY 3.0': cc_by_3_link,
-           'CC0': cc0_link,
-           'CC-BY 3.0 IGO': cc_by_3_igo_link,
-           'Crown Copyright': crown_link
-           }
 
 
 def doi_to_journal(doi):

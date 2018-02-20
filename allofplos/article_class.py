@@ -9,12 +9,10 @@ import requests
 
 from . import get_corpus_dir
 from .transformations import (filename_to_doi, _get_base_page, LANDING_PAGE_SUFFIX,
-                              URL_SUFFIX, plos_page_dict, xlink_href, cc_by_3_link,
-                              cc0_link, cc_by_3_igo_link, crown_link, cc_dict,
-                              cc_by_4_link, doi_url, doi_to_journal)
+                              URL_SUFFIX, plos_page_dict, doi_url, doi_to_journal)
 from .plos_regex import validate_doi
-from .article_elements import (parse_article_date, get_contrib_info,
-                               match_contribs_to_dicts, parse_license)
+from .elements import (parse_article_date, get_contrib_info,
+                       License, match_contribs_to_dicts)
 
 
 class Article():
@@ -1060,49 +1058,10 @@ class Article():
 
     def license(self):
         """Return dictionary of CC license information from the license field."""
-        lic = ''
-        cc_link = ''
-        copy_year = ''
-        copy_holder = ''
         permissions = self.root.xpath('/article/front/article-meta/permissions')[0]
-        if permissions.xpath('./copyright-year'):
-            copy_year = int(permissions.xpath('./copyright-year')[0].text.strip())
-        if permissions.xpath('./copyright-holder'):
-            try:
-                copy_holder = ', '.join([x.text.strip() for x in permissions.xpath('./copyright-holder')])
-            except AttributeError:
-                print('error getting copyright holder for {}'.format(self.doi))
+        lic = License(permissions, self.doi)
 
-        license = permissions.xpath('./license')[0]
-        if license.attrib.get(xlink_href):
-            cc_link = license.attrib[xlink_href]
-        elif license.xpath('.//ext-link'):
-            link = license.xpath('.//ext-link')[0]
-            cc_link = link.attrib[xlink_href]
-        if cc_link:
-            if cc_link == cc_by_4_link or any(x in cc_link for x in ["Attribution", "4.0"]):
-                lic = 'CC-BY 4.0'
-            elif cc_link == cc_by_3_igo_link or 'by/3.0/igo' in cc_link:
-                lic = 'CC-BY 3.0 IGO'
-            elif cc_link == cc_by_3_link or 'by/3.0' in cc_link:
-                lic = 'CC-BY 3.0'
-            elif cc_link == cc0_link or 'zero/1.0/' in cc_link:
-                lic = 'CC0'
-            elif cc_link == 'http://www.nationalarchives.gov.uk/doc/open-government-licence/open-government-licence.htm' \
-              or 'open-government-licence' in cc_link:
-                lic = "Crown Copyright"
-            elif cc_link == 'http://www.plos.org/oa/':
-                lic = 'CC-BY 3.0 IGO'
-            else:
-                print('not 4.0', self.doi, link.attrib[xlink_href])
-                lic = ''
-        else:
-            lic = parse_license(license, self.doi)
-        lic_dict = {'license': lic,
-                    'license_link': cc_dict.get(lic, ''),
-                    'copyright_holder': copy_holder,
-                    'copyright_year': copy_year}
-        return lic_dict
+        return lic.license()
 
     @property
     def contributors(self):

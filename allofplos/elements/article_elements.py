@@ -49,38 +49,6 @@ def parse_article_date(date_element, date_format='%d %m %Y'):
     return date
 
 
-def parse_license(license_element, doi):
-    """For license elements without external links, figure out the appropriate copyright.
-
-    :param license_element: an article XML element with the tag <license>
-    :return: license name
-    """
-    license_text = ' '.join(re.split('\+|\n|\t| ', et.tostring(license_element, method='text', encoding='unicode')))
-    license_text = ''.join(line.lstrip(' \t') for line in license_text.splitlines(True))
-    license_text = license_text.replace('\n', ' ').replace('\r', '')
-    if any(x in license_text.lower() for x in ["commons attribution license", "creative commons attrib"]):
-        lic = 'CC-BY 4.0'
-        if any(char.isdigit() for char in license_text):
-            # Flag numbers in case it specifies a CC version number
-            print("Number found in CC license string for {}".format(doi))
-    elif "commons public domain" in license_text.lower() or any(x in license_text for x in ['CC0', 'CCO public', "public domain"]):
-        lic = 'CC0'
-    elif "creative commons" in license_text.lower():
-        print(doi, 'unknown CC', license_text)
-        lic = ''
-    else:
-        if 'Public Library of Science Open-Access License' in license_text:
-            lic = 'CC-BY 4.0'
-        elif "crown copyright" in license_text.lower() or \
-         any(x in license_text for x in ['Open Government Licen', 'Public Sector Information Regulations']):
-            lic = 'Crown Copyright'
-        elif "WHO" in license_text:
-            lic = 'CC-BY 3.0 IGO'
-        else:
-            lic = 'CC-BY 4.0'
-    return lic
-
-
 def get_rid_dict(contrib_element):
     """ For an individual contributor, get the list of their associated rids.
     More about rids: https://jats.nlm.nih.gov/archiving/tag-library/1.1/attribute/rid.html
