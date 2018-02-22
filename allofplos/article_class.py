@@ -214,6 +214,7 @@ class Article():
                                                                    "journal-title-group",
                                                                    "journal-title"])
         if len(journal_path_1):
+            assert len(journal_path_1) == 1
             journal = journal_path_1[0].text
         else:
             journal_path_2 = self.get_element_xpath(tag_path_elements=["/",
@@ -222,6 +223,7 @@ class Article():
                                                                        "journal-meta",
                                                                        "journal-title"])
             if len(journal_path_2):
+                assert len(journal_path_2) == 1
                 journal = journal_path_2[0].text
 
             else:
@@ -229,10 +231,10 @@ class Article():
                                                                          "article",
                                                                          "front",
                                                                          "journal-meta"])
-                for journal_child in journal_meta[0]:
-                    if journal_child.attrib['journal-id-type'] == 'nlm-ta':
-                        journal = journal_child.text
-                        break
+                assert len(journal_meta) == 1
+                nlm_ta_id = [j for j in journal_meta[0].getchildren() if j.attrib.get('journal-id-type', None) == 'nlm-ta']
+                assert len(nlm_ta_id) == 1
+                journal = nlm_ta_id[0].text
 
         if caps_fixed:
             journal = journal.split()
