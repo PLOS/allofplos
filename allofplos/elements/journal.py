@@ -33,7 +33,7 @@ class Journal():
     def parse_plos_journal(self, caps_fixed=True):
         """For an individual PLOS article, get the journal it was published in from the article XML.
 
-        Relies on article XML metadata. For DOI to journal conversion, see `transformations.doi_to_journal`.
+        Relies on article XML metadata. For DOI to journal conversion, see `doi_to_journal()`.
         :param caps_fixed: whether to render 'PLOS' in the journal name correctly, or as-is ('PLoS')
         :return: PLOS journal name at specified xpath location
         """
