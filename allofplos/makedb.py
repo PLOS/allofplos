@@ -7,7 +7,6 @@ Make a SQLite DB out of articles XML files
 
 import argparse
 import datetime
-import glob
 import os
 import random
 
@@ -20,13 +19,8 @@ from playhouse.sqlite_ext import SqliteExtDatabase
 
 from .corpus import Corpus
 from .transformations import filename_to_doi, convert_country
-from . import get_corpus_dir
+from . import starterdir
 from .article_class import Article
-
-# TODO: this may need to be updated to take into account the new get_corpus_dir() logic.
-# It is not clear, since this is a relative path from the package how this should work without
-# diving into the code more thoroughly
-corpusdir = get_corpus_dir()
 
 journal_title_dict = {
     'PLOS ONE': 'PLOS ONE',
@@ -125,15 +119,14 @@ db.create_tables([Journal, PLOSArticle, ArticleType, CoAuthorPLOSArticle,
 
 
 if args.starter:
-    starter_dir = os.path.join(os.path.dirname(__file__), 'starter_corpus')
-    corpus = Corpus(starter_dir)
+    corpus = Corpus(starterdir)
     allfiles = corpus.iter_files
 else:
-    corpus = Corpus(corpusdir)
+    corpus = Corpus()
     allfiles = corpus.iter_files
 
 if args.random:
-    corpus = Corpus(corpusdir)
+    corpus = Corpus()
     allfiles = random.sample(list(corpus.iter_files), args.random)
 
 for file_ in tqdm(allfiles):
