@@ -932,14 +932,14 @@ class Article():
         """Journal that an article was published in.
         Can be PLOS Biology, Medicine, Neglected Tropical Diseases, Pathogens,
         Genetics, Computational Biology, ONE, or the now defunct Clinical Trials.
-        Relies on a simple doi_to_journal transform when possible, and uses `Journal().get_plos_journal()`
+        Relies on a simple doi_to_journal transform when possible, and uses `Journal().parse_plos_journal()`
         for the "annotation" DOIs that don't have that journal information in the DOI.
         """
         if 'annotation' not in self.doi:
             journal = Journal.doi_to_journal(self.doi)
         else:
             journal_meta = self.root.xpath('/article/front/journal-meta')[0]
-            journal = Journal(self.doi, journal_meta).get_plos_journal()
+            journal = Journal(self.doi, journal_meta).parse_plos_journal()
         return journal
 
     @property
