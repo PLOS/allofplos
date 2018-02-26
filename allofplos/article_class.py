@@ -8,12 +8,11 @@ from lxml import objectify
 import requests
 
 from . import get_corpus_dir
-
 from .transformations import (filename_to_doi, _get_base_page, LANDING_PAGE_SUFFIX,
-                              URL_SUFFIX, plos_page_dict)
+                              URL_SUFFIX, plos_page_dict, doi_url)
 from .plos_regex import validate_doi
-from .article_elements import (parse_article_date, get_contrib_info,
-                               match_contribs_to_dicts)
+from .elements import (parse_article_date, get_contrib_info,
+                       Journal, License, match_contribs_to_dicts)
 
 
 class Article():
@@ -139,6 +138,10 @@ class Article():
         out = "DOI: {0}\nTitle: {1}".format(self.doi, self.title)
         return out
 
+    def doi_link(self):
+        """The link of the DOI, which redirects to the journal URL."""
+        return doi_url + self.doi
+
     def get_remote_xml(self):
         """For an article, parse its XML file at the location of self.url.
 
@@ -195,37 +198,6 @@ class Article():
         else:
             root = self.root
         return root.xpath(tag_location)
-
-    def get_plos_journal(self, caps_fixed=True):
-        """For an individual PLOS article, get the journal it was published in.
-
-        :param caps_fixed: whether to render 'PLOS' in the journal name correctly, or as-is ('PLoS')
-        :return: PLOS journal name at specified xpath location
-        """
-        try:
-            journal = self.get_element_xpath(tag_path_elements=["/",
-                                                                "article",
-                                                                "front",
-                                                                "journal-meta",
-                                                                "journal-title-group",
-                                                                "journal-title"])
-            journal = journal[0].text
-        except IndexError:
-            journal_meta = self.get_element_xpath(tag_path_elements=["/",
-                                                                     "article",
-                                                                     "front",
-                                                                     "journal-meta"])
-            for journal_child in journal_meta[0]:
-                if journal_child.attrib['journal-id-type'] == 'nlm-ta':
-                    journal = journal_child.text
-                    break
-
-        if caps_fixed:
-            journal = journal.split()
-            if journal[0].lower() == 'plos':
-                journal[0] = "PLOS"
-            journal = (' ').join(journal)
-        return journal
 
     def get_dates(self, string_=False, string_format='%Y-%m-%d'):
         """For an individual article, get all of its dates, including publication date (pubdate), submission date.
@@ -325,6 +297,21 @@ class Article():
             order_correct = True
 
         return order_correct
+
+    @property
+    def volume(self):
+        """Volume of the article."""
+        return int(self.root.xpath('/article/front/article-meta/volume')[0].text)
+
+    @property
+    def issue(self):
+        """Issue of the article."""
+        return int(self.root.xpath('/article/front/article-meta/issue')[0].text)
+
+    @property
+    def elocation(self):
+        """Elocation ID of the article."""
+        return self.root.xpath('/article/front/article-meta/elocation-id')[0].text
 
     def get_aff_dict(self):
         """For a given PLOS article, get list of contributor-affiliated institutions.
@@ -943,11 +930,17 @@ class Article():
     @property
     def journal(self):
         """Journal that an article was published in.
-
         Can be PLOS Biology, Medicine, Neglected Tropical Diseases, Pathogens,
         Genetics, Computational Biology, ONE, or the now defunct Clinical Trials.
+        Relies on a simple doi_to_journal transform when possible, and uses `Journal().parse_plos_journal()`
+        for the "annotation" DOIs that don't have that journal information in the DOI.
         """
-        return self.get_plos_journal()
+        if 'annotation' not in self.doi:
+            journal = Journal.doi_to_journal(self.doi)
+        else:
+            journal_meta = self.root.xpath('/article/front/journal-meta')[0]
+            journal = Journal(self.doi, journal_meta).parse_plos_journal()
+        return journal
 
     @property
     def title(self):
@@ -1021,6 +1014,13 @@ class Article():
         """
         dates = self.get_dates()
         return dates['updated']
+
+    def license(self):
+        """Return dictionary of CC license information from the license field."""
+        permissions = self.root.xpath('/article/front/article-meta/permissions')[0]
+        lic = License(permissions, self.doi)
+
+        return lic.license()
 
     @property
     def contributors(self):
@@ -1139,17 +1139,22 @@ class Article():
     def abstract(self):
         """For an individual PLOS article, get the string of the abstract content.
 
+        PLOS articles can have multiple abstract fields at the same XPath location,
+        however the actual abstract is distinguished by having no attributes (`[count(@*)=0]`).
         Info about the article abstract: http://journals.plos.org/plosone/s/submission-guidelines#loc-abstract
         :return: plain-text string of content in abstract
         """
-        abstract = self.get_element_xpath(tag_path_elements=["/",
-                                                             "article",
-                                                             "front",
-                                                             "article-meta",
-                                                             "abstract"])
-        try:
-            abstract_text = et.tostring(abstract[0], encoding='unicode', method='text')
-        except IndexError:
+        abstract_list = self.get_element_xpath(tag_path_elements=["/",
+                                                                  "article",
+                                                                  "front",
+                                                                  "article-meta",
+                                                                  "abstract[count(@*)=0]"])
+        if abstract_list:
+                abstract = abstract_list[0]
+                assert len(abstract_list) == 1
+
+                abstract_text = et.tostring(abstract[0], encoding='unicode', method='text')
+        else:
             if self.type_ == 'research-article' and self.plostype == 'Research Article':
                 print('No abstract found for research article {}'.format(self.doi))
 
@@ -1236,6 +1241,7 @@ class Article():
         """For a single article, return a dictionary of the several counts functions that are available.
 
         Dictionary format for XML tags: {figures: fig-count, pages: page-count, tables: table-count}
+        For articles without the figure and table counts fields, calculates those values using XPath.
         :return: counts dictionary of number of figures, pages, and tables in the article
         """
         counts = {}
@@ -1250,9 +1256,13 @@ class Article():
             for count_item in count_element:
                 count = count_item.get('count')
                 count_type = count_item.tag
-                counts[count_type] = count
+                counts[count_type] = int(count)
         if len(counts) > 3:  # this shouldn't happen
             print(counts)
+        if 'fig-count' not in counts:
+            counts['fig-count'] = len(self.root.xpath('.//fig'))
+        if 'table-count' not in counts:
+            counts['table-count'] = len(self.root.xpath('.//table-wrap'))
         return counts
 
     @property
