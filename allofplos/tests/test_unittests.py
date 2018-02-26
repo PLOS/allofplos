@@ -81,7 +81,6 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.get_corr_author_emails(), {'cor001': ['c.hallmann@science.ru.nl']}, 'get_corr_author_emails does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_dates(), {'collection': datetime.datetime(2017, 1, 1, 0, 0), 'epub': datetime.datetime(2017, 10, 18, 0, 0), 'received': datetime.datetime(2017, 7, 28, 0, 0), 'accepted': datetime.datetime(2017, 9, 19, 0, 0), 'updated': ''}, 'get_dates does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_fn_dict(), {'coi001': 'The authors have declared that no competing interests exist.'}, 'get_fn_dict does not transform correctly for {}'.format(article.doi))
-        self.assertEqual(article.get_plos_journal(), "PLOS ONE", 'get_plos_journal does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_related_dois(), {}, 'get_related_dois does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_page(page_type='assetXMLFile'), "http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0185809&type=manuscript", 'get_page does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.abstract[:100], "Global declines in insects have sparked wide interest among scientists, politicians, and the general", 'abstract does not transform correctly for {}'.format(article.doi))
@@ -122,7 +121,6 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.get_corr_author_emails(), {'cor001': ['ingmar@stanford.edu']}, 'get_corr_author_emails does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_dates(), {'epub': datetime.datetime(2017, 3, 21, 0, 0), 'collection': datetime.datetime(2017, 3, 1, 0, 0), 'updated': ''}, 'get_dates does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_fn_dict(), {'coi001': 'The authors have declared that no competing interests exist.'}, 'get_fn_dict does not transform correctly for {}'.format(article.doi))
-        self.assertEqual(article.get_plos_journal(), "PLOS Biology", 'get_plos_journal does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_related_dois(), {}, 'get_related_dois does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_page(page_type='assetXMLFile'), "http://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2001413&type=manuscript", 'get_page does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.abstract[:100], "Liquid-handling robots have many applications for biotechnology and the life sciences, with increasi", 'abstract does not transform correctly for {}'.format(article.doi))
@@ -162,7 +160,6 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.get_corr_author_emails(), {}, 'get_corr_author_emails does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_dates(), {'collection': datetime.datetime(2012, 1, 1, 0, 0), 'epub': datetime.datetime(2012, 6, 29, 0, 0), 'updated': ''}, 'get_dates does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_fn_dict(), {}, 'get_fn_dict does not transform correctly for {}'.format(article.doi))
-        self.assertEqual(article.get_plos_journal(), "PLOS ONE", 'get_plos_journal does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_related_dois(), {'retracted-article': ['10.1371/journal.pone.0035142']}, 'get_related_dois does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.get_page(page_type='assetXMLFile'), "http://journals.plos.org/plosone/article/file?id=10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846ec0b6&type=manuscript", 'get_page does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.abstract[:100], "", 'abstract does not transform correctly for {}'.format(article.doi))
@@ -209,6 +206,7 @@ class TestCorpusClass(unittest.TestCase):
         self.assertEqual(set(corpus.filepaths), set(listdir_nohidden(starterdir)), "Files in corpus incorrect")
         self.assertTrue('journal.pcbi.0030158.xml' in corpus.files)
         self.assertTrue('10.1371/journal.pmed.0030132' in corpus.dois)
+
 
 if __name__ == "__main__":
     unittest.main()

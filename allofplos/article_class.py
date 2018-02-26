@@ -9,10 +9,10 @@ import requests
 
 from . import get_corpus_dir
 from .transformations import (filename_to_doi, _get_base_page, LANDING_PAGE_SUFFIX,
-                              URL_SUFFIX, plos_page_dict, doi_url, doi_to_journal)
+                              URL_SUFFIX, plos_page_dict, doi_url)
 from .plos_regex import validate_doi
 from .elements import (parse_article_date, get_contrib_info,
-                       License, match_contribs_to_dicts)
+                       Journal, License, match_contribs_to_dicts)
 
 
 class Article():
@@ -198,50 +198,6 @@ class Article():
         else:
             root = self.root
         return root.xpath(tag_location)
-
-    def get_plos_journal(self, caps_fixed=True):
-        """For an individual PLOS article, get the journal it was published in.
-
-        Relies on article XML metadata. For DOI to journal conversion, see `transformations.doi_to_journal`.
-        :param caps_fixed: whether to render 'PLOS' in the journal name correctly, or as-is ('PLoS')
-        :return: PLOS journal name at specified xpath location
-        """
-        journal = ''
-        journal_path_1 = self.get_element_xpath(tag_path_elements=["/",
-                                                                   "article",
-                                                                   "front",
-                                                                   "journal-meta",
-                                                                   "journal-title-group",
-                                                                   "journal-title"])
-        if len(journal_path_1):
-            assert len(journal_path_1) == 1
-            journal = journal_path_1[0].text
-        else:
-            journal_path_2 = self.get_element_xpath(tag_path_elements=["/",
-                                                                       "article",
-                                                                       "front",
-                                                                       "journal-meta",
-                                                                       "journal-title"])
-            if len(journal_path_2):
-                assert len(journal_path_2) == 1
-                journal = journal_path_2[0].text
-
-            else:
-                journal_meta = self.get_element_xpath(tag_path_elements=["/",
-                                                                         "article",
-                                                                         "front",
-                                                                         "journal-meta"])
-                assert len(journal_meta) == 1
-                nlm_ta_id = [j for j in journal_meta[0].getchildren() if j.attrib.get('journal-id-type', None) == 'nlm-ta']
-                assert len(nlm_ta_id) == 1
-                journal = nlm_ta_id[0].text
-
-        if caps_fixed:
-            journal = journal.split()
-            if journal[0].lower() == 'plos':
-                journal[0] = "PLOS"
-            journal = (' ').join(journal)
-        return journal
 
     def get_dates(self, string_=False, string_format='%Y-%m-%d'):
         """For an individual article, get all of its dates, including publication date (pubdate), submission date.
@@ -976,13 +932,14 @@ class Article():
         """Journal that an article was published in.
         Can be PLOS Biology, Medicine, Neglected Tropical Diseases, Pathogens,
         Genetics, Computational Biology, ONE, or the now defunct Clinical Trials.
-        Relies on a simple doi_to_journal transform when possible, and uses `self.get_plos_journal()`
+        Relies on a simple doi_to_journal transform when possible, and uses `Journal().get_plos_journal()`
         for the "annotation" DOIs that don't have that journal information in the DOI.
         """
         if 'annotation' not in self.doi:
-            journal = doi_to_journal(self.doi)
+            journal = Journal.doi_to_journal(self.doi)
         else:
-            journal = self.get_plos_journal()
+            journal_meta = self.root.xpath('/article/front/journal-meta')[0]
+            journal = Journal(self.doi, journal_meta).get_plos_journal()
         return journal
 
     @property

@@ -6,6 +6,7 @@ import os
 from . import get_corpus_dir
 
 from .plos_regex import validate_filename, validate_doi
+from .elements import Journal
 
 # URL bases for PLOS's Solr instances, that index PLOS articles
 BASE_URL_API = 'http://api.plos.org/search'
@@ -61,27 +62,6 @@ def _get_base_page(journal):
         url = BASE_URL_LANDING_PAGE.format('one')
 
     return url
-
-
-def doi_to_journal(doi):
-    """For a given doi, get the PLOS journal that the article is published in.
-
-    For the subset of DOIs with 'annotation' in the name, assumes PLOS ONE.
-    :return: string of journal name
-    """
-    journal_map = OrderedDict([
-                               ('pone', 'PLOS ONE'),
-                               ('pcbi', 'PLOS Computational Biology'),
-                               ('pntd', 'PLOS Neglected Tropical Diseases'),
-                               ('pgen', 'PLOS Genetics'),
-                               ('ppat', 'PLOS Pathogens'),
-                               ('pbio', 'PLOS Biology'),
-                               ('pmed', 'PLOS Medicine'),
-                               ('pctr', 'PLOS Clinical Trials'),
-                               ('annotation', 'PLOS ONE')
-                              ])
-
-    return next(value for key, value in journal_map.items() if key in doi)
 
 
 def filename_to_url(filename):
@@ -174,7 +154,7 @@ def doi_to_url(doi):
     :param doi: full unique identifier for a PLOS article
     :return: online location of a PLOS article's XML
     """
-    journal = doi_to_journal(doi)
+    journal = Journal.doi_to_journal(doi)
     base_page = _get_base_page(journal)
     return ''.join([base_page, 'article/file?id=', doi, URL_SUFFIX])
 
