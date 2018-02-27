@@ -90,15 +90,16 @@ def filename_to_doi(filename):
     Uses regex to make sure it's a file and not a DOI
     Example:
     filename_to_doi('journal.pone.1000001.xml') = '10.1371/journal.pone.1000001'
-    
+
     :param filename: relative path to local XML file in the get_corpus_dir() directory
     :return: full unique identifier for a PLOS article
     """
+    filename = os.path.basename(filename)
     if correction in filename and validate_filename(filename):
-        article = 'annotation/' + (filename.split('.', 4)[2])
+        article = 'annotation/' + filename.split('.', 4)[2]
         doi = PREFIX + article
     elif validate_filename(filename):
-        doi = PREFIX + os.path.splitext((os.path.basename(filename)))[0]
+        doi = PREFIX + os.path.splitext(filename)[0]
     # NOTE: A filename should never validate as a DOI, so the next elif is wrong.
     elif validate_doi(filename):
         doi = filename
