@@ -105,6 +105,7 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.url, "http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0185809&type=manuscript", 'url does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.word_count, 6646, 'word_count does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.taxonomy, {'heading': [('Research Article',)], 'Discipline-v3': [('Biology and life sciences', 'Organisms', 'Eukaryota', 'Animals', 'Invertebrates', 'Arthropoda', 'Insects'), ('Earth sciences', 'Seasons'), ('Earth sciences', 'Geography', 'Human geography', 'Land use'), ('Social sciences', 'Human geography', 'Land use'), ('Biology and life sciences', 'Ecology', 'Ecological metrics', 'Biomass (ecology)'), ('Ecology and environmental sciences', 'Ecology', 'Ecological metrics', 'Biomass (ecology)'), ('Ecology and environmental sciences', 'Conservation science'), ('Biology and life sciences', 'Ecology', 'Plant ecology', 'Plant communities', 'Grasslands'), ('Ecology and environmental sciences', 'Ecology', 'Plant ecology', 'Plant communities', 'Grasslands'), ('Biology and life sciences', 'Plant science', 'Plant ecology', 'Plant communities', 'Grasslands'), ('Ecology and environmental sciences', 'Terrestrial environments', 'Grasslands'), ('Biology and life sciences', 'Ecology', 'Ecological metrics', 'Species diversity'), ('Ecology and environmental sciences', 'Ecology', 'Ecological metrics', 'Species diversity'), ('Biology and life sciences', 'Organisms', 'Eukaryota', 'Plants', 'Herbs')]}, "Taxonomy not retrieved as expected for {0}".format(article.doi))
+        self.assertEqual(article.license, {'license': 'CC-BY 4.0', 'license_link': 'https://creativecommons.org/licenses/by/4.0/', 'copyright_holder': 'Hallmann et al', 'copyright_year': 2017}, 'license does not transform correctly for {}'.format(article.doi))
 
     def test_example_doi(self):
         """Tests the methods and properties of the Article class
@@ -183,6 +184,7 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.type_, "retraction", 'type_ does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.url[:100], "http://journals.plos.org/plosone/article/file?id=10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846e", 'url does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.word_count, 129, 'word_count does not transform correctly for {}'.format(article.doi))
+        self.assertEqual(article.license, {'license': 'CC-BY 4.0', 'license_link': 'https://creativecommons.org/licenses/by/4.0/', 'copyright_holder': '', 'copyright_year': 2012}, 'license does not transform correctly for {}'.format(article.doi))
 
     def test_proofs(self):
         """Tests whether uncorrected proofs and VOR updates are being detected correctly."""

@@ -23,9 +23,20 @@ class License():
         """Initialize an instance of the license class."""
         self.element = permissions_element
         self.doi = doi
- 
+    
+    def __iter__(self):
+        """Provides the ability to cast License as a dictionary using 
+        dict(License(…)).
+        
+        Returns a generator of (key, value) tuples, which when passed into 
+        dict(), will create the appropriate dictionary. 
+        """
+        return ((key, value) for key, value in self.license.items())
+    
+    @property
     def license(self):
-        """Return dictionary of CC license information from the license field."""
+        """Dictionary of CC license information from the article license field.
+        """
         lic = ''
         cc_link = ''
         copy_year = ''
