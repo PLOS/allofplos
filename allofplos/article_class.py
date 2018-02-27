@@ -1015,12 +1015,11 @@ class Article():
         dates = self.get_dates()
         return dates['updated']
 
+    @property
     def license(self):
         """Return dictionary of CC license information from the license field."""
         permissions = self.root.xpath('/article/front/article-meta/permissions')[0]
-        lic = License(permissions, self.doi)
-
-        return lic.license()
+        return dict(License(permissions, self.doi))
 
     @property
     def contributors(self):

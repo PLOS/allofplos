@@ -23,7 +23,11 @@ class License():
         """Initialize an instance of the license class."""
         self.element = permissions_element
         self.doi = doi
- 
+    
+    def __iter__(self):
+        return ((key, value) for key, value in self.license.items())
+    
+    @property
     def license(self):
         """Return dictionary of CC license information from the license field."""
         lic = ''
