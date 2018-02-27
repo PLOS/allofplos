@@ -30,6 +30,8 @@ class Journal():
         return next(value for key, value in journal_map.items() if key in doi)
     
     def __str__(self):
+        """Provides str(Journal()) style access to Journal().parse_plos_journal.
+        """
         return self.parse_plos_journal()
 
     def parse_plos_journal(self, caps_fixed=True):
