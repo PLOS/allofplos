@@ -4,9 +4,8 @@ from collections import OrderedDict
 class Journal():
     """For parsing the journal name element of articles, as well as converting DOIs to journal names."""
 
-    def __init__(self, doi, journal_meta_element):
+    def __init__(self, journal_meta_element):
         """Initialize an instance of the journal class."""
-        self.doi = doi
         self.element = journal_meta_element
 
     @staticmethod
@@ -29,6 +28,9 @@ class Journal():
                                   ])
 
         return next(value for key, value in journal_map.items() if key in doi)
+    
+    def __str__(self):
+        return self.parse_plos_journal()
 
     def parse_plos_journal(self, caps_fixed=True):
         """For an individual PLOS article, get the journal it was published in from the article XML.

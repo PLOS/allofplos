@@ -939,7 +939,7 @@ class Article():
             journal = Journal.doi_to_journal(self.doi)
         else:
             journal_meta = self.root.xpath('/article/front/journal-meta')[0]
-            journal = Journal(self.doi, journal_meta).parse_plos_journal()
+            journal = str(Journal(journal_meta))
         return journal
 
     @property
