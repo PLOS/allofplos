@@ -89,6 +89,16 @@ class Corpus:
                 for doi in self.iter_dois)
 
     @property
+    def random_article_iterator(self):
+        """iterator over random articles"""
+        return (Article(doi, directory=self.directory) 
+                for doi in self.iter_random_dois)
+
+    @property
+    def random_article(self):
+        return next(self.random_article_iterator)
+
+    @property
     def iter_random_dois(self):
         return (doi for doi in random.sample(self.dois, len(self)))
 
