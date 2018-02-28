@@ -87,6 +87,15 @@ class Corpus:
         """iterator of articles"""
         return (Article(doi, directory=self.directory) 
                 for doi in self.iter_dois)
+
+    @property
+    def iter_random_dois(self):
+        return (doi for doi in random.sample(self.dois, len(self)))
+
+    @property
+    def random_doi(self):
+        return next(self.iter_random_dois)
+
     def random_dois(self, count):
         """
         Gets a list of random DOIs. Construct from local files in
@@ -95,4 +104,5 @@ class Corpus:
         :return: a list of random DOIs for analysis
         """
 
-        return random.sample(self.dois, count)
+        for i in range(count):
+            yield next(self.iter_random_dois)
