@@ -1,12 +1,13 @@
-from collections import OrderedDict
 import os
 import random
+
+from collections import OrderedDict
 
 from .. import get_corpus_dir, Article
 from ..transformations import filename_to_doi, doi_to_path
 
 
-class Corpus():
+class Corpus:
     """A collection of PLOS articles."""
 
     def __init__(self, directory=None, extension='.xml'):
@@ -25,6 +26,9 @@ class Corpus():
         """
         out = "Corpus location: {0}\nNumber of files: {1}".format(self.directory, len(self.files))
         return out
+    
+    def __len__(self):
+        return len(self.dois)
 
     @property
     def iter_file_doi(self):
@@ -78,6 +82,11 @@ class Corpus():
         """List of article XML files in corpus directory, including the full path."""
         return list(self.iter_filepaths)
 
+    @property
+    def article_iterator(self):
+        """iterator of articles"""
+        return (Article(doi, directory=self.directory) 
+                for doi in self.iter_dois)
     def random_dois(self, count):
         """
         Gets a list of random DOIs. Construct from local files in
