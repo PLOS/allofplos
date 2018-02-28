@@ -100,9 +100,8 @@ def filename_to_doi(filename):
         doi = PREFIX + article
     elif validate_filename(filename):
         doi = PREFIX + os.path.splitext(filename)[0]
-    # NOTE: A filename should never validate as a DOI, so the next elif is wrong.
-    elif validate_doi(filename):
-        doi = filename
+    else:
+        doi = ''
     return doi
 
 

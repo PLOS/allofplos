@@ -278,9 +278,16 @@ def compare_article_pubdate(doi, days=22, directory=None):
         print("Pubdate error in {}".format(doi))
 
 
+def download_xml(doi, tempdir=newarticledir):
+    """For a given DOI, download its remote XML file to tempdir."""
+    art = Article(doi, directory=tempdir)
+    with open(art.filename, 'w', encoding='utf8') as f:
+        f.write(art.get_remote_xml())
+    return art
+
+
 def download_updated_xml(article_file,
-                         tempdir=newarticledir,
-                         vor_check=False):
+                         tempdir=newarticledir):
     """
     For an article file, compare local XML to remote XML
     If they're different, download new version of article
@@ -305,21 +312,9 @@ def download_updated_xml(article_file,
 
     if articleXML_remote == articleXML_local:
         updated = False
-        get_new = False
     else:
-        get_new = True
-        if vor_check:
-            # make sure that update is to a VOR for uncorrected proof
-            get_new = False
-            if article.remote_proof == 'vor_update':
-                get_new = True
-            # else:
-            #     updated = False
-        if get_new:
-            article_new = Article(article.doi, directory=tempdir)
-            with open(article_new.filename, 'w', encoding='utf8') as f:
-                f.write(articleXML_remote)
-            updated = True
+        article_new = download_xml(article.doi, tempdir=tempdir)
+        updated = True
     return updated
 
 
@@ -496,10 +491,10 @@ def download_vor_updates(directory=None, tempdir=newarticledir,
     if vor_updates_available is None:
         vor_updates_available = check_for_vor_updates()
     vor_updated_article_list = []
-    for article in tqdm(vor_updates_available, disable=None):
-        updated = download_updated_xml(article, vor_check=True)
+    for doi in tqdm(vor_updates_available, disable=None):
+        updated = download_updated_xml(doi_to_path(doi), tempdir=tempdir)
         if updated:
-            vor_updated_article_list.append(article)
+            vor_updated_article_list.append(doi)
 
     old_uncorrected_proofs = get_uncorrected_proofs()
     new_uncorrected_proofs_list = list(old_uncorrected_proofs - set(vor_updated_article_list))
@@ -547,7 +542,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None):
     print("Checking directly for additional VOR updates...")
     for doi in tqdm(article_list, disable=None):
         f = doi_to_path(doi)
-        updated = download_updated_xml(f, vor_check=True)
+        updated = download_updated_xml(f)
         if updated:
             proofs_download_list.append(doi)
     if proofs_download_list:
