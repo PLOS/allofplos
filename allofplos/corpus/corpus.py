@@ -29,6 +29,9 @@ class Corpus:
     
     def __len__(self):
         return len(self.dois)
+    
+    def __iter__(self):
+        return (article for article in self.random_article_iterator)
 
     @property
     def iter_file_doi(self):
