@@ -1,6 +1,6 @@
 import os
-import random
 
+from random import Random
 from collections import OrderedDict
 
 from .. import get_corpus_dir, Article
@@ -10,12 +10,13 @@ from ..transformations import filename_to_doi, doi_to_path
 class Corpus:
     """A collection of PLOS articles."""
 
-    def __init__(self, directory=None, extension='.xml'):
+    def __init__(self, directory=None, extension='.xml', seed=None):
         """Creation of an article corpus class."""
         if directory is None:
             directory = get_corpus_dir()
         self.directory = directory
         self.extension = extension
+        self.random = Random(seed)
 
     def __repr__(self):
         """Value of a corpus object when you call it directly on the command line.
@@ -103,7 +104,7 @@ class Corpus:
 
     @property
     def iter_random_dois(self):
-        return (doi for doi in random.sample(self.dois, len(self)))
+        return (doi for doi in self.random.sample(self.dois, len(self)))
 
     @property
     def random_doi(self):

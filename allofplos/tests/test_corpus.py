@@ -23,7 +23,6 @@ def test_corpus_iterator():
     }
 
 def test_corpus_random_article():
-    corpus = Corpus(TESTDATADIR)
-    random.seed(1000)
+    corpus = Corpus(TESTDATADIR, seed=1000)
     article = corpus.random_article
     assert article.doi == "10.1371/journal.pone.0185809"
