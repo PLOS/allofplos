@@ -41,7 +41,7 @@ class Corpus:
         Used to generate both DOI and file generators for the corpus.
         """
         return ((file_, filename_to_doi(file_))
-                for file_ in os.listdir(self.directory)
+                for file_ in sorted(os.listdir(self.directory))
                 if file_.endswith(self.extension) and 'DS_Store' not in file_)
 
     @property
