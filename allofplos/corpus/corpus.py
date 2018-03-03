@@ -50,6 +50,9 @@ class Corpus:
         else:
             return Article(value, directory=self.directory)
 
+    def __contains__(self, value):
+        return value in self.dois
+        
     @property
     def iter_file_doi(self):
         """Generator that returns filename, doi tuples for every file in the corpus.
