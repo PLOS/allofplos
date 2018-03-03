@@ -33,6 +33,21 @@ class Corpus:
     
     def __iter__(self):
         return (article for article in self.random_article_iterator)
+    
+    def __getitem__(self, value):
+        if value not in self.dois:
+            path= doi_to_path(value, directory=self.directory)
+            raise IndexError(("You attempted get {doi} from "
+                              "the corpus at \n{directory}. \n"
+                              "This would point to: {path}. \n"
+                              "Is that the file that was intended?"
+                              ).format(doi=value, 
+                                       directory=self.directory,
+                                       path=path
+                                      )
+                            )
+        else:
+            return Article(value, directory=self.directory)
 
     @property
     def iter_file_doi(self):
