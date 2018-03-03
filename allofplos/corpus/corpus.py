@@ -2,6 +2,7 @@ import os
 
 from random import Random
 from collections import OrderedDict
+from itertools import islice
 
 from .. import get_corpus_dir, Article
 from ..transformations import filename_to_doi, doi_to_path
@@ -32,7 +33,7 @@ class Corpus:
         return len(self.dois)
     
     def __iter__(self):
-        return (article for article in self.random_article_iterator)
+        return (article for article in self.random_article_generator)
     
     def __getitem__(self, value):
         if value not in self.dois:
@@ -102,20 +103,32 @@ class Corpus:
         return list(self.iter_filepaths)
 
     @property
-    def article_iterator(self):
+    def article_generator(self):
         """iterator of articles"""
         return (Article(doi, directory=self.directory) 
                 for doi in self.iter_dois)
 
     @property
-    def random_article_iterator(self):
+    def random_article_generator(self):
         """iterator over random articles"""
         return (Article(doi, directory=self.directory) 
                 for doi in self.iter_random_dois)
 
     @property
     def random_article(self):
-        return next(self.random_article_iterator)
+        return next(self.random_article_generator)
+
+    def random_sample(self, count):
+        """
+        Creates a generator for random articles. 
+
+        Length of generator specified in `count` parameter.
+
+        :param count: specify how many articles are to be returned
+        :return: a generator of random articles for analysis
+        """
+
+        return islice(self.random_article_generator, count)
 
     @property
     def iter_random_dois(self):
@@ -127,11 +140,11 @@ class Corpus:
 
     def random_dois(self, count):
         """
-        Gets a list of random DOIs. Construct from local files in
-        corpus directory. Length of list specified in `count` parameter.
+        Gets a list of random DOIs found in the corpus.
+
+        Length of list specified in `count` parameter.
         :param count: specify how many DOIs are to be returned
         :return: a list of random DOIs for analysis
         """
 
-        for i in range(count):
-            yield next(self.iter_random_dois)
+        return list(islice(self.iter_random_dois, count))
