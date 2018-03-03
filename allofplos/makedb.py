@@ -118,18 +118,11 @@ db.create_tables([Journal, PLOSArticle, ArticleType, CoAuthorPLOSArticle,
                   SubjectsPLOSArticle, Subjects])
 
 
-if args.starter:
-    corpus = Corpus(starterdir)
-    allfiles = corpus.iter_files
-else:
-    corpus = Corpus()
-    allfiles = corpus.iter_files
+corpus_dir = starterdir if args.starter else None
+allfiles = Corpus(corpus_dir).files
+files = random.sample(allfiles, args.random) if args.random else allfiles
 
-if args.random:
-    corpus = Corpus()
-    allfiles = random.sample(list(corpus.iter_files), args.random)
-
-for file_ in tqdm(allfiles):
+for file_ in tqdm(files):
     doi = filename_to_doi(file_)
     article = Article(doi)
     journal_name = journal_title_dict[article.journal.upper()]
