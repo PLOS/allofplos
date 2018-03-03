@@ -30,7 +30,7 @@ class Corpus():
     def iter_file_doi(self):
         """Generator that returns filename, doi tuples for every file in the corpus.
 
-        Used to generate both DOI and file generators for the corpus. 
+        Used to generate both DOI and file generators for the corpus.
         """
         return ((file_, filename_to_doi(file_))
                 for file_ in os.listdir(self.directory)
