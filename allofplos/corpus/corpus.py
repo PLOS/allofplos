@@ -35,20 +35,26 @@ class Corpus:
     def __iter__(self):
         return (article for article in self.random_article_generator)
     
-    def __getitem__(self, value):
-        if value not in self.dois:
-            path= doi_to_path(value, directory=self.directory)
+    def __getitem__(self, key):
+        
+        if isinstance(key, int):
+            return Article(self.dois[key], directory=self.directory)
+        elif isinstance(key, slice):
+            return (Article(doi, directory=self.directory) 
+                    for doi in self.dois[key])
+        elif key not in self.dois:
+            path= doi_to_path(key, directory=self.directory)
             raise IndexError(("You attempted get {doi} from "
                               "the corpus at \n{directory}. \n"
                               "This would point to: {path}. \n"
                               "Is that the file that was intended?"
-                              ).format(doi=value, 
+                              ).format(doi=key, 
                                        directory=self.directory,
                                        path=path
                                       )
                             )
         else:
-            return Article(value, directory=self.directory)
+            return Article(key, directory=self.directory)
 
     def __contains__(self, value):
         return value in self.dois
