@@ -28,3 +28,7 @@ def test_corpus_random_article(corpus):
     corpus = Corpus(TESTDATADIR, seed=1000)
     article = corpus.random_article
     assert article.doi == "10.1371/journal.pone.0185809"
+
+def test_corpus_indexing(corpus):
+    assert corpus["10.1371/journal.pbio.2001413"] == corpus[0]
+    assert next(corpus[:1]).doi == "10.1371/journal.pbio.2001413"
