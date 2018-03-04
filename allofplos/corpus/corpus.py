@@ -57,7 +57,15 @@ class Corpus:
             return Article(key, directory=self.directory)
 
     def __contains__(self, value):
-        return value in self.dois
+        is_in = False
+        if isinstance(value, Article):
+            is_in = value.doi in self.dois and value.directory == self.directory
+        elif isinstance(value, str):
+            doi_in = value in self.dois
+            file_in = value in self.files
+            filepath_in = value in self.filepaths
+            is_in = doi_in or file_in or filepath_in
+        return is_in
         
     @property
     def iter_file_doi(self):
