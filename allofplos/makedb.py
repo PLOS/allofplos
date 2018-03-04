@@ -20,7 +20,7 @@ from playhouse.sqlite_ext import SqliteExtDatabase
 from .corpus import Corpus
 from .transformations import filename_to_doi, convert_country
 from . import starterdir
-from .article_class import Article
+from .article import Article
 
 journal_title_dict = {
     'PLOS ONE': 'PLOS ONE',
