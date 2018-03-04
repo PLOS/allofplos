@@ -59,7 +59,8 @@ class Article:
         if exclude_refs:
             root = tree.getroot()
             back = tree.xpath('./back')
-            root.remove(back[0])
+            if back:
+                root.remove(back[0])
         local_xml = et.tostring(tree,
                                 method='xml',
                                 encoding='unicode',
