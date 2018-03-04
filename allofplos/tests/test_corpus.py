@@ -1,13 +1,23 @@
 from . import TESTDATADIR
-from .. import Corpus
+from .. import Corpus, starterdir
+from ..article_class import Article
 from ..corpus import listdir_nohidden
 
 import random
 import pytest
+import os
 
 @pytest.fixture
 def corpus():
     return Corpus(TESTDATADIR, seed=1000)
+
+@pytest.fixture
+def yes_article():
+    return Article('10.1371/journal.pbio.2002354', directory=TESTDATADIR)
+    
+@pytest.fixture
+def no_article():
+    return Article('10.1371/journal.pmed.0030132', directory=starterdir)
 
 def test_corpus_instantiate(corpus):
     assert isinstance(corpus, Corpus)
@@ -25,9 +35,23 @@ def test_corpus_iter_(corpus):
         '10.1371/journal.pbio.2001413',
     }
 
-def test_corpus_contains(corpus):
-    assert '10.1371/journal.pbio.2002354' in corpus.dois
-    assert '10.1371/journal.pmed.0030132' not in corpus.dois
+def test_corpus_contains_article(corpus, no_article, yes_article):
+    assert yes_article in corpus
+    assert no_article not in corpus
+
+def test_corpus_contains_doi(corpus, no_article, yes_article):
+    assert yes_article.doi in corpus
+    assert no_article.doi not in corpus
+
+def test_corpus_contains_filepath(corpus, no_article, yes_article):
+    ## check for filepath, which is currently called filename on Article
+    assert yes_article.filename in corpus
+    assert no_article.filename not in corpus
+
+def test_corpus_contains_file(corpus, no_article, yes_article):
+    ## check for filename, which is currently unavailable on Article
+    assert os.path.basename(yes_article.filename) in corpus
+    assert os.path.basename(no_article.filename) not in corpus
 
 def test_corpus_random_article(corpus):
     article = corpus.random_article
