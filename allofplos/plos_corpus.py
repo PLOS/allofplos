@@ -1,6 +1,6 @@
 import warnings
 
-from .corpus.plos_corpus import main
+from .update import main
 
 if __name__ == "__main__":
     warnings.simplefilter('always', DeprecationWarning)
