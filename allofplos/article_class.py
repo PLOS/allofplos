@@ -37,12 +37,14 @@ class Article():
         :type directory: str, optional
         """
         self.doi = doi
-        if directory:
-            self.directory = directory
-        else:
-            self.directory = get_corpus_dir()
+        self.directory = directory if directory else get_corpus_dir()
         self.reset_memoized_attrs()
         self._editor = None
+    
+    def __eq__(self, other):
+        doi_eq = self.doi == other.doi
+        dir_eq = self.directory == other.directory
+        return doi_eq and dir_eq
 
     def reset_memoized_attrs(self):
         """Reset attributes to None when instantiating a new article object.
