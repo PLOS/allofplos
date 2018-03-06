@@ -21,7 +21,7 @@ extras_require['all'] = sum(extras_require.values(), [])
 setup(
     name='allofplos',
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.10.2',
+    version='0.11.0',
     description='Get and analyze all PLOS articles',
     long_description=long_description,
     url='https://github.com/PLOS/allofplos',
