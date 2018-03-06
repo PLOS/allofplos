@@ -12,6 +12,12 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
+
+extras_require = {
+    'test': ['pytest>=3.4.2'], 
+}
+extras_require['all'] = sum(extras_require.values(), [])
+
 setup(
     name='allofplos',
     # https://packaging.python.org/en/latest/single_source_version.html
@@ -50,6 +56,7 @@ setup(
         'urllib3>=1.22',
         'unidecode>=0.04.21',
         ],
+    extras_require = extras_require,
     python_requires='>=3.4',
     # If there are data files included in your packages that need to be
     # installed, specify them here.  If using Python 2.6 or less, then these
