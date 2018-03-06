@@ -94,23 +94,29 @@ Here’s what the print statements might look like on a typical run:
 How to run the tests
 --------------------
 
-If you have pytest installed, from anywhere in the allofplos directory, run:
+To run the tests, you will need to install allofplos with its testing
+dependencies. These testing dependencies include ``pytest``, which we will use
+to run the tests.
 
-``(allofplos)$ pytest``
+To get all of the allofplos testing dependencies run:
 
-If you do not have pytest installed, from the top-level project directory, run:
+``(allofplos)$ pip install -U allofplos[test]``
 
-``(allofplos)$ python -m allofplos.tests.test_unittests``
+Then when you run: 
 
-Should return something like this:
+``(allofplos)$ pytest --pyargs allofplos``
 
-::
+It should return something like this:
 
-      ........
-      ----------------------------------------------------------------------
-      Ran 8 tests in 0.257s
+.. code::
+  
+  collected 20 items
 
-      OK
+  allofplos/tests/test_corpus.py ............                       [ 60%]
+  allofplos/tests/test_unittests.py ........                        [100%]
+
+  ==================== 20 passed in 0.36 seconds =========================
+
 
 Community guidelines
 --------------------

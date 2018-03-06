@@ -13,6 +13,27 @@ Provided that you are in the allofplos directory, install it with::
 
     pip install -U -e .
 
+How to run the tests
+--------------------
+
+``allofplos`` uses ``pytest`` to run its tests. Run ``pip install -e .[test]``
+from the top level of the directory, this will install pytest as well as any
+other testing dependencies.
+
+Once you have ``pytest`` installed, from inside the allofplos directory, run:
+
+``(allofplos)$ pytest``
+
+It should return something like:
+
+.. code::
+  
+  collected 20 items
+
+  allofplos/tests/test_corpus.py ............                       [ 60%]
+  allofplos/tests/test_unittests.py ........                        [100%]
+
+  ==================== 20 passed in 0.36 seconds =========================
 
 Thing to check before doing a release
 -------------------------------------
@@ -24,7 +45,8 @@ Thing to check before doing a release
 Making a release
 ----------------
 Remove untracked files::
-	git clean -xfdi
+  
+    git clean -xfdi
 
 Delete previous packages from dist directory::
 
