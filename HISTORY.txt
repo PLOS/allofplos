@@ -1,3 +1,18 @@
+0.11.0
+New Features
+– Article class properties: Taxonomy, Creative Commons license, volume, issue, elocation, doi_link
+– Many new Corpus class utilities with tutorial Jupyter Notebook, including `len(Corpus())`,`for article in Corpus()`,`Corpus.random_article`
+– Deprecates allofplos.plos_corpus in favor of allofplos.update
+
+Fixes
+– Removes all reference to PLOS's internal URLs
+– URLs now journal-specific; can construct each type of article link (to XML, to landing page, etc)
+– Tests no longer require internet connection, but do require pytest
+– Update readme and instructions for devs
+– Reorganize corpus code
+– Fixes Article class properties: abstract, figure-count, table-count, journal
+– Fixes bugs in transformations & download functions
+
 0.10.2 Fix updating uncorrected proofs to versions of record
 
 0.10.1 Fix unicode download and print statement
