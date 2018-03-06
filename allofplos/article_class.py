@@ -107,7 +107,7 @@ class Article():
         instantiating the article object.
         """
         if validate_doi(d) is False:
-            raise Exception("Invalid format for PLOS DOI")
+            raise Exception("Invalid format for PLOS DOI: {}".format(d))
         self.reset_memoized_attrs()
         self._doi = d
 

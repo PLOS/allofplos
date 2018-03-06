@@ -48,7 +48,7 @@ How to run the program
 
 Execute the following command.
 
-``(allofplos)$ python -m allofplos.plos_corpus``
+``(allofplos)$ python -m allofplos.update``
 
 The first time it runs it will download a >4.4 Gb zip file
 (**allofplos_xml.zip**) with all the XML files inside.
@@ -59,7 +59,7 @@ allofplos\_xml directory inside your installation of `allofplos`.
 
 If you want to see the directory on your file system where this is installed run
 
-``python -c "from allofplos.plos_regex import corpusdir; print(corpusdir)"``
+``python -c "from allofplos import get_corpus_dir; print(get_corpus_dir())"``
 
 If you ever downloaded the corpus before, it will make an incremental
 update to the existing corpus, the script checks for and then downloads
@@ -80,8 +80,8 @@ Here’s what the print statements might look like on a typical run:
 
     147 new articles to download.
     147 new articles downloaded.
-    3 corrected articles found.
-    0 corrected articles downloaded with new xml.
+    3 amended articles found.
+    0 amended articles downloaded with new xml.
     Creating new text list of uncorrected proofs from scratch.
     No new VOR articles indexed in Solr.
     17 VOR articles directly downloaded.
@@ -106,9 +106,9 @@ Should return something like this:
 
 ::
 
-      ......
+      ........
       ----------------------------------------------------------------------
-      Ran 6 tests in 3.327s
+      Ran 8 tests in 0.257s
 
       OK
 

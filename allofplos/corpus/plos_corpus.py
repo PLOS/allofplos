@@ -278,9 +278,16 @@ def compare_article_pubdate(doi, days=22, directory=None):
         print("Pubdate error in {}".format(doi))
 
 
+def download_xml(doi, tempdir=newarticledir):
+    """For a given DOI, download its remote XML file to tempdir."""
+    art = Article(doi, directory=tempdir)
+    with open(art.filename, 'w', encoding='utf8') as f:
+        f.write(art.get_remote_xml())
+    return art
+
+
 def download_updated_xml(article_file,
-                         tempdir=newarticledir,
-                         vor_check=False):
+                         tempdir=newarticledir):
     """
     For an article file, compare local XML to remote XML
     If they're different, download new version of article
@@ -305,21 +312,9 @@ def download_updated_xml(article_file,
 
     if articleXML_remote == articleXML_local:
         updated = False
-        get_new = False
     else:
-        get_new = True
-        if vor_check:
-            # make sure that update is to a VOR for uncorrected proof
-            get_new = False
-            if article.remote_proof == 'vor_update':
-                get_new = True
-            # else:
-            #     updated = False
-        if get_new:
-            article_new = Article(article.doi, directory=tempdir)
-            with open(article_new.filename, 'w', encoding='utf8') as f:
-                f.write(articleXML_remote)
-            updated = True
+        article_new = download_xml(article.doi, tempdir=tempdir)
+        updated = True
     return updated
 
 
@@ -496,10 +491,10 @@ def download_vor_updates(directory=None, tempdir=newarticledir,
     if vor_updates_available is None:
         vor_updates_available = check_for_vor_updates()
     vor_updated_article_list = []
-    for article in tqdm(vor_updates_available, disable=None):
-        updated = download_updated_xml(article, vor_check=True)
+    for doi in tqdm(vor_updates_available, disable=None):
+        updated = download_updated_xml(doi_to_path(doi), tempdir=tempdir)
         if updated:
-            vor_updated_article_list.append(article)
+            vor_updated_article_list.append(doi)
 
     old_uncorrected_proofs = get_uncorrected_proofs()
     new_uncorrected_proofs_list = list(old_uncorrected_proofs - set(vor_updated_article_list))
@@ -547,7 +542,7 @@ def remote_proofs_direct_check(tempdir=newarticledir, article_list=None):
     print("Checking directly for additional VOR updates...")
     for doi in tqdm(article_list, disable=None):
         f = doi_to_path(doi)
-        updated = download_updated_xml(f, vor_check=True)
+        updated = download_updated_xml(f)
         if updated:
             proofs_download_list.append(doi)
     if proofs_download_list:
@@ -646,50 +641,3 @@ def download_corpus_metadata_files(csv_abstracts=True, csv_no_abstracts=True, sq
         inF.close()
         outF.close()
         print("Extraction complete.")
-
-
-def main():
-    """
-    Entry point for the program. This is used when the program is used as a
-    standalone script
-    :return: None
-    """
-    directory = get_corpus_dir()
-
-    # Step 0: Initialize first copy of repository
-    try:
-        corpus_files = [name for name in os.listdir(directory) if os.path.isfile(
-                        os.path.join(directory, name))]
-    except FileNotFoundError:
-        corpus_files = []
-    if len(corpus_files) < min_files_for_valid_corpus:
-        print('Not enough articles in {}, re-downloading zip file'.format(directory))
-        # TODO: check if zip file is in top-level directory before downloading
-        create_local_plos_corpus()
-
-    # Step 1: Query solr via URL and construct DOI list
-        # Filtered by article type & scheduled for the last 14 days.
-        # Returns specific URL query & the number of search results.
-        # Parses the returned dictionary of article DOIs, removing common leading numbers, as a list.
-        # Compares to list of existing articles in the PLOS corpus folder to create list of DOIs to download.
-    print("Checking for new articles...")
-    dois_needed_list = get_dois_needed_list()
-
-    # Step 2: Download new articles
-        # For every doi in dois_needed_list, grab the accompanying XML from journal pages
-        # If no new articles, don't run any other cells
-        # Check if articles are uncorrected proofs
-        # Check if amended articles linked to new amendment articles are updated
-        # Merge new XML into folder
-        # If need to bulk download, please start here:
-        # https://drive.google.com/open?id=0B_JDnoghFeEKLTlJT09IckMwOFk
-    download_check_and_move(dois_needed_list,
-                            uncorrected_proofs_text_list,
-                            tempdir=newarticledir,
-                            destination=get_corpus_dir()
-                            )
-    return None
-
-
-if __name__ == "__main__":
-    main()

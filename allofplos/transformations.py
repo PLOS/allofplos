@@ -95,14 +95,13 @@ def filename_to_doi(filename):
     :return: full unique identifier for a PLOS article
     """
     filename = os.path.basename(filename)
-    if correction in filename and validate_filename(filename):
+    if not validate_filename(filename):
+        raise Exception("Invalid format for PLOS filename: {}".format(filename))
+    elif correction in filename:
         article = 'annotation/' + filename.split('.', 4)[2]
         doi = PREFIX + article
-    elif validate_filename(filename):
+    else:
         doi = PREFIX + os.path.splitext(filename)[0]
-    # NOTE: A filename should never validate as a DOI, so the next elif is wrong.
-    elif validate_doi(filename):
-        doi = filename
     return doi
 
 
@@ -155,6 +154,8 @@ def doi_to_url(doi):
     :param doi: full unique identifier for a PLOS article
     :return: online location of a PLOS article's XML
     """
+    if validate_doi(doi) is False:
+        raise Exception("Invalid format for PLOS DOI: {}".format(doi))
     journal = Journal.doi_to_journal(doi)
     base_page = _get_base_page(journal)
     return ''.join([base_page, 'article/file?id=', doi, URL_SUFFIX])
@@ -174,13 +175,12 @@ def doi_to_path(doi, directory=None):
     """
     if directory is None:
         directory = get_corpus_dir()
-    if doi.startswith(ANNOTATION_DOI) and validate_doi(doi):
+    if not validate_doi(doi):
+        raise Exception("Invalid format for PLOS DOI: {}".format(doi))
+    elif doi.startswith(ANNOTATION_DOI):
         article_file = os.path.join(directory, "plos.correction." + doi.split('/')[-1] + SUFFIX_LOWER)
-    elif validate_doi(doi):
+    else:
         article_file = os.path.join(directory, doi.lstrip(PREFIX) + SUFFIX_LOWER)
-    # NOTE: The following check is weird, a DOI should never validate as a file name.
-    elif validate_filename(doi):
-        article_file = doi
     return article_file
 
 
