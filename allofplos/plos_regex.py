@@ -24,6 +24,8 @@ full_doi_regex_search = re.compile(r"10\.1371/journal\.p[a-zA-Z]{3}\.[\d]{7}"
                                    "|10\.1371/annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")
 partial_doi_regex_search = re.compile(r"p[a-zA-Z]{3}\.[\d]{7}"
                                       "|annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")
+partial_doi_regex_match = re.compile(r"^p[a-zA-Z]{3}\.[\d]{7}$"
+                                     r"|^annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}$")
 currents_doi_regex = re.compile(regex_match_prefix+regex_body_currents)
 file_regex_match = re.compile(regex_file_search+r"\.xml")
 BASE_URL = 'http://journals.plos.org/plosone/article/file?id='
@@ -41,6 +43,14 @@ def validate_doi(doi):
     :return: True if string is in valid PLOS DOI format; False if not
     """
     return bool(full_doi_regex_match.search(doi))
+
+
+def validate_partial_doi(partial_doi):
+    """For an individual string, tests whether the full string is in a valid PLOS partial DOI format.
+    Example: 'pbio.2000777' is True, but '10.1371/journal.pbio.2000777' is False
+    :return: True if string is in valid PLOS partial DOI format; False if not
+    """ 
+    return bool(partial_doi_regex_match.search(partial_doi))
 
 
 def validate_filename(filename):
@@ -80,7 +90,7 @@ def find_valid_dois(doi):
 def find_valid_partial_dois(doi):
     """
     For an individual string, searches for any valid partial PLOS DOIs within it and returns them
-    Uses for finding DOIs in PLOS job tickets
+    Used for finding DOIs in PLOS job tickets
     :return: list of valid PLOS partial DOIs contained within string
     """
     return partial_doi_regex_search.findall(doi)
