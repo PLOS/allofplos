@@ -9,7 +9,8 @@ import requests
 
 from . import get_corpus_dir
 from .transformations import (filename_to_doi, _get_base_page, LANDING_PAGE_SUFFIX,
-                              URL_SUFFIX, plos_page_dict, doi_url, doi_to_url, doi_to_path)
+                              URL_SUFFIX, plos_page_dict, doi_url, doi_to_url, doi_to_path,
+                              partial_to_doi)
 from .plos_regex import validate_doi, find_valid_partial_dois
 from .elements import (parse_article_date, get_contrib_info,
                        Journal, License, match_contribs_to_dicts)
@@ -1343,17 +1344,13 @@ class Article:
         return cls(filename_to_doi(filename), directory=directory)
 
     @classmethod
-    def from_partial_doi(cls, partial_doi):
+    def from_partial_doi(cls, partial_doi, directory=None):
         """Initiate an article object using a partial DOI.
         Uses regex to make sure it's a valid partial DOI.
         Used for internal PLOS methods.
         """
-        doi = ''
-        if len(find_valid_partial_dois(partial_doi)) == 1:
-            if 'annotation' in partial_doi:
-                doi = '10.1371/' + partial_doi
-            else:
-                doi = '10.1371/journal.' + partial_doi
-        else:
-            print(find_valid_partial_dois(partial_doi))
-        return cls(doi)
+        if directory is None:
+            directory = get_corpus_dir()
+        doi = partial_to_doi(partial_doi)
+
+        return cls(doi, directory=directory)
