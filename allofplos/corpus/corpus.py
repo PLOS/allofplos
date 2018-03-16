@@ -5,7 +5,8 @@ from collections import OrderedDict
 from itertools import islice
 
 from .. import get_corpus_dir, Article
-from ..transformations import filename_to_doi, doi_to_path
+from ..transformations import filename_to_doi, doi_to_path, partial_to_doi
+from ..plos_regex import validate_doi, validate_partial_doi
 
 
 class Corpus:
@@ -36,13 +37,16 @@ class Corpus:
         return (article for article in self.random_article_generator)
     
     def __getitem__(self, key):
-        
         if isinstance(key, int):
             return Article(self.dois[key], directory=self.directory)
         elif isinstance(key, slice):
             return (Article(doi, directory=self.directory) 
                     for doi in self.dois[key])
         elif key not in self.dois:
+            if partial_to_doi(key) in self.dois:
+                return Article.from_partial_doi(key, directory=self.directory)
+            elif validate_partial_doi(key):
+                key = partial_to_doi(key)
             path= doi_to_path(key, directory=self.directory)
             raise IndexError(("You attempted get {doi} from "
                               "the corpus at \n{directory}. \n"
