@@ -44,13 +44,13 @@ class Journal():
         """
         journal = ''
         # location for newer journal articles
-        journal_path_1 = self.element.xpath('/journal-title-group/journal-title')
+        journal_path_1 = self.element.xpath('./journal-title-group/journal-title')
         if len(journal_path_1):
             assert len(journal_path_1) == 1
             journal = journal_path_1[0].text
         else:
             # location for older journal articles
-            journal_path_2 = self.element.xpath('/journal-title')
+            journal_path_2 = self.element.xpath('./journal-title')
             if len(journal_path_2):
                 assert len(journal_path_2) == 1
                 journal = journal_path_2[0].text
