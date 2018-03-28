@@ -37,7 +37,7 @@ from .. import get_corpus_dir, newarticledir, uncorrected_proofs_text_list
 
 from ..plos_regex import validate_doi
 from ..transformations import (BASE_URL_API, filename_to_doi, doi_to_path, doi_to_url)
-from ..article_class import Article
+from ..article import Article
 from .gdrive import (download_file_from_google_drive, get_zip_metadata, unzip_articles,
                      ZIP_ID, LOCAL_ZIP, LOCAL_TEST_ZIP, TEST_ZIP_ID, min_files_for_valid_corpus)
 

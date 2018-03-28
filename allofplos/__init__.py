@@ -30,5 +30,5 @@ del os
 # import after creating global variables that they may rely upon
 # (e.g., corpusdir)
 
-from .article_class import Article
+from .article import Article
 from .corpus import Corpus

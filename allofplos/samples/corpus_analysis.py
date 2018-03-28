@@ -22,7 +22,7 @@ from ..transformations import (filename_to_doi, doi_to_url)
 from ..plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list,
                            download_updated_xml, get_all_solr_dois,
                            download_check_and_move)
-from ..article_class import Article
+from ..article import Article
 
 counter = collections.Counter
 pmcdir = "pmc_articles"

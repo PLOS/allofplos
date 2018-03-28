@@ -1,6 +1,6 @@
 from . import TESTDATADIR
 from .. import Corpus, starterdir
-from ..article_class import Article
+from ..article import Article
 from ..corpus import listdir_nohidden
 
 import random

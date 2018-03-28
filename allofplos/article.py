@@ -9,13 +9,14 @@ import requests
 
 from . import get_corpus_dir
 from .transformations import (filename_to_doi, _get_base_page, LANDING_PAGE_SUFFIX,
-                              URL_SUFFIX, plos_page_dict, doi_url)
+                              URL_SUFFIX, plos_page_dict, doi_url, doi_to_url, doi_to_path)
 from .plos_regex import validate_doi
 from .elements import (parse_article_date, get_contrib_info,
                        Journal, License, match_contribs_to_dicts)
+from .utils import dedent
 
 
-class Article():
+class Article:
     """The primary object of a PLOS article, initialized by a valid PLOS DOI.
 
     """
@@ -46,6 +47,62 @@ class Article():
         dir_eq = self.directory == other.directory
         return doi_eq and dir_eq
 
+    def __str__(self, exclude_refs=True):
+        """Output when you print an article object on the command line.
+
+        For parsing and viewing the XML of a local article. Should not be used for hashing
+        Excludes <back> element (including references list) for easier viewing
+        :param exclude_refs: remove references from the article tree (eases print viewing)
+        """
+        parser = et.XMLParser(remove_blank_text=True)
+        tree = et.parse(self.filename, parser)
+        if exclude_refs:
+            root = tree.getroot()
+            back = tree.xpath('./back')
+            if back:
+                root.remove(back[0])
+        local_xml = et.tostring(tree,
+                                method='xml',
+                                encoding='unicode',
+                                pretty_print=True)
+        return local_xml
+
+    def __repr__(self):
+        """Value of an article object when you call it directly on the command line.
+
+        Shows the DOI and title of the article
+        :returns: DOI and title
+        :rtype: {str}
+        """
+        out = "DOI: {0}\nTitle: {1}".format(self.doi, self.title)
+        return out
+    
+    
+    def _repr_html_(self):
+        """Nice display for Jupyter notebook"""
+    
+        titlestyle = 'display:inline-flex;'
+        titletextstyle = 'margin-left:.5em;'
+        titlelink = ('<span style="{titlestyle}"><a href="{url}">'
+                     '<em>{title}</em></a></span>').format(
+                        url=self.page,
+                        title=self.title,
+                        titlestyle=titlestyle+titletextstyle,
+                    )
+                    
+        doilink = '<span><a href="{url}"><code>{doi}</code></a></span>'.format(
+                        url=self.doi_link(), 
+                        doi=self.doi,
+                  )
+        out = dedent("""<div> 
+        <span style="{titlestyle}">Title: {titlelink}</span></br>
+        <span>DOI: <span>{doilink} 
+        </div>
+        """).format(doilink=doilink, titlelink=titlelink, titlestyle=titlestyle)
+    
+        return out
+        
+        
     def reset_memoized_attrs(self):
         """Reset attributes to None when instantiating a new article object.
 
@@ -111,34 +168,6 @@ class Article():
         self.reset_memoized_attrs()
         self._doi = d
 
-    def __str__(self, exclude_refs=True):
-        """Output when you print an article object on the command line.
-
-        For parsing and viewing the XML of a local article. Should not be used for hashing
-        Excludes <back> element (including references list) for easier viewing
-        :param exclude_refs: remove references from the article tree (eases print viewing)
-        """
-        parser = et.XMLParser(remove_blank_text=True)
-        tree = et.parse(self.filename, parser)
-        if exclude_refs:
-            root = tree.getroot()
-            back = tree.xpath('./back')
-            root.remove(back[0])
-        local_xml = et.tostring(tree,
-                                method='xml',
-                                encoding='unicode',
-                                pretty_print=True)
-        return local_xml
-
-    def __repr__(self):
-        """Value of an article object when you call it directly on the command line.
-
-        Shows the DOI and title of the article
-        :returns: DOI and title
-        :rtype: {str}
-        """
-        out = "DOI: {0}\nTitle: {1}".format(self.doi, self.title)
-        return out
 
     def doi_link(self):
         """The link of the DOI, which redirects to the journal URL."""
