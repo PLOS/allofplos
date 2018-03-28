@@ -1,5 +1,17 @@
 from collections import OrderedDict
 
+journal_map = OrderedDict([
+                         ('pone', 'PLOS ONE'),
+                         ('pcbi', 'PLOS Computational Biology'),
+                         ('pntd', 'PLOS Neglected Tropical Diseases'),
+                         ('pgen', 'PLOS Genetics'),
+                         ('ppat', 'PLOS Pathogens'),
+                         ('pbio', 'PLOS Biology'),
+                         ('pmed', 'PLOS Medicine'),
+                         ('pctr', 'PLOS Clinical Trials'),
+                         ('annotation', 'PLOS ONE')
+                          ])
+
 
 class Journal():
     """For parsing the journal name element of articles, as well as converting DOIs to journal names."""
@@ -15,20 +27,9 @@ class Journal():
         For the subset of DOIs with 'annotation' in the name, assumes PLOS ONE.
         :return: string of journal name
         """
-        journal_map = OrderedDict([
-                                   ('pone', 'PLOS ONE'),
-                                   ('pcbi', 'PLOS Computational Biology'),
-                                   ('pntd', 'PLOS Neglected Tropical Diseases'),
-                                   ('pgen', 'PLOS Genetics'),
-                                   ('ppat', 'PLOS Pathogens'),
-                                   ('pbio', 'PLOS Biology'),
-                                   ('pmed', 'PLOS Medicine'),
-                                   ('pctr', 'PLOS Clinical Trials'),
-                                   ('annotation', 'PLOS ONE')
-                                  ])
 
         return next(value for key, value in journal_map.items() if key in doi)
-    
+
     def __str__(self):
         """Provides str(Journal()) style access to Journal().parse_plos_journal.
         """
@@ -65,4 +66,6 @@ class Journal():
             if journal[0].lower() == 'plos':
                 journal[0] = "PLOS"
             journal = (' ').join(journal)
+
+        assert journal in journal_map.values(), '{}: journal field not a valid PLOS journal'.format(journal)
         return journal
