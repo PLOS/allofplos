@@ -1,5 +1,6 @@
 allofplos_xml/
 *.zip
+*.DS_Store
 *.log
 .ipynb_checkpoints/*
 *.nxml
