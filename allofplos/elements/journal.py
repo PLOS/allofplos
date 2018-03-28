@@ -12,6 +12,16 @@ journal_map = OrderedDict([
                          ('annotation', 'PLOS ONE')
                           ])
 
+nlm_ta_journal = {'plos negl trop dis': 'PLOS Neglected Tropical Diseases',
+                  'plos pathog': 'PLOS Pathogens',
+                  'plos genet': 'PLOS Genetics',
+                  'plos biol': 'PLOS Biology',
+                  'plos med': 'PLOS Medicine',
+                  'plos medicin': 'PLOS Medicine',
+                  'plos one': 'PLOS ONE',
+                  'plos comput biol': 'PLOS Computational Biology',
+                 }
+
 
 class Journal():
     """For parsing the journal name element of articles, as well as converting DOIs to journal names."""
@@ -60,6 +70,7 @@ class Journal():
                 nlm_ta_id = [j for j in self.element.getchildren() if j.attrib.get('journal-id-type', None) == 'nlm-ta']
                 assert len(nlm_ta_id) == 1
                 journal = nlm_ta_id[0].text
+                journal = nlm_ta_journal.get(journal.lower(), journal)
 
         if caps_fixed:
             journal = journal.split()
