@@ -17,7 +17,7 @@ corpus for further analysis. Use this program to download all PLOS XML
 article files instead of doing web scraping.
 
 **NOTE**: This software is not stable, we consider it beta state and will
-be in this stage until version 1.0. This means that programming interface 
+be in this stage until version 1.0. This means that programming interface
 may change and after a new version a full corpus download may be required.
 
 Installation instructions
@@ -102,14 +102,14 @@ To get all of the allofplos testing dependencies run:
 
 ``(allofplos)$ pip install -U allofplos[test]``
 
-Then when you run: 
+Then when you run:
 
 ``(allofplos)$ pytest --pyargs allofplos``
 
 It should return something like this:
 
 .. code::
-  
+
   collected 20 items
 
   allofplos/tests/test_corpus.py ............                       [ 60%]
@@ -117,6 +117,20 @@ It should return something like this:
 
   ==================== 20 passed in 0.36 seconds =========================
 
+Docker image
+------------
+
+For convenience, we provide a docker image (for Linux and macOS) with the allofplos script plus the whole PLOS corpus pre-downloaded. It can be installed with:
+
+``$ docker pull plos/allofplos``
+
+To use the image, run it like this:
+
+``$ docker run -it plos/allofplos:latest bash``
+
+To generate a new image, use the included Dockerfile:
+
+``$ docker build -t PLOS/allofplos .``
 
 Community guidelines
 --------------------
