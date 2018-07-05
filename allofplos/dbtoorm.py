@@ -2,12 +2,13 @@
     make queries without using SQL syntax. This example uses peewee as ORM.
     It should be used as a template, the end user could edit it to fit their
     needs.
-    TODO: Add more sample queries.
 """
 
 from peewee import *
 
-database = SqliteDatabase('ploscorpus.db', **{})
+# Start of ORM classes creation.
+
+database = SqliteDatabase('starter.db', **{})
 
 class UnknownField(object):
     def __init__(self, *_, **__): pass
@@ -78,8 +79,11 @@ class Coauthorplosarticle(BaseModel):
     class Meta:
         db_table = 'coauthorplosarticle'
 
+# End of ORM classes creation.
 
-
+# Query the starter database to retrieve all paper published in the journal
+# PLOS Computational Biology, since 2008 with a corresponding author from
+# France.
 query = (Plosarticle
          .select()
          .join(Coauthorplosarticle)
@@ -91,17 +95,10 @@ query = (Plosarticle
          .where(Journal.journal == 'PLOS Computational Biology')
          )
 
+# Get how many papers are returned
+print("Papers: {}".format(query.count()))
+
+# Get the DOIs of all the papers found with the query
+print("DOIs:")
 for papers in query:
     print(papers.doi)
-print(query.count())
-
-query = (Plosarticle
-         .select()
-         .join(Coauthorplosarticle)
-         .join(Correspondingauthor)
-         .join(Affiliations)
-         .join(Journal, on=(Plosarticle.journal == Journal.id))
-         .where(Country.country == 'France')
-         .where(Plosarticle.created_date > '2008-1-1')
-         .where(Journal.journal == 'PLOS Computational Biology')
-         )
