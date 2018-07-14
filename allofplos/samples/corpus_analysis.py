@@ -19,9 +19,9 @@ from .. import get_corpus_dir, newarticledir
 
 from ..plos_regex import (validate_doi, full_doi_regex_match, validate_url, validate_filename)
 from ..transformations import (filename_to_doi, doi_to_url)
-from ..plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list,
-                           download_updated_xml, get_all_solr_dois,
-                           download_check_and_move)
+from ..corpus.plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list,
+                                  download_updated_xml, get_all_solr_dois,
+                                  download_check_and_move)
 from ..article import Article
 
 counter = collections.Counter
@@ -300,7 +300,7 @@ def get_all_local_dois(directory=None):
 def get_all_plos_dois(local_articles=None, solr_articles=None):
     '''
     Collects lists of articles for local and solr, calculates the difference.
-    Missing local downloads easily solved by re-running plos_corpus.py.
+    Missing local downloads easily solved by re-running update.py.
     Missing solr downloads require attention.
     :return: every DOI in PLOS corpus, across local and remote versions
     '''
@@ -310,7 +310,7 @@ def get_all_plos_dois(local_articles=None, solr_articles=None):
         local_articles = get_all_local_dois()
     missing_local_articles = set(solr_articles) - set(local_articles)
     if missing_local_articles:
-        print('re-run plos_corpus.py to download latest {0} PLOS articles locally.'
+        print('run update.py (python -m allofplos.update) to download latest {0} PLOS articles locally.'
               .format(len(missing_local_articles)))
     missing_solr_articles = set(local_articles) - set(solr_articles)
     plos_articles = set(solr_articles + local_articles)
