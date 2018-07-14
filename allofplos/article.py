@@ -904,6 +904,12 @@ class Article:
         return article_path
 
     @property
+    def filename(self):
+        """The basename of the article's XML file.
+        """
+        return os.path.basename(self.filepath)
+
+    @property
     def local(self):
         """Boolean of whether the article is stored locally or not.
 
