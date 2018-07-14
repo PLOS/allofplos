@@ -17,7 +17,7 @@ corpus for further analysis. Use this program to download all PLOS XML
 article files instead of doing web scraping.
 
 **NOTE**: This software is not stable, we consider it beta state and will
-be in this stage until version 1.0. This means that programming interface 
+be in this stage until version 1.0. This means that programming interface
 may change and after a new version a full corpus download may be required.
 
 Installation instructions
@@ -35,7 +35,7 @@ Using pip:
 
 This should install *allofplos* and requirements. At this stage you are ready to go.
 
-If you want to manually install from source (for example for development purposes), first clone the proyect repository:
+If you want to manually install from source (for example for development purposes), first clone the project repository:
 
 ``(allofplos)$ git clone git@github.com:PLOS/allofplos.git``
 
@@ -53,8 +53,8 @@ Execute the following command.
 The first time it runs it will download a >4.4 Gb zip file
 (**allofplos_xml.zip**) with all the XML files inside.
 **Note**: Make sure that you have enough space in your device for the
-zip file and for it content before running this command (at least 30Gb).
-After this file is downloaded, it will extract it contents into
+zip file and for its content before running this command (at least 30Gb).
+After this file is downloaded, it will extract its contents into the
 allofplos\_xml directory inside your installation of `allofplos`.
 
 If you want to see the directory on your file system where this is installed run
@@ -62,14 +62,13 @@ If you want to see the directory on your file system where this is installed run
 ``python -c "from allofplos import get_corpus_dir; print(get_corpus_dir())"``
 
 If you ever downloaded the corpus before, it will make an incremental
-update to the existing corpus, the script checks for and then downloads
-to a temporary folder:
+update to the existing corpus. The script:
 
--  individual new articles that have been published
+-  checks for and then downloads to a temporary folder individual new articles that have been published
 -  of those new articles, checks whether they are corrections (and
    whether the linked corrected article has been updated)
 -  checks whether there are VORs (Versions of Record) for uncorrected
-   proofs in the main articles directory & downloads those
+   proofs in the main articles directory and downloads those
 -  checks whether the newly downloaded articles are uncorrected proofs
    or not after all of these checks, it moves the new articles into the
    main articles folder.
@@ -94,22 +93,22 @@ Here’s what the print statements might look like on a typical run:
 How to run the tests
 --------------------
 
-To run the tests, you will need to install allofplos with its testing
+To run the tests, you will need to install *allofplos* with its testing
 dependencies. These testing dependencies include ``pytest``, which we will use
 to run the tests.
 
-To get all of the allofplos testing dependencies run:
+To get all of the *allofplos* testing dependencies run:
 
 ``(allofplos)$ pip install -U allofplos[test]``
 
-Then when you run: 
+Then when you run:
 
 ``(allofplos)$ pytest --pyargs allofplos``
 
 It should return something like this:
 
 .. code::
-  
+
   collected 20 items
 
   allofplos/tests/test_corpus.py ............                       [ 60%]
