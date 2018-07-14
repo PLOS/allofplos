@@ -122,9 +122,7 @@ corpus_dir = starterdir if args.starter else None
 allfiles = Corpus(corpus_dir).files
 files = random.sample(allfiles, args.random) if args.random else allfiles
 
-for file_ in tqdm(files):
-    doi = filename_to_doi(file_)
-    article = Article(doi)
+for article in tqdm(Corpus(corpus_dir)):
     journal_name = journal_title_dict[article.journal.upper()]
     with db.atomic() as atomic:
         try:
@@ -145,7 +143,7 @@ for file_ in tqdm(files):
             db.rollback()
             j_type = JATSType.get(JATSType.jats_type == article.type_)
     p_art = PLOSArticle.create(
-        DOI = doi,
+        DOI=article.doi,
         journal = journal,
         abstract=article.abstract.replace('\n', '').replace('\t', ''),
         title = article.title.replace('\n', '').replace('\t', ''),
