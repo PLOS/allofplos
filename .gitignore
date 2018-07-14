@@ -1,6 +1,5 @@
 allofplos_xml/
 *.zip
-*.DS_Store
 *.nxml
 *.json
 *.swp
@@ -15,6 +14,10 @@ zip_info.txt
 !tests/testdata/plos.correction.3155a3e9-5fbe-435c-a07a-e9a4846ec0b6.xml
 !tests/testdata/journal.pone.0185809.xml
 
+## MacOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
 
 ## Python specific files
 # Byte-compiled / optimized / DLL files
