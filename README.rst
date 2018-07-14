@@ -55,7 +55,7 @@ The first time it runs it will download a >4.4 Gb zip file
 **Note**: Make sure that you have enough space in your device for the
 zip file and for its content before running this command (at least 30Gb).
 After this file is downloaded, it will extract its contents into the
-allofplos\_xml directory inside your installation of `allofplos`.
+allofplos\_xml directory inside your installation of *allofplos*.
 
 If you want to see the directory on your file system where this is installed run
 
