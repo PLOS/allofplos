@@ -45,13 +45,13 @@ def test_corpus_contains_doi(corpus, no_article, yes_article):
 
 def test_corpus_contains_filepath(corpus, no_article, yes_article):
     ## check for filepath, which is currently called filename on Article
-    assert yes_article.filename in corpus
-    assert no_article.filename not in corpus
+    assert yes_article.filepath in corpus
+    assert no_article.filepath not in corpus
 
 def test_corpus_contains_file(corpus, no_article, yes_article):
     ## check for filename, which is currently unavailable on Article
-    assert os.path.basename(yes_article.filename) in corpus
-    assert os.path.basename(no_article.filename) not in corpus
+    assert os.path.basename(yes_article.filepath) in corpus
+    assert os.path.basename(no_article.filepath) not in corpus
 
 def test_corpus_random_article(corpus):
     article = corpus.random_article

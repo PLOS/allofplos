@@ -281,7 +281,7 @@ def compare_article_pubdate(doi, days=22, directory=None):
 def download_xml(doi, tempdir=newarticledir):
     """For a given DOI, download its remote XML file to tempdir."""
     art = Article(doi, directory=tempdir)
-    with open(art.filename, 'w', encoding='utf8') as f:
+    with open(art.filepath, 'w', encoding='utf8') as f:
         f.write(art.get_remote_xml())
     return art
 
