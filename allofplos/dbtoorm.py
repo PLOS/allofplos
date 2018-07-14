@@ -43,11 +43,11 @@ class Journal(BaseModel):
 
 class Plosarticle(BaseModel):
     doi = TextField(db_column='DOI', unique=True)
-    jats_type = ForeignKeyField(db_column='JATS_type_id', rel_model=Jatstype, to_field='id')
+    jats_type = ForeignKeyField(column_name='JATS_type_id', model=Jatstype, field='id')
     abstract = TextField()
     created_date = DateTimeField()
-    journal = ForeignKeyField(db_column='journal_id', rel_model=Journal, to_field='id')
-    plostype = ForeignKeyField(db_column='plostype_id', rel_model=Articletype, to_field='id')
+    journal = ForeignKeyField(column_name='journal_id', model=Journal, field='id')
+    plostype = ForeignKeyField(column_name='plostype_id', model=Articletype, field='id')
     title = TextField()
     word_count = IntegerField()
 
@@ -61,9 +61,9 @@ class Country(BaseModel):
         db_table = 'country'
 
 class Correspondingauthor(BaseModel):
-    affiliation = ForeignKeyField(db_column='affiliation_id', rel_model=Affiliations, to_field='id')
+    affiliation = ForeignKeyField(column_name='affiliation_id', model=Affiliations, field='id')
     corr_author_email = CharField(unique=True)
-    country = ForeignKeyField(db_column='country_id', rel_model=Country, to_field='id')
+    country = ForeignKeyField(column_name='country_id', model=Country, field='id')
     given_name = TextField(null=True)
     group_name = TextField(null=True)
     surname = TextField(null=True)
@@ -73,8 +73,8 @@ class Correspondingauthor(BaseModel):
         db_table = 'correspondingauthor'
 
 class Coauthorplosarticle(BaseModel):
-    article = ForeignKeyField(db_column='article_id', rel_model=Plosarticle, to_field='id')
-    corr_author = ForeignKeyField(db_column='corr_author_id', rel_model=Correspondingauthor, to_field='id')
+    article = ForeignKeyField(column_name='article_id', model=Plosarticle, field='id')
+    corr_author = ForeignKeyField(column_name='corr_author_id', model=Correspondingauthor, field='id')
 
     class Meta:
         db_table = 'coauthorplosarticle'

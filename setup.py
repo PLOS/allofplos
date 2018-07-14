@@ -14,7 +14,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 
 extras_require = {
-    'test': ['pytest>=3.4.2'], 
+    'test': ['pytest>=3.4.2'],
 }
 extras_require['all'] = sum(extras_require.values(), [])
 
@@ -48,7 +48,7 @@ setup(
         'chardet>=3.0.4',
         'idna>=2.6',
         'lxml>=4.0.0',
-        'peewee>=2.10.2',
+        'peewee>=3.5.2',
         'python-utils>=2.2.0',
         'requests>=2.18.4',
         'six>=1.11.0',
