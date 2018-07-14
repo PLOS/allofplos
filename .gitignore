@@ -1,22 +1,141 @@
 allofplos_xml/
 *.zip
-*.DS_Store
-*.log
-.ipynb_checkpoints/*
 *.nxml
 *.json
 *.swp
-*.pyc
 *.js
 !requirements.txt
 *.xlsx
 *.csv
 !doi_to_pmc.csv
 *.iml
-*/.ipynb_checkpoints/*
-*.egg-info/
 zip_info.txt
-.cache/*
 !tests/testdata/journal.pbio.2001413.xml
 !tests/testdata/plos.correction.3155a3e9-5fbe-435c-a07a-e9a4846ec0b6.xml
 !tests/testdata/journal.pone.0185809.xml
+
+## MacOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## SublimeText specific files
+
+# Cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Workspace files
+*.sublime-workspace
+
+# Package control
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github token
+GitHub.sublime-settings
+
+## Python specific files
+# Byte-compiled / optimized / DLL files
+__pycache__
+.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#   Usually these files are written by a python script from a template
+#    before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff
+instance/
+.webassets-cache
+
+# Scrapy stuff
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv
+ENV/
+env.bak/
+venv.bak/
+
+# Rope project settings
+.ropeproject
+
+# mypy
+.mypy_cache
