@@ -19,6 +19,31 @@ zip_info.txt
 .AppleDouble
 .LSOverride
 
+## SublimeText specific files
+
+# Cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Workspace files
+*.sublime-workspace
+
+# Package control
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github token
+GitHub.sublime-settings
+
 ## Python specific files
 # Byte-compiled / optimized / DLL files
 __pycache__
