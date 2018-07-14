@@ -17,10 +17,10 @@ from peewee import Model, CharField, ForeignKeyField, TextField, \
     DateTimeField, BooleanField, IntegerField, IntegrityError
 from playhouse.sqlite_ext import SqliteExtDatabase
 
-from .corpus import Corpus
-from .transformations import filename_to_doi, convert_country
-from . import starterdir
-from .article import Article
+from allofplos.corpus import Corpus
+from allofplos.transformations import filename_to_doi, convert_country
+from allofplos import starterdir
+from allofplos.article import Article
 
 journal_title_dict = {
     'PLOS ONE': 'PLOS ONE',
