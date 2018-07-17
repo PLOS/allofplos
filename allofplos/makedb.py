@@ -8,7 +8,7 @@ Make a SQLite DB out of articles XML files
 import argparse
 import datetime
 import os
-import random
+from itertools import islice
 
 from tqdm import tqdm
 import sqlite3
@@ -119,10 +119,10 @@ db.create_tables([Journal, PLOSArticle, ArticleType, CoAuthorPLOSArticle,
 
 
 corpus_dir = starterdir if args.starter else None
-allfiles = Corpus(corpus_dir).files
-files = random.sample(allfiles, args.random) if args.random else allfiles
+all_files = Corpus(corpus_dir)
+num_files = len(all_files) if args.random is None else args.random
 
-for article in tqdm(Corpus(corpus_dir)):
+for article in tqdm(islice(all_files, args.random), total=num_files):
     journal_name = journal_title_dict[article.journal.upper()]
     with db.atomic() as atomic:
         try:
