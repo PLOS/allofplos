@@ -220,13 +220,14 @@ def repo_download(dois, tempdir, ignore_existing=True):
 
     for doi in tqdm(sorted(dois), disable=None):
         url = doi_to_url(doi)
-        articleXML = et.parse(url)
         article_path = doi_to_path(doi, directory=tempdir)
         # create new local XML files
         if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
-            with open(article_path, 'w', encoding='utf8') as f:
-                f.write(et.tostring(articleXML, method='xml', encoding='unicode'))
-                time.sleep(.5)
+            response = requests.get(url, stream=True)
+            response.raise_for_status()
+            with open(article_path, 'wb') as f:
+                for block in response.iter_content(1024):
+                    f.write(block)
 
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
