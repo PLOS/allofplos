@@ -956,7 +956,7 @@ class Article:
         :returns: article's online element tree
         :rtype: {lxml.etree._ElementTree-class}
         """
-        return et.parse(self.url)
+        return et.fromstring(requests.get(self.url).content)
 
     @property
     def journal(self):
