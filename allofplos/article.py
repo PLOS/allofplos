@@ -1236,7 +1236,7 @@ class Article:
                     doi_list = v
                     break
             if not doi_list:
-                doi_list = sum(related_doi_dict.values(), [])
+                doi_list = [related for related_list in related_doi_dict.values() for related in related_list]
                 print('{} has incorrect related_doi field attribute'.format(self.doi))
 
         else:
