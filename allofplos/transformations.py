@@ -9,7 +9,7 @@ from .plos_regex import validate_filename, validate_doi
 from .elements import Journal
 
 # URL bases for PLOS's Solr instances, that index PLOS articles
-BASE_URL_API = 'http://api.plos.org/search'
+BASE_URL_API = 'https://api.plos.org/search'
 
 BASE_URL_DOI = 'https://doi.org/'
 URL_SUFFIX = '&type=manuscript'
@@ -18,10 +18,10 @@ PREFIX = '10.1371/'
 SUFFIX_LOWER = '.xml'
 annotation = 'annotation'
 correction = 'correction'
-ANNOTATION_URL = 'http://journals.plos.org/plosone/article/file?id=10.1371/annotation/'
+ANNOTATION_URL = 'https://journals.plos.org/plosone/article/file?id=10.1371/annotation/'
 ANNOTATION_DOI = '10.1371/annotation'
-BASE_URL_ARTICLE_LANDING_PAGE = 'http://journals.plos.org/plos{}/article?id={}'
-BASE_URL_LANDING_PAGE = 'http://journals.plos.org/plos{}/'
+BASE_URL_ARTICLE_LANDING_PAGE = 'https://journals.plos.org/plos{}/article?id={}'
+BASE_URL_LANDING_PAGE = 'https://journals.plos.org/plos{}/'
 LANDING_PAGE_SUFFIX = '{}?id={}'
 doi_url = 'https://doi.org/'
 
@@ -70,7 +70,7 @@ def filename_to_url(filename):
     Includes transform for the 'annotation' DOIs
     Example:
     filename_to_url('allofplos_xml/journal.pone.1000001.xml') = \
-    'http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001'
+    'https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001'
 
     :param filename: string representing a filename
     :return: online location of a PLOS article's XML
@@ -109,7 +109,7 @@ def url_to_path(url, directory=None):
     """
     For a given PLOS URL to an XML file, return the relative path to the local XML file
     Example:
-    url_to_path('http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001') = \
+    url_to_path('https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001') = \
     'allofplos_xml/journal.pone.1000001.xml'
     :param url: online location of a PLOS article's XML
     :param directory: defaults to get_corpus_dir(), containing article files
@@ -137,7 +137,7 @@ def url_to_doi(url):
     """
     For a given PLOS URL to an XML file, transform it to the article's DOI
     Example:
-    url_to_path('http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001') = \
+    url_to_path('https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001') = \
     '10.1371/journal.pone.1000001'
     :param url: online location of a PLOS article's XML
     :return: full unique identifier for a PLOS article
@@ -150,7 +150,7 @@ def doi_to_url(doi):
     For a given PLOS DOI, return the PLOS URL to that article's XML file
     Example:
     doi_to_url('10.1371/journal.pone.1000001') = \
-    'http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001'
+    'https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001'
     :param doi: full unique identifier for a PLOS article
     :return: online location of a PLOS article's XML
     """

@@ -24,7 +24,7 @@ full_doi_regex_search = re.compile(r"10\.1371/journal\.p[a-zA-Z]{3}\.[\d]{7}"
                                    "|10\.1371/annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")
 currents_doi_regex = re.compile(regex_match_prefix+regex_body_currents)
 file_regex_match = re.compile(regex_file_search+r"\.xml")
-BASE_URL = 'http://journals.plos.org/plosone/article/file?id='
+BASE_URL = 'https://journals.plos.org/plosone/article/file?id='
 URL_SUFFIX = '&type=manuscript'
 external_url_regex_match = re.compile(re.escape(BASE_URL) +
                                       re.escape("10.1371/") +
@@ -60,8 +60,8 @@ def validate_filename(filename):
 def validate_url(url):
     """
     For an individual string, tests whether the full string is in a valid article url format or not
-    Example: 'http://journals.plos.org/plosone/article/file?id=10.1371/journal.pcbi.0020147&type=manuscript' is True,
-    but 'http://journals.plos.org/plosone/article/file?id=10.1371/journal.pcbi.0020147' is False
+    Example: 'https://journals.plos.org/plosone/article/file?id=10.1371/journal.pcbi.0020147&type=manuscript' is True,
+    but 'https://journals.plos.org/plosone/article/file?id=10.1371/journal.pcbi.0020147' is False
     :return: True if string is in a valid PLOS article url; False if not
     """
     return bool(external_url_regex_match.search(url))
