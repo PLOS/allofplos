@@ -182,7 +182,7 @@ class TestArticleClass(unittest.TestCase):
         self.assertEqual(article.related_dois, ["10.1371/journal.pone.0035142"], 'related_dois does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.title[:100], "Retraction: De Novo Transcriptomic Analysis of an Oleaginous Microalga: Pathway Description and Gene", 'title does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.type_, "retraction", 'type_ does not transform correctly for {}'.format(article.doi))
-        self.assertEqual(article.url[:100], "https://journals.plos.org/plosone/article/file?id=10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846e", 'url does not transform correctly for {}'.format(article.doi))
+        self.assertEqual(article.url, "https://journals.plos.org/plosone/article/file?id=10.1371/annotation/3155a3e9-5fbe-435c-a07a-e9a4846ec0b6&type=manuscript", 'url does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.word_count, 129, 'word_count does not transform correctly for {}'.format(article.doi))
         self.assertEqual(article.license, {'license': 'CC-BY 4.0', 'license_link': 'https://creativecommons.org/licenses/by/4.0/', 'copyright_holder': '', 'copyright_year': 2012}, 'license does not transform correctly for {}'.format(article.doi))
 
