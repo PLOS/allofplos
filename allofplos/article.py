@@ -804,10 +804,13 @@ class Article:
     def xml(self):
         """Returns string from local xml file.
         """
-        local_xml = et.tostring(self.tree,
-                                method='xml',
-                                encoding='unicode')
-        return local_xml
+        if self.tree is None:
+            return None
+        else:
+            local_xml = et.tostring(self.tree,
+                                    method='xml',
+                                    encoding='unicode')
+            return local_xml
 
     @property
     def tree(self):
