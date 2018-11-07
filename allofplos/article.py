@@ -804,10 +804,13 @@ class Article:
     def xml(self):
         """Returns string from local xml file.
         """
-        local_xml = et.tostring(self.tree,
-                                method='xml',
-                                encoding='unicode')
-        return local_xml
+        if self.tree is None:
+            return None
+        else:
+            local_xml = et.tostring(self.tree,
+                                    method='xml',
+                                    encoding='unicode')
+            return local_xml
 
     @property
     def tree(self):
@@ -956,7 +959,7 @@ class Article:
         :returns: article's online element tree
         :rtype: {lxml.etree._ElementTree-class}
         """
-        return et.parse(self.url)
+        return et.fromstring(requests.get(self.url).content)
 
     @property
     def journal(self):
@@ -1071,7 +1074,7 @@ class Article:
     def authors(self):
         """List of authors of an article. Including contributing and corresponding.
 
-        For more about authorship criteria, see http://journals.plos.org/plosone/s/authorship
+        For more about authorship criteria, see https://journals.plos.org/plosone/s/authorship
         """
         contributors = self.contributors
         return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'author']
@@ -1087,7 +1090,7 @@ class Article:
     def editor(self):
         """The editor on the article.
 
-        For more about the editorial process, see http://journals.plos.org/plosone/s/editorial-and-peer-review-process
+        For more about the editorial process, see https://journals.plos.org/plosone/s/editorial-and-peer-review-process
         """
         contributors = self.contributors
         return [contrib for contrib in contributors if contrib.get('contrib_type', None) == 'editor']
@@ -1171,7 +1174,7 @@ class Article:
 
         PLOS articles can have multiple abstract fields at the same XPath location,
         however the actual abstract is distinguished by having no attributes (`[count(@*)=0]`).
-        Info about the article abstract: http://journals.plos.org/plosone/s/submission-guidelines#loc-abstract
+        Info about the article abstract: https://journals.plos.org/plosone/s/submission-guidelines#loc-abstract
         :return: plain-text string of content in abstract
         """
         abstract_list = self.get_element_xpath(tag_path_elements=["/",
@@ -1236,7 +1239,7 @@ class Article:
                     doi_list = v
                     break
             if not doi_list:
-                doi_list = sum(related_doi_dict.values(), [])
+                doi_list = [related for related_list in related_doi_dict.values() for related in related_list]
                 print('{} has incorrect related_doi field attribute'.format(self.doi))
 
         else:

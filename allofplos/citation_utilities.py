@@ -60,7 +60,7 @@ def remote_retrieve(doi, filename=''):
         except IOError:
             pass
     headers = {"Content-Type": "application/xml"}
-    r = requests.get("http://www.plosone.org/article/fetchObjectAttachment.action?uri=info:doi/" + doi + "&representation=XML", headers=headers)
+    r = requests.get("https://www.plosone.org/article/fetchObjectAttachment.action?uri=info:doi/" + doi + "&representation=XML", headers=headers)
     # Doesn't matter whether it's a PLOS ONE article or not -- this will work for any article in any PLOS journal.
     r.encoding = "UTF-8"  # This is needed to keep the encoding on the papers correct.
     if filename:
@@ -75,7 +75,7 @@ def remote_retrieve(doi, filename=''):
 def remote_soupify(doi):
     '''Given the DOI of a PLOS paper, downloads the XML and parses it using Beautiful Soup.'''
     headers = {"Content-Type": "application/xml"}
-    r = requests.get("http://www.plosone.org/article/fetchObjectAttachment.action?uri=info:doi/" + doi + "&representation=XML", headers=headers)
+    r = requests.get("https://www.plosone.org/article/fetchObjectAttachment.action?uri=info:doi/" + doi + "&representation=XML", headers=headers)
     # Doesn't matter whether it's a PLOS ONE article or not -- this will work for any article in any PLOS journal.
     r.encoding = "UTF-8"  # This is needed to keep the encoding on the papers correct.
     soup = BeautifulSoup(r.text, features="xml")
@@ -316,7 +316,7 @@ def doi_batch(paper, crossref=False):
             else:
                 dois[i] = None
     else:
-        paper_url = "http://www.plosone.org/article/info:doi/" + paper_doi
+        paper_url = "https://www.plosone.org/article/info:doi/" + paper_doi
         paper_request = requests.get(paper_url)
         paper_html = BeautifulSoup(paper_request.content, "lxml")
         html_references = paper_html.select('.references > li')
@@ -623,7 +623,7 @@ def plos_search(query, query_type=None, rows=20, more_parameters=None,
 
     fq_string = "&fq=" + quote(fq)
 
-    url = "http://api.plos.org/search?q=" + query_string + params_string + fq_string + "&wt=" + output + "&rows=" + str(rows) + "&api_key=" + api_key
+    url = "https://api.plos.org/search?q=" + query_string + params_string + fq_string + "&wt=" + output + "&rows=" + str(rows) + "&api_key=" + api_key
     headers = {'Content-Type': 'application/' + output}
     if verbose:
         print(url)

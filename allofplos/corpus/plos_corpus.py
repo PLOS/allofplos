@@ -47,7 +47,7 @@ help_str = "This program downloads a zip file with all PLOS articles and checks 
 ignore_func = shutil.ignore_patterns('.DS_Store')
 
 # Some example URLs that may be useful
-EXAMPLE_SEARCH_URL = ('http://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,'
+EXAMPLE_SEARCH_URL = ('https://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,'
                       '&wt=json&indent=true&fq=article_type:"research+article"+OR+article_type:"correction"+OR+'
                       'article_type:"meta-research+article"&sort=%20id%20asc&'
                       'fq=publication_date:%5B2017-03-05T00:00:00Z+TO+2017-03-19T23:59:59Z%5D&start=0&rows=1000')
@@ -93,7 +93,7 @@ def search_solr_records(days_ago=14, start=0, rows=1000, start_date=None, end_da
     function defaults to querying by DOI (i.e., 'id')
     TODO (on hold): if Solr XSLT is changed, query by revision_date instead of publication_date.
     Then would be used in separate query to figure out updated articles to download
-    for full list of potential queries, see http://api.plos.org/solr/search-fields/
+    for full list of potential queries, see https://api.plos.org/solr/search-fields/
     :param days_ago: A int value with the length of the queried date range, default is two weeks
     :param start: An int value indicating the first row of results to return
     :param rows: An int value indicating how many rows of results to return (from 0)
@@ -149,7 +149,7 @@ def get_all_solr_dois():
     URL includes regex to exclude sub-DOIs and image DOIs.
     :return: list of DOIs for all PLOS articles
     """
-    solr_magic_url = ('http://api.plos.org/terms?terms.fl=id&terms.limit=500000&wt=json&indent=true&terms.regex='
+    solr_magic_url = ('https://api.plos.org/terms?terms.fl=id&terms.limit=500000&wt=json&indent=true&terms.regex='
                       '10%5C.1371%5C/(journal%5C.p%5Ba-zA-Z%5D%7B3%7D%5C.%5B%5Cd%5D%7B7%7D$%7Cannotation%5C/'
                       '%5Ba-zA-Z0-9%5D%7B8%7D-%5Ba-zA-Z0-9%5D%7B4%7D-%5Ba-zA-Z0-9%5D%7B4%7D-%5Ba-zA-Z0-9%5D'
                       '%7B4%7D-%5Ba-zA-Z0-9%5D%7B12%7D$)')
@@ -220,13 +220,14 @@ def repo_download(dois, tempdir, ignore_existing=True):
 
     for doi in tqdm(sorted(dois), disable=None):
         url = doi_to_url(doi)
-        articleXML = et.parse(url)
         article_path = doi_to_path(doi, directory=tempdir)
         # create new local XML files
         if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
-            with open(article_path, 'w', encoding='utf8') as f:
-                f.write(et.tostring(articleXML, method='xml', encoding='unicode'))
-                time.sleep(.5)
+            response = requests.get(url, stream=True)
+            response.raise_for_status()
+            with open(article_path, 'wb') as f:
+                for block in response.iter_content(1024):
+                    f.write(block)
 
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))

@@ -279,7 +279,7 @@ def check_solr_doi(doi):
     For an article doi, see if there's a record of it in Solr.
     :rtype: bool
     '''
-    solr_url = 'http://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,&wt=json&indent=true&fq=id:%22{}%22'.format(doi)
+    solr_url = 'https://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl=id,&wt=json&indent=true&fq=id:%22{}%22'.format(doi)
     article_search = requests.get(solr_url).json()
     return bool(article_search['response']['numFound'])
 
