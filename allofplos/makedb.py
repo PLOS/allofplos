@@ -68,21 +68,63 @@ class BaseModel(Model):
         database = db
 
 class Journal(BaseModel):
+    """
+    Journal table stores journals values. It is used in the PLOSArticle table.
+    Fields:
+    journal: Journal name. Based on the values of journal_title_dict
+    """
     journal = CharField(unique=True)
 
 class ArticleType(BaseModel):
+    """
+    ArticleType table stores article types used in PLOSArticle table.
+    Fields:
+    article_type: Article type such as Research Article, Retraction,
+      Essay, Perspective and others.
+    """
     article_type = CharField(unique=True)
 
 class Country(BaseModel):
+    """
+    Country table stores countries that are related with the corresponding
+      author.
+    Fields:
+    country: Country.
+    """
     country = CharField(unique=True)
 
 class Affiliations(BaseModel):
+    """
+    Affiliations table stores affiliations that are related with the
+      corresponding author.
+    Fields:
+    affiliations: Author affiliations such as "Department of Public Health,
+      University of Helsinki, Finland".
+    """
     affiliations = CharField(unique=True)
 
 class Subjects(BaseModel):
+    """
+    Subjects table stores subjects that are related to PLOSArticle table by
+      using a link table (since an article may have multiple subjects)
+    Fields:
+    subjects: Subjects like "Molecular Biology", "Cell processes" and so on.
+    """
     subjects = CharField(unique=True)
 
 class CorrespondingAuthor(BaseModel):
+    """
+    CorrespondingAuthor table stores the information of the corresponding
+      author.
+    Fields:
+    corr_author_email: e-mail of the corresponding author
+    tld: Top Level Domain, last part of the email, such as .ar, .es, .com.
+    given_name: Given name of the author.
+    surname: Surname of the author.
+    group_name: Name of the group if a group is the author. If not, it is null.
+    affiliation: Author affiliation, this is a linked field.
+    country: Country of the author, this is a linked field.
+    """
     corr_author_email = CharField(unique=True)
     tld = TextField(null=True)
     given_name = TextField(null=True)
@@ -92,9 +134,28 @@ class CorrespondingAuthor(BaseModel):
     country = ForeignKeyField(Country, related_name='aff')
 
 class JATSType(BaseModel):
+    """
+    JATSType table stores the article type using the JATS (Journal Article
+      Tag Suite) standard (https://jats.nlm.nih.gov/).
+    Fields:
+    jats_type: JATS type, such as "research-article", "discussion", "editorial".
+    """
     jats_type = CharField(unique=True)
 
 class PLOSArticle(BaseModel):
+    """
+    PLOSArticle table is the main table of the database. It stores the articles.
+    Fields:
+    DOI: DOI for the article. For example: 10.1371/journal.pcbi.0030199
+    abstract: Abstract for the article.
+    title: Title for the article.
+    plostype = Article type (internal PLOS classification), this is a linked
+      field.
+    journal = Journal name, this is a linked field.
+    created_date = Article creation date. For example: 2006-04-11 00:00:00
+    word_count = Amount of words in the article.
+    JATS_type = Article type (JATS classification), this is a linked field.
+    """
     DOI = TextField(unique=True)
     abstract = TextField()
     title = TextField()
@@ -105,10 +166,23 @@ class PLOSArticle(BaseModel):
     JATS_type = ForeignKeyField(JATSType, related_name='jats')
 
 class SubjectsPLOSArticle(BaseModel):
+    """
+    SubjectsPLOSArticle is a link table to relate subject with articles
+    Fields:
+    subject: This field is linked to Subjects table.
+    article: This field is linked to PLOSArticle table.
+    """
     subject = ForeignKeyField(Subjects)
     article = ForeignKeyField(PLOSArticle)
 
 class CoAuthorPLOSArticle(BaseModel):
+    """
+    CoAuthorPLOSArticle is a link table to relate a co-author with a PLOS
+      article.
+    Fields:
+    corr_author: This field is linked to CorrespondingAuthor table.
+    article: This field is linked to PLOSArticle table.
+    """
     corr_author = ForeignKeyField(CorrespondingAuthor)
     article = ForeignKeyField(PLOSArticle)
 
