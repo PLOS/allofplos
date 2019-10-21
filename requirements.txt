@@ -7,6 +7,6 @@ requests==2.18.4
 six==1.11.0
 tqdm==4.17.1
 unidecode==0.04.21
-urllib3==1.22
+urllib3==1.24.2
 peewee==3.5.2
 
