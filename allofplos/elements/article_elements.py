@@ -248,6 +248,12 @@ def get_contrib_info(contrib_element):
     except KeyError:
         # invalid contributor field; shouldn't count as contributor
         return None
+    
+    # get equal contribution status
+    try:
+        contrib_dict['equal_contrib'] = contrib_element.attrib['equal-contrib']
+    except KeyError:
+        contrib_dict['equal_contrib'] = 'No'
 
     # get author type
     if contrib_dict.get('contrib_type') == 'author':
