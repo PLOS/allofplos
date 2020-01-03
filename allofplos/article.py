@@ -55,7 +55,7 @@ class Article:
         :param exclude_refs: remove references from the article tree (eases print viewing)
         """
         parser = et.XMLParser(remove_blank_text=True)
-        tree = et.parse(self.filename, parser)
+        tree = et.parse(self.filepath, parser)
         if exclude_refs:
             root = tree.getroot()
             back = tree.xpath('./back')
@@ -196,7 +196,7 @@ class Article:
         if not (text_viewer or self.text_viewer):
             raise TypeError("You have not specified an text_viewer. Please do so.")
 
-        subprocess.call([self._text_viewer, self.filename])
+        subprocess.call([self._text_viewer, self.filepath])
 
     def open_in_browser(self):
         """Opens the landing page (HTML) of an article in default browser.
@@ -823,10 +823,10 @@ class Article:
         """
         if self._tree is None:
             if self.local:
-                local_element_tree = et.parse(self.filename)
+                local_element_tree = et.parse(self.filepath)
                 self._tree = local_element_tree
             else:
-                print("Local article file not found: {}".format(self.filename))
+                print("Local article file not found: {}".format(self.filepath))
                 return None
         else:
             pass
@@ -897,8 +897,8 @@ class Article:
         return subjs_dict
 
     @property
-    def filename(self):
-        """The path on the local file system to a given article's XML file
+    def filepath(self):
+        """The path on the local file system to a given article's XML file.
         """
         if 'annotation' in self.doi:
             article_path = os.path.join(self.directory, 'plos.correction.' + self.doi.split('/')[-1] + '.xml')
@@ -907,13 +907,19 @@ class Article:
         return article_path
 
     @property
+    def filename(self):
+        """The basename of the article's XML file.
+        """
+        return os.path.basename(self.filepath)
+
+    @property
     def local(self):
         """Boolean of whether the article is stored locally or not.
 
         Stored as attribute after first access
         """
         if self._local is None:
-            self._local = os.path.isfile(self.filename)
+            self._local = os.path.isfile(self.filepath)
         else:
             pass
         return self._local
