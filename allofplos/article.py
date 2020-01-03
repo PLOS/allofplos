@@ -41,7 +41,7 @@ class Article:
         self.directory = directory if directory else get_corpus_dir()
         self.reset_memoized_attrs()
         self._editor = None
-    
+
     def __eq__(self, other):
         doi_eq = self.doi == other.doi
         dir_eq = self.directory == other.directory
@@ -76,11 +76,11 @@ class Article:
         """
         out = "DOI: {0}\nTitle: {1}".format(self.doi, self.title)
         return out
-    
-    
+
+
     def _repr_html_(self):
         """Nice display for Jupyter notebook"""
-    
+
         titlestyle = 'display:inline-flex;'
         titletextstyle = 'margin-left:.5em;'
         titlelink = ('<span style="{titlestyle}"><a href="{url}">'
@@ -89,20 +89,20 @@ class Article:
                         title=self.title,
                         titlestyle=titlestyle+titletextstyle,
                     )
-                    
+
         doilink = '<span><a href="{url}"><code>{doi}</code></a></span>'.format(
-                        url=self.doi_link(), 
+                        url=self.doi_link(),
                         doi=self.doi,
                   )
-        out = dedent("""<div> 
+        out = dedent("""<div>
         <span style="{titlestyle}">Title: {titlelink}</span></br>
-        <span>DOI: <span>{doilink} 
+        <span>DOI: <span>{doilink}
         </div>
         """).format(doilink=doilink, titlelink=titlelink, titlestyle=titlestyle)
-    
+
         return out
-        
-        
+
+
     def reset_memoized_attrs(self):
         """Reset attributes to None when instantiating a new article object.
 
@@ -1198,6 +1198,39 @@ class Article:
         abstract_text = os.linesep.join([s for s in abstract_text.splitlines() if s])
 
         return abstract_text
+
+    @property
+    def body(self):
+        """
+        For an individual PLOS article, get the string of the body content.
+
+        :returns: main body of the article
+        :rtype: {str}
+        """
+
+        xml_tree = et.parse(self.filename)
+        root = xml_tree.getroot()
+
+        # limit the text to the body section
+        body = root.find('./body')
+
+        # remove supplementary material section
+        for sec in body.findall('.//sec'):
+            if 'supplementary-material' in [element.tag for element in sec]:
+                parent=sec.getparent()
+                parent.remove(sec)
+
+        # remove unwanted xml elements
+        remove_list = ['tr','td','caption','fig','graphic','table-wrap','ext-link']
+        for tag in remove_list:
+            for element in body.findall('.//'+tag):
+                parent=element.getparent()
+                parent.remove(element)
+
+        # convert XML to string
+        body_text = et.tostring(body, encoding='utf8', method='text').decode()
+
+        return(body_text)
 
     @property
     def amendment(self):
