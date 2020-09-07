@@ -123,3 +123,23 @@ Community guidelines
 If you wish to contribute to this project please open a ticket in the
 GitHub repo at https://github.com/PLOS/allofplos/issues. For support
 requests write to mining@plos.org
+
+Citing This Library
+-------------------
+
+*allofplos* is published in the proceedings of the SciPy 2018.
+DOI `10.25080/Majora-4af1f417-009 <https://doi.org/10.25080/Majora-4af1f417-009>`_ refers to all versions of allofplos.
+
+If you want to cite allofplos using Bibtex:
+
+::
+
+   @InProceedings{ elizabeth_seiver-proc-scipy-2018,
+     author    = { Elizabeth Seiver and M Pacer and Sebastian Bassi },
+     title     = { Text and data mining scientific articles with allofplos },
+     booktitle = { Proceedings of the 17th Python in Science Conference },
+     pages     = { 61 - 64 },
+     year      = { 2018 },
+     editor    = { Fatih Akici and David Lippa and Dillon Niederhut and M Pacer },
+     doi       = { 10.25080/Majora-4af1f417-009 }
+   }
