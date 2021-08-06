@@ -54,6 +54,11 @@ def _get_base_page(journal):
                    'PLOS Biology': 'biology',
                    'PLOS Medicine': 'medicine',
                    'PLOS Clinical Trials': 'clinicaltrials',
+                   'PLOS Sustainability and Transformation': 'sustainabilitytransformation',
+                   'PLOS Climate': 'climate',
+                   'PLOS Water': 'water',
+                   'PLOS Global Public Health': 'globalpublichealth',
+                   'PLOS Digital Health': 'digitalhealth',
                    }
     try:
         url = BASE_URL_LANDING_PAGE.format(journal_map[journal])
