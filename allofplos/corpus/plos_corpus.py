@@ -39,7 +39,7 @@ from ..plos_regex import validate_doi
 from ..transformations import (BASE_URL_API, filename_to_doi, doi_to_path, doi_to_url)
 from ..article import Article
 from .gdrive import (download_file_from_google_drive, get_zip_metadata, unzip_articles,
-                     ZIP_ID, LOCAL_ZIP, LOCAL_TEST_ZIP, TEST_ZIP_ID, min_files_for_valid_corpus)
+                     ZIP_ID, ZIP_KEY, LOCAL_ZIP, LOCAL_TEST_ZIP, TEST_ZIP_ID, min_files_for_valid_corpus)
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
@@ -224,10 +224,12 @@ def repo_download(dois, tempdir, ignore_existing=True):
         # create new local XML files
         if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
             response = requests.get(url, stream=True)
-            response.raise_for_status()
-            with open(article_path, 'wb') as f:
-                for block in response.iter_content(1024):
-                    f.write(block)
+            # Ignore 404 errors, but raise other errors.
+            if response.status_code != 404:
+                response.raise_for_status()
+                with open(article_path, 'wb') as f:
+                    for block in response.iter_content(1024):
+                        f.write(block)
 
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
@@ -590,7 +592,7 @@ def create_local_plos_corpus(directory=None, rm_metadata=True):
         print('Creating folder for article xml')
     os.makedirs(directory, exist_ok=True)
     zip_date, zip_size, metadata_path = get_zip_metadata()
-    zip_path = download_file_from_google_drive(ZIP_ID, LOCAL_ZIP, file_size=zip_size)
+    zip_path = download_file_from_google_drive(ZIP_ID, LOCAL_ZIP, key=ZIP_KEY, file_size=zip_size)
     unzip_articles(file_path=zip_path)
     if rm_metadata:
         os.remove(metadata_path)
@@ -622,18 +624,23 @@ def download_corpus_metadata_files(csv_abstracts=True, csv_no_abstracts=True, sq
         destination = os.getcwd()
     if csv_abstracts:
         csv_abstracts_id = '0B_JDnoghFeEKQWlNUUJtY1pIY3c'
-        csv_abstracts_file = download_file_from_google_drive(csv_abstracts_id,
-                                                             'allofplos_metadata_test.csv',
-                                                             destination=destination)
+        csv_abstracts_key = '0-rYe9qJVr8RcwLrn6z9sM0w'
+        download_file_from_google_drive(csv_abstracts_id,
+                                        'allofplos_metadata_test.csv',
+                                        key=csv_abstracts_key,
+                                        destination=destination)
     if csv_no_abstracts:
         csv_no_abstracts_id = '0B_JDnoghFeEKeEp6S0R2Sm1YcEk'
-        csv_no_abstracts_file = download_file_from_google_drive(csv_no_abstracts_id,
-                                                                'allofplos_metadata_no_abstracts_test.csv',
-                                                                destination=destination)
+        csv_no_abstracts_key = '0-R8z9OU5Px9WTJLsoXNve9w'
+        download_file_from_google_drive(csv_no_abstracts_id,
+                                        'allofplos_metadata_no_abstracts_test.csv',
+                                        key=csv_no_abstracts_key,
+                                        destination=destination)
     if sqlitedb:
         sqlitedb_id = '1gcQW7cc6Z9gDBu_vHxghNwQaMkyvVuMC'
         sqlitedb_file = download_file_from_google_drive(sqlitedb_id,
                                                         'ploscorpus_test.db.gz',
+                                                        key=None,
                                                         destination=destination)
         print("Extracting sqlite db...")
         inF = gzip.open(sqlitedb_file, 'rb')
