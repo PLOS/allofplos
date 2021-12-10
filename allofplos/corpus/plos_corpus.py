@@ -224,10 +224,12 @@ def repo_download(dois, tempdir, ignore_existing=True):
         # create new local XML files
         if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
             response = requests.get(url, stream=True)
-            response.raise_for_status()
-            with open(article_path, 'wb') as f:
-                for block in response.iter_content(1024):
-                    f.write(block)
+            # Ignore 404 errors, but raise other errors.
+            if response.status_code != 404:
+                response.raise_for_status()
+                with open(article_path, 'wb') as f:
+                    for block in response.iter_content(1024):
+                        f.write(block)
 
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
