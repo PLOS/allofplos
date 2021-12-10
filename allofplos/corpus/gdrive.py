@@ -11,16 +11,17 @@ from .. import get_corpus_dir
 # Variables needed
 ZIP_ID = '0B_JDnoghFeEKLTlJT09IckMwOFk'
 METADATA_ID = '0B_JDnoghFeEKQUhKWXBOVy1aTlU'
+ZIP_KEY = '0-r-Qov-QvXGR3Ka07bixg1A'
+METADATA_KEY = '0-HB481hf4P4Fw0UEwnILZlw'
 LOCAL_ZIP = 'allofplos_xml.zip'
 ZIP_METADATA = 'zip_info.txt'
 time_formatting = "%Y_%b_%d_%Hh%Mm%Ss"
 min_files_for_valid_corpus = 200000
 TEST_ZIP_ID = '12VomS72LdTI3aYn4cphYAShv13turbX3'
 LOCAL_TEST_ZIP = 'sample_corpus.zip'
-GDRIVE_URL = "https://docs.google.com/uc?export=download"
+GDRIVE_URL = "https://drive.google.com/uc" #?export=download&authuser=0"
 
-
-def download_file_from_google_drive(id, filename, directory=None,
+def download_file_from_google_drive(id, filename, key=None, directory=None,
                                     file_size=None):
     """
     General method for downloading from Google Drive.
@@ -56,11 +57,10 @@ def download_file_from_google_drive(id, filename, directory=None,
     if not os.path.isfile(file_path):
         session = requests.Session()
 
-        response = session.get(GDRIVE_URL, params={'id': id}, stream=True)
+        response = session.get(GDRIVE_URL, params={'id': id, 'resourcekey': key, 'authuser': '0', 'export': 'download'}, stream=True)
         token = get_confirm_token(response)
-
         if token:
-            params = {'id': id, 'confirm': token}
+            params = {'id': id, 'confirm': token, 'resourcekey': key, 'authuser': '0', 'export': 'download'}
             response = session.get(GDRIVE_URL, params=params, stream=True)
         save_response_content(response, file_path, file_size=file_size)
     return file_path
@@ -116,7 +116,7 @@ def get_zip_metadata(method='initial'):
     :return: tuple of data about zip file: date zip created, zip size, and location of metadata txt file
     """
     if method == 'initial':
-        metadata_path = download_file_from_google_drive(METADATA_ID, ZIP_METADATA)
+        metadata_path = download_file_from_google_drive(METADATA_ID, ZIP_METADATA, key=METADATA_KEY)
     with open(metadata_path) as f:
         zip_stats = f.read().splitlines()
     zip_datestring = zip_stats[0]
