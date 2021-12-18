@@ -23,7 +23,7 @@ may change and after a new version a full corpus download may be required.
 Installation instructions
 -------------------------
 
-This program requires Python 3.4+.
+This program requires Python 3.8+.
 
 Make a virtual environment:
 
@@ -37,18 +37,22 @@ This should install *allofplos* and requirements. At this stage you are ready to
 
 If you want to manually install from source (for example for development purposes), first clone the project repository:
 
-``(allofplos)$ git clone git@github.com:PLOS/allofplos.git``
+``$ git clone git@github.com:PLOS/allofplos.git``
 
-Install Python dependencies inside the newly created virtual environment:
+We recommend using poetry:
 
-``(allofplos)$ pip install -r requirements.txt``
+``$ poetry install``
 
 How to run the program
 ----------------------
 
 Execute the following command.
 
-``(allofplos)$ python -m allofplos.update``
+``$ python -m allofplos.update``
+
+or, if using poetry:
+
+``$ poetry run python -m allofplos.update``
 
 The first time it runs it will download a >4.4 Gb zip file
 (**allofplos_xml.zip**) with all the XML files inside.
@@ -97,13 +101,7 @@ To run the tests, you will need to install *allofplos* with its testing
 dependencies. These testing dependencies include ``pytest``, which we will use
 to run the tests.
 
-To get all of the *allofplos* testing dependencies run:
-
-``(allofplos)$ pip install -U allofplos[test]``
-
-Then when you run:
-
-``(allofplos)$ pytest --pyargs allofplos``
+``$ poetry run python -m pytest``
 
 It should return something like this:
 
