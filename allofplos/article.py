@@ -1354,6 +1354,19 @@ class Article:
             body_word_count = 0
         return body_word_count
 
+    # region: review_crawling2022
+    def get_subarticles(self):
+        """Get sub-articles embedded in the XML tree of this article.
+
+        :rtype: list
+        :return: list of lxml elements that are roots of each sub-article 
+        """
+        sub_articles = self.root.findall('sub-article')
+        return sub_articles # TODO: return list of Articles instead?
+
+    # endregion
+
+
     @filename.setter
     def filename(self, value):
         """Sets an article object using a local filename.
