@@ -1214,11 +1214,8 @@ class Article:
         :rtype: {str}
         """
 
-        xml_tree = et.parse(self.filepath)
-        root = xml_tree.getroot()
-
         # limit the text to the body section
-        body = root.find('./body')
+        body = self.root.find('./body')
 
         # remove supplementary material section
         for sec in body.findall('.//sec'):
@@ -1384,10 +1381,11 @@ class Article:
     def from_xml(cls, source):
         """Initiate an article object using an XML-encoded string.
             Parses the XML to obtain the article's doi. 
-            Does not change the default directory parameter, so the resulting Article has no filename associated.
+            
+            Does not set `self.directory` parameter, so the resulting Article may have no file associated.
         """
         root = et.fromstring(source)
-        doi = root.find('front//article-id').text
+        doi = root.find("front//article-id[@pub-id-type='doi']").text
         a = Article(doi)
         a.tree = root.getroottree()
         return a
@@ -1397,7 +1395,7 @@ class Article:
         """
         Set tree to the given object.
         """
-        assert isinstance(value, et._Element)
+        assert isinstance(value, et._ElementTree)   # TODO better validation?
         self._tree = value
 
     def get_subarticles(self):
