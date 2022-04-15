@@ -1214,7 +1214,7 @@ class Article:
         :rtype: {str}
         """
 
-        xml_tree = et.parse(self.filename)
+        xml_tree = et.parse(self.filepath)
         root = xml_tree.getroot()
 
         # limit the text to the body section
@@ -1354,19 +1354,6 @@ class Article:
             body_word_count = 0
         return body_word_count
 
-    # region: review_crawling2022
-    def get_subarticles(self):
-        """Get sub-articles embedded in the XML tree of this article.
-
-        :rtype: list
-        :return: list of lxml elements that are roots of each sub-article 
-        """
-        sub_articles = self.root.findall('sub-article')
-        return sub_articles # TODO: return list of Articles instead?
-
-    # endregion
-
-
     @filename.setter
     def filename(self, value):
         """Sets an article object using a local filename.
@@ -1391,3 +1378,35 @@ class Article:
         else:
             directory = None
         return cls(filename_to_doi(filename), directory=directory)
+
+    # region: review_crawling2022
+    @classmethod
+    def from_xml(cls, source):
+        """Initiate an article object using an XML-encoded string.
+            Parses the XML to obtain the article's doi. 
+            Does not change the default directory parameter, so the resulting Article has no filename associated.
+        """
+        root = et.fromstring(source)
+        doi = root.find('front//article-id').text
+        a = Article(doi)
+        a.tree = root.getroottree()
+        return a
+
+    @tree.setter
+    def tree(self, value):
+        """
+        Set tree to the given object.
+        """
+        assert isinstance(value, et._Element)
+        self._tree = value
+
+    def get_subarticles(self):
+        """Get sub-articles embedded in the XML tree of this article.
+
+        :rtype: list
+        :return: list of lxml elements that are roots of each sub-article 
+        """
+        sub_articles = self.root.findall('sub-article')
+        return sub_articles # TODO: return list of Articles instead?
+
+    # endregion

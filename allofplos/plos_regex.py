@@ -9,8 +9,9 @@ from . import get_corpus_dir, newarticledir
 
 newarticledir_regex = re.escape(newarticledir)
 regex_match_prefix = r"^10\.1371/"
-regex_body_match = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7}$)"
+regex_body_match = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7})"
                     r"|(annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}$))")
+regex_suffix_match = r"(\.[rs][0-9]{3})?"   # matches sub-articles
 regex_body_search = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7})"
                      r"|(annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}))")
 regex_body_currents = (r"((currents\.[a-zA-Z]{2,9}\.[a-zA-Z0-9]{32}$)"
@@ -19,7 +20,7 @@ regex_body_currents = (r"((currents\.[a-zA-Z]{2,9}\.[a-zA-Z0-9]{32}$)"
                        r"|([a-zA-Z0-9]{32}$))")
 regex_file_search = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7})"
                      r"|(plos\.correction\.[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}))")
-full_doi_regex_match = re.compile(regex_match_prefix+regex_body_match)
+full_doi_regex_match = re.compile(regex_match_prefix+regex_body_match+regex_suffix_match)
 full_doi_regex_search = re.compile(r"10\.1371/journal\.p[a-zA-Z]{3}\.[\d]{7}"
                                    "|10\.1371/annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}")
 currents_doi_regex = re.compile(regex_match_prefix+regex_body_currents)
