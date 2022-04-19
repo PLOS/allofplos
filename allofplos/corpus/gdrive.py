@@ -1,5 +1,6 @@
 import datetime
 import os
+import re
 import tarfile
 from zipfile import ZipFile, BadZipFile
 
@@ -57,7 +58,8 @@ def download_file_from_google_drive(id, filename, key=None, directory=None,
     if not os.path.isfile(file_path):
         session = requests.Session()
 
-        response = session.get(GDRIVE_URL, params={'id': id, 'resourcekey': key, 'authuser': '0', 'export': 'download'}, stream=True)
+        params = {'id': id, 'resourcekey': key, 'authuser': '0', 'export': 'download'}
+        response = session.get(GDRIVE_URL, params=params, stream=True)
         token = get_confirm_token(response)
         if token:
             params = {'id': id, 'confirm': token, 'resourcekey': key, 'authuser': '0', 'export': 'download'}
@@ -69,13 +71,15 @@ def download_file_from_google_drive(id, filename, key=None, directory=None,
 def get_confirm_token(response):
     """
     Part of keep-alive method for downloading large files from Google Drive
-    Discards packets of data that aren't the actual file
+    Discards packets of data that aren't the actual file      # the behavior of this function does not match its description
     :param response: session-based google query
-    :return: either datapacket or discard unneeded data
+    :return: either datapacket or discard unneeded data    
     """
     for key, value in response.cookies.items():
         if key.startswith('download_warning'):
             return value
+    # the code above will likely not work in 2022
+    return 't'
     return None
 
 
@@ -107,7 +111,7 @@ def save_response_content(response, download_path, file_size=None):
                     f.write(chunk)
 
 
-def get_zip_metadata(method='initial'):
+def get_zip_metadata(method='initial', directory=get_corpus_dir()):
     """
     Gets metadata txt file from Google Drive, that has info about zip file
     Used to get the file name, as well as byte size for progress bar
@@ -116,7 +120,7 @@ def get_zip_metadata(method='initial'):
     :return: tuple of data about zip file: date zip created, zip size, and location of metadata txt file
     """
     if method == 'initial':
-        metadata_path = download_file_from_google_drive(METADATA_ID, ZIP_METADATA, key=METADATA_KEY)
+        metadata_path = download_file_from_google_drive(METADATA_ID, ZIP_METADATA, key=METADATA_KEY, directory=directory)
     with open(metadata_path) as f:
         zip_stats = f.read().splitlines()
     zip_datestring = zip_stats[0]
