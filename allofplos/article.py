@@ -1378,15 +1378,16 @@ class Article:
 
     # region: review_crawling2022
     @classmethod
-    def from_xml(cls, source):
+    def from_xml(cls, source, directory = None):
         """Initiate an article object using an XML-encoded string.
             Parses the XML to obtain the article's doi. 
             
-            Does not set `self.directory` parameter, so the resulting Article may have no file associated.
+            :param source: string containing XML describing an article
+            :param directory: path to directory containing the XML for this article. Defaults to `get_corpus_dir()` via `Article().__init__`.
         """
         root = et.fromstring(source)
-        doi = root.find("front//article-id[@pub-id-type='doi']").text
-        a = Article(doi)
+        doi = root.find("front//article-id[@pub-id-type='doi']").text.strip()
+        a = Article(doi, directory)
         a.tree = root.getroottree()
         return a
 
@@ -1405,6 +1406,6 @@ class Article:
         :return: list of lxml elements that are roots of each sub-article 
         """
         sub_articles = self.root.findall('sub-article')
-        return sub_articles # TODO: return list of Articles instead?
+        return sub_articles     # maybe return list of Articles instead?
 
     # endregion
