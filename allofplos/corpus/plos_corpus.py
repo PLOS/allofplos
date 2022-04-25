@@ -582,10 +582,10 @@ def create_local_plos_corpus(directory=None, rm_metadata=True, unzip=True, delet
     2) downloading metadata about the .zip of all PLOS XML
     2) downloading the zip file (defaults to corpus directory)
     3) extracting the individual XML files into the corpus directory
-    :param directory: directory where the corpus is to be downloaded and extracted
-    :param rm_metadata: whether to remove the txt file containing metadata for the zip archive
-    :param unzip: whether to extract article files, or keep the zip file instead. Defaults to extracting and removing the zip file afterwards. 
-    :param delete_file: whether to delete the compressed archive after extracting articles
+    :param directory: directory where the corpus is to be downloaded
+    :param rm_metadata: whether to remove the txt file containing metadata for the zip archive. Defaults to `True`
+    :param unzip: whether to extract article files to corpus dir, or just keep the zip file instead. Defaults to `True`
+    :param delete_file: whether to delete the compressed archive after extracting articles. Defaults to `True`
     :return: None
     """
     if directory is None:
@@ -596,7 +596,7 @@ def create_local_plos_corpus(directory=None, rm_metadata=True, unzip=True, delet
     zip_date, zip_size, metadata_path = get_zip_metadata(directory=directory)
     zip_path = download_file_from_google_drive(ZIP_ID, LOCAL_ZIP, key=ZIP_KEY, file_size=zip_size, directory=directory)
     if unzip:
-        unzip_articles(file_path=zip_path, delete_file=delete_file)
+        unzip_articles(file_path=zip_path, extract_directory=get_corpus_dir(), delete_file=delete_file)
     if rm_metadata:
         os.remove(metadata_path)
 

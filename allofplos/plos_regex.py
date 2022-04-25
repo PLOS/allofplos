@@ -11,7 +11,7 @@ newarticledir_regex = re.escape(newarticledir)
 regex_match_prefix = r"^10\.1371/"
 regex_body_match = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7})"
                     r"|(annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}$))")
-regex_suffix_match = r"(\.[rs][0-9]{3})?"   # matches sub-articles (reviews and supplementary materials)
+regex_suffix_match = r"(\.[rs][0-9]{3})?"   # matches reviews and supplementary materials
 regex_body_search = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7})"
                      r"|(annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}))")
 regex_body_currents = (r"((currents\.[a-zA-Z]{2,9}\.[a-zA-Z0-9]{32}$)"
@@ -68,7 +68,8 @@ def validate_file_url(url):
     but 'https://journals.plos.org/plosone/article/file?id=10.1371/journal.pcbi.0020147' is False
 
     Urls leading to files containing supplementary material are valid.
-    example: ''
+    example: 'https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0222522.s002&type=supplementary' is True
+
     :return: True if string is in a valid PLOS file url; False if not
     """
     return bool(external_url_regex_match.match(url))
