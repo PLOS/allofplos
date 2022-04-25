@@ -1408,4 +1408,36 @@ class Article:
         sub_articles = self.root.findall('sub-article')
         return sub_articles     # maybe return list of Articles instead?
 
+    def get_author_names(self):
+        """
+        Compresses the list of dicts stored in `self.authors` into a simpler list of author names.
+
+        :rtype: list
+        """
+        parsed_authors = []
+        for author in self.authors:
+            if author['given_names'] is None and author['surname'] is None:
+                parsed_authors.append(author['group_name'])
+            else:
+                parsed_authors.append(author['given_names']+ ' ' +author['surname'])
+        return parsed_authors
+
+    @property
+    def categories(self):
+        """
+        Get the categories (or keywords) defined for this article.
+
+        :rtype: list
+        """
+        keywords_set = set()    # using a set because they tend to be duplicated
+        categories = self.root.find('.//front').find('.//article-categories')
+        if categories is None:
+            return None
+
+        for el in categories[1:]:   # skipping the first one because it's a "heading"
+            for subj in el.iterdescendants():
+                if len(subj) == 1:  keywords_set.add(subj[0].text.strip())
+        return list(keywords_set)
+
+
     # endregion
