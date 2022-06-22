@@ -847,13 +847,13 @@ class Article:
         BASE_LANDING_PAGE = _get_base_page(self.journal)
         if page_type == "reviews":
             page = BASE_LANDING_PAGE + "article/peerReview/" + LANDING_PAGE_SUFFIX.format(plos_page_dict[page_type], self.doi)
-        try:
-            page = BASE_LANDING_PAGE + LANDING_PAGE_SUFFIX.format(plos_page_dict[page_type],
-                                                                  self.doi)
-            if page_type == 'assetXMLFile':
-                page += URL_SUFFIX
-        except KeyError:
-            raise Exception('Invalid page_type; value must be one of the following: {}'.format(list(plos_page_dict.keys())))
+        else:
+            try:
+                page = BASE_LANDING_PAGE + LANDING_PAGE_SUFFIX.format(plos_page_dict[page_type], self.doi)
+                if page_type == 'assetXMLFile':
+                    page += URL_SUFFIX
+            except KeyError:
+                raise Exception('Invalid page_type; value must be one of the following: {}'.format(list(plos_page_dict.keys())))
         return page
 
     @property
