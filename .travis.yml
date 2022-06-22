@@ -3,5 +3,6 @@ python:
   - "3.8"
 before_script:
   - pip install pipenv
+  - pipenv install
 script:
   - pipenv run python -m pytest
