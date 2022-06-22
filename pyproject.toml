@@ -1,0 +1,32 @@
+[project]
+name = "allofplos"
+version = "0.12.0"
+description = "Get and analyze all PLOS articles"
+authors = [
+  {name="Elizabeth Seiver", email="eseiver@plos.org"},
+  {name="Sebastian Bassi", email="sebastian.bassi@globant.com"},
+  {name="M Pacer", email="mpacer@berkeley.edu"}
+]
+license = {file="LICENSE"}
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.8",
+]
+keywords = ["science", "PLOS", "publishing"]
+dependencies = [
+  "certifi",
+  "chardet",
+  "charset-normalizer",
+  "idna",
+  "lxml",
+  "peewee",
+  "python-utils",
+  "requests",
+  "six",
+  "tqdm",
+  "unidecode",
+  "urllib3"
+]
