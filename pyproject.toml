@@ -7,6 +7,9 @@ authors = [
   {name="Sebastian Bassi", email="sebastian.bassi@globant.com"},
   {name="M Pacer", email="mpacer@berkeley.edu"}
 ]
+maintainers = [
+  {name="Erik Hetzner", email="ehetzner@plos.org"}
+]
 license = {file="LICENSE"}
 classifiers = [
   "Development Status :: 5 - Production/Stable",
