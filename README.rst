@@ -116,6 +116,20 @@ It should return something like this:
 
   ==================== 20 passed in 0.36 seconds =========================
 
+Docker image
+------------
+
+For convenience, we provide a docker image (for Linux and macOS) with the allofplos script plus the whole PLOS corpus pre-downloaded. It can be installed with:
+
+``$ docker pull plos/allofplos``
+
+To use the image, run it like this:
+
+``$ docker run -it plos/allofplos:latest bash``
+
+To generate a new image, use the included Dockerfile:
+
+``$ docker build -t PLOS/allofplos .``
 
 Community guidelines
 --------------------
