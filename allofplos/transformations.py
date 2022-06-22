@@ -21,7 +21,7 @@ correction = 'correction'
 ANNOTATION_URL = 'https://journals.plos.org/plosone/article/file?id=10.1371/annotation/'
 ANNOTATION_DOI = '10.1371/annotation'
 BASE_URL_ARTICLE_LANDING_PAGE = 'https://journals.plos.org/plos{}/article?id={}'
-BASE_URL_LANDING_PAGE = 'https://journals.plos.org/plos{}/'
+BASE_URL_LANDING_PAGE = 'https://journals.plos.org/{}/'
 LANDING_PAGE_SUFFIX = '{}?id={}'
 doi_url = 'https://doi.org/'
 
@@ -46,14 +46,14 @@ def _get_base_page(journal):
 
     Use in conjunction with `get_page()` in the Article class.
     """
-    journal_map = {'PLOS ONE': 'one',
-                   'PLOS Computational Biology': 'compbiol',
-                   'PLOS Neglected Tropical Diseases': 'ntds',
-                   'PLOS Genetics': 'genetics',
-                   'PLOS Pathogens': 'pathogens',
-                   'PLOS Biology': 'biology',
-                   'PLOS Medicine': 'medicine',
-                   'PLOS Clinical Trials': 'clinicaltrials',
+    journal_map = {'PLOS ONE': 'plosone',
+                   'PLOS Computational Biology': 'ploscompbiol',
+                   'PLOS Neglected Tropical Diseases': 'plosntds',
+                   'PLOS Genetics': 'plosgenetics',
+                   'PLOS Pathogens': 'plospathogens',
+                   'PLOS Biology': 'plosbiology',
+                   'PLOS Medicine': 'plosmedicine',
+                   'PLOS Clinical Trials': 'plosclinicaltrials',
                    'PLOS Sustainability and Transformation': 'sustainabilitytransformation',
                    'PLOS Climate': 'climate',
                    'PLOS Water': 'water',
