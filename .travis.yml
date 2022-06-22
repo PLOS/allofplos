@@ -1,5 +1,7 @@
- language: python
- python:
+language: python
+python:
   - "3.6"
- script:
-  - pytest
+before_script:
+  - pip install pipenv
+script:
+  - pipenv run python -m pytest
