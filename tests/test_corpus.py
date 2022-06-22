@@ -1,7 +1,7 @@
 from . import TESTDATADIR
-from .. import Corpus, starterdir
-from ..article import Article
-from ..corpus import listdir_nohidden
+from allofplos import Corpus, starterdir
+from allofplos.article import Article
+from allofplos.corpus import listdir_nohidden
 
 import random
 import pytest
