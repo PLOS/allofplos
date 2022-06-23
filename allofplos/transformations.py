@@ -36,8 +36,8 @@ plos_page_dict = {'article': 'article',
                   'assetFile': 'article/file',
                   'assetXMLFile': 'article/file',
                   'articleMetrics': 'article/metrics',
-                  'articleRelated': 'article/related'}
-                #   'peerReviews': 'article/peerReview
+                  'articleRelated': 'article/related',
+                  'peerReview': 'article/peerReview'}
 
 
 def _get_base_page(journal):
