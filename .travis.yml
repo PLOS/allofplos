@@ -1,7 +1,8 @@
- language: python
- python:
-  - "3.4" 
-  - "3.5" 
-  - "3.6"
- script:
-  - pytest
+language: python
+python:
+  - "3.8"
+before_script:
+  - pip install pipenv
+  - pipenv install -d
+script:
+  - pipenv run python -m pytest

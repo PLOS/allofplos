@@ -58,8 +58,8 @@ def download_file_from_google_drive(id, filename, key=None, directory=None,
     if not os.path.isfile(file_path):
         session = requests.Session()
 
-        params = {'id': id, 'resourcekey': key, 'authuser': '0', 'export': 'download'}
-        response = session.get(GDRIVE_URL, params=params, stream=True)
+        response = session.get(GDRIVE_URL, params={'id': id, 'resourcekey': key, 'authuser': '0', 
+                                                   'export': 'download', 'confirm': 't'}, stream=True)
         token = get_confirm_token(response)
         if token:
             params = {'id': id, 'confirm': token, 'resourcekey': key, 'authuser': '0', 'export': 'download'}
