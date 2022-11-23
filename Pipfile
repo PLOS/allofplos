@@ -20,6 +20,8 @@ urllib3 = "*"
 
 [dev-packages]
 pytest = "*"
+twine = "*"
+build = "*"
 
 [requires]
 python_version = "3.8"
