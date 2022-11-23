@@ -426,7 +426,7 @@ def check_for_uncorrected_proofs(directory=newarticledir, proof_filepath=uncorre
     if uncorrected_proofs:
         print("{} new uncorrected proofs found. {} total in set.".format(new_proofs, len(uncorrected_proofs)))
     else:
-        print("No uncorrected proofs found in {} or in {}.".format(directory, proof_filepath))
+        print("No uncorrected proofs found.")
     return uncorrected_proofs
 
 

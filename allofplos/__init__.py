@@ -12,7 +12,7 @@ starterdir = os.path.join(ALLOFPLOS_DIR_PATH, 'starter_corpus')
 newarticledir = tempfile.mkdtemp()
 
 # List of uncorrected proof articles to check for updates
-uncorrected_proofs_text_list = os.path.join(ALLOFPLOS_DIR_PATH, 'uncorrected_proofs_list.txt')
+(_, uncorrected_proofs_text_list) = tempfile.mkstemp()
 
 def get_corpus_dir():
     """If you want to set the corpus directory, assign the desired path to
