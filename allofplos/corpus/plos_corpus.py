@@ -209,11 +209,6 @@ def repo_download(dois, tempdir, ignore_existing=True):
     :param ignore_existing: Don't re-download to tempdir if already downloaded
     """
     # make temporary directory, if needed
-    try:
-        os.mkdir(tempdir)
-    except FileExistsError:
-        pass
-
     if ignore_existing:
         existing_articles = [filename_to_doi(f) for f in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)

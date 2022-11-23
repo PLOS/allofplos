@@ -1,3 +1,4 @@
+import tempfile
 import os
 
 # path to the root of allofplos (the package)
@@ -10,7 +11,7 @@ corpusdir = os.path.join(ALLOFPLOS_DIR_PATH, 'allofplos_xml')
 starterdir = os.path.join(ALLOFPLOS_DIR_PATH, 'starter_corpus')
 
 # Temporary folder for downloading and processing new articles
-newarticledir = os.path.join(ALLOFPLOS_DIR_PATH, 'new_plos_articles')
+newarticledir = tempfile.mkdtemp()
 
 # List of uncorrected proof articles to check for updates
 uncorrected_proofs_text_list = os.path.join(ALLOFPLOS_DIR_PATH, 'uncorrected_proofs_list.txt')
