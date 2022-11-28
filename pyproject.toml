@@ -26,6 +26,7 @@ dependencies = [
   "idna",
   "lxml",
   "peewee",
+  "pqdm",
   "python-utils",
   "requests",
   "six",

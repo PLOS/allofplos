@@ -17,6 +17,7 @@ six = "*"
 tqdm = "*"
 unidecode = "*"
 urllib3 = "*"
+pqdm = "*"
 
 [dev-packages]
 pytest = "*"

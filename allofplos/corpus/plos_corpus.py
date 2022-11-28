@@ -31,6 +31,7 @@ import zipfile
 
 import lxml.etree as et
 import requests
+from pqdm.threads import pqdm
 from tqdm import tqdm
 
 from .. import get_corpus_dir, newarticledir, uncorrected_proofs_text_list
@@ -51,9 +52,6 @@ EXAMPLE_SEARCH_URL = ('https://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl
                       '&wt=json&indent=true&fq=article_type:"research+article"+OR+article_type:"correction"+OR+'
                       'article_type:"meta-research+article"&sort=%20id%20asc&'
                       'fq=publication_date:%5B2017-03-05T00:00:00Z+TO+2017-03-19T23:59:59Z%5D&start=0&rows=1000')
-
-# Starting out list of needed articles as empty
-dois_needed_list = []
 
 
 def listdir_nohidden(path, extension='.xml', include_dir=True):
@@ -212,20 +210,26 @@ def repo_download(dois, tempdir, ignore_existing=True):
     if ignore_existing:
         existing_articles = [filename_to_doi(f) for f in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
+    session = requests.session()
 
-    for doi in tqdm(sorted(dois), disable=None):
+    def download_doi(doi):
         url = doi_to_url(doi)
         article_path = doi_to_path(doi, directory=tempdir)
         # create new local XML files
-        if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
-            response = requests.get(url, stream=True)
+        if (
+            ignore_existing is False
+            or ignore_existing
+            and os.path.isfile(article_path) is False
+        ):
+            response = session.get(url, stream=True)
             # Ignore 404 errors, but raise other errors.
             if response.status_code != 404:
                 response.raise_for_status()
-                with open(article_path, 'wb') as f:
+                with open(article_path, "wb") as f:
                     for block in response.iter_content(1024):
                         f.write(block)
 
+    pqdm(sorted(dois), download_doi, n_jobs=10)
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
 
