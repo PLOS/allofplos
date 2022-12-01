@@ -39,7 +39,7 @@ from .. import get_corpus_dir, newarticledir, uncorrected_proofs_text_list
 from ..plos_regex import validate_doi
 from ..transformations import (BASE_URL_API, filename_to_doi, doi_to_path, doi_to_url)
 from ..article import Article
-from .gdrive import (download_file_from_google_drive, get_zip_metadata, unzip_articles,
+from .gdrive import (download_file_from_google_drive, unzip_articles,
                      ZIP_ID, ZIP_KEY, LOCAL_ZIP, LOCAL_TEST_ZIP, TEST_ZIP_ID, min_files_for_valid_corpus)
 
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
@@ -590,11 +590,8 @@ def create_local_plos_corpus(directory=None, rm_metadata=True):
     if not os.path.isdir(directory):
         print('Creating folder for article xml')
     os.makedirs(directory, exist_ok=True)
-    zip_date, zip_size, metadata_path = get_zip_metadata()
-    zip_path = download_file_from_google_drive(ZIP_ID, LOCAL_ZIP, key=ZIP_KEY, file_size=zip_size)
+    zip_path = download_file_from_google_drive(ZIP_ID, LOCAL_ZIP, key=ZIP_KEY)
     unzip_articles(file_path=zip_path)
-    if rm_metadata:
-        os.remove(metadata_path)
 
 
 def create_test_plos_corpus(directory=None):

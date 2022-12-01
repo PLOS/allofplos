@@ -10,11 +10,8 @@ from .. import get_corpus_dir
 
 # Variables needed
 ZIP_ID = '0B_JDnoghFeEKLTlJT09IckMwOFk'
-METADATA_ID = '0B_JDnoghFeEKQUhKWXBOVy1aTlU'
 ZIP_KEY = '0-r-Qov-QvXGR3Ka07bixg1A'
-METADATA_KEY = '0-HB481hf4P4Fw0UEwnILZlw'
 LOCAL_ZIP = 'allofplos_xml.zip'
-ZIP_METADATA = 'zip_info.txt'
 time_formatting = "%Y_%b_%d_%Hh%Mm%Ss"
 min_files_for_valid_corpus = 200000
 TEST_ZIP_ID = '12VomS72LdTI3aYn4cphYAShv13turbX3'
@@ -107,23 +104,6 @@ def save_response_content(response, download_path, file_size=None):
                 if chunk:  # filter out keep-alive new chunks
                     f.write(chunk)
 
-
-def get_zip_metadata(method='initial'):
-    """
-    Gets metadata txt file from Google Drive, that has info about zip file
-    Used to get the file name, as well as byte size for progress bar
-    Includes progress bar for download %
-    :param method: boolean if initializing the PLOS Corpus (defaults to True)
-    :return: tuple of data about zip file: date zip created, zip size, and location of metadata txt file
-    """
-    if method == 'initial':
-        metadata_path = download_file_from_google_drive(METADATA_ID, ZIP_METADATA, key=METADATA_KEY)
-    with open(metadata_path) as f:
-        zip_stats = f.read().splitlines()
-    zip_datestring = zip_stats[0]
-    zip_date = datetime.datetime.strptime(zip_datestring, time_formatting)
-    zip_size = int(zip_stats[1])
-    return zip_date, zip_size, metadata_path
 
 
 def unzip_articles(file_path,
