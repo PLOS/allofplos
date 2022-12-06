@@ -2,7 +2,7 @@ import os
 
 from . import get_corpus_dir, newarticledir, uncorrected_proofs_text_list
 from .corpus.plos_corpus import (create_local_plos_corpus, get_dois_needed_list, download_check_and_move,
-                                 min_files_for_valid_corpus)
+                                 MIN_FILES_FOR_VALID_CORPUS)
 
 
 def main():
@@ -19,7 +19,7 @@ def main():
                         os.path.join(directory, name))]
     except FileNotFoundError:
         corpus_files = []
-    if len(corpus_files) < min_files_for_valid_corpus:
+    if len(corpus_files) < MIN_FILES_FOR_VALID_CORPUS:
         print('Not enough articles in {}, re-downloading zip file'.format(directory))
         # TODO: check if zip file is in top-level directory before downloading
         create_local_plos_corpus()
