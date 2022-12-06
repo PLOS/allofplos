@@ -17,9 +17,12 @@ six = "*"
 tqdm = "*"
 unidecode = "*"
 urllib3 = "*"
+pqdm = "*"
 
 [dev-packages]
 pytest = "*"
+twine = "*"
+build = "*"
 
 [requires]
 python_version = "3.8"

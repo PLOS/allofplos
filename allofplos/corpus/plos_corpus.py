@@ -25,22 +25,22 @@ import gzip
 import logging
 import os
 import shutil
-import time
 import tarfile
+import time
 import zipfile
 
 import lxml.etree as et
 import requests
+from pqdm.threads import pqdm
 from tqdm import tqdm
 
 from .. import get_corpus_dir, newarticledir, uncorrected_proofs_text_list
-
-from ..plos_regex import validate_doi
-from ..transformations import (BASE_URL_API, filename_to_doi, doi_to_path, doi_to_url)
 from ..article import Article
-from .gdrive import (download_file_from_google_drive, get_zip_metadata, unzip_articles,
-                     ZIP_ID, ZIP_KEY, LOCAL_ZIP, LOCAL_TEST_ZIP, TEST_ZIP_ID, min_files_for_valid_corpus)
+from ..plos_regex import validate_doi
+from ..transformations import (BASE_URL_API, doi_to_path, doi_to_url,
+                               filename_to_doi)
 
+MIN_FILES_FOR_VALID_CORPUS = 200000
 help_str = "This program downloads a zip file with all PLOS articles and checks for updates"
 
 # Making sure DS.Store not included as file
@@ -52,8 +52,65 @@ EXAMPLE_SEARCH_URL = ('https://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl
                       'article_type:"meta-research+article"&sort=%20id%20asc&'
                       'fq=publication_date:%5B2017-03-05T00:00:00Z+TO+2017-03-19T23:59:59Z%5D&start=0&rows=1000')
 
-# Starting out list of needed articles as empty
-dois_needed_list = []
+
+CORPUS_URL = "https://allof.plos.org/allofplos.zip"
+FILENAME = "allofplos.zip"
+
+
+def download_corpus_zip():
+    """
+    Download corpus zip.
+    :return: path to zip file
+    """
+    directory = get_corpus_dir()
+
+    file_path = os.path.join(directory, FILENAME)
+    extension = os.path.splitext(file_path)[1]
+
+    # check for existing incomplete zip download. Delete if invalid zip.
+    if os.path.isfile(file_path):
+        try:
+            zip_file = zipfile.ZipFile(file_path)
+            if zip_file.testzip():
+                os.remove(file_path)
+                print("Deleted corrupted previous zip download.")
+        except zipfile.BadZipFile as e:
+            os.remove(file_path)
+            print("Deleted invalid previous zip download.")
+
+    if not os.path.isfile(file_path):
+        response = requests.get(CORPUS_URL, stream=True)
+        total = int(response.headers.get("content-length", 0))
+        with open(file_path, "wb") as file, tqdm(
+            desc="Download",
+            total=total,
+            unit="iB",
+            unit_scale=True,
+            unit_divisor=1024,
+        ) as pbar:
+            for data in response.iter_content(chunk_size=1024*1024):
+                size = file.write(data)
+                pbar.update(size)
+    return file_path
+
+
+def unzip_articles(file_path):
+    """
+    Unzips zip file of all of PLOS article XML to specified directory
+    :param file_path: path to file to be extracted
+    :return: None
+    """
+    extract_directory = get_corpus_dir()
+
+    os.makedirs(extract_directory, exist_ok=True)
+
+    with zipfile.ZipFile(file_path, "r") as zip_ref:
+        tqdm.write("Extracting zip file...")
+        for article in tqdm(zip_ref.namelist()):
+            zip_ref.extract(article, path=extract_directory)
+        tqdm.write("Extraction complete.")
+
+    os.remove(file_path)
 
 
 def listdir_nohidden(path, extension='.xml', include_dir=True):
@@ -209,28 +266,29 @@ def repo_download(dois, tempdir, ignore_existing=True):
     :param ignore_existing: Don't re-download to tempdir if already downloaded
     """
     # make temporary directory, if needed
-    try:
-        os.mkdir(tempdir)
-    except FileExistsError:
-        pass
-
     if ignore_existing:
         existing_articles = [filename_to_doi(f) for f in listdir_nohidden(tempdir)]
         dois = set(dois) - set(existing_articles)
+    session = requests.session()
 
-    for doi in tqdm(sorted(dois), disable=None):
+    def download_doi(doi):
         url = doi_to_url(doi)
         article_path = doi_to_path(doi, directory=tempdir)
         # create new local XML files
-        if ignore_existing is False or ignore_existing and os.path.isfile(article_path) is False:
-            response = requests.get(url, stream=True)
+        if (
+            ignore_existing is False
+            or ignore_existing
+            and os.path.isfile(article_path) is False
+        ):
+            response = session.get(url, stream=True)
             # Ignore 404 errors, but raise other errors.
             if response.status_code != 404:
                 response.raise_for_status()
-                with open(article_path, 'wb') as f:
+                with open(article_path, "wb") as f:
                     for block in response.iter_content(1024):
                         f.write(block)
 
+    pqdm(sorted(dois), download_doi, n_jobs=10)
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
 
@@ -431,7 +489,7 @@ def check_for_uncorrected_proofs(directory=newarticledir, proof_filepath=uncorre
     if uncorrected_proofs:
         print("{} new uncorrected proofs found. {} total in set.".format(new_proofs, len(uncorrected_proofs)))
     else:
-        print("No uncorrected proofs found in {} or in {}.".format(directory, proof_filepath))
+        print("No uncorrected proofs found.")
     return uncorrected_proofs
 
 
@@ -591,61 +649,5 @@ def create_local_plos_corpus(directory=None, rm_metadata=True):
     if not os.path.isdir(directory):
         print('Creating folder for article xml')
     os.makedirs(directory, exist_ok=True)
-    zip_date, zip_size, metadata_path = get_zip_metadata()
-    zip_path = download_file_from_google_drive(ZIP_ID, LOCAL_ZIP, key=ZIP_KEY, file_size=zip_size)
+    zip_path = download_corpus_zip()
     unzip_articles(file_path=zip_path)
-    if rm_metadata:
-        os.remove(metadata_path)
-
-
-def create_test_plos_corpus(directory=None):
-    """
-    Downloads a copy of 10,000 randomly selected PLOS articles by:
-    1) creating directory if it doesn't exist
-    2) downloading the zip file (defaults to corpus directory)
-    3) extracting the individual XML files into the corpus directory
-    :param directory: directory where the corpus is to be downloaded and extracted
-    :return: None
-    """
-    if directory is None:
-        directory = get_corpus_dir()
-    if not os.path.isdir(directory):
-        print('Creating folder for article xml')
-    os.makedirs(directory, exist_ok=True)
-    zip_path = download_file_from_google_drive(TEST_ZIP_ID, LOCAL_TEST_ZIP)
-    unzip_articles(file_path=zip_path, extract_directory=directory)
-
-
-def download_corpus_metadata_files(csv_abstracts=True, csv_no_abstracts=True, sqlitedb=True, destination=None):
-    """Downloads up to three files of metadata generated from the PLOS Corpus XML.
-    Includes two csvs and a sqlite database.
-    """
-    if destination is None:
-        destination = os.getcwd()
-    if csv_abstracts:
-        csv_abstracts_id = '0B_JDnoghFeEKQWlNUUJtY1pIY3c'
-        csv_abstracts_key = '0-rYe9qJVr8RcwLrn6z9sM0w'
-        download_file_from_google_drive(csv_abstracts_id,
-                                        'allofplos_metadata_test.csv',
-                                        key=csv_abstracts_key,
-                                        destination=destination)
-    if csv_no_abstracts:
-        csv_no_abstracts_id = '0B_JDnoghFeEKeEp6S0R2Sm1YcEk'
-        csv_no_abstracts_key = '0-R8z9OU5Px9WTJLsoXNve9w'
-        download_file_from_google_drive(csv_no_abstracts_id,
-                                        'allofplos_metadata_no_abstracts_test.csv',
-                                        key=csv_no_abstracts_key,
-                                        destination=destination)
-    if sqlitedb:
-        sqlitedb_id = '1gcQW7cc6Z9gDBu_vHxghNwQaMkyvVuMC'
-        sqlitedb_file = download_file_from_google_drive(sqlitedb_id,
-                                                        'ploscorpus_test.db.gz',
-                                                        key=None,
-                                                        destination=destination)
-        print("Extracting sqlite db...")
-        inF = gzip.open(sqlitedb_file, 'rb')
-        outF = open('ploscorpus_test.db', 'wb')
-        outF.write(inF.read())
-        inF.close()
-        outF.close()
-        print("Extraction complete.")
