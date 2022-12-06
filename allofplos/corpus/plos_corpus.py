@@ -52,8 +52,9 @@ EXAMPLE_SEARCH_URL = ('https://api.plos.org/search?q=*%3A*&fq=doc_type%3Afull&fl
                       'article_type:"meta-research+article"&sort=%20id%20asc&'
                       'fq=publication_date:%5B2017-03-05T00:00:00Z+TO+2017-03-19T23:59:59Z%5D&start=0&rows=1000')
 
-CORPUS_URL = "https://allof.plos.org/corpus.zip"
-FILENAME = "corpus.zip"
+
+CORPUS_URL = "https://allof.plos.org/allofplos.zip"
+FILENAME = "allofplos.zip"
 
 
 def download_corpus_zip():
