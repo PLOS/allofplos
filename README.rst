@@ -5,7 +5,7 @@
 All of Plos (allofplos)
 =======================
 
-Copyright (c) 2017, Public Library of Science. MIT License, see
+Copyright (c) 2017-2022, Public Library of Science. MIT License, see
 LICENSE.txt for more information.
 
 Why allofplos?
@@ -15,10 +15,6 @@ This is for downloading/updating/maintaining a repository of all PLOS
 XML article files. This can be used to have a copy of the PLOS text
 corpus for further analysis. Use this program to download all PLOS XML
 article files instead of doing web scraping.
-
-**NOTE**: This software is not stable, we consider it beta state and will
-be in this stage until version 1.0. This means that programming interface
-may change and after a new version a full corpus download may be required.
 
 Installation instructions
 -------------------------
@@ -50,8 +46,8 @@ or, if running from source:
 
 ``$ pipenv run python -m allofplos.update``
 
-The first time it runs it will download a >4.4 Gb zip file
-(**allofplos_xml.zip**) with all the XML files inside.
+The first time it runs it will download a >7 Gb zip file
+(**allofplos.zip**) with all the XML files inside.
 **Note**: Make sure that you have enough space in your device for the
 zip file and for its content before running this command (at least 30Gb).
 After this file is downloaded, it will extract its contents into the
@@ -64,14 +60,15 @@ If you want to see the directory on your file system where this is installed run
 If you ever downloaded the corpus before, it will make an incremental
 update to the existing corpus. The script:
 
--  checks for and then downloads to a temporary folder individual new articles that have been published
--  of those new articles, checks whether they are corrections (and
+- checks for and then downloads to a temporary folder individual new
+   articles that have been published
+- of those new articles, checks whether they are corrections (and
    whether the linked corrected article has been updated)
--  checks whether there are VORs (Versions of Record) for uncorrected
+- checks whether there are VORs (Versions of Record) for uncorrected
    proofs in the main articles directory and downloads those
--  checks whether the newly downloaded articles are uncorrected proofs
-   or not after all of these checks, it moves the new articles into the
-   main articles folder.
+- checks whether the newly downloaded articles are uncorrected proofs
+   or not after all of these checks, it moves the new articles into
+   the main articles folder.
 
 Here’s what the print statements might look like on a typical run:
 
