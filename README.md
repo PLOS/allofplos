@@ -18,7 +18,9 @@ This program requires Python 3.8+.
 
 Using pip:
 
-`$ pip install allofplos`
+```
+pip install allofplos
+```
 
 This should install *allofplos* and requirements. At this stage you are
 ready to go.
@@ -26,22 +28,30 @@ ready to go.
 If you want to manually install from source (for example for development
 purposes), first clone the project repository:
 
-`$ git clone git@github.com:PLOS/allofplos.git`
+```
+git clone git@github.com:PLOS/allofplos.git
+```
 
 Install Python dependencies inside the newly created virtual
 environment:
 
-`$ pipenv install`
+```
+pipenv install
+```
 
 ## How to run the program
 
 Execute the following command.
 
-`$ python -m allofplos.update`
+```
+python -m allofplos.update
+```
 
 or, if running from source:
 
-`$ pipenv run python -m allofplos.update`
+```
+pipenv run python -m allofplos.update
+```
 
 The first time it runs it will download a larger than 7 Gb zip file
 (**allofplos.zip**) with all the XML files inside. **Note**: Make sure
@@ -53,7 +63,9 @@ directory inside your installation of *allofplos*.
 If you want to see the directory on your file system where this is
 installed run
 
-`python -c "from allofplos import get_corpus_dir; print(get_corpus_dir())"`
+```
+python -c "from allofplos import get_corpus_dir; print(get_corpus_dir())"
+```
 
 If you ever downloaded the corpus before, it will make an incremental
 update to the existing corpus. The script:
@@ -94,7 +106,9 @@ To run the tests, you will need to install *allofplos* with its testing
 dependencies. These testing dependencies include `pytest`, which we will
 use to run the tests.
 
-`$ pipenv run python -m pytest`
+```
+pipenv run python -m pytest
+```
 
 ## Community guidelines
 
