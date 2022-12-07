@@ -58,18 +58,18 @@ installed run
 If you ever downloaded the corpus before, it will make an incremental
 update to the existing corpus. The script:
 
--   checks for and then downloads to a temporary folder individual new  
+-   checks for and then downloads to a temporary folder individual new
     articles that have been published
 
--   of those new articles, checks whether they are corrections (and  
+-   of those new articles, checks whether they are corrections (and
     whether the linked corrected article has been updated)
 
--   checks whether there are VORs (Versions of Record) for uncorrected  
+-   checks whether there are VORs (Versions of Record) for uncorrected
     proofs in the main articles directory and downloads those
 
--   checks whether the newly downloaded articles are uncorrected proofs  
-    or not after all of these checks, it moves the new articles into the
-    main articles folder.
+-   checks whether the newly downloaded articles are uncorrected
+    proofs or not after all of these checks, it moves the new articles
+    into the main articles folder.
 
 Here’s what the print statements might look like on a typical run:
 
