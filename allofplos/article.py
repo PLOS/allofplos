@@ -1214,7 +1214,7 @@ class Article:
         :rtype: {str}
         """
 
-        xml_tree = et.parse(self.filename)
+        xml_tree = et.parse(self.filepath)
         root = xml_tree.getroot()
 
         # limit the text to the body section
