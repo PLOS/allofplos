@@ -17,7 +17,7 @@ from tqdm import tqdm
 
 from .. import get_corpus_dir, newarticledir
 
-from ..plos_regex import (validate_doi, full_doi_regex_match, validate_url, validate_filename)
+from ..plos_regex import (validate_doi, full_doi_regex_match, validate_file_url, validate_filename)
 from ..transformations import (filename_to_doi, doi_to_url)
 from ..corpus.plos_corpus import (listdir_nohidden, uncorrected_proofs_text_list,
                                   download_updated_xml, get_all_solr_dois,
@@ -49,7 +49,7 @@ def validate_corpus(directory=None):
 
     # check urls
     plos_urls = [doi_to_url(doi) for doi in plos_valid_dois]
-    plos_valid_urls = [url for url in plos_urls if validate_url(url)]
+    plos_valid_urls = [url for url in plos_urls if validate_file_url(url)]
     if set(plos_urls) == set(plos_valid_urls) and len(plos_valid_urls) == len(plos_valid_dois):
         pass
     else:

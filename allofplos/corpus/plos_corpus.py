@@ -94,14 +94,14 @@ def download_corpus_zip():
     return file_path
 
 
-def unzip_articles(file_path):
+def unzip_articles(file_path, extract_directory = get_corpus_dir(), delete_file=True):
     """
     Unzips zip file of all of PLOS article XML to specified directory
     :param file_path: path to file to be extracted
+    :param extract_directory: directory where articles are copied to
+    :param delete_file: whether to delete the compressed archive after extracting articles
     :return: None
     """
-    extract_directory = get_corpus_dir()
-
     os.makedirs(extract_directory, exist_ok=True)
 
     with zipfile.ZipFile(file_path, "r") as zip_ref:
@@ -110,7 +110,8 @@ def unzip_articles(file_path):
             zip_ref.extract(article, path=extract_directory)
         tqdm.write("Extraction complete.")
 
-    os.remove(file_path)
+    if delete_file:
+        os.remove(file_path)
 
 
 def listdir_nohidden(path, extension='.xml', include_dir=True):
@@ -633,7 +634,7 @@ def download_check_and_move(article_list, proof_filepath, tempdir, destination):
     move_articles(tempdir, destination)
 
 
-def create_local_plos_corpus(directory=None, rm_metadata=True):
+def create_local_plos_corpus(directory=None, rm_metadata=True, unzip=True, delete_file=True):
     """
     Downloads a fresh copy of the PLOS corpus by:
     1) creating directory if it doesn't exist
@@ -642,6 +643,8 @@ def create_local_plos_corpus(directory=None, rm_metadata=True):
     3) extracting the individual XML files into the corpus directory
     :param directory: directory where the corpus is to be downloaded and extracted
     :param rm_metadata: COMPLETE HERE
+    :param unzip: whether to extract article files to corpus dir, or just keep the zip file instead. Defaults to `True`
+    :param delete_file: whether to delete the compressed archive after extracting articles. Defaults to `True`
     :return: None
     """
     if directory is None:
@@ -650,4 +653,6 @@ def create_local_plos_corpus(directory=None, rm_metadata=True):
         print('Creating folder for article xml')
     os.makedirs(directory, exist_ok=True)
     zip_path = download_corpus_zip()
-    unzip_articles(file_path=zip_path)
+    if unzip:
+        unzip_articles(file_path=zip_path, extract_directory=get_corpus_dir(), delete_file=delete_file)
+
