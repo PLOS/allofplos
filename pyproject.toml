@@ -1,6 +1,6 @@
 [project]
 name = "allofplos"
-version = "1.0.0"
+version = "1.0.1"
 description = "Get and analyze all PLOS articles"
 authors = [
   {name="Elizabeth Seiver", email="eseiver@plos.org"},
@@ -26,6 +26,7 @@ dependencies = [
   "idna",
   "lxml",
   "peewee",
+  "pqdm",
   "python-utils",
   "requests",
   "six",
