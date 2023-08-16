@@ -5,9 +5,8 @@ The following RegEx pertains to the 7 main PLOS journals and the defunct PLOS Cl
 import re
 import os
 
-from . import get_corpus_dir, newarticledir
+from . import get_corpus_dir
 
-newarticledir_regex = re.escape(newarticledir)
 regex_match_prefix = r"^10\.1371/"
 regex_body_match = (r"((journal\.p[a-zA-Z]{3}\.[\d]{7})"
                     r"|(annotation/[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}$))")
