@@ -14,7 +14,9 @@ journal_map = OrderedDict([
                          ('pwat', 'PLOS Water'),
                          ('pgph', 'PLOS Global Public Health'),
                          ('pdig', 'PLOS Digital Health'),
-                         ('annotation', 'PLOS ONE')
+                         ('pmen', 'PLOS Mental Health'),
+                         ('pcsy', 'PLOS Complex Systems'),
+                         ('annotation', 'PLOS ONE'),
                           ])
 
 nlm_ta_journal = {'plos negl trop dis': 'PLOS Neglected Tropical Diseases',
@@ -29,7 +31,9 @@ nlm_ta_journal = {'plos negl trop dis': 'PLOS Neglected Tropical Diseases',
                   'plos clim': 'PLOS Climate',
                   'plos water': 'PLOS Water',
                   'plos glob public health': 'PLOS Global Public Health',
-                  'plos digit health': 'PLOS Digital Health'
+                  'plos digit health': 'PLOS Digital Health',
+                  'plos complex syst': 'PLOS Complex Systems',
+                  'plos ment health': 'PLOS Mental Health',
                   }
 
 
