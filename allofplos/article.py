@@ -1214,11 +1214,8 @@ class Article:
         :rtype: {str}
         """
 
-        xml_tree = et.parse(self.filename)
-        root = xml_tree.getroot()
-
         # limit the text to the body section
-        body = root.find('./body')
+        body = self.root.find('./body')
 
         # remove supplementary material section
         for sec in body.findall('.//sec'):
@@ -1378,3 +1375,69 @@ class Article:
         else:
             directory = None
         return cls(filename_to_doi(filename), directory=directory)
+
+    # region: review_crawling2022
+    @classmethod
+    def from_xml(cls, source, directory = None):
+        """Initiate an article object using an XML-encoded string.
+            Parses the XML to obtain the article's doi. 
+            
+            :param source: string containing XML describing an article
+            :param directory: path to directory containing the XML for this article. Defaults to `get_corpus_dir()` via `Article().__init__`.
+        """
+        root = et.fromstring(source)
+        doi = root.find("front//article-id[@pub-id-type='doi']").text.strip()
+        a = Article(doi, directory)
+        a.tree = root.getroottree()
+        return a
+
+    @tree.setter
+    def tree(self, value):
+        """
+        Set tree to the given object.
+        """
+        assert isinstance(value, et._ElementTree)   # TODO better validation?
+        self._tree = value
+
+    def get_subarticles(self):
+        """Get sub-articles embedded in the XML tree of this article.
+
+        :rtype: list
+        :return: list of lxml elements that are roots of each sub-article 
+        """
+        sub_articles = self.root.findall('sub-article')
+        return sub_articles     # maybe return list of Articles instead?
+
+    def get_author_names(self):
+        """
+        Compresses the list of dicts stored in `self.authors` into a simpler list of author names.
+
+        :rtype: list
+        """
+        parsed_authors = []
+        for author in self.authors:
+            if author['given_names'] is None and author['surname'] is None:
+                parsed_authors.append(author['group_name'])
+            else:
+                parsed_authors.append(author['given_names']+ ' ' +author['surname'])
+        return parsed_authors
+
+    @property
+    def categories(self):
+        """
+        Get the categories (or keywords) defined for this article.
+
+        :rtype: list
+        """
+        keywords_set = set()    # using a set because they tend to be duplicated
+        categories = self.root.find('.//front').find('.//article-categories')
+        if categories is None:
+            return None
+
+        for el in categories[1:]:   # skipping the first one because it's a "heading"
+            for subj in el.iterdescendants():
+                if len(subj) == 1:  keywords_set.add(subj[0].text.strip())
+        return list(keywords_set)
+
+
+    # endregion

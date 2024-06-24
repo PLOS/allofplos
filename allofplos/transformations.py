@@ -36,7 +36,8 @@ plos_page_dict = {'article': 'article',
                   'assetFile': 'article/file',
                   'assetXMLFile': 'article/file',
                   'articleMetrics': 'article/metrics',
-                  'articleRelated': 'article/related'}
+                  'articleRelated': 'article/related',
+                  'peerReview': 'article/peerReview'}
 
 
 def _get_base_page(journal):
@@ -146,8 +147,8 @@ def url_to_doi(url):
     Example:
     url_to_path('https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.1000001') = \
     '10.1371/journal.pone.1000001'
-    :param url: online location of a PLOS article's XML
-    :return: full unique identifier for a PLOS article
+    :param url: online location of a PLOS article's XML (not neccessarily, base link works fine too)
+    :return: full unique identifier for a PLOS article (or for a peer review, or supplementary material etc.)
     """
     return url[url.index(PREFIX):].rstrip(URL_SUFFIX).rstrip(INT_URL_SUFFIX)
 
