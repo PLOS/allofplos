@@ -5,7 +5,7 @@ import os
 
 from . import get_corpus_dir
 
-from .plos_regex import validate_filename, validate_doi
+from .plos_regex import validate_filename, validate_doi, validate_partial_doi
 from .elements import Journal
 
 # URL bases for PLOS's Solr instances, that index PLOS articles
@@ -189,6 +189,22 @@ def doi_to_path(doi, directory=None):
     else:
         article_file = os.path.join(directory, doi.lstrip(PREFIX) + SUFFIX_LOWER)
     return article_file
+
+def partial_to_doi(partial_doi):
+    """Convert a partial DOI into a DOI."""
+    if validate_partial_doi(partial_doi) is False:
+        raise Exception("Invalid format for PLOS partial DOI: {}".format(partial_doi))
+    if partial_doi.startswith('annotation'):
+        doi = PREFIX + partial_doi
+    else:
+        doi = ''.join([PREFIX, 'journal.', partial_doi])
+    return doi
+
+def doi_to_partial(doi):
+    """Convert a DOI into a partial DOI."""
+    if validate_doi(doi) is False:
+        raise Exception("Invalid format for PLOS DOI: {}".format(doi))
+    return doi.lstrip('10.1371/').replace('journal.', '')
 
 
 def convert_country(country):
