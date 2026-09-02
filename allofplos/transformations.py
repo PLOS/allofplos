@@ -61,6 +61,8 @@ def _get_base_page(journal):
                    'PLOS Digital Health': 'digitalhealth',
                    'PLOS Mental Health': 'mentalhealth',
                    'PLOS Complex Systems': 'complexsystems',
+                   'PLOS Aging and Health': 'agingandhealth',
+                   'PLOS Ecosystems': 'ecosystems'
                    }
     try:
         url = BASE_URL_LANDING_PAGE.format(journal_map[journal])
