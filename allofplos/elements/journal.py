@@ -36,8 +36,8 @@ nlm_ta_journal = {'plos negl trop dis': 'PLOS Neglected Tropical Diseases',
                   'plos digit health': 'PLOS Digital Health',
                   'plos complex syst': 'PLOS Complex Systems',
                   'plos ment health': 'PLOS Mental Health',
-                  'plos Aging Health': 'PLOS Aging and Health',
-                  'plos Ecosyst': 'PLOS Ecosystems',
+                  'plos aging health': 'PLOS Aging and Health',
+                  'plos ecosyst': 'PLOS Ecosystems',
                   }
 
 
