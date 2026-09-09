@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: allofplos
-Version: 1.1.1
+Version: 1.3.0
 Summary: Get and analyze all PLOS articles
 Author-email: Elizabeth Seiver <eseiver@plos.org>, Sebastian Bassi <sebastian.bassi@globant.com>, M Pacer <mpacer@berkeley.edu>
 Maintainer-email: Kevin Brandt <kbrandt@plos.org>
@@ -31,5 +31,5 @@ Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Science/Research
 Classifier: Topic :: Scientific/Engineering
 Classifier: License :: OSI Approved :: MIT License
-Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.10
 License-File: LICENSE

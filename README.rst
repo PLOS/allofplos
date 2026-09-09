@@ -19,7 +19,7 @@ article files instead of doing web scraping.
 Installation instructions
 -------------------------
 
-This program requires Python 3.8+.
+This program requires Python 3.10+.
 
 Using pip:
 
