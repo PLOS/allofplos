@@ -288,7 +288,7 @@ def repo_download(dois, tempdir, ignore_existing=True):
                     for block in response.iter_content(1024):
                         f.write(block)
 
-    pqdm(sorted(dois), download_doi, n_jobs=10)
+    pqdm(sorted(dois), download_doi, n_jobs=5)
     print(len(listdir_nohidden(tempdir)), "new articles downloaded.")
     logging.info(len(listdir_nohidden(tempdir)))
 
@@ -397,8 +397,16 @@ def check_for_amended_articles(directory=newarticledir, article_list=None):
         article.directory = directory
         if article.amendment:
             amended_doi_list.extend(article.related_dois)
-    amended_article_list = [Article(doi).filename if Article(doi).local else
-                            doi_to_path(doi, directory=directory) for doi in list(amended_doi_list)]
+
+    amended_article_list = []
+    for doi in list(amended_doi_list):
+        try:
+            if Article(doi).local:
+                amended_article_list.append(Article(doi).filename)
+            else:
+                amended_article_list.append(doi_to_path(doi, directory=directory))
+        except Exception as e:
+            print(f'Encountered error with doi {doi}, skipping: {e}')
     print(len(amended_article_list), 'amended articles found.')
     return amended_article_list
 
