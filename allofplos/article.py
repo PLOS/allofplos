@@ -623,6 +623,7 @@ class Article:
                             'ids',
                             'rid_dict',
                             'contrib_type',
+                            'equal_contrib',
                             'author_type',
                             'editor_type',
                             'email',
